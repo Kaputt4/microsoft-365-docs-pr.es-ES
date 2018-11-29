@@ -1,0 +1,85 @@
+---
+title: 'Fase 1: Criterios de salida de la infraestructura de red'
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 10/31/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: ''
+description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise sobre la infraestructura de red.
+ms.openlocfilehash: 8161fa2b92ffb4c7c4713e9356c0bc1bfec39d07
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26871148"
+---
+# <a name="phase-1-networking-infrastructure-exit-criteria"></a>Fase 1: Criterios de salida de la infraestructura de red
+
+![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+
+Si su infraestructura de red cumple con las siguientes condiciones, está listo para pasar a la fase 2.
+
+<a name="crit-networking-step1"></a>
+## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatorio: la red está preparada para Microsoft 365 Enterprise
+
+- Las oficinas tienen suficiente ancho de banda de Internet para el tráfico de Microsoft 365, incluidas la instalación y las actualizaciones de Office 365, Microsoft Intune y Windows 10 Enterprise
+- Oficinas centrales para todo el tráfico de Internet general
+- Sucursales para el tráfico del punto de conexión de la categoría Optimizar
+- La red general se corresponde a una arquitectura de referencia de Office 365
+
+Si es necesario, el [paso 1](networking-provide-bandwidth-cloud-services.md) puede ayudarle con este requisito.
+
+<a name="crit-networking-step2"></a>
+## <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Obligatorio: las oficinas locales tienen conexión a Internet local y resolución de nombres
+
+Ha configurado cada oficina local con acceso a Internet con un ISP local cuyos servidores DNS usan una dirección IP pública local que identifica su ubicación en Internet. Esto asegura el mejor rendimiento posible para los usuarios que accedan a Office 365 e Intune.
+
+Si no usa un ISP local para cada sucursal, puede verse afectado el rendimiento porque el tráfico de red debe recorrer la estructura de una organización o las solicitudes de datos se procesan mediante servidores front-end remotos.
+
+### <a name="how-to-test"></a>Cómo probarlo
+Use una herramienta o un sitio web desde un dispositivo de esa oficina para determinar la dirección IP pública que está usando el servidor proxy. Por ejemplo, use la página web [What Is My IP Address](https://www.whatismypublicip.com/) (¿Cuál es mi dirección IP?). Esta dirección IP pública asignada por su ISP debería ser geográficamente local. No debe ser de un intervalo de direcciones IP público de una oficina central ni de un proveedor de seguridad de red basado en la nube.
+
+Si es necesario, el [paso 2](networking-dns-resolution-same-location.md) puede ayudarle con este requisito.
+
+<a name="crit-networking-step3"></a>
+## <a name="optional-unneeded-network-hairpins-are-removed"></a>Opcional: eliminación de las redirecciones de red innecesarias
+
+Ha examinado las redirecciones de red y ha determinado su impacto en el rendimiento de todas las oficinas. Ha eliminado las redirecciones de red cuando ha sido posible, o bien ha trabajado con su proveedor de red o seguridad de terceros para implementar emparejamiento de Microsoft 365 óptimo para su red.
+
+Si es necesario, el [paso 3](networking-avoid-network-hairpins.md) puede ayudarle con esta opción.
+
+
+<a name="crit-networking-step4"></a>
+## <a name="optional-you-have-configured-traffic-bypass-on-your-internet-browsers-and-edge-devices"></a>Opcional: ha configurado la omisión de tráfico en los exploradores de Internet y los dispositivos perimetrales
+
+Ha implementado los archivos PAC más recientes en los navegadores de Internet locales para que el tráfico a los nombres de dominio DNS de Microsoft 365 omitan los servidores proxy.
+
+Ha configurado los dispositivos de red perimetrales, como firewalls, la inspección e interrupción SSL y los dispositivos de inspección de paquetes, para usar la omisión de tráfico o procesar de forma mínima el tráfico a las categorías Optimizar y Permitir de los puntos de conexión de Microsoft 365.
+
+
+### <a name="how-to-test"></a>Procedimiento de prueba
+
+Use las herramientas de registro de los dispositivos perimetrales de red para asegurarse de que el tráfico a los destinos de Microsoft 365 no se inspecciona, descifra u obstaculiza de otra manera.
+
+Si es necesario, el [paso 4](networking-configure-proxies-firewalls.md) puede ayudarle con esta opción.
+
+
+<a name="crit-networking-step5"></a>
+## <a name="optional-your-clients-and-office-365-applications-are-configured-for-optimal-performance"></a>Opcional: sus clientes y aplicaciones de Office 365 están configurados para un rendimiento óptimo
+
+Ha optimizado la configuración del Protocolo de control de transmisión (TCP) en los dispositivos cliente y para los servicios de Exchange Online, Skype Empresarial Online, SharePoint Online y Project Online.
+
+Si es necesario, el [paso 5](networking-optimize-tcp-performance.md) puede ayudarle con esta opción.
+
+## <a name="next-phase"></a>Fase siguiente
+
+|||
+|:-------|:-----|
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| La siguiente fase del proceso de implementación integral de Microsoft 365 Enterprise es la [identidad](identity-infrastructure.md). |
