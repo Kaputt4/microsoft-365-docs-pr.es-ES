@@ -1,0 +1,164 @@
+---
+title: 'Paso 7: Windows y Office como servicio'
+ms.author: jogruszc
+author: JGruszczyk
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: ''
+description: Obtenga información sobre cómo prepararse para Windows y Office como servicio en su entorno.
+ms.openlocfilehash: 5c3eb54e07b1cc5492a6d938e97286283fc47ca7
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26871553"
+---
+# <a name="step-7-windows-and-office-as-a-service"></a>Step 7: Windows and Office as a Service
+
+Prepárese para las actualizaciones de canal semestrales con nuevas características y funcionalidades en Windows 10 y Office 365 ProPlus junto con las actualizaciones correspondientes a las herramientas de administración con la rama actual de System Center Configuration Manager.
+
+![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-1.png)
+
+<table>
+<thead>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
+<td><p><strong>Paso 7: Prepararse para Windows y Office como servicio</strong></p>
+<p>Windows 10 y Office 365 ProPlus agregan continuamente nuevas funcionalidades para seguir mejorando las experiencias de usuario y la seguridad con las innovaciones más recientes. Obtenga más información sobre cómo estar al día con actualizaciones semestrales y mensuales, cómo funciona el nuevo modelo de servicio, y las herramientas y opciones que tiene a su disposición.</p></td>
+<td><a href="https://aka.ms/ddev7" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
+</thead>
+</table>
+
+>[!NOTE]
+>Windows y Office como servicio es el séptimo paso del ciclo de proceso de implementación recomendado, que cubre los aspectos de planificación para preparar las actualizaciones semianuales. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorios modernos](https://aka.ms/HowToShift).
+>
+
+Windows 10 y Office 365 ProPlus introducen nuevas opciones de mantenimiento, modelos de soporte técnico y escalas de tiempo de actualización. Estos cambios simplifican el proceso para estar al día de las características más recientes. Además de estas actualizaciones, hay nuevas opciones de configuración para adaptar los planes de mantenimiento a sus necesidades.
+
+[Ayudar a los clientes a cambiar a un escritorio moderno](https://www.microsoft.com/es-ES/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+
+## <a name="update-types"></a>Tipos de actualización
+
+Las actualizaciones se dividen en dos categorías principales, actualizaciones de características y actualizaciones de seguridad y de calidad que contienen seguridad acumulativa, fiabilidad y correcciones de errores. En cuanto la cadencia, tanto Windows como Office ofrecen un canal semianual que ofrece nuevas características dos veces al año, en marzo y en septiembre, mientras que las actualizaciones de seguridad y de calidad se dan cada dos meses. Además, solo para las aplicaciones de Office 365, entregamos actualizaciones de canal mensuales que son completamente compatibles y contienen nuevas características y actualizaciones de calidad.
+
+Si está acostumbrado a un ciclo más largo entre el sistema operativo y las actualizaciones de las aplicaciones, puede que se pregunte:
+
+  - ¿Serán compatibles las actualizaciones?
+
+  - ¿Tendré que volver a formar a mis usuarios?
+
+  - ¿Y cuáles son los riesgos?
+
+Para responder a estas preguntas y a las razones para implementar nuevas funcionalidades con más frecuencia, mostraremos algunas de las ventajas de este método
+
+### <a name="feature-update-benefits"></a>Ventajas de la actualización de características
+
+En primer lugar, nos hemos alejado del modelo pasado que presentaba grandes cambios cada tres años para implementar cambios más pequeños con actualizaciones de características dos veces al año. ¿Por qué? Porque las tendencias en la tecnología se mueven muy rápido, además de presentar amenazas de seguridad en constante evolución y esto mantiene la experiencia y la protección relevante. Algunas de las actualizaciones relacionadas con la seguridad, por ejemplo, no pueden entregarse mediante actualizaciones mensuales de seguridad o antivirus, puede que se trate de cambios de bajo nivel, como seguridad basada en la virtualización.
+
+[Guía rápida de Windows como servicio](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-quick-start)
+
+[Mitigue las amenazas con las características de seguridad de Windows 10](https://docs.microsoft.com/es-ES/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
+
+### <a name="cumulative-update-model-benefits"></a>Ventajas del modelo de actualización acumulativa
+
+En segundo lugar, ofrecer actualizaciones de seguridad y calidad como un paquete de actualización acumulativa corrige muchos de los problemas del pasado. En ocasiones, era preciso elegir entre una docena o más de actualizaciones todos los meses tanto para Windows como para Office. Como puede imaginar, esto crea un conjunto casi imposible de matrices de prueba a modo de apoyo. Además, si instala una versión de Windows o de Office con más de un año, puede que lleve horas o días aplicar todas las actualizaciones que se han publicado desde la aparición de esa versión.
+
+Con el modelo acumulativo, siempre se encuentra a una actualización de la más reciente y, por tanto, el número de actualizaciones que necesita implementar se reduce. Cada actualización se compila sobre las actualizaciones de meses anteriores y contiene todas las soluciones que necesita para ponerse al día. Las actualizaciones acumulativas son especialmente útiles cuando los equipos llevan varios meses desactivados y están en el almacén.
+
+[Información general sobre Windows como servicio](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-overview)
+
+### <a name="expanded-validation-of-updates"></a>Validación expandida de las actualizaciones
+
+Otra ventaja es que, antes de distribuir las actualizaciones para su implementación, publicamos compilaciones a través de programas Insider para [Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop) y [Windows](https://insider.windows.com/es-ES/) y esto nos permite obtener telemetría y comentarios antes de la publicación total de las actualizaciones. Ahora, el programa Insider está abierto a todos de modo que puede comprender las actualizaciones antes que nadie. Para cuando publiquemos las actualizaciones ya habremos recibido la telemetría de millones de configuraciones de modo que cuando publicamos nuestras actualizaciones, la calidad es ahora inherente y más predecible.
+
+Y una cosa más: como las compilaciones de Office 365 ProPlus Insider reflejan actualizaciones de canal mensuales, si usa un canal semianual para presentar actualizaciones características de Office dos veces al año alineado con Windows, puede validar esas compilaciones, además de usar el canal semianual para publicaciones objetivo.
+
+### <a name="supporting-management-tools"></a>Compatibilidad con herramientas de administración
+
+También hemos pensado en cómo realizar una implementación de actualizaciones sin interrupciones. La rama actual de System Center Configuration Manager se actualiza con frecuencia para dar soporte a la implementación de estas actualizaciones para Windows y Office y cualquier capacidad nueva.
+
+[Implementar las actualizaciones de Windows 10 con System Center Configuration Manager](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-manage-updates-configuration-manager)
+
+[Administración de Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/es-ES/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+
+## <a name="phased-deployment-of-updates"></a>Implementación de actualizaciones por fases
+
+Tratemos ahora la implementación de estas actualizaciones. Por cada publicación, recomendamos al menos tres fases de implementación para TI: validación, prueba piloto e implementación general. Cuando tenga Windows 10 y Office 365 ProPlus en marcha, podrá utilizar el mantenimiento mensual para estar al día al respecto de cualquier alerta de seguridad crítica y de calidad, y entonces pasará al mantenimiento semianual para las nuevas características.
+
+### <a name="monthly-updating"></a>Actualización mensual
+
+El modelo de servicio está diseñado para que pueda limitar la distribución de nuevas características a dos veces al año y, si es necesario, también puede omitir incluso la actualización semianual y seguir recibiendo actualizaciones de seguridad y de calidad. Como se indicó, la naturaleza acumulativa mensual significa que las actualizaciones aumentarán el tamaño cada mes.
+
+#### <a name="express-updates"></a>Actualizaciones rápidas
+
+Con una tecnología denominada "actualizaciones rápidas" en Windows y actualizaciones la compresión binaria de delta en Office, podemos reducir el tamaño de descarga de forma significativa. En ambos métodos, los motores de actualización comparan lo que está en el equipo y busca solo las diferencias necesarias para actualizar el contenido.
+
+[Actualizaciones de calidad de Windows 10 explicadas y el final de actualizaciones de delta](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
+
+Windows Update para empresas y Windows Server Update Services han sido compatibles con las actualizaciones rápidas durante mucho tiempo, pero ahora han extendido esa compatibilidad a System Center Configuration Manager para que también pueda usar actualizaciones rápidas.
+
+![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
+
+#### <a name="binary-delta-compression"></a>Compresión binaria de delta
+
+La compresión binaria de delta en Office solo se usa si está actualizando al a versión más reciente de Office 365 ProPlus, por lo que no use este enfoque si necesita actualizar a partir de la versión anterior y no puede omitir las actualizaciones.
+
+Los canales de actualización de Windows y Office pueden administrarse con Configuration Manager usando el proceso de objetivo y aprobación estándar. Además, puede usar las características de directivas y Windows para aplicar la actualización de los canales usados, además de las características relacionadas.
+
+### <a name="semi-annual-updates"></a>Actualizaciones semianuales
+
+Esas son las consideraciones para las actualizaciones mensuales, pasemos ahora a las actualizaciones semianuales.
+
+Como tratamos en Preparación de dispositivos y aplicaciones, es preferible empezar sus preparativos para las actualizaciones grandes con las mismas herramientas establecidas en el Paso 1 del proceso de implementación.
+
+En cuanto a las herramientas, puede usar las características de directivas con Windows Update para empresas, administración de actualizaciones de software con System Center Configuration Manager, Windows Server Update Services (WSUS) o actualizar las directivas establecidas por Microsoft Intune. Si le preocupa el ancho de banda de la red, vea el paso 2: Preparación de directorios y la red para saber más sobre sus opciones.
+
+![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
+
+[Canal semianual de Windows](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-overview#semi-annual-channel)
+
+[Canal semianual para Office 365 ProPlus](https://docs.microsoft.com/es-ES/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+
+#### <a name="upgrade-task-sequences"></a>Actualizar las secuencias de tareas
+
+Instalar las actualizaciones características más grandes a través de rutinas de administración de actualización de software, pero muchas organizaciones optarán por usar una secuencia de tarea actualizada con System Center Configuration Manager, o el kit de herramientas de implementación de Microsoft
+
+Una secuencia de tareas le permite crear comprobaciones o tareas personalizadas antes de instalar la actualización de características y le permite realizar tareas personalizadas tras la instalación de la actualización. Las tareas postactualización podrían incluir suspender servicios de forma temporal en caso necesario durante la actualización, la instalación y sustitución de controladores, la aplicación de mejoras o las características de personalización de la barra de tareas y la aplicación de mejoras personalizadas de Windows 10.
+
+![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-5.png)
+
+Si ya está usando secuencias de tareas para migrar sus equipos de Windows 7 a Windows 10 y tiene experiencia con esas herramientas, este es un buen lugar para empezar y proporciona control definitivo. Aunque puede usar una única secuencia de tareas para toda una actualización, es muy común que las organizaciones usen dos tareas. Una secuencia de tareas para asegurarse de que las máquinas están listas para la actualización que prepara discretamente todos los archivos de configuración necesarios en los equipos y uno que haga la actualización en sí. Este enfoque asegura que la productividad del usuario no se vea demasiado afectada.
+
+[Creación de una secuencia de tareas para actualizar un sistema operativo en Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+
+#### <a name="semi-annual-channel-support-for-feature-updates"></a>Compatibilidad de canal semianual para actualizaciones características
+
+[Como se anunció en septiembre de 2018](https://www.microsoft.com/es-ES/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/), la escala de tiempo de las actualizaciones del canal semianual usará el modelo siguiente.
+
+  - Todas las actualizaciones de características admitidas de Windows 10 Enterprise y educación, empezando con la versión 1607 serán compatibles durante 30 meses a partir de su fecha de salida original.
+
+  - Todas las actualizaciones de características, empezando con la 1809, con un objetivo de septiembre, recibirán 30 meses de compatibilidad a partir de su fecha de salida.
+
+  - Las actualizaciones de características futuras con fecha de salida marzo y empezando por la 1903, seguirán teniendo apoyo durante otros 18 meses a partir de su fecha de salida.
+
+  - Las actualizaciones semianuales de Office 365 ProPlus seguirán teniendo apoyo durante 18 meses.
+
+#### <a name="additional-setup-automation-options-outside-of-task-sequences"></a>Opciones de automatización adicionales fuera de la secuencia de tareas
+
+Si no usa secuencias de tareas personalizadas, puede ejecutar acciones personalizadas o aplicar archivos de controladores durante la actualización de características en la fase de preinstalación, antes de que la configuración acabe de ejecutar sus pruebas de compatibilidad, o en la fase de precompromiso, antes de que se aplique la actualización.
+
+[Novedades de la configuración de Windows 10, versión 1803](https://docs.microsoft.com/es-ES/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
+
+## <a name="next-step"></a>Paso siguiente 
+
+## <a name="step-8-user-communications-and-traininghttpsakamsmdd8"></a>[Paso 8: Comunicación con los usuarios y aprendizaje](https://aka.ms/mdd8)
+
+## <a name="previous-step"></a>Paso anterior 
+
+## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[Paso 6: Implementación del sistema operativo y actualizaciones de características](https://aka.ms/mdd6)
