@@ -1,0 +1,75 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 07a77c646f8aef2440f415fdf143373cd249a641
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26871478"
+documentType: LandingData
+title: Recursos y documentación de escritorio administrado de Microsoft
+metadata:
+  title: Documentación de escritorio administrado de Microsoft
+  description: 
+  keywords: dispositivo, aplicación, administración
+  author: trudyha
+  ms.author: trudyha
+  ms.date: 11/1/2018
+  ms.topic: landing-page
+  ms.devlang: na
+  ms.service: m365-md
+sections:
+- items:
+  - type: markdown
+    text: La forma más sencilla de encantados a los usuarios y liberación de TI.
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - href: intro/index.md
+      html: <p>Lea acerca de ¿qué es Microsoft Desktop administrados y cómo funciona.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
+      title: ¿Qué es el escritorio administrado por Microsoft?
+    - href: service-description/index.md
+      html: <p>Obtenga información sobre qué se incluye en Microsoft Desktop administrados.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
+      title: Descripción del servicio
+    - href: get-ready/index.md
+      html: <p>Obtenga información sobre cómo prepararse para inscribirse en administrado de escritorio de Microsoft.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
+      title: Prepárate
+    - href: get-started/index.md
+      html: <p>Obtenga información sobre cómo pedir dispositivos y agregar contactos.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
+      title: Introducción
+    - href: working-with-managed-desktop/index.md
+      html: <p>Obtenga información acerca de la administración de aplicaciones.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
+      title: Uso del Escritorio administrado de Microsoft
+- title: Nuevos artículos y entradas de blog
+  items:
+  - type: paragraph
+    text: Lea la información mejor y más reciente que necesita saber.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - href: https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/
+      title: '[Blog] Colaboración con los clientes y socios para entregar un escritorio moderno'
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+    - href: https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html
+      title: '[Artículo] Escritorio de Microsoft Managed: Todos los 10 Windows dispositivos, administrados por Microsoft'
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
+- title: Vídeos
+  items:
+  - type: markdown
+    text: '>[!VIDEO https://www.youtube.com/embed/Pe75tc8YwKM]'
