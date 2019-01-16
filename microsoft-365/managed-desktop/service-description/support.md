@@ -5,17 +5,17 @@ keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, docum
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 11/1/2018
-ms.openlocfilehash: 7e551e51c3ea972f69c24bcb1994e13f0f7342f0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 11/7/2018
+ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871550"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Soporte técnico para el Escritorio administrado por Microsoft
 
-Dispositivos de escritorio administrado de Microsoft son administrados por y será reparados o sustituidos por Microsoft cuando es necesario. Microsoft proporcionará proactiva y reactiva la administración de incidentes. Microsoft realiza un seguimiento de incidentes en el portal de administración de escritorio administrado de Microsoft. Se clasifican según [las definiciones de gravedad](#severity-definitions). 
+Dispositivos de escritorio administrado de Microsoft son administrados por y será reparados o sustituidos por Microsoft según el acuerdo de garantía. Microsoft proporcionará proactiva y reactiva la administración de incidentes. Microsoft realiza un seguimiento de incidentes en el portal de administración de escritorio administrado de Microsoft. Se clasifican según [las definiciones de gravedad](../working-with-managed-desktop/admin-support.md#sev).
 
 Los clientes pueden ponerse en contacto con las operaciones de escritorio administrado de Microsoft para:
 - Solicitudes de información en el lugar de trabajo moderno como una configuración o inquilino de servicio
@@ -39,10 +39,10 @@ Productos compatibles:
 
 Detalles de soporte técnico:
 
-- Actual: América del Norte y el Reino Unido sólo (24 x 7 x 365) 
+- Actual: América del Norte, Reino Unido y Australia sólo (24 x 7 x 365) 
 - Inglés es el único lenguaje admitido para las conversaciones de audio y charla con los clientes 
 - Nos estamos asociarse con, no reemplazar, su departamento de soporte técnico corporativo; Aplicaciones de línea de negocio (LOB), los recursos de red, etc. aún son resueltos por el departamento de soporte técnico 
-- Los dispositivos que no son de Microsoft Managed Desktop están fuera del ámbito 
+- Dispositivos administrados de Microsoft que reside en los dispositivos de prueba de anillo y que no sean Microsoft administrados escritorio están fuera del ámbito 
 
 ## <a name="hardware-replacement"></a>Reemplazo de hardware
 

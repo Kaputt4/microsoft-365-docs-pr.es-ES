@@ -21,10 +21,10 @@ search.appverid:
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: Obtenga información acerca de las directivas de protección que pueden ayudar a proteger el acceso a las aplicaciones de Office desde dispositivos móviles.
 ms.openlocfilehash: 75dbe79acccabd851c43259a165e79bfe3c509c0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871474"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>Administrar la forma en que los usuarios obtienen acceso a documentos de Office en dispositivos móviles

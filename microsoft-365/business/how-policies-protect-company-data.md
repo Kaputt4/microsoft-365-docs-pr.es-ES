@@ -23,10 +23,10 @@ search.appverid:
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: Obtenga información acerca de las directivas que estén destinados a dispositivos específicos y grupos de seguridad para proteger los datos de la compañía en dispositivos personales del usuario.
 ms.openlocfilehash: e52026ccc96e032bbccb7334992a447e14b2cc05
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871187"
 ---
 # <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>Protección de los datos de la compañía con directivas en Microsoft 365 Business

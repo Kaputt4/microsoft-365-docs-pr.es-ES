@@ -12,21 +12,21 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía de laboratorio de prueba para habilitar la configuración de seguridad adicionales de Office 365 su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 18e7b682d20c2212ae73783d668250d28b04075f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871426"
 ---
 # <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Mayor seguridad de Office 365 para el entorno de pruebas de Microsoft 365 Enterprise
 
 Con las instrucciones de este artículo, configura opciones adicionales de Office 365 para aumentar la seguridad en su entorno de prueba de Microsoft 365 Enterprise.
 
-![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](https://aka.ms/m365etlgstack) para acceder a un mapa visual de todos los artículos de la pila Guía del laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Generar el entorno de prueba de Microsoft 365 Enterprise
 
@@ -46,7 +46,7 @@ En esta fase, se habilita una mayor seguridad de Office 365 para el entorno de p
 
 Aplicaciones que no admiten la autenticación moderna no pueden tener una [identidad y dispositivo de acceso a las configuraciones de](microsoft-365-policies-configurations.md) aplica a ellos, que es un elemento importante de la seguridad de su suscripción de 365 de Microsoft y a sus activos digitales. 
 
-1. Vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
+1. Vaya al portal de Office ([https://office.com](https://office.com)) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
   - Si está utilizando el entorno de prueba de Microsoft 365 ligero, inicie sesión desde el equipo local.
     
@@ -55,10 +55,10 @@ Aplicaciones que no admiten la autenticación moderna no pueden tener una [ident
 2. En la ficha del **Centro de administración de Microsoft 365** , haga clic en **Admin**.
 3. En la ficha del **Centro de administración de Microsoft 365** nuevo, haga clic en **centros de administración > SharePoint**.
 4. En la nueva ficha del **Centro de administración de SharePoint** , haga clic en **control de acceso**.
-5. En las **aplicaciones que no admiten la autenticación moderna**, haga clic en **bloque > Aceptar**.
+5. En **aplicaciones que no admiten la autenticación moderna**, haga clic en **Bloquear**y, a continuación, haga clic en **Aceptar**.
 
 
-### <a name="enable-advanced-threat-protection-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Habilitación de Advanced la protección contra amenazas (ATP) para SharePoint, OneDrive y equipos de Microsoft
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Habilitar una protección avanzada) para SharePoint, OneDrive para la empresa y los equipos de Microsoft
 
 Protección de amenaza avanzada de Office 365 (ATP) es una característica de Exchange Online Protection (EOP) que ayuda a mantener el malware fuera de su correo electrónico. Con ATP, crear directivas en el centro de administración de Exchange (EAC) o la seguridad & Centro de cumplimiento que ayudan a garantizar a los usuarios obtener acceso sólo vínculos o datos adjuntos en mensajes de correo electrónico que se identifican como no malintencionado. Para obtener más información, consulte [protección contra amenazas avanzadas para los datos adjuntos seguros y vínculos seguros](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
 

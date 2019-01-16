@@ -240,9 +240,9 @@ Este ejemplo devuelve mensajes de correo electrónico que contienen los números
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Trabajar con elementos parcialmente indizados en la búsqueda de contenido
 
-Los elementos parcialmente indizados (también llamados *elementos no indizados*) son elementos del buzón de Exchange Online y documentos en los sitios de SharePoint Online y OneDrive para la Empresa que, por algún motivo no se han indizado por completo para su búsqueda, lo que significa que no es posible encontrarlos con una búsqueda de contenido. La mayoría de los mensajes de correo electrónico y documentos del sitio se indizan correctamente porque encuentran dentro de los [límites de indización de Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??). Los motivos por los que mensajes de correo electrónico y archivos no se indizan para su búsqueda incluyen:
+Los elementos parcialmente indizados (también llamados *elementos no indizados*) son elementos del buzón de Exchange Online y documentos en los sitios de SharePoint Online y OneDrive para la Empresa que, por algún motivo no se han indizado por completo para su búsqueda, lo que significa que no es posible encontrarlos con una búsqueda de contenido. La mayoría de los mensajes de correo electrónico y documentos del sitio se indizan correctamente porque encuentran dentro de los [límites de indización de Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??d??). Los motivos por los que mensajes de correo electrónico y archivos no se indizan para su búsqueda incluyen:
 
--   El tipo de archivo [no se reconoce para su indización, o no es compatible](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??), aunque a veces sí es compatible con la indización, pero se produjo un error en un archivo específico.
+-   El tipo de archivo [no se reconoce para su indización, o no es compatible](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??), aunque a veces sí es compatible con la indización, pero se produjo un error en un archivo específico.
 
 -   Los mensajes de correo electrónico tienen un archivo adjunto sin un identificador válido, como un archivo de imagen (esta es la causa más común de que un elemento de correo electrónico esté parcialmente indizado).
 
@@ -250,7 +250,7 @@ Los elementos parcialmente indizados (también llamados *elementos no indizados*
 
 Le recomendamos que obtenga más información acerca de los elementos parcialmente indizados para poder trabajar con ellos al responder a solicitudes de interesados. Para obtener más información, consulte:
 
--   [Elementos parcialmente indizados en la búsqueda de contenido en Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
+-   [Elementos parcialmente indizados en la búsqueda de contenido en Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??)
 
 -   [Investigar elementos indizados parcialmente en eDiscovery de Office 365](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 

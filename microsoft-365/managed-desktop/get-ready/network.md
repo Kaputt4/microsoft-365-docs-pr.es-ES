@@ -3,14 +3,14 @@ title: Configuración de red para escritorio administrado de Microsoft
 description: ''
 keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 3eab9237b177ea76faa1296fec2bfda739c78534
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871714"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para escritorio administrado de Microsoft
@@ -45,7 +45,7 @@ Servicio de Microsoft | Origen de documentación - direcciones URL requeridas en
 Actualización de Windows para la empresa (WUfB) | [Windows Update para los requisitos de firewall y proxy de negocio](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
 Optimización de entrega | [Requisitos de proxy de Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
 Microsoft Store para Empresas | [Lista de permitidos de Microsoft Store](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Intervalos de direcciones IP y direcciones URL en Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Office 365 | [Dirección URL de Office 365 y los intervalos de direcciones IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) incluidos \*. apibasic.diagnostics.office.com
 Azure Active Directory | [Identidad híbrida necesario puertos y protocolos](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports) y [Active Directory y los requisitos de puerto de servicios de dominio de Active Directory](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Requisitos de configuración de red Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
 OneDrive para la Empresa <br> | [Requiere las direcciones URL y los puertos para OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports)

@@ -10,15 +10,15 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: dd1504ac11f0e2eefa56572af24de14b5f87830e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f3d3d72ddf9129997dd4232a578e1f101f113a53
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871169"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
-En este artículo se describe cómo implementar la identidad recomendada y las directivas de acceso de dispositivo para proteger el correo electrónico organizativa y clientes de correo electrónico que admiten la autenticación moderno y acceso condicional. Esta guía se basa en la [identidad común y dispositivo las directivas de acceso](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
+En este artículo se describe cómo implementar la identidad recomendada y las directivas de acceso de dispositivo para proteger el correo electrónico organizativa y clientes de correo electrónico que admiten la autenticación moderna y acceso condicional. Esta guía se basa en la [identidad común y dispositivo las directivas de acceso](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
 
 
 Estas recomendaciones se basan en tres diferentes niveles de seguridad y protección que se puede aplicar en función de la granularidad de sus necesidades: **línea de base**, **confidencial**y **altamente regulado**. Encontrará más información acerca de estos niveles de seguridad y los sistemas operativos de cliente recomendado, hace referencia a estas recomendaciones en el que se [recomienda la introducción de las directivas y configuraciones de seguridad](microsoft-365-policies-configurations.md).
@@ -34,20 +34,20 @@ Si ha incluido Exchange Online y Outlook en el ámbito de las directivas, al con
 
 |Nivel de protección|Policies|Más información|
 |:---------------|:-------|:----------------|
-|**Línea base**|[Requerir MFA al inicio de sesión de riesgo es *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en las asignaciones de aplicaciones en la nube.|
-|        |[Clientes de bloque que no admiten la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir Exchange Online en las asignaciones de aplicaciones en la nube.|
-|        |[Definir directivas de protección de aplicaciones](identity-access-policies.md#high-risk-users-must-change-password)|Asegúrese de que Outlook se incluye en la lista de aplicaciones. Asegúrese de actualizar la directiva para cada plataforma (iOS, Android, Windows).|
-|        |[Requieren aplicaciones aprobadas](identity-access-policies.md#require-approved-apps)|Incluir Exchange Online en la lista de aplicaciones en la nube.|
-|        |[Requerir PCs compatibles con](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir Exchange Online en la lista de aplicaciones en la nube.|
-|        |[Clientes de bloque ActiveSync](#block-activesync)|Agregue esta nueva directiva. 
-|**Confidencial**|[Requerir MFA al inicio de sesión de riesgo es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Incluir Exchange Online en las asignaciones de aplicaciones en la nube.|
-|         |[Requerir compatible con PC *y* dispositivos móviles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluir Exchange Online en la lista de aplicaciones en la nube.|
-|**Extremadamente regulado**|[*Siempre* requieren MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en las asignaciones de aplicaciones de nube |
+|**Línea base**|[Requerir MFA al inicio de sesión de riesgo es *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones de nube|
+|        |[Clientes de bloque que no admiten la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir Exchange Online en la asignación de aplicaciones de nube|
+|        |[Definir directivas de protección de aplicaciones](identity-access-policies.md#high-risk-users-must-change-password)|Asegúrese de que Outlook se incluye en la lista de aplicaciones. Asegúrese de actualizar la directiva para cada plataforma (iOS, Android, Windows)|
+|        |[Requieren aplicaciones aprobadas](identity-access-policies.md#require-approved-apps)|Incluir Exchange Online en la lista de aplicaciones en la nube|
+|        |[Requerir PCs compatibles con](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir Exchange Online en la lista de aplicaciones en la nube|
+|        |[Clientes de bloque ActiveSync](#block-activesync-clients)|Agregar esta nueva directiva| 
+|**Confidencial**|[Requerir MFA al inicio de sesión de riesgo es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Incluir Exchange Online en la asignación de aplicaciones de nube|
+|         |[Requerir compatible con PC *y* dispositivos móviles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluir Exchange Online en la lista de aplicaciones en la nube|
+|**Extremadamente regulado**|[*Siempre* requieren MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones de nube|
 
 ## <a name="block-activesync-clients"></a>Clientes de bloque ActiveSync
 Esta directiva impide que los clientes de ActiveSync no usar otras reglas de acceso condicional. La configuración de la regla se aplica sólo a los clientes de ActiveSync. Mediante la selección de **Requerir aprobada por el cliente app**, esta directiva impide que los clientes de ActiveSync. Para configurar esta directiva:
 
-1. Vaya al [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales. Después de iniciar sesión, verá el Panel de Azure.
+1. Vaya al [portal de Azure](https://portal.azure.com)e iniciar sesión con sus credenciales. Una vez que ha iniciado sesión correctamente, verá el panel de Azure.
 
 2. En el menú de la izquierda, seleccione **Azure Active Directory**.
 
@@ -59,15 +59,17 @@ Esta directiva impide que los clientes de ActiveSync no usar otras reglas de acc
 
 6. Seleccione **Aplicaciones en la nube**.
 
-7. Elija **seleccionar aplicaciones**, seleccione Office 365 Exchange Online. Haga clic en **Seleccionar** y **Listo**.
+7. Elija **seleccionar aplicaciones**, seleccione **Office 365 Exchange Online**. Elija **Seleccionar** y **Listo**.
+
 8. Elija **las condiciones**y, a continuación, elija **aplicaciones de cliente**.
-9. Para **Configurar**, seleccione **Sí**. Comprobar sólo lo siguiente: **aplicaciones móviles y los clientes de escritorio** y **los clientes de Exchange ActiveSync**. Haga clic en **Listo**.
+
+9. Para **Configurar**, seleccione **Sí**. Comprobar sólo lo siguiente: **aplicaciones móviles y los clientes de escritorio** y **los clientes de Exchange ActiveSync**. Elija **Listo**.
 
 10. Pulse **Conceder** en la sección **Controles de acceso**.
 
 11. Elija **conceder acceso**, seleccione **Requerir aprobada por el cliente app**.  Para varios controles, seleccione **requerir los controles seleccionados**, a continuación, elija **Seleccionar**. 
 
-12. Haga clic en **Crear**.
+12. Elija **Crear**.
 
 ## <a name="setup-office-365-message-encryption"></a>Configuración de cifrado de mensajes de Office 365
 Con las nuevas capacidades de Office 365 Message Encryption (OME), que aprovechen las características de protección de protección de la información de Azure, su organización puede compartir fácilmente correo electrónico protegido con cualquier usuario en cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Office 365, así como los clientes que no sean Office 365 mediante Outlook.com, Gmail y otros servicios de correo electrónico.

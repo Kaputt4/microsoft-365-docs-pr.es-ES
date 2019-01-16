@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad que se incluyen con Microsoft 365 empresarial.
-ms.openlocfilehash: bfddb419dbe5db441741a73ecb49e3d52649e382
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 17bcc57d57e837f18b05f66cfd54185324f3cad8
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871471"
 ---
 # <a name="microsoft-365-business-security-features"></a>Características de seguridad de Microsoft 365 empresarial
@@ -130,9 +130,7 @@ La capacidad para aplicar las siguientes restricciones al enviar mensajes de cor
 
 Para comprobar que está activada AIP:
 
-1. Inicie sesión en el [Centro de administración de Azure Active Directory](https://portal.azure.com/).
-
-    También puede cantar en mediante la ubicación de **centros de administración** \> **Azure Active Directory** en el panel de navegación izquierdo en el centro de administración.
+1. Inicie sesión en el [portal de Azure](https://portal.azure.com/).
 
 2. Seleccione **todos los servicios** y el tipo de *Protección de la información de Azure* en el **Cuadro de búsqueda**.
 
@@ -144,7 +142,7 @@ Para comprobar que está activada AIP:
 
 Para ver y modificar, etiquetas de la existente:
 
-1. En el panel de protección de la información de Azure, seleccione **las clasificaciones** \> ** etiquetas. <br/>![Etiquetas estándar para la protección de la información de Azure.](media/AIPLabels.png)
+1. En el panel de protección de la información de Azure, seleccione **las clasificaciones** \> **etiquetas**. <br/>![Etiquetas estándar para la protección de la información de Azure.](media/AIPLabels.png)
 
 2. Puede elegir cualquiera de las etiquetas para ver las opciones, puede cambiar el nombre para mostrar, los colores, etcetera.
  
@@ -159,6 +157,16 @@ Para instalar manualmente el cliente AIP:
 2. Puede comprobar que la instalación se ha completado correctamente mediante la visualización de un documento de Word y asegurándose de que la opción de **proteger** está disponible en la ficha **Inicio** . <br/>![Ficha de protección de lista desplegable en un documento de Word.](media/Word_Protect.png)
 
 Para obtener más información, vea [instalar el cliente](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
+
+## <a name="go-to-intune-admin-center"></a>Vaya al centro de administración de Intune
+
+1. Inicie sesión en el [portal de Azure](https://portal.azure.com/).
+
+2. Seleccione **todos los servicios** y escriba *Intune* en el **Cuadro de búsqueda**.
+
+3. Una vez que muestren los resultados, haga clic en el inicio siguiente para **Microsoft Intune** para que sea un favorito y fácil de encontrar más adelante.
+ 
+Puede usar Intune para inscribirse y administrar dispositivos de su organización. Para obtener más información, vea [funciones mediante el método de inscripción para los dispositivos de Windows](https://docs.microsoft.com/intune/enrollment-method-capabs) y [las opciones de inscripción para dispositivos administrados por Intune](https://docs.microsoft.com/intune/enrollment-options).
     
 ## <a name="faq"></a>Preguntas más frecuentes
 
@@ -174,15 +182,4 @@ Sí, estas características están disponibles en todos los mercados donde se ve
     
     ![En el panel de navegación izquierdo en el centro de administración de Microsoft 365, elija centros de administrador.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Elija **seguridad &amp; cumplimiento** para ir a la seguridad &amp; centro de cumplimiento. 
-    
- ### <a name="how-do-i-find-the-intune-admin-center"></a>¿Cómo se puede encontrar el centro de administración Intune?
-  
-  
-1. [Inicie sesión en Microsoft 365 empresarial](https://portal.microsoft.com/) mediante sus credenciales de administrador. 
-    
-2. En el panel de navegación izquierdo, busque **centros de administración** y expándalo. 
-    
-3. Elija **Intune** para ir al centro de administración de Intune. 
-    
-
+3. Elija **seguridad &amp; cumplimiento** para ir a la seguridad &amp; centro de cumplimiento.

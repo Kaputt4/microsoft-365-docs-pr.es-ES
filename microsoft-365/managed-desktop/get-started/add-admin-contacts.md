@@ -3,14 +3,14 @@ title: Agregar contactos de administración en el portal de administración de e
 description: Cuéntenos su quién ponerse en contacto para cada área de foco.
 keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 65dd8709c469826e2696015c13823c58eb10e342
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 31984609681b6e3b1b6de9996eb8fb0fcf6f5624
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871338"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Agregar contactos de administración en el portal de administración de escritorio administrado de Microsoft
@@ -25,11 +25,11 @@ Portal de administración de escritorio administrado de Microsoft requiere que l
 - Administrador de facturación
 - Administrador de servicio de soporte técnico
 
-Para obtener más información sobre estas funciones y asignarlos en Azure AD, vea [permisos de la función Administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+El administrador Global debe ser el uno de ellos para inscribirse en el cliente de escritorio administrado de Microsoft.  Todas las funciones de cinco tienen el mismo acceso desde el portal de administración para iniciar y ver las tareas.  Para obtener más información sobre la asignación de estas funciones en Azure AD, vea [permisos de la función Administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
 ## <a name="admin-contact-focus-areas"></a>Áreas de contacto de enfoque de administración
 
-Contactos de administración deben ser la mejor persona o grupo que se puede responder a preguntas y tomar decisiones para áreas de enfoque diferente. Estas áreas incluyen:
+Contactos de administración deben ser la mejor persona o grupo que se puede responder a preguntas y tomar decisiones para áreas de enfoque diferente.  Operaciones de escritorio de Microsoft administrado se póngase en contacto con estos contactos Admin para preguntas relacionadas con las solicitudes de soporte técnico presentadas por el cliente.  Estos contactos Admin recibirán notificaciones de actualizaciones de solicitud de soporte técnico y los mensajes nuevos.  Estas áreas incluyen:
 
 Área de foco | Para preguntas acerca de
 --- | ---

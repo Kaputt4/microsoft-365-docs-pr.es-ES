@@ -1,9 +1,9 @@
 ---
-title: Directivas MAM para sus entornos de prueba de Microsoft 365 Enterprise
+title: Entorno de prueba de las directivas de cumplimiento de normas de dispositivo para su empresa de 365 de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 11/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,22 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use esta guía de laboratorio de prueba para agregar el entorno de prueba de directivas de administración (MAM) de Intune aplicaciones móviles para la empresa de 365 de Microsoft.
-ms.openlocfilehash: f00379a5e70dce5e07c031a7647b27041d3fa9d1
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Use esta guía de laboratorio de prueba para agregar el entorno de prueba de directivas de cumplimiento de dispositivo Intune a la empresa de 365 de Microsoft.
+ms.openlocfilehash: 1d957c5cdc888251224bbca43fe82ab0a15e7a93
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871788"
 ---
-# <a name="mam-policies-for-your-microsoft-365-enterprise-test-environment"></a>Directivas MAM para sus entornos de prueba de Microsoft 365 Enterprise
+# <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Entorno de prueba de las directivas de cumplimiento de normas de dispositivo para su empresa de 365 de Microsoft
 
-Con las instrucciones de este artículo, se agrega el entorno de prueba de directivas de administración (MAM) de Intune aplicaciones móviles para la empresa de 365 de Microsoft.
+Con las instrucciones de este artículo, se agrega una directiva de cumplimiento de normas de dispositivo Intune al entorno de prueba de Microsoft 365 Enterprise.
 
-![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](https://aka.ms/m365etlgstack) para acceder a un mapa visual de todos los artículos de la pila Guía del laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Generar el entorno de prueba de Microsoft 365 Enterprise
 
@@ -38,15 +38,15 @@ Si desea configurar directivas de MAM en una empresa simulada, siga las instrucc
 > Las pruebas automatizadas de licencias y pertenencia a grupos no requiere el entorno de prueba simulado enterprise, que incluye una intranet simulada conectada a Internet y sincronización de Active directory para un bosque de Windows Server AD. Se proporciona aquí como una opción para que pueda probar licencias automatizada y la pertenencia a grupos y experimentar con él en un entorno que representa una organización típica. 
 >  
 
-## <a name="phase-2-create-and-deploy-mam-policies-for-ios-and-android-devices"></a>Fase 2: Crear e implementar directivas de MAM para dispositivos iOS y Android
+## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Fase 2: Crear una directiva de cumplimiento de normas de dispositivo para los dispositivos de Windows 10
 
-En esta fase, creará e implementará dos directivas de MAM diferentes: una para dispositivos iOS y otra para dispositivos Android.
+En esta fase, se crea una directiva de cumplimiento de normas de dispositivo para dispositivos Windows 10.
   
-1. Vaya al portal de Office 365 en ([https://portal.office.com](https://portal.office.com)) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
+1. Vaya al portal de Office en ([https://office.com](https://office.com)) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
 2. En una nueva ficha del explorador, abra el portal de Azure en [https://portal.azure.com](https://portal.azure.com).
 
-3. En la ficha portal Azure en Internet Explorer, en el panel de navegación, haga clic en **todos los servicios**, escriba **Intune**y, a continuación, haga clic en **Intune**.
+3. En la ficha portal Azure en el explorador, en el panel de navegación, haga clic en **todos los servicios**, escriba **Intune**y, a continuación, haga clic en **Intune**.
     
 4. Si ve un mensaje **no ha habilitado la administración de dispositivos todavía** en el servidor blade de **Intune de Microsoft** , haga clic en él. En el servidor blade de **autoridad de administración de dispositivos móviles** , haga clic en **Intune MDM entidad**y, a continuación, haga clic en **Elegir**. Actualización de la ficha del explorador.
     
@@ -54,97 +54,43 @@ En esta fase, creará e implementará dos directivas de MAM diferentes: una para
     
 6. En el servidor blade de **grupos a todos los grupos** , haga clic en **+ nuevo grupo**.
     
-7. En el servidor blade de **grupo** , seleccione **Office 365** para **tipo de grupo?**, escriba **administrado a los usuarios de dispositivos iOS** en **nombre**, seleccione **asignado** en **tipo de pertenencia**y, a continuación, haga clic en **crear**. 
+7. En el servidor blade de **grupo** , seleccione **Office 365** para **tipo de grupo?**, escriba **los usuarios de dispositivos administrados 10 de Windows** en **nombre**, seleccione **asignado** en **tipo de pertenencia**y, a continuación, haga clic en **crear**. 
     
 8. Cierre la hoja **Grupo**.
     
-9. En el servidor blade de **grupos a todos los grupos** , haga clic en **Agregar**.
-    
-10. En el servidor blade de **grupo** , seleccione **Office 365** para **tipo de grupo?**, escriba **usuario de dispositivos Android administrado** en **nombre**, seleccione **asignado** en **tipo de pertenencia**y, a continuación, haga clic en **crear**.
-    
 11. Cierre el servidor blade de **grupos a todos los grupos** .
     
-12. En la hoja **Intune**, en la lista **Tareas rápidas**, haga clic en **Crear una directiva de cumplimiento**.
+12. En el servidor blade **Intune de Microsoft** , en la lista de **tareas rápidas** , haga clic en **crear una directiva de cumplimiento**.
     
 13. En la hoja **Perfiles de directiva de cumplimiento**, haga clic en **Crear directiva**.
     
-14. En la hoja **Crear directiva**, en **Nombre**, escriba **iOS**. En **Plataforma**, seleccione **iOS**, haga clic en **Aceptar** en la hoja **Directiva de cumplimiento de iOS** y, a continuación, haga clic en **Crear**.
+14. En el módulo de **Directiva de crear** , en **nombre**, escriba **10 de Windows**. En la **plataforma**, seleccione **10 y versiones posteriores de Windows**, haga clic en **Aceptar** en el servidor blade de la **Directiva de cumplimiento del 10 de Windows** y, a continuación, haga clic en **crear**. Cierre el blade **10 de Windows** .
     
-15. En la hoja **Perfiles de directiva de cumplimiento**, haga clic en **Crear directiva**.
+15. En el servidor blade de **Perfiles de directivas de cumplimiento** , haga clic en el nombre de la directiva de **Windows 10** .
     
-16. En la hoja **Crear directiva**, en **Nombre**, escriba **Android**. En **Plataforma**, seleccione **Android**, haga clic en **Aceptar** en la hoja **Directiva de cumplimiento de Android** y, a continuación, haga clic en **Crear**.
+16. En el módulo **10 de Windows** , haga clic en **asignaciones**y, a continuación, haga clic en **Seleccionar grupos que se incluirán**.
     
-17. En la hoja **Perfiles de directiva de cumplimiento**, haga clic en el nombre de directiva **Android**.
+17. En el servidor blade **seleccione grupos para incluir** , haga clic en el grupo de **usuarios de dispositivos administrados 10 de Windows** y, a continuación, haga clic en **Seleccionar**.
     
-18. En el panel de navegación izquierdo de la hoja **Android - Propiedades**, haga clic en **Tareas** y, a continuación, en **Seleccionar grupos**.
+18. Haga clic en **Guardar**y, a continuación, cierre el módulo **Windows 10 - las asignaciones** .
     
-19. En la hoja **Seleccionar grupos**, haga clic en **Usuarios de dispositivos Android administrados** y después haga clic en **Seleccionar**.
+19. Cierre la hoja **Perfiles de directiva de cumplimiento**.
     
-20. Haga clic en **Guardar**y, a continuación, cierre el blade **Android - las asignaciones** .
+20. En el servidor blade **Intune de Microsoft** , haga clic en **aplicaciones de cliente** en el panel de navegación izquierdo.
     
-21. En la hoja **Perfiles de directiva de cumplimiento**, haga clic en el nombre de directiva **iOS**.
-    
-22. En el panel de navegación izquierdo de la hoja **iOS - Propiedades**, haga clic en **Tareas** y, a continuación, en **Seleccionar grupos**.
-    
-23. En la hoja **Seleccionar grupos**, haga clic en el grupo **Usuarios de dispositivos iOS administrados** y después haga clic en **Seleccionar**.
-    
-24. Haga clic en **Guardar**y, a continuación, cierre el blade **iOS - las asignaciones** .
-    
-25. Cierre la hoja **Perfiles de directiva de cumplimiento**.
-    
-26. En la hoja **Intune**, haga clic en **Administrar aplicaciones** en el panel de navegación izquierdo.
-    
-27. En la hoja **Aplicaciones móviles**, haga clic en **Aplicaciones**.
-    
-28. En la lista de aplicaciones, haga clic en **PowerPoint**,  
-    
-29. En la hoja **Información general sobre PowerPoint**, haga clic en **Tareas > Seleccionar grupos > Dispositivos iOS administrados > Seleccionar**. En **Tipo**, seleccione **Disponible** y, a continuación, haga clic en **Guardar**.
-    
-30. Repita el paso 29 para las aplicaciones siguientes:
-    
-    - Outlook para Android
-    
-    - Word para iOS
-    
-    - Excel para iOS
-    
-    - Outlook para iOS
-    
-    - Microsoft Dynamics CRM en iPad para iOS
-    
-    - Microsoft Dynamics CRM en iPhone para iOS
-    
-    - Dynamics CRM para teléfonos Android
-    
-    - Dynamics CRM para tabletas Android
-    
-    - Excel para Android
-    
-    - Word para Android
-    
-    - OneNote para iOS
-    
-31. Cierre la hoja **Aplicaciones móviles - Aplicaciones**.
-    
-32. En la hoja **Aplicaciones móviles**, haga clic en **Directivas de protección de aplicaciones**.
-    
-33. En la hoja **Directivas de protección de aplicaciones**, haga clic en **Agregar directiva**.
-    
-34. En la hoja **Agregar directiva**, escriba **iOS** y, a continuación, haga clic en **Elegir aplicaciones obligatorias**.
-    
-35. En la hoja **Aplicaciones**, haga clic en **PowerPoint**, **Microsoft Dynamics CRM en iPhone**, **Excel**, **Microsoft Dynamics CRM en iPhone**, **Word**, **OneNote** y **Outlook**, y, a continuación, en **Seleccionar**.
-    
-36. En la hoja **Agregar una directiva**, haga clic en **Crear**.
-    
-37. En la hoja **Directivas de protección de aplicaciones**, haga clic en **Agregar directiva**.
-    
-38. En la hoja **Agregar una directiva**, escriba **Android**, seleccione **Android** en **Plataforma** y, a continuación, haga clic en **Elegir aplicaciones obligatorias**.
-    
-39. En la hoja **Aplicaciones**, haga clic en **PowerPoint**, **Dynamics CRM para tabletas**, **Excel**, **Word**, **Outlook** y **Dynamics CRM para teléfonos** y, a continuación, en **Seleccionar**.
-    
-40. En la hoja **Agregar una directiva**, haga clic en **Crear**.
-    
-Ahora tiene dos directivas de MAM, una para dispositivos iOS y otra para dispositivos Android, y está preparado para experimentar con la configuración de prueba para las aplicaciones seleccionadas. 
+21. En el módulo de **Aplicaciones de cliente** , haga clic en **aplicaciones**y, a continuación, haga clic en **Agregar**. 
+
+22. En el módulo de **aplicación de agregar** , seleccione el **tipo de aplicación**y, a continuación, seleccione **Windows 10** en **El conjunto de aplicaciones de Office 365**.
+
+23. Haga clic en **Configurar el conjunto de aplicaciones**y, a continuación, haga clic en **Aceptar**.
+
+24. Haga clic en **Información de conjunto de aplicaciones de una aplicación**, escriba **aplicaciones de Office para Windows 10** en **Nombre del conjunto de aplicaciones**, **aplicaciones de Office para Windows 10** en la **Descripción del conjunto de aplicaciones**y, a continuación, haga clic en **Aceptar**.
+
+25. Haga clic en **Configuración del conjunto de programas de aplicación**, seleccione **anual punto y** en el **canal de actualización de**y, a continuación, haga clic en **Aceptar**.
+
+26. En el módulo de **aplicación de agregar** , haga clic en **Agregar**.
+
+Ahora dispone de una directiva de cumplimiento de normas de dispositivo para probar las aplicaciones seleccionadas en la directiva de cumplimiento de normas de dispositivo de **Windows 10** y para los miembros del grupo de **usuarios de dispositivos administrados 10 de Windows** . 
   
 ## <a name="next-step"></a>Paso siguiente
 

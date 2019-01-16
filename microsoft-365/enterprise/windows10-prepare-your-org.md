@@ -10,10 +10,10 @@ ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
 ms.openlocfilehash: 21a4198c688e1865a029f18ff3ceeb2155d419e4
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871693"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Paso 1: Preparar la organización para Windows 10 Enterprise
@@ -42,9 +42,9 @@ Utilice el valor adecuado en la tabla siguiente al configurar la directiva de ad
 | Nivel | Datos recopilados | Valor |
 |:--- |:--- |:--- |
 | Seguridad | Datos de seguridad. | 0 |
-| Basic | Datos de seguridad y del sistema básicos y datos de calidad. | 1  |
-| Mejorado | Datos de seguridad, sistema básico y datos de calidad y conocimientos mejoradas y datos de confiabilidad avanzada. | 2  |
-| Full | Datos de seguridad, sistema básico y datos de calidad, conocimientos mejoradas y datos de confiabilidad avanzada y datos de diagnóstico completa. | 3  |
+| Basic | Datos de seguridad y del sistema básicos y datos de calidad. | 1 |
+| Mejorado | Datos de seguridad, sistema básico y datos de calidad y conocimientos mejoradas y datos de confiabilidad avanzada. | 2 |
+| Full | Datos de seguridad, sistema básico y datos de calidad, conocimientos mejoradas y datos de confiabilidad avanzada y datos de diagnóstico completa. | 3 |
 
 Puede habilitar los datos de diagnóstico a través de cualquiera de estos métodos:
 

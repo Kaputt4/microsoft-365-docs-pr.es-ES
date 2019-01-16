@@ -3,14 +3,14 @@ title: Tecnologías de escritorio administrado de Microsoft
 description: En este tema se enumera las tecnologías y aplicaciones que se usa en Microsoft Managed Desktop.
 keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: da0268c6b0eddbd44cf62de2a95b963a443c3278
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4b26ec88e1f4ca95fee6f7c4c927fc06cab32135
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871364"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías de escritorio administrado de Microsoft
@@ -38,7 +38,7 @@ Skype para la nube en línea de negocio PBX | Esta característica está disponi
  |
  --- | ---
 Protección de credenciales |  Se proporcionan instrucciones y administran los distintos aspectos de la nube de esta característica escritorio administrado de Microsoft
-Protección del dispositivo (Control de aplicación de Windows Defender)   | Microsoft Managed Desktop creará la directiva. Cliente administrará las firmas
+Protección del dispositivo (Control de aplicación de Windows Defender) | Microsoft Managed Desktop creará la directiva. Cliente administrará las firmas
 Administración de AppLocker |  Microsoft Managed Desktop creará la directiva. Cliente administrará las firmas
 Application Virtualization (App-V) |    Microsoft Desktop administrados no admite este tipo de implementación como no se admite en Intune.
 Virtualización de la experiencia del usuario (UE-V) | Esto no se utiliza con los dispositivos de escritorio administrado de Microsoft administrado

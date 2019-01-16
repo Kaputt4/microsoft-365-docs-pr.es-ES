@@ -3,7 +3,7 @@ title: Entorno de prueba de clasificación de datos para la empresa de 365 de Mi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 12/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,21 +12,21 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía de laboratorio de prueba para crear y usar Office 365 etiquetas en documentos en el entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 718cf038d88f1431ec6ca6fce1554d4f44dc1cb7
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 33ac1fa8e26c0037882e6c240cc04ec19e6a6a7b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26871773"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Entorno de prueba de clasificación de datos para la empresa de 365 de Microsoft
 
-Con las instrucciones de este artículo, configure una clasificación de datos mediante las etiquetas de Office 365 en su entorno de prueba de Microsoft 365 Enterprise.
+Con las instrucciones de este artículo, configure una clasificación de datos mediante las etiquetas de retención de Office 365 en su entorno de prueba de Microsoft 365 Enterprise.
 
-![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](https://aka.ms/m365etlgstack) para acceder a un mapa visual de todos los artículos de la pila Guía del laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Generar el entorno de prueba de Microsoft 365 Enterprise
 
@@ -39,17 +39,17 @@ Si desea configurar las etiquetas de Office 365 en una empresa simulada, siga la
 
 ## <a name="phase-2-create-office-365-labels"></a>Fase 2: Crear etiquetas de Office 365
 
-En esta fase, cree las etiquetas para los diferentes niveles de seguridad para las carpetas de documentos de SharePoint Online.
+En esta fase, cree las etiquetas para los diferentes niveles de retención para carpetas de documentos de SharePoint Online.
   
-1. Si es necesario, use una instancia privada de su explorador de Internet e inicie sesión el portal de Office 365 con su cuenta de administrador global. Para obtener ayuda, consulte [Where iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si es necesario, use una instancia privada de su explorador de Internet e inicie sesión el portal de Office con su cuenta de administrador global. Para obtener ayuda, consulte [Where iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la pestaña **Inicio de Microsoft Office**, haga clic en el icono **Administrador**.
     
-3. En la nueva pestaña **Centro de administración de Office** del explorador, haga clic en **Centros de administración Seguridad &amp; Cumplimiento**.
+3. En la nueva pestaña **Centro de administración de Office** del explorador, haga clic en **Centros de administración > Seguridad &amp; Cumplimiento**.
     
-4. En la nueva pestaña **Inicio - Seguridad y cumplimiento** del explorador, haga clic en **Clasificaciones > Etiquetas**.
+4. Desde la nueva **principal - seguridad &amp; cumplimiento** ficha del explorador, haga clic en **clasificaciones > etiquetas**. Desde el **Home > etiquetas** panel, haga clic en la ficha de **retención** .
     
-5. En el panel **Inicio > Etiquetas**, haga clic en **Crear una etiqueta**.
+5. Haga clic en **crear una etiqueta**.
     
 6. En el panel **Nombre de la etiqueta**, escriba **Interno público** y, después, haga clic en **Siguiente**.
     
@@ -83,13 +83,13 @@ En esta fase, cree las etiquetas para los diferentes niveles de seguridad para l
 
 Tenga en cuenta que puede tardar unos minutos para las etiquetas que se va a publicar.
 
-## <a name="phase-3-apply-office-365-labels-to-documents"></a>Fase 3: Aplicar etiquetas de Office 365 a los documentos
+## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>Fase 3: Aplicar etiquetas de retención de Office 365 a los documentos
 
 En esta fase, detectar el comportamiento de la etiqueta predeterminada para los archivos en la carpeta de documentos de un sitio de SharePoint Online y cambiar manualmente la etiqueta de un documento.
 
 En primer lugar, cree un sitio de grupo de SharePoint Online confidenciales nivel:
   
-1. Abra un explorador en el equipo local e inicie sesión en el portal de Office 365 con la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Uso de un explorador en su equipo local, inicie sesión en el portal de Office con su cuenta de administrador global. Para obtener ayuda, consulte [Where iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -125,13 +125,13 @@ A continuación, cree un nuevo documento en el sitio de SensitiveFiles y cambiar
     
 4. Haga clic en el icono de Word junto al nombre de archivo **Document.docx** .
     
-5. En el panel derecho, en la sección de **Propiedades** , en **Aplicar etiqueta**, tenga en cuenta que el documento ha tenido la etiqueta **confidencial** aplica automáticamente.
+5. En el panel derecho, en la sección de **Propiedades** , en **Aplicar etiqueta de retención**, tenga en cuenta que el documento ha tenido la etiqueta **confidencial** aplica automáticamente.
     
 6. Haga clic en **Editar todos**.
     
 7. En el panel de **Document.docx** , en **Aplicar etiqueta**, seleccione la etiqueta **Altamente confidencial** y, a continuación, haga clic en **Guardar**.
 
-En la fase de **protección de la información** para obtener información y vínculos a las etiquetas de Office 365 en producción, vea el paso [Configurar clasificación para su entorno](data-classification-microsoft-365-enterprise-dev-test-environment.md) .
+En la fase de **protección de la información** para obtener información y vínculos a las etiquetas de retención de Office 365 en producción, vea el paso [Configurar clasificación para su entorno](infoprotect-configure-classification.md) .
 
 ## <a name="next-step"></a>Paso siguiente
 
