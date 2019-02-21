@@ -6,12 +6,12 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 54d986f37b3981200bdead30a2c232143b9dd49d
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.openlocfilehash: 64560a1eb597072dd99c1538b0131e3cd807899c
+ms.sourcegitcommit: 1942a860d1b65e1f8062564ec4703b953e0c2fd7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051091"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30122250"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Opciones conFigurables-escritorio administrado por Microsoft
 
@@ -64,7 +64,7 @@ Todas las opciones de configuración que se pueden configurar se administran med
 - **Seguimiento del progreso** : realice un seguimiento del estado después de implementar el cambio. El estado cambiará a **en curso**y, a continuación ****, se completará o **no**. Si se produce un error en la implementación, se abre automáticamente una solicitud de soporte técnico para las operaciones de escritorio administradas de Microsoft para investigar el problema.  
 - **Ver versión implementada** : cada cambio implementado tiene un número de versión.
 - **Revertir cambios** : la reversión de un cambio detiene la implementación actual y revierte todos los timbres a los últimos cambios que se implementaron en todos los anillos. Va a revertir al valor de configuración de última configuración buena conocida.
-- **Validatie cahnges** : una vez completada la implementación, valide que los cambios se hayan aplicado como se esperaba.  
+- **Validar cambios** : una vez completada la implementación, valide que los cambios se han aplicado como se esperaba.  
 
 Si se produce un error en una implementación o no puede revertir un cambio, [abra una solicitud de soporte técnico](admin-support.md) con Microsoft Managed Desktop Operations. 
 
