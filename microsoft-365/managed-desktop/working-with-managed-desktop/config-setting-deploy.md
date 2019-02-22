@@ -5,13 +5,13 @@ keywords: Escritorio administrado por Microsoft, Microsoft 365, servicio, docume
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 2/12/2019
-ms.openlocfilehash: fd0e0750332fa8f650cfc4756f8eb108be2a71df
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.date: 2/17/2019
+ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
+ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051131"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175782"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Implementar y realizar un seguimiento de las opciones configurables-escritorio administrado por Microsoft
 
@@ -24,9 +24,9 @@ Estos son los statues que verá para cada implementación.
 Estado  | Explicación 
 --- | --- 
 Implementar | El cambio está esperando a que se implemente en este anillo.
-En curso | El cambio se aplica a los dispositivos de esta llamada. 
-Completa | El cambio se aplica a los dispositivos de esta llamada. 
-Failed | Se produjo un error en el cambio en un 10% de los dispositivos del anillo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con las operaciones de escritorio administradas de Microsoft para solucionar problemas de la implementación. 
+En curso | El cambio se aplica a los dispositivos activos en este anillo. 
+Completa | El cambio se completó en todos los dispositivos activos en este anillo. 
+Failed | Se produjo un error en el cambio en un 10% de los dispositivos activos en el anillo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con las operaciones de escritorio administradas de Microsoft para solucionar problemas de la implementación. 
 Revierten | El cambio se revirtió al último cambio que se implementó correctamente en todos los anillos de implementación.
 
 ## <a name="deploy-changes"></a>Implementar cambios
