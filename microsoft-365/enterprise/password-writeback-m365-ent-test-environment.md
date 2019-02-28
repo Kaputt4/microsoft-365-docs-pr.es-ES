@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure la escritura diferida de contraseña para el entorno de prueba de Microsoft 365'
-ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
-ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
+ms.openlocfilehash: 7593da41d51d85c0f73d01450bb67306f82c7a1e
+ms.sourcegitcommit: 15c60addeaa51e0601c580665e8316ece75d3abc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29993231"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303645"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Escritura diferida de contraseña para el entorno de prueba de Microsoft 365
 
@@ -106,11 +106,11 @@ A continuación, configure Azure AD Connect en APP1 para la escritura diferida d
 
 4. En la página **Tareas adicionales**, haga clic en **Personalizar las opciones de sincronización** y, a continuación, haga clic en **Siguiente**.
 
-5. En la página **Conectar a Azure AD**, escriba las credenciales de la cuenta Usuario 1 y, después, haga clic en **Siguiente**.
+5. En la página **Conectar a Azure AD**, escriba las credenciales de la cuenta de administrador global y, después, haga clic en **Siguiente**.
 
 6. En las páginas **Conectar directorios** y **Filtrado de dominios y unidades organizativas**, haga clic en **Siguiente**.
 
-7. En la página **Características opcionales**, seleccione **Contraseña con escritura diferida** y haga clic en Siguiente. 
+7. En la página **Características opcionales**, seleccione **Contraseña con escritura diferida** y haga clic en **Siguiente**. 
 
 8. En la página **Preparado para configurar**, haga clic en **Configurar** y espere a que finalice el proceso.
 
@@ -129,7 +129,7 @@ Esta configuración se compone de:
 - Azure AD Connect se ejecuta en APP1 para sincronizar la lista de cuentas y grupos desde el espacio empresarial de Azure AD de sus suscripciones de Office 365 y EMS E5 con el dominio de Windows Server AD “TESTLAB”. 
 - La escritura diferida de contraseña está habilitada para que los usuarios puedan cambiar sus contraseñas a través de Azure AD sin tener que estar conectados a la intranet simplificada.
 
-Vea el paso [Simplificar las actualizaciones de contraseña](identity-password-writeback.md) en la fase Identidad para obtener información y vínculos sobre cómo configurar la escritura diferida de contraseña en un entorno de producción.
+Vea el paso [Simplificar las actualizaciones de contraseña](identity-password-reset.md#identity-pw-writeback) en la fase Identidad para obtener información y vínculos sobre cómo configurar la escritura diferida de contraseña en un entorno de producción.
 
 ## <a name="next-step"></a>Siguiente paso
 
