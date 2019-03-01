@@ -6,21 +6,21 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/27/2019
-ms.openlocfilehash: 9ce6eca8ffcb243b819c22078c4729df4bc2881e
-ms.sourcegitcommit: e13dafb5d6004aaadd92333e5023ae09e713e3a4
+ms.openlocfilehash: d2b5fe34825d44e71a54a895c3de2455eeeeaee1
+ms.sourcegitcommit: e749e2db2a15bb52b1a2857dbccdf55c31cff3d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313785"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340100"
 ---
 # <a name="get-started-using-microsoft-managed-desktop-devices"></a>Introducción al uso de dispositivos de escritorio administrados por Microsoft
 
 Los dispositivos de escritorio administrados por Microsoft vienen preconfigurados con la versión actual de Windows. Las configuraciones y aplicaciones se instalarán desde la nube mientras el usuario completa la configuración del dispositivo. 
  
-Solo hay unos pocos pasos que el usuario debe realizar durante la configuración del dispositivo para que sea productivo con su dispositivo. Microsoft manAged Desktop recomienda el uso de introducción *a la* guía de dispositivos, vinculada a continuación. Esta guía descargable proporciona instrucciones básicas para configurar un nuevo dispositivo de escritorio administrado por Microsoft. Hemos diseñado esta guía como una línea base para los administradores de ti. Úsela tal como está, o actualícelo para agregar los pasos o la información que ayudará a los usuarios a configurar sus dispositivos. 
+Solo hay unos pocos pasos que el usuario debe realizar durante la configuración del dispositivo para que sea productivo con su dispositivo. Microsoft manAged Desktop recomienda el uso de introducción *a la* guía de dispositivos que se vincula a continuación. Esta guía descargable proporciona instrucciones básicas para configurar un nuevo dispositivo de escritorio administrado por Microsoft. Hemos diseñado esta guía como una línea base para los administradores de ti. Úsela tal como está, o actualícelo para agregar los pasos o la información que ayudará a los usuarios a configurar sus dispositivos. 
 
 ## <a name="get-started-guide"></a>Guía de introducción 
-Puede descargar [Microsoft Managed Desktop:](https://www.microsoft.com/en-us/download/details.aspx?id=57918) Introducción al dispositivo
+Puede descargar la guía: [escritorio administrado por Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=57918): Introducción al dispositivo.
 
 ## <a name="what-should-i-update-in-the-get-started-guide"></a>¿Qué debo actualizar en la guía de introducción?
 
