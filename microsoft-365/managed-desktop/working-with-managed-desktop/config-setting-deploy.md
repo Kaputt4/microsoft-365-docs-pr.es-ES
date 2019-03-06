@@ -6,12 +6,13 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/17/2019
-ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
-ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 62a17c95f5dc6b11f446a27684c507d7aaa95b7b
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175782"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414177"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Implementar y realizar un seguimiento de las opciones configurables-escritorio administrado por Microsoft
 
@@ -23,9 +24,9 @@ Estos son los statues que verá para cada implementación.
 
 Estado  | Explicación 
 --- | --- 
-Implementar | El cambio está esperando a que se implemente en este anillo.
+Implementación | El cambio está esperando a que se implemente en este anillo.
 En curso | El cambio se aplica a los dispositivos activos en este anillo. 
-Completa | El cambio se completó en todos los dispositivos activos en este anillo. 
+Completar | El cambio se completó en todos los dispositivos activos en este anillo. 
 Failed | Se produjo un error en el cambio en un 10% de los dispositivos activos en el anillo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con las operaciones de escritorio administradas de Microsoft para solucionar problemas de la implementación. 
 Revierten | El cambio se revirtió al último cambio que se implementó correctamente en todos los anillos de implementación.
 
@@ -62,6 +63,6 @@ Después de implementar un cambio, puede revertir el estado de **implementación
 
 ![Reversión de implementación de la configuración configurable](images/config-setting-revert.png) 
 
-## <a name="additional-resources"></a>Otros recursos
+## <a name="additional-resources"></a>Recursos adicionales
 - [Información general de configuración configurable](config-setting-overview.md)
 - [Referencia de opciones conFigurables](config-setting-ref.md) 
