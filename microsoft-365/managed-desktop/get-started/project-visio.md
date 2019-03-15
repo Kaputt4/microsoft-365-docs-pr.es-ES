@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 004b6399bb7039c1e30fbc6a7b775b8c7f19d497
-ms.sourcegitcommit: 41b3dd9e38f56d0d4683ae6dc8e0e053ff57a3e7
+ms.openlocfilehash: 5c820e36b7b397fe770216ee229e38a1da5b034d
+ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30516335"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573424"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft
 
@@ -51,4 +51,4 @@ Es importante que los administradores de ti permitan a sus usuarios saber cómo 
 - Instrucciones sobre cómo instalar estas aplicaciones desde el portal de la empresa.
 
 >[!NOTE]
->Los usuarios deben cerrar todas las aplicaciones de Office antes de instalar Mircosoft Project o Microsoft Visio desde el portal de empresa. 
+>Los usuarios deben cerrar todas las aplicaciones de Office antes de instalar Microsoft Project o Microsoft Visio desde el portal de empresa. 
