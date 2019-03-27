@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea957d02484eac9a2e8b51f53d6e2c34f2b3d711
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 0d30e92eb9747079a7edc5a8fd198298508f342e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414188"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900269"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Opciones conFigurables-escritorio administrado por Microsoft
 
@@ -20,7 +20,7 @@ Microsoft manAged Desktop implementa la configuración y las directivas que se a
 
 Las opciones conFigurables del escritorio administrado de Microsoft proporcionan a los administradores de ti una forma de personalizar e implementar la configuración que es única para su organización y las necesidades empresariales. Estas opciones de configuración se agregan a la configuración de dispositivos y a las directivas administradas por el escritorio administrado por Microsoft.  
 
-Los cambios de configuración conFigurables se realizan en la nube y se aplican a los dispositivos de escritorio administrados por Microsoft en anillos de implementación definidos. Este proceso es similar al modo en que Microsoft manAged Desktop administra los cambios en las directivas y la configuración de configuruation de dispositivos definidas y administradas por el servicio. Si usa el mismo proceso que Microsoft manAged Desktop usa para implementar cambios, sigue adelante con las prácticas modernas de administración de TI para avanzar la organización.
+Los cambios de configuración conFigurables se realizan en la nube y se aplican a los dispositivos de escritorio administrados por Microsoft en los grupos de implementación definidos. Este proceso es similar al modo en que Microsoft manAged Desktop administra los cambios en las directivas y la configuración de configuruation de dispositivos definidas y administradas por el servicio. Si usa el mismo proceso que Microsoft manAged Desktop usa para implementar cambios, sigue adelante con las prácticas modernas de administración de TI para avanzar la organización.
 
 ## <a name="when-to-use-configurable-settings"></a>¿Cuándo se deben usar las opciones configurables?
 
@@ -47,9 +47,9 @@ Por ejemplo:
 
 ## <a name="configurable-setting-process"></a>Proceso de configuración configurable
 
-El proceso general tiene este aspecto. 
+Microsoft manAged Desktop recomienda seguir un proceso similar al siguiente cuando se usan opciones configurables para su organización:
 
-**Paso 1: Plan** : Obtenga información sobre la configuración configurable y decida qué categorías de configuración desea configurar para su organización. Planee la comunicación a los usuarios que cumplan los procesos internos de administración de cambios. Por ejemplo, si va a agregar páginas de inicio del explorador, indique a los usuarios que tendrán un nuevo conjunto de páginas de inicio en el explorador después de la implementación.  
+**Paso 1: Plan** : Obtenga información sobre la configuración configurable y decida qué categorías de configuración desea configurar para su organización. Cree una escala de tiempo para cuando tenga previsto implementar cambios en cada grupo. Planee la comunicación a los usuarios que cumplan los procesos internos de administración de cambios. Por ejemplo, si va a agregar páginas de inicio del explorador, indique a los usuarios que tendrán un nuevo conjunto de páginas de inicio en el explorador después de la implementación.  
 
 **Paso 2: configurar y ensayar la implementación** : realice cambios en la configuración configurable en el portal de administración de escritorio administrado de Microsoft. Ensaye los cambios para que estén listos para la implementación. Recuerde informar a los usuarios sobre los cambios y cómo los cambios cambiarán la experiencia del dispositivo.   
 
@@ -57,14 +57,14 @@ Configure y almacene los cambios en el portal de administración de escritorio a
 
 **Paso 3: comunicar los cambios** Comunique la información sobre los próximos cambios a sus usuarios. Para cada implementación, complete la comunicación que forma parte de los procesos de administración de cambios. Debe comunicarse con claridad cualquier cambio que afecte al funcionamiento de un usuario o lo que verán en sus dispositivos.
 
-**Paso 4: implementar los** cambios: implemente los cambios, comenzando con el anillo de prueba. El anillo de prueba permite validar y solucionar problemas en un timbre con menos dispositivos, antes de implementar cambios en grupos de dispositivos de mayor tamaño. Si tiene algún problema, puede revertir el cambio, actualizar la configuración y ensayar una nueva implementación. Microsoft manAged Desktop recomienda seguir el enfoque estructurado e implementarse en anillos en el orden indicado: test, First, Fast y, a continuación, general.   
+**Paso 4: implementar los** cambios: implemente los cambios, comenzando con el grupo de prueba. El grupo de pruebas permite validar y solucionar problemas en un grupo con menos dispositivos, antes de implementar cambios en grupos de dispositivos de mayor tamaño. Si tiene algún problema, puede revertir el cambio, actualizar la configuración y ensayar una nueva implementación. Microsoft manAged Desktop recomienda seguir el enfoque estructurado e implementarlo en grupos en este orden: test, First, Fast y, a continuación, general.   
 
 Todas las opciones de configuración que se pueden configurar se administran mediante el portal de administración de escritorio administrado de Microsoft. Para obtener más información, vea [implementar cambios](config-setting-deploy.md). 
 
 **Paso 5: control de cambios** : realice un seguimiento del progreso de los cambios en el estado de la implementación. Para cada configuración, puede:
 - **Seguimiento del progreso** : realice un seguimiento del estado después de implementar el cambio. El estado cambiará a **en curso**y, a continuación ****, se completará o **no**. Si se produce un error en la implementación, se abre automáticamente una solicitud de soporte técnico para las operaciones de escritorio administradas de Microsoft para investigar el problema.  
 - **Ver versión implementada** : cada cambio implementado tiene un número de versión.
-- **Revertir cambios** : la reversión de un cambio detiene la implementación actual y revierte todos los timbres a los últimos cambios que se implementaron en todos los anillos. Va a revertir al valor de configuración de última configuración buena conocida.
+- **Revertir cambios** : la reversión de un cambio detiene la implementación actual y revierte todos los grupos a los últimos cambios que se implementaron en todos los grupos. Va a revertir al valor de configuración de última configuración buena conocida.
 - **Validar cambios** : una vez completada la implementación, valide que los cambios se han aplicado como se esperaba.  
 
 Si se produce un error en una implementación o no puede revertir un cambio, [abra una solicitud de soporte técnico](admin-support.md) con Microsoft Managed Desktop Operations. 

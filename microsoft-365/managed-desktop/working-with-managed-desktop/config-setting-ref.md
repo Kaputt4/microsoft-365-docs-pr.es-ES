@@ -7,19 +7,19 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8839be023844ae4de17972790ec9d02b82c75244
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414198"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900279"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referencia de opciones conFigurables-escritorio administrado por Microsoft
 
 En este tema se enumeran las categorías de configuración que los clientes pueden configurar con el escritorio administrado de Microsoft. Cada categoría de configuración incluye información sobre los requisitos, procedimientos recomendados y cómo personalizar la categoría de configuración. 
 
 ## <a name="desktop-background-picture"></a>Imagen de fondo de escritorio
-Puede personalizar la imagen de fondo de escritorio de los dispositivos de escritorio administrados por Microsoft en su organización. Puede usar esto para aplicar una marca de empresa o marketing 
+Puede personalizar la imagen de fondo de escritorio de los dispositivos de escritorio administrados por Microsoft en su organización. Puede usar esto para aplicar una marca de empresa o material de marketing. 
 
 ### <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ Estos requisitos se deben cumplir para una imagen de fondo de escritorio:
 2. En **configuración**, seleccione **configurable**.
 3. En área de trabajo **configurable** , seleccione **imagen de fondo de escritorio**. 
 4. Escriba la ubicación de la imagen que desea usar. 
-5. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el anillo de prueba. 
+5. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba. 
 
 ## <a name="browser-start-pages"></a>Páginas de inicio del explorador
 Las páginas de inicio del explorador se abren en pestañas individuales cuando los usuarios inician Microsoft Edge. Si desea que los usuarios puedan abrir fácilmente un conjunto de sitios que usan con frecuencia, agregue una página de inicio de explorador para cada sitio. 
@@ -53,7 +53,7 @@ Debe proporcionar el nombre de dominio completo (FQDN) para los sitios de intran
 4. Seleccione **Agregar página de inicio**.
 5. En **Agregar página de inicio del explorador**, escriba la dirección URL del sitio que desea usar y, a continuación, seleccione **Agregar página de inicio**. 
 6. Repita los pasos 1-5 para páginas de inicio adicionales del explorador. 
-7. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el anillo de prueba.
+7. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
 ## <a name="enterprise-mode-site-list-location"></a>Ubicación de la lista de sitios del modo de empresa
 
@@ -82,7 +82,7 @@ Se ofrecen estos procedimientos recomendados para ayudar a los clientes a tomar 
 2.  En **configuración**, seleccione **configurable**.
 3.  En área de trabajo **configurable** , seleccione ubicación de la **lista de sitios del modo de empresa**. 
 4.  Escriba la ubicación https de la lista de sitios. 
-5.  Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el anillo de prueba.
+5.  Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
 ## <a name="trusted-sites"></a>Sitios de confianza
 
@@ -105,7 +105,7 @@ Proporcione el nombre de dominio completo (FQDN) para los sitios de intranet o d
 3. En área de trabajo **configurable** , seleccione **sitios de confianza**y, a continuación, seleccione **Agregar sitio de confianza**. 
 4. En **Agregar sitio de confianza**, escriba la dirección URL, elija una zona de seguridad y, a continuación, seleccione **Agregar sitio de confianza**. 
 5. Repita los pasos 1-4 para cada sitio de confianza que desee agregar. 
-6. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el anillo de prueba.
+6. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
 **Para quitar un sitio de confianza**
 
@@ -114,7 +114,7 @@ Proporcione el nombre de dominio completo (FQDN) para los sitios de intranet o d
 3. En área de trabajo **configurable** , seleccione **sitios de confianza**. 
 4. Seleccione el sitio que desea eliminar y, a continuación, seleccione **eliminar**. 
 5. Repita los pasos 1-4 para cada sitio de confianza que desee eliminar. 
-6. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el anillo de prueba.
+6. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
 ## <a name="proxy"></a>Proxy
 Puede administrar la configuración del proxy de red de su organización. Agregue el servidor proxy y el número de puerto y, a continuación, agregue las excepciones de sitio proxy. Microsoft manAged Desktop incluye un conjunto de excepciones de proxy predeterminadas necesarias para que funcione el servicio. La lista de exclusión predeterminada solo puede ser modificada por el servicio de escritorio administrado de Microsoft.  Para obtener más información, consulte [configuración de red para escritorio administrado de Microsoft](../get-ready/network.md). 
@@ -140,7 +140,7 @@ Estos requisitos se deben cumplir con las excepciones de servidor proxy y de sit
 4. Escriba la **Dirección** y el **número de Puerto** del servidor proxy y, a continuación, seleccione **Agregar excepción de proxy**. 
 5. Escriba la dirección URL de un sitio http válido y, a continuación, seleccione **Agregar excepción de proxy**. 
 6. Repita los pasos 1-5 para cada sitio de confianza que desee agregar. 
-7. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el anillo de prueba.
+7. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
 ## <a name="additional-resources"></a>Recursos adicionales
 - [Información general de configuración configurable](config-setting-overview.md) 

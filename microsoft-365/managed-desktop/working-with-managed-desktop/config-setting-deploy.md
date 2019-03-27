@@ -7,16 +7,16 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 62a17c95f5dc6b11f446a27684c507d7aaa95b7b
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 4662373b926d07558ecedd05c9dfcf472ceb6357
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414177"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900289"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Implementar y realizar un seguimiento de las opciones configurables-escritorio administrado por Microsoft
 
-Después de realizar cambios en las categorías de configuración y ensayar una implementación, puede implementar y realizar un seguimiento del progreso de la implementación en el estado de la implementación. En esta página se muestra un resumen de cada configuración configurable. Abra una categoría de configuración para ver cada implementación y sus detalles, para implementar los cambios. 
+Después de realizar cambios en las categorías de configuración y ensayar una implementación, la página estado de implementación le permite comenzar a implementar la configuración en grupos. En esta página se muestra un resumen de cada configuración configurable. Al abrir una categoría de configuración, puede implementar la configuración en grupos y realizar un seguimiento del progreso de estas implementaciones.
 
 ## <a name="deployment-statuses"></a>Estados de implementación 
 
@@ -24,36 +24,36 @@ Estos son los statues que verá para cada implementación.
 
 Estado  | Explicación 
 --- | --- 
-Implementación | El cambio está esperando a que se implemente en este anillo.
-En curso | El cambio se aplica a los dispositivos activos en este anillo. 
-Completar | El cambio se completó en todos los dispositivos activos en este anillo. 
-Failed | Se produjo un error en el cambio en un 10% de los dispositivos activos en el anillo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con las operaciones de escritorio administradas de Microsoft para solucionar problemas de la implementación. 
-Revierten | El cambio se revirtió al último cambio que se implementó correctamente en todos los anillos de implementación.
+Implementar | El cambio está esperando a que se implemente en este grupo.
+En curso | El cambio se aplica a los dispositivos activos en este grupo. 
+Completar | El cambio se completó en todos los dispositivos activos de este grupo. 
+Failed | Se produjo un error en el cambio en un 10% de los dispositivos activos del grupo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con las operaciones de escritorio administradas de Microsoft para solucionar problemas de la implementación. 
+Revierten | El cambio se revirtió al último cambio que se implementó correctamente en todos los grupos de implementación.
 
 ## <a name="deploy-changes"></a>Implementar cambios
 
-En estas instrucciones se mostrará la imagen de fondo del escritorio. Una vez que haya ensayado una implementación, implemente los cambios desde el estado de implementación. 
+En estas instrucciones se mostrará la imagen de fondo del escritorio. Una vez que haya ensayado una implementación, implemente los cambios desde la página estado de la implementación. 
 
 **Para implementar los cambios**
 
 1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal)
 2. En **configuración**, seleccione **configurable**.
 3. En el área de trabajo del **Estado de implementación** , seleccione la configuración que desee implementar y, a continuación, seleccione la implementación preconfigurada que se va a implementar.
-4. Seleccione **implementar** para implementar el cambio en uno de los anillos de implementación.
+4. Seleccione **implementar** para implementar el cambio en uno de los grupos de implementación.
 
 ![Introducción al estado de implementación de configuración configurable](images/deploy-cs-overview.png)
 
-Microsoft manAged Desktop recomienda la implementación en los anillos de implementación en este orden: test, First, Fast y, a continuación, amplio. 
+Microsoft manAged Desktop recomienda implementar en grupos de implementación en este orden: test, First, Fast y, a continuación, general. 
 
-Cuando se completen los cambios en cada timbre, el estado cambiará a **completa**.
+Cuando se completen los cambios en cada grupo, el estado cambiará a **completa**.
 
 ![Implementación de la configuración configurable completada](images/config-setting-complete.png)
 
 ## <a name="revert-deployment"></a>Revertir la implementación
 
-En estas instrucciones se mostrará la imagen de fondo del escritorio. 
+Después de implementar un cambio, puede revertir el estado de **implementación**. Cuando se revierte un cambio que está **en curso** o **completado**, la implementación actual se detiene. La configuración se revertirá a la última versión que se implementó en todos los grupos. 
 
-Después de implementar un cambio, puede revertir el estado de **implementación**. Cuando se revierte un cambio que está **en curso** o **completado**, la implementación actual se detiene. La configuración se revertirá a la última versión que se implementó en todos los anillos. 
+Mostraremos los pasos para revertir un cambio con la imagen de fondo de escritorio como ejemplo. 
 
 **Para revertir un cambio**
 1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal)
