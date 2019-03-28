@@ -1,5 +1,5 @@
 ---
-title: Buscar ayuda para la implementación de escritorio moderno
+title: Obtener ayuda para la implementación de Windows 10 y Office 365 ProPlus
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,19 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Dónde encontrar ayuda y soporte para la implementación de escritorio moderno.
-ms.openlocfilehash: 7c6f68320165abdfd131a84e84345bd6ff6d47c1
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+description: Dónde obtener ayuda para la implementación de Windows 10 y Office 365 ProPlus.
+ms.openlocfilehash: 78d231dbcb5f965e2b4233bc7980da31fbfcbc2e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241973"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900259"
 ---
-# <a name="find-help-for-your-modern-desktop-deployment"></a>Buscar ayuda para la implementación de escritorio moderno 
+# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Obtener ayuda para la implementación de Windows 10 y Office 365 ProPlus 
 
 Si está planeando la implementación de Windows 10 con Office 365 ProPlus, hay varias opciones para obtener ayuda adicional de partners certificados de Microsoft y [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
-A continuación se muestra un mapa de los servicios disponibles alineados al proceso de [implementación de escritorio moderno](http://www.aka.ms/howtoshift) en Windows 10, Office 365 ProPlus y Enterprise Mobility + Security con ofertas de partners existentes y FastTrack. En muchos casos, estos servicios se incluyen con su suscripción a Microsoft 365, Office 365 o Windows 10 Enterprise. Para los servicios promovidos por partners como la evaluación de escritorio moderno, como una organización válida, Microsoft proporciona un vale para servicios realizados por el partner. Los detalles de cada oferta se encuentran en los siguientes vínculos.
+A continuación encuentra un mapa de los servicios disponibles alineados con el proceso de [Implementación de escritorios](http://www.aka.ms/howtoshift) para Windows 10, Office 365 ProPlus y Enterprise Mobility + Security con ofertas de partners existentes y ofertas de FastTrack. En muchos casos, estos servicios están incluidos en su suscripción a Microsoft 365, Office 365 o Windows 10 Enterprise. En calidad de organización válida, Microsoft proporciona un vale de servicios realizados por el partner para servicios dirigidos por partners, como la evaluación del escritorio de Windows 10 y Office 365 ProPlus. En los siguientes vínculos, encuentra los detalles de cada oferta.
 
 <br>
 
@@ -102,8 +102,8 @@ Para preguntas específicas durante el planeamiento o inicio de la implementaci�
 
 ## <a name="related-resources"></a>**Recursos relacionados**
 
-  - [Centro de implementación de escritorios modernos](http://www.aka.ms/howtoshift)
+  - [Centro de implementación de escritorios](http://www.aka.ms/howtoshift)
 
-  - [Vídeos de la serie de implementación de escritorios modernos de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - [Kit de laboratorio de administración e implementación de Escritorio moderno](https://aka.ms/howtoshiftlabs)
+  - [Kit de laboratorio de administración e implementación de Escritorio](https://aka.ms/howtoshiftlabs)
