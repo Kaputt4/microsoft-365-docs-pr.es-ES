@@ -2,20 +2,20 @@
 title: Responsable de la protección de datos de Microsoft
 description: Información sobre el responsable de la protección de datos en la Unión Europea de Microsoft para el RGPD
 keywords: Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
-author: herviicban
+author: BrendaCarter
 localization_priority: Priority
+audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: ''
-ms.author: heicba
+ms.author: bcarter
 manager: laurawi
-audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2401613de3c57bc02af67ed527eb37c314528930
-ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
+ms.openlocfilehash: a58c15425d56398a341166448687db149cca1f78
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
+ms.lasthandoff: 11/28/2018
 ms.locfileid: "26871546"
 ---
 # <a name="microsofts-data-protection-officer"></a>Responsable de la protección de datos de Microsoft
@@ -42,7 +42,6 @@ Leopardstown<br>
 Dublín 18<br>
 D18 P521<br>
 Irlanda<br>
-Telephone: +353 (0) 1 295-3826<br>
 
 La autoridad de control de Microsoft posee la información de contacto del responsable de la protección de datos.   
 
