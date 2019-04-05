@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo comprar y registrarse en Microsoft 365 Business.
-ms.openlocfilehash: 136ccc0d769a24b767101e1e8eb50261d4816f15
-ms.sourcegitcommit: 07f9eeb20b80573361e4d93b45acb68151a9e881
+ms.openlocfilehash: ce12c872e8cc30ece9e59aaf8c5b5d7c86694df2
+ms.sourcegitcommit: bbb32d1601f87dc72bebd00fad36d760ca233cd7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30933255"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31477711"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Regístrese para obtener Microsoft 365 Business
 
@@ -31,23 +31,26 @@ Si es un partner, vea [obtener Microsoft 365 Business desde el centro de Partner
 
 Vaya a [Descubra microsoft 365 Business Advantage](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop) y elija **comprar ahora** en Microsoft 365 Business.
 
-1. En la **pantalla de bienvenida, vamos a conocer** la página de introducción de la información necesaria. Tenga en cuenta que 
+1. En la **pantalla de bienvenida, vamos a conocer** la página de introducción de la información necesaria. Tenga en cuenta que:
  
-    -  El **país** que elija determina el servicio que se está recibiendo y no se puede cambiar más adelante.
-    - La **dirección de correo electrónico** de la empresa es cualquier correo electrónico que tenga y Microsoft lo usará para enviar la correspondencia de la suscripción.
-    - El **nombre** de la compañía se mostrará en el centro de administración y se usará para cualquier dirección URL de sitio de SharePoint.
+    -  **País o regiones:** Esto determina el servicio que recibe y no se puede cambiar más adelante.
+    - **Dirección de correo electrónico de la empresa:** Escriba su dirección de correo electrónico actual. Microsoft usa esta dirección para que corresponda con usted sobre su suscripción a Microsoft 365.
+    - **Nombre** de la compañía Mostraremos el nombre de la compañía en el centro de administración; Aquí es donde se administran los usuarios, las licencias, etc. de Microsoft 365. También lo incluiremos en cualquier dirección URL de sitio de SharePoint.
 
-2. En la página **crear su identificador de usuario** , escriba el alias que desea usar para iniciar sesión, un nombre de dominio detrás del signo @ y, a continuación, seleccione un dominio de la lista desplegable. Puede usarlo para comprar un dominio y seleccionar la extensión en la lista desplegable, por ejemplo, puede escribir *Teresa@ContosoSkis.net* y el asistente determinará si el dominio está disponible y agregará el costo al costo empresarial de Microsoft 365. El nuevo dominio también se configurará para usted y listo para su uso si lo adquiere aquí.
+2. En la página **crear su identificador de usuario** :
 
-    Si tiene un dominio existente que quiera usar, elija *. onmicrosoft.com* de la lista desplegable y puede configurarlo más adelante en el centro de administración.
+    - **Nombre de usuario**: escriba el nombre (denominado alias) que va a usar para su propio correo electrónico comercial. Por ejemplo, Robert Young puede usar RobY o RobYoung como un alias de trabajo.
+    - **Su empresa**: escriba el nombre único de su empresa. Este es el nombre que el sitio web de su empresa usa si tiene uno, y también es el nombre que desea incluir después del signo @ cuando recibe un correo electrónico de negocios. Este nombre se denomina dominio. Por ejemplo, si su empresa se llama esquíes de Contoso, escriba ContosoSkis detrás del signo @.
+    - **Seleccione un dominio**: si es el propietario de su nombre de dominio ya, seleccione. onmicrosoft.com de la lista desplegable hombre y le pediremos que la configure más adelante. De lo contrario, es fácil comprar un nombre de dominio que represente su empresa. Para ello, seleccione el dominio que prefiera en el menú desplegable. Por ejemplo, su dirección de correo electrónico completa *Teresa@ContosoSkis.net*podría ser. Le dejaremos saber inmediatamente si el nombre de dominio está disponible. Si es así, agregaremos el costo de su dominio al costo de su suscripción de Microsoft 365 empresa. El nuevo dominio también se configurará y estará listo para su uso en Microsoft 365 si lo adquiere aquí.
     
     ![Captura de pantalla de la página crear su identificador de usuario.](media/signinuserid.png)
 
 3. ReLlene el resto de los campos y seleccione **crear mi cuenta**.
 4. En la **prueba. eres. Not'A. Robot.** Página escriba un número de teléfono para recibir un código a través de un texto o una llamada y seleccione **texto me** o **llámeme**, a continuación \> ****, escriba el código de verificación a continuación.
-5. En la página en la **que va a usar esta página,** rellene la dirección de la empresa. Esta información se usa para determinar los impuestos y la disponibilidad de la suscripción. Seleccione **siguiente**, revise el pedido y vuelva a seleccionar **siguiente** .
-6. En la página **¿cómo quiere pagar?** , escriba los detalles de pago y, a continuación, **realice el pedido**.
-    A continuación, puede ir al [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=837890) para finalizar la [configuración](set-up.md).
+5. En la **ubicación en la que va a usar esta** n su dirección de la empresa. Esta información determina qué impuestos paga y qué suscripciones están disponibles. Para obtener más información acerca de los impuestos, vea [¿Qué impuesto se me cobrará?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
+1. Seleccione **siguiente**, revise el pedido y vuelva a seleccionar **siguiente** .
+1. En la página **¿cómo quiere pagar?** , escriba los detalles de pago y, a continuación, **realice el pedido**.
+    A continuación, puede ir al [centro de administración](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) para finalizar la [configuración](set-up.md).
 
     > [!NOTE]
-    > Si, al final de la configuración, selecciona el vínculo ir al centro de administración, se le llevará directamente a la experiencia de [configuración](set-up.md) .
+    > Si, al final de la configuración, selecciona el vínculo **ir al centro de administración**, se le llevará directamente a la experiencia de [configuración](set-up.md) .
