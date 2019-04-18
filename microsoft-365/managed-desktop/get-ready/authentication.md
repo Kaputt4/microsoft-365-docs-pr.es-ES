@@ -6,16 +6,16 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2317a0581b356dadbde2042920ed2542f0e2203c
-ms.sourcegitcommit: 392b906e64d27366b47931e8285b625e5e2f884e
+ms.openlocfilehash: c4ebe0c7ad3d1e197cf90cc975366df61d3b0cb5
+ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31838171"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901214"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Preparar el acceso a los recursos locales para el escritorio administrado por Microsoft
 
-En el escritorio administrado de Microsoft, los dispositivos se unen automáticamente a Azure Active Directory. Esto significa que si usa un Active Directory local, tendrá que comprobar algunas cosas para asegurarse de que los dispositivos Unidos a Azure AD puedan comunicarse con su Active Directory local. 
+En el escritorio administrado de Microsoft, los dispositivos se unen automáticamente a Azure Active Directory (Azure AD). Esto significa que si usa un Active Directory local, tendrá que comprobar algunas cosas para asegurarse de que los dispositivos Unidos a Azure AD puedan comunicarse con su Active Directory local. 
 
 > [!NOTE]  
 > *Entorno híbrido* El escritorio administrado de Microsoft no admite Azure AD join.
@@ -30,22 +30,22 @@ En este tema se explican las cosas que debe comprobar para asegurarse de que las
 
 ## <a name="single-sign-on-for-on-premises-resources"></a>Inicio de sesión único para recursos locales
 
-El inicio de sesión único (SSO) mediante UPN y contraseñas está habilitado de forma predeterminada en los dispositivos de escritorio administrados por Microsoft. Pero los usuarios también pueden usar Windows Hello para empresas, que requiere algunos pasos de configuración adicionales. 
+El inicio de sesión único (SSO) mediante UPN y la contraseña están habilitados de forma predeterminada en los dispositivos de escritorio administrados por Microsoft. Pero los usuarios también pueden usar Windows Hello para empresas, que requiere algunos pasos de configuración adicionales. 
 
-### <a name="single-sign-on-by-using-upn-and-passwords"></a>Inicio de sesión único con UPN y contraseñas
+### <a name="single-sign-on-by-using-upn-and-password"></a>Inicio de sesión único con UPN y contraseña
 
 En la mayoría de las organizaciones, los usuarios podrán usar SSO para autenticar por UPN y contraseña en dispositivos de escritorio administrados por Microsoft. Sin embargo, para asegurarse de que funcione correctamente, debe comprobar lo siguiente:
 
-- Confirme que Azure Active Directory (AAD) Connect se haya configurado y use un servidor local de Active Directory que ejecute Windows Server 2008 R2 o posterior.
-- Confirme que AAD Connect se está ejecutando en una versión compatible y está configurado para sincronizar estos tres atributos con Azure AD: 
+- Confirme que Azure AD Connect está configurado y usa un servidor local de Active Directory que ejecuta Windows Server 2008 R2 o versiones posteriores.
+- Confirme que Azure AD Connect se ejecuta en una versión compatible y está configurado para sincronizar estos tres atributos con Azure AD: 
     - Nombre de dominio DNS de Active Directory local (donde se encuentran los usuarios finales)
-    - NetBIOS de Yor local de Active Directory (donde se encuentran los usuarios de TH)
+    - NetBIOS de su Active Directory local (donde se encuentran los usuarios finales)
     - Nombre de cuenta SAM del usuario
 
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Inicio de sesión único con Windows Hello para empresas
 
-Los dispositivos de escritorio administrados por Microsoft también ofrecen a los usuarios una experiencia rápida y no con contraseñas al usar Windows Hello para empresas. Para garantizar que Windows Hello para empresas funcione sin que los usuarios tengan que proporcionar UPN y contraseñas, visita [configurar los dispositivos Unidos a Azure ad para el inicio de sesión único local con Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) para comprobar los requisitos y, a continuación, sigue las pasos proporcionados.
+Los dispositivos de escritorio administrados por Microsoft también ofrecen a los usuarios una experiencia rápida y no con contraseñas al usar Windows Hello para empresas. Para garantizar que Windows Hello para empresas funcione sin que los usuarios tengan que proporcionar el UPN y la contraseña respectivos, visita [configurar los dispositivos Unidos a Azure ad para el inicio de sesión único local con Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) para comprobar los requisitos y, a continuación, Siga los pasos que se indican allí.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>Aplicaciones y recursos que usan la autenticación
