@@ -2,20 +2,20 @@
 title: Evaluaciones de impacto en la protección de datos
 description: Estos documentos proporcionan a los poseedores de los datos información que les permitirá determinar si se necesita un EIPD y, en ese caso, qué detalles incluir.
 keywords: Evaluación de impacto en la protección de datos, EIPD, Dynamics 365, Servicios profesionales de Microsoft, Microsoft 365, documentación de Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 4e711c089d307c5a6b79d6d22d52f75470537955
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: d05c99daaaeadd42714b7df752b5d560e95538bb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285593"
 ---
 # <a name="data-protection-impact-assessments"></a>Evaluaciones de impacto en la protección de datos
 

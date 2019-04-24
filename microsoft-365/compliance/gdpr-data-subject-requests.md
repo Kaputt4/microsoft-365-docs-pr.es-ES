@@ -2,21 +2,21 @@
 title: Solicitudes de interesados para el RGPD
 description: ''
 keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: a9484a38ab15ea1fe12aa9f720cfec88f5f98813
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 1022b4c8ec1a8fbc57147bb28cc3d79af6869b3b
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285583"
 ---
 # <a name="data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados para el RGPD
 

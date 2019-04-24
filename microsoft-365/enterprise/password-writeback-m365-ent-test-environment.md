@@ -3,7 +3,7 @@ title: Escritura diferida de contraseña para el entorno de prueba de Microsoft 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure la escritura diferida de contraseña para el entorno de prueba de Microsoft 365'
-ms.openlocfilehash: 11a0efbae09c36098a19725187cd43b53850f4fc
-ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
+ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291455"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Escritura diferida de contraseña para el entorno de prueba de Microsoft 365
 
@@ -39,7 +39,7 @@ Hay dos fases de configuración:
 > [!TIP]
 > Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
-## <a name="phase-1-configure-password-hash-synchronization-and-password-reset-for-your-microsoft-365-test-environment"></a>Fase 1: configurar la sincronización de hash de contraseñas y el restablecimiento de contraseña para el entorno de prueba de Microsoft 365
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
 Primero, siga las instrucciones de [Sincronización de hash de contraseñas](password-hash-sync-m365-ent-test-environment.md). Esta es la configuración resultante.
   
@@ -50,10 +50,6 @@ Esta configuración se compone de:
 - Suscripciones de prueba o de pago de Office 365 E5 y EMS E5.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. 
 - Azure AD Connect se ejecuta en APP1 para sincronizar el dominio de TESTLAB AD DS con el espacio empresarial de Azure AD de sus suscripciones de Office 365 y EMS E5.
-
-A continuación, siga las instrucciones de la Guía de entorno de pruebas [Fase 2 de la operación de restablecimiento de contraseña](password-reset-m365-ent-test-environment.md#phase-2-configure-and-test-password-reset).
-
-Debe tener el restablecimiento de contraseña habilitado para utilizar la escritura diferida de contraseña.
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>Fase 2: Habilitar la escritura diferida de contraseña para el dominio TESTLAB de AD DS.
 

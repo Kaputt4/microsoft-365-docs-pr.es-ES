@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo Contoso usa System Center Configuration Manager para implementar Office 365 ProPlus.
-ms.openlocfilehash: 5b98f72561d7a431a4ca4a0b0241c6105c87026f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 0fa0ca1d268dbfd57891804e20959147cd6385e4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283553"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Implementación de Office 365 ProPlus en Contoso
 
@@ -71,7 +71,7 @@ Para completar la implementación de Office, Contoso implementó el siguiente pr
 7. En Configuration Manager, implementaron los paquetes de Windows y Office en puntos de distribución en la red y, después, ejecutaron las secuencias de tareas de implementación de Configuration Manager para implementar el paquete piloto de Office 365 ProPlus en el grupo piloto.
 8. Después de corregir los problemas de compatibilidad con el grupo piloto, Contoso ejecutó las secuencias de tareas para implementar el paquete general de Office 365 ProPlus en el grupo general.
 
-Como Contoso decidió actualizar de forma automática los dispositivos desde la nube, no fue necesario administrar el proceso en Configuration Manager. Los dispositivos se actualizaron de forma automática directamente desde la nube con el canal de actualización que se había definido como parte de la implementación inicial. 
+Como Contoso decidió actualizar de forma automática los dispositivos desde la nube, no fue necesario administrar el proceso en Configuration Manager. Los dispositivos se actualizaron de forma automática directamente desde la nube según el canal de actualización definido como parte de la implementación inicial. 
 
 ## <a name="next-step"></a>Siguiente paso
 

@@ -2,20 +2,19 @@
 title: Lista de comprobación de preparación de responsabilidad de Office 365 para RGPD
 description: Esta lista de comprobación de preparación de responsabilidad (ARC) le proporciona información que necesita para cumplir el RGPD al usar Office 365.
 keywords: Preparación de responsabilidad del RGPD, lista de comprobación de preparación de responsabilidad, Microsoft 365, Microsoft 365 Educación, documentación del RGPD, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
-manager: bcarter
+ms.author: heicba
+manager: laurawi
 ms.collection: GDPR
-ms.openlocfilehash: 3fe44b99f33db852d5115295662a2556c3efdee6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 8c789b233a3fd10745ef718a190d45ec1126e189
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286538"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>Lista de comprobación de preparación de responsabilidad para Microsoft Office 365
 

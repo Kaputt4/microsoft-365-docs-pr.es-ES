@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar la infraestructura de Office 365 ProPlus para Microsoft 365 Enterprise.
-ms.openlocfilehash: 3f6630d4c120609cbb1737ad96644d43eb2fda3c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290958"
 ---
 # <a name="phase-4-office-365-proplus"></a>Fase 4: Office 365 ProPlus
 
@@ -62,7 +62,7 @@ Antes de implementar Office 365 ProPlus, siga las instrucciones de [Evaluar el e
 
 Después de evaluar el entorno, siga las instrucciones de [Planear la implementación de Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) para crear un plan de implementación. Este plan incluye las decisiones siguientes: 
 
-- Cómo implementar Office, incluido qué herramienta usar (como System Center Configuration Manager o la Herramienta de implementación de Office [ODT]) y desde dónde instalar Office.
+- Procedimiento para implementar Office, incluido qué herramienta usar (como System Center Configuration Manager o la Herramienta de implementación de Office [ODT]) y desde dónde instalar Office.
 - Cómo administrar las actualizaciones de Office.
 - Qué canales de actualización usar (los canales de actualización de Office controlan la frecuencia con la que los usuarios reciben actualizaciones de características para las aplicaciones de Office).
 - Los grupos de implementación y los paquetes de instalación de Office que quiera usar, incluidas qué aplicaciones de Office e idiomas se deben instalar para los usuarios.
@@ -89,7 +89,6 @@ Si su organización usa Configuration Manager, le recomendamos actualizar a la r
 
 Aprenda cómo los expertos de Microsoft planearon e implementaron Office 365 ProPlus en Microsoft 365 Enterprise con estos recursos:
 
-- [Preparing your organization for a seamless Office 365 ProPlus 2016 deployment (Preparar la organización para una implementación perfecta de Office 365 ProPlus 2016)](https://www.microsoft.com/itshowcase/Office365adoption)
 - [Implementar y actualizar Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Automation and update channels help deploy Microsoft Office 365 ProPlus (Los canales de automatización y actualización ayudan a implementar Microsoft Office 365 ProPlus)](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (vídeo)
 

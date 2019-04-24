@@ -2,21 +2,21 @@
 title: 'RGPD: Pasos adicionales para exportar datos de registros generados por el sistema'
 description: 'Manual técnico de Microsoft: Pasos adicionales para exportar datos de registros generados por el sistema'
 keywords: Exportar datos de registro, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 6cf1f6ae7c6b977c173f8e1e6c62bd0f53b63078
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: de4708bf7f9c7733762356d119cd4983206bb45f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286838"
 ---
 # <a name="additional-steps-to-export-system-generated-log-data"></a>Pasos adicionales para exportar datos de registros generados por el sistema
 
