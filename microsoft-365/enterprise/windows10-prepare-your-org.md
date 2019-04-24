@@ -1,67 +1,73 @@
 ---
-title: Prepare la organización para Windows 10 Enterprise
-description: Proporciona una orientación de alto nivel en los pasos que necesarios para implementar Windows 10 Enterprise en los equipos como parte de Microsoft 365 Enterprise.
-keywords: Microsoft, Microsoft 365 Enterprise, Microsoft 365 documentación, Enterprise del 10 de Windows, la implementación de 365
+title: Preparar la organización para Windows 10 Enterprise
+description: Proporciona instrucciones de alto nivel sobre los pasos necesarios para implementar Windows 10 Enterprise en equipos PC como parte de Microsoft 365 Enterprise.
+keywords: Microsoft 365, Microsoft 365 Enterprise, documentación de Microsoft 365, Windows 10 Enterprise, implementación
 author: JoeDavies-MSFT
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
-ms.openlocfilehash: 21a4198c688e1865a029f18ff3ceeb2155d419e4
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 9b09f21c71f578c45a71149cedfd67a8ea9104e6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289411"
 ---
-# <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Paso 1: Preparar la organización para Windows 10 Enterprise
+# <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Paso 1: preparar la organización para Windows 10 Enterprise
 
-*En este artículo se aplica a la E3 y E5 versiones de Microsoft 365 Enterprise*
+*Este artículo se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Antes de actualizar los dispositivos de Windows 10 Enterprise, tenga en cuenta lo siguiente:
+Antes de actualizar los dispositivos a Windows 10 Enterprise, tenga en cuenta lo siguiente:
 
-- **Los dominios deben ser agregados y comprobados** <br>Con una suscripción a Microsoft 365, obtenga un nombre de dominio predeterminado que termina en onmicrosoft.com (por ejemplo, contoso.onmicrosoft.com). La mayoría de las organizaciones prefieren usar uno o varios de los dominios que poseen para finalizan sus direcciones de correo electrónico en su propio nombre de dominio (como username@contoso.com). Para usar su propio dominio, debe agregarlo a Microsoft 365 y compruebe que es propietario. Se recomienda que agregue y compruebe los dominios ahora para que estén listos para ir siempre que se establezca los servicios de Microsoft 365, como correo electrónico y Skype para la empresa.
-- **No es necesario agregar usuarios en este momento** <br>Para usar los servicios de Microsoft 365 o instalar los productos de Microsoft 365, los usuarios necesitan cuentas en Microsoft 365 y que necesitan licencias de producto. Cómo agregar usuarios a Microsoft 365 depende del número de usuarios y si actualmente dispone de Active Directory local. Si no dispone de Active Directory (o tener Active Directory pero no desea sincronizar a Microsoft 365), puede agregar los usuarios directamente a Microsoft 365 y asignar licencias, individualmente o de forma masiva.<br>Si dispone de Active Directory local, se puede [sincronizar con Microsoft 365](identity-azure-ad-connect-health.md) para crear cuentas de usuario en el directorio de la nube utilizado por Microsoft 365 de Azure AD. Con este método, puede crear cuentas para los usuarios y grupos de seguridad que se usan para administrar los permisos a los recursos (como documentos o colecciones de sitios de SharePoint Online). Sincronización de Active Directory con Microsoft 365 no asigna licencias a los usuarios.
-- **No es necesario que los usuarios de la licencia en este momento** <br>Antes de que los usuarios pueden usar los servicios de Microsoft 365 o instalar software desde el portal de Microsoft 365, que necesitan licencias de producto. Como un administrador de control de usuario o global, puede asignar directamente las licencias de productos de Microsoft 365 individualmente o de forma masiva. También puede usar [basadas en grupos de licencias](identity-group-based-licensing.md) para asignar automáticamente licencias cuando se agregan usuarios a un grupo determinado. 
-- **Instale Office 365 ProPlus por separado** <br>Obtención de una licencia de Microsoft 365 no instala automáticamente Office 365 ProPlus en los equipos cliente. Vea [fase 4: Office 365 ProPlus](office365proplus-infrastructure.md) para obtener más información. 
+- **Los dominios deben agregarse y comprobarse** <br>
+  Con una suscripción de Microsoft 365, obtiene un nombre de dominio predeterminado que termina en onmicrosoft.com (por ejemplo, contoso.onmicrosoft.com). La mayoría de las organizaciones prefieren usar uno o más de los dominios que poseen, por lo que sus direcciones de correo electrónico terminan en su propio nombre de dominio (como username@contoso.com). Para usar su propio dominio, tiene que agregarlo a Microsoft 365 y comprobar que es el propietario. Le recomendamos que agregue y compruebe sus dominios ahora para que estén listos para usar cuando configure los servicios de Microsoft 365, como el correo electrónico y Skype empresarial.
+- **No es necesario agregar usuarios en este momento.** <br>
+  Para usar los servicios de Microsoft 365 o instalar los productos de la 365 de Microsoft, los usuarios necesitan cuentas en Microsoft 365 y necesitan licencias de producto. La forma en que se agregan usuarios a Microsoft 365 depende del número de usuarios y de si actualmente tiene Active Directory local. Si no tiene Active Directory (o tiene Active Directory pero no desea sincronizarlo con Microsoft 365), puede Agregar usuarios directamente a Microsoft 365 y asignar licencias, de forma individual o en masa. <br>
+  Si tiene Active Directory local, puede [sincronizarlo con Microsoft 365](identity-azure-ad-connect.md#identity-sync) para crear cuentas de usuario en Azure ad, el directorio de la nube usado por Microsoft 365. Con este método, puede crear cuentas para los usuarios y para los grupos de seguridad que use para administrar los permisos de los recursos (como los documentos o colecciones de sitios de SharePoint Online). La sincronización de Active Directory con Microsoft 365 no asignará licencias a los usuarios.
+- **No es necesario que tenga licencia para los usuarios en este momento** <br>
+  Para que los usuarios puedan usar los servicios de Microsoft 365 o instalar software desde el portal de Microsoft 365, necesitan licencias de producto. Como administrador global o de administración de usuarios, puede asignar directamente licencias de productos en Microsoft 365 de forma individual o en masa. También puede usar [licencias basadas en grupos](identity-self-service-group-management.md#identity-group-license) para asignar licencias automáticamente cuando se agregan usuarios a un grupo determinado. 
+- **Instale Office 365 proPlus por separado** <br>
+  La obtención de una licencia de 365 de Microsoft no instala automáticamente Office 365 proPlus en los equipos cliente. Consulte [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md) para obtener más información. 
 
-## <a name="set-windows-diagnostics-data-level"></a>Establecer nivel de datos de diagnóstico de Windows
+## <a name="set-windows-diagnostics-data-level"></a>Establecer el nivel de datos de diagnósticos de Windows
 
-Microsoft utiliza datos de diagnóstico para ayudar a mantener Windows dispositivos seguro mediante la identificación de tendencias de malware y otras amenazas y para mejorar la calidad de los servicios de Windows y Microsoft. Debe asegurarse de que el servicio de diagnóstico está habilitado en un nivel mínimo de básica en todos los extremos de la organización. *De forma predeterminada, este servicio está habilitado y configurado con el nivel mejorado.* Sin embargo, es recomendable comprobar y asegúrese de que se reciben datos de detección. Establecer niveles de a través de las directivas de invalida la configuración de nivel de dispositivo. 
+Microsoft usa datos de diagnóstico para ayudar a proteger los dispositivos Windows mediante la identificación de tendencias de malware y otras amenazas, así como ayudarnos a mejorar la calidad de Windows y de los servicios de Microsoft. Debe asegurarse de que el servicio de diagnóstico esté habilitado con un nivel mínimo de Basic en todos los puntos de conexión de la organización. *De forma predeterminada, este servicio está habilitado y establecido en el nivel mejorado.* Sin embargo, es aconsejable comprobar y asegurarse de que reciben datos del sensor. La configuración de niveles mediante directivas invalida la configuración de nivel de dispositivo. 
 
-**Niveles de datos de diagnóstico de sistema operativo Windows 10**
+**Niveles de datos de diagnóstico del sistema operativo Windows 10**
 
-Puede configurar la configuración de datos de diagnóstico de sistema operativo mediante las herramientas de administración que ya está utilizando, por ejemplo, directiva de grupo, MDM y aprovisionamiento de Windows. Puede cambiar manualmente la configuración mediante el Editor del registro. Establecer los niveles de datos de diagnóstico a través de una directiva de administración, invalida cualquier configuración de nivel de dispositivo.
+Puede establecer la configuración de datos de diagnóstico del sistema operativo con las herramientas de administración que ya está usando, como Directiva de grupo, MDM o aprovisionamiento de Windows. También puede cambiar manualmente la configuración con el editor del registro. La configuración de los niveles de datos de diagnóstico a través de una directiva de administración invalida cualquier configuración de nivel de dispositivo.
 
-Utilice el valor adecuado en la tabla siguiente al configurar la directiva de administración.
+Use el valor adecuado de la tabla siguiente cuando configure la Directiva de administración.
 
-| Nivel | Datos recopilados | Valor |
+| Level | Datos recopilados | Valor |
 |:--- |:--- |:--- |
-| Seguridad | Datos de seguridad. | 0 |
-| Basic | Datos de seguridad y del sistema básicos y datos de calidad. | 1 |
-| Mejorado | Datos de seguridad, sistema básico y datos de calidad y conocimientos mejoradas y datos de confiabilidad avanzada. | 2 |
-| Full | Datos de seguridad, sistema básico y datos de calidad, conocimientos mejoradas y datos de confiabilidad avanzada y datos de diagnóstico completa. | 3 |
+| Seguridad | Solo datos de seguridad. | comprendi |
+| Básica | Datos de seguridad y datos básicos del sistema y de calidad. | 1 |
+| Mejor | Datos de seguridad, datos básicos del sistema y de calidad, y datos mejorados y datos de confiabilidad avanzada. | segundo |
+| Full | Datos de seguridad, datos básicos del sistema y de calidad, conocimientos mejorados y datos de confiabilidad avanzada y datos de diagnóstico completos. | 3 |
 
 Puede habilitar los datos de diagnóstico a través de cualquiera de estos métodos:
 
-* **Microsoft Intune** - si tiene previsto usar Intune para administrar los dispositivos, puede crear una directiva de configuración para habilitar los datos de diagnóstico mediante la configuración de la directiva del sistema <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> . Para obtener más información acerca de cómo configurar las directivas de configuración, vea [Administrar la configuración y características de los dispositivos con Microsoft Intune directivas](https://aka.ms/intuneconfigpolicies).
-* **El Editor del registro** , puede usar el Editor del registro para habilitar de forma manual los datos de diagnóstico en cada dispositivo en la organización. Como alternativa, puede escribir una secuencia de comandos para modificar el registro. Si ya existe una directiva de administración, como la directiva de grupo o MDM, invalidará esta configuración del registro.
-* **Directiva de grupo** - si no planea inscribirse dispositivos en Intune, puede usar un objeto de directiva de grupo para establecer el nivel de datos de diagnóstico de la organización.
-* **El símbolo del sistema** - puede establecer datos de diagnóstico de Windows 10 y el servicio se inicie automáticamente con el símbolo del sistema. Este método es mejor si está probando el servicio en solo unos dispositivos. Habilitar el servicio se inicie automáticamente con este comando no va a configurar el nivel de datos de diagnóstico. Si no ha configurado un nivel de datos de diagnóstico mediante las herramientas de administración, el servicio funcionará con el valor predeterminado de nivel mejorado.
+* **Microsoft Intune** : Si planea usar Intune para administrar los dispositivos, puede crear una directiva de configuración para habilitar los datos de diagnóstico mediante la configuración de la Directiva del sistema <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> . Para obtener más información sobre cómo configurar las directivas de configuración, consulte [administrar la configuración y las características en los dispositivos con las directivas de Microsoft Intune](https://aka.ms/intuneconfigpolicies).
+* **Editor del** registro: puede usar el editor del registro para habilitar manualmente los datos de diagnóstico en cada dispositivo de la organización. Como alternativa, puede escribir un script para editar el registro. Si ya existe una directiva de administración, como la Directiva de grupo o MDM, invalidará esta configuración del registro.
+* **Directiva de grupo** : Si no tiene previsto inscribir dispositivos en Intune, puede usar un objeto de directiva de grupo para establecer el nivel de datos de diagnóstico de su organización.
+* **Símbolo del sistema** : puede establecer que los datos y el servicio de diagnóstico de Windows 10 se inicien automáticamente con el símbolo del sistema. Este método es el mejor si está probando el servicio solo en algunos dispositivos. Si se habilita el servicio para que se inicie automáticamente con este comando, no se configurará el nivel de datos de diagnóstico. Si no ha configurado un nivel de datos de diagnóstico con las herramientas de administración, el servicio funcionará con el nivel mejorado predeterminado.
 
-Ver [datos de diagnóstico de configuración de Windows en su organización](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization) para obtener más información acerca de los datos de diagnóstico de Windows y cómo se puede habilitar que se basa en el método que elija.
+Consulte [Configure Windows Diagnostic Data in your Organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization) para obtener más información sobre los datos de diagnóstico de Windows y cómo habilitarlos en función del método que elija.
 
 Como control provisional, puede consultar los [criterios de salida](windows10-exit-criteria.md#crit-windows10-step1) correspondientes a este paso.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Implementar Enterprise del 10 de Windows para dispositivos existentes como una actualización en contexto](windows10-deploy-inplaceupgrade.md) |
+|![](./media/stepnumbers/Step2.png)| [Implementación de Windows 10 Enterprise para dispositivos existentes como actualización local](windows10-deploy-inplaceupgrade.md) |
 
 
 

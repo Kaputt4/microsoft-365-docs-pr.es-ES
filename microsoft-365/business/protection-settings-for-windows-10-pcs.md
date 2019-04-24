@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Obtenga información sobre predeterminada y otras opciones de configuración disponibles en Microsoft Business de 365 para proteger los dispositivos de Windows 10.
-ms.openlocfilehash: ebfe5f59e544b67e5a4f2ecd990031e9221ff8e5
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Obtenga información sobre la configuración predeterminada y otras opciones disponibles en Microsoft 365 Business para proteger los dispositivos Windows 10.
+ms.openlocfilehash: f9e890cde7a8290a9a8e81720d32a6a2889c312f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285936"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Establecer la configuración de protección de dispositivos para equipos con Windows 10
 
@@ -31,17 +34,15 @@ Vea un vídeo sobre cómo proteger los dispositivos Windows 10 con Microsoft 365
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. Inicie sesión en [Microsoft 365 Business](https://portal.office.com) con credenciales de administrador global. 
+1. Inicie sesión en el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=837890) con credenciales de administrador global. 
     
-2. En el centro de administración, en la tarjeta **Directivas de dispositivos**, seleccione **Agregar directiva**.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
+2. En el panel de navegación izquierdo, elija **Agregar** **directivas** \> de **dispositivos** \> .
   
 3. En el panel **Agregar directiva**, escriba un nombre único para esta directiva. 
     
 4. En **Tipo de directiva**, elija **Configuración de dispositivos Windows 10**.
     
-5. Expanda **Proteger dispositivos Windows 10** \> configure las opciones como quiera. Vea [Configuración disponible](protection-settings-for-windows-10-pcs.md#bkmk_availablesettings) para obtener más información. 
+5. Expanda **Proteger dispositivos Windows 10** \> configure las opciones como quiera. Vea [Configuración disponible](#available-settings) para obtener más información. 
     
     Siempre puede usar el vínculo **Restablecer la configuración predeterminada** para volver a la configuración predeterminada. 
     
@@ -60,8 +61,8 @@ Para obtener más información, vea [Asignar características de protección de 
 |||
 |:-----|:-----|
 |Configuración  <br/> |Descripción  <br/> |
-|Ayudar a proteger los equipos PC de los virus y otras amenazas con Antivirus de Windows Defender  <br/> |Requiere que Antivirus de Windows Defender esté activado para proteger los equipos de los riesgos de estar conectado a Internet.  <br/> |
-|Ayudar a proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
+|Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  <br/> |Es necesario que el antivirus Windows Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
+|Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
 |Usar reglas que reducen la superficie expuesta a ataques de los dispositivos  <br/> |Al activar la reducción de la superficie expuesta a ataques, se bloquean acciones y aplicaciones que suelen usarse en ataques de malware para infectar dispositivos. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Reducir las superficies expuestas a ataques](https://go.microsoft.com/fwlink/?linkid=870417).  <br/> |
 |Proteger carpetas de amenazas como ransomware  <br/> |Esta opción usa el acceso controlado a las carpetas para proteger los datos de la compañía ante la modificación de aplicaciones sospechosas, malintencionadas, como ransomware. Se impide que estos tipos de aplicaciones puedan realizar cambios en las carpetas protegidas. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Proteger carpetas con acceso controlado a las carpetas](https://go.microsoft.com/fwlink/?linkid=870418).  <br/> |
 |Impedir el acceso a la red a contenido potencialmente malintencionado en Internet  <br/> |Use está opción para bloquear las conexiones de usuario de salida a ubicaciones de Internet de baja reputación que puedan hospedar estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad u otro contenido malintencionado. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Proteger la red](https://go.microsoft.com/fwlink/?linkid=870419).  <br/> |

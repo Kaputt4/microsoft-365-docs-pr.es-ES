@@ -1,5 +1,5 @@
 ---
-title: Obtener Microsoft 365 Empresa
+title: Obtener Microsoft 365 Business desde el centro para socios
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,7 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,19 +19,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Obtenga información sobre cómo adquirir Microsoft 365 empresarial de Microsoft Partner Center.
-ms.openlocfilehash: 77c8e3af930db540c0fab665aceef850f82e219c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Obtenga información sobre cómo comprar Microsoft 365 Business desde el centro de Partners de Microsoft.
+ms.openlocfilehash: 1dcd9c21a598020447308970024a896b157bdae4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278394"
 ---
 # <a name="get-microsoft-365-business"></a>Obtener Microsoft 365 Empresa
 
 ## <a name="get-microsoft-365-business-from-microsoft"></a>Obtener Microsoft 365 Business desde Microsoft
 
-Si no tiene un socio y desea obtener Microsoft 365 empresarial, puede [comprar aquí](https://www.microsoft.com/en-US/microsoft-365/business).
+Si no tiene un partner y quiere obtener Microsoft 365 Business, puede [comprarlo aquí](https://www.microsoft.com/en-US/microsoft-365/business).
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>Obtener Microsoft 365 Business desde el Centro de partners de Microsoft
 
@@ -41,7 +43,7 @@ Si no tiene un socio y desea obtener Microsoft 365 empresarial, puede [comprar a
   
 3. En la página **Suscripción** del cliente, seleccione Agregar suscripción, elija la opción Pequeña empresa en Catálogo y, después, elija **Microsoft 365 Empresa**.
     
-    Seleccione el número de licencias que necesita (hasta 300). Si tiene más de 300 usuarios, vea [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) en su lugar. 
+    Seleccione el número de licencias que necesita (hasta 300). Si tiene más de 300 usuarios, consulte [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) en su lugar. 
     
     ![On the New subscription page choose small business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
   

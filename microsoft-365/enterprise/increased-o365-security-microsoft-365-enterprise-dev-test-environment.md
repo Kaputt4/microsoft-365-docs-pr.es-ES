@@ -1,121 +1,117 @@
 ---
-title: Mayor seguridad de Office 365 para el entorno de pruebas de Microsoft 365 Enterprise
+title: Aumentó la seguridad de Microsoft 365 para su entorno de prueba empresarial de Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use esta guía de laboratorio de prueba para habilitar la configuración de seguridad adicionales de Office 365 su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Use esta guía del entorno de pruebas para habilitar la configuración adicional de seguridad de Microsoft 365 su entorno de prueba empresarial de Microsoft 365.
+ms.openlocfilehash: 54e05122dcbe5d4e24f092536897f2a8ad449e05
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283660"
 ---
-# <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Mayor seguridad de Office 365 para el entorno de pruebas de Microsoft 365 Enterprise
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Aumentó la seguridad de Microsoft 365 para su entorno de prueba empresarial de Microsoft 365
 
-Con las instrucciones de este artículo, configura opciones adicionales de Office 365 para aumentar la seguridad en su entorno de prueba de Microsoft 365 Enterprise.
+Con las instrucciones de este artículo, se configuran opciones adicionales de configuración de Microsoft 365 para aumentar la seguridad en el entorno de pruebas de Microsoft 365 Enterprise.
 
 ![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Generar el entorno de prueba de Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 Enterprise
 
-Si desea configurar la seguridad de Office 365 mayor en una forma sencilla con los requisitos mínimos, siga las instrucciones de [configuración básica ligero](lightweight-base-configuration-microsoft-365-enterprise.md).
+Si solo quiere configurar la seguridad mejorada de Microsoft 365 de forma ligera con los requisitos mínimos, siga las instrucciones de la [configuración básica](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si desea configurar una mayor seguridad de Office 365 en una empresa simulada, siga las instrucciones que aparecen en la [autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
+Si desea configurar una seguridad mejorada de Microsoft 365 en una empresa simulada, siga las instrucciones de la [autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Pruebas de mayor seguridad de Office 365 no requieren que el entorno de prueba simulado enterprise, que incluye una intranet simulada conectada a Internet y sincronización de Active directory para un bosque de Windows Server AD. Se proporciona aquí como una opción para que pueda probar licencias automatizada y la pertenencia a grupos y experimentar con él en un entorno que representa una organización típica. 
+> La prueba de la seguridad mejorada de Microsoft 365 no requiere el entorno de prueba empresarial simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda probar la concesión de licencias automatizada y la pertenencia a grupos y experimentar con ella en un entorno que representa una organización típica. 
 
 
-## <a name="phase-2-configure-increased-office-365-security"></a>Fase 2: Configuración de mayor seguridad de Office 365
+## <a name="phase-2-configure-increased-microsoft-365-security"></a>Fase 2: configurar una mayor seguridad de Microsoft 365
 
-En esta fase, se habilita una mayor seguridad de Office 365 para el entorno de prueba de Microsoft 365 Enterprise. Para obtener más información y la configuración, vea [Configure el inquilino de Office 365 para aumentar la seguridad](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+En esta fase, se habilita una mayor seguridad de Microsoft 365 para su entorno de prueba empresarial de Microsoft 365. Para obtener más detalles y opciones de configuración, consulte [configurar el inquilino de Office 365 para aumentar la seguridad](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
-### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurar SharePoint Online para bloquear las aplicaciones que no admiten la autenticación moderna
+### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurar SharePoint Online para bloquear aplicaciones que no son compatibles con la autenticación moderna
 
-Aplicaciones que no admiten la autenticación moderna no pueden tener una [identidad y dispositivo de acceso a las configuraciones de](microsoft-365-policies-configurations.md) aplica a ellos, que es un elemento importante de la seguridad de su suscripción de 365 de Microsoft y a sus activos digitales. 
+Las aplicaciones que no admiten la autenticación moderna no pueden tener aplicadas [configuraciones de identidad y acceso a dispositivos](microsoft-365-policies-configurations.md) , que es un elemento importante de la protección de la suscripción de Microsoft 365 y sus activos digitales. 
 
 1. Vaya al portal de Office ([https://office.com](https://office.com)) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
     
-  - Si está utilizando el entorno de prueba de Microsoft 365 ligero, inicie sesión desde el equipo local.
+  - Si usa el entorno de prueba ligero de Microsoft 365, inicie sesión desde el equipo local.
     
-  - Si está utilizando el entorno de prueba de enterprise simulado 365 de Microsoft, use el [portal de Azure](https://portal.azure.com) para conectarse a la máquina virtual CLIENT1 y, a continuación, iniciar sesión en desde CLIENT1.
+  - Si usa el entorno de prueba de Enterprise de Microsoft 365 simulado, use [Azure portal](https://portal.azure.com) para conectarse a la máquina virtual CLIENT1 y, a continuación, inicie sesión desde cliente1.
  
-2. En la ficha del **Centro de administración de Microsoft 365** , haga clic en **Admin**.
-3. En la ficha del **Centro de administración de Microsoft 365** nuevo, haga clic en **centros de administración > SharePoint**.
-4. En la nueva ficha del **Centro de administración de SharePoint** , haga clic en **control de acceso**.
-5. En **aplicaciones que no admiten la autenticación moderna**, haga clic en **Bloquear**y, a continuación, haga clic en **Aceptar**.
+2. En la pestaña **centro de administración de 365 de Microsoft** , haga clic en **Administración**.
+3. En la nueva pestaña **centro de administración de 365 de Microsoft** , haga clic en centros de **Administración > SharePoint**.
+4. En la nueva pestaña **centro de administración de SharePoint** , haga clic en control de **acceso**.
+5. En **aplicaciones que no admiten la autenticación moderna**, haga clic en **bloquear**y, a continuación, haga clic en **Aceptar**.
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Habilitar una protección avanzada) para SharePoint, OneDrive para la empresa y los equipos de Microsoft
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Habilitación de la protección contra amenazas avanzada para SharePoint, OneDrive para la empresa y Microsoft Teams
 
-Protección de amenaza avanzada de Office 365 (ATP) es una característica de Exchange Online Protection (EOP) que ayuda a mantener el malware fuera de su correo electrónico. Con ATP, crear directivas en el centro de administración de Exchange (EAC) o la seguridad & Centro de cumplimiento que ayudan a garantizar a los usuarios obtener acceso sólo vínculos o datos adjuntos en mensajes de correo electrónico que se identifican como no malintencionado. Para obtener más información, consulte [protección contra amenazas avanzadas para los datos adjuntos seguros y vínculos seguros](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
+Office 365 Advanced Threat Protection (ATP) para SharePoint, OneDrive y Microsoft Teams protege su organización de archivos malintencionados que se comparten de forma inadvertida.
 
-1. En la ficha del **Centro de administración de Microsoft 365** del explorador, haga clic en **centros de administración > seguridad y cumplimiento**.
-2. En la ficha nuevo de **seguridad y cumplimiento** , haga clic en **administración de amenazas > directiva**.
-3. Haga clic en **datos adjuntos seguros de ATP**.
-4. En el panel **datos adjuntos seguros** , seleccione **Activar ATP para SharePoint, OneDrive y los equipos de Microsoft**y, a continuación, haga clic en **Guardar**.
+1. Vaya al [centro de cumplimiento de & de seguridad de Office 365](https://protection.office.com) e inicie sesión con su cuenta de administrador global.
+
+2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **Directiva _GT_ datos adjuntos seguros**. 
+
+3. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
+
+4. Haga clic en **Guardar **.
+
 
 ### <a name="enable-anti-malware"></a>Habilitar anti-malware
 
-Malware se compone de virus y spyware. Virus infectan otros programas y datos, y se propagan a lo largo de su equipo buscando programas a infectan. Spyware hace referencia al código malintencionado que recopila su información personal, como información de inicio de sesión y los datos personales y lo envía a su autor de malware. 
+El malware se compone de virus y spyware. Los virus infectan otros programas y datos, y se propagan en todo el equipo en busca de programas que infectar. El spyware se refiere a malware que recopila información de carácter personal, como información de inicio de sesión y datos de carácter personal, y la envía al autor del malware. 
 
-Office 365 tiene capacidades que ayudan a proteger los mensajes entrantes y salientes de software malintencionado y ayudar a protegerle contra correo no deseado de filtrado de spam y malware incorporadas. Para obtener más información, consulte [protección contra correo no deseado y antimalware en Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
+Office 365 tiene capacidades integradas de filtrado de correo no deseado y malware que ayudan a proteger los mensajes entrantes y salientes de software malintencionado y ayudan a protegerse del correo no deseado. Para obtener más información, consulte [anti-spam & Anti-Malware Protection in Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
 
-Para asegurarse de que se lleva a cabo el procesamiento de anti-malware en archivos con tipos de archivo de datos adjuntos comunes:
+Para asegurarse de que el procesamiento antimalware se realice en archivos con tipos de archivos adjuntos comunes:
 
-1. Haga clic en el botón Atrás del explorador para volver a la página de **Directiva** .
-2. Haga clic en **Anti-malware**.
-3. Haga doble clic en la directiva de llamada **predeterminada**.
-4. En la ventana **Directiva de Anti-malware** , haga clic en **configuración**.
-4. En **el filtro de tipos comunes de los datos adjuntos**, haga clic en **en > Guardar**.
+1. Haga clic en el botón atrás del explorador para volver a la página de la **Directiva** .
+2. Haga clic en **anti-malware**.
+3. Haga doble clic en la Directiva denominada **default**.
+4. En la ventana **Directiva contra malware** , haga clic en **configuración**.
+4. En el **filtro tipos comunes de datos**adjuntos, haga clic **en > guardar**.
 
 
-## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>Fase 3: Examinar los registros y las herramientas de seguridad de Office 365
+## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>Fase 3: examinar las herramientas y los registros de seguridad de Office 365
 
-En esta fase, examine los servicios integrados que informan acerca de los eventos de seguridad y medir su posición de seguridad general.
+En esta fase, se analizan los servicios integrados que informan sobre los eventos de seguridad y se mide la postura general de seguridad.
 
-### <a name="threat-management-dashboard"></a>Panel de administración de amenaza
+### <a name="threat-management-dashboard"></a>Panel de administración de amenazas
 
-Administración de Office 365 amenaza puede ayudarle a controlar y administrar el acceso de dispositivo móvil a los datos de la organización, ayudar a proteger su organización contra la pérdida de datos y ayudar a proteger los mensajes entrantes y salientes de correo no deseado y otro software malintencionado. También use cuentas de administración para proteger la reputación de su dominio y para determinar si los remitentes se suplantación de identidad malintencionada desde su dominio de amenaza. Para obtener más información, vea [administración de amenaza en el centro de cumplimiento y seguridad de Office 365](https://docs.microsoft.com/office365/securitycompliance/threat-management).
+La administración de amenazas de Office 365 puede ayudarle a controlar y administrar el acceso de dispositivos móviles a los datos de su organización, a proteger su organización de la pérdida de datos y a proteger los mensajes entrantes y salientes del software malintencionado y el correo no deseado. También se usa la administración de amenazas para proteger la reputación del dominio y para determinar si los remitentes se falsifican de su dominio de una mala parte de las cuentas. Para obtener más información, vea [Threat Management en el centro de seguridad de Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/threat-management).
 
-Siga estos pasos para ver el panel de administración de Office 365 amenaza:
 
-1. En la ficha del **Centro de administración de Microsoft 365** del explorador, haga clic en **centros de administración > seguridad y cumplimiento**.
-2. En la ficha nuevo de **seguridad y cumplimiento** , haga clic en **administración de amenazas > panel**.
-3. En la ficha de **panel de** nuevo en el explorador, tenga en cuenta las tendencias de malware, conocimientos y otras secciones del panel.
+### <a name="office-365-cloud-app-security-dashboard"></a>Panel de seguridad de aplicación de nube de Office 365
 
-### <a name="office-365-cloud-app-security-dashboard"></a>Panel de seguridad de la aplicación en la nube de Office 365
+Office 365 Cloud App Security, anteriormente conocido como Office 365 Advanced Security Management, le permite crear directivas que supervisan e informan de actividades sospechosas en su suscripción a Office 365, de modo que pueda investigar y hacer posible acción de corrección. Para obtener más información, vea [información general sobre Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
 
-Office 365 en la nube seguridad de la aplicación, anteriormente conocido como Office 365 administración avanzada de seguridad, le permite crear directivas que supervisión e informan de las actividades sospechosas en su suscripción de Office 365, para que pueda investigar y tomar posibles acción de corrección. Para obtener más información, vea [Información general de Office 365 en la nube seguridad de la aplicación](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
+<!--
+### Microsoft 365 Secure Score
 
-1. En la ficha del **Centro de administración de Microsoft 365** del explorador, haga clic en **centros de administración > seguridad y cumplimiento**.
-2. En la ficha nuevo de **seguridad y cumplimiento** , haga clic en **alertas > Administrar avanzada alertas > Ir a la seguridad de la aplicación de nube de Office 365**.
-3. En la ficha **Seguridad de la aplicación en la nube** de nuevo, tenga en cuenta la vista de panel y la lista de directivas predeterminadas que supervisar diversas actividades en su suscripción de Office 365.
-4. Haga clic en el icono de panel para ver un resumen de las actividades de seguridad de la aplicación en la nube que se realiza un seguimiento.
-5. Haga clic en **investigar** (el icono de anteojos) y, a continuación, en **el registro de actividad** para ver la lista de inicios de sesión recientes y otras actividades.
+1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.
+2. On the **Dashboard tab**, note your current Secure Score and the list of actions in the queue to increase your score.
+!-->
 
-### <a name="secure-score"></a>Puntuación de seguro
 
-1. Crear una ficha nueva en el explorador y vaya a **securescore.office.com**.
-2. En la **ficha de panel**, tenga en cuenta la puntuación seguro actual y la lista de acciones en la cola para aumentar la puntuación.
+## <a name="next-steps"></a>Pasos siguientes
 
-Vea el paso [Configure mayor seguridad para Office 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) en la fase de **protección de la información** para obtener información y vínculos para configurar estas opciones de configuración de producción.
+Consulte el paso [configurar mayor seguridad para Microsoft 365](infoprotect-configure-increased-security-office-365.md) en la fase de protección de la **información** para obtener información y vínculos para configurar estas opciones en producción.
 
-## <a name="next-step"></a>Paso siguiente
-
-Explorar las características adicionales de [protección de la información](m365-enterprise-test-lab-guides.md#information-protection) y funcionalidades en su entorno de prueba.
+Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 
 ## <a name="see-also"></a>Vea también
 

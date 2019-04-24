@@ -1,22 +1,26 @@
 ---
-title: Microsoft Managed Desktop service description (Descripción del servicio Escritorio administrado de Microsoft)
-description: Descripción del servicio de Microsoft Managed Desktop incluye dispositivos como un servicio y TI como un servicio
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+title: Descripción del servicio de escritorio administrado de Microsoft
+description: La descripción del servicio de escritorio administrado de Microsoft incluye el dispositivo como servicio y como servicio.
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: f17b07acb1ff6beaa0125f6faa4894fe6565214c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.date: 02/06/2019
+ms.openlocfilehash: abce237a7e9608d50c79f8676033a1362fd9931e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283442"
 ---
-# <a name="microsoft-managed-desktop-service-description"></a>Microsoft Managed Desktop service description (Descripción del servicio Escritorio administrado de Microsoft)
-Servicio de escritorio administrado de Microsoft incluye *dispositivos como un servicio* y *TI como un servicio*. 
+# <a name="microsoft-managed-desktop-service-description"></a>Descripción del servicio de escritorio administrado de Microsoft
+Microsoft manAged Desktop incluye estos servicios: 
 
-## <a name="in-this-section"></a>In this section
-
-- [Device as a service](daas.md) (Dispositivo como servicio)
-- [IT as a service](itaas.md) (TI como servicio)
+- [Dispositivos de programa](device-list.md)
+- [Servicios de dispositivos](device-services.md)
+- [Configuración de dispositivos](device-policies.md)
+- [Seguridad](security.md)
+- [Actualizaciones](updates.md)
+- [Soporte técnico](support.md)
+- [Operaciones y supervisión](operations-and-monitoring.md)
+- [Requisitos de la aplicación](mmd-app-requirements.md)

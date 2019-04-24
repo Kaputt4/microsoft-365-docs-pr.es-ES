@@ -1,28 +1,69 @@
 ---
-title: Administración de aplicaciones en Escritorio administrado de Microsoft
-description: ''
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+title: Administrar aplicaciones en el escritorio administrado por Microsoft
+description: Información sobre cómo actualizar las aplicaciones de línea de negocio que se implementan en dispositivos de escritorio administrados por Microsoft
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 6bd9d943384dce059ebc5a2d0a04e531ef652015
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.date: 01/18/2019
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: ce2765ef2ab176dc5d9a1d41db7e26549b007d79
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285950"
 ---
-# <a name="manage-apps-in-microsoft-managed-desktop"></a>Administración de aplicaciones en Escritorio administrado de Microsoft
+# <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Administrar aplicaciones de línea de negocio en el escritorio administrado por Microsoft
 
 <!--Application management -->
 
-Una vez que las aplicaciones están onboarded, administración de ellos se comparte entre los clientes, las operaciones de escritorio administrado de Microsoft y soporte técnico de Microsoft Managed Desktop. Clientes:
+Hay un par de maneras de administrar las actualizaciones de aplicaciones para las aplicaciones que haya incorporado en el escritorio administrado de Microsoft y que se hayan implementado en sus dispositivos de escritorio administrados por Microsoft. Puede realizar actualizaciones de aplicaciones en el portal de escritorio administrado de Microsoft o Intune. 
 
-- Asegúrese de que las licencias adecuadas se encuentran disponibles para todo el software que se implementa a través de Intune 
-- Supervisar su estado de implementación de la aplicación
-- Administrar los perfiles de configuración de aplicación para la implementación
+<span id="update-app-mmd" />
 
-Equipo de operaciones de escritorio administrado de Microsoft revisa las notificaciones de la implementación de aplicación para asegurarse de que no se va a implementar ninguna aplicación que infringe los términos de escritorio administrado de Microsoft. 
+## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Actualizar las aplicaciones de línea de negocio en el escritorio administrado por Microsoft
 
-Soporte técnico de Microsoft Managed Desktop proporciona compatibilidad con creados para aplicaciones de Microsoft (por ejemplo, Office). 
+**Para actualizar las aplicaciones de línea de negocio en el portal de escritorio administrado de Microsoft**
+1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mmdportal).
+2. En **inventario**, seleccione **aplicaciones**.  
+3. Seleccione la aplicación que desea actualizar y, a continuación, seleccione **Editar**.
+4. En **administrar**, seleccione **propiedades**. 
+5. Haga clic en **archivo de paquete de aplicaciones**y, a continuación, busque cargar un nuevo archivo de paquete de aplicaciones.
+6. Seleccione **archivo de paquete de aplicaciones**.
+7. Seleccione el icono de carpeta y vaya a la ubicación del archivo de aplicación actualizado. Seleccione **Abrir**. La información de la aplicación se actualiza con la información del paquete.
+8. Compruebe que la versión de la **aplicación** refleja el paquete de la aplicación actualizado. 
+
+La aplicación actualizada se implementará en los dispositivos del usuario.
+
+<span id="update-app-intune" />
+
+## <a name="update-line-of-business-apps-in-intune"></a>Actualizar las aplicaciones de línea de negocio en Intune
+
+**Para actualizar las aplicaciones de línea de negocio en Intune**
+1. Inicie sesión en [Azure portal](https://azure.portal.com).
+2. Seleccione **todos los servicios** > **** de Intune. Intune se encuentra en la sección **Monitoring + Management** .
+3. Seleccione aplicaciones **cliente _GT_ apps**.
+4. Busque y seleccione su aplicación en la lista de aplicaciones.
+5. En la hoja **información general** , seleccione **propiedades**.
+6. Seleccione **archivo de paquete de aplicaciones**.
+7. Seleccione el icono de carpeta y vaya a la ubicación del archivo de aplicación actualizado. Seleccione **Abrir**. La información de la aplicación se actualiza con la información del paquete.
+8. Compruebe que la versión de la **aplicación** refleja el paquete de la aplicación actualizado.
+
+<span id="roll-back-app-mmd" />
+
+## <a name="roll-back-an-app-to-a-previous-version"></a>ReVertir una aplicación a una versión anterior
+
+Si se produce un error cuando se implementa una nueva versión de una aplicación, puede volver a una versión anterior. El proceso descrito aquí es para las aplicaciones donde tipo aparece como **aplicación MSI de línea de negocio de Windows** o aplicación de **windows (Win 32)-vista previa**
+
+**Para volver a una versión anterior de una aplicación de línea de negocio**
+
+1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mmdportal).
+2. En **inventario**, seleccione **aplicaciones**.  
+3. Seleccione la aplicación que necesita volver y, después, seleccione **Editar**.
+4. En **administrar**, seleccione **propiedades**. 
+    - Para las aplicaciones MSI de la **aplicación de línea de negocio de Windows** , seleccione información de la **aplicación**y, a continuación, en **omitir versión**de la aplicación, seleccione **sí**.
+    - Para **Windows App (Win 32): vista previa** de aplicaciones, seleccione información de la **aplicación**, seleccione **reglas de detección**y, después, seleccione **Agregar**. 
+    Si hay una regla MSI, compruebe que la **comprobación de la versión del producto MSI** esté establecida en **no**.
+5. [Cargue una versión anterior del archivo de origen de la aplicación en el](../get-started/deploy-apps.md) portal de administración de escritorio administrada de Microsoft.  
+

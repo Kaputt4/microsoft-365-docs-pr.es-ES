@@ -1,37 +1,36 @@
 ---
-title: Requisitos previos del Escritorio administrado de Microsoft
+title: Requisitos previos para el escritorio administrado de Microsoft
 description: ''
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 11/1/2018
-ms.openlocfilehash: 303765d6804071b3a3de18ee412304566cbbe089
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 8d9c008af9531bc5b829d248665dc5b58ac6034b
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277391"
 ---
-# <a name="prerequisites-for-microsoft-managed-desktop"></a>Requisitos previos del Escritorio administrado de Microsoft
+# <a name="prerequisites-for-microsoft-managed-desktop"></a>Requisitos previos para el escritorio administrado de Microsoft
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
 <!--from Prerequisites -->
 
-Éxito con Microsoft Managed Desktop comienza con requisitos Well-known, documentados y acordados para la infraestructura del cliente. En esta sección se describe los requisitos previos. 
+El éxito con el escritorio administrado de Microsoft comienza con requisitos bien conocidos, documentados y acordados para la infraestructura del cliente. En esta sección se describen los requisitos de Infastructure. 
 
-Microsoft FastTrack está disponible para ayudar a los clientes cumplir estos requisitos y le ayudará a prepararse para participar en lugar de trabajo moderno como un servicio. Para obtener más información, vea [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
+Microsoft FastTrack está disponible para ayudar a los clientes a cumplir estos requisitos y ayudarle a prepararse para participar en el escritorio administrado de Microsoft. Para obtener más información, consulte [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
 
 Área | Detalles de requisitos previos
 --- | ---
-Concesión de licencias | Se requiere una licencia de Microsoft 365 E5 o licencias equivalentes.<br><br>Esta licencia incluye E5 de Office 365, Windows 10 Enterprise E5 & Enterprise movilidad + E5 de seguridad (EMS). Para obtener más información, vea [Microsoft 365 licencias](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
-Conectividad |  Todos los dispositivos de escritorio administrado de Microsoft requieren conectividad a numerosas extremos de servicio de Microsoft desde la red interna de la organización, incluidos:<br>-Windows Update<br>-Almacenamiento de Microsoft para la empresa<br>-Azure Active Directory<br>: Informe de errores de Windows<br>-Análisis de bloqueos en línea<br>-Conectados Telemetry y experiencia del usuario<br>-App OneDrive para Windows 10<br><br>La lista completa de necesarios del IP y las direcciones URL pueden encontrarse en la [Configuración de Proxy](../get-ready/network.md). 
-Azure Active Directory |    Azure Active Directory (AD Azure) debe ser el origen de autoridad para todas las cuentas de usuario, o se deben sincronizar las cuentas de usuario de Active Directory local con Azure AD conectar, versión 1.1.654.0 o posterior. Para obtener más información, vea [Azure Connect de AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
-Autenticación |    Si Azure AD no es el origen de autoridad para las cuentas de usuario, debe configurar uno de ellos en Azure conectar AD:<br>-Sincronización de Hash de contraseña (recomendada)<br>: Autenticación de paso a través de<br>-Federación con ADFS<br><br>Cuando también es necesario establecer las opciones de autenticación con reescritura de contraseña de conexión de Azure AD. Para obtener más información, vea [reescritura de contraseña](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback).<br><br>Para obtener más información sobre las opciones de autenticación con Azure AD, vea [Opciones de inicio de sesión de usuario de Azure Connect de AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
-Office 365 |    Es absolutamente recomendable que los siguientes servicios se migran a la nube:<br>-Correo electrónico: migrar a los buzones basados en la nube, Exchange online o configurarse con Exchange Online híbrida con Exchange 2013 o posterior, local.<br>-Los archivos y carpetas: migran a SharePoint Online y Office 365.<br>-Skype para la empresa – migrar a Skype para la empresa en línea.
-Administración de dispositivos | Microsoft Intune - una solución MDM sólo en la nube (que no sean de híbrido) es necesaria, lo que permite que los administradores de TI a administrar dispositivos de escritorio de Microsoft administrado con una consola web que se pueda acceder desde cualquier lugar en el mundo. Microsoft Intune es la solución MDM necesaria.<br><br>Para obtener más información, vea [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
-Datos de copia de seguridad y recuperación | Microsoft Managed Desktop requiere archivos para sincronizar con OneDrive para la empresa para protección. Todos los archivos no sincronizados con OneDrive para la empresa no están disponibles por Microsoft Desktop administrados y se pueden perder durante los intercambios del dispositivo o las llamadas de soporte técnico que requieren un restablecimiento de dispositivo. Microsoft Managed Desktop no es compatible con unidades de red asignadas.  
+Licencia | Cada usuario de MMD debe tener asignada una de las siguientes opciones de licencia:<br>-Microsoft 365 E5<br>-Microsoft 365 E3, Enterprise Mobility + Security E5 y Windows 10 Enterprise E5<br>-Office 365 E3, Enterprise Mobility + Security E5 y Windows 10 Enterprise E5<br><br>Los clientes de contratos Enterprise existentes pueden necesitar la siguiente guía para habilitar la activación de suscripción de Windows 10 Enterprise en el inquilino de Azure AD. Para obtener más información, vea [deploy Windows 10 Enterprise licenses](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses#enabling-subscription-activation-with-an-existing-ea).<br><br>Las licencias de producto se pueden asignar mediante grupos de seguridad mediante la configuración de licencias basadas en grupos de Azure AD. Para obtener más información, consulte [What is Group-based licensing in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).<br><br>Para obtener más información sobre las licencias disponibles, vea [licencias de Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Conectividad |  Todos los dispositivos de escritorio administrados por Microsoft requieren conectividad con numerosos puntos de conexión de servicios de Microsoft desde la red corporativa.<br><br>Para obtener la lista completa de direcciones URL e IP necesarias, consulte Configuración de la [red](../get-ready/network.md). 
+Azure Active Directory |    Azure Active Directory (Azure AD) debe ser el origen de la autoridad para todas las cuentas de usuario o se deben sincronizar las cuentas de usuario de Active Directory local con la última versión compatible de Azure AD Connect.<br><br>Para obtener más información sobre Azure AD Connect, consulte [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Para obtener más información sobre las versiones de Azure AD Connect admitidas, consulte [Azure ad Connect: version Release History](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history).
+Autenticación |    Si Azure AD no es el origen de la autoridad para las cuentas de usuario, debe configurar uno de estos en Azure AD Connect:<br>-Sincronización de hash de contraseña<br>: Autenticación de paso a través<br>-Federación con ADFS<br><br>Al configurar las opciones de autenticación con Azure AD Connect, también se requiere la escritura diferida de contraseñas. Para obtener más información, vea [escritura diferiDa](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)de contraseñas. <br><br>Para obtener más información sobre las opciones de autenticación con Azure AD, consulte [Opciones de inicio de sesión de usuario de Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
+Office 365 |    Aunque no es necesario inscribirse en el escritorio administrado de Microsoft, es muy recomendable que los siguientes servicios se migren a la nube:<br>-Correo electrónico: migre a buzones de correo basados en la nube, Exchange Online, o configurarlo con Exchange Online híbrido con Exchange 2013 o superior, local.<br>-Archivos y carpetas: migre a OneDrive para la empresa/SharePoint Online.<br>-Herramientas de colaboración en línea: migre a teams.
+Administración de dispositivos | Los dispositivos de escritorio administrados por Microsoft requieren administración con Microsoft Intune. Intune se debe establecer como la entidad de administración de dispositivos móviles.<br><br>Para obtener más información, consulte [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
+Copia de seguridad y recuperación de datos | Microsoft manAged Desktop requiere que los archivos se sincronicen con OneDrive para la empresa para la protección. El escritorio administrado de Microsoft no garantiza los archivos que no se hayan sincronizado con OneDrive para la empresa, por lo que se pueden perder durante los intercambios de dispositivos o admitir llamadas que requieran el restablecimiento de un dispositivo.<br><br>Aunque no es necesario, Microsoft manAged Desktop recomienda la migración de unidades de red asignadas a la solución de nube adecuada.  
 
-[Obtenga información sobre cómo cumplir los requisitos previos para la inscripción de escritorio administrado de Microsoft.](../get-ready/index.md)
-
-Cuando esté listo para empezar a trabajar con escritorio administrado de Microsoft, póngase en contacto con su administrador de cuentas de Microsoft. 
+Cuando esté listo para empezar con el escritorio administrado de Microsoft, póngase en contacto con el administrador de cuentas de Microsoft. 

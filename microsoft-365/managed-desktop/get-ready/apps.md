@@ -1,90 +1,91 @@
 ---
-title: Preparación de aplicaciones para Microsoft administrado de escritorio
+title: Preparación de aplicaciones para el escritorio administrado por Microsoft
 description: ''
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: b46e3de4a4cfe2140574ab9fc589e3a738bd2e17
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: be28760fc3facdb21643943ace11deda378d437c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289075"
 ---
-# <a name="preparing-apps-for-microsoft-managed-desktop"></a>Preparación de aplicaciones para Microsoft administrado de escritorio
+# <a name="preparing-apps-for-microsoft-managed-desktop"></a>Preparación de aplicaciones para el escritorio administrado por Microsoft
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
 <!--Applications: supported/onboard/deployment -->
  
-Los clientes de Microsoft y administrado de escritorio de Microsoft igualmente tienen críticas, aún diferentes responsabilidades alrededor de las aplicaciones que se utiliza con Microsoft Managed Desktop.
+Los clientes de escritorio administrados de Microsoft y Microsoft tienen la misma importancia, pero distintas responsabilidades en torno a las aplicaciones usadas con Microsoft manAged Desktop.
 
 ## <a name="microsoft-responsibilities"></a>Responsabilidades de Microsoft
-**Aplicaciones de Office 365** Microsoft proporcionará servicio completo para la implementación, la actualización y la compatibilidad de aplicaciones específicas de Office 365. Todos los usuarios recibirán el conjunto base de Office 365, haga clic para ejecutar la versión de 64 bits de aplicaciones incluidas en la imagen del dispositivo para que un usuario rápidamente puede llegar a ser productivo. Las aplicaciones de Project y Visio en del conjunto de programas de Office 365 se concede bajo licencia por separado.  Microsoft Managed Desktop proporcionará grupos de implementación permite al administrador de TI administrar las licencias e implementar estas aplicaciones de forma adecuada para su organización. Microsoft admitirá los usuarios finales de estas aplicaciones a través de los canales de soporte técnico de Microsoft administrado.
+**Aplicaciones de Office 365** Microsoft proporcionará servicio completo para la implementación, actualización y soporte técnico de aplicaciones de Office 365 específicas. Todos los usuarios recibirán el conjunto base de Office 365 haga clic para ejecutar, la versión de 64 bits de las aplicaciones incluidas en la imagen del dispositivo, de modo que el usuario pueda llegar a ser productivo rápidamente. Las aplicaciones de Project y Visio del conjunto de aplicaciones de Office 365 tienen una licencia por separado.  El escritorio administrado de Microsoft proporcionará grupos de implementación que permiten al administrador de ti administrar las licencias e implementarlas de forma adecuada para su organización. Microsoft proporcionará soporte a los usuarios finales de estas aplicaciones a través de los canales de soporte técnico de Microsoft administrados para equipos de escritorio.
 
-**Aplicaciones de línea de negocio** Microsoft proporciona herramientas para los administradores de TI a administrar e implementar sus aplicaciones de línea de negocio (LOB) a los usuarios finales como parte del producto Intune. Microsoft será compatible con problemas de implementación de aplicaciones como se detalla en [aplicaciones de línea de negocio](#line-of-business-applications) 
+**Aplicaciones de línea de negocio** Microsoft proporciona herramientas para que los administradores de ti administren e implementen sus aplicaciones de línea de negocio (LOB) para los usuarios finales como parte del producto Intune. Microsoft admitirá problemas de implementación de aplicaciones como se detalla en [aplicaciones de línea de negocio](#line-of-business-applications) . 
 
-**Implementar con Intune** Intune se vinculará a la **Tienda de Microsoft para la empresa** durante la incorporación de escritorio administrado de Microsoft que permite a las aplicaciones adquiridas a implementarse a través de Intune. Microsoft también implementar la versión basada en web del Portal de la empresa a los usuarios finales para que los administradores de TI puede proporcionar una experiencia de autoayuda para los usuarios finales.
+**Implementar con Intune** Intune se vinculará a **Microsoft Store para empresas** durante la incorporación de escritorio administrada de Microsoft, lo que permite que las aplicaciones se implementen a través de Intune. Microsoft también implementará la aplicación de portal de empresa de Microsoft Store en los usuarios finales para que los administradores de ti puedan proporcionar una experiencia de autoservicio para los usuarios finales.
 
-**Administración de aplicaciones** Microsoft puede identificar restringido las aplicaciones que no son adecuadas para el área de trabajo moderno debido a su impacto en el sistema. Cuando se identifica una aplicación de este tipo informar al cliente de Microsoft y esa aplicación deberá quitarse del inquilino. 
+**Administración de aplicaciones** Microsoft puede identificar Aplicaciones restringidas no adecuadas para el lugar de trabajo moderno debido a su impacto en el sistema. Cuando se identifica una aplicación de este tipo, Microsoft notificará al cliente y la aplicación tendrá que quitarse del espacio empresarial. 
 
-Para obtener más información sobre los comportamientos de la aplicación restringidos y los requisitos de la aplicación, vea [requisitos de la aplicación de escritorio administrado de Microsoft](../service-description/mmd-app-requirements.md)
+Para obtener más información sobre los requisitos de aplicación y los comportamientos de la aplicación restringida, consulte [requisitos de Microsoft Managed Desktop App](../service-description/mmd-app-requirements.md)
 
 ## <a name="customer-responsibilities"></a>Responsabilidades del cliente
-El conjunto de aplicaciones de Office 365 es esencial en las ofertas de productividad de Microsoft y se incluye en la licencia de 365 de Microsoft para todos los usuarios de escritorio administrado de Microsoft. Mientras Microsoft implementa, actualiza y es compatible con las aplicaciones de Office en los dispositivos de escritorio administrado de Microsoft hay algunas áreas para la que es responsabilidad del cliente.
-- **Asignar licencias** - los clientes son responsables de la asignación de las licencias adecuadas a los usuarios finales de Office 365. 
-- **Agregar usuarios a grupos de seguridad** - para los clientes con los usuarios que necesiten Project o Visio, los administradores de TI deben agregar los usuarios a los grupos de implementación apropiada. Los administradores de TI también son responsables de administrar el final del ciclo de vida para esos usuarios. 
-- **Implementar Office 365 complementos** - los clientes son responsables de la implementación de los complementos en el conjunto de aplicaciones de Office 365 que se considera necesario. 
+El conjunto de aplicaciones de Office 365 es fundamental para las ofertas de productividad de Microsoft y se incluye en la licencia 365 de Microsoft para todos los usuarios de escritorio administrados por Microsoft. Mientras Microsoft implementa, actualiza y admite aplicaciones de Office para dispositivos de escritorio administrados por Microsoft, todavía hay algunas áreas de las que el cliente es responsable.
+- **Asignar licencias** : los clientes son responsables de asignar las licencias adecuadas a los usuarios finales para Office 365. 
+- **Agregar usuarios a grupos de seguridad** : para los clientes con usuarios que necesitan Project o Visio, el administrador de TI debe agregar dichos usuarios a los grupos de implementación adecuados. Los administradores de ti también son responsables de administrar el fin del ciclo de vida de los usuarios. 
+- **Implemente Office 365 Add ONSS** : los clientes son responsables de implementar todos los complementos en el conjunto de aplicaciones de Office 365 que se consideran necesarios. 
 
-Puesto que las aplicaciones de línea de negocio (LOB) son exclusivos para cada cliente, los clientes son responsables de la administración de todas las aplicaciones dentro de su organización no ha implementado por Microsoft. Esto incluye:
-- Decidir qué aplicaciones se necesitan y quién necesita ellos
-- Asignación de aplicaciones a los usuarios
-- Crear y mantener grupos de Azure Active Directory (AD) para la administración de asignaciones de aplicación 
+Como las aplicaciones de línea de negocio (LOB) son únicas para cada cliente, los clientes son responsables de administrar todas las aplicaciones de la organización no implementadas por Microsoft. Esto incluye:
+- Decidir qué aplicaciones son necesarias y cuáles las necesitan
+- Asignación de aplicaciones a esos usuarios
+- Crear y mantener grupos de Azure Active Directory (AD) para administrar asignaciones de aplicaciones 
 
-El cliente debe cargar aplicaciones LOB en Intune. A continuación, que son responsables de la implementación, actualizar y retirar dichas aplicaciones a través de sus ciclos de vida respectivos, así como la administración de soporte para estas aplicaciones para sus usuarios.
+El cliente debe cargar las aplicaciones de LOB en Intune. A continuación, son responsables de implementar, actualizar y retirar esas aplicaciones sobre sus respectivos ciclos de vida, así como de administrar la compatibilidad con estas aplicaciones para sus usuarios.
 
 ## <a name="office-applications"></a>Aplicaciones de Office
-Como parte de la licencia de Microsoft 365 E5, Office 365 Standard Suite (64 bits) se implementa por Microsoft. 
+Como parte de la licencia 365 E5 de Microsoft, Office 365 Standard Suite (bit 64) implementado por Microsoft. 
 
-Para obtener información detallada, vea [tecnologías de escritorio administrado de Microsoft](../intro/technologies.md)<!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
+Para obtener más información, consulte [tecnologías de escritorio administraDas de Microsoft](../intro/technologies.md) <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
 
 ## <a name="line-of-business-applications"></a>Aplicaciones de línea de negocio
-Esta tabla resumen las responsabilidades a través de las distintas fases para aplicaciones de línea de negocio (LOB). 
+En esta tabla se resumen las responsabilidades de las distintas fases para las aplicaciones de línea de negocio (LOB). 
 
-Elementos de trabajo de la aplicación |    Cliente    | Microsoft
+Elementos de trabajo de la aplicación |    Clientes    | Microsoft
 --- | --- | ---
 **Aplicaciones de incorporación** |  |
-Identificar las aplicaciones que sea necesarias para los grupos de usuarios de destino   | ![sí](images/checkmark.png)  |
+Identificación de las aplicaciones necesarias para los grupos de usuarios de destino   | ![sí](images/checkmark.png)  |
 Crear y administrar grupos de Azure AD para la implementación de aplicaciones | ![sí](images/checkmark.png) |   
-**Empaquetado de la aplicación** |  |
-Paquete de aplicaciones para satisfacer los estándares de implementación Intune |  ![sí](images/checkmark.png) |  
-Cargar aplicaciones en Intune | ![sí](images/checkmark.png)     |
-Aplicaciones de prueba en el entorno de escritorio administrado de Microsoft |    ![sí](images/checkmark.png) |  
-Aplicaciones de prueba con los usuarios finales    | ![sí](images/checkmark.png) |    
+**Empaquetado de aplicaciones** |  |
+Empaquetar aplicaciones para cumplir los estándares de implementación de Intune |  ![sí](images/checkmark.png) |  
+Cargar aplicaciones a Intune | ![sí](images/checkmark.png)     |
+Probar aplicaciones en un entorno de escritorio administrado de Microsoft |    ![sí](images/checkmark.png) |  
+Probar aplicaciones con usuarios finales    | ![sí](images/checkmark.png) |    
 **Implementación** | |
-Administrar y asignar a usuarios a las aplicaciones  | ![sí](images/checkmark.png)  |
-Herramientas de implementación de Intune ofrece la aplicación a los clientes remotos| |   ![sí](images/checkmark.png)
-Identificar e implementar actualizaciones de la aplicación a través de Intune | ![sí](images/checkmark.png)    |
+Administrar y asignar usuarios a las aplicaciones  | ![sí](images/checkmark.png)  |
+Las herramientas de implementación de Intune proporcionan aplicaciones a clientes remotos| |   ![sí](images/checkmark.png)
+Identificación e implementación de actualizaciones de la aplicación mediante Intune | ![sí](images/checkmark.png)    |
 Desinstalar y quitar aplicaciones cuando se han retirado    | ![sí](images/checkmark.png) |    
 **Administración** | |
 Adquirir y asignar licencias |   ![sí](images/checkmark.png)     |
-Proporcionar soporte técnico para el usuario final para las aplicaciones de línea de negocio  | ![sí](images/checkmark.png) |
-Administrar la configuración de la aplicación remota    | ![sí](images/checkmark.png) |
+Proporcionar compatibilidad con el usuario final para las aplicaciones de línea de negocio  | ![sí](images/checkmark.png) |
+Administrar la configuración de la aplicación de forma remota    | ![sí](images/checkmark.png) |
 
-Para obtener información sobre los requisitos de la aplicación de LOB, vea [requisitos de la aplicación de escritorio administrado de Microsoft](../service-description/mmd-app-requirements.md)
+Para obtener información sobre los requisitos de las aplicaciones LOB, consulte [requisitos de aplicaciones de escritorio administrado por Microsoft](../service-description/mmd-app-requirements.md)
 
 
-## <a name="intune-application-deployment"></a>Implementación de la aplicación Intune
-Administración de aplicaciones se puede controlar a través del portal de administración de escritorio administrado de Microsoft o a través del portal Intune. Portal de administración de aplicación de Intune muestra las aplicaciones que se implementan para iOS, Android y Windows. Portal de administración de escritorio administrado de Microsoft limita la vista para las aplicaciones de Windows 10. Ambos están disponibles a través del Portal de Azure. 
-* [Conceptos básicos de administración de aplicación Intune](https://docs.microsoft.com/intune/app-management)
-* [Agregar aplicaciones al Intune](https://docs.microsoft.com/intune/app-management)
+## <a name="intune-application-deployment"></a>Implementación de aplicaciones de Intune
+La administración de aplicaciones puede controlarse a través del portal de administración de escritorio administrado de Microsoft o a través del portal de Intune. El portal de administración de aplicaciones de Intune muestra las aplicaciones implementadas para Windows, Android e iOS. El portal de administración de escritorio administrado de Microsoft limita la vista a las aplicaciones de Windows 10. Ambos están disponibles a través de Azure portal. 
+* [Conceptos básicos de la administración de aplicaciones de Intune](https://docs.microsoft.com/intune/app-management)
+* [Agregar aplicaciones a Intune](https://docs.microsoft.com/intune/app-management)
    * [Agregar una aplicación de línea de negocio](https://docs.microsoft.com/intune/lob-apps-windows)
-   * [Agregar aplicaciones de Win32 a Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
-   * [Adición de aplicaciones web](https://docs.microsoft.com/intune/web-app)
+   * [Agregar aplicaciones Win32 a Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
+   * [Adición de aplicaciones Web](https://docs.microsoft.com/intune/web-app)
 * [Implementación de aplicaciones](https://docs.microsoft.com/intune/apps-deploy)
-   * [Implementar aplicaciones para Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
-* Portal de la compañía
-   * [Implemente el Portal de la compañía](https://docs.microsoft.com/intune/store-apps-company-portal-app)
-   * [Configuración de la aplicación del Portal de la compañía](https://docs.microsoft.com/intune/company-portal-app)
+   * [Implementar aplicaciones en Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
+* Portal de empresa
+   * [Implementar el portal de empresa](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+   * [Configuración de la aplicación portal de empresa](https://docs.microsoft.com/intune/company-portal-app)

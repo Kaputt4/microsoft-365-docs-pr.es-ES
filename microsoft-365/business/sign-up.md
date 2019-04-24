@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo comprar y registrarse en Microsoft 365 Business.
 ms.openlocfilehash: 5e8bdb9121f2b567ef4faced2b960feaab49d923
-ms.sourcegitcommit: 913564997dbba42a448865a8913e07e6f203c736
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31504086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283600"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Regístrese para obtener Microsoft 365 Business
 
@@ -41,7 +41,7 @@ Vaya a [Descubra microsoft 365 Business Advantage](https://www.microsoft.com/mic
 
     - **Nombre de usuario**: escriba el nombre (denominado alias) que va a usar para su propio correo electrónico comercial. Por ejemplo, Robert Young puede usar RobY o RobYoung como un alias de trabajo.
     - **Su empresa**: escriba el nombre único de su empresa. Este es el nombre que el sitio web de su empresa usa si tiene uno, y también es el nombre que desea incluir después del signo @ cuando recibe un correo electrónico de negocios. Este nombre se denomina dominio. Por ejemplo, si su empresa se llama esquíes de Contoso, escriba ContosoSkis detrás del signo @.
-    - **Seleccione un dominio**: si es el propietario de su nombre de dominio ya, seleccione. onmicrosoft.com de la lista desplegable hombre y le pediremos que la configure más adelante. De lo contrario, es fácil comprar un nombre de dominio que represente su empresa. Para ello, seleccione el dominio que prefiera en el menú desplegable. Por ejemplo, su dirección de correo electrónico completa *Teresa@ContosoSkis.net*podría ser. Le dejaremos saber inmediatamente si el nombre de dominio está disponible. Si es así, agregaremos el costo de su dominio al costo de su suscripción de Microsoft 365 empresa. El nuevo dominio también se configurará y estará listo para su uso en Microsoft 365 si lo adquiere aquí. Para obtener información acerca de los dominios, vea [preguntas más frecuentes sobre dominios](https://docs.microsoft.com/office365/admin/setup/domains-faq).
+    - **Seleccione un dominio**: si es el propietario de su nombre de dominio ya, seleccione. onmicrosoft.com de la lista desplegable hombre y le pediremos que la configure más adelante. De lo contrario, es fácil comprar un nombre de dominio que represente su empresa. Para ello, seleccione el dominio que prefiera en el menú desplegable. Por ejemplo, la dirección de correo electrónico completa podría ser *Teresa@ContosoSkis.net*. Le dejaremos saber inmediatamente si el nombre de dominio está disponible. Si es así, agregaremos el costo de su dominio al costo de su suscripción de Microsoft 365 empresa. El nuevo dominio también se configurará y estará listo para su uso en Microsoft 365 si lo adquiere aquí. Para obtener información acerca de los dominios, vea [preguntas más frecuentes sobre dominios](https://docs.microsoft.com/office365/admin/setup/domains-faq).
     
     ![Captura de pantalla de la página crear su identificador de usuario.](media/signinuserid.png)
 

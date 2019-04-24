@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Obtenga información sobre cómo configurar los dispositivos de Windows que ejecuta Windows 10 Pro para los usuarios de Microsoft Business de 365. '
-ms.openlocfilehash: 482199b175c568bfae420619aa02024303894789
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Obtenga información sobre cómo configurar los dispositivos Windows que ejecutan Windows 10 Pro para los usuarios de Microsoft 365 empresa. '
+ms.openlocfilehash: f93257bd9a68385fca4f178a2e09c5c11506ee2c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284431"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurar dispositivos con Windows para usuarios de Microsoft 365 Business
 
@@ -33,7 +36,7 @@ Si tiene dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Window
   
 Para obtener más información sobre cómo actualizar los dispositivos Windows a Windows 10 Pro Creators Update, siga los pasos indicados en este tema: [Actualizar dispositivos Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
   
-Consulte [Comprobar que un dispositivo está actualizado a Windows 10 Business](set-up-windows-devices.md#bkmk_verifywin10) para saber si dispone de la actualización o asegurarse de que la actualización ha funcionado. 
+Consulte [comprobar que el dispositivo está conectado a Azure ad](#verify-the-device-is-connected-to-azure-ad) para comprobar que tiene la actualización o para asegurarse de que la actualización ha funcionado. 
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unir dispositivos Windows 10 en la cuenta de Azure AD de una organización
 
@@ -51,7 +54,7 @@ En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Updat
     
 3. Finalice la configuración del dispositivo Windows 10.
     
-   Una vez que haya terminado, el usuario se conectará a la cuenta de Azure AD de su organización. Para asegurarse de que la configuración es correcta, consulte [Comprobar que un dispositivo está conectado a Azure AD](set-up-windows-devices.md#bkmk_verifyaad). 
+   Una vez que haya terminado, el usuario se conectará a la cuenta de Azure AD de su organización. Para asegurarse de que la configuración es correcta, consulte [Comprobar que un dispositivo está conectado a Azure AD](#verify-the-device-is-connected-to-azure-ad). 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>Dispositivos ya configurados con Windows 10 Pro
 
@@ -79,7 +82,7 @@ En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Updat
   
    ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. En el ** Asegúrese de que es la organización ** página, compruebe que la información es correcta y haga clic en **unirse**.
+6. En la página Asegúrese de que **es su organización** , compruebe que la información es correcta y haga clic en **unirse**.
   
    En la página **Listo**, haga clic en **Listo**.
   

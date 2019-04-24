@@ -1,55 +1,52 @@
 ---
-title: Soporte técnico para el Escritorio administrado por Microsoft
+title: Soporte para escritorio administrado de Microsoft
 description: ''
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/7/2018
-ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 2e88f629764fa1c19a4a2d53337ebaebc7c173b8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278525"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a>Soporte técnico para el Escritorio administrado por Microsoft
+# <a name="support-for-microsoft-managed-desktop"></a>Soporte para escritorio administrado de Microsoft
 
-Dispositivos de escritorio administrado de Microsoft son administrados por y será reparados o sustituidos por Microsoft según el acuerdo de garantía. Microsoft proporcionará proactiva y reactiva la administración de incidentes. Microsoft realiza un seguimiento de incidentes en el portal de administración de escritorio administrado de Microsoft. Se clasifican según [las definiciones de gravedad](../working-with-managed-desktop/admin-support.md#sev).
+Los dispositivos de escritorio administrados por Microsoft se administran y se reparan o sustituyen por Microsoft según el contrato de garantía. Microsoft le proporcionará una administración de incidentes proactiva y reactiva. Microsoft realiza un seguimiento de los incidentes en el portal de administración de escritorio administrado de Microsoft. Se clasifican según las [definiciones de gravedad](../working-with-managed-desktop/admin-support.md#sev).
 
-Los clientes pueden ponerse en contacto con las operaciones de escritorio administrado de Microsoft para:
-- Solicitudes de información en el lugar de trabajo moderno como una configuración o inquilino de servicio
-- Solicitudes de cambio a la configuración de área de trabajo moderno como dispositivos de un servicio
-- Informes de un incidente o interrupción del servicio
+Los clientes pueden ponerse en contacto con Microsoft manAged Desktop Operations para:
+- Solicitudes de información sobre la configuración o el inquilino de escritorio administrado de Microsoft
+- Solicitudes de cambio a la configuración de dispositivos de escritorio administrados de Microsoft
+- Informar de un incidente o una interrupción
 
 ## <a name="whats-included"></a>¿Qué se incluye?
 
-Soporte técnico de escritorio administrado de Microsoft:
+Soporte técnico de Microsoft administrado para equipos de escritorio:
 
-- Proporciona un equipo de ingenieros de soporte técnico dedicado a los dispositivos de escritorio administrado de Microsoft
-- Es compatible con los usuarios finales asignados a esos dispositivos y dispositivos de escritorio administrado de Microsoft
-- Concede a administrativo de acceso limitado a los dispositivos de escritorio administrado de Microsoft para ingenieros de soporte de administración de dispositivos de escritorio administrado de Microsoft 
+- Proporciona a un equipo de ingenieros de soporte dedicados a los dispositivos de escritorio administrados por Microsoft
+- Admite dispositivos de escritorio administrados de Microsoft y usuarios finales asignados a estos dispositivos
+- Concede acceso administrativo limitado a los dispositivos de escritorio administrados por Microsoft para los ingenieros de soporte técnico que administran dispositivos de escritorio administrados por Microsoft 
 
 Productos compatibles:
 
-- Windows 10 con Windows Defender avanzada protección contra amenazas (WDATP) 
-- Subconjunto del conjunto de aplicaciones Microsoft 365 E5: Outlook, Word, PowerPoint, Excel, Skype para clientes empresariales, Microsoft Teams 
+- Windows 10 con protección contra amenazas avanzada de Windows Defender (WDATP) 
+- SubConjunto de Microsoft 365 E3 Suite: Outlook, Word, PowerPoint, Excel, cliente de Skype empresarial, Microsoft Teams 
 - Microsoft Store para Empresas 
-- Cliente de negocio de OneDrive 
+- Cliente de OneDrive para la empresa 
 
-Detalles de soporte técnico:
+Detalles de compatibilidad:
 
-- Actual: América del Norte, Reino Unido y Australia sólo (24 x 7 x 365) 
-- Inglés es el único lenguaje admitido para las conversaciones de audio y charla con los clientes 
-- Nos estamos asociarse con, no reemplazar, su departamento de soporte técnico corporativo; Aplicaciones de línea de negocio (LOB), los recursos de red, etc. aún son resueltos por el departamento de soporte técnico 
-- Dispositivos administrados de Microsoft que reside en los dispositivos de prueba de anillo y que no sean Microsoft administrados escritorio están fuera del ámbito 
-
-## <a name="hardware-replacement"></a>Reemplazo de hardware
-
-Dispositivos de hardware se reemplazan por los elementos en los términos de la garantía de que seleccione. Los dispositivos se actualizan al final del término de dispositivo como servicio, tal y como garantía su adjunto. Los dispositivos que se reemplazará por motivos de fuera de la cobertura de garantía quedan aplicará un cargo de reemplazo, por ejemplo, los dispositivos perdidos o robados. Para obtener una lista completa de lo que está cubierto por la garantía, vea [Opciones de la superficie de garantía](https://support.microsoft.com/help/4036296/surface-surface-standard-warranty).
+- Actual: Norteamérica, Canadá (excepto Quebec), sólo Reino Unido y Australia (24x7x365) 
+- Inglés es el único idioma admitido para conversaciones telefónicas y de chat con los clientes 
+- Estamos asociados con, no reemplazando, el Departamento de soporte técnico de la empresa; El Departamento de soporte técnico sigue administrando las aplicaciones de línea de negocio (LOB), los recursos de red, etc. 
+- Los dispositivos administrados por Microsoft que residen en el grupo de prueba y los dispositivos de escritorio administrados que no son de Microsoft están fuera de ámbito 
 
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Obtenga información sobre cómo los administradores de TI pueden obtener soporte técnico](../working-with-managed-desktop/admin-support.md)
+- [Obtenga información sobre cómo pueden obtener soporte los administradores de ti](../working-with-managed-desktop/admin-support.md)
 - [Obtenga información sobre cómo los usuarios finales pueden obtener soporte técnico](../working-with-managed-desktop/end-user-support.md)

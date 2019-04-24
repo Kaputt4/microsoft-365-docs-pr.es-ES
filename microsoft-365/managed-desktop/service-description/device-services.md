@@ -1,45 +1,48 @@
 ---
-title: Servicios del escritorio administrado por Microsoft
-description: En este tema se enumera los servicios de dispositivo y limitación de escritorio administrado de Microsoft.
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+title: Servicios de dispositivos de escritorio administrados por Microsoft
+description: En este tema se enumeran los servicios de dispositivos y la limitación del escritorio administrado de Microsoft.
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: f83f3ce5e1abc3139a96ea27d7834a2546663e87
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.date: 02/06/2019
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 01e6edf99ff1aa59517f4f5c7d106cd8724fa04b
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286177"
 ---
-# <a name="microsoft-managed-desktop-device-services"></a>Servicios del escritorio administrado por Microsoft
+# <a name="microsoft-managed-desktop-device-services"></a>Servicios de dispositivos de escritorio administrados por Microsoft
 
-En este tema se enumera los servicios y la limitación de servicio para dispositivos de escritorio administrado de Microsoft.
+En este tema se enumeran los servicios y las limitaciones de servicio de los dispositivos de escritorio administrados por Microsoft.
 
-## <a name="device-services"></a>Servicios de dispositivo
+## <a name="device-services"></a>Servicios de dispositivos
 
-Microsoft proporcionará estos servicios para dispositivos de escritorio administrado de Microsoft. Para obtener más información sobre los dispositivos de programa, vea [dispositivos de escritorio administrado de Microsoft](device-list.md)
+Microsoft proporcionará estos servicios para los dispositivos de escritorio administrados por Microsoft. Para obtener información sobre los dispositivos de programa de escritorio administrado por Microsoft, consulte [dispositivos de escritorio administrados por Microsoft](device-list.md).
 
  | 
  --- | ---
-Soporte técnico | Los agentes de soporte técnico va a responder a preguntas directamente relacionada con la funcionalidad de dispositivo y diagnosticar problemas en los dispositivos.
-Sustitución | El dispositivo se reemplazará con un dispositivo similar después de que se realiza una solicitud a través de soporte técnico. Para obtener información detallada de la cobertura, consulte los términos de garantía elegidos al seleccionar los dispositivos.
-Actualización | Dispositivos se actualizan y se reemplaza bajo los términos de la garantía de que seleccione.
-Inventario | Se realiza un seguimiento de todos los dispositivos en el portal de administración de escritorio administrado de Microsoft para el seguimiento de estado e inventario.
-Envío de dispositivo |   Los dispositivos se envían directamente al usuario asignado o al punto de distribución de TI.
-Firmware / actualizaciones de controlador | Actualizaciones de firmware y controlador se implementan y se supervisan para la compatibilidad de Microsoft. 
-Accesorios | Accesorios que se incluyen con su dispositivo están cubiertas por los mismos servicios que el propio dispositivo, pero pueden diferir los términos de garantía. Consulte los términos de garantía elegidos al seleccionar los dispositivos. 
-Programa de instalación de dispositivo    | Los dispositivos se configurarán previamente con la versión actual de Windows y reciben sus aplicaciones y configuraciones a través de la nube. 
+Soporte técnico | Los agentes de soporte responderán preguntas directamente relacionadas con la funcionalidad del dispositivo y diagnosticarán problemas del dispositivo.
+Inventario | Se realiza un seguimiento de todos los dispositivos en el portal de administración de escritorio administrado de Microsoft para el seguimiento de inventario y estado.
+Actualizaciones de firmware/controlador | Las actualizaciones de firmware y controladores se implementan y supervisan para que Microsoft la compatibilidad. 
+Racor | Los accesorios que vienen con el dispositivo están cubiertos por los mismos servicios que el propio dispositivo, pero los términos de la garantía pueden ser diferentes. Consulte los términos de garantía elegidos cuando seleccione sus dispositivos. 
+Configuración del dispositivo    | Los dispositivos estarán preconfigurados con la versión actual de Windows y recibirán sus aplicaciones y configuraciones a través de la nube. 
 
-## <a name="device-service-limitations"></a>Limitaciones de dispositivos de servicio
+Para obtener información sobre la sustitución de dispositivos, las actualizaciones y los términos de soporte técnico, vea su acuerdo con el proveedor de dispositivos y los términos de la garantía.
+
+Para obtener información sobre las garantías y reparaciones de la superficie:
+- [Garantías, planes de servicio extendidos y términos y condiciones para el dispositivo](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
+- [Garantía de superficie estándar](https://support.microsoft.com/help/4036296)
+- [Servicio de dispositivo y reparación](https://support.microsoft.com/devices)
+
+## <a name="device-service-limitations"></a>Limitaciones del servicio de dispositivos
 
 Microsoft no proporcionará servicio para estos elementos.
 
  | 
  --- | ---
-Otros accesorios | Se admiten sólo los accesorios suministrados con el dispositivo.
-Personalización | Dispositivos y accesorios que se proporcionan con el servicio son no puede personalizarse. Todos los dispositivos y accesorios se proporcionan con personalización de marca estándar, especificación y combinaciones de colores. Configuraciones de implementación y la directiva de la aplicación se administran a través de TI como servicio.
-Reparar | Los dispositivos no se ha reparado. Reemplazo de dispositivos se enviará como se describió anteriormente.
-Recuperación de datos | Datos de usuario y equipo, incluidos la personalización, se almacenan en OneDrive para la empresa, con la memoria caché solo los datos que residen localmente. Si los datos intencionadamente se almacenan en el sistema de almacenamiento interno del dispositivo, cualquier recuperación de datos debe ser completado antes de devolver el dispositivo a Microsoft y ha intentado.
-Programa de instalación de dispositivo | Los dispositivos se entregan a la dirección del cliente, dónde lo necesiten se enciende y configurar el cliente.
+Personal | Los dispositivos y accesorios que se proporcionan con el servicio no se pueden personalizar. Todos los dispositivos y accesorios incluyen combinaciones de colores, especificación y personalización de marca estándar. La implementación de la aplicación y las configuraciones de directivas se administran a través de la misma como servicio.
+Recuperación de datos | Los datos de usuario y de equipo, incluida la personalización, se almacenan en OneDrive para la empresa, solo con datos de caché que residen localmente. Si los datos se almacenan intencionadamente en el sistema de almacenamiento interno del dispositivo, se debe intentar y completar la recuperación de los datos antes de devolver el dispositivo a Microsoft.
+Configuración del dispositivo | Los dispositivos se entregan a la dirección del cliente, donde deben estar encendidos y configurados por el cliente.

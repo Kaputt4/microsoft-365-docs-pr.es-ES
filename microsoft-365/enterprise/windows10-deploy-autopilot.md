@@ -1,109 +1,110 @@
 ---
-title: Implementar Enterprise del 10 de Windows para los nuevos dispositivos con piloto automático de Windows
-description: Proporciona orientación sobre configuración e implementación de Windows 10 Enterprise con piloto automático de Windows.
-keywords: Implementación de Microsoft 365, 365 Enterprise de Microsoft, Microsoft 365 documentación, Windows 10 Enterprise, piloto automático de Windows
+title: Implementar Windows 10 Enterprise para dispositivos nuevos con Windows AutoPilot
+description: Proporciona instrucciones sobre cómo configurar e implementar Windows 10 Enterprise con Windows AutoPilot.
+keywords: Microsoft 365, Microsoft 365 Enterprise, documentación de Microsoft 365, Windows 10 Enterprise, implementación, Windows AutoPilot
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: ed3d21091acd5b54dfdc2917fca85ed0535c3332
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: f173bd2357d445b502a4b28b60399d5cdb087cd0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289260"
 ---
-# <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Paso 3: Implementar Windows 10 Enterprise para nuevos dispositivos con piloto automático de Windows
+# <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Paso 3: implementar Windows 10 Enterprise para dispositivos nuevos con Windows AutoPilot
 
-*En este artículo se aplica a la E3 y E5 versiones de Microsoft 365 Enterprise*
+*Este artículo se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Si dispone de equipos nuevos de 10 de Windows, puede usar el piloto automático de Windows para personalizar fuera de cuadro de la experiencia (OOBE) para la organización e implementar un nuevo sistema con aplicaciones y configuración que se haya configurado. Hay no hay imágenes para implementar, no hay controladores para insertar y sin infraestructura para administrar. Los usuarios pueden ir a través del proceso de implementación de forma independiente, sin necesidad de consultar a su administrador de TI.
+Si tienes nuevos equipos con Windows 10, puedes usar Windows AutoPilot para personalizar la experiencia rápida (OOBE) de tu organización e implementar un nuevo sistema con aplicaciones y configuración ya configurada. No hay imágenes para implementar, no hay controladores para insertar y no hay infraestructura que administrar. Los usuarios pueden pasar por el proceso de implementación de manera independiente, sin necesidad de consultar a su administrador de ti.
 
-Puede configurar y configurar previamente los nuevos dispositivos de Windows 10 y que estén listos para su uso productivo uso piloto automático de Windows. Para obtener más información acerca de piloto automático de Windows, incluidos los beneficios y escenarios de piloto automático de Windows, vea [Información general de piloto automático de Windows](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot). Cuando esté listo, siga estos elementos para iniciar la configuración de dispositivos nuevos.
+Puede configurar y preconfigurar nuevos dispositivos Windows 10 y prepararlos para un uso productivo mediante Windows AutoPilot. Para obtener más información acerca de Windows AutoPilot, incluidas las ventajas y los escenarios de Windows AutoPilot, consulte [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot). Cuando esté listo, siga estas partes para empezar a configurar nuevos dispositivos.
 
-## <a name="part-1-start-windows-autopilot-deployment"></a>Parte 1: Implementación de piloto automático de Windows de inicio
-Vea [información general de piloto automático de Windows](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot) para:
+## <a name="part-1-start-windows-autopilot-deployment"></a>Parte 1: iniciar la implementación de Windows AutoPilot
+Vea [información general de Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot) para:
 
-1. Obtenga información sobre y completar los requisitos previos para la implementación piloto automático de Windows. Los requisitos previos incluyen:
+1. Obtenga información y cómo completar los requisitos previos para la implementación de Windows AutoPilot. Entre los requisitos previos se incluyen:
     - **El registro de dispositivos y la personalización de la configuración rápida**
 
-        Para registrar los dispositivos, debe adquirir su identificador de hardware y registrarlo. Estamos trabajando activamente con varios proveedores de hardware para que puedan proporcionar la información necesaria para usted o cargar en su nombre. También tiene la opción para capturar esta información por usted mismo utilizando un script de PowerShell que genera un archivo .csv con el identificador de hardware. del dispositivo
+        Para registrar dispositivos, debe adquirir su identificador de hardware y registrarlo. Estamos trabajando activamente con varios proveedores de hardware para que puedan proporcionarle la información necesaria o cargarlo en su nombre. También tiene la opción de capturar esta información mediante un script de PowerShell que genera un archivo. csv con el identificador de hardware del dispositivo.
 
-        Una vez que los dispositivos están registrados, existen opciones de personalización de OOBE que puede configurar incluida la omisión de la configuración de privacidad y los términos de licencia.
+        Una vez que se han registrado los dispositivos, hay opciones de personalización de OOBE que puede configurar, lo que permite omitir la configuración de privacidad y el CLUF.
 
     - **Personalización de marca para configuración rápida**
 
-        Esto permite agregar personalización de marca para que aparezca durante OOBE del dispositivo.
+        Esto le permite agregar personalización de marca para que aparezca durante la OOBE del dispositivo.
 
     - **Inscripción automática de MDM en Microsoft Intune**
         
-        La inscripción automática permite a los usuarios inscribirse sus dispositivos de Windows 10 en Intune para administración de dispositivos al conectarse con sus dispositivos a Azure AD. Para inscribirse, los usuarios agregar su cuenta de trabajo en los dispositivos de sus propiedad de los usuarios o unirse a dispositivos corporativo que pertenecen a Azure AD. En segundo plano, el dispositivo también está inscrito de la administración con Intune.
+        La inscripción automática permite a los usuarios inscribir sus dispositivos Windows 10 en Intune para la administración de dispositivos cuando conectan sus dispositivos a Azure AD. Para inscribirse, los usuarios agregan su cuenta profesional a sus dispositivos de propiedad personal o se unen a los dispositivos de propiedad corporativa para Azure AD. En segundo plano, el dispositivo también está inscrito para la administración con Intune.
 
     - **Conectividad de red a servicios en la nube usados por Windows Autopilot**
 
-        El programa de implementación piloto automático de Windows utiliza un número de servicios de nube para obtener los dispositivos a un estado productivo y estos servicios deben ser accesibles desde dispositivos registrados como dispositivos de piloto automático de Windows. 
+        El programa de implementación de Windows AutoPilot usa una cantidad de servicios en la nube para obtener los dispositivos en un estado productivo y estos servicios deben ser accesibles desde dispositivos registrados como dispositivos de Windows AutoPilot. 
 
     - **Los dispositivos deben tener preinstalado Windows 10, versión 1703 o posterior**
 
-2. Obtenga información sobre y seleccione el programa de implementación piloto automático de Windows para su organización. Puede seleccionar entre estos programas de implementación:
+2. Obtenga información sobre y seleccione el programa de implementación de Windows AutoPilot para su organización. Puede seleccionar entre estos programas de implementación:
     - **Microsoft Store para Empresas**
     - **Microsoft Intune**
     - **Centro para socios**
 
-## <a name="part-2-set-up-a-windows-10-device-for-microsoft-365"></a>Parte 2: Al configurar un dispositivo de Windows 10 para Microsoft 365
-Antes de configurar los dispositivos de Windows para los usuarios de Microsoft 365, asegúrese de que todos los dispositivos de Windows ejecutan Windows 10, versión 1703 (los creadores de actualización) o posterior.
+## <a name="part-2-set-up-a-windows-10-device-for-microsoft-365"></a>Parte 2: configurar un dispositivo con Windows 10 para Microsoft 365
+Para poder configurar dispositivos Windows para los usuarios de Microsoft 365, asegúrese de que todos los dispositivos Windows ejecutan Windows 10, versión 1703 (Creators Update) o posterior.
 
-Después de que todos los dispositivos de Windows de la organización o bien se han actualizado a los creadores de 10 Windows Update o ya se está ejecutando Windows 10 los creadores de actualización, puede participar en estos dispositivos a Azure Active Directory de su organización.
+Una vez que todos los dispositivos Windows de su organización hayan sido actualizados a Windows 10 Creators Update o que ya estén ejecutando Windows 10 Creators Update, puede unir estos dispositivos al Azure Active Directory de la organización.
 
-### <a name="set-up-a-brand-new-or-newly-upgraded-windows-10-device"></a>Configurar un dispositivo de Windows 10 totalmente nuevo o actualizado recientemente
-Siga estos pasos para configurar un dispositivo con el 10 de Windows OOBE en un dispositivo nuevo que ejecuta Windows Update de los creadores de 10 (o posterior) o en un dispositivo que se actualice a Windows Update de los creadores de 10 (o posterior), pero no se ha pasado por el programa de instalación de fábrica.
+### <a name="set-up-a-brand-new-or-newly-upgraded-windows-10-device"></a>Configurar un dispositivo de Windows 10 nuevo o con una marca recién actualizada
+Siga estos pasos para configurar un dispositivo con Windows 10 OOBE en un dispositivo nuevo que ejecute Windows 10 Creators Update (o posterior) o en un dispositivo que se haya actualizado a Windows 10 Creators Update (o posterior), pero que no haya pasado por una configuración rápida.
 
-1. Si no tiene configurada una red inalámbrica, asegúrese de que el dispositivo se conecta a internet a través de una por cable o una conexión Ethernet.
-2. Vaya a través de la experiencia del programa de instalación de dispositivo de Windows. En un dispositivo nuevo o restablecer, la experiencia del programa de instalación inicia con el **vamos a inicio con región. Es este derecho?** pantalla.
-3. Vaya a través de configuración de dispositivo de Windows 10 hasta llegar a la **¿cómo desea configurar?** página. A continuación, seleccione **configurar para una organización**.
-4. Iniciar sesión mediante la cuenta y la contraseña del usuario de Microsoft 365. Dependiendo de la configuración de contraseña de usuario, es posible que se le pida para actualizar la contraseña. 
+1. Si no tiene una red inalámbrica configurada, asegúrese de conectar el dispositivo a Internet a través de una conexión cableada o Ethernet.
+2. Pasar por la experiencia de instalación de dispositivos de Windows. En un dispositivo nuevo o de restablecimiento, la experiencia del programa de instalación comienza con la **región comencemos. ¿Es este el derecho?** Screen.
+3. Siga el proceso de configuración de dispositivos Windows 10 hasta que llegue a la página **¿Cómo quiere realizar la configuración?**. Seleccione **configurar para una organización**.
+4. Inicie sesión con la cuenta y la contraseña del usuario de Microsoft 365. Según la configuración de contraseña de usuario, es posible que se le pida que actualice la contraseña. 
 5. Finalice la configuración del dispositivo Windows 10.
 
-Una vez haya terminado, el dispositivo se conectará a Azure la organización AD.
+Una vez que haya terminado, el dispositivo se conectará a Azure AD de la organización.
 
-### <a name="set-up-a-device-that-has-already-completed-out-of-box-setup"></a>Configurar un dispositivo que ya se ha completado el programa de instalación de fábrica
-Si su dispositivo tiene Windows 10 los creadores de actualización (o posterior) y tiene ya se ha pasado a través de la configuración de fábrica, siga estos pasos.
+### <a name="set-up-a-device-that-has-already-completed-out-of-box-setup"></a>Configurar un dispositivo que ya ha completado la configuración de instalación
+Si el dispositivo tiene Windows 10 Creators Update (o posterior) y ya ha pasado mediante la configuración preconfigurada, siga estos pasos.
 
-1. En los PC de Windows del usuario que está ejecutando Windows 10, versión 1703 (los creadores de actualización), seleccione el logotipo de **Windows** y, a continuación, seleccione el icono de **configuración** .
+1. En el PC Windows del usuario que ejecuta la versión 1703 de (Creators Update), seleccione el logotipo de **Windows** y, a continuación, seleccione el icono de **configuración** .
 2. En **Configuración**, vaya a **Cuentas**.
-3. En la página de **la información** , seleccione **el trabajo de acceso o la escuela** > **Conectar**.
-4. En el cuadro de diálogo **Configurar una cuenta de trabajo o escuela** , en **acciones alternativas**, seleccione **unirse a este dispositivo a Azure Active Directory**.
-5. En la página **vamos a obtener que se ha registrado** , escriba su trabajo o escuela cuenta y seleccione **siguiente**.
-6. En la página **Escriba la contraseña** , escriba su contraseña y seleccione **iniciar sesión**.
-7. En la página **Asegúrese de que se trata de la organización** , compruebe que la información es correcta y, a continuación, seleccione **unirse**.
-8. En la **está todos los conjunto!** página, seleccione **hecho**.
+3. En la página **su información** , seleccione **Access Work o School** > **Connect**.
+4. En el cuadro de diálogo **configurar una cuenta profesional o educativa** , en **acciones alternativas**, seleccione **unir este dispositivo a Azure Active Directory**.
+5. En la página **vamos a iniciar sesión** , escriba su cuenta profesional o educativa y seleccione **siguiente**.
+6. En la página **escribir contraseña** , escriba la contraseña y seleccione **iniciar sesión**.
+7. En la página Asegúrese de que **es su organización** , compruebe que la información es correcta y seleccione **unirse**.
+8. En la de **todo está juego.** en la página, seleccione **listo**.
 
-Una vez haya terminado, el usuario se conectará a Azure la organización AD.
+Una vez que haya terminado, el usuario se conectará a Azure AD de la organización.
 
 ### <a name="verify-the-device-is-connected-to-azure-ad"></a>Comprobar que un dispositivo está conectado a Azure AD
-Siga estos pasos para comprobar el estado de la sincronización del dispositivo con Azure AD y, a continuación, empezar a usar su cuenta Microsoft 365 en el dispositivo. 
+Siga estos pasos para comprobar el estado de sincronización del dispositivo con Azure AD y, a continuación, empiece a usar su cuenta de Microsoft 365 en el dispositivo. 
 
 1. Abra **configuración**.
-2. En la página **trabajo de acceso o la escuela** , seleccione la **conectado a <organization name> ** área para exponer los botones **Info** y **Desconectar**.
-3. Seleccione la **información** para obtener el estado de sincronización.
-4. En la página **estado de la sincronización** , seleccione **sincronización** para obtener el dispositivo móvil más reciente de las directivas de administración en el PC.
-5. Para empezar a usar la cuenta de Microsoft 365, vaya al botón **Inicio** de Windows, haga clic en la imagen de la cuenta actual y, a continuación, seleccione cuenta de **modificador** .
+2. En la **Página tener acceso a la escuela o el trabajo** , seleccione el área **conectado a <organization name> ** para mostrar la **información** de los botones y **desconectar**.
+3. Seleccione **información** para obtener el estado de sincronización.
+4. En la página **Estado de sincronización** , seleccione **sincronizar** para obtener las directivas de administración de dispositivos móviles más recientes en el equipo.
+5. Para empezar a usar la cuenta de Microsoft 365, vaya al botón **Inicio** de Windows, haga clic con el botón secundario en la imagen de cuenta actual y seleccione **cambiar** de cuenta.
 6. Inicie sesión con el correo electrónico y la contraseña de la organización.
 
-Si experimenta problemas con el 10 de Windows en un entorno empresarial, puede consultar [las mejores soluciones de soporte técnico de Microsoft para los problemas más comunes](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Estos recursos incluyen artículos KB, actualizaciones y artículos de la biblioteca.
+Si experimenta problemas al usar Windows 10 en un entorno empresarial, puede consultar [las principales soluciones de soporte técnico de Microsoft para los problemas más comunes](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Estos recursos incluyen artículos de Knowledge base, actualizaciones y artículos de bibliotecas.
 
 Como control provisional, puede consultar los [criterios de salida](windows10-exit-criteria.md#crit-windows10-step3) correspondientes a este paso.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Supervisión del estado dispositivo y cumplimiento de normas](windows10-enable-windows-analytics.md) |
+|![](./media/stepnumbers/Step4.png)| [Supervisar el estado y el cumplimiento del dispositivo](windows10-enable-windows-analytics.md) |
 
 
 

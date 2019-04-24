@@ -1,57 +1,63 @@
 ---
-title: Configuración de red para escritorio administrado de Microsoft
+title: Configuración de red para el escritorio administrado por Microsoft
 description: ''
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: f4cfaffe25638de80d23c3e681e50cbb544ca961
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289105"
 ---
-#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para escritorio administrado de Microsoft
+#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el escritorio administrado por Microsoft
 
 <!--Proxy config -->
 
 
 ## <a name="proxy-configuration"></a>Configuración de proxy
 
-Escritorio administrado de Microsoft es un servicio administrado en la nube. Hay un conjunto de extremos que debe ser capaz de ponerse en contacto con los servicios de escritorio administrado de Microsoft. Cuando los clientes se configuración un servidor proxy o firewall, sólo permiten el tráfico de red desde dominios específicos por motivos de seguridad. En esta sección se enumera los extremos que necesitan que se les. 
+El escritorio administrado de Microsoft es un servicio administrado en la nube. Hay un conjunto de puntos de conexión que los servicios de escritorio administrados de Microsoft deben poder alcanzar. En esta sección se enumeran los puntos de conexión que deben permitirse para los diversos aspectos del servicio de escritorio administrado por Microsoft. 
 
-### <a name="proxy-requirement"></a>Requisito de proxy
+Los clientes pueden optimizar su red mediante el envío de todas las solicitudes de red de Microsoft 365 de confianza directamente a través de su firewall o proxy, evitando la autenticación y todos los procesos o la inspección del nivel de paquetes adicionales. Esto reduce la latencia y los requisitos de capacidad del perímetro. 
 
-El proxy o el firewall debe admitir TLS 1.2. De lo contrario, debe deshabilitar la detección de protocolo.
+Además, para optimizar el rendimiento de los servicios basados en la nube de escritorio administrada de Microsoft, estos puntos de conexión necesitan un control especial por parte de los exploradores cliente del cliente y los dispositivos de la red perimetral. Estos dispositivos incluyen firewalls, interrupción de SSL e inspección, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Los extremos permiten - específicas para escritorio administrado de Microsoft
+### <a name="proxy-requirement"></a>Requisitos del proxy
 
-Estas necesidades de direcciones URL a estar en la lista de permitidos para que los dispositivos de escritorio administrado de Microsoft pueden comunicarse con Microsoft Services.
+El proxy o el Firewall deben admitir TLS 1,2. De lo contrario, es posible que los clientes tengan que deshabilitar la detección de protocolo.
 
-Servicio de Microsoft  | Las direcciones URL necesarias en la lista de permitidos 
+### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Extremos permitidos: específicos para el escritorio administrado de Microsoft
+
+Microsoft manAged Desktop usa el portal de Azure para hospedar su consola Web. Las siguientes direcciones URL de la tabla siguiente deben estar en la lista de permitidos del proxy y del firewall para que los dispositivos de escritorio administrados por Microsoft puedan comunicarse con los servicios de Microsoft.  
+
+Tenga en cuenta que la dirección URL del escritorio administrada de Microsoft siguiente se usa para cualquier cosa que el servicio se ejecuta en la API de cliente. Los clientes deben asegurarse de que esta dirección URL siempre es accesible en su red corporativa.
+
+Servicio de Microsoft  | Direcciones URL necesarias en la lista de permitidos 
 --- | --- | ---
-Obtener ayuda | \*. support.services.microsoft.com  <br>inprod.support.Services.Microsoft.com  <br>supportchannels.Services.Microsoft.com  <br>Graph.Windows.NET  <br>Login.Windows.NET  <br>prod-mwaas-services-customerapi.azurewebsites.net
-Asistencia rápida | remoteassistance.support.Services.Microsoft.com <br>Relay.support.Services.Microsoft.com <br>channelwebsdks.azureedge.NET  <br>Web.Vortex.Data.Microsoft.com  <br>Gateway.ChannelServices.Microsoft.com <br>\*. lync.com
+Escritorio administrado por Microsoft | Prod-mwaas-Services-customerapi.azurewebsites.net
+Obtener ayuda | \*. support.Services.Microsoft.com  <br>inprod.support.Services.Microsoft.com  <br>supportchannels.Services.Microsoft.com  <br>Graph.Windows.net  <br>login.Windows.net  <br>Prod-mwaas-Services-customerapi.azurewebsites.net
+Asistencia rápida | remoteassistance.support.Services.Microsoft.com <br>Relay.support.Services.Microsoft.com <br>channelwebsdks.azureedge.net  <br>Web.Vortex.Data.Microsoft.com  <br>Gateway.ChannelServices.Microsoft.com <br>\*. Lync.com
+Asistente para soporte y recuperación de Microsoft para Office 365 | \*. apibasic.Diagnostics.Office.com  <br>\*. API.Diagnostics.Office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>Los extremos permiten - otros productos de Microsoft
+### <a name="endpoints-allowed---other-microsoft-products"></a>Extremos permitidos: otros productos de Microsoft
 
-Existen direcciones URL de varios productos de Microsoft que deben estar en la lista de permitidos para que los dispositivos de escritorio administrado de Microsoft puedan comunicarse con esas Microsoft Services. Utilice los vínculos para ver la lista completa para cada producto. 
+Hay direcciones URL de varios productos de Microsoft que deben estar en la lista de permitidos para que los dispositivos de escritorio administrados por Microsoft puedan comunicarse con esos servicios Microsoft. Use los vínculos para ver la lista completa de cada producto. 
 
-Servicio de Microsoft | Origen de documentación - direcciones URL requeridas en lista de permitidos
+Servicio de Microsoft | Origen de la documentación: direcciones URL necesarias en la lista de permitidos
 --- | ---
-Actualización de Windows para la empresa (WUfB) | [Windows Update para los requisitos de firewall y proxy de negocio](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
-Optimización de entrega | [Requisitos de proxy de Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
-Microsoft Store para Empresas | [Lista de permitidos de Microsoft Store](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Dirección URL de Office 365 y los intervalos de direcciones IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) incluidos \*. apibasic.diagnostics.office.com
-Azure Active Directory | [Identidad híbrida necesario puertos y protocolos](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports) y [Active Directory y los requisitos de puerto de servicios de dominio de Active Directory](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Requisitos de configuración de red Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
-OneDrive para la Empresa <br> | [Requiere las direcciones URL y los puertos para OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports)
-Windows Defender avanzada protección contra amenazas (ATP) | [Extremos de Windows Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
-SharePoint Online  | [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#bkmk_teams)
-Power BI | [OneNote](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Windows 10 Enterprise, incluida Windows Update para empresas | [Administrar los extremos de conexión para Windows 10, versión 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Administrar los extremos de conexión para Windows 10, versión 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
+Optimización de entrega | [Configurar la optimización de entrega para las actualizaciones de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Office 365 | [Office 365 URL e intervalos de direcciones IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Azure Active Directory | La [identidad híbrida requiere puertos y protocolos](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) y [los requisitos de puerto de servicios de dominio de Active Directory y](https://aka.ms/AA26ygm) Active Directory 
+Microsoft Intune | [Requisitos de configuración de red de Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
+Protección contra amenazas avanzada de Windows Defender (ATP) | [Extremos de ATP de Windows Defender] (https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
+)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

@@ -1,50 +1,50 @@
 ---
-title: Es el escritorio de Microsoft administrado adecuado para usted
+title: ¿El escritorio administrado de Microsoft es el adecuado para usted
 description: ''
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: 5b99c860fe7075f2a9f4f76938bebabf28833bf0
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 6b78586f4ce1f81795e01873161a9cbf7768c2ac
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283452"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el escritorio administrado por Microsoft?
 
 <!--from Overview-->
 
-Siempre que estamos buscando maneras ayudar a que el área de trabajo de nuestros clientes más productivos y segura. Uso del servicio Microsoft 365 inicia se otorgan poderes a los empleados para que funcionen conjuntamente en un entorno de dispositivo y la aplicación y creativo, seguro.
+Siempre estamos buscando formas de ayudar a que el lugar de trabajo del cliente sea más productivo y seguro. El uso del servicio Microsoft 365 se inicia haciendo que los empleados trabajen juntos en un entorno creativo, seguro, de dispositivo y de aplicación.
 
-Microsoft Managed Desktop toma esto más mediante la combinación de la eficacia de Microsoft 365 E5 en un dispositivo moderno, con la administración de extremo, la protección y seguridad proporcionada y ejecute por Microsoft.
+El escritorio administrado de Microsoft se encarga de ello combinando la potencia de Microsoft 365 Enterprise en un dispositivo moderno, con la administración de extremos, la protección y la seguridad proporcionada y ejecutada por Microsoft.
 
 
 <table>
-<tr><th>Mejor experiencia</th><th>Tecnología más reciente</th><th>Respaldados por Microsoft</th></tr>
-<tr><td><p>Windows 10</p><p>Office 365 ProPlus</p><p></p><p>Windows Autopilot</p><p>Dispositivo moderno</p></td><td><p>Siempre actualizado</p><p>Actualizaciones de característica semestral </p><p>actualización de dispositivo de 2 o 3 años</p></td><td><p>Configuración de dispositivo</p><p>Supervisión de la seguridad y corrección</p><p>Implementación de aplicaciones</p><p>Administración de actualizaciones</p><p>Análisis de escritorio</p><p>soporte de 24 horas, 7 para el usuario final</p></td></tr>
+<tr><th>Mejor experiencia</th><th>Tecnología más reciente</th><th>Respaldado por Microsoft</th></tr>
+<tr><td><p>Windows 10</p><p>Office 365 ProPlus</p><p></p><p>Windows Autopilot</p><p>Dispositivo moderno</p></td><td><p>Siempre actualizado</p><p>Actualizaciones de características semestrales </p><p>actualización de dispositivos de 2 o 3 años</p></td><td><p>Configuración de dispositivos</p><p>Supervisión y corrección de seguridad</p><p>Implementación de aplicaciones</p><p>Administración de actualizaciones</p><p>Análisis de escritorio</p><p>soporte técnico para el usuario final 24x7</p></td></tr>
 </table>
 
-Microsoft Managed Desktop ofrece a los clientes una solución integral de TI que los usuarios delights y libera recursos de TI para las tareas más importantes. Hemos desarrollado este servicio basándose en los comentarios que se oye con frecuencia:
-- Mis usuarios desean la tecnología más reciente.
-- La opción I want costos más predecibles.
-- Deseo centrarse en mi negocio principal. 
-- Estoy deriva en complejidad. 
-- Deseo ser más estratégica. 
-- Es difícil encontrar suficiente talento de TI.  
+El escritorio administrado de Microsoft proporciona a los clientes una solución de ti completa que Delight a los usuarios y libera recursos de TI para tareas más importantes. Hemos desarrollado este servicio en función de los comentarios que escuchamos con frecuencia:
+- Mis usuarios quieren la tecnología más reciente.
+- Quiero más costos previsibles.
+- Quiero centrarme en mi negocio principal. 
+- Estoy ahogado en complejidad. 
+- Quiero ser más estratégico. 
+- Es difícil encontrar suficiente talento en ti.  
 
-Microsoft Managed Desktop proporciona la mejor experiencia de usuario con la tecnología más reciente, con el respaldo de Microsoft. 
+El escritorio administrado de Microsoft proporciona la mejor experiencia de usuario con la tecnología más reciente, todo respaldado por Microsoft. 
 
-## <a name="additional-resources"></a>Otros recursos
-- [Microsoft Managed Desktop service description](../service-description/index.md) (Descripción del servicio Escritorio administrado de Microsoft)
-- [Requisitos previos de escritorio administrado de Microsoft](../get-ready/prerequisites.md).
+## <a name="additional-resources"></a>Recursos adicionales
+- [Descripción del servicio de escritorio administrado de Microsoft](../service-description/index.md)
+- [Requisitos previos del escritorio administrado de Microsoft](../get-ready/prerequisites.md).
 
 <!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-## <a name="in-this-section"></a>In this section
+## <a name="in-this-section"></a>En esta sección
 - [Roles y responsabilidades](roles-and-responsibilities.md)
 - [Tecnologías](technologies.md)

@@ -8,6 +8,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -16,13 +17,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
-description: Obtenga información sobre cómo instalar las aplicaciones de Office de 32 bits en equipos Windows 10 y mantenerlas actualizadas automáticamente.
-ms.openlocfilehash: 16a8230d60157f1c6731ac639d89533b05aa3afe
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Obtenga información sobre cómo instalar automáticamente las aplicaciones de Office de 32 bits en equipos con Windows 10 y mantenerlas actualizadas.
+ms.openlocfilehash: c8e93746b89925d6b6a928a474fe5736e2834987
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286667"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Prepararse para una implementación del cliente de Office mediante Microsoft 365 Business
 

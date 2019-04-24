@@ -11,6 +11,9 @@ f1_keywords:
 - BCS365_Win10AppPolicy
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -20,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Obtenga información sobre cómo crear una directiva de administración de aplicaciones y protección de archivos de trabajo en los dispositivos de Windows 10.
-ms.openlocfilehash: acf19a72d994185a35b2e425f8334a73a121ee10
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Obtenga información sobre cómo crear una directiva de administración de aplicaciones y proteger los archivos de trabajo en dispositivos con Windows 10.
+ms.openlocfilehash: 289c6a74f6ccb53f6a833612a7b4a5bcddd3ea56
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278200"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Windows 10
 
@@ -34,23 +37,21 @@ ms.locfileid: "26871361"
 
 Si los usuarios tienen dispositivos de Windows 10 personales en los que realizan tareas de trabajo, también puede proteger los datos en ellos.
   
-1. Inicie sesión en [Microsoft 365 Business](https://portal.office.com) con credenciales de administrador global. Elija el icono **Administrador** para ir al centro de administración. 
+1. Inicie sesión en el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=837890) con credenciales de administrador global. Elija el icono **Administrador** para ir al centro de administración. 
     
-2. En la tarjeta **Directivas de dispositivos** del portal de administración, elija **Agregar directiva**.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
-  
+2. En el panel de navegación izquierdo, elija **Agregar** **directivas** \> de **dispositivos** \> .
+
 3. En el panel **Agregar directiva**, escriba un nombre único para esta directiva. 
     
 4. En **Tipo de directiva**, elija **Administración de aplicaciones para Windows 10**.
     
-5. Bajo ** tipo de dispositivo **, elija **Personal** o **Propietaria de la empresa**.
+5. Under ** Device type **, choose either **Personal** or **Company Owned**.
     
 6. La opción **Cifrar archivos de trabajo** se activa automáticamente. 
     
 7. Establezca la opción **Impedir que los usuarios copien datos de la empresa en archivos personales y obligarlos a guardar los archivos de trabajo en OneDrive para la Empresa** en **Activado** si no quiere que los usuarios guarden archivos de trabajo en su equipo. 
     
-8. Expanda **Administrar la forma en que los usuarios obtienen acceso a los archivos de Office en dispositivos** \> configure las opciones como quiera. La opción **Administrar la forma en que los usuarios obtienen acceso a los archivos de Office en dispositivos móviles** está **desactivada** de forma predeterminada, pero se recomienda que la **active** y acepte los valores predeterminados. Vea [Configuración disponible](protection-settings-for-windows-10-devices.md#bkmk_settings) para obtener más información. 
+8. Expanda **Administrar la forma en que los usuarios obtienen acceso a los archivos de Office en dispositivos** \> configure las opciones como quiera. La opción **Administrar la forma en que los usuarios obtienen acceso a los archivos de Office en dispositivos móviles** está **desactivada** de forma predeterminada, pero se recomienda que la **active** y acepte los valores predeterminados. Vea [available Settings](#available-settings)para obtener más información. 
     
     Siempre puede usar el vínculo **Restablecer la configuración predeterminada** para volver a la configuración predeterminada. 
     
@@ -76,7 +77,7 @@ La siguiente configuración está disponible para administrar la forma de obtene
   
 Para obtener más información, consulte [Cómo se asignan las características de protección de Microsoft 365 Business a la configuración de Intune](map-protection-features-to-intune-settings.md).
   
-|**Configuración**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office  <br/> |Si esta configuración está **Activada**, los usuarios tienen que proporcionar otra forma de autenticación, además de su nombre de usuario y contraseña, para poder usar aplicaciones de Office en su dispositivo móvil.  <br/> |
 |Restablecer el PIN cuando no se haya podido iniciar sesión el siguiente número de veces  <br/> |Para impedir que un usuario no autorizado adivine aleatoriamente un PIN, este se restablecerá después de que se escriba de forma errónea el número de veces que especifique.  <br/> |

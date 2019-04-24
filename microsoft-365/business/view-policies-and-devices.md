@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Ver directivas de dispositivo y acciones iniciando sesión en Microsoft 365 empresarial con credintials de administrador global.
-ms.openlocfilehash: 0018abc6dcf2163dc50c6c792793c9f5d9e29d45
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Vea directivas y acciones de dispositivos iniciando sesión en Microsoft 365 Business con credintials de administración global.
+ms.openlocfilehash: 524e5382fb242ea6b77abd72191073ce4df14f0c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285836"
 ---
 # <a name="view-policies-and-devices"></a>Ver directivas y dispositivos
 
@@ -29,7 +32,7 @@ ms.locfileid: "26871159"
 
 1. Inicie sesión en [Microsoft 365 Business](https://portal.office.com) con credenciales de administrador global. 
     
-2. En el centro de administración, en la tarjeta **Directivas de dispositivo**, elija **Directivas de dispositivo** para abrir la página **Directivas de dispositivo**. 
+2. En el panel de navegación izquierdo, elija **Agregar** **directivas** \> de **dispositivos** \> .
     
     En esta página, puede crear, editar, cambiar el grupo de destino o eliminar una directiva.
     

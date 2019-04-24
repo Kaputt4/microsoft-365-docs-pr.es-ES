@@ -1,5 +1,5 @@
 ---
-title: Habilitar dispositivos de Windows 10 unido a un dominio administrado por Microsoft 365 empresarial
+title: Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,39 +19,39 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: Obtenga información sobre cómo habilitar Microsoft 365 proteger AD local se unió a dispositivos de Windows 10.
-ms.openlocfilehash: 6e66a2c5417c9037232c1ada654d4cac3c520607
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Obtenga información sobre cómo habilitar Microsoft 365 para proteger dispositivos locales Unidos a Windows 10.
+ms.openlocfilehash: d61b3bf6be50d6b21e7b883774567bb63995e60e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278085"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Habilitar dispositivos de Windows 10 unido a un dominio administrado por Microsoft 365 empresarial
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 Business
 
-Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 empresarial para proteger los dispositivos de Windows 10, al tiempo que mantiene el acceso a los recursos locales que requieren autenticación local. Puede configurar esto mediante la primera sincronización de Active Directory con Azure Active Directory, seguido de registrar los dispositivos de Windows 10 con Azure AD y realizar una inscripción para administración de dispositivos móviles por Microsoft 365 empresarial.
+Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Business para proteger sus dispositivos con Windows 10 y mantener al mismo tiempo el acceso a los recursos locales que requieren autenticación local. Para configurar esto primero, sincronice Active Directory con Azure Active Directory y, a continuación, registre los dispositivos Windows 10 con Azure AD y Inscríbase para la administración de dispositivos móviles en Microsoft 365 Business.
   
-## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>Configurar dispositivos unido a un dominio para ser administrado por Microsoft 365 empresarial
+## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>Configurar dispositivos Unidos a un dominio para que los administre Microsoft 365 Business
 
-Para configurar los dispositivos unido a un dominio de la organización para sacar partido de las funciones proporcionadas por Azure Active Directory además de Active Directory local, puede implementar **híbrida Azure AD se unió a dispositivos**. Estos son los dispositivos que se unen tanto a su Active Directory local y Azure Active Directory. Híbrido Azure AD se unió a dispositivos estén protegidos y administrados por Microsoft 365 Business.. 
+Para configurar los dispositivos Unidos a un dominio de su organización con el fin de beneficiarse de las funciones que ofrece Azure Active Directory además de Active Directory local, puede implementar **dispositivos híbridos de Azure ad híbridos**. Se trata de dispositivos que se unen a la implementación local de Active Directory y a Azure Active Directory. Los dispositivos híbridos de Azure AD pueden ser protegidos y administrados por Microsoft 365 Business.. 
   
-Complete los pasos siguientes para hacer que los dispositivos de Windows 10 híbrida Azure AD Unido y administrados por Microsoft 365 empresarial.
+Complete los pasos siguientes para que los dispositivos con Windows 10 Hybrid Azure AD se unan y administren con Microsoft 365 Business.
   
-1. Para sincronizar los usuarios, grupos y contactos de Active Directory local en Azure Active Directory, ejecute el Asistente para la sincronización de Active Directory y Azure Active Directory Connect tal como se describe en [Configurar la sincronización de Active directory para Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
+1. Para sincronizar los usuarios, los grupos y los contactos de Active Directory local a Azure Active Directory, ejecute el Asistente para sincronización de directorios y Azure Active Directory Connect como se describe en [configurar la sincronización de directorios para Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
     
     > [!NOTE]
-    > Los pasos son exactamente los mismos para la empresa de Microsoft 365. 
+    > Los pasos son exactamente iguales para Microsoft 365 Business. 
   
-2. Antes de completar el paso 3 para habilitar los dispositivos de Windows 10 para ser híbrida se unió Azure AD, debe asegurarse de que cumple los siguientes requisitos previos:
+2. Antes de completar el paso 3 para habilitar los dispositivos Windows 10 para que sean Unidos a Azure AD híbrido, debe asegurarse de que cumple los siguientes requisitos previos:
     
-   - Está ejecutando la versión más reciente de Azure AD conectarse.
+   - Está ejecutando la última versión de Azure AD Connect.
     
-   - Conectar Azure AD se ha sincronizado con todos los objetos de equipo de los dispositivos que desea que sean híbrida se unió Azure AD. Si los objetos de equipo pertenecen a determinadas unidades organizativas (OU), a continuación, asegúrese de que estas unidades organizativas se establecen para la sincronización en Azure AD conectarse así como.
+   - Azure AD Connect ha sincronizado todos los objetos de equipo de los dispositivos que desea que sean Unidos a Azure AD híbrido. Si los objetos de equipo pertenecen a unidades organizativas específicas (OU), asegúrese de que estas ou estén configuradas para la sincronización en Azure AD Connect también.
     
-3. Registre los dispositivos de Windows 10 unido a un dominio existentes para ser híbrida se unió Azure AD y les inscribirse en administración de dispositivos móviles mediante Intune (Microsoft 365 Business):
+3. Registrar los dispositivos existentes de Windows 10 Unidos a un dominio para que estén Unidos a Azure AD híbridos e inscribirlos para la administración de dispositivos móviles mediante Intune (Microsoft 365 Business):
     
-4. Siga las instrucciones paso a paso [cómo configurar los dispositivos de Azure Active Directory se unió a híbrida](https://go.microsoft.com/fwlink/p/?linkid=872870). Esto permitirá que la sincronización de Active Directory local se unió a equipos Windows 10 y hacerlas está preparada para la nube.
+4. Siga las instrucciones paso a paso sobre [Cómo configurar los dispositivos Unidos de Azure Active Directory híbridos](https://go.microsoft.com/fwlink/p/?linkid=872870). Esto permitirá la sincronización de los equipos Windows 10 locales Unidos a través de Active Directory y los pondrá a disposición en la nube.
     
-5. Para poder inscribirse un dispositivo de Windows 10 para administración de dispositivos móviles, vea [inscribirse en un dispositivo de Windows 10 con Intune mediante el uso de una directiva de grupo](https://go.microsoft.com/fwlink/p/?linkid=872871) para obtener instrucciones. Puede establecer la directiva de grupo en un equipo local nivel o para las operaciones masivas, puede crear esta configuración de directiva de grupo en el servidor de controlador de dominio. 
+5. Para inscribir un dispositivo con Windows 10 para la administración de dispositivos móviles, consulte [inscribir un dispositivo con Windows 10 con Intune mediante una directiva de grupo](https://go.microsoft.com/fwlink/p/?linkid=872871) para obtener instrucciones. Puede establecer la Directiva de grupo en el nivel de equipo local o en operaciones masivas, puede crear esta opción de directiva de grupo en el servidor del controlador de dominio. 
     
 

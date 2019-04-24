@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: 'Aprenda a crear, editar, eliminar o quitar los perfiles de piloto automático. '
-ms.openlocfilehash: 4658a27e5f2c64a52f8a7d08b3fc13df5e239dc3
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Obtenga información sobre cómo crear, editar, eliminar o quitar perfiles de autoPilot. '
+ms.openlocfilehash: 85fc897b2f428afae8d55feeb577021adaa30f72
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277173"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Crear y editar perfiles de AutoPilot
 
@@ -32,11 +35,9 @@ ms.locfileid: "26871463"
 
 Un perfil se aplica a un dispositivo o a un grupo de dispositivos.
   
-1. En el Centro de administración de Microsoft 365 Business, elija **Implementar Windows con AutoPilot** en la tarjeta **Acciones de dispositivo**. 
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. en el centro de administración de Microsoft 365 Business, elija **dispositivos** \> **autopilot**.
   
-2. En la página **Preparar Windows**, elija la pestaña **Perfiles** \> **Crear perfil**.
+2. En la **** página AutoPilot, elija la **** pestaña \> perfiles **crear perfil**.
     
 3. En la página **Crear perfil**, especifique un nombre para el perfil que le ayude a identificarlo, como, por ejemplo, Marketing, active la opción que quiera (para más información, vea [About AutoPilot Profile settings](autopilot-profile-settings.md) [Acerca de la configuración de perfiles de AutoPilot]) y elija **Guardar**.
     

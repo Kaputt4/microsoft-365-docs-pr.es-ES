@@ -4,13 +4,16 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4MobileData
 - BCSSetup4MobileData
 - BCS365_BCSSetup4MobileData
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -20,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
-description: 'Obtenga información acerca de la configuración predeterminada y la adición de directivas de administración de aplicación para proteger los datos de la compañía en dispositivos móviles personales de los usuarios. '
-ms.openlocfilehash: 3c5b16e6bff07e27422299f8051d7601a772238e
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Obtenga información sobre la configuración predeterminada y cómo agregar directivas de administración de aplicaciones para proteger los datos de la compañía en los dispositivos móviles personales de los usuarios. '
+ms.openlocfilehash: 8c534723f8d7ef903612ab637484891b1e21166e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285300"
 ---
 # <a name="protect-work-files-on-devices"></a>Proteger los archivos de trabajo en dispositivos
 

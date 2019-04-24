@@ -1,56 +1,57 @@
 ---
-title: Orden dispositivos de escritorio administrado de Microsoft
+title: Pedir dispositivos en el escritorio administrado por Microsoft
 description: ''
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/25/2018
-ms.openlocfilehash: 75098621f505513f6855b08e9cd9816992e95a86
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 88efccaf3970f58281338e436edbb7110df2a7de
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289516"
 ---
-# <a name="order-microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrado de Microsoft de orden
+# <a name="order-microsoft-managed-desktop-devices"></a>Pedir dispositivos de escritorio administrados por Microsoft
 
-Microsoft actualmente consideren una experiencia de compra a pequeña escala en los Estados Unidos (Estados Unidos), tal y como se describe a continuación. Si está fuera de los Estados Unidos o el orden de su dispositivo es para más de 50 dispositivos, se recomienda trabajar con uno de nuestros socios de dispositivo aprobado. Que puede llegar a su contacto de la cuenta de Microsoft para obtener más ayuda para configurar una asociación de dispositivos.
+Actualmente, Microsoft está experimentando una experiencia de compra a pequeña escala en Estados Unidos (EE. UU.), tal como se describe a continuación. Si está fuera de los Estados Unidos o el orden de los dispositivos es para más de 50 dispositivos, le recomendamos trabajar con uno de nuestros socios de dispositivo aprobados. Puede acceder a su contacto de la cuenta de Microsoft para obtener más ayuda para configurar una asociación de dispositivos.
 
-¿Cómo debo pedir dispositivos para escritorio administrado de Microsoft?
+¿Cómo debo pedir los dispositivos para el escritorio administrado por Microsoft?
 
   |   
  --- | ---
-Desde dentro de los Estados Unidos, ordenación menos de 50 dispositivos | [Orden desde el portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal)
-Fuera de Estados Unidos | Póngase en contacto con su equipo de Microsoft Account
-Más de 50 dispositivos de ordenación | Póngase en contacto con su equipo de Microsoft Account
+Desde dentro de los Estados Unidos, ordenación de menos de 50 dispositivos | [Pedido desde el portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal)
+Fuera de los Estados Unidos | Póngase en contacto con su equipo de cuentas de Microsoft
+Ordenación de más de 50 dispositivos | Póngase en contacto con su equipo de cuentas de Microsoft
 
-## <a name="order-devices"></a>Comprar dispositivos
-Siga estas instrucciones para dispositivos de orden de los Estados Unidos. Comenzará en el **portal de administración de escritorio administrado**de Microsoft, pero podrá realizar las compras a través de **Almacén de Microsoft para la empresa**. 
+## <a name="order-devices"></a>Dispositivos de pedido
+Siga estas instrucciones para pedir dispositivos en los Estados Unidos. Comenzará en el portal de **Administración de escritorio administrado**de Microsoft, pero realizará las compras a través **de Microsoft Store para empresas**. 
 
- **En los dispositivos de orden**
- 1. Inicie sesión en [el portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal)
- 2. En la introducción, en dispositivos de orden, seleccione **Abrir tienda de Microsoft para la empresa en los dispositivos de orden**.
+ **Para pedir dispositivos**
+ 1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal)
+ 2. En introducción, en pedir dispositivos, seleccione **Abrir Microsoft Store para empresas para pedir dispositivos**.
  
-    ![Introducción y orden de los dispositivos](images/mmd-order-devices.png)
+    ![Introducción, dispositivos de pedido](images/mmd-order-devices.png)
     
-3. En Microsoft Store para la empresa, puede revisar información acerca de escritorio administrado de Microsoft y un gráfico de comparación de los dispositivos disponibles. Haga clic en **comprar** para elegir un dispositivo. 
+3. En Microsoft Store for Business, puede revisar la información sobre el escritorio administrado de Microsoft y un gráfico de comparación de los dispositivos disponibles. Haga clic en **comprar** para elegir un dispositivo. 
 
-    ![Almacén para la empresa, comprar](images/msfb-buy.png)
+    ![Tienda para empresas, comprar](images/msfb-buy.png)
 
-4. En **Seleccionar el dispositivo**, seleccione el dispositivo que desee. 
+4. Al **elegir el dispositivo**, selecciona el dispositivo que quieras. 
 
-    ![Almacén para la empresa, elegir dispositivos](images/msfb-pick-device.png)
+    ![Tienda para empresas, dispositivo de selección](images/msfb-pick-device.png)
 
-5. En **Elija características del dispositivo**, seleccione un **Plan de servicio**, escriba el número de dispositivos y, a continuación, haga clic en **Agregar al carro**.
+5. En **elegir características del dispositivo**, seleccione un **plan de servicio**, escriba el número de dispositivos y, a continuación, haga clic en **Agregar al carro**.
 
-6. Revise su carro de y, a continuación, seleccione la **desprotección**o **Agregar otro dispositivo**. 
+6. Revise el carro y, a **** continuación, seleccione desprotección o **Agregar otro dispositivo**. 
 
-7. Continuar con el proceso de desprotección, revise los precios, acepte los términos de licencia y seleccione **Inicio de sesión y realizar pedido**. 
+7. Continúe el proceso de desprotección, revise los precios, acepte los términos de licencia y seleccione **firmar y realizar pedido**. 
 
-Normalmente, los dispositivos se distribuyen dentro de tres días. 
+Los dispositivos normalmente se distribuyen en tres días. 
 
-Cuando haya terminado la ordenación de los dispositivos, puede comprobar los dispositivos que se ordenan en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal). En el **inventario**, seleccione **dispositivos**. 
+Cuando haya terminado de pedir dispositivos, puede comprobar los dispositivos que solicitó en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal). En **inventario**, seleccione **dispositivos**. 
 
-Cuando llegan los dispositivos, distribuir a los empleados. No hay ningún una configuración adicional o la configuración necesaria. 
+Cuando lleguen los dispositivos, distribúyalos a los empleados. No hay ninguna configuración adicional o se requiere configuración. 
 

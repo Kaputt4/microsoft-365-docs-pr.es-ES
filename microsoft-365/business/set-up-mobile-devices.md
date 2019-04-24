@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: Instalar Office en un iPhone o un teléfono Android y sus archivos de trabajo en aplicaciones de Office estará protegido por Microsoft 365 empresarial.
-ms.openlocfilehash: 15dc9742cb9712bcbf21e7e3668adc572ee9eb2b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Instale Office en un iPhone o un teléfono Android, y los archivos de trabajo de las aplicaciones de Office estarán protegidos por Microsoft 365 Business.
+ms.openlocfilehash: 4ffde6197104cfceb337a9d531032dacfd9efcf0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284769"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Configurar dispositivos móviles para los usuarios de Microsoft 365 Business
 
@@ -34,7 +37,7 @@ Este ejemplo se aplica a Outlook, pero también a cualquier otra aplicación de 
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   
-Vea un vídeo sobre cómo configurar aplicaciones de Office en dispositivos iOS con Microsoft 365 empresarial:
+Vea un vídeo sobre cómo configurar las aplicaciones de Office en dispositivos iOS con Microsoft 365 Business:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 
@@ -64,7 +67,7 @@ Busque Outlook en el iPhone y reinícielo. Cuando se le pida, introduzca un PIN 
   
 ## <a name="androidtabandroid"></a>[Android](#tab/Android)
   
-Para iniciar el programa de instalación en el teléfono Android, vaya a la tienda de reproducir.
+Para iniciar la instalación en un teléfono Android, vaya a la tienda de Play.
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   

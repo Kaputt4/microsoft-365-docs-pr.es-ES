@@ -8,11 +8,11 @@ ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 5c820e36b7b397fe770216ee229e38a1da5b034d
-ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289001"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft
 
@@ -46,7 +46,7 @@ Microsoft-Office-Project y Visio-install | Usuarios que necesiten tanto Project 
 Una vez asignada a estos grupos, las aplicaciones estarán disponibles en el portal de la empresa. La sincronización puede tardar unos minutos, pero los usuarios pueden instalar las aplicaciones desde el portal de la empresa. 
 
 ## <a name="communicate-changes"></a>Comunicar los cambios
-Es importante que los administradores de ti permitan a sus usuarios saber cómo instalar Project y Visio. Incluye: 
+Es importante que los administradores de ti permitan a sus usuarios saber cómo instalar Project y Visio. Esto incluye: 
 - Notificar a los usuarios cuando estas aplicaciones están disponibles para ellos. 
 - Instrucciones sobre cómo instalar estas aplicaciones desde el portal de la empresa.
 

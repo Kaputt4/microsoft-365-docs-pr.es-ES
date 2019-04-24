@@ -10,7 +10,9 @@ f1_keywords:
 - BCS365_M365SetupBanner
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -20,32 +22,32 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre cómo configurar Microsoft 365 Business completando cuatro pasos.
-ms.openlocfilehash: f57239b884bd2e186c0bc01973130a10fa4cfe84
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: a1c8a41c3e291983276280a063248bdd10a7f85a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283951"
 ---
 # <a name="set-up-microsoft-365-business-by-using-the-setup-wizard"></a>Configurar Microsoft 365 Business mediante el Asistente para configuración
 
-Complete los pasos 1 a 4 que aparece a continuación.
+Complete los pasos 1-4 a continuación.
   
 ### <a name="set-up-microsoft-365-business"></a>Configurar Microsoft 365 Business
 
-Vea un vídeo sobre cómo configurar Microsoft 365 Business cuando no dispone de un local de Active Directory:
+Vea un vídeo sobre cómo configurar Microsoft 365 Business si no tiene un Active Directory local:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2?autoplay=false]
   
-Los pasos de configuración incluyen información de configuraciones que incluya Active Directory local. Si desea seguir teniendo acceso a dispositivos unido a un dominio, lea los siguientes artículos para dos forma distinta de la habilitación y completar los pasos antes de ejecutar al Asistente para instalación:
+Los pasos de configuración incluyen información para los programadores que incluyen Active Directory local. Si desea seguir teniendo acceso a los dispositivos Unidos a un dominio, lea los siguientes artículos para conocer de dos formas diferentes de habilitarlo y completar los pasos antes de ejecutar el Asistente para la instalación:
   
-- [Habilitar dispositivos de Windows 10 unido a un dominio administrado por Microsoft 365 empresarial](manage-windows-devices.md)
+- [Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 Business](manage-windows-devices.md)
     
-    -Este es el método recomendado.
+    -Ésta es la forma recomendada.
     
-- [Acceso a recursos desde un dispositivo unido a AD Azure en Microsoft 365 Business local](access-resources.md)
+- [Acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Business](access-resources.md)
     
-### <a name="step-1-personalize-sign-in"></a>Paso 1: Personalizar Inicio de sesión
+### <a name="step-1-personalize-sign-in"></a>Paso 1: personalizar el inicio de sesión
 
 1. Inicie sesión en [Microsoft 365 Business](https://portal.microsoft.com) usando las credenciales de administrador global. Elija el icono **Administrador** para ir al centro de administración. 
     
@@ -53,15 +55,15 @@ Los pasos de configuración incluyen información de configuraciones que incluya
     
 3. Escriba el nombre de dominio que desea utilizar (por ejemplo, contoso.com).
     
-    Vamos a escribir su dominio aunque haya comprobado durante el uso de Azure AD conectar, por ejemplo. Los dos pasos siguientes no se aplican a usted si usa Azure Connect de AD para comprobar su dominio.
+    Prosiga y escriba su dominio, aunque lo haya verificado al usar Azure AD Connect, por ejemplo. Los dos pasos siguientes no se aplican en caso de que haya usado Azure AD Connect para comprobar su dominio.
     
-4. Siga los pasos del Asistente para [crear registros DNS en cualquier proveedor de hospedaje de DNS para Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) que comprueba el que propietario del dominio. 
+4. Siga los pasos del Asistente para [crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) que compruebe que es el propietario del dominio. 
     
-    Puede ver un vídeo de ejemplo de [vídeo: el programa de instalación de Office 365 en el centro de administración nuevo](https://support.office.com/article/a8c2002a-34bc-4ab3-93d8-9b5156c48bf8). Tenga en cuenta que en este vídeo no incluye los pasos de protección de datos de negocio de Microsoft 365.
+    Puede ver un ejemplo de vídeo de [vídeo: configurar Office 365 en el nuevo centro de administración](https://support.office.com/article/a8c2002a-34bc-4ab3-93d8-9b5156c48bf8). Tenga en cuenta que este vídeo no incluye los pasos de protección de datos de Microsoft 365 Business.
     
     ![Screenshot of the Business Cloud Suite setup wizard.](media/3c4fd40c-2de1-4a87-8ee0-78d3928c7bb7.png)
   
-### <a name="step-2-add-users-and-assign-licenses"></a>Paso 2: Agregar usuarios y asignar licencias
+### <a name="step-2-add-users-and-assign-licenses"></a>Paso 2: agregar usuarios y asignar licencias
 
 1. Puede agregar usuarios aquí, o puede [agregar usuarios más adelante](add-users-m365b.md) en el centro de administración. 
     
@@ -73,36 +75,36 @@ Los pasos de configuración incluyen información de configuraciones que incluya
     
 4. Omita la migración de mensajes de correo electrónico y elija **Siguiente** en la página **Migrar los mensajes de correo electrónico**. 
     
-    Si está migrando desde otro proveedor de correo electrónico y desea copiar los datos más adelante, se puede [migrar correo y contactos a Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
+    Si va a cambiar de otro proveedor de correo electrónico y desea copiar los datos más adelante, puede migrar el [correo electrónico y los contactos a Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
     
     ![Screenshot of two new users added in the setup wizard](media/8f729967-5c65-4ceb-b737-18119db40564.png)
   
-### <a name="step-3-connect-your-domain"></a>Paso 3: Conectar su dominio
+### <a name="step-3-connect-your-domain"></a>Paso 3: conectar su dominio
 
 > [!NOTE]
-> Si decidió usar el dominio .onmicrosoft, o utiliza Azure Connect de AD, no verá este paso. 
+> Si decidió usar el dominio. en Microsoft o si usó Azure AD Connect, no verá este paso. 
   
 Para configurar servicios, es necesario actualizar algunos registros en su registrador de dominio o host DNS.
   
-1. Normalmente, el Asistente para la instalación detecta a su registrador de y le proporciona un vínculo a instrucciones paso a paso para actualizar sus registros NS en el sitio Web de registrador. Si no es así, [servidores de cambio de nombres para configurar Office 365 con cualquier registrador de dominios](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2).
+1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no es así, [cambie los servidores DNS para configurar Office 365 con cualquier registrador de dominios](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2).
     
 2. Se configurarán automáticamente el correo electrónico y otros servicios
     
-### <a name="step-4-manage-devices-and-work-files"></a>Paso 4: Administración de dispositivos y archivos de trabajo
+### <a name="step-4-manage-devices-and-work-files"></a>Paso 4: administrar dispositivos y archivos de trabajo
 
-1. En el de **proteger los archivos de trabajo en los dispositivos móviles de** página establezca **proteger los archivos de trabajo cuando los dispositivos están perdidos o robados** y **cómo los usuarios tener acceso a los archivos de Office en dispositivos móviles de administrar** la configuración de **activado**. También puede tener acceso a cada configuración subcaracterísticas haciendo clic en las comillas angulares junto a cada opción.
+1. En la página **Proteger los archivos de trabajo en sus dispositivos móviles** establezca las dos opciones **Proteger los archivos de trabajo cuando los dispositivos se extravían por pérdida o robo** y **Administrar la forma en la que los usuarios obtienen acceso a los archivos de Office desde dispositivos móviles** en **Activado**. También puede tener acceso a cada subconfiguración haciendo clic en las comillas angulares que hay junto a cada configuración.
   
-  Todos los archivos de trabajo de los usuarios con licencia de ahora están protegidos en iOS y dispositivos Android, tan pronto como [instalar aplicaciones de Office](set-up-mobile-devices.md) (y autenticarse con sus credenciales de Microsoft 365 empresarial). 
+  Todos los archivos de trabajo de los usuarios con licencia ahora están protegidos en dispositivos iOS y Android, en cuanto [instalan las aplicaciones de Office](set-up-mobile-devices.md) (y se autentican con sus credenciales de Microsoft 365 Business). 
   
   ![Screenshot of protect work files on your mobile devices page](media/3139a9aa-6228-4e74-8166-c6a886d7319f.PNG)
   
-2. En la página **configuración de dispositivo de establecer 10 de Windows** , establecer configuración de **Dispositivos de 10 Windows seguro** **activado**.
+2. En la página **establecer la configuración** de dispositivos de Windows 10, establezca la configuración **proteger dispositivos Windows 10** en **activada**.
   
-   También puede tener acceso a cada configuración subcaracterísticas haciendo clic en el botón de contenido adicional junto a ella.
+   También puede obtener acceso a cada subconfiguración haciendo clic en la comilla angular situada junto a ella.
   
-3. Establecer la configuración de **Instalar Office en Windows 10 dispositivos** en **Sí** si todos los usuarios tienen equipos Windows 10, y no de Office instala o instalaciones de Office de click-to-run. Si no es el caso, configure esta opción en **No**. Una vez preparados los equipos de usuario se puede [instalar automáticamente Office](auto-install-or-uninstall-office.md) más adelante desde el centro de administración. Para obtener instrucciones, vea [preparación de la instalación de cliente de Office](prepare-for-office-client-deployment.md).
+3. Establezca la configuración **Instalar Office en dispositivos Windows 10** en **Sí** si todos los usuarios tienen equipos Windows 10 y ninguna instalación de Office existente o de Hacer clic y ejecutar de Office. Si este no es el caso, establezca esta opción en **No**. También puede [instalar Office automáticamente](auto-install-or-uninstall-office.md) más adelante desde el centro de administración después de preparar los equipos de usuario. Para obtener instrucciones, consulte [preparar la instalación del cliente de Office](prepare-for-office-client-deployment.md).
   
-    Archivos de trabajo de los usuarios con licencia en los dispositivos de Windows 10 se deben proyectarse tan pronto como [unirse a su dispositivo Windows 10](set-up-windows-devices.md) a un dominio de negocio 365 Microsoft Azure AD o [instalar 10 de Windows en un equipo nuevo](https://support.office.com/article/c654bd23-d256-4ac7-8fba-0c993bf5a771.aspx) mientras participa en el Microsoft 365 simultáneamente Dominio de negocio Azure AD. 
+    Los archivos de trabajo de los usuarios con licencia en dispositivos con Windows 10 se proyectarán en cuanto se unan a un [dispositivo con Windows 10](set-up-windows-devices.md) a un dominio de Microsoft 365 Business Azure ad o [instalen Windows 10 en un equipo nuevo](https://support.office.com/article/c654bd23-d256-4ac7-8fba-0c993bf5a771.aspx) al mismo tiempo que se unen a Microsoft 365 Dominio empresarial de Azure AD. 
   
 4. Haga clic en **Siguiente** y ya ha terminado la configuración. 
   
@@ -112,16 +114,16 @@ Para configurar servicios, es necesario actualizar algunos registros en su regis
   
 ## <a name="additional-security-settings"></a>Opciones de configuración de seguridad adicionales
 
-Además de la seguridad y la configuración de cumplimiento en el Asistente para la instalación, puede configurar también la siguiente configuración adicional:
+Además de la configuración de seguridad y cumplimiento del Asistente para instalación, también puede configurar las siguientes opciones adicionales:
   
-- Configurar la protección frente a los datos adjuntos no seguros. **Una protección avanzada** (ATP) identifica contenido malintencionado y, a continuación, bloquea la entrega de los datos adjuntos no seguros, ayudar a proteger el equipo contra esquemas de suplantación de identidad y ransomware infección. Para activar la protección de datos adjuntos, vea [configurar las directivas de Office 365 ATP los datos adjuntos seguros](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775#setpolicy).
+- Configurar la protección contra datos adjuntos no seguros. **Protección contra amenazas avanzada** (ATP) identifica contenido malintencionado y, a continuación, bloquea la entrega de datos adjuntos no seguros, lo que ayuda a protegerte contra las tramas de suplantación de identidad Para activar la protección de datos adjuntos, consulte [configurar las directivas de datos adjuntos seguros de Office 365 ATP](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775#setpolicy).
     
-- Proteja el entorno cuando los usuarios, haga clic en vínculos malintencionados. ATP examina los vínculos en el correo electrónico en el momento en que un usuario hace clic en ellos. Si un vínculo no es seguro, el usuario se le advierte no para visitar el sitio o informado de que el sitio se ha bloqueado. Esto ayuda a proteger contra esquemas de suplantación de identidad. [Configurar las directivas de Office 365 ATP seguros vínculos](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) o [configurar las directivas de Office 365 ATP seguros vínculos](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
+- Proteja su entorno cuando los usuarios hacen clic en vínculos malintencionados. ATP examina los vínculos del correo electrónico en el momento en el que el usuario hace clic en ellos. Si un vínculo no es seguro, se advierte al usuario de que no va a visitar el sitio ni que se le informe de que se ha bloqueado el sitio. Esto ayuda a proteger contra las tramas de suplantación de identidad. [Configurar las directivas de vínculos seguros de office 365 ATP](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) o [configurar las directivas de vínculos seguros de atp de Office 365](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
     
-- Puede conservar todo el contenido buzón incluyendo los elementos eliminados colocando todo el buzón de un usuario en **suspensión de litigio**. Para obtener instrucciones, vea 
-- [Configurar la retención de correo electrónico con Exchange Online Archiving](security-features.md#set-up-email-retention-with-exchange-online-archiving).
+- Puede conservar todo el contenido del buzón, incluidos los elementos eliminados, al poner el buzón completo de un usuario en retención por **juicio**. Para obtener instrucciones, consulte 
+- [Configurar la retención de correo electrónico con el archivado de Exchange Online](security-features.md#set-up-email-retention-with-exchange-online-archiving).
     
-- Configurar personalizadas de **las directivas de retención**, por ejemplo, para conservar para un período de tiempo específico o eliminar permanentemente el contenido al final del período de retención. Puede habilitar las directivas de retención personalizada en el centro de cumplimiento, vaya a la **gobernanza de datos** y valores \> **retención**y, a continuación, siga los pasos descritos en el asistente. Para obtener más información, vea [información general de las directivas de retención](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
+- Configure **directivas de retención**personalizadas, por ejemplo, para preservar una cantidad de tiempo específica o eliminar contenido de forma permanente al final del período de retención. Puede habilitar las directivas de retención personalizadas en el centro de valores y cumplimiento, ir a **retención**de **gobierno** \> de datos y, a continuación, seguir los pasos del asistente. Para obtener más información, vea [información general sobre las directivas de retención](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
     
 ## <a name="next-steps"></a>Pasos siguientes
 

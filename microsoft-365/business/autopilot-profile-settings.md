@@ -4,14 +4,17 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ZTDProfileSettings
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -22,32 +25,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Perfiles de piloto automático le ayudarán a controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen predeterminada y valores de configuración opcionales como omitir la instalación de Cortana.
-ms.openlocfilehash: 5440286f1363780c87ab60514584c4addfeea0b2
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Los perfiles de autoPilot le ayudan a controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen opciones de configuración predeterminadas y opcionales, como omitir la instalación de Cortana.
+ms.openlocfilehash: d43a15e5f3dc83596b5c23dd0ceb416b24810298
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276949"
 ---
 # <a name="about-autopilot-profile-settings"></a>Información sobre la configuración de los perfiles de AutoPilot
 
-## <a name="autopilot-profile-settings"></a>Configuración del perfil de piloto automático
+## <a name="autopilot-profile-settings"></a>Configuración del perfil de autoPilot
 
-Puede controlar cómo se instala Windows en los dispositivos de usuario mediante el uso de los perfiles de piloto automático. Los perfiles contienen los valores siguientes.
+Puede controlar cómo se instala Windows en los dispositivos de usuario mediante el uso de los perfiles de piloto automático. Los perfiles contienen la siguiente configuración.
   
- **Piloto automático características predeterminadas de (obligatorio) que se establecen automáticamente:**
+ **Las características predeterminadas de autoPilot (necesarias) que se establecen automáticamente:**
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Omitir el registro OEM, OneDrive y Cortana  <br/> |Omite la instalación de aplicaciones de consumidor como Cortana y OneDrive personal. El usuario del dispositivo puede instalar más adelante, siempre y cuando éste sea un administrador local en el dispositivo. Debido a que el dispositivo estará administrado por Microsoft 365 empresarial, se omite el registro del fabricante original.  <br/> |
-|Inicie sesión en la experiencia con la marca de su empresa  <br/> |Si su compañía tiene una [personalización de marca de agregar su compañía a Office 365 inicio de sesión en la página](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), el usuario del dispositivo obtendrá esa experiencia al iniciar la sesión.  <br/> |
-|MDM la inscripción automática con cuentas AAD configuradas.  <br/> |La identidad del usuario estará administrada por Azure Active directory y los usuarios va a iniciar sesión en Windows y Office 365 con sus credenciales de Microsoft 365 empresarial.  <br/> |
+|Omitir Cortana, registro de OneDrive y OEM  <br/> |Omite la instalación de aplicaciones para consumidores, como Cortana y OneDrive personal. El usuario del dispositivo puede instalarlos más adelante, siempre que sea administrador local en el dispositivo. Se omite el registro original del fabricante porque el dispositivo se administrará con Microsoft 365 Business.  <br/> |
+|Experiencia de inicio de sesión con la marca de la compañía  <br/> |Si su compañía tiene una [página Agregar la personalización de marca de la compañía a Office 365](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), el usuario del dispositivo obtendrá esa experiencia al iniciar sesión.  <br/> |
+|Inscripción automática MDM con cuentas de AAD configuradas.  <br/> |Azure Active Directory administrará la identidad del usuario y los usuarios iniciarán sesión en Windows y Office 365 con sus credenciales de empresa de Microsoft 365.  <br/> |
    
  **Configuración opcional:**
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Omitir la configuración de privacidad (desactivada de forma predeterminada)  <br/> |Si esta opción está establecida en **On**, el usuario del dispositivo no verá el contrato de licencia para el dispositivo y Windows cuando navegará primero inicia sesión en.  <br/> |
-|No permitir que el usuario se convierta en el administrador local  <br/> |Si esta opción está establecida en **On**, el usuario del dispositivo no podrá instalar aplicaciones de personal, por ejemplo, Cortana.  <br/> |
+|Omitir la configuración de privacidad (desHabilitada de forma predeterminada)  <br/> |Si esta opción se establece **en activado**, el usuario del dispositivo no verá el contrato de licencia para el dispositivo y Windows cuando inicie sesión por primera vez.  <br/> |
+|No permitir que el usuario se convierta en el administrador local  <br/> |Si esta opción se establece **en activado**, el usuario del dispositivo no podrá instalar ninguna aplicación personal, como Cortana.  <br/> |
    

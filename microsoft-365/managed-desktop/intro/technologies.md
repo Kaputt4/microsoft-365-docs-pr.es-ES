@@ -1,54 +1,55 @@
 ---
-title: Tecnologías de escritorio administrado de Microsoft
-description: En este tema se enumera las tecnologías y aplicaciones que se usa en Microsoft Managed Desktop.
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+title: Tecnologías de escritorio administradas de Microsoft
+description: En este tema se enumeran las tecnologías y aplicaciones usadas en el escritorio administrado por Microsoft.
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 4b26ec88e1f4ca95fee6f7c4c927fc06cab32135
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 843a8cd066bbaf87a8b2b7cc74d8817207e47153
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283472"
 ---
-# <a name="microsoft-managed-desktop-technologies"></a>Tecnologías de escritorio administrado de Microsoft
+# <a name="microsoft-managed-desktop-technologies"></a>Tecnologías de escritorio administradas de Microsoft
 
-En este tema se enumera las tecnologías y aplicaciones que se usa en Microsoft Managed Desktop.
+En este tema se enumeran las tecnologías y aplicaciones usadas en el escritorio administrado por Microsoft.
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-Licencia de Microsoft 365 E5 (o equivalente) es necesario para el servicio de escritorio administrado de Microsoft. Los siguientes son todos los componentes que se incluyen en esta licencia y cómo Microsoft Desktop administrada usa cada componente con los dispositivos de escritorio administrado de Microsoft.  Funciones y responsabilidades para cada área específicas se detallan en todos los temas de escritorio administrado de Microsoft. 
+La licencia de Microsoft 365 Enterprise es necesaria para todos los usuarios de escritorio administrados por Microsoft. Para obtener más información sobre los requisitos de licencia para el servicio, consulte [requisitos previos para el escritorio administrado de Microsoft](../get-ready/prerequisites.md).
 
-Microsoft 365 E5 está formada por los componentes de 3: E5 de Office 365, Windows 10 Enterprise y E5, movilidad de la empresa + E5 de seguridad.  
+Los siguientes son todos los componentes que se incluyen en las licencias Enterprise necesarias y cómo el servicio usa cada componente con dispositivos de escritorio administrados por Microsoft. Las funciones y responsabilidades específicas para cada área se detallan en el tema escritorio administrado de Microsoft. 
 
-## <a name="office-365-e5"></a>E5 de Office 365
+## <a name="office-365-e3"></a>Office 365 E3
  |
  --- | ---
-Office 365 Standard Suite (64 bits) * | El conjunto estándar de las aplicaciones de Office se van a enviar con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype para la empresa, OneNote.<br><br>El 64 bits, haga clic para ejecutar las versiones completas de (C2R) de Microsoft Project y Microsoft Visio no se incluyen en el conjunto estándar de Office 365.  Sin embargo, ya que la instalación de estas aplicaciones dependen de la instalación estándar del conjunto de aplicaciones de Office, administrado de escritorio de Microsoft ha creado las implementaciones de Intune predeterminada y grupos de seguridad que va a usar el cliente para implementar estas aplicaciones para con licencia de los usuarios finales.  
-Aplicaciones de la tienda |    Microsoft Sway, Microsoft Teams, escritorio de Power BI (no Pro) no se entregan con dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
-Aplicaciones de Win32 |    Power BI Pro, cliente de protección de información de Azure y Microsoft Planner no se incluyen con el dispositivo y se pueden empaquetar para implementación por el cliente. 
-Aplicaciones Web |  Yammer, flujo de Office Online, Delve, StaffHub, PowerApps no se incluyen con el dispositivo. Los usuarios pueden tener acceso a la versión web de estas aplicaciones con un explorador.
-Skype para la nube en línea de negocio PBX | Esta característica está disponible a través de Office 365 E5. Microsoft Managed Desktop no va a configurar cualquier aspecto de este servicio
+Office 365 Standard Suite (64 bits) * | El conjunto de aplicaciones de Office estándar se entregará con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype empresarial, OneNote.<br><br>Las versiones completas de hacer clic y ejecutar de 64 bits (C2R) de Microsoft Project y Microsoft Visio no se incluyen en el conjunto de aplicaciones de Office 365 Standard.  Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación del conjunto de aplicaciones estándar de Office, el escritorio administrado de Microsoft ha creado implementaciones predeterminadas de Intune y grupos de seguridad que el cliente usará para implementar estas aplicaciones en usuarios finales con licencia.  
+Almacenar aplicaciones |    Microsoft Sway, Power BI Desktop no se incluyen en el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
+Aplicaciones Win32 |    Power BI Pro, el cliente de Azure Information Protection y Microsoft Planner no se incluyen en el dispositivo y pueden empaquetarse para su implementación por parte del cliente. 
+Aplicaciones web |  Yammer, Office Online, Delve, Flow, StaffHub, PowerApps no se incluyen en el dispositivo. Los usuarios pueden tener acceso a la versión Web de estas aplicaciones con un explorador.
+PBX en la nube para Skype empresarial online | Esta característica está disponible a través de Office 365. El escritorio administrado de Microsoft no configurará ningún aspecto de este servicio
 
 ## <a name="windows-10-enterprise-e5"></a>Windows 10 Enterprise E5
 
  |
  --- | ---
-Protección de credenciales |  Se proporcionan instrucciones y administran los distintos aspectos de la nube de esta característica escritorio administrado de Microsoft
-Protección del dispositivo (Control de aplicación de Windows Defender) | Microsoft Managed Desktop creará la directiva. Cliente administrará las firmas
-Administración de AppLocker |  Microsoft Managed Desktop creará la directiva. Cliente administrará las firmas
-Application Virtualization (App-V) |    Microsoft Desktop administrados no admite este tipo de implementación como no se admite en Intune.
-Virtualización de la experiencia del usuario (UE-V) | Esto no se utiliza con los dispositivos de escritorio administrado de Microsoft administrado
-Experiencia del usuario administrado  | No se utiliza con los dispositivos de escritorio administrado de Microsoft administrado. MDM se usa como una solución de administración de dispositivos
-Protección contra amenazas avanzada de Windows Defender |   Esto se usa en Microsoft Desktop administrado para administrar directivas de seguridad de dispositivo. 
+Credential Guard |  Microsoft le proporcionará instrucciones y administrará los aspectos de la nube de esta característica.
+Protección de dispositivos (control de aplicaciones de Windows Defender) | Microsoft manAged Desktop creará la Directiva. <br><br>El cliente administrará las firmas.
+Administración de AppLocker |  Microsoft creará la Directiva. <br><br>El cliente administrará las firmas.
+Virtualización de aplicaciones (App-V) |    El escritorio administrado de Microsoft no admite este tipo de implementación ya que no es compatible con Intune.
+Virtualización de la experiencia del usuario (UE-V) | No se usa con los dispositivos administrados por escritorio administrado por Microsoft.
+Experiencia de usuario administrada  | No se usa con los dispositivos administrados por escritorio administrado por Microsoft. MDM se usa como solución para la administración de dispositivos.
+Protección contra amenazas avanzada de Windows Defender |   Lo usa Microsoft manAged Desktop para administrar las directivas de seguridad de dispositivos. 
 
-## <a name="enterprise-mobility--security"></a>Enterprise Mobility + Security 
+## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
  |
  --- | ---
-Movilidad de la empresa + E3 de seguridad<br>P2 Premium de Azure Active Directory |    Todos los aspectos de la movilidad de la empresa + seguridad E3 y AADP pueden usarse para administrar dispositivos de MDM
-Microsoft Cloud App Security |  Esto es una característica opcional que los clientes pueden usar con el servicio de escritorio administrado de Microsoft.
-P2 de protección de información de Azure  |Esto es una característica opcional que los clientes pueden usar con el servicio de escritorio administrado de Microsoft.
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Se pueden usar todos los aspectos de Enterprise Mobility + Security E3 y AADP para administrar dispositivos MDM.
+Microsoft Cloud App Security |  Se trata de una característica opcional que los clientes pueden usar con el servicio de escritorio administrado de Microsoft.
+Azure Information Protection P2  |Se trata de una característica opcional que los clientes pueden usar con el servicio de escritorio administrado de Microsoft.

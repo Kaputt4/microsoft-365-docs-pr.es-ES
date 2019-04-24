@@ -1,5 +1,5 @@
 ---
-title: Automatizar la pertenencia a grupo y de la licencia para el entorno de prueba de Microsoft 365 Enterprise
+title: Automatizar la concesión de licencias y la pertenencia a grupos para el entorno de prueba de Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,92 +8,92 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Configurar licencias basadas en grupos y pertenencia a grupos dinámicos en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 45a78af202f2d9ab029683aae4d95ed9a3370b08
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Configure las licencias basadas en grupos y la pertenencia a grupos dinámica en su entorno de prueba de Microsoft 365 Enterprise.
+ms.openlocfilehash: 8ced249ee56e15c057001af60d790a8a4315dd17
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277251"
 ---
-# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatizar la pertenencia a grupo y de la licencia para el entorno de prueba de Microsoft 365 Enterprise
+# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatizar la concesión de licencias y la pertenencia a grupos para el entorno de prueba de Microsoft 365 Enterprise
 
-Basadas en grupos de licencias automáticamente asignan o quitan las licencias para una cuenta de usuario en función de la pertenencia a grupos. Pertenencia al grupo dinámico agrega o quita a miembros a un grupo en función de las propiedades de cuenta de usuario, como el departamento o país. En este artículo le guiará por una demostración de ambos tipos en el entorno de prueba de Microsoft 365 Enterprise.
+Las licencias basadas en grupos asignan o eliminan automáticamente licencias de una cuenta de usuario en función de la pertenencia a grupos. La pertenencia al grupo dinámico agrega o quita miembros de un grupo en función de las propiedades de la cuenta de usuario, como departamento o país. Este artículo le guiará por el proceso de demostración tanto en el entorno de prueba de Microsoft 365 Enterprise.
 
-Hay dos fases para configurar la pertenencia a grupos de licencias automático y dinámico en su entorno de prueba de Microsoft 365 Enterprise:
+Hay dos fases para configurar la licencia automática y la pertenencia a grupos dinámica en el entorno de prueba de Microsoft 365 Enterprise:
 
-1. Crear el entorno de prueba de Microsoft 365 Enterprise.
-2. Configurar y probar la pertenencia al grupo dinámico y licencias automática.
+1. Cree el entorno de prueba de Microsoft 365 Enterprise.
+2. Configurar y probar la pertenencia a grupos dinámica y las licencias automáticas.
 
 ![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Generar el entorno de prueba de Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 Enterprise
 
-Si desea probar licencias automatizada y la pertenencia a grupos en una forma sencilla con los requisitos mínimos, siga las instrucciones de [configuración básica ligero](lightweight-base-configuration-microsoft-365-enterprise.md).
+Si solo quiere probar la concesión de licencias automatizadas y la pertenencia a grupos de una manera ligera con los requisitos mínimos, siga las instrucciones de la [configuración básica ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si desea probar licencias automatizada y la pertenencia a grupos en una empresa simulada, siga las instrucciones que aparecen en la [autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
+Si desea probar la concesión de licencias automatizadas y la pertenencia a grupos en una empresa simulada, siga las instrucciones de la [autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Las pruebas automatizadas de licencias y pertenencia a grupos no requiere el entorno de prueba simulado enterprise, que incluye una intranet simulada conectada a Internet y sincronización de Active directory para un bosque de Windows Server AD. Se proporciona aquí como una opción para que pueda probar licencias automatizada y la pertenencia a grupos y experimentar con él en un entorno que representa una organización típica. 
+> La prueba de la concesión de licencias automatizada y la pertenencia a grupos no requiere el entorno de prueba empresarial simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda probar la concesión de licencias automatizada y la pertenencia a grupos y experimentar con ella en un entorno que representa una organización típica. 
   
-## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Fase 2: Configurar y probar la pertenencia al grupo dinámico y licencias automática
+## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Fase 2: configurar y probar la pertenencia a grupos dinámica y las licencias automáticas
 
-En primer lugar, cree un nuevo grupo de ventas y agregar una regla de pertenencia a grupo dinámico para que las cuentas de usuario con el departamento de ventas se agregan automáticamente al grupo de ventas.
+En primer lugar, cree un nuevo grupo de ventas y agregue una regla de pertenencia a grupos dinámicos para que las cuentas de usuario con el Departamento establecido en ventas se agreguen automáticamente al grupo ventas.
 
-1. Uso de una instancia privada de su explorador de Internet, inicie sesión en el portal de Office en [https://office.com](https://office.com) con la cuenta de administrador global de su suscripción de prueba de Office 365 E5.
-2. En una ficha independiente del explorador, vaya al portal de Azure en [https://portal.azure.com](https://portal.azure.com).
+1. Con una instancia privada del explorador de Internet, inicie sesión en el portal de Office [https://office.com](https://office.com) en con la cuenta de administrador global de la suscripción de prueba de Office 365 E5.
+2. En una pestaña independiente del explorador, vaya a Azure portal en [https://portal.azure.com](https://portal.azure.com).
 3. En Azure Portal, haga clic en **Azure Active Directory > Usuarios y grupos > Todos los grupos**.
-4. En el servidor blade de **todos los grupos** , haga clic en **nuevo grupo**.
+4. En la hoja **todos los grupos** , haga clic en **nuevo grupo**.
 5. En **tipo de grupo**, seleccione **Office 365**.
-6. En **nombre de grupo**, escriba **ventas**.
-7. En **tipo de pertenencia**, seleccione **usuario dinámico** .
+6. En **nombre de grupo**, escriba **sales**.
+7. En **tipo**de pertenencia, seleccione **usuario dinámico** .
 8. Haga clic en **Agregar una consulta dinámica**.
 9. En **Add users where** (Agregar usuarios donde), seleccione **departamento**.
 10. En el siguiente campo, seleccione **Es igual a**.
-11. En el siguiente campo, escriba **ventas**.
+11. En el campo NEXT, escriba **sales**.
 12. Haga clic en **Agregar consulta** luego en **Crear**.
-13. Cierre los módulos de **grupo** y **grupos a todos los grupos** .
+13. Cierre los blades **Grupo** y **grupos-todos los grupos** .
 
-A continuación, configure el grupo de ventas para que los miembros se les asigna automáticamente Office 365 E5 y movilidad en la empresa + licencias E5 de seguridad.
+A continuación, configure el grupo ventas para que a los miembros se les asigne automáticamente licencias de Office 365 E5 y Enterprise Mobility + Security E5.
 
-1. En el módulo de **información general** para Azure Active Directory, haga clic en **licencias > todos los productos de**.
+1. En la hoja de **información general** de Azure Active Directory, haga clic en **licencias > todos los productos**.
 2. En la lista, seleccione **Enterprise Mobility + Security E5** y **Office 365 Enterprise E5** y, después, haga clic en **+ Asignar**.
-3. En el servidor blade **Asignar licencia** , haga clic en **usuarios y grupos**.
-4. En la lista de grupos, seleccione el grupo de **ventas** .
+3. En la hoja **asignar licencia** , haga clic en **usuarios y grupos**.
+4. En la lista de grupos, seleccione el grupo **ventas** .
 5. Haga clic en **Seleccionar** y, después, en **Asignar**.
 6. Cierre la pestaña Azure Portal del explorador.
 
-A continuación, se prueba la pertenencia al grupo dinámico y licencias automática en la cuenta de usuario 4. 
+A continuación, pruebe la pertenencia a grupos dinámica y las licencias automáticas en la cuenta de usuario 4. 
 
-1. En la ficha **Página principal de Microsoft Office** en el explorador, haga clic en **Admin**.
-2. En la ficha del **Centro de administración de Office** , haga clic en **usuarios activos**.
+1. Desde la pestaña **Página principal de Microsoft Office** del explorador, haga clic en **Administración**.
+2. En la pestaña **centro de administración de 365 de Microsoft** , haga clic en **usuarios activos**.
 3. En la página **usuarios activos** , haga clic en la cuenta de **usuario 4** .
-4. En el panel **de usuario 4** , haga clic en **Editar** para **licencias de producto**.
-5. En el panel de **licencias de producto** , activar la **movilidad de la empresa + E5 de seguridad** y licencias de **Office 365 Enterprise E5** desactivada y, a continuación, haga clic en **Guardar > Cerrar**.
-6. En las propiedades de la cuenta de usuario 4, compruebe que se han asignado ninguna licencia de producto y no hay ningún pertenencias a grupo.
-7. Para **obtener información de contacto**, haga clic en **Editar** .
-8. En el panel de **información de contacto de editar** , haga clic en **información de contacto**.
-9. En el campo **departamento** , escriba **ventas**y, a continuación, haga clic en **Guardar > Cerrar**.
-10. Espere unos minutos y, a continuación, haga clic periódicamente en el icono de actualización en la parte superior derecha del panel de la cuenta de usuario 4. 
+4. En el panel **usuario 4** , haga clic en **Editar** para **licencias de productos**.
+5. En el **Panel licencias de productos** , active las licencias de **Enterprise Mobility + Security e5** y **Office 365 Enterprise E5** y, después, haga clic en **Guardar > cerrar**.
+6. En las propiedades de la cuenta usuario 4, compruebe que no se haya asignado ninguna licencia de producto y que no hay pertenencias a grupos.
+7. Haga clic en **Editar** para obtener **información de contacto**.
+8. En el panel **editar información de contacto** , haga clic en **información de contacto**.
+9. En el campo **Departamento** , escriba **ventas**y, a continuación, haga clic en **Guardar > cerrar**.
+10. Espere unos minutos y, a continuación, haga clic periódicamente en el icono de actualización en la esquina superior derecha del panel de la cuenta de usuario 4. 
 
-En el tiempo debería ver el:
+En el tiempo debería ver lo siguiente:
 
-- Propiedad **pertenencias a grupo** actualizado con el grupo de **ventas** .
-- Propiedad de **licencias de producto** que se ha actualizado con las licencias de **movilidad en la empresa + seguridad E5** y **Office 365 Enterprise E5** .
+- Pertenencias a **grupos** (propiedad) actualizada con el grupo **ventas** .
+- Propiedad de **licencias de producto** actualizada con las licencias de **Enterprise Mobility + Security e5** y **Office 365 Enterprise E5** .
 
-En la fase de identidad para obtener información y vínculos para implementar la pertenencia a grupos dinámicos y licencias automática en producción, vea estos pasos:
+Consulte estos pasos en la fase de identidad para obtener información y vínculos para implementar la pertenencia a grupos dinámica y las licencias automáticas en producción:
 
-- [Configurar las licencias automáticas](identity-group-based-licensing.md)
-- [Configurar pertenencia a grupo dinámico](identity-automatic-group-membership.md)
+- [Configurar las licencias automáticas](identity-self-service-group-management.md#identity-group-license)
+- [Configurar la pertenencia a grupos dinámica](identity-self-service-group-management.md#identity-dyn-groups)
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Explorar características de [identidad](m365-enterprise-test-lab-guides.md#identity) adicionales y funcionalidades en su entorno de prueba.
 
