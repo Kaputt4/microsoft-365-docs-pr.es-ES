@@ -1,42 +1,44 @@
 ---
-title: Obtener soporte técnico para el escritorio administrado por Microsoft
+title: Obtener soporte técnico para el escritorio administrado de Microsoft
 description: ''
-keywords: Servicio de escritorio administrado de Microsoft, Microsoft 365, documentación
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/28/2018
-ms.openlocfilehash: fb92b7971a35e6fca093f9911fbf480f1b26e6e8
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 3e48fdfc9708f0a1eb3b1cb0e5deb64d1a5ca748
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278236"
 ---
-# <a name="getting-help-for-end-users"></a><span data-ttu-id="f7317-103">Obtener ayuda para los usuarios finales</span><span class="sxs-lookup"><span data-stu-id="f7317-103">Getting help for end users</span></span>
+# <a name="getting-help-for-end-users"></a><span data-ttu-id="62035-103">Obtener ayuda para usuarios finales</span><span class="sxs-lookup"><span data-stu-id="62035-103">Getting help for end users</span></span>
 
-<span data-ttu-id="f7317-p101">Hay dos formas de que los usuarios de su organización pueden obtener ayuda con sus dispositivos de escritorio administrado de Microsoft: aplicación **Obtener ayuda** o soporte técnico de teléfono. Tenga en cuenta que los dispositivos que se encuentran en la llamada de prueba están fuera del ámbito de estas opciones de soporte técnico del usuario final.</span><span class="sxs-lookup"><span data-stu-id="f7317-p101">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Note that devices residing in the test ring are out of scope for these end user support options.</span></span> 
+<span data-ttu-id="62035-104">Hay dos formas en que los usuarios de su organización pueden obtener ayuda con sus dispositivos de escritorio administrados por Microsoft: obtener aplicación de **ayuda** o soporte telefónico.</span><span class="sxs-lookup"><span data-stu-id="62035-104">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support.</span></span> <span data-ttu-id="62035-105">Tenga en cuenta que los dispositivos que residen en el grupo de prueba están fuera del ámbito de estas opciones de compatibilidad con el usuario final.</span><span class="sxs-lookup"><span data-stu-id="62035-105">Note that devices residing in the test group are out of scope for these end user support options.</span></span> 
 
-## <a name="get-help-app"></a><span data-ttu-id="f7317-106">Obtener ayuda de aplicación</span><span class="sxs-lookup"><span data-stu-id="f7317-106">Get Help app</span></span>
+## <a name="get-help-app"></a><span data-ttu-id="62035-106">Obtener aplicación de ayuda</span><span class="sxs-lookup"><span data-stu-id="62035-106">Get Help app</span></span>
 
-<span data-ttu-id="f7317-107">El método preferido para proporcionar soporte técnico a los usuarios es **Obtener ayuda**, una interfaz fácil de usar integrada en el dispositivo del usuario final.</span><span class="sxs-lookup"><span data-stu-id="f7317-107">The preferred method for providing support to your users is **Get Help**, an easy to use interface built into the end user device.</span></span>  
+<span data-ttu-id="62035-107">El método preferido para proporcionar soporte a los usuarios es **obtener ayuda**, una interfaz fácil de usar integrada en el dispositivo de usuario final.</span><span class="sxs-lookup"><span data-stu-id="62035-107">The preferred method for providing support to your users is **Get Help**, an easy to use interface built into the end user device.</span></span>  
 
 ![Obtener ayuda](images/get-help.png)
 
-<span data-ttu-id="f7317-109">Esto es una aplicación que se instala en todos los dispositivos de escritorio administrado de Microsoft y está anclada a la barra de tareas.</span><span class="sxs-lookup"><span data-stu-id="f7317-109">This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
+<span data-ttu-id="62035-109">Se trata de una aplicación que está instalada en todos los dispositivos de escritorio administrados por Microsoft y que está anclada a la barra de tareas.</span><span class="sxs-lookup"><span data-stu-id="62035-109">This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
 
-- <span data-ttu-id="f7317-110">Los usuarios finales pueden solicitar una devolución de llamada a un número de teléfono proporcionado o chat en línea con un representante de servicio.</span><span class="sxs-lookup"><span data-stu-id="f7317-110">End users can request a call back to a provided phone number, or chat online with a service rep.</span></span>
-- <span data-ttu-id="f7317-111">Redirige las solicitudes que se encuentran fuera del ámbito de soporte técnico de escritorio administrado de Microsoft para el departamento de soporte de TI local mediante una llamada telefónica.</span><span class="sxs-lookup"><span data-stu-id="f7317-111">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>  
+- <span data-ttu-id="62035-110">Los usuarios finales pueden solicitar una devolución de llamada a un número de teléfono proporcionado o chatear en línea con un representante de servicio.</span><span class="sxs-lookup"><span data-stu-id="62035-110">End users can request a call back to a provided phone number, or chat online with a service rep.</span></span>
+- <span data-ttu-id="62035-111">Las solicitudes que se encuentran fuera del ámbito de soporte técnico de escritorio administrado de Microsoft se redirigen al Departamento de soporte técnico local de TI mediante llamadas telefónicas.</span><span class="sxs-lookup"><span data-stu-id="62035-111">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>  
 
-## <a name="phone-support"></a><span data-ttu-id="f7317-112">Soporte técnico por teléfono </span><span class="sxs-lookup"><span data-stu-id="f7317-112">Phone support</span></span>
+## <a name="phone-support"></a><span data-ttu-id="62035-112">Soporte técnico por teléfono </span><span class="sxs-lookup"><span data-stu-id="62035-112">Phone support</span></span>
 
-<span data-ttu-id="f7317-p102">Los usuarios finales con los dispositivos de escritorio administrado de Microsoft también tienen acceso a los números de teléfono gratuito que éstos puedan llamar. Esto supone que se utilizará al obtener ayuda no está disponible. Por ejemplo, si éste no se pueden iniciar sesión en el dispositivo o el dispositivo se rompe. Estos son los números de teléfono de soporte técnico de teléfono:</span><span class="sxs-lookup"><span data-stu-id="f7317-p102">End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:</span></span>
+<span data-ttu-id="62035-113">Los usuarios finales con dispositivos de escritorio administrados por Microsoft también tienen acceso a los números de teléfono gratuitos a los que pueden llamar.</span><span class="sxs-lookup"><span data-stu-id="62035-113">End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call.</span></span> <span data-ttu-id="62035-114">Esto está pensado para usarse cuando la ayuda de Get no está disponible.</span><span class="sxs-lookup"><span data-stu-id="62035-114">This is meant to be used when Get Help isn’t available.</span></span> <span data-ttu-id="62035-115">Por ejemplo, si no pueden iniciar sesión en el dispositivo o el dispositivo está roto.</span><span class="sxs-lookup"><span data-stu-id="62035-115">For example, if they can’t sign in to the device, or the device is broken.</span></span> <span data-ttu-id="62035-116">Estos son los números de teléfono de soporte telefónico:</span><span class="sxs-lookup"><span data-stu-id="62035-116">Here are the phone numbers for phone support:</span></span>
  
-- <span data-ttu-id="f7317-117">Estados Unidos: +1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="f7317-117">United States: +1 855 425 0216</span></span>
-- <span data-ttu-id="f7317-118">Reino Unido: + 44 2076 601135</span><span class="sxs-lookup"><span data-stu-id="f7317-118">United Kingdom: +44 2076 601135</span></span>
-- <span data-ttu-id="f7317-119">Australia: +61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="f7317-119">Australia: +61 180 037 0619</span></span>
+
+- <span data-ttu-id="62035-117">Estados Unidos & Canadá (excepto Quebec): + 1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="62035-117">United States & Canada (excluding Quebec): +1 855 425 0216</span></span>
+- <span data-ttu-id="62035-118">Reino Unido: + 44 800 026 0698</span><span class="sxs-lookup"><span data-stu-id="62035-118">United Kingdom: +44 800 026 0698</span></span>
+- <span data-ttu-id="62035-119">Australia: + 61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="62035-119">Australia: +61 180 037 0619</span></span>
 
 
-## <a name="additional-resources"></a><span data-ttu-id="f7317-120">Otros recursos</span><span class="sxs-lookup"><span data-stu-id="f7317-120">Additional resources</span></span>
-- <span data-ttu-id="f7317-121">[Admitir la administración para escritorio administrado de Microsoft](admin-support.md).</span><span class="sxs-lookup"><span data-stu-id="f7317-121">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
-- <span data-ttu-id="f7317-122">[Soporte técnico para escritorio administrado de Microsoft](../service-description/support.md).</span><span class="sxs-lookup"><span data-stu-id="f7317-122">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="62035-120">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="62035-120">Additional resources</span></span>
+- <span data-ttu-id="62035-121">[Soporte de administración para escritorio administrado de Microsoft](admin-support.md).</span><span class="sxs-lookup"><span data-stu-id="62035-121">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
+- <span data-ttu-id="62035-122">[Soporte para escritorio administrado de Microsoft](../service-description/support.md).</span><span class="sxs-lookup"><span data-stu-id="62035-122">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>

@@ -5,16 +5,16 @@ author: CelesteDG
 localization_priority: Normal
 ms.author: celested
 ms.topic: hub-page
-keywords: Microsoft 365, documentación de Microsoft 365, Microsoft 365 para negocios, Microsoft 365 para empresas, Microsoft 365 para la educación, empresa, negocio, educación, documentos, documentación
+keywords: Microsoft 365, documentación de Microsoft 365, Microsoft 365 para empresas, Microsoft 365 para la empresa, Microsoft 365 para educación, empresa, empresa, educación, documentos, documentación
 title: Documentación de Microsoft 365
-description: Encuentre documentación y recursos para Microsoft 365, una solución completa e inteligente que incluye Office 365, Windows 10 y Enterprise Mobility + Security y con la que podrá hacer que todo el mundo colabore de forma segura.
+description: Encuentre documentación y recursos para Microsoft 365--una solución completa e inteligente, que incluye Office 365, Windows 10 y Enterprise Mobility + Security, que permite a todo el mundo ser creativo y trabajar juntos, de forma segura.
 ms.date: 07/01/2018
-ms.openlocfilehash: b2c796fc35859128d4a65ea3587db082f8264abd
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 255d60ba415b6af7435aeadbb0ee74c8bc760908
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289021"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -26,7 +26,7 @@ ms.locfileid: "26871171"
                     <li>
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsW">
-                            <li class="fullSpan intro"><a href="https://www.microsoft.com/microsoft-365/default.aspx" data-raw-source="[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)">Microsoft 365</a> es una solución completa e inteligente que incluye Office 365, Windows 10 y Enterprise Mobility + Security y con la que podrá hacer que todo el mundo colabore de forma segura.
+                            <li class="fullSpan intro"><a href="https://www.microsoft.com/microsoft-365/default.aspx" data-raw-source="[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)">Microsoft 365</a> es una solución completa e inteligente que incluye Office 365, Windows 10 y Enterprise Mobility + Security, que permite a todo el mundo ser creativo y trabajar juntos, de forma segura.
                             </li>
                             <li>
                                 <a href="https://docs.microsoft.com/microsoft-365/enterprise/" target="blank">
@@ -35,13 +35,13 @@ ms.locfileid: "26871171"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-enterprise.svg" alt="Microsoft 365 Enterprise documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Enterprise-400x140.svg" alt="Microsoft 365 Enterprise documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Enterprise</h3>
-                                                    <p>Microsoft 365 Enterprise está diseñado para organizaciones grandes e incluye Office 365 Enterprise, Windows 10 Enterprise y Enterprise Mobility + Security.</p>
+                                                    <p>Microsoft 365 Enterprise está diseñado para grandes organizaciones e integra Office 365 Enterprise, Windows 10 Enterprise y Enterprise Mobility + Security.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -55,13 +55,13 @@ ms.locfileid: "26871171"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-business.svg" alt="Microsoft 365 Business documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Business-400x140.svg" alt="Microsoft 365 Business documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Empresa</h3>
-                                                    <p>Microsoft 365 Empresa es una solución nueva diseñada para pequeñas y medianas empresas (pymes) en la que se combinan las mejores capacidades de productividad y colaboración de Office 365 con soluciones de seguridad y administración de dispositivos para proteger los datos empresariales.</p>
+                                                    <p>Microsoft 365 Business es una nueva solución diseñada para pequeñas y medianas empresas (PYMES), que reúne las mejores capacidades de productividad y colaboración de Office 365 con soluciones de seguridad y administración de dispositivos para salvaguardar los datos profesionales.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -75,33 +75,13 @@ ms.locfileid: "26871171"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-education.svg" alt="Microsoft 365 Education documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Education-400x140.svg" alt="Microsoft 365 Education documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Educación</h3>
-                                                    <p>Microsoft 365 Educación permite a los profesores dar rienda suelta a la creatividad, fomentar el trabajo en equipo y proporcionar una experiencia segura y sencilla en una única solución económica diseñada para el ámbito educativo.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/microsoft-365/managed-desktop/index" target="blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/365-md.svg" alt="Microsoft 365 Managed Desktop documentation and resources" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <br />
-                                                    <h3>Escritorio administrado de Microsoft 365</h3>
-                                                    <p>Microsoft 365 Managed Desktop combina Microsoft 365 E5 con dispositivo-as-a-service (compras, configuración, mantenimiento) y TI-as-a-service (implementación, monitoreo, reporting, servicio de asistencia).</p>
+                                                    <p>Microsoft 365 Education permite a los educadores desbloquear la creatividad, fomentar el trabajo en equipo y proporcionar una experiencia sencilla y segura en una sola solución asequible diseñada para el ámbito educativo.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -10,17 +10,17 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Documentación y recursos de Microsoft 365 Enterprise
-ms.openlocfilehash: 0e758884c063aaa82b5c7fc55051925376f8688b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 38d349fb17303ac9e9979ae9a58682e01578b70a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26871164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283482"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Documentación y recursos de Microsoft 365 Enterprise</h1>
-        <P>Obtenga información sobre cómo planear, implementar y usar Microsoft Office 365, 10 de Windows y movilidad en la empresa + seguridad de forma conjunta en su organización. Estos servicios proporcionan una infraestructura integrada y segura que permite el trabajo en equipo y desbloquea creatividad.</p>
+        <P>Obtenga información sobre cómo planear, implementar y usar Microsoft Office 365, Windows 10 y Enterprise Mobility + Security juntos en su organización. Estos servicios proporcionan una infraestructura integrada y segura que permite el trabajo en equipo y el desbloqueo de la creatividad.</p>
         <P></p>
         <ul class="pivots">
             <li>
@@ -42,7 +42,7 @@ ms.locfileid: "26871164"
                                                 <h3>Explorar</h3>
                                                 <P><a href="microsoft-365-overview.md" target="_blank">Información general</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">Modelos de arquitectura</a></p>
-                                                <P><a href="http://Microsoft365.com/it" target="_blank">Microsoft 365 para TI</a></p>
+                                                <P><a href="http://Microsoft365.com/it" target="_blank">Microsoft 365 para ti</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -77,10 +77,10 @@ ms.locfileid: "26871164"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Administrar la seguridad &amp; cumplimiento</h3>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Soluciones de cumplimiento</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Seguridad de Office 365 &amp; cumplimiento</a></p>
-                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identidad &amp; acceso de dispositivos</a></p>
+                                                <h3>Administración del &amp; cumplimiento de seguridad</h3>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Soluciones de cumplimiento normativo</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Cumplimiento de seguridad &amp; de Office 365</a></p>
+                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Acceso &amp; al dispositivo de identidad</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">ATP de Windows Defender</a></p>
                                             </div>
                                         </div>
@@ -97,10 +97,11 @@ ms.locfileid: "26871164"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Proporcione formación a los usuarios</h3>
+                                                <h3>Entrenar a los usuarios de & de administración</h3>
+                                                <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp; aplicación de Portal de empresa</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Aplicación del &amp; portal de empresa de Intune</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -135,11 +136,11 @@ ms.locfileid: "26871164"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Administrar seguridad + de movilidad en la empresa</h3>
+                                                <h3>Administrar la seguridad de Enterprise Mobility + Security</h3>
                                                 <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a></p>
-                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Protección contra amenazas avanzadas Azure</a></p>
+                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Protección contra amenazas avanzada de Azure</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -159,7 +160,7 @@ ms.locfileid: "26871164"
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Desarrollar para Microsoft 365</h3>
+                                                        <h3>Desarrollo para Microsoft 365</h3>
                                                         <P><a href="https://developer.microsoft.com/office" target="_blank">Centro de desarrollo de Office 365</a></p>
                                                         <P><a href="https://developer.microsoft.com/windows/enterprise" target="_blank">Centro de desarrollo de Windows</a></p>
                                                         <P><a href="https://developer.microsoft.com/graph" target="_blank">Microsoft Graph</a></p>
@@ -178,8 +179,8 @@ ms.locfileid: "26871164"
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Otros productos de Microsoft 365</h3>
-                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 Empresa</a></p>
+                                                        <h3>Otros productos de 365 de Microsoft</h3>
+                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 empresa</a></p>
                                                         <P><a href="https://docs.microsoft.com/education/" target="_blank">Microsoft 365 Educación</a></p>
                                                     </div>
                                                 </div>
