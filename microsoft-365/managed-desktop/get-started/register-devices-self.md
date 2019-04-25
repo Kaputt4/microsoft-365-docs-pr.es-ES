@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 217418cfce66baa02b30ae7d8a01b938a1f2366e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
+ms.sourcegitcommit: cf77e4bf69e6ae144563f1e764ea3437ed6fc836
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289142"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33296170"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>Registrar dispositivos en el escritorio administrado por Microsoft
 
@@ -59,7 +59,7 @@ Como alternativa, puede seguir estos pasos en un dispositivo nuevo (antes de pas
 >No vuelva a encender el dispositivo de destino hasta que haya completado el registro para él. 
 
 >[!NOTE]
->Para su comodidad, puede descargar una [plantilla](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.xlsx) para este archivo CSV.
+>Para su comodidad, puede descargar una [plantilla](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx) para este archivo CSV.
 
 El archivo tiene que incluir **exactamente los mismos encabezados de columna** que el ejemplo uno (fabricante, modelo, etc.), pero sus propios datos para las otras filas. Si usa la plantilla, ábrala en una herramienta de edición de texto como el Bloc de notas y considere la posibilidad de dejar sólo todos los datos de la fila 1, introduciendo solo los datos en las filas 2 y anteriores. 
     
@@ -100,7 +100,7 @@ Puede supervisar el progreso del registro de dispositivos en la Página principa
 | Registro pendiente | Aún no se ha realizado el registro. Vuelva a comProbarla más tarde. |
 | Error en el registro | No se pudo completar el registro. Consulte [solución de problemas](register-devices-self.md#troubleshooting) para obtener más información. |
 | Listo para el usuario | El registro se realizó correctamente y el dispositivo ya está listo para entregarse al usuario final. El escritorio administrado de Microsoft los guiará a través de la primera configuración, por lo que no es necesario que realice ninguna preparación adicional. |
-| Active | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Esto también indica que los usuarios usan el dispositivo con regularidad. |
+| Activos | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Esto también indica que los usuarios usan el dispositivo con regularidad. |
 | Inactivo | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  | 
 
 
