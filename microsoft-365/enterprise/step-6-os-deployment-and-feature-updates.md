@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre las opciones de implementación del sistema operativo y actualizaciones de características.
-ms.openlocfilehash: 6aae2fb39937bec1eebfdc11e403f3835cb895cd
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: b860a56ba2ed163311a8a92d8dd408dcb8983821
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290110"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Paso 6: Implementación del sistema operativo y actualizaciones de características
-
-Obtenga información sobre las opciones y cómo preparar la implementación del sistema operativo mediante enfoques de actualización y creación de imágenes con System Center Configuration Manager o Microsoft Deployment Toolkit.
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
@@ -30,13 +28,13 @@ Obtenga información sobre las opciones y cómo preparar la implementación del 
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
 <td><p><strong>Paso 6: Implementación del sistema operativo y actualizaciones de características</strong></p>
-<p>La implementación basada en secuencias de tareas se usa para automatizar la implementación por fases a gran escala de instalaciones sin sistema operativo, restauración del equipo y sustitución del equipo. Las secuencias de tareas de actualización también le ayudarán a estar al día con actualizaciones semestrales principales. Y Windows Autopilot es una incorporación reciente que moderniza el proceso de adquisición de nuevos equipos.</p></td>
+<p>La implementación basada en secuencias de tareas se usa para automatizar la implementación por fases a gran escala de instalaciones completas, la restauración del equipo y la sustitución del equipo. Las secuencias de tareas de actualización también le ayudarán a estar al día con actualizaciones semestrales principales. Y Windows Autopilot es una incorporación reciente que moderniza el proceso de adquisición de nuevos equipos.</p></td>
 <td><a href="https://aka.ms/ddev6" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->La implementación del sistema operativo y la actualización de las características es el sexto paso del ciclo de proceso de implementación recomendado, que abarca la implementación de Windows 10, las actualizaciones y las actualizaciones de características. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorios modernos](https://aka.ms/HowToShift).
+>La implementación del sistema operativo y la actualización de las características es el sexto paso del ciclo de proceso de implementación recomendado, que abarca la implementación de Windows 10, las actualizaciones y las actualizaciones de características. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
 Si ha seguido el ciclo del proceso de implementación hasta ahora, ha completado, al menos parcialmente, los pasos de preparación de los dispositivo y las aplicaciones, ha preparado la infraestructura, ha configurado y recopilado los paquetes de aplicación, tiene un plan para migrar los archivos del usuario y establecer la configuración predeterminada, además de planes para retener los controles de seguridad existentes y posiblemente implementar otros nuevos.
@@ -109,7 +107,7 @@ Con independencia del tipo de implementación elegido, deberá asegurarse de que
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 
-Una opción nueva de Windows 10 es la configuración de equipos nuevos como parte del ciclo de actualización de hardware mediante Windows Autopilot. Aquí puede trabajar con proveedores de hardware compatibles para personalizar la experiencia de configuración de Windows predeterminada, por ejemplo, mediante la eliminación de las opciones que se presentan a los usuarios, como los contratos de licencias o la configuración de telemetría.
+Una opción nueva de Windows 10 es la configuración de equipos nuevos como parte del ciclo de actualización de hardware mediante Windows Autopilot. Aquí puede trabajar con proveedores de hardware compatibles para personalizar la experiencia de configuración de Windows predeterminada (por ejemplo, mediante la eliminación de las opciones que se presentan a los usuarios, como los contratos de licencias o la configuración de telemetría).
 
 Después, cuando un usuario inicia sesión en el equipo durante la instalación con sus credenciales de Azure AD, el dispositivo se inscribe en Microsoft Intune, que se puede encargar del proceso de implementación y aplicar las aplicaciones, las actualizaciones de software, la configuración y las directivas de cumplimiento. Windows Autopilot también puede evitar que el usuario acceda a la primera sesión hasta que se complete el aprovisionamiento.
 
@@ -117,9 +115,21 @@ Después, cuando un usuario inicia sesión en el equipo durante la instalación 
 
 [Requisitos previos de Windows Autopilot](https://docs.microsoft.com/es-ES/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
-## <a name="next-step"></a>Siguiente paso 
+## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update para empresas
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[Paso 7: Windows y Office como servicio](https://aka.ms/mdd7)
+Windows Update para empresas es un servicio gratuito que permite a los profesionales de TI mantener los dispositivos con Windows 10 siempre actualizados conectando directamente los dispositivos con el servicio de Windows Update. Windows Update para empresas puede configurarse a través de la directiva de grupo o mediante soluciones de MDM como Microsoft Intune y permite a los profesionales de TI crear [anillos de implementación](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-deployment-rings-windows-10-updates) para validar las nuevas compilaciones. Está integrado en las herramientas de administración existentes como Windows Server Update Services (WSUS), System Center Configuration Manager (rama actual) y Microsoft Intune. Además, Windows Update para empresas es compatible con la entrega de punto a punto para optimizar la eficacia del ancho de banda y reducir la congestión en la red.
+
+Para obtener más información sobre Windows Update para empresas, consulte la siguiente documentación:
+
+- [Implementar actualizaciones mediante Windows Update para empresas](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-manage-updates-wufb)
+- [Configurar Windows Update para empresas](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-configure-wufb)
+- [Integrar Windows Update para empresas con las herramientas de administración existentes](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-integrate-wufb)
+- [Usar la directiva de grupo para configurar Windows Update para empresas](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-wufb-group-policy)
+- [Usar Microsoft Intune para configurar Windows Update para empresas](https://docs.microsoft.com/es-ES/intune/windows-update-for-business-configure)
+
+## <a name="next-step"></a>Paso siguiente 
+
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Paso 7: Mantenimiento de Windows y Office](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>Paso anterior
 
