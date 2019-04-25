@@ -12,17 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Obtenga información sobre cómo preparar a los usuarios finales para el escritorio moderno con el uso de comunicación y el aprendizaje.
-ms.openlocfilehash: 7737828600a9708b0b422a1fada6e0296de67f0f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Obtenga información sobre cómo preparar a los usuarios finales para Windows 10 y Office 365 ProPlus con el uso de comunicación y aprendizaje.
+ms.openlocfilehash: fb0dc2dfc571d61c9d480204d0e3e12c58cf3aca
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289938"
 ---
 # <a name="step-8-user-communications-and-training"></a>Paso 8: Comunicación con los usuarios y aprendizaje
-
-Informe y prepare a sus usuarios para la experiencia de un entorno de trabajo moderno con Office 365, Windows 10 y los nuevos controles de seguridad y cumplimiento con Azure Active Directory y más.
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
@@ -31,21 +29,21 @@ Informe y prepare a sus usuarios para la experiencia de un entorno de trabajo mo
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Paso 8: Comunicación con los usuarios y aprendizaje</strong></p>
 <p>Asegúrese de que los usuarios están informados sobre las nuevas experiencias y las nuevas formas de trabajar al cambiar los equipos a Windows 10 y Office 365 ProPlus. Obtenga información sobre cómo aprovechar la asistencia para la adopción por parte de los usuarios con Microsoft FastTrack, los materiales de aprendizaje y las plantillas de comunicación, así como nuevas formas para supervisar la aceptación y el uso por parte de los usuarios.</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->La comunicación y el aprendizaje son el octavo paso del ciclo de proceso de implementación recomendado, que abarca consejos y recomendaciones para informar y preparar a los usuarios. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorios modernos](https://aka.ms/HowToShift).
+>La comunicación con los usuarios y el aprendizaje es el octavo paso de nuestro ciclo de proceso de implementación y abarca consejos y recomendaciones para informar y preparar a los usuarios. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
-El truco consiste en determinar cómo introducir actualizaciones, puede que algunos usuarios teman que su productividad se vea afectada o cambios en su ritmo de trabajo si tienen que aprender algo nuevo.
+Informar y preparar a sus usuarios para la experiencia de un entorno de trabajo moderno con Office 365, Windows 10 y los nuevos controles de seguridad y cumplimiento con Azure Active Directory es fundamental para impulsar su adopción. El truco consiste en determinar cómo introducir actualizaciones, puede que algunos usuarios teman que su productividad se vea afectada o cambios en su ritmo de trabajo si tienen que aprender algo nuevo.
 
 La buena noticia es que si se muda de Windows 7 y Office 2010 u Office 2013, habrá muchos usuarios familiarizados con Windows 10 y versiones más recientes de Office ejecutándose en sus dispositivos personales y todo esto le ayudará a reducir el impacto del cambio.
 
 ## <a name="getting-ready-for-new-experiences"></a>Prepárese para nuevas experiencias
 
-Empezando con Office, si implementa Office 365 ProPlus por primera vez, puede comunicar los beneficios de iniciar sesión en las aplicaciones de Office y guardar archivos en ubicaciones de OneDrive o SharePoint para facilitar el uso compartido, reducir la ramificación de archivos y permitir coautoría en tiempo real.
+Empezando con Office, si implementa Office 365 ProPlus por primera vez, puede comunicar los beneficios de iniciar sesión en las aplicaciones de Office y guardar archivos en ubicaciones de OneDrive o SharePoint para facilitar el uso compartido, reducir la ramificación de archivos y permitir la coautoría en tiempo real.
 
 Hay disponibles comunicaciones detalladas y plantillas de formación para estas aplicaciones y también para otras locales o de navegador, como Teams y Planner.
 
@@ -91,7 +89,7 @@ Es importante tener miembros comprometidos en la fase piloto inicial para asegur
 
 Cuando se sienta cómodo con la primera fase, puede elegir un conjunto mayor de usuarios para la segunda fase piloto.  Esta debería comprender un grupo variado y representativo con distintos roles de usuario, tipos de dispositivos, aplicaciones de Windows y complementos de Office. Los datos que aporten estos grupos se usarán con el servicio de análisis para elegir el objetivo de los inicios de la fase 3, la implementación más amplia.
 
-Recuerde que todos los equipos de esta fase y las futuras deben iniciar sesión con el servicio de análisis para que pueda recoger la telemetría sobre el estado del dispositivo y la aplicación, además del ahorro de banda ancha de la optimización de distribución y el uso del inicio de sesión Windows Hello.
+Recuerde que todos los equipos de esta fase y las futuras deben iniciar sesión con el servicio de análisis para que pueda recoger los datos de diagnóstico sobre el estado del dispositivo y la aplicación, además del ahorro de banda ancha de la optimización de distribución y el uso del inicio de sesión Windows Hello.
 
 Para esta fase es especialmente importante comunicar los cambios y ayudar a los usuarios a aprovechar la ventaja de las nuevas capacidades. Los usuarios pueden priorizar o ignorar correos u otras comunicaciones de TI, de modo que ayuda reunirse con la administración para que ayude a comunicar los cambios y la adopción de nuevas herramientas y tecnología.
 
@@ -123,14 +121,14 @@ Conforme se expanda el piloto deberá publicar preguntas más frecuentes y conte
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>Fase 3 en adelante: Implementación de producción general 
 
-Para cuando alcance las fases de implementación de producción general, habrá refinado sus herramientas relativas a los procesos, la comunicación, la formación y el autoservicio. Ahora puede usar los datos recogidos mediante telemetría para marcar como objetivo más y más equipos.
+Para cuando alcance las fases de implementación de producción general, habrá refinado sus herramientas relativas a los procesos, la comunicación, la formación y el autoservicio. Ahora puede usar los datos de diagnóstico recopilados más equipos de destino.
 
 Lleve a cabo la implementación a una velocidad a la que pueda hacerse cargo su departamento de TI, servicio de asistencia, usuarios y capacidad de red. Siempre puede volver al paso 2 del proceso de implementación para optimizar su red más con caché de punto a punto, LEDBAT y otras técnicas que facilitarán la transferencia de datos relacionados con la implementación.
 
-Además de la telemetría que controla con las herramientas de análisis, también puede controlar el uso del servicio de Office 365 y Microsoft 365 de forma granular con informes de uso detallados de uso en el centro de administración y usando el panel de administrador con Power BI. Estas herramientas son útiles para ayudar a crear y rastrear metas mientras implementa nuevas herramientas para trabajar en equipo, como Microsoft Teams, o nuevas formas de compartir archivos, como OneDrive.
+Además de los datos de diagnósticos que supervisar a través de las herramientas de análisis, también puede supervisar uso del servicio de Office 365 y Microsoft 365 de forma detallada con informes detallados de uso en la carga de trabajo en el centro de administración y el uso de los paneles de administración a través de Power BI. Estos son excelentes herramientas para ayudarle a configurar y controlar los objetivos mientras distribuye nuevas herramientas de trabajo conjunto, como Microsoft Teams, o nuevas formas de compartir archivos, como OneDrive.
 
 La aceptación y adopción de nueva tecnología seguirá adelante incluso cuando todos los equipos de la organización tengan Windows 10 y Office 365 ProPlus instalados. Y los usuarios no tienen por qué cambiar la forma en la que trabajan, a menos que se tome el tiempo para informarles y darles formación acerca de las nuevas capacidades. Por último, con los nuevos modelos de mantenimiento, proporcionar nuevas capacidades en un calendario semianual continuado para Windows y, de forma opcional, en un calendario mensual para Office, la comunicación será continua.
 
 ## <a name="previous-step"></a>Paso anterior 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[Paso 7: Windows y Office como servicio](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Paso 7: Mantenimiento de Windows y Office](https://aka.ms/mdd7)

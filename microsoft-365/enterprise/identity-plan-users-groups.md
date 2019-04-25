@@ -3,22 +3,22 @@ title: 'Paso 1: Planear los usuarios y grupos'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 02/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Planee el conjunto de usuarios y grupos que funcionarán para su organización.
-ms.openlocfilehash: 8062cc2b681f0ae45a8114a6d827f5d1ece2fe3e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f8b3df73518e33c7750c0b72b2cb9f36bc8e9745
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283807"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>Paso 1: Planear los usuarios y grupos
 
@@ -39,10 +39,10 @@ Para crear una infraestructura de identidades, designará un proveedor de identi
 
 Cuando su organización adopte Microsoft 365 Enterprise, el proveedor de identidades principal será:
 
-- **Windows Server Active Directory (AD)**, un proveedor de identidades de intranet hospedado en equipos que ejecutan Windows Server. Esta opción suelen usarla las organizaciones que tienen un proveedor de identidades local existente.
+- **Active Directory Domain Services (AD DS)**, un proveedor de identidades de intranet hospedado en equipos que ejecutan Windows Server. Normalmente lo usan organizaciones que tienen un proveedor de identidades local existente.
 - **Azure Active Directory (Azure AD)**, una identidad como servicio (IDaaS) basada en la nube que ofrece una amplia variedad de funciones para administrar y proteger su entorno. Esta opción suelen usarla las organizaciones que no tienen una infraestructura local existente.
 
-Si su organización ya cuenta con un proveedor de identidades local, necesita sincronizar las cuentas de usuario y grupos de Windows Server AD con Azure AD para ofrecer un acceso más fluido a los servicios basados en la nube de Microsoft 365 Enterprise. También puede usar Azure AD para crear y administrar grupos que solo existan en la nube de Microsoft.
+Si su organización ya cuenta con un proveedor de identidades local, necesita sincronizar las cuentas de usuario y grupos de Active Directory Domain Services (AD DS) con Azure AD para ofrecer un acceso más fluido a los servicios basados en la nube de Microsoft 365 Enterprise. También puede usar Azure AD para crear y administrar grupos que solo existan en la nube de Microsoft.
 
 Cuando tenga los usuarios y grupos en Azure AD, puede:
 
@@ -63,11 +63,11 @@ Cuente el número de tipos de usuario de su organización. ¿Cuáles son las agr
 
 Además, algunos servicios en la nube se pueden compartir con usuarios externos a la organización sin cuentas de usuario. También necesitará identificar estos grupos de usuarios.
 
-## <a name="plan-for-windows-server-ad-and-azure-ad-groups"></a>Planear grupos de Azure AD y Windows Server AD
+## <a name="plan-for-ad-ds-and-azure-ad-groups"></a>Planear grupos de AD DS y Azure AD
 
 Puede usar grupos en Azure AD para distintas finalidades que simplifiquen la administración de su entorno de nube. Por ejemplo, para grupos de Azure AD, puede:
 
-- Usar licencias basadas en grupos para asignar licencias de Office 365 y Enterprise Mobility + Security (EMS) a sus cuentas de usuario automáticamente en cuanto se agreguen a Azure AD o se sincronicen desde Windows Server AD. 
+- Use licencias basadas en grupos para asignar licencias de Office 365 y Enterprise Mobility + Security (EMS) a sus cuentas de usuario automáticamente en cuanto se agreguen a Azure AD o se sincronicen desde AD DS. 
 - Agregar cuentas de usuario a grupos específicos dinámicamente basándose en los atributos de cuenta de usuario, como el departamento.  
 - Aprovisionar automáticamente usuarios para aplicaciones de software como servicio (SaaS) y proteger el acceso a esas aplicaciones con autenticación multifactor y otras reglas de acceso condicional.
 - Aprovisionar permisos y niveles de acceso para sitios de grupo de SharePoint Online. Los grupos de Azure AD también se pueden usar con directivas de Azure Information Protection con ámbito para proteger archivos con cifrado y permisos. 
@@ -81,10 +81,11 @@ Cuando complete este paso, tendrá:
 
 Como punto de control provisional, puede ver los [criterios de salida](identity-exit-criteria.md#crit-identity-user-groups) de este paso.
 
+Una vez que se creen los usuarios y los grupos de Azure AD, podrá empezar a asignar licencias y usar Exchange Online. Para implementar Exchange Online a los usuarios, vea [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md) (Implementación de Exchange Online para Microsoft 365 Enterprise).
 
 ## <a name="next-step"></a>Paso siguiente
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Proteger las cuentas de administrador global](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step2.png)| [Protección de identidades con privilegios](identity-designate-protect-admin-accounts.md) |
 

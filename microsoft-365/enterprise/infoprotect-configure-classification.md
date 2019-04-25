@@ -3,22 +3,22 @@ title: 'Paso 2: Configurar la clasificación para el entorno'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure varias formas de clasificar los datos de su organización.
-ms.openlocfilehash: bee0885eb3f8899560532895d1558723b281ab02
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ca64b98bceb6f969adc964e93a6a1cc872763199
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286979"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Paso 2: Configurar la clasificación para el entorno
 
@@ -28,30 +28,64 @@ ms.locfileid: "26871357"
 
 En este paso, trabajará con los equipos legales y de cumplimiento para definir un esquema de clasificación para los datos de su organización.
 
-## <a name="microsoft-classifications"></a>Clasificaciones de Microsoft
+## <a name="microsoft-365-classification-types"></a>Tipos de clasificación de Microsoft 365
 
-Microsoft 365 incluye tres tipos de clasificación:
+Microsoft 365 incluye cuatro tipos de clasificación:
 
-- Tipos de información confidencial de Office 365
-- Etiquetas de Office 365
+- Tipos de información confidencial
+- Etiquetas de retención
+- Etiquetas de confidencialidad
 - Etiquetas y protección de Azure Information Protection
 
-### <a name="sensitive-information-types-for-office-365"></a>Tipos de información confidencial de Office 365
+### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
-Los tipos de información confidencial de Office 365 definen cómo los procesos automatizados (por ejemplo, la búsqueda) reconocen tipos de información específicos (por ejemplo, los números de servicios de salud y de tarjetas de crédito). Los tipos de información confidencial se usan para buscar información confidencial y aplicar reglas y directivas de prevención de pérdida de datos para proteger estos datos. Para obtener más información, vea [Información general sobre directivas de prevención de pérdida de datos](https://support.office.com/article/overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e). Por ejemplo, los tipos de información confidencial son especialmente útiles para cumplir los requisitos de cumplimiento y normativas, por ejemplo, para el Reglamento general de protección de datos (RGPD).
+Los tipos de información confidencial de Microsoft 365 definen cómo procesos automatizados como la búsqueda reconocen tipos específicos de información. Estos incluyen datos confidenciales de empleados o clientes, como números de tarjeta de crédito y de servicio de salud. Se usan los tipos de información confidencial para buscar información confidencial y aplicar reglas y directivas de prevención de pérdida de datos (DLP) para proteger estos datos. Para obtener más información, vea [what a DLP policy contains](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies#what-a-dlp-policy-contains) (qué contiene una directiva DLP). 
 
-### <a name="office-365-labels"></a>Etiquetas de Office 365
-Puede usar etiquetas de Office 365 para datos personales y para archivos de secretos empresariales muy regulados almacenados en SharePoint Online y OneDrive para la Empresa. Para obtener más información, incluido cómo crearlas, vea [Información general de etiquetas](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30).
+Los tipos de información confidencial son especialmente útiles para cumplir los requisitos de cumplimiento y normativa, como en el caso del Reglamento general de protección de datos (RGPD).
 
-Si decide usar etiquetas de Office 365, debe configurar al menos una para cada nivel de protección. Por ejemplo, cree tres etiquetas para:
+### <a name="retention-labels"></a>Etiquetas de retención
+
+Parte de la definición de una estrategia de gobierno de datos es decidir durante cuánto tiempo deben conservarse determinados tipos de documentos o documentos con contenido específico de acuerdo con las directivas de la organización y los reglamentos regionales. Por ejemplo, algunos tipos de documentos se deben conservar durante un tiempo determinado y eliminarse después, mientras que otros deben conservarse indefinidamente.
+
+En el caso de los documentos almacenados en Microsoft 365, puede definir y aplicar etiquetas de retención a los documentos y datos almacenados en el correo electrónico de Exchange, SharePoint Online, OneDrive para la Empresa, y mensajes de canal y de chat de Teams. Para obtener más información, incluyendo cómo crearlos, vea [Introducción a las etiquetas de retención](https://docs.microsoft.com/office365/securitycompliance/labels).
+
+Si usa etiquetas de retención, debe configurar una etiqueta para cada categoría de archivo que deba tener una directiva de retención aplicada. En la etiqueta de retención, puede especificar:
+
+- Un conjunto de descriptores para los archivos (por ejemplo, por departamento de empresa, categoría de archivo o reglamento).
+
+- La configuración de retención de los archivos que tengan la etiqueta de retención asociada, como el tiempo de conservación y el comportamiento tras haberse superado el tiempo de conservación.
+
+También puede aplicar una etiqueta de retención a los archivos automáticamente si configura un sitio de SharePoint Online para aplicar una etiqueta de retención predeterminada a todos los documentos nuevos en el sitio. 
+
+Para obtener más información, vea [Introducción a las etiquetas de retención](https://docs.microsoft.com/office365/securitycompliance/labels).
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+Parte de la protección y la implementación de seguridad para determinados tipos de documentos o documentos con contenido específico consiste en marcarlos con una etiqueta para que pueda aplicar la seguridad adicional. Con las etiquetas de confidencialidad de Microsoft 365, puede:
+
+- Aplicar la configuración de protección como el cifrado, los permisos o la agregación de una marca de agua.
+
+- Impedir que salga contenido confidencial de su organización en dispositivos con Windows mediante Endpoint Protection de Microsoft Intune. 
+
+- Usar Endpoint Protection de Windows Information Protection (WIP) para impedir que el contenido se copie en una aplicación de terceros, como Twitter o Gmail, o se copie en unidades de almacenamiento extraíbles, como una unidad USB.
+
+- Proteger el contenido en los servicios y aplicaciones de terceros con Microsoft Cloud App Security. 
+
+- Clasificar contenido sin usar configuración de protección.
+
+Si usa etiquetas de confidencialidad, debe configurar una etiqueta para cada nivel de protección de información y seguridad. Por ejemplo, cree tres etiquetas de confidencialidad para:
 
 - Línea base
+
 - Confidencial
+
 - Extremadamente regulado
+
+Para obtener más información, vea [Información general de etiquetas de confidencialidad](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
 
 ### <a name="azure-information-protection-labels-and-protection"></a>Etiquetas y protección de Azure Information Protection
 
-Puede usar etiquetas de Azure Information Protection para clasificar y, opcionalmente, proteger correos electrónicos y documentos de su organización. Estas etiquetas se pueden aplicar a documentos almacenados fuera de Office 365. Los administradores que definen reglas y condiciones pueden aplicar automáticamente estas etiquetas, los usuarios las pueden aplicar manualmente o se puede usar una combinación donde los usuarios reciben recomendaciones.
+Puede usar etiquetas de Azure Information Protection para clasificar correos electrónicos y documentos de su organización, y opcionalmente protegerlos. Estas etiquetas se pueden aplicar a los documentos almacenados fuera de Microsoft 365. Las etiquetas pueden aplicarse automáticamente por administradores que definen reglas y condiciones, manualmente por los usuarios o mediante una combinación en la que los usuarios reciben recomendaciones.
 
 Para planear e implementar etiquetas y protección de Azure Information Protection, siga este procedimiento:
 
@@ -60,7 +94,11 @@ Para planear e implementar etiquetas y protección de Azure Information Protecti
 
 Para obtener más información, vea la [biblioteca de documentación de Azure Information Protection](https://docs.microsoft.com/information-protection/).
 
-## <a name="classification-for-gdpr"></a>Clasificación para el RGPD
+Las etiquetas de confidencialidad funcionan a la perfección con las etiquetas existentes de Azure Information Protection. Por ejemplo, puede mantener sus etiquetas existentes de Azure Information Protection y las etiquetas que se aplican a los documentos y correos electrónicos.
+
+Si tiene etiquetas de confidencialidad y de Azure Information Protection, debe [migrar las etiquetas de Azure Information Protection a las etiquetas de confidencialidad](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels).
+
+## <a name="example-classification-for-gdpr"></a>Ejemplo: clasificación para el RGPD
 
 Para obtener un esquema de clasificación de ejemplo que incluye datos personales para el RGPD, consulte [Diseño de un esquema de clasificación de datos personales](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
 

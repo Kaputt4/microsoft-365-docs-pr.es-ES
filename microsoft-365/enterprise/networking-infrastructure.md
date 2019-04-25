@@ -9,22 +9,22 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Los pasos para implementar la infraestructura de red de Microsoft 365 Enterprise.
-ms.openlocfilehash: d575d8c3156ac1fc1a8a2bca96c875d4587ebf05
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9b8c23d543eca97147801d70e42de7105266c52d
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291193"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>Fase 1: Infraestructura de red para Microsoft 365 Enterprise
 
 ![](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-En Microsoft 365 Enterprise, se incluyen Office 365 y Windows Intune como parte de Enterprise Mobility + Security (EMS). Estos dos servicios basados en la nube usan la seguridad, el rendimiento y la confiabilidad de las conexiones de dispositivos cliente por Internet o con circuitos dedicados. Para hospedar estos servicios y ofrecerlos a clientes de todo el mundo, Microsoft diseñó una infraestructura de red que da prioridad al rendimiento y la integración. 
+Microsoft 365 Enterprise incluye Office 365 y Microsoft Intune como parte de Enterprise Management + Security (EMS). Ambos servicios en la nube se basan en la seguridad, rendimiento y confiabilidad de conexiones de los dispositivos del cliente a través de Internet o circuitos dedicados. Para hospedar estos servicios y hacer que estén disponibles para los clientes de todo el mundo, Microsoft ha diseñado una infraestructura de red que destaca por el rendimiento e integración. 
 
 En esta fase, se describen las consideraciones clave para crear una conexión estable a los servicios en la nube de Microsoft 365 Enterprise. Para obtener información general, vea [Principios de redes de Office 365](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694).
 

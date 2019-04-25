@@ -2,21 +2,21 @@
 title: Solicitudes del titular de los datos de Microsoft Dynamics 365 para el RGPD
 description: Guía sobre cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes poseedores de datos a encontrar y actuar en datos personales con el fin de responder a las solicitudes de derechos del titular de los datos.
 keywords: Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: bcarter
+ms.date: 04/10/2019
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: e1c79ae466264e302b282244f477dafcc6b49afe
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5a7f347dc9b26b54cf6bc1fd3a6bdb55d46fe63
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285219"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Solicitudes del titular de los datos de Microsoft Dynamics 365 para el RGPD
 
@@ -78,7 +78,7 @@ En los artículos siguientes, encontrará información útil para prepararse y r
 
 Dynamics 365 es un servicio en línea que ofrece varias funciones de procesamiento de datos como software como servicio (SaaS). Como tal, Dynamics 365 ofrece una amplia variedad de funciones cuya intención es procesar una colección de datos diversa, que podrían variar en naturaleza, finalidad u otros atributos específicos, como datos de ventas, transacciones, operaciones financieras, información de recursos humanos, etc. En virtud de esta diversidad, Dynamics 365 ofrece distintos formularios, campos, esquemas, puntos de conexión y lógicas para procesar datos de cliente, que también se reflejan en las distintas formas en que podrían procesarse las solicitudes de derechos del titular de los datos en cada aplicación. Cuando las aplicaciones de Dynamics 365 ofrecen distintas formas de procesar solicitudes de derechos del titular de los datos específicas, las indicaremos en esta guía señalando las descripciones técnicas ofrecidas por cada aplicación.
 
-### <a name="microsoft-dynamics-365"></a>Microsoft Dynamics 365
+### <a name="dynamics-365"></a>Dynamics 365
 #### <a name="finding-customer-data"></a>Buscar los datos de cliente
 
 El primer paso para responder a una solicitud de derechos del titular de los datos es buscar e identificar los datos de cliente que sean el objeto de la solicitud.
@@ -101,6 +101,8 @@ En Dynamics 365 for Marketing, tiene las siguientes funciones adicionales:
 
 2.  Use las vistas de información a los contactos y objetos de ejecución de marketing para identificar puntos de datos adicionales que puedan contener datos de cliente.
 
+Dynamics 365 Customer Service Insights ofrece funcionalidades para responder a solicitudes de copias de datos personales, eliminar datos personales y encontrar datos personales que son objeto de solicitudes de detección de interesados. Para obtener más información, vea [Overview of GDPR compliance for Dynamics 365 Customer Service Insights](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary) (Introducción al cumplimiento del RGPD para Dynamics 365 Customer Service Insights).
+
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 Finance and Operations*** le ofrece distintas formas de buscar datos de clientes. Como administrador del espacio empresarial, puede realizar las acciones siguientes para buscar datos de clientes:
 
 -   Organice sus datos de clientes de forma que pueda descubrir rápidamente datos personales (para hacerlo, vea [cómo clasificar un inventario de datos](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory)).
@@ -114,6 +116,7 @@ En Dynamics 365 for Marketing, tiene las siguientes funciones adicionales:
 -   Cree un formulario personalizado que busque y exporte datos personales.
 
 -   Cree un sitio web o portal externo que permita a un cliente autenticado ver sus datos personales.
+
 
 ***Dynamics for Business Central*** ofrece diversas formas de buscar datos de clientes. Para más información, vea [Buscar, filtrar y ordenar datos](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters).
 

@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo usa Contoso las características de seguridad de Microsoft 365 Enterprise.
-ms.openlocfilehash: 2cbabb04c79816684f4c566b92003bb64471d22b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 55ee8ff88490a82a9438b076bcebfab976f8baf6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289038"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Resumen de seguridad de Microsoft 365 Enterprise para Contoso Corporation
 
@@ -40,7 +40,7 @@ Contoso siguió los pasos siguientes para preparar la seguridad de su implementa
 
 1. Limitación de las cuentas de administrador para la nube
 
-   Contoso realizó una revisión exhaustiva de las cuentas de administrador de Windows Server AD existentes y estableció una serie de grupos y cuentas de administrador de la nube.
+   Contoso realizó una revisión exhaustiva de las cuentas de administrador de Active Directory Domain Services (AD DS) existentes y estableció una serie de grupos y cuentas de administrador de la nube.
 
 2. Análisis de clasificación de datos en tres niveles
 
@@ -62,7 +62,7 @@ De acuerdo con los procedimientos recomendados de seguridad y los requisitos de 
 
   Los administradores de seguridad de Contoso han asignado roles de administrador inferiores a las cuentas de acuerdo con la responsabilidad y puesto laboral de esa persona de TI.
 
-  Para obtener más información, vea [Información sobre los roles de administrador de Office 365](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+  Para obtener más información, vea [Información sobre los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 - MFA para todas las cuentas de usuario
 
@@ -81,7 +81,7 @@ De acuerdo con los procedimientos recomendados de seguridad y los requisitos de 
 
 - Credential Guard de Windows Defender
 
-  Para bloquear los ataques dirigidos y el malware que se ejecuta en el sistema operativo con privilegios administrativos, Contoso ha habilitado [Credential Guard de Windows Defender](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) a través de la directiva de grupo de Windows Server AD.
+  Para bloquear los ataques dirigidos y el malware que se ejecuta en el sistema operativo con privilegios administrativos, Contoso ha habilitado [Credential Guard de Windows Defender](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) a través de la directiva de grupo de AD DS.
 
 ## <a name="threat-protection"></a>Protección contra amenazas
 
@@ -95,9 +95,9 @@ De acuerdo con los procedimientos recomendados de seguridad y los requisitos de 
 
   Contoso también ha habilitado el registro de auditoría del buzón de correo para determinar quién ha iniciado sesión en los buzones de usuario, quién ha enviado mensajes y otras actividades realizadas por el propietario del buzón, un usuario delegado o un administrador.
 
-- Supervisión y prevención de ataques con Inteligencia sobre amenazas de Office 365
+- Supervisión y prevención de ataques con la investigación y respuesta ante amenazas de Office 365
 
-  Contoso usa [Inteligencia sobre amenazas de Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) para proteger a los usuarios de Office 365 facilitando la identificación y resolución de los ataques, y para evitar ataques en el futuro.
+  Contoso usa la [investigación y respuesta ante amenazas de Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) para proteger a los usuarios de Office 365 facilitando la identificación y resolución de los ataques, y para evitar ataques en el futuro.
 
 - Protección contra ataques más complejos con Advanced Threat Analytics
 

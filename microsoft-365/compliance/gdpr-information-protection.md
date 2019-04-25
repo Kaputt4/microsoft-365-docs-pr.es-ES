@@ -4,19 +4,21 @@ description: Protección de la información para el Reglamento general de protec
 keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: 371efa4e1c3e3375cd43dcc661d8aa549788baba
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 94ec13437ff297381b4ea8aca0e9370f295f249e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285192"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protección de la información para el RGPD con funciones de Microsoft 365
 
@@ -49,8 +51,7 @@ Microsoft ofrece una configuración recomendada que puede usar como punto de ini
 
 Protección contra amenazas se basa en los servicios de Microsoft 365. Aquí encontrará algunos recursos para empezar:
 - [Plan de desarrollo de seguridad de Office 365: Prioridades más importantes para los primeros 30 días, 90 días y posteriores](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352). En este plan de desarrollo, se incluyen recomendaciones para implementar funciones. 
-- 
-  [Protección contra amenazas avanzada Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Obtenga información sobre acciones de protección que puede realizar en el Centro de seguridad y cumplimiento de Office 365.
+- [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58) (Protección contra amenazas en Office 365). Obtenga información acerca de acciones de protección que puede realizar en el Centro de seguridad de Microsoft 365.
 - [Protección contra amenazas avanzada Windows](https://docs.microsoft.com/windows/security/threat-protection/). Obtenga más información sobre Protección contra amenazas avanzada de Windows Defender y otras funciones en Windows 10.
 
 

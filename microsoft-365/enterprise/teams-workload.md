@@ -8,18 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se detalla el proceso de planeación, implementación y aumento del valor de Microsoft Teams en Microsoft 365 Enterprise en toda la organización.
-ms.openlocfilehash: 25329c7024f267983a83c4e719f18df6ad613bf5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291664"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Implementar Microsoft Teams para Microsoft 365 Enterprise
+
+*Esta carga de trabajo está incluida en las versiones E3 y E5 de Microsoft 365 Enterprise*
 
 Microsoft Teams reúne el chat, las conferencias, el uso compartido de documentos y las conversaciones encadenadas de forma que resulta más fácil crear y compartir contenido en grupos. Teams es la forma de trabajar en equipo y colaborar de Microsoft 365 Enterprise y es un elemento clave del valor creado para el trabajo en equipo de Microsoft 365. Si es nuevo en Teams, consulte [Introducción a Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).
  
@@ -27,11 +29,9 @@ Si actualmente usa Skype Empresarial, estamos implementando funcionalidades de S
 
 Los siguientes pasos y fases le guiarán a través del proceso de planificar el rol de Teams en su organización, incorporar su organización en Teams a través de una serie de implementaciones graduales y fomentar el uso de Teams y su valor para sus usuarios finales. 
 
->[!Note]
->Se deben seguir estas instrucciones de implementación solo después de haber completado la [infraestructura base](deploy-foundation-infrastructure.md) de Microsoft 365 Enterprise.
->
+Antes de empezar, asegúrese de haber configurado las fases de [infraestructura de la fundación](deploy-foundation-infrastructure.md) adecuadas para que los equipos tengan las capacidades de seguridad que usted necesita.
 
-## <a name="phase-1-envision"></a>Fase 1: Planificar
+## <a name="phase-1-envision"></a>Fase 1: Planear
 
 En esta fase, reunirá a las personas para la implementación de Teams y determinará cómo usará Teams su organización para satisfacer sus necesidades empresariales.
 
@@ -45,7 +45,7 @@ Estos tres grupos aseguran que la implementación de Teams incluye consideracion
 Una lista de personas que representan los aspectos empresariales, técnicos y de usuario final de su organización.
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>Paso 2: Determinar y priorizar los escenarios empresariales de Teams
-Teams se puede usar para muchas finalidades diferentes. Necesita conocer cuáles se ajustan a sus necesidades empresariales en los diferentes niveles de su organización, grupos empresariales, departamentos, equipos de trabajo y proyectos individuales. Vea ejemplos que le ayuden a definir los escenarios de Teams en la [Biblioteca de productividad de Microsoft 365 FastTrack](https://www.microsoft.com/microsoft-365/success). 
+Teams se puede usar para muchas finalidades diferentes. Necesita conocer cuáles se ajustan a sus necesidades empresariales en los diferentes niveles de su organización, grupos empresariales, departamentos, equipos de trabajo y proyectos individuales. Vea ejemplos que le ayuden a definir los escenarios de Teams en la [Biblioteca de productividad de Microsoft 365 FastTrack](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1). 
 
 Debería usar Teams para abordar equipos muy colaborativos y cambiantes que trabajan estrechamente y necesitan muchos más recursos que solo el correo electrónico que puede proporcionar Exchange Online. Algunos ejemplos son chats en grupo en directo con un historial registrado y un lugar fácil de encontrar y común para almacenar archivos y notas. 
 

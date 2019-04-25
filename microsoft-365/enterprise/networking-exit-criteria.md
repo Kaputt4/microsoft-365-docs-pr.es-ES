@@ -3,36 +3,35 @@ title: 'Fase 1: Criterios de salida de la infraestructura de red'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise sobre la infraestructura de red.
-ms.openlocfilehash: 8161fa2b92ffb4c7c4713e9356c0bc1bfec39d07
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9ea601d66ef2df0d7a4efde188a70c51e3fb9f60
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291372"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Fase 1: Criterios de salida de la infraestructura de red
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Si su infraestructura de red cumple con las siguientes condiciones, está listo para pasar a la fase 2.
+Asegúrese de que su infraestructura de red cumpla los siguientes criterios necesarios y que ha considerado aquellos que son opcionales.
 
 <a name="crit-networking-step1"></a>
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatorio: la red está preparada para Microsoft 365 Enterprise
 
-- Las oficinas tienen suficiente ancho de banda de Internet para el tráfico de Microsoft 365, incluidas la instalación y las actualizaciones de Office 365, Microsoft Intune y Windows 10 Enterprise
-- Oficinas centrales para todo el tráfico de Internet general
-- Sucursales para el tráfico del punto de conexión de la categoría Optimizar
+- Las oficinas tienen suficiente ancho de banda de internet para el tráfico de Microsoft 365, incluidas la instalación y las actualizaciones de Office 365, Microsoft Intune y Windows 10 Enterprise
 - La red general se corresponde a una arquitectura de referencia de Office 365
+- Los cambios de la red han sido pilotados y probados y cumplen con los requisitos de latencia de tráfico 
 
 Si es necesario, el [paso 1](networking-provide-bandwidth-cloud-services.md) puede ayudarle con este requisito.
 
@@ -76,10 +75,12 @@ Si es necesario, el [paso 4](networking-configure-proxies-firewalls.md) puede ay
 
 Ha optimizado la configuración del Protocolo de control de transmisión (TCP) en los dispositivos cliente y para los servicios de Exchange Online, Skype Empresarial Online, SharePoint Online y Project Online.
 
-Si es necesario, el [paso 5](networking-optimize-tcp-performance.md) puede ayudarle con esta opción.
+Si necesita ayuda con esta opción, vea el [paso 5](networking-optimize-tcp-performance.md).
 
-## <a name="next-phase"></a>Fase siguiente
+## <a name="results-and-next-steps"></a>Resultados y pasos siguientes
+
+Los usuarios de la intranet ya están listos para usar los servicios en la nube de Microsoft 365 a través de una ruta de red eficiente y a través de Internet.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| La siguiente fase del proceso de implementación integral de Microsoft 365 Enterprise es la [identidad](identity-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Si sigue las fases de la implementación de extremo a extremo de Microsoft 365 Enterprise, la siguiente fase es la [identidad](identity-infrastructure.md). |

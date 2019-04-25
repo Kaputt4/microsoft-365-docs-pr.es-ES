@@ -4,21 +4,21 @@ description: Solicitudes de interesados de la familia de Visual Studio para el R
 keywords: Visual Studio, Visual Studio Code, Visual Studio para Mac, documentación de Visual Studio, privacidad, RGPD
 localization_priority: Priority
 audience: itpro
-ms.prod: visual-studio
+ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
 author: PoulChapman
-ms.author: pchapman
-manager: scalla
+ms.author: olholder
+manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bba28648cbee6dd32c2005bcb584e97a4c534e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286928"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados de la familia de Visual Studio para el RGPD
 
@@ -101,7 +101,7 @@ En cuanto a los comentarios públicos, se componen de problemas notificados, com
 
 Haga lo siguiente para ver los datos relacionados con sus comentarios:
 
-1. Inicie sesión en la [comunidad de desarrolladores](https://developercommunity.visualstudio.com). En la esquina superior derecha, haga clic en su perfil y seleccione **Perfil y preferencias**.
+1. Inicie sesión en la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com). En la esquina superior derecha, haga clic en su perfil y seleccione **Perfil y preferencias**.
 2. Haga clic en cualquiera de estas pestañas: **Perfil**, **Notificaciones**, **Actividad** y **Datos adjuntos**, para ver los datos enviados a los sistemas de comentarios.
    1. **Perfil** es su perfil de la [comunidad de desarrolladores](https://developercommunity.visualstudio.com), esto es, su nombre de usuario, dirección de correo, sección Acerca de, etc.
    2. En **Notificaciones** se indica cómo controlar las notificaciones de correo electrónico que recibe.
@@ -121,7 +121,7 @@ Puede exportar los datos de comentarios como parte de una solicitud de interesad
 
 Haga lo siguiente para iniciar una exportación:
 
-1. Inicie sesión en la [comunidad de desarrolladores](https://developercommunity.visualstudio.com). En la esquina superior derecha, haga clic en su perfil y seleccione **Perfil y preferencias**.
+1. Inicie sesión en la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com). En la esquina superior derecha, haga clic en su perfil y seleccione **Perfil y preferencias**.
 2. Haga clic en la pestaña **Privacidad** y, después, haga clic en **Crear un archivo** para solicitar la exportación de los datos.
 3. El **estado del archivo** se actualizará para reflejar que los datos se están preparando. El tiempo que transcurre hasta que los datos estén disponibles dependerá de la cantidad de datos que se vayan a exportar.
 4. Cuando los datos estén listos, le enviaremos un correo electrónico.
