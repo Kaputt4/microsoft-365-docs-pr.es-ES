@@ -3,28 +3,28 @@ title: 'Fase 3: Criterios de salida de infraestructura de Windows 10 Enterprise'
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
-ms.date: 06/01/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise para Windows 10 Enterprise.
-ms.openlocfilehash: 7ac79fec93e4b4aae0b075891917e2f88432b80f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 1e8a2e748f42431465c027acbc468f4c5891d320
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289522"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Fase 3: Criterios de salida de infraestructura de Windows 10 Enterprise
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Si su infraestructura de Windows 10 Enterprise cumple con las siguientes condiciones, está listo para pasar a la fase 4.
+Asegúrese de que su infraestructura de Windows 10 Enterprise cumpla los siguientes criterios necesarios y que ha considerado aquellos que son opcionales.
 
 <a name="crit-windows10-step1"></a>
 ## <a name="required-your-microsoft-365-domains-are-added-and-verified"></a>Necesario: Los dominios de Microsoft 365 se agregan y comprueban
@@ -37,7 +37,7 @@ Si es necesario, el [paso 1](windows10-prepare-your-org.md) puede ayudarle con e
 
 ## <a name="optional-your-users-are-added-and-licensed"></a>Opcional: Los usuarios se agregan y reciben una licencia
 
-Se agregan las cuentas correspondientes a los usuarios, ya sea directamente a su inquilino de Azure AD para sus suscripciones de Office 365 e Intune o a partir de la sincronización de directorios del servidor local de Windows Server AD.
+Se agregan las cuentas correspondientes a los usuarios, ya sea directamente a su inquilino de Azure AD para sus suscripciones de Office 365 e Intune o a partir de la sincronización de directorios del servidor local de los servicios de dominio de Active Directory (AD DS).
 
 Cuando se agregan los usuarios, puede asignarles licencias de Microsoft 365 Enterprise, directamente como un administrador global o de usuarios, o automáticamente a través de la pertenencia a grupos.
 
@@ -55,8 +55,8 @@ Si es necesario, el [paso 1](windows10-prepare-your-org.md) puede ayudarle con e
 Para iniciar una secuencia de tareas de Configuration Manager con el fin de realizar una actualización local en un dispositivo con Windows 7 o Windows 8.1, debe:
 
 - Establecer el nivel de datos de diagnóstico de Windows adecuado
-- Comprobar la preparación para actualizar Windows
-- Crear una secuencia de tareas de Configuration Manager que incluya una colección de dispositivos y una implementación de sistema operativo con una imagen de sistema operativo de Windows 10
+- Haber comprobado la preparación para actualizar Windows
+- Haber creado la secuencia de tareas de Configuration Manager que incluya una colección de dispositivos y una implementación de sistema operativo con una imagen de sistema operativo de Windows 10
 
 Una vez hecho todo esto, puede realizar actualizaciones en los dispositivos que están preparados para actualizar Windows. Para obtener el máximo partido de Microsoft 365 Enterprise, actualice tantos dispositivos que utilicen Windows 7 y Windows 8.1 como sea posible. 
 
@@ -69,13 +69,13 @@ Si es necesario, el [paso 2](windows10-deploy-inplaceupgrade.md) puede ayudarle 
 
 Para usar Windows Autopilot con el fin de implementar y personalizar Windows 10 Enterprise en un dispositivo nuevo, debe:
 
-- Establecer el nivel de datos de diagnóstico de Windows adecuado
-- Haber completado los requisitos previos de Windows Autopilot, entre los que se incluyen:
-- El registro de dispositivos y la personalización de la configuración rápida
-- Personalización de marca para configuración rápida
-- Inscripción automática de MDM en Microsoft Intune
-- Conectividad de red a servicios en la nube usados por Windows Autopilot
-- Los dispositivos deben tener preinstalado Windows 10, versión 1703 o posterior
+- Haber configurado el nivel de datos de diagnóstico de Windows adecuado
+- Haber configurado los requisitos previos de Windows Autopilot, entre los que se incluyen:
+   - El registro de dispositivos y la personalización de la configuración rápida
+   - Personalización de marca para configuración rápida
+   - Inscripción automática de MDM en Microsoft Intune
+   - Conectividad de red a servicios en la nube usados por Windows Autopilot
+- Los dispositivos que tienen preinstalado Windows 10, versión 1703 o posterior
 - Seleccionado el Programa de implementación de Windows Autopilot para su organización
 
 Una vez que se ha realizado la configuración de Windows Autopilot, puede usarlo para configurar y personalizar Windows 10 Enterprise para la configuración rápida (OOBE) de:
@@ -119,9 +119,10 @@ Opcionalmente, ha integrado Windows Defender ATP con otras herramientas para amp
 
 Si es necesario, el [paso 5](windows10-enable-security-features.md#windows10-sec-atp) puede ayudarle con este requisito.
 
+## <a name="results-and-next-steps"></a>Resultados y pasos siguientes
 
-## <a name="next-phase"></a>Fase siguiente
+La infraestructura de Windows 10 Enterprise está lista para comenzar la instalación en nuevos dispositivos y las actualizaciones en contexto en dispositivos que ejecutan las versiones anteriores de Windows. Está utilizando las características de seguridad claves de Windows 10 Enterprise.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| La fase siguiente del proceso de implementación integral de Microsoft 365 Enterprise es [Office 365 ProPlus](office365proplus-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Si sigue las fases de la implementación de un extremo a otro de Microsoft 365 Enterprise, la siguiente fase es [Office 365 ProPlus](office365proplus-infrastructure.md). |

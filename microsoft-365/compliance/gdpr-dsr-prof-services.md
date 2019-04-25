@@ -2,20 +2,20 @@
 title: Solicitudes del titular de los datos de soporte técnico y los servicios profesionales de Microsoft para el RGPD
 description: Forma en que el soporte técnico y los servicios profesionales de Microsoft procesan las solicitudes del titular de los datos.
 keywords: Servicios profesionales, Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: dd86914c0b3931f0cddc762db3f5916a34853eff
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278256"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados del soporte técnico y los servicios profesionales de Microsoft para el RGPD
 
@@ -23,9 +23,9 @@ ms.locfileid: "26871440"
 
 El equipo de Servicios profesionales de Microsoft está formado por un grupo diverso de arquitectos técnicos, ingenieros, consultores y profesionales de soporte técnico dedicados a alcanzar la misión de Microsoft de proporcionar recursos a los clientes para mejorar su productividad. Nuestro equipo de Servicios profesionales está formado por un total de más de 21 000 consultores, asesores digitales, representantes de soporte técnico Premier, ingenieros y profesionales de ventas que trabajan en 191 países, ofrecen asistencia en 46 idiomas, administran varios millones de interacciones al mes, e interactúan con clientes y partners con herramientas automatizadas, locales, telefónicas, web y de la comunidad. La organización ofrece amplia experiencia en toda la cartera de Microsoft, con una extensa red de partners, comunidades técnicas, herramientas, diagnósticos y canales que nos conectan con nuestros clientes empresariales.
 
-Obtenga más información sobre los Servicios profesionales de Microsoft aquí (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) y en la sección Servicios profesionales de Microsoft del Centro de confianza de Microsoft (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>). Los Servicios profesionales de Microsoft se toman muy en serio sus obligaciones según el Reglamento general de protección de datos (RGPD). La información que contiene este documento se diseñó para responder a preguntas de clientes sobre cómo las ofertas de soporte técnico y consultoría de Microsoft responderán y asistirán a los clientes en relación con sus obligaciones de solicitudes de derechos del titular de los datos según el RGPD.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
+Para informarse sobre los servicios profesionales de Microsoft vaya a la sección de Servicios profesionales de Microsoft en Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>). En los Servicios profesionales de Microsoft nos tomamos muy en serio nuestras obligaciones relativas al Reglamento general de protección de datos (RGPD). La información de este documento está diseñada para responder a preguntas de clientes sobre cómo el servicio de atención al cliente de Microsoft y las ofertas de consultoría asistirán y responderán a los clientes a solicitudes del interesado relativas al RGPD.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
-### <a name="introduction-to-dsrs"></a>Introducción a las solicitudes de derechos del titular de los datos 
+### <a name="introduction-to-dsrs"></a>Introducción a las solicitudes del interesado 
 
 El Reglamento de protección de datos de la UE (RGPD) ofrece derechos a las personas (que se denominan en el reglamento *“titulares de los datos”*) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el *poseedor de los datos* o simplemente el *“poseedor”*). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los titulares de los datos derechos específicos sobre sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, la restricción de su procesamiento y su eliminación. Las solicitudes formales realizadas por un titular de los datos a un poseedor de los datos para realizar una acción en sus datos personales se denominan *solicitud de derechos del titular de los datos*. Además, obliga a las compañías que trabajan en nombre de un poseedor (conocido como el *procesador de datos* o simplemente el *procesador*) a asistir de forma razonable al poseedor para cumplir con las solicitudes de derechos del titular de los datos.
 
@@ -76,20 +76,21 @@ Estas son definiciones relevantes de los términos del RGPD para esta guía:
 En esta guía, se describen cuatro escenarios que puede encontrarse un cliente si usa los Servicios profesionales de Microsoft.
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>Solicitud de derechos del titular de los datos de un contacto de cliente que interacciona con Microsoft
+- **Solicitud del interesado de los datos de un contacto de cliente que interactúa con Microsoft**
+
 Explicación de cómo Microsoft responderá a las solicitudes de un contacto de cliente o administrador de TI para ejercer sus derechos de derechos del titular de los datos.
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-## <a name="dsr-for-an-end-user-engaging-microsoft"></a>Solicitud de derechos del titular de los datos de un usuario final que interacciona con Microsoft
+- **Solicitud del interesado para un usuario final que interactúa con Microsoft**
 
 Explicación de cómo Microsoft responderá a las peticiones de los empleados de un cliente u otros derechos del titular de los datos para ejercer sus derechos.
 
-## <a name="dsr-for-customer-provided-data-commercial-support"></a>Solicitud de derechos del titular de los datos proporcionados por el cliente: Asistencia comercial
+- **Solicitud del interesado para datos proporcionados por el cliente: servicio de atención al cliente comercial**
 
 Explicación de cómo recibir asistencia de Microsoft cuando un cliente recibe una solicitud de su empleado u otros derechos del titular de los datos para ejercer sus derechos, y cuando los datos personales del titular de los datos fueron recopilados por el soporte técnico de Microsoft durante una interacción de soporte técnico.
 
 <span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-## <a name="dsr-for-customer-provided-data-consulting-services-including-fasttrack-migration-services"></a>Solicitud de derechos del titular de los datos proporcionados por el cliente: servicios de consultoría, incluidos los Servicios de migración Microsoft de FastTrack 
+- **Solicitud del interesado para datos proporcionados por el cliente: servicios de consultoría incluidos los servicios de migración de FastTrack** 
 
 <span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
 

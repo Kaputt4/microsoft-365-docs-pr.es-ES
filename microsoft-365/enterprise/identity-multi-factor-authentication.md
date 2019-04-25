@@ -1,30 +1,33 @@
 ---
-title: 'Paso 5: Configurar la autenticación multifactor'
+title: 'Paso 4: Configurar autenticación segura de usuario'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2018
+ms.date: 04/17/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure la autenticación multifactor para las cuentas de usuario.
-ms.openlocfilehash: a54eb047c94430a2b3f61d06500c929e400e3d82
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 44d878a347e7b01263f9ba3a82f6443f5710dc43
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285480"
 ---
-# <a name="step-5-set-up-multi-factor-authentication"></a>Paso 5: Configurar la autenticación multifactor
-
-*Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
+# <a name="step-4-configure-secure-user-authentication"></a>Paso 4: Configurar autenticación segura de usuario
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
+<a name="identity-mfa"></a>
+## <a name="set-up-multi-factor-authentication"></a>Configurar la autenticación multifactor
+
+*Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
 
 En este paso, configurará la autenticación multifactor (MFA) para agregar un segundo nivel de seguridad en las transacciones y los inicios de sesión de usuario. MFA necesita un método de verificación adicional después de que los usuarios escriban correctamente la contraseña. Sin MFA, la contraseña es el único método de verificación. El problema de las contraseñas es que un atacante podría adivinar fácilmente muchas de ellas, o bien se pueden compartir de manera inadvertida con partes que no son de confianza.
 
@@ -35,11 +38,7 @@ Con MFA, el segundo nivel de seguridad puede ser:
 
 Habilitará MFA y configurará el método de autenticación secundario en cada cuenta de usuario. Asegúrese de informar a los usuarios de que se habilitará MFA para que comprendan los requisitos (como el uso obligatorio de un smartphone para iniciar sesión) y que puedan iniciar sesión correctamente.
 
-Para obtener más información, vea [Planear la autenticación multifactor para implementaciones de Office 365](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba).
-
-Para configurar la autenticación multifactor, vea [Configurar la autenticación multifactor para usuarios de Office 365](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
-
-Puede exigir MFA con directivas de acceso condicional. Por ejemplo, puede configurar una directiva que exija MFA cuando se determine que la autenticación sea de riesgo medio o alto. Para obtener más información, vea [Directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md#require-mfa-based-on-sign-in-risk).
+Para obtener más información, consulte [el Plan de autenticación multifactor](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
 
 >[!Note]
 >En algunas aplicaciones (como Microsoft Office 2010 o versiones anteriores, y Apple Mail), no se puede usar MFA. Para usar estas aplicaciones, necesitará usar “contraseñas de aplicación” en lugar de la contraseña tradicional. La contraseña de aplicación permite a la aplicación omitir MFA y seguir funcionando. Para obtener más información sobre las contraseñas de aplicación, vea [Crear una contraseña de aplicación para Office 365](https://support.office.com/article/Create-an-app-password-for-Office-365-3e7c860f-bda4-4441-a618-b53953ee1183).
@@ -50,11 +49,69 @@ Puede exigir MFA con directivas de acceso condicional. Por ejemplo, puede config
 |![Guías de laboratorio de pruebas en Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía de laboratorio de pruebas: Autenticación multifactor](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
-Como punto de control provisional, puede ver los [criterios de salida](identity-exit-criteria.md#crit-identity-mfa) de este paso.
+Como control provisional, puede ver el [criterio de salida](identity-exit-criteria.md#crit-identity-mfa) de esta sección.
+
+
+
+<a name="identity-ident-prot"></a>
+## <a name="protect-against-credential-compromise"></a>Proteger contra credenciales en peligro
+
+*Esto es opcional y solo se aplica a la versión E5 de Microsoft 365 Enterprise*
+
+En esta sección, aprenderá a configurar las directivas que protejan credenciales en peligro, donde un atacante determine el nombre de una cuenta de usuario y la contraseña para acceder a servicios en la nube y los datos de una organización. La protección de identidad de Azure AD proporciona varias formas de evitar que un atacante se desplace lateralmente por las cuentas y grupos, y acceda a sus datos más importantes.
+
+Con Azure AD Identity Protection, puede:
+
+|||
+|:---------|:---------|
+|Determinar y corregir posibles vulnerabilidades en las identidades de su organización|Azure AD usa aprendizaje automático para detectar anomalías y actividades sospechosas, como inicios de sesión y actividades posteriores al inicio de sesión. Con estos datos, Identity Protection genera informes y alertas que le permiten evaluar los problemas y tomar medidas.|
+|Detectar acciones sospechosas relacionadas con las identidades de su organización y responder a ellas automáticamente|Puede configurar directivas basadas en riesgos que responden automáticamente a los problemas encontrados cuando se alcanza un nivel de riesgo especificado. Estas directivas, además de otros controles de acceso condicional proporcionados por Azure Active Directory y Enterprise Mobility + Security (EMS), pueden automáticamente impedir el acceso o realizar acciones correctivas, como activar restablecimientos de contraseña y exigir la autenticación multifactor para los inicios de sesión posteriores.|
+|Investigar incidentes sospechosos y solucionarlos con acciones administrativas|Puede investigar eventos de riesgo con información sobre el incidente de seguridad. Hay disponibles flujos de trabajo básicos para realizar un seguimiento de las investigaciones e iniciar acciones de corrección, como restablecimientos de contraseña.|
+
+Vea [más información sobre Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
+
+Vea los [pasos para habilitar Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).
+
+El resultado de este paso es que habilitó Azure AD Identity Protection y ahora lo usa para:
+
+- Solucionar posibles vulnerabilidades de identidad.
+- Detectar posibles intentos de uso ilícito de credenciales.
+- Investigar y solucionar incidentes de identidad sospechosos y continuados.
+
+|||
+|:-------|:-----|
+|![Guías de laboratorio de pruebas en Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía de laboratorio de pruebas: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
+|||
+
+Como control provisional, puede ver el [criterio de salida](identity-exit-criteria.md#crit-identity-ident-prot) de esta sección.
+
+## <a name="monitor-tenant-and-sign-in-activity"></a>Supervisar la actividad de inicio de sesión y del espacio empresarial
+
+*Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
+
+En este paso, revisará los registros de auditoría y la actividad de inicio de sesión con los informes de Azure AD. Hay disponibles dos tipos de informes.
+
+El **Informe de actividades de registros de auditoría** registra el historial de todas las tareas realizadas en el espacio empresarial de Azure AD. Este informe responde a preguntas como las siguientes:
+
+- ¿Quién agregó a un usuario a un grupo de administradores?
+- ¿Qué usuarios inician sesión en una aplicación específica?
+- ¿Cuántos restablecimientos de contraseña se producen?
+
+El **Informe de actividades de inicios de sesión** registra quién realizó las tareas incluidas en el informe de registros de auditoría. Este informe responde a preguntas como las siguientes:
+
+- Para un usuario específico que esté bajo investigación, ¿cuál es su patrón de inicio de sesión?
+- ¿Cuál es mi volumen de inicios de sesión en un día, semana o mes?
+- ¿Cuántos de estos intentos de inicio de sesión no fueron correctos y para qué cuentas?
+
+Para obtener más información sobre los informes y obtener acceso a ellos, vea [Informes de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal).
+
+Como resultado de este paso, obtendrá información sobre estos informes y conocerá cómo puede usarlos para comprender en profundidad los eventos y actividades de Azure AD con fines de planeamiento y seguridad.
+
+
 
 ## <a name="next-step"></a>Paso siguiente
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [Protegerse frente al compromisos de credenciales](identity-azure-ad-identity-protection.md) |
+|![](./media/stepnumbers/Step5.png)| [Simplificar el acceso de usuarios](identity-password-reset.md) |
 

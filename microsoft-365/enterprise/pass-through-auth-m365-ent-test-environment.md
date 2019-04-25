@@ -9,23 +9,23 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: autenticación de paso a través para el entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 26222f04617999104a1ad010eb189a0c01370a6d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: e925f0b48194c94993e7bf3e08f1f18650b19a23
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290957"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticación de paso a través para el entorno de prueba de Microsoft 365
 
-Las organizaciones que quieran usar directamente su infraestructura local de Windows Server Active Directory (AD) para la autenticación de servicios y aplicaciones de Microsoft basados en la nube pueden utilizar la autenticación de paso a través. Este artículo describe cómo configurar el entorno de prueba de Microsoft 365 para autenticación de paso a través, dando como resultado la siguiente configuración:
+Las organizaciones que quieren usar directamente su infraestructura de Active Directory Domain Services (AD DS) local para la autenticación de aplicaciones y servicios en la nube de Microsoft pueden usar la autenticación de paso a través. Este artículo describe cómo configurar el entorno de prueba de Microsoft 365 para la autenticación de paso a través, lo que resulta en la siguiente configuración:
   
 ![La empresa simulada con el entorno de prueba con la autenticación de paso a través](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
   
@@ -47,8 +47,8 @@ Siga las instrucciones de [Sincronización de hash de contraseñas para Microsof
   
 Esta configuración se compone de: 
   
-- Suscripciones de prueba o permanentes de Office 365 E5 y EMS E5.
-- La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Azure AD Connect se ejecuta en APP1 para sincronizar el dominio de Windows Server AD de TESTLAB con el inquilino de Azure AD de las suscripciones de Office 365 y EMS E5 de manera periódica.
+- Suscripciones de prueba o de pago de Office 365 E5 y EMS E5.
+- La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Azure AD Connect se ejecuta en APP1 para sincronizar periódicamente el dominio de TESTLAB de Active Directory Domain Services (AD DS) al espacio empresarial de Azure AD de sus suscripciones de Office 365 y E5 EMS.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Fase 2: configurar Azure AD Connect en APP1 para la autenticación de paso a través
 
@@ -76,13 +76,13 @@ En esta fase, configure Azure AD Connect en APP1 para usar la autenticación de 
 
 10. Haga clic en **Autenticación de paso a través**. El panel **Autenticación de paso a través** enumera los servidores donde se instalan los agentes de autenticación. Verá APP1 en la lista. Cerrar el panel **Autenticación de paso a través**.
 
-Después, compruebe si puede iniciar sesión en su suscripción de Office 365 con el nombre de usuario user1@testlab.\< su dominio público> nombre de usuario de la cuenta Usuario1.
+Después, compruebe si puede iniciar sesión en su suscripción de Office 365 con el nombre de usuario <strong>user1@testlab.</strong>\<su dominio público> de la cuenta Usuario1.
 
 1. Desde APP1, cierre sesión en Office 365 y vuelva a iniciar sesión, esta vez especificando una cuenta diferente.
 
-2. Cuando se le pida un nombre de usuario y una contraseña, especifique user1@testlab.\<su dominio público> y la contraseña de Usuario1. Debería iniciar sesión correctamente como Usuario1.
+2. Cuando se le solicite un nombre de usuario y contraseña, especifique <strong>user1@testlab.</strong>\<su dominio público > y la contraseña de User1. Debería poder iniciar sesión como User1.
 
-Tenga en cuenta que, aunque Usuario1 tiene permisos de administrador de dominio para el dominio de Windows Server AD de TESTLAB, no es un administrador global de Office 365. Por lo tanto, el icono de **Administrador ** no aparecerá entre las opciones.
+Tenga en cuenta que aunque User1 tiene permisos de administrador de dominio para el dominio de AD DS de práctica de prueba, no es un administrador global de Office 365. Por lo tanto, no verá el icono de **administrador** como opción.
 
 Esta es la configuración resultante:
 
@@ -90,7 +90,7 @@ Esta es la configuración resultante:
  
 Esta configuración se compone de:
 
-- Suscripciones de prueba o permanentes a Office 365 E5 y EMS E5 con el dominio DNS TESTLAB.\<su nombre de dominio> registrado.
+- Office 365 E5 y EMS E5, en periodo de prueba o en suscripción pagada, con el dominio DNS testlab.\<su nombre de dominio> registrado.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Un Agente de autenticación se ejecuta en APP1 para administrar las solicitudes de autenticación de paso a través desde el inquilino de Azure AD de las suscripciones de Office 365 y EMS E5.
 
 ## <a name="next-step"></a>Paso siguiente

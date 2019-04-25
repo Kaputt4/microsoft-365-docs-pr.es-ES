@@ -3,24 +3,24 @@ title: Guías del laboratorio de pruebas de Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Use estas guías del laboratorio de pruebas para configurar la demostración, prueba de concepto y entornos de desarrollo y prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: df723647748532936e40bbdb4e34ff698b9fa650
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 027386f9b44d09d2927c2473d1ef27381f82f969
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283650"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Guías del laboratorio de pruebas de Microsoft 365 Enterprise
 
@@ -41,7 +41,7 @@ Primero debe crear un entorno de prueba para [Microsoft 365 Enterprise](https://
 
 - Use la [configuración básica ligera](lightweight-base-configuration-microsoft-365-enterprise.md) si quiere configurar y demostrar las características y funciones de Microsoft 365 Enterprise solo en un entorno de nube, que no incluye ningún componente local.
 
-- Use la [configuración básica empresarial simulada](simulated-ent-base-configuration-microsoft-365-enterprise.md) si quiere configurar y demostrar las características y funciones de Microsoft 365 Enterprise en un entorno de nube híbrido, que incluye componentes locales, como un dominio de Windows Server Active Directory (AD).
+- Use la [configuración básica de empresa simulada](simulated-ent-base-configuration-microsoft-365-enterprise.md) para configurar y demostrar las características y funciones de Microsoft 365 Enterprise en un entorno híbrido de nube, que use componentes locales como un dominio Active Directory Domain Services (AD DS).
     
 ## <a name="identity"></a>Identidad
 
@@ -49,15 +49,15 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Sincronización de hash de contraseñas](password-hash-sync-m365-ent-test-environment.md)
   
-   Habilitar y probar la sincronización de directorios basada en hash de contraseñas desde un controlador de dominio de Windows Server AD.
+   Habilitar y probar la sincronización de directorios basada en hash y por contraseña de un controlador de dominio de Active Directory Domain Services (AD DS).
 
 - [Autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md)
   
-   Habilitar y probar la autenticación de paso a través en un controlador de dominio de Windows Server AD.
+   Habilitar y probar la autenticación de paso en un controlador de dominio de AD DS.
 
 - [Inicio de sesión único de conexión directa de Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Habilite y pruebe el inicio de sesión único de conexión directa (SSO) de Azure AD con un controlador de dominio de Windows Server AD.
+   Habilitar y probar el Inicio de sesión único de conexión directa (SSO) de Azure AD con un controlador de dominio de AD DS.
 
 - [Autenticación multifactor](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -66,6 +66,10 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 - [Proteger las cuentas de administrador global](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
    Bloquee sus cuentas de administrador global con Office 365 Cloud App Security y directivas de acceso condicional.
+
+- [Reescritura de contraseña](password-writeback-m365-ent-test-environment.md)
+
+   Usar una escritura diferida de contraseñas para cambiar la contraseña de su cuenta de usuario de AD DS de Azure AD.
 
 - [Restablecimiento de contraseña](password-reset-m365-ent-test-environment.md)
 
@@ -83,9 +87,9 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 Para mostrar funcionalidades y características relacionadas con la administración de dispositivos móviles, vea:
 
-- [Directivas de administración de aplicaciones móviles (MAM)](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [Directivas de cumplimiento de dispositivos](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-   Cree grupos de usuarios y directivas de administración de aplicaciones móviles (MAM) para dispositivos iOS y Android.
+   Cree un grupo de usuarios y una directiva de cumplimiento de dispositivos para dispositivos con Windows 10.
     
 - [Inscribir dispositivos iOS y Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
@@ -104,12 +108,10 @@ Para demostrar características y funciones de la información relacionadas con 
     
    Configure y aplique etiquetas de Office 365 a un documento en un sitio de grupo de SharePoint Online.
     
-- [Administración del acceso con privilegios para el entorno de pruebas de Microsoft 365 Enterprise](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
+- [Administración del acceso con privilegios](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure la administración del acceso con privilegios para el acceso en el momento a tareas elevadas o con privilegios en su organización de Office 365.
+   Configure la administración del acceso con privilegios para habilitar el acceso puntual a tareas elevadas o con privilegios en su organización de Office 365.
 
 ## <a name="see-also"></a>Vea también
 
-[Experiencia de Microsoft Cloud con guías del laboratorio de pruebas de adopción de la nube](https://mva.microsoft.com/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
-    
-[Una pila de guía del laboratorio de pruebas de Microsoft Cloud](http://aka.ms/catlgstack)
+[Probar Office 365 con la adopción de nube TLG](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)

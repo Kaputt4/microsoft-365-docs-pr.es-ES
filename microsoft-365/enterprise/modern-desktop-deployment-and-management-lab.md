@@ -1,5 +1,5 @@
 ---
-title: Kit de laboratorio de administración e implementación de Escritorio moderno
+title: Kit de laboratorio de implementación para Windows y Office
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,35 +12,35 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Obtenga información sobre el Kit de laboratorio de administración e implementación de Escritorio moderno y cómo acceder a él.
-ms.openlocfilehash: 1423b0deb74d306cbbc0dc088fed9827ec01782c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
+ms.openlocfilehash: 2db50816f4a87007ce74fef934d3a4211cf4e905
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291105"
 ---
-# <a name="modern-desktop-deployment-and-management-lab-kit"></a>Kit de laboratorio de administración e implementación de Escritorio moderno
+# <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
 Estos laboratorios prácticos para descargar se centran en la implementación de Windows 10 y Office 365 junto con las consideraciones de administración y configuración posteriores a la implementación. Este aprendizaje es muy recomendable para las organizaciones que preparan el fin del período activo de Windows 7, pero también se aplica si en la actualidad usa Windows 10 y Office 365 Plus u Office 2019. Se incluyen guías para Windows 10, Office 365 ProPlus, Enterprise Mobility + Security y productos y servicios relacionados.
 
-Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos modernos que ejecutan Windows 10 Enterprise y Office 365 ProPlus. En los laboratorios se describen los pasos y las herramientas detallados en la rueda de implementación de escritorios modernos, que abarca System Center Configuration Manager, Windows Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
+Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos que ejecuten Windows 10 Enterprise y Office 365 ProPlus. Abarcan los pasos y las herramientas que se describen en la rueda de implementación de escritorio, incluyendo el System Center Configuration Manager, Windows Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 
-Como parte del proceso de [implementación de escritorios modernos](http://www.aka.ms/howtoshift) para Windows 10 y Office 365 ProPlus, crear un entorno de laboratorio de espacio aislado o aislado es el punto de partida recomendado cuando se empiezan a explorar las actualizaciones de la herramienta de implementación y se prueba la automatización relacionada con la implementación.
+Como parte del proceso de [implementación de escritorio](http://www.aka.ms/howtoshift) para Windows 10 y Office 365 ProPlus, se recomienda empezar con un entorno de laboratorio aislado cuando comience a explorar las actualizaciones de la herramienta de implementación y a probar su automatización en el marco de la implementación.
 
 El kit de laboratorio es gratuito y usa software de evaluación.
 
-[**DESCARGAR**](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Descargar el kit de laboratorio de implementación para Windows y Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-**Un entorno de laboratorio completo**
+## <a name="a-complete-lab-environment"></a>**Un entorno de laboratorio completo**
 
 El laboratorio proporciona un entorno de laboratorio virtual aprovisionado de forma automática, en el que se incluyen clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. El laboratorio contiene versiones de evaluación de los productos siguientes:
 
-  - Windows 10 Enterprise, versión 1803
+  - Windows 10 Enterprise, versión 1809
   - Windows 7
-  - Office 365 ProPlus, versión 1807
+  - Office 365 ProPlus, versión 1901
   - System Center Configuration Manager, versión 1802
-  - Windows Assessment and Deployment Kit para Windows 10, versión 1803
+  - Kit de implementación y evaluación de Windows para Windows 10, versión 1809
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Microsoft BitLocker Administration and Monitoring 2.5 SP1
@@ -55,39 +55,39 @@ O bien
   - Office 365 Enterprise E5
   - Enterprise Mobility + Security
 
-**Laboratorios paso a paso**
+## <a name="step-by-step-labs"></a>**Laboratorios paso a paso**
 
 Las guías de laboratorio detalladas le llevarán a través de varios escenarios de implementación y administración, como los siguientes:
 
-**Preparación de dispositivos y aplicaciones**
+### <a name="device-and-app-readiness"></a>**Preparación de dispositivos y aplicaciones**
 
   - Windows Analytics
   - Modo de empresa y la lista de sitios del modo de empresa de Internet Explorer
 
-**Preparación de los directorios y la red**
+### <a name="directory-and-network-readiness"></a>**Preparación de los directorios y la red**
 
   - Configuración básica de Azure Active Directory y Microsoft 365
   - Optimización de la red con Optimización de entrega, Caché de sistemas del mismo nivel en Configuration Manager y LEDBAT
-  - **NOVEDAD** Administración conjunta de Configuration Manager y Microsoft Intune
-  - **NOVEDAD** Acceso remoto (VPN)
+  - ConfigMgr y la administración conjunta de Microsoft Intune
+  - Acceso remoto (VPN)
 
-**Entrega de aplicaciones de Office y de LOB**
+### <a name="office-and-lob-app-delivery"></a>**Entrega de aplicaciones de Office y de LOB**
 
   - Implementación de Office 365 ProPlus mediante System Center Configuration Manager
   - Implementación de Office 365 ProPlus con Microsoft Intune
   - Implementación y administración de aplicaciones mediante Microsoft Intune
   - Implementación de aplicaciones e instalación de autoservicio con Microsoft Store para Empresas
   - Conversión de aplicaciones de Puente de dispositivo de escritorio a UWP
-  - **NOVEDAD** Kit para la certificación de aplicaciones en Windows
+  - Kit para la certificación de aplicaciones en Windows
   - Corrección de la compatibilidad del explorador con el Modo de empresa para Internet Explorer
 
-**Migración de los archivos y la configuración del usuario**
+### <a name="user-file-and-settings-migration"></a>**Migración de los archivos y la configuración del usuario**
 
   - Herramienta de migración de estado de usuario como parte de las secuencias de actualización y sustitución del equipo en Configuration Manager y MDT
   - Mover carpeta conocida de OneDrive
   - Enterprise State Roaming
 
-**Seguridad y cumplimiento**
+### <a name="security-and-compliance"></a>**Seguridad y cumplimiento**
 
   - Cifrado del dispositivo de BitLocker
   - Antivirus de Windows Defender
@@ -99,7 +99,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
   - Control de aplicaciones de Windows Defender
   - Protección contra amenazas avanzada de Windows Defender
 
-**Implementación del sistema operativo y actualizaciones de características**
+### <a name="os-deployment-and-feature-updates"></a>**Implementación del sistema operativo y actualizaciones de características**
 
   - Creación de la imagen de sistema operativo
   - Secuencias de tareas de implementación de sistema operativo en Configuration Manager
@@ -111,21 +111,21 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
   - Actualizaciones de características con las secuencias de tareas de actualización de Configuration Manager
   - Windows Autopilot
 
-**Office y Windows como servicio**
+### <a name="windows-and-office-servicing"></a>**Mantenimiento de Windows y Office**
 
   - Administración de actualizaciones de software con Configuration Manager
   - Administración de actualizaciones de Office 365 ProPlus en Configuration Manager
   - Administración de dispositivos móviles aplicada a Windows 10 con Microsoft Intune
 
-[**DESCARGAR**](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**Descargar el kit de laboratorio de implementación de Office y Windows**](https://aka.ms/mddlabs_evalcenter)
 
-*Use un ancho de banda amplio para descargar este contenido para mejorar la experiencia de descarga y permita entre 30 y 45 minutos para al aprovisionamiento automático. El entorno del laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomienda disponer de 32 GB. El laboratorio expira el 9 de diciembre de 2018. Antes de que caduque, se publicará una nueva versión.*
+*Use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y permitir entre 30 y 45 minutos de aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 13 de mayo de 2019. Antes de que caduque, se publicará una nueva versión.*
 
-**Instrucciones adicionales**
+## <a name="additional-guidance"></a>**Instrucciones adicionales**
 
-  - [Centro de implementación de escritorios modernos](http://www.aka.ms/howtoshift)
+  - [Centro de implementación de escritorios](http://www.aka.ms/howtoshift)
 
-  - [Vídeos de la serie de implementación de escritorios modernos de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
   - [Implementación de sistema operativo de System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/understand/introduction-to-operating-system-deployment)
 
@@ -135,7 +135,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
   - [<span class="underline">Introducción a Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
-> **Recursos relacionados**
+## <a name="related-resources"></a>**Recursos relacionados**
 
   - [<span class="underline">Presentación de Microsoft Office 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
 
