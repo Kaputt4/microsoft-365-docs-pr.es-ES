@@ -1,10 +1,9 @@
 <a name="crit-networking-step1"></a>
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatorio: la red está preparada para Microsoft 365 Enterprise
 
-- Las oficinas tienen suficiente ancho de banda de Internet para el tráfico de Microsoft 365, incluidas la instalación y las actualizaciones de Office 365, Microsoft Intune y Windows 10 Enterprise
-- Oficinas centrales para todo el tráfico de Internet general
-- Sucursales para el tráfico del punto de conexión de la categoría Optimizar
+- Las oficinas tienen suficiente ancho de banda de internet para el tráfico de Microsoft 365, incluidas la instalación y las actualizaciones de Office 365, Microsoft Intune y Windows 10 Enterprise
 - La red general se corresponde a una arquitectura de referencia de Office 365
+- Los cambios de la red han sido pilotados y probados y cumplen con los requisitos de latencia de tráfico
 
 Si es necesario, el [paso 1](../networking-provide-bandwidth-cloud-services.md) puede ayudarle con este requisito.
 

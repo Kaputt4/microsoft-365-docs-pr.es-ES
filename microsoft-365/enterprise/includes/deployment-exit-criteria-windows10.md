@@ -9,7 +9,7 @@ Si es necesario, el [paso 1](../windows10-prepare-your-org.md) puede ayudarle co
 
 ### <a name="optional-your-users-are-added-and-licensed"></a>Opcional: Los usuarios se agregan y reciben una licencia
 
-Se agregan las cuentas correspondientes a los usuarios, ya sea directamente a su inquilino de Azure AD para sus suscripciones de Office 365 e Intune o a partir de la sincronización de directorios del servidor local de Windows Server AD.
+Se agregan las cuentas correspondientes a los usuarios, ya sea directamente a su inquilino de Azure AD para sus suscripciones de Office 365 e Intune o a partir de la sincronización de directorios del servidor local de los servicios de dominio de Active Directory (AD DS).
 
 Cuando se agregan los usuarios, puede asignarles licencias de Microsoft 365 Enterprise, directamente como un administrador global o de usuarios, o automáticamente a través de la pertenencia a grupos.
 
@@ -27,8 +27,8 @@ Si es necesario, el [paso 1](../windows10-prepare-your-org.md) puede ayudarle co
 Para iniciar una secuencia de tareas de Configuration Manager con el fin de realizar una actualización local en un dispositivo con Windows 7 o Windows 8.1, debe:
 
 - Establecer el nivel de datos de diagnóstico de Windows adecuado
-- Comprobar la preparación para actualizar Windows
-- Crear una secuencia de tareas de Configuration Manager que incluya una colección de dispositivos y una implementación de sistema operativo con una imagen de sistema operativo de Windows 10
+- Haber comprobado la preparación para actualizar Windows
+- Haber creado la secuencia de tareas de Configuration Manager que incluya una colección de dispositivos y una implementación de sistema operativo con una imagen de sistema operativo de Windows 10
 
 Una vez hecho todo esto, puede realizar actualizaciones en los dispositivos que están preparados para actualizar Windows. Para obtener el máximo partido de Microsoft 365 Enterprise, actualice tantos dispositivos que utilicen Windows 7 y Windows 8.1 como sea posible. 
 
@@ -41,13 +41,13 @@ Si es necesario, el [paso 2](../windows10-deploy-inplaceupgrade.md) puede ayudar
 
 Para usar Windows Autopilot con el fin de implementar y personalizar Windows 10 Enterprise en un dispositivo nuevo, debe:
 
-- Establecer el nivel de datos de diagnóstico de Windows adecuado
-- Haber completado los requisitos previos de Windows Autopilot, entre los que se incluyen:
-- El registro de dispositivos y la personalización de la configuración rápida
-- Personalización de marca para configuración rápida
-- Inscripción automática de MDM en Microsoft Intune
-- Conectividad de red a servicios en la nube usados por Windows Autopilot
-- Los dispositivos deben tener preinstalado Windows 10, versión 1703 o posterior
+- Haber configurado el nivel de datos de diagnóstico de Windows adecuado
+- Haber configurado los requisitos previos de Windows Autopilot, entre los que se incluyen:
+   - El registro de dispositivos y la personalización de la configuración rápida
+   - Personalización de marca para configuración rápida
+   - Inscripción automática de MDM en Microsoft Intune
+   - Conectividad de red a servicios en la nube usados por Windows Autopilot
+- Los dispositivos que tienen preinstalado Windows 10, versión 1703 o posterior
 - Seleccionado el Programa de implementación de Windows Autopilot para su organización
 
 Una vez que se ha realizado la configuración de Windows Autopilot, puede usarlo para configurar y personalizar Windows 10 Enterprise para la configuración rápida (OOBE) de:
