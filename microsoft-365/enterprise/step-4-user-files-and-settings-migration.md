@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo migrar los archivos y la configuración de los usuarios.
-ms.openlocfilehash: 51811cf972328cc26687b45fb65e2bdd6d58af1f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: cb5d670d06b284bb9191447ce461835728223f27
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291750"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Paso 4: Migración de los archivos y la configuración del usuario
 
-Mover los archivos y la configuración de los usuarios a los equipos nuevos o actualizados es un proceso crítico; no se pueden producir errores. Puede migrar de forma manual cada equipo o elegir uno de varios métodos para automatizar el proceso. Con independencia del método de migración que elija, debe solucionar tres aspectos: la transferencia de los archivos de los usuarios, la configuración y la administración de los diseños del menú Inicio y la barra de tareas de Windows 10.
+Mover archivos y la configuración de los usuarios a los equipos nuevos o actualizados es un proceso crítico en el que no se admiten errores. Puede migrar manualmente cada equipo o elegir uno de los distintos métodos para automatizar el proceso. Independientemente del método de migración que elija, hay tres aspectos principales que deberá abordar: la transferencia de archivos de los usuarios, su configuración y la gestión de inicio de Windows 10 y de los diseños de barra de tareas.
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
@@ -36,7 +36,7 @@ Mover los archivos y la configuración de los usuarios a los equipos nuevos o ac
 </table>
 
 >[!NOTE]
->Aunque puede seguir utilizando los procesos de migración que ha usado en el pasado, con el cambio a Office 365 ProPlus se recomienda usar "Mover carpeta conocida" de OneDrive (ver a continuación). Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorios modernos](https://aka.ms/HowToShift).
+>Aunque puede seguir utilizando los procesos de migración que ha usado en el pasado, con el cambio a Office 365 ProPlus se recomienda usar "Mover carpeta conocida" de OneDrive (ver a continuación). Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
 Una de las tareas más difíciles y a menudo más manuales de una implementación a gran escala es la transferencia de los archivos y la configuración de los usuarios. En este artículo se tratarán las opciones disponibles para migrar los usuarios a equipos nuevos, actualizados y renovados.

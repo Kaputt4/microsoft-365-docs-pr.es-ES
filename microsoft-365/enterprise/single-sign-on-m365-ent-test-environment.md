@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLGS
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y pruebe el inicio de sesión único de conexión directa de Azure AD para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 10444b094e09705e93cb32c10cd0d41c19913985
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 210d59b0e578b807b9f9ee73e9bff11e7f2502a0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26871710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290134"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Inicio de sesión único de conexión directa de Azure AD para un entorno de prueba de Microsoft 365
 
@@ -29,9 +29,9 @@ El inicio de sesión único de conexión directa (SSO) de Azure AD inicia sesió
 
 En este artículo, se describe cómo configurar el entorno de prueba de Microsoft 365 para SSO de conexión directa de Azure AD.
 
-Existen dos fases para configurar el entorno de prueba:
+Hay dos fases de configuración:
 
-1.  Crear el entorno de prueba de la empresa ficticia de Microsoft 365 con la sincronización de hash de contraseña.
+1.  Crear el entorno de prueba de la empresa simulada de Microsoft 365 con la sincronización de hash de contraseñas.
 2.  Configurar Azure AD Connect en APP1 para SSO de conexión directa de Azure AD.
     
 ![Guías del entorno de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
@@ -39,7 +39,7 @@ Existen dos fases para configurar el entorno de prueba:
 > [!TIP]
 > Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
-## <a name="phase-1-create-the-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: crear la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
 Siga las instrucciones de [Sincronización de hash de contraseñas para Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Esta es la configuración resultante.
   
@@ -47,9 +47,9 @@ Siga las instrucciones de [Sincronización de hash de contraseñas para Microsof
   
 Esta configuración se compone de: 
   
-- Suscripciones de prueba o permanentes de Office 365 E5 y EMS E5.
+- Suscripciones de prueba o de pago de Office 365 E5 y EMS E5.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. 
-- Azure AD Connect se ejecuta en APP1 para sincronizar el dominio de Windows Server AD TESTLAB con el espacio empresarial de Azure AD de sus suscripciones de Office 365 y EMS E5 de forma periódica.
+- Azure AD Connect se ejecuta en APP1 para sincronizar periódicamente el dominio de TESTLAB de Active Directory Domain Services (AD DS) al espacio empresarial de Azure AD de sus suscripciones de Office 365 y E5 EMS.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Fase 2: Configurar Azure AD Connect en APP1 para el SSO de conexión directa de Azure AD
 
@@ -63,7 +63,7 @@ En esta fase, configurará Azure AD Connect en APP1 para el SSO de conexión dir
 
 3. En la página de **Bienvenida**, haga clic en **Configurar**.
 
-4. En la página Tareas adicionales, haga clic en **Cambiar inicio de sesión de usuario** y, después, en **Siguiente**.
+4. En la página **Tareas adicionales**, haga clic en **Cambiar inicio de sesión de usuario** y, a continuación, haga clic en **Siguiente**.
 
 5. En la página **Conectar a Azure AD**, escriba las credenciales de la cuenta de administrador global y, después, haga clic en **Siguiente**.
 
@@ -93,9 +93,9 @@ Después, compruebe si puede iniciar sesión en su suscripción de Office 365 co
 
 6. Cierre la sesión de Office 365 y vuelva a iniciarla, pero esta vez especifique otra cuenta.
 
-7. Cuando se le pida que inicie sesión, especifique el nombre <strong>user1@testlab.</strong>\<nombre de dominio público> y, después, haga clic en **Siguiente**. Iniciará sesión correctamente como Usuario1 sin que se le pida una contraseña. De esta forma, demostrará que el SSO de conexión directa funciona correctamente.
+7. Cuando se le solicite iniciar sesión, especifique <strong>user1@testlab.</strong> \<su dominio público> nombre y, a continuación, haga clic en **siguiente**. Debería iniciar sesión correctamente como User1 sin que se le pide una contraseña. Esto demuestra que el SSO de inicio de sesión directa de Azure AD está funcionando.
 
-Tenga en cuenta que, aunque Usuario1 tiene permisos de administrador de dominio para el dominio de Windows Server AD de TESTLAB, no es un administrador global de Office 365. Por lo tanto, el icono de **Administrador ** no aparecerá entre las opciones.
+Tenga en cuenta que, aunque User1 tiene permisos de administrador de dominio para el dominio TESTLAB AD DS, no es un administrador global de Azure AD y Office 365. Por lo tanto, no verá el icono de **administrador** como opción.
 
 Esta es la configuración resultante:
 
@@ -104,12 +104,12 @@ Esta es la configuración resultante:
  
 Esta configuración se compone de:
 
-- Suscripciones de prueba o permanentes a Office 365 E5 y EMS E5 con el dominio DNS TESTLAB.\<su nombre de dominio> registrado.
+- Office 365 E5 y EMS E5, en periodo de prueba o en suscripción pagada, con el dominio de DNS TESTLAB.\<su nombre de dominio> registrado.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. 
-- Azure AD Connect se ejecuta en APP1 para sincronizar la lista de cuentas y grupos desde el espacio empresarial de Azure AD de sus suscripciones de Office 365 y EMS E5 con el dominio de Windows Server AD “TESTLAB”. 
+- Azure AD Connect se ejecuta en APP1 para sincronizar la lista de cuentas y grupos desde el espacio empresarial de Azure AD de sus suscripciones de Office 365 y EMS E5 con el dominio de TESTLAB AD DS. 
 - El SSO de conexión directa de Azure AD está habilitado para que los equipos en la intranet ficticia puedan iniciar sesión en recursos de nube de Microsoft 365 sin especificar una contraseña de cuenta de usuario.
 
-Vea el paso [Simplificar el inicio de sesión de usuario](identity-single-sign-on.md) en la fase Identidad para obtener información y vínculos sobre cómo configurar el SSO de conexión directa de Azure AD en un entorno de producción.
+Vea el paso [Simplificar el inicio de sesión de usuario](identity-password-reset.md#identity-sso) en la fase Identidad para obtener información y vínculos sobre cómo configurar el SSO de conexión directa de Azure AD en un entorno de producción.
 
 ## <a name="next-step"></a>Paso siguiente
 
