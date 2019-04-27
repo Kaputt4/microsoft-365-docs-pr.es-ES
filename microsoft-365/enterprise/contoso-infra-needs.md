@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades empresariales se pueden satisfacer mediante Microsoft 365 Enterprise.
-ms.openlocfilehash: bd259f367cdf3417e32671457f248029c853b6f8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a4a86c56f956361e58730f328ef940a627370ea6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283687"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353144"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Necesidades empresariales y de infraestructura de TI de Contoso
 
@@ -127,7 +127,7 @@ Antes de la implementación, el departamento de TI de Contoso determinó la sigu
 | Seguridad |  |  |
 |  | Administración de identidad y acceso | Cuentas de administrador global dedicadas con la autenticación multifactor (MFA) y Azure AD Privileged Identity Management (PIM) <BR> MFA para todas las cuentas de usuario <BR> Acceso condicional <BR> Windows Hello <BR> Credential Guard de Windows Defender |
 |  | Protección contra amenazas | Advanced Threat Analytics <BR> Windows Defender <BR> Protección contra amenazas avanzada <BR> Protección contra amenazas avanzada de Office 365 <BR> Investigación y respuesta de amenazas de Office 365 <BR> |
-|  | Protección de la información | Azure Information Protection <BR> Prevención de pérdida de datos (DLP) de Office 365 <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Office 365 Cloud App Security (CAS) <BR> Microsoft Intune |
+|  | Protección de la información | Azure Information Protection <BR> Prevención de pérdida de datos (DLP) de Office 365 <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Administración de seguridad | Azure Security Center  <BR> Centro de seguridad de Windows Defender |
 | Acceso móvil y remoto, y socios comerciales |  |  |
 |  | Mejorar la seguridad de los trabajadores remotos y móviles | Microsoft Intune |
