@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Proporciona una introducción a los componentes, planes y rutas de implementación de Microsoft 365 Enterprise.
-ms.openlocfilehash: 24aacc1a992e2dfdc683e5e4c4405b105eea7bf5
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291319"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353212"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Información general de Microsoft 365 Enterprise
 
@@ -64,13 +64,17 @@ Para descargar una copia del póster, haga clic [aquí](https://github.com/Micro
 
 ## <a name="deploying"></a>Implementación
 
-Hay dos formas de implementar los productos, las características y los componentes de Microsoft 365 Enterprise:
+Hay tres formas de implementar los productos, las características y los componentes de Microsoft 365 Enterprise:
 
 1. En asociación con FastTrack
   
-   Con FastTrack, los ingenieros de Microsoft le ayudan a pasar a la nube a su propio ritmo. Consulte [FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+   Con FastTrack, los ingenieros de Microsoft le ayudan a pasar a la nube a su propio ritmo. Vea [FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Hágalo usted mismo
+2. Con la ayuda de Microsoft Consulting Services o un [socio de Microsoft](https://partner.microsoft.com/).
+
+   Los asesores pueden analizar su infraestructura actual y desarrollar un plan para incorporar todo el software y los servicios de Microsoft 365 Enterprise.
+
+3. Hágalo usted mismo
 
    La [Guía de implementación de Microsoft 365 Enterprise le guía](deploy-microsoft-365-enterprise.md) paso a paso por el proceso de creación de las cargas de trabajo de infraestructura y productividad. 
 
@@ -106,9 +110,9 @@ Para obtener más información sobre la implementación, consulte How:
 
 
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
-Inicie el [viaje de implementación de Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
+Si va a realizar la implementación usted mismo, inicie el [viaje de implementación de Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
 
 ## <a name="see-also"></a>Vea también
 

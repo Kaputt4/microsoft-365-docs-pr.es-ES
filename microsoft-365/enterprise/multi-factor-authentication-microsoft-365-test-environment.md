@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure multi-factor Authentication mediante mensajes de texto enviados a un smartphone en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 8e202936451030718c0c86601c2c621c50f78e1a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291145"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353182"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Multi-factor Authentication para su entorno de prueba de Microsoft 365 Enterprise
 
@@ -28,7 +28,7 @@ En este artículo se describe cómo habilitar y probar la autenticación basada 
   
 Hay dos fases para configurar la autenticación multifactor para una cuenta en el entorno de prueba de Microsoft 365 Enterprise:
   
-1. Cree el entorno de prueba de Microsoft 365 Enterprise.
+1. Crear el entorno de pruebas de Microsoft 365 Enterprise.
     
 2. Habilitar y probar la autenticación multifactor para la cuenta Usuario 2.
 
@@ -50,31 +50,29 @@ Si desea probar la autenticación multifactor en una empresa simulada, siga las 
 
 Siga estos pasos para habilitar la autenticación multifactor para la cuenta Usuario 2:
   
-1. Abra una instancia independiente y privada del explorador, vaya al portal de Office ([https://office.com](https://office.com)) y, a continuación, inicie sesión con su cuenta de administrador global.
+1. Abra una instancia independiente y privada del explorador, vaya al centro de administración de Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)) y, a continuación, inicie sesión con su cuenta de administrador global.
     
-2. En la página principal del portal, haga clic en **Administración**.
+2. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
-3. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
+3. En el panel usuarios activos, haga clic en **más _GT_ multi-factor Authentication Setup**.
     
-4. En el panel usuarios activos, haga clic en **más _GT_ multi-factor Authentication Setup**.
+4. En la lista, seleccione la cuenta **usuario 2** .
     
-5. En la lista, seleccione la cuenta **usuario 2** .
+5. En la sección **Usuario 2**, en **Pasos rápidos**, haga clic en **Habilitar**.
     
-6. En la sección **Usuario 2**, en **Pasos rápidos**, haga clic en **Habilitar**.
+6. En el cuadro de diálogo **Acerca de la habilitación de autenticación multifactor**, haga clic en **Habilitar Multi-Factor Auth**.
     
-7. En el cuadro de diálogo **Acerca de la habilitación de autenticación multifactor**, haga clic en **Habilitar Multi-Factor Auth**.
+7. En el cuadro de diálogo **actualizaciones correctas** , haga clic en **cerrar**.
     
-8. En el cuadro de diálogo **actualizaciones correctas** , haga clic en **cerrar**.
+8. En la pestaña **centro de administración de 365 de Microsoft** , haga clic en el icono de la cuenta de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
     
-9. En la pestaña **Página principal de Microsoft Office**, haga clic en el icono de cuenta de usuario en la esquina superior derecha y, después, en **Cerrar sesión**.
-    
-10. Cierre la instancia del explorador.
+9. Cierre la instancia del explorador.
    
 Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto con fines de validación y prueba mediante los pasos siguientes:
   
 1. Abra una nueva instancia privada del explorador.
     
-2. Vaya al portal de Office ([https://office.com](https://office.com)) e inicie sesión con la cuenta usuario 2 (usuario2 @\<Organization name>. en Microsoft. com) y la contraseña.
+2. Vaya al portal de Office 365 ([https://portal.office.com](https://portal.office.com)) e inicie sesión con el nombre de cuenta y la contraseña del usuario 2.
     
 3. Después de iniciar sesión, se le pedirá que configure la cuenta para obtener más información. Haga clic en **Siguiente**.
     
@@ -99,7 +97,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
 
 Consulte el paso [configurar la autenticación multifactor](identity-multi-factor-authentication.md#identity-mfa) en la fase de identidad para obtener información y vínculos para implementar la autenticación multifactor en producción.
     
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Explorar características de [identidad](m365-enterprise-test-lab-guides.md#identity) adicionales y funcionalidades en su entorno de prueba.
 

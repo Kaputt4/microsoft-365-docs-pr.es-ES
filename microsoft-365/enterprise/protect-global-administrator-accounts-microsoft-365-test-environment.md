@@ -13,29 +13,26 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Siga estos pasos para proteger las cuentas de administrador global en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: cded424188447f96e5614f31d3e207bb541d438e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290863"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353062"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Proteger las cuentas de administrador global en su entorno de prueba de Microsoft 365 Enterprise
 
-Puede evitar ataques digitales en su organización asegurándose de que las cuentas de administrador son lo más seguras posible. En este artículo se describe cómo usar Office 365 Cloud App Security y directivas de acceso condicional de Azure AD para proteger las cuentas de administrador global.
+Puede evitar ataques digitales en su organización asegurándose de que las cuentas de administrador son lo más seguras posible. En este artículo se describe cómo usar las directivas de acceso condicional de Azure Active Directory (Azure AD) para proteger las cuentas de administrador global.
 
 Existen dos fases para proteger las cuentas de administrador global en el entorno de prueba de Microsoft 365 Enterprise:
 
-1.  Cree el entorno de prueba de Microsoft 365 Enterprise.
+1.  Crear el entorno de pruebas de Microsoft 365 Enterprise.
 2.  Proteja su cuenta de administrador global dedicada.
 
 ![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
-
-> [!NOTE]
-> El entorno de prueba de Microsoft 365 Enterprise usa versiones E5 de Office 365 y Enterprise Management + Security (EMS). La característica de seguridad de aplicaciones en la nube de Office 365 solo está disponible en la versión de E5 Office 365. 
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 Enterprise
 
@@ -47,24 +44,9 @@ Si desea probar la protección de la cuenta de administrador global en una empre
 > [!NOTE]
 > La comprobación de la protección de la cuenta de administrador global no requiere el entorno de prueba empresarial simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda probar la protección de la cuenta de administrador global y experimentar con ella en un entorno que representa una organización típica. 
   
-## <a name="phase-2-configure-cloud-app-security-and-conditional-access-policies"></a>Fase 2: configurar la seguridad de aplicación de nube y directivas de acceso condicional
+## <a name="phase-2-configure-conditional-access-policies"></a>Fase 2: configurar directivas de acceso condicional
 
-En primer lugar, cree una directiva de seguridad de la aplicación de nube de Office 365 para supervisar la actividad de la cuenta de administrador global y enviar alertas a la dirección de correo electrónico de su cuenta de administrador global. 
-
-1. Inicie sesión en el [portal de cumplimiento de Office 365 Security &](https://protection.office.com/) con su cuenta de administrador global.
-2. En el panel de navegación izquierdo, haga clic en **alertas > de administración de alertas avanzadas**.
-3. En la página **Administrar alertas avanzadas** , haga clic en **activar Office 365 Cloud App Security**y, a continuación, haga clic en **ir a Office 365 Cloud App Security**.
-4. En la pestaña nuevo **Panel** , haga clic en **directivas de > de control**.
-5. En la página **Directiva** , haga clic en **crear Directiva**y, a continuación, haga clic en **Directiva de actividad**.
-6. En **nombre**de la Directiva, escriba **actividad administrativa**.
-7. En **Gravedad de directiva**, haga clic en **Alto**.
-8. En **categoría**, haga clic en **cuentas con privilegios**.
-9. En **crear filtros para la Directiva**, en **actividades que coincidan con todas las opciones siguientes**, haga clic en **actividad administrativa**.
-10. En **Alertas**, haga clic en **Enviar alerta como mensaje de correo electrónico**. En **Para**, escriba la dirección de correo electrónico de la cuenta de administrador global.
-11. En la parte inferior de la página, haga clic en **Crear**.
-12. Cierre la pestaña **Panel** .
-    
-A continuación, cree una nueva cuenta de usuario como administrador global dedicado.
+En primer lugar, cree una nueva cuenta de usuario como administrador global dedicado.
 
 1. En una pestaña independiente, abra el [centro de administración de Microsoft 365](https://admin.microsoft.com/).
 2. En **usuarios activos**, haga clic en **Agregar un usuario**.
@@ -113,7 +95,7 @@ Para probar la primera Directiva, cierre e inicie sesión con la cuenta Dedicate
 
 Consulte el paso [proteger las cuentas de administrador global](identity-designate-protect-admin-accounts.md#identity-global-admin) en la fase de identidad para obtener información y vínculos para proteger las cuentas de administrador global en producción.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Explorar características de [identidad](m365-enterprise-test-lab-guides.md#identity) adicionales y funcionalidades en su entorno de prueba.
 

@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del entorno de pruebas para habilitar la configuración adicional de seguridad de Microsoft 365 su entorno de prueba empresarial de Microsoft 365.
-ms.openlocfilehash: 54e05122dcbe5d4e24f092536897f2a8ad449e05
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 583d815d9f413df8aeb5ec7abaf68cf79a6cc8b9
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283660"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353122"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Aumentó la seguridad de Microsoft 365 para su entorno de prueba empresarial de Microsoft 365
 
@@ -46,16 +46,15 @@ En esta fase, se habilita una mayor seguridad de Microsoft 365 para su entorno d
 
 Las aplicaciones que no admiten la autenticación moderna no pueden tener aplicadas [configuraciones de identidad y acceso a dispositivos](microsoft-365-policies-configurations.md) , que es un elemento importante de la protección de la suscripción de Microsoft 365 y sus activos digitales. 
 
-1. Vaya al portal de Office ([https://office.com](https://office.com)) e inicie sesión en su suscripción de prueba de Office 365 con su cuenta de administrador global.
+1. Vaya al centro de administración de 365 de[https://portal.microsoft.com](https://portal.microsoft.com)Microsoft () e inicie sesión en su suscripción de laboratorio de pruebas de Office 365 con su cuenta de administrador global.
     
   - Si usa el entorno de prueba ligero de Microsoft 365, inicie sesión desde el equipo local.
     
   - Si usa el entorno de prueba de Enterprise de Microsoft 365 simulado, use [Azure portal](https://portal.azure.com) para conectarse a la máquina virtual CLIENT1 y, a continuación, inicie sesión desde cliente1.
  
-2. En la pestaña **centro de administración de 365 de Microsoft** , haga clic en **Administración**.
-3. En la nueva pestaña **centro de administración de 365 de Microsoft** , haga clic en centros de **Administración > SharePoint**.
-4. En la nueva pestaña **centro de administración de SharePoint** , haga clic en control de **acceso**.
-5. En **aplicaciones que no admiten la autenticación moderna**, haga clic en **bloquear**y, a continuación, haga clic en **Aceptar**.
+2. En la nueva pestaña **centro de administración de 365 de Microsoft** , haga clic en centros de **Administración > SharePoint**.
+3. En la nueva pestaña **centro de administración de SharePoint** , haga clic en control de **acceso**.
+4. En **aplicaciones que no admiten la autenticación moderna**, haga clic en **bloquear**y, a continuación, haga clic en **Aceptar**.
 
 
 ### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Habilitación de la protección contra amenazas avanzada para SharePoint, OneDrive para la empresa y Microsoft Teams
@@ -86,20 +85,15 @@ Para asegurarse de que el procesamiento antimalware se realice en archivos con t
 4. En el **filtro tipos comunes de datos**adjuntos, haga clic **en > guardar**.
 
 
-## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>Fase 3: examinar las herramientas y los registros de seguridad de Office 365
-
-En esta fase, se analizan los servicios integrados que informan sobre los eventos de seguridad y se mide la postura general de seguridad.
-
-### <a name="threat-management-dashboard"></a>Panel de administración de amenazas
+## <a name="phase-3-examine-the-threat-management-dashboard"></a>Fase 3: examinar el panel de administración de amenazas
 
 La administración de amenazas de Office 365 puede ayudarle a controlar y administrar el acceso de dispositivos móviles a los datos de su organización, a proteger su organización de la pérdida de datos y a proteger los mensajes entrantes y salientes del software malintencionado y el correo no deseado. También se usa la administración de amenazas para proteger la reputación del dominio y para determinar si los remitentes se falsifican de su dominio de una mala parte de las cuentas. Para obtener más información, vea [Threat Management en el centro de seguridad de Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/threat-management).
 
-
-### <a name="office-365-cloud-app-security-dashboard"></a>Panel de seguridad de aplicación de nube de Office 365
-
-Office 365 Cloud App Security, anteriormente conocido como Office 365 Advanced Security Management, le permite crear directivas que supervisan e informan de actividades sospechosas en su suscripción a Office 365, de modo que pueda investigar y hacer posible acción de corrección. Para obtener más información, vea [información general sobre Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
-
 <!--
+### Office 365 Cloud App Security dashboard
+
+Office 365 Cloud App Security, previously known as Office 365 Advanced Security Management, allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription, so that you can investigate and take possible remediation action. For more information, see [Overview of Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
+
 ### Microsoft 365 Secure Score
 
 1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.
@@ -107,7 +101,7 @@ Office 365 Cloud App Security, anteriormente conocido como Office 365 Advanced S
 !-->
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Consulte el paso [configurar mayor seguridad para Microsoft 365](infoprotect-configure-increased-security-office-365.md) en la fase de protección de la **información** para obtener información y vínculos para configurar estas opciones en producción.
 
