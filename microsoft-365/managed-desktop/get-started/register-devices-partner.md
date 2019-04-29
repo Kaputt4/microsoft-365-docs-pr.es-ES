@@ -6,11 +6,11 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
 ms.openlocfilehash: d743092fdd309c1afd748afa7523f0cc0c6a2fd0
-ms.sourcegitcommit: cf77e4bf69e6ae144563f1e764ea3437ed6fc836
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33295886"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400014"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Registrar dispositivos en el escritorio administrado por Microsoft para partners
 
@@ -70,7 +70,7 @@ Puede supervisar el progreso del registro de dispositivos en la Página principa
 | Registro pendiente | Aún no se ha realizado el registro. Vuelva a comProbarla más tarde. |
 | Error en el registro | No se pudo completar el registro. Consulte [solución de problemas](register-devices-self.md#troubleshooting) para obtener más información. |
 | Listo para el usuario | El registro se realizó correctamente y el dispositivo ya está listo para entregarse al usuario final. El escritorio administrado de Microsoft los guiará a través de la primera configuración, por lo que no es necesario que realice ninguna preparación adicional. |
-| Activos | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Esto también indica que los usuarios usan el dispositivo con regularidad. |
+| Activo | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Esto también indica que los usuarios usan el dispositivo con regularidad. |
 | Inactivo | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  |
 
 ## <a name="register-devices-by-using-an-api"></a>Registrar dispositivos con una API

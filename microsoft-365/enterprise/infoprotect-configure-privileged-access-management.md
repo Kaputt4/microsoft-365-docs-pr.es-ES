@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: Comprenda y configure la administración del acceso con privilegios para Office 365
 ms.openlocfilehash: 60b52825ead068cd0f068f78c1bbce263e8d7720
-ms.sourcegitcommit: 9d4319a015e493fb88c7e1855bca0121654eb39d
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33304160"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399954"
 ---
 # <a name="step-6-configure-privileged-access-management-for-office-365"></a>Paso 6: configurar la administración del acceso con privilegios para Office 365
 

@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se detalla el proceso de planeación, implementación y aumento del valor de Microsoft Teams en Microsoft 365 Enterprise en toda la organización.
-ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfc9e76211779aa960ff7633dd7d59b2b01e9f98
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291664"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400214"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Implementar Microsoft Teams para Microsoft 365 Enterprise
 
@@ -45,7 +45,7 @@ Estos tres grupos aseguran que la implementación de Teams incluye consideracion
 Una lista de personas que representan los aspectos empresariales, técnicos y de usuario final de su organización.
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>Paso 2: Determinar y priorizar los escenarios empresariales de Teams
-Teams se puede usar para muchas finalidades diferentes. Necesita conocer cuáles se ajustan a sus necesidades empresariales en los diferentes niveles de su organización, grupos empresariales, departamentos, equipos de trabajo y proyectos individuales. Vea ejemplos que le ayuden a definir los escenarios de Teams en la [Biblioteca de productividad de Microsoft 365 FastTrack](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1). 
+Teams se puede usar para muchas finalidades diferentes. Necesita conocer cuáles se ajustan a sus necesidades empresariales en los diferentes niveles de su organización, grupos empresariales, departamentos, equipos de trabajo y proyectos individuales. Vea ejemplos que le ayuden a definir los escenarios de Teams en la [Biblioteca de productividad de Microsoft 365 FastTrack](https://www.microsoft.com/microsoft-365/success/?rtc=1). 
 
 Debería usar Teams para abordar equipos muy colaborativos y cambiantes que trabajan estrechamente y necesitan muchos más recursos que solo el correo electrónico que puede proporcionar Exchange Online. Algunos ejemplos son chats en grupo en directo con un historial registrado y un lugar fácil de encontrar y común para almacenar archivos y notas. 
 

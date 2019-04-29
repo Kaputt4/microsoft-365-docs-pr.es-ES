@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: Obtenga información y configure los exploradores web y los dispositivos perimetrales para la omisión de tráfico a ubicaciones de confianza de Office 365.
 ms.openlocfilehash: 8486b5c0da9e44ed0b9ee42feb7acbfd21445010
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291593"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400104"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Paso 4: Configurar la omisión de tráfico
 

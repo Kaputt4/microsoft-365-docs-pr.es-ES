@@ -30,7 +30,7 @@ Siga estos pasos para comprobar que protegió las cuentas de administrador globa
 2. Inicie sesión en Office 365 con todas las cuentas del paso 1. Cada inicio de sesión tiene que exigir la autenticación multifactor y el método más seguro de autenticación secundaria disponible en su organización.
 
 > [!Note]
-> Vea [Conectarse a PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) para recibir instrucciones sobre la instalación del módulo Azure Active Directory PowerShell para Graph e iniciar sesión en Office 365.
+> Vea [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) (Conexión a PowerShell de Office 365) para obtener instrucciones de instalación de Azure Active Directory PowerShell para el módulo de Graph e inicio de sesión en Office 365.
 
 <a name="crit-identity-pim"></a>
 ### <a name="optional-you-have-set-up-privileged-identity-management-to-support-on-demand-assignment-of-the-global-administrator-role"></a>Opcional: configuró Privileged Identity Management para facilitar la asignación a petición del rol Administrador global
@@ -45,7 +45,7 @@ Si es necesario, el [paso 2](../identity-designate-protect-admin-accounts.md#ide
 
 
 <a name="crit-identity-sync"></a>
-### <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>Obligatorio: Los usuarios y los grupos se sincronizarán con Azure AD
+### <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>Obligatorio: Los usuarios y grupos se sincronizarán con Azure AD
 
 Si ya usa un proveedor de identidades local, como Active Directory Domain Services (AD DS), quiere decir que usó Azure AD Connect para sincronizar las cuentas de usuario y los grupos de su proveedor de identidades local con el espacio empresarial de Azure AD.
 
@@ -81,7 +81,7 @@ Si omite esta opción, podrá evaluar con mayor precisión el estado de su infra
 
 Si es necesario, el [paso 3](../identity-azure-ad-connect.md#identity-sync-health) puede ayudarle con esta opción.
 
-#### <a name="how-to-test"></a>Cómo probarlo
+#### <a name="how-to-test"></a>Procedimiento de prueba
 En el portal de Azure AD Connect Health, se muestra el estado actual y correcto de los servidores de identidades locales y la sincronización continuada.
 
 <a name="crit-identity-mfa"></a>
@@ -93,7 +93,7 @@ Si omite esta opción, las cuentas de usuario serán vulnerables a ciberatacante
 
 Si es necesario, el [paso 4](../identity-multi-factor-authentication.md#identity-mfa) puede ayudarle con esta opción.
 
-#### <a name="how-to-test"></a>Cómo probarlo
+#### <a name="how-to-test"></a>Procedimiento de prueba
 
 1.  Cree una cuenta de usuario de prueba en el Portal de administración de Office 365 y asigne una licencia a esta cuenta. 
 2.  Configure la autenticación multifactor para la cuenta de usuario de prueba con el método de verificación adicional que use para las cuentas de usuario reales, como el envío de un mensaje al teléfono. 
@@ -123,7 +123,7 @@ Si no cumple esta condición, los usuarios tendrán que ponerse en contacto con 
 
 Si necesita ayuda con esta opción, vea el [paso 5](../identity-password-reset.md#identity-pw-reset).
 
-#### <a name="how-to-test"></a>Cómo probarlo
+#### <a name="how-to-test"></a>Procedimiento de prueba
 
 1. Cree una cuenta de usuario de prueba con una contraseña inicial.
 2. Siga los pasos que se indican en [Dejar que los usuarios restablezcan sus propias contraseñas en Office 365](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords) para restablecer la contraseña en la cuenta de usuario de prueba.
@@ -137,7 +137,7 @@ Siguió las instrucciones que se indican en [SSPR de Azure AD con escritura dife
 
 Si omite esta opción, los usuarios que no estén conectados a la red local tendrán que pedir a un administrador de TI que restablezca o desbloquee sus contraseñas de AD DS.
 
-Si es necesario, el [paso 5](../identity-password-reset.md#identity-pw-writeback) puede ayudarle con esta opción.
+Si necesita ayuda con esta opción, vea el [paso 5](../identity-password-reset.md#identity-pw-writeback).
 
 >[!Note]
 >La escritura diferida de contraseñas es necesaria para usar todas las características de protección Azure AD Identity Protection, como solicitar a los usuarios que cambien sus contraseñas locales cuando Azure AD detecte un alto riesgo de peligro para la cuenta.
@@ -147,11 +147,11 @@ Si es necesario, el [paso 5](../identity-password-reset.md#identity-pw-writeback
 
 Puede probar la escritura diferida de contraseñas cambiando la contraseña en Office 365. Debería poder usar su cuenta y su contraseña nueva para acceder a los recursos locales de AD DS.
 
-1. Cree una cuenta de usuario de prueba en el entorno local de AD DS, permita la sincronización de directorios y, después, asigne una licencia de Office 365 en el centro de administración de Microsoft 365.
+1. Cree una cuenta de usuario de prueba en el entorno local de AD DS, permita la sincronización de directorios y asigne una licencia de Office 365 en el Centro de administración de Microsoft 365.
 2. Desde un equipo remoto unido al dominio local de AD DS, inicie sesión en el equipo y en el portal de Office con las credenciales de la cuenta de usuario de prueba.
 3. Seleccione **Configuración > Configuración de Office 365 > Contraseña > Cambiar contraseña**.
 4. Escriba la contraseña actual, la nueva contraseña y la confirmación de contraseña.
-5. Cierre la sesión del portal de Office y del equipo remoto y, después, inicie sesión en el equipo con la cuenta de usuario de prueba y su contraseña nueva. Esto comprueba que puede cambiar la contraseña de una cuenta de usuario local de AD DS usando el espacio empresarial de Azure AD.
+5. Cierre la sesión del portal de Office y del equipo remoto e inicie sesión en el equipo con la cuenta de usuario de prueba y su contraseña nueva. Esto comprueba que puede cambiar la contraseña de una cuenta de usuario local de AD DS usando el espacio empresarial de Azure AD.
 
 <a name="crit-identity-sso"></a>
 ### <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>Opcional: Los usuarios pueden iniciar sesión con el inicio de sesión único de conexión directa de Azure AD.
@@ -160,7 +160,7 @@ Habilitó [Azure AD Connect: Inicio de sesión único de conexión directa](http
 
 Si omite esta opción, se pedirá a los usuarios que proporcionen sus credenciales al obtener acceso a aplicaciones adicionales que usen Azure AD.
 
-Si es necesario, el [paso 5](../identity-password-reset.md#identity-sso) puede ayudarle con esta opción.
+Si necesita ayuda con esta opción, vea el [paso 5](../identity-password-reset.md#identity-sso).
 
 <a name="crit-identity-custom-sign-in"></a>
 ### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Opcional: La pantalla de inicio de sesión de Office 365 está personalizada para su organización
@@ -171,7 +171,7 @@ Si omitió esta opción, los usuarios verán una pantalla de inicio de sesión d
 
 Si necesita ayuda con esta opción, vea el [paso 5](../identity-password-reset.md#identity-custom-sign-in).
 
-#### <a name="how-to-test"></a>Cómo probarlo
+#### <a name="how-to-test"></a>Procedimiento de prueba
 
 Inicie sesión en el portal de Office 365 con el nombre de la cuenta de usuario y la autenticación multifactor. Verá los elementos de personalización de marca en la página de inicio de sesión.
 
@@ -184,7 +184,7 @@ Si omite esta opción, los administradores de TI tendrán que realizar todas las
 
 Si es necesario, el [paso 6](../identity-self-service-group-management.md#identity-self-service-groups) puede ayudarle con esta opción.
 
-#### <a name="how-to-test"></a>Cómo probarlo
+#### <a name="how-to-test"></a>Procedimiento de prueba
 1.  Cree una cuenta de usuario de prueba en Azure AD con Azure Portal.
 2.  Inicie sesión con la cuenta de usuario de prueba y cree un grupo de seguridad de Azure AD de prueba.
 3.  Cierre la sesión y, después, inicie sesión con la cuenta de administrador de TI.
@@ -229,11 +229,11 @@ Si omite esta opción, tendrá que realizar estos pasos de forma manual:
 
 Si es necesario, el [paso 6](../identity-self-service-group-management.md#identity-group-license) puede ayudarle con esta opción.
 
-#### <a name="how-to-test"></a>Cómo probarlo
+#### <a name="how-to-test"></a>Procedimiento de prueba
 
 1. Cree un grupo de seguridad de prueba en Azure AD con Azure Portal y configure las licencias basadas en grupos para asignar licencias de Office 365 y EMS.
 2. Cree una cuenta de usuario de prueba en Azure AD y agréguela al grupo de seguridad de prueba.
-3. Examine las propiedades de la cuenta de usuario en el centro de administración de Microsoft 365 para asegurarse de que se asignaron las licencias de Office 365 y EMS.
+3. Examine las propiedades de la cuenta de usuario en el Centro de administración de Microsoft 365 para asegurarse de que se asignaron las licencias de Office 365 y EMS.
 4. Quite la cuenta de usuario de prueba del grupo de seguridad de prueba.
 5. Examine las propiedades de la cuenta de usuario para garantizar que ya no tenga asignadas licencias de Office 365 y EMS.
 6. Elimine el grupo de seguridad de prueba y la cuenta de usuario de prueba.
