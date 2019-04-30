@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar la infraestructura de Office 365 ProPlus para Microsoft 365 Enterprise.
-ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7905bcf37f2cda0e81208a9666c257e2c871110e
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290958"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400234"
 ---
 # <a name="phase-4-office-365-proplus"></a>Fase 4: Office 365 ProPlus
 
@@ -51,7 +51,7 @@ Para obtener más información, vea [Transformación Digital con Microsoft 365](
 Si ya tiene Office 365 ProPlus implementado, consulte los [criterios de salida](office365proplus-exit-criteria.md) de esta fase para asegurarse de que cumple con las condiciones obligatorias para Microsoft 365 Enterprise.
 
 >[!Note]
->Para implementar Windows 10 Enterprise y Office 365 ProPlus juntos y cambiar a un [escritorio moderno](https://www.microsoft.com/microsoft-365/modern-desktop), consulte el [Centro de implementación de escritorio moderno](http://aka.ms/howtoshift).
+>Para implementar Windows 10 Enterprise y Office 365 ProPlus juntos consulte el [Centro de implementación de escritorio](desktop-deployment-center-home.md).
 >
 
 ## <a name="step-1-assess-your-environment"></a>Paso 1: Evaluar el entorno

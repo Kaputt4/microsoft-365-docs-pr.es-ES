@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda los recursos que puede usar para implementar Microsoft 365 Enterprise en su organización.
-ms.openlocfilehash: 3112589a023a563ff599535e1e9045a3d3db3bce
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289199"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400074"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Implementar Microsoft 365 Enterprise
 
@@ -41,7 +41,7 @@ Hay tres formas principales de implementar Microsoft 365 Enterprise:
 
 FastTrack es un beneficio continuado y repetible, disponible como parte de la suscripción, que se envía a los ingenieros de Microsoft para ayudarle a desplazarse a la nube a su ritmo. FastTrack también le da acceso a partners cualificados para servicios adicionales. Con más de 40 000 clientes habilitados hoy en día, FastTrack le ayuda a maximizar el ROI, acelerar la implementación y aumentar la adopción en toda la organización. Vea [FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-Si quiere aprovechar FastTrack para implementar Microsoft 365 Enterprise, puede usar el [Asesor de implementación de Microsoft 365](https://aka.ms/microsoft365setupguide) de FastTrack para obtener directrices sobre cómo implementar y configurar la infraestructura de base. Tenga en cuenta que debe iniciar sesión como administrador global en un espacio empresarial de Office 365 o Microsoft 365 para obtener acceso a esta página.
+Si quiere aprovechar FastTrack para implementar Microsoft 365 Enterprise, puede usar el [Asesor de implementación de Microsoft 365](https://aka.ms/microsoft365setupguide) de FastTrack para obtener directrices sobre cómo implementar y configurar la infraestructura de base. Debe iniciar sesión como administrador global en un espacio empresarial de Office 365 o Microsoft 365 para acceder a esta página.
 
 Empiece su recorrido de implementación de un extremo a otro con FastTrack [aquí](https://fasttrack.microsoft.com/microsoft365).
 

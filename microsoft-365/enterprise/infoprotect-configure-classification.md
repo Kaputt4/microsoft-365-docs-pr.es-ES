@@ -3,7 +3,7 @@ title: 'Paso 2: Configurar la clasificación para el entorno'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure varias formas de clasificar los datos de su organización.
-ms.openlocfilehash: ca64b98bceb6f969adc964e93a6a1cc872763199
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5323e4f682e8a530601308877423502f64878a4c
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286979"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400094"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Paso 2: Configurar la clasificación para el entorno
 
@@ -47,38 +47,31 @@ Los tipos de información confidencial son especialmente útiles para cumplir lo
 
 Parte de la definición de una estrategia de gobierno de datos es decidir durante cuánto tiempo deben conservarse determinados tipos de documentos o documentos con contenido específico de acuerdo con las directivas de la organización y los reglamentos regionales. Por ejemplo, algunos tipos de documentos se deben conservar durante un tiempo determinado y eliminarse después, mientras que otros deben conservarse indefinidamente.
 
-En el caso de los documentos almacenados en Microsoft 365, puede definir y aplicar etiquetas de retención a los documentos y datos almacenados en el correo electrónico de Exchange, SharePoint Online, OneDrive para la Empresa, y mensajes de canal y de chat de Teams. Para obtener más información, incluyendo cómo crearlos, vea [Introducción a las etiquetas de retención](https://docs.microsoft.com/office365/securitycompliance/labels).
+En el caso de los documentos almacenados en Microsoft 365, puede definir y aplicar etiquetas de retención a los documentos y datos almacenados en el correo electrónico de Exchange, SharePoint Online, OneDrive para la Empresa, y mensajes de canal y de chat de Teams. 
 
 Si usa etiquetas de retención, debe configurar una etiqueta para cada categoría de archivo que deba tener una directiva de retención aplicada. En la etiqueta de retención, puede especificar:
 
 - Un conjunto de descriptores para los archivos (por ejemplo, por departamento de empresa, categoría de archivo o reglamento).
-
 - La configuración de retención de los archivos que tengan la etiqueta de retención asociada, como el tiempo de conservación y el comportamiento tras haberse superado el tiempo de conservación.
 
 También puede aplicar una etiqueta de retención a los archivos automáticamente si configura un sitio de SharePoint Online para aplicar una etiqueta de retención predeterminada a todos los documentos nuevos en el sitio. 
 
-Para obtener más información, vea [Introducción a las etiquetas de retención](https://docs.microsoft.com/office365/securitycompliance/labels).
+Para obtener más información, vea la [Introducción a las etiquetas de retención](https://docs.microsoft.com/office365/securitycompliance/labels).
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
 Parte de la protección y la implementación de seguridad para determinados tipos de documentos o documentos con contenido específico consiste en marcarlos con una etiqueta para que pueda aplicar la seguridad adicional. Con las etiquetas de confidencialidad de Microsoft 365, puede:
 
 - Aplicar la configuración de protección como el cifrado, los permisos o la agregación de una marca de agua.
-
 - Impedir que salga contenido confidencial de su organización en dispositivos con Windows mediante Endpoint Protection de Microsoft Intune. 
-
 - Usar Endpoint Protection de Windows Information Protection (WIP) para impedir que el contenido se copie en una aplicación de terceros, como Twitter o Gmail, o se copie en unidades de almacenamiento extraíbles, como una unidad USB.
-
 - Proteger el contenido en los servicios y aplicaciones de terceros con Microsoft Cloud App Security. 
-
 - Clasificar contenido sin usar configuración de protección.
 
 Si usa etiquetas de confidencialidad, debe configurar una etiqueta para cada nivel de protección de información y seguridad. Por ejemplo, cree tres etiquetas de confidencialidad para:
 
 - Línea base
-
 - Confidencial
-
 - Extremadamente regulado
 
 Para obtener más información, vea [Información general de etiquetas de confidencialidad](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
@@ -102,12 +95,14 @@ Si tiene etiquetas de confidencialidad y de Azure Information Protection, debe [
 
 Para obtener un esquema de clasificación de ejemplo que incluye datos personales para el RGPD, consulte [Diseño de un esquema de clasificación de datos personales](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
 
+## <a name="take-it-for-a-test-drive"></a>Pruébelo
+
 |||
 |:-------|:-----|
-|![Guías del entorno de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: clasificación de datos](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: clasificación de datos](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step3) correspondientes a este paso.
+Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step2) correspondientes a este paso.
 
 ## <a name="next-step"></a>Paso siguiente
 

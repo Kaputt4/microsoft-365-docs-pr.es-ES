@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure la escritura diferida de contraseña para el entorno de prueba de Microsoft 365'
-ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e80c169a8aefa60c9e7b3be874a1fb26c86078b6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291455"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353172"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Escritura diferida de contraseña para el entorno de prueba de Microsoft 365
 
@@ -55,9 +55,9 @@ Esta configuración se compone de:
 
 En primer lugar, configure la cuenta del Usuario 1 con el rol de administrador global.
 
-1. Desde el [portal de Office](https://office.com), inicie sesión con su cuenta de administrador global.
+1. Desde el [Centro de administración de Microsoft 365](https://portal.microsoft.com), inicie sesión con su cuenta de administrador global.
 
-2. Haga clic en el icono **Administración**. En la nueva pestaña del explorador **Centro de administración de Microsoft 365**, haga clic en **Usuarios activos**.
+2. Haga clic en **Usuarios activos**.
  
 3. En la página **Usuarios activos**, haga clic en la cuenta **usuario1**.
 

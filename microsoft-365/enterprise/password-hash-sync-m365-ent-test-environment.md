@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y muestre la sincronización de hash de contraseñas e inicie sesión en su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 9a907894d4f842b334403d047cabbdeb42217744
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290998"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353161"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
@@ -101,21 +101,19 @@ Primero, instale y configure Azure AD Connect en APP1.
     
 9. En la página **Listo para configurar**, haga clic en **Instalar**.
     
-10. En la página **Configuración completada**, haga clic en **Salir**.
+10. En la página **Configuración completada** de página, haga clic en **Salir**.
     
-11. En Internet Explorer, vaya al portal de Office ([https://office.com](https://office.com)).
+11. En Internet Explorer, vaya al Centro de administración de Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)).
     
-12. En la página principal del portal, haga clic en **Administración**.
-    
-13. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
+12. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
     Observe la cuenta llamada **Usuario1**. Esta cuenta pertenece al dominio de AD DS de TESTLAB y es una prueba de que la sincronización de directorios funcionó correctamente.
     
-14. Haga clic en la cuenta **Usuario1**. Para licencias de productos, haga clic en **Editar**.
+13. Haga clic en la cuenta **Usuario1**. Para licencias de productos, haga clic en **Editar**.
     
-15. En **Licencias de productos**, seleccione su país y después haga clic en el control **Desactivado** de **Office 365 Enterprise E5** (para cambiarlo a **Activado**). Haga lo mismo para la licencia de **Enterprise Mobility + Security E5**. 
+14. En **Licencias de productos**, seleccione su país y después haga clic en el control **Desactivado** de **Office 365 Enterprise E5** (para cambiarlo a **Activado**). Haga lo mismo para la licencia de **Enterprise Mobility + Security E5**. 
 
-16. Haga clic en **Guardar** en la parte inferior de la página y después haga clic en **Cerrar**.
+15. Haga clic en **Guardar** en la parte inferior de la página y después haga clic en **Cerrar**.
     
 Después, compruebe si puede iniciar sesión en su suscripción de Office 365 con el nombre de usuario <strong>user1@testlab.</strong>\< su nombre de dominio > nombre de usuario de la cuenta Usuario1.
 

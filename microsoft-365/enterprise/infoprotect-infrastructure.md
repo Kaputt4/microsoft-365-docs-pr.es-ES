@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar la infraestructura de protección de la información para Microsoft 365 Enterprise.
-ms.openlocfilehash: 821c32eea09cde87155d0ee1ccdd81077d051d38
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a0d2c485b05e0969fe45cfd79c86e4e7dcb1d5ff
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287659"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400004"
 ---
 # <a name="phase-6-information-protection"></a>Fase 6: Protección de la información
 
@@ -41,7 +41,9 @@ Después, siga este procedimiento para preparar la protección de la informació
 |![](./media/stepnumbers/Step1.png)|[Definir los niveles de protección de la información y la seguridad](infoprotect-define-sec-infoprotect-levels.md)|
 |![](./media/stepnumbers/Step2.png)|[Configurar la clasificación para el entorno](infoprotect-configure-classification.md)|
 |![](./media/stepnumbers/Step3.png)|[Configurar Microsoft 365 con una mayor seguridad](infoprotect-configure-increased-security-office-365.md)|
-|![](./media/stepnumbers/Step4.png)|[Configurar Privileged Access Management para Office 365](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step4.png)|[Configurar Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![](./media/stepnumbers/Step5.png)|[Configurar la Prevención de pérdida de datos de Office 365](infoprotect-data-loss-prevention.md)|
+|![](./media/stepnumbers/Step6.png)|[Configurar Privileged Access Management para Office 365](infoprotect-configure-privileged-access-management.md)|
 
 
 Cuando complete estos pasos, vaya a los [criterios de salida](infoprotect-exit-criteria.md) de esta fase para asegurarse de que cumple con las condiciones obligatorias y opcionales de Microsoft 365 Enterprise.
