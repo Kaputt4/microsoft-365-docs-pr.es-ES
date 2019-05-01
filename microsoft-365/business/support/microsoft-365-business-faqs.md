@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, preguntas frecuentes, preguntas más frecuentes, respuestas, empresa
 ms.date: 06/08/2018
-ms.openlocfilehash: 1e277aed366d82e524ef99c43ab0401b5d35e5b0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bdcfd6a78278aff83b3fc21ae0fbb43bce140a16
+ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286137"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497760"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Preguntas más frecuentes (puede estar en inglés) sobre Microsoft 365 Empresa.
 
@@ -116,7 +116,7 @@ Los clientes que quieran aprovechar las capacidades completas de Microsoft 365 E
 El camino más directo a una implementación de Microsoft 365 Empresa correcta es a través de un partner de Microsoft. Él cuenta con amplia entrenamiento y experiencia en una variedad de escenarios de cliente y está mejor preparado para comprender tus necesidades y entorno. Los clientes que cuentan con personal de TI experimentado pueden usar <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Introducción a Microsoft 365 Empresa</a> para ayudarlos en su implementación de Microsoft 365 Empresa. 
 
 ### <a name="does-microsoft-365-business-include-the-full-capabilities-of-microsoft-intune"></a>¿Microsoft 365 Empresa incluye las capacidades completas de Microsoft Intune? 
-Sí, los suscriptores de Microsoft 365 Business tienen licencia para usar capacidades completas de Intune para iOS, Android, MacOS y otra administración de dispositivos entre plataformas. Las características que no están disponibles en la consola de administración simplificada de Microsoft 365 empresa, como la administración de aplicaciones de terceros y la configuración de los perfiles de WiFi, los certificados de VPN, etc., se pueden administrar en la consola de Intune completa.   
+Sí, los suscriptores de Microsoft 365 Business tienen licencia para usar capacidades completas de Intune para iOS, Android, MacOS y otra administración de dispositivos entre plataformas. Las características que no están disponibles en la consola de administración simplificada de Microsoft 365 empresa, como la administración de aplicaciones de terceros y la configuración de los perfiles WiFi, los certificados VPN, etc., se pueden administrar en la consola de Intune completa. Tiene derechos para usar Configuration Manager para administrar clientes cubiertos por la licencia de EMS. Para consultas relacionadas con SCCM, vea <a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">preguntas más frecuentes de SCCM</a>
   
 
 ### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>¿Azure Active Directory Premium P1 incluye Microsoft 365 Business? 
