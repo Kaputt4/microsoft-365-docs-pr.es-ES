@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Proporciona una introducción a los componentes, planes y rutas de implementación de Microsoft 365 Enterprise.
-ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353212"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553339"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Información general de Microsoft 365 Enterprise
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise consta de:
 
 |||
 |:-------|:-----|
-| Office 365 Enterprise | Incluye Office 365 proPlus, las aplicaciones de Office más recientes para su PC y Mac (como Word, Excel, PowerPoint, Outlook y otros) y un conjunto completo de servicios en línea para el correo electrónico, el almacenamiento de archivos y la colaboración, reuniones y mucho más. |
+| Office 365 Enterprise | Incluye Office 365 ProPlus, las aplicaciones de Office más recientes para su PC y Mac (como Word, Excel, PowerPoint, Outlook y otros) y un conjunto completo de servicios en línea para el correo electrónico, el almacenamiento de archivos y la colaboración, reuniones y mucho más. |
 | Windows 10 Enterprise | Aborda las necesidades de organizaciones grandes y medianas, lo que proporciona a los usuarios la versión más productiva y segura de Windows y profesionales de TI con una completa administración de aplicaciones, dispositivos y implementación. |
 | Enterprise Mobility + Security (EMS) | Incluye Microsoft Intune, que es un servicio de administración de movilidad empresarial (EMM) basado en la nube que ayuda a permitir que el personal sea productivo mientras los datos de la empresa se mantienen protegidos. |
 |||
@@ -86,7 +86,7 @@ Para obtener más información sobre la implementación, consulte How:
 
 ## <a name="additional-microsoft-365-solutions"></a>Soluciones adicionales de Microsoft 365
 
-- [Microsoft 365 empresa](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Empresa](https://docs.microsoft.com/microsoft-365/business/)
  
   Reúna las mejores capacidades de productividad y colaboración de Office 365 con soluciones de seguridad y administración de dispositivos para proteger los datos empresariales para pequeñas y medianas empresas (PYMES).
 
@@ -98,16 +98,11 @@ Para obtener más información sobre la implementación, consulte How:
  
   Permita a los empleados del sector público de Estados Unidos trabajar juntos de forma segura.
 
-
-
 ## <a name="microsoft-365-training"></a>Aprendizaje de Microsoft 365
 
 |||
 |:-------|:-----|
 ![](./media/m365-poster/m365-fundamentals.svg)| Obtenga formación y trabaje para obtener una certificación de 365 de Microsoft. <BR> Comience con los [conceptos básicos de Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
-
-
-
 
 
 ## <a name="next-step"></a>Paso siguiente
