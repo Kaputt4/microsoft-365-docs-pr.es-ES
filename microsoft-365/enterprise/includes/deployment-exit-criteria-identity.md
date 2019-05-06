@@ -65,7 +65,7 @@ Para comprobar que la autenticación con las credenciales locales funcione corre
 
 Para comprobar que la sincronización de directorios funcione correctamente, siga este procedimiento:
 
-1.  Crear un nuevo grupo de prueba en Active Directory Domain Services (AD DS).
+1.  Crear un nuevo grupo de prueba en AD DS.
 2.  Espere hasta la hora de sincronización.
 3.  Compruebe que el nuevo nombre de grupo de prueba se muestre en el espacio empresarial de Azure AD.
 

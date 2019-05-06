@@ -3,7 +3,7 @@ title: Configuración básica empresarial simulada para Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 05/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilice esta guía de laboratorio de pruebas para crear un entorno de prueba empresarial simulado para Microsoft 365 Enterprise.
-ms.openlocfilehash: 7c16f6fee480e883f7bf87d3b03441cf18e8f73f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 173622666420976199709d311ef67a7f0be3d867
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290853"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553379"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>La configuración básica empresarial simulada
 
 En este artículo se ofrecen instrucciones paso a paso para crear un entorno simplificado para Microsoft 365 Enterprise que incluye:
 
-- Suscripciones de prueba o de pago de Office 365 E5 y EMS E5.
+- Una suscripción de prueba o de pago de Microsoft 365 E5.
 - Una intranet de organización simplificada conectada a Internet, que consta de tres máquinas virtuales en una red virtual de Azure (DC1, APP1 y CLIENTE1).
  
 ![La configuración básica empresarial simulada](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
@@ -125,7 +125,7 @@ $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
 ```
 
-A continuación, cree la máquina virtual DC1 y configúrela como controlador de dominio para el dominio de Active Directory Domain Services (AD DS) con el nombre **testlab.**\< su dominio público> y un servidor DNS para las máquinas virtuales de la red virtual de TestLab. Por ejemplo, si el nombre de dominio público es **<span>contoso</span>.com**, la máquina virtual DC1 será un controlador de dominio para el dominio **<span>testlab</span>.contoso.com**.
+Después cree la máquina virtual DC1 y configúrela como controlador de dominio para el **testlab.**\<su dominio público> dominio de AD DS y un servidor DNS para las máquinas virtuales de la red virtual de TestLab. Por ejemplo, si el nombre de dominio público es **<span>contoso</span>.com**, la máquina virtual DC1 será un controlador de dominio para el dominio **<span>testlab</span>.contoso.com**.
   
 Para crear una máquina virtual de Azure para DC1, indique el nombre de su grupo de recursos y ejecute estos comandos desde el símbolo del sistema de PowerShell en su equipo local.
   
@@ -349,54 +349,63 @@ Esta es su configuración actual.
 ![Paso 3 de la configuración básica empresarial simulada](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
-## <a name="phase-2-create-your-office-365-e5-and-ems-e5-subscriptions"></a>Fase 2: crear las suscripciones de Office 365 E5 y EMS E5
+## <a name="phase-2-create-your-microsoft-365-e5-subscriptions"></a>Fase 2: cree la suscripción de Microsoft 365 E5
 
-En esta fase, creará nuevas suscripciones de Office 365 E5 y EMS E5 que usan un inquilino de Azure AD común y nuevo inquilino, que es independiente de su suscripción de producción. Puede hacer esto de dos maneras:
+En esta fase, creará una nueva suscripción de Microsoft 365 E5 que usa un nuevo inquilino de Azure AD, que es independiente de su suscripción de producción. Puede hacer esto de dos maneras:
 
-- Usar las suscripciones de prueba de Office 365 E5 y EMS E5. 
+- Usar una suscripción de prueba de Microsoft 365 E5. 
 
-  La suscripción de prueba de Office 365 E5 es de 30 días, que puede ampliarse fácilmente a 60 días. La suscripción de prueba de EMS E5 es de 90 días. Cuando las suscripciones de prueba expiren, debe convertirlas en suscripciones de pago o crear nuevas suscripciones de prueba. Crear nuevas suscripciones de prueba significa que perderá la configuración, que podría incluir escenarios complejos.  
-- Usar una suscripción de producción independiente de Microsoft 365 Enterprise con un pequeño número de licencias.
+  La suscripción de prueba de Microsoft 365 E5 es de 30 días, que puede ampliarse fácilmente a 60 días. Cuando la suscripción de prueba expire, debe convertirla en suscripción de pago o crear una nueva suscripción de prueba. Crear nuevas suscripciones de prueba significa que perderá la configuración, que podría incluir escenarios complejos.  
+- Usar una suscripción de producción independiente de Microsoft 365 E5 con un pequeño número de licencias.
 
   Esto supone un coste adicional, pero garantiza que dispone de un entorno de prueba funcional para probar escenarios, características y configuraciones que no caduca. Puede usar el mismo entorno de prueba a largo plazo para pruebas de concepto, demostraciones a compañeros y jefes, y desarrollar aplicaciones y probarlas. Este es el método recomendado.
 
 ### <a name="use-trial-subscriptions"></a>Usar suscripciones de prueba
 
-Si debe utilizar suscripciones de prueba, siga los pasos de la fase 2 y de la fase 3 del [entorno de desarrollo y pruebas de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
-  
-Después, inscríbase en la suscripción de evaluación de EMS E5 y agréguela a la misma organización que la suscripción de Office 365 E5.
-  
-En primer lugar, agregue la suscripción de evaluación de EMS E5 y asigne una licencia EMS a su cuenta de administrador global.
-  
-1. Con una instancia privada de un explorador de Internet, inicie sesión en el portal de Office con sus credenciales de cuenta de administrador global. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+Primero, siga los pasos los pasos de Fase 2 y Fase 3 del [entorno de desarrollo y prueba de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) para crear un entorno de desarrollo y prueba ligero de Office 365.
+
+>[!Note]
+>Tenemos que crear una suscripción de prueba de Office 365 para que su entorno de desarrollo y prueba tenga un espacio empresarial de Azure AD separado de cualquier suscripción de pago que tenga actualmente.  Esta separación significa que puede agregar y quitar usuarios y grupos en el espacio empresarial de prueba sin que afecte a las suscripciones de producción.
+>
+
+Después agregue la suscripción de prueba de Microsoft 365 E5 y asigne una licencia de Microsoft 365 a su cuenta de administrador global.
+
+1. Con una instancia privada de un explorador de Internet, inicie sesión en el Centro de administración de Microsoft 365 en [http://admin.microsoft.com](http://admin.microsoft.com) con sus credenciales de cuenta de administrador global.
     
-2. Haga clic en el icono **Administración**.
+2. En la página **Centro de administración de Microsoft 365**, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
-3. En la pestaña del explorador **centro de administración de Microsoft 365**, situada a la izquierda, haga clic en **Facturación > Servicios de compra**.
-    
-4. En la página **Servicios de compra**, busque el elemento **Enterprise Mobility + Security E5**. Mantenga el puntero del mouse sobre ese elemento y haga clic en **Iniciar prueba gratuita**.
-    
+3. En la página **Servicios de compra**, busque el elemento **Microsoft 365 E5**. Mantenga el puntero del ratón sobre dicho elemento y haga clic en **Iniciar prueba gratuita**. 
+
+4. En la página de la **Versión de prueba de Microsoft 365 E5**, elija entre recibir una llamada o un mensaje de texto, escriba el número de teléfono y haga clic en **Enviarme un mensaje de texto** o **Llamarme**.
+
 5. En la página **Confirmar pedido**, haga clic en **Probar ahora**.
-    
+
 6. En la página **Recibo del pedido**, haga clic en **Continuar**.
-    
-7. En el panel de navegación izquierdo de la pestaña **Centro de administración de Office 365** del explorador, haga clic en **Usuarios > Usuarios activos**.
-    
-8. Haga clic en la cuenta de administrador global y, después, en **Editar** para **Licencias de productos**.
-    
-9. En el panel **Licencias de productos**, cambie la licencia del producto de **Enterprise Mobility + Security E5** a **Activada**, seleccione **Guardar** y, después, haga clic en **Cerrar** dos veces.
-    
+
+7. En el Centro de administración de Microsoft 365, haga clic en **Usuarios activos** y en su cuenta de administrador.
+
+8. Haga clic en **Editar** para **Licencias de productos**.
+
+9. Desactive la licencia para Office 365 Enterprise E5 y active la licencia de Microsoft 365 E5.
+
+10. Haga clic en **Guardar > Cerrar > Cerrar**.
+
+ ***Si ha completado la fase 3 del*** [entorno de desarrollo y prueba de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), repita los pasos 8 al 11 del procedimiento anterior para las demás cuentas (usuario 2, usuario 3, usuario 4 y usuario 5).
+  
 > [!NOTE]
->  Para tener un entorno de prueba permanente, cree una nueva suscripción de pago con unas pocas licencias. 
+> La suscripción de prueba de Microsoft 365 E5 tiene una duración de 30 días. Para tener un entorno de prueba permanente, convierta esta suscripción de prueba en una suscripción de pago con unas pocas licencias.
   
-Después, repita los pasos 8 y 9 del procedimiento anterior para las demás cuentas (usuario 2, usuario 3, usuario 4 y usuario 5).
+Su entorno de desarrollo y prueba ahora tiene:
   
+- Una suscripción de prueba de Microsoft 365 E5.
+- Todas las cuentas de usuario adecuadas (ya sea solo la cuenta de administrador global o las cinco cuentas de usuario) están habilitadas para usar Microsoft 365 E5.
+    
 ### <a name="results"></a>Resultados
 
 Su entorno de desarrollo y prueba ahora tiene:
   
-- Suscripciones de evaluación de Office 365 E5 Enterprise y EMS E5 que comparten el mismo espacio empresarial de Azure AD con la lista de cuentas de usuario.
-- Todas las cuentas de usuario adecuadas (ya sea solo la cuenta de administrador global o las cinco cuentas de usuario) están habilitadas para usar Office 365 E5 y EMS E5.
+- Suscripción de prueba de Microsoft 365 E5.
+- Todas las cuentas de usuario adecuadas (ya sea solo la cuenta de administrador global o las cinco cuentas de usuario) están habilitadas para usar Microsoft 365 E5.
     
 Esta es la configuración final.
   

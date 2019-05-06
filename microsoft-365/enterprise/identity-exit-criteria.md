@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumpla los criterios de Microsoft 365 Enterprise para la infraestructura y los servicios basados en identidades.
-ms.openlocfilehash: e36f6e88c41454a951f6c6da4253c4bac07f2fb8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0f2d1cbeef87301729b23a6290277b28466c9770
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285559"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553309"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Fase 2: Criterios de salida de infraestructura de identidades
 
@@ -93,7 +93,7 @@ Para comprobar que la autenticación con las credenciales locales funcione corre
 
 Para comprobar que la sincronización de directorios funcione correctamente, siga este procedimiento:
 
-1.  Crear un nuevo grupo de prueba en Active Directory Domain Services (AD DS).
+1.  Crear un nuevo grupo de prueba en AD DS.
 2.  Espere hasta la hora de sincronización.
 3.  Compruebe que el nuevo nombre de grupo de prueba se muestre en el espacio empresarial de Azure AD.
 

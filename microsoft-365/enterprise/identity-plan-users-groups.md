@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Planee el conjunto de usuarios y grupos que funcionarán para su organización.
-ms.openlocfilehash: f8b3df73518e33c7750c0b72b2cb9f36bc8e9745
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c74ff672ce84a5609c11eb4fa7a0405d350349ab
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283807"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553299"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>Paso 1: Planear los usuarios y grupos
 
@@ -42,7 +42,7 @@ Cuando su organización adopte Microsoft 365 Enterprise, el proveedor de identid
 - **Active Directory Domain Services (AD DS)**, un proveedor de identidades de intranet hospedado en equipos que ejecutan Windows Server. Normalmente lo usan organizaciones que tienen un proveedor de identidades local existente.
 - **Azure Active Directory (Azure AD)**, una identidad como servicio (IDaaS) basada en la nube que ofrece una amplia variedad de funciones para administrar y proteger su entorno. Esta opción suelen usarla las organizaciones que no tienen una infraestructura local existente.
 
-Si su organización ya cuenta con un proveedor de identidades local, necesita sincronizar las cuentas de usuario y grupos de Active Directory Domain Services (AD DS) con Azure AD para ofrecer un acceso más fluido a los servicios basados en la nube de Microsoft 365 Enterprise. También puede usar Azure AD para crear y administrar grupos que solo existan en la nube de Microsoft.
+Si su organización ya cuenta con un proveedor de identidades local, necesita sincronizar las cuentas de usuario y grupos de AD DS con Azure AD para ofrecer un acceso más fluido a los servicios basados en la nube de Microsoft 365 Enterprise. También puede usar Azure AD para crear y administrar grupos que solo existan en la nube de Microsoft.
 
 Cuando tenga los usuarios y grupos en Azure AD, puede:
 
