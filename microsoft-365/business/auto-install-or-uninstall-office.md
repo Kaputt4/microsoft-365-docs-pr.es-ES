@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 'Instale o desinstale Office en dispositivos Windows 10 desde el centro de administración empresarial de Microsoft 365. '
-ms.openlocfilehash: fef4a543aed489202bf05dfb1e8cafbb784ca819
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 94e5761b516c150caa11048be73d97f468b09fb5
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660617"
 ---
 # <a name="automatically-install-or-uninstall-office-on-windows-10-devices"></a>Instalar o desinstalar automáticamente Office en dispositivos Windows 10
+
+![Pancarta que apunta a https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
 Puede instalar Office rápida y fácilmente en equipos Windows 10 desde el centro de administración de Microsoft 365 Business.
   

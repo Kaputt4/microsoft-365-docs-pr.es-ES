@@ -21,20 +21,22 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Obtenga información sobre cómo crear, editar o eliminar una directiva de administración de aplicaciones y proteger los archivos de trabajo en dispositivos Android o iOS.
-ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 04479360bf13a8ff685a91ed95440c08f8cf80b4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660592"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 
+![Pancarta que apunta a https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 ## <a name="create-an-app-management-policy"></a>Crear una directiva de administración de aplicaciones
 
-1. Inicie sesión en el [centro de administración de Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=837890) con credenciales de administrador global. 
+1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. En el centro de administración, elija **directivas** \> de **dispositivos** \> **Agregar Directiva**.
+2. En el panel de navegación izquierdo, elija **Agregar** **directivas** \> de **dispositivos** \> .
   
 3. En el panel **Agregar directiva**, escriba un nombre único para esta directiva. 
     
@@ -62,9 +64,9 @@ ms.locfileid: "32277467"
     
 ## <a name="delete-an-app-management-policy"></a>Eliminar una directiva de administración de aplicaciones
 
-1. En la tarjeta **Directivas**, seleccione **Eliminar directiva**.
+1. En la página **directivas** , elija una directiva y, a continuación, **eliminar**.
     
-2. En el panel **Eliminar directiva**, elija las directivas que quiere eliminar \> **Seleccionar** y después **Confirmar** para eliminar la directiva o las directivas que haya elegido. 
+2. En el panel **eliminar Directiva** , seleccione **confirmar** para eliminar la Directiva o las directivas que ha elegido. 
     
 ## <a name="available-settings"></a>Configuración disponible
 
@@ -78,7 +80,7 @@ Las siguientes opciones de configuración permiten proteger archivos de trabajo 
   
 |||
 |:-----|:-----|
-|Configuración  <br/> |Descripción  <br/> |
+|Valor  <br/> |Descripción  <br/> |
 |Eliminar archivos de trabajo de un dispositivo inactivo después de este número de días  <br/> |Si un dispositivo no se usa durante el número de días que especifique aquí, los archivos de trabajo almacenados en el dispositivo se eliminarán automáticamente.  <br/> |
 |Exigir que los usuarios guarden todos los archivos de trabajo en OneDrive para la Empresa  <br/> |Si esta configuración está **activada**, la única ubicación de almacenamiento disponible para los archivos de trabajo será OneDrive para la Empresa.  <br/> |
 |Cifrar los archivos de trabajo  <br/> |Mantenga **activada** esta opción para proteger con cifrado los archivos de trabajo. Incluso en caso de pérdida o robo del dispositivo, nadie podrá leer los datos de la compañía.  <br/> |
@@ -89,7 +91,7 @@ Las siguientes opciones de configuración permiten administrar la forma en que l
   
 |||
 |:-----|:-----|
-|Configuración  <br/> |Descripción  <br/> |
+|Valor  <br/> |Descripción  <br/> |
 |Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office  <br/> |Si esta configuración está **Activada**, los usuarios tienen que proporcionar otra forma de autenticación, además de su nombre de usuario y contraseña, para poder usar aplicaciones de Office en su dispositivo móvil.  <br/> |
 |Restablecer el PIN cuando no se haya podido iniciar sesión el siguiente número de veces  <br/> |Para impedir que un usuario no autorizado adivine aleatoriamente un PIN, este se restablecerá después de que se escriba de forma errónea el número de veces que especifique.  <br/> |
 |Requerir que los usuarios inicien sesión de nuevo si las aplicaciones de Office han estado inactivas durante  <br/> |Esta configuración determina cuánto tiempo puede estar inactivo un usuario antes de que se le pida que vuelva a iniciar sesión.  <br/> |

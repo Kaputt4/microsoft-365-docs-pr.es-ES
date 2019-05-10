@@ -21,14 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Obtenga información sobre cómo implementar Office automáticamente en dispositivos con Windows 10 durante la instalación.
-ms.openlocfilehash: 3b702f2a57fcd0ebffc51e17ed6af00e8f1c485b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b4359a18d93800def558121cdfd7c97ead058180
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278311"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660680"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Instalar Office en Windows 10 durante la configuración
+
+![Pancarta que apunta a https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
 Esta opción está desactivada de forma predeterminada. Puede activarla para asegurarse de que los usuarios tengan la versión más reciente de Office ejecutándose en todos sus dispositivos con Windows 10, pero primero necesita comprobar que se cumplan todos los requisitos previos. Los usuarios necesitan tener una licencia de Microsoft 365 Business para que esta opción inserte el software en el dispositivo, además de otros requisitos descritos en [Preparar una implementación de clientes de Office con Microsoft 365 Business](prepare-for-office-client-deployment.md). 
   

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración predeterminada y otras opciones disponibles en Microsoft 365 Business para proteger los dispositivos Windows 10.
-ms.openlocfilehash: f9e890cde7a8290a9a8e81720d32a6a2889c312f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5dc6ede8f31f5837d59c200e0b76083dcf419e05
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285936"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660407"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Establecer la configuración de protección de dispositivos para equipos con Windows 10
 
@@ -34,7 +34,7 @@ Vea un vídeo sobre cómo proteger los dispositivos Windows 10 con Microsoft 365
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. Inicie sesión en el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=837890) con credenciales de administrador global. 
+1. SGo al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
 2. En el panel de navegación izquierdo, elija **Agregar** **directivas** \> de **dispositivos** \> .
   
@@ -60,7 +60,7 @@ Para obtener más información, vea [Asignar características de protección de 
   
 |||
 |:-----|:-----|
-|Configuración  <br/> |Descripción  <br/> |
+|Valor  <br/> |Descripción  <br/> |
 |Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  <br/> |Es necesario que el antivirus Windows Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
 |Usar reglas que reducen la superficie expuesta a ataques de los dispositivos  <br/> |Al activar la reducción de la superficie expuesta a ataques, se bloquean acciones y aplicaciones que suelen usarse en ataques de malware para infectar dispositivos. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Reducir las superficies expuestas a ataques](https://go.microsoft.com/fwlink/?linkid=870417).  <br/> |
