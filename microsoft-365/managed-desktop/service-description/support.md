@@ -7,18 +7,18 @@ author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2e88f629764fa1c19a4a2d53337ebaebc7c173b8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 97637f28f5a5de292385a36472966f3272b2f09a
+ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278525"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970467"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Soporte para escritorio administrado de Microsoft
 
-Los dispositivos de escritorio administrados por Microsoft se administran y se reparan o sustituyen por Microsoft según el contrato de garantía. Microsoft le proporcionará una administración de incidentes proactiva y reactiva. Microsoft realiza un seguimiento de los incidentes en el portal de administración de escritorio administrado de Microsoft. Se clasifican según las [definiciones de gravedad](../working-with-managed-desktop/admin-support.md#sev).
+Microsoft le proporcionará una administración de incidentes proactiva y reactiva. Microsoft realiza un seguimiento de los incidentes en el portal de administración de escritorio administrado de Microsoft. Se clasifican según las [definiciones de gravedad](../working-with-managed-desktop/admin-support.md#sev).
 
-Los clientes pueden ponerse en contacto con Microsoft manAged Desktop Operations para:
+Los clientes pueden ponerse en contacto con Microsoft Managed Desktop Operations para:
 - Solicitudes de información sobre la configuración o el inquilino de escritorio administrado de Microsoft
 - Solicitudes de cambio a la configuración de dispositivos de escritorio administrados de Microsoft
 - Informar de un incidente o una interrupción
@@ -34,7 +34,7 @@ Soporte técnico de Microsoft administrado para equipos de escritorio:
 Productos compatibles:
 
 - Windows 10 con protección contra amenazas avanzada de Windows Defender (WDATP) 
-- SubConjunto de Microsoft 365 E3 Suite: Outlook, Word, PowerPoint, Excel, cliente de Skype empresarial, Microsoft Teams 
+- Subconjunto del conjunto de aplicaciones de Office 365: Outlook, Word, PowerPoint, Excel, cliente de Skype empresarial, Microsoft Teams 
 - Microsoft Store para Empresas 
 - Cliente de OneDrive para la empresa 
 
