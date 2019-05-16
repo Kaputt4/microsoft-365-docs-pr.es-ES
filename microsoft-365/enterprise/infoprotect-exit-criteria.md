@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Examine los criterios para la infraestructura y los servicios basados en la protección de información a fin de asegurarse de que su configuración cumple los requisitos de Microsoft 365 Enterprise.
-ms.openlocfilehash: 9c74a3994a1a404583326f65f1cec579fccbe659
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 267a6efaef5a5bcfb0ec9f8e0e9f33d525f5ce74
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400044"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071950"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Criterios de salida de infraestructura de protección de información
 
@@ -82,7 +82,7 @@ Si es necesario, el [Paso 4](infoprotect-deploy-windows-information-protection.m
 <a name="crit-infoprotect-step5"></a>
 ## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>Opcional: Prevención de pérdida de datos (DLP) de Office 365 está implementada
 
-Ha analizado, probado e implementado el conjunto de directivas DLP, con ubicaciones y reglas con condiciones y acciones, que su organización necesita para proteger los clientes y otros tipos de datos privados y ajustarse a normativas y requisitos regionales y del sector.
+Tiene analizado, probar y, a continuación, implementan el conjunto de directivas DLP, con las ubicaciones y reglas con condiciones y acciones, que su organización necesita para proteger los clientes y otros tipos de datos privados y se ajusten a normativas regionales y del sector y requisitos.
 
 El personal de cumplimiento y seguridad de datos usa el panel de seguridad y cumplimiento de Office 365 para supervisar incidentes de DLP.
 
