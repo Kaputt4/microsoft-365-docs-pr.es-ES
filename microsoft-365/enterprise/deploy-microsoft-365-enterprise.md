@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 04/23/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda los recursos que puede usar para implementar Microsoft 365 Enterprise en su organización.
-ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: ac3e023f6a9364f6b9de23cd5b91d0d6fb6dbf1b
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400074"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072500"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Implementar Microsoft 365 Enterprise
 
@@ -136,60 +136,23 @@ Consulte estos recursos para obtener información acerca de cómo los clientes u
   
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Eche un vistazo dentro de Microsoft IT y aprenda cómo implementaron Microsoft 365 Enterprise y cómo los empleados de Microsoft usan a diario.
+Definir una cultura digital es una prioridad principal para cada líder que se esfuerza por fomentar un lugar de trabajo moderno. Microsoft 365 se ha diseñado para admitir este tipo de cambio cultural, para que los líderes puedan ayudar a todos los usuarios de sus empresas a desatar la creatividad y promover la colaboración. En Microsoft, el establecimiento de nuestra infraestructura base ha provocado exactamente este tipo de cambio de la cultura digital. La implementación de Microsoft 365 Enterprise nos ha permitido implementar la tecnología de colaboración, como Microsoft Teams y Exchange Online, y compartir los datos confidenciales en línea en sitios de intranet seguros de SharePoint.
 
-#### <a name="networking"></a>Conexión de red
+Al mismo tiempo, las características de seguridad inteligente y la integración del producto ayudan a simplificar las necesidades de administración y reducir el costo total de propiedad en el ciclo de vida de TI. 
 
-- [Optimizing network performance for Microsoft Office 365 (Optimizar el rendimiento de red de Microsoft Office 365)](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)
+Obtenga información sobre cómo Core Services Engineering and Operations (anteriormente Microsoft IT) [planifica e implementa una base](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365) para admitir aplicaciones y servicios que desatan la creatividad y facilitan el trabajo en equipo en un entorno seguro.
 
-#### <a name="identity"></a>Identidad
-
-- [Managing user identities and secure access at Microsoft (Administración de identidades de usuario y el acceso seguro de Microsoft)](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
-- [Using Azure AD Privileged Identity Management for elevated access (Uso de Azure AD Privileged Identity Management para un acceso elevado)](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
-
-#### <a name="windows-10-enterprise"></a>Windows 10 Enterprise
-
-- [Preparing your organization for a seamless Windows 10 deployment (Preparar la organización para una implementación perfecta de Windows 10)](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [Adopting Windows as a service at Microsoft (Adoptar Windows como servicio en Microsoft)](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [Deploying Windows 10 at Microsoft as an in-place upgrade (Implementar Windows 10 en Microsoft como una actualización local)](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Implementing strong user authentication with Windows Hello for Business (Implementar la autenticación de usuario segura con Windows Hello para empresas)](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Windows 10 deployment: tips and tricks from Microsoft IT (Implementación de Windows 10: sugerencias y trucos de TI de Microsoft)](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (vídeo)
-- [Windows Defender ATP helps detect sophisticated threats (Windows Defender ATP le ayuda a detectar sofisticadas amenazas)](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [Securing the modern enterprise with Windows Defender and Windows Defender ATP (Asegurando la empresa moderna con Windows Defender y ATP de Windows Defender)](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (vídeo)
-
-#### <a name="office-365-proplus"></a>Office 365 ProPlus
-
-- [Implementar y actualizar Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [Automation and update channels help deploy Microsoft Office 365 ProPlus (Los canales de automatización y actualización ayudan a implementar Microsoft Office 365 ProPlus)](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (vídeo)
-
-#### <a name="mobility-and-device-management"></a>Movilidad y administración de dispositivos
-
-- [Managing modern mobile productivity with Enterprise Mobility + Security (Administración de la productividad móvil moderna con Enterprise Mobility + Security)](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
-- [Connecting to work on your Windows 10 device with Microsoft Intune (Conexión al trabajo con un dispositivo Windows 10 con Microsoft Intune)](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
-- [Enabling mobile productivity for iOS, OS X, and Android devices at Microsoft (Permitir la productividad móvil para dispositivos iOS, OS X y Android en Microsoft)](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
-
-#### <a name="security-and-information-protection"></a>Seguridad y protección de la información
-
-- [Protecting files in the cloud with Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection) (Proteger los archivos en la nube con Azure Information Protection)
-- [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats) (Microsoft usa inteligencia de amenazas para proteger, detectar y responder a las amenazas)
-- [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365) (Microsoft frustra intentos de suplantación de identidad (phishing) con Office 365)
-
-#### <a name="microsoft-teams"></a>Microsoft Teams
-
-- [Deploying Microsoft Teams streamlines collaboration and improves teamwork](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork) (Implementar Microsoft Teams agiliza la colaboración y mejora el trabajo en equipo)
-- [Microsoft Teams increases collaboration in the modern workplace at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft) (Microsoft Teams Mejora la colaboración en el área de trabajo moderna de Microsoft)
-
-#### <a name="data-migration"></a>Migración de datos
-
-- [Microsoft migra 150 000 buzones a Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
-- [SharePoint en la nube: Obtenga información sobre cómo Microsoft llevó a cabo su propia migración](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
+> [!Note]
+> Esta característica solo está disponible en inglés.
 
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Cómo Contoso Corporation implementó Microsoft 365 Enterprise
 
 Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Vea cómo se implementó [Microsoft 365 Enterprise para Contoso Corporation](contoso-case-study.md) y cómo la compañía ha tomado importantes decisiones sobre el diseño y los detalles de implementación de redes, identidades, Windows 10 Enterprise, Office 365 ProPlus, administración de dispositivos móviles, protección de la información y seguridad. 
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>Siguiente paso para implementar Microsoft 365 Enterprise
 
 Para hacerlo con la ayuda directa de Microsoft, use [FastTrack](https://fasttrack.microsoft.com/microsoft365).
+
+Para hacerlo con un consultor, póngase en contacto con los servicios de consultoría de Microsoft o un [partner de Microsoft](https://partner.microsoft.com/).
 
 Para empezar a hacerlo por su cuenta, vea la [infraestructura de base](deploy-foundation-infrastructure.md).
