@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y muestre la sincronización de hash de contraseñas e inicie sesión en su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 0c6f7ec4afdfaaca0c84ed33ea0c1b1f248a82f5
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353161"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073180"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
@@ -46,7 +46,7 @@ Siga las instrucciones de la [configuración básica empresarial simulada para M
 Esta configuración se compone de: 
   
 - Suscripciones de prueba o de pago de Office 365 E5 y EMS E5.
-- La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una red virtual de Azure. DC1 es un controlador de dominio para el laboratorio de pruebas. \<su nombre de dominio público > Active Directory Domain Services (AD DS).
+- La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una red virtual de Azure. DC1 es un controlador de dominio para el laboratorio de pruebas. \<su nombre de dominio público > dominio AD DS.
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>Fase 2: crear y registrar el dominio de laboratorio de pruebas
 
