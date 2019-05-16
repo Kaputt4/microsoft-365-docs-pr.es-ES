@@ -3,7 +3,7 @@ title: Información sobre la configuración de los perfiles de AutoPilot
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ZTDProfileSettings
@@ -25,21 +25,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Los perfiles de autoPilot le ayudan a controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen opciones de configuración predeterminadas y opcionales, como omitir la instalación de Cortana.
-ms.openlocfilehash: d43a15e5f3dc83596b5c23dd0ceb416b24810298
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Los perfiles de AutoPilot le ayudan a controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen opciones de configuración predeterminadas y opcionales, como omitir la instalación de Cortana.
+ms.openlocfilehash: adc8112861b67fd96a91ff24dc155aeb0c394532
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276949"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071868"
 ---
 # <a name="about-autopilot-profile-settings"></a>Información sobre la configuración de los perfiles de AutoPilot
 
-## <a name="autopilot-profile-settings"></a>Configuración del perfil de autoPilot
+## <a name="autopilot-profile-settings"></a>Configuración del perfil de AutoPilot
 
 Puede controlar cómo se instala Windows en los dispositivos de usuario mediante el uso de los perfiles de piloto automático. Los perfiles contienen la siguiente configuración.
   
- **Las características predeterminadas de autoPilot (necesarias) que se establecen automáticamente:**
+ **Las características predeterminadas de AutoPilot (necesarias) que se establecen automáticamente:**
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
@@ -51,6 +51,6 @@ Puede controlar cómo se instala Windows en los dispositivos de usuario mediante
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Omitir la configuración de privacidad (desHabilitada de forma predeterminada)  <br/> |Si esta opción se establece **en activado**, el usuario del dispositivo no verá el contrato de licencia para el dispositivo y Windows cuando inicie sesión por primera vez.  <br/> |
+|Omitir la configuración de privacidad (deshabilitada de forma predeterminada)  <br/> |Si esta opción se establece **en activado**, el usuario del dispositivo no verá el contrato de licencia para el dispositivo y Windows cuando inicie sesión por primera vez.  <br/> |
 |No permitir que el usuario se convierta en el administrador local  <br/> |Si esta opción se establece **en activado**, el usuario del dispositivo no podrá instalar ninguna aplicación personal, como Cortana.  <br/> |
    

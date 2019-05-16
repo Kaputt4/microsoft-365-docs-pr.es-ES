@@ -1,0 +1,52 @@
+---
+title: Preparar unidades asignadas para el escritorio administrado por Microsoft
+description: Pasos importantes para asegurarse
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+ms.service: m365-md
+author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: b3fc4a4ed82c01188f348d2e494a0dbf7effc77a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34079279"
+---
+#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el escritorio administrado por Microsoft
+
+Muchos entornos empresariales tienen requisitos heredados para las unidades asignadas para permitir que sus usuarios o equipos compartan y almacenen archivos, o para las aplicaciones locales. Microsoft no recomienda el uso de unidades asignadas con el escritorio administrado de Microsoft. En su lugar, se recomienda modernizar las soluciones de acceso a archivos de Yor de la siguiente manera:
+  
+- Migre las unidades asignadas que usan los usuarios individuales a OneDrive para la empresa. 
+- Migre las unidades asignadas que usa Teams para compartir archivos en SharePoint Online. 
+- Modernice o reemplace todas las aplicaciones que usan recursos compartidos de archivos locales para quitar ese requisito.
+  
+La modernización de estos servicios permitirá la mejor experiencia del usuario final con el escritorio administrado de Microsoft. Los servicios de Microsoft FastTrack le pueden ayudar a modernizar su entorno con los servicios en la nube de Microsoft. Puede comprobar si es elegible para los servicios de FastTrack en los [servicios y planes elegibles](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) y, a continuación, póngase en contacto con ellos directamente para prepararse para el escritorio administrado por Microsoft. Para obtener información sobre la migración de OneDrive para la empresa o de SharePoint Online de FastTrack, consulte [migración de datos](https://docs.microsoft.com/fasttrack/o365-data-migration).
+
+## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Unidades asignadas en el escritorio administrado por Microsoft
+ 
+Si no puede quitar ni reemplazar las unidades asignadas en algunos casos de uso, debe enviar una solicitud de soporte técnico en el portal de escritorio administrado de Microsoft para que se implementen en los usuarios de escritorio administrado por Microsoft.
+    
+Para dicha solicitud, deberá proporcionar los siguientes detalles en la solicitud de soporte técnico: 
+
+- Todas las rutas de acceso UNC a ubicaciones de recursos compartidos de archivos que se deben asignar a los dispositivos de escritorio administrados por Microsoft 
+- Grupos de usuarios que necesitan acceso a estas ubicaciones de recursos compartidos de archivos 
+- Cualquier letra de unidad específica que deba asignarse (si es necesario)
+
+Por ejemplo:
+
+| Letra de unidad | Ruta de acceso UNC | Grupo de usuarios |
+|--------------|----------|------------|
+| Días  | \\\server\share\Marketing | ContosoMarketing |
+
+Es totalmente responsable de garantizar que los usuarios y grupos tengan y mantenga los permisos adecuados para acceder a las ubicaciones de recursos compartidos de archivos y que los servicios de archivos locales sigan siendo accesibles. Además, debe quitar los requisitos de estos recursos compartidos de archivos lo antes posible.
+
+### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>Para que las unidades asignadas se hayan implementado en el escritorio administrado de Microsoft
+ 
+Asegúrese de que no se pueden evitar las unidades asignadas y de que ha revisado atentamente los requisitos antes de enviar cualquier solicitud de servicio. A continuación, siga estos pasos:
+
+1. Navegue al [portal de escritorio administrado por Microsoft](https://aka.ms/mmdportal).  
+2. Envíe una solicitud de soporte titulada "implementación de unidades asignadas" a través de la sección de solicitudes de soporte técnico de **>** y proporcione todos los detalles necesarios del recurso compartido de archivos.  
+3. Las operaciones de escritorio administradas de Microsoft le aconsejarán, mediante actualizaciones de solicitudes de soporte, cuando se haya completado la solicitud. Inicialmente, esta configuración solo se implementará en los dispositivos del grupo de implementación de prueba.  
+4. Debe probar y confirmar si la configuración implementada por el equipo de operaciones de escritorio administrada de Microsoft funciona según lo previsto. Use la solicitud de soporte para actualizar las operaciones de escritorio administradas de Microsoft una vez que haya completado las pruebas.  
+5. El equipo de operaciones de escritorio administrado de Microsoft implementará la configuración en los demás grupos de implementación. 

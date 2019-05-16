@@ -3,7 +3,7 @@ title: Validar la configuración de protección de aplicaciones en PC con Window
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Obtenga información sobre cómo validar la configuración de protección de aplicaciones empresariales de Microsoft 365 en dispositivos Windows 10.
-ms.openlocfilehash: 5ab91d65fa7bd40ebc118df217c9711b7bbfe7a4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 15c2d54c6281369875d15985c9d4ed16f0114176
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286778"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072247"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de dispositivos en equipos con Windows 10
 
@@ -36,7 +36,7 @@ Una vez que haya [configurado las directivas de dispositivos](protection-setting
   
 1. Vaya a **configuración** \> **actualización &amp; seguridad** \> **Windows Update** \> **** restart y confirme que todas las opciones están atenuadas. 
     
-    ![Todas las opciones de reInicio están atenuadas.](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![Todas las opciones de reinicio están atenuadas.](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
 2. Vaya a **configuración** \> **actualizar &amp; seguridad** \> **Windows Update** \> **Opciones avanzadas** y confirme que toda la configuración está atenuada. 
     

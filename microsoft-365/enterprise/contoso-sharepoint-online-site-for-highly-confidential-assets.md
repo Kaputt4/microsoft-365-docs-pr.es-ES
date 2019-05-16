@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso implementó un sitio de SharePoint Online para datos altamente regulados para una colaboración más sencilla entre sus equipos de investigación.'
-ms.openlocfilehash: c20e3a1c4ad0b862e81b897acc1462e3a1d1f776
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289236"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072790"
 ---
 # <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sitio de SharePoint Online para activos digitales altamente confidenciales de Contoso Corporation
 
@@ -70,9 +70,9 @@ A continuación, creamos una nueva Directiva de DLP de Office 365 denominada **R
 
 - Usa la etiqueta de retención **alta confidencial** de Office 365. 
 - Se aplica al sitio de **investigación** .
-- Impide que los usuarios compartan documentos.
+- Bloquea a los usuarios cuando intentan compartir un activo digital en el sitio de **investigación** fuera de contoso.
 
-Para obtener información detallada sobre la configuración, vea [proteger archivos de SharePoint Online con Office 365 etiquetas y DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
+Para obtener información detallada sobre la configuración, vea [proteger archivos de SharePoint Online con etiquetas de retención y DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
 ## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>Paso 4: se creó una etiqueta secundaria de Azure Information Protection para el sitio
 
@@ -93,7 +93,7 @@ Esta es la configuración resultante del sitio de **investigación** para los ac
 Los archivos de las carpetas del sitio de **investigación** están protegidos por:
 
 - La subetiqueta **Research** Azure Information Protection, que aplica cifrado y permssions a cada archivo que viaja con el archivo cuando se mueve o se copia desde el sitio de **investigación** .
-- La Directiva DLP de **investigación** , que usa la etiqueta de retención y la configuración **altamente confidenciales** que impiden que el archivo abandone el sitio.
+- La Directiva DLP de **investigación** , que usa la etiqueta de retención y las opciones de retención **altamente confidenciales** , que impiden que el archivo se comparta con usuarios externos.
 - El conjunto de permisos de sitio, que solo permiten el acceso a los **** miembros de los grupos de seguridad Research-Members y Research **-views** y a la administración por parte de los miembros del grupo de seguridad **Research-Admins** .
 
 ## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Paso 5: migrar los datos de la investigación de SharePoint local
@@ -114,7 +114,7 @@ El resultado final es un entorno seguro en el que los investigadores pueden cola
 
 Si se pierde del sitio de **investigación** un documento de investigación con la subetiqueta **Research** , este se cifra y es accesible sólo para los miembros de los grupos de seguridad **Research-Members** y **Research-Viewers** con credenciales válidas.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 [Implementar](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise en su organización.
 

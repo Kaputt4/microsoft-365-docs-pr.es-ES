@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del laboratorio de pruebas para crear y usar las etiquetas de retención de Office 365 en documentos de su entorno de prueba empresarial de Microsoft 365.
-ms.openlocfilehash: 3d64cd245e117813cb4c81a6e9099cd1a0120317
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 66e06f9a89b102c131bc29af17c4564fabbab9b4
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283543"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072420"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Clasificación de datos para su entorno de prueba de Microsoft 365 Enterprise
 
@@ -55,7 +55,7 @@ En esta fase, creará las etiquetas de retención para los distintos niveles de 
     
 7. En el panel **Revise su configuración**, haga clic en **Crear la etiqueta**.
     
-8. Repita los pasos 3-7 para las etiquetas adicionales con estos nombres:
+8. Repita los pasos del 3 al 7 para etiquetas adicionales con los siguientes nombres:
     
   - Private
     
@@ -99,15 +99,15 @@ En primer lugar, cree un sitio de grupo de SharePoint Online de nivel confidenci
     
 6. En **Descripción del sitio de grupo**, escriba **sitio de SharePoint para archivos confidenciales**.
     
-7.  En **Configuración de privacidad**, seleccione **Privado: solo los miembros pueden obtener acceso a este sitio** y, después, haga clic en **Siguiente**.
+7.  En **Configuración de privacidad**, seleccione **Private - only members can access this site** (Privado: solo los miembros tienen acceso a este sitio) y haga clic en **Siguiente**.
     
-8. En el panel **Usuarios que quiere agregar**, haga clic en **Finalizar**.
+8. En el panel **Who do you want to add?** (Usuarios que quiere agregar), haga clic en **Finalizar**.
     
 A continuación, configure la carpeta documentos del sitio de grupo de SensitiveFiles para la etiqueta retención confidencial.
   
 1. En la pestaña **SensitiveFiles** del explorador, haga clic en **documentos**.
     
-2. Haga clic en el icono de configuración y, después, en **Configuración de la biblioteca**.
+2. Haga clic en el icono de configuración y luego en **Configuración de biblioteca**.
     
 3. En **Permisos y administración**, haga clic en **Apply label to items in this library** (Aplicar la etiqueta a los elementos de esta biblioteca).
     
@@ -131,7 +131,7 @@ A continuación, cree un nuevo documento en el sitio de SensitiveFiles y cambie 
 
 Consulte el paso [configurar la clasificación del entorno](infoprotect-configure-classification.md) en la fase de protección de la **información** para obtener información y vínculos sobre cómo implementar las etiquetas de retención de Office 365 en producción.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 

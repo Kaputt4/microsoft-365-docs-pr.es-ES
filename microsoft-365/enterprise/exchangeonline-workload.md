@@ -3,7 +3,7 @@ title: Implementación de Exchange Online para Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -11,16 +11,16 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Recorra el proceso de planeación, implementación y impulso del valor de Exchange online en Microsoft 365 Enterprise en toda la organización.
-ms.openlocfilehash: 6efd94da7806b6268881f7eaabe5efacc8920f47
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281211"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072290"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Implementación de Exchange Online para Microsoft 365 Enterprise
 
-*Esta carga de trabajo se incluye en las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Esta carga de trabajo está incluida en las versiones E3 y E5 de Microsoft 365 Enterprise*
 
 Exchange Online es el servicio de nube principal para el correo electrónico y el calendario que ayuda a los usuarios a colaborar de formas que no requieran el almacenamiento en tiempo real de chats o documentos centralizados. Exchange Online es el modo en que se realiza la comunicación y programación a corto y pequeño grupo, y es un elemento clave del valor creado para el trabajo en equipo de Microsoft 365 Enterprise. Exchange Online le permite realizar más tareas y trabajar de forma más eficaz con la aplicación de Outlook conocida, independientemente del dispositivo en el que se haya conectado.
 
@@ -34,7 +34,7 @@ Las siguientes fases y pasos le guiarán a través del proceso de visualización
 >Estas instrucciones de implementación solo deben seguirse después de haber completado la [fase 2-identidad](identity-infrastructure.md) de la infraestructura básica de Microsoft 365 Enterprise.
 >
 
-## <a name="phase-1-envision"></a>Fase 1: Planificar
+## <a name="phase-1-envision"></a>Fase 1: Planear
 
 En esta fase, recopilará a los usuarios de su implementación de Exchange Online y determinará cómo su organización usará Exchange Online para satisfacer sus necesidades empresariales.
 
@@ -115,7 +115,7 @@ En la mayoría de las organizaciones medianas y grandes, debería ejecutar una p
 - Elija un escenario empresarial de Exchange online en el que puedan practicar los participantes de la prueba piloto de ti.
 - Dé a los participantes en la prueba piloto Office 365 licencias y migre sus buzones locales a Exchange Online.
 - Proporcione a los participantes de la prueba piloto un conjunto de ejercicios para probar el correo electrónico, la programación y otras capacidades de Exchange Online.
-- DeTermine la estrategia de administración de cambios y genere materiales para impulsar la adopción por parte del usuario de Exchange online de toda la organización. Los materiales de administración de cambios pueden incluir texto de anuncio de correo electrónico, planes de formación interna, pósteres de vestíbulos y presentaciones. Estos materiales le informarán a su organización sobre Exchange Online y sus ventajas con los objetivos de la sensibilización y el uso. Consulte el artículo sobre la [estrategia de administración de cambios para Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) para ver algunas ideas.
+- Determine la estrategia de administración de cambios y genere materiales para impulsar la adopción por parte del usuario de Exchange online de toda la organización. Los materiales de administración de cambios pueden incluir texto de anuncio de correo electrónico, planes de formación interna, pósteres de vestíbulos y presentaciones. Estos materiales le informarán a su organización sobre Exchange Online y sus ventajas con los objetivos de la sensibilización y el uso. Consulte el artículo sobre la [estrategia de administración de cambios para Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) para ver algunas ideas.
 - Los participantes de la prueba piloto de ti revisan los materiales de administración de cambios en función de sus experiencias. Pueden proporcionar sugerencias sobre los procedimientos recomendados y consejos sobre cómo describir mejor las ventajas de Exchange Online y cómo usarla para la comunicación y la programación.
 
 #### <a name="result"></a>Resultado
@@ -174,15 +174,15 @@ Estas son algunas actividades sugeridas:
 
 Su organización ha adoptado Exchange online como una herramienta de programación y comunicación de corta duración y grupo de tamaño reducido principal.
 
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft migra a Microsoft 365 Enterprise
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
 Para obtener una ojeada dentro de Microsoft y saber cómo migra la compañía a Exchange Online y está usando Exchange Online Protection para protegerse contra ataques cibernéticos, consulte:
 
-- [Microsoft migra 150.000 buzones a Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
+- [Microsoft migra 150 000 buzones a Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats) (Microsoft usa inteligencia de amenazas para proteger, detectar y responder a las amenazas)
 - [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365) (Microsoft frustra intentos de suplantación de identidad (phishing) con Office 365)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Consulte estos recursos para el mantenimiento continuo de Exchange Online:
 

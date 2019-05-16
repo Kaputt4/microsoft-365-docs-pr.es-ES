@@ -3,7 +3,7 @@ title: Crear y editar perfiles de AutoPilot
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: 'Obtenga información sobre cómo crear, editar, eliminar o quitar perfiles de autoPilot. '
-ms.openlocfilehash: 85fc897b2f428afae8d55feeb577021adaa30f72
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: 'Obtenga información sobre cómo crear, editar, eliminar o quitar perfiles de AutoPilot. '
+ms.openlocfilehash: 7987cafb3ea234d81be72c79aee8e584a3770875
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073498"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Crear y editar perfiles de AutoPilot
 
@@ -35,7 +35,7 @@ ms.locfileid: "32277173"
 
 Un perfil se aplica a un dispositivo o a un grupo de dispositivos.
   
-1. en el centro de administración de Microsoft 365 Business, elija **dispositivos** \> **autopilot**.
+1. En el centro de administración de Microsoft 365 Business, elija **dispositivos** \> **AutoPilot**.
   
 2. En la **** página AutoPilot, elija la **** pestaña \> perfiles **crear perfil**.
     

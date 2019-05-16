@@ -3,7 +3,7 @@ title: Migrar a Microsoft 365 Business desde Office 365 empresa Premium
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Business.
-ms.openlocfilehash: 3e45ba13e4cfe772829f545219bf86a9a3317d59
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285718"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072748"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migrar a Microsoft 365 Business desde Office 365 empresa Premium
 
@@ -58,7 +58,7 @@ Si recibe un vínculo para comprar las licencias, le guiará por un asistente co
     
 2. En la página **personalizar el inicio de sesión y el correo electrónico** , puede Agregar un dominio si elige **conectar un dominio que ya posee** si desea usar esta oportunidad para agregar otro dominio a la suscripción. 
     
-    Si ya ha configurado un dominio, el segundo campo indicará que y **seguirá usando** \< _su nombre_ \> **de dominio para el correo electrónico y el inicio de sesión**.   si no ha configurado un dominio con su suscripción, dirá **seguir usando** \< _su empresa name.onmicrosoft.com_ \> **para el correo electrónico y el inicio de sesión**.  
+    Si ya ha configurado un dominio, el segundo campo indicará que y **seguirá usando** \< _su nombre_ \> **de dominio para el correo electrónico y el inicio de sesión**.   Si no ha configurado un dominio con su suscripción, dirá **seguir usando** \< _su empresa Name.onmicrosoft.com_ \> **para el correo electrónico y el inicio de sesión**.  
     
     Elija **Siguiente**.
     
@@ -78,9 +78,9 @@ Si recibe un vínculo para comprar las licencias, le guiará por un asistente co
     
     ![En la tarjeta de usuario, elija Editar junto a licencias de productos.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
   
-8. en la diapositiva licencias de **producto** , **Microsoft 365 empresa** para **** \> **guardar**y, después, **cierre**.
+8. En la diapositiva licencias de **producto** , **Microsoft 365 empresa** para **** \> **Guardar**y, después, **cierre**.
     
-una vez que haya adquirido la licencia inicial para Microsoft 365 Business, ahora podrá agregar más en **servicios de compra**de **facturación** \> . En la página **servicios de compra** , puede hacer clic en los puntos suspensivos de la tarjeta de presentación de **Microsoft 365** y elegir **cambiar cantidad de licencia** para comprar más. 
+Una vez que haya adquirido la licencia inicial para Microsoft 365 Business, ahora podrá agregar más en **servicios de compra**de **facturación** \> . En la página **servicios de compra** , puede hacer clic en los puntos suspensivos de la tarjeta de presentación de **Microsoft 365** y elegir **cambiar cantidad de licencia** para comprar más. 
   
 ## <a name="protect-user-devices-and-files"></a>Proteger los archivos y dispositivos de usuario
 
