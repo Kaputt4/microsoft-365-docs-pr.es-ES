@@ -3,7 +3,7 @@ title: Crear y editar dispositivos de AutoPilot
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,40 +22,40 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Obtenga información sobre cómo cargar dispositivos con el piloto automático en Microsoft 365 Business. Puede asignar un perfil a un dispositivo o a un grupo de dispositivos.
-ms.openlocfilehash: 6492f1469a1ac9ea67750e9ffa071d19c88c743f
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: dee77a014ef519f3487a082edc3cf81058ec1c00
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660457"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071648"
 ---
-# <a name="create-and-edit-autopilot-devices"></a><span data-ttu-id="4d9fd-104">Crear y editar dispositivos de AutoPilot</span><span class="sxs-lookup"><span data-stu-id="4d9fd-104">Create and edit AutoPilot devices</span></span>
+# <a name="create-and-edit-autopilot-devices"></a><span data-ttu-id="b08ab-104">Crear y editar dispositivos de AutoPilot</span><span class="sxs-lookup"><span data-stu-id="b08ab-104">Create and edit AutoPilot devices</span></span>
 
-## <a name="upload-a-list-of-devices"></a><span data-ttu-id="4d9fd-105">Cargar una lista de dispositivos</span><span class="sxs-lookup"><span data-stu-id="4d9fd-105">Upload a list of devices</span></span>
+## <a name="upload-a-list-of-devices"></a><span data-ttu-id="b08ab-105">Cargar una lista de dispositivos</span><span class="sxs-lookup"><span data-stu-id="b08ab-105">Upload a list of devices</span></span>
 
-<span data-ttu-id="4d9fd-106">Puede usar la [Guía paso a paso](add-autopilot-devices-and-profile.md) para cargar dispositivos, pero también puede cargarlos en la pestaña **Dispositivos**.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-106">You can use the [Step-by-step guide](add-autopilot-devices-and-profile.md) to upload devices, but you can also upload the in the **Devices** tab.</span></span> 
+<span data-ttu-id="b08ab-106">Puede usar la [Guía paso a paso](add-autopilot-devices-and-profile.md) para cargar dispositivos, pero también puede cargarlos en la pestaña **Dispositivos**.</span><span class="sxs-lookup"><span data-stu-id="b08ab-106">You can use the [Step-by-step guide](add-autopilot-devices-and-profile.md) to upload devices, but you can also upload the in the **Devices** tab.</span></span> 
   
-<span data-ttu-id="4d9fd-107">Los dispositivos tienen que cumplir estos requisitos:</span><span class="sxs-lookup"><span data-stu-id="4d9fd-107">Devices need to meet these requirements:</span></span>
+<span data-ttu-id="b08ab-107">Los dispositivos tienen que cumplir estos requisitos:</span><span class="sxs-lookup"><span data-stu-id="b08ab-107">Devices need to meet these requirements:</span></span>
   
-- <span data-ttu-id="4d9fd-108">Windows 10, versión 1703 o posteriores.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-108">Windows 10, version 1703 or later.</span></span>
+- <span data-ttu-id="b08ab-108">Windows 10, versión 1703 o posteriores.</span><span class="sxs-lookup"><span data-stu-id="b08ab-108">Windows 10, version 1703 or later.</span></span>
     
-- <span data-ttu-id="4d9fd-109">Los nuevos dispositivos que no han pasado por una configuración rápida de Windows.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-109">New devices that have not been through Windows out-of-box experience.</span></span>
+- <span data-ttu-id="b08ab-109">Los nuevos dispositivos que no han pasado por una configuración rápida de Windows.</span><span class="sxs-lookup"><span data-stu-id="b08ab-109">New devices that have not been through Windows out-of-box experience.</span></span>
 
-1. <span data-ttu-id="4d9fd-110">En el centro de administración de Microsoft 365 Business, elija **dispositivos** \> **AutoPilot**.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-110">In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.</span></span>
+1. <span data-ttu-id="b08ab-110">En el centro de administración de Microsoft 365 Business, elija **dispositivos** \> **AutoPilot**.</span><span class="sxs-lookup"><span data-stu-id="b08ab-110">In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.</span></span>
   
-2. <span data-ttu-id="4d9fd-111">En la \*\*\*\* página AutoPilot, elija la \*\*\*\* pestaña \> dispositivos y **agregue dispositivos**.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-111">On the **AutoPilot** page, choose the **Devices** tab \> **Add devices**.</span></span>
+2. <span data-ttu-id="b08ab-111">En la \*\*\*\* página AutoPilot, elija la \*\*\*\* pestaña \> dispositivos y **agregue dispositivos**.</span><span class="sxs-lookup"><span data-stu-id="b08ab-111">On the **AutoPilot** page, choose the **Devices** tab \> **Add devices**.</span></span>
     
     ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. <span data-ttu-id="4d9fd-113">En el panel **Agregar dispositivos** , vaya a un [archivo CSV de la lista de dispositivos](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) que haya \> preparado para **Guardar** \> el **cierre**.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-113">On the **Add devices** panel, browse to a [Device list CSV-file](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) that you have prepared \> **Save** \> **Close**.</span></span>
+3. <span data-ttu-id="b08ab-113">En el panel **Agregar dispositivos** , vaya a un [archivo CSV de la lista de dispositivos](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) que haya \> preparado para **Guardar** \> el **cierre**.</span><span class="sxs-lookup"><span data-stu-id="b08ab-113">On the **Add devices** panel, browse to a [Device list CSV-file](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) that you have prepared \> **Save** \> **Close**.</span></span>
     
-    <span data-ttu-id="4d9fd-114">Puede obtener esta información de su proveedor de hardware o puede usar el [script de PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) que genera un archivo .csv.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-114">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) that will generate a csv file.</span></span> 
+    <span data-ttu-id="b08ab-114">Puede obtener esta información de su proveedor de hardware o puede usar el [script de PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) que genera un archivo .csv.</span><span class="sxs-lookup"><span data-stu-id="b08ab-114">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) that will generate a csv file.</span></span> 
     
-## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a><span data-ttu-id="4d9fd-115">Asignar un perfil a un dispositivo o un grupo de dispositivos</span><span class="sxs-lookup"><span data-stu-id="4d9fd-115">Assign a profile to a device or a group of devices</span></span>
+## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a><span data-ttu-id="b08ab-115">Asignar un perfil a un dispositivo o un grupo de dispositivos</span><span class="sxs-lookup"><span data-stu-id="b08ab-115">Assign a profile to a device or a group of devices</span></span>
 
-1. <span data-ttu-id="4d9fd-116">En la página **Preparar Windows**, seleccione la pestaña **Dispositivos** y active la casilla junto a uno o más dispositivos.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-116">On the **Prepare Windows** page, choose the **Devices** tab and check the check box next to one or more devices.</span></span> 
+1. <span data-ttu-id="b08ab-116">En la página **Preparar Windows**, seleccione la pestaña **Dispositivos** y active la casilla junto a uno o más dispositivos.</span><span class="sxs-lookup"><span data-stu-id="b08ab-116">On the **Prepare Windows** page, choose the **Devices** tab and check the check box next to one or more devices.</span></span> 
     
-2. <span data-ttu-id="4d9fd-117">En el panel **Dispositivo**, seleccione del desplegable **Perfil asignado**.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-117">On the **Device** panel, select a profile from the **Assigned profile** drop-down.</span></span> 
+2. <span data-ttu-id="b08ab-117">En el panel **Dispositivo**, seleccione del desplegable **Perfil asignado**.</span><span class="sxs-lookup"><span data-stu-id="b08ab-117">On the **Device** panel, select a profile from the **Assigned profile** drop-down.</span></span> 
     
-    <span data-ttu-id="4d9fd-118">Si aún no tiene ningún perfil, vea [Crear y editar perfiles de AutoPilot](create-and-edit-autopilot-profiles.md) para obtener instrucciones.</span><span class="sxs-lookup"><span data-stu-id="4d9fd-118">If you don't have any profiles yet, see [Create and edit AutoPilot profiles](create-and-edit-autopilot-profiles.md) for instructions.</span></span> 
+    <span data-ttu-id="b08ab-118">Si aún no tiene ningún perfil, vea [Crear y editar perfiles de AutoPilot](create-and-edit-autopilot-profiles.md) para obtener instrucciones.</span><span class="sxs-lookup"><span data-stu-id="b08ab-118">If you don't have any profiles yet, see [Create and edit AutoPilot profiles](create-and-edit-autopilot-profiles.md) for instructions.</span></span> 
     
