@@ -1,8 +1,8 @@
 ---
 title: Preguntas más frecuentes (puede estar en inglés) sobre Microsoft 365 Empresa. 
 description: Encuentra respuestas a las preguntas más frecuentes sobre Microsoft 365 Empresa, una nueva solución diseñada para las pequeñas y medianas empresas (SMB). 
-author: jasongroce
-ms.author: jasgro
+author: Sirkkuw
+ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, preguntas frecuentes, preguntas más frecuentes, respuestas, empresa
 ms.date: 06/08/2018
-ms.openlocfilehash: bdcfd6a78278aff83b3fc21ae0fbb43bce140a16
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 6ef500c9b0c9e83e77e46c1eaf7057e3e46cfe0d
+ms.sourcegitcommit: 5c6bbf6dd7020b462b56b644b5a0fcc0217d6a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497760"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34276231"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Preguntas más frecuentes (puede estar en inglés) sobre Microsoft 365 Empresa.
 
@@ -80,7 +80,7 @@ Muchos empleados prefieren usar sus propios teléfonos móviles o tabletas para 
 Microsoft 365 Business ofrece a los clientes medios sencillos pero potentes de permitir que los empleados usen sus dispositivos personales para trabajar a la vez que proporcionan a las empresas la capacidad de evitar que los dispositivos accedan, retengan o compartan información de la empresa. . Más concretamente: 
 * **Protección de aplicaciones de Office Mobile** ayuda a las aplicaciones a proteger los datos de Office, como por ejemplo, correo electrónico, calendario, contactos y documentos en dispositivos móviles iOS y Android, al aplicar directivas como, por ejemplo, eliminación automática de datos empresariales transcurrido un plazo de tiempo sin conexión al servicio, exigir que la información se almacene únicamente en OneDrive para la Empresa, exigir la verificación mediante PIN o huella digital para acceder a aplicaciones de Office y evitar que los datos de la empresa se copien desde una aplicación de Office a aplicaciones personales. La administración de aplicaciones móviles para otras aplicaciones móviles a través de Intune también está disponible para suscriptores empresariales de Microsoft 365. 
   
-* **Administración de dispositivos para Windows 10 PCS** aallows los negocios para elegir establecer y aplicar capacidades como la protección de Windows Defender para malware, actualizaciones automáticas y desactivar pantallas después de un período de tiempo prescrito. Además, los dispositivos Windows 10 perdidos o robados se pueden borrar completamente para eliminar las aplicaciones y los datos empresariales a través del Centro de administración. 
+* **Administración de dispositivos para equipos con Windows 10**, que permite a las empresas elegir establecer y aplicar capacidades como, por ejemplo, protección de Windows Defender contra malware, actualizaciones automáticas y desactivación de pantallas tras un período de tiempo establecido. Además, los dispositivos Windows 10 perdidos o robados se pueden borrar completamente para eliminar las aplicaciones y los datos empresariales a través del Centro de administración. 
 
 * **Administración de dispositivos para iOS, las características de Android _AMP_ MacOS** ayudan a las empresas a administrar de manera segura un ecosistema de dispositivos diverso que incluye dispositivos iOS, Android, Windows y MacOS. 
 
@@ -127,7 +127,7 @@ Microsoft 365 Empresa está integrado en la tecnología de Microsoft y aunque co
 Intune le ayudará a administrar de manera segura los dispositivos iOS, Android, Windows y macOS. 
  
 ### <a name="what-is-windows-autopilot"></a>¿Qué es Windows AutoPilot? 
-Windows AutoPilot es un servicio que agiliza la implementación de nuevos equipos Windows 10. Este proceso puede realizarse cuando el usuario final inicia sesión en Microsoft 365 Empresa por primera vez, sin que los responsables de TI tengan que tocar el dispositivo al aprovechar los controles de administración centralizados de Microsoft 365 Empresa. También puedes usar Windows AutoPilot para equipos existentes que ejecutan Windows 10 Professional Creators Update (o posterior) y que se han restablecido a la configuración de fábrica. Puede encontrar información detallada sobre Windows autoPilot en <a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">esta publicación de blog de junio de 2017</a>.
+Windows AutoPilot es un servicio que agiliza la implementación de nuevos equipos Windows 10. Este proceso puede realizarse cuando el usuario final inicia sesión en Microsoft 365 Empresa por primera vez, sin que los responsables de TI tengan que tocar el dispositivo al aprovechar los controles de administración centralizados de Microsoft 365 Empresa. También puedes usar Windows AutoPilot para equipos existentes que ejecutan Windows 10 Professional Creators Update (o posterior) y que se han restablecido a la configuración de fábrica. Puede encontrar información detallada sobre Windows AutoPilot en <a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">esta publicación de blog de junio de 2017</a>.
 
 ## <a name="compatibility"></a>Compatibility
 
@@ -185,7 +185,7 @@ GDPR (normativa general de protección de datos) es una nueva ley completa sobre
 
 
 
-## <a name="footnotes"></a>Footnotes
+## <a name="footnotes"></a>Notas al pie
 <sup><a name="footnote1">**1**</a></sup> <small>Disponible en EE.UU., Reino Unido y Canadá.</small> </br>
 <sup><a name="footnote2">**2**</a></sup> <small>Los dispositivos que ejecutan Windows 7 o 8.1 Pro son válidos para pasar a Windows 10 Pro dentro de la versión preliminar de Microsoft 365 Empresa.</small>
  
