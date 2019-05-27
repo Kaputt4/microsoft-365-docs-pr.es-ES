@@ -1,0 +1,31 @@
+---
+title: Regiones e idiomas admitidos
+description: Regiones y idiomas admitidos por el escritorio administrado por Microsoft
+keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+ms.service: m365-md
+author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 3b89591943e060eb752f0301258f2114f3a84608
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34482713"
+---
+# <a name="microsoft-managed-desktop-supported-regions-and-languages"></a><span data-ttu-id="4b9e7-104">Regiones e idiomas admitidos por Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="4b9e7-104">Microsoft Managed Desktop supported regions and languages</span></span>
+
+<span data-ttu-id="4b9e7-105">En este tema se proporcionan detalles sobre las regiones y los idiomas admitidos por el escritorio administrado por Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4b9e7-105">This topic provides details about regions and languages supported by Microsoft Managed Desktop.</span></span> 
+
+- <span data-ttu-id="4b9e7-106">**Regiones:** Estados Unidos, Canadá (excepto Quebec), Reino Unido, Australia y Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="4b9e7-106">**Regions:** United States, Canada (excluding Quebec), United Kingdom, Australia, and New Zealand</span></span>
+- <span data-ttu-id="4b9e7-107">**Idiomas:** El inglés es el único idioma admitido disponible actualmente para los usuarios en los dispositivos administrados.</span><span class="sxs-lookup"><span data-stu-id="4b9e7-107">**Languages:** English is the only supported language currently available to users on managed devices.</span></span> <span data-ttu-id="4b9e7-108">Esto es aplicable tanto a las opciones de soporte técnico del [Administrador](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) como al [soporte técnico para el usuario final](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) .</span><span class="sxs-lookup"><span data-stu-id="4b9e7-108">This is applicable to both [Admin support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) and [End-user support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) options.</span></span> 
+
+<span data-ttu-id="4b9e7-109">Sin embargo, los clientes todavía pueden usar dispositivos administrados fuera de las regiones enumeradas anteriormente sin una interrupción del servicio de escritorio administrado por Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4b9e7-109">However, customers can still use managed devices outside of the regions listed above without an interruption of Microsoft Managed Desktop service.</span></span> <span data-ttu-id="4b9e7-110">Por ejemplo, un empleado con sede en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja en Asia, Europa o Sudamérica.</span><span class="sxs-lookup"><span data-stu-id="4b9e7-110">For example, an employee based in the United Kingdom can work securely and receive updates on their managed device while traveling Asia, Europe, or South America.</span></span>
+
+<span data-ttu-id="4b9e7-111">Para obtener más información acerca del soporte técnico del usuario con el escritorio administrado de Microsoft, consulte [soporte técnico para Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).</span><span class="sxs-lookup"><span data-stu-id="4b9e7-111">For more information about user support with Microsoft Managed Desktop, see [support for Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).</span></span>
+
+<span data-ttu-id="4b9e7-112">Si un usuario prefiere trabajar en un idioma que no sea el inglés, puede solicitar que su administrador de ti local implemente de forma centralizada paquetes de idioma adicionales en los dispositivos administrados a través de la aplicación portal de empresa de Intune.</span><span class="sxs-lookup"><span data-stu-id="4b9e7-112">If a user prefers to work in a language other than English, they can request that their local IT administrator centrally deploy additional language packs on managed devices through the Intune Company Portal app.</span></span> <span data-ttu-id="4b9e7-113">A partir de Windows 10, versión 1803, los paquetes de idioma se entregan como paquetes appx desde Microsoft Store.</span><span class="sxs-lookup"><span data-stu-id="4b9e7-113">Starting with Windows 10, version 1803, language packs are delivered as appx packages from Microsoft Store.</span></span> <span data-ttu-id="4b9e7-114">Para obtener más información, vea [aplicaciones de Microsoft Store para empresas](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps#msfb-apps).</span><span class="sxs-lookup"><span data-stu-id="4b9e7-114">To learn more, see [Microsoft Store for Business apps](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps#msfb-apps).</span></span>
+
+
+>[!NOTE]
+><span data-ttu-id="4b9e7-115">La aplicación de GetHelp en un dispositivo de escritorio administrado por Microsoft solo admite el inglés.</span><span class="sxs-lookup"><span data-stu-id="4b9e7-115">The GetHelp app on a Microsoft Managed Desktop device supports English only.</span></span> <span data-ttu-id="4b9e7-116">Para que los usuarios obtengan ayuda con el escritorio administrado de Microsoft a través de la aplicación GetHelp, deben cambiar el idioma para mostrar a Inglés.</span><span class="sxs-lookup"><span data-stu-id="4b9e7-116">For users to obtain help with Microsoft Managed Desktop through the GetHelp app, they must switch the display language to English.</span></span>
