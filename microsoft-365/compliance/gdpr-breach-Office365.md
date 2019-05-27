@@ -2,21 +2,21 @@
 title: Notificación de infracciones en Office 365 según el RGPD
 description: Se explica cómo Microsoft protege contra una infracción de datos personales, y cómo responde y le notifica si se produce una infracción.
 keywords: Office 365, Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 6b91b489d8d69faffa0852c3e352a6b2e9e9d496
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 69c626d874e0afd59e1447c494ec1b84c7a4cb7a
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286370"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431871"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Notificación de infracciones en Office 365 según el RGPD
 
