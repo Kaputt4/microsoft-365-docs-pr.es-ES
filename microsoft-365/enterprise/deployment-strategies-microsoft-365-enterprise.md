@@ -160,7 +160,7 @@ Se simplificó la experiencia del usuario piloto de ejemplo:
 - En enero, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
 - En febrero, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
 - En marzo, aplico las directivas de acceso condicional y de aplicaciones, así como de inscripción de dispositivos. (Administración de dispositivos móviles)
-- En abril, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
+- En abril, instalo el cliente de Azure Information Protection y obtengo información sobre la aplicación de etiquetas a los documentos. (Information Protection)
 
 El resultado es una cadencia de 30 días entre implementaciones piloto sucesivas.
 

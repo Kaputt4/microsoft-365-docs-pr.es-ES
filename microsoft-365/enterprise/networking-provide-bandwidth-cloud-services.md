@@ -12,7 +12,7 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenda la necesidad de ancho de banda de Internet que tienen los servicios en la nube de Microsoft 365 Enterprise.
+description: Obtenga información sobre la necesidad de ancho de banda de Internet que tienen los servicios en la nube de Microsoft 365 Enterprise.
 ms.openlocfilehash: cb1e62b116a56273098d9c26bee646e7b5d6f7f3
 ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
@@ -26,7 +26,7 @@ ms.locfileid: "32291095"
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-En el paso 1, tendrá que:
+En el paso 1, realice lo siguiente:
 
 - Evalúe y ajuste el ancho de banda de red para los vínculos internos y las conexiones a Internet con el fin de tener en cuenta el tráfico a los servicios de nube de Microsoft 365 Enterprise.
 - Alinee la red con una [arquitectura de referencia de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).

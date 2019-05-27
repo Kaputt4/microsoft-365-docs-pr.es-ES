@@ -12,7 +12,7 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenda cómo Contoso utiliza EMS en Microsoft 365 Enterprise para administrar los dispositivos y las aplicaciones que se ejecutan en ellos.
+description: Obtenga información sobre cómo Contoso utiliza EMS en Microsoft 365 Enterprise para administrar los dispositivos y las aplicaciones que se ejecutan en ellos.
 ms.openlocfilehash: f47d6a1ee608d33802f1c523d3b954af3771f212
 ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
@@ -22,7 +22,7 @@ ms.locfileid: "32278047"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Administración de dispositivos móviles para Contoso
 
-**Resumen:** Comprenda cómo Contoso utiliza EMS en Microsoft 365 Enterprise para administrar los dispositivos y las aplicaciones que se ejecutan en ellos.
+**Resumen:** Obtenga información sobre cómo Contoso utiliza EMS en Microsoft 365 Enterprise para administrar los dispositivos y las aplicaciones que se ejecutan en ellos.
 
 Enterprise Mobility + Security (EMS) en Microsoft 365 Enterprise se compone de un conjunto de servicios de Azure y Microsoft Intune para facilitar la administración y la seguridad de dispositivos móviles y aplicaciones.
 
@@ -38,7 +38,7 @@ En las primeras fases del análisis de la administración de dispositivos móvil
 
 Contoso no va a usar Intune para:
 
-- Permitir a los empleados que accedan de forma segura a Office 365 desde un quiosco público no administrado
+- Permitir a los empleados que accedan de forma segura a Office 365 desde un quiosco público no administrado.
 - Proteger los datos y el correo electrónico locales para que se pueda acceder a los mismos desde dispositivos móviles, porque ya no hay servidores de Microsoft Exchange locales.
 
 ## <a name="deploy"></a>Implementación
@@ -50,10 +50,10 @@ Contoso configuró la infraestructura de administración de sus dispositivos mó
 
   Ve las [directivas de acceso condicional de Contoso](contoso-identity.md#conditional-access-policies-for-identity-and-device-access) para obtener más información.
 
-- Habilitó la plataforma de dispositivos de Apple para dar soporte a los empleados con iPads, iMacs, iPhones y teléfonos de propiedad corporativa basados en iPhone
-- Creó directivas de términos y condiciones específicas para Contoso, que se muestran durante la instalación del Portal de empresa de Contoso en dispositivos móviles
-- Para los dispositivos que no están inscritos, un conjunto de directivas de administración de aplicaciones móviles (MAM) para exigir la autenticación para acceder a los servicios de Office 365
-- Creó directivas de Intune determinan lo siguiente:
+- Habilitó la plataforma de dispositivos de Apple para dar soporte a los empleados con iPads, iMacs, iPhones y teléfonos de propiedad corporativa basados en iPhone.
+- Creó directivas de términos y condiciones específicas para Contoso, que se muestran durante la instalación del Portal de empresa de Contoso en dispositivos móviles.
+- Para los dispositivos que no están inscritos, un conjunto de directivas de administración de aplicaciones móviles (MAM) para exigir la autenticación para acceder a los servicios de Office 365.
+- Creó directivas de Intune que determinan lo siguiente:
   - Aplicaciones permitidas
   - Cifrado del dispositivo para ayudar a evitar accesos no autorizados
   - Una contraseña o un PIN de seis dígitos

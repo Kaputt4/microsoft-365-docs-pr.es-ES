@@ -12,7 +12,7 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenda las opciones de identidad y configure Azure AD Connect para sincronizar la instancia local de Active Directory Domain Services con Azure AD.
+description: Conozca las opciones de identidad y configure Azure AD Connect para sincronizar la instancia local de Active Directory Domain Services con Azure AD.
 ms.openlocfilehash: 6e582a3e3c68b00968faac17fd60b922eaaf7121
 ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
