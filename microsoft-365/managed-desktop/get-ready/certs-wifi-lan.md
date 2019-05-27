@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b8d41e3747ad1e844e8d8f51412366d1c58efbe4
-ms.sourcegitcommit: 82a5c9a1f0f9627264f6f488dedb03f9092451fd
+ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
+ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34163455"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34391271"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparar certificados y perfiles de red para el escritorio administrado de Microsoft  
  
@@ -71,7 +71,7 @@ Una vez que se haya exportado el perfil de LAN, puede preparar la Directiva para
     - OMA-URI (distingue entre mayúsculas y minúsculas): Enter *./Device/Vendor/msft/WiredNetwork/LanXML*
     - Tipo de datos: seleccionar **cadena (archivo XML)**. 
     - XML personalizado: carga el archivo XML exportado.
-2. Enviar una solicitud de servicio a las operaciones de escritorio administradas de Microsoft mediante el portal de administración de escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "dispositivos de área de trabajo modernos: prueba". Las operaciones de escritorio administradas de Microsoft le permitirán saber cuándo se completa la solicitud mediante el portal de administración.
+2. Envíe una solicitud de soporte técnico a las operaciones de TI de escritorio administradas de Microsoft mediante el portal de administración de escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "dispositivos de área de trabajo modernos: prueba". Las operaciones de TI de escritorio administradas por Microsoft le permitirán saber cuándo se completa la solicitud a través de la solicitud de soporte en el portal de administración.
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Implementación de certificados y el perfil de Wi-Fi/VPN 
  
@@ -82,6 +82,6 @@ Para implementar certificados y perfiles, siga estos pasos:
 2. Cree un perfil para cada certificado SCEP o PKCS (consulte [Create a SCEP Certificate](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile) Profile or [Create a PKCS Certificate Profile](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)) cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato dd/mm/aaaa. **No se implementarán los perfiles de certificado sin una fecha de expiración.**
 3. Cree un perfil para cada red WiFi corporativa (consulte [configuración de Wi-Fi para dispositivos con Windows 10 y versiones posteriores](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
 4. Cree un perfil para cada VPN corporativa (consulte la configuración de dispositivo de Windows [10 y Windows Holographic para agregar conexiones VPN con Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
-5. Envíe una solicitud de servicio titulada "implementación de certificados" o "implementación de Perfil de Wi-Fi" a operaciones de escritorio administradas de Microsoft mediante el portal de administración de escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "dispositivos del área de trabajo modernos: prueba". Las operaciones de escritorio administradas de Microsoft le permitirán saber cuándo se ha completado la solicitud mediante el portal de administración. 
+5. Envíe una solicitud de soporte titulada "implementación de certificados" o "implementación de Perfil de Wi-Fi" a operaciones de TI de escritorio administradas por Microsoft mediante el portal de administración de escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "dispositivos del área de trabajo modernos: test ". Las operaciones de TI de escritorio administradas por Microsoft le permitirán saber cuándo se ha completado la solicitud a través de la solicitud de soporte técnico en el portal de administración. 
  
  
