@@ -2,21 +2,21 @@
 title: Azure y notificación de infracciones de datos según el RGPD
 description: Se explica cómo Azure protege contra una infracción de datos personales y cómo responde Microsoft y le notifica si se produce una infracción.
 keywords: Azure, Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 287175d6f78efa1052e446b230f39c33fc4d5fc6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5e8c04bcd20f56580e939bc4a2685eb232d5e589
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286435"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431501"
 ---
 # <a name="azure-and-breach-notification-under-the-gdpr"></a>Azure y notificación de infracciones de datos según el RGPD
 
@@ -68,7 +68,7 @@ Azure responde a una posible infracción de datos según el proceso de respuesta
 <tr class="odd">
 <td align="left">5</td>
 <td align="left">Cierre y análisis posterior</td>
-<td align="left">Este equipo crea un análisis final que expone los detalles de la incidencia, con la intención de revisar directivas, procedimientos y procesos para evitar que el evento vuelva a producirse.</td>
+<td align="left">El equipo de respuesta ante incidentes crea un análisis posterior que expone los detalles del incidente, con la intención de revisar directivas, procedimientos y procesos para evitar que el evento vuelva a producirse.</td>
 </tr>
 </tbody>
 </table>
@@ -137,7 +137,7 @@ Durante la investigación, el equipo de respuesta de seguridad trabaja junto a a
 
 Microsoft comprueba que el riesgo para los clientes y negocios se ha contenido con éxito y que las medidas correctivas se han implementado. En caso necesario, se llevan a cabo pasos de atenuación de emergencia para resolver los riesgos de seguridad inmediatos asociados con el evento.
 
-Microsoft también realiza un análisis final interno para las infracciones de datos. Como parte de este ejercicio, se evalúan los procedimientos operativos y la suficiencia de respuesta y se identifican e implementan las actualizaciones necesarias para la respuesta ante incidencias de seguridad o procesos relacionados. Los análisis finales internos para las infracciones de datos son registros muy confidenciales no disponibles para los clientes. Los análisis finales pueden, sin embargo, resumirse e incluirse en otras notificaciones de eventos del cliente. Estos informes se proporcionan a auditores externos para su revisión como parte del ciclo de auditoría rutinario de Azure.
+Microsoft también realiza un análisis posterior interno de las infracciones de datos. Como parte de este ejercicio, se evalúan los procedimientos operativos y la suficiencia de respuesta y se identifican e implementan las actualizaciones necesarias para la respuesta ante incidencias de seguridad o procesos relacionados. Los análisis posteriores internos de las infracciones de datos son registros altamente confidenciales que no están disponibles para los clientes. Pero los análisis posteriores pueden resumirse e incluirse en otras notificaciones de eventos del cliente. Estos informes se proporcionan a auditores externos para su revisión como parte del ciclo de auditoría rutinario de Azure.
 
 #### <a name="customer-notification"></a>Notificación al cliente
 ---------------------
@@ -152,7 +152,7 @@ Después de la declaración de un CRSI, el proceso de notificación se lleva a c
 
 Microsoft Azure proporciona a los clientes información detallada, lo que les permite realizar investigaciones internas y ayudar a cumplir los compromisos de usuario final, mientras no retrase indebidamente el proceso de notificación.
 
-La notificación de una infracción de datos personales se entregará al cliente por cualquier medio elegido por Microsoft, incluyendo el correo electrónico. La notificación de una infracción de datos se enviará a la lista de contactos de seguridad proporcionada en Azure Security Center, que puede configurarse siguiendo las [directrices de implementación](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Si no se proporciona información de contacto en el centro de seguridad de Azure, la notificación se enviará a uno o varios administradores de una suscripción de Azure. Para asegurarse de que pueda entregarse la notificación correctamente, es responsabilidad del cliente proporcionar información de contacto administrativa correcta en cada suscripción y portal de servicios en línea aplicables.
+Se enviará una notificación de la violación de datos personales al cliente por cualquier medio que seleccione Microsoft, incluido por correo electrónico. La notificación de una infracción de datos se enviará a la lista de contactos de seguridad proporcionada en Azure Security Center, que puede configurarse siguiendo las [directrices de implementación](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details).  Si no se proporciona información de contacto en Azure Security Center, la notificación se enviará a uno o más administradores de una suscripción de Azure. Para garantizar que la notificación se pueda entregar correctamente, es responsabilidad del cliente comprobar que sea correcta la información del contacto administrativo de la suscripción y el portal de servicios en línea correspondientes.
 
 El equipo de Microsoft Azure o Azure Government también puede elegir notificar a personal de Microsoft adicional, como el servicio al cliente (CSS) y el administrador de cuentas del cliente (AM) o el administrador técnico de cuentas (TAM). Estos individuos a menudo tienen una relación cercana con el cliente y puedes facilitar una solución más rápida.<span id="_Appendix_A" class="anchor"></span>
 

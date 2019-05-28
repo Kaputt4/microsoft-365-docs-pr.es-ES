@@ -2,21 +2,21 @@
 title: Solicitudes del interesado de Microsoft Dynamics 365 para el RGPD
 description: Guía sobre cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes poseedores de datos a encontrar y actuar en datos personales con el fin de responder a las solicitudes de derechos del titular de los datos.
 keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/30/2019
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 4e1597e658b0ac6de0c4805b77660e6c47424aa2
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 3c394df956801beed63b5e31c4a1579bf5324eba
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497742"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431761"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Solicitudes del titular de los datos de Microsoft Dynamics 365 para el RGPD
 
@@ -24,17 +24,17 @@ El Reglamento de protección de datos de la UE (RGPD) ofrece derechos a las pers
 
 En esta guía, se explica cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes poseedores de datos a encontrar y actuar sobre datos personales con el fin responder a las solicitudes de derechos del titular de los datos. En concreto, se explica cómo encontrar, obtener acceso y actuar sobre datos personales que residen en la nube de Microsoft. Aquí encontrará un resumen rápido de los procedimientos descritos en esta guía:
 
-1. ***Detección***: use herramientas de búsqueda y detección para encontrar con facilidad datos de clientes que puedan ser el objeto de una solicitud de derechos del titular de los datos. Después de recopilar los documentos que puedan ser el objeto de una solicitud, puede realizar una o varias de las acciones de solicitud de derechos del titular de los datos descritas en los pasos siguientes para responder a la petición. Como alternativa, puede determinar que la solicitud no cumple las directrices de respuesta a solicitudes de derechos del titular de los datos.
+1. ***Detección: use herramientas de búsqueda y detección para encontrar con facilidad datos de clientes que puedan ser el objeto de una solicitud de derechos del titular de los datos. Después de recopilar los documentos que puedan ser el objeto de una solicitud, puede realizar una o varias de las acciones de solicitud de derechos del titular de los datos descritas en los pasos siguientes para responder a la petición. Como alternativa, puede determinar que la solicitud no cumple las directrices de respuesta a solicitudes de derechos del titular de los datos.
 
-2. ***Acceso***: recupere datos personales que residan en la nube de Microsoft y, si se le pide, realice una copia para proporcionársela al titular de los datos.
+2. ***Acceso: recupere datos personales que residan en la nube de Microsoft y, si se le pide, realice una copia para proporcionársela al titular de los datos.
 
-3. ***Rectificación***: realice cambios o implemente otras acciones solicitadas en los datos personales, si corresponde.
+3. ***Rectificación: realice cambios o implemente otras acciones solicitadas en los datos personales, si corresponde.
 
-4.  ***Restricción***: restrinja el tratamiento de datos personales, ya sea al quitar las licencias de distintos servicios en línea o al desactivar los servicios que quiera, siempre que sea posible. También puede quitar los datos de la nube de Microsoft y conservarlos de forma local o en otra ubicación.
+4.  ***Restricción: restrinja el tratamiento de datos personales, ya sea al quitar las licencias de distintos servicios en línea o al desactivar los servicios que quiera, siempre que sea posible. También puede quitar los datos de la nube de Microsoft y conservarlos de forma local o en otra ubicación.
 
-5. ***Eliminación***: elimine de forma permanente los datos personales que residen en la nube de Microsoft.
+5. ***Eliminación: elimine de forma permanente los datos personales que residen en la nube de Microsoft.
 
-6. ***Exportación***: envíe una copia electrónica (en un formato de lectura mecánica) de datos personales al titular de los datos.
+6. ***Exportación: envíe una copia electrónica (en un formato de lectura mecánica) de datos personales al titular de los datos.
 
 En cada sección de esta guía, se describen los procedimientos técnicos que puede realizar una organización poseedora de los datos para responder a una solicitud de derechos del titular de los datos personales en la nube de Microsoft.
 
@@ -42,15 +42,15 @@ En cada sección de esta guía, se describen los procedimientos técnicos que pu
 
 Estas son las definiciones de los términos relacionados con esta guía:
 
-- <em>Poseedor</em>: la persona física o jurídica, entidad pública, agencia u organismo que, solo o junto a otras personas, determina los fines y los medios del procesamiento de datos personales; donde los fines y los medios de dicho procesamiento están determinados por la ley de la Unión Europea o de los Estados miembros, el poseedor o los criterios específicos para su designación pueden estar proporcionados por la ley de la Unión Europea o de los Estados miembros.
+- <em>Poseedor: la persona física o jurídica, entidad pública, agencia u organismo que, solo o junto a otras personas, determina los fines y los medios del procesamiento de datos personales; donde los fines y los medios de dicho procesamiento están determinados por la ley de la Unión Europea o de los Estados miembros, el poseedor o los criterios específicos para su designación pueden estar proporcionados por la ley de la Unión Europea o de los Estados miembros.
 
-- *Datos personales* y <em>titular de los datos</em>: cualquier información sobre una persona física identificada o identificable (“titular de los datos”); una persona física identificable es una que puede identificarse, directa o indirectamente, especialmente en referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más factores específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona física.
+- *Datos personales* y <em>titular de los datos: cualquier información sobre una persona física identificada o identificable (“titular de los datos”); una persona física identificable es una que puede identificarse, directa o indirectamente, especialmente en referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más factores específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona física.
 
-- <em>Procesador</em>: persona física o jurídica, entidad pública, agencia u otro organismo que procesa datos personales en nombre del poseedor.
+- <em>Procesador: persona física o jurídica, entidad pública, agencia u otro organismo que procesa datos personales en nombre del poseedor.
 
 - *Datos de cliente*: todos los datos, incluidos todos los archivos de texto, sonido, vídeo o imagen, y software, proporcionados a Microsoft por un cliente o en su representación mediante el uso del servicio empresarial, según se define en los Términos de Microsoft Online Services.
 
-- *Registros generados por el* *Sistema*: registros y datos relacionados generados por Microsoft que permiten a Microsoft prestar servicios empresariales a los usuarios. Los registros generados por el sistema contienen principalmente datos anonimizados parcialmente, como identificadores únicos (por lo general, un número generado por el sistema que no se puede usar para identificar a una persona, pero que se usa para prestar servicios empresariales a los usuarios). Los registros generados por el sistema también pueden contener información identificable sobre los usuarios finales, como un nombre de usuario.  
+- *Registros* *generados por el sistema: registros y datos relacionados generados por Microsoft que permiten a Microsoft prestar servicios empresariales a los usuarios. Los registros generados por el sistema contienen principalmente datos anonimizados parcialmente, como identificadores únicos (por lo general, un número generado por el sistema que no se puede usar para identificar a una persona, pero que se usa para prestar servicios empresariales a los usuarios). Los registros generados por el sistema también pueden contener información identificable sobre los usuarios finales, como un nombre de usuario.  
 
 ### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>Modo en que esta guía puede servir para cumplir sus responsabilidades de poseedor
 
@@ -435,7 +435,8 @@ En la tabla siguiente, se resumen las acciones de acceso y exportación de regis
 </tbody>
 </table>
 
-[Nota] Algunas características no permiten exportar ni eliminar los registros generados por el sistema con información personal para mantener la integridad de dicha información con fines de seguridad y auditoría.
+> [!Note]
+> Algunas características no permiten exportar ni eliminar los registros generados por el sistema con información personal para mantener la integridad de dicha información con fines de seguridad y auditoría.
 
 ### <a name="deleting-system-generated-logs"></a>Eliminar registros generados por el sistema
 Para eliminar los registros generados por el sistema recuperados con una solicitud de acceso, necesita quitar el usuario del servicio y eliminar de forma permanente su cuenta de Azure Active Directory. Para obtener instrucciones sobre cómo eliminar de forma permanente un usuario, vea la sección [Eliminar un usuario](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user) en esta guía. Es importante tener en cuenta que la acción de eliminar una cuenta de usuario de forma permanente es irreversible.
@@ -444,4 +445,4 @@ Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días, 
 
 #### <a name="learn-more"></a>Más información
 
-[Centro de confianza de Microsoft](https://www.microsoft.com/es-ES/TrustCenter/Privacy/gdpr/default.aspx)
+[Centro de confianza de Microsoft](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

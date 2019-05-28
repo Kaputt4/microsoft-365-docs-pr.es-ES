@@ -1,29 +1,29 @@
 ---
 title: Soporte técnico y servicios profesionales de Microsoft, y notificación de infracciones según el RGPD
-description: Se explica cómo el soporte técnico y los servicios profesionales de Microsoft le protegen contra una infracción de datos personales y cómo Microsoft responde y le notifica si se produce una infracción.
+description: Se explica cómo el Soporte técnico y los servicios profesionales de Microsoft le protegen contra una infracción de datos personales y cómo Microsoft responde y le notifica si se produce una infracción.
 keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: a17752773304272938c305649ff6e511ab0d1b0b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8a0f0c5c173fbee6a865d2c9a7afb0f61b388507
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285747"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431601"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Soporte técnico y servicios profesionales de Microsoft, y notificación de infracciones según el RGPD
 
-El soporte técnico y los servicios profesionales de Microsoft se toman muy en serio sus obligaciones según el Reglamento general de protección de datos (RGPD).
+El Soporte técnico y los servicios profesionales de Microsoft se toman muy en serio sus obligaciones según el Reglamento general de protección de datos (RGPD).
 
 El equipo de Servicios profesionales de Microsoft está formado por un grupo diverso de arquitectos técnicos, ingenieros, consultores y profesionales de soporte técnico dedicados a alcanzar la misión de Microsoft de proporcionar recursos a los clientes para mejorar su productividad. Nuestro equipo de Servicios profesionales está formado por un total de más de 21 000 consultores, asesores digitales, representantes de soporte técnico Premier, ingenieros y profesionales de ventas que trabajan en 191 países, ofrecen asistencia en 46 idiomas, administran varios millones de interacciones al mes, e interactúan con clientes y partners con herramientas automatizadas, locales, telefónicas, web y de la comunidad. La organización ofrece amplia experiencia en toda la cartera de Microsoft, con una extensa red de partners, comunidades técnicas, herramientas, diagnósticos y canales que nos conectan con nuestros clientes empresariales.
 
-Los objetivos del equipo de respuesta ante incidentes de protección de datos global de los Servicios profesionales de Microsoft son (a) usar procesos y operaciones estrictos para evitar que se produzcan incidentes de protección de datos; (b) administrarlos de forma profesional y eficiente cuando se produzcan; y (c) aprender de estos incidentes de protección de datos con mejoras del programa y análisis posteriores. Los procesos y los resultados del equipo de respuesta ante incidentes de protección de datos del Servicios profesionales de Microsoft son revisados y evaluados por varias auditorías de seguridad y cumplimiento (por ejemplo, ISO/CEI 27001).
+Los objetivos del equipo de respuesta ante incidentes de protección de datos global de los Servicios profesionales de Microsoft son (a) usar procesos y operaciones estrictos para evitar que se produzcan incidentes de protección de datos; (b) administrarlos de forma profesional y eficiente cuando se produzcan; y (c) aprender de estos incidentes de protección de datos con mejoras del programa y análisis posteriores. Los procesos y los resultados del equipo de respuesta ante incidentes de protección de datos de Servicios profesionales de Microsoft son revisados y evaluados por varias auditorías de seguridad y cumplimiento (por ejemplo, ISO/CEI 27001).
 
 ### <a name="data-protection-incident-response-overview"></a>Información general sobre la respuesta ante incidentes de protección de datos 
 

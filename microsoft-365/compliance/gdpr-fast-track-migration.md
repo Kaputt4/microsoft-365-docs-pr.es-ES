@@ -1,6 +1,6 @@
 ---
 title: RGPD
-description: 'Manual técnico de Microsoft: CONJUNTO DE HERRAMIENTAS DE MIGRACIÓN DE FASTTRACK PARA CURSAR SOLICITUDES DE ELIMINACIÓN'
+description: 'Guía técnica de Microsoft: CONJUNTO DE HERRAMIENTAS DE MIGRACIONES DE FASTTRACK PARA ENVIAR SOLICITUDES DE ELIMINACIÓN'
 keywords: Migración de FastTrack, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 author: MohitKumar
 localization_priority: Priority
@@ -11,23 +11,23 @@ ms.author: mohitku
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: ae4c088ce16b2b415ffa79a6fadd3f1c2a0426c7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0ef1a23d69ae91b9d94c4587f1912c4171fe84d3
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286828"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431421"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>Conjunto de herramientas de migración de FastTrack para cursar solicitudes de eliminación
 
 ## <a name="toolset-purpose"></a>Finalidad del conjunto de herramientas
 
-Si es un cliente que actualmente está realizando una migración de FastTrack, eliminar la cuenta de usuario de Office 365 no hará que se elimine la copia de datos que el equipo de FastTrack de Microsoft conserva, cosa que hace con el único propósito de completar la migración. Si quiere que el equipo de Microsoft FastTrack elimine también esa copia de datos durante la migración, curse una solicitud a través de este conjunto de herramientas. En el transcurso habitual de las actividades, Microsoft FastTrack eliminará todas las copias de datos cuando la migración finalice. 
+Si es un cliente que actualmente está realizando una migración de FastTrack, eliminar la cuenta de usuario de Office 365 no hará que se elimine la copia de datos que el equipo de FastTrack de Microsoft conserva, cosa que hace con el único propósito de completar la migración. Si quiere que el equipo de Microsoft FastTrack elimine también esa copia de datos durante la migración, curse una solicitud a través de este conjunto de herramientas. En el transcurso habitual de las actividades, Microsoft FastTrack eliminará todas las copias de datos cuando la migración finalice.
 
 ### <a name="supported-platforms"></a>Plataformas compatibles
 Microsoft admite la versión inicial de este conjunto de herramientas en la plataforma de Windows y en la consola de PowerShell. Este conjunto de herramientas admite las siguientes plataformas conocidas:
  
-***Tabla 1: Plataformas admitidas por este conjunto de herramientas***
+***Tabla 1: plataformas admitidas por este conjunto de herramientas***
  
 <!--start table here HEADER -->
  
@@ -44,11 +44,11 @@ Microsoft admite la versión inicial de este conjunto de herramientas en la plat
 
 Este conjunto de herramientas está disponible en la Galería de PowerShell de la aplicación de consola de PowerShell. Para encontrar y cargar este módulo de cmdlet, abra primero PowerShell en el modo de administrador para, así, contar con los permisos adecuados para instalar el módulo. Si no ha usado PowerShell anteriormente, vaya a la barra de tareas de Windows y, en el cuadro de búsqueda, escriba "PowerShell". Seleccione la aplicación de consola haciendo clic con el botón derecho, elija **Ejecutar como administrador** y haga clic en **Sí** para ejecutar Windows PowerShell.
 
-![PowerShell: Ejecutar como administrador](media/fasttrack-powershell_image.png)
+![PowerShell: ejecutar como administrador](media/fasttrack-powershell_image.png)
 
-![PowerShell: Permitir que la aplicación haga cambios](media/fasttrack-run-powershell_image.png)
+![PowerShell: permitir que la aplicación haga cambios](media/fasttrack-run-powershell_image.png)
 
-Con la consola ya abierta, ahora hay que configurar los permisos que permitan ejecutar scripts. Para ello, escriba el siguiente comando: "Set-ExecutionPolicy – ExecutionPolicy: Bypass – Scope:Process".
+Con la consola ya abierta, hay que configurar los permisos que permitan ejecutar scripts. Para ello, escriba el siguiente comando: "Set-ExecutionPolicy – ExecutionPolicy: Bypass – Scope: Process".
 
 Se le pedirá que confirme esta acción, dado que el administrador puede cambiar el ámbito a su conveniencia.
 

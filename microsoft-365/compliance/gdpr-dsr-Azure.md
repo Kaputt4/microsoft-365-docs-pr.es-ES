@@ -2,20 +2,20 @@
 title: Solicitudes de interesados de Azure para el RGPD
 description: ''
 keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: e74c4c96b66a7c21bc46520dbcdeb34898bceaf9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 1e3593cf96fdef770c8704859c569dcc097f4ec3
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286105"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431681"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados de Azure para el RGPD
 
@@ -25,17 +25,17 @@ El Reglamento de protección de datos de la UE (RGPD) ofrece derechos a las pers
 
 Esta guía explica cómo usar productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes poseedores de datos a encontrar y actuar sobre datos personales para responder solicitudes de interesado. En concreto, esto incluye cómo encontrar, acceder y actuar sobre datos personales alojados en la nube de Microsoft. Este es un breve resumen de los procedimientos descritos en esta guía:
 
-1.  ***Descubrir***: use herramientas de búsqueda y descubrimiento para encontrar con facilidad datos de clientes que puedan estar sujetos a una solicitud de interesado. Tras recopilar los documentos potenciales, puede realizar una o varias delas acciones de solicitud descritas en los pasos siguientes para responder a la petición. De forma alternativa, puede determinar que la solicitud no cumple las directrices de respuesta a solicitudes de interesado.
+1.  ***Detección: use herramientas de búsqueda y detección para encontrar con facilidad datos de clientes que puedan ser el objeto de una solicitud de derechos del titular de los datos. Después de recopilar los documentos que puedan ser el objeto de una solicitud, puede realizar una o varias de las acciones de solicitud de derechos del titular de los datos descritas en los pasos siguientes para responder a la petición. Como alternativa, puede determinar que la solicitud no cumple las directrices de respuesta a solicitudes de derechos del titular de los datos.
 
-2.  ***Acceder***: recupere datos personales alojados en la nube de Microsoft y, si se le pide, realice una copia que puede estar a disposición del interesado.
+2.  ***Acceso: recupere datos personales que residan en la nube de Microsoft y, si se le pide, realice una copia para proporcionársela al titular de los datos.
 
-3.  ***Corregir***: realice los cambios o implemente otras acciones solicitadas en los datos personales, si procede.
+3.  ***Rectificación: realice cambios o implemente otras acciones solicitadas en los datos personales, si corresponde.
 
-4.  ***Restringir***: restrinja el procesamiento de datos personales, quitando las licencias de varios servicios de Azure o desactivando los servicios deseados siempre que sea posible. También puede quitar los datos de la nube de Microsoft y conservarlos localmente o en otra ubicación.
+4.  ***Restricción: restrinja el tratamiento de datos personales, ya sea al quitar las licencias de distintos servicios de Azure o al desactivar los servicios que quiera, siempre que sea posible. También puede quitar los datos de la nube de Microsoft y conservarlos de forma local o en otra ubicación.
 
-5.  ***Eliminar***: eliminar de forma permanente los datos personales que residen en la nube de Microsoft.
+5.  ***Eliminación: elimine de forma permanente los datos personales que residen en la nube de Microsoft.
 
-6.  ***Exportar***: enviar una copia electrónica (en un formato legible) de datos personales al interesado.
+6.  ***Exportación: envíe una copia electrónica (en un formato de lectura mecánica) de datos personales al titular de los datos.
 
 Cada sección de esta guía describe los procedimientos técnicos que puede realizar una organización poseedora de datos para responder a una solicitud de interesado de datos personales en la nube de Microsoft.
 
@@ -44,15 +44,15 @@ Cada sección de esta guía describe los procedimientos técnicos que puede real
 
 A continuación se ofrecen definiciones de términos relacionados con esta guía.
 
--   *Poseedor*: la persona física o legal, autoridad pública, agencia u organismo que solo o junto a otras personas, determina los fines y medios del procesamiento de datos personales; donde los fines y los medios de dicho procesamiento están determinados por la ley de la unión o de un estado miembro, el poseedor o los criterios específicos para su nominación pueden estar proporcionados por la ley de un estado miembro o de la unión.
+-   *Poseedor: la persona física o jurídica, entidad pública, agencia u organismo que, solo o junto a otras personas, determina los fines y los medios del procesamiento de datos personales; donde los fines y los medios de dicho procesamiento están determinados por la ley de la Unión Europea o de los Estados miembros, el poseedor o los criterios específicos para su designación pueden estar proporcionados por la ley de la Unión Europea o de los Estados miembros.
 
--   *Datos personales* e *interesado*: cualquier información sobre una persona física identificada o identificable (“interesado”); una persona identificable natural es una que puede identificarse, directa o indirectamente, especialmente con referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más elementos específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona natural;
+-   *Datos personales* y *titular de los datos: cualquier información sobre una persona física identificada o identificable (“titular de los datos”); una persona física identificable es una que puede identificarse, directa o indirectamente, especialmente en referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más factores específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona física.
 
--   *Procesador*: persona física o legal, autoridad pública, agencia u otro organismo que trata datos personales en nombre del poseedor.
+-   *Procesador: persona física o jurídica, entidad pública, agencia u otro organismo que procesa datos personales en nombre del poseedor.
 
--   *Los datos de clientes*: todos los datos, incluyendo archivos de texto, sonido, vídeos o imagen y software proporcionados a Microsoft por, o en nombre de, un cliente a través del uso del servicio empresarial. Los datos de clientes incluyen tanto (1) información de identificación personal de los usuarios finales (por ejemplo, nombres de usuario e información de contacto en Azure Active Directory) y contenido del cliente cargado o creado por clientes en servicios específicos (por ejemplo, el contenido del cliente en una cuenta de Azure Storage, contenido del cliente de Azure SQL Database, o la imagen de la máquina virtual de un cliente en Azure Virtual Machines).
+-   Los datos de clientes: todos los datos, (incluidos todos los archivos de texto, sonido, vídeo o imagen, y software) proporcionados a Microsoft por un cliente (o en su representación) mediante el uso del servicio empresarial. En los datos de clientes, se incluye (1) información de identificación personal de los usuarios finales (por ejemplo, nombres de usuario e información de contacto en Azure Active Directory) y contenido del cliente cargado o creado por clientes en servicios específicos (por ejemplo, el contenido del cliente en una cuenta de Azure Storage, contenido del cliente de Azure SQL Database, o la imagen de la máquina virtual de un cliente en Azure Virtual Machines).
 
--   *Registros generados por el sistema*: registros y datos relacionados generados por Microsoft que ayudan a Microsoft a proporcionar servicios empresariales a los usuarios. Los registros generados por el sistema contienen principalmente datos pseudonimizados, como identificadores únicos (por lo general, un número generado por el sistema que se usa para ofrecer los servicios a los usuarios, pero no puede identificar a un individuo). Los registros generados por el sistema también pueden contener información que identifique a los usuarios finales, como un nombre de usuario.
+-   *Registros generados por el sistema: registros y datos relacionados generados por Microsoft que permiten a Microsoft prestar servicios empresariales a los usuarios. Los registros generados por el sistema contienen principalmente datos anonimizados parcialmente, como identificadores únicos (por lo general, un número generado por el sistema que no se puede usar para identificar a una persona, pero que se usa para prestar servicios empresariales a los usuarios). Los registros generados por el sistema también pueden contener información identificable sobre los usuarios finales, como un nombre de usuario.
 
 <span id="_Toc511384802" class="anchor"><span id="_Toc511163873" class="anchor"><span id="_Toc511136230" class="anchor"><span id="_Toc511125163" class="anchor"><span id="_Toc511120750" class="anchor"><span id="_Toc511122657" class="anchor"><span id="_Toc508792504" class="anchor"></span></span></span></span></span></span></span>
 
@@ -96,7 +96,7 @@ Microsoft proporciona la capacidad de acceder, eliminar y exportar determinados 
 
 El primer paso para responder a una solicitud de interesado consiste en encontrar los datos personales que se solicitan. Este primer paso, encontrar y revisar los datos personales, le ayudará a determinar si una solicitud de interesado cumple los requisitos de su organización para respetarla o rechazarla. Por ejemplo, después de encontrar y revisar los datos personales, puede determinar que la solicitud no cumple los requisitos de su organización porque al llevarse a cabo puede afectar negativamente los derechos y libertades de terceros.
 
-Tras encontrar los datos, puede realizar la acción específica para satisfacer la solicitud interesado.
+Después de encontrar los datos, puede realizar la acción específica para satisfacer la solicitud del interesado.
 
 <span id="_Toc511384807" class="anchor"><span id="_Toc511163878" class="anchor"><span id="_Toc511136235" class="anchor"><span id="_Toc511125168" class="anchor"><span id="_Toc511120755" class="anchor"><span id="_Toc511122662" class="anchor"></span></span></span></span></span></span>
 ### <a name="azure-active-directory"></a>Azure Active Directory
@@ -209,7 +209,7 @@ Microsoft proporciona la capacidad de descubrir datos de clientes directamente a
 <span id="_Toc508792528" class="anchor"><span id="_Toc511122671" class="anchor"><span id="_Toc511120764" class="anchor"><span id="_Toc511125177" class="anchor"><span id="_Toc511136244" class="anchor"><span id="_Toc511163887" class="anchor"><span id="_Toc511384816" class="anchor"></span></span></span></span></span></span></span>
 ## <a name="step-5-delete"></a>Paso 5: Eliminar
 
-El "derecho a la supresión" mediante la eliminación de datos personales de los datos de clientes de una organización es una protección de clave en la RGPD. Quitar datos personales incluye quitar todos los datos personales y registros generado por el sistema, excepto la información de registro de auditoría. Cuando un usuario sufre una **eliminación temporal** (vea los detalles a continuación), la cuenta queda deshabilitada durante 30 días. Si no se realizará ninguna acción durante este período de 30 días, el usuario se **elimina de forma permanente** (de nuevo, vea los detalles a continuación). Tras una **eliminación permanente**, la cuenta del usuario, sus datos personales y los registros generado por el sistema se depuran en 30 días adicionales. Si un administrador de inquilinos emite inmediatamente una **eliminación permanente**, se eliminan la cuenta del usuario, los datos personales y los registros generados por el sistema a los 30 días de emisión.
+El "derecho a la supresión" mediante la eliminación de datos personales de los datos de clientes de una organización es una protección clave en la RGPD. Quitar datos personales incluye quitar todos los datos personales y registros generados por el sistema, excepto la información de registro de auditoría. Cuando un usuario sufre una **eliminación temporal** (vea los detalles a continuación), la cuenta queda deshabilitada durante 30 días. Si no se realiza ninguna acción durante este período de 30 días, el usuario se **elimina de forma permanente** (de nuevo, vea los detalles a continuación). Tras una **eliminación permanente**, la cuenta del usuario, sus datos personales y los registros generados por el sistema se depuran dentro de los siguientes 30 días. Si un administrador de inquilinos emite inmediatamente una **eliminación permanente**, se eliminan la cuenta del usuario, los datos personales y los registros generados por el sistema a los 30 días de la emisión.
 
 >[Importante] Debe ser un administrador de inquilinos para eliminar un usuario del inquilino.
 

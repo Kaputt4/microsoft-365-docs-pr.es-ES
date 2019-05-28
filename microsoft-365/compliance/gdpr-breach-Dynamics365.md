@@ -2,27 +2,25 @@
 title: Dynamics 365 y notificación de vulneraciones según el RGPD
 description: Se explica cómo Dynamics 365 protege contra una infracción de datos personales y cómo Microsoft responde y le notifica si se produce una infracción.
 keywords: Dynamics 365, Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 3ee90c2fbe2684cebbd19376f44fc97d743515db
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 957fbe5713c248ebcac1a986248455c7d98b4935
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286390"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431881"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 y notificación de vulneraciones según el RGPD
 
-Dynamics 365 se toma muy en serio sus obligaciones según el Reglamento general de protección de datos (RGPD) sobre la vulneración de datos de Microsoft Dynamics 365
-
-Microsoft trabaja continuamente para ofrecer servicios de categoría empresarial altamente seguros a los clientes de Dynamics 365. En esta sección, se ofrece un resumen de cómo Microsoft Dynamics 365 protege ante incidentes de seguridad o vulneraciones de datos, y el proceso que seguimos para responder y notificar a nuestros clientes.
+Dynamics 365 se toma muy en serio sus obligaciones según el Reglamento general de protección de datos (RGPD) y toma medidas de seguridad extensas para protegerse frente a las infracciones de datos. Microsoft trabaja continuamente para ofrecer servicios de categoría empresarial altamente seguros a los clientes de Dynamics 365. En esta sección, se ofrece un resumen de cómo Microsoft Dynamics 365 protege ante incidentes de seguridad o vulneraciones de datos, y el proceso que seguimos para responder y notificar a nuestros clientes.
 
 #### <a name="microsoft-dynamics-365-built-in-security-features"></a>Características de seguridad integradas en Microsoft Dynamics 365
 
@@ -46,7 +44,7 @@ Todos los empleados que trabajan en Microsoft Dynamics 365 reciben aprendizaje e
 
 #### <a name="how-does-microsoft-dynamics-365-define-security-incident-potential-breaches"></a>Definición de Microsoft Dynamics 365 de un incidente de seguridad o posibles vulneraciones
 
-Un incidente de seguridad o una vulneración de datos hace referencia a eventos, como un acceso ilegal a los datos del cliente almacenados en equipos de Microsoft o en instalaciones de Microsoft, o bien el acceso no autorizado a dichos equipos o instalaciones que puede producir la pérdida, divulgación o modificación de los datos de clientes. El objetivo de Microsoft al responder ante los incidentes de seguridad o infracciones de datos es proteger los datos de los clientes y los servicios de Dynamics 365. El enfoque de Microsoft en relación con la administración de un incidente de seguridad cumple con la publicación especial [800-61](https://www.nist.gov/) del [Instituto nacional de normalización y tecnología](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) (NIST).
+Un incidente de seguridad o una vulneración de datos hace referencia a eventos, como un acceso ilegal a los datos del cliente almacenados en equipos de Microsoft o en instalaciones de Microsoft, o bien el acceso no autorizado a dichos equipos o instalaciones que puede producir la pérdida, divulgación o modificación de los datos de clientes. El objetivo de Microsoft al responder ante los incidentes de seguridad o infracciones de datos es proteger los datos de los clientes y los servicios de Dynamics 365. El enfoque de Microsoft en relación con la administración de un incidente de seguridad cumple con la publicación especial [800-61](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) del [Instituto nacional de normalización y tecnología](https://www.nist.gov/) (NIST).
 
 Microsoft no supervisa ni responde ante incidentes de seguridad en el dominio de responsabilidad del cliente. Un peligro para la seguridad causado solo por un cliente no se trataría como un incidente de seguridad de Dynamics 365, y el espacio empresarial del cliente tendría que administrar el esfuerzo de respuesta. Una respuesta ante incidentes de clientes podría precisar la colaboración con el servicio de atención al cliente de Microsoft Dynamics 365, siempre que el cliente disponga de los contratos de servicio adecuados.
 
@@ -104,7 +102,7 @@ Los procesos de detección usados por Microsoft Dynamics 365 se diseñaron para 
 
 -   Informes de clientes que describen actividades sospechosas atribuidas a los servicios de Microsoft Dynamics 365 (en oposición a la actividad que se produce dentro del ámbito de responsabilidad del cliente).
 
--   Actividad de los [equipos de seguridad rojo y azul](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/). Esta estrategia usa un equipo rojo de expertos altamente cualificado en seguridad ofensiva de Microsoft para descubrir y atacar debilidades potenciales en los servicios de Microsoft Dynamics 365. El equipo azul de respuesta de seguridad necesita detectar y defenderse contra la actividad del equipo rojo. Las acciones de los equipos rojo y azul se usan para comprobar que los esfuerzos de respuesta de seguridad de Microsoft Dynamics 365 son efectivos a la hora de administrar incidentes de seguridad. Las actividades de los equipos de seguridad rojo y azul se operan según los requisitos de responsabilidad para garantizar la protección de los datos de clientes.
+-   Actividad de los [equipos de seguridad rojo y azul](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/). Esta estrategia usa un equipo rojo de expertos altamente cualificados en seguridad ofensiva de Microsoft para descubrir y atacar debilidades potenciales en los servicios de Microsoft Dynamics 365. El equipo azul de respuesta de seguridad necesita detectar y defenderse contra la actividad del equipo rojo. Las acciones de los equipos rojo y azul se usan para comprobar que los esfuerzos de respuesta de seguridad de Microsoft Dynamics 365 son efectivos a la hora de administrar incidentes de seguridad. Las actividades de los equipos de seguridad rojo y azul se operan según los requisitos de responsabilidad para garantizar la protección de los datos de clientes.
 
 -   Escalaciones por operadores de los servicios de Microsoft Dynamics 365. Los empleados de Microsoft reciben aprendizaje para identificar y escalar posibles problemas de seguridad.
 
@@ -122,11 +120,11 @@ El equipo de respuesta de seguridad trabaja con los ingenieros de seguridad de M
 
 -   **Incidente de privacidad:** un subtipo de incidente de seguridad relacionado con datos personales. Los procedimientos de control no son distintos de un incidente de seguridad.
 
-Para que se declare un incidente de seguridad denunciado por el cliente, Microsoft necesita determinar si se produjo (o es muy probable que se produjera) el acceso no autorizado a datos de clientes, o bien si existe una obligación legal o contractual para la notificación. Es preferible, aunque no necesario, conocer el impacto, el acceso a los recursos y los pasos de reparación del cliente específico. Por lo general, se declara un incidente de seguridad denunciado por el cliente una vez finalizada la fase de diagnóstico de un incidente de seguridad; pero, si la información relevante se encuentra disponible, la declaración puede producirse en cualquier momento. Para poder iniciar la ejecución del proceso de notificación de incidentes de clientes, el administrador de incidentes de seguridad necesita establecer pruebas más allá de la duda razonable de que se produjo un evento denunciable.
+Para que se declare una CRSI, Microsoft debe determinar que el acceso no autorizado a los datos del cliente se ha producido, o es probable que lo haya hecho, o existe un compromiso legal o contractual que fuerce la notificación. Es preferible, aunque no se requiere, que se conozcan los pasos de impacto del cliente específico, acceso a los recursos y reparación. Por lo general, se declara que una incidencia es un CRSI tras la conclusión de la etapa de diagnóstico de una incidencia de seguridad; sin embargó, la declaración puede producirse en cualquier momento si la información pertinente se encuentra disponible. El administrador de la incidencia de seguridad debe establecer pruebas más allá de la duda razonable de que se ha producido un evento del que informar para iniciar la ejecución del proceso de notificación de incidencias del cliente.
 
-Durante la investigación, el equipo de respuesta de seguridad trabaja con asesores jurídicos de todo el mundo para garantizar que los análisis forenses se realicen según los compromisos y obligaciones legales con los clientes. También hay restricciones importantes sobre la visualización y el tratamiento de los datos de clientes y los sistemas en varios entornos operativos. Los datos confidenciales y de los clientes no se transfieren fuera del entorno de producción sin la aprobación explícita y por escrito del administrador de incidentes, registrada en el vale del incidente correspondiente.
+Durante la investigación, el equipo de respuesta de seguridad trabaja junto a asistentes legales de todo el mundo para ayudar a garantizar que los análisis se realizan siguiendo los compromisos y las obligaciones legales con los clientes. También hay importantes restricciones sobre el visionado de datos de clientes y sistemas, además de sobre su manejo en varios entornos operativos. Los datos confidenciales y de los clientes no se transfieren fuera del entorno de producción sin la aprobación escrita del administrador de incidencias registrada en el tique de incidencia correspondiente.
 
-Microsoft comprueba que se contenga correctamente el riesgo para los clientes y las empresas, y que se implementen las medidas correctivas. Si es necesario, se llevan a cabo pasos de mitigación de emergencia para solucionar los riesgos de seguridad inmediatos asociados al evento.
+Microsoft comprueba que el riesgo para los clientes y negocios se ha contenido con éxito y que las medidas correctivas se han implementado. En caso necesario, se llevan a cabo pasos de atenuación de emergencia para resolver los riesgos de seguridad inmediatos asociados con el evento.
 
 Microsoft también realiza un análisis posterior interno de las infracciones de datos. Como parte de este ejercicio, se evalúan los procedimientos operativos y la suficiencia de respuesta, y se identifican e implementan las actualizaciones necesarias en las directivas de seguridad internas de Microsoft o los procesos relacionados. Los análisis posteriores internos de las infracciones de datos son registros altamente confidenciales que no están disponibles para los clientes. Pero los análisis posteriores pueden resumirse e incluirse en otras notificaciones de eventos del cliente. Estos informes se proporcionan a auditores externos para su revisión como parte del ciclo de auditoría rutinario de Dynamics 365.
 

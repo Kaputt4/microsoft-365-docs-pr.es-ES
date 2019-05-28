@@ -1,6 +1,6 @@
 ---
 title: Solicitudes del titular de los datos de soporte técnico y los servicios profesionales de Microsoft para el RGPD
-description: Forma en que el soporte técnico y los servicios profesionales de Microsoft procesan las solicitudes del titular de los datos.
+description: Forma en que el Soporte técnico y los servicios profesionales de Microsoft procesan las solicitudes del titular de los datos.
 keywords: Servicios profesionales, Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 author: herviicban
 localization_priority: Priority
@@ -10,16 +10,16 @@ ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 4fb7c3140a73e4f72673807bb99214ff6fc0f2bc
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278256"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431751"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados del soporte técnico y los servicios profesionales de Microsoft para el RGPD
 
-## <a name="introduction-to-microsoft-professional-services"></a>Introducción a los Servicios profesionales de Microsoft
+## <a name="introduction-to-microsoft-professional-services"></a>Introducción a los Servicios Profesionales de Microsoft
 
 El equipo de Servicios profesionales de Microsoft está formado por un grupo diverso de arquitectos técnicos, ingenieros, consultores y profesionales de soporte técnico dedicados a alcanzar la misión de Microsoft de proporcionar recursos a los clientes para mejorar su productividad. Nuestro equipo de Servicios profesionales está formado por un total de más de 21 000 consultores, asesores digitales, representantes de soporte técnico Premier, ingenieros y profesionales de ventas que trabajan en 191 países, ofrecen asistencia en 46 idiomas, administran varios millones de interacciones al mes, e interactúan con clientes y partners con herramientas automatizadas, locales, telefónicas, web y de la comunidad. La organización ofrece amplia experiencia en toda la cartera de Microsoft, con una extensa red de partners, comunidades técnicas, herramientas, diagnósticos y canales que nos conectan con nuestros clientes empresariales.
 
@@ -55,13 +55,13 @@ Todas las solicitudes han de realizarse con un representante de soporte técnico
 
 Estas son definiciones relevantes de los términos del RGPD para esta guía:
 
--   **Poseedor.** La persona física o jurídica, entidad pública, agencia u organismo que, solo o junto a otras personas, determina los fines y los medios del procesamiento de datos personales; donde los fines y los medios de dicho procesamiento están determinados por la ley de la Unión Europea o de los Estados miembros, el poseedor o los criterios específicos para su designación pueden estar proporcionados por la ley de la Unión Europea o de los Estados miembros.
+-   **Poseedor**: la persona física o jurídica, entidad pública, agencia u organismo que, solo o junto a otras personas, determina los fines y los medios del procesamiento de datos personales; donde los fines y los medios de dicho procesamiento están determinados por la ley de la Unión Europea o de los Estados miembros, el poseedor o los criterios específicos para su designación pueden estar proporcionados por la ley de la Unión Europea o de los Estados miembros.
 
--   **Datos personales y titular de los datos.** Cualquier información sobre una persona física identificada o identificable (“titular de los datos”); una persona física identificable es una que puede identificarse, directa o indirectamente, especialmente en referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más factores específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona física.
+-   **Datos personales y titular de los datos**: cualquier información sobre una persona física identificada o identificable (“titular de los datos”); una persona física identificable es una que puede identificarse, directa o indirectamente, especialmente en referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más factores específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona física.
 
--   **Procesador.** La persona física o jurídica, entidad pública, agencia u otro organismo que procesa datos personales en nombre del poseedor.
+-   **Procesador**: persona física o jurídica, entidad pública, agencia u otro organismo que procesa datos personales en nombre del poseedor.
 
-#### <a name="additional-terms-and-definitions-that-may-helpful-in-understanding-this-guide"></a>Otros términos y definiciones que pueden resultar útiles para comprender esta guía
+#### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>Otros términos y definiciones que pueden resultar útiles para comprender esta guía
 
 -   **Datos de soporte técnico y consultoría** son todos los datos (incluidos todos los archivos de texto, audio, vídeo e imagen, o software) proporcionados a Microsoft por el cliente o en su representación (o que el cliente autoriza a Microsoft a obtener de un servicio en línea) con una interacción con Microsoft para obtener servicios profesionales o de soporte técnico. Para que quede más claro, no se incluyen los datos recopilados donde Microsoft es el poseedor de los datos, incluidos los datos de contacto del cliente.
 
@@ -100,7 +100,7 @@ Explicación de cómo recibir asistencia de Microsoft cuando un cliente recibe u
 
 *Explicación de cómo Microsoft responde a las solicitudes realizadas por un contacto de cliente o administrador de TI para ejercer los derechos del titular de los datos.*
 
-Cuando un cliente interacciona con Microsoft para recibir servicios de consultoría o soporte técnico, el soporte técnico de Microsoft recopila o recupera automáticamente de los registros de la cuenta los datos personales del contacto del cliente (por ejemplo, el administrador de servicios del contrato Premier, administrador global, administrador de TI). Suele incluirse el nombre, el correo electrónico, el teléfono y otros datos personales de la persona que solicita servicios de consultoría o soporte técnico.
+Cuando un cliente interacciona con Microsoft para recibir servicios de consultoría o soporte técnico, el soporte técnico de Microsoft recopila o recupera automáticamente los datos personales del contacto del cliente de los registros de la cuenta (por ejemplo, el administrador de servicios del contrato Premier, administrador global, administrador de TI). Suele incluirse el nombre, el correo electrónico, el teléfono y otros datos personales de la persona que solicita servicios de consultoría o soporte técnico.
 
 Los datos personales del contacto del cliente forman parte de la relación empresarial de Microsoft con el cliente, y Microsoft es el poseedor de los datos. Microsoft responderá a las solicitudes de derechos del titular de los datos del contacto del cliente en relación con sus datos personales, independientemente de si permanecen o no en la organización.
 
@@ -117,7 +117,7 @@ Puede que los clientes decidan realizar cambios en sus datos recopilados durante
 Sergio es un administrador de TI de un cliente empresarial de Office 365, con una interacción de soporte técnico abierta y dos interacciones cerradas. Ahora, Sergio abandona la compañía y quiere que se eliminen sus datos. Sergio se pone en contacto con el PRC, quien le identifica como el administrador de TI. A Sergio se le informa de que su nombre no se puede eliminar de las interacciones anteriores (cerradas), ni cualquier otro dato de las interacciones abiertas. Pero el PRC sustituirá a Sergio como el contacto en la incidencia abierta actual si identifica un contacto de sustitución. Sergio informa a Microsoft de que Elvira será su contacto de sustitución, y Microsoft realizará el cambio en todos los sistemas de soporte técnico.
 
 <span id="_Toc510704616" class="anchor"><span id="_Toc511403166" class="anchor"></span></span>
-## <a name="dsr-for-an-end-user-engaging-microsoft"></a>Solicitud de derechos del titular de los datos de un usuario final que interacciona con Microsoft
+## <a name="dsr-for-an-end-user-engaging-microsoft"></a>Solicitud del interesado para un usuario final que interactúa con Microsoft
 
 *Forma en que Microsoft responde a solicitudes de los empleados de un cliente u otros derechos del titular de los datos para el ejercicio de sus derechos.*
 
@@ -174,7 +174,7 @@ En la respuesta a la solicitud de derechos del titular de los datos, se puede in
 En casos poco frecuentes, puede que los clientes necesiten obtener copias de datos de interacciones de soporte técnico (por ejemplo, correos electrónicos, copias transcritas de grabaciones telefónicas, transcripciones de chat, etc.) entre un representante de Microsoft y el representante del cliente. Hasta el máximo permitido, Microsoft puede proporcionar copias redactadas de estas transcripciones basadas en la necesidad, la confidencialidad y la dificultad.
 
 <span id="_Sway" class="anchor"><span id="_Toc508792516" class="anchor"><span id="_Toc510704619" class="anchor"><span id="_Toc511403169" class="anchor"></span></span></span></span>
-## <a name="step-3-rectify"></a>Paso 3: Rectificar
+## <a name="step-3-rectify"></a>Paso 3: Corregir
 
 Si un titular de los datos pide al cliente que rectifique los datos personales que residen en los datos de soporte técnico de su organización, el cliente tendrá que determinar si acepta o no la solicitud. Si el cliente acepta la solicitud, puede solicitar a Microsoft que realice el cambio. Microsoft puede rectificar los datos, o bien puede eliminar los datos del cliente de los sistemas de soporte técnico y solicitar que el cliente vuelva a enviarlos a Microsoft en un formato corregido.
 

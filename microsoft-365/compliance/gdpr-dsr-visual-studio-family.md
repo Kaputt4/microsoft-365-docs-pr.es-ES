@@ -13,12 +13,12 @@ manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286928"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431551"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados de la familia de Visual Studio para el RGPD
 
@@ -73,7 +73,7 @@ Los usuarios pueden controlar la configuración de privacidad de estos productos
 Los poseedores de datos pueden recurrir a uno de dos métodos posibles para administrar los datos de cliente y los registros generados por el sistema recopilados de los titulares de los datos, según cómo se haya registrado el producto de la familia de Visual Studio o las extensiones de Microsoft. En algunos casos, se deben usar ambos métodos. Por medio de estos métodos, los poseedores de datos pueden descargar una copia del historial de actividades administrado por el método en cuestión. El cierre de una cuenta de AAD o MSA elimina los datos de cliente de Visual Studio asociados y anonimiza los datos de identificación personal en los registros generados por el sistema que pertenezcan a estos productos. Los registros generados por el sistema anonimizados se conservan durante un máximo de 18 meses.
 
 - Los usuarios que hayan registrado un producto de la familia de Visual Studio con una cuenta respaldada por un inquilino de Azure (como, por ejemplo, una cuenta de AAD o MSA asociada a una suscripción a Azure) pueden seguir las instrucciones de [Solicitudes de interesados de Azure para el RGPD](gdpr-dsr-azure.md).
-- Los usuarios que hayan registrado un producto de la familia de Visual Studio sin una cuenta respaldada por un inquilino de Azure, que es el caso de muchas cuentas que usan una cuenta Microsoft (MSA), pueden dirigirse a [Centro de respuesta de privacidad de Microsoft basado en web](https://aka.ms/userprivacysite), disponible a través de la cuenta Microsoft, para ver, controlar y eliminar datos de actividades vinculados a su cuenta Microsoft en varios servicios Microsoft. En este escenario, el usuario es el poseedor de sus propios datos personales.
+- Los usuarios que hayan registrado un producto de la familia de Visual Studio sin una cuenta respaldada por un inquilino de Azure (por ejemplo muchas cuentas que usan una cuenta Microsoft -MSA-), pueden dirigirse a [Centro de respuesta de privacidad de Microsoft basado en web](https://aka.ms/userprivacysite), disponible a través de la cuenta Microsoft, para ver, controlar y eliminar datos de actividades vinculados a su cuenta Microsoft en varios servicios Microsoft. En este escenario, el usuario es el poseedor de sus propios datos personales.
 
 > [!NOTE]
 > Cuando un titular de la cuenta MSA elimina su cuenta, todos los datos de identificación personal que pertenezcan a estos productos se eliminarán (tanto si la cuenta está respaldada por un inquilino de Azure como si no) y los registros generados por el sistema se anonimizarán.
@@ -104,7 +104,7 @@ Haga lo siguiente para ver los datos relacionados con sus comentarios:
 1. Inicie sesión en la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com). En la esquina superior derecha, haga clic en su perfil y seleccione **Perfil y preferencias**.
 2. Haga clic en cualquiera de estas pestañas: **Perfil**, **Notificaciones**, **Actividad** y **Datos adjuntos**, para ver los datos enviados a los sistemas de comentarios.
    1. **Perfil** es su perfil de la [comunidad de desarrolladores](https://developercommunity.visualstudio.com), esto es, su nombre de usuario, dirección de correo, sección Acerca de, etc.
-   2. En **Notificaciones** se indica cómo controlar las notificaciones de correo electrónico que recibe.
+   2. En **Notificaciones se indica cómo controlar las notificaciones de correo electrónico que recibe.
    3. En **Actividad** encontrará los elementos de comentarios en los que ha participado (publicando, comentando, etc.) y las actividades realizadas.
    4. **Datos adjuntos** es una lista con el historial de datos adjuntos en un formato similar a `FileName was attached to the problem "ProblemName" Tue, Apr 10, 18 2:27 PM`.
 
@@ -148,7 +148,7 @@ Con el proceso de eliminación se quitará la siguiente información sobre el us
 
 Haga lo siguiente para iniciar una eliminación:
 
-1. Inicie sesión en la [comunidad de desarrolladores](https://developercommunity.visualstudio.com). En la esquina superior derecha, haga clic en su perfil y seleccione **Perfil y preferencias**.
+1. Inicie sesión en la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com). En la esquina superior derecha, haga clic en su perfil y seleccione **Perfil y preferencias**.
 2. Haga clic en la pestaña **Privacidad** y, luego, haga clic en **Eliminar los datos y la cuenta** para iniciar la eliminación de los datos.
 3. Aparecerá una pantalla de confirmación.
 4. Escriba "delete" (eliminar) en el cuadro y haga clic en **Eliminar mi cuenta**.

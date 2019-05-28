@@ -3,20 +3,20 @@ title: Guía para controladores de datos que usen los Servicios Profesionales de
 description: Este documento proporciona a los controladores de datos información sobre los Servicios Profesionales que les permitirá determinar si se necesita una EIPD y, en ese caso, qué detalles incluir.
 keywords: EIPD, Servicios Profesionales de Microsoft, documentación de Microsoft 365, RGPD
 robots: NOINDEX,NOFOLLOW
-author: herviicban
 ms.localizationpriority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: d9dd822e7e9ef7a93a41c056fc7bc014274ad190
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 01d42a7b8354575ac9b2316064aa9a33affbc441
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285539"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431801"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>Evaluaciones de impacto en la protección de datos personales: Guía para controladores de datos que usen los Servicios Profesionales de Microsoft
 
@@ -34,7 +34,7 @@ La finalidad de este documento es proporcionar a los controladores de datos info
 
 ## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Parte 1: Determinar si se necesita una EIPD
 
-El artículo 35 del RGPD exige que un controlador de datos cree una Evaluación de impacto en la protección de datos “cuando sea probable que un tipo de tratamiento, en particular si utiliza nuevas tecnologías, por su naturaleza, alcance, contexto o fines, entrañe un alto riesgo para los derechos y libertades de las personas físicas”. Además, establece más factores específicos que indicarían dicho alto riesgo, que se explican en la tabla siguiente. Al determinar si se necesita una EIPD, el controlador de datos necesita tener en cuenta estos factores, además de otros factores relevantes, en virtud de las implementaciones y usos específicos de los Servicios Profesionales realizados por el controlador.
+El artículo 35 del RGPD exige que un poseedor de los datos cree una evaluación de impacto en la protección de datos “cuando sea probable que un tipo de tratamiento, en particular si utiliza nuevas tecnologías, por su naturaleza, alcance, contexto o fines, entrañe un alto riesgo para los derechos y libertades de las personas físicas”. Estipula aún más los factores específicos que indicarían dicho alto riesgo, que se explican en la tabla siguiente. Al determinar si necesita un EIPD, el poseedor de los datos necesita tener en cuenta estos factores, además de otros factores relevantes, en virtud de las implementaciones y los usos específicos de Professional Services realizados por el poseedor.
 
 ***Tabla 1: Factores de riesgo e información relevante***
 
@@ -56,7 +56,7 @@ Al principio de un compromiso, los Servicios Profesionales tiene procesos para e
 
 ## <a name="part-2--contents-of-a-dpia"></a>Parte 2: Contenido de una EIPD
 
-El artículo 35 (7) exige que una evaluación de impacto en la protección de datos especifique los fines del procesamiento y una descripción sistemática del procesamiento previsto. En una descripción sistemática de un EIPD completo, podrían incluirse factores como el tipo de los datos procesados, durante cuánto tiempo se conservarán, dónde se encuentran los datos y dónde se transfieren, y qué terceras partes podrían tener acceso a los datos. Además, en el EIPD tiene que incluirse lo siguiente:
+El artículo 35 (7) exige que una Evaluación de impacto en la protección de datos especifique los fines del tratamiento y una descripción sistemática del tratamiento previsto. En dicha descripción sistemática podrían incluirse factores como el tipo de los datos procesados, durante cuánto tiempo se conservan, dónde se encuentran y dónde se transfieren, y qué terceras partes podrían tener acceso a los datos. Además, en la EIPD tiene que incluirse lo siguiente:
 
 -   una evaluación de la necesidad y proporcionalidad de las operaciones de procesamiento en relación con los fines;
 
@@ -72,7 +72,7 @@ La tabla siguiente contiene información sobre los Servicios Profesionales relev
 
 |||
 |:-----|:-----|
-|**Elemento de una EIPD** |**Información relevante acerca de los Servicios Profesionales**|
+|**Elementos de un EIPD** |**Información relevante acerca de los Servicios Profesionales**|
 |Finalidades del tratamiento|Las finalidades del tratamiento de datos mediante los Servicios Profesionales las determina el controlador que los implementa, configura y usa.<p>Como se especifica en el [Anexo sobre protección de datos de Servicios Profesionales de Microsoft](http://aka.ms/professionalservicesdpa) (MPSDPA), Microsoft, como procesador de datos, procesa Datos de Soporte y Consultoría con la única finalidad de prestar los servicios solicitados a nuestro cliente, el controlador de datos. Microsoft no usará Datos de Soporte y Consultoría o la información derivada de estos para fines publicitarios o comerciales.</p>|
 |Las finalidades del tratamiento de datos mediante los Servicios Profesionales las determina el controlador que los implementa, configura y usa.|Como se especifica en el [Anexo sobre protección de datos de Servicios Profesionales de Microsoft](http://aka.ms/professionalservicesdpa) (MPSDPA), Microsoft, como procesador de datos, procesa Datos de Soporte y Consultoría con la única finalidad de prestar los servicios solicitados a nuestro cliente, el controlador de datos. Microsoft no usará Datos de Soporte y Consultoría o la información derivada de estos para fines publicitarios o comerciales.|
 |Categorías de datos personales procesados|Los datos de Soporte técnico y Consultoría se refieren a todos los datos, como texto, sonido, vídeo, archivos de imagen o software, proporcionados a Microsoft por el cliente o en su nombre (o que el cliente autoriza obtener a Microsoft desde un servicio en línea) a través de un compromiso con Microsoft para obtener soporte técnico o servicios profesionales. Esto puede incluir información recopilada en el formulario web, correo electrónico, chat o teléfono. Puede incluir la descripción de problemas, archivos transferidos a Microsoft para resolver problemas de compatibilidad, solucionadores de problemas automatizados o si obtiene acceso a los sistemas de cliente de forma remota con permisos de cliente.<p>En los Datos de Clientes y de Soporte, no se incluyen el contacto del cliente ni los datos de facturación, como la información de suscripciones y los datos de pagos, que Microsoft recopila y procesa en su función de controlador de datos y que están fuera del alcance de este documento.</p>|
@@ -82,12 +82,12 @@ La tabla siguiente contiene información sobre los Servicios Profesionales relev
 |Derechos del sujeto de datos|Al operar como procesador, Microsoft facilita a los clientes (los controladores de datos) los datos personales de los sujetos de datos y la capacidad de cumplir con las solicitudes de los mismos cuando ejercen sus derechos según el RGPD. Hacemos esto de forma coherente con la funcionalidad del producto y con nuestra función de procesador. Si recibimos una solicitud de sujetos de datos de un cliente para ejercer uno o más de sus derechos según el RGPD, redirigiremos al sujeto de datos para que realice su solicitud directamente al controlador de datos.<p>La *Documentación de RGPD sobre las solicitudes del titular de los datos de los Servicios Profesionales* proporciona una descripción de cómo el cliente puede abordar sus obligaciones de derechos del titular de datos en los Servicios Profesionales.</p>|
 Una evaluación de la necesidad y proporcionalidad de las operaciones de procesamiento en relación con los fines.|Dicha evaluación dependerá de las necesidades y finalidades de procesamiento del controlador.<p>En relación con el procesamiento realizado por Microsoft, dicho procesamiento es necesario y proporcional a la finalidad de la prestación de los servicios al controlador de datos. Microsoft realiza este compromiso en el [MPSDPA](http://aka.ms/professionalservicesdpa).</p>|
 |Una evaluación de los riesgos para los derechos y libertades de los sujetos de datos|Los riesgos clave para los derechos y libertades de los sujetos de datos derivados del uso de los servicios profesionales serán en función de cómo y en qué contexto el controlador de datos implemente, configure y use las soluciones y los servicios profesionales proporcionados.<p>Pero, como con cualquier servicio, los datos personales que contenga el servicio pueden estar en riesgo de accesos no autorizados o divulgaciones por error. Abajo se indican las medidas que toma Microsoft para dar solución a dichos riesgos.</p>|
-| Las medidas previstas para dar solución a los riesgos, incluidas las protecciones, medidas de seguridad y mecanismos para garantizar la protección de los datos personales y para demostrar el cumplimiento con el RGPD, teniendo en cuenta los derechos e intereses legítimos de los titulares de los datos y otras personas relacionadas.<!--is this the correct ending? -->|Microsoft se compromete a proteger la seguridad de la información de los clientes. De conformidad con las disposiciones del artículo 32 del RGPD, Microsoft implementó, mantendrá y seguirá las medidas técnicas y organizativas adecuadas cuya finalidad es proteger los Datos de Soporte y Consultoría frente al acceso, divulgación, modificación, pérdida o destrucción, ya sean accidentales, no autorizados o ilícitos.<p>Además, Microsoft cumple con el resto de las obligaciones del RGPD que se aplican en los procesadores de datos, como evaluaciones de impacto en la protección de datos personales y una conservación de registros.</p>|
+| Las medidas previstas para dar solución a los riesgos, incluidas las protecciones, medidas de seguridad y mecanismos para garantizar la protección de los datos personales y para demostrar el cumplimiento con el RGPD, teniendo en cuenta los derechos e intereses legítimos de los titulares de los datos y otras personas relacionadas.<!--is this the correct ending? -->|Microsoft se compromete a ayudar a proteger la seguridad de la información del cliente. De conformidad con las disposiciones del artículo 32 del RGPD, Microsoft implementó, mantendrá y seguirá las medidas técnicas y organizativas adecuadas cuya finalidad es proteger los Datos de Soporte y Consultoría frente al acceso, divulgación, modificación, pérdida o destrucción, ya sean accidentales, no autorizados o ilícitos.<p>Además, Microsoft cumple con el resto de las obligaciones del RGPD que se aplican en los procesadores de datos, como evaluaciones de impacto en la protección de datos personales y una conservación de registros.</p>|
 |||
 
 <!-- end of table -->
 
-[^1]: With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
+[^1]: With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional, or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
 
 
 #### <a name="learn-more"></a>Obtener más información
