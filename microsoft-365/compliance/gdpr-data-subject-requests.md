@@ -11,16 +11,16 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: ea8fb66cf826861eac312a02d0d7d3cfaf1cf65c
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 00fed2cde29f12bb7e2b91d28e223c09da8ae7a5
+ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431861"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34544937"
 ---
 # <a name="data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados para el RGPD
 
-El Reglamento general de protección de datos (RGPD) ofrece derechos a las personas (que se denominan "interesados" en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el responsable de los datos). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos en sus datos personales, como la obtención de copias de sus datos, la solicitud de cambios, impedir su tratamiento o eliminación, o el envío en formato electrónico para transferirlos a otro responsable de los datos. Las solicitudes formales realizadas por un interesado a un responsable de los datos para realizar una acción en sus datos personales se denominan solicitudes de interesado. El responsable de los datos está obligado a atender de inmediato cualquier solicitud del interesado y ofrecer una respuesta adecuada, ya sea realizando la acción solicitada u ofreciendo una explicación por la que el controlador no pueda llevar a cabo la solicitud del interesado. Los responsables de los datos tienen que consultar a sus propios asesores legales o de cumplimiento sobre cómo ofrecer una respuesta adecuada a cualquier solicitud del interesado específica.
+El Reglamento general de protección de datos (RGPD) ofrece derechos a las personas (que se denominan “interesados” en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el poseedor de los datos). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos en sus datos personales, como la obtención de copias de sus datos, la solicitud de cambios, impedir su procesamiento o eliminación, o el envío en formato electrónico para transferirlos a otro poseedor de los datos. Las solicitudes formales realizadas por un interesado a un poseedor de los datos para realizar una acción en sus datos personales se denominan solicitudes de interesado. El poseedor de los datos está obligado a atender de inmediato cualquier solicitud de interesado y ofrecer una respuesta adecuada, ya sea realizando la acción solicitada u ofreciendo una explicación por la que el controlador no pueda llevar a cabo la solicitud del interesado. Los poseedores de los datos tienen que consultar a sus propios asesores legales o de cumplimiento sobre cómo ofrecer una respuesta adecuada a cualquier solicitud de interesado específica.
 
 En estos artículos, se explica cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudarle a encontrar y actuar en datos personales con el fin de responder a solicitudes de interesados:
 
@@ -36,4 +36,4 @@ Para obtener más información sobre cómo Microsoft le permite responder a soli
 
 ## <a name="learn-more"></a>Más información
 
-[Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
