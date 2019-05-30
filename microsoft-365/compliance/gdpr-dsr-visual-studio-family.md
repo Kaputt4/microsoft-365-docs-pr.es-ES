@@ -22,11 +22,11 @@ ms.locfileid: "34431551"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados de la familia de Visual Studio para el RGPD
 
-El [Reglamento de protección de datos general (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea ofrece derechos a los individuos (que se denominan _interesados_ en el reglamento) para administrar sus datos personales. Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos en sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, impedir su procesamiento o eliminación o el envío en formato electrónico. Una solicitud formal realizada por un interesado a un poseedor de los datos (que es un empleado o cualquier otro tipo de agencia u organización que tiene control sobre los datos personales) para realizar una acción en sus datos personales se denomina _solicitud de interesado_. Para obtener información sobre el RGPD, vaya a la [sección sobre el RGPD del Portal de confianza de servicios](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+El [Reglamento de protección de datos general (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea ofrece derechos a los individuos (que se denominan _interesados_ en el reglamento) para administrar sus datos personales. Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, impedir su tratamiento o eliminación o el envío en formato electrónico. Una solicitud formal realizada por un interesado a un responsable de los datos (que es un empleado o cualquier otro tipo de agencia u organización que tiene control sobre los datos personales) para realizar una acción en sus datos personales se denomina _solicitud de interesado_. Para obtener información sobre el RGPD, vaya a la [sección sobre el RGPD del Portal de confianza de servicios](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## <a name="products-covered-by-this-guide"></a>Productos cubiertos en esta guía
 
-En esta guía se describe cómo usar las herramientas de Microsoft para exportar o eliminar los datos personales recopilados durante el uso de Visual Studio y Visual Studio para Mac en sesiones autenticadas (o en las que se ha iniciado sesión), y cómo usar extensiones de Microsoft en ellos y en Visual Studio Code. También se explica cómo crear solicitudes de interesados relativas a los datos personales recopilados mientras se usaba la comunidad de desarrolladores de Visual Studio, NuGet.org y el sitio web ASP.NET. Estos productos pueden permitir el uso de herramientas y extensiones ajenas a Microsoft, donde Microsoft no es un procesador o poseedor de datos. Por tanto, los usuarios deberán ponerse en contacto con el proveedor de la herramienta o la extensión en cuestión para conocer las directivas de recopilación y datos personales que rigen tales herramientas y extensiones.
+En esta guía se describe cómo usar las herramientas de Microsoft para exportar o eliminar los datos personales recopilados durante el uso de Visual Studio y Visual Studio para Mac en sesiones autenticadas (o en las que se ha iniciado sesión), y cómo usar extensiones de Microsoft en ellos y en Visual Studio Code. También se explica cómo crear solicitudes de interesados relativas a los datos personales recopilados mientras se usaba la comunidad de desarrolladores de Visual Studio, NuGet.org y el sitio web ASP.NET. Estos productos pueden permitir el uso de herramientas y extensiones ajenas a Microsoft, donde Microsoft no es un encargado o responsable de los datos. Por tanto, los usuarios deberán ponerse en contacto con el proveedor de la herramienta o la extensión en cuestión para conocer las directivas de recopilación y datos personales que rigen tales herramientas y extensiones.
 
 ## <a name="additional-privacy-information"></a>Información de privacidad adicional
 
@@ -36,7 +36,7 @@ Nuestros procedimientos de procesamiento de datos se explican en los Términos d
 
 ### <a name="personal-data-we-collect"></a>Los datos personales que recopilamos
 
-En tanto que procesador de datos en virtud de lo estipulado en el RGPD, Microsoft recopila los datos que necesitamos de los usuarios para proporcionar experiencias y mejorar Visual Studio y Visual Studio para Mac, además de para facilitar extensiones de Microsoft aplicables a ellos y a Visual Studio Code. Existen dos categorías de datos: datos de cliente y registros generados por el sistema. Los datos de cliente son los datos de interacciones y transacciones que identifican al usuario que estos productos necesitan para realizar el servicio que prestan. Por ejemplo, para facilitar a los usuarios experiencias personalizadas como la configuración de itinerancia, necesitamos recopilar información de la cuenta de usuario y datos de configuración. En cuanto a los registros generados por el sistema, son datos de uso y de diagnóstico que sirven para detectar y solucionar problemas y mejorar nuestros productos y servicios. Este tipo de datos también puede contener información que identifique a los usuarios finales, como sus nombres de usuario. Los registros generados por el sistema se conservan durante un máximo de 18 meses. A modo de ejemplo, los registros generados por el sistema se agregan cada día de uso del producto e incluyen la fecha de uso, el producto empleado (por ejemplo, "Visual Studio 2017"), la acción realizada (por ejemplo, "vs/core/packagecostsummary/solutionload") y el número de veces que dicha acción se ha realizado, como se muestra en este ejemplo:
+En tanto que encargado del tratamiento en virtud de lo estipulado en el RGPD, Microsoft recopila los datos que necesitamos de los usuarios para proporcionar experiencias y mejorar Visual Studio y Visual Studio para Mac, además de para facilitar extensiones de Microsoft aplicables a ellos y a Visual Studio Code. Existen dos categorías de datos: datos de cliente y registros generados por el sistema. Los datos de cliente son los datos de interacciones y transacciones que identifican al usuario que estos productos necesitan para realizar el servicio que prestan. Por ejemplo, para facilitar a los usuarios experiencias personalizadas como la configuración de itinerancia, necesitamos recopilar información de la cuenta de usuario y datos de configuración. En cuanto a los registros generados por el sistema, son datos de uso y de diagnóstico que sirven para detectar y solucionar problemas y mejorar nuestros productos y servicios. Este tipo de datos también puede contener información que identifique a los usuarios finales, como sus nombres de usuario. Los registros generados por el sistema se conservan durante un máximo de 18 meses. A modo de ejemplo, los registros generados por el sistema se agregan cada día de uso del producto e incluyen la fecha de uso, el producto empleado (por ejemplo, "Visual Studio 2017"), la acción realizada (por ejemplo, "vs/core/packagecostsummary/solutionload") y el número de veces que dicha acción se ha realizado, como se muestra en este ejemplo:
 
 ```
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
@@ -58,7 +58,7 @@ Una solicitud de interesado solo se puede cursar con datos personales que guarde
 
 ### <a name="how-users-can-control-personal-data"></a>Cómo pueden controlar los usuarios los datos personales
 
-Visual Studio 2015 y las versiones posteriores, Visual Studio para Mac y Visual Studio Code cuentan con los siguientes medios para que los usuarios puedan detener la recopilación de datos y para que los poseedores de datos como usted puedan exportar o eliminar los datos que ya se hayan recopilado.
+Visual Studio 2015 y las versiones posteriores, Visual Studio para Mac y Visual Studio Code cuentan con los siguientes medios para que los usuarios puedan detener la recopilación de datos y para que los responsables de los datos como usted puedan exportar o eliminar los datos que ya se hayan recopilado.
 
 #### <a name="in-app-settings"></a>Configuración desde la aplicación
 
@@ -70,7 +70,7 @@ Los usuarios pueden controlar la configuración de privacidad de estos productos
 
 #### <a name="exporting-or-deleting-data"></a>Exportar o eliminar datos
 
-Los poseedores de datos pueden recurrir a uno de dos métodos posibles para administrar los datos de cliente y los registros generados por el sistema recopilados de los titulares de los datos, según cómo se haya registrado el producto de la familia de Visual Studio o las extensiones de Microsoft. En algunos casos, se deben usar ambos métodos. Por medio de estos métodos, los poseedores de datos pueden descargar una copia del historial de actividades administrado por el método en cuestión. El cierre de una cuenta de AAD o MSA elimina los datos de cliente de Visual Studio asociados y anonimiza los datos de identificación personal en los registros generados por el sistema que pertenezcan a estos productos. Los registros generados por el sistema anonimizados se conservan durante un máximo de 18 meses.
+Los responsables de los datos pueden recurrir a uno de dos métodos posibles para administrar los datos de cliente y los registros generados por el sistema recopilados de los interesados, según cómo se haya registrado el producto de la familia de Visual Studio o las extensiones de Microsoft. En algunos casos, se deben usar ambos métodos. Por medio de estos métodos, los responsables de los datos pueden descargar una copia del historial de actividades administrado por el método en cuestión. El cierre de una cuenta de AAD o MSA elimina los datos de cliente de Visual Studio asociados y anonimiza los datos de identificación personal en los registros generados por el sistema que pertenezcan a estos productos. Los registros generados por el sistema anonimizados se conservan durante un máximo de 18 meses.
 
 - Los usuarios que hayan registrado un producto de la familia de Visual Studio con una cuenta respaldada por un inquilino de Azure (como, por ejemplo, una cuenta de AAD o MSA asociada a una suscripción a Azure) pueden seguir las instrucciones de [Solicitudes de interesados de Azure para el RGPD](gdpr-dsr-azure.md).
 - Los usuarios que hayan registrado un producto de la familia de Visual Studio sin una cuenta respaldada por un inquilino de Azure (por ejemplo muchas cuentas que usan una cuenta Microsoft -MSA-), pueden dirigirse a [Centro de respuesta de privacidad de Microsoft basado en web](https://aka.ms/userprivacysite), disponible a través de la cuenta Microsoft, para ver, controlar y eliminar datos de actividades vinculados a su cuenta Microsoft en varios servicios Microsoft. En este escenario, el usuario es el poseedor de sus propios datos personales.
@@ -180,7 +180,7 @@ Los usuarios con cuentas de Xamarin Forums activas pueden ver sus datos personal
 
 Xamarin Forums se hospeda por medio de un tercero, Vanilla Forums. Para solicitar la exportación de los datos públicos, hay que ponerse en contacto a través de forums@xamarin.com (dirección que supervisa el equipo de Xamarin). Tras ello, colaboraremos directamente con Vanilla Forums para cursar esta solicitud.
 
-##### <a name="delete"></a>Delete
+##### <a name="delete"></a>Eliminar
 
 Xamarin Forums se hospeda por medio de un tercero, Vanilla Forums. Para solicitar la eliminación de los datos personales y públicos, hay que ponerse en contacto a través de forums@xamarin.com (dirección que supervisa el equipo de Xamarin). Tras ello, nos encargaremos de la solicitud de eliminación de datos personales del usuario.
 
@@ -204,11 +204,11 @@ Para más información sobre las solicitudes de interesados en NuGet.org, vea [S
 
 ## <a name="aspnet"></a>ASP.NET
 
-Para más información sobre las solicitudes de interesados en el sitio web ASP.NET, vea [Sitio web ASP.NET y el procesamiento de solicitudes de interesados del RGPD](https://www.asp.net/gdpr).
+Para más información sobre las solicitudes de interesados en el sitio web ASP.NET, vea [Sitio web ASP.NET y el tratamiento de solicitudes de interesados del RGPD](https://www.asp.net/gdpr).
 
 ## <a name="iisnet"></a>IIS.NET
 
-Para más información sobre las solicitudes de interesados en el sitio web IIS.NET, vea [Sitio web IIS.NET y el procesamiento de solicitudes de interesados del RGPD](https://www.iis.net/gdpr).
+Para más información sobre las solicitudes de interesados en el sitio web IIS.NET, vea [Sitio web IIS.NET y el tratamiento de solicitudes de interesados del RGPD](https://www.iis.net/gdpr).
 
 ## <a name="other-visual-studio-family-services"></a>Otros servicios de la familia de Visual Studio
 
@@ -233,4 +233,4 @@ Para más información sobre las solicitudes de interesados relativas a estos da
 - [Portal de confianza del servicio](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Panel de privacidad de Microsoft](https://account.microsoft.com/privacy)
 - [Centro de respuesta de privacidad de Microsoft](https://aka.ms/userprivacysite)
-- [Solicitudes de interesados de Azure para el RGPD](gdpr-dsr-azure.md)
+- [Solicitudes de interesados de Azure sobre el RGPD](gdpr-dsr-azure.md)

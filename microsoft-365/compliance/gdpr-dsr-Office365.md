@@ -25,11 +25,11 @@ El Reglamento general de protección de datos (RGPD) otorga derechos a las perso
 
 En esta guía se explica cómo usar productos, servicios y herramientas administrativas de Office 365 con el fin de encontrar y actuar sobre datos personales para responder a solicitudes del interesado. En concreto, incluye cómo encontrar, tener acceso y actuar sobre datos personales hospedados en la nube de Microsoft. Este es un breve resumen de los procedimientos descritos en esta guía:
 
-1.  ***Descubrir***: use herramientas de búsqueda y detección, como las que ofrece el Centro de seguridad y cumplimiento (SCC) de Microsoft, para encontrar con facilidad contenido de clientes que pueda ser objeto de una DSR. Después de recopilar documentos potencialmente relevantes, puede realizar una o varias de las acciones de DSR descritas en los pasos siguientes para responder a la solicitud DSR. Como alternativa, puede determinar que esta última no cumple las directrices de respuesta a las solicitudes del interesado.
+1.  ***Detectar***: use herramientas de búsqueda y detección, como las que ofrece el Centro de seguridad y cumplimiento (SCC) de Microsoft, para encontrar con facilidad contenido de clientes que pueda ser objeto de una DSR. Después de recopilar documentos potencialmente relevantes, puede realizar una o varias de las acciones de DSR descritas en los pasos siguientes para responder a la solicitud de DSR. Como alternativa, puede determinar que esta última no cumple las directrices de respuesta a las solicitudes del interesado.
 
 2.  ***Obtener acceso***: recupere datos personales hospedados en la nube de Microsoft y, si se le pide, ponga una copia a disposición del interesado.
 
-3.  ***Corregir***: realice cambios o implemente otras acciones solicitadas en los datos personales, si corresponde.
+3.  ***Rectificar***: realice cambios o implemente otras acciones solicitadas en los datos personales, si corresponde.
 
 4.  ***Restringir***: restrinja el tratamiento de datos personales, ya sea quitando las licencias para distintos servicios de Office 365 o desactivando los servicios o las características que desee, siempre que sea posible. También puede quitar los datos de la nube de Microsoft y conservarlos localmente o en otra ubicación.
 
@@ -51,7 +51,7 @@ A continuación se ofrecen definiciones de términos relacionados con el RGPD.
 
 Para ayudarle a buscar información relevante a su caso de uso, esta guía está dividida en cuatro partes.
 
-[Parte 1: Responder a solicitudes del interesado sobre datos del cliente](#part-1-responding-to-dsrs-for-customer-data) - : los *datos del cliente* son datos que se producen y almacenan en Office 365 durante las operaciones cotidianas de su negocio. Algunos ejemplos de las aplicaciones de Office 365 más usadas que le permiten crear y editar datos son Word, Excel, PowerPoint, Outlook y OneNote. Office 365 también consta de aplicaciones como SharePoint Online, Teams y Forms que le permiten colaborar con otros usuarios. En la parte 1 de esta guía se explica cómo descubrir, tener acceso a, corregir, restringir, eliminar y exportar datos desde las aplicaciones de Office 365 que se han utilizado para crearlos y almacenarlos en servicios online de Office 365. Aborda productos y servicios en los que Microsoft actúa como encargado de los datos de la organización y, por tanto, se pone la funcionalidad de solicitudes del interesado a disposición del administrador del espacio empresarial.
+[Parte 1: Responder a solicitudes del interesado sobre datos del cliente](#part-1-responding-to-dsrs-for-customer-data) - : los *datos del cliente* son datos que se producen y almacenan en Office 365 durante las operaciones cotidianas de su negocio. Algunos ejemplos de las aplicaciones de Office 365 más usadas que le permiten crear y editar datos son Word, Excel, PowerPoint, Outlook y OneNote. Office 365 también consta de aplicaciones como SharePoint Online, Teams y Forms que le permiten colaborar con otros usuarios. En la parte 1 de esta guía se explica cómo detectar, tener acceso a, rectificar, restringir, eliminar y exportar datos desde las aplicaciones de Office 365 que se han utilizado para crearlos y almacenarlos en servicios online de Office 365. Aborda productos y servicios en los que Microsoft actúa como encargado de los datos de la organización y, por tanto, se pone la funcionalidad de solicitudes del interesado a disposición del administrador del espacio empresarial.
 
 [Parte 2: Responder a solicitudes del interesado con respecto a la información generada por Office 365](#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365): Office 365 proporciona cierta información a través de servicios como Delve, MyAnalytics y Workplace Analytics. En la parte 2 de esta guía se explica cómo se genera esta información y cómo responder a las solicitudes del interesado relacionadas con ella.
 
@@ -87,7 +87,7 @@ Las instrucciones para responder a las solicitudes de interesado de los datos de
 
 - [Responder a solicitudes de interesado de corrección](#responding-to-dsr-rectification-requests)
 
-- [Responder a solicitudes de interesado de restricción](#responding-to-dsr-restriction-requests)
+- [Responder a solicitudes  de DSR](#responding-to-dsr-restriction-requests)
 
 ### <a name="how-to-determine-the-office-365-applications-that-may-be-in-scope-for-a-dsr-for-customer-data"></a>Cómo determinar las aplicaciones de Office 365 que pueden estar en el ámbito de una solicitud de datos de interesado de datos de clientes
 
@@ -99,7 +99,7 @@ Una forma rápida de identificar las aplicaciones de Office 365 que los usuarios
 
 Al buscar datos personales en el conjunto más amplio de datos que su organización crea y almacena en Office 365, debería considerar qué aplicaciones es más probable que se hayan usado para crear los datos que busca. Microsoft calcula que más del 90 % de los datos de una organización que se almacenan en Office 365 se han creado en Word, Excel, PowerPoint, OneNote y Outlook. Es muy probable que los documentos creados en estas aplicaciones de Office, aunque se hayan adquirido mediante Office 365 ProPlus o una licencia perpetua de Office, estén almacenados en un sitio de SharePoint Online, en la cuenta de OneDrive para la Empresa de un usuario o en el buzón de Exchange Online de un usuario. Esto significa que puede usar la herramienta Búsqueda de contenido eDiscovery para buscar (y realizar otras acciones relacionadas con solicitudes del interesado) en sitios de SharePoint Online, cuentas de OneDrive para la Empresa y buzones de Exchange Online (incluidos los sitios y buzones asociados a Grupos de Office 365, Microsoft Teams, EDU Assignments y StaffHub) para encontrar documentos y elementos del buzón que puedan ser relevantes para la DSR que investiga. También puede usar la herramienta Búsqueda de contenido para descubrir datos del cliente creados en otras aplicaciones de Office 365.
 
-En la siguiente tabla se enumeran las aplicaciones de Office 365 que los usuarios utilizan para crear contenido de cliente y que pueden descubrirse con la Búsqueda de contenido. Esta sección de la guía de solicitudes de derechos del interesado ofrece instrucciones sobre cómo descubrir, tener acceso a, exportar y eliminar datos creados con estas aplicaciones de Office 365.
+En la siguiente tabla se enumeran las aplicaciones de Office 365 que los usuarios utilizan para crear contenido de cliente y que pueden detectarse con la Búsqueda de contenido. Esta sección de la guía de DSR ofrece instrucciones sobre cómo detectar, tener acceso a, exportar y eliminar datos creados con estas aplicaciones de Office 365.
 
 ***Tabla 1: Aplicaciones en las que se puede usar la Búsqueda de contenido para buscar datos de clientes***
 
@@ -160,7 +160,7 @@ Puede buscar los siguientes tipos de ubicaciones de contenido con la herramienta
 
 #### <a name="building-search-queries-to-find-personal-data"></a>Generar consultas de búsqueda para encontrar datos personales
 
-Es muy probable que la solicitud de interesado que investigue contenga identificadores que puede utilizar como palabras clave para buscar los datos personales. A continuación, se muestran algunos de los identificadores más comunes cuando se buscan datos personales:
+Es muy probable que la DSR que investigue contenga identificadores que puede utilizar como palabras clave para buscar los datos personales. A continuación, se muestran algunos de los identificadores más comunes cuando se buscan datos personales:
 
 -   Dirección de correo electrónico o el alias
 
@@ -172,7 +172,7 @@ Es muy probable que la solicitud de interesado que investigue contenga identific
 
 -   Número de identificación nacional o versión de miembro de la UE del número de la Seguridad Social.
 
-Es probable que la solicitud de interesado que está investigando tenga un identificador y otros detalles sobre los datos personales solicitados que puede usar en una consulta de búsqueda.
+Es probable que la DSR que está investigando tenga un identificador y otros detalles sobre los datos personales solicitados que puede usar en una consulta de búsqueda.
 
 Buscar solo una dirección de correo electrónico o la id. de un empleado probablemente devolverá una gran cantidad de resultados. Para limitar el ámbito de la búsqueda y que devuelva contenido más relevante en relación con la solicitud de interesado, puede agregar condiciones a la consulta de búsqueda. Al agregar una condición, la palabra clave y la condición de búsqueda se conectan de forma lógica por el operador booleano **AND**. Esto significa que solo los elementos que coincidan *tanto* con la palabra clave como con la condición aparecerán en los resultados de la búsqueda.
 
@@ -186,7 +186,7 @@ La tabla siguiente incluye algunas condiciones que puede usar para restringir el
 |**Condición**|**Descripción** |**Ejemplo de valores de condición**|
 | Tipo de archivo | La extensión de un documento o archivo. Use esta condición para buscar documentos de Office y archivos creados en aplicaciones de Office 365. Use esta condición al buscar documentos ubicados en sitios de SharePoint Online y cuentas de OneDrive para la Empresa.<br/>Tenga en cuenta que la propiedad correspondiente del documento es el tipo de archivo. <br/>Para obtener una lista completa de extensiones de archivo que puede buscar, consulte [Extensiones de nombre de archivo y tipos de archivos analizados predeterminados en SharePoint](https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&bull;&nbsp;&nbsp;CSV: busca archivos con valores separados por coma (CSV); Los archivos de Excel se pueden guardar en formato CSV y un archivo CSV puede importarse fácilmente a Excel<br><br>&bull;&nbsp;&nbsp;docx: busca archivos de Word <br><br>&bull;&nbsp;&nbsp;mpp: busca archivos de Project <br/><br>&bull;&nbsp;&nbsp;one: busca archivos de OneNote <br><br>&bull;&nbsp;&nbsp;PDF: busca archivos guardados en formato PDF <br><br>&bull;&nbsp;&nbsp;pptx: busca archivos de PowerPoint <br><br>&bull;&nbsp;&nbsp;xlxs: busca archivos de Excel <br><br>&bull;&nbsp;&nbsp;vsd: busca archivos de Visio <br><br>&bull;&nbsp;&nbsp;wmv: busca archivos de vídeo de Windows Media <br>|
 | Tipo de mensaje | El tipo de mensaje de correo electrónico que buscar. Use esta condición para buscar en los buzones de los contactos (Contactos), las tareas de reuniones (Calendario) o las conversaciones de Skype Empresarial. Tenga en cuenta que la propiedad de correo electrónico correspondiente es *tipo*.|&bull;&nbsp;&nbsp;*contactos*: busca en la lista de Mis contactos de un buzón <br><br>&bull;&nbsp;&nbsp;*correo electrónico*: busca mensajes de correo electrónico <br><br>&bull;&nbsp;&nbsp;*mensajería instantánea*: busca conversaciones de Skype Empresarial<br><br>&bull;&nbsp;&nbsp;*reuniones*: busca convocatorias de reunión y citas (Calendario) <br><br>&bull;&nbsp;&nbsp;*tareas*: busca en la lista de Mis tareas (Tareas); usar este valor también devolverá las tareas creadas en Microsoft To-Do.<br>|
-| Etiqueta de cumplimiento |La etiqueta asignada a un mensaje de correo electrónico o un documento. Las etiquetas se usan para clasificar correos electrónicos y documentos para el gobierno de datos y para aplicar reglas de retención basadas en la clasificación definida por la etiqueta. Use esta condición para buscar elementos que tengan una etiqueta asignada automática o manualmente.<br/>Esta condición es útil para las investigaciones de solicitudes de interesado porque es posible que su organización utilice etiquetas para clasificar contenido relacionado con la privacidad de datos o que contenga datos personales o información confidencial. Consulte la sección "Usar la búsqueda de contenido para encontrar todo el contenido con una etiqueta específica" en [Información general sobre etiquetas en Office 365](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30).|compliancetag="datos personales"|
+| Etiqueta de cumplimiento |La etiqueta asignada a un mensaje de correo electrónico o un documento. Las etiquetas se usan para clasificar correos electrónicos y documentos para el gobierno de datos y para aplicar reglas de retención basadas en la clasificación definida por la etiqueta. Use esta condición para buscar elementos que tengan una etiqueta asignada automática o manualmente.<br/>Esta condición es útil para las investigaciones de DSR porque es posible que su organización utilice etiquetas para clasificar contenido relacionado con la privacidad de datos o que contenga datos personales o información confidencial. Consulte la sección "Usar la búsqueda de contenido para encontrar todo el contenido con una etiqueta específica" en [Información general sobre etiquetas en Office 365](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30).|compliancetag="datos personales"|
 ||||
 
   <!-- table ends here -->                                                                                           
@@ -254,25 +254,25 @@ Le recomendamos que obtenga más información acerca de los elementos parcialmen
 
 -   [Investigar elementos indizados parcialmente en eDiscovery de Office 365](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 
--   [Exportar elementos sin indizar](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278#unidexeditems)
+-   [Exportar elementos sin indexar](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278#unidexeditems)
 
 #### <a name="tips-for-working-with-partially-indexed-items"></a>Sugerencias para trabajar con elementos indizados parcialmente
 
 Es posible que los datos susceptibles a una investigación de solicitud de interesado se encuentren en un elemento parcialmente indizado. A continuación se muestran algunas sugerencias para trabajar con estos elementos:
 
--   Después de ejecutar una búsqueda, el número estimado de elementos parcialmente indizados se muestra en las estadísticas. Esta estimación no incluye elementos parcialmente indizados en SharePoint Online y OneDrive para la Empresa. Exporte los informes para realizar una búsqueda de contenido y así obtener información sobre elementos parcialmente indizados. El informe **elementos no indizados.csv** contiene información sobre elementos no indizados, incluida la ubicación del elemento, la dirección URL si el elemento está en SharePoint Online o OneDrive para la Empresa y la línea de asunto (para mensajes) o el nombre del documento. Para obtener más información, vea [Exportar un informe de búsqueda de contenido](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9).
+-   Después de ejecutar una búsqueda, el número estimado de elementos parcialmente indexados se muestra en las estadísticas. Esta estimación no incluye elementos parcialmente indexados en SharePoint Online y OneDrive para la Empresa. Exporte los informes para realizar una búsqueda de contenido y así obtener información sobre elementos parcialmente indizados. El informe **elementos no indizados.csv** contiene información sobre elementos no indizados, incluida la ubicación del elemento, la dirección URL si el elemento está en SharePoint Online o OneDrive para la Empresa y la línea de asunto (para mensajes) o el nombre del documento. Para obtener más información, vea [Exportar un informe de búsqueda de contenido](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9).
 
 -   Las estadísticas y la lista de elementos parcialmente indizados devueltos con los resultados de una búsqueda de contenido son todos los elementos parcialmente indizados de las ubicaciones de contenido que se buscan.
 
 -   Para recuperar elementos parcialmente indizados que pueden estar relacionados con una investigación de solicitud de interesado, puede realizar una de las siguientes acciones.
 
-##### <a name="export-all-partially-indexed-items"></a>Exportar todos los elementos parcialmente indizados
+##### <a name="export-all-partially-indexed-items"></a>Exportar todos los elementos parcialmente indexados
 
-Puede exportar tanto los resultados de una búsqueda de contenido y los elementos parcialmente indizados de la ubicación de contenido en la que se ha realizado la búsqueda. También puede exportar solo los elementos parcialmente indizados y abrirlos en sus aplicaciones nativas para revisar el contenido. Deberá usar esta opción para exportar elementos de SharePoint Online y OneDrive para la Empresa. Consulte [Exportar resultados de búsqueda de contenidos del Centro de seguridad y cumplimiento de Office 365](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278).
+Puede exportar tanto los resultados de una búsqueda de contenido y los elementos parcialmente indexados de la ubicación de contenido en la que se ha realizado la búsqueda. También puede exportar solo los elementos parcialmente indizados y abrirlos en sus aplicaciones nativas para revisar el contenido. Deberá usar esta opción para exportar elementos de SharePoint Online y OneDrive para la Empresa. Consulte [Exportar resultados de búsqueda de contenidos del Centro de seguridad y cumplimiento de Office 365](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278).
 
-##### <a name="export-a-specific-set-of-partially-indexed-items-from-mailboxes"></a>Exportar un conjunto específico de elementos parcialmente indizados de buzones
+##### <a name="export-a-specific-set-of-partially-indexed-items-from-mailboxes"></a>Exportar un conjunto específico de elementos parcialmente indexados de buzones
 
-En lugar de exportar todos los elementos de buzones parcialmente indizados de una búsqueda, puede volver a ejecutar una búsqueda de contenido para buscar una lista específica de elementos parcialmente indizados y, a continuación, exportarlos. Tenga en cuenta que solo puede hacer esto con elementos de buzones. Consulte [Preparar un archivo CSV para una búsqueda de contenido en Office 365](https://support.office.com/article/prepare-a-csv-file-for-a-targeted-content-search-in-office-365-82c97bb4-2b64-4edc-804d-cedbda525d22).
+En lugar de exportar todos los elementos de buzones parcialmente indexados de una búsqueda, puede volver a ejecutar una búsqueda de contenido para buscar una lista específica de elementos parcialmente indizados y, a continuación, exportarlos. Tenga en cuenta que solo puede hacer esto con elementos de buzones. Consulte [Preparar un archivo CSV para una búsqueda de contenido en Office 365](https://support.office.com/article/prepare-a-csv-file-for-a-targeted-content-search-in-office-365-82c97bb4-2b64-4edc-804d-cedbda525d22).
 
 
 ### <a name="next-steps"></a>Pasos siguientes
@@ -295,7 +295,7 @@ Las siguientes secciones describen factores que debe tener en cuenta a la hora d
 
 #### <a name="office-lens"></a>Office Lens
 
-Un usuario con Office Lens (una aplicación para la cámara compatible con dispositivos iOS, Android y Windows) puede tomar una fotografía de una pizarra, documentos físicos, tarjetas de presentación y otros elementos que contengan gran cantidad de texto. Office Lens utiliza tecnología de reconocimiento óptico de caracteres para extraer el texto de una imagen y guardarlo en un documento de Office como puede ser un archivo de Word, OneNote o PowerPoint, o a un archivo PDF. A continuación, los usuarios pueden cargar el archivo que contiene el texto de la imagen en sus cuentas de OneDrive para la Empresa en Office 365. Esto significa que puede utilizar la herramienta de búsqueda de contenido para buscar, acceder, eliminar y exportar datos en archivos creados a partir de una imagen de Office Lens. Para más información sobre Office Lens, consulte:
+Un usuario con Office Lens (una aplicación para la cámara compatible con dispositivos iOS, Android y Windows) puede tomar una fotografía de una pizarra, documentos físicos, tarjetas de presentación y otros elementos que contengan gran cantidad de texto. Office Lens utiliza tecnología de reconocimiento óptico de caracteres para extraer el texto de una imagen y guardarlo en un documento de Office como puede ser un archivo de Word, OneNote o PowerPoint, o a un archivo PDF. A continuación, los usuarios pueden cargar el archivo que contiene el texto de la imagen en sus cuentas de OneDrive para la Empresa en Office 365. Esto significa que puede utilizar la herramienta de búsqueda de contenido para buscar, eliminar y exportar datos y acceder a ellos en archivos creados a partir de una imagen de Office Lens. Para más información sobre Office Lens, consulte:
 
 -   [Office Lens para iOS](https://support.office.com/article/Office-Lens-for-iOS-fbdca5f4-1b1b-4391-a931-dc1c2582397b)
 
@@ -305,7 +305,7 @@ Un usuario con Office Lens (una aplicación para la cámara compatible con dispo
 
 #### <a name="onedrive-for-business-and-sharepoint-online-experience-settings"></a>Configuración de la experiencia de OneDrive para la Empresa y SharePoint Online
 
-Además de los archivos creados por usuarios almacenados en las cuentas de OneDrive para la Empresa y los sitios de SharePoint Online, estos servicios almacenan información acerca del usuario que se utiliza para habilitar varias experiencias. Los usuarios que sigan en su organización pueden acceder a gran parte de esta información mediante funciones integradas. La información siguiente proporciona una guía para acceder, ver y exportar datos de aplicación de OneDrive para la Empresa y SharePoint Online.
+Además de los archivos creados por usuarios almacenados en las cuentas de OneDrive para la Empresa y los sitios de SharePoint Online, estos servicios almacenan información acerca del usuario que se utiliza para habilitar varias experiencias. Los usuarios que sigan en su organización pueden acceder a gran parte de esta información mediante funciones integradas. La información siguiente proporciona una guía para acceder a datos de aplicación de OneDrive para la Empresa y SharePoint Online, verlos y exportarlos.
 
 ##### <a name="sharepoint-user-profiles"></a>Perfiles de usuario de SharePoint
 
@@ -315,7 +315,7 @@ El perfil de usuario de Delve permite a los usuarios mantener propiedades almace
 
 Los usuarios finales pueden descubrir, tener acceso y corregir datos de perfil de usuario de SharePoint Online con la experiencia de perfil de Delve. Vea [Ver y actualizar el perfil en Office Delve](https://support.office.com/article/view-and-update-your-profile-in-office-delve-4e84343b-eedf-45a1-aeb9-8627ccca14ba) para obtener más información.
 
-Otra forma de que los usuarios tengan acceso a sus datos de perfil de SharePoint consiste en navegar a la **página de edición de perfil** de su cuenta OneDrive para la Empresa, a la que tiene acceso dirigiéndose a la ruta de acceso **EditProfile.aspx** en la dirección URL de la cuenta de OneDrive para la Empresa. Por ejemplo, la cuenta de OneDrive para la Empresa de un usuario <strong>user1@contoso.com</strong> se encuentra en:
+Otra forma de que los usuarios tengan acceso a sus datos de perfil de SharePoint consiste en navegar a la **página de edición de perfil** de su cuenta OneDrive para la Empresa, a la que se puede acceder dirigiéndose a la ruta de acceso **EditProfile.aspx** en la dirección URL de la cuenta de OneDrive para la Empresa. Por ejemplo, la cuenta de OneDrive para la Empresa de un usuario <strong>user1@contoso.com</strong> se encuentra en:
 >`https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/OneDrive.aspx`
 
 La dirección URL de la página de edición de perfil sería:
@@ -325,7 +325,7 @@ Tenga en cuenta que no podrá cambiar en SharePoint Online las propiedades origi
 
 **Administradores**
 
-Un administrador puede ver, tener acceso y corregir propiedades de perfil en el Centro de administración de SharePoint. En el **Centro de administración de SharePoint**, haga clic en la pestaña **perfiles de usuario**. Haga clic en **Administrar perfiles de usuario**, escriba un nombre de usuario y haga clic en **Buscar**. El administrador puede hacer clic con el botón derecho en cualquier usuario y seleccionar **Editar mi perfil**. Tenga en cuenta que las propiedades originadas en Azure Active Directory no se pueden cambiar desde SharePoint Online.
+Un administrador puede acceder a propiedades de perfil y rectificarlas en el Centro de administración de SharePoint. En el **Centro de administración de SharePoint**, haga clic en la pestaña **perfiles de usuario**. Haga clic en **Administrar perfiles de usuario**, escriba un nombre de usuario y haga clic en **Buscar**. El administrador puede hacer clic con el botón derecho en cualquier usuario y seleccionar **Editar mi perfil**. Tenga en cuenta que las propiedades originadas en Azure Active Directory no se pueden cambiar desde SharePoint Online.
 
 Un administrador puede exportar todas las propiedades de perfil de usuario de un usuario mediante el cmdlet **Export-SPOUserProfile** de SharePoint Online PowerShell. Vea [Export-SPOUserProfile](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserprofile?view=sharepoint-ps).
 
@@ -333,7 +333,7 @@ Para más información sobre los perfiles de usuario, vea [Administrar perfiles 
 
 ##### <a name="user-information-list-on-sharepoint-online-sites"></a>Lista de información del usuario en sitios de SharePoint Online
 
-Un subconjunto del perfil de usuario de SharePoint de un usuario se sincroniza con la lista de información del usuario de todos los sitios que visite o en los que tenga permisos de acceso. Se utilizan las experiencias de SharePoint Online, como las columnas Contactos en las bibliotecas de documentos, para mostrar información básica sobre el usuario, como el nombre del creador de un documento. Los datos de una lista de información del usuario coincidirán con la información almacenada en el perfil de usuario de SharePoint y se corrigen automáticamente si se cambia el origen. Para los usuarios eliminados, estos datos permanecen en los sitios con los que interactuaban para integridad referencial de los campos de columna de SharePoint. 
+Un subconjunto del perfil de usuario de SharePoint de un usuario se sincroniza con la lista de información del usuario de todos los sitios que visite o en los que tenga permisos de acceso. Se utilizan las experiencias de SharePoint Online, como las columnas Contactos en las bibliotecas de documentos, para mostrar información básica sobre el usuario, como el nombre del creador de un documento. Los datos de una lista de información del usuario coincidirán con la información almacenada en el perfil de usuario de SharePoint y se rectifican automáticamente si se cambia el origen. Para los usuarios eliminados, estos datos permanecen en los sitios con los que interactuaban para integridad referencial de los campos de columna de SharePoint. 
 
 Los administradores pueden controlar qué propiedades son replicables en el Centro de administración de SharePoint. Para ello:
 
@@ -359,13 +359,13 @@ La experiencia de búsqueda integrada en la aplicación de OneDrive para la Empr
 
 #### <a name="microsoft-teams-for-education"></a>Microsoft Teams para educación
 
-Microsoft Teams para educación ofrece dos características de colaboración adicionales que pueden usar profesores y alumnos y que crean y almacenan datos personales: Tareas y Blocs de notas de clase de OneNote. Puede usar la búsqueda de contenido para obtener información sobre los datos en ambas.
+Microsoft Teams para Educación ofrece dos características de colaboración adicionales que pueden usar profesores y alumnos, y que crean y almacenan datos personales: Tareas y Blocs de notas de clase de OneNote. Puede usar la búsqueda de contenido para obtener información sobre los datos en ambas.
 
 ##### <a name="assignments"></a>Tareas
 
 Los archivos de alumnos asociados con una tarea se almacenan en una biblioteca de documentos en el sitio correspondiente de Teams de SharePoint Online. Los administradores de TI pueden usar la herramienta de búsqueda de contenido para buscar archivos de alumno relacionados con las tareas. Por ejemplo, un administrador podría buscar todos los sitios de SharePoint Online de la organización y usar el nombre del alumno o de su clase en la consulta de búsqueda para encontrar datos relevantes a una solicitud de interesado.
 
-Hay otros datos relacionados con tareas que no se almacenan en el sitio de SharePoint Online de la clase, lo que significa que no pueden descubrirse con la búsqueda de contenido. Estos incluyen:
+Hay otros datos relacionados con tareas que no se almacenan en el sitio de SharePoint Online de la clase, lo que significa que no pueden detectarse con la búsqueda de contenido. Estos incluyen:
 
 -   Archivos que el profesor asigna a los estudiantes como parte de la tarea.
 
@@ -379,7 +379,7 @@ Para este tipo de datos, un administrador de TI o propietario de los datos (como
 
 ##### <a name="onenote-class-notebook"></a>Bloc de notas de clase de OneNote
 
-El Bloc de notas de clase de OneNote se almacena en el sitio de SharePoint Online del equipo de clase. Todos los alumnos de una clase tienen un bloc de notas privado que comparten con el profesor. También hay una biblioteca de contenido en la que un profesor puede compartir documentos con los alumnos y un espacio de colaboración para todos los alumnos de la clase. Los datos relacionados con estas funciones pueden encontrarse en una búsqueda de contenido.
+El Bloc de notas de clase de OneNote se almacena en el sitio de SharePoint Online del equipo de clase. Todos los alumnos de una clase tienen un bloc de notas privado que comparten con el profesor. También hay una biblioteca de contenido en la que un profesor puede compartir documentos con los alumnos y un espacio de colaboración para todos los alumnos de la clase. Los datos relacionados con estas funciones pueden detectarse en una búsqueda de contenido.
 
 Aquí tiene las instrucciones específicas para buscar un bloc de notas de clase.
 
@@ -409,7 +409,7 @@ Las tareas (llamadas *tareas* pendientes, que se guardan en *listas de tareas pe
 
 #### <a name="skype-for-business"></a>Skype Empresarial
 
-A continuación se muestra información adicional acerca de cómo acceder, ver y exportar datos personales en Skype Empresarial.
+A continuación se muestra información adicional acerca de cómo acceder a datos personales, verlos y exportarlos en Skype Empresarial.
 
 -   Los archivos adjuntados a una reunión se conservan en ella durante 180 días y después dejan de ser accesibles. Los participantes a la reunión pueden acceder a ellos tras unirse a la misma desde la convocatoria de reunión y, a continuación, revisarlos o descargarlos. Consulte la sección "Usar los datos adjuntos de la reunión" en [Precargar datos adjuntos para una reunión de Skype Empresarial](https://support.office.com/article/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251).
 
@@ -489,9 +489,9 @@ Para exportar y descargar elementos:
 
 8.  En la parte superior de la página, haga clic en ![](media/o365-dsr_image21.png) **Descargar resultados**.
 
-9.  Si se le pide que instale la **herramienta eDiscovery Export de Microsoft Office 365**, haga clic en **Instalar**.
+9.  Si se le pide que instale la **Herramienta de exportación de eDiscovery de Microsoft Office 365**, haga clic en **Instalar**.
 
-10. En la **Herramienta de exportación de exhibición de documentos electrónicos**, pegue la clave de exportación que ha copiado en el paso 7 en el cuadro correspondiente.
+10. En la **Herramienta de exportación de eDiscovery **, pegue la clave de exportación que ha copiado en el paso 7 en el cuadro correspondiente.
 
 11. Haga clic en **Examinar** para especificar la ubicación en la que desea descargar los archivos de los resultados de la búsqueda.
 
@@ -529,13 +529,13 @@ Cuando investiga o se prepara para eliminar datos personales en respuesta a una 
     -   **Sitios de SharePoint Online y OneDrive para la Empresa**: cuando un archivo o documento se elimina, este se mueve a la Papelera de reciclaje del sitio (también denominada *Papelera de reciclaje de primer nivel*, que es similar a la Papelera de reciclaje de Windows). El elemento permanecerá en la Papelera de reciclaje durante 93 días (el período de retención de elementos eliminados para sitios en Office 365). Transcurrido ese período, el elemento se mueve automáticamente a la Papelera de reciclaje de la colección de sitios, que también se denomina la *Papelera de reciclaje de segundo nivel*. (Tenga en cuenta que los usuarios o administradores, con los permisos adecuados, pueden eliminar elementos de la Papelera de reciclaje de primer nivel). En este momento, el elemento se encuentra en eliminación blanda; aún puede ser recuperado por el usuario o administrador de SharePoint Online o por un administrador de colección de sitios de OneDrive para la Empresa). Cuando se elimina un elemento de la Papelera de reciclaje de segundo nivel (manual o automáticamente) queda eliminado permanentemente y no es accesible para el usuario o administrador. Tenga en cuenta que existe un período de retención de 93 días para las papeleras de reciclaje del primer nivel y del segundo nivel. Esto significa que la retención de la Papelera de reciclaje de segundo nivel se inicia cuando el elemento se elimina en primer lugar; por lo tanto, el tiempo de retención máximo total es de 93 días para ambas papeleras de reciclaje.
 
 > [!NOTE]
-> Comprender las acciones que resultan en la eliminación temporal o definitiva de este debate le ayudará a determinar cómo eliminar datos de forma que reúna los requisitos RGPD y responda a los requisitos de RGPD al responder a una solicitud de eliminación.
+> Comprender las acciones que dan lugar a la eliminación temporal o definitiva de este debate le ayudará a determinar cómo eliminar datos de forma que reúna los requisitos RGPD y responda a los requisitos de RGPD al responder a una solicitud de eliminación.
 
 -   **Directivas de retención y suspensiones legales**: en Office 365, es posible colocar una "suspensión" en buzones y sitios; en resumen, esto supone que no se elimina nada de forma permanente si un buzón o sitio se encuentra retenido, hasta que expire el periodo de retención de un elemento o se levante la retención. Esto es importante a la hora de eliminar contenido de clientes como respuesta a una solicitud de interesado: si se elimina un elemento de forma permanente de una ubicación de contenido que está retenida, el objeto no se elimina permanentemente de Office 365. Esto significa que un administrador de TI podría recuperarlo. Si su organización tiene un requerimiento o directiva que obligue a eliminar permanentemente los datos y no permita recuperarlos en Office 365 como respuesta a una solicitud de interesado, entonces debería eliminar la retención de un buzón de correo o sitio para poder eliminar datos de forma permanente en Office 365. Es probable que las guías de su organización para responder a solicitudes de interesado de eliminación o a una suspensión legal sirvan de precedente. Si se elimina una retención para eliminar elementos, puede volver a implementarse más adelante.
 
 ### <a name="deleting-documents-in-sharepoint-online-and-onedrive-for-business"></a>Eliminar documentos en SharePoint Online y OneDrive para la Empresa
 
-Cuando haya encontrado el documento ubicado en un sitio de SharePoint Online o en una cuenta de OneDrive para la Empresa (al seguir la guía en la sección Descubrir) cuya eliminación que quiere, un agente de privacidad de datos o un administrador de TI necesitaría tener asignados los diferentes permisos para acceder al sitio y eliminar el documento. En caso adecuado, se puede indicar al propietario del documento que debe eliminarlo.
+Cuando haya encontrado el documento ubicado en un sitio de SharePoint Online o en una cuenta de OneDrive para la Empresa (al seguir la guía en la sección Detectar) que debe eliminarse, un agente de privacidad de datos o un administrador de TI necesitaría tener asignados los diferentes permisos para acceder al sitio y eliminar el documento. En caso adecuado, se puede indicar al propietario del documento que debe eliminarlo.
 
 Este es el proceso de alto nivel para eliminar documentos de sitios.
 
@@ -568,7 +568,7 @@ Vea los temas siguientes para obtener procedimientos detallados.
 
 ### <a name="deleting-a-sharepoint-site"></a>Eliminar un sitio de SharePoint
 
-Puede determinar que es la mejor forma de responder a una solicitud de interesado de eliminación consiste en eliminar todo un sitio de SharePoint, lo que da pie a la eliminación de los datos personales del sitio. Puede hacerlo ejecutando cmdlets en SharePoint Online PowerShell.
+Puede determinar que la mejor forma de responder a una solicitud de interesado de eliminación consiste en eliminar todo un sitio de SharePoint, lo que da pie a la eliminación de los datos personales del sitio. Puede hacerlo ejecutando cmdlets en SharePoint Online PowerShell.
 
 -   Use el cmdlet [Remove-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-sposite?view=sharepoint-ps) para eliminar el sitio y enviarlo a la Papelera de reciclaje de SharePoint Online (eliminación temporal).
 
@@ -624,7 +624,7 @@ Para obtener instrucciones detalladas, vea [Buscar y eliminar mensajes de correo
 
 #### <a name="hard-delete-mailbox-items"></a>Eliminar permanentemente elementos del buzón
 
-Si tiene que eliminar de forma permanente elementos del buzón como respuesta a una solicitud de interesado de eliminación, puede usar el comando **Search-Mailbox-DeleteContent** en PowerShell de Exchange Online. Si usa este método, considere usar la búsqueda de contenido para desarrollar y refinar una consulta de búsqueda, de modo que aparezcan solo los elementos que van a ser borrados. A continuación puede usar la sintaxis de consulta al ejecutar el comando **Search-Mailbox-DeleteContent**.
+Si tiene que eliminar de forma permanente elementos del buzón como respuesta a una solicitud de interesado de eliminación, puede usar el comando **Search-Mailbox-DeleteContent** en PowerShell de Exchange Online. Si usa este método, considere usar la búsqueda de contenido para desarrollar y refinar una consulta de búsqueda, de modo que aparezcan solo los elementos que se van a eliminar. A continuación puede usar la sintaxis de consulta al ejecutar el comando **Search-Mailbox-DeleteContent**.
 
 Para obtener instrucciones detalladas, consulte [Buscar y eliminar mensajes](https://technet.microsoft.com/library/ff459253(v=exchg.150).aspx).
 
@@ -645,7 +645,7 @@ Además de eliminar los datos personales en respuesta a una solicitud de interes
 
 -   El interesado ha solicitado eliminar registros generados por el sistema que se hayan recopilado sobre él. Ejemplos de datos generados por registros del sistema incluyen el uso de datos de la aplicación y servicio de Office 365. información sobre solicitudes de búsqueda realizadas por el interesado y datos generados por productos y servicios como producto de función e interacción del sistema por parte de usuarios de otros sistemas. Para más información, consulte [Parte 3: Responder a las solicitudes de interesado para registros generados por el sistema](#part-3-responding-to-dsrs-for-system-generated-logs) en esta guía.
 
--   Evite que el interesado obtenga datos de acceso o procese datos en Office 365 de forma permanente (en lugar de una restricción temporal por el métodos descrito en la sección [Responder a solicitudes de interesado de restricción](#responding-to-dsr-restriction-requests).
+-   Evite de forma permanente que el interesado obtenga acceso a los datos o los trate en Office 365 (en lugar de una restricción temporal por el métodos descrito en la sección [Responder a solicitudes de restricción de DSR](#responding-to-dsr-restriction-requests).
 
 Después de eliminar una cuenta de usuario de Office 365:
 
@@ -663,7 +663,7 @@ Después de eliminar una cuenta de usuario de Office 365:
 > [!NOTE]
 > Si es un cliente que actualmente realiza migraciones de FastTrack, la eliminación de la cuenta de usuario de Office 365 no eliminará la copia de datos que el equipo de Microsoft FastTrack conserva, cosa que se hace con el único propósito de completar la migración. Si quiere que el equipo de Microsoft FastTrack elimine también esa copia de datos durante la migración, puede [enviar una solicitud](https://go.microsoft.com/fwlink/?linkid=874544). En el transcurso habitual de las actividades, Microsoft FastTrack eliminará todas las copias de datos cuando la migración finalice.
 
-Como la eliminación temporal y la eliminación permanente de datos descritas en la sección anterior sobre el borrado de datos personales, también existe un estado de eliminación temporal y de eliminación permanente cuando se elimina una cuenta de usuario.
+Al igual que la eliminación temporal y la eliminación permanente de datos descritas en la sección anterior sobre el borrado de datos personales, también existe un estado de eliminación temporal y de eliminación permanente cuando se elimina una cuenta de usuario.
 
 -   Al eliminar una cuenta de usuario (eliminando al usuario en el centro de administrador de Office 365 y en Azure Portal), esta queda eliminada temporalmente y pasa a la Papelera de reciclaje en Azure durante un máximo de 30 días. Hasta ese momento, será posible restaurar la cuenta de usuario.
 
@@ -716,9 +716,9 @@ Aunque la gran mayoría de datos del cliente se crean y producen con las aplicac
 
 ### <a name="access"></a>Access
 
-En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Access para buscar, tener acceso, exportar y eliminar datos personales.
+En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Access para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-##### <a name="discover"></a>Descubrir
+##### <a name="discover"></a>Detectar
 
 Existen varias formas de buscar registros en una base de datos de Access que puedan ser relevantes para una solicitud DSR. Para una investigación de DSR, puede buscar registros relacionados con el interesado o registros que contengan datos específicos. Por ejemplo, puede buscar o ir a un registro que corresponda al interesado. O buscar registros que contengan datos específicos, tales como datos personales sobre el interesado. Para más información, vea:
 
@@ -744,7 +744,7 @@ Como se ha explicado anteriormente, puede exportar datos de una base de datos de
 
 ##### <a name="delete"></a>Eliminar
 
-Puede eliminar un registro completo o solo un campo de una base de datos de Access. La forma más rápida de eliminar un registro de una base de datos de Access es abrir la tabla en la vista Hoja de datos, seleccionar el registro (fila) o solo los datos de un campo que quiere eliminar y presione SUPR. También puede usar una consulta de selección que haya creado para buscar datos y luego convertirla en una consulta de eliminación. Vea:
+Puede eliminar un registro completo o solo un campo de una base de datos de Access. La forma más rápida de eliminar un registro de una base de datos de Access es abrir la tabla en la vista Hoja de datos, seleccionar el registro (fila) o solo los datos de un campo que quiere eliminar y presione Supr. También puede usar una consulta de selección que haya creado para buscar datos y luego convertirla en una consulta de eliminación. Vea:
 
 - [Eliminar uno o varios registros de una base de datos](https://support.office.com/article/delete-one-or-more-records-from-a-database-002b850d-1efa-473d-9297-0994ce46c66a)
 
@@ -764,7 +764,7 @@ En esta sección se explica cómo usar la funcionalidad integrada en la aplicaci
 - [Invoicing](#invoicing)
 
 #### <a name="bookings"></a>Bookings
-En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Bookings para buscar, tener acceso, exportar y eliminar datos personales. Esto se aplica tanto a la aplicación Bookings independiente como a Bookings al obtener acceso a Business Center.
+En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Bookings para acceder a datos personales, buscarlos, exportarlos y eliminarlos. Esto se aplica tanto a la aplicación Bookings independiente como a Bookings al obtener acceso a Business Center.
 
 Microsoft Bookings permite a los administradores y usuarios o al personal, con licencia de Bookings en la organización, configurar páginas de reserva para que los clientes pueden programar y realizar cambios en las citas, recibir correos electrónicos de confirmación, actualizaciones, cancelaciones y correos electrónicos de aviso. Los propietarios de empresa y su personal también pueden reservar eventos en nombre de sus clientes con Bookings. 
 
@@ -792,7 +792,7 @@ La información de identificación personal del usuario final (EUII) incluye inf
 
 Estos datos se conservan mientras el miembro del personal esté activo en el servicio, a menos que los elimine explícitamente el propietario de empresa o un administrador mediante la interfaz de usuario integrada en la aplicación o mediante la eliminación del buzón de reserva correspondiente. Cuando el administrador inicia la eliminación de detalles del personal, o si el miembro del personal deja el servicio, sus detalles se eliminarán conforme a las directivas de retención de contenido del buzón de Exchange Online establecidas por el propietario de empresa o el administrador.
 
-##### <a name="discoveraccess"></a>Descubrir y tener acceso
+##### <a name="discoveraccess"></a>Detectar y tener acceso
 Bookings recopila y almacena los siguientes tipos de datos:
 
 - **Información de perfil de empresa**: el contenido del cliente sobre la empresa que utiliza Bookings se recopila a través del formulario información de la empresa de Bookings y, si el cliente utiliza Bookings junto con el Business Center, se sincroniza con el perfil de la empresa de Business Center. La única EUII asociada a estos datos es una dirección de correo electrónico de C1. Esta dirección es donde se envían las nuevas notificaciones de reserva y los correos electrónicos de actualización.
@@ -826,9 +826,9 @@ Se pueden eliminar los datos del propietario de empresa y del personal, así com
 
 #### <a name="listings"></a>Listings
 
-En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Listings para buscar, tener acceso, exportar y eliminar datos personales.
+En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Listings para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-##### <a name="discover"></a>Descubrir
+##### <a name="discover"></a>Detectar
 El propietario de Listings puede conectar su empresa con Google, Bing, Yelp y Facebook para ver una vista agregada de valoraciones y opiniones. Listings recopila y almacena los siguientes tipos de datos:
 
 - Valoraciones y opiniones de Google
@@ -849,9 +849,9 @@ Para exportar datos del propietario, el personal y los clientes de la empresa, u
 Si un propietario de Listings quiere eliminar su información de Listings, puede desconectarse del proveedor en la página de Listings. Después de desconectarse, su información se eliminará de Listings.
 
 #### <a name="connections"></a>Connections
-En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Connections para buscar, tener acceso, exportar y eliminar datos personales.
+En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Connections para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-##### <a name="discover"></a>Descubrir
+##### <a name="discover"></a>Detectar
 Connections recopila y almacena los siguientes tipos de datos: 
 
 - Los clientes o contactos se crean en la empresa con el cliente web o la aplicación móvil (iOS, Android) o mediante la aplicación cuando se envía una campaña de marketing por correo electrónico a un contacto profesional. Los datos del cliente pueden incluir el nombre, la dirección, la dirección de correo electrónico y números de identificación fiscal. Tenga en cuenta que los contactos se comparten en todas las aplicaciones de Business Center.
@@ -872,7 +872,7 @@ Después de enviar una campaña por correo electrónico, un propietario de Conne
 #### <a name="outlook-customer-manager"></a>Outlook Customer Manager
 En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Outlook Customer Manager para buscar, tener acceso, exportar y eliminar datos personales.
 
-##### <a name="discover"></a>Descubrir
+##### <a name="discover"></a>Detectar
 Outlook Customer Manager recopila y almacena información de usuario para el propietario de Outlook Customer Manager y sus clientes y contactos profesionales.
 
 - Datos del propietario. Incluyen el nombre, la dirección y la dirección de correo electrónico. Los documentos y archivos que un propietario comparte con un cliente se almacenan en OneDrive para la Empresa, SharePoint Online y como tareas de Outlook.
@@ -891,7 +891,7 @@ Para eliminar datos del cliente, utilice el portal de privacidad de Outlook Cust
 #### <a name="invoicing"></a>Invoicing
 En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Invoicing para buscar, tener acceso, exportar y eliminar datos personales.
 
-##### <a name="discover"></a>Descubrir
+##### <a name="discover"></a>Detectar
 Invoicing recopila y almacena los siguientes tipos de datos:
 
 - **Contactos**: los crea la empresa al crear una factura o un presupuesto para un cliente o contacto profesional. Los contactos se comparten en todo Business Center. Los datos del cliente incluyen el nombre, la dirección, la dirección de correo electrónico y los números de identificación fiscal.
@@ -919,9 +919,9 @@ En esta sección se explica cómo usar la funcionalidad integrada en la aplicaci
 - Bloc de notas de clase
 
 #### <a name="assignments"></a>Tareas
-En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Forms para buscar, tener acceso, exportar y eliminar datos personales.
+En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Forms para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-##### <a name="discoveraccess"></a>Descubrir y tener acceso
+##### <a name="discoveraccess"></a>Detectar y tener acceso
 Las tareas almacenan la información que generan los profesores y los alumnos. Parte de esta información se almacena en SharePoint y otra parte se almacena en una ubicación que no es de SharePoint.
 
 ##### <a name="finding-assignments-data-stored-in-sharepoint"></a>Buscar datos de tareas almacenados en SharePoint 
@@ -935,7 +935,7 @@ De forma similar, un administrador puede buscar archivos de profesor relacionado
 Vea la sección [Usar la herramienta Búsqueda de contenido eDiscovery para responder a solicitudes del interesado](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) de esta guía.
 
 ##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>Buscar datos de tareas no almacenados en SharePoint
-Los siguientes tipos de datos de tareas no se almacenan en el sitio de SharePoint del equipo de clase y, por lo tanto, no se pueden descubrir mediante la Búsqueda de contenido. Estos datos incluyen lo siguiente:
+Los siguientes tipos de datos de tareas no se almacenan en el sitio de SharePoint del equipo de clase y, por lo tanto, no se pueden detectar mediante la Búsqueda de contenido. Estos datos incluyen lo siguiente:
 
 - Las calificaciones de los alumnos y los comentarios del profesor.
 
@@ -957,7 +957,7 @@ Puede exportar los datos de tareas de un alumno concreto correspondientes a toda
 Si el alumno se ha eliminado del sitio de clase del equipo, el administrador puede agregarlo al sitio antes de ejecutar el script de exportación. También puede usar el archivo de entrada del script para identificar cada clase en la que alguna vez el alumno haya estado inscrito. O bien, usar el script de exportación de tareas para exportar los datos de envío de todas las tareas a las que un profesor tenga acceso.
 
 ##### <a name="delete"></a>Eliminar
-Puede exportar datos de tareas de un alumno concreto correspondientes a todas las clases en las que el alumno está inscrito actualmente mediante un script PowerShell. Debe hacerlo antes de quitar al alumno de la clase. Vea:
+Puede eliminar datos de tareas de un alumno concreto correspondientes a todas las clases en las que el alumno está inscrito actualmente mediante un script PowerShell. Debe hacerlo antes de quitar al alumno de la clase. Vea:
 
 - [Using scripts to export and delete user data from Assignments](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe) (Usar scripts para exportar y eliminar datos de usuario de tareas).
 
@@ -969,11 +969,11 @@ La búsqueda de contenido en el bloc de notas de clase se describe anteriormente
 
 ### <a name="flow"></a>Flow
 
-Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Flow para buscar, acceder, exportar y eliminar datos personales.
+Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Flow para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 
-Los usuarios pueden usar Flow para realizar tareas relacionadas con los datos como sincronizar archivos entre aplicaciones, copiar archivos desde un servicio de Office 365 a otro y recopilar datos de una aplicación de Office 365 y almacenarlos en otro. Por ejemplo, un usuario puede configurar Flow para guardar datos adjuntos de correo electrónico de Outlook para su cuenta de OneDrive para la Empresa. En este ejemplo, podría usar la herramienta de búsqueda de contenido para buscar en el buzón del usuario el mensaje de correo electrónico que contiene el archivo adjunto o buscar el archivo en su cuenta de OneDrive para la Empresa. Esto es un ejemplo en el que los datos manejados con Flow pueden descubrirse en servicios de Office 365 conectados a un flujo de trabajo de Flow.
+Los usuarios pueden usar Flow para realizar tareas relacionadas con los datos como sincronizar archivos entre aplicaciones, copiar archivos desde un servicio de Office 365 a otro y recopilar datos de una aplicación de Office 365 y almacenarlos en otro. Por ejemplo, un usuario puede configurar Flow para guardar datos adjuntos de correo electrónico de Outlook para su cuenta de OneDrive para la Empresa. En este ejemplo, podría usar la herramienta de búsqueda de contenido para buscar en el buzón del usuario el mensaje de correo electrónico que contiene el archivo adjunto o buscar el archivo en su cuenta de OneDrive para la Empresa. Esto es un ejemplo en el que los datos manejados con Flow pueden detectarse en servicios de Office 365 conectados a un flujo de trabajo de Flow.
 
 Además, los usuarios pueden usar Flow para copiar o cargar archivos de Office 365 a un servicio externo, como Dropbox. En estos casos, debería enviarse una solicitud de interesado relacionada con los datos de un servicio externo, que trata los datos en este tipo de escenario.
 
@@ -989,7 +989,7 @@ La capacidad de un administrador de añadirse a sí mismo como propietario de un
 
 - [Administrador mundial Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
-Estos privilegios permiten al administrador usar Flow en el centro para acceder a todos los Flow de la organización.
+Estos privilegios permiten al administrador usar el centro de administración de Flow para acceder a todos los flujos de la organización.
 
 Para agregarse como propietario de un flujo.
 
@@ -1007,7 +1007,7 @@ Para agregarse como propietario de un flujo.
 
 7.  En la ventana **Compartir**, agréguese como miembro y, a continuación, guarde los cambios.
 
-Después de hacerse usted mismo propietario, vaya a **Flujo** \> **Mis flujos** \> **Equipo flujos** para acceder al flujo. Puede descargar el historial de ejecución o exportar el flujo desde allí. Vea:
+Después de hacerse usted mismo propietario, vaya a **Flujo** \> **Mis flujos** \> **Flujos de equipo** para acceder al flujo. Puede descargar el historial de ejecución o exportar el flujo desde allí. Vea:
 
 -   [Descargar y ejecutar el historial de flujo](https://flow.microsoft.com/blog/download-history-recurrence/)
 
@@ -1017,7 +1017,7 @@ Después de hacerse usted mismo propietario, vaya a **Flujo** \> **Mis flujos** 
 
 Un usuario puede tener acceso a las definiciones y ejecutar historiales de sus flujos.
 
--   **Definiciones de Flow:** Un usuario puede exportar la definición de un flujo (que se exporta como paquete de Flow, con formato JSON en un archivo zip). Vea [Exportar e importar sus flujos entre entornos con empaquetado](https://flow.microsoft.com/blog/import-export-bap-packages/).
+-   **Definiciones de flujo:** Un usuario puede exportar la definición de un flujo (que se exporta como paquete de Flow, con formato JSON en un archivo zip). Vea [Exportar e importar sus flujos entre entornos con empaquetado](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
 -   **Historiales ejecutados por Flow:** Un usuario puede descargar el historial de ejecución de cada uno de los flujos. Un historial ejecutado por Flow se descarga como CSV, que se puede abrir en Excel para filtrar o buscar. Puede descargar el historial de ejecución de flujos de varios usuarios. Vea [ejecutar el historial del flujo de descargar](https://flow.microsoft.com/blog/download-history-recurrence/).
 
@@ -1029,9 +1029,9 @@ Para los flujos compartidos, cuando un usuario queda eliminado de su organizaci�
 
 #### <a name="export"></a>Exportar
 
-Un administrador puede exportar la definición y ejecutar un historial de flujos de usuario. Para esto, un administrador debe añadirse como propietario del flujo del usuario en el centro de administración de Flow.
+Un administrador puede exportar la definición y ejecutar un historial de flujos de usuario. Para esto, un administrador debe agregarse como propietario del flujo del usuario en el centro de administración de Flow.
 
--   **Definiciones de Flow:** Después de que un administrador se añada a sí mismo como propietario de un flujo, puede ir a **Flow** \> **Mis flujos** \> **Equipos de flujos** para exportar la definición de un flujo (que se exporta como paquete de Flow, con formato JSON en un archivo zip). Vea [Exportar e importar sus flujos entre entornos con empaquetado](https://flow.microsoft.com/blog/import-export-bap-packages/).
+-   **Definiciones de flujo:** Después de que un administrador se agregue a sí mismo como propietario de un flujo, puede ir a **Flow** \> **Mis flujos** \> **Flujos de equipo** para exportar la definición de un flujo (que se exporta como paquete de Flow, con formato JSON en un archivo zip). Vea [Exportar e importar sus flujos entre entornos con empaquetado](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
 -   **Historiales de Flow**: De forma similar, un administrador debe añadirse como propietario de un Flow para exportar el historial de sus flujos. El historial de Flow se descarga como archivo CSV, lo que significa que puede usar Excel para filtrarlo o realizar búsquedas. También puede descargar el historial de varios Flow mientras sea el propietario. Vea [Descargar historiales de Flow](https://flow.microsoft.com/blog/download-history-recurrence/).
 
@@ -1042,9 +1042,9 @@ Las conexiones requieren que los usuarios proporciones credenciales para conecta
 Los conectores personalizados permiten a las organizaciones ampliar las capacidades de Flow al conectarse a los sistemas donde no hay disponible un conector de fábrica. El autor de un conector personalizado puede [compartirlo](https://docs.microsoft.com/flow/register-custom-api) con otros usuarios de la organización. Después de recibir una solicitud de interesado de eliminación, un administrador debe considerar volver a asignar la propiedad de estos conectores para evitar interrupciones de la empresa. Para acelerar este proceso, un administrador puede usar cmdlets de PowerShell para listar, volver a asignar o eliminar conectores personalizados.
 
 ### <a name="forms"></a>Formularios
-Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Forms para buscar, acceder, exportar y eliminar datos personales.
+Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Forms acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 
 Los usuarios de Forms pueden ir a <https://forms.office.com> y seleccionar **Mis formularios** para ver los formularios que han creado. También pueden seleccionar **Compartidos conmigo** para ver Forms compartidos por otros usuarios con un vínculo. Si hay muchos Forms por los que pasar, los usuarios pueden usar la barra de búsqueda integrada para buscar en Forms por título o autor. Para determinar si Microsoft Forms contiene datos personales susceptibles a su investigación de solicitud de interesado, puede pedirle al interesado que busque en su lista de **Compartidos conmigo** para determinar qué usuarios ("Propietarios de formulario") le han enviado Forms. A continuación, puede solicitar a los propietarios que seleccionen **Compartir** en la barra de navegación superior y que le envíen un vínculo a un formulario específico para que pueda consultarlo y determinar si es relevante para su solicitud.
 
@@ -1054,7 +1054,7 @@ Después de encontrar los formularios pertinentes, puede acceder a sus respuesta
 
 #### <a name="delete"></a>Eliminar
 
-El propietario de una encuesta, un cuestionario o un sondeo puede eliminarlos de forma permanente. Si quiere honrar la solicitud de un interesado sobre el derecho al olvido y eliminar completamente un formulario, búsquelo en la lista, seleccione los puntos (elipsis) en la esquina superior derecha de la vista previa del formulario y haga clic en **Eliminar**. Tras eliminar un formulario, no puede recuperarse. Para más información, consulte [Eliminar un formulario](https://support.office.com/article/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
+El propietario de una encuesta, un cuestionario o un sondeo puede eliminarlos de forma permanente. Si quiere satisfacer la solicitud de un interesado sobre el derecho al olvido y eliminar completamente un formulario, búsquelo en la lista, seleccione los puntos (elipsis) en la esquina superior derecha de la vista previa del formulario y haga clic en **Eliminar**. Tras eliminar un formulario, no puede recuperarse. Para más información, consulte [Eliminar un formulario](https://support.office.com/article/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
 
 #### <a name="export"></a>Exportar
 
@@ -1062,9 +1062,9 @@ Para exportar las preguntas y respuestas de un formulario a un archivo de Excel,
 
 ### <a name="kaizala"></a>Kaizala
 
-En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Kaizala para buscar, tener acceso, exportar y eliminar datos personales.
+En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Kaizala para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 Un administrador tiene acceso a los datos de la organización de un usuario, que son datos que se comparten entre grupos de la organización, desde el portal de administración de Kaizala. Los datos de la organización se conservan durante un período de tiempo determinado por las directivas de retención de la organización. Además de los datos de usuario, los servidores de Kaizala también almacenan los siguientes tipos de datos de la organización:
 
 - La lista de los miembros que forman parte de los grupos de la organización
@@ -1106,7 +1106,7 @@ Cuando los usuarios de la organización usan Kaizala, se generan datos del consu
 - [Exportar o eliminar los datos en la aplicación móvil de Kaizala](https://support.office.com/article/export-or-delete-your-data-in-the-kaizala-mobile-app-65f83dbc-4f10-4644-9b2d-9945c967684e)
 
 #### <a name="delete"></a>Eliminar
-Un administrador Kaizala puede quitar la cuenta de un usuario de Kaizala en el portal de administración de Kaizala. Después de eliminar una cuenta de usuario, el usuario se quita de todos los grupos que pertenecen a la organización y los datos de la organización se eliminan de su dispositivo. 
+Un administrador de Kaizala puede quitar la cuenta de un usuario de Kaizala en el portal de administración de Kaizala. Después de eliminar una cuenta de usuario, el usuario se quita de todos los grupos que pertenecen a la organización y los datos de la organización se eliminan de su dispositivo. 
 
 Para eliminar todos los datos privados del dispositivo móvil del usuario, el usuario de Kaizala puede eliminar su cuenta de Kaizala. Después de eliminar la cuenta, todo el contenido relacionado con Kaizala, incluidos los chats, las fotos y otros datos, se eliminará del dispositivo.
 
@@ -1118,9 +1118,9 @@ Para más información, vea:
 
 ### <a name="planner"></a>Planner
 
-Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Planner para buscar, acceder, exportar y eliminar datos personales.
+Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Planner para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 
 Los planes de Planner están asociados a un grupo de Office 365 y los archivos de Grupos de Office 365 se almacenan en un sitio de SharePoint Online asociado con el grupo. Eso significa que puede usar la búsqueda de contenido para buscar archivos de Planner en el sitio del grupo de Office 365. Para ello, debe tener la dirección URL del grupo de Office 365. Vea [Buscar en Microsoft Teams y Grupos de Office 365](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) en el tema de ayuda "Búsqueda de contenido en Office 365" para obtener sugerencias sobre cómo conseguir información sobre Grupos de Office 365 para ayudarle a buscar archivos de Planner en los sitios correspondientes de SharePoint Online.
 
@@ -1128,7 +1128,7 @@ Los planes de Planner están asociados a un grupo de Office 365 y los archivos d
 
 Como se ha explicado anteriormente, puede buscar el sitio subordinado de SharePoint Online y el buzón que están asociados con un plan. A continuación, puede obtener una vista previa o descargar los resultados de búsqueda relacionados para obtener acceso a los datos.
 
-#### <a name="delete"></a>Delete
+#### <a name="delete"></a>Eliminar
 
 Puede eliminar de forma manual la información personal de un usuario tanto otorgándose a sí mismo permisos de acceso a los planes de los que forma parte el usuario, o iniciar sesión como el usuario para realizar los cambios. Vea [Eliminar datos de usuario en Microsoft Planner](https://support.office.com/article/delete-user-data-in-microsoft-planner-4349ded2-1891-4896-8e27-05fd40f3929f).
 
@@ -1138,9 +1138,9 @@ Puede usar un script de PowerShell para exportar datos de un usuario desde Plann
 
 ### <a name="power-bi"></a>Power BI
 
-Las siguientes secciones explican cómo usar la función integrada en la aplicación de Microsoft Power BI para buscar, acceder, exportar y eliminar datos personales.
+Las siguientes secciones explican cómo usar la función integrada en la aplicación de Microsoft Power BI para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 Puede buscar contenido en las distintas áreas de trabajo de Power BI, tales como paneles, informes, libros y conjuntos de datos. Cada tipo de área de trabajo contiene un campo de búsqueda que permite buscar en esa área de trabajo. Vea [Navegación: búsqueda, detección y ordenación de contenido en el servicio Power BI](https://docs.microsoft.com/power-bi/service-navigation-search-filter-sort).
 
 #### <a name="access"></a>Acceso
@@ -1165,9 +1165,9 @@ Para facilitar una solicitud de portabilidad de datos, puede exportar paneles e 
 
 ### <a name="powerapps"></a>PowerApps
 
-Las siguientes secciones explican cómo usar la funcionalidad integrada en Microsoft PowerApps para buscar, acceder, exportar y eliminar datos personales. Estos pasos describen cómo un administrador puede cambiar las aplicaciones y sus recursos dependientes a nuevos propietarios para limitar la interrupción de la empresa.
+Las siguientes secciones explican cómo usar la funcionalidad integrada en Microsoft PowerApps para acceder a datos personales, buscarlos, exportarlos y eliminarlos. Estos pasos describen cómo un administrador puede cambiar las aplicaciones y sus recursos dependientes a nuevos propietarios para limitar la interrupción de la empresa.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 
 PowerApps es un servicio para crear aplicaciones que se pueden compartir y usar en su organización. Como parte del proceso de creación o ejecución de una aplicación, un usuario acabará almacenando varios tipos de datos y recursos en el servicio de PowerApps, como aplicaciones, entornos, conexiones, conectores personalizados y permisos.
 
@@ -1180,13 +1180,13 @@ Para facilitar una solicitud de interesado relacionada con PowerApps, puede apro
     o
 - [Administrador mundial Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
-Para obtener más información sobre cómo encontrar datos personales, consulte [Descubrir datos personales de PowerApps](https://go.microsoft.com/fwlink/?linkid=871880).
+Para obtener más información sobre cómo encontrar datos personales, consulte [Detectar datos personales de PowerApps](https://go.microsoft.com/fwlink/?linkid=871880).
 
-El servicio de PowerApps también incluye el servicio de datos comunes para aplicaciones, que permite a los usuarios almacenar datos en entidades estándar o personalizadas en una base de datos de servicio de datos común. Puede ver los datos almacenados en estas entidades desde el [portal PowerApps Maker](https://web.powerapps.com) y usar las funciones de búsqueda de producto de [búsqueda avanzada](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search) para buscar datos específicos de la entidad. Para más información sobre descubrir datos personales en el servicio de datos comunes, consulte [Descubrir datos personales en el servicio de datos comunes](https://go.microsoft.com/fwlink/?linkid=871881).
+El servicio de PowerApps también incluye el servicio de datos comunes para aplicaciones, que permite a los usuarios almacenar datos en entidades estándar o personalizadas en una base de datos de servicio de datos común. Puede ver los datos almacenados en estas entidades desde el [portal PowerApps Maker](https://web.powerapps.com) y usar las funciones de búsqueda de producto de [búsqueda avanzada](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search) para buscar datos específicos de la entidad. Para más información sobre detectar datos personales en el servicio de datos comunes, consulte [Detectar datos personales en el servicio de datos comunes](https://go.microsoft.com/fwlink/?linkid=871881).
 
 #### <a name="access"></a>Acceder
 
-Los administradores tienen la capacidad de asignarse privilegios para acceder y ejecutar las aplicaciones y los recursos asociados (incluyendo flujos, conexiones y conectores personalizados) con el [Centro de administración de PowerApps](https://admin.powerapps.com/) o [cmdlets de PowerShell de administrador de PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).
+Los administradores tienen la capacidad de asignarse privilegios para acceder a las aplicaciones y a los recursos asociados y ejecutarlos (incluidos flujos, conexiones y conectores personalizados) con el [Centro de administración de PowerApps](https://admin.powerapps.com/) o [cmdlets de PowerShell de administrador de PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).
 
 Una vez tiene acceso a la aplicación de usuario, puede usar un navegador web para abrir la aplicación. A continuación, puede tomar una captura de pantalla de los datos. Vea [Usar PowerApps en un navegador web](https://docs.microsoft.com/powerapps/run-app-browser).
 
@@ -1212,11 +1212,11 @@ Los conectores personalizados permiten a las organizaciones ampliar las capacida
 
 ### <a name="project-online"></a>Project Online
 
-Las siguientes secciones explican cómo usar la función integrada en la aplicación de Microsoft Project Online para buscar, acceder, exportar y eliminar datos personales.
+Las siguientes secciones explican cómo usar la función integrada en la aplicación de Microsoft Project Online para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover-and-access"></a>Descubrir y acceder
+#### <a name="discover-and-access"></a>Detectar y acceder
 
-Puede usar la búsqueda de contenido para buscar el sitio de SharePoint Online que está asociado a un proyecto (cuando se crea un proyecto, hay una opción para crear un sitio de SharePoint Online asociado); la búsqueda de contenido no busca los datos en un proyecto en Project Online, solo en el sitio que tenga asociado. Aunque la búsqueda de contenido buscará metadatos sobre proyectos, como personas mencionan en el asunto). Sin embargo, esto puede ayudarle a encontrar el proyecto que contiene los datos relacionados con la solicitud de interesado.
+Puede usar la búsqueda de contenido para buscar el sitio de SharePoint Online que está asociado a un proyecto (cuando se crea un proyecto, hay una opción para crear un sitio de SharePoint Online asociado); la búsqueda de contenido no busca los datos en un proyecto en Project Online, solo en el sitio que tenga asociado. Aunque la búsqueda de contenido buscará metadatos sobre proyectos, como personas mencionan en el asunto). Sin embargo, esto puede ayudarle a encontrar el proyecto que contiene los datos relacionados con la DSR (y acceder a él).
 
 > [!TIP]
 > La dirección URL de la colección de sitios de la organización donde se encuentran los sitios asociados a Projects es **https://\<su organización\>.sharepoint.com/sites/pwa**; por ejemplo, **https://contoso.sharepoint.com/pwa**. Puede usar esta colección de sitios específica como ubicación de la búsqueda de contenido y luego escribir el nombre en la consulta de búsqueda. Además, un administrador de TI puede usar la página de colecciones de sitios en el Centro de administración de SharePoint para obtener una lista de colecciones de sitios de PWA de la organización.
@@ -1231,15 +1231,15 @@ Puede exportar el contenido de un usuario específico de su entorno de Project O
 
 ### <a name="publisher"></a>Publisher
 
-Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Publisher para buscar, acceder, exportar y eliminar datos personales.
+Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Publisher para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 
 Puede usar la característica de búsqueda en la aplicación para buscar texto en un archivo de Publisher del mismo modo que puede hacer en la mayoría de aplicaciones de Office. Vea [Buscar y reemplazar texto](https://support.office.com/article/find-and-replace-text-bfe54275-b7c7-4d0f-904d-a2f38d322268).
 
 #### <a name="access"></a>Access
 
-Después de encontrar los datos, puede tomar una captura de pantalla o copiarlos y pegarlos en un archivo de Word o de texto y proporcionarlos al sujeto de los datos. También puede guardar una publicación como un archivo PDF, XPS o Word. Vea:
+Después de encontrar los datos, puede tomar una captura de pantalla o copiarlos y pegarlos en un archivo de Word o de texto y proporcionarlos al interesado. También puede guardar una publicación como un archivo PDF, XPS o Word. Vea:
 
   - [Guardar una publicación como un documento de Word](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
 
@@ -1247,7 +1247,7 @@ Después de encontrar los datos, puede tomar una captura de pantalla o copiarlos
 
 #### <a name="export"></a>Exportar
 
-Puede proporcionar un asunto de datos con el archivo de Publisher real o, como se explicó anteriormente, puede guardar una publicación como archivo de Word, PDF o XPS. Vea:
+Puede proporcionar un interesado con el archivo de Publisher real o, como se explicó anteriormente, puede guardar una publicación como archivo de Word, PDF o XPS. Vea:
 
   - [Guardar una publicación como un documento de Word](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
 
@@ -1259,9 +1259,9 @@ Puede eliminar el contenido de una publicación, eliminar páginas completas o e
 
 ### <a name="staffhub"></a>StaffHub
 
-Las siguientes secciones explican cómo usar la función integrada en la aplicación de Microsoft StaffHub para buscar, acceder, exportar y eliminar datos personales.
+Las siguientes secciones explican cómo usar la función integrada en la aplicación de Microsoft StaffHub para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 
 La mayoría de los datos de StaffHub está disponible para todos los miembros del equipo de StaffHub y administradores. Para revisar los datos de StaffHub, haga que un miembro del grupo o el administrador vaya a <https://staffhub.office.com> para buscar datos potencialmente relevantes respecto a la solicitud de interesado o haga que le agreguen como miembro de su equipo para que puede revisar la información en StaffHub en busca de información relevante.
 
@@ -1277,7 +1277,7 @@ Cuando encuentre contenido de StaffHub relevante, puede verlo y tomar capturas d
 
 -   **Datos específicos de usuarios**: los datos específicos de usuarios se componen de la configuración de usuario, la fuente de actividades de usuario y la solicitud de historial del usuario. Los administradores y los miembros del equipo no pueden ver ninguno de estos datos. Para obtener acceso o exportar los datos específicos del usuario, haga que el interesado inicie sesión con su cuenta de StaffHub. De forma alternativa, si el interesado ha dejado la organización, puede obtener sus datos haciendo que el administrador reinicie la cuenta.
 
--   **Kronos**: StaffHub admite conexiones a [Kronos](http://www.kronos.com/), que es una herramienta de administración de recursos de terceros. StaffHub y Kronos son encargados del tratamiento independientes y tratan los datos de su organización en los términos individuales que haya aceptado con cada parte. Si su solicitud de interesado está relacionada con los datos mantenidos por Kronos, debe ponerse en contacto con Kronos para obtener asistencia con la solicitud de interesado y viceversa.
+-   **Kronos**: StaffHub admite conexiones a [Kronos](http://www.kronos.com/), que es una herramienta de administración de recursos de terceros. StaffHub y Kronos son encargados del tratamiento independientes y tratan los datos de su organización en los términos individuales que haya aceptado con cada parte. Si su DSR está relacionada con los datos mantenidos por Kronos, debe ponerse en contacto con Kronos para obtener asistencia con la DSR y viceversa.
 
 #### <a name="delete"></a>Eliminar
 
@@ -1290,11 +1290,11 @@ Consulte la sección [Acceder](#access-12) de StaffHub.
 
 ### <a name="stream"></a>Stream
 
-En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Stream para buscar, tener acceso, exportar y eliminar datos personales.
+En las secciones siguientes se explica cómo usar la funcionalidad integrada en la aplicación en Microsoft Stream para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 
-Para descubrir contenido generado o cargado en Stream que pueda ser relevante para una solicitud del interesado, un administrador de Stream puede ejecutar un informe de usuario para determinar los vídeos, las descripciones de vídeos, los grupos, los canales o los comentarios que un usuario de Stream pueda haber cargado, creado o publicado. Para obtener instrucciones sobre cómo generar un informe, vea [Administración de datos de usuario en Microsoft Stream](https://docs.microsoft.com/stream/managing-user-data). El resultado del informe está en formato HTML y contiene hipervínculos que pueden usarse para navegar a vídeos de posible interés. Si quiere ver un vídeo que tiene un conjunto de permisos personalizados y usted no forma parte de los usuarios originales a los que se dirigía el vídeo, puede verlo en modo de administrador. Vea [Funcionalidad de administración de Microsoft Stream](https://docs.microsoft.com/stream/manage-content-permissions).  
+Para detectar contenido generado o cargado en Stream que pueda ser relevante para una solicitud del interesado, un administrador de Stream puede ejecutar un informe de usuario para determinar los vídeos, las descripciones de vídeos, los grupos, los canales o los comentarios que un usuario de Stream pueda haber cargado, creado o publicado. Para obtener instrucciones sobre cómo generar un informe, vea [Administración de datos de usuario en Microsoft Stream](https://docs.microsoft.com/stream/managing-user-data). El resultado del informe está en formato HTML y contiene hipervínculos que pueden usarse para navegar a vídeos de posible interés. Si quiere ver un vídeo que tiene un conjunto de permisos personalizados y usted no forma parte de los usuarios originales a los que se dirigía el vídeo, puede verlo en modo de administrador. Vea [Funcionalidad de administración de Microsoft Stream](https://docs.microsoft.com/stream/manage-content-permissions).  
 
 #### <a name="access"></a>Acceso
 
@@ -1311,7 +1311,7 @@ Para eliminar o editar vídeos o cualquier otro contenido de Stream, un administ
 ### <a name="sway"></a>Sway
 Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Sway para buscar, acceder, exportar y eliminar datos personales.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 El contenido creado con Sway (en [www.sway.com](http://www.sway.com)) sólo puede ser visto por el propietario y aquellos a los que el autor ha otorgado permiso. Vea [Configuración de privacidad en Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Para determinar si Sway es un lugar con datos personales que puedan responder a la solicitud de interesado, puede pedir al interesado y a los usuarios de la organización que probablemente hayan generado el contenido que busquen en sus Sways y compartan con usted cualquiera que pueda contener datos personales susceptibles de formar parte de la solicitud del interesado. Para obtener información sobre cómo compartir un Sway, consulte "Compartir un Sway desde su cuenta de organización" en el artículo [Compartir su Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
 
 #### <a name="access"></a>Acceder
@@ -1328,7 +1328,7 @@ Para exportar un Sway, abra el Sway que quiere descargar, seleccione los puntos 
 
 ### <a name="whiteboard"></a>Whiteboard
 
-Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Whiteboard para buscar, acceder, exportar y eliminar datos personales.
+Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Whiteboard para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
 - [Whiteboard 2016 en Surface Hub](#whiteboard-2016-on-surface-hub)
 
@@ -1339,7 +1339,7 @@ Las secciones siguientes explican cómo usar la función integrada en la aplicac
 En esta sección se describe cómo responder a las solicitudes DSR creadas con la aplicación de Whiteboard 2016 en Surface Hub.
 
 
-##### <a name="discover"></a>Descubrir
+##### <a name="discover"></a>Detectar
 
 Los archivos de Whiteboard (.wbx) se almacenan en la cuenta de OneDrive para la Empresa de los usuarios. Se puede preguntar al interesado o a otros usuarios si las pizarras que han creado pueden contener datos personales relevantes para una solicitud DSR. Ellos pueden compartir una pizarra con usted o usted puede obtener una copia de la pizarra para dársela al interesado.
 
@@ -1387,9 +1387,9 @@ Una vez que usted u ora persona tengan en propiedad una pizarra, vea el [artícu
 
 ### <a name="yammer"></a>Yammer
 
-Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Yammer para buscar, acceder, exportar y eliminar datos personales.
+Las secciones siguientes explican cómo usar la función integrada en la aplicación en Microsoft Yammer para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
 
-#### <a name="discover"></a>Descubrir
+#### <a name="discover"></a>Detectar
 
 En el centro de administración de Yammer, un administrador superior de Yammer (administrador global de Office 365 o un administrador superior de Yammer) puede exportar los datos que pertenezcan a un usuario determinado. La exportación incluye los mensajes y archivos registrados y modificados por el usuario, así como información sobre los temas y los grupos creados por el usuario. Cuando se ejecuta una exportación de datos específicos del usuario, el administrador también recibirá un mensaje de la Bandeja de entrada con datos de actividad de cuenta del usuario que pueden proporcionar al usuario si así lo desean. Para obtener instrucciones detalladas, consulte [Yammer Enterprise: privacidad](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
 
@@ -1421,21 +1421,21 @@ Consulte instrucciones sobre cómo exportar datos en [Administrar solicitudes de
 Tenga en cuenta que Yammer tiene configuración de retención de datos que elimina temporalmente o definitivamente los datos cuando un usuario elimina un mensaje o archivo. Si está configurada la eliminación temporal, los datos eliminados por el usuario se incluirán en la exportación. Si la retención de datos de Yammer está configurada para la eliminación permanente, los datos eliminados ya no están almacenados en Yammer y no se incluirán en la exportación.
 
 #### <a name="delete"></a>Eliminar
-Yammer permite a los administradores superiores ejecutar una eliminación que cumpla con RGPD a través del centro de administración de Yammer si reciben una solicitud de interesado. Esta opción se denomina Borrar usuario y suspende al usuario durante 14 días para, a continuación, eliminar todos sus datos personales, a excepción de sus archivos y mensajes. Si el usuario es un invitado, esto debe hacerse en cada red externa de la que sea miembro.
+Yammer permite a los administradores superiores ejecutar una eliminación que cumpla con el RGPD a través del centro de administración de Yammer si reciben una solicitud de interesado. Esta opción se denomina Borrar usuario y suspende al usuario durante 14 días para, a continuación, eliminar todos sus datos personales, a excepción de sus archivos y mensajes. Si el usuario es un invitado, esto debe hacerse en cada red externa de la que sea miembro.
 
 > [!NOTE]
 > Si un administrador desea quitar los archivos y mensajes de los usuarios durante el intervalo de 14 días, tendrá que realizar una exportación de nivel de usuario para identificar los archivos y mensajes y, después, decidir cuáles va a eliminar mediante la eliminación integrada o un script de PowerShell. Después del plazo de 14 días, el administrador no puede asociar al usuario con sus archivos o mensajes.
 
 Cuando se elimina un usuario con la opción Borrar usuario, se envía una notificación a la bandeja de entrada de Yammer de todos los administradores de red y administradores superiores.La opción Borrar usuario elimina el perfil de Yammer del usuario, pero no elimina su perfil de Office 365 o Azure Active Directory.
 
-Para obtener pasos detallados para quitar un usuario, consulte [Administrar solicitudes de interesados RGPD en Yammer Enterprise](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
+Para obtener pasos detallados para quitar un usuario, consulte [Administrar solicitudes de interesados sobre RGPD en Yammer Enterprise](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
 
 ## <a name="responding-to-dsr-rectification-requests"></a>Responder a solicitudes de interesado de corrección
 
 Si un interesado solicita corregir los datos personales almacenados por su organización en Office 365, usted y su organización tendrán que determinar si es adecuado aceptar la solicitud. En caso afirmativo, rectificar los datos puede incluir realizar acciones como censurar, editar o quitar datos personales de un documento y otro tipo o elemento. Pedir al propietario del documento o de los datos que use la aplicación de Office 365 adecuada para realizar el cambio solicitado es la manera más conveniente. Una alternativa es que un administrador de TI de su organización realice los cambios. Esto probablemente requiere que el administrador de TI (u otra persona de su organización con los privilegios adecuados, como un administrador de colección de sitios SharePoint Online) se asigne a sí mismo o a otro usuario los permisos necesarios para obtener acceso al documento o a la ubicación del documento para realizar los cambios directamente en el mismo.
 
 ### <a name="requesting-that-the-data-owner-to-make-the-approved-change"></a>Solicitar que el propietario de datos realice el cambio aprobado
-Pedir al propietario de los datos que realice el cambio es la forma más directa de corregir datos personales. Después de encontrar los datos relevantes de la solicitud del interesado, puede proporcionar la siguiente información para que este pueda realizar el cambio.
+Pedir al propietario de los datos que realice el cambio es la forma más directa de rectificar datos personales. Después de encontrar los datos relevantes de la solicitud del interesado, puede proporcionar la siguiente información para que este pueda realizar el cambio.
 
 -   La ubicación y el nombre de archivo (para documentos y otros archivos) del elemento que debe cambiarse; ubicar los datos en cuestión es parte del [proceso de detección](#using-content-search-to-find-personal-data) explicado anteriormente.
 
@@ -1448,7 +1448,7 @@ Si no es posible para el propietario de los datos implementar la solicitud de re
 
 #### <a name="sharepoint-online"></a>SharePoint Online
 
-Para asignar permisos de administrador o de propietario a un sitio de SharePoint Online de modo que usted u otro individuo puedan editar el documento, vea
+Para asignar permisos de administrador o de propietario a un sitio de SharePoint Online de modo que usted u otro individuo pueda acceder al documento y editarlo, vea
 
 -   [Administrar los administradores de una colección de sitios](https://support.office.com/article/Manage-administrators-for-a-site-collection-9A7E46F9-3FC4-4297-955A-82CB292A5BE0)
 
@@ -1464,7 +1464,7 @@ Un administrador global de Office 365 puede acceder a la cuenta de OneDrive para
 
 3.  Vaya a **Usuarios activos** y seleccione el usuario.
 
-4.  Expanda **OneDrive para la Empresa** en el panel de detalles y, después, haga clic en **Acceder a archivos**.
+4.  Expanda **Configuración de OneDrive para la Empresa** en el panel de detalles y, después, haga clic en **Acceder a archivos**.
 
 5.  Haga clic en la dirección URL para ir a la cuenta de OneDrive para la Empresa del usuario.
 
@@ -1484,7 +1484,7 @@ Los propietarios de datos o administradores de pueden realizar cambios en las p�
 
 -   Actualizar un documento guardará una nueva versión del mismo que contendrá la revisión. Las versiones anteriores del documento no se actualizarán. Eso significa que es posible que los datos que sean el asunto de una solicitud de interesado de corrección pueden conservarse en las versiones anteriores del tema. Tenga en cuenta que las versiones anteriores de un tema pueden eliminarse y, a continuación, se quitan permanentemente de Office 365. Consulte la sección de esta guía [Eliminar documentos en SharePoint Online y OneDrive para la Empresa](#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
 
--   Para censurar completamente un archivo de SharePoint de forma que quite todo rastro de los datos de un interesado del archivo, incluyendo todas las versiones del archivo y actividad grabada por el interesado, tendrá que hacer lo siguiente:
+-   Para censurar completamente un archivo de SharePoint de forma que quite todo rastro de los datos de un interesado del archivo, incluyendo todas las versiones del archivo y toda la actividad registrada realizada por el interesado, tendrá que hacer lo siguiente:
 
     1.  Descargue una copia del archivo en su equipo local.
 
@@ -1500,13 +1500,13 @@ Los administradores de TI también pueden corregir algunas propiedades personale
 
 La información de usuario del perfil de usuario de SharePoint u Office 365 se asocia a menudo con documentos de OneDrive para la Empresa y SharePoint Online para representar a esa persona. Por ejemplo, un nombre de usuario creado por o modificado por la columna Contactos para un elemento de lista o documento. Esta información de usuario puede rectificarse de varias formas, según su origen:
 
--   Corregir las propiedades de usuario en su propio Active Directory local. Los clientes que sincronicen las propiedades de usuario como nombre de usuario, Nombre de pila, etcétera... desde su AD local, deben modificar dichas propiedades ahí. Las propiedades asignadas correctamente se propagarán a Office 365 y de ahí a OneDrive para la Empresa y SharePoint Online.
+-   Rectificar las propiedades de usuario en su propio Active Directory local. Los clientes que sincronicen las propiedades de usuario como nombre de usuario, Nombre de pila, etcétera... desde su AD local, deben modificar dichas propiedades ahí. Las propiedades asignadas correctamente se propagarán a Office 365 y de ahí a OneDrive para la Empresa y SharePoint Online.
 
--   Corregir las propiedades de usuario en el Centro de administración de Office 365. Los cambios realizados a la información de la cuenta se reflejarán automáticamente en OneDrive para la Empresa y SharePoint Online. Para obtener más información, vea [Agregar o cambiar información de perfil de un usuario en Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=864809). Tenga en cuenta que las propiedades cuyo origen sea Office 365 no pueden cambiarse desde SharePoint.
+-   Rectificar las propiedades de usuario en el Centro de administración de Office 365. Los cambios realizados a la información de la cuenta se reflejarán automáticamente en OneDrive para la Empresa y SharePoint Online. Para obtener más información, vea [Agregar o cambiar información de perfil de un usuario en Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=864809). Tenga en cuenta que las propiedades cuyo origen sea Office 365 no pueden cambiarse desde SharePoint.
 
--   Corregir las propiedades de usuario en el perfil de usuario de SharePoint del Centro de administración de SharePoint. En la pestaña perfiles de usuario del Centro de administración de SharePoint, los administradores pueden hacer clic en **Administrar perfiles de usuario** y buscar las propiedades de un usuario para editarlas.
+-   Rectificar las propiedades de usuario en el perfil de usuario de SharePoint del Centro de administración de SharePoint. En la pestaña perfiles de usuario del Centro de administración de SharePoint, los administradores pueden hacer clic en **Administrar perfiles de usuario** y buscar las propiedades de un usuario para editarlas.
 
--   Corregir las propiedades de usuario en un origen personalizado. Las propiedades de perfil de SharePoint personalizadas pueden sincronizarse desde un origen personalizado a través de Microsoft Identity Manager (MIM) u otro método.
+-   Rectificar las propiedades de usuario en un origen personalizado. Las propiedades de perfil de SharePoint personalizadas pueden sincronizarse desde un origen personalizado a través de Microsoft Identity Manager (MIM) u otro método.
 
 Tenga en cuenta que esto no afectará a todas las experiencias, que pueden conservar la información anterior. Por ejemplo, el nombre del usuario como texto en el documento.
 
@@ -1517,9 +1517,9 @@ Después de realizar esos cambios, puede aprovechar la capacidad de [actualizaci
 
 ### <a name="making-changes-to-content-in-yammer"></a>Realizar cambios en el contenido de Yammer
 
-Para los mensajes, un usuario puede modificar un mensaje para corregir cualquier inexactitud. Puede solicitar una lista de todos sus mensajes a un administrador superior de Yammer y, a continuación, hacer clic en un vínculo en el archivo para revisar cada mensaje.
+Para los mensajes, un usuario puede modificar un mensaje para rectificar cualquier inexactitud. Puede solicitar una lista de todos sus mensajes a un administrador superior de Yammer y, a continuación, hacer clic en un vínculo en el archivo para revisar cada mensaje.
 
-Para los archivos, un usuario puede modificar un archivo concreto para corregir cualquier imprecisión. Puede solicitar una lista de todos los archivos registrados a un administrador superior de Yammer y acceder a ellos. Los archivos que se exportan a la carpeta de archivos pueden verse, solo hay que buscar el archivo por número. Por ejemplo, para un archivo denominado 12345678.ppx en la exportación, use el cuadro de búsqueda en Yammer para buscar 1235678.ppx. O bien, vaya a <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong>; por ejemplo, <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
+Para los archivos, un usuario puede modificar un archivo concreto para rectificar cualquier imprecisión. Puede solicitar una lista de todos los archivos registrados a un administrador superior de Yammer y acceder a ellos. Los archivos que se exportan a la carpeta de archivos pueden verse, solo hay que buscar el archivo por número. Por ejemplo, para un archivo denominado 12345678.ppx en la exportación, use el cuadro de búsqueda en Yammer para buscar 1235678.ppx. O bien, vaya a <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong>; por ejemplo, <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
 
 Para los datos a los que el usuario puede acceder a través de su perfil y configuración, es posible realizar todos los cambios necesarios.
 
@@ -1535,7 +1535,7 @@ Para los datos a los que el usuario puede acceder a través de su perfil y confi
 
     - La pertenencia a grupos del usuario, mensajes marcados, usuarios seguidos y temas seguidos. El usuario puede cambiar esta información; vea [Sugerencias para organizarse en Yammer](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380).
 
-## <a name="responding-to-dsr-restriction-requests"></a>Responder a solicitudes de interesado de restricción
+## <a name="responding-to-dsr-restriction-requests"></a>Responder a solicitudes de restricción de DSR
 
 Estas son las formas de restringir el tratamiento de datos en Office 365:
 
@@ -1597,7 +1597,7 @@ Como la mayoría de los documentos de Office se encuentra en los sitios de Share
 4.  Cuando ya no se aplique la restricción, la copia del documento que se almacenó localmente puede volver a cargarse en el sitio de Office 365.
 
 > [!IMPORTANT] 
-> El procedimiento anterior no funcionará si el documento se encuentra en un sitio que está suspendido (con una de las características de suspensión legal o de retención de Office 365). En caso de que una solicitud de restricción para una DSR tenga prioridad sobre una suspensión legal, tendrá que quitarse la suspensión del sitio antes de que un documento pueda eliminarse definitivamente. Además, el historial del documento de los documentos eliminados se elimina definitivamente.
+> El procedimiento anterior no funcionará si el documento se encuentra en un sitio que está suspendido (con una de las características de suspensión legal o de retención de Office 365). En caso de que una solicitud de restricción para una DSR tenga prioridad sobre una suspensión legal, tendrá que quitarse la suspensión del sitio antes de que un documento pueda eliminarse definitivamente. Además, el historial de los documentos eliminados se elimina definitivamente.
 
 ### <a name="temporarily-restricting-access-to-sharepoint-online-sites"></a>Restringir temporalmente el acceso a sitios de SharePoint Online
 
@@ -1628,7 +1628,7 @@ Los administradores no pueden exportar o acceder a los datos de los usuarios Del
 
 -   **Datos de perfil**: esta es la información de perfil de la lista global de direcciones de su organización en Azure Active Directory, así como la información opcional que los usuarios han decidido agregar sobre sí mismos. Para obtener acceso o exportar los datos de perfil en Delve, un usuario puede hacer clic en **Yo** \> **Actualizar perfil**. Se puede copiar el contenido directamente desde la página o realizar una captura de pantalla.
 
--   **Datos de blog**: se trata de entradas de blog publicadas por un usuario. Para obtener acceso o exportar datos de blog, un usuario puede hacer clic en **Yo** \> **Todas las entradas**. Se puede copiar el contenido directamente desde la página o realizar una captura de pantalla.
+-   **Datos de blog**: se trata de entradas de blog publicadas por un usuario. Para acceder a datos de blog o exportarlos, un usuario puede hacer clic en **Yo** \> **Todas las entradas**. Se puede copiar el contenido directamente desde la página o realizar una captura de pantalla.
 
 -   **Datos de contactos recientes**: estos son los usuarios de la organización que Delve considera relevantes para el usuario en un momento determinado. Cuando un usuario hace clic en **Yo** \> **Ver todo** en el panel "Haga clic en una persona para ver en qué está trabajando", Delve muestra las personas más relevantes para un usuario en un momento determinado.
 
@@ -1640,17 +1640,17 @@ Los administradores no pueden exportar o acceder a los datos de los usuarios Del
 
 - **Datos de configuración de la característica**: estas son las configuraciones o acciones de Delve resultantes de la utilización de Delve por parte de un usuario. Los usuarios pueden exportar una lista completa de esta configuración. 
 
-Para obtener acceso o exportar los datos anteriores, el usuario puede hacer clic en el icono de engranaje de la esquina superior derecha de Delve y luego hacer clic en **Configuración de la característica** > **Exportar datos**. La información se exporta en formato JSON.
+Para acceder a los datos anteriores o exportarlos, el usuario puede hacer clic en el icono de engranaje de la esquina superior derecha de Delve y luego hacer clic en **Configuración de la característica** > **Exportar datos**. La información se exporta en formato JSON.
 
 ##### <a name="data-thats-available-through-other-services"></a>Datos disponibles a través de otros servicios
 
--   **Datos de documentos populares**: estos son documentos y datos adjuntos de correo electrónico que pueden ser relevantes para el usuario. Delve organiza de forma dinámica estos documentos y mensajes de correo electrónico en función de las actividades y los contactos del usuario en Office 365. Cuando un usuario abre Delve o hace clic en **Inicio**, Delve muestra los documentos o datos adjuntos más relevantes para el usuario en un momento determinado. Para obtener acceso o exportar los documentos y los datos adjuntos, el usuario puede ir al servicio de Office 365 a través del cual se publican los documentos o los datos adjuntos (como Office.com, SharePoint Online, OneDrive para la Empresa y Exchange Online).
+-   **Datos de documentos populares**: estos son documentos y datos adjuntos de correo electrónico que pueden ser relevantes para el usuario. Delve organiza de forma dinámica estos documentos y mensajes de correo electrónico en función de las actividades y los contactos del usuario en Office 365. Cuando un usuario abre Delve o hace clic en **Inicio**, Delve muestra los documentos o datos adjuntos más relevantes para el usuario en un momento determinado. Para acceder a los documentos y los datos adjuntos o exportarlos, el usuario puede ir al servicio de Office 365 a través del cual se publican los documentos o los datos adjuntos (como Office.com, SharePoint Online, OneDrive para la Empresa y Exchange Online).
 
--   **Datos de documentos recientes y datos adjuntos de correo**: estos son los documentos y datos adjuntos de correo electrónico que el usuario ha modificado más recientemente. Cuando un usuario hace clic en **Yo** \> **Ver todo** en el panel "Volver a los documentos y datos adjuntos de correo electrónico más recientes", Delve muestra los últimos documentos y datos adjuntos de correo electrónico modificados por el usuario.  Para obtener acceso o exportar los documentos y los datos adjuntos, el usuario puede ir al servicio de Office 365 a través del cual se publican los documentos o los datos adjuntos como, por ejemplo, Office.com, SharePoint Online, OneDrive para la Empresa y Exchange Online.
+-   **Datos de documentos recientes y datos adjuntos de correo**: estos son los documentos y datos adjuntos de correo electrónico que el usuario ha modificado más recientemente. Cuando un usuario hace clic en **Yo** \> **Ver todo** en el panel "Volver a los documentos y datos adjuntos de correo electrónico más recientes", Delve muestra los últimos documentos y datos adjuntos de correo electrónico modificados por el usuario.  Para acceder a los documentos y los datos adjuntos o exportarlos, el usuario puede ir al servicio de Office 365 a través del cual se publican los documentos o los datos adjuntos como, por ejemplo, Office.com, SharePoint Online, OneDrive para la Empresa y Exchange Online.
 
--   **Datos de documentos de usuarios de su entorno**: estos son los documentos que Delve considera que son más relevantes para el usuario en un momento determinado. Cuando un usuario hace clic en **Yo** \> **Ver todo** en el panel "Descubrir documentos de usuarios de su entorno", Delve muestra los documentos más relevantes para un usuario en un momento determinado. Para obtener acceso o exportar los documentos, el usuario puede ir al servicio de Office 365 a través del cual se publican los documentos o los datos adjuntos (como Office.com, SharePoint Online, OneDrive para la Empresa y Exchange Online).
+-   **Datos de documentos de usuarios de su entorno**: estos son los documentos que Delve considera que son más relevantes para el usuario en un momento determinado. Cuando un usuario hace clic en **Yo** \> **Ver todo** en el panel "Descubrir documentos de usuarios de su entorno", Delve muestra los documentos más relevantes para un usuario en un momento determinado. Para acceder a los documentos o exportarlos, el usuario puede ir al servicio de Office 365 a través del cual se publican los documentos o los datos adjuntos (como Office.com, SharePoint Online, OneDrive para la Empresa y Exchange Online).
 
-#### <a name="rectify"></a>Corregir
+#### <a name="rectify"></a>Rectificar
 
 Los usuarios pueden modificar la siguiente información en Delve:
 
@@ -1658,7 +1658,7 @@ Los usuarios pueden modificar la siguiente información en Delve:
 
 -   **Configuración de características**: un usuario puede hacer clic en el icono de engranaje en la esquina superior derecha de Delve y después hacer clic en **Configuración de características**\> para cambiar la configuración que desee.
 
-#### <a name="restrict"></a>Restrict
+#### <a name="restrict"></a>Restringir
 
 Para restringir el tratamiento de Delve en su organización, puede desactivar Office Graph. Más [aquí](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff).
 
@@ -1680,9 +1680,9 @@ Si la organización usa MyAnalytics, Microsoft genera información de todos los 
 Además de la información que puede exportarse mediante el Centro de seguridad y cumplimiento, los usuarios con licencia de MyAnalytics pueden ir al [panel MyAnalytics](https://delve.office.com) cuando hayan iniciado sesión en su cuenta de Office 365 para ver la información que se genera sobre la forma en que invierten el tiempo en el trabajo. Pueden realizar capturas de pantalla de la información de MyAnalytics si quieren tener copias permanentes de sus datos.
 
 
-#### <a name="rectify"></a>Corregir
+#### <a name="rectify"></a>Rectificar
 
-Todas las recomendaciones generadas por MyAnalytics proceden de los elementos de calendario y el correo del usuario. Por lo tanto, no hay nada para corregir excepto los elementos de calendario o correo electrónico de origen.
+Todas las conclusiones generadas por MyAnalytics proceden de los elementos de calendario y el correo del usuario. Por lo tanto, no hay nada para rectificar excepto los elementos de calendario o correo electrónico de origen.
 
 #### <a name="restrict"></a>Restringir
 
@@ -1706,7 +1706,7 @@ Para ayudarle con las solicitudes del interesado en Workplace Analytics:
 
 Puede que la información de los informes de Workplace Analytics creados por usted contengan o no datos personales de usuarios de la organización con licencia de Workplace Analytics, según la información que haya usado la organización para complementar los datos de Office 365. El administrador de Workplace Analytics deberá revisar esos informes para determinar si contienen datos personales del usuario. Si un informe contiene datos personales de un usuario, usted tendrá que decidir si quiere proporcionarle una copia del informe. Workplace Analytics permite exportar el informe. 
 
-#### <a name="rectify"></a>Corregir
+#### <a name="rectify"></a>Rectificar
 
 Como se ha explicado anteriormente, Workplace Analytics usa datos de Office 365 junto con otros proporcionados por la organización para generar informes que le interesen. Los datos de Office 365 no se pueden corregir, se basan en las actividades del calendario y el correo electrónico de los usuarios. Pero los datos de la organización que haya cargado en Workplace Analytics se pueden corregir para generar el informe. Para ello, tiene que corregir los datos de origen, cargarlos y volver a ejecutar el informe para generar un nuevo informe de Workplace Analytics.
 
@@ -1716,19 +1716,19 @@ Para restringir el tratamiento de un usuario específico, puede quitar su licenc
 #### <a name="delete"></a>Eliminar
 Si un interesado quiere que se le quite de un informe o conjunto de informes de Workplace Analytics, puede eliminar el informe. Es su responsabilidad eliminar los usuarios de los datos de la organización que use para generar el informe y volver a cargar los datos. Todos los datos sobre el usuario se quitan cuando se "elimina de forma permanente" una cuenta de usuario de Azure Active Directory. 
 
-Para quitar los datos personales de una persona, un administrador global de Office 365 puede realizar lo siguiente: 
+Para quitar los datos personales de un interesado, un administrador global de Office 365 puede realizar lo siguiente: 
 
 1. Eliminar la licencia de Workplace Analytics del interesado.
 
 2. Eliminar la entrada de Azure Active Directory (AAD) para el interesado. (Para obtener más información, vea [Eliminar un usuario](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)
 
-3. Póngase en contacto con el soporte técnico y haga que el soporte abra un vale de una solicitud de usuario de eliminación de Solicitud de derechos del interesado (DSR). En este vale, identifique al interesado mediante su nombre principal de usuario (UPN).
+3. Póngase en contacto con el soporte técnico y haga que el soporte abra un vale de una solicitud de eliminación de usuario de Derechos del interesado (DSR). En este vale, identifique al interesado mediante su nombre principal de usuario (UPN).
 
 4. Exporte una copia de los datos de recursos humanos del sistema de recursos humanos de la empresa (vea [Exportar datos](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data)), quite la información del interesado de ese archivo de datos de recursos humanos y después cargue el archivo de datos de recursos humanos editado en formato .csv en Workplace Analytics (vea [Cargar datos de la organización](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
 
 ## <a name="part-3-responding-to-dsrs-for-system-generated-logs"></a>Parte 3: Responder a solicitudes de derechos del interesado sobre registros generados por el sistema
 
-Microsoft también le permite obtener acceso, exportar y eliminar registros generados por el sistema que pueden considerarse como datos personales según la definición amplia del RGPD de “datos personales”. Estos son algunos ejemplos de registros generados por el sistema que pueden considerarse como datos personales según el RGPD:
+Microsoft también le permite acceder a registros generados por el sistema, exportarlos y eliminarlos, que pueden considerarse como datos personales según la definición amplia del RGPD de “datos personales”. Estos son algunos ejemplos de registros generados por el sistema que pueden considerarse como datos personales según el RGPD:
 
 -   Datos de uso del servicio de productos, como registros de actividad de usuario.
 
@@ -1738,7 +1738,7 @@ Microsoft también le permite obtener acceso, exportar y eliminar registros gene
 
 No se admite la capacidad de restringir o rectificar datos en los registros generados por el sistema. Los registros generados por el sistema constituyen acciones realizadas en la nube de Microsoft y datos de diagnóstico, y modificar este tipo de datos podría afectar a los registros históricos de acciones, lo que aumentaría el fraude y los riesgos de seguridad.
 
-### <a name="accessing-and-exporting-system-generated-logs"></a>Acceder y exportar registros generado por el sistema
+### <a name="accessing-and-exporting-system-generated-logs"></a>Acceder a registros generados por el sistema y exportarlos
 
 Los administradores pueden obtener acceso a registros generados por el sistema asociados con el uso de un usuario específico de las aplicaciones y servicios de Office 365. Para obtener acceso y exportar los registros generados por el sistema:
 
@@ -1807,12 +1807,12 @@ La eliminación permanente de una cuenta de usuario quitará los datos del usuar
 
 La eliminación de una cuenta de usuario no quitará los registros generados por los sistemas de Yammer y Kaizala. Para quitar los datos de estas aplicaciones, vea uno de los siguientes:
 
-- Yammer: [administrar las solicitudes del interesado RGDP en Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
+- Yammer: [administrar las solicitudes del interesado sobre RGDP en Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - Kaizala:[exportar o eliminar datos de la organización de un usuario en Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
 
 #### <a name="national-clouds"></a>Nubes nacionales
 
-En las siguiente nubes nacionales, un administrador de TI global tendrá que realizar este procedimiento para eliminar registros generados por el sistema:
+En las siguientes nubes nacionales, un administrador de TI global tendrá que realizar este procedimiento para eliminar registros generados por el sistema:
 
 - Office 365 Alemania: cuando la cuenta de usuario se elimina definitivamente, también se eliminarán los registros generados por el sistema. 
 
@@ -1833,19 +1833,19 @@ Los "datos de soporte" son aquellos que sus usuarios y usted envían a Microsoft
 
 En las tres primeras partes de esta guía se describen productos y servicios en los que Microsoft es encargado del tratamiento de los datos de la organización y, por tanto, se pone la funcionalidad de solicitudes del interesado a disposición del administrador de inquilinos. Hay diversas circunstancias en las que los usuarios de la organización puedan usar su cuenta profesional o educativa (también denominadas "identificador de Azure Active Directory" o "AAD") para iniciar sesión en los productos y servicios de Microsoft en los que Microsoft es el responsable de los datos. En dichos productos y servicios, los usuarios tendrán que iniciar sus propias solicitudes del interesado directamente en Microsoft y Microsoft tratará las solicitudes directamente con el usuario. Tenga en cuenta que los productos y servicios relacionados con el almacenamiento de contenido creado por los usuarios permiten a los usuarios tener acceso, exportar, corregir y eliminar este contenido como parte de su funcionalidad intrínseca. Los escenarios en lo que esto se aplica incluyen los siguientes:
 
-- **Servicios en línea conectados opcionales**: Office 365 ProPlus ofrece al usuario varios servicios en línea conectados opcionales. La lista de estos servicios y los controles de usuario relacionados se muestran [aquí](https://support.office.com/article/microsoft-s-other-connected-services-92c234f1-dc91-4dc1-925d-6c90fc3816d8). Puede decidir si quiere permitir que sus usuarios finales usen estos servicios. Para obtener más información, vea [Formas en que los administradores pueden administrar servicios de los poseedores de los datos en Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/manage-controller-services-office-365-proplus). En la medida en que estos servicios opcionales realicen un tratamiento de datos personales, Microsoft es el responsable de los datos para estos servicios.
+- **Servicios en línea conectados opcionales**: Office 365 ProPlus ofrece al usuario varios servicios en línea conectados opcionales. La lista de estos servicios y los controles de usuario relacionados se muestran [aquí](https://support.office.com/article/microsoft-s-other-connected-services-92c234f1-dc91-4dc1-925d-6c90fc3816d8). Puede decidir si quiere permitir que sus usuarios finales usen estos servicios. Para obtener más información, vea [Formas en que los administradores pueden administrar servicios de los responsables de los datos en Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/manage-controller-services-office-365-proplus). En la medida en que estos servicios opcionales realicen un tratamiento de datos personales, Microsoft es el responsable de los datos para estos servicios.
 
 - **Comentarios de los usuarios**: si los usuarios envían comentarios sobre productos y servicios de Microsoft, Microsoft es el responsable de los datos de esos comentarios en la medida en que contengan datos personales. Microsoft cumplirá las solicitudes de derechos del interesado en relación con los comentarios recopilados por Microsoft (incluidos los comentarios administrados por los encargados del tratamiento secundarios de Microsoft), excepto en aquellos casos en los que Microsoft indique a los usuarios que no incluyan datos personales durante el proceso de recopilación de comentarios. Excepciones: si Microsoft indica a los usuarios que no incluyan datos personales durante el proceso de recopilación de comentarios, Microsoft se basará en esa instrucción y supondrá que no se ha proporcionado ningún dato personal. Los usuarios que hayan creado una cuenta independiente con proveedores de servicios de comentarios de terceros tendrán que realizar su solicitud de derechos del interesado directamente con esos proveedores.
 
 - **Cuenta profesional o educativa de Windows autenticada**: si su organización ha comprado licencias de Windows y los usuarios las autentican en su cuenta profesional o educativa de Microsoft, este actúa como responsable de los datos. Para más información, vea [Solicitudes del interesado de Windows para el RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-windows).
 
-- **Productos y servicios adquiridos por el usuario**: si permite que los usuarios, actuando a título individual, adquieran productos o servicios de Microsoft que usan AAD para la autenticación (como complementos de Office o aplicaciones disponibles en Microsoft Store), es posible que Microsoft sea el responsable de los datos. Para estos productos o servicios de Microsoft, los usuarios tendrán que ponerse en contacto con Microsoft directamente para iniciar una solicitud de derechos del interesado.
+- **Productos y servicios adquiridos por el usuario**: si permite que los usuarios, actuando a título individual, adquieran productos o servicios de Microsoft que usan AAD para la autenticación (como complementos de Office o aplicaciones disponibles en Microsoft Store), es posible que Microsoft sea el responsable de los datos. Para estos productos o servicios de Microsoft, los usuarios tendrán que ponerse en contacto con Microsoft directamente para iniciar una DSR.
 
 > [!IMPORTANT]
 > Si elimina un usuario habilitado mediante Azure Active Directory, el (antiguo) usuario ya no podrá iniciar sesión en los productos o servicios que usaba anteriormente con una cuenta profesional o educativa. Además, Microsoft ya no podrá autenticar al usuario en relación con una solicitud de derechos del interesado correspondiente para productos o servicios en los que Microsoft sea el responsable de los datos. Si quiere que un usuario pueda iniciar solicitudes de derechos del interesado en estos servicios, es importante que le indique que lo haga antes de eliminar la cuenta de AAD del usuario.
 
 ### <a name="personal-accounts"></a>Cuentas personales
-Si los usuarios han utilizado cuentas de Microsoft (es decir, cuentas personales) para adquirir productos y servicios de Microsoft para su propio uso y en los que Microsoft sea responsable de los datos, pueden iniciar solicitudes DSR mediante el [Panel de privacidad de Microsoft](https://account.microsoft.com/account/privacy).
+Si los usuarios han utilizado cuentas de Microsoft (es decir, cuentas personales) para adquirir productos y servicios de Microsoft para su propio uso y en los que Microsoft sea responsable de los datos, pueden iniciar solicitudes de DSR mediante el [Panel de privacidad de Microsoft](https://account.microsoft.com/account/privacy).
 
 ### <a name="third-party-products"></a>Productos de terceros
 
@@ -1887,10 +1887,10 @@ Le recomendamos que use la herramienta de solicitudes de interesado en el centro
 
 - Elimine los casos cuando se complete el proceso de investigación de solicitudes de derechos del interesado. Se quitarán todas las búsquedas de contenido y trabajos de exportación asociados al caso.
 
-Para empezar a usar casos de solicitudes de derechos del interesado, vea [Administrar solicitudes de derechos del interesado de RGPD con la herramienta de casos de DSR en el Centro de seguridad y cumplimiento de Office 365](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c).
+Para empezar a usar casos de DSR, vea [Administrar solicitudes de los interesados sobre RGPD con la herramienta de casos de DSR en el Centro de seguridad y cumplimiento de Office 365](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c).
 
 > [!IMPORTANT]
-> Un administrador de eDiscovery puede ver y administrar todos los casos de solicitudes de derechos del interesado de la organización. Para obtener más información sobre los distintos roles relacionados con eDiscovery, vea [Asignar permisos de eDiscovery a posibles miembros](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions).
+> Un administrador de eDiscovery puede ver y administrar todos los casos de DSR de la organización. Para obtener más información sobre los distintos roles relacionados con eDiscovery, vea [Asignar permisos de eDiscovery a posibles miembros](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions).
 
 ### <a name="set-up-compliance-boundaries-to-limit-the-scope-of-content-searches"></a>Configurar los límites de cumplimiento normativo para limitar el ámbito de las búsquedas de contenido
 
@@ -1917,7 +1917,7 @@ Para obtener instrucciones detalladas, consulte [Configurar los límites de cump
 
 ### <a name="use-the-office-365-audit-log-search-tool-in-dsr-investigations"></a>Usar la herramienta de búsqueda de registro de auditoría de Office 365 en investigaciones de solicitudes de interesado
 
-Los administradores de TI pueden usar la herramienta de búsqueda de registro de auditoría en el centro de cumplimiento y seguridad para los documentos de identidad, archivos y otros recursos de Office 365 que los usuarios han creado, accedido, cambiado o eliminado. Una búsqueda de actividad de este tipo puede ser útil en investigaciones de solicitud de interesado. Por ejemplo, en SharePoint Online y OneDrive para la Empresa, los eventos de auditoría se registran cuando los usuarios realizan estas actividades:
+Los administradores de TI pueden usar la herramienta de búsqueda de registro de auditoría en el centro de cumplimiento y seguridad para los documentos de identidad, archivos y otros recursos de Office 365 que los usuarios han creado, cambiado, eliminado, o a los que estos han accedido. Una búsqueda de actividad de este tipo puede ser útil en investigaciones de solicitud de interesado. Por ejemplo, en SharePoint Online y OneDrive para la Empresa, los eventos de auditoría se registran cuando los usuarios realizan estas actividades:
 
 - Acceso a un archivo
 - Modificación de un archivo
@@ -1936,7 +1936,7 @@ La siguiente tabla enumeran los cambios realizados en la Guía de solicitudes de
 |Fecha  |Sección / aplicación. |Cambio  |
 |:---------|:---------|:---------|
 |18/09/2018     |   [Whiteboard](#whiteboard)      |La vista previa de Whiteboard ya no está en vista previa y se ha publicado para disponibilidad general. Por lo tanto, se ha cambiado el nombre de la sección de vista previa de Whiteboard a "Whiteboard para PC, Surface Hub y otras plataformas"; los procedimientos para el acceso, la exportación y la eliminación de datos se han eliminado de esta sección y han sido reemplazados con un vínculo al artículo de soporte técnico de Whiteboard.|
-|08/11/2018     |    [Workplace Analytics](#workplace-analytics)     |Añadidas instrucciones paso a paso a la sección Eliminar acerca de cómo quitar a un interesado de Workplace Analytics y quitar la información sobre un interesado de un informe de Workplace Analytics.|
+|08/11/2018     |    [Workplace Analytics](#workplace-analytics)     |Se han agregado instrucciones paso a paso a la sección Eliminar acerca de cómo quitar a un interesado de Workplace Analytics y quitar la información sobre un interesado de un informe de Workplace Analytics.|
 |12/11/2018| Todo| Se han arreglado los marcadores y los vínculos a temas externos que no funcionaban.|
 |9/1/2019|[StaffHub](#staffhub)|En la sección Eliminar se ha actualizado la descripción de lo que ocurre cuando una cuenta de usuario se elimina permanentemente.|
 |8/5/2019| [Publisher](#publisher)|Contenido agregado sobre cómo responder a solicitudes del interesado sobre Publisher.|

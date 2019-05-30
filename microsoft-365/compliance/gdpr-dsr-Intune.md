@@ -1,6 +1,6 @@
 ---
 title: Solicitudes de interesados de Intune para el RGPD
-description: Guía sobre cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes poseedores de datos a encontrar y actuar en datos personales con el fin de responder a las solicitudes de derechos del titular de los datos.
+description: Guía sobre cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes responsables de los datos a encontrar y actuar en datos personales con el fin de responder a las solicitudes de DSR.
 keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -19,15 +19,15 @@ ms.locfileid: "34431451"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados de Intune para el RGPD
 
-El Reglamento de protección de datos de la UE (RGPD) ofrece derechos a las personas (que se denominan *"interesados"* en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el *poseedor de los datos* o *"poseedor"*). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos en sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, impedir su procesamiento o eliminación, o el envío en formato electrónico para transferirlos a otro poseedor de los datos. Las solicitudes formales realizadas por un interesado a un poseedor de los datos para realizar una acción en sus datos personales se denominan *solicitudes de interesado*.
+El Reglamento de protección de datos de la UE (RGPD) ofrece derechos a las personas (que se denominan *"interesados"* en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el *responsable de los datos* o *"responsable"*). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, impedir su procesamiento o eliminación, o el envío en formato electrónico para transferirlos a otro responsable. Las solicitudes formales realizadas por un interesado a un responsable para realizar una acción con sus datos personales se denominan *solicitudes de interesado*.
 
-En esta guía se explica cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes poseedores de datos a encontrar datos personales y actuar a partir de ellos para responder a solicitudes de interesado. En concreto, esto abarca cómo encontrar datos personales hospedados en la nube de Microsoft, cómo tener acceso a ellos y cómo actuar en consecuencia. Este es un breve resumen de los procedimientos descritos en esta guía:
+En esta guía se explica cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes que sean responsables de los datos a encontrar datos personales y actuar sobre ellos para responder a solicitudes de interesado. En concreto, esto abarca cómo encontrar datos personales hospedados en la nube de Microsoft, cómo tener acceso a ellos y cómo actuar en consecuencia. Este es un breve resumen de los procedimientos descritos en esta guía:
 
-1.  ***Descubrir***: use herramientas de búsqueda y descubrimiento para encontrar con facilidad datos de clientes que puedan estar sujetos a una solicitud de interesado. Tras recopilar los documentos potenciales, puede realizar una o varias delas acciones de solicitud descritas en los pasos siguientes para responder a la petición. De forma alternativa, puede determinar que la solicitud no cumple las directrices de respuesta a solicitudes de interesado.
+1.  ***Detectar***: use herramientas de búsqueda y descubrimiento para encontrar con facilidad datos de clientes que puedan estar sujetos a una solicitud del interesado. Tras recopilar los documentos potenciales, puede realizar una o varias delas acciones de solicitud descritas en los pasos siguientes para responder a la petición. De forma alternativa, puede determinar que la solicitud no cumple las directrices de respuesta a solicitudes de los interesados.
 
 2.  ***Acceder***: recupere datos personales alojados en la nube de Microsoft y, si se le pide, realice una copia que puede estar a disposición del interesado.
 
-3.  ***Corregir***: realice los cambios o implemente otras acciones solicitadas en los datos personales, si procede.
+3.  ***Rectificar***: realice los cambios o implemente otras acciones solicitadas en los datos personales, si procede.
 
 4.  ***Restringir***: restrinja el procesamiento de datos personales, quitando las licencias de varios servicios de Azure o desactivando los servicios deseados siempre que sea posible. También puede quitar los datos de la nube de Microsoft y conservarlos localmente o en otra ubicación.
 
@@ -35,18 +35,18 @@ En esta guía se explica cómo usar los productos, servicios y herramientas admi
 
 6.  ***Exportar***: enviar una copia electrónica (en un formato legible) de datos personales al interesado.
 
-Cada sección de esta guía describe los procedimientos técnicos que puede realizar una organización poseedora de datos para responder a una solicitud de interesado de datos personales en la nube de Microsoft.
+Cada sección de esta guía describe los procedimientos técnicos que puede realizar una organización responsable de los datos para responder a una solicitud del interesado de datos personales en la nube de Microsoft.
 
 <span id="_Toc511384801" class="anchor"><span id="_Toc511163872" class="anchor"><span id="_Toc511136229" class="anchor"><span id="_Toc511125162" class="anchor"><span id="_Toc511120749" class="anchor"><span id="_Toc511122656" class="anchor"><span id="_Toc508792503" class="anchor"></span></span></span></span></span></span></span>
 #### <a name="terminology"></a>Terminología
 
 A continuación se ofrecen definiciones de términos relacionados con esta guía.
 
--   *Poseedor*: la persona física o legal, autoridad pública, agencia u organismo que solo o junto a otras personas, determina los fines y medios del procesamiento de datos personales; donde los fines y los medios de dicho procesamiento están determinados por la ley de la unión o de un estado miembro, el poseedor o los criterios específicos para su nominación pueden estar proporcionados por la ley de un estado miembro o de la unión.
+-   *Responsable*: la persona física o legal, autoridad pública, agencia u organismo que solo o junto a otras personas, determina los fines y medios del tratamiento de datos personales; donde los fines y los medios de dicho tratamiento están determinados por la ley de la unión o de un estado miembro, el responsable o los criterios específicos para su nominación pueden estar proporcionados por la ley de un estado miembro o de la unión.
 
 -   *Datos personales* e *interesado*: cualquier información sobre una persona física identificada o identificable (“interesado”); una persona identificable natural es una que puede identificarse, directa o indirectamente, especialmente con referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más elementos específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona natural;
 
--   *Procesador*: persona física o legal, autoridad pública, agencia u otro organismo que trata datos personales en nombre del poseedor.
+-   *Encargado*: persona física o legal, autoridad pública, agencia u otro organismo que trata datos personales en nombre del responsable.
 
 -   *Los datos de clientes*: todos los datos, incluyendo archivos de texto, sonido, vídeos o imagen y software proporcionados a Microsoft por, o en nombre de, un cliente a través del uso del servicio empresarial. Los datos de clientes incluyen tanto (1) información de identificación personal de los usuarios finales (por ejemplo, nombres de usuario e información de contacto en Azure Active Directory) y contenido del cliente cargado o creado por clientes en servicios específicos (por ejemplo, el contenido del cliente en una cuenta de Azure Storage, contenido del cliente de Azure SQL Database, o la imagen de la máquina virtual de un cliente en Azure Virtual Machines).
 
@@ -58,7 +58,7 @@ A continuación se ofrecen definiciones de términos relacionados con esta guía
 
 Esta guía consta de dos partes:
 
-**Parte 1: Responder a solicitudes de interesados de clientes**: la primera parte de esta guía describe cómo acceder, corregir, restringir, eliminar y exportar datos desde las aplicaciones en las que se han creado. Esta sección detalla cómo ejecutar la solicitud de interesado con el contenido de cliente y también con la información identificable de los usuarios finales.
+**Parte 1: Responder a solicitudes de los interesados de clientes**: la primera parte de esta guía describe cómo acceder a los datos, corregirlos, restringirlos, eliminarlos y exportarlos desde las aplicaciones en las que se han creado. Esta sección detalla cómo ejecutar la solicitud del interesado con el contenido de cliente y también con la información de identificación personal de los usuarios finales.
 
 **Parte 2: Responder a solicitudes de interesados para registros generados por el sistema**: al usar los servicios de empresa de Microsoft, Microsoft genera información conocida como registros generados por el sistema para proporcionar el servicio. La parte 2 de esta guía explica cómo acceder, eliminar y exportar esta información para Azure.
 
@@ -90,17 +90,17 @@ Las solicitudes de interesados en una cuenta de Intune, **fuera de un determinad
 
 ### <a name="executing-dsrs-against-customer-data"></a>Ejecutar solicitudes de interesado en datos de cliente
 
-Microsoft proporciona la capacidad de acceder, eliminar y exportar determinados datos de cliente a través del Azure Portal y también directamente a través de interfaces de programación de aplicaciones (API) o interfaces de usuario (UI) ya existentes para servicios específicos (también denominados *experiencias de producto*). Los detalles al respecto de dichas experiencias de producto se describen en la documentación de referencia de sus respectivos servicios.
+Microsoft proporciona la capacidad de acceder a determinados datos de cliente, eliminarlos y exportarlos a través del Azure Portal y también directamente a través de interfaces de programación de aplicaciones (API) o interfaces de usuario (UI) ya existentes para servicios específicos (también denominados *experiencias de producto*). Los detalles al respecto de estas experiencias de producto se describen en la documentación de referencia de sus respectivos servicios.
 
 >[!Important]  
 >Los servicios compatibles con solicitudes de interesado en el producto requieren el uso directo de una interfaz de programación de aplicaciones (API) o de una interfaz de usuario (UI) del servicio, que describa las operaciones CRUD (crear, leer, actualizar y eliminar) aplicables. Por lo tanto, la ejecución de la solicitud de interesado en un servicio específico debe realizarse además con la ejecución de una solicitud de interesado en Azure Portal para completar toda la solicitud de un interesado. Consulte la documentación de referencia de los servicios específicos para obtener más detalles.
 
 <span id="_Discover" class="anchor"><span id="_Toc508792508" class="anchor"><span id="_Toc511122661" class="anchor"><span id="_Toc511120754" class="anchor"><span id="_Toc511125167" class="anchor"><span id="_Toc511136234" class="anchor"><span id="_Toc511163877" class="anchor"><span id="_Toc511384806" class="anchor"></span></span></span></span></span></span></span></span>
-### <a name="step-1-discover"></a>Paso 1: Descubrimiento
+### <a name="step-1-discover"></a>Paso 1: Detección
 
 El primer paso para responder a una solicitud de interesado consiste en encontrar los datos personales que se solicitan. Este primer paso, encontrar y revisar los datos personales, le ayudará a determinar si una solicitud de interesado cumple los requisitos de su organización para respetarla o rechazarla. Por ejemplo, después de encontrar y revisar los datos personales, puede determinar que la solicitud no cumple los requisitos de su organización porque al llevarse a cabo puede afectar negativamente los derechos y libertades de terceros.
 
-Tras encontrar los datos, puede realizar la acción específica para satisfacer la solicitud interesado. Vea los siguientes temas para obtener más detalles:
+Tras encontrar los datos, puede realizar la acción específica para satisfacer la solicitud del interesado. Vea los siguientes temas para obtener más detalles:
 - [Recopilación de datos](https://docs.microsoft.com/intune/privacy-data-collect)
 - [Procesamiento y almacenamiento de datos](https://docs.microsoft.com/intune/privacy-data-store-process)
 - [Ver datos personales](https://docs.microsoft.com/intune/privacy-data-view-correct#view-personal-data)
@@ -121,17 +121,17 @@ Al proporcionar una copia al interesado, deberá quitar o censurar información 
 <span id="_Toc511384811" class="anchor"><span id="_Toc511163882" class="anchor"><span id="_Toc511136239" class="anchor"><span id="_Toc511125172" class="anchor"><span id="_Toc511120759" class="anchor"><span id="_Toc511122666" class="anchor"></span></span></span></span></span></span>
 #### <a name="service-specific-interfaces"></a>Interfaces específicas del servicio
 
-Microsoft Intune permite [encontrar datos de clientes](#step-1-discover) directamente a través de interfaces de usuario (IU) o de interfaces de programación de aplicaciones (API) ya existentes.
+Microsoft Intune permite [detectar datos de clientes](#step-1-discover) directamente a través de interfaces de usuario (IU) o de interfaces de programación de aplicaciones (API) ya existentes.
 
 <span id="_Sway" class="anchor"><span id="_Toc508792516" class="anchor"><span id="_Toc511122667" class="anchor"><span id="_Toc511120760" class="anchor"><span id="_Toc511125173" class="anchor"><span id="_Toc511136240" class="anchor"><span id="_Toc511163883" class="anchor"><span id="_Toc511384812" class="anchor"></span></span></span></span></span></span></span></span>
-### <a name="step-3-rectify"></a>Paso 3: Corregir
+### <a name="step-3-rectify"></a>Paso 3: Rectificar
 
 Si un interesado le ha solicitado rectificar los datos personales que se encuentran en los datos de su organización, su organización y usted deberán decidir si es adecuado cursar dicha solicitud. Rectificar los datos puede requerir llevar a cabo acciones como editar, censurar o eliminar datos personales de un documento u otro tipo de elemento. 
 
 <span id="_Toc511384813" class="anchor"><span id="_Toc511163884" class="anchor"><span id="_Toc511136241" class="anchor"><span id="_Toc511125174" class="anchor"><span id="_Toc511120761" class="anchor"><span id="_Toc511122668" class="anchor"></span></span></span></span></span></span>
 
 
- En tanto que procesador datos, Microsoft no ofrece la posibilidad de corregir los registros generados por el sistema, ya que reflejan actividades reales y constituyen un registro histórico de los eventos que han tenido lugar en los servicios Microsoft. En cuanto a Intune, los administradores no pueden actualizar la información específica de un dispositivo o una aplicación. Si un usuario final quiere corregir algún dato personal (por ejemplo, el nombre del dispositivo), deberá hacerlo directamente en el dispositivo. Estos cambios se sincronizarán la próxima vez que el usuario se conecte a Intune.
+ En tanto que encargado del tratamiento, Microsoft no ofrece la posibilidad de corregir los registros generados por el sistema, ya que reflejan actividades reales y constituyen un registro histórico de los eventos que han tenido lugar en los servicios Microsoft. En cuanto a Intune, los administradores no pueden actualizar la información específica de un dispositivo o una aplicación. Si un usuario final quiere corregir algún dato personal (por ejemplo, el nombre del dispositivo), deberá hacerlo directamente en el dispositivo. Estos cambios se sincronizarán la próxima vez que el usuario se conecte a Intune.
 
 ### <a name="step-4-restrict"></a>Paso 4: Restringir
 

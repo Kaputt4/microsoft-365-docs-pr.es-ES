@@ -84,7 +84,7 @@ El contacto de privacidad del cliente puede ser una persona de la organización,
 
 En resumen, Office 365 pide a los clientes que sigan este procedimiento para recibir las ventajas de nuestros procesos de notificación de infracciones:
 
--   Decidir un contacto para recibir notificaciones por correo electrónico relacionadas con infracciones de datos personales. Este contacto tiene que conocer los requisitos del controlador en virtud del RGPD y necesita estar preparado para ponerse en contacto con el procesador de datos de la organización y, posiblemente, con la DPA poco después de recibir la notificación. Los administradores de espacios empresariales también recibirán notificaciones de infracciones y, de forma similar, necesitan conocer los requisitos del controlador en virtud del RGPD.
+-   Decidir un contacto para recibir notificaciones por correo electrónico relacionadas con vulneraciones de datos personales. Este contacto tiene que conocer los requisitos del responsable en virtud del RGPD y necesita estar preparado para ponerse en contacto con el encargado del tratamiento de la organización y, posiblemente, con la DPA poco después de recibir la notificación. Los administradores de espacios empresariales también recibirán notificaciones de vulneraciones y, de forma similar, necesitan conocer los requisitos del responsable en virtud del RGPD.
 
 -   Especifique la dirección de correo electrónico del contacto de privacidad en el portal de AAD. Si no se proporciona información sobre el contacto de privacidad global, Microsoft solo notificará al administrador de espacios empresariales.
 - <!-- note that there is missing text clipped from the original Word doc -->

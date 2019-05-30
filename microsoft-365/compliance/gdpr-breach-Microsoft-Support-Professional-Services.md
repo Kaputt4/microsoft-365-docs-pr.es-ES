@@ -1,6 +1,6 @@
 ---
 title: Soporte técnico y servicios profesionales de Microsoft, y notificación de infracciones según el RGPD
-description: Se explica cómo el Soporte técnico y los servicios profesionales de Microsoft le protegen contra una infracción de datos personales y cómo Microsoft responde y le notifica si se produce una infracción.
+description: Se explica cómo el soporte técnico y los servicios profesionales de Microsoft le protegen contra una vulneración de datos personales y cómo Microsoft responde y le notifica si se produce una vulneración.
 keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -31,7 +31,7 @@ Los Servicios profesionales de Microsoft se comprometen a proteger a sus cliente
 
 ### <a name="scope--limits-of-data-protection-incident-response-process"></a>Ámbito y límites del proceso de respuesta ante incidentes de protección de datos
 
-Nuestro proceso de notificación de infracciones de datos personales se inicia cuando declaramos que se produce una [infracción de datos personales].
+Nuestro proceso de notificación de vulneraciones de datos personales se inicia cuando declaramos que se produce una [vulneración de datos personales].
 
 Para declararla, el equipo de respuesta ante incidentes de protección de datos de Microsoft necesita determinar si un incidente de protección de datos según la definición anterior se ha producido realmente o con una gran probabilidad. La declaración se producirá en cuanto la información correspondiente esté disponible para determinar si se produjo un incidente de protección de datos.
 
@@ -85,9 +85,9 @@ Cuando los Servicios profesionales de Microsoft declaran un incidente de protecc
 
 Después de declararse un incidente de protección de datos, se produce el proceso de notificación lo antes posible, mientras se consideran los riesgos de seguridad de actuar rápidamente. Para garantizar que la notificación se pueda entregar correctamente, es responsabilidad del cliente comprobar que la información del contacto administrativo de cada suscripción, cuenta y portal de servicios en línea correspondiente sea correcta. Aunque el objetivo es ofrecer a los clientes afectados un aviso preciso, procesable y puntual, para cumplir con el compromiso de notificación en un plazo de 72 horas, es posible que en la notificación inicial no se incluyan todos los detalles, ya que puede que no estén disponibles durante las fases iniciales de un incidente de protección de datos. Además, puede que Microsoft necesite retener parte de la información debido a las circunstancias del incidente de protección de datos. Por ejemplo, puede que sea necesario retener detalles si el acto de enviar una notificación aumenta el riesgo para otros clientes o interfiere con la capacidad de Microsoft o de los organismos de seguridad de atrapar a un actor malintencionado.
 
-En su capacidad de procesador de datos, Microsoft reconoce que los clientes son responsables de determinar si la notificación es adecuada y, en ese caso, notificar a la autoridad de protección de datos (DPA) competente y a los propios interesados del cliente de cualquier infracción de datos personales. Los Servicios profesionales de Microsoft trabajarán para ofrecer a los clientes la información necesaria para continuar con un aviso en estas circunstancias.
+En su capacidad de encargado del tratamiento, Microsoft reconoce que los clientes son responsables de determinar si la notificación es adecuada y, en ese caso, notificar a la autoridad de protección de datos (DPA) competente y a los propios interesados del cliente de cualquier vulneración de datos personales. Los Servicios profesionales de Microsoft trabajarán para ofrecer a los clientes la información necesaria para continuar con un aviso en estas circunstancias.
 
-Al ofrecer un aviso a los clientes de una infracción de datos personales, Microsoft incluirá la siguiente información, si corresponde y se conoce:
+Al ofrecer un aviso a los clientes de una vulneración de datos personales, Microsoft incluirá la siguiente información, si corresponde y se conoce:
 
 -   Naturaleza de la infracción
 
@@ -99,7 +99,7 @@ Al ofrecer un aviso a los clientes de una infracción de datos personales, Micro
 
 -   Volumen de los registros de datos personales afectados o expuestos, si se conocen
 
--   Datos del subencargado o proveedor, si uno de ellos está relacionado con la infracción
+-   Datos del subencargado o proveedor, si uno de ellos está relacionado con la vulneración
 
 #### <a name="learn-more"></a>Más información
 Obtenga más información acerca de los Servicios profesionales de Microsoft en el Centro de confianza de Microsoft (<https://www.microsoft.com/trustcenter/professional-services>). 

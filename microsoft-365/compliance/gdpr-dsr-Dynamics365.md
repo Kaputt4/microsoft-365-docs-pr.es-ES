@@ -1,6 +1,6 @@
 ---
-title: Solicitudes del interesado de Microsoft Dynamics 365 para el RGPD
-description: Guía sobre cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes poseedores de datos a encontrar y actuar en datos personales con el fin de responder a las solicitudes de derechos del titular de los datos.
+title: Solicitudes del interesado de Microsoft Dynamics 365 sobre el RGPD
+description: Guía sobre cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes responsables de los datos a encontrar y actuar en datos personales con el fin de responder a las solicitudes de DSR.
 keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -18,11 +18,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "34431761"
 ---
-# <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Solicitudes del titular de los datos de Microsoft Dynamics 365 para el RGPD
+# <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Solicitudes del interesado de Microsoft Dynamics 365 sobre el RGPD
 
-El Reglamento de protección de datos de la UE (RGPD) ofrece derechos a las personas (que en el reglamento se denominan *“titulares de los datos”*) para procesar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el *poseedor de los datos* o *“poseedor”*). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los titulares de los datos derechos específicos sobre sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, la restricción de su procesamiento o eliminación, así como el envío en formato electrónico para su transferencia a otro poseedor de los datos. Las solicitudes formales realizadas por un titular de los datos a un poseedor de los datos para realizar una acción en sus datos personales se denominan en este documento *solicitudes de derechos del titular de los datos* o solicitudes del titular de los datos.<span id="_Toc510437912" class="anchor"><span id="_Toc508792504" class="anchor"></span></span>
+El Reglamento de protección de datos de la UE (RGPD) ofrece derechos a las personas (que en el reglamento se denominan *"interesados"*) para tratar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el *responsable de los datos* o *"responsable"*). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, la restricción de su tratamiento o eliminación, así como el envío en formato electrónico para su transferencia a otro responsable de los datos. Las solicitudes formales realizadas por un interesado a un responsable de los datos para realizar una acción en sus datos personales se denominan en este documento *solicitudes de derechos de los interesados* o solicitudes de DSR.<span id="_Toc510437912" class="anchor"><span id="_Toc508792504" class="anchor"></span></span>
 
-En esta guía, se explica cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes poseedores de datos a encontrar y actuar sobre datos personales con el fin responder a las solicitudes de derechos del titular de los datos. En concreto, se explica cómo encontrar, obtener acceso y actuar sobre datos personales que residen en la nube de Microsoft. Aquí encontrará un resumen rápido de los procedimientos descritos en esta guía:
+En esta guía, se explica cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes responsables de los datos a encontrar y actuar sobre datos personales con el fin responder a las solicitudes de DSR. En concreto, se explica cómo encontrar, obtener acceso y actuar sobre datos personales que residen en la nube de Microsoft. Aquí encontrará un resumen rápido de los procedimientos descritos en esta guía:
 
 1. ***Detección: use herramientas de búsqueda y detección para encontrar con facilidad datos de clientes que puedan ser el objeto de una solicitud de derechos del titular de los datos. Después de recopilar los documentos que puedan ser el objeto de una solicitud, puede realizar una o varias de las acciones de solicitud de derechos del titular de los datos descritas en los pasos siguientes para responder a la petición. Como alternativa, puede determinar que la solicitud no cumple las directrices de respuesta a solicitudes de derechos del titular de los datos.
 
@@ -36,7 +36,7 @@ En esta guía, se explica cómo usar los productos, servicios y herramientas adm
 
 6. ***Exportación: envíe una copia electrónica (en un formato de lectura mecánica) de datos personales al titular de los datos.
 
-En cada sección de esta guía, se describen los procedimientos técnicos que puede realizar una organización poseedora de los datos para responder a una solicitud de derechos del titular de los datos personales en la nube de Microsoft.
+En cada sección de esta guía, se describen los procedimientos técnicos que puede realizar una organización responsable de los datos para responder a una solicitud de DSR personales en la nube de Microsoft.
 
 ### <a name="gdpr-terminology"></a>Terminología del RGPD
 
@@ -52,40 +52,40 @@ Estas son las definiciones de los términos relacionados con esta guía:
 
 - *Registros* *generados por el sistema: registros y datos relacionados generados por Microsoft que permiten a Microsoft prestar servicios empresariales a los usuarios. Los registros generados por el sistema contienen principalmente datos anonimizados parcialmente, como identificadores únicos (por lo general, un número generado por el sistema que no se puede usar para identificar a una persona, pero que se usa para prestar servicios empresariales a los usuarios). Los registros generados por el sistema también pueden contener información identificable sobre los usuarios finales, como un nombre de usuario.  
 
-### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>Modo en que esta guía puede servir para cumplir sus responsabilidades de poseedor
+### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>Modo en que esta guía puede servir para cumplir sus responsabilidades de responsable
 
-En la guía, dividida en dos partes, se describe cómo usar los productos, servicios y herramientas administrativas de Dynamics 365 para ayudarle a encontrar y actuar en datos en la nube de Microsoft en respuesta a las solicitudes realizadas por los derechos del titular de los datos que deciden ejercer sus derechos según el RGPD. La primera parte trata los datos personales que se incluyen en los datos de clientes, seguido de una parte que trata otros datos personales anonimizados parcialmente capturados en los registros generados por el sistema.
+En la guía, dividida en dos partes, se describe cómo usar los productos, servicios y herramientas administrativas de Dynamics 365 para ayudarle a encontrar y actuar en datos en la nube de Microsoft en respuesta a las solicitudes realizadas por los interesados que deciden ejercer sus derechos según el RGPD. La primera parte trata los datos personales que se incluyen en los datos de clientes, seguido de una parte que trata otros datos personales anonimizados parcialmente capturados en los registros generados por el sistema.
 
-**Parte 1: Responder a solicitudes de derechos del titular de los datos personales incluidos en datos de clientes.** En la parte 1 de esta guía, se explica cómo obtener acceso, rectificar, restringir, eliminar y exportar datos personales de aplicaciones de Dynamics 365 (software como servicio), que se procesan como parte de los datos de clientes que proporcionó el servicio en línea.
+**Parte 1: Responder a solicitudes de derechos de los interesados sobre datos personales incluidos en datos de clientes.** En la parte 1 de esta guía, se explica cómo obtener acceso, rectificar, restringir, eliminar y exportar datos personales de aplicaciones de Dynamics 365 (software como servicio), que se tratan como parte de los datos de clientes que proporcionó el servicio en línea.
 
-**Parte 2: Responder a solicitudes de derechos del titular de los datos para anonimizarlos parcialmente.** Al usar los servicios empresariales de Dynamics 365, Microsoft genera información (denominada en este documento *registros generados por el sistema*) para la prestación del servicio, que está limitada a los datos de uso de los usuarios finales que permiten identificar sus acciones en el sistema. Aunque estos datos no se pueden atribuir a un titular de los datos específico sin el uso de información adicional, algunos pueden considerarse datos personales según el RGPD. En la parte 2 de esta guía, se explica cómo obtener acceso, eliminar y exportar registros generados por el sistema producidos por Dynamics 365.
+**Parte 2: Responder a solicitudes de derechos de los interesados para anonimizarlos parcialmente.** Al usar los servicios empresariales de Dynamics 365, Microsoft genera información (denominada en este documento *registros generados por el sistema*) para la prestación del servicio, que está limitada a los datos de uso de los usuarios finales que permiten identificar sus acciones en el sistema. Aunque estos datos no se pueden atribuir a un interesado específico sin el uso de información adicional, algunos pueden considerarse datos personales según el RGPD. En la parte 2 de esta guía, se explica cómo obtener acceso, eliminar y exportar registros generados por el sistema producidos por Dynamics 365.
 
-### <a name="preparing-for-data-subject-rights-investigations"></a>Preparar las investigaciones de derechos del titular de los datos
+### <a name="preparing-for-data-subject-rights-investigations"></a>Preparar las investigaciones de derechos de los interesados
 
-Cuando los titulares de los datos ejerzan sus derechos y realicen solicitudes, tenga en cuenta los siguientes puntos:
+Cuando los interesados ejerzan sus derechos y realicen solicitudes, tenga en cuenta los siguientes puntos:
 
-- Identifique correctamente la persona y el rol (por ejemplo, empleado, cliente, proveedores etc.) con la información que el titular de los datos le proporcionó como parte de su solicitud. Esta información podría ser un nombre, un id. de empleado o un número de cliente, o bien otro identificador.
+- Identifique correctamente la persona y el rol (por ejemplo, empleado, cliente, proveedores, etc.) con la información que el interesado le proporcionó como parte de su solicitud. Esta información podría ser un nombre, un id. de empleado o un número de cliente, o bien otro identificador.
 
 - Anote la fecha y hora de la solicitud. (Dispone de 30 días para completar la solicitud).
 
-- Confirme que la solicitud cumple con los requisitos de su organización para aceptar o rechazar una solicitud de titular de los datos. Por ejemplo, tiene que asegurarse de que, al ejecutar la solicitud, no se entre en conflicto con otras obligaciones legales, financieras o reglamentarias que tenga, ni infrinja los derechos o libertades de otros.
+- Confirme que la solicitud cumple con los requisitos de su organización para aceptar o rechazar una solicitud de interesado. Por ejemplo, tiene que asegurarse de que, al ejecutar la solicitud, no se entre en conflicto con otras obligaciones legales, financieras o reglamentarias que tenga, ni infrinja los derechos o libertades de otros.
 
 - Asegúrese de que posee la información relacionada con la solicitud.
 
 ## <a name="part-1-responding-to-data-subject-rights-requests-for-personal-data-included-in-customer-data"></a>Parte 1: Responder a las solicitudes de interesados relativas a datos personales incluidos en los datos de clientes
 
-En los artículos siguientes, encontrará información útil para prepararse y responder a solicitudes de derechos del titular de los datos personales incluidos en los datos de clientes procesados en Dynamics 365. Es importante indicar que los datos personales podrían estar presentes en otras categorías de datos procesados por Microsoft durante la prestación del servicio de una suscripción de servicios en línea, como datos del administrador o datos de soporte técnico definidos en la Declaración de privacidad de Microsoft. Este documento se limita a asistirle en el proceso de detección y administración de solicitudes de derechos del titular de los datos que afecten a los datos personales presentes en los datos de clientes proporcionó a Dynamics 365.
+En los artículos siguientes, encontrará información útil para prepararse y responder a solicitudes de DSR sobre datos personales incluidos en los datos de clientes tratados en Dynamics 365. Es importante indicar que los datos personales podrían estar presentes en otras categorías de datos tratados por Microsoft durante la prestación del servicio de una suscripción de servicios en línea, como datos del administrador o datos de soporte técnico definidos en la Declaración de privacidad de Microsoft. Este documento se limita a asistirle en el proceso de detección y administración de solicitudes de DSR que afecten a los datos personales presentes en los datos de clientes proporcionó a Dynamics 365.
 
-Dynamics 365 es un servicio en línea que ofrece varias funciones de procesamiento de datos como software como servicio (SaaS). Como tal, Dynamics 365 ofrece una amplia variedad de funciones cuya intención es procesar una colección de datos diversa, que podrían variar en naturaleza, finalidad u otros atributos específicos, como datos de ventas, transacciones, operaciones financieras, información de recursos humanos, etc. En virtud de esta diversidad, Dynamics 365 ofrece distintos formularios, campos, esquemas, puntos de conexión y lógicas para procesar datos de cliente, que también se reflejan en las distintas formas en que podrían procesarse las solicitudes de derechos del titular de los datos en cada aplicación. Cuando las aplicaciones de Dynamics 365 ofrezcan distintas formas de procesar solicitudes de derechos del titular de los datos específicas, las indicaremos en esta guía señalando las descripciones técnicas ofrecidas por cada aplicación.
+Dynamics 365 es un servicio en línea que ofrece varias funciones de procesamiento de datos como software como servicio (SaaS). Como tal, Dynamics 365 ofrece una amplia variedad de funciones cuya intención es procesar una colección de datos diversa, que podrían variar en naturaleza, finalidad u otros atributos específicos, como datos de ventas, transacciones, operaciones financieras, información de recursos humanos, etc. En virtud de esta diversidad, Dynamics 365 ofrece distintos formularios, campos, esquemas, puntos de conexión y lógicas para procesar datos de cliente, que también se reflejan en las distintas formas en que podrían tratarse las DSR en cada aplicación. Cuando las aplicaciones de Dynamics 365 ofrezcan distintas formas de tratar solicitudes DSR específicas, las indicaremos en esta guía señalando las descripciones técnicas ofrecidas por cada aplicación.
 
 ### <a name="dynamics-365"></a>Dynamics 365
 #### <a name="finding-customer-data"></a>Buscar los datos de cliente
 
-El primer paso para responder a una solicitud de derechos del titular de los datos es buscar e identificar los datos de cliente que sean el objeto de la solicitud.
+El primer paso para responder a una solicitud de derechos del interesado es buscar e identificar los datos de cliente que sean el objeto de la solicitud.
 
-Clasificar correctamente los datos de clientes resulta esencial para trabajar con datos personales en las aplicaciones empresariales de Dynamics 365 for Customer Engagement. Dynamics 365 for Customer Engagement ofrece flexibilidad para crear una extensión de aplicación en torno a la clasificación de datos. Una clasificación adecuada le permitirá identificar información como datos personales y, por lo tanto, permite buscarlos y recuperarlos al responder a solicitudes del titular de los datos. También puede facilitar el cumplimiento de requisitos legales y reglamentarios relacionados con la recopilación y el tratamiento de datos personales.
+Clasificar correctamente los datos de clientes resulta esencial para trabajar con datos personales en las aplicaciones empresariales de Dynamics 365 for Customer Engagement. Dynamics 365 for Customer Engagement ofrece flexibilidad para crear una extensión de aplicación en torno a la clasificación de datos. Una clasificación adecuada le permitirá identificar información como datos personales y, por lo tanto, permite buscarlos y recuperarlos al responder a solicitudes del interesado. También puede facilitar el cumplimiento de requisitos legales y reglamentarios relacionados con la recopilación y el tratamiento de datos personales.
 
-Microsoft proporciona funciones que le ayudan a responder a solicitudes de derechos del titular de los datos y, por lo tanto, a obtener acceso a datos de clientes. Pero es su responsabilidad garantizar que los datos personales se clasifiquen y organicen correctamente.
+Microsoft proporciona funciones que le ayudan a responder a solicitudes de derechos de los interesados y, por lo tanto, a obtener acceso a datos de clientes. Pero es su responsabilidad garantizar que los datos personales se clasifiquen y organicen correctamente.
 
 <span id="_Toc511225657" class="anchor"></span>***Dynamics 365 for Customer Engagement*** le ofrece varios métodos de buscar datos personales en registros: Búsqueda avanzada, Búsqueda por relevancia y Búsqueda de registros. Todas estas funciones le permiten identificar (encontrar) datos personales.
 
@@ -136,11 +136,11 @@ Además, para Dynamics 365 for Marketing, se proporciona una [API dedicada](http
 
 Los datos de clientes en ***Dynamics 365 for Finance and Operations*** se pueden exportar con las completas funciones de exportación de entidades. Con [*Entidades de integración y administración de datos*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity), el administrador del espacio empresarial puede usar las entidades proporcionadas, crear entidades o ampliar las entidades de una exportación de datos personales repetible a Excel, o bien a otros formatos comunes con [*Trabajos de importación y exportación de datos*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job).  Como alternativa, muchas listas se pueden exportar a un archivo estático de Excel para facilitar una solicitud de portabilidad de datos.  Cuando los datos del cliente se exportan a Excel, puede editar los datos personales que se incluirán en la solicitud de portabilidad y, después, guardar el archivo con un formato de lectura mecánica de uso habitual, como .csv o .xml. También puede usar el *Informe de búsqueda de personas* para proporcionar al interesado aquellos datos que clasificó como personales. 
 
-En ***Dynamics 365 Business Central***, puede usar dos características para proporcionar una copia de los datos del cliente a un titular de los datos:
+En ***Dynamics 365 Business Central***, puede usar dos características para proporcionar una copia de los datos del cliente a un interesado:
 
 Puede exportar los datos del cliente a un archivo de Excel. En Excel puede editar los datos del cliente que se incluirán en la solicitud de portabilidad y guardarlo en un formato de lectura mecánica de uso habitual, como .csv o .xml. Para obtener más información, vea [Exportar los datos profesionales a Excel.](https://docs.microsoft.com/es-ES/dynamics365/business-central/about-export-data)
 
-En ***Dynamics 365 for Talent***, puede usar el [Informe de búsqueda de personas extendido](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-extend-person-search-report) para recopilar información relacionada con una solicitud de copia de los datos personales del titular de los datos.
+En ***Dynamics 365 for Talent***, puede usar el [Informe de búsqueda de personas extendido](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-extend-person-search-report) para recopilar información relacionada con una solicitud de copia de los datos personales del interesado.
 
 ### <a name="rectifying-customer-data"></a>Rectificar los datos de cliente
 
@@ -170,29 +170,29 @@ Para editar de forma masiva y rápidamente varios registros de Business Central,
 #### <a name="brief-note-about-modifying-entries-in-business-transactions"></a>Nota breve sobre cómo modificar las entradas de las transacciones comerciales
 Los registros transaccionales (como entradas generales, de cliente y del libro de retención de impuestos) son esenciales para garantizar la integridad de un sistema de planeamiento de recursos empresariales. Los datos personales que pertenecen a una transacción financiera (o de otro tipo) se mantienen “tal cual” con fines de cumplimiento con leyes financieras (por ejemplo, leyes tributarias), prevención del fraude (como una traza de auditoría de seguridad) o con certificaciones del sector. Por lo tanto, Dynamics 365 for Finance and Operations y Dynamics 365 Business Central restringen la modificación de datos en esos registros.
 
-Si almacena datos personales en registros de transacciones empresariales, la única forma de corregir, eliminar o restringir el procesamiento de datos personales para aceptar una solicitud del titular de los datos es usar las [funciones de personalización](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index) de Dynamics 365 Business Central. La [](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)decisión de aceptar una solicitud del titular de los datos de modificación, así como su implementación posterior, es su responsabilidad.
+Si almacena datos personales en registros de transacciones empresariales, la única forma de corregir, eliminar o restringir el tratamiento de datos personales para aceptar una solicitud del interesado es usar las [funciones de personalización](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index) de Dynamics 365 Business Central. La [](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)decisión de aceptar una solicitud del interesado de modificación, así como su implementación posterior, es su responsabilidad.
 
-### <a name="restricting-the-processing-of-customer-data"></a>Restringir el procesamiento de datos de cliente
+### <a name="restricting-the-processing-of-customer-data"></a>Restringir el tratamiento de datos de cliente
 
-Al recibir la solicitud de un titular de los datos para restringir el procesamiento de datos de clientes, puede extraer fácilmente los datos de clientes afectados desde servicio en línea y almacenarlos en un contenedor separado (es decir, un almacenamiento local o un servicio web separado con funciones de aislamiento de datos) aislado de las funciones de procesamiento ofrecidas por cualquier aplicación de nube.
+Al recibir la solicitud de un interesado para restringir el tratamiento de datos de clientes, puede extraer fácilmente los datos de clientes afectados desde servicio en línea y almacenarlos en un contenedor separado (es decir, un almacenamiento local o un servicio web separado con funciones de aislamiento de datos) aislado de las funciones de tratamiento ofrecidas por cualquier aplicación de nube.
 
-***Dynamics 365 Business Central*** ofrece un mecanismo alternativo, como el bloque de procesamiento de datos, donde se permite a los usuarios bloquear datos específicos en el registro del titular de los datos. Para obtener más información, vea [Restringir el procesamiento de datos de un titular de los datos](https://docs.microsoft.com/dynamics365/business-central/admin-responding-to-requests-about-personal-data#restrict-data-processing-for-a-data-subject). Cuando un registro se marca como bloqueado, Dynamics 365 Business Central dejará de procesar los datos de cliente de ese titular de los datos. No se pueden crear transacciones que usen un registro bloqueado; por ejemplo, no puede crear una factura para un cliente cuando el cliente o el comercial están bloqueados.
+***Dynamics 365 Business Central*** ofrece un mecanismo alternativo, como el bloque de tratamiento de datos, donde se permite a los usuarios bloquear datos específicos en el registro del interesado. Para obtener más información, vea [Restringir el tratamiento de datos de un interesado](https://docs.microsoft.com/dynamics365/business-central/admin-responding-to-requests-about-personal-data#restrict-data-processing-for-a-data-subject). Cuando un registro se marca como bloqueado, Dynamics 365 Business Central dejará de tratar los datos de cliente de ese interesado. No se pueden crear transacciones que usen un registro bloqueado; por ejemplo, no puede crear una factura para un cliente cuando el cliente o el comercial están bloqueados.
 
 ### <a name="deleting-customer-data"></a>Eliminar datos de cliente
 
-Si un titular de los datos le pide que elimine sus datos de cliente, hay varias formas de hacerlo:
+Si un interesado le pide que elimine sus datos de cliente, hay varias formas de hacerlo:
 
 -   Con la edición masiva de varios registros de Dynamics 365, puede usar el complemento de Microsoft Office para exportar datos a Microsoft Excel, realizar los cambios y, después, importar esos datos modificados desde Excel el servicio en línea.
 
--   Puede eliminar los datos de cliente almacenados en cualquier campo; para hacerlo, busque los datos que quiera eliminar y, elimine de forma manual el elemento de datos que contenga los datos de cliente de destino. Por ejemplo, puede usar una eliminación permanente en el registro del contacto que represente el titular de los datos y otros registros que contengan datos personales
+-   Puede eliminar los datos de cliente almacenados en cualquier campo; para hacerlo, busque los datos que quiera eliminar y, elimine de forma manual el elemento de datos que contenga los datos de cliente de destino. Por ejemplo, puede usar una eliminación permanente en el registro del contacto que represente el interesado y otros registros que contengan datos personales
 
 Además, en Dynamics 365 Marketing, al eliminar un contacto, se asegurará de que se quiten también los datos de interacciones con información personal. Para cualquier entidad o campo personalizado, necesita personalizar el sistema para asegurarse de que se eliminen todos los datos de cliente de los registros relacionados, o bien que se desvinculen del registro del contacto para que pueda quitarse toda la información personal. Más información: [Guía para desarrolladores (Marketing)](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/marketing-developer-guide).
 
-***Dynamics 365 Customer Service Insights*** también ofrece a las organizaciones funcionalidades para [borrar los datos del cliente](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-delete).
+***Dynamics 365 Customer Service Insights*** también ofrece a las organizaciones funcionalidades para [eliminar los datos del cliente](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-delete).
 
 Como alternativa, en ***Dynamics 365 for Finance and Operations***, puede usar [*herramientas de personalización*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page) para borrar o modificar datos de cliente.
 
-En ***Dynamics 365 Business Central***, cuando un titular de los datos le pide que elimine sus datos personales y estos se incluyen en los datos de cliente, hay varias formas de procesar la solicitud:
+En ***Dynamics 365 Business Central***, cuando un interesado le pide que elimine sus datos personales y estos se incluyen en los datos de cliente, hay varias formas de tratar la solicitud:
 
 -   Para editar de forma masiva rápidamente varios registros de Business Central, puede exportar los datos a Excel con el [complemento de Excel de Business Central](https://docs.microsoft.com/es-ES/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) para eliminar varios registros y, después, puede publicar esos cambios desde Excel en Business Central. Para obtener más información, vea [Exportar sus datos empresariales a Excel](https://docs.microsoft.com/es-ES/dynamics365/business-central/about-export-data).
 
@@ -214,7 +214,7 @@ Para ***Dynamics 365 Customer Service Insights***, [exporte los datos del client
 
 <span id="_Toc511225669" class="anchor"></span>***Dynamics 365 for Finance and Operations*** ofrece [Entidades de integración y administración de datos](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity), que permiten a las entidades proporcionadas, las nuevas entidades o las entidades extendidas exportar datos personales de forma repetida a Excel o a otros formatos comunes con [Trabajos de importación y exportación de datos](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job).  Como alternativa, muchas listas se pueden exportar a un archivo estático de Excel para facilitar una solicitud de portabilidad de datos.  Cuando los datos de cliente se exportan a Excel de esta forma, puede editar los datos personales que se incluirán en la solicitud de portabilidad y, después, guardar el archivo con un formato de lectura mecánica de uso habitual, como .csv o .xml.
 
-Tanto Dynamics 365 for Finance and Operations como ***Dynamics 365 for Talent*** ofrecen la característica “Informe de búsqueda de personas” para proporcionar al titular de los datos la información que clasificó como datos personales. 
+Tanto Dynamics 365 for Finance and Operations como ***Dynamics 365 for Talent*** ofrecen la característica "Informe de búsqueda de personas" para proporcionar al interesado la información que clasificó como datos personales. 
 
 - <span id="_Toc511225670" class="anchor"></span>***Dynamics 365 Business Central*** ofrece estas características:
 
@@ -224,11 +224,11 @@ Puede exportar los datos del cliente a un archivo de Excel. En Excel puede edita
 
 ### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
 
-<span id="_Toc511166412" class="anchor"></span>Como Microsoft Social Engagement procesa datos personales que podían encontrarse en datos de cliente y contenido social, esta aplicación ofrece una forma única de procesar solicitudes de derechos del titular de los datos, ya que está relacionada con los datos personales recuperados de redes sociales. El contenido social está compuesto por contenido público recopilado de redes sociales (como Twitter, Facebook y YouTube) y datos indexados o servicios de agregación de datos en respuesta a consultas de búsqueda de clientes ejecutadas en Microsoft Social Engagement. El contenido social no son datos de cliente. Las restricciones adicionales de procesamiento, uso y almacenamiento de contenido social se describen en los Términos de Microsoft Online Services.
+<span id="_Toc511166412" class="anchor"></span>Como Microsoft Social Engagement trata datos personales que podían encontrarse en datos de cliente y contenido social, esta aplicación ofrece una forma única de tratar solicitudes de DSR, ya que está relacionada con los datos personales recuperados de redes sociales. El contenido social está compuesto por contenido público recopilado de redes sociales (como Twitter, Facebook y YouTube) y datos indexados o servicios de agregación de datos en respuesta a consultas de búsqueda de clientes ejecutadas en Microsoft Social Engagement. El contenido social no son datos de cliente. Las restricciones adicionales de tratamiento, uso y almacenamiento de contenido social se describen en los Términos de Microsoft Online Services.
 
 ### <a name="finding-personal-data"></a>Buscar datos personales
 
-El primer paso para responder a una solicitud de titular de los datos es buscar e identificar los datos personales que son el objeto de la solicitud. Microsoft Social Engagement almacena los datos siguientes:
+El primer paso para responder a una solicitud de interesado es buscar e identificar los datos personales que son el objeto de la solicitud. Microsoft Social Engagement almacena los datos siguientes:
 
 #### <a name="for-social-media-users"></a>Para usuarios de redes sociales
 
@@ -246,7 +246,7 @@ El primer paso para responder a una solicitud de titular de los datos es buscar 
 
 - Nombres de usuario en Power BI, si su organización usa el [Paquete de contenido de Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) para Power BI para analizar el rendimiento del equipo en las redes sociales.
 
-El primer paso (buscar y revisar los datos personales que sean objeto de la solicitud) le permitirá determinar si la solicitud del titular de los datos cumple con los requisitos de la organización para aceptarla o rechazarla. Por ejemplo, después de identificar y revisar los datos personales, puede determinar que la solicitud no cumple con los requisitos de su organización porque podría afectar de forma negativa a los derechos y libertades de otros.
+El primer paso (buscar y revisar los datos personales que sean objeto de la solicitud) le permitirá determinar si la solicitud del interesado cumple con los requisitos de la organización para aceptarla o rechazarla. Por ejemplo, después de identificar y revisar los datos personales, puede determinar que la solicitud no cumple con los requisitos de su organización porque podría afectar de forma negativa a los derechos y libertades de otros.
 
 #### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
 
@@ -271,7 +271,7 @@ Para buscar:
 
 ### <a name="providing-a-copy-of-personal-data"></a>Facilitar una copia de los datos personales
 
-El RGPD concede a los titulares de los datos el derecho de obtener una copia de datos personales a petición. Cuando encuentre el contenido del cliente que contenga los datos que puedan ser objeto de la solicitud, es responsabilidad de la organización decidir si quiere proporcionar una copia al titular de los datos.
+El RGPD concede a los interesados el derecho de obtener una copia de datos personales a petición. Cuando encuentre el contenido del cliente que contenga los datos que puedan ser objeto de la solicitud, es responsabilidad de la organización decidir si quiere proporcionar una copia al interesado.
 
 #### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
 
@@ -282,7 +282,7 @@ El RGPD concede a los titulares de los datos el derecho de obtener una copia de 
 ##### <a name="your-employees"></a>Sus empleados
 Para exportar:
 
-- los datos de clientes de perfiles de usuario, ir al [Centro de administración de Office 365](https://portal.office.com/adminportal/home). En el **Centro de administración**, seleccione **Usuarios**. En la página **Usuarios activos**, busque el usuario cuyos datos desea exportar. Elimine todos los usuarios excepto el usuario de destino y seleccione **Exportar** para exportar los datos a un archivo .csv que podrá abrir en Excel para ver la información.
+- los datos de clientes de perfiles de usuario, vaya al [Centro de administración de Office 365](https://portal.office.com/adminportal/home). En el **Centro de administración**, seleccione **Usuarios**. En la página **Usuarios activos**, busque el usuario cuyos datos desea exportar. Elimine todos los usuarios excepto el usuario de destino y seleccione **Exportar** para exportar los datos a un archivo .csv que podrá abrir en Excel para ver la información.
 
 - Direcciones de correo electrónico de un destinatario de alertas (los únicos datos de cliente de una alerta).  siga los pasos que se indican en [Administrar destinatarios de alertas como administrador](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Seleccione **Exportar** para descargar una lista de Excel de las alertas donde se incluya este destinatario.
 
@@ -294,7 +294,7 @@ Para corregir datos personales incompletos o imprecisos:
 
 #### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
 
--   Necesita preguntar al propietario de los datos (autor) que realice el cambio en la plataforma social (como Twitter, WordPress o Tumblr). El titular de los datos es el propietario de los datos en la cuenta de red social, por lo que son los únicos datos que puede cambiar. Cuando el autor realice el cambio, Social Engagement sincronizará automáticamente los detalles revisados.
+-   Necesita preguntar al propietario de los datos (autor) que realice el cambio en la plataforma social (como Twitter, WordPress o Tumblr). El interesado es el propietario de los datos en la cuenta de red social, por lo que son los únicos datos que puede cambiar. Cuando el autor realice el cambio, Social Engagement sincronizará automáticamente los detalles revisados.
 
 -   Etiquetas de autor, siga los pasos que se indican en [Cambiar etiquetas de autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#change-author-tags).
 
@@ -305,27 +305,27 @@ Para corregir datos personales incompletos o imprecisos:
 
 -   Destinatarios de alertas: puede [cambiar una alerta](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#change-an-alert).
 
-### <a name="restricting-the-processing-of-personal-data"></a>Restringir el procesamiento de datos personales
+### <a name="restricting-the-processing-of-personal-data"></a>Restringir el tratamiento de datos personales
 
 #### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
-Para detener el procesamiento de datos de cliente de los autores en Social Engagement, [elimine el autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author).
+Para detener el tratamiento de datos de cliente de los autores en Social Engagement, [elimine el autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author).
 
-Esto bloqueará el procesamiento futuro de los datos de ese titular de los datos y de todas sus publicaciones futuras, además de eliminar todos los datos sobre el autor. Cada vez que Social Engagement obtenga nuevas publicaciones, comprobará automáticamente si el autor se eliminó anteriormente y descartará las publicaciones de los autores eliminados. Esto no tiene ningún efecto en la cuenta de usuario de la plataforma social.
+Esto bloqueará el tratamiento futuro de los datos de ese interesado y de todas sus publicaciones futuras, además de eliminar todos los datos sobre el autor. Cada vez que Social Engagement obtenga nuevas publicaciones, comprobará automáticamente si el autor se eliminó anteriormente y descartará las publicaciones de los autores eliminados. Esto no tiene ningún efecto en la cuenta de usuario de la plataforma social.
 
 ##### <a name="your-employees"></a>Sus empleados
 
-- Para detener el procesamiento de datos de cliente de los empleados, puede [quitar su licencia](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1) en Office 365. De esta forma, se eliminarán todos los elementos relacionados con Social Engagement, como roles de usuario y perfiles, todas las configuraciones personalizadas definidas por el usuario, alertas, mapas de actividad y flujos de contenido. Los temas de búsqueda y los perfiles sociales no se eliminan. Los administradores heredan la propiedad de los perfiles sociales de los usuarios eliminados y pueden eliminarlos a petición.
+- Para detener el tratamiento de datos de cliente de los empleados, puede [quitar su licencia](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1) en Office 365. De esta forma, se eliminarán todos los elementos relacionados con Social Engagement, como roles de usuario y perfiles, todas las configuraciones personalizadas definidas por el usuario, alertas, mapas de actividad y flujos de contenido. Los temas de búsqueda y los perfiles sociales no se eliminan. Los administradores heredan la propiedad de los perfiles sociales de los usuarios eliminados y pueden eliminarlos a petición.
 
 - Para restringir el envío de mensajes de correo electrónico de alerta, puede quitar una dirección de correo electrónico de todas las alertas que se agregaron; para hacerlo, siga los pasos que se indican en [Administrar destinatarios de alertas como administrador](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator).
 
 ### <a name="deleting-personal-data"></a>Eliminar datos personales
 
-El RGPD concede a los titulares de los datos el derecho de solicitar al poseedor la eliminación de los datos personales en determinadas circunstancias. El “derecho a ser olvidado” al quitar esos datos de una organización es una protección clave en el RGPD.
+El RGPD concede a los interesados el derecho de solicitar al responsable la eliminación de los datos personales en determinadas circunstancias. El "derecho a ser olvidado" al quitar esos datos de una organización es una protección clave en el RGPD.
 
 #### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
 
 Para eliminar de forma permanente todos los datos personales de un actor en Social Engagement, elimine todo el perfil social de este autor. Vea [](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors)[Eliminar un autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author).  
-La acción de eliminación no se puede deshacer. Se eliminarán todos los datos del autor en Social Engagement y se impedirá el procesamiento futuro de sus datos y de sus publicaciones. Cada vez que Social Engagement obtenga nuevas publicaciones, comprobará automáticamente si el autor se eliminó anteriormente y descartará las publicaciones de los autores eliminados. Esto no tiene ningún efecto en la cuenta de usuario de la plataforma social.
+La acción de eliminación no se puede deshacer. Se eliminarán todos los datos del autor en Social Engagement y se impedirá el tratamiento futuro de sus datos y de sus publicaciones. Cada vez que Social Engagement obtenga nuevas publicaciones, comprobará automáticamente si el autor se eliminó anteriormente y descartará las publicaciones de los autores eliminados. Esto no tiene ningún efecto en la cuenta de usuario de la plataforma social.
 
 Para eliminar etiquetas de autor, vea [Quitar etiquetas de autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#remove-author-tags).
 
@@ -348,7 +348,7 @@ Puede eliminar un [perfil social](https://docs.microsoft.com/dynamics365/custome
 Para eliminar una dirección de correo electrónico de todas las alertas a las que se agregaron, siga los pasos que se indican en [Administrar destinatarios de alertas como administrador](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator).[](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)
 
 ### <a name="exporting-personal-data"></a>Exportar datos personales
-Puede proporcionar a los titulares de los datos su información personal en formato electrónico.
+Puede proporcionar a los interesados su información personal en formato electrónico.
 
 #### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
 
@@ -359,7 +359,7 @@ Para extraer las etiquetas de autor que se agregaron a un autor específico, pue
 ##### <a name="your-employees"></a>Sus empleados
 Para exportar:
 
-- los datos de clientes de perfiles de usuario, ir al [Centro de administración de Office 365](https://portal.office.com/adminportal/home). En el **Centro de administración**, seleccione **Usuarios**. En la página **Usuarios activos**, busque el usuario cuyos datos desea exportar. Elimine todos los usuarios excepto el usuario de destino y seleccione **Exportar** para exportar los datos a un archivo .csv que podrá abrir en Excel para ver la información.
+- los datos de clientes de perfiles de usuario, vaya al [Centro de administración de Office 365](https://portal.office.com/adminportal/home). En el **Centro de administración**, seleccione **Usuarios**. En la página **Usuarios activos**, busque el usuario cuyos datos desea exportar. Elimine todos los usuarios excepto el usuario de destino y seleccione **Exportar** para exportar los datos a un archivo .csv que podrá abrir en Excel para ver la información.
 
 - Las direcciones de correo electrónico de un destinatario de alertas (los únicos datos personales de una alerta). Siga los pasos que se indican en [Administrar destinatarios de alertas como administrador](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Después, seleccione **Exportar** para descargar una lista de Excel de las alertas donde se incluya este destinatario.
 
@@ -383,7 +383,7 @@ Los administradores pueden obtener acceso a registros generados por el sistema a
 
 1.  Vaya al [Portal de confianza de servicios de Microsoft](https://servicetrust.microsoft.com/) e inicie sesión con las credenciales de un administrador global de Dynamics 365.
 
-2.  En la lista desplegable **Privacidad** de la parte superior de la página, haga clic en **Solicitud del titular de los datos**.
+2.  En la lista desplegable **Privacidad** de la parte superior de la página, haga clic en **Solicitud del interesado**.
 
 3.  En la página **Solicitud del interesado**, en **Registros generados por el sistema**, haga clic en **Exportación de registros de datos**.
 

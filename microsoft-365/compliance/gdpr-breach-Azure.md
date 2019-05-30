@@ -163,7 +163,7 @@ Microsoft Intune es un componente clave de la oferta de servicios en la nube de 
 
 Por tanto, la oferta del servicio de nube de Microsoft Intune sigue las mismas medidas técnicas y de organización que los equipos del servicio de Microsoft Azure llevan a cabo para asegurarse ante los procesos de vulneración de datos. Por tanto, cualquier información documentada en el documento de notificación "Vulneración de datos de Microsoft Azure" es análogo al servicio de Microsoft Intune. Por ejemplo, Microsoft Intune tiene el mismo ciclo de vida y proceso de respuesta ante incidentes de seguridad (desde la fase 1: detección hasta la fase 5<strong>:</strong> Cierre y análisis final) y el mismo proceso de notificación de incidentes de seguridad. Además, Microsoft Intune también cumple sus obligaciones en cuanto a notificaciones para los clientes de Microsoft O365 que usen Intune al trabajar directamente con el equipo de Microsoft O365.
 
-Para obtener más información sobre cómo Microsoft detecta y responde ante una infracción de datos personales, vea [Notificación de infracciones de datos según el RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) en el Portal de confianza del servicio.
+Para obtener más información sobre cómo Microsoft detecta y responde ante una vulneración de datos personales, vea [Notificación de vulneraciones de datos según el RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) en el Portal de confianza del servicio.
 
 
 #### <a name="learn-more"></a>Más información
