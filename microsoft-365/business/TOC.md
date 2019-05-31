@@ -7,17 +7,18 @@
 ### [Información general sobre el programa de instalación](set-up-overview.md)
 ### [Configurar Microsoft 365 Business](set-up.md)
 ### [Actualización a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
-### [Configurar dispositivos móviles](set-up-mobile-devices.md)
-### [Configurar dispositivos Windows](set-up-windows-devices.md)
 ### [Preparación para la implementación del cliente de Office](prepare-for-office-client-deployment.md)
 ### [Instalar o desinstalar Office automáticamente](auto-install-or-uninstall-office.md)
 ### [Acceso a recursos locales]()
 #### [Habilitación de la administración de dispositivos Windows 10 Unidos a un dominio](manage-windows-devices.md)
 #### [Obtener acceso a los recursos de un dispositivo unido a Azure AD](access-resources.md)
+## Configuración de dispositivo del usuario
+### [Configurar dispositivos móviles](set-up-mobile-devices.md)
+### [Configurar dispositivos Windows](set-up-windows-devices.md)
 ## [Seguro](security-features.md)
 ### [Proteger su empresa](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Configurar las características de seguridad avanzada](set-up-advanced-security.md)
-## Usuarios
+## Administrar usuarios
 ### [Agregue usuarios](add-users-m365b.md)
 ### [Quitar un empleado](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ## Administrar dispositivos
