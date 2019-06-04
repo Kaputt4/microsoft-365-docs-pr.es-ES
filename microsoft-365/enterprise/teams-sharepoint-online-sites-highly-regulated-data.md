@@ -3,8 +3,8 @@ title: Sitios de Microsoft Teams y SharePoint Online para datos altamente regula
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/03/2019
-ms.audience: ITPro
+ms.date: 06/03/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un sitio de grupo de SharePoint Online o un equipo de Microsoft Teams para almacenar los recursos digitales más valiosos y confidenciales.
-ms.openlocfilehash: d80be334f692f905ec70ae43f851d2b73801f4a0
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553329"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681077"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Sitios de Microsoft Teams y SharePoint Online para datos altamente regulados
 
@@ -29,7 +29,7 @@ Microsoft 365 Enterprise incluye un conjunto completo de servicios en la nube pa
 - Datos sujetos a regulaciones regionales.
 - Los datos más importantes para su organización, como pueden ser secretos comerciales, información de recursos humanos o financiera y estrategias de la organización.
 
-Una solución basada en nube de Microsoft 365 Enterprise que cumpla estas necesidades de negocio requiere que usted:
+Un escenario basado en la nube de Microsoft 365 Enterprise que cumpla estas necesidades de negocio requiere que usted:
 
 - Almacene los activos digitales (documentos, diapositivas, hojas de cálculo, etc.) en un sitio de grupo de SharePoint Online o en la pestaña **Archivos** de un equipo de Microsoft Teams.
 - Bloquee el sitio o equipo para evitar:
@@ -41,7 +41,7 @@ Una solución basada en nube de Microsoft 365 Enterprise que cumpla estas necesi
 - Cifre los recursos digitales confidenciales del sitio o grupo.
 - Agregue permisos a los recursos digitales más confidenciales de modo que requieran las credenciales válidas de una cuenta de usuario para abrirse si se comparten fuera del sitio.
 
-La tabla siguiente asigna los requisitos de esta solución a una característica de Microsoft 365 Enterprise.
+En la tabla siguiente se asignan los requisitos de este escenario a una característica de Microsoft 365 Enterprise.
 
 |||
 |:-------|:-----|
@@ -54,7 +54,11 @@ La tabla siguiente asigna los requisitos de esta solución a una característica
 | Añadir permisos a los recursos digitales del sitio | Etiquetas secundarias de Azure Information Protection en EMS |
 |||
 
-Esta solución requiere que haya implementado con anterioridad:
+Esta es la configuración para un sitio de SharePoint Online.
+
+![Sitios de Microsoft Teams y SharePoint Online para escenarios de datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+
+Este escenario requiere que ya haya implementado:
 
 - La fase de [identidad](identity-infrastructure.md) y los pasos 1 y 2 de la fase de [protección de la información](infoprotect-infrastructure.md) de la infraestructura de base. 
 - Para datos altamente regulados en sitios de grupo de SharePoint Online, [SharePoint Online](sharepoint-online-onedrive-workload.md).
@@ -64,9 +68,13 @@ Las siguientes fases le guiarán a través del diseño, la configuración y la a
 
 Para ver cómo Contoso Corporation, una organización multinacional ficticia pero representativa, diseñó un sitio de SharePoint Online para los equipos de investigación, vea esta [configuración de ejemplo](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
->[!Note]
->Un grupo de datos altamente regulados requiere crear primero un sitio de grupo de SharePoint Online para datos altamente regulados. A continuación, se debe crear un equipo que use el grupo de Office 365 del sitio de grupo de SharePoint Online. Consulte el paso 4 de la fase 2 para obtener más información.
->
+
+Un grupo de datos altamente regulados requiere crear primero un sitio de grupo de SharePoint Online para datos altamente regulados. A continuación, se debe crear un equipo que use el grupo de Office 365 del sitio de grupo de SharePoint Online. Consulte el paso 4 de la fase 2 para obtener más información.
+
+Esta es la configuración de un equipo.
+
+![Sitios de Microsoft Teams y SharePoint Online para escenarios de datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
+
 
 ## <a name="identity-and-device-access-prerequisites"></a>Requisitos previos de acceso a dispositivos e identidades
 
@@ -207,6 +215,10 @@ Volver a dar formación a los usuarios que lo necesiten.
 ### <a name="user-adoption-results"></a>Resultados de la adopción de usuarios
 
 Los recursos digitales confidenciales se almacenan de forma exclusiva en sitios o grupos de SharePoint Online para datos altamente regulados y los datos más confidenciales tienen aplicada la etiqueta secundaria de Azure Information Protection.
+
+## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Cómo Contoso Corporation implementó Microsoft 365 Enterprise
+
+Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Vea cómo Contoso diseñó, configuró y, después, impulsó la adopción de un [sitio de SharePoint Online seguro](contoso-sharepoint-online-site-for-highly-confidential-assets.md) para sus equipos de investigación en París, Moscú, Nueva York, Beijing y Bengaluru (Bangalore). 
 
 ## <a name="see-also"></a>Vea también
 
