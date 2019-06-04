@@ -11,22 +11,20 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 0bacc6341ac143a8f2b3dcb066709c951d2f1cbb
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: f30bdc4aec20a69c18405b6f69a14fc919f57554
+ms.sourcegitcommit: 651a1c583021a7122a9487be2f32330aff161467
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544957"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34675635"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Notificación de infracciones en Office 365 según el RGPD
 
 Como encargado del tratamiento, Office 365 garantizará que nuestros clientes cumplan con los requisitos de notificación de vulneraciones del RGPD como responsables de los datos. Con ese fin, nos comprometemos a lo siguiente:
 
--   Proporcionar a los clientes la opción de especificar un contacto de privacidad específico que recibirá notificaciones en caso de que se produzcan infracciones. Los clientes podrán especificar este contacto en Azure Active Directory (AAD).
-
--   Notificar a los clientes de las vulneraciones de datos personales en un plazo de 72 horas después de declararse la vulneración. La notificación se realizará por correo electrónico al contacto especificado por el cliente.
-
--   En la notificación inicial se incluirá, como mínimo, una descripción de la naturaleza de la infracción, una aproximación del impacto en los usuarios y los pasos de mitigación (si corresponde). Si nuestra investigación no se completa en el momento de la notificación inicial, indicaremos los pasos siguientes y las escalas de tiempo para la comunicación posterior a la notificación inicial.
+- Proporcionar a los clientes la opción de especificar un contacto de privacidad específico que recibirá notificaciones en caso de que se produzcan infracciones. Los clientes podrán especificar este contacto en Azure Active Directory (AAD).
+- Notificar a los clientes de las vulneraciones de datos personales en un plazo de 72 horas después de declararse la vulneración. La notificación se realizará por correo electrónico al contacto especificado por el cliente.
+- En la notificación inicial se incluirá, como mínimo, una descripción de la naturaleza de la infracción, una aproximación del impacto en los usuarios y los pasos de mitigación (si corresponde). Si nuestra investigación no se completa en el momento de la notificación inicial, indicaremos los pasos siguientes y las escalas de tiempo para la comunicación posterior a la notificación inicial.
 
 Microsoft reconoce que los responsables de los datos son responsables de realizar evaluaciones de riesgos y de determinar si es necesario notificar ante una vulneración al DPA del cliente; al notificar a los clientes, proporcionaremos la información necesaria para realizar una evaluación. Por lo tanto, Microsoft notificará a los clientes ante cualquier vulneración de datos personales, excepto en los casos en que se confirme que los datos personales son ininteligibles (por ejemplo, datos con un cifrado muy seguro donde se confirme la integridad de las claves).
 
@@ -62,11 +60,8 @@ En la sección anterior, se describen las inversiones que realiza Office 365 par
 Los clientes también necesitan tener en cuenta que Office 365, como encargado del tratamiento, no determinará el riesgo de una vulneración de datos. Si se detecta una vulneración de datos personales, notificaremos a nuestros clientes y les proporcionaremos los datos que necesiten para determinar de forma precisa el riesgo para los usuarios afectados y decidir si es necesario informar a las autoridades competentes. Para esa finalidad, se espera que los responsables de los datos determinen lo siguiente:
 
 - Gravedad de la vulneración (es decir, determinación de los riesgos).
-
 - Si es necesario notificar a los usuarios finales.
-
 - Si es necesario notificar a las autoridades competentes.
-
 - Pasos específicos que realizará el controlador para mitigar las consecuencias de la vulneración.
 
 ## <a name="contacting-microsoft"></a>Ponerse en contacto con Microsoft
