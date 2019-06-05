@@ -5,17 +5,17 @@ keywords: EIPD, Office 365, documentación de Microsoft 365, RGPD
 ms.localizationpriority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 95f3e5e4bb36c5bcf5e2d8a2a3f629c213d2d219
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: da9ba78f11dad06a1bea72484e6ecc77e7619493
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544837"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698302"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>Evaluaciones de impacto en la protección de datos: Guía para controladores de datos que usan Microsoft Office 365 
 

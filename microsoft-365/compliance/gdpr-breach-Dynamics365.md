@@ -5,18 +5,17 @@ keywords: Dynamics 365, Microsoft 365, Microsoft 365 Education, documentación d
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: c69bc0a0ac665fbcac68e3ba45abc7bf8f7e0ded
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: 7fbe7f277825905326a1234249e5bccf7082658d
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544947"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698322"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 y notificación de vulneraciones según el RGPD
 
@@ -39,7 +38,7 @@ Todos los empleados que trabajan en Microsoft Dynamics 365 reciben aprendizaje e
 
 ## <a name="how-does-microsoft-dynamics-365-define-security-incidentpotential-breaches"></a>Definición de Microsoft Dynamics 365 de un incidente de seguridad o posibles vulneraciones
 
-Un incidente de seguridad o una vulneración de datos hace referencia a eventos, como un acceso ilegal a los datos del cliente almacenados en equipos de Microsoft o en instalaciones de Microsoft, o bien el acceso no autorizado a dichos equipos o instalaciones que puede producir la pérdida, divulgación o modificación de los datos de clientes. El objetivo de Microsoft al responder ante los incidentes de seguridad o vulneraciones de datos es proteger los datos de los clientes y los servicios de Dynamics 365. El enfoque de Microsoft en relación con la administración de un incidente de seguridad cumple con la publicación especial [800-61](https://www.nist.gov/) del [Instituto nacional de normalización y tecnología](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) (NIST).
+Un incidente de seguridad o una vulneración de datos hace referencia a eventos, como un acceso ilegal a los datos del cliente almacenados en equipos de Microsoft o en instalaciones de Microsoft, o bien el acceso no autorizado a dichos equipos o instalaciones que puede producir la pérdida, divulgación o modificación de los datos de clientes. El objetivo de Microsoft al responder ante los incidentes de seguridad o infracciones de datos es proteger los datos de los clientes y los servicios de Dynamics 365. El enfoque de Microsoft en relación con la administración de un incidente de seguridad cumple con la publicación especial [800-61](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) del [Instituto nacional de normalización y tecnología](https://www.nist.gov/) (NIST).
 
 Microsoft no supervisa ni responde ante incidentes de seguridad en el dominio de responsabilidad del cliente. Un peligro para la seguridad causado solo por un cliente no se trataría como un incidente de seguridad de Dynamics 365, y el espacio empresarial del cliente tendría que administrar el esfuerzo de respuesta. Una respuesta ante incidentes de clientes podría precisar la colaboración con el servicio de atención al cliente de Microsoft Dynamics 365, siempre que el cliente disponga de los contratos de servicio adecuados.
 
@@ -77,7 +76,7 @@ El equipo de respuesta de seguridad trabaja con los ingenieros de seguridad de M
 - **Incidente de seguridad denunciado por el cliente:** un acceso o un uso ilegal o no autorizado de sistemas, equipos o instalaciones de Microsoft que da como resultado la divulgación, modificación o pérdida de datos de clientes.
 - **Incidente de privacidad:** un subtipo de incidente de seguridad relacionado con datos personales. Los procedimientos de control no son distintos de un incidente de seguridad.
 
-Para que se declare una CRSI, Microsoft debe determinar que el acceso no autorizado a los datos del cliente se ha producido, o es probable que lo haya hecho, o existe un compromiso legal o contractual que fuerce la notificación. Es preferible, aunque no necesario, que se conozcan los pasos de impacto, acceso a los recursos y pasos de reparación del cliente específico. Un incidente se declara, en general, CRSI después de la conclusión de la fase de diagnóstico de un incidente de seguridad. Sin embargo, la declaración puede producirse en cualquier momento en el que esté disponible toda la información pertinente. El administrador del incidente de seguridad debe establecer pruebas más allá de la duda razonable de que se ha producido un evento del que informar para iniciar la ejecución del proceso de notificación de incidentes del cliente.
+Para que se declare una CRSI, Microsoft debe determinar que el acceso no autorizado a los datos del cliente se ha producido, o es probable que lo haya hecho, o existe un compromiso legal o contractual que fuerce la notificación. Es preferible, aunque no necesario, que se conozcan los pasos de impacto, acceso a los recursos y pasos de reparación del cliente específico. Un incidente se declara, en general, CRSI después de la conclusión de la fase de diagnóstico de un incidente de seguridad. Sin embargo, la declaración puede producirse en cualquier momento en el que esté disponible toda la información pertinente. El administrador del incidente de seguridad debe establecer pruebas más allá de la duda razonable de que se ha producido un evento del que informar para iniciar la ejecución del Proceso de notificación de incidentes del cliente.
 
 Durante la investigación, el equipo de respuesta de seguridad trabaja junto a asistentes legales de todo el mundo para ayudar a garantizar que los análisis se realizan siguiendo los compromisos y las obligaciones legales con los clientes. También hay importantes restricciones sobre el visionado de datos de clientes y sistemas, además de sobre su manejo en varios entornos operativos. Los datos confidenciales y de los clientes no se transfieren fuera del entorno de producción sin la aprobación escrita del administrador de incidentes registrada en el tique de incidente correspondiente.
 

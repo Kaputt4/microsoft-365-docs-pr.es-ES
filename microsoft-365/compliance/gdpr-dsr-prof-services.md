@@ -2,20 +2,20 @@
 title: Solicitudes del titular de los datos de soporte técnico y los servicios profesionales de Microsoft para el RGPD
 description: Forma en que el Soporte técnico y los servicios profesionales de Microsoft procesan las solicitudes del titular de los datos.
 keywords: Servicios profesionales, Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
-author: herviicban
+author: robmazz
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
+ms.author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 9328bba6a0ca616b98b4da32cab372b9b546c848
-ms.sourcegitcommit: dc5c297ee7bca212b8a902daebe4907254c4315f
+ms.openlocfilehash: bc0b8d5b6d2a2a1590829a710d8aa51627d9afd0
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34589746"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698033"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados del soporte técnico y los servicios profesionales de Microsoft para el RGPD
 
