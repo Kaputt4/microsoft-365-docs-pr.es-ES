@@ -3,7 +3,7 @@ title: 'Paso 2: Preparación de los directorios y la red'
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
+ms.date: 05/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los directorios y redes en el entorno.
-ms.openlocfilehash: cc3dcc1dd9c2e8d9c79f52de76b116ef7f9dffac
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: d9ab05c9ff7d0b926f147ee4f924d95f01ccffd1
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400174"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814621"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Paso 2: Preparación de los directorios y la red
 
@@ -77,7 +77,8 @@ El tercer componente considerar es la personalización de usuario. Aquí debe pl
 
 Una forma de limitar el impacto del tráfico relacionado con la implementación en la red es limitarlo con la función BITS (servicio de transferencia inteligente en segundo plano) de los clientes. BITS usa una tasa de bits adaptativa (ABR) para ajustar el ancho de banda disponible para la implementación; puede configurarse en los clientes que usan la directiva de grupo.
 
-[Acerca de BITS](https://docs.microsoft.com/es-ES/windows/desktop/bits/about-bits)
+
+  [Acerca de BITS](https://docs.microsoft.com/es-ES/windows/desktop/bits/about-bits)
 
 Si usa System Center Configuration Manager, también puede configurar los puntos de distribución habilitados para BITS o habilitar la multidifusión con WDS.
 
@@ -119,7 +120,8 @@ Además de aprovechar la optimización de entrega, hay tres elementos que le ayu
 
 **La compresión binaria de delta** Office 365 ProPlus utiliza compresión binaria de delta para reducir el ancho de banda consumido por actualizaciones de software al actualizar desde la versión más reciente de Office 365 ProPlus hasta la siguiente versión. Pero solo al quitar los cambios a nivel binario de la versión anterior, el impacto de las actualizaciones acumulativas se ha minimizado. Esto tiene el potencial de ahorrar cientos de megas de datos por equipo cada mes. Para poder usar esta función, sin embargo, no puede saltarse ninguna versión. Si lo hace, deberá descargar la actualización acumulativa completa.
 
-[Descargar actualizaciones de Office 365](https://docs.microsoft.com/es-ES/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+
+  [Descargar actualizaciones de Office 365](https://docs.microsoft.com/es-ES/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
 **Archivos de datos de Outlook** Outlook está configurado con frecuencia para almacenar en caché todo el buzón de los usuarios de forma local para su uso sin conexión. En cualquier implementación de Windows, excepto en una actualización local, esto requiere que los archivos de datos de Outlook de los usuario se reconstruyan tras la actualización. Este es un proceso automatizado, pero con los límites de buzón de Outlook que normalmente se establecen en un máximo de 100 GB, volver a almacenar en caché todo el buzón local para todos los usuarios implica una gran cantidad de transferencia de datos. Para reducir la carga de red puede que quiera considerar el uso de directivas de grupo para reducir la configuración "Correo para mantener sin conexión". En Office 365 ProPlus u Office 2016 el valor predeterminado de Outlook se establece en 12 meses. Para reducir el impacto en la red considere la posibilidad configurar el almacenamiento en memoria caché para que dure de 1 a 6 meses. Cambiar esta configuración no afecta el tamaño del buzón en línea y se puede buscar todo el buzón a través de Outlook cuando tenga conexión.
 
@@ -131,7 +133,7 @@ Además de aprovechar la optimización de entrega, hay tres elementos que le ayu
 
 [Configuración de Mover carpeta conocida](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 
-[Archivos de OneDrive a petición](https://www.microsoft.com/es-ES/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
+[Archivos de OneDrive a petición](https://www.microsoft.com/en-us/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
 Si aún no ha implementado OneDrive, el cambio de Windows 7 a Windows 10 es una oportunidad perfecta para habilitar OneDrive y se integra perfectamente con Office 365 ProPlus. Considere iniciar esta implementación mientras prepara las aplicaciones y dispositivos. Esto impulsará la sincronización de archivos antes de que empiece a mover imágenes de Windows e implementar aplicaciones a través de la red.
 

@@ -3,7 +3,7 @@ title: Kit de laboratorio de implementación para Windows y Office
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 10/31/2018
+ms.date: 06/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 213d53b323cd5a5ca6f803320cf09e168beb1114
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400083"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814551"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
@@ -127,7 +127,8 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
   - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - [Implementación de sistema operativo de System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - 
+  [Implementación de sistema operativo de System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan de implementación de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
