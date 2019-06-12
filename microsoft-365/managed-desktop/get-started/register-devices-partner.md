@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: d743092fdd309c1afd748afa7523f0cc0c6a2fd0
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 40927b18b0d047eae848b5a2a938d98fa6de3119
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400014"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857333"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Registrar dispositivos en el escritorio administrado por Microsoft para partners
 
@@ -30,8 +30,8 @@ Para completar el registro del cliente, cree primero un archivo CSV.
 El archivo tiene que incluir **exactamente los mismos encabezados de columna** que el ejemplo uno (fabricante, modelo, etc.), pero sus propios datos para las otras filas. Si usa la plantilla, ábrala en una herramienta de edición de texto como el Bloc de notas y considere la posibilidad de dejar sólo todos los datos de la fila 1, introduciendo solo los datos en las filas 2 y anteriores. 
     
   ```
- Manufacturer,Model,Serial Number,Hardware Hash
-  SpiralOrbit,ContosoABC,000000000000,
+ Manufacturer,Model,Serial Number
+  SpiralOrbit,ContosoABC,000000000000
   
   
   ```
@@ -67,7 +67,7 @@ Puede supervisar el progreso del registro de dispositivos en la Página principa
 
 | Estado | Descripción |
 |---------------|-------------|
-| Registro pendiente | Aún no se ha realizado el registro. Vuelva a comProbarla más tarde. |
+| Registro pendiente | Aún no se ha realizado el registro. Vuelva a comprobarla más tarde. |
 | Error en el registro | No se pudo completar el registro. Consulte [solución de problemas](register-devices-self.md#troubleshooting) para obtener más información. |
 | Listo para el usuario | El registro se realizó correctamente y el dispositivo ya está listo para entregarse al usuario final. El escritorio administrado de Microsoft los guiará a través de la primera configuración, por lo que no es necesario que realice ninguna preparación adicional. |
 | Activo | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Esto también indica que los usuarios usan el dispositivo con regularidad. |

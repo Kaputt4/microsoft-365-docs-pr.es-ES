@@ -4,21 +4,42 @@ description: En este tema se enumeran los temas nuevos y actualizados para el es
 keywords: historial de cambios
 ms.prod: m365-md
 ms.sitesec: library
-author: trudyha
-ms.author: jdecker
+author: jaimeo
+ms.author: jaimeo
 ms.topic: article
-ms.date: 03/11/2019
 ms.localizationpriority: normal
-ms.openlocfilehash: 9bbcbe99e3dc08d4201d4a80323b17647309f433
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 3cf7e948e5bf963ae9239656881c181d90f23a6e
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277975"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857328"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historial de cambios de la documentación de escritorio administrado de Microsoft
 
 En este tema se enumeran los temas nuevos y actualizados de la [documentación del escritorio administrado de Microsoft](index.yml).
+
+
+## <a name="may-2019"></a>Mayo de 2019
+Tema nuevo o modificado | Descripción
+--- | ---
+[Regiones e idiomas admitidos por Microsoft Managed Desktop](service-description/regions-languages.md) | Tema actualizado
+[Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Tema actualizado
+[Dispositivos archivados de escritorio administrado por Microsoft](service-description/archived-device-list.md) | Tema nuevo
+[Preparar unidades asignadas para el escritorio administrado por Microsoft](get-ready/mapped-drives.md) | Tema nuevo
+[Preparar certificados y perfiles de red para el escritorio administrado de Microsoft](get-ready/certs-wifi-lan.md) | Tema nuevo
+[Pedir dispositivos de escritorio administrados por Microsoft](get-started/devices.md) | Tema actualizado
+
+
+## <a name="april-2019"></a>Abril de 2019
+Tema nuevo o modificado | Descripción
+--- | ---
+[Instalar el portal de empresa de Intune en dispositivos de escritorio administrados por Microsoft](get-started/company-portal.md) | Tema nuevo
+[Instalar Microsoft Project y Microsoft Visio en dispositivos de escritorio administrados por Microsoft](get-started/project-visio.md) | Tema nuevo 
+[Preparar el acceso a los recursos locales para el escritorio administrado por Microsoft](get-ready/authentication.md) | Tema nuevo
+[Registrar dispositivos en el escritorio administrado por Microsoft](get-started/register-devices-self.md) | Tema nuevo
+[Registrar dispositivos en el escritorio administrado por Microsoft para partners](get-started/register-devices-partner.md) | Tema nuevo
+[Implementar aplicaciones en dispositivos de escritorio administrados por Microsoft](get-started/deploy-apps.md) | Tema actualizado
 
 ## <a name="march-2019"></a>Marzo de 2019
 Tema nuevo o modificado | Descripción
@@ -31,7 +52,7 @@ Tema nuevo o modificado | Descripción
 --- | ---
 [Dispositivos de programa](service-description/device-list.md) | Se actualizó con compatibilidad con determinados dispositivos Dell y HP.
 [Información general de configuración configurable](working-with-managed-desktop/config-setting-overview.md) | Tema nuevo
-[Referencia de opciones conFigurables](working-with-managed-desktop/config-setting-ref.md) | Tema nuevo
+[Referencia de opciones configurables](working-with-managed-desktop/config-setting-ref.md) | Tema nuevo
 [Seguimiento e implementación de opciones configurables](working-with-managed-desktop/config-setting-deploy.md) | Tema nuevo
 [Introducción a los dispositivos](get-started/get-started-devices.md) | Tema nuevo
 

@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0eabd3c90e0aae2812b2ee9fd6fb4d1768e90c1e
-ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
+ms.openlocfilehash: c3674df0bfd797b9076bbf52379444665b1ce4d8
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34104225"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857313"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivos archivados de escritorio administrado por Microsoft
 
@@ -40,7 +40,7 @@ Además, el dispositivo también debe:
 
 - Tener una imagen aprobada por el escritorio administrado por Microsoft. Cuando solicite dispositivos, asegúrese de especificar que se usan con el escritorio administrado de Microsoft.
 - No ha completado la experiencia de primera ejecución de Windows.
-- Estar inscritos en [Windows AutoPilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad) y tener asignado el perfil de Microsoft Managed Desktop AutoPilot.
+- Registrarse con Microsoft Managed Destkop mediante la característica de [registro de dispositivos](https://aka.ms/mmddrhelp)
 
 #### <a name="additional-help"></a>Ayuda adicional
 

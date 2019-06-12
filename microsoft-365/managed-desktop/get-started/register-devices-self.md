@@ -5,19 +5,19 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: f1e61cfc7fd1d6d597efbfa2480155e06a3d3eb7
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400084"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857303"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>Registrar dispositivos en el escritorio administrado por Microsoft
 
 >[!NOTE]
 >En este tema se describen los pasos para registrar los dispositivos por su cuenta. El proceso para socios está documentado en [Register Devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
 
-Microsoft manAged Desktop puede trabajar con dispositivos nuevos o puede volver a usar dispositivos que ya tiene (lo que requerirá que vuelva a crear imágenes). Puede registrar dispositivos con Microsoft manAged Desktop en el portal de Azure o ganar flexibilidad usando una API.
+Microsoft Managed Desktop puede trabajar con dispositivos nuevos o puede volver a usar dispositivos que ya tiene (lo que requerirá que vuelva a crear imágenes). Puede registrar dispositivos con Microsoft Managed Desktop en el portal de Azure o ganar flexibilidad usando una API.
 
 ## <a name="prepare-to-register-devices"></a>Preparar el registro de dispositivos
 
@@ -39,20 +39,20 @@ El hash de hardware debe ser una coincidencia exacta.
 Para obtener el hash de hardware, puede solicitar ayuda a su OEM o Partner, o bien siga estos pasos para cada dispositivo:
 
 1.  Abra un símbolo del sistema de PowerShell con derechos administrativos.
-2.  Realizar`Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  Realizar`powershell -ExecutionPolicy Unrestricted Get-WindowsAutopilotInfo -OutputFile <path>\hardwarehash.csv`
+2.  Realizar`Install-Script -Name Get-MMDRegistrationInfo`
+3.  Realizar`powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 
 
 Como alternativa, puede seguir estos pasos en un dispositivo nuevo (antes de pasar por la OOBE por primera vez):
 
 1. En otro dispositivo, inserte una unidad USB.
 2. Abra un símbolo del sistema de PowerShell con derechos administrativos.
-3. Realizar`Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
+3. Realizar`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Encienda el dispositivo de destino, pero no inicie la instalación. Si inicia de forma accidental la experiencia del programa de instalación, tendrá que restablecer o volver a crear una imagen del dispositivo.
 5. Inserte la unidad USB y, a continuación, presione Mayús + F10.
 6. Abra un símbolo del sistema de PowerShell con derechos administrativos y `cd <pathToUsb>`, a continuación, ejecute.
 7. Realizar`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. Realizar`.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+8. Realizar`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 3. Quite la unidad USB y, a continuación, apague el dispositivo ejecutando`shutdown -s -t 0`
 
 >[!IMPORTANT]
@@ -76,12 +76,12 @@ El archivo tiene que incluir **exactamente los mismos encabezados de columna** q
 
 ## <a name="register-devices-by-using-the-azure-portal"></a>Registrar dispositivos con Azure portal
 
-En el portal de Microsoft manAged Desktop [Azure](https://aka.ms/mmdportal), seleccione **dispositivos** en el panel de navegación izquierdo. Seleccione **+ registrar dispositivos**; se abre el repaso:
+En el portal de Microsoft Managed Desktop [Azure](https://aka.ms/mmdportal), seleccione **dispositivos** en el panel de navegación izquierdo. Seleccione **+ registrar dispositivos**; se abre el repaso:
 
 [![Volar después de seleccionar dispositivos de registro](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
 
-[//]: # (Por desGracia, esto no es cierto. Podemos quitar esta nota, pero dejarla ahora hasta que podamos conversar sobre ella.)
+[//]: # (Por desgracia, esto no es cierto. Podemos quitar esta nota, pero dejarla ahora hasta que podamos conversar sobre ella.)
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
@@ -97,7 +97,7 @@ Puede supervisar el progreso del registro de dispositivos en la Página principa
 
 | Estado | Descripción |
 |---------------|-------------|
-| Registro pendiente | Aún no se ha realizado el registro. Vuelva a comProbarla más tarde. |
+| Registro pendiente | Aún no se ha realizado el registro. Vuelva a comprobarla más tarde. |
 | Error en el registro | No se pudo completar el registro. Consulte [solución de problemas](register-devices-self.md#troubleshooting) para obtener más información. |
 | Listo para el usuario | El registro se realizó correctamente y el dispositivo ya está listo para entregarse al usuario final. El escritorio administrado de Microsoft los guiará a través de la primera configuración, por lo que no es necesario que realice ninguna preparación adicional. |
 | Activo | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Esto también indica que los usuarios usan el dispositivo con regularidad. |
