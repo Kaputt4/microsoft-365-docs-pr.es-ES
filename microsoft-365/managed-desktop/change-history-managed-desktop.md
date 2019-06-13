@@ -8,16 +8,23 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 3cf7e948e5bf963ae9239656881c181d90f23a6e
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 4cd61e333773ddeddc866481be7e1cfa283e4386
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857328"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913031"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historial de cambios de la documentación de escritorio administrado de Microsoft
 
 En este tema se enumeran los temas nuevos y actualizados de la [documentación del escritorio administrado de Microsoft](index.yml).
+
+## <a name="june-2019"></a>Junio de 2019
+Tema nuevo o modificado | Descripción
+--- | ---
+[Aplicaciones en el escritorio administrado de Microsoft](get-ready/apps.md) | Tema actualizado
+[Trabajar con los servicios de consultoría de Microsoft](get-ready/apps-mcs.md) | Tema nuevo
+[Roles y responsabilidades del escritorio administrado por Microsoft](intro/roles-and-responsibilities.md) | Tema actualizado
 
 
 ## <a name="may-2019"></a>Mayo de 2019
