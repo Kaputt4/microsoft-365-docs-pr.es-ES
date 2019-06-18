@@ -3,7 +3,7 @@ title: Regístrese para obtener Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo comprar y registrarse en Microsoft 365 Business.
-ms.openlocfilehash: 5e8bdb9121f2b567ef4faced2b960feaab49d923
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ecbf316f63e11ed07dc775f6659f650112cc8cb4
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283600"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017512"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Regístrese para obtener Microsoft 365 Business
 
@@ -41,12 +41,12 @@ Vaya a [Descubra microsoft 365 Business Advantage](https://www.microsoft.com/mic
 
     - **Nombre de usuario**: escriba el nombre (denominado alias) que va a usar para su propio correo electrónico comercial. Por ejemplo, Robert Young puede usar RobY o RobYoung como un alias de trabajo.
     - **Su empresa**: escriba el nombre único de su empresa. Este es el nombre que el sitio web de su empresa usa si tiene uno, y también es el nombre que desea incluir después del signo @ cuando recibe un correo electrónico de negocios. Este nombre se denomina dominio. Por ejemplo, si su empresa se llama esquíes de Contoso, escriba ContosoSkis detrás del signo @.
-    - **Seleccione un dominio**: si es el propietario de su nombre de dominio ya, seleccione. onmicrosoft.com de la lista desplegable hombre y le pediremos que la configure más adelante. De lo contrario, es fácil comprar un nombre de dominio que represente su empresa. Para ello, seleccione el dominio que prefiera en el menú desplegable. Por ejemplo, la dirección de correo electrónico completa podría ser *Teresa@ContosoSkis.net*. Le dejaremos saber inmediatamente si el nombre de dominio está disponible. Si es así, agregaremos el costo de su dominio al costo de su suscripción de Microsoft 365 empresa. El nuevo dominio también se configurará y estará listo para su uso en Microsoft 365 si lo adquiere aquí. Para obtener información acerca de los dominios, vea [preguntas más frecuentes sobre dominios](https://docs.microsoft.com/office365/admin/setup/domains-faq).
+    - **Seleccione un dominio**: si es el propietario de su nombre de dominio ya, seleccione. onmicrosoft.com en el menú desplegable y le pediremos que lo configure más adelante. De lo contrario, es fácil comprar un nombre de dominio que represente su empresa. Para ello, seleccione el dominio que prefiera en el menú desplegable. Por ejemplo, la dirección de correo electrónico completa podría ser *Teresa@ContosoSkis.net*. Le dejaremos saber inmediatamente si el nombre de dominio está disponible. Si es así, agregaremos el costo de su dominio al costo de su suscripción de Microsoft 365 empresa. El nuevo dominio también se configurará y estará listo para su uso en Microsoft 365 si lo adquiere aquí. Para obtener información acerca de los dominios, vea [preguntas más frecuentes sobre dominios](https://docs.microsoft.com/office365/admin/setup/domains-faq).
     
     ![Captura de pantalla de la página crear su identificador de usuario.](media/signinuserid.png)
 
-3. ReLlene el resto de los campos y seleccione **crear mi cuenta**.
-4. En la **prueba. eres. Not'A. Robot.** Página escriba un número de teléfono para recibir un código a través de un texto o una llamada y seleccione **texto me** o **llámeme**, a continuación \> ****, escriba el código de verificación a continuación.
+3. Rellene el resto de los campos y seleccione **crear mi cuenta**.
+4. En la **prueba. eres. No. robot.** Página escriba un número de teléfono para recibir un código a través de un texto o una llamada y seleccione **texto me** o **llámeme**, a continuación \> ****, escriba el código de verificación a continuación.
 5. En la página ¿dónde va a **usar esta** página?, escriba la dirección de la empresa. Esta información determina qué impuestos paga y qué suscripciones están disponibles. Para obtener más información acerca de los impuestos, vea [¿Qué impuesto se me cobrará?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
 1. Seleccione **siguiente**, revise el pedido y vuelva a seleccionar **siguiente** .
 1. En la página **¿cómo quiere pagar?** , escriba los detalles de pago y, a continuación, **realice el pedido**.

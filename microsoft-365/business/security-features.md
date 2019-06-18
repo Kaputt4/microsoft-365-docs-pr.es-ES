@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad incluidas en Microsoft 365 Business.
-ms.openlocfilehash: 54bac38ca3a60f88f848ec3ab8bdd8a7c0fabd54
-ms.sourcegitcommit: ab04fea2765a63489d70b506f0e14303a5be16a0
+ms.openlocfilehash: bd61ad3bf1b34635a7b80f1c9ccf63fa98d31915
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34780787"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017530"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business
 
@@ -75,6 +75,19 @@ Hay disponibles características avanzadas de Microsoft 365 Business para ayudar
 - **Mismo [acceso condicional](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) que el plan de Azure ad P1**
 
     El acceso condicional puede ayudar a proteger su organización del riesgo de inicio de sesión, a los intentos de acceso desde una red o configuración regional inesperada, a que los intentos de acceso forman tipos de dispositivos peligrosos y así sucesivamente. Las directivas de acceso condicional se aplican una vez completada la primera autenticación y se usan señales del primer evento de autenticación para determinar si el intento de acceso debe ser aprobado, denegado o f (como una segunda forma de identificación) Obligatorio.
+
+    Las características de acceso condicional incluidas son:
+
+    - Acceso basado en nombre de usuario, grupo y rol
+    - Acceso [basado en una aplicación](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 
+    - [Acceso basado en la ubicación](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration);  permitir el acceso solo desde rangos IP de confianza o países específicos 
+    - Requerir MFA para el acceso
+    - Bloquear el acceso a las aplicaciones que usan la [autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
+    - Requerir TP de aplicaciones-usar [protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) de Intune
+    - Autenticación personalizada como MFA con proveedores de terceros, por ejemplo, DUO.
+   
+    Otras características:
+    - [Restablecimiento de contraseña](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) de autoservicio para Azure ad híbrido
     
 ## <a name="compliance-features"></a>Características de cumplimiento
 
