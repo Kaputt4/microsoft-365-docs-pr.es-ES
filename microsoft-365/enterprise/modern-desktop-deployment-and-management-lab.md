@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 4b69047c2c595b899fd29593c9c02a3531ffbd53
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814551"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017502"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
@@ -36,18 +36,17 @@ El kit de laboratorio es gratuito y usa software de evaluación.
 
 El laboratorio proporciona un entorno de laboratorio virtual aprovisionado de forma automática, en el que se incluyen clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. El laboratorio contiene versiones de evaluación de los productos siguientes:
 
-  - Windows 10 Enterprise, versión 1809
-  - Windows 7
-  - Office 365 ProPlus, versión 1901
-  - System Center Configuration Manager, versión 1802
-  - Kit de implementación y evaluación de Windows para Windows 10, versión 1809
+  - Windows 10 Enterprise, versión 1903
+  - Windows 7 Enterprise
+  - System Center Configuration Manager, versión 1902
+  - Windows Assessment and Deployment Kit para Windows 10, versión 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Microsoft BitLocker Administration and Monitoring 2.5 SP1
-  - Windows Server 2016
-  - Microsoft SQL Server 2014
+  - Windows Server 2019
+  - Microsoft SQL Server 2017
 
-ADEMÁS, el laboratorio está diseñado para conectarse a versiones de prueba para:
+ADEMÁS, el laboratorio está diseñado para conectarse a versiones de prueba para: 
 
   - Microsoft 365 Enterprise E5
 
@@ -119,7 +118,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**Descargar el kit de laboratorio de implementación de Office y Windows**](https://aka.ms/mddlabs_evalcenter)
 
-*Use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y permitir entre 30 y 45 minutos de aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 13 de mayo de 2019. Antes de que caduque, se publicará una nueva versión.*
+*Use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y permitir entre 30 y 45 minutos de aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 27 de agosto de 2019. Antes de que caduque, se publicará una nueva versión.*
 
 ## <a name="additional-guidance"></a>**Instrucciones adicionales**
 
