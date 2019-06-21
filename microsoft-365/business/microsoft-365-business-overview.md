@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 9/20/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Aprenda a configurar Microsoft 365 Business.
-ms.openlocfilehash: eb3d611d2be0480fdd0ff897ec5ba69b17695041
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 6fd328ebd4a8d3fbcde836c4aa87b56b9775c3cd
+ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660483"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35114970"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Información general de Microsoft 365 Business
 
@@ -60,3 +60,5 @@ Para ver la lista completa de las características de seguridad, consulte [Micro
 - Si tiene un partner, obtendrá Microsoft 365 Business: [Obtener Microsoft 365 Business desde el Centro de partners de Microsoft](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 
 - Si no tiene un partner y quiere obtener Microsoft 365 Business, puede [comprarlo aquí](https://www.microsoft.com/microsoft-365/business) y seguir las instrucciones de [suscripción](sign-up.md) .
+
+- También puede ir a Microsoft [Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) para comprar Microsoft 365 Business y obtener ayuda de configuración.
