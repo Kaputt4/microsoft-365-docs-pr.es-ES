@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2bb13d2af70b90f8c98a4bb902156f840e7f57f1
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8ac644ccd7772d8e4c53395c8a42ff6ddbd683a6
+ms.sourcegitcommit: a6878de8ab977b675a45fc847ff46a9c0365dc56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289011"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35231863"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades
 
@@ -98,7 +98,7 @@ Para obtener más información acerca de la compatibilidad con clientes de Offic
 - [Compatibilidad con aplicaciones cliente de Office 365: autenticación moderna](https://docs.microsoft.com/en-us/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## <a name="protecting-administrator-accounts"></a>Protección de las cuentas de administrador
-Azure AD ofrece una forma sencilla de empezar a proteger el acceso de administrador con una directiva de acceso condicional preconfigurada. En Azure AD, vaya a **acceso condicional** y busque esta directiva: **Directiva de línea de base: requerir MFA para administradores**. Seleccione esta directiva y, a continuación, seleccione **usar la Directiva inmediatamente**. 
+Azure AD ofrece una forma sencilla de empezar a proteger el acceso de administrador con una directiva de acceso condicional preconfigurada. En Azure AD, vaya a **acceso condicional** y busque esta directiva: **Directiva de línea de base: requerir MFA para administradores (versión preliminar)**. Seleccione esta directiva y, a continuación, seleccione **usar la Directiva inmediatamente**. 
 
 Esta directiva requiere MFA para los siguientes roles:
 - Administradores globales
