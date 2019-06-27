@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 843a8cd066bbaf87a8b2b7cc74d8817207e47153
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 9c0e6481d0dc80e7cf03de2b748935c2f59f132a
+ms.sourcegitcommit: e54ec86310a18101f4688890cd5a9fc16bbe6f55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283472"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35257823"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías de escritorio administradas de Microsoft
 
@@ -39,12 +39,10 @@ PBX en la nube para Skype empresarial online | Esta característica está dispon
  |
  --- | ---
 Credential Guard |  Microsoft le proporcionará instrucciones y administrará los aspectos de la nube de esta característica.
-Protección de dispositivos (control de aplicaciones de Windows Defender) | Microsoft manAged Desktop creará la Directiva. <br><br>El cliente administrará las firmas.
-Administración de AppLocker |  Microsoft creará la Directiva. <br><br>El cliente administrará las firmas.
 Virtualización de aplicaciones (App-V) |    El escritorio administrado de Microsoft no admite este tipo de implementación ya que no es compatible con Intune.
 Virtualización de la experiencia del usuario (UE-V) | No se usa con los dispositivos administrados por escritorio administrado por Microsoft.
 Experiencia de usuario administrada  | No se usa con los dispositivos administrados por escritorio administrado por Microsoft. MDM se usa como solución para la administración de dispositivos.
-Protección contra amenazas avanzada de Windows Defender |   Lo usa Microsoft manAged Desktop para administrar las directivas de seguridad de dispositivos. 
+Protección contra amenazas avanzada de Windows Defender |   Lo usa Microsoft Managed Desktop para administrar las directivas de seguridad de dispositivos. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
