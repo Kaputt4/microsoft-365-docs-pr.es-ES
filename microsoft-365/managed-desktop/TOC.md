@@ -4,6 +4,7 @@
 ### [Tecnologías en el escritorio administrado por Microsoft](intro/technologies.md)
 ## [Descripción del servicio de escritorio administrado de Microsoft](service-description/index.md)
 ### [Regiones e idiomas admitidos](service-description/regions-languages.md)
+### [Ciclo de vida del producto](service-description/device-lifecycle.md)
 ### [Dispositivos de programa](service-description/device-list.md)
 #### [Dispositivos de programa archivados](service-description/archived-device-list.md)
 ### [Servicios de dispositivos](service-description/device-services.md)
