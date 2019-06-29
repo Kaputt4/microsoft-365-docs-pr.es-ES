@@ -3,18 +3,18 @@ title: Implementación de aplicaciones para dispositivos de escritorio administr
 description: Información para agregar e implementar aplicaciones en dispositivos de escritorio administrados por Microsoft.
 keywords: Escritorio administrado por Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de LOB
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5ccb240460958d5978f4fd19e08652123790784e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5eac2e8c3023015bd034c51ad7e16a669a484772
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282526"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390427"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>Implementar aplicaciones en dispositivos de escritorio administrados por Microsoft
-Parte del escritorio administrado de incorporación a Microsoft incluye la adición e implementación de aplicaciones en los dispositivos del usuario. Una vez que esté usando Microsoft manAged Desktop portal, puede Agregar e implementar sus aplicaciones. 
+Parte del escritorio administrado de incorporación a Microsoft incluye la adición e implementación de aplicaciones en los dispositivos del usuario. Una vez que esté usando Microsoft Managed Desktop portal, puede Agregar e implementar sus aplicaciones. 
 
 El proceso general tiene el siguiente aspecto:
 1. [Agregar aplicaciones a Microsoft Managed Desktop portal](#1) : esto puede ser una aplicación de línea de negocio (LOB) existente o aplicaciones de Microsoft Store para empresas que haya sincronizado con Intune. 
@@ -23,20 +23,20 @@ El proceso general tiene el siguiente aspecto:
 
 <span id="1" />
 
-## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Paso 1: agregar aplicaciones a Microsoft manAged Desktop portal
+## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Paso 1: agregar aplicaciones a Microsoft Managed Desktop portal
 Puede agregar aplicaciones [Win32, o aplicaciones basadas en MSI de Windows](#lob-apps)o [aplicaciones de Microsoft Store for Business](#msfb-apps) a escritorio administrado por Microsoft y, a continuación, implementarlas en dispositivos de escritorio administrados por Microsoft.
 
 <span id="lob-apps">
 
 ###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32 o aplicaciones basadas en MSI de Windows a escritorio administrado por Microsoft
 
-Puede Agregar las aplicaciones de línea de negocio (LOB) a Microsoft manAged Desktop portal. Para obtener información sobre los requisitos de las aplicaciones instaladas en dispositivos de escritorio administrados por Microsoft, consulte requisitos de la [aplicación de escritorio administrada de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements).
+Puede Agregar las aplicaciones de línea de negocio (LOB) a Microsoft Managed Desktop portal. Para obtener información sobre los requisitos de las aplicaciones instaladas en dispositivos de escritorio administrados por Microsoft, consulte requisitos de la [aplicación de escritorio administrada de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements).
 
 En este procedimiento, seleccionará el tipo de aplicación que desea agregar y, después, configurará y cargará el origen de la aplicación. 
 
-**Para agregar la aplicación LOB o la aplicación de Windows a Microsoft manAged Desktop portal**
+**Para agregar la aplicación LOB o la aplicación de Windows a Microsoft Managed Desktop portal**
 
-Puede iniciar sesión en el portal de escritorio administrado de Microsoft, o iniciar sesión en Intune y, a continuación, buscar Microsoft manAged Desktop. Se mostrará el inicio de sesión en Microsoft manAged Desktop portal. 
+Puede iniciar sesión en el portal de escritorio administrado de Microsoft, o iniciar sesión en Intune y, a continuación, buscar Microsoft Managed Desktop. Se mostrará el inicio de sesión en Microsoft Managed Desktop portal. 
 
 1.  Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mmdportal). 
 2.  En **inventario**, seleccione **aplicaciones**.
@@ -55,7 +55,7 @@ Si no te has registrado en Microsoft Store para empresas, puedes registrarte en 
 1. Inicie sesión en [Microsoft Store para empresas](https://businessstore.microsoft.com) con su cuenta de administrador de Microsoft Store for Business.
 2. Seleccione **comprar para mi grupo**.
 3. Use la búsqueda para encontrar la aplicación que quiera y seleccione la aplicación.
-4. En los detalles del producto, seleccione **obtener la aplicación**. Microsoft Store agrega la aplicación a **productos & Services** para la organización.
+4. En los detalles del producto, seleccione **obtener la aplicación**. Microsoft Store agrega la aplicación a los **productos & Services** para la organización.
 
 **Para forzar una sincronización entre Intune y Microsoft Store para empresas**
 1. Iniciar sesión en [Azure portal](https://portal.azure.com/) como administrador de Intune o administrador global para su espacio empresarial

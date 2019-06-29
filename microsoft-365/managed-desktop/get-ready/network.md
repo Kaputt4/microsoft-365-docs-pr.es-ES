@@ -3,16 +3,16 @@ title: Configuración de red para el escritorio administrado por Microsoft
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4cfaffe25638de80d23c3e681e50cbb544ca961
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 333fb51fe9d7df7c5ec47c2e7a812cd489c36d23
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289105"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390497"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el escritorio administrado por Microsoft
 
@@ -33,16 +33,16 @@ El proxy o el Firewall deben admitir TLS 1,2. De lo contrario, es posible que lo
 
 ### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Extremos permitidos: específicos para el escritorio administrado de Microsoft
 
-Microsoft manAged Desktop usa el portal de Azure para hospedar su consola Web. Las siguientes direcciones URL de la tabla siguiente deben estar en la lista de permitidos del proxy y del firewall para que los dispositivos de escritorio administrados por Microsoft puedan comunicarse con los servicios de Microsoft.  
+Microsoft Managed Desktop usa el portal de Azure para hospedar su consola Web. Las siguientes direcciones URL de la tabla siguiente deben estar en la lista de permitidos del proxy y del firewall para que los dispositivos de escritorio administrados por Microsoft puedan comunicarse con los servicios de Microsoft.  
 
 Tenga en cuenta que la dirección URL del escritorio administrada de Microsoft siguiente se usa para cualquier cosa que el servicio se ejecuta en la API de cliente. Los clientes deben asegurarse de que esta dirección URL siempre es accesible en su red corporativa.
 
 Servicio de Microsoft  | Direcciones URL necesarias en la lista de permitidos 
 --- | --- | ---
-Escritorio administrado por Microsoft | Prod-mwaas-Services-customerapi.azurewebsites.net
-Obtener ayuda | \*. support.Services.Microsoft.com  <br>inprod.support.Services.Microsoft.com  <br>supportchannels.Services.Microsoft.com  <br>Graph.Windows.net  <br>login.Windows.net  <br>Prod-mwaas-Services-customerapi.azurewebsites.net
-Asistencia rápida | remoteassistance.support.Services.Microsoft.com <br>Relay.support.Services.Microsoft.com <br>channelwebsdks.azureedge.net  <br>Web.Vortex.Data.Microsoft.com  <br>Gateway.ChannelServices.Microsoft.com <br>\*. Lync.com
-Asistente para soporte y recuperación de Microsoft para Office 365 | \*. apibasic.Diagnostics.Office.com  <br>\*. API.Diagnostics.Office.com
+Escritorio administrado por Microsoft | prod-mwaas-services-customerapi.azurewebsites.net
+Obtener ayuda | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+Asistencia rápida | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
+Asistente para soporte y recuperación de Microsoft para Office 365 | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
  
 
 ### <a name="endpoints-allowed---other-microsoft-products"></a>Extremos permitidos: otros productos de Microsoft

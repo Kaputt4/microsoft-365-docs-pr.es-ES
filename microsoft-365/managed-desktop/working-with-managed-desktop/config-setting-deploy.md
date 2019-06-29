@@ -3,16 +3,16 @@ title: Implementar opciones configurables en el escritorio administrado de Micro
 description: Implementar y realizar un seguimiento de los cambios de configuración configurables en el escritorio administrado de Microsoft.
 keywords: Escritorio administrado por Microsoft, Microsoft 365, servicio, documentación, implementar, implementación por fases, configuración configurable
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4662373b926d07558ecedd05c9dfcf472ceb6357
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfa769cab9f8d812fa2533232f66b0d4f8a4edb7
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278442"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390517"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Implementar y realizar un seguimiento de las opciones configurables-escritorio administrado por Microsoft
 
@@ -24,7 +24,7 @@ Estos son los statues que verá para cada implementación.
 
 Estado  | Explicación 
 --- | --- 
-Implementar | El cambio está esperando a que se implemente en este grupo.
+Implementación | El cambio está esperando a que se implemente en este grupo.
 En curso | El cambio se aplica a los dispositivos activos en este grupo. 
 Completar | El cambio se completó en todos los dispositivos activos de este grupo. 
 Failed | Se produjo un error en el cambio en un 10% de los dispositivos activos del grupo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con las operaciones de escritorio administradas de Microsoft para solucionar problemas de la implementación. 
@@ -43,7 +43,7 @@ En estas instrucciones se mostrará la imagen de fondo del escritorio. Una vez q
 
 ![Introducción al estado de implementación de configuración configurable](images/deploy-cs-overview.png)
 
-Microsoft manAged Desktop recomienda implementar en grupos de implementación en este orden: test, First, Fast y, a continuación, general. 
+Microsoft Managed Desktop recomienda implementar en grupos de implementación en este orden: test, First, Fast y, a continuación, general. 
 
 Cuando se completen los cambios en cada grupo, el estado cambiará a **completa**.
 
@@ -63,6 +63,6 @@ Mostraremos los pasos para revertir un cambio con la imagen de fondo de escritor
 
 ![Reversión de implementación de la configuración configurable](images/config-setting-revert.png) 
 
-## <a name="additional-resources"></a>Recursos adicionales
+## <a name="additional-resources"></a>Otros recursos
 - [Información general de configuración configurable](config-setting-overview.md)
-- [Referencia de opciones conFigurables](config-setting-ref.md) 
+- [Referencia de opciones configurables](config-setting-ref.md) 

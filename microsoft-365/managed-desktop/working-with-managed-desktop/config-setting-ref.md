@@ -3,18 +3,18 @@ title: Referencia de configuración configurable para escritorio administrado de
 description: Establecer categorías para las opciones configurables en el escritorio administrado de Microsoft
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: da8f88251f6d1ae3185641dd408b29aa41cd7ea9
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278323"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390417"
 ---
-# <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referencia de opciones conFigurables-escritorio administrado por Microsoft
+# <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referencia de opciones configurables-escritorio administrado por Microsoft
 
 En este tema se enumeran las categorías de configuración que los clientes pueden configurar con el escritorio administrado de Microsoft. Cada categoría de configuración incluye información sobre los requisitos, procedimientos recomendados y cómo personalizar la categoría de configuración. 
 
@@ -117,7 +117,7 @@ Proporcione el nombre de dominio completo (FQDN) para los sitios de intranet o d
 6. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
 ## <a name="proxy"></a>Proxy
-Puede administrar la configuración del proxy de red de su organización. Agregue el servidor proxy y el número de puerto y, a continuación, agregue las excepciones de sitio proxy. Microsoft manAged Desktop incluye un conjunto de excepciones de proxy predeterminadas necesarias para que funcione el servicio. La lista de exclusión predeterminada solo puede ser modificada por el servicio de escritorio administrado de Microsoft.  Para obtener más información, consulte [configuración de red para escritorio administrado de Microsoft](../get-ready/network.md). 
+Puede administrar la configuración del proxy de red de su organización. Agregue el servidor proxy y el número de puerto y, a continuación, agregue las excepciones de sitio proxy. Microsoft Managed Desktop incluye un conjunto de excepciones de proxy predeterminadas necesarias para que funcione el servicio. La lista de exclusión predeterminada solo puede ser modificada por el servicio de escritorio administrado de Microsoft.  Para obtener más información, consulte [configuración de red para escritorio administrado de Microsoft](../get-ready/network.md). 
 
 Las excepciones de sitio de proxy que agregue en el portal de escritorio administrado de Microsoft se agregan a las excepciones predeterminadas de proxy incluidas en el servicio de escritorio administrado de Microsoft. 
 
@@ -142,6 +142,6 @@ Estos requisitos se deben cumplir con las excepciones de servidor proxy y de sit
 6. Repita los pasos 1-5 para cada sitio de confianza que desee agregar. 
 7. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
-## <a name="additional-resources"></a>Recursos adicionales
+## <a name="additional-resources"></a>Otros recursos
 - [Información general de configuración configurable](config-setting-overview.md) 
 - [Implementar opciones configurables](config-setting-deploy.md)

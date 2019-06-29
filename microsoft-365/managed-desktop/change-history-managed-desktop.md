@@ -8,12 +8,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 4cd61e333773ddeddc866481be7e1cfa283e4386
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 65602cb3175f8a930537746d831bb85f26de0383
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913031"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390367"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historial de cambios de la documentación de escritorio administrado de Microsoft
 
@@ -25,6 +25,8 @@ Tema nuevo o modificado | Descripción
 [Aplicaciones en el escritorio administrado de Microsoft](get-ready/apps.md) | Tema actualizado
 [Trabajar con los servicios de consultoría de Microsoft](get-ready/apps-mcs.md) | Tema nuevo
 [Roles y responsabilidades del escritorio administrado por Microsoft](intro/roles-and-responsibilities.md) | Tema actualizado
+[Ciclo de vida de productos de escritorio administrado de Microsoft](service-description/device-lifecycle.md) | Tema nuevo
+
 
 
 ## <a name="may-2019"></a>Mayo de 2019
