@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 9912b05c07599c5ad0c0ed7fec91ae2572bd2ead
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 322da1ccfbd0cf8b5070894580b06fb5b0283f40
+ms.sourcegitcommit: 1d5fc181036b673c4f0b9e161e19395dbfe5a304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289350"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "35411654"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -91,7 +91,7 @@ Para crear una directiva de acceso condicional, haga lo siguiente:
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
 |Usuarios y grupos|Incluir|Seleccionar usuarios y grupos: selecciona un grupo de seguridad específico que contiene usuarios de destino|Comenzar con el grupo de seguridad que incluye usuarios de prueba|
-||Excluir|Grupo de seguridad de excepción; cuentas de servicio (identidades de aplicación)|PerTenencia modificada en una base de tiempo necesaria|
+||Excluir|Grupo de seguridad de excepción; cuentas de servicio (identidades de aplicación)|Pertenencia modificada en una base de tiempo necesaria|
 |Aplicaciones en la nube|Incluir|Seleccione las aplicaciones a las que desea que se aplique esta regla. Por ejemplo, seleccione Office 365 Exchange Online||
 |Condiciones|Configurado|Sí|Configuración específica del entorno y las necesidades|
 |Riesgo de inicio de sesión|Nivel de riesgo||Vea las instrucciones de la tabla siguiente|
@@ -176,8 +176,8 @@ Inicie sesión en [Microsoft Azure Portal (http://portal.azure.com)](http://port
 
 | Tipo | Propiedades | Valores                  | Notas |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | Permitir acceso            | True  |
-|      | Access     | Exigir cambio de contraseña | True  |
+|      | Acceder     | Permitir acceso            | True  |
+|      | Acceder     | Exigir cambio de contraseña | True  |
 
 **Revisión:** no aplicable
 
@@ -192,7 +192,7 @@ Cree una directiva para cada plataforma:
 - Android
 - Windows 10
 
-Para crear una nueva Directiva de protección de aplicaciones, inicie sesión en el portal de Microsoft Azure con sus credenciales de administración y, a continuación, vaya a directivas de protección de aplicaciones de **> de aplicaciones móviles**. Elija **Agregar una directiva**.
+Para crear una nueva Directiva de protección de aplicaciones, inicie sesión en el portal de Microsoft Azure con sus credenciales de administración y, a continuación, vaya a **aplicaciones móviles > las directivas de protección de aplicaciones**. Elija **Agregar una directiva**.
 
 Hay ligeras diferencias en las opciones de directiva de protección de aplicaciones entre iOS y Android. La siguiente directiva es específicamente para Android. Use esto como guía para sus otras directivas.
 
@@ -219,19 +219,19 @@ En las siguientes tablas se describe la configuración recomendada:
 ||Restringir cortar, copiar y pegar con otras aplicaciones|Aplicaciones administradas por directiva con pegar||
 ||Restringir contenido web para mostrar en Managed Browser|No||
 ||Cifrar datos de aplicación|Sí|En iOS, seleccione la opción: Cuando el dispositivo está bloqueado|
-||DesHabilitar el cifrado de aplicaciones cuando el dispositivo está habilitado|Sí|DesHabilitar esta opción para evitar el cifrado doble|
+||Deshabilitar el cifrado de aplicaciones cuando el dispositivo está habilitado|Sí|Deshabilitar esta opción para evitar el cifrado doble|
 ||Deshabilitar la sincronización de contactos|No||
-||DesHabilitar impresión|No||
+||Deshabilitar impresión|No||
 |Acceso|Requerir PIN para acceder|Sí||
-||Tipo de selección|Numeric||
+||Tipo de selección|Numérico||
 ||Permitir PIN sencillo|No||
-||Longitud del PIN|6,5||
+||Longitud del PIN|6 ||
 ||Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN|Sí||
-||DesHabilitar PIN de la aplicación cuando el PIN del dispositivo esté administrado|Sí||
+||Deshabilitar PIN de la aplicación cuando el PIN del dispositivo esté administrado|Sí||
 ||Requerir credenciales corporativas para el acceso|No||
 ||Volver a comprobar los requisitos de acceso después de (minutos)|semestre||
 ||Bloquear captura de pantalla y asistente de Android|No|En iOS esta opción no está disponible|
-|Requisitos de seguridad de inicio de sesión|Número máximo de intentos de PIN|2,5|Restablecer PIN|
+|Requisitos de seguridad de inicio de sesión|Número máximo de intentos de PIN|5 |Restablecer PIN|
 ||Período de gracia sin conexión|720|Bloquear acceso|
 ||Intervalo sin conexión (días) antes de que se borren los datos de la aplicación|90|Borrar datos|
 ||Dispositivos con jailbreak o Rooting| |Borrar datos|
@@ -257,11 +257,15 @@ Para requerir aplicaciones aprobadas:
 
 7. Elija **seleccionar aplicaciones**y seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Office 365 Exchange Online. Elija **seleccionar** y **listo**.
 
-8. Pulse **Conceder** en la sección **Controles de acceso**.
+8. Elija **condiciones**, seleccione **plataformas de dispositivos**y, a continuación, elija **configurar** .
 
-9. Elija **conceder acceso**y seleccione **requerir aplicación cliente aprobada**. Para varios controles, seleccione **requerir los controles seleccionados**y, a continuación, elija **seleccionar**. 
+9. En **incluir**, elija **seleccionar plataformas de dispositivos**, seleccione **Android** e **iOS**. Haga clic en **listo** y vuelva a **realizar**
 
-10. Seleccione **Crear**.
+10. Pulse **Conceder** en la sección **Controles de acceso**.
+
+11. Elija **conceder acceso**y seleccione **requerir aplicación cliente aprobada**. Para varios controles, seleccione **requerir los controles seleccionados**y, a continuación, elija **seleccionar**. 
+
+12. Elija **Crear**.
 
 ## <a name="define-device-compliance-policies"></a>Definir directivas de cumplimiento de dispositivos
 
@@ -276,7 +280,7 @@ Cree una directiva para cada plataforma:
 - Windows 8,1 y versiones posteriores
 - Windows 10 y versiones posteriores
 
-Para crear directivas de cumplimiento de dispositivos, inicie sesión en el portal de Microsoft Azure con sus credenciales de administración y, a continuación, desplácese hasta **Intune > Device Compliance**. Seleccione **crear Directiva**.
+Para crear directivas de cumplimiento de dispositivos, inicie sesión en el portal de Microsoft Azure con sus credenciales de administración y, a continuación, navegue hasta **Intune > el cumplimiento de dispositivos**. Seleccione **crear Directiva**.
 
 Se recomiendan las siguientes opciones de configuración para Windows 10.
 
@@ -301,13 +305,13 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
+|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
 ||Contraseñas sencillas|Desbloquear||
 ||Tipo de contraseña|Valor predeterminado del dispositivo||
-||Longitud mínima de la contraseña|6,5||
-||Minutos máximos de inactividad antes de que se requiera la contraseña|15|Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores|
+||Longitud mínima de la contraseña|6 ||
+||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores|
 ||Expiración de contraseña (días)|41||
-||Número de contraseñas anteriores para impedir la reutilización|2,5||
+||Número de contraseñas anteriores para impedir la reutilización|5 ||
 ||Requerir contraseña cuando el dispositivo vuelve del estado de inactividad (móvil y holográfica)|Obligatoria|Disponible para Windows 10 y versiones posteriores|
 |Cifrado|Cifrado del almacenamiento de datos en el dispositivo|Obligatoria||
 |Seguridad del dispositivo|Éste|Obligatoria||
@@ -322,7 +326,7 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Reglas de protección contra amenazas avanzada de Windows Defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Medio||
+|Reglas de protección contra amenazas avanzada de Windows Defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)
 Antes de agregar una directiva para requerir equipos compatibles, asegúrese de inscribir los dispositivos para la administración en Intune. Se recomienda usar la autenticación multifactor antes de inscribir los dispositivos en Intune para asegurarse de que el dispositivo está en la posesión del usuario deseado. 
@@ -349,7 +353,7 @@ Para requerir equipos compatibles:
 
 10. Elija **conceder acceso**, seleccione requerir que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**y, a continuación, elija **seleccionar**. 
 
-11. Seleccione **Crear**.
+11. Elija **Crear**.
 
 Si su objetivo es requerir equipos *y* dispositivos móviles compatibles, no seleccione plataformas. Esto exige el cumplimiento para todos los dispositivos. 
 
@@ -375,7 +379,7 @@ Para requerir el cumplimiento de todos los dispositivos:
 
 9. Elija **conceder acceso**, seleccione requerir que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**y, a continuación, elija **seleccionar**. 
 
-10. Seleccione **Crear**.
+10. Elija **Crear**.
 
 Al crear esta Directiva, no seleccione plataformas. Esto aplica los dispositivos compatibles.
 
