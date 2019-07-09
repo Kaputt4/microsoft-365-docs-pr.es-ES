@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los directorios y redes en el entorno.
-ms.openlocfilehash: d9ab05c9ff7d0b926f147ee4f924d95f01ccffd1
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814621"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584576"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Paso 2: Preparación de los directorios y la red
 
@@ -80,7 +80,7 @@ Una forma de limitar el impacto del tráfico relacionado con la implementación 
 
   [Acerca de BITS](https://docs.microsoft.com/es-ES/windows/desktop/bits/about-bits)
 
-Si usa System Center Configuration Manager, también puede configurar los puntos de distribución habilitados para BITS o habilitar la multidifusión con WDS.
+Si usa la rama actual de System Center Configuration Manager, también puede configurar los puntos de distribución habilitados para BITS o habilitar la multidifusión con WDS.
 
 La limitación del tráfico específico significa que el tráfico de red normal se ve menos afectado al descargar las actualizaciones y las aplicaciones de equipos. Pero reservar un porcentaje específico de ancho de banda para estas tareas ayuda a asegurar que la productividad no se ve afectada por la implementación de Windows u Office y los procesos pueden seguir ejecutándose. Puede empeorar el tiempo de inactividad relacionado con la implementación, con usuarios que no pueden acceder a sus equipos mientras se ejecuta la implementación.
 
@@ -90,7 +90,7 @@ Afortunadamente, hay nuevas herramientas que facilitan la administración del im
 
 ## <a name="scavenging-bandwidth"></a>**Aprovechamiento del ancho de banda**
 
-Low Extra Delay Background Transport (LEDBAT), compatible con Windows Server 2019 y System Center Configuration Manager versión 1806, está diseñado para optimizar el tráfico de red en clientes de Windows.
+Low Extra Delay Background Transport (LEDBAT), compatible con Windows Server 2019 y la rama actual de System Center Configuration Manager, está diseñado para optimizar el tráfico de red en clientes de Windows.
 
 [10 características principales de red en Windows Server 2019: \#9 LEDBAT: Latency Optimized Background Transport](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -110,7 +110,7 @@ Nota: Windows BranchCache y Caché del mismo nivel son complementarias y pueden 
 
 [Windows BranchCache frente a caché del mismo nivel](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Optimización de entrega** La Optimización de entrega es otra tecnología de almacenamiento en caché de punto a punto que proporciona controles de red para las implementaciones. Use la Optimización de entrega de Windows 10 para actualizar aplicaciones UWP integradas, instalar aplicaciones desde Microsoft Store y actualizaciones de software con actualizaciones rápidas. Ha estado disponible desde las primeras versiones de Windows 10, aunque se ha integrado recientemente con System Center Configuration Manager. Desde Windows 10 versión 1803 nuevas opciones de configuración le permiten establecer límites de ancho de banda para actualizaciones en segundo plano y trabajos en primer plano como instalar una aplicación desde la Microsoft Store. Optimización de entrega de Windows ahora también es compatible con Office 365 ProPlus durante actualizaciones del cliente, disponible en todas los canales de actualización de cliente de Office 365 compatibles. La compatibilidad con la Optimización de entrega de Windows durante la instalación inicial del cliente de Office 365 estará disponible próximamente.  
+**Optimización de entrega** La Optimización de entrega es otra tecnología de almacenamiento en caché de punto a punto que proporciona controles de red para las implementaciones. Use la Optimización de entrega de Windows 10 para actualizar aplicaciones UWP integradas, instalar aplicaciones desde Microsoft Store y actualizaciones de software con actualizaciones rápidas. Ha estado disponible desde las primeras versiones de Windows 10, aunque solo se ha integrado recientemente con la rama actual de System Center Configuration Manager. Desde Windows 10 versión 1803 nuevas opciones de configuración le permiten establecer límites de ancho de banda para actualizaciones en segundo plano y trabajos en primer plano como instalar una aplicación desde la Microsoft Store. Optimización de entrega de Windows ahora también es compatible con Office 365 ProPlus durante actualizaciones del cliente, disponible en todas los canales de actualización de cliente de Office 365 compatibles. La compatibilidad con la Optimización de entrega de Windows durante la instalación inicial del cliente de Office 365 estará disponible próximamente.  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

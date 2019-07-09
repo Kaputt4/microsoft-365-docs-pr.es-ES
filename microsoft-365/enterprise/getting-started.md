@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introducción al proceso de implementación de escritorio.
-ms.openlocfilehash: b9264f8d9232bf1b88372694d43e2d2c70c8cb70
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 60389149e286bca8e27f50dabee8aaf03f52c90c
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814661"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584527"
 ---
 # <a name="getting-started---desktop-deployment"></a>Introducción: Implementación de escritorio
 
@@ -86,7 +86,7 @@ Hacer clic y ejecutar es bastante diferente de los paquetes basados en MSI del p
 
 Antes de empezar, deberá crear un plan de alto nivel y obtener a el respaldo de los patrocinadores necesarios. La rueda del proceso de implementación describe los pasos más importantes para ayudarle a identificar los recursos y los miembros del equipo principales que deberá administrar en las siguientes áreas de la implementación.
 
-**[Paso 1: Disponibilidad de aplicaciones y dispositivos](https://aka.ms/mdd1) ** Para una implementación correcta debe conocer lo que tiene. Eso significa que debe realizar un inventario de los dispositivos y las aplicaciones y comprobar la compatibilidad. Para ayudarle con esto puede aprovechar las herramientas disponibles en nuestro servicio basado en la nube, Windows Analytics. Windows Analytics le permite aprovechar la inteligencia de compatibilidad y los datos de diagnóstico recopilados en cientos de millones de equipos, para evaluar las aplicaciones y los controladores en el dispositivo, de forma que puede establecer la preparación de sus equipos. Incluso puede exportar una lista de "Equipos listos para la implementación" de Windows Analytics a System Center Configuration Manager si lo usa, que le permite crear colecciones basadas en datos de equipos de destino cuando estén listos.
+**[Paso 1: Disponibilidad de aplicaciones y dispositivos](https://aka.ms/mdd1) ** Para una implementación correcta debe conocer lo que tiene. Eso significa que debe realizar un inventario de los dispositivos y las aplicaciones y comprobar la compatibilidad. Para ayudarle con esto puede aprovechar las herramientas disponibles en nuestro servicio basado en la nube, Desktop Analytics. Desktop Analytics le permite aprovechar la inteligencia de compatibilidad y los datos de diagnóstico recopilados en cientos de millones de equipos, para evaluar las aplicaciones y los controladores en el dispositivo para poder establecer la preparación de sus equipos. Incluso puede exportar una lista de "Equipos listos para la implementación" de Desktop Analytics a System Center Configuration Manager si lo usa, lo que le permite crear colecciones basadas en datos de equipos de destino cuando estén listos.
 
 
   [Empezar con Upgrade Readiness](https://docs.microsoft.com/es-ES/windows/deployment/upgrade/upgrade-readiness-get-started)

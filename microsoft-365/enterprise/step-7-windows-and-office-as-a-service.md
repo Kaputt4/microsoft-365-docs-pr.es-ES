@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo prepararse para mantener Windows y Office en su entorno.
-ms.openlocfilehash: 9cc550ca87c1c71ef4a01030ce93b6300fcc019d
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 6f3f5faf4c45829cdb4d2f9ac48ef0c9988ec270
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814601"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584566"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Paso 7: Mantenimiento de Windows y Office
 
@@ -37,7 +37,7 @@ ms.locfileid: "34814601"
 >Mantenimiento de Windows y Office es el séptimo paso del ciclo de proceso de implementación recomendado, que cubre los aspectos de planificación para preparar las actualizaciones semianuales. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
-Windows 10 y Office 365 ProPlus introducen nuevas opciones de mantenimiento, modelos de soporte y escalas de tiempo de actualización. Estos cambios simplifican el proceso para mantenerse al día con las características más recientes. Además de estas actualizaciones, hay nuevas opciones de configuración para habilitar planes de mantenimiento que se adapten a sus necesidades. Veamos cómo puede prepararse para las actualizaciones de canal semestrales que ofrecen nuevas características y funcionalidades en Windows 10 y Office 365 ProPlus al tiempo que aprovecha nuevas características de la rama actual de System Center Configuration Manager.
+Windows 10 y Office 365 ProPlus introducen nuevas opciones de mantenimiento, modelos de soporte y escalas de tiempo de actualización. Estos cambios simplifican el proceso para mantenerse al día con las características más recientes. Además de estas actualizaciones, hay nuevas opciones de configuración para habilitar planes de mantenimiento que se adapten a sus necesidades. Veamos cómo puede prepararse para las actualizaciones de canal semestrales que ofrecen nuevas características y funcionalidades en Windows 10 y Office 365 ProPlus mientras aprovecha nuevas características de la rama actual de System Center Configuration Manager.
 
 [Ayudar a los clientes a cambiar a Windows 10 y Office 365 ProPlus](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
@@ -127,7 +127,7 @@ Con una tecnología denominada "actualizaciones rápidas" en Windows y actualiza
 
 [Actualizaciones de calidad de Windows 10 explicadas y el final de actualizaciones de delta](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
-Windows Update para empresas y Windows Server Update Services han sido compatibles con las actualizaciones rápidas durante mucho tiempo, pero ahora han extendido esa compatibilidad a System Center Configuration Manager para que también pueda usar actualizaciones rápidas.
+Windows Update para empresas y Windows Server Update Services han sido compatibles con las actualizaciones rápidas durante mucho tiempo, pero ahora hemos extendido esa compatibilidad a la rama actual de System Center Configuration Manager para que también pueda usar las actualizaciones rápidas.
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
@@ -143,7 +143,7 @@ Esas son las consideraciones para las actualizaciones mensuales, pasemos ahora a
 
 Como tratamos en Preparación de dispositivos y aplicaciones, es preferible empezar sus preparativos para las actualizaciones grandes con las mismas herramientas establecidas en el Paso 1 del proceso de implementación.
 
-En cuanto a las herramientas, puede usar las características de directivas con Windows Update para empresas, administración de actualizaciones de software con System Center Configuration Manager, Windows Server Update Services (WSUS) o actualizar las directivas establecidas por Microsoft Intune. Si le preocupa el ancho de banda de la red, vea el paso 2: Preparación de directorios y la red para saber más sobre sus opciones.
+En cuanto a las herramientas, puede usar las opciones de directivas con Windows Update para empresas, administración de actualizaciones de software con la rama actual de System Center Configuration Manager, Windows Server Update Services (WSUS) o actualizar las directivas establecidas por Microsoft Intune. Si le preocupa el ancho de banda de la red, vea Paso 2: preparación de directorios y red para saber más sobre cómo reducir el tráfico de red con optimización de distribución y otras tecnologías de almacenamiento en caché punto a punto.
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -155,7 +155,7 @@ En cuanto a las herramientas, puede usar las características de directivas con 
 
 #### <a name="upgrade-task-sequences"></a>Actualizar las secuencias de tareas
 
-Instalar las actualizaciones características más grandes a través de rutinas de administración de actualización de software, pero muchas organizaciones optarán por usar una secuencia de tarea actualizada con System Center Configuration Manager, o el kit de herramientas de implementación de Microsoft
+Instalar las actualizaciones de características más grandes a través de rutinas de administración de actualización de software estándar es una opción admitida, pero muchas organizaciones optarán por usar una secuencia de tareas de actualización con la rama actual de System Center Configuration Manager o Microsoft Deployment Toolkit.
 
 Una secuencia de tareas le permite crear comprobaciones o tareas personalizadas antes de instalar la actualización de características y le permite realizar tareas personalizadas tras la instalación de la actualización. Las tareas postactualización podrían incluir suspender servicios de forma temporal en caso necesario durante la actualización, la instalación y sustitución de controladores, la aplicación de mejoras o las características de personalización de la barra de tareas y la aplicación de mejoras personalizadas de Windows 10.
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre las opciones de implementación del sistema operativo y actualizaciones de características.
-ms.openlocfilehash: e26bbea4e0507c66102931eb102ce96d2620cfc7
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 16af9a57623ffbdd73d97d44993c36ce57889eaf
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814631"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584546"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Paso 6: Implementación del sistema operativo y actualizaciones de características
 
@@ -49,7 +49,7 @@ Muchas organizaciones usan el proceso de creación de imágenes de equipo para c
 
 Si se decide por la captura de la imagen, se recomienda automatizar la mayor parte posible para garantizar la imagen de mejor calidad y un proceso que se pueda repetir. Para la mayoría de las implementaciones, también se recomienda incluir la menor cantidad de personalización posible y de aplicaciones preinstaladas en la imagen de Windows antes de la captura. Es lo que se denomina un enfoque de "imagen ligera", que puede ahorrar ancho de banda general en la red mediante la eliminación del número de aplicaciones en la imagen. Si se empieza con una imagen base ligera, se pueden crear niveles sobre las aplicaciones requeridas, los idiomas y las configuraciones que se adapten de forma dinámica a los usuarios.
 
-Durante el proceso de compilación y captura, herramientas como System Center Configuration Manager y Microsoft Deployment Toolkit usan la Herramienta de preparación del sistema, o Sysprep, junto con el comando "Generalizar" para volver a sellar la imagen antes de capturar la instalación de Windows 10 como una imagen.
+Durante el proceso de compilación y captura, herramientas como System Center Configuration Manager (rama actual) y Microsoft Deployment Toolkit usan la Herramienta de preparación del sistema (Sysprep), junto con el comando "Generalizar" para volver a sellar la imagen antes de capturar la instalación de Windows 10 como una imagen.
 
 La imagen capturada tendrá el formato de imagen de Windows, o WIM, como los medios de instalación estándar de Windows. Una vez obtenido el archivo WIM personalizado, puede usar otra secuencia de tareas como parte de la implementación de sistema operativo en System Center Configuration Manager o Microsoft Deployment Toolkit para realizar tareas relacionadas con la implementación, para aplicar la imagen y ejecutar tareas antes y después de aplicar la imagen de Windows.
 
@@ -76,7 +76,7 @@ Los tres escenarios tienen en común que ejecutan una secuencia de tareas, y en 
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>Actualización local con automatización de secuencias de tareas
 
-Además de estos tipos de implementación, ahora hay una nueva opción disponible como secuencia de tareas de System Center Configuration Manager con Windows 10: la actualización local con la secuencia de tareas Actualizar.
+Además de estos tipos de implementación, ahora hay una nueva opción disponible como secuencia de tareas de System Center Configuration Manager (rama actual) con Windows 10: la actualización local con la secuencia de tareas de actualización.
 
 En las actualizaciones locales desde una versión anterior de Windows no se necesita una secuencia de tareas, pero es un enfoque recomendado en la implementación de escala empresarial. Una actualización local no permite aplicar una imagen personalizada con las aplicaciones, pero se puede actualizar el archivo install.wim predeterminado con servicios sin conexión. Por ejemplo, se puede hacer para asegurarse de que tiene aplicadas las actualizaciones de Windows más recientes antes de realizar las actualizaciones.
 
@@ -100,7 +100,7 @@ Mientras planea la implementación, tendrá que seleccionar como destino los equ
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
-### <a name="recommended-tools-system-center-configuration-manager-and-the-microsoft-deployment-toolkit"></a>Herramientas recomendadas: System Center Configuration Manager y Microsoft Deployment Toolkit
+### <a name="recommended-tools-system-center-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Herramientas recomendadas: System Center Configuration Manager (rama actual) y Microsoft Deployment Toolkit
 
 Con independencia del tipo de implementación elegido, deberá asegurarse de que se automatiza lo máximo posible para la previsibilidad y capacidad de repetición. Microsoft ofrece dos soluciones para automatizar la implementación de sistema operativo mediante secuencias de tareas automatizadas:
 

@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: c056aba81edc079f0577dea8d4ef535d7e6cc32a
-ms.sourcegitcommit: a84cf473bc61a7bb1cfca221cf435e0a418305b2
+ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576510"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584536"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
 Estos laboratorios prácticos para descargar se centran en la implementación de Windows 10 y Office 365 junto con las consideraciones de administración y configuración posteriores a la implementación. Este aprendizaje es muy recomendable para las organizaciones que preparan el fin del período activo de Windows 7, pero también se aplica si en la actualidad usa Windows 10 y Office 365 Plus u Office 2019. Se incluyen guías para Windows 10, Office 365 ProPlus, Enterprise Mobility + Security y productos y servicios relacionados.
 
-Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos que ejecuten Windows 10 Enterprise y Office 365 ProPlus. Abarcan los pasos y las herramientas que se describen en la rueda de implementación de escritorio, incluyendo el System Center Configuration Manager, Windows Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
+Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos que ejecuten Windows 10 Enterprise y Office 365 ProPlus. Los laboratorios abarcan los pasos y las herramientas que se describen en la rueda de implementación de escritorio, incluyendo el System Center Configuration Manager, Desktop Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 
 Como parte del proceso de [implementación de escritorio](http://www.aka.ms/howtoshift) para Windows 10 y Office 365 ProPlus, se recomienda empezar con un entorno de laboratorio aislado cuando comience a explorar las actualizaciones de la herramienta de implementación y a probar su automatización en el marco de la implementación.
 
@@ -60,7 +60,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 ### <a name="device-and-app-readiness"></a>**Preparación de dispositivos y aplicaciones**
 
-  - Windows Analytics
+  - Desktop Analytics
   - Modo de empresa y la lista de sitios del modo de empresa de Internet Explorer
 
 ### <a name="directory-and-network-readiness"></a>**Preparación de los directorios y la red**
