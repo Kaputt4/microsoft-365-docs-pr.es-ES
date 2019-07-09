@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Actualizaciones automatizadas de Windows 7 a Windows 10 para grandes empresas
-ms.openlocfilehash: 4e07ae23f063bdc714d5dddd8cdb8d8c41e25eac
-ms.sourcegitcommit: 12c4d5444d6e0e8825fc85e3e8453fa376746495
+ms.openlocfilehash: 6fc22ad7ae8b0a34384818bc77813c6802609b89
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35395418"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584516"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Actualizaciones locales automatizadas de Windows 7 a Windows 10 para grandes empresas
 
 A partir del 14 de enero de 2020, ya no se proporcionarán actualizaciones de seguridad ni soporte técnico para equipos PC que ejecutan Windows 7. A pocos meses de distancia para pasar de Windows 7 a Windows 10 y varias opciones para implementar, una de las preguntas más frecuentes en la comunidad de TI es la manera más rápida de pasar de Windows 7 a Windows 10. La respuesta es llevar a cabo actualizaciones locales para equipos existentes para puede reducir el enfoque en varios aspectos del proceso de implementación de escritorio.
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png)
+<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 Al usar las actualizaciones locales, se reduce considerablemente el ámbito de varios procesos de implementación de escritorio, especialmente:
 
