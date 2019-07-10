@@ -8,16 +8,21 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 65602cb3175f8a930537746d831bb85f26de0383
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 4915bf5d1b89720c65a5134b23d9d837febff357
+ms.sourcegitcommit: 184957e2878388e0d427a7ee47577d29c4e3c483
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390367"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605969"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historial de cambios de la documentación de escritorio administrado de Microsoft
 
 En este tema se enumeran los temas nuevos y actualizados de la [documentación del escritorio administrado de Microsoft](index.yml).
+
+## <a name="july-2019"></a>2019 de julio
+Tema nuevo o modificado | Descripción
+--- | ---
+[Trabajar con los servicios de consultoría de Microsoft](get-ready/apps-mcs.md) | Tema actualizado
 
 ## <a name="june-2019"></a>Junio de 2019
 Tema nuevo o modificado | Descripción
