@@ -1,0 +1,4 @@
+<span data-ttu-id="e3f2a-101">--title: Microsoft Managed Desktop Reference Description: información detallada sobre algunas palabras clave de características de escritorio administradas de Microsoft: escritorio administrado por Microsoft, Microsoft 365, Service, Documentation ms. Service: M365-MD Author: jaimeo MS. localizationpriority: normal</span><span class="sxs-lookup"><span data-stu-id="e3f2a-101">-- title: Microsoft Managed Desktop reference description: Detailed information on certain Microsoft Managed Desktop features keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation ms.service: m365-md author: jaimeo ms.localizationpriority: normal</span></span>
+---
+
+# <a name="microsoft-managed-desktop-reference"></a><span data-ttu-id="e3f2a-102">Referencia del escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="e3f2a-102">Microsoft Managed Desktop reference</span></span>
