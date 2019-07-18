@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365 para las campañas.
-ms.openlocfilehash: 8b83fa9c145f2c17347fc4c2983c64d4003f46c8
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 686a69a7e712e80c4f58cade24a69465fb4e7d33
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183422"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772457"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteger equipos con Windows 10 PC y Mac no administrados
 
-Puede administrar equipos con Windows 10 y equipos Mac mediante la inscripción en Microsoft Intune, lo que le permite asegurarse de que estos son correctos y seguros antes de obtener acceso a los datos de su entorno. Sin embargo, muchas campañas y pequeñas empresas incluyen el personal que lleva sus propios dispositivos (BYOD), que no se administrarán en la organización. Para estos equipos PC y Mac no administrados, use este artículo para asegurarse de que las capacidades de seguridad mínima están configuradas. 
+Puede administrar equipos con Windows 10 PC y Mac mediante la inscripción en Microsoft Intune, lo que le permite asegurarse de que THT son correctos y seguros antes de obtener acceso a los datos de su entorno. Sin embargo, muchas campañas y pequeñas empresas incluyen el personal que lleva sus propios dispositivos (BYOD), que no se administrarán en la organización. Para estos equipos PC y Mac no administrados, use este artículo para asegurarse de que las capacidades de seguridad mínima están configuradas. 
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -69,7 +69,7 @@ Siempre debe ejecutar Firewall de Windows incluso si tiene activado otro Firewal
 El cifrado de disco protege los datos cuando se pierden o roban dispositivos. FileVault el cifrado de disco completo ayuda a impedir el acceso no autorizado a la información del disco de inicio. Consulte [usar FileVault para cifrar el disco de inicio en su Mac](https://support.apple.com/HT204837) para obtener instrucciones.
 
 **Proteger su Mac del malware**<p>
-Microsoft le recomienda que instale y use un software antivirus fiable en su Mac. Vea el siguiente artículo para obtener una lista de opciones: [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
+Microsoft recomienda instalar y usar software antivirus fiable en su Mac. Vea el siguiente artículo para obtener una lista de opciones: [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
 También puede reducir el riesgo del malware mediante el uso de software solo de orígenes confiables. Las opciones de configuración de seguridad & preferencias de privacidad le permiten especificar los orígenes del software instalado en su Mac. Consulte [proteger su Mac del malware](https://support.apple.com/kb/PH25087) para obtener más información.
 

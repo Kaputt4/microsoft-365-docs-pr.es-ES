@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Información general de configuración de Microsoft 365 para las campañas
-ms.openlocfilehash: 40894a15efd486ec1e5052725acc46f63cd811b1
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 882ca516d0e06658e24f675d5a1fe2b21a3c98b3
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183427"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772337"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Configurar Microsoft 365 para las campañas
 
@@ -38,7 +38,7 @@ El siguiente diagrama describe cómo los administradores configuran Microsoft 36
 
 ![Pasos para configurar Microsoft 365 para las campañas](media/M365-democracy-SetUpProcess.png)
 
-Para las campañas que se cumplen para precios especiales, empiece [solicitando una invitación de Microsoft](https://m365forcampaigns.microsoft.com/)y, a continuación, Regístrese en [Microsoft 365 para las campañas](m365-campaigns-sign-up.md). Para completar la instalación, [ejecute el asistente](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) para la instalación para configurar las opciones principales.
+Para las campañas que se cumplen para precios especiales, empiece [solicitando una invitación de Microsoft](https://m365forcampaigns.microsoft.com/)y, a continuación, Regístrese en [Microsoft 365 para las campañas](m365-campaigns-sign-up.md). Para completar la configuración, [ejecute el asistente](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) para la instalación y configure las opciones principales.
 
 Para todas las demás organizaciones, una vez que se haya [registrado en Microsoft 365 Business](../business/sign-up.md), complete [la instalación ejecutando el Asistente de configuración](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) para configurar las opciones principales.
 

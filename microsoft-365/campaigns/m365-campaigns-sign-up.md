@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Registro paso a paso para Microsoft 365 para las campañas. Proteja su campaña de Cybersecurity amenazas para el correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: b1af4138da6f935fc2745444eea4ad82f9f128d6
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183423"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772467"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Inscríbase en Microsoft 365 para las campañas 
 
@@ -47,7 +47,7 @@ Esta es la manera de completar el registro de Microsoft 365 para las campañas.
     > Si ya tiene una suscripción a Office 365 para empresas y desea agregar la oferta de Microsoft 365 para las campañas, vaya a [Agregar microsoft 365 para las campañas a una suscripción existente](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
 1. **En la página Microsoft 365 Business**, escriba los detalles de su empresa. Para la **dirección de correo electrónico comercial**, use una dirección de correo electrónico actual. Solo necesitamos esta dirección para estar en contacto con usted durante el proceso de instalación. Seleccione **Siguiente**.
 1. **En la página crear su identificador de usuario**:
-    1. En **nombre de usuario**, escriba el nombre o alias que desee para la dirección de correo electrónico. Por ejemplo, es posible que solo quiera que se le conozca como Alicia o Rob. En una campaña más grande, es posible que AliceC o AliceChavez sea más lógico.
+    1. En **nombre de usuario**, escriba el nombre o alias que desee para la dirección de correo electrónico. Por ejemplo, es posible que quiera que se lo sepa simplemente Alicia o Rob. En una campaña más grande, es posible que AliceC o AliceChavez sea más lógico.
     2. En **la compañía**, escriba el nombre de la campaña para la que trabaja. Por ejemplo, ContosoCampaign. Si ya tiene un dominio, use ese nombre aquí. 
     3. En **seleccionar un dominio**, seleccione **. onmicrosoft.com** por ahora. Podemos configurarlo con un dominio más adelante o ayudarle a conectar Microsoft 365 a un dominio que ya posee.
     4. Cree una contraseña y seleccione **crear mi cuenta**. 
@@ -63,7 +63,7 @@ Esta es la manera de completar el registro de Microsoft 365 para las campañas.
     1. Compruebe que el costo por usuario sea $5,00. 
     2. Si solo desea definir a sí mismo para ahora, seleccione **siguiente**. 
     3. Opcional: agregue ahora algunas licencias adicionales cambiando el número en el campo de **usuario** . [El personal con el que trabaje puede tener asignadas licencias a Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) en cualquier momento.
-7. **¿Cómo quiere pagar? página**: seleccione **nueva tarjeta de crédito**, escriba los detalles de la tarjeta de crédito de la empresa y seleccione **realizar pedido**. También es posible usar una cuenta bancaria si lo prefiere.
+7. **¿Cómo quiere pagar? página**: seleccione **nueva tarjeta de crédito**, escriba los detalles de la tarjeta de crédito de la empresa y seleccione **realizar pedido**. Si lo prefiere, también es posible usar una cuenta bancaria.
 8. **Esto puede tardar una página**: encontrará detalles sobre dónde iniciar sesión y su identificador de usuario. También enviaremos esta información a la dirección de correo electrónico que escribió en el paso 2 anterior.
 
 Se han completado los pasos de registro. Si desea continuar con los pasos siguientes, seleccione iniciar la **configuración**o vuelva más tarde para finalizar los pasos. Cuando esté listo, compruebe el correo electrónico (del paso 2) para buscar el nombre de usuario y la contraseña para que pueda iniciar sesión la próxima vez. Estos se denominan credenciales de administrador global o administrador.

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo requerir MFA y cómo configurar directivas de acceso condicional para Microsoft 365 Business.
-ms.openlocfilehash: 08e9365e8aad37e2412a6d739b41f2328c1aa277
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 570edce03a68dad56c895e2484a5162496d7a3eb
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183424"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772547"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Requerir la autenticación multifactor y configurar directivas de acceso condicional
 

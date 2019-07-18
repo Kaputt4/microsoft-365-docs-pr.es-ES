@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un espacio de colaboración para su equipo con Microsoft Teams.
-ms.openlocfilehash: 0b0d0d968bcf1cec44fefabcde84fba6ddab3c63
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 18a28364b02b15af9d7d4c69c432ecd26d61b802
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183437"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772527"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Crear equipos para la colaboración en Microsoft Teams
 
@@ -36,11 +36,11 @@ Microsoft Teams es una aplicación de colaboración que ayuda a su personal a pe
 
 Por ejemplo, las campañas pueden crear los siguientes equipos para comunicarse y colaborar de forma segura:
 
-1. En **una campaña** , el equipo se configura como un equipo privado, de modo que solo los miembros clave de la campaña puedan tener acceso a él y se expliquen los problemas potencialmente confidenciales.
-2. **Un equipo de campaña general** : esto es para que todos los usuarios usen las comunicaciones diarias y el trabajo. Los individuos, grupos o comités pueden configurar canales en este equipo para que realicen su trabajo. Por ejemplo, los usuarios de planeación de eventos pueden configurar un canal para chatear y coordinar la logística de los eventos de la campaña.
-3. **Un equipo de asociados** , uno en el que puede coordinarse con los proveedores, socios o voluntarios sin que se les permita nada confidencial.
+1. **Un equipo líder en la campaña:** Configure esto como un equipo privado para que solo los miembros de la campaña clave puedan tener acceso a él y analice los problemas potencialmente confidenciales.
+2. **Un equipo de campaña general:** Esto es para que todos los usuarios usen las comunicaciones diarias y el trabajo. Los individuos, grupos o comités pueden configurar canales en este equipo para que realicen su trabajo. Por ejemplo, los usuarios de planeación de eventos pueden configurar un canal para chatear y coordinar la logística de los eventos de la campaña.
+3. **Un equipo de asociados:** Este es un equipo en el que puede coordinarse con los proveedores, socios o voluntarios sin que se les permita nada confidencial.
 
-También puede crear equipos para proyectos específicos y aplicar la cantidad adecuada de protección en función de quién debe incluirse. 
+También puede crear equipos para proyectos específicos y aplicar la cantidad de protección adecuada en función de quién debe incluirse. 
 
 ![Diagrama de una ventana de Microsoft Teams con tres equipos distintos para permitir la colaboración y comunicación segura](media/m365-democracy-teams-collab.png)
 
@@ -53,13 +53,13 @@ Al crear un equipo, esto es lo que más se crea:
 - Se vincula a otras aplicaciones de Office 365, como Planner y Power BI.
 
 En Microsoft Teams, puede encontrar:
-1. **Teams** : encuentre los canales a los que pertenece o cree los suyos propios. Dentro de los canales puede retener reuniones en el lugar, tener conversaciones y compartir archivos.
+1. **Teams:** Busque los canales a los que pertenece o cree los suyos. Dentro de los canales puede retener reuniones en el lugar, tener conversaciones y compartir archivos.
 
-2. **Reuniones** : vea todo lo que se ha alineado en el día o la semana. O bien, programe una reunión. Este calendario se sincroniza con el calendario de Outlook.
+2. **Reuniones:** Ve todo lo que estás preparado para el día o la semana. O bien, programe una reunión. Este calendario se sincroniza con el calendario de Outlook.
  
-3. **Llamadas** : en algunos casos, si su organización la tiene configurada, puede llamar a cualquier persona desde Microsoft Teams, incluso si no usa Microsoft Teams.
+3. **Llamadas:** En algunos casos, si su organización la tiene configurada, puede llamar a cualquier persona desde Microsoft Teams, incluso si no está usando Microsoft Teams.
 
-4. **Actividad** : ponerse al día en todos los mensajes no leídos, @mentions, respuestas y mucho más. 
+4. **Actividad:** Ponerse al día en todos los mensajes no leídos, @mentions, respuestas y mucho más. 
 
 Use el cuadro de comandos de la parte superior para buscar personas o elementos específicos, realizar acciones rápidas e iniciar aplicaciones.
 
@@ -71,7 +71,7 @@ Cree un equipo privado solo para el administrador de la campaña y el candidato 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-Crear un equipo de toda la organización que todos los usuarios de la campaña puedan usar para comunicarse y compartir archivos
+Cree un equipo de toda la organización que todos los usuarios de la campaña puedan usar para comunicarse y compartir archivos.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 

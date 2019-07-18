@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurar la autenticación multifactor.
-ms.openlocfilehash: 0538709f6052a82e04652f0c7676afe8c429b44b
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: cd14bb0d0f24215c64579851fe6982c5bf1ddc3e
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35081214"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772497"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 
-La autenticación multifactor proporciona más seguridad a su empresa.  Una vez que su administrador necesite que use MFA, puede configurar la aplicación Microsoft Authenticator para que le permita iniciar sesión en las aplicaciones clave de forma segura con el teléfono. 
+La autenticación multifactor proporciona más seguridad a su empresa. Una vez que su administrador necesite que use MFA, puede configurar la aplicación Microsoft Authenticator para que le permita iniciar sesión en las aplicaciones clave de forma segura con el teléfono. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
 
@@ -38,4 +38,4 @@ Para obtener más información, vea [set up multifactor Authentication en Micros
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>Usar la aplicación de Outlook en los dispositivos
 
-Una vez que el administrador necesite que use MFA, y haya configurado una aplicación autenticadora como segunda forma de autenticación, le recomendamos que instale y solo use la aplicación de Outlook para acceder al correo electrónico de Microsoft 365 para campañas. Consulte [configurar dispositivos móviles](../business/set-up-mobile-devices.md) para instalar aplicaciones de Office, incluido Outlook, en su teléfono.
+Después de que el administrador necesite usar MFA y configurar una aplicación autenticadora como segunda forma de autenticación, le recomendamos que instale y solo use la aplicación de Outlook para acceder a su correo electrónico de Microsoft 365 para campañas. Consulte [configurar dispositivos móviles](../business/set-up-mobile-devices.md) para instalar aplicaciones de Office, incluido Outlook, en su teléfono.

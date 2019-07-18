@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un sitio de comunicaciones para la campaña.
-ms.openlocfilehash: 123269d462ddbb7a3c91f23be8031d9a2850c186
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 339f6e0de27975a8c768a6752d7fd367e12dd8f6
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35081244"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772537"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Crear un sitio de comunicaciones para la campaña
 
-Una buena forma de comunicar prioridades, compartir documentos de estrategia y resaltar los próximos eventos es usar un sitio de comunicaciones en SharePoint. Los sitios de comunicaciones son para compartir cosas ampliamente en toda la campaña: es el sitio de la campaña interna.
+Una buena forma de comunicar prioridades, compartir documentos de estrategia y resaltar próximos eventos es usar un sitio de comunicaciones en SharePoint. Los sitios de comunicaciones son para compartir cosas ampliamente en toda la campaña; es el sitio de la campaña interna.
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
@@ -45,7 +45,7 @@ Incluya los siguientes elementos en el sitio de comunicaciones:
 ![Diagrama de una página de comunicaciones de SharePoint con espacio para los elementos comunes que necesitará una campaña](media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>Infografía: crear un sitio de comunicaciones infografía 
-Los vínculos para PowerPoint y el PDF que se muestran a continuación se pueden descargar e imprimir en formato tabloide (también conocido como contabilidad, 11 x 17 o a3).
+Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en formato tabloide (también conocido como contabilidad, 11 x 17 o a3).
 
 [![Imagen para el sitio de comunicaciones infografía](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
@@ -54,7 +54,7 @@ Los vínculos para PowerPoint y el PDF que se muestran a continuación se pueden
 
 ## <a name="set-it-up"></a>Configúrelo
 
-1. Inicie sesión en http://Office.com.
+1. Inicie sesión en https://Office.com.
 2. En la esquina superior izquierda de la página, seleccione el icono del iniciador de aplicaciones y, a continuación, seleccione el mosaico de **SharePoint** . Si no ve el icono de **SharePoint**, haga clic en el icono de **Sitios** o de **Todos** si SharePoint no aparece.
 3. En la parte superior de la Página principal de SharePoint, haga clic en **+ crear sitio** y elija la opción **sitio de comunicación** .
 
@@ -63,5 +63,5 @@ Obtenga información [sobre los sitios de comunicaciones](https://support.office
 
 ## <a name="admin-settings"></a>Configuración de administración
 
-Si no ve el vínculo **+ crear** sitio, es posible que la creación de sitios sin servicio a la vez no esté disponible en Microsoft 365. Póngase en contacto con la persona que administra Microsoft 365 en su organización para crear un sitio de grupo. Si es administrador de Microsoft 365, vea [administrar la creación de sitios en SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) para habilitar la creación de sitios sin servicio para su organización o [administrar sitios en el nuevo centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) para crear un sitio desde el centro de administración de SharePoint Online.
+Si no ve el vínculo **+ crear** sitio, es posible que la creación de sitios sin servicio a la vez no esté disponible en Microsoft 365. Para crear un sitio de grupo, póngase en contacto con la persona que administra Microsoft 365 en su organización. Si es administrador de Microsoft 365, vea [administrar la creación de sitios en SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) para habilitar la creación de sitios sin servicio para su organización o [administrar sitios en el nuevo centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) para crear un sitio desde el centro de administración de SharePoint Online.
   

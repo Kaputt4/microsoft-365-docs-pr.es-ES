@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtener ayuda para aumentar el nivel de protección en Microsoft 365 Business
-ms.openlocfilehash: 2ebf6994cc7ba4026c5985e6b7accfc832ab003c
-ms.sourcegitcommit: c7ea55e36484d64db3f3af8e111a83cfc634143e
+ms.openlocfilehash: 5a3a9aada60875a7ee1f43a870e4d2731f84d4c1
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35192675"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772557"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -75,7 +75,7 @@ Para crear una regla de transporte de correo:
     
 4. Haga clic en **más opciones** en la parte inferior del cuadro de diálogo para ver el conjunto completo de opciones. 
     
-5. Aplique la configuración de la siguiente tabla para la regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
+5. Aplique la configuración de la siguiente tabla para la regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
 6. Haga clic en **Guardar **.
     
@@ -109,7 +109,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
     
 4. Haga clic en **más opciones** en la parte inferior del cuadro de diálogo para ver el conjunto completo de opciones. 
     
-5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
+5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
 6. Haga clic en **Guardar **.
     
@@ -290,7 +290,7 @@ Puede impedir que los usuarios de su organización compartan sus calendarios o t
 
 1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> y elija **Settings** \> **Services & Add-Ins**
 2. En la página **servicios & complementos** , elija **calendario**y elija si los usuarios de su organización pueden compartir sus calendarios con usuarios ajenos a Office 365 o Exchange, o con cualquier persona. 
-    Si elige compartir con cualquier persona a la que pueda decidirse, también se compartirá la información de disponibilidad.
+    Si elige compartir con otros usuarios, también puede optar por compartir únicamente la información de disponibilidad.
 
 3. Elija **Guardar cambios** en la parte inferior de la página.
 

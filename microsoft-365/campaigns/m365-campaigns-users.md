@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo Microsoft 365 para las campañas afecta a los usuarios.
-ms.openlocfilehash: 9d70adab86eb7c8b7f1608de58c0652f84ec03a0
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 3715e0a458f2af5f2fecb8e2e6939254b3141411
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183421"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772427"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Cómo Microsoft 365 para las campañas afecta a los usuarios
 
@@ -57,7 +57,7 @@ También es importante que los usuarios mantengan actualizado el dispositivo de 
 - Instale las últimas versiones de las aplicaciones de escritorio de Office y manténgala actualizada con las actualizaciones, cuando se le solicite. 
 - Manténgase al tanto de las actualizaciones del sistema operativo, como actualizaciones de Windows.
 
-Para los [dispositivos Windows 10 y Mac no administrados](m365-campaigns-protect-pcs-macs.md), los usuarios tienen la responsabilidad de garantizar que las características de seguridad básicas están habilitadas.
+Para los [dispositivos Windows 10 y Mac no administrados](m365-campaigns-protect-pcs-macs.md), los usuarios tienen la responsabilidad de asegurarse de que las características de seguridad básicas están habilitadas.
 
 **Habilitar las funciones de seguridad básicas en dispositivos Windows 10 y Mac de BYOD**
 
@@ -69,11 +69,11 @@ Para los [dispositivos Windows 10 y Mac no administrados](m365-campaigns-protect
 Para obtener más información sobre estas recomendaciones, consulte [proteger la cuenta y los dispositivos de hackers y malware](https://support.office.com/en-us/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Colaborar con Microsoft Teams, OneDrive, SharePoint Online y otras herramientas de Office 365
-Es posible que los usuarios estén tentados a compartir y almacenar los archivos de la organización en lugares distintos de Microsoft 365. Microsoft 365 hace que sea tan fácil como sea posible colaborar y compartir de forma segura. Puede [compartir archivos y vídeos](share-files-and-videos.md) directamente desde Microsoft Teams, OneDrive, stream e incluso desde dentro de un archivo. El uso compartido desde estas herramientas ayuda a evitar que los datos se encuentren en pérdidas. También puede agregar protección adicional a los datos confidenciales para evitar el uso compartido fuera de la organización. 
+Es posible que los usuarios estén tentados a compartir y almacenar los archivos de la organización en lugares distintos de Microsoft 365. Microsoft 365 hace que sea tan fácil como sea posible colaborar y compartir de forma segura. Puede [compartir archivos y vídeos](share-files-and-videos.md) directamente desde Microsoft Teams, OneDrive, stream e incluso desde dentro de un archivo. El uso compartido desde estas herramientas ayuda a evitar que los datos se encuentren en pérdidas. Puede agregar protección adicional a los datos confidenciales para evitar el uso compartido fuera de la organización. 
 
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurar dispositivos de Windows 10 administrados
-Le recomendamos a los miembros del personal más importantes que usen los dispositivos Windows 10 que haya adquirido recientemente y que administre. Le mostraremos cómo [administrar y proteger estos dispositivos](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Esto garantiza que los miembros del personal que son el objetivo de valor más alto para los hackers reciban la mayor protección. 
+Le recomendamos que los miembros del personal más importantes usen los dispositivos Windows 10 que haya adquirido recientemente y que administre. Le mostraremos cómo [administrar y proteger estos dispositivos](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Esto garantiza que los miembros del personal que son el objetivo de valor más alto para los hackers reciban la mayor protección. 
 
 
 

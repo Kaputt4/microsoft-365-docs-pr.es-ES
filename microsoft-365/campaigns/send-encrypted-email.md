@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre cómo enviar correo electrónico cifrado mediante Outlook.
-ms.openlocfilehash: 16e6a6977d7cd8ec4d6bf59adbcd196b14995752
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183419"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772327"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Cifrar o etiquetar el correo electrónico confidencial
 
@@ -54,7 +54,7 @@ Puede obtener información sobre cómo configurar el cifrado de correo electrón
 
 ### <a name="automatically-encrypt-email-messages"></a>Cifrar mensajes de correo automáticamente
 
-Los administradores pueden crear reglas de flujo de correo para proteger automáticamente los mensajes de correo electrónico que se envían y reciben desde la campaña. Configure las reglas para cifrar los mensajes de correo electrónico salientes y quitar el cifrado de los mensajes cifrados que proceden de la organización o de las respuestas a los mensajes cifrados que se envían desde la organización. 
+Los administradores pueden crear reglas de flujo de correo para proteger automáticamente los mensajes de correo electrónico que se envían y reciben desde la campaña. Configure las reglas para cifrar los mensajes de correo electrónico salientes y quite el cifrado de los mensajes cifrados que provengan de la organización o de las respuestas a los mensajes cifrados que se envían desde la organización. 
 
 Puede crear reglas de flujo de correo para cifrar los mensajes de correo electrónico con las nuevas capacidades de cifrado de mensajes de Office 365 (OME). Definir reglas de flujo de correo para desencadenar el cifrado de mensajes con las nuevas capacidades de OME mediante el centro de administración de Exchange (EAC). 
 

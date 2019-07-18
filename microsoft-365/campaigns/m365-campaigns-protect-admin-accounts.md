@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo configurar y proteger las cuentas de administrador.
-ms.openlocfilehash: 857c24ac0ec134e119b3de083afe8dc3269bdbe2
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 33bf7f8a2a1e666a7822be1d52ac2d81fc681230
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183426"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772477"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteger las cuentas de administrador
 
@@ -38,7 +38,7 @@ Cuando se suscriba a Microsoft 365 Business y escriba la información, se conver
 
 ## <a name="create-additional-admin-accounts"></a>Crear cuentas de administrador adicionales
 
-Use cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para el uso normal de las aplicaciones de Office y solo usar su cuenta administrativa cuando sea necesario para administrar cuentas, dispositivos y trabajar en otras funciones de administración.  También es una buena idea quitar la licencia de Microsoft 365 Business de las cuentas de administrador para que no tenga que pagar por ellas.
+Use cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para el uso normal de las aplicaciones de Office y solo usar su cuenta administrativa cuando sea necesario para administrar cuentas, dispositivos y trabajar en otras funciones de administración. También es una buena idea quitar la licencia de Microsoft 365 Business de las cuentas de administrador para que no tenga que pagar por ellas.
 
 Querrá configurar al menos una cuenta de administrador global adicional para conceder acceso de administrador a otro empleado de confianza. También puede crear cuentas de administrador independientes para la administración de usuarios (este rol se denomina **Administrador de administración de usuarios**). Para obtener más información, vea acerca de los [roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .
 
@@ -78,6 +78,6 @@ Para crear una nueva cuenta de usuario:
 
 ## <a name="additional-recommendations"></a>Recomendaciones adicionales
 
-- Asegúrese de que las cuentas de administrador también están configuradas para multi-factor Authentication. Le mostraremos cómo hacerlo en [configurar directivas de acceso condicional](m365-campaigns-conditional-access.md).
+- Asegúrese de que las cuentas de administrador también están configuradas para la autenticación multifactor. Le mostraremos cómo hacerlo en [configurar directivas de acceso condicional](m365-campaigns-conditional-access.md).
 - Antes de usar cuentas de administrador, cierre todas las sesiones y aplicaciones del explorador no relacionadas, incluidas las cuentas de correo electrónico personales. También puede usar en las ventanas del explorador privado o incógnito.
 - Después de completar las tareas de administración, asegúrese de cerrar la sesión del explorador.
