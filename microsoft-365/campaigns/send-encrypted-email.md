@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre cómo enviar correo electrónico cifrado mediante Outlook.
-ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772327"
+ms.locfileid: "35778145"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Cifrar o etiquetar el correo electrónico confidencial
 
@@ -60,7 +60,7 @@ Puede crear reglas de flujo de correo para cifrar los mensajes de correo electr�
 
 1. En un explorador Web, con una cuenta profesional o educativa a la que se le han concedido permisos de administrador global, inicie sesión en Office 365. 
 2. Elija el icono administración. 
-3. En el centro de administración de Office 365, elija **centros de administración > Exchange**. 
+3. En el centro de administración, elija **centros de administración > Exchange**. 
 
 Para obtener más información, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
 
