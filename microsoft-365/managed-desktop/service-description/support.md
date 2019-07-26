@@ -3,16 +3,16 @@ title: Soporte para escritorio administrado de Microsoft
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 97637f28f5a5de292385a36472966f3272b2f09a
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 83f4d8b6fb9f2938151db8dfea37b3c9f18124c9
+ms.sourcegitcommit: 8f57be80955cd374d418c7e1a78849ff3e1d630f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970467"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907551"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Soporte para escritorio administrado de Microsoft
 
@@ -25,15 +25,15 @@ Los clientes pueden ponerse en contacto con Microsoft Managed Desktop Operations
 
 ## <a name="whats-included"></a>¿Qué se incluye?
 
-Soporte técnico de Microsoft administrado para equipos de escritorio:
+La compatibilidad de escritorio administrada de Microsoft incluye:
 
-- Proporciona a un equipo de ingenieros de soporte dedicados a los dispositivos de escritorio administrados por Microsoft
-- Admite dispositivos de escritorio administrados de Microsoft y usuarios finales asignados a estos dispositivos
-- Concede acceso administrativo limitado a los dispositivos de escritorio administrados por Microsoft para los ingenieros de soporte técnico que administran dispositivos de escritorio administrados por Microsoft 
+- Un equipo de ingenieros dedicados a los dispositivos de escritorio administrados por Microsoft
+- Opciones de soporte para usuarios finales con dispositivos de escritorio administrados por Microsoft
+- Concede acceso administrativo limitado a los dispositivos de escritorio administrados por Microsoft para los ingenieros que administran dispositivos de escritorio administrados por Microsoft 
 
 Productos compatibles:
 
-- Windows 10 con protección contra amenazas avanzada de Windows Defender (WDATP) 
+- Protección contra amenazas avanzada de Windows 10 con Microsoft defender 
 - Subconjunto del conjunto de aplicaciones de Office 365: Outlook, Word, PowerPoint, Excel, cliente de Skype empresarial, Microsoft Teams 
 - Microsoft Store para Empresas 
 - Cliente de OneDrive para la empresa 
