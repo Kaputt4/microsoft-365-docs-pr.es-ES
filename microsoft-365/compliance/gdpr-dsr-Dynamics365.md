@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fc2d978b50a433249e016c25b4c234de6c7f46b8
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 72277ec2dfe7681aa5f596e655d5e275bbb64dd1
+ms.sourcegitcommit: 5615e790dc53ccc74f3c475ca43d69ca56be348a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778135"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36041184"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Solicitudes del interesado de Microsoft Dynamics 365 sobre el RGPD
 
@@ -87,7 +87,7 @@ En Dynamics 365 for Marketing, tiene las siguientes funciones adicionales:
 
 ***Dynamics 365 Customer Service Insights*** ofrece una lista de recursos para ayudarle a [buscar datos de cliente](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery) para responder a solicitudes GDPR de clientes. 
 
-***Dynamics 365 Finance and Operations*** le ofrece distintas formas de buscar datos de clientes. Como administrador del espacio empresarial, puede realizar las acciones siguientes para buscar datos de clientes:
+***Dynamics 365 for Finance and Operations*** le ofrece distintas formas de buscar datos de clientes. Como administrador del espacio empresarial, puede realizar las acciones siguientes para buscar datos de clientes:
 
 - Organizar sus datos de clientes de forma que pueda descubrir rápidamente datos personales. Para hacerlo vea [cómo clasificar un inventario de datos](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory).
 - Use el [Informe de búsqueda de personas](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#the-person-search-report) para encontrar y recopilar datos personales.
@@ -96,7 +96,7 @@ En Dynamics 365 for Marketing, tiene las siguientes funciones adicionales:
 - Cree un formulario personalizado que busque y exporte datos personales.
 - Cree un sitio web o portal externo que permita a un cliente autenticado ver sus datos personales.
 
-***Dynamics for Business Central*** le ofrece distintas formas de buscar datos de clientes. Para más información, vea [Buscar, filtrar y ordenar datos](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters).
+***Dynamics 365 Business Central*** le ofrece distintas formas de buscar datos de clientes. Para más información, vea [Buscar, filtrar y ordenar datos](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters).
 
 ***Dynamics 365 for Talent*** ofrece características avanzadas de búsqueda y filtrado para encontrar datos personales específicos, y la función Exportar de Microsoft Office le permite exportar esos datos o imprimirlos en un archivo .pdf con extensiones del explorador.
 
@@ -189,7 +189,7 @@ Tanto Dynamics 365 for Finance and Operations como ***Dynamics 365 for Talent***
 
 ***Dynamics 365 Business Central*** ofrece estas características:
 
-- Puede exportar los datos del cliente a un archivo de Excel. En Excel puede editar los datos del cliente que se incluirán en la solicitud de portabilidad y guardarlo en un formato de lectura mecánica de uso habitual, como .csv o .xml. Para obtener más información, vea [Exportar los datos profesionales a Excel.](https://docs.microsoft.com/dynamics-nav-app/about-export-data)
+- Puede exportar los datos del cliente a un archivo de Excel. En Excel puede editar los datos del cliente que se incluirán en la solicitud de portabilidad y guardarlo en un formato de lectura mecánica de uso habitual, como .csv o .xml. Para obtener más información, vea [Exportar los datos profesionales a Excel.](https://docs.microsoft.com/dynamics365/business-central/about-export-data)
 - Puede exportar los datos del cliente a un archivo de Excel. En Excel puede editar los datos del cliente que se incluirán en la solicitud de portabilidad y guardarlo en un formato de lectura mecánica de uso habitual, como .csv o .xml. Para obtener más información, vea [Exportar los datos profesionales a Excel.](https://docs.microsoft.com/es-ES/dynamics365/business-central/about-export-data)
 
 ### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
