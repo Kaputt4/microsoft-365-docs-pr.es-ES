@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los dispositivos y las aplicaciones en el entorno.
-ms.openlocfilehash: eb619cf807c2bd4ad3644dbb26e72b62e30320c7
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 9898090171d9e009a4f43f5362c363f71f08072e
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584556"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830563"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Paso 1: Preparación de dispositivos y aplicaciones
 
@@ -41,7 +41,7 @@ En el pasado, el gran obstáculo para actualizar los equipos de escritorio del u
 
 Dicho esto, en función del tamaño y la antigüedad de la organización, es probable que la comprobación de la compatibilidad de las aplicaciones y el hardware siga siendo un paso inicial fundamental en el proceso de implementación en ocho fases recomendado.
 
-Este artículo le guiará por esa primera fase (Preparación de dispositivos y aplicaciones) con las herramientas de evaluación de preparación de Microsoft, incluyendo la nueva herramienta Upgrade Readiness de Desktop Analytics, una solución inteligente basada en la nube disponible con la licencia de Windows.
+Este artículo le guiará por esa primera fase (Preparación de dispositivos y aplicaciones) con las herramientas de evaluación de preparación de Microsoft, incluida Análisis de escritorio, una solución inteligente basada en la nube disponible con la licencia de Windows.
 
 ## <a name="windows-10-compatibility-scan"></a>Análisis de compatibilidad de Windows 10
 
@@ -53,13 +53,13 @@ Una línea de comandos de ejemplo de ScanOnly que complete la detección de comp
 
 Para obtener más información acerca de ScanOnly y otros modificadores de comando de configuración de Windows revise las [Opciones de configuración de línea de comandos de Windows](https://aka.ms/setupswitches).
 
-## <a name="recommended-tool-desktop-analytics-upgrade-readiness"></a>Herramienta recomendada: Upgrade Readiness de Desktop Analytics
+## <a name="recommended-tool-desktop-analytics"></a>Herramienta recomendada: Análisis de escritorio
 
-Upgrade Readiness de Desktop Analytics ofrece numerosas ventajas para los sistemas de administración de escritorio tradicionales y es la herramienta recomendada. No tiene agente y le guiará por los pasos que deben realizarse haciendo uso de la información de compatibilidad de aplicaciones y controladores recopilada a través de la actualización de millones de equipos de clientes. Esta información le proporciona una evaluación detallada, que identifica los problemas de compatibilidad que podrían bloquear la actualización, con vínculos a las correcciones sugeridas que conoce Microsoft.
+Análisis de escritorio ofrece numerosas ventajas para los sistemas de administración de escritorio tradicionales y es la herramienta recomendada. No tiene agente y le guiará por los pasos que deben realizarse haciendo uso de la información de compatibilidad de aplicaciones y controladores recopilada a través de la actualización de millones de equipos de clientes. Esta información le proporciona una evaluación detallada, que identifica los problemas de compatibilidad que podrían bloquear la actualización, con vínculos a las correcciones sugeridas que conoce Microsoft.
 
-Para configurar Upgrade Readiness de Windows Analytics primero debe configurar una suscripción de Azure e incluir un área de trabajo de Azure Log Analytics para ello. Una vez que se esté ejecutando el servicio de Upgrade Readiness de Desktop Analytics, podrá inscribir cualquier dispositivo con Windows 7 SP1 o una versión posterior conectado a Internet mediante la configuración de Directiva de grupo. Así de simple. No tiene que implementar ningún agente y el flujo de trabajo visual de Upgrade Readiness de Desktop Analytics le guiará desde la implementación de prueba a la de producción. Si quiere, puede exportar datos desde Upgrade Readiness de Desktop Analytics a herramientas de implementación de software, como la rama actual de System Center Configuration Manager, para dirigirlos directamente a equipos de destino y crear colecciones a medida que estén listas para su implementación.
+Para configurar Análisis de escritorio primero debe configurar una suscripción de Azure e incluir un área de trabajo de Análisis del registro de Azure para ello. Una vez que se esté ejecutando el servicio de Análisis de escritorio, podrá inscribir cualquier dispositivo con Windows 7 SP1 o una versión posterior conectado a Internet mediante la configuración de Directiva de grupo. Así de simple. No tiene que implementar ningún agente y el flujo de trabajo visual de Análisis de escritorio le guiará desde la implementación de prueba a la de producción. Si quiere, puede exportar datos de Análisis de escritorio a herramientas de implementación de software, como la rama actual de System Center Configuration Manager, directamente a equipos de destino y crear colecciones a medida que estén listas para su implementación.
 
-Si en la actualidad no ha configurado Desktop Analytics para su entorno o quiere suscribirse a una prueba, puede empezar en la página de Desktop Analytics](http://www.aka.ms/desktopanalytics).
+Si en la actualidad no ha configurado Análisis de escritorio para su entorno o quiere suscribirse a una prueba, vaya a la página de Análisis de escritorio (http://www.aka.ms/desktopanalytics)) para empezar.
 
 ## <a name="device-and-app-readiness-process"></a>Proceso de preparación de dispositivos y aplicaciones
 
@@ -67,17 +67,15 @@ La preparación de dispositivos y aplicaciones consta de cuatro pasos: 1. Invent
 
 ### <a name="1-inventory"></a>1\. Inventario
 
-En Upgrade Readiness de Desktop Analytics se usa un proceso sin agente para realizar el inventario de equipos y aplicaciones en el estado de escritorio.
+En Análisis de escritorio se usa un proceso sin agente para realizar el inventario de equipos y aplicaciones en el estado de escritorio. También se proporcionan informes acerca de los sitios de Internet muy visitados, las aplicaciones y las ubicaciones de Intranet para ayudar con las pruebas de compatibilidad más adelante.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
-
-También se proporcionan informes acerca de los sitios de Internet muy visitados, las aplicaciones y las ubicaciones de Intranet para ayudar con las pruebas de compatibilidad más adelante.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. Priorizar
 
-Con el inventario realizado, Upgrade Readiness de Desktop Analytics le ayuda a identificar y priorizar el hardware y las aplicaciones más comunes que se usan en la organización, y le ayuda a identificar en qué centrarse para desbloquear tantos equipos como sea posible para la implementación.
+Una vez realizado el inventario, Análisis de escritorio le ayuda a identificar y priorizar el hardware y las aplicaciones más comunes que se usan en la organización, y le ayuda a identificar en qué centrarse para desbloquear tantos equipos como sea posible para la implementación.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
@@ -85,9 +83,9 @@ También proporciona instrucciones para ayudarle a evaluar qué actualizaciones 
 
 ### <a name="3-testing"></a>3\. Probar
 
-Descubrirá que la mayoría de los controladores, aplicaciones y complementos inventariados funcionan tal cual. Para aquellos elementos que Upgrade Readiness de Desktop Analytics indica que tienen problemas, se proporciona información conocida, como dónde encontrar actualizaciones de versión para resolver problemas de compatibilidad. En lugar de dedicar tiempo y recursos para resolver problemas complejos en aplicaciones que no son críticas que están implementadas de forma dispersa y en dispositivos antiguos, puede en su lugar trabajar con los usuarios para retirar y reemplazar estos elementos.
+Descubrirá que la mayoría de los controladores, aplicaciones y complementos inventariados funcionan tal cual. Para aquellos elementos que Análisis de escritorio indica que tienen problemas, se proporciona información conocida, como dónde encontrar actualizaciones de versión para resolver problemas de compatibilidad. En lugar de dedicar tiempo y recursos para resolver problemas complejos en aplicaciones que no son críticas que están implementadas de forma dispersa y en dispositivos antiguos, puede en su lugar trabajar con los usuarios para retirar y reemplazar estos elementos.
 
-También puede usar Upgrade Readiness de Desktop Analytics para evaluar los problemas de compatibilidad basados en el explorador, para identificar los sitios y las aplicaciones web a las que acceden los usuarios que todavía usan controles ActiveX, objetos del ayudante del explorador, VBScript u otras tecnologías heredadas que no son compatibles con el explorador Microsoft Edge. Los usuarios tendrán que seguir usando Internet Explorer 11 para estos sitios y los puede agregar a la [lista de sitios del modo de empresa](https://docs.microsoft.com/es-ES/microsoft-edge/deploy/emie-to-improve-compatibility) con Enterprise Mode Site List Manager.
+Puede usar Análisis de escritorio para evaluar también los problemas de compatibilidad basados en el explorador, identificar sitios web y aplicaciones web a los que tienen acceso los usuarios que aún usan controles ActiveX, objetos del ayudante del explorador, VBScript u otra tecnología heredada que no es compatible con el explorador de Microsoft Edge. Los usuarios todavía necesitarán usar Internet Explorer 11 para estos sitios que puede agregar a la [lista de sitios del modo de empresa](https://docs.microsoft.com/es-ES/microsoft-edge/deploy/emie-to-improve-compatibility), con el Enterprise Mode Site List Manager.
 
 Además, para facilitar el cambio a Office 365 ProPlus, es posible que quiera usar [Readiness Toolkit para Office](https://docs.microsoft.com/es-ES/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) a fin de probar la compatibilidad de los complementos y las macros de Microsoft Visual Basic para Aplicaciones (VBA).
 
@@ -114,8 +112,8 @@ Otra herramienta para ayudar con la compatibilidad de aplicaciones de Windows 10
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Uso continuado de herramientas de datos de diagnóstico
 
-Upgrade Readiness de Desktop Analytics no es solo una herramienta para ayudar en el cambio a Windows 10 y Office 365 ProPlus. Una vez que haya equipos de escritorio que se ejecutan en Windows 10 y Office 365, se puede usar para ayudar a mantener la implementación y administrar las actualizaciones de características semestrales y mantenerse actualizado.
+Análisis de escritorio no es solo una herramienta que le ayuda a cambiar a Windows 10 y Office 365 ProPlus. Con equipos de escritorio que ejecutan Windows 10 y Office 365, puede usarlo para mantener la implementación y administrar las actualizaciones de características semestrales para que pueda mantenerse al día.
 
-## <a name="next-step"></a>Siguiente paso 
+## <a name="next-step"></a>Paso siguiente 
 
 ## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[Paso 2: Preparación de los directorios y la red](https://aka.ms/mdd2)
