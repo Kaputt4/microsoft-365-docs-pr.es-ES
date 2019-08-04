@@ -2,6 +2,7 @@
 ## [¿Qué es el escritorio administrado por Microsoft?](intro/index.md)
 ### [Roles y responsabilidades](intro/roles-and-responsibilities.md)
 ### [Tecnologías en el escritorio administrado por Microsoft](intro/technologies.md)
+### [Microsoft Managed Desktop and ITIL](MMD-and-ITSM.md)
 ## [Descripción del servicio de escritorio administrado de Microsoft](service-description/index.md)
 ### [Regiones e idiomas admitidos](service-description/regions-languages.md)
 ### [Ciclo de vida del producto](service-description/device-lifecycle.md)
