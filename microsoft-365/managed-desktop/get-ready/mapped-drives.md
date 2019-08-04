@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b3fc4a4ed82c01188f348d2e494a0dbf7effc77a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: e4c2dbe8f1cae12aa1b10c6cd43f295a9a6062d0
+ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34079279"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34100716"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el escritorio administrado por Microsoft
 
@@ -25,7 +25,7 @@ La modernización de estos servicios permitirá la mejor experiencia del usuario
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Unidades asignadas en el escritorio administrado por Microsoft
  
-Si no puede quitar ni reemplazar las unidades asignadas en algunos casos de uso, debe enviar una solicitud de soporte técnico en el portal de escritorio administrado de Microsoft para que se implementen en los usuarios de escritorio administrado por Microsoft.
+Si no puede quitar ni reemplazar las unidades asignadas en algunos casos de uso, debe enviar una solicitud de soporte técnico en el portal de administración de escritorio administrado de Microsoft para que se implementen en los usuarios de escritorio administrados por Microsoft.
     
 Para dicha solicitud, deberá proporcionar los siguientes detalles en la solicitud de soporte técnico: 
 
@@ -46,7 +46,7 @@ Es totalmente responsable de garantizar que los usuarios y grupos tengan y mante
 Asegúrese de que no se pueden evitar las unidades asignadas y de que ha revisado atentamente los requisitos antes de enviar cualquier solicitud de servicio. A continuación, siga estos pasos:
 
 1. Navegue al [portal de escritorio administrado por Microsoft](https://aka.ms/mmdportal).  
-2. Envíe una solicitud de soporte titulada "implementación de unidades asignadas" a través de la sección de solicitudes de soporte técnico de **>** y proporcione todos los detalles necesarios del recurso compartido de archivos.  
-3. Las operaciones de escritorio administradas de Microsoft le aconsejarán, mediante actualizaciones de solicitudes de soporte, cuando se haya completado la solicitud. Inicialmente, esta configuración solo se implementará en los dispositivos del grupo de implementación de prueba.  
-4. Debe probar y confirmar si la configuración implementada por el equipo de operaciones de escritorio administrada de Microsoft funciona según lo previsto. Use la solicitud de soporte para actualizar las operaciones de escritorio administradas de Microsoft una vez que haya completado las pruebas.  
-5. El equipo de operaciones de escritorio administrado de Microsoft implementará la configuración en los demás grupos de implementación. 
+2. Envíe una solicitud de soporte titulada "implementación de unidades asignadas" a través de la sección **support solicitudes** de soporte > y proporcione todos los detalles necesarios del recurso compartido de archivos.  
+3. Las operaciones de TI de escritorio administradas de Microsoft le avisarán, mediante actualizaciones de solicitudes de soporte, cuando se haya completado la solicitud. Inicialmente, esta configuración solo se implementará en los dispositivos del grupo de implementación de prueba.  
+4. Debe probar y confirmar si la configuración implementada por las operaciones de TI de escritorio administradas de Microsoft funciona según lo previsto. Responda mediante la pestaña discusión de la solicitud de soporte técnico para notificar a las operaciones de TI de escritorio administradas de Microsoft una vez que haya completado las pruebas.  
+5. El equipo de operaciones de TI de escritorio administrado de Microsoft implementará la configuración en los demás grupos de implementación. 

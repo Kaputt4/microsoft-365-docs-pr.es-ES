@@ -3,16 +3,16 @@ title: Soporte de administración para escritorio administrado de Microsoft
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 12/18/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1b5708438813feb9b7086f80e3f3d28b6beacaad
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 08c0ee15869ac47d889f9575e8eaeff63fa64fd7
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278450"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390636"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte de administración para escritorio administrado de Microsoft
 
@@ -53,6 +53,6 @@ Detalles adicionales:
 - **Tiempo de respuesta del cliente** Si un cliente no puede cumplir los requisitos de respuesta esperados, Microsoft reducirá la solicitud en un nivel de gravedad, con un mínimo de gravedad C. Si un cliente no responde a las solicitudes de acción, Microsoft se atenuará y cerrará la solicitud de soporte en un plazo de 48 horas a partir de la última solicitud.
  
 
-## <a name="additional-resources"></a>Recursos adicionales
+## <a name="additional-resources"></a>Otros recursos
 - [Compatibilidad con el usuario final para escritorio administrado de Microsoft](end-user-support.md). 
 - [Soporte para escritorio administrado de Microsoft](../service-description/support.md). 

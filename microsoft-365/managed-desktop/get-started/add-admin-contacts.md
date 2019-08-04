@@ -3,16 +3,16 @@ title: Agregar contactos de administrador en el portal de administración de esc
 description: Indíquenos con quién ponerse en contacto para cada área de enfoque.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 014404ab38ff5871289be186dec150115c3be6ec
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 68f5d5cb46d4aa643b1b09f9204b24dea3d77eb1
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277569"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390537"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Agregar contactos de administrador en el portal de administración de escritorio administrado de Microsoft
 
@@ -26,17 +26,18 @@ El portal de administración de escritorio administrado de Microsoft requiere qu
 - Administrador de facturación
 - Administrador de soporte de servicio
 
-El administrador global debe ser el que inscriba al cliente en el escritorio administrado de Microsoft.  Los cinco roles tienen el mismo acceso dentro del portal de administración para iniciar y ver las tareas.  Para obtener más información sobre la asignación de estos roles en Azure AD, vea [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+El administrador global debe ser el que inscriba al cliente en el escritorio administrado de Microsoft. Los cinco roles tienen el mismo acceso dentro del portal de administración para iniciar y ver las tareas. Para obtener más información sobre la asignación de estos roles en Azure AD, vea [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
 ## <a name="admin-contact-focus-areas"></a>Áreas de enfoque del contacto del administrador
 
-Los contactos de administrador deben ser la mejor persona o grupo que pueda responder preguntas y tomar decisiones para las distintas áreas de enfoque.  Las operaciones de escritorio administradas de Microsoft se comunicarán con estos contactos de administrador para obtener preguntas relacionadas con las solicitudes de soporte técnico que haya archivado el cliente.  Estos contactos de administración recibirán notificaciones de actualizaciones de solicitud de soporte y mensajes nuevos.  Estas áreas incluyen:
+Los contactos de administrador deben ser la mejor persona o grupo que pueda responder preguntas y tomar decisiones para las distintas áreas de enfoque. Las operaciones de escritorio administradas de Microsoft se comunicarán con estos contactos de administrador para obtener preguntas relacionadas con las solicitudes de soporte técnico que haya archivado el cliente. Estos contactos de administración recibirán notificaciones de actualizaciones de solicitud de soporte y mensajes nuevos. Estas áreas incluyen:
 
 Área de foco | Para preguntas sobre
 --- | ---
 Aplicaciones | Solución de problemas de empaquetado de aplicaciones
 Dispositivos | Estado del dispositivo, solución de problemas con dispositivos de escritorio administrados por Microsoft
 Seguridad | Solución de problemas de seguridad de los dispositivos de escritorio administrados por Microsoft
+Departamento de soporte técnico de ti | en los casos donde Microsoft Managed Desktop Support ofrece a los tíquets del usuario final fuera de las áreas de soporte técnico de MMD 
 Otros | Para problemas no cubiertos por otras áreas
 
 La persona que elija para estos contactos debe tener el conocimiento y la autoridad para tomar decisiones en su entorno de escritorio administrado por Microsoft. Cuando incorpore su entorno de escritorio administrado de Microsoft, se le pedirá que agregue contactos para el Departamento de soporte técnico y la seguridad locales. 

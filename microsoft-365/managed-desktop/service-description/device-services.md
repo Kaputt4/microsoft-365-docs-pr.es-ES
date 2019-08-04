@@ -3,16 +3,16 @@ title: Servicios de dispositivos de escritorio administrados por Microsoft
 description: En este tema se enumeran los servicios de dispositivos y la limitación del escritorio administrado de Microsoft.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 01e6edf99ff1aa59517f4f5c7d106cd8724fa04b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 533d51da027441ac199c3e1bfefb42812309a91b
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286177"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390657"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Servicios de dispositivos de escritorio administrados por Microsoft
 

@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/18/2018
 ms.author: greglin
-ms.openlocfilehash: 88517c6b8de95c54ee9a2e47d4545266eb198249
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 450b14fb82483bd83e0c83dace173540d0281868
+ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289445"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33623134"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
@@ -83,17 +83,9 @@ Windows 10 proporciona características para ayudar a proteger contra las amenaz
 
 Para obtener más información sobre las características de seguridad que se obtienen con Windows 10 Enterprise y obtener instrucciones sobre cómo implementar, administrar, configurar y solucionar problemas de tres características clave de ecurity, vea [STEP 5: deploy Windows 10 Enterprise Security Features](windows10-enable-security-features.md).
 
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft migra a Microsoft 365 Enterprise
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Para obtener una ojeada dentro de Microsoft y conocer cómo la empresa planeó, implementó y administra las actualizaciones de Windows 10, consulte:
-
-- [Preparing your organization for a seamless Windows 10 deployment (Preparar la organización para una implementación perfecta de Windows 10)](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [Adopción de Windows como servicio en Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [Implementar Windows 10 en Microsoft como una actualización local](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Implementación de una autenticación de usuario segura con Windows Hello para empresas](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Implementación de Windows 10: sugerencias y trucos de TI de Microsoft](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (vídeo)
-- [ATP de Windows Defender ayuda a detectar amenazas sofisticadas](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [Proteger la empresa moderna con Windows Defender y ATP de Windows Defender](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) vídeo
+Obtenga una ojeada dentro de Microsoft y obtenga información sobre cómo la compañía [implementó Windows 10 Enterprise y está usando la autenticación segura, Intune y ATP de Windows Defender](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Cómo Contoso hizo Microsoft 365 Enterprise
 

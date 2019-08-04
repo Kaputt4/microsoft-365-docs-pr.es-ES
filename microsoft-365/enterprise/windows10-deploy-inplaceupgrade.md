@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 31650774a784f1fe784c30b90bc1f9ae579b34fa
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: f7f1b8377769545c4399f54b0f2eab99a656d24f
+ms.sourcegitcommit: 18e03ab333175eccfc89e38b081022746976e513
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291617"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35595306"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Paso 2: implementar Windows 10 Enterprise para los dispositivos existentes como actualización local
 
@@ -46,7 +46,7 @@ Revise estos requisitos antes de iniciar la implementación de Windows 10:
 - **Ediciones de Windows aptas para la actualización** : los dispositivos deben estar ejecutando ediciones de Windows 7 o Windows 8,1 que sean aptas para actualizar a Windows 10 Enterprise. Para obtener una lista de las ediciones compatibles, vea [rutas de actualización de Windows 10](https://aka.ms/win10upgradepaths). 
 - **Dispositivos compatibles** : la mayoría de los equipos compatibles con Windows 8,1 serán compatibles con Windows 10. Es posible que tengas que instalar controladores actualizados en Windows 10 para que los dispositivos funcionen correctamente. Consulta [Especificaciones de Windows 10](https://aka.ms/windows10specifications) para obtener más información.
 - **Preparación** de la implementación: Asegúrese de que tiene lo siguiente antes de comenzar a configurar la implementación:
-    - Medios de instalación de Windows 10: los medios de instalación deben encontrarse en una unidad independiente, con el ISO ya montado. Puede obtener el ISO de las [descargas](https://aka.ms/msdn-subscriber-downloads) para suscriptoRes de MSDN o del [centro de servicios de licencias por volumen](https://aka.ms/mvlsc).
+    - Medios de instalación de Windows 10: los medios de instalación deben encontrarse en una unidad independiente, con el ISO ya montado. Puede obtener el ISO de las [descargas](https://aka.ms/msdn-subscriber-downloads) para suscriptores de MSDN o del [centro de servicios de licencias por volumen](https://aka.ms/mvlsc).
     - Copias de seguridad de datos de usuario: aunque los datos de usuario se migrarán a la actualización, el procedimiento recomendado es configurar un escenario de copia de seguridad. Por ejemplo, exporte todos los datos de usuario a una cuenta de OneDrive, una unidad flash USB con cifrado de BitLocker To Go o un servidor de archivos de red. Para obtener más información, vea [copia de seguridad o transferencia de datos en Windows](https://aka.ms/backuptransferdatawindows).
 - **Preparación del entorno** : usará una estructura de servidor de Configuration Manager existente para prepararse para la implementación del sistema operativo. Además de la configuración básica, se deben realizar las siguientes configuraciones en el entorno de Configuration Manager:
     1. [Extienda el esquema de Active](https://aka.ms/extendadschema) Directory y [cree un contenedor de administración del sistema](https://aka.ms/createsysmancontainer).
@@ -99,7 +99,7 @@ Después de crear la secuencia de tareas de actualización, tendrá que crear un
     - Nombre de atributo: nombre
     - Valor: *PC0003*
 6. En la página **seleccionar recursos** , seleccione su dispositivo y, a **continuación**, seleccione siguiente.
-7. Complete el Asistente para crear regla de perTenencia directa y el Asistente para crear colección de dispositivos.  
+7. Complete el Asistente para crear regla de pertenencia directa y el Asistente para crear colección de dispositivos.  
 8. Revise la colección de actualizaciones de Windows 10 Enterprise x64. No continúe hasta que vea los equipos que agregó en la colección.
 
 ### <a name="create-an-operating-system-deployment"></a>Crear una implementación de sistema operativo
@@ -121,7 +121,7 @@ Siga estos pasos para crear una implementación de la secuencia de tareas.
 7. En la página **alertas** , acepte la configuración predeterminada y, a continuación, seleccione **siguiente**.
 8. En la página de **Resumen** , seleccione **siguiente**y, a continuación, haga clic en **cerrar**.
 
-## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>Parte 5: iniciar la secuencia de tareas de actualización de Windows 10
+## <a name="part-4-start-the-windows-10-upgrade-task-sequence"></a>Parte 4: iniciar la secuencia de tareas de actualización de Windows 10
 Siga estos pasos para iniciar la secuencia de tareas de actualización de Windows 10 en el dispositivo que va a actualizar.
  
 1. Inicie sesión en el equipo con Windows e inicie el **centro de software**.

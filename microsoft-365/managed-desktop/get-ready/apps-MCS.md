@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39a5102d045d9ed79b631a3b477bd1c72dea76de
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 3687966fd49db3fd58c4ecbb3917e45ec6dfa3c3
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34918741"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425743"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Trabajar con los servicios de consultoría de Microsoft
 
@@ -22,7 +22,7 @@ Puede participar con los servicios de consultoría de Microsoft (MCS) para empaq
 Para trabajar con el empaquetado de la aplicación de MCS, **debe proporcionar estos elementos**:
 
 - Los archivos del instalador de origen (por ejemplo, setup. exe o. msi).
-- Las instrucciones de instalación, que especifican los detalles sobre el aspecto de la instalación final. Por ejemplo, ¿debería haber un acceso directo de escritorio a la aplicación? ¿Qué debería tener la visibilidad de la aplicación? ¿La aplicación debe conectarse a un servidor y, si es así, ¿cuál? <!--For details, see the [application packaging request template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx). -->
+- Las instrucciones de instalación, que especifican los detalles sobre el aspecto de la instalación final. Por ejemplo, ¿debería haber un acceso directo de escritorio a la aplicación? ¿Qué debería tener la visibilidad de la aplicación? ¿La aplicación debe conectarse a un servidor y, si es así, ¿cuál? Para obtener más información, consulte la [plantilla solicitud de empaquetado de aplicaciones](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
 - Debe realizar sus propias pruebas de aceptación para comprobar que la aplicación funciona según la necesite en su entorno.
 
 **MCS se ocupará de estas acciones:**

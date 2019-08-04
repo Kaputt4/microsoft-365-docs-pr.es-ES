@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure multi-factor Authentication mediante mensajes de texto enviados a un smartphone en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 319f8058aa4504c52cacf5f0d97982d115c41c8a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074220"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Multi-factor Authentication para su entorno de prueba de Microsoft 365 Enterprise
 
@@ -54,7 +54,7 @@ Siga estos pasos para habilitar la autenticación multifactor para la cuenta Usu
     
 2. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
-3. En el panel usuarios activos, haga clic en **más _GT_ multi-factor Authentication Setup**.
+3. En el panel usuarios activos, haga clic en **más > configuración de multi-factor Authentication**.
     
 4. En la lista, seleccione la cuenta **usuario 2** .
     
@@ -97,7 +97,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
 
 Consulte el paso [configurar la autenticación multifactor](identity-multi-factor-authentication.md#identity-mfa) en la fase de identidad para obtener información y vínculos para implementar la autenticación multifactor en producción.
     
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Explorar características de [identidad](m365-enterprise-test-lab-guides.md#identity) adicionales y funcionalidades en su entorno de prueba.
 

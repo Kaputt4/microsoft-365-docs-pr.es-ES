@@ -3,16 +3,16 @@ title: Administrar aplicaciones en el escritorio administrado por Microsoft
 description: Información sobre cómo actualizar las aplicaciones de línea de negocio que se implementan en dispositivos de escritorio administrados por Microsoft
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ce2765ef2ab176dc5d9a1d41db7e26549b007d79
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285950"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390737"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Administrar aplicaciones de línea de negocio en el escritorio administrado por Microsoft
 
@@ -43,7 +43,7 @@ La aplicación actualizada se implementará en los dispositivos del usuario.
 **Para actualizar las aplicaciones de línea de negocio en Intune**
 1. Inicie sesión en [Azure portal](https://azure.portal.com).
 2. Seleccione **todos los servicios** > **** de Intune. Intune se encuentra en la sección **Monitoring + Management** .
-3. Seleccione aplicaciones **cliente _GT_ apps**.
+3. Seleccione aplicaciones **cliente > aplicaciones**.
 4. Busque y seleccione su aplicación en la lista de aplicaciones.
 5. En la hoja **información general** , seleccione **propiedades**.
 6. Seleccione **archivo de paquete de aplicaciones**.
@@ -52,7 +52,7 @@ La aplicación actualizada se implementará en los dispositivos del usuario.
 
 <span id="roll-back-app-mmd" />
 
-## <a name="roll-back-an-app-to-a-previous-version"></a>ReVertir una aplicación a una versión anterior
+## <a name="roll-back-an-app-to-a-previous-version"></a>Revertir una aplicación a una versión anterior
 
 Si se produce un error cuando se implementa una nueva versión de una aplicación, puede volver a una versión anterior. El proceso descrito aquí es para las aplicaciones donde tipo aparece como **aplicación MSI de línea de negocio de Windows** o aplicación de **windows (Win 32)-vista previa**
 

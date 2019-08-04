@@ -8,12 +8,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 4915bf5d1b89720c65a5134b23d9d837febff357
-ms.sourcegitcommit: 184957e2878388e0d427a7ee47577d29c4e3c483
+ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
+ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605969"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795626"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historial de cambios de la documentación de escritorio administrado de Microsoft
 
@@ -23,6 +23,9 @@ En este tema se enumeran los temas nuevos y actualizados de la [documentación d
 Tema nuevo o modificado | Descripción
 --- | ---
 [Trabajar con los servicios de consultoría de Microsoft](get-ready/apps-mcs.md) | Tema actualizado
+[Microsoft Managed Desktop and ITIL](MMD-and-ITSM.md) | Tema nuevo
+[Configuración de dispositivos](service-description/device-policies.md) | Tema actualizado
+
 
 ## <a name="june-2019"></a>Junio de 2019
 Tema nuevo o modificado | Descripción

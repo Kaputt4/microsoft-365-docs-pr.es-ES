@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3b89591943e060eb752f0301258f2114f3a84608
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: bdd11728b6b3b5ebaf0eea507906e4fc31adb7b5
+ms.sourcegitcommit: d9350b6465d1404d32bcba8f5fc5a203085e6b82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34482713"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786735"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Regiones e idiomas admitidos por Microsoft Managed Desktop
 
@@ -20,7 +20,7 @@ En este tema se proporcionan detalles sobre las regiones y los idiomas admitidos
 - **Regiones:** Estados Unidos, Canadá (excepto Quebec), Reino Unido, Australia y Nueva Zelanda
 - **Idiomas:** El inglés es el único idioma admitido disponible actualmente para los usuarios en los dispositivos administrados. Esto es aplicable tanto a las opciones de soporte técnico del [Administrador](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) como al [soporte técnico para el usuario final](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) . 
 
-Sin embargo, los clientes todavía pueden usar dispositivos administrados fuera de las regiones enumeradas anteriormente sin una interrupción del servicio de escritorio administrado por Microsoft. Por ejemplo, un empleado con sede en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja en Asia, Europa o Sudamérica.
+Sin embargo, los clientes pueden seguir usando dispositivos administrados fuera de las regiones enumeradas anteriormente sin interrumpir el servicio de escritorio administrado por Microsoft. Por ejemplo, un empleado con sede en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja en Asia, Europa o Sudamérica.
 
 Para obtener más información acerca del soporte técnico del usuario con el escritorio administrado de Microsoft, consulte [soporte técnico para Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).
 

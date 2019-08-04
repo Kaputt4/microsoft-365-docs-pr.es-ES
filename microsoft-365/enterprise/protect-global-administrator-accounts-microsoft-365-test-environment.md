@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/16/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Siga estos pasos para proteger las cuentas de administrador global en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 7a6f99ae1123b07618dea9910a0bdd993e36ca13
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353062"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074150"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Proteger las cuentas de administrador global en su entorno de prueba de Microsoft 365 Enterprise
 
@@ -52,7 +52,7 @@ En primer lugar, cree una nueva cuenta de usuario como administrador global dedi
 2. En **usuarios activos**, haga clic en **Agregar un usuario**.
 3. En la página **nuevo usuario** , escriba **DedicatedAdmin** en **nombre**, **nombre para mostrar**y nombre de **usuario**.
 4. Haga clic en **contraseña**, en **deseo crear la contraseña**y, a continuación, escriba una contraseña segura. Registre la contraseña de esta nueva cuenta en una ubicación segura.
-5. DesActive **la casilla hacer que este usuario cambie su contraseña la primera vez que inicie sesión**.
+5. Desactive **la casilla hacer que este usuario cambie su contraseña la primera vez que inicie sesión**.
 6. Haga clic en **roles**y, a continuación, en **administrador global**.
 7. Haga clic en **licencias de producto**y, a continuación, active las licencias de **Enterprise Mobility + Security e5** y **Office 365 Enterprise E5** en.
 8. Haga clic en **Agregar**.
@@ -66,24 +66,24 @@ A continuación, cree un nuevo grupo denominado GlobalAdmins y agréguele la cue
 4. Haga clic en **seleccionar propietario, seleccione** su cuenta de administrador global y, a continuación, haga clic en **Agregar > cerrar**.
 5. En la lista de grupos, haga clic en el grupo **GlobalAdmins** .
 6. En la página **GlobalAdmins** , haga clic en **Editar para miembro**y, a continuación, haga clic en **Agregar miembros**.
-7. En la lista, haga clic en la cuenta **DedicatedAdmin** y, a continuación, haga clic en **Guardar _GT_ cerrar > cerrar _GT_ centro de administración**.
+7. En la lista, haga clic en la cuenta **DedicatedAdmin** y, a continuación, haga clic en **guardar > cerrar > cerrar > centro de administración**.
 
 A continuación, cree directivas de acceso condicional para requerir la autenticación multifactor para las cuentas de administrador global y para denegar la autenticación si el riesgo de inicio de sesión es medio o alto.
 
 Esta primera Directiva requiere que todas las cuentas de administrador global usen MFA.
 
 1. En una pestaña nueva del explorador, vaya a [https://portal.azure.com](https://portal.azure.com).
-2. Haga clic en **Azure Active Directory > acceso condicional**.
+2. Haga clic en **Azure active directory > acceso condicional**.
 3. En la hoja de **acceso condicional-directivas** , haga clic en **Directiva de línea de base: requerir MFA para administradores (versión preliminar)**.
-4. En las **directivas de línea base...** Blade, haga clic en **usar Directiva inmediatamente _GT_ guardar**.
+4. En las **directivas de línea base...** Haga clic en **usar Directiva inmediatamente > guardar**.
 
 Esta segunda Directiva bloquea el acceso a la autenticación de la cuenta de administrador global cuando el riesgo de inicio de sesión es medio o alto.
 
 1. En la hoja de **acceso condicional-directivas** , haga clic en **nueva Directiva**.
 2. En la hoja **nueva** , escriba **administradores globales** en **nombre**.
 3. En la sección **asignaciones** , haga clic en **usuarios y grupos**.
-4. En la ficha **incluir** de la hoja **usuarios y grupos** , haga clic en **Seleccionar usuarios y grupos _GT_ usuarios y grupos > seleccione**.
-5. En la hoja **Select** Blade, haga clic en el **> GlobalAdmins seleccione > listo**.
+4. En la ficha **incluir** de la hoja **usuarios y grupos** , haga clic en **Seleccionar usuarios y grupos > usuarios y grupos > seleccione**.
+5. En la hoja **seleccionar** , haga clic en el **GlobalAdmins > seleccione > listo**.
 6. En la sección **asignaciones** , haga clic en **condiciones**.
 7. En la **hoja condiciones** , haga clic en **riesgo de inicio de sesión**, haga clic en **sí** para **configurar**, haga clic en **alta** y **media**y, a continuación, haga clic en **seleccionar** y **listo**.
 8. En la sección **controles de acceso** de la **nueva** hoja, haga clic en **conceder**.
@@ -95,7 +95,7 @@ Para probar la primera Directiva, cierre e inicie sesión con la cuenta Dedicate
 
 Consulte el paso [proteger las cuentas de administrador global](identity-designate-protect-admin-accounts.md#identity-global-admin) en la fase de identidad para obtener información y vínculos para proteger las cuentas de administrador global en producción.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Explorar características de [identidad](m365-enterprise-test-lab-guides.md#identity) adicionales y funcionalidades en su entorno de prueba.
 

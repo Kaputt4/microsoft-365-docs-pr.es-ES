@@ -3,16 +3,16 @@ title: Roles y responsabilidades del escritorio administrado por Microsoft
 description: En este tema se describen los roles y las responsabilidades que proporciona Microsoft para el escritorio administrado por Microsoft.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a51738b993a8a3683769d10882877b3b42d34ddf
-ms.sourcegitcommit: 7edeea1311ebb79a8c72418d2c6451b94fb788cb
+ms.openlocfilehash: 9eedd9b6ca9995595c75044b7877ed6eaca21127
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35061853"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425697"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Roles y responsabilidades del escritorio administrado por Microsoft
 
@@ -31,7 +31,7 @@ Rol o responsabilidad | Descripción
 Administración de directivas de MDM | Microsoft aplicará directivas de MDM de acuerdo con los procedimientos recomendados y considerará las solicitudes de cambios de directiva. También realizaremos cambios en su espacio empresarial tal y como se indica en [directivas de dispositivo](../service-description/device-policies.md).
 Compatibilidad con usuarios finales | Microsoft proporcionará compatibilidad con el usuario final para dispositivos, Windows y el conjunto de productos de Office para todos los usuarios inscritos a través de la aplicación obtener ayuda que está preinstalada en todos los dispositivos de escritorio administrados por Microsoft. 
 Soporte técnico del servicio de escritorio administrado de Microsoft | Microsoft proporcionará soporte técnico a los departamentos de TI del cliente a través de un equipo de operaciones de escritorio administrado por Microsoft. Este equipo será compatible con la solución de problemas técnicos, las solicitudes de cambio y la administración de incidentes para el entorno de escritorio administrado por Microsoft del cliente. Para obtener más información, consulte [soporte de administración para escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md).
-Supervisión de seguridad | Microsoft supervisará los dispositivos de escritorio administrados por Microsoft para clientes con ATP de Windows Defender. Si se detecta una amenaza en el centro de operaciones de seguridad de escritorio administrada de Microsoft (SOC), Microsoft notificará al cliente, aislará el dispositivo y rectificará el problema de forma remota. Para obtener más información, consulte [seguridad](../service-description/security.md).
+Supervisión de seguridad | Microsoft supervisará los dispositivos de escritorio administrados por Microsoft para clientes con ATP de Microsoft defender. Si se detecta una amenaza en el centro de operaciones de seguridad de escritorio administrada de Microsoft (SOC), Microsoft notificará al cliente, aislará el dispositivo y rectificará el problema de forma remota. Para obtener más información, consulte [seguridad](../service-description/security.md).
 Actualización de la supervisión y la administración | Microsoft supervisará activamente los dispositivos de escritorio administrados por Microsoft para asegurarse de que están instaladas las últimas actualizaciones de calidad y características para Microsoft Windows y Microsoft Office. Para obtener más información, vea [cómo se administran las actualizaciones](../service-description/updates.md).
 Agrupación de usuarios y dispositivos | El equipo de operaciones de escritorio administrado por Microsoft creará y administrará el dispositivo y los grupos de usuarios necesarios como parte de las operaciones de ti. No se permiten cambios de configuración ni pertenencia a estos grupos. La modificación de estos grupos puede llevar a la configuración inesperada de los dispositivos y la pérdida de funcionalidad. Para cualquier problema o pregunta sobre estos grupos una vez que se ha establecido, los administradores de TI pueden ponerse en contacto con las operaciones de escritorio administradas de Microsoft. Para obtener más información, consulte [soporte de administración para escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md).
 

@@ -1,26 +1,26 @@
 ---
-title: Opciones conFigurables para escritorio administrado de Microsoft
+title: Opciones configurables para escritorio administrado de Microsoft
 description: Información sobre las opciones configurables con el escritorio administrado de Microsoft
 keywords: Escritorio administrado por Microsoft, Microsoft 365, servicio, documentación, configuración, configuración configurable
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0d30e92eb9747079a7edc5a8fd198298508f342e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d8ebe4519d169db5500c55a3337836ca2d0986c0
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278222"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390727"
 ---
-# <a name="configurable-settings---microsoft-managed-desktop"></a>Opciones conFigurables-escritorio administrado por Microsoft
+# <a name="configurable-settings---microsoft-managed-desktop"></a>Opciones configurables-escritorio administrado por Microsoft
 
-Microsoft manAged Desktop implementa la configuración y las directivas que se aplican a todos los dispositivos administrados por el escritorio administrado por Microsoft. Para obtener más información, consulte [configuración de dispositivos](../service-description/device-policies.md).
+Microsoft Managed Desktop implementa la configuración y las directivas que se aplican a todos los dispositivos administrados por el escritorio administrado por Microsoft. Para obtener más información, consulte [configuración de dispositivos](../service-description/device-policies.md).
 
-Las opciones conFigurables del escritorio administrado de Microsoft proporcionan a los administradores de ti una forma de personalizar e implementar la configuración que es única para su organización y las necesidades empresariales. Estas opciones de configuración se agregan a la configuración de dispositivos y a las directivas administradas por el escritorio administrado por Microsoft.  
+Las opciones configurables del escritorio administrado de Microsoft proporcionan a los administradores de ti una forma de personalizar e implementar la configuración que es única para su organización y las necesidades empresariales. Estas opciones de configuración se agregan a la configuración de dispositivos y a las directivas administradas por el escritorio administrado por Microsoft.  
 
-Los cambios de configuración conFigurables se realizan en la nube y se aplican a los dispositivos de escritorio administrados por Microsoft en los grupos de implementación definidos. Este proceso es similar al modo en que Microsoft manAged Desktop administra los cambios en las directivas y la configuración de configuruation de dispositivos definidas y administradas por el servicio. Si usa el mismo proceso que Microsoft manAged Desktop usa para implementar cambios, sigue adelante con las prácticas modernas de administración de TI para avanzar la organización.
+Los cambios de configuración configurables se realizan en la nube y se aplican a los dispositivos de escritorio administrados por Microsoft en los grupos de implementación definidos. Este proceso es similar al modo en que Microsoft Managed Desktop administra los cambios en las directivas y la configuración de configuruation de dispositivos definidas y administradas por el servicio. Si usa el mismo proceso que Microsoft Managed Desktop usa para implementar cambios, sigue adelante con las prácticas modernas de administración de TI para avanzar la organización.
 
 ## <a name="when-to-use-configurable-settings"></a>¿Cuándo se deben usar las opciones configurables?
 
@@ -47,7 +47,7 @@ Por ejemplo:
 
 ## <a name="configurable-setting-process"></a>Proceso de configuración configurable
 
-Microsoft manAged Desktop recomienda seguir un proceso similar al siguiente cuando se usan opciones configurables para su organización:
+Microsoft Managed Desktop recomienda seguir un proceso similar al siguiente cuando se usan opciones configurables para su organización:
 
 **Paso 1: Plan** : Obtenga información sobre la configuración configurable y decida qué categorías de configuración desea configurar para su organización. Cree una escala de tiempo para cuando tenga previsto implementar cambios en cada grupo. Planee la comunicación a los usuarios que cumplan los procesos internos de administración de cambios. Por ejemplo, si va a agregar páginas de inicio del explorador, indique a los usuarios que tendrán un nuevo conjunto de páginas de inicio en el explorador después de la implementación.  
 
@@ -57,7 +57,7 @@ Configure y almacene los cambios en el portal de administración de escritorio a
 
 **Paso 3: comunicar los cambios** Comunique la información sobre los próximos cambios a sus usuarios. Para cada implementación, complete la comunicación que forma parte de los procesos de administración de cambios. Debe comunicarse con claridad cualquier cambio que afecte al funcionamiento de un usuario o lo que verán en sus dispositivos.
 
-**Paso 4: implementar los** cambios: implemente los cambios, comenzando con el grupo de prueba. El grupo de pruebas permite validar y solucionar problemas en un grupo con menos dispositivos, antes de implementar cambios en grupos de dispositivos de mayor tamaño. Si tiene algún problema, puede revertir el cambio, actualizar la configuración y ensayar una nueva implementación. Microsoft manAged Desktop recomienda seguir el enfoque estructurado e implementarlo en grupos en este orden: test, First, Fast y, a continuación, general.   
+**Paso 4: implementar los** cambios: implemente los cambios, comenzando con el grupo de prueba. El grupo de pruebas permite validar y solucionar problemas en un grupo con menos dispositivos, antes de implementar cambios en grupos de dispositivos de mayor tamaño. Si tiene algún problema, puede revertir el cambio, actualizar la configuración y ensayar una nueva implementación. Microsoft Managed Desktop recomienda seguir el enfoque estructurado e implementarlo en grupos en este orden: test, First, Fast y, a continuación, general.   
 
 Todas las opciones de configuración que se pueden configurar se administran mediante el portal de administración de escritorio administrado de Microsoft. Para obtener más información, vea [implementar cambios](config-setting-deploy.md). 
 
@@ -71,6 +71,6 @@ Si se produce un error en una implementación o no puede revertir un cambio, [ab
 
 Para obtener más información, vea [implementar y realizar un seguimiento](config-setting-deploy.md)de las opciones configurables.
 
-## <a name="additional-resources"></a>Recursos adicionales
-- [Referencia de opciones conFigurables](config-setting-ref.md) 
+## <a name="additional-resources"></a>Otros recursos
+- [Referencia de opciones configurables](config-setting-ref.md) 
 - [Implementar opciones configurables](config-setting-deploy.md) 

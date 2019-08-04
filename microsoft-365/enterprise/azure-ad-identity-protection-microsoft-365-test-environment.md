@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure Azure AD Identity Protection y analice las cuentas actuales en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: bdac512f7645bf78c0a9c6bc5f71b35916bc4812
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d267bb9dff94acfec46fa1275887f9cade2a7285
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279099"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074090"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identity Protection para su entorno de prueba de Microsoft 365 Enterprise
 
@@ -26,7 +26,7 @@ Azure AD Identity Protection le permite detectar posibles vulnerabilidades que a
 
 Hay dos fases para la configuración de Azure AD Identity Protection en su entorno de prueba de Microsoft 365 Enterprise:
 
-1. Cree el entorno de prueba de Microsoft 365 Enterprise.
+1. Crear el entorno de pruebas de Microsoft 365 Enterprise.
 2. Habilite y use Azure AD Identity Protection.
 
 ![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
@@ -46,7 +46,7 @@ Si quiere probar Azure AD Identity Protection en una empresa simulada, siga las 
 ## <a name="phase-2-enable-and-use-azure-ad-identity-protection"></a>Fase 2: habilitar y usar Azure AD Identity Protection
 
 1. Abra una instancia privada del explorador e inicie sesión en el portal de Azure en [https://portal.azure.com](https://portal.azure.com) con la cuenta de administrador global de su entorno de prueba de Microsoft 365 Enterprise.
-2. En Azure portal, haga clic en **todos los servicios de _GT_ Marketplace**.
+2. En Azure portal, haga clic en **todos los servicios > Marketplace**.
 3. Escriba **Azure ad Identity Protection** y, a continuación, haga clic en él.
 4. En la hoja **Introducción** , haga clic **en incorporada** en **configuración**, haga clic en **anclar a panel**y, a continuación, haga clic en **crear**.
 5. En Azure portal, haga clic en **Azure ad Identity Protection** en el panel. 

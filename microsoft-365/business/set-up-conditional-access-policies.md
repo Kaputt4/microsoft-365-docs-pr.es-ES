@@ -1,5 +1,5 @@
 ---
-title: Configurar directivas de acceso condicional
+title: Configurar directivas de acceso condicional para campañas de 365 de Microsoft
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,15 +19,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo configurar directivas de acceso condicional para Microsoft 365 Business.
-ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+description: Obtenga información sobre cómo configurar directivas de acceso condicional para campañas de 365 de Microsoft.
+ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
+ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913011"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35076314"
 ---
-# <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>Configurar directivas de acceso condicional para Microsoft 365 Business
+# <a name="set-up-conditional-access-policies"></a>Configurar directivas de acceso condicional
 
 Las directivas de [acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) agregan substancial seguridad adicional. Microsoft proporciona un conjunto de directivas de acceso condicional de línea base que se recomiendan para todos los clientes. Las directivas de línea base son un conjunto de directivas predefinidas que ayudan a proteger a las organizaciones frente a muchos ataques comunes. Estos ataques comunes pueden incluir aerosol, reproducción y suplantación de identidad.
 
