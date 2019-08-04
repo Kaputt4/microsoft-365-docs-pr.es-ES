@@ -1,7 +1,7 @@
 ---
 title: Listas de comprobación de preparación de responsabilidad para RGPD
 description: Se explica cómo los servicios Microsoft protegen contra una infracción de datos personales y cómo Microsoft responde y le notifica si se produce una infracción.
-keywords: Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
+keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -10,22 +10,57 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: d810dbfa6abb4935ae9d7078f9ed475123be405c
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 95805d6d61f2e8454ade16298db78370b0fca9f1
+ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698362"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35078930"
 ---
-# <a name="accountability-readiness-checklists-for-the-gdpr"></a>Listas de comprobación de preparación de responsabilidad para RGPD
+# <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Apoye a su programa de RGPD con las listas de comprobación de preparación de responsabilidad
 
-Estas listas de comprobación de preparación de responsabilidad constituyen una forma cómoda de obtener acceso a la información necesaria para cumplir con el Reglamento general de protección de datos (RGPD) al usar los productos y servicios Microsoft.  
+El RGPD añade nuevas normas organizaciones que ofrecen bienes y servicios a los ciudadanos de la Unión Europea (UE), o que recopilen y analicen datos de los residentes de la UE, sin importar donde estén ubicados usted o su empresa. El tema Resumen del RGPD](gdpr.md) muestra información adicional.
+
+## <a name="accountability-readiness-checklists"></a>Listas de comprobación de preparación de responsabilidad
+
+Las listas de comprobación de preparación de responsabilidad ofrecen una forma cómoda de acceder a información que tal vez necesite para cumplir el RGPD cuando utilice productos y servicios de Microsoft. En estas listas de comprobación se muestran obligaciones establecidas por el RGPD que le pueden afectar y se le indica cómo puede ayudar a su organización a cumplir con el reglamento. <br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+
+Puede ver una guía con cuatro secciones específicas para familias de productos y servicios de Microsoft:
 
 - [Office 365](gdpr-arc-Office365.md)
-- [Azure](gdpr-arc-Azure.md)
 - [Dynamics 365](gdpr-arc-Dynamics365.md)
+- [Azure](gdpr-arc-Azure.md)
 - [Soporte técnico y servicios profesionales de Microsoft](gdpr-arc-prof-services.md)
+
+Puede administrar los elementos de esta lista de comprobación con el [Administrador de cumplimiento](https://servicetrust.microsoft.com/ComplianceManager) haciendo referencia al identificador de control y el título del control en Controles administrados de cliente en el icono RGPD.
+
+Las listas de comprobación incluyen cuatro categorías básicas para un programa de privacidad compatible con el RGPD. Estas se muestran a continuación acompañadas con ejemplos de requisitos.
+
+1. Condiciones de recopilación de datos y procesamiento:
+
+    - ¿Cuándo se obtiene el consentimiento?  
+    - Identificar y documentar el propósito  
+    - Evaluación del impacto en la privacidad
+
+2. Derechos del titular de los datos (DSR)  
+
+    - Determinar la información relativa a las entidades de seguridad de DCP (titulares)  
+    - Facilitar un mecanismo para modificar o retirar el consentimiento
+
+3. Privacidad por diseño y de forma predeterminada  
+
+    - Limitar la recopilación  
+    - Cumplir con los niveles de identificación  
+    - Archivos temporales
+
+4. Protección y seguridad de los datos  
+
+    - Conocer la organización y su contexto  
+    - Planificación  
+    - Directivas de seguridad de la información
 
 ## <a name="learn-more"></a>Más información
 
-[Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

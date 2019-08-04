@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure el restablecimiento de contraseñas de autoservicio (SSPR) para Azure AD.
-ms.openlocfilehash: 98118a5891ea8224843faa638b52a421d96e8a0b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b57291aabf1b51e7866dba10ba50eacc27291a2a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287078"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073730"
 ---
 # <a name="step-5-simplify-access-for-users"></a>Paso 5 Simplificación del acceso de usuarios
 
@@ -30,7 +30,7 @@ ms.locfileid: "32287078"
 
 *Esta función es opcional para los entornos híbridos y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-En esta sección, permitirá a los usuarios restablecer sus contraseñas a través de Azure Active Directory (Azure AD), que se replicarán en el Active Directory Domain Services (AD DS) local. Este proceso se conoce como reescritura de contraseña. Con la contraseña reescritura, los usuarios no necesitan actualizar las contraseñas mediante el Active Directory Domain Services (AD DS) local donde se almacenan las cuentas de usuario y sus atributos. Esto resulta útil para los usuarios móviles o remotos que no disponen de una conexión de acceso remoto a la red local.
+En esta sección, permitirá a los usuarios restablecer sus contraseñas a través de Azure Active Directory (Azure AD), que se replicarán en el Active Directory Domain Services (AD DS) local. Este proceso se conoce como reescritura de contraseña. Con la escritura diferida de contraseñas, los usuarios no necesitan actualizar las contraseñas mediante AD DS local donde se almacenan las cuentas de usuario y sus atributos. Esto resulta útil para los usuarios móviles o remotos que no disponen de una conexión de acceso remoto a la red local.
 
 La escritura diferida de contraseñas es necesaria para utilizar por completo las funcionalidades de la característica de Identity Protection, como solicitar a los usuarios que cambien sus contraseñas locales cuando se haya detectado un alto riesgo de que la cuenta se haya visto comprometida.
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar la infraestructura de protección de la información para Microsoft 365 Enterprise.
-ms.openlocfilehash: a0d2c485b05e0969fe45cfd79c86e4e7dcb1d5ff
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: a00f61cbf2f8d00929a67dae6d401fd99014ec26
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400004"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073690"
 ---
 # <a name="phase-6-information-protection"></a>Fase 6: Protección de la información
 
@@ -50,11 +50,7 @@ Cuando complete estos pasos, vaya a los [criterios de salida](infoprotect-exit-c
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Descubra cómo los expertos en TI de Microsoft utilizan las capacidades de protección de la información de Microsoft 356 Enterprise para proteger la información y defenderse de los ataques cibernéticos:
-
-- [Protecting files in the cloud with Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection) (Proteger los archivos en la nube con Azure Information Protection)
-- [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats) (Microsoft usa inteligencia de amenazas para proteger, detectar y responder a las amenazas)
-- [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365) (Microsoft frustra intentos de suplantación de identidad (phishing) con Office 365)
+Obtenga información sobre cómo los expertos de TI de Microsoft usan [Azure Information Protection para salvaguardar los datos](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Cómo Contoso hizo Microsoft 365 Enterprise
 

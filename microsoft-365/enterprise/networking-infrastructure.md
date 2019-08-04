@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Los pasos para implementar la infraestructura de red de Microsoft 365 Enterprise.
-ms.openlocfilehash: 9b8c23d543eca97147801d70e42de7105266c52d
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 4c1ea87e243d72920a3a56df270fab33bd722834
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33399964"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074320"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>Fase 1: Infraestructura de red para Microsoft 365 Enterprise
 
@@ -46,13 +46,13 @@ Siga este procedimiento para preparar la infraestructura de red para los requisi
 
 Cuando complete estos pasos, vaya a los [criterios de salida](networking-exit-criteria.md) de esta fase para asegurarse de que cumple con las condiciones obligatorias y opcionales de Microsoft 365 Enterprise.
 
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft migra a Microsoft 365 Enterprise
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Eche un vistazo en Microsoft y aprenda cómo se prepara la empresa para una red de Microsoft optimizada para los servicios de nube de Office 365 con [Optimización del rendimiento de red para Microsoft Office 365](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+Obtenga información sobre Microsoft y cómo la empresa [optimizó la red de Microsoft para servicios en la nube](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4).
 
-## <a name="how-contoso-did-microsoft-365-enterprise"></a>Cómo Contoso implementó Microsoft 365 Enterprise
+## <a name="how-contoso-did-microsoft-365-enterprise"></a>Cómo Contoso hizo Microsoft 365 Enterprise
 
-Vea cómo Contoso Corporation, una empresa multinacional ficticia pero representativa, [optimizó su red](contoso-networking.md) para los servicios en la nube de Microsoft 365.
+Vea cómo Contoso Corporation, una empresa multinacional ficticia pero representativa, [optimizó sus dispositivos de red y conexión a Internet](contoso-networking.md) para los servicios en la nube de Microsoft 365.
 
 ![](./media/contoso-overview/contoso-icon.png)
 
