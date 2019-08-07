@@ -3,8 +3,8 @@ title: Infraestructura básica de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 03/05/2019
-ms.audience: ITPro
+ms.date: 05/22/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda las fases principales para implementar la infraestructura básica de Microsoft 365 Enterprise en su organización, también conocida como la implementación principal.
-ms.openlocfilehash: e6b8a71f59f20633e323c71e931b930198bc4deb
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 0c683f771609c847556f82fe84a17dad13ee34d4
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400054"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36055031"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infraestructura básica de Microsoft 365 Enterprise
 
-Si realiza la implementación de un extremo a otro de Microsoft 365 Enterprise por su cuenta, primero debe crear una base firme en la que los servicios y aplicaciones impulsen la creatividad y el trabajo en equipo en un entorno seguro. Esta base a veces se conoce como la implementación principal.
+Si realiza la implementación de un extremo a otro de Microsoft 365 Enterprise por su cuenta, primero debe crear una base firme en la que los servicios y aplicaciones impulsen la creatividad y el trabajo en equipo en un entorno seguro. Esta base a veces se conoce como la *implementación principal*.
 
 Para una ruta de implementación de un extremo a otro definida, puede usar estas fases para planear e implementar la infraestructura de base de Microsoft 365 Enterprise:
 
@@ -38,7 +38,7 @@ Para una ruta de implementación de un extremo a otro definida, puede usar estas
 Las fases comienzan por lo más fundamental (redes e identidad) y después crean capas de configuración de infraestructura y grupos para:
 
 - Instalar la versión más actualizada y segura de Windows en sus dispositivos.
-- Instalar la versión más actualizada de Office en sus dispositivos.
+- Instalar la versión más reciente de Microsoft Office en sus dispositivos. 
 - Administrar los dispositivos de su organización.
 - Proteger la información en los dispositivos y en la nube.
 
@@ -58,6 +58,22 @@ Esta es la infraestructura de base de la guía de implementación de Microsoft 3
 
 ![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
+## <a name="at-a-glance"></a>A simple vista
+
+El [póste de Microsoft 365 Enterprise Foundation Infrastructure ](http://aka.ms/m365efoundinfraposter) es una ubicación central para que lo vean, en cada fase:
+
+- Objetivos generales de la fase para administradores y usuarios
+- Los servicios, características y herramientas
+- Las decisiones clave de diseño para planear
+- Los resultados de la configuración
+- El proceso para incorporar a un nuevo usuario
+- Cómo supervisar y actualizar
+
+![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+
+Para descargar una copia del póster, haga clic [aquí](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
+
+
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>Configuración de la infraestructura frente a la inscripción de usuarios
 
 La infraestructura de base es un conjunto de software y servicios configurados que permiten aprovechar toda la gama de funcionalidades y protecciones que ofrece Microsoft 365 Enterprise al combinarse para un usuario. El objetivo de la implementación de un extremo a otro es que esta infraestructura se aplique a todos los usuarios y sus dispositivos con Windows. 
@@ -74,7 +90,7 @@ Por ejemplo, puede crear la configuración de:
 | Windows 10 Enterprise | Grupos para actualizar automáticamente los equipos con Windows 7 o Windows 8.1 a Windows 10 Enterprise. |
 | Office 365 ProPlus | Grupos para implementar automáticamente Office 365 ProPlus para usuarios con Office 2010, Office 2013 u Office 2016. |
 | Administración de dispositivos móviles | Grupos para la inscripción de dispositivos y directivas de acceso condicional basado en el dispositivo. |
-| Protección de la información | Etiquetas y grupos de Office 365 y de Azure Information Protection. |
+| Protección de la información | Etiquetas y grupos de sensibilidad para la protección de información de Office 365 y de Azure. |
 
 Cuando se haya preparado para implementar elementos de esta infraestructura para los usuarios, usted:
 
@@ -92,10 +108,16 @@ Cuando la infraestructura de base se haya completado y probado, puede implementa
 
 Para darle algunas ideas sobre cómo enfocar la administración de proyectos de las distintas fases de la infraestructura de base para los usuarios piloto y el resto de su organización, vea [Estrategias de implementación de la infraestructura base de Microsoft 365 Enterprise](deployment-strategies-microsoft-365-enterprise.md).
 
+## <a name="deployment-for-non-enterprises"></a>Implementación para no empresas
 
-## <a name="next-step"></a>Siguiente paso
+Si su organización es más pequeña y Microsoft 365 Business no es adecuada para usted, consulte[, Implementación para no empresas](deploy-foundation-infrastructure-non-enterprises.md).
 
-- Tengo la infraestructura existente de Office 365, Enterprise Mobility + Security (EMS) o Windows 10 Enterprise:
-  - Vea [Implementación de Microsoft 365 Enterprise con una infraestructura existente](deploy-with-existing-infrastructure.md). Este artículo le explicará los criterios de salida para cada fase.
-- Empiezo de cero: 
-   - Empiece su recorrido de implementación de un extremo a otro con [Fase 1: Infraestructura de red para Microsoft 365 Enterprise](networking-infrastructure.md).
+
+## <a name="next-step"></a>Paso siguiente
+
+
+| Donde estoy | Donde necesito ir |
+|:-------|:-----|
+| Tengo la infraestructura existente para Office 365, Enterprise Mobility + Security (EMS) o Windows 10 Enterprise | Comience con [la implementación de la infraestructura existente](deploy-with-existing-infrastructure.md), que le guiará a través del criterio de salida para cada fase. |
+| Estoy empezando desde cero como empresa | Empiece su recorrido de implementación de un extremo a otro con [Fase 1: Networking](networking-infrastructure.md). |
+| Estoy empezando desde cero como no empresa | Empiece su recorrido de implementación de un extremo a otro con [Implementación para no empresas](deploy-foundation-infrastructure-non-enterprises.md). |

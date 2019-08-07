@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo Contoso usa System Center Configuration Manager para implementar Office 365 ProPlus.
-ms.openlocfilehash: 0fa0ca1d268dbfd57891804e20959147cd6385e4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8367f6456b6e32c62e03f611114177f4dbe6622f
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283553"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36055002"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Implementación de Office 365 ProPlus en Contoso
 
@@ -73,9 +73,9 @@ Para completar la implementación de Office, Contoso implementó el siguiente pr
 
 Como Contoso decidió actualizar de forma automática los dispositivos desde la nube, no fue necesario administrar el proceso en Configuration Manager. Los dispositivos se actualizaron de forma automática directamente desde la nube según el canal de actualización definido como parte de la implementación inicial. 
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
-[Obtenga más información](contoso-mdm.md) sobre cómo usa Contoso Enterprise Mobility + Security (EMS) en Microsoft 365 Enterprise para administrar los dispositivos y las aplicaciones que se ejecutan en ellos en la organización.
+[Aprenda](contoso-mdm.md)cómo Contoso está usando Intune en Microsoft 365 Enterprise para administrar los dispositivos y las aplicaciones que se ejecutan en ellos en la organización.
 
 ## <a name="see-also"></a>Vea también
 

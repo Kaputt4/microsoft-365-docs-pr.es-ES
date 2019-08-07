@@ -2,7 +2,7 @@
 title: Cargas de trabajo y escenarios de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/15/2019
+ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Incorpore a los usuarios de su organización a las cargas de trabajo de productividad de Microsoft 365 Enterprise.
-ms.openlocfilehash: 06dc8683c471de9de7067a3d84673687cddc76c6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 0c81f93b117645974e93870f20d4dfb469dae3ac
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072410"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054932"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Cargas de trabajo y escenarios de Microsoft 365 Enterprise
 
@@ -39,6 +39,10 @@ Para proteger los datos ante amenazas internas y externas, consulte las instrucc
 En la ilustración siguiente se muestran las cargas de trabajo y escenarios de la guía de implementación general de Microsoft 365 Enterprise.
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+
+Vea la[Biblioteca de productividad de Microsoft 365](https://www.microsoft.com/microsoft-365/success/)para escenarios adicionales. Desde esta página web, escriba una cadena de búsqueda o haga clic en**filtrar por**y especifique sector, roles (departamentos) y productos de Microsoft 365.
+
+En los resultados, haga clic en una tarjeta para ver los pasos que pueden ayudarle a empezar.
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Requisitos previos de infraestructura básica
 

@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,18 +13,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia, aunque representativa, ha adoptado Microsoft 365 Enterprise.
-ms.openlocfilehash: 559e1af8a344fea2863c528eeaa99de718d2eeed
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e587a2c6588faf32aa6882ef1659472365611517
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276677"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054922"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise para Contoso Corporation
 
 **Resumen:** Cómo una organización global ficticia, aunque representativa, ha adoptado Microsoft 365 Enterprise.
 
-Microsoft 365 Enterprise es el servicio de nube premier de Microsoft que combina Office 365, Windows 10 Enterprise y Enterprise Mobility + Security (EMS) en una solución completa e inteligente con la que los usuarios pueden ser creativos y colaborar en su trabajo de forma segura. 
+Microsoft 365 Enterprise, es el servicio de nube premier de Microsoft que combina aplicaciones productivas y servicios con Windows 10 Enterprise y características avanzadas de seguridad para crear soluciones inteligentes que eleven la creatividad de todos y el trabajo en equipo de forma segura. 
 
 Contoso Corporation es una organización conglomerada global ficticia, aunque representativa, de fabricación con sede en París, Francia. Contoso ha implementado Microsoft 365 Enterprise y ha adoptado importantes decisiones sobre el diseño y los detalles de implementación de redes, identidades, Windows 10 Enterprise, Office 365 ProPlus, administración de dispositivos móviles, protección de la información y seguridad. 
 

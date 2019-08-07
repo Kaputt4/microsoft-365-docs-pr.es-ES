@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo usa Contoso las características de seguridad de Microsoft 365 Enterprise.
-ms.openlocfilehash: 1aade29c8a4f9348b749025818e433981ec19091
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 3de3b748659d713d4db8375d4bcc51ce89573d79
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353112"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054972"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Resumen de seguridad de Microsoft 365 Enterprise para Contoso Corporation
 
@@ -123,7 +123,7 @@ De acuerdo con los procedimientos recomendados de seguridad y los requisitos de 
 
 - Administración de dispositivos con Microsoft Intune
 
-  Como parte del conjunto de aplicaciones Enterprise Management + Security (EMS), Contoso usa [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) para inscribir, administrar y configurar el acceso a los dispositivos móviles y las aplicaciones que se ejecutan en ellas. Las directivas de acceso condicional basadas en dispositivos también requieren aplicaciones autorizadas y equipos y dispositivos móviles compatibles.
+  Contoso usa [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) para inscribir, administrar, y configurar el acceso a los dispositivos móviles y las aplicaciones que se ejecutan en ellas. Los dispositivos basados en políticas de acceso condicional también requieren aplicaciones autorizadas, PCs y dispositivos móviles compatibles.
 
 ## <a name="security-management"></a>Administración de seguridad
 
