@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 68f5d5cb46d4aa643b1b09f9204b24dea3d77eb1
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 2178b871da412d12bf20dae9b72d7562e2bc4654
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390537"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243951"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Agregar contactos de administrador en el portal de administración de escritorio administrado de Microsoft
 
@@ -28,13 +28,13 @@ El portal de administración de escritorio administrado de Microsoft requiere qu
 
 El administrador global debe ser el que inscriba al cliente en el escritorio administrado de Microsoft. Los cinco roles tienen el mismo acceso dentro del portal de administración para iniciar y ver las tareas. Para obtener más información sobre la asignación de estos roles en Azure AD, vea [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
-## <a name="admin-contact-focus-areas"></a>Áreas de enfoque del contacto del administrador
+## <a name="admin-contact-areas-of-focus"></a>Áreas de contacto del administrador enfocadas
 
-Los contactos de administrador deben ser la mejor persona o grupo que pueda responder preguntas y tomar decisiones para las distintas áreas de enfoque. Las operaciones de escritorio administradas de Microsoft se comunicarán con estos contactos de administrador para obtener preguntas relacionadas con las solicitudes de soporte técnico que haya archivado el cliente. Estos contactos de administración recibirán notificaciones de actualizaciones de solicitud de soporte y mensajes nuevos. Estas áreas incluyen:
+Los contactos de administrador deben ser la mejor persona o grupo que pueda responder preguntas y tomar decisiones para diferentes áreas de interés. Las operaciones de escritorio administradas de Microsoft se comunicarán con estos contactos de administrador para obtener preguntas relacionadas con las solicitudes de soporte técnico que haya archivado el cliente. Estos contactos de administración recibirán notificaciones de actualizaciones de solicitud de soporte y mensajes nuevos. Estas áreas incluyen:
 
 Área de foco | Para preguntas sobre
 --- | ---
-Aplicaciones | Solución de problemas de empaquetado de aplicaciones
+Empaquetado de aplicaciones | Solución de problemas de empaquetado de aplicaciones
 Dispositivos | Estado del dispositivo, solución de problemas con dispositivos de escritorio administrados por Microsoft
 Seguridad | Solución de problemas de seguridad de los dispositivos de escritorio administrados por Microsoft
 Departamento de soporte técnico de ti | en los casos donde Microsoft Managed Desktop Support ofrece a los tíquets del usuario final fuera de las áreas de soporte técnico de MMD 

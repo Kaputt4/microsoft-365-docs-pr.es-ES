@@ -6,18 +6,18 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 5987dcaf717ecb2907f02db675a77c3e1d2d2220
-ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
+ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35425673"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243941"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Seguridad en el escritorio administrado por Microsoft
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop aplica un conjunto estándar de directivas y utiliza muchas tecnologías de Microsoft para ayudar a proteger los dispositivos de escritorio administrados por Microsoft, los datos de la compañía almacenados y mucho más. Más detalladamente las áreas que se enumeran a continuación:  
+Microsoft Managed Desktop usa varias tecnologías de Microsoft para ayudar a proteger los datos y los dispositivos administrados. En particular: 
 
 - [Seguridad de datos](#data-security) : tipos de datos recopilados por el escritorio administrado por Microsoft y donde se almacenan de forma segura
 - [Seguridad](#device-security) de los dispositivos: seguridad y protección en dispositivos de escritorio administrados por Microsoft
@@ -37,6 +37,7 @@ A continuación se enumeran los tipos de datos que se transmiten desde su espaci
 - Datos de confiabilidad y de implementación de aplicaciones
 - Actualización y datos de implementación de la Directiva de seguridad
 - Usuarios asignados a dispositivos
+- Registros de seguridad de su espacio empresarial relacionados con las cuentas usadas por el escritorio administrado por Microsoft para administrar el servicio
 
 
 
@@ -60,8 +61,7 @@ La administración de identidades y acceso protege los activos corporativos y lo
 
 Servicio | Descripción
 --- | ---
-Autenticación biométrica |  Windows Hello permite a los usuarios iniciar sesión con su cara o un PIN, lo que dificulta la olvidar o robar las contraseñas. Para obtener más información, consulta [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-Autenticación multifactor | La autenticación multifactor de Azure controla de manera más rigurosa el acceso a las funciones confidenciales del servicio de escritorio administrado de Microsoft al ofrecer un nivel de autenticación adicional mediante un teléfono móvil, así como el restablecimiento de contraseña de autoservicio. 
+Autenticación biométrica |  Windows Hello permite a los usuarios iniciar sesión con su cara o un PIN, lo que dificulta la olvidar o robar las contraseñas. Los clientes son responsables de implementar los requisitos previos necesarios para su Active Directory local para el uso de este servicio en una configuración híbrida. Para obtener más información, consulta [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Permiso de usuario estándar |  Para proteger el sistema y hacer que sea más seguro, se asignará al usuario permisos de usuario estándar. Se asigna como parte de la experiencia rápida de Windows AutoPilot.
 
 
