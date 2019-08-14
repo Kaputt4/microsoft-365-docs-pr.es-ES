@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Incorpore a los usuarios de su organización a las cargas de trabajo de productividad de Microsoft 365 Enterprise.
-ms.openlocfilehash: 0c81f93b117645974e93870f20d4dfb469dae3ac
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054932"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297870"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Cargas de trabajo y escenarios de Microsoft 365 Enterprise
 
@@ -66,7 +66,7 @@ Estas son algunas cargas de trabajo comunes para implementar inmediatamente:
   - [Exchange Online](exchangeonline-workload.md) para que los usuarios puedan empezar a usar el correo electrónico en la nube.
 - Si no tiene una necesidad inmediata de almacenar en la nube activos digitales altamente regulados, implemente [Microsoft Teams](teams-workload.md) y [SharePoint Online](sharepoint-online-onedrive-workload.md) para sus usuarios antes que la capa de **protección de la información**.
 
-Debe decidir la forma más adecuada de ordenar e implementar la configuración de las fases de requisitos previos de la infraestructura básica a fin de satisfacer sus necesidades empresariales.
+Debe decidir la forma más adecuada de ordenar e implementar la configuración de las fases de requisitos previos de la infraestructura básica a fin de satisfacer de la mejor manera sus necesidades empresariales.
 
 ### <a name="best-practice"></a>Procedimiento recomendado
 
@@ -77,3 +77,4 @@ La fase de **identidad** garantiza que su identidad basada en la nube, tanto si 
 Si bien la base es muy importante para el rendimiento general, la implementación de la fase de **red** en su red puede estar en marcha mientras se incorporan usuarios a las cargas de trabajo, entendiendo que la aplicación Microsoft 365 y el rendimiento del servicio mejorarán con el tiempo.
 
 Esto es especialmente aplicable a organizaciones empresariales con múltiples ubicaciones y una combinación de conexiones locales y a Internet.
+

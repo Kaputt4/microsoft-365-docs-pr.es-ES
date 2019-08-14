@@ -3,7 +3,7 @@ title: Infraestructura básica de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda las fases principales para implementar la infraestructura básica de Microsoft 365 Enterprise en su organización, también conocida como la implementación principal.
-ms.openlocfilehash: 0c683f771609c847556f82fe84a17dad13ee34d4
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36055031"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297920"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infraestructura básica de Microsoft 365 Enterprise
 
@@ -37,14 +37,14 @@ Para una ruta de implementación de un extremo a otro definida, puede usar estas
 
 Las fases comienzan por lo más fundamental (redes e identidad) y después crean capas de configuración de infraestructura y grupos para:
 
-- Instalar la versión más actualizada y segura de Windows en sus dispositivos.
-- Instalar la versión más reciente de Microsoft Office en sus dispositivos. 
-- Administrar los dispositivos de su organización.
+- Instalar la versión más actualizada y segura de Windows en sus dispositivos y manténgalo al día.
+- Instalar la versión más reciente de Microsoft Office en sus dispositivos y manténgala al día. 
+- Administre los dispositivos de su organización y el acceso a las aplicaciones.
 - Proteger la información en los dispositivos y en la nube.
 
 Pero tiene la posibilidad de configurar e implementar las fases o los pasos en fases para que se ajusten a sus recursos de TI y a sus necesidades empresariales.
 
-- **Si tiene una organización más pequeña o reciente**, siga las fases según sea necesario para crear la infraestructura metódicamente.
+- **Si tiene una organización más pequeña o reciente**, siga las fases según sea necesario para crear la infraestructura metódicamente. Para una implementación simplificada para no empresas, haga clic [aquí](deploy-foundation-infrastructure-non-enterprises.md).
 
 -  **Si tiene una organización empresarial**,vea las fases como capas de infraestructura de TI en lugar de una ruta definida, y determine la mejor forma de cumplir los requisitos de cada capa en toda la organización.
 
@@ -80,7 +80,7 @@ La infraestructura de base es un conjunto de software y servicios configurados q
 
 Pero es importante que tenga en cuenta que la infraestructura de base de Microsoft 365 Enterprise es independiente de la implementación de software y servicios para los usuarios. ***Puede configurar las capas de la infraestructura base sin tener que implementar esas capas para todos los usuarios.***
 
-Por lo tanto, es posible configurar y probar los elementos de la infraestructura de base antes de la implementación de esos elementos para los usuarios de las oficinas, regiones y divisiones de su organización.
+Es posible configurar y probar los elementos de la infraestructura de base antes de la implementación de esos elementos para los usuarios de las oficinas, regiones y divisiones de su organización.
 
 Por ejemplo, puede crear la configuración de:
 
@@ -102,7 +102,7 @@ Cuando se haya preparado para implementar elementos de esta infraestructura para
 | Administración de dispositivos móviles | Agregará cuentas a los grupos para la inscripción de dispositivos y directivas de acceso condicional basado en el dispositivo. |
 | Protección de la información | Agregará cuentas de usuario a los grupos para obtener etiquetas de protección de la información. |
 
-Cuando la infraestructura de base se haya completado y probado, puede implementar software instalado, como Windows 10 Enterprise y Office 365 ProPlus, así como protecciones y servicios basados en la nube, como la inscripción de dispositivo y las directivas de acceso condicional, para los usuarios de la manera que mejor se adapte a sus objetivos empresariales y recursos de TI.
+Cuando las fases o los elementos de la infraestructura de base se hayan completado y probado, puede implementar software instalado, como Windows 10 Enterprise y Office 365 ProPlus, así como protecciones y servicios basados en la nube, como la inscripción de dispositivo y las directivas de acceso condicional, para los usuarios de la manera que mejor se adapte a sus objetivos empresariales y recursos de TI.
 
 ## <a name="deployment-and-project-management-strategies"></a>Estrategias de administración de proyectos y de implementación
 
@@ -114,7 +114,6 @@ Si su organización es más pequeña y Microsoft 365 Business no es adecuada par
 
 
 ## <a name="next-step"></a>Paso siguiente
-
 
 | Donde estoy | Donde necesito ir |
 |:-------|:-----|
