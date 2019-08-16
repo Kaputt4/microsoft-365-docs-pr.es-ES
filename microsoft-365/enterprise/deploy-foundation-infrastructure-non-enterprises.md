@@ -77,7 +77,7 @@ Si no tiene un dominio de AD DS local, cree grupos de seguridad en Azure AD con 
 |:-------|:-----|:-----|
 | Línea base | Este es un estándar mínimo y predeterminado para proteger los datos, así como las identidades y los dispositivos que acceden a los datos. <BR><BR> Normalmente, se trata de la mayoría de los datos de la organización gestionados por la mayoría de los usuarios. | Grupos para los trabajadores de primera línea, como ventas, marketing, asistencia al cliente, administración y fabricación. |
 | Confidencial | Esta es una protección adicional para un subconjunto de los datos que se deban proteger más allá del nivel básico. Estos grupos contienen usuarios que usan y crean datos confidenciales específicos de departamentos y proyectos que no se han diseñado para que estén disponibles para todos los usuarios. | Equipos de producto o de marketing que desarrollan futuros productos |
-| Extremadamente regulado | Este es el nivel más alto de protección de una cantidad de datos habitualmente pequeña y altamente confidencial, que se consideran como secretos comerciales o propiedad intelectual, o datos que deben cumplir normas de seguridad. |  Los equipos de investigación, de seguridad y de finanzas, o bien equipos que almacenan o usan los datos de clientes o socios. |
+| Extremadamente regulado | Este es el nivel más alto de protección de una cantidad de datos habitualmente pequeña y altamente confidencial, que corresponde a secretos comerciales o propiedad intelectual, o datos que deben cumplir normas de seguridad. |  Los equipos de investigación, de seguridad y de finanzas, o bien equipos que almacenan o usan los datos de clientes o socios. |
 ||||
 
 ### <a name="hybrid-identity"></a>Identidad híbrida
@@ -152,7 +152,7 @@ Este es un resumen visual de la fase de identidad de la identidad híbrida, con 
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
-Los elementos de identidad híbrida nuevos y resaltados incluyen:
+Entre los elementos de identidad híbrida nuevos y resaltados, se incluyen los siguientes:
  
 |||
 |:------:|:-----|
@@ -167,7 +167,7 @@ Este es un resumen visual de la fase de identidad de la identidad solo de nube, 
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
  
-Los elementos de identidad solo de nube nuevos y resaltados incluyen:
+Entre los elementos de identidad solo de nube nuevos y resaltados, se incluyen los siguientes:
  
 |||
 |:------:|:-----|
@@ -204,7 +204,7 @@ Este es un resumen visual de la fase de Windows 10 Enterprise, con los nuevos el
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
  
-Los elementos nuevos y resaltados de Windows 10 Enterprise incluyen:
+Entre los elementos nuevos y resaltados de Windows 10 Enterprise, se incluyen los siguientes:
 
 |||
 |:------:|:-----|
@@ -228,7 +228,7 @@ Este es un resumen visual de la fase de Office 365 ProPlus, con los nuevos eleme
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
-Los elementos de Office 365 ProPlus nuevos y resaltados incluyen:
+Entre los elementos de Office 365 ProPlus nuevos y resaltados, se incluyen los siguientes:
  
 |||
 |:------:|:-----|
@@ -267,7 +267,7 @@ Este es un resumen visual de la fase de la Administración de dispositivos móvi
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
  
-Entre los elementos nuevos y resaltados de la administración de dispositivos móviles se incluyen:
+Entre los elementos nuevos y resaltados de la administración de dispositivos móviles, se incluyen los siguientes:
 
 |||
 |:------:|:-----|
@@ -352,7 +352,7 @@ Antes de dar a un empleado un nuevo dispositivo con Windows 10 Enterprise:
 
 - Para identidad híbrida
 
-  Vincule el dispositivo a su dominio de AD DS, luego vincule el dispositivo a su espacio empresarial de Azure AD y, después, inscriba el dispositivo en Intune.
+  Vincule el dispositivo a su dominio de AD DS, luego vincúlelo a su espacio empresarial de Azure AD y, después, inscríbalo en Intune.
 
 - Para una identidad solo de nube
 
