@@ -23,14 +23,14 @@ El reglamento general de protección de datos (RGPD), añade nuevas normas organ
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQI] 
 
-Este documento lo guiará a información que le ayude a respetar los derechos y cumplir las obligaciones del reglamento general de protección de datos, al usar los productos y servicios de Microsoft. Un plan de acción recomendado para el reglamento general de protección de datos](gdpr-action-plan.md)ylistas de comprobación de responsabilidadproporcionan recursos adicionales para evaluar e implementar el cumplimiento del reglamento general de protección de datos.
+Este documento lo guiará a información que le ayude a respetar los derechos y cumplir las obligaciones del reglamento general de protección de datos, al usar los productos y servicios de Microsoft. Un [plan de acción recomendado para el reglamento general de protección de datos](gdpr-action-plan.md)y[listas de comprobación de responsabilidad](gdpr-arc.md)proporcionan recursos adicionales para evaluar e implementar el cumplimiento del reglamento general de protección de datos.
 
 ## <a name="terminology"></a>Terminología
 
 Definiciones útiles para el reglamento general de protección de datos, términos utilizados en este documento:
 
 - *Controlador de datos (controlador*): una persona jurídica, autoridad pública, agencia u otro organismo, que por sí solos o conjuntamente con otras personas, determine el propósito y el medio del procesamiento de datos personales.  
-- *Datos personales * e *interesado*: cualquier información relacionada con una persona física identificada o una persona natural identificable (asunto de datos), una persona física identificable es la que puede identificarse, directa o indirectamente.  
+- *Datos personales * e *interesado*: cualquier información relacionada con una persona física identificada o una persona natural identificable (interesado), una persona física identificable es la que puede identificarse, directa o indirectamente.  
 - *Procesador:* Persona natural o jurídica, entidad pública, agencia u otro organismo que procese datos personales en nombre del controlador.  
 - *Datos de clientes*: Datos producidos y almacenados en las operaciones diarias de su empresa.
 
@@ -45,7 +45,7 @@ Se deben tener en cuenta varios puntos al implementar o evaluar requisitos del r
 - ¿Quién es su controlador de datos?
 - ¿Qué procesos de seguridad de datos tiene que llevar a cabo?
 
-Elplan de acción recomendado para el reglamento general de protección de datos (RGPD) y[el control en las listas de comprobación](gdpr-arc.md)pueden conducir a tener un pensamiento adicional puntual.
+El[plan de acción recomendado para el reglamento general de protección de datos (RGPD)](gdpr-action-plan.md) y [el control en las listas de comprobación](gdpr-arc.md)pueden conducir a tener un pensamiento adicional puntual.
 
 Las siguientes tareas están relacionadas con el cumplimiento de los estándares del reglamento general de protección de datos (RGPD). Siga los vínculos de la lista para obtener más información sobre la implementación.  
 
@@ -61,12 +61,12 @@ En esta sección se proporcionan un esquema y un enfoque para completar las tare
 
 ### <a name="data-subject-request-dsr"></a>Solicitud de temas de datos (STD).
 
-.Las solicitudes de los temas de datos proporcionan un medio para que los asuntos de datos puedan ejercer sus derechos en el reglamento general de protección de datos (RGPD). El controlador es responsable de proporcionar a tiempo una respuesta coherente del reglamento general de protección de datos (RGPD). Las preguntas que debe considerar se tratan a continuación. Para obtener información técnica, consulte [Solicitudes de temas de datos](gdpr-data-subject-requests.md).  
+Las solicitudes de los temas de datos proporcionan un medio para que los asuntos de datos puedan ejercer sus derechos en el reglamento general de protección de datos (RGPD). El controlador es responsable de proporcionar a tiempo una respuesta coherente del reglamento general de protección de datos (RGPD). Las preguntas que debe considerar se tratan a continuación. Para obtener información técnica, consulte [Solicitudes de temas de datos](gdpr-data-subject-requests.md).  
 
 - **¿Qué medidas serán necesarias para completar una solicitud de temas de datos (STD)?**: el STD implica seis actividades: descubrir, obtener acceso, rectificar, limitar, exportar y eliminar.
 - **¿Cuáles son los orígenes de datos?**: Una gran parte de los datos de la organización se generan en[las aplicaciones de Office](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) como Excel y Outlook.  Es posible que también encuentre información relevante para una solicitud de temas de datos (STD) en[opciones](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) generadas por productos y servicios de Microsoft, y[ registros](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)generados por el sistema.
 - **¿Qué tipos de datos debe buscar?**: Es posible que los datos personales se encuentren en datos de clientes, opciones generadas por productos y servicios de Microsoft y registros generados por el sistema.
-- **¿Cómo se buscan los datos personales? **: La búsqueda de datos personales puede variar entre todos los productos y servicios de Microsoft. Las herramientas de búsqueda incluyen[la búsqueda de contenido,](https://docs.microsoft.com/es-ES/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)o[en la capacidad de una aplicación de](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs) búsqueda. Los administradores pueden tener acceso[a los registros generados por el sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)asociados a la actividad de un usuario.  
+- **¿Cómo se buscan los datos personales? **: La búsqueda de datos personales puede variar entre todos los productos y servicios de Microsoft. Las herramientas de búsqueda incluyen las capacidades [búsqueda de contenido](https://docs.microsoft.com/es-ES/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) o [búsqueda en aplicación](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs). Los administradores pueden tener acceso[a los registros generados por el sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)asociados a la actividad de un usuario.  
 - **¿En que formato debería estar disponible la información personal?** El reglamento general de protección de datos (RGPD) "derecho de portabilidad de datos" permite temas de datos para solicitar una copia electrónica de sus datos personales en un "formato estructurado, común y legible", y solicitar que su organización transmita estos archivos a otro controlador de datos. 
 
 ### <a name="data-protection-impact-assessment"></a>Evaluaciones de impacto de protección de datos
