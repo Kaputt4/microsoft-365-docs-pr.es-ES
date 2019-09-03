@@ -126,8 +126,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
   - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - 
-  [Implementación de sistema operativo de System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Implementación de sistema operativo de System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan de implementación de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

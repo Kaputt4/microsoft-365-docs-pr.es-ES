@@ -39,7 +39,7 @@ ms.locfileid: "35584566"
 
 Windows 10 y Office 365 ProPlus introducen nuevas opciones de mantenimiento, modelos de soporte y escalas de tiempo de actualización. Estos cambios simplifican el proceso para mantenerse al día con las características más recientes. Además de estas actualizaciones, hay nuevas opciones de configuración para habilitar planes de mantenimiento que se adapten a sus necesidades. Veamos cómo puede prepararse para las actualizaciones de canal semestrales que ofrecen nuevas características y funcionalidades en Windows 10 y Office 365 ProPlus mientras aprovecha nuevas características de la rama actual de System Center Configuration Manager.
 
-[Ayudar a los clientes a cambiar a Windows 10 y Office 365 ProPlus](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[Ayudar a los clientes a cambiar a Windows 10 y Office 365 ProPlus](https://www.microsoft.com/es-ES/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>Tipos de actualización
 
@@ -59,11 +59,9 @@ Para responder a estas preguntas y a las razones para implementar nuevas funcion
 
 En primer lugar, nos hemos alejado del modelo pasado que presentaba grandes cambios cada tres años para implementar cambios más pequeños con actualizaciones de características dos veces al año. ¿Por qué? Porque las tendencias en la tecnología se mueven muy rápido, además de presentar amenazas de seguridad en constante evolución y esto mantiene la experiencia y la protección relevante. Algunas de las actualizaciones relacionadas con la seguridad, por ejemplo, no pueden entregarse mediante actualizaciones mensuales de seguridad o antivirus, puede que se trate de cambios de bajo nivel, como seguridad basada en la virtualización.
 
+[Guía rápida de Windows como servicio](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-quick-start)
 
-  [Guía rápida de Windows como servicio](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-quick-start)
-
-
-  [Mitigue las amenazas con las características de seguridad de Windows 10](https://docs.microsoft.com/es-ES/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
+[Mitigue las amenazas con las características de seguridad de Windows 10](https://docs.microsoft.com/es-ES/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
 
 ### <a name="cumulative-update-model-benefits"></a>Ventajas del modelo de actualización acumulativa
 
@@ -73,7 +71,7 @@ Con el modelo acumulativo, siempre se encuentra a una actualización de la más 
 
 ### <a name="expanded-validation-of-updates"></a>Validación expandida de las actualizaciones
 
-Otra ventaja es que, antes de distribuir las actualizaciones para una implementación amplia, publicamos compilaciones a través de los programas Insider de [Office](https://products.office.com/es-ES/office-insider?tab=Windows-Desktop) y [Windows](https://insider.windows.com/en-us/), y esto nos permite recopilar datos de diagnóstico y comentarios antes de publicar actualizaciones para todos los usuarios. Ahora los programas Insider están disponibles para todo el mundo de forma que pueda comprender antes las actualizaciones. Cuando se publiquen las actualizaciones habremos recibido datos de diagnóstico de millones de configuraciones, así que cuando distribuimos las actualizaciones, la calidad será intrínsecamente más predecible
+Otra ventaja es que, antes de distribuir las actualizaciones para una implementación amplia, publicamos compilaciones a través de los programas Insider de [Office](https://products.office.com/es-ES/office-insider?tab=Windows-Desktop) y [Windows](https://insider.windows.com/es-ES/), y esto nos permite recopilar datos de diagnóstico y comentarios antes de publicar actualizaciones para todos los usuarios. Ahora los programas Insider están disponibles para todo el mundo de forma que pueda comprender antes las actualizaciones. Cuando se publiquen las actualizaciones habremos recibido datos de diagnóstico de millones de configuraciones, así que cuando distribuimos las actualizaciones, la calidad será intrínsecamente más predecible
 
 Y una cosa más: como las compilaciones de Office 365 ProPlus Insider reflejan actualizaciones de canal mensuales, si usa un canal semianual para presentar actualizaciones características de Office dos veces al año alineado con Windows, puede validar esas compilaciones, además de usar el canal semianual para publicaciones objetivo.
 
@@ -81,37 +79,29 @@ Y una cosa más: como las compilaciones de Office 365 ProPlus Insider reflejan a
 
 También hemos pensado en cómo realizar una implementación de actualizaciones sin interrupciones. La rama actual de System Center Configuration Manager se actualiza con frecuencia para dar soporte a la implementación de estas actualizaciones para Windows y Office y cualquier capacidad nueva.
 
+[Implementar las actualizaciones de Windows 10 con System Center Configuration Manager](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-  [Implementar las actualizaciones de Windows 10 con System Center Configuration Manager](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-manage-updates-configuration-manager)
-
-
-  [Administración de Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/es-ES/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[Administración de Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/es-ES/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Información general sobre los canales de Office y Windows
 
 Windows 10 ofrece tres canales de mantenimiento:
 
-- 
-  [
-  **El Programa Windows Insider**](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-overview#windows-insider) para que las organizaciones prueben las características proporcionadas en la próxima actualización de características y envíen comentarios sobre ellas
+- [**El Programa Windows Insider**](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-overview#windows-insider) para que las organizaciones prueben las características proporcionadas en la próxima actualización de características y envíen comentarios sobre ellas
 - **El Canal semianual** proporciona nuevas características con la publicación de Actualización de características dos veces al año
 - **El Canal de mantenimiento a largo plazo** está diseñado solo para dispositivos especializados que necesiten una opción mantenimiento más larga
 
 Office 365 ofrece cuatro canales de mantenimiento:
 
-- 
-  [
-  **El Programa Office Insider**](https://support.office.com/es-ES/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) para que las organizaciones prueben las características más recientes y funcionalidades de Office en desarrollo y envíen comentarios sobre ellos
+- [**El Programa Office Insider**](https://support.office.com/es-ES/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) para que las organizaciones prueben las características más recientes y funcionalidades de Office en desarrollo y envíen comentarios sobre ellos
 - **El Canal mensual** proporciona a los usuarios las características más recientes de Office tan pronto como estén disponibles
 - **El Canal semianual** proporciona nuevas funcionalidades con nuevas características dos veces al año
 - **El Canal semianual (dirigido)** es una versión admitida por completo de Office que permite a los usuarios piloto y los evaluadores de compatibilidad de la aplicación probar y validar el siguiente Canal semianual
 
 Para obtener más información acerca de los canales de mantenimiento de Windows y Office revise la siguiente documentación:
 
-- 
-  [Overview of Windows as a Service](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-overview#servicing-channels) (Información general sobre Windows como servicio)
-- 
-  [Información general de los canales de actualización para Office 365 ProPlus](https://docs.microsoft.com/es-ES/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Overview of Windows as a Service](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-overview#servicing-channels) (Información general sobre Windows como servicio)
+- [Información general de los canales de actualización para Office 365 ProPlus](https://docs.microsoft.com/es-ES/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>Implementación de actualizaciones por fases
 
@@ -147,11 +137,9 @@ En cuanto a las herramientas, puede usar las opciones de directivas con Windows 
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
+[Canal semianual de Windows](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-overview#semi-annual-channel)
 
-  [Canal semianual de Windows](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-overview#semi-annual-channel)
-
-
-  [Canal semianual para Office 365 ProPlus](https://docs.microsoft.com/es-ES/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Canal semianual para Office 365 ProPlus](https://docs.microsoft.com/es-ES/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>Actualizar las secuencias de tareas
 
@@ -163,12 +151,11 @@ Una secuencia de tareas le permite crear comprobaciones o tareas personalizadas 
 
 Si ya está usando secuencias de tareas para migrar sus equipos de Windows 7 a Windows 10 y tiene experiencia con esas herramientas, este es un buen lugar para empezar y proporciona control definitivo. Aunque puede usar una única secuencia de tareas para toda una actualización, es muy común que las organizaciones usen dos tareas. Una secuencia de tareas para asegurarse de que las máquinas están listas para la actualización que prepara discretamente todos los archivos de configuración necesarios en los equipos y uno que haga la actualización en sí. Este enfoque asegura que la productividad del usuario no se vea demasiado afectada.
 
-
-  [Creación de una secuencia de tareas para actualizar un sistema operativo en Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Creación de una secuencia de tareas para actualizar un sistema operativo en Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>Compatibilidad de canal semianual para actualizaciones características
 
-[Como se anunció en septiembre de 2018](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/), la escala de tiempo de las actualizaciones del canal semianual usará el modelo siguiente.
+[Como se anunció en septiembre de 2018](https://www.microsoft.com/es-ES/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/), la escala de tiempo de las actualizaciones del canal semianual usará el modelo siguiente.
 
   - Todas las actualizaciones de características admitidas de Windows 10 Enterprise y educación, empezando con la versión 1607 serán compatibles durante 30 meses a partir de su fecha de salida original.
 
@@ -182,8 +169,7 @@ Si ya está usando secuencias de tareas para migrar sus equipos de Windows 7 a W
 
 Si no usa secuencias de tareas personalizadas, puede ejecutar acciones personalizadas o aplicar archivos de controladores durante la actualización de características en la fase de preinstalación, antes de que la configuración acabe de ejecutar sus pruebas de compatibilidad, o en la fase de precompromiso, antes de que se aplique la actualización.
 
-
-  [Novedades de la configuración de Windows 10, versión 1803](https://docs.microsoft.com/es-ES/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
+[Novedades de la configuración de Windows 10, versión 1803](https://docs.microsoft.com/es-ES/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
 
 ## <a name="next-step"></a>Paso siguiente 
 
