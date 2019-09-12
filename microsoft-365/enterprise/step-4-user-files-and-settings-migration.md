@@ -59,15 +59,13 @@ Durante el proceso de migración, necesitará capacidad de almacenamiento de ser
 
 Al realizar una actualización del equipo sin formatear la partición de Windows principal, también tiene la posibilidad de usar un almacén de migración de vínculo físico con USMT. Este proceso conserva el estado del usuario en el equipo mientras se eliminan y actualizan el sistema operativo anterior y las aplicaciones. Como el proceso de restauración procede de la misma partición local, esta opción ofrece mejoras significativas en el rendimiento y reduce el tráfico de red.
 
-
-  [Introducción de la Herramienta de migración de estado de usuario (USMT)](https://docs.microsoft.com/es-ES/windows/deployment/usmt/usmt-overview)
+[Introducción de la Herramienta de migración de estado de usuario (USMT)](https://docs.microsoft.com/es-ES/windows/deployment/usmt/usmt-overview)
 
 ## <a name="onedrive-known-folder-move"></a>Mover carpeta conocida de OneDrive
 
 Si los usuarios se encuentran en OneDrive o se va a agregar OneDrive como parte de esta implementación, hay una nueva opción disponible. Usando la nube para sincronizar los archivos de usuario, la característica "Mover carpeta conocida" de OneDrive proporciona un nivel de flexibilidad imposible con las opciones de migración de archivos basadas en la red local. Si se habilita antes de la migración, proporciona acceso seguro a los equipos nuevos o actualizados, y elimina la necesidad de crear almacenes de migración temporales en servidores propios. Además, tiene la capacidad de ser completamente transparente para el usuario.
 
-
-  [Redirigir y mover las carpetas conocidas de Windows a OneDrive](https://docs.microsoft.com/es-ES/onedrive/redirect-known-folders)
+[Redirigir y mover las carpetas conocidas de Windows a OneDrive](https://docs.microsoft.com/es-ES/onedrive/redirect-known-folders)
 
 Si ya usa OneDrive, sabrá que los usuarios pueden seleccionar las carpetas y ubicaciones que quieren sincronizar desde OneDrive o SharePoint con su dispositivo, pero eso coloca la carga de configuración en el usuario final. Con Mover carpeta conocida, se pueden seleccionar como destino las carpetas Documentos, Escritorio e Imágenes de un perfil de usuario y protegerlas en OneDrive. El usuario puede hacerlo por su cuenta o, lo que es importante en este escenario, se puede [aplicar mediante la configuración de directiva de grupo](https://docs.microsoft.com/es-ES/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c).
 
