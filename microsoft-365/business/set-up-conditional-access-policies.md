@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar directivas de acceso condicional para campañas de 365 de Microsoft.
-ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 614e3a6e13a14114f40ecf87bf936d4165744503
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35076314"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982389"
 ---
 # <a name="set-up-conditional-access-policies"></a>Configurar directivas de acceso condicional
 
@@ -53,7 +53,7 @@ Para obtener más información acerca de estas directivas, vea [¿Qué son las d
 1. Consulte las siguientes instrucciones específicas para cada directiva:
 
   - [Requerir MFA para los administradores](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-- [Reequire MFA para los usuarios](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+- [Requerir MFA para los usuarios](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
  - [Bloquear la autenticación heredada](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [Requerir MFA para la administración de servicios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 

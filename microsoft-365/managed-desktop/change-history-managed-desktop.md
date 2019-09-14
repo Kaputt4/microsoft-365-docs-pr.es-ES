@@ -8,16 +8,36 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
-ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
+ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35795626"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982611"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historial de cambios de la documentación de escritorio administrado de Microsoft
 
 En este tema se enumeran los temas nuevos y actualizados de la [documentación del escritorio administrado de Microsoft](index.yml).
+
+## <a name="september-2019"></a>Septiembre de 2019
+Tema nuevo o modificado | Descripción
+--- | ---
+[Requisitos previos para el escritorio administrado de Microsoft](get-ready/prerequisites.md) | Tema actualizado
+[Configurar dispositivos de escritorio administrados por Microsoft](get-started/set-up-devices.md) | Tema nuevo
+[Registrar nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Tema actualizado
+[Registrar los dispositivos existentes](get-started/register-reused-devices-self.md) | Tema nuevo
+[Cómo se administran las actualizaciones en el escritorio administrado por Microsoft](service-description/updates.md) | Tema actualizado
+
+## <a name="august-2019"></a>2019 de agosto
+Tema nuevo o modificado | Descripción
+--- | ---
+[Trabajar con los servicios de consultoría de Microsoft](get-ready/apps-mcs.md) | Tema actualizado
+[Soporte de administración para escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Tema actualizado
+[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Tema actualizado
+[Requisitos previos para el escritorio administrado de Microsoft](get-ready/prerequisites.md) | Tema actualizado
+[Tecnologías de escritorio administradas de Microsoft](intro/technologies.md) | Tema actualizado
+
+
 
 ## <a name="july-2019"></a>2019 de julio
 Tema nuevo o modificado | Descripción
@@ -46,7 +66,7 @@ Tema nuevo o modificado | Descripción
 [Preparar unidades asignadas para el escritorio administrado por Microsoft](get-ready/mapped-drives.md) | Tema nuevo
 [Preparar certificados y perfiles de red para el escritorio administrado de Microsoft](get-ready/certs-wifi-lan.md) | Tema nuevo
 [Pedir dispositivos de escritorio administrados por Microsoft](get-started/devices.md) | Tema actualizado
-
+[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md)
 
 ## <a name="april-2019"></a>Abril de 2019
 Tema nuevo o modificado | Descripción

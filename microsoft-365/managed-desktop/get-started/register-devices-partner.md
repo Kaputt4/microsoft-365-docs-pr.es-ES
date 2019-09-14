@@ -1,18 +1,18 @@
 ---
-title: Registrar dispositivos en el escritorio administrado por Microsoft para partners
+title: Pasos para que los partners registren dispositivos
 description: Cómo pueden los socios registrar los dispositivos para que puedan ser administrados por el escritorio administrado por Microsoft
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 06ec98ebc7ea44a1bf3d8039e3a3ab7102521d3e
-ms.sourcegitcommit: ef749c44d72b5258706be86a4af1aeca4154ead2
+ms.openlocfilehash: 69d9387047cbb14a97f3da1d401b30a97bd7fd90
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447532"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982721"
 ---
-# <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Registrar dispositivos en el escritorio administrado por Microsoft para partners
+# <a name="steps-for-partners-to-register-devices"></a>Pasos para que los partners registren dispositivos
 
 
 En este tema se describen los pasos que deben seguir los socios para registrar los dispositivos. El proceso para registrar los dispositivos usted mismo está documentado en [registrar los dispositivos en el escritorio administrado por Microsoft](register-devices-self.md).
@@ -41,7 +41,7 @@ El archivo tiene que incluir **exactamente los mismos encabezados de columna** q
 >Este formato es solo para el proceso asociado. El proceso de registro automático está documentado en los [dispositivos de registro del escritorio administrado por Microsoft](register-devices-self.md).
 
 >[!IMPORTANT]
->Estos valores deben coincidir exactamente con los valores de fabricante de SMBIOS. También debe incluir el *hash de hardware* en la primera fila (pero no el valor de la segunda fila) la coma final después del valor de *número de serie* de la segunda fila.
+>Estos valores deben coincidir exactamente con los valores de fabricante de SMBIOS, incluidos el carácter de mayúsculas y caracteres especiales. 
 
 - Fabricante del dispositivo (ejemplo: SpiralOrbit) 
 - Modelo de dispositivo (ejemplo: ContosoABC)
@@ -68,21 +68,18 @@ Puede supervisar el progreso del registro de dispositivos en la Página principa
 | Estado | Descripción |
 |---------------|-------------|
 | Registro pendiente | Aún no se ha realizado el registro. Vuelva a comprobarla más tarde. |
-| Error en el registro | No se pudo completar el registro. Consulte [solución de problemas](register-devices-self.md#troubleshooting) para obtener más información. |
+| Error en el registro | No se pudo completar el registro. Consulte [solución de problemas del registro de dispositivos](register-devices-self.md#troubleshooting-device-registration) para obtener más información. |
 | Listo para el usuario | El registro se realizó correctamente y el dispositivo ya está listo para entregarse al usuario final. El escritorio administrado de Microsoft los guiará a través de la primera configuración, por lo que no es necesario que realice ninguna preparación adicional. |
 | Activo | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Esto también indica que los usuarios usan el dispositivo con regularidad. |
 | Inactivo | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  |
 
-## <a name="register-devices-by-using-an-api"></a>Registrar dispositivos con una API
 
-El registro mediante la API es el mismo que el de autoservicio, excepto que la propiedad de hash de hardware de la colección Device es opcional, tal y como se describe en la sección CSV. 
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
 | Mensaje de error | Detalles |
 |---------------|-------------|
 | No se encontró el dispositivo | No pudimos registrar este dispositivo porque no encontramos una coincidencia para el fabricante, modelo o número de serie que se ha proporcionado. Confirma estos valores con el proveedor del dispositivo. |
-| No se encontró el dispositivo | No pudimos anular el registro de este dispositivo porque no existe en la organización. No se requiere ninguna otra acción. |
 | Hash de hardware no válido | El hash de hardware que ha proporcionado para este dispositivo no tiene el formato correcto. Compruebe el hash de hardware y vuelva a enviarlo. |
 | El dispositivo ya está registrado | Este dispositivo ya está registrado en su organización. No se requiere ninguna otra acción. |
 | Dispositivo reclamado por otra organización | Este dispositivo ya ha sido reclamado por otra organización. Consulta con el proveedor del dispositivo. |

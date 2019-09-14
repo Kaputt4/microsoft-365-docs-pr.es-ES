@@ -5,14 +5,13 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 12/18/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 08c0ee15869ac47d889f9575e8eaeff63fa64fd7
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 40f26f83e8b3001d2010d3197020f067fc51aaae
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390636"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982481"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte de administración para escritorio administrado de Microsoft
 
@@ -56,3 +55,4 @@ Detalles adicionales:
 ## <a name="additional-resources"></a>Otros recursos
 - [Compatibilidad con el usuario final para escritorio administrado de Microsoft](end-user-support.md). 
 - [Soporte para escritorio administrado de Microsoft](../service-description/support.md). 
+- Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en la sección **recursos en línea** del [Administrador de escritorio administrado de Microsoft Portal](https://aka.ms/mwaasportal).

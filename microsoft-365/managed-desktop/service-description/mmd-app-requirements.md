@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ded8bcfd87a6b430dfc4be055a582b482872b104
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913021"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982461"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisitos de la aplicación de escritorio administrada de Microsoft
 
@@ -33,7 +33,7 @@ Todas las aplicaciones y los controladores instalados en los dispositivos admini
 
 Ciertos tipos de aplicaciones no se permiten en dispositivos de escritorio administrados por Microsoft:
 - software antivirus, de seguridad o de auditoría de terceros
-- Versiones de Microsoft Office anteriores a Office 365 Pro Plus
+- Versiones de Microsoft Office anteriores a Office 365 ProPlus
 - Aplicaciones que instalan o agrupan otro software de terceros
 
 ## <a name="restricted-app-behaviors"></a>Comportamientos de aplicación restringidos

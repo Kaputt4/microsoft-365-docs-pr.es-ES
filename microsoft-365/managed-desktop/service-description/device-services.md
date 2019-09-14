@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 533d51da027441ac199c3e1bfefb42812309a91b
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390657"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982491"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Servicios de dispositivos de escritorio administrados por Microsoft
 
@@ -26,7 +26,7 @@ Microsoft proporcionará estos servicios para los dispositivos de escritorio adm
  --- | ---
 Soporte técnico | Los agentes de soporte responderán preguntas directamente relacionadas con la funcionalidad del dispositivo y diagnosticarán problemas del dispositivo.
 Inventario | Se realiza un seguimiento de todos los dispositivos en el portal de administración de escritorio administrado de Microsoft para el seguimiento de inventario y estado.
-Actualizaciones de firmware/controlador | Las actualizaciones de firmware y controladores se implementan y supervisan para que Microsoft la compatibilidad. 
+Actualizaciones de firmware/controlador | De forma predeterminada, los dispositivos de escritorio administrados de Microsoft reciben actualizaciones de firmware y controladores de Windows Update. No todos los socios de hardware implementan sus actualizaciones a través de Windows Update; estas actualizaciones se pueden solicitar por separado.
 Racor | Los accesorios que vienen con el dispositivo están cubiertos por los mismos servicios que el propio dispositivo, pero los términos de la garantía pueden ser diferentes. Consulte los términos de garantía elegidos cuando seleccione sus dispositivos. 
 Configuración del dispositivo    | Los dispositivos estarán preconfigurados con la versión actual de Windows y recibirán sus aplicaciones y configuraciones a través de la nube. 
 

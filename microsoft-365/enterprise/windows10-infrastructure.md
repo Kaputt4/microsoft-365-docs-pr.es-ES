@@ -8,14 +8,14 @@ ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 09/18/2018
+ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 450b14fb82483bd83e0c83dace173540d0281868
-ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
+ms.openlocfilehash: 0b98e48b128eeaea0e0dd5cb9613ece95e991861
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33623134"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982751"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
@@ -28,19 +28,6 @@ Microsoft 365 Enterprise incluye Windows 10 Enterprise, que proporciona las herr
 - **Permite** la creatividad y el trabajo en equipo, lo que desbloquea la creatividad y el trabajo en equipo para proporcionar la experiencia más productiva que los usuarios y el equipo de ti les encantarán.
 
 Necesitará comprender las distintas formas en las que puede implementar el sistema operativo Windows 10 y elegir el correcto para su organización. En función de su suscripción de Microsoft 365 Enterprise, también hay características de seguridad y servicios de Windows 10 que tendrá que configurar para sacar el máximo partido de Windows 10.
-
-Windows 10 habilita estos escenarios empresariales estratégicos para Microsoft 365 Enterprise:
-
-- Aprovechar la experiencia y el conocimiento colectivo al permitir a los usuarios descubrir, compartir y trabajar en archivos, información e ideas en la organización
-- Trabajar de forma segura desde cualquier lugar, en cualquier momento y con cualquier dispositivo para mejorar la productividad, a la vez que se mantiene un estilo de trabajo flexible
-- Ofrecer tranquilidad con controles y visibilidad para garantizar la conformidad verificada del sector con normas de cumplimiento internacionales
-- Proteger su información y reducir el riesgo de la pérdida de datos
-- Detección y protección contra amenazas externas: supervise, informe y analice la actividad para que se reaccione con prontitud para proporcionar seguridad organizativa
-- Proteger a los usuarios y sus cuentas
-- Apoyar a su organización con mayor privacidad y cumplimiento normativo para ajustarse al Reglamento General de Protección de Datos (RGPD)
-- Obtener software de escritorio y dispositivos actuales y mantenerlos actualizados, a la vez que se reducen los riesgos de seguridad y se maximiza la eficiencia de TI
-
-Para obtener más información, vea [Transformación Digital con Microsoft 365](http://transform.microsoft.com). 
 
 >[!Note]
 >Para implementar Windows 10 Enterprise y Office 365 ProPlus juntos y cambiar a un [escritorio moderno](https://www.microsoft.com/microsoft-365/modern-desktop), consulte el [Centro de implementación de escritorio moderno](http://aka.ms/howtoshift).
@@ -79,13 +66,13 @@ Consulte [información general de Windows Analytics](https://docs.microsoft.com/
 
 ### <a name="windows-security"></a>Seguridad de Windows
 
-Windows 10 proporciona características para ayudar a proteger contra las amenazas, ayudar a proteger los dispositivos y ayudar con el control de acceso. Con Windows 10, obtendrás características de seguridad críticas que protegen el dispositivo desde el principio. Microsoft 365 E3 agrega características de seguridad como Windows Hello para empresas, el control de aplicaciones de Windows Defender y Windows Information Protection. Con Microsoft 365 E5, obtiene toda la protección de las características de seguridad basadas en la nube de Microsoft 365 E3 Security Plus y de la protección contra amenazas avanzada de Windows Defender. 
+Windows 10 proporciona características para ayudar a proteger contra las amenazas, ayudar a proteger los dispositivos y ayudar con el control de acceso. Con Windows 10, obtendrás características de seguridad críticas que protegen el dispositivo desde el principio. Microsoft 365 E3 agrega características de seguridad como Windows Hello para empresas, el control de aplicaciones de Windows Defender y Windows Information Protection. Con Microsoft 365 E5, obtiene toda la protección de las características de seguridad basadas en la nube de Microsoft 365 E3 Security Plus y de la protección contra amenazas avanzada de Microsoft defender. 
 
 Para obtener más información sobre las características de seguridad que se obtienen con Windows 10 Enterprise y obtener instrucciones sobre cómo implementar, administrar, configurar y solucionar problemas de tres características clave de ecurity, vea [STEP 5: deploy Windows 10 Enterprise Security Features](windows10-enable-security-features.md).
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Obtenga una ojeada dentro de Microsoft y obtenga información sobre cómo la compañía [implementó Windows 10 Enterprise y está usando la autenticación segura, Intune y ATP de Windows Defender](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
+Obtenga una ojeada dentro de Microsoft y obtenga información sobre cómo la compañía [implementó Windows 10 Enterprise y está usando la autenticación segura, Intune y ATP de Microsoft defender](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Cómo Contoso hizo Microsoft 365 Enterprise
 

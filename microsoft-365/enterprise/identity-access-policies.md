@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 322da1ccfbd0cf8b5070894580b06fb5b0283f40
-ms.sourcegitcommit: 1d5fc181036b673c4f0b9e161e19395dbfe5a304
+ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35411654"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982021"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -322,11 +322,11 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 ||Firma antimalware de Windows Defender actualizada hasta la fecha|Obligatoria||
 ||Protección en tiempo real|Obligatoria|Solo se admite en el escritorio de Windows 10|
 
-**ATP de Windows Defender**
+**ATP de Microsoft defender**
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Reglas de protección contra amenazas avanzada de Windows Defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano||
+|Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)
 Antes de agregar una directiva para requerir equipos compatibles, asegúrese de inscribir los dispositivos para la administración en Intune. Se recomienda usar la autenticación multifactor antes de inscribir los dispositivos en Intune para asegurarse de que el dispositivo está en la posesión del usuario deseado. 

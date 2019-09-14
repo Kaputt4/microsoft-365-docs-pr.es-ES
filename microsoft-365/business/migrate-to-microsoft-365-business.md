@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Business.
-ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a3f77bd18b9b900151c50f923b705e4ff0150519
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072748"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982449"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migrar a Microsoft 365 Business desde Office 365 empresa Premium
 
@@ -35,7 +35,7 @@ Si ya tiene una suscripción de Office 365 para empresas, por ejemplo, Office 36
   
 ## <a name="add-microsoft-365-business-licenses"></a>Agregar licencias de Microsoft 365 empresa
 
-Tiene dos maneras de obtener Microsoft 365 Business. Si tiene un partner, puede comprar Microsoft 365 Business para usted desde el [centro de Partners de Microsoft](get-microsoft-365-business.md). Su compañero también puede ayudarle a realizar la transición a Microsoft 365 Business.
+Tiene dos maneras de obtener Microsoft 365 Business. Un socio puede comprar Microsoft 365 Business para usted desde el [centro de Partners de Microsoft](get-microsoft-365-business.md). Su compañero también puede ayudarle a realizar la transición a Microsoft 365 Business.
   
 Si administra su propia suscripción, puede [ponerse en contacto con sales](https://www.microsoft.com/microsoft-365/business) para comprar licencias de Microsoft 365 Business. 
   
@@ -78,7 +78,7 @@ Si recibe un vínculo para comprar las licencias, le guiará por un asistente co
     
     ![En la tarjeta de usuario, elija Editar junto a licencias de productos.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
   
-8. En la diapositiva licencias de **producto** , **Microsoft 365 empresa** para **** \> **Guardar**y, después, **cierre**.
+8. En la diapositiva licencias de **producto** , **Microsoft 365 empresa** **para** \> **Guardar**y, después, **cierre**.
     
 Una vez que haya adquirido la licencia inicial para Microsoft 365 Business, ahora podrá agregar más en **servicios de compra**de **facturación** \> . En la página **servicios de compra** , puede hacer clic en los puntos suspensivos de la tarjeta de presentación de **Microsoft 365** y elegir **cambiar cantidad de licencia** para comprar más. 
   

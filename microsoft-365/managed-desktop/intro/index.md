@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: c0866dc4ff4a768bbae2488cdea2655470978f94
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 1cde7cda7cf6bb42508aa52460ff2ee254f62967
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390697"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982591"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el escritorio administrado por Microsoft?
 
@@ -23,8 +23,8 @@ El escritorio administrado de Microsoft se encarga de ello combinando la potenci
 
 
 <table>
-<tr><th>Mejor experiencia</th><th>Tecnología más reciente</th><th>Respaldado por Microsoft</th></tr>
-<tr><td><p>Windows 10</p><p>Office 365 ProPlus</p><p></p><p>Windows Autopilot</p><p>Dispositivo moderno</p></td><td><p>Siempre actualizado</p><p>Actualizaciones de características semestrales </p><p>actualización de dispositivos de 2 o 3 años</p></td><td><p>Configuración de dispositivos</p><p>Supervisión y corrección de seguridad</p><p>Implementación de aplicaciones</p><p>Administración de actualizaciones</p><p>Análisis de escritorio</p><p>soporte técnico para el usuario final 24x7</p></td></tr>
+<tr><th>Alegría para los usuarios finales</th><th>Habilitarlo</th><th>Respaldado por Microsoft</th></tr>
+<tr><td><p>Dispositivo moderno</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Seguridad integrada</p><p>Iniciar sesión con el reconocimiento facial</p><p>Siempre actualizado</p></td><td><p>Seguridad integrada</p><p>Información que requiere acción</p><p>Compatibilidad con operaciones</p><p>Guía de expertos de Microsoft</p></td><td><p>Equipo de operaciones de seguridad</p><p>Seguimiento de estado</p><p>Copia de seguridad en la nube de datos</p><p>Principios sin estado</p><p>soporte técnico al usuario final 24x7</p></td></tr>
 </table>
 
 El escritorio administrado de Microsoft proporciona a los clientes una solución de ti completa que Delight a los usuarios y libera recursos de TI para tareas más importantes. Hemos desarrollado este servicio en función de los comentarios que escuchamos con frecuencia:

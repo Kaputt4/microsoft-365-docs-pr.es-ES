@@ -2,7 +2,7 @@
 title: Implementación de Exchange Online para Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 08/29/2018
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Recorra el proceso de planeación, implementación y impulso del valor de Exchange online en Microsoft 365 Enterprise en toda la organización.
-ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a13cb36dd313ef3e6763c6c48720bb2b3e935880
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072290"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981881"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Implementación de Exchange Online para Microsoft 365 Enterprise
 
@@ -54,21 +54,6 @@ Exchange Online se puede usar para distintos fines. Debe averiguar qué propósi
 
 Una forma de ver las ventajas de Exchange Online es analizar la forma en que interactúan los individuos, un equipo o un equipo v y, después, encontrar un escenario adecuado que proporcione formas más sencillas de comunicarse, programar reuniones y colaborar. Tenga en cuenta que [Microsoft Teams](teams-workload.md) puede ser una opción mejor para algunos de los escenarios de colaboración.
 
-Exchange Online permite estos escenarios empresariales estratégicos para Microsoft 365 Enterprise:
-
-- Colaborar en documentos en tiempo real o en su propio tiempo para simplificar el proceso de creación conjunta
-- Administrar proyectos, tareas y fechas límite para cumplir con sus objetivos de negocio
-- Comprender sus hábitos de trabajo para mejorar su influencia e impacto
-- Comunicarse con su equipo para permanecer informado, solicitar comentarios y facilitar la cohesión y el consenso
-- Almacenar y compartir archivos, tanto dentro como fuera de la organización, para trabajar de forma fluida más allá de los límites organizativos
-- Trabajar de forma segura en el dispositivo en cualquier momento y lugar para mejorar la productividad, a la vez que mantiene un estilo de trabajo flexible
-- Proteger su información y reducir el riesgo de pérdida de datos
-- Detección y protección contra amenazas externas 
-- Supervisar, informar y analizar actividades para reaccionar con prontitud para proporcionar seguridad organizativa
-- Apoyar a su organización con mayor privacidad y cumplimiento normativo para ajustarse al Reglamento General de Protección de Datos (RGPD)
-
-Para obtener más información, vea [Transformación Digital con Microsoft 365](http://transform.microsoft.com). 
-
 #### <a name="result"></a>Resultado
 Una lista de escenarios de Exchange online que abordan las necesidades de la organización para la comunicación, la programación y la colaboración de corta duración.
 
@@ -78,7 +63,7 @@ En esta fase, planeará los aspectos técnicos de una implementación de Exchang
 
 ### <a name="prerequisites-identity-and-device-access-configuration"></a>Requisitos previos: configuración de acceso a dispositivos e identidades
 
-Para proteger el acceso a los buzones de Exchange Online, asegúrese de que ha configurado [las directivas de acceso a dispositivos](identity-access-policies.md) e identidades y las [directivas de acceso de Exchange Online recomendadas](secure-email-recommended-policies.md).
+Para proteger el acceso a los buzones de Exchange Online, asegúrese de que ha configurado [las directivas de acceso a dispositivos e identidades](identity-access-policies.md) y las [directivas de acceso de Exchange Online recomendadas](secure-email-recommended-policies.md).
 
 ### <a name="step-1-complete-your-technical-planning"></a>Paso 1: Completar el planeamiento técnico
 
@@ -182,7 +167,7 @@ Para obtener una ojeada dentro de Microsoft y saber cómo migra la compañía a 
 - [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats) (Microsoft usa inteligencia de amenazas para proteger, detectar y responder a las amenazas)
 - [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365) (Microsoft frustra intentos de suplantación de identidad (phishing) con Office 365)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Consulte estos recursos para el mantenimiento continuo de Exchange Online:
 

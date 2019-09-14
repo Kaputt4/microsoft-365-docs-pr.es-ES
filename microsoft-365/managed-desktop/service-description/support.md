@@ -5,14 +5,13 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 69e8463ce6bfffcd2ee5e8dd0f7f724910b13802
-ms.sourcegitcommit: d137cb1bd67a79d8af84357dc156824830d35aa7
+ms.openlocfilehash: 6c30f9e9a9f45ac8a68c285f4c594b238874f768
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "35924883"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982511"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Soporte para escritorio administrado de Microsoft
 
@@ -34,7 +33,7 @@ La compatibilidad de escritorio administrada de Microsoft incluye:
 Productos compatibles:
 
 - Protección contra amenazas avanzada de Windows 10 con Microsoft defender 
-- Subconjunto del conjunto de aplicaciones de Office 365: Outlook, Word, PowerPoint, Excel, cliente de Skype empresarial, Microsoft Teams 
+- Estas aplicaciones de Office 365 ProPlus: Outlook, Word, PowerPoint, Excel, cliente de Skype empresarial, Microsoft Teams 
 - Microsoft Store para Empresas 
 - Cliente de OneDrive para la empresa 
 
@@ -42,8 +41,8 @@ Detalles de compatibilidad:
 
 - Current: Norteamérica, Canadá (excepto Quebec), sólo Reino Unido, Australia y Nueva Zelanda (24x7x365) 
 - Inglés es el único idioma admitido para conversaciones telefónicas y de chat con los clientes 
-- Estamos asociados con, no reemplazando, el Departamento de soporte técnico de la empresa; El Departamento de soporte técnico sigue administrando las aplicaciones de línea de negocio (LOB), los recursos de red, etc. 
-- Los dispositivos administrados por Microsoft que residen en el grupo de prueba y los dispositivos de escritorio administrados que no son de Microsoft están fuera de ámbito 
+- Estamos asociados con, no reemplazando, el Departamento de soporte técnico de la empresa; el Departamento de soporte técnico sigue administrando las aplicaciones de línea de negocio (LOB), los recursos de red, etc. 
+- Los dispositivos de escritorio administrados por Microsoft del grupo "prueba" y los dispositivos que no forman parte del escritorio administrado de Microsoft están fuera de ámbito 
 
 
 ## <a name="related-topics"></a>Temas relacionados

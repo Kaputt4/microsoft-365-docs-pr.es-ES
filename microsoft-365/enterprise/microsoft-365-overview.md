@@ -3,7 +3,7 @@ title: Información general de Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/12/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Proporciona una introducción a los componentes, planes y rutas de implementación de Microsoft 365 Enterprise.
-ms.openlocfilehash: de67f9e99fbb7a3a6e85001ec675f16672f4ef22
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: b1750e1810556b8dadd4a16481c9ada3195f6c3c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297900"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982841"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Información general de Microsoft 365 Enterprise
 
@@ -55,9 +55,9 @@ Estas ofertas contienen características adicionales que se incluyen con Microso
 
 Para obtener más información, consulte [features and Capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
-## <a name="at-a-glance"></a>De un vistazo
+## <a name="get-the-big-picture"></a>Obtener una visión general
 
-El [póster de Microsoft 365 Enterprise](http://aka.ms/m365eposter) es una ubicación central que puede ver:
+El [póster de Microsoft 365 Enterprise](media/Microsoft365Enterprise.pdf) es una ubicación central que puede ver:
 
 - Ventajas de Microsoft 365 Enterprise y cómo se asignan las aplicaciones y los servicios a sus pilares de valor
 - Planes de Microsoft 365 Enterprise y qué componentes contienen 
@@ -65,22 +65,42 @@ El [póster de Microsoft 365 Enterprise](http://aka.ms/m365eposter) es una ubica
 - La [biblioteca de productividad de 365 de Microsoft](https://www.microsoft.com/microsoft-365/success/) y los escenarios representativos para algunos departamentos comunes de la organización
 - Guía básica de adopción que destaca la guía de [implementación](deploy-microsoft-365-enterprise.md) de Microsoft 365 Enterprise
 
-![](./media/m365-poster/m365e-poster.png)
+[![Imagen para el póster de Microsoft 365 Enterprise](./media/m365-poster/m365e-poster.png)](media/Microsoft365Enterprise.pdf)
 
 Para descargar una copia del póster, haga clic [aquí](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Transición de toda la organización
 
-Para obtener una imagen mejor sobre cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, descargue el [póster de transición](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+Para obtener una imagen mejor sobre cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, descargue el [póster de transición](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![Imagen para el póster de transición a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Este póster de dos páginas es una forma rápida de realizar un inventario de la infraestructura existente y obtener las instrucciones para desplazarse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
 
-Puede imprimir este póster en formato carta, legal o tabloide (11 x 17).
+Puede [Descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e imprimirlo en formato carta, legal o tabloide (11 x 17).
 
-## <a name="deploying"></a>Implementación
+## <a name="avoid-end-of-support-for-office-2010-clients-and-servers-and-windows-7"></a>Evite el fin del soporte para clientes y servidores de Office 2010 y Windows 7
+
+Los siguientes productos alcanzan el final del soporte técnico el **14 de enero de 2010**:
+
+- [Windows 7](https://aka.ms/win7upgrade)
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
+
+Los siguientes productos alcanzan el final del soporte técnico el **13 de octubre de 2020**:
+
+- [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+Para obtener un resumen visual de las opciones de actualización, migración y movimiento en la nube de estos productos, consulte el [póster de final de soporte técnico](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
+
+[![Imagen para el final del soporte técnico para clientes y servidores de Office 2010 y póster de Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+
+Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del soporte técnico, con las rutas preferidas y la compatibilidad con la opción en Microsoft 365 Enterprise resaltado.
+
+Puede [Descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e imprimirlo en formato carta, legal o tabloide (11 x 17).
+
+## <a name="deploy"></a>Implementación
 
 Hay tres formas de implementar los productos, las características y los componentes de Microsoft 365 Enterprise:
 
@@ -128,6 +148,6 @@ Para obtener más información sobre la implementación, consulte How:
 
 Si va a realizar la implementación usted mismo, inicie el [viaje de implementación de Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Página del producto Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)
