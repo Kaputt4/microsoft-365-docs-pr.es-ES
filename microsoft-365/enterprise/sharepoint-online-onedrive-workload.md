@@ -2,7 +2,7 @@
 title: Implementar SharePoint Online y OneDrive para la Empresa para Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se detalla el proceso de planeación, implementación y aumento del valor de SharePoint Online en Microsoft 365 Enterprise en toda la organización.
-ms.openlocfilehash: fab2a368a936fc3ffb4a56a9dc81ba6b3e0b0910
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9ceadbb0268d3a2aa82309d01933a8bd05429188
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074120"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981771"
 ---
 # <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>Implementar SharePoint Online y OneDrive para la Empresa para Microsoft 365 Enterprise
 
@@ -67,23 +67,6 @@ Los siguientes pilares empresariales pueden abordar las necesidades de la organi
 Vea [Administrador de SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online) para obtener recursos sobre cómo configurar SharePoint Online según sus necesidades.
 
 Una forma de ver los beneficios de SharePoint Online es examinar cómo interactúan actualmente las personas, un equipo, una división o toda la organización y luego encontrar un escenario apropiado que ofrezca formas más fáciles de almacenar y compartir archivos de colaboración. Tenga en cuenta que [Microsoft Teams](teams-workload.md) puede ser la mejor opción para algunos de los escenarios.
-
-SharePoint Online facilita estos escenarios empresariales estratégicos para Microsoft 365 Enterprise:
-
-- Comunicarse con su equipo para mantenerse informado, solicitar comentarios y facilitar la cohesión y el consenso
-- Aprovechar el conocimiento colectivo
-- Proporcionar recursos a los usuarios para transformar los procesos empresariales
-- Conformar la cultura corporativa
-- Administrar proyectos, tareas y fechas límite para cumplir con sus objetivos de negocio
-- Implicar a los Firstline Workers para facilitar su transformación digital
-- Comprender sus hábitos de trabajo para mejorar su influencia e impacto
-- Comunicarse con partners, compañeros y clientes
-- Almacenar y compartir archivos, tanto dentro como fuera de la organización, para trabajar de forma fluida más allá de los límites organizativos
-- Trabajar de forma segura en el dispositivo en cualquier momento y lugar para mejorar la productividad, a la vez que mantiene un estilo de trabajo flexible
-- Proteger su información y reducir el riesgo de pérdida de datos
-- Apoyar a su organización con mayor privacidad y cumplimiento normativo para ajustarse al Reglamento General de Protección de Datos (RGPD)
-
-Para obtener más información, vea [Transformación Digital con Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="sharepoint-online-site-for-highly-regulated-data"></a>Sitio de SharePoint Online para datos altamente regulados
 
