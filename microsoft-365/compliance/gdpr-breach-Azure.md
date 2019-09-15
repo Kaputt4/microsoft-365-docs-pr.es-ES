@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 7e614554f73f154828536cb4064a5dcf9ec23c26
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 6fdcf43da2dfa7ddf4b38b5ade8d20c37e70b52d
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698332"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982361"
 ---
 # <a name="azure-and-breach-notification-under-the-gdpr"></a>Azure y notificación de infracciones de datos según el RGPD
 
@@ -67,11 +67,11 @@ Microsoft asigna la prioridad y los niveles de gravedad adecuados a la investiga
 El equipo de respuesta de seguridad trabaja con los ingenieros de seguridad de Microsoft Azure y PYME para clasificar el evento con datos reales de las pruebas. Un evento de seguridad se puede clasificar como:
 
 - **Falso positivo:** un evento que cumple los criterios de detección, pero es parte de un procedimiento normal del negocio y es preciso filtrarlo. El equipo de servicio identificar la causa de los falsos positivos y los soluciona de forma sistemática con ajustando los orígenes<span id="_Toc350859432" class="anchor"></span> de detección según sea necesario.
-- **Incidente de seguridad:** un incidente en la que se ha producido un acceso ilegal a los datos de los clientes o de soporte técnico almacenados en equipo o instalaciones de Microsoft; o un acceso no autorizado a dicho equipo o instalaciones que ha resultado en la pérdida, divulgación o alteración de datos de clientes o soporte técnico.
-- **Incidente de seguridad de los clientes (CRSI):** un acceso o uso ilegal o no autorizado a sistemas, equipo o instalaciones de Microsoft que resulta en la divulgación, modificación o pérdida de datos de clientes.
-- **Vulneración de privacidad:** un subtipo de incidente de seguridad relacionado con datos personales. Los procedimientos de control no son diferentes de un incidente de seguridad.
+- **Incidente de seguridad:** un incidente en el que se produce un acceso ilegal a los datos de los clientes o de soporte técnico almacenados en equipos o instalaciones de Microsoft; o un acceso no autorizado a dichos equipos o instalaciones que da como resultado la pérdida, divulgación o modificación de datos de clientes o de soporte técnico.
+- **Incidente de seguridad o privacidad denunciado por el cliente:** un acceso o un uso ilegal o no autorizado de sistemas, equipos o instalaciones de Microsoft que da como resultado la divulgación, modificación o pérdida de datos de clientes.
+- **Infracción de privacidad**: caso específico de un incidente relativo a la seguridad que involucra datos personales. Los procedimientos de control son los mismos que los de un incidente de seguridad.
 
-Para que se declare una CRSI, Microsoft debe determinar que el acceso no autorizado a los datos del cliente se ha producido, o es probable que lo haya hecho, o existe un compromiso legal o contractual que fuerce la notificación. Es preferible, aunque no necesario, que se conozcan los pasos de impacto, acceso a los recursos y pasos de reparación del cliente específico. Un incidente se declara, en general, como CRSI después de la conclusión de la fase de diagnóstico de un incidente de seguridad. Sin embargo, la declaración puede producirse en cualquier momento en el que esté disponible toda la información pertinente. El administrador del incidente de seguridad debe establecer pruebas más allá de la duda razonable de que se ha producido un evento del que informar para iniciar la ejecución del Proceso de notificación de incidentes del cliente.
+Para que se declare una CRSPI, Microsoft debe determinar que el acceso no autorizado a los datos del cliente se ha producido, o es probable que lo haya hecho, o existe un compromiso legal o contractual que fuerce la notificación. Es preferible, aunque no necesario, que se conozcan los pasos de impacto, acceso a los recursos y pasos de reparación del cliente específico. Un incidente se declara, en general, como CRSPI después de la conclusión de la fase de diagnóstico de un incidente de seguridad. Sin embargo, la declaración puede producirse en cualquier momento en el que esté disponible toda la información pertinente. El administrador del incidente de seguridad debe establecer pruebas más allá de la duda razonable de que se ha producido un evento del que informar para iniciar la ejecución del Proceso de notificación de incidentes del cliente.
 
 Durante la investigación, el equipo de respuesta de seguridad trabaja junto a asistentes legales de todo el mundo para ayudar a garantizar que los análisis se realizan siguiendo los compromisos y las obligaciones legales con los clientes. También hay importantes restricciones sobre el visionado de datos de clientes y sistemas, además de sobre su manejo en varios entornos operativos. Los datos confidenciales y de los clientes no se transfieren fuera del entorno de producción sin la aprobación escrita del administrador de incidentes registrada en el tique de incidente correspondiente.
 
@@ -83,7 +83,7 @@ Microsoft también realiza un análisis final interno para las vulneraciones de 
 
 Microsoft Azure notifica a clientes y organismos reguladores acerca de las vulneraciones de datos según sea necesario. Microsoft depende de una gran compartimentación interna en la operación de Azure. También son sólidos los registros de flujo de datos. Una ventaja de este diseño es que la mayoría de incidentes pueden rastrearse hasta clientes específicos. El objetivo es proporcionar a los clientes afectados con un aviso preciso, puntual y efectivo cuando han sufrido una vulneración de datos.
 
-Después de la declaración de un CRSI, el proceso de notificación se lleva a cabo lo antes posible mientras se consideran los riesgos de seguridad de actuar con rapidez. Por lo general, el proceso de elaboración de notificaciones se produce durante la investigación del incidente. Los avisos al cliente se entregan en menos de 72 horas a partir del momento en que se declara una vulneración *excepto* en las siguientes circunstancias:
+Tras la declaración de un CRSPI, el proceso de notificación tiene lugar tan pronto como sea posible, pero hay que considerar los riesgos de seguridad de actuar demasiado rápido. Por lo general, se comienza a redactar las notificaciones durante la investigación de la incidencia. Los avisos a los clientes se entregan en no más de 72 horas desde el momento en que se declaró una vulneración, *excepto* en las siguientes circunstancias:
 
 - Microsoft cree que el acto de realizar una notificación aumentará el riesgo para otros clientes. Por ejemplo, la notificación puede alertar a un adversario y provocar una incapacidad para poner remedio.
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la infraestructura de red de Contoso y cómo usa su tecnología SD-WAN para obtener conectividad de red de rendimiento óptimo a los servicios basados en la nube de Microsoft 365 Enterprise.
-ms.openlocfilehash: 4a2b9f2172def2c62821536e456b2194795158c4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8eb6f17ffd7974169c0131fa81f05939a54854e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072560"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982111"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Redes para Contoso Corporation
 
@@ -50,7 +50,7 @@ En la ilustración 1, se muestra la infraestructura de red de Contoso y sus cone
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Uso de SD-WAN para la conectividad de red óptima a Microsoft
 
-Contoso siguió los [principios de conectividad de red de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles):
+Contoso siguió los [principios de conectividad de red de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) para:
 
 1. Identificar y diferenciar el tráfico de red de Office 365
 2. Conexiones de red de salida de forma local

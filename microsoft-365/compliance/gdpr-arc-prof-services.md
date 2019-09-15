@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: db0cb3ed472d0f50808339624550f0e98082b737
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: f14016d596f11869fb923106cb174fa5ce255ec3
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698372"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982311"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Lista de comprobación de preparación de responsabilidad del soporte técnico y los servicios profesionales de Microsoft para RGPD
 
@@ -23,8 +23,8 @@ ms.locfileid: "34698372"
 
 Esta lista de comprobación de preparación de responsabilidad proporciona una forma cómoda de obtener acceso a la información que puede que sea necesaria para cumplir con el RGPD al usar los servicios de soporte técnico y los Servicios profesionales de Microsoft. Esta lista está organizada con los títulos y números de referencia (entre paréntesis por cada tema de la lista de comprobación) de un conjunto de controles de seguridad y privacidad de los procesadores de datos personales extraídos de:
 
-- Requisitos de técnicas de seguridad [CD ISO/IEC 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735).
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) para requisitos de administración de privacidad.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) para las técnicas y requisitos en la gestión de la privacidad de los datos.
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) para requisitos en la administración de la seguridad de la información en general.
 
 Esta estructura de control también se usa para organizar la presentación de los controles internos que los Servicios profesionales de Microsoft implementan para cumplir el RGPD, que pueden descargarse desde el [Centro de confianza del servicio](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 

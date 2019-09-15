@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda los recursos que puede usar para implementar Microsoft 365 Enterprise en su organización.
-ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297910"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982080"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Implementar Microsoft 365 Enterprise
 
@@ -87,13 +87,13 @@ Para obtener más información, vea [Guías del laboratorio de pruebas de Micros
 
 ## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 
-Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, descargue el [póster de transición](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, vea [Iniciar la transición de su empresa a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![Iniciar la transición de su empresa a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Este póster de dos páginas explica una forma rápida de realizar un inventario de su infraestructura existente y conseguir las instrucciones para moverse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, tales como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
 
-Puede imprimir este póster en formato carta, oficio o tabloide (11 x 17).
+Puede [descargar este póster de transición](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) en formato carta, legal o tabloide (11 x 17).
 
 ## <a name="how-did-others-do-it"></a>¿Cómo lo lograron otras personas?
 
@@ -115,7 +115,7 @@ Definir una cultura digital es una prioridad principal para cada líder que se e
 
 Al mismo tiempo, las características de seguridad inteligente y la integración del producto ayudan a simplificar las necesidades de administración y reducir el costo total de propiedad en el ciclo de vida de TI. 
 
-Obtenga información sobre cómo Core Services Engineering and Operations (anteriormente Microsoft IT) [planifica e implementa una base](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365) para admitir aplicaciones y servicios que desatan la creatividad y facilitan el trabajo en equipo en un entorno seguro.
+Obtenga información sobre cómo Core Services Engineering and Operations (anteriormente Microsoft IT) [planifica e implementa una base](https://www.microsoft.com/es-ES/itshowcase/deploying-and-managing-microsoft-365) para admitir aplicaciones y servicios que desatan la creatividad y facilitan el trabajo en equipo en un entorno seguro.
 
 > [!Note]
 > Esta característica solo está disponible en inglés.
