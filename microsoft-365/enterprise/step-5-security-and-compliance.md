@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre consideraciones importantes de seguridad y cumplimiento para Windows y Office.
-ms.openlocfilehash: 791006a6a836f28adb8d71b20e0e887b903752ba
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 472a838c68ed06560f5b81f7854b05b1b2e8eefd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814591"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981761"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Paso 5: Consideraciones de seguridad y cumplimiento
 
@@ -111,7 +111,7 @@ Además, **[Datos adjuntos seguros](https://docs.microsoft.com/es-ES/office365/s
 
 **[Control de aplicaciones de Windows Defender](https://docs.microsoft.com/es-ES/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** de Windows 10 funciona a partir de una lista de aplicaciones permitidas y bloqueadas en las que Microsoft ha comprobado la seguridad y todo esto se administra mediante directivas de Endpoint Protection con Microsoft Intune.
 
-**[Protección contra amenazas avanzada de Windows Defender](https://docs.microsoft.com/es-ES/windows/security/threat-protection/windows-defender-atp/overview)** es una plataforma unificada de protección preventiva, detección posterior a la infracción, investigación automatizada y respuesta. Protege los puntos de conexión de las ciberamenazas; detecta ataques y vulneraciones de datos avanzados, automatiza los incidentes de seguridad y mejora la posición de seguridad.
+**[Protección contra amenazas avanzada de Microsoft Defender](https://docs.microsoft.com/es-ES/windows/security/threat-protection/windows-defender-atp/overview)** es una plataforma unificada de protección preventiva, detección posterior a la infracción, investigación automatizada y respuesta. Protege los puntos de conexión de las ciberamenazas; detecta ataques y vulneraciones de datos avanzados, automatiza los incidentes de seguridad y mejora la posición de seguridad.
 
 **[Protección contra vulnerabilidades de seguridad](https://docs.microsoft.com/es-ES/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** ayuda a reducir la superficie de ataques para las aplicaciones en ejecución impidiendo que el malware llegue a Windows y bloqueando el acceso de los procesos que no son de confianza a las carpetas protegidas.
 

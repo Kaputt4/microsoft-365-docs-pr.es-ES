@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 86254d388bc5134b7913ab5e93cde96a7bc4cc66
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: b605bfa3d549b3359f8bb780cfffa7306db44d2d
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698412"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982421"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Lista de comprobación de preparación de responsabilidad de Azure para RGPD
 
@@ -23,12 +23,12 @@ ms.locfileid: "34698412"
 
 Esta lista de comprobación de preparación de responsabilidad ofrece una forma cómoda de acceso a la información que puede que sea necesaria para cumplir con el Reglamento General de Protección de Datos (RGPD) al usar Microsoft Azure. Esta lista se organiza con los títulos y números de referencia (entre paréntesis para cada tema de la lista de comprobación) de un conjunto de controles de seguridad y privacidad de los encargados del tratamiento de datos personales, extraídos de:
 
-- Requisitos de técnicas de seguridad [CD ISO/IEC 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735).
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) requisitos de técnicas de seguridad.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) para requisitos de administración de privacidad.
 
 Puede administrar los elementos de esta lista de comprobación con el Administrador de cumplimiento [16] haciendo referencia al identificador de control y el título del control en Controles administrados de cliente del mosaico RGPD. Esta estructura de control también se usa para organizar la presentación de los controles internos que Microsoft Azure implementa para cumplir el RGPD, que pueden descargarse desde el [Centro de confianza del servicio](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
-Esta estructura de control también se usa para organizar la presentación de los [controles internos que Microsoft Dynamics 365 implementa para cumplir con el RGPD](https://aka.ms/gdprcontrols).
+Esta estructura de control también se usa para organizar la presentación de los [controles internos que Microsoft Dynamics 365 implementa para cumplir con el RGPD](https://aka.ms/GDPRControls).
 
 Para obtener más documentación relacionada con el RGPD, visite [https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted).
 

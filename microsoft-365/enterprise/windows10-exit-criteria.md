@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise para Windows 10 Enterprise.
-ms.openlocfilehash: 29ab2373321485d8de892a29132d1af07a318b7b
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 289d20b87d9cefcc63a060fb0dc526cf7a45b071
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074110"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982641"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Fase 3: Criterios de salida de infraestructura de Windows 10 Enterprise
 
@@ -111,11 +111,11 @@ Implementó Protección contra vulnerabilidades de seguridad de Windows Defender
 Si es necesario, el [paso 5](windows10-enable-security-features.md#windows10-sec-eg) puede ayudarle con este requisito.
 
 <a name="crit-windows10-step5c"></a>
-## <a name="required-you-are-using-windows-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Necesario: Usa Protección contra amenazas avanzada de Windows Defender (solo Microsoft 365 Enterprise E5)
+## <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Necesario: Usa Protección contra amenazas avanzada de Microsoft Defender (solo Microsoft 365 Enterprise E5)
 
-Implementó Protección contra amenazas avanzada de Windows Defender (ATP) para detectar, investigar y responder a las amenazas avanzadas contra su red y los dispositivos que ejecutan Windows 10 Enterprise. 
+Implementó Protección contra amenazas avanzada de Microsoft Defender (ATP) para detectar, investigar y responder a las amenazas avanzadas contra su red y los dispositivos que ejecutan Windows 10 Enterprise. 
 
-Opcionalmente, ha integrado Windows Defender ATP con otras herramientas para ampliar sus capacidades.
+Opcionalmente, ha integrado Microsoft Defender ATP con otras herramientas para ampliar sus capacidades.
 
 Si es necesario, el [paso 5](windows10-enable-security-features.md#windows10-sec-atp) puede ayudarle con este requisito.
 

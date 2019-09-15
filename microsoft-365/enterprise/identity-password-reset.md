@@ -3,7 +3,7 @@ title: Paso 5 Simplificación del acceso de usuarios
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure el restablecimiento de contraseñas de autoservicio (SSPR) para Azure AD.
-ms.openlocfilehash: b57291aabf1b51e7866dba10ba50eacc27291a2a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ec81b2931fd4ad599ffcf983ea8a7d764c56404a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073730"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981801"
 ---
 # <a name="step-5-simplify-access-for-users"></a>Paso 5 Simplificación del acceso de usuarios
 
@@ -32,7 +32,7 @@ ms.locfileid: "34073730"
 
 En esta sección, permitirá a los usuarios restablecer sus contraseñas a través de Azure Active Directory (Azure AD), que se replicarán en el Active Directory Domain Services (AD DS) local. Este proceso se conoce como reescritura de contraseña. Con la escritura diferida de contraseñas, los usuarios no necesitan actualizar las contraseñas mediante AD DS local donde se almacenan las cuentas de usuario y sus atributos. Esto resulta útil para los usuarios móviles o remotos que no disponen de una conexión de acceso remoto a la red local.
 
-La escritura diferida de contraseñas es necesaria para utilizar por completo las funcionalidades de la característica de Identity Protection, como solicitar a los usuarios que cambien sus contraseñas locales cuando se haya detectado un alto riesgo de que la cuenta se haya visto comprometida.
+La escritura diferida de contraseñas es necesaria para utilizar por completo las capacidades de Azure AD Identity Protection, como solicitar a los usuarios que cambien sus contraseñas locales cuando se haya detectado un alto riesgo de que la cuenta se haya visto comprometida.
 
 Para obtener más información e instrucciones de configuración, vea [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback) (SSPR de Azure AD con escritura diferida de contraseñas).
 
@@ -71,7 +71,7 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 
 En esta sección, configurará Azure Active Directory Seamless Single Sign-On (Azure AD Seamless SSO) para permitir que los usuarios inicien sesión en servicios que usan cuentas de usuario de Azure AD sin tener que escribir sus contraseñas y, en muchos casos, los nombres de usuario. Esto ofrece facilita a los usuarios el acceso a aplicaciones en la nube, como Office 365, sin necesidad de componentes locales adicionales, como los servidores de federación de identidades.
 
-Configurará el SSO de conexión directa de Azure AD con la herramienta Azure AD Connect.
+Configure el SSO de conexión directa de Azure AD con la herramienta Azure AD Connect.
 
 Vea las [instrucciones para configurar el SSO de conexión directa de Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
@@ -92,20 +92,11 @@ En esta sección, ayudará a los usuarios a reconocer la página de inicio de se
 
 Con Microsoft 365 Enterprise, puede personalizar la apariencia de las páginas de inicio de sesión y del Panel de acceso de forma que incluyan información de usuario personalizada, las combinaciones de colores y el logotipo de su compañía. 
 
-Cuando un usuario intenta iniciar sesión desde un dispositivo, ve algo similar al ejemplo siguiente en la página de inicio de sesión de Office 365 *antes de personalizarla*.
-
-![Ejemplo de la página de inicio de sesión de Office 365 antes de personalizarla](./media/identity-customize-office-365-sign-in/id-step01-sign-in-before.png)
-
-Esto es lo que verá el mismo usuario de Contoso Corporation *después de personalizarla*.
-
-![Ejemplo de la página de inicio de sesión de Office 365 después de personalizarla](./media/identity-customize-office-365-sign-in/id-step01-sign-in-after.png)
-
 Para obtener más información, vea [Agregar la personalización de marca de su empresa a la página de inicio de sesión de Office 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 Para obtener instrucciones de configuración, vea [Incorporación de personalización de marca de empresa a sus páginas de inicio de sesión y del Panel de acceso](http://aka.ms/aadpaddbranding).
 
 Como control provisional, puede consultar los [criterios de salida](identity-exit-criteria.md#crit-identity-custom-sign-in) correspondientes a esta sección.
-
 
 ## <a name="next-step"></a>Paso siguiente
 

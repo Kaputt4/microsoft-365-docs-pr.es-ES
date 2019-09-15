@@ -3,7 +3,7 @@ title: 'Paso 6: Uso de grupos para facilitar la administración'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure la administración de grupos de autoservicio de Azure AD.
-ms.openlocfilehash: 67c3a0e45fa253bdaedead03ac1137422ee0f8de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97077f5e047f55ea6bf6e532d25d25f4682ff179
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073610"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981781"
 ---
 # <a name="step-6-use-groups-for-easier-management"></a>Paso 6: Uso de grupos para facilitar la administración
 
@@ -74,14 +74,11 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 
 *Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-En esta sección, deberá configurar los grupos de seguridad en Azure AD para asignar automáticamente licencias de un conjunto de suscripciones para todos los miembros del grupo. Esto se conoce como *licencias basadas en grupos*. Si una cuenta de usuario se añade o se elimina del grupo, las licencias de suscripciones del grupo se asignan o se eliminan automáticamente de la cuenta de usuario.
+En esta sección, deberá configurar los grupos de seguridad en Azure AD para asignar automáticamente licencias de un conjunto de suscripciones para todos los miembros del grupo. Esto se conoce como *licencias basadas en grupos*. Si una cuenta de usuario se añade o se elimina del grupo, se asignará o quitará la asignación de las licencias de suscripciones del grupo automáticamente desde la cuenta de usuario.
 
-Para Microsoft 365 Enterprise, configurará grupos de seguridad de Azure AD para asignar estas dos licencias:
+Para Microsoft 365 Enterprise, configurará grupos de seguridad de Azure AD para asignar la licencia apropiada de Microsoft 365 Enterprise.
 
-- Office 365 Enterprise E3 o E5
-- Enterprise Mobility + Security (EMS) E3 o E5
-
-Con los grupos que identificó en el paso 2, busque grupos que contengan una lista de cuentas donde todos los usuarios del grupo necesiten tener licencias de Office 365 y EMS. Asegúrese de tener licencias suficientes para todos los miembros del grupo. Si se queda sin licencias, no se asignarán licencias a los nuevos usuarios hasta que haya más licencias disponibles.
+Asegúrese de que tiene suficientes licencias para todos los miembros del grupo. Si se queda sin licencias, no se asignarán licencias a nuevos usuarios hasta que estén disponibles otras nuevas.
 
 >[!Note]
 >No configure las *licencias basadas en grupos* para los grupos que contengan cuentas entre empresas (B2B) de Azure.
@@ -103,6 +100,6 @@ Los resultados de esta sección son:
 
 Como control provisional, puede consultar los [criterios de salida](identity-exit-criteria.md#crit-identity-group-license) correspondientes a esta sección.
 
-## <a name="next-step"></a>Paso siguiente
-
-[Criterios de salida de infraestructura de identidades](identity-exit-criteria.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step7.png)| [Configurar Identity Governance](identity-governance.md) |

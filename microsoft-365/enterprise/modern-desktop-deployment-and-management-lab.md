@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: a19c9d2de0cb4cb5436a8c3364bab0e24bb866ee
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830508"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981701"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
@@ -96,7 +96,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
   - Protección de aplicaciones de Windows Defender
   - Protección contra vulnerabilidades de seguridad de Windows Defender
   - Control de aplicaciones de Windows Defender
-  - Protección contra amenazas avanzada de Windows Defender
+  - Protección contra amenazas avanzada de Microsoft Defender
 
 ### <a name="os-deployment-and-feature-updates"></a>**Implementación del sistema operativo y actualizaciones de características**
 
@@ -118,7 +118,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Descargar el kit de laboratorio de implementación de Office y Windows**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*Por favor, use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y permitir entre 30 y 45 minutos de aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 27 de agosto de 2019. Antes de que caduque, se publicará una nueva versión.*
+*Por favor, use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y permitir entre 30 y 45 minutos de aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 16 de noviembre de 2019. Antes de que caduque, se publicará una nueva versión.*
 
 ## <a name="additional-guidance"></a>**Instrucciones adicionales**
 
