@@ -3,7 +3,7 @@ title: 'Paso 2: Proteger las identidades con privilegios'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/01/2018
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure las cuentas de administrador para obtener la protección máxima.
-ms.openlocfilehash: 8a1d232ffc0242766d79b2e4884582f3b5524d22
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b9c645d597dfeb2bdc42e2b0b7615252dc1f5ecb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074060"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981911"
 ---
 # <a name="step-2-secure-your-privileged-identities"></a>Paso 2: Proteger las identidades con privilegios
 
@@ -37,31 +37,30 @@ En esta sección, ayudará a evitar ataques digitales en su organización, asegu
 Para las cuentas de administrador global dedicadas, también necesita:
 
 1. Probar la configuración de autenticación multifactor (MFA) por cuenta de usuario o basado en el acceso condicional en una cuenta de usuario de prueba para garantizar que MFA funciona correctamente y de forma predecible. MFA exige una forma de autenticación secundaria, como un código de verificación enviado a un smartphone.
-2. Configure MFA para todas las cuentas de administrador global de Office 365 dedicadas y use la forma más segura de autenticación secundaria disponible en su organización. Para obtener más información, vea [Autenticación multifactor](identity-multi-factor-authentication.md#identity-mfa).
-2. Use una directiva de acceso condicional para exigir el uso de MFA en las cuentas de administrador global. Para obtener más información, vea [Proteger las cuentas de administrador](identity-access-prerequisites.md#protecting-administrator-accounts).
+2. Habilite la **Directiva de línea base: requerir MFA para los administradores** para las directivas de acceso condicional para las cuentas de administrador global y use la forma más segura de autenticación secundaria disponible en la organización. Consulte [Autenticación multifactor](identity-access-prerequisites.md#protecting-administrator-accounts) para obtener más información.
 
-Para obtener más información sobre la configuración, vea [Proteger las cuentas de administrador global de Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts).
+Para obtener protección adicional, consulte [Proteger las cuentas de administrador global de Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
 
 > [!Note]
 > Las organizaciones tienen que usar identidades solo de nube con el fin de crear cuentas con privilegios (como administradores globales) para escenarios de acción rápida en emergencias, como un ciberataque. Para obtener más información, vea [Administrar cuentas administrativas de acceso de emergencias en Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access).
 
 Los resultados de esta sección son:
 
-- Las únicas cuentas de usuario de su suscripción que tienen el rol de administrador global son aquellas pertenecientes al nuevo conjunto de cuentas de administrador global dedicadas. Para comprobarlo, use el siguiente comando de Active Directory de Azure PowerShell para Graph: 
+- Las únicas cuentas de usuario de su suscripción que tienen el rol de administrador global son las cuentas de administrador global dedicadas. Para comprobarlo, use el siguiente comando de Active Directory de Azure PowerShell para Graph: 
   ```
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
-- El resto de las cuentas de usuario habituales que administran la suscripción tienen asignados roles de administrador que están asociados con las funciones del puesto.
+- El resto de cuentas de usuario que administran los servicios de suscripción tienen asignados roles de administrador que están asociados con las funciones del puesto.
 
 > [!Note]
 > Vea [Conectarse a PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) para recibir instrucciones sobre la instalación del módulo Azure Active Directory PowerShell para Graph e iniciar sesión.
 
 |||
 |:-------|:-----|
-|![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía de laboratorio de pruebas: Proteger las cuentas de administrador global](protect-global-administrator-accounts-microsoft-365-test-environment.md) |
+|![Guías del entorno de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para poner en práctica esta configuración en un entorno de prueba, consulte la [Guía de entorno de pruebas para proteger cuentas de administrador global](protect-global-administrator-accounts-microsoft-365-test-environment.md). |
 |||
 
-Como control provisional, puede ver el [criterio de salida](identity-exit-criteria.md#crit-identity-global-admin) de esta sección.
+Como control provisional, puede consultar los [criterios de salida](identity-exit-criteria.md#crit-identity-global-admin) correspondientes a esta sección.
 
 
 <a name="identity-pim"></a>

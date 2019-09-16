@@ -3,7 +3,7 @@ title: 'Paso 4: Configurar autenticación segura de usuario'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure la autenticación multifactor para las cuentas de usuario.
-ms.openlocfilehash: 73e884802329765fd6a89cfb7d0e04116c17968c
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 2a4a0926a08ae8279523219a2d7a2386ea0c6742
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072090"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981851"
 ---
 # <a name="step-4-configure-secure-user-authentication"></a>Paso 4: Configurar autenticación segura de usuario
 
@@ -36,7 +36,7 @@ Con MFA, el segundo nivel de seguridad puede ser:
 - Un dispositivo personal y de confianza que no se pueda suplantar o duplicar fácilmente, como un smartphone.
 - Un atributo biométrico, como una huella digital.
 
-Habilitará MFA y configurará el método de autenticación secundario en cada cuenta de usuario. Asegúrese de informar a los usuarios de que se habilitará MFA para que comprendan los requisitos (como el uso obligatorio de un smartphone para iniciar sesión) y que puedan iniciar sesión correctamente.
+Habilitará MFA y configurará el método de autenticación secundario con [directivas de acceso condicional](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access), que le permiten usar grupos de Azure Active Directory (Azure AD) para implementar MFA en conjuntos específicos de usuarios, como usuarios piloto, regiones geográficas o departamentos. Asegúrese de informar a los usuarios de que se habilitará MFA para que comprendan los requisitos (como el uso obligatorio de un smartphone para iniciar sesión) y que puedan iniciar sesión correctamente. 
 
 Para obtener más información, consulte [el Plan de autenticación multifactor](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
 
@@ -49,9 +49,24 @@ Para obtener más información, consulte [el Plan de autenticación multifactor]
 |![Guías de laboratorio de pruebas en Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía de laboratorio de pruebas: Autenticación multifactor](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
-Como control provisional, puede ver el [criterio de salida](identity-exit-criteria.md#crit-identity-mfa) de esta sección.
+Como control provisional, puede consultar los [criterios de salida](identity-exit-criteria.md#crit-identity-mfa) correspondientes a esta sección.
 
+<a name="identity-password-prot"></a>
+## <a name="prevent-bad-passwords"></a>Evite contraseñas no válidas
 
+*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
+
+Para evitar que los usuarios creen una contraseña que se pueda averiguar con facilidad, use la protección con contraseña de Azure AD, que usa tanto una lista de contraseñas prohibidas global como una lista opcional de contraseñas prohibidas personalizada que usted especifica. Por ejemplo, puede especificar términos que sean específicos para su organización, como "
+
+- Nombres de marcas
+- Nombres de productos
+- Ubicaciones (por ejemplo, como la oficina central de la empresa)
+- Términos internos específicos de la empresa
+- Abreviaturas que tienen un significado específico en la empresa.
+
+Puede prohibir contraseñas no válidas [en la nube](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) y para los [Servicios de dominio de Active Directory (AD DS) locales](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
+
+Como control provisional, puede consultar los [criterios de salida](identity-exit-criteria.md#crit-password-prot) correspondientes a esta sección.
 
 <a name="identity-ident-prot"></a>
 ## <a name="protect-against-credential-compromise"></a>Proteger contra credenciales en peligro
@@ -64,8 +79,8 @@ Con Azure AD Identity Protection, puede:
 
 |||
 |:---------|:---------|
-|Determinar y corregir posibles vulnerabilidades en las identidades de su organización|Azure AD usa aprendizaje automático para detectar anomalías y actividades sospechosas, como inicios de sesión y actividades posteriores al inicio de sesión. Con estos datos, Identity Protection genera informes y alertas que le permiten evaluar los problemas y tomar medidas.|
-|Detectar acciones sospechosas relacionadas con las identidades de su organización y responder a ellas automáticamente|Puede configurar directivas basadas en riesgos que responden automáticamente a los problemas encontrados cuando se alcanza un nivel de riesgo especificado. Estas directivas, además de otros controles de acceso condicional proporcionados por Azure Active Directory y Enterprise Mobility + Security (EMS), pueden automáticamente impedir el acceso o realizar acciones correctivas, como activar restablecimientos de contraseña y exigir la autenticación multifactor para los inicios de sesión posteriores.|
+|Determinar y corregir posibles vulnerabilidades en las identidades de su organización|Azure AD usa el aprendizaje automático para detectar anomalías y actividad sospechosa, como inicios de sesión y actividades posteriores al inicio de sesión. Con estos datos, Azure AD Identity Protection genera informes y alertas que le ayudarán a evaluar los problemas y tomar medidas.|
+|Detectar acciones sospechosas relacionadas con las identidades de su organización y responder a ellas automáticamente|Puede configurar directivas basadas en riesgos que respondan automáticamente a problemas detectados si se alcanza un nivel de riesgo específico. Estas directivas, además de otros controles de acceso condicional proporcionados por Azure AD y Microsoft Intune, pueden bloquear automáticamente el acceso o llevar a cabo acciones correctivas que incluyen el restablecimiento de contraseñas y la solicitud de la autenticación multifactor en posteriores inicios de sesión.|
 |Investigar incidentes sospechosos y solucionarlos con acciones administrativas|Puede investigar eventos de riesgo con información sobre el incidente de seguridad. Hay disponibles flujos de trabajo básicos para realizar un seguimiento de las investigaciones e iniciar acciones de corrección, como restablecimientos de contraseña.|
 
 Vea [más información sobre Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
@@ -106,8 +121,6 @@ El **Informe de actividades de inicios de sesión** registra quién realizó las
 Para obtener más información sobre los informes y obtener acceso a ellos, vea [Informes de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal).
 
 Como resultado de este paso, obtendrá información sobre estos informes y conocerá cómo puede usarlos para comprender en profundidad los eventos y actividades de Azure AD con fines de planeamiento y seguridad.
-
-
 
 ## <a name="next-step"></a>Paso siguiente
 

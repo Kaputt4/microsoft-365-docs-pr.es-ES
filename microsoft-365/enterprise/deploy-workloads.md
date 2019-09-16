@@ -2,7 +2,7 @@
 title: Cargas de trabajo y escenarios de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Incorpore a los usuarios de su organización a las cargas de trabajo de productividad de Microsoft 365 Enterprise.
-ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297870"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981941"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Cargas de trabajo y escenarios de Microsoft 365 Enterprise
 
@@ -34,15 +34,16 @@ Los escenarios usan características y servicios de Microsoft 365 Enterprise de 
 - Datos sujetos a regulaciones regionales.
 - Los datos más importantes para su organización, como pueden ser secretos comerciales, información de recursos humanos o financiera y estrategias de la organización.
 
-Para proteger los datos ante amenazas internas y externas, consulte las instrucciones de [sitios de SharePoint Online y de Microsoft Teams para datos altamente regulado](teams-sharepoint-online-sites-highly-regulated-data.md). Este escenario le guiará en la configuración de un sitio de SharePoint Online o un equipo de Microsoft Teams para almacenar de forma segura sus datos más importantes.
+Para proteger los datos ante amenazas internas y externas, consulte [Sitios de Microsoft Teams y SharePoint Online para datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md). Este escenario le guiará en la configuración de un sitio de SharePoint Online o un equipo de Microsoft Teams para almacenar de forma segura sus datos más importantes.
 
 En la ilustración siguiente se muestran las cargas de trabajo y escenarios de la guía de implementación general de Microsoft 365 Enterprise.
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-Vea la[Biblioteca de productividad de Microsoft 365](https://www.microsoft.com/microsoft-365/success/)para escenarios adicionales. Desde esta página web, escriba una cadena de búsqueda o haga clic en**filtrar por**y especifique sector, roles (departamentos) y productos de Microsoft 365.
+Vea la[Biblioteca de productividad de Microsoft 365](https://www.microsoft.com/microsoft-365/success/)para escenarios adicionales. 
 
-En los resultados, haga clic en una tarjeta para ver los pasos que pueden ayudarle a empezar.
+1. Desde esta página web, escriba una cadena de búsqueda o haga clic en**filtrar por**y especifique sector, roles (departamentos) y productos de Microsoft 365.
+2. En los resultados, haga clic en una tarjeta para ver los pasos que pueden ayudarle a empezar.
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Requisitos previos de infraestructura básica
 
@@ -57,14 +58,14 @@ En los resultados, haga clic en una tarjeta para ver los pasos que pueden ayudar
 | Administración de dispositivos móviles | Se pueden inscribir y administrar los dispositivos. |
 | Protección de la información | Se habilitan las características de seguridad de Office 365 y su confidencialidad o etiquetas de Azure Information Protection están listas para proteger documentos. |
 
-Recuerde que esta es una situación ideal y la planificación, configuración, prueba y pilotaje puede llevar cierto tiempo, en especial en organizaciones de gran tamaño con infraestructuras ya existentes y ubicaciones múltiples. Implementar todas estas capas en todas las ubicaciones no es necesario para permitirle obtener el valor empresarial de Microsoft 365 Enterprise con mayor rapidez. 
+Recuerde que esta es una situación ideal y la planificación, configuración, prueba y pilotaje puede llevar cierto tiempo, en especial en organizaciones de gran tamaño con infraestructuras ya existentes y ubicaciones múltiples. No es necesario completar todas estas fases en todas las ubicaciones para permitirle obtener el valor empresarial de Microsoft 365 Enterprise con mayor rapidez. 
 
 Estas son algunas cargas de trabajo comunes para implementar inmediatamente: 
 
-- Después de que la capa de **identidad** de la infraestructura básica esté implementada en los usuarios, muchas organizaciones implementan:
+- Después de que la fase de **identidad** de la infraestructura básica esté implementada en los usuarios, muchas organizaciones implementan:
   - [Office 365 ProPlus](office365proplus-infrastructure.md) combinado con [OneDrive para la Empresa](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Office 365 ProPlus ofrece la seguridad de la autenticación moderna y la última experiencia del usuario del cliente de Microsoft Office. La migración de archivos personales del usuario a OneDrive para la Empresa reduce la infraestructura y la necesidad de prestar soporte a carpetas y unidades.
   - [Exchange Online](exchangeonline-workload.md) para que los usuarios puedan empezar a usar el correo electrónico en la nube.
-- Si no tiene una necesidad inmediata de almacenar en la nube activos digitales altamente regulados, implemente [Microsoft Teams](teams-workload.md) y [SharePoint Online](sharepoint-online-onedrive-workload.md) para sus usuarios antes que la capa de **protección de la información**.
+- Si no tiene necesidad inmediata de almacenar en la nube activos digitales altamente regulados, implemente [Microsoft Teams](teams-workload.md) y [SharePoint Online](sharepoint-online-onedrive-workload.md) para los usuarios antes que la fase de **protección de la información**.
 
 Debe decidir la forma más adecuada de ordenar e implementar la configuración de las fases de requisitos previos de la infraestructura básica a fin de satisfacer de la mejor manera sus necesidades empresariales.
 
@@ -74,7 +75,5 @@ Se recomienda implementar fase de **identidad** de la infraestructura básica an
 
 La fase de **identidad** garantiza que su identidad basada en la nube, tanto si se realiza únicamente en la nube o se sincroniza con su Active Directory Domain Services (AD DS) local, contiene las cuentas y grupos de usuario y equipo para gestionar la autenticación y el acceso. La autenticación segura es requerida para todos los usuarios con cuentas de protección segura de administrador antes de ubicar los recursos digitales de la organización en la nube de Microsoft 365.
 
-Si bien la base es muy importante para el rendimiento general, la implementación de la fase de **red** en su red puede estar en marcha mientras se incorporan usuarios a las cargas de trabajo, entendiendo que la aplicación Microsoft 365 y el rendimiento del servicio mejorarán con el tiempo.
-
-Esto es especialmente aplicable a organizaciones empresariales con múltiples ubicaciones y una combinación de conexiones locales y a Internet.
+Si bien la base es muy importante para el rendimiento general, la implementación de la fase de **red** puede estar en marcha mientras se incorporan usuarios a las cargas de trabajo, entendiendo que la aplicación Microsoft 365 y el rendimiento del servicio mejorarán con el tiempo. Esto es especialmente aplicable a organizaciones empresariales con múltiples ubicaciones y una combinación de conexiones locales y a Internet.
 
