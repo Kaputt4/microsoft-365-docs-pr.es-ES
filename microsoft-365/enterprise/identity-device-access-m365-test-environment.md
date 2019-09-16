@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Crear un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades.
-ms.openlocfilehash: 9195f532222511fc9dce474617ed52916d8e382a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: c8d7aed1422f9d0c5891157e6fb7d3d30d976c4a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073600"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981901"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Acceso de dispositivos e identidades en el entorno de prueba de Microsoft 365
 
-[Configuraciones de acceso de dispositivos e identidades](microsoft-365-policies-configurations.md) es un conjunto de características y directivas de acceso condicional para proteger el acceso a todos los servicios que se integran con Azure Active Directory (Azure AD), incluyendo Office 365 y Enterprise Mobility + Security ( EMS) en Microsoft 365 Enterprise.
+[Configuración de acceso de dispositivos e identidades](microsoft-365-policies-configurations.md) es un conjunto de características y directivas de acceso condicional para proteger el acceso a todos los servicios que se integran con Azure Active Directory (Azure AD), incluidos Office 365 y Microsoft Intune en Microsoft 365 Enterprise.
 
 Para crear un entorno de prueba con estas directivas en su lugar:
 
