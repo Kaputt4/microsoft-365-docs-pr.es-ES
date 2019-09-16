@@ -3,7 +3,7 @@ title: 'Fase 4: Office 365 ProPlus'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 08/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar la infraestructura de Office 365 ProPlus para Microsoft 365 Enterprise.
-ms.openlocfilehash: cf698e4dbee17a811a4d2bc01d08d4d97d1961c1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074180"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982771"
 ---
 # <a name="phase-4-office-365-proplus"></a>Fase 4: Office 365 ProPlus
 
@@ -29,24 +29,6 @@ ms.locfileid: "34074180"
 Microsoft 365 Enterprise incluye Office 365 ProPlus, la versión de suscripción de Office. Como Office 2016, Office 365 ProPlus incluye todas las aplicaciones de Office y estas se instalan directamente en los dispositivos cliente. A diferencia de Office 2016, Office 365 ProPlus se actualiza con nuevas características de forma regular y tiene un modelo de licencias basadas en el usuario que permite que las personas instalen Office en un máximo de 5 dispositivos. Para obtener más información, vea [Información sobre Office 365 ProPlus en un entorno empresarial](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 En esta fase, implementará Office 365 ProPlus en dispositivos cliente como parte de Microsoft 365 Enterprise. Además de esta guía, le recomendamos que use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) para ayudarle con la implementación. 
-
-Office 365 ProPlus facilita estos escenarios empresariales estratégicos para Microsoft 365 Enterprise:
-
-- Colaborar en documentos en tiempo real o en su propio tiempo para simplificar el proceso de creación conjunta
-- Aprovechar la experiencia y el conocimiento colectivo al permitir a los usuarios descubrir, compartir y trabajar en archivos, información e ideas en la organización
-- Proporcionar recursos a los usuarios para transformar los procesos empresariales y mejorar la eficiencia
-- Administrar proyectos, tareas y fechas límite para cumplir con sus objetivos de negocio
-- Usar la asistencia inteligente para diseñar, escribir, descubrir contenido y más para alcanzar su mejor trabajo
-- Descubrir información, analizar sus datos y compartir sus hallazgos para ayudar a todos los usuarios a tomar decisiones fundamentadas
-- Comunicarse con su equipo para permanecer informado, solicitar comentarios y facilitar la cohesión y el consenso
-- Comunicarse con socios, compañeros y clientes de todo el mundo para realizar llamadas programadas y ad hoc, así como reuniones de Internet con grupos de cualquier tamaño
-- Almacenar y compartir archivos, tanto dentro como fuera de la organización, para trabajar de forma fluida más allá de los límites organizativos
-- Trabajar de forma segura desde cualquier lugar, en cualquier momento y con cualquier dispositivo para mejorar la productividad, a la vez que se mantiene un estilo de trabajo flexible
-- Ofrecer tranquilidad con controles y visibilidad para garantizar la conformidad verificada del sector con normas de cumplimiento internacionales
-- Proteger su información y reducir el riesgo de la pérdida de datos
-- Obtener software de escritorio y dispositivos actuales y mantenerlos actualizados, a la vez que se reducen los riesgos de seguridad y se maximiza la eficiencia de TI
-
-Para obtener más información, vea [Transformación Digital con Microsoft 365](http://transform.microsoft.com). 
 
 Si ya tiene Office 365 ProPlus implementado, consulte los [criterios de salida](office365proplus-exit-criteria.md) de esta fase para asegurarse de que cumple con las condiciones obligatorias para Microsoft 365 Enterprise.
 
@@ -87,7 +69,7 @@ Si su organización usa Configuration Manager, le recomendamos actualizar a la r
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Aprenda cómo los expertos en Microsoft están[implementando y gestionando las actualizaciones de Office 365 ProPlus](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
+Aprenda cómo los expertos en Microsoft están[implementando y gestionando las actualizaciones de Office 365 ProPlus](https://www.microsoft.com/es-ES/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Cómo Contoso hizo Microsoft 365 Enterprise
 
