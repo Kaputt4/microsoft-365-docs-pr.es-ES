@@ -19,19 +19,9 @@
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: Facturas y pagos
       items:
-        - name: Comprender mi factura
-          href: /microsoft-store/billing-understand-your-invoice-msfb?context=/microsoft-365/commerce/context/context-commerce
-        - name: Administrar los métodos de pago
-          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
-        - name: Administración de perfiles de facturación
-          href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
-        - name: Historial de pedidos
-          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-    - name: Cuenta de facturación
-      items:
         - name: Administrar información de la cuenta de facturación
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
         - name: Asociar un inquilino con mi cuenta de facturación
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: Administrar relaciones con mis socios
-      href: /microsoft-store/work-with-partner-microsoft-store-business?context=/microsoft-365/commerce/context/context-commerce
+      href: manage-partners.md
