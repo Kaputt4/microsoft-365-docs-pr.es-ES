@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre cómo configurar Microsoft 365 Business.
-ms.openlocfilehash: ac9c8b828ff131a15bf057fa8bdc0bf56dd00987
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 1efb7379930f639cf10875cf5aa6731001bb41c8
+ms.sourcegitcommit: 2e5ae52bb641ee1f72c077260b5d0f35622935fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772575"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37005206"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Configurar Microsoft 365 empresa en el Asistente de configuración
 
@@ -57,7 +57,7 @@ Al adquirir Microsoft 365 Business, tiene la opción de usar un dominio de su pr
     
 4. Siga los pasos del Asistente para [crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) que compruebe que es el propietario del dominio. Si conoce el host del dominio, consulte también las [instrucciones específicas del host](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
-    Si su proveedor de hospedaje es GoDaddy, el proceso es sencillo y se le pedirá automáticamente que inicie sesión y deje que Microsoft se autentique en su nombre:
+    Si su proveedor de hospedaje es GoDaddy, u otro host habilitado con [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), el proceso es sencillo y se le pedirá automáticamente que inicie sesión y deje que Microsoft autentique en su nombre:
 
     ![En la página de confirmación de acceso a GoDaddy, seleccione autorizar.](media/godaddyauth.png)
 
@@ -77,7 +77,7 @@ Cualquier usuario que agregue en el asistente obtiene automáticamente una licen
 
 4. Omita la migración de mensajes de correo electrónico y elija **Siguiente** en la página **Migrar los mensajes de correo electrónico**. 
 
-    Si va a cambiar de otro proveedor de correo electrónico y desea copiar los datos más adelante, puede migrar el [correo electrónico y los contactos a Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
+    Si va a cambiar de otro proveedor de correo electrónico y desea copiar los datos más adelante, puede [migrar el correo electrónico y los contactos a Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 
 ### <a name="connect-your-domain"></a>Conectar el dominio
@@ -89,7 +89,8 @@ Para configurar servicios, es necesario actualizar algunos registros en su regis
   
 1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no es así, [cambie los servidores DNS para configurar Office 365 con cualquier registrador de dominios](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
 
-    - Si tiene registros DNS existentes, por ejemplo, un sitio web existente, querrá administrar sus propios registros DNS para asegurarse de que los servicios existentes permanecen conectados. Consulte [conceptos básicos de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) para obtener más información.
+    - Si tiene registros DNS existentes, por ejemplo, un sitio web existente, pero el host DNS está habilitado para la [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), elija **agregar registros**. 
+    - Si tiene registros DNS con otros hosts DNS (no habilitados para la conexión de dominio), querrá administrar sus propios registros DNS para asegurarse de que los servicios existentes permanecen conectados. Consulte [conceptos básicos de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) para obtener más información.
 
         ![Conecte la página del dominio con Administraré mis propios registros DNS.](media/connectyourdomainpage.png)
 
@@ -103,15 +104,15 @@ Las directivas que configure en el asistente se aplican automáticamente a un [g
 
     ![Captura de pantalla de la página proteger archivos de trabajo en dispositivos móviles.](media/protectworkfilesondevices.png)
 
-     - Expanda **proteger archivos de trabajo cuando se pierdan o se roben dispositivos** para mostrar los [valores](protect-work-files-on-lost-or-stolen-device.md)predeterminados:
+     - Expanda **proteger archivos de trabajo cuando se pierdan o se roben dispositivos** para mostrar los [valores predeterminados](protect-work-files-on-lost-or-stolen-device.md):
 
         ![Captura de pantalla de los valores predeterminados para proteger los archivos en dispositivos perdidos.](media/protectworkfilesondevicesdefault.png)
 
-    - Seleccione **administrar la forma en que los usuarios obtienen acceso a los archivos de Office en dispositivos móviles** y expándalo para mostrar los [valores](manage-user-access-on-mobile-devices.md)predeterminados. Le recomendamos que acepte los valores predeterminados durante la configuración para crear directivas de aplicación para Android, iOS y Windows 10 que se aplican a todos los usuarios. Podrá crear más directivas cuando se complete la configuración.
+    - Seleccione **administrar la forma en que los usuarios obtienen acceso a los archivos de Office en dispositivos móviles** y expándalo para mostrar los [valores predeterminados](manage-user-access-on-mobile-devices.md). Le recomendamos que acepte los valores predeterminados durante la configuración para crear directivas de aplicación para Android, iOS y Windows 10 que se aplican a todos los usuarios. Podrá crear más directivas cuando se complete la configuración.
 
         ![Captura de pantalla de la configuración de protección para los archivos de Office en dispositivos móviles.](media/useraccessonmobile.png)
 
-2. El último paso sobre la protección de datos y dispositivos le permite configurar directivas para proteger los dispositivos Windows 10. Esta configuración se aplica automáticamente cuando Windows 10 de un usuario se conecta a su organización. Puede ampliar la **seguridad de los dispositivos Windows 10** para ver y modificar los [valores](secure-windows-10-devices.md)predeterminados.
+2. El último paso sobre la protección de datos y dispositivos le permite configurar directivas para proteger los dispositivos Windows 10. Esta configuración se aplica automáticamente cuando Windows 10 de un usuario se conecta a su organización. Puede ampliar la **seguridad de los dispositivos Windows 10** para ver y modificar los [valores predeterminados](secure-windows-10-devices.md).
 3. También puede optar por [instalar automáticamente Office](install-office-on-windows-10-during-setup.md) en dispositivos Windows 10.
 
     ![Captura de pantalla de la página establecer configuración de dispositivo de Windows 10.](media/setwin10config.png)

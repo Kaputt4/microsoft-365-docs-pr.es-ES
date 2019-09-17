@@ -83,10 +83,10 @@ Implementó Protección contra vulnerabilidades de seguridad de Windows Defender
 Si es necesario, el [paso 5](../windows10-enable-security-features.md#windows10-sec-eg) puede ayudarle con este requisito.
 
 <a name="crit-windows10-step5c"></a>
-### <a name="required-you-are-using-windows-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Necesario: Usa Protección contra amenazas avanzada de Windows Defender (solo Microsoft 365 Enterprise E5)
+### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Necesario: Usa Protección contra amenazas avanzada de Microsoft Defender (solo Microsoft 365 Enterprise E5)
 
-Implementó Protección contra amenazas avanzada de Windows Defender (ATP) para detectar, investigar y responder a las amenazas avanzadas contra su red y los dispositivos que ejecutan Windows 10 Enterprise. 
+Implementó Protección contra amenazas avanzada de Microsoft Defender (ATP) para detectar, investigar y responder a las amenazas avanzadas contra su red y los dispositivos que ejecutan Windows 10 Enterprise. 
 
-Opcionalmente, ha integrado Windows Defender ATP con otras herramientas para ampliar sus capacidades.
+Opcionalmente, ha integrado Microsoft Defender ATP con otras herramientas para ampliar sus capacidades.
 
 Si es necesario, el [paso 5](../windows10-enable-security-features.md#windows10-sec-atp) puede ayudarle con este requisito.
