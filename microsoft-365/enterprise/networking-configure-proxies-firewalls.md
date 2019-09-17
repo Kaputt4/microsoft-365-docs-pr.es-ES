@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información y configure los exploradores web y los dispositivos perimetrales para la omisión de tráfico a ubicaciones de confianza de Office 365.
-ms.openlocfilehash: 416c93fd3f44e1cd9edba52a9d6117ac6d133760
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: fbc4956525e2661ce791c6ec81b449dba685d0f0
+ms.sourcegitcommit: 1ca1062ccddd7a46fa0bb4af6ee5f0eb141e7280
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982791"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "36999044"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Paso 4: Configurar la omisión de tráfico
 
@@ -44,7 +44,7 @@ Microsoft le recomienda:
 - 
 - Analizar los dispositivos perimetrales para determinar el procesamiento duplicado y configurarlos para reenviar el tráfico a puntos de conexión de la categoría Optimizar y Permitir sin procesamiento. Esto se conoce como omisión de tráfico. 
 
-Los dispositivos perimetrales incluyen firewalls, inspección e interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos. Para configurar y actualizar las configuraciones de los dispositivos perimetrales, puede usar un script o una llamada REST para consumir una lista estructurada de puntos de conexión del servicio web Puntos de conexión de Office 365. Para obtener más información, vea [Dirección IP de Office 365 y servicio web de URL](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
+Los dispositivos perimetrales incluyen firewalls, inspección e interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos. Para configurar y actualizar las configuraciones de los dispositivos perimetrales, puede usar un script o una llamada REST para consumir una lista estructurada de puntos de conexión del servicio web Puntos de conexión de Office 365. Para obtener más información, vea [Dirección IP de Office 365 y servicio web de URL](https://docs.microsoft.com/es-ES/office365/enterprise/office-365-ip-web-service#exporting-a-proxy-pac-file).
 
 Tenga en cuenta que solo se omite el procesamiento de seguridad de red y proxy normal para el tráfico a los puntos de conexión de las categorías Optimizar y Permitir de Microsoft 365. El resto del tráfico general de Internet se dirige a través de un proxy y se somete al procesamiento de seguridad de red existente.
 
