@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2559734241a8b30ec43b26fb0b096faba18138b9
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 30d6e1566fda4dbc84800bbd4359a689f858f9e4
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778155"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982701"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr"></a>Solicitudes del interesado de Office 365 para el RGPD
 
@@ -97,7 +97,7 @@ En la tabla siguiente se enumeran las aplicaciones de Office 365 que usan los us
 | ![Icono de Excel](media/o365-excel-64x64.png) <br> Excel | ![Icono de Skype Empresarial](media/o365-skypeforbusiness-64x64.png) <br> Skype Empresarial |
 | ![Icono de Office Lens](media/o365-lens-64x64.png) <br> Office Lens | ![Icono de tareas](media/O365-DSR-Doc-Final_image8.png) <br> Tareas |
 | ![Icono de OneDrive](media/o365-OneDrive-64x64.png) <br> OneDrive para la Empresa |![Icono de Teams](media/o365-teams-64x64.png) <br> Teams |
-| ![Icono de OneNote](media/o365-onenote-64x64.png) <br> OneNote| ![Icono de tarea pendiente](media/o365-todo-64x64.png) <br> Tarea pendiente |
+| ![Icono de OneNote](media/o365-onenote-64x64.png) <br> OneNote| ![Icono Acciones que realizar](media/o365-todo-64x64.png) <br> Acciones que realizar |
 | ![Icono de Outlook](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![Icono de vídeo](media/O365-DSR-Doc-Final_image14.png) <br> Vídeo |
 | ![Icono Personas](media/O365-DSR-Doc-Final_image15.png) <br> Contactos | ![Icono de Visio](media/o365-visio-64x64.png) <br> Visio |
 | ![Icono de PowerPoint](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Icono de Word](media/o365-word-64x64.png) <br> Word
@@ -159,7 +159,7 @@ La tabla siguiente incluye algunas condiciones que puede usar para restringir el
 | :--- | :--- |:--- |
 |**Condición**|**Descripción** |**Ejemplo de valores de condición**|
 | Tipo de archivo | La extensión de un documento o archivo. Use esta condición para buscar documentos de Office y archivos creados por aplicaciones de Office 365. Use esta condición al buscar documentos en sitios de SharePoint Online y en cuentas de OneDrive para la empresa.<br/>La propiedad correspondiente del documento es el tipo de archivo. <br/>Para obtener una lista completa de extensiones de archivo que puede buscar, consulte Extensiones de nombre de archivo y tipos de archivos analizados predeterminados en SharePoint(https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&bull;&nbsp;&nbsp;csv: busca archivos con valores separados por coma (CSV); Los archivos de Excel se pueden guardar en formato CSV y un archivo CSV puede importarse fácilmente a Excel<br><br>&bull;&nbsp;&nbsp;docx: busca archivos de Word <br><br>&bull;&nbsp;&nbsp;mpp: busca archivos de Project <br/><br>&bull;&nbsp;&nbsp;one: busca archivos de OneNote <br><br>&bull;&nbsp;&nbsp;pdf: busca archivos guardados en formato PDF <br><br>&bull;&nbsp;&nbsp;pptx: busca archivos de PowerPoint <br><br>&bull;&nbsp;&nbsp;xlxs: busca archivos de Excel <br><br>&bull;&nbsp;&nbsp;vsd: busca archivos de Visio <br><br>&bull;&nbsp;&nbsp;wmv: busca archivos de vídeo de Windows Media <br>|
-| Tipo de mensaje | El tipo de mensaje de correo electrónico a buscar. Use esta condición para buscar en los buzones contactos (Personas), reuniones (Calendario) o conversaciones de Skype empresarial. La propiedad de correo electrónico correspondiente es *kind*.|&bull;&nbsp;&nbsp;*contactos: busca en la lista de Mis contactos (Personas) de un buzón <br><br>&bull;&nbsp;&nbsp;* correo electrónico: busca mensajes de correo electrónico <br><br>im: realiza búsquedas en las conversaciones de Skype Empresarial<br><br>&bull;&nbsp;&nbsp;* reuniones: busca citas y solicitudes de reunión (Calendario). <br><br>&bull;&nbsp;&nbsp;*tareas: busca en la lista de Mis tareas (Tareas); usar este valor también devolverá las tareas creadas en Microsoft To-Do.<br>|
+| Tipo de mensaje | El tipo de mensaje de correo electrónico a buscar. Use esta condición para buscar en los buzones contactos (Personas), reuniones (Calendario) o conversaciones de Skype empresarial. La propiedad de correo electrónico correspondiente es *kind*.|&bull;&nbsp;&nbsp;*contactos: busca en la lista de Mis contactos (Personas) de un buzón <br><br>&bull;&nbsp;&nbsp;* correo electrónico: busca mensajes de correo electrónico <br><br>&bull;&nbsp;&nbsp;*im: realiza búsquedas en las conversaciones de Skype Empresarial<br><br>&bull;&nbsp;&nbsp;* reuniones: busca citas y solicitudes de reunión (Calendario). <br><br>&bull;&nbsp;&nbsp;*tareas: busca en la lista de Mis tareas (Tareas); usar este valor también devolverá las tareas creadas en Microsoft To-Do.<br>|
 | Etiqueta de cumplimiento |La etiqueta asignada a un mensaje de correo electrónico o un documento. Las etiquetas se usan para clasificar correos electrónicos y documentos para el gobierno de datos y para aplicar reglas de retención basadas en la clasificación definida por la etiqueta. Use esta condición para buscar elementos que tengan una etiqueta asignada automática o manualmente.<br/>Esta condición es útil para las investigaciones de DSR porque es posible que su organización utilice etiquetas para clasificar contenido relacionado con la privacidad de datos o que contenga datos personales o información confidencial. Consulte la sección "Usar la búsqueda de contenido para encontrar todo el contenido con una etiqueta específica" en [Información general sobre etiquetas en Office 365](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30).|compliancetag="datos personales"|
 ||||
 
@@ -215,7 +215,7 @@ Este ejemplo devuelve mensajes de correo electrónico que contienen el número d
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Trabajar con elementos parcialmente indizados en la búsqueda de contenido
 
-Los elementos indexados parcialmente (también denominados elementos sin indexar*) son elementos del buzón de Exchange Online y documentos en sitios de SharePoint Online y OneDrive para la empresa que, por algún motivo, no se indexaron para búsquedas, lo que significa que no aparecen en la Búsqueda de contenido. La mayoría de los mensajes de correo electrónico y documentos del sitio se indexan correctamente porque se encuentran dentro de los límites de indexación de Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??). Las razones por las que los mensajes de correo electrónico o los archivos no están indexados para la búsqueda son:
+Los elementos indexados parcialmente (también denominados *elementos sin indexar*) son elementos del buzón de Exchange Online y documentos en sitios de SharePoint Online y OneDrive para la empresa que, por algún motivo, no se indexaron para búsquedas, lo que significa que no aparecen en la Búsqueda de contenido. La mayoría de los mensajes de correo electrónico y documentos del sitio se indexan correctamente porque se encuentran dentro de los [límites de indexación de Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??). Las razones por las que los mensajes de correo electrónico o los archivos no están indexados para la búsqueda son:
 
 - El tipo de archivo [no se admite o está deshabilitado para la indexación](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??). El tipo de archivo sí se admite para indexación, pero se produce un error de indexación en un archivo específico.
 - Los mensajes de correo electrónico tienen un archivo adjunto sin un identificador válido, como un archivo de imagen (esta es la causa más común de que un elemento de correo electrónico esté parcialmente indizado).
@@ -247,7 +247,7 @@ En lugar de exportar todos los elementos de buzón parcialmente indexados de una
 
 ### <a name="next-steps"></a>Siguientes pasos
 
-Cuando encuentre los datos personales relevantes para el DSR, asegúrese de conservar la búsqueda de contenido específica que utilizó para encontrar los datos. Es probable que vuelva a usar esta búsqueda para completar otros pasos en el proceso de respuesta al DSR, como [obtener una copia del mismo](#providing-a-copy-of-personal-data), [exportarlo](#exporting-personal-data) o eliminarlo de forma permanente](#deleting-personal-data).
+Cuando encuentre los datos personales relevantes para el DSR, asegúrese de conservar la búsqueda de contenido específica que utilizó para encontrar los datos. Es probable que vuelva a usar esta búsqueda para completar otros pasos en el proceso de respuesta al DSR, como [obtener una copia del mismo](#providing-a-copy-of-personal-data), [exportarlo](#exporting-personal-data) o [eliminarlo de forma permanente](#deleting-personal-data).
 
 ### <a name="additional-considerations-for-selected-applications"></a>Consideraciones adicionales para aplicaciones seleccionadas
 
@@ -256,7 +256,7 @@ Las siguientes secciones describen factores que debe tener en cuenta a la hora d
 - [Office Lens](#office-lens)
 - [Configuración de la experiencia de OneDrive para la Empresa y SharePoint](#onedrive-for-business-and-sharepoint-online-experience-settings)
 - [Microsoft Teams para educación](#microsoft-teams-for-education)
-- [Microsoft To-Do](#microsoft-to-do)
+- [Microsoft To Do](#microsoft-to-do)
 - [Skype Empresarial](#skype-for-business)
 
 #### <a name="office-lens"></a>Office Lens
@@ -295,7 +295,7 @@ Las propiedades con origen en Azure Active Directory no se pueden cambiar en Sha
 
 ###### <a name="admins"></a>Administradores
 
-Un administrador puede rectificar y tener acceso a las propiedades de perfil en el centro de administración de SharePoint. En el Centro de administración de SharePoint**, haga clic en la pestaña **perfiles de usuario**. Luego, haga clic en **Administrar perfiles de usuario**, escriba un nombre de usuario y, después, haga clic en buscar. El administrador puede hacer clic con el botón derecho en cualquier usuario y seleccionar **Editar mi perfil**. Las propiedades con origen en Azure Active Directory no se pueden cambiar en SharePoint Online.
+Un administrador puede rectificar y tener acceso a las propiedades de perfil en el centro de administración de SharePoint. En el **Centro de administración de SharePoint**, haga clic en la pestaña **perfiles de usuario**. Luego, haga clic en **Administrar perfiles de usuario**, escriba un nombre de usuario y, después, haga clic en buscar. El administrador puede hacer clic con el botón derecho en cualquier usuario y seleccionar **Editar mi perfil**. Las propiedades con origen en Azure Active Directory no se pueden cambiar en SharePoint Online.
 
 Un administrador puede exportar todas las propiedades de perfil de usuario de un usuario mediante el cmdlet **Export-SPOUserProfile** de SharePoint Online PowerShell. Vea [Export-SPOUserProfile](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserprofile?view=sharepoint-ps).
 
@@ -362,9 +362,9 @@ Aquí tiene las instrucciones específicas para buscar un bloc de notas de clase
    ```
 6.  Vuelva a ejecutar la búsqueda de contenido. Los resultados de búsqueda deben incluir todos los archivos de OneNote del Bloc de notas de clase del equipo de clase.
 
-#### <a name="microsoft-to-do"></a>Microsoft To-Do
+#### <a name="microsoft-to-do"></a>Microsoft To Do
 
-Las tareas (llamadas *tareas* pendientes, que se guardan en *listas de tareas pendientes*) en Microsoft To-Do se guardan como tareas en un buzón de Exchange Online del usuario. Eso significa que se puede usar la herramienta Búsqueda de contenido para buscar, tener acceso, eliminar y exportar tareas. Para obtener más información, vea [Configurar Microsoft To-Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620).
+Las tareas (llamadas *cosas que hacer*, que se guardan en las *listas de cosas que hacer*) en Microsoft To Do se salvan como tareas en el buzón de correo electrónico del usuario de Exchange Online. Esto significa que puede usar la herramienta de búsqueda de contenido para localizar, acceder, borrar y exportar cosas que hacer. Para obtener más información, consulte [Configurar Microsoft To Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620).
 
 #### <a name="skype-for-business"></a>Skype Empresarial
 
@@ -386,7 +386,7 @@ Al proporcionar una copia al interesado, deberá quitar o censurar información 
 Hay dos formas de usar la herramienta de búsqueda de contenido para obtener una copia de un documento o elemento de buzón que haya encontrado después de ejecutar una búsqueda.
 
 - Consulte una vista previa de los resultados de búsqueda y descargue una copia del documento o elemento. Se trata de un buen método para descargar algunos elementos o archivos.
-- Exporte los resultados de búsqueda y, después, descargue una copia de todos los elementos devueltos por la búsqueda. Este método es más complejo, pero es una forma útil de descargar una gran cantidad de elementos que responden al DSR. Cuando exporta los resultados de búsqueda también recibe informes útiles. Puede usar estos informes para obtener más información sobre cada elemento. El informe **Results.csv** es útil porque contiene una gran cantidad de información acerca de los elementos exportados, como la ubicación exacta del elemento (por ejemplo, el buzón para los mensajes de correo electrónico o la dirección URL de los documentos o listas en SharePoint Online y OneDrive para la empresa). Esta información le ayuda a identificar al propietario del elemento, en caso de que tenga que ponerse en contacto con él durante el proceso de investigación del DSR. Para obtener más información sobre los informes que se incluyen al exportar resultados de búsqueda, vea Exportar un informe de búsqueda de contenido](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9).
+- Exporte los resultados de búsqueda y, después, descargue una copia de todos los elementos devueltos por la búsqueda. Este método es más complejo, pero es una forma útil de descargar una gran cantidad de elementos que responden al DSR. Cuando exporta los resultados de búsqueda también recibe informes útiles. Puede usar estos informes para obtener más información sobre cada elemento. El informe **Results.csv** es útil porque contiene una gran cantidad de información acerca de los elementos exportados, como la ubicación exacta del elemento (por ejemplo, el buzón para los mensajes de correo electrónico o la dirección URL de los documentos o listas en SharePoint Online y OneDrive para la empresa). Esta información le ayuda a identificar al propietario del elemento, en caso de que tenga que ponerse en contacto con él durante el proceso de investigación del DSR. Para obtener más información sobre los informes que se incluyen al exportar resultados de búsqueda, vea [Exportar un informe de búsqueda de contenido](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9).
 
 #### <a name="preview-and-download-items"></a>Vista previa y descarga de elementos
 
@@ -430,8 +430,8 @@ Para exportar y descargar elementos:
 3. Rellene las secciones en la página **Exportar resultados**. Asegúrese de usar la barra de desplazamiento para ver todas las opciones de exportación.
 4. Vuelva a la página de búsqueda de contenido en el centro de cumplimiento y seguridad y haga clic en la pestaña **Exportar**.
 5. Haga clic en **Actualizar** para actualizar la página.
-6. En la columna **Nombre**, haga clic en el trabajo de exportación que creó. El nombre de la tarea de exportación es el nombre de la búsqueda de contenido adjunta con \_Exportar**.
-7. En la página de Exportar, bajo **Exportar llave**, haga clic en Copiar al portapapeles**. Usará esta clave para descargar los resultados de la búsqueda en el paso 10.
+6. En la columna **Nombre**, haga clic en el trabajo de exportación que creó. El nombre de la tarea de exportación es el nombre de la búsqueda de contenido adjunta con **\_Exportar**.
+7. En la página de Exportar, bajo **Exportar llave**, **haga clic en Copiar al portapapeles**. Usará esta clave para descargar los resultados de la búsqueda en el paso 10.
 8. En la parte superior de la página, haga clic en ![](media/o365-dsr_image21.png) **Descargar resultados**.
 9. Si se le pide que instale la **Herramienta de exportación de eDiscovery de Microsoft Office 365**, haga clic en **Instalar**.
 10. En la **Herramienta de exportación de eDiscovery **, pegue la clave de exportación que ha copiado en el paso 7 en el cuadro correspondiente.
@@ -456,11 +456,11 @@ Para algunas solicitudes de interesado de exportación, le recomendamos permitir
 
 ## <a name="deleting-personal-data"></a>Eliminar datos personales
 
-El “derecho a la eliminación” de datos personales de cliente de una organización es una protección clave en el RGPD. Los datos personales que se eliminan son, entre otros, documentos o archivos, o bien datos específicos un documento o archivo (lo que sería una acción y proceso como aquellos descritos en la sección Rectificar de esta guía).
+El “derecho a la eliminación” de datos personales de los datos de clientes de una organización es una protección clave en el RGPD. La eliminación de datos incluye documentos o archivos completos, o bien datos específicos un documento o archivo (lo que sería una acción y proceso como aquellos descritos en la sección Rectificar de esta guía).
 
 Cuando investiga o se prepara para eliminar datos personales en respuesta a una solicitud de derechos del interesado, es importante tener en cuenta varios factores para comprender cómo funciona la eliminación (y retención) de datos en Office 365.
 
-- **Eliminación temporal y eliminación definitiva: en servicios de Office 365 como Exchange Online, SharePoint Online y OneDrive para la Empresa existe el concepto de *eliminación temporal* y *eliminación definitiva*, relacionado con la recuperación de un elemento eliminado (normalmente durante un tiempo limitado) antes de que se elimine permanentemente de la nube de Microsoft sin posibilidad de recuperación. En este contexto, se puede recuperar un elemento tras su eliminación temporal por parte de un usuario o administrador durante un período de tiempo antes de ser eliminado permanentemente. Cuando un elemento ha sido eliminado permanentemente, se marca para su eliminación permanente y se purga cuando lo procesa el servicio de Office 365 correspondiente. Aquí se indica cómo se desarrolla la eliminación temporal y la eliminación definitiva para elementos en buzones de correo y sitios (independientemente de si el elemento es eliminado por el propietario de los datos o por un administrador):
+- **Eliminación temporal y eliminación definitiva**: en servicios de Office 365 como Exchange Online, SharePoint Online y OneDrive para la Empresa existe el concepto de *eliminación temporal* y *eliminación definitiva*, relacionado con la recuperación de un elemento eliminado (normalmente durante un tiempo limitado) antes de que se elimine permanentemente de la nube de Microsoft sin posibilidad de recuperación. En este contexto, se puede recuperar un elemento tras su eliminación temporal por parte de un usuario o administrador durante un período de tiempo antes de ser eliminado permanentemente. Cuando un elemento ha sido eliminado permanentemente, se marca para su eliminación permanente y se purga cuando lo procesa el servicio de Office 365 correspondiente. Aquí se indica cómo se desarrolla la eliminación temporal y la eliminación definitiva para elementos en buzones de correo y sitios (independientemente de si el elemento es eliminado por el propietario de los datos o por un administrador):
 
     - **Buzones de correo:** la eliminación temporal de un elemento se realiza cuando se elimina de la carpeta Elementos Eliminados o cuando un usuario elimina un elemento presionando **Mayús + Supr**. Tras la eliminación temporal de un elemento, este se mueve a la carpeta Elementos Recuperables del buzón de correo. En este momento, el elemento puede ser recuperado por el usuario antes de que expire el período de retención de elementos eliminados (en Office 365, el período de retención de elementos eliminados es de 14 días, pero un administrador puede extenderlo hasta 30 días). Cuando expira el período de retención, el elemento es eliminado permanentemente y se mueve a una carpeta oculta (denominada carpeta *Purgas*). El elemento se eliminará permanentemente (purgado) de Office 365 la próxima vez que se procese el buzón de correo (los buzones se procesan una vez cada 7 días).
 
@@ -469,7 +469,7 @@ Cuando investiga o se prepara para eliminar datos personales en respuesta a una 
 > [!NOTE]
 > Comprender las acciones que dan lugar a la eliminación temporal o definitiva de este debate le ayudará a determinar cómo eliminar datos de forma que reúna los requisitos RGPD y responda a los requisitos de RGPD al responder a una solicitud de eliminación.
 
-- **Directivas y suspensiones legales: Office 365 permite dejar «en espera» buzones y sitios. Si un buzón o un sitio está en espera, esto significa que no se elimina nada de forma permanente hasta que finalice el período de espera del elemento o hasta que se elimine la espera. Esto es importante en el contexto de eliminar el contenido de un cliente en respuesta a un DSR: si un elemento se elimina de forma permanente de una ubicación en espera, el elemento no se eliminará permanentemente de Office 365. Por lo tanto, es posible que un administrador de TI pueda recuperarlo. Si su organización tiene un requisito o directiva según la cual los datos se eliminan de forma permanente y no se pueden recuperar en Office 365 como respuesta a un DSR, entonces debe quitar la espera de un buzón o un sitio para eliminar de forma permanente los datos en Office 365. Es probable que las directrices de respuesta a los DSR de su organización incluyan un proceso para determinar qué tiene prioridad: una solicitud de eliminación específica de un DSR o una situación de espera por razones legales. Usted puede quitar una espera para eliminar elementos específicos y, tras eliminarlos, volver a implementarla.
+- **Directivas y suspensiones legales:** Office 365 permite dejar «en espera» buzones y sitios. Si un buzón o un sitio está en espera, esto significa que no se elimina nada de forma permanente hasta que finalice el período de espera del elemento o hasta que se elimine la espera. Esto es importante en el contexto de eliminar el contenido de un cliente en respuesta a un DSR: si un elemento se elimina de forma permanente de una ubicación en espera, el elemento no se eliminará permanentemente de Office 365. Por lo tanto, es posible que un administrador de TI pueda recuperarlo. Si su organización tiene un requisito o directiva según la cual los datos se eliminan de forma permanente y no se pueden recuperar en Office 365 como respuesta a un DSR, entonces debe quitar la espera de un buzón o un sitio para eliminar de forma permanente los datos en Office 365. Es probable que las directrices de respuesta a los DSR de su organización incluyan un proceso para determinar qué tiene prioridad: una solicitud de eliminación específica de un DSR o una situación de espera por razones legales. Usted puede quitar una espera para eliminar elementos específicos y, tras eliminarlos, volver a implementarla.
 
 ### <a name="deleting-documents-in-sharepoint-online-and-onedrive-for-business"></a>Eliminar documentos en SharePoint Online y OneDrive para la Empresa
 
@@ -894,7 +894,7 @@ Los usuarios pueden usar Flow para realizar tareas relacionadas con los datos co
 
 Además, los usuarios pueden usar Flow para copiar o cargar archivos de Office 365 a un servicio externo, como Dropbox. En estos casos, debería enviarse una solicitud de interesado relacionada con los datos de un servicio externo, que trata los datos en este tipo de escenario.
 
-Si un administrador puede recibir una solicitud DSR, puede autoañadirse como propietario de una corriente de usuario. Esto permite a un administrador ejecutar funciones como exportar definiciones de flujo, ejecutar historiales y realizar reasignaciones de permisos de flujo. Vea Administrar flujos en el centro de administración](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/).
+Si un administrador puede recibir una solicitud DSR, puede autoañadirse como propietario de una corriente de usuario. Esto permite a un administrador ejecutar funciones como exportar definiciones de flujo, ejecutar historiales y realizar reasignaciones de permisos de flujo. Vea [Administrar flujos en el centro de administración](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/).
 
 La capacidad de un administrador de añadirse a sí mismo como propietario de un Flow requiere una cuenta con los siguientes permisos:
 
@@ -946,7 +946,7 @@ Un administrador puede exportar la definición y ejecutar un historial de flujos
 
 #### <a name="connections-and-custom-connectors-in-flow"></a>Conexiones y conectores personalizados en Flow
 
-Las conexiones requieren que los usuarios proporcionen credenciales para conectarse a las API, las aplicaciones de SaaS y los sistemas de desarrollo personalizado. Estas conexiones pertenecen al usuario que estableció la conexión y se pueden [administrar en el producto. Después de reasignar los flujos, un administrador puede usar los cmdlets de PowerShell para enumerar y eliminar estas conexiones como parte de la eliminación de datos de usuario.
+Las conexiones requieren que los usuarios proporcionen credenciales para conectarse a las API, las aplicaciones de SaaS y los sistemas de desarrollo personalizado. Estas conexiones pertenecen al usuario que estableció la conexión y se pueden [administrar](https://docs.microsoft.com/flow/add-manage-connections) en el producto. Después de reasignar los flujos, un administrador puede usar los cmdlets de PowerShell para enumerar y eliminar estas conexiones como parte de la eliminación de datos de usuario.
 
 Los conectores personalizados permiten a las organizaciones ampliar las capacidades del flujo conectándose a los equipos en los que no hay disponible ningún conector listo para usar. El autor de un conector personalizado puede [compartir](https://docs.microsoft.com/flow/register-custom-api) el conector con otros usuarios de la organización. Después de recibir una solicitud para eliminar un DSR, un administrador debe considerar la posibilidad de reasignar la propiedad de estos conectores para evitar interrupciones en la empresa. Para acelerar este proceso, un administrador puede usar los cmdlets de PowerShell para listar, reasignar o eliminar conectores personalizados.
 
@@ -1023,7 +1023,7 @@ Las secciones siguientes explican cómo usar la función integrada en la aplicac
 
 #### <a name="discover"></a>Detectar
 
-Los planes de Planner están asociados a un grupo de Office 365 y los archivos de los grupos de Office 365 se almacenan en un sitio asociado de SharePoint Online para el grupo. Esto significa que puede usar la Búsqueda de contenido para encontrar archivos de Planner buscando en el sitio para el grupo de Office 365. Para ello, debe tener la dirección URL del grupo de Office 365. Consulte Búsqueda de grupos de Microsoft Teams y Office 365](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) en el tema de ayuda «Búsqueda de contenido en Office 365». Allí encontrará sugerencias sobre cómo obtener información de los grupos de Office 365 y buscar archivos de Planner en el sitio correspondiente de SharePoint Online.
+Los planes de Planner están asociados a un grupo de Office 365 y los archivos de los grupos de Office 365 se almacenan en un sitio asociado de SharePoint Online para el grupo. Esto significa que puede usar la Búsqueda de contenido para encontrar archivos de Planner buscando en el sitio para el grupo de Office 365. Para ello, debe tener la dirección URL del grupo de Office 365. Consulte [Búsqueda de grupos de Microsoft Teams y Office 365](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) en el tema de ayuda «Búsqueda de contenido en Office 365». Allí encontrará sugerencias sobre cómo obtener información de los grupos de Office 365 y buscar archivos de Planner en el sitio correspondiente de SharePoint Online.
 
 #### <a name="access"></a>Access
 
@@ -1046,7 +1046,7 @@ Puede buscar contenido en las distintas áreas de trabajo de Power BI, tales com
 
 #### <a name="access"></a>Access
 
-Puede imprimir paneles, informes y objetos visuales de los informes de Power BI para crear una copia física. No es posible imprimir informes completos y solo puede imprimir una página a la vez. Para ello, vaya a un informe, utilice el campo de búsqueda para buscar datos específicos y, a continuación, imprima esa página. Vea Imprimir desde el servicio Power BI](https://docs.microsoft.com/power-bi/service-print).
+Puede imprimir paneles, informes y objetos visuales de los informes de Power BI para crear una copia física. No es posible imprimir informes completos y solo puede imprimir una página a la vez. Para ello, vaya a un informe, utilice el campo de búsqueda para buscar datos específicos y, a continuación, imprima esa página. Vea [Imprimir desde el servicio Power BI](https://docs.microsoft.com/power-bi/service-print).
 
 #### <a name="delete"></a>Eliminar
 
@@ -1079,7 +1079,7 @@ Para facilitar una solicitud de DSR con PowerApps, puede aprovechar las operacio
 
 Para obtener más información sobre cómo encontrar datos personales, consulte [Detectar datos personales de PowerApps](https://go.microsoft.com/fwlink/?linkid=871880).
 
-El servicio PowerApps también incluye Common Data Service para aplicaciones, que permite a los usuarios almacenar datos en entidades tanto estándar como personalizadas dentro de una base de datos Common Data Service (servicios de datos comunes). Puede ver los datos almacenados en estas entidades desde el portal de PowerApps Maker y usar las funciones de Búsqueda avanzada](https://web.powerapps.com) dentro del producto para buscar datos específicos en la entidad. Para saber cómo descubrir datos personales en el Common Data Service, consulte [Descubrir datos personales en Common Data Service](https://go.microsoft.com/fwlink/?linkid=871881).
+El servicio PowerApps también incluye Common Data Service para aplicaciones, que permite a los usuarios almacenar datos en entidades tanto estándar como personalizadas dentro de una base de datos Common Data Service (servicios de datos comunes). Puede ver los datos almacenados en estas entidades desde el [portal de PowerApps Maker](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search) y usar las funciones de [Búsqueda avanzada](https://web.powerapps.com) dentro del producto para buscar datos específicos en la entidad. Para saber cómo descubrir datos personales en el Common Data Service, consulte [Descubrir datos personales en Common Data Service](https://go.microsoft.com/fwlink/?linkid=871881).
 
 #### <a name="access"></a>Access
 
@@ -1185,7 +1185,7 @@ En las secciones siguientes se explica cómo usar la funcionalidad integrada en 
 
 #### <a name="discover"></a>Detectar
 
-Para descubrir contenido que se ha generado o cargado en Stream que pueda ser relevante para un DSR, un administrador de Stream puede ejecutar un informe de usuario para determinar los vídeos, las descripciones de vídeo, los grupos, los canales o los comentarios que el usuario de Stream ha podido cargar, crear o publicar. Para obtener instrucciones sobre cómo crear un informe, vea [Administrar datos de usuario en Microsoft Stream](https://docs.microsoft.com/stream/managing-user-data). El resultado del informe está en formato HTML y contiene hipervínculos que se pueden usar para navegar por vídeos de posible interés. Si desea ver un vídeo con permisos personalizados y usted no forma parte de los usuarios para los que el vídeo estaba destinado, puede verlo en el modo de administración. Consulte Capacidades de administración en Microsoft Stream](https://docs.microsoft.com/stream/manage-content-permissions).  
+Para descubrir contenido que se ha generado o cargado en Stream que pueda ser relevante para un DSR, un administrador de Stream puede ejecutar un informe de usuario para determinar los vídeos, las descripciones de vídeo, los grupos, los canales o los comentarios que el usuario de Stream ha podido cargar, crear o publicar. Para obtener instrucciones sobre cómo crear un informe, vea [Administrar datos de usuario en Microsoft Stream](https://docs.microsoft.com/stream/managing-user-data). El resultado del informe está en formato HTML y contiene hipervínculos que se pueden usar para navegar por vídeos de posible interés. Si desea ver un vídeo con permisos personalizados y usted no forma parte de los usuarios para los que el vídeo estaba destinado, puede verlo en el modo de administración. Consulte [Capacidades de administración en Microsoft Stream](https://docs.microsoft.com/stream/manage-content-permissions).  
 
 #### <a name="access"></a>Access
 
@@ -1205,7 +1205,7 @@ Las secciones siguientes explican cómo usar la función integrada en la aplicac
 
 #### <a name="discover"></a>Detectar
 
-El contenido creado con Sway (que se encuentra en [www.sway.com](http://www.sway.com)) solo lo puede ver el propietario y aquellos a los que el autor dé permiso. Ver [Configuración de privacidad en Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Para determinar si es probable que en Sway haya datos personales que responden a su DSR, puede pedir al interesado, y a los usuarios de la organización que generen contenido sobre el interesado, que busquen en sus Sways y compartan cualquier Sway que pueda contener datos personales que respondan a la solicitud del interesado. Para informarse sobre cómo compartir un Sway, vea «compartir un Sway desde su cuenta profesional» en este artículo sobre Compartir su Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
+El contenido creado con Sway (que se encuentra en [www.sway.com](http://www.sway.com)) solo lo puede ver el propietario y aquellos a los que el autor dé permiso. Ver [Configuración de privacidad en Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Para determinar si es probable que en Sway haya datos personales que responden a su DSR, puede pedir al interesado, y a los usuarios de la organización que generen contenido sobre el interesado, que busquen en sus Sways y compartan cualquier Sway que pueda contener datos personales que respondan a la solicitud del interesado. Para informarse sobre cómo compartir un Sway, vea «compartir un Sway desde su cuenta profesional» en este artículo sobre [Compartir su Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
 
 #### <a name="access"></a>Access
 
@@ -1402,7 +1402,7 @@ Para los datos a los que el usuario puede acceder a través de su perfil y confi
 - El perfil del usuario:
 
     - Si el usuario tiene una identidad de Yammer, tiene control total de su perfil. Para obtener información sobre cómo ver y modificar el perfil, vea [Cambiar la configuración de perfiles de Yammer](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
-    - Si el usuario tiene una identidad de Office 365, el perfil de usuario de Yammer se extrae automáticamente de Office 365, que obtiene la información de perfil de Azure Active Directory (AAD). Los usuarios de Yammer pueden cambiar sus perfiles temporalmente en Yammer, pero estos cambios se sobrescriben cuando se produce un cambio en AAD, por lo que el mejor sitio para ver y cambiar los datos del directorio es AAD. El usuario debe solicitar que se actualice AAD. Vea Administrar usuarios de Yammer en todo su ciclo de vida desde Office 365](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039) y [Agregar o cambiar la información de perfil de un usuario de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
+    - Si el usuario tiene una identidad de Office 365, el perfil de usuario de Yammer se extrae automáticamente de Office 365, que obtiene la información de perfil de Azure Active Directory (AAD). Los usuarios de Yammer pueden cambiar sus perfiles temporalmente en Yammer, pero estos cambios se sobrescriben cuando se produce un cambio en AAD, por lo que el mejor sitio para ver y cambiar los datos del directorio es AAD. El usuario debe solicitar que se actualice AAD. Vea [Administrar usuarios de Yammer en todo su ciclo de vida desde Office 365](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039) y [Agregar o cambiar la información de perfil de un usuario de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
 
 - Configuración del usuario:
 
@@ -1434,7 +1434,7 @@ Como se ha explicado anteriormente, las licencias de todas las aplicaciones de O
 
 ### <a name="preventing-users-from-accessing-their-onedrive-for-business-account"></a>Impedir que los usuarios tengan acceso a su cuenta de OneDrive para la Empresa
 
-Quitar la licencia de SharePoint Online de un usuario no le impedirá acceder a su cuenta de OneDrive para la empresa, si esta existe. Debe eliminar los permisos del usuario para la cuenta de OneDrive para la empresa. Puede hacerlo quitando al usuario como propietario de la colección de sitios de su cuenta de OneDrive para la empresa. En concreto, debe ir al perfil del usuario y quitarle de los grupos Administrador de la colección de sitios principales y Administrador de colección de sitios. Vea la sección «Añadir y quitar administradores en una cuenta de OneDrive para la empresa» en Administrar perfiles de usuario en el centro de administración](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723) de SharePoint.
+Quitar la licencia de SharePoint Online de un usuario no le impedirá acceder a su cuenta de OneDrive para la empresa, si esta existe. Debe eliminar los permisos del usuario para la cuenta de OneDrive para la empresa. Puede hacerlo quitando al usuario como propietario de la colección de sitios de su cuenta de OneDrive para la empresa. En concreto, debe ir al perfil del usuario y quitarle de los grupos Administrador de la colección de sitios principales y Administrador de colección de sitios. Vea la sección «Añadir y quitar administradores en una cuenta de OneDrive para la empresa» en [Administrar perfiles de usuario en el centro de administración](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723) de SharePoint.
 
 ### <a name="turning-off-an-office-365-service"></a>Desactivar un servicio de Office 365
 
@@ -1535,7 +1535,7 @@ MyAnalytics proporciona estadísticas a los usuarios para ayudarles a comprender
 
 #### <a name="access-and-export"></a>Obtener acceso y exportar
 
-Si su organización usa MyAnalytics, Microsoft genera información para todos los usuarios. Todos los hallazgos analíticos se derivan de los encabezados de reuniones y mensajes de correo electrónico en el buzón del usuario. Los usuarios pueden ir al Panel MyAnalytics](https://delve.office.com) durante la sesión iniciada en su cuenta de Office 365 para ver la información sobre cómo invierten su tiempo en el trabajo. Pueden tomar capturas de pantalla de los hallazgos de MyAnalytics si quieren tener copias permanentes de su información.
+Si su organización usa MyAnalytics, Microsoft genera información para todos los usuarios. Todos los hallazgos analíticos se derivan de los encabezados de reuniones y mensajes de correo electrónico en el buzón del usuario. Los usuarios pueden ir al [Panel MyAnalytics](https://delve.office.com) durante la sesión iniciada en su cuenta de Office 365 para ver la información sobre cómo invierten su tiempo en el trabajo. Pueden tomar capturas de pantalla de los hallazgos de MyAnalytics si quieren tener copias permanentes de su información.
 
 #### <a name="rectify"></a>Rectificar
 
@@ -1606,7 +1606,7 @@ Los administradores pueden obtener acceso a registros generados por el sistema a
 
 4. Para crear una nueva solicitud para usuario, haga clic en **Crear solicitud de exportación de datos**.
 
-Después de crear una solicitud, esta se mostrará en la página Exportar el registro de datos**, donde puede realizar un seguimiento de su estado. Después de completar una solicitud, puede hacer clic en un vínculo para obtener acceso a los registros generados por el sistema, que se exportarán a la ubicación de Azure Storage de su organización en un plazo de 30 días tras crear la solicitud. Los datos se guardan en los formatos de archivo más habituales y legibles por máquina, como JSON o XML. Si su organización no tiene una cuenta de Azure ni una ubicación de Azure Storage, debe crearlas para que la herramienta de exportación del registro de datos pueda exportar los registros generados por el sistema. Para más información, vea [Introducción a Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
+Después de crear una solicitud, esta se mostrará en la página **Exportar el registro de datos**, donde puede realizar un seguimiento de su estado. Después de completar una solicitud, puede hacer clic en un vínculo para obtener acceso a los registros generados por el sistema, que se exportarán a la ubicación de Azure Storage de su organización en un plazo de 30 días tras crear la solicitud. Los datos se guardan en los formatos de archivo más habituales y legibles por máquina, como JSON o XML. Si su organización no tiene una cuenta de Azure ni una ubicación de Azure Storage, debe crearlas para que la herramienta de exportación del registro de datos pueda exportar los registros generados por el sistema. Para más información, vea [Introducción a Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 
 > [!NOTE]
 > Al crear una solicitud de exportación de datos, los datos generados por el sistema para algunas aplicaciones no se exportarán mediante la herramienta Exportación de registros de datos. Para exportar datos de estas aplicaciones, vea [Pasos adicionales para exportar datos de registros generados por el sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
@@ -1638,7 +1638,7 @@ Este es un resumen de las acciones de acceso y exportación de registros generad
 > [!NOTE]
 > Algunas características no permiten exportar ni eliminar los registros generados por el sistema con información personal para mantener la integridad de dicha información con fines de seguridad y auditoría.
 
-Los datos sobre el producto y el servicio de algunos de los servicios más utilizados de Microsoft, como Exchange Online, SharePoint Online, Skype empresarial, Yammer y Office 365 también se pueden recuperar al buscar el registro de auditoría de Office 365 en el Centro de seguridad y cumplimiento. Para obtener más información, vea Usar la herramienta de búsqueda de registros de auditoría de Office 365 en investigaciones DSR](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) en el Apéndice A. Es posible que el uso del registro de auditoría le sea útil, ya que es posible asignar permisos a otras personas de su organización (como el trabajador encargado de la conformidad) para que busquen en el registro de auditoría el acceso a estos datos.
+Los datos sobre el producto y el servicio de algunos de los servicios más utilizados de Microsoft, como Exchange Online, SharePoint Online, Skype empresarial, Yammer y Office 365 también se pueden recuperar al buscar el registro de auditoría de Office 365 en el Centro de seguridad y cumplimiento. Para obtener más información, vea [Usar la herramienta de búsqueda de registros de auditoría de Office 365 en investigaciones DSR](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) en el Apéndice A. Es posible que el uso del registro de auditoría le sea útil, ya que es posible asignar permisos a otras personas de su organización (como el trabajador encargado de la conformidad) para que busquen en el registro de auditoría el acceso a estos datos.
 
 #### <a name="national-clouds"></a>Nubes nacionales
 
@@ -1654,7 +1654,7 @@ En las siguientes nubes nacionales, un administrador de TI global tiene que real
 
 Para eliminar los registros generados por el sistema recuperados con una solicitud de acceso, tiene que quitar el usuario del servicio y eliminar permanentemente su cuenta de Azure Active Directory. Para obtener instrucciones sobre cómo eliminar un usuario de forma permanente, vea la sección [Eliminar un usuario](#deleting-a-user) en esta guía. Es importante tener en cuenta que la eliminación permanente de una cuenta de usuario es irreversible una vez iniciada.
 
-Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días, se quitarán los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Office 365. Una de estas excepciones es que la eliminación permanente de la cuenta de usuario lleve más de 30 días en Exchange Online. Dado el carácter crítico del contenido de Exchange Online y para evitar la pérdida accidental de datos, el sistema se ha diseñado intencionalmente para dejar en espera datos durante un máximo de 60 días después de que se haya eliminado permanentemente la cuenta de usuario. Para eliminar de forma permanente los datos de Exchange Online de un usuario en un plazo de 30 días, elimine definitivamente la cuenta de usuario de Azure Active Directory y solicite al [Soporte técnico de Microsoft](https://support.microsoft.com/) que se eliminen manualmente los datos del usuario en Exchange Online, fuera del proceso de eliminación programado. Para obtener más información, consulte Eliminación de datos de Exchange Online](#removing-exchange-online-data), anteriormente explicado en esta guía.
+Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días, se quitarán los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Office 365. Una de estas excepciones es que la eliminación permanente de la cuenta de usuario lleve más de 30 días en Exchange Online. Dado el carácter crítico del contenido de Exchange Online y para evitar la pérdida accidental de datos, el sistema se ha diseñado intencionalmente para dejar en espera datos durante un máximo de 60 días después de que se haya eliminado permanentemente la cuenta de usuario. Para eliminar de forma permanente los datos de Exchange Online de un usuario en un plazo de 30 días, elimine definitivamente la cuenta de usuario de Azure Active Directory y solicite al [Soporte técnico de Microsoft](https://support.microsoft.com/) que se eliminen manualmente los datos del usuario en Exchange Online, fuera del proceso de eliminación programado. Para obtener más información, consulte [Eliminación de datos de Exchange Online](#removing-exchange-online-data), anteriormente explicado en esta guía.
 
 La eliminación de una cuenta de usuario no quitará los registros generados por los sistemas de Yammer y Kaizala. Para quitar los datos de estas aplicaciones, vea uno de los siguientes:
 

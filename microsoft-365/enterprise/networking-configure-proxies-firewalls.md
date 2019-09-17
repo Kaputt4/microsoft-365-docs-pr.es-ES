@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información y configure los exploradores web y los dispositivos perimetrales para la omisión de tráfico a ubicaciones de confianza de Office 365.
-ms.openlocfilehash: c7d4391d3274fd36a3f6fbf208cd94ce7b0f9339
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 416c93fd3f44e1cd9edba52a9d6117ac6d133760
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074230"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982791"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Paso 4: Configurar la omisión de tráfico
 
@@ -40,7 +40,8 @@ Puede encontrar los nombres de dominio DNS y los intervalos de direcciones IP en
 
 Microsoft le recomienda:
 
-- Usar scripts de Configuración automática de proxy (PAC) en los exploradores de Internet de los equipos locales para omitir los servidores proxy de los nombres de dominio DNS de los servicios basados en la nube de Microsoft 365. Para obtener el script PAC de Microsoft 365 más reciente, vea el script Get-Pacfile de PowerShell.
+- Usar scripts de Configuración automática de proxy (PAC) en los exploradores de Internet de los equipos locales para omitir los servidores proxy de los nombres de dominio DNS de los servicios basados en la nube de Microsoft 365. Para obtener el script PAC de Microsoft 365 más reciente, vea el [script Get-Pacfile de PowerShell](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
+- 
 - Analizar los dispositivos perimetrales para determinar el procesamiento duplicado y configurarlos para reenviar el tráfico a puntos de conexión de la categoría Optimizar y Permitir sin procesamiento. Esto se conoce como omisión de tráfico. 
 
 Los dispositivos perimetrales incluyen firewalls, inspección e interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos. Para configurar y actualizar las configuraciones de los dispositivos perimetrales, puede usar un script o una llamada REST para consumir una lista estructurada de puntos de conexión del servicio web Puntos de conexión de Office 365. Para obtener más información, vea [Dirección IP de Office 365 y servicio web de URL](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).

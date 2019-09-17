@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los directorios y redes en el entorno.
-ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584576"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982731"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Paso 2: Preparación de los directorios y la red
 
@@ -73,7 +73,7 @@ El nuevo modelo de mantenimiento incluye actualizaciones de características par
 
 El tercer componente considerar es la personalización de usuario. Aquí debe planificar el ancho de banda de red para dar cabida a la restauración de sus aplicaciones, la configuración y los archivos de usuario como parte del proceso de actualización o la sustitución del equipo. Juntos, estos elementos suelen superan 20 GB por equipo. Para algunos usuarios puede superar 100GB.
 
-## <a name="limiting-bandwidth"></a>**Limitar el ancho de banda**
+## <a name="limiting-bandwidth"></a>Limitar el ancho de banda
 
 Una forma de limitar el impacto del tráfico relacionado con la implementación en la red es limitarlo con la función BITS (servicio de transferencia inteligente en segundo plano) de los clientes. BITS usa una tasa de bits adaptativa (ABR) para ajustar el ancho de banda disponible para la implementación; puede configurarse en los clientes que usan la directiva de grupo.
 
@@ -87,7 +87,7 @@ Afortunadamente, hay nuevas herramientas que facilitan la administración del im
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
-## <a name="scavenging-bandwidth"></a>**Aprovechamiento del ancho de banda**
+## <a name="scavenging-bandwidth"></a>Aprovechamiento del ancho de banda
 
 Low Extra Delay Background Transport (LEDBAT), compatible con Windows Server 2019 y la rama actual de System Center Configuration Manager, está diseñado para optimizar el tráfico de red en clientes de Windows.
 
@@ -97,7 +97,7 @@ A diferencia de la limitación tradicional, LEDBAT puede usar todo el ancho de b
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
-## <a name="peer-to-peer-options"></a>**Opciones de punto a punto**
+## <a name="peer-to-peer-options"></a>Opciones de punto a punto
 
 Las opciones de punto a punto se usan cada vez más en migraciones de Windows 10 para imágenes de equipo, actualizaciones de software y personalización de usuarios. Tienen un gran valor al facilitar actualizaciones de compilación a compilación tras la implementación inicial de Windows 10. A continuación, cubriremos varios ejemplos para ayudar a trasladar tráfico relacionado con Windows 10 y Office lejos del centro de la red, lo que reducirá la necesidad de la limitación tradicional y permitirá a los equipos encontrar los archivos de actualización que necesitan en otros puntos de su red local, en vez de descargarlos de un único punto de distribución en Internet.
 
