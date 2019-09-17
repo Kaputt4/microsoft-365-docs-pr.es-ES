@@ -3,7 +3,7 @@ title: 'Fase 2: Criterios de salida de infraestructura de identidades'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumpla los criterios de Microsoft 365 Enterprise para la infraestructura y los servicios basados en identidades.
-ms.openlocfilehash: 19eefe3cd153668239d9cf15f71c90e8ac9571e1
-ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
+ms.openlocfilehash: 4621c9e12519e39931fe8b883b3a8c446c39dae3
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "34681047"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981861"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Fase 2: Criterios de salida de infraestructura de identidades
 
@@ -29,7 +29,7 @@ Asegúrese de que su infraestructura de identidad cumpla los siguientes criterio
 Vea también [Requisitos previos](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) para obtener recomendaciones adicionales de infraestructuras de identidades.
 
 <a name="crit-identity-user-groups"></a>
-## <a name="required-all-users-groups-and-group-memberships-have-been-created"></a>Obligatorio: Se crearon todos los usuarios, grupos y pertenencias a grupos
+## <a name="required-your-users-groups-and-group-memberships-have-been-created"></a>Obligatorio: Se crearon todos los usuarios, grupos y pertenencias a grupos
 
 Creó cuentas de usuario y grupos para que:
 
@@ -41,7 +41,7 @@ Si es necesario, el [Paso 1](identity-plan-users-groups.md) puede resultarle út
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>Obligatorio: Las cuentas de administrador global están protegidas 
 
-[Protegió las cuentas de administrador global de Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) para evitar poner en peligro credenciales que puedan llevar a infracciones de una suscripción de Office 365.
+Ha [protegido sus cuentas](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) de administrador global de Office 365 para combatir el compromiso de las credenciales por parte de atacantes que puedan ocasionar infracciones de la suscripción a Microsoft 365.
 
 Si omite este requisito, las cuentas de administrador global pueden ser susceptibles a ataques y estar en peligro, lo que permitiría a un atacante obtener acceso a todo el sistema para recolectar, destruir o bloquear sus datos para pedir un rescate.
 
@@ -63,7 +63,7 @@ Siga estos pasos para comprobar que protegió las cuentas de administrador globa
 <a name="crit-identity-pim"></a>
 ## <a name="optional-you-have-set-up-privileged-identity-management-to-support-on-demand-assignment-of-the-global-administrator-role"></a>Opcional: configuró Privileged Identity Management para facilitar la asignación a petición del rol Administrador global
 
-Siguió las instrucciones que se indican en [Configurar Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) para habilitar PIM en el espacio empresarial de Azure AD y configuró las cuentas de administrador globales como administradores aptos.
+Siguió las instrucciones que se indican en [Configurar Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) para habilitar PIM en el espacio empresarial de Azure AD y configuró las cuentas de administrador global como administradores aptos.
 
 También siguió las recomendaciones que se indican en [Proteger el acceso con privilegios para implementaciones híbridas y de nube en Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) para elaborar un plan de desarrollo que proteja el acceso con privilegios frente a los ciberatacantes.
 
@@ -83,7 +83,7 @@ Si es necesario, el [paso 3](identity-azure-ad-connect.md#identity-sync) puede a
 
 Si omite este requisito, tendrá dos conjuntos de cuentas de usuario y grupos:
 
-- Cuentas de usuario y grupos que existen en el proveedor de identidades local
+- Cuentas de usuario y grupos que existen en AD DS local
 - Cuentas de usuario y grupos que existen en el espacio empresarial de Azure AD
 
 En este estado, es necesario que tanto los administradores de TI como los usuarios realicen el mantenimiento de forma manual de los dos conjuntos de cuentas de usuario y grupos. Sin duda, esto provocará cuentas, contraseñas y grupos no sincronizados.
@@ -110,12 +110,12 @@ Si omite esta opción, podrá evaluar con mayor precisión el estado de su infra
 Si es necesario, el [paso 3](identity-azure-ad-connect.md#identity-sync-health) puede ayudarle con esta opción.
 
 ### <a name="how-to-test"></a>Procedimiento de prueba
-En el portal de Azure AD Connect Health, se muestra el estado actual y correcto de los servidores de identidades locales y la sincronización continuada.
+En el portal de Azure AD Connect Health, se muestra el estado actual y correcto de los controladores de dominio locales y la sincronización continuada.
 
 <a name="crit-identity-mfa"></a>
 ## <a name="optional-multi-factor-authentication-is-enabled-for-your-users"></a>Opcional: La autenticación multifactor está habilitada para los usuarios
 
-Siguió los pasos indicados en [Planear la autenticación multifactor para implementaciones de Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan) y [Configurar la autenticación multifactor para usuarios de Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) para habilitar la autenticación multifactor (MFA) para las cuentas de usuario.
+Usó [Plan para la autenticación multifactor](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) y las [directivas de acceso condicional](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access) para habilitar la autenticación multifactor (MFA) para sus cuentas de usuario.
 
 Si omite esta opción, las cuentas de usuario serán vulnerables a ciberatacantes que intenten apropiarse de las credenciales. Si la contraseña de una cuenta de usuario está en peligro, el atacante tendrá acceso todos los recursos y funciones de la cuenta (como los roles de administrador). Esto permite al atacante copiar, destruir o pedir un rescate por los documentos internos y otros datos.
 
@@ -123,14 +123,21 @@ Si es necesario, el [paso 4](identity-multi-factor-authentication.md#identity-mf
 
 ### <a name="how-to-test"></a>Procedimiento de prueba
 
-1.  Cree una cuenta de usuario de prueba en el Portal de administración de Office 365 y asigne una licencia a esta cuenta. 
-2.  Configure la autenticación multifactor para la cuenta de usuario de prueba con el método de verificación adicional que use para las cuentas de usuario reales, como el envío de un mensaje al teléfono. 
-3.  Inicie sesión en Office 365 o en Azure Portal con la cuenta de usuario de prueba.
+1.  Cree una cuenta de usuario de prueba y asigne una licencia a esta cuenta. 
+2.  Configure la autenticación multifactor para la cuenta de usuario de prueba con el método de verificación adicional que use para las cuentas de usuario reales, como el envío de un mensaje de texto al teléfono. 
+3.  Inicie sesión en el portal de Office 365 con la cuenta de usuario de prueba.
 4.  Asegúrese de que MFA le pide la información de verificación adicional y que la autenticación se complete correctamente. 
 5.  Elimine la cuenta de usuario de prueba.
 
+<a name="crit-password-prot"></a>
+## <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a>Opcional: la protección con contraseña de Azure AD no permite el uso de contraseñas poco seguras
+
+Ha habilitado la prohibición de contraseñas no válidas [en la nube](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) y para los [Servicios de dominio de Active Directory (AD DS) locales](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) para las contraseñas no permitidas globales y, opcionalmente, para los términos personalizados.
+
+Si es necesario, el [paso 4](identity-multi-factor-authentication.md#identity-password-prot) puede ayudarle con esta opción.
+
 <a name="crit-identity-ident-prot"></a>
-## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise"></a>Opcional: Azure AD Identity Protection está habilitado para protegerse contra peligros de credenciales
+## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>Opcional: Azure AD Identity Protection está habilitado para protegerse contra peligros de credenciales (solo Microsoft 365 Enterprise E5)
 
 Habilitó Azure AD Identity Protection para:
 
@@ -175,7 +182,7 @@ Si necesita ayuda con esta opción, vea el [paso 5](identity-password-reset.md#i
 
 Puede probar la escritura diferida de contraseñas cambiando la contraseña en Office 365. Debería poder usar su cuenta y su contraseña nueva para acceder a los recursos locales de AD DS.
 
-1. Cree una cuenta de usuario de prueba en el entorno local de AD DS, permita la sincronización de directorios y asigne una licencia de Office 365 en el Centro de administración de Microsoft 365.
+1. Cree una cuenta de usuario de prueba en su AD DS local, permita que se produzca la sincronización de directorios y, a continuación, conceda una licencia de Microsoft 365 Enterprise en el Centro de administración de Microsoft 365.
 2. Desde un equipo remoto unido al dominio local de AD DS, inicie sesión en el equipo y en el portal de Office con las credenciales de la cuenta de usuario de prueba.
 3. Seleccione **Configuración > Configuración de Office 365 > Contraseña > Cambiar contraseña**.
 4. Escriba la contraseña actual, la nueva contraseña y la confirmación de contraseña.
@@ -186,7 +193,7 @@ Puede probar la escritura diferida de contraseñas cambiando la contraseña en O
 
 Habilitó [Azure AD Connect: Inicio de sesión único de conexión directa](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) en su organización para simplificar la forma en que los usuarios inician sesión en las aplicaciones basadas en la nube, como Office 365.
 
-Si omite esta opción, se pedirá a los usuarios que proporcionen sus credenciales al obtener acceso a aplicaciones adicionales que usen Azure AD.
+Si omite esta opción, se pedirá a los usuarios que proporcionen sus credenciales al obtener acceso a aplicaciones adicionales que usen su espacio empresarial de Azure AD.
 
 Si necesita ayuda con esta opción, vea el [paso 5](identity-password-reset.md#identity-sso).
 
@@ -248,23 +255,34 @@ Si es necesario, el [paso 6](identity-self-service-group-management.md#identity-
 <a name="crit-identity-group-license"></a>
 ## <a name="optional-group-based-licensing-to-automatically-assign-and-remove-licenses-to-user-accounts-based-on-group-membership"></a>Opcional: licencias basadas en grupos para asignar y quitar automáticamente licencias a cuentas de usuario basándose en la pertenencia a grupos
 
-[Habilitó las licencias basadas en grupos](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) para los grupos de seguridad de Azure AD correspondientes para que se asignen o quiten automáticamente las licencias de Office 365 y EMS.
+[Habilitó las licencias basadas en grupos](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) para los grupos de seguridad de Azure AD correspondientes para que se asignen o quiten automáticamente las licencias de Microsoft 365 Enterprise.
 
 Si omite esta opción, tendrá que realizar estos pasos de forma manual:
 
-- Asignar licencias a los nuevos usuarios que quiera que tengan acceso Office 365 y EMS.
-- Quitar licencias de usuarios que ya no estén con la organización o que no tengan acceso a Office 365 y EMS.
+- Asignar licencias a los nuevos usuarios que quiera que tengan acceso.
+- Quitar licencias a los usuarios que ya no estén en la organización o que no tengan acceso.
 
 Si es necesario, el [paso 6](identity-self-service-group-management.md#identity-group-license) puede ayudarle con esta opción.
 
 ### <a name="how-to-test"></a>Procedimiento de prueba
 
-1. Cree un grupo de seguridad de prueba en Azure AD con Azure Portal y configure las licencias basadas en grupos para asignar licencias de Office 365 y EMS.
+1. Cree un grupo de seguridad de prueba en Azure AD con Azure Portal y configure las licencias basadas en grupos para asignar una licencia de Microsoft 265 Enterprise.
 2. Cree una cuenta de usuario de prueba en Azure AD y agréguela al grupo de seguridad de prueba.
-3. Examine las propiedades de la cuenta de usuario en el Centro de administración de Microsoft 365 para asegurarse de que se asignaron las licencias de Office 365 y EMS.
+3. Examine las propiedades de la cuenta de usuario en el Centro de administración de Microsoft 365 para asegurarse de que se asignó la licencia de Microsoft 265 Enterprise.
 4. Quite la cuenta de usuario de prueba del grupo de seguridad de prueba.
-5. Examine las propiedades de la cuenta de usuario para garantizar que ya no tenga asignadas licencias de Office 365 y EMS.
+5. Examine las propiedades de la cuenta de usuario para garantizar que ya no tenga asignada la licencia de Microsoft 265 Enterprise.
 6. Elimine el grupo de seguridad de prueba y la cuenta de usuario de prueba.
+
+<a name="crit-identity-access-reviews"></a>
+## <a name="optional-access-reviews-configured-and-being-used-to-monitor-access"></a>Opcional: Revisiones de acceso configuradas y en uso para controlar el acceso
+
+Utilizó estos artículos para configurar distintos tipos de revisiones de acceso para supervisar la pertenencia a grupos, el acceso a aplicaciones empresariales y las asignaciones de funciones:
+
+- [Grupos y aplicaciones](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+- [Roles de Azure AD](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [Roles de recursos de Azure](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+
+Si es necesario, el [paso 7](identity-governance.md#identity-access-reviews) puede resultarle útil con esta opción.
 
 ## <a name="results-and-next-steps"></a>Resultados y siguientes pasos
 
