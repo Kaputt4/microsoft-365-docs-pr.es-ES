@@ -5,14 +5,13 @@ keywords: Escritorio administrado por Microsoft, Microsoft 365, servicio, docume
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bfa769cab9f8d812fa2533232f66b0d4f8a4edb7
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
+ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390517"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040819"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Implementar y realizar un seguimiento de las opciones configurables-escritorio administrado por Microsoft
 
@@ -20,7 +19,7 @@ Después de realizar cambios en las categorías de configuración y ensayar una 
 
 ## <a name="deployment-statuses"></a>Estados de implementación 
 
-Estos son los statues que verá para cada implementación.
+Estos son los Estados que verá para cada implementación.
 
 Estado  | Explicación 
 --- | --- 
@@ -41,13 +40,11 @@ En estas instrucciones se mostrará la imagen de fondo del escritorio. Una vez q
 3. En el área de trabajo del **Estado de implementación** , seleccione la configuración que desee implementar y, a continuación, seleccione la implementación preconfigurada que se va a implementar.
 4. Seleccione **implementar** para implementar el cambio en uno de los grupos de implementación.
 
-![Introducción al estado de implementación de configuración configurable](images/deploy-cs-overview.png)
-
-Microsoft Managed Desktop recomienda implementar en grupos de implementación en este orden: test, First, Fast y, a continuación, general. 
+![Información general sobre](images/1deployedit.png) la implementación de opciones de estado de implementación Microsoft Managed Desktop recomienda la implementación en grupos de implementación en este orden: test, First, Fast y, a continuación, general. 
 
 Cuando se completen los cambios en cada grupo, el estado cambiará a **completa**.
 
-![Implementación de la configuración configurable completada](images/config-setting-complete.png)
+![Implementación de la configuración configurable completada](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>Revertir la implementación
 
@@ -61,7 +58,7 @@ Mostraremos los pasos para revertir un cambio con la imagen de fondo de escritor
 3. En el área de trabajo del **Estado de implementación** , seleccione la configuración que desea revertir y, a continuación, seleccione la implementación preconfigurada que se va a revertir.
 4. En **es necesario revertir este cambio**, seleccione **revertir la implementación**.
 
-![Reversión de implementación de la configuración configurable](images/config-setting-revert.png) 
+![Reversión de implementación de la configuración configurable](images/3revert.png) 
 
 ## <a name="additional-resources"></a>Otros recursos
 - [Información general de configuración configurable](config-setting-overview.md)

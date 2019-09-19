@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 57c0be2e8aff09024f84c58bb895aab98324964d
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 9f1631b054a46cac83140e07460807b2ba0edac3
+ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982541"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040782"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías de escritorio administradas de Microsoft
 
@@ -28,7 +28,7 @@ En este tema se resumen los componentes incluidos en las licencias Enterprise ne
  |
  --- | ---
 Office 365 ProPlus (64 bits) | Estas aplicaciones de Office se entregarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype empresarial, OneNote.<br><br>No se incluyen las versiones completas de 64 bits de Microsoft Project y Microsoft Visio. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de Office 365 ProPlus, el escritorio administrado de Microsoft ha creado implementaciones de Microsoft Intune y grupos de seguridad predeterminados que puede usar para implementar estas aplicaciones en una licencia usuarios finales. Para obtener más información, vea [instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft](../get-started/project-visio.md) .
-OneDrive para la Empresa | Inicio de sesión único de Azure Active Directory <br><br>Se incluye la redirección de carpetas conocidas para las carpetas "escritorio", "documento" y "imágenes"; habilitado y configurado por el escritorio administrado por Microsoft. 
+OneDrive para la Empresa |El inicio de sesión único de Azure Active Directory está habilitado para los usuarios finales una vez que inicie sesión en OneDrive para la empresa<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "escritorio", "documento" y "imágenes"; habilitado y configurado por el escritorio administrado por Microsoft. 
 Almacenar aplicaciones |    Microsoft Sway y Power BI no se entregan con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
 Aplicaciones Win32 |    Teams no se incluye con el dispositivo, sino que es empaquetado y proporcionado por Microsoft para dispositivos de escritorio administrados por Microsoft. El cliente de Azure Information Protection no se incluye con el dispositivo, pero puede empaquetarlo para su implementación. 
 Aplicaciones web |  Yammer, Office en un explorador, Delve, Flow, StaffHub, PowerApps y Planner no se incluyen en el dispositivo. Los usuarios pueden tener acceso a la versión Web de estas aplicaciones con un explorador.
