@@ -60,10 +60,24 @@ El personal de cumplimiento y seguridad de datos usa el panel de seguridad y cum
 
 Si es necesario, el [Paso 5](../infoprotect-data-loss-prevention.md) puede resultarle útil para cumplir este requisito. 
 
-
 <a name="crit-infoprotect-step6"></a>
+### <a name="optional-email-encryption-is-configured"></a>Opcional: El cifrado del correo electrónico está configurado:
+
+Configuró la siguiente codificación de correo electrónico necesaria para su organización:
+
+|||
+|:-------|:-----|
+| **Método de cifrado** | **Para el correo electrónico enviado** |
+| [Cifrado de mensajes de Office 365 (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Fuera de su organización con cifrado |
+| [Information Rights Management (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | Con cifrado y permisos |
+| [Extensiones seguras multipropósito de correo electrónico en Internet (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Tanto con el cifrado como las firmas digitales que usan la criptografía de clave pública |
+|||
+
+Si es necesario, el [Paso 6](../infoprotect-email-encryption.md) puede ayudarle a cumplir este requisito.
+
+<a name="crit-infoprotect-step7"></a>
 ### <a name="optional-configure-privileged-access-management-in-office-365"></a>Opcional: se ha configurado la administración del acceso con privilegios para Office 365
 
 Ha usado la información en el tema [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) (Configuración de la administración del acceso con privilegios en Office 365) para habilitar el acceso con privilegios y crear una o más directivas de acceso con privilegios en su organización. Ha configurado estas directivas y el acceso Just-in-time está habilitado para el acceso a la información confidencial o el acceso a la configuración crítica.
 
-Si es necesario, el [Paso 6](../infoprotect-configure-privileged-access-management.md) puede ayudarle a cumplir este requisito. 
+Si es necesario, el [paso 7](../infoprotect-configure-privileged-access-management.md) puede ayudarle a cumplir este requisito. 
