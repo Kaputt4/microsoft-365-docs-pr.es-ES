@@ -6,18 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0af9134880f018cf814715a8ca3a3b7dc55c5fcd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: de7f218b5cfe2dcdba6c29aea81bd6004adedf76
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982401"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047233"
 ---
 # <a name="getting-help-for-end-users"></a>Obtener ayuda para usuarios finales
 
-Hay dos formas en que los usuarios de su organización pueden obtener ayuda con sus dispositivos de escritorio administrados por Microsoft: obtener aplicación de **ayuda** o soporte telefónico. Ambas opciones de soporte técnico están disponibles para los usuarios las 24 horas del día, los 7 días de la semana. 
+Hay dos formas en que los usuarios de su organización pueden obtener ayuda con sus dispositivos de escritorio administrados por Microsoft: obtener aplicación de **ayuda** o soporte telefónico. Ambas opciones de soporte técnico están disponibles para los usuarios las 24 horas del día, los 7 días de la semana.
+ 
 >[!NOTE]
->Los dispositivos que residen en el grupo de prueba están fuera del ámbito de estas opciones de compatibilidad con el usuario final. 
+>Estas opciones de soporte no están disponibles para los dispositivos del grupo de prueba. 
 
 ## <a name="get-help-app"></a>Obtener aplicación de ayuda
 
@@ -38,9 +39,10 @@ Los usuarios finales con dispositivos de escritorio administrados por Microsoft 
 - Canadá (excepto Quebec): + 1 855 425 0216
 - Reino Unido: + 44 800 026 0698
 - Australia: + 61 180 037 0619
+- Nueva Zelanda: + 64 988 44380
 
 >[!NOTE]
->Tenga a mano su dirección de correo electrónico de la organización cuando llame para comprobar su identidad. 
+>Necesitará que su dirección de correo electrónico de la organización esté preparada cuando llame para comprobar su identidad. 
 
 ## <a name="additional-resources"></a>Otros recursos
 - [Soporte de administración para escritorio administrado de Microsoft](admin-support.md). 

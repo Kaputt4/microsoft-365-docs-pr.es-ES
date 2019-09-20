@@ -1,5 +1,5 @@
 ---
-title: 'Paso 6: configurar la administración del acceso con privilegios para Office 365'
+title: 'Paso 7: configurar la administración del acceso con privilegios para Office 365'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Comprenda y configure la administración del acceso con privilegios para Office 365
-ms.openlocfilehash: fdfb0bc69d1dc05cffd717951cb493995d2123d4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072100"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047293"
 ---
-# <a name="step-6-configure-privileged-access-management-for-office-365"></a>Paso 6: configurar la administración del acceso con privilegios para Office 365
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Paso 7: configurar la administración del acceso con privilegios para Office 365
 
 *Este paso es opcional y solo es válido para las versiones E5 y de cumplimiento avanzado de Microsoft 365 Enterprise*
 
@@ -39,11 +39,13 @@ Para habilitar la administración del acceso con privilegios de Office 365, vea 
 
 Para obtener más información, vea el tema [Administración del acceso con privilegios en Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-## <a name="results"></a>Resultados
 
-El resultado de este paso es que ha incrementado la seguridad de Office 365 al habilitar el acceso puntual para datos clave y opciones de configuración de la organización.
+|||
+|:-------|:-----|
+|![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para practicar esta configuración en un entorno de laboratorio de pruebas, consulte la guía de entorno de [pruebas de administración de acceso privilegiada](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|||
 
-Como control interno, consulte los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step6) correspondientes a este paso.
+Como control interno, consulte los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step7) correspondientes a este paso.
 
 ## <a name="next-step"></a>Paso siguiente
 
