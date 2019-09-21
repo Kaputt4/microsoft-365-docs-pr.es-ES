@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y pruebe el inicio de sesión único de conexión directa de Azure AD para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 51543b595a0adf6bd0abcad8bc59be4dc8834e36
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 4d62405bc500bdf0dec8aa8aa6639e0802aa232e
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074140"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071569"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Inicio de sesión único de conexión directa de Azure AD para un entorno de prueba de Microsoft 365
 
@@ -109,7 +109,7 @@ Esta configuración se compone de:
 - Azure AD Connect se ejecuta en APP1 para sincronizar la lista de cuentas y grupos desde el espacio empresarial de Azure AD de sus suscripciones de Office 365 y EMS E5 con el dominio de TESTLAB AD DS. 
 - El SSO de conexión directa de Azure AD está habilitado para que los equipos en la intranet ficticia puedan iniciar sesión en recursos de nube de Microsoft 365 sin especificar una contraseña de cuenta de usuario.
 
-Vea el paso [Simplificar el inicio de sesión de usuario](identity-password-reset.md#identity-sso) en la fase Identidad para obtener información y vínculos sobre cómo configurar el SSO de conexión directa de Azure AD en un entorno de producción.
+Vea el paso [Simplificar el inicio de sesión de usuario](identity-secure-your-passwords.md#identity-sso) en la fase Identidad para obtener información y vínculos sobre cómo configurar el SSO de conexión directa de Azure AD en un entorno de producción.
 
 ## <a name="next-step"></a>Paso siguiente
 

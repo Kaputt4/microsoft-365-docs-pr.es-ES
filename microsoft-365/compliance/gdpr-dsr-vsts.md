@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: ce5ccb1961fe1751604b32bb5b37595b0884b395
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431781"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071489"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Solicitudes del interesado de Azure DevOps Services para el RGPD
 
@@ -43,7 +43,7 @@ El primer paso para eliminar los datos de clientes de Azure DevOps Services asoc
 
 Los responsables pueden usar dos métodos para exportar los datos de clientes y los registros generados por el sistema recopilados de los interesados, según el proveedor de identidades (MSA o AAD) que se usó para iniciar sesión en el servicio de Azure DevOps.
 
-- Los usuarios que se autentiquen con una cuenta respaldada por un inquilino de Azure (como, por ejemplo, una cuenta de AAD o MSA asociada a una suscripción a Azure) pueden seguir las instrucciones de [Solicitudes de interesados de Azure para el RGPD](../compliance/gdpr-dsr-azure.md).
+- Los usuarios que se autentiquen con una cuenta respaldada por un inquilino de Azure (como, por ejemplo, una cuenta de AAD o MSA asociada a una suscripción a Azure) pueden seguir las instrucciones de [Solicitudes de interesados de Azure para el RGPD](gdpr-dsr-azure.md).
 
 - Los usuarios que se autentiquen con una identidad de MSA pueden usar este [sitio de Privacy Request](https://www.microsoft.com/concern/privacyrequest-msa) para ver los datos de actividad vinculados a su identidad de MSA en varios servicios de Microsoft. En este escenario, el usuario es un responsable de sus datos personales.
 
