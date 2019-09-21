@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure multi-factor Authentication mediante mensajes de texto enviados a un smartphone en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 319f8058aa4504c52cacf5f0d97982d115c41c8a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f209c3cebaefd8b4bddafb68471c35e5c37905be
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074220"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071579"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Multi-factor Authentication para su entorno de prueba de Microsoft 365 Enterprise
 
@@ -95,7 +95,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
     Debe ver el portal de Office para el usuario 2 en la pestaña **Página principal de Microsoft Office** del explorador.
 
 
-Consulte el paso [configurar la autenticación multifactor](identity-multi-factor-authentication.md#identity-mfa) en la fase de identidad para obtener información y vínculos para implementar la autenticación multifactor en producción.
+Consulte el paso [configurar la autenticación multifactor](identity-secure-user-sign-ins.md#identity-mfa) en la fase de identidad para obtener información y vínculos para implementar la autenticación multifactor en producción.
     
 ## <a name="next-step"></a>Siguiente paso
 

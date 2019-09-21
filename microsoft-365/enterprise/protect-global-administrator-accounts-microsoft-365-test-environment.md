@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Siga estos pasos para proteger las cuentas de administrador global en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 7a6f99ae1123b07618dea9910a0bdd993e36ca13
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 457ac33aa2242dc4b25cd662bf233bb1599a6fec
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074150"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071559"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Proteger las cuentas de administrador global en su entorno de prueba de Microsoft 365 Enterprise
 
@@ -87,13 +87,13 @@ Esta segunda Directiva bloquea el acceso a la autenticación de la cuenta de adm
 6. En la sección **asignaciones** , haga clic en **condiciones**.
 7. En la **hoja condiciones** , haga clic en **riesgo de inicio de sesión**, haga clic en **sí** para **configurar**, haga clic en **alta** y **media**y, a continuación, haga clic en **seleccionar** y **listo**.
 8. En la sección **controles de acceso** de la **nueva** hoja, haga clic en **conceder**.
-9. En la **** hoja conceder, haga clic en **Bloquear acceso**y, a continuación, haga clic en **seleccionar**.
-10. En la hoja **nueva** , haga **** clic en **Habilitar Directiva**y, a continuación, haga clic en **crear**.
+9. En la hoja **conceder** , haga clic en **Bloquear acceso**y, a continuación, haga clic en **seleccionar**.
+10. En la hoja **nueva** , haga clic en **Habilitar Directiva**y, a continuación, haga **clic en** **crear**.
 11. Cierre las pestañas **Azure portal** y **centro de administración de Microsoft 365** .
 
 Para probar la primera Directiva, cierre e inicie sesión con la cuenta DedicatedAdmin. Se le pedirá que configure la MFA en la cuenta de usuario. Esto demuestra que se está aplicando la primera Directiva.
 
-Consulte el paso [proteger las cuentas de administrador global](identity-designate-protect-admin-accounts.md#identity-global-admin) en la fase de identidad para obtener información y vínculos para proteger las cuentas de administrador global en producción.
+Consulte el paso [proteger las cuentas de administrador global](identity-create-protect-global-admins.md#identity-global-admin) en la fase de identidad para obtener información y vínculos para proteger las cuentas de administrador global en producción.
 
 ## <a name="next-step"></a>Siguiente paso
 

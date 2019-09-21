@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure Azure AD Identity Protection y analice las cuentas actuales en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: d267bb9dff94acfec46fa1275887f9cade2a7285
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97530dcec9c32882bbe3b66eb53eaa6d4668a838
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074090"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071719"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identity Protection para su entorno de prueba de Microsoft 365 Enterprise
 
@@ -57,7 +57,7 @@ Si quiere probar Azure AD Identity Protection en una empresa simulada, siga las 
 
 Para obtener más pruebas y experimentación, vea [Simulate Risk Events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).
 
-Consulte el paso [proteger contra credenciales en peligro](identity-multi-factor-authentication.md#identity-ident-prot) en la fase de identidad para obtener información y vínculos para implementar Azure ad Identity Protection en producción.
+Consulte el paso [proteger contra credenciales en peligro](identity-secure-user-sign-ins.md#identity-ident-prot) en la fase de identidad para obtener información y vínculos para implementar Azure ad Identity Protection en producción.
 
 ## <a name="next-step"></a>Siguiente paso
 
