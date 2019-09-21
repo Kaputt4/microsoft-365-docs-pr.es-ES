@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
-ms.openlocfilehash: 9b09f21c71f578c45a71149cedfd67a8ea9104e6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5deae85ae614079c23a373d4ecae7ce81aeb3fcd
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289411"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071779"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Paso 1: preparar la organización para Windows 10 Enterprise
 
@@ -29,11 +29,11 @@ Antes de actualizar los dispositivos a Windows 10 Enterprise, tenga en cuenta lo
   Con una suscripción de Microsoft 365, obtiene un nombre de dominio predeterminado que termina en onmicrosoft.com (por ejemplo, contoso.onmicrosoft.com). La mayoría de las organizaciones prefieren usar uno o más de los dominios que poseen, por lo que sus direcciones de correo electrónico terminan en su propio nombre de dominio (como username@contoso.com). Para usar su propio dominio, tiene que agregarlo a Microsoft 365 y comprobar que es el propietario. Le recomendamos que agregue y compruebe sus dominios ahora para que estén listos para usar cuando configure los servicios de Microsoft 365, como el correo electrónico y Skype empresarial.
 - **No es necesario agregar usuarios en este momento.** <br>
   Para usar los servicios de Microsoft 365 o instalar los productos de la 365 de Microsoft, los usuarios necesitan cuentas en Microsoft 365 y necesitan licencias de producto. La forma en que se agregan usuarios a Microsoft 365 depende del número de usuarios y de si actualmente tiene Active Directory local. Si no tiene Active Directory (o tiene Active Directory pero no desea sincronizarlo con Microsoft 365), puede Agregar usuarios directamente a Microsoft 365 y asignar licencias, de forma individual o en masa. <br>
-  Si tiene Active Directory local, puede [sincronizarlo con Microsoft 365](identity-azure-ad-connect.md#identity-sync) para crear cuentas de usuario en Azure ad, el directorio de la nube usado por Microsoft 365. Con este método, puede crear cuentas para los usuarios y para los grupos de seguridad que use para administrar los permisos de los recursos (como los documentos o colecciones de sitios de SharePoint Online). La sincronización de Active Directory con Microsoft 365 no asignará licencias a los usuarios.
+  Si tiene Active Directory local, puede [sincronizarlo con Microsoft 365](identity-add-user-accounts.md#identity-sync) para crear cuentas de usuario en Azure ad, el directorio de la nube usado por Microsoft 365. Con este método, puede crear cuentas para los usuarios y para los grupos de seguridad que use para administrar los permisos de los recursos (como los documentos o colecciones de sitios de SharePoint Online). La sincronización de Active Directory con Microsoft 365 no asignará licencias a los usuarios.
 - **No es necesario que tenga licencia para los usuarios en este momento** <br>
-  Para que los usuarios puedan usar los servicios de Microsoft 365 o instalar software desde el portal de Microsoft 365, necesitan licencias de producto. Como administrador global o de administración de usuarios, puede asignar directamente licencias de productos en Microsoft 365 de forma individual o en masa. También puede usar [licencias basadas en grupos](identity-self-service-group-management.md#identity-group-license) para asignar licencias automáticamente cuando se agregan usuarios a un grupo determinado. 
-- **Instale Office 365 proPlus por separado** <br>
-  La obtención de una licencia de 365 de Microsoft no instala automáticamente Office 365 proPlus en los equipos cliente. Consulte [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md) para obtener más información. 
+  Para que los usuarios puedan usar los servicios de Microsoft 365 o instalar software desde el portal de Microsoft 365, necesitan licencias de producto. Como administrador global o de administración de usuarios, puede asignar directamente licencias de productos en Microsoft 365 de forma individual o en masa. También puede usar [licencias basadas en grupos](identity-use-group-management.md#identity-group-license) para asignar licencias automáticamente cuando se agregan usuarios a un grupo determinado. 
+- **Instale Office 365 ProPlus por separado** <br>
+  La obtención de una licencia de 365 de Microsoft no instala automáticamente Office 365 ProPlus en los equipos cliente. Consulte [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md) para obtener más información. 
 
 ## <a name="set-windows-diagnostics-data-level"></a>Establecer el nivel de datos de diagnósticos de Windows
 
@@ -48,9 +48,9 @@ Use el valor adecuado de la tabla siguiente cuando configure la Directiva de adm
 | Level | Datos recopilados | Valor |
 |:--- |:--- |:--- |
 | Seguridad | Solo datos de seguridad. | comprendi |
-| Básica | Datos de seguridad y datos básicos del sistema y de calidad. | 1 |
-| Mejor | Datos de seguridad, datos básicos del sistema y de calidad, y datos mejorados y datos de confiabilidad avanzada. | segundo |
-| Full | Datos de seguridad, datos básicos del sistema y de calidad, conocimientos mejorados y datos de confiabilidad avanzada y datos de diagnóstico completos. | 3 |
+| Básica | Datos de seguridad y datos básicos del sistema y de calidad. | 1  |
+| Mejor | Datos de seguridad, datos básicos del sistema y de calidad, y datos mejorados y datos de confiabilidad avanzada. | 2  |
+| Full | Datos de seguridad, datos básicos del sistema y de calidad, conocimientos mejorados y datos de confiabilidad avanzada y datos de diagnóstico completos. | 3  |
 
 Puede habilitar los datos de diagnóstico a través de cualquiera de estos métodos:
 
