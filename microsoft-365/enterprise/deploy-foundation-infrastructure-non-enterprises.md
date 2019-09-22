@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Le mostramos las fases simplificadas de la infraestructura básica de Microsoft 365 Enterprise para organizaciones que no sean empresas.
-ms.openlocfilehash: 8e2c254bf352baa14ff62dad500e5cdfa0af4563
-ms.sourcegitcommit: 639607bbf02bdedd3fa5cd7b0984b422fe6c874e
+ms.openlocfilehash: 37bbf04eafeb3adc63d9dd01d052376f98856df4
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35624638"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071739"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>Infraestructura básica de Microsoft 365 Enterprise para organizaciones que no son empresas
 
@@ -63,9 +63,9 @@ Cada uno de los empleados de su organización debe poder iniciar sesión, lo que
 
 ### <a name="administrator-accounts"></a>Cuentas de administrador
 
-Proteja sus cuentas de usuario de administrador global exigiendo el uso de contraseñas muy seguras y de la autenticación multifactor (MFA). Más información en: [Proteger las cuentas de administrador global](identity-designate-protect-admin-accounts.md#protect-global-administrator-accounts)
+Proteja sus cuentas de usuario de administrador global exigiendo el uso de contraseñas seguras y de la autenticación multifactor (MFA). Más información en: [Proteger las cuentas de administrador global](identity-create-protect-global-admins.md#protect-global-administrator-accounts)
 
-Si su organización necesita un alto nivel de seguridad y dispone de Microsoft 365 Enterprise E5, utilice la Azure AD Privileged Identity Management para permitir el acceso de administrador de forma puntual. Más información en: [Configurar los administradores globales a petición](identity-designate-protect-admin-accounts.md#set-up-on-demand-global-administrators)
+Si su organización necesita un alto nivel de seguridad y dispone de Microsoft 365 Enterprise E5, utilice la Azure AD Privileged Identity Management para permitir el acceso de administrador de forma puntual. Más información en: [Configurar los administradores globales a petición](identity-create-protect-global-admins.md#identity-pim)
 
 ### <a name="recommendations-for-groups"></a>Recomendaciones para grupos
 
@@ -82,7 +82,7 @@ Si no tiene un dominio de AD DS local, cree grupos de seguridad en Azure AD con 
 
 ### <a name="hybrid-identity"></a>Identidad híbrida
 
-Si tiene un dominio de AD DS local, debe sincronizar el conjunto de cuentas de usuario, grupos y contactos de su dominio con el espacio empresarial de Azure AD de su suscripción de Microsoft 365 Enterprise. Para su organización no empresarial, configure Azure AD Connect en un servidor con sincronización de hash de contraseña (PHS). Vea [Sincronizar identidades](identity-azure-ad-connect.md) para obtener más información.
+Si tiene un dominio de AD DS local, debe sincronizar el conjunto de cuentas de usuario, grupos y contactos de su dominio con el espacio empresarial de Azure AD de su suscripción de Microsoft 365 Enterprise. Para su organización no empresarial, configure Azure AD Connect en un servidor con sincronización de hash de contraseña (PHS). Vea [Sincronizar identidades](identity-add-user-accounts.md) para obtener más información.
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>Directivas de acceso condicional para un acceso de usuario más seguro
 
@@ -135,16 +135,16 @@ Estas son algunas características que pueden facilitar la administración de li
 
 | Característica | Utilice |
 |:------|:-----|
-| Administración de grupos de autoservicio | Permitir que sean los propietarios de los grupos de Azure AD, y no el personal de informática, quienes gestionen dichos grupos. Consulte [Administración de grupos de autoservicio](identity-self-service-group-management.md#allow-users-to-create-and-manage-their-own-groups) para más información. |
-| Pertenencia a grupo dinámico | Configure la incorporación o eliminación automática de cuentas de usuario de grupos de Azure AD en función de los atributos de la cuenta, como departamento o país. Para obtener más información, consulte [Pertenencia a grupos dinámicos](identity-self-service-group-management.md#set-up-dynamic-group-membership). |
-| Licencias basadas en grupos | Use la pertenencia a grupos para asignar o retirar licencias a cuentas de usuario automáticamente. Vea [Licencias basadas en grupo](identity-self-service-group-management.md#set-up-automatic-licensing) para obtener más información. |
+| Administración de grupos de autoservicio | Permitir que sean los propietarios de los grupos de Azure AD, y no el personal de informática, quienes gestionen dichos grupos. Consulte [Administración de grupos de autoservicio](identity-use-group-management.md#allow-users-to-create-and-manage-their-own-groups) para más información. |
+| Pertenencia a grupo dinámico | Configure la incorporación o eliminación automática de cuentas de usuario de grupos de Azure AD en función de los atributos de la cuenta, como departamento o país. Para obtener más información, consulte [Pertenencia a grupos dinámicos](identity-use-group-management.md#set-up-dynamic-group-membership). |
+| Licencias basadas en grupos | Use la pertenencia a grupos para asignar o retirar licencias a cuentas de usuario automáticamente. Vea [Licencias basadas en grupo](identity-use-group-management.md#set-up-automatic-licensing) para obtener más información. |
 |  |  |
 
 Si va a usar una licencia basada en grupos, cree un grupo denominado LICENCIADO para que contenga los nombres de las cuentas de usuario asignadas a una licencia de Microsoft 365 Enterprise.
 
 ### <a name="monitor-user-access"></a>Seguir el acceso del usuario
 
-Si tiene Microsoft 365 Enterprise E5, puede usar Azure AD Identity Protection para supervisar y analizar los inicios de sesión de los usuarios para comprobar si las credenciales se ven comprometidas. Para obtener más información, consulte [Protegerse en caso de que las credenciales se vean comprometidas](identity-multi-factor-authentication.md#protect-against-credential-compromise).
+Si tiene Microsoft 365 Enterprise E5, puede usar Azure AD Identity Protection para supervisar y analizar los inicios de sesión de los usuarios para comprobar si las credenciales se ven comprometidas. Para obtener más información, consulte [Protegerse en caso de que las credenciales se vean comprometidas](identity-secure-user-sign-ins.md#protect-against-credential-compromise).
 
 ### <a name="your-configuration-so-far"></a>Su configuración hasta ahora
 
