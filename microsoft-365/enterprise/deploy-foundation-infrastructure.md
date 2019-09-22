@@ -3,7 +3,7 @@ title: Infraestructura básica de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda las fases principales para implementar la infraestructura básica de Microsoft 365 Enterprise en su organización, también conocida como la implementación principal.
-ms.openlocfilehash: c66a328becf03a179b3ef0526c3110783904e741
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 016764333b7234681aa06e511227b203f9c9eaea
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982101"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050311"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infraestructura básica de Microsoft 365 Enterprise
 
@@ -33,7 +33,7 @@ Para una ruta de implementación de un extremo a otro definida, puede usar estas
 |![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Fase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Los equipos con Windows existentes pueden actualizar a Windows 10 Enterprise y los nuevos dispositivos se instalan con Windows 10 Enterprise. |
 |![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Fase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Los usuarios existentes de Microsoft Office pueden actualizar a Office 365 ProPlus. |
 |![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Fase 5: Administración de dispositivos móviles](mobility-infrastructure.md)| Se pueden inscribir y administrar los dispositivos. |
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fase 6: Protección de la información](infoprotect-infrastructure.md)| Las etiquetas están preparadas para proteger documentos y se habilitan las características de seguridad de Office 365. |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fase 6: Protección de la información](infoprotect-infrastructure.md)| Las características de seguridad de Office 365 están habilitadas y sus etiquetas y políticas están listas para proteger documentos y correo electrónico. |
 
 Las fases comienzan por lo más fundamental (redes e identidad) y después crean capas de configuración de infraestructura y grupos para:
 
@@ -48,7 +48,7 @@ Pero tiene la posibilidad de configurar e implementar las fases o los pasos en f
 
 -  **Si tiene una organización empresarial**,vea las fases como capas de infraestructura de TI en lugar de una ruta definida, y determine la mejor forma de cumplir los requisitos de cada capa en toda la organización.
 
-Al final de cada fase, debería examinar sus criterios de salida, que incluyen las condiciones necesarias y opcionales que tener en cuenta. Los criterios de salida para cada fase garantizan que su infraestructura local y en la nube y la configuración de un extremo al otro resultante cumplen los requisitos para una implementación de Microsoft 365 Enterprise.
+Al final de cada fase, debe examinar *los criterios*de salida, en los que se incluyen las condiciones necesarias que debe cumplir y las condiciones opcionales que se deben considerar. Los criterios de salida para cada fase garantizan que su infraestructura local y en la nube y la configuración de un extremo al otro resultante cumplen los requisitos para una implementación de Microsoft 365 Enterprise.
 
 Para ver cómo se estructura el contenido, vea este breve vídeo.
 
@@ -90,7 +90,7 @@ Por ejemplo, puede crear la configuración de:
 | Windows 10 Enterprise | Grupos para actualizar automáticamente los equipos con Windows 7 o Windows 8.1 a Windows 10 Enterprise. |
 | Office 365 ProPlus | Grupos para implementar automáticamente Office 365 ProPlus para usuarios con Office 2010, Office 2013 u Office 2016. |
 | Administración de dispositivos móviles | Grupos para la inscripción de dispositivos y directivas de acceso condicional basado en el dispositivo. |
-| Protección de la información | Etiquetas y grupos de sensibilidad para la protección de información de Office 365 y de Azure. |
+| Protección de la información | Grupos de etiquetas de confidencialidad de Office 365. |
 
 Cuando se haya preparado para implementar elementos de esta infraestructura para los usuarios, usted:
 
@@ -100,7 +100,7 @@ Cuando se haya preparado para implementar elementos de esta infraestructura para
 | Windows 10 Enterprise | Agregará cuentas a los grupos para implementar automáticamente Windows 10 Enterprise para los usuarios con Windows 7 o Windows 8.1. |
 | Office 365 ProPlus | Agregará cuentas de usuario a los grupos para implementar automáticamente Office 365 ProPlus para usuarios con Office 2010, Office 2013 u Office 2016. |
 | Administración de dispositivos móviles | Agregará cuentas a los grupos para la inscripción de dispositivos y directivas de acceso condicional basado en el dispositivo. |
-| Protección de la información | Agregará cuentas de usuario a los grupos para obtener etiquetas de protección de la información. |
+| Protección de la información | Agregue cuentas de usuario a los grupos para las etiquetas de sensibilidad. |
 
 Cuando las fases o los elementos de la infraestructura de base se hayan completado y probado, puede implementar software instalado, como Windows 10 Enterprise y Office 365 ProPlus, así como protecciones y servicios basados en la nube, como la inscripción de dispositivo y las directivas de acceso condicional, para los usuarios de la manera que mejor se adapte a sus objetivos empresariales y recursos de TI.
 
@@ -110,13 +110,13 @@ Para darle algunas ideas sobre cómo enfocar la administración de proyectos de 
 
 ## <a name="deployment-for-non-enterprises"></a>Implementación para no empresas
 
-Si su organización es más pequeña y Microsoft 365 Business no es adecuada para usted, consulte[, Implementación para no empresas](deploy-foundation-infrastructure-non-enterprises.md).
+Si su organización es más pequeña y Microsoft 365 empresarial no es adecuado para usted, consulte [implementación para empresas](deploy-foundation-infrastructure-non-enterprises.md) que no tengan un método de implementación simplificado.
 
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 | Donde estoy | Donde necesito ir |
 |:-------|:-----|
 | Tengo la infraestructura existente para Office 365, Enterprise Mobility + Security (EMS) o Windows 10 Enterprise | Comience con [la implementación de la infraestructura existente](deploy-with-existing-infrastructure.md), que le guiará a través del criterio de salida para cada fase. |
-| Estoy empezando desde cero como empresa | Empiece su recorrido de implementación de un extremo a otro con [Fase 1: Networking](networking-infrastructure.md). |
+| Estoy iniciando desde cero como empresa | Empiece su recorrido de implementación de un extremo a otro con [Fase 1: Networking](networking-infrastructure.md). |
 | Estoy empezando desde cero como no empresa | Empiece su recorrido de implementación de un extremo a otro con [Implementación para no empresas](deploy-foundation-infrastructure-non-enterprises.md). |
