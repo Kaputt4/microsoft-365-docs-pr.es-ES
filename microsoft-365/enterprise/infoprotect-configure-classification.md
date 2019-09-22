@@ -3,7 +3,7 @@ title: 'Paso 2: Configurar la clasificación para el entorno'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure varias formas de clasificar los datos de su organización.
-ms.openlocfilehash: 483549e7eaa7f6b77b775cf35bda7b0f42834ad2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072260"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047303"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Paso 2: Configurar la clasificación para el entorno
 
@@ -63,9 +63,8 @@ Para obtener más información, vea la [Introducción a las etiquetas de retenci
 Parte de la protección y la implementación de seguridad para determinados tipos de documentos o documentos con contenido específico consiste en marcarlos con una etiqueta para que pueda aplicar la seguridad adicional. Con las etiquetas de confidencialidad de Microsoft 365, puede:
 
 - Aplicar la configuración de protección como el cifrado, los permisos o la agregación de una marca de agua.
-- Impedir que salga contenido confidencial de su organización en dispositivos con Windows mediante Endpoint Protection de Microsoft Intune. 
 - Usar Endpoint Protection de Windows Information Protection (WIP) para impedir que el contenido se copie en una aplicación de terceros, como Twitter o Gmail, o se copie en unidades de almacenamiento extraíbles, como una unidad USB.
-- Proteger el contenido en los servicios y aplicaciones de terceros con Microsoft Cloud App Security. 
+- Proteger el contenido en los servicios y aplicaciones de terceros con Microsoft Cloud App Security (CAS). 
 - Clasificar contenido sin usar configuración de protección.
 
 Si usa etiquetas de confidencialidad, debe configurar una etiqueta para cada nivel de protección de información y seguridad. Por ejemplo, cree tres etiquetas de confidencialidad para:
@@ -73,6 +72,8 @@ Si usa etiquetas de confidencialidad, debe configurar una etiqueta para cada niv
 - Línea base
 - Confidencial
 - Extremadamente regulado
+
+Si almacena archivos con datos altamente regulados en un sitio de SharePoint Online y desea que estos archivos tengan los mismos permisos que el sitio incluso si los archivos abandonan el sitio, debe crear una etiqueta de sensibilidad adicional que tenga los mismos permisos que el sitio.
 
 Para obtener más información, vea [Información general de etiquetas de confidencialidad](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un sitio de grupo de SharePoint Online o un equipo de Microsoft Teams para almacenar los recursos digitales más valiosos y confidenciales.
-ms.openlocfilehash: d056acc9598abc2b896c775e0979451f4961e3fb
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 04984be44ddb2cc1aabc2032970f92e71899b268
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982761"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047351"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Sitios de Microsoft Teams y SharePoint Online para datos altamente regulados
 
@@ -145,7 +145,7 @@ Siga las instrucciones de [Implementar un sitio de grupo aislado de SharePoint O
 - Crear y rellenar los grupos de acceso para cada nivel de permiso de SharePoint usado en el sitio.
 - Crear y configurar el sitio de grupo aislado.
 
-### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>Paso 2: Configurar el sitio para una directiva DLP de etiquetas de retención de Office 365
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label"></a>Paso 2: configurar el sitio para una etiqueta de retención de Office 365
 
 Siga las instrucciones de [Proteger archivos de SharePoint Online con DLP y etiquetas de Office 365](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) para:
 

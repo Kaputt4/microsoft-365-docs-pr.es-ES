@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure el gobierno de identidades para su cuenta empresarial de Azure AD.
-ms.openlocfilehash: a965b74afc680c2ff506e0fc2ddebc280ee312a1
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 1c0eab574e5436dd0c88a0b46d1916281bcf0577
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982913"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047363"
 ---
 # <a name="step-7-configure-identity-governance"></a>Paso 7: Configurar Identity Governance
 
@@ -29,7 +29,7 @@ El gobierno de identidades consiste en proteger, supervisar y auditar el acceso 
 Consulte [este artículo](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) para obtener más información sobre el gobierno de identidades de Azure Active Directory (Azure AD).
 
 <a name="identity-access-reviews"></a>
-## <a name="set-up-azure-ad-access-reviews"></a>Revisiones de acceso de Azure AD
+## <a name="set-up-azure-ad-access-reviews"></a>Configurar revisiones de acceso de Azure AD
 
 *Esto es opcional y solo se aplica a la versión E5 de Microsoft 365 Enterprise*
 

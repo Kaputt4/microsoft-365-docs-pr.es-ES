@@ -3,7 +3,7 @@ title: 'Paso 5: Configurar la prevención de pérdida de datos de Office 365'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprender e implementar la prevención de pérdida de datos de Office 365 en Microsoft 365.
-ms.openlocfilehash: f6b9291a2965552837f989c98b32674f6093b383
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: dbe88885812e51b0daefa89dae123af5907c60a8
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073567"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047253"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>Paso 5: Configurar la prevención de pérdida de datos de Office 365
 
@@ -54,11 +54,10 @@ Para obtener información, consulte [Introducción a las recomendaciones de la d
 
 Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step5) correspondientes a este paso.
 
-## <a name="next-step"></a>Paso siguiente
-
+## <a name="next-step"></a>Siguiente paso
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)|[Configurar Privileged Access Management para Office 365](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step6.png)|[Configurar el cifrado de correo electrónico](infoprotect-email-encryption.md)|
 
 
