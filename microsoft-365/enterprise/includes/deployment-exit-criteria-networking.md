@@ -1,16 +1,16 @@
 <a name="crit-networking-step1"></a>
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatorio: la red está preparada para Microsoft 365 Enterprise
 
-- Las oficinas tienen suficiente ancho de banda de internet para el tráfico de Microsoft 365, incluidas la instalación y las actualizaciones de Office 365, Microsoft Intune y Windows 10 Enterprise
-- La red general se corresponde a una arquitectura de referencia de Office 365
-- Los cambios de la red han sido pilotados y probados y cumplen con los requisitos de latencia de tráfico
+- Las oficinas tienen suficiente ancho de banda de internet para el tráfico de Microsoft 365, incluidas la instalación y las actualizaciones de Office 365, Microsoft Intune y Windows 10 Enterprise.
+- La red general se corresponde a una [arquitectura de referencia de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Los cambios de la red han sido pilotados y probados y cumplen con los requisitos de latencia de tráfico.
 
 Si es necesario, el [paso 1](../networking-provide-bandwidth-cloud-services.md) puede ayudarle con este requisito.
 
 <a name="crit-networking-step2"></a>
 ### <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Obligatorio: las oficinas locales tienen conexión a Internet local y resolución de nombres
 
-Ha configurado cada oficina local con acceso a Internet con un ISP local cuyos servidores DNS usan una dirección IP pública local que identifica su ubicación en Internet. Esto asegura el mejor rendimiento posible para los usuarios que accedan a Office 365 e Intune.
+Ha configurado cada oficina local con acceso a Internet con un ISP local cuyos servidores DNS usan una dirección IP pública local que identifica su ubicación en Internet. Esto asegura el mejor rendimiento posible para los usuarios que accedan a los servicios en la nube de Microsoft 365.
 
 Si no usa un ISP local para cada sucursal, puede verse afectado el rendimiento porque el tráfico de red debe recorrer la estructura de una organización o las solicitudes de datos se procesan mediante servidores front-end remotos.
 
@@ -20,7 +20,7 @@ Use una herramienta o un sitio web desde un dispositivo de esa oficina para dete
 Si es necesario, el [paso 2](../networking-dns-resolution-same-location.md) puede ayudarle con este requisito.
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneeded-network-hairpins-are-removed"></a>Opcional: eliminación de las redirecciones de red innecesarias
+### <a name="optional-unneccessary-network-hairpins-are-removed"></a>Opcional: eliminación de las redirecciones de red innecesarias
 
 Ha examinado las redirecciones de red y ha determinado su impacto en el rendimiento de todas las oficinas. Ha eliminado las redirecciones de red cuando ha sido posible, o bien ha trabajado con su proveedor de red o seguridad de terceros para implementar emparejamiento de Microsoft 365 óptimo para su red.
 
