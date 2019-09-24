@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad incluidas en Microsoft 365 Business.
-ms.openlocfilehash: bd61ad3bf1b34635a7b80f1c9ccf63fa98d31915
-ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
+ms.openlocfilehash: 6b8fc215b95913e1beef3a3715119b947a7af406
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017530"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121166"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business
 
@@ -32,7 +32,7 @@ Microsoft 365 Business ofrece características de seguridad simplificadas para a
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Características de seguridad del centro de administración de Microsoft 365 Business
 
-![Pancarta que apunta a https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Etiqueta para que sepa que el centro de administración está cambiando y puede encontrar más información en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Puede administrar muchas de las características de seguridad empresarial de Microsoft 365 en el centro de administración, lo que le proporciona una forma simplificada de activar o desactivar estas características. En el centro de administración, puede hacer lo siguiente:
   
@@ -83,11 +83,11 @@ Hay disponibles características avanzadas de Microsoft 365 Business para ayudar
     - [Acceso basado en la ubicación](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration);  permitir el acceso solo desde rangos IP de confianza o países específicos 
     - Requerir MFA para el acceso
     - Bloquear el acceso a las aplicaciones que usan la [autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
-    - Requerir TP de aplicaciones-usar [protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) de Intune
+    - Requerir TP de aplicaciones-usar [protección de aplicaciones de Intune](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
     - Autenticación personalizada como MFA con proveedores de terceros, por ejemplo, DUO.
    
     Otras características:
-    - [Restablecimiento de contraseña](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) de autoservicio para Azure ad híbrido
+    - [Restablecimiento de contraseña de autoservicio](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) para Azure ad híbrido
     
 ## <a name="compliance-features"></a>Características de cumplimiento
 

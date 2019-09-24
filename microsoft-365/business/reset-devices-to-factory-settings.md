@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 'Obtenga información sobre cómo usar Microsoft 365 empresa para restablecer la fábrica de los dispositivos con Windows 10. '
-ms.openlocfilehash: 7cb7afdc947766598ef5385078a1b2cab87601dd
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 12e0bdbab430654fb80baa0313e63b2493e5077e
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074478"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121186"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Restablecer dispositivos Windows 10 a la configuración de fábrica
 
-![Pancarta que apunta a https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Etiqueta para que sepa que el centro de administración está cambiando y puede encontrar más información en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Un restablecimiento de fábrica revierte un dispositivo a la configuración original que tenía cuando se compró. Se quitan todas las aplicaciones y los datos del dispositivo que se han instalado después de la compra. Puede usar Microsoft 365 Business para realizar un restablecimiento de fábrica en los dispositivos Windows 10 que administra.
   
