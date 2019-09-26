@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: f6239c9378b540dd1e3b512711a7184dc4f45774
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d732303db1c2b138349a88fde45bd2aefb745c89
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093369"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148524"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -38,13 +38,13 @@ Puede usar etiquetas de confidencialidad para:
 
 - **Proteger el contenido en los servicios y aplicaciones de terceros** a través de Microsoft Cloud App Security Con Cloud App Security, puede detectar, clasificar, etiquetar y proteger el contenido en los servicios y aplicaciones de terceros, como SalesForce, Box o Dropbox, incluso si la aplicación o servicio de terceros no puede leer o no tiene compatibilidad con etiquetas de confidencialidad.
 
-- **Extender las etiquetas de confidencialidad a servicios y aplicaciones de terceros.** Con el SDK de Microsoft Information Protection, los servicios y aplicaciones de terceros en Windows, Mac y Linux pueden leer las etiquetas de confidencialidad y aplicar la opciones de protección. La compatibilidad con aplicaciones para iOS y Android estará disponible próximamente.
+- **Extienda las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.** Con el SDK de protección de la información de Microsoft, las aplicaciones de terceros en [estas plataformas](https://docs.microsoft.com/es-ES/information-protection/develop/overview#microsoft-information-protection-sdk) pueden leer las etiquetas de confidencialidad y aplicar la configuración de protección.
 
 - **Clasificar contenido sin usar ninguna configuración de protección.** También puede simplemente asignar una clasificación del contenido (como una etiqueta) que persiste y se desplaza con el contenido a medida que se usa y comparte. Puede usar esta clasificación para generar informes de uso y ver datos de actividad del contenido confidencial. Con esta información, siempre puede aplicar opciones de protección más tarde.
     
 En todos estos casos, las etiquetas de confidencialidad de Office 365 pueden ayudarle a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de confidencialidad, puede clasificar los datos de su organización para administrarlos mejor y aplicar configuraciones de protección basadas en esa clasificación.
   
-Las etiquetas de confidencialidad se crean en el Centro de cumplimiento de Microsoft 365, en el Centro de seguridad de Microsoft 365 o en el Centro de seguridad y cumplimiento de Office 365 en **Clasificación** > **Etiquetas de confidencialidad**. Estas etiquetas de confidencialidad las pueden usar Azure Information Protection, las aplicaciones de Office y los servicios de Office 365.
+Las etiquetas de confidencialidad se crean en el Centro de cumplimiento de Microsoft 365, el Centro de seguridad de Microsoft 365 o Centro de seguridad y cumplimiento de Office 365 en **Clasificación** > **Etiquetas de confidencialidad**. Las etiquetas de confidencialidad se pueden usar en Azure Information Protection, las aplicaciones de Office y los servicios de Office 365.
 
 Para los clientes de Azure Information Protection, puede usar las etiquetas de Azure Information Protection en los otros centros de administración y las etiquetas se sincronizarán con Azure Portal en caso de que decida realizar una configuración adicional o avanzada. **Las etiquetas de Azure Information Protection y etiquetas de confidencialidad de Office 365 son totalmente compatibles entre sí.** Esto significa que, por ejemplo, si tiene contenido con la etiqueta de Azure Information Protection, no tendrá que volver a clasificar o cambiar las etiquetas de su contenido.
 
@@ -68,7 +68,7 @@ Cada elemento de contenido puede tener una única etiqueta de confidencialidad a
 
 Después de aplicar una etiqueta de confidencialidad a un documento o correo electrónico, la configuración de protección de la etiqueta se aplica en el contenido. Con una etiqueta de confidencialidad, puede:
 
-- **Encriptar** solo correo electrónico o correo electrónico y documentos. Puede elegir qué usuarios o grupos tienen permisos para realizar qué acciones y durante cuánto tiempo. Por ejemplo, puede permitir que los usuarios de un dominio específico fuera de su organización tengan permisos para revisar el contenido durante solo 7 días después de que se haya etiquetado. Como alternativa, en lugar de asignar usted mismo los permisos al contenido, puede permitir que sus usuarios lo hagan al aplicar la etiqueta. Para obtener más información, vea [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md).
+- **Cifre** solo el correo electrónico o el correo electrónico y los documentos. Puede elegir qué usuarios o grupos tienen permisos para realizar las acciones y durante cuánto tiempo. Por ejemplo, puede elegir permitir que los usuarios de un dominio específico ajeno a la organización tengan permisos para revisar el contenido solo 7 días después de que se haya marcado el contenido. Como alternativa, en lugar de asignar permisos usted mismo, puede permitir a los usuarios asignar permisos al contenido al aplicar la etiqueta. Para obtener más información, vea [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md).
 
 - **Marcar el contenido** agregando marcas de agua personalizadas, encabezados o pies de página a correos electrónicos o documentos a los que se ha aplicado la etiqueta. Tenga en cuenta que las marcas de agua se aplican únicamente a los documentos, no al correo electrónico, y están limitadas a 255 caracteres. Además, los encabezados y pies de página se limitan a 1024 caracteres (excepto en Excel, que están limitados a 255 caracteres o menos, en función de si el documento contiene otros encabezados o pies de página y de otros factores).
 
@@ -259,7 +259,7 @@ Para que las etiquetas de confidencialidad puedan usar CAS, primero debe realiza
 
 Como una etiqueta de confidencialidad se almacena como texto no cifrado en los metadatos de un documento, los servicios y aplicaciones de terceros pueden decidir si identificar y proteger el contenido que está marcado con una etiqueta. La compatibilidad con otras aplicaciones y servicios siempre se encuentra en expansión.
 
-Con el [SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/), los servicios y aplicaciones de terceros pueden leer y aplicar etiquetas de confidencialidad y protección a los documentos. El SDK es compatible con aplicaciones de Windows, Mac y Linux. La compatibilidad con aplicaciones para iOS y Android estará disponible próximamente.
+Con el [SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/), las aplicaciones y los servicios de terceros pueden leer y aplicar etiquetas de confidencialidad y protección a los documentos. El SDK admite aplicaciones en [estas plataformas](https://docs.microsoft.com/es-ES/information-protection/develop/overview#microsoft-information-protection-sdk).
 
 Con el SDK, puede etiquetar y proteger el contenido de forma que funcione con otras aplicaciones y servicios de Microsoft Information Protection, como aplicaciones de Office, servicios de Office 365, el escáner de Azure Information Protection, Microsoft Cloud App Security y otras soluciones de partners. Por ejemplo, obtenga más información sobre la [compatibilidad con etiquetas de confidencialidad de Adobe Acrobat](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738).
 
