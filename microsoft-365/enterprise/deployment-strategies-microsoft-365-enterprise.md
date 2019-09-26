@@ -3,7 +3,7 @@ title: Estrategias de implementación de la infraestructura base de Microsoft 36
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 01/23/2019
+ms.date: 09/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Conozca algunas de las formas en las que puede implementar las fases de la infraestructura base de Microsoft 365 Enterprise.
-ms.openlocfilehash: 2c30420390be97d33f66888eac533b89c907b3b2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: d71c46867e27252db90e55f304baa29e4bca4076
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073890"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148504"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Estrategias de implementación de la infraestructura base de Microsoft 365 Enterprise
 
@@ -84,22 +84,22 @@ Para simplificar la explicación y el ejemplo, se presupone que se tardará lo m
 >Fase 1: La creación de la red de la infraestructura base de Microsoft 365 Enterprise es una fase exclusiva del departamento de TI. Los usuarios obtienen las ventajas de una conectividad optimizada con los recursos de nube de Microsoft pero no están obligados a conseguirla.
 >
 
-Se simplificó la experiencia del usuario piloto de ejemplo:
+Esta es una experiencia de usuario piloto simplificada como un ejemplo:
 
 - En diciembre, necesito usar mi smartphone para MFA. (Identidad)
 - En marzo, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
 - En junio, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
-- En septiembre, aplico las directivas de acceso condicional y de aplicaciones, así como de inscripción de dispositivos. (Administración de dispositivos móviles)
+- En septiembre, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En diciembre, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
 El resultado es una cadencia de 90 días entre implementaciones piloto sucesivas.
 
-Se simplificó la experiencia del usuario final de ejemplo:
+Esta es una experiencia de usuario final simplificada como un ejemplo:
 
 - En enero, necesito usar mi smartphone para MFA. (Identidad)
 - En abril, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
 - En julio, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
-- En octubre, aplico las directivas de acceso condicional y de aplicaciones, así como de inscripción de dispositivos. (Administración de dispositivos móviles)
+- En octubre, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En enero del año siguiente, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
 El resultado es una cadencia de 90 días entre implementaciones sucesivas de usuarios.
@@ -110,28 +110,26 @@ La desventaja de esta estrategia de implementación es que se puede tardar mucho
 
 En esta estrategia, se inicia la implementación piloto de la siguiente fase durante la última parte de la implementación de usuarios de la fase actual. Aquí tiene la implementación de las fases de la 2 a la 6 cuando la implementación piloto se produce al concluir la implementación de usuarios de la fase anterior.
 
-Aquí tiene una comparación simplificada entre las estrategias de implementación de serie y paralela.
-
 ![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 El resultado final es que la implementación de usuarios de la fase actual se completa en toda la organización antes de que empiece la siguiente. Los usuarios que no están en la implementación piloto no se enfrentan a las implementaciones de varias fases al mismo tiempo, pero las implementaciones piloto se realizan en paralelo con las implementaciones de usuarios.
 
-Se simplificó la experiencia del usuario piloto de ejemplo: 
+Esta es una experiencia de usuario piloto simplificada como un ejemplo:
 
 - En diciembre, necesito usar mi smartphone para MFA. (Identidad)
 - En febrero, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
 - En abril, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
-- En junio, aplico las directivas de acceso condicional y de aplicaciones, así como de inscripción de dispositivos. (Administración de dispositivos móviles)
+- En junio, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En agosto, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
 El resultado es una cadencia de 60 días entre implementaciones piloto sucesivas.
 
-Se simplificó la experiencia del usuario final de ejemplo:
+Esta es una experiencia de usuario final simplificada como un ejemplo:
 
 - En enero, necesito usar mi smartphone para MFA. (Identidad)
 - En marzo, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
 - En mayo, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
-- En julio, aplico las directivas de acceso condicional y de aplicaciones, así como de inscripción de dispositivos. (Administración de dispositivos móviles)
+- En julio, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En septiembre, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
 El resultado es una cadencia de 60 días entre implementaciones sucesivas de usuarios.
@@ -143,7 +141,7 @@ La ventaja de esta estrategia de implementación es que se puede tardar menos en
 Con esta estrategia de implementación, se inicia:
 
 - La implementación piloto de la fase siguiente se realiza durante la última parte de la implementación de usuarios de la fase actual.
-- La implementación de usuarios de la siguiente fase se realiza durante la implementación de usuarios de la fase actual de tal manera que ningún usuario se enfrenta a las implementaciones de varias fases al mismo tiempo. Se supone que cada fase de la infraestructura base se distribuye de la misma forma, por regiones, departamentos o de otra forma.
+- La implementación por parte de los usuarios de la siguiente fase durante la implementación de los usuarios de la fase actual, de modo que no haya ningún usuario trabajando con las implementaciones de varias fases al mismo tiempo. Esto supone que está implementando cada fase de la infraestructura de Foundation de la misma manera, con regiones, departamentos u otros grupos.
 
 Aquí tiene una comparación simplificada entre distintas estrategias de implementación.
 
@@ -154,27 +152,27 @@ El resultado final es que:
 - Las implementaciones piloto pasan sin pausa de una fase a la siguiente.
 - La implementación de usuarios de una fase comienza antes de completar la implementación de usuarios de la fase anterior, pero ningún usuario individual se distribuirá en más de una fase a la vez.
 
-Se simplificó la experiencia del usuario piloto de ejemplo: 
+Esta es una experiencia de usuario piloto simplificada como un ejemplo:
 
 - En diciembre, necesito usar mi smartphone para MFA. (Identidad)
 - En enero, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
 - En febrero, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
-- En marzo, aplico las directivas de acceso condicional y de aplicaciones, así como de inscripción de dispositivos. (Administración de dispositivos móviles)
-- En abril, instalo el cliente de Azure Information Protection y obtengo información sobre la aplicación de etiquetas a los documentos. (Information Protection)
+- En marzo, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
+- En abril, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
 El resultado es una cadencia de 30 días entre implementaciones piloto sucesivas.
 
-Se simplificó la experiencia del usuario final de ejemplo:
+Esta es una experiencia de usuario final simplificada como un ejemplo:
 
 - En enero, necesito usar mi smartphone para MFA. (Identidad)
 - En febrero, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
 - En marzo, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
-- En abril, aplico las directivas de acceso condicional y de aplicaciones, así como de inscripción de dispositivos. (Administración de dispositivos móviles)
+- En abril, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En mayo, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
 El resultado es una cadencia de 30 días entre implementaciones sucesivas de usuarios.
 
-La ventaja de esta estrategia de implementación es que se puede tardar incluso menos en implementar completamente la infraestructura base de Microsoft 365 Enterprise, sin que los usuarios individuales tengan que enfrentarse a varias implementaciones a la vez. Pero los usuarios no tienen descanso entre fases sucesivas.
+La ventaja de esta estrategia de implementación es que puede tardar menos en completarse la implementación de la infraestructura de Microsoft 365 Enterprise Foundation, sin necesidad de que los usuarios finales se ocupen de varias implementaciones de forma simultánea. Sin embargo, los usuarios no pueden salir de una fase sucesiva.
 
 ### <a name="up-front-infrastructure-and-rollout-of-end-to-end-configuration"></a>Infraestructura inicial e implementación de la configuración completa
 
@@ -187,7 +185,7 @@ El departamento de TI configura la infraestructura de las fases 2 a la 6, luego 
 - MFA y otras características de identidad (identidad)
 - Windows 10 Enterprise en dispositivos Windows (Windows 10 Enterprise)
 - Office 365 ProPlus para el conjunto de aplicaciones de Office (Office 365 ProPlus)
-- Directivas de acceso condicional y aplicaciones (Administración de dispositivos móviles)
+- Directivas de aplicaciones y dispositivos (administración de dispositivos móviles)
 - Instalación del cliente de Azure Information Protection y entrenamiento en la aplicación de etiquetas a los documentos (Information Protection)
 
 Tras finalizar la implementación piloto, empiece la implementación de usuarios en la que cada usuario obtiene todas las funciones la vez.

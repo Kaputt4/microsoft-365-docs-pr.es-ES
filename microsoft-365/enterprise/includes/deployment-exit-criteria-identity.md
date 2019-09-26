@@ -1,15 +1,5 @@
 Vea también [Requisitos previos](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) para obtener recomendaciones adicionales de infraestructuras de identidades.
 
-<a name="crit-identity-user-groups"></a>
-### <a name="required-your-users-groups-and-group-memberships-have-been-created"></a>Obligatorio: Se crearon todos los usuarios, grupos y pertenencias a grupos
-
-Creó cuentas de usuario y grupos para que:
-
-- Los empleados de su organización y los proveedores, contratistas y socios que trabajan con su organización o para su organización tengan una cuenta de usuario correspondiente en Azure Active Directory (Azure AD).
-- Los grupos de Azure AD y sus miembros contengan cuentas de usuario y otros grupos para distintas finalidades, como el aprovisionamiento de configuración de seguridad para Servicios en la nube de Microsoft, licencias automáticas y otros usos.
-
-Si es necesario, el [Paso 1](../identity-plan-users-groups.md) puede resultarle útil para cumplir este requisito.
-
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>Obligatorio: Las cuentas de administrador global están protegidas 
 
@@ -17,17 +7,17 @@ Ha [protegido sus cuentas](https://docs.microsoft.com/office365/enterprise/prote
 
 Si omite este requisito, las cuentas de administrador global pueden ser susceptibles a ataques y estar en peligro, lo que permitiría a un atacante obtener acceso a todo el sistema para recolectar, destruir o bloquear sus datos para pedir un rescate.
 
-Si es necesario, el [paso 2](../identity-designate-protect-admin-accounts.md#identity-global-admin) puede ayudarle a cumplir este requisito.
+Si es necesario, el [Paso 1](../identity-create-protect-global-admins.md#identity-global-admin) puede resultarle útil para cumplir este requisito.
 
 #### <a name="how-to-test"></a>Procedimiento de prueba
 
 Siga estos pasos para comprobar que protegió las cuentas de administrador global:
 
-1. Ejecute el siguiente comando de Azure Active Directory PowerShell para Graph en el símbolo del sistema de PowerShell. Solo verá la lista de cuentas de administrador global dedicadas.
+1. Ejecute el siguiente comando de Active Directory de Azure PowerShell para Graph en el símbolo de sistema de PowerShell: Solo debería ver la lista de cuentas de administrador global dedicadas.
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Inicie sesión en Office 365 con todas las cuentas del paso 1. Cada inicio de sesión tiene que exigir la autenticación multifactor y el método más seguro de autenticación secundaria disponible en su organización.
+2. Inicie sesión en Office 365 con cada una de las cuentas del paso 1. Cada inicio de sesión tiene que exigir la Azure Multi-Factor Authentication y el método más seguro de autenticación secundaria disponible en su organización.
 
 > [!Note]
 > Vea [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) (Conexión a PowerShell de Office 365) para obtener instrucciones de instalación de Azure Active Directory PowerShell para el módulo de Graph e inicio de sesión en Office 365.
@@ -35,27 +25,106 @@ Siga estos pasos para comprobar que protegió las cuentas de administrador globa
 <a name="crit-identity-pim"></a>
 ### <a name="optional-you-have-set-up-privileged-identity-management-to-support-on-demand-assignment-of-the-global-administrator-role"></a>Opcional: configuró Privileged Identity Management para facilitar la asignación a petición del rol Administrador global
 
-Siguió las instrucciones que se indican en [Configurar Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) para habilitar PIM en el espacio empresarial de Azure AD y configuró las cuentas de administrador globales como administradores aptos.
+Siguió las instrucciones que se indican en [Configurar Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) para habilitar PIM en el espacio empresarial de Azure AD y configuró las cuentas de administrador global como administradores aptos.
 
 También siguió las recomendaciones que se indican en [Proteger el acceso con privilegios para implementaciones híbridas y de nube en Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) para elaborar un plan de desarrollo que proteja el acceso con privilegios frente a los ciberatacantes.
 
 Si omite esta opción, las cuentas de administrador global estarán sujetas a ataques en línea continuados y, si se ponen en peligro, pueden permitir que un atacante recopile, destruya o impida el acceso a la información confidencial para pedir un rescate.
 
-Si es necesario, el [paso 2](../identity-designate-protect-admin-accounts.md#identity-pim) puede ayudarle con esta opción.
+Si es necesario, el [paso 1](../identity-create-protect-global-admins.md#identity-pim) puede ayudarle con esta opción.
 
+<a name="crit-identity-pam"></a>
+### <a name="optional-you-have-configure-privileged-access-management-in-office-365"></a>Opcional: ha configurado la administración del acceso con privilegios para Office 365
+
+Ha usado la información en el tema [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) (Configuración de la administración del acceso con privilegios en Office 365) para habilitar el acceso con privilegios y crear una o más directivas de acceso con privilegios en su organización. Ha configurado estas directivas y el acceso Just-in-time está habilitado para el acceso a la información confidencial o el acceso a la configuración crítica.
+
+Si es necesario, el [Paso 1](../identity-create-protect-global-admins.md#identity-pam) puede resultarle útil para cumplir este requisito. 
+
+<a name="crit-password-prot"></a>
+### <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a>Opcional: la protección con contraseña de Azure AD no permite el uso de contraseñas poco seguras
+
+Ha habilitado la prohibición de contraseñas no válidas [en la nube](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) y para los [Servicios de dominio de Active Directory (AD DS) locales](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) para las contraseñas no permitidas globales y, opcionalmente, para los términos personalizados.
+
+Si es necesario, el [paso 2](../identity-secure-your-passwords.md#identity-password-prot) puede ayudarle con esta opción.
+
+<a name="crit-identity-pw-reset"></a>
+### <a name="optional-users-can-reset-their-own-passwords"></a>Opcional: los usuarios pueden restablecer sus propias contraseñas
+
+Usó la [implementación rápida de autoservicio de restablecimiento de contraseña de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) para configurar el restablecimiento de contraseña de los usuarios.
+
+Si no cumple esta condición, los usuarios tendrán que ponerse en contacto con los administradores de cuentas de usuario para restablecer sus contraseñas, lo que producirá una sobrecarga administrativa adicional para el personal de TI.
+
+Si es necesario, el [paso 2](../identity-secure-your-passwords.md#identity-pw-reset) puede ayudarle con esta opción.
+
+<a name="crit-identity-sso"></a>
+### <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>Opcional: Los usuarios pueden iniciar sesión con el inicio de sesión único de conexión directa de Azure AD.
+
+Habilitó [Azure AD Connect: Inicio de sesión único de conexión directa](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) en su organización para simplificar la forma en que los usuarios inician sesión en las aplicaciones basadas en la nube, como Office 365.
+
+Si omite esta opción, es posible que se pida a sus usuarios que proporcionen credenciales cuando accedan a aplicaciones adicionales que utilicen su espacio empresarial de Azure AD.
+
+Si es necesario, el [paso 2](../identity-secure-your-passwords.md#identity-sso) puede ayudarle con esta opción.
+
+<a name="crit-identity-custom-sign-in"></a>
+### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Opcional: La pantalla de inicio de sesión de Office 365 está personalizada para su organización
+
+Siguió los pasos indicados en [Agregar personalización de marca de la compañía a las páginas de inicio de sesión y del panel de acceso](http://aka.ms/aadpaddbranding) para agregar la personalización de marca de su organización a la página de inicio de sesión de Office 365.
+
+Si omitió esta opción, los usuarios verán una pantalla de inicio de sesión de Office 365 genérica y es posible que no estén seguros de si inician la sesión en el sitio de su organización.
+
+Si es necesario, el [paso 2](../identity-secure-your-passwords.md#identity-custom-sign-in) puede ayudarle con esta opción.
+
+
+<a name="crit-identity-mfa"></a>
+### <a name="optional-azure-multi-factor-authentication-is-enabled-for-your-users"></a>Opcional: La Azure Multi-Factor Authentication está habilitada para los usuarios
+
+Usó [Plan para la Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) y las [directivas de acceso condicional](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access) para habilitar la Azure Multi-Factor Authentication (MFA) de Azure para sus cuentas de usuario.
+
+Si omite esta opción, las cuentas de usuario serán vulnerables a ciberatacantes que intenten apropiarse de las credenciales. Si la contraseña de una cuenta de usuario está en peligro, el atacante tendrá acceso todos los recursos y funciones de la cuenta (como los roles de administrador). Esto permite al atacante copiar, destruir o pedir un rescate por los documentos internos y otros datos.
+
+Si es necesario, el [paso 3](../identity-secure-user-sign-ins.md#identity-mfa) puede ayudarle con esta opción.
+
+#### <a name="how-to-test"></a>Procedimiento de prueba
+
+1.  Cree una cuenta de usuario de prueba y asígnele una licencia. 
+2.  Configure la Azure Multi-Factor Authentication para la cuenta de usuario de prueba con el método de verificación adicional que está utilizando para las cuentas de usuario reales, por ejemplo, el envío de un mensaje de texto a su teléfono. 
+3.  Inicie sesión en el portal de Office 365 con la cuenta de usuario de prueba.
+4.  Asegúrese de que MFA le pide la información de verificación adicional y que la autenticación se complete correctamente. 
+5.  Elimine la cuenta de usuario de prueba.
+
+<a name="crit-identity-ident-prot"></a>
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>Opcional: Azure AD Identity Protection está habilitado para proteger contra riesgos de credenciales (sólo Microsoft 365 Enterprise E5)
+
+Habilitó Azure AD Identity Protection para:
+
+- Solucionar posibles vulnerabilidades de identidad.
+- Detectar posibles intentos de uso ilícito de credenciales.
+- Investigar y solucionar incidentes de identidad sospechosos y continuados.
+
+Si omite esta opción, no podrá detectar ni combatir automáticamente intentos de acceso ilícito a credenciales, ni podrá investigar los incidentes de seguridad relacionados con identidades. Esto deja a su organización vulnerable ante posibles ataques de acceso ilícito a credenciales y la amenaza resultante para la información confidencial de su organización.
+
+Si es necesario, el [paso 3](../identity-secure-user-sign-ins.md#identity-ident-prot) puede ayudarle con esta opción.
+
+
+#### <a name="how-to-test"></a>Procedimiento de prueba
+
+1. Cree una cuenta de usuario de prueba con una contraseña inicial.
+2. Siga los pasos que se indican en [Dejar que los usuarios restablezcan sus propias contraseñas en Office 365](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords) para restablecer la contraseña en la cuenta de usuario de prueba.
+3. Cierre la sesión y, después, inicie sesión con la cuenta de usuario de prueba con la contraseña restablecida.
+4. Elimine la cuenta de usuario de prueba.
 
 <a name="crit-identity-sync"></a>
-### <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>Obligatorio: Los usuarios y grupos se sincronizarán con Azure AD
+### <a name="required-for-hybrid-identity-users-and-groups-are-synchronized-with-azure-ad"></a>Obligatorio para la identidad híbrida: los usuarios y grupos se sincronizarán con Azure AD
 
 Si ya usa un proveedor de identidades local, como Active Directory Domain Services (AD DS), quiere decir que usó Azure AD Connect para sincronizar las cuentas de usuario y los grupos de su proveedor de identidades local con el espacio empresarial de Azure AD.
 
 Con la sincronización de directorios, los usuarios pueden iniciar sesión en Office 365 y en otros Servicios en la nube de Microsoft con las mismas credenciales que usen para iniciar sesión en sus equipos y para obtener acceso a recursos locales.
 
-Si es necesario, el [paso 3](../identity-azure-ad-connect.md#identity-sync) puede ayudarle a cumplir este requisito.
+Si es necesario, el [Paso 4](../identity-add-user-accounts.md#identity-sync) puede ayudarle a cumplir este requisito.
 
 Si omite este requisito, tendrá dos conjuntos de cuentas de usuario y grupos:
 
-- Cuentas de usuario y grupos que existen en su AD DS local
+- Cuentas de usuario y grupos que existen en AD DS local
 - Cuentas de usuario y grupos que existen en el espacio empresarial de Azure AD
 
 En este estado, es necesario que tanto los administradores de TI como los usuarios realicen el mantenimiento de forma manual de los dos conjuntos de cuentas de usuario y grupos. Sin duda, esto provocará cuentas, contraseñas y grupos no sincronizados.
@@ -79,63 +148,11 @@ Siguió los pasos indicados en [Azure AD Connect Health con sincronización](htt
 
 Si omite esta opción, podrá evaluar con mayor precisión el estado de su infraestructura de identidades basada en la nube.
 
-Si es necesario, el [paso 3](../identity-azure-ad-connect.md#identity-sync-health) puede ayudarle con esta opción.
+Si es necesario, el [paso 4](../identity-add-user-accounts.md#identity-sync-health) puede resultarle útil con esta opción.
 
 #### <a name="how-to-test"></a>Procedimiento de prueba
 El portal Azure AD Connect Health muestra el estado actual y correcto de sus controladores de dominio locales y la sincronización en curso.
 
-<a name="crit-identity-mfa"></a>
-### <a name="optional-multi-factor-authentication-is-enabled-for-your-users"></a>Opcional: La autenticación multifactor está habilitada para los usuarios
-
-Ha utilizado[Plan para la autenticación de múltiples factores](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) y [políticas de acceso condicional](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)para habilitar la autenticación de múltiples factores (MFA) para sus cuentas de usuario.
-
-Si omite esta opción, las cuentas de usuario serán vulnerables a ciberatacantes que intenten apropiarse de las credenciales. Si la contraseña de una cuenta de usuario está en peligro, el atacante tendrá acceso todos los recursos y funciones de la cuenta (como los roles de administrador). Esto permite al atacante copiar, destruir o pedir un rescate por los documentos internos y otros datos.
-
-Si es necesario, el [paso 4](../identity-multi-factor-authentication.md#identity-mfa) puede ayudarle con esta opción.
-
-#### <a name="how-to-test"></a>Procedimiento de prueba
-
-1.  Cree una cuenta de usuario de prueba y asígnele una licencia. 
-2.  Configure la autenticación multifactorial para la cuenta de usuario de prueba con el método de verificación adicional que está utilizando para las cuentas de usuario reales, por ejemplo, el envío de un mensaje de texto a su teléfono. 
-3.  Inicie sesión en Office 36 o en Azure Portal con la cuenta de usuario de prueba.
-4.  Asegúrese de que MFA le pide la información de verificación adicional y que la autenticación se complete correctamente. 
-5.  Elimine la cuenta de usuario de prueba.
-
-<a name="crit-password-prot"></a>
-### <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a>Opcional: la protección con contraseña de Azure AD no permite el uso de contraseñas poco seguras
-
-Se habilitó el bloqueo de contraseñas incorrectas [en la nube](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) y para los[ Servicios de dominio de Active Directory (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) locales para contraseñas prohibidas globales y, opcionalmente, para términos personalizados.
-
-Si es necesario, el [paso 4](../identity-multi-factor-authentication.md#identity-password-prot) puede ayudarle con esta opción.
-
-<a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>Opcional: Azure AD Identity Protection está habilitado para proteger contra riesgos de credenciales (sólo Microsoft 365 Enterprise E5)
-
-Habilitó Azure AD Identity Protection para:
-
-- Solucionar posibles vulnerabilidades de identidad.
-- Detectar posibles intentos de uso ilícito de credenciales.
-- Investigar y solucionar incidentes de identidad sospechosos y continuados.
-
-Si omite esta opción, no podrá detectar ni combatir automáticamente intentos de acceso ilícito a credenciales, ni podrá investigar los incidentes de seguridad relacionados con identidades. Esto deja a su organización vulnerable ante posibles ataques de acceso ilícito a credenciales y la amenaza resultante para la información confidencial de su organización.
-
-Si es necesario, el [paso 4](../identity-multi-factor-authentication.md#identity-ident-prot) puede ayudarle con esta opción.
-
-<a name="crit-identity-pw-reset"></a>
-### <a name="optional-users-can-reset-their-own-passwords"></a>Opcional: los usuarios pueden restablecer sus propias contraseñas
-
-Usó la [implementación rápida de autoservicio de restablecimiento de contraseña de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) para configurar el restablecimiento de contraseña de los usuarios.
-
-Si no cumple esta condición, los usuarios tendrán que ponerse en contacto con los administradores de cuentas de usuario para restablecer sus contraseñas, lo que producirá una sobrecarga administrativa adicional para el personal de TI.
-
-Si necesita ayuda con esta opción, vea el [paso 5](../identity-password-reset.md#identity-pw-reset).
-
-#### <a name="how-to-test"></a>Procedimiento de prueba
-
-1. Cree una cuenta de usuario de prueba con una contraseña inicial.
-2. Siga los pasos que se indican en [Dejar que los usuarios restablezcan sus propias contraseñas en Office 365](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords) para restablecer la contraseña en la cuenta de usuario de prueba.
-3. Cierre la sesión y, después, inicie sesión con la cuenta de usuario de prueba con la contraseña restablecida.
-4. Elimine la cuenta de usuario de prueba.
 
 <a name="crit-identity-pw-writeback"></a>
 ### <a name="optional-password-writeback-is-enabled-for-your-users"></a>Opcional: La escritura diferida de contraseñas está habilitada para los usuarios
@@ -144,7 +161,7 @@ Siguió las instrucciones que se indican en [SSPR de Azure AD con escritura dife
 
 Si omite esta opción, los usuarios que no estén conectados a la red local tendrán que pedir a un administrador de TI que restablezca o desbloquee sus contraseñas de AD DS.
 
-Si necesita ayuda con esta opción, vea el [paso 5](../identity-password-reset.md#identity-pw-writeback).
+Si es necesario, el [paso 4](../identity-add-user-accounts.md#identity-pw-writeback) puede ayudarle con esta opción.
 
 >[!Note]
 >La escritura diferida de contraseñas es necesaria para usar todas las características de protección Azure AD Identity Protection, como solicitar a los usuarios que cambien sus contraseñas locales cuando Azure AD detecte un alto riesgo de peligro para la cuenta.
@@ -154,33 +171,16 @@ Si necesita ayuda con esta opción, vea el [paso 5](../identity-password-reset.m
 
 Puede probar la escritura diferida de contraseñas cambiando la contraseña en Office 365. Debería poder usar su cuenta y su contraseña nueva para acceder a los recursos locales de AD DS.
 
-1. Cree una cuenta de usuario de prueba en su AD DS local, permita que se produzca la sincronización de directorios y, a continuación, conceda una licencia de Microsoft 365 Enterprise en el centro de administración de Microsoft 365.
+1. Cree una cuenta de usuario de prueba en su AD DS local, permita que se produzca la sincronización de directorios y, a continuación, conceda una licencia de Microsoft 365 Enterprise en el Centro de administración de Microsoft 365.
 2. Desde un equipo remoto unido al dominio local de AD DS, inicie sesión en el equipo y en el portal de Office con las credenciales de la cuenta de usuario de prueba.
 3. Seleccione **Configuración > Configuración de Office 365 > Contraseña > Cambiar contraseña**.
 4. Escriba la contraseña actual, la nueva contraseña y la confirmación de contraseña.
 5. Cierre la sesión del portal de Office y del equipo remoto e inicie sesión en el equipo con la cuenta de usuario de prueba y su contraseña nueva. Esto comprueba que puede cambiar la contraseña de una cuenta de usuario local de AD DS usando el espacio empresarial de Azure AD.
 
-<a name="crit-identity-sso"></a>
-### <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>Opcional: Los usuarios pueden iniciar sesión con el inicio de sesión único de conexión directa de Azure AD.
-
-Habilitó [Azure AD Connect: Inicio de sesión único de conexión directa](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) en su organización para simplificar la forma en que los usuarios inician sesión en las aplicaciones basadas en la nube, como Office 365.
-
-Si omite esta opción, es posible que se pida a sus usuarios que proporcionen credenciales cuando accedan a aplicaciones adicionales que utilicen su espacio empresarial de Azure AD.
-
-Si necesita ayuda con esta opción, vea el [paso 5](../identity-password-reset.md#identity-sso).
-
-<a name="crit-identity-custom-sign-in"></a>
-### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Opcional: La pantalla de inicio de sesión de Office 365 está personalizada para su organización
-
-Siguió los pasos indicados en [Agregar personalización de marca de la compañía a las páginas de inicio de sesión y del panel de acceso](http://aka.ms/aadpaddbranding) para agregar la personalización de marca de su organización a la página de inicio de sesión de Office 365.
-
-Si omitió esta opción, los usuarios verán una pantalla de inicio de sesión de Office 365 genérica y es posible que no estén seguros de si inician la sesión en el sitio de su organización.
-
-Si necesita ayuda con esta opción, vea el [paso 5](../identity-password-reset.md#identity-custom-sign-in).
-
 #### <a name="how-to-test"></a>Procedimiento de prueba
 
-Inicie sesión en el portal de Office 365 con el nombre de la cuenta de usuario y la autenticación multifactor. Verá los elementos de personalización de marca en la página de inicio de sesión.
+Inicie sesión en el portal de Office 365 con el nombre de usuario de su cuenta y la Azure Multi-Factor Authentication. En la página de inicio de sesión, verá los elementos personalizados de su marca.
+
 
 <a name="crit-identity-self-service-groups"></a>
 ### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>Opcional: La administración de grupos de autoservicio está habilitada para grupos específicos de Office 365 y seguridad de Azure AD
@@ -189,7 +189,7 @@ Determinó los grupos adecuados para la administración de autoservicio, inform�
 
 Si omite esta opción, los administradores de TI tendrán que realizar todas las tareas de administración de grupos de Azure AD.
 
-Si es necesario, el [paso 6](../identity-self-service-group-management.md#identity-self-service-groups) puede ayudarle con esta opción.
+Si necesita ayuda con esta opción, vea el [paso 5](../identity-use-group-management.md#identity-self-service-groups).
 
 #### <a name="how-to-test"></a>Procedimiento de prueba
 1.  Cree una cuenta de usuario de prueba en Azure AD con Azure Portal.
@@ -213,7 +213,7 @@ Si omite esta opción, será necesario asignar la pertenencia a grupos de forma 
 
 Si los grupos “Ventas” o “Contabilidad” fueran dinámicos, solo tendría que cambiar el valor de “Departamento” de la cuenta de usuario.
 
-Si es necesario, el [paso 6](../identity-self-service-group-management.md#identity-dyn-groups) puede ayudarle con esta opción.
+Si necesita ayuda con esta opción, vea el [paso 5](../identity-use-group-management.md#identity-dyn-groups).
 
 #### <a name="how-to-test"></a>Procedimiento de prueba
 
@@ -227,23 +227,24 @@ Si es necesario, el [paso 6](../identity-self-service-group-management.md#identi
 <a name="crit-identity-group-license"></a>
 ### <a name="optional-group-based-licensing-to-automatically-assign-and-remove-licenses-to-user-accounts-based-on-group-membership"></a>Opcional: licencias basadas en grupos para asignar y quitar automáticamente licencias a cuentas de usuario basándose en la pertenencia a grupos
 
-Habilitó[ las licencias basadas en grupos](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) para los grupos de seguridad de Azure AD apropiados para que sus licencias de Microsoft 365 Enterprise se asignen o no se asignen automáticamente.
+[Habilitó las licencias basadas en grupos](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) para los grupos de seguridad de Azure AD correspondientes para que se asignen o quiten automáticamente las licencias de Microsoft 365 Enterprise.
 
 Si omite esta opción, tendrá que realizar estos pasos de forma manual:
 
 - Asigne licencias a los nuevos usuarios a los que desea tener acceso.
 - Anule la asignación de licencias de usuarios que ya no están en su organización o que no tienen acceso.
 
-Si es necesario, el [paso 6](../identity-self-service-group-management.md#identity-group-license) puede ayudarle con esta opción.
+Si necesita ayuda con esta opción, vea el [paso 5](../identity-use-group-management.md#identity-group-license).
 
 #### <a name="how-to-test"></a>Procedimiento de prueba
 
-1. Cree un grupo de seguridad de prueba en Azure AD en el portal Azure y configure la licencia basada en grupos para asignar la licencia Microsoft 265 Enterprise.
+1. Cree un grupo de seguridad de prueba en Azure AD en el portal Azure y configure la licencia basada en grupos para asignar la licencia Microsoft 365 Enterprise.
 2. Cree una cuenta de usuario de prueba en Azure AD y añádala al grupo de seguridad de prueba.
-3. Examinar las propiedades de la cuenta de usuario en el centro de administración de Microsoft 365 para asegurarse de que se le asignó la licencia de Microsoft 265 Enterprise.
+3. Examinar las propiedades de la cuenta de usuario en el centro de administración de Microsoft 365 para asegurarse de que se le asignó la licencia de Microsoft 365 Enterprise.
 4. Elimine la cuenta de usuario de prueba del grupo de seguridad de prueba..
-5. Examine las propiedades de la cuenta de usuario para asegurarse de que ya no tiene asignada la licencia de Microsoft 265 Enterprise.
+5. Examine las propiedades de la cuenta de usuario para asegurarse de que ya no tiene asignada la licencia de Microsoft 365 Enterprise.
 6. Elimine el grupo de seguridad de prueba y la cuenta de usuario de prueba.
+
 
 <a name="crit-identity-access-reviews"></a>
 ### <a name="optional-access-reviews-configured-and-being-used-to-monitor-access"></a>Opcional: Revisiones de acceso configuradas y en uso para controlar el acceso
@@ -254,4 +255,4 @@ Utilizó estos artículos para configurar distintos tipos de revisiones de acces
 - [Roles de Azure AD](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 - [Roles de recursos de Azure](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
-Si es necesario, el [paso 7](../identity-governance.md#identity-access-reviews) puede resultarle útil con esta opción.
+Si es necesario, el [paso 6](../identity-configure-identity-governance.md#identity-access-reviews) puede ayudarle con esta opción.
