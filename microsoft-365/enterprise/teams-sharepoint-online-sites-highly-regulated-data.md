@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un sitio de grupo de SharePoint Online o un equipo de Microsoft Teams para almacenar los recursos digitales más valiosos y confidenciales.
-ms.openlocfilehash: 04984be44ddb2cc1aabc2032970f92e71899b268
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 1243a88e6553b1d58370a60b5e2fec38d3dbcaf6
+ms.sourcegitcommit: 681ae93ca1d07532944665cf5d99ff1f08c0b46a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047351"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37210056"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Sitios de Microsoft Teams y SharePoint Online para datos altamente regulados
 
@@ -64,7 +64,7 @@ Este escenario requiere que ya haya implementado:
 - Para datos altamente regulados en sitios de grupo de SharePoint Online, [SharePoint Online](sharepoint-online-onedrive-workload.md).
 - Para datos altamente regulados en equipos de Microsoft Teams, [Microsoft Teams](teams-workload.md).
 
-Las siguientes fases le guiarán a través del diseño, la configuración y la adopción de impulso de los sitios y grupos de datos altamente regulados de SharePoint Online.
+Las siguientes fases le ayudan a diseñar, configurar e impulsar la adopción de sitios y equipos de SharePoint Online para datos altamente regulados.
 
 Para ver cómo Contoso Corporation, una organización multinacional ficticia pero representativa, diseñó un sitio de SharePoint Online para los equipos de investigación, vea esta [configuración de ejemplo](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
