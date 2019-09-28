@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: Los administradores pueden aprender a crear una colección de certificados virtuales que se usará para validar certificados S/MIME en Exchange Online.
-ms.openlocfilehash: 51649c6e41c6171896e04d213b73f2e51cb6c6de
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0848fc974c48b442f9106125b847db5f8ec0d0c3
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093655"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306104"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>Configurar una colección de certificados virtuales en Exchange Online para validar S/MIME
 
@@ -29,13 +29,13 @@ Puede crear este archivo de almacén de certificados SST exportando los certific
 
 Una vez que tenga el archivo del almacén de certificados SST, use la siguiente sintaxis en Exchange Online PowerShell para guardar el contenido del archivo SST en el almacén de certificados virtuales de Exchange Online. Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
-```
+```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)
 ```
 
 En este ejemplo se importa el archivo SST C:\Mis Documentos\exported rules de certificados Store. SST.
 
-```
+```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
 ```
 

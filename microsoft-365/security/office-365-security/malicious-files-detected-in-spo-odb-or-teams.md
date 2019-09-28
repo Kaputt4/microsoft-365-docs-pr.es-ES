@@ -14,12 +14,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre dónde ver información sobre los archivos malintencionados detectados en SharePoint, OneDrive o Teams, y cómo tomar medidas en esos archivos.
-ms.openlocfilehash: b16ba88cd4984754f92fac2917f0f2b393600692
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2271ec7822efd442474aa322535da26d42788db
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093529"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306114"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Ver información sobre los archivos malintencionados detectados en SharePoint, OneDrive o Microsoft Teams
 
@@ -43,21 +43,21 @@ Para ver información detallada y de estado sobre los archivos detectados por Of
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Ver y emprender acciones en los archivos en cuarentena
 
-1. En el centro de seguridad &amp; y cumplimiento de Office 365, seleccione Quarantine **Management** \> **Review** \> **Quarantine**.
+1. En el centro de seguridad &amp; y cumplimiento de Office 365, seleccione Quarantine **Management** \> **Review** \> **Quarantine**. (También puede ir directamente a [https://protection.office.com/quarantine](https://protection.office.com/quarantine)).
     
-2. En la esquina superior izquierda, cambie el filtro de **correo electrónico** a **contenido**.
+2. En la esquina superior izquierda, cambie el menú desplegable de **mensajes de correo electrónico** a **archivos**. Si la lista de resultados incluye demasiados elementos, use la funcionalidad de **filtro** para restringir la selección.
     
 3. Seleccione un elemento de la lista para ver información detallada, incluida la dirección URL del archivo.
     
 4. Elija una acción disponible.
     
-  - Elija **Informe &amp; de versión** para desbloquear el archivo. 
+  - Seleccione **liberar archivo** para desbloquear el archivo. 
     
     Seleccione **Enviar informe a Microsoft** para informar del archivo como falso positivo a Microsoft. 
     
   - Elija **Descargar archivo** para investigar más el archivo. 
     
-  - Elija **eliminar** para quitar el archivo de la lista de elementos en cuarentena. Si elige esta opción, también debe eliminar el archivo de su biblioteca correspondiente en SharePoint Online, OneDrive para la empresa o Microsoft Teams. Esta opción no bloquea la apertura o el uso compartido de un archivo. 
+  - Elija **quitar de cuarentena** para quitar el archivo de la lista de elementos en cuarentena. Si elige esta opción, también debe eliminar el archivo de su biblioteca correspondiente en SharePoint Online, OneDrive para la empresa o Microsoft Teams. Esta opción no bloquea la apertura o el uso compartido de un archivo. 
     
 5. Elija **cerrar** para cerrar los detalles de un elemento seleccionado. 
   

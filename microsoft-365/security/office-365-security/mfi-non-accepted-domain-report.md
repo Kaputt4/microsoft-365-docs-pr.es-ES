@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de dominio no aceptado en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: d8684f49cca100217b998e5dc8c31b25875d97b7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d256eb99a573b3dc9a6e1bcd14bffdd0800081c
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093481"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306174"
 ---
 # <a name="non-accepted-domain-report"></a>Informe de dominio no aceptado
 
@@ -32,6 +32,6 @@ Al seleccionar una fila en la tabla, un control flotante le mostrará más detal
 
 ![Selección de una fila en la tabla de detalles en el informe de dominio no aceptado](../media/non-accepted-domain-report-select-row-in-table.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

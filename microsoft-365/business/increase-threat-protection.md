@@ -10,19 +10,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: Configurar la protección contra amenazas avanzada de Office 365 y proteger los datos confidenciales.
-ms.openlocfilehash: b6e9941eee9de4f295b0f8056c1c91b7076e530c
-ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
+ms.openlocfilehash: 81197a8baf1c4d0cbfd898c41a305c1a99bab57c
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668408"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288123"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -131,9 +129,9 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
     
 3. En la página **Directiva** , elija **ATP antiphishing**.
     
-4. En la página contra la suplantación de **identidad** , seleccione **+ crear**. Se inicia un asistente que le guía por el proceso de definición de la Directiva antiphishing.
+4. En la página **contra la suplantación de identidad** , seleccione **+ crear**. Se inicia un asistente que le guía por el proceso de definición de la Directiva antiphishing.
     
-5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, consulte [información sobre las opciones de directiva](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) de antiphishing de ATP. 
+5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, consulte [información sobre las opciones de directiva de antiphishing de ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) . 
     
 6. Una vez que haya revisado la configuración, elija **crear esta directiva** o **Guardar**, según corresponda.
     

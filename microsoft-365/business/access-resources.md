@@ -8,27 +8,22 @@ ms.topic: article
 ms.service: o365-administration
 ms.collection: M365-subscription-management
 localization_priority: Normal
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Obtenga información sobre cómo obtener acceso a recursos locales como líneas de aplicaciones empresariales, recursos compartidos de archivos e impresoras desde un dispositivo Windows 10 conectado a Azure Active Directory.
-ms.openlocfilehash: ab9049e78617372463b8446dc8f8bc0089d8c117
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 26ba0ffb64ddce32369002120657456e47ac0c7f
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981669"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287363"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Business
 
-Cualquier dispositivo de Windows 10 que se haya unido a Azure Active Directory tendrá acceso a todos los recursos basados en la nube, como las aplicaciones de Office 365 y puede ser protegido por Microsoft 365 Business. Para permitir también el acceso a recursos locales como aplicaciones de línea de negocio (LOB), recursos compartidos de archivos e impresoras, debe sincronizar su Active Directory local con Azure Active Directory mediante [Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). En el vídeo siguiente se detallan los pasos para configurar esto para el escenario más común.
- 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
+Cualquier dispositivo de Windows 10 que se haya unido a Azure Active Directory tendrá acceso a todos los recursos basados en la nube, como las aplicaciones de Office 365 y puede ser protegido por Microsoft 365 Business. Para permitir también el acceso a recursos locales como aplicaciones de línea de negocio (LOB), recursos compartidos de archivos e impresoras, debe sincronizar su Active Directory local con Azure Active Directory mediante [Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). 
 
 Consulte [Introduction to Device Management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) para obtener más información.
 Los pasos también se resumen en las secciones siguientes.

@@ -13,21 +13,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Información general sobre la configuración de los pasos para Microsoft 365 Business.
-ms.openlocfilehash: ae7ed0aab36a6e759e0f0c1fbc3d3183273a284e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074410"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288583"
 ---
 # <a name="overview-of-setup"></a>Información general sobre el programa de instalación
 
@@ -36,7 +33,7 @@ La mayoría de los pasos de configuración pueden realizarse en el Asistente de 
 
 ## <a name="step-1-add-your-domain-and-users"></a>Paso 1: agregar el dominio y los usuarios
 
-   - **[Agregar el dominio](set-up.md#add-your-domain-to-personalize-sign-in)** (si ha comprado su dominio durante el [Inicio de sesión](sign-up.md), este paso ya se ha realizado).
+   - **[Agregar el dominio](set-up.md#add-your-domain-to-personalize-sign-in)** (si ha comprado su dominio durante el [registro](sign-up.md), este paso ya se ha realizado).
 
     - **Agregar usuarios**. Puede hacerlo de las tres maneras siguientes:
         - En el [Asistente](set-up.md#add-users-in-the-wizard).
@@ -45,7 +42,7 @@ La mayoría de los pasos de configuración pueden realizarse en el Asistente de 
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Paso 2: configurar directivas de seguridad y configurar dispositivos 
 
   - Use el [Asistente de configuración](set-up.md#set-up-security-policies-and-device-configurations) para configurar las directivas de dispositivo y seguridad. 
-  - También puede agregar más o editarlos más adelante en el [centro de administración](view-policies-and-devices.md) y en el [portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)de Intune.
+  - También puede agregar más o editarlos más adelante en el [centro de administración](view-policies-and-devices.md) y en el [portal de Intune](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
   - Además de la configuración de seguridad del asistente de configuración, puede aumentar la seguridad si agrega las siguientes opciones de configuración:
 
       - **Protección contra malware de correo electrónico**

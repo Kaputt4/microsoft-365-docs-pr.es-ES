@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Los administradores pueden obtener información sobre cómo asignar o quitar permisos en el centro de administración de Exchange (EAC) en Exchange Online Protection.
-ms.openlocfilehash: 589d979b9a2ed3f262eb8171fe08622c225548ce
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b82836b5f9f28c3055e540890771def28382d2b
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093528"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306134"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Administrar permisos de grupos de roles de administración en EOP
-  
+
 En Microsoft Exchange Online Protection, puede usar el Centro de administración de Exchange (EAC) para convertir a un usuario en miembro de un o varios grupos de roles para asignarle permisos para hacer ciertas tareas administrativas. También puede quitar a un usuario de uno o varios grupos de roles usando el EAC.
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Tiempo estimado para finalizar: 5-10 minutos
@@ -33,7 +33,7 @@ En Microsoft Exchange Online Protection, puede usar el Centro de administración
 
 > [!TIP]
 > ¿Problemas? Solicite ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
-  
+
 ## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>Usar el EAC para agregar miembros a grupos de roles de administrador
 
 1. En el EAC, vaya a **** \> **roles de administrador**de permisos, haga clic en el grupo de roles al que desea agregar el usuario o usuarios y, a continuación](../media/ITPro-EAC-EditIcon.gif), haga clic en **Editar** ![icono de edición.
@@ -47,8 +47,8 @@ En Microsoft Exchange Online Protection, puede usar el Centro de administración
 5. Verá que el usuario se agregó al panel **Miembros**. Haga clic en **Guardar**.
 
    > [!NOTE]
-   > Puede que los usuarios tengan que cerrar la sesión e iniciarla de nuevo para ver los cambios en sus permisos administrativos después de agregar o quitar miembros de ese grupo de roles. 
-  
+   > Puede que los usuarios tengan que cerrar la sesión e iniciarla de nuevo para ver los cambios en sus permisos administrativos después de agregar o quitar miembros de ese grupo de roles.
+
 ## <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Usar el EAC para quitar miembros de grupos de roles de administrador
 
 1. En el EAC, vaya a **** \> **roles de administrador**de permisos, haga clic en el grupo de roles del que desea quitar un usuario o usuarios y, a continuación](../media/ITPro-EAC-EditIcon.gif), haga clic en **Editar** ![icono de edición.
@@ -59,7 +59,7 @@ En Microsoft Exchange Online Protection, puede usar el Centro de administración
 
    > [!NOTE]
    > Puede que los usuarios tengan que cerrar la sesión e iniciarla de nuevo para ver los cambios en sus permisos administrativos después de agregar o quitar miembros de ese grupo de roles.
-  
+
 ## <a name="for-more-information"></a>Más información
 
 [Permisos de características en EOP](feature-permissions-in-eop.md)

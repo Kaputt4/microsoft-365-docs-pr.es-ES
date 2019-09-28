@@ -11,22 +11,18 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Obtenga información sobre cómo validar la configuración de protección de aplicaciones empresariales de Microsoft 365 en dispositivos Windows 10.
-ms.openlocfilehash: 15c2d54c6281369875d15985c9d4ed16f0114176
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 66e83df19e44419b37bcc1c5678ab13317162dbc
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072247"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288603"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de dispositivos en equipos con Windows 10
 
@@ -34,7 +30,7 @@ ms.locfileid: "34072247"
 
 Una vez que haya [configurado las directivas de dispositivos](protection-settings-for-windows-10-pcs.md), la Directiva puede tardar hasta unas pocas horas en aplicarse a los dispositivos de los usuarios. Para confirmar que las directivas tuvieron efecto, consulte varias pantallas de configuración de Windows en los dispositivos de los usuarios. Como los usuarios no podrán modificar la configuración de Windows Update y antivirus de Windows Defender en sus dispositivos con Windows 10, se mostrarán muchas opciones en gris.
   
-1. Vaya a **configuración** \> **actualización &amp; seguridad** \> **Windows Update** \> **** restart y confirme que todas las opciones están atenuadas. 
+1. Vaya a **configuración** \> **actualización &amp; seguridad** \> **Windows Update** \> **restart** y confirme que todas las opciones están atenuadas. 
     
     ![Todas las opciones de reinicio están atenuadas.](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   

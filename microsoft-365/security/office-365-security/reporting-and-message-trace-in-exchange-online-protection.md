@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) ofrece muchos informes distintos que le permitirán averiguar el estado general y el mantenimiento de la organización. También hay herramientas para ayudarle a solucionar problemas de eventos específicos (por ejemplo, un mensaje que no llegue a sus destinatarios) e informes de auditoría para ayudar con los requisitos de cumplimiento normativo. La tabla siguiente describe los informes y las herramientas de solución de problemas disponibles para los administradores de EOP.
-ms.openlocfilehash: 39ac70c401cb4a630b95fab89fe3a145495c29eb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e1a07d8872bee89689f8ce3e16a87bb69c4b6903
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091610"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306094"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Informes y seguimiento de mensajes en Exchange Online Protection
 
@@ -23,11 +23,11 @@ Microsoft Exchange Online Protection (EOP) ofrece muchos informes distintos que 
 
 ## <a name="usage-reports"></a>Informes de uso
 
-**Office 365 actividad de grupos**: ver información sobre el número de grupos de Office 365 que se crean y usan.  
+**Office 365 actividad de grupos**: ver información sobre el número de grupos de Office 365 que se crean y usan.
 
-**Actividad de correo electrónico**: ver información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos.  
+**Actividad de correo electrónico**: ver información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos.
 
-**Uso de la aplicación de correo electrónico**: ver información sobre las aplicaciones de correo electrónico que se usan. Esto incluye el número total de conexiones de cada aplicación y las versiones de Outlook que se conectan.  
+**Uso de la aplicación de correo electrónico**: ver información sobre las aplicaciones de correo electrónico que se usan. Esto incluye el número total de conexiones de cada aplicación y las versiones de Outlook que se conectan.
 
 **Uso de buzón de correo**: ver información sobre el almacenamiento usado, el consumo de cuotas, el recuento de elementos y la última actividad (actividad de envío o lectura) para los buzones.
 
@@ -43,11 +43,11 @@ Consulte los recursos siguientes para obtener más información:
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Informes de cumplimiento de & de seguridad en el centro de administración de Microsoft 365
 
-Estos informes mejorados proporcionan una experiencia de creación de informes interactiva para los administradores de EOP, que incluye información de Resumen y la capacidad de profundizar para obtener más detalles.  
+Estos informes mejorados proporcionan una experiencia de creación de informes interactiva para los administradores de EOP, que incluye información de Resumen y la capacidad de profundizar para obtener más detalles.
 
-**Protección contra amenazas avanzada (ATP)**: ver información sobre vínculos seguros y datos adjuntos seguros que forman parte de ATP.  
+**Protección contra amenazas avanzada (ATP)**: ver información sobre vínculos seguros y datos adjuntos seguros que forman parte de ATP.
 
-**EOP**: ver información sobre las detecciones de malware, el correo falsificado, las detecciones de correo no deseado y el flujo de correo hacia y desde la organización.  
+**EOP**: ver información sobre las detecciones de malware, el correo falsificado, las detecciones de correo no deseado y el flujo de correo hacia y desde la organización.
 
 [Ver informes para la protección contra amenazas avanzada y la protección en línea de Exchange](https://go.microsoft.com/fwlink/p/?linkid=852409)
 
@@ -63,9 +63,9 @@ Consulte [servicios Web de informes de Office 365](https://go.microsoft.com/fwli
 
 ## <a name="message-trace"></a>Seguimiento de mensajes
 
-Sigue los mensajes de correo electrónico mientras viajan a través de EOP. Puede determinar si un mensaje de correo electrónico se ha recibido, rechazado, aplazado o entregado por el servicio. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.  
+Sigue los mensajes de correo electrónico mientras viajan a través de EOP. Puede determinar si un mensaje de correo electrónico se ha recibido, rechazado, aplazado o entregado por el servicio. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
 
-Puede usar esta información para responder de forma eficaz a las preguntas del usuario, solucionar problemas del flujo de correo, validar los cambios en la Directiva y aliviar la necesidad de ponerse en contacto con el soporte técnico para obtener ayuda.  
+Puede usar esta información para responder de forma eficaz a las preguntas del usuario, solucionar problemas del flujo de correo, validar los cambios en la Directiva y aliviar la necesidad de ponerse en contacto con el soporte técnico para obtener ayuda.
 
 Consulte [seguimiento de un mensaje de correo electrónico](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)
 
@@ -76,7 +76,7 @@ Realiza un seguimiento de los cambios específicos realizados por los administra
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Informes, disponibilidad y latencia de los datos de seguimiento de mensajes
 
 En la tabla siguiente se describe cuándo están disponibles los informes y los datos de seguimiento de mensajes de EOP y durante cuánto tiempo.
-  
+
 ||||
 |:-----|:-----|:-----|
 |**Tipo de informe**|**Datos disponibles (período retrospectivo)**|**Latencia**|
@@ -85,4 +85,4 @@ En la tabla siguiente se describe cuándo están disponibles los informes y los 
 |Datos de seguimiento de mensajes|90 días|Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad menor a 7 días, los mensajes deberían aparecer en un plazo de 5 a 30 minutos.<br/><br/> Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad mayor a 7 días, los resultados pueden tardar hasta unas cuantas horas.|
 
 > [!NOTE]
-> La disponibilidad y la latencia de los datos son las mismas si se solicitan a través del centro de administración de Microsoft 365 o de PowerShell remoto. 
+> La disponibilidad y la latencia de los datos son las mismas si se solicitan a través del centro de administración de Microsoft 365 o de PowerShell remoto.

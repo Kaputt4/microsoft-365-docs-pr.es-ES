@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre la información sobre el dominio del remitente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 42a673c5e6b04109656ef35bb5a80504ed1f42a9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bda6482b2c9264337db9e95f84ff41ce08582363
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093459"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306154"
 ---
 # <a name="fix-sender-domain-insight"></a>Revisión del conocimiento del dominio del remitente
 
@@ -44,6 +44,6 @@ Verá el conector de entrada que se usó para entregar los mensajes a Office 365
 
 ![Ver identificadores de mensaje de ejemplo en el información de dominio del remitente de corrección](../media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).
