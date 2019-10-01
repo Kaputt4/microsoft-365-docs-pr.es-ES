@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configure las directivas de revisión de supervisión para capturar las comunicaciones de los empleados para su revisión.
-ms.openlocfilehash: ccbc5897ef8c6fb6018793ff7e3fe7731ee14710
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dae8969598f5a71814c1b61db83341f30c0cb9d7
+ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092015"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37317622"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar directivas de supervisión para su organización
 
@@ -52,10 +52,6 @@ Siga estos pasos para configurar y usar la supervisión en su organización de O
 - **Paso 5 (opcional)**: [probar la Directiva de supervisión](#step-5-test-your-supervision-policy-optional)
 
     Pruebe la Directiva de supervisión para asegurarse de que funciona según lo deseado. Es importante asegurarse de que la estrategia de cumplimiento cumple los estándares.
-
-- **Paso 6 (opcional)**: [configurar Outlook para revisores que no desean usar el panel de supervisión de Office 365 para revisar las comunicaciones supervisadas](#step-6-configure-outlook-for-reviewers-optional)
-
-    Configure Outlook para proporcionar a los revisores acceso a la funcionalidad de supervisión del cliente de Outlook para que puedan evaluar y clasificar cada elemento.
 
 ## <a name="step-1-set-up-groups-for-supervision-optional"></a>Paso 1: configurar grupos para supervisión (opcional)
 
@@ -181,70 +177,10 @@ Después de crear una directiva de supervisión, es aconsejable probarla para as
 1. Abra un cliente de correo electrónico o Microsoft teams que haya iniciado sesión como usuario supervisado definido en la Directiva que desea probar.
 2. Envíe un correo electrónico o un chat de Microsoft teams que cumpla los criterios que haya definido en la Directiva de supervisión. Puede ser una palabra clave, el tamaño de los datos adjuntos, el dominio, etc. Asegúrese de determinar si la configuración condicional configurada en la Directiva es demasiado restrictiva o demasiado flexible.
 
-    > [!Note]
+    > [!NOTE]
     > Los correos electrónicos sujetos a directivas definidas se procesan casi en tiempo real y se pueden probar inmediatamente una vez configurada la Directiva. Los chats de Microsoft Teams pueden tardar hasta 24 horas en procesarse por completo en una directiva. 
 
 3. Inicie sesión en su inquilino de Office 365 como revisor designado en la Directiva de supervisión. Navegue hasta la **supervisión** > de la*Directiva* > personalizada**abierta** para ver el informe de la Directiva.
-
-## <a name="step-6-configure-outlook-for-reviewers-optional"></a>Paso 6: configurar Outlook para revisores (opcional)
-
-Los revisores que quieran usar Outlook en lugar del panel de supervisión en Office 365 para revisar las comunicaciones deben configurar su cliente de Outlook.
-
-### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Paso 1: copiar la dirección del buzón de supervisión
-
-Para configurar revisión para escritorio de Outlook, necesita la dirección del buzón de supervisión creado como parte de la configuración de la Directiva de supervisión.
-  
-> [!NOTE]
-> Si otra persona creó la Directiva, debe obtener esta dirección para instalar el complemento.
-
-**Para buscar la dirección del buzón de supervisión**
-  
-1. Inicie sesión en el [centro de cumplimiento](https://compliance.microsoft.com) usando credenciales para una cuenta de administrador de su organización.
-
-2. Vaya a **supervisión**.
-
-3. Seleccione una directiva de supervisión para las comunicaciones que quiera revisar.
-
-4. En el control flotante detalles de la Directiva, en **buzón de supervisión**, copie la dirección.<br/>![Sección "buzón de supervisión" de un control flotante de la Directiva de supervisión que muestra la dirección del buzón de supervisión resaltada](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
-  
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Paso 2: configurar el buzón de supervisión para Outlook Access
-
-A continuación, los revisores tienen que ejecutar un par de comandos de PowerShell de Exchange Online para que puedan conectar Outlook al buzón de supervisión.
-  
-1. Conexión al PowerShell de Exchange Online. [Pasos que seguir](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
-
-2. Ejecute los siguientes comandos, donde *SupervisoryReview {GUID} @domain. onmicrosoft.com* es la dirección que copió en el paso 1 anterior y *User* es el nombre del revisor que se conectará al buzón de supervisión en el paso 3.
-
-    ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
-
-    ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
-
-3. Espere al menos una hora antes de continuar con el paso 3.
-
-### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a>Paso 3: crear un perfil de Outlook para conectar con el buzón de supervisión
-
-En el último paso, los revisores tienen que crear un perfil de Outlook para conectarse al buzón de correo de supervisión.
-
-> [!NOTE]
-> Para crear un nuevo perfil de Outlook, use la configuración de correo en el panel de control de Windows. La ruta de acceso que realice para obtener esta configuración puede depender del sistema operativo Windows (Windows 7, Windows 8 o Windows 10) que esté usando y de la versión de Outlook que esté instalada.
-  
-1. Abra el panel de control. En el cuadro de **búsqueda** de la parte superior de la ventana, escriba **correo**.<br/>(¿No está seguro de cómo llegar al panel de control? Consulte [¿Dónde está el panel de control?](https://support.microsoft.com/help/13764/windows-where-is-control-panel))
-  
-2. Abra la aplicación de **correo** .
-
-3. En **configuración de correo: Outlook**, haga clic en **Mostrar perfiles**.<br/>![Cuadro de diálogo "configuración de correo: Outlook" con el botón "Mostrar perfiles" resaltado](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)
-  
-4. En **correo**, haga clic en **Agregar**. A continuación, en **nuevo perfil**, escriba un nombre para el buzón de correo de supervisión (como **supervisión**).<br/>![El cuadro de diálogo "nuevo perfil" que muestra el nombre "supervisión" en el cuadro "nombre del perfil"](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)
-  
-5. En **conectar Outlook a Office 365**, haga clic en **conectar con una cuenta diferente**.<br/>![El mensaje "conectar Outlook a Office 365" con el vínculo "conectar a otra cuenta" resaltado](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)
-  
-6. En **configuración automática**de la cuenta, elija **configuración manual o tipos de servidores adicionales**y, a continuación, haga clic en **siguiente**.
-
-7. En **elegir el tipo de cuenta**, elija **Office 365**. A continuación, en el cuadro **dirección de correo electrónico** , escriba la dirección del buzón de supervisión que copió anteriormente.<br/>![La página "Elija el tipo de cuenta" del cuadro de diálogo "Agregar cuenta" de Outlook que muestra el cuadro "dirección de correo electrónico" resaltado.](media/4f601236-9f69-4cf6-a58c-0b91204aa8cb.jpg)
-  
-8. Cuando se le solicite, escriba sus credenciales de Office 365.
-
-9. Si se ejecuta correctamente, la carpeta ** \<supervisión\> : nombre de directiva** aparece en la vista lista de carpetas de Outlook.
 
 ## <a name="powershell-reference"></a>Referencia de PowerShell
 
