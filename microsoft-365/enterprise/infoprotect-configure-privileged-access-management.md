@@ -1,5 +1,5 @@
 ---
-title: 'Paso 7: configurar la administración del acceso con privilegios para Office 365'
+title: 'Paso 7: Configurar la administración de acceso con privilegios para Office 365'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,18 +13,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Comprenda y configure la administración del acceso con privilegios para Office 365
-ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: e9c68e4fafb1e9537b403965b4360806938c6a6f
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047293"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370427"
 ---
-# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Paso 7: configurar la administración del acceso con privilegios para Office 365
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Paso 7: Configurar la administración de acceso con privilegios para Office 365
 
 *Este paso es opcional y solo es válido para las versiones E5 y de cumplimiento avanzado de Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protección de la información](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 La administración del acceso con privilegios se habilita configurando directivas que especifiquen el acceso puntual para actividades basadas en tareas en el inquilino de Office 365. Permite proteger la organización ante infracciones que puedan usar las cuentas existentes de administrador con privilegios y acceso permanente para acceder a datos confidenciales o acceder a opciones de configuración críticas. Por ejemplo, puede configurar una directiva de administración del acceso con privilegios que requiera una autorización explícita para acceder a la configuración del buzón de correo del inquilino de Office 365 y modificar la misma.
 

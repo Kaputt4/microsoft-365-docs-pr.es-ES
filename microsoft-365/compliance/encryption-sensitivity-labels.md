@@ -1,7 +1,7 @@
 ---
 title: Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: ea7eda3558313389bfa2bc752a469e00cc7ae577
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148484"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369451"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
 
@@ -135,7 +135,7 @@ Para obtener más información, vea [Emisor de administración de derechos y pro
 
 Puede usar estas opciones para que los usuarios puedan asignar permisos cuando aplican manualmente una etiqueta de confidencialidad al contenido:
 
-- En Outlook, un usuario puede aplicar restricciones equivalentes a la opción **No reenviar**. Esta opción es compatible de forma nativa en Outlook de Windows y no requiere la instalación del cliente de etiquetado unificado de Azure Information Protection.
+- En Outlook, un usuario puede aplicar restricciones equivalentes a la opción [No reenviar](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). Esta opción es compatible de forma nativa en Outlook de Windows y no requiere la instalación del cliente de etiquetado unificado de Azure Information Protection.
 - En Word, PowerPoint y Excel, se pide al usuario que seleccione un nivel de permisos para organizaciones, usuarios o grupos específicos. Esta opción no es compatible de forma nativa en estas aplicaciones de Office, por lo que los usuarios tienen que instalar el cliente de etiquetado unificado de Azure Information Protection.
 
 Estas opciones determinan las aplicaciones en las que se mostrará la etiqueta de confidencialidad:

@@ -1,5 +1,5 @@
 ---
-title: 'Paso 6: configurar el cifrado de correo electrónico'
+title: 'Paso 6: Configurar el cifrado de correo electrónico'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,18 +14,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Comprenda y configure la administración del acceso con privilegios para Office 365
-ms.openlocfilehash: 7747f5a0905a9477e9d3fd17b00eae740d76f640
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050301"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370437"
 ---
-# <a name="step-6-configure-email-encryption"></a>Paso 6: configurar el cifrado de correo electrónico
+# <a name="step-6-configure-email-encryption"></a>Paso 6: Configurar el cifrado de correo electrónico
 
 *Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protección de la información](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Hay tres tipos de cifrado de correo electrónico en Microsoft 365.
 
@@ -75,8 +75,8 @@ Para obtener más información, vea [S/MIME para la firma y el cifrado de mensaj
 
 Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step6) correspondientes a este paso.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step7.png)|[Configurar Privileged Access Management para Office 365](infoprotect-configure-privileged-access-management.md)|
+|![Paso 7](./media/stepnumbers/Step7.png)|[Configurar Privileged Access Management para Office 365](infoprotect-configure-privileged-access-management.md)|
