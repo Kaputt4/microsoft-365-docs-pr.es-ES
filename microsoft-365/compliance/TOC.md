@@ -2,6 +2,7 @@
 
 # Introducción
 ## [Novedades del centro de cumplimiento](whats-new.md)
+## [Actualizaciones recientes del contenido de cumplimiento](recently-updated-topics-mcc.md)
 ## [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md)
 ## [Ir al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md)
 ## [Usar su suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -104,7 +105,7 @@
 ### [Administrador del plan de archivos](file-plan-manager.md)
 ### [Etiquetas de retención](labels.md)
 ### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Acerca de la retención basada en eventos](event-driven-retention.md)
 ### [Retención automática basada en eventos](automate-event-driven-retention.md)
 ## [Eliminar datos](disposition-reviews.md)
@@ -125,7 +126,7 @@
 ### Plan de archivos
 #### [Administrador del plan de archivos](file-plan-manager.md)
 #### [Etiquetas de retención](labels.md)
-#### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
 #### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
 #### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
@@ -340,7 +341,9 @@
 ### [Campos de metadatos del documento](document-metadata-fields.md)
 ### [Administrar trabajos](manage-jobs.md)
 
-# [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
+# Administración de directivas de auditoría y alertas
+## [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
+## [Administrar directivas de alerta](alert-policies.md)
 ## [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md)
 ## [Administrar la auditoría de buzones de correo](enable-mailbox-auditing.md)
 ## [Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
