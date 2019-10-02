@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso implementó un sitio de SharePoint Online para datos altamente regulados para una colaboración más sencilla entre sus equipos de investigación.'
-ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 6c61d02c802a77afeb93a58b59114741c6630f9e
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072790"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369531"
 ---
 # <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sitio de SharePoint Online para activos digitales altamente confidenciales de Contoso Corporation
 
@@ -51,12 +51,12 @@ También han creado estos nuevos grupos de seguridad:
 En primer lugar, los administradores de SharePoint de Contoso creaban un nuevo sitio de grupo denominado **Research**. A continuación, se configuran:
 
 - El nivel de permiso control total para usar el grupo de SharePoint propietarios de la investigación, que tiene el grupo de seguridad **Research-Admins** como miembro
-- El nivel de permisos editar para usar el grupo de SharePoint miembros de Research, que tiene el grupo de seguridad integrantes de **investigación** como miembro
+- El nivel de permisos editar para usar el grupo de SharePoint miembros de Research, que tiene el grupo de seguridad **integrantes de investigación** como miembro
 - El nivel de permiso de lectura para usar el grupo de SharePoint visitantes de investigación, que tiene el grupo **de seguridad Research-views** como miembro
 
 Estos son los niveles de permisos resultantes de SharePoint, los grupos de SharePoint y sus miembros.
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
+![Niveles de permisos de SharePoint, grupos de SharePoint y sus miembros](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
 
 A continuación, se configuraron restricciones adicionales para el sitio.
 
@@ -88,13 +88,13 @@ Para obtener información detallada sobre la configuración, vea [proteger archi
 
 Esta es la configuración resultante del sitio de **investigación** para los activos extremadamente confidenciales.
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![La configuración resultante del sitio * * Research * * para los activos extremadamente confidenciales](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 Los archivos de las carpetas del sitio de **investigación** están protegidos por:
 
 - La subetiqueta **Research** Azure Information Protection, que aplica cifrado y permssions a cada archivo que viaja con el archivo cuando se mueve o se copia desde el sitio de **investigación** .
 - La Directiva DLP de **investigación** , que usa la etiqueta de retención y las opciones de retención **altamente confidenciales** , que impiden que el archivo se comparta con usuarios externos.
-- El conjunto de permisos de sitio, que solo permiten el acceso a los **** miembros de los grupos de seguridad Research-Members y Research **-views** y a la administración por parte de los miembros del grupo de seguridad **Research-Admins** .
+- El conjunto de permisos de sitio, que solo permiten el acceso a los miembros de los grupos de seguridad Research- **Members** y Research **-views** y a la administración por parte de los miembros del grupo de seguridad **Research-Admins** .
 
 ## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Paso 5: migrar los datos de la investigación de SharePoint local
 
@@ -114,7 +114,7 @@ El resultado final es un entorno seguro en el que los investigadores pueden cola
 
 Si se pierde del sitio de **investigación** un documento de investigación con la subetiqueta **Research** , este se cifra y es accesible sólo para los miembros de los grupos de seguridad **Research-Members** y **Research-Viewers** con credenciales válidas.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 [Implementar](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise en su organización.
 

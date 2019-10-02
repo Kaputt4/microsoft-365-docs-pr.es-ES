@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 558a35d255171ffa09f5e8610cdfc0d6ba63c9fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b80edfb0425904b03426ef0ff3cdd1d251e638ea
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093037"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369641"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -29,11 +29,25 @@ Estamos agregando de forma continuada nuevas características al [centro de cump
 > [!TIP]
 > ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
-## <a name="august-2019"></a>2019 de agosto
+## <a name="september-2019"></a>Septiembre de 2019
 
 ¿Se pregunta por qué está tranquilo en la versión inicial este mes? Nos vamos a crear soluciones de cumplimiento innovadoras nuevas que se mostrarán en el encendido por [Microsoft](https://www.microsoft.com/ignite) en noviembre. Manténgase atento
 
-## <a name="july-2019"></a>2019 de julio
+### <a name="new-encryption-options-for-sensitivity-labels"></a>Nuevas opciones de cifrado para las etiquetas de confidencialidad 
+
+Cuando configure el cifrado para una etiqueta de confidencialidad, ahora tiene dos opciones que permiten a los usuarios asignar permisos al aplicar manualmente la etiqueta al correo electrónico y los documentos:<br>
+- Al aplicar la etiqueta a un **correo electrónico de Outlook**, los usuarios pueden exigir restricciones equivalentes a la opción no reenviar. Los destinatarios podrán leer el mensaje pero no reenviar, imprimir ni copiar el contenido.
+- Al aplicar la etiqueta a los **archivos de Word, PowerPoint y Excel**, a los usuarios se les pedirá que asignen permisos de acceso a determinados usuarios y grupos.
+
+[Más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
+
+## <a name="august-2019"></a>Agosto de 2019
+
+### <a name="update-to-data-investigations"></a>Actualización a investigaciones de datos
+
+Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+
+## <a name="july-2019"></a>Julio de 2019
 
 ### <a name="new-admin-roles"></a>Nuevos roles de administrador
 
@@ -49,34 +63,3 @@ Hemos lanzado dos nuevos roles de administrador para ayudarle a administrar la s
 No hay más desplazamiento a través de un mar de informes para encontrar los que desea. Ahora puede buscar informes (en función de sus títulos) y filtrar por categorías como "etiquetas" y "cumplimiento" y fuentes como "Office 365" y "Microsoft Cloud App Security".
 
 ![Captura de pantalla de los botones de búsqueda y filtro para los informes con un filtro aplicado](media/mcc_report_filtering.png)
-
-### <a name="help-content"></a>Contenido de la Ayuda
-
-Tire hacia arriba de una silla, tome una taza de café y deje que los documentos de cumplimiento más recientes se desubiquen.
-
-**eDiscovery avanzado**
-- [Revisar las conversaciones en EDiscovery avanzado](conversation-review-sets.md) Nuevo
-- [Solucionar problemas de AzCopy en eDiscovery avanzado](troubleshooting-azcopy.md)
-- [Cargar datos que no son de Office 365 a un conjunto de revisión](load-non-office365-data.md)
-- [Corrección de errores al procesar los datos](error-remediation.md)
-
-**Archivado de datos de terceros**
-- [Configurar un conector para archivar datos Instant Bloomberg en Office 365](archive-instant-bloomberg-data.md)
-
-**Auditoría**
-- [Auditar el uso compartido para buscar recursos compartidos con usuarios externos](use-sharing-auditing.md)
-- [Referencia de las API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
-- [Solución de problemas de la API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api)
-- [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md)
-
-**Cifrado**
-- [Información heredada para el cifrado de mensajes de Office 365](legacy-information-for-message-encryption.md)
-
-**Clasificación**
-- [Crear tipos personalizados de información confidencial con clasificación exacta de coincidencia de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-
-**Gobierno de datos**
-- [Información general sobre las directivas de retención](retention-policies.md)
-
-**Supervisión**
-- [Directivas de supervisión en Office 365](supervision-policies.md)

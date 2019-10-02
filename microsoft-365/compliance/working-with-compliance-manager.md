@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cceb0487f357e6b40b634dc6d3cd7349ec2d96
+ms.sourcegitcommit: acf29701bfba3e4843e49a79fde012f3c7a7024a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093035"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37350321"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -94,7 +94,7 @@ Cuando trabaje con grupos, recuerde lo siguiente:
 
 El administrador de cumplimiento (versión preliminar) incluye una nueva interfaz para administrar los nuevos elementos de datos denominados **Administración de inquilinos**. Esta interfaz permite administrar la configuración de todos los inquilinos:
 
-- **Dimensiones:** Permite ver, agregar y personalizar metadatos para plantillas, evaluaciones y elementos de acción que permiten crear tablas dinámicas personalizadas para los filtros.
+- **Dimensiones:** Permite ver los metadatos de plantillas, evaluaciones y elementos de acción que permiten crear tablas dinámicas personalizadas para los filtros.
 - **Propietarios:** Especifique un propietario para cada elemento de acción.
 - **Acciones del cliente:** Administrar la lista completa de elementos de acciones incluidos en el administrador de cumplimiento (versión preliminar) y habilitar o deshabilitar el control de puntuación segura para acciones integradas con puntuación segura.
 
@@ -102,34 +102,7 @@ Seleccione **Administración de inquilinos** para abrir la interfaz de administr
 
 ### <a name="dimensions"></a>Dimensions
 
-Las dimensiones son conjuntos de metadatos que proporcionan información sobre una plantilla, una evaluación o un elemento de acción. Las dimensiones usan el concepto de claves y valores, donde la clave de dimensión representa una propiedad y el valor de dimensión representa valores válidos para la propiedad. Por ejemplo, en el administrador de cumplimiento hay tres tipos de acciones. Se definen mediante una clave de dimensión de **tipo de acción** y los valores de dimensión de la **documentación**, **operación**y **técnico**. Puede modificar las dimensiones existentes o agregar las suyas propias. La adición de dimensiones suele ser necesaria al importar plantillas personalizadas.
-
-#### <a name="add-a-dimension"></a>Agregar una dimensión
-
-1. Abra **Administración de inquilinos** y seleccione **dimensiones**.
-2. Seleccione **+ Agregar dimensión**.
-3. Escriba un nombre único en el campo **clave** .
-4. Opcionalmente, habilite varios valores para que se usen simultáneamente para la misma clave, deslice el botón de alternancia de **Permitir selección múltiple para dimensiones** a activado.
-5. Seleccione **+ Agregar** para agregar un valor proporcionando un nombre único y haciendo clic en el icono guardar.
-6. Repita el paso 5 para cada valor que desee agregar.
-7. Seleccione **Guardar** para guardar la nueva dimensión.
-
-#### <a name="edit-a-dimension"></a>Edición de una dimensión
-
-Puede cambiar el nombre de una clave de dimensión, pero puede modificar los valores de las dimensiones personalizadas.
-
-1. Abra **Administración de inquilinos** y seleccione **dimensiones**.
-2. Busque la dimensión que desea editar, seleccione los puntos suspensivos (...) junto a ella y, a continuación, seleccione **Editar**.
-3. Seleccione **+ Agregar** para agregar un valor proporcionando un nombre único y haciendo clic en el icono guardar o seleccione el valor que desee editar o eliminar y seleccione **quitar** o **Editar**.
-4. Seleccione **Guardar** cuando termine de realizar cambios.
-
-#### <a name="delete-a-dimension"></a>Eliminar una dimensión
-
-Puede eliminar las dimensiones personalizadas si es necesario.
-
-1. Abra **Administración de inquilinos** y seleccione **dimensiones**.
-2. Busque la dimensión que desea eliminar, seleccione los puntos suspensivos (...) junto a ella y, a continuación, seleccione **eliminar**.
-3. Cuando aparezca el mensaje de confirmación, seleccione **eliminar**.
+Las dimensiones son conjuntos de metadatos que proporcionan información sobre una plantilla, una evaluación o un elemento de acción. Las dimensiones usan el concepto de claves y valores, donde la clave de dimensión representa una propiedad y el valor de dimensión representa valores válidos para la propiedad. Por ejemplo, en el administrador de cumplimiento hay tres tipos de acciones. Se definen mediante una clave de dimensión de **tipo de acción** y los valores de dimensión de la **documentación**, **operación**y **técnico**. Puede editar o eliminar las dimensiones existentes.
 
 ### <a name="owners"></a>Propietarios
 
@@ -354,11 +327,11 @@ Los controles se pueden ver desde el panel de información de controles. Los con
 
 ![Detalles de los controles de Microsoft del administrador de cumplimiento](media/compliance-manager-control-details.png)
 
-Hay tres tipos de controles. Dos son proporcionadas por Microsoft en las plantillas integradas y la tercera la crean y administran los clientes en plantillas personalizadas. Los tres tipos son:
+Hay tres tipos de controles:
 
-1. **Controles administrados por Microsoft (mm):** son controles que solo Microsoft tiene responsabilidad. Aparecen en las plantillas de cuadro y se agregan al administrador de cumplimiento de Microsoft.
-2. **Controles administrados por el cliente (cm):** se trata de controles que solo tienen responsabilidad los clientes. Aparecen en las plantillas de cuadro y se agregan al administrador de cumplimiento por parte de Microsoft o los clientes. El cliente también puede editar o deshabilitar los controles administrados por el cliente proporcionados por Microsoft.
-3. **Controles compartidos (SM):** son controles en los que se comparte la responsabilidad entre Microsoft y el cliente. Estos aparecen en las plantillas en el cuadro y se agregan al administrador de cumplimiento de Microsoft.
+1. **Controles administrados por Microsoft:** son controles que solo Microsoft tiene responsabilidad. Aparecen en las plantillas de cuadro y se agregan al administrador de cumplimiento de Microsoft.
+2. **Controles administrados por el cliente:** son controles que solo tienen responsabilidad los clientes. Aparecen en las plantillas de cuadro y se agregan al administrador de cumplimiento por los clientes.
+3. **Controles de administración compartidos:** son controles en los que se comparte la responsabilidad entre Microsoft y el cliente. Estos aparecen en las plantillas en el cuadro y se agregan al administrador de cumplimiento de Microsoft. El cliente también puede editar o deshabilitar los controles administrados por Microsoft.
 
 ### <a name="actions-items"></a>Elementos de acciones
 
@@ -423,7 +396,7 @@ Esta pestaña incluye columnas que definen los controles que se asignan a las ac
 - **controlDescription:** Descripción del control de certificación, estándar/regla, etc.
 - **controlVersion:** Información de versión de control opcional.  Ejemplo: para NIST 800-53, el valor actual es Rev 4, por lo que controlVersion es 4.  Para la MCC de CSA, es 3.0.1.
 - **isDisabled:** Use TRUE o FALSE para indicar si el control se ha deshabilitado.
-- **ControlType:** Use CM para indicar que se trata de controles administrados por el cliente.
+- **ControlType:** Use CC para indicar que son controles administrados por el cliente.
 - **controlComplianceScore:** Suma de la puntuación de todas las acciones asignadas al control.
 - **controlActionTitle:** Doble lista delimitada por punto y coma de todos los actionTitles de este control como se muestra en la ficha acciones. 
 
@@ -449,7 +422,7 @@ Esta pestaña incluye columnas que definen acciones individuales e incluye detal
     Product::Office 365;;Certification::NIST CSF
     ```
 
-    Todas las dimensiones que se usan en una plantilla personalizada deben aparecer en la ficha dimensiones del archivo de importación, incluso si ya aparecen en el panel dimensiones. Si va a agregar nuevos valores o claves de dimensión, primero debe agregarlos al panel de dimensiones.
+    Todas las dimensiones que se usan en una plantilla personalizada deben aparecer en la ficha dimensiones del archivo de importación, incluso si ya aparecen en el panel dimensiones.
 - **actionScore:** Valor numérico para cada acción, que representa la puntuación de esa acción. Se recomienda seguir el modelo de resultados usado por las evaluaciones integradas, que se basa en el propósito y el cumplimiento de cada acción.
 - **actionOwnership:** Lista de propietarios doble delimitada por punto y coma. Todos los propietarios de la lista deben incluirse en la pestaña de propiedad.
 - **actionDescription:** Texto de cada acción, que debe ser único. Este campo es compatible con el lenguaje Markdown, como se describe a continuación.
@@ -527,7 +500,7 @@ Puede crear una plantilla copiando una plantilla existente o importando datos de
 
 1. Abra el panel **plantillas** y seleccione **+ Agregar plantilla**.
 2. En el campo **escribir nombre de plantilla** , especifique un nombre único para la plantilla.
-3. Agregue una o más dimensiones. Incluso si las dimensiones que usa ya aparecen en el panel dimensiones, aún deben aparecer en el archivo de importación.
+3. Seleccione al menos una dimensión de la lista disponible.
 4. Seleccione **examinar** para ir a la ubicación del archivo de importación, selecciónelo y seleccione **abrir**.
 5. El archivo de importación se valida e indica el número de controles y familias de control que se han detectado. Si hay errores, se proporcionará un vínculo a una versión modificada del archivo de importación que incluye detalles del error. Todos los errores deben resolverse antes de que se importen los datos.
 6. Una vez que los datos pasen la validación, seleccione **Agregar al panel**.

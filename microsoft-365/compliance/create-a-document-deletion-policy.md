@@ -1,7 +1,7 @@
 ---
 title: Crear una directiva de eliminación de documentos
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Las organizaciones suelen necesitar conservar algunos documentos durante cierto período de tiempo para satisfacer el cumplimiento de ciertas normas legales u otras regulaciones. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal.
-ms.openlocfilehash: e8f85f4cc9ae541d8a962dfb270e5216c912ac7d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 00b10e1c86160917c96ed1062f0638acf56ef56e
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091946"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342983"
 ---
 # <a name="create-a-document-deletion-policy"></a>Crear una directiva de eliminación de documentos
 
@@ -132,7 +132,7 @@ Además, las directivas y reglas se adaptan a una colección de sitios determina
     
 ![Página para nueva regla de eliminación](media/IP-New-deletion-rule.png)
   
-7. Haga clic en **Guardar **.
+7. Haga clic en **Guardar**.
     
 8. Cree reglas adicionales si quiere que los propietarios de los sitios puedan elegir distintas reglas para aplicar a su sitio. La regla predeterminada, si la hay, se aplicará si el propietario del sitio no realiza ninguna acción.
     
@@ -168,7 +168,7 @@ Es importante comprender que el período de tiempo especificado para una directi
   
 ![Página Seleccionar una plantilla con la opción OneDrive](media/IP-Choose-a-template.png)
   
-5. Haga clic en **Guardar **.
+5. Haga clic en **Guardar**.
     
     > [!NOTE]
     > Cada plantilla puede tener solamente un conjunto de directivas asignadas. Si ve un error que indica que esta plantilla ya tiene directivas asignadas, seleccione **Cancelar** \> **asignar a colección de sitios** en el panel de \> navegación izquierdo para ver y administrar el conjunto de directivas que ya están sin. 
@@ -177,13 +177,13 @@ Es importante comprender que el período de tiempo especificado para una directi
     
     ![Página Agregar y administrar directivas](media/IP-Add-and-manage-policies-page.png)
   
-7. Haga clic en **Guardar **.
+7. Haga clic en **Guardar**.
     
 8. Si quiere aplicar la directiva en todos los sitios sin permitir que los propietarios de sitios puedan anularla, elija **Marcar directiva como obligatoria**. Cuando establezca una directiva como obligatoria, solo podrá asignarse esa directiva a la plantilla de colección de sitios. La directiva también debe marcarse como predeterminada.
     
     Si esta opción está atenuada, elija **Administrar directivas asignadas** y asegúrese de que al menos una directiva esté asignada y establecida como predeterminada. 
     
-9. Haga clic en **Guardar **.
+9. Haga clic en **Guardar**.
     
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection"></a>Asignar la directiva de eliminación de documentos a una colección de sitios
 
@@ -210,13 +210,13 @@ Es importante comprender que el período de tiempo especificado para una directi
     
     ![Página Agregar y administrar directivas](media/IP-Add-and-manage-policies-page.png)
   
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
     
 7. Si quiere aplicar la directiva en todos los sitios sin permitir que los propietarios de sitios puedan anularla, elija **Marcar directiva como obligatoria**. Cuando establezca una directiva como obligatoria, solo podrá asignarse esa directiva a la colección de sitios. La directiva también debe marcarse como predeterminada.
     
     Si esta opción está atenuada, elija **Administrar directivas asignadas** y asegúrese de que al menos una directiva esté asignada y establecida como predeterminada. 
     
-8. Haga clic en **Guardar **.
+8. Haga clic en **Guardar**.
     
 ## <a name="delete-a-policy-assignment"></a>Eliminar una asignación de directivas
 
