@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure varias formas de clasificar los datos de su organización.
-ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047303"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370417"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Paso 2: Configurar la clasificación para el entorno
 
 *Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: Protección de la información](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 En este paso, trabajará con los equipos legales y de cumplimiento para definir un esquema de clasificación para los datos de su organización.
 
@@ -105,9 +105,9 @@ Para obtener un esquema de clasificación de ejemplo que incluye datos personale
 
 Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step2) correspondientes a este paso.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)|[Configurar una mayor seguridad para Office 365](infoprotect-configure-increased-security-office-365.md)|
+|![Paso 3](./media/stepnumbers/Step3.png)|[Configurar una mayor seguridad para Office 365](infoprotect-configure-increased-security-office-365.md)|
 

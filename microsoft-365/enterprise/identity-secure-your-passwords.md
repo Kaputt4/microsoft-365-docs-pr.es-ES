@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Necesita que sus contraseñas sean seguras y que se puedan administrar en toda la organización.
-ms.openlocfilehash: 06d936a68432b55912b1c10839336dc94e698f51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7bb4e0f296b320aa8a24916ded40089246308a20
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093010"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370407"
 ---
 # <a name="step-2-secure-your-passwords"></a>Paso 2: Proteja sus contraseñas
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2: identidad](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Evite contraseñas no válidas
@@ -98,4 +98,4 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Proteja y administre los inicios de sesión de usuario](identity-secure-user-sign-ins.md) |
+|![Paso 3](./media/stepnumbers/Step3.png)| [Proteja y administre los inicios de sesión de usuario](identity-secure-user-sign-ins.md) |

@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar su infraestructura de identidad para Microsoft 365 Enterprise.
-ms.openlocfilehash: 2d9ffcc5122b5a5dfc94fb007167655e879d6799
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cb5b714afcacd1e21951ec9f83fd7f09cbd88662
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071699"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370447"
 ---
 # <a name="phase-2-identity"></a>Fase 2: Identidad
 
-![](./media/deploy-foundation-infrastructure/identity_icon.png)
+![Fase 2: Identidad](./media/deploy-foundation-infrastructure/identity_icon.png)
 
 En Microsoft 365 Enterprise, una infraestructura de identidades bien planeada y ejecutada prepara el camino para conseguir una seguridad y un acceso más eficaces solo por parte de los usuarios y dispositivos autenticados a las cargas de trabajo de productividad y sus datos.
 
@@ -50,12 +50,12 @@ Siga estos pasos para planear e implementar la nueva infraestructura de identida
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Cree y proteja sus cuentas de administrador global](identity-create-protect-global-admins.md) |
-|![](./media/stepnumbers/Step2.png)| [Proteja sus contraseñas](identity-secure-your-passwords.md) |
-|![](./media/stepnumbers/Step3.png)| [Proteja y administre los inicios de sesión de usuario](identity-secure-user-sign-ins.md) |
-|![](./media/stepnumbers/Step4.png)| [Agregue cuentas de usuario](identity-add-user-accounts.md) |
-|![](./media/stepnumbers/Step5.png)| [Use grupos para administración](identity-use-group-management.md) |
-|![](./media/stepnumbers/Step6.png)| [Configure Identity Governance](identity-configure-identity-governance.md) |
+|![Paso 1](./media/stepnumbers/Step1.png)| [Cree y proteja sus cuentas de administrador global](identity-create-protect-global-admins.md) |
+|![Paso 2](./media/stepnumbers/Step2.png)| [Proteja sus contraseñas](identity-secure-your-passwords.md) |
+|![Paso 3](./media/stepnumbers/Step3.png)| [Proteja y administre los inicios de sesión de usuario](identity-secure-user-sign-ins.md) |
+|![Paso 4](./media/stepnumbers/Step4.png)| [Agregue cuentas de usuario](identity-add-user-accounts.md) |
+|![Paso 5](./media/stepnumbers/Step5.png)| [Use grupos para administración](identity-use-group-management.md) |
+|![Paso 6](./media/stepnumbers/Step6.png)| [Configure Identity Governance](identity-configure-identity-governance.md) |
 
 Cuando complete estos pasos, vaya a los [criterios de salida](identity-exit-criteria.md) de esta fase para asegurarse de que cumple con las condiciones obligatorias y opcionales de identidad en Microsoft 365 Enterprise.
 
@@ -74,11 +74,11 @@ Aprenda como los expertos de IT en Microsoft[administran identidades y acceso se
 
 Vea cómo Contoso Corporation, una empresa multinacional ficticia pero representativa, [implementó una infraestructura de identidad híbrida](contoso-identity.md) para los servicios en la nube de Microsoft 365.
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 
 ## <a name="next-step"></a>Siguiente paso
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Cree y proteja sus cuentas de administrador global](identity-create-protect-global-admins.md) |
+|![Paso 1](./media/stepnumbers/Step1.png)| [Cree y proteja sus cuentas de administrador global](identity-create-protect-global-admins.md) |

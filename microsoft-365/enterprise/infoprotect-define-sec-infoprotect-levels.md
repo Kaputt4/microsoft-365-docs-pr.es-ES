@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure los niveles de protección de la información y la seguridad para su organización.
-ms.openlocfilehash: a216079e38b173a8b35c49317a072975b0c7f36e
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 7f1f8a2099da8d99b1b7267e245a80d2143bb0ca
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047263"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370397"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Paso 1: Definir los niveles de protección de la información y la seguridad
 
-*Este paso es obligatorio y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es obligatorio y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: Protección de la información](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 En este paso, deberá definir los niveles de protección y seguridad de su organización. Por ejemplo, es posible que el departamento de ventas solo necesite un nivel de seguridad bajo. Sin embargo, el departamento de investigación y de propiedad intelectual de alto valor pueden requerir un nivel de alta seguridad que cifre los archivos y limite el acceso a una búsqueda de personal.
 
@@ -38,8 +38,8 @@ Para obtener más información, vea [Tres niveles de protección](microsoft-365-
 
 Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step1) correspondientes a este paso.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[Configurar la clasificación para el entorno](infoprotect-configure-classification.md)|
+|![Paso 2](./media/stepnumbers/Step2.png)|[Configurar la clasificación para el entorno](infoprotect-configure-classification.md)|
