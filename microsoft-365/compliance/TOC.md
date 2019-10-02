@@ -1,7 +1,7 @@
 # [Cumplimiento de Microsoft 365](index.yml)
 
 # Introducción
-## [Novedades en el centro de cumplimiento](whats-new.md)
+## [Novedades del centro de cumplimiento](whats-new.md)
 ## [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md)
 ## [Ir al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md)
 ## [Usar su suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -11,21 +11,21 @@
 ## [Proteger el acceso de usuario y de dispositivo](protect-access-to-data-and-services.md)
 ## [Caja de seguridad del cliente](customer-lockbox-requests.md)
 ## [Administración del acceso con privilegios]()
-### [Obtener información sobre la administración del acceso con privilegios](privileged-access-management-overview.md)
+### [Obtenga más información sobre la administración del acceso con privilegios](privileged-access-management-overview.md)
 ### [Configurar la administración del acceso con privilegios](privileged-access-management-configuration.md)
 ## Clave del cliente
 ### [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md)
 ### [Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365](service-encryption-with-customer-key-faq.md)
 ## [Supervisión de la comunicación]()
-### [Obtener información sobre la supervisión de comunicaciones](supervision-policies.md)
+### [Obtenga más información sobre la supervisión de la comunicación](supervision-policies.md)
 ### [Configurar directivas de supervisión para su organización](configure-supervision-policies.md)
-## [Barreras de la información](information-barriers.md)
-### [Definir directivas de barrera de información](information-barriers-policies.md)
-### [Atributos para directivas de barrera de información](information-barriers-attributes.md)
-### [Solución de problemas de obstáculos para la información](information-barriers-troubleshooting.md)
-### [Editar directivas de barrera de información](information-barriers-edit-segments-policies.md.md)
+## [Barreras de información](information-barriers.md)
+### [Definir directivas de barreras de información](information-barriers-policies.md)
+### [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
+### [Solución de problemas de barreras de información](information-barriers-troubleshooting.md)
+### [Editar directivas de barreras de información](information-barriers-edit-segments-policies.md.md)
 
-# [Administración de la protección de la información](protect-information.md)
+# [Administrar la protección de la información](protect-information.md)
 ## [Etiquetas de confidencialidad](sensitivity-labels.md)
 ### [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
 ### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)
@@ -51,13 +51,13 @@
 ### [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
 ### [Ver una descripción general ampliada de personalización de DLP](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)
-### [Tipos de información confidencial personalizada](custom-sensitive-info-types.md)
-### [Crear tipos personalizados de información confidencial con clasificación exacta de coincidencia de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-### [Crear un tipo personalizado de información confidencial en el centro de seguridad & cumplimiento](create-a-custom-sensitive-information-type.md)
+### [Tipos de información confidencial personalizados](custom-sensitive-info-types.md)
+### [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+### [Crear un tipo de información confidencial personalizado en el Centro de seguridad y cumplimiento](create-a-custom-sensitive-information-type.md)
 ### [Crear un tipo de información confidencial personalizado con PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Crear un diccionario de palabras clave](create-a-keyword-dictionary.md)
 ### [Creación de huella digital de documento](document-fingerprinting.md)
-### [Funciones DLP para información confidencial](what-the-dlp-functions-look-for.md)
+### [Funciones de DLP para información confidencial](what-the-dlp-functions-look-for.md)
 ### [Ver una descripción general ampliada de personalización de DLP](https://go.microsoft.com/fwlink/?linkid=852306)
 
 ## [Cifrado de correo electrónico](email-encryption.md)
@@ -92,7 +92,7 @@
 #### [Usar un conector de ejemplo para archivar datos de Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Usar un conector de ejemplo para archivar datos de Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Configurar un conector para archivar datos de LinkedIn](archive-linkedin-data.md)
-#### [Configurar un conector para archivar datos Instant Bloomberg](archive-instant-bloomberg-data.md)
+#### [Configurar un conector para archivar datos instantáneos de Bloomberg](archive-instant-bloomberg-data.md)
 #### [Trabajar con un socio para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md)
 ## Almacenar datos
 ### [Habilitar buzones de archivo](enable-archive-mailboxes.md)
@@ -104,7 +104,7 @@
 ### [Administrador del plan de archivos](file-plan-manager.md)
 ### [Etiquetas de retención](labels.md)
 ### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Acerca de la retención basada en eventos](event-driven-retention.md)
 ### [Retención automática basada en eventos](automate-event-driven-retention.md)
 ## [Eliminar datos](disposition-reviews.md)
@@ -125,7 +125,7 @@
 ### Plan de archivos
 #### [Administrador del plan de archivos](file-plan-manager.md)
 #### [Etiquetas de retención](labels.md)
-#### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
 #### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
 #### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
@@ -138,7 +138,7 @@
 
 # [Buscar contenido](search-for-content.md)
 ## [Usar búsqueda de contenido](content-search.md)
-### [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
+### [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md)
 ### [Ver las estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md)
 ### [Exportar resultados de la búsqueda de contenido](export-search-results.md)
 ### [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
@@ -191,7 +191,7 @@
 #### [Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 ### [Recopilar datos para un caso](collecting-data-for-ediscovery.md)
-#### [Create a search](create-search-to-collect-data.md)
+#### [Crear una búsqueda](create-search-to-collect-data.md)
 #### [Crear consultas de búsqueda](building-search-queries.md)
 #### [Estadísticas de búsqueda](search-statistics.md)
 #### [Agregar los resultados de búsqueda a un conjunto de revisión](add-data-to-review-set.md)
@@ -205,7 +205,7 @@
 #### [Ver documentos de un conjunto de revisión](view-documents-in-review-set.md)
 #### [Consultar los datos de un conjunto de revisión](review-set-search.md)
 #### [Etiquetar documentos en un conjunto de revisión](tagging-documents.md)
-#### [Configuración de la detección de privilegios de clientes de abogados](attorney-privilege-detection.md)
+#### [Configurar la detección de privilegios abogado-cliente](attorney-privilege-detection.md)
 
 ### [Analizar datos de casos](analyzing-data-in-review-set.md)
 #### [Detección de semiduplicados](near-duplicate-detection-in-advanced-ediscovery.md)
@@ -285,7 +285,7 @@
 ### [Crear un informe de suspensiones en casos de eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md)
 
 ## [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md)
-## [Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md).
+## [Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md)
 ## [Serie de soluciones de eDiscovery: escenario de pérdidas de datos: búsqueda y purga](data-spillage-scenariosearch-and-purge.md)
 ## [Solucionar problemas comunes de eDiscovery](ediscovery-troubleshooting-common-issues.md)
 
@@ -349,7 +349,7 @@
 ## [Usar el uso compartido de auditoría en el registro de auditoría](use-sharing-auditing.md)
 ## [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md)
 
-# Administración de riesgos de cumplimiento
+# Administración de los riesgos de cumplimiento
 ## [Portal de confianza del servicio de Microsoft](get-started-with-service-trust-portal.md)
 ## [Administrador de cumplimiento (Clásico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Administrador de cumplimiento (Versión preliminar)](compliance-manager-overview.md)
@@ -376,17 +376,17 @@
 
 # [Planes de acción de cumplimiento de normativas](compliance-solutions-overview.md)
 
-## [ISO: Plan de acción recomendado](iso-action-plan.md)
-## [NIST: Plan de acción recomendado](nist-action-plan.md) 
+## [ISO — Plan de acción recomendado](iso-action-plan.md)
+## [NIST — Plan de acción recomendado](nist-action-plan.md) 
 
 ## [RGPD](gdpr.md)
 ### [Plan de acción recomendado para RGPD](gdpr-action-plan.md)
 
-### [Listas de comprobación de preparación de responsabilidad]()
-#### [Listas de comprobación de preparación de responsabilidad](gdpr-arc.md)
+### [Lista de comprobación de preparación de responsabilidad]()
+#### [Lista de comprobación de preparación de responsabilidad](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
 #### [Dynamics 365](gdpr-arc-dynamics365.md)
-#### [Soporte técnico de Microsoft & Professional Services](gdpr-arc-prof-services.md)
+#### [Soporte técnico de Microsoft y Servicios profesionales](gdpr-arc-prof-services.md)
 #### [Office 365](gdpr-arc-office365.md)
 
 ### [Protección de la información](gdpr-information-protection.md)
@@ -397,7 +397,7 @@
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)
 #### [Dynamics 365](gdpr-dsr-dynamics365.md)
 #### [Intune](gdpr-dsr-intune.md)
-#### [Soporte técnico de Microsoft & Professional Services](gdpr-dsr-prof-services.md)
+#### [Soporte técnico de Microsoft y Servicios profesionales](gdpr-dsr-prof-services.md)
 #### [Office 365](gdpr-dsr-office365.md)
 #### [Familia de Visual Studio](gdpr-dsr-visual-studio-family.md)
 
@@ -405,22 +405,22 @@
 #### [Notificación de infracciones](gdpr-breach-notification.md)
 #### [Azure](gdpr-breach-azure.md)
 #### [Dynamics 365](gdpr-breach-dynamics365.md)
-#### [Soporte técnico de Microsoft & Professional Services](gdpr-breach-microsoft-support-professional-services.md)
+#### [Soporte técnico de Microsoft y Servicios profesionales](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
 ### [Evaluaciones del impacto en la protección de datos]()
 #### [Evaluaciones del impacto en la protección de datos](gdpr-data-protection-impact-assessments.md)
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics 365](gdpr-dpia-dynamics.md)
-#### [Soporte técnico de Microsoft & Professional Services](gdpr-dpia-prof-services.md)
+#### [Soporte técnico de Microsoft y Servicios profesionales](gdpr-dpia-prof-services.md)
 #### [Office 365](gdpr-dpia-office365.md)
 
 ### [Responsable de la protección de datos de Microsoft](gdpr-data-protection-officer.md)
 
-# Capacidades de cumplimiento híbrido
+# Funcionalidades de cumplimiento híbrido
 ## [Cifrado de correo de Exchange Online con AD RMS](information-rights-management-in-exchange-online.md)
 ### [Configurar IRM para usar un servidor de AD RMS local](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 Empresa](https://docs.microsoft.com/office365/admin/admin-home)
-# [Seguridad de 365 de Microsoft](https://docs.microsoft.com/microsoft-365/security/)
+# [Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
