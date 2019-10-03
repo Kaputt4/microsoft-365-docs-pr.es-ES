@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender y configurar cómo lograr mayores niveles de seguridad con Microsoft 365.
-ms.openlocfilehash: b51cb38a386292b79fdfe264c9d8a86973aa6325
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 290b10dd8e0bf9a7180bae72669b22f3d575f914
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047283"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370177"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>Paso 3: configurar Microsoft 365 con una mayor seguridad
 
-*Este paso es obligatorio y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es obligatorio y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: Protección de la información](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Para asegurarse de que su suscripción a Microsoft 365 y sus datos estén protegidos contra amenazas desde el principio, configure lo siguiente:
 
@@ -52,11 +52,11 @@ Office 365 ATP solo está disponible con Microsoft 365 Enterprise E5.
 
 Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step3) correspondientes a este paso.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[Configurar Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![Paso 4](./media/stepnumbers/Step4.png)|[Configurar Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
 
 
