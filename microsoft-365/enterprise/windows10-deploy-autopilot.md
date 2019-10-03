@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f173bd2357d445b502a4b28b60399d5cdb087cd0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 2ce02826ae2b0661d3b893c1074e692ce93cf9f3
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289260"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370287"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Paso 3: implementar Windows 10 Enterprise para dispositivos nuevos con Windows AutoPilot
 
 *Este artículo se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Si tienes nuevos equipos con Windows 10, puedes usar Windows AutoPilot para personalizar la experiencia rápida (OOBE) de tu organización e implementar un nuevo sistema con aplicaciones y configuración ya configurada. No hay imágenes para implementar, no hay controladores para insertar y no hay infraestructura que administrar. Los usuarios pueden pasar por el proceso de implementación de manera independiente, sin necesidad de consultar a su administrador de ti.
 
@@ -104,7 +104,7 @@ Como control provisional, puede consultar los [criterios de salida](windows10-ex
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Supervisar el estado y el cumplimiento del dispositivo](windows10-enable-windows-analytics.md) |
+|![Paso 4](./media/stepnumbers/Step4.png)| [Supervisar el estado y el cumplimiento del dispositivo](windows10-enable-windows-analytics.md) |
 
 
 

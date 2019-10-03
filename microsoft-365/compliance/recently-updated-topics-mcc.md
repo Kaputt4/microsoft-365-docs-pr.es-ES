@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Estamos creando artículos nuevos, actualizando los existentes y realizando cambios en función de sus comentarios. Descubra las novedades y las actualizaciones de este mes.
-ms.openlocfilehash: 744c1822331c71e718007105f58d1bc64b3c70df
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: d610ab37312a1305809d740a9353822293c48df0
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369660"
+ms.locfileid: "37376135"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -34,9 +34,9 @@ Al igual que con las características del centro de cumplimiento de Microsoft 36
 
 ### <a name="ediscovery"></a>eDiscovery
 
-[Investigar, solucionar problemas y resolver problemas comunes de eDiscovery](ediscovery-troubleshooting-common-issues.md) (nuevo)<br> Incluye los pasos básicos de solución de problemas que puede seguir para identificar y resolver los problemas que se encuentren durante una búsqueda de exhibición de documentos electrónicos o en cualquier otro lugar del proceso de eDiscovery.
+[Investigar, solucionar problemas y resolver problemas comunes de eDiscovery](ediscovery-troubleshooting-common-issues.md) (nuevo)<br> Incluye los pasos básicos de solución de problemas que puede realizar para identificar y resolver los problemas que se encuentren durante una búsqueda de exhibición de documentos electrónicos o en cualquier otro lugar del proceso de eDiscovery.
 
-###<a name="supervision"></a>Supervisión
+### <a name="supervision"></a>Supervisión
 
 [Configuración de directivas de supervisión para la organización](configure-supervision-policies.md) (actualizada)<br>Se quitaron los detalles sobre el uso de Outlook para realizar revisiones. En su lugar, use las opciones de revisión y etiquetado disponibles en la interfaz de usuario de supervisión.
 

@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 28cf3325dcb3551148d20defad0be88482554a7c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a6e197c7e95f70163c01f0064877811858062b36
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289406"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370097"
 ---
-# <a name="step-4-monitor-device-health-and-compliance"></a>Paso 4: supervisar el estado y el cumplimiento del dispositivo
+# <a name="step-4-monitor-device-health-and-compliance"></a>Paso 4: Supervisión del estado del dispositivo y cumplimiento
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics usa datos de diagnóstico para proporcionar información enriquecida y accionable para ayudarle a obtener información detallada sobre la eficacia operativa y el estado de los dispositivos con Windows 10 en su entorno.
 
@@ -33,4 +33,4 @@ Como control provisional, puede consultar los [criterios de salida](windows10-ex
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [Implementar características de seguridad de Windows 10 Enterprise](windows10-enable-security-features.md) |
+|![Paso 5](./media/stepnumbers/Step5.png)| [Implementar características de seguridad de Windows 10 Enterprise](windows10-enable-security-features.md) |

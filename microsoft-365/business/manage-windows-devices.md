@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: Obtenga información sobre cómo habilitar Microsoft 365 para proteger dispositivos locales Unidos a Windows 10.
-ms.openlocfilehash: d1dbfc6a35d54db653ae0f911fad05ac2ce0a993
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 452e884f952a4b2c2e87148bb7203ed48a48d944
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288043"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37376103"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 Business
 
@@ -39,7 +39,7 @@ Antes de sincronizar los usuarios y los equipos desde el dominio local de Active
 
    - Asegúrese de que no existen duplicados en el directorio para los siguientes atributos: **mail**, **proxyAddresses**y **userPrincipalName**. Estos valores deben ser únicos y se deben quitar todos los duplicados.
    
-   - Se recomienda que el atributo **userPrincipalName** (UPN) para cada cuenta de usuario local esté configurado para coincidir con la dirección de correo electrónico principal que corresponde al usuario de Microsoft 365 con licencia. Por ejemplo, *María. Shelley<span>@ contoso<span> . com* en lugar de *María @ contoso. local*
+   - Se recomienda que el atributo **userPrincipalName** (UPN) de cada cuenta de usuario local esté configurado para coincidir con la dirección de correo electrónico principal que corresponde al usuario de Microsoft 365 con licencia. Por ejemplo *Mary.Shelley@contoso.com* en lugar de *María @ contoso. local*
    
    - Si el dominio de Active Directory termina en un sufijo no enrutable como *. local* o *. LAN*, en lugar de un sufijo enrutable de Internet como *. com* o. *org*, deberá ajustar primero el sufijo UPN de las cuentas de usuario locales como se describe en [Prepare un dominio no enrutable para la sincronización de directorios](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
@@ -75,6 +75,6 @@ Para registrar los dispositivos existentes de Windows 10 Unidos a un dominio com
 
 ## <a name="6-set-up-windows-hello-for-business"></a>6. configurar Windows Hello para empresas
 
- Windows Hello para empresas reemplaza contraseñas con la autenticación segura en dos fases (2FA) para iniciar sesión en un equipo local. Un factor es un par de claves asimétricas y el otro es un PIN u otro movimiento local, como el reconocimiento facial o de la huella digital, si el dispositivo lo admite. Se recomienda reemplazar las contraseñas con 2FA y Windows Hello para empresas siempre que sea posible.
+ Windows Hello para empresas reemplaza contraseñas con la autenticación segura en dos fases (2FA) para iniciar sesión en un equipo local. Un factor es un par de claves asimétricas y el otro es un PIN u otro movimiento local, como el reconocimiento facial o de la huella digital, si el dispositivo lo admite. Le recomendamos que reemplace las contraseñas con 2FA y Windows Hello para empresas siempre que sea posible.
 
 Para configurar la implementación híbrida de Windows Hello para empresas, revise los [requisitos previos de confianza de clave híbrida de Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs). A continuación, siga las instrucciones que se indican en [Configure Hybrid Windows Hello for Business Key Trust Settings](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings). 

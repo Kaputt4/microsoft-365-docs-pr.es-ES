@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f7f1b8377769545c4399f54b0f2eab99a656d24f
-ms.sourcegitcommit: 18e03ab333175eccfc89e38b081022746976e513
+ms.openlocfilehash: 3e37cebc1721a1bdcce0a30223a8beeb38868e82
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35595306"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370087"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Paso 2: implementar Windows 10 Enterprise para los dispositivos existentes como actualización local
 
 *Este artículo se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 La ruta más sencilla para actualizar equipos que ejecutan Windows 7 o Windows 8,1 a Windows 10 es a través de una actualización inmediata. Puede usar una secuencia de tareas del administrador de configuración de System Center (Administrador de configuración) para automatizar el proceso por completo. 
 
@@ -46,7 +46,7 @@ Revise estos requisitos antes de iniciar la implementación de Windows 10:
 - **Ediciones de Windows aptas para la actualización** : los dispositivos deben estar ejecutando ediciones de Windows 7 o Windows 8,1 que sean aptas para actualizar a Windows 10 Enterprise. Para obtener una lista de las ediciones compatibles, vea [rutas de actualización de Windows 10](https://aka.ms/win10upgradepaths). 
 - **Dispositivos compatibles** : la mayoría de los equipos compatibles con Windows 8,1 serán compatibles con Windows 10. Es posible que tengas que instalar controladores actualizados en Windows 10 para que los dispositivos funcionen correctamente. Consulta [Especificaciones de Windows 10](https://aka.ms/windows10specifications) para obtener más información.
 - **Preparación** de la implementación: Asegúrese de que tiene lo siguiente antes de comenzar a configurar la implementación:
-    - Medios de instalación de Windows 10: los medios de instalación deben encontrarse en una unidad independiente, con el ISO ya montado. Puede obtener el ISO de las [descargas](https://aka.ms/msdn-subscriber-downloads) para suscriptores de MSDN o del [centro de servicios de licencias por volumen](https://aka.ms/mvlsc).
+    - Medios de instalación de Windows 10: los medios de instalación deben encontrarse en una unidad independiente, con el ISO ya montado. Puede obtener el ISO de las [descargas para suscriptores de MSDN](https://aka.ms/msdn-subscriber-downloads) o del [centro de servicios de licencias por volumen](https://aka.ms/mvlsc).
     - Copias de seguridad de datos de usuario: aunque los datos de usuario se migrarán a la actualización, el procedimiento recomendado es configurar un escenario de copia de seguridad. Por ejemplo, exporte todos los datos de usuario a una cuenta de OneDrive, una unidad flash USB con cifrado de BitLocker To Go o un servidor de archivos de red. Para obtener más información, vea [copia de seguridad o transferencia de datos en Windows](https://aka.ms/backuptransferdatawindows).
 - **Preparación del entorno** : usará una estructura de servidor de Configuration Manager existente para prepararse para la implementación del sistema operativo. Además de la configuración básica, se deben realizar las siguientes configuraciones en el entorno de Configuration Manager:
     1. [Extienda el esquema de Active](https://aka.ms/extendadschema) Directory y [cree un contenedor de administración del sistema](https://aka.ms/createsysmancontainer).
@@ -92,7 +92,7 @@ Después de crear la secuencia de tareas de actualización, tendrá que crear un
 2. En el Asistente para crear colección de dispositivos, en la página **General** , especifique la siguiente configuración y, a continuación, seleccione **siguiente**:
     - Nombre: actualización de Windows 10 Enterprise x64
     - Restricción de la colección: todos los sistemas
-3. En la **Página reglas** de pertenencia, seleccione Agregar regla**directa** de **regla** > para iniciar el Asistente para crear regla de pertenencia directa.
+3. En la página **reglas de pertenencia** , seleccione **Agregar** > regla**directa** de regla para iniciar el Asistente para crear regla de pertenencia directa.
 4. En la página **principal** del Asistente para crear regla de pertenencia directa, seleccione **siguiente**.
 5. En la página **buscar recursos** , escriba la siguiente configuración y reemplace el texto del **valor** de marcador de posición por el nombre del dispositivo que va a actualizar: 
     - Clase de recursos: recurso del sistema
@@ -141,7 +141,7 @@ Como control provisional, puede consultar los [criterios de salida](windows10-ex
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Implementar Windows 10 Enterprise para dispositivos nuevos con Windows AutoPilot](windows10-deploy-autopilot.md) |
+|![Paso 3](./media/stepnumbers/Step3.png)| [Implementar Windows 10 Enterprise para dispositivos nuevos con Windows AutoPilot](windows10-deploy-autopilot.md) |
 
 
 
