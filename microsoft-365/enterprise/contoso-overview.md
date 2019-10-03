@@ -3,7 +3,7 @@ title: Información general sobre Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,26 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender Contoso Corporation como un negocio y la estructura en niveles de sus oficinas en todo el mundo.
-ms.openlocfilehash: 2610cad2db4f5621759578b29e6a6e48c07b3654
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072530"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369561"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Información general sobre Contoso Corporation
 
 **Resumen:** Entender Contoso Corporation como un negocio y la estructura en niveles de sus oficinas en todo el mundo.
 
-Contoso Corporation es una empresa multinacional con sede en París, Francia. Es una organización conglomerada de fabricación, ventas y soporte técnico con más de 100 000 productos.
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
-![](./media/contoso-overview/contoso-icon.png)
+Contoso Corporation es una empresa multinacional con sede en París, Francia. Es una organización conglomerada de fabricación, ventas y soporte técnico con más de 100 000 productos.
 
 ## <a name="contoso-around-the-world"></a>Contoso en todo el mundo
 
 En la figura 1, se muestran la sede central en París, las oficinas de los centros regionales y las oficinas satélite en varios continentes.
 
-![](./media/contoso-overview/contoso-overview-fig1.png)
+![Oficinas de Contoso en todo el mundo](./media/contoso-overview/contoso-overview-fig1.png)
 
 **Figura 1: Oficinas de Contoso en todo el mundo**
  
@@ -60,7 +60,7 @@ El 25 % de la plantilla de Contoso es exclusivamente móvil, con un porcentaje 
 
 ## <a name="design-considerations-for-microsoft-365-enterprise"></a>Consideraciones sobre diseño para Microsoft 365 Enterprise
 
-Los arquitectos de TI de Contoso identificaron las siguientes consideraciones sobre diseño al implementar Microsoft 365 Enterprise: 
+Los arquitectos de TI de Contoso identificaron las siguientes consideraciones y requisitos de diseño al implementar Microsoft 365 Enterprise: 
 
 - Varias ubicaciones geográficas con normativas y requisitos de cumplimiento locales
 - Un centro de datos de intranet en la sede central y servidores de aplicaciones regionales que hospedan aplicaciones internas de línea de negocio
@@ -69,12 +69,12 @@ Los arquitectos de TI de Contoso identificaron las siguientes consideraciones so
 - Una combinación de dispositivos móviles personales y dispositivos propiedad de la empresa, incluidos dispositivos iOS (iPhone y iPad) y smartphones y tabletas Android
 - Muchos trabajadores remotos y móviles
 - Muchos asociados comerciales
-- Una gran cantidad de datos de clientes y de identificación personal
+- Una gran cantidad de información de clientes y de identificación personal
 - Una gran cantidad de propiedad intelectual de gran valor en forma de especificaciones de diseño de productos y secretos empresariales de fabricación
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
-[Obtenga más información](contoso-infra-needs.md) sobre la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades empresariales se pueden satisfacer mediante Microsoft 365 Enterprise.
+[Obtenga más información](contoso-infra-needs.md) sobre la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades empresariales se  satisficieron mediante Microsoft 365 Enterprise.
 
 ## <a name="see-also"></a>Vea también
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso aprovecha la Identidad como servicio (IDaaS) y proporciona autenticación basada en la nube a sus empleados y autenticación federada a sus partners y clientes.
-ms.openlocfilehash: f40be4ad7d93781ff2ac980228ae5271a8e844c4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c78e8cc9235eb2ca5de091c05d1883ed6cca1b4
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982131"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369611"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
@@ -32,7 +32,7 @@ Contoso usa un único bosque de Active Directory Domain Services (AD DS) para co
 
 La figura 1 muestra el bosque de Contoso con dominios regionales para las distintas partes del mundo que contienen centros regionales.
 
-![](./media/contoso-identity/contoso-identity-fig1.png)
+![Bosque y dominios de Contoso en todo el mundo](./media/contoso-identity/contoso-identity-fig1.png)
  
 **Figura 1: Bosque y dominios de Contoso en todo el mundo**
 
@@ -47,13 +47,13 @@ Contoso permite lo siguiente:
 
 La figura 2 muestra la red perimetral de Contoso con un sitio web público, una extranet de partners y un conjunto de servidores de Servicios de federación de Active Directory (AD FS). La red perimetral está conectada a Internet que contiene clientes y partners, y servicios de Internet.
 
-![](./media/contoso-identity/contoso-identity-fig2.png)
+![Soporte de Contoso para autenticación federada para clientes y partners](./media/contoso-identity/contoso-identity-fig2.png)
 
 **Figura 2: Soporte de Contoso para la autenticación federada para clientes y partners**
  
 Los servidores de AD FS de la red perimetral facilitan autenticar las credenciales de cliente en sus proveedores de identidad para el acceso al sitio web público y las credenciales de partner para el acceso a la extranet de partners.
 
-Contoso decidió mantener esta infraestructura y dedicarla a autenticaciones de partners y clientes. Los arquitectos de identidad de Contoso están investigando la conversión de esta infraestructura a Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) y soluciones [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles).
+Contoso decidió mantener esta infraestructura y dedicarla a la autenticación de clientes y partners. Los arquitectos de identidad de Contoso están investigando la conversión de esta infraestructura en las soluciones de Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) y [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles)
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>Identidad híbrida con sincronización de hash de contraseña para la autenticación basada en la nube
 
@@ -63,7 +63,7 @@ PHS sincroniza el bosque local de AD DS con la cuenta empresarial de Azure AD de
 
 Para realizar la sincronización continua de directorios, Costoso ha implementado la herramienta Azure AD Connect en un servidor de su centro de datos de París. La figura 3 muestra el servidor que ejecuta Azure AD Connect y que sondea el bosque AD DS de Contoso en busca de cambios, para sincronizar dichos cambios con la cuenta empresarial de Azure AD.
 
-![](./media/contoso-identity/contoso-identity-fig4.png)
+![Infraestructura de sincronización PHS de directorios de Contoso](./media/contoso-identity/contoso-identity-fig4.png)
  
 **Figura 3: Infraestructura de sincronización PHS de directorios de Contoso**
 
@@ -78,7 +78,7 @@ Contoso creó un conjunto de [directivas de acceso condicional](identity-access-
 
 La figura 4 muestra el conjunto resultante de directivas de acceso condicional a identidades.
 
-![](./media/contoso-identity/contoso-identity-fig5.png)
+![Directivas de acceso condicional a identidades y dispositivos de Contoso](./media/contoso-identity/contoso-identity-fig5.png)
  
 **Figura 4: Directivas de acceso condicional a identidades y dispositivos de Contoso**
 
