@@ -31,6 +31,7 @@
 ### [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
 ### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)
 ### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
+### [Etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md)
 
 ## [Prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)
 ### [DLP y Microsoft Teams](dlp-microsoft-teams.md)
