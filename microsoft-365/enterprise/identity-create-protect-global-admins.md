@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Las cuentas de administrador global necesitan un tratamiento especial para proteger la integridad de sus credenciales.
-ms.openlocfilehash: a32781686cd972ca96f6bb08f31c15ede016c4cd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093012"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370217"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Paso 1: crea y proteja sus cuentas de administrador global
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2-Identidad](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>Proteger las cuentas de administrador globales
@@ -110,5 +110,5 @@ Como punto de control provisional, vea los [criterios de salida](identity-exit-c
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Proteja sus contraseñas](identity-secure-your-passwords.md) |
+|![Paso 2](./media/stepnumbers/Step2.png)| [Proteja sus contraseñas](identity-secure-your-passwords.md) |
 

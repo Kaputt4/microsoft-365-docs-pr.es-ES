@@ -3,7 +3,7 @@ title: 'Fase 1: Criterios de salida de la infraestructura de red'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,32 +13,32 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise sobre la infraestructura de red.
-ms.openlocfilehash: 9d818a97e79465d639c52f96901bd1cbaa31144a
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ad54284fdbd00fef486a13a957af6f06cb6a7450
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982781"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370157"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Fase 1: Criterios de salida de la infraestructura de red
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1-Red](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Asegúrese de que su infraestructura de red cumpla los siguientes criterios necesarios y que ha considerado aquellos que son opcionales.
 
 <a name="crit-networking-step1"></a>
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatorio: la red está preparada para Microsoft 365 Enterprise
 
-- Las oficinas tienen suficiente ancho de banda de internet para el tráfico de Microsoft 365, incluidas la instalación y las actualizaciones de Office 365, Microsoft Intune y Windows 10 Enterprise
-- La red general se corresponde a una [arquitectura de referencia de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)
-- Los cambios de la red han sido pilotados y probados y cumplen con los requisitos de latencia de tráfico 
+- Las oficinas tienen suficiente ancho de banda de internet para el tráfico de Microsoft 365, incluidas la instalación y las actualizaciones de Office 365, Microsoft Intune y Windows 10 Enterprise.
+- La red general se corresponde a una [arquitectura de referencia de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Los cambios de la red han sido pilotados y probados y cumplen con los requisitos de latencia de tráfico.
 
 Si es necesario, el [paso 1](networking-provide-bandwidth-cloud-services.md) puede ayudarle con este requisito.
 
 <a name="crit-networking-step2"></a>
 ## <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Obligatorio: las oficinas locales tienen conexión a Internet local y resolución de nombres
 
-Ha configurado cada oficina local con acceso a Internet con un ISP local cuyos servidores DNS usan una dirección IP pública local que identifica su ubicación en Internet. Esto asegura el mejor rendimiento posible para los usuarios que accedan a Office 365 e Intune.
+Ha configurado cada oficina local con acceso a Internet con un ISP local cuyos servidores DNS usan una dirección IP pública local que identifica su ubicación en Internet.  Esto asegura el mejor rendimiento posible para los usuarios que accedan a los servicios en la nube de Microsoft 365.
 
 Si no usa un ISP local para cada sucursal, puede verse afectado el rendimiento porque el tráfico de red debe recorrer la estructura de una organización o las solicitudes de datos se procesan mediante servidores front-end remotos.
 
@@ -48,7 +48,7 @@ Use una herramienta o un sitio web desde un dispositivo de esa oficina para dete
 Si es necesario, el [paso 2](networking-dns-resolution-same-location.md) puede ayudarle con este requisito.
 
 <a name="crit-networking-step3"></a>
-## <a name="optional-unneeded-network-hairpins-are-removed"></a>Opcional: eliminación de las redirecciones de red innecesarias
+## <a name="optional-unneccessary-network-hairpins-are-removed"></a>Opcional: eliminación de las redirecciones de red innecesarias
 
 Ha examinado las redirecciones de red y ha determinado su impacto en el rendimiento de todas las oficinas. Ha eliminado las redirecciones de red cuando ha sido posible, o bien ha trabajado con su proveedor de red o seguridad de terceros para implementar emparejamiento de Microsoft 365 óptimo para su red.
 
@@ -83,4 +83,4 @@ Los usuarios de la intranet ya están listos para usar los servicios en la nube 
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Si sigue las fases de la implementación de extremo a extremo de Microsoft 365 Enterprise, la siguiente fase es la [identidad](identity-infrastructure.md). |
+|![Fase 2-Identidad](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Si sigue las fases de la implementación de extremo a extremo de Microsoft 365 Enterprise, la siguiente fase es la [identidad](identity-infrastructure.md). |

@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Haga que los inicios de sesión en los dispositivos Windows y en Microsoft 365 sean más seguros.
-ms.openlocfilehash: edf51b344ed8f9c8e13587cc2ccf0ba1ed081da6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093011"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370197"
 ---
-# <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Paso 3: proteja y administre los inicios de sesión de usuario
+# <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Paso 3: Proteja y administre los inicios de sesión de usuario
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2-Identidad](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -92,4 +92,4 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Agregar las cuentas de usuario](identity-add-user-accounts.md) |
+|![Paso 4](./media/stepnumbers/Step4.png)| [Agregue cuentas de usuario](identity-add-user-accounts.md) |

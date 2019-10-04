@@ -3,7 +3,7 @@ title: Investigación y respuesta automatizadas (AIR) en Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,27 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 1e600a7a392acc34fac2547a3daa17c0058322b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092684"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386207"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Investigación y respuesta automatizadas (AIR) en Office 365
 
-La funcionalidad de investigación y respuesta automatizada (AIR) (incluida en [Office 365 Advanced Threat Protection](office-365-atp.md) plan 2) le permiten ejecutar procesos de investigación automatizada en respuesta a amenazas bien conocidas que ya existen en la actualidad. AIR puede ayudar al equipo de operaciones de seguridad a operar de manera más eficiente y efectiva.
+Las capacidades de investigación y respuesta automatizadas (AIR) le permiten ejecutar procesos de investigación automatizada en respuesta a amenazas bien conocidas que existen actualmente. AIR puede ayudar al equipo de operaciones de seguridad a operar de manera más eficiente y efectiva.
 - Para obtener información general sobre cómo funciona AIR, use este artículo.
 - Para empezar a usar AIR, consulte [investigar y responder automáticamente a amenazas en Office 365](office-365-air.md).
 
 > [!NOTE]
 > Debe ser administrador global, administrador de seguridad, operador de seguridad o lector de seguridad para obtener acceso a las funciones de AIR. Para obtener más información acerca de estos permisos, consulte [Microsoft 365 Security Center: roles y permisos](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+AIR se incluye en las siguientes suscripciones:
+- Microsoft 365 E5
+- Seguridad de Microsoft 365 E5
+- Office 365 E5
+- Plan 2 de protección contra amenazas avanzada de Office 365
 
 ## <a name="the-overall-flow-of-air"></a>Flujo general de aire
 
@@ -57,8 +63,12 @@ En la versión inicial de AIR (a partir del 2019 de abril de 2007), las alertas 
 
 - Mensajes de correo electrónico que contienen direcciones URL de phish quitadas después de la entrega *
 
+- Patrones de envío de correo electrónico sospechosos detectados #
+
+- El usuario restringió el envío de correo electrónico #
+
 > [!NOTE]
-> A las alertas marcadas con un asterisco se les asigna una gravedad *informativa* en las directivas de alerta respectivas en el centro de seguridad & cumplimiento, con las notificaciones de correo electrónico desactivadas. Las notificaciones por correo electrónico se pueden activar a través de la configuración de la [Directiva de alerta](../../compliance/alert-policies.md#alert-policy-settings).
+> A las alertas marcadas con un asterisco (*) se les asigna una gravedad *informativa* en las respectivas directivas de alerta en el centro de seguridad & cumplimiento, con las notificaciones de correo electrónico desactivadas. Las notificaciones por correo electrónico se pueden activar a través de la configuración de la [Directiva de alerta](../../compliance/alert-policies.md#alert-policy-settings). Las alertas marcadas con un hash (#) están normalmente disponibles como alertas asociadas con las guías de vista previa pública.
 
 Para ver las alertas, en el centro de seguridad & cumplimiento, elija **alertas** > **Ver alertas**. Seleccione una alerta para ver sus detalles y, desde allí, use el vínculo **Ver investigación** para ir a la [investigación](#investigation-graph)correspondiente. Tenga en cuenta que las alertas informativas están ocultas en la vista de alertas de forma predeterminada. Para verlos, debe cambiar el filtrado de alertas para incluir alertas informativas.
 
@@ -74,15 +84,18 @@ Las guías de seguridad que recibirá con AIR están diseñadas para enfrentarse
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Las guías de seguridad se implementan en fases
 
-Como parte de AIR, las guías de seguridad se implementan en fases. Durante la fase 1 (la vista previa empezó a implementarse en abril de 2019), se publicaron varias guías que incluyen recomendaciones para acciones que los administradores de seguridad revisan y aprueban:
+Como parte de AIR, las guías de seguridad se implementan en fases. La fase 1 suele estar disponible e incluye varias guías que proporcionan recomendaciones para las acciones que los administradores de seguridad pueden revisar y aprobar:
 - Mensaje de phish notificado por el usuario
-- Dirección URL haga clic en cambiar veredicto 
+- Dirección URL haga clic en cambiar veredicto
 - Malware detectado después de la entrega (ZAP de malware)
 - Phish detectado tras entrega tras entrega (ZAP de Phish)
 
-La fase 1 también incluye investigaciones manuales de correo electrónico (mediante el [Explorador de amenazas](threat-explorer.md)).
+La fase 1 también incluye compatibilidad para las investigaciones manuales de correo electrónico (mediante el [Explorador de amenazas](threat-explorer.md)).
 
-La fase 2 ya está en curso. Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que más está previsto y próximamente.
+La fase 2 está ahora en progreso con las siguientes guías en la **versión preliminar pública**y se proporcionan recomendaciones para acciones y para ayudar a los administradores de seguridad en la investigación de problemas:
+- Usuario notificado como comprometida (vista previa pública)
+
+Las guías adicionales se publicarán cuando se completen. Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que más está previsto y próximamente.
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Las guías incluyen investigación y recomendaciones
 
@@ -99,7 +112,7 @@ La página investigaciones automatizadas muestra las investigaciones de su organ
 
 ![Página principal de investigación para AIR](../media/air-maininvestigationpage.png) 
   
-Podrá:
+Puede:
 - Vaya directamente a una investigación (seleccione un **identificador de investigación**).
 - Aplicar filtros. Elija entre el **tipo de investigación**, **el intervalo de tiempo**, el **Estado**o una combinación de estos.
 - Exporte los datos a un archivo. csv.
@@ -124,7 +137,7 @@ Al abrir una investigación específica, verá la página gráfico de investigac
 
 ![Página de gráfico de investigación de aire](../media/air-investigationgraphpage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de la investigación actual.
 - Ver un resumen de la duración de la investigación.
 - Seleccione un nodo de la visualización para ver los detalles de ese nodo.
@@ -136,7 +149,7 @@ En la pestaña **alertas** de una investigación, puede ver las alertas relevant
 
 ![Página de alertas de AIR](../media/air-investigationalertspage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de la alerta desencadenadora actual y de cualquier alerta asociada.
 - Seleccione una alerta de la lista para abrir una página emergente que muestre los detalles de la alerta completa.
 
@@ -169,7 +182,7 @@ Como ejemplo, considere el siguiente escenario. El primer clúster de tres mensa
 
 ![Página de investigación de correo electrónico de AIR](../media/air-investigationemailpage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de los resultados y amenazas de clúster actuales encontrados.
 - Haga clic en una entidad de clúster o en una lista de amenazas para abrir una página emergente que muestre los detalles de alerta completos.
 - Para investigar más detalladamente el clúster de correo electrónico, haga clic en el vínculo "abrir en el explorador" que se encuentra en la parte superior de la pestaña "detalles del clúster de correo electrónico"
@@ -186,7 +199,7 @@ Por ejemplo, en la siguiente imagen, AIR ha identificado indicadores de peligro 
 
 ![Página de usuarios de investigación de aire](../media/air-investigationuserspage.png)
 
-Podrá:
+Puede:
 - Obtenga una introducción visual de los resultados de usuario identificados y los riesgos encontrados.
 - Seleccione un usuario para abrir una página emergente que muestre todos los detalles de la alerta.
 
@@ -199,7 +212,7 @@ En la pestaña **máquinas** , puede ver todos los equipos identificados como pa
 Como parte de la investigación, AIR correlaciona las amenazas de correo electrónico en los dispositivos. Por ejemplo, una investigación pasa un hash de archivo malintencionado entre en [Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) para investigar. Esto permite la investigación automatizada de las máquinas pertinentes para los usuarios, para ayudar a garantizar que las amenazas se dirijan en la nube y en los extremos. 
 
-Podrá:
+Puede:
 - Obtenga información general visual de las amenazas y los equipos actuales encontrados.
 - Seleccione un equipo para abrir una vista en la investigación de [ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) relacionada en el centro de seguridad de Microsoft defender.
 
@@ -211,7 +224,7 @@ Aquí, puede ver las entidades investigadas y los detalles de los tipos de entid
 
 ![Página de entidades de investigación de aire](../media/air-investigationentitiespage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de las entidades de investigación y las amenazas encontradas.
 - Seleccione una entidad para abrir una página emergente que muestre los detalles de la entidad relacionada.
 
@@ -223,7 +236,7 @@ En la pestaña **registro** , puede ver todos los pasos de la guía que se han p
 
 ![Página de registro de investigación de aire](../media/air-investigationlogpage.png)
 
-Podrá:
+Puede:
 - Vea una descripción general visual de los pasos de la guía realizados.
 - Exporte los resultados a un archivo CSV.
 - Filtrar la vista.
@@ -236,7 +249,7 @@ Acciones Capture los pasos que Microsoft recomienda realizar al final de una inv
 
 ![Página de acción de investigaciones de aire](../media/air-investigationactionspage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de las acciones recomendadas de la guía.
 - Seleccione una sola acción o varias acciones.
 - Aprobar o rechazar acciones recomendadas con comentarios.
@@ -297,7 +310,7 @@ Si no tiene ninguna de estas suscripciones, [inicie una prueba gratuita](https:/
 
 Para obtener más información acerca de la disponibilidad de características, visite la [característica disponibilidad en los planes de protección contra amenazas avanzada (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Introducción al uso de AIR en Office 365](office-365-air.md)
 

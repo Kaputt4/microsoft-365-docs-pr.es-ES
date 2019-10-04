@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Documentación y recursos de Microsoft 365 Enterprise
-ms.openlocfilehash: 38d349fb17303ac9e9979ae9a58682e01578b70a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c96656495e9433703b85fb1c5f3610a617100253
+ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283482"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37391213"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -58,7 +58,7 @@ ms.locfileid: "32283482"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Implementar</h3>
+                                                <h3>Implementación</h3>
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">Guía de implementación</a></p>
                                                 <P><a href="https://aka.ms/howtoshift" target="_blank">Implementación de escritorio moderna</a></p>
@@ -78,8 +78,9 @@ ms.locfileid: "32283482"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Administración del &amp; cumplimiento de seguridad</h3>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Soluciones de cumplimiento normativo</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Cumplimiento de seguridad &amp; de Office 365</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Planes de acción de cumplimiento</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/" target="_blank">Cumplimiento de Microsoft 365</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/security/" target="_blank">Seguridad de Microsoft 365</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md" target="_blank">Acceso &amp; al dispositivo de identidad</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">ATP de Windows Defender</a></p>
                                             </div>
@@ -97,7 +98,7 @@ ms.locfileid: "32283482"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Entrenar a los usuarios de & de administración</h3>
+                                                <h3>Entrenar a los administradores & usuarios</h3>
                                                 <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
@@ -140,7 +141,7 @@ ms.locfileid: "32283482"
                                                 <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a></p>
-                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Protección contra amenazas avanzada de Azure</a></p>
+                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure Advanced Threat Protection</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -180,7 +181,7 @@ ms.locfileid: "32283482"
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Otros productos de 365 de Microsoft</h3>
-                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 empresa</a></p>
+                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 Empresa</a></p>
                                                         <P><a href="https://docs.microsoft.com/education/" target="_blank">Microsoft 365 Educación</a></p>
                                                     </div>
                                                 </div>
