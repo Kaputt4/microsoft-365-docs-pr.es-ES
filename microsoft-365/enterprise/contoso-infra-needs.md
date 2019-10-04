@@ -3,7 +3,7 @@ title: Necesidades empresariales y de infraestructura de TI de Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades empresariales se pueden satisfacer mediante Microsoft 365 Enterprise.
-ms.openlocfilehash: e50a2b17544c1a551d25dffd751d12aec1c15ecd
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades empresariales fueron satisfechas mediante Microsoft 365 Enterprise.
+ms.openlocfilehash: d22763cede23d28c76a28c95a6e4772af81a996c
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072620"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369591"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Necesidades empresariales y de infraestructura de TI de Contoso
 
-**Resumen:** Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades empresariales se pueden satisfacer mediante Microsoft 365 Enterprise.
-
+**Resumen:** Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades empresariales fueron satisfechas mediante Microsoft 365 Enterprise.
 
 Contoso ha realizado la transición de una infraestructura de TI centralizada local a una infraestructura de nube inclusiva que incorpora las cargas de trabajo de productividad del personal y las aplicaciones basadas en la nube.
 
@@ -33,7 +32,7 @@ Contoso usa una infraestructura de TI local mayoritariamente centralizada, con c
 
 En la Figura 1 se muestra una oficina central con centros de datos de aplicaciones, una red perimetral e Internet.
 
-![](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Infraestructura de TI existente de Contoso](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **Figura 1: Infraestructura de TI existente de Contoso**
  
@@ -43,15 +42,15 @@ En los centros de datos de aplicaciones locales se hospeda lo siguiente:
 - Un conjunto de servidores de SharePoint heredados.
 - Servidores de nivel de equipo y de la organización para el almacenamiento de archivos.
 
-Además, cada centro regional admite un conjunto de servidores con un conjunto de aplicaciones similar. Estos servidores están bajo el control de los departamentos de TI regionales.
+Además, cada una de las oficinas centrales regionales es compatible con un conjunto de servidores que tiene un conjunto de aplicaciones similares. Estos servidores están bajo el control de los departamentos de TI regionales.
 
 La capacidad de búsqueda entre las aplicaciones y los datos de todos estos centros de datos separados geográficamente sigue siendo un desafío.
 
 En la red perimetral de la sede central de Contoso, los distintos conjuntos de servidores proporcionan lo siguiente:
 
-- Acceso remoto basado en VPN a la intranet de Contoso y proxy web para los trabajadores de la sede de París.
 - Hospedaje del sitio web público de Contoso, desde el que los clientes pueden solicitar productos, piezas, suministros o servicio.
 - Hospedaje de la extranet de partners de Contoso para la colaboración y comunicación de los partners.
+- Acceso remoto a la intranet de Contoso basado en VPN (Red privada virtual) y proxy web para los trabajadores de la sede de París.
 
 ## <a name="contosos-business-needs"></a>Necesidades empresariales de Contoso
 
@@ -81,7 +80,7 @@ Seguridad:
 
 - Protección de la información
 
-  Restrinja el acceso y cifre los activos digitales de gran valor, como los datos del cliente, las especificaciones de diseño y la información de los empleados.
+  Restrinja el acceso y cifre los activos digitales de gran valor, como los datos del cliente, las especificaciones de diseño y manufactura y la información de los empleados.
 
 - Administración de seguridad
 
@@ -95,7 +94,7 @@ Acceso móvil y remoto, y socios comerciales:
 
 - Reducir la infraestructura de acceso remoto para los empleados
 
-  Reduzca los costos de mantenimiento y soporte técnico, y mejore el rendimiento de la solución de acceso remoto moviendo a la nube los recursos a los que se accede con frecuencia.
+  Reduzca los costos de mantenimiento y soporte técnico, y mejore el rendimiento de la solución de acceso remoto moviendo a la nube los recursos de uso más frecuente.
 
 - Proporcionar mejor conectividad y menos sobrecarga para las transacciones de negocio a negocio (B2B)
 
@@ -111,7 +110,7 @@ Administración:
 
 - Reducir la sobrecarga de TI de la administración de software en los equipos y dispositivos cliente
 
-  Automatice la instalación de actualizaciones para el sistema operativo Windows y Microsoft Office en toda la organización.
+  Automatice la instalación de actualizaciones para el sistema operativo Windows y Microsoft Office ProPlus en toda la organización.
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Asignación de las necesidades empresariales de Contoso a Microsoft 365 Enterprise
 
@@ -121,27 +120,27 @@ Antes de la implementación, el departamento de TI de Contoso determinó la sigu
 |:-------|:-----|:-----|
 | **Categoría** | **Necesidad empresarial** | **Productos o características de Microsoft 365 Enterprise** |
 | Productividad |  |  |
-|  | Facilitar la colaboración | Teams, SharePoint Online, Skype Empresarial Online |
-|  | Mejorar la productividad de los trabajadores remotos y móviles | Cargas de trabajo de Office 365 y datos basados en la nube |
+|  | Facilitar la colaboración | Microsoft Teams, SharePoint, OneDrive |
+|  | Mejorar la productividad de los trabajadores remotos y móviles | Cargas de trabajo de Microsoft 365 y datos basados en la nube |
 |  | Aumentar la creatividad y la innovación | Windows Ink, Cortana en el trabajo, PowerPoint |
 | Seguridad |  |  |
-|  | Administración de identidad y acceso | Cuentas de administrador global dedicadas con la autenticación multifactor (MFA) y Azure AD Privileged Identity Management (PIM) <BR> MFA para todas las cuentas de usuario <BR> Acceso condicional <BR> Windows Hello <BR> Credential Guard de Windows Defender |
+|  | Administración de identidad y acceso | Cuentas de administrador global dedicadas con la autenticación multifactor (MFA) Azure y Azure AD Privileged Identity Management (PIM) <BR> MFA para todas las cuentas de usuario <BR> Acceso condicional <BR> Windows Hello <BR> Credential Guard de Windows Defender |
 |  | Protección contra amenazas | Advanced Threat Analytics <BR> Windows Defender <BR> Protección contra amenazas avanzada <BR> Protección contra amenazas avanzada de Office 365 <BR> Investigación y respuesta de amenazas de Office 365 <BR> |
-|  | Protección de la información | Azure Information Protection <BR> Prevención de pérdida de datos (DLP) de Office 365 <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | Protección de la información | Azure Information Protection <BR> Prevención de pérdida de datos (DLP) de Office 365 <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Administración de seguridad | Azure Security Center  <BR> Centro de seguridad de Windows Defender |
 | Acceso móvil y remoto, y socios comerciales |  |  |
 |  | Mejorar la seguridad de los trabajadores remotos y móviles | Microsoft Intune |
-|  | Reducir la infraestructura de acceso remoto para los empleados | Cargas de trabajo de Office 365 y datos basados en la nube |
+|  | Reducir la infraestructura de acceso remoto para los empleados | Cargas de trabajo de Microsoft 365 y datos basados en la nube |
 |  | Proporcionar mejor conectividad y menos sobrecarga para las transacciones B2B | Autenticación federada y recursos basados en la nube |
 | Cumplimiento |  |  |
 |  | Cumplir los requisitos normativos regionales | Características del RGPD en Office 365 |
 | Administración |  |  |
-|  | Reducir la sobrecarga de TI para la instalación de actualizaciones de cliente | Anillos de implementación <BR> Actualización local de Windows 10 y Autopilot <BR> Office 365 ProPlus |
+|  | Reducir la sobrecarga de TI para la instalación de actualizaciones de cliente | Anillos de implementación <BR> Actualizaciones de Windows 10 Enterprise <BR> Actualizaciones de Office 365 ProPlus |
 ||||
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
-[Obtenga más información](contoso-networking.md) sobre la red local de Contoso Corporation y cómo se optimizó para el acceso y la latencia para los recursos basados en la nube de Microsoft 365 en la organización.
+[Obtenga más información](contoso-networking.md) sobre la red local de Contoso Corporation y cómo se optimizó para el acceso y la latencia para los recursos basados en la nube de Microsoft 365.
 
 ## <a name="see-also"></a>Vea también
 

@@ -3,7 +3,7 @@ title: Implementación de Windows 10 Enterprise para Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo Contoso usó System Center Configuration Manager para implementar las actualizaciones locales de Windows 10 Enterprise.
-ms.openlocfilehash: 03ee4d9efcedf42eb976e001411299d2080abf83
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073860"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370477"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Implementación de Windows 10 Enterprise para Contoso
 
 **Resumen:** Obtenga información sobre cómo Contoso usó System Center Configuration Manager para implementar las actualizaciones locales de Windows 10 Enterprise.
 
-Antes de la amplia implementación de Microsoft 365 Enterprise, Contoso tenía equipos y dispositivos compatibles con Windows con una combinación de Windows 7 (10 %), Windows 8.1 (65 %) y Windows 10 (25 %). Contoso quería actualizar sus equipos para que Windows 10 Enterprise aprovechara las ventajas de la mejora de seguridad y la reducción de la sobrecarga de TI de las implementaciones automatizadas de las actualizaciones. 
+Antes de la amplia implementación de Microsoft 365 Enterprise, Contoso tenía equipos y dispositivos compatibles con Windows con una combinación de Windows 7 (10 %), Windows 8.1 (65 %) y Windows 10 (25 %). Contoso quería actualizar sus equipos para que Windows 10 Enterprise aprovechara las ventajas de la seguridad avanzada y la reducción de la sobrecarga de TI de las implementaciones automatizadas de las actualizaciones. 
 
 Después de evaluar la infraestructura y las necesidades empresariales, Contoso identificó estos requisitos de implementación principales:
 
@@ -45,11 +45,11 @@ Antes y durante las actualizaciones locales de Windows 10 Enterprise, Contoso us
 
 - Update Compliance  
 
-  Recopila datos del sistema y de diagnóstico como el progreso de instalación de la actualización, datos de configuración de Windows Update para empresas (WUfB), datos de Antivirus de Windows Defender y otra información específica de la actualización y, después, almacena estos datos en el análisis y uso en la nube.
+  Le muestra el estado de sus dispositivos con respecto a las actualizaciones de Windows, para que pueda asegurarse de que tienen instaladas las actualizaciones más recientes según corresponda.
 
 - Estado del dispositivo  
 
-  Recopila datos del sistema de Windows 10 y de diagnóstico como el progreso de instalación de la actualización, datos de configuración de Windows Update para empresas (WUfB), datos de Antivirus de Windows Defender y otra información específica de la actualización y, después, almacena estos datos en el análisis y uso en la nube.
+  Identifica los dispositivos que se bloquean con frecuencia y que quizás deban volver a crearse o reemplazarse, y los controladores de dispositivos que estén causando bloqueos en los mismos, y ofrece sugerencias de versiones alternativas de dichos controladores que pueden reducir el número de bloqueos. Proporciona una notificación de las configuraciones incorrectas de Windows Information Protection que envía avisos a los usuarios finales.
  
 Contoso tiene una infraestructura existente de System Center Configuration Manager (Rama actual). Configuration Manager se escala en entornos de gran tamaño y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También incluye características integradas para que implementar y administrar Windows 10 Enterprise sea más fácil y eficaz.
 
@@ -75,20 +75,18 @@ Para completar la implementación de actualizaciones locales de Windows 10 Enter
 4. Evaluó el éxito de los equipos y dispositivos en los tres anillos de validación y pruebas de implementación mediante las soluciones Estado del dispositivo y Update Compliance de Windows Analytics.
 5. Según la información de Windows Analytics, Contoso determinó la versión de Windows 10 Enterprise que se iba a implementar en el anillo de implementación general.
 6. Ejecutó las secuencias de tareas de implementación de Configuration Manager para implementar el paquete de Windows seleccionado en el anillo de implementación general.
-7. Supervisó los equipos y dispositivos del anillo de implementación general mediante las soluciones Estado del dispositivo y Update Compliance proporcionadas por Windows Analytics para solucionar los problemas.
+7. Equipos y dispositivos del anillo de implementación general supervisados mediante las soluciones para solucionar los problemas.
 
-En la Figura 1 se muestra la arquitectura de implementación de actualización local y actualizaciones continuas.
+Aquí se muestra la arquitectura de implementación de actualización local y actualizaciones continuas de Contoso.
 
-![](./media/contoso-win10/contoso-win10-fig1.png)
- 
-**Figura 1: Infraestructura de implementación de Windows 10 Enterprise de Contoso**
+![Infraestructura de implementación de Windows 10 Enterprise de Contoso](./media/contoso-win10/contoso-win10-fig1.png)
 
 Esta infraestructura consta de:
 
 - System Center Configuration Manager, que:
   - Obtiene imágenes de paquetes de Windows 10 Enterprise del Centro de servicios de licencias por volumen de Microsoft en Microsoft Network.
   - Es el punto de administración central para los paquetes de implementación.
-- Puntos de distribución regionales que normalmente se encuentran en las oficinas satélite de Contoso.
+- Puntos de distribución regionales que normalmente se encuentran en las oficinas centrales regionales de Contoso.
 - Equipos y dispositivos Windows en diferentes ubicaciones que reciben e instalan los paquetes de implementación para la actualización local o las actualizaciones continuas según el anillo al que pertenezcan.
 
 ## <a name="next-step"></a>Paso siguiente
