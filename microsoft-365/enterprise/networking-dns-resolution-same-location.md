@@ -3,7 +3,7 @@ title: 'Paso 2: Configurar conexiones a Internet locales para cada oficina'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,26 +13,42 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure su resolución DNS para mejorar el rendimiento.
-ms.openlocfilehash: 2b3c38a9bf259f453121f7878992d1dc50f2ce97
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b47131b9a5f854c630f5d54bd4d3b4738ed953b3
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073270"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370307"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>Paso 2: Configurar conexiones a Internet locales para cada oficina
 
 *Este paso es obligatorio y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1-Red](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 En el paso 2, se asegura de que todas las oficinas tienen conexión local a Internet y usan servidores DNS locales. Estos dos elementos son necesarios para reducir la latencia de la conexión y asegurarse de que los equipos cliente locales establecen conexiones con el punto de entrada más próximo a los servicios basados en la nube de Microsoft 365.
 
-En las redes tradicionales para grandes organizaciones, el tráfico de Internet viaja a través de la red troncal a una conexión a Internet central. Esto no funciona bien para optimizar el rendimiento de una infraestructura de Software como-servicio (SaaS) distribuida de forma global, que incluye los productos Office 365 y Enterprise Mobility + productos Security (EMS) de Microsoft 365.
+En las redes tradicionales para grandes organizaciones, el tráfico de Internet se desplaza por la red troncal a una conexión a Internet central. Esto no es adecuado para optimizar el rendimiento de una infraestructura de Software como Servicio (SaaS) distribuida globalmente, que incluye los productos Office 365 e Intune en Microsoft 365.
 
-La red global de Microsoft incluye servidores front-end para el conjunto de servicios de nube de Microsoft 365 en todo el mundo. Para obtener el mejor rendimiento, los clientes locales deben acceder a un servidor front-end geográficamente más próximo a ellos, en lugar de enviar el tráfico a través de una red troncal al servidor front-end más próximo a la conexión de Internet central de la organización.
+La Red Global de Microsoft incluye una infraestructura de *Servicio Front End Distribuido*, un perímetro de red altamente disponible y escalable con ubicaciones geográficas. Termina las conexiones de usuario final en un servidor front-end y enruta eficazmente el tráfico de usuario final en la Red Global de Microsoft.
 
-Para dirigir una solicitud cliente al servidor front-end más cercano geográficamente, los servidores DNS de Microsoft usan las consultas DNS correspondientes a la solicitud de conexión inicial del cliente. Por tanto, para obtener la latencia de red más baja:
+![La Red Global de Microsoft](./media/networking-dns-resolution-same-location/microsoft-global-network.png)
+
+Para obtener el mejor rendimiento, los clientes locales deben acceder a un servidor front-end que esté geográficamente más próximo a ellos, en lugar de enviar el tráfico a través de una red troncal al servidor front-end más próximo a la conexión de Internet central de la organización.
+
+He aquí un ejemplo.
+
+![Ejemplo de uso de la Red Global de Microsoft](./media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
+
+Cuando un usuario de la sucursal de París desea tener acceso a un sitio de SharePoint Online:
+
+1. Envía una consulta DNS para resolver un nombre, como contoso.sharepoint.com. 
+2. El servidor DNS que proporcionó el ISP reenvía esa consulta a un servidor DNS de Microsoft.
+3. Los servidores DNS de Microsoft coinciden con la dirección IP de origen de la consulta DNS reenviada a la región del mundo asignada a la dirección. El servidor DNS de Microsoft responde con la dirección IP del servidor front-end de la red de Microsoft más cercana en Europa.
+4. El servidor DNS de ISP envía esta dirección IP al usuario.
+5. El usuario inicia una conexión con el servidor de SharePoint a través del servidor front-end de Europa.
+
+Para dirigir una solicitud de cliente al servidor front-end más cercano geográficamente, los servidores DNS de Microsoft usan las consultas DNS correspondientes a la solicitud de conexión inicial del cliente.  Por tanto, para obtener la latencia de red más baja:
 
 - Todas las oficinas de la organización deben tener conexiones locales a Internet para el tráfico de red de la categoría [Optimizar](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories).
 - Todas las conexiones locales a Internet deben usar un servidor DNS local de la región para el tráfico de Internet saliente desde esa ubicación.
@@ -45,4 +61,4 @@ Como punto de control provisional, puede ver los [criterios de salida](networkin
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)|[Evitar las redirecciones de red](networking-avoid-network-hairpins.md)|
+|![Paso 3](./media/stepnumbers/Step3.png)|[Evitar las redirecciones de red](networking-avoid-network-hairpins.md)|
