@@ -96,8 +96,8 @@
 ##### [Informar de correo electrónico no deseado y estafas de suplantación de identidad (phishing) en Outlook en la Web](./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)
 ##### [Proteger buzones locales con Exchange Online Protection](./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md)
 ##### [Instalar el complemento de notificación de correo no deseado para Microsoft Outlook](./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md)
-#####[Desactivar la notificación de correo no deseado para Outlook en la Web](./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
-#####[¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md)
+##### [Desactivar la notificación de correo no deseado para Outlook en la Web](./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
+##### [¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 #### [Cuarentena de mensajes de correo electrónico en Office 365](./office-365-security/quarantine-email-messages.md)
 ##### [Administrar archivos y mensajes en cuarentena como administrador](./office-365-security/manage-quarantined-messages-and-files.md)
@@ -127,13 +127,14 @@
 
 
 ### [Protección contra amenazas avanzada](./office-365-security/office-365-atp.md)
+#### [Ver las novedades]()
+##### [Novedades de Office 365 ATP](office-365-security/whats-new-in-office-365-atp.md)
 #### [Tareas de configuración de ATP para administradores]()
 ##### [Tareas de configuración de administrador global]()
 ###### [Configurar directivas de vínculos seguros de ATP](./office-365-security/set-up-atp-safe-links-policies.md)
 ###### [Configurar directivas de datos adjuntos seguros de ATP](./office-365-security/set-up-atp-safe-attachments-policies.md)
 ###### [Configurar una lista personalizada de URL con "no reescribir"](./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
 ###### [Configurar una lista personalizada de URL bloqueadas](./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
 ##### [Tareas de configuración de administrador de roles]()
 ###### [Activar ATP para SharePoint, OneDrive y Microsoft Teams](./office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
 #### [Comprender las últimas campañas de ataques con análisis de amenazas](./mtp/latest-attack-campaigns.md)
