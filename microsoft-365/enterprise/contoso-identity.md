@@ -3,7 +3,7 @@ title: Identidad para Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso aprovecha la Identidad como servicio (IDaaS) y proporciona autenticación basada en la nube a sus empleados y autenticación federada a sus partners y clientes.
-ms.openlocfilehash: 5c78e8cc9235eb2ca5de091c05d1883ed6cca1b4
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: a61ce89c3d0069edffccc12a6ed2a4c578e6968a
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369611"
+ms.locfileid: "37370257"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
@@ -30,12 +30,10 @@ Microsoft proporciona una Identidad como servicio (IDaaS) en su oferta en la nub
 
 Contoso usa un único bosque de Active Directory Domain Services (AD DS) para contoso.com con siete subdominios, uno para cada región del mundo. La sede, las oficinas regionales y las oficinas satélite contienen controladores de dominio para la autenticación y la autorización local.
 
-La figura 1 muestra el bosque de Contoso con dominios regionales para las distintas partes del mundo que contienen centros regionales.
+Este es el bosque de Contoso con dominios regionales para las distintas partes del mundo que contienen centros regionales.
 
 ![Bosque y dominios de Contoso en todo el mundo](./media/contoso-identity/contoso-identity-fig1.png)
  
-**Figura 1: Bosque y dominios de Contoso en todo el mundo**
-
 Contoso quería usar las cuentas y los grupos del bosque contoso.com para la autenticación y la autorización de sus cargas de trabajo y servicios en Microsoft 365.
 
 ## <a name="contosos-federated-authentication-infrastructure"></a>Infraestructura de autenticación federada de Contoso
@@ -45,11 +43,9 @@ Contoso permite lo siguiente:
 - Que los clientes usen sus cuentas de Microsoft, Facebook o Google Mail para iniciar sesión en su sitio web público.
 - Que los proveedores y partners usen sus cuentas de LinkedIn, Salesforce o Google Mail para iniciar sesión en la extranet de partners.
 
-La figura 2 muestra la red perimetral de Contoso con un sitio web público, una extranet de partners y un conjunto de servidores de Servicios de federación de Active Directory (AD FS). La red perimetral está conectada a Internet que contiene clientes y partners, y servicios de Internet.
+Esta es la red perimetral de Contoso con un sitio web público, una extranet de partners y un conjunto de servidores de Active Directory Federation Services (AD FS). La red perimetral está conectada al Internet que contiene clientes, partners y servicios de Internet.
 
-![Soporte de Contoso para autenticación federada para clientes y partners](./media/contoso-identity/contoso-identity-fig2.png)
-
-**Figura 2: Soporte de Contoso para la autenticación federada para clientes y partners**
+![Soporte de Contoso de autenticación federada para los clientes y partners](./media/contoso-identity/contoso-identity-fig2.png)
  
 Los servidores de AD FS de la red perimetral facilitan autenticar las credenciales de cliente en sus proveedores de identidad para el acceso al sitio web público y las credenciales de partner para el acceso a la extranet de partners.
 
@@ -61,28 +57,25 @@ Contoso quería aprovechar su bosque local de AD DS para la autenticación para 
 
 PHS sincroniza el bosque local de AD DS con la cuenta empresarial de Azure AD de su suscripción de Microsoft 365 Enterprise, copiando las cuentas de usuario y de grupo, junto con una versión en hash de las contraseñas de cuentas de usuario. 
 
-Para realizar la sincronización continua de directorios, Costoso ha implementado la herramienta Azure AD Connect en un servidor de su centro de datos de París. La figura 3 muestra el servidor que ejecuta Azure AD Connect y que sondea el bosque AD DS de Contoso en busca de cambios, para sincronizar dichos cambios con la cuenta empresarial de Azure AD.
+Para realizar la sincronización continua de directorios, Costoso ha implementado la herramienta Azure AD Connect en un servidor de su centro de datos de París. 
+
+Este es el servidor que ejecuta Azure AD Connect y que sondea el bosque AD DS de Contoso en busca de cambios, para después sincronizar dichos cambios con la cuenta empresarial de Azure AD.
 
 ![Infraestructura de sincronización PHS de directorios de Contoso](./media/contoso-identity/contoso-identity-fig4.png)
  
-**Figura 3: Infraestructura de sincronización PHS de directorios de Contoso**
+## <a name="conditional-access-policies-for-identity-and-device-access"></a>Directivas de Acceso Condicional a identidades y dispositivos
 
-
-## <a name="conditional-access-policies-for-identity-and-device-access"></a>Directivas de acceso condicional a identidades y dispositivos
-
-Contoso creó un conjunto de [directivas de acceso condicional](identity-access-policies.md) de Azure AD e Intune de tres niveles de protección:
+Contoso creó un conjunto de [directivas de Acceso Condicional](identity-access-policies.md) de Azure AD e Intune de tres niveles de protección:
 
 - Protección **básica**, que se aplica a todas las cuentas de usuario
 - Protección **confidencial**, que se aplica al personal directivo y al personal ejecutivo
 - Protección **altamente regulada**, que se aplica a usuarios específicos de los departamentos financiero, legal y de investigación que tienen acceso a datos altamente regulados.
 
-La figura 4 muestra el conjunto resultante de directivas de acceso condicional a identidades.
+Este es el conjunto resultante de directivas de acceso condicional a identidades.
 
 ![Directivas de acceso condicional a identidades y dispositivos de Contoso](./media/contoso-identity/contoso-identity-fig5.png)
  
-**Figura 4: Directivas de acceso condicional a identidades y dispositivos de Contoso**
-
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 [Obtenga información sobre](contoso-win10.md) cómo aprovecha Contoso su infraestructura de System Center Configuration Manager para implementar y mantener actualizado Windows 10 Enterprise en la organización.
 
