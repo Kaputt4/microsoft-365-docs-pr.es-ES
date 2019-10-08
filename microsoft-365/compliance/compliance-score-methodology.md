@@ -12,21 +12,21 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 148920fac825dab9f67a79bc11907b72218e47bc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: eb6e79d840439acec007fef54bf6cb5ca5633f1e
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092030"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417499"
 ---
 # <a name="compliance-score-methodology-preview"></a>Metodología de puntuación de cumplimiento (versión preliminar)
 
 > [!NOTE]
 > La puntuación de cumplimiento no indica una medida absoluta de cumplimiento organizativo con cualquier norma o reglamento específico. Expresa el alcance hasta el que se adoptaron controles que pueden reducir los riesgos en la privacidad individual y los datos personales. Ningún servicio puede garantizar que cumpla con una norma o reglamento y, además, la puntuación de cumplimiento no puede interpretarse como una garantía en ningún caso.
 
-El panel del administrador de cumplimiento muestra una puntuación total de cumplimiento para las evaluaciones en cada mosaico de evaluación. Esta es la puntuación de cumplimiento general para la evaluación y es la acumulación de puntos recibidos para cada control implementado y probado en la evaluación. Para una nueva evaluación, la puntuación de cumplimiento tiene un valor inicial para los controles administrados por Microsoft que han sido probados por terceros independientes. La puntuación de cumplimiento puede ayudar a priorizar con qué evaluaciones y controles centrarse para mejorar su postura de cumplimiento general.
+El panel del administrador de cumplimiento muestra una puntuación total de cumplimiento para las evaluaciones en cada mosaico de evaluación. Esta es la puntuación de cumplimiento general para la evaluación y es la acumulación de puntos recibidos para cada control implementado y probado en la evaluación. Para una nueva evaluación, la puntuación de cumplimiento tiene un valor inicial para los controles administrados por Microsoft que han sido probados por terceros independientes. La puntuación de cumplimiento se calcula en función de las puntuaciones de acciones administradas por Microsoft y las puntuaciones de acciones administradas por el cliente. La puntuación de cumplimiento puede ayudar a priorizar con qué evaluaciones y controles centrarse para mejorar su postura de cumplimiento general.
 
-Los valores de puntuación de cumplimiento que se muestran para el control se aplican *en su totalidad* a la puntuación de cumplimiento total en una base Pass/Fail. Puede implementar el control y pasar la prueba de evaluación posterior o no. No hay crédito parcial para una implementación parcial. Los puntos asignados se agregan a la puntuación de cumplimiento cuando el control tiene:
+Los valores de puntuación de cumplimiento que se muestran para el control se aplican *en su totalidad* a la puntuación de cumplimiento total en una base Pass/Fail. Puede implementar el control y pasar la prueba de evaluación posterior o no. Los puntos asignados se agregan a la puntuación de cumplimiento cuando el control tiene:
 
 - El **Estado de implementación** es igual a **implementación alternativa** o **implementada** y,
 - El resultado de la **prueba** es **correcto**.
@@ -53,7 +53,7 @@ Los elementos de acción se asignan a los controles y, cuando un control se asig
   
 Cada control tiene un valor asignado en el administrador de cumplimiento según el riesgo que representa:
 
-|**Type**|**Puntuación asignada**|
+|**Tipo**|**Puntuación asignada**|
 |:-----|:-----|
 | Obligatorio de prevención | ,27 |
 | Discrecional preventivo | 9  |

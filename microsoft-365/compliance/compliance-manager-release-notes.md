@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 815862616e1bdbf4b3be1d77de2a541ad703149f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092029"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417509"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notas de la versión del administrador de cumplimiento (versión preliminar)
 
@@ -26,6 +26,8 @@ La versión preliminar pública del administrador de cumplimiento le proporciona
 Puede usar la herramienta actualizada del [Administrador de cumplimiento](https://servicetrust.microsoft.com/ComplianceManager) en el portal de confianza de [servicios](https://servicetrust.microsoft.com) para realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>Novedades del administrador de cumplimiento (versión preliminar)
+
+- **Acceso basado en roles al administrador de cumplimiento:** Se ha quitado la función de **acceso de conjetura** predeterminada. Para que un usuario tenga acceso al administrador de cumplimiento, el administrador global debe [asignar un permiso a cada usuario](compliance-manager-overview#permissions.md).
 
 - **Integración con la puntuación segura de Microsoft:** El administrador de cumplimiento admite la integración con la [puntuación segura de Microsoft](../security/mtp/microsoft-secure-score.md) mediante la asignación de acciones administradas por el cliente a más de 50 acciones de calificación seguras. Al completar una acción asignada en calificación segura, la acción correspondiente del administrador de cumplimiento se actualiza automáticamente.
 
@@ -38,7 +40,7 @@ Puede usar la herramienta actualizada del [Administrador de cumplimiento](https:
     - **Propietarios:** Especifique un propietario para cada elemento de acción.
     - **Acciones del cliente:** Administrar la lista completa de elementos de acciones incluidos en el administrador de cumplimiento (versión preliminar) y habilitar o deshabilitar la supervisión de la puntuación segura para los elementos de acción integrados con calificación segura.
 
-- **Puntuación de cumplimiento actualizada**: la metodología ha cambiado para admitir la sincronización con calificación segura de Microsoft. El sistema de puntuación quita los créditos de los controles administrados por Microsoft y se centra únicamente en la finalización de los controles administrados por el cliente.
+- **Puntuación de cumplimiento actualizada**: la metodología ha cambiado para admitir la sincronización con calificación segura de Microsoft. La puntuación se calcula en función de las puntuaciones de acciones administradas por Microsoft y las puntuaciones de acciones administradas por el cliente.
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>Problemas conocidos en el administrador de cumplimiento (versión preliminar)
 

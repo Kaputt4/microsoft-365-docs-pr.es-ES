@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico en peligro en Office 365
-ms.openlocfilehash: 98a254ad6e356cecd44dac57bbe9f83171ddad73
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 239e880bbdd1b2ef7cbbde7e42fb8392777563a5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093581"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417579"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Responder a una cuenta de correo electrónico en peligro en Office 365
 
@@ -94,7 +94,7 @@ Debe realizar todos los pasos siguientes para volver a tener acceso a su cuenta 
 ### <a name="step-4-unblock-the-user-from-sending-mail"></a>Paso 4 Desbloquear el usuario para que pueda enviar correo
 
 Si el buzón en peligro se usó de forma ilícita para enviar correo no deseado, es probable que el buzón se haya bloqueado para impedir el envío de correo.
-1. Para desbloquear el envío de correo de un buzón, siga los procedimientos descritos en [Quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado](https://docs.microsoft.com/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email ).
+1. Para desbloquear el envío de correo de un buzón, siga los procedimientos descritos en [Quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 ### <a name="step-5-optional-block-the-user-account-from-signing-in"></a>Paso 5 opcional: Bloquear la cuenta de usuario para impedir el inicio de sesión
 

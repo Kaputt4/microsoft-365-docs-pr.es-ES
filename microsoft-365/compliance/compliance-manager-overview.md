@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: c88b45fb568b0fe29bc967676ea09e89e9084a62
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092031"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417539"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -109,13 +109,18 @@ Los usuarios de su organización pueden usar el administrador de cumplimiento pa
 
 Los controles de certificación suelen ser implementados por una persona y comprobados por otro. Por ejemplo, después de que se completen los elementos de acción inicialmente asignados a una persona para su implementación, los elementos de acción se asignan a la siguiente persona para probar y cargar las pruebas. Cualquier usuario con permisos suficientes para las asignaciones de control puede asignar y reasignar elementos de acción. Esto permite la administración central de las asignaciones de control y el enrutamiento descentralizado de elementos de acción entre implementadores y evaluadores.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
-El administrador de cumplimiento usa un [modelo de permisos](working-with-compliance-manager.md#permissions)de control de acceso basado en roles. De forma predeterminada, todas las personas de la organización con la cuenta de Azure Active Directory (Azure AD) tienen acceso completo y pueden realizar cualquier acción en el administrador de cumplimiento. Una vez que la organización ha implementado el control de acceso basado en roles, a cualquier usuario que no esté asignado a un rol de administrador de cumplimiento definido se le asignará acceso de invitado. El personal del servicio de Microsoft no tiene acceso permanente a ningún dato que especifique o cargue.
+El administrador de cumplimiento usa un modelo de permisos de control de acceso basado en roles. Solo los usuarios a los que se les asigna un rol de usuario pueden tener acceso al administrador de cumplimiento y las acciones permitidas por cada usuario están restringidas por el tipo de función. [Ver una tabla](working-with-compliance-manager.md#permissions) que muestra las acciones permitidas para cada permiso.
 
-Para cambiar de permisos predeterminados e implementar un modelo de control de acceso basado en funciones totalmente, se debe agregar al menos un usuario a cada rol de administrador de cumplimiento. Una vez que se agrega un usuario a un rol, los permisos para realizar las acciones asignadas a esa función se quitan del conjunto predeterminado de permisos disponibles para todos los usuarios. Solo los usuarios aprovisionados con el rol podrán obtener acceso al administrador de cumplimiento y realizar las acciones permitidas por dicha función.
+El administrador del portal del administrador de cumplimiento puede establecer permisos para otros usuarios en el administrador de cumplimiento siguiendo estos pasos:
 
-Si agrega un usuario a la función para administrar las evaluaciones, solo los miembros de esa función pueden administrar las evaluaciones. Si no agrega un usuario al rol que permite a los usuarios leer los datos en evaluaciones, todos los usuarios de la Organización podrán acceder al administrador de cumplimiento y leer los datos en cualquier evaluación.
+1. En el menú desplegable **más** arriba, seleccione **Administrador**y, a continuación, **configuración**.
+2. Desde aquí, seleccione el rol que desea asignar y, a continuación, agregue el empleado que desee asignar a ese rol. A continuación, los usuarios podrán realizar determinadas acciones.
+
+Además, los usuarios a los que se ha asignado el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) tienen permiso de solo lectura para obtener acceso al administrador de cumplimiento; sin embargo, no pueden modificar los datos ni realizar ninguna acción dentro del administrador de cumplimiento.
+
+Tenga en cuenta que ya no hay un rol de **acceso de invitado** predeterminado. A cada usuario se le debe asignar una función para poder acceder y trabajar en el administrador de cumplimiento.
   
 ## <a name="manage-evidence"></a>Administrar pruebas
 

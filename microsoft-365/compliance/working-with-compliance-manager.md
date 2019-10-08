@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 02cceb0487f357e6b40b634dc6d3cd7349ec2d96
-ms.sourcegitcommit: acf29701bfba3e4843e49a79fde012f3c7a7024a
+ms.openlocfilehash: d15899b994e4169c7362144623bc726f3825245d
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37350321"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417589"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -40,7 +40,7 @@ Para comenzar, aparece una evaluación ISO/IEC 27001:2103 para Office 365 de for
 
 ## <a name="administration"></a>Administración
 
-Hay funciones administrativas específicas que solo están disponibles para el administrador de inquilinos y solo están visibles cuando inició sesión con una cuenta de administrador global. Sin embargo, hasta que el administrador asigne roles de administrador de cumplimiento a los usuarios, los datos del administrador de cumplimiento estarán visibles para todos los usuarios de la organización. Se recomienda implementar el control de acceso basado en roles para determinar quién puede tener acceso y realizar acciones en el administrador de cumplimiento.
+Hay funciones administrativas específicas que solo están disponibles para el administrador global y solo están visibles cuando inicia sesión con una cuenta de administrador global. Una vez que el administrador asigna roles de administrador de cumplimiento a otros usuarios, estos usuarios pueden ver los datos en el administrador de cumplimiento y realizar las acciones determinadas por su rol. El administrador también puede conceder acceso de solo lectura al administrador de cumplimiento asignando al usuario el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Asignar roles del Administrador de cumplimiento a usuarios
 
@@ -197,7 +197,7 @@ Al crear una evaluación, tiene la opción de copiar la información de un grupo
 
 - Detalles de la implementación
 - Plan de pruebas & información adicional
-- Documents
+- Documentos
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>Copiar información de una evaluación existente a una nueva evaluación
   
@@ -547,19 +547,15 @@ Puede exportar una evaluación a un archivo de Excel para las partes interesadas
 
 ![Informe de Excel de evaluación del administrador de cumplimiento](media/compliance-manager-assessment-report.png)
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 En la tabla siguiente se describe cada permiso del administrador de cumplimiento y lo que permite al usuario. La tabla también indica el rol al que se asigna cada permiso.
 
-||**Lector del Administrador de cumplimiento**|**Colaborador del Administrador de cumplimiento**|**Evaluador del Administrador de cumplimiento**|**Administrador del Administrador de cumplimiento**|**Administrador del portal**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Leer datos:** Los usuarios pueden leer pero no editar datos (excepto para la administración de los datos y la administración de los inquilinos).  <br> | X | X | X | X  | X |
-|**Editar datos:** Los usuarios pueden editar todos los campos, excepto los resultados de la prueba y los campos de fecha de prueba (excepto para los datos de plantilla y la administración del espacio empresarial).  <br> || X | X  | X | X |
-|**Editar resultados de pruebas:** Los usuarios pueden editar los campos resultado de la prueba y fecha de prueba.  <br> ||| X | X | X |
-|**Administrar evaluaciones:** Los usuarios pueden crear, archivar y eliminar evaluaciones.  <br> |||| X | X |
-|**Administración de datos maestros:** Los usuarios pueden ver, editar y eliminar datos de plantilla y datos de administración de inquilinos.  <br> |||| X | X |
-|**Administrar usuarios:** Los usuarios pueden agregar otros usuarios de su organización a los roles lector, colaborador, asesor y administrador. Solo los usuarios con el rol de administrador global en su organización pueden agregar o quitar usuarios del rol de administrador del portal.  <br> ||||| X |
-
-### <a name="guest-access"></a>Acceso de invitado
-  
-Una vez configurado el acceso de administrador de cumplimiento, cualquier usuario que no tenga un rol aprovisionado estará en el rol de **acceso de invitado** de forma predeterminada (también es la experiencia de las cuentas que no se aprovisionan en la organización, como las cuentas personales de Microsoft). Los usuarios de acceso de invitado no tienen acceso total a todas las características del administrador de cumplimiento. No pueden ver ninguno de los datos de evaluación de cumplimiento de la organización, pero pueden usar el administrador de cumplimiento para ver los informes de evaluación de cumplimiento y los documentos de confianza de servicios de Microsoft.
+||**Lector global de Azure AD**|**Lector del Administrador de cumplimiento**|**Colaborador del Administrador de cumplimiento**|**Evaluador del Administrador de cumplimiento**|**Administrador del Administrador de cumplimiento**|**Administrador del portal**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|**Leer datos:** Los usuarios pueden leer pero no editar datos (excepto para la administración de los datos y la administración de los inquilinos).  <br> | X | X | X | X | X  | X  |X |
+|**Editar datos:** Los usuarios pueden editar todos los campos, excepto los resultados de la prueba y los campos de fecha de prueba (excepto para los datos de plantilla y la administración del espacio empresarial).  <br> ||| X | X  | X | X |
+|**Editar resultados de pruebas:** Los usuarios pueden editar los campos resultado de la prueba y fecha de prueba.  <br> |||| X | X | X |
+|**Administrar evaluaciones:** Los usuarios pueden crear, archivar y eliminar evaluaciones.  <br> ||||| X | X |
+|**Administración de datos maestros:** Los usuarios pueden ver, editar y eliminar datos de plantilla y datos de administración de inquilinos.  <br> ||||| X | X |
+|**Administrar usuarios:** Los usuarios pueden agregar otros usuarios de su organización a los roles lector, colaborador, asesor y administrador. Solo los usuarios con el rol de administrador global en su organización pueden agregar o quitar usuarios del rol de administrador del portal.  <br> |||||| X |
