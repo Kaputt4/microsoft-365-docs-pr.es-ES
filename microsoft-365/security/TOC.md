@@ -19,6 +19,13 @@
 
 ### [Administrar tickets a través de ServiceNow](./mtp/tickets.md)
 
+
+## [Configuraciones de acceso a dispositivos e identidades](../enterprise/microsoft-365-policies-configurations.md)
+### [Trabajo de requisito previo](../enterprise/identity-access-prerequisites.md)
+### [Directivas comunes de acceso a dispositivos e identidades](../enterprise/identity-access-policies.md)
+### [Directivas de acceso de Exchange Online recomendadas](../enterprise/secure-email-recommended-policies.md)
+### [Directivas de acceso de SharePoint Online recomendadas](../enterprise/sharepoint-file-access-policies.md)
+
 ## [Seguridad de Office 365]()
 ### [Introducción]()
 #### [Guía de seguridad de Office 365](./office-365-security/security-roadmap.md)
@@ -43,7 +50,6 @@
 ##### [Preguntas más frecuentes sobre la protección antimalware](./office-365-security/anti-malware-protection-faq-eop.md)
 ##### [Protección contra correo electrónico no deseado y antimalware en Office 365](./office-365-security/anti-malware-protection.md)
 ##### [Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](./office-365-security/anti-spam-protection-faq.md)
-##### [Controlar el correo no deseado saliente en Office 365](./office-365-security/controlling-outbound-spam-in-Office-365.md)
 ##### [Evite usar caracteres no válidos en las reglas de filtro de correo no deseado y directiva de filtro de correo no deseado](./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md)
 ##### [Listas de remitentes seguros y bloqueados en Exchange Online](./office-365-security/safe-sender-and-blocked-sender-lists-faq.md)
 ##### [Sugerencias de seguridad en mensajes de correo en Office 365](./office-365-security/safety-tips-in-office-365.md)
@@ -253,4 +259,8 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 para empresas](https://docs.microsoft.com/office-365-security/admin/admin-home)
+
+
+
+
 ## [Cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
