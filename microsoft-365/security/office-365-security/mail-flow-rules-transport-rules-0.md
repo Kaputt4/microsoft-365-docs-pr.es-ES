@@ -1,7 +1,7 @@
 ---
 title: Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -10,25 +10,25 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Puede usar reglas de flujo de correo (reglas de transporte) para identificar y realizar acciones en mensajes que fluyen a través de la organización de Office 365.
-ms.openlocfilehash: 50b068c39ad02d04596b6598c31333be79ac28c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: acd661962c1223c4124c492ce66f463d27e7ca10
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093168"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441537"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection
 
 Puede usar las reglas de flujo de correo (también denominadas "reglas de transporte") para identificar mensajes del flujo de correo de su organización de Office 365 y realizar acciones en ellos. Las reglas de flujo de correo son similares a las reglas de la Bandeja de entrada que hay disponibles en Outlook y en Outlook en la web. La diferencia principal radica en que las reglas de flujo de correo actúan en los mensajes mientras se encuentran en tránsito y no después de que se entreguen al buzón de correo. Contienen un conjunto más amplio de condiciones, excepciones y acciones, lo que le proporciona la flexibilidad de implementar muchos tipos de directivas de mensajería.
-  
+
 En este artículo se explican los componentes de las reglas de flujo de correo y su funcionamiento.
-  
+
 Para conocer los pasos para crear, copiar y administrar reglas de flujo de correo, consulte [Manage mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Para cada regla, tiene la posibilidad de aplicarla, probarla o probarla y notificar al remitente. Para obtener más información sobre las opciones de prueba, consulte [probar reglas de flujo de correo](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) y [sugerencias de directivas en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
-  
+
 Para ver un resumen e informes detallados sobre los mensajes que coinciden con las reglas de flujo de correo, consulte [Uso de informes de protección de correo en Office 365 para ver datos sobre malware, correo no deseado y detecciones de reglas](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
-  
+
 Para implementar directivas de mensajería específicas mediante el uso de reglas de flujo de correo, vea estos temas:
-  
+
 - [Usar reglas de flujo de correo para inspeccionar datos adjuntos de mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [Configurar el cifrado en Office 365 Enterprise](../../compliance/set-up-encryption.md)
@@ -44,20 +44,20 @@ Para implementar directivas de mensajería específicas mediante el uso de regla
 - [Definir reglas para cifrar o descifrar mensajes de correo electrónico](https://go.microsoft.com/fwlink/p/?Linkid=402846)
 
 En el vídeo siguiente se ofrece una demostración de la configuración de reglas de flujo de correo en Exchange Online Protection.
-  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
+
 ## <a name="mail-flow-rule-components"></a>Componentes de las reglas de flujo de correo
 
 Una regla de flujo de correo consta de condiciones, excepciones, acciones y propiedades:
-  
-- **Condiciones**: Identifique los mensajes a los que desea aplicar las acciones. Algunas condiciones examinan campos de encabezado del mensaje (por ejemplo, los campos Para, De o CC). Otras examinan propiedades del mensaje (por ejemplo, el asunto, el cuerpo, los datos adjuntos, el tamaño del mensaje o la clasificación del mensaje). La mayoría de las condiciones exigen que se especifique un operador de comparación (por ejemplo, es igual a, no es igual a o contiene) y un valor de coincidencia. En caso de que no haya condiciones o excepciones, la regla se aplica a todos los mensajes. 
+
+- **Condiciones**: Identifique los mensajes a los que desea aplicar las acciones. Algunas condiciones examinan campos de encabezado del mensaje (por ejemplo, los campos Para, De o CC). Otras examinan propiedades del mensaje (por ejemplo, el asunto, el cuerpo, los datos adjuntos, el tamaño del mensaje o la clasificación del mensaje). La mayoría de las condiciones exigen que se especifique un operador de comparación (por ejemplo, es igual a, no es igual a o contiene) y un valor de coincidencia. En caso de que no haya condiciones o excepciones, la regla se aplica a todos los mensajes.
 
 Para obtener más información acerca de las condiciones de las reglas de flujo de correo en Exchange Online Protection, consulte [mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-- **Excepciones**: opcionalmente, identifique los mensajes a los que no se deben aplicar las acciones. Los mismos identificadores de mensaje que están disponibles en las condiciones están también disponibles en las excepciones. Las excepciones invalidan las condiciones e impiden que se apliquen las acciones de regla a un mensaje, aunque este cumpla todas las condiciones configuradas. 
+- **Excepciones**: opcionalmente, identifique los mensajes a los que no se deben aplicar las acciones. Los mismos identificadores de mensaje que están disponibles en las condiciones están también disponibles en las excepciones. Las excepciones invalidan las condiciones e impiden que se apliquen las acciones de regla a un mensaje, aunque este cumpla todas las condiciones configuradas.
 
-- **Acciones**: especificar qué hacer a los mensajes que coinciden con las condiciones de la regla y que no coinciden con ninguna de las excepciones. Existen numerosas acciones disponibles, como, por ejemplo, rechazar, eliminar o redirigir mensajes; agregar más destinatarios; agregar prefijos al asunto del mensaje; o insertar avisos de declinación de responsabilidades en el cuerpo del mensaje. 
+- **Acciones**: especificar qué hacer a los mensajes que coinciden con las condiciones de la regla y que no coinciden con ninguna de las excepciones. Existen numerosas acciones disponibles, como, por ejemplo, rechazar, eliminar o redirigir mensajes; agregar más destinatarios; agregar prefijos al asunto del mensaje; o insertar avisos de declinación de responsabilidades en el cuerpo del mensaje.
 
 Para obtener más información sobre las acciones de las reglas de flujo de correo que están disponibles en Exchange Online Protection, consulte [mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
@@ -68,18 +68,18 @@ Para obtener más información sobre las acciones de las reglas de flujo de corr
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Múltiples condiciones, excepciones y acciones
 
 En la siguiente tabla se muestra cómo se controlan múltiples condiciones, valores de condición, excepciones y acciones en una regla.
-  
+
 |**Componente**|**Lógica**|**Comments**|
 |:-----|:-----|:-----|
 |Comentarios|Y|Un mensaje debe cumplir todas las condiciones de la regla. Si tiene que cumplir una condición u otra, use reglas independientes para cada condición. Por ejemplo, si desea agregar el mismo aviso de declinación de responsabilidades a los mensajes con archivos adjuntos y a los mensajes que contienen un texto específico, cree una regla para cada condición. En el EAC, puede copiar fácilmente una regla.|
-|Un mensaje debe coincidir con todas las condiciones de la regla. Si necesita alternar la coincidencia entre una condición y otra, use reglas independientes para cada condición. Por ejemplo, si desea agregar la misma declinación de responsabilidad a los mensajes con archivos adjuntos y a los mensajes cuyo contenido coincide con un patrón, cree una regla para cada condición. Puede copiar fácilmente una regla.|O|Determinadas condiciones permiten especificar más de un valor. El mensaje debe coincidir con alguno de los valores especificados (no todos). Por ejemplo, si un mensaje de correo tiene el asunto Información del precio en bolsa y la condición **El asunto incluye cualquiera de estas palabras** está establecida para coincidir con las palabras Contoso o bolsa, la condición se cumple ya que el asunto contiene al menos uno de los valores de la condición.  |
+|Un mensaje debe coincidir con todas las condiciones de la regla. Si necesita alternar la coincidencia entre una condición y otra, use reglas independientes para cada condición. Por ejemplo, si desea agregar la misma declinación de responsabilidad a los mensajes con archivos adjuntos y a los mensajes cuyo contenido coincide con un patrón, cree una regla para cada condición. Puede copiar fácilmente una regla.|O BIEN|Determinadas condiciones permiten especificar más de un valor. El mensaje debe coincidir con alguno de los valores especificados (no todos). Por ejemplo, si un mensaje de correo tiene el asunto Información del precio en bolsa y la condición **El asunto incluye cualquiera de estas palabras** está establecida para coincidir con las palabras Contoso o bolsa, la condición se cumple ya que el asunto contiene al menos uno de los valores de la condición.  |
 |Determinadas condiciones permiten especificar más de un valor. Si una condición permite indicar múltiples valores, el mensaje debe coincidir con alguno de los valores especificados en dicha condición. Por ejemplo, si un mensaje de correo electrónico tiene el asunto Información del precio en bolsa y la condición El asunto incluye cualquiera de estas palabras está establecida para coincidir con las palabras Contoso o bolsa, la condición se cumple ya que el asunto contiene al menos uno de los valores de la condición.|O|Si un mensaje coincide con alguna de las excepciones, las acciones no se aplican al mensaje. El mensaje no tiene que coincidir con todas las excepciones.|
 |Si un mensaje coincide con alguna de las excepciones, no se procesan las acciones. El mensaje no tiene que coincidir con todas las excepciones.|Y|Mensajes que coinciden con las condiciones de una regla obtienen todas las acciones que se especifican en la regla. Por ejemplo, si se seleccionan las acciones **Anteponer al asunto del mensaje** y **Agregar destinatarios en el cuadro CCO**, ambas acciones se aplican al mensaje.  <br/><br/> Los mensajes que coinciden con las condiciones de una regla son objeto de todas las acciones especificadas en dicha regla. Por ejemplo, si las acciones Anteponer el asunto del mensaje con y Agregar destinatarios al cuadro Enviar copia oculta están seleccionadas, ambas se aplican al mensaje. La cadena especificada se antepondrá al asunto del mensaje y los remitentes especificados se añadirán como recipientes Cco.<br/><br/> También puede establecer una acción en una regla de modo que cuando se aplique la regla, no se apliquen las reglas posteriores al mensaje.|
 
 ### <a name="mail-flow-rule-properties"></a>Propiedades de las reglas de flujo de correo
 
 En la tabla siguiente se describen las propiedades de regla que están disponibles en las reglas de flujo de correo.
-  
+
 |**Nombre de la propiedad en el EAC**|**Nombre del parámetro en PowerShell**|**Descripción**|
 |:-----|:-----|:-----|
 |**Prioridad**|_Priority_|Indica el orden en el que se aplican las reglas a los mensajes. La prioridad predeterminada se establece en función del momento en el que se creó la regla (las reglas más antiguas tienen más prioridad que las más recientes y las reglas con una prioridad superior se procesan antes que las que tienen una prioridad inferior).   <br/><br/> La prioridad de la regla en el EAC se cambia moviendo la regla hacia arriba o hacia abajo en la lista de reglas. En el PowerShell, establezca el número de prioridad (0 es la prioridad más alta).   <br/><br/> Por ejemplo, si dispone de una regla para rechazar mensajes que incluyan un número de tarjeta de crédito y otra que exija su probación, deseará que se aplique primero la regla de rechazo y que dejen de aplicarse las demás.  |
@@ -94,13 +94,13 @@ En la tabla siguiente se describen las propiedades de regla que están disponibl
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Cómo se aplican las reglas de flujo de correo a los mensajes
 
 Todo el flujo de mensajes de su organización se evalúa mediante las reglas de flujo de correo habilitadas en esta. Las reglas se procesan en el orden que aparecen en la página **reglas** de **flujo** \> de correo en EAC, o bien en función del valor de parámetro _Priority_ correspondiente en el PowerShell.
-  
+
 Cada regla también ofrece la opción de detener el procesamiento de reglas adicionales si se encuentra una coincidencia con la regla en cuestión. Esta configuración es importante para los mensajes que coinciden con las condiciones de varias reglas de flujo de correo (¿qué regla desea que se aplique al mensaje? ¿Todas? ¿Solo una?).
-  
+
 ### <a name="differences-in-processing-based-on-message-type"></a>Diferencias en el procesamiento según el tipo de mensaje
 
 Hay varios tipos de mensajes que pasan a través de una organización. En la tabla siguiente, se muestran los tipos de mensajes que se pueden procesar mediante reglas de flujo de correo.
-  
+
 ****
 
 |**Tipo de mensaje**|**¿Se puede aplicar una regla?**|
@@ -121,9 +121,9 @@ Hay varios tipos de mensajes que pasan a través de una organización. En la tab
 - Después de crear o modificar una regla de flujo de correo, esta puede tardar hasta 30 minutos en aplicarse a los mensajes.
 
 ## <a name="for-more-information"></a>Más información
-  
+
 [Usar reglas de flujo de correo para inspeccionar datos adjuntos de mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
-  
+
 [Cifrado de correo electrónico en Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
-  
+
 [Límites de las reglas de la Bandeja de entrada, del diario y de transporte](https://go.microsoft.com/fwlink/p/?LinkId=324584)

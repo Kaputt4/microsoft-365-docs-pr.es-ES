@@ -13,21 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un sitio de grupo de SharePoint seguro para almacenar los archivos más importantes y confidenciales.
-ms.openlocfilehash: dc604870826075cee645dd466b82f908e1571339
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403197"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437830"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Sitios de SharePoint para datos altamente regulados
 
 *Este escenario se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-Microsoft 365 Enterprise incluye un conjunto completo de servicios basados en la nube para crear, guardar y proteger sus datos altamente regulados almacenados en archivos. Esto incluye:
+Microsoft 365 Enterprise incluye una serie completa de servicios basados en la nube para que pueda crear, almacenar, proteger y administrar los datos altamente regulados almacenados en archivos de. Se incluyen datos que:
 
 - Datos sujetos a regulaciones regionales.
 - Los datos más importantes para su organización, como pueden ser secretos comerciales, información de recursos humanos o financiera y estrategias de la organización.
+
+>[!Note]
+> Un escenario parecido al uso de Microsoft Teams está en desarrollo.
+>
 
 Un escenario basado en la nube de Microsoft 365 Enterprise que cumpla estas necesidades de negocio requiere que usted:
 

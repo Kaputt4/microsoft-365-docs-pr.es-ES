@@ -1,5 +1,5 @@
 ---
-title: 'Exchange Online Protection '
+title: Exchange Online Protection
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Estas son algunas de las cosas que debe tener en cuenta antes de empezar a trabajar con EOP.
-ms.openlocfilehash: 36eaf667f2d38d27a8ef6a350817c5faf078a5d5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 707e909821c4a394e230b1746bde86521d8fb10a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092294"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441567"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
 Este es el servicio de filtrado de correo electrónico hospedado de Microsoft Exchange Online Protection (EOP). A continuación, se detallan algunos aspectos que debe conocer antes de empezar a trabajar con EOP y usar este contenido:
-  
+
 - Para más información acerca de EOP, vea la [Descripción de servicio Protección en línea de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=320619). Otros recursos útiles son [Información general de Exchange Online Protection](exchange-online-protection-overview.md), [Preguntas más frecuentes sobre EOP](eop-general-faq.md) y [Características de EOP](eop-features.md), así como la [página principal de Exchange Online Protection](https://go.microsoft.com/fwlink/?LinkId=279912).
 
 - Para empezar a trabajar con EOP, los nuevos clientes deben ir a [Configurar un servicio de EOP](set-up-your-eop-service.md). En este tema se incluyen pasos que le ayudarán a configurar y a activar EOP.
@@ -30,7 +30,7 @@ Este es el servicio de filtrado de correo electrónico hospedado de Microsoft Ex
 ## <a name="eop-help-for-administrators"></a>Ayuda de EOP para administradores
 
 El contenido de la Ayuda para administradores de EOP consta de las siguientes categorías principales:
-  
+
 - [Exchange Online Protection Overview](exchange-online-protection-overview.md): presenta cómo funciona EOP y proporciona vínculos a información adicional.
 
 - [Características de EOP](eop-features.md): proporciona una lista de las características que están disponibles en EOP.
@@ -51,7 +51,7 @@ El contenido de la Ayuda para administradores de EOP consta de las siguientes ca
 
 - [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md): describe los informes y las herramientas de solución de problemas que están disponibles.
 
-- [Centro de administración de Exchange en Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md): describe cómo tener acceso y navegar por la interfaz de administración del centro de administración de Exchange (EAC) para administrar el servicio de EOP.
+- [Centro de administración de Exchange en Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md): describe cómo tener acceso y navegar por la interfaz de administración del centro de administración de Exchange (EAC) para administrar el servicio de EOP.
 
 - [PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): proporciona información sobre PowerShell remoto, que permite administrar el servicio EOP desde la línea de comandos.
 
@@ -60,7 +60,7 @@ El contenido de la Ayuda para administradores de EOP consta de las siguientes ca
 ## <a name="eop-help-for-end-users"></a>Ayuda de EOP para usuarios finales
 
 El contenido de la Ayuda para asistir a los usuarios finales de EOP a administrar el correo no deseado incluye los siguientes temas:
-  
+
 - [Buscar y liberar mensajes en cuarentena como un usuario](find-and-release-quarantined-messages-as-a-user.md): describe cómo los usuarios finales pueden buscar y publicar sus propios mensajes de correo no deseado en cuarentena en la interfaz de usuario de cuarentena de correo no deseado y, opcionalmente, informar de ellos como correo deseado a Microsoft.
 
 - [Enviar mensajes de correo no deseado, mensajes de correo no deseado y suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): describe las distintas formas en que los usuarios finales pueden enviar mensajes de correo no deseado (correo no deseado) y mensajes que no son correo no deseado a Microsoft. En este tema se incluyen vínculos a las herramientas de informes disponibles en Microsoft Outlook y Outlook en la web (anteriormente conocido como Outlook Web App).

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: 1de7eadfcf95a54917c1d5e2cc0d42cc1ad486a5
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378661"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417569"
 ---
 # <a name="how-sensitivity-labels-work-in-office-apps"></a>Cómo funcionan las etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -131,7 +131,8 @@ PowerPoint
 <td><font size="-1">Próximamente...<sup>3</sup>
 <td><font size="-1">Próximamente...<sup>3</sup>
 
-<tr><td><font size="-1">Asignar permisos predefinidos
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">Asignar permisos definidos previamente</a>
 <td><font size="-1"><b>Sí</b><br><font size="-1">1910+</font>
 
 <td><font size="-1"><b>Sí</b><br><font size="-1">16.21.0+</font>
@@ -167,7 +168,8 @@ PowerPoint
 <td><font size="-1">Por determinar
 <td><font size="-1">Por determinar
 
-<tr><td><font size="-1">Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos</a>
 <td><font size="-1">Por determinar
 
 <td><font size="-1">Por determinar
@@ -202,7 +204,7 @@ PowerPoint
 | --- | --- | --- |
 | Word, Excel y PowerPoint en todas las plataformas | De forma inmediata | De forma inmediata |
 | Outlook para PC y Mac | Cuando Exchange Online envíe el correo electrónico | De forma inmediata |
-| Word, Excel y PowerPoint en todas las plataformas | Cuando Exchange Online envíe el correo electrónico | Cuando Exchange Online envíe el correo electrónico |
+| Outlook en la web, iOS, y Android | Cuando Exchange Online envíe el correo electrónico | Cuando Exchange Online envíe el correo electrónico |
 
 ## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a>¿Las etiquetas de confidencialidad pueden ejecutarse junto al cliente de Azure Information Protection en Office para Windows?
 
@@ -228,11 +230,7 @@ Las [plantillas de protección](https://docs.microsoft.com/azure/information-pro
 
 ## <a name="can-a-file-or-email-have-more-than-one-classification"></a>¿Puede un archivo o correo electrónico tener más de una clasificación?
 
-Los usuarios pueden seleccionar una etiqueta de cada vez para cada documento o correo electrónico, lo que a menudo resulta en una sola clasificación. Sin embargo, si los usuarios seleccionan una sub-etiqueta, en realidad se aplican dos etiquetas al mismo tiempo; una etiqueta principal y una etiqueta secundaria. Al usar sub-etiquetas, un archivo puede tener dos clasificaciones que denotan una relación principal/secundaria para un nivel adicional de control. 
-
-Por ejemplo, la etiqueta  **Confidencial**  podría contener sub-etiquetas como  **Legal ** y  **Finanzas**. Puede aplicar distintas marcas visuales de clasificación y distintas plantillas de Administración de Derechos a estas sub-etiquetas. Un usuario no puede seleccionar la etiqueta  **Confidencial** por sí mismo; sino solo una de sus sub-etiquetas, como  **Legal**. Por lo tanto, la etiqueta que se muestra en la definición es  **Confidencial** / **Legal**. Los metadatos de ese archivo contienen una propiedad de texto personalizada para  **Confidencial**, una propiedad de texto personalizada para  **Legal**, y otra que contiene ambos valores (**Confidencial Legal**). 
-
-Cuando use sub-etiquetas, no configure las marcas visuales, la protección y las condiciones en la etiqueta principal. Cuando use subniveles, configure estos ajustes solo en la sub-etiqueta. Si establece estas opciones de configuración en la etiqueta principal y en su sub-etiqueta, la configuración de la sub-etiqueta tendrá prioridad.
+No. Los usuarios pueden hacer una selección de etiquetas para cada documento o correo electrónico.
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Cuando se etiqueta un correo electrónico, ¿los datos adjuntos reciben automáticamente la misma etiqueta?
 

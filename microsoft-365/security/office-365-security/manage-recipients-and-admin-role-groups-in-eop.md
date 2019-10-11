@@ -1,26 +1,26 @@
 ---
 title: Administrar destinatarios y grupos de roles de administración en EOP
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 3/9/2015
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) ofrece varias maneras de administrar los destinatarios de correo. Los siguientes temas y sus temas secundarios asociados proporcionan información y procedimientos de configuración para administrar destinatarios y asignar permisos de grupo de roles de administración.
-ms.openlocfilehash: 74b1cf273aa2f4f97515c2295ffa42d9d3b211c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d69183c009f12dd33aec28d6ee353bf4177601f5
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093515"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441447"
 ---
 # <a name="manage-recipients-and-admin-role-groups-in-eop"></a>Administrar destinatarios y grupos de roles de administración en EOP
 
 Microsoft Exchange Online Protection (EOP) ofrece varias maneras de administrar los destinatarios de correo. Los siguientes temas y sus temas secundarios asociados proporcionan información y procedimientos de configuración para administrar destinatarios y asignar permisos de grupo de roles de administración.
-  
+
 |**Tema**|**Descripción**|
 |:-----|:-----|
 |[Administrar destinatarios en EOP](manage-recipients-in-eop.md)|Describe los tipos de destinatarios en EOP (usuarios de correo y grupos), cómo agregar, quitar y editar destinatarios, dónde encontrar los destinatarios en el EAC, y otros aspectos de la administración de destinatarios.|

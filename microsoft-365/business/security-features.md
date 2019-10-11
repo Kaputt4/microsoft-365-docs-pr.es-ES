@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad incluidas en Microsoft 365 Business.
-ms.openlocfilehash: 8e45d5fdb6a78f3966c46542189aa30ddd80998e
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: c0c37b09fd0bb0218864b6bc97aa127feae1ff16
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288463"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453984"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business
 
@@ -98,9 +98,9 @@ Su suscripción de Microsoft 365 Business incluye características que le ayudar
     
     La licencia de archivado de Exchange Online permite archivar fácilmente los mensajes con una copia de seguridad de datos continua. Almacena todos los correos electrónicos de un usuario, incluidos los elementos eliminados, en caso de que se necesiten más adelante para su detección o restauración. Además, puede usar directivas de retención diferentes para conservar los datos de correo electrónico para retenciones por juicio, eDiscovery o para cumplir con los requisitos de cumplimiento.
     
-- **[Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
-    
-    La protección de la información le ayuda a controlar el acceso a la información confidencial en correos electrónicos y documentos con controles como "no reenviar" y "no copiar". También puede clasificar la información confidencial como "confidencial" y especificar cómo se puede compartir la información clasificada fuera y dentro de la empresa. El cifrado de nivel empresarial es fácil de aplicar en el correo electrónico y los documentos para mantener la privacidad de la información. Microsoft 365 Business incluye todas las características del [plan 1 de Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871407). También puede instalar el complemento cliente de Azure Information Protection para aplicaciones de Office. Para obtener más información, consulte la [Guía del administrador del cliente de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+- **[Etiquetas de confidencialidad](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+
+   Microsoft 365 Business incluye todas las características del [plan 1 de Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871407). Con este plan puede crear **etiquetas de confidencialidad**, que le permiten controlar el acceso a la información confidencial de correo electrónico y documentos con controles como "no reenviar" y "no copiar". También puede clasificar la información confidencial como "confidencial" y especificar cómo se puede compartir la información clasificada fuera y dentro de la empresa. El cifrado de nivel empresarial es fácil de aplicar en el correo electrónico y los documentos para mantener la privacidad de la información. También puede instalar el complemento cliente de Azure Information Protection para aplicaciones de Office. Para obtener más información, vea [Azure Information Protection Unified Labeling Client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Para las etiquetas de confidencialidad, instale **AzInfoProtection_UL. exe**.
 
 Puede administrar estas características en el centro de &amp; seguridad y cumplimiento y en el centro de administración de Intune. Con el tiempo, los controles simplificados se agregarán al centro de administración de Microsoft 365 Business.
   

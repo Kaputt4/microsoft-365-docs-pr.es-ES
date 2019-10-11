@@ -7,23 +7,23 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 10/8/2019
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Como administrador de Office 365, puede revocar determinados mensajes de correo electrónico cifrados con el cifrado avanzado de mensajes de Office 365.
-ms.openlocfilehash: e55129f68c7add589bd973b36f069d7cdbf631cf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7adc5713c8753e0caf780bbacf98519665458c52
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092984"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435554"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Revocar el correo electrónico cifrado por el cifrado avanzado de mensajes de Office 365
 
-La revocación de correo electrónico se ofrece como parte de un cifrado de mensajes avanzado de Office 365. Office 365 Advanced Message Encryption está disponible sobre el cifrado de mensajes de Office 365 en determinadas suscripciones. El cifrado de mensajes avanzado se incluye en [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 Enterprise E5 y Office 365 Education A5. Si su organización tiene una suscripción de Office 365 que no incluye el cifrado avanzado de mensajes de Office 365, puede comprar el cifrado de mensajes avanzado como complemento con la compatibilidad con E5 del SKU de compatibilidad avanzada.
+La revocación de correo electrónico se ofrece como parte de un cifrado de mensajes avanzado de Office 365. Office 365 Advanced Message Encryption se incluye en [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precio de personal sin ánimo de lucro), Office 365 Enterprise E5 (precio de personal sin ánimo de lucro) y Office 365 Education A5. Si su organización tiene una suscripción que no incluye el cifrado avanzado de mensajes de Office 365, puede adquirirlo con el complemento de SKU de cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precio del personal sin ánimo de lucro) o el Office 365 Advanced Complemento de SKU de cumplimiento para Microsoft 365 E3, Microsoft 365 E3 (precio del personal sin ánimo de lucro) o SKU de Office 365.
 
 Este artículo forma parte de una amplia serie de artículos sobre el [cifrado de mensajes de Office 365](ome.md).
 

@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365
-ms.openlocfilehash: ef2f08c953b91ccefcadd5947d2d0a9f39683ae2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092346"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440657"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365
 
@@ -123,7 +123,7 @@ Hay dos cmdlets de PowerShell remoto que puede usar para quitar o deshabilitar r
 Pasos para buzones de correo que están en un servidor de Exchange
 
 1. Conéctese al servidor de Exchange mediante PowerShell remoto. Siga los pasos descritos en [Connect to Exchange Servers Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps).
-2. Si desea quitar por completo una sola regla, varias reglas o todas las reglas de un buzón de correo, use el [cmdlet Remove-Inbox Rule ](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)-use this para quitar por completo una, varias o todas las reglas del buzón.
+2. Si desea quitar por completo una sola regla, varias reglas o todas las reglas de un buzón de correo, use el [cmdlet Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)-use this para quitar por completo una, varias o todas las reglas del buzón.
 3. Si desea conservar la regla y su contenido para seguir investigando, use el [cmdlet Disable-InboxRule](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
 
 Pasos para buzones de correo en Exchange Online
@@ -144,8 +144,8 @@ La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas d
     <li>Supervisar cómo se <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">obtiene acceso</a>a las cuentas de usuario y cómo se usan. No puede evitar la infracción inicial, pero reducirá la duración y el impacto de la infracción al detectarla antes. Puede usar <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">las siguientes directivas de seguridad de aplicaciones de nube de Office 365</a> para supervisar sus cuentas y enviar alertas sobre actividad inusual. 
         <ol type="a">
             <li><b>Varios intentos erróneos de inicio de sesión</b> Esta directiva perfila el entorno y desencadena alertas cuando los usuarios realizan varias actividades de inicio de sesión fallidas en una sola sesión con respecto a la línea base aprendida, lo que podría indicar un intento de infracción.</li>
-            <li><b>Recorrido imposible</b> - Esta directiva perfila el entorno y activa alertas cuando se detectan actividades del mismo usuario en diferentes ubicaciones dentro de un período de tiempo menor que el tiempo de viaje esperado entre las dos ubicaciones. Esto puede indicar que un usuario diferente usa las mismas credenciales. La detección de este comportamiento anómalo requiere un período inicial de aprendizaje de siete días durante el cual aprende el patrón de actividad de un nuevo usuario.</li>
-            <li><b>Actividad suplantada inusual (por usuario)</b> - Esta directiva perfila el entorno y desencadena alertas cuando los usuarios realizan varias actividades suplantadas en una única sesión con respecto a la línea base aprendida, lo que podría indicar una infracción de intento.</li>
+            <li>- <b>Viajes imposibles</b> esta directiva perfila el entorno y desencadena alertas cuando se detectan actividades del mismo usuario en diferentes ubicaciones dentro de un período de tiempo menor que el tiempo de viaje esperado entre las dos ubicaciones. Esto puede indicar que un usuario diferente usa las mismas credenciales. La detección de este comportamiento anómalo requiere un período inicial de aprendizaje de siete días durante el cual aprende el patrón de actividad de un nuevo usuario.</li>
+            <li><b>Actividad suplantada inusualmente (por usuario)</b> - esta directiva perfila el entorno y desencadena alertas cuando los usuarios realizan varias actividades suplantadas en una única sesión con respecto a la línea base aprendida, lo que podría indicar un infracción de intento.</li>
         </ol>
     </li>
     <li>Aproveche una herramienta como la <a href="https://securescore.office.com/">puntuación segura de Office 365</a> para administrar los comportamientos y las configuraciones de seguridad de la cuenta. 

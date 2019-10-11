@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda los recursos que puede usar para implementar Microsoft 365 Enterprise en su organización.
-ms.openlocfilehash: 1d88ed400d20b15823d3991a1cd099bbb16ffa84
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 0dcbe9e39f33cab65dff6033f0b78ceb7e1c42cc
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369541"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437870"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Implementar Microsoft 365 Enterprise
 
@@ -123,6 +123,10 @@ Obtenga información sobre cómo Core Services Engineering and Operations (anter
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Cómo Contoso Corporation implementó Microsoft 365 Enterprise
 
 Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Vea cómo se implementó [Microsoft 365 Enterprise para Contoso Corporation](contoso-case-study.md) y cómo la compañía ha tomado importantes decisiones sobre el diseño y los detalles de implementación de redes, identidades, Windows 10 Enterprise, Office 365 ProPlus, administración de dispositivos móviles, protección de la información y seguridad. 
+
+## <a name="stay-current-with-deployment-content"></a>Manténgase al día con el contenido de implementación
+
+Para los últimos cambios en el contenido, vea [este artículo](microsoft-365-deploment-guide-changes.md).
 
 ## <a name="next-step"></a>Siguiente paso
 

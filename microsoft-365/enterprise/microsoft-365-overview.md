@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Proporciona una introducción a los componentes, planes y rutas de implementación de Microsoft 365 Enterprise.
-ms.openlocfilehash: 8ae6462c2d1de32aa44820f4f417b92bad6db7d3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: b5629edbdbd660a8548fc30809c408d88b18111b
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370467"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437849"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Información general de Microsoft 365 Enterprise
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise consta de:
 
 |||
 |:-------|:-----|
-| Aplicaciones locales y basadas en la nube y servicios de productividad | Incluye Office 365 ProPlus, las aplicaciones de Office más recientes para su PC y Mac (como Word, Excel, PowerPoint, Outlook y otros) y un conjunto completo de servicios en línea para el correo electrónico, el almacenamiento de archivos y la colaboración, reuniones y mucho más. |
+| Aplicaciones locales y basadas en la nube y servicios de productividad | Incluye Office 365 ProPlus, las aplicaciones de Office más recientes para su equipo PC y Mac (por ejemplo, Word, Excel, PowerPoint, Outlook, etc.) y un conjunto completo de servicios en línea para el correo electrónico, el almacenamiento de archivos y la colaboración, reuniones, entre otros. |
 | Windows 10 Enterprise | Aborda las necesidades de organizaciones grandes y medianas, lo que proporciona a los usuarios la versión más productiva y segura de Windows y profesionales de TI con una completa administración de aplicaciones, dispositivos y implementación. |
 | Administración de dispositivos y servicios de seguridad avanzada | Incluye Microsoft Intune, que es un servicio de administración de movilidad empresarial (EMM) basado en la nube que ayuda a permitir que el personal sea productivo mientras los datos de la empresa se mantienen protegidos. |
 |||
@@ -57,7 +57,7 @@ Para obtener más información, consulte [features and Capabilities for each pla
 
 ## <a name="get-the-big-picture"></a>Obtener una visión general
 
-El [póster de Microsoft 365 Enterprise](media/Microsoft365Enterprise.pdf) es una ubicación central que puede ver:
+El [póster de Microsoft 365 Enterprise](media/m365-poster/Microsoft365Enterprise.pdf) es una ubicación central que puede ver:
 
 - Ventajas de Microsoft 365 Enterprise y cómo se asignan las aplicaciones y los servicios a sus pilares de valor
 - Planes de Microsoft 365 Enterprise y qué componentes contienen 
@@ -65,20 +65,20 @@ El [póster de Microsoft 365 Enterprise](media/Microsoft365Enterprise.pdf) es un
 - La [biblioteca de productividad de 365 de Microsoft](https://www.microsoft.com/microsoft-365/success/) y los escenarios representativos para algunos departamentos comunes de la organización
 - Guía básica de adopción que destaca la guía de [implementación](deploy-microsoft-365-enterprise.md) de Microsoft 365 Enterprise
 
-[![Imagen para el póster de Microsoft 365 Enterprise](./media/m365-poster/m365e-poster.png)](media/Microsoft365Enterprise.pdf)
+[![Imagen para el póster de Microsoft 365 Enterprise](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
-Para descargar una copia del póster, haga clic [aquí](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf).
+Para descargar una copia del póster, haga clic [aquí](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
-## <a name="transition-your-entire-organization"></a>Transición de toda la organización
+## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 
 Para obtener una imagen mejor sobre cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, descargue el [póster de transición](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Imagen para el póster de transición a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-Este póster de dos páginas es una forma rápida de realizar un inventario de la infraestructura existente y obtener las instrucciones para desplazarse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
+Este póster de dos páginas explica una forma rápida de realizar un inventario de su infraestructura existente y conseguir las instrucciones para moverse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, tales como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
 
-También puede [Descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e imprimirlo en formato carta, legal o tabloide (11 x 17).
+Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Evite el fin de soporte para clientes y servidores de Windows 7 y Office 2010
 
@@ -98,7 +98,7 @@ Para obtener un resumen visual de las opciones de actualización, migración y m
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Windows 7 y Office 2010 alcancen la finalización del soporte técnico, con las rutas preferidas y la compatibilidad en Microsoft 365 empresa resaltada.
 
-También puede [Descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e imprimirlo en formato carta, legal o tabloide (11 x 17).
+Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
 
 ## <a name="deploy"></a>Implementación
 
@@ -148,6 +148,6 @@ Para obtener más información sobre la implementación, consulte How:
 
 Si va a realizar la implementación usted mismo, inicie el [viaje de implementación de Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Página del producto Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)

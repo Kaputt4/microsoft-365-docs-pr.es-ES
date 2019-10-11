@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados a la entrega de mensajes con conectores en Office 365 (también conocido como inteligencia de flujo de correo).
-ms.openlocfilehash: 718634f17ad5dd54773f2dc00595d5651cd27b51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 088af4b6924fde0277901a19437d17c4506ff22b
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092197"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441547"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Inteligencia de flujo de correo en Office 365
 
@@ -130,6 +130,6 @@ Normalmente, este error significa que Office 365 encontró un error al intentar 
 
 ## <a name="other-error-codes"></a>Otros códigos de error
 
-Office 365 tiene dificultades para entregar mensajes a su servidor de correo electrónico local o asociado. Use la información del **servidor de destino** en el error para examinar el problema en su entorno o modifique el conector si hay un error de configuración. 
+Office 365 tiene dificultades para entregar mensajes a su servidor de correo electrónico local o asociado. Use la información del **servidor de destino** en el error para examinar el problema en su entorno o modifique el conector si hay un error de configuración.
 
 Si el error procede de la organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), debe ponerse en contacto con su partner para solucionar el problema.

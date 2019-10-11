@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
-ms.openlocfilehash: d36499815979fb0b5ac805a98f0c9320fc07a538
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092734"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441097"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
@@ -79,7 +79,7 @@ Clientes de Exchange Online Protection: [informes y seguimiento de mensajes en E
   
  **P: Alguien me envió un mensaje y no lo encuentro. Sospecho que se pudo haber detectado como correo no deseado. ¿Existe alguna herramienta que pueda utilizar para averiguarlo?**
   
-R: Sí, la herramienta de seguimiento de mensajes le permite realizar un seguimiento de los mensajes de correo electrónico a medida que pasan por el servicio a fin de averiguar qué sucedió con ellos. Consulte [¿Se marcó un mensaje como correo no deseado?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam) para obtener más información acerca de cómo utilizar la herramienta de seguimiento de mensajes para averiguar por qué se marcó un mensaje como correo no deseado.
+R: Sí, la herramienta de seguimiento de mensajes le permite realizar un seguimiento de los mensajes de correo electrónico a medida que pasan por el servicio a fin de averiguar qué sucedió con ellos. Consulte Was a message marked as spam?  Para obtener más información acerca de cómo usar la herramienta de seguimiento de mensajes para averiguar por qué un mensaje se marcó como correo no deseado, consulte ¿ [se marcó un mensaje como correo no deseado?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **P: ¿El servicio limitará (límite de tasa) mi correo si mis usuarios envían correo no deseado?**
   

@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Puede configurar notificaciones de correo no deseado para el usuario final para la directiva predeterminada de filtro de correo no deseado de toda la compañía o para directivas personalizadas de filtro de correo no deseado que se aplican a dominios.
-ms.openlocfilehash: 1c2832110c98af07752ac7dc7fc985fcb75bc0dd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9da8ae5a9fd17db1cd9d92f21950a2ef5eb1a225
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093134"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428401"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurar notificaciones de correo no deseado para el usuario final en Exchange Online
 
@@ -61,13 +61,13 @@ Para obtener información acerca de los métodos abreviados de teclado que se pu
     
 4. En el cuadro de diálogo siguiente, puede configurar las siguientes opciones:
     
-1. **Habilitar las notificaciones de correo no deseado para el usuario final** Active esta casilla para habilitar las notificaciones de correo no deseado para el usuario final en esta directiva. (Y viceversa: si la directiva está habilitada, puede desactivar la casilla para deshabilitar las notificaciones de correo no deseado para el usuario final en esta directiva). 
+   - **Habilitar las notificaciones de correo no deseado para el usuario final** Active esta casilla para habilitar las notificaciones de correo no deseado para el usuario final en esta directiva. (Y viceversa: si la directiva está habilitada, puede desactivar la casilla para deshabilitar las notificaciones de correo no deseado para el usuario final en esta directiva). 
     
-2. **Enviar notificaciones de correo no deseado para el usuario final cada (días)** Especifique la frecuencia con la que quiere que se envíen las notificaciones de correo no deseado para el usuario final. El valor predeterminado es 3 días. Puede especificar cualquier valor entre 1 y 15 días. Si especifica 7 días, por ejemplo, la notificación incluirá una lista de todos los mensajes destinados a ese usuario en los 7 últimos días que se enviaron, en lugar de al usuario, a la cuarentena de correo no deseado. 
+   - **Enviar notificaciones de correo no deseado para el usuario final cada (días)** Especifique la frecuencia con la que quiere que se envíen las notificaciones de correo no deseado para el usuario final. El valor predeterminado es 3 días. Puede especificar cualquier valor entre 1 y 15 días. Si especifica 7 días, por ejemplo, la notificación incluirá una lista de todos los mensajes destinados a ese usuario en los 7 últimos días que se enviaron, en lugar de al usuario, a la cuarentena de correo no deseado. 
     
-3. **Idioma de notificación** En la lista desplegable, seleccione el idioma en el que se escribirán las notificaciones de correo no deseado para el usuario final en esta directiva. 
+   - **Idioma de notificación** En la lista desplegable, seleccione el idioma en el que se escribirán las notificaciones de correo no deseado para el usuario final en esta directiva. 
     
-5. Haga clic en **Guardar**. En el panel derecho aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
+   - Haga clic en **Guardar **. En el panel derecho aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
     
 > [!NOTE]
 >  Las notificaciones de correo no deseado para el usuario final solo serán compatibles con las directivas de filtro de correo no deseado que estén habilitadas. >  Las notificaciones de correo no deseado para el usuario final se envían solo una vez al día. La hora de envío de la notificación no es configurable y, como tal, no se puede confirmar para ningún cliente en concreto. 
@@ -76,6 +76,26 @@ Para obtener información acerca de los métodos abreviados de teclado que se pu
   
 ![Regla de transporte para probar las notificaciones de correo no deseado de usuario final](../media/EOP-ESN-testspecificusers.jpg)
   
+## <a name="use-the-scc-to-configure-end-user-spam-notifications"></a>Usar el SCC para configurar las notificaciones de correo no deseado para el usuario final
+
+También puede usar el centro de seguridad y cumplimiento (SCC) para configurar las notificaciones de correo no deseado para el usuario final. Siga estos pasos:
+
+1. Abra el centro de seguridad y cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-spam** o use el vínculo https://protection.office.com/antispamdirecto.
+
+2. Haga clic en la flecha hacia abajo junto a la Directiva de filtro de correo no deseado para la que desea habilitar las notificaciones de correo no deseado para el usuario final.
+
+3. Haga clic en el vínculo **configurar notificaciones de correo no deseado para el usuario final** .
+
+4. En el cuadro de diálogo siguiente, puede configurar las siguientes opciones:
+    
+   - **Habilitar las notificaciones de correo no deseado para el usuario final** Active esta casilla para habilitar las notificaciones de correo no deseado para el usuario final en esta directiva. (Y viceversa: si la directiva está habilitada, puede desactivar la casilla para deshabilitar las notificaciones de correo no deseado para el usuario final en esta directiva). 
+    
+   - **Enviar notificaciones de correo no deseado para el usuario final cada (días)** Especifique la frecuencia con la que quiere que se envíen las notificaciones de correo no deseado para el usuario final. El valor predeterminado es 3 días. Puede especificar cualquier valor entre 1 y 15 días. Si especifica 7 días, por ejemplo, la notificación incluirá una lista de todos los mensajes destinados a ese usuario en los 7 últimos días que se enviaron, en lugar de al usuario, a la cuarentena de correo no deseado. 
+    
+   - **Idioma de notificación** En la lista desplegable, seleccione el idioma en el que se escribirán las notificaciones de correo no deseado para el usuario final en esta directiva. 
+    
+   - Haga clic en **Guardar **. En el panel aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
+
 ## <a name="for-more-information"></a>Más información
 
 [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md)

@@ -1,7 +1,7 @@
 ---
 title: Características de EOP
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -10,20 +10,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
-ms.openlocfilehash: a5a11204cff0392245c91d371aad0fcae9e4d124
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1dd3ff638c9cb209c51a82fd2388057f3bf4b95e
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092309"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441517"
 ---
 # <a name="eop-features"></a>Características de EOP
 
 La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
-  
+
 > [!TIP]
-> La [Guía básica de Office 365 para empresa](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) es un buen recurso para encontrar información sobre las próximas características nuevas. Para obtener una visión más amplia acerca de las características que están disponibles con los distintos planes de suscripción a EOP, vea [Descripción del servicio Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). 
-  
+> La [Guía básica de Office 365 para empresa](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) es un buen recurso para encontrar información sobre las próximas características nuevas. Para obtener una visión más amplia acerca de las características que están disponibles con los distintos planes de suscripción a EOP, vea [Descripción del servicio Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
 |||
 |:-----|:-----|
 |**Característica**|**Descripción**|
@@ -41,7 +41,7 @@ La tabla siguiente proporciona una lista de las características que están disp
 |Capacidad para configurar opciones avanzadas para el filtrado agresivo de correo no deseado|Para obtener más información, vea [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) (donde se configuran) y [Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md) (que proporciona detalles específicos acerca de cada una de las opciones).|
 |Filtrado de correo no deseado internacional|Puede configurar EOP para que filtre los mensajes escritos en idiomas específicos o enviados desde países o regiones determinados. Puede configurar hasta 86 idiomas distintos y 250 regiones diferentes. El servicio aplicará la acción configurada para correo no deseado de confianza alta. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).|
 |Administración de correo no deseado a través de Outlook o Outlook en la web (anteriormente conocido como Outlook Web App)|Los administradores y usuarios finales pueden crear listas de remitentes seguros y listas de remitentes bloqueados. Para obtener más información: <br/>• **Outlook en la web**: vea [bloquear o permitir (configuración del correo electrónico no deseado)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46).  <br/>• **Outlook**: vea [información general sobre el filtro de correo no deseado](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). <br/><br/> Si está usando EOP para proteger los buzones locales, asegúrese de usar la sincronización de directorios para ayudar a garantizar que esta configuración se sincronice con el servicio. Para más información sobre cómo configurar la sincronización de directorios, vea "Usar la sincronización de directorios para administrar usuarios de correo" en [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md).|
-|Enviar correo no deseado mediante el complemento Informes de correo electrónico no deseado para Microsoft Office Outlook|Puede descargar un complemento para Outlook que permite enviar mensajes de correo no deseado a Microsoft para su análisis. Para obtener más información sobre cómo descargar y usar esta herramienta, consulte [Habilitar el complemento de mensajes de informe](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). <br/><br/> Si usa Exchange Server 2013 o posterior con EOP, también puede hacer clic con el botón secundario en Outlook en la web para enviar mensajes de correo no deseado, como se describe en [informes de correo no deseado y estafas de suplantación de identidad en Outlook en la web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).|
+|Enviar correo no deseado mediante el complemento Informes de correo electrónico no deseado para Microsoft Office Outlook|Puede descargar un complemento para Outlook que permite enviar mensajes de correo no deseado a Microsoft para su análisis. Para obtener más información sobre cómo descargar y usar esta herramienta, consulte [Habilitar el complemento de mensajes de informe](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). <br/><br/> Si usa Exchange Server 2013 o posterior con EOP, también puede hacer clic con el botón secundario en Outlook en la web para enviar mensajes de correo no deseado, como se describe en [informes de correo no deseado y estafas de suplantación de identidad en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).|
 |Enviar correo no deseado y mensajes que no son correo no deseado mediante un alias de correo electrónico|Puede enviar mensajes de correo no deseado y mensajes que no son correo no deseado a Microsoft por correo electrónico. Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).|
 |Envíos de correo no deseado y envíos no deseados a través de Outlook en la web informes de correo electrónico no deseado|Puede enviar mensajes de correo no deseado y mensajes no deseados a Microsoft a través de Outlook en la web, informes de correo no deseado. Para más información, vea [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).  <br/><br/> Esta característica está disponible actualmente para los clientes de Outlook en la web cuyos buzones de correo de Exchange Server 2013 SP1 o posterior se filtran mediante EOP. Exchange Online Outlook en la web los clientes también tendrán esta funcionalidad en un futuro próximo.|
 |Notificaciones de cuarentena de correo no deseado de usuario final|Los usuarios finales pueden lanzar sus propios mensajes de correo no deseado en cuarentena y, opcionalmente, identificarlos como seguros a través de los mensajes de notificación de correo no deseado para el usuario final. El administrador debe configurar y habilitar estos mensajes de correo electrónico de notificación, como se describe en [configurar las notificaciones de correo no deseado para el usuario final en Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md) o [configurar las notificaciones de correo no deseado para el usuario final en EOP](configure-end-user-spam-notifications-in-eop.md).|
@@ -77,7 +77,7 @@ La tabla siguiente proporciona una lista de las características que están disp
 |Cambiar el nivel de confianza de correo no deseado de un mensaje por regla.|Puede inspeccionar un mensaje en tránsito y asignarle un nivel de confianza de correo no deseado basándose en los criterios que elija. Para obtener más información, vea [usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL) en los mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).|
 |Inspeccionar archivos adjuntos a mensajes|Puede examinar el contenido o las características de un archivo adjunto y definir la acción que se realizará según lo que se encuentre. Para obtener más información, vea [usar reglas de flujo de correo para inspeccionar datos adjuntos de mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).|
 |**Administración**||
-|Administración basada en web|Los administradores de EOP pueden administrar el servicio mediante la interfaz del Centro de administración de Exchange (EAC), que se ofrece en 60 idiomas. Para obtener más información, vea [centro de administración de Exchange en Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md).|
+|Administración basada en web|Los administradores de EOP pueden administrar el servicio mediante la interfaz del Centro de administración de Exchange (EAC), que se ofrece en 60 idiomas. Para obtener más información, vea [centro de administración de Exchange en Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Sincronización de directorios|La sincronización de directorios se puede realizar con la Herramienta de sincronización de Microsoft Azure Active Directory. Para obtener más información, vea la sección "Usar la sincronización de directorios para administrar usuarios de correo" en [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md).  |
 |Bloqueo perimetral basado en directorios (DBEB)|La característica DBEB permite rechazar mensajes para destinatarios no válidos en el perímetro de la red de servicio. El DBEB permite que los administradores agreguen destinatarios habilitados para correo a Office 365 y bloqueen todos los mensajes enviados a direcciones de correo electrónico que no están presentes en Office 365. Para obtener más información acerca de la configuración de DBEB, vea [use Directory based Edge blocking to Reject messages sent to invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
 |Acceso a Windows PowerShell remoto|La funcionalidad completa de EOP está disponible mediante Windows PowerShell remoto. Para obtener más información, vea [PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|

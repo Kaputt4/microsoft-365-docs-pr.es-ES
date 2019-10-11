@@ -1,5 +1,5 @@
 ---
-title: Configurar Microsoft 365 Business
+title: Configurar Microsoft 365 Empresa
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre cómo configurar Microsoft 365 Business.
-ms.openlocfilehash: d33839693001f36fbb56541775015f739300b043
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4f31af3fa63416d3b1bd7281f7712313252ad437
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288503"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440613"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Configurar Microsoft 365 empresa en el Asistente de configuración
 
@@ -44,7 +44,7 @@ Al adquirir Microsoft 365 Business, tiene la opción de usar un dominio de su pr
     > [!IMPORTANT]
     > Si compró un dominio durante el registro, no verá aquí **el paso agregar un dominio** . Vaya a [Agregar usuarios](#add-users-and-assign-licenses) en su lugar.
 
-    ![Seleccione Agregar un dominio.](media/addadomainadmincenter.png)
+    ![Seleccione ir a la instalación.](media/gotosetupinadmincenter.png)
     
 3. En el asistente, escriba el nombre de dominio que desea usar (como contoso.com).
 
@@ -70,7 +70,9 @@ Cualquier usuario que agregue en el asistente obtiene automáticamente una licen
 
 1. Si su suscripción de Microsoft 365 Business tiene usuarios existentes (por ejemplo, si ha usado Azure AD Connect), tendrá una opción para asignar licencias a ellos en este momento. Siga y agrégueles licencias también.
 
-3. Una vez que haya agregado los usuarios, también obtendrá una opción para compartir las credenciales con los nuevos usuarios que ha agregado. Puede elegir imprimirlas, enviarlas por correo electrónico o descargarlas.
+2. Una vez que haya agregado los usuarios, también obtendrá una opción para compartir las credenciales con los nuevos usuarios que ha agregado. Puede elegir imprimirlas, enviarlas por correo electrónico o descargarlas.
+
+3. En crear Microsoft Teams para su organización, puede elegir agregar Microsoft Teams y agregar usuarios a ellos. También puede hacerlo más adelante. Para obtener más información, vea [crear un equipo de toda la empresa](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
 
 4. Omita la migración de mensajes de correo electrónico y elija **Siguiente** en la página **Migrar los mensajes de correo electrónico**. 
 
@@ -86,14 +88,14 @@ Para configurar servicios, es necesario actualizar algunos registros en su regis
   
 1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no es así, [cambie los servidores DNS para configurar Office 365 con cualquier registrador de dominios](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
 
-    - Si tiene registros DNS existentes, por ejemplo, un sitio web existente, pero el host DNS está habilitado para la [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), elija **agregar registros**. 
+    - Si tiene registros DNS existentes, por ejemplo, un sitio web existente, pero el host DNS está habilitado para la [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), elija **agregar registros**. En la página **elegir los servicios en línea** , acepte los valores predeterminados y elija **siguiente**y elija **autorizar** en la página del host DNS.
     - Si tiene registros DNS con otros hosts DNS (no habilitados para la conexión de dominio), querrá administrar sus propios registros DNS para asegurarse de que los servicios existentes permanecen conectados. Consulte [conceptos básicos de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) para obtener más información.
 
         ![Conecte la página del dominio con Administraré mis propios registros DNS.](media/connectyourdomainpage.png)
 
 2. Siga los pasos del asistente y el correo electrónico y otros servicios se configurarán para usted.
 
-### <a name="set-up-security-policies-and-device-configurations"></a>Configuración de directivas de seguridad y configuraciones de dispositivos 
+### <a name="protect-data-and-devices"></a>Proteger datos y dispositivos 
 
 Las directivas que configure en el asistente se aplican automáticamente a un [grupo de seguridad](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) denominado *todos los usuarios*. También puede crear grupos adicionales para asignar directivas en el centro de administración.
 
@@ -113,7 +115,6 @@ Las directivas que configure en el asistente se aplican automáticamente a un [g
 3. También puede optar por [instalar automáticamente Office](install-office-on-windows-10-during-setup.md) en dispositivos Windows 10.
 
     ![Captura de pantalla de la página establecer configuración de dispositivo de Windows 10.](media/setwin10config.png)
-
 
 
 ## <a name="deploy-office-365-client-apps"></a>Implementación de aplicaciones cliente de Office 365

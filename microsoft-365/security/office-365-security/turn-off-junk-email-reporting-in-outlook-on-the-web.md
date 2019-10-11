@@ -1,5 +1,5 @@
 ---
-title: Desactivar la creación de informes de correo no deseado en Outlook en la web
+title: Desactivar la notificación de correo no deseado para Outlook en la Web
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -11,18 +11,18 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: Como administrador de Office 365, puede desactivar la posibilidad de que los usuarios notifiquen el correo electrónico como correo no deseado.
-ms.openlocfilehash: a2a8c2f9120ff4b1d2efab4d7ae63294ce7f923b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: de0e5d1aa51ececafc0d344b9907f6751a613370
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093663"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441177"
 ---
-# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Desactivar la creación de informes de correo no deseado en Outlook en la web
+# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Desactivar la notificación de correo no deseado para Outlook en la Web
 
-Puede enviar mensajes de correo no deseado, de suplantación de identidad (phishing) y de correo no deseado a Microsoft para su análisis con la opción de informes de correo no deseado de Outlook en la web (anteriormente conocido como Outlook Web App), tal como se describe en [informes de correo no deseado y estafas de suplantación de identidad en Outlook en la web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Si no quiere usar estas opciones, los administradores pueden desactivarlas mediante el cmdlet [set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
+Puede enviar mensajes de correo no deseado, de suplantación de identidad (phishing) y de correo no deseado a Microsoft para su análisis con la opción de informes de correo no deseado de Outlook en la web (anteriormente conocido como Outlook Web App), tal como se describe en [informes de correo no deseado y estafas de suplantación de identidad en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Si no quiere usar estas opciones, los administradores pueden desactivarlas mediante el cmdlet [set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 <a name="sectionSection0"> </a>
 
 - Tiempo estimado para finalizar: 5 minutos

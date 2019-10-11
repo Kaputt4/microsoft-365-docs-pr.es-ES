@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre las formas más comunes de reducir el correo masivo y el correo no deseado en Office 365.
-ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 759d56862497444c27d0cc0f081731a3581337bd
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093398"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428431"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reducir el correo no deseado en Office 365
 
@@ -35,7 +35,7 @@ Es muy recomendable que notifique los mensajes falsos negativos con [el compleme
 
 ## <a name="fixing-allowed-spam"></a>Se ha solucionado el correo no deseado permitido
 
-A menudo vemos que los clientes reciben correo no deseado en su bandeja de entrada debido a configuraciones incorrectas. La más común es configurar los dominios en una regla de flujo de correo (también conocida como regla de transporte) que permite omitir los filtros o incluir su dominio o dominios en la lista de remitentes permitidos o seguros. Esto no es conveniente porque estos mensajes omiten el filtrado contra correo no deseado cuando se podrían haber filtrado.  
+A menudo vemos que los clientes reciben correo no deseado en su bandeja de entrada debido a configuraciones incorrectas. La más común es configurar los dominios en una regla de flujo de correo (también conocida como regla de transporte) que permite omitir los filtros o incluir su dominio o dominios en la lista de remitentes permitidos o seguros. Esto no es conveniente porque estos mensajes omiten el filtrado contra correo no deseado cuando se podrían haber filtrado, por lo que la creación de [listas de remitentes seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365) solo se puede considerar como una solución temporal.  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Soluciones para otras causas comunes de la recepción de demasiado correo no deseado
 

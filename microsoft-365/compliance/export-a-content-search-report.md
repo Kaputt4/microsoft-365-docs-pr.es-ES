@@ -18,29 +18,29 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: En lugar de exportar los resultados reales de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, puede simplemente exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportará.
-ms.openlocfilehash: 8e33a7ba236e0890fc5985aa9a00cba904a40793
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: En lugar de exportar los resultados reales de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportará.
+ms.openlocfilehash: 9fe006ba595920f938a4d070eb87987137d73f7e
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092449"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437790"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
-En lugar de exportar el conjunto completo de resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento (y desde una búsqueda de contenido asociada a un caso de exhibición de documentos electrónicos), puede exportar los mismos informes que se generan al exportar los resultados de la búsqueda .
+En lugar de exportar el conjunto completo de resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento (y desde una búsqueda de contenido asociada a un caso de exhibición de documentos electrónicos), puede exportar los mismos informes que se generan al exportar los resultados de la búsqueda.
   
-Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que la búsqueda de contenido, pero que se anexa con *_ReportsOnly* . Por ejemplo, si la búsqueda de contenido se denomina *ContosoCase0815* , el informe se descarga en una carpeta denominada *ContosoCase0815_ReportsOnly* . Para obtener una lista de los documentos que se incluyen en el informe, consulte [what's included in the Report](#whats-included-in-the-report).
+Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que la búsqueda de contenido, pero que se anexa con *_ReportsOnly*. Por ejemplo, si la búsqueda de contenido se denomina *ContosoCase0815*, el informe se descarga en una carpeta denominada *ContosoCase0815_ReportsOnly*. Para obtener una lista de los documentos que se incluyen en el informe, consulte [what's included in the Report](#whats-included-in-the-report).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para exportar un informe de búsqueda de contenido, debe tener asignado el rol de administración de búsqueda de cumplimiento en el centro de seguridad & cumplimiento. Este rol se asigna a los grupos de roles integrados administrador de eDiscovery y administración de la organización. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para obtener más información, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
+- Para exportar un informe de búsqueda de contenido, debe tener asignado el rol de administración de búsqueda de cumplimiento en el centro de seguridad & cumplimiento. Este rol se asigna a los grupos de roles integrados administrador de eDiscovery y administración de la organización. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
     
-- Al exportar un informe, los datos se almacenan temporalmente en un área de almacenamiento única de Windows Azure en la nube de Microsoft antes de descargarlos en el equipo local. Asegúrese de que su organización puede conectarse al extremo en Azure, que es ** \*. BLOB.Core.Windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan del área de Azure Storage dos semanas después de su creación. 
+- Al exportar un informe, los datos se almacenan temporalmente en un área de almacenamiento única de Azure en la nube de Microsoft antes de descargarlos en el equipo local. Asegúrese de que su organización puede conectarse al extremo en Azure, que es ** \*. BLOB.Core.Windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan del área de Azure Storage dos semanas después de su creación. 
     
 - El equipo que use para exportar los resultados de búsqueda debe cumplir los siguientes requisitos del sistema:
     
-  - Versiones de 32 o 64 bits de Windows 7 y versiones posteriores
+  - versiones de 32 o 64 bits de Windows 7 y versiones posteriores
     
   - Microsoft .NET Framework 4,7
     
@@ -54,13 +54,13 @@ Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que
     
     **Nota:** Microsoft no fabrica extensiones de terceros o complementos para aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda con un explorador no compatible con extensiones de terceros o complementos. 
 
-- Si el tamaño total estimado de los resultados devueltos por una búsqueda de&nbsp;contenido supera los 20 TB, se producirá un error al exportar el informe. Para exportar correctamente el informe, intente restringir el ámbito y vuelva a ejecutar la búsqueda para que el tamaño estimado de los resultados sea inferior a&nbsp;20 TB.
+- Si el tamaño total estimado de los resultados devueltos por una búsqueda de contenido supera los 2 TB, se producirá un error al exportar el informe. Para exportar correctamente el informe, intente restringir el ámbito y vuelva a ejecutar la búsqueda para que el tamaño estimado de los resultados sea inferior a 2 TB.
 
 - La exportación de informes de búsqueda de contenido cuenta con el número máximo de exportaciones que se ejecutan al mismo tiempo y el número máximo de exportaciones que puede ejecutar un solo usuario. Para obtener más información acerca de los límites de exportación, consulte [exportar resultados](export-search-results.md#export-limits)de la búsqueda de contenido.
 
 ## <a name="generate-and-download-a-content-search-report"></a>Generar y descargar un informe de búsqueda de contenido
 
-Los pasos para generar y descargar un informe de búsqueda de contenido son muy similares a la exportación real de los resultados de búsqueda.
+Los pasos para generar y descargar un informe de búsqueda de contenido son similares a la exportación real de los resultados de búsqueda.
   
 ## <a name="step-1-generate-the-report-for-export"></a>Paso 1: generar el informe para la exportación
 
@@ -104,19 +104,19 @@ El siguiente paso es descargar el informe desde el área de almacenamiento de Az
   
 1. En el panel de detalles de la búsqueda para la que generó el informe, en **exportar informe a un equipo**, haga clic en **Descargar Informe**.
     
-    Se muestra la página **Descargar Informe** , que contiene la siguiente información sobre el informe que se descargará en el equipo. 
+    Se muestra la página **Descargar Informe** , que contiene la siguiente información sobre el informe que se descarga en el equipo. 
     
     - El número de elementos que se descargarán.
     
     - El tamaño total estimado de los elementos que se descargarán.
     
-    - Si los elementos indexados o sin indexar se exportarán. Los elementos sin indexar son elementos que tienen un formato reconocido, están cifrados o no se indexaron por otros motivos.
+    - Si los elementos indexados o sin indexar se exportarán. Los elementos sin indexar son elementos que tienen un formato reconocido, están cifrados o no se indizaron por otros motivos.
     
-    - Si las versiones de los documentos de SharePoint se descargarán o no.
+    - Si se descargarán las versiones de los documentos de SharePoint.
     
     - El estado del proceso de exportación del informe. Puede iniciar la descarga del informe incluso si no se ha completado la preparación del informe.
     
-2. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Esta clave se utilizará en el paso 5 para descargar el informe.
+2. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Use esta clave en el paso 5 para descargar el informe.
     
     > [!IMPORTANT]
     > Dado que cualquiera puede instalar e iniciar la herramienta de exportación de exhibición de documentos electrónicos y, a continuación, usar esta clave para descargar el informe de búsqueda, asegúrese de tomar precauciones para proteger esta clave igual que lo haría con las contraseñas u otra información relacionada con la seguridad. 
@@ -140,14 +140,14 @@ El siguiente paso es descargar el informe desde el área de almacenamiento de Az
 
 Cuando se genera y se exporta un informe sobre los resultados de una búsqueda de contenido, se descargan los siguientes documentos:
   
-- **Resumen de exportación** : un documento de Excel que contiene un resumen de la exportación. Esto incluye información como el número de orígenes de contenido que se han buscado, el número de resultados de búsqueda de cada ubicación de contenido, el número estimado de elementos, el número real de elementos que se exportarían y el tamaño estimado y real de los elementos que se exportarán. 
+- **Resumen de exportación:** Un documento de Excel que contiene un resumen de la exportación. Esto incluye información como el número de orígenes de contenido que se han buscado, el número de resultados de búsqueda de cada ubicación de contenido, el número estimado de elementos, el número real de elementos que se exportarían y el tamaño estimado y real de los elementos que se exportarán. 
     
     > [!NOTE]
     > Si incluye elementos sin indexar al exportar el informe, el número de elementos sin indexar se incluye en el número total de resultados de búsqueda estimados y en el número total de resultados de la búsqueda descargados (si se exportaron los resultados de la búsqueda) que aparecen en la lista Informe de Resumen de exportación. Es decir, el número total de elementos que se descargarán es igual al número total de resultados estimados y el número total de elementos sin indexar. 
   
-- **Manifest** -un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda. 
+- **Manifiesto:** Un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda. 
     
-- **Resultados** : un documento de Excel que contiene una fila con información sobre cada elemento indizado que se exportará con los resultados de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
+- **Resultados:** Un documento de Excel que contiene una fila con información acerca de cada elemento indizado que se exportará con los resultados de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
     
   - La ubicación del mensaje en el buzón de origen (incluido si el mensaje se encuentra en el buzón de archivo o en el principal).
     
@@ -168,6 +168,6 @@ Cuando se genera y se exporta un informe sobre los resultados de una búsqueda d
   - El nombre del documento (que está ubicado en la columna Asunto del registro de resultados).
     
     > [!NOTE]
-    > El número de filas en el informe de **resultados** debe ser igual al número total de resultados de búsqueda que se descargarían menos el número total de elementos que aparecen en el informe de **elementos sin indexar** . 
+    > El número de filas en el informe de **resultados** debe ser igual al número total de resultados de búsqueda menos el número total de elementos que aparecen en el informe de **elementos sin indexar** . 
   
-- **Elementos sin indexar** : un documento de Excel que contiene información sobre los elementos sin indexar que se incluirían en los resultados de la búsqueda. Si no incluye elementos sin indexar al generar el informe de resultados de la búsqueda, este informe se descargará, pero estará vacío.
+- **Elementos sin indexar:** Un documento de Excel que contiene información sobre los elementos sin indexar incluidos en los resultados de la búsqueda. Si no incluye elementos sin indexar al generar el informe de resultados de la búsqueda, este informe se descargará, pero estará vacío.
