@@ -12,30 +12,30 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Cuando Exchange Online Protection examina un mensaje de correo entrante, inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje.
-ms.openlocfilehash: 5b7cefc2057d4e7705c991348a7710c2eaa4c7d9
-ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
+description: Obtenga más información sobre los campos de encabezado y los valores que se agregan a los mensajes mediante Exchange Online Protection.
+ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
+ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428421"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37451122"
 ---
 # <a name="anti-spam-message-headers"></a>Encabezados de mensajes de correo no deseado
 
 Cuando Exchange Online Protection examina un mensaje de correo entrante, inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje. Los campos de este encabezado pueden dar a los administradores información sobre el mensaje y la forma en que se procesó. Los campos del encabezado **X-Microsoft-Antispam** proporcionan información adicional sobre el correo masivo y la suplantación de identidad. Además de estos dos encabezados, Exchange Online Protection también inserta resultados de autenticación de correo electrónico para cada mensaje que procesa en el encabezado **Authentication-results**.
 
-Para obtener información sobre cómo ver el encabezado del mensaje de un correo electrónico en distintos clientes de correo electrónico, vea [Analizador de encabezados de mensaje](https://go.microsoft.com/fwlink/p/?LinkId=306583) 
-  
+Para obtener información sobre cómo ver el encabezado del mensaje de un correo electrónico en distintos clientes de correo electrónico, vea [Analizador de encabezados de mensaje](https://go.microsoft.com/fwlink/p/?LinkId=306583)
+
 > [!TIP]
->  Puede copiar y pegar el contenido del encabezado de un mensaje en la herramienta [Analizador de mensaje](https://testconnectivity.microsoft.com/?tabid=mha). Esta herramienta le ayuda a analizar los encabezados y los convierte en un formato más legible.
-  
+> Puede copiar y pegar el contenido del encabezado de un mensaje en la herramienta [Analizador de mensaje](https://testconnectivity.microsoft.com/?tabid=mha). Esta herramienta le ayuda a analizar los encabezados y los convierte en un formato más legible.
+
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Campos del encabezado del mensaje X-Forefront-Antispam-Report
 
 Al obtener acceso a la información del encabezado del mensaje, busque **X-Forefront-Antispam-Report** y, a continuación, busque los siguientes campos. El resto de los campos de este encabezado los usa exclusivamente el equipo de Microsoft contra el correo no deseado con fines de diagnóstico.
 
 |**Campo de encabezado**|**Descripción**|
 |:-----|:-----|
-|CIP: [dirección IP]|La dirección IP de conexión. Quizás quiera especificar esta dirección IP cuando cree una lista de direcciones IP permitidas o una lista de direcciones IP bloqueadas en el filtro de conexión. Para obtener más información, vea [Configurar la directiva de filtro de conexión](configure-the-connection-filter-policy.md).  |
+|CIP: \[dirección IP\]|La dirección IP de conexión. Quizás quiera especificar esta dirección IP cuando cree una lista de direcciones IP permitidas o una lista de direcciones IP bloqueadas en el filtro de conexión. Para obtener más información, vea [Configurar la directiva de filtro de conexión](configure-the-connection-filter-policy.md).  |
 |CTRY|El país desde el que el mensaje se conectó al servicio. Está determinado por la dirección IP de conexión, que puede no ser la misma que la dirección IP de envío original.|
 |LANG|El idioma en que se redactó el mensaje, que está definido por el código de país (por ejemplo, ru_RU indica ruso).|
 |SCL|El valor del nivel de confianza contra correo no deseado (SCL) del mensaje. Para obtener más información sobre cómo interpretar estos valores, consulte [Niveles de confianza de correo no deseado](spam-confidence-levels.md).  |
@@ -53,71 +53,70 @@ Al obtener acceso a la información del encabezado del mensaje, busque **X-Foref
 |SFV:SKI|Similar a SFV:SKN, el mensaje omitió el filtrado por otra razón, por ejemplo, ser un mensaje de correo electrónico dentro un inquilino de la organización.|
 |SFV:SKQ|El mensaje fue publicado desde la cuarentena y se ha enviado a los destinatarios.|
 |SFV:NSPM|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
-|H: [helostring]|Cadena HELO o EHLO del servidor de correo que realiza la conexión.|
-|PTR: [ReverseDNS]|Registro PTR, o registro de marcador, de la dirección IP de envío, también denominado dirección DNS inversa.|
+|H: \[helostring\]|Cadena HELO o EHLO del servidor de correo que realiza la conexión.|
+|PTR: \[ReverseDNS\]|Registro PTR, o registro de marcador, de la dirección IP de envío, también denominado dirección DNS inversa.|
 |CAT:|La categoría de la directiva de protección que se aplica al mensaje: <br/>MALW: malware <br/>PHSH: phishing <br/>HSPM: correo no deseado de confianza elevada <br/>SPOOF: suplantación de identidad <br/>SPM: correo no deseado <br/>BULK: masivo <br/>DIMP: suplantación de dominio <br/>UIMP: suplantación de usuario <br/>Es posible que un mensaje entrante aparezca marcado por múltiples formas de protección y múltiples análisis de detección. Las directivas tienen diferentes prioridades y se aplica la que tenga la prioridad más alta. Consulte [Qué directiva se aplica cuando se ejecutan varios métodos de protección y exámenes de detección en el correo electrónico](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined).|
 |SFTY|El mensaje se identificó como suplantación de identidad (phishing) y también se marcará con uno de los siguientes valores: <br/>9.1: valor predeterminado. El mensaje contiene una dirección URL de suplantación de identidad (phishing), puede tener otro contenido de suplantación de identidad (phishing) o se ha marcado como suplantación de identidad por otro filtro de correo, como una versión local de Exchange Server, antes de transmitir el mensaje a Office 365. <br/>9.11: el mensaje no ha superado las comprobaciones de suplantación de identidad donde el dominio de envío en el encabezado De: es el mismo, o se alinea con, o es parte de la misma organización que el dominio de recepción. Esto indica que se agregará una sugerencia de seguridad sobre la suplantación de la organización al mensaje. <br/>9.19: La suplantación del dominio del mensaje falló cuando el dominio remitente intentó hacerse pasar por un dominio que es propiedad del receptor o un dominio personalizado protegido por la directiva de protección contra la suplantación de identidad (anti-phishing). Esto indica que se agregará una sugerencia de seguridad de suplantación al mensaje si se habilitó a través de la directiva de protección contra la suplantación de identidad. <br/>9.20: El mensaje no superó las comprobaciones de suplantación del usuario cuando el usuario remitente intenta hacerse pasar por un usuario que pertenece a la organización del receptor o un usuario personalizado protegido por la directiva de protección contra la suplantación de identidad (anti-phishing). Esto indica que se agregará una sugerencia de seguridad de suplantación al mensaje si se habilitó a través de la directiva de protección contra la suplantación de identidad. <br/>9.21: El mensaje no superó las comprobaciones contra suplantaciones y el dominio remitente en el encabezado De: no se autentica y procede de un dominio externo. Se utiliza en combinación con un CompAuth (consulte Authentication-Results). <br/>9.22: Es lo mismo que el 9.21, pero el usuario tiene un remitente seguro que se reemplazó. <br/>9.23: Es lo mismo que el 9.22, pero la organización tiene un remitente o un dominio permitido que se reemplazó. <br/>9.24: Es lo mismo que el 9.23, pero el usuario tiene una regla de flujo de correo de Exchange que se reemplazó.|
-|X-CustomSpam: [ASFOption]|El mensaje coincide con una opción avanzada de filtrado de correo no deseado (ASF). Por ejemplo, **X-CustomSpam: Vínculos de imagen a sitios remotos**indica que la opción ASF **Vínculos de imagen a sitios remotos ** tuvo una coincidencia. Para obtener más información sobre qué texto del encabezado X se agrega para cada opción específica del ASF, consulte [Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md).|
+|X-CustomSpam: \[ASFOption\]|El mensaje coincide con una opción avanzada de filtrado de correo no deseado (ASF). Por ejemplo, **X-CustomSpam: Vínculos de imagen a sitios remotos**indica que la opción ASF **Vínculos de imagen a sitios remotos ** tuvo una coincidencia. Para obtener más información sobre qué texto del encabezado X se agrega para cada opción específica del ASF, consulte [Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md).|
 |
 
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Campos de encabezado de mensaje de X-Microsoft-Antispam
 
 En la tabla siguiente se describen los campos más útiles del encabezado de mensaje **X-Microsoft-Antispam**. El resto de los campos de este encabezado los usa exclusivamente el equipo de Microsoft contra el correo no deseado con fines de diagnóstico.
-  
+
 |**Campo de encabezado**|**Descripción**|
 |:-----|:-----|
-|BCL|El nivel de queja de correo masivo (BCL) del mensaje. Para más información, vea [Valores de nivel de queja de correo masivo](bulk-complaint-level-values.md).  |
 |PCL|El nivel de confianza de protección antiphishing (PCL) del mensaje, que indica si se trata de un mensaje de suplantación de identidad. Este estado se puede devolver con uno de los siguientes valores numéricos: <br/>**0-3**: Es posible que el contenido del mensaje no represente una suplantación de identidad. <br/>**4-8**: Es posible que el contenido del mensaje represente una suplantación de identidad. <br/>**-9990**: (solo en Exchange Online Protection) Es posible que el contenido del mensaje represente una suplantación de identidad.  <br/>  Los valores se usan para determinar qué medidas toma el cliente de correo electrónico sobre los mensajes. Por ejemplo, Outlook usa la marca PCL para bloquear el contenido de los mensajes sospechosos. Para obtener más información sobre la suplantación de identidad (phishing) y cómo Outlook procesa los mensajes de suplantación de identidad, vea[Activar o desactivar vínculos en mensajes de correo electrónico](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
 |
 
 ## <a name="authentication-results-message-header"></a>Encabezado de mensaje Authentication-results
 
 Office 365 graba los resultados de las comprobaciones de SPF, DKIM y DMARC en el encabezado de mensaje **Authentication-results** cuando nuestros servidores de correo reciben un mensaje de correo electrónico.
-  
-### <a name="check-stamp-syntax-and-examples"></a>Sintaxis y ejemplos de las marcas de verificación
+
+### <a name="check-stamp-syntax-and-examples"></a>Comprobar sintaxis y ejemplos de las marcas de verificación
 
 En los siguientes ejemplos de sintaxis se muestra una parte del texto de la marca que Office 365 aplica al encabezado del mensaje por cada correo electrónico que se somete a una comprobación de autenticación de correo electrónico cuando lo recibimos en nuestros servidores de correo. Esta marca se agrega al encabezado **Authentication-Results**.
-  
-**Sintaxis: marca de verificación de SPF**
-  
+
+#### <a name="syntax-spf-check-stamp"></a>Sintaxis: marca de verificación de SPF
+
 En cuanto a SPF, se aplica la siguiente sintaxis:
-  
+
 ```text
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
-**Ejemplos: marca de verificación de SPF**
-  
+**Ejemplos: marca de verificación de SPF
+
 ```text
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
-**Sintaxis: marca de verificación de DKIM**
-  
+#### <a name="syntax-dkim-check-stamp"></a>Sintaxis: marca de verificación de DKIM
+
 En cuanto a DKIM, se aplica la siguiente sintaxis:
-  
+
 ```text
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
-**Ejemplos: marca de verificación de DKIM**
-  
+**Ejemplos: marca de verificación de DKIM
+
 ```text
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
-**Sintaxis: marca de verificación de DMARC**
-  
+#### <a name="syntax-dmarc-check-stamp"></a>Sintaxis: marca de verificación de DMARC
+
 En cuanto a DMARC, se aplica la siguiente sintaxis:
-  
+
 ```text
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
-**Ejemplos: marca de verificación de DMARC**
-  
+#### <a name="examples-dmarc-check-stamp"></a>Ejemplos: marca de verificación de DMARC
+
 ```text
 dmarc=pass action=none header.from=contoso.com
 dmarc=bestguesspass action=none header.from=contoso.com
@@ -128,7 +127,7 @@ dmarc=fail action=oreject header.from=contoso.com
 ### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>Campos del encabezado de mensaje Authentication-results usados por la autenticación de correo electrónico de Office 365
 
 En esta tabla se describen los campos y los valores posibles para todas las comprobaciones de autenticación de correo electrónico.
-  
+
 |**Campo de encabezado**|**Descripción**|
 |:-----|:-----|
 |spf|Describe los resultados de la comprobación de SPF del mensaje. Los valores posibles son: <br/>**pass (dirección IP)**: indica que se superó la verificación de SPF del mensaje e incluye la dirección IP del remitente. El cliente tiene autorización para enviar o retransmitir un correo electrónico en nombre del dominio del remitente. <br/>**fail (dirección IP)**: indica que no se superó la verificación de SPF del mensaje e incluye la dirección IP del remitente A veces, recibe la denominación _"error no recuperable"_. <br/>**softfail (motivo)**: indica que el registro SPF determinó que el servidor no puede efectuar envíos, pero se encuentra en transición. <br/>**neutral**: indica que el registro SPF declaró explícitamente que no afirma si la dirección IP tiene autorización o no. <br/>**none**: indica que el dominio no tiene ningún registro SPF o que el registro SPF no proporciona ningún resultado. <br/>**temperror**: indica que se produjo un error que puede ser de carácter temporal (por ejemplo, un error de DNS). Volverlo a intentar más tarde puede que lo resuelva sin la intervención de ningún administrador. <br/>**permerror**: indica que se produjo un error permanente. Sucede cuando, por ejemplo, el dominio tiene un registro SPF con un formato incorrecto.|
