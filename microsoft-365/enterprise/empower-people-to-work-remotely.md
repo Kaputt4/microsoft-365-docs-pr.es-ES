@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configure la infraestructura y la seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: 198b01205e7419c4a3aa874c1e6213cce5284576
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9a9520f5246ec70a2b9947536c259c661a5bd44f
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453955"
+ms.locfileid: "37469162"
 ---
 # <a name="empower-remote-workers"></a>Aumente la productividad de sus trabajadores remotos
 
@@ -70,11 +70,11 @@ Las siguientes funciones de Microsoft 365 Enterprise le permiten aplicar estos c
 
 En los siguientes pasos le mostramos cómo implementar la característica de Microsoft 365 Enterprise para acceso remoto y cómo aumentar su uso en los trabajadores remotos. Si ya ha implementado elementos de estas fases, asegúrese de que cumplan los requisitos especificados antes de pasar al elemento siguiente.
 
-Para obtener un resumen de una sola página de este escenario, consulte el [póster para aumentar la productividad de los trabajadores remotos](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
+<a name="poster"></a>Para obtener un resumen de una sola página de este escenario, consulte el [póster para aumentar la productividad de los trabajadores remotos](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
 
 [Póster para aumentar la productividad de los trabajadores remotos![](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
+Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
 
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>Fase 1: implementar las características y funciones de Microsoft 365 para trabajadores remotos
