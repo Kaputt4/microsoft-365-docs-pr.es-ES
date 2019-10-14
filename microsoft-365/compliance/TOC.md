@@ -2,7 +2,7 @@
 
 # Introducción
 ## [Novedades del centro de cumplimiento](whats-new.md)
-## [Actualizaciones recientes del contenido de cumplimiento](recently-updated-topics-mcc.md)
+## [Actualizaciones recientes de contenido de cumplimiento](recently-updated-topics-mcc.md)
 ## [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md)
 ## [Ir al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md)
 ## [Usar su suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -17,8 +17,8 @@
 ## Clave del cliente
 ### [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md)
 ### [Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365](service-encryption-with-customer-key-faq.md)
-## [Supervisión de la comunicación]()
-### [Obtenga más información sobre la supervisión de la comunicación](supervision-policies.md)
+## [Supervisión]()
+### [Infórmese de las directivas de supervisión](supervision-policies.md)
 ### [Configurar directivas de supervisión para su organización](configure-supervision-policies.md)
 ## [Barreras de información](information-barriers.md)
 ### [Definir directivas de barreras de información](information-barriers-policies.md)
@@ -31,7 +31,7 @@
 ### [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
 ### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)
 ### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
-### [Etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md)
+### [Etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md)
 
 ## [Prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)
 ### [DLP y Microsoft Teams](dlp-microsoft-teams.md)
@@ -106,7 +106,7 @@
 ### [Administrador del plan de archivos](file-plan-manager.md)
 ### [Etiquetas de retención](labels.md)
 ### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Acerca de la retención basada en eventos](event-driven-retention.md)
 ### [Retención automática basada en eventos](automate-event-driven-retention.md)
 ## [Eliminar datos](disposition-reviews.md)
@@ -127,7 +127,7 @@
 ### Plan de archivos
 #### [Administrador del plan de archivos](file-plan-manager.md)
 #### [Etiquetas de retención](labels.md)
-#### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
 #### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
 #### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
@@ -330,7 +330,7 @@
 ### [Exportar documentos de pruebas](export-documents-from-incident.md)
 ### [Descargar trabajos de exportación](download-export-jobs-from-a-data-investigation.md)
 
-## [Configuración de investigaciones de datos](configure-settings-datainvestigations.md)
+## Configurar las opciones de investigación
 ### [Agregar o quitar a miembros de una investigación](add-remove-members.md)
 ### [Establecer la configuración de búsqueda y análisis](configure-search-analytics-settings.md)
 ### [Cerrar o eliminar una investigación](close-or-delete-investigation.md)
@@ -342,7 +342,7 @@
 ### [Campos de metadatos del documento](document-metadata-fields.md)
 ### [Administrar trabajos](manage-jobs.md)
 
-# Administración de directivas de auditoría y alertas
+# Administrar las auditorías y las directivas de alerta
 ## [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 ## [Administrar directivas de alerta](alert-policies.md)
 ## [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md)
