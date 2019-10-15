@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospedada.
-ms.openlocfilehash: 389fa939c2fd35351abad4d355829656c3977deb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 393542596eacd26a4f64237f666fabfe236dceed
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093399"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510537"
 ---
 # <a name="quarantine-faq"></a>Preguntas más frecuentes sobre la cuarentena
 
@@ -47,15 +47,15 @@ A. Para poder tener acceso a la cuarentena de correo no deseado del usuario fina
   
  **P. ¿Se puede enviar otra cosa que no sea correo no deseado a la cuarentena?**
   
-R. Los mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte) también se pueden enviar a la cuarentena de administrador, si esa es la acción configurada. La cuarentena del usuario final es únicamente para correo no deseado.
+R. Sí. Los mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte) junto con los mensajes identificados como phish también se pueden enviar a la cuarentena de administrador, si esa es la acción configurada. La cuarentena del usuario final es únicamente para correo no deseado.
   
  **P. ¿Durante cuánto tiempo se guardan los mensajes en cuarentena?**
   
-A. De forma predeterminada, los mensajes en cuarentena de correo no deseado se mantienen en cuarentena durante 30 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Finalizado este tiempo, los mensajes se eliminan y ya no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, es posible reducir el período de retención de los mensajes de correo no deseado en cuarentena mediante la configuración **Mantener el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
+A. De forma predeterminada, los mensajes en cuarentena de correo no deseado se mantienen en cuarentena durante 30 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante un máximo de 30 días en función del período de retención establecido en la Directiva de filtro de contenido predeterminada. Finalizado este tiempo, los mensajes se eliminan y ya no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, es posible reducir el período de retención de los mensajes de correo no deseado en cuarentena mediante la configuración **Mantener el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
   
  **Q. ¿Puedo liberar o informar de más de un mensaje en cuarentena a la vez?**
   
-A. La capacidad de liberar o informar sobre varios mensajes a la vez no está disponible actualmente en el EAC ni en el correo electrónico en cuarentena del usuario final. Sin embargo, los administradores pueden crear una secuencia de comandos de Windows PowerShell remoto para realizar esta tarea. Use el cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para buscar los mensajes y el cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberarlos. 
+A. Sí, se pueden liberar hasta 100 mensajes al mismo tiempo en el portal de cuarentena. Además, los administradores pueden crear un script de Windows PowerShell remoto para realizar esta tarea. Use el cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para buscar los mensajes y el cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberarlos. 
   
  **P. ¿Se admiten caracteres comodín al buscar mensajes en cuarentena? ¿Puedo buscar mensajes en cuarentena para un dominio específico?**
   
