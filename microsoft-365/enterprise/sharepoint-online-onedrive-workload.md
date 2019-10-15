@@ -2,7 +2,7 @@
 title: Implementar SharePoint y OneDrive para Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se detalla el proceso de planeación, implementación y aumento del valor de SharePoint en toda la organización.
-ms.openlocfilehash: d8a61a6bc6b4dae431d94e7ccfb9fb0ea8019427
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329217"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37469152"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Implementar SharePoint y OneDrive para Microsoft 365 Enterprise
 
@@ -27,7 +27,7 @@ SharePoint y Microsoft Teams se usan para el almacenamiento y uso compartido de 
 
 SharePoint también cuenta con funcionalidades de seguridad avanzadas que incluyen control con permisos de acceso y cifrado en vuelo y en reposo. La seguridad de SharePoint es un elemento clave del valor de seguridad Inteligente de Microsoft 365 Enterprise.
 
-Si no conoce SharePoint, vea [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) y la[Introducción a SharePoint](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics).
+Si no conoce SharePoint, vea [SharePoint](https://products.office.com/sharepoint/collaboration) y la[Introducción a SharePoint](https://support.office.com/article/video-what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121).
 
 Los siguientes pasos y fases le guiarán a través del proceso de planificar el rol de SharePoint en la organización, incorporar la organización a través de una serie de implementaciones graduales y fomentar el uso de su valor para sus usuarios finales. Antes de empezar, asegúrese de haber configurado las fases de [infraestructura de la fundación](deploy-workloads.md#foundation-infrastructure-prerequisites) adecuadas para que los sitios de SharePoint tengan las capacidades de seguridad que usted necesita. 
 
@@ -50,18 +50,17 @@ Una lista de personas que representan las perspectivas empresariales, técnicas 
 
 SharePoint puede usarse con distintos fines. Necesita determinar qué fines se corresponden con sus necesidades empresariales. Su objetivo es que SharePoint satisfaga las necesidades de almacenamiento y uso compartido de documentos, de administración de contenidos y de colaboración de los equipos, la división o toda la organización. 
 
-Vea la lista de escenarios y funciones en [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software).
+Vea la lista de escenarios y funciones en [SharePoint](https://products.office.com/sharepoint/collaboration ).
 
 Los siguientes pilares empresariales pueden abordar las necesidades de la organización:
 
 |||
 |:-----|:-----|
-| Compartir y colaborar | Aproveche las ventajas de los sitios de grupo, sitios de colaboración y la sincronización. |
+| Compartir y colaborar | Aproveche las ventajas de los sitios de grupo, los sitios de comunicación y la sincronización. |
 | Informar e interactuar | La información que viene en el futuro. |
-| Transformar | Se utiliza Flow para crear un flujo de trabajo o tienda. |
+| Transformar | Usa Flow para crear flujos de trabajo automatizados entre aplicaciones y servicios. |
 | Aprovechar el conocimiento colectivo | Se utiliza la búsqueda para proporcionar los resultados que quiere en su organización. |
 | Proteger | Garantiza que su organización está protegida y cuenta con el cumplimiento normativo correcto. |
-| Externo/Desarrollar | Permite que su organización desarrolle soluciones y aplicaciones personalizadas mediante SharePoint Framework. |
 |||
 
 Vea [Administrador de SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-online) para obtener recursos sobre cómo configurar SharePoint según sus necesidades.
@@ -85,14 +84,11 @@ Para proteger el acceso a los sitios de SharePoint, asegúrese de que configuró
 
 ### <a name="step-1-complete-your-technical-planning"></a>Paso 1: Completar el planeamiento técnico
 
-Antes de iniciar la planificación técnica, decida si desea usar FastTrack. Si su organización tiene más de 50 puestos y participa en un [plan admitido](https://technet.microsoft.com/library/dn783224.aspx), puede usar las ventajas de FastTrack sin coste adicional para utilizarlas como guía a través de los procesos de planificación, migración, implementación y adopción del servicio. También puede completar este trabajo usted mismo usando los asistentes de incorporación de FastTrack, que están disponibles en [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview), después de iniciar sesión con la cuenta de Microsoft 365.
+Antes de iniciar la planificación técnica, decida si desea usar FastTrack. Si su organización tiene más de 50 puestos y participa en un [plan admitido](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365), puede usar las ventajas de FastTrack sin coste adicional para guiarse a través de los procesos de planificación, migración, implementación y adopción del servicio. También puede completar este trabajo usted mismo usando los asistentes de incorporación de FastTrack, que están disponibles en [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview), después de iniciar sesión con la cuenta de Microsoft 365.
 
-Ya lo planifique usted mismo o con FastTrack, debe determinar si su red y su organización están listas para SharePoint. Es especialmente importante que cumpla los criterios de salida de redes en su infraestructura base y que preste especial atención a los retrasos de tráfico, el rendimiento y el ancho de banda de Internet para maximizar el rendimiento del tráfico adicional de documentos basados en SharePoint.
+Ya lo planifique usted mismo o con FastTrack, debe determinar si su red y su organización están listas para SharePoint. Es especialmente importante que cumpla los [criterios de salida de redes](networking-exit-criteria.md) en su infraestructura base y que preste especial atención a los retrasos de tráfico, el rendimiento y el ancho de banda de Internet para maximizar el rendimiento del tráfico adicional de documentos basados en SharePoint.
 
-Use estos recursos para preparar los aspectos técnicos de una implementación de SharePoint: 
-
-- [Guía de planificación de SharePoint](https://docs.microsoft.com/sharepoint/planning-guide)
-- [Migrar a SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) 
+Use [Migrar a SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) para preparar la implementación de SharePoint: 
 
 Para comprender mejor la seguridad en SharePoint, revise los recursos siguientes:
 
@@ -108,8 +104,8 @@ Comprenderá la migración de carpetas y documentos locales y la seguridad de si
 En la mayoría de las organizaciones medianas y grandes, debería ejecutar una prueba piloto de TI con las partes interesadas de la fase 1, así como con usuarios pioneros y aficionados técnicos. Durante la prueba piloto de TI:
 
 - Elija un escenario de negocios de SharePoint en el que los participantes en la prueba piloto de TI puedan practicar.
-- Ofrezca a los participantes en la prueba piloto un conjunto de ejercicios para probar el almacenamiento y uso compartido de documentos, la colaboración, la programación basada en el equipo y otras funcionalidades de SharePoint.
-- Determine la estrategia de administración de cambios y elabore materiales para impulsar la adopción general de SharePoint en los usuarios de su organización. Los materiales para la gestión de cambios pueden incluir anuncios en correos electrónicos, formación interna, carteles en los pasillos y presentaciones. Estos materiales informarán a su organización de SharePoint y sus ventajas, para sensibilizar a los usuarios y aumentar su uso del software. Vea la estrategia de administración de cambios para obtener más información sobre [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy).
+- Ofrezca a los participantes en la prueba piloto un conjunto de ejercicios para probar el almacenamiento y uso compartido de documentos, la colaboración y otras funcionalidades de SharePoint.
+- Determine la estrategia de administración de cambios y elabore materiales para impulsar la adopción general de SharePoint en los usuarios de su organización. Los materiales para la gestión de cambios pueden incluir anuncios en correos electrónicos, formación interna, carteles en los pasillos y presentaciones. Estos materiales informarán a su organización de SharePoint y sus ventajas, para sensibilizar a los usuarios y aumentar su uso del software. Consulte los [recursos de la adopción de SharePoint](https://resources.techcommunity.microsoft.com/resources/SharePoint-adoption/) para empezar.
 - Los participantes de la prueba piloto de TI deben revisar los materiales de administración de cambios en función de su experiencia. Pueden aportar sugerencias sobre las prácticas recomendadas y dar consejos sobre cómo describir mejor las ventajas de SharePoint y cómo usarlas.
 
 #### <a name="result"></a>Resultado
