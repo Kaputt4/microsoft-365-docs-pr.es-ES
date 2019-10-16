@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado.
-ms.openlocfilehash: 38160952827d8e60884877a67aea15521000f63f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fb46e735c4fae73565b6fe008d47a3e7ffd3f4cb
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092646"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510567"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar las directivas de filtro de correo no deseado
 La configuración del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado. La configuración de la directiva de filtro de correo no deseado se aplica solo a los mensajes entrantes. Hay dos tipos:
@@ -50,7 +50,7 @@ Para habilitar más opciones personalizadas o agregar directivas personalizadas,
 
 3. En la sección **acciones de correo masivo y correo no deseado**:
 
-  - Seleccione una acción para los tipos **Correo no deseado**, **Correo no deseado de confianza alta**, **Correo de suplantación de identidad** y **Correo electrónico en masa**. Los valores disponibles son los siguientes: 
+  - Seleccione una acción para los tipos **Correo no deseado**, **Correo no deseado de confianza alta**, **Correo de suplantación de identidad de confianza alta**, **Correo de suplantación de identidad** y **Correo masivo**. Los valores disponibles son los siguientes: 
 
     - **Mover mensaje a la carpeta Correo no deseado** Entrega el mensaje a la carpeta de Correo no deseado de los destinatarios especificados. Esta es la acción predeterminada para el correo no deseado, el correo no deseado de confianza alta y el correo en masa.<br/><br/>
 
