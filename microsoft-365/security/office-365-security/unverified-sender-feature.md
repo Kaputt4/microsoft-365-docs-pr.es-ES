@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: 1b6c834f5d54c54a577b51edf5f135e30990a92c
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510547"
+ms.locfileid: "37523635"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 
@@ -33,6 +33,15 @@ Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, 
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>¿Cómo puedo identificar un mensaje sospechoso en mi bandeja de entrada?
 
 Outlook.com y Outlook en la web muestran indicadores cuando no se puede identificar el remitente de un mensaje o su identidad es diferente de la que se ve en la dirección de remitente.
+
+## <a name="you-see-a--in-the-sender-image"></a>Ve un '? ' en la imagen del remitente
+
+Cuando Outlook.com y Outlook en la web no pueden comprobar la identidad del remitente mediante técnicas de autenticación de correo electrónico, muestran un '? ' en la foto del remitente. 
+
+![El mensaje no pasó la comprobación](../media/message-did-not-pass-verification.jpg)
+
+No todos los mensajes que no se autentican son malintencionados. Sin embargo, debe tener cuidado al interactuar con los mensajes que no se autentican si no reconoce al remitente. O bien, si reconoce a un remitente que normalmente no tiene un '? ' en la imagen del remitente, pero, de repente, lo empieza a ver, es posible que se trate de una firma en la que se está suplantando el remitente.
+
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Cómo administrar qué mensajes reciben el tratamiento de remitentes no comprobados 
 
@@ -49,14 +58,6 @@ Si es un cliente de Office 365, puede administrar esta característica a través
     - Agregue el par de dominios mediante el cmdlet PhishFilterPolicy. Para obtener más información, vea Set-PhishFilterPolicy y protección contra la suplantación de identidad en Office 365
 
 Además, no se aplica el tratamiento de remitente no verificado si se entregó en la bandeja de entrada a través de una lista de permitidos del administrador, incluidas las reglas de transporte de correo electrónico (ETR), la lista de dominios seguros (Directiva contra correo no deseado), la lista de remitentes seguros o un usuario ha establecido este usuario como un "remitente seguro" en su entrada.
-
-### <a name="you-see-a--in-the-sender-image"></a>Ve un '? ' en la imagen del remitente
-
-Cuando Outlook.com y Outlook en la web no pueden comprobar la identidad del remitente mediante técnicas de autenticación de correo electrónico, muestran un '? ' en la foto del remitente. 
-
-![El mensaje no pasó la comprobación](../media/message-did-not-pass-verification.jpg)
-
-No todos los mensajes que no se autentican son malintencionados. Sin embargo, debe tener cuidado al interactuar con los mensajes que no se autentican si no reconoce al remitente. O bien, si reconoce a un remitente que normalmente no tiene un '? ' en la imagen del remitente, pero, de repente, lo empieza a ver, es posible que se trate de una firma en la que se está suplantando el remitente.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

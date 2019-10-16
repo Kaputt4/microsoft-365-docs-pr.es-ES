@@ -1,8 +1,8 @@
 ---
 title: 'Taller Director de seguridad de la información (CISO), módulo 1: Microsoft Cybersecurity briefing'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 5a4c2cf41ea7af809ba74fe5a4a59f52051850b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fa572e24a549be2f8f9a56d3f83e53d43a6c5294
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092665"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517519"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>Módulo 1 del taller de CISO: Informe sobre Microsoft Cybersecurity
 
 Este módulo incluye información general sobre la higiene crítica de la seguridad, la arquitectura de referencia de Microsoft Cybersecurity, la resistencia de Cybersecurity, Internet de las cosas (IoT) y la tecnología operativa.
 
 - Descarga del Resumen de PDF: [módulo 1: instrucciones para Microsoft Cybersecurity](../media/ciso-workshop-1-cybersecurity-briefing.pdf)
-- Descargar Resumen de PowerPoint: [módulo 1: instrucciones para Microsoft Cybersecurity](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)
+- Descargar Resumen de PowerPoint: [módulo 1: instrucciones para Microsoft Cybersecurity](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ## <a name="part-1-course-introduction-and-overview-913"></a>Parte 1: Introducción al curso e información general (9:13)
 

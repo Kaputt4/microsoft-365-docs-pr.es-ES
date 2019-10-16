@@ -1,8 +1,8 @@
 ---
 title: 'Taller Director de seguridad de la información (CISO), módulo 2: administración de seguridad'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 9fba19de7d2fcc406d1c058cb0fad3c80242c64c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b1403b35c9cea10c87f528c6f09c2948f316f27
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092662"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517589"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>Módulo 2 del taller de CISO: administración de la seguridad 
 
 Obtenga información sobre cómo aumentar la visibilidad y el control sobre su empresa híbrida con instrucciones integradas, aplicación de directivas automatizada y supervisión.
 
 - Descarga del Resumen de PDF: [módulo 2: administración de seguridad](../media/ciso-workshop-2-security-management.pdf)
-- Descargar el Resumen de PowerPoint: [módulo 2: administración](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-2-security-management.pptx) de la seguridad
+- Descargar el Resumen de PowerPoint: [módulo 2: administración](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-2-security-management.pptx) de la seguridad
 
 ## <a name="introduction-security-management-125"></a>Introducción: administración de la seguridad (1:25)
 

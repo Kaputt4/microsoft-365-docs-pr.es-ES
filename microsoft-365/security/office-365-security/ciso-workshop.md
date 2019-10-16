@@ -1,8 +1,8 @@
 ---
 title: Taller sobre el director de seguridad de la información (CISO)
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 95bfc90211b90e129e6b208ab09b6123c61ccaae
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6987f5fcb0504ad4b5bee91a417ff632faa11623
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092654"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37523625"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Formación del taller Chief Information Security Office (CISO)
 
@@ -32,7 +32,7 @@ Los vídeos del taller de CISO y el contenido de descarga de PDF o PowerPoint so
 
 - [Módulo 2: administración](ciso-workshop-module-2.md)de la seguridad: Aprenda a aumentar la visibilidad y el control sobre su empresa híbrida con instrucciones integradas, aplicación automatizada de directivas y supervisión.
 
-- [Módulo 3: administración de identidades y acceso](ciso-workshop-module-3.md): debido a que la mayoría de los ataques modernos implican comprometer las identidades de los usuarios, obtenga información sobre cómo crear un nuevo perímetro de seguridad de identidades para proteger activos fuera de la red corporativa.
+- [Módulo 3: módulo 3: identidad y acceso de usuario de confianza cero](ciso-workshop-module-3.md): Aprenda a incluir conceptos de confianza en su estrategia de identidad y acceso de usuario para proteger mejor los datos corporativos dentro y fuera del perímetro de la red.
 
 - [Módulo 4A: estrategia de protección contra amenazas, parte I](ciso-workshop-module-4a.md): Explore los aprendizajes clave sobre la protección contra amenazas, la evolución de la seguridad, las estrategias y los mapas de seguridad de la carretera.
 

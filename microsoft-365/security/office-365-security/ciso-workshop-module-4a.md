@@ -1,8 +1,8 @@
 ---
 title: 'Taller Chief Information Security Officer (CISO), módulo 4A: estrategia de protección contra amenazas'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 0bbc9cf6cb102067aadcacdb416f6f538bb2555b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f136f8ccb12ac09048b0b6a9de22ebb37fcc40dd
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092659"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517579"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO Workshop Module 4A: estrategia de protección contra amenazas
 
 Explore los aprendizajes clave sobre la protección contra amenazas, la evolución de la seguridad, las estrategias y los mapas de seguridad de la carretera.
 
 - Descargar Resumen de PDF: [módulo 4A: estrategia de protección contra amenazas](../media/ciso-workshop-4a-threat-protection.pdf)
-- Descargar Resumen de PowerPoint: [módulo 4A: estrategia de protección contra amenazas](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
+- Descargar Resumen de PowerPoint: [módulo 4A: estrategia de protección contra amenazas](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>Introducción: estrategia de protección contra amenazas (4:37)
 

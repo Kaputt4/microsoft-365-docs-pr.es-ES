@@ -1,8 +1,8 @@
 ---
 title: 'Taller Director de seguridad de la información (CISO), módulo 3: identidad y administración de acceso'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,40 +10,48 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: b8d539d535322716e7d7f8ede075319e97f2dea8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 08698a0c8e9bf79ef4c464ef4800d737df1421fc
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092660"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37523595"
 ---
-# <a name="ciso-workshop-module-3-identity-and-access-management"></a>CISO Workshop Module 3: administración de identidades y acceso 
+# <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>Módulo 3 de taller de CISO: acceso de usuario de identidades y de confianza cero
 
 Como la mayoría de los ataques modernos implican comprometer las identidades de los usuarios, obtenga información sobre cómo crear un nuevo perímetro de seguridad de identidades para proteger activos fuera de la red corporativa.
 
 - Descarga del Resumen de PDF: [módulo 3: administración de identidades y acceso](../media/ciso-workshop-3-identity-protection.pdf)
-- Descargar Resumen de PowerPoint: [módulo 3: administración de identidades y acceso](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)
+- Descargar Resumen de PowerPoint: [módulo 3: administración de identidades y acceso](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-3-identity-protection.pptx)
 
-## <a name="introduction-identity-and-access-management-232"></a>Introducción: administración de identidades y acceso (2:32)
+## <a name="part-1-identity-and-zero-trust-history-933"></a>Parte 1: historial de identidades y de confianza cero (9:33)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm3]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhs]
 
-## <a name="part-1-history-and-trends-of-identity-security-745"></a>Parte 1: historial y tendencias de la seguridad de la identidad (7:45)
+## <a name="part-2-zero-trust-definition-and-models-1537"></a>Parte 2: modelos y definiciones de confianza cero (15:37)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL7]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YaUL]
 
-## <a name="part-2-identity-system-security-337"></a>Parte 2: seguridad del sistema de identidad (3:37)
+## <a name="part-3-strategy-and-priorities-954"></a>Parte 3: estrategia y prioridades (9:54)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YvHy]
 
-## <a name="part-3-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a>Parte 3: seguridad de la cuenta: medir el coste del ataque autenticación sin contraseña (13:11)
+## <a name="part-4-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a>Parte 4: seguridad de la cuenta: medir el coste del ataque autenticación sin contraseña (13:11)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
 
-## <a name="part-4-build-an-identity-perimeter-1357"></a>Parte 4: crear un perímetro de identidad (13:57)
+##  <a name="part-5-zero-trust-user-access-reference-architecture-842"></a>Parte 5: arquitectura de referencia de acceso de usuario de confianza cero (8:42)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhx]
 
-## <a name="part-5-lowering-risk-using-business-to-business-and-business-to-customer-447"></a>Parte 5: disminución del riesgo mediante negocio a negocio y negocio a cliente (4:47)
+##  <a name="part-6-build-an-identity-perimeter-1357"></a>Parte 6: crear un perímetro de identidad (13:57)
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
+
+## <a name="part-7-identity-system-security-337"></a>Parte 7: seguridad del sistema de identidad (3:37)
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
+
+##  <a name="part-8-lowering-risk-using-business-to-business-and-business-to-customer-447"></a>Parte 8: disminución del riesgo mediante negocio a negocio y negocio a cliente (4:47)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMi]
