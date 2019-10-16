@@ -1,8 +1,8 @@
 ---
 title: 'Taller Director de seguridad de la información (CISO), módulo 3: identidad y administración de acceso'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,40 +10,48 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: b8d539d535322716e7d7f8ede075319e97f2dea8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 08698a0c8e9bf79ef4c464ef4800d737df1421fc
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092660"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37523595"
 ---
-# <a name="ciso-workshop-module-3-identity-and-access-management"></a><span data-ttu-id="fbfb1-103">CISO Workshop Module 3: administración de identidades y acceso</span><span class="sxs-lookup"><span data-stu-id="fbfb1-103">CISO Workshop Module 3: Identity and Access Management</span></span> 
+# <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a><span data-ttu-id="ead80-103">Módulo 3 de taller de CISO: acceso de usuario de identidades y de confianza cero</span><span class="sxs-lookup"><span data-stu-id="ead80-103">CISO Workshop Module 3: Identity and Zero Trust User Access</span></span>
 
-<span data-ttu-id="fbfb1-104">Como la mayoría de los ataques modernos implican comprometer las identidades de los usuarios, obtenga información sobre cómo crear un nuevo perímetro de seguridad de identidades para proteger activos fuera de la red corporativa.</span><span class="sxs-lookup"><span data-stu-id="fbfb1-104">Because most modern attacks involve compromising user identities, learn how to build a new identity security perimeter to protect assets outside your corporate network.</span></span>
+<span data-ttu-id="ead80-104">Como la mayoría de los ataques modernos implican comprometer las identidades de los usuarios, obtenga información sobre cómo crear un nuevo perímetro de seguridad de identidades para proteger activos fuera de la red corporativa.</span><span class="sxs-lookup"><span data-stu-id="ead80-104">Because most modern attacks involve compromising user identities, learn how to build a new identity security perimeter to protect assets outside your corporate network.</span></span>
 
-- <span data-ttu-id="fbfb1-105">Descarga del Resumen de PDF: [módulo 3: administración de identidades y acceso](../media/ciso-workshop-3-identity-protection.pdf)</span><span class="sxs-lookup"><span data-stu-id="fbfb1-105">Download PDF summary: [Module 3: Identity and Access Management](../media/ciso-workshop-3-identity-protection.pdf)</span></span>
-- <span data-ttu-id="fbfb1-106">Descargar Resumen de PowerPoint: [módulo 3: administración de identidades y acceso](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)</span><span class="sxs-lookup"><span data-stu-id="fbfb1-106">Download PowerPoint summary: [Module 3: Identity and Access Management](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)</span></span>
+- <span data-ttu-id="ead80-105">Descarga del Resumen de PDF: [módulo 3: administración de identidades y acceso](../media/ciso-workshop-3-identity-protection.pdf)</span><span class="sxs-lookup"><span data-stu-id="ead80-105">Download PDF summary: [Module 3: Identity and Access Management](../media/ciso-workshop-3-identity-protection.pdf)</span></span>
+- <span data-ttu-id="ead80-106">Descargar Resumen de PowerPoint: [módulo 3: administración de identidades y acceso](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-3-identity-protection.pptx)</span><span class="sxs-lookup"><span data-stu-id="ead80-106">Download PowerPoint summary: [Module 3: Identity and Access Management](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-3-identity-protection.pptx)</span></span>
 
-## <a name="introduction-identity-and-access-management-232"></a><span data-ttu-id="fbfb1-107">Introducción: administración de identidades y acceso (2:32)</span><span class="sxs-lookup"><span data-stu-id="fbfb1-107">Introduction: Identity and Access Management (2:32)</span></span>
+## <a name="part-1-identity-and-zero-trust-history-933"></a><span data-ttu-id="ead80-107">Parte 1: historial de identidades y de confianza cero (9:33)</span><span class="sxs-lookup"><span data-stu-id="ead80-107">Part 1: Identity and Zero Trust History (9:33)</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm3]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhs]
 
-## <a name="part-1-history-and-trends-of-identity-security-745"></a><span data-ttu-id="fbfb1-108">Parte 1: historial y tendencias de la seguridad de la identidad (7:45)</span><span class="sxs-lookup"><span data-stu-id="fbfb1-108">Part 1: History and Trends of Identity Security (7:45)</span></span>
+## <a name="part-2-zero-trust-definition-and-models-1537"></a><span data-ttu-id="ead80-108">Parte 2: modelos y definiciones de confianza cero (15:37)</span><span class="sxs-lookup"><span data-stu-id="ead80-108">Part 2: Zero Trust Definition and Models (15:37)</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL7]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YaUL]
 
-## <a name="part-2-identity-system-security-337"></a><span data-ttu-id="fbfb1-109">Parte 2: seguridad del sistema de identidad (3:37)</span><span class="sxs-lookup"><span data-stu-id="fbfb1-109">Part 2: Identity System Security (3:37)</span></span>
+## <a name="part-3-strategy-and-priorities-954"></a><span data-ttu-id="ead80-109">Parte 3: estrategia y prioridades (9:54)</span><span class="sxs-lookup"><span data-stu-id="ead80-109">Part 3: Strategy and Priorities (9:54)</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YvHy]
 
-## <a name="part-3-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a><span data-ttu-id="fbfb1-110">Parte 3: seguridad de la cuenta: medir el coste del ataque autenticación sin contraseña (13:11)</span><span class="sxs-lookup"><span data-stu-id="fbfb1-110">Part 3: Account Security: Measuring Cost of Attack Password-less Authentication (13:11)</span></span>
+## <a name="part-4-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a><span data-ttu-id="ead80-110">Parte 4: seguridad de la cuenta: medir el coste del ataque autenticación sin contraseña (13:11)</span><span class="sxs-lookup"><span data-stu-id="ead80-110">Part 4: Account Security: Measuring Cost of Attack Password-less Authentication (13:11)</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
 
-## <a name="part-4-build-an-identity-perimeter-1357"></a><span data-ttu-id="fbfb1-111">Parte 4: crear un perímetro de identidad (13:57)</span><span class="sxs-lookup"><span data-stu-id="fbfb1-111">Part 4: Build an Identity Perimeter (13:57)</span></span>
+##  <a name="part-5-zero-trust-user-access-reference-architecture-842"></a><span data-ttu-id="ead80-111">Parte 5: arquitectura de referencia de acceso de usuario de confianza cero (8:42)</span><span class="sxs-lookup"><span data-stu-id="ead80-111">Part 5: Zero Trust User Access Reference Architecture (8:42)</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhx]
 
-## <a name="part-5-lowering-risk-using-business-to-business-and-business-to-customer-447"></a><span data-ttu-id="fbfb1-112">Parte 5: disminución del riesgo mediante negocio a negocio y negocio a cliente (4:47)</span><span class="sxs-lookup"><span data-stu-id="fbfb1-112">Part 5: Lowering Risk using business-to-business and business-to-customer (4:47)</span></span>
+##  <a name="part-6-build-an-identity-perimeter-1357"></a><span data-ttu-id="ead80-112">Parte 6: crear un perímetro de identidad (13:57)</span><span class="sxs-lookup"><span data-stu-id="ead80-112">Part 6: Build an Identity Perimeter (13:57)</span></span>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
+
+## <a name="part-7-identity-system-security-337"></a><span data-ttu-id="ead80-113">Parte 7: seguridad del sistema de identidad (3:37)</span><span class="sxs-lookup"><span data-stu-id="ead80-113">Part 7: Identity System Security (3:37)</span></span>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
+
+##  <a name="part-8-lowering-risk-using-business-to-business-and-business-to-customer-447"></a><span data-ttu-id="ead80-114">Parte 8: disminución del riesgo mediante negocio a negocio y negocio a cliente (4:47)</span><span class="sxs-lookup"><span data-stu-id="ead80-114">Part 8: Lowering Risk using business-to-business and business-to-customer (4:47)</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMi]
