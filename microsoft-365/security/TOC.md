@@ -6,7 +6,7 @@
 ### [Taller de aprendizaje de director de seguridad de la información (CISO) ](./office-365-security/ciso-workshop.md)
 #### [Módulo 1: referencia de ciberseguridad de Microsoft](./office-365-security/ciso-workshop-module-1.md)
 #### [Módulo 2: administración de seguridad](./office-365-security/ciso-workshop-module-2.md)
-#### [Modulo 3: administración de identidad y acceso](./office-365-security/ciso-workshop-module-3.md)
+#### [Modulo 3 - Identidad y acceso y cero confianza del usuario](./office-365-security/ciso-workshop-module-3.md)
 #### [Módulo 4a: estrategia de protección contra amenazas, parte I](./office-365-security/ciso-workshop-module-4a.md)
 #### [Módulo 4b: estrategia de protección contra amenazas, parte II](./office-365-security/ciso-workshop-module-4b.md)
 #### [Módulo 5: protección de la información](./office-365-security/ciso-workshop-module-5.md)
@@ -99,6 +99,7 @@
 #### [Protección contra suplantación de identidad en Office 365](./office-365-security/anti-spoofing-protection.md)
 ##### [Obtener más información sobre la inteligencia de suplantación de identidad](./office-365-security/learn-about-spoof-intelligence.md)
 ##### [Tutorial sobre suplantación de información de inteligencia](./office-365-security/walkthrough-spoof-intelligence-insight.md)
+##### [Identificar mensajes sospechosos en Outlook.com y Outlook en la Web](./office-365-security/unverified-sender-feature.md)
 
 #### [¿Qué es EOP?](./office-365-security/what-is-eop.md)
 ##### [Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6](./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md)
@@ -160,7 +161,7 @@
 
 #### [Explorador de amenazas (y detecciones en tiempo real)](./office-365-security/threat-explorer.md)
 ##### [Vistas del explorador de amenazas](./office-365-security/threat-explorer-views.md)
-##### [Identificar mensajes sospechosos en Outlook.com y Outlook en la Web](./office-365-security/unverified-sender-feature.md)
+
 
 #### [Integración para mayor seguridad]()
 ##### [Integrar Office 365 ATP con Protección contra amenazas avanzada de Microsoft Defender](./office-365-security/integrate-office-365-ti-with-wdatp.md)
