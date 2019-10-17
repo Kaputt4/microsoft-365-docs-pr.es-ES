@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos 365 de Microsoft y las acciones recomendadas para mitigar estos riesgos.
-ms.openlocfilehash: 16108f71702e2464721fa09fee4c6c298496a2c4
-ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
+ms.openlocfilehash: c847e11d141dd6b3b4ce7601631259ba73e1703f
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2019
-ms.locfileid: "37481395"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37556825"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Seguridad de Microsoft 365 para responsables de decisiones empresariales
 
-En este artículo se describen algunos de los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos de 365 de Microsoft, así como las acciones recomendadas para mitigar estos riesgos. Aunque Microsoft 365 incluye una amplia variedad de características de seguridad preconfiguradas, también requiere que usted sea el cliente al que se responsabiliza para proteger sus propias identidades, datos y dispositivos usados para acceder a los servicios en la nube. 
+En este artículo se describen algunos de los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos de 365 de Microsoft, así como las acciones recomendadas para mitigar estos riesgos. Aunque Microsoft 365 incluye una amplia variedad de características de seguridad preconfiguradas, también requiere que usted sea el cliente al que se responsabiliza para proteger sus propias identidades, datos y dispositivos usados para acceder a los servicios en la nube. Esta guía ha sido desarrollada por Kozeta viga (arquitecto de seguridad en la nube de Microsoft) y Thiagaraj Sundararajan (Consultor Senior de Microsoft).
 
 Este artículo está organizado por prioridad de trabajo, comenzando con la protección de las cuentas que se usan para administrar los activos y servicios más críticos, como el espacio empresarial, el correo electrónico y SharePoint. Proporciona un modo metódico para enfocar la seguridad y funciona junto con la siguiente hoja de cálculo para que pueda realizar un seguimiento del progreso con las partes interesadas y los equipos de toda la organización: [hoja de cálculo de Microsoft 365 Security para](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)los responsables de la hoja de trabajo. 
 
