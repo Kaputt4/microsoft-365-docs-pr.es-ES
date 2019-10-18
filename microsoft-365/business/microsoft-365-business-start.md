@@ -10,22 +10,27 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Aprenda a configurar Microsoft 365 Business.
-ms.openlocfilehash: 52e3167986bb7ed835762540e8076a3b9b2a0b56
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: ed302a79d125ffc9c6203d902f437749a5b0f8d4
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287643"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575906"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Introducción a Microsoft 365 Business
 
-## <a name="what-is-microsoft-365-business"></a>Qué es Microsoft 365 Business
+## <a name="what-is-microsoft-365-business"></a>Qué es Microsoft 365 empresa
 
 Microsoft 365 Business es un conjunto completo de herramientas de productividad y colaboración empresarial, como Outlook, Word, Excel y otros productos de Office que siempre están actualizados. Puede proteger sus archivos de trabajo en todos los dispositivos iOS, Android y Windows 10 con seguridad de nivel empresarial que es fácil de administrar.
   
@@ -37,7 +42,7 @@ Microsoft 365 empresa está destinada a un máximo de 300 licencias, si necesita
     
 - Si no tiene un partner y quiere obtener Microsoft 365 Business, puede [comprarlo aquí](https://www.microsoft.com/en-us/microsoft-365/business).
     
-## <a name="set-up-microsoft-365-business"></a>Configurar Microsoft 365 Business
+## <a name="set-up-microsoft-365-business"></a>Configurar Microsoft 365 Empresa
 
  **Información general sobre la configuración de Microsoft 365 Business Suite**
   

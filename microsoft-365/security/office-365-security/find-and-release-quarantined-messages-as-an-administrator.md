@@ -14,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC).
-ms.openlocfilehash: 80bc774d53b82ecd9295ed40f6c8254c7047a2e0
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 8f127dd1e7c14bbf2ae1d3bf23e611ef5c3ac1dc
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441137"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37576038"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Buscar y liberar mensajes en cuarentena como un administrador
 
 En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC). Office 365 dirige los mensajes a la cuarentena ya sea porque se identificaron como correo no deseado o coincidieron con una regla de flujo de correo (también denominada regla de transporte).
 
-Use el centro &amp; de seguridad y cumplimiento en lugar del EAC para completar cualquiera de estas tareas, así como para ver y trabajar con mensajes que se enviaron a cuarentena porque contienen malware. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Puede usar el centro de seguridad & cumplimiento en lugar del EAC para completar estas tareas también; el portal de cuarentena del centro de administración de Exchange (EAC) se establece en decommisioned.  Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
 
 Los mensajes en cuarentena figuran en la página **cuarentena** de EAC. De forma predeterminada, aparecen ordenados del más reciente al más antiguo en el campo **RECIBIDOS**. También se muestran los valores de **REMITENTE**, **ASUNTO** y **EXPIRA** de cada mensaje. Puede ordenar por cualquiera de estos campos haciendo clic en sus encabezados. Si hace clic en un encabezado de columna por segunda vez, se invertirá el orden. La página **cuarentena** puede mostrar como máximo 500 mensajes.
 
@@ -37,7 +37,7 @@ Puede ver una lista de todos los mensajes en cuarentena o puede buscar mensajes 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Deberá tener asignados permisos antes de poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "cuarentena" en el tema [permisos de características de Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+- Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte el entrada "cuarentena" en el tema [permisos de características de Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
 - Puede liberar o informar sobre varios mensajes a la vez en la página **cuarentena**. De forma alternativa, puede crear un script de Windows PowerShell remoto para realizar esta tarea. Use el cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para buscar los mensajes y el cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberarlos.
 
@@ -67,7 +67,7 @@ En el centro de administración de Exchange (EAC), puede filtrar elementos en cu
    6. **Expires**: puede seleccionar que el mensaje se eliminará de la cuarentena en las próximas 24 horas ( **hoy**), en las próximas 48 horas ( **próximos 2 días**), en la próxima semana ( **próximos 7 días**), o puede seleccionar un intervalo de tiempo personalizado durante que se eliminará el mensaje de la cuarentena.
 
       > [!IMPORTANT]
-      > De forma predeterminada, los mensajes en cuarentena de correo no deseado se mantienen en cuarentena durante 15 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Finalizado este tiempo, Office 365 elimina estos mensajes y ya no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, es posible reducir el período de retención de los mensajes de correo no deseado en cuarentena mediante la configuración **Mantener el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
+      > De forma predeterminada, los mensajes en cuarentena de correo no deseado se mantienen en cuarentena durante 30 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante un máximo de 30 días en función del período de retención establecido en la Directiva de filtro de contenido predeterminada. Finalizado este tiempo, Office 365 elimina estos mensajes y ya no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, es posible reducir el período de retención de los mensajes de correo no deseado en cuarentena mediante la configuración **Mantener el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
 
    7. **Tipo** Puede especificar si desea buscar mensajes en cuarentena que se hayan identificado como **correo no deseado**o si desea buscar los mensajes que coinciden con una regla de flujo de correo (**regla de transporte**).
 

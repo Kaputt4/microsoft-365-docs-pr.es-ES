@@ -8,18 +8,23 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Aprenda a administrar las tareas de administración relacionadas con el negocio de Microsoft 365, dispositivos móviles, Windows 10PCs y muchas de estas tareas.
-ms.openlocfilehash: 87ba4093a37c708fe405cd0876a53f8b9ae91567
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 1e39adad50688686ef1d03ef7ed51534e067e6b3
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287982"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575966"
 ---
 # <a name="manage-microsoft-365-business"></a>Administrar Microsoft 365 Business
 
@@ -89,7 +94,7 @@ En los temas siguientes, se describe cómo usar Windows AutoPilot en Microsoft 3
     
 - [Configurar Microsoft 365 Business mediante el asistente para configuración](set-up.md)
     
-- [Migrar a Microsoft 365 Business](migrate-to-microsoft-365-business.md)
+- [Migrar a Microsoft 365 Empresa](migrate-to-microsoft-365-business.md)
     
 - [Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 Business](manage-windows-devices.md)
     
