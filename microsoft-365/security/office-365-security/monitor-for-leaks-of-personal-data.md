@@ -87,9 +87,9 @@ Más información sobre las directivas de alerta y buscar en el registro de audi
 
 -   [Activar o desactivar la búsqueda de registros de auditoría de Office 365](https://support.office.com/es-ES/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Buscar en el registro de auditoría](https://support.office.com/es-ES/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [Buscar en el registro de auditoría](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/es-ES//library/mt238501(v=exchg.160).aspx) (cmdlet) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
 
 -   [Propiedades detalladas del registro de auditoría de Office 365](https://support.office.com/es-ES/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
