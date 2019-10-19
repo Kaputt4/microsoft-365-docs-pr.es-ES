@@ -17,7 +17,7 @@
 ## Clave del cliente
 ### [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md)
 ### [Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365](service-encryption-with-customer-key-faq.md)
-## [Supervisión]()
+## [Supervisar las comunicaciones]()
 ### [Infórmese de las directivas de supervisión](supervision-policies.md)
 ### [Configurar directivas de supervisión para su organización](configure-supervision-policies.md)
 ## [Barreras de información](information-barriers.md)
@@ -124,6 +124,7 @@
 ### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
 ## Administración de registros
 ### [Administración de registros](records-management.md)
+### [Registros](records.md)
 ### Plan de archivos
 #### [Administrador del plan de archivos](file-plan-manager.md)
 #### [Etiquetas de retención](labels.md)
@@ -349,7 +350,7 @@
 ## [Administrar la auditoría de buzones de correo](enable-mailbox-auditing.md)
 ## [Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
 ## [Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
-## [Usar el registro de auditoría para solucionar escenarios comunes](auditing-troubleshooting-scenarios.md)
+## [Usar el registro de auditoría para investigar problemas comunes](auditing-troubleshooting-scenarios.md)
 ## [Usar el uso compartido de auditoría en el registro de auditoría](use-sharing-auditing.md)
 ## [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md)
 
