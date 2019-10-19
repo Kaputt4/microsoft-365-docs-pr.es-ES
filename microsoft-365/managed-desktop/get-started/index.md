@@ -1,23 +1,21 @@
 ---
-title: Introducción al escritorio administrado por Microsoft
+title: Introducción al Escritorio administrado de Microsoft
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: a79b71a836444ff745e2e9c64fce023db81c1d17
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390507"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595586"
 ---
-# <a name="get-started-with-microsoft-managed-desktop"></a>Introducción al escritorio administrado por Microsoft
+# <a name="get-started-with-microsoft-managed-desktop"></a>Introducción al Escritorio administrado de Microsoft
 
-Con el escritorio administrado de Microsoft, la administración de los dispositivos de escritorio pasa a ser una infraestructura de la nube de empresa. 
+Una vez que esté listo para inscribirse en el servicio, en esta sección se incluyen los pasos que debe seguir para unirse al servicio, obtener y configurar dispositivos, preparar a los usuarios finales e implementar aplicaciones.
 
-## <a name="in-this-section"></a>En esta sección
-
-- [Agregar contactos de administrador](add-admin-contacts.md)
-- [Dispositivos de pedido](devices.md)
+- [Agregar contactos de administrador en el portal de administración de escritorio administrado de Microsoft](add-admin-contacts.md)
+- [Configurar dispositivos de escritorio administrados por Microsoft](set-up-devices.md)
+- [Implementar aplicaciones en dispositivos de escritorio administrados por Microsoft](deploy-apps.md)

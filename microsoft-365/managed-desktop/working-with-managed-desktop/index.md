@@ -1,25 +1,22 @@
 ---
-title: Trabajar con Microsoft Managed Desktop
+title: Trabajar con el Escritorio administrado de Microsoft
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ec402077eb20cfa39192e099de2d35e4e79399e
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 2ee1b38497819f547b0dcf91ecd88249d0d2d704
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390377"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595416"
 ---
-# <a name="working-with-microsoft-managed-desktop"></a>Trabajar con Microsoft Managed Desktop
+# <a name="working-with-microsoft-managed-desktop"></a>Trabajar con el Escritorio administrado de Microsoft
 
-Después de trabajar con su equipo de la cuenta de Microsoft para incorporarse al escritorio administrado por Microsoft, puede usar el [portal de administración](https://aka.ms/mmdportal) para administrar su entorno. 
+En esta sección se incluye información sobre su vida diaria con el servicio, como la forma en que los administradores de TI pueden obtener soporte técnico si es necesario, el modo en que los usuarios finales reciben soporte técnico, administran las aplicaciones una vez que se han implementado y cómo trabajar con la configuración personalizable en los dispositivos.
 
-## <a name="in-this-section"></a>En esta sección
-
-- [Soporte técnico para el usuario final de Microsoft Managed Desktop](end-user-support.md)
 - [Soporte de administración para escritorio administrado de Microsoft](admin-support.md)
-- [Administrar aplicaciones en el escritorio administrado por Microsoft](manage-apps.md)
+- [Obtener ayuda para usuarios finales](end-user-support.md)
+- [Opciones configurables-escritorio administrado por Microsoft](config-setting-overview.md)

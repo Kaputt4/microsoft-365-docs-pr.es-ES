@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982021"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590504"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -42,12 +42,12 @@ Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las
 |Nivel de protección|Directivas|Más información|
 |:---------------|:-------|:----------------|
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
-|        |[Bloquear clientes que no admitan la autenticación moderna](#block-clients-that-dont-support-modern-authentication)|Los clientes que no usan la autenticación moderna pueden omitir las reglas de acceso condicional, por lo que es importante bloquear estos|
+|        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-modern-authentication)|Los clientes que no usan la autenticación moderna pueden omitir las reglas de acceso condicional, por lo que es importante bloquear estos|
 |        |[Los usuarios de riesgo alto deben cambiar la contraseña](#high-risk-users-must-change-password)|Obliga a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta|
 |        |[Definir directivas de protección de aplicaciones](#define-app-protection-policies)|Una directiva por plataforma (iOS, Android, Windows).|
 |        |[Requerir aplicaciones aprobadas](#require-approved-apps)|Fuerza la protección de aplicaciones móviles para teléfonos y tabletas|
 |        |[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma|
-|        |[Requerir equipos compatibles](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Fuerza la administración de los equipos de Intune|
+|        |[Exigir equipos PC compatibles](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Fuerza la administración de los equipos de Intune|
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Requerir equipos *y* dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Fuerza la administración de Intune para los PC y el teléfono/tabletas|
 |**Extremadamente regulado**|[Requerir *siempre* MFA](#require-mfa-based-on-sign-in-risk)|
@@ -122,7 +122,7 @@ Aplique la configuración en función del nivel de protección de destino.
 
 
 
-## <a name="block-clients-that-dont-support-modern-authentication"></a>Bloquear clientes que no admitan la autenticación moderna
+## <a name="block-clients-that-dont-support-modern-authentication"></a>Bloquear a los clientes que no sean compatibles con la autenticación moderna
 1. Vaya al [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales. Una vez que haya iniciado sesión correctamente, verá el panel de Azure.
 
 2. En el menú de la izquierda, seleccione **Azure Active Directory**.
@@ -176,8 +176,8 @@ Inicie sesión en [Microsoft Azure Portal (http://portal.azure.com)](http://port
 
 | Tipo | Propiedades | Valores                  | Notas |
 |:-----|:-----------|:------------------------|:------|
-|      | Acceder     | Permitir acceso            | True  |
-|      | Acceder     | Exigir cambio de contraseña | True  |
+|      | Access     | Permitir acceso            | True  |
+|      | Access     | Exigir cambio de contraseña | True  |
 
 **Revisión:** no aplicable
 
@@ -192,7 +192,7 @@ Cree una directiva para cada plataforma:
 - Android
 - Windows 10
 
-Para crear una nueva Directiva de protección de aplicaciones, inicie sesión en el portal de Microsoft Azure con sus credenciales de administración y, a continuación, vaya a **aplicaciones móviles > las directivas de protección de aplicaciones**. Elija **Agregar una directiva**.
+Para crear una nueva Directiva de protección de aplicaciones, inicie sesión en el portal de Microsoft Azure con sus credenciales de administrador y, a continuación, navegue a > **directivas de protección**de aplicaciones de **aplicaciones cliente**. Elija **crear Directiva**.
 
 Hay ligeras diferencias en las opciones de directiva de protección de aplicaciones entre iOS y Android. La siguiente directiva es específicamente para Android. Use esto como guía para sus otras directivas.
 
@@ -225,13 +225,13 @@ En las siguientes tablas se describe la configuración recomendada:
 |Acceso|Requerir PIN para acceder|Sí||
 ||Tipo de selección|Numérico||
 ||Permitir PIN sencillo|No||
-||Longitud del PIN|6 ||
+||Longitud del PIN|6,5||
 ||Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN|Sí||
 ||Deshabilitar PIN de la aplicación cuando el PIN del dispositivo esté administrado|Sí||
 ||Requerir credenciales corporativas para el acceso|No||
 ||Volver a comprobar los requisitos de acceso después de (minutos)|semestre||
 ||Bloquear captura de pantalla y asistente de Android|No|En iOS esta opción no está disponible|
-|Requisitos de seguridad de inicio de sesión|Número máximo de intentos de PIN|5 |Restablecer PIN|
+|Requisitos de seguridad de inicio de sesión|Número máximo de intentos de PIN|2,5|Restablecer PIN|
 ||Período de gracia sin conexión|720|Bloquear acceso|
 ||Intervalo sin conexión (días) antes de que se borren los datos de la aplicación|90|Borrar datos|
 ||Dispositivos con jailbreak o Rooting| |Borrar datos|
@@ -265,7 +265,7 @@ Para requerir aplicaciones aprobadas:
 
 11. Elija **conceder acceso**y seleccione **requerir aplicación cliente aprobada**. Para varios controles, seleccione **requerir los controles seleccionados**y, a continuación, elija **seleccionar**. 
 
-12. Elija **Crear**.
+12. Seleccione **Crear**.
 
 ## <a name="define-device-compliance-policies"></a>Definir directivas de cumplimiento de dispositivos
 
@@ -305,13 +305,13 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
+|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
 ||Contraseñas sencillas|Desbloquear||
 ||Tipo de contraseña|Valor predeterminado del dispositivo||
-||Longitud mínima de la contraseña|6 ||
-||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores|
+||Longitud mínima de la contraseña|6,5||
+||Minutos máximos de inactividad antes de que se requiera la contraseña|15|Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores|
 ||Expiración de contraseña (días)|41||
-||Número de contraseñas anteriores para impedir la reutilización|5 ||
+||Número de contraseñas anteriores para impedir la reutilización|2,5||
 ||Requerir contraseña cuando el dispositivo vuelve del estado de inactividad (móvil y holográfica)|Obligatoria|Disponible para Windows 10 y versiones posteriores|
 |Cifrado|Cifrado del almacenamiento de datos en el dispositivo|Obligatoria||
 |Seguridad del dispositivo|Éste|Obligatoria||
@@ -326,7 +326,7 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano||
+|Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Medio||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)
 Antes de agregar una directiva para requerir equipos compatibles, asegúrese de inscribir los dispositivos para la administración en Intune. Se recomienda usar la autenticación multifactor antes de inscribir los dispositivos en Intune para asegurarse de que el dispositivo está en la posesión del usuario deseado. 
@@ -353,7 +353,7 @@ Para requerir equipos compatibles:
 
 10. Elija **conceder acceso**, seleccione requerir que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**y, a continuación, elija **seleccionar**. 
 
-11. Elija **Crear**.
+11. Seleccione **Crear**.
 
 Si su objetivo es requerir equipos *y* dispositivos móviles compatibles, no seleccione plataformas. Esto exige el cumplimiento para todos los dispositivos. 
 
@@ -379,11 +379,11 @@ Para requerir el cumplimiento de todos los dispositivos:
 
 9. Elija **conceder acceso**, seleccione requerir que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**y, a continuación, elija **seleccionar**. 
 
-10. Elija **Crear**.
+10. Seleccione **Crear**.
 
 Al crear esta Directiva, no seleccione plataformas. Esto aplica los dispositivos compatibles.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Más información sobre recomendaciones de directivas para proteger el correo electrónico](secure-email-recommended-policies.md)

@@ -5,16 +5,15 @@ metadata:
   title: Documentación de escritorio administrada de Microsoft
   description: null
   keywords: 'dispositivo, aplicación, administración'
-  author: trudyha
-  ms.author: trudyha
-  ms.date: 11/1/2018
+  author: jaimeo
+  ms.author: jaimeo
   ms.topic: landing-page
   ms.devlang: na
   ms.service: m365-md
 sections:
   - items:
       - type: markdown
-        text: La forma más sencilla de alegríar a los usuarios y liberarlos.
+        text: 'Microsoft Managed Desktop combina Microsoft 365 Enterprise, la administración de dispositivos basada en la nube de Microsoft y la supervisión de seguridad, lo que permite liberar a sus equipos de TI para centrarse en las necesidades principales de la empresa.'
   - items:
       - type: list
         style: cards
@@ -22,30 +21,30 @@ sections:
         columns: 2
         items:
           - href: intro/index.md
-            html: <p>Obtenga información acerca de qué es Microsoft manAged Desktop y cómo funciona.</p>
+            html: '<p>Introducción al escritorio administrado por Microsoft para los responsables de la toma de decisiones: Qué es, cómo funciona y qué puede hacer por usted</p>'
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
             title: ¿Qué es el escritorio administrado por Microsoft?
           - href: service-description/index.md
-            html: <p>Obtenga información sobre lo que se incluye en el escritorio administrado por Microsoft.</p>
+            html: <p>Descripción detallada de todas las partes del escritorio administrado por Microsoft</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
             title: Descripción del servicio
           - href: get-ready/index.md
-            html: <p>Obtenga información sobre cómo prepararse para inscribirse en el escritorio administrado por Microsoft.</p>
+            html: <p>Todos los pasos para conseguir que su entorno y su organización estén preparados para trabajar con el servicio</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
-            title: Prepararse
+            title: Preparación
           - href: get-started/index.md
-            html: <p>Obtenga información sobre cómo ordenar dispositivos y agregar contactos.</p>
+            html: '<p>Obtener una organización a bordo con escritorio administrado por Microsoft, incluida la configuración de dispositivos y la implementación de aplicaciones</p>'
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
             title: Introducción
           - href: working-with-managed-desktop/index.md
-            html: <p>Obtenga información sobre la administración de aplicaciones.</p>
+            html: <p>Sobre las operaciones diarias con el servicio</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
-            title: Trabajar con Microsoft manAged Desktop
+            title: Trabajar con el Escritorio administrado de Microsoft
   - title: Nuevos artículos y publicaciones de blog
     items:
       - type: paragraph

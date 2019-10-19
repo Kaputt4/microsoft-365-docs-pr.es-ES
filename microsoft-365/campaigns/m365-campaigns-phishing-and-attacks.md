@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365 para las campañas.
-ms.openlocfilehash: 4902a2273eef110ced9ae16c3b91f39ac990a736
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 66708fe214815640baf08adace292dee683e382b
+ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772487"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37593865"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protéjase contra el phishing y otros ataques
 
@@ -34,7 +34,7 @@ Microsoft 365 incluye muchas protecciones para protegerse contra ataques, pero h
 
 - **Correo no deseado o correo no deseado** Hay muchas razones por las que puede recibir correo no deseado y no todos los mensajes de correo no deseado son los mismos. Sin embargo, puede reducir lo que pasa a usted y, de este modo, reducir los riesgos de los ataques al filtrar el correo no deseado.
 - **Phishing** Una estafa de suplantación de identidad (phishing) es un correo electrónico que parece legítimo pero que se ha intentado obtener información personal o robar el dinero.
-- Suplantación de **identidad** Los estafadores también pueden usar una técnica denominada suplantación de identidad para que parezca que ha recibido un correo electrónico de su cuenta. 
+- **Suplantación de identidad** Los estafadores también pueden usar una técnica denominada suplantación de identidad para que parezca que ha recibido un correo electrónico de su cuenta. 
 - El **malware** es software malintencionado que puede instalarse en el equipo, que normalmente se instala después de hacer clic en un vínculo o abrir un documento desde un correo electrónico. Hay varios tipos de malware (por ejemplo, ransomware, cuando se toma el equipo), pero no desea tener ninguno de ellos. 
 
 
@@ -47,7 +47,7 @@ Siga estas [10 sugerencias sobre cómo ayudar a reducir el correo no deseado](ht
 **Informe.**
 
 Informe de los correos electrónicos de suplantación de identidad o de otro usuario que reciba. Seleccione el mensaje y elija **Informe de mensaje** en la cinta de opciones.
-Aquí encontrará más información sobre cómo [crear informes de correo no deseado y](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)de suplantación de identidad.
+Aquí encontrará más información sobre cómo [crear informes de correo no deseado y de suplantación de identidad](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 **Evitar el phishing**
 - Nunca responda a un correo electrónico que le pida que envíe información personal o de la cuenta.
@@ -56,7 +56,7 @@ Aquí encontrará más información sobre cómo [crear informes de correo no des
 - Si el correo electrónico parece provenir de una compañía, póngase en contacto con el servicio de atención al cliente de la compañía a través del teléfono o el explorador Web para ver si el correo electrónico es legítimo.
 - Busque en la web la línea de asunto del correo electrónico seguida de la palabra "Bulo" para ver si alguien más ha informado de este fraude.
 
-Obtenga información sobre cinco tipos comunes de estafas en relación [con el abuso, suplantación de identidad (phishing) o](https://support.office.com/en-us/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3)suplantación.
+Obtenga información sobre cinco tipos comunes de estafas en relación [con el abuso, suplantación de identidad (phishing) o suplantación](https://support.office.com/en-us/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
 
 **Asegurarse de que los mensajes de correo electrónico son legítimos para otros**
 
@@ -66,7 +66,7 @@ Ayude a sus clientes a confiar en sus comunicaciones agregando una firma digital
 
 Descargue este infografía con sugerencias para usted y los miembros de su equipo de campaña:
 
-[! El gráfico Ayude a proteger la información de la campaña](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)] (descargas/M365CampaignsWhatCanUsersDoToSecure. pdf)
+[![El gráfico Ayude a proteger la información de la campaña](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | de[PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
