@@ -3,7 +3,7 @@ title: Procedimientos recomendados de configuración para EOP y Office 365 la se
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Qué se recomienda? ¿Qué se debe usar de forma agresiva? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: fb6a39756c54e46f5ac8208c9c92af30bc144a57
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: b40b4189ed996e1b2f671b77602630f2a98966a5
+ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37387162"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598304"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp-security"></a>Procedimientos recomendados para configurar EOP y la seguridad de ATP de Office 365
 
@@ -32,14 +32,14 @@ Analizaremos dos niveles de seguridad, denominados recomendadas y agresivos en E
 
 SPF, DKIM y DMARC son acrónimos para el marco de directivas de remitente, correo identificado por DomainKeys y autenticación de mensajes basada en dominio, informes y cumplimiento (bastante mouthful), y son la base de la autenticación y validación de correo electrónico.
 
-Estos métodos administran el correo electrónico saliente desde Office 365 y ayudan a los sistemas de destino a confiar en que el correo electrónico de su dominio es válido. Son los únicos procedimientos recomendados que conllevan la configuración que se va a realizar *fuera* de Office 365, en su DNS. Para conocer los pasos de configuración específicos, consulte la sección de [validación y autenticación de correo electrónico](https://docs.microsoft.com/en-us/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing) en la tabla de contenido seguridad y cumplimiento.
+Estos métodos administran el correo electrónico saliente desde Office 365 y ayudan a los sistemas de destino a confiar en que el correo electrónico de su dominio es válido. Son los únicos procedimientos recomendados que conllevan la configuración que se va a realizar *fuera* de Office 365, en su DNS. Para conocer los pasos de configuración específicos, consulte la sección de [validación y autenticación de correo electrónico](https://docs.microsoft.com/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing) en la tabla de contenido seguridad y cumplimiento.
 
 
-|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comment  |
+|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comentario  |
 |---------|---------|---------|---------|
-|[Crear registros de SPF](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | v        |    v     |   -      |
-|[Configurar la firma DKIM para los dominios](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  v       |    v     |  -       |
-|[Implementar DMARC con la acción de rechazar o poner en cuarentena](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   v      |     v    |   Use Action = None para la opción recomendada y Action = Reject para agresivo.     |
+|[Crear registros de SPF](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Sí        |    Sí     |   -      |
+|[Configurar la firma DKIM para los dominios](https://docs.microsoft.com/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Sí       |    Sí     |  -       |
+|[Implementar DMARC con la acción de rechazar o poner en cuarentena](https://docs.microsoft.com/office365/securitycompliance/use-dmarc-to-validate-email)     |   Sí      |     Sí    |   Use Action = None para la opción recomendada y Action = Reject para agresivo.     |
 
 > [!IMPORTANT]
 > Para trabajar con roles de seguridad y permisos, asegúrese de que tiene el rol o los roles correctos en Office 365 o en el centro de seguridad y cumplimiento. Si es un *Administrador de seguridad* de Azure Active Directory, un *Administrador Global* de Office 365 o un administrador de la *organización de Exchange Online* en Exchange Online y Exchange Online PowerShell, ya está listo para continuar.
@@ -54,15 +54,15 @@ De forma predeterminada, los filtros de phising están en Office 365, pero deben
 
 ### <a name="anti-spam"></a>Contra correo electrónico no deseado
 
-|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comment  |
+|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comentario  |
 |---------|---------|---------|---------|
-|Período de retención de cuarentena    |   v      |     v    |   30 días   |
-|Frecuencia de notificación de correo no deseado del usuario final   |   v      |     v    |   3 días   |
-|Se debe habilitar la depuración de cero por horas   |   v      |     v    |   True  |
-|La acción de detección de correo no deseado debería enviarse a | JMF | Cuarentena | - |
-|La acción de detección de correo no deseado de confianza alta debería enviarse a | Cuarentena | Cuarentena| - |
-|La acción de detección en masa debe establecerse en | JMF | Cuarentena | - |
-|Establecer el umbral de correo electrónico masivo en | 6  | 4  | - |
+|Período de retención de cuarentena    |   Sí      |     Sí    |   30 días   |
+|Frecuencia de notificación de correo no deseado del usuario final   |   Sí      |     Sí    |   3 días   |
+|Se debe habilitar la depuración de cero por horas   |   Sí      |     Sí    |   True  |
+|La acción de detección de correo no deseado debería enviarse a | JMF | Quarantine | - |
+|La acción de detección de correo no deseado de confianza alta debería enviarse a | Quarantine | Quarantine| - |
+|La acción de detección en masa debe establecerse en | JMF | Quarantine | - |
+|Establecer el umbral de correo electrónico masivo en | 6,5 | 4 | - |
 |Las sugerencias de seguridad deben estar habilitadas| True | True | - |
 |Habilitar notificación de correo no deseado para el usuario final| True | False | - |
 |Remitentes permitidos | Ninguno | Ninguno | - |
@@ -99,7 +99,7 @@ Recomendado para **en** los niveles recomendado y agresivo:
 
 ### <a name="anti-malware"></a>Anti-malware
 
-|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comment  |
+|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comentario  |
 |---------|---------|---------|---------|
 |Configuración de notificaciones de malware para orígenes internos |Sí |Sí |- |
 |Deshabilitar la notificación a los remitentes externos de detección de malware |Sí |Sí |- |
@@ -109,7 +109,7 @@ Recomendado para **en** los niveles recomendado y agresivo:
 
 ### <a name="anti-phishing"></a>Contra la suplantación de identidad
 
-|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comment  |
+|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comentario  |
 |---------|---------|---------|---------|
 |Se debe habilitar la depuración de cero por horas-phish| True | True | - | 
 |La acción de detección de phish debe establecerse en | Quarantine-request | Quarantine-admin | - |
@@ -118,11 +118,11 @@ Recomendado para **en** los niveles recomendado y agresivo:
 |EnableSimilarUsersSafetyTips | True | True | - |
 |EnableSimilarDomainsSafetyTips | True | True | - |
 |EnableUnusualCharactersSafetyTips | True | True | - |
-|TargetedUserProtectionAction |Noacción |Desbloquear | - |
-|MailboxIntelligenceProtectionAction |Noacción |Desbloquear | - |
-|TargetedDomainProtectionAction |Noacción |Desbloquear | - |
-|AuthenticationFailAction |MoveToJmf |Cuarentena | - |
-|AntiSpoofEnforcementType |Alto |Alto | - |
+|TargetedUserProtectionAction |NoAction |Desbloquear | - |
+|MailboxIntelligenceProtectionAction |NoAction |Desbloquear | - |
+|TargetedDomainProtectionAction |NoAction |Desbloquear | - |
+|AuthenticationFailAction |MoveToJmf |Quarantine | - |
+|AntiSpoofEnforcementType |Alta |Alta | - |
 |EnableAuthenticationSafetyTip |False |True | - |
 |EnableAntiSpoofEnforcement |True |True | - |
 |EnableUnauthenticatedSender |True |True | - |
@@ -135,7 +135,7 @@ Recomendado para **en** los niveles recomendado y agresivo:
 Anteriormente, dije que se animaron a las suscripciones E3 agregar un plan 1 de ATP de Office 365 o el plan 2 más completo. La protección avanzada contra suplantación de identidad es una de las razones. Habilitado de forma predeterminada, la protección contra el phishing ***debe*** configurarse con directivas para operar. Olvidarse de configurar las directivas antiphishing expone a los usuarios a los riesgos, asegúrese de que se trata del paso 2 después de agregar una suscripción a ATP.
 
 > [!IMPORTANT]
->  Si tiene una suscripción a E5, actualmente tiene el [plan 2 de ATP](https://products.office.com/en-us/exchange/advance-threat-protection). Active este vínculo cuando quiera obtener información sobre las novedades [de ATP](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff).
+>  Si tiene una suscripción a E5, actualmente tiene el [plan 2 de ATP](https://products.office.com/exchange/advance-threat-protection). Active este vínculo cuando quiera obtener información sobre las novedades [de ATP](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff).
 
 ### <a name="advanced-anti-phishing"></a>Protección contra suplantación de identidad avanzada
 
@@ -147,13 +147,13 @@ La suplantación de identidad (phishing) intenta hacerse pasar por una empresa o
 
 Si ha agregado una suscripción de ATP de Office 365 a su EOP, asegúrese de establecer las siguientes configuraciones.
 
-|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comment  |
+|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comentario  |
 |---------|---------|---------|---------|
-|Establecer el umbral de suplantación de identidad avanzado en | 2  | 4  | - |
+|Establecer el umbral de suplantación de identidad avanzado en | segundo | 4 | - |
 |Habilitar la protección contra la suplantación | Sí | Sí | - |
 |Habilitar la inteligencia de buzones en las directivas de anti-suplantación | Sí | Sí | - |
 |Habilitar la protección de suplantación basada en la inteligencia de buzones | Sí | Sí | - |
-|La acción de suplantación de dominio debe ser | JMF | Cuarentena | - |
+|La acción de suplantación de dominio debe ser | JMF | Quarantine | - |
 |La acción de suplantación del usuario debe ser | JMF | Qurantine | - |
 |La acción de protección de suplantación basada en buzones de correo debe ser |Sugerencia  |JMF | - |
 
@@ -163,7 +163,7 @@ Si ha agregado una suscripción de ATP de Office 365 a su EOP, asegúrese de est
 
 #### <a name="safe-links"></a>Vínculos seguros
 
-|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comment  |
+|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comentario  |
 |---------|---------|---------|---------|
 |Los vínculos seguros de ATP deben realizar un seguimiento de los clics del usuario con fines de respuesta |Sí |Sí |- |
 |Los vínculos seguros ATP deben estar habilitados para las aplicaciones de Office |Sí |Sí |- |
@@ -176,9 +176,9 @@ Si ha agregado una suscripción de ATP de Office 365 a su EOP, asegúrese de est
 
 #### <a name="safe-attachments"></a>Datos adjuntos seguros
 
-|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comment  |
+|Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comentario  |
 |---------|---------|---------|---------|
-|La acción de directiva de datos adjuntos seguros ATP debería ser |Cuarentena |Cuarentena |- |
+|La acción de directiva de datos adjuntos seguros ATP debería ser |Quarantine |Quarantine |- |
 |La protección ATP debe estar habilitada para OneDrive, SharePoint y Teams |Sí |Sí |- |
 <!--
 |Allowed file hashes | | | |
@@ -189,7 +189,7 @@ Si ha agregado una suscripción de ATP de Office 365 a su EOP, asegúrese de est
 
 Esta configuración cubre una serie de características que no se ajustan necesariamente a categorías específicas más arriba. También puede encontrar una configuración de 1-desactivado.
 
-Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comment  |
+Nombre de la característica de seguridad  |Recomendado |Agresiva  |Comentario  |
 |---------|---------|---------|---------|
 |Crear registros de SPF |Sí |Sí |- |
 |Configurar la firma DKIM para los dominios |Sí |Sí |- |
