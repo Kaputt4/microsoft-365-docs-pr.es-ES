@@ -1,25 +1,22 @@
 ---
-title: Trabajar con Microsoft Managed Desktop
+title: Trabajar con el Escritorio administrado de Microsoft
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ec402077eb20cfa39192e099de2d35e4e79399e
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 2ee1b38497819f547b0dcf91ecd88249d0d2d704
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390377"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595416"
 ---
-# <a name="working-with-microsoft-managed-desktop"></a><span data-ttu-id="07dcc-103">Trabajar con Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="07dcc-103">Working with Microsoft Managed Desktop</span></span>
+# <a name="working-with-microsoft-managed-desktop"></a><span data-ttu-id="e43e2-103">Trabajar con el Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="e43e2-103">Working with Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="07dcc-104">Después de trabajar con su equipo de la cuenta de Microsoft para incorporarse al escritorio administrado por Microsoft, puede usar el [portal de administración](https://aka.ms/mmdportal) para administrar su entorno.</span><span class="sxs-lookup"><span data-stu-id="07dcc-104">After working with your Microsoft Account team to onboard to Microsoft Managed Desktop, you can use the [Admin portal](https://aka.ms/mmdportal) to manage your environment.</span></span> 
+<span data-ttu-id="e43e2-104">En esta sección se incluye información sobre su vida diaria con el servicio, como la forma en que los administradores de TI pueden obtener soporte técnico si es necesario, el modo en que los usuarios finales reciben soporte técnico, administran las aplicaciones una vez que se han implementado y cómo trabajar con la configuración personalizable en los dispositivos.</span><span class="sxs-lookup"><span data-stu-id="e43e2-104">This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your end users get support, managing your apps once deployed, and how to work the customizable settings on devices.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="07dcc-105">En esta sección</span><span class="sxs-lookup"><span data-stu-id="07dcc-105">In this section</span></span>
-
-- [<span data-ttu-id="07dcc-106">Soporte técnico para el usuario final de Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="07dcc-106">End user support for Microsoft Managed Desktop</span></span>](end-user-support.md)
-- [<span data-ttu-id="07dcc-107">Soporte de administración para escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="07dcc-107">Admin support for Microsoft Managed Desktop</span></span>](admin-support.md)
-- [<span data-ttu-id="07dcc-108">Administrar aplicaciones en el escritorio administrado por Microsoft</span><span class="sxs-lookup"><span data-stu-id="07dcc-108">Manage apps in Microsoft Managed Desktop</span></span>](manage-apps.md)
+- [<span data-ttu-id="e43e2-105">Soporte de administración para escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="e43e2-105">Admin support for Microsoft Managed Desktop</span></span>](admin-support.md)
+- [<span data-ttu-id="e43e2-106">Obtener ayuda para usuarios finales</span><span class="sxs-lookup"><span data-stu-id="e43e2-106">Getting help for end users</span></span>](end-user-support.md)
+- [<span data-ttu-id="e43e2-107">Opciones configurables-escritorio administrado por Microsoft</span><span class="sxs-lookup"><span data-stu-id="e43e2-107">Configurable settings - Microsoft Managed Desktop</span></span>](config-setting-overview.md)
