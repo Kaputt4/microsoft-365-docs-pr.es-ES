@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso implementó un sitio de SharePoint para datos altamente regulados para una colaboración más sencilla entre sus equipos de investigación.'
-ms.openlocfilehash: bb3c178ee64d5925f82aef9887c06ceafe51f4ee
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 08676f9fa89d9cbf932f9d70664ad1d17a153e3b
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403237"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617258"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sitio de SharePoint para activos digitales altamente confidenciales de Contoso Corporation
 
@@ -96,12 +96,12 @@ El personal de seguridad de Contoso ha entrenado a los miembros del grupo **Rese
 
 El resultado final es un entorno seguro en el que los investigadores pueden colaborar a través de Contoso en un entorno seguro en archivos que contienen información de referencia. 
 
-Si un documento de investigación de la subetiqueta de **Teams de investigación** abandona el sitio de **investigación** , sólo se cifra y es accesible para los miembros de la oficina de **investigación** 365 grupos con credenciales de cuenta de usuario válidas.
+Si un documento de investigación de la subetiqueta **equipos de investigación** abandona el sitio de **investigación** , sólo se cifra y es accesible para los miembros del grupo de Office 365 **Research** con credenciales de cuenta de usuario válidas.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 [Implementar](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise en su organización.
 
 ## <a name="see-also"></a>Vea también
 
-[Biblioteca de productividad de Microsoft 365](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
+[Biblioteca de productividad de Microsoft 365](https://aka.ms/productivitylibrary)(https://aka.ms/productivitylibrary)
