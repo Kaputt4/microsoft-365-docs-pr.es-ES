@@ -3,7 +3,7 @@ title: Cambios en el contenido de implementación de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vea el nuevo contenido y los cambios en el contenido en la guía de implementación de Microsoft 365.
-ms.openlocfilehash: 67d0f51dd1f2602a21d199da1ed7ca6ba6e41c09
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: e872b0c289a002b4a0e0459a9ee19aa78b039b31
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453996"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617248"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Cambios en el contenido de implementación de Microsoft 365 Enterprise
 
 ## <a name="october-2019"></a>Octubre de 2019
 
 ### <a name="new-content"></a>Nuevo contenido 
+
+- [Teams para un escenario de datos altamente regulados ](secure-teams-highly-regulated-data-scenario.md)
+
+  [![Teams para un escenario de datos altamente regulados ](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
 
 - [Póster para aumentar la productividad de los trabajadores remotos](empower-people-to-work-remotely.md#poster)
 
@@ -34,7 +38,7 @@ ms.locfileid: "37453996"
 ### <a name="updates-and-enhancements"></a>Actualizaciones y mejoras
 
 - Actualización del [caso práctico de Contoso](contoso-case-study.md)
-- Actualización de la carga de trabajo de [Exchange Online](exchangeonline-workload.md)
+- Actualización de las cargas de trabajo de [Microsoft Teams](teams-workload.md), [Exchange Online](exchangeonline-workload.md) y [SharePoint Online](sharepoint-online-onedrive-workload.md)
 - Actualización de los [Sitios de SharePoint para un escenario de datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md)
  
   [![Los sitios de SharePoint para un escenario de datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)

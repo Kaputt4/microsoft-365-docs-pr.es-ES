@@ -2,7 +2,7 @@
 title: Cargas de trabajo y escenarios de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Incorpore a los usuarios de su organización a las cargas de trabajo de productividad de Microsoft 365 Enterprise.
-ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403249"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608601"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Cargas de trabajo y escenarios de Microsoft 365 Enterprise
 
@@ -38,7 +38,12 @@ Otra necesidad de este tipo de información es la protección de los datos altam
 - Datos sujetos a regulaciones regionales.
 - Los datos más importantes para su organización, como pueden ser secretos comerciales, información de recursos humanos o financiera y estrategias de la organización.
 
-Para proteger los datos ante amenazas internas y externas, vea [Sitios de Microsoft Teams y SharePoint para datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md). Este escenario le guiará en la configuración de un sitio de SharePoint o un equipo de Microsoft Teams para almacenar de forma segura sus datos más importantes.
+Para proteger estos datos de las amenazas internas y externas, vea:
+
+- [Teams para datos altamente regulados](secure-teams-highly-regulated-data-scenario.md)
+- [Sitios de SharePoint para datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md) 
+
+Estos escenarios le guiarán en la configuración de un sitio de SharePoint o un equipo de Microsoft Teams para almacenar de forma segura sus datos más importantes.
 
 En la ilustración siguiente se muestran las cargas de trabajo y escenarios de la guía de implementación general de Microsoft 365 Enterprise.
 
