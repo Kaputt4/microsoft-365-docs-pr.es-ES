@@ -1,9 +1,9 @@
 ---
-title: Usar DKIM para el correo electrónico en su dominio personalizado en Office 365
+title: Usar DKIM para el correo electrónico en su dominio personalizado en Office 365, 2048 bits, 1024 bits, pasos, cómo funciona, SPF, DMARC
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/27/2019, 10/8/2019
+ms.date: 10/8/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
-ms.openlocfilehash: bebbc355e6d16d5571733295ce0e48b91332f863
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 4d9228301a4cafd3728a349ad710496ba8f9d379
+ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37424236"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598294"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
