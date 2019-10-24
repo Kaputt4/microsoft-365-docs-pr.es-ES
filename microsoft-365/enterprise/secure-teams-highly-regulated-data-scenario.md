@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un equipo seguro para almacenar los archivos más importantes y confidenciales.
-ms.openlocfilehash: 5117d310ccd877a7377e6e538e7fba13daaad4ef
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617268"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628354"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams para datos altamente regulados 
 
@@ -40,9 +40,9 @@ Esta es la configuración resultante con una etiqueta de sensibilidad.
 
 ![Configuración segura del escenario de equipo](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
  
-## <a name="configuration"></a>Configuración
+## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Fase 1: Configure un equipo para datos altamente regulados
 
-La configuración descentralizada de un equipo seguro consta de los siguientes pasos:
+La configuración descentralizada consta de los siguientes pasos:
 
 1. Configure el acceso a dispositivos e identidades
 2. Cree un equipo privado
@@ -91,9 +91,9 @@ Esta es la configuración resultante hasta ahora.
 
 Desde el sitio de Equipo, configure estos ajustes de permisos.
 
-1. En la barra de herramientas, haga clic en el icono de configuración y, luego, en **Permisos del sitio**.
-2. En **Permisos del sitio**, haga clic en **Configuración de uso compartido** y después en **Cambiar configuración de uso compartido**.
-3. En **Permisos de uso compartido**, elija **Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio**.
+1. En la barra de herramientas, haga clic en el icono de configuración y luego en **Permisos del sitio**.
+2. En el panel **Permisos del sitio**, en **Configuración de uso compartido**, haga clic en **Cambiar configuración de uso compartido**.
+3. En **Permisos de uso compartido**, seleccione **Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio**.
 4. Desactive **Permitir solicitudes de acceso** y, después, haga clic en **Guardar**.
 
 Con estos ajustes de configuración, se deshabilita la posibilidad de que los miembros del grupo de Equipo compartan el sitio con otros miembros o que los usuarios que no son miembros soliciten el acceso al sitio de Equipo.
@@ -124,7 +124,7 @@ A diferencia de una etiqueta de confidencialidad para datos altamente regulados 
 
 Para lograr este nivel adicional de seguridad para los archivos almacenados en el sitio de Equipo, debe configurar una nueva etiqueta de confidencialidad que sea su propia etiqueta o una sub-etiqueta de la etiqueta general para archivos altamente regulados. Solo los miembros del grupo de Equipo la verán en su lista de etiquetas.
 
-Usar una etiqueta de confidencialidad cuando necesite representa un número reducido de etiquetas tanto para los equipos de uso global como para los individuales privados. Utilice una subetiqueta de confidencialidad cuando tenga un gran número de etiquetas o cuando desee organizar las etiquetas para equipos privados bajo su etiqueta altamente regulada.
+Usar una etiqueta de confidencialidad cuando necesite un número reducido de etiquetas tanto para los equipos de uso global como para los individuales privados. Utilice una subetiqueta de confidencialidad cuando tenga un gran número de etiquetas o cuando desee organizar las etiquetas para equipos privados bajo su etiqueta altamente regulada.
 
 [Siga estas instrucciones ](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) para configurar una etiqueta independiente o subetiqueta con la siguiente configuración:
 
@@ -145,27 +145,17 @@ Esta es la relación entre la etiqueta de confidencialidad y el grupo de Equipo.
 >Si configura la etiqueta o subetiqueta de confidencialidad para los permisos definidos por el usuario o con una fecha de expiración, no podrá abrir el archivo desde Teams o SharePoint Online. Debe usar una aplicación de Office.
 >
 
-## <a name="using-the-team-and-a-sensitivity-label"></a>Usar el equipo y una etiqueta de confidencialidad
-
-Los miembros del grupo de Equipo pueden obtener acceso al equipo y a todos sus recursos, incluidos chats, reuniones y otras aplicaciones. Al trabajar con archivos de la sección **Archivos** de un canal, los miembros del grupo de Equipo deben asignar la etiqueta o subetiqueta de confidencialidad a los archivos creados para el equipo seguro. He aquí un ejemplo.
-
-![Ejemplo de una etiqueta aplicada a un archivo de un equipo seguro](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
- 
-Cuando la etiqueta se aplica al archivo está protegido. Los miembros del grupo de Equipo pueden abrirlo en Teams y colaborar en tiempo real. Se cifra y se incluyen los permisos de coautoría establecidos para los miembros del grupo de Equipo. Si el archivo abandona el sitio y se reenvía a un usuario malintencionado, tendrá que proporcionar credenciales de una cuenta de usuario que sea miembro del grupo de Equipo para abrir el archivo y ver su contenido. 
-
-Puede ver qué archivos tienen una etiqueta asignada viendo una carpeta en SharePoint Online y añadiendo la columna **Confidencialidad** a través de la opción **Mostrar/ocultar columnas** que está en **Añadir columna**.
-
-## <a name="custom-permissions"></a>Permisos personalizados
+### <a name="custom-permissions"></a>Permisos personalizados
 
 También puede configurar permisos personalizados de sitio de SharePoint para el sitio de Equipo y, si es necesario, su etiqueta de confidencialidad correspondiente. Aquí se muestran dos ejemplos.
 
-### <a name="example-1-delegating-sharepoint-site-administration"></a>Ejemplo 1: Delegar la administración del sitio de SharePoint
+#### <a name="example-1-delegating-sharepoint-site-administration"></a>Ejemplo 1: Delegar la administración del sitio de SharePoint
 
 Si el propietario del equipo no tiene la experiencia de administración de SharePoint o desea delegar la administración del sitio de Equipo, puede agregar la cuenta de usuario de un administrador del servicio de SharePoint a la lista de los propietarios del equipo. Sin embargo, el administrador del servicio de SharePoint tendría acceso total al equipo y a todos sus recursos, y podrá abrir un archivo con la etiqueta de sensibilidad aplicada. 
 
 Para impedir que esto otorgue demasiados privilegios, agregue la cuenta de usuario del administrador del servicio de SharePoint al grupo de SharePoint Propietarios del sitio de Equipo en la configuración de permisos avanzados del sitio. El administrador del servicio de SharePoint puede administrar el sitio, pero no podrá tener acceso al equipo y a ninguno de sus recursos, ni abrir los archivos con la etiqueta de sensibilidad asignada.
 
-### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>Ejemplo 2: Permitir el acceso de solo lectura a archivos etiquetados
+#### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>Ejemplo 2: Permitir el acceso de solo lectura a archivos etiquetados
 
 Si el personal solo necesita ver el contenido de los archivos con etiquetas en el sitio de Equipo, agregue sus cuentas de usuario individuales al:
 
@@ -176,10 +166,50 @@ Estos son los permisos resultantes en la etiqueta.
 
 ![Ejemplo de permisos personalizados para ver archivos etiquetados](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
-Los visitantes del sitio podrán tener acceso al sitio de Equipo directamente y ver el contenido de los archivos que tienen la subetiqueta aplicada. Pero, como no son miembros del grupo de Equipo, no podrán tener acceso al equipo ni a ninguno de sus recursos.
+Los visitantes del sitio podrán tener acceso al sitio de Equipo directamente y ver el contenido de los archivos que tienen la subetiqueta aplicada. Pero como no son miembros del grupo de Equipo no tendrán acceso al equipo ni a ninguno de sus recursos.
+
+
+## <a name="phase-2-drive-user-adoption-for-team-members"></a>Fase 2: Fomentar que los miembros del equipo usen las funcionalidades
+
+Una vez que el equipo esté listo, es hora de impulsar la adopción de este equipo y la seguridad adicional para los miembros del equipo.
+
+### <a name="step-1-train-your-users"></a>Paso 1: Entrenar a los usuarios
+
+Los miembros del grupo de Equipo pueden acceder al equipo y a todos sus recursos, incluidos los chats, las reuniones y otras aplicaciones. Al trabajar con archivos de la sección **Archivos** de un canal, los miembros del grupo de Equipo deben asignar la etiqueta o subetiqueta de confidencialidad a los archivos creados para el equipo seguro. He aquí un ejemplo.
+
+![Ejemplo de una etiqueta aplicada a un archivo de un equipo seguro](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+ 
+Cuando la etiqueta se aplica al archivo está protegido. Los miembros del grupo de Equipo pueden abrirlo en Teams y colaborar en tiempo real. Se cifra y se incluyen los permisos de coautoría establecidos para los miembros del grupo de Equipo. Si el archivo abandona el sitio y se reenvía a un usuario malintencionado, el mismo tendrá que proporcionar credenciales de una cuenta de usuario que sea miembro del grupo de Equipo para abrir el archivo y ver su contenido. 
+
+Entrenar a los miembros del equipo:
+
+- Sobre la importancia de usar el nuevo equipo para los chats, las reuniones, los archivos y los demás recursos del sitio del equipo y las consecuencias de la filtración de datos altamente regulados, tales como las repercusiones legales, las multas, el ramsonware o la pérdida de ventaja frente a la competencia.
+- Cómo acceder al equipo.
+- Cómo crear archivos nuevos en el sitio o cargar archivos nuevos almacenados de forma local.
+- Cómo la directiva DLP les impide compartir archivos de forma externa.
+- Cómo etiquetar archivos con la etiqueta o la subetiqueta personalizada para el equipo.
+- Cómo la etiqueta o subetiqueta protege los archivos incluso cuando se filtran del sitio.
+
+Esta formación debería incluir ejercicios prácticos para que los miembros del equipo puedan experimentar con las funcionalidades y sus resultados.
+
+### <a name="step-2-conduct-periodic-reviews-of-usage-and-address-team-member-feedback"></a>Paso 2: Realice revisiones periódicas de uso y responda a los comentarios de los miembros del equipo
+
+En las semanas después de la formación haga lo siguiente:
+
+- Responda rápidamente a los comentarios de los miembros del equipo y ajuste las directivas y las configuraciones.
+- Analice el uso del equipo y compárelo con las expectativas de uso.
+- Compruebe que los archivos altamente regulados se hayan etiquetado de forma correcta con la etiqueta o subetiqueta de confidencialidad personalizada.
+
+  Puede ver qué archivos tienen una etiqueta asignada viendo una carpeta en SharePoint y añadiendo la columna **Confidencialidad** a través de la opción **Mostrar/ocultar columnas** que está en **Añadir columna**.
+
+Vuelva a entrenar a los usuarios cuando lo necesiten.
 
 ## <a name="see-also"></a>Vea también
 
-[Sitios de SharePoint para datos extremadamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md)
+[Sitios de SharePoint para datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md)
+
+[Cargas de trabajo y escenarios de Microsoft 365 Enterprise](deploy-workloads.md)
+
+[Biblioteca de productividad de Microsoft 365](https://aka.ms/productivitylibrary)(https://aka.ms/productivitylibrary)
 
 [Guía de implementación](deploy-microsoft-365-enterprise.md)

@@ -3,7 +3,7 @@ title: Sitios de SharePoint para datos altamente regulados
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un sitio de grupo de SharePoint seguro para almacenar los archivos más importantes y confidenciales.
-ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 7162ced48a64270713dc1eac6e73de053d24b2f4
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437830"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628344"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Sitios de SharePoint para datos altamente regulados
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise incluye una serie completa de servicios basados en la n
 - Los datos más importantes para su organización, como pueden ser secretos comerciales, información de recursos humanos o financiera y estrategias de la organización.
 
 >[!Note]
-> Un escenario parecido al uso de Microsoft Teams está en desarrollo.
+> Un escenario similar usando equipos de Microsoft Teams está [aqui](secure-teams-highly-regulated-data-scenario.md).
 >
 
 Un escenario basado en la nube de Microsoft 365 Enterprise que cumpla estas necesidades de negocio requiere que usted:
@@ -50,14 +50,14 @@ En la tabla siguiente se asignan los requisitos de este escenario a una caracter
 |:-------|:-----|
 | **Requisito** | **Característica de Microsoft 365 Enterprise** |
 | Almacenar archivos | Sitios de grupo de SharePoint |
-| Bloquear el sitio | Permisos de sitios de grupo de SharePoint y grupos de Azure Active Directory (Azure AD) |
+| Bloquear el sitio | Permisos para grupos de Office 365 y para el sitio de grupo de SharePoint |
 | Etiquetar los archivos del sitio | Etiquetas de retención de Office 365 |
 | Bloquear a los usuarios cuando envían archivos fuera de la organización | Directivas de prevención de pérdida de datos (DLP) en Office 365 |
-| Cifrar todos los archivos del sitio | Sub-etiquetas de confidencialidad de Office 365 |
-| Añadir permisos a los archivos del sitio | Sub-etiquetas de confidencialidad de Office 365 |
+| Cifrar todos los archivos del sitio | Etiquetas o sub-etiquetas de confidencialidad de Office 365 |
+| Añadir permisos a los archivos del sitio | Etiquetas o sub-etiquetas de confidencialidad de Office 365 |
 |||
 
-Esta es la configuración para un sitio seguro de SharePoint.
+Aquí tiene un ejemplo de configuración para un sitio de SharePoint seguro.
 
 ![Sitios de SharePoint para un escenario de datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
@@ -99,12 +99,11 @@ En los sitios de SharePoint, debe configurar una directiva DLP para la etiqueta 
 
 ### <a name="step-2-your-office-365-sensitivity-sublabel"></a>Paso 2: Su sub-etiqueta de confidencialidad de Office 365
 
-Para proporcionar el cifrado y un conjunto de permisos para los archivos más confidenciales, los usuarios deben aplicar una sub-etiqueta de confidencialidad de Office 365.
+Para proporcionar cifrado y un conjunto de permisos a los archivos más confidenciales, los usuarios deben aplicar una etiqueta o subetiqueta de confidencialidad de Office 365. Crear una sub-etiqueta bajo una etiqueta existente. 
 
-Crear una sub-etiqueta bajo una etiqueta existente. Por ejemplo, puede crear la sub-etiqueta Investigación y Desarrollo en la etiqueta Altamente Regulado. Para los sitios de SharePoint para datos altamente regulados, configure los permisos para que solo los miembros del sitio puedan abrir y cambiar el archivo al que está asociada la etiqueta.
+Use una etiqueta de confidencialidad cuando necesite, un número reducido de etiquetas tanto para los equipos de uso global como para los individuales privados. Utilice una subetiqueta de confidencialidad cuando tenga un gran número de etiquetas o cuando desee organizar las etiquetas para sitios seguros bajo su etiqueta altamente regulada. 
 
-La configuración de la sub-etiqueta aplicada se desplaza con el archivo. Incluso si se filtra fuera del sitio, solo las cuentas de usuario autenticadas que tengan permisos podrán abrir el archivo.
-
+La configuración de la etiqueta o subetiqueta aplicada se desplaza con el archivo. Incluso si se filtra fuera del sitio, solo las cuentas de usuario autenticadas que tengan permisos podrán abrir el archivo.
 
 ### <a name="design-results"></a>Resultados de diseño
 
@@ -125,10 +124,10 @@ Siga [estas instrucciones]( https://support.office.com/article/create-a-site-in-
 
 Desde el sitio de SharePoint, configure estos ajustes de permisos.
 
-1.  En la barra de herramientas, haga clic en el icono de configuración y, luego, en **Permisos del sitio**.
-2.  En el panel **Permisos del sitio**, haga clic en **Advanced permissions settings** (Configuración de permisos avanzada).
-3.  En la nueva pestaña **Permisos** del explorador, haga clic en **Configuración de solicitud de acceso**.
-4.  En el cuadro de diálogo **Configuración de solicitud de acceso**, desactive **Permitir que los miembros compartan el sitio y archivos y carpetas individuales** y **Permitir solicitudes de acceso** (de modo que las tres casillas estén desactivadas) y después, haga clic en **Aceptar**.
+1. En la barra de herramientas, haga clic en el icono de configuración y, luego, en **Permisos del sitio**.
+2. En el panel **Permisos del sitio**, en **Configuración de uso compartido**, haga clic en **Cambiar configuración de uso compartido**.
+3. En **Permisos de uso compartido**, seleccione **Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio**.
+4. Desactive **Permitir solicitudes de acceso** y, después, haga clic en **Guardar**.
 
 Con estas ajustes de configuración, se deshabilita la posibilidad de que los miembros del grupo de sitio compartan el sitio con otros miembros o que los usuarios que no son miembros soliciten el acceso al sitio.
 
@@ -145,13 +144,13 @@ Siga las instrucciones de [Proteger archivos de SharePoint con DLP y etiquetas d
 A diferencia de una etiqueta de confidencialidad para datos altamente regulados que cualquier persona puede aplicar a cualquier archivo, un sitio seguro necesita su propia sub-etiqueta para que los archivos con la sub-etiqueta asignada:
 
 - Se cifren y el cifrado se desplace con el archivo.
--   Contengan permisos personalizados para que solo los miembros del grupo de sitio puedan abrirlo.
+- Contengan permisos personalizados para que solo los miembros del grupo de sitio puedan abrirlo.
 
-Para lograr este nivel adicional de seguridad para los archivos almacenados en el sitio, debe configurar una nueva etiqueta de confidencialidad que sea una sub-etiqueta de la etiqueta general para archivos altamente regulados. Solo los miembros del grupo del sitio la verán en la lista de sub-etiquetas para la etiqueta altamente regulada.
+Para lograr este nivel de seguridad adicional para los archivos almacenados en el sitio, debe configurar una nueva etiqueta de confidencialidad o una subetiqueta de la etiqueta general para archivos altamente regulados. Solo los miembros del grupo del sitio la verán en la lista de sub-etiquetas para la etiqueta altamente regulada.
 
-Siga las instrucciones [aquí](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) para configurar una sub-etiqueta de la etiqueta que está usando para archivos altamente regulados con los siguientes ajustes:
+Siga las instrucciones de [aquí](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) para configurar una etiqueta o sub-etiqueta de la etiqueta que está usando para archivos altamente regulados con los siguientes ajustes:
 
-- El nombre de la sub-etiqueta contiene el nombre del sitio para su fácil asociación cuando se asigna la sub-etiqueta a un archivo.
+- El nombre de la etiqueta o sub-etiqueta contiene el nombre del sitio para facilitar la asociación al asignar la etiqueta o subetiqueta a un archivo.
 - El cifrado está habilitado.
 - El grupo del sitio tiene permisos de Coautor.
 
@@ -162,14 +161,13 @@ Ha configurado lo siguiente:
 - Configuraciones de permisos más restrictivas en el sitio de SharePoint
 - Una etiqueta de retención de Office 365 asignada a la parte de Documentos del sitio de SharePoint
 - Una directiva DLP para la etiqueta de retención de Office 365
-- Una sub-etiqueta de confidencialidad de Office 365 que los usuarios pueden aplicar en los archivos más confidenciales almacenados en el sitio que cifra el archivo y solo permite el acceso de Coautor a los miembros del equipo de sitio de grupo. 
+- Una etiqueta o sub-etiqueta de confidencialidad de Office 365 que los usuarios pueden aplicar a los archivos más confidenciales almacenados en el sitio, el cual cifra el archivo y solo permite el acceso de coautoría a los miembros del grupo de sitio del equipo 
 
-Esta es la configuración resultante.
+Aquí está la configuración resultante que utiliza una sub-etiqueta de la etiqueta altamente regulada.
 
-![Sitios de SharePoint para un escenario de datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![Los sitios de SharePoint para un escenario de datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
-
-Este es un ejemplo de un usuario que ha aplicado la sub-etiqueta de confidencialidad a un archivo almacenado en el sitio.
+Este es un ejemplo de un usuario que ha aplicado la sub-etiqueta a un archivo almacenado en el sitio.
 
 ![Sitios de SharePoint para un escenario de datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
@@ -182,14 +180,14 @@ Por ejemplo, los empleados acostumbrados a guardar archivos confidenciales en un
 
 ### <a name="step-1-train-your-users"></a>Paso 1: formar a los usuarios
 
-Tras completar su configuración, tome un conjunto de usuarios que pertenezcan a los grupos de acceso del sitio y fórmelos sobre los siguiente:
+Tras completar su configuración, tome un conjunto de usuarios que sean miembros del sitio:
 
 - La importancia de usar el nuevo sitio para proteger archivos valiosos y las consecuencias de la filtración de datos altamente regulados, como las repercusiones legales, las multas, el ramsonware o la pérdida de ventaja frente a la competencia.
 - Cómo obtener acceso al sitio y a sus recursos.
 - Cómo crear archivos nuevos en el sitio o cargar archivos nuevos almacenados de forma local.
 - Cómo la directiva DLP les impide compartir archivos de forma externa.
-- Cómo etiquetar los archivos más confidenciales con la sub-etiqueta del sitio.
-- Cómo la sub-etiqueta protege un archivo incluso cuando se filtra el sitio.
+- Cómo etiquetar los archivos más confidenciales con la etiqueta o sub-etiqueta del sitio.
+- Cómo la etiqueta o sub-etiqueta protege un archivo incluso cuando se filtra el sitio.
 
 Esta formación debe incluir ejercicios prácticos para que los usuarios puedan experimentar con estas operaciones y sus resultados.
 
@@ -198,21 +196,27 @@ Esta formación debe incluir ejercicios prácticos para que los usuarios puedan 
 En las semanas posteriores a la formación, el administrador del servicio de SharePoint para el sitio de SharePoint puede:
 
 - Analizar el uso del sitio y compararlo con las expectativas de uso.
-- Comprobar que los archivos más confidenciales se han etiquetado de forma correcta con la sub-etiqueta de confidencialidad.
+- Comprobar que los archivos más confidenciales se han etiquetado de forma correcta con la etiqueta o sub-etiqueta de confidencialidad.
+
+  Puede ver qué archivos tienen una etiqueta asignada viendo una carpeta en SharePoint y añadiendo la columna **Confidencialidad** a través de la opción **Mostrar/ocultar columnas** que está en **Añadir columna**.
+
 
 Volver a dar formación a los usuarios que lo necesiten.
 
 ### <a name="user-adoption-results"></a>Resultados de la adopción de usuarios
 
-Los archivos altamente regulados se almacenan exclusivamente en sitios de SharePoint para datos altamente regulados y los archivos más confidenciales tienen la sub-etiqueta de sensibilidad para el sitio aplicada.
+Los archivos altamente regulados se almacenan exclusivamente en sitios de SharePoint para datos altamente regulados y los archivos más confidenciales tienen la etiqueta o sub-etiqueta de confidencialidad para el sitio aplicado.
 
 ## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Cómo Contoso Corporation implementó Microsoft 365 Enterprise
 
-Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Vea cómo Contoso diseñó, configuró e impulsó la adopción de un [sitio de SharePoint Online seguro](contoso-sharepoint-online-site-for-highly-confidential-assets.md) para sus equipos de investigación en París, Moscú, Nueva York, Beijing y Bengaluru (Bangalore). 
+Contoso Corporation es un conglomerado industrial a nivel mundial que es ficticio y representativo a la vez. Vea cómo Contoso diseñó, configuró e impulsó la adopción de un [sitio de SharePoint Online seguro](contoso-sharepoint-online-site-for-highly-confidential-assets.md) para sus equipos de investigación en París, Moscú, Nueva York, Beijing y Bengaluru (Bangalore). 
 
 ## <a name="see-also"></a>Vea también
 
+[Teams para datos altamente regulados](secure-teams-highly-regulated-data-scenario.md)
+
+[Cargas de trabajo y escenarios de Microsoft 365 Enterprise](deploy-workloads.md)
+
+[Biblioteca de productividad de Microsoft 365](https://aka.ms/productivitylibrary)(https://aka.ms/productivitylibrary)
+
 [Guía de implementación](deploy-microsoft-365-enterprise.md)
-
-[Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)
-

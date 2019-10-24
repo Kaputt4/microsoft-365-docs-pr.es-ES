@@ -14,12 +14,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los valores de nivel de queja masiva (BCL) en Office 365.
-ms.openlocfilehash: 6f9314a5b96dbd641e461dfb564ed8605372a949
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: 822c84ea9b36cfdae1d8faccf7e0c7d9f747c917
+ms.sourcegitcommit: 7830969c8fa41724359657910716f3ce312cc2cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451102"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37650122"
 ---
 # <a name="bulk-complaint-level-values"></a>Valores de nivel de queja de correo masivo
 
@@ -39,4 +39,4 @@ En la tabla siguiente se describen los valores de BCL que están actualmente en 
 |comprendi|El mensaje no es de un remitente de correo masivo.|
 |1, 2, 3|El mensaje proviene de un remitente de correo masivo que genera pocas quejas.|
 |4, 5, 6, 7|El mensaje proviene de un remitente de correo masivo que genera un número mixto de quejas.|
-|8, 9|El mensaje proviene de un remitente de correo masivo que genera un número elevado de quejas.|
+|8, 9|El mensaje proviene de un remitente masivo que genera un gran número de quejas.|

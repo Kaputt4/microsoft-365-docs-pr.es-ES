@@ -3,7 +3,6 @@
   expanded: true
   items:
     - name: Productos y servicios
-      expanded: true
       items:
         - name: Administración de aplicaciones de terceros
           href: manage-saas-apps.md
@@ -18,6 +17,18 @@
         - name: Actualización de suscripciones
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: Facturas y pagos
+      items:
+        - name: Entender la factura
+          href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
+        - name: Administrar los métodos de pago
+          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
+        - name: Administración de perfiles de facturación
+          href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
+        - name: Historial de pedidos
+          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+        - name: Directiva 2 de servicios de pago y autenticación de cliente segura
+          href: /microsoft-365/commerce/billing-and-payments/psd2.md
+    - name: Cuentas de facturación
       items:
         - name: Administrar información de la cuenta de facturación
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce

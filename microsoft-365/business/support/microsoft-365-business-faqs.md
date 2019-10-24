@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, preguntas frecuentes, preguntas más frecuentes, respuestas, empresa
 ms.date: 06/08/2018
-ms.openlocfilehash: 18198007bf61d448581335594016433668edb47d
-ms.sourcegitcommit: 23173f7d0ca5079662ef4060371d8ee11bac228e
+ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37611429"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646393"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Preguntas más frecuentes (puede estar en inglés) sobre Microsoft 365 Empresa.
 
@@ -164,7 +164,7 @@ Los proveedores de servicios de TI que todavía no son partners de Microsoft pue
 Los partners que ahora venden Office 365 pueden usar los mismos métodos de ventas por asesoramiento para vender Microsoft 365 Empresa. Además, estamos presentando más recursos y cursos para que el equipo de ventas comprenda las necesidades de los clientes en relación con el entorno de escritorios, la confiabilidad de Active Directory, la movilidad y la seguridad para comunicar eficazmente el valor completo de Microsoft 365 Empresa de manera que sea pertinente para el cliente. Encontrarás estos recursos en el portal de partner de Office en [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business). 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>¿Cómo puede Microsoft 365 Empresa ayudar a los partners a aumentar la rentabilidad? 
-Microsoft 365 Empresa ayudará a los partners a reducir los costos a través de una mayor eficacia operativa y a mejorar los ingresos a través de la venta de servicios adicionales. La investigación de Forrester Research, Microsoft 365 Empresa Total Economic Impact (TEI) de junio de 2017 (https://partners.office.com/TEIBusiness), muestra que Microsoft 365 Empresa tendrá incidencia positiva en la rentabilidad de los partners. 
+Microsoft 365 Empresa ayudará a los partners a reducir los costos a través de una mayor eficacia operativa y a mejorar los ingresos a través de la venta de servicios adicionales. La investigación de Forrester Research, Microsoft 365 Empresa Total Economic Impact (TEI) de junio de 2017 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI), muestra que Microsoft 365 Empresa tendrá incidencia positiva en la rentabilidad de los partners. 
 
 En la investigación TEI, los partners indicaron que con Microsoft 365 Empresa esperan ver lo siguiente: 
 
