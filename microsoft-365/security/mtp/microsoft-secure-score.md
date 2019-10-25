@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b337f020702b60ceeb02043e9b66d5614f58c228
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: d8ba3626fc2b6cb7dbc56d32cb61baf34e43996e
+ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435564"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37697755"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -32,11 +32,11 @@ La puntuación segura ayuda a las organizaciones a hacer lo siguiente:
 * Mejorar su postura de seguridad proporcionando detección, visibilidad, orientación y control.  
 * Comparar con benchmarks y establecer indicadores clave de rendimiento (KPI).
 
-La puntuación segura ofrece a las organizaciones acceso a las visualizaciones sólidas de métricas y tendencias, la integración con otros productos de Microsoft, la clasificación con organizaciones similares y mucho más. La puntuación también puede reflejar Cuándo las soluciones de terceros han tratado las acciones recomendadas.
+Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y tendencias, la integración con otros productos de Microsoft, la puntuación con organizaciones similares y mucho más. La puntuación también puede reflejar Cuándo las soluciones de terceros han tratado las acciones recomendadas.
 
-Además, puede obtener acceso a sus recomendaciones y puntuaciones a través de la [API de Microsoft Graph](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+Además, puede obtener acceso a sus recomendaciones y puntuaciones a través de la [API de Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Obtenga información sobre el [tipo de recurso de puntuación segura](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o solucionar la acción de mejora con una aplicación o un software de terceros. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios. La seguridad debe sopesarse siempre con facilidad de uso y no todas las recomendaciones pueden funcionar en su entorno.
 
@@ -45,6 +45,10 @@ La puntuación se actualiza en tiempo real para reflejar la información que se 
 ### <a name="how-improvement-actions-are-scored"></a>Cómo se puntuan las acciones de mejora
 
 La mayoría se puntuan de una manera binaria: Si implementa la acción de mejora, como la creación de una nueva Directiva o la activación de una configuración específica, obtendrá un 100% de los puntos. Para otras acciones de mejora, los puntos se dan como un porcentaje de la configuración total. Por ejemplo, si los Estados de acción de mejora obtienen 30 puntos al proteger a todos los usuarios con la autenticación multifactor y solo tiene 5 de 100 usuarios totales protegidos, se le daría una puntuación parcial de unos 2 puntos (5 protegidos/100 en total * 30 máximo pts = 2 PTO).  puntuación parcial).
+
+### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
+
+Actualmente hay recomendaciones para Office 365 (como SharePoint Online, Exchange Online, OneDrive para la empresa, Microsoft Information Protection, etc.), Azure AD, Intune y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad, como ATP de Azure y ATP de Microsoft defender. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero. 
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
@@ -77,19 +81,17 @@ Para obtener acceso a la API de Graph, debe tener uno de los siguientes ámbitos
 * Ámbito securityevents. Read. All (para rol de solo lectura)
 * Ámbito securityevents. ReadWrite. All (para funciones de lectura y escritura)
 
-## <a name="rich-experiences--security-recommendations"></a>Experiencias enriquecidas & recomendaciones de seguridad
+## <a name="gain-visibility-into-your-security-posture"></a>Obtener visibilidad de la postura de seguridad
 
-En la puntuación segura de Microsoft, hay recomendaciones de Office 365, Azure AD, Intune y Cloud App Security, con recomendaciones del centro de seguridad de Azure y el centro de seguridad de Microsoft defender próximamente.
-
-Para ayudarle a la información que necesita con mayor rapidez, las recomendaciones de Microsoft se organizan en grupos:
+Para ayudarle a la información que necesita con mayor rapidez, las acciones de mejora de Microsoft se organizan en grupos:
 
 * Identity (cuentas y roles de Azure AD)
 * Datos (documentos de Office 365)
-* Dispositivo (dispositivos ATP de Microsoft defender)
+* Dispositivo (dispositivos ATP de Microsoft defender, próximamente)
 * Aplicación (aplicaciones de correo electrónico y nube)
 * Infraestructura (recursos de Azure)
 
-En la página información general sobre la calificación segura de Microsoft, puede ver cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. La página de información general también es la ubicación para obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de los bancos de pruebas y las acciones de mejora ordenadas por prioridad que se pueden realizar para mejorar la puntuación. Puede usar estos datos para actuar y realizar grandes diferencias en su postura de seguridad.  
+En la página información general sobre la calificación segura de Microsoft, puede ver cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. La página de información general también es la ubicación para obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de los bancos de pruebas y las acciones de mejora ordenadas por prioridad que se pueden realizar para mejorar la puntuación.
 
 ![Página Web de](../media/secure-score/homepage-original.png)
 puntuación segura*figura 1: Página de introducción a la calificación segura de Microsoft*
