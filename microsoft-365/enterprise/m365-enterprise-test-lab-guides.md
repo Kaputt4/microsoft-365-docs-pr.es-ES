@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Use estas guías del laboratorio de pruebas para configurar la demostración, prueba de concepto y entornos de desarrollo y prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 6293e6a4ee17453fd842cde27f909412bb34dab0
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 082d110ca7b25d3613ee276b30066683cd0232b5
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073480"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733431"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Guías del laboratorio de pruebas de Microsoft 365 Enterprise
 
@@ -49,15 +49,15 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Sincronización de hash de contraseñas](password-hash-sync-m365-ent-test-environment.md)
   
-   Habilitar y probar la sincronización de directorios basada en hash de contraseñas desde un controlador de dominio de Windows Server AD DS.
+   Habilite y pruebe la sincronización de directorios basada en hash de contraseñas desde un controlador de dominio AD DS.
 
 - [Autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md)
   
-   Habilitar y probar la autenticación de paso en un controlador de dominio de AD DS.
+   Habilite y pruebe la autenticación de paso a un controlador de dominio AD DS.
 
 - [Inicio de sesión único de conexión directa de Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Habilitar y probar el Inicio de sesión único de conexión directa (SSO) de Azure AD con un controlador de dominio de AD DS.
+   Habilite y pruebe Azure AD Seamless Single Sign-on (SSO) con un controlador de dominio AD DS.
 
 - [Autenticación multifactor](multi-factor-authentication-microsoft-365-test-environment.md)
   

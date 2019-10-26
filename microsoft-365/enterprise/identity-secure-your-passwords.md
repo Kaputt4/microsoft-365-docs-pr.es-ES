@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Necesita que sus contraseñas sean seguras y que se puedan administrar en toda la organización.
-ms.openlocfilehash: 7bb4e0f296b320aa8a24916ded40089246308a20
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: a3661eedc11e0c826422f540cf1e2e9abf911f9d
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370407"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662556"
 ---
 # <a name="step-2-secure-your-passwords"></a>Paso 2: Proteja sus contraseñas
 
@@ -29,9 +29,9 @@ ms.locfileid: "37370407"
 
 *Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-Todos los usuarios deben utilizar la [Guía de contraseñas de Microsoft](https://www.microsoft.com/research/publication/password-guidance/) cuando creen contraseñas de sus cuentas de usuario.
+Todos los usuarios deben utilizar la [guía de contraseñas de Microsoft](https://www.microsoft.com/research/publication/password-guidance/)para crear las contraseñas de sus cuentas de usuario.
 
-Para evitar que los usuarios creen una contraseña que se pueda averiguar con facilidad, use la protección con contraseña de Azure AD, que usa tanto una lista de contraseñas prohibidas global como una lista opcional de contraseñas prohibidas personalizada que usted especifica. Por ejemplo, puede especificar términos que sean específicos de su organización, como:
+Para evitar que los usuarios creen una contraseña que se pueda determinar con facilidad, utilice la protección de contraseña de Azure AD, que utiliza tanto una lista de contraseñas globalmente prohibidas como una lista opcional personalizada de contraseñas prohibidas que usted especifique. Por ejemplo, puede especificar términos que sean específicos de su organización, como:
 
 - Nombres de marcas
 - Nombres de productos
