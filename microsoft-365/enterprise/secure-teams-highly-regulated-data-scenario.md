@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un equipo seguro para almacenar los archivos más importantes y confidenciales.
-ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
-ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
+ms.openlocfilehash: d917e14719744dad8a681e15a8547655c3a0457f
+ms.sourcegitcommit: d95aab99d7827dbb9248280044748ca05ebec786
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37628354"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37657807"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams para datos altamente regulados 
 
@@ -124,7 +124,7 @@ A diferencia de una etiqueta de confidencialidad para datos altamente regulados 
 
 Para lograr este nivel adicional de seguridad para los archivos almacenados en el sitio de Equipo, debe configurar una nueva etiqueta de confidencialidad que sea su propia etiqueta o una sub-etiqueta de la etiqueta general para archivos altamente regulados. Solo los miembros del grupo de Equipo la verán en su lista de etiquetas.
 
-Usar una etiqueta de confidencialidad cuando necesite un número reducido de etiquetas tanto para los equipos de uso global como para los individuales privados. Utilice una subetiqueta de confidencialidad cuando tenga un gran número de etiquetas o cuando desee organizar las etiquetas para equipos privados bajo su etiqueta altamente regulada.
+Usar una etiqueta de confidencialidad cuando necesite un número reducido de etiquetas tanto para los equipos de uso global como para los individuales privados. Utilice una sub etiqueta de sensibilidad cuando tenga un gran número de etiquetas o quiera organizar etiquetas para equipos privados bajo la etiqueta altamente regulada.
 
 [Siga estas instrucciones ](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) para configurar una etiqueta independiente o subetiqueta con la siguiente configuración:
 

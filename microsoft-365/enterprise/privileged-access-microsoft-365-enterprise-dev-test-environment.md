@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Use esta guía del laboratorio de pruebas para habilitar la administración del acceso con privilegios en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 306cd8d3cb574fd18a3d184898ead765936bf431
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: df3a2138de105b45f472ff0a862af2afe6dd2a34
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073026"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733429"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Administración del acceso con privilegios para el entorno de pruebas de Microsoft 365 Enterprise
 
@@ -157,7 +157,7 @@ New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain>
 ```
 3. Vista que la nueva regla de diario se ha creado correctamente en Exchange Management PowerShell.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 

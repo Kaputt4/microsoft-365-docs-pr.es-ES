@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 2ce02826ae2b0661d3b893c1074e692ce93cf9f3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 131c48e89a5bb82381347e766b3f00451a852410
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370287"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733471"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Paso 3: implementar Windows 10 Enterprise para dispositivos nuevos con Windows AutoPilot
 
@@ -26,6 +26,18 @@ ms.locfileid: "37370287"
 Si tienes nuevos equipos con Windows 10, puedes usar Windows AutoPilot para personalizar la experiencia rápida (OOBE) de tu organización e implementar un nuevo sistema con aplicaciones y configuración ya configurada. No hay imágenes para implementar, no hay controladores para insertar y no hay infraestructura que administrar. Los usuarios pueden pasar por el proceso de implementación de manera independiente, sin necesidad de consultar a su administrador de ti.
 
 Puede configurar y preconfigurar nuevos dispositivos Windows 10 y prepararlos para un uso productivo mediante Windows AutoPilot. Para obtener más información acerca de Windows AutoPilot, incluidas las ventajas y los escenarios de Windows AutoPilot, consulte [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot). Cuando esté listo, siga estas partes para empezar a configurar nuevos dispositivos.
+
+## <a name="the-windows-autopilot-deployment-process-poster"></a>Póster del proceso de implementación de Windows AutoPilot
+
+El póster de Windows AutoPilot es de dos páginas en modo vertical (11 x 17). Haga clic en la imagen siguiente para ver un PDF en el explorador. 
+
+[![Implementar Windows 10 con póster de AutoPilot](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
+
+<!--
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.
+
+-->
 
 ## <a name="part-1-start-windows-autopilot-deployment"></a>Parte 1: iniciar la implementación de Windows AutoPilot
 Vea [información general de Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot) para:
