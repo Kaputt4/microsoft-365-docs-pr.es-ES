@@ -1,0 +1,138 @@
+---
+title: Preguntas más frecuentes sobre las compras sin asistencia
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: mnirkhe
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- commerce
+ms.custom: aka.ms/self-service-purchase-faq
+search.appverid:
+- MET150
+description: Encuentre respuestas a las preguntas más frecuentes sobre las compras de autoservicio.
+ms.openlocfilehash: f88d815b83da1038f3c5854a7499a5efaa029320
+ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37749172"
+---
+# <a name="self-service-purchase-faq"></a>Preguntas más frecuentes sobre las compras sin asistencia
+
+> [!NOTE]
+> La información de este artículo solo se aplica a las suscripciones de Microsoft Power Platform (Power BI, PowerApps y Flow).
+
+## <a name="general"></a>General
+
+### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>¿Qué cambios presentó Microsoft en torno a las compras de autoservicio para los productos de la plataforma de energía?
+
+A partir del 19 de noviembre de 2019, las capacidades de administración de licencias, suscripción y compra de autoservicio para los productos de la plataforma de energía (Power BI, PowerApps y flujo) estarán disponibles para la mayoría de los clientes de la nube comercial en Estados Unidos. La compra de autoservicio ofrece a los usuarios una oportunidad para probar nuevas tecnologías y les permite desarrollar soluciones que beneficien en última instancia a sus organizaciones más grandes. En este momento, esta capacidad no estará disponible para los inquilinos que no sean de administración pública, ONG o educación. Las adquisiciones centrales y los equipos de ti tendrán visibilidad para todos los usuarios que compren e implementen soluciones de compra de autoservicio a través del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>.
+
+### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>¿Por qué Microsoft está agregando una opción de compra de autoservicio para los productos de la plataforma de alimentación?
+
+Como resultado de la transformación digital, los roles tradicionales cambian. A medida que los empleados se vuelven más independientes en la tecnología, hemos observado una mayor demanda de usuarios y organizaciones para permitir que los usuarios compren las suscripciones por su cuenta. La intención de la opción de compra de autoservicio es permitir a los usuarios desarrollar sus propias soluciones para desbloquear la productividad y impulsar el impacto en el negocio, al tiempo que respetan el gobierno de datos y el cumplimiento normativo de las organizaciones.
+
+### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>¿Cuándo estará disponible la compra de autoservicio para los productos de la plataforma de energía?
+
+Microsoft está iniciando la compra de autoservicio para Power BI el 19 de noviembre de 2019 a clientes de Estados Unidos, y los mercados adicionales estarán disponibles en los próximos meses. PowerApps y Microsoft Flow se agregarán el 4 de diciembre de 2019. En este momento, esta capacidad no estará disponible para los inquilinos que no sean de administración pública, ONG o educación.
+
+### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>¿Se habilitará la compra de autoservicio para los servicios más allá de los productos de la plataforma de energía?
+
+En este momento, la familia de productos de Power Platform es la única oferta de servicios que se ofrece a través de la compra de autoservicio.
+
+## <a name="making-a-self-service-purchase"></a>Realizar una compra de autoservicio
+
+### <a name="how-does-a-customer-make-a-self-service-purchase"></a>¿Cómo realiza un cliente una compra de servicio sin ayuda?
+
+Los clientes podrán realizar una compra de autoservicio en línea desde los sitios web de Microsoft Power BI, PowerApps y Flow. Se pedirá primero a los clientes que escriban una dirección de correo electrónico para garantizar que son usuarios de un inquilino de Azure Active Directory (AD) existente y, a continuación, se les indicará que inicien sesión con sus credenciales de Azure AD. Después de iniciar sesión, se le pedirá al cliente que seleccione el número de suscripciones que desea comprar y que proporcione pago con tarjeta de crédito. Una vez completada la compra, podrá empezar a usar su suscripción. El comprador también podrá tener acceso a una vista limitada del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a> donde puede permitir a otros usuarios de su organización usar el producto.
+
+### <a name="what-are-the-payment-options-for-self-service-purchases"></a>¿Cuáles son las opciones de pago para las compras de servicio automático?
+
+Actualmente, la tarjeta de crédito es el único método de pago disponible. No se admite el pago mediante facturación.
+
+### <a name="who-can-buy-through-self-service-purchase"></a>¿Quién puede comprar a través de la compra de autoservicio?
+
+Cualquier usuario con una cuenta de usuario no invitado en un inquilino de Azure AD administrado puede comprar. En este momento, esta capacidad no estará disponible para los inquilinos que no sean de administración pública, ONG o educación. Los usuarios de organizaciones o mercados que no son aptos para la compra de autoservicio verán un mensaje en el que se les pide que se pongan en contacto con su administrador de ti como lo hacen hoy.
+
+### <a name="can-guest-users-buy-through-self-service-purchase"></a>¿Pueden los invitados comprar a través de la compra de autoservicio?
+
+No, los usuarios invitados no pueden completar una compra de autoservicio en un inquilino en el que son invitados.
+
+### <a name="can-users-synced-from-an-on-premises-active-directory-buy-through-self-service-purchase"></a>¿Pueden los usuarios sincronizarse desde un Active Directory local compre a través de una compra de autoservicio?
+
+Si un usuario tiene una cuenta de usuario activa en un inquilino de Azure AD elegible, puede completar una compra de autoservicio.
+
+### <a name="who-can-self-service-purchasers-assign-licenses-to"></a>¿Quién puede asignar licencias a los compradores sin ayuda de autoservicio?
+
+Los compradores de autoservicio solo podrán asignar licencias a usuarios en el mismo inquilino de Azure AD. El comprador podrá tener acceso a una vista limitada del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a> para asignar licencias. Solo tendrán visibilidad y pueden asignar licencias a los productos que hayan comprado mediante la compra de autoservicio, y solo podrán asignar esas licencias a los usuarios del mismo inquilino de Azure AD.
+
+### <a name="where-does-the-self-service-purchaser-see-and-manage-their-purchases"></a>¿Dónde ven y administran sus compras el comprador de autoservicio?
+
+Los compradores de autoservicio pueden administrar sus adquisiciones en la vista limitada del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>. Los compradores siempre pueden acceder al centro de administración desde el mosaico **Administración** del iniciador de aplicaciones de Office 365 en todas las aplicaciones de Office 365 y Dynamics online. Pueden ver las compras que han realizado, comprar suscripciones adicionales al mismo servicio y asignar licencias para esas suscripciones a otros usuarios de su organización. Además, los compradores pueden ver y pagar su factura, actualizar su método de pago y cancelar su suscripción.
+
+**Vista del centro de administración de Microsoft 365 limitado para los compradores sin servicio de asistencia:**
+
+![Captura de pantalla del centro de administración 365 de Microsoft.](../media/MACBillingProductsServicesSelfServicePurchaseIW.png)
+
+## <a name="pricing"></a>Precios
+
+### <a name="what-is-the-pricing-for-self-service-purchases"></a>¿Cuál es el precio de las compras de autoservicio?
+
+Los precios de cada una de las plataformas de energía para las compras de autoservicio estarán disponibles en el sitio web de Microsoft y también se mostrarán como parte de la experiencia de extracción mientras se realiza una compra de autoservicio. Estos precios pueden diferir de los precios que una organización paga al realizar compras centrales o precios ofrecidos a través de un socio.
+
+### <a name="who-is-responsible-for-payment"></a>¿Quién es el responsable del pago?
+
+La persona que compre la suscripción a través de la compra de autoservicio se le facturará y será responsable del pago en función de las condiciones y el precio de la compra.
+
+## <a name="admin-capabilities"></a>Capacidades de administración
+
+### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>¿Qué funcionalidades tiene un administrador para las compras de autoservicio?
+
+Los administradores pueden ver todas las compras de autoservicio realizadas en su organización en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>. Pueden ver el producto, el nombre del comprador, las suscripciones adquiridas, la fecha de expiración, el historial de pedidos, el precio de compra y los usuarios asignados para cada una de las compras de servicios automáticos.
+
+Mientras que todos los usuarios de Azure AD de las organizaciones elegibles pueden realizar compras de autoservicio y tendrán control total sobre sus suscripciones, los administradores tienen la misma administración de datos y las mismas directivas de acceso a los productos adquiridos a través de la compra de Self-Service o forma centralizada.
+
+### <a name="why-are-self-service-purchases-not-subject-to-admin-approval"></a>¿Por qué las compras de autoservicio no están sujetas a la aprobación del administrador?
+
+Estamos respondiendo a nuestros clientes que han solicitado esta capacidad a la vez que permiten a los administradores mantener el control sobre los servicios y respetando el cumplimiento y el gobierno de datos. Para obtener más información sobre la administración de entidades de servicio de Azure AD, consulte [set-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0). Además, los administradores tienen toda la visibilidad sobre quién ha realizado una compra de autoservicio y a qué usuarios de sus inquilinos se les ha asignado una licencia de una compra de autoservicio. De este modo, las organizaciones pueden confiar en sus propias directivas, procedimientos y comunicaciones internas para garantizar que los individuos que realizan compras sin servicio cumplan con las directivas de la compañía. 
+
+### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>¿Cómo se respeta Microsoft el gobierno de datos y el cumplimiento mediante la habilitación de la compra de autoservicio?
+
+Los administradores mantienen el control sobre qué servicios y productos están habilitados en su espacio empresarial en función de sus requisitos de gobierno de datos y cumplimiento normativo. Además, todas las directivas de administración de datos y de acceso, que su organización haya habilitado, seguirán aplicándose a los servicios habilitados de autoservicio adquiridos.
+
+### <a name="who-owns-the-product-data-created-from-self-service-purchases"></a>¿Quién es el propietario de los datos de producto creados a partir de las compras de autoservicio?
+
+La organización posee y controla los datos creados a partir de productos comprados mediante la compra de autoservicio.
+
+### <a name="how-do-i-centralize-the-purchases-made-through-self-service-purchase"></a>¿Cómo puedo centralizar las compras hechas a través de la compra de autoservicio?
+
+Los administradores pueden asignar licencias existentes o comprar suscripciones adicionales de productos de plataforma de alimentación (Power BI, PowerApps y Microsoft Flow) a través de acuerdos y precios existentes para los usuarios asignados a las compras de autoservicio. Después de asignar estas licencias adquiridas de forma centralizada, los administradores pueden solicitar que los compradores cancelen sus suscripciones existentes. Microsoft está investigando formas de simplificar y simplificar este proceso para administradores en el futuro.
+
+### <a name="where-does-the-admin-see-self-service-purchases"></a>¿Dónde ve el administrador las compras sin servicio de soporte?
+
+Los administradores globales y de facturación pueden ver las suscripciones adquiridas a través de la compra de autoservicio en productos de **facturación** > **& Services** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a> junto con todas las demás suscripciones adquiridas a través de la central adquisi. Pueden filtrar la lista para que solo las suscripciones adquiridas a través de la adquisición central o incluir las suscripciones adquiridas a través de la compra de autoservicio.
+
+Los administradores pueden ver el producto, el nombre del comprador, la suscripción adquirida, la fecha de expiración, el historial de la orden, el precio de compra y los usuarios asignados.
+
+## <a name="support-and-training"></a>Soporte técnico y aprendizaje
+
+### <a name="are-customers-it-departments-or-partners-expected-to-support-products-bought-through-self-service-purchase"></a>¿Se espera que los socios o departamentos de TI de los clientes admitan productos adquiridos a través de la compra de autoservicio?
+
+No se espera que los departamentos de ti y los asociados proporcionen soporte para los productos adquiridos a través de la compra de autoservicio. Microsoft proporcionará soporte técnico estándar para los compradores de autoservicio.
+
+### <a name="how-are-users-expected-to-receive-training-on-the-products-they-buy-through-self-service-purchase"></a>¿Cómo se espera que los usuarios reciban formación en los productos que compren a través de la compra de autoservicio?
+
+Los sitios web de Microsoft Power BI, PowerApps y Flow proporcionan una amplia capacitación para los usuarios. Los productos tienen aprendizaje guiado, documentación, ejemplos y comunidades seguras para obtener respuestas y sugerencias directamente de otros usuarios.
+
+### <a name="what-happens-to-a-self-service-purchase-if-a-user-leaves-the-organization"></a>¿Qué pasa con una compra de autoservicio si un usuario abandona la organización?
+
+Los usuarios válidos seguirán teniendo uso total de la compra de autoservicio mientras dure la suscripción. La suscripción permanecerá activa hasta que el comprador la cancele directamente o el administrador solicite que se cancele la suscripción a través del servicio de soporte al cliente. Los administradores también pueden elegir asignar una licencia de compra central a los usuarios de la suscripción cancelada.
+
+## <a name="partners"></a>Asociados
+
+### <a name="whats-the-role-of-microsofts-partners-in-self-service-purchases"></a>¿Cuál es la función de los socios de Microsoft en las compras sin servicio de asistencia?
+
+Los socios que tienen privilegios de administración delegados pueden ver las compras de autoservicio en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>, igual que un administrador. Los socios pueden ayudar a una organización que quiera centralizar los productos adquiridos a través de las compras de autoservicio. Además, es posible que los socios ofrezcan soluciones para ampliar las capacidades de una compra de servicio sin ayuda.

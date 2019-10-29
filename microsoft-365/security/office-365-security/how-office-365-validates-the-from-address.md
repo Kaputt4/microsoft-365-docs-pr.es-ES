@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 'Para ayudar a evitar la suplantación de identidad (phishing), Office 365 y Outlook.com requieren ahora el cumplimiento de RFC para de: addresses.'
-ms.openlocfilehash: 39c9898a31c715487f3bc934ad0986e9a7b3679d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: da1728b59ce100d988538d572a24ca1a44fa9a7b
+ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092245"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37749162"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Cómo Office 365 valida la dirección from para evitar la suplantación de identidad
 
@@ -223,7 +223,7 @@ No puede invalidar esta directiva para el correo saliente que envíe en Office 3
 ### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Otras formas de evitar y proteger contra cybercrimes en Office 365
 <a name="OtherProtection"> </a>
 
-Para obtener más información sobre cómo fortalecer la organización frente a cybercrimes como suplantación de identidad, correo no deseado, infracciones de datos y otras amenazas, vea [Security Best Practices for Office 365](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3).
+Para obtener más información sobre cómo fortalecer la organización frente a cybercrimes como suplantación de identidad, correo no deseado, infracciones de datos y otras amenazas, vea [Security Best Practices for Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data).
   
 ## <a name="related-topics"></a>Temas relacionados
 
