@@ -15,6 +15,7 @@
 ### [Soporte técnico](service-description/support.md)
 ### [Operaciones y monitoreo](service-description/operations-and-monitoring.md)
 ### [Requisitos de aplicaciones](service-description/mmd-app-requirements.md)
+### [ Cambios en el servicio y comunicación ](service-description/servicechanges.md)
 ### [Personalizar el servicio](service-description/customizing.md)
 ## [Prepararse para la inscripción en el Escritorio administrado de Microsoft](get-ready/index.md)
 ### [Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md)
