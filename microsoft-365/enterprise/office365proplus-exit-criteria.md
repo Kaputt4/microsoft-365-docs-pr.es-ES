@@ -3,7 +3,7 @@ title: Criterios de salida de implementación para Office 365 ProPlus
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/06/2019
+ms.date: 10/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise para la infraestructura de Office 365 ProPlus.
-ms.openlocfilehash: 544eb31a8fd2417adfa929df793f88ec52b1d503
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 749d9661911bd6b69a3d6abff0b54e9ea1200adc
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073150"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746586"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Criterios de salida de implementación para Office 365 ProPlus
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![Fase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *Se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise y Microsoft 365 Educación*
 
@@ -60,4 +60,4 @@ Los dispositivos cliente tienen instaladas las últimas versiones de Office 365 
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Si sigue las fases de la implementación de un extremo a otro de Microsoft 365 Enterprise, la siguiente fase es [la administración de dispositivos móviles](mobility-infrastructure.md). |
+|![Fase 5: Administración de dispositivos móviles](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Si sigue las fases de la implementación de un extremo a otro de Microsoft 365 Enterprise, la siguiente fase es [la administración de dispositivos móviles](mobility-infrastructure.md). |
