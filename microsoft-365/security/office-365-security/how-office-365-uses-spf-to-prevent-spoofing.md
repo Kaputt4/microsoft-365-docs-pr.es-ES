@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: Este artículo describe cómo Office 365 usa el registro TXT para el marco de directivas de remitente (SPF) en DNS para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado. Esto se aplica al correo saliente enviado desde Office 365. Los mensajes enviados desde Office 365 a un destinatario dentro de Office 365 siempre pasarán SPF.'
-ms.openlocfilehash: 7db1259f4ec15fffe46955ba2166b244c5737d43
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: 9a0cbbe29a43a223a006b1a8495d2522ca2386c4
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510557"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772224"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Cómo Office 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
 
@@ -104,7 +104,7 @@ En un principio, el mensaje supera la comprobación SPF en woodgrovebank.com per
 Además de las direcciones IP, también puede configurar el registro TXT SPF para incluir dominios como remitentes. Estos se agregan al registro TXT SPF como instrucciones "Include". Por ejemplo, contoso.com quiere incluir todas las direcciones IP de los servidores de correo de contoso.net y contoso.org que también le pertenece. Para ello, contoso.com publica un registro TXT SPF que tiene este aspecto:
   
 ```
-IN TXT "v=spf1 include:contoso.net include:contoso.org -all"
+v=spf1 include:contoso.net include:contoso.org -all
 ```
 
 Cuando el servidor de recepción ve este registro en DNS, también realiza una búsqueda DNS en el registro TXT SPF para contoso.net y, a continuación, en contoso.org. Si encuentra una instrucción include adicional dentro de los registros para contoso.net o contoso.org, seguirá también los mismos. Con el fin de ayudar a evitar los ataques por denegación de servicio, el número máximo de búsquedas DNS para un único mensaje de correo electrónico es 10. Cada instrucción Include representa una búsqueda DNS adicional. Si un mensaje supera el límite de 10, el mensaje tiene errores SPF. Una vez que un mensaje alcanza este límite, dependiendo de cómo esté configurado el servidor de recepción, el remitente puede recibir un mensaje que indica que el mensaje generó "demasiadas búsquedas" o que se ha superado el número máximo de saltos del mensaje (esto puede ocurrir cuando el busca un bucle y supera el tiempo de espera de DNS). Para obtener sugerencias sobre cómo evitar esto, consulte [Solución de problemas: Procedimientos recomendados para SPF en Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).

@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La característica de vínculos seguros proporciona la comprobación del tiempo de clic de los hipervínculos en los documentos de Office y en los mensajes de correo electrónico. Lea este artículo para obtener información sobre cómo funciona el vínculo seguro ATP.
-ms.openlocfilehash: 45053b51bb5a91698d90f61567aa7f5577518587
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bb60d57a422d908b013caf7267f21f390769cfb4
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092251"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772204"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Funcionamiento de los vínculos seguros de Office 365 ATP
          
@@ -49,11 +49,11 @@ En un nivel alto, aquí se muestra cómo funciona la protección de [vínculos s
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Cómo funciona el vínculo seguro ATP con direcciones URL en documentos de Office
 
-En un nivel alto, aquí se muestra cómo funciona la protección de [vínculos seguros de ATP](atp-safe-links.md) para las direcciones URL en Office 365 ProPlus Applications (versiones actuales de Word, Excel y PowerPoint en Windows o Mac, aplicaciones de Office en dispositivos iOS o Android, Visio en Windows, OneNote en un explorador y Office en un explorador):
+En un nivel alto, aquí se muestra cómo funciona la protección de [vínculos seguros de ATP](atp-safe-links.md) para las direcciones URL en Office 365 ProPlus o en las aplicaciones de empresa Premium (versiones actuales de Word, Excel y PowerPoint en Windows, Mac o en un explorador, aplicaciones de Office en dispositivos iOS o Android, Visio on Windows, OneNote en un explorador):
   
-1. Los usuarios han instalado Office 365 ProPlus en su equipo, smartphone o tableta. (O bien, usan Office en su explorador).
+1. Los usuarios tienen instalado Office 365 ProPlus o Business Premium en su equipo, smartphone o tableta. (O bien, usan Office en su explorador).
     
-2. Un usuario abre un Word, Excel, PowerPoint o Visio y inicia sesión en Office 365 Enterprise con su cuenta profesional o educativa. El documento contiene direcciones URL.
+2. Un usuario abre una palabra, Excel, PowerPoint, OneNote (en la web) o Visio (en el escritorio) e inicia sesión en Office 365 Enterprise con su cuenta profesional o educativa. El documento contiene direcciones URL.
     
 3. Cuando el usuario hace clic en una dirección URL del documento, el servicio de vínculos seguros de ATP comprueba el vínculo.
     
@@ -66,4 +66,6 @@ En un nivel alto, aquí se muestra cómo funciona la protección de [vínculos s
       - Si la dirección URL va a un archivo descargable y las [directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md) están configuradas para analizar tales descargas, se comprueba el archivo descargable. 
     
       - Si la dirección URL se considera segura, el usuario se dirigirá al sitio Web.
+      
+      - Si se produce un error en la comprobación de la dirección URL, la protección de vínculos seguros no se activará. En los clientes de escritorio, el usuario recibirá una advertencia antes de continuar con el sitio.
 

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Protección de Exchange Online (EOP) es un servicio de filtro de correo electrónico basado en nube que ayuda a proteger su organización contra correo no deseado y malware, e incluye características para proteger a su organización contra incumplimiento de directivas de mensajería.
-ms.openlocfilehash: e091946792e78f47f5c0ab5a001bf45ca4de6b08
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440457"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772274"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -56,13 +56,13 @@ EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro 
 
 ## <a name="eop-plans-and-features"></a>Planes y características de EOP
 
-A continuación se detallan los planes de suscripción de EOP disponibles:
+Los planes de suscripción de EOP disponibles son los siguientes:
 
-- **EOP independiente**: donde EOP protege los buzones locales.
+- **EOP independiente**: debe inscribirse en EOP para proteger su organización de correo electrónico local.
 
-- **Características de EOP en Exchange Online**: donde EOP protege los buzones de Exchange Online hospedados en la nube.
+- **Características de EOP en Exchange Online**: cualquier suscripción que incluya Exchange Online (independiente o como parte de Office 365) utiliza EOP para proteger los buzones de Exchange Online.
 
-- **Exchange Enterprise cal con servicios**: donde EOP protege los buzones locales, como EOP independiente, e incluye prevención de pérdida de datos (DLP) e informes que usan servicios Web.
+- **Exchange Enterprise cal con servicios**: Si tiene una organización de Exchange local en la que ha comprado otras licencias de Exchange Enterprise cal con servicios, EOP forma parte de los servicios incluidos.
 
 Para más información sobre los requisitos, límites importantes y disponibilidad de características en todos los planes de suscripción de EOP, vea la [Descripción de servicio Protección en línea de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=320619).
 
