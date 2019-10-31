@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los campos de encabezado y los valores que se agregan a los mensajes mediante Exchange Online Protection.
-ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: df0e31ad6d1c67c8d7ed92e9b42efb1da0c37731
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451122"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772264"
 ---
 # <a name="anti-spam-message-headers"></a>Encabezados de mensajes de correo no deseado
 
@@ -39,7 +39,6 @@ Al obtener acceso a la información del encabezado del mensaje, busque **X-Foref
 |CTRY|El país desde el que el mensaje se conectó al servicio. Está determinado por la dirección IP de conexión, que puede no ser la misma que la dirección IP de envío original.|
 |LANG|El idioma en que se redactó el mensaje, que está definido por el código de país (por ejemplo, ru_RU indica ruso).|
 |SCL|El valor del nivel de confianza contra correo no deseado (SCL) del mensaje. Para obtener más información sobre cómo interpretar estos valores, consulte [Niveles de confianza de correo no deseado](spam-confidence-levels.md).  |
-|PCL|Valor de nivel de confianza de protección antiphishing (PCL) del mensaje.|
 |SRV:BULK|El mensaje se identificó como mensaje de correo masivo. Si la opción avanzada de filtrado de correo no deseado **Bloquear todos los mensajes de correo masivo** está habilitada, se marcará como correo no deseado. Si no lo está, solo se marcará como correo no deseado en el caso de que el resto de las reglas de filtrado determinen que el mensaje es correo no deseado.|
 |SFV:SFE|Se omitió el filtrado y se permitió el mensaje porque se envió desde una dirección de una lista de remitentes seguros del individuo.|
 |SFV:BLK|Se omitió el filtrado y se bloqueó el mensaje porque se envió desde una dirección de una lista de remitentes bloqueados del individuo.  <br/> **Sugerencia:** Para obtener más información sobre cómo los usuarios finales pueden crear listas de remitentes seguros y bloqueados, vaya a [Bloquear o permitir (configuración del correo electrónico no deseado)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook en la Web) e [Información sobre el filtro de correo electrónico no deseado](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook).|
@@ -66,8 +65,7 @@ En la tabla siguiente se describen los campos más útiles del encabezado de men
 
 |**Campo de encabezado**|**Descripción**|
 |:-----|:-----|
-|PCL|El nivel de confianza de protección antiphishing (PCL) del mensaje, que indica si se trata de un mensaje de suplantación de identidad. Este estado se puede devolver con uno de los siguientes valores numéricos: <br/>**0-3**: Es posible que el contenido del mensaje no represente una suplantación de identidad. <br/>**4-8**: Es posible que el contenido del mensaje represente una suplantación de identidad. <br/>**-9990**: (solo en Exchange Online Protection) Es posible que el contenido del mensaje represente una suplantación de identidad.  <br/>  Los valores se usan para determinar qué medidas toma el cliente de correo electrónico sobre los mensajes. Por ejemplo, Outlook usa la marca PCL para bloquear el contenido de los mensajes sospechosos. Para obtener más información sobre la suplantación de identidad (phishing) y cómo Outlook procesa los mensajes de suplantación de identidad, vea[Activar o desactivar vínculos en mensajes de correo electrónico](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
-|
+|BCL|El Nivel de Reclamo masivo (BCL, bulk reclamo) del mensaje permite distinguir entre los distintos tipos de correo masivo. Este es representado como un valor entre 0 y 9. Para ver los valores y otra información sobre BCL, consulte [Valores de Nivel de Reclamos Masivo](bulk-complaint-level-values.md).|
 
 ## <a name="authentication-results-message-header"></a>Encabezado de mensaje Authentication-results
 
