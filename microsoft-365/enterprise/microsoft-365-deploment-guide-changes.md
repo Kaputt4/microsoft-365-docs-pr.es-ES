@@ -3,7 +3,7 @@ title: Cambios en el contenido de implementación de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 10/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vea el nuevo contenido y los cambios en el contenido en la guía de implementación de Microsoft 365.
-ms.openlocfilehash: e872b0c289a002b4a0e0459a9ee19aa78b039b31
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: 6c965efcbbfebe4fd80ac983674a7d183793e946
+ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617248"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37889939"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Cambios en el contenido de implementación de Microsoft 365 Enterprise
 
@@ -26,9 +26,24 @@ ms.locfileid: "37617248"
 
 ### <a name="new-content"></a>Nuevo contenido 
 
+- [El póster para la implementación de Windows 10 con piloto automático](windows10-deploy-autopilot.md) 
+
+  [![El póster para la implementación de Windows 10 con piloto automático](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
+
+  También puede descargar este póster en [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) o en formato de [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx).
+
+- [El póster para la implementación de Windows 10 con System Center Configuration Manager](windows10-deploy-inplaceupgrade.md)
+
+  [![El póster para la implementación de Windows 10 con System Center Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/810b475c713ebb3ad65d13746940ef91?sv=2015-04-05&sr=b&sig=tKD38RgLAoOCAWJ5ppEbLevBAHk7KHtWrXldy2Jl6mY%3D&st=2019-10-24T22%3A16%3A08Z&se=2019-10-25T22%3A26%3A08Z&sp=r)
+
+  También puede descargar este póster en [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) o en formato de [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx).
+
 - [Teams para un escenario de datos altamente regulados ](secure-teams-highly-regulated-data-scenario.md)
 
   [![Teams para un escenario de datos altamente regulados ](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
+
+  Anuncios: [Blog de la comunidad técnica de Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Protect-your-highly-regulated-files-in-Teams-with-Microsoft-365/ba-p/962985)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-i-lock-down-team-sensitive-top-secret-joe-davies/?published=t) 
+
 
 - [Póster para aumentar la productividad de los trabajadores remotos](empower-people-to-work-remotely.md#poster)
 
@@ -37,6 +52,7 @@ ms.locfileid: "37617248"
 
 ### <a name="updates-and-enhancements"></a>Actualizaciones y mejoras
 
+- Actualización de [fase 4: Office 365 ProPlus](office365proplus-infrastructure.md)
 - Actualización del [caso práctico de Contoso](contoso-case-study.md)
 - Actualización de las cargas de trabajo de [Microsoft Teams](teams-workload.md), [Exchange Online](exchangeonline-workload.md) y [SharePoint Online](sharepoint-online-onedrive-workload.md)
 - Actualización de los [Sitios de SharePoint para un escenario de datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md)
@@ -55,6 +71,8 @@ ms.locfileid: "37617248"
 
   [![Configuración de trabajadores remotos para una organización con identidad híbrida](./media/empower-people-to-work-remotely/remote-workers-hybrid.png)](empower-people-to-work-remotely.md) 
  
+  Anuncios: [Blog de la comunidad técnica de Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Empower-your-remote-workers-with-Microsoft-365-Enterprise/ba-p/935196#M236)  |  [LinkedIn](https://www.linkedin.com/pulse/how-do-i-configure-microsoft-365-enterprise-empower-my-joe-davies/) 
+
 - [Paso de encriptación de correo electrónico](infoprotect-email-encryption.md) para la [Fase 6: Protección de la información](infoprotect-infrastructure.md) 
 
 ### <a name="updates-and-enhancements"></a>Actualizaciones y mejoras

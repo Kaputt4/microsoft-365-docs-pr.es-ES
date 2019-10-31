@@ -25,7 +25,7 @@
         - name: Administración de perfiles de facturación
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: Directiva 2 de servicios de pago y autenticación de cliente segura
-          href: /microsoft-365/commerce/billing-and-payments/psd2.md
+          href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: Cuentas de facturación
       items:
         - name: Administrar información de la cuenta de facturación
