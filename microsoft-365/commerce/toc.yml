@@ -9,11 +9,11 @@
         - name: Comprar licencias
           href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Asignar licencias
-          href: /office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Cancelar la asignación de licencias
+          href: /office365/admin/manage/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Eliminar licencias de la suscripción
           href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Quitar licencias de usuarios
-          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Actualización de suscripciones
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: Facturas y pagos
@@ -21,7 +21,7 @@
         - name: Entender la factura
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
         - name: Administrar los métodos de pago
-          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
+          href: /office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Administración de perfiles de facturación
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: Directiva 2 de servicios de pago y autenticación de cliente segura
