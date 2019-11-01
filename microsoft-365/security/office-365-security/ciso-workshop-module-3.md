@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: be27e92c44ef6764906448828a94a207bd38bb18
-ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
+ms.openlocfilehash: 89b275c621ef0d4d7fe1f95625c34a51ee4c506f
+ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37554137"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37911401"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>Módulo 3 de taller de CISO: acceso de usuario de identidades y de confianza cero
 
-Como la mayoría de los ataques modernos implican comprometer las identidades de los usuarios, obtenga información sobre cómo crear un nuevo perímetro de seguridad de identidades para proteger activos fuera de la red corporativa.
+Obtenga información sobre cómo anticipar la confianza cero con su estrategia de identidad y acceso de usuario para proteger mejor los datos corporativos dentro y fuera del perímetro de la red.
 
 - Descargar Resumen de PDF: [módulo 3: acceso de usuario de identidades y de confianza cero](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
 - Descargar Resumen de PowerPoint: [módulo 3: administración de identidades y acceso](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
