@@ -85,7 +85,7 @@
 ## [Entender la clasificación de datos (vista previa)](data-classification-overview.md)
 ### [Ver actividad de la etiqueta (vista previa)](data-classification-activity-explorer.md)
 ### [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
-### [Usar un clasificador listo para usar (vista previa)](classifier-using-a-ready-to-use-classifier)
+### [Usar un clasificador listo para usar (vista previa)](classifier-using-a-ready-to-use-classifier.md)
 ### [Crear y entrenar clasificadores (vista previa)](classifier-creating-a-trainable-classifier.md)
 
 # Administración del gobierno de la información
@@ -363,11 +363,16 @@
 
 # Administración de los riesgos de cumplimiento
 ## [Portal de confianza del servicio de Microsoft](get-started-with-service-trust-portal.md)
-## [Administrador de cumplimiento (Clásico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Administrador de cumplimiento (Versión preliminar)](compliance-manager-overview.md)
-### [Novedades del Administrador de cumplimiento (Versión preliminar)](compliance-manager-release-notes.md)
-### [Trabajar con el Administrador de cumplimiento (Versión preliminar)](working-with-compliance-manager.md)
-### [Metodología de puntuación de cumplimiento (Versión preliminar)](compliance-score-methodology.md)
+## Puntuación de cumplimiento y Administrador de cumplimiento
+### [Puntuación de cumplimiento (versión preliminar)](compliance-score.md)
+### [Configurar la Puntuación de cumplimiento (versión preliminar)](compliance-score-setup.md)
+### [Trabajar con la Puntuación de cumplimiento (versión preliminar)](working-with-compliance-score.md)
+### [Cálculo de la Puntuación de cumplimiento (versión preliminar)](compliance-score-methodology.md)
+### [Notas de la versión de la Puntuación de cumplimiento (versión preliminar)](compliance-score-release-notes.md)
+### [Administrador de cumplimiento (Versión preliminar)](compliance-manager-overview.md)
+#### [Novedades del Administrador de cumplimiento (Versión preliminar)](compliance-manager-release-notes.md)
+#### [Trabajar con el Administrador de cumplimiento (Versión preliminar)](working-with-compliance-manager.md)
+#### [Administrador de cumplimiento (heredado)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [Herramienta de solicitudes de interesados RGPD](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Information Protection de Office 365 para RGPD](office-365-information-protection-for-gdpr.md)
