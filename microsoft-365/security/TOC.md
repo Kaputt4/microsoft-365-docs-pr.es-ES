@@ -15,6 +15,8 @@
 ## [Configuraciones de acceso a dispositivos e identidades](../enterprise/microsoft-365-policies-configurations.md)
 ### [Trabajo de requisito previo](../enterprise/identity-access-prerequisites.md)
 ### [Directivas comunes de acceso a dispositivos e identidades](../enterprise/identity-access-policies.md)
+### [Directivas para usuarios externos e invitados](../enterprise/identity-access-policies-guest-access.md)
+### [Directivas de acceso de Teams recomendadas](../enterprise/teams-access-policies.md)
 ### [Directivas de acceso de Exchange Online recomendadas](../enterprise/secure-email-recommended-policies.md)
 ### [Directivas de acceso de SharePoint Online recomendadas](../enterprise/sharepoint-file-access-policies.md)
 

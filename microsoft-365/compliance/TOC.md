@@ -82,6 +82,12 @@
 #### [Información heredada para el cifrado de mensajes de Office 365](legacy-information-for-message-encryption.md)
 #### [Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365](set-up-azure-rms-for-previous-version-message-encryption.md)
 
+## [Entender la clasificación de datos (vista previa)](data-classification-overview.md)
+### [Ver actividad de la etiqueta (vista previa)](data-classification-activity-explorer.md)
+### [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
+### [Usar un clasificador listo para usar (vista previa)](classifier-using-a-ready-to-use-classifier)
+### [Crear y entrenar clasificadores (vista previa)](classifier-creating-a-trainable-classifier.md)
+
 # Administración del gobierno de la información
 ## [Importar datos](importing-pst-files-to-office-365.md)
 ### [Usar la carga en la red para importar archivos PST](use-network-upload-to-import-pst-files.md)
