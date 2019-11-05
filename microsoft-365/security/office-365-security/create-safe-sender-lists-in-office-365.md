@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si desea asegurarse de que recibe el correo de un remitente determinado, ya que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de correo no deseado en el centro de administración de Exchange.
-ms.openlocfilehash: b01abc327dd19a2d3098d3c49deed1edb1c07b68
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8651b09d891a57cd5239311026af701064c9a4e1
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093342"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964456"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Crear listas de remitentes seguros en Office 365
 
@@ -59,7 +59,7 @@ La acción de la regla debe seguir este patrón:
 
 1. Establezca el nivel de confianza contra correo no deseado (SCL) en-1 (pase por alto el filtrado de correo no deseado).
 
-2. Agregue un encabezado X para indicar lo que hace la regla. En el ejemplo siguiente, puede Agregar un encabezado sencillo "X-ETR: omitir el filtrado de correo no deseado para `contoso.com`el remitente autenticado". Si tiene más de un dominio en esta regla, puede cambiar el texto del encabezado según corresponda. **Cuando un mensaje omite el filtrado debido a un ETR, marca SFV: SKN en el encabezado X-Forefront-antispam-Report** (**si está en una lista de direcciones IP permitidas, también marca IPV: cal**). Esto le ayudará con la solución de problemas.
+2. Agregue un encabezado X para indicar lo que hace la regla. En el ejemplo siguiente, puede Agregar un encabezado sencillo "X-ETR: omitir el filtrado de correo no deseado para `contoso.com`el remitente autenticado". Si tiene más de un dominio en esta regla, puede cambiar el texto del encabezado según corresponda. **Cuando un mensaje omite el filtrado debido a un ETR, marca SFV: SKN en el encabezado X-Forefront-antispam-Report** (**si se encuentra en una lista de direcciones IP permitidas, también marca IPV: cal**). Esto le ayudará con la solución de problemas.
 
 ![GUI para omitir el filtrado de correo no deseado.](../media/1-AllowList-SkipFilteringFromContoso.png)
 

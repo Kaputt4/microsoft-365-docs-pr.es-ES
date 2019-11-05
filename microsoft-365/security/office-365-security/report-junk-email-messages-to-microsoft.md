@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 'El complemento de notificación de correo no deseado de Microsoft para Microsoft Office Outlook permite notificar mensajes de correo no deseado de varias formas:'
-ms.openlocfilehash: 622463be7aea51b0912965ff713c76e8961c51d3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b53f6df11f2b0ee8fe6b20d3797d6e317c9a73e
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093195"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964446"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Informar a Microsoft sobre mensajes de correo electrónico no deseado
 
@@ -34,7 +34,7 @@ El complemento de notificación de correo no deseado de Microsoft para Microsoft
 El complemento de notificación de correo no deseado permite enviar informes al servicio Microsoft Exchange Online Protection (EOP). Si su buzón no está protegido por el servicio, el envío de notificaciones de correo no deseado no afectará a los filtros de correo no deseado. Los administradores encontrarán más información sobre las opciones de configuración del bloqueo de correo no deseado que se aplican a toda la organización en [Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=534224) o [Bloquee el spam de correo electrónico con el filtro de correo basura de Office 365 para evitar problemas de negativos falsos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Estos son útiles si tiene un control de nivel de administrador y desea impedir falsos positivos o falsos negativos.
   
 > [!TIP]
-> También puede enviar mensajes de correo no deseado directamente a Microsoft con la dirección de correo electrónico de [Junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) y los mensajes falsos positivos (correo no no deseado) mediante la dirección de correo electrónico [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) . Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
+> También puede enviar mensajes de correo no deseado directamente a Microsoft con la dirección de correo electrónico de [Junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) y los mensajes falsos positivos (correo no no deseado) mediante la dirección de correo electrónico [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) . Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
   
 ### <a name="to-report-junk-email-messages-from-outlook"></a>Para notificar mensajes de correo electrónico no deseado desde Outlook
 

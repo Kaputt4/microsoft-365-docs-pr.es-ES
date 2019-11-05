@@ -9,18 +9,21 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: a936a3b24c97e9336550527750afa800345891e6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
+ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093516"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968530"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
 ## <a name="overview"></a>Información general
 
 Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensajes de correo electrónico mientras viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
+
+> [!NOTE]
+> Para realizar el seguimiento de mensajes, el administrador debe ser miembro de la administración de la organización, la administración del cumplimiento o los grupos de funciones del servicio de asistencia.
 
 El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora según el seguimiento de mensajes que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con sus mensajes, solucionar problemas del flujo de correo y validar los cambios en la Directiva.
 
@@ -60,7 +63,7 @@ Los valores predeterminados son **todos los remitentes** y **todos los destinata
 - **A estas personas**: haga clic en este campo para seleccionar uno o más destinatarios de la organización.
 
 > [!NOTE]
-> También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín`*@contoso.com` ( `scot?@contoso.com`o), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo.<br/>Puede pegar varias listas de remitentes o destinatarios separados por punto y coma`;`(). Espacios (`\s`), retorno de carro`\r`() o líneas siguientes`\n`() se permiten.
+> También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín (por ejemplo `*@contoso.com`,), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo.<br/>Puede pegar varias listas de remitentes o destinatarios separados por punto y coma`;`(). Espacios (`\s`), retorno de carro`\r`() o líneas siguientes`\n`() se permiten.
 
 ### <a name="time-range"></a>Intervalo de tiempo
 
