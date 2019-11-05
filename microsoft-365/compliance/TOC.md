@@ -4,6 +4,7 @@
 ## [Novedades del centro de cumplimiento](whats-new.md)
 ## [Actualizaciones recientes de contenido de cumplimiento](recently-updated-topics-mcc.md)
 ## [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md)
+## [Catálogo de soluciones de Microsoft 365 (versión preliminar)](microsoft-365-solution-catalog.md)
 ## [Ir al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md)
 ## [Usar su suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planificación de la seguridad y el cumplimiento en Office 365](plan-for-security-and-compliance.md)
@@ -17,9 +18,13 @@
 ## Clave del cliente
 ### [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md)
 ### [Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365](service-encryption-with-customer-key-faq.md)
-## Supervisar las comunicaciones
-### [Infórmese de las directivas de supervisión](supervision-policies.md)
-### [Configurar directivas de supervisión para su organización](configure-supervision-policies.md)
+## Cumplimiento con la comunidad
+### [Obtener más información sobre el cumplimiento de las comunicaciones (versión preliminar)](communication-compliance.md)
+### [Configurar el cumplimiento de las comunicaciones en Microsoft 365 (versión preliminar)](communication-compliance-configure.md)
+### [Investigar y corregir las alertas de cumplimiento de las comunicaciones (vista previa)](communication-compliance-investigate-remediate.md)
+### [Referencia de características para el cumplimiento de las comunicaciones (versión preliminar)](communication-compliance-feature-reference.md)
+### [Directivas de supervisión en Office 365](supervision-policies.md)
+### [Configurar directivas de supervisión para Office 365](configure-supervision-policies.md)
 ## [Barreras de información](information-barriers.md)
 ### [Definir directivas de barreras de información](information-barriers-policies.md)
 ### [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
@@ -31,6 +36,8 @@
 ### [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
 ### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)
 ### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
+### [Usar etiquetas de confidencialidad en equipos, grupos y sitios](sensitivity-labels-teams-groups-sites.md)
+### [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 ### [Etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md)
 
 ## [Prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)
@@ -89,6 +96,7 @@
 ### [Crear y entrenar clasificadores (vista previa)](classifier-creating-a-trainable-classifier.md)
 
 # Administración del gobierno de la información
+## [Administración del gobierno de la información](manage-information-governance.md)
 ## [Importar datos](importing-pst-files-to-office-365.md)
 ### [Usar la carga en la red para importar archivos PST](use-network-upload-to-import-pst-files.md)
 ### [Usar el envío de unidades para importar los archivos PST](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -372,7 +380,7 @@
 ### [Administrador de cumplimiento (Versión preliminar)](compliance-manager-overview.md)
 #### [Novedades del Administrador de cumplimiento (Versión preliminar)](compliance-manager-release-notes.md)
 #### [Trabajar con el Administrador de cumplimiento (Versión preliminar)](working-with-compliance-manager.md)
-#### [Administrador de cumplimiento (heredado)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+#### [Administrador de cumplimiento (Clásico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [Herramienta de solicitudes de interesados RGPD](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Information Protection de Office 365 para RGPD](office-365-information-protection-for-gdpr.md)
@@ -393,9 +401,9 @@
 
 # [Planes de acción de cumplimiento de normativas](compliance-solutions-overview.md)
 
-## [ISO — Plan de acción recomendado](iso-action-plan.md)
-## [NIST — Plan de acción recomendado](nist-action-plan.md) 
-
+## [Administrador de cumplimiento (Clásico)](iso-action-plan.md)
+## [NIST: plan de acción recomendado](nist-action-plan.md)
+## [CCPA: preguntas más frecuentes](ccpa-faq.md)
 ## [RGPD](gdpr.md)
 ### [Plan de acción recomendado para RGPD](gdpr-action-plan.md)
 
@@ -592,6 +600,7 @@
 #### [PASF (REINO UNIDO)](offering-pasf-uk.md)
 
 ### Norteamérica
+#### [Ley de privacidad del consumidor de California (CCPA)](offering-ccpa.md)
 #### [Ley de privacidad de Canadá](offering-canadian-privacy-laws.md)
 
 ### Sudamérica
