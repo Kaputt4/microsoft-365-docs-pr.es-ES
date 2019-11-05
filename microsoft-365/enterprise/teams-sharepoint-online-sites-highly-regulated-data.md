@@ -3,7 +3,7 @@ title: Sitios de SharePoint para datos altamente regulados
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un sitio de grupo de SharePoint seguro para almacenar los archivos más importantes y confidenciales.
-ms.openlocfilehash: 7162ced48a64270713dc1eac6e73de053d24b2f4
-ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
+ms.openlocfilehash: cfa1f7d85f7dd4d20b293c73b0b8f7d8e2577d02
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37628344"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929252"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Sitios de SharePoint para datos altamente regulados
 
@@ -68,7 +68,11 @@ Este escenario requiere que ya haya implementado:
 
 Las siguientes fases le guiarán a través del diseño, la configuración y el impulso de la adopción de los sitios altamente regulados de SharePoint.
 
-Para ver cómo Contoso Corporation, una organización multinacional ficticia pero representativa, diseñó un sitio de SharePoint para los equipos de investigación, vea esta [configuración de ejemplo](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
+<a name="poster"></a> Para obtener un resumen de una página de este escenario, vea el [póster Sitios de SharePoint para datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf).
+
+[![Póster Sitios de SharePoint para datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+
+Puede descargar este póster también como un [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
 
 ## <a name="identity-and-device-access-prerequisites"></a>Requisitos previos de acceso a dispositivos e identidades
 
