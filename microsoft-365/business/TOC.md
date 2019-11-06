@@ -1,5 +1,5 @@
 # Microsoft 365 Empresa
-## [Microsoft 365](index.md)
+## [Microsoft 365](index.yml)
 ## [¿Qué es Microsoft 365 Empresa?](microsoft-365-business-overview.md)
 ## [Obtener Microsoft 365 Empresa](sign-up.md)
 ## [Requisitos previos para la protección de datos](pre-requisites-for-data-protection.md)
@@ -32,7 +32,10 @@
 ### [Configuración de protección de dispositivos para equipos con Windows 10](protection-settings-for-windows-10-pcs.md)
 #### [Validar la configuración en equipos con Windows 10](validate-settings-on-windows-10-pcs.md)
 ### [Configuración de protección de la app para equipos con Windows 10](protection-settings-for-windows-10-devices.md)
-## [Migrar a Microsoft 365 Empresa](migrate-to-microsoft-365-business.md)
+## Migrar a Microsoft 365 Empresa
+### [Migrar desde Office 365 Empresa Premium](migrate-to-microsoft-365-business.md)
+### [Migrar desde Office 365 E3](migrate-from-e3.md)
+### [Migrar a Microsoft 365 Enterprise](migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md)
 ## Facturación
 ### [Su factura](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Pagar](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
