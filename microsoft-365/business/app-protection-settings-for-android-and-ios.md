@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Obtenga información sobre cómo crear, editar o eliminar una directiva de administración de aplicaciones y proteger los archivos de trabajo en dispositivos Android o iOS.
-ms.openlocfilehash: a829cfbcb3209313a53e0a1406f5252d3d5580d8
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 914e6848ac46eb334516aadff2827da2b83a38c4
+ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574746"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38002093"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 
@@ -71,9 +71,9 @@ ms.locfileid: "37574746"
     
 ## <a name="available-settings"></a>Configuración disponible
 
-En las siguientes tablas, se ofrece información detallada sobre la configuración disponible para proteger los archivos de trabajo en dispositivos y la configuración que controla la forma en que los usuarios obtienen acceso a archivos de Office desde sus dispositivos móviles.
+En las siguientes tablas se proporciona información detallada sobre la configuración disponible para proteger los archivos de trabajo en los dispositivos y la configuración que controla la forma en que los usuarios obtienen acceso a los archivos de Office desde sus dispositivos móviles.
   
- Consulte [Cómo se asignan las características de protección de Microsoft 365 Empresa a la configuración de Intune](map-protection-features-to-intune-settings.md). 
+ Para obtener más información, vea [Asignar características de protección de Microsoft 365 Empresa a la configuración de Intune](map-protection-features-to-intune-settings.md). 
   
 ### <a name="settings-that-protect-work-files"></a>Configuración que protegen los archivos de trabajo
 

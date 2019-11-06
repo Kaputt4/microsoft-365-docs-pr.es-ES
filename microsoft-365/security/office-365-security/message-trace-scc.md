@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
+ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968530"
+ms.locfileid: "37993735"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -63,7 +63,7 @@ Los valores predeterminados son **todos los remitentes** y **todos los destinata
 - **A estas personas**: haga clic en este campo para seleccionar uno o más destinatarios de la organización.
 
 > [!NOTE]
-> También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín (por ejemplo `*@contoso.com`,), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo.<br/>Puede pegar varias listas de remitentes o destinatarios separados por punto y coma`;`(). Espacios (`\s`), retorno de carro`\r`() o líneas siguientes`\n`() se permiten.
+> También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín (por ejemplo `*@contoso.com`,), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo.<br/>Puede pegar varias listas de remitentes o destinatarios separados por punto y coma (`;`). espacios (`\s`), retornos`\r`de carro () o líneas`\n`siguientes ().
 
 ### <a name="time-range"></a>Intervalo de tiempo
 
