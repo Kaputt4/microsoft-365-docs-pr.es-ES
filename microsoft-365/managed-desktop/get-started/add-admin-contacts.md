@@ -1,22 +1,24 @@
 ---
-title: Agregar contactos de administrador en el portal de administración de escritorio administrado de Microsoft
+title: Agregar y comprobar contactos de administrador en el portal de administración
 description: Indíquenos con quién ponerse en contacto para cada área de enfoque.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2178b871da412d12bf20dae9b72d7562e2bc4654
-ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
+ms.openlocfilehash: 3f77a5f6f0af83ea82d2ab3cea0798b95e27c2d2
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243951"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012071"
 ---
-# <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Agregar contactos de administrador en el portal de administración de escritorio administrado de Microsoft
+# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y comprobar contactos de administrador en el portal de administración
 
-Hay varias formas en las que el servicio de escritorio administrado de Microsoft se comunica con los clientes. Para simplificar la comunicación y asegurarse de que estamos comprobando los mejores contactos, debe proporcionar un conjunto de contactos de administración. Las operaciones de TI de escritorio administradas por Microsoft se contactan con estas personas para obtener ayuda para solucionar problemas relacionados con el espacio empresarial. 
+Hay varias formas en las que el servicio de escritorio administrado de Microsoft se comunica con los clientes. Para simplificar la comunicación y asegurarse de que estamos comprobando con las personas adecuadas, debe proporcionar un conjunto de contactos de administración. Las operaciones de TI de escritorio administradas por Microsoft se contactan con estas personas para obtener ayuda para solucionar problemas relacionados con el espacio empresarial.
+
+> [!IMPORTANT]
+> Es posible que ya haya agregado estos contactos en el portal de administración. Si es así, dedique un momento a comprobar que la lista de contactos es precisa, ya que el escritorio administrado de Microsoft **debe** poder llegar a ellos si se produce un incidente grave.
 
 ## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Portal de Azure Active Directory Access para la administración del escritorio administrado de Microsoft
 
@@ -26,27 +28,27 @@ El portal de administración de escritorio administrado de Microsoft requiere qu
 - Administrador de facturación
 - Administrador de soporte de servicio
 
-El administrador global debe ser el que inscriba al cliente en el escritorio administrado de Microsoft. Los cinco roles tienen el mismo acceso dentro del portal de administración para iniciar y ver las tareas. Para obtener más información sobre la asignación de estos roles en Azure AD, vea [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+El administrador global debe ser el único que inscriba a su organización en el escritorio administrado de Microsoft. Los cinco roles tienen el mismo acceso dentro del portal de administración para iniciar y ver las tareas. Para obtener más información sobre la asignación de estos roles en Azure AD, vea [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
 ## <a name="admin-contact-areas-of-focus"></a>Áreas de contacto del administrador enfocadas
 
-Los contactos de administrador deben ser la mejor persona o grupo que pueda responder preguntas y tomar decisiones para diferentes áreas de interés. Las operaciones de escritorio administradas de Microsoft se comunicarán con estos contactos de administrador para obtener preguntas relacionadas con las solicitudes de soporte técnico que haya archivado el cliente. Estos contactos de administración recibirán notificaciones de actualizaciones de solicitud de soporte y mensajes nuevos. Estas áreas incluyen:
+Los contactos de administrador deben ser la mejor persona o grupo que pueda responder preguntas y tomar decisiones para diferentes áreas de interés. **Las operaciones de escritorio administradas de Microsoft se comunicarán con estos contactos de administrador para obtener preguntas relacionadas con las solicitudes de soporte técnico que haya archivado el cliente.** Estos contactos de administración recibirán notificaciones de actualizaciones de solicitud de soporte y mensajes nuevos. Estas áreas incluyen:
 
 Área de foco | Para preguntas sobre
 --- | ---
 Empaquetado de aplicaciones | Solución de problemas de empaquetado de aplicaciones
 Dispositivos | Estado del dispositivo, solución de problemas con dispositivos de escritorio administrados por Microsoft
 Seguridad | Solución de problemas de seguridad de los dispositivos de escritorio administrados por Microsoft
-Departamento de soporte técnico de ti | en los casos donde Microsoft Managed Desktop Support ofrece a los tíquets del usuario final fuera de las áreas de soporte técnico de MMD 
+Departamento de soporte técnico de ti | en los casos en los que el personal de soporte técnico pasa a través de los vales de usuario final fuera de las áreas de soporte técnico de Microsoft administradas 
 Otros | Para problemas no cubiertos por otras áreas
 
-La persona que elija para estos contactos debe tener el conocimiento y la autoridad para tomar decisiones en su entorno de escritorio administrado por Microsoft. Cuando incorpore su entorno de escritorio administrado de Microsoft, se le pedirá que agregue contactos para el Departamento de soporte técnico y la seguridad locales. 
+**La persona que elija para estos contactos debe tener el conocimiento y la autoridad para tomar decisiones en su entorno de escritorio administrado por Microsoft.** Cuando incorpore su entorno de escritorio administrado de Microsoft, se le pedirá que agregue contactos para el Departamento de soporte técnico y la seguridad locales. 
 
 Los contactos de administración son necesarios cuando [envía una solicitud de soporte técnico](../working-with-managed-desktop/support.md). Necesitará tener un contacto de administrador para el área de enfoque de la solicitud de soporte técnico. 
 
 **Para agregar contactos de administrador**
 
-1.  Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal). 
+1.  Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal). 
 
 2.  En **soporte**, seleccione **contactos de administración**. 
 
@@ -62,3 +64,13 @@ Los contactos de administración son necesarios cuando [envía una solicitud de 
 
 5. Repita este procedimiento para cada área de enfoque. 
 
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar a trabajar con el escritorio administrado de Microsoft
+
+1. Agregar y comprobar los contactos de administrador en el portal de administración (este tema)
+2. [Ajustar el acceso condicional](conditional-access.md)
+3. [Asignar licencias](assign-licenses.md)
+4. [Instalar el portal de empresa de Intune en los dispositivos](company-portal.md)
+5. [Habilitación del itinerancia del estado de la empresa](enterprise-state-roaming.md)
+6. [Configurar dispositivos de escritorio administrados por Microsoft](set-up-devices.md)
+7. [Prepare a los usuarios para que usen los dispositivos](get-started-devices.md)
+8. [Implementar aplicaciones en dispositivos](deploy-apps.md)

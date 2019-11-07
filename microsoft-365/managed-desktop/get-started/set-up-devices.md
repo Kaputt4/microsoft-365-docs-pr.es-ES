@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd86637aeb0d8a8690729a97e81ad5e2bea62818
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 7282e1f9d780c127dd70845efefa90aa03e57537
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982893"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011851"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Configurar dispositivos de escritorio administrados por Microsoft
 
@@ -24,7 +24,7 @@ Le recomendamos trabajar con uno de nuestros socios de dispositivo aprobados. Pu
 1. Revise la lista de [dispositivos actualmente aprobados](../service-description/device-list.md).
 2. Ordenar los dispositivos, trabajando con un partner de dispositivos aprobado.
 3. Una vez que haya llegado, realice una de las siguientes acciones:
-    - [Registrar nuevos dispositivos usted mismo](register-devices-self.md)
+    - [Registre nuevos dispositivos usted mismo](register-devices-self.md)
     - Trabajar con un partner para registrar los dispositivos
 4. Preparar a los [usuarios](get-started-devices.md) para que usen dispositivos de escritorio administrados por Microsoft
 
@@ -32,6 +32,17 @@ Le recomendamos trabajar con uno de nuestros socios de dispositivo aprobados. Pu
 
 1. Revise la lista de [dispositivos actualmente aprobados](../service-description/device-list.md) para identificar cuál de sus dispositivos está aprobado para su uso con Microsoft Managed Desktop. Si vuelve a usar un dispositivo existente, tendrá que volver a crear una imagen.
 2. Realice una de las siguientes acciones:
-    - [Registrar los dispositivos existentes](register-reused-devices-self.md)
+    - [Registre dispositivos existentes usted mismo](register-reused-devices-self.md)
     - Trabajar con un partner para registrar los dispositivos
 3. Preparar a los [usuarios](get-started-devices.md) para que usen dispositivos de escritorio administrados por Microsoft
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar a trabajar con el escritorio administrado de Microsoft
+
+1. [Agregar y comprobar contactos de administrador en el portal de administración](add-admin-contacts.md)
+2. [Ajustar el acceso condicional](conditional-access.md)
+3. [Asignar licencias](assign-licenses.md)
+4. [Implementar el portal de empresa de Intune](company-portal.md)
+5. [Habilitación del itinerancia del estado de la empresa](enterprise-state-roaming.md)
+6. Configurar dispositivos (este tema)
+7. [Prepare a los usuarios para que usen los dispositivos](get-started-devices.md)
+8. [Implementar aplicaciones](deploy-apps.md)

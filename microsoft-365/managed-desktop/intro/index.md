@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: d3abfaa0901ff9dbc15aa6fcba3bb7a13e6afb84
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 45baa63fc475917a10c87cc66d1346af48479645
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697735"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012041"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el escritorio administrado por Microsoft?
 
@@ -24,7 +24,7 @@ El escritorio administrado de Microsoft se encarga de ello combinando la potenci
 
 <table>
 <tr><th>Alegría para los usuarios finales</th><th>Habilitarlo</th><th>Respaldado por Microsoft</th></tr>
-<tr><td><p>Dispositivo moderno</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Seguridad integrada</p><p>Iniciar sesión con el reconocimiento facial</p><p>Siempre al día</p></td><td><p>Seguridad integrada</p><p>Información que requiere acción</p><p>Compatibilidad con operaciones</p><p>Guía de expertos de Microsoft</p></td><td><p>Equipo de operaciones de seguridad</p><p>Seguimiento de estado</p><p>Copia de seguridad en la nube de datos</p><p>soporte técnico al usuario final 24x7</p></td></tr>
+<tr><td><p>Dispositivo moderno</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Seguridad integrada</p><p>Iniciar sesión con el reconocimiento facial</p><p>Siempre al día</p></td><td><p>Seguridad integrada</p><p>Información que requiere acción</p><p>Compatibilidad con operaciones</p><p>Guía de expertos de Microsoft</p></td><td><p>Equipo de operaciones de seguridad</p><p>Seguimiento de estado</p><p>Copia de seguridad en la nube de datos</p><p>soporte técnico al usuario final 24x7</p></td></tr>
 </table>
 
 El escritorio administrado de Microsoft proporciona a los clientes una solución de ti completa que Delight a los usuarios y libera recursos de TI para tareas más importantes. Hemos desarrollado este servicio en función de los comentarios que escuchamos con frecuencia:
@@ -41,7 +41,7 @@ El escritorio administrado de Microsoft proporciona la mejor experiencia de usua
 - [Descripción del servicio Escritorio administrado de Microsoft](../service-description/index.md)
 - [Requisitos previos del escritorio administrado de Microsoft](../get-ready/prerequisites.md).
 
-<!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
+<!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  

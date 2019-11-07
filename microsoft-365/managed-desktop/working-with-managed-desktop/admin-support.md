@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b17b5a3458458ff0c73c93fa184ef8ff6a064199
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37159688"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012001"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte de administración para escritorio administrado de Microsoft
 
@@ -21,7 +21,7 @@ Puede enviar Vales de soporte o solicitudes de comentarios a Microsoft mediante 
 >Asegúrese de [configurar un contacto de administración](../get-started/add-admin-contacts.md) para el empaquetado de la aplicación, los dispositivos, la seguridad y otros. No puede enviar una solicitud de soporte técnico en ninguna de estas áreas si no hay configurado un contacto de administración.
 
 **Para enviar una solicitud de soporte técnico**
-1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal). 
+1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal). 
 2. En **solicitudes de soporte**, seleccione **+ nuevo vale de soporte técnico**.
 3. Seleccione el **tipo de solicitud de soporte** que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones. 
 4. Seleccione el **nivel de gravedad**. Para obtener más información, consulte [support request Severity Definitions](#sev). 

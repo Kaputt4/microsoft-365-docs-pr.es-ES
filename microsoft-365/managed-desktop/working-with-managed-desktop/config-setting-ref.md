@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: da8f88251f6d1ae3185641dd408b29aa41cd7ea9
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390417"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012265"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referencia de opciones configurables-escritorio administrado por Microsoft
 
@@ -21,7 +21,7 @@ En este tema se enumeran las categorías de configuración que los clientes pued
 ## <a name="desktop-background-picture"></a>Imagen de fondo de escritorio
 Puede personalizar la imagen de fondo de escritorio de los dispositivos de escritorio administrados por Microsoft en su organización. Puede usar esto para aplicar una marca de empresa o material de marketing. 
 
-### <a name="requirements"></a>Requisitos
+### <a name="requirements"></a>Requirements
 
 Estos requisitos se deben cumplir para una imagen de fondo de escritorio:
 - Formato de archivo de imagen:. jpg, JPEG o. png
@@ -31,7 +31,7 @@ Estos requisitos se deben cumplir para una imagen de fondo de escritorio:
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Personalizar e implementar la imagen de fondo de escritorio
 
 **Para agregar una imagen de fondo de escritorio personalizada**
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal)
+1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
 2. En **configuración**, seleccione **configurable**.
 3. En área de trabajo **configurable** , seleccione **imagen de fondo de escritorio**. 
 4. Escriba la ubicación de la imagen que desea usar. 
@@ -40,14 +40,14 @@ Estos requisitos se deben cumplir para una imagen de fondo de escritorio:
 ## <a name="browser-start-pages"></a>Páginas de inicio del explorador
 Las páginas de inicio del explorador se abren en pestañas individuales cuando los usuarios inician Microsoft Edge. Si desea que los usuarios puedan abrir fácilmente un conjunto de sitios que usan con frecuencia, agregue una página de inicio de explorador para cada sitio. 
 
-### <a name="requirements"></a>Requisitos
+### <a name="requirements"></a>Requirements
 
 Debe proporcionar el nombre de dominio completo (FQDN) para los sitios de intranet o Internet en las páginas de inicio del explorador. Si se configuran los sitios internos, informe a los usuarios de que solo se permite el acceso a estos sitios cuando está conectado a la red interna en la oficina o cuando está conectado con una conexión VPN. 
 
 ### <a name="customize-and-deploy-browser-start-pages"></a>Personalización e implementación de páginas de inicio del explorador
 
 **Para agregar una página de inicio del explorador**
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal)
+1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
 2. En **configuración**, seleccione **configurable**.
 3. En área de trabajo **configurable** , seleccione **páginas de inicio del explorador**. 
 4. Seleccione **Agregar página de inicio**.
@@ -61,7 +61,7 @@ Si tienes sitios web y aplicaciones específicos en los que conoces problemas de
 
 Puede especificar una ubicación de https://o la ubicación de un recurso compartido interno donde haya hospedado la lista de sitios del modo de empresa. 
 
-### <a name="requirements"></a>Requisitos
+### <a name="requirements"></a>Requirements
 
 Estos requisitos deben cumplirse para el archivo de lista de sitios del modo de empresa:
 - Formato de archivo: archivo XML que cumple [los requisitos de archivo](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
@@ -78,7 +78,7 @@ Se ofrecen estos procedimientos recomendados para ayudar a los clientes a tomar 
 
 **Para agregar una ubicación de la lista en el modo de sitio de empresa**
 
-1.  Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal)
+1.  Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
 2.  En **configuración**, seleccione **configurable**.
 3.  En área de trabajo **configurable** , seleccione ubicación de la **lista de sitios del modo de empresa**. 
 4.  Escriba la ubicación https de la lista de sitios. 
@@ -92,7 +92,7 @@ Los sitios de confianza permiten personalizar las zonas de seguridad o dónde se
 - Zona 3: zona de Internet
 - Zona 4: zona de sitios restringidos
 
-### <a name="requirements"></a>Requisitos
+### <a name="requirements"></a>Requirements
 
 Proporcione el nombre de dominio completo (FQDN) para los sitios de intranet o de Internet para cada sitio de confianza. 
 
@@ -100,7 +100,7 @@ Proporcione el nombre de dominio completo (FQDN) para los sitios de intranet o d
 
 **Para agregar un sitio de confianza**
 
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal)
+1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
 2. En **configuración**, seleccione **configurable**.
 3. En área de trabajo **configurable** , seleccione **sitios de confianza**y, a continuación, seleccione **Agregar sitio de confianza**. 
 4. En **Agregar sitio de confianza**, escriba la dirección URL, elija una zona de seguridad y, a continuación, seleccione **Agregar sitio de confianza**. 
@@ -109,7 +109,7 @@ Proporcione el nombre de dominio completo (FQDN) para los sitios de intranet o d
 
 **Para quitar un sitio de confianza**
 
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal)
+1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
 2. En **configuración**, seleccione **configurable**.
 3. En área de trabajo **configurable** , seleccione **sitios de confianza**. 
 4. Seleccione el sitio que desea eliminar y, a continuación, seleccione **eliminar**. 
@@ -124,7 +124,7 @@ Las excepciones de sitio de proxy que agregue en el portal de escritorio adminis
 > [!NOTE]
 > La actualización de la lista de excepciones de proxy predeterminada siempre tiene prioridad sobre las implementaciones de clientes. Esto significa que la implementación preconfigurada se pondrá en pausa si hay una implementación para la lista de excepciones de proxy predeterminada.  
 
-### <a name="requirements"></a>Requisitos
+### <a name="requirements"></a>Requirements
 
 Estos requisitos se deben cumplir con las excepciones de servidor proxy y de sitio proxy:
 - Debe ser una dirección de servidor y un número de Puerto válidos
@@ -134,7 +134,7 @@ Estos requisitos se deben cumplir con las excepciones de servidor proxy y de sit
 
 **Para agregar una excepción de sitio de proxy individual**
 
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mwaasportal)
+1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
 2. En **configuración**, seleccione **configurable**.
 3. En área de trabajo **configurable** , seleccione **proxy**. 
 4. Escriba la **Dirección** y el **número de Puerto** del servidor proxy y, a continuación, seleccione **Agregar excepción de proxy**. 
@@ -144,4 +144,4 @@ Estos requisitos se deben cumplir con las excepciones de servidor proxy y de sit
 
 ## <a name="additional-resources"></a>Otros recursos
 - [Información general de configuración configurable](config-setting-overview.md) 
-- [Implementar opciones configurables](config-setting-deploy.md)
+- [Implementar parámetros configurables](config-setting-deploy.md)

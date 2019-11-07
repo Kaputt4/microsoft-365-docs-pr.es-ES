@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390737"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012415"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Administrar aplicaciones de línea de negocio en el escritorio administrado por Microsoft
 
@@ -25,7 +25,7 @@ Hay un par de maneras de administrar las actualizaciones de aplicaciones para la
 ## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Actualizar las aplicaciones de línea de negocio en el escritorio administrado por Microsoft
 
 **Para actualizar las aplicaciones de línea de negocio en el portal de escritorio administrado de Microsoft**
-1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mmdportal).
+1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal).
 2. En **inventario**, seleccione **aplicaciones**.  
 3. Seleccione la aplicación que desea actualizar y, a continuación, seleccione **Editar**.
 4. En **administrar**, seleccione **propiedades**. 
@@ -42,7 +42,7 @@ La aplicación actualizada se implementará en los dispositivos del usuario.
 
 **Para actualizar las aplicaciones de línea de negocio en Intune**
 1. Inicie sesión en [Azure portal](https://azure.portal.com).
-2. Seleccione **todos los servicios** > **** de Intune. Intune se encuentra en la sección **Monitoring + Management** .
+2. Seleccione **todos los servicios** > de**Intune**. Intune se encuentra en la sección **Monitoring + Management** .
 3. Seleccione aplicaciones **cliente > aplicaciones**.
 4. Busque y seleccione su aplicación en la lista de aplicaciones.
 5. En la hoja **información general** , seleccione **propiedades**.
@@ -58,7 +58,7 @@ Si se produce un error cuando se implementa una nueva versión de una aplicació
 
 **Para volver a una versión anterior de una aplicación de línea de negocio**
 
-1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](http://aka.ms/mmdportal).
+1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal).
 2. En **inventario**, seleccione **aplicaciones**.  
 3. Seleccione la aplicación que necesita volver y, después, seleccione **Editar**.
 4. En **administrar**, seleccione **propiedades**. 

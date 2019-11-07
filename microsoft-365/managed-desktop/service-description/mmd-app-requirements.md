@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 6b5f1d7cf8070808aecb57c7f5b2c16ec84b37d6
+ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982461"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38020373"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisitos de la aplicación de escritorio administrada de Microsoft
 
@@ -38,7 +38,7 @@ Ciertos tipos de aplicaciones no se permiten en dispositivos de escritorio admin
 
 ## <a name="restricted-app-behaviors"></a>Comportamientos de aplicación restringidos
 
-Algunos comportamientos de la aplicación pueden afectar negativamente a la experiencia del usuario o pueden presentar un riesgo de seguridad para los dispositivos de escritorio administrados por Microsoft. No se permite que las aplicaciones con los siguientes comportamientos se ejecuten en el entorno de escritorio administrado por Microsoft sin una exención específica de Microsoft.
+Algunos comportamientos de la aplicación pueden afectar negativamente a la experiencia del usuario o pueden presentar un riesgo de seguridad para los dispositivos de escritorio administrados por Microsoft. No se permite que las aplicaciones con los siguientes comportamientos se ejecuten en el entorno de escritorio administrado por Microsoft sin una específica de Microsoft.
 
 Experiencia del usuario:
 - Instalar los servicios en segundo plano
@@ -58,5 +58,5 @@ Seguridad:
 
 El escritorio administrado de Microsoft solo admite controladores de dispositivos que están disponibles a través de Windows Update o la bandeja de entrada instalada con el dispositivo administrado por Microsoft. 
 
-Si una aplicación requiere un controlador o controladores específicos para ejecutarse, se considera una aplicación restringida y requiere que se implemente una exención en el escritorio administrado de Microsoft. 
+Si una aplicación requiere un controlador o controladores específicos para ejecutarse, se considera una aplicación restringida y requiere que se implemente en el escritorio administrado de Microsoft. 
 

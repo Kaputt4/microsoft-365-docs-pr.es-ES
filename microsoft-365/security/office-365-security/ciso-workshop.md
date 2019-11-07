@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: b00d18e9d14d369716f9c37fb9975f55d3c0eece
-ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
+ms.openlocfilehash: 9a6fc72cd905a99b555417269aa9f7ec84faef1f
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37554127"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012425"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Formación del taller Chief Information Security Office (CISO)
 
@@ -32,7 +32,7 @@ Los vídeos del taller de CISO y el contenido de descarga de PDF o PowerPoint so
 
 - [Módulo 2: administración](ciso-workshop-module-2.md)de la seguridad: Aprenda a aumentar la visibilidad y el control sobre su empresa híbrida con instrucciones integradas, aplicación automatizada de directivas y supervisión.
 
-- [Módulo 3: módulo 3: identidad y acceso de usuario de confianza cero](ciso-workshop-module-3.md): Aprenda a adelantar la confianza cero con su estrategia de identidad y acceso de usuario para proteger mejor los datos corporativos dentro y fuera del perímetro de la red.
+- [Módulo 3: acceso de usuario de identidades y de confianza cero](ciso-workshop-module-3.md): Aprenda a adelantar la confianza cero con su estrategia de identidad y acceso de usuario para proteger mejor los datos corporativos dentro y fuera del perímetro de la red.
 
 - [Módulo 4A: estrategia de protección contra amenazas, parte I](ciso-workshop-module-4a.md): Explore los aprendizajes clave sobre la protección contra amenazas, la evolución de la seguridad, las estrategias y los mapas de seguridad de la carretera.
 

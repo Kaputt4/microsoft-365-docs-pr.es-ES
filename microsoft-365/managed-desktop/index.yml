@@ -23,27 +23,27 @@ sections:
           - href: intro/index.md
             html: '<p>Introducción al escritorio administrado por Microsoft para los responsables de la toma de decisiones: Qué es, cómo funciona y qué puede hacer por usted</p>'
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
+              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
             title: ¿Qué es el escritorio administrado por Microsoft?
           - href: service-description/index.md
             html: <p>Descripción detallada de todas las partes del escritorio administrado por Microsoft</p>
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
             title: Descripción del servicio
           - href: get-ready/index.md
             html: <p>Todos los pasos para conseguir que su entorno y su organización estén preparados para trabajar con el servicio</p>
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
+              src: 'https://docs.microsoft.com/media/common/i_support.svg'
             title: Preparación
           - href: get-started/index.md
             html: '<p>Obtener una organización a bordo con escritorio administrado por Microsoft, incluida la configuración de dispositivos y la implementación de aplicaciones</p>'
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
             title: Introducción
           - href: working-with-managed-desktop/index.md
             html: <p>Sobre las operaciones diarias con el servicio</p>
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
+              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
             title: Trabajar con el Escritorio administrado de Microsoft
   - title: Nuevos artículos y publicaciones de blog
     items:
@@ -57,11 +57,11 @@ sections:
           - href: 'https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/'
             title: Blog Colaborar con clientes y socios para proporcionar un escritorio moderno
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_architecture.svg'
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
           - href: 'https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html'
             title: 'Artículo Escritorio administrado por Microsoft: todos los dispositivos con Windows 10, administrados por Microsoft'
             image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_guide.svg'
+              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
   - title: Vídeos
     items:
       - type: markdown
