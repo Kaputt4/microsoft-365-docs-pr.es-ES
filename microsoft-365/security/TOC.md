@@ -3,6 +3,7 @@
 ## Introducción
 ### [Microsoft 365 Security para BDM](Microsoft-365-security-for-bdm.md)
 ### [Puntuación de seguridad](./mtp/microsoft-secure-score.md)
+### [Puntuación de seguridad (versión preliminar)](./mtp/microsoft-secure-score-preview.md)
 ### [Taller de aprendizaje de director de seguridad de la información (CISO) ](./office-365-security/ciso-workshop.md)
 #### [Módulo 1: referencia de ciberseguridad de Microsoft](./office-365-security/ciso-workshop-module-1.md)
 #### [Módulo 2: administración de seguridad](./office-365-security/ciso-workshop-module-2.md)
