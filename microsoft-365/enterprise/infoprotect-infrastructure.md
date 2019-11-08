@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar la infraestructura de protección de la información para Microsoft 365 Enterprise.
-ms.openlocfilehash: 54866ceb1fa72f404a5d255cb130c70fe180c493
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c90fc039124f479629acd5cca414c937a1f5a10d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370457"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030855"
 ---
 # <a name="phase-6-information-protection"></a>Fase 6: Protección de la información
 
@@ -51,7 +51,7 @@ Cuando complete estos pasos, vaya a los [criterios de salida](infoprotect-exit-c
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Obtenga información sobre cómo los expertos de TI de Microsoft usan [Azure Information Protection para salvaguardar los datos](https://www.microsoft.com/es-ES/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
+Obtenga información sobre cómo los expertos de TI de Microsoft usan [Azure Information Protection para salvaguardar los datos](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Cómo Contoso hizo Microsoft 365 Enterprise
 

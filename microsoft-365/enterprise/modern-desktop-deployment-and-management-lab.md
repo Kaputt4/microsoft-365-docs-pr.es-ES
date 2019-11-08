@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981701"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031115"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
@@ -26,7 +26,7 @@ Estos laboratorios prácticos para descargar se centran en la implementación de
 
 Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos que ejecuten Windows 10 Enterprise y Office 365 ProPlus. Los laboratorios abarcan los pasos y las herramientas que se describen en la rueda de implementación de escritorio, incluyendo el System Center Configuration Manager, Desktop Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 
-Como parte del proceso de [implementación de escritorio](http://www.aka.ms/howtoshift) para Windows 10 y Office 365 ProPlus, se recomienda empezar con un entorno de laboratorio aislado cuando comience a explorar las actualizaciones de la herramienta de implementación y a probar su automatización en el marco de la implementación.
+Como parte del proceso de [implementación de escritorio](https://www.aka.ms/howtoshift) para Windows 10 y Office 365 ProPlus, se recomienda empezar con un entorno de laboratorio aislado cuando comience a explorar las actualizaciones de la herramienta de implementación y a probar su automatización en el marco de la implementación.
 
 El kit de laboratorio es gratuito y usa software de evaluación.
 
@@ -122,11 +122,11 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 ## <a name="additional-guidance"></a>**Instrucciones adicionales**
 
-  - [Centro de implementación de escritorios](http://www.aka.ms/howtoshift)
+  - [Centro de implementación de escritorios](https://www.aka.ms/howtoshift)
 
-  - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Implementación de sistema operativo de System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Implementación de sistema operativo de System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan de implementación de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

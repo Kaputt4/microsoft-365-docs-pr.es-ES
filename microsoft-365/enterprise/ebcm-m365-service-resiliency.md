@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Descripción del tema de la resiliencia
-ms.openlocfilehash: 4c718674a70186b004d8fefc5381074dba81c164
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122290"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031055"
 ---
 # <a name="built-in-resiliency"></a>Resiliencia integrada
 
@@ -26,7 +26,7 @@ Como proveedor de colaboración en la nube, Microsoft reconoce la necesidad de g
 
 **"Inactividad de SharePoint Online**: cualquier período de tiempo en el que los usuarios no puedan leer ni escribir ninguna parte de una colección de sitios de SharePoint Online para la que tengan los permisos adecuados".
 
-Puede encontrar las definiciones de tiempo de inactividad para cada servicio en los [contratos de nivel de servicio](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+Puede encontrar las definiciones de tiempo de inactividad para cada servicio en los [contratos de nivel de servicio](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 Para minimizar el tiempo de inactividad, tanto planeado como imprevisto, los servicios de Microsoft 365 están diseñados y se pueden gestionar para que estén altamente disponibles y sean resilientes frente a errores centrándose en cuatro áreas:
 

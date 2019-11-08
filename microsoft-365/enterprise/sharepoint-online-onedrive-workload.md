@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se detalla el proceso de planeación, implementación y aumento del valor de SharePoint en toda la organización.
-ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
-ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
+ms.openlocfilehash: 74ab3b65597cdf1752dd5dbf9179724464c998a3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37469152"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031645"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Implementar SharePoint y OneDrive para Microsoft 365 Enterprise
 
@@ -165,7 +165,7 @@ Su organización ha adoptado SharePoint en Microsoft 365 Enterprise para mejorar
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Para echar un vistazo a Microsoft y conocer cómo implementamos SharePoint, vea [SharePoint en la nube: cómo Microsoft llevó a cabo su propia migración](https://www.microsoft.com/es-ES/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
+Para echar un vistazo a Microsoft y conocer cómo implementamos SharePoint, vea [SharePoint en la nube: cómo Microsoft llevó a cabo su propia migración](https://www.microsoft.com/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
 
 ## <a name="next-steps"></a>Siguientes pasos
 

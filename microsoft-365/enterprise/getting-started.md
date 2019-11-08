@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introducción al proceso de implementación de escritorio.
-ms.openlocfilehash: 60389149e286bca8e27f50dabee8aaf03f52c90c
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 89aeb74eddad4b973854e9900800e1fbcf262f9e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584527"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030975"
 ---
 # <a name="getting-started---desktop-deployment"></a>Introducción: Implementación de escritorio
 
@@ -49,9 +49,9 @@ Combinados, Windows 10 y Microsoft Intelligence Cloud mejoran su capacidad para 
 
 Uno de los inquilinos clave de prácticas moderna son los dispositivos que siempre están actualizados. A través de esta serie se informará acerca de las nuevas funciones que se publican para ayudarle a cambiar a Windows 10 y Office 365 ProPlus y mantenerse al día con las versiones semestrales de ambos.
 
-[Windows 10 para el profesional de TI](https://www.microsoft.com/es-ES/itpro/windows-10)
+[Windows 10 para el profesional de TI](https://www.microsoft.com/itpro/windows-10)
 
-[About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/es-ES/deployoffice/about-office-365-proplus-in-the-enterprise) (Información acerca de Office 365 ProPlus en un entorno empresarial)
+[About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) (Información acerca de Office 365 ProPlus en un entorno empresarial)
 
 ## <a name="what-has-changed"></a>¿Qué ha cambiado?
 
@@ -59,23 +59,23 @@ Comencemos echando un vistazo a lo que ha cambiado y mejorado desde su última i
 
 **Identidades y acceso:** Windows 10 y Office 365 ProPlus, con su conectividad a los servicios de administración, la seguridad y la productividad en la nube, tienen en su base un nuevo servicio de Administración de identidades y acceso: Azure Active Directory (Azure AD). Esto permite conectividad segura y el inicio de sesión único en los servicios de nube, lo que significa que va a necesitar Azure AD para aprovechar las ventajas de los servicios de Microsoft 365 como Office 365, Intune o Windows Autopilot.
 
-[Microsoft 365](https://www.microsoft.com/es-ES/microsoft-365/default.aspx)
+[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 
 **Entorno de inicio previo seguro:** el firmware de UEFI de 64 bits reemplaza a BIOS. Esto no solo acelera el tiempo de inicio, es necesario para habilitar muchas de las funciones de seguridad modernas en Windows 10. Aunque Windows 10 se ejecutará en BIOS, se recomienda encarecidamente UEFI. Si ha cambiado de BIOS a UEFI y usa la versión de 64 bits, ahora es el momento. Existen herramientas para ayudarle a realizar este cambio durante una actualización de Windows 10 o después de ella.
 
 **Administración de dispositivos en la nube:** los servicios como Microsoft Intune le ayudan a administrar dispositivos de Windows 10 como lo haría con otros dispositivos móviles, todo desde un solo lugar. Lo que hace que Microsoft Intune sea único es la capacidad de administrar los dispositivos de Windows 10 con System Center Configuration Manager. Puede usar System Center Configuration Manager para ayudarle en el cambio a Windows 10 y después agregar Microsoft Intune. Trabajar conjuntamente, System Center Configuration Manager se convierte en la inteligencia perimetral de la organización, conectada a la nube inteligente de Microsoft. Esto le permite administrar los dispositivos de los usuarios de forma segura estén donde estén, ya estén conectados en la infraestructura de su organización o en la nube pública.
 
-[Administración conjunta para dispositivos con Windows 10](https://docs.microsoft.com/es-ES/sccm/core/clients/manage/co-management-overview)
+[Administración conjunta para dispositivos con Windows 10](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
 
 **Servicio de implementación basado en la nube:** hemos introducido un nuevo servicio de nube para ayudarle a implementar dispositivos Microsoft 365 a medida que adquiere nuevos equipos, el servicio de implementación Windows Autopilot. Autopilot se integra con los proveedores de hardware y los nuevos equipos se registran automáticamente en Autopilot, lo que permite que el nuevo equipo se envíe directamente a los usuarios finales. Cuando el equipo se encienda por primera vez se configura rápidamente con las opciones deseadas de la organización y se personaliza para las necesidades específicas del usuario.
 
-[Windows Autopilot](https://www.microsoft.com/es-ES/windowsforbusiness/windows-autopilot)
+[Windows Autopilot](https://www.microsoft.com/windowsforbusiness/windows-autopilot)
 
 **Implementaciones de Hacer clic y ejecutar:** cuando aprovisiona aplicaciones de escritorio de Office, Office 365 ProPlus es la opción preferida. Le da acceso a las nuevas innovaciones de Office mientras se desarrollan, por lo que no tendrá que esperar años antes de obtener las nuevas funciones. También usará una nueva instalación denominada Hacer clic y ejecutar.
 
 Hacer clic y ejecutar es bastante diferente de los paquetes basados en MSI del pasado. Hacer clic y ejecutar es más rápido, ligero y es compatible con las actualizaciones en segundo plano para que los usuarios se mantengan productivos. Sigue siendo una copia local de Office y aún puede usar las herramientas de implementación existentes, como System Center Configuration Manager, para aprovisionar y configurar las aplicaciones.
 
-[Guía de implementación de Office 365 ProPlus](https://docs.microsoft.com/es-ES/DeployOffice/deployment-guide-for-office-365-proplus)
+[Guía de implementación de Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
 **Actualizaciones semestrales:** una vez que haya cambiado a Windows 10 y Office 365 ProPlus, las actualizaciones se entregan de forma semestral con nuevas características. Pero con la capacidad de Microsoft de ofrecer información de la nube para ayudarle, puede implementar rápidamente y con confianza estas actualizaciones a cientos o miles de dispositivos. Como una actualización local, la actualización de características conserva aplicaciones, datos y configuraciones de la versión anterior.
 
@@ -85,7 +85,7 @@ Antes de empezar, deberá crear un plan de alto nivel y obtener a el respaldo de
 
 **[Paso 1: Disponibilidad de aplicaciones y dispositivos](https://aka.ms/mdd1) ** Para una implementación correcta debe conocer lo que tiene. Eso significa que debe realizar un inventario de los dispositivos y las aplicaciones y comprobar la compatibilidad. Para ayudarle con esto puede aprovechar las herramientas disponibles en nuestro servicio basado en la nube, Desktop Analytics. Desktop Analytics le permite aprovechar la inteligencia de compatibilidad y los datos de diagnóstico recopilados en cientos de millones de equipos, para evaluar las aplicaciones y los controladores en el dispositivo para poder establecer la preparación de sus equipos. Incluso puede exportar una lista de "Equipos listos para la implementación" de Desktop Analytics a System Center Configuration Manager si lo usa, lo que le permite crear colecciones basadas en datos de equipos de destino cuando estén listos.
 
-[Empezar con Upgrade Readiness](https://docs.microsoft.com/es-ES/windows/deployment/upgrade/upgrade-readiness-get-started)
+[Empezar con Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-get-started)
 
 **[Paso 2: Preparación de red y de directorio](https://aka.ms/mdd2) ** Si todavía no lo ha hecho, después deberá implementar Azure Active Directory para la administración de acceso y de identidad. También tendrá que preparar su red en el movimiento de las imágenes del sistema, los paquetes de aplicaciones, los archivos de usuario y las actualizaciones por ella. Eso implica una gran cantidad de datos adicionales. La red debe tener la capacidad de soportar esta carga adicional sin afectar a las tareas diarias de su organización. Tenemos un rango de optimizaciones de red disponibles en las opciones de punto a punto y de limitación de ancho de banda para la limpieza de ancho de banda dinámica y la actualización diferencial.
 
@@ -99,22 +99,22 @@ Antes de empezar, deberá crear un plan de alto nivel y obtener a el respaldo de
 
 Como en anteriores actualizaciones, la Herramienta de migración de estado de usuario sigue siendo una herramienta valiosa para automatizar este proceso y sigue siendo una parte integral de las migraciones organizadas con System Center Configuration Manager o Microsoft Deployment Toolkit. Pero mover todos los datos durante la migración puede ser un cuello de botella de intervalos para la sustitución de equipos debido a la física de transferir hasta cientos de gigabytes por equipo dos veces: primero desde el escritorio existente y después al nuevo escritorio. Una nueva opción que permite OneDrive conocida como Mover a carpeta conocida se utiliza para sincronizar archivos, documentos e imágenes a escala a la nube antes de la implementación.
 
-[Redirigir y mover las carpetas conocidas de Windows a OneDrive](https://docs.microsoft.com/es-ES/onedrive/redirect-known-folders)
+[Redirigir y mover las carpetas conocidas de Windows a OneDrive](https://docs.microsoft.com/onedrive/redirect-known-folders)
 
 **[Paso 5: Seguridad y cumplimiento](https://aka.ms/mdd5)** El área de seguridad y cumplimiento tiene muchas ventajas a la hora de trasladarse a Windows 10 y Office 365 ProPlus. Es importante que se familiarice con las nuevas características integradas y las compare con lo que ya tiene. Por ejemplo, las nuevas capacidades de Windows 10 con seguridad basada en virtualización pueden evitar el robo de credenciales, proteger contra vulnerabilidades del navegador y la ejecución de código malicioso al aislar los procesos principales y secretos del sistema operativo. Además, los servicios de la nube como Advanced Threat Protection proporcionan una plataforma unificada para fortalecimiento de la seguridad, detección de incursiones, investigación y respuesta. Advanced Threat Protection también puede protegerle contra archivos adjuntos de correo, hipervínculos poco seguros y mucho más.
 
-[Microsoft Security](https://www.microsoft.com/es-ES/security/default.aspx)
+[Microsoft Security](https://www.microsoft.com/security/default.aspx)
 
 **[Paso 6: Implementación del sistema operativo y actualizaciones de características](https://aka.ms/mdd6)** Con todo preparado, el siguiente paso consiste en implementar las imágenes del sistema operativo. Gran parte del trabajo puede realizarse con la infraestructura y las secuencias de tareas de System Center Configuration Manager. La estrategia recomendada consiste en realizar un despliegue por fases, primero con la implementación en un "grupo preferente" de su organización que disponga del mismo conjunto representativo de hardware y aplicaciones. Después, puede usar los datos de esos dispositivos y usuarios para realizar la implementación en más PC.
 
-[Introducción a la implementación de un sistema operativo en System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/understand/introduction-to-operating-system-deployment)
+[Introducción a la implementación de un sistema operativo en System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 
 **[Paso 7: Windows y Office como servicio](https://aka.ms/mdd7) ** Esto representa un gran cambio en la manera de mantener los escritorios de los usuarios. Con el cambio a Windows 10 y Office 365 ProPlus puede pasar a administrar Windows y Office como un servicio. En lugar de un cambio masivo en tecnología cada pocos años, introducirá continuamente nuevas funciones, experiencias y protecciones para el usuario. Las actualizaciones de características semestrales ofrecen nuevas funciones en el otoño y la primavera de cada año, mientras que las actualizaciones acumulativas mensuales contienen correcciones de errores, de fiabilidad y de seguridad. Aunque puede optar por implementar al cliente de Office 2019, le recomendamos cambiar a Office 365 ProPlus. Este sigue un plan de servicio similar a Windows por lo que los usuarios también reciben actualizaciones para las aplicaciones de Office de forma regular.
 
 ![](media/getting-started-media/getting-started-media-2.png)
 
-[Información general de Windows como servicio](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-overview)
-[Información general de Office como servicio](https://docs.microsoft.com/es-ES/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[Información general de Windows como servicio](https://docs.microsoft.com/windows/deployment/update/waas-overview)
+[Información general de Office como servicio](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
 
 **[Paso 8: Comunicaciones y aprendizaje de usuario](https://aka.ms/mdd8) ** Este último paso es fundamental para fomentar el uso de las nuevas funcionalidades para mejorar el trabajo en equipo, las comunicaciones, la seguridad y mucho más. Antes de que la implementación se dirija a usuarios ajenos a los círculos de usuarios pioneros, le recomendamos que publique aprendizaje y comunicaciones de usuarios. Esto le ayudará a impulsar cambios deseados en cómo acceden a las nuevas capacidades de Office, Windows u otras aplicaciones y servicios de línea de negocio. Para ayudarle, proporcionamos formación en línea gratuita a través de Microsoft FastTrack. Además, hemos publicado planes de comunicación y escalas de tiempo de muestra gratuitos junto con plantillas de correo electrónico, redes social e intranet para ayudarle con la implementación de Windows 10. Como una organización de Microsoft 365 u Office 365, su organización también puede ser elegible para soporte directo.
 

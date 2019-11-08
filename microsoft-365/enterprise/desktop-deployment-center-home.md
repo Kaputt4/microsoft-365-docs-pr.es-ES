@@ -14,24 +14,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Información general acerca del Centro de implementación de escritorios.
-ms.openlocfilehash: 16cabf8080e6d3a04805a4fcce385a80ec80dfd6
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 0e901a162be61c7be2465a0054669ebc459e6f3f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982091"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031095"
 ---
 # <a name="desktop-deployment-center"></a>Centro de implementación de escritorios
 
 <strong>Actualizar de Windows 7 a Windows 10</strong>
-<p>El soporte técnico ampliado de Windows 7 finaliza el 14 de enero de 2020. La forma de implementación más rápida es realizar una actualización local de Windows 7 a Windows 10. Puede <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">actualizar un solo equipo</a> o <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">actualizar miles de equipos con System Center Configuration Manager</a>. Con las actualizaciones locales no es necesario que invierta tiempo en la entrega de aplicaciones, la migración de archivos, la creación de imágenes personalizadas o la habilitación de los servicios en la nube. Puede usar las herramientas que ya tiene para actualizar las computadoras de escritorio existentes y centrarse en los siguientes pasos de implementación para las actualizaciones: </p>
+<p>El soporte técnico ampliado de Windows 7 finaliza el 14 de enero de 2020. La forma de implementación más rápida es realizar una actualización local de Windows 7 a Windows 10. Puede <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">actualizar un solo equipo</a> o <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">actualizar miles de equipos con System Center Configuration Manager</a>. Con las actualizaciones locales no es necesario que invierta tiempo en la entrega de aplicaciones, la migración de archivos, la creación de imágenes personalizadas o la habilitación de los servicios en la nube. Puede usar las herramientas que ya tiene para actualizar las computadoras de escritorio existentes y centrarse en los siguientes pasos de implementación para las actualizaciones: </p>
 
 <p>
 </p>
 
 <ul class="panelContent cardsM">
     <li>
-        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-2-directory-and-network-readiness">
+        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -50,7 +50,7 @@ ms.locfileid: "36982091"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-1-device-and-app-readiness">
+        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,7 +69,7 @@ ms.locfileid: "36982091"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
+        <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

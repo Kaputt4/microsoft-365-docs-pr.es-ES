@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo usa Contoso las características de seguridad de Microsoft 365 Enterprise.
-ms.openlocfilehash: 394120f811057258afe1bd29e60733e42bf5191a
-ms.sourcegitcommit: 4acd6fc368f547eb7a25d04799cb1a77003b143d
+ms.openlocfilehash: ada72460adffce46951b8784d90b6cfa29b35bc3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37372721"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031105"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Resumen de seguridad de Microsoft 365 Enterprise para Contoso Corporation
 
@@ -111,7 +111,7 @@ De acuerdo con los procedimientos recomendados de seguridad y los requisitos de 
 
 - Evitar filtraciones de datos de la intranet con Prevención de pérdida de datos de Office 365
 
-  Contoso ha configurado directivas de [Prevención de Pérdida de Datos](https://docs.microsoft.com/es-ES/microsoft-365/compliance/data-loss-prevention-policies) para Exchange Online, SharePoint y OneDrive para la Empresa con el fin de evitar que los usuarios compartan datos confidenciales de forma accidental o deliberada.
+  Contoso ha configurado directivas de [Prevención de Pérdida de Datos](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) para Exchange Online, SharePoint y OneDrive para la Empresa con el fin de evitar que los usuarios compartan datos confidenciales de forma accidental o deliberada.
 
 - Evitar pérdidas de datos de dispositivo con Windows Information Protection
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los dispositivos y las aplicaciones en el entorno.
-ms.openlocfilehash: dda8291e8f57e4855e582614573d6971fa3919f1
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37422567"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031635"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Paso 1: Preparación de dispositivos y aplicaciones
 
@@ -59,7 +59,7 @@ Análisis de escritorio ofrece numerosas ventajas para los sistemas de administr
 
 Para configurar Análisis de escritorio primero debe configurar una suscripción de Azure e incluir un área de trabajo de Análisis del registro de Azure para ello. Una vez que se esté ejecutando el servicio de Análisis de escritorio, podrá inscribir cualquier dispositivo con Windows 7 SP1 o una versión posterior conectado a Internet mediante la configuración de Directiva de grupo. Así de simple. No tiene que implementar ningún agente y el flujo de trabajo visual de Análisis de escritorio le guiará desde la implementación de prueba a la de producción. Si quiere, puede exportar datos de Análisis de escritorio a herramientas de implementación de software, como la rama actual de System Center Configuration Manager, directamente a equipos de destino y crear colecciones a medida que estén listas para su implementación.
 
-Si en la actualidad no ha configurado Análisis de escritorio para su entorno o quiere suscribirse a una prueba, vaya a la página de Análisis de escritorio (http://www.aka.ms/desktopanalytics)) para empezar.
+Si en la actualidad no ha configurado Análisis de escritorio para su entorno o quiere suscribirse a una prueba, vaya a la página de Análisis de escritorio (https://www.aka.ms/desktopanalytics)) para empezar.
 
 ## <a name="device-and-app-readiness-process"></a>Proceso de preparación de dispositivos y aplicaciones
 
@@ -85,9 +85,9 @@ También proporciona instrucciones para ayudarle a evaluar qué actualizaciones 
 
 Descubrirá que la mayoría de los controladores, aplicaciones y complementos inventariados funcionan tal cual. Para aquellos elementos que Análisis de escritorio indica que tienen problemas, se proporciona información conocida, como dónde encontrar actualizaciones de versión para resolver problemas de compatibilidad. En lugar de dedicar tiempo y recursos para resolver problemas complejos en aplicaciones que no son críticas que están implementadas de forma dispersa y en dispositivos antiguos, puede en su lugar trabajar con los usuarios para retirar y reemplazar estos elementos.
 
-Puede usar Análisis de escritorio para evaluar también los problemas de compatibilidad basados en el explorador, identificar sitios web y aplicaciones web a los que tienen acceso los usuarios que aún usan controles ActiveX, objetos del ayudante del explorador, VBScript u otra tecnología heredada que no es compatible con el explorador de Microsoft Edge. Los usuarios todavía necesitarán usar Internet Explorer 11 para estos sitios que puede agregar a la [lista de sitios del modo de empresa](https://docs.microsoft.com/es-ES/microsoft-edge/deploy/emie-to-improve-compatibility), con el Enterprise Mode Site List Manager.
+Puede usar Análisis de escritorio para evaluar también los problemas de compatibilidad basados en el explorador, identificar sitios web y aplicaciones web a los que tienen acceso los usuarios que aún usan controles ActiveX, objetos del ayudante del explorador, VBScript u otra tecnología heredada que no es compatible con el explorador de Microsoft Edge. Los usuarios todavía necesitarán usar Internet Explorer 11 para estos sitios que puede agregar a la [lista de sitios del modo de empresa](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility), con el Enterprise Mode Site List Manager.
 
-Además, para facilitar el cambio a Office 365 ProPlus, es posible que quiera usar [Readiness Toolkit para Office](https://docs.microsoft.com/es-ES/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) a fin de probar la compatibilidad de los complementos y las macros de Microsoft Visual Basic para Aplicaciones (VBA).
+Además, para facilitar el cambio a Office 365 ProPlus, es posible que quiera usar [Readiness Toolkit para Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) a fin de probar la compatibilidad de los complementos y las macros de Microsoft Visual Basic para Aplicaciones (VBA).
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -103,7 +103,7 @@ Mientras recorre la lista para corregir los problemas, verá que aumenta el núm
 
 El inventario de software de Configuration Manager es una alternativa a usar soluciones de análisis basadas en la nube para la preparación de aplicaciones y dispositivos. Puede usar cuentas de instalación y explorar equipos específicos para ayudar a clasificar la validación y pruebas de compatibilidad y establecer los paquetes de aplicaciones como compatibles con Windows 10 a través de la configuración del paquete. Aunque esta opción no ofrece la capacidad para comparar la información de compatibilidad conocida con servicios de análisis de Microsoft, puede ser una solución eficaz para un conjunto más pequeño de aplicaciones prioritarias para pruebas manuales. 
 
-Para obtener más información, vea [Introducción al inventario de software en System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/core/clients/manage/inventory/introduction-to-software-inventory) y cómo establecer requisitos de plataforma en paquetes de aplicación en [Paquetes y programas en System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/apps/deploy-use/packages-and-programs).
+Para obtener más información, vea [Introducción al inventario de software en System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory) y cómo establecer requisitos de plataforma en paquetes de aplicación en [Paquetes y programas en System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
 
 
 ## <a name="desktop-app-assure"></a>Desktop App Assure

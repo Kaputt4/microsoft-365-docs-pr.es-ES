@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspectos que debe tener en cuenta a la hora de desarrollar un plan de continuidad empresarial preparado para la nube.
-ms.openlocfilehash: 4a133c65f6a5a2de44e871995886a01c2ce8e9a9
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122340"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031075"
 ---
 # <a name="developing-your-continuity-plan"></a>Desarrollo de un plan de continuidad
 
@@ -61,7 +61,7 @@ Este es un documento BIA para `name of the service, system, process, or function
 
 Después, busque en los procesos de negocios para ver dónde se encuentra cualquier relación de dependencia en cascada. Basándose en el resultado, priorice y cree estrategias de resiliencia y procedimientos de operación estándar que sean compatibles con dichas estrategias.
 
-Puede usar [Microsoft Service Map](https://docs.microsoft.com/es-ES/azure/azure-monitor/insights/service-map) para ayudarle con esta asignación. Microsoft Service Map descubre automáticamente los componentes de la aplicación en los sistemas Windows y Linux, asigna todas las dependencias TCP e identifica conexiones y sistemas de terceros remotos de los que depende la aplicación. Asimismo, asigna dependencias a áreas de la red que tradicionalmente son oscuras, como Active Directory.
+Puede usar [Microsoft Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) para ayudarle con esta asignación. Microsoft Service Map descubre automáticamente los componentes de la aplicación en los sistemas Windows y Linux, asigna todas las dependencias TCP e identifica conexiones y sistemas de terceros remotos de los que depende la aplicación. Asimismo, asigna dependencias a áreas de la red que tradicionalmente son oscuras, como Active Directory.
 
 Este es un análisis de dependencia de muestra (DA) desde el que puede empezar. En el análisis de dependencia (DA), debe identificar y examinar las dependencias del proceso. Asegúrese de incluir personas, proveedores, clientes, asociaciones y centros. Los datos de este análisis se usarán para identificar las diferencias entre los requisitos de recuperación de un proceso y las funcionalidades de recuperación de las dependencias de soporte.
 

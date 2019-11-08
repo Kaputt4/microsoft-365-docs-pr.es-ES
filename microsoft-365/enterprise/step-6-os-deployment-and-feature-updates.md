@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre las opciones de implementación del sistema operativo y actualizaciones de características.
-ms.openlocfilehash: 16af9a57623ffbdd73d97d44993c36ce57889eaf
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: c789ac0d62fd0b8c915f21174cae2b81e49e0c97
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584546"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031675"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Paso 6: Implementación del sistema operativo y actualizaciones de características
 
@@ -53,9 +53,9 @@ Durante el proceso de compilación y captura, herramientas como System Center Co
 
 La imagen capturada tendrá el formato de imagen de Windows, o WIM, como los medios de instalación estándar de Windows. Una vez obtenido el archivo WIM personalizado, puede usar otra secuencia de tareas como parte de la implementación de sistema operativo en System Center Configuration Manager o Microsoft Deployment Toolkit para realizar tareas relacionadas con la implementación, para aplicar la imagen y ejecutar tareas antes y después de aplicar la imagen de Windows.
 
-[Creación de una imagen de referencia de Windows 10](https://docs.microsoft.com/es-ES/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
+[Creación de una imagen de referencia de Windows 10](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[Creación de una secuencia de tareas para instalar el sistema operativo](https://docs.microsoft.com/es-ES/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Creación de una secuencia de tareas para instalar el sistema operativo](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>Tipos de implementación
 
@@ -69,7 +69,7 @@ Con la imagen personalizada lista, el tipo de instalación o migración se divid
 
 Los tres escenarios tienen en común que ejecutan una secuencia de tareas, y en cada caso se puede aplicar una imagen personalizada.
 
-[Más información sobre los escenarios de implementación de Windows 10](https://docs.microsoft.com/es-ES/windows/deployment/windows-10-deployment-scenarios)
+[Más información sobre los escenarios de implementación de Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>Actualización local con automatización de secuencias de tareas
 
@@ -85,9 +85,9 @@ En la actualización local se usa el programa de instalación de Windows. El mot
 
 El escenario de actualización local se puede usar para migrar a Windows 10 desde versiones heredadas de Windows, así como para actualizar desde versiones anteriores de Windows 10. Cuando el programa de instalación de Windows complete la actualización, se puede seguir ejecutando la secuencia de tareas y actualizar aplicaciones como Office, reemplazar controladores y aplicar configuraciones personalizadas. Del mismo modo, la secuencia de tareas Actualizar se puede usar para realizar tareas previas a la instalación o comprobaciones antes de llevar a cabo la actualización.
 
-[Actualización local de Windows 10 con Configuration Manager](https://docs.microsoft.com/es-ES/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
+[Actualización local de Windows 10 con Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Creación de una secuencia de tareas para actualizar un sistema operativo en Configuration Manager](https://docs.microsoft.com/es-ES/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Creación de una secuencia de tareas para actualizar un sistema operativo en Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>Implementación por fases
 
@@ -99,9 +99,9 @@ Mientras planea la implementación, tendrá que seleccionar como destino los equ
 
 Con independencia del tipo de implementación elegido, deberá asegurarse de que se automatiza lo máximo posible para la previsibilidad y capacidad de repetición. Microsoft ofrece dos soluciones para automatizar la implementación de sistema operativo mediante secuencias de tareas automatizadas:
 
-  - **[System Center Configuration Manager](https://docs.microsoft.com/es-ES/sccm/core/understand/introduction)** (ConfigMgr) proporciona funciones de implementación de sistema operativo integradas para complementar sus funciones de administración de actualizaciones de software y distribución de software. Configuration Manager se usa con frecuencia en organizaciones de todos los tamaños y admite los cuatro tipos de implementación de Windows. Opcionalmente, ConfigMgr se puede integrar con Microsoft Intune para agregar funciones adicionales para la implementación y administración de dispositivos.
+  - **[System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction)** (ConfigMgr) proporciona funciones de implementación de sistema operativo integradas para complementar sus funciones de administración de actualizaciones de software y distribución de software. Configuration Manager se usa con frecuencia en organizaciones de todos los tamaños y admite los cuatro tipos de implementación de Windows. Opcionalmente, ConfigMgr se puede integrar con Microsoft Intune para agregar funciones adicionales para la implementación y administración de dispositivos.
 
-  - Otra opción de implementación conocida y gratuita es **[Microsoft Deployment Toolkit](https://docs.microsoft.com/es-ES/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT), que normalmente se usa en organizaciones de pequeño y mediano tamaño para la implementación de sistema operativo. Apenas requiere infraestructura. MDT se integra con Servicios de implementación de Windows (WDS) para el arranque de red. Admite los cuatro tipos de implementación, así como la instalación de aplicaciones, controladores y configuración. Y por supuesto, incluso se pueden integrar con Configuration Manager.
+  - Otra opción de implementación conocida y gratuita es **[Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT), que normalmente se usa en organizaciones de pequeño y mediano tamaño para la implementación de sistema operativo. Apenas requiere infraestructura. MDT se integra con Servicios de implementación de Windows (WDS) para el arranque de red. Admite los cuatro tipos de implementación, así como la instalación de aplicaciones, controladores y configuración. Y por supuesto, incluso se pueden integrar con Configuration Manager.
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
 
@@ -111,21 +111,21 @@ Una opción nueva de Windows 10 es la configuración de equipos nuevos como part
 
 Después, cuando un usuario inicia sesión en el equipo durante la instalación con sus credenciales de Azure AD, el dispositivo se inscribe en Microsoft Intune, que se puede encargar del proceso de implementación y aplicar las aplicaciones, las actualizaciones de software, la configuración y las directivas de cumplimiento. Windows Autopilot también puede evitar que el usuario acceda a la primera sesión hasta que se complete el aprovisionamiento.
 
-[Introducción a Windows Autopilot](https://docs.microsoft.com/es-ES/windows/deployment/windows-autopilot/windows-10-autopilot)
+[Introducción a Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
 
-[Requisitos previos de Windows Autopilot](https://docs.microsoft.com/es-ES/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
+[Requisitos previos de Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update para empresas
 
-Windows Update para empresas es un servicio gratuito que permite a los profesionales de TI mantener los dispositivos con Windows 10 siempre actualizados conectando directamente los dispositivos con el servicio de Windows Update. Windows Update para empresas puede configurarse a través de la directiva de grupo o mediante soluciones de MDM como Microsoft Intune y permite a los profesionales de TI crear [anillos de implementación](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-deployment-rings-windows-10-updates) para validar las nuevas compilaciones. Está integrado en las herramientas de administración existentes como Windows Server Update Services (WSUS), System Center Configuration Manager (rama actual) y Microsoft Intune. Además, Windows Update para empresas es compatible con la entrega de punto a punto para optimizar la eficacia del ancho de banda y reducir la congestión en la red.
+Windows Update para empresas es un servicio gratuito que permite a los profesionales de TI mantener los dispositivos con Windows 10 siempre actualizados conectando directamente los dispositivos con el servicio de Windows Update. Windows Update para empresas puede configurarse a través de la directiva de grupo o mediante soluciones de MDM como Microsoft Intune y permite a los profesionales de TI crear [anillos de implementación](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) para validar las nuevas compilaciones. Está integrado en las herramientas de administración existentes como Windows Server Update Services (WSUS), System Center Configuration Manager (rama actual) y Microsoft Intune. Además, Windows Update para empresas es compatible con la entrega de punto a punto para optimizar la eficacia del ancho de banda y reducir la congestión en la red.
 
 Para obtener más información sobre Windows Update para empresas, consulte la siguiente documentación:
 
-- [Implementar actualizaciones mediante Windows Update para empresas](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-manage-updates-wufb)
-- [Configurar Windows Update para empresas](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-configure-wufb)
-- [Integrar Windows Update para empresas con las herramientas de administración existentes](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-integrate-wufb)
-- [Usar la directiva de grupo para configurar Windows Update para empresas](https://docs.microsoft.com/es-ES/windows/deployment/update/waas-wufb-group-policy)
-- [Usar Microsoft Intune para configurar Windows Update para empresas](https://docs.microsoft.com/es-ES/intune/windows-update-for-business-configure)
+- [Implementar actualizaciones mediante Windows Update para empresas](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
+- [Configurar Windows Update para empresas](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb)
+- [Integrar Windows Update para empresas con las herramientas de administración existentes](https://docs.microsoft.com/windows/deployment/update/waas-integrate-wufb)
+- [Usar la directiva de grupo para configurar Windows Update para empresas](https://docs.microsoft.com/windows/deployment/update/waas-wufb-group-policy)
+- [Usar Microsoft Intune para configurar Windows Update para empresas](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 
 ## <a name="next-step"></a>Paso siguiente 
 
