@@ -1,5 +1,5 @@
 ---
-title: Evitar caracteres no válidos en las reglas de filtro de correo no deseado y la Directiva de filtro de correo no deseado
+title: Evite usar caracteres no válidos en las reglas de filtro de correo no deseado y directiva de filtro de correo no deseado
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,49 +13,49 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Proporciona ayuda a los administradores que tienen caracteres no válidos en la configuración contra correo no deseado y tienen problemas al intentar usar el centro &amp; de seguridad y cumplimiento.
-ms.openlocfilehash: 286a96814e0be5857499d7c54839d20142d0dd60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 96d81c17c33c5ecf6e7b88ebe5676336b963cb4e
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092221"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039109"
 ---
-# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a><span data-ttu-id="dc1ed-103">Evitar caracteres no válidos en las reglas de filtro de correo no deseado y Directiva de filtro de correo no deseado</span><span class="sxs-lookup"><span data-stu-id="dc1ed-103">Avoid invalid characters in your spam filter rules and spam filter policy</span></span> 
+# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a><span data-ttu-id="d564a-103">Evitar caracteres no válidos en las reglas de filtro de correo no deseado y Directiva de filtro de correo no deseado</span><span class="sxs-lookup"><span data-stu-id="d564a-103">Avoid invalid characters in your spam filter rules and spam filter policy</span></span> 
 
-<span data-ttu-id="dc1ed-104">Anteriormente, los administradores de Office 365 instalaron y configuraron reglas de filtro de correo no deseado y la Directiva de filtro de correo no deseado mediante el centro de administración de Exchange (EAC).</span><span class="sxs-lookup"><span data-stu-id="dc1ed-104">Previously, Office 365 administrators set up and configured spam filter rules and the spam filter policy by using the Exchange admin center (EAC).</span></span> <span data-ttu-id="dc1ed-105">Ahora, puede usar el centro &amp; de seguridad y cumplimiento para administrar la configuración contra correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="dc1ed-105">Now, you use the Security &amp; Compliance Center to manage the your anti-spam configuration.</span></span> <span data-ttu-id="dc1ed-106">Los siguientes caracteres se admitiron en el EAC, pero no se admiten para su &amp; uso en el centro de seguridad y cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="dc1ed-106">The following characters were supported in the EAC but are not supported for use in the Security &amp; Compliance Center.</span></span>  
+<span data-ttu-id="d564a-104">Anteriormente, los administradores de Office 365 instalaron y configuraron reglas de filtro de correo no deseado y la Directiva de filtro de correo no deseado mediante el centro de administración de Exchange (EAC).</span><span class="sxs-lookup"><span data-stu-id="d564a-104">Previously, Office 365 administrators set up and configured spam filter rules and the spam filter policy by using the Exchange admin center (EAC).</span></span> <span data-ttu-id="d564a-105">Ahora, puede usar el centro &amp; de seguridad y cumplimiento para administrar la configuración contra correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="d564a-105">Now, you use the Security &amp; Compliance Center to manage the your anti-spam configuration.</span></span> <span data-ttu-id="d564a-106">Los siguientes caracteres se admitiron en el EAC, pero no se admiten para su &amp; uso en el centro de seguridad y cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="d564a-106">The following characters were supported in the EAC but are not supported for use in the Security &amp; Compliance Center.</span></span>  
 
-<span data-ttu-id="dc1ed-107">**Caracteres no válidos:**</span><span class="sxs-lookup"><span data-stu-id="dc1ed-107">**Invalid characters:**</span></span>
+<span data-ttu-id="d564a-107">**Caracteres no válidos:**</span><span class="sxs-lookup"><span data-stu-id="d564a-107">**Invalid characters:**</span></span>
   
 ```\ % & * + / = ? { } | < > ( ) ; : , [ ] "```
 
-<span data-ttu-id="dc1ed-108">Si las reglas de filtro de correo no deseado o la Directiva de filtro de correo no deseado contienen alguno de los caracteres no válidos, puede encontrarse alguno o todos estos problemas:</span><span class="sxs-lookup"><span data-stu-id="dc1ed-108">If your spam filter rules or your spam filter policy contains any of the invalid characters, you might encounter any or all of these issues:</span></span>
-- <span data-ttu-id="dc1ed-109">Es posible que no pueda encontrar la Directiva o las reglas en el &amp; centro de seguridad y cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="dc1ed-109">You might be unable to find the policy or rules in the Security &amp; Compliance Center.</span></span>
-- <span data-ttu-id="dc1ed-110">Es posible que reciba errores al intentar obtener las reglas o la Directiva mediante Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="dc1ed-110">You might receive errors when trying to get the rules or policy by using Windows PowerShell.</span></span>
-- <span data-ttu-id="dc1ed-111">Es posible que la Directiva o la configuración no se ejecuten o no funcionen de la manera esperada.</span><span class="sxs-lookup"><span data-stu-id="dc1ed-111">You might find that the policy or settings do not run or perform as expected.</span></span>
+<span data-ttu-id="d564a-108">Si las reglas de filtro de correo no deseado o la Directiva de filtro de correo no deseado contienen alguno de los caracteres no válidos, puede encontrarse alguno o todos estos problemas:</span><span class="sxs-lookup"><span data-stu-id="d564a-108">If your spam filter rules or your spam filter policy contains any of the invalid characters, you might encounter any or all of these issues:</span></span>
+- <span data-ttu-id="d564a-109">Es posible que no pueda encontrar la Directiva o las reglas en el &amp; centro de seguridad y cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="d564a-109">You might be unable to find the policy or rules in the Security &amp; Compliance Center.</span></span>
+- <span data-ttu-id="d564a-110">Es posible que reciba errores al intentar obtener las reglas o la Directiva mediante Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d564a-110">You might receive errors when trying to get the rules or policy by using Windows PowerShell.</span></span>
+- <span data-ttu-id="d564a-111">Es posible que la Directiva o la configuración no se ejecuten o no funcionen de la manera esperada.</span><span class="sxs-lookup"><span data-stu-id="d564a-111">You might find that the policy or settings do not run or perform as expected.</span></span>
 
-## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a><span data-ttu-id="dc1ed-112">Quitar los caracteres no válidos de la Directiva y reglas del filtro de correo no deseado</span><span class="sxs-lookup"><span data-stu-id="dc1ed-112">Remove the invalid characters from the spam filter policy and rules</span></span>
+## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a><span data-ttu-id="d564a-112">Quitar los caracteres no válidos de la Directiva y reglas del filtro de correo no deseado</span><span class="sxs-lookup"><span data-stu-id="d564a-112">Remove the invalid characters from the spam filter policy and rules</span></span>
 
-<span data-ttu-id="dc1ed-113">Una vez que haya identificado la Directiva y las reglas que contienen caracteres no válidos, puede cambiar los nombres con los cmdlets de Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="dc1ed-113">Once you have identified the policy and rules that contain invalid characters, you can change the names by using the Windows PowerShell cmdlets.</span></span> 
+<span data-ttu-id="d564a-113">Una vez que haya identificado la Directiva y las reglas que contienen caracteres no válidos, puede cambiar los nombres con los cmdlets de Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d564a-113">Once you have identified the policy and rules that contain invalid characters, you can change the names by using the Windows PowerShell cmdlets.</span></span> 
 
-1. <span data-ttu-id="dc1ed-114">[Conéctese a Exchange online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).</span><span class="sxs-lookup"><span data-stu-id="dc1ed-114">[Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).</span></span>
+1. <span data-ttu-id="d564a-114">[Conéctese a Exchange online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).</span><span class="sxs-lookup"><span data-stu-id="d564a-114">[Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).</span></span>
     
-2. <span data-ttu-id="dc1ed-115">Para cambiar el nombre de la Directiva de filtro de correo no deseado, ejecute el cmdlet Set-HostedContentFilterPolicy de la siguiente manera:</span><span class="sxs-lookup"><span data-stu-id="dc1ed-115">To change the name of the spam filter policy, run the Set-HostedContentFilterPolicy cmdlet as follows:</span></span>
+2. <span data-ttu-id="d564a-115">Para cambiar el nombre de la Directiva de filtro de correo no deseado, ejecute el cmdlet Set-HostedContentFilterPolicy de la siguiente manera:</span><span class="sxs-lookup"><span data-stu-id="d564a-115">To change the name of the spam filter policy, run the Set-HostedContentFilterPolicy cmdlet as follows:</span></span>
     
-    ```
+    ```powershell
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
-3. <span data-ttu-id="dc1ed-116">Para cambiar el nombre de una regla de filtro de correo no deseado, ejecute el cmdlet Set-HostedContentFilterRule de la siguiente manera:</span><span class="sxs-lookup"><span data-stu-id="dc1ed-116">To change the name of a spam filter rule, run the Set-HostedContentFilterRule cmdlet as follows:</span></span>
+3. <span data-ttu-id="d564a-116">Para cambiar el nombre de una regla de filtro de correo no deseado, ejecute el cmdlet Set-HostedContentFilterRule de la siguiente manera:</span><span class="sxs-lookup"><span data-stu-id="d564a-116">To change the name of a spam filter rule, run the Set-HostedContentFilterRule cmdlet as follows:</span></span>
     
-    ```
+    ```powershell
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 
   
- ## <a name="for-more-information"></a><span data-ttu-id="dc1ed-117">Más información</span><span class="sxs-lookup"><span data-stu-id="dc1ed-117">For more information</span></span>
+ ## <a name="for-more-information"></a><span data-ttu-id="d564a-117">Más información</span><span class="sxs-lookup"><span data-stu-id="d564a-117">For more information</span></span>
 
-[<span data-ttu-id="dc1ed-118">Administración de amenazas en el &amp; centro de seguridad y cumplimiento</span><span class="sxs-lookup"><span data-stu-id="dc1ed-118">Threat management in the Security &amp; Compliance Center</span></span>](protect-against-threats.md)
+[<span data-ttu-id="d564a-118">Administración de amenazas en el &amp; centro de seguridad y cumplimiento</span><span class="sxs-lookup"><span data-stu-id="d564a-118">Threat management in the Security &amp; Compliance Center</span></span>](protect-against-threats.md)
   
-[<span data-ttu-id="dc1ed-119">Set-HostedContentFilterPolicy</span><span class="sxs-lookup"><span data-stu-id="dc1ed-119">Set-HostedContentFilterPolicy</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
+[<span data-ttu-id="d564a-119">Set-HostedContentFilterPolicy</span><span class="sxs-lookup"><span data-stu-id="d564a-119">Set-HostedContentFilterPolicy</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
 
-[<span data-ttu-id="dc1ed-120">Set-HostedContentFilterRule</span><span class="sxs-lookup"><span data-stu-id="dc1ed-120">Set-HostedContentFilterRule</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule?view=exchange-ps)
+[<span data-ttu-id="d564a-120">Set-HostedContentFilterRule</span><span class="sxs-lookup"><span data-stu-id="d564a-120">Set-HostedContentFilterRule</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule?view=exchange-ps)
