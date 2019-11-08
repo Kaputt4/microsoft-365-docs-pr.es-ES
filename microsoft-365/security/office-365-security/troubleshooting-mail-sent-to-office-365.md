@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información para solucionar problemas destinada a los remitentes que están teniendo problemas al intentar enviar correo electrónico a bandejas de entrada de Office 365 y prácticas recomendadas para el envío de correo masivo a clientes de Office 365.
-ms.openlocfilehash: 59c02b31b759870892846947940744e123c73788
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: b87b0745c95cd043987f49ed7f21118339d3e592
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441187"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030704"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Correo de solución de problemas enviado a Office 365
 
@@ -71,7 +71,7 @@ No podemos aceptar correo electrónico de los remitentes que no logran una búsq
 
 Algunos problemas de entrega se deben a que Microsoft ha bloqueado la dirección IP del remitente o a que la cuenta de usuario se identifica como remitente prohibido debido a una actividad precedente de correo no deseado. Si cree que ha recibido el NDR por error, en primer lugar, siga las instrucciones del mensaje de NDR para resolver el problema.
 
-Para obtener más información acerca del error recibido, vea la lista completa de códigos de error de SMTP en [DSNs and NDRs in On-Premises Exchange 2013 and Office 365](http://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx).
+Para obtener más información acerca del error recibido, vea la lista completa de códigos de error de SMTP en [DSNs and NDRs in On-Premises Exchange 2013 and Office 365](https://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx).
 
  Por ejemplo, si recibe el NDR siguiente, indica que Microsoft ha bloqueado la dirección IP del remitente.
 
@@ -108,7 +108,7 @@ Ha recibido el NDR porque se ha detectado actividad sospechosa procedente de la 
 
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>No puedo recibir correo electrónico de remitentes de Office 365
 
- Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, consulte [Exchange Online Protection IP addresses](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges).
+ Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, consulte [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Prácticas recomendadas para enviar correo electrónico masivo a usuarios de Office 365
 

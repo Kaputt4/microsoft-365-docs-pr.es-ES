@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5dcdce4b86356d514317967188ef07ebaeecbf16
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093735"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034211"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general sobre el centro de seguridad de Microsoft 365
 
@@ -27,7 +27,7 @@ Escriba Microsoft 365 Security Center (el nuevo hogar para la supervisión y la 
 
 El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365 son áreas de trabajo especializadas diseñadas para satisfacer las necesidades de los equipos de seguridad y los equipos de cumplimiento. Estas soluciones se integran en los servicios de Microsoft 365 y proporcionan información útil para ayudar a reducir los riesgos y proteger su información digital.
 
-[Obtenga más información y prepárese](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-security-and-compliance) para el nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365.
+[Obtenga más información y prepárese](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance) para el nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365.
 
 Visite el centro de seguridad 365 de Microsoft en security.microsoft.com.  
 
@@ -50,7 +50,7 @@ El centro de seguridad 365 de Microsoft incluye:
 * **Directivas** : Configure las directivas para administrar dispositivos, Protéjase contra amenazas y reciba alertas sobre diversas actividades de su organización.
 * **Permisos** : administre quién en su organización tiene acceso al centro de seguridad 365 de Microsoft para ver contenido y realizar tareas. También puede asignar permisos de Microsoft 365 en el portal de Azure AD.
 
-## <a name="learn-more"></a>Obtener más información
+## <a name="learn-more"></a>Más información
 
 Explore estos temas sobre cómo supervisar, revisar y responder a sus necesidades de seguridad:
 

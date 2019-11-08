@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Aprenda a configurar Microsoft 365 Business.
-ms.openlocfilehash: ed302a79d125ffc9c6203d902f437749a5b0f8d4
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 4c744d6a900dba3c11ee51e75602a430268e15bb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575906"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029112"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Introducción a Microsoft 365 Business
 
@@ -40,7 +40,7 @@ Microsoft 365 empresa está destinada a un máximo de 300 licencias, si necesita
 
 - Si tiene un partner, obtendrá Microsoft 365 Business: [Obtener Microsoft 365 Business desde el Centro de partners de Microsoft](get-microsoft-365-business.md).
     
-- Si no tiene un partner y quiere obtener Microsoft 365 Business, puede [comprarlo aquí](https://www.microsoft.com/en-us/microsoft-365/business).
+- Si no tiene un partner y quiere obtener Microsoft 365 Business, puede [comprarlo aquí](https://www.microsoft.com/microsoft-365/business).
     
 ## <a name="set-up-microsoft-365-business"></a>Configurar Microsoft 365 Empresa
 
@@ -78,11 +78,11 @@ Los administradores pueden seleccionar previamente la configuración de los nuev
   
 Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Business para proteger sus dispositivos con Windows 10 y mantener al mismo tiempo el acceso a los recursos locales que requieren autenticación local. Siga los pasos descritos en [enable Domain-joined Domain-Windows 10 Devices to be Managed Microsoft 365 Business](manage-windows-devices.md) to Configure this. Este es el método preferido y los dispositivos en este estado se denominan **dispositivos híbridos Unidos de Azure ad**. 
   
-Si conserva un Active Directory local que contiene algunos recursos locales (como impresoras y recursos compartidos de archivos), puede conceder a los **dispositivos Unidos a Azure ad** acceso a estos recursos siguiendo los pasos que se indican a continuación: [acceso a recursos locales desde un Dispositivo unido a Azure AD en Microsoft 365 Business](access-resources.md).
+Si conserva un Active Directory local que contiene algunos recursos locales (como impresoras y recursos compartidos de archivos), puede conceder a los **dispositivos Unidos a Azure ad** acceso a estos recursos siguiendo los pasos que se indican a continuación: [acceso a recursos locales desde un dispositivo unido a Azure ad en Microsoft 365 Business](access-resources.md).
   
 Una vez que haya configurado los equipos con Windows 10, puede [instalar Office automáticamente](auto-install-or-uninstall-office.md) en los dispositivos. 
   
-## <a name="contact-support"></a>Contactar soporte
+## <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
 
  **Si necesita ponerse en contacto con soporte técnico:**
   

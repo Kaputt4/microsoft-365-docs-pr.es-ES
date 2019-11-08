@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra cómo las capacidades de inteligencia sobre amenazas de Office 365 Advanced Threat Protection pueden ayudarle a investigar amenazas contra su organización, responder a malware, phishing y otros ataques que Office 365 ha detectado en su nombre y buscar amenazas indicadores.
-ms.openlocfilehash: 18350245036a39ccda32c6a09ba97fb9c9449d41
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 749ddef383839043141027ace4a2d906932b7e91
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093418"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031875"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Investigación y respuesta de amenazas de Office 365
 
@@ -38,7 +38,7 @@ Las capacidades de investigación y respuesta de amenazas proporcionan informaci
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Familiarizarse con las herramientas de investigación y respuesta de amenazas
 
-La exposición de amenazas y las capacidades de respuesta &amp; del centro de seguridad y cumplimiento, como un conjunto de herramientas y flujos de trabajo de respuesta, incluidos el [Panel de amenazas](#threat-dashboard), el [Explorador](#threat-explorer), los [incidentes](#incidents), el [simulador de ataque](#attack-simulator)y [Investigación automatizada & respuesta](automated-investigation-response-office.md).
+La superficie de investigación y respuesta de amenazas en &amp; el centro de seguridad y cumplimiento, como un conjunto de herramientas y flujos de trabajo de respuesta, incluidos el [Panel de amenazas](#threat-dashboard), el [Explorador](#threat-explorer), los [incidentes](#incidents), el [simulador de ataque](#attack-simulator)y la [investigación automatizada & respuesta](automated-investigation-response-office.md).
   
 ### <a name="threat-dashboard"></a>Panel de amenazas
 
@@ -87,7 +87,7 @@ Como parte de la oferta del plan 2 de protección contra amenazas avanzada de Of
 Las capacidades de investigación y respuesta de amenazas de Office 365 se incluyen en Office 365 plan de protección contra amenazas avanzada 2 y Enterprise E5. 
 
 > [!TIP]
-> Si su organización tiene una suscripción de Office 365 que no incluye estas capacidades de investigación y respuesta de amenazas, puede comprar Office 365 el plan de protección contra amenazas avanzada 2 como complemento. Para obtener más información acerca de las opciones de planeación, consulte [office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) y [comprar o editar un complemento para Office 365 para empresas](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
+> Si su organización tiene una suscripción de Office 365 que no incluye estas capacidades de investigación y respuesta de amenazas, puede comprar Office 365 el plan de protección contra amenazas avanzada 2 como complemento. Para obtener más información acerca de las opciones de planeación, consulte [office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) y [comprar o editar un complemento para Office 365 para empresas](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
 1. Como administrador global de Office 365, vaya a [https://admin.microsoft.com](https://admin.microsoft.com) e inicie sesión con su cuenta profesional o educativa para Office 365. 
     
@@ -111,7 +111,7 @@ Las capacidades de investigación y respuesta de amenazas de Office 365 se inclu
    
 Para obtener información acerca de los roles, grupos de roles y permisos, consulte [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga información sobre los rastreadores de amenazas: nuevos y dignos](threat-trackers.md)
     

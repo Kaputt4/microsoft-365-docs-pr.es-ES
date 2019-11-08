@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar directivas de acceso condicional para campañas de 365 de Microsoft.
-ms.openlocfilehash: 31f3b7f3678671af3b5ca3947dec37041b226fac
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 3772aa0d505ef54a0587423e890ede519d571e0c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575646"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031403"
 ---
 # <a name="set-up-conditional-access-policies"></a>Configurar directivas de acceso condicional
 
@@ -53,9 +53,9 @@ Para obtener más información acerca de estas directivas, vea [¿Qué son las d
     ![Página donde se enumeran las directivas de línea base para el acceso condicional.](media/baslinepolicies.png)
 1. Consulte las siguientes instrucciones específicas para cada directiva:
 
-  - [Requerir MFA para los administradores](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-- [Requerir MFA para los usuarios](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
- - [Bloquear la autenticación heredada](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [Requerir MFA para los administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+- [Requerir MFA para los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+ - [Bloquear la autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [Requerir MFA para la administración de servicios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 Puede configurar muchas directivas adicionales, como requerir aplicaciones cliente aprobadas. Consulte la [documentación de acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/) para obtener más información.

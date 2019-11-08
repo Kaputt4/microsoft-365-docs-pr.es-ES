@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurar la protección contra amenazas avanzada de Office 365 y proteger los datos confidenciales.
-ms.openlocfilehash: fb63ca7e3cf38ecf31aab98e425b02e8b9983bf8
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 1827b70f1e4d78a072753390c1a99d7cb4bd5cfd
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636760"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030772"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -31,7 +31,7 @@ Este artículo le ayuda a aumentar la protección en su suscripción de Microsof
 
 Antes de empezar, Compruebe la puntuación segura de Office 365. La puntuación segura de Office 365 analiza la seguridad de su organización de Office 365 en función de las actividades habituales y la configuración de seguridad y asigna una puntuación. Empiece por tomar nota del resultado actual. La realización de las acciones recomendadas en este artículo aumenta su puntuación. El objetivo no es conseguir la puntuación máxima, sino que debe tener en cuenta las oportunidades para proteger su entorno que no afectan negativamente a la productividad de los usuarios. 
 
-Para obtener más información, consulte [calificación segura de Microsoft](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
+Para obtener más información, consulte [calificación segura de Microsoft](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Aumentar el nivel de protección contra malware en correo
 
@@ -56,7 +56,7 @@ Para obtener más información, consulte [Anti-Malware Protection](https://go.mi
 
 Ransomware restringe el acceso a los datos mediante el cifrado de los archivos o el bloqueo de las pantallas del equipo. A continuación, intenta extort dinero de víctimas solicitando "Ransom", normalmente en forma de cryptocurrencies como bitcoin, en Exchange para tener acceso a los datos. 
   
-Puede proteger contra ransomware si crea una o más reglas de flujo de correo para bloquear extensiones de archivo que se usan con frecuencia para ransomware (estas se agregaron en el paso [elevar el nivel de protección contra malware en el correo](#raise-the-level-of-protection-against-malware-in-mail) ) o para advertir a los usuarios que reciben estos datos adjuntos en el correo electrónico.
+Puede proteger contra ransomware si crea una o más reglas de flujo de correo para bloquear extensiones de archivo que se usan con frecuencia para ransomware (estos se agregaron en el paso [aumentar el nivel de protección contra malware en el correo](#raise-the-level-of-protection-against-malware-in-mail) ) o para advertir a los usuarios que reciben estos datos adjuntos en el correo electrónico.
 
 Además de los archivos bloqueados en el paso anterior, también es aconsejable crear una regla para advertir a los usuarios antes de abrir datos adjuntos de archivos de Office que incluyan macros. Ransomware puede estar oculto dentro de las macros, por lo que se advertirá a los usuarios que no abren estos archivos de personas que no saben.
 
@@ -72,7 +72,7 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la siguiente tabla para la regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
     
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
 |:-----|:-----|:-----|
@@ -106,7 +106,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
     
 5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
     
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
@@ -207,7 +207,7 @@ Para modificar la directiva predeterminada:
     
 2. En **configuración que se aplica al contenido excepto el correo electrónico**, seleccione **Office 365 ProPlus, Office para iOS y Android**.
     
-3. Haga clic en **Guardar **. 
+3. Haga clic en **Guardar**. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -215,7 +215,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Haga clic en **Guardar **. 
+3. Haga clic en **Guardar**. 
 
 |**Configuración u opción**|**Configuración recomendada** <br/>|
 |:-----|:-----|

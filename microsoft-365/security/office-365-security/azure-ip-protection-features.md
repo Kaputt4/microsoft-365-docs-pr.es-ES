@@ -14,12 +14,12 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: Para ayudarle con el paso inicial de protección de la información, a partir de julio de 2018 todos los inquilinos elegibles de Azure Information Protection tendrán las características de protección de Azure Information Protection activadas de forma predeterminada. Las características de protección de Azure Information Protection se conocían anteriormente en Office 365 como Rights Management o Azure RMS. Si su organización tiene un plan de servicio de Office E3 o un plan de servicio más alto, ahora obtendrá una ventaja para proteger la información a través de Azure Information Protection cuando implementamos estas características.
-ms.openlocfilehash: 29fdadbe3c1126791dc31a78991a6060516d870a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: da10cdf9db7c17b2b9c9faadbcfbe953c7b625b2
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092703"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039129"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Características de protección de Azure Information Protection que se implementan en inquilinos de Office 365 existentes
 
@@ -30,14 +30,14 @@ Para ayudarle con el paso inicial de protección de la información, a partir de
 A partir del 1 de julio de 2018, Microsoft habilitará la capacidad de protección de Azure Information Protection para todos los inquilinos de Office 365 que tengan uno de los siguientes planes de suscripción:
   
 - El cifrado de mensajes de Office 365 se ofrece como parte de Office 365 E3 y E5, Microsoft E3 y E5, Office 365 a1, a3 y A5, y Office 365 G3 y G5. No necesita licencias adicionales para recibir las nuevas capacidades de protección de Azure Information Protection. 
-    
+
 - También puede Agregar el plan 1 de Azure Information Protection a los siguientes planes para recibir las nuevas capacidades de cifrado de mensajes de Office 365: Plan 1 de Exchange Online, Exchange Online plan 2, Office 365 F1, Office 365 empresa Essentials, Office 365 empresa Premium o Office 365 Enterprise E1.
-    
+
 - Cada usuario que se beneficie de Office 365 el cifrado de mensajes debe disponer de una licencia que abarque la característica.
-    
+
 - Para obtener la lista completa, consulte [descripciones del servicio de Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx) para el cifrado de mensajes de Office 365. 
-    
-Los administradores de espacios empresariales pueden comprobar el estado de protección en el portal de administración de Office 365. 
+
+Los administradores de espacios empresariales pueden comprobar el estado de protección en el portal de administración de Office 365.
   
 ![Captura de pantalla que muestra que se activa la administración de derechos en Office 365.](../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
   
@@ -62,29 +62,27 @@ Siga estas instrucciones [para preparar el entorno de Azure Rights Management cu
 1. Aunque es opcional, la mayoría de las implementaciones de AD RMS publican el punto de conexión de servicio (SCP) en Active Directory para que los equipos del dominio puedan detectar el clúster de AD RMS. 
   
 Use ADSI Edit para ver si tiene un SCP publicado en Active Directory: CN = configuración [nombre del servidor], CN = servicios, CN = RightsManagementServices, CN = SCP
-    
-2. Si no usa un SCP, los equipos con Windows que se conecten a un clúster de AD RMS deben configurarse para la detección de licencias o la redirección del servicio del lado cliente mediante el registro de Windows: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation o HKEY_ LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation 
+
+2. Si no usa un SCP, los equipos con Windows que se conecten a un clúster de AD RMS deben configurarse para la detección de licencias o la redirección del servicio del lado cliente mediante el registro de Windows: HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\MSIPC\ServiceLocation o HKEY_ LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation
   
 Para obtener más información acerca de estas configuraciones del registro, vea [habilitación de la detección de servicios del lado cliente mediante el registro de Windows](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) y [redireccionamiento del tráfico del servidor de licencias](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic).
-    
+
 ## <a name="i-use-ad-rms-how-do-i-opt-out"></a>Utilizo AD RMS, ¿cómo puedo no participar?
 
 Para no participar en el próximo cambio, siga estos pasos:
   
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, vea [conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
-    
+
 2. Ejecute el cmdlet Set-IRMConfiguration con la siguiente sintaxis:
-    
-  ```
-  Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false 
+
+  ```powershell
+  Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
   ```
 
 ## <a name="what-can-i-expect-after-this-change-has-been-made"></a>¿Qué puedo esperar después de que se haya realizado este cambio?
 
-Una vez habilitado, si no ha optado por usted, puede empezar a usar la nueva versión del cifrado de mensajes de Office 365 que se anunció en el [encendido de Microsoft encendido 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) y aprovecha las capacidades de cifrado y protección de Azure Information. Protege. 
+Una vez habilitado, si no ha optado por usted, puede empezar a usar la nueva versión del cifrado de mensajes de Office 365 que se anunció en el [encendido de Microsoft encendido 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) y aprovecha las capacidades de cifrado y protección de Azure Information Protection.
   
 ![Captura de pantalla que muestra un mensaje protegido de OME en Outlook en la Web.](../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
   
 Para obtener más información acerca de las nuevas mejoras, consulte [Office 365 Message Encryption](../../compliance/ome.md).
-  
-

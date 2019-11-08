@@ -14,13 +14,14 @@ search.appverid:
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: Amplíe la protección contra amenazas avanzada de Office 365 a los archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams para permitir una colaboración más segura para su organización.
-ms.openlocfilehash: 151acef2c5993d4deef77e1dbb7960925c59864f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ad2b5e06dab99bb2cdbe4b0e4c1785d716d865f7
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092714"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035720"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
 
@@ -28,7 +29,7 @@ ms.locfileid: "37092714"
 
 Los usuarios comparten archivos de forma regular y colaboran con SharePoint, OneDrive y Microsoft Teams. Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede colaborar de forma más segura. ATP ayuda a detectar y bloquear archivos identificados como malintencionados en los sitios de grupo y las bibliotecas de documentos.  
   
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Cuando un archivo en SharePoint Online, OneDrive para la empresa y Microsoft Teams se ha identificado como malintencionado, ATP se integra directamente con los almacenes de archivos para bloquear el archivo. La imagen siguiente muestra un ejemplo de un archivo malintencionado detectado en una biblioteca.
   
@@ -42,7 +43,7 @@ En función de cómo se configure Office 365, es posible que los usuarios no pue
   
 [![Descargar un archivo bloqueado en OneDrive para la empresa](../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
-Para obtener más información, consulte [activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+Para obtener más información, consulte [Activar ATP de Office 365 para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
   
 ## <a name="keep-these-points-in-mind"></a>Tenga en cuenta estos puntos
 
@@ -62,7 +63,7 @@ Para obtener más información, consulte [activar Office 365 ATP para SharePoint
   
 Cuando un archivo en SharePoint Online, OneDrive para la empresa o Microsoft Teams se identifica como malintencionado, además de que ATP bloquee que el archivo se abra o se comparta, el archivo se incluirá en una lista de elementos en cuarentena. (En el centro &amp; de seguridad y cumplimiento, vaya a **Threat Management** \> **Review** \> **Quarantine** and Filter for **Content**). 
   
-Si forma parte del equipo de seguridad de Office 365 de su organización y tiene los [permisos necesarios asignados en el centro &amp; de seguridad y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md), puede descargar, liberar, informar y eliminar archivos detectados como malintencionados por ATP de la cuarentena.
+Si forma parte del equipo de seguridad de Office 365 de su organización y tiene los [permisos necesarios asignados en el centro &amp; de seguridad y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md), puede descargar, liberar, informar y eliminar archivos que ATP ha detectado como malintencionados desde la cuarentena.
   
 - La **liberación y la generación de informes** de un archivo quita el bloque ATP del archivo en el sitio de equipo o la biblioteca de documentos respectivos para SharePoint, OneDrive o Microsoft Teams. A continuación, los usuarios pueden abrir, compartir y descargar el archivo. Y, cuando se selecciona la opción **Enviar informe a Microsoft** , el archivo se notifica como falso positivo para Microsoft. 
     
@@ -70,7 +71,7 @@ Si forma parte del equipo de seguridad de Office 365 de su organización y tiene
     
 - La **descarga de un archivo** permite descargar y analizar el archivo en busca de falsos positivos. 
     
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 1. [Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
     

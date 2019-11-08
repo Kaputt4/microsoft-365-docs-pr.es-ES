@@ -14,14 +14,14 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la cuarentena hospedada para Exchange Online y Exchange Online Protection.
-ms.openlocfilehash: 86d2589ce16354e453486d1e8a635887329b1b08
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: a986a44c572c0cce52a11ea6a6d30ec27d06fedd
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441487"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032175"
 ---
-# <a name="quarantine"></a>Cuarentena
+# <a name="quarantine"></a>Quarantine
 
 En los siguientes temas se proporciona información sobre la cuarentena hospedada para los administradores y usuarios finales de Exchange Online y Exchange Online Protection (EOP)
 
@@ -29,7 +29,7 @@ En los siguientes temas se proporciona información sobre la cuarentena hospedad
 
 - [Buscar y liberar mensajes en cuarentena como un administrador](find-and-release-quarantined-messages-as-an-administrator.md) : describe la forma en que los administradores pueden buscar y liberar cualquier mensaje que se encuentra en la cuarentena en el centro de administración de Exchange (EAC) y, opcionalmente, identificarlo como un mensaje falso positivo (seguro) a Microsoft.
 
-- [Buscar y liberar mensajes en cuarentena (usuarios finales)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) : describe la forma en que los usuarios finales pueden buscar y publicar sus propios mensajes de correo no deseado en cuarentena en la interfaz de usuario de cuarentena de correo no deseado e identificarlos como correo deseado para Microsoft.
+- [Buscar y liberar mensajes en cuarentena (usuarios finales)](https://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) : describe la forma en que los usuarios finales pueden buscar y publicar sus propios mensajes de correo no deseado en cuarentena en la interfaz de usuario de cuarentena de correo no deseado e identificarlos como correo deseado para Microsoft.
 
   > [!IMPORTANT]
-  > Para poder tener acceso a la cuarentena de correo no deseado del usuario final, los usuarios finales deben tener un identificador de usuario y una contraseña de Office 365 válidos. Los clientes de EOP que protegen los buzones locales deben ser usuarios de correo electrónico válidos creados mediante la sincronización de directorios o el EAC. Para obtener más información acerca de la administración de usuarios, los administradores de EOP pueden hacer referencia a [administrar usuarios de correo en EOP](manage-mail-users-in-eop.md). Para clientes independientes de EOP, se recomienda usar la sincronización de directorios y habilitar el bloqueo perimetral basado en directorios; para obtener más información, vea [usar bloqueo perimetral basado en directorios para rechazar mensajes enviados a destinatarios no válidos](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
+  > Para poder tener acceso a la cuarentena de correo no deseado del usuario final, los usuarios finales deben tener un identificador de usuario y una contraseña de Office 365 válidos. Los clientes de EOP que protegen los buzones locales deben ser usuarios de correo electrónico válidos creados mediante la sincronización de directorios o el EAC. Para obtener más información acerca de la administración de usuarios, los administradores de EOP pueden hacer referencia a [administrar usuarios de correo en EOP](manage-mail-users-in-eop.md). Para clientes independientes de EOP, se recomienda usar la sincronización de directorios y habilitar el bloqueo perimetral basado en directorios; para obtener más información, vea [usar bloqueo perimetral basado en directorios para rechazar mensajes enviados a destinatarios no válidos](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).

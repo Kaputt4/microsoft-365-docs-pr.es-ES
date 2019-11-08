@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365 para las campañas.
-ms.openlocfilehash: 686a69a7e712e80c4f58cade24a69465fb4e7d33
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 2533710ccb7b173f5cc1fd19b185fcd32b7801c9
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772457"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031295"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteger equipos con Windows 10 PC y Mac no administrados
 
@@ -48,9 +48,9 @@ Si tu organización no administra tu PC con Windows 10 o Mac, asegúrate de conf
 ## <a name="windows-10tabwindows10"></a>[Windows 10](#tab/Windows10)
 **Activar el cifrado del dispositivo**<p>
 
-El cifrado de dispositivos está disponible en una amplia gama de dispositivos Windows y ayuda a proteger los datos cifrándolos. Si activa el cifrado del dispositivo, solo podrán tener acceso a su dispositivo y a sus datos los usuarios autorizados. Consulte [Activar](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) el cifrado del dispositivo para obtener instrucciones.
+El cifrado de dispositivos está disponible en una amplia gama de dispositivos Windows y ayuda a proteger los datos cifrándolos. Si activa el cifrado del dispositivo, solo podrán tener acceso a su dispositivo y a sus datos los usuarios autorizados. Consulte [activar el cifrado del dispositivo](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) para obtener instrucciones.
 
- Si el cifrado del dispositivo no está disponible en el dispositivo, puede activar el cifrado de [BitLocker](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) estándar en su lugar. (BitLocker no está disponible en Windows 10 Home Edition). 
+ Si el cifrado del dispositivo no está disponible en el dispositivo, puede activar el [cifrado de BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) estándar en su lugar. (BitLocker no está disponible en Windows 10 Home Edition). 
 
 
 
@@ -59,10 +59,10 @@ Si tiene Windows 10, obtendrá la protección antivirus más reciente con la seg
 
 Windows Update descarga automáticamente las actualizaciones para la seguridad de Windows para ayudar a mantener tu PC seguro y protegerlo de amenazas.
 
-Si tiene una versión anterior de Windows y usa Microsoft Security Essentials, es una buena idea cambiar a la seguridad de Windows. Para obtener más información, consulte [ayudar a proteger el dispositivo con seguridad de Windows](https://support.microsoft.com/en-us/help/17464/windows-10-help-protect-my-device-with-windows-security) .
+Si tiene una versión anterior de Windows y usa Microsoft Security Essentials, es una buena idea cambiar a la seguridad de Windows. Para obtener más información, consulte [ayudar a proteger el dispositivo con seguridad de Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security) .
 
 **Activar Firewall de Windows**<p>
-Siempre debe ejecutar Firewall de Windows incluso si tiene activado otro Firewall. Si se desactiva el Firewall de Windows, es posible que el dispositivo (y la red, si tiene uno) sean más vulnerables a un acceso no autorizado. Consulte [activar o desactivar Firewall de Windows](https://support.microsoft.com/en-us/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) para obtener instrucciones
+Siempre debe ejecutar Firewall de Windows incluso si tiene activado otro Firewall. Si se desactiva el Firewall de Windows, es posible que el dispositivo (y la red, si tiene uno) sean más vulnerables a un acceso no autorizado. Consulte [activar o desactivar Firewall de Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) para obtener instrucciones
 
 ## <a name="mactabmac"></a>[Mac](#tab/Mac)
 **Usar FileVault para cifrar el disco Mac**<p>

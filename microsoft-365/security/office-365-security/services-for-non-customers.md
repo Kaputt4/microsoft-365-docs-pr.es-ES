@@ -14,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
-ms.openlocfilehash: 17d069a9bee76087790b608ba3c00bae9c644f99
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: cabb583aebc1baff1eb9f8286fceb2864b26deea
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441227"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031775"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Servicios de envío de correo de no clientes a Office 365
 
@@ -46,7 +46,7 @@ Microsoft ofrece varias opciones de soporte para personas que tienen problemas p
 
 - Use el [Portal de eliminación de la lista de Office 365](https://sender.office.com) para enviar una solicitud para quitar su IP de la lista de remitentes bloqueados.
 
-- Lea los [foros de la comunidad de Microsoft](https://community.office365.com/en-us/f/).
+- Lea los [foros de la comunidad de Microsoft](https://community.office365.com/f/).
 
 - Póngase en contacto con el cliente de Office 365 al que está intentando enviar un correo electrónico a través de otra vía y pídale que entre en contacto con el Soporte técnico de Microsoft para que abra una incidencia de soporte técnico en su nombre. En algunos casos, por motivos legales, el Soporte técnico de Microsoft debe ponerse directamente en contacto con el remitente que posee el espacio de IP que está bloqueado. Sin embargo, normalmente los no clientes no pueden abrir incidencias de soporte técnico.
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre cómo enviar correo electrónico cifrado mediante Outlook.
-ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: e7028f69f4418ae0ff0183653c509fc9ad6171ac
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778145"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031235"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Cifrar o etiquetar el correo electrónico confidencial
 
@@ -46,11 +46,11 @@ Antes de enviar mensajes de correo electrónico con información confidencial o 
 
 ## <a name="set-it-up"></a>Configúrelo
 
-Si desea cifrar un mensaje que no cumple una regla predefinida o el administrador no ha configurado ninguna regla, puede aplicar una variedad de reglas de cifrado distintas antes de enviar el mensaje. Para enviar un mensaje cifrado desde Outlook 2013 o 2016 o Outlook 2016 para Mac, seleccione **opciones > permisos**y, a continuación, seleccione la opción de protección que necesite. También puede enviar un mensaje cifrado seleccionando el botón **proteger** en Outlook en la Web. Para obtener más información, vea [enviar, ver y responder a mensajes cifrados en Outlook para PC](https://support.office.com/en-us/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
+Si desea cifrar un mensaje que no cumple una regla predefinida o el administrador no ha configurado ninguna regla, puede aplicar una variedad de reglas de cifrado distintas antes de enviar el mensaje. Para enviar un mensaje cifrado desde Outlook 2013 o 2016 o Outlook 2016 para Mac, seleccione **opciones > permisos**y, a continuación, seleccione la opción de protección que necesite. También puede enviar un mensaje cifrado seleccionando el botón **proteger** en Outlook en la Web. Para obtener más información, vea [enviar, ver y responder a mensajes cifrados en Outlook para PC](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="admin-settings"></a>Configuración de administración
 
-Puede obtener información sobre cómo configurar el cifrado de correo electrónico en [cifrado de correo electrónico en Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption).
+Puede obtener información sobre cómo configurar el cifrado de correo electrónico en [cifrado de correo electrónico en Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>Cifrar mensajes de correo automáticamente
 
@@ -62,9 +62,9 @@ Puede crear reglas de flujo de correo para cifrar los mensajes de correo electr�
 2. Elija el icono administración. 
 3. En el centro de administración, elija **centros de administración > Exchange**. 
 
-Para obtener más información, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+Para obtener más información, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Marcar los mensajes de cifrado
 
-También puede aplicar la personalización de marca de la campaña para personalizar la apariencia y el texto de los mensajes de correo electrónico. Para obtener más información, vea [Agregar la marca de la organización a los mensajes cifrados](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption).
+También puede aplicar la personalización de marca de la campaña para personalizar la apariencia y el texto de los mensajes de correo electrónico. Para obtener más información, vea [Agregar la marca de la organización a los mensajes cifrados](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
 

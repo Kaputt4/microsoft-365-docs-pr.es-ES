@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: El cambio de requisitos empresariales a veces puede requerir dividir una organización de Microsoft Exchange Online Protection (EOP) (inquilino) en dos organizaciones separadas, combinar dos organizaciones en una, o mover sus dominios y opciones de configuración de EOP desde una organización hacia otra organización.
-ms.openlocfilehash: 89f62a158801dc269cebafcb37f72bb5cb8c93b8
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d1e2913b9263879b1d9a1ca9d20b6b623f2208cf
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441457"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032225"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Mover dominios y opciones de configuración de una organización de EOP a otra organización de EOP
 
@@ -51,7 +51,7 @@ Para volver a crear la organización de origen en la organización de destino, a
   > [!NOTE]
   > Actualmente, la compatibilidad con los cmdlets para la exportación e importación de la colección de reglas de flujo de correo solo es compatible con los planes de suscripción de EOP Premium.
 
-La forma más sencilla de recopilar toda la configuración es usar PowerShell. Para conectarse a PowerShell de Exchange Online Protection, vea [conectarse a PowerShell de Exchange Online Protection](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+La forma más sencilla de recopilar toda la configuración es usar PowerShell. Para conectarse a PowerShell de Exchange Online Protection, vea [conectarse a PowerShell de Exchange Online Protection](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
 
 A continuación, puede recopilar todas las opciones de configuración y exportarlas a un archivo .xml que se importa en el inquilino de destino. En general, puede canalizar la salida del cmdlet **Get** para cada opción de configuración al cmdlet **Export-Clixml** para guardar las opciones de configuración en archivos .xml, tal como se muestra en el código de ejemplo siguiente.
 

@@ -13,12 +13,12 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la compatibilidad con mensajes anónimos desde orígenes IPv6 para Exchange Online Protection y Exchange Online.
-ms.openlocfilehash: b6b1a0f42d879929de5059b6e197bd5fe14887dc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c29c1fa450ca2a2e213930c4f4a394aaf462e31d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093639"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031995"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6
 
@@ -28,7 +28,7 @@ Los remitentes que transmiten mensajes al servicio a través de IPv6 deben cumpl
   
 1. La dirección IPv6 de envío debe tener un registro PTR válido ([registro DNS inverso](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) de la dirección IPv6 de envío). 
     
-2. El remitente debe pasar la verificación SPF (definida en la norma [RFC 7208](https://tools.ietf.org/html/rfc7208)) o la [verificación de DKIM](http://dkim.org/) (definida en la norma [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
+2. El remitente debe pasar la verificación SPF (definida en la norma [RFC 7208](https://tools.ietf.org/html/rfc7208)) o la [verificación de DKIM](https://dkim.org/) (definida en la norma [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
     
 Cumplir con estos requisitos es obligatorio independientemente de la configuración que se tenía antes de optar por IPv6. Si se cumplen ambos requisitos, el mensaje pasará los filtros de mensajes de correo electrónico normales que proporciona el servicio. Si no se cumple uno de los dos, el mensaje se rechaza con una de las siguientes respuestas 450:
   

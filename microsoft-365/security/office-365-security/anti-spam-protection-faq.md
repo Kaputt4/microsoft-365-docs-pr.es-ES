@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
-ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441097"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034191"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
@@ -33,13 +33,13 @@ En este tema encontrará las preguntas frecuentes y sus correspondientes respues
 R. **Para mensajes entrantes:** La mayor parte del correo no deseado se elimina mediante el filtrado de conexiones, que se basa en la dirección IP del remitente. A continuación, el servicio inspecciona el contenido del mensaje. El correo no deseado con contenido filtrado se envía de manera predeterminada a la carpeta Correo electrónico no deseado del destinatario. Esta acción se puede cambiar. Por ejemplo, se puede elegir enviar los mensajes de correo no deseado a cuarentena configurando la directiva de filtro de contenido. 
   
 > [!IMPORTANT]
-> Para clientes independientes de EOP: para asegurarse de que la acción **mover el mensaje a la carpeta de correo electrónico no deseado** funcionará con los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en los servidores locales para detectar encabezados de correo no deseado agregados por EOP. Para obtener información detallada, consulte [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Para clientes independientes de EOP: para asegurarse de que la acción **mover el mensaje a la carpeta de correo electrónico no deseado** funcionará con los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en los servidores locales para detectar los encabezados de correo no deseado agregados por EOP. Para obtener información detallada, consulte [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Para mensajes salientes:** El mensaje se enruta a través del grupo de entrega de mayor riesgo o se devuelve y no se entrega, en cuyo caso el remitente debería recibir un mensaje de notificación de estado de entrega (DSN) indicando que el mensaje no se pudo entregar. 
   
  **P. ¿Qué es una variante de correo no deseado de día cero y cómo la controla el servicio?**
   
-R. Una variante de correo no deseado de día cero es una variante de correo no deseado de primera generación, desconocida hasta el momento, que nunca se ha capturado o analizado, de modo que los filtros de contenido de correo no deseado aún no cuentan con información disponible para detectarla. Una vez que nuestros analistas de correo no deseado capturan y analizan una muestra de correo no deseado de día cero, si cumple con el criterio de clasificación de correo no deseado, se actualizan los filtros de contenido de correo no deseado para detectarla y deja de considerarse una variante de día cero. ( **Nota:** si recibe un mensaje que puede ser una variante de 0 días de correo no deseado, para ayudarnos a mejorar el servicio, envíe el mensaje a Microsoft mediante uno de los métodos descritos en [enviar mensajes de correo no deseado, no spam y fraude de suplantación de identidad a Microsoft para Análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)).
+R. Una variante de correo no deseado de día cero es una variante de correo no deseado de primera generación, desconocida hasta el momento, que nunca se ha capturado o analizado, de modo que los filtros de contenido de correo no deseado aún no cuentan con información disponible para detectarla. Una vez que nuestros analistas de correo no deseado capturan y analizan una muestra de correo no deseado de día cero, si cumple con el criterio de clasificación de correo no deseado, se actualizan los filtros de contenido de correo no deseado para detectarla y deja de considerarse una variante de día cero. ( **Nota:** si recibe un mensaje que puede ser una variante de 0 días de correo no deseado, para ayudarnos a mejorar el servicio, envíe el mensaje a Microsoft mediante uno de los métodos descritos en enviar mensajes de correo no deseado, [no spam y de estafas de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)).
   
  **P: ¿Debo configurar el servicio para obtener protección contra el correo no deseado?**
   
@@ -73,13 +73,13 @@ P. Los mensajes de correo no deseado y los mensajes seguros se pueden enviar a M
   
 R. Sí, por ejemplo, puede obtener un informe de detección de correo no deseado en el centro de administración de Microsoft 365. Este informe muestra el volumen de correo no deseado como un recuento de mensajes únicos. Para obtener más información sobre los informes, consulte los siguientes vínculos:
   
-Clientes de Exchange Online: [supervisión, informes y seguimiento de mensajes en Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Clientes de Exchange Online: [supervisión, informes y seguimiento de mensajes en Exchange Online](https://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
 Clientes de Exchange Online Protection: [informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
   
  **P: Alguien me envió un mensaje y no lo encuentro. Sospecho que se pudo haber detectado como correo no deseado. ¿Existe alguna herramienta que pueda utilizar para averiguarlo?**
   
-R: Sí, la herramienta de seguimiento de mensajes le permite realizar un seguimiento de los mensajes de correo electrónico a medida que pasan por el servicio a fin de averiguar qué sucedió con ellos. Consulte Was a message marked as spam?  Para obtener más información acerca de cómo usar la herramienta de seguimiento de mensajes para averiguar por qué un mensaje se marcó como correo no deseado, consulte ¿ [se marcó un mensaje como correo no deseado?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
+R: Sí, la herramienta de seguimiento de mensajes le permite realizar un seguimiento de los mensajes de correo electrónico a medida que pasan por el servicio a fin de averiguar qué sucedió con ellos. Consulte Was a message marked as spam?  Para obtener más información acerca de cómo usar la herramienta de seguimiento de mensajes para averiguar por qué un mensaje se marcó como correo no deseado, consulte ¿ [se marcó un mensaje como correo no deseado?](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **P: ¿El servicio limitará (límite de tasa) mi correo si mis usuarios envían correo no deseado?**
   
@@ -89,15 +89,15 @@ Puede enviar una notificación a la dirección de correo electrónico especifica
   
  **P. ¿Puedo usar un proveedor contra correo no deseado y contra malware de terceros junto con Exchange Online?**
   
-R. Sí, puede configurar otro servicio de filtrado de correo no deseado y malware para proteger sus buzones de Exchange Online. Para hacerlo en su correo entrante, debe redirigir sus mensajes de correo electrónico al proveedor de terceros cambiando sus registros MX para que apunten al proveedor de terceros y, a continuación, redirigir los mensajes a EOP para el procesamiento adicional. Para hacerlo en su correo saliente, configure el destino de entrega del mensaje al proveedor de terceros (host inteligente), tal y como se muestra en [Scenario: Outbound Smart Hosting](http://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+R. Sí, puede configurar otro servicio de filtrado de correo no deseado y malware para proteger sus buzones de Exchange Online. Para hacerlo en su correo entrante, debe redirigir sus mensajes de correo electrónico al proveedor de terceros cambiando sus registros MX para que apunten al proveedor de terceros y, a continuación, redirigir los mensajes a EOP para el procesamiento adicional. Para hacerlo en su correo saliente, configure el destino de entrega del mensaje al proveedor de terceros (host inteligente), tal y como se muestra en [Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
   
  **P.: ¿Microsoft tiene documentación sobre cómo protegerse de las estafas de suplantación de identidad (phishing)?**
   
 R. Sí, consulte los siguientes artículos:
   
-[Obtener ayuda relacionada con las estafas de suplantación de identidad (phishing), las estafas de loterías y otros tipos de estafas](http://go.microsoft.com/fwlink/p/?LinkId=325606)
+[Obtener ayuda relacionada con las estafas de suplantación de identidad (phishing), las estafas de loterías y otros tipos de estafas](https://go.microsoft.com/fwlink/p/?LinkId=325606)
   
-[Estafas a través de correos electrónicos y sitios web: cómo protegerse](http://go.microsoft.com/fwlink/p/?LinkID=325607)
+[Estafas a través de correos electrónicos y sitios web: cómo protegerse](https://go.microsoft.com/fwlink/p/?LinkID=325607)
   
  **P. ¿Se investigan los mensajes de malware o correo no deseado en cuanto a quién los envió o se transfieren a las autoridades judiciales?**
   

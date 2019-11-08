@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y etiquete los datos confidenciales.
-ms.openlocfilehash: 73709c1302a2e9e46eb2d54ea021438b5f1743c5
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5213c55f4a8ce0e223896f1b960847714d6d06cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575666"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031423"
 ---
 # <a name="set-up-compliance-features"></a>Configurar las características de cumplimiento
 
@@ -57,7 +57,7 @@ Para poner un buzón de correo en retención por juicio, en el centro de adminis
 
 Las etiquetas de confidencialidad incluyen el plan 1 de Azure Information Protection (AIP) y le ayudan a clasificar y, opcionalmente, a proteger sus documentos y correos electrónicos mediante la aplicación de etiquetas. Las etiquetas pueden ser aplicadas automáticamente por los administradores que definen las reglas y condiciones, manualmente por los usuarios o mediante una combinación en la que los usuarios obtienen recomendaciones.
 
-Para configurar las etiquetas de confidencialidad, vea [crear y administrar las etiquetas de confidencialidad](https://support.office.com/en-us/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) de vídeo.
+Para configurar las etiquetas de confidencialidad, vea [crear y administrar las etiquetas de confidencialidad](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) de vídeo.
 
 
 

@@ -14,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 8f86aa654c79bac2409d64b43d0cf7bb563c1412
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8ce6e21bcc25853e641ee20126ffd38c785e76f7
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092765"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033941"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -64,7 +64,7 @@ Los detalles dependen de si la suscripción a Office 365 incluye [Exchange Onlin
 
 |Si su suscripción incluye... |Verá estos detalles |
 |---------|---------|
-|EOP pero no Office 365 ATP     |Correo electrónico malintencionado detectado y bloqueado por EOP<br> Consulte [Informe de estado de protección contra amenazas (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report).| |
+|EOP pero no Office 365 ATP     |Correo electrónico malintencionado detectado y bloqueado por EOP<br> Consulte [Informe de estado de protección contra amenazas (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report).| 
 |Office 365 ATP |Contenido malintencionado y correo electrónico malintencionado detectados y bloqueados por EOP y a ATP de Office 365<br>Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, la [depuración automática de cero horas](zero-hour-auto-purge.md)y las características de ATP (incluidos [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [protección contra phishing ATP](atp-anti-phishing.md)).<br>Consulte [Informe de estado de protección contra amenazas (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
 
 Para ver o acceder al widget de estado de protección contra amenazas, debe tener permisos para ver los informes de protección contra amenazas avanzada. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 

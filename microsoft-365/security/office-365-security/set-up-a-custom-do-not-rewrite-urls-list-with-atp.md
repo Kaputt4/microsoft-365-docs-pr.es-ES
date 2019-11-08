@@ -15,12 +15,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de vínculos seguros de ATP, puede incluir una lista de direcciones URL de "do-not-Rewrite" para permitir que algunos usuarios de la organización visiten los sitios que incluya en la lista.
-ms.openlocfilehash: 512d4ce507c191b00bc2d21f61d5efbf2dffcb57
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1068f7e2ac75f9c4403475e1fa9bc4da57fabe51
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772144"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032055"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada con los vínculos seguros de Office 365 ATP
 
@@ -69,19 +69,19 @@ Para editar (o definir) las directivas de ATP, debe tener asignado un rol apropi
 
 - Las direcciones URL que especifique en la lista "no reescribir" se excluyen del análisis de vínculos seguros de ATP para los destinatarios que especifique.
  
-- Si ya tiene una lista de direcciones URL en la lista "no reescribir", asegúrese de revisar dicha lista y agregar caracteres comodín según corresponda. Por ejemplo, si la lista existente tiene una entrada como `http://contoso.com/a` y desea incluir subrutas como `http://contoso.com/a/b` en la Directiva, agregue un carácter comodín a la entrada para que tenga el aspecto `http://contoso.com/a/*`deseado.
+- Si ya tiene una lista de direcciones URL en la lista "no reescribir", asegúrese de revisar dicha lista y agregar caracteres comodín según corresponda. Por ejemplo, si la lista existente tiene una entrada como `https://contoso.com/a` y desea incluir subrutas como `https://contoso.com/a/b` en la Directiva, agregue un carácter comodín a la entrada para que tenga el aspecto `https://contoso.com/a/*`deseado.
     
 - No incluya una barra diagonal (/) en las direcciones URL que especifique en la lista "no reescribir". Por ejemplo, en lugar de `contoso.com/` escribir en la lista "no reescribir", escriba `contoso.com`.
 
-- Cuando se especifica una lista de "no reescribir" para una directiva de vínculos seguros de ATP, puede incluir hasta tres asteriscos comodín (\*). Los caracteres comodín\*() se usan para incluir explícitamente prefijos o subdominios, como `http://` o `https://`. Una entrada, como no `contoso.com` es la misma que `*.contoso.com/*` la de la lista "no reescribir". Debe tener `*.contoso.com/*` si desea permitir que los usuarios visiten un dominio y sus subdominios y rutas.
+- Cuando se especifica una lista de "no reescribir" para una directiva de vínculos seguros de ATP, puede incluir hasta tres asteriscos comodín (\*). Los caracteres comodín\*() se usan para incluir explícitamente prefijos o subdominios, como `https://` o `https://`. Una entrada, como no `contoso.com` es la misma que `*.contoso.com/*` la de la lista "no reescribir". Debe tener `*.contoso.com/*` si desea permitir que los usuarios visiten un dominio y sus subdominios y rutas.
     
 En la tabla siguiente se muestran ejemplos de lo que se puede especificar y el efecto que tienen estas entradas.
     
 |**Entrada de ejemplo**|**Qué hace**|
 |:-----|:-----|
-|`contoso.com`|Permite a los destinatarios visitar un sitio `http://contoso.com` como, por ejemplo, subdominios o rutas de una ruta.|
-|`*.contoso.com/*`  <br/> |Permite a los destinatarios visitar un dominio, subdominios y rutas de los destinatarios `https://www.contoso.com`, `https://maps.contoso.com`como `http://www.contoso.com`,, o`http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |Permite a los destinatarios específicos visitar un sitio `http://contoso.com/a`como, pero no subtrazados como`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a/*`  <br/> |Permite a los destinatarios específicos visitar un sitio `http://contoso.com/a` como y subrutas como`http://contoso.com/a/b`  <br/> |
+|`contoso.com`|Permite a los destinatarios visitar un sitio `https://contoso.com` como, por ejemplo, subdominios o rutas de una ruta.|
+|`*.contoso.com/*`  <br/> |Permite a los destinatarios visitar un dominio, subdominios y rutas de los destinatarios `https://www.contoso.com`, `https://maps.contoso.com`como `https://www.contoso.com`,, o`https://www.contoso.com/a`  <br/> |
+|`https://contoso.com/a`  <br/> |Permite a los destinatarios específicos visitar un sitio `https://contoso.com/a`como, pero no subtrazados como`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a/*`  <br/> |Permite a los destinatarios específicos visitar un sitio `https://contoso.com/a` como y subrutas como`https://contoso.com/a/b`  <br/> |
    
  

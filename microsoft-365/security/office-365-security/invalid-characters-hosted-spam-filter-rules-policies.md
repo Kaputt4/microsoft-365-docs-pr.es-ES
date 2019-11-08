@@ -1,5 +1,5 @@
 ---
-title: Evitar caracteres no válidos en las reglas de filtro de correo no deseado y la Directiva de filtro de correo no deseado
+title: Evite usar caracteres no válidos en las reglas de filtro de correo no deseado y directiva de filtro de correo no deseado
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Proporciona ayuda a los administradores que tienen caracteres no válidos en la configuración contra correo no deseado y tienen problemas al intentar usar el centro &amp; de seguridad y cumplimiento.
-ms.openlocfilehash: 286a96814e0be5857499d7c54839d20142d0dd60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 96d81c17c33c5ecf6e7b88ebe5676336b963cb4e
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092221"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039109"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Evitar caracteres no válidos en las reglas de filtro de correo no deseado y Directiva de filtro de correo no deseado 
 
@@ -41,13 +41,13 @@ Una vez que haya identificado la Directiva y las reglas que contienen caracteres
     
 2. Para cambiar el nombre de la Directiva de filtro de correo no deseado, ejecute el cmdlet Set-HostedContentFilterPolicy de la siguiente manera:
     
-    ```
+    ```powershell
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
 3. Para cambiar el nombre de una regla de filtro de correo no deseado, ejecute el cmdlet Set-HostedContentFilterRule de la siguiente manera:
     
-    ```
+    ```powershell
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 

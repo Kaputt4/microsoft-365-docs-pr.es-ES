@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad incluidas en Microsoft 365 Business.
-ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 5e295480b1a578ca26646a89d6a0a4183a15428d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636780"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031453"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business
 
@@ -33,7 +33,7 @@ Microsoft 365 Business ofrece características de seguridad simplificadas para a
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Características de seguridad del centro de administración de Microsoft 365 Business
 
-[![Etiqueta para que sepa que el centro de administración está cambiando y puede encontrar más información en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Puede administrar muchas de las características de seguridad empresarial de Microsoft 365 en el centro de administración, lo que le proporciona una forma simplificada de activar o desactivar estas características. En el centro de administración, puede hacer lo siguiente:
   
@@ -73,7 +73,7 @@ Hay disponibles características avanzadas de Microsoft 365 Business para ayudar
 - **[Todas las capacidades de Intune en Azure portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
     El acceso al centro de administración de Intune en Azure portal le permite configurar características de seguridad adicionales, como la administración de dispositivos de MacOS, dispositivos iPhone y Android junto con la administración avanzada de dispositivos para Windows, que no están disponibles a través de Microsoft 365 centro de administración empresarial.
-- **Mismo [acceso condicional](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) que el plan de Azure ad P1**
+- **Mismo [acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) que el plan de Azure ad P1**
 
     El acceso condicional puede ayudar a proteger su organización del riesgo de inicio de sesión, a los intentos de acceso desde una red o configuración regional inesperada, a que los intentos de acceso forman tipos de dispositivos peligrosos y así sucesivamente. Las directivas de acceso condicional se aplican una vez completada la primera autenticación y se usan señales del primer evento de autenticación para determinar si el intento de acceso debe ser aprobado, denegado o f (como una segunda forma de identificación) Obligatorio.
 
@@ -104,7 +104,7 @@ Su suscripción de Microsoft 365 Business incluye características que le ayudar
     
 - **[Etiquetas de confidencialidad](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 Business incluye todas las características del [plan 1 de Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871407). Con este plan puede crear **etiquetas de confidencialidad**, que le permiten controlar el acceso a la información confidencial de correo electrónico y documentos con controles como "no reenviar" y "no copiar". También puede clasificar la información confidencial como "confidencial" y especificar cómo se puede compartir la información clasificada fuera y dentro de la empresa. El cifrado de nivel empresarial es fácil de aplicar en el correo electrónico y los documentos para mantener la privacidad de la información. También puede instalar el complemento cliente de Azure Information Protection para aplicaciones de Office. Para obtener más información, vea [Azure Information Protection Unified Labeling Client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Para las etiquetas de confidencialidad, instale **AzInfoProtection_UL. exe**.
+   Microsoft 365 Business incluye todas las características del [plan 1 de Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871407). Con este plan puede crear **etiquetas de confidencialidad**, que le permiten controlar el acceso a la información confidencial de correo electrónico y documentos con controles como "no reenviar" y "no copiar". También puede clasificar la información confidencial como "confidencial" y especificar cómo se puede compartir la información clasificada fuera y dentro de la empresa. El cifrado de nivel empresarial es fácil de aplicar en el correo electrónico y los documentos para mantener la privacidad de la información. También puede instalar el complemento cliente de Azure Information Protection para aplicaciones de Office. Para obtener más información, vea [Azure Information Protection Unified Labeling Client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Para las etiquetas de confidencialidad, instale el **AzInfoProtection_UL. exe**.
 
 Puede administrar estas características en el centro de &amp; seguridad y cumplimiento y en el centro de administración de Intune. Con el tiempo, los controles simplificados se agregarán al centro de administración de Microsoft 365 Business.
   

@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si su organización envía una gran cantidad de correo masivo marcado como correo no deseado, puede bloquear el envío de correo electrónico con Office 365. Lea este artículo para obtener más información sobre por qué ocurre esto y lo que puede hacer al respecto.
-ms.openlocfilehash: 1985f9726a32e2726fd2814e5ec9079ad3ec211e
-ms.sourcegitcommit: 6c42fb7123b9688f9b53bc7fa91fb8cdfcf4c718
+ms.openlocfilehash: 28677e2bbfad7f44595de1300e42b9c58ab99c2b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37455072"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031855"
 ---
 # <a name="control-outbound-spam-in-office-365"></a>Controlar el correo no deseado saliente en Office 365
 
@@ -33,7 +33,7 @@ Tenemos que administrar el correo no deseado de salida en serio porque nuestro e
 
 - **Habilitar las notificaciones cuando una cuenta envía correo no deseado o se cierra**: los administradores pueden obtener CCO siempre que un mensaje se marca como correo no deseado saliente y se envía a través del grupo de riesgo alto. Mediante la supervisión de este buzón, un administrador puede detectar si tiene una cuenta en peligro en su red o si el filtro de correo no deseado marca de forma errónea su correo electrónico como correo no deseado. [Aquí](configure-the-outbound-spam-policy.md)puede encontrar más información sobre cómo configurar la Directiva de correo no deseado saliente.
 
-- **Revise manualmente las reclamaciones de correo no deseado de proveedores de correo electrónico de**terceros: muchos servicios de correo electrónico de terceros como Outlook.com, Yahoo y AOL proporcionan un bucle de comentarios en el que si algún usuario del servicio marca un correo electrónico de nuestro servicio como correo no deseado, el mensaje se empaqueta y se nos devuelve a nosotros para su revisión. Para obtener más información acerca de la compatibilidad de remitentes para Outlook.com, haga clic [aquí](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
+- **Revise manualmente las reclamaciones de correo no deseado de proveedores de correo electrónico de**terceros: muchos servicios de correo electrónico de terceros como Outlook.com, Yahoo y AOL proporcionan un bucle de comentarios en el que si algún usuario del servicio marca un correo electrónico de nuestro servicio como correo no deseado, el mensaje se empaqueta y se envía a nosotros para que lo revisen. Para obtener más información acerca de la compatibilidad de remitentes para Outlook.com, haga clic [aquí](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
 
 ## <a name="what-eop-does-to-control-outbound-spam"></a>Qué hace EOP para controlar el correo no deseado saliente
 
@@ -47,7 +47,7 @@ Tenemos que administrar el correo no deseado de salida en serio porque nuestro e
 
    Un solo mensaje marcado como correo no deseado puede ser un error de clasificación por el motor de correo no deseado y también conocido como falso positivo. Lo enviamos a través del grupo de alto riesgo para darle la oportunidad de salir; sin embargo, un gran número de mensajes en un breve período de tiempo es indicativo de un problema y, cuando esto ocurre, se impide que la cuenta envíe más correo electrónico. Existen distintos umbrales para las cuentas de correo electrónico individuales y para todo el espacio empresarial.
 
-4. La **deshabilitación de cuentas infractoras cuando envían demasiado correo electrónico en un período de tiempo demasiado corto**: además de los límites superiores que buscan una proporción de mensajes marcados como correo no deseado, también existen límites que bloquean las cuentas cuando alcanzan un límite general, independientemente de si los mensajes se marcan como correo no deseado o no. El motivo por el que se encuentra este límite es que una cuenta en peligro podría enviar correo no deseado de día cero que no está presente por el filtro de correo no deseado. Debido a que es difícil, si no imposible, a veces distinguir la diferencia entre una campaña de correo masivo legítima y una campaña de correo no deseado masiva, estos límites se activan para limitar los posibles daños.
+4. La **deshabilitación de cuentas infractoras cuando envían demasiado correo electrónico en un período de tiempo demasiado corto**: además de los límites superiores que buscan una proporción de mensajes marcados como correo no deseado, también hay límites que bloquean las cuentas cuando alcanzan un límite general independientemente de si los mensajes se marcan como correo no deseado o no. El motivo por el que se encuentra este límite es que una cuenta en peligro podría enviar correo no deseado de día cero que no está presente por el filtro de correo no deseado. Debido a que es difícil, si no imposible, a veces distinguir la diferencia entre una campaña de correo masivo legítima y una campaña de correo no deseado masiva, estos límites se activan para limitar los posibles daños.
 
 > [!NOTE]
 > Para los #3 y #4, no anunciamos los límites exactos para evitar que los remitentes de correo no deseado puedan jugar con el sistema y asegurarnos de que podemos cambiar los límites que necesitamos. Los límites son lo suficientemente altos como para que un usuario promedio de la empresa nunca los Presione y lo suficientemente bajo como para que contenga la mayoría de los daños que puede hacer un remitente de correo no deseado.
@@ -60,7 +60,7 @@ Es difícil alcanzar un equilibrio entre los clientes que quieren enviar un gran
 
 2. **Usar un correo electrónico masivo de terceros para enviar la comunicación masiva**: hay varios correos electrónicos masivos de terceros cuyo único negocio es enviar correo electrónico masivo. Pueden trabajar con los clientes para asegurarse de que tienen buenas prácticas de correo electrónico y tienen recursos dedicados a su aplicación.
 
-El grupo de trabajo de mensajería, móviles y contra el abuso de malware (MAAWG) publica [aquí](http://www.maawg.org/about/roster)su lista de pertenencia. Hay varios proveedores de correo electrónico masivo en la lista que se conocen como ciudadanos de Internet responsables.
+El grupo de trabajo de mensajería, móviles y contra el abuso de malware (MAAWG) publica [aquí](https://www.maawg.org/about/roster)su lista de pertenencia. Hay varios proveedores de correo electrónico masivo en la lista que se conocen como ciudadanos de Internet responsables.
 
 ## <a name="for-more-information"></a>Más información
 

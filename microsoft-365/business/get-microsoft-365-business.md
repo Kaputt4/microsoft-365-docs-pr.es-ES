@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga información sobre cómo comprar Microsoft 365 Business desde el centro de Partners de Microsoft.
-ms.openlocfilehash: cd13db200292f84ea736bbd27af69608e576e586
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 09d2f24fba1725278b663d5c3159163a56dcdc59
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574916"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038927"
 ---
 # <a name="get-microsoft-365-business"></a>Obtener Microsoft 365 Empresa
 
@@ -36,7 +36,7 @@ Si no tiene un partner y quiere obtener Microsoft 365 Business, puede [comprarlo
 
 Consulte registrarse para obtener instrucciones detalladas [en Microsoft 365 Business](sign-up.md) .
 
-También puede ir a Microsoft [Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) para comprar Microsoft 365 Business y obtener ayuda de configuración.
+También puede ir a Microsoft [Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) para comprar Microsoft 365 Business y obtener ayuda de configuración.
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>Obtener Microsoft 365 Business desde el Centro de partners de Microsoft
 
@@ -46,7 +46,7 @@ También puede ir a Microsoft [Store](https://www.microsoft.com/en-us/store/loca
     
     ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. En la página **Suscripción** del cliente, seleccione Agregar suscripción, elija la opción Pequeña empresa en Catálogo y, después, elija **Microsoft 365 Empresa**.
+3. En la página de **suscripción** del cliente, seleccione **Agregar suscripción**, elija la opción pequeña empresa en catálogo y, a continuación, elija **Microsoft 365 empresa**.
     
     Seleccione el número de licencias que necesita (hasta 300). Si tiene más de 300 usuarios, consulte [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) en su lugar. 
     

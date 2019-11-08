@@ -11,12 +11,12 @@ ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: 72ef33199f3cde42ec86b4d64d13828116510d8f
-ms.sourcegitcommit: a263fc5a598363ca809a3cb990d41393bf38d3b7
+ms.openlocfilehash: f14809e58c1580333ba4e412a2b442df79e61975
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34592378"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029034"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administrar suscripciones de aplicaciones de terceros para la organización
 
@@ -24,7 +24,7 @@ Puede administrar las licencias y la facturación de aplicaciones de terceros en
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Cómo obtener aplicaciones de software como servicio
 Hay varias formas de comprar aplicaciones de terceros.
-- **Compra directa** : los clientes pueden comprar directamente suscripciones de [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource](http://www.appsource.com/). 
+- **Compra directa** : los clientes pueden comprar directamente suscripciones de [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource](https://www.appsource.com/). 
 - **Compra de asociados** : trabaje con un Partner a través del centro de asociados para comprar suscripciones. 
 - **Propuesta de Microsoft** : responda a una propuesta de Microsoft sales que incluya aplicaciones de terceros. 
 
@@ -54,7 +54,7 @@ Los administradores deben activar aplicaciones de terceros antes de asignarlas a
 
 **Para activar aplicaciones de terceros**
 1. Vaya al [centro de administración de 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=837890)y Active **probar la vista previa**.
-2. Seleccione productos de **facturación** > **&** > de**aplicaciones**de servicios.
+2. Seleccione productos de **facturación** > **&** > **aplicaciones**de servicios.
 3. Busque y seleccione la aplicación que desea administrar. 
 4. En **configuración & acciones**, seleccione **administrar en el portal de Publisher**. 
 
@@ -71,12 +71,12 @@ Una vez activada, la aplicación permanecerá activa a menos que se cancele, exp
 | Cambiar la cantidad de licencias <br> Administrar la forma de pago de la factura <br> Administrar la forma de pago de la factura <br> Cambiar el método de pago (tarjeta de crédito) <br> Ver factura <br> Cancelar la suscripción a la aplicación | Configurar la aplicación (una vez por cada aplicación) <br> Asignar licencias a usuarios <br> Soporte técnico |
 
 ## <a name="assign-licenses"></a>Asignar licencias
-Los administradores deben activar aplicaciones de terceros antes de asignarlas a los usuarios. Se activan en el portal del editor de terceros. En la página de la aplicación, en configuración & acciones, seleccione el vínculo para asignar licencias.
+Los administradores deben activar aplicaciones de terceros antes de asignarlas a los usuarios. Se activan en el portal del editor de terceros. En la página aplicación, en configuración & acciones, seleccione el vínculo para asignar licencias.
 
 **Para asignar aplicaciones de terceros**
 
 1. Vaya al [centro de administración de 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=837890)y Active **probar la vista previa**.
-2. Seleccione productos de **facturación** > **&** > de**aplicaciones**de servicios.
+2. Seleccione productos de **facturación** > **&** > **aplicaciones**de servicios.
 3. Busque y seleccione la aplicación que desea administrar. 
 4. En **configuración & acciones**, seleccione el vínculo para **administrar en el portal de Publisher**. 
  
@@ -86,7 +86,7 @@ Los administradores pueden cambiar el número de licencias que pertenecen a su o
 **Para cambiar la cantidad de licencias**
 
 1. Vaya al [centro de administración de 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=837890)y Active **probar la vista previa**.
-2. Seleccione productos de **facturación** > **&** > de**aplicaciones**de servicios.
+2. Seleccione productos de **facturación** > **&** > **aplicaciones**de servicios.
 3. Busque y seleccione la aplicación que desea administrar. 
 4. Seleccione **cambiar cantidad de licencia**. 
 
@@ -97,12 +97,12 @@ Cada aplicación de software como un servicio tiene asignado un perfil de factur
 - **Información de contacto** : dirección de facturación y nombre de contacto
 - **Roles** : roles que permiten cambiar el perfil de facturación, pagar facturas o usar el método de pago en el perfil de facturación para realizar la compra. 
 
-Para obtener más información acerca de los perfiles de facturación, consulte Understanding [Billing](https://docs.microsoft.com/microsoft-store/billing-profile)profiles. 
+Para obtener más información acerca de los perfiles de facturación, consulte Understanding [Billing profiles](https://docs.microsoft.com/microsoft-store/billing-profile). 
 
 **Para cambiar el perfil de facturación en una suscripciones de aplicación de software como servicio**
 
 1. Vaya al [centro de administración de 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=837890)y Active **probar la vista previa**.
-2. Seleccione productos de **facturación** > **&** > de**aplicaciones**de servicios.
+2. Seleccione productos de **facturación** > **&** > **aplicaciones**de servicios.
 3. Busque y seleccione la aplicación que desea administrar. 
 4. Junto a **Perfil de facturación**, seleccione **Editar**.
 
@@ -114,6 +114,6 @@ Los clientes pueden cancelar la aplicación de software como servicio desde la p
 **Para cancelar la suscripción a una aplicación de software como servicio**
 
 1. Vaya al [centro de administración de 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=837890)y Active **probar la vista previa**.
-2. Seleccione productos de **facturación** > **&** > de**aplicaciones**de servicios.
+2. Seleccione productos de **facturación** > **&** > **aplicaciones**de servicios.
 3. Busque y seleccione la aplicación que desea administrar. 
 4. En **configuración & acciones**, seleccione **Cancelar suscripción**.

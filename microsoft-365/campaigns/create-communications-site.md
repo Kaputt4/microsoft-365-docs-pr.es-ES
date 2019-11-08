@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un sitio de comunicaciones para la campaña.
-ms.openlocfilehash: 339f6e0de27975a8c768a6752d7fd367e12dd8f6
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 8473aa3a5b4e091b25d57939a0897eb257513b75
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772537"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029094"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Crear un sitio de comunicaciones para la campaña
 
@@ -58,7 +58,7 @@ Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en
 2. En la esquina superior izquierda de la página, seleccione el icono del iniciador de aplicaciones y, a continuación, seleccione el mosaico de **SharePoint** . Si no ve el icono de **SharePoint**, haga clic en el icono de **Sitios** o de **Todos** si SharePoint no aparece.
 3. En la parte superior de la Página principal de SharePoint, haga clic en **+ crear sitio** y elija la opción **sitio de comunicación** .
 
-Obtenga información [sobre los sitios de comunicaciones](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) y cómo [crear un sitio de comunicación en SharePoint Online](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
+Obtenga información [sobre los sitios de comunicaciones](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) y cómo [crear un sitio de comunicación en SharePoint Online](https://support.office.com/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
 
 
 ## <a name="admin-settings"></a>Configuración de administración

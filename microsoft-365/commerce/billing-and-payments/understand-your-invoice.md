@@ -16,24 +16,24 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo leer y entender la factura de productos para empresas de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
-ms.openlocfilehash: e0af9ec0808de97e55ef550c6feb51a146dbb5f6
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 79d652f56617837019322b7329d918488283659a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646462"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029044"
 ---
 # <a name="understand-your-invoice"></a>Entender la factura
 
 La factura proporciona un resumen de los cargos e instrucciones de pago. Puede [ver su factura en línea](#view-your-online-invoice) en el centro de administración de Microsoft 365. También puede descargarla en el formato de documento portátil (. pdf) para enviar por correo electrónico.
 
-Si solo tiene una suscripción de Office 365, consulte [ver la factura de office 365 para empresas](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+Si solo tiene una suscripción de Office 365, consulte [ver la factura de office 365 para empresas](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
 
 ## <a name="understand-the-invoice-header"></a>Descripción del encabezado de la factura
 
 La parte superior de la primera página identifica quién es responsable del pago, a dónde se envía la factura y un resumen de los gastos.
 
-| Term | Description |
+| Term | Descripción |
 | --- | --- |
 | Vendido a |La cuenta de facturación que identifica el nombre y la dirección de la entidad jurídica responsable del pago. Esta información puede administrarse en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">cuentas de facturación</a> , donde puede encontrar el contrato de cuenta y administrar los roles y permisos. |
 | Factura a |Identifica quién recibe la factura. Esta información puede administrarse en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">perfiles de facturación</a> . El perfil de facturación también se muestra en la página de facturas en línea, en la sección **Resumen de facturas** . Para obtener más información acerca de los perfiles de facturación y de cómo puede usarlos para crear opciones de facturación más flexibles para su organización, consulte [Manage Billing profiles](manage-billing-profiles.md). |
@@ -46,19 +46,19 @@ La parte superior de la primera página identifica quién es responsable del pag
 
 El **Resumen de facturación** muestra el Resumen de los cargos desde el período de facturación anterior, los créditos que se aplicaron, los impuestos y el importe total debido.
 
-| Term | Description |
+| Term | Descripción |
 | --- | --- |
 | Cargos|Número total de productos adquiridos para este período de facturación y sus cargos y impuestos relacionados. Las compras se agregan para proporcionar una vista concisa de la factura. |
 | Créditos |Créditos que ha recibido de devoluciones |
-| Créditos de Azure aplicados |Los créditos de Azure que se aplican automáticamente a Azure cobran cada período de facturación. Si no tiene ningún crédito de Azure, este campo está oculto. Para obtener más información sobre los créditos de Azure, vea [realizar un seguimiento del saldo crediticio de Azure Customer Agreement](https://docs.microsoft.com/en-us/azure/billing/billing-mca-check-azure-credits-balance). |
+| Créditos de Azure aplicados |Los créditos de Azure que se aplican automáticamente a Azure cobran cada período de facturación. Si no tiene ningún crédito de Azure, este campo está oculto. Para obtener más información sobre los créditos de Azure, vea [realizar un seguimiento del saldo crediticio de Azure Customer Agreement](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
 | Subtotal |El importe antes de impuestos debido |
 | Impuestos |El tipo y la cantidad de impuestos que se pagan, en función del país del perfil de facturación. Si no tiene que pagar impuestos, no se mostrará ningún impuesto en su factura. |
 
 ### <a name="understand-your-charges"></a>Comprender los gastos
 
-Las páginas de cargos muestran el costo desglosado por producto. Para los clientes de Azure, los cargos podrían estar organizados por sección de facturas. Para obtener más información sobre cómo se usan las secciones de facturas con productos de Azure, vea [secciones de facturas](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview#invoice-sections) en Introducción [a su cuenta de facturación de contratos de clientes de Microsoft](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview). Dentro de cada pedido de producto, el costo se desglosa por familia de servicios.
+Las páginas de cargos muestran el costo desglosado por producto. Para los clientes de Azure, los cargos podrían estar organizados por sección de facturas. Para obtener más información sobre cómo se usan las secciones de facturas con productos de Azure, vea [secciones de facturas](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) en Introducción [a su cuenta de facturación de contratos de clientes de Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-overview). Dentro de cada pedido de producto, el costo se desglosa por familia de servicios.
 
-| Term |Description |
+| Term |Descripción |
 | --- | --- |
 | Precio unitario | Precio unitario efectivo del servicio (en la moneda de precios) que se usa para calcular el cargo. Este precio es único para un producto, una familia de servicios, un medidor y una oferta. |
 | Cdad | Cantidad adquirida o consumida durante el período de facturación |
@@ -76,7 +76,7 @@ La cantidad total que debe pagarse para cada familia de servicios se calcula res
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-Si en su factura hay cargas de Azure en las que desea obtener más detalles, consulte Understanding [charges on Your Customer Agreement Invoice](https://docs.microsoft.com/en-us/azure/billing/billing-mca-understand-your-bill).
+Si en su factura hay cargas de Azure en las que desea obtener más detalles, consulte Understanding [charges on Your Customer Agreement Invoice](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Comprender la última página de la factura
 
@@ -110,4 +110,4 @@ Las facturas están disponibles en línea. Un vínculo a su factura en línea es
 
 Si tienes preguntas o necesitas ayuda con los créditos de Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">crea una solicitud de soporte técnico con Azure support</a>.
 
-Si tiene alguna pregunta o necesita ayuda con la factura en el centro de administración de Microsoft 365, [póngase en contacto con soporte técnico para productos empresariales](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products).
+Si tiene alguna pregunta o necesita ayuda con la factura en el centro de administración de Microsoft 365, [póngase en contacto con soporte técnico para productos empresariales](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).

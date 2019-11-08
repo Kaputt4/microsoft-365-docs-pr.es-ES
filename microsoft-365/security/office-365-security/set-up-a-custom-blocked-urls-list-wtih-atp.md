@@ -15,17 +15,17 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección contra amenazas avanzada de Office 365. Las direcciones URL bloqueadas se aplicarán a los mensajes de correo electrónico y documentos de Office de acuerdo con las directivas de vínculos seguros de ATP.
-ms.openlocfilehash: 738509978bfafb44cd289113ef77c3d12fb79a78
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ab79f86646ffd195b31d46980c3bd3bd3bb8f444
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092933"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032065"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede tener una lista personalizada de direcciones de sitios web (URL) que están bloqueadas. Cuando se bloquea una dirección URL, los usuarios que hacen clic en los vínculos a la dirección URL bloqueada se toman en una [Página de advertencia](atp-safe-links-warning-pages.md) similar a la siguiente: 
   
@@ -45,7 +45,7 @@ Para editar (o definir) las directivas de ATP, debe tener asignado uno de los ro
 |---------|---------|
 |Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
 |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
-|Administración de la organización de Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o bien <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
 > Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -66,7 +66,7 @@ Para editar (o definir) las directivas de ATP, debe tener asignado uno de los ro
 
 Mientras agrega direcciones URL a la lista, tenga en cuenta los siguientes puntos: 
 
-- No incluya una barra diagonal ( **/**) al final de la dirección URL. Por ejemplo, en lugar de escribir `http://www.contoso.com/`, escriba `http://www.contoso.com`.
+- No incluya una barra diagonal ( **/**) al final de la dirección URL. Por ejemplo, en lugar de escribir `https://www.contoso.com/`, escriba `https://www.contoso.com`.
     
 - Puede especificar una dirección URL de solo dominio (like `contoso.com` o `tailspintoys.com`). Esto impedirá que se haga clic en cualquier dirección URL que contenga el dominio.
 
@@ -76,10 +76,10 @@ Mientras agrega direcciones URL a la lista, tenga en cuenta los siguientes punto
     
 |**Entrada de ejemplo**|**Qué hace**|
 |:-----|:-----|
-|`contoso.com` o `*contoso.com*`  <br/> |Bloquea el dominio, los subdominios y las rutas de los `https://www.contoso.com`, `http://sub.contoso.com`como, y`http://contoso.com/abc`  <br/> |
-|`http://contoso.com/a`  <br/> |Bloquea un sitio `http://contoso.com/a` , pero no otros subtrazados adicionales como`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Bloquea un sitio `http://contoso.com/a` y subrutas adicionales como`http://contoso.com/a/b`  <br/> |
-|`http://toys.contoso.com*`  <br/> |Bloquea un subdominio ("juguetes" en este caso), pero permite hacer clic en otras direcciones URL de `http://contoso.com` dominio `http://home.contoso.com`(como o).  <br/> |
+|`contoso.com` o `*contoso.com*`  <br/> |Bloquea el dominio, los subdominios y las rutas de los `https://www.contoso.com`, `https://sub.contoso.com`como, y`https://contoso.com/abc`  <br/> |
+|`https://contoso.com/a`  <br/> |Bloquea un sitio `https://contoso.com/a` , pero no otros subtrazados adicionales como`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a*`  <br/> |Bloquea un sitio `https://contoso.com/a` y subrutas adicionales como`https://contoso.com/a/b`  <br/> |
+|`https://toys.contoso.com*`  <br/> |Bloquea un subdominio ("juguetes" en este caso), pero permite hacer clic en otras direcciones URL de `https://contoso.com` dominio `https://home.contoso.com`(como o).  <br/> |
    
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Cómo definir excepciones para determinados usuarios de una organización

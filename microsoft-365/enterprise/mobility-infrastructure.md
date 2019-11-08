@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386147"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031155"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: administración de dispositivos móviles para Microsoft 365 Enterprise
 
-![Fase 5: administración de dispositivos móviles](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Fase 5: Administración de dispositivos móviles](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *Esta característica se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
@@ -82,7 +82,7 @@ La inscripción es un paso clave al usar Intune. [Inscribir dispositivos](https:
 
 |||
 |:-------|:-----|
-|![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: inscripción de dispositivos iOS y Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: inscripción de dispositivos iOS y Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -100,7 +100,7 @@ El artículo [Add apps](https://docs.microsoft.com/intune/apps/apps-add) enumera
 
 |||
 |:-------|:-----|
-|![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: directivas de cumplimiento de dispositivos](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: directivas de cumplimiento de dispositivos](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Paso 6: activar el cumplimiento y el acceso condicional
@@ -151,7 +151,7 @@ Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidad
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Obtenga información sobre cómo los expertos de TI de Microsoft [administran dispositivos con EMS](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
+Obtenga información sobre cómo los expertos de TI de Microsoft [administran dispositivos con EMS](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Cómo Contoso hizo Microsoft 365 Enterprise
 

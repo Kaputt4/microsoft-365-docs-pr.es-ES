@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo requerir MFA y cómo configurar directivas de acceso condicional para Microsoft 365 Business.
-ms.openlocfilehash: 570edce03a68dad56c895e2484a5162496d7a3eb
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: b4ea67037339ae1a00f12d7b51e4584d259264e4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772547"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031345"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Requerir la autenticación multifactor y configurar directivas de acceso condicional
 
@@ -57,7 +57,7 @@ Para requerir que todos los usuarios inicien sesión con un segundo formulario d
 
 
     ![Haga que el inicio de sesión sea una tarjeta más segura.](media/setupmfa.png)
-3. En la página hacer que el inicio de sesión sea más **** seguro, elija introducción.
+3. En la página hacer que **el inicio de**sesión sea más seguro, elija introducción.
  
 4. En el panel reforzar la seguridad de inicio de sesión, active las casillas situadas junto a **requerir autenticación multifactor para los administradores** y **requerir que los usuarios se registren para la autenticación multifactor y bloquear el acceso si se detecta un riesgo**.
     Asegúrese de excluir la cuenta de administrador de [emergencia](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) o "ruptura de cristal" del requisito de MFA en el cuadro **Buscar usuarios** .
@@ -75,11 +75,11 @@ Para requerir que todos los usuarios inicien sesión con un segundo formulario d
     ![Página donde se enumeran las directivas de línea base para el acceso condicional.](media/casettings.png)
 2. Consulte las siguientes instrucciones específicas para cada directiva:
 
-    - [Requerir MFA para los administradores](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+    - [Requerir MFA para los administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
 
        
-    -   [Requerir MFA para los usuarios](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [Bloquear la autenticación heredada](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+    -   [Requerir MFA para los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+    - [Bloquear la autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
     - [Requerir MFA para la administración de servicios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 Puede configurar directivas adicionales, como requerir aplicaciones cliente aprobadas. Consulte la [documentación de acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/) para obtener más información.

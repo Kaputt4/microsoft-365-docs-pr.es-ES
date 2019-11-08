@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo Microsoft 365 para las campañas afecta a los usuarios.
-ms.openlocfilehash: 3715e0a458f2af5f2fecb8e2e6939254b3141411
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772427"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031245"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Cómo Microsoft 365 para las campañas afecta a los usuarios
 
@@ -40,7 +40,7 @@ Todos los usuarios deben conocer y usar estos procedimientos de correo electrón
 - Compruebe los mensajes de correo electrónico legítimos y busque sugerencias de seguridad de ATP avanzada protección contra phishing.
 - Abra solo vínculos seguros y datos adjuntos, tal como lo ha comprobado los vínculos seguros de ATP y los datos adjuntos seguros de ATP.
 
-Obtenga más información acerca de la suplantación [de identidad y otros ataques](m365-campaigns-phishing-and-attacks.md). 
+Obtenga más información acerca de la [suplantación de identidad y otros ataques](m365-campaigns-phishing-and-attacks.md). 
 
 Descargue una [infografía](m365-campaigns-protect-campaign-infographic.md) con sugerencias para usted y los miembros de su equipo de campaña.
 
@@ -66,7 +66,7 @@ Para los [dispositivos Windows 10 y Mac no administrados](m365-campaigns-protect
 ||**Windows 10**|**Mac**|
 |Capacidades de seguridad|Activar la protección de dispositivos de BitLocker<p><p> Asegurarse de que Windows Defender permanece en <p>Activar Firewall de Windows| Usar FileVault para cifrar el disco Mac <p><p>Usar un software antivirus fiable <p>Activar la protección del firewall|
 
-Para obtener más información sobre estas recomendaciones, consulte [proteger la cuenta y los dispositivos de hackers y malware](https://support.office.com/en-us/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
+Para obtener más información sobre estas recomendaciones, consulte [proteger la cuenta y los dispositivos de hackers y malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Colaborar con Microsoft Teams, OneDrive, SharePoint Online y otras herramientas de Office 365
 Es posible que los usuarios estén tentados a compartir y almacenar los archivos de la organización en lugares distintos de Microsoft 365. Microsoft 365 hace que sea tan fácil como sea posible colaborar y compartir de forma segura. Puede [compartir archivos y vídeos](share-files-and-videos.md) directamente desde Microsoft Teams, OneDrive, stream e incluso desde dentro de un archivo. El uso compartido desde estas herramientas ayuda a evitar que los datos se encuentren en pérdidas. Puede agregar protección adicional a los datos confidenciales para evitar el uso compartido fuera de la organización. 

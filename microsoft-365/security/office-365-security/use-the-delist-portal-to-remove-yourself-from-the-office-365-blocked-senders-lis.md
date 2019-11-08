@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Office 365? Si cree que no debería recibir este mensaje de error, use el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365.
-ms.openlocfilehash: 8158d18cb71a15fc79132c7cd4e232e7e2837806
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c02234379fe2b5d8fc09f81b1b407fec45900e3f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091587"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030624"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
 
@@ -31,7 +31,7 @@ Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes con
   
 Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje de correo que incluya un error similar al siguiente:
   
-> 550 5.7.606-649 acceso denegado, IP de envío prohibido [_dirección IP_]; Para solicitar la eliminación de esta lista, https://sender.office.com/ visite y siga las instrucciones. Para obtener más información, consulte [informes de no entrega de correo electrónico en Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+> 550 5.7.606-649 acceso denegado, IP de envío prohibido [_dirección IP_]; Para solicitar la eliminación de esta lista, https://sender.office.com/ visite y siga las instrucciones. Para obtener más información, consulte [informes de no entrega de correo electrónico en Office 365](https://go.microsoft.com/fwlink/?LinkID=526653).
   
 _IP address_ es la dirección IP del equipo en el que se ejecuta el servidor de correo. 
   

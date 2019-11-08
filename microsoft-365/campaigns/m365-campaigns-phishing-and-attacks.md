@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365 para las campañas.
-ms.openlocfilehash: 66708fe214815640baf08adace292dee683e382b
-ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
+ms.openlocfilehash: be00cdc0c70c2a2f6ac9292e933031280b7c4616
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37593865"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029064"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protéjase contra el phishing y otros ataques
 
@@ -42,12 +42,12 @@ Microsoft 365 incluye muchas protecciones para protegerse contra ataques, pero h
 
 **Reducir el correo no deseado**
 
-Siga estas [10 sugerencias sobre cómo ayudar a reducir el correo no deseado](https://support.office.com/en-us/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
+Siga estas [10 sugerencias sobre cómo ayudar a reducir el correo no deseado](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
 
 **Informe.**
 
 Informe de los correos electrónicos de suplantación de identidad o de otro usuario que reciba. Seleccione el mensaje y elija **Informe de mensaje** en la cinta de opciones.
-Aquí encontrará más información sobre cómo [crear informes de correo no deseado y de suplantación de identidad](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Aquí encontrará más información sobre cómo [crear informes de correo no deseado y de suplantación de identidad](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 **Evitar el phishing**
 - Nunca responda a un correo electrónico que le pida que envíe información personal o de la cuenta.
@@ -56,11 +56,11 @@ Aquí encontrará más información sobre cómo [crear informes de correo no des
 - Si el correo electrónico parece provenir de una compañía, póngase en contacto con el servicio de atención al cliente de la compañía a través del teléfono o el explorador Web para ver si el correo electrónico es legítimo.
 - Busque en la web la línea de asunto del correo electrónico seguida de la palabra "Bulo" para ver si alguien más ha informado de este fraude.
 
-Obtenga información sobre cinco tipos comunes de estafas en relación [con el abuso, suplantación de identidad (phishing) o suplantación](https://support.office.com/en-us/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
+Obtenga información sobre cinco tipos comunes de estafas en relación [con el abuso, suplantación de identidad (phishing) o suplantación](https://support.office.com/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
 
 **Asegurarse de que los mensajes de correo electrónico son legítimos para otros**
 
-Ayude a sus clientes a confiar en sus comunicaciones agregando una firma digital para probar que procede de usted. Vea [proteger mensajes con una firma digital](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
+Ayude a sus clientes a confiar en sus comunicaciones agregando una firma digital para probar que procede de usted. Vea [proteger mensajes con una firma digital](https://support.office.com/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
 ## <a name="help-protect-your-campaign-from-online-threats"></a>Ayudar a proteger la campaña de las amenazas en línea
 
@@ -75,6 +75,6 @@ Descargue este infografía con sugerencias para usted y los miembros de su equip
 ## <a name="set-it-up"></a>Configúrelo
 
 Obtenga más información sobre cómo:
-- [Mantener seguros sus archivos y comunicaciones con Office](https://support.office.com/en-us/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
-- [Permanecer seguro y privado en el trabajo](https://support.office.com/en-us/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
+- [Mantener seguros sus archivos y comunicaciones con Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
+- [Permanecer seguro y privado en el trabajo](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
   

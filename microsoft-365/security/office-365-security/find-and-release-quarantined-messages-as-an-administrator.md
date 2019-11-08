@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC).
-ms.openlocfilehash: 8f127dd1e7c14bbf2ae1d3bf23e611ef5c3ac1dc
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: c8779fb89ecb1deda92382ae2d91de4e54b303e7
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37576038"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032365"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Buscar y liberar mensajes en cuarentena como un administrador
 
@@ -37,9 +37,9 @@ Puede ver una lista de todos los mensajes en cuarentena o puede buscar mensajes 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte el entrada "cuarentena" en el tema [permisos de características de Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+- Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte el entrada "cuarentena" en el tema [permisos de características de Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
-- Puede liberar o informar sobre varios mensajes a la vez en la página **cuarentena**. De forma alternativa, puede crear un script de Windows PowerShell remoto para realizar esta tarea. Use el cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para buscar los mensajes y el cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberarlos.
+- Puede liberar o informar sobre varios mensajes a la vez en la página **cuarentena**. De forma alternativa, puede crear un script de Windows PowerShell remoto para realizar esta tarea. Use el cmdlet [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para buscar los mensajes y el cmdlet [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberarlos.
 
 - Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -54,7 +54,7 @@ En el centro de administración de Exchange (EAC), puede filtrar elementos en cu
 
 2. En la ventana **Búsqueda avanzada**, seleccione cualquier combinación de las condiciones siguientes. Seleccione la casilla de verificación asociada para habilitar cada condición. No se admiten caracteres comodín.
 
-   1. **Identificador del mensaje**: puede usar este parámetro para realizar una búsqueda dirigida de un mensaje específico. Por ejemplo, si un usuario de la organización envió o recibió un mensaje específico, pero el mensaje nunca llegó al destino, puede buscarlo mediante la característica de seguimiento de mensajes. Para más información, consulte [Run a Message Trace and View Results](http://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx). Si descubre que el mensaje se envió a cuarentena, quizás porque coincidía con una regla o se identificó como correo no deseado, lo encontrará fácilmente en la cuarentena especificando este identificador de mensaje. Asegúrese de incluir la cadena de Id. de mensaje completa. Esto puede incluir corchetes angulares\<\>().
+   1. **Identificador del mensaje**: puede usar este parámetro para realizar una búsqueda dirigida de un mensaje específico. Por ejemplo, si un usuario de la organización envió o recibió un mensaje específico, pero el mensaje nunca llegó al destino, puede buscarlo mediante la característica de seguimiento de mensajes. Para más información, consulte [Run a Message Trace and View Results](https://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx). Si descubre que el mensaje se envió a cuarentena, quizás porque coincidía con una regla o se identificó como correo no deseado, lo encontrará fácilmente en la cuarentena especificando este identificador de mensaje. Asegúrese de incluir la cadena de Id. de mensaje completa. Esto puede incluir corchetes angulares\<\>().
 
    2. **Dirección de correo electrónico del remitente**: especifique la dirección de correo electrónico de la persona que envió el mensaje.
 
@@ -62,9 +62,9 @@ En el centro de administración de Exchange (EAC), puede filtrar elementos en cu
 
    4. **Asunto**: especifique el texto de la línea de asunto del mensaje.
 
-   5. **Recibido**: puede seleccionar que el mensaje se ha recibido en cuarentena en las últimas 24 horas ( **hoy**), en las últimas 48 horas ( **últimos 2 días**), en la semana pasada ( **últimos 7 días**), o puede seleccionar un intervalo de tiempo personalizado durante que la cuarentena recibió el mensaje.
+   5. **Recibido**: puede seleccionar que el mensaje se ha recibido en cuarentena en las últimas 24 horas ( **hoy**), en las últimas 48 horas ( **últimos 2 días**), en la semana pasada ( **últimos 7 días**), o puede seleccionar un intervalo de tiempo personalizado durante el cual la cuarentena recibió el mensaje.
 
-   6. **Expires**: puede seleccionar que el mensaje se eliminará de la cuarentena en las próximas 24 horas ( **hoy**), en las próximas 48 horas ( **próximos 2 días**), en la próxima semana ( **próximos 7 días**), o puede seleccionar un intervalo de tiempo personalizado durante que se eliminará el mensaje de la cuarentena.
+   6. **Expires**: puede seleccionar que el mensaje se eliminará de la cuarentena en las próximas 24 horas ( **hoy**), en las próximas 48 horas ( **próximos 2 días**), en la próxima semana ( **próximos 7 días**), o puede seleccionar un intervalo de tiempo personalizado durante el cual se eliminará el mensaje de la cuarentena.
 
       > [!IMPORTANT]
       > De forma predeterminada, los mensajes en cuarentena de correo no deseado se mantienen en cuarentena durante 30 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante un máximo de 30 días en función del período de retención establecido en la Directiva de filtro de contenido predeterminada. Finalizado este tiempo, Office 365 elimina estos mensajes y ya no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, es posible reducir el período de retención de los mensajes de correo no deseado en cuarentena mediante la configuración **Mantener el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).

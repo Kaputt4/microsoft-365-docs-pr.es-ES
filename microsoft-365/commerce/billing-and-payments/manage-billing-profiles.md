@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 keywords: Perfil de facturación, facturas, cargos, cargos administrados
-ms.openlocfilehash: bd963ff993a064615f0f7ad06c8f2cc5c3401ad2
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 9db8b949cb07c8386505234d9d88aa2627a752b5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646461"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029054"
 ---
 # <a name="manage-billing-profiles"></a>Administración de perfiles de facturación
 Para los clientes comerciales que compran productos y servicios de Microsoft, los perfiles de facturación le permiten personalizar los elementos que se incluyen en la factura y cómo pagar sus facturas.
@@ -70,4 +70,4 @@ Los roles en perfiles de facturación tienen permisos para controlar las compras
 
 Si tiene preguntas o necesita ayuda con los cargos de Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">cree una solicitud de soporte técnico con el soporte de Azure</a>.
 
-Si tiene alguna pregunta o necesita ayuda con su perfil de facturación en el centro de administración de Microsoft 365, [póngase en contacto con soporte técnico para productos empresariales](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products).
+Si tiene alguna pregunta o necesita ayuda con su perfil de facturación en el centro de administración de Microsoft 365, [póngase en contacto con soporte técnico para productos empresariales](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).

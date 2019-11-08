@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: Este artículo describe cómo Office 365 usa el registro TXT para el marco de directivas de remitente (SPF) en DNS para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado. Esto se aplica al correo saliente enviado desde Office 365. Los mensajes enviados desde Office 365 a un destinatario dentro de Office 365 siempre pasarán SPF.'
-ms.openlocfilehash: 9a0cbbe29a43a223a006b1a8495d2522ca2386c4
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 189b97de92386a7dc1a7a264ee1bb58cd367839a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772224"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033921"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Cómo Office 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
 
@@ -127,7 +127,7 @@ Si tiene una implementación híbrida (es decir, dispone de algunos buzones de c
 
 Use la información de sintaxis de este artículo para formar el registro TXT de SPF para su dominio personalizado. Aunque existan otras opciones de sintaxis que no se mencionan aquí, estas son las opciones más usadas. Una vez que haya formado el registro, debe actualizarlo en el registrador de dominios.
   
-Para obtener información sobre los dominios que necesitará incluir en Office 365, consulte [Registros externos del Sistema de nombres de dominio para Office 365](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Use las [instrucciones paso a paso](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) para actualizar registros SPF (TXT) para el registrador de dominios. Si su registrador no aparece enumerado, necesitará ponerse en contacto con ellos por separado para obtener información sobre cómo actualizar el registro. 
+Para obtener información sobre los dominios que necesitará incluir en Office 365, consulte [Registros externos del Sistema de nombres de dominio para Office 365](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Use las [instrucciones paso a paso](https://office.microsoft.com/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) para actualizar registros SPF (TXT) para el registrador de dominios. Si su registrador no aparece enumerado, necesitará ponerse en contacto con ellos por separado para obtener información sobre cómo actualizar el registro. 
   
 ### <a name="spf-txt-record-syntax-for-office-365"></a>Sintaxis del registro TXT SPF para Office 365
 <a name="SPFSyntaxO365"> </a>

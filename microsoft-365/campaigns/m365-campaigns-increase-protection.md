@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtener ayuda para aumentar el nivel de protección en Microsoft 365 Business
-ms.openlocfilehash: 5a3a9aada60875a7ee1f43a870e4d2731f84d4c1
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: f7ae2516403613667401e622f93939cfce63e617
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772557"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029074"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -33,7 +33,7 @@ Este artículo le ayuda a aumentar la protección en su suscripción de Microsof
 
 Antes de empezar, Compruebe la puntuación segura de Office 365. La puntuación segura de Office 365 analiza la seguridad de su organización de Office 365 en función de las actividades habituales y la configuración de seguridad y asigna una puntuación. Empiece por tomar nota del resultado actual. La realización de las acciones recomendadas en este artículo aumenta su puntuación. El objetivo no es conseguir la puntuación máxima, sino que debe tener en cuenta las oportunidades para proteger su entorno que no afectan negativamente a la productividad de los usuarios. 
 
-Para obtener más información, consulte [calificación segura de Microsoft](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
+Para obtener más información, consulte [calificación segura de Microsoft](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Aumentar el nivel de protección contra malware en correo
@@ -61,7 +61,7 @@ Para obtener más información, consulte [Anti-Malware Protection](https://go.mi
 
 Ransomware restringe el acceso a los datos mediante el cifrado de los archivos o el bloqueo de las pantallas del equipo. A continuación, intenta extort dinero de víctimas solicitando "Ransom", normalmente en forma de cryptocurrencies como bitcoin, en Exchange para tener acceso a los datos. 
   
-Puede proteger contra ransomware si crea una o más reglas de flujo de correo para bloquear extensiones de archivo que se usan con frecuencia para ransomware (estas se agregaron en el paso [elevar el nivel de protección contra malware en el correo](#raise-the-level-of-protection-against-malware-in-mail) ) o para advertir a los usuarios que reciben estos datos adjuntos en el correo electrónico.
+Puede proteger contra ransomware si crea una o más reglas de flujo de correo para bloquear extensiones de archivo que se usan con frecuencia para ransomware (estos se agregaron en el paso [aumentar el nivel de protección contra malware en el correo](#raise-the-level-of-protection-against-malware-in-mail) ) o para advertir a los usuarios que reciben estos datos adjuntos en el correo electrónico.
 
 Además de los archivos bloqueados en el paso anterior, también es aconsejable crear una regla para advertir a los usuarios antes de abrir datos adjuntos de archivos de Office que incluyan macros. Ransomware puede estar oculto dentro de las macros, por lo que se advertirá a los usuarios que no abren estos archivos de personas que no saben.
 
@@ -77,7 +77,7 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la siguiente tabla para la regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
 |:-----|:-----|:-----|
@@ -111,7 +111,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
     
 5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
@@ -137,9 +137,9 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
     
 3. En la página **Directiva** , elija **ATP antiphishing**.
     
-4. En la página contra la suplantación de **identidad** , seleccione **+ crear**. Se inicia un asistente que le guía por el proceso de definición de la Directiva antiphishing.
+4. En la página **contra la suplantación de identidad** , seleccione **+ crear**. Se inicia un asistente que le guía por el proceso de definición de la Directiva antiphishing.
     
-5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, consulte [información sobre las opciones de directiva](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) de antiphishing de ATP. 
+5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, consulte [información sobre las opciones de directiva de antiphishing de ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) . 
     
 6. Una vez que haya revisado la configuración, elija **crear esta directiva** o **Guardar**, según corresponda.
     
@@ -171,8 +171,8 @@ Si aún no ve la página **configuración** con tarjetas en su inquilino, vea c�
 2. En la página **configuración** , elija **Ver** en la ficha **aumentar protección frente a amenazas avanzadas** .</br></br>
     ![Elija Ver en el aumentar protección frente a amenazas avanzadas.](media/startatp.png) 
 
-3. En la página **aumentar la protección desde amenazas avanzadas** , **** elija introducción.
-4. En el panel que se abre, active las casillas junto a **vínculos y datos adjuntos en el correo electrónico**, **analice archivos en SharePoint, OneDrive**y Microsoft Teams, y **Explore los vínculos de las aplicaciones de escritorio y Office online de Office** en **buscar contenido malintencionado**.
+3. En la página **aumentar la protección desde amenazas avanzadas** , **Elija introducción**.
+4. En el panel que se abre, active las casillas junto a **vínculos y datos adjuntos en el correo electrónico**, **analice archivos en SharePoint, OneDrive y Microsoft Teams**, y **Explore los vínculos de las aplicaciones de escritorio y Office online de Office** en **buscar contenido malintencionado**.
 
       - En **vínculos y datos adjuntos en el correo electrónico**, escriba todos los usuarios o los usuarios específicos cuyo correo electrónico desea examinar.
 
@@ -234,7 +234,7 @@ Para modificar la directiva predeterminada:
     
 2. En **configuración que se aplica al contenido excepto el correo electrónico**, seleccione **Office 365 ProPlus, Office para iOS y Android**.
     
-3. Haga clic en **Guardar **. 
+3. Haga clic en **Guardar**. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -242,7 +242,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Haga clic en **Guardar **. 
+3. Haga clic en **Guardar**. 
 
 |**Configuración u opción**|**Configuración recomendada** <br/>|
 |:-----|:-----|
@@ -273,7 +273,7 @@ Una vez activada la característica, puede buscar archivos, carpetas y muchas ac
 (cambiar la expiración del vínculo anónimo predeterminado a 14 días, cambiar el tipo de uso compartido predeterminado a "personas específicas") Para cambiar la configuración de uso compartido para OneDrive y SharePoint:
 1. Vaya al centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> y, a continuación, elija **SharePoint** en **centros de administración** en el panel de navegación izquierdo. 
 2. En el centro de administración de SharePoint, vaya a **uso compartido**de **directivas** \> .
-3. En la página de **uso compartido** , en **vínculos de archivos y carpetas**, seleccione **personas específicas**y, en **Configuración avanzada para vínculos de "cualquiera"**, seleccione **estos vínculos deben expirar dentro de estos muchos días**y escriba 14 (u otro número de días en los que desea restringir la vigencia del vínculo).
+3. En la página de **uso compartido** , en **vínculos de archivos y carpetas**, seleccione **personas específicas**y, en **Configuración avanzada para vínculos de "cualquiera"**, seleccione **estos vínculos deben expirar dentro de estos muchos días**y escriba 14 (o cualquier otro número de días que desee restringir la duración del vínculo).
 
     ![Elija personas específicas y establezca expiración de vínculos en 14 días.](media/anyonelinks.png)
 

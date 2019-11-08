@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador y las detecciones en tiempo real &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: ee14e4a1309bcf1077a8901ce874dc2872b694be
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 70073197091e75ae7ca2740b9be53edce87e1d8a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092779"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030714"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
-Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tendrá un **Explorador** o **detecciones en tiempo real** (anteriormente informes en *tiempo real* , [consulte Novedades)](#new-features-in-real-time-detections). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** o **detecciones en tiempo real**. 
+Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tiene tanto **exploradores** como **detecciones en tiempo real** (anteriormente *informes en tiempo real* , [vea lo nuevo](#new-features-in-real-time-detections)!). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** o **detecciones en tiempo real**. 
 
 |Con el plan ATP 2, verá:  |Con el plan ATP 1, verá:  |
 |---------|---------|
@@ -37,7 +37,7 @@ Con el explorador (o detecciones en tiempo real), dispone de un informe eficaz q
 Con este informe, puede:
 - [Ver malware detectado por las características de seguridad de Office 365](#see-malware-detected-in-email-by-technology)
 - [Ver datos sobre direcciones URL de suplantación de identidad y hacer clic en veredicto](#view-data-about-phishing-urls-and-click-verdict)
-- [Iniciar un proceso de investigación y respuesta automatizado desde una vista en el explorador](#start-automated-investigation-and-response) (Solo planeación ATP 2)
+- [Iniciar un proceso de investigación y respuesta automatizado desde una vista del explorador](#start-automated-investigation-and-response) (solo planeación ATP 2)
 - ... [Investigue el correo electrónico malintencionado y mucho más](#more-ways-to-use-explorer-or-real-time-detections).
 
 ## <a name="new-features-in-real-time-detections"></a>Nuevas características en detecciones en tiempo real
@@ -78,7 +78,7 @@ Ubicación de entrega muestra los resultados de las directivas y detecciones que
 
 La **escala de tiempo de correo electrónico** es otra nueva característica de Explorer destinada a conseguir la experiencia de búsqueda mejor para los administradores. Reduce el proceso aleatorio porque se dedica menos tiempo a comprobar las distintas ubicaciones para tratar de comprender el evento. Cuando se producen varios eventos en, o cerca de, al mismo tiempo en un correo electrónico, esos eventos se mostrarán en una vista escala de tiempo. De hecho, algunos eventos que se producen después de la entrega a su correo se capturarán en la columna "acción especial". La combinación de la información de la escala de tiempo de ese correo con la acción especial tomada en la entrega posterior del correo proporcionará a los administradores información sobre cómo funcionan sus directivas, dónde se enrutó el correo finalmente y, en algunos casos, qué es la evaluación final.
 
-Para obtener más información acerca de la investigación de correos electrónicos malintencionados [, vea Find and Investigate Malicious email Delivered in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
+Para obtener más información acerca de la investigación de correos electrónicos malintencionados [, vea Find and Investigate Malicious email Delivered in Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Ver malware detectado en correo electrónico por tecnología
 

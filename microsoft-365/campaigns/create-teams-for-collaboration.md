@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un espacio de colaboración para su equipo con Microsoft Teams.
-ms.openlocfilehash: 18a28364b02b15af9d7d4c69c432ecd26d61b802
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 9b501daa61998b0b2daedd84c333552b42e5338f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772527"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031355"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Crear equipos para la colaboración en Microsoft Teams
 
@@ -46,9 +46,9 @@ También puede crear equipos para proyectos específicos y aplicar la cantidad d
 
 Al crear un equipo, esto es lo que más se crea:
 
-- Un nuevo [grupo de Office 365](https://docs.microsoft.com/en-us/MicrosoftTeams/office-365-groups)
-- Un sitio de [SharePoint Online](https://docs.microsoft.com/en-us/MicrosoftTeams/sharepoint-onedrive-interact) y una biblioteca de documentos para almacenar archivos de equipo
-- Un buzón y un calendario compartidos de [Exchange Online](https://docs.microsoft.com/en-us/MicrosoftTeams/exchange-teams-interact)
+- Un nuevo [grupo de Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- Un sitio de [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) y una biblioteca de documentos para almacenar archivos de equipo
+- Un buzón y un calendario compartidos de [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)
 - Un bloc de notas de OneNote
 - Se vincula a otras aplicaciones de Office 365, como Planner y Power BI.
 
@@ -79,9 +79,9 @@ Cree un equipo que comparta con los invitados fuera de la campaña, como publici
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Obtenga más información sobre Microsoft Teams en la [documentación técnica de Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/microsoft-teams)
+Obtenga más información sobre Microsoft Teams en la [documentación técnica de Microsoft Teams](https://docs.microsoft.com/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>Configuración de administración
 
-Debe ser administrador para crear un equipo para toda la organización. Para obtener más información, vea [¿Qué es un administrador de Office 365?](https://support.office.com/en-us/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+Debe ser administrador para crear un equipo para toda la organización. Para obtener más información, vea [¿Qué es un administrador de Office 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
   

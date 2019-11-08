@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: El plan de seguridad para el correo electrónico de Microsoft incluye un enfoque sin igual que abarca diferentes productos. En las plataformas de correo electrónico de Microsoft se aplica tecnología de Exchange Online Protection (EOP) de filtrado de correo no deseado y protección contra suplantación de identidad para proporcionar a los usuarios las últimas herramientas e innovaciones contra el correo no deseado y la suplantación de identidad en toda la red. El objetivo de EOP es ofrecer un servicio de correo electrónico completo y práctico que ayude a detectar el correo no deseado, las amenazas de correo electrónico fraudulento (phishing) y los virus, y que proteja a los usuarios de todo ello.
-ms.openlocfilehash: 0a73d428e952c0c0cb340d91a52768a42ae204a1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7c1b74d2ddb98d1250f80455163c5f0b8690b0de
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092290"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032375"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Lucha contra el correo no deseado enviado a Office 365
 
@@ -66,9 +66,9 @@ La suplantación de dominios es una manera de imitar una dirección de correo el
   
 EOP usa Sender Protection Framework (SPF), DomainKeys Identified Mail (DKIM) y Domain-based Message Authentication, Reporting and Conformance (DMARC) y otras autenticaciones implícitas para comprobar que los mensajes provengan realmente de ese dominio del que afirman que provienen. Se recomienda que todos los remitentes usen SPF y DKIM para proteger a sus destinatarios del correo no deseado y de las estafas de suplantación de identidad. Recomendamos a los remitentes que consideren la posibilidad de publicar un DMARC para rechazar o poner en cuarentena el correo enviado por remitentes no autorizados.
   
-- Para obtener más información sobre SPF, vea [RFC 7208](https://tools.ietf.org/html/rfc7208) y [Marco de directivas de remitente ](http://www.openspf.org/).
+- Para obtener más información sobre SPF, vea [RFC 7208](https://tools.ietf.org/html/rfc7208) y [Marco de directivas de remitente ](https://www.openspf.org/).
     
-- Para obtener más información sobre DKIM, vea [RFC 6376](https://tools.ietf.org/html/rfc6376) y [DKIM.org](http://dkim.org/).
+- Para obtener más información sobre DKIM, vea [RFC 6376](https://tools.ietf.org/html/rfc6376) y [DKIM.org](https://dkim.org/).
     
 - Para obtener más información sobre DMARC, vea [DMARC.org](https://dmarc.org/).
     
