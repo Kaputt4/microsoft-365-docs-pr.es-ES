@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
-ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d858706a80cf66772ea3a422e07d4f773935446c
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034191"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076324"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
@@ -89,7 +89,7 @@ Puede enviar una notificación a la dirección de correo electrónico especifica
   
  **P. ¿Puedo usar un proveedor contra correo no deseado y contra malware de terceros junto con Exchange Online?**
   
-R. Sí, puede configurar otro servicio de filtrado de correo no deseado y malware para proteger sus buzones de Exchange Online. Para hacerlo en su correo entrante, debe redirigir sus mensajes de correo electrónico al proveedor de terceros cambiando sus registros MX para que apunten al proveedor de terceros y, a continuación, redirigir los mensajes a EOP para el procesamiento adicional. Para hacerlo en su correo saliente, configure el destino de entrega del mensaje al proveedor de terceros (host inteligente), tal y como se muestra en [Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+A. Sí, puede configurar otro servicio de filtrado de correo no deseado y malware para proteger sus buzones de Exchange Online. Para hacerlo en su correo entrante, debe redirigir sus mensajes de correo electrónico al proveedor de terceros cambiando sus registros MX para que apunten al proveedor de terceros y, a continuación, redirigir los mensajes a EOP para el procesamiento adicional. Para hacer esto para el correo saliente, configure el destino de entrega del mensaje al proveedor de terceros (host inteligente).
   
  **P.: ¿Microsoft tiene documentación sobre cómo protegerse de las estafas de suplantación de identidad (phishing)?**
   
@@ -125,7 +125,7 @@ A. Las pautas presentadas a continuación son los procedimientos recomendados pa
     
     [Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-    [Crear registros DNS para Office 365](https://go.microsoft.com/fwlink/?LinkID=275414)
+    [Preguntas más frecuentes de dominios](/office365/admin/setup/domains-faq)
     
 5. **Firma de correo electrónico con DKIM, firma con la resolución de nombres canónicos relajada.**
     

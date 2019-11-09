@@ -1,19 +1,20 @@
 ---
-title: Preparar certificados y perfiles de red para el escritorio administrado de Microsoft
+title: Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft
 description: certs/WiFi/LAN
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
-ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
+ms.openlocfilehash: eadaa3ab7e381081be4e47054e70d7b8d1924385
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34391271"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074682"
 ---
-# <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparar certificados y perfiles de red para el escritorio administrado de Microsoft  
+# <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft  
  
 La autenticación basada en certificados es un requisito común para los clientes que usan Microsoft Managed Desktop. Es posible que necesite certificados para acceder a Wi-Fi o LAN, conectarse a soluciones VPN o para obtener acceso a los recursos internos de su organización.   
  
@@ -78,8 +79,8 @@ Una vez que se haya exportado el perfil de LAN, puede preparar la Directiva para
  
 Para implementar certificados y perfiles, siga estos pasos:
 
-1. Cree un perfil para cada uno de los certificados raíz e intermedios (consulte [crear perfiles de certificado de confianza](https://docs.microsoft.com/intune/certificates-configure#step-3-create-trusted-certificate-profiles)). Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato DD/MM/AAAA. **No se implementarán los perfiles de certificado sin una fecha de expiración.**
-2. Cree un perfil para cada certificado SCEP o PKCS (consulte [Create a SCEP Certificate](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile) Profile or [Create a PKCS Certificate Profile](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)) cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato dd/mm/aaaa. **No se implementarán los perfiles de certificado sin una fecha de expiración.**
+1. Cree un perfil para cada uno de los certificados raíz e intermedios (consulte [Create Trusted Certificate profiles](https://docs.microsoft.com/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles). Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato DD/MM/AAAA. **No se implementarán los perfiles de certificado sin una fecha de expiración.**
+2. Cree un perfil para cada certificado SCEP o PKCS (consulte [Create a SCEP Certificate](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) Profile or [Create a PKCS Certificate Profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato dd/mm/aaaa. **No se implementarán los perfiles de certificado sin una fecha de expiración.**
 3. Cree un perfil para cada red WiFi corporativa (consulte [configuración de Wi-Fi para dispositivos con Windows 10 y versiones posteriores](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
 4. Cree un perfil para cada VPN corporativa (consulte la configuración de dispositivo de Windows [10 y Windows Holographic para agregar conexiones VPN con Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
 5. Envíe una solicitud de soporte titulada "implementación de certificados" o "implementación de Perfil de Wi-Fi" a operaciones de TI de escritorio administradas por Microsoft mediante el portal de administración de escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "dispositivos del área de trabajo modernos: test ". Las operaciones de TI de escritorio administradas por Microsoft le permitirán saber cuándo se ha completado la solicitud a través de la solicitud de soporte técnico en el portal de administración. 

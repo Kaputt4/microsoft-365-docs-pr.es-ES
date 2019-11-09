@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Actualizaciones automatizadas de Windows 7 a Windows 10 para grandes empresas
-ms.openlocfilehash: 4d1601c23d160d5618d491cd168583c78b54181c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033635"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078089"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Actualizaciones locales automatizadas de Windows 7 a Windows 10 para grandes empresas
 
@@ -44,7 +44,7 @@ Las actualizaciones locales se pueden automatizar con herramientas de implementa
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Actualizar un número reducido de equipos
 
-Para un único equipo o un número reducido de equipos, el método manual para la actualización es generalmente la mejor opción en comparación con los métodos más automatizados. Puede encontrar el software y las licencias necesarios en [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=808282), en otros proveedores de software o en el [Centro de servicios de licencias por volumen](https://www.microsoft.com/licensing/servicecenter/default.aspx), si tiene licencias por volumen. Para obtener instrucciones detalladas sobre cómo actualizar un único equipo a Windows 10, así como las opciones de restauración posteriores a la actualización, vea la [Guía paso a paso de la actualización manual de Windows 7 a Windows 10](https://docs.microsoft.com/es-ES/microsoft-365/enterprise/windows-7-to-windows-10-upgrade).
+Para un único equipo o un número reducido de equipos, el método manual para la actualización es generalmente la mejor opción en comparación con los métodos más automatizados. Puede encontrar el software y las licencias necesarios en [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=808282), en otros proveedores de software o en el [Centro de servicios de licencias por volumen](https://www.microsoft.com/licensing/servicecenter/default.aspx), si tiene licencias por volumen. Para obtener instrucciones detalladas sobre cómo actualizar un único equipo a Windows 10, así como las opciones de restauración posteriores a la actualización, vea la [Guía paso a paso de la actualización manual de Windows 7 a Windows 10](https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade).
 
 ## <a name="how-to-upgrade-many-computers"></a>Cómo actualizar muchos equipos
 

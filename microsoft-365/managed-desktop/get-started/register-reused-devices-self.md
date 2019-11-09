@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
-ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
+ms.openlocfilehash: e11b72228dceb5a4999e6b9398efde02a41ca163
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37577776"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074742"
 ---
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
@@ -71,25 +71,30 @@ Si ha cumplido todos estos requisitos previos, estará listo para recopilar la i
 4. En el **generador de informes**, seleccione origen de **datos:**. Seleccione el origen de datos predeterminado, que debe empezar por "AutoGen". 
 5. Elija **tipo de consulta como texto**y, a continuación, escriba esta consulta:
 
-```
 
+
+
+```sql
 SELECT comp.manufacturer0      AS Manufacturer,  
        comp.model0             AS Model,  
        bios.serialnumber0      AS Serial_Number,  
        mdm.devicehardwaredata0 AS HardwareHash  
-FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp  
+FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
+
        INNER JOIN Fn_rbac_gs_pc_bios(@UserSIDs) bios  
                ON comp.resourceid = bios.resourceid  
        INNER JOIN Fn_rbac_gs_mdm_devdetail_ext01(@UserSIDs) mdm  
                ON comp.resourceid = mdm.resourceid
-
-
 ```
+
+
+
+
 5. Desplácese a la pestaña **campo** , wehre valores para **el nombre de campo** y el origen de **campo** ya deben rellenarse. Si no son, seleccione **Agregar**y, a continuación, seleccione **campo de consulta**. Escriba el **nombre del campo** y el **origen del campo**.
 6. Repita este procedimiento para cada uno de estos valores: 
     - Manufacturer 
     - Model 
-    - Núm_de_serie 
+    - Serial_Number 
     - HardwareHash
 7. Seleccione **Aceptar**.
 
@@ -115,7 +120,7 @@ A **continuación, defina la visualización del informe y cree el informe** sigu
 
 
 > [!IMPORTANT]
-> La consulta en Configuration Manager no permite espacios en los nombres de columna exportados; por este motivo, los pasos que ha escrito son "Núm_de_serie" y "HardwareHash". Ahora que ya tiene el archivo CSV exportado, debe editar los encabezados del informe para leer el *número de serie* y el *hash de hardware* , tal y como se muestra aquí antes de continuar con el registro de dispositivos.
+> La consulta en Configuration Manager no permite espacios en los nombres de columna exportados; por este motivo, los pasos que ha escrito son "Serial_Number" y "HardwareHash". Ahora que ya tiene el archivo CSV exportado, debe editar los encabezados del informe para leer el *número de serie* y el *hash de hardware* , tal y como se muestra aquí antes de continuar con el registro de dispositivos.
 
 Ahora puede seguir [registrando dispositivos con Azure portal](#register-devices-by-using-the-azure-portal).
 
@@ -220,7 +225,7 @@ Siga estos pasos:
 
 Puede supervisar el progreso del registro de dispositivos en la Página principal de **Microsoft administrada para equipos de escritorio** . Los posibles Estados que se notifican incluyen:
 
-| Estado | Description |
+| Estado | Descripción |
 |---------------|-------------|
 | Registro pendiente | Aún no se ha realizado el registro. Vuelva a comprobarla más tarde. |
 | Error en el registro | No se pudo completar el registro. Consulte [solución de problemas del registro de dispositivos](#troubleshooting-device-registration) para obtener más información. |

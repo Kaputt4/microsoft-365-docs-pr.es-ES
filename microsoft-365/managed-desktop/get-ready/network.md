@@ -4,15 +4,15 @@ description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b2b1a147659bf58c9b8ded26d6774994a3c1682
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a6397f1c78bb15e198ed75be50c51953b049ed68
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012215"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074701"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el escritorio administrado por Microsoft
 
@@ -23,19 +23,19 @@ ms.locfileid: "38012215"
 
 El escritorio administrado de Microsoft es un servicio administrado en la nube. Hay un conjunto de puntos de conexión que los servicios de escritorio administrados de Microsoft deben poder alcanzar. En esta sección se enumeran los puntos de conexión que deben permitirse para los diversos aspectos del servicio de escritorio administrado por Microsoft. 
 
-Los clientes pueden optimizar su red mediante el envío de todas las solicitudes de red de Microsoft 365 de confianza directamente a través de su firewall o proxy, evitando la autenticación y todos los procesos o la inspección del nivel de paquetes adicionales. Esto reduce la latencia y los requisitos de capacidad del perímetro. 
+Los clientes pueden optimizar su red mediante el envío de todas las solicitudes de red de Microsoft 365 de confianza directamente a través de su firewall o proxy, evitando la autenticación y todos los procesos o la inspección adicionales a nivel de paquete. Esto reduce la latencia y los requisitos de capacidad del perímetro. 
 
 Además, para optimizar el rendimiento de los servicios basados en la nube de escritorio administrada de Microsoft, estos puntos de conexión necesitan un control especial por parte de los exploradores cliente del cliente y los dispositivos de la red perimetral. Estos dispositivos incluyen firewalls, interrupción de SSL e inspección, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.
 
 ### <a name="proxy-requirement"></a>Requisitos del proxy
 
-El proxy o el Firewall deben admitir TLS 1,2. De lo contrario, es posible que los clientes tengan que deshabilitar la detección de protocolo.
+El proxy o el Firewall deben admitir TLS 1,2. De lo contrario, es posible que tenga que deshabilitar la detección de protocolo.
 
 ### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Extremos permitidos: específicos para el escritorio administrado de Microsoft
 
 Microsoft Managed Desktop usa el portal de Azure para hospedar su consola Web. Las siguientes direcciones URL de la tabla siguiente deben estar en la lista de permitidos del proxy y del firewall para que los dispositivos de escritorio administrados por Microsoft puedan comunicarse con los servicios de Microsoft.  
 
-Tenga en cuenta que la dirección URL del escritorio administrada de Microsoft siguiente se usa para cualquier cosa que el servicio se ejecuta en la API de cliente. Los clientes deben asegurarse de que esta dirección URL siempre es accesible en su red corporativa.
+Tenga en cuenta que la dirección URL del escritorio administrada de Microsoft siguiente se usa para cualquier cosa que el servicio se ejecuta en la API de cliente. Debe asegurarse de que esta dirección URL siempre es accesible en la red corporativa.
 
 Servicio de Microsoft  | Direcciones URL necesarias en la lista de permitidos 
 --- | --- | ---
@@ -56,8 +56,7 @@ Optimización de entrega | [Configurar la optimización de entrega para las actu
 Office 365 | [Office 365 URL e intervalos de direcciones IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | La [identidad híbrida requiere puertos y protocolos](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) y [los requisitos de puerto de servicios de dominio de Active Directory y](https://aka.ms/AA26ygm) Active Directory 
 Microsoft Intune | [Requisitos de configuración de red de Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
-Protección contra amenazas avanzada de Microsoft defender (ATP) | [Extremos de ATP de Microsoft defender] (https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
-)
+Protección contra amenazas avanzada de Microsoft defender (ATP) | [Extremos de ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

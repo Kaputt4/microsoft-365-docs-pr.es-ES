@@ -15,16 +15,16 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 74afe39e78990d794368ed19aa5fd5116bee17bb
-ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
+ms.openlocfilehash: dbe84eb5c9c9fb8ff6e052f8a8fc1f257985ee70
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37774913"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076344"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
-La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Desde un panel centralizado en el centro de seguridad de Microsoft 365, las organizaciones pueden supervisar y trabajar en la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365.
+La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Seguir las recomendaciones de puntuación de seguridad puede proteger a su organización de las amenazas. Desde un panel centralizado en el centro de seguridad de Microsoft 365, las organizaciones pueden supervisar y trabajar en la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365.
 
 La puntuación segura ayuda a las organizaciones a:
 
@@ -36,7 +36,7 @@ Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y
 
 Además, puede obtener acceso a sus recomendaciones y puntuaciones a través de la [API de Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Obtenga información sobre el [tipo de recurso de puntuación segura](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o solucionar la acción de mejora con una aplicación o un software de terceros. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios. La seguridad debe equilibrarse con la facilidad de uso y no todas las recomendaciones pueden funcionar en su entorno.
 
@@ -44,7 +44,7 @@ La puntuación se actualiza en tiempo real para reflejar la información que se 
 
 ### <a name="how-improvement-actions-are-scored"></a>Cómo se puntuan las acciones de mejora
 
-La mayoría se puntuan de una manera binaria: Si implementa la acción de mejora, como crear una nueva Directiva o activar una configuración específica, obtendrá un 100% de los puntos. Para otras acciones de mejora, los puntos se dan como un porcentaje de la configuración total. Por ejemplo, si los Estados de acción de mejora obtienen 30 puntos al proteger a todos los usuarios con la autenticación multifactor y solo tiene 5 de 100 usuarios totales protegidos, se le daría una puntuación parcial de unos 2 puntos (5 protegidos/100 en total * 30 máximo pts = 2 PTO).  puntuación parcial).
+La mayoría se puntuan de una manera binaria: Si implementa la acción de mejora, como crear una nueva Directiva o activar una configuración específica, obtendrá un 100% de los puntos. Para otras acciones de mejora, los puntos se dan como un porcentaje de la configuración total. Por ejemplo, si los Estados de acción de mejora obtienen 30 puntos al proteger a todos los usuarios con la autenticación multifactor y solo tiene 5 de 100 usuarios totales protegidos, se le asignará una puntuación parcial de unos 2 puntos (5 protegidos/100 en total * 30 máx PTS = puntuación parcial de 2 PTO).
 
 ### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
 

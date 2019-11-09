@@ -1,18 +1,18 @@
 ---
-title: Pasos para que los partners registren dispositivos
+title: Pasos para que los Socios puedan registrar dispositivos
 description: Cómo pueden los socios registrar los dispositivos para que puedan ser administrados por el escritorio administrado por Microsoft
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 69d9387047cbb14a97f3da1d401b30a97bd7fd90
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ceda5765ca6450959c99222daf457cf7584401ba
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982721"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074732"
 ---
-# <a name="steps-for-partners-to-register-devices"></a>Pasos para que los partners registren dispositivos
+# <a name="steps-for-partners-to-register-devices"></a>Pasos para que los Socios puedan registrar dispositivos
 
 
 En este tema se describen los pasos que deben seguir los socios para registrar los dispositivos. El proceso para registrar los dispositivos usted mismo está documentado en [registrar los dispositivos en el escritorio administrado por Microsoft](register-devices-self.md).
@@ -20,7 +20,7 @@ En este tema se describen los pasos que deben seguir los socios para registrar l
 
 
 ## <a name="prepare-for-registration"></a>Preparar el registro 
-Antes de completar el registro de un cliente, primero debe establecer una relación con ellos en el [centro de Partners](https://partner.microsoft.com/dashboard). Asegúrese de seleccionar **incluir privilegios de administración delegados para Azure Active Directory y Office 365**. Para obtener más información, vea [ayuda del centro de asociados](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer).
+Antes de completar el registro de un cliente, primero debe establecer una relación con ellos en el [centro de Partners](https://partner.microsoft.com/dashboard). Asegúrese de seleccionar **incluir privilegios de administración delegados para Azure Active Directory y Office 365**. Para obtener más información, vea [ayuda del centro de asociados](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer).
 
 Para completar el registro del cliente, cree primero un archivo CSV.
 
@@ -35,6 +35,8 @@ El archivo tiene que incluir **exactamente los mismos encabezados de columna** q
   
   
   ```
+
+
 
 
 >[!NOTE]
