@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Pasos para actualizar su empresa de Office 365 empresa Premium a Microsoft 365 Business.
-ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002147"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231419"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Actualización a Microsoft 365 Business desde Office 365 empresa Premium
 
@@ -38,37 +38,6 @@ Obtenga más información sobre Microsoft 365 Business en [Microsoft.com](https:
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>¿Cuál es la diferencia entre Office 365 Business Premium y Microsoft 365 Business?
 Hemos agregado una comparación en paralelo de estos dos planes a la descripción del servicio de [negocio de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
 
-1. Una vez que haya adquirido licencias nuevas y esta es la primera vez que lo hizo, el banner de configuración de Microsoft 365 Business se mostrará en la parte superior del centro de administración.
-    
-    > [!NOTE]
-    > El banner de configuración es una oportunidad para agregar nuevos usuarios, un nuevo dominio y migrar el correo electrónico de los nuevos usuarios. Si no tiene previsto realizar ninguna, debe seguir adelante con el asistente y elegir opciones predeterminadas para que desaparezca de la Página principal de administración. 
-  
-   ![Elija Iniciar configuración en Microsoft 365 Business está preparado para configurar la pancarta.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
-  
-    Seleccione **Iniciar configuración**.
-    
-2. En la página **personalizar el inicio de sesión y el correo electrónico** , puede Agregar un dominio si elige **conectar un dominio que ya posee** si desea usar esta oportunidad para agregar otro dominio a la suscripción. 
-    
-    Si ya ha configurado un dominio, el segundo campo indicará que y **seguirá usando** \< _su nombre_ \> **de dominio para el correo electrónico y el inicio de sesión**.   Si no ha configurado un dominio con su suscripción, dirá **seguir usando** \< _su empresa Name.onmicrosoft.com_ \> **para el correo electrónico y el inicio de sesión**.  
-    
-    Elija **Siguiente**.
-    
-    ![En la página personalizar el inicio de sesión y el correo electrónico, elija entre agregar un dominio o usar el que ha estado usando.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
-  
-3. En la página **agregar nuevos usuarios** , puede agregar nuevos usuarios si tiene empleados nuevos a los que desea asignar licencias de Microsoft 365 Business. 
-    
-    Si no tiene empleados nuevos para agregar y desea asignar licencias a los usuarios existentes, elija **siguiente**.
-    
-4. En la página **migrar mensajes de correo electrónico** puede elegir migrar el correo electrónico de cualquiera de los nuevos usuarios que agregó en el paso 3. También puede omitir este paso. Elija **Siguiente**.
-    
-5. En la última página, elija **ir al centro de administración**y continúe con la instalación.
-    
-6. En el centro de administración, vaya a **usuarios** \> **activos**.
-    
-7. Seleccione el usuario al que desea asignar la licencia de **Microsoft 365 Business** y, a continuación, elija **Editar** junto a **licencias de producto**.
-    
-    ![En la tarjeta de usuario, elija Editar junto a licencias de productos.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
-  
 ## <a name="before-you-get-started"></a>Antes de empezar
 
 - **¿Cuándo debe elegirse la actualización?** La actualización es la opción correcta cuando desea actualizar **todos los usuarios** asignados a un solo plan. Cuando elige actualizar, todos los usuarios del plan se cambian a otro plan al mismo tiempo. Si no desea actualizar todos los usuarios asignados a un solo plan, compre licencias para el nuevo plan (en este caso, Microsoft 365 Business) y [asígneles estas licencias individualmente](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) para cada usuario que quiera actualizar. 

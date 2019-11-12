@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática en Office 365, que proporciona almacenamiento ilimitado de archivos para buzones de Exchange Online.
-ms.openlocfilehash: 475bf53304be55bbac085693788cff4b5522bb14
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c13a6067a4c17b78a869be151b6e119f0c784f46
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093546"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231381"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Información general sobre el archivado ilimitado en Office 365
 
@@ -55,11 +55,11 @@ A continuación se muestra una introducción rápida del proceso.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>¿Qué se mueve al espacio de almacenamiento adicional del archivo?
 
-Para hacer un uso eficaz del almacenamiento de archivos de expansión automática, las carpetas pueden moverse. Office 365 determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. Cuando se mueve una carpeta, se crea automáticamente una subcarpeta en la carpeta original en la parte de archivo de la lista de carpetas de Outlook. Esta nueva subcarpeta apunta a los elementos que se movieron. La Convención de nomenclatura que Office 365 usa para asignar un nombre a esta carpeta es ** \<el nombre\>de carpeta _yyyy (creado en MMM DD, YYYY h_mm)**, donde: 
-  
+Para hacer un uso eficaz del almacenamiento de archivos de expansión automática, las carpetas pueden moverse. Office 365 determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. A veces, cuando se mueve una carpeta, se crean automáticamente una o varias subcarpetas y los elementos de la carpeta original se distribuyen a estas carpetas para facilitar el proceso de movimiento. Al ver la parte de archivo de la lista de carpetas en Outlook, estas subcarpetas se muestran en la carpeta original.  La Convención de nomenclatura que Office 365 usa para nombrar estas subcarpetas es ** \<el\>nombre de carpeta _yyyy (creado en MMM DD, YYYY h_mm)**, donde:
+
 - **yyyy** es el año en que se recibieron los mensajes de la carpeta. 
     
-- **dd mmm h_m** es la fecha y hora en que se creó la subcarpeta mediante Office 365, en formato UTC, en función de la zona horaria del usuario y la configuración regional en Outlook. 
+- **DD de MMM de aaaa h_m** es la fecha y hora en que la subcarpeta se creó en Office 365, en formato UTC, en función de la zona horaria del usuario y la configuración regional en Outlook. 
     
 En las siguientes capturas de pantallas se muestra una lista de carpetas antes y después de que los mensajes se muevan a un archivo de expansión automática.
   
@@ -71,6 +71,9 @@ En las siguientes capturas de pantallas se muestra una lista de carpetas antes y
   
 ![Lista de carpetas del buzón de archivo después de aprovisionar el archivo de expansión automática](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
+> [!NOTE]
+> Como se ha descrito anteriormente, Office 365 mueve los elementos a las subcarpetas (y los asigna a sus nombres usando la Convención de nomenclatura descrita anteriormente) para facilitar la distribución de contenido a un archivo auxiliar. Pero mover elementos a subcarpetas no siempre es así. A veces, se puede mover una carpeta completa a un archivo auxiliar. En este caso, la carpeta contendrá su nombre original.  No será visible en la lista de carpetas de Outlook que la carpeta se movió a un archivo auxiliar.
+
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Requisitos de Outlook para obtener acceso a elementos en un archivo de expansión automática
 
 Para obtener acceso a los mensajes que se almacenan en un archivo de expansión automática, los usuarios tienen que usar uno de los siguientes clientes de Outlook:
@@ -102,11 +105,11 @@ En esta sección se explica la funcionalidad entre el archivado de expansión au
   
 - **eDiscovery:** Cuando usa una herramienta de exhibición de documentos electrónicos de Office 365, como búsqueda de contenido o exhibición de documentos electrónicos local, también se busca en las áreas de almacenamiento adicionales de un archivo de expansión automática.
     
-- :* De **retención*** cuando coloca un buzón de correo en retención mediante el uso de herramientas como la retención por juicio en las retenciones de casos de Exchange online o eDiscovery y las directivas de retención en el centro de seguridad y cumplimiento, el contenido ubicado en un archivo de expansión automática también se coloca en retención.
+- **Retención:** Cuando coloca un buzón de correo en retención mediante el uso de herramientas como retención por juicio en Exchange online o eDiscovery Case retenciones y directivas de retención en el centro de seguridad y cumplimiento, el contenido ubicado en un archivo de expansión automática también se coloca en retención.
     
 - **Administración de registros de mensajes (MRM):** Si usa directivas de eliminación de MRM en Exchange Online para eliminar de forma permanente los elementos de buzón de correo expirados, los elementos expirados que se encuentran en el archivo de expansión automática también se eliminarán.
     
-- :* De **servicio de importación*** puede usar el servicio de importación de Office 365 para importar archivos PST al archivo de expansión automática de un usuario. Puede importar hasta 100 GB de datos de archivos PST en el buzón de archivo del usuario. 
+- **Servicio de importación:** Puede usar el servicio de importación de Office 365 para importar archivos PST al archivo de expansión automática de un usuario. Puede importar hasta 100 GB de datos de archivos PST en el buzón de archivo del usuario. 
 
 ## <a name="more-information"></a>Más información
 
