@@ -208,6 +208,7 @@
 ### [Trabajar con errores de proceso](processing-data-for-case.md)
 #### [Clasificación avanzada de los datos de administración](indexing-custodian-data.md)
 #### [Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)
+#### [Corrección de errores de un único elemento](single-item-error-remediation.md)
 
 ### [Recopilar datos para un caso](collecting-data-for-ediscovery.md)
 #### [Crear una búsqueda](create-search-to-collect-data.md)
@@ -429,8 +430,7 @@
 
 ### Notificación de infracciones
 #### [Notificación de infracciones](gdpr-breach-notification.md)
-#### [Azure](gdpr-breach-azure.md)
-#### [Dynamics 365](gdpr-breach-dynamics365.md)
+#### [Azure y Dynamics 365](gdpr-breach-azure-dynamics.md)
 #### [Soporte técnico de Microsoft y Servicios profesionales](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
