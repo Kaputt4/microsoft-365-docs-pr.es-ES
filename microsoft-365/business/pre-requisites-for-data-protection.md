@@ -18,30 +18,32 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: 'Conozca los requisitos previos para configurar su organización con Microsoft 365 Business. '
-ms.openlocfilehash: 3bf02ab831a1eb158959490ff7f4d4274a15bb3f
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 157abf0a3396ab374297441bf90d6defc4093390
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575846"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290538"
 ---
-# <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a><span data-ttu-id="7a3ff-103">Requisitos previos para proteger datos en dispositivos con Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="7a3ff-103">Pre-requisites for protecting data on devices with Microsoft 365 Business</span></span>
+# <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a><span data-ttu-id="9c0b3-103">Requisitos previos para proteger datos en dispositivos con Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="9c0b3-103">Pre-requisites for protecting data on devices with Microsoft 365 Business</span></span>
 
-<span data-ttu-id="7a3ff-104">El primer paso para configurar su organización con Microsoft 365 Business es asegurarse de que puede cumplir los requisitos previos.</span><span class="sxs-lookup"><span data-stu-id="7a3ff-104">The first step in setting up your organization with Microsoft 365 Business is to make sure you are able to meet the pre-requisites.</span></span>
+<span data-ttu-id="9c0b3-104">El primer paso para configurar su organización con Microsoft 365 Business es asegurarse de que puede cumplir los requisitos previos.</span><span class="sxs-lookup"><span data-stu-id="9c0b3-104">The first step in setting up your organization with Microsoft 365 Business is to make sure you are able to meet the pre-requisites.</span></span>
   
-## <a name="pre-requisites"></a><span data-ttu-id="7a3ff-105">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="7a3ff-105">Pre-requisites</span></span>
+## <a name="pre-requisites"></a><span data-ttu-id="9c0b3-105">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="9c0b3-105">Pre-requisites</span></span>
 
-- <span data-ttu-id="7a3ff-106">Los dispositivos Windows deben ejecutar Windows 7 Professional, Windows 8 Pro o Windows 8,1 Pro.</span><span class="sxs-lookup"><span data-stu-id="7a3ff-106">Windows devices must be running Windows 7 Professional, Windows 8 Pro, or Windows 8.1 Pro.</span></span>
+- <span data-ttu-id="9c0b3-106">Los dispositivos Windows deben ejecutar Windows 7 Professional, Windows 8 Pro o Windows 8,1 Pro.</span><span class="sxs-lookup"><span data-stu-id="9c0b3-106">Windows devices must be running Windows 7 Professional, Windows 8 Pro, or Windows 8.1 Pro.</span></span>
     
-    [<span data-ttu-id="7a3ff-107">Actualizar dispositivos Windows a Windows Pro Creators Update</span><span class="sxs-lookup"><span data-stu-id="7a3ff-107">Upgrade Windows devices to Windows Pro Creators Update</span></span>](upgrade-to-windows-pro-creators-update.md)
+    [<span data-ttu-id="9c0b3-107">Actualizar dispositivos Windows a Windows Pro Creators Update</span><span class="sxs-lookup"><span data-stu-id="9c0b3-107">Upgrade Windows devices to Windows Pro Creators Update</span></span>](upgrade-to-windows-pro-creators-update.md)
     
-- <span data-ttu-id="7a3ff-p101">Quite los dispositivos de soluciones de administración de dispositivos móviles (Mobile Iron, AirWatch, etc.). Inscribirá todas las personas de la organización en la administración de dispositivos móviles de Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="7a3ff-p101">Remove devices from mobile management solutions (Mobile Iron, AirWatch, etc.). You will enroll all the people in your organization to Microsoft 365 Business mobile management.</span></span>
+    <span data-ttu-id="9c0b3-108">Si está ejecutando Windows 10 Home, debe **comprar** Windows 10 Pro.</span><span class="sxs-lookup"><span data-stu-id="9c0b3-108">If you are running Windows 10 Home, then you need to **purchase** Windows  10 Pro.</span></span> <span data-ttu-id="9c0b3-109">Consulte [actualizar Windows 10 Home a Windows 10 Pro](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) para obtener instrucciones.</span><span class="sxs-lookup"><span data-stu-id="9c0b3-109">See [upgrade Windows 10 Home to Windows 10 Pro](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) for instructions.</span></span> 
     
-- <span data-ttu-id="7a3ff-110">Apple iOS 8.0 y versiones posteriores.</span><span class="sxs-lookup"><span data-stu-id="7a3ff-110">Apple iOS 8.0 and later.</span></span>
+- <span data-ttu-id="9c0b3-p102">Quite los dispositivos de soluciones de administración de dispositivos móviles (Mobile Iron, AirWatch, etc.). Inscribirá todas las personas de la organización en la administración de dispositivos móviles de Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="9c0b3-p102">Remove devices from mobile management solutions (Mobile Iron, AirWatch, etc.). You will enroll all the people in your organization to Microsoft 365 Business mobile management.</span></span>
     
-    <span data-ttu-id="7a3ff-p102">Google Android 4.0 y versiones posteriores (incluido Samsung KNOX Standard 4.0 y versiones superiores). Para obtener más información, vea [Dispositivos admitidos en Intune](https://go.microsoft.com/fwlink/p/?linkid=852307).</span><span class="sxs-lookup"><span data-stu-id="7a3ff-p102">Google Android 4.0 and later (including Samsung KNOX Standard 4.0 and higher). For more details, see [Intune supported devices](https://go.microsoft.com/fwlink/p/?linkid=852307).</span></span>
+- <span data-ttu-id="9c0b3-112">Apple iOS 8.0 y versiones posteriores.</span><span class="sxs-lookup"><span data-stu-id="9c0b3-112">Apple iOS 8.0 and later.</span></span>
     
-- <span data-ttu-id="7a3ff-113">Si tiene aplicaciones existentes de Office en equipos de usuario, lea [Preparar la instalación del cliente de Office](prepare-for-office-client-deployment.md) para comprender los pasos que puede que tenga que realizar antes de que pueda configurar Microsoft 365 Business para instalar Office 2016 en los equipos de usuario.</span><span class="sxs-lookup"><span data-stu-id="7a3ff-113">If you have existing Office applications on user computers, read [prepare for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might have to take before you can set up Microsoft 365 Business to install Office 2016 to user computers.</span></span> 
+    <span data-ttu-id="9c0b3-p103">Google Android 4.0 y versiones posteriores (incluido Samsung KNOX Standard 4.0 y versiones superiores). Para obtener más información, vea [Dispositivos admitidos en Intune](https://go.microsoft.com/fwlink/p/?linkid=852307).</span><span class="sxs-lookup"><span data-stu-id="9c0b3-p103">Google Android 4.0 and later (including Samsung KNOX Standard 4.0 and higher). For more details, see [Intune supported devices](https://go.microsoft.com/fwlink/p/?linkid=852307).</span></span>
+    
+- <span data-ttu-id="9c0b3-115">Si tiene aplicaciones existentes de Office en equipos de usuario, lea [Preparar la instalación del cliente de Office](prepare-for-office-client-deployment.md) para comprender los pasos que puede que tenga que realizar antes de que pueda configurar Microsoft 365 Business para instalar Office 2016 en los equipos de usuario.</span><span class="sxs-lookup"><span data-stu-id="9c0b3-115">If you have existing Office applications on user computers, read [prepare for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might have to take before you can set up Microsoft 365 Business to install Office 2016 to user computers.</span></span> 
     
 
 
