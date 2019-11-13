@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: 'Conozca los requisitos previos para configurar su organización con Microsoft 365 Business. '
-ms.openlocfilehash: 3bf02ab831a1eb158959490ff7f4d4274a15bb3f
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 157abf0a3396ab374297441bf90d6defc4093390
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575846"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290538"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Requisitos previos para proteger datos en dispositivos con Microsoft 365 Business
 
@@ -34,6 +34,8 @@ El primer paso para configurar su organización con Microsoft 365 Business es as
 - Los dispositivos Windows deben ejecutar Windows 7 Professional, Windows 8 Pro o Windows 8,1 Pro.
     
     [Actualizar dispositivos Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
+    
+    Si está ejecutando Windows 10 Home, debe **comprar** Windows 10 Pro. Consulte [actualizar Windows 10 Home a Windows 10 Pro](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) para obtener instrucciones. 
     
 - Quite los dispositivos de soluciones de administración de dispositivos móviles (Mobile Iron, AirWatch, etc.). Inscribirá todas las personas de la organización en la administración de dispositivos móviles de Microsoft 365 Business.
     

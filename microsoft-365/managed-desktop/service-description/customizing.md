@@ -6,21 +6,20 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5c9e53278f76665d1b48da0fbeb4555565c183aa
-ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
+ms.openlocfilehash: aca3bb6413aaab7620b1e1277c821a79dba4bb2f
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38020383"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302907"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Excepciones al plan de servicio
 
 Microsoft Managed Desktop proporciona una lista de dispositivos de creados, una [configuración de dispositivo estándar](device-policies.md), requisitos de aplicaciones y algunas [Opciones configurables](../working-with-managed-desktop/config-setting-overview.md), todas diseñadas para proporcionar una experiencia segura, productiva y agradable a los usuarios finales. Es mejor permanecer siempre con el servicio tal y como se proporciona. Sin embargo, reconocemos que algunos detalles del servicio podrían no ajustarse exactamente a las necesidades de su organización. Si cree que debe modificar el servicio de alguna manera, es importante seguir los siguientes procesos para solicitar dichos cambios.
-
  
 ## <a name="types-of-exceptions"></a>Tipos de excepciones
-Una excepción es cualquier adición o cambio de la configuración de base de escritorio administrada de Microsoft; los ejemplos abarcan desde la configuración de puertos USB hasta la implementación de un nuevo agente de seguridad. Agrupamos varias excepciones de la siguiente manera:
 
+Una excepción es cualquier adición o cambio de la configuración de base de escritorio administrada de Microsoft; los ejemplos abarcan desde la configuración de puertos USB hasta la implementación de un nuevo controlador de dispositivo. Agrupamos varias excepciones de la siguiente manera:
 
 |Tipo  |Description  |
 |---------|---------|
@@ -31,18 +30,15 @@ Una excepción es cualquier adición o cambio de la configuración de base de es
 |Directivas     | Configuración de Windows 10 u Office 365 ProPlus en un dispositivo administrado        |
 |Dispositivos     | Dispositivos que no se encuentran en la lista de [dispositivos](device-list.md) de escritorio administrados de Microsoft        |
 |Otros     |  Todo lo que no cubre el resto de áreas       |
-
-
-
  
 ## <a name="request-an-exception"></a>Solicitar una excepción
 
 Envíe solicitudes a través del portal de administración de escritorio administrado de Microsoft mediante la creación de una solicitud de cambio. Asegúrese de incluir estos detalles:
--    tipo: ¿qué categoría de excmption? (vea la tabla anterior)
--   Requisito: ¿Cuáles son los requisitos empresariales específicos para el?
+
+-   Tipo de exención: ¿qué categoría de excepción es? (vea la tabla anterior)
+-   Requisito: ¿Cuáles son los requisitos empresariales específicos para la excepción?
 -   Propuesta: ¿Qué solución es la que solicita la empresa?
 -   Escala de tiempo: ¿Cuánto tiempo desea que dure esta excepción? 
-
 
 ## <a name="how-we-assess-an-exception-request"></a>Cómo evaluaremos una solicitud de excepción
 
@@ -64,11 +60,11 @@ Se revisan las excepciones para asegurarse de que no infringen ninguna de estas 
 -   Una excepción no debe afectar a la estabilidad del sistema, por ejemplo, al provocar bloqueos de modo de kernel o bloqueos.
 -   El cambio no debe restringirnos para operar el servicio o entrar en conflicto con la tecnología de escritorio administrada principal de Microsoft.
 
-Estas condiciones podrían cambiar en el futuro. Si hacemos estos cambios, proporcionaremos un aviso de 30 días antes de que estas condiciones entren en vigor.
+Estas condiciones podrían cambiar en el futuro. Si hacemos estos cambios, proporcionaremos un aviso de 30 días antes de que estas condiciones entren en vigor.  Si Microsoft Managed Desktop ofrece una forma alternativa de cumplir una excepción aprobada, el escritorio administrado de Microsoft notificará al cliente que Microsoft Managed Desktop altera el modo de admitir la excepción. 
 
 ## <a name="revoking-approval-for-an-exception"></a>Revocar la aprobación para una excepción
 
-Después de que se apruebe e implemente una excepción solicitada, es posible que se detecten problemas que infrinjan las condiciones clave que no eran evidentes cuando se aprobó el cambio en primer lugar. En esta situación, es posible que tenga que revocar la aprobación para el.
+Después de que se apruebe e implemente una excepción solicitada, es posible que se detecten problemas que infrinjan las condiciones clave que no eran evidentes cuando se aprobó el cambio en primer lugar. En esta situación, es posible que deba revocar la aprobación de la excepción.
  
 Si esto ocurre, le enviaremos una notificación mediante el portal de administración de escritorio administrado de Microsoft. Desde la primera vez que le notificamos, tiene 90 días para quitar la excepción antes de que los dispositivos con la excepción ya no estén asociados por los contratos de nivel de servicio de escritorio administrado por Microsoft. Le enviaremos varias notificaciones de acuerdo con una escala de tiempo estricta, pero es posible que un incidente o una amenaza graves deban cambiar la escala de tiempo o nuestras decisiones sobre una excepción. No se *elimina* una excepción sin su consentimiento, pero los dispositivos con una excepción revocada dejarán de estar vinculados por nuestro contrato de nivel de servicio. Esta es la escala de tiempo de las notificaciones que le enviaremos:
 
@@ -76,5 +72,6 @@ Si esto ocurre, le enviaremos una notificación mediante el portal de administra
 - **Segundo aviso (30 días después):** Proporcionamos un segundo aviso, que incluye la misma información que se proporciona en el primer aviso. 
 - **Tercer aviso (60 días después del primer aviso):** Se proporciona un tercer aviso, que incluye la misma información que se proporciona en el primer aviso. 
 - **Aviso final (1 semana antes de la fecha límite de 90 días):** Proporcionamos un cuarto aviso, que incluye la misma información que se proporciona en el primer aviso.
-- **90 días después de la primera notificación:** Los contratos de nivel de servicio de escritorio administrados por Microsoft ya no se aplican a los dispositivos que tengan la revocación. En cualquier momento, puede desafiar la decisión y proporcionar información adicional para tener en cuenta, como la actualización, los cambios de configuración o el cambio de software. 
+- **90 días después de la primera notificación:** Los contratos de nivel de servicio de escritorio administrados por Microsoft ya no se aplican a los dispositivos que tienen la excepción revocada. En cualquier momento, puede desafiar la decisión y proporcionar información adicional para tener en cuenta, como la actualización, los cambios de configuración o el cambio de software. 
+
 

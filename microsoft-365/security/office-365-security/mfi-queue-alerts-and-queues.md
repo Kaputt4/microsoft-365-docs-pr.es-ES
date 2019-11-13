@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden obtener información sobre las alertas de cola y las colas del panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: ef8b4acd4008f3039030049893f83a5e49e1efc2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 66bd4116cfb84d15bbecafa269fcc2c7a88789d8
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093476"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290550"
 ---
 # <a name="queue-alerts-and-queues"></a>Colas y alertas de cola
 
@@ -26,9 +26,9 @@ Cuando los mensajes no se pueden enviar desde la organización de Office 365 a l
 
 - Ha habido cambios en la red o en el firewall en su entorno local.
 
-Office 365 seguirá reintentando la entrega durante 48 horas. Transcurridos 48 horas, los mensajes expirarán y se devolverán a los remitentes en informes de no entrega (también conocidos como NDR o mensajes de devolución).
+Office 365 seguirá reintentando la entrega durante 24 horas. Transcurridas las 24 horas, los mensajes expirarán y se devolverán a los remitentes en informes de no entrega (también conocidos como NDR o mensajes de devolución).
 
-Si el volumen de correo electrónico en cola supera el umbral predefinido (el valor predeterminado es de 2000 mensajes), las alertas estarán disponibles en el panel de flujo de correo en las **alertas recientes**y los administradores recibirán una notificación por correo electrónico (a su dirección de correo electrónico alternativa) . Para configurar el umbral de alerta, el límite de notificaciones diarias y los destinatarios de la alerta, consulte la sección **personalizar colas de alertas** a continuación.
+Si el volumen de correo electrónico en cola supera el umbral predefinido (el valor predeterminado es de 2000 mensajes), las alertas estarán disponibles en el panel de flujo de correo en las **alertas recientes**y los administradores recibirán una notificación por correo electrónico (a su dirección de correo electrónico alternativa). Para configurar el umbral de alerta, el límite de notificaciones diarias y los destinatarios de la alerta, consulte la sección **personalizar colas de alertas** a continuación.
 
 ![Poner alertas en cola en el área de alertas recientes del panel flujo de correo en el centro de seguridad & cumplimiento](../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
@@ -70,6 +70,6 @@ Al hacer clic en el número de mensajes en cola en las **colas**, los detalles d
 
 ![Detalles de la cola](../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).
