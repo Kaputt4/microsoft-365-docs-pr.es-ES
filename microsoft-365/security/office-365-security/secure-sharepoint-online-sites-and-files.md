@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumen: recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.'
-ms.openlocfilehash: 62b7227239c52f50f2dc437e1ddedc663a5bb01d
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 15b67d2569f2c8ceafb16973ae2bf6862ebb9ded
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035710"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311114"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Protección de archivos y sitios de SharePoint Online
 
  **Resumen:** Recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.
   
-En este artículo, se ofrecen recomendaciones para configurar la protección de archivos y sitios de grupo de SharePoint Online de manera que se equilibre la seguridad con la facilidad de colaboración. En este artículo, se definen cuatro configuraciones distintas, empezando por un sitio público dentro de la organización con las directivas de uso compartido más abiertas. Cada configuración adicional representa un paso significativo para la protección, pero a costa de que el conjunto de usuarios relevante pierda capacidad de obtener acceso a los recursos y colaborar en ellos. Siga estas recomendaciones como punto inicial, y ajuste las configuraciones para adaptarse a las necesidades de su organización. 
+En este artículo, se ofrecen recomendaciones para configurar la protección de archivos y sitios de grupo de SharePoint Online de manera que se equilibre la seguridad con la facilidad de colaboración. En este artículo, se definen cuatro configuraciones distintas, empezando por un sitio público dentro de la organización con las directivas de uso compartido más abiertas. Cada configuración adicional representa un paso significativo para la protección, pero a costa de que el conjunto de usuarios relevante pierda capacidad de obtener acceso a los recursos y colaborar en ellos. Siga estas recomendaciones como punto inicial, y ajuste las configuraciones para adaptarse a las necesidades de su organización.
   
 Las configuraciones que se explican en este artículo concuerdan con las recomendaciones de Microsoft para los tres niveles de protección de datos, identidades y dispositivos:
   
@@ -40,7 +40,7 @@ Las configuraciones que se explican en este artículo concuerdan con las recomen
     
 - Protección extremadamente confidencial
     
-Para más información sobre estos niveles y capacidades recomendadas para cada nivel, vea los siguientes recursos. 
+Para más información sobre estos niveles y capacidades recomendadas para cada nivel, vea los siguientes recursos.
   
 - [Protección de identidades y dispositivos para Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
     
@@ -54,7 +54,7 @@ Las recomendaciones para sitios de grupo de SharePoint Online abarcan toda una v
 
 Como se muestra:
   
-- La protección de base de referencia incluye dos opciones para los sitios de grupo de SharePoint Online: un sitio público y un sitio privado. Los sitios públicos son aquellos visibles y accesibles por cualquier persona de la organización. Los sitios privados solo pueden detectarlos y acceder a ellos los miembros del sitio. Estas dos configuraciones de sitio permiten compartir fuera del grupo. 
+- La protección de base de referencia incluye dos opciones para los sitios de grupo de SharePoint Online: un sitio público y un sitio privado. Los sitios públicos son aquellos visibles y accesibles por cualquier persona de la organización. Los sitios privados solo pueden detectarlos y acceder a ellos los miembros del sitio. Estas dos configuraciones de sitio permiten compartir fuera del grupo.
     
 - Los sitios para protección confidencial y extremadamente confidencial son sitios privados con acceso limitado solamente a los miembros de grupos específicos.
     

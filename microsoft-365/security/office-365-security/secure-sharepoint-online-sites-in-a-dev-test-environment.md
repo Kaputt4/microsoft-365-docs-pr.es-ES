@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: cree sitios de grupo de SharePoint Online en un entorno de desarrollo y pruebas, que pueden ser públicos, privados, confidenciales o extremadamente confidenciales.'
-ms.openlocfilehash: 6bf18c3d010d7e624666745842f7f3c41176b1b3
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 48c3821922fb809bc49d14b544beb225bf35eda4
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035700"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311134"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Protección de sitios de SharePoint Online en un entorno de desarrollo y pruebas
 
@@ -249,7 +249,7 @@ Para crear un sitio de grupo público de línea base de SharePoint Online, haga 
     
 4. En la página **Crear un sitio**, haga clic en **Sitio de grupo**.
     
-5. En **Nombre del sitio**, escriba **En toda la organización**. 
+5. En **Nombre del sitio**, escriba **En toda la organización**.
     
 6. En **Descripción del sitio de grupo**, escriba **Sitio de SharePoint para toda la organización**.
     

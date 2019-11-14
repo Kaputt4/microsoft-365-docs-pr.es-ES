@@ -24,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: Obtenga información sobre qué esperar una vez que se haya completado la instalación de Business Cloud Suite.
-ms.openlocfilehash: b11c247e8d857f8c7a4d41f633267038b3dd86c6
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: d19438d6e085ba27ec3fb0308005a9bf473383e1
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574706"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320196"
 ---
 # <a name="help-users-connect-to-microsoft-365-business"></a>Ayudar a los usuarios a conectarse a Microsoft 365 Business
 
-Después de completar la configuración, las directivas de dispositivo predeterminadas estarán preparadas y listas para aplicarlas. En dispositivos móviles, los usuarios descargarán las aplicaciones de Office y, después, las directivas se aplicarán cuando el usuario inicie sesión con su cuenta profesional o educativa. Necesita completar tareas adicionales antes de aplicar las directivas en equipos PC con Windows, como la actualización local. Vea y comparta los temas siguientes para ayudar a los usuarios a completar la configuración y a conectarse.
+Una vez finalizada la instalación, las directivas de dispositivo predeterminadas están preparadas y listas para aplicarse. En dispositivos móviles, los usuarios descargan las aplicaciones de Office. A continuación, las directivas se aplican cuando el usuario inicia sesión con su cuenta profesional o educativa. Necesita completar tareas adicionales antes de aplicar las directivas en equipos PC con Windows, como la actualización local. Consulte y comparta los temas siguientes para ayudar a los usuarios a configurar y conectarse:
   
 [Configurar dispositivos Windows para los usuarios de Microsoft 365 Empresa](set-up-windows-devices.md)
   

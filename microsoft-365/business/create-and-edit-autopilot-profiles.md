@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Obtenga información sobre cómo crear, editar, eliminar o quitar perfiles de AutoPilot.
-ms.openlocfilehash: 4305340a2fc5df8202cf4d85f9e2541690bf9ed0
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f7fdc2632e93c48e043fe158842f8395d6a89e14
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574726"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320246"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Crear y editar perfiles de AutoPilot
 
@@ -40,17 +40,17 @@ Un perfil se aplica a un dispositivo o a un grupo de dispositivos.
   
 2. En la **Página AutoPilot** , elija la **** pestaña \> perfiles **crear perfil**.
     
-3. En la página **Crear perfil**, especifique un nombre para el perfil que le ayude a identificarlo, como, por ejemplo, Marketing, active la opción que quiera (para más información, vea [About AutoPilot Profile settings](autopilot-profile-settings.md) [Acerca de la configuración de perfiles de AutoPilot]) y elija **Guardar**.
+3. En la página **crear perfil** , escriba un nombre para el perfil que le ayude a identificarlo, por ejemplo marketing. Active la configuración que desee y, a continuación, elija **Guardar**. Para obtener más información acerca de la configuración de perfiles de AutoPilot, consulte [acerca de la configuración de perfiles de AutoPilot](autopilot-profile-settings.md).
     
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>Aplicar el perfil a un dispositivo
 
-Después de crear un perfil, puede aplicarlo a un dispositivo o a un grupo de dispositivos. Puede seleccionar un perfil existente en la [guía paso a paso](add-autopilot-devices-and-profile.md), puede aplicarlo a nuevos dispositivos o puede reemplazar un perfil existente para un dispositivo o grupo de dispositivos. 
+Después de crear un perfil, puede aplicarlo a un dispositivo o a un grupo de dispositivos. Puede elegir un perfil existente en la [Guía paso a paso](add-autopilot-devices-and-profile.md) y aplicarlo a nuevos dispositivos o reemplazar un perfil existente para un dispositivo o un grupo de dispositivos. 
   
 1. En la página **Preparar Windows**, elija la pestaña **Dispositivos**. 
     
-2. Active la casilla situada junto al nombre del dispositivo y, en el panel **Dispositivo**, elija un perfil de la lista desplegable **Perfil asignado** \> **Guardar**.
+2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **dispositivo** , elija un perfil de la lista \> desplegable **perfil asignado** para **Guardar**.
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -62,7 +62,7 @@ Después de asignar un perfil a un dispositivo, puede actualizarlo, aunque ya le
 
 1. En la página **Preparar Windows**, elija la pestaña **Perfiles**. 
     
-2. Active la casilla situada junto al nombre del dispositivo y, en el panel **Perfil**, actualice cualquiera de las opciones disponibles \> **Guardar**.
+2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **perfil** , actualice cualquiera de las \> opciones de configuración disponibles **Guardar**.
     
     Si hace esto antes de que un usuario conecte el dispositivo a Internet, el perfil se aplica en el proceso de instalación.
     
@@ -70,7 +70,7 @@ Después de asignar un perfil a un dispositivo, puede actualizarlo, aunque ya le
 
 1. En la página **Preparar Windows**, elija la pestaña **Perfiles**. 
     
-2. Active la casilla situada junto al nombre del dispositivo y, en el panel **Perfil**, haga clic en **Eliminar perfil** \> **Guardar**.
+2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **perfil** , seleccione **eliminar perfil** \> **Guardar**.
     
     Al eliminar un perfil, se elimina de un dispositivo o un grupo de dispositivos al que se ha asignado.
     
@@ -78,5 +78,5 @@ Después de asignar un perfil a un dispositivo, puede actualizarlo, aunque ya le
 
 1. En la página **Preparar Windows**, elija la pestaña **Dispositivos**. 
     
-2. Active la casilla situada junto al nombre del dispositivo y, en el panel **Dispositivo**, elija **Ninguno** de la lista desplegable **Perfil asignado** \> **Guardar**.
+2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **dispositivo** , elija **ninguno** en la lista \> desplegable **perfil asignado** para **Guardar**.
     

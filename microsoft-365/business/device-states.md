@@ -22,16 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Obtenga información sobre los Estados de dispositivos en Microsoft 365 Business.
-ms.openlocfilehash: 06e5c800e6a104785c1fd0724223e05d7729722e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b55e6a5d538ec28d195225e93797cea27afd2e8b
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072728"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320216"
 ---
 # <a name="device-states"></a>Estados de dispositivo
-
-## <a name="device-states"></a>Estados de dispositivo
 
 Los dispositivos de la lista **Acciones de dispositivo** (página principal del administrador \> **Acciones de dispositivo**) pueden tener los estados siguientes.
   
@@ -43,12 +41,12 @@ Los dispositivos de la lista **Acciones de dispositivo** (página principal del 
 |Pendiente de retirada  <br/> |Microsoft 365 Business está en preparación para quitar los datos de la compañía del dispositivo.  <br/> |
 |Retirada en curso  <br/> |Microsoft 365 Business está quitando actualmente los datos de la compañía del dispositivo.  <br/> |
 |Error de retirada  <br/> | No se pudo completar la acción para quitar los datos de la compañía.  <br/> |
-|Retirada cancelada  <br/> |Se canceló la acción de retirar.  <br/> |
+|Retirada cancelada  <br/> |Se canceló la acción de retirada.  <br/> |
 |Borrado pendiente  <br/> |Esperando a que se inicie el restablecimiento de fábrica.  <br/> |
 |Borrado en curso  <br/> |Se emitió el restablecimiento de fábrica.  <br/> |
-|No se pudo completar el borrado  <br/> |No se pudo realizar el restablecimiento de fábrica.  <br/> |
-|Borrado cancelado  <br/> |Se canceló el borrado de fábrica.  <br/> |
-|Incorrecto  <br/> |Esto quiere decir que hay una acción pendiente (o en curso), pero el dispositivo no se registró en más de 30 días.  <br/> |
+|No se pudo completar el borrado  <br/> |No se pudo restablecer la fábrica.  <br/> |
+|Borrado cancelado  <br/> |Se canceló el borrado de la fábrica.  <br/> |
+|Incorrecto  <br/> |Una acción está pendiente (o en curso), pero el dispositivo no se ha protegido durante más de 30 días.  <br/> |
 |Pendiente de eliminación  <br/> |La acción de eliminación está pendiente.  <br/> |
 |Detectado  <br/> |Microsoft 365 Business detectó el dispositivo.  <br/> |
    
