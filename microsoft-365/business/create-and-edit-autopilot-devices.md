@@ -23,24 +23,24 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Obtenga información sobre cómo cargar dispositivos con el piloto automático en Microsoft 365 Business. Puede asignar un perfil a un dispositivo o a un grupo de dispositivos.
-ms.openlocfilehash: 4eadaa800aa174bcd9cac50375f68c8471e1684e
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 1dd6b1a574166379e29465bf3699e47e3b155e0b
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575416"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320266"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Crear y editar dispositivos de AutoPilot
 
 ## <a name="upload-a-list-of-devices"></a>Cargar una lista de dispositivos
 
-Puede usar la [Guía paso a paso](add-autopilot-devices-and-profile.md) para cargar dispositivos, pero también puede cargarlos en la pestaña **Dispositivos**. 
+Puede usar la [Guía paso a paso](add-autopilot-devices-and-profile.md) para cargar dispositivos, pero también puede cargar dispositivos en la pestaña **dispositivos** . 
   
-Los dispositivos tienen que cumplir estos requisitos:
+Los dispositivos deben cumplir estos requisitos:
   
-- Windows 10, versión 1703 o posteriores.
+- Windows 10, versión 1703 o posterior
     
-- Los nuevos dispositivos que no han pasado por una configuración rápida de Windows.
+- Nuevos dispositivos que no han estado a la vista rápida de Windows
 
 1. En el centro de administración de Microsoft 365 Business, elija **dispositivos** \> **AutoPilot**.
   
@@ -48,13 +48,13 @@ Los dispositivos tienen que cumplir estos requisitos:
     
     ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. En el panel **Agregar dispositivos** , vaya a un [archivo CSV de la lista de dispositivos](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) que haya \> preparado para **Guardar** \> el **cierre**.
+3. En el **Panel agregar dispositivos** , vaya a un [archivo CSV](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) de la lista de dispositivos \> que haya preparado para **Guardar** \> el **cierre**.
     
-    Puede obtener esta información de su proveedor de hardware o puede usar el [script de PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) que genera un archivo .csv. 
+    Puede obtener esta información de su proveedor de hardware o puede usar el script de [PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) para generar un archivo CSV. 
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>Asignar un perfil a un dispositivo o un grupo de dispositivos
 
-1. En la página **Preparar Windows**, seleccione la pestaña **Dispositivos** y active la casilla junto a uno o más dispositivos. 
+1. En la página **preparar Windows** , elija la pestaña **dispositivos** y active la casilla junto a uno o más dispositivos. 
     
 2. En el panel **Dispositivo**, seleccione del desplegable **Perfil asignado**. 
     
