@@ -24,21 +24,21 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: Obtenga información sobre qué esperar una vez que se haya completado la instalación de Business Cloud Suite.
-ms.openlocfilehash: b11c247e8d857f8c7a4d41f633267038b3dd86c6
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: d19438d6e085ba27ec3fb0308005a9bf473383e1
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574706"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320196"
 ---
-# <a name="help-users-connect-to-microsoft-365-business"></a><span data-ttu-id="bc40b-103">Ayudar a los usuarios a conectarse a Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="bc40b-103">Help users connect to Microsoft 365 Business</span></span>
+# <a name="help-users-connect-to-microsoft-365-business"></a><span data-ttu-id="12cbe-103">Ayudar a los usuarios a conectarse a Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="12cbe-103">Help users connect to Microsoft 365 Business</span></span>
 
-<span data-ttu-id="bc40b-p101">Después de completar la configuración, las directivas de dispositivo predeterminadas estarán preparadas y listas para aplicarlas. En dispositivos móviles, los usuarios descargarán las aplicaciones de Office y, después, las directivas se aplicarán cuando el usuario inicie sesión con su cuenta profesional o educativa. Necesita completar tareas adicionales antes de aplicar las directivas en equipos PC con Windows, como la actualización local. Vea y comparta los temas siguientes para ayudar a los usuarios a completar la configuración y a conectarse.</span><span class="sxs-lookup"><span data-stu-id="bc40b-p101">After completing setup, your default device policies are in place and ready to apply. On mobile devices, users will download Office apps and then policies are applied when the user signs in with their work or school account. There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade. Please reference and share the following topics to help users get setup and connected.</span></span>
+<span data-ttu-id="12cbe-104">Una vez finalizada la instalación, las directivas de dispositivo predeterminadas están preparadas y listas para aplicarse.</span><span class="sxs-lookup"><span data-stu-id="12cbe-104">After you complete setup, your default device policies are in place and ready to apply.</span></span> <span data-ttu-id="12cbe-105">En dispositivos móviles, los usuarios descargan las aplicaciones de Office.</span><span class="sxs-lookup"><span data-stu-id="12cbe-105">On mobile devices, users download Office apps.</span></span> <span data-ttu-id="12cbe-106">A continuación, las directivas se aplican cuando el usuario inicia sesión con su cuenta profesional o educativa.</span><span class="sxs-lookup"><span data-stu-id="12cbe-106">Policies are then applied when the user signs in with their work or school account.</span></span> <span data-ttu-id="12cbe-107">Necesita completar tareas adicionales antes de aplicar las directivas en equipos PC con Windows, como la actualización local.</span><span class="sxs-lookup"><span data-stu-id="12cbe-107">There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade.</span></span> <span data-ttu-id="12cbe-108">Consulte y comparta los temas siguientes para ayudar a los usuarios a configurar y conectarse:</span><span class="sxs-lookup"><span data-stu-id="12cbe-108">See and share the following topics to help users get set up and connected:</span></span>
   
-[<span data-ttu-id="bc40b-108">Configurar dispositivos Windows para los usuarios de Microsoft 365 Empresa</span><span class="sxs-lookup"><span data-stu-id="bc40b-108">Set up Windows devices for Microsoft 365 Business users</span></span>](set-up-windows-devices.md)
+[<span data-ttu-id="12cbe-109">Configurar dispositivos Windows para los usuarios de Microsoft 365 Empresa</span><span class="sxs-lookup"><span data-stu-id="12cbe-109">Set up Windows devices for Microsoft 365 Business users</span></span>](set-up-windows-devices.md)
   
-[<span data-ttu-id="bc40b-109">Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot</span><span class="sxs-lookup"><span data-stu-id="bc40b-109">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
+[<span data-ttu-id="12cbe-110">Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot</span><span class="sxs-lookup"><span data-stu-id="12cbe-110">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
   
-[<span data-ttu-id="bc40b-110">Configurar dispositivos móviles para usuarios de Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="bc40b-110">Set up mobile devices for Microsoft 365 Business users</span></span>](set-up-mobile-devices.md)
+[<span data-ttu-id="12cbe-111">Configurar dispositivos móviles para usuarios de Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="12cbe-111">Set up mobile devices for Microsoft 365 Business users</span></span>](set-up-mobile-devices.md)
   
 
