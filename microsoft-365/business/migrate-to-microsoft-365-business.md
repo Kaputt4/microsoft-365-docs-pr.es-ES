@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Pasos para actualizar su empresa de Office 365 empresa Premium a Microsoft 365 Business.
-ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38231419"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640569"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Actualización a Microsoft 365 Business desde Office 365 empresa Premium
 
@@ -40,7 +40,7 @@ Hemos agregado una comparación en paralelo de estos dos planes a la descripció
 
 ## <a name="before-you-get-started"></a>Antes de empezar
 
-- **¿Cuándo debe elegirse la actualización?** La actualización es la opción correcta cuando desea actualizar **todos los usuarios** asignados a un solo plan. Cuando elige actualizar, todos los usuarios del plan se cambian a otro plan al mismo tiempo. Si no desea actualizar todos los usuarios asignados a un solo plan, compre licencias para el nuevo plan (en este caso, Microsoft 365 Business) y [asígneles estas licencias individualmente](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) para cada usuario que quiera actualizar. 
+- **¿Cuándo debería elegir actualizar?** La actualización es la opción correcta cuando desea actualizar **todos los usuarios** asignados a un solo plan. Cuando elige actualizar, todos los usuarios del plan se cambian a otro plan al mismo tiempo. Si no desea actualizar todos los usuarios asignados a un solo plan, compre licencias para el nuevo plan (en este caso, Microsoft 365 Business) y [asígneles estas licencias individualmente](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) para cada usuario que quiera actualizar. 
 - **Algunos complementos pueden impedir la actualización** Si intenta iniciar una actualización y tiene un complemento que le impide continuar, puede quitar el complemento en primer lugar y, a continuación, volver a agregarlo si todavía lo necesita. 
 - **Si prepagó el plan** No existe una ruta de actualización sencilla para los planes de prepago. Sabrá si tiene un plan de prepago porque ha configurado su plan con un identificador de producto que puede haber comprado en una tienda. Póngase en contacto con un partner, vaya a Microsoft Store o espere hasta que el plan de prepago expire para cambiar a un nuevo plan.
 
@@ -56,11 +56,11 @@ Para comprar sus licencias, siga estos pasos en el [nuevo centro de administraci
       ![Una captura de pantalla muestra dónde seleccionar la actualización en el centro de administración.](media/SelectUpgrade.png)
 
   > [!NOTE]
-  > Si ve un mensaje que indica "no se admite la actualización de la suscripción con licencias basadas en grupos en Azure Active Directory", puede omitirlo sin problemas a menos que tenga una organización muy grande. Las organizaciones que hayan seleccionado esta opción sabrán que están usando licencias basadas en grupos.
+  > Si ve un mensaje que indica que **la actualización de la suscripción no es compatible con las licencias basadas en grupos de Azure Active Directory**, puede omitirlo sin problemas a menos que tenga una organización muy grande. Las organizaciones que hayan seleccionado esta opción sabrán que están usando licencias basadas en grupos.
 
 4. A continuación, puede ver una lista de los planes de Office a los que puede actualizar. En este caso, busque el plan de negocio de Microsoft 365. Puede desplazarse hacia abajo si desea ver todas las aplicaciones y servicios de Office que se incluyen en este plan. En **microsoft 365 Business**, seleccione **Actualizar** para agregar un negocio de Microsoft 365 a su carro.
 5. En el carro:
-    1. Se incluirán automáticamente licencias para todos los usuarios actuales en el carro. Si necesita más o menos licencias, necesitará [comprar y asignar dichas licencias de forma individual](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
+    1. Se incluirán licencias de forma automática para todos los usuarios actuales. Si necesita más o menos licencias, debe [comprar y asignar estas licencias de forma individual](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
     2. Puede ajustar el modo en que desea pagar: mensual o anual. Seleccione el menú desplegable para elegir.
 6. Seleccione **ir a la retirada** para ver un resumen de la compra, incluido el método de pago de esta cuenta. También puede Agregar un código de promoción aquí si tiene uno.
 7. Seleccione **realizar pedido** para completar la compra.
@@ -72,7 +72,7 @@ Necesita Microsoft unos minutos para configurar los nuevos planes de servicio. P
   
 ## <a name="protect-user-devices-and-files"></a>Proteger los archivos y dispositivos de usuario
 
-Ahora que se han asignado las licencias de Microsoft 365 Business, siga los pasos para empezar a proteger dispositivos y archivos. Utilizará algunas nuevas opciones incluidas en el panel de navegación del centro de administración.
+Ahora que se han asignado las licencias de Microsoft 365 Business, siga los pasos para empezar a proteger dispositivos y archivos. Usar? algunas nuevas opciones incluidas en el panel de navegación del centro de administración.
   
 1. En el panel de navegación del centro de administración, vaya a **** \> **directivas**de dispositivos.
     
@@ -96,6 +96,3 @@ Ahora que se han asignado las licencias de Microsoft 365 Business, siga los paso
   - Consulte [configurar dispositivos Windows para usuarios de Microsoft 365 Business](set-up-windows-devices.md) para conocer los pasos para dispositivos Windows. 
     
   - Consulte [configurar dispositivos móviles para los usuarios de Microsoft 365 Business](set-up-mobile-devices.md) para conocer los pasos para Android Phones y iPhone. 
-
-
-

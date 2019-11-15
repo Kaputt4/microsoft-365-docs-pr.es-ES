@@ -12,23 +12,23 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del entorno de pruebas para habilitar la configuración adicional de seguridad de Microsoft 365 su entorno de prueba empresarial de Microsoft 365.
-ms.openlocfilehash: d51f9ada68969823eadbb4fad55392358a6ddee8
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f430acb4a7fd1842a4ae26025ad5a63cccf8392f
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072140"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640372"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Aumentó la seguridad de Microsoft 365 para su entorno de prueba empresarial de Microsoft 365
 
 Con las instrucciones de este artículo, se configuran opciones adicionales de configuración de Microsoft 365 para aumentar la seguridad en el entorno de pruebas de Microsoft 365 Enterprise.
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
 
 Si solo quiere configurar la seguridad mejorada de Microsoft 365 de forma ligera con los requisitos mínimos, siga las instrucciones de la [configuración básica](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -63,7 +63,7 @@ Office 365 Advanced Threat Protection (ATP) para SharePoint, OneDrive y Microsof
 
 1. Vaya al [centro de cumplimiento de & de seguridad de Office 365](https://protection.office.com) e inicie sesión con su cuenta de administrador global.
 
-2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **Directiva _GT_ datos adjuntos seguros**. 
+2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **Directiva > datos adjuntos seguros**. 
 
 3. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
 
@@ -74,7 +74,7 @@ Office 365 Advanced Threat Protection (ATP) para SharePoint, OneDrive y Microsof
 
 El malware se compone de virus y spyware. Los virus infectan otros programas y datos, y se propagan en todo el equipo en busca de programas que infectar. El spyware se refiere a malware que recopila información de carácter personal, como información de inicio de sesión y datos de carácter personal, y la envía al autor del malware. 
 
-Office 365 tiene capacidades integradas de filtrado de correo no deseado y malware que ayudan a proteger los mensajes entrantes y salientes de software malintencionado y ayudan a protegerse del correo no deseado. Para obtener más información, consulte [anti-spam & Anti-Malware Protection in Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
+Office 365 tiene capacidades integradas de filtrado de correo no deseado y malware que ayudan a proteger los mensajes entrantes y salientes de software malintencionado y ayudan a protegerse del correo no deseado. Para obtener más información, consulte [protección antimalware & contra el correo no deseado en Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
 
 Para asegurarse de que el procesamiento antimalware se realice en archivos con tipos de archivos adjuntos comunes:
 
@@ -82,7 +82,7 @@ Para asegurarse de que el procesamiento antimalware se realice en archivos con t
 2. Haga clic en **anti-malware**.
 3. Haga doble clic en la Directiva denominada **default**.
 4. En la ventana **Directiva contra malware** , haga clic en **configuración**.
-4. En el **filtro tipos comunes de datos**adjuntos, haga clic **en > guardar**.
+4. En **filtro de tipos de datos adjuntos comunes**, haga clic **en > guardar**.
 
 
 ## <a name="phase-3-examine-the-threat-management-dashboard"></a>Fase 3: examinar el panel de administración de amenazas
@@ -101,7 +101,7 @@ Office 365 Cloud App Security, previously known as Office 365 Advanced Security 
 !-->
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Consulte el paso [configurar mayor seguridad para Microsoft 365](infoprotect-configure-increased-security-office-365.md) en la fase de protección de la **información** para obtener información y vínculos para configurar estas opciones en producción.
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c507db0d2867b006772f5aca83d8b5342e55113d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031155"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627434"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: administración de dispositivos móviles para Microsoft 365 Enterprise
 
@@ -62,7 +62,7 @@ Este paso se centra en la configuración de Intune y en su preparación para que
 
 3. **[Inicie sesión en Intune](https://docs.microsoft.com/intune/account-sign-up)**. Al iniciar sesión, es posible que se le pida que escriba la información sobre su organización. Intune se incluye con Microsoft 365 y se puede abrir directamente desde el [centro de administración de microsoft 365](https://admin.microsoft.com). También puede abrir Intune directamente desde [Azure portal](https://portal.azure.com).
 
-4. **[Elija la configuración de administración de dispositivos móviles](https://docs.microsoft.com/intune/mdm-authority-set)**. La primera vez que use Intune, debe habilitar la administración de dispositivos. Intune se puede usar como un servicio solo de nube, un híbrido con Intune y el administrador de configuración de System Center, o mediante la administración de dispositivos móviles para Office 365. Puede elegir el programa de instalación que mejor se adapte a su organización.
+4. **[Elija la configuración de administración de dispositivos móviles](https://docs.microsoft.com/intune/mdm-authority-set)**. La primera vez que use Intune, debe habilitar la administración de dispositivos. Intune se puede usar como un servicio solo de nube, un híbrido con Intune y el administrador de configuración de Microsoft Endpoint, o mediante la administración de dispositivos móviles para Office 365. Puede elegir el programa de instalación que mejor se adapte a su organización.
 
 5. **[Agregar usuarios](https://docs.microsoft.com/intune/users-add)** y **[agregar grupos](https://docs.microsoft.com/intune/groups-add)**. 
 
@@ -82,7 +82,7 @@ La inscripción es un paso clave al usar Intune. [Inscribir dispositivos](https:
 
 |||
 |:-------|:-----|
-|![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: inscripción de dispositivos iOS y Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Guías del entorno de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: inscripción de dispositivos iOS y Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -100,7 +100,7 @@ El artículo [Add apps](https://docs.microsoft.com/intune/apps/apps-add) enumera
 
 |||
 |:-------|:-----|
-|![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: directivas de cumplimiento de dispositivos](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guías del entorno de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: directivas de cumplimiento de dispositivos](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Paso 6: activar el cumplimiento y el acceso condicional

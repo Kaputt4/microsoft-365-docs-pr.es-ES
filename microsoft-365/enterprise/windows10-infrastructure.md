@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: d704f6392f5f0510478073299fcfe60569560105
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3cdb5fd6644d76a843e109ff53f73eb9ec4638f8
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033645"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627544"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
@@ -39,7 +39,7 @@ Hay varias formas en las que puede implementar Windows 10 Enterprise en su organ
 
 | Escenario de implementación | Cuándo usarlo |
 |:--- |:--- |
-| [Uso de System Center Configuration Manager como actualización local](windows10-deploy-inplaceupgrade.md) | Seleccione esta opción si necesita actualizar equipos con Windows 7 o Windows 8,1 a la <a href="https://aka.ms/windows-10-release-information" target="_blank">versión actual</a> de Windows 10 Enterprise y los equipos están administrados actualmente con <a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (rama actual)</a>. |
+| [Uso de Microsoft Endpoint Configuration Manager como actualización local](windows10-deploy-inplaceupgrade.md) | Seleccione esta opción si necesita actualizar equipos con Windows 7 o Windows 8,1 a la <a href="https://aka.ms/windows-10-release-information" target="_blank">versión actual</a> de Windows 10 Enterprise y los equipos están administrados actualmente con <a href="https://aka.ms/introtosccm" target="_blank">Configuration Manager (rama actual)</a>. |
 | [Uso de Windows AutoPilot](windows10-deploy-autopilot.md) | Seleccione esta opción si va a configurar nuevos equipos con Windows que tienen instalado Windows 10 Enterprise, versión 1703 o posterior. Los usuarios finales iniciarán la instalación con la configuración deseada; para ello, escriba sus credenciales de cuenta profesional o educativa. |
 
 Si estos escenarios de implementación no se ajustan a las necesidades de su organización, puede obtener información sobre otros escenarios y comprender las capacidades y limitaciones de cada uno de los [escenarios de implementación de Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). También puede <a href="https://aka.ms/planforwin10deployment" target="_blank">planear la implementación de Windows 10</a> por su cuenta.

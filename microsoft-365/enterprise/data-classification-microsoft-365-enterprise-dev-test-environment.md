@@ -12,23 +12,23 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del laboratorio de pruebas para crear y usar las etiquetas de retención de Office 365 en documentos de su entorno de prueba empresarial de Microsoft 365.
-ms.openlocfilehash: 66e06f9a89b102c131bc29af17c4564fabbab9b4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 1bcd3ab2d8069ad85d48ecf682d3b7d49e7cf739
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072420"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639790"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Clasificación de datos para su entorno de prueba de Microsoft 365 Enterprise
 
 Con las instrucciones de este artículo, podrá configurar la clasificación de datos con las etiquetas de retención de Office 365 en su entorno de prueba empresarial de Microsoft 365.
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
 
 Si solo quiere configurar las etiquetas de retención de Office 365 de manera ligera con los requisitos mínimos, siga las instrucciones de [configuración básica](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -99,15 +99,15 @@ En primer lugar, cree un sitio de grupo de SharePoint Online de nivel confidenci
     
 6. En **Descripción del sitio de grupo**, escriba **sitio de SharePoint para archivos confidenciales**.
     
-7.  En **Configuración de privacidad**, seleccione **Private - only members can access this site** (Privado: solo los miembros tienen acceso a este sitio) y haga clic en **Siguiente**.
+7.  En **Configuración de privacidad**, seleccione **Privado: solo los miembros pueden obtener acceso a este sitio** y, después, haga clic en **Siguiente**.
     
-8. En el panel **Who do you want to add?** (Usuarios que quiere agregar), haga clic en **Finalizar**.
+8. En el panel **Usuarios que quiere agregar**, haga clic en **Finalizar**.
     
 A continuación, configure la carpeta documentos del sitio de grupo de SensitiveFiles para la etiqueta retención confidencial.
   
 1. En la pestaña **SensitiveFiles** del explorador, haga clic en **documentos**.
     
-2. Haga clic en el icono de configuración y luego en **Configuración de biblioteca**.
+2. Haga clic en el icono de configuración y, después, en **Configuración de la biblioteca**.
     
 3. En **Permisos y administración**, haga clic en **Apply label to items in this library** (Aplicar la etiqueta a los elementos de esta biblioteca).
     
@@ -115,11 +115,11 @@ A continuación, configure la carpeta documentos del sitio de grupo de Sensitive
 
 A continuación, cree un nuevo documento en el sitio de SensitiveFiles y cambie su etiqueta de retención.
     
-1. En la carpeta documentos, haga clic en **nuevo documento de Word >**.
+1. En la carpeta documentos, haga clic en **nuevo > documento de Word**.
     
 2. Escriba texto en el documento en blanco. Espere a que se guarde el texto.
     
-3. En la barra de menús, haga clic en **documentos**compartidos.
+3. En la barra de menús, haga clic en **documentos compartidos**.
     
 4. Haga clic en el icono de Word junto al nombre del archivo **Document. docx** .
     
@@ -131,7 +131,7 @@ A continuación, cree un nuevo documento en el sitio de SensitiveFiles y cambie 
 
 Consulte el paso [configurar la clasificación del entorno](infoprotect-configure-classification.md) en la fase de protección de la **información** para obtener información y vínculos sobre cómo implementar las etiquetas de retención de Office 365 en producción.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 

@@ -12,23 +12,23 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del laboratorio de pruebas para agregar directivas de cumplimiento de dispositivos de Intune a su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: eb140844eba4bc5cf5eba7fe452345f251ced0ff
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: dbe0592dfcac7090da194c85db8e788e8e64a0e7
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072120"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639810"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Directivas de cumplimiento de dispositivos para el entorno de prueba de Microsoft 365 Enterprise
 
 Con las instrucciones de este artículo, agregará una directiva de cumplimiento de dispositivos de Intune a su entorno de prueba de Microsoft 365 Enterprise.
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](https://aka.ms/m365etlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
 
 Si solo quiere configurar directivas de MAM de manera ligera con los requisitos mínimos, siga las instrucciones de la [configuración básica ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -46,15 +46,15 @@ En esta fase, creará una directiva de cumplimiento de dispositivos para disposi
     
 2. En una pestaña nueva del explorador, abra Azure portal en [https://portal.azure.com](https://portal.azure.com).
 
-3. En la pestaña Azure portal del explorador, en el panel de navegación, haga clic en **todos los servicios**, escriba Intune y, a continuación, haga clic en **** Intune. ****
+3. En la pestaña Azure portal del explorador, en el panel de navegación, haga clic en **todos los servicios**, escriba **Intune**y, a continuación, haga clic en **Intune**.
     
-4. Si ve un mensaje **que indica que no ha habilitado la administración de dispositivos todavía** en la hoja de **Microsoft Intune** , haga clic en él. En la hoja **entidad de administración de dispositivos móviles** , haga clic en Intune **MDM**y, a continuación, haga clic en **elegir**. Actualice la pestaña del explorador.
+4. Si ve un mensaje **que indica que no ha habilitado la administración de dispositivos todavía** en la hoja de **Microsoft Intune** , haga clic en él. En la hoja **entidad de administración de dispositivos móviles** , haga clic en **Intune MDM**y, a continuación, haga clic en **elegir**. Actualice la pestaña del explorador.
     
 5. En el panel izquierdo de navegación, haga clic en **Grupos**.
     
 6. En la hoja **grupos-todos los grupos** , haga clic en **+ nuevo grupo**.
     
-7. En la hoja **Grupo** , seleccione **Office 365** o **seguridad** para **tipo de grupo**, escriba **usuarios de dispositivos Windows 10 administrados** en **nombre**, seleccione **asignado** en tipo de pertenencia y, a continuación, haga clic en **crear**. **** 
+7. En la hoja **Grupo** , seleccione **Office 365** o **seguridad** para **tipo de grupo**, escriba **usuarios de dispositivos Windows 10 administrados** en **nombre**, seleccione **asignado** en **tipo de pertenencia**y, a continuación, haga clic en **crear**. 
     
 8. Cierre la hoja **Grupo**.
     
@@ -92,11 +92,11 @@ En esta fase, creará una directiva de cumplimiento de dispositivos para disposi
 
 Ahora tiene una directiva de cumplimiento de dispositivos para probar las aplicaciones seleccionadas en la Directiva de cumplimiento de dispositivos de **Windows 10** y para los miembros del grupo de **usuarios de dispositivos de Windows 10 administrados** . Tenga en cuenta que, al seleccionar Office 365 como tipo de grupo, se crearán recursos adicionales. 
   
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Explore otras características y funciones de [Administración de dispositivos móviles](m365-enterprise-test-lab-guides.md#mobile-device-management) en su entorno de prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Guías del laboratorio de pruebas de Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md).
   

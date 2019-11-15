@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa de Microsoft 365 Business a Microsoft 365 Enterprise E3.
-ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 77760aa8ea5b79f39d4c069d86e79a3cec6844e9
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931858"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640789"
 ---
-# <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Migrar de Microsoft 365 empresa a Microsoft 365 Enterprise E3
+# <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Migrar de Microsoft 365 Empresa a Microsoft 365 Enterprise E3
 
 Microsoft 365 Business tiene todo lo que necesita para su pequeña empresa, ya que combina las mejores aplicaciones de productividad basadas en la nube con la administración de dispositivos sencilla y la seguridad que les permite a sus empleados realizar el mejor trabajo posible. Sin embargo, en algunos casos, es posible que tenga que migrar su suscripción de Microsoft 365 empresa a Microsoft 365 Enterprise. 
 
@@ -34,7 +34,7 @@ Por ejemplo, su empresa ha crecido y necesita más de 300 licencias (Enhorabuena
 
 O bien, su empresa necesita características empresariales, como Office 365 ProPlus, Windows 10 Enterprise E3 o licencias de acceso de cliente (cal) de empresa.
 
-La actualización es sencilla: puede iniciar la actualización [desde el centro de administración](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). Se mantienen todos los datos y la configuración de la suscripción actual. No hay nada que hacer para prepararse para la migración ni para nada después, a menos que aproveche las ventajas de las nuevas características. 
+La actualización es sencilla: puede iniciar la actualización [desde el centro de administración](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). Se mantienen todos los datos y la configuración de la suscripción actual. No hay nada que hacer para prepararse para la migración, ni nada más hacerlo, a menos que se beneficie de las nuevas características. 
 
 >[!Note]
 >También puede usar una suscripción de Microsoft 365 empresa para un máximo de 300 puestos y obtener una suscripción a Microsoft 365 Enterprise E3 para más de 300 plazas. Sin embargo, Office 365 ATP no se incluye con Microsoft 365 Enterprise E3. Para la protección contra amenazas continuas, debe agregar licencias de ATP de Office 365 adicionales para que todos los usuarios en el ámbito de las directivas de ATP de Office 365 tengan una licencia.
@@ -47,7 +47,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business y Microso
 | Característica   | Soporte en Microsoft 365 Business | Soporte técnico de Microsoft 365 Enterprise E3 | 
 |:-------|:-----|:-----|
 | **Local**       | | | 
-| Windows 10    | Windows 10 Empresa  |    Windows 10 Enterprise E3| 
+| Windows 10    | Windows 10 Empresa  |    Windows 10 Enterprise E3| 
 | Aplicaciones de Office *  | [Office 365 Empresa](#office-365-business)   | Office 365 ProPlus | 
 | **Aplicaciones de productividad en la nube**       | | | 
 | Exchange Online y Outlook   | límite de almacenamiento de 50 GB por buzón y archivado ilimitado de Exchange Online   | límite de almacenamiento de 100 GB por buzón y archivado ilimitado de Exchange Online | 
@@ -87,7 +87,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business y Microso
 
 ## <a name="migration"></a>Migración
 
-Para migrar, trabaje con su partner para transferir su suscripción y licencias de Microsoft 365 Business a una suscripción a Microsoft 365 Enterprise E3 adecuada con sus licencias.
+Para migrar, trabaje con su partner para transferir su suscripción y licencias de Microsoft 365 Business a una suscripción adecuada de Microsoft 365 Enterprise E3 con sus licencias.
 
 En las secciones siguientes se describen los cambios que debe realizar, si los hay, y qué puede hacer después de la migración.
 
@@ -132,14 +132,14 @@ Windows 10 Enterprise E3 también incluye administración empresarial del aislam
 
 ### <a name="device-management-with-intune"></a>Administración de dispositivos con Intune
 
-No es necesario realizar ningún cambio en la configuración actual de Intune antes de la migración, lo que incluye los dispositivos inscritos y la configuración de dispositivos y aplicaciones.
+No es necesario realizar ningún cambio en la configuración de Intune actual antes de la migración, lo que incluye los dispositivos inscritos y la configuración de dispositivos y aplicaciones.
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Microsoft 365 Business incluye Windows 10 Business, que puede instalar con Windows AutoPilot. Al migrar a Microsoft 365 Enterprise E3, cada licencia de usuario incluye Windows 10 Enterprise E3, que también puede instalar con Windows AutoPilot.
 
 <a name="office-365-business"></a>
-### <a name="office-365-business"></a>Office 365 Empresa
+### <a name="office-365-business"></a>Office 365 Empresa
 
 El cliente de Office 365 empresa instalado en los dispositivos comenzará a usar automáticamente las características de Office 365 ProPlus. Después de la migración, ahora puede usar:
 
