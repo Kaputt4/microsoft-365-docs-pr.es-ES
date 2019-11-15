@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso aprovecha la Identidad como servicio (IDaaS) y proporciona autenticación basada en la nube a sus empleados y autenticación federada a sus partners y clientes.
-ms.openlocfilehash: a61ce89c3d0069edffccc12a6ed2a4c578e6968a
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 81a1542edf82bbf773360af6b09e1f940f5fd061
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370257"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627366"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
@@ -75,9 +75,9 @@ Este es el conjunto resultante de directivas de acceso condicional a identidades
 
 ![Directivas de acceso condicional a identidades y dispositivos de Contoso](./media/contoso-identity/contoso-identity-fig5.png)
  
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
-[Obtenga información sobre](contoso-win10.md) cómo aprovecha Contoso su infraestructura de System Center Configuration Manager para implementar y mantener actualizado Windows 10 Enterprise en la organización.
+[Obtenga información acerca de](contoso-win10.md) cómo Contoso aprovecha su infraestructura de Microsoft Endpoint Configuration Manager para implementar y mantener Windows 10 Enterprise actual en su organización.
 
 ## <a name="see-also"></a>Vea también
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender Contoso Corporation como un negocio y la estructura en niveles de sus oficinas en todo el mundo.
-ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 429d74c66198c1b4a3dea735127a4fb569aa7bb0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369561"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627346"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Información general sobre Contoso Corporation
 
@@ -64,7 +64,7 @@ Los arquitectos de TI de Contoso identificaron las siguientes consideraciones y 
 
 - Varias ubicaciones geográficas con normativas y requisitos de cumplimiento locales
 - Un centro de datos de intranet en la sede central y servidores de aplicaciones regionales que hospedan aplicaciones internas de línea de negocio
-- Una infraestructura existente de System Center Configuration Manager
+- Una infraestructura existente de Microsoft Endpoint Configuration Manager
 - Una combinación de dispositivos informáticos cliente, incluidos dispositivos Windows, Mac y Linux
 - Una combinación de dispositivos móviles personales y dispositivos propiedad de la empresa, incluidos dispositivos iOS (iPhone y iPad) y smartphones y tabletas Android
 - Muchos trabajadores remotos y móviles
