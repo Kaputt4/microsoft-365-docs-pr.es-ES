@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumpla los criterios de Microsoft 365 Enterprise para la infraestructura y los servicios basados en identidades.
-ms.openlocfilehash: 84c2b97e064d3dba8a97767a31cc9fe7ccc6dd8c
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 94343400482083b2e793ff218816f06cb982187e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746526"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627396"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Fase 2: Criterios de salida de infraestructura de identidades
 
@@ -42,7 +42,7 @@ Si es necesario, el [Paso 1](identity-create-protect-global-admins.md#identity-g
 Siga estos pasos para comprobar que protegió las cuentas de administrador global:
 
 1. Ejecute el siguiente comando de Active Directory de Azure PowerShell para Graph en el símbolo de sistema de PowerShell: Solo debería ver la lista de cuentas de administrador global dedicadas.
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. Inicie sesión en Office 365 con cada una de las cuentas del paso 1. Cada inicio de sesión tiene que exigir la Azure Multi-Factor Authentication y el método más seguro de autenticación secundaria disponible en su organización.
