@@ -3,7 +3,7 @@ title: Investigación y respuesta de amenazas de Office 365
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/23/2019
+ms.date: 11/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra cómo las capacidades de inteligencia sobre amenazas de Office 365 Advanced Threat Protection pueden ayudarle a investigar amenazas contra su organización, responder a malware, phishing y otros ataques que Office 365 ha detectado en su nombre y buscar amenazas indicadores.
-ms.openlocfilehash: 749ddef383839043141027ace4a2d906932b7e91
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 047fb99a32fdd7e86572c5a96370f351da50f139
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031875"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673276"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Investigación y respuesta de amenazas de Office 365
 
@@ -32,13 +32,13 @@ Las capacidades de investigación y respuesta de amenazas de [Office 365 Advance
     
 - Proporciona información y conocimientos para ayudar a las operaciones de seguridad a evitar cyberattacks contra su organización
 
-- Uso de [investigación automatizada y respuesta](automated-investigation-response-office.md) para amenazas críticas basadas en correo electrónico
+- Uso de la [respuesta de incidente automatizada](automated-investigation-response-office.md) para amenazas críticas basadas en correo electrónico
     
 Las capacidades de investigación y respuesta de amenazas proporcionan información sobre amenazas y acciones de respuesta relacionadas que están disponibles en el centro &amp; de seguridad y cumplimiento de Office 365. Esta información puede ayudar a su equipo de seguridad de la organización a proteger a los usuarios de Office 365 de ataques basados en correo electrónico o archivos. Las capacidades ayudan a supervisar las señales y recopilan datos de varios orígenes, como la actividad de los usuarios, la autenticación, el correo electrónico, los equipos comprometidos y los incidentes de seguridad. Los responsables de la toma de decisiones empresariales y los administradores globales de Office 365, los administradores de seguridad y los analistas de seguridad pueden usar esta información para comprender y responder a las amenazas contra los usuarios de Office 365 y proteger la propiedad intelectual.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Familiarizarse con las herramientas de investigación y respuesta de amenazas
 
-La superficie de investigación y respuesta de amenazas en &amp; el centro de seguridad y cumplimiento, como un conjunto de herramientas y flujos de trabajo de respuesta, incluidos el [Panel de amenazas](#threat-dashboard), el [Explorador](#threat-explorer), los [incidentes](#incidents), el [simulador de ataque](#attack-simulator)y la [investigación automatizada & respuesta](automated-investigation-response-office.md).
+La superficie de investigación de amenazas y respuestas en &amp; el centro de seguridad y cumplimiento, como un conjunto de herramientas y flujos de trabajo de respuesta, incluidos el [Panel de amenazas](#threat-dashboard), el [Explorador](#threat-explorer), los [incidentes](#incidents), el [simulador de ataque](#attack-simulator)y la [respuesta de incidente automatizada](automated-investigation-response-office.md).
   
 ### <a name="threat-dashboard"></a>Panel de amenazas
 
@@ -46,7 +46,7 @@ Use el panel de amenazas (también se conoce como el [Panel de seguridad](securi
   
 ![Panel de amenazas](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
-Para ver y usar este panel, en el centro &amp; de seguridad y cumplimiento, vaya a **Threat Management** \> **Dashboard**.
+Para ver y usar este panel, en el centro de seguridad &amp; y cumplimiento de Office 365, vaya a **Panel**de **Administración** \> de amenazas.
 
 Para obtener más información sobre 
   
@@ -56,7 +56,7 @@ Use el [Explorador de amenazas (y las detecciones en tiempo real)](threat-explor
   
 ![Explorador de amenazas](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-Para ver y usar este informe, en el centro &amp; de seguridad y cumplimiento, vaya a **Threat Management** \> **Explorer**.
+Para ver y usar este informe, en el centro de seguridad &amp; y cumplimiento de Office 365, vaya a **Threat Management** \> **Explorer**.
   
 ### <a name="incidents"></a>Incidencia
 
@@ -74,7 +74,7 @@ Use el simulador de ataque para configurar y ejecutar cyberattacks realistas en 
 
 ### <a name="automated-investigation-and-response"></a>Investigación y respuesta automatizada
 
-Use las capacidades de investigación y respuesta automatizadas (AIR) para ahorrar tiempo y esfuerzo relacionando el contenido, los dispositivos y las personas con el riesgo de amenazas de la organización. Los procesos de aire pueden iniciarse siempre que se desencadenen determinados avisos o cuando el equipo de operaciones de seguridad lo inicie. Para obtener más información, vea [respuesta de incidente automatizada (Air) con Office 365](automated-investigation-response-office.md). 
+Use las capacidades de investigación y respuesta automatizadas (AIR) para ahorrar tiempo y esfuerzo relacionando el contenido, los dispositivos y las personas con el riesgo de amenazas de la organización. Los procesos de aire pueden iniciarse siempre que se desencadenen determinados avisos o cuando el equipo de operaciones de seguridad lo inicie. Para obtener más información, consulte [respuesta a incidentes automatizada en Office 365](automated-investigation-response-office.md). 
   
 ## <a name="threat-intelligence-widgets"></a>Widgets de inteligencia sobre amenazas
 
@@ -111,7 +111,7 @@ Las capacidades de investigación y respuesta de amenazas de Office 365 se inclu
    
 Para obtener información acerca de los roles, grupos de roles y permisos, consulte [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga información sobre los rastreadores de amenazas: nuevos y dignos](threat-trackers.md)
     

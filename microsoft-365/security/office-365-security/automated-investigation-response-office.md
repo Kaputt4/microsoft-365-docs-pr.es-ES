@@ -1,9 +1,9 @@
 ---
-title: Investigación y respuesta automatizadas (AIR) en Office 365
+title: Respuesta de incidente automatizada (AIR) en Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,28 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Obtenga información sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
+ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386207"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673406"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Investigación y respuesta automatizadas (AIR) en Office 365
+# <a name="automated-incident-response-air-in-office-365"></a>Respuesta de incidente automatizada (AIR) en Office 365
 
-Las capacidades de investigación y respuesta automatizadas (AIR) le permiten ejecutar procesos de investigación automatizada en respuesta a amenazas bien conocidas que existen actualmente. AIR puede ayudar al equipo de operaciones de seguridad a operar de manera más eficiente y efectiva.
+Las capacidades de respuesta de incidente automatizada (AIR) le permiten ejecutar procesos de investigación automatizada en respuesta a amenazas bien conocidas que existen actualmente. AIR puede ayudar al equipo de operaciones de seguridad a operar de manera más eficiente y efectiva.
 - Para obtener información general sobre cómo funciona AIR, use este artículo.
 - Para empezar a usar AIR, consulte [investigar y responder automáticamente a amenazas en Office 365](office-365-air.md).
 
 > [!NOTE]
 > Debe ser administrador global, administrador de seguridad, operador de seguridad o lector de seguridad para obtener acceso a las funciones de AIR. Para obtener más información acerca de estos permisos, consulte [Microsoft 365 Security Center: roles y permisos](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
-
-AIR se incluye en las siguientes suscripciones:
-- Microsoft 365 E5
-- Seguridad de Microsoft 365 E5
-- Office 365 E5
-- Plan 2 de protección contra amenazas avanzada de Office 365
 
 ## <a name="the-overall-flow-of-air"></a>Flujo general de aire
 
@@ -41,11 +35,11 @@ En un nivel alto, el flujo de aire funciona de la siguiente manera:
 
 |Fase  |Qué implica  |
 |---------|---------|
-|1      |Una [alerta](#alerts) que se desencadena y se inicia una [Guía de seguridad](#security-playbooks) .         |
-|2      |En función de la guía de alertas y seguridad en particular, la [investigación automática comienza inmediatamente](#example-a-user-reported-phish-message-launches-an-investigation-playbook). (Alternativamente, un analista de seguridad puede [iniciar una investigación automatizada manualmente](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), desde un valor en un informe como [Explorer](threat-explorer.md)).         |
-|3      |Mientras se ejecuta una investigación automatizada, su ámbito puede aumentar a medida que se desencadenan nuevas alertas relacionadas.         |
-|4      |Durante y después de una investigación automatizada, [los detalles y los resultados](#investigation-graph) están disponibles para su visualización. Los resultados incluyen [acciones recomendadas](#recommended-actions) que se pueden llevar a cabo para responder y corregir cualquier amenaza que se detectó. Además, hay disponible un registro de la [Guía](#playbook-log) que realiza un seguimiento de la actividad de la investigación.<br/>Si su organización usa una solución de informes personalizada o una solución de terceros, puede [usar la API de actividad de administración de Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) para ver información sobre las amenazas y las investigaciones automatizadas.         |
-|5      |El equipo de operaciones de seguridad revisa los resultados y las recomendaciones y aprueba acciones de corrección. En Office 365, las acciones de corrección solo se realizan tras la aprobación del equipo de seguridad de la organización.         |
+|1     |Una [alerta](#alerts) que se desencadena y se inicia una [Guía de seguridad](#security-playbooks) .         |
+|segundo     |En función de la guía de alertas y seguridad en particular, la [investigación automática comienza inmediatamente](#example-a-user-reported-phish-message-launches-an-investigation-playbook). (Alternativamente, un analista de seguridad puede [iniciar una investigación automatizada manualmente](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), desde un valor en un informe como [Explorer](threat-explorer.md)).         |
+|3     |Mientras se ejecuta una investigación automatizada, su ámbito puede aumentar a medida que se desencadenan nuevas alertas relacionadas.         |
+|4     |Durante y después de una investigación automatizada, [los detalles y los resultados](#investigation-graph) están disponibles para su visualización. Los resultados incluyen [acciones recomendadas](#recommended-actions) que se pueden llevar a cabo para responder y corregir cualquier amenaza que se detectó. Además, hay disponible un registro de la [Guía](#playbook-log) que realiza un seguimiento de la actividad de la investigación.<br/>Si su organización usa una solución de informes personalizada o una solución de terceros, puede [usar la API de actividad de administración de Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) para ver información sobre las amenazas y las investigaciones automatizadas.         |
+|2,5     |El equipo de operaciones de seguridad revisa los resultados y las recomendaciones y aprueba acciones de corrección. En Office 365, las acciones de corrección solo se realizan tras la aprobación del equipo de seguridad de la organización.         |
 
 En las secciones siguientes se proporcionan más detalles sobre el aire, incluidos detalles sobre las alertas, las guías de seguridad y los detalles de la investigación. Además, se incluyen dos ejemplos de cómo funciona AIR en este artículo. Para empezar a usar AIR, consulte [investigar y responder automáticamente a amenazas en Office 365](office-365-air.md).
 
@@ -72,7 +66,7 @@ En la versión inicial de AIR (a partir del 2019 de abril de 2007), las alertas 
 
 Para ver las alertas, en el centro de seguridad & cumplimiento, elija **alertas** > **Ver alertas**. Seleccione una alerta para ver sus detalles y, desde allí, use el vínculo **Ver investigación** para ir a la [investigación](#investigation-graph)correspondiente. Tenga en cuenta que las alertas informativas están ocultas en la vista de alertas de forma predeterminada. Para verlos, debe cambiar el filtrado de alertas para incluir alertas informativas.
 
-Si su organización administra sus alertas de seguridad a través de un sistema de administración de alertas, un sistema de administración de servicios o un sistema de administración de eventos e información de seguridad (SIEM), puede enviar alertas de Office 365 a ese sistema mediante una notificación por correo electrónico o mediante el [ API de actividad de administración 365 de Office](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Las notificaciones de alerta de investigación a través de correo electrónico o API incluyen vínculos para acceder a las alertas en el centro de seguridad & cumplimiento, lo que permite que el administrador de seguridad asignado navegue rápidamente a la investigación.
+Si su organización administra sus alertas de seguridad a través de un sistema de administración de alertas, un sistema de administración de servicios o un sistema de administración de eventos e información de seguridad (SIEM), puede enviar alertas de Office 365 a ese sistema mediante una notificación por correo electrónico o a través de la [API de actividad de administración de office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Las notificaciones de alerta de investigación a través de correo electrónico o API incluyen vínculos para acceder a las alertas en el centro de seguridad & cumplimiento, lo que permite que el administrador de seguridad asignado navegue rápidamente a la investigación.
 
 ![Alertas que vinculan a investigaciones](../media/air-alerts-page-details.png) 
 
@@ -118,18 +112,22 @@ Puede:
 - Exporte los datos a un archivo. csv.
 
 El estado de la investigación indica el progreso del análisis y las acciones. A medida que se ejecuta la investigación, el estado cambia para indicar si se han encontrado amenazas y si se han aprobado las acciones. 
-- **Iniciando**: la investigación se pone en cola para comenzar pronto
-- En **ejecución**: la investigación se ha iniciado y está llevando a cabo el análisis
-- **No se encontraron amenazas**: la investigación ha completado el análisis y no se han encontrado amenazas
-- **Finalizado por el sistema**: la investigación no se cerró y caducó después de 7 días
-- **Acción pendiente**: la investigación detectó amenazas con acciones recomendadas
-- **Amenazas encontradas**: la investigación detectó amenazas, pero las amenazas no tienen acciones disponibles en el aire
-- **Corregido**: la investigación ha finalizado y se ha corregido completamente (se han aprobado todas las acciones)
-- **Corregido parcialmente**: la investigación ha finalizado y algunas de las acciones recomendadas se han aprobado
-- **Finalizado por el usuario**: un administrador terminó la investigación
-- **Error**: se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en amenazas
-- **Puesta en cola por límite**: la investigación está esperando el análisis debido a las limitaciones del procesamiento del sistema (para proteger el rendimiento del servicio)
-- **Finalizada por limitación**: la investigación no se pudo completar en el tiempo suficiente debido a las limitaciones de procesamiento del sistema y el volumen de investigación. Puede volver a desencadenar la investigación seleccionando el correo electrónico en el explorador y seleccionando la acción investigar.
+
+
+|Estado  |Qué significa  |
+|---------|---------|
+|Iniciando | La investigación se pone en cola para comenzar pronto |
+|En funcionamiento | La investigación se ha iniciado y está llevando a cabo el análisis. |
+|No se encontraron amenazas | La investigación ha completado el análisis y no se han encontrado amenazas |
+|Finalizado por el sistema | La investigación no se cerró y caducó después de 7 días |
+|Acción pendiente | La investigación detectó amenazas con acciones recomendadas |
+|Amenazas encontradas | La investigación detectó amenazas, pero las amenazas no tienen acciones disponibles en el aire |
+|Corregido | La investigación ha finalizado y se ha corregido completamente (se han aprobado todas las acciones) |
+|Parcialmente remediado | La investigación ha finalizado y algunas de las acciones recomendadas se han aprobado |
+|Finalizado por el usuario | Un administrador terminó la investigación. |
+|Failed | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
+|En cola por limitación | La investigación está esperando el análisis debido a las limitaciones del procesamiento del sistema (para proteger el rendimiento del servicio) |
+|Terminado con la limitación | La investigación no se pudo completar en el tiempo suficiente debido a las limitaciones de procesamiento del sistema y el volumen de investigación. Puede volver a desencadenar la investigación seleccionando el correo electrónico en el explorador y seleccionando la acción investigar. |
 
 ### <a name="investigation-graph"></a>Gráfico de investigación
 
@@ -189,7 +187,8 @@ Puede:
 
 ![Correo electrónico de investigación de aire con detalles de control flotante](../media/air-investigationemailpageflyoutdetails.png)
 
-* Nota: en el contexto del correo electrónico, es posible que vea una superficie de amenaza con anomalías de volumen como parte de la investigación. Una anomalía de volumen indica un pico en mensajes de correo electrónico similares en torno a la hora del evento de investigación en comparación con los plazos anteriores. Este pico en el tráfico de correo electrónico con características similares (por ejemplo, el asunto y el dominio del remitente, la similitud de cuerpo y la IP del remitente) es el principio del inicio de las campañas de correo electrónico o de los ataques. Sin embargo, las campañas de correo electrónico masivos, de correo no deseado y legítimas suelen compartir estas características. Las anomalías de volumen representan una amenaza potencial y, en consecuencia, podrían ser menos graves en comparación con amenazas de malware o phish identificadas mediante motores antivirus, detonación o reputación malintencionada.
+> [!NOTE]
+> En el contexto del correo electrónico, es posible que vea una superficie de amenaza con anomalías de volumen como parte de la investigación. Una anomalía de volumen indica un pico en mensajes de correo electrónico similares en torno a la hora del evento de investigación en comparación con los plazos anteriores. Este pico en el tráfico de correo electrónico con características similares (por ejemplo, el asunto y el dominio del remitente, la similitud de cuerpo y la IP del remitente) es el principio del inicio de las campañas de correo electrónico o de los ataques. Sin embargo, las campañas de correo electrónico masivos, de correo no deseado y legítimas suelen compartir estas características. Las anomalías de volumen representan una amenaza potencial y, en consecuencia, podrían ser menos graves en comparación con amenazas de malware o phish identificadas mediante motores antivirus, detonación o reputación malintencionada.
 
 ### <a name="user-investigation"></a>Investigación del usuario
 
@@ -299,21 +298,22 @@ De forma similar a las guías activadas por una alerta, las investigaciones auto
 
 ## <a name="how-to-get-air"></a>Cómo obtener aire
 
-Office 365 AIR se incluyen en las siguientes suscripciones:
+Office 365 AIR está incluido en las siguientes suscripciones:
 
-- Microsoft 365 Enterprise E5
-- Office 365 Enterprise E5
+- Microsoft 365 E5
+- Office 365 E5
 - Protección contra amenazas de Microsoft
-- Plan 2 de protección contra amenazas avanzada de Office 365
+- Protección contra amenazas avanzada de Office 365 (plan 2)
 
 Si no tiene ninguna de estas suscripciones, [inicie una prueba gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
 
 Para obtener más información acerca de la disponibilidad de características, visite la [característica disponibilidad en los planes de protección contra amenazas avanzada (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Introducción al uso de AIR en Office 365](office-365-air.md)
 
 [Obtener información sobre AIR en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
 
 [Visite el plan de desarrollo de Microsoft 365 para ver lo que estará próximamente y que se implementará](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtener ayuda para aumentar el nivel de protección en Microsoft 365 Business
-ms.openlocfilehash: f7ae2516403613667401e622f93939cfce63e617
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 9b17af7f6dde321fb8da758f0cc8223e5f488121
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029074"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676108"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -77,9 +77,9 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la siguiente tabla para la regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
-6. Haga clic en **Guardar**.
+6. Haga clic en **Guardar **.
     
-|**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
+|**Setting**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla antiransomware: advertir a los usuarios  <br/>  |
 |Aplicar esta regla si. . .  <br/> |Los datos adjuntos. . . coincidencias de extensión de archivo. . .  <br/> |
@@ -111,9 +111,9 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
     
 5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
-6. Haga clic en **Guardar**.
+6. Haga clic en **Guardar **.
     
-|**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
+|**Setting**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
 |Nombre  <br/> |Impedir el reenvío automático de correo electrónico a dominios externos  <br/> |
 |Aplicar esta regla si...  <br/> |El remitente. . . es externo/interno. . . Dentro de la organización  <br/> |
@@ -139,7 +139,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
     
 4. En la página **contra la suplantación de identidad** , seleccione **+ crear**. Se inicia un asistente que le guía por el proceso de definición de la Directiva antiphishing.
     
-5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, consulte [información sobre las opciones de directiva de antiphishing de ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) . 
+5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, consulte [información sobre las opciones de directiva de antiphishing de ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) . 
     
 6. Una vez que haya revisado la configuración, elija **crear esta directiva** o **Guardar**, según corresponda.
     
@@ -155,7 +155,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
 |Agregar dominios y remitentes de confianza  <br/> |Aquí puede agregar sus propios dominios o cualquier otro dominio de confianza.  <br/> |
 |Aplicado a  <br/> |Seleccione **el dominio del destinatario es**. En **cualquiera de estos**, seleccione **elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, *contoso.<span> com <span>*, en la lista y, a continuación, seleccione **Agregar**. Seleccione **listo**.  <br/> |
    
-Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Protección contra datos adjuntos malintencionados, archivos y vínculos con protección contra amenazas avanzada (ATP)
 
@@ -208,7 +208,7 @@ Para crear una directiva de datos adjuntos seguros de ATP, vea [este breve víde
 |Redirigir datos adjuntos en detección  <br/> |Habilitar redirección (Seleccione esta casilla) escriba la cuenta de administrador o una configuración de buzón para la cuarentena.          Aplique la selección anterior si se produce un error de análisis de malware para datos adjuntos de tiempo de espera o error (Active esta casilla).  <br/> |
 |Aplicado a  <br/> |El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
    
-Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ### <a name="set-up-atp-safe-links-in-the-security--compliance-center"></a>Configurar vínculos seguros ATP en el centro de seguridad & cumplimiento
 
@@ -234,7 +234,7 @@ Para modificar la directiva predeterminada:
     
 2. En **configuración que se aplica al contenido excepto el correo electrónico**, seleccione **Office 365 ProPlus, Office para iOS y Android**.
     
-3. Haga clic en **Guardar**. 
+3. Haga clic en **Guardar **. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -242,7 +242,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Haga clic en **Guardar**. 
+3. Haga clic en **Guardar **. 
 
 |**Configuración u opción**|**Configuración recomendada** <br/>|
 |:-----|:-----|

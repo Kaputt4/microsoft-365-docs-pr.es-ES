@@ -13,14 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure Azure AD Identity Protection y analice las cuentas actuales en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: a21b20f4ca774ad38990e44abc18d666426e74d5
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: bc98ebbdd45e06481e2d95687fb4eb8c986533a3
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640409"
+ms.locfileid: "38673246"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identity Protection para su entorno de prueba de Microsoft 365 Enterprise
+
+*Esta guía del entorno de pruebas solo puede usarse en entornos de prueba de Microsoft 365 Enterprise.*
 
 Azure AD Identity Protection le permite detectar posibles vulnerabilidades que afectan a las identidades de su organización, configurar respuestas automáticas e investigar incidentes. En este artículo se describe cómo habilitar la protección de identidad de Azure AD y ver el análisis de las cuentas del entorno de prueba.
 
@@ -29,7 +31,7 @@ Hay dos fases para la configuración de Azure AD Identity Protection en su entor
 1. Crear el entorno de pruebas de Microsoft 365 Enterprise.
 2. Habilite y use Azure AD Identity Protection.
 
-![Guías del laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías del entorno de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Haga clic [aquí](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.

@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador y las detecciones en tiempo real &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 01985c69d1d89536d16b166eafc23df37ee53d0a
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: e3f205a75c30397382b63112df4503f7a1d23582
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639899"
+ms.locfileid: "38673286"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -81,11 +81,15 @@ La **escala de tiempo de correo electrónico** es otra nueva característica de 
 Para obtener más información acerca de la investigación de correos electrónicos malintencionados [, vea Find and Investigate Malicious email Delivered in Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 
-Además, ahora podrá **exportar informes** a Microsoft Excel para ver su identificador de mensaje de red y su veredicto de clics, lo que simplifica la tarea de comprender dónde se originó el tráfico. Así es cómo funciona. A partir de la administración de amenazas en el inicio rápido de Office 365, haga clic en esta cadena:
+Además, ahora podrá **exportar informes para los clics de direcciones URL** a Microsoft Excel para ver tanto el identificador de mensaje de red como el veredicto de clic, lo que hace que la tarea de comprender dónde se ha originado el tráfico en la dirección URL sea más fácil. Así es cómo funciona. A partir de la administración de amenazas en el inicio rápido de Office 365, haga clic en esta cadena:
 
-**Explorador > ver phish > hace clic en > direcciones URL principales**
+**Explorer > ver el phish > hace clic en > direcciones URL principales o en los clics superiores > clic en cualquier registro para abrir el control flotante de dirección URL**
 
 Al hacer clic en una dirección URL de la lista, verá un nuevo botón exportar en el panel desplegable. Use este botón para mover datos a una hoja de cálculo de Excel para facilitar la creación de informes.
+
+Puede acceder a la misma ubicación en detecciones en tiempo real de la siguiente manera:
+
+**Explorer > detecciones en tiempo real > ver phish > URL > direcciones URL principales o clics principales > haga clic en cualquier registro para abrir el control flotante de dirección URL > vaya a la pestaña clics.**
 
 > [!TIP]
 > IDENTIFICADOR de mensaje de red asigna el clic de nuevo a correos específicos cuando se realiza la búsqueda en el explorador o en las herramientas de terceros asociadas mediante el identificador de mensaje de red. La búsqueda en el identificador de mensaje de red dará a los administradores el correo electrónico específico asociado con un resultado de clic. En la exportación, la identificación de la identificación del mensaje de red facilita un análisis más rápido y eficaz.

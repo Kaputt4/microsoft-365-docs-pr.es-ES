@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Introducción al uso de las capacidades de respuesta a incidentes automatizada en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 293b567cf24e9c6b0e33e28e9dd1ca0453fd0cd1
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 13f7e95829b8cf3adf17a40cf7b02c5322b15ea7
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37385737"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673426"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Investigar y responder automáticamente ante amenazas en Office 365
 
@@ -37,13 +37,15 @@ Con AIR, cuando se desencadenan determinadas alertas, se inician una o más guí
 - [Ver los detalles de una alerta relacionada con una investigación](#view-details-about-an-alert-related-to-an-investigation)
 
 > [!NOTE]
-> Debe ser administrador global, administrador de seguridad, operador de seguridad o lector de seguridad para realizar las tareas descritas en este artículo. Para obtener más información, consulte [Microsoft 365 Security Center: roles y permisos](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> Debe tener los permisos adecuados para realizar las tareas descritas en este artículo. Por ejemplo, Myst ser un administrador global, un administrador de seguridad, un operador de seguridad o un lector de seguridad. [Obtenga más información sobre los roles y permisos de Microsoft 365 Security Center](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 AIR se incluye en las siguientes suscripciones:
 - Microsoft 365 E5
 - Seguridad de Microsoft 365 E5
 - Office 365 E5
-- Plan 2 de protección contra amenazas avanzada de Office 365
+- Protección contra amenazas avanzada de Office 365 (plan 2)
+
+Si no tiene una de estas suscripciones, [inicie una prueba gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="view-details-of-an-investigation"></a>Ver los detalles de una investigación
 
@@ -116,7 +118,7 @@ Use los siguientes recursos para configurar esto:
 |[Referencia de las API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)     |Puede usar la API de actividad de administración de Office 365 para recuperar información sobre las acciones y eventos de usuario, administrador, sistema y Directiva de los registros de actividad de Office 365 y Azure AD. Lea este artículo para obtener más información sobre cómo funciona.        |
 |[Esquema de la API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)     |Obtenga información general sobre el [esquema común](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) y el [esquema de investigación y respuesta de ATP y la investigación de amenazas de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) para obtener información sobre los tipos de datos específicos disponibles a través de la API de actividad de administración de Office 365.         |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Más información acerca de las alertas](../../compliance/alert-policies.md)
 

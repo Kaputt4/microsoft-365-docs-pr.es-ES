@@ -13,17 +13,15 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso implementó un sitio de SharePoint para datos altamente regulados para una colaboración más sencilla entre sus equipos de investigación.'
-ms.openlocfilehash: 08676f9fa89d9cbf932f9d70664ad1d17a153e3b
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: ce813407c0f4c6f7b68aa997bf5e54b86a24ff2d
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617258"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672716"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sitio de SharePoint para activos digitales altamente confidenciales de Contoso Corporation
 
- **Resumen:** Cómo contoso implementó un sitio de SharePoint para datos altamente regulados para una colaboración más sencilla entre sus equipos de investigación.
-  
 Los activos más valiosos de Contoso son su propiedad intelectual en forma de secretos comerciales, como técnicas de fabricación patentadas, así como especificaciones de diseño para productos que están en desarrollo. Estos activos estaban en formato digital, que se almacenaban originalmente como archivos en un sitio de SharePoint Server 2016. Cuando contoso implementó Microsoft 365 Enterprise, quería realizar la transición de sus activos digitales locales a la nube para facilitar el acceso y aumentar la colaboración entre los equipos de investigación de París, Moscú, Nueva York, Beijing y Bangalore. 
   
 Sin embargo, debido a su carácter confidencial, el acceso a estos archivos debe ser:
@@ -98,7 +96,7 @@ El resultado final es un entorno seguro en el que los investigadores pueden cola
 
 Si un documento de investigación de la subetiqueta **equipos de investigación** abandona el sitio de **investigación** , sólo se cifra y es accesible para los miembros del grupo de Office 365 **Research** con credenciales de cuenta de usuario válidas.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 [Implementar](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise en su organización.
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración predeterminada y otras opciones disponibles en Microsoft 365 Business para proteger los dispositivos Windows 10.
-ms.openlocfilehash: ab306e3d5a6011a0e7d537c98ecca6ef49ff82d9
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5d4bce02df1276dc9b284c7b0709c7dc26b0dbce
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575766"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676056"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Establecer la configuración de protección de dispositivos para equipos con Windows 10
 
@@ -64,9 +64,9 @@ Para obtener más información, vea [Asignar características de protección de 
 |Valor  <br/> |Descripción  <br/> |
 |Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  <br/> |Es necesario que el antivirus Windows Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
-|Usar reglas que reducen la superficie expuesta a ataques de los dispositivos  <br/> |Al activar la reducción de la superficie expuesta a ataques, se bloquean acciones y aplicaciones que suelen usarse en ataques de malware para infectar dispositivos. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Reducir las superficies expuestas a ataques](https://go.microsoft.com/fwlink/?linkid=870417).  <br/> |
-|Proteger carpetas de amenazas como ransomware  <br/> |Esta opción usa el acceso controlado a las carpetas para proteger los datos de la compañía ante la modificación de aplicaciones sospechosas, malintencionadas, como ransomware. Se impide que estos tipos de aplicaciones puedan realizar cambios en las carpetas protegidas. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Proteger carpetas con acceso controlado a las carpetas](https://go.microsoft.com/fwlink/?linkid=870418).  <br/> |
-|Impedir el acceso a la red a contenido potencialmente malintencionado en Internet  <br/> |Use está opción para bloquear las conexiones de usuario de salida a ubicaciones de Internet de baja reputación que puedan hospedar estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad u otro contenido malintencionado. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Proteger la red](https://go.microsoft.com/fwlink/?linkid=870419).  <br/> |
+|Usar reglas que reducen la superficie expuesta a ataques de los dispositivos  <br/> |Al activar la reducción de la superficie expuesta a ataques, se bloquean acciones y aplicaciones que suelen usarse en ataques de malware para infectar dispositivos. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Reducir las superficies expuestas a ataques](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |
+|Proteger carpetas de amenazas como ransomware  <br/> |Esta opción usa el acceso controlado a las carpetas para proteger los datos de la compañía ante la modificación de aplicaciones sospechosas, malintencionadas, como ransomware. Se impide que estos tipos de aplicaciones puedan realizar cambios en las carpetas protegidas. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Consulte [proteger carpetas con el acceso a la carpeta controlada](https://docs.microsoft.com/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) para obtener más información.  <br/> |
+|Impedir el acceso a la red a contenido potencialmente malintencionado en Internet  <br/> |Use está opción para bloquear las conexiones de usuario de salida a ubicaciones de Internet de baja reputación que puedan hospedar estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad u otro contenido malintencionado. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Proteger la red](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).  <br/> |
 |Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos al cifrar los discos duros del equipo y proteger ante la exposición de datos en caso del robo o pérdida de un equipo. Para obtener más información, vea [Preguntas más frecuentes sobre BitLocker](https://go.microsoft.com/fwlink/?linkid=871000).  <br/> |
 |Permitir a los usuarios descargar aplicaciones desde la Microsoft Store  <br/> |Permite a los usuarios descargar e instalar aplicaciones desde la Microsoft Store. Las aplicaciones pueden ser de cualquier tipo, desde juegos hasta herramientas de productividad, por lo que dejamos esta configuración **activada**, pero puede desactivarla para obtener una capa de seguridad adicional.  <br/> |
 |Permitir a los usuarios acceder a Cortana  <br/> |Cortana puede ser muy útil. Permite activar o desactivar opciones automáticamente, ofrece indicaciones y se asegura de que llegue a tiempo a las citas, por lo que mantenemos **activada** esta opción de forma predeterminada.  <br/> |
