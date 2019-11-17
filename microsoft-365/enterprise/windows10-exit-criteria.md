@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise para Windows 10 Enterprise.
-ms.openlocfilehash: 268423de91309947381509017d386c62a5ef23da
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 98dd4b71f1c2af6d72580066d73e75dfd4aa60ff
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37372811"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627534"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Fase 3: Criterios de salida de infraestructura de Windows 10 Enterprise
 
@@ -99,14 +99,14 @@ Si es necesario, el [paso 4](windows10-enable-windows-analytics.md) puede ayudar
 <a name="crit-windows10-step5a"></a>
 ## <a name="required-you-are-using-windows-defender-antivirus-or-your-own-antimalware-solution"></a>Necesario: Usa Antivirus de Windows Defender o su propia solución antimalware
 
-Implementó Antivirus de Windows Defender o su propia solución antivirus para proteger los dispositivos que ejecutan Windows 10 Enterprise contra el software malintencionado. Si implementó Antivirus de Windows Defender, ha implementado un método de creación de informes, como System Center Configuration Manager o Microsoft Intune, para supervisar la actividad y los eventos del antivirus.
+Implementó Antivirus de Windows Defender o su propia solución antivirus para proteger los dispositivos que ejecutan Windows 10 Enterprise contra software malintencionado. Si implementó el Antivirus de Windows Defender, ha implementado un método de creación de informes, como Microsoft Endpoint Configuration Manager o Microsoft Intune, para supervisar la actividad y los eventos del antivirus.
 
 Si es necesario, el [paso 5](windows10-enable-security-features.md#windows10-sec-av) puede ayudarle con este requisito.
 
 <a name="crit-windows10-step5b"></a>
 ## <a name="required-you-are-using-windows-defender-exploit-guard"></a>Necesario: Usa Protección contra vulnerabilidades de seguridad de Windows Defender
 
-Implementó Protección contra vulnerabilidades de seguridad de Windows Defender para proteger los dispositivos que ejecutan Windows 10 Enterprise contra intrusiones y ha implementado un método de creación de informes, como System Center Configuration Manager o Microsoft Intune, para supervisar la actividad y los eventos de intrusión.
+Implementó Protección contra vulnerabilidades de seguridad de Windows Defender para proteger los dispositivos que ejecutan Windows 10 Enterprise contra intrusiones y ha implementado un método de creación de informes, como Administrador de configuración o Microsoft Intune, para supervisar la actividad y los eventos de intrusión.
 
 Si es necesario, el [paso 5](windows10-enable-security-features.md#windows10-sec-eg) puede ayudarle con este requisito.
 

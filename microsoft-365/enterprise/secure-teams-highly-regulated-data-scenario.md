@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un equipo seguro para almacenar los archivos más importantes y confidenciales.
-ms.openlocfilehash: 97cc19b0b0067dc0eaca845dd16621be823f1334
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: f787951748cc1fb0b6b207b4b3aca0de1c29e3d7
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302957"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627504"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams para datos altamente regulados 
 
@@ -125,7 +125,7 @@ Esta es la configuración resultante hasta ahora.
 
 ![Paso 4 de la configuración segura del escenario de equipo](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
-### <a name="step-5-create-the-label-or-a-sublabel-of-the-highly-regulated-label"></a>Paso 5: Cree la etiqueta o una subetiqueta de la etiqueta altamente regulada.
+### <a name="step-5-create-a-sensitivity-label-or-a-sublabel-of-the-highly-regulated-sensitivity-label"></a>Paso 5: crear una etiqueta de confidencialidad o una subetiqueta de la etiqueta de confidencialidad altamente regulada
 
 A diferencia de una etiqueta de confidencialidad para datos altamente regulados que cualquier persona puede aplicar a cualquier archivo, un equipo seguro necesita su propia etiqueta o sub-etiqueta para que los archivos asignados:
 
