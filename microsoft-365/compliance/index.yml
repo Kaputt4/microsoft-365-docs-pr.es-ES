@@ -13,14 +13,14 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: c502be734ec6fdc86a64968ecf1859587869cdf9
-  ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+  ms.openlocfilehash: b6c5cf658bcd10b4ec7f7ffafad2532efdeb7b58
+  ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/30/2019
-  ms.locfileid: "37329188"
+  ms.lasthandoff: 11/01/2019
+  ms.locfileid: "38690987"
 landingContent:
-- title: Administración de la protección de la información
+- title: Administrar la protección de la información
   linkLists:
   - linkListType: overview
     links:
@@ -60,9 +60,9 @@ landingContent:
       url: privileged-access-management-overview.md
     - text: Caja de seguridad del cliente
       url: customer-lockbox-requests.md
-    - text: Supervisar las comunicaciones
-      url: supervision-policies.md
-    - text: Barreras de la información
+    - text: Cumplimiento con la comunidad
+      url: communication-compliance.md
+    - text: Barreras de información
       url: information-barriers.md
     - text: Clave del cliente
       url: controlling-your-data-using-customer-key.md
@@ -82,8 +82,8 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Administrador de cumplimiento
-      url: compliance-manager-overview.md
+    - text: Puntuación de cumplimiento
+      url: compliance-score.md
     - text: Plan de acción de cumplimiento de RGPD
       url: gdpr-action-plan.md
     - text: Protección de la información para RGPD
