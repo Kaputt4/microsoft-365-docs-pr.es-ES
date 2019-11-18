@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre cómo Exchange Online y Office 365 usan la seguridad de la capa de transporte (TLS) y la confidencialidad directa (FS) para proteger las comunicaciones de correo electrónico. Obtenga también información sobre el certificado emitido por Microsoft para Exchange Online.
-ms.openlocfilehash: e165be9a3407abfcc165054f7f147eeb2d2c0a82
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 34667714840e23be5d19aed8f47a539ea1474ab4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092450"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38687686"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Empleo de TLS por parte de Exchange Online para proteger las conexiones de correo electrónico en Office 365
 
@@ -88,7 +88,7 @@ El nuevo certificado está emitido por una entidad de certificación (CA) distin
 El nuevo certificado requiere la conexión a los puntos de conexión de la nueva entidad de certificación como parte de la validación del certificado. Si no lo hace, el flujo de correo puede verse afectado desfavorablemente. Si protege los servidores de correo con firewalls que solo permiten que los servidores de correo se conecten con determinados destinos, debe comprobar si el servidor puede validar el nuevo certificado. Para confirmar que el servidor puede usar el nuevo certificado, siga estos pasos:
 
 1. Conéctese a su servidor local de Exchange mediante Windows PowerShell y, a continuación, ejecute el siguiente comando:  
-  `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
+  `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
 2. En la ventana que aparece, elija **recuperar**.
 3. Cuando la utilidad completa la comprobación, devuelve un estado. Si el estado muestra **correcto**, su servidor de correo puede validar correctamente el nuevo certificado. Si no es así, debe determinar la causa del error de las conexiones. Lo más probable es que necesite actualizar la configuración de un firewall. La lista completa de los puntos de conexión que deben tener acceso son:
     - ocsp.globalsign.com

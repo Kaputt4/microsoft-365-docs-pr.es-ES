@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información acerca de la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9bc2aab9c9758daf35aa14a41d7997a0bff5764f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093234"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38687719"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Administración del acceso con privilegios en Office 365
 
@@ -92,6 +92,6 @@ No, necesita la función de administración de roles de Exchange asignada a cuen
 
 Inicie [la configuración de la organización para la administración del acceso privilegiado](privileged-access-management-configuration.md).
 
-## <a name="learn-more"></a>Obtener más información
+## <a name="learn-more"></a>Más información
 
-[Guía interactiva: supervise y controle las tareas de administrador con privilegios de administración de acceso](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)
+[Guía interactiva: supervise y controle las tareas de administrador con privilegios de administración de acceso](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

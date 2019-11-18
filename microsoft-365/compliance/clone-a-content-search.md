@@ -13,12 +13,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Use el script de Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en el centro de cumplimiento de Office 365 o Microsoft 365. Cuando se clona una búsqueda, se crea una nueva búsqueda (con un nombre nuevo) que contiene las mismas propiedades que la búsqueda original. A continuación, puede editar la nueva búsqueda (cambiando la palabra clave consulta o el intervalo de fechas) y, a continuación, ejecutarla.
-ms.openlocfilehash: 2622b77045d3b4a92ad2e8a1852e1ddbaaca3368
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092047"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687833"
 ---
 # <a name="clone-a-content-search"></a>Clonar una búsqueda de contenido
 
@@ -58,7 +58,7 @@ Para clonar una búsqueda:
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `CloneSearch.ps1`.
     
-  ```
+  ```powershell
   # This PowerShell script clones an existing Content Search in the Office 365 security and compliance center.
   # Get login credentials from the user
   if(!$UserCredential)
@@ -120,7 +120,7 @@ Para clonar una búsqueda:
     
 3. Ejecutar el script; por ejemplo:
     
-    ```
+    ```powershell
     .\CloneSearch.ps1
     ```
 
@@ -138,8 +138,8 @@ Para clonar una búsqueda:
 
 Una vez que haya ejecutado el script para clonar una búsqueda de contenido existente, el siguiente paso consiste en ir al centro de cumplimiento para editar y ejecutar la nueva búsqueda. Como se mencionó anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o quitando condiciones de búsqueda. Para obtener más información, vea:
   
-- [Búsqueda de contenido en Office 365](content-search.md)
+- [Búsqueda de contenido de Office 365](content-search.md)
     
-- [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
+- [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md)
     
 - [casos de eDiscovery](ediscovery-cases.md)

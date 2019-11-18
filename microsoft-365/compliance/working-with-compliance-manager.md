@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: d15899b994e4169c7362144623bc726f3825245d
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417589"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38687743"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -40,9 +40,11 @@ Para comenzar, aparece una evaluación ISO/IEC 27001:2103 para Office 365 de for
 
 ## <a name="administration"></a>Administración
 
-Hay funciones administrativas específicas que solo están disponibles para el administrador global y solo están visibles cuando inicia sesión con una cuenta de administrador global. Una vez que el administrador asigna roles de administrador de cumplimiento a otros usuarios, estos usuarios pueden ver los datos en el administrador de cumplimiento y realizar las acciones determinadas por su rol. El administrador también puede conceder acceso de solo lectura al administrador de cumplimiento asignando al usuario el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
+Hay funciones administrativas específicas que solo están disponibles para el administrador global y solo están visibles cuando inicia sesión con una cuenta de administrador global. El administrador global puede asignar permisos de usuario y puede activar actualizaciones automáticas de puntuación segura para todas las acciones.
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Asignar roles del Administrador de cumplimiento a usuarios
+
+Una vez que el administrador asigna roles de administrador de cumplimiento a otros usuarios, estos usuarios pueden ver los datos en el administrador de cumplimiento y realizar las acciones determinadas por su rol. El administrador también puede conceder acceso de solo lectura al administrador de cumplimiento asignando al usuario el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
 
 Cada rol del administrador de cumplimiento tiene permisos ligeramente diferentes. Puede ver los permisos asignados a cada rol, ver qué usuarios tienen roles y agregar o quitar usuarios de esa función a través del portal de confianza de servicios. Seleccione el elemento de menú **Administrador** y elija la **configuración** que desea ver.
   
@@ -58,7 +60,7 @@ Para agregar o quitar usuarios de los roles del Administrador de cumplimiento.
 
 4. En la lista desplegable **Seleccionar rol** , seleccione el rol que desea administrar.
 
-5. Los usuarios agregados a cada rol se enumeran en la página **Seleccionar rol** .
+5. Los usuarios agregados a cada rol se muestran en la página **Seleccionar rol**.
 
 6. Para agregar usuarios a este rol, seleccione **Agregar**. En el cuadro de diálogo **Agregar usuarios** , seleccione el campo de usuario. Puede desplazarse por la lista de usuarios disponibles o empezar a escribir el nombre de usuario para filtrar la lista en función del término de búsqueda. Seleccione el usuario para agregar esa cuenta a la lista **Agregar usuarios** aprovisionada con dicha función. Si desea agregar varios usuarios a la vez, empiece a escribir un nombre de usuario para filtrar la lista y, a continuación, seleccione el usuario que desea agregar a la lista. Seleccione **Guardar** para aprovisionar el rol seleccionado a estos usuarios. 
 
@@ -67,6 +69,18 @@ Para agregar o quitar usuarios de los roles del Administrador de cumplimiento.
 7. Para quitar usuarios de este rol, seleccione los usuarios y seleccione **eliminar**.
 
     ![Administrador de cumplimiento: eliminar usuarios](media/compliance-manager-delete-users.png)
+
+### <a name="controlling-automatic-secure-score-updates"></a>Control de las actualizaciones automáticas de calificación segura
+
+Las actualizaciones de calificaciones seguras se pueden activar automáticamente para todas las acciones, se pueden desactivar para todas las acciones o se pueden establecer mediante acciones individuales.
+
+1. Inicie sesión en el [portal de confianza de servicios](https://servicetrust.microsoft.com) con su cuenta de administrador global.
+
+2. En la barra de menús superior del portal de confianza del servicio, seleccione **Administrador** y, después, **configuración**.
+
+4. En la ficha **puntuación segura** , seleccione el botón adecuado para la configuración elegida.
+
+**Nota:** Solo el administrador global puede activar o desactivar las actualizaciones automáticas para todas las acciones. El administrador del administrador de cumplimiento puede activar actualizaciones automáticas para acciones individuales, pero no para todas las acciones de forma global.
 
 ## <a name="groups"></a>Grupos
 
@@ -87,8 +101,8 @@ Cuando trabaje con grupos, recuerde lo siguiente:
 - Los nuevos grupos pueden copiar información de un grupo existente al crear una nueva evaluación. Toda la información agregada a los detalles de implementación y los campos de respuesta de administración y plan de pruebas de los controles administrados por el cliente desde las evaluaciones en el grupo desde el que está copiando se copian en los mismos controles administrados por el cliente (o relacionados) en el nuevo Revisión. Si está agregando una nueva evaluación a un grupo existente, la información común de las evaluaciones de ese grupo se copia en la nueva evaluación.
 - Los nombres de grupo (también denominados *identificadores de grupo*) deben ser únicos dentro de la organización.
 - Los grupos pueden contener evaluaciones para la misma certificación o regla, pero cada grupo solo puede contener una evaluación para un par de certificación o servicio en la nube específico. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 y NIST CSF. Un grupo puede contener varias evaluaciones para el mismo servicio en la nube solo si la certificación o la regla correspondiente para cada uno es diferente.
-- Una vez que se ha agregado una evaluación a un grupo de evaluación, no se puede cambiar la agrupación. Puede cambiar el nombre del grupo de evaluación, que cambia el nombre del grupo de evaluación para todas las evaluaciones asociadas con ese grupo. Puede crear una evaluación y un nuevo grupo de evaluación y copiar información de una evaluación existente, lo que crea efectivamente un duplicado de la evaluación en un grupo de evaluación diferente.
-- El archivado de una evaluación rompe la relación entre esa evaluación y el grupo. Las actualizaciones adicionales a otras evaluaciones relacionadas ya no se reflejan en la evaluación archivada.
+- Una vez que se ha agregado una evaluación a un grupo de evaluación, no se puede cambiar la agrupación. Puede cambiar el nombre del grupo de evaluación, que cambia el nombre del grupo de evaluación para todas las evaluaciones asociadas con ese grupo. Puede crear una evaluación y un grupo de evaluaciones, y copiar la información de una evaluación existente, lo que creará un duplicado de esa evaluación y otro grupo de evaluaciones.
+- El archivado de una evaluación rompe la relación entre esa evaluación y el grupo. Cualquier otra actualización de evaluaciones relacionadas no se verá reflejada en la evaluación archivada.
 
 ## <a name="tenant-management"></a>Administración de inquilinos
 
@@ -103,6 +117,9 @@ Seleccione **Administración de inquilinos** para abrir la interfaz de administr
 ### <a name="dimensions"></a>Dimensions
 
 Las dimensiones son conjuntos de metadatos que proporcionan información sobre una plantilla, una evaluación o un elemento de acción. Las dimensiones usan el concepto de claves y valores, donde la clave de dimensión representa una propiedad y el valor de dimensión representa valores válidos para la propiedad. Por ejemplo, en el administrador de cumplimiento hay tres tipos de acciones. Se definen mediante una clave de dimensión de **tipo de acción** y los valores de dimensión de la **documentación**, **operación**y **técnico**. Puede editar o eliminar las dimensiones existentes.
+
+> [!IMPORTANT]
+> Puede agregar nuevas dimensiones y se pueden asignar a plantillas que ya haya importado. También puede agregar nuevas dimensiones a todas las plantillas nuevas que cree.
 
 ### <a name="owners"></a>Propietarios
 
@@ -154,11 +171,6 @@ De un vistazo, puede ver el título, el propietario, la categoría, el cumplimie
 8. Seleccione la **X** para cerrar la hoja Descripción.
 9. Seleccione **Guardar** para guardar la acción del cliente.
 
-#### <a name="edit-a-customer-action"></a>Edición de una acción de cliente
-
-1. Seleccione los puntos suspensivos (...) de la acción que desea modificar y seleccione **Editar**.
-2. Edite la acción como desee y seleccione **Guardar**.
-
 #### <a name="delete-a-customer-action"></a>Eliminación de una acción de cliente
 
 1. Seleccione los puntos suspensivos (...) de la acción que desea modificar y seleccione **eliminar**.
@@ -188,7 +200,7 @@ De un vistazo, puede ver el título, el propietario, la categoría, el cumplimie
 - El título de la evaluación.
 - Las dimensiones de la evaluación, incluida la certificación, el entorno y el producto aplicados a la evaluación.
 - La fecha en que se creó y la fecha en que se modificó por última vez.
-- La puntuación de la evaluación que se muestra como un porcentaje.
+- La puntuación de la evaluación que se muestra como un porcentaje. Esta puntuación incluye automáticamente las puntuaciones de los controles administrados por Microsoft y de la puntuación segura.
 - Indicadores de progreso que muestran el número de controles evaluados administrados por Microsoft y por el cliente.
 
 ### <a name="copying-information-from-existing-assessments"></a>Copiar información de evaluaciones existentes
@@ -215,9 +227,7 @@ Al crear una evaluación, tiene la opción de copiar la información de un grupo
 
 3. Seleccione **Guardar** para crear la evaluación.
 
-### <a name="viewing-assessments"></a>Ver evaluaciones
-
-#### <a name="view-an-assessment"></a>Ver una evaluación
+### <a name="view-an-assessment"></a>Ver una evaluación
   
 1. En el panel de evaluaciones, seleccione el nombre de la evaluación para abrirlo y ver la información de controles y elementos de acción.
 
@@ -282,40 +292,39 @@ Puede exportar una evaluación a un archivo de Excel para las partes interesadas
 
 El informe de evaluación se descarga como un archivo de Excel en la sesión del explorador. El nombre de los archivos del archivo de Excel de forma predeterminada es el título de la evaluación.
 
-### <a name="archive-a-template-or-an-assessment"></a>Archivar una plantilla o una evaluación
+### <a name="hide-a-template-or-an-assessment"></a>Ocultar una plantilla o una evaluación
 
-Cuando haya terminado con una plantilla o una evaluación y ya no la necesite para fines de cumplimiento, puede archivarla. Cuando se archiva una plantilla o una evaluación, se quita de la vista predeterminada y se debe activar la casilla Mostrar archivado para mostrarla.
+Cuando haya terminado con una plantilla o una evaluación y ya no la necesite para fines de cumplimiento, puede ocultarla en la vista. Cuando una plantilla o evaluación está oculta, se quita de la vista predeterminada y debe seleccionar **incluir casilla oculta** para mostrarla.
 
-![Vista de acción de Microsoft del administrador de cumplimiento](media/compliance-manager-archive-assessment-view.png)
-  
+![Vista de plantilla oculta del administrador de cumplimiento](media/compliance-manager-hidden-template.png "Plantilla oculta del administrador de cumplimiento")
+
 > [!IMPORTANT]
-> Las evaluaciones archivadas no conservan sus vínculos a los documentos de evidencia cargados. Se recomienda encarecidamente que exporte la evaluación antes de archivar para conservar los vínculos a los documentos de evidencia del informe.
+> Las evaluaciones ocultas no conservan sus vínculos a los documentos de evidencia cargados. Se recomienda encarecidamente que exporte la evaluación antes de ocultarla para conservar los vínculos a los documentos de evidencia del informe.
   
-#### <a name="archive-a-template"></a>Archivar una plantilla
+#### <a name="hiding-a-template"></a>Ocultar una plantilla
 
 1. Abra el panel **plantillas** .
-2. Localice la plantilla que desea archivar y seleccione el icono archivo.
-3. Cuando vea el mensaje de confirmación, seleccione **archivar**.
+2. Busque la plantilla que desea ocultar y, en las elipses de la fila, seleccione **ocultar**.
+3. Cuando vea el mensaje de confirmación, seleccione **ocultar**.
 
-#### <a name="archive-an-assessment"></a>Archivar una evaluación
+#### <a name="hide-an-assessment"></a>Ocultar una evaluación
 
 1. Abra el panel de **evaluaciones** .
-2. Seleccione el **Grupo** de la lista desplegable que contiene la evaluación que desea archivar.
-3. Busque la evaluación que desea archivar y seleccione el icono archivo.
-4. Cuando vea el mensaje de confirmación, seleccione **archivar**.
+2. Seleccione el **Grupo** de la lista desplegable que contiene la evaluación que desea ocultar.
+3. Busque la evaluación que desea ocultar y, en las elipses, seleccione **ocultar**.
+4. Cuando vea el mensaje de confirmación, seleccione **ocultar**.
 
-#### <a name="view-archived-assessments"></a>Ver evaluaciones archivadas
+#### <a name="view-hidden-assessments"></a>Ver evaluaciones ocultas
   
-1. Abra la pestaña panel de **evaluaciones** y active la casilla **Mostrar archivado** .
-2. Las evaluaciones archivadas aparecen en la sección **evaluaciones archivadas** .
-3. Seleccione el nombre de la evaluación para abrir y ver la evaluación.
+1. Abra la pestaña panel de **evaluaciones** y seleccione la casilla **incluir oculto** .
+2. Las evaluaciones ocultas aparecen en la sección **evaluaciones ocultas** .
 
-#### <a name="activate-an-archived-assessment"></a>Activación de una evaluación archivada
+#### <a name="unhide-an-assessment"></a>Mostrar una evaluación
 
-1. En la pestaña **evaluaciones** , seleccione la casilla **Mostrar archivado** .
-2. Las evaluaciones archivadas aparecen en la sección **evaluaciones archivadas** .
-3. Busque la evaluación que desea activar y seleccione el icono activar.
-4. Cuando vea el mensaje de confirmación, seleccione **Activar**.
+1. En la pestaña **evaluaciones** , active la casilla **incluir oculto** .
+2. Las evaluaciones ocultas aparecen en la sección **evaluaciones ocultas** .
+3. Busque la evaluación que desea mostrar y, en las elipses, seleccione **Mostrar**.
+4. Cuando vea el mensaje de confirmación, seleccione **Mostrar**.
 
 ## <a name="controls-and-actions"></a>Controles y acciones
 
@@ -507,6 +516,9 @@ Puede crear una plantilla copiando una plantilla existente o importando datos de
 7. La plantilla importada aparece en el panel **plantillas** y tiene el estado **importada**. Seleccione los puntos suspensivos (...) y seleccione **publicar** para publicar la plantilla. Cuando aparezca el mensaje de confirmación, seleccione **publicar**. El estado de la plantilla cambia a **aprobación pendiente**.
 8. Otro usuario con el rol de administrador del administrador de cumplimiento debe aprobar la plantilla en el panel Plantillas. Deben seleccionar los puntos suspensivos (...) y seleccionar **aprobar**. Cuando aparezca el mensaje de confirmación, seleccione **aprobar**. La plantilla ya está lista para su uso.
 
+> [!IMPORTANT]
+> Al crear una plantilla, debe incluir las dimensiones del **producto** y la **certificación** para asegurarse de que la plantilla se muestra en la puntuación de cumplimiento.
+
 ### <a name="customize-a-template"></a>Personalización de una plantilla
 
 Las plantillas se pueden personalizar a través de los controles personalizados adicionales. Todos los controles personalizados se consideran controles administrados por el cliente.
@@ -531,6 +543,9 @@ Las plantillas se pueden personalizar a través de los controles personalizados 
 12. Cuando se hayan seleccionado todas las acciones aplicables, seleccione **asignar**.
 13. Seleccione **Guardar** para guardar el nuevo control.
 
+> [!NOTE]
+> Los cambios realizados en una plantilla no se reflejarán en las evaluaciones existentes. Las actualizaciones de plantillas deben realizarse primero y, a continuación, aplicarse a una nueva evaluación para que se vean los cambios.
+
 ### <a name="export-a-template-to-json"></a>Exportar una plantilla a JSON
 
 El administrador de cumplimiento (versión preliminar) también admite la exportación de plantillas al formato de notación de objetos JavaScript (JSON). Esto le permite intercambiar datos del administrador de cumplimiento con otros sistemas que admiten JSON.
@@ -547,13 +562,13 @@ Puede exportar una evaluación a un archivo de Excel para las partes interesadas
 
 ![Informe de Excel de evaluación del administrador de cumplimiento](media/compliance-manager-assessment-report.png)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 En la tabla siguiente se describe cada permiso del administrador de cumplimiento y lo que permite al usuario. La tabla también indica el rol al que se asigna cada permiso.
 
 ||**Lector global de Azure AD**|**Lector del Administrador de cumplimiento**|**Colaborador del Administrador de cumplimiento**|**Evaluador del Administrador de cumplimiento**|**Administrador del Administrador de cumplimiento**|**Administrador del portal**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Leer datos:** Los usuarios pueden leer pero no editar datos (excepto para la administración de los datos y la administración de los inquilinos).  <br> | X | X | X | X | X  | X  |X |
+|**Leer datos:** Los usuarios pueden leer pero no editar datos (excepto para la administración de los datos y la administración de los inquilinos).  <br> | X | X | X | X | X  | X |
 |**Editar datos:** Los usuarios pueden editar todos los campos, excepto los resultados de la prueba y los campos de fecha de prueba (excepto para los datos de plantilla y la administración del espacio empresarial).  <br> ||| X | X  | X | X |
 |**Editar resultados de pruebas:** Los usuarios pueden editar los campos resultado de la prueba y fecha de prueba.  <br> |||| X | X | X |
 |**Administrar evaluaciones:** Los usuarios pueden crear, archivar y eliminar evaluaciones.  <br> ||||| X | X |

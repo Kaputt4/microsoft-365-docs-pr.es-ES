@@ -2,8 +2,8 @@
 title: Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 ms.author: chrfox
 author: chrfox
-manager: dansimp
-ms.date: 06/14/2019
+manager: laurawi
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: 198b2de6d26b260840f0e578e4b50f0693708a94
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093676"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38687793"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -214,23 +215,13 @@ Actualmente, Outlook 2013 y versiones posteriores admiten la visualización de s
 - Contenido contiene
 - El contenido se comparte
 
-Actualmente estamos trabajando en soporte para mostrar sugerencias de directiva para condiciones adicionales. Entre ellos se incluyen:
-
-- No se pudo analizar el contenido de los datos adjuntos de correo electrónico
-- No se completó el análisis del contenido de los datos adjuntos de correo
-- La extensión del archivo adjunto es
-- Los datos adjuntos están protegidos con contraseña
-- La propiedad de documento es
-- El dominio del destinatario es
-- La dirección IP del remitente es
-
 Tenga en cuenta que todas estas condiciones funcionan en Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Pero Mostrar sugerencias de directiva a los usuarios todavía no es compatible.
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Sugerencias de directiva en el centro de administración de Exchange frente al centro &amp; de seguridad y cumplimiento de Office 365
 
 Las sugerencias de Directiva pueden funcionar con las directivas de DLP y las reglas de flujo de correo creadas en el centro de administración de Exchange o con las &amp; directivas de DLP creadas en el centro de seguridad y cumplimiento de Office 365, pero no en ambos. Esto se debe a que estas directivas se almacenan en ubicaciones distintas, pero las sugerencias de directiva solo pueden dibujar desde una única ubicación.
   
-Si ha configurado sugerencias de directiva en el centro de administración de Exchange, las sugerencias de directiva que configure en el &amp; centro de seguridad y cumplimiento de Office 365 no aparecerán a los usuarios en Outlook en la web ni en Outlook 2013 y versiones posteriores hasta que desactive las sugerencias de Exchange. Centro de administración. Esto garantiza que las reglas de flujo de correo de Exchange actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que elija cambiar al centro de seguridad &amp; y cumplimiento de Office 365.
+Si ha configurado sugerencias de directiva en el centro de administración de Exchange, las sugerencias de directiva que configure en el &amp; centro de seguridad y cumplimiento de Office 365 no aparecerán a los usuarios en Outlook en la web ni en Outlook 2013 y versiones posteriores hasta que desactive las sugerencias en el centro de administración de Exchange. Esto garantiza que las reglas de flujo de correo de Exchange actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que elija cambiar al centro de seguridad &amp; y cumplimiento de Office 365.
   
 Tenga en cuenta que, aunque las sugerencias de directiva solo pueden dibujar desde una única ubicación, siempre se envían notificaciones de correo electrónico, incluso si usa directivas de DLP &amp; tanto en el centro de administración de seguridad de Office 365 como en el centro de administración de Exchange.
   
@@ -295,5 +286,3 @@ Puede personalizar el texto de las sugerencias de directiva independientemente d
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
 - [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
-    
-

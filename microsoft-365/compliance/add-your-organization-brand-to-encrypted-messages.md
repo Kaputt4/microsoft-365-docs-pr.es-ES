@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Como administrador global de Office 365, puede aplicar la personalización de marca de su organización a los mensajes de correo electrónico cifrados de la organización y al contenido del portal de cifrado.
-ms.openlocfilehash: dd08ffad4a50cafd90f2306645e93e623b8076cd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea68e8ddb9e29c4948d8ee51b8d7b6a94501c986
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092163"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38687615"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Agregar la marca de su organización a los mensajes cifrados
 
@@ -33,13 +33,13 @@ Como administrador de Exchange online o Exchange Online Protection, puede aplica
 
 - Texto que aparece en el portal de OME
 
-- Logotipo que aparece en el portal de mensajes de correo electrónico y OME
+- Logotipo que aparece en el portal de mensajes de correo electrónico y OME, o bien si se va a usar un logotipo
 
 - Color de fondo en el portal de mensajes de correo electrónico y OME
 
 También puede volver a la apariencia predeterminada en cualquier momento.
 
- Si desea tener más control, puede usar el cifrado de mensajes avanzado de Office 365 y crear varias plantillas para los mensajes de correo electrónico cifrados que se originan en la organización. Mediante el uso de estas plantillas, puede controlar algo más que la apariencia de los mensajes de correo electrónico, pero también controlar partes de la experiencia del usuario final. Por ejemplo, puede especificar si desea o no que los destinatarios de correo que tengan esta plantilla aplicada y que usen cuentas de Google, Yahoo y Microsoft puedan usar estas cuentas para iniciar sesión en el portal de cifrado de mensajes de Office 365. Puede usar plantillas para cumplir varios casos de uso, como:
+Si desea tener más control, puede usar el cifrado de mensajes avanzado de Office 365 y crear varias plantillas para los mensajes de correo electrónico cifrados que se originan en la organización. Mediante el uso de estas plantillas, puede controlar algo más que la apariencia de los mensajes de correo electrónico, pero también controlar partes de la experiencia del usuario final. Por ejemplo, puede especificar si desea o no que los destinatarios de correo que tengan esta plantilla aplicada y que usen cuentas de Google, Yahoo y Microsoft puedan usar estas cuentas para iniciar sesión en el portal de cifrado de mensajes de Office 365. Puede usar plantillas para cumplir varios casos de uso, como:
 
 - Plantillas para cada departamento, como finanzas, ventas, etc.
 
@@ -52,38 +52,29 @@ También puede volver a la apariencia predeterminada en cualquier momento.
 - Si desea que los mensajes enviados a destinatarios externos expiren después de un número determinado de días.
 
 Una vez que haya creado las plantillas, puede aplicarlas a los correos electrónicos cifrados mediante las reglas de flujo de correo de Exchange. Si tiene el cifrado de mensajes avanzado de Office 365, puede revocar cualquier correo electrónico de personalización de marca mediante estas plantillas.
+
+## <a name="work-with-ome-branding-templates"></a>Trabajar con plantillas de personalización de marca OME
+
+Puede modificar varias características dentro de una plantilla de personalización de marca. Puede modificar, pero no quitar la plantilla predeterminada. Si tiene cifrado de mensajes avanzado, también puede crear, modificar y quitar plantillas personalizadas. Use Windows PowerShell para trabajar con una plantilla de personalización de marca cada vez. Necesitará una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365 para usar estos cmdlets.
+
+- [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration) -modificar la plantilla de personalización de marca predeterminada o una plantilla de personalización de marca personalizada creada.
+- [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) -crea una nueva plantilla de personalización de marca, solo cifrado de mensajes avanzado.
+- [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/remove-omeconfiguration) -quitar una plantilla de personalización de marca personalizada, sólo el cifrado de mensajes avanzado. No se puede eliminar la plantilla de personalización de marca predeterminada.
   
-||
-|:-----|
-|Este artículo forma parte de una amplia serie de artículos sobre el cifrado de mensajes de Office 365. Este artículo está destinado a los administradores y ITPros. Si solo está buscando información sobre cómo enviar o recibir un mensaje cifrado, vea la lista de artículos en el [cifrado de mensajes de Office 365 (OME)](ome.md) y busque el artículo que mejor se adapte a sus necesidades.|
-||
+## <a name="modify-an-ome-branding-template"></a>Modificación de una plantilla de personalización de marca OME
 
-## <a name="create-branding-templates"></a>Crear plantillas de personalización de marca
+Use Windows PowerShell para modificar una plantilla de personalización de marca a la vez. Si tiene cifrado de mensajes avanzado, también puede crear, modificar y quitar plantillas personalizadas.
 
-Puede crear plantillas de personalización de marca para su organización en Windows PowerShell con el cmdlet New-OMEConfiguration. Una vez que haya creado la plantilla, defina las partes de la plantilla mediante el cmdlet Set-OMEConfiguration. Puede crear varias plantillas.
-
-![Elementos de correo electrónico personalizables](media/ome-template-breakout.png)
-  
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, vea [conectarse a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Use el cmdlet New-OMEConfiguration para crear una nueva plantilla.
+2. Modifique la plantilla con el cmdlet Set-OMEConfiguration como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) o use el siguiente gráfico y tabla para obtener instrucciones.
 
-   ```powershell
-   New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
-   ```
-
-   For example,
-
-   ```powershell
-   New-OMEConfiguration -Identity "Branding template 1"
-   ```
-
-3. Defina las personalizaciones para la plantilla que acaba de definir con el cmdlet Set-OMEConfiguration tal como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) o use la siguiente tabla para obtener instrucciones.
+![Elementos de correo electrónico personalizables](media/ome-template-breakout.png)
 
 |**Para personalizar esta característica de la experiencia de cifrado**|**Use estos comandos**|
 |:-----|:-----|
 |Color de fondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
-|Logotipo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formatos de archivo compatibles: .png, .jpg, .bmp o .tiff  <br/> Tamaño óptimo del archivo de logotipo: menos de 40 KB  <br/> Tamaño óptimo de la imagen de logotipo: 170 píxeles|
+|Logotipo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formatos de archivo compatibles: .png, .jpg, .bmp o .tiff  <br/> Tamaño óptimo del archivo de logotipo: menos de 40 KB  <br/> Tamaño óptimo de la imagen de logotipo: 170 píxeles. Si la imagen supera estas dimensiones, el servicio cambia el tamaño del logotipo para mostrarlo en el portal. El servicio no modifica el archivo gráfico en sí. Para obtener los mejores resultados, use el tamaño óptimo.|
 |Texto junto al nombre y la dirección de correo electrónico del remitente|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |Texto que aparece en el botón "leer mensaje"|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
 |Texto que aparece por debajo del botón "leer mensaje"|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
@@ -92,25 +83,70 @@ Puede crear plantillas de personalización de marca para su organización en Win
 |Para habilitar o deshabilitar la autenticación con un código de paso único para esta plantilla personalizada|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **Ejemplos:** <br/>Para habilitar los códigos de acceso de una sola vez para esta plantilla personalizada <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> Para deshabilitar los códigos de acceso de un solo uso para esta plantilla personalizada <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |Para habilitar o deshabilitar la autenticación con identidades de Microsoft, Google o Yahoo para esta plantilla personalizada|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -SocialIdSignIn <$true|$false>` <br/> **Ejemplos:** <br/>Para habilitar identificadores sociales para esta plantilla personalizada <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> Para deshabilitar los identificadores sociales de esta plantilla personalizada <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
-## <a name="to-remove-brand-customizations-from-the-ome-portal-and-email-messages-encrypted-by-ome"></a>Para quitar personalizaciones de marca del portal de OME y mensajes de correo electrónico cifrados por OME
+## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>Crear una plantilla de personalización de marca OME (cifrado de mensajes avanzado)
+
+Si tiene el cifrado de mensajes avanzado de Office 365, puede crear plantillas de personalización de marca personalizadas para su organización con el cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) . Una vez que haya creado la plantilla, modifique la plantilla mediante el cmdlet Set-OMEConfiguration como se describe en [Modify an OME branding template](#modify-an-ome-branding-template). Puede crear varias plantillas.
+
+Para crear una nueva plantilla de personalización de marca personalizada:
+
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, vea [conectarse a Exchange Online PowerShell](https://aka.ms/exopowershell).
+
+2. Use el cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) para crear una nueva plantilla.
+
+   ```powershell
+   New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
+   ```
+
+   For example,
+
+   ```powershell
+   New-OMEConfiguration -Identity "Custom branding template"
+   ```
+
+## <a name="return-the-default-branding-template-to-its-original-values"></a>Devolver la plantilla de personalización de marca predeterminada a sus valores originales
+
+Para quitar todas las modificaciones de la plantilla predeterminada, incluidas las personalizaciones de marca, etc., siga estos pasos:
   
-1. [Conexión al PowerShell de Exchange Online](https://aka.ms/exopowershell).
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, vea [conectarse a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Use el cmdlet **set-OMEConfiguration** como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""`. Para todos los valores de imagen, como el logotipo, establezca el `"$null"`valor en.
 
-**Opciones de personalización de cifrado**
+   En la tabla siguiente se describen los valores predeterminados de la opción de personalización de cifrado.
 
-**Para revertir esta característica de la experiencia de cifrado de nuevo a la imagen y el texto predeterminados**|**Use estos comandos**|
-|:-----|:-----|
-|Texto predeterminado que acompaña a los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece por encima de las instrucciones para ver los mensajes cifrados|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-|Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-|Texto que aparece en la parte superior del portal de visualización de correo cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
-|Logotipo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-|Color de fondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   **Para revertir esta característica de la experiencia de cifrado de nuevo a la imagen y el texto predeterminados**|**Use estos comandos**|
+   |:-----|:-----|
+   |Texto predeterminado que acompaña a los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece por encima de las instrucciones para ver los mensajes cifrados|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+   |Texto que aparece en la parte superior del portal de visualización de correo cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
+   |Logotipo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
+   |Color de fondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **Ejemplo de volver a su valor predeterminado:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   |
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-custom-branding-to-encrypted-emails"></a>Crear una regla de flujo de correo de Exchange que aplique la personalización de marca a los correos electrónicos cifrados
+## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>Quitar una plantilla de personalización de marca personalizada (cifrado de mensajes avanzado)
 
-Una vez que haya creado una plantilla de personalización de marca, puede crear reglas de flujo de correo de Exchange para aplicar esa marca personalizada según ciertas condiciones. Dicha regla aplicará la personalización de marca personalizada en los siguientes escenarios:
+Solo puede quitar o eliminar las plantillas de personalización de marca que haya hecho. No puede quitar la plantilla de personalización de marca predeterminada.
+
+Para quitar una plantilla de personalización de marca personalizada:
+  
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, vea [conectarse a Exchange Online PowerShell](https://aka.ms/exopowershell).
+
+2. Use el cmdlet **Remove-OMEConfiguration** de la siguiente manera:
+
+   ```powershell
+   Remove-OMEConfiguration -Identity "<OMEConfigurationIdParameter>
+   ```
+
+   For example,
+
+   ```powershell
+   Remove-OMEConfiguration -Identity "Branding template 1"
+   ```
+
+   Para obtener más información, vea [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/remove-omeconfiguration).
+
+## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Crear una regla de flujo de correo de Exchange que aplique la personalización de marca personalizada a los correos electrónicos cifrados
+
+Una vez que haya modificado la plantilla predeterminada o creado nuevas plantillas de personalización de marca, puede crear reglas de flujo de correo de Exchange para aplicar la personalización de marca personalizada según ciertas condiciones. Dicha regla aplicará la personalización de marca personalizada en los siguientes escenarios:
 
 - Si el usuario ha cifrado el correo electrónico manualmente desde los clientes de Outlook o Outlook en la web (anteriormente conocido como Outlook Web App)
 
@@ -128,16 +164,16 @@ Para obtener información sobre cómo crear una regla de flujo de correo de Exch
 
 5. En **nombre**, escriba un nombre para la regla, como la personalización de marca del Departamento de ventas.
 
-6. En **aplicar esta regla si** selecciona una condición, seleccione la condición que **el remitente se encuentra dentro de la organización** , así como las demás condiciones que desee en la lista de condiciones disponibles. Por ejemplo, es posible que desee aplicar una plantilla de personalización de marca determinada a:
+6. En **aplicar esta regla si**, seleccione la condición en que **el remitente se encuentra dentro de la organización** , así como las demás condiciones que desee en la lista de condiciones disponibles. Por ejemplo, es posible que desee aplicar una plantilla de personalización de marca determinada a:
 
-     - Todos los mensajes de correo electrónico cifrados enviados desde miembros del Departamento de finanzas
-     - Mensajes de correo electrónico cifrados enviados con una palabra clave determinada, como "external" o "Partner"
-     - Mensajes de correo electrónico cifrados enviados a un dominio en particular
+   - Todos los mensajes de correo electrónico cifrados enviados desde miembros del Departamento de finanzas
+   - Mensajes de correo electrónico cifrados enviados con una palabra clave determinada, como "external" o "Partner"
+   - Mensajes de correo electrónico cifrados enviados a un dominio en particular
 
-7. En **hacer lo siguiente**, seleccione **modificar la seguridad** > de mensajes aplicar personalización de**marca personalizada a los mensajes OME**. A continuación, en la lista desplegable, seleccione una plantilla de personalización de marca de las que ha creado.
+7. En **hacer lo siguiente**, seleccione **modificar la seguridad** > de mensajes aplicar personalización de**marca personalizada a los mensajes OME**. A continuación, en la lista desplegable, seleccione una plantilla de personalización de marca de las que ha creado o modificado.
 
 8. Opcional Si desea que la regla de flujo de correo también aplique el cifrado además de la personalización de marca, desde **haga lo siguiente**, seleccione **modificar la seguridad de los mensajes** y, a continuación, elija **aplicar el cifrado de mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar**y, después, haga clic en **Aceptar**.
   
-     La lista de plantillas incluye todas las plantillas y opciones predeterminadas, así como las plantillas personalizadas que haya creado para su uso por parte de Office 365. Si la lista está vacía, asegúrese de haber configurado el cifrado de mensajes de Office 365 con las nuevas funciones, tal como se describe en [set up New Office 365 Message Encryption Capabilities](set-up-new-message-encryption-capabilities.md). Para obtener información sobre las plantillas predeterminadas, vea [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre la opción no **reenviar** , vea la [opción no reenviar para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información sobre la opción **solo cifrar** , vea la [opción cifrar solo para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   La lista de plantillas incluye todas las plantillas y opciones predeterminadas, así como las plantillas personalizadas que haya creado para su uso por parte de Office 365. Si la lista está vacía, asegúrese de haber configurado el cifrado de mensajes de Office 365 con las nuevas funciones, tal como se describe en [set up New Office 365 Message Encryption Capabilities](set-up-new-message-encryption-capabilities.md). Para obtener información sobre las plantillas predeterminadas, vea [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre la opción no **reenviar** , vea la [opción no reenviar para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información sobre la opción **solo cifrar** , vea la [opción cifrar solo para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
-     Puede elegir **Agregar acción** si desea especificar otra acción.
+   Elija **Agregar acción** si desea especificar otra acción.

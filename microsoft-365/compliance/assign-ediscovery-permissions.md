@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 5a9036908d97a62897b7d52b875a46008a7a337c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 61b55c221c11a577a64d0d2358c89253b1e90714
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092088"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687828"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -47,7 +47,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
 
 - Debe ser miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de roles) para asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
     
-- Puede usar el cmdlet [Add-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638207%28v=exchg.160%29.aspx) en seguridad & PowerShell del centro de cumplimiento para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles eDiscovery Manager. Sin embargo, no puede Agregar un grupo de seguridad habilitado para correo al subgrupo administradores de eDiscovery. Consulte la sección [More Information](#more-information) para obtener más información. 
+- Puede usar el cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) en seguridad & PowerShell del centro de cumplimiento para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles eDiscovery Manager. Sin embargo, no puede Agregar un grupo de seguridad habilitado para correo al subgrupo administradores de eDiscovery. Consulte la sección [More Information](#more-information) para obtener más información. 
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -58,11 +58,11 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
 3. En el panel izquierdo del centro de seguridad y cumplimiento, haga clic en **permisos**y, a continuación, haga clic en la casilla situada junto a **Administrador de exhibición**de documentos electrónicos.
     
 4. En la página flotante del **Administrador de exhibición** de documentos electrónicos, realice una de las siguientes acciones en función de los permisos de exhibición de documentos electrónicos que desee asignar. 
-    
-  - **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En **administradores de exhibición**de documentos electrónicos seleccionados, haga clic ![en **Editar**y en agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de edición seleccionar el control flotante de **eDiscovery Manager** , haga clic en **Guardar** para guardar los cambios en la pertenencia al administrador de eDiscovery. 
-    
-  - **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En **administradores de eDiscovery seleccionados**, haga clic en **Editar**y, ![a continuación](media/ITPro-EAC-AddIcon.gif) , haga clic en agregar icono **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de **edición de elegir administrador de exhibición** de documentos electrónicos, haga clic en **Guardar** para guardar los cambios en la pertenencia del administrador de exhibición de documentos electrónicos. 
-    
+  
+    **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos: Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En la sección **elegir administrador de exhibición** de documentos electrónicos, haga clic en el hipervínculo **elegir administrador de exhibición** de documentos electrónicos y haga clic en ![agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de edición seleccionar el control flotante de **eDiscovery Manager** , haga clic en **Guardar** para guardar los cambios en la pertenencia al administrador de eDiscovery.
+  
+    **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos: Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En la sección **elegir administrador de eDiscovery** , en **administradores de eDiscovery**, haga clic en **elegir administrador de exhibición** de documentos electrónicos, haga clic en **Editar**y, a continuación, haga clic en ![agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de **exhibición**de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de **edición de elegir administrador de exhibición** de documentos electrónicos, haga clic en **Guardar** para guardar los cambios en la pertenencia del administrador de exhibición de documentos electrónicos.
+      
 > [!NOTE]
 > También puede usar el cmdlet **Add-eDiscoveryCaseAdmin** para que un usuario sea administrador de exhibición de documentos electrónicos. Sin embargo, al usuario se le debe asignar el rol de administración de casos antes de que pueda usar este cmdlet para convertirlo en Administrador de exhibición de documentos electrónicos. Para obtener más información, vea [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
@@ -77,9 +77,9 @@ En la siguiente tabla se enumeran los roles RBAC relacionados con la exhibición
 |Administración de casos <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Búsqueda de cumplimiento <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Exportar <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Retención <br/>  |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Hold <br/>  |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Vista previa <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Revisar <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Review <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |Descifrado de RMS <br/>  ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |Búsqueda y depuración <br/> | <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -106,7 +106,7 @@ El rol permite a los usuarios exportar los resultados de una búsqueda de conten
 
 Para obtener más información acerca de cómo exportar resultados de búsqueda, vea [exportar resultados de búsqueda del centro de seguridad & cumplimiento](export-search-results.md).
 
-### <a name="hold"></a>Retención
+### <a name="hold"></a>Hold
 
 Este rol permite a los usuarios poner contenido en buzones de correo, carpetas públicas, sitios, conversaciones de Skype empresarial y grupos de Office 365 en suspensión. Cuando el contenido está en espera, los propietarios de contenido podrán modificar o eliminar el contenido original, pero el contenido se conservará hasta que se quite la retención o hasta que expire la duración de retención. 
 
@@ -119,7 +119,7 @@ Para obtener más información acerca de las suspensiones, consulte:
 
 Este rol permite a los usuarios ver una lista de elementos devueltos de una búsqueda de contenido. También podrán abrir y ver cada elemento de la lista para ver su contenido.
 
-### <a name="review"></a>Revisar
+### <a name="review"></a>Review
 
 Esta función permite a los usuarios acceder a datos de casos en la exhibición avanzada de documentos electrónicos de Office 365. El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición avanzada de documentos electrónicos. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o para realizar otras tareas de búsqueda de contenido o de administración de casos.
 
@@ -144,7 +144,7 @@ Este rol permite a los usuarios realizar la eliminación masiva de datos que coi
     
 - **¿Puedo agregar un grupo como miembro del grupo de roles eDiscovery Manager?** Como se ha explicado anteriormente, puede Agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles administrador de eDiscovery mediante el cmdlet **Add-RoleGroupMember** en el PowerShell del centro de cumplimiento de & de seguridad. Por ejemplo, puede ejecutar el siguiente comando para agregar un grupo de seguridad habilitado para correo al grupo de roles eDiscovery Manager. 
     
-  ```
+  ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 

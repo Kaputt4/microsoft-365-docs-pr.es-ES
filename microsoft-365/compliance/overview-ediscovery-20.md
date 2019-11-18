@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la nueva versión de eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: e63fe05cf9a2e236247da3c45674b53cc830546d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: abeb4e6b9a465e4f1df857187ef709b5dc2c86b5
+ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093001"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "38687605"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
 
@@ -35,19 +35,19 @@ El flujo de trabajo integrado de eDiscovery avanzado se alinea con el proceso de
 
 En un nivel alto, a continuación se muestra cómo la exhibición avanzada de documentos electrónicos admite el flujo de trabajo EDRM:
 
-- **Identificación** : después de identificar las posibles personas de interés en una investigación, puede agregarlas como custodios (también denominados *custodios de datos*, ya que pueden poseer información relevante para la investigación) a un avanzado caso de exhibición de documentos electrónicos. Una vez que los usuarios se agregan como custodios, es fácil preservar, recopilar y revisar los documentos de custodios.
+- **Determinación.** Después de identificar las posibles personas de interés en una investigación, puede agregarlas como custodios (también denominadas *custodios de datos*, ya que pueden tener información relevante para la investigación) a un caso avanzado de eDiscovery. Una vez que los usuarios se agregan como custodios, es fácil preservar, recopilar y revisar los documentos de custodios.
 
-- **Conservación** : para preservar y proteger los datos relevantes para una investigación, la exhibición avanzada de documentos electrónicos le permite realizar una retención legal en los orígenes de datos asociados con los custodios en un caso. También puede poner los datos que no son de Private en espera. EDiscovery avanzado también tiene un flujo de trabajo de comunicaciones integrado para que pueda enviar notificaciones de retención legal a los custodios y realizar un seguimiento de sus confirmaciones.
+- **Buena.** Para preservar y proteger los datos relevantes para una investigación, eDiscovery avanzado le permite realizar una retención legal en los orígenes de datos asociados con los custodios en un caso. También puede poner los datos que no son de Private en espera. EDiscovery avanzado también tiene un flujo de trabajo de comunicaciones integrado para que pueda enviar notificaciones de retención legal a los custodios y realizar un seguimiento de sus confirmaciones.
 
-- **Colección** : después de identificar (y conservar) los orígenes de datos relevantes para la investigación, puede usar la herramienta de búsqueda integrada en la búsqueda avanzada de exhibición de documentos electrónicos y recopilar datos en directo de los orígenes de datos (y orígenes de datos que no sean de Private). , si procede, que puede ser relevante para el caso.
+- **Colección.** Después de identificar (y conservar) los orígenes de datos relevantes para la investigación, puede usar la herramienta de búsqueda integrada en la búsqueda avanzada de exhibición de documentos electrónicos y recopilar datos activos de los orígenes de datos de Private (y de los orígenes de datos que no sean de privación, si procede) que puede ser relevante para el caso.
 
-- **Procesamiento** : una vez que haya recopilado todos los datos relevantes para el caso, el siguiente paso es procesarlo para revisión y análisis adicionales. En la exhibición avanzada de documentos electrónicos, los datos locales que identificó en la fase de recopilación se copian en una ubicación de Azure Storage (denominada un *conjunto de revisión*), que proporciona una vista estática de los datos de caso. 
+- **Procesar.** Una vez que haya recopilado todos los datos relevantes para el caso, el paso siguiente es procesarlo para su posterior revisión y análisis. En la exhibición avanzada de documentos electrónicos, los datos locales que identificó en la fase de recopilación se copian en una ubicación de Azure Storage (denominada un *conjunto de revisión*), que proporciona una vista estática de los datos de caso. 
  
-- **Revisión** : una vez agregados los datos a un conjunto de revisión, puede ver documentos específicos y ejecutar otras consultas para reducir los datos a lo que sea más importante en el caso. Además, puede anotar y etiquetar documentos específicos.
+- **Comprueba.** Una vez agregados los datos a un conjunto de revisión, puede ver documentos específicos y ejecutar otras consultas para reducir los datos a lo que sea más importante para el caso. Además, puede anotar y etiquetar documentos específicos.
  
-- **Analysis** : Advanced eDiscovery proporciona herramientas de análisis integradas que le ayudarán a deshacer más los datos del conjunto de revisión que determine que no es relevante para la investigación. Además de reducir el volumen de datos relevantes, la exhibición avanzada de documentos electrónicos también le ayuda a ahorrar costos legales de revisión permitiéndole organizar el contenido para que el proceso de revisión sea más fácil y eficaz.
+- **Analice.** EDiscovery avanzado ofrece una herramienta de análisis integrada que le ayuda a agregar más datos del conjunto de revisión que usted determina que no es relevante para la investigación. Además de reducir el volumen de datos relevantes, la exhibición avanzada de documentos electrónicos también le ayuda a ahorrar costos legales de revisión permitiéndole organizar el contenido para que el proceso de revisión sea más fácil y eficaz.
 
-- **Producción** y **presentación** : cuando esté listo, puede exportar documentos de un conjunto de revisión para su revisión legal. Puede exportar documentos en su formato nativo o en un formato especificado por el EDRM para que se puedan importar en aplicaciones de revisión de terceros.
+- **Producción** y **presentación.** Cuando esté listo, puede exportar documentos de un conjunto de revisiones para revisión legal. Puede exportar documentos en su formato nativo o en un formato especificado por el EDRM para que se puedan importar en aplicaciones de revisión de terceros.
 
 ## <a name="advanced-ediscovery-workflow"></a>Flujo de trabajo avanzado de eDiscovery
 
@@ -81,12 +81,14 @@ Use la ficha **búsquedas** para crear búsquedas para buscar en los orígenes d
 
 Use la pestaña **conjuntos de revisiones** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de revisión. Un *conjunto de revisiones* es una colección estática de los datos (es decir, una copia sin conexión de datos) de los datos de Private (y, si procede, de datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan los resultados de la búsqueda a un conjunto de revisión, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados por los custodios y los agrega al conjunto de revisión. Una vez que los datos se agregan al conjunto de revisión, puede ejecutar más consultas para acotar los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para obtener más información, vea:
 
-- [Revisar los datos de casos en eDiscovery avanzado](reviewing-data-in-review-set.md)
-- [Analizar datos en un conjunto de revisión en eDiscovery avanzado](analyzing-data-in-review-set.md)
+- [Ver documentos de un conjunto de revisión](view-documents-in-review-set.md)
+- [Consultar los datos de un conjunto de revisión](review-set-search.md)
+- [Etiquetar documentos en un conjunto de revisión](tagging-documents.md)
+- [Analizar datos en un conjunto de revisión](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>Exportar datos para revisión y presentación
 
-Después de exportar los datos de un conjunto de revisión, use la pestaña **exportaciones** para administrar un trabajo de exportación y descargar datos de un conjunto de revisión. Al exportar un conjunto de revisión, los datos se cargan en una ubicación de almacenamiento de Azure y, a continuación, se pueden descargar en un equipo local. Puede obtener la clave de evaluación de almacenamiento necesaria para descargar los datos exportados en la pestaña **exportaciones** . Para obtener más información, vea [exportar datos de casos en EDiscovery avanzado](exporting-data-ediscover20.md).
+Después de exportar los datos de un conjunto de revisión, use la pestaña **exportaciones** para administrar un trabajo de exportación y descargar datos de un conjunto de revisión. Al exportar un conjunto de revisión, los datos se cargan en una ubicación de almacenamiento de Azure proporcionada por Microsoft (o en una ubicación de almacenamiento de Azure administrada por la organización). Una vez que se carga en Azure, es posible descargarla en un equipo local. Puede obtener la clave de evaluación de almacenamiento necesaria para descargar los datos exportados en la pestaña **exportaciones** . Para obtener más información, vea [exportar datos de casos en EDiscovery avanzado](exporting-data-ediscover20.md).
 
 ## <a name="managing-jobs"></a>Administración de trabajos
 

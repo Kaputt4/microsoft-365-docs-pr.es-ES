@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Los administradores pueden usar el cmdlet Search-Mailbox para buscar en buzones de usuario y, después, eliminar mensajes de un buzón.
-ms.openlocfilehash: bb375bc7a3273e78acb44807e51a1cee0261e7af
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b3505026034fabcc6d509e7a187fafc5691ef9e7
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092969"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687893"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Buscar y eliminar mensajes: Ayuda para administradores
   
@@ -36,13 +36,13 @@ Como una protección adicional, primero puede copiar los mensajes en otro buzón
     
 - Tiene que tener asignados los siguientes roles de administración para buscar y eliminar los mensajes en los buzones de correo de los usuarios:
     
-  - **Búsqueda en buzones**: este rol permite buscar mensajes en varios buzones de la organización. Los administradores no tienen asignado este rol de forma predeterminada. Para asignarse a sí mismo este rol para poder buscar en buzones, agréguese como miembro del grupo de rol de administración de la detección. Vea [Add a User to the Discovery Management Role Group](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
+  - **Búsqueda en buzones**: este rol permite buscar mensajes en varios buzones de la organización. Los administradores no tienen asignado este rol de forma predeterminada. Para asignarse a sí mismo este rol para poder buscar en buzones, agréguese como miembro del grupo de rol de administración de la detección. Vea [Add a User to the Discovery Management Role Group](https://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
     
-  - **Importación y exportación de buzones** : este rol permite eliminar mensajes del buzón de un usuario. De forma predeterminada, este rol no está asignado a ningún grupo de roles. Para eliminar mensajes de los buzones de los usuarios, puede agregar el rol de importación o exportación de buzones al grupo de roles de administración de la organización. Para obtener más información, consulte la sección "agregar un rol a un grupo de roles" en [Manage role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
+  - **Importación y exportación de buzones** : este rol permite eliminar mensajes del buzón de un usuario. De forma predeterminada, este rol no está asignado a ningún grupo de roles. Para eliminar mensajes de los buzones de los usuarios, puede agregar el rol de importación o exportación de buzones al grupo de roles de administración de la organización. Para obtener más información, consulte la sección "agregar un rol a un grupo de roles" en [Manage role Groups](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
     
-- Si el buzón desde el cual desea eliminar los mensajes tiene la recuperación de un solo elemento habilitada, primero debe deshabilitar la función. Para obtener más información, consulte [Habilitar o deshabilitar la recuperación de elementos individuales de un buzón de correo](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
+- Si el buzón desde el cual desea eliminar los mensajes tiene la recuperación de un solo elemento habilitada, primero debe deshabilitar la función. Para obtener más información, consulte [Habilitar o deshabilitar la recuperación de elementos individuales de un buzón de correo](https://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
     
-- Si el buzón del que desea eliminar los mensajes está en espera, le recomendamos que se ponga en contacto con su departamento jurídico o de administración de registros antes de eliminar la espera y eliminar el contenido del buzón. Después de obtener la aprobación, siga los pasos que se indican en el tema [Clean up the Recoverable items Folder](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
+- Si el buzón del que desea eliminar los mensajes está en espera, le recomendamos que se ponga en contacto con su departamento jurídico o de administración de registros antes de eliminar la espera y eliminar el contenido del buzón. Después de obtener la aprobación, siga los pasos que se indican en el tema [Clean up the Recoverable items Folder](https://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
     
 - Puede buscar en un máximo de 10 000 buzones con el cmdlet **Search-Mailbox**. Si es Exchange Online de una organización y tiene más de 10 000 buzones, puede usar la característica Búsqueda de cumplimiento (o el cmdlet **New-ComplianceSearch** correspondiente) para buscar en un número ilimitado de buzones. Después, puede usar el cmdlet **New-ComplianceSearchAction** para eliminar los mensajes encontrados por una búsqueda de cumplimiento. Para obtener más información, vea [Buscar y eliminar mensajes de correo electrónico de la organización de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=786856).
     
@@ -54,17 +54,17 @@ Como una protección adicional, primero puede copiar los mensajes en otro buzón
 
 En este ejemplo, se buscan mensajes que contengan la frase "Su extracto bancario" en el campo Asunto en el buzón de correo de April Stewart y se registra el resultado en la carpeta SearchAndDeleteLog en el buzón de correo del administrador. Los mensajes no se copian ni eliminar en el buzón de correo de destino.
   
-```
+```powershell
 Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
 ```
 
 Este ejemplo busca en todos los buzones de la organización los mensajes que tienen cualquier tipo de archivo adjunto que contiene la palabra "Troyano" en el nombre de archivo y envía un mensaje de registro al buzón del administrador.
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
   
  
 ## <a name="search-and-delete-messages"></a>Buscar y eliminar mensajes
@@ -74,23 +74,23 @@ En este ejemplo, se buscan mensajes que contengan la frase "Su extracto bancario
 > [!IMPORTANT]
 > Cuando usa el cmdlet **Search-Mailbox** con el modificador  _DeleteContent_, los mensajes se eliminan permanentemente del buzón origen. Antes de eliminar permanentemente los mensajes, le recomendamos que use el modificador  _LogOnly_ para generar un registro de los mensajes encontrados en la búsqueda antes de que se eliminen o que copie los mensajes en otro buzón antes de eliminarlo desde el buzón origen. 
   
-```
+```powershell
 Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
 ```
 
 En este ejemplo, se buscan mensajes que contengan la frase "Su extracto bancario" en el campo Asunto en el buzón de correo de April Stewart, se copian los resultados de la búsqueda en la carpeta AprilStewart-DeletedMessages en el buzón BackupMailbox y se eliminan los mensajes del buzón de April.
   
-```
+```powershell
 Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox "BackupMailbox" -TargetFolder "AprilStewart-DeletedMessages" -LogLevel Full -DeleteContent
 ```
 
 Este ejemplo busca en todos los buzones de la organización los mensajes con el asunto "Descargar este archivo" y, a continuación, los elimina de forma definitiva. 
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
 
 ## <a name="using-the--loglevel-full-parameter"></a>Usar el parámetro -LogLevel Full
 

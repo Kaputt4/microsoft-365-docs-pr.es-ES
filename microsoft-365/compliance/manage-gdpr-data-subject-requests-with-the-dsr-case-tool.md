@@ -13,14 +13,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de cumplimiento de Office 365 y Microsoft 365 para administrar las investigaciones de los DSR de su organización.
-ms.openlocfilehash: 8a4882070509991ca91403c96b55825fac3a2536
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092608"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687837"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de seguridad & cumplimiento
 
@@ -133,13 +134,13 @@ Después de crear un caso de DSR y agregar miembros, el siguiente paso es ejecut
     
 Este es el aspecto de la consulta de palabra clave para la búsqueda integrada que se crea automáticamente al crear un caso DSR.
   
-```
+```powershell
 participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>"
 ```
 
 Por ejemplo, si el nombre del titular de los datos está en INA Robledo, la consulta de palabra clave tendría el siguiente aspecto:
   
-```
+```powershell
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
 
@@ -272,7 +273,7 @@ Para modificar las ubicaciones de contenido que se van a buscar:
 3. Si modifica las ubicaciones de contenido en la búsqueda integrada, haga clic en **Guardar &amp; ejecución** para reiniciar la búsqueda. 
 
 > [!NOTE]
-> Al realizar búsquedas en todas las ubicaciones de buzón o solo en buzones específicos, los datos de otras aplicaciones de Office 365 que se guardan en los buzones de usuario se incluyen al exportar los resultados de la búsqueda. Estos datos no se incluirán en los resultados de búsqueda estimados y no están disponibles para la vista previa. Pero se incluye cuando se exportan y se descargan los resultados de la búsqueda. Para obtener más información sobre las aplicaciones que almacenan datos en el buzón de un usuario, vea [contenido almacenado en buzones de correo de Exchange Online](what-is-stored-in-exo-mailbox.md).
+> Al realizar búsquedas en todas las ubicaciones de buzón o solo en buzones específicos, los datos de otras aplicaciones de Office 365 que se guardan en los buzones de usuario se incluyen al exportar los resultados de la búsqueda. Estos datos no se incluyen en los resultados de búsqueda estimados y no aparecen en la vista previa. Pero se incluye cuando se exportan y se descargan los resultados de la búsqueda. Para obtener más información sobre las aplicaciones que almacenan datos en el buzón de un usuario, vea [contenido almacenado en buzones de correo de Exchange Online](what-is-stored-in-exo-mailbox.md).
   
 ## <a name="more-information-about-using-the-dsr-case-tool"></a>Más información sobre el uso de la herramienta de casos de DSR
 
@@ -414,7 +415,7 @@ Este es un proceso de alto nivel para buscar elementos que el asunto de los dato
     
   - En el cuadro **palabras clave** , use la siguiente consulta de búsqueda: 
     
-    ```
+    ```powershell
     itemclass:ipm.post AND "<email address of the data subject>"
     ```
 

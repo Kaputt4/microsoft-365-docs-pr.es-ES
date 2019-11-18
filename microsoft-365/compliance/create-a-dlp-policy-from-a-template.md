@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
-ms.openlocfilehash: db32748b25296ef82c56160e95535ac488eb65a5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
+ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091960"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "38687626"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
@@ -167,8 +167,8 @@ Estos son los distintos Estados y su significado.
 |**Pruebas, sin notificaciones** <br/> |La Directiva está en modo de prueba. Las acciones de una regla no se aplican, pero las coincidencias de Directiva se recopilan y se pueden ver mediante los informes de DLP. Las notificaciones sobre coincidencias de directivas no se envían a los destinatarios especificados.  <br/> |
 |**On** <br/> |La directiva está activa y se exige. La directiva se implementó correctamente en todos sus orígenes de contenido.  <br/> |
 |**Desactivando...** <br/> |La directiva se está quitando de los orígenes de contenido que incluye. La directiva todavía puede estar activa y exigirse en algunos orígenes. La desactivación de una Directiva puede tardar hasta 45 minutos.  <br/> |
-|**Desactivada** <br/> |La directiva no está activa y no se exige. Se guarda la configuración de la directiva (orígenes, palabras clave, duración, etc.).  <br/> |
-|**Eliminando...** <br/> |La directiva está en proceso de eliminación. La directiva no está activa y no se exige.  <br/> |
+|**Desactivado** <br/> |La directiva no está activa y no se exige. Se guarda la configuración de la directiva (orígenes, palabras clave, duración, etc.).  <br/> |
+|**Eliminando...** <br/> |La directiva está en proceso de eliminación. La directiva no está activa y no se exige. Normalmente, la Directiva tarda una hora en eliminarse <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Desactivar una directiva DLP
 

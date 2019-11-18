@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Instale y use el explorador de Azure Storage para descargar documentos que se exportaron desde un conjunto de revisión en eDiscovery avanzado.
-ms.openlocfilehash: 4846a77d26079303f85778e71e6bdf2804ccea5e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 412ec48865c6cb7e511e3f6068fe02d87a99f831
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091711"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687857"
 ---
 # <a name="download-export-jobs"></a>Descargar trabajos de exportación
 
 Al exportar documentos de un conjunto de revisión en un caso de exhibición avanzada de documentos electrónicos, los documentos se cargan en una ubicación de almacenamiento de Azure proporcionada por Microsoft o en una ubicación de almacenamiento de Azure administrada por la organización. El tipo de ubicación de almacenamiento de Azure que se usa depende de la opción seleccionada al exportar los documentos. 
 
-En este artículo se proporcionan instrucciones sobre cómo usar el explorador de almacenamiento de Microsoft Azure para conectarse a una ubicación de almacenamiento de Azure para examinar y descargar los documentos exportados. Para obtener más información sobre el explorador de almacenamiento de Azure, consulte [QuickStart: Use Azure Storage Explorer](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+En este artículo se proporcionan instrucciones sobre cómo usar el explorador de almacenamiento de Microsoft Azure para conectarse a una ubicación de almacenamiento de Azure para examinar y descargar los documentos exportados. Para obtener más información sobre el explorador de almacenamiento de Azure, consulte [QuickStart: Use Azure Storage Explorer](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>Paso 1: instalar el explorador de almacenamiento de Azure
 
@@ -73,7 +73,7 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
 
     Se abre el nodo **contenedores de blobs** (en **cuentas** > de almacenamiento **(contenedores adjuntos)** \> . 
 
-    ![](./media/AzureStorageConnect5.png)
+    ![Exportar trabajos en el nodo contenedores de blobs](./media/AzureStorageConnect5.png)
 
     Contiene un contenedor denominado con el nombre para mostrar del paso 4. Este contenedor contiene una carpeta para cada trabajo de exportación que haya creado. A estas carpetas se les asigna un identificador que corresponde al identificador del trabajo de exportación. Puede encontrar estos identificadores de exportación (y el nombre de la exportación) en **información de soporte técnico** en la página de control flotante para cada trabajo **de preparación de datos para exportar** que aparecen en la ficha **trabajos** .
 

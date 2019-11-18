@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 641914893b78546b13bb446fc29e3669acaeee29
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1b578487a42e8663757468c848772afd93529753
+ms.sourcegitcommit: 0b5ef663f379c8bb0a223ebd3f09eec984d93812
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093589"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "38687602"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -43,7 +43,7 @@ Use la ficha **búsquedas** para crear búsquedas para buscar el Office 365 para
 
 ## <a name="review-and-investigate-evidence"></a>Revisión e investigación de pruebas
 
-Use la pestaña **evidencia** para investigar los datos que ha recopilado desde el servicio activo, que en este caso es Office 365. Los datos del conjunto de evidencias son una instantánea de los resultados de búsqueda que ha recopilado. Cuando se agregan resultados de búsqueda como evidencia, se desencadena un proceso para extraer archivos, metadatos y texto. Cuando se completa este proceso, la herramienta de investigaciones de datos crea un nuevo índice de todos los datos y lo agrega a un conjunto de evidencias. Para cualquier investigación que tenga en cuenta el tiempo, esto le permite incluir rápidamente el entorno mediante la eliminación de datos ubicados en las ubicaciones de contenido originales (en el servicio activo) mientras se investiga la evidencia recopilada en un entorno en cuarentena. Una vez recopilada la evidencia, puede ejecutar consultas adicionales para restringir los datos por intervalo de tiempo, tipos de archivo, propietarios de datos y otros tipos de condiciones. Por ejemplo, mediante el uso de las condiciones de autor, remitente y destinatario, puede identificar rápidamente a los usuarios que han participado en la reescritura de datos y si alguno de los datos derramados se ha compartido con personas fuera de la organización.
+Use la pestaña **evidencia** para investigar los datos que ha recopilado desde el servicio activo, que en este caso es Office 365. Los datos del conjunto de evidencias son una instantánea de los resultados de búsqueda que ha recopilado. Cuando se agregan resultados de búsqueda como evidencia, se desencadena un proceso para extraer archivos, metadatos y texto. Cuando se completa este proceso, la herramienta de investigaciones de datos crea un nuevo índice de todos los datos y lo agrega a un conjunto de evidencias. Para cualquier investigación que tenga en cuenta el tiempo, esto le permite incluir rápidamente el entorno mediante la eliminación de datos ubicados en las ubicaciones de contenido originales (en el servicio activo) mientras se investiga la evidencia recopilada en un entorno en cuarentena. Una vez recopilada la evidencia, puede ejecutar más consultas para restringir los datos por intervalo de tiempo, tipos de archivo, propietarios de datos y otros tipos de condiciones. Por ejemplo, mediante el uso de las condiciones de autor, remitente y destinatario, puede identificar rápidamente a los usuarios que han participado en la reescritura de datos y si alguno de los datos derramados se ha compartido con personas fuera de la organización.
 
 También puede ejecutar análisis avanzados en la evidencia que recopila. Esto puede proporcionarle temas generales y organizar las pruebas por parte de los subprocesos de correo electrónico, los duplicados exactos y los duplicados Near para facilitar su investigación. Puede revisar documentos en la vista Texto extraído o en el formato de archivo nativo, y etiquetarlos con resultados de la investigación. Para obtener más información, vea:
 
@@ -54,11 +54,11 @@ También puede ejecutar análisis avanzados en la evidencia que recopila. Esto p
 
 ## <a name="managing-people-of-interest"></a>Administración de personas de interés
 
-Use la ficha **personas de interés** para agregar y administrar las personas que ha identificado como personas de interés durante la investigación de la evidencia. Al agregar personas de interés, se identifican y asignan sus orígenes de datos, como el buzón de correo y la cuenta de OneDrive. A continuación, puede asignar el ámbito de búsquedas adicionales buscando solo las ubicaciones de contenido de esas personas. Cuando se trata de personas de interés, las búsquedas son más eficaces y precisas, ya que la herramienta vuelve a procesar los datos no indizados, como imágenes o tipos de archivo no admitidos. En la ficha **personas de interés** , también puede ver y buscar la actividad de los registros de auditoría de esas personas para ayudarle a investigar con más detalle. Puede agregar más personas de interés durante la investigación. Para obtener más información, consulte [Manage People of Interest a Investigate](manage-people-of-interest.md).
+Use la ficha **personas de interés** para agregar y administrar las personas que ha identificado como personas de interés durante la investigación de la evidencia. Al agregar personas de interés, se identifican y asignan sus orígenes de datos, como el buzón de correo y la cuenta de OneDrive. A continuación, puede buscar el ámbito de las búsquedas buscando solo las ubicaciones de contenido de esas personas. Cuando se trata de personas de interés, las búsquedas son más eficaces y precisas, ya que la herramienta reprocesa los datos no indizados, como imágenes o tipos de archivos no admitidos. En la ficha **personas de interés** , también puede ver y buscar la actividad de los registros de auditoría de esas personas para ayudarle a investigar con más detalle. Puede agregar más personas de interés durante la investigación. Para obtener más información, consulte [Manage People of Interest a Investigate](manage-people-of-interest.md).
 
 ## <a name="indexing-the-data-of-people-of-interest"></a>Indización de los datos de personas de interés
 
-Agregar una persona de interés a una investigación vuelve a indizar los elementos parcialmente indizados de los orígenes de datos de la persona. Este proceso se denomina *indización avanzada*. La indización avanzada vuelve a procesar datos como imágenes y tipos de archivo no admitidos para que estos datos se puedan detectar completamente cuando se ejecutan búsquedas para recopilar datos para una investigación. Use la ficha **procesamiento** para supervisar el estado de la indización avanzada y corregir los errores de procesamiento que puedan producirse mediante un proceso denominado *corrección de errores*. Para obtener más información, vea [corrección de errores al procesar datos para una investigación](error-remediation.md).
+Agregar una persona de interés a una investigación vuelve a indizar los elementos parcialmente indizados de los orígenes de datos de la persona. Este proceso se denomina *indización avanzada*. La indización avanzada reprocesa datos como imágenes y tipos de archivo no admitidos para que estos datos se puedan detectar completamente cuando se ejecutan búsquedas para recopilar datos para una investigación. Use la ficha **procesamiento** para supervisar el estado de la indización avanzada y corregir los errores de procesamiento que puedan producirse mediante un proceso denominado *corrección de errores*. Para obtener más información, vea [corrección de errores al procesar datos para una investigación](error-remediation.md).
 
 ## <a name="exporting-data"></a>Exportar datos
 
@@ -66,8 +66,8 @@ Si desea exportar datos, use la pestaña **exportaciones** para administrar un t
 
 ## <a name="managing-jobs"></a>Administración de trabajos
 
-Use la ficha **trabajos** para supervisar los procesos de ejecución prolongada de las tareas relacionadas con la investigación. Esto incluye trabajos para la ejecución de búsquedas, agregar datos a un conjunto de evidencias, volver a indizar datos y exportar pruebas. Por ejemplo, puede crear una nueva búsqueda en la ficha **búsquedas** que incluya un gran número de orígenes de datos. El estado de este proceso de búsqueda se muestra en la pestaña **trabajos** . Para obtener más información, vea [Manage Jobs in a Data Investigation](manage-jobs.md).
+Use la ficha **trabajos** para supervisar los procesos de ejecución prolongada de las tareas relacionadas con la investigación. Esto incluye trabajos para la ejecución de búsquedas, adición de datos a un conjunto de evidencias, reindización de datos y exportación de evidencias. Por ejemplo, puede crear una búsqueda en la ficha **búsquedas** que incluye muchos orígenes de datos. El estado de este proceso de búsqueda se muestra en la pestaña **trabajos** . Para obtener más información, vea [Manage Jobs in a Data Investigation](manage-jobs.md).
 
 ## <a name="configuring-investigation-settings"></a>Configuración de las opciones de investigación
 
-Use la pestaña **configuración** para establecer la configuración de toda la investigación. Esto incluye agregar miembros a una investigación, cerrar o eliminar una investigación y configurar el comportamiento de búsqueda y análisis. Para obtener más información, vea [Configure Settings in Data investigaciones (Preview)](configure-settings-datainvestigations.md).
+Use la pestaña **configuración** para establecer la configuración de toda la investigación. Esto incluye agregar miembros a una investigación, cerrar o eliminar una investigación y configurar el comportamiento de búsqueda y análisis.

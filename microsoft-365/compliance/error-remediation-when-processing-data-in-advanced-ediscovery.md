@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 02fa8870d6edb4e1a6616604ee0e98638b217237
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 66c515ff083d8b71a9ec4851986639063858514d
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092567"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38687620"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
@@ -95,6 +95,14 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en caso
 11. Después de ejecutar el comando AzCopy, haga clic en **siguiente: procesar archivos**.
 
     Una vez finalizado el procesamiento, puede ir a revisar establecer y ver los archivos corregidos. 
+
+## <a name="remediating-errors-in-container-files"></a>Corrección de errores en archivos de contenedor
+
+En situaciones en las que la exhibición de documentos electrónicos avanzado no puede extraer el contenido de un archivo contenedor (por ejemplo, un archivo. zip), los contenedores se pueden descargar y el contenido se puede expandir en la misma carpeta en la que reside el contenedor original. Los archivos expandidos se atribuirán al contenedor primario como si se hubiera expandido originalmente con eDiscovery avanzado. El proceso funciona como se ha descrito anteriormente, a excepción de cargar un solo archivo como archivo de reemplazo.  Al cargar archivos corregidos, no incluya el archivo contenedor original.
+
+## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Corrección de errores mediante la carga del texto extraído
+
+A veces no es posible corregir un archivo en formato nativo que la exhibición avanzada de documentos electrónicos pueda interpretar. Sin embargo, puede reemplazar el archivo original por un archivo de texto que contenga el texto original del archivo nativo (en un proceso denominado " *superposición de texto*"). Para ello, siga los pasos descritos en este artículo, pero en lugar de corregir el archivo original en formato nativo, debe crear un archivo de texto que contenga el texto extraído del archivo original y, a continuación, cargar el archivo de texto con el nombre de archivo original. anexado con un sufijo. txt. Por ejemplo, puede descargar un archivo durante la corrección de errores con el nombre de archivo 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. Abra el archivo en la aplicación nativa, copie el texto y, a continuación, péguelo en un nuevo archivo denominado 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. txt. Al hacerlo, asegúrese de quitar el archivo original en formato nativo de la ubicación de archivos corregidos en el equipo local antes de cargar el archivo de texto corregido en la exhibición avanzada de documentos electrónicos.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Qué sucede cuando se corrigen los archivos
 

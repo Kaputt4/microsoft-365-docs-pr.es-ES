@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
-ms.openlocfilehash: 198459eb013c2f34b1a440d29375069175bfb0c6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d416e1e808ae6045f5510e0a051f038e4b38c06
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092565"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687852"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -35,7 +36,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para exportar los resultados de la búsqueda, debe tener asignado el rol de administración exportar en el centro de seguridad & cumplimiento. Este rol se asigna al grupo de roles de administrador de exhibición de documentos electrónicos integrado. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para obtener más información, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
+- Para exportar los resultados de la búsqueda, debe tener asignado el rol de administración exportar en el centro de seguridad & cumplimiento. Este rol se asigna al grupo de roles de administrador de exhibición de documentos electrónicos integrado. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
     
 - El equipo que use para exportar los resultados de búsqueda debe cumplir los siguientes requisitos del sistema:
     
@@ -47,7 +48,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
     
      - Microsoft Edge
     
-        O
+        O BIEN
     
      - Microsoft Internet Explorer 10 y versiones posteriores
     
@@ -65,17 +66,17 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
     
     Agregue las líneas siguientes al archivo *Machine. config* en algún lugar entre `<configuration>` las `</configuration>` etiquetas y. Asegúrese de reemplazar `ProxyServer` y `Port` con los valores correctos para su organización; por ejemplo, `proxy01.contoso.com:80` . 
     
-    ```
+    ```text
     <system.net>
        <defaultProxy enabled="true" useDefaultCredentials="true">
-         <proxy proxyaddress="http://ProxyServer :Port " 
+         <proxy proxyaddress="https://ProxyServer :Port " 
                 usesystemdefault="False" 
                 bypassonlocal="True" 
                 autoDetect="False" />
        </defaultProxy>
     </system.net>
     ```
-    
+
 ## <a name="step-1-prepare-search-results-for-export"></a>Paso 1: Preparar los resultados de búsqueda para la exportación
 
 El primer paso es preparar los resultados de búsqueda para la exportación. Al preparar los resultados, estos se cargan en una ubicación de almacenamiento de Azure proporcionada por Microsoft en la nube de Microsoft. El contenido de los buzones de correo y los sitios se carga a una tasa máxima de 2 GB por hora.
@@ -256,7 +257,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
     Si exporta los elementos indizados y parcialmente indizados o si exporta sólo los elementos indizados de una búsqueda de contenido que devuelve todos los elementos, se descargará el mismo número de elementos. Esto ocurre aunque los resultados de búsqueda estimados para la búsqueda de contenido (que se muestran en las estadísticas de búsqueda en el centro de seguridad & cumplimiento) sigan incluyendo una estimación independiente del número de elementos parcialmente indizados. Por ejemplo, supongamos que la estimación de una búsqueda que incluye todos los elementos (sin palabras clave en la consulta de búsqueda) muestra que se han encontrado 1.000 elementos y que también se han encontrado 200 elementos indizados parcialmente. En este caso, los elementos 1.000 incluyen los elementos parcialmente indizados porque la búsqueda devuelve todos los elementos. Es decir, hay 1.000 total de elementos devueltos por la búsqueda y no 1.200 elementos (como cabría esperar). Si exporta los resultados de esta búsqueda y elige exportar los elementos indizados y parcialmente indizados (o exportar solo los elementos parcialmente indizados), se descargarán 1.000 elementos. Una vez más, esto se debe a que los elementos parcialmente indizados se incluyen con los resultados normales (indizados) cuando se usa una consulta de búsqueda en blanco para devolver todos los elementos. En este mismo ejemplo, si elige exportar sólo los elementos parcialmente indizados, solo se descargarán los elementos sin indexar 200.
     
-    Tenga en cuenta también que en el ejemplo anterior (cuando exporte elementos indizados y indizados parcialmente o exporte sólo elementos indexados), el informe de **Resumen de exportación** incluido con los resultados de la búsqueda exportados mostraría 1.000 elementos estimados y 1.000 descargados elementos por los mismos motivos que se han descrito anteriormente. 
+    Además, tenga en cuenta que en el ejemplo anterior (cuando se exportan elementos indizados y indizados parcialmente, o se exportan solo elementos indexados), el informe de **Resumen de exportación** incluido en los resultados de la búsqueda exportados mostraría 1.000 elementos estimados y 1.000 elementos descargados por las mismas razones que anteriormente se describió. 
     
 - Si la búsqueda desde la que está exportando resultados es una búsqueda de ubicaciones de contenido específicas o de todas las ubicaciones de contenido de su organización, solo se exportarán las ubicaciones de contenido de los elementos parciales que contienen elementos que coinciden con los criterios de búsqueda. Es decir, si no se encuentran resultados de búsqueda en un buzón de correo o en un sitio, no se exportarán los elementos parcialmente indizados de ese buzón o sitio. El motivo es que exportar los elementos parcialmente indizados de muchos lugares de la organización puede aumentar la probabilidad de errores de exportación y aumentar el tiempo que se tarda en exportar y descargar los resultados de la búsqueda.
     
@@ -277,7 +278,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
     Si elige exportar elementos parcialmente indizados, los elementos del buzón indizados parcialmente se exportan a un archivo PST independiente independientemente de la opción que elija en **exportar contenido de Exchange como**.
 
-- Si se devuelven elementos parcialmente indizados en los resultados de la búsqueda (ya que otras propiedades de elementos parcialmente indizados coinciden con los criterios de búsqueda), se exportan los que están parcialmente indizados con los resultados de la búsqueda normales. Por lo tanto, si decide exportar tanto los elementos indizados como los elementos parcialmente indizados (seleccionando **todos los elementos, incluidos los que tienen un formato no reconocido, que están cifrados o no se indizaron por otros motivos** , opción de exportación), se exportarán los elementos parcialmente indizados. con los resultados habituales se enumerarán en el informe Results. csv. No aparecerán en el informe items. csv sin indexar.
+- Si se devuelven elementos parcialmente indizados en los resultados de la búsqueda (ya que otras propiedades de elementos parcialmente indizados coinciden con los criterios de búsqueda), se exportan los que están parcialmente indizados con los resultados de la búsqueda normales. Por lo tanto, si decide exportar tanto los elementos indexados como los elementos indizados parcialmente (seleccionando **todos los elementos, incluidos los que tienen un formato no reconocido, que están cifrados o no se indizaron por otros motivos** , la opción de exportación), los elementos parcialmente indizados exportados con los resultados normales se mostrarán en el informe Results. csv. No aparecerán en el informe items. csv sin indexar.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportar mensajes individuales o archivos PST
   

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector nativo para importar datos desde una página de la compañía de LinkedIn a Office 365. Esto le permite archivar datos de orígenes de datos de terceros en Office 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar el cumplimiento de los datos de terceros de la organización.
-ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1117eb6b7c756519ad07cafc52a635d65999d9e0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092109"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687818"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configurar un conector para archivar datos de LinkedIn en Office 365 (versión preliminar)
 
@@ -71,14 +71,10 @@ Para ver más detalles, haga clic en el conector en la lista de la página **arc
 
 - Debido al comportamiento anterior, puede buscar las propiedades del `from` correo `subject` electrónico o no al usar una herramienta de exhibición de documentos electrónicos de Microsoft para buscar elementos de LinkedIn archivados en Office 365. Por ejemplo, si el nombre de la página compañía es "página contoso Company", puede usar uno de los siguientes pares *Property: Value* en la consulta de búsqueda de palabras clave:
    
-   ```
-   from:"Contoso Company Page"
-   ```
+   > de: "página de la compañía contoso"
 
     O bien
 
-   ```
-   subject:"Contoso Company Page"
-   ```
+   > asunto: "página de la compañía contoso"
 
 - Para que sea más fácil localizar o administrar los elementos de LinkedIn importados a Office 365, el propietario del buzón de correo de almacenamiento (o cualquier persona que tenga asignado el permiso FullAccess) puede configurar una regla de bandeja de entrada para mover los elementos de una página de la compañía de LinkedIn a una carpeta específica. Esto es útil si el buzón de almacenamiento se usa para archivar los elementos importados de distintos orígenes de datos de terceros. Por ejemplo, puede crear una regla de bandeja de entrada que mueva todos los elementos que contengan el nombre de una página específica de la compañía de LinkedIn en el campo asunto a una carpeta específica.

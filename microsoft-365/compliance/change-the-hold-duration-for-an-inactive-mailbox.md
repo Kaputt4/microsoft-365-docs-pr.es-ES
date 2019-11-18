@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Una vez que un buzón de correo de Office 365 se convierte en inactivo, puede cambiar la duración de la Directiva de retención de Office 365 o de suspensión asignada al buzón inactivo. La duración de retención define cuánto tiempo se retienen los elementos en la carpeta Elementos recuperables.
-ms.openlocfilehash: 7840131af3df32b8b8e5a0faa1b101f9ec8ef541
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c07c360a557dfad5b13447bbc9fbf800f96e75d5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092050"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687820"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Cambiar la duración de retención para un buzón inactivo en Office 365
 
@@ -48,16 +48,16 @@ Debido a que los distintos tipos de retenciones o una o más directivas de reten
   
 Ejecute el siguiente comando en Exchange Online PowerShell para mostrar la información de retención de todos los buzones inactivos de la organización.
   
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,InPlaceHolds
 ```
-   
+
 El valor de **True** para la propiedad **LitigationHoldEnabled** indica que el buzón inactivo está en retención por juicio. Si una directiva de retención local, conservación de exhibición de documentos electrónicos u Office 365 se coloca en un buzón inactivo, se muestra un GUID para la Directiva de retención o retención como el valor de la propiedad **InPlaceHolds** . Por ejemplo, a continuación se muestran los resultados de 5 buzones inactivos. 
   
 ||
 |:-----|
 |
-```
+```text
 DisplayName           : Ann Beebe
 Name                  : annb
 IsInactiveMailbox     : True
@@ -93,7 +93,7 @@ LitigationHoldEnabled : False
 LitigationHoldDuration: Unlimited
 InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 ```
-   
+
 En la siguiente tabla se identifican los cinco tipos de retención que se usaron para convertir cada buzón en inactivo.
   
 |**Buzón inactivo**|**Tipo de retención**|**Cómo identificar la retención en el buzón inactivo**|
@@ -114,7 +114,7 @@ Tras identificar el tipo de retención que está colocada en el buzón inactivo 
 
 Esta es la manera de usar Exchange Online PowerShell para cambiar la duración de retención para una retención por juicio que se coloca en un buzón inactivo. No puede usar el EAC. Ejecute el siguiente comando para cambiar la duración de retención. En este ejemplo, se cambia la duración de retención a un período de tiempo ilimitado.
   
-```
+```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited
 ```
 
@@ -131,7 +131,7 @@ El resultado es que los elementos del buzón inactivo se conservan indefinidamen
 
 1. Si conoce el nombre de la conservación local que quiere cambiar, vaya al siguiente paso. De lo contrario, ejecute el siguiente comando para obtener el nombre de la conservación local colocada en el buzón inactivo. Use el GUID de conservación local que obtuvo en el [paso 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
@@ -155,13 +155,13 @@ El resultado es que los elementos del buzón inactivo se conservan indefinidamen
 
 1. Si conoce el nombre de la conservación local que quiere cambiar, vaya al siguiente paso. De lo contrario, ejecute el siguiente comando para obtener el nombre de la conservación local colocada en el buzón inactivo. Use el GUID de conservación local que obtuvo en el [paso 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
 2. Ejecute el siguiente comando para cambiar la duración de retención. En este ejemplo, se cambia la duración de retención a 2.555 días (aproximadamente 7 años). 
     
-    ```
+    ```powershell
     Set-MailboxSearch <identity of In-Place Hold> -ItemHoldPeriod 2555
     ```
 
@@ -173,28 +173,28 @@ El resultado es que los elementos del buzón inactivo se conservan indefinidamen
     
 - **¿Qué sucede cuando expira la duración de retención?** Cuando expira la duración de retención de un elemento en la carpeta Elementos recuperables, el elemento se elimina permanentemente (se purga) del buzón inactivo. Si no hay ninguna duración especificada para la retención que se coloca en el buzón inactivo, nunca se purgan los elementos de la carpeta Elementos recuperables (a menos que se cambie la duración de retención del buzón inactivo). 
     
-- **¿Se sigue procesando una directiva de retención de Exchange en buzones inactivos?** Si una directiva de retención de Exchange (la característica de administración de registros de mensajería, o MRM, en Exchange Online) se aplicó a un buzón de correo cuando se inactivo, las directivas de eliminación (que son etiquetas de retención configuradas con una acción de retención de **eliminación** ) se seguir procesándose en el buzón inactivo. Esto significa que los elementos etiquetados con una directiva de eliminación se mueven a la carpeta Elementos recuperables cuando expira el período de retención. Esos elementos luego se purgan del buzón inactivo cuando expira la duración de retención de un elemento. 
+- **¿Se sigue procesando una directiva de retención de Exchange en buzones inactivos?** Si una directiva de retención de Exchange (la característica de administración de registros de mensajería, o MRM, en Exchange Online) se aplicó a un buzón de correo cuando se inactivo, las directivas de eliminación (que son etiquetas de retención configuradas con una acción de retención de **eliminación** ) seguirán procesándose en el buzón inactivo. Esto significa que los elementos etiquetados con una directiva de eliminación se mueven a la carpeta Elementos recuperables cuando expira el período de retención. Esos elementos luego se purgan del buzón inactivo cuando expira la duración de retención de un elemento. 
     
     Por el contrario, se ignora cualquier directiva de archivo (que son etiquetas de retención configuradas con una acción de retención **MoveToArchive** ) que esté incluida en la directiva de retención asignada a un buzón inactivo. Eso significa que los elementos de un buzón inactivo etiquetados con una directiva de archivo permanecen en el buzón principal cuando expira el período de retención. No se mueven al buzón de archivo o a la carpeta Elementos recuperables en el buzón de archivo. Dado que un usuario no puede iniciar sesión en un buzón inactivo, no existen motivos para consumir los recursos del centro de datos para procesar las directivas de archivo. 
     
 - **Para comprobar la nueva duración de retención, ejecute uno de los siguientes comandos.** El primer comando es para retención por juicio; el segundo es para conservación local. 
 
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | FL LitigationHoldDuration
     ```
 
-    ```
+    ```powershell
     Get-MailboxSearch <identity of In-Place Hold> | FL ItemHoldPeriod
     ```
 
 - **Al igual que los buzones habituales, el Asistente para carpeta administrada (MFA) también procesa buzones inactivos.** En Exchange Online, el MFA procesa buzones una vez cada siete días aproximadamente. Después de cambiar la duración de retención para un buzón inactivo, puede usar el cmdlet **Start-ManagedFolderAssistant** para empezar a procesar inmediatamente la nueva duración de retención para el buzón inactivo. Ejecute el comando siguiente. 
 
-    ```
+    ```powershell
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>
     ```
    
 - **Si se colocan muchas suspensiones en un buzón inactivo, no se mostrarán todos los GUID de retención.** Puede ejecutar el siguiente comando para mostrar los GUID de todas las suspensiones (excepto las suspensiones por juicio) que se colocan en un buzón inactivo. 
     
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds
     ```

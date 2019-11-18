@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar y exportar datos de chat de Microsoft Teams (denominados 1xN chats) para usuarios locales en una implementación híbrida de Exchange.
-ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97b849e682c0902b6a2d48919c2f2cd1257d8691
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093540"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687894"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Buscar buzones de correo basados en la nube para usuarios locales en Office 365
 
@@ -38,7 +38,7 @@ Estos son los requisitos y las limitaciones para configurar buzones de correo ba
     
  **Nota:** Las conversaciones del canal de Teams siempre se almacenan en el buzón de correo basado en la nube que está asociado al equipo. Esto significa que puede usar la búsqueda de contenido para buscar conversaciones de canal sin tener que archivar una solicitud de soporte técnico. Para obtener más información sobre las conversaciones del canal de búsqueda en Teams, consulte [Searching Microsoft Teams and Office 365 Groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Si un usuario habilitado para Microsoft Teams tiene un buzón de correo local y su cuenta de usuario/identidad se ha sincronizado en la nube, Microsoft crea un buzón de correo basado en la nube para almacenar los datos de chat de 1xN Teams. Una vez que los datos de chat de Microsoft Teams se almacenan en el buzón basado en la nube, se indizan para la búsqueda. Esto le permite usar la búsqueda de contenido (y las búsquedas asociadas con casos de eDiscovery) para buscar, obtener una vista previa y exportar los datos de chat de Microsoft Teams a los usuarios locales. También puede usar ** \*** los cmdlets de ComplianceSearch en el PowerShell del centro de cumplimiento de & de seguridad para buscar los datos de chat de Microsoft Teams para los usuarios locales. 
   
@@ -86,7 +86,7 @@ Una vez habilitada la característica, puede usar la búsqueda de contenido en e
     
 3. Cree la consulta de palabra clave y agregue condiciones a la consulta de búsqueda si es necesario. Para buscar solo los datos de los chats de equipo, puede Agregar la siguiente consulta en el cuadro **palabras clave** : 
     
-    ```
+    ```text
     kind:im
     ``` 
 
@@ -112,15 +112,15 @@ Puede usar los cmdlets **New-compliancesearch** y **set-ComplianceSearch** en el
     
 2. Ejecute el siguiente comando de PowerShell para crear una búsqueda de contenido que busque los buzones de correo basados en la nube de los usuarios locales.
     
-    ```
+    ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
-   
+
     El parámetro *IncludeUserAppContent* se usa para especificar el buzón basado en la nube para el usuario o los usuarios especificados por el parámetro *ExchangeLocation* . El *AllowNotFoundExchangeLocationsEnabled* permite buzones de correo basados en la nube para los usuarios locales. Cuando se usa el `$true` valor para este parámetro, la búsqueda no intenta validar la existencia del buzón antes de ejecutarse. Esto es necesario para buscar los buzones de correo basados en la nube para los usuarios locales porque estos tipos de buzones no se resuelven como buzones normales. 
     
     En el siguiente ejemplo se buscan chats de Microsoft Teams (que son mensajes instantáneos) que contienen la palabra clave "Redstone" en el buzón de correo basado en la nube de Sara Davis, que es un usuario local de la organización de contoso.
   
-    ```
+    ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 

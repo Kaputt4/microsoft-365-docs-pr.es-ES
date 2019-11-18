@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Con Office 365, el contenido está cifrado en reposo y en tránsito con el cifrado, los protocolos y las tecnologías más seguros disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: 1dd31990e4a284c81ce9fa8b2aced45b8a06a0c6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e63eb239f37f5f68da05f90998baf5bf6201fb71
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092483"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38687698"
 ---
 # <a name="encryption-in-office-365"></a>Cifrado en Office 365
 
@@ -37,11 +37,11 @@ El proceso de cifrado codifica los datos (denominados texto sin formato) en text
   
 El cifrado por sí solo no impide la interceptación de contenido. El cifrado forma parte de una estrategia de protección de la información más amplia para su organización. Mediante el cifrado, se asegura de que solo las partes autorizadas puedan usar los datos cifrados.
   
-Puede tener varios niveles de cifrado en su ubicación al mismo tiempo. Por ejemplo, puede cifrar los mensajes de correo electrónico y los canales de comunicación a través de los cuales fluye el correo electrónico. Con Office 365, los datos se cifran en reposo y en tránsito, mediante el uso de varios protocolos de cifrado seguros y tecnologías que incluyen seguridad de la capa de transporte/capa de sockets seguros (TLS/SSL), seguridad de protocolo de Internet (IPSec) y cifrado avanzado Estándar (AES).
+Puede tener varios niveles de cifrado en su ubicación al mismo tiempo. Por ejemplo, puede cifrar los mensajes de correo electrónico y los canales de comunicación a través de los cuales fluye el correo electrónico. Con Office 365, los datos se cifran en reposo y en tránsito, mediante el uso de varios protocolos de cifrado seguros y tecnologías que incluyen seguridad de la capa de transporte/capa de sockets seguros (TLS/SSL), seguridad de protocolo de Internet (IPSec) y estándar de cifrado avanzado (AES).
   
 ## <a name="encryption-for-data-at-rest-and-data-in-transit"></a>Cifrado de datos en reposo y datos en tránsito
 
- **Algunos ejemplos de datos en reposo** incluyen los archivos que ha cargado en una biblioteca de SharePoint, los datos de Project online, los documentos que ha cargado en una reunión de Skype empresarial, los mensajes de correo electrónico y los datos adjuntos que ha almacenado en las carpetas de su Office 365 el buzón de correo y los archivos que ha cargado en OneDrive para la empresa.
+ **Algunos ejemplos de datos en reposo** incluyen los archivos que se han cargado en una biblioteca de SharePoint, los datos de Project online, los documentos que se han cargado en una reunión de Skype empresarial, los mensajes de correo electrónico y los datos adjuntos que se han almacenado en carpetas en el buzón de Office 365 y los archivos que se han cargado en OneDrive para la empresa.
   
  **Algunos ejemplos de datos en tránsito** son los mensajes de correo que están en proceso de entrega o las conversaciones que se están llevando a cabo en una reunión en línea. En Office 365, los datos están en tránsito siempre que el dispositivo de un usuario se comunica con un servidor de Office 365 o cuando un servidor de Office 365 se comunica con otro servidor.
   
@@ -49,7 +49,7 @@ Con Office 365, hay varias capas y tipos de cifrado que funcionan conjuntamente 
   
 |**Tipos de contenido**|**Tecnologías de cifrado**|**Recursos para obtener más información**|
 |:-----|:-----|:-----|
-|Archivos en un dispositivo. Estos archivos pueden incluir mensajes de correo electrónico guardados en una carpeta, documentos de Office guardados en un equipo, una tableta o un teléfono, o datos guardados en la nube de Microsoft.  <br/> |BitLocker en centros de recursos de Microsoft. BitLocker también se puede usar en equipos cliente, como equipos y tabletas Windows  <br/> Administrador de claves distribuidas (DKM) en centros de recursos de Microsoft  <br/> Clave del cliente de Office 365  <br/> |[Centro de TI de Windows: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro de confianza de Microsoft: cifrado](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Serie de controles de seguridad en la nube: cifrado de datos en reposo](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md) <br/> [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md) <br/> |
+|Archivos en un dispositivo. Estos archivos pueden incluir mensajes de correo electrónico guardados en una carpeta, documentos de Office guardados en un equipo, una tableta o un teléfono, o datos guardados en la nube de Microsoft.  <br/> |BitLocker en centros de recursos de Microsoft. BitLocker también se puede usar en equipos cliente, como equipos y tabletas Windows  <br/> Administrador de claves distribuidas (DKM) en centros de recursos de Microsoft  <br/> Clave del cliente de Office 365  <br/> |[Centro de TI de Windows: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro de confianza de Microsoft: cifrado](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Serie de controles de seguridad en la nube: cifrado de datos en reposo](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md) <br/> [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md) <br/> |
 |Archivos en tránsito entre usuarios. Estos archivos pueden incluir documentos de Office o elementos de lista de SharePoint compartidos entre usuarios.  <br/> |TLS para los archivos en tránsito  <br/> |[Cifrado de datos en OneDrive para la Empresa y SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype empresarial online: seguridad y archivado](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
 |Correo electrónico en tránsito entre los destinatarios. Este correo electrónico incluye correo electrónico hospedado por Exchange Online.  <br/> |Office 365 cifrado de mensajes con Azure Rights Management, S/MIME y TLS para el correo electrónico en tránsito  <br/> |[Cifrado de mensajes de Office 365 (OME)](ome.md) <br/> [Cifrado de correo electrónico en Office 365](email-encryption.md) <br/> [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 
@@ -57,7 +57,7 @@ Con Office 365, hay varias capas y tipos de cifrado que funcionan conjuntamente 
 
 Office 365 proporciona soluciones administradas por Microsoft para el cifrado de volúmenes, el cifrado de archivos y el cifrado de buzones en Office 365. Además, Office 365 proporciona soluciones de cifrado que puede administrar y controlar. Estas soluciones de cifrado se basan en Azure.
   
-Para obtener más información, vea los siguientes recursos:
+Para obtener más información, consulte los siguientes recursos:
   
 - [¿Qué es Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 

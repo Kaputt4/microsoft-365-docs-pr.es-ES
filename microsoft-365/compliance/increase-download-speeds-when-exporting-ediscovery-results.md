@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Obtenga información sobre cómo configurar el registro de Windows para aumentar el rendimiento de los datos al descargar resultados de búsqueda y datos de búsqueda del centro de seguridad & cumplimiento y la exhibición avanzada de documentos electrónicos en Office 365.
-ms.openlocfilehash: 44f595e6beffcc3d6789ad7b6f70ad77a48381cb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f74d164250f9d5b9b8315fe2651d3374457451ed
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092395"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687842"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Aumentar la velocidad de descarga al exportar resultados de búsqueda de exhibición de documentos electrónicos de Office 365
 
-Cuando usa la herramienta de exportación de exhibición de documentos electrónicos de Office 365 para descargar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento o descargar datos desde Office 365 Advanced eDiscovery, la herramienta inicia un determinado número de operaciones de exportación simultáneas para descargar el datos en el equipo local. De forma predeterminada, el número de operaciones simultáneas se establece en 8 veces el número de núcleos en el equipo que está usando para descargar los datos. Por ejemplo, si tiene un equipo con dos núcleos (es decir, dos unidades de procesamiento central en un chip), el número predeterminado de operaciones de exportación simultáneas es 16. Para aumentar el rendimiento de la transferencia de datos y acelerar el proceso de descarga, puede aumentar el número de operaciones simultáneas configurando una configuración del registro de Windows en el equipo que use para descargar los resultados de la búsqueda. Para acelerar el proceso de descarga, se recomienda comenzar con una configuración de 24 operaciones simultáneas.
+Cuando usa la herramienta de exportación de exhibición de documentos electrónicos de Office 365 para descargar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento o descargar datos desde Office 365 Advanced eDiscovery, la herramienta inicia un determinado número de operaciones de exportación simultáneas para descargar los datos en el equipo local. De forma predeterminada, el número de operaciones simultáneas se establece en 8 veces el número de núcleos en el equipo que está usando para descargar los datos. Por ejemplo, si tiene un equipo con dos núcleos (es decir, dos unidades de procesamiento central en un chip), el número predeterminado de operaciones de exportación simultáneas es 16. Para aumentar el rendimiento de la transferencia de datos y acelerar el proceso de descarga, puede aumentar el número de operaciones simultáneas configurando una configuración del registro de Windows en el equipo que use para descargar los resultados de la búsqueda. Para acelerar el proceso de descarga, se recomienda comenzar con una configuración de 24 operaciones simultáneas.
   
 Si descarga los resultados de la búsqueda en una red de ancho de banda bajo, aumentar esta configuración puede tener un impacto negativo. Como alternativa, es posible que pueda aumentar la configuración a más de 24 operaciones simultáneas en una red de ancho de banda alto (el número máximo de operaciones simultáneas es 48). Después de configurar este valor del registro, es posible que tenga que cambiarlo para encontrar el número óptimo de operaciones simultáneas para su entorno.
   
@@ -33,7 +33,7 @@ Lleve a cabo el siguiente procedimiento en el equipo que va a usar para descarga
     
 2. Guarde el siguiente texto en un archivo de registro de la ventana mediante un sufijo de nombre de archivo. reg; por ejemplo, ConcurrentOperations. reg. 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "DownloadConcurrency"="24"

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'Use un script de PowerShell para crear una búsqueda de exhibición de documentos electrónicos local en Exchange online en función de una búsqueda creada en el centro de seguridad & cumplimiento. '
-ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a16bf747da2d2eb8219ac4c13f4ff8c34d37b2c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092862"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687886"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Usar Búsqueda de contenido en el flujo de trabajo de eDiscovery
 
@@ -62,11 +62,11 @@ También puede usar el cmdlet **New-ComplianceSearch** para buscar en todos los 
   
 Este es un ejemplo del uso de PowerShell para buscar en todos los buzones de la organización. La consulta de búsqueda devuelve todos los mensajes enviados entre el 1 de enero de 2015 y el 30 de junio de 2015 y que contienen la frase "informe financiero" en la línea del asunto. El primer comando crea la búsqueda y el segundo comando la ejecuta. 
   
-```
+```powershell
 New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -ContentMatchQuery 'sent>=01/01/2015 AND sent<=06/30/2015 AND subject:"financial report"'
 ```
 
-```
+```powershell
 Start-ComplianceSearch -Identity "Search All-Financial Report"
 ```
 
@@ -80,7 +80,7 @@ Para ayudarle a crear una búsqueda de contenido con un máximo de 1.000 buzones
   
 1. Guarde el siguiente texto en un archivo de script de PowerShell con un sufijo de nombre de archivo de. ps1. Por ejemplo, puede guardarlo en un archivo denominado `SourceMailboxes.ps1`.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -112,7 +112,7 @@ Para ayudarle a crear una búsqueda de contenido con un máximo de 1.000 buzones
 
 2. En Security & PowerShell del centro de cumplimiento, vaya a la carpeta donde se encuentre el script creado en el paso anterior y ejecute el script; por ejemplo:
     
-    ```
+    ```powershell
     .\SourceMailboxes.ps1
     ```
 
@@ -128,7 +128,7 @@ El paso siguiente es conectar Windows PowerShell al centro de seguridad & cumpli
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de .ps1. Por ejemplo, puede guardarlo en un archivo denominado `ConnectEXO-CC.ps1`.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -139,7 +139,7 @@ El paso siguiente es conectar Windows PowerShell al centro de seguridad & cumpli
 
 2. En el equipo local, abra Windows PowerShell, vaya a la carpeta en la que se encuentra el script creado en el paso anterior y, a continuación, ejecute el script. por ejemplo:
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
 
@@ -157,7 +157,7 @@ Después de crear la sesión de PowerShell dual en el paso 2, el siguiente paso 
     
 - Crea una nueva búsqueda de exhibición de documentos electrónicos local con las propiedades siguientes. Tenga en cuenta que la búsqueda nueva no se inicia. Empezará en el paso 4.
     
-  - **Nombre** : el nombre de la nueva búsqueda usa este formato: \<nombre de la búsqueda\>de contenido _MBSearch1. Si vuelve a ejecutar el script y usa la misma búsqueda de contenido de origen, la búsqueda se \<denominará nombre de\>búsqueda de contenido _MBSearch2.
+  - **Nombre** : el nombre de la nueva búsqueda usa este formato: \<nombre de la _MBSearch1\>de búsqueda de contenido. Si vuelve a ejecutar el script y usa la misma búsqueda de contenido de origen, la búsqueda se \<denominará nombre de\>la búsqueda de contenido _MBSearch2.
     
   - **Buzones de origen** : todos los buzones de la búsqueda de contenido que contienen los resultados de la búsqueda. 
     
@@ -167,7 +167,7 @@ Después de crear la sesión de PowerShell dual en el paso 2, el siguiente paso 
     
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de ps1. Por ejemplo, puede guardarlo en un archivo denominado `CreateMBSearchFromComplianceSearch.ps1`.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -231,12 +231,11 @@ Después de crear la sesión de PowerShell dual en el paso 2, el siguiente paso 
   {
     New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -SearchQuery $query -EstimateOnly;
   }
-  
   ```
 
 2. En la sesión de Windows PowerShell que creó en el paso 2, vaya a la carpeta en la que se encuentra el script creado en el paso anterior y, a continuación, ejecute el script. por ejemplo:
     
-    ```
+    ```powershell
     .\CreateMBSearchFromComplianceSearch.ps1
     ```
 

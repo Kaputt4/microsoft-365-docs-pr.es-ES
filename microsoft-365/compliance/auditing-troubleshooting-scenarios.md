@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede usar la herramienta de búsqueda de registros de auditoría de Office 365 para ayudarle a solucionar problemas comunes como la investigación de una cuenta en peligro, para averiguar quién ha configurado el reenvío de correo para un buzón o determinar por qué un usuario externo pudo iniciar sesión correctamente en su Organization.
-ms.openlocfilehash: 255fd323ca08dd4ea759648fbe0673f5e5254c22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f075d4317e8da748b6eca654747a2757c0040558
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092097"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687822"
 ---
-# <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Buscar en el registro de auditoría de 365 de Office para solucionar escenarios comunes
+# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría de 365 de Office para investigar problemas de compatibilidad comunes
 
-En este artículo se describe cómo usar la herramienta de búsqueda de registros de auditoría de Office 365 para ayudarle a solucionar los escenarios de soporte habituales. Esto incluye el uso del registro de auditoría para:
+En este artículo se describe cómo usar la herramienta de búsqueda de registros de auditoría de Office 365 para ayudarle a investigar problemas comunes de soporte técnico. Esto incluye el uso del registro de auditoría para:
 
 - Buscar la dirección IP del equipo que se usa para obtener acceso a una cuenta en peligro
 - Determinar quién ha configurado el reenvío de correo electrónico para un buzón
@@ -114,13 +114,13 @@ a. En el campo **objectId** , se muestra el alias del buzón de correo en el que
 
 b. En el campo **parámetros** , el valor *ForwardingSmtpAddress* indica que el reenvío de correo electrónico se estableció en el buzón. En este ejemplo, el correo se envía a la dirección de correo electrónico mike@contoso.com, que está fuera de la organización alpinehouse.onmicrosoft.com.
 
-c. El valor *true* del parámetro *DeliverToMailboxAndForward* indica que una copia del mensaje se entrega a SARAD@alpinehouse.onmicrosoft.com *y* se reenvía a la dirección de correo electrónico especificada por el *ForwardingSmtpAddress *parámetro, que en este ejemplo es Mike@contoso.com. Si el valor del parámetro *DeliverToMailboxAndForward* está establecido en *false*, el correo electrónico sólo se reenvía a la dirección especificada por el parámetro *ForwardingSmtpAddress* . No se entrega al buzón especificado en el campo **objectId** .
+c. El valor *true* del parámetro *DeliverToMailboxAndForward* indica que una copia del mensaje se entrega a SARAD@alpinehouse.onmicrosoft.com *y* se reenvía a la dirección de correo electrónico especificada por el parámetro *ForwardingSmtpAddress* , que en este ejemplo es Mike@contoso.com. Si el valor del parámetro *DeliverToMailboxAndForward* está establecido en *false*, el correo electrónico sólo se reenvía a la dirección especificada por el parámetro *ForwardingSmtpAddress* . No se entrega al buzón especificado en el campo **objectId** .
 
 d. El campo **userid** indica el usuario que ha configurado el reenvío de correo electrónico en el buzón especificado en el campo **objectId** . Este usuario también se muestra en la columna **usuario** de la página de resultados de búsqueda. En este caso, parece que el propietario del buzón estableció el reenvío de correo electrónico en su buzón.
 
 Si determina que no se debe establecer el reenvío de correo electrónico en el buzón, puede quitarlo ejecutando el siguiente comando en Exchange Online PowerShell:
 
-```
+```powershell
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
@@ -221,9 +221,9 @@ Para obtener más información acerca de otras propiedades mostradas en un regis
 
 A continuación se muestran dos escenarios de ejemplo que darían como resultado que un **usuario que ha iniciado sesión correctamente en** la actividad de auditoría debido a la autenticación de paso a través: 
 
-  - Un usuario con una cuenta de Microsoft (como SaraD@outlook.com) ha tratado de tener acceso a un documento en una cuenta de OneDrive para la empresa en fourthcoffee.onmicrosoft.com y su cuenta de usuario invitado no es una correspondiente para SaraD@outlook.com en fourthcoffee.onmicrosoft.com.
+  - Un usuario con una cuenta de Microsoft (como SaraD@outlook.com) ha tratado de tener acceso a un documento en una cuenta de OneDrive para la empresa en fourthcoffee.onmicrosoft.com y su cuenta de usuario invitado no es la correspondiente a SaraD@outlook.com en fourthcoffee.onmicrosoft.com.
 
-  - Un usuario con una cuenta profesional o educativa en una organización de Office 365 (por ejemplo, pilarp@fabrikam.onmicrosoft.com) ha tratado de tener acceso a un sitio de SharePoint en contoso.onmicrosoft.com y su cuenta de usuario invitado no es una correspondiente a pilarp@fabrikam.com en contoso.onmicrosoft.com.
+  - Un usuario con una cuenta profesional o educativa en una organización de Office 365 (por ejemplo, pilarp@fabrikam.onmicrosoft.com) ha tratado de tener acceso a un sitio de SharePoint en contoso.onmicrosoft.com y su cuenta de usuario invitado no es la correspondiente a pilarp@fabrikam.com en contoso.onmicrosoft.com.
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Sugerencias para investigar los inicios de sesión correctos como resultado de la autenticación de paso a través
@@ -232,7 +232,7 @@ A continuación se muestran dos escenarios de ejemplo que darían como resultado
 
    ![Buscar todas las actividades realizadas por el usuario externo](media/PassThroughAuth2.png)
 
-    Además de las actividades de inicio de **sesión del usuario** , se pueden devolver otros registros de auditoría, tales que indican que un usuario de la organización ha compartido recursos con el usuario externo y si el usuario externo ha tenido acceso, ha modificado o descargado un documento que se ha compartido con ellos.
+    Además de las actividades de inicio de **sesión del usuario** , se pueden devolver otros registros de auditoría, tales que indican que un usuario de la organización compartió recursos con el usuario externo y si el usuario externo obtuvo acceso, modificó o descargó un documento compartido con ellos.
 
 - Buscar actividades de uso compartido de SharePoint que indiquen que un archivo se ha compartido con el usuario externo identificado por un registro **de auditoría registrado** por un usuario. Para obtener más información, vea [usar la auditoría de uso compartido en el registro de auditoría de Office 365](use-sharing-auditing.md).
 

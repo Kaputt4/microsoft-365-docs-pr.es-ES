@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: Puede activar la característica de búsqueda de registros de auditoría en el centro de seguridad & cumplimiento. Si cambia de opinión, puede desactivar la opción en cualquier momento. Cuando la búsqueda de registros de auditoría está desactivada, los administradores no pueden buscar en el registro de auditoría de Office 365 la actividad de usuario y de administrador de su organización.
-ms.openlocfilehash: 83ef355c4acd5e0af4fd7ffbf13157307bcac930
-ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
+ms.openlocfilehash: 4e382c9916a9460d2c837a336607734427416a1a
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37334250"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687884"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Activar o desactivar la búsqueda de registros de auditoría de Office 365
 
@@ -35,7 +35,7 @@ Usted (u otro administrador) deben activar el registro de auditoría para poder 
     > [!IMPORTANT]
     > Los usuarios deben tener asignados permisos en Exchange Online para activar o desactivar la búsqueda de registros de auditoría. Si asigna a los usuarios el rol registros de auditoría en la página **permisos** del centro de seguridad & cumplimiento, no podrán activar o desactivar la búsqueda de registros de auditoría. Esto se debe a que el cmdlet subyacente es un cmdlet de Exchange Online. 
   
-- Si desactiva la búsqueda de registros de auditoría en Office 365, no podrá usar la API de actividad de administración de Office 365 para acceder a los datos de auditoría de su organización. La desactivación de la búsqueda de registros de auditoría siguiendo los pasos descritos en este artículo significa que no se devolverán resultados cuando busque en el registro de auditoría mediante el centro de seguridad & cumplimiento o cuando ejecute el cmdlet **Search-UnifiedAuditLog** en Exchange Online PowerShell . Esto también significa que los registros de auditoría no estarán disponibles a través de la API de actividad de administración de Office 365.  
+- Si desactiva la búsqueda de registros de auditoría en Office 365, no podrá usar la API de actividad de administración de Office 365 para acceder a los datos de auditoría de su organización. La desactivación de la búsqueda de registros de auditoría siguiendo los pasos descritos en este artículo significa que no se devolverán resultados cuando busque en el registro de auditoría mediante el centro de seguridad & cumplimiento o cuando ejecute el cmdlet **Search-UnifiedAuditLog** en Exchange Online PowerShell. Esto también significa que los registros de auditoría no estarán disponibles a través de la API de actividad de administración de Office 365.  
     
 - Para obtener instrucciones paso a paso sobre cómo buscar en el registro de auditoría de Office 365, vea [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md).
     
@@ -61,7 +61,7 @@ Puede usar el centro de seguridad & cumplimiento o PowerShell para activar la b�
     
 2. Ejecute el siguiente comando de PowerShell para activar la búsqueda de registros de auditoría en Office 365.
     
-    ```
+    ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
 
@@ -75,7 +75,7 @@ Debe usar PowerShell remoto conectado a su organización de Exchange Online para
     
 2. Ejecute el siguiente comando de PowerShell para desactivar la búsqueda de registros de auditoría en Office 365.
     
-    ```
+    ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
@@ -83,12 +83,12 @@ Debe usar PowerShell remoto conectado a su organización de Exchange Online para
     
     - En PowerShell, ejecute el siguiente comando:
 
-            ```
-            Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-            ```
+    ```powershell
+    Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+    ```
 
-           The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
+      El valor de `False` para la propiedad _UnifiedAuditLogIngestionEnabled_ indica que la búsqueda de registros de auditoría está desactivada. 
     
     - En el centro de seguridad & cumplimiento, vaya a búsqueda de **registros de auditoría**de **búsqueda** \> .
     
-           A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.
+      Se muestra un banner en el que se indica que se debe activar la auditoría para poder registrar la actividad de usuario y de administrador.

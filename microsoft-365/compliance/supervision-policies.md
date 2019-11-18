@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las directivas de supervisión en Office 365
-ms.openlocfilehash: fc143982ab7ec465bb379e0032b4d99a5d28edec
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bac0f99683c87eb57ee8a69334010573c69acc55
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092906"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38687723"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
-Las directivas de supervisión en Office 365 permiten capturar comunicaciones de los empleados para que las examinen los revisores designados. Puede definir directivas específicas que capturen el correo electrónico interno y externo, Microsoft Teams o las comunicaciones de terceros de la organización. A continuación, los revisores pueden examinar los mensajes para asegurarse de que cumplen con los estándares de mensajes de la organización y los resuelven con el tipo de clasificación. 
+Las directivas de supervisión en Office 365 permiten capturar comunicaciones de los empleados para que las examinen los revisores designados. Puede definir directivas específicas que capturen el correo electrónico interno y externo, Microsoft Teams o las comunicaciones de terceros de la organización. A continuación, los revisores pueden examinar los mensajes para asegurarse de que cumplen con los estándares de mensajes de la organización y los resuelven con el tipo de clasificación.
 
 Estas directivas también pueden ayudarle a superar muchos de los retos de cumplimiento modernos, entre los que se incluyen:
 
@@ -38,6 +38,8 @@ En algunas organizaciones, puede haber una separación de tareas entre el soport
 Para obtener una introducción rápida a las directivas de supervisión, vea el vídeo sobre la [Directiva de supervisión](https://youtu.be/C3Y8WZ7o_dI) en el canal de [mecánica de Microsoft](https://www.youtube.com/user/OfficeGarageSeries).
 
 Para obtener más información acerca de las mejoras y la disponibilidad de las próximas características de supervisión, consulte el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+
+¿Desea probar la nueva experiencia de cumplimiento de comunicaciones de Microsoft 365? Consulte las características nuevas y mejoradas disponibles en el cumplimiento de la [comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md).
 
 ## <a name="scenarios-for-supervision-policies"></a>Escenarios para directivas de supervisión
 
@@ -111,7 +113,7 @@ De forma predeterminada, la condición **es la dirección** se muestra y no se p
 
 Tiene la opción de incluir tipos de información confidencial como parte de la Directiva de supervisión. Los tipos de información confidencial son tipos de datos predefinidos o personalizados que pueden ayudar a identificar y proteger números de tarjetas de crédito, números de cuentas bancarias, números de pasaporte, etc. Como parte de la prevención de [pérdida de datos (DLP)](data-loss-prevention-policies.md)de Office 365, la configuración de información confidencial puede usar patrones, proximidad de caracteres, niveles de confianza e incluso tipos de datos personalizados para ayudar a identificar y marcar contenido que pueda ser confidencial. Los tipos de información confidencial predeterminados son:
 
-- Financieras
+- Financiero
 - Médico y salud
 - Privacidad
 - Tipo de información personalizada
@@ -150,9 +152,9 @@ Las condiciones que elija para la Directiva se aplican a las comunicaciones de l
 
 La siguiente tabla explica más sobre cada condición.
   
-|**Condición**|**Cómo usar esta condición**|
+|**Condition**|**Cómo usar esta condición**|
 |:-----|:-----|
-| **Se recibe el mensaje desde cualquiera de estos dominios**  <br><br> **No se recibe el mensaje desde ninguno de estos dominios** | Aplicar la Directiva para incluir o excluir dominios o direcciones de correo electrónico específicos en los mensajes recibidos. Escriba cada dominio o dirección de correo electrónico y separe los distintos dominios o direcciones de correo electrónico con una coma. Cada dominio o dirección de correo electrónico que se escriba se aplica por separado, solo se debe solicitar un dominio o una dirección de correo electrónico para que la Directiva se aplique al mensaje. <br><br> Si desea supervisar todo el correo electrónico de un dominio específico pero desea excluir los mensajes que no necesitan revisión (boletines, anuncios, etc.), debe configurar la condición **en que no se recibe un mensaje desde ninguna de estas** condiciones de dominio que excluye el Dirección de correo electrónico (ejemplo "newsletter@contoso.com"). |
+| **Se recibe el mensaje desde cualquiera de estos dominios**  <br><br> **No se recibe el mensaje desde ninguno de estos dominios** | Aplicar la Directiva para incluir o excluir dominios o direcciones de correo electrónico específicos en los mensajes recibidos. Escriba cada dominio o dirección de correo electrónico y separe los distintos dominios o direcciones de correo electrónico con una coma. Cada dominio o dirección de correo electrónico que se escriba se aplica por separado, solo se debe solicitar un dominio o una dirección de correo electrónico para que la Directiva se aplique al mensaje. <br><br> Si desea supervisar todo el correo electrónico de un dominio específico pero desea excluir los mensajes que no necesitan revisión (boletines, anuncios, etc.), debe configurar la condición **en que no se recibe un mensaje desde ninguna de estas** condiciones de dominio que excluye la dirección de correo electrónico (ejemplo "Newsletter@contoso.com"). |
 | **El mensaje se envía a cualquiera de estos dominios**  <br><br> **El mensaje no se envía a ninguno de estos dominios** | Aplicar la Directiva para incluir o excluir dominios o direcciones de correo electrónico específicos en los mensajes enviados. Escriba cada dominio o dirección de correo electrónico y separe los distintos dominios o direcciones de correo electrónico con una coma. Cada dirección de correo electrónico o dominio se aplica por separado, solo se debe solicitar un dominio o una dirección de correo electrónico para que la Directiva se aplique al mensaje. <br><br> Si desea supervisar todo el correo electrónico enviado a un dominio específico pero desea excluir los mensajes enviados que no necesitan revisión, debe configurar dos condiciones: <br> - **Se envía un mensaje a cualquiera de estas condiciones de los dominios** que define el dominio ("contoso.com") y <br> -Un **mensaje no se envía a ninguna condición de dominio** que excluya la dirección de correo electrónico ("subscriptions@contoso.com"). |
 | **El mensaje se clasifica con cualquiera de estas etiquetas**  <br><br> **El mensaje no está clasificado con ninguna de estas etiquetas** | Para aplicar la Directiva cuando se incluyen o excluyen determinadas etiquetas de retención en un mensaje. Las etiquetas de retención se deben configurar por separado y las etiquetas configuradas se eligen como parte de esta condición. Cada etiqueta que elija se aplica por separado (solo una de estas etiquetas se debe aplicar para que la Directiva se aplique al mensaje). Para obtener más información acerca de la configuración de etiquetas de retención, consulte [Overview of Retention Labels](labels.md).|
 | **El mensaje contiene alguna de estas palabras**  <br><br> **El mensaje no contiene ninguna de estas palabras** | Para aplicar la Directiva cuando se incluyan o excluyan ciertas palabras o frases en un mensaje, escriba cada palabra o frase en una línea independiente. Cada línea de palabras que escriba se aplica por separado (solo se debe aplicar una de estas líneas para que la Directiva se aplique al mensaje). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
@@ -164,7 +166,7 @@ La siguiente tabla explica más sobre cada condición.
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Coincidencia de palabras y frases para mensajes de correo electrónico o datos adjuntos
 <a name="Matchwords"></a> Cada línea de palabras que escriba se aplica por separado (solo se debe aplicar una línea para que la condición de la Directiva se aplique al correo electrónico o datos adjuntos). Por ejemplo, vamos a usar la condición, **Message contiene cualquiera de estas palabras**, con las palabras clave "Banker" y "Insider comercia" en líneas separadas. La Directiva se aplica a todos los mensajes que incluyan la palabra "Banker" o la frase "comercio Insider". Solo una de estas palabras o frases debe aparecer para que esta condición de directiva se aplique. Las palabras del mensaje o del archivo adjunto deben coincidir exactamente con lo que se especifique.
 
-Para analizar los mensajes de correo electrónico y los datos adjuntos de las mismas palabras clave, cree una [Directiva de prevención de pérdida de datos](create-test-tune-dlp-policy.md) con un diccionario de [palabras clave personalizado](create-a-keyword-dictionary.md) para los términos que desea supervisar. Esta configuración de directiva identifica las palabras clave definidas que aparecen en el mensaje de correo electrónico **o** en los datos adjuntos del correo electrónico. El uso de la configuración de directivas condicionales estándar (el*mensaje contiene alguna de estas palabras* y el *archivo adjunto contiene alguna de estas palabras*) para **identificar los términos** de los mensajes y en los datos adjuntos requiere que los términos estén presentes en el mensaje y en el datos adjuntos.
+Para analizar los mensajes de correo electrónico y los datos adjuntos de las mismas palabras clave, cree una [Directiva de prevención de pérdida de datos](create-test-tune-dlp-policy.md) con un diccionario de [palabras clave personalizado](create-a-keyword-dictionary.md) para los términos que desea supervisar. Esta configuración de directiva identifica las palabras clave definidas que aparecen en el mensaje de correo electrónico **o** en los datos adjuntos del correo electrónico. El uso de la configuración de directivas condicionales estándar (el*mensaje contiene cualquiera de estas palabras* y *Attachment contiene alguna de estas palabras*) para **identificar los términos** de los mensajes y en los datos adjuntos requiere que los términos estén presentes en el mensaje y los datos adjuntos.
   
 ##### <a name="enter-multiple-conditions"></a>Escribir varias condiciones
 
@@ -276,7 +278,7 @@ Vea actividades de auditoría en el registro de auditoría unificado o con el cm
 
 Por ejemplo, en el siguiente ejemplo se devuelven las actividades de todas las actividades de revisión de supervisión (directivas y reglas) y se enumera la información detallada de cada uno de los elementos siguientes:
 
-```
+```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
@@ -285,3 +287,4 @@ Además de la información proporcionada en los informes y registros de supervis
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
 Para configurar directivas de supervisión para su organización, consulte [Configure tutela Policies](configure-supervision-policies.md).
+

@@ -14,16 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3dbebb20d179f78e97a8ae18fb810a8cb53c45ed
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092901"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38687624"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipos de archivo admitidos en eDiscovery avanzado
 
 La exhibición avanzada de documentos electrónicos admite muchos tipos de archivos en muchos niveles diferentes, que se describen en la siguiente tabla. Esta lista no finaliza y agregamos nuevos tipos de archivo, ya que continuamos con nuestras pruebas de validación. Las tablas indican si un tipo de archivo es compatible con la extracción de texto (OCR para imágenes), que se puede ver en el visor nativo y que también es compatible con el visor de anotaciones en la exhibición avanzada de documentos electrónicos.
+
 
 ## <a name="archive--container"></a>Archivo/contenedor
 
@@ -33,6 +34,18 @@ La exhibición avanzada de documentos electrónicos admite muchos tipos de archi
 | aplicación/x-rar-comprimido | Sí | Sí | Sí | . rar |
 | application/x-tar | Sí | Sí | Sí | . tar |
 | aplicación/código postal | Sí | Sí | Sí | .zip |
+||||||||
+
+## <a name="audio--video"></a>Audio y vídeo
+
+| Tipo MIME | Identificación de archivos | Extracción de metadatos | Extracción de texto | Visor nativo | Visor de anotaciones | Extensiones posibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| Application/MP4 | Sí | Sí | No | Sí | No | . F4V;. m4a;. M4V;. MP4;. MP4V;. MPEG;. MPEG4 |
+| audio/MPEG | Sí | Sí | No | Sí | No | . MPEG |
+| vídeo/3GPP | Sí | Sí | No | Sí | No | .3GP |
+| vídeo/3GPP2 | Sí | Sí | No | Sí | No | .3g2; .3gp2 |
+| vídeo/QuickTime | Sí | Sí | No | Sí | No | . Moov;. mov;. qt |
+| vídeo/x-M4V | Sí | Sí | No | Sí | No | .m4v |
 ||||||||
 
 ## <a name="database"></a>Base de datos
@@ -47,7 +60,7 @@ La exhibición avanzada de documentos electrónicos admite muchos tipos de archi
 | Tipo MIME | Identificación de archivos | Extracción de metadatos | Extracción de texto | Visor nativo | Visor de anotaciones | Extensiones posibles |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | aplicación/vnd. MS-Outlook | Sí | Sí | Sí | Sí | Sí | . msg |
-| mensaje/rfc822 | Sí | Sí | Sí | Sí | Sí | . eml |
+| mensaje/rfc822 | Sí | Sí | Sí | Sí | Sí | .eml |
 | texto/vCard-contacto | Sí | Sí | Sí | Sí | Sí | . vcf |
 ||||||||
 
@@ -95,6 +108,13 @@ La exhibición avanzada de documentos electrónicos admite muchos tipos de archi
 | Application/vnd. openxmlformats-officedocument. SpreadsheetML. template | Sí | Sí | Sí | Sí | Sí | . xltx |
 ||||||||
 
+## <a name="microsoft-onenote"></a>Microsoft OneNote
+
+| Tipo MIME | Identificación de archivos | Extracción de metadatos | Extracción de texto | Visor nativo | Visor de anotaciones | Extensiones posibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| aplicación/OneNote | Sí | Sí | Sí | Sí | No | . One |
+||||||||
+
 ## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
 
 | Tipo MIME | Identificación de archivos | Extracción de metadatos | Extracción de texto | Visor nativo | Visor de anotaciones | Extensiones posibles |
@@ -103,6 +123,13 @@ La exhibición avanzada de documentos electrónicos admite muchos tipos de archi
 | application/vnd.openxmlformats-officedocument.presentationml.presentation | Sí | Sí | Sí | Sí | Sí | .pptx |
 | Application/vnd. openxmlformats-officedocument. presentationml. Slideshow | Sí | Sí | Sí | Sí | Sí | . ppsx |
 | Application/vnd. openxmlformats-officedocument. presentationml. template | Sí | Sí | Sí | Sí | Sí | . potx |
+||||||||
+
+## <a name="microsoft-project"></a>Microsoft Project
+
+| Tipo MIME | Identificación de archivos | Extracción de metadatos | Extracción de texto | Visor nativo | Visor de anotaciones | Extensiones posibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| aplicación/vnd. MS-Project | Sí | Sí | Sí | No | Sí | . MPP |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher

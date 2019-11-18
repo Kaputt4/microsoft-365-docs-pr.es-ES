@@ -3,7 +3,7 @@ title: Crear una directiva DLP para proteger documentos con FCI u otras propieda
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Muchas organizaciones disponen de un proceso para identificar y clasificar información confidencial mediante las propiedades de clasificación en la infraestructura de clasificación de archivos (FCI) de Windows Server, las propiedades del documento en SharePoint o las propiedades del documento aplicadas por un sistema de terceros. Si esto describe su organización, puede crear una directiva DLP en Office 365 que reconozca las propiedades que la FCI de Windows Server u otro sistema ha aplicado a documentos, de modo que se pueda aplicar la directiva DLP en documentos de Office con una FCI específica u otros valores de propiedad.
-ms.openlocfilehash: 5f464c2918d7ea91fa5c65b28bc477ee7cc768e3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 286a66968727737c906ba24ac900eacd7732276e
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093213"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38687754"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Crear una directiva DLP para proteger documentos con FCI u otras propiedades
 
@@ -42,7 +42,7 @@ Ejemplos
   
 Esto es importante porque DLP en Office 365 usa el rastreador de búsqueda para identificar y clasificar información confidencial en los sitios y después almacenar esa información confidencial en una parte segura del índice de búsqueda. Al cargar un documento en Office 365, SharePoint crea automáticamente propiedades rastreadas en función de las propiedades del documento. Pero para usar una FCI u otra propiedad en una directiva DLP, la propiedad rastreada debe asignarse a una propiedad administrada para que el contenido con esa propiedad se conserve en el índice.
   
-Para obtener más información sobre las propiedades administradas y de búsqueda, vea [administrar el esquema de búsqueda en SharePoint Online](http://go.microsoft.com/fwlink/p/?LinkID=627454).
+Para obtener más información sobre las propiedades administradas y de búsqueda, vea [administrar el esquema de búsqueda en SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=627454).
   
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Paso 1: Cargar un documento con la propiedad necesaria en Office 365
 
@@ -92,29 +92,29 @@ A continuación, crean una directiva DLP con dos reglas que usan las propiedades
 
 Tenga en cuenta que las propiedades de documento de condición **contienen alguno de estos valores** no está disponible temporalmente en la &amp; interfaz de usuario del centro de seguridad y cumplimiento, pero puede usar esta condición con PowerShell. Puede usar `New\Set\Get-DlpCompliancePolicy` los cmdlets para trabajar con una directiva DLP y usar `New\Set\Get-DlpComplianceRule` los cmdlets con el `ContentPropertyContainsWords` parámetro para agregar las propiedades del documento de condición que **contienen cualquiera de estos valores**.
   
-Para obtener más información sobre estos cmdlets, consulte los [cmdlets del centro de seguridad &amp; y cumplimiento de Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
+Para obtener más información sobre estos cmdlets, consulte los [cmdlets del centro de seguridad &amp; y cumplimiento de Office 365](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Cree la Directiva con `New-DlpCompliancePolicy`el.
-    
-    A continuación, se muestra un ejemplo de PowerShell que crea una directiva DLP que se aplica a todas las ubicaciones.
-    
-      ```
-      New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
-      ```
+
+A continuación, se muestra un ejemplo de PowerShell que crea una directiva DLP que se aplica a todas las ubicaciones.
+
+```powershell
+New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
+```
 
 3. Cree las dos reglas descritas anteriormente usando `New-DlpComplianceRule`, donde una regla es para el valor **bajo** , y otra regla es para los valores **alto** y **moderado** . 
     
     A continuación, se muestra un ejemplo de PowerShell que crea estas dos reglas. Tenga en cuenta que los pares nombre-valor de propiedad se incluyen entre comillas, y un nombre de propiedad puede especificar varios valores separados por comas sin espacios, como`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
-    
-      ```
-      New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
-      ```
 
-    Tenga en cuenta que Windows Server FCI incluye muchas propiedades integradas, incluida la **información de identificación personal** usada en este ejemplo. Los valores posibles para cada propiedad pueden ser diferentes para cada organización. Los valores **altos**, **moderados**y **bajos** que se usan aquí son solo un ejemplo. Para su organización, puede ver las propiedades de clasificación de FCI de Windows Server con sus valores posibles en el administrador de recursos del servidor de archivos en el servidor de archivos basado en Windows Server. Para obtener más información, vea [crear una propiedad de clasificación](http://go.microsoft.com/fwlink/p/?LinkID=627456).
+```powershell
+New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
+```
+
+    Note that Windows Server FCI includes many built-in properties, including **Personally Identifiable Information** used in this example. The possible values for each property can be different for every organization. The **High**, **Moderate**, and **Low** values used here are only an example. For your organization, you can view the Windows Server FCI classification properties with their possible values in the file Server Resource Manager on the Windows Server-based file server. For more information, see [Create a classification property](https://go.microsoft.com/fwlink/p/?LinkID=627456).
     
-Cuando termine, la Directiva debe tener dos reglas nuevas que usen las propiedades del **documento y que contengan cualquiera de estos valores de** condición. Tenga en cuenta que esta condición no aparecerá en la interfaz de usuario, aunque se mostrarán las demás condiciones, acciones y configuración. 
+Cuando termine, la Directiva debe tener dos reglas nuevas que usen las propiedades del **documento y que contengan cualquiera de estos valores de** condición. Tenga en cuenta que esta condición no aparecerá en la interfaz de usuario, aunque se mostrarán las demás condiciones, acciones y configuración.
   
 Una regla bloquea el acceso al contenido donde la propiedad **Información de identificación personal** es igual a **Alto** o **Moderado**. Una segunda regla envía una notificación sobre el contenido donde la propiedad **Información de identificación personal** es igual a **Bajo**.
   
@@ -129,7 +129,7 @@ Para detectar contenido con esa propiedad en todas partes, tal vez le convenga s
 > [!CAUTION]
 > Volver a indexar un sitio puede provocar una carga masiva en el sistema de búsqueda. No vuelva a indizar el sitio a menos que su escenario lo requiera absolutamente. 
   
-Para obtener más información, consulte [solicitar manualmente el rastreo y la nueva indización de un sitio, una biblioteca o una lista](http://go.microsoft.com/fwlink/p/?LinkID=627457).
+Para obtener más información, consulte [solicitar manualmente el rastreo y la nueva indización de un sitio, una biblioteca o una lista](https://go.microsoft.com/fwlink/p/?LinkID=627457).
   
 ### <a name="re-index-a-site-optional"></a>Volver a indexar un sitio (opcional)
 
@@ -148,5 +148,3 @@ Para obtener más información, consulte [solicitar manualmente el rastreo y la 
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
 - [Inventario de tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
-    
-

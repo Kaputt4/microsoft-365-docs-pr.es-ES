@@ -7,6 +7,8 @@ ms.date: 1/23/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +16,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Ejecute un script para agregar rápidamente sitios de buzones de correo y OneDrive para la empresa a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: c680e584a6f729b3d6d0d74b84ddd0e03da6dc9a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7a7ea582391e2fbfcef8b63d331d64f52db4460c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092860"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687883"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -31,9 +33,9 @@ Estos son los pasos para que esto suceda:
   
 [Paso 1: Instalar el Shell de administración de SharePoint Online](#step-1-install-the-sharepoint-online-management-shell)
   
-[Paso 2: generar una lista de usuarios](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
+[Paso 2: generar una lista de usuarios](#step-2-generate-a-list-of-users)
   
-[Paso 3: ejecutar el script para crear una retención y agregar usuarios](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
+[Paso 3: ejecutar el script para crear una retención y agregar usuarios](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -56,22 +58,18 @@ El primer paso es instalar el shell de administración de SharePoint Online si t
 Vaya a [configurar el entorno de Windows PowerShell de Shell de administración de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=286318) y realice los pasos 1 y 2 para instalar el shell de administración de SharePoint Online en el equipo local. 
 
 ## <a name="step-2-generate-a-list-of-users"></a>Paso 2: generar una lista de usuarios
-<a name="step2"> </a>
 
 El script del paso 3 creará una retención asociada con un caso de exhibición de documentos electrónicos, y los sitios y agregar los buzones y OneDrive para la empresa de una lista de usuarios a la retención. Solo puede escribir las direcciones de correo electrónico en un archivo de texto o puede ejecutar un comando en Windows PowerShell para obtener una lista de direcciones de correo electrónico y guardarlas en un archivo (ubicado en la misma carpeta en la que guardará el script en el paso 3).
   
 Este es un comando de PowerShell (que ejecuta con PowerShell remoto conectado a su organización de Exchange Online) para obtener una lista de direcciones de correo electrónico para todos los usuarios de la organización y guardarla en un archivo de texto denominado HoldUsers. txt.
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
 Después de ejecutar este comando, abra el archivo de texto y quite el encabezado que contiene el nombre de `PrimarySmtpAddress`la propiedad. A continuación, quite todas las direcciones de correo electrónico excepto las de los usuarios que desea agregar a la suspensión que creará en el paso 3. Asegúrese de que no haya filas en blanco antes ni después de la lista de direcciones de correo electrónico.
   
-
-  
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Paso 3: ejecutar el script para crear una retención y agregar usuarios
-<a name="step3"> </a>
 
 Al ejecutar el script en este paso, se le pedirá la siguiente información. Asegúrese de que tiene esta información lista antes de ejecutar el script.
   
@@ -87,11 +85,11 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
     
 - **Si quiere activar o no la retención** , puede hacer que la secuencia de comandos vuelva a pasar la retención una vez creada o puede hacer que el script cree la retención sin habilitarla. Si la secuencia de comandos no se activa, puede activarla más adelante en el centro de seguridad & cumplimiento o mediante la ejecución de los siguientes comandos de PowerShell: 
     
-  ```
+  ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
   ```
 
-  ```
+  ```powershell
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
@@ -101,7 +99,7 @@ Una vez que haya recopilado la información que le pedirá el script, el paso fi
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `AddUsersToHold.ps1`.
     
-  ```
+  ```powershell
   #script begin
   " " 
   write-host "***********************************************"
@@ -119,7 +117,7 @@ Una vez que haya recopilado la información que le pedirá el script, el paso fi
           return;
       }
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-  # To install, go to http://go.microsoft.com/fwlink/p/?LinkId=255251
+  # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
   {
       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
@@ -127,7 +125,7 @@ Una vez que haya recopilado la información que le pedirá el script, el paso fi
       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
       if (!$SharePointClient)
       {
-          Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: http://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
+          Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
           return;
       }
   }
@@ -278,7 +276,7 @@ Una vez que haya recopilado la información que le pedirá el script, el paso fi
     
 3. Ejecutar el script; por ejemplo:
     
-      ```
+      ```powershell
     .\AddUsersToHold.ps1
       ```
 

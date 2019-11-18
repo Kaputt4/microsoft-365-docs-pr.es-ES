@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Obtenga información sobre el correo electrónico y las propiedades de archivo que puede buscar en los buzones de Exchange Online y en los sitios de SharePoint o de OneDrive para la empresa mediante la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento.  '
-ms.openlocfilehash: 5b3438537e2936fa140052c6869f84937e103746
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e01953c6397c8c7ca9f38780537f3f7546b238fb
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091692"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687838"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido
 
@@ -74,7 +75,7 @@ En la siguiente tabla se enumeran las propiedades de los mensajes de correo elec
 
 ## <a name="searchable-site-properties"></a>Propiedades de sitio que se pueden buscar
 
-En la siguiente tabla se enumeran algunas de las propiedades de SharePoint y OneDrive para la empresa en las que se puede buscar mediante la característica de búsqueda de contenido en el centro de seguridad & cumplimiento o mediante el **New-compliancesearch** o el **set-ComplianceSearch. **cmdlet. La tabla incluye un ejemplo de la sintaxis  _propiedad:valor_ de cada propiedad y una descripción de los resultados de búsqueda devueltos por los ejemplos. 
+En la siguiente tabla se enumeran algunas de las propiedades de SharePoint y OneDrive para la empresa en las que se puede buscar mediante la característica de búsqueda de contenido en el centro de seguridad & cumplimiento o mediante el uso del cmdlet **New-compliancesearch** o **set-ComplianceSearch** . La tabla incluye un ejemplo de la sintaxis  _propiedad:valor_ de cada propiedad y una descripción de los resultados de búsqueda devueltos por los ejemplos. 
   
 Para obtener una lista completa de las propiedades de SharePoint que se pueden buscar, vea [información general sobre las propiedades rastreadas y administradas en SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Se pueden buscar las propiedades marcadas con **sí** en la columna **consultable** . 
   
@@ -90,11 +91,11 @@ Para obtener una lista completa de las propiedades de SharePoint que se pueden b
 |FileName|El nombre de un archivo.|`filename:"marketing plan"`  <br/> `filename:estimate`|El primer ejemplo devuelve archivos con la frase exacta "plan de marketing" en el título. El segundo ejemplo devuelve archivos con la palabra "estimación" en el nombre del archivo.|
 |LastModifiedTime|La fecha de la última modificación de un elemento.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|El primer ejemplo devuelve los elementos que se cambiaron en o después del 1 de mayo de 2016. El segundo ejemplo devuelve los elementos modificados entre el 1 de mayo de 2016 y el 1 de junio de 2016.|
 |ModifiedBy|La última persona que modificó un elemento. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`modifiedby:"Garth Fort"`|Todos los elementos que Juan Casanova modificó por última vez.|
-|Ruta de acceso|Ruta de acceso (dirección URL) de un sitio específico en un sitio de SharePoint o de OneDrive para la empresa.  <br/> Para devolver los elementos que se encuentran en las carpetas del sitio que especifique para la propiedad Path, tiene que agregar\* o a la dirección URL del sitio especificado; por ejemplo,`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Nota:** Usar la `Path` propiedad para buscar en ubicaciones de OneDrive no devolverá archivos multimedia, como archivos. png,. TIFF o. wav, en los resultados de la búsqueda. Use una propiedad de sitio diferente en la consulta de búsqueda para buscar archivos multimedia en las carpetas de OneDrive. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|El primer ejemplo devuelve todos los elementos del sitio de OneDrive para la empresa especificado. En el segundo ejemplo, se devuelven los documentos del sitio especificado (y las carpetas del sitio) que contienen la palabra "Confidential" en el nombre del archivo.|
+|Path|Ruta de acceso (dirección URL) de un sitio específico en un sitio de SharePoint o de OneDrive para la empresa.  <br/> Para devolver los elementos que se encuentran en las carpetas del sitio que especifique para la propiedad Path, tiene que agregar\* o a la dirección URL del sitio especificado; por ejemplo,`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Nota:** Usar la `Path` propiedad para buscar en ubicaciones de OneDrive no devolverá archivos multimedia, como archivos. png,. TIFF o. wav, en los resultados de la búsqueda. Use una propiedad de sitio diferente en la consulta de búsqueda para buscar archivos multimedia en las carpetas de OneDrive. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|El primer ejemplo devuelve todos los elementos del sitio de OneDrive para la empresa especificado. En el segundo ejemplo, se devuelven los documentos del sitio especificado (y las carpetas del sitio) que contienen la palabra "Confidential" en el nombre del archivo.|
 |SharedWithUsersOWSUser|Documentos que se han compartido con el usuario especificado y que se muestran en la página **compartidos conmigo** en el sitio de OneDrive para la empresa del usuario. Se trata de documentos que otros usuarios de la organización han compartido explícitamente con el usuario especificado. Cuando se exportan documentos que coinciden con una consulta de búsqueda que usa la propiedad SharedWithUsersOWSUser, los documentos se exportan desde la ubicación de contenido original de la persona que compartió el documento con el usuario especificado. Para obtener más información, consulte [búsqueda de contenido de sitio compartido dentro de la organización](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Ambos ejemplos devuelven todos los documentos internos que se han compartido explícitamente con Juan Fort y que aparecen en la página **compartidos conmigo** de la cuenta de OneDrive para la empresa de Juan Fort.|
-|Site|La dirección URL de un sitio o grupo de sitios de la organización.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|El primer ejemplo devuelve elementos de los sitios de OneDrive para la empresa para todos los usuarios de la organización. El segundo ejemplo devuelve los elementos de todos los sitios del equipo.|
+|Sitio|La dirección URL de un sitio o grupo de sitios de la organización.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|El primer ejemplo devuelve elementos de los sitios de OneDrive para la empresa para todos los usuarios de la organización. El segundo ejemplo devuelve los elementos de todos los sitios del equipo.|
 |Size|El tamaño de un elemento, en bytes.|`size>=1`  <br/> `size:1..10000`|El primer ejemplo devuelve elementos mayores de 1 byte. El segundo ejemplo devuelve elementos que tienen un tamaño de entre 1 y 10 000 bytes.|
-|Title|El título del documento. La propiedad title es metadatos que se especifican en los documentos de Microsoft Office. Es diferente del nombre de archivo del documento.|`title:"communication plan"`|Cualquier documento que contenga la frase "plan de comunicación" en la propiedad Título de metadatos de un documento de Office.|
+|Título|El título del documento. La propiedad title es metadatos que se especifican en los documentos de Microsoft Office. Es diferente del nombre de archivo del documento.|`title:"communication plan"`|Cualquier documento que contenga la frase "plan de comunicación" en la propiedad Título de metadatos de un documento de Office.|
 |||||
    
 ## <a name="searchable-contact-properties"></a>Propiedades de contactos que permiten búsquedas
@@ -123,7 +124,7 @@ En la siguiente tabla se enumeran las propiedades de los contactos que se indiza
 |OfficeLocation|El valor de la propiedad **Ubicación** **de Office o** Office.|
 |OtherAddress|El valor de la propiedad **other** Address.|
 |Apellido|Nombre de la propiedad **Last** Name.|
-|Title|El título de la propiedad **cargo** .|
+|Título|El título de la propiedad **cargo** .|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Tipos de datos confidenciales que se pueden buscar
@@ -218,7 +219,7 @@ Cree una condición con propiedades de documento al buscar documentos en sitios 
 |**Condición**|**Descripción**|
 |:-----|:-----|
 |Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que la carga a SharePoint, el documento seguirá conservando el autor original.|
-|Title|El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento.|
+|Título|El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento.|
 |Created|La fecha en la que se creó el documento.|
 |Última modificación|La fecha en la que el documento se modificó por última vez.|
 |Tipo de archivo|La extensión de un archivo; por ejemplo, docx, One, pptx o XLSX. Se trata de la misma propiedad que la propiedad del sitio FileExtension.|
@@ -277,7 +278,7 @@ Tenga en cuenta lo siguiente al usar condiciones de búsqueda.
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Ejemplos
 
-En los ejemplos siguientes se muestra la versión basada en la interfaz gráfica de usuario de una consulta de búsqueda con condiciones, la sintaxis de la consulta de búsqueda que se muestra en el panel de detalles de la búsqueda seleccionada (también devuelta por el cmdlet **Get-ComplianceSearch** ) y la lógica del consulta de KQL correspondiente. 
+En los ejemplos siguientes se muestra la versión basada en la interfaz gráfica de usuario de una consulta de búsqueda con condiciones, la sintaxis de la consulta de búsqueda que se muestra en el panel de detalles de la búsqueda seleccionada (también devuelta por el cmdlet **Get-ComplianceSearch** ) y la lógica de la consulta de KQL correspondiente. 
   
 #### <a name="example-1"></a>Ejemplo 1
 
@@ -379,13 +380,13 @@ Solo los documentos compartidos mediante la tercera opción (compartidos con **p
 
 Puede usar la siguiente consulta de palabras clave para buscar específicamente contenido en las conversaciones de Skype empresarial:
 
-```
+```powershell
 kind:im
 ```
 
 La consulta de búsqueda anterior también devuelve chats de Microsoft Teams. Para evitarlo, puede restringir los resultados de la búsqueda para incluir solo conversaciones de Skype empresarial con la siguiente consulta de palabras clave:
 
-```
+```powershell
 kind:im AND subject:conversation
 ```
 
@@ -393,7 +394,7 @@ La consulta de palabra clave anterior excluye chats en Microsoft Teams porque la
 
 Para buscar conversaciones de Skype empresarial que se hayan producido dentro de un intervalo de fechas específico, use la siguiente consulta de palabra clave:
 
-```
+```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 

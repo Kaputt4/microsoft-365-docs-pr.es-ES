@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector nativo para importar datos de terceros desde orígenes de datos como páginas empresariales de Facebook, Twitter, páginas de la compañía de LinkedIn y Bloomberg instantáneo. Esto le permite archivar datos de orígenes de datos de terceros en Office 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar el gobierno de los datos de terceros de la organización.
-ms.openlocfilehash: 2dde58e4d3ead0064e28c1ba1bfc04485c7a25df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 74b35281f72277c4698b835a63613288dce7d9ce
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092113"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38687727"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Usar un conector de ejemplo para archivar datos de Facebook en Office 365 (versión preliminar)
 
@@ -23,7 +23,7 @@ La característica conector de ejemplo para archivar datos de Facebook en Office
 
 Use un conector de ejemplo en el centro de seguridad & cumplimiento en Office 365 para importar y archivar datos de las páginas de empresa de Facebook a Office 365. Después de configurar y configurar un conector de ejemplo, se conecta a la página de empresa de Facebook (de forma programada), convierte el contenido de los elementos de Facebook a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón en Office 365.
 
-Una vez importados los datos de Facebook, puede aplicar características de cumplimiento de Office 365, como retención por juicio, búsqueda de contenido, archivado local, auditoría, supervisión y directivas de retención de Office 365 a los datos de Facebook. Por ejemplo, cuando un buzón se coloca en retención por juicio o se asigna a una directiva de retención, los datos de Facebook se conservan. Puede buscar datos de terceros mediante la búsqueda de contenido o asociar el buzón en el que se almacenan los datos de Facebook con un custodio en un caso de exhibición avanzada de documentos electrónicos. El uso de un conector para importar y archivar datos de Facebook en Office 365 puede ayudar a su organización a cumplir las directivas gubernamentales y regulatorias.
+Una vez importados los datos de Facebook, puede aplicar características de cumplimiento de Office 365, como retención por juicio, búsqueda de contenido, archivado local, auditoría, [cumplimiento de comunicaciones](communication-compliance.md)y directivas de retención de Office 365 a los datos de Facebook. Por ejemplo, cuando un buzón se coloca en retención por juicio o se asigna a una directiva de retención, los datos de Facebook se conservan. Puede buscar datos de terceros mediante la búsqueda de contenido o asociar el buzón en el que se almacenan los datos de Facebook con un custodio en un caso de exhibición avanzada de documentos electrónicos. El uso de un conector para importar y archivar datos de Facebook en Office 365 puede ayudar a su organización a cumplir las directivas gubernamentales y regulatorias.
 
 > [!NOTE]
 > En este momento, solo están disponibles los conectores de ejemplo para las páginas de negocio de Facebook y [Twitter](archive-twitter-data-with-sample-connector.md) en versión preliminar. Pronto estarán disponibles más conectores de muestra.
@@ -118,7 +118,7 @@ Al finalizar este paso (siguiendo las instrucciones paso a paso), se proporciona
 - Token de comprobación de webhooks de Facebook (obtenido en el paso 5)
 - IDENTIFICADOR de aplicación de Azure Active Directory (el identificador de la aplicación AAD obtenido en el paso 2)
 - Secreto de la aplicación de Azure Active Directory (el secreto de la aplicación AAD obtenido en el paso 2)
-- URI de la aplicación de Azure Active Directory (el URI de la aplicación de AAD que se obtuvo en el paso 2; por ejemplo,https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
+- URI de la aplicación de Azure Active Directory (el URI de la aplicación de AAD que se obtuvo en el paso 2; por ejemplo,`https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Paso 7: configurar un conector personalizado en el centro de seguridad & cumplimiento
 

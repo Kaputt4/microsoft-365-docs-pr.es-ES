@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para los informes de cumplimiento normativo de Office 365, Azure y Dynamics 365, para ver auditorías de terceros, averiguar cómo Microsoft mantiene seguros los datos de los clientes y cómo se puede cumplir con ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando se usan estos servicios en línea.
-ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 22968c23b1d521b8fd48e9eccd4679e0a6dd2ed2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091686"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687841"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
@@ -76,7 +76,7 @@ Proporciona las siguientes herramientas y recursos relacionados con el cumplimie
 
   La información sobre los informes de auditoría y un vínculo a la página **informes de auditoría** también se muestra en la Página principal del portal de confianza del servicio. 
   
-- **Administrador de cumplimiento** : el administrador de cumplimiento es una herramienta de evaluación de riesgos basada en el flujo de trabajo que le ayuda a realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo de su organización relacionadas con los servicios en la nube de Microsoft, como Office 365, Dynamics 365 y Azure. Use el administrador de cumplimiento para administrar el cumplimiento normativo en el modelo de responsabilidad compartida de la nube. Para obtener más información, vea [usar el administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los servicios en la nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
+- **Administrador de cumplimiento** : el administrador de cumplimiento es una herramienta de evaluación de riesgos basada en flujos de trabajo que le ayuda a controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización relacionadas con los servicios en la nube de Microsoft, como Office 365, Dynamics 365 y Azure. Use el administrador de cumplimiento para administrar el cumplimiento normativo en el modelo de responsabilidad compartida de la nube. Para obtener más información, vea [usar el administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los servicios en la nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
 
 ### <a name="industries--regions"></a>Regiones de & de industrias
 
@@ -84,12 +84,12 @@ Proporciona información de cumplimiento específica de la industria y de la reg
 
 - **Industrias** : proporciona páginas de aterrizaje específicas de la industria para obtener información y sobre cómo los servicios en la nube de Microsoft ayudan a la organización a cumplir los estándares y regulaciones de estos sectores:
 
-    - Education
+    - Educación
     - Servicios financieros
-    - 365
-    - Mantenimiento
+    - Administración pública
+    - Salud
     - Industria
-    - Merca
+    - Venta al por menor
 
 - **Regions** : proporciona dictámenes legales sobre el cumplimiento de los servicios en la nube de Microsoft con diversas leyes de varios países. Los países específicos incluyen Australia, República Checa, Alemania, Polonia, Rumanía, España y Reino Unido.
   
@@ -169,4 +169,4 @@ Podemos ayudarle con las preguntas sobre el portal de confianza de servicios o c
   
 Sus comentarios son muy importantes para nosotros. Haga clic en el botón comentarios de la parte inferior de la página para enviarnos comentarios sobre lo que ha hecho o no le gusta, o sugerencias que puede tener para mejorar nuestros productos o características del producto.
   
-![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![¿Qué tipo de comentarios tiene](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

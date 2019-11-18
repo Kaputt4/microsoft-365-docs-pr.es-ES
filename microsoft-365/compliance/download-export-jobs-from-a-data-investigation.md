@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Instale y use el explorador de Azure Storage para descargar documentos que se exportaron desde un conjunto de revisión en eDiscovery avanzado.
-ms.openlocfilehash: d7af50b37383e69c666084a93b5b91591a76c114
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Instale y use el explorador de Azure Storage para descargar los documentos que se exportaron desde la evidencia en una investigación de datos.
+ms.openlocfilehash: af71cb43f91c940e4c5edb8ca7be39f4bca9b3be
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091720"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687860"
 ---
 # <a name="download-export-jobs"></a>Descargar trabajos de exportación
 
-Al exportar documentos de un conjunto de revisión en un caso de exhibición avanzada de documentos electrónicos, los documentos se cargan en una ubicación de almacenamiento de Azure proporcionada por Microsoft o en una ubicación de almacenamiento de Azure administrada por la organización. El tipo de ubicación de almacenamiento de Azure que se usa depende de la opción seleccionada al exportar los documentos. 
+Cuando se exportan documentos de Evidence en una investigación de datos, los documentos se cargan en una ubicación de almacenamiento de Azure proporcionada por Microsoft o en una ubicación de almacenamiento de Azure administrada por la organización. El tipo de ubicación de almacenamiento de Azure que se usa depende de la opción seleccionada al exportar los documentos. 
 
-En este artículo se proporcionan instrucciones sobre cómo usar el explorador de almacenamiento de Microsoft Azure para conectarse a una ubicación de almacenamiento de Azure para examinar y descargar los documentos exportados. Para obtener más información sobre el explorador de almacenamiento de Azure, consulte [QuickStart: Use Azure Storage Explorer](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+En este artículo se proporcionan instrucciones sobre cómo usar el explorador de almacenamiento de Microsoft Azure para conectarse a una ubicación de almacenamiento de Azure para examinar y descargar los documentos exportados. Para obtener más información sobre el explorador de almacenamiento de Azure, consulte [QuickStart: Use Azure Storage Explorer](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>Paso 1: instalar el explorador de almacenamiento de Azure
 
@@ -35,7 +35,7 @@ El primer paso es descargar e instalar el explorador de almacenamiento de Azure.
 
 El siguiente paso es obtener la dirección URL de la firma de acceso compartido (SAS) que se genera al crear el trabajo de exportación para [exportar documentos de un conjunto de revisión](export-documents-from-review-set.md). Puede copiar la dirección URL de SAS para los documentos que se cargan en una ubicación de almacenamiento de Azure proporcionada por Microsoft o en una ubicación de almacenamiento de Azure administrada por la organización. En cualquier caso, use la dirección URL de SAS para conectarse a la ubicación de almacenamiento de Azure en el paso 3.
 
-1. En la página **exhibición avanzada** de documentos electrónicos, vaya al caso y, a continuación, haga clic en la pestaña **exportaciones** .
+1. En la página **investigaciones de datos** , vaya a la investigación y, a continuación, haga clic en la pestaña **exportaciones** .
 
 2. En la pestaña **exportaciones** , haga clic en el trabajo de exportación que desea descargar.
 
@@ -61,7 +61,7 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
 
     ![Pegue la dirección URL de SAS en el cuadro URI](media/AzureStorageConnect3.png)
 
-    Observe que una parte de la dirección URL de SAS se muestra en el cuadro **nombre para mostrar** . Se usará como el nombre para mostrar del contenedor que se crea en las cuentas de **almacenamiento** después de conectarse a la ubicación de almacenamiento. Este nombre consta del identificador del caso de eDiscovery avanzado y un identificador único. Puede conservar el nombre para mostrar predeterminado o cambiarlo. Si lo cambia, el nombre para mostrar debe ser único.
+    Observe que una parte de la dirección URL de SAS se muestra en el cuadro **nombre para mostrar** . Se usará como el nombre para mostrar del contenedor que se crea en las cuentas de **almacenamiento** después de conectarse a la ubicación de almacenamiento. Este nombre consta del identificador de la investigación de datos es de y un identificador único. Puede conservar el nombre para mostrar predeterminado o cambiarlo. Si lo cambia, el nombre para mostrar debe ser único.
 
 5.  Haga clic en **Siguiente**.
 
@@ -73,7 +73,7 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
 
     Se abre el nodo **contenedores de blobs** (en **cuentas** > de almacenamiento **(contenedores adjuntos)** \> . 
 
-    ![](media/AzureStorageConnect5.png)
+    ![Exportar trabajos en el nodo contenedores de blobs](media/AzureStorageConnect5.png)
 
     Contiene un contenedor denominado con el nombre para mostrar del paso 4. Este contenedor contiene una carpeta para cada trabajo de exportación que haya creado. A estas carpetas se les asigna un identificador que corresponde al identificador del trabajo de exportación. Puede encontrar estos identificadores de exportación (y el nombre de la exportación) en **información de soporte técnico** en la página de control flotante para cada trabajo **de preparación de datos para exportar** que aparecen en la ficha **trabajos** .
 
@@ -101,7 +101,7 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
  
 8. Para exportar todo el contenido de la exportación, seleccione la carpeta exportar y, a continuación, haga clic en **Descargar**.
 
-9. Especifique la ubicación en la que desea descargar los archivos exportados y, a continuación, haga clic en Seleccionar carpeta.
+9. Especifique la ubicación en la que desea descargar los archivos exportados y, a continuación, haga clic en **Seleccionar carpeta**.
 
     El explorador de almacenamiento de Azure inicia el proceso de exportación. El estado de la descarga de los elementos exportados se muestra en el panel **actividades** . Se muestra un mensaje cuando la descarga ha finalizado.
 

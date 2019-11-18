@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: Investigue, solucione problemas y resuelva problemas comunes en la exhibición de documentos electrónicos de Office 365.
 siblings_only: true
-ms.openlocfilehash: 0d411976ecf6adba9df1f75eb8a45409647b3e1a
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: 37e92e480759601f9dfe61430bdd647b20df051d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378642"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687858"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar problemas y resolver problemas comunes de eDiscovery
 
@@ -29,27 +29,27 @@ En este tema se describen los pasos básicos de solución de problemas que puede
 
 ## <a name="errorissue-ambiguous-location"></a>Error/problema: ubicación ambigua
 
-Si intenta agregar la ubicación del buzón de correo del usuario a la búsqueda y hay objetos duplicados o en conflicto con el mismo userID en el directorio de Exchange Online Protection (EOP), recibirá `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`este error:. 
+Si intenta agregar la ubicación del buzón de correo del usuario a la búsqueda y hay objetos duplicados o en conflicto con el mismo userID en el directorio de Exchange Online Protection (EOP), recibirá este error: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`. 
 
-### <a name="resolution"></a>Solución
+### <a name="resolution"></a>Resolución
 
 Compruebe si hay usuarios duplicados o una lista de distribución con el mismo identificador de usuario.
 
 1. Conéctese a [Office 365 Security & el centro de cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-2. Recuperar todas las instancias del nombre de usuario, escriba:
+2. Ejecute el siguiente comando para recuperar todas las instancias del nombre de usuario:
 
     ```powershell
     Get-Recipient <username>
     ```
 
-La salida de ' useralias@contoso.com ' sería similar a la siguiente:
+   La salida de ' useralias@contoso.com ' sería similar a la siguiente:
 
-> 
-> |Nombre  |RecipientType  |
-> |---------|---------|
-> |Alias, usuario     |MailUser         |
-> |Alias, usuario     |User         |
+   > 
+   > |Nombre  |RecipientType  |
+   > |---------|---------|
+   > |Alias, usuario     |MailUser         |
+   > |Alias, usuario     |Usuario         |
 
 3. Si se devuelven varios usuarios, busque y corrija el objeto conflictivo.
 
@@ -58,13 +58,13 @@ La salida de ' useralias@contoso.com ' sería similar a la siguiente:
 Una exhibición de documentos electrónicos o búsqueda de contenido puede producir el siguiente error:
 >Esta búsqueda se completó con errores (#).  ¿Desea volver a intentar la búsqueda en las ubicaciones con errores?
 
-![Captura de pantalla del error de búsqueda de ubicación específica errónea]( media/edisc-tshoot-specific-location-search-fails.png)
+![Captura de pantalla del error de la ubicación específica de búsqueda con errores]( media/edisc-tshoot-specific-location-search-fails.png)
 
-### <a name="resolution"></a>Solución
+### <a name="resolution"></a>Resolución
 
 Si recibe este error, se recomienda comprobar las ubicaciones en las que se produjo un error en la búsqueda y, a continuación, volver a ejecutar la búsqueda solo en las ubicaciones con error.
 
-1. Conéctese al [centro de seguridad & cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, escriba el siguiente comando:
+1. Conéctese al [centro de seguridad & cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y ejecute el siguiente comando:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -74,29 +74,29 @@ Si recibe este error, se recomienda comprobar las ubicaciones en las que se prod
 
 3. Vuelva a intentar la búsqueda de exhibición de documentos electrónicos solo en las ubicaciones fallidas.
 
-4. Si sigue recibiendo estos errores, consulte [Reintentar ubicaciones erróneas](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) para más pasos de solución de problemas.
+4. Si sigue recibiendo estos errores, consulte [Reintentar ubicaciones erróneas](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) para más pasos de solución de problemas.
 
 ## <a name="errorissue-file-not-found"></a>Error/problema: no se encontró el archivo
 
-Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos que incluye SharePoint Online y una unidad para las ubicaciones de `File Not Found` la empresa, puede recibir el error, aunque el archivo se encuentra en el sitio. Este error se producirá en la advertencia de exportación y errores. csv o en los elementos omitidos. csv. Esto puede ocurrir si el archivo no se encuentra en el sitio o si el índice está obsoleto. Este es el texto de un error real, con énfasis agregado.
+Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos que incluye SharePoint Online y una unidad para las ubicaciones de `File Not Found` la empresa, puede recibir el error, aunque el archivo se encuentra en el sitio. Este error se producirá en la advertencia de exportación y errores. csv o en los elementos omitidos. csv. Esto puede ocurrir si no se encuentra el archivo en el sitio o si el índice no está actualizado. Este es el texto de un error real (con énfasis agregado).
   
-> 28.06.2019 10:02:19_FailedToExportItem_Failed para descargar contenido. Información de diagnóstico adicional: Microsoft. Office. Compliance. EDiscovery. ExportWorker. Exceptions. ContentDownloadTemporaryFailure: no se pudo descargar del contenido 6ea52149-91cd-4965-b5bb-82ca6a3ec9be de tipo Document. Identificador de correlación: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode:-2147024894---> Microsoft. SharePoint. Client. ServerException: ***no se encuentra el archivo***. en Microsoft. SharePoint. Client. ClientRequest. ProcessResponseStream (Stream responseStream) en Microsoft. SharePoint. Client. ClientRequest. ProcessResponse ()---final del seguimiento de pila de la excepción interna---
+> 28.06.2019 10:02:19_FailedToExportItem_Failed descargar contenido. Información de diagnóstico adicional: Microsoft. Office. Compliance. EDiscovery. ExportWorker. Exceptions. ContentDownloadTemporaryFailure: no se pudo descargar del contenido 6ea52149-91cd-4965-b5bb-82ca6a3ec9be de tipo Document. Identificador de correlación: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode:-2147024894---> Microsoft. SharePoint. Client. ServerException: ***no se encuentra el archivo***. en Microsoft. SharePoint. Client. ClientRequest. ProcessResponseStream (Stream responseStream) en Microsoft. SharePoint. Client. ClientRequest. ProcessResponse ()---final del seguimiento de pila de la excepción interna---
 
-### <a name="resolution"></a>Solución
+### <a name="resolution"></a>Resolución
 
 1. Compruebe la ubicación identificada en la búsqueda para asegurarse de que la ubicación del archivo es correcta y se ha agregado en las ubicaciones de búsqueda.
 
-2. Use los procedimientos que se [muestran en solicitar manualmente el rastreo y la reindexación de un sitio, una biblioteca o una lista](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) para volver a indizar el sitio.
+2. Use los procedimientos de [solicitar manualmente el rastreo y la reindexación de un sitio, una biblioteca o una lista para volver](https://docs.microsoft.com/sharepoint/crawl-site-content) a indizar el sitio.
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Error/problema: la búsqueda produce un error porque no se encuentra el destinatario
 
 Una búsqueda de exhibición de documentos electrónicos `recipient not found`da error con el. Este error puede producirse si no se encuentra el objeto de usuario en Exchange Online Protection (EOP) porque el objeto no se ha sincronizado.
 
-### <a name="resolution"></a>Solución
+### <a name="resolution"></a>Resolución
 
 1. Conéctese a [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Compruebe si el objeto de usuario está sincronizado con Exchange Online Protection tipo:
+2. Ejecute el siguiente comando para comprobar si el usuario se ha sincronizado con Exchange Online Protection:
 
     ```powershell
     Get-Recipient <userId> | FL
@@ -108,11 +108,11 @@ Una búsqueda de exhibición de documentos electrónicos `recipient not found`da
 
 Al exportar resultados de búsqueda de eDiscovery o búsqueda de contenido en el centro de seguridad y cumplimiento, la descarga tarda más de lo esperado.  Puede comprobar la cantidad de datos que se van a descargar y, posiblemente, aumentar la velocidad de exportación.
 
-### <a name="resolution"></a>Solución
+### <a name="resolution"></a>Resolución
 
-1.  Pruebe a usar los pasos que se indican en el artículo [aumentar la velocidad de descarga](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
+1.  Pruebe a usar los pasos que se indican en el artículo [aumentar la velocidad de descarga](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2.  Si sigue teniendo problemas, conéctese a [PowerShell del centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, escriba el siguiente comando:
+2.  Si sigue teniendo problemas, conéctese a [PowerShell del centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, ejecute el siguiente comando:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -120,7 +120,7 @@ Al exportar resultados de búsqueda de eDiscovery o búsqueda de contenido en el
 
 4. Busque la cantidad de datos que se van a descargar en los parámetros SearchResults y SearchStatistics.
 
-5. Escriba el siguiente comando:
+5. Ejecute el siguiente comando:
 
    ```powershell
    Get-ComplianceSearchAction | FL
@@ -136,19 +136,19 @@ Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos, si s
 
 ![Captura de pantalla del error interno del servidor 500](media/edisc-tshoot-error-500.png)
 
-### <a name="resolution"></a>Solución
+### <a name="resolution"></a>Resolución
 
 1. Divida la búsqueda en búsquedas más pequeñas y vuelva a ejecutar la búsqueda.  Intente usar un intervalo de fechas menor o limitar el número de ubicaciones en las que se busca.
 
-2. Conéctese al [centro de seguridad & cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, escriba el siguiente comando:
+2. Conéctese al [centro de seguridad & cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y ejecute el siguiente comando:
 
-    ```powershell
+    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
     ```
 
 3. Examine el resultado para obtener resultados y errores.
 
-4. Examine el archivo trace. log. Estará en la misma carpeta a la que envió la exportación.
+4. Examine el archivo trace. log. Se encuentra en la misma carpeta en la que exportó los resultados de la búsqueda.
 
 5. Ponerse en contacto con el soporte técnico de Microsoft.
 
@@ -156,21 +156,42 @@ Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos, si s
 
 error de distribución de sincronización de la Directiva de suspensión de casos de eDiscovery. El error reza:
 
-> "Recursos: se está tardando más de lo esperado en implementar la Directiva. Es posible que tarde unas dos horas en actualizar el estado de implementación final, por lo que debe volver a comprobarlo en un par de horas.
+> "Recursos: se está tardando más de lo esperado en implementar la Directiva. La actualización del estado de implementación final puede tardar unas 2 horas más, por lo que debe volver a comprobarlo en un par de horas.
 
-### <a name="resolution"></a>Solución
+### <a name="resolution"></a>Resolución
 
-1.  Conéctese al [centro de seguridad & cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, escriba el siguiente comando:
+1.  Conéctese al [centro de seguridad & cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y ejecute el siguiente comando para una suspensión de caso de exhibición de documentos electrónicos:
 
     ```powershell
-    Get-RetentionCompliancePolicy  <policyname> - DistributionDetail | FL
+    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
+    ```
+
+    Para una directiva de retención, ejecute el siguiente comando:
+
+    ```powershell
+    Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
     ```
 
 2. Examine el valor del parámetro DistributionDetail para buscar errores como los siguientes:
+ 
+   > Error: recursos: se está tardando más de lo esperado en implementar la Directiva. La actualización del estado de implementación final puede tardar unas 2 horas más, por lo que debe volver a comprobarlo en un par de horas. 
+   
+3. Intente ejecutar el parámetro RetryDistribution en la Directiva en cuestión:
+   
+    
+    Para suspensiones de casos de eDiscovery:
 
-   > Si se produce un error, cree una escalación a PG para forzar una resincronización manual en la Directiva.
+    ```powershell
+    Set-CaseHoldPolicy <policyname> -RetryDistribution
+    ```
 
-3. Ponerse en contacto con el soporte técnico de Microsoft.
+    Para directivas de retención:
+
+    ```powershell
+    Set-RetentionCompliancePolicy <policyname> -RetryDistribution
+    ``` 
+
+4. Ponerse en contacto con el soporte técnico de Microsoft.
 
 ## <a name="see-also"></a>Vea también
 

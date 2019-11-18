@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 820bab0a128f952cf5d96208f5d561f4994bd859
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9c3111069ff30784af5fe781200de5e770c79066
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093042"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38687921"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -211,12 +211,12 @@ Nueve letras y dígitos:
 - Dos dígitos 
 - Cinco dígitos o letras (no distinguen entre mayúsculas y minúsculas)
 
-O
+O BIEN
 
 - 1 o 2 letras opcionales (no distingue entre mayúsculas y minúsculas)  
 - 4-9 dígitos
 
-O
+O BIEN
 
 - Nueve dígitos o letras (no distingue entre mayúsculas y minúsculas)
 
@@ -588,7 +588,7 @@ No
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureDocumentDBAuthKey encuentra contenido que coincide con el patrón.
-- La expresión regular CEP_CommonExampleKeywords no **encuentra contenido** que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no** encuentra contenido que coincida con el patrón.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -648,7 +648,7 @@ No
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureConnectionString encuentra contenido que coincide con el patrón.
-- La expresión regular CEP_CommonExampleKeywords no **encuentra contenido** que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no** encuentra contenido que coincida con el patrón.
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -708,7 +708,7 @@ No
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureIoTConnectionString encuentra contenido que coincide con el patrón.
-- La expresión regular CEP_CommonExampleKeywords no **encuentra contenido** que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no** encuentra contenido que coincida con el patrón.
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -758,7 +758,7 @@ No
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzurePublishSettingPasswords encuentra contenido que coincide con el patrón.
-- La expresión regular CEP_CommonExampleKeywords no **encuentra contenido** que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no** encuentra contenido que coincida con el patrón.
 
 
 ```xml
@@ -814,7 +814,7 @@ No
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureRedisCacheConnectionString encuentra contenido que coincide con el patrón..
-- La expresión regular CEP_CommonExampleKeywords no **encuentra contenido** que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no** encuentra contenido que coincida con el patrón.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -908,7 +908,7 @@ No
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureServiceBusConnectionString encuentra contenido que coincide con el patrón..
-- La expresión regular CEP_CommonExampleKeywords no **encuentra contenido** que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no** encuentra contenido que coincida con el patrón.
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -966,8 +966,8 @@ No
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureStorageAccountKey encuentra contenido que coincide con el patrón.
-- La expresión regular CEP_AzureEmulatorStorageAccountFilter no **encuentra contenido** que coincida con el patrón.
-- La expresión regular CEP_CommonExampleKeywords no **encuentra contenido** que coincida con el patrón.
+- La expresión regular CEP_AzureEmulatorStorageAccountFilter **no** encuentra contenido que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no** encuentra contenido que coincida con el patrón.
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1078,7 +1078,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Identidad
 - Registro
 - Determinación 
-- ID 
+- Id. 
 - Identiteitskaart
 - Registratie nummer 
 - Identificatie nummer 
@@ -1440,7 +1440,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_ [province_name] _drivers_license_name
 
 - La abreviatura de la provincia, por ejemplo, AB
 - El nombre de la provincia, por ejemplo, Alberta
@@ -1758,7 +1758,7 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
 - New Brunswick
 - Nova Scotia
 - Prince Edward Island
-- Canadá
+- Canada
    
 ## <a name="canada-social-insurance-number"></a>Número de seguridad social de Canadá
 
@@ -1894,7 +1894,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - Número de identificación nacional 
 - tarjeta de identidad 
-- ID 
+- Id. 
 - Determinación 
 - Rol Único Nacional 
 - REALIZAR 
@@ -2304,7 +2304,7 @@ Nueve dígitos con barra diagonal (formato antiguo) 10 dígitos con barra diagon
 Nueve dígitos (formato antiguo):
 - Nueve dígitos
 
-O
+O BIEN
 
 - Seis dígitos que representan la fecha de nacimiento
 - Una barra diagonal 
@@ -2313,7 +2313,7 @@ O
 10 dígitos (nuevo formato):
 - 10 dígitos
 
-O
+O BIEN
 
 - Seis dígitos que representan la fecha de nacimiento
 - Una barra diagonal  
@@ -2991,7 +2991,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Debe coincidir uno de los dos patrones:
 - 13 dígitos seguidos de un espacio seguido de dos dígitos<br/>
-o
+o bien
 - 15 dígitos consecutivos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -3324,7 +3324,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 #### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
 - tarjeta de identidad
-- ID
+- Id.
 - Determinación
 - Personalausweis
 - Identifizierungsnummer
@@ -3727,7 +3727,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Se encuentra una palabra clave de Dictionary_icd_10_codes.
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- Se encuentra una palabra clave de Dictionary_icd_10_ actualizada.
+- Se encuentra una palabra clave de Dictionary_icd_10_ Updated.
 
 ```xml
       <!-- ICD-10 CM -->
@@ -3744,9 +3744,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Palabras clave
 
-Cualquier término del Diccionario de palabras clave de Dictionary_icd_10_updated, que se basa en la [clasificación internacional de enfermedades, décima revisión, modificación clínica (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca el término, no los códigos de seguro.
+Cualquier término del Diccionario de palabras clave Dictionary_icd_10_updated, que se basa en la [clasificación internacional de enfermedades, décima revisión, modificación clínica (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca el término, no los códigos de seguro.
 
-Cualquier término del Diccionario de palabras clave de Dictionary_icd_10_codes, que se basa en la [clasificación internacional de enfermedades, décima revisión, modificación clínica (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo busca sólo los códigos de seguros, no la descripción.
+Cualquier término del Diccionario de palabras clave Dictionary_icd_10_codes, que se basa en la [clasificación internacional de enfermedades, décima revisión, modificación clínica (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo busca sólo los códigos de seguros, no la descripción.
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Clasificación Internacional de enfermedades (ICD-9-CM)
 
@@ -3785,9 +3785,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-Cualquier término del Diccionario de palabras clave de Dictionary_icd_9_updated, que se basa en la [clasificación internacional de enfermedades, novena revisión, modificación clínica (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo solo busca el término, no los códigos de seguro.
+Cualquier término del Diccionario de palabras clave Dictionary_icd_9_updated, que se basa en la [clasificación internacional de enfermedades, novena revisión, modificación clínica (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo solo busca el término, no los códigos de seguro.
 
-Cualquier término del Diccionario de palabras clave de Dictionary_icd_9_codes, que se basa en la [clasificación internacional de enfermedades, novena revisión, modificación clínica (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo busca sólo los códigos de seguros, no la descripción.
+Cualquier término del Diccionario de palabras clave Dictionary_icd_9_codes, que se basa en la [clasificación internacional de enfermedades, novena revisión, modificación clínica (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo busca sólo los códigos de seguros, no la descripción.
 
 ## <a name="ireland-personal-public-service-pps-number"></a>Número de servicio público personal (PPS) de Irlanda
 
@@ -4502,7 +4502,7 @@ Keyword_nz_terms
 
 - NHI 
 - New Zealand 
-- Mantenimiento 
+- Salud 
 - régimen 
    
 ## <a name="norway-identification-number"></a>Número de identificación de Noruega
@@ -4902,7 +4902,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- ID
+- Id.
 - Determinación 
    
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -5022,8 +5022,8 @@ No
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_SQLServerConnectionString encuentra contenido que coincide con el patrón.
 - **No** se encuentra una palabra clave de CEP_GlobalFilter.
-- La expresión regular CEP_PasswordPlaceHolder no **encuentra contenido** que coincida con el patrón.
-- La expresión regular CEP_CommonExampleKeywords no **encuentra contenido** que coincida con el patrón.
+- La expresión regular CEP_PasswordPlaceHolder **no** encuentra contenido que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no** encuentra contenido que coincida con el patrón.
 
 ```sql
 <!---SQL Server Connection String>
@@ -5507,7 +5507,7 @@ Combinación de 18 letras y dígitos en el formato especificado
 18 letras y dígitos:
 - Cinco letras (no distinguen entre mayúsculas y minúsculas) o el dígito "9" en lugar de una letra 
 - Un dígito 
-- Cinco dígitos en el formato de fecha DDMMA para la fecha de nacimiento 
+- Cinco dígitos en el formato de fecha MMDDY para la fecha de nacimiento (el séptimo carácter aumenta en 50 si el impulsor es hembra, es decir, 51 a 62 en lugar de 01 a 12)
 - Dos letras (no distinguen entre mayúsculas y minúsculas) o el dígito "9" en lugar de una letra 
 - Cinco dígitos
 
@@ -5675,7 +5675,7 @@ Dos patrones posibles:
 - Seis dígitos
 - ' A ', ' B ', ' C ' o ' t ' (como el prefijo, solo se permiten determinados caracteres en el sufijo; no distingue entre mayúsculas y minúsculas)
 
-O
+O BIEN
 
 - Dos letras
 - Un espacio o un guion
@@ -5903,7 +5903,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - DISTRIBUCIÓN 
 - CDL 
 - CDLS 
-- ID 
+- Id. 
 - Falta 
 - LISTAS # 
 - DISTRIBUCIÓN # 
@@ -5995,7 +5995,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - identification cards# 
 
 
-#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
 
 - Abreviatura del estado (por ejemplo, "NY") 
 - Nombre del estado (por ejemplo, "New York")    

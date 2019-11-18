@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
+ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417539"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38687631"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -105,22 +105,22 @@ Un control compartido hace referencia a cualquier control en el que Microsoft y 
 
 Los [elementos de acciones](working-with-compliance-manager.md#controls-and-actions) se incluyen en los controles administrados por el cliente como parte de las funciones integradas de administración de flujos de trabajo que puede usar para administrar y realizar un seguimiento del progreso de la realización de la evaluación.
 
-Los usuarios de su organización pueden usar el administrador de cumplimiento para revisar los controles administrados por el cliente de todas las evaluaciones para las que están asignados. Cuando un usuario inicia sesión en el administrador de cumplimiento y abre el panel de **elementos de acción** , se muestra una lista de los elementos de acción que tienen asignados. En función del rol de administrador de cumplimiento asignado al usuario, puede proporcionar detalles de implementación o prueba, actualizar el estado o asignar elementos de acción.
+Los usuarios de su organización pueden usar el administrador de cumplimiento para revisar los controles administrados por el cliente de todas las evaluaciones para las que están asignados. Cuando un usuario inicia sesión en Administrador de cumplimiento y abre el panel **Elementos de acción**, ve una lista de los que tiene asignados. Según el rol de Administrador de cumplimiento asignado al usuario, este podrá proporcionar detalles sobre la prueba o la implementación, actualizar el estado o asignar elementos de acción.
 
 Los controles de certificación suelen ser implementados por una persona y comprobados por otro. Por ejemplo, después de que se completen los elementos de acción inicialmente asignados a una persona para su implementación, los elementos de acción se asignan a la siguiente persona para probar y cargar las pruebas. Cualquier usuario con permisos suficientes para las asignaciones de control puede asignar y reasignar elementos de acción. Esto permite la administración central de las asignaciones de control y el enrutamiento descentralizado de elementos de acción entre implementadores y evaluadores.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
-El administrador de cumplimiento usa un modelo de permisos de control de acceso basado en roles. Solo los usuarios a los que se les asigna un rol de usuario pueden tener acceso al administrador de cumplimiento y las acciones permitidas por cada usuario están restringidas por el tipo de función. [Ver una tabla](working-with-compliance-manager.md#permissions) que muestra las acciones permitidas para cada permiso.
+El administrador de cumplimiento utiliza un modelo de permisos de control de acceso basado en roles. Solo los usuarios a los que se les asigne un rol pueden acceder al administrador de cumplimiento, y las acciones permitidas por cada usuario están restringidas según el tipo de rol. [Ver una tabla](working-with-compliance-manager.md#permissions) que muestra las acciones permitidas para cada permiso.
 
 El administrador del portal del administrador de cumplimiento puede establecer permisos para otros usuarios en el administrador de cumplimiento siguiendo estos pasos:
 
 1. En el menú desplegable **más** arriba, seleccione **Administrador**y, a continuación, **configuración**.
 2. Desde aquí, seleccione el rol que desea asignar y, a continuación, agregue el empleado que desee asignar a ese rol. A continuación, los usuarios podrán realizar determinadas acciones.
 
-Además, los usuarios a los que se ha asignado el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) tienen permiso de solo lectura para obtener acceso al administrador de cumplimiento; sin embargo, no pueden modificar los datos ni realizar ninguna acción dentro del administrador de cumplimiento.
+Además, los usuarios a los que se ha asignado el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) tienen permiso de solo lectura para obtener acceso al administrador de cumplimiento; sin embargo, no pueden modificar los datos ni realizar ninguna acción dentro del administrador de cumplimiento.
 
-Tenga en cuenta que ya no hay un rol de **acceso de invitado** predeterminado. A cada usuario se le debe asignar una función para poder acceder y trabajar en el administrador de cumplimiento.
+Tenga en cuenta que ya no hay un rol predeterminado **acceso de invitado** Se debe asignar un rol a cada usuario para que tenga acceso y trabaje en administrador de cumplimiento
   
 ## <a name="manage-evidence"></a>Administrar pruebas
 
@@ -131,28 +131,30 @@ El administrador de cumplimiento puede almacenar pruebas de las tareas de implem
 El administrador de cumplimiento proporciona [plantillas](working-with-compliance-manager.md#templates) preconfiguradas para las evaluaciones y le permite crear plantillas personalizadas para los controles administrados por el cliente para sus necesidades de cumplimiento. Las plantillas nuevas se crean mediante la importación de información de controles desde un archivo de Excel o bien se puede crear una plantilla a partir de una copia de una plantilla existente.
 
 Las plantillas preconfiguradas incluidas con el administrador de cumplimiento son:
- 
-- [ISO 27001:2013](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en)
-- [ISO 27018:2019](https://www.iso.org/obp/ui/#iso:std:iso-iec:27018:ed-2:v1:en)
-- [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
-- [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
-- [NIST Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework)
-- [Cloud Security Alliance (CSA) Cloud control Matrix (CCM) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
-- [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
-- [](https://www.hhs.gov/hipaa/for-professionals/index.html) / [tecnología](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html) HIPAA
-- [Moderado FedRAMP](https://www.fedramp.gov/documents/)
-- [RGPD de la Unión Europea](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
+
+1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+5. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+6. [Matriz de controles de nube (CCM) de Cloud Security Alliance (CSA) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+8. [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://go.microsoft.com/fwlink/?linkid=2109077) 
+8. [](https://go.microsoft.com/fwlink/?linkid=2109078) / [tecnología](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
+9. [Moderado FedRAMP](https://go.microsoft.com/fwlink/?linkid=2108869)
+10. [RGPD de la Unión Europea](https://go.microsoft.com/fwlink/?linkid=2108870)
+11. [Ley de privacidad del consumidor de California (CCPA)-Preview](https://go.microsoft.com/fwlink/?linkid=2108871)
+12. [Línea base de protección de datos 365 de Microsoft](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>Puntuación de cumplimiento
 
-La [puntuación de cumplimiento](compliance-score-methodology.md) es un componente principal del administrador de cumplimiento que ayuda a su organización a comprender y administrar el cumplimiento. Al igual que la [puntuación segura de Microsoft](../security/mtp/microsoft-secure-score.md), la puntuación de cumplimiento es un sistema de puntuación basado en el comportamiento para las actividades relacionadas con la protección de datos, la privacidad y la seguridad de la organización. La puntuación de cumplimiento para una evaluación es una expresión de cumplimiento de un estándar o una reglamentación determinada. Cuanto mayor sea la puntuación numérica, mejor será la postura de cumplimiento para la evaluación. Es fundamental comprender la metodología de calificación de cumplimiento para dar prioridad a las acciones de control administradas por el cliente necesarias.
+La [puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md) es una característica del centro de cumplimiento de Microsoft 365 que le ayuda a comprender la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. Conocer la puntuación de cumplimiento general ayuda a su organización a comprender y administrar el cumplimiento. Comprenda [cómo se calcula la puntuación de cumplimiento](compliance-score-methodology.md).
   
 > [!IMPORTANT]
-> La puntuación de cumplimiento no indica una medida absoluta de cumplimiento organizativo con cualquier norma o reglamento específico. Expresa el alcance hasta el que se adoptaron controles que pueden reducir los riesgos en la privacidad individual y los datos personales. Ningún servicio puede garantizar que cumpla con una norma o reglamento y, además, la puntuación de cumplimiento no puede interpretarse como una garantía en ningún caso.
+> La puntuación de cumplimiento no expresa una medida absoluta de cumplimiento organizacional con cualquier norma o reglamentación en particular. Expresa hasta qué punto ha adoptado los controles que pueden reducir los riesgos para los datos personales y la privacidad individual. Ningún servicio puede garantizar que cumple un estándar o una regla, y la puntuación de cumplimiento no debe interpretarse como una garantía de ninguna manera.
 
 ## <a name="secure-score-integration"></a>Integración de la puntuación segura
 
-El administrador de cumplimiento se integra con la [calificación segura de Microsoft](../security/mtp/microsoft-secure-score.md) para aplicar automáticamente el crédito de la puntuación segura a la puntuación de cumplimiento para los elementos de acción sincronizados. Esto se puede configurar para elementos de acción individuales y proporciona una actualización continua entre los elementos.
+El administrador de cumplimiento se integra con la [calificación segura de Microsoft](../security/mtp/microsoft-secure-score.md) para aplicar automáticamente el crédito de la puntuación segura a la puntuación de cumplimiento para los elementos de acción sincronizados. Esto se puede configurar para elementos de acción individuales o para todas las acciones de forma global y proporciona actualizaciones de la puntuación segura.
 
 Por ejemplo, tiene un requisito relacionado con la seguridad para activar Azure Rights Management en su organización que también se aplica a un elemento de acción relacionado con el cumplimiento. Cuando Azure Rights Management se activa y se procesa con una puntuación segura, el administrador de cumplimiento recibe la notificación de la actualización y la puntuación del elemento de acción se actualiza automáticamente con crédito de finalización.
 

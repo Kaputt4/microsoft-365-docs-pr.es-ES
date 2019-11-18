@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ayuda a explicar las diferencias entre las versiones de Office 365 cifrado de mensajes.
-ms.openlocfilehash: 29c30c1630e6fbf24e9037837c162b4ac67950e2
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: 1d4016e3fa0576a52ef9627539ecd96416a53fae
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435524"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38687614"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 
@@ -72,11 +72,9 @@ Para obtener información sobre cómo usar el cifrado de mensajes avanzado, cons
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Características únicas del cifrado de mensajes de Office 365 en una implementación alta de GCC
 
-Office 365 Advanced Message Encryption no está disponible en un entorno de GCC High. Todavía puede usar una plantilla de marca única en un entorno de GCC High.
+Office 365 Advanced Message Encryption no está disponible en un entorno de GCC High. Todavía puede usar y personalizar una plantilla de marca única en un entorno de GCC de alto nivel.
 
 Además, si va a usar el cifrado de mensajes de Office 365 en un entorno de GCC High, existen algunas características únicas sobre la experiencia de los destinatarios.
-
-Office 365 Advanced Message Encryption no es compatible con GCC High.
 
 ### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>Correo electrónico cifrado de GCC High a GCC destinatarios altos
 
