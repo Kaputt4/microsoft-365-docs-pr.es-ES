@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 description: 'Resumen: Descripción del cifrado para Skype, OneDrive, SharePoint y Exchange Online.'
-ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 220f3060bd9581b22183bbb56e68c3ec930d0c24
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093269"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38691081"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Office 365 cifrado para Skype empresarial, OneDrive para la empresa, SharePoint Online y Exchange Online
 
@@ -63,7 +64,7 @@ Las credenciales usadas para obtener acceso a los contenedores de almacenamiento
 > [!NOTE]
 > Para los clientes de Office 365 el gobierno de Estados Unidos, los blobs de datos se almacenan en Azure U.S. Government Storage. Además, el acceso a las claves de SharePoint Online en Office 365 U.S. Government se limita al personal de Office 365 que se ha diseñado específicamente. El personal de operaciones del gobierno de Azure Estados Unidos no tiene acceso al almacén de claves de SharePoint Online que se usa para cifrar blobs de datos.
 
-Para obtener más información sobre el cifrado de datos en SharePoint Online y OneDrive para la empresa, consulte [cifrado de datos en onedrive para la empresa y SharePoint Online](https://technet.microsoft.com/en-us/library/dn905447.aspx).
+Para obtener más información sobre el cifrado de datos en SharePoint Online y OneDrive para la empresa, consulte [cifrado de datos en onedrive para la empresa y SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx).
 
 ### <a name="list-items-in-sharepoint-online"></a>Elementos de lista en SharePoint Online
 

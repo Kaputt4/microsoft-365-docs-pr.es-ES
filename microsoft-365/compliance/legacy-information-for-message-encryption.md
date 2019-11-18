@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si todavía no ha movido su organización de Office 365 a las nuevas capacidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que cree un plan para cambiar a las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection. Si desea obtener más información sobre cómo funcionan las nuevas funciones en primer lugar, consulte Office 365 Message Encryption. En el resto de este artículo se hace referencia al comportamiento OME antes de la publicación de las nuevas capacidades de OME.
-ms.openlocfilehash: 70529e9aa5c444ab8fc57d4a9698295e50198725
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5320c678dee5ef08f7095c4415a22841e6202b5f
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092524"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38691077"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -91,7 +91,7 @@ El siguiente ejemplo muestra un logotipo personalizado para ContosoPharma en los
   
 1. Conéctese a Exchange online mediante PowerShell remoto, tal como se describe en [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated).
 
-2. Use el cmdlet Set-OMEConfiguration como se describe aquí: [set-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) o use la siguiente tabla para obtener instrucciones.
+2. Use el cmdlet Set-OMEConfiguration como se describe aquí: [set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) o use la siguiente tabla para obtener instrucciones.
 
    **Opciones de personalización de cifrado**
 
@@ -104,9 +104,9 @@ El siguiente ejemplo muestra un logotipo personalizado para ContosoPharma en los
 
  **Para quitar personalizaciones de marca de los mensajes de correo electrónico de cifrado y el portal de cifrado**
   
-1. Conéctese a Exchange online mediante PowerShell remoto, tal como se describe en [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx).
+1. Conéctese a Exchange online mediante PowerShell remoto, tal como se describe en [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
 
-2. Use el cmdlet Set-OMEConfiguration tal y como se describe aquí: [set-OMEConfiguration](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""`. Para todos los valores de imagen, como el logotipo, establezca el `"$null"`valor en.
+2. Use el cmdlet Set-OMEConfiguration tal y como se describe aquí: [set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""`. Para todos los valores de imagen, como el logotipo, establezca el `"$null"`valor en.
 
    **Opciones de personalización de cifrado**
 
@@ -125,17 +125,17 @@ En la siguiente tabla se proporcionan detalles técnicos para el servicio de cif
 |**Detalles del servicio**|**Descripción**|
 |:-----|:-----|
 |Requisitos de dispositivo de cliente  <br/> |Los mensajes cifrados se pueden ver en cualquier dispositivo de cliente, siempre y cuando los datos adjuntos HTML puedan abrirse en un explorador moderno que admita el envío de formularios.  <br/> |
-|Algoritmo de cifrado y compatibilidad con FIPS (Estándar federal de procesamiento de información)  <br/> |El Cifrado de mensajes de Office 365 emplea las mismas claves de cifrado que Microsoft Azure Information Rights Management (IRM) y admite el modo criptográfico 2 (clave de 2048 bits para RSA y de 256 bits para sistemas SHA-1). Para obtener más información acerca de los modos criptográficos de IRM subyacentes, consulte [modos criptográficos de AD RMS](http://technet.microsoft.com/library/hh867439%28WS.10%29.aspx).  <br/> |
+|Algoritmo de cifrado y compatibilidad con FIPS (Estándar federal de procesamiento de información)  <br/> |El Cifrado de mensajes de Office 365 emplea las mismas claves de cifrado que Microsoft Azure Information Rights Management (IRM) y admite el modo criptográfico 2 (clave de 2048 bits para RSA y de 256 bits para sistemas SHA-1). Para obtener más información acerca de los modos criptográficos de IRM subyacentes, consulte [modos criptográficos de AD RMS](https://technet.microsoft.com/library/hh867439%28WS.10%29.aspx).  <br/> |
 |Tipos de mensaje admitidos  <br/> |Solo se admite el cifrado de mensajes de Office 365 para los elementos que tienen un identificador de clase de mensaje de **IPM.Note**. Para obtener más información, vea [tipos de elementos y clases de mensajes](https://msdn.microsoft.com/library/office/ff861573.aspx).  <br/> |
-|Límites de tamaño de mensaje  <br/> |El Cifrado de mensajes de Office 365 es capaz de cifrar mensajes de hasta 25 megabytes. Para obtener más información sobre los límites de tamaño de los mensajes, vea [límites de Exchange Online](http://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
+|Límites de tamaño de mensaje  <br/> |El Cifrado de mensajes de Office 365 es capaz de cifrar mensajes de hasta 25 megabytes. Para obtener más información sobre los límites de tamaño de los mensajes, vea [límites de Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
 |Directivas de retención de correo electrónico de Exchange Online  <br/> |Exchange online no almacena los mensajes cifrados.  <br/> |
 |Compatibilidad de idiomas en el cifrado de mensajes de Office 365  <br/> | El cifrado de mensajes de Office 365 admite los idiomas de Office 365 de la siguiente manera:  <br/>  Los mensajes de correo electrónico entrantes y los archivos HTML adjuntos se localizan según la configuración de idioma del remitente.  <br/>  El portal de visualización se localiza en función de la configuración del explorador del destinatario.  <br/>  El cuerpo (contenido) del mensaje cifrado no se localiza.  <br/> |
-|Información de privacidad del Portal OME y la aplicación Visor OME  <br/> |El vínculo [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/en-US/privacystatement) proporciona más información sobre el uso de su información privada por parte de Microsoft.  <br/> |
+|Información de privacidad del Portal OME y la aplicación Visor OME  <br/> |El vínculo [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) proporciona más información sobre el uso de su información privada por parte de Microsoft.  <br/> |
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Preguntas más frecuentes acerca de OME heredados
 <a name="LegacyServiceInfo"> </a>
 
-¿Tiene alguna pregunta sobre el cifrado de mensajes de Office 365? Aquí encontrará algunas respuestas. Si no encuentra lo que necesita, consulte los foros de la comunidad de Office 365 en la [comunidad de office 365](http://community.office365.com/en-us/forums/default.aspx).
+¿Tiene alguna pregunta sobre el cifrado de mensajes de Office 365? Aquí encontrará algunas respuestas. Si no encuentra lo que necesita, consulte los [foros de Microsoft Tech Community para Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
   
  **P. mis usuarios envían mensajes de correo electrónico cifrados a destinatarios fuera de la organización. ¿Hay algo que los destinatarios externos tengan que hacer para leer y responder a los mensajes de correo electrónico cifrados con el cifrado de mensajes de Office 365?**
   
@@ -171,7 +171,7 @@ S/MIME es básicamente una tecnología de cifrado del lado cliente y requiere la
   
  **P. ¿Puedo leer los mensajes cifrados en dispositivos móviles?**
   
-Sí, puede ver los mensajes en Android y iOS descargando las aplicaciones del visor de OME de [Google Play Store](http://go.microsoft.com/fwlink/?LinkID=525995&amp;clcid=0x409) y de la [App Store de Apple](http://go.microsoft.com/fwlink/?LinkID=525996&amp;clcid=0x409). Abra los datos adjuntos en formato HTML en la aplicación del Visor de OME y, a continuación, siga las instrucciones para abrir el mensaje cifrado. Para otros dispositivos móviles, puede abrir los datos adjuntos en formato HTML siempre que el cliente de correo permita la publicación de formularios.
+Sí, puede ver los mensajes en Android y iOS descargando las aplicaciones del visor de OME de Google Play Store y de la App Store de Apple. Abra los datos adjuntos en formato HTML en la aplicación del Visor de OME y, a continuación, siga las instrucciones para abrir el mensaje cifrado. Para otros dispositivos móviles, puede abrir los datos adjuntos en formato HTML siempre que el cliente de correo permita la publicación de formularios.
   
  **P. ¿Se cifran las respuestas y los mensajes reenviados?**
   
@@ -189,7 +189,7 @@ El cifrado de mensajes de Office 365 usa Rights Management Services (RMS) como i
 
 - Si usa Active Directory (AD) RMS para obtener las claves, se utiliza el modo criptográfico 1 o el modo criptográfico 2. El método empleado depende de la implementación local de AD RMS. El modo criptográfico 1 es la implementación criptográfica original de AD RMS. Es compatible con RSA 1024 para firma y cifrado, y admite SHA-1 para firma. Este modo sigue siendo compatible con todas las versiones actuales de RMS.
 
-Para obtener más información, consulte [modos criptográficos de AD RMS](http://go.microsoft.com/fwlink/p/?LinkId=398616).
+Para obtener más información, consulte [modos criptográficos de AD RMS](https://go.microsoft.com/fwlink/p/?LinkId=398616).
   
  **P. ¿por qué algunos mensajes cifrados dicen que provienen de** Office365@messaging.microsoft.com?
   
@@ -197,11 +197,11 @@ Cuando se envía una respuesta cifrada desde el portal de cifrado o a través de
   
  **P. soy un suscriptor de Exchange Hosted Encryption (EHE). ¿Dónde puedo obtener más información sobre la actualización al cifrado de mensajes de Office 365?**
   
-Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite el [centro de actualización de Exchange Hosted Encryption](http://go.microsoft.com/fwlink/p/?LinkID=511077).
+Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite el [centro de actualización de Exchange Hosted Encryption](https://go.microsoft.com/fwlink/p/?LinkID=511077).
   
  **P. ¿es necesario que abra las direcciones URL, las direcciones IP o los puertos del firewall de mi organización para que admitan el cifrado de mensajes de Office 365?**
   
-Sí. Debe agregar direcciones URL para Exchange Online para que la lista de permitidos de la organización habilite la autenticación de los mensajes cifrados por parte del servicio de cifrado de mensajes de Office 365. Para ver una lista de direcciones URL de Exchange Online, consulte [Office 365 URLs and IP Address Ranges](https://support.office.com/article/f57e35b7-0a45-42f0-855e-11aa5e7f13fd.aspx).
+Sí. Debe agregar direcciones URL para Exchange Online para que la lista de permitidos de la organización habilite la autenticación de los mensajes cifrados por parte del servicio de cifrado de mensajes de Office 365. Para obtener una lista de direcciones URL de Exchange Online, consulte [Office 365 URL e intervalos de direcciones IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
   
  **P. ¿A cuántos destinatarios puedo enviar un mensaje cifrado de Office 365?**
   
@@ -217,5 +217,4 @@ No hay un informe que muestre si se ha visto un mensaje cifrado, pero hay dispon
   
  **P. ¿Qué hace Microsoft con la información que proporciono a través del Portal OME y la aplicación Visor OME?**
   
-La [declaración de privacidad del portal de cifrado de Office 365 Messaging](https://privacy.microsoft.com/en-US/privacystatement) proporciona información detallada sobre lo que Microsoft hace y qué no hace con la información privada.
- 
+La [declaración de privacidad del portal de cifrado de Office 365 Messaging](https://privacy.microsoft.com/privacystatement) proporciona información detallada sobre lo que Microsoft hace y qué no hace con la información privada.

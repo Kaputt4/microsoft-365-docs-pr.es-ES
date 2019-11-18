@@ -1,5 +1,5 @@
 ---
-title: Definir directivas de barrera de información
+title: Definir directivas de barreras de información
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
-ms.openlocfilehash: 8ad6dd5e098438de0904fb511c631afbc761ff5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092539"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38691086"
 ---
 # <a name="define-policies-for-information-barriers"></a>Definir políticas para las barreras de la información
 
@@ -58,8 +58,8 @@ Al definir directivas para barreras de información, trabajará con los atributo
 
 Además de las [licencias y permisos necesarios](information-barriers.md#required-licenses-and-permissions), asegúrese de que se cumplen los siguientes requisitos: 
      
-- **Datos del directorio**. Asegúrese de que la estructura de la organización se refleja en los datos del directorio. Para ello, asegúrese de que los atributos de la cuenta de usuario, como la pertenencia a grupos, el nombre del Departamento, etc., se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, vea los siguientes recursos:
-  - [Atributos para directivas de barrera de información](information-barriers-attributes.md)
+- **Datos del directorio**. Asegúrese de que la estructura de la organización se refleja en los datos del directorio. Para ello, asegúrese de que los atributos de la cuenta de usuario, como la pertenencia a grupos, el nombre del Departamento, etc., se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, consulte los siguientes recursos:
+  - [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
   - [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
@@ -77,7 +77,7 @@ Además de las [licencias y permisos necesarios](information-barriers.md#require
 
    1. Ejecute los siguientes cmdlets de PowerShell:
 
-      ```
+      ```powershell
       Login-AzureRmAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
@@ -108,7 +108,10 @@ Cuando tenga la lista inicial de grupos y directivas, continúe para identificar
 
 ### <a name="identify-segments"></a>Identificación de segmentos
 
-Además de la lista inicial de directivas, haga una lista de los segmentos de su organización. Los usuarios que se incluirán en las directivas de barrera de información deben pertenecer a un segmento y ningún usuario debe pertenecer a dos o más segmentos. Cada segmento solo puede tener una directiva de barrera de información aplicada. 
+Además de la lista inicial de directivas, haga una lista de los segmentos de su organización. Los usuarios que se incluirán en las directivas de barrera de información deben pertenecer a un segmento. Planifique los segmentos con cuidado, ya que un usuario solo puede estar en un segmento. Cada segmento solo puede tener una directiva de barrera de información aplicada.
+
+> [!IMPORTANT]
+> Un usuario solo puede estar en un segmento.
 
 Determine qué atributos de los datos del directorio de la organización va a usar para definir los segmentos. Puede usar *Department*, *memberOf*o cualquiera de los atributos admitidos. Asegúrese de que tiene valores en el atributo que ha seleccionado para los usuarios. [Vea la lista de atributos admitidos para las barreras de información](information-barriers-attributes.md).
 
@@ -274,9 +277,9 @@ Contoso tiene cinco departamentos: recursos humanos, ventas, marketing, investig
 |Sector  |Puede hablar con  |No se puede hablar con  |
 |---------|---------|---------|
 |HR     |Todos         |(sin restricciones)         |
-|Lín     |Recursos humanos, marketing, fabricación         |Investigación         |
+|Lín     |Recursos humanos, marketing, fabricación         |Referencia         |
 |Marketing     |Todos         |(sin restricciones)         |
-|Investigación     |Recursos humanos, marketing, fabricación        |Lín     |
+|Referencia     |Recursos humanos, marketing, fabricación        |Lín     |
 |Industria |Recursos humanos, marketing |Cualquier persona que no sea HR o marketing |
 
 Teniendo esto en cuenta, el plan de Contoso incluye tres directivas de barrera de información:
@@ -295,7 +298,7 @@ Contoso usará el atributo Department en Azure Active Directory para definir seg
 |HR     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
 |Lín     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |
 |Marketing     | `New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"`        |
-|Investigación     | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"`        |
+|Referencia     | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"`        |
 |Industria     | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"`        |
 
 Con los segmentos definidos, contoso continúa definiendo directivas. 

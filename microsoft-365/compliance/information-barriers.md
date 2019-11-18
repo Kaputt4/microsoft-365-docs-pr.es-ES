@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
-ms.openlocfilehash: c4a9213e74129126da0cbc41b7bc210a10b34db2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 31de709e5ac834ad628110088b0dab80efe85950
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092533"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690993"
 ---
-# <a name="information-barriers"></a>Barreras de la información
+# <a name="information-barriers"></a>Barreras de información
 
 ## <a name="overview"></a>Información general
 
@@ -34,7 +34,7 @@ Las barreras de la información se están implementando ahora, a partir de Micro
 Para todos estos escenarios de ejemplo (y más), se pueden definir directivas de barrera de información para impedir o permitir las comunicaciones en Microsoft Teams. Estas directivas pueden impedir que los usuarios llamen o chatean con ellos que no deben, o bien permitir que los usuarios se comuniquen solo con grupos específicos en Microsoft Teams. Con las directivas de barrera de información en vigor, cada vez que los usuarios que están cubiertos por estas directivas intentan comunicarse con otros usuarios de Microsoft Teams, se realizan comprobaciones para evitar (o permitir) la comunicación (según las directivas de la barrera de información definida). Para obtener más información sobre la experiencia del usuario con barreras de información, consulte [barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!IMPORTANT]
-> Actualmente, las barreras de información no se aplican a las comunicaciones de correo electrónico ni al uso compartido de archivos a través de SharePoint Online o OneDrive. Además, las barreras de información son independientes de los [límites de cumplimiento](tagging-and-assessment-in-advanced-ediscovery.md).<p>Antes de definir y aplicar directivas de barrera de información, asegúrese de que la organización no tiene [directivas de libreta de direcciones de Exchange](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies) en vigor. (Las barreras de información se basan en las directivas de la libreta de direcciones). 
+> Actualmente, las barreras de información no se aplican a las comunicaciones de correo electrónico ni al uso compartido de archivos a través de SharePoint Online o OneDrive. Además, las barreras de información son independientes de los [límites de cumplimiento](tagging-and-assessment-in-advanced-ediscovery.md).<p>Antes de definir y aplicar directivas de barrera de información, asegúrese de que la organización no tiene [directivas de libreta de direcciones de Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en vigor. (Las barreras de información se basan en las directivas de la libreta de direcciones). 
 
 ## <a name="what-happens-with-information-barriers"></a>Qué sucede con las barreras de la información
 

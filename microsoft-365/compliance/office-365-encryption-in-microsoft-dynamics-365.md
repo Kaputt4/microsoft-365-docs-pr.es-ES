@@ -11,18 +11,18 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprenda el cifrado en Microsoft Dynamics 365.'
-ms.openlocfilehash: 7c2a352dd712b0db9d2ad623745f854b863dd2e0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 58afc2d35ece4b5bfd7594aad483606e6f867823
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093262"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690997"
 ---
 # <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Office 365 cifrado en Microsoft Dynamics 365
 
-Microsoft usa la tecnología de cifrado para proteger los datos de los clientes en Dynamics 365 mientras está en reposo en una base de datos de Microsoft y mientras está en tránsito entre los dispositivos de usuario y nuestros centros de datos. Las conexiones establecidas entre los clientes y los centros de usuarios de Microsoft están cifradas, y todos los puntos de conexión públicos se protegen con TLS estándar del sector. TLS establece efectivamente una conexión de explorador a servidor de seguridad mejorada para garantizar la confidencialidad y la integridad de los datos entre los equipos de escritorio y los centros de datos. Una vez activado el cifrado de datos, no se puede desactivar. Para obtener más información, consulte [cifrado de datos en el nivel de campo](https://msdn.microsoft.com/en-us/library/dn481562.aspx).
+Microsoft usa la tecnología de cifrado para proteger los datos de los clientes en Dynamics 365 mientras está en reposo en una base de datos de Microsoft y mientras está en tránsito entre los dispositivos de usuario y nuestros centros de datos. Las conexiones establecidas entre los clientes y los centros de usuarios de Microsoft están cifradas, y todos los puntos de conexión públicos se protegen con TLS estándar del sector. TLS establece efectivamente una conexión de explorador a servidor de seguridad mejorada para garantizar la confidencialidad y la integridad de los datos entre los equipos de escritorio y los centros de datos. Una vez activado el cifrado de datos, no se puede desactivar. Para obtener más información, consulte [cifrado de datos en el nivel de campo](https://msdn.microsoft.com/library/dn481562.aspx).
 
-Dynamics 365 usa el cifrado de nivel de celda estándar de Microsoft SQL Server para un conjunto de atributos de entidad predeterminados que contienen información confidencial, como nombres de usuario y contraseñas de correo electrónico. Esta característica puede ayudar a las organizaciones a cumplir los requisitos de cumplimiento asociados con FIPS 140-2. El cifrado de datos en el nivel de campo es especialmente importante en los escenarios que aprovechan el [Microsoft Dynamics CRM email router](https://technet.microsoft.com/en-us/library/hh699800.aspx), que deben almacenar los nombres de usuario y las contraseñas para habilitar la integración entre una instancia de Dynamics 365 y un servicio de correo electrónico. 
+Dynamics 365 usa el cifrado de nivel de celda estándar de Microsoft SQL Server para un conjunto de atributos de entidad predeterminados que contienen información confidencial, como nombres de usuario y contraseñas de correo electrónico. Esta característica puede ayudar a las organizaciones a cumplir los requisitos de cumplimiento asociados con FIPS 140-2. El cifrado de datos en el nivel de campo es especialmente importante en los escenarios que aprovechan el [Microsoft Dynamics CRM email router](https://technet.microsoft.com/library/hh699800.aspx), que deben almacenar los nombres de usuario y las contraseñas para habilitar la integración entre una instancia de Dynamics 365 y un servicio de correo electrónico. 
 
 Todas las instancias de Dynamics 365 usan el [cifrado de datos transparente](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) (TDE) de Microsoft SQL Server para realizar el cifrado de datos en tiempo real cuando se escriben en el disco (en reposo). TDE cifra SQL Server, Azure SQL Database y los archivos de datos de Azure SQL Data Warehouse. De forma predeterminada, Microsoft almacena y administra las claves de cifrado de base de datos para las instancias de Dynamics 365. (Las claves que usan Dynamics 365 para operaciones financieras se generan mediante la API de protección de datos de .NET Framework.) 
 
