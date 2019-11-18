@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use las herramientas de búsqueda y la exhibición de documentos electrónicos de Office 365 para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: bf6c22a593a2611b86012cd51e3e2932a13dfe4d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091787"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687867"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie de soluciones de eDiscovery: escenario de derrame de datos: búsqueda y depuración
 
@@ -82,7 +82,7 @@ Para crear una búsqueda de contenido asociada a un caso de exhibición de docum
 
 Después de crear una búsqueda de contenido, debe revisar y validar que los resultados de la búsqueda y comprobar que solo constan de los mensajes de correo electrónico que se deben eliminar. En una búsqueda de contenido, puede obtener una vista previa de un muestreo aleatorio de mensajes de correo electrónico de 1.000 sin exportar los resultados de la búsqueda para evitar una mayor derramación de datos. Puede obtener más información acerca de las limitaciones de la vista previa en [limits for Content Search](limits-for-content-search.md).
   
-Si tiene más de 1.000 buzones o más de 100 mensajes de correo electrónico por buzón de correo para revisar, puede dividir la búsqueda inicial en varias búsquedas mediante palabras clave o condiciones adicionales, como el intervalo de fechas o el remitente o el destinatario, y revisar los resultados de cada búsqueda. individualmente. Asegúrese de anotar todas las consultas de búsqueda que debe usar cuando elimine mensajes en el [paso 7](#step-7-permanently-delete-the-spilled-data).
+Si tiene más de 1.000 buzones o más de 100 mensajes de correo electrónico por buzón para revisar, puede dividir la búsqueda inicial en varias búsquedas mediante palabras clave o condiciones adicionales, como el intervalo de fechas o el remitente o el destinatario, y revisar los resultados de cada búsqueda de forma individual. Asegúrese de anotar todas las consultas de búsqueda que debe usar cuando elimine mensajes en el [paso 7](#step-7-permanently-delete-the-spilled-data).
 
 Si se asigna una licencia de Office 36 E5 a un custodio o un usuario final, puede examinar hasta 10.000 resultados de búsqueda a la vez con Office 365 Advanced eDiscovery. Si hay más de 10.000 mensajes de correo electrónico para revisar, puede dividir la consulta de búsqueda por intervalo de fechas y revisar cada resultado individualmente, ya que los resultados de la búsqueda se ordenan por fecha. En la exhibición avanzada de documentos electrónicos, puede marcar los resultados de la búsqueda con la **etiqueta como** característica en el panel de vista previa y filtrar los resultados de búsqueda por la etiqueta que ha etiquetado. Esto es útil cuando se colabora con un revisor secundario. Mediante el uso de herramientas de análisis adicionales en eDiscovery avanzado, como el reconocimiento óptico de caracteres, el subprocesamiento de correo electrónico y la codificación predictiva, puede procesar y revisar rápidamente miles de mensajes y etiquetarlos para revisión posterior. Consulte [Quick Setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
 
@@ -154,7 +154,7 @@ Abra el informe de Resumen de exportación que ha descargado en el [paso 4](#ste
 
 Si se habilita la recuperación de un único elemento o si un buzón de correo se coloca en suspensión, un mensaje eliminado (purgado) de forma permanente se conservará en la carpeta elementos recuperables. Por lo tanto, antes de purgar los datos derramados, debe comprobar las configuraciones de los buzones existentes y deshabilitar la recuperación de un único elemento y quitar cualquier retención o Directiva de retención de Office 365. Tenga en cuenta que puede preparar un buzón a la vez y, a continuación, ejecutar el mismo comando en buzones de correo diferentes o crear un script de PowerShell para preparar varios buzones al mismo tiempo.
 
-- Consulte "paso 1: recopilar información sobre el buzón" en [eliminar elementos de la carpeta elementos recuperables de buzones de correo basados en la nube en espera](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) para obtener instrucciones sobre cómo comprobar si la recuperación de un único elemento está habilitada o si el buzón se coloca en retención o está asignado a un Directiva de retención. 
+- Consulte "paso 1: recopilar información sobre el buzón" en [eliminar elementos de la carpeta elementos recuperables de los buzones basados en la nube en espera](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) para obtener instrucciones sobre cómo comprobar si la recuperación de un único elemento está habilitada o si el buzón se coloca en retención o se asigna a una directiva de retención. 
     
 - Consulte "paso 2: preparar el buzón" en [eliminar elementos de la carpeta elementos recuperables de los buzones basados en la nube en espera](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) para obtener instrucciones sobre cómo deshabilitar la recuperación de un único elemento. 
     
@@ -170,28 +170,28 @@ Asegúrese de revertir el buzón a configuraciones previas después de comprobar
 
 Con las ubicaciones de buzón que recopiló y preparó en el paso 6 y la consulta de búsqueda que se creó y perfeccionó en el paso 3 para buscar mensajes de correo electrónico que contengan los datos derramados, ahora puede eliminar de forma permanente los datos derramados. Como se ha explicado anteriormente, debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online para eliminar mensajes mediante el siguiente procedimiento.
   
-1. [Conexión al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554).
+1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554).
     
 2. Ejecute el siguiente comando:
     
-    ```
+    ```powershell
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
     ```
-  
+
 3. Vuelva a ejecutar el comando anterior para cada buzón de correo que contenga los datos derramados; para ello, reemplace el valor del parámetro Identity; por ejemplo:
 
-    ```
+    ```powershell
     Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-    ```
+    ```powershell
     Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-   ```
+   ```powershell
    Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
    ```
-  
+
 Como se mencionó anteriormente, también puede crear un [script de PowerShell](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) y ejecutarlo en una lista de buzones para que el script elimine los datos derramados en cada buzón.
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Paso 8: comprobar, proporcionar una prueba de eliminación y auditoría

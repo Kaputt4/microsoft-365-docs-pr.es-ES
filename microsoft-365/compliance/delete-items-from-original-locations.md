@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo usar la herramienta de nueva investigación de datos (vista previa) en el centro de seguridad & cumplimiento para eliminar elementos de sus ubicaciones originales.
-ms.openlocfilehash: d855a8e4c69d64cdb37c40b37b042c2571af67a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070679"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38687810"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminar elementos de su ubicación original (versión preliminar)
 
@@ -29,7 +31,7 @@ Mediante el uso de investigaciones de datos, puede eliminar elementos de sus ubi
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para eliminar elementos, debe tener asignado el rol de **búsqueda y purga** en el centro de seguridad & cumplimiento. Este rol se asigna de forma predeterminada al grupo de roles de investigador de datos integrado. 
+- Para eliminar elementos, debe tener asignado el rol de **búsqueda y purga** en el centro de seguridad & cumplimiento. Este rol se asigna de forma predeterminada al grupo de roles de investigador de datos integrado.
 
 - El procedimiento de este tema presupone que ha ejecutado una búsqueda asociada a una investigación y ha agregado los resultados de la búsqueda a un conjunto de evidencias. Una vez que los resultados de la búsqueda estén en prueba, puede seleccionar uno o más elementos para eliminarlos. Para obtener más información, vea [buscar datos en una investigación](search-for-data.md).
 
@@ -41,7 +43,7 @@ Realice los siguientes pasos para eliminar elementos de su ubicación original:
 
 1. En la herramienta de **investigaciones de datos** , abra la investigación de datos que contiene los elementos que desea eliminar y, a continuación, haga clic en la pestaña **evidencia** .
 
-2. Seleccione los elementos que desea eliminar. Puede seleccionar todos los elementos del conjunto de evidencias o seleccionar solo un subconjunto de elementos. 
+2. Seleccione los elementos que desea eliminar. Puede seleccionar todos los elementos del conjunto de evidencias o seleccionar solo un subconjunto de elementos.
 
    > [!NOTE]
    > Si selecciona los datos adjuntos de un correo electrónico o un archivo adjunto a un documento en SharePoint y OneDrive, el elemento primario también se seleccionará y se eliminará cuando se elimine el elemento de su ubicación original. De forma similar, si selecciona un elemento que tiene datos adjuntos, el elemento de elemento primario y todos los datos adjuntos se eliminan.
@@ -57,11 +59,11 @@ Realice los siguientes pasos para eliminar elementos de su ubicación original:
    > [!NOTE]
    > En la captura de pantalla anterior, el número de elementos indica el número de elementos que se seleccionan para su eliminación. El número de documentos indica el número total de elementos, incluidos los archivos que están adjuntos a un elemento primario. Por ejemplo, si selecciona un mensaje de correo electrónico y ese mensaje tiene un documento de Word adjunto, el número de elementos y documentos que se muestra en **documentos seleccionados sólo** sería de **1 elemento (2 documentos)**.
 
-Puede realizar un seguimiento del progreso del trabajo **eliminar elementos desde ubicaciones originales** en la pestaña **trabajos** . Haga clic en el trabajo para mostrar la página de flotante. 
+Puede realizar un seguimiento del progreso del trabajo **eliminar elementos desde ubicaciones originales** en la pestaña **trabajos** . Haga clic en el trabajo para mostrar la página de flotante.
 
 ![Página de control flotante para eliminar elementos de la tarea ubicaciones originales](media/DataInvestigationsDeleteItems3.png)
 
-Cuando se eliminan los elementos del trabajo, el estado del trabajo se establece en **correcto**. También se muestra la fecha y la hora del trabajo completado. 
+Cuando se eliminan los elementos del trabajo, el estado del trabajo se establece en **correcto**. También se muestra la fecha y la hora del trabajo completado.
 
 ![Trabajo de eliminación de elementos completada](media/DataInvestigationsDeleteItems4.png)
 

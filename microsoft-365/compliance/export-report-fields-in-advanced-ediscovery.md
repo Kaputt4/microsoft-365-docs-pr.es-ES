@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Describe todos los campos que se incluyen en la exportación de informes para eDiscovery avanzada.
-ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 54287b4319a3fd7cf5be8aaf74d3a375253cba1f
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092436"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38687917"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportar campos de informe en Office 365 Advanced eDiscovery
 
@@ -62,17 +62,17 @@ En la tabla siguiente se enumeran los campos de cada plantilla de exportación.
 |Email_recipient_domains  <br/> |Correo electrónico  <br/> |Dominios de destinatarios de correo electrónico (para, CC y CCO).  <br/> |Sí  <br/> |Sí  <br/> |
 |Email_date_received  <br/> |Correo electrónico  <br/> |Fecha en la que se recibió el correo electrónico.  <br/> |Sí  <br/> |Sí  <br/> |
 |Email_action  <br/> |Correo electrónico  <br/> |Values: según el asunto del correo electrónico: "forward" (para "FW:"), "Reply" (para "RE:") u "Other" (otro texto de asunto).  <br/> |Sí  <br/> |Sí  <br/> |
-|Meeting_Start_Date/hora  <br/> ||Fecha y hora en que se inició un elemento de reunión.  <br/> |Sí  <br/> |Sí  <br/> |
-|Meeting_End_Date/hora  <br/> ||Fecha y hora de finalización de un elemento de reunión.  <br/> |Sí  <br/> |Sí  <br/> |
+|Meeting_Start_Date/Time  <br/> ||Fecha y hora en que se inició un elemento de reunión.  <br/> |Sí  <br/> |Sí  <br/> |
+|Meeting_End_Date/Time  <br/> ||Fecha y hora de finalización de un elemento de reunión.  <br/> |Sí  <br/> |Sí  <br/> |
 |File_relevance_score  <br/> |Relevancia  <br/> |Puntuación de relevancia (0-100). Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
 |Family_relevance_score  <br/> |Relevancia  <br/> |Puntuación de relevancia de familia máxima (0-100). Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
 |Relevance_tag  <br/> |Relevancia  <br/> |Etiquetado del archivo, si el archivo se ha etiquetado manualmente en relevancia. Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
 |Relevance_load_group  <br/> |Relevancia  <br/> |Grupo de carga de relevancia, del archivo especificado, con un campo por problema.  <br/> |Sí  <br/> |Sí  <br/> |
 |Normalized_relevance_score  <br/> |Relevancia  <br/> |Puntuación de relevancia normalizada (0-100), que es comparable entre problemas y cargas.  <br/> |Sí  <br/> |Sí  <br/> |
 |Marked_as_seed  <br/> |Relevancia  <br/> |Etiquetado del archivo, si se estableció como un archivo de inicialización en relevancia por problema o categoría.  <br/> |Sí  <br/> |Sí  <br/> |
-|Marked_as_pre-etiquetada  <br/> |Relevancia  <br/> |Etiquetado del archivo, si se estableció con una etiqueta predefinida en la relevancia por problema/categoría.  <br/> |Sí  <br/> |Sí  <br/> |
+|Etiquetada de Marked_as_pre  <br/> |Relevancia  <br/> |Etiquetado del archivo, si se estableció con una etiqueta predefinida en la relevancia por problema/categoría.  <br/> |Sí  <br/> |Sí  <br/> |
 |Relevance_status_description  <br/> |Relevancia  <br/> |Descripción del estado de relevancia.  <br/> |Sí  <br/> |Sí  <br/> |
-|Comment  <br/> |General  <br/> |Comentario escrito por el usuario.  <br/> |Sí  <br/> |Sí  <br/> |
+|Comentario  <br/> |General  <br/> |Comentario escrito por el usuario.  <br/> |Sí  <br/> |Sí  <br/> |
 |Export_input_path  <br/> |Procesamiento  <br/> |Exportar ruta de acceso de entrada.  <br/> |Sí  <br/> |Sí  <br/> |
 |Pivot_ID  <br/> |Duplicados Near  <br/> |IDENTIFICADOR de tabla dinámica del archivo.  <br/> |Sí  <br/> |Sí  <br/> |
 |Family_size  <br/> |Procesamiento  <br/> |Número de archivos en una familia.  <br/> |Sí  <br/> |Sí  <br/> |
@@ -90,7 +90,7 @@ En la tabla siguiente se enumeran los campos de cada plantilla de exportación.
 |Input_path  <br/> |Procesamiento  <br/> |Ruta de acceso del archivo de entrada.  <br/> |Sí  <br/> |Sí  <br/> |
 |Input_date_modified  <br/> |Procesamiento  <br/> |Fecha en que se modificó el archivo de entrada por última vez.  <br/> |Sí  <br/> |Sí  <br/> |
 |ND_ET_sort_excl_attach  <br/> |Analizar  <br/> |Concatenación de los conjuntos de correo electrónico y ND configurados para revisión. "D" se agrega como prefijo a los conjuntos de ND y "E" se agrega a email ssets.  <br/> |Sí  <br/> |Sí  <br/> |
-|ND_ET_sort_incl_attach  <br/> |Analizar  <br/> |La concatenación de un conjunto de correo electrónico y el de ND para revisión se agregan como prefijo a los conjuntos de ND y se agrega ' E ' a los conjuntos de correo electrónico. Además, cada correo electrónico de un Email_set va seguido de los datos adjuntos correspondientes.  <br/> |Sí  <br/> |Sí  <br/> |
+|ND_ET_sort_incl_attach  <br/> |Analizar  <br/> |La concatenación de un conjunto de correo electrónico y el de ND para revisión se agregan como prefijo a los conjuntos de ND y se agrega ' E ' a los conjuntos de correo electrónico. Además, cada correo electrónico dentro de un Email_set va seguido de los datos adjuntos correspondientes.  <br/> |Sí  <br/> |Sí  <br/> |
 |Deduped_custodians  <br/> |General  <br/> |Custodios de archivos de desduplicación  <br/> |Sí  <br/> |Sí  <br/> |
 |Deduped_file_IDs  <br/> |General  <br/> |Identificadores de archivos de desduplicación  <br/> |Sí  <br/> |Sí  <br/> |
 |Deduped_paths  <br/> |General  <br/> |Rutas de archivos de desduplicación  <br/> |Sí  <br/> |Sí  <br/> |
@@ -130,9 +130,7 @@ En la tabla siguiente se enumeran los campos de cada plantilla de exportación.
 |Set_order_inclusives_first  <br/> |Correo electrónico  <br/> |Mensajes de correo electrónico y datos adjuntos: contador orden cronológico (inclusive en primer lugar). Documentos: pivotes primero y resto por puntuación de similitud, descendente.  <br/> |No  <br/> |Sí  <br/> |
 |Tagged_By  <br/> |Relevancia  <br/> |Usuario que etiquetó el archivo en relevancia para el problema específico.  <br/> |No  <br/> |Sí  <br/> |
 |Word_count  <br/> |Analizar  <br/> |Número de palabras del documento.  <br/> |No  <br/> |Sí  <br/> |
-|||||||||||
-||||||
-||||||
+|
    
 ## <a name="related-topics"></a>Temas relacionados
 

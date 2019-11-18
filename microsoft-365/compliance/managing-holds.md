@@ -8,18 +8,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1e457ffa05670e6a8b48692bbb382ebd8f2b404e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1cea83ffec8af8b22b5a27e9d760946e71ba7f68
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092576"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687875"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar suspensiones en la exhibición avanzada de documentos electrónicos
 
@@ -27,7 +29,7 @@ Puede usar un caso de exhibición avanzada de documentos electrónicos para crea
 
 ## <a name="manage-custodian-based-holds"></a>Administración de retenciones basadas en custodios
 
-En algunos casos, puede tener un conjunto de custodios de datos que haya identificado y elegido para preservar. En la exhibición avanzada de documentos electrónicos, cuando estos custodios se colocan en suspensión, el usuario y sus orígenes de datos seleccionados se agregan automáticamente a una directiva de retención de custodio. 
+En algunos casos, es posible que tenga un conjunto de custodios que haya identificado y que haya decidido preservar sus datos durante el caso. En la exhibición avanzada de documentos electrónicos, cuando estos custodios se colocan en suspensión, el usuario y sus orígenes de datos seleccionados se agregan automáticamente a una directiva de retención de custodio. 
 
 Para ver la Directiva de retención de custodios:
 
@@ -86,7 +88,7 @@ Para crear una suspensión para un caso de exhibición avanzada de documentos el
 
     - Haga clic en **Agregar** condiciones para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición se conecta lógicamente a la consulta de palabra clave (especificada en el cuadro de palabra clave) mediante el operador AND. Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a poner en retención.
 
-     Para obtener más información acerca de la creación de una consulta de búsqueda y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions).
+     Para obtener más información acerca de la creación de una consulta de búsqueda y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 
 12. Después de configurar una retención basada en consultas, haga clic en **siguiente**.
  
@@ -116,10 +118,10 @@ Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
 - **¿Cómo puedo asignar un sitio de Microsoft Teams o grupos de Office 365 adicional a un custodio? ¿Y qué ocurre si realiza una retenciones que no son de apoyo en grupos de Office 365 y en Microsoft Teams?** Microsoft Teams se basa en grupos de Office 365. Por lo tanto, colocarlos en espera en un caso de exhibición de documentos electrónicos es muy similar. Tenga en cuenta lo siguiente cuando coloque los grupos de Office 365 y Microsoft Teams en espera.
   - Para colocar contenido ubicado en Office 365 grupos y Microsoft Teams en espera, tiene que especificar el buzón de correo y el sitio de SharePoint que están asociados con un grupo o un equipo.
   
-  - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo de Office 365 o un equipo de Microsoft. Esta es una buena forma de obtener la dirección URL del sitio que está asociada con un grupo de Office 365 o un equipo de Microsoft. Por ejemplo, el siguiente comando muestra las propiedades seleccionadas de un grupo de Office 365 llamado equipo de liderazgo Senior:
+  - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo de Office 365 o un equipo de Microsoft. Esta es una buena forma de obtener la dirección URL del sitio que está asociada con un grupo de Office 365 o un equipo de Microsoft. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team:
 
 
-    ```
+    ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
     DisplayName            : Senior Leadership Team
     Alias                  : seniorleadershipteam
@@ -128,24 +130,24 @@ Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
     ```
 
     > [!NOTE]
-    > Para ejecutar el cmdlet Get-UnifiedGroup, debe tener asignado el rol destinatarios con permiso de vista en Exchange online o ser miembro de un grupo de roles que tenga asignado el rol destinatarios con permiso de vista.
+    > Para ejecutar el cmdlet Get-UnifiedGroup debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista.
 
  - Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará ningún grupo de Office 365 o equipo de Microsoft del que el usuario sea miembro. De forma similar, cuando se coloca un grupo de Office 365 o una retención en Microsoft Team, solo el buzón de grupo y el sitio de grupo se colocan en retención; los buzones y los sitios de OneDrive para la empresa de los miembros del grupo no se mantienen en suspensión a menos que los agregue explícitamente como custodios o coloque sus orígenes de datos en espera. Por lo tanto, si necesita poner un grupo de Office 365 o un equipo de Microsoft en espera para un custodio específico, considere la posibilidad de asignar el sitio de grupo y el buzón de grupo al custodio (consulte Managing custodios in Advanced eDiscovery). Si el grupo de Office 365 o el equipo de Microsoft no son atribuibles a un custodio único, considere la posibilidad de agregar el origen a una retención que no sea Private. 
  
- - Para obtener una lista de los miembros de un grupo de Office 365 o de Microsoft Teams, puede ver las propiedades de la página de inicio del > de los grupos en el centro de administración de Microsoft 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell:
+ - Para obtener una lista de los miembros de un grupo de Office 365 o de Microsoft Teams, puede ver las propiedades de la página de inicio del > de los grupos en el centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
-   ``` 
+   ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
    ```
 
     > [!NOTE]
-    > Para ejecutar el cmdlet **Get-UnifiedGroupLinks** , debe tener asignado el rol destinatarios con permiso de vista en Exchange online o ser miembro de un grupo de roles que tenga asignado el rol destinatarios con permiso de vista.
+    > Para ejecutar el cmdlet **Get-UnifiedGroupLinks** debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista.
 
-- Las conversaciones de canal que forman parte de un canal de Microsoft Teams se almacenan en el buzón de correo que está asociado al equipo. De forma similar, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, tiene que poner el buzón de Microsoft Team y el sitio de SharePoint en espera para conservar conversaciones y archivos en un canal.
+- Las conversaciones de canal que forman parte de un canal de Microsoft Teams se almacenan en el buzón de correo que está asociado al equipo. Asimismo, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, tiene que poner el buzón de Microsoft Team y el sitio de SharePoint en espera para conservar conversaciones y archivos en un canal.
   
 - Como alternativa, las conversaciones que forman parte de la lista de chats en Microsoft Teams se almacenan en el buzón de correo del usuario que participa en el chat.  Los archivos que un usuario comparte en conversaciones de chat se almacenan en el sitio de OneDrive para la empresa del usuario que comparte el archivo. Por lo tanto, tiene que poner los buzones de usuario individuales y los sitios de OneDrive para la empresa en espera para conservar conversaciones y archivos de la lista de chats. 
   
-- Todos los canales de equipo o equipo de Microsoft contienen un wiki para la toma de notas y la colaboración. El contenido de la wiki se guarda automáticamente en un archivo con formato. mht. Este archivo se almacena en la biblioteca de documentos de datos wiki de Microsoft Teams en el sitio de SharePoint del equipo. Puede colocar el contenido en el sitio Wiki en espera colocando el sitio de SharePoint del equipo en retención.
+- Todos los canales de equipo o equipo de Microsoft contienen un wiki para la toma de notas y la colaboración. El contenido de esta se guarda automáticamente en un archivo con un formato .mht. Este archivo se almacena en la biblioteca de documentos de Datos Wiki de Teams en el sitio de SharePoint del equipo. Puede colocar el contenido en el sitio Wiki en espera colocando el sitio de SharePoint del equipo en retención.
 
   > [!NOTE]
   > La capacidad de retener contenido de wiki para un canal de equipo o equipo de Microsoft (cuando se ubica el sitio de SharePoint del equipo en espera) se presentó el 22 de junio de 2017. Si un sitio de grupo está en suspensión, el contenido de la wiki se conservará a partir de esa fecha. Sin embargo, si un sitio de grupo está en suspensión y el contenido de la wiki se eliminó antes del 22 de junio de 2017, no se conservó el contenido de la wiki.

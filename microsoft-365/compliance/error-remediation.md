@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 614397a81fd898975e5163c669fb8693fcdfe77c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c7bc6043722059b04d7fb99663a7dfb8815de697
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092477"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38687699"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Corrección de errores al procesar datos para una investigación
 
@@ -54,7 +54,7 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en los 
     >Le recomendamos que use una ruta de acceso de archivo local en lugar de una ruta de acceso de red remota para obtener un rendimiento óptimo.
 
     > [!NOTE]
-    > Si no ha instalado AzCopy, puede instalarlo desde aquí:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > Si no ha instalado AzCopy, puede instalarlo desde aquí:https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
 
 6. Copie el comando predefinido; para ello, haga clic en **copiar al portapapeles**. Inicie un símbolo del sistema de Windows, pegue el comando y, a continuación, presione **entrar**.  
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de formación de relevancia de Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 569fdfd6e5369459d55bb3ecfa2ebc32f0a10005
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 78c8446a30868b2c01f6831630cadc21916e6476
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092891"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38687919"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Aprendizaje de la etiqueta y la relevancia en Office 365 Advanced eDiscovery
 
@@ -37,18 +37,17 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
   
     En la ficha **etiqueta** , se muestra el nombre para mostrar del archivo. Puede ser la ruta de acceso, el asunto del correo electrónico, el título o el nombre definido por el usuario. El identificador, la ruta de acceso de archivo o la ruta de acceso de texto se pueden copiar haciendo clic con el botón secundario en la ruta de acceso del archivo. 
     
-    En las estadísticas de etiquetado de pestañas de **etiquetas** se muestra el número de ejemplo de archivo (en la parte superior del panel izquierdo), el número del archivo que se muestra actualmente de los archivos totales en el ejemplo (parte inferior del panel derecho) y el número total actual de archivos etiquetados en el ejemplo (parte inferior de t el panel izquierdo), que cambia a medida que se etiquetan los archivos. Esto se aplica a cualquier etiquetado de relevancia realizado, ya sea en evaluación, formación, puesta en marcha o prueba. 
+    En las estadísticas de etiquetado de pestañas de **etiquetas** se muestra el número de muestra de archivo (en la parte superior del panel izquierdo), el número del archivo que se muestra actualmente de los archivos totales en el ejemplo (parte inferior del panel derecho) y el número total actual de archivos etiquetados en el ejemplo (parte inferior del panel izquierdo), que cambia cuando se etiquetan los archivos. Esto se aplica a cualquier etiquetado de relevancia realizado, ya sea en evaluación, formación, puesta en marcha o prueba. 
     
     Los iconos que indican la existencia de comentarios, etiquetas y archivos de familia se muestran en la vista de archivo en una barra situada encima del archivo.
     
 2. Determine la relevancia del archivo para el problema de caso y etiquete el archivo con los botones de iconos de opción de etiquetado o con los métodos abreviados de teclado, como se muestra en la siguiente tabla:
-    
-| |
+
 |**Opción de etiquetado**|**Descripción**|**Método abreviado de teclado**|**Para varios problemas-método abreviado de teclado de etiqueta masiva**|
-|:-----|:-----|:-----|:-----|
+|-----|-----|-----|-----|
 |R  <br/> |Metabolito  <br/> |Z  <br/> |Mayús + Z  <br/> |
 |Nº  <br/> |No relevante  <br/> |X  <br/> |Mayús + X  <br/> |
-|Skip  <br/> |Skip  <br/> |C  <br/> |Mayús + A  <br/> |
+|Avanzar  <br/> |Avanzar  <br/> |C  <br/> |Mayús + A  <br/> |
    
   - Cuando hay varios problemas para un archivo, después de marcar un problema, la selección se mueve al siguiente problema (si lo hay). 
     

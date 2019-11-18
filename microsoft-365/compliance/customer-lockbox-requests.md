@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de caja del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede tener acceso a los datos cuando se tiene un problema.
-ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a19b8f7933cfae06c462d204148f53b441126f58
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091826"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38687777"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de caja de cliente en Office 365
 
@@ -114,7 +114,7 @@ Un administrador de Office 365 puede activar los controles de caja de caja del c
 Los registros de auditoría que corresponden a las solicitudes de caja de seguridad del cliente se registran en el registro de auditoría de Office 365 y se puede tener acceso a ellos mediante la [herramienta de búsqueda de registros de auditoría](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) del centro de seguridad & cumplimiento de Office 365. Las acciones relacionadas con un cliente que aceptan o deniegan una solicitud de caja de control del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) se registran en el registro de auditoría de Office 365. Puede buscar y revisar estos registros de auditoría.
 
 > [!NOTE]
-> Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. Para obtener más información, vea [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
+> Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. Para obtener más información, vea [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Buscar en el registro de auditoría actividades relacionadas con solicitudes de caja de control del cliente
 
@@ -162,7 +162,7 @@ Cuando una persona de su organización aprueba o deniega una solicitud de caja d
 |:---------- |:----------|
 | Fecha       | La fecha y la hora en que se aprobó o denegó la solicitud de caja de caja del cliente.
 | Dirección IP | La dirección IP del equipo que el aprobador ha usado para aprobar o denegar una solicitud. |
-| User       | La cuenta de servicio BOXServiceAccount\[@\]customerforest. Prod.Outlook.com.            |
+| Usuario       | La cuenta de servicio\[BOXServiceAccount@\]customerforest. Prod.Outlook.com.            |
 | Actividad   | Set-AccessToCustomerDataRequest; se trata de la actividad de auditoría que se registra al aprobar o denegar una solicitud de caja de control del cliente.                                |
 | Elemento       | El GUID de la solicitud de caja de caja del cliente                             |
 
@@ -181,7 +181,7 @@ Como se ha explicado anteriormente, las acciones realizadas por un ingeniero de 
 |:---------- |:----------|
 | Fecha       | Fecha y hora en que se realizó la acción. Tenga en cuenta que la hora en que se realizó esta acción será en un plazo de 4 horas desde el momento en que se aprobó la solicitud de caja de tiempo del cliente.              |
 | Dirección IP | La dirección IP del equipo que utilizó el ingeniero de Microsoft. |
-| User       | Operador de Microsoft; Este valor indica que este registro está relacionado con una solicitud de caja de caja del cliente.                                  |
+| Usuario       | Operador de Microsoft; Este valor indica que este registro está relacionado con una solicitud de caja de caja del cliente.                                  |
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
 | Elemento       | \<está\>                                             |
 
@@ -216,7 +216,7 @@ El contenido del cliente es los datos creados por los usuarios de servicios y ap
 
 - Inferencias y todas las inferencias subsiguientes, si el contenido del cliente se mantiene
 
-Para obtener información adicional acerca del contenido del cliente en Office 365, consulte el [centro de confianza de office 365](https://products.office.com/en-US/business/office-365-trust-center-privacy/).
+Para obtener información adicional acerca del contenido del cliente en Office 365, consulte el [centro de confianza de office 365](https://products.office.com/business/office-365-trust-center-privacy/).
 
 #### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>¿Quién recibe una notificación cuando hay una solicitud para obtener acceso a mi contenido?
 
@@ -270,9 +270,9 @@ Si un cliente rechaza una solicitud de caja de caja del cliente, no se produce n
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>¿Protege el Lockbox del cliente contra las solicitudes de datos de los cuerpos de cumplimiento de la ley u otras terceras partes?
 
-No. Microsoft toma en serio las solicitudes de terceros sobre los datos de los clientes. Como proveedor de servicios en la nube, Microsoft siempre aboga por la privacidad de los datos del cliente. En el caso de que recibamos una citación, Microsoft siempre intenta redirigir al cliente a la otra persona para obtener la información. (Lea el blog de Brad Martínez: [proteger los datos de clientes de la supervisión gubernamental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Periódicamente publicamos [información detallada](https://www.microsoft.com/en-us/corporate-responsibility/lerr) sobre las solicitudes de cumplimiento de la ley que recibe Microsoft.
+No. Microsoft toma en serio las solicitudes de terceros sobre los datos de los clientes. Como proveedor de servicios en la nube, Microsoft siempre aboga por la privacidad de los datos del cliente. En el caso de que recibamos una citación, Microsoft siempre intenta redirigir al cliente a la otra persona para obtener la información. (Lea el blog de Brad Martínez: [proteger los datos de clientes de la supervisión gubernamental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Periódicamente publicamos [información detallada](https://www.microsoft.com/corporate-responsibility/lerr) sobre las solicitudes de cumplimiento de la ley que recibe Microsoft.
 
-Consulte el [centro de confianza de Microsoft](https://www.microsoft.com/en-us/trustcenter/default.aspx) sobre las solicitudes de datos de terceros y la sección "revelación de datos de clientes" en los [términos de servicios en línea](https://www.microsoft.com/Licensing/product-licensing/products.aspx) para obtener más información.
+Consulte el [centro de confianza de Microsoft](https://www.microsoft.com/trustcenter/default.aspx) sobre las solicitudes de datos de terceros y la sección "revelación de datos de clientes" en los [términos de servicios en línea](https://www.microsoft.com/Licensing/product-licensing/products.aspx) para obtener más información.
 
 #### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>¿Cómo garantiza Microsoft que un miembro del personal no tiene acceso permanente al contenido del cliente en las aplicaciones de Office 365?
 

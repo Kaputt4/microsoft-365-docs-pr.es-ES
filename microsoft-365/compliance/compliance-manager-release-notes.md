@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 1a490212b2275b9f297e2585e7242f5331d0fe56
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417509"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "38687655"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notas de la versión del administrador de cumplimiento (versión preliminar)
 
@@ -27,11 +27,9 @@ Puede usar la herramienta actualizada del [Administrador de cumplimiento](https:
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>Novedades del administrador de cumplimiento (versión preliminar)
 
-- **Acceso basado en roles al administrador de cumplimiento:** Se ha quitado la función de **acceso de conjetura** predeterminada. Para que un usuario tenga acceso al administrador de cumplimiento, el administrador global debe [asignar un permiso a cada usuario](compliance-manager-overview#permissions.md).
+- **Acceso basado en roles al administrador de cumplimiento:** Se ha quitado el rol de **acceso de invitado** predeterminado. Para que un usuario tenga acceso al administrador de cumplimiento, el administrador global debe [asignar un permiso a cada usuario](compliance-manager-overview.md#permissions).
 
-- **Integración con la puntuación segura de Microsoft:** El administrador de cumplimiento admite la integración con la [puntuación segura de Microsoft](../security/mtp/microsoft-secure-score.md) mediante la asignación de acciones administradas por el cliente a más de 50 acciones de calificación seguras. Al completar una acción asignada en calificación segura, la acción correspondiente del administrador de cumplimiento se actualiza automáticamente.
-
-- **Importar evaluaciones personalizadas:** Además de las evaluaciones integradas, el administrador de cumplimiento ahora admite la importación de plantillas personalizadas. Puede crear evaluaciones personalizadas para cualquier producto o servicio y cualquier normativa o estándar.
+- **Puntuación de cumplimiento actualizada**: la puntuación de cumplimiento ahora incluye los resultados de las acciones administradas por Microsoft. La puntuación se incrementará como resultado.
 
 - **Elementos de acciones:** Los elementos de acción son ahora elementos individuales y muchos incluyen la colección de telemetría de la API de Microsoft Secure score Graph. Siempre que sea posible, las recomendaciones de acciones técnicas ahora tienen vínculos a la página de configuración correspondiente en el servicio de Office 365.
 
@@ -39,8 +37,6 @@ Puede usar la herramienta actualizada del [Administrador de cumplimiento](https:
     - **Dimensiones:** Permite ver, agregar y personalizar metadatos para plantillas, evaluaciones y elementos de acción que permiten crear tablas dinámicas personalizadas para los filtros.
     - **Propietarios:** Especifique un propietario para cada elemento de acción.
     - **Acciones del cliente:** Administrar la lista completa de elementos de acciones incluidos en el administrador de cumplimiento (versión preliminar) y habilitar o deshabilitar la supervisión de la puntuación segura para los elementos de acción integrados con calificación segura.
-
-- **Puntuación de cumplimiento actualizada**: la metodología ha cambiado para admitir la sincronización con calificación segura de Microsoft. La puntuación se calcula en función de las puntuaciones de acciones administradas por Microsoft y las puntuaciones de acciones administradas por el cliente.
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>Problemas conocidos en el administrador de cumplimiento (versión preliminar)
 
@@ -52,8 +48,11 @@ En las siguientes secciones se abordan los problemas conocidos que deben resolve
 
 ### <a name="secure-score"></a>Puntuación segura
 
-- Los resultados de la puntuación segura no están disponibles para algunos elementos de acciones en determinadas suscripciones de Microsoft 365 y Office 365. El resultado de la puntuación segura es "no se pudo detectar" en estos casos.
+- Los resultados de la puntuación segura no están disponibles para algunos elementos de acciones en determinadas suscripciones de Microsoft 365 y Office 365. **No se pudo detectar** el resultado de la puntuación segura en estos casos.
 - A veces, se devuelven resultados de puntuación seguros para las directivas y los elementos de acción correspondientes no completados.
+- Para los nuevos inquilinos, se activan automáticamente las actualizaciones de puntuación seguras para todas las acciones. El administrador global puede establecer el cambio de actualización continua de puntuación segura en desactivado, lo que desactiva las actualizaciones para todas las acciones.
+- Cuando las actualizaciones de calificaciones seguras están activadas, las acciones se supervisan activamente mediante una puntuación segura, aunque la fecha de prueba de la acción no se actualizará para reflejar la supervisión.
+- Cuando se crean nuevas evaluaciones, las puntuaciones incluyen automáticamente los resultados de los controles administrados por Microsoft y la integración de la puntuación segura.
 
 ### <a name="microsoft-managed-controls"></a>Controles administrados por Microsoft
 
@@ -69,12 +68,9 @@ En las siguientes secciones se abordan los problemas conocidos que deben resolve
 
 - Al importar una plantilla, todas las evaluaciones basadas en dicha plantilla reflejan todas las familias de controles que forman parte de la plantilla. Pero si agrega nuevas familias de controles a la plantilla, las evaluaciones existentes no reflejarán los cambios. Solo las nuevas evaluaciones creadas a partir de la plantilla actualizada reflejan los cambios.
 
-### <a name="filters"></a>Filtros
-
-- El filtrado de los elementos de acción o los controles no produce de forma coherente resultados correctos.
-
 ### <a name="templates"></a>Plantillas
 
+- Al crear una plantilla, debe incluir las dimensiones del **producto** y la **certificación** para asegurarse de que la plantilla se muestra en la puntuación de cumplimiento.
 - Las plantillas archivadas son editables y no se pueden editar.
 - Las plantillas bloqueadas permiten la creación de evaluaciones cuando no deberían. Bloquear una plantilla tiene como objetivo evitar que se use para crear evaluaciones.
 

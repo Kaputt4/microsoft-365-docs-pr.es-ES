@@ -1,9 +1,9 @@
 ---
 title: Configurar usuarios y casos en la exhibición de documentos electrónicos avanzada de Office 365
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Obtenga información sobre cómo configurar roles de usuario, crear casos y asignar usuarios a los casos en Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: e53d304445aa7d171766d38496d95a0d6cb47792
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6fa3581fe15c089292e7585e7d053b817ae167b
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092915"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38687748"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurar usuarios y casos en la exhibición de documentos electrónicos avanzada de Office 365
 
@@ -35,7 +35,7 @@ Antes de configurar casos y usuarios en la exhibición avanzada de documentos el
     
 - Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento de Office 365 para crear un caso de exhibición de documentos electrónicos y agregarle miembros. Para agregarse al grupo de roles de eDiscovery Manager en &amp; el centro de seguridad y cumplimiento, debe ser administrador global de la organización de Office 365. Si no es un administrador global, deberá solicitar a un administrador global que le agregue al grupo de roles eDiscovery Manager. Para obtener más información, vea:
     
-  - [Permisos en el centro de seguridad &amp; y cumplimiento de 365 de Microsoft](/security/office-365-security/protect-against-threats.md)
+  - [Permisos en el centro de seguridad &amp; y cumplimiento de 365 de Microsoft](~/security/office-365-security/protect-against-threats.md)
     
   - [Asignar permisos de eDiscovery en el centro de &amp; seguridad y cumplimiento de 365 de Microsoft](assign-ediscovery-permissions.md)
     

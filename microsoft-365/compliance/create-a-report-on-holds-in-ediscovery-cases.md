@@ -8,22 +8,24 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Use el script de este artículo para generar un informe que contenga información sobre todas las suspensiones asociadas con casos de eDiscovery en el centro de cumplimiento en Office 365 o en Microsoft 365.
-ms.openlocfilehash: 7118b62dcd42413309e33c45e80516c8822faeff
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e07e628b21c9e8f7485f3012a8740823fe301fc2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091920"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687815"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Crear un informe sobre suspensiones en casos de eDiscovery en Office 365
   
 La secuencia de comandos de este artículo permite que los administradores de eDiscovery y los administradores de eDiscovery generen un informe que contiene información acerca de todas las suspensiones asociadas con casos de eDiscovery en el centro de cumplimiento de Office 365 o Microsoft 365. El informe contiene información como, por ejemplo, el nombre del caso de que está asociada una suspensión, las ubicaciones de contenido que se encuentran en espera y si la retención se basa en la consulta. Si hay casos que no tienen ninguna suspensión, el script creará un informe adicional con una lista de casos sin suspensiones.
 
-Consulte la sección [More Information](#more-information) para obtener una descripción detallada de la información incluida en el informe. 
+Consulte la sección [More Information](#more-information) para obtener una descripción detallada de la información incluida en el informe.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -39,7 +41,7 @@ El primer paso consiste en conectarse al centro de seguridad & cumplimiento de l
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `ConnectSCC.ps1`. 
     
-      ```
+      ```powershell
       # Get login credentials 
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -51,10 +53,10 @@ El primer paso consiste en conectarse al centro de seguridad & cumplimiento de l
     
 3. Ejecutar el script; por ejemplo:
 
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-   
+
 4. Cuando se le pidan sus credenciales, escriba su dirección de correo electrónico y contraseña y, a continuación, haga clic en **Aceptar**. 
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Paso 2: ejecutar el script para informar sobre suspensiones asociadas con casos de eDiscovery
@@ -63,7 +65,7 @@ Una vez que se haya conectado al centro de seguridad & PowerShell del centro de 
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, CaseHoldsReport. ps1. 
     
-  ```
+  ```powershell
 #script begin
 " " 
 write-host "***********************************************"
@@ -155,7 +157,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
 3. Ejecutar el script; por ejemplo:
 
-    ```
+    ```powershell
     .\CaseHoldsReport.ps1
     ```
 

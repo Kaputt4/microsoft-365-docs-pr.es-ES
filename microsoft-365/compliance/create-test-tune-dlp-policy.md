@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
-ms.openlocfilehash: b13dab63514dc8658479dbd68d5a014dc7347bb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091860"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38687691"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -107,7 +107,7 @@ Para demostrar la detección de TFN de forma bastante predecible, un correo elec
 
 ![Número de archivo de impuestos de Australia que no pasa la suma de comprobación](media/DLP-create-test-tune-email-test1.png)
 
-En comparación, un correo electrónico con las palabras "número de archivo de impuestos" y un TFN válido que pase la suma de comprobación activará la Directiva. Para el registro, el TFN que estoy usando se ha tomado de un sitio web que genera un TFNs válido, pero no genuino. Hay sitios similares que generan [números de tarjeta de crédito válidos pero falsos](http://www.fakecreditcardgenerator.net/). Estos sitios son muy útiles porque uno de los errores más comunes al probar una directiva DLP es usar un número falso que no es válido y no pasa la suma de comprobación (y, por lo tanto, no desencadena la Directiva).
+En comparación, un correo electrónico con las palabras "número de archivo de impuestos" y un TFN válido que pase la suma de comprobación activará la Directiva. Para el registro, el TFN que estoy usando se ha tomado de un sitio web que genera un TFNs válido, pero no genuino. Hay sitios similares que generan [números de tarjeta de crédito válidos pero falsos](https://www.fakecreditcardgenerator.net/). Estos sitios son muy útiles porque uno de los errores más comunes al probar una directiva DLP es usar un número falso que no es válido y no pasa la suma de comprobación (y, por lo tanto, no desencadena la Directiva).
 
 ![Número de archivo de impuestos de Australia que pasa la suma de comprobación](media/DLP-create-test-tune-email-test2.png)
 
@@ -203,7 +203,7 @@ Cuando esté satisfecho de que su Directiva de DLP detecte de forma precisa y ef
 
 ![Opción para activar la Directiva](media/DLP-create-test-tune-turn-on-policy.png)
  
-Si está esperando para ver cuándo tendrá efecto la Directiva, [Conéctese a PowerShell del centro de cumplimiento de seguridad &](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) y ejecute el [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) para ver el DistributionStatus.
+Si está esperando para ver cuándo tendrá efecto la Directiva, [Conéctese a PowerShell del centro de cumplimiento de seguridad &](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) y ejecute el [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) para ver el DistributionStatus.
 
 ![Ejecutar el cmdlet en PowerShell](media/DLP-create-test-tune-PowerShell.png)
 

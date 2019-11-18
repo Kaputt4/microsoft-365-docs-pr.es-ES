@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Crear una directiva de archivado y eliminación en Office 365 que mueva automáticamente elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: ca43498d785f1a5525a8159e7e553bd36257a7c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092803"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687895"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurar una directiva de archivo y eliminación para los buzones de la organización de Office 365
 
@@ -125,7 +125,7 @@ En primer lugar, deberá crear una etiqueta de directiva predeterminada de archi
     
 3. **Período de retención** Seleccione **cuando el elemento alcanza la siguiente antigüedad (en días)** y, a continuación, escriba la duración del período de retención. Para este escenario, los elementos se moverán al buzón de archivo después de 1095 días (3 años).
     
-4. **Comentario** Opcional Escriba un comentario que explique el propósito de la etiqueta de retención personalizada. 
+4. **Comment** (opcional) escriba un comentario que explique el propósito de la etiqueta de retención personalizada. 
     
 3. Haga clic en **Guardar** para crear la DPT de archivo personalizada. 
     
@@ -147,7 +147,7 @@ A continuación, creará otra DPT personalizada, pero ésta será una directiva 
     
 3. **Período de retención** Seleccione **cuando el elemento alcanza la siguiente antigüedad (en días)** y, a continuación, escriba la duración del período de retención. Para este escenario, los elementos se purgarán después de 2555 días (7 años).
     
-4. **Comentario** Opcional Escriba un comentario que explique el propósito de la etiqueta de retención personalizada. 
+4. **Comment** (opcional) escriba un comentario que explique el propósito de la etiqueta de retención personalizada. 
     
 3. Haga clic en **Guardar** para crear la DPT de eliminación personalizada. 
     
@@ -171,7 +171,7 @@ La última etiqueta de retención que creará es una etiqueta de directiva de re
     
 4. **Período de retención** Seleccione **cuando el elemento alcanza la siguiente antigüedad (en días)** y, a continuación, escriba la duración del período de retención. Para este escenario, los elementos se eliminarán después de 1825 días (5 años).
     
-5. **Comentario** Opcional Escriba un comentario que explique el propósito de la etiqueta de retención personalizada. 
+5. **Comment** (opcional) escriba un comentario que explique el propósito de la etiqueta de retención personalizada. 
     
 3. Haga clic en **Guardar** para crear la RPT personalizada para la carpeta elementos eliminados. 
     
@@ -242,7 +242,7 @@ Estos son los pasos para conectarse a PowerShell de Exchange Online y, a continu
   
 1. En el equipo local, abra Windows PowerShell y ejecute el siguiente comando.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     ```
 
@@ -250,19 +250,19 @@ Estos son los pasos para conectarse a PowerShell de Exchange Online y, a continu
     
 2. Ejecute el comando siguiente.
     
-    ```
+    ```powershell
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     ```
 
 3. Ejecute el comando siguiente.
     
-    ```
+    ```powershell
     Import-PSSession $Session
     ```
 
 4. Para comprobar que se ha conectado a su organización de Exchange Online, ejecute el comando siguiente para obtener una lista de todos los buzones de correo de su organización.
     
-    ```
+    ```powershell
     Get-Mailbox
     ```
 
@@ -271,11 +271,11 @@ Estos son los pasos para conectarse a PowerShell de Exchange Online y, a continu
   
 5. Ejecute los dos comandos siguientes para iniciar el Asistente para carpeta administrada para todos los buzones de usuario de la organización.
     
-    ```
+    ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
     ```
 
-    ```
+    ```powershell
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
@@ -289,16 +289,18 @@ En el paso 4, tiene que asignar la nueva Directiva de retención a los buzones e
 
 2. Ejecute el siguiente comando para mostrar información sobre los planes de buzón de correo de su organización.
 
-    ```
+    ```powershell
     Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
     ```
+    
     Anote el plan de buzón que se establece como predeterminado.
 
 3. Ejecute el siguiente comando para asignar la nueva Directiva de retención que creó en el paso 3 (por ejemplo, la **Directiva de archivo y retención de Alpine House**) al plan de buzón de correo predeterminado. En este ejemplo se supone que el nombre del plan de buzón predeterminado es **ExchangeOnlineEnterprise**.
 
-    ```
+    ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
     ```
+
 4. Puede volver a ejecutar el comando en el paso 2 para comprobar que la Directiva de retención asignada al plan de buzones de correo predeterminado se ha cambiado.
 
 ## <a name="more-information"></a>Más información
@@ -307,7 +309,7 @@ En el paso 4, tiene que asignar la nueva Directiva de retención a los buzones e
     
 - En la tabla siguiente se proporciona más información sobre cada etiqueta de retención que se agrega a la Directiva de retención personalizada que se creó siguiendo los pasos de este tema.
     
-    |**Etiqueta de retención**|**Qué hace esta etiqueta**|**¿Integrada o personalizada?**|**Type**|
+    |**Etiqueta de retención**|**Qué hace esta etiqueta**|**¿Integrada o personalizada?**|**Tipo**|
     |:-----|:-----|:-----|:-----|
     |Mover a archivo desde Alpine House a 3 años  <br/> |Mueve los elementos que tienen un antigüedad de 1095 días (3 años) al buzón de archivo.  <br/> |Personalizado (vea [el paso 2: crear nuevas etiquetas de retención para las directivas de archivo y eliminación](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Etiqueta de directiva predeterminada (archivo); Esta etiqueta se aplica automáticamente a todo el buzón.  <br/> |
     |Eliminación permanente de Alpine House de 7 años  <br/> |Elimina permanentemente los elementos del buzón de correo principal o del buzón de archivo cuando tienen 7 años de antigüedad.  <br/> |Personalizado (vea [el paso 2: crear nuevas etiquetas de retención para las directivas de archivo y eliminación](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Etiqueta de directiva predeterminada (eliminación); Esta etiqueta se aplica automáticamente a todo el buzón.  <br/> |

@@ -10,17 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más avanzado en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: f0487a7657b1d6cc4374bfc7308092285aebc979
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cf880e6f54f2ab91bae23c3ecf468f88627f3025
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092355"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687868"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>casos de eDiscovery en el centro de seguridad & cumplimiento
 
@@ -56,13 +57,13 @@ Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en 
 
 El primer paso consiste en asignar los permisos adecuados relacionados con eDiscovery a los usuarios para que pueda agregarlos a un caso de exhibición de documentos electrónicos en el paso 2. Debe ser miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de roles) en el centro de seguridad & cumplimiento para asignar permisos de exhibición de documentos electrónicos. En la lista siguiente se describen los grupos de roles relacionados con la exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. 
   
-- **Revisor** : este grupo de roles tiene los permisos más restrictivos relacionados con la exhibición de documentos electrónicos. El objetivo principal de este grupo de roles es permitir a los miembros ver y obtener acceso a los datos de caso en eDiscovery avanzado de Office 365. Los miembros de este grupo solo pueden ver y abrir la lista de los casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad y cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en eDiscovery avanzado. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de la búsqueda, exportar resultados de la búsqueda o preparar los resultados para la exhibición avanzada de documentos electrónicos. 
+- **Revisor.** Este grupo de roles tiene los permisos más restrictivos relacionados con la exhibición de documentos electrónicos. El objetivo principal de este grupo de roles es permitir a los miembros ver y obtener acceso a los datos de caso en eDiscovery avanzado de Office 365. Los miembros de este grupo solo pueden ver y abrir la lista de los casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad y cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en eDiscovery avanzado. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de la búsqueda, exportar resultados de la búsqueda o preparar los resultados para la exhibición avanzada de documentos electrónicos. 
     
-- **Administrador de eDiscovery** : los miembros de este grupo de roles pueden crear y administrar casos de eDiscovery. Pueden agregar y quitar miembros, poner ubicaciones de contenido en suspensión, crear y editar búsquedas de contenido asociadas a un caso, exportar los resultados de una búsqueda de contenido y preparar los resultados de la búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. Existen dos subgrupos en este grupo de roles. La diferencia entre estos subgrupos se basa en el ámbito.
+- **Administrador de exhibición de documentos electrónicos.** Los miembros de este grupo de roles pueden crear y administrar casos de exhibición de documentos electrónicos. Pueden agregar y quitar miembros, poner ubicaciones de contenido en suspensión, crear y editar búsquedas de contenido asociadas a un caso, exportar los resultados de una búsqueda de contenido y preparar los resultados de la búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. Hay dos subgrupos en este grupo de roles. La diferencia entre estos subgrupos se basa en el ámbito.
     
-  - **Administrador de exhibición** de documentos electrónicos: puede ver y administrar los casos de exhibición de documentos electrónicos que crean o de los que son miembros. Si otro administrador de exhibición de documentos electrónicos crea un caso pero no agrega un segundo administrador de eDiscovery como miembro de ese caso, el segundo administrador de eDiscovery no podrá ver ni abrir el caso en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento. los administradores de eDiscovery también pueden acceder a sus casos en eDiscovery avanzado para realizar tareas de análisis. 
+  - **Administrador de exhibición de documentos electrónicos.** Puede ver y administrar los casos de exhibición de documentos electrónicos que cree o de los que sea miembro. Si otro administrador de exhibición de documentos electrónicos crea un caso pero no agrega un segundo administrador de eDiscovery como miembro de ese caso, el segundo administrador de eDiscovery no podrá ver ni abrir el caso en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento. los administradores de eDiscovery también pueden acceder a sus casos en eDiscovery avanzado para realizar tareas de análisis. 
     
-  - **Administrador de exhibición** de documentos electrónicos: puede realizar todas las tareas de administración de casos que puede realizar un administrador de exhibición de documentos electrónicos. Además, un administrador de exhibición de documentos electrónicos puede:
+  - **Administrador de exhibición de documentos electrónicos *.** Puede realizar todas las tareas de administración de casos que un administrador de exhibición de documentos electrónicos puede hacer. Además, un administrador de exhibición de documentos electrónicos puede:
     
     - Ver todos los casos que se enumeran en la página **Exhibición de documentos electrónicos**. 
     
@@ -95,7 +96,7 @@ Para obtener más información sobre los permisos de exhibición de documentos e
 
 ## <a name="step-2-create-a-new-case"></a>Paso 2: crear un nuevo caso
 
-El siguiente paso es crear un nuevo caso de exhibición de documentos electrónicos. Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos para crear casos de exhibición de documentos electrónicos. Como se ha explicado anteriormente, después de crear un nuevo caso en el centro de seguridad & cumplimiento, usted (y otros miembros de mayúsculas y minúsculas) podrá tener acceso al mismo caso en eDiscovery avanzado si su organización tiene una suscripción de Office 365 E5.
+El paso siguiente es crear un caso de exhibición de documentos electrónicos. Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos para crear casos de exhibición de documentos electrónicos. Como se ha explicado anteriormente, después de crear un caso en el centro de seguridad & cumplimiento, usted (y otros miembros de mayúsculas y minúsculas) podrá tener acceso al mismo caso en eDiscovery avanzado si su organización tiene una suscripción a Office 365 E5.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
@@ -103,18 +104,18 @@ El siguiente paso es crear un nuevo caso de exhibición de documentos electróni
     
 3. En el centro de seguridad & cumplimiento, **haga clic en** \> **exhibición de**documentos ![electrónicos eDiscovery](media/ITPro-EAC-AddIcon.gif) y, a continuación, en agregar icono **crear un caso**.
     
-4. En la página **nuevo caso** , indique el caso como un nombre, escriba una descripción opcional y, a continuación, haga clic en **Guardar**. Tenga en cuenta que el nombre del caso debe ser único en su organización.
+4. En la página **nuevo caso** , indique el caso como un nombre, escriba una descripción opcional y, a continuación, haga clic en **Guardar**. El nombre del caso debe ser único en la organización.
     
-    ![Crear un nuevo caso](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
+    ![Crear un caso](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
   
-    El nuevo caso se muestra en la lista de casos de la página de **exhibición** de documentos electrónicos. Tenga en cuenta que puede desplazar el cursor sobre un nombre de caso para mostrar información sobre el caso, incluido el estado del caso ( **activo** o **cerrado**), la descripción del caso (creado en el paso anterior) y cuándo se cambió el caso la última vez y Quién lo modificó.
+    El nuevo caso se muestra en la lista de casos de la página de **exhibición** de documentos electrónicos. Puede desplazar el cursor sobre un nombre de caso para mostrar información sobre el caso, incluido el estado del caso (**activo** o **cerrado**), la descripción del caso (creado en el paso anterior) y cuándo se modificó el caso la última vez y quién lo modificó.
     
     > [!TIP]
     > Después de crear un nuevo caso, puede cambiarle el nombre en cualquier momento. Solo tiene que hacer clic en el nombre del caso en la página de **exhibición** de documentos electrónicos. En la página desplegable **administrar este caso** , cambie el nombre que se muestra en el cuadro de **nombre**y, a continuación, guarde el cambio. 
   
 ## <a name="step-3-add-members-to-a-case"></a>Paso 3: agregar miembros a un caso
 
-Después de crear un nuevo caso, el siguiente paso consiste en Agregar miembros al caso. Como se ha explicado anteriormente, solo los usuarios que son miembros de los grupos de roles Reviewer o eDiscovery Manager pueden agregarse como miembros del caso. Tenga en cuenta que el administrador de eDiscovery que ha creado el caso se agrega automáticamente como miembro.
+Después de crear un caso, el siguiente paso consiste en Agregar miembros al caso. Como se ha explicado anteriormente, solo los usuarios que son miembros de los grupos de roles Reviewer o eDiscovery Manager pueden agregarse como miembros del caso. El administrador de eDiscovery que ha creado el caso se agrega automáticamente como miembro.
   
 1. En el centro de seguridad & cumplimiento, **haga clic en** \> eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
@@ -182,19 +183,19 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
     
     ![Elegir las ubicaciones de contenido para colocar en suspensión](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   a. **Correo electrónico de Exchange.** Haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
     
     > [!NOTE]
     > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda. 
   
-   b. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
+   b. **Sitios de SharePoint.** Haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
     
     Consulte la sección [More Information](#more-information) para obtener sugerencias sobre cómo poner en espera grupos de Office 365 y Microsoft Teams. 
     
     > [!NOTE]
     > En el caso poco probable de que se cambie el nombre principal de usuario (UPN) de una persona, también se cambiará la dirección URL de su cuenta de OneDrive para incorporar el nuevo UPN. Si esto ocurre, tendrá que modificar la retención agregando la nueva dirección URL de OneDrive del usuario y quitando la antigua. 
   
-   c. **Carpetas públicas de Exchange** : mueva el control](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) de ![alternancia de alternancia a la posición **todas** para poner todas las carpetas públicas en la organización de Exchange online en retención. Tenga en cuenta que no puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
+   c. **Carpetas públicas de Exchange.** Mueva el control](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) de alternancia ![de alternancia a la posición **All** para poner todas las carpetas públicas en la organización de Exchange online en retención. No puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
     
 9. Cuando haya acabado de agregar ubicaciones de contenido a la suspensión, haga clic en **siguiente**.
     
@@ -223,7 +224,7 @@ Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
   
 - El número total de elementos en espera indica el número de elementos de todos los orígenes de contenido que se encuentran en retención. Si ha creado una suspensión basada en consulta, esta estadística indica el número de elementos que coinciden con la consulta.
     
-- El número de elementos en espera también incluye los elementos sin indexar encontrados en las ubicaciones de contenido. Tenga en cuenta que si crea una suspensión basada en consulta, todos los elementos sin indexar en las ubicaciones de contenido se colocan en retención. Esto incluye los elementos sin indexar que no coinciden con los criterios de búsqueda de una retención basada en consultas y los elementos sin indexar que podrían estar fuera de una condición de intervalo de fechas. Esto es diferente a lo que sucede cuando se ejecuta una búsqueda de contenido, en la que los elementos no indexados que no coinciden con la consulta de búsqueda o se excluyen por una condición de intervalo de fechas no se incluyen en los resultados de la búsqueda. Para obtener más información acerca de los elementos sin indexar, vea [elementos parcialmente indizados en la búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md).
+- El número de elementos en espera también incluye los elementos sin indexar encontrados en las ubicaciones de contenido. Si crea una suspensión basada en consulta, todos los elementos sin indexar en las ubicaciones de contenido se colocan en retención. Esto incluye los elementos sin indexar que no coinciden con los criterios de búsqueda de una retención basada en consultas y los elementos sin indexar que podrían estar fuera de una condición de intervalo de fechas. Esto es diferente a lo que sucede cuando se ejecuta una búsqueda de contenido, en la que los elementos no indexados que no coinciden con la consulta de búsqueda o se excluyen por una condición de intervalo de fechas no se incluyen en los resultados de la búsqueda. Para obtener más información acerca de los elementos sin indexar, vea [elementos parcialmente indizados en la búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md).
     
 - Puede obtener las estadísticas de retención más recientes haciendo clic en **actualizar estadísticas** para volver a ejecutar una estimación de búsqueda que calcula el número actual de elementos en espera. Si es necesario, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización en la barra de herramientas para actualizar las estadísticas de retención en el panel de detalles. 
     
@@ -250,13 +251,13 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
     ![Nueva búsqueda](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-6. Puede especificar palabras clave, propiedades del mensaje, como las fechas de envío y recepción, o propiedades del documento, como nombres de archivo o la fecha en que se modificó por última vez un documento. Puede usar consultas más complejas que usen un operador booleano, como **and**, **or**, **Not**, **Near**o **ONEAR**. También puede buscar información confidencial (por ejemplo, los números de la seguridad social) en documentos o buscar documentos que se han compartido de forma externa. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se incluirá en los resultados de la búsqueda. 
+6. Puede especificar palabras clave, propiedades del mensaje, como las fechas de envío y recepción, o propiedades del documento, como nombres de archivo o la fecha en que se modificó por última vez un documento. Puede usar consultas más complejas que usen un operador booleano, como **and**, **or**, **Not**, **Near**o **ONEAR**. Además, puede buscar información confidencial (como los números de la seguridad social) en documentos o buscar en documentos que se han compartido de forma externa. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se incluirá en los resultados de la búsqueda. 
     
 7. Puede hacer clic en la casilla **Mostrar lista de palabras clave** y escribir una palabra clave en cada fila. Si hace esto, las palabras clave de cada fila están conectadas mediante el operador **or** en la consulta de búsqueda que se crea. 
     
     ![Lista de palabras clave](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
-    ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestren cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente qué palabras clave son más (y menos) efectivas. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para obtener más información acerca de las estadísticas de búsqueda, consulte [View keyword Statistics for Content Search Results](view-keyword-statistics-for-content-search.md).
+    ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto le ayudará a identificar rápidamente las palabras clave más (y menos) efectivas. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para saber más sobre las estadísticas de búsqueda, consulte [Ver estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md).
     
     Para obtener más información acerca del uso de la lista de palabras clave, vea [Building a Search Query](content-search.md#building-a-search-query).
     
@@ -268,23 +269,23 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
     ![Ubicaciones, ubicaciones en suspensión](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **Todas las ubicaciones** : Seleccione esta opción para buscar en todas las ubicaciones de contenido de la organización. Si selecciona esta opción, puede elegir buscar todos los buzones de Exchange (que incluye los buzones de todos los grupos de Office 365 y Microsoft Teams), todos los sitios de SharePoint y OneDrive para la empresa (que incluye los sitios de todos los grupos de Office 365 y Microsoft Teams) y todas las carpetas públicas.
+    - **Todas las ubicaciones.** Seleccione esta opción para buscar en todas las ubicaciones de contenido de la organización. Si selecciona esta opción, puede elegir buscar todos los buzones de Exchange (que incluye los buzones de todos los grupos de Office 365 y Microsoft Teams), todos los sitios de SharePoint y OneDrive para la empresa (que incluye los sitios de todos los grupos de Office 365 y Microsoft Teams) y todas las carpetas públicas.
     
-    - **Todas las ubicaciones en suspensión** : Seleccione esta opción para buscar en todas las ubicaciones de contenido que se encuentran en espera en el caso. Si el caso contiene varias suspensiones, las ubicaciones de contenido de todas las suspensiones se buscarán cuando seleccione esta opción. Además, si se colocó una ubicación de contenido en una suspensión basada en consulta, solo se buscará en los elementos que están en espera cuando ejecute la búsqueda de contenido que está creando en este paso. Por ejemplo, si un usuario se colocó en la suspensión de casos basada en consultas y conserva los elementos que se enviaron o crearon antes de una fecha específica, solo se buscarían en esos elementos usando los criterios de búsqueda de la búsqueda de contenido. Esto se logra conectando la consulta de suspensión de casos y la consulta de búsqueda de contenido por un operador **and** . Consulte la sección [más información](#more-information) al final de este artículo para obtener más información sobre cómo buscar contenido de casos. 
+    - **Todas las ubicaciones en espera.** Seleccione esta opción para buscar en todas las ubicaciones de contenido que se encuentran en espera en el caso. Si el caso contiene varias suspensiones, las ubicaciones de contenido de todas las suspensiones se buscarán cuando seleccione esta opción. Además, si se colocó una ubicación de contenido en una suspensión basada en consulta, solo se buscará en los elementos que están en espera cuando ejecute la búsqueda de contenido que está creando en este paso. Por ejemplo, si un usuario se colocó en la suspensión de casos basada en consultas y conserva los elementos que se enviaron o crearon antes de una fecha específica, solo se buscarían en esos elementos usando los criterios de búsqueda de la búsqueda de contenido. Esto se logra conectando la consulta de suspensión de casos y la consulta de búsqueda de contenido por un operador **and** . Consulte la sección [más información](#more-information) al final de este artículo para obtener más información sobre cómo buscar contenido de casos. 
     
-    - **Ubicaciones específicas** : Seleccione esta opción para seleccionar los buzones y sitios en los que desea buscar. Cuando seleccione esta opción y haga clic en **modificar**, aparecerá una lista de ubicaciones. Puede elegir buscar en cualquiera o todos los usuarios, grupos, equipos o ubicaciones de sitio.
+    - **Ubicaciones específicas.** Seleccione esta opción para seleccionar los buzones y sitios en los que desea buscar. Cuando seleccione esta opción y haga clic en **modificar**, aparecerá una lista de ubicaciones. Puede elegir buscar en cualquiera o todos los usuarios, grupos, equipos o ubicaciones de sitio.
     
       ![Seleccionar ubicaciones específicas](media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
       También puede optar por buscar en todas las carpetas públicas de la organización, pero si selecciona esta opción y busca en cualquier ubicación de contenido que esté en espera, cualquier consulta de una suspensión de casos basada en consultas no se aplicará a la consulta de búsqueda. En otras palabras, se busca en todo el contenido de una ubicación, no solo en el contenido que se conserva mediante una retención de casos basada en la consulta.
     
-      Puede quitar las ubicaciones de contenido de casos rellenados previamente o agregar otros nuevos. Si elige esta opción, también tendrá flexibilidad para buscar en todas las ubicaciones de contenido de un servicio específico (como buscar en todos los buzones de Exchange) o puede buscar ubicaciones de contenido específicas para un servicio. También puede elegir si desea buscar o no las carpetas públicas de la organización.
+      Puede quitar las ubicaciones de contenido de casos rellenados previamente o agregar otros nuevos. Si elige esta opción, también tendrá flexibilidad para buscar en todas las ubicaciones de contenido de un servicio específico (como buscar en todos los buzones de Exchange) o puede buscar ubicaciones de contenido específicas para un servicio. También puede elegir si desea buscar en las carpetas públicas de su organización.
     
       Tenga en cuenta lo siguiente al agregar ubicaciones de contenido a la búsqueda:
     
       - Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones en los que se va a buscar, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en **elegir usuarios, grupos o equipos**, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda, active la casilla de verificación situada junto al nombre y, a continuación, haga clic en **elegir**. 
     
-      - Puede Agregar buzones inactivos, Office 365 grupos, Microsoft Teams y grupos de distribución a la lista de buzones para buscar. No se admiten grupos de distribución dinámicos. Si agrega grupos de Office 365 o Microsoft Teams, se busca el buzón de grupo o de equipo; no se busca en los buzones de los miembros del grupo.
+      - Puede Agregar buzones inactivos, Office 365 grupos, Microsoft Teams y grupos de distribución a la lista de buzones para buscar. No se admiten grupos de distribución dinámicos. Si agrega grupos de Office 365 o Microsoft Teams, se busca el buzón de grupo o de equipo. No se busca en los buzones de los miembros del grupo.
     
       - Para agregar sitios, haga clic en **elegir sitios**, haga clic en **elegir sitios** de nuevo y, a continuación, escriba la dirección URL de cada sitio que desee buscar. También puede Agregar la dirección URL del sitio de SharePoint para los grupos de Office 365 y Microsoft Teams. 
     
@@ -329,7 +330,7 @@ Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export
     
     ![Ficha exportar](media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
   
-    Es posible que deba hacer ****![clic en actualizar](media/O365-MDM-Policy-RefreshIcon.gif) icono de actualización para actualizar la lista de trabajos de exportación de modo que muestre el trabajo de exportación que acaba de crear. Tenga en cuenta que los trabajos de exportación tienen el mismo nombre que la búsqueda de contenido correspondiente con **_Export** anexado al final del nombre de búsqueda. 
+    Es posible que deba hacer ****![clic en actualizar](media/O365-MDM-Policy-RefreshIcon.gif) icono de actualización para actualizar la lista de trabajos de exportación de modo que muestre el trabajo de exportación que ha creado. Los trabajos de exportación tienen el mismo nombre que la búsqueda de contenido correspondiente con **_Export** anexado al final del nombre de búsqueda. 
     
 6. Haga clic en el trabajo de exportación que acaba de crear para mostrar la información de estado en el panel de detalles. Esta información incluye el porcentaje de elementos que se han transferido a un área de almacenamiento de Azure en la nube de Microsoft.
     
@@ -371,7 +372,7 @@ Como alternativa a la exportación de los resultados de una sola búsqueda de co
     
     ![Ficha exportar, varias búsquedas](media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
   
-    Puede que tenga que hacer **** ![clic en actualizar](media/O365-MDM-Policy-RefreshIcon.gif) icono para actualizar la lista de trabajos de exportación para mostrar el trabajo de exportación que acaba de crear. Tenga en cuenta que las búsquedas incluidas en el trabajo de exportación se muestran en la columna **búsquedas** . 
+    Puede que tenga que hacer **** ![clic en actualizar](media/O365-MDM-Policy-RefreshIcon.gif) icono para actualizar la lista de trabajos de exportación para mostrar el trabajo de exportación que ha creado. Las búsquedas incluidas en el trabajo de exportación se enumeran en la columna **búsquedas** . 
     
 8. Haga clic en el trabajo de exportación que acaba de crear para mostrar la información de estado en el panel de detalles. Esta información incluye el porcentaje de elementos que se han transferido a un área de almacenamiento de Azure en la nube de Microsoft.
     
@@ -381,17 +382,17 @@ Como alternativa a la exportación de los resultados de una sola búsqueda de co
 
 - Cuando se exportan los resultados de varias búsquedas, las consultas de búsqueda de todas las búsquedas se combinan mediante operadores **or** y, a continuación, se inicia la búsqueda combinada. Los resultados estimados de la búsqueda combinada se muestran en el panel de detalles del trabajo de exportación seleccionado. A continuación, los resultados de la búsqueda se transfieren al área de almacenamiento de Azure en la nube de Microsoft. El estado de la transferencia también se muestra en el panel de detalles. Como se mencionó anteriormente, una vez que se han transferido todos los resultados de búsqueda, puede descargarlos en el equipo local. 
     
-- El número máximo de palabras clave de las consultas de búsqueda para todas las búsquedas que desea exportar es de 500. (este es el mismo límite para una sola búsqueda de contenido). Esto se debe a que el trabajo de exportación combina todas las consultas de búsqueda mediante el operador **or** . Si supera este límite, se devolverá un error. En este caso, tendrá que exportar los resultados de menos búsquedas o simplificar las consultas de búsqueda de las búsquedas que desea exportar. 
+- El número máximo de palabras clave de las consultas de búsqueda para todas las búsquedas que desea exportar es de 500. (este es el mismo límite para una sola búsqueda de contenido). Esto se debe a que el trabajo de exportación combina todas las consultas de búsqueda mediante el operador **or** . Si supera este límite, se devolverá un error. En este caso, tiene que exportar los resultados de menos búsquedas o simplificar las consultas de búsqueda de las búsquedas que desea exportar. 
     
 - Los resultados de la búsqueda que se exportan están organizados por el origen de contenido en el que se encontró el elemento. Esto significa que un origen de contenido en los resultados de la exportación puede tener elementos devueltos por diferentes búsquedas. Por ejemplo, si decide exportar los mensajes de correo electrónico de un archivo PST para cada buzón, el archivo PST podría tener resultados de varias búsquedas.
     
 - Si más de una de las búsquedas que se exportan devuelven el mismo documento o elemento de correo electrónico de la misma ubicación de contenido, solo se exportará una copia del elemento.
     
-- No puede editar una exportación para varias búsquedas después de crearla. Por ejemplo, no puede agregar ni quitar búsquedas de la exportación. Tendrá que crear un nuevo trabajo de exportación para cambiar los resultados de la búsqueda que se van a exportar. Después de crear un trabajo de exportación, solo puede descargar los resultados en un equipo, reiniciar la exportación o eliminar el trabajo de exportación.
+- No puede editar una exportación para varias búsquedas después de crearla. Por ejemplo, no puede agregar ni quitar búsquedas de la exportación. Tiene que crear un trabajo de exportación para cambiar los resultados de la búsqueda que se van a exportar. Después de crear un trabajo de exportación, solo puede descargar los resultados en un equipo, reiniciar la exportación o eliminar el trabajo de exportación.
     
 - Si reinicia la exportación, los cambios en las consultas de las búsquedas que componen el trabajo de exportación no afectarán a los resultados de la búsqueda que se recuperarán. Cuando se reinicia una exportación, se ejecutará de nuevo el mismo trabajo de consulta de búsqueda combinado que se ejecutó al crear el trabajo de exportación.
     
-- Si reinicia una exportación desde la página **exportaciones** en un caso de exhibición de documentos electrónicos, los resultados de la búsqueda que se transfieren al área de almacenamiento de Azure sobrescribirán los resultados anteriores; los resultados anteriores que haya transferido no estarán disponibles para su descarga. 
+- Si reinicia una exportación desde la página **exportaciones** en un caso de exhibición de documentos electrónicos, los resultados de la búsqueda que se transfieren al área de almacenamiento de Azure sobrescribirán los resultados anteriores. Los resultados anteriores que haya transferido no estarán disponibles para su descarga. 
     
 - No está disponible la preparación de los resultados de varias búsquedas para el análisis en la exhibición avanzada de documentos electrónicos. Solo puede preparar los resultados de una sola búsqueda para el análisis en la exhibición avanzada de documentos electrónicos.
 
@@ -448,7 +449,7 @@ Para ir a un caso en eDiscovery avanzado:
     
     ![Barra de progreso de eDiscorvery avanzada](media/4a84273d-765b-44b8-9006-c20e810ea393.png)
   
-    Estos contenedores representan los resultados de búsqueda que ha preparado para el análisis en la exhibición avanzada de documentos electrónicos en el paso 7. Tenga en cuenta que el nombre del contenedor tiene el mismo nombre que la búsqueda de contenido en el caso del centro de seguridad & cumplimiento. Los contenedores de la lista son los que ha preparado. Si un usuario diferente ha preparado los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los contenedores correspondientes no se incluirán en la lista.
+    Estos contenedores representan los resultados de búsqueda que ha preparado para el análisis en la exhibición avanzada de documentos electrónicos en el paso 7. El nombre del contenedor tiene el mismo nombre que la búsqueda de contenido en el caso del centro de seguridad & cumplimiento. Los contenedores de la lista son los que ha preparado. Si un usuario diferente ha preparado los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los contenedores correspondientes no se incluirán en la lista.
     
 4. Para cargar los datos de los resultados de búsqueda de un contenedor en el caso de la exhibición avanzada de documentos electrónicos, seleccione un contenedor y haga clic en **proceso**.
     
@@ -522,7 +523,7 @@ Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación 
   |**Descripción del límite**|**Límite**|
   |:-----|:-----|
   |Número máximo de casos para una organización  <br/> |Sin límite  <br/> |
-  |Número máximo de retenciones de casos para una organización  <br/> |10,000  <br/> |
+  |Número máximo de retenciones de casos para una organización  <br/> |10 000  <br/> |
   |Número máximo de buzones en una sola suspensión de casos  <br/> |1,000  <br/> |
   |Número máximo de sitios de SharePoint y OneDrive para la empresa en una sola suspensión de mayúsculas y minúsculas  <br/> |100  <br/> |
    
@@ -542,57 +543,59 @@ Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación 
     
     Estas son algunas otras cosas que debe tener en cuenta al buscar todo el contenido del caso:
     
-  - Si una ubicación de contenido forma parte de varias suspensiones en el mismo caso, las consultas de retención se combinan mediante un operador **or** cuando busca en esa ubicación de contenido con la opción de contenido All Case. De forma similar, si una ubicación de contenido forma parte de dos suspensiones diferentes, donde una se basa en la consulta y la otra es una retención infinita (donde todo el contenido se coloca en retención), se buscará todo el contenido debido a la suspensión infinita. 
+  - Si una ubicación de contenido forma parte de varias suspensiones en el mismo caso, las consultas de retención se combinan mediante un operador **or** cuando busca en esa ubicación de contenido con la opción de contenido All Case. De forma similar, si una ubicación de contenido forma parte de dos suspensiones diferentes, donde una se basa en la consulta y la otra es una retención infinita (donde todo el contenido se coloca en retención), todo el contenido se busca a causa de la suspensión infinita. 
     
   - Si una búsqueda de contenido es para un caso y se ha configurado para buscar en todo el contenido de caso y, a continuación, se cambia una retención (agregando o quitando una ubicación de contenido o cambiando la consulta de retención), la configuración de búsqueda se actualizará con dichos cambios. Sin embargo, tiene que volver a ejecutar la búsqueda una vez cambiada la retención para actualizar los resultados de la búsqueda.
     
-  - Si se colocan varios casos en una ubicación de contenido en un caso de exhibición de documentos electrónicos y selecciona buscar en todo el contenido de caso, el número máximo de palabras clave para esa consulta de búsqueda es de 500. Esto se debe a que la búsqueda de contenido combina todas las retenciones basadas en consultas mediante el operador **or** . Si hay más de 500 palabras clave en las consultas de retención combinada y la consulta de búsqueda de contenido, se buscará en todo el contenido del buzón, no solo en ese contenido que coincida con el de los casos basados en consultas. 
+  - Si se colocan varios casos en una ubicación de contenido en un caso de exhibición de documentos electrónicos y selecciona buscar en todo el contenido de caso, el número máximo de palabras clave para esa consulta de búsqueda es de 500. Esto se debe a que la búsqueda de contenido combina todas las retenciones basadas en consultas mediante el operador **or** . Si hay más de 500 palabras clave en las consultas de retención combinada y la consulta de búsqueda de contenido, se buscará en todo el contenido del buzón, no solo ese contenido que coincida con cualquier caso basado en consultas. 
     
   - Si una suspensión de casos tiene un estado de **activación**, puede seguir buscando en las ubicaciones de contenido de caso mientras se activa la suspensión.
     
   - Como se mencionó anteriormente, si una búsqueda se configura para buscar en todo el contenido del caso, no podrá incluir esa búsqueda si desea exportar los resultados de varias búsquedas. Si una búsqueda está configurada para realizar búsquedas en todo el contenido del caso, tendrá que exportar los resultados de esa búsqueda única.
     
-- **Si un buzón, un sitio de SharePoint o una cuenta de OneDrive que se encuentra en suspensión se mueven a otra región en un entorno multigeográfico, ¿se seguirá aplicando la retención?** En todos los casos, el contenido de un buzón de correo, un sitio o una cuenta de OneDrive se conservará de todos modos. Sin embargo, las estadísticas de retención ya no incluirán elementos de una ubicación de contenido que se haya movido a otra región. Para incluir estadísticas de retención para una ubicación de contenido que se ha movido, tendrá que editar la retención y actualizar la dirección URL (o la dirección SMTP de un buzón) para que la ubicación del contenido vuelva a estar incluida en las estadísticas de retención. 
+- **Si un buzón, un sitio de SharePoint o una cuenta de OneDrive que se encuentra en suspensión se mueven a otra región en un entorno multigeográfico, ¿se seguirá aplicando la retención?** En todos los casos, el contenido de un buzón de correo, un sitio o una cuenta de OneDrive se conservará de todos modos. Sin embargo, las estadísticas de retención ya no incluirán elementos de una ubicación de contenido que se haya movido a otra región. Para incluir estadísticas de retención para una ubicación de contenido que se ha movido, tiene que editar la retención y actualizar la dirección URL (o la dirección SMTP de un buzón) para que la ubicación del contenido vuelva a estar incluida en las estadísticas de retención. 
     
-- **¿Qué ocurre al realizar una retención en grupos de Office 365 y Microsoft Teams?** Microsoft Teams se basa en grupos de Office 365. Por lo tanto, colocarlos en espera en un caso de exhibición de documentos electrónicos es muy similar. Tenga en cuenta lo siguiente cuando coloque los grupos de Office 365 y Microsoft Teams en espera. 
+- **¿Qué ocurre al realizar una retención en grupos de Office 365 y Microsoft Teams?** Microsoft Teams se basa en grupos de Office 365. Por lo tanto, colocarlos en espera en un caso de exhibición de documentos electrónicos es similar. Tenga en cuenta lo siguiente cuando coloque los grupos de Office 365 y Microsoft Teams en espera. 
     
   - Para colocar contenido ubicado en Office 365 grupos y Microsoft Teams en espera, tiene que especificar el buzón de correo y el sitio de SharePoint que están asociados con un grupo o un equipo.
     
-  - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo de Office 365 o un equipo de Microsoft. Esta es una buena forma de obtener la dirección URL del sitio que está asociada con un grupo de Office 365 o un equipo de Microsoft. Por ejemplo, el siguiente comando muestra las propiedades seleccionadas de un grupo de Office 365 llamado equipo de liderazgo Senior: 
+  - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo de Office 365 o un equipo de Microsoft. Esta es una buena forma de obtener la dirección URL del sitio que está asociada con un grupo de Office 365 o un equipo de Microsoft. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team: 
     
-     ```
-    Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
+       ```text
+       Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
 
-     DisplayName            : Senior Leadership Team
-     Alias                  : seniorleadershipteam
-     PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
-     SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
+       DisplayName            : Senior Leadership Team
+       Alias                  : seniorleadershipteam
+       PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
+       SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
+       ```
+
+    > [!NOTE]
+    > Para ejecutar el cmdlet **Get-UnifiedGroup** debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista. 
+  
+  - Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará ningún grupo de Office 365 o equipo de Microsoft del que el usuario sea miembro. De forma similar, cuando se coloca un grupo de Office 365 o una retención en Microsoft Team, solo el buzón de grupo y el sitio de grupo se colocan en retención. Los buzones y los sitios de OneDrive para la empresa de los miembros del grupo no se colocan en suspensión a menos que los agregue explícitamente a la suspensión. Por lo tanto, si tiene que poner un grupo de Office 365 o un equipo de Microsoft en suspensión por un motivo legal, considere la posibilidad de agregar los buzones y los sitios de OneDrive para la empresa a los miembros de grupo y de equipo en la misma retención.
+    
+  - Para obtener una lista de los miembros de un grupo de Office 365 o de Microsoft Team, puede ver las propiedades de la página de **grupos principales \> ** en el centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online: 
+    
+    ```powershell
+    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
     ```
 
     > [!NOTE]
-    > Para ejecutar el cmdlet **Get-UnifiedGroup** , debe tener asignado el rol destinatarios con permiso de vista en Exchange online o ser miembro de un grupo de roles que tenga asignado el rol destinatarios con permiso de vista. 
+    > Para ejecutar el cmdlet **Get-UnifiedGroupLinks** debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista. 
   
-  - Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará ningún grupo de Office 365 o equipo de Microsoft del que el usuario sea miembro. De forma similar, cuando se coloca un grupo de Office 365 o una retención en Microsoft Team, solo el buzón de grupo y el sitio de grupo se colocan en retención; los buzones y los sitios de OneDrive para la empresa de los miembros del grupo no se colocan en suspensión a menos que los agregue explícitamente a la suspensión. Por lo tanto, si necesita tener un grupo de Office 365 o un equipo de Microsoft en espera por motivos legales, considere la posibilidad de agregar los buzones y los sitios de OneDrive para la empresa a los integrantes de grupo y de equipo en la misma retención.
-    
-  - Para obtener una lista de los miembros de un grupo de Office 365 o de Microsoft Team, puede ver las propiedades de la página de **grupos principales \> ** en el centro de administración de Microsoft 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell: 
-    
-      ```
-      Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
-      ```
-
-    > [!NOTE]
-    > Para ejecutar el cmdlet **Get-UnifiedGroupLinks** , debe tener asignado el rol destinatarios con permiso de vista en Exchange online o ser miembro de un grupo de roles que tenga asignado el rol destinatarios con permiso de vista. 
-  
-  - Las conversaciones que forman parte de un canal de Microsoft Teams se almacenan en el buzón de correo asociado con el equipo de Microsoft. De forma similar, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, tiene que poner el buzón de Microsoft Team y el sitio de SharePoint en espera para conservar conversaciones y archivos en un canal.
+  - Las conversaciones que forman parte de un canal de Microsoft Teams se almacenan en el buzón de correo asociado con el equipo de Microsoft. Asimismo, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, tiene que poner el buzón de Microsoft Team y el sitio de SharePoint en espera para conservar conversaciones y archivos en un canal.
     
     Como alternativa, las conversaciones que forman parte de la lista de chats en Microsoft Teams se almacenan en el buzón de correo del usuario que participa en el chat. Y los archivos que un usuario comparte en conversaciones de chat se almacenan en el sitio de OneDrive para la empresa del usuario que comparte el archivo. Por lo tanto, tiene que poner los buzones de usuario individuales y los sitios de OneDrive para la empresa en espera para conservar conversaciones y archivos de la lista de chats. Por eso es una buena idea retener una retención de los buzones de los miembros de un equipo de Microsoft, además de colocar el buzón de equipo (y el sitio) en retención.
     
     > [!IMPORTANT]
     > Los usuarios que participan en conversaciones que forman parte de la lista de chats en Microsoft Teams deben tener un buzón de correo de Exchange Online (basado en la nube) para conservar las conversaciones de chat cuando el buzón de correo se coloca en una suspensión de eDiscovery. Esto se debe a que las conversaciones que forman parte de la lista de chats se almacenan en buzones de correo basados en la nube de los participantes del chat. Si un participante de chat no tiene un buzón de correo de Exchange Online, no podrá conservar las conversaciones de chat. Por ejemplo, en una implementación híbrida de Exchange, es posible que los usuarios con un buzón local puedan participar en conversaciones que formen parte de la lista de chats de Microsoft Teams. Sin embargo, en este caso, el contenido de esta conversación no se puede conservar porque los usuarios no tienen buzones de correo basados en la nube. 
   
-  - Todos los canales de equipo o equipo de Microsoft contienen un wiki para la toma de notas y la colaboración. El contenido de la wiki se guarda automáticamente en un archivo con formato. mht. Este archivo se almacena en la biblioteca de documentos de datos wiki de Microsoft Teams en el sitio de SharePoint del equipo. Puede colocar el contenido en el sitio Wiki en espera colocando el sitio de SharePoint del equipo en retención.
+  - Todos los canales de equipo o equipo de Microsoft contienen un wiki para la toma de notas y la colaboración. El contenido de esta se guarda automáticamente en un archivo con un formato .mht. Este archivo se almacena en la biblioteca de documentos de Datos Wiki de Teams en el sitio de SharePoint del equipo. Puede colocar el contenido en el sitio Wiki en espera colocando el sitio de SharePoint del equipo en retención.
     
     > [!NOTE]
     > La capacidad de retener contenido de wiki para un canal de equipo o equipo de Microsoft (cuando se ubica el sitio de SharePoint del equipo en espera) se presentó el 22 de junio de 2017. Si un sitio de grupo está en suspensión, el contenido de la wiki se conservará a partir de esa fecha. Sin embargo, si un sitio de grupo está en suspensión y el contenido de la wiki se eliminó antes del 22 de junio de 2017, no se conservó el contenido de la wiki. 
   
-- **¿Cómo encuentro la dirección URL de los sitios de OneDrive para la empresa?** Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la empresa de su organización para que pueda agregarlas a una suspensión o una búsqueda asociada a un caso de exhibición de documentos electrónicos, vea [crear una lista de todas las ubicaciones de OneDrive en la organización](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Este script de este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive. Para ejecutar este script, tendrá que instalar y usar el shell de administración de SharePoint Online. Asegúrese de anexar la dirección URL para el dominio de mi sitio de la organización en cada sitio de OneDrive que desee buscar. Este es el dominio que contiene todos los OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para el sitio de OneDrive de `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`un usuario:.
+  - Al poner una retención en un equipo de Microsoft, la retención no se aplica a los mensajes de canal privado. Solo se conservan los mensajes en canales estándar. Pronto estará disponible la compatibilidad con la conservación de mensajes de canal privado.
+
+- **¿Cómo encuentro la dirección URL de los sitios de OneDrive para la empresa?** Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la empresa de su organización para que pueda agregarlas a una suspensión o una búsqueda asociada a un caso de exhibición de documentos electrónicos, vea [crear una lista de todas las ubicaciones de OneDrive en la organización](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). El script en este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive. Para ejecutar este script, tiene que instalar y usar el Shell de SharePoint Online Management. Asegúrese de anexar la dirección URL para el dominio MiSitio de su organización a cada sitio de OneDrive que quiera buscar. Este es el dominio que contiene todos los sitios OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para un sitio de usuario de OneDrive: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.

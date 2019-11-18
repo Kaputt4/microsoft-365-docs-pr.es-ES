@@ -1,5 +1,5 @@
 ---
-title: Metodología de puntuación de cumplimiento
+title: Cálculo de puntuación de cumplimiento
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -11,74 +11,75 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: eb6e79d840439acec007fef54bf6cb5ca5633f1e
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+description: Comprenda cómo la puntuación de cumplimiento de Microsoft calcula una puntuación personalizada en función de las acciones realizadas para enfrentarse a los riesgos y mejorar la postura de cumplimiento.
+ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
+ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417499"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38687630"
 ---
-# <a name="compliance-score-methodology-preview"></a>Metodología de puntuación de cumplimiento (versión preliminar)
+# <a name="microsoft-compliance-score-calculation-preview"></a>Cálculo de puntuación de cumplimiento de Microsoft (versión preliminar)
 
-> [!NOTE]
-> La puntuación de cumplimiento no indica una medida absoluta de cumplimiento organizativo con cualquier norma o reglamento específico. Expresa el alcance hasta el que se adoptaron controles que pueden reducir los riesgos en la privacidad individual y los datos personales. Ningún servicio puede garantizar que cumpla con una norma o reglamento y, además, la puntuación de cumplimiento no puede interpretarse como una garantía en ningún caso.
+> [!IMPORTANT]
+> La puntuación de cumplimiento no expresa una medida absoluta de cumplimiento organizacional con cualquier norma o reglamentación en particular. Expresa hasta qué punto ha adoptado los controles que pueden reducir los riesgos para los datos personales y la privacidad individual. Las recomendaciones de la puntuación de cumplimiento y el administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento. Este servicio se encuentra actualmente en versión preliminar y está sujeto a los términos y condiciones de los [términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910).
 
-El panel del administrador de cumplimiento muestra una puntuación total de cumplimiento para las evaluaciones en cada mosaico de evaluación. Esta es la puntuación de cumplimiento general para la evaluación y es la acumulación de puntos recibidos para cada control implementado y probado en la evaluación. Para una nueva evaluación, la puntuación de cumplimiento tiene un valor inicial para los controles administrados por Microsoft que han sido probados por terceros independientes. La puntuación de cumplimiento se calcula en función de las puntuaciones de acciones administradas por Microsoft y las puntuaciones de acciones administradas por el cliente. La puntuación de cumplimiento puede ayudar a priorizar con qué evaluaciones y controles centrarse para mejorar su postura de cumplimiento general.
+## <a name="overview"></a>Información general
 
-Los valores de puntuación de cumplimiento que se muestran para el control se aplican *en su totalidad* a la puntuación de cumplimiento total en una base Pass/Fail. Puede implementar el control y pasar la prueba de evaluación posterior o no. Los puntos asignados se agregan a la puntuación de cumplimiento cuando el control tiene:
+El panel de calificaciones de cumplimiento muestra una puntuación que mide su progreso en completar acciones de mejora dentro de los controles. Los puntos se acumulan cuando se realizan acciones.
+
+La puntuación se calcula en función de la finalización de acciones administradas por Microsoft y acciones administradas por el cliente. Cada acción tiene un impacto diferente en su puntuación, en función de los posibles riesgos, por lo que la puntuación puede ayudar a establecer prioridades respecto a la acción que se debe centrar para mejorar su postura de cumplimiento general.
+
+Los valores de puntuación de cumplimiento que se muestran para el control se aplican *en su totalidad* a la puntuación total sobre una base de superación o error. Puede implementar el control y pasar la prueba de evaluación posterior o no. Los puntos asignados se agregan a la puntuación de cumplimiento cuando el control tiene:
 
 - El **Estado de implementación** es igual a **implementación alternativa** o **implementada** y,
 - El resultado de la **prueba** es **correcto**.
 
-## <a name="compliance-score"></a>Puntuación de cumplimiento
-  
-En el administrador de cumplimiento, los resultados de línea base se mueven del nivel de control al nivel del elemento de acción. Los resultados se basan en el propósito (detective, preventivo o corrector) y la aplicación (discrecional u obligatorio) del elemento de acción.
+La suma de los puntos obtenidos al tomar acciones de mejora es la puntuación del control. La suma de las puntuaciones del control es la puntuación de la evaluación. La suma de los resultados de la evaluación es la puntuación general de cumplimiento
 
-Los elementos de acción se asignan a los controles y, cuando un control se asigna a varios elementos de acción, la suma de los resultados del elemento de acción es la puntuación del control. La suma de la puntuación de control para todos los controles de una evaluación determinada es la puntuación de la evaluación. La puntuación media de todas las evaluaciones en un grupo es la puntuación de cumplimiento de ese grupo.
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Puntuación inicial basada en la línea base de protección de datos 365 de Microsoft
   
-### <a name="mandatory-or-discretionary-controls"></a>Controles obligatorios o discrecionales
+La puntuación de cumplimiento le proporciona una calificación de preinstalación basada en la línea base de protección de datos de Microsoft 365, que es un conjunto de controles que incluye normas y estándares clave para la protección de datos y el gobierno de datos general. Esta línea base dibuja los elementos principalmente desde NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Normalization), así como de FedRAMP (federal Risk and Authorization Management Programa) y RGPD (regla general de protección de datos de la Unión Europea).
+
+## <a name="how-compliance-score-continuously-assesses-controls"></a>Cómo evalúan de forma continuada los controles la puntuación de cumplimiento
+
+La puntuación de cumplimiento examina automáticamente el entorno de Microsoft 365 y detecta la configuración del sistema, actualizando de forma continua y automática el estado de control técnico. Por ejemplo, si ha activado la autenticación multifactor (MFA) en el portal de Azure AD, la puntuación de cumplimiento detecta la configuración y refleja que en los detalles de la solución de control de acceso. Por el contrario, si no activó la MFA, los indicadores de puntuación de cumplimiento como una acción recomendada para realizarla.
+
+Puntuación de cumplimiento actualiza el estado del control cada 24 horas. Una vez que haya seguido una recomendación para implementar un control, verá que el estado del control se actualizó el día siguiente.
+
+Durante la vista previa pública, la evaluación continua está disponible para los controles de parte, pero no para todos.
   
- **Los controles obligatorios** son acciones que no se pueden omitir intencionada o accidentalmente. Un ejemplo de un control obligatorio común es una directiva de contraseñas administrada centralmente que establece los requisitos de longitud, complejidad y expiración de la contraseña. Los usuarios deben cumplir con estos requisitos para tener acceso al sistema.
+## <a name="control-types-and-points"></a>Tipos y puntos de control
+
+La puntuación de cumplimiento hace un seguimiento de dos tipos de controles: administrados por Microsoft y administrados por el cliente, cada uno con puntos que contribuyen a la puntuación general:
+
+1. Los **puntos administrados** por el cliente contribuyen con la puntuación de cumplimiento basada en los controles administrados por la organización.
+2. Los **puntos administrados por Microsoft** contribuyen a la puntuación de cumplimiento basada en los controles administrados por Microsoft como un proveedor de servicios en la nube.
+
+A los controles se les asigna un valor de puntuación en función de si son obligatorios o discrecionales, y si son preventivos, detectives o correctivos, tal como se describe a continuación.
+
+### <a name="mandatory-and-discretionary-controls"></a>Controles obligatorios y discrecionales
+
+ - **Los controles obligatorios** son acciones que no se pueden omitir intencionada o accidentalmente. Un ejemplo es una directiva de contraseñas administrada centralmente que establece los requisitos de longitud, complejidad y expiración de la contraseña. Los usuarios deben cumplir con estos requisitos para tener acceso al sistema.
   
- Los **controles discrecionales** dependen de los usuarios para comprender la Directiva y actuar en consecuencia. Por ejemplo, una directiva que requiere que los usuarios bloqueen su equipo cuando lo dejan es un control discrecional porque depende del usuario.
+ - Los **controles discrecionales** dependen de los usuarios para comprender la Directiva y actuar en consecuencia. Por ejemplo, una directiva que requiere que los usuarios bloqueen su equipo cuando lo dejan es un control discrecional porque depende del usuario.
   
-### <a name="preventative-detective-or-corrective-controls"></a>Controles preventivos, de detectives o correctivos
+### <a name="preventative-detective-and-corrective-controls"></a>Controles preventivos, detectives y correctivos
   
- **Los controles preventivos** son acciones que evitan riesgos específicos. Por ejemplo, la protección de la información en reposo mediante el cifrado es un control preventivo contra ataques, infracciones. La separación de tareas es un control preventivo para administrar los conflictos de intereses y protegerse contra el fraude.
+ - **Los controles preventivos** solucionan riesgos específicos. Por ejemplo, la protección de la información en reposo mediante el cifrado es un control preventivo contra ataques e infracciones. La separación de tareas es un control preventivo para administrar conflictos de intereses y protegerse contra el fraude.
   
- **Los controles de detectives** son acciones que supervisan activamente los sistemas para identificar las condiciones o comportamientos anómalos que representan el riesgo o que se pueden usar para detectar intrusiones o determinar si se ha producido una infracción. Auditoría de acceso al sistema auditoría de acciones administrativas con privilegios son tipos de controles de supervisión de detectives. Las auditorías de cumplimiento normativo son un tipo de control de detectives que se usa para encontrar problemas del proceso.
+ - **Los controles de detectives** supervisan activamente los sistemas para identificar las condiciones o comportamientos anómalos que representan el riesgo o que se pueden usar para detectar intrusiones o determinar si se produce una infracción. Auditoría de acceso al sistema auditoría de acciones administrativas con privilegios son tipos de controles de supervisión de detectives. Las auditorías de cumplimiento normativo son un tipo de control de detectives que se usa para encontrar problemas del proceso.
   
-**Los controles correctivos** son controles que intentan mantener al mínimo los efectos negativos de un incidente de seguridad, emprenden acciones correctivas para reducir el efecto inmediato y revierten el daño, si es posible. La respuesta de la incidencia de privacidad es un control correctivo para limitar los daños y restaurar los sistemas a un estado operativo después de una infracción.
+- **Los controles correctivos** intentan mantener al mínimo los efectos adversos de un incidente de seguridad, emprender acciones correctivas para reducir el efecto inmediato e invertir el daño, si es posible. La respuesta de la incidencia de privacidad es un control correctivo para limitar los daños y restaurar los sistemas a un estado operativo después de una infracción.
   
-Cada control tiene un valor asignado en el administrador de cumplimiento según el riesgo que representa:
+Cada control tiene un valor asignado en la puntuación de cumplimiento según el riesgo que representa:
 
 |**Tipo**|**Puntuación asignada**|
 |:-----|:-----|
 | Obligatorio de prevención | ,27 |
-| Discrecional preventivo | 9  |
-| Detective obligatorio | 3  |
-| Discrecionales de detectives | 1  |
-| Obligatorio de corrección | 3  |
-| Discrecionales correctivas | 1  |
+| Discrecional preventivo | 9 |
+| Detective obligatorio | 3 |
+| Discrecionales de detectives | 1 |
+| Obligatorio de corrección | 3 |
+| Discrecionales correctivas | 1 |
   
-## <a name="action-item-workflow"></a>Flujo de trabajo de elementos de acción
-
-Este es el flujo de trabajo básico para un elemento de acción típico:
-  
-1. El cumplimiento, el riesgo, la privacidad o el responsable de la protección de datos de una organización asigna una tarea a un usuario de la organización para implementar un control. Esa persona podría ser:
-
-    - Un propietario de la Directiva empresarial.
-    - Un implementador de ti.
-    - Otra persona de la organización con la responsabilidad de realizar la tarea.
-
-2. Ese individuo realiza las tareas necesarias para implementar el control, carga las pruebas de implementación en el administrador de cumplimiento y marca el control ligado al elemento de acción como implementado. Una vez completadas estas tareas, asignan el elemento de acción a un asesor de validación.
-
-    Los evaluadores pueden:
-
-    - Evaluadores internos que realizan la validación de controles dentro de una organización.
-    - Evaluadores externos que examinan, comprueban y certifican el cumplimiento, como las organizaciones independientes de terceros que auditan los servicios en la nube de Microsoft.
-
-3. El asesor valida el control y examina la evidencia y marca el control según se ha evaluado y los resultados de la evaluación.
-
-Una vez que se evalúan todos los controles asociados con una evaluación, se completa la evaluación.

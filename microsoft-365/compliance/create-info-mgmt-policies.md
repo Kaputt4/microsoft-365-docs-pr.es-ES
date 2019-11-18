@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: Las directivas de administración de la información permiten a su organización controlar el tiempo que se conservará el contenido, auditar lo que hacen los usuarios con el contenido y agregar códigos de barras o etiquetas a los documentos. Una Directiva puede ayudar a garantizar el cumplimiento de las regulaciones legales y gubernamentales o los procesos de negocio internos. Como administrador, puede configurar una directiva para controlar cómo realizar un seguimiento de los documentos y durante cuánto tiempo se conservan los documentos.
-ms.openlocfilehash: 85113393f534a6b17f75962d02518a5a8c65dd8b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d8572f570db7b0223bc2f08cd78875224897e02c
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091887"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38687796"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 
@@ -90,7 +91,7 @@ Agregar una directiva de administración de información a un tipo de contenido 
     
 ||||||**1.**|* * Elija * * Agregar una etapa de retención para registros... * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Realice una de las acciones siguientes:  <br/>  Para establecer la fecha de expiración en función de una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, selecciona la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción ( por ejemplo, el número de días, meses o años cuando desea que el elemento expire.  <br/>  Para usar una fórmula de retención personalizada para determinar la expiración, elija **establecer mediante una fórmula de retención personalizada instalada en este servidor**.  <br/> > [!NOTE]> esta opción solo está disponible si el administrador ha configurado una fórmula personalizada.           |
+||||||2.  <br/> | Seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Realice una de las acciones siguientes:  <br/>  Para establecer la fecha de caducidad basándose en una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, seleccione la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción (por ejemplo, el número de días, meses o años) cuando desee que el elemento expire.  <br/>  Para usar una fórmula de retención personalizada para determinar la expiración, elija **establecer mediante una fórmula de retención personalizada instalada en este servidor**.  <br/> > [!NOTE]> esta opción solo está disponible si el administrador ha configurado una fórmula personalizada.           |
 ||||||3.  <br/> |La opción **iniciar un flujo de trabajo** solo está disponible si está definiendo una directiva para una lista, biblioteca o tipo de contenido que ya tiene asociado un flujo de trabajo. A continuación, se le ofrecerá una selección de flujos de trabajo para elegir.  <br/> |
 ||||||4.  <br/> |En la sección **periodicidad** , seleccione **repetir la acción de esta fase...** y especifique la frecuencia con la que desea que se repita la acción.  <br/> > [!NOTE]> esta opción solo está disponible si la acción seleccionada puede repetirse. Por ejemplo, no puede establecer la periodicidad para que la acción **elimine de forma permanente**.           |
 ||||||5.  <br/> |Elija **Aceptar**.  <br/> |
@@ -101,8 +102,8 @@ Agregar una directiva de administración de información a un tipo de contenido 
     
 ||||||1. * * * *|En la página Editar Directiva, * * **en** **auditar** **\>** **Habilitar auditoría** * * y, a continuación, active las casillas de verificación situadas junto a los eventos para los que desea mantener una pista de auditoría. * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||**2.** <br/> |**Para solicitar a los usuarios que inserten estos códigos de barras en los documentos,** **elige** **Pedir a los usuarios que inserten un código de barras antes de guardar o imprimir** **.** <br/> |
-||||||**3.** <br/> |**Elige** **OK** * * para aplicar la característica de auditoría a la Directiva. ** <br/> |
+||||||**2.** <br/> |**Para solicitar a los usuarios que inserten estos códigos de barras en documentos,** **Elija** **solicitar a los usuarios que inserten un código de barras antes de guardar o imprimir** **.** <br/> |
+||||||**3.** <br/> |**Elija** **Aceptar** * * para aplicar la característica de auditoría a la Directiva. ** <br/> |
 |||||||La característica de directiva de auditoría permite a las organizaciones crear y analizar registros de auditoría para documentos y enumerar elementos como listas de tareas, listas de problemas, grupos de discusión y calendarios. Esta característica de directiva proporciona un registro de auditoría que graba eventos, por ejemplo cuando se ve, se modifica o se elimina contenido.  <br/> |
 |||||||Cuando la auditoría está habilitada como parte de una directiva de administración de la información, los administradores pueden ver los datos de auditoría en los informes de uso de directivas que se basan en Microsoft Excel y que resumen el uso actual. Los administradores pueden usar estos informes para determinar cómo se usa la información en la organización. Estos informes también pueden ayudar a las organizaciones a comprobar y documentar el cumplimiento de su normativa o a investigar posibles problemas.  <br/> |
 |||||||El registro de auditoría graba la siguiente información: nombre del evento, fecha y hora del evento y nombre de sistema del usuario que realizó la acción.  <br/> |
@@ -172,7 +173,7 @@ Si **tipo de contenido** aparece como origen, haga clic en **cambiar origen**y, 
     
 7. En el cuadro de diálogo Propiedades de fase, seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Realice una de las acciones siguientes:
     
-  - Para establecer la fecha de expiración en función de una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, selecciona la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción ( por ejemplo, el número de días, meses o años cuando desea que el elemento expire. 
+  - Para establecer la fecha de caducidad basándose en una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, seleccione la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción (por ejemplo, el número de días, meses o años) cuando desee que el elemento expire. 
     
   - Para usar una fórmula de retención personalizada para determinar la expiración, elija **establecer mediante una fórmula de retención personalizada instalada en este servidor**. 
     

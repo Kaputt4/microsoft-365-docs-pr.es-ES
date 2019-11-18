@@ -10,17 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: 1e87926910ad7dd356696368ad6759bfacfe37c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 13f45ce55f23d91a81068031691436383ec87ba3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092794"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687892"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -106,10 +107,10 @@ Una vez que haya creado los grupos de roles para cada agencia, el siguiente paso
   
 Esta es la sintaxis que se usa para crear un filtro de permisos de búsqueda usado para los límites de cumplimiento.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
-  
+
 Esta es una descripción de cada parámetro del comando:
   
 -  `FilterName`: Especifica el nombre del filtro. Use un nombre que describa o identifique la agencia en la que se usa el filtro. 
@@ -135,13 +136,13 @@ A continuación, se muestran ejemplos de los dos filtros de permisos de búsqued
   
  **Fourth Coffee**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
 ```
-   
+
  **Bodega Coho**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
@@ -192,7 +193,7 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |NAM  <br/> |Norteamérica (centros de administración de centros de recursos en los Estados Unidos)  <br/> |
     |EUR  <br/> |Europa  <br/> |
     |APC  <br/> |Asia Pacífico  <br/> |
-    |CAN <br/> |Canadá|
+    |CAN <br/> |Canada|
     |||
     
 - **Búsquedas de contenido de ruta:** Puede enrutar las búsquedas de contenido de los sitios de SharePoint y las cuentas de OneDrive a un centro de datos satélite. Esto significa que puede especificar la ubicación del centro de recursos donde se ejecutarán las búsquedas.
@@ -220,30 +221,30 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
 
 A continuación, se muestran ejemplos de cómo usar el parámetro **Region** al crear filtros de permisos de búsqueda para límites de cumplimiento. Esto supone que la subsidiaria de Fourth Coffee se encuentra en Norteamérica y que Coho Winery está en Europa. 
   
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
-   
+
 Tenga en cuenta lo siguiente cuando busque y Exporte contenido en entornos multigeográfico.
   
-- El parámetro **Region** no controla las búsquedas de buzones de Exchange. Se buscará en todos los centros de datos cuando se busque en buzones. Para limitar el ámbito en el que se buscarán los buzones de Exchange, use el parámetro **Filters** al crear o cambiar un filtro de permisos de búsqueda. 
+- El parámetro **Region** no controla las búsquedas de los buzones de Exchange. Se buscará en todos los centros de datos cuando se busque en buzones. Para limitar el ámbito en el que se buscarán los buzones de Exchange, use el parámetro **Filters** al crear o cambiar un filtro de permisos de búsqueda. 
     
 - Si es necesario que un administrador de eDiscovery busque en varias regiones de SharePoint, debe crear una cuenta de usuario diferente para que el administrador de eDiscovery use en el filtro de permisos de búsqueda para especificar la región donde los sitios de SharePoint o OneDrive se encuentran las cuentas. Para obtener más información acerca de cómo configurar esto, consulte la sección "búsqueda de contenido en un entorno multigeográfico de SharePoint" en la [búsqueda de contenido en Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
 - Al buscar contenido en SharePoint y OneDrive, el parámetro **Region** dirige las búsquedas a la ubicación principal o satélite donde el administrador de eDiscovery realizará las investigaciones de eDiscovery. Si un administrador de exhibición de documentos electrónicos busca sitios de SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelven resultados de búsqueda. 
     
-- Al exportar los resultados de la búsqueda, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype empresarial, SharePoint, OneDrive y otros servicios de Office 365 que puede buscar mediante la herramienta de búsqueda de contenido) se carga en la ubicación de almacenamiento de Azure en el Centro de recursos especificado por el parámetro **Region** . Esto permite a las organizaciones mantener el cumplimiento de las normas al no permitir que el contenido se exporte entre límites controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en la región predeterminada de la organización. 
+- Cuando se exportan los resultados de la búsqueda, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype empresarial, SharePoint, OneDrive y otros servicios de Office 365 que se pueden buscar mediante la herramienta de búsqueda de contenido) se carga en la ubicación de almacenamiento de Azure en el centro de datos especificado por el parámetro **Region** . Esto permite a las organizaciones mantener el cumplimiento de las normas al no permitir que el contenido se exporte entre límites controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en la región predeterminada de la organización. 
     
 - Puede editar un filtro de permisos de búsqueda existente para agregar o cambiar la región ejecutando el siguiente comando:
 
-    ```
+    ```powershell
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
- 
+
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
  **Quién puede crear y administrar filtros de permisos de búsqueda (con los cmdlets New-ComplianceSecurityFilter y set-ComplianceSecurityFilter)?**

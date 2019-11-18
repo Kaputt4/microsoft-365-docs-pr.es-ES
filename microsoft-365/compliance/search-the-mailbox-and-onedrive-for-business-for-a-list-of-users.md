@@ -7,17 +7,19 @@ ms.date: 1/3/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Use la búsqueda de contenido y el script de este artículo para buscar en los sitios buzones y OneDrive para la empresa un grupo de usuarios.
-ms.openlocfilehash: 9c8de90f8d2faee73ba269466f90478bc72b708e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02b89646fdb4175d30dce8840ac069f62995cbbc
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092947"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38687831"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa
 
@@ -45,7 +47,7 @@ El script del paso 3 creará una búsqueda de contenido para buscar en los buzon
   
 Este es un comando de [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) que puede runt para obtener una lista de direcciones de correo electrónico para todos los usuarios de la organización y guardarla en un `Users.txt`archivo de texto denominado. 
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
@@ -70,7 +72,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
     
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `SearchEXOOD4B.ps1`. Guarde el archivo en la misma carpeta en la que guardó la lista de usuarios en el paso 2.
     
-  ```
+  ```powershell
   # This PowerShell script will prompt you for the following information:
   #    * Your user credentials 
   #    * The name of your organization's MySite domain                                              
@@ -106,7 +108,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
       }
   }
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-  # To install, go to http://go.microsoft.com/fwlink/p/?LinkId=255251
+  # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
   {
       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
@@ -114,7 +116,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
       if (!$SharePointClient)
       {
-          Write-Error "SharePoint Online Management Shell isn't installed, please install from: http://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
+          Write-Error "SharePoint Online Management Shell isn't installed, please install from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
           return;
       }
   }
@@ -164,7 +166,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
     
 3. Inicie el script; por ejemplo:
     
-    ```
+    ```powershell
     .\SearchEXOOD4B.ps1
     ```
 
@@ -180,4 +182,4 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
     
     - La consulta de búsqueda (déjelo en blanco para devolver todos los elementos de las ubicaciones de contenido).
     
-    El script obtiene las direcciones URL de cada sitio de OneDrive para la empresa y, a continuación, crea e inicia la búsqueda. Puede ejecutar el cmdlet **Get-ComplianceSearch** en el & PowerShell del centro de cumplimiento de seguridad para mostrar las estadísticas y los resultados de la búsqueda, o puede ir a la página de **búsqueda de contenido** en el centro de seguridad & cumplimiento para ver la información sobre la búsqueda. 
+    El script obtiene las direcciones URL de cada sitio de OneDrive para la empresa y, a continuación, crea e inicia la búsqueda. Puede ejecutar el cmdlet **Get-ComplianceSearch** en el & PowerShell del centro de cumplimiento de seguridad para mostrar las estadísticas y los resultados de la búsqueda, o puede ir a la página de **búsqueda de contenido** en el centro de seguridad & cumplimiento para ver información sobre la búsqueda. 
