@@ -7,18 +7,18 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
+ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627564"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38697163"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Prepare a los usuarios para que usen los dispositivos
 
 Una vez que un dispositivo de escritorio administrado de Microsoft se encuentra en manos del usuario final, comenzar con él es rápido y fácil. Los dispositivos vienen preconfigurados con la versión actual de Windows y las configuraciones y aplicaciones se instalan desde la nube mientras el usuario completa la configuración. 
  
-Para que esto sea aún más fácil, ofrecemos una guía que dirige a los usuarios a través de la configuración inicial y proporciona recursos de ayuda para la configuración y para usarlos más adelante, si es necesario. Puede personalizar esta guía para incluir determinados detalles específicos de su organización. A continuación, se distribuye la guía directamente a los usuarios junto con el dispositivo. Hay dos versiones, una para las organizaciones que usan el sistema de soporte de Microsoft (la aplicación Get Help), una para quienes proporcionan su propio soporte interno para el usuario final.
+Para que esto sea aún más fácil, ofrecemos una guía que dirige a los usuarios a través de la configuración inicial y proporciona recursos de ayuda para la configuración y para usarlos más adelante, si es necesario. Puede personalizar esta guía para incluir determinados detalles específicos de su organización. A continuación, se distribuye la guía directamente a los usuarios junto con el dispositivo. Hay dos versiones, una para las organizaciones que usan el sistema de soporte de Microsoft (la aplicación Get Help), una para quienes proporcionan compatibilidad alternativa para sus usuarios.
 
 ## <a name="to-prepare-the-guide"></a>Para preparar la guía
 

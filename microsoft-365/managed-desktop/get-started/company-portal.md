@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 121771dd2474d58e7bd6a0d56218563c8785d4bf
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 4e83983ae7b8b936b639382f025f1f88eeca0762
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38011961"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699680"
 ---
 # <a name="install-intune-company-portal-on-on-devices"></a>Instalar el portal de empresa de Intune en los dispositivos
 
@@ -42,15 +42,15 @@ Para obtener más información sobre el envío de solicitudes de soporte con Mic
 ## <a name="step-3---communicate-change-to-your-users"></a>Paso 3: comunicar cambios a los usuarios
 Como administrador de TI de su organización, es importante que los usuarios sepan cómo usar portal de empresa en su organización. Microsoft Managed Desktop recomienda:
 - Pasos para instalar aplicaciones desde el portal de empresa. Para obtener más información, vea [instalar y compartir aplicaciones en el dispositivo](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows).
-- Cómo enviar solicitudes a los administradores de TI para las aplicaciones que no están disponibles actualmente.
+- Cómo enviar solicitudes a los administradores de TI para las aplicaciones que no están disponibles actualmente. Para obtener más información, vea [solicitar una aplicación para el trabajo o la escuela](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school).  
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar a trabajar con el escritorio administrado de Microsoft
 
-1. [Agregar y comprobar contactos de administrador en el portal de administración](add-admin-contacts.md)
+1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
 2. [Ajustar el acceso condicional](conditional-access.md)
 3. [Asignar licencias](assign-licenses.md)
 4. Implementación del portal de empresa de Intune (este tema)
-5. [Habilitación del itinerancia del estado de la empresa](enterprise-state-roaming.md)
+5. [Habilitar Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Instalar dispositivos](set-up-devices.md)
 7. [Prepare a los usuarios para que usen los dispositivos](get-started-devices.md)
 8. [Implementar aplicaciones](deploy-apps.md)
