@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Usar el Centro de seguridad y cumplimiento en Office 365 para permitir que los buzones de archivo sean compatibles con los requisitos de retención de mensajes, eDiscovery y conservación de mensajes de su organización.
-ms.openlocfilehash: 5cf399b311b6c342aff2d84477edaa945f8e0cd4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea6448c4d47eb89d16266644e5a4ab06f774e0da
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092505"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38708240"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar buzones de archivo en el Centro de seguridad y cumplimiento
   
@@ -101,27 +101,27 @@ Una vez que esté conectado a Exchange Online, puede ejecutar los comandos de la
 
 Ejecute el comando siguiente para habilitar el buzón de archivo para un único usuario.
     
-  ```
+  ```powershell
   Enable-Mailbox -Identity <username> -Archive
   ```
 
 Ejecute el comando siguiente para habilitar el buzón de archivo para todos los usuarios de su organización (cuyo buzón de archivo no está habilitado en este momento).
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
   ```
-  
+
 ### <a name="disable-archive-mailboxes"></a>Deshabilitar los buzones de archivo
 
 Ejecute el siguiente comando para deshabilitar el buzón de archivo de un único usuario.
     
-  ```
+  ```powershell
   Disable-Mailbox -Identity <username> -Archive
   ```
 
 Ejecute el comando siguiente para deshabilitar el buzón de archivo para todos los usuarios de su organización (cuyo buzón de archivo está habilitado en este momento).
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
   ```
 

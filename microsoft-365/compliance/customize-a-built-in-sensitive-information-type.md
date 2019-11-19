@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al buscar información confidencial en el contenido, es necesario describir esa información en lo que se denomina una regla. Prevención de pérdida de datos (DLP) incluye reglas para los tipos de información confidencial más comunes que se pueden usar inmediatamente. Para usar estas reglas, tendrá que incluirlas en una directiva. Quizás quiera ajustar estas reglas integradas para satisfacer las necesidades específicas de su organización; para hacerlo, puede crear un tipo de información confidencial personalizado. En este tema, se muestra cómo personalizar el archivo XML que contiene la colección de reglas existente para detectar una mayor variedad de posible información de tarjetas de crédito.
-ms.openlocfilehash: 99a65e7862eb1657c73c77b526e3b82b7595d248
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5fbc0e9ffba0237462062e19edb9ca0458675b04
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091831"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708224"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar un tipo de información confidencial integrado
 
@@ -85,7 +85,7 @@ Todas las definiciones de regla XML se basan en la siguiente plantilla general. 
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id=". . ." /> 
@@ -114,7 +114,7 @@ Ahora tiene algo parecido al siguiente XML. Como los paquetes de reglas y las re
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id="8d34806e-cd65-4178-ba0e-5d7d712e5b66" />

@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique directivas de etiquetas de retención y de prevención de pérdida de datos (DLP) a sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: 77da4ec44e31fae8db2c37ebc39233f76c5e4dd3
-ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
+ms.openlocfilehash: 5c7d267b37f024d4defa34b4dfbeff3ba9255ac5
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37317612"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38710138"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteger archivos de SharePoint Online con DLP y etiquetas de retención
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: aae46b8a6fa18c9af32005bca87ad80638b5b6c0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369451"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708220"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
 
@@ -44,7 +44,7 @@ La configuración de cifrado está disponible cuando se crea una etiqueta de con
 
 ## <a name="how-encryption-works"></a>Cómo funciona la encriptación
 
-La encriptación usa Azure Rights Management (Azure RMS). Azure RMS usa directivas de identidad, cifrado y autorización. Para obtener más información, consulte [¿Qué es Azure Rights Management?](https://docs.microsoft.com/es-ES/azure/information-protection/what-is-azure-rms)
+La encriptación usa Azure Rights Management (Azure RMS). Azure RMS usa directivas de identidad, cifrado y autorización. Para obtener más información, consulte [¿Qué es Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)
 
 ## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>Cómo activar la encriptación para una etiqueta de confidencialidad
 
@@ -77,7 +77,7 @@ Si no se ha establecido ninguna fecha de expiración, el período predeterminado
 
 Además de volver a hacer la autenticación, se vuelven a evaluar la pertenencia a grupos de usuario y la directiva. Esto significa que los usuarios podrían experimentar resultados diferentes de acceso para el mismo documento si hay cambios en la directiva o pertenencia a grupos con respecto al último momento en que se accedió acceso al contenido.
 
-Para obtener información sobre cómo cambiar la configuración de 30 días predeterminada, vea [Licencia de uso de administración de derechos](https://docs.microsoft.com/es-ES/azure/information-protection/configure-usage-rights#rights-management-use-license).
+Para obtener información sobre cómo cambiar la configuración de 30 días predeterminada, vea [Licencia de uso de administración de derechos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>Asignar permisos a usuarios o grupos específicos
 
@@ -106,10 +106,10 @@ Se recomienda usar grupos en lugar de usuarios. Esta estrategia mantiene la conf
 
 Al elegir qué permisos permitir para los usuarios o grupos, puede seleccionar entre:
 
-- Un [nivel de permiso predefinido](https://docs.microsoft.com/es-ES/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) con un grupo de derechos preestablecido, como coautor o revisor.
+- Un [nivel de permiso predefinido](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) con un grupo de derechos preestablecido, como coautor o revisor.
 - Un grupo personalizado de derechos, donde elije los permisos que quiere.
 
-Para obtener más información sobre cada permiso específico, consulte [Derechos y descripciones de uso](https://docs.microsoft.com/es-ES/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+Para obtener más información sobre cada permiso específico, consulte [Derechos y descripciones de uso](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
 ![Opciones para elegir permisos predefinidos o personalizados](media/Sensitivity-Choose-permissions-settings.png)
 
@@ -129,7 +129,7 @@ El emisor de administración de derechos siempre obtiene permisos de control tot
 - El emisor de administración de derechos siempre puede acceder al documento o correo electrónico sin conexión.
 - El emisor de administración de derechos puede seguir abriendo un documento después de que se revoque.
 
-Para obtener más información, vea [Emisor de administración de derechos y propietario de administración de derechos](https://docs.microsoft.com/es-ES/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+Para obtener más información, vea [Emisor de administración de derechos y propietario de administración de derechos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
 ## <a name="let-users-assign-permissions"></a>Permitir a los usuarios asignar permisos
 
@@ -197,7 +197,7 @@ En esta tabla se describe lo que ocurre con el cifrado existente al aplicar una 
 
 Tenga en cuenta que cuando se aplica el cifrado a los archivos almacenados en OneDrive y SharePoint, el servicio no puede procesar el contenido de estos archivos. Esto significa que algunas características como la coautoría, eDiscovery, la búsqueda, Delve y otras características colaborativas no funcionan. Además, las directivas de prevención de pérdida de datos (DLP) solo pueden trabajar con los metadatos (incluidas las etiquetas de Office 365), pero no con el contenido de archivos encriptados (como números de tarjeta de crédito incluidos en los archivos).
 
-Esto se aplica solo al contenido almacenado en OneDrive y SharePoint. En Exchange Online, las reglas de flujo de correo (también denominadas reglas de transporte) usan la [super cuenta de usuario](https://docs.microsoft.com/es-ES/azure/information-protection/configure-super-users) para poder examinar el contenido cifrado y aplicar directivas DLP.
+Esto se aplica solo al contenido almacenado en OneDrive y SharePoint. En Exchange Online, las reglas de flujo de correo (también denominadas reglas de transporte) usan la [super cuenta de usuario](https://docs.microsoft.com/azure/information-protection/configure-super-users) para poder examinar el contenido cifrado y aplicar directivas DLP.
 
 ## <a name="important-prerequisites"></a>Requisitos previos importantes
 
@@ -205,7 +205,7 @@ Para poder usar el cifrado, es posible que deba realizar estas tareas.
 
 ### <a name="activating-azure-rights-management"></a>Activar Azure Rights Management
 
-Para usar el cifrado en etiquetas de confidencialidad, el servicio de Azure Rights Management debe activarse en el espacio empresarial. En los espacios empresariales más recientes, el servicio está activado de forma predeterminada, pero es posible que deba activar manualmente el servicio. Para obtener más información, vea [Activar Azure Rights Management](https://docs.microsoft.com/es-ES/azure/information-protection/activate-service).
+Para usar el cifrado en etiquetas de confidencialidad, el servicio de Azure Rights Management debe activarse en el espacio empresarial. En los espacios empresariales más recientes, el servicio está activado de forma predeterminada, pero es posible que deba activar manualmente el servicio. Para obtener más información, vea [Activar Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service).
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>Configurar Exchange para Azure Information Protection
 
@@ -215,5 +215,5 @@ Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico protegid
 
 Para asegurarse de que Exchange puede admitir estos escenarios adicionales, vea lo siguiente:
 
-- Para Exchange Online, consulte las instrucciones de [Exchange Online: configuración de IRM](https://docs.microsoft.com/es-ES/azure/information-protection/configure-office365#exchange-online-irm-configuration).
-- Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](https://docs.microsoft.com/es-ES/azure/information-protection/deploy-rms-connector). 
+- Para Exchange Online, consulte las instrucciones de [Exchange Online: configuración de IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchange-online-irm-configuration).
+- Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 

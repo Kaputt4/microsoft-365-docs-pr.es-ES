@@ -7,18 +7,20 @@ ms.date: 1/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: El Centro de seguridad y cumplimiento de Office 365 ofrece recomendaciones para el gobierno de datos según la configuración actual de su organización y le permite realizar configuraciones con un par de clics. Algunas de estas recomendaciones detectan el contenido específico de su organización y, luego, proporcionan pasos recomendados para administrarlo. Por ejemplo, una recomendación puede detectar los elementos que contienen contenido crítico para la empresa (como privilegios abogado-cliente o información NDA) y hacer que pueda aplicar automáticamente una etiqueta de retención a dichos elementos para asegurarse de que están clasificados y se conservan según sea necesario. En este tema se enumeran las recomendaciones de gobierno de datos que puede ver y se describe el contenido que se detecta para desencadenar cada uno.
-ms.openlocfilehash: 10752afb97fd0ae2993d88b4e3af9159d61de708
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: e860a41b616be2265904775a63454aba1a6040c1
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342943"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38708232"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>Cómo se identifica el contenido para las recomendaciones de gobierno de datos
 
@@ -28,7 +30,7 @@ En este tema se enumeran las recomendaciones de gobierno de datos que es posible
 
 ## <a name="clean-up-voicemail"></a>Limpiar el correo de voz
 
-Esta recomendación aparece cuando se detectan mensajes de correo identificados como tipo de mensaje "correo de voz" en los buzones de usuarios. Obtenga más información sobre las [propiedades de mensajes en Exchange](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange).
+Esta recomendación aparece cuando se detectan mensajes de correo identificados como tipo de mensaje "correo de voz" en los buzones de usuarios. Obtenga más información sobre las [propiedades de mensajes en Exchange](https://docs.microsoft.com/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange).
 
 ## <a name="label-attorney-client-privilege-content"></a>Etiquetar contenido de privilegios abogado-cliente  
 

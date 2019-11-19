@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Resumen: Cree y configure sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: 2ddf3de7180d384c387bdc335afda6214508e3c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ff892d57d4fe6e707e4cbcb4f1562a3594fe70b
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070727"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38708238"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implementar sitios de SharePoint Online con tres niveles de protección
 
@@ -46,7 +47,7 @@ Para crear un sitio de grupo de SharePoint Online de línea base con acceso y pe
     
 4. En la página **Crear un sitio**, haga clic en **Sitio de grupo**.
     
-5. En **Nombre del sitio**, escriba un nombre para el sitio de grupo público. 
+5. En **Nombre del sitio**, escriba un nombre para el sitio de grupo público.
     
 6. En **Team site description** (Descripción del sitio de grupo), escriba una descripción de la finalidad del sitio.
     
@@ -70,7 +71,7 @@ Para crear un sitio de grupo de SharePoint Online de línea base con acceso y pe
     
 4. En la página **Crear un sitio**, haga clic en **Sitio de grupo**.
     
-5. En **Nombre del sitio**, escriba un nombre para el sitio de grupo privado. 
+5. En **Nombre del sitio**, escriba un nombre para el sitio de grupo privado.
     
 6. En **Team site description** (Descripción del sitio de grupo), escriba una descripción de la finalidad del sitio.
     

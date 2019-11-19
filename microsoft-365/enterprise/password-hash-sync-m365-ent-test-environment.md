@@ -16,14 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y muestre la sincronización de hash de contraseñas e inicie sesión en su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: dcf5e4301d6c9c91068abc1d12db8e6de1083376
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 019a1f80712c426d678603b467bf19815d25f391
+ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673386"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38694117"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
+
+*Esta guía del laboratorio de pruebas puede usarse tanto para entornos de prueba de Microsoft 365 Enterprise como de Office 365 Enterprise.*
 
 Muchas organizaciones utilizan la sincronización de hash de Azure AD Connect y contraseña para sincronizar el conjunto de cuentas de su parque de cuentas en su Active Directory Domain Services (AD DS) local para el conjunto de cuentas en el inquilino de Azure AD de sus suscripciones a Office 365 y EMS E5. En este artículo se describe cómo puede añadir la sincronización hash de contraseñas al entorno de pruebas de Microsoft 365, dando como resultado la configuración siguiente:
   
@@ -72,8 +74,6 @@ Observe cómo está ahora el testlab.\<su nombre de dominio público>:
 - El dominio de AD DS de la intranet simulada.
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>Fase 3: instalar Azure AD Connect en APP1
-
-*Esta guía del laboratorio de pruebas puede usarse tanto para entornos de prueba de Microsoft 365 Enterprise como de Office 365 Enterprise.*
 
 En esta fase, instalará y configurará la herramienta Azure AD Connect en APP1 y, después, comprobará que funciona correctamente.
   

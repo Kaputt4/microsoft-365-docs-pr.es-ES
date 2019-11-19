@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
-ms.openlocfilehash: 3d4936a03ab9b2e5d766f514472ea862009da553
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a639c71753602ffd381c9240cf6e7273f3ba8bbe
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091911"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708225"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -82,7 +82,7 @@ Por ejemplo, el siguiente archivo .xml define el esquema para una base de datos 
 (Puede copiar, modificar y usar nuestro ejemplo).
 
  ```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
       <DataStore name="PatientRecords" description="Schema for patient records" version="1">
             <Field name="PatientID" searchable="true" />
             <Field name="MRN" searchable="true" />
@@ -186,7 +186,7 @@ Se le pedirá que confirme lo siguiente:
 
 Cuando configure el paquete de reglas, asegúrese de hacer referencia correctamente al archivo .csv y al archivo edm.xml. Puede copiar, modificar y usar nuestro ejemplo. En este XML de ejemplo, debe personalizar los siguientes campos para crear el tipo confidencial de EDM:
 
-- **RulePack id y ExactMatch id**: use  [New-GUID](https://docs.microsoft.com/es-ES/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  para generar un GUID.
+- **RulePack id y ExactMatch id**: use  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  para generar un GUID.
 
 - **Datastore**: este campo especifica el almacén de datos de búsqueda de EDM que se va a usar. Debe proporcionar un nombre de origen de datos de un esquema EDM configurado.
 
@@ -201,7 +201,7 @@ Cuando configure el paquete de reglas, asegúrese de hacer referencia correctame
   - Asignación del nombre y edición de las descripciones del esquema: personalizar según sea necesario.
 
 ```xml
-<RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
   <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
     <Version build="0" major="2" minor="0" revision="0" />
     <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
@@ -488,7 +488,7 @@ Los tipos de información confidencial de EDM para las siguientes situaciones es
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/es-ES/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Comentarios
 

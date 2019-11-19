@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Office 365.'
-ms.openlocfilehash: a11bd934cf45a8f90ae7f558814a1b6d9e839914
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8596108902cadd82cbab4bd128d457858b5c63c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093691"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38710146"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Office 365
 
@@ -127,11 +127,11 @@ Ahora ya puede usar la herramienta AzCopy.exe para cargar los archivos PST en Of
     
 3. Ejecute el comando siguiente para cargar los archivos PST en Office 365.
 
-    ```
+    ```powershell
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
   
     ```
- 
+
     > [!IMPORTANT] 
     > Debe especificar un directorio como la ubicación de origen en el comando anterior. No se puede especificar un archivo PST individual. Se cargarán todos los archivos PST en el directorio de origen.
  
@@ -147,9 +147,8 @@ Ahora ya puede usar la herramienta AzCopy.exe para cargar los archivos PST en Of
    
 A continuación se muestra un ejemplo de la sintaxis de la herramienta AzCopy.exe, en el que se usan valores reales para cada parámetro:
     
-```
+```powershell
   AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-  
 ```
 
 Después de ejecutar el comando, aparecen mensajes de estado en los que se muestra el progreso de la carga de los archivos PST. En un mensaje de estado final aparece el número total de archivos cargados correctamente.
@@ -200,8 +199,7 @@ Después de cargar los archivos PST en la ubicación de Azure Storage de su orga
     
 2. Abra o guarde el archivo CSV en el equipo local. En el ejemplo siguiente se muestra un archivo de asignación de importaciones de archivos PST completado (que se abre en el Bloc de notas). Es mucho más fácil usar Microsoft Excel para editar el archivo CSV.
 
-
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -214,6 +212,7 @@ Después de cargar los archivos PST en la ubicación de Azure Storage de su orga
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
+    
     En la primera fila (o la primera fila de encabezado) del archivo CSV aparecen los parámetros que usará el servicio de importación de PST para importar los archivos PST a los buzones de los usuarios. Los nombres de los parámetros están separados por comas. Cada fila situada debajo de la fila de encabezado representa los valores de parámetro para importar un archivo PST a un buzón específico. Necesita una fila para cada archivo PST al que desee importar un buzón de usuario. No olvide reemplazar los datos de los marcadores de posición del archivo de asignación por los datos reales.
 
    **Nota:** no cambie nada en la fila de encabezado, ni siquiera los parámetros SharePoint. Se ignorarán durante el proceso de importación de PST. 
@@ -354,7 +353,7 @@ Aquí se muestra una ilustración y una descripción del proceso de carga en la 
   
 - Este es un ejemplo de la dirección URL de la Firma de acceso compartido (SAS) que se ha obtenido en el paso 1. Este ejemplo también contiene la sintaxis del comando que se ejecuta en la herramienta AzCopy.exe para cargar los archivos PST a Office 365. Asegúrese de tomar precauciones para proteger la URL de SAS de la misma manera que protegería las contraseñas u otra información relacionada con la seguridad.
 
-    ```
+    ```text
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y

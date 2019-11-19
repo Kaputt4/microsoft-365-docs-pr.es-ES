@@ -15,18 +15,18 @@ ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
 description: Compare las opciones de cifrado en Office 365, incluido el Cifrado de mensajes de Office (OME), S/MIME e Information Rights Management (IRM), y obtenga más información sobre la Seguridad de capa de transporte (TLS).
-ms.openlocfilehash: 79a7ddd13e437255fa671e949236c879b235c2ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 70c22f9627c804c201cb23b7b3c38a4f6a349ece
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092516"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708221"
 ---
 # <a name="email-encryption-in-office-365"></a>Cifrado de correo electrónico en Office 365
 
 Este articulo compara las opciones de cifrado en Office 365, incluido el Cifrado de mensajes de Office (OME), S/MIME e Information Rights Management (IRM), y presenta la Seguridad de capa de transporte (TLS).
   
-Office 365 le ofrece varias opciones de cifrado para ayudar a satisfacer las necesidades que tiene su empresa sobre la seguridad del correo electrónico. Este artículo contiene tres formas de cifrar el correo electrónico en Office 365. Si quiere obtener más información acerca de todas las características de seguridad en Office 365, visite el [Centro de confianza de Office 365](http://go.microsoft.com/fwlink/p/?LinkID=282470). Este artículo presenta los tres tipos de cifrado disponibles para los administradores de Office 365 con el propósito de ayudar a proteger el correo electrónico en Office 365:
+Office 365 le ofrece varias opciones de cifrado para ayudar a satisfacer las necesidades que tiene su empresa sobre la seguridad del correo electrónico. Este artículo contiene tres formas de cifrar el correo electrónico en Office 365. Si quiere obtener más información acerca de todas las características de seguridad en Office 365, visite el [Centro de confianza de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=282470). Este artículo presenta los tres tipos de cifrado disponibles para los administradores de Office 365 con el propósito de ayudar a proteger el correo electrónico en Office 365:
   
 - Cifrado de mensajes de Office (OME).
 
@@ -66,7 +66,7 @@ Vea este vídeo para una introducción [al cifrado en Office 365](https://www.yo
 
 ## <a name="what-encryption-options-are-available-for-my-office-365-subscription"></a>¿Qué opciones de cifrado están disponibles para mi suscripción de Office 365?
 
-Para obtener más información sobre las opciones de cifrado de correo electrónico para su suscripción de Office 365 vea la [descripción del servicio Exchange Online](https://technet.microsoft.com/es-ES/library/exchange-online-service-description.aspx). Aquí encontrará información sobre las siguientes características de cifrado:
+Para obtener más información sobre las opciones de cifrado de correo electrónico para su suscripción de Office 365 vea la [descripción del servicio Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Aquí encontrará información sobre las siguientes características de cifrado:
   
 - Azure RMS, incluidas las capacidades IRM y OME
 
@@ -92,7 +92,7 @@ Para obtener más información sobre las opciones de cifrado de correo electrón
   
 **IRM**
   
-[Information Rights Management en Exchange Online](https://technet.microsoft.com/es-ES/library/jj983436%28v=exchg.150%29.aspx)
+[Information Rights Management en Exchange Online](https://technet.microsoft.com/library/jj983436%28v=exchg.150%29.aspx)
   
 [¿Qué es Azure Rights Management?](https://technet.microsoft.com/library/jj585026)
   
@@ -106,4 +106,4 @@ Para obtener más información sobre las opciones de cifrado de correo electrón
   
 **TLS**
   
-[Configurar el flujo del correo personalizado mediante conectores en Office 365](https://technet.microsoft.com/es-ES/library/jj723138%28v=exchg.150%29.aspx)
+[Configurar el flujo del correo personalizado mediante conectores en Office 365](https://technet.microsoft.com/library/jj723138%28v=exchg.150%29.aspx)

@@ -1,7 +1,7 @@
 ---
 title: Ver el uso de etiquetas con el análisis de etiquetas
-ms.author: stephow
-author: stephow-MSFT
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Después de crear sus etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan en el espacio empresarial. Con el análisis de etiquetas en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365, puede ver rápidamente las etiquetas que más se usan y dónde se aplican
-ms.openlocfilehash: 297987d420b5ed05bf4fdeb86513bc7c4ddec609
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 45cebbe67a773b76289920554d4e39fcbce789cc
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092530"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38710142"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Ver el uso de etiquetas con el análisis de etiquetas
 
@@ -38,9 +38,9 @@ Puede encontrar el análisis de etiquetas en el [Centro de cumplimiento de Micro
 
 ## <a name="sensitivity-label-usage"></a>Uso de etiquetas de confidencialidad
 
-Los datos sobre el uso de las etiqueta de confidencialidad se extraen de los informes de Azure Information Protection: para obtener más información, vea [Informes centrales de Azure Information Protection](https://docs.microsoft.com/es-ES/azure/information-protection/reports-aip).
+Los datos sobre el uso de las etiqueta de confidencialidad se extraen de los informes de Azure Information Protection: para obtener más información, vea [Informes centrales de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-Tenga en cuenta que los informes de Azure Information Protection tienen [requisitos previos](https://docs.microsoft.com/es-ES/azure/information-protection/reports-aip#prerequisites-for-azure-information-protection-analytics) que también se aplican a los análisis de etiquetas en las etiquetas de confidencialidad en el Centro de seguridad de Microsoft 365 y el Centro de cumplimiento de Microsoft 365. Por ejemplo, necesita una suscripción de Azure que incluya Log Analytics porque estos informes son el resultado de enviar eventos de auditoría de protección de información de clientes de Azure Information Protection y escáneres a una ubicación centralizada basada en el servicio Log Analytics de Azure.
+Tenga en cuenta que los informes de Azure Information Protection tienen [requisitos previos](/azure/information-protection/reports-aip#prerequisites) que también se aplican a los análisis de etiquetas en las etiquetas de confidencialidad en el Centro de seguridad de Microsoft 365 y el Centro de cumplimiento de Microsoft 365. Por ejemplo, necesita una suscripción de Azure que incluya Log Analytics porque estos informes son el resultado de enviar eventos de auditoría de protección de información de clientes de Azure Information Protection y escáneres a una ubicación centralizada basada en el servicio Log Analytics de Azure.
 
 Para el uso de etiquetas de confidencialidad:
 
@@ -97,5 +97,5 @@ Para ver el análisis de etiquetas, debe tener asignado uno de los roles siguien
 - Administrador de seguridad
 - Lector de seguridad
 
-Además, tenga en cuenta que estos informes usan Azure Monitor para almacenar los datos en un área de trabajo de Log Analytics que pertenezca a su organización. Por lo tanto, el usuario debería agregarse como un lector para el espacio de trabajo de supervisión de Azure que contiene los datos. Para obtener más información, vea [Permisos necesarios para los análisis de Azure Information Protection](https://docs.microsoft.com/es-ES/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
+Además, tenga en cuenta que estos informes usan Azure Monitor para almacenar los datos en un área de trabajo de Log Analytics que pertenezca a su organización. Por lo tanto, el usuario debería agregarse como un lector para el espacio de trabajo de supervisión de Azure que contiene los datos. Para obtener más información, vea [Permisos necesarios para los análisis de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
 

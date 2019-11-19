@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Aprenda a modificar o crear nuevos tipos de información confidencial de Office 365 para RGPD.
-ms.openlocfilehash: 264e310c019c47d1b3109b20fbdd61b323ec5530
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091816"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708228"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar o crear un nuevo tipo de información confidencial
 
@@ -71,7 +71,7 @@ Para personalizar un tipo de información confidencial:
 
 7.  Cargue el nuevo tipo de información confidencial.
 
-8.  Vuelva a rastrear el contenido para identificar la información confidencial. Consulte [Solicitar de forma manual que se rastree y se actualice el índice de un sitio](https://support.office.com/es-ES/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
+8.  Vuelva a rastrear el contenido para identificar la información confidencial. Consulte [Solicitar de forma manual que se rastree y se actualice el índice de un sitio](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Ejemplo: modificar el tipo de información confidencial “número de tarjeta de débito de la UE”
 
@@ -141,15 +141,15 @@ Es posible que deba crear consultas adicionales para buscar datos personales que
 
 Use estos recursos para formular y optimizar consultas con KQL:
 
--   [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL) (DMC)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL) (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Ejecutar una búsqueda de contenido](https://support.office.com/es-ES/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Ejecutar una búsqueda de contenido](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
-La Búsqueda de contenido proporciona otro recurso para ayudarle a desarrollar consultas KQL y tipos de información confidencial: palabras clave. ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente qué palabras clave son las más (y menos) eficaces. Para obtener más información acerca de las estadísticas de búsqueda, consulte [Ver las estadísticas de palabra clave de resultados de búsqueda de contenido](https://support.office.com/es-ES/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+La Búsqueda de contenido proporciona otro recurso para ayudarle a desarrollar consultas KQL y tipos de información confidencial: palabras clave. ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente qué palabras clave son las más (y menos) eficaces. Para obtener más información acerca de las estadísticas de búsqueda, consulte [Ver las estadísticas de palabra clave de resultados de búsqueda de contenido](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 
 Las palabras clave en cada fila están conectadas mediante el operador O en la consulta de búsqueda que se crea. También puede usar una frase de palabras clave (entre paréntesis) en una fila.
 
-Para obtener más información, consulte [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](https://support.office.com/es-ES/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+Para obtener más información, consulte [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>Ejemplo: usar la Búsqueda de contenido para identificar direcciones de correo electrónico
 
@@ -374,7 +374,7 @@ Contoso siempre hace referencia a los clientes utilizando un CCN en la correspon
 ```xml
 \<?xml version="1.0" encoding="utf-8"?\>
 
-\<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce"\>
+\<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce"\>
 
 \<RulePack id="130ae63b-a91e-4a12-9e02-a90e36a83d7f"\>
 
