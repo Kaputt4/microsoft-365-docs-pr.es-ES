@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Obtenga información sobre el correo electrónico y las propiedades de archivo que puede buscar en los buzones de Exchange Online y en los sitios de SharePoint o de OneDrive para la empresa mediante la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento.  '
-ms.openlocfilehash: e01953c6397c8c7ca9f38780537f3f7546b238fb
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: c4135e52f88f72cde171cbc6c897359cd8e13e05
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687838"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699690"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido
 
@@ -145,7 +145,7 @@ Los operadores de búsqueda booleanos, como **and**, **or**y **Not**, ayudan a d
 |**Operador**|**Uso**|**Descripción**|
 |:-----|:-----|:-----|
 |AND|palabra clave 1 AND palabra clave 2|Devuelve los elementos que incluyen todas las palabras clave especificadas o `property:value` expresiones. Por ejemplo, `from:"Ann Beebe" AND subject:northwind` se devolverán todos los mensajes enviados por Ann Beebe que contengan la palabra Northwind en la línea de asunto. <sup>segundo</sup>|
-|+|palabra + palabra clave 2 + palabra clave 3|Devuelve elementos que contienen  *o*  `keyword2` o  `keyword3` *y*  que también contienen  `keyword1`. Por tanto, este ejemplo es equivalente a la consulta  `(keyword2 OR keyword3) AND keyword1`.  <br/> La consulta `keyword1 + keyword2` (con un espacio después del **+** símbolo) no es lo mismo que usar el operador * * y * *. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
+|+|palabra + palabra clave 2 + palabra clave 3|Devuelve elementos que contienen  *o*  `keyword2` o  `keyword3` *y*  que también contienen  `keyword1`. Por tanto, este ejemplo es equivalente a la consulta  `(keyword2 OR keyword3) AND keyword1`.  <br/> La consulta `keyword1 + keyword2` (con un espacio después del **+** símbolo) no es lo mismo que usar el operador **and** . This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
 |OR|palabra clave 1 OR palabra clave 2|Devuelve los elementos que incluyen una o varias de las palabras clave `property:value` especificadas o expresiones. <sup>segundo</sup>|
 |NOT|palabra clave 1 NOT palabra clave 2  <br/> NOT from:"Ann Beebe"  <br/> NO tipo: mensajería instantánea|Excluye los elementos especificados por una palabra clave `property:value` o una expresión. En el segundo ejemplo, se excluyen los mensajes enviados por Ann Beebe. En el tercer ejemplo se excluyen todas las conversaciones de mensajería instantánea, como las conversaciones de Skype empresarial que se guardan en la carpeta del buzón historial de conversaciones. <sup>segundo</sup>|
 |-|palabra clave 1 - palabra clave 2|Igual que el operador **NOT**. Por lo tanto, esta consulta devuelve `keyword1` los elementos que contienen y excluye `keyword2`los elementos que contienen.|

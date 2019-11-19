@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usó Configuration Manager de Microsoft Endpoint para implementar las actualizaciones locales de Windows 10 Enterprise.
-ms.openlocfilehash: a36e933d31ac6d629b649f07d6b8c9a4fe950ec8
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 2080562aeb2f6359aa2a4f836de3406e4ca2439c
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627336"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672706"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Implementación de Windows 10 Enterprise para Contoso
-
-**Resumen:** Entienda cómo Contoso usó Configuration Manager de Microsoft Endpoint para implementar las actualizaciones locales de Windows 10 Enterprise.
 
 Antes de la amplia implementación de Microsoft 365 Enterprise, Contoso tenía equipos y dispositivos compatibles con Windows con una combinación de Windows 7 (10 %), Windows 8.1 (65 %) y Windows 10 (25 %). Contoso quería actualizar sus equipos para que Windows 10 Enterprise aprovechara las ventajas de la seguridad avanzada y la reducción de la sobrecarga de TI de las implementaciones automatizadas de las actualizaciones. 
 
@@ -51,7 +49,7 @@ Antes y durante las actualizaciones locales de Windows 10 Enterprise, Contoso us
 
   Identifica los dispositivos que se bloquean con frecuencia y que quizás deban volver a crearse o reemplazarse, y los controladores de dispositivos que estén causando bloqueos en los mismos, y ofrece sugerencias de versiones alternativas de dichos controladores que pueden reducir el número de bloqueos. Proporciona una notificación de las configuraciones incorrectas de Windows Information Protection que envía avisos a los usuarios finales.
  
-Contoso tiene una infraestructura existente de Configuration Manager (Rama actual). Configuration Manager se escala en entornos de gran tamaño y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También incluye características integradas para que sea más fácil y eficaz implementar y administrar Windows 10 Enterprise.
+Contoso tiene una infraestructura existente de Configuration Manager (rama actual). Configuration Manager funciona para entornos grandes y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También tiene características integradas que hacen que sea más fácil y eficaz implementar y administrar Windows 10 Enterprise.
 
 ## <a name="planning-process"></a>Proceso de planeación
 
