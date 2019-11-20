@@ -9,17 +9,19 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 95805d6d61f2e8454ade16298db78370b0fca9f1
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 1bc2ac17d8548382dff721decba674952de977d6
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078930"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38750016"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Apoye a su programa de RGPD con las listas de comprobación de preparación de responsabilidad
 
-El RGPD añade nuevas normas organizaciones que ofrecen bienes y servicios a los ciudadanos de la Unión Europea (UE), o que recopilen y analicen datos de los residentes de la UE, sin importar donde estén ubicados usted o su empresa. El tema Resumen del RGPD](gdpr.md) muestra información adicional.
+El RGPD añade nuevas normas organizaciones que ofrecen bienes y servicios a los ciudadanos de la Unión Europea (UE), o que recopilen y analicen datos de los residentes de la UE, sin importar donde estén ubicados usted o su empresa. El [tema Resumen del RGPD](gdpr.md) muestra información adicional.
 
 ## <a name="accountability-readiness-checklists"></a>Listas de comprobación de preparación de responsabilidad
 

@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 3a07400f6c3e788734b4d959080e2008eb7b0cfe
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698292"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38750013"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Soporte técnico y servicios profesionales de Microsoft, y notificación de infracciones según el RGPD
 
@@ -27,7 +29,7 @@ Los objetivos del equipo de respuesta ante incidentes de protección de datos gl
 
 ## <a name="data-protection-incident-response-overview"></a>Información general sobre la respuesta ante incidentes de protección de datos 
 
-Los Servicios profesionales de Microsoft se comprometen a proteger a sus clientes y toman medidas considerables para impedir que se produzcan incidentes de protección de datos con la finalidad de mantener la confianza del cliente. Un incidente de protección de datos en la organización de Servicios profesionales es una infracción de seguridad que lleva a la destrucción accidental o ilícita, la pérdida, la modificación, la divulgación no autorizada o el acceso a datos personales, o bien a datos de soporte técnico o asesoramiento durante su procesamiento por Microsoft. En el caso de los clientes comerciales que contrataron el soporte técnico Premier, el Soporte técnico unificado o los Servicios de asesoramiento de Microsoft, vea el idioma de respuesta ante incidentes de protección de datos en el Anexo de protección de datos de Servicios profesionales, que está disponible en <http://aka.ms/professionalservicesdpa/>.
+Los Servicios profesionales de Microsoft se comprometen a proteger a sus clientes y toman medidas considerables para impedir que se produzcan incidentes de protección de datos con la finalidad de mantener la confianza del cliente. Un incidente de protección de datos en la organización de Servicios profesionales es una infracción de seguridad que lleva a la destrucción accidental o ilícita, la pérdida, la modificación, la divulgación no autorizada o el acceso a datos personales, o bien a datos de soporte técnico o asesoramiento durante su procesamiento por Microsoft. En el caso de los clientes comerciales que contrataron el soporte técnico Premier, el Soporte técnico unificado o los Servicios de asesoramiento de Microsoft, vea el idioma de respuesta ante incidentes de protección de datos en el Anexo de protección de datos de Servicios profesionales, que está disponible en <https://aka.ms/professionalservicesdpa/>.
 
 ## <a name="scope--limits-of-data-protection-incident-response-process"></a>Ámbito y límites del proceso de respuesta ante incidentes de protección de datos
 
@@ -54,7 +56,7 @@ Los Servicios profesionales de Microsoft supervisan continuamente si se producen
 Los procesos de detección usados por los Servicios profesionales de Microsoft se diseñaron para descubrir incidentes de protección de datos e iniciar investigaciones. Por ejemplo:
 
 - Se informa de vulnerabilidades de seguridad en el sistema de informes global de Microsoft como referencia, o bien se informa de estas directamente al equipo de respuesta ante incidentes de protección de datos de los Servicios profesionales.
-- Los clientes envían informes desde el [Portal de atención al cliente](http://support.microsoft.com), donde se describe la actividad sospechosa.
+- Los clientes envían informes desde el [Portal de atención al cliente](https://support.microsoft.com), donde se describe la actividad sospechosa.
 - El personal de Servicios profesionales envía las escalaciones. Los empleados de Microsoft reciben aprendizaje para identificar y escalar posibles problemas de seguridad.
 - En el caso de las herramientas y sistemas usados en el proceso de prestación de los Servicios profesionales, los equipos de operaciones usan alertas automáticas del sistema con la supervisión interna y marcos de alertas. Estas alertas pueden interferir con alarmas basadas en firmas, como antimalware, detección de intrusiones o mediante algoritmos diseñados para identificar actividades previstas y generar alertas ante anomalías.
 

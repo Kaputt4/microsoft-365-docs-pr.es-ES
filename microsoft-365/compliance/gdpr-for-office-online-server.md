@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Obtenga información sobre cómo cumplir los requisitos de RGPD en Exchange Server local.
-ms.openlocfilehash: 9b15934f598adcd692d8c47358db357bcea58814
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b1cf86beeeb195396e45e0bc262f1d1b81b21057
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091702"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38750000"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>RGPD para Office Web Apps Server y Office Online Server
 
-Los datos de telemetría de Office Online Server y Office Web Apps Server se almacenan en un formulario de registros ULS. Puede usar el [Visor de ULS](https://www.microsoft.com/en-us/download/details.aspx?id=44020) para ver los registros ULS de su inquilino local.
+Los datos de telemetría de Office Online Server y Office Web Apps Server se almacenan en un formulario de registros ULS. Puede usar el [Visor de ULS](https://www.microsoft.com/download/details.aspx?id=44020) para ver los registros ULS de su inquilino local.
 
 Cada línea de registro contiene un CorrelationID. Las líneas de registros relacionadas comparten el mismo CorrelationID. Cada CorrelationID está vinculado a un SessionID único y un SessionID puede estar relacionado con muchos CorrelationID. Cada SessionID puede estar relacionado con un único UserID, aunque algunas sesiones pueden ser anónimas y, por tanto, no tiene un UserID asociado. Para determinar qué datos están asociados a un usuario determinado, es posible asignar desde un UserID único para los SessionID asociados a ese usuario, de los SessionID a los CorrelationID, y de esos CorrelationID a todos los registros en las correlaciones. Consulte el siguiente diagrama para obtener información sobre la relación entre los distintos identificadores.
 
