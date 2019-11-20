@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y etiquete los datos confidenciales.
-ms.openlocfilehash: 5213c55f4a8ce0e223896f1b960847714d6d06cb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6fae95e8c5e6d133e3163dbdfd3c09cfede11382
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031423"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715130"
 ---
 # <a name="set-up-compliance-features"></a>Configurar las características de cumplimiento
 
@@ -37,7 +37,7 @@ DLP incluye varias plantillas de directiva listas para usarse para muchas config
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurar la retención de correo electrónico con el archivado de Exchange Online
 
- Las características de licencia de **archivado de Exchange Online** ayudan a mantener el cumplimiento normativo y preservar el contenido de correo electrónico para eDiscovery. También ayuda a reducir el riesgo en el caso de un litigio y proporciona una forma de recuperar datos después de una infracción de seguridad o cuando se necesitan recuperar elementos eliminados. Puede usar la retención por juicio para conservar todo el contenido de un usuario o usar directivas de retención para personalizar lo que desea conservar.
+ Las características de licencia de **archivado de Exchange Online** ayudan a mantener el cumplimiento normativo y preservar el contenido de correo electrónico para eDiscovery. También ayuda a reducir el riesgo si existe un litigio y proporciona una forma de recuperar datos después de una infracción de seguridad o cuando se necesitan recuperar elementos eliminados. Puede usar la retención por juicio para conservar todo el contenido de un usuario o usar directivas de retención para personalizar lo que desea conservar.
   
 **Retención por juicio:** Puede conservar todo el contenido del buzón, incluidos los elementos eliminados, al poner el buzón completo de un usuario en retención por juicio. 
     
@@ -45,17 +45,17 @@ Para poner un buzón de correo en retención por juicio, en el centro de adminis
     
 1. En el panel de navegación izquierdo, **vaya a** \> usuarios **activos**.
     
-2. Seleccione un usuario cuyo buzón quiera poner en retención por juicio y, en el panel usuario, expanda **configuración de correo** y, junto a **configuración adicional** , elija **Editar propiedades de Exchange**.
+2. Seleccione un usuario cuyo buzón quiera poner en retención por juicio. En el panel de usuario, expanda **configuración de correo**y, junto a **más configuraciones**, elija **Editar propiedades de Exchange**.
     
 3. En la página buzón del usuario, elija * * características de buzón * * en el panel de navegación izquierdo y, a continuación, elija el vínculo **Habilitar** en **retención por juicio**.
     
-4. En el cuadro de diálogo **retención por juicio** , puede especificar la duración de retención por juicio en el campo **duración** de retención por juicio, deje el campo vacío si desea realizar una suspensión infinita. También puede agregar notas y dirigir el propietario del buzón de correo a un sitio web que tenga que explicar más sobre la retención \> por juicio. ****
+4. En el cuadro de diálogo **retención por juicio** , puede especificar la duración de retención por juicio en el campo **duración** de retención por juicio. Deje el campo vacío si desea realizar una suspensión infinita. También puede agregar notas y dirigir al propietario del buzón a un sitio web que tenga que explicar más sobre la retención por juicio. \>**Guardar**.
     
 **Retención:** Puede habilitar las directivas de retención personalizadas, por ejemplo, para conservarlas durante un período de tiempo determinado o eliminar el contenido de forma permanente al final del período de retención. Para obtener más información, vea [información general sobre las directivas de retención](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
 
 ## <a name="set-up-sensitivity-labels"></a>Configurar las etiquetas de confidencialidad
 
-Las etiquetas de confidencialidad incluyen el plan 1 de Azure Information Protection (AIP) y le ayudan a clasificar y, opcionalmente, a proteger sus documentos y correos electrónicos mediante la aplicación de etiquetas. Las etiquetas pueden ser aplicadas automáticamente por los administradores que definen las reglas y condiciones, manualmente por los usuarios o mediante una combinación en la que los usuarios obtienen recomendaciones.
+Las etiquetas de confidencialidad incluyen el plan 1 de Azure Information Protection (AIP) y le ayudan a clasificar y, de manera opcional, a proteger sus documentos y correos electrónicos mediante la aplicación de etiquetas. Las etiquetas pueden ser aplicadas automáticamente por los administradores que definen las reglas y condiciones, manualmente por los usuarios o mediante una combinación en la que los usuarios obtienen recomendaciones.
 
 Para configurar las etiquetas de confidencialidad, vea [crear y administrar las etiquetas de confidencialidad](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) de vídeo.
 
@@ -70,4 +70,4 @@ Para instalar manualmente el cliente de AIP:
 2. Puede comprobar que la instalación se ha realizado viendo un documento de Word y asegurándose de que la opción de **sensibilidad** esté disponible en la pestaña **Inicio** .
 <br/>![Cuadro desplegable de la pestaña protección en un documento de Word.](media/word-sensitivity.png)
 
-Para obtener más información, vea [instalar el cliente](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).
+Para obtener más información, vea [Install the Client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).

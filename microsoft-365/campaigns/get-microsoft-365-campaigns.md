@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga Microsoft 365 para las campañas para que pueda proteger su campaña de las amenazas de Cybersecurity contra el correo electrónico, los datos y las comunicaciones.
-ms.openlocfilehash: 0e038f3b33db957d3503ee091b075b767c30eeda
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 96c86c3cbd942e0ffe31cfdf29a216c63c52bfc4
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772517"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748271"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtener Microsoft 365 para las campañas
 
@@ -49,7 +49,7 @@ Esta configuración de Microsoft 365 Business incluye controles simples que le a
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>¿Qué cuesta, quién lo necesita y cuál es el compromiso?
 Si su campaña cumple los precios especiales de Microsoft 365 para campañas que cuestan $5 por usuario y por mes. Para proteger su campaña, le recomendamos una licencia para el candidato, el administrador de la campaña, todo el personal Senior que forme parte de la campaña o fiesta y, normalmente, todo el personal de tiempo completo. Algunos empleados voluntarios también podrían necesitar una licencia. En general, asigne una licencia a cualquier persona de la campaña que necesite correo electrónico y dispositivos protegidos.
-No hay un compromiso de tiempo mínimo cuando se suscribe a Microsoft 365 para las campañas. Puede pagar mensualmente las licencias que necesita y dejar de usar el servicio en cualquier momento.
+No hay compromiso de tiempo mínimo cuando se suscribe a Microsoft 365 para las campañas. Puede pagar mensualmente las licencias que necesita y dejar de usar el servicio en cualquier momento.
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>¿Cómo puedo optar a precios especiales?
 

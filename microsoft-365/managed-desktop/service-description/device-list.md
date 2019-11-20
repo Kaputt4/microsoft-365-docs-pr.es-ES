@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 11cbdaf47e06536afd996fd41c3ea603967e2685
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 64b5ffab59b19945b20bc614f09963ca43027afe
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640352"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715512"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrados por Microsoft 
 
@@ -20,7 +20,7 @@ Para obtener más información sobre el escritorio administrado por Microsoft, c
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Para estar inscrito en el escritorio administrado de Microsoft, un dispositivo debe ser uno de los siguientes modelos y cumplir o superar las especificaciones enumeradas para RAM, familia de procesador y espacio en disco. No se admite ninguna otra personalización.
+Para estar inscrito en el escritorio administrado de Microsoft, un dispositivo debe ser uno de los siguientes modelos y cumplir o superar las especificaciones enumeradas para RAM, familia de procesador y espacio en disco. 
 
 Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ordenar los dispositivos, trabaje con los contactos de canal comercial para asegurarse de elegir la configuración correcta. En esta tabla, la *fecha de archivo* es la fecha en la que estos modelos estarán sujetos a una vida de servicio de escritorio administrada de Microsoft más corta; los dispositivos que se adjuntan después de esta fecha no recibirán un período completo de tres años de soporte desde el escritorio administrado de Microsoft. Los dispositivos archivados también se enumeran en [dispositivos de escritorio administrado de Microsoft](archived-device-list.md). *Fecha de retiro* es la fecha en la que el escritorio administrado de Microsoft ya no será compatible con este modelo. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán del escritorio administrado de Microsoft, sin importar que se hayan inscrito.
 
@@ -41,7 +41,7 @@ Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ord
 | [EQUIPO portátil HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
 | [EQUIPO portátil HP EliteBook x360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
 | [HP Elite x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS03AV, se requiere cámara IR | 14 de mayo de 2020 | 14 de mayo de 2023 |
-| [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 56 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR | 14 de mayo de 2020 | 14 de mayo de 2023 |
+| [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR | 14 de mayo de 2020 | 14 de mayo de 2023 |
 | [HP EliteBook x360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR | 23 de octubre de 2020 | 23 de octubre de 2023 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel i3/8 GB de RAM | SKU con 5VS04AV | 18 de julio de 2020 | 18 de julio de 2023 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel i3/8 GB de RAM | SKU con 5VS04AV | 18 de julio de 2020 | 18 de julio de 2023 |

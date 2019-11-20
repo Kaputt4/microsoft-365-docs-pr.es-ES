@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 'Obtenga información sobre cómo usar Microsoft 365 Business para quitar datos de la compañía de los dispositivos de usuario o equipos de Windows. '
-ms.openlocfilehash: 169bc7d849bb934de2788daebb90308b1a086111
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 59e94a08e149a5cb119aabbbe816ccd2f4a9f9fb
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575746"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715240"
 ---
 # <a name="remove-company-data-from-devices"></a>Eliminar datos de la empresa de dispositivos
 
-[![Etiqueta para que sepa que el centro de administración está cambiando y puede encontrar más información en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>Quitar datos de la compañía
 
@@ -41,9 +41,9 @@ Puede usar Microsoft 365 Business para eliminar los datos de la empresa que los 
   
 3. En la página **administrar** , seleccione o busque un usuario que tenga los datos que desea quitar y elija el nombre. 
     
-4. En el panel siguiente, seleccione el dispositivo o dispositivos de la lista **dispositivos** y en el panel de dispositivos que se abre puede elegir restablecer el dispositivo a la configuración de fábrica o quitar datos de la compañía según el tipo de dispositivo. 
+4. En el panel siguiente, seleccione el dispositivo o dispositivos en la lista **dispositivos** . En el panel de dispositivos que se abre, puede elegir restablecer el dispositivo a la configuración de fábrica o quitar datos de la empresa, según el tipo de dispositivo. 
     
-    ![On the remove comapany data pane, select the device from which you want to remove the data.](media/resetorremove.png)
+    ![En el panel quitar datos de la compañía, seleccione el dispositivo del que desea quitar los datos.](media/resetorremove.png)
   
 5. En el panel de confirmación, elija **confirmar** \> **cierre**.
     

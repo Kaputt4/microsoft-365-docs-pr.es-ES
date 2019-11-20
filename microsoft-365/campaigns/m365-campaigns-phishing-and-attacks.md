@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365 para las campañas.
-ms.openlocfilehash: be00cdc0c70c2a2f6ac9292e933031280b7c4616
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 04779d1c69b57811cf493a9f48185eed2435c82e
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029064"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748261"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protéjase contra el phishing y otros ataques
 
@@ -36,7 +36,6 @@ Microsoft 365 incluye muchas protecciones para protegerse contra ataques, pero h
 - **Phishing** Una estafa de suplantación de identidad (phishing) es un correo electrónico que parece legítimo pero que se ha intentado obtener información personal o robar el dinero.
 - **Suplantación de identidad** Los estafadores también pueden usar una técnica denominada suplantación de identidad para que parezca que ha recibido un correo electrónico de su cuenta. 
 - El **malware** es software malintencionado que puede instalarse en el equipo, que normalmente se instala después de hacer clic en un vínculo o abrir un documento desde un correo electrónico. Hay varios tipos de malware (por ejemplo, ransomware, cuando se toma el equipo), pero no desea tener ninguno de ellos. 
-
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
@@ -70,11 +69,9 @@ Descargue este infografía con sugerencias para usted y los miembros de su equip
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | de[PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
- 
-
 ## <a name="set-it-up"></a>Configúrelo
 
 Obtenga más información sobre cómo:
-- [Mantener seguros sus archivos y comunicaciones con Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
-- [Permanecer seguro y privado en el trabajo](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
+- [Mantenga seguros sus archivos y comunicaciones con Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+- [Manténgase protegido y privado en el trabajo](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Obtenga información sobre cómo validar la configuración de protección de aplicaciones empresariales de Microsoft 365 en dispositivos Windows 10.
-ms.openlocfilehash: 5fed2278856f40233b142d3c7c4bc623e3777799
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Obtenga información sobre cómo validar la configuración de Microsoft 365 Business App Protection en dispositivos con Windows 10.
+ms.openlocfilehash: b8793ab7f77bbc7f608f237e2455f6fd12c3bb26
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575476"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721808"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de dispositivos en equipos con Windows 10
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Comprobar que las directivas de dispositivos de Windows 10 están definidas
 
-Una vez que haya [configurado las directivas de dispositivos](protection-settings-for-windows-10-pcs.md), la Directiva puede tardar hasta unas pocas horas en aplicarse a los dispositivos de los usuarios. Para confirmar que las directivas tuvieron efecto, consulte varias pantallas de configuración de Windows en los dispositivos de los usuarios. Como los usuarios no podrán modificar la configuración de Windows Update y antivirus de Windows Defender en sus dispositivos con Windows 10, se mostrarán muchas opciones en gris.
+Una vez que haya [configurado las directivas de dispositivos](protection-settings-for-windows-10-pcs.md), la Directiva puede tardar hasta unas pocas horas en aplicarse a los dispositivos de los usuarios. Para confirmar que las directivas tuvieron efecto, consulte varias pantallas de configuración de Windows en los dispositivos de los usuarios. Como los usuarios no podrán modificar la configuración de Windows Update y antivirus de Windows Defender en sus dispositivos con Windows 10, muchas opciones estarán atenuadas.
   
 1. Vaya a **configuración** \> **actualización &amp; seguridad** \> **Windows Update** \> **restart** y confirme que todas las opciones están atenuadas. 
     
@@ -41,7 +41,7 @@ Una vez que haya [configurado las directivas de dispositivos](protection-setting
   
 2. Vaya a **configuración** \> **actualizar &amp; seguridad** \> **Windows Update** \> **Opciones avanzadas** y confirme que toda la configuración está atenuada. 
     
-    ![Las opciones de actualizaciones avanzadas de Windows están en gris.](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Las opciones de actualizaciones avanzadas de Windows están atenuadas.](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Ir a **configuración** \> **actualización &amp; seguridad** \> **Windows Update** \> **Opciones** \> avanzadas **Elija cómo se entregan las actualizaciones**.
     
@@ -49,7 +49,7 @@ Una vez que haya [configurado las directivas de dispositivos](protection-setting
     
     ![Elegir cómo se entregan las actualizaciones la página indica que la configuración está oculta o administrada por la organización.](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Para abrir el centro de seguridad de Windows Defender, vaya a **configuración** \> **actualización &amp; seguridad** \> **Windows Defender** \> , haga clic en abrir el tema de \> **** **antivirus &amp; del centro de seguridad de Windows Defender ** \> **configuración de &amp; protección contra amenazas de virus**de protección. 
+4. Para abrir el centro de seguridad de Windows Defender, vaya a **configuración** \> ** &amp; actualización seguridad** \> **Windows Defender** \> haga clic en **abrir el centro** \> de seguridad de Windows Defender configuración de protección frente a **virus &amp; **de protección de ** &amp; subprocesos.** \> 
     
 5. Compruebe que todas las opciones están atenuadas. 
     

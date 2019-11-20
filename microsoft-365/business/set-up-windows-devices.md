@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Obtenga información sobre cómo configurar los dispositivos Windows que ejecutan Windows 10 Pro para los usuarios de Microsoft 365 empresa. '
-ms.openlocfilehash: 7b6fa2ce3243500c3ddcff7883fa9d8da27dcf86
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575576"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718887"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurar dispositivos con Windows para usuarios de Microsoft 365 Business
 
@@ -41,7 +41,7 @@ Consulte [comprobar que el dispositivo está conectado a Azure ad](#verify-the-d
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unir dispositivos Windows 10 en la cuenta de Azure AD de una organización
 
-Una vez que todos los dispositivos Windows de su organización se hayan actualizado a Windows 10 Pro Creators Update o ya lo estén ejecutando, podrá unir estos dispositivos en la cuenta Azure Active Directory de su organización. Una vez que los dispositivos estén unidos, se actualizarán automáticamente a Windows 10 Business, que forma parte de la suscripción de Microsoft 365 Business.
+Cuando todos los dispositivos Windows de su organización se hayan actualizado a Windows 10 Pro Creators Update o ya ejecuten la actualización de Windows 10 Pro Creators, puede unir estos dispositivos al Azure Active Directory de la organización. Una vez que se hayan unido los dispositivos, se actualizarán automáticamente a Windows 10 Business, que forma parte de su suscripción de Microsoft 365 empresa.
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Dispositivos Windows 10 Pro nuevos o actualizados recientemente
 
@@ -89,7 +89,7 @@ En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Updat
   
    ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-Si ha cargado archivos a OneDrive para la Empresa, vuelva a sincronizarlos. Si ha usado una herramienta de terceros para migrar archivos y el perfil, sincronícelos también con el nuevo perfil.
+Si ha cargado archivos a OneDrive para la Empresa, vuelva a sincronizarlos. Si ha usado una herramienta de terceros para migrar perfiles y archivos, sincronice también los archivos con el nuevo perfil.
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Comprobar que un dispositivo está conectado a Azure AD
 
@@ -97,7 +97,7 @@ Para comprobar el estado de sincronización, en la página **Obtener acceso a tr
   
 En la página Estado de sincronización, haga clic en Sincronizar para recibir las directivas de administración de dispositivos móviles más recientes en el equipo.
   
-Para empezar a usar la cuenta de Microsoft 365 Business, vaya al botón **Inicio** de Windows, haga clic con el botón derecho en la imagen de la cuenta actual y luego en **Cambiar de cuenta**. Inicie sesión con el correo electrónico y la contraseña de la organización.
+Para empezar a usar la cuenta de Microsoft 365 Business, vaya al botón **Inicio** de Windows, haga clic con el botón secundario en la imagen de cuenta actual y, a continuación, **cambie de cuenta**. Inicie sesión con el correo electrónico y la contraseña de la organización.
   
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   

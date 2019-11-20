@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Obtenga información sobre cómo validar la configuración de protección de aplicaciones empresariales de Microsoft 365 en dispositivos Windows 10.
-ms.openlocfilehash: 7710accf9a3cd1db788dd5215ab6d7bbb97e48a6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074388"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721868"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de aplicaciones en PC con Windows 10
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>Compruebe que los usuarios no pueden copiar los datos de empresa a los archivos personales en dispositivos corporativos.
 
-Después de [configurar directivas de protección de la aplicación](protection-settings-for-windows-10-devices.md), puede tardar unas pocas horas en tener efecto la directiva en los dispositivos de los usuarios. Si ha **activado** la configuración **Impedir que los usuarios copien los datos de la compañía en los archivos personales y forzarlos a guardar los archivos de trabajo en OneDrive para la Empresa** para los dispositivos que son propiedad de la empresa, puede comprobarlo en el dispositivo del usuario después de que se hayan conectado a Azure AD e iniciado sesión. 
+Después de [configurar directivas de protección de la aplicación](protection-settings-for-windows-10-devices.md), puede tardar unas pocas horas en tener efecto la directiva en los dispositivos de los usuarios. Si **activó la** opción evitar que **los usuarios copien los datos de la compañía en archivos personales y forzar que se guarden los archivos de trabajo en OneDrive para** la empresa para los dispositivos que son propiedad de la empresa, puede comprobarlo en el dispositivo del usuario después de que se hayan conectado a Azure ad y hayan iniciado sesión. 
   
  **Comprobar la configuración de conexión**
   
@@ -38,11 +38,11 @@ Después de [configurar directivas de protección de la aplicación](protection-
     
     ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. En la página **Administrado por** \< nombre del inquilino \> puede ver la **información de conexión** que incluye una **dirección del servidor de administración** como la que se muestra en la siguiente ilustración. 
+2. En la página **administrado por** \<nombre\> de espacio empresarial, puede ver la **información de conexión** que incluye una dirección del servidor de **Administración** como la que se muestra en la siguiente ilustración. 
     
     ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
- **Compruebe que no puede pegar datos de la compañía a una aplicación no administrada**
+ **Comprobar que no se pueden pegar datos de la empresa en una aplicación no administrada**
   
 1. Abra Outlook 2016 que fue instalada por Microsoft 365 Business.
     
@@ -50,7 +50,7 @@ Después de [configurar directivas de protección de la aplicación](protection-
     
     Abra el Bloc de notas e intente pegar el contenido.
     
-    Recibirá un error que indica que la aplicación no puede obtener acceso al contenido.
+    Recibirá un error que indica que la aplicación no puede acceder al contenido.
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
@@ -60,7 +60,7 @@ Después de [configurar directivas de protección de la aplicación](protection-
 
  **Comprobar la configuración de conexión**
   
-1. En el dispositivo personal de Windows 10 donde está conectado como un usuario local, vaya a **Configuración de Windows** y haga clic o pulse **Cuentas** \> **Acceso profesional o educativo**.
+1. En el dispositivo de Windows 10 personal en el que haya iniciado sesión como usuario local, vaya **a configuración de Windows**y haga clic o pulse **cuentas** \> de **acceso profesional o educativa**.
     
 2. En **Acceso profesional o educativo**, elija **Conectar**.
     
@@ -68,13 +68,13 @@ Después de [configurar directivas de protección de la aplicación](protection-
     
 4. En la página **Acceso profesional o educativo**, elija **Cuenta profesional o educativa** y, a continuación, elija **Información**.
     
-    ![Click or tap Info on the Work or school account dalog.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![Haga clic o pulse en información en el cuadro de diálogo de la cuenta profesional o educativa.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
-5. En la página **Acceso profesional o educativo** puede ver **Información de conexión** que incluye una **dirección de servidor de administración** como la que se muestra en la siguiente imagen e incluye las palabras  *wip*  y  *mam*  . 
+5. En la página **tener acceso a la escuela o el trabajo** , puede ver la **información de conexión** que incluye una dirección del servidor de **Administración** como la que se muestra en la figura siguiente, e incluye las palabras *WIP* y *MAM* en. 
     
     ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
- **Compruebe que no puede pegar datos de la compañía a una aplicación no administrada**
+ **Comprobar que no se pueden pegar datos de la empresa en una aplicación no administrada**
   
 1. Abra Outlook 2016 y agregue su Microsoft 365 Business cuenta si es necesario e inicie sesión con sus Microsoft 365 Business credenciales.
     

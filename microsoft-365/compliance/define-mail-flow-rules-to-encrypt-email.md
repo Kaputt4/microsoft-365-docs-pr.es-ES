@@ -14,16 +14,18 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante el cifrado de mensajes de Office 365.
-ms.openlocfilehash: 17a04941d7132dbe50f8a79ec3b8879b300b414e
-ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
+ms.openlocfilehash: 54fc53d1e39208f42348b6def4afadf71092ff11
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "38687616"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748558"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365
 
 Como administrador global de Office 365, puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para ayudar a proteger los mensajes de correo electrónico que envíe y reciba. Puede configurar reglas para cifrar los mensajes de correo electrónico salientes y quitar el cifrado de los mensajes cifrados que provengan de la organización o de las respuestas a los mensajes cifrados que se envían desde la organización. Puede usar el centro de administración de Exchange (EAC) o Exchange Online PowerShell para crear estas reglas. Además de las reglas de cifrado general, también puede optar por habilitar o deshabilitar las opciones de cifrado de mensajes individuales para los usuarios finales.
+
+No se puede cifrar el correo entrante de remitentes externos a la organización.
 
 Si migró recientemente de AD RMS a Azure Information Protection, deberá revisar sus reglas de flujo de correo existentes para asegurarse de que siguen funcionando en su nuevo entorno. Además, si desea aprovechar las nuevas capacidades de cifrado de mensajes de Office 365 (OME) disponibles a través de Azure Information Protection, debe actualizar las reglas de flujo de correo existentes. De lo contrario, los usuarios seguirán recibiendo correo cifrado que usa el formato de datos adjuntos HTML anterior en lugar de la nueva experiencia de OME sin problemas. Si todavía no ha configurado OME, vea [configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md) para obtener información.
 

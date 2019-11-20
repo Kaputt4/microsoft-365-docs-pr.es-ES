@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtener ayuda para aumentar el nivel de protección en Microsoft 365 Business
-ms.openlocfilehash: 9b17af7f6dde321fb8da758f0cc8223e5f488121
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676108"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748311"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -63,7 +63,7 @@ Ransomware restringe el acceso a los datos mediante el cifrado de los archivos o
   
 Puede proteger contra ransomware si crea una o más reglas de flujo de correo para bloquear extensiones de archivo que se usan con frecuencia para ransomware (estos se agregaron en el paso [aumentar el nivel de protección contra malware en el correo](#raise-the-level-of-protection-against-malware-in-mail) ) o para advertir a los usuarios que reciben estos datos adjuntos en el correo electrónico.
 
-Además de los archivos bloqueados en el paso anterior, también es aconsejable crear una regla para advertir a los usuarios antes de abrir datos adjuntos de archivos de Office que incluyan macros. Ransomware puede estar oculto dentro de las macros, por lo que se advertirá a los usuarios que no abren estos archivos de personas que no saben.
+Además de los archivos bloqueados en el paso anterior, también es aconsejable crear una regla para advertir a los usuarios antes de abrir datos adjuntos de archivos de Office que incluyan macros. Ransomware puede estar oculto dentro de las macros, así que advierta a los usuarios que no abran estos archivos de personas que no conocen.
 
 Para crear una regla de transporte de correo:
   
@@ -128,7 +128,6 @@ Si ha configurado uno o más dominios personalizados para el entorno de Office 3
   
 Le recomendamos que empiece con esta protección creando una directiva para proteger a los usuarios más importantes y a su dominio personalizado. 
 
-  
 Para crear una directiva contra la suplantación de identidad ATP, vea [este vídeo de aprendizaje corto](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)o realice los pasos siguientes:
   
 1. Vaya a [https://protection.office.com](https://protection.office.com). 
@@ -139,7 +138,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
     
 4. En la página **contra la suplantación de identidad** , seleccione **+ crear**. Se inicia un asistente que le guía por el proceso de definición de la Directiva antiphishing.
     
-5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, consulte [información sobre las opciones de directiva de antiphishing de ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) . 
+5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, consulte [información sobre las opciones de directiva de antiphishing de ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies). 
     
 6. Una vez que haya revisado la configuración, elija **crear esta directiva** o **Guardar**, según corresponda.
     
@@ -157,11 +156,11 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
    
 Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
-## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Protección contra datos adjuntos malintencionados, archivos y vínculos con protección contra amenazas avanzada (ATP)
+## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Protección contra datos adjuntos malintencionados, archivos y vínculos con la protección contra amenazas avanzada (ATP)
 
 ![Pancarta que apunta a https://aka.ms/aboutM365preview.](../business/media/m365admincenterchanging.png)
 
-En primer lugar, asegúrese de que en el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> de administración tenga activada la nueva vista previa del centro de administración; Active la alternancia junto al texto **nuevo centro de administración**.
+En primer lugar, asegúrese de <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> que en el centro de administración de tenga activada la nueva vista previa del centro de administración. Active la alternancia junto al texto **nuevo centro de administración**.
 
    ![La nueva vista previa del centro de administración.](media/previewon.png)
 
@@ -172,11 +171,11 @@ Si aún no ve la página **configuración** con tarjetas en su inquilino, vea c�
     ![Elija Ver en el aumentar protección frente a amenazas avanzadas.](media/startatp.png) 
 
 3. En la página **aumentar la protección desde amenazas avanzadas** , **Elija introducción**.
-4. En el panel que se abre, active las casillas junto a **vínculos y datos adjuntos en el correo electrónico**, **analice archivos en SharePoint, OneDrive y Microsoft Teams**, y **Explore los vínculos de las aplicaciones de escritorio y Office online de Office** en **buscar contenido malintencionado**.
+4. En el panel que se abre, active las casillas situadas junto a **vínculos y datos adjuntos en el correo electrónico**, **analizar archivos en SharePoint, OneDrive y Microsoft Teams**, y **examinar los vínculos de las aplicaciones de escritorio y Office online de Office** en **buscar contenido malintencionado**.
 
       - En **vínculos y datos adjuntos en el correo electrónico**, escriba todos los usuarios o los usuarios específicos cuyo correo electrónico desea examinar.
 
-    ![Active todas las casillas de verificación en aumentar la Protesting de amenazas avanzadas.](media/setatp.png)
+    ![Active todas las casillas de verificación en aumentar protección frente a amenazas avanzadas.](media/setatp.png)
 5. Elija **crear directivas** para activar los datos adjuntos seguros de ATP y vínculos seguros ATP.
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Configurar datos adjuntos seguros de ATP en el centro de seguridad & cumplimiento
@@ -288,9 +287,9 @@ La siguiente figura muestra las directivas predeterminadas que se incluyen en Mi
 
 Puede impedir que los usuarios de su organización compartan sus calendarios o también puede administrar lo que pueden compartir. Por ejemplo, puede restringir el uso compartido solo a horas de disponibilidad.
 
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> y elija **Settings** \> **Services & Add-Ins**
-2. En la página **servicios & complementos** , elija **calendario**y elija si los usuarios de su organización pueden compartir sus calendarios con usuarios ajenos a Office 365 o Exchange, o con cualquier persona. 
-    Si elige compartir con otros usuarios, también puede optar por compartir únicamente la información de disponibilidad.
+1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> y elija **parámetros de configuración** \> de los **servicios & complementos**.
+2. En la página **servicios de & complementos** , elija **calendario**y elija si los usuarios de su organización pueden compartir sus calendarios con usuarios ajenos a Office 365 o Exchange, o con cualquier persona. 
+    Si elige la opción compartir con otros usuarios, también puede optar por compartir únicamente la información de disponibilidad.
 
 3. Elija **Guardar cambios** en la parte inferior de la página.
 
