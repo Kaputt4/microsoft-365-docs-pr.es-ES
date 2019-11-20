@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38687743"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718689"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -421,13 +421,13 @@ Esta pestaña incluye columnas que definen acciones individuales e incluye detal
 
 - **actionDimensionValues:** Lista delimitada por dos puntos y comas de dos dimensiones aplicables en la ficha dimensiones, con el siguiente formato:
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     Por ejemplo:
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -461,7 +461,7 @@ Las plantillas y las evaluaciones admiten el uso de idioma de Markdown para algu
 
 Las viñetas se representan como asteriscos en lugar de las viñetas de Word o Excel. Por ejemplo:
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -480,15 +480,16 @@ Los números se representan como números, pero con espacios para la sangría (t
 
 Los hipervínculos se construyen colocando corchetes alrededor del texto del hipervínculo y el hipervínculo entre paréntesis inmediatamente junto al corchete de cierre.  Por ejemplo:
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 Este texto se representa de la siguiente manera: haga clic [aquí](https://www.microsoft.com) para ir a la Página principal de Microsoft.
+
 Como se muestra en el ejemplo anterior, el administrador de cumplimiento no representa las direcciones URL con subrayado.
 
-El texto en negrita sólo tiene dos asteriscos a cada lado del texto que se mostrará en negrita.  Por ejemplo:
+El texto en negrita tiene dos asteriscos a cada lado del texto que se mostrará en negrita.  Por ejemplo:
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **Este texto se representa en negrita.**
