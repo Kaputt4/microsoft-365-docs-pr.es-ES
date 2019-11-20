@@ -3,7 +3,7 @@ title: Cambios en el contenido de implementación de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/12/2019
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vea el nuevo contenido y los cambios en el contenido en la guía de implementación de Microsoft 365.
-ms.openlocfilehash: d2946034c4f5bd5e650a18859c1fbd6fe3c6fdd4
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: 529d781f31157c6e9ad63a83ef5f8bb96873049d
+ms.sourcegitcommit: 2bdd7b535a7d2a4896df130b7047f8c85f4d47b4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38669721"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38711894"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Cambios en el contenido de implementación de Microsoft 365 Enterprise
+
+## <a name="november-2019"></a>Noviembre de 2019
+
+### <a name="new-content"></a>Nuevo contenido 
+
+- [Migrar de Microsoft 365 Empresa a Microsoft 365 Enterprise E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+
+- [Equipo para un proyecto confidencial de la empresa Contoso](contoso-team-for-top-secret-project.md)
+
+  [![Equipo para un proyecto confidencial de la empresa Contoso](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)](contoso-team-for-top-secret-project.md)
 
 ## <a name="october-2019"></a>Octubre de 2019
 
@@ -30,13 +40,13 @@ ms.locfileid: "38669721"
 
   [![Póster Equipos para datos altamente regulados](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
-  Puede descargar este póster también como un [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
+  También puede descargar este póster en formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 
 - [Póster Sitios de SharePoint para datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md#poster)
 
   [![Póster Sitios de SharePoint para datos altamente regulados](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
-  Puede descargar este póster también como un [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
+  También puede descargar este póster en formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 
 - [El póster para la implementación de Windows 10 con piloto automático](windows10-deploy-autopilot.md) 
 
@@ -60,7 +70,7 @@ ms.locfileid: "38669721"
 
   [Póster para aumentar la productividad de los trabajadores remotos![](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
 
-- [Migrar de Microsoft 365 Empresa a Microsoft 365 Enterprise E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+  También puede descargar este póster en formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 
 ### <a name="updates-and-enhancements"></a>Actualizaciones y mejoras
 
