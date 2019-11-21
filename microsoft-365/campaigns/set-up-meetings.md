@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurar reuniones en línea con Microsoft Teams.
-ms.openlocfilehash: 67a58b17d3e5153d8e0f36788f68ca7c0e204d6f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7ecdec3f7dc329f1ff70bf8d72a7ca5bc946636f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772307"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753589"
 ---
 # <a name="set-up-meetings"></a>Configurar reuniones
 
@@ -40,8 +40,8 @@ Descargue un infografía en [PDF](https://go.microsoft.com/fwlink/?linkid=207871
 ## <a name="best-practices"></a>Procedimientos recomendados
 
 Siga estos procedimientos recomendados para sus reuniones en línea:
-1. Programe sus reuniones en línea directamente en Microsoft Teams. Puede elegir un equipo y un canal, y Microsoft Teams invitará a los participantes de ese equipo o canal automáticamente.
-2. ¿Necesita una reunión improvisada? Si estás en una conversación de uno en uno, elige **reunirse ahora** para iniciar una llamada de audio o vídeo con la persona con la que estás chateando. 
+- Programe sus reuniones en línea directamente en Microsoft Teams. Puede elegir un equipo y un canal, y Microsoft Teams invitará a los participantes de ese equipo o canal automáticamente.
+- ¿Necesita una reunión improvisada? Si estás en una conversación de uno en uno, elige **reunirse ahora** para iniciar una llamada de audio o vídeo con la persona con la que estás chateando. 
 
 
 ## <a name="schedule-a-meeting"></a>Programar una reunión

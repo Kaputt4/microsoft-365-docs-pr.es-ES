@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo configurar y proteger las cuentas de administrador.
-ms.openlocfilehash: 33bf7f8a2a1e666a7822be1d52ac2d81fc681230
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 76c90b48e0f0859ed856b6e3dc772aedfc2ccdaf
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772477"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753747"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteger las cuentas de administrador
 
@@ -38,9 +38,9 @@ Cuando se suscriba a Microsoft 365 Business y escriba la información, se conver
 
 ## <a name="create-additional-admin-accounts"></a>Crear cuentas de administrador adicionales
 
-Use cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para el uso normal de las aplicaciones de Office y solo usar su cuenta administrativa cuando sea necesario para administrar cuentas, dispositivos y trabajar en otras funciones de administración. También es una buena idea quitar la licencia de Microsoft 365 Business de las cuentas de administrador para que no tenga que pagar por ellas.
+Use cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para el uso normal de las aplicaciones de Office y solo usar su cuenta administrativa cuando sea necesario para administrar cuentas y dispositivos, y mientras se trabaja en otras funciones de administración. También es una buena idea quitar la licencia de Microsoft 365 Business de las cuentas de administrador para que no tenga que pagar por ellas.
 
-Querrá configurar al menos una cuenta de administrador global adicional para conceder acceso de administrador a otro empleado de confianza. También puede crear cuentas de administrador independientes para la administración de usuarios (este rol se denomina **Administrador de administración de usuarios**). Para obtener más información, vea acerca de los [roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .
+Querrá configurar al menos una cuenta de administrador global adicional para conceder acceso de administrador a otro empleado de confianza. También puede crear cuentas de administrador independientes para la administración de usuarios (este rol se denomina **Administrador de administración de usuarios**). Para obtener más información, vea [acerca de los roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 Para crear cuentas de administrador adicionales:
 
@@ -51,17 +51,17 @@ Para crear cuentas de administrador adicionales:
 2. En la página **usuarios activos** , seleccione **Agregar un usuario** en la parte superior de la página y, en el panel **nuevo usuario** , escriba el nombre y otra información.
 3. Expanda la sección **roles** y elija **administrador global** para conceder a este usuario acceso de administrador global. También puede elegir **Administrador personalizado** y elegir cualquiera de los roles que se muestran.
 
-    Escriba un correo electrónico alternativo en el cuadro de texto dirección de correo alternativa. Puede usar esta dirección para recuperar la información de contraseña si se bloquea. Para los administradores globales, también se enviará una declaración de facturación a esta dirección.
+    Escriba un correo electrónico alternativo en el cuadro de texto **dirección de correo alternativa** . Puede usar esta dirección para recuperar la información de contraseña si se bloquea. Para los administradores globales, también se enviará una declaración de facturación a esta dirección.
 
     ![Elegir el rol de administrador](media/adminroles.png)
     
-4. En la sección **licencias de productos** , mueva el selector de **Microsoft 365 Business** a desactivado y la **opción** **crear usuario sin licencia de producto** en **activado**.
+4. En la sección **licencias de productos** , mueva el selector de **Microsoft 365 Business** a **desactivado** y la opción **crear usuario sin licencia de producto** en **activado**.
 
     ![Elegir la licencia del producto](media/productlicense.png)
 
 ## <a name="create-an-emergency-admin-account"></a>Crear una cuenta de administrador de emergencia
 
-También debe crear una cuenta de copia de seguridad que no esté configurada con multi-factor Authentication (MFA), de modo que no se bloquee por error (por ejemplo, si pierde el teléfono que está usando como segundo de la comprobación). Asegúrese de que la contraseña de esta cuenta es una frase o al menos 16 caracteres de longitud. Esto se conoce a menudo como una "cuenta de" Break-Glass ".
+También debe crear una cuenta de copia de seguridad que no esté configurada con multi-factor Authentication (MFA), de modo que no se bloquee por error (por ejemplo, si pierde el teléfono que está usando como segunda forma de verificación). Asegúrese de que la contraseña de esta cuenta es una frase o al menos 16 caracteres de longitud. Esto se conoce a menudo como una "cuenta de" Break-Glass ".
 
 ## <a name="create-a-user-account-for-yourself"></a>Crear una cuenta de usuario para usted
 

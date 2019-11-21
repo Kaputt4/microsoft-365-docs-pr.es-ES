@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre las compras de autoservicio.
-ms.openlocfilehash: cbf30a29ed3948cb3b20da919835ed2524163617
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: fb295315eca84614e78792d0900318610c26b239
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721659"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757697"
 ---
 # <a name="self-service-purchase-faq"></a>Preguntas más frecuentes sobre las compras sin asistencia
 
@@ -29,12 +29,11 @@ ms.locfileid: "38721659"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>¿Qué cambios presentó Microsoft en torno a las compras de autoservicio para los productos de la plataforma de energía?
 
-ACTUALIZACIÓN a partir del 31 de octubre de 2019: sobre la semana pasada, hemos estado escuchando los comentarios de los clientes relacionados con la implementación de nuestras capacidades de compra de autoservicio para los productos de la plataforma de energía. En función de los comentarios, realizaremos los siguientes cambios en nuestro plan:
+El 19 de noviembre, proporcionamos a los administradores de ti una forma de desactivar la compra de autoservicio por producto a través de PowerShell. Para obtener información sobre cómo usarla, vea [usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce](allowselfservicepurchase-powershell.md).
 
-- El 19 de noviembre le proporcionará a los administradores de ti una forma de desactivar la compra de autoservicio por cada producto a través de PowerShell. Para obtener información sobre cómo usarla, vea [usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce](allowselfservicepurchase-powershell.md).
-- Para proporcionar más tiempo para prepararse para este cambio, actualizamos el lanzamiento de las funcionalidades de compra de autoservicio para que los productos de la plataforma de energía empiecen con Power BI el 14 de enero para todos los clientes de la nube comercial.  
+Para proporcionar más tiempo para prepararse para este cambio, actualizamos el lanzamiento de las funcionalidades de compra de autoservicio para que los productos de la plataforma de energía empiecen con Power BI el 14 de enero para todos los clientes de la nube comercial.  
 
-A partir del 14 de enero de 2020, las capacidades de administración de licencias, suscripción y compra de autoservicio para los productos de la plataforma de energía (Power BI, Power apps y Power Automate) estarán disponibles para los clientes de la nube comercial en Estados Unidos. La compra de autoservicio ofrece a los usuarios una oportunidad para probar nuevas tecnologías y les permite desarrollar soluciones que beneficien en última instancia a sus organizaciones más grandes. Esta capacidad no estará disponible para los inquilinos de Estados Unidos, en los que se encuentren administración pública, ONG o educación, en este momento. Las adquisiciones centrales y los equipos de ti tendrán visibilidad para todos los usuarios que compren e implementen soluciones de compra de autoservicio a través del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de 365 de Microsoft</a> y podrán desactivar la compra por parte del servicio por productos a través de PowerShell.
+A partir del 14 de enero de 2020, las capacidades de administración de licencias, suscripción y compra de autoservicio para los productos de la plataforma de energía (Power BI, Power apps y Power Automate) estarán disponibles para los clientes de la nube comercial en Estados Unidos. La compra de autoservicio ofrece a los usuarios una oportunidad para probar nuevas tecnologías y les permite desarrollar soluciones que beneficien a sus organizaciones más grandes. Esta capacidad no estará disponible para los inquilinos de Estados Unidos, en los que se encuentren administración pública, ONG o educación, en este momento. Las adquisiciones centrales y los equipos de ti tendrán visibilidad para todos los usuarios que compren e implementen soluciones de compra de autoservicio a través del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>y podrán desactivar la compra por parte del autoservicio por productos a través de PowerShell.
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>¿Por qué Microsoft está agregando una opción de compra de autoservicio para los productos de la plataforma de alimentación?
 
@@ -46,13 +45,13 @@ Microsoft está iniciando la compra de autoservicio para Power BI el 14 de enero
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>¿Se habilitará la compra de autoservicio para los servicios más allá de los productos de la plataforma de energía?
 
-En este momento, la familia de productos de Power Platform es la única oferta de servicios que se ofrece a través de la compra de autoservicio.
+En este momento, solo se ofrecen los productos de la familia Power Platform a través de la compra de autoservicio.
 
 ## <a name="making-a-self-service-purchase"></a>Realizar una compra de autoservicio
 
 ### <a name="how-does-a-customer-make-a-self-service-purchase"></a>¿Cómo realiza un cliente una compra de servicio sin ayuda?
 
-Los clientes podrán realizar una compra de autoservicio en línea desde Microsoft Power BI, Power apps y los sitios web de Power automatizada. Se pedirá primero a los clientes que escriban una dirección de correo electrónico para garantizar que son usuarios de un inquilino de Azure Active Directory (AD) existente y, a continuación, se les indicará que inicien sesión con sus credenciales de Azure AD. Después de iniciar sesión, se le pedirá al cliente que seleccione el número de suscripciones que desea comprar y que proporcione pago con tarjeta de crédito. Una vez completada la compra, podrá empezar a usar su suscripción. El comprador también podrá tener acceso a una vista limitada del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a> donde puede permitir a otros usuarios de su organización usar el producto.
+Los clientes podrán realizar una compra de autoservicio en línea desde Microsoft Power BI, Power apps y los sitios web de Power automatizada. Se pedirá primero a los clientes que escriban una dirección de correo electrónico para asegurarse de que son usuarios de un espacio empresarial de Azure Active Directory (AD) existente. A continuación, se dirigirán para iniciar sesión con sus credenciales de Azure AD. Después de iniciar sesión, se le pedirá al cliente que seleccione el número de suscripciones que desea comprar y que proporcione pago con tarjeta de crédito. Una vez completada la compra, podrá empezar a usar su suscripción. El comprador también podrá tener acceso a una vista limitada del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a> donde puede permitir a otros usuarios de su organización usar el producto.
 
 ### <a name="what-are-the-payment-options-for-self-service-purchases"></a>¿Cuáles son las opciones de pago para las compras de servicio automático?
 

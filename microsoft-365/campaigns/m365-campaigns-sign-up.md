@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Registro paso a paso para Microsoft 365 para las campañas. Proteja su campaña de Cybersecurity amenazas para el correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: b6866a3c2291b00934b5808777f795e5b99faa34
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772467"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753609"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Inscríbase en Microsoft 365 para las campañas 
 
@@ -75,11 +75,11 @@ Si ya tiene y la suscripción existente a Office 365 para empresas, por ejemplo,
 > No puede Agregar la oferta de Microsoft 365 para campañas a un inquilino empresarial de Microsoft 365 existente.
 
 1. En su invitación a Microsoft 365 para el correo electrónico de las campañas, seleccione **inscribir su organización >**. Esto le llevará al registro de 365 de Microsoft.
-2. En la página de **bienvenida, vamos a conocer** la página, haga clic o pulse en ¿ **quiere agregarlo a una suscripción existente? Inicie sesión**.
+2. En la **pantalla de bienvenida, vamos a conocer** la página, haga clic o pulse en ¿ **quiere agregarla a una suscripción existente? Inicie sesión**.
     
     ![Elija iniciar sesión en la esquina superior derecha.](media/addtoexisting.png)
-3. En la página de inicio de sesión, escriba el alias de administración de la suscripción existente, por ejemplo, *Alicia @ VoteContoso<span></span>. org* y, a continuación, elija **siguiente**, escriba la contraseña y elija **iniciar sesión**.
-4. En el **¿qué aspecto tiene?** escriba el número de usuarios que tiene y elija **siguiente**. Tenga en cuenta que no tiene que escribir aquí un código de promoción porque ya está incluido en la dirección URL de la invitación.
+3. En la página de inicio de sesión, escriba el alias de administración de la suscripción existente, por ejemplo *<span></span>Alice@VoteContoso. org*, elija **siguiente**, escriba la contraseña y, a continuación, elija **iniciar sesión**.
+4. En el **¿qué aspecto tiene?** escriba el número de usuarios que tiene y elija **siguiente**. No es necesario escribir un código de promoción porque ya está incluido en la dirección URL de la invitación.
 5. En la página **¿cómo quiere pagar?** , escriba el método de pago y seleccione **realizar pedido**.
 
 Una vez que haya completado estos pasos, estará listo para [asignar las licencias nuevas](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) al personal de la campaña. 

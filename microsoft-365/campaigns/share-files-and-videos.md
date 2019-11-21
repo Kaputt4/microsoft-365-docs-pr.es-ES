@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Comparta archivos y vídeos dentro de su campaña con Microsoft Teams y SharePoint.
-ms.openlocfilehash: 14daa826e7df961baefaf7f6e7a17530842aad25
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 446285c375b64c6622905d3320de92c4ddb2dca0
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031195"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753619"
 ---
 # <a name="share-files-and-videos"></a>Compartir archivos y vídeos
 
-Cuando necesite controlar quién puede ver y quién puede editar los archivos, debe almacenar los archivos en una ubicación segura, donde puede asegurarse de que los permisos se aplican correctamente. Puede usar Microsoft Teams para almacenar los archivos y, a continuación, compartir los archivos dentro o fuera de la campaña con Microsoft Teams o mediante el envío de vínculos de SharePoint. El envío de un vínculo en lugar de un archivo adjunto de correo electrónico significa que sabe quién está viendo y modificando los archivos, y que no se puede ver ni modificar sin su permiso. 
+Cuando necesite controlar quién puede ver y quién puede editar los archivos, debe almacenarlos en una ubicación segura, donde puede asegurarse de que los permisos se aplican correctamente. Puede usar Microsoft Teams para almacenar los archivos y, a continuación, compartir los archivos dentro o fuera de la campaña mediante Microsoft Teams o mediante el envío de vínculos de SharePoint. El envío de un vínculo en lugar de un archivo adjunto de correo electrónico significa que sabe quién está viendo y modificando los archivos, y que no se puede ver ni modificar sin su permiso. 
 
 ![Diagrama de una ventana de Microsoft Teams en el que se muestra la pestaña archivos y obtener el vínculo en el menú](media/m365-democracy-teams-sharefiles.png)
 

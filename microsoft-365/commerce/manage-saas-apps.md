@@ -1,6 +1,6 @@
 ---
 title: Administrar aplicaciones de software como servicio de su organización
-description: Obtenga información sobre cómo activar y administrar aplicaciones de terceros en el centro de administración de Microsoft 365
+description: Obtener información sobre cómo activar y administrar aplicaciones de terceros en el centro de administración de Microsoft 365
 ms.prod: ''
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,22 +11,22 @@ ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: f14809e58c1580333ba4e412a2b442df79e61975
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 047c93dd6dbeeb1e55bfc22b337f42870f34e104
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029034"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753559"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administrar suscripciones de aplicaciones de terceros para la organización
 
-Puede administrar las licencias y la facturación de aplicaciones de terceros en el centro de administración de Microsoft 365 con el modo de vista previa activado. Las características actualizadas incluyen una administración de suscripciones mejorada, un mejor acceso a la información de facturación y una mayor flexibilidad para la administración de facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como un servicio que los clientes compran directamente o desde un proveedor de terceros.
+Puede administrar las licencias y la facturación de aplicaciones de terceros en el centro de administración de Microsoft 365 con el modo de vista previa activado. Las características actualizadas incluyen una administración de suscripciones mejorada, un mejor acceso a la información de facturación y una mayor flexibilidad para la administración de facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como un servicio que los clientes compren directamente o de un proveedor de terceros.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Cómo obtener aplicaciones de software como servicio
 Hay varias formas de comprar aplicaciones de terceros.
 - **Compra directa** : los clientes pueden comprar directamente suscripciones de [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource](https://www.appsource.com/). 
 - **Compra de asociados** : trabaje con un Partner a través del centro de asociados para comprar suscripciones. 
-- **Propuesta de Microsoft** : responda a una propuesta de Microsoft sales que incluya aplicaciones de terceros. 
+- **Propuesta de Microsoft** : responda a una propuesta de ventas de Microsoft que incluya aplicaciones de terceros. 
 
 Una vez que los clientes compren las aplicaciones y acepten el contrato de cliente de Microsoft, podrán administrarlos en el centro de administración de Microsoft 365 o en Microsoft Store for Business.
 
@@ -38,7 +38,7 @@ Los proveedores de aplicaciones venden sus aplicaciones a una tasa plana o media
 La compatibilidad con aplicaciones de terceros está disponible en estas regiones:
 - Argentina
 - Australia
-- Canada
+- Canadá
 - Chile
 - Francia
 - Alemania
@@ -50,7 +50,7 @@ La compatibilidad con aplicaciones de terceros está disponible en estas regione
 - Europa occidental
 
 ## <a name="set-up-app"></a>Configurar la aplicación
-Los administradores deben activar aplicaciones de terceros antes de asignarlas a los usuarios. Se activan en el portal del editor de terceros. 
+Los administradores deben activar aplicaciones de terceros antes de asignarlas a los usuarios. Estas aplicaciones se activan en el portal del proveedor de terceros. 
 
 **Para activar aplicaciones de terceros**
 1. Vaya al [centro de administración de 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=837890)y Active **probar la vista previa**.
@@ -60,18 +60,18 @@ Los administradores deben activar aplicaciones de terceros antes de asignarlas a
 
 Se le dirigirá al sitio del editor de la aplicación donde puede activar la aplicación. 
 
-## <a name="managing-3rd-party-apps"></a>Administración de aplicaciones de terceros
-Los administradores administran aplicaciones de terceros en dos ubicaciones: Centro de administración de Microsoft 365 y el portal del proveedor de aplicaciones de terceros. Esto es lo que puede hacer en cada portal.
+## <a name="managing-third-party-apps"></a>Administración de aplicaciones de terceros
+Los administradores administran aplicaciones de terceros en dos ubicaciones: el centro de administración de Microsoft 365 y el portal del proveedor de aplicaciones de terceros. Esto es lo que puede hacer en cada portal.
 
 ### <a name="app-status"></a>Estado de la aplicación
-Una vez activada, la aplicación permanecerá activa a menos que se cancele, expire o si el pago no se mantiene actualizado. Estos eventos cambian el estado de la aplicación a deshabilitado. Una vez que una aplicación está deshabilitada, no se puede reactivar. Debe comprar otra copia de la aplicación para seguir utilizándola.
+Una vez activada, la aplicación permanece activa a menos que se cancele, expire o si el pago no se mantiene actualizado. Estos eventos cambian el estado de la aplicación a deshabilitado. Una vez que una aplicación está deshabilitada, no se puede reactivar. Debe comprar otra copia de la aplicación para seguir utilizándola.
 
 | Centro de administración de 365 de Microsoft | Portal del publicador de aplicaciones |
 | --- | --- |
 | Cambiar la cantidad de licencias <br> Administrar la forma de pago de la factura <br> Administrar la forma de pago de la factura <br> Cambiar el método de pago (tarjeta de crédito) <br> Ver factura <br> Cancelar la suscripción a la aplicación | Configurar la aplicación (una vez por cada aplicación) <br> Asignar licencias a usuarios <br> Soporte técnico |
 
 ## <a name="assign-licenses"></a>Asignar licencias
-Los administradores deben activar aplicaciones de terceros antes de asignarlas a los usuarios. Se activan en el portal del editor de terceros. En la página aplicación, en configuración & acciones, seleccione el vínculo para asignar licencias.
+Los administradores deben activar aplicaciones de terceros antes de asignarlas a los usuarios. Se activan en el portal del proveedor de terceros. En la página aplicación, en **configuración & acciones**, seleccione el vínculo para asignar licencias.
 
 **Para asignar aplicaciones de terceros**
 
@@ -99,7 +99,7 @@ Cada aplicación de software como un servicio tiene asignado un perfil de factur
 
 Para obtener más información acerca de los perfiles de facturación, consulte Understanding [Billing profiles](https://docs.microsoft.com/microsoft-store/billing-profile). 
 
-**Para cambiar el perfil de facturación en una suscripciones de aplicación de software como servicio**
+**Para cambiar el perfil de facturación en una suscripción de aplicación de software como servicio**
 
 1. Vaya al [centro de administración de 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=837890)y Active **probar la vista previa**.
 2. Seleccione productos de **facturación** > **&** > **aplicaciones**de servicios.

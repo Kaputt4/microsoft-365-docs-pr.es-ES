@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365 para las campañas.
-ms.openlocfilehash: 2533710ccb7b173f5cc1fd19b185fcd32b7801c9
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 93bb36f115ee5f83e07ac9623c852fec4dbf205f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031295"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753629"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteger equipos con Windows 10 PC y Mac no administrados
 
-Puede administrar equipos con Windows 10 PC y Mac mediante la inscripción en Microsoft Intune, lo que le permite asegurarse de que THT son correctos y seguros antes de obtener acceso a los datos de su entorno. Sin embargo, muchas campañas y pequeñas empresas incluyen el personal que lleva sus propios dispositivos (BYOD), que no se administrarán en la organización. Para estos equipos PC y Mac no administrados, use este artículo para asegurarse de que las capacidades de seguridad mínima están configuradas. 
+Para administrar equipos con Windows 10 y equipos Mac, puede inscribirse en Microsoft Intune, lo que le permite asegurarse de que son correctos y seguros antes de obtener acceso a los datos de su entorno. Sin embargo, muchas campañas y pequeñas empresas incluyen el personal que lleva sus propios dispositivos (BYOD), que no se administrará en la organización. Para estos equipos PC y Mac no administrados, use este artículo para asegurarse de que las capacidades de seguridad mínima están configuradas. 
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -53,13 +53,12 @@ El cifrado de dispositivos está disponible en una amplia gama de dispositivos W
  Si el cifrado del dispositivo no está disponible en el dispositivo, puede activar el [cifrado de BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) estándar en su lugar. (BitLocker no está disponible en Windows 10 Home Edition). 
 
 
-
 **Proteger el dispositivo con la seguridad de Windows**<p>
 Si tiene Windows 10, obtendrá la protección antivirus más reciente con la seguridad de Windows. Al iniciar Windows 10 por primera vez, la seguridad de Windows está activa y ayudando activamente a proteger tu equipo mediante la detección de malware (software malintencionado), virus y amenazas de seguridad. La seguridad de Windows usa la protección en tiempo real para analizar todo lo que descarga o ejecuta en el equipo.
 
 Windows Update descarga automáticamente las actualizaciones para la seguridad de Windows para ayudar a mantener tu PC seguro y protegerlo de amenazas.
 
-Si tiene una versión anterior de Windows y usa Microsoft Security Essentials, es una buena idea cambiar a la seguridad de Windows. Para obtener más información, consulte [ayudar a proteger el dispositivo con seguridad de Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security) .
+Si tiene una versión anterior de Windows y usa Microsoft Security Essentials, es una buena idea cambiar a la seguridad de Windows. Para obtener más información, consulte [ayudar a proteger el dispositivo con la seguridad de Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
 **Activar Firewall de Windows**<p>
 Siempre debe ejecutar Firewall de Windows incluso si tiene activado otro Firewall. Si se desactiva el Firewall de Windows, es posible que el dispositivo (y la red, si tiene uno) sean más vulnerables a un acceso no autorizado. Consulte [activar o desactivar Firewall de Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) para obtener instrucciones
@@ -71,7 +70,7 @@ El cifrado de disco protege los datos cuando se pierden o roban dispositivos. Fi
 **Proteger su Mac del malware**<p>
 Microsoft recomienda instalar y usar software antivirus fiable en su Mac. Vea el siguiente artículo para obtener una lista de opciones: [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
-También puede reducir el riesgo del malware mediante el uso de software solo de orígenes confiables. Las opciones de configuración de seguridad & preferencias de privacidad le permiten especificar los orígenes del software instalado en su Mac. Consulte [proteger su Mac del malware](https://support.apple.com/kb/PH25087) para obtener más información.
+También puede reducir el riesgo del malware mediante el uso de software solo de orígenes confiables. Las opciones de configuración de seguridad & preferencias de privacidad le permiten especificar los orígenes del software instalado en su Mac. Para obtener más información, consulte [proteger su Mac del malware](https://support.apple.com/kb/PH25087).
 
 **Activar la protección del firewall**<p>
 Use la configuración del firewall para proteger su Mac del contacto no deseado iniciados por otros equipos cuando esté conectado a Internet o a una red. Sin esta protección, es posible que su Mac sea más vulnerable al acceso no autorizado. Consulte [acerca del firewall de la aplicación](https://support.apple.com/HT201642) para obtener instrucciones.

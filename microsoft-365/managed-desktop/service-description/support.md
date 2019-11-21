@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c30f9e9a9f45ac8a68c285f4c594b238874f768
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 134e971e00fc64d3ea005d32ed95359ed8fb8feb
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982511"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757667"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Soporte para escritorio administrado de Microsoft
 
@@ -39,7 +39,7 @@ Productos compatibles:
 
 Detalles de compatibilidad:
 
-- Current: Norteamérica, Canadá (excepto Quebec), sólo Reino Unido, Australia y Nueva Zelanda (24x7x365) 
+- Actual: Estados Unidos, Canadá (excepto Quebec), Reino Unido, Bélgica, Luxemburgo, Países Bajos, Australia y Nueva Zelanda (24x7x365) 
 - Inglés es el único idioma admitido para conversaciones telefónicas y de chat con los clientes 
 - Estamos asociados con, no reemplazando, el Departamento de soporte técnico de la empresa; el Departamento de soporte técnico sigue administrando las aplicaciones de línea de negocio (LOB), los recursos de red, etc. 
 - Los dispositivos de escritorio administrados por Microsoft del grupo "prueba" y los dispositivos que no forman parte del escritorio administrado de Microsoft están fuera de ámbito 

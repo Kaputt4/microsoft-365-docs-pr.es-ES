@@ -12,12 +12,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: Obtenga información sobre la nueva característica de cobertura.
-ms.openlocfilehash: 3414fce02844629826edc6d9474f746aa27cfa2e
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: fff63b3c61ad95696e7f7677a34154ad65e82259
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012510"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753579"
 ---
 # <a name="allotment-basics"></a>Conceptos básicos sobre la cobertura
 
@@ -47,4 +47,4 @@ Debe ser administrador global o de licencia para empezar con una cobertura.
 
 ## <a name="getting-started"></a>Introducción
 
-La característica coberturas está disponible en una versión preliminar privada sólo para un número reducido de clientes. Si está interesado en unirse, rellene este formulario:[https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)
+La característica coberturas está disponible en una versión preliminar privada sólo para un número reducido de clientes. Si está interesado en unirse, rellene este formulario: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

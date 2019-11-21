@@ -1,24 +1,26 @@
 ---
 title: Ver la actividad de etiquetas de documentos
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: Con el Explorador de actividad de etiquetas en el Centro de seguridad y cumplimiento de Office 365, puede buscar y visualizar rápidamente actividades de etiquetas de todo el contenido en SharePoint OneDrive para la Empresa en los últimos 30 días. Estos son datos en tiempo real que le ofrecen una vista clara de lo que ocurre en el espacio empresarial.
-ms.openlocfilehash: 6b68c82e364432107d616c5184959cd879cdcb9a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99e3f461ed1ff38b2f204a2823299a3c441c995f
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093061"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38710144"
 ---
 # <a name="view-label-activity-for-documents"></a>Ver la actividad de etiquetas de documentos
 
@@ -36,7 +38,7 @@ Por ejemplo, con el Explorador de actividad de etiquetas, puede:
     
 - Vea la actividad de etiquetas de carpetas, así como de documentos individuales. Próximamente, podrá mostrarse el número de archivos de la carpeta que se etiquetaron como resultado de etiquetar la carpeta.
     
-Encontrará el Explorador de actividad de etiquetas en el &amp;Centro de seguridad y cumplimiento > **Gobierno de datos** > **Explorador de actividad de etiquetas**.
+Encontrará el Explorador de actividad de etiquetas en el &amp;Centro de seguridad y cumplimiento > **Gobierno de información** > **Explorador de actividad de etiquetas**.
   
 Tenga en cuenta que, para usar el Explorador de actividad de etiquetas, se necesita una suscripción de Office 365 Enterprise E5.
   

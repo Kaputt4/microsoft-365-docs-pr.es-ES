@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo Microsoft 365 para las campañas afecta a los usuarios.
-ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11a141ba24aa45c0c60dec064877f319f0b5ded2
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031245"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753599"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Cómo Microsoft 365 para las campañas afecta a los usuarios
 
@@ -74,7 +74,3 @@ Es posible que los usuarios estén tentados a compartir y almacenar los archivos
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurar dispositivos de Windows 10 administrados
 Le recomendamos que los miembros del personal más importantes usen los dispositivos Windows 10 que haya adquirido recientemente y que administre. Le mostraremos cómo [administrar y proteger estos dispositivos](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Esto garantiza que los miembros del personal que son el objetivo de valor más alto para los hackers reciban la mayor protección. 
-
-
-
-  

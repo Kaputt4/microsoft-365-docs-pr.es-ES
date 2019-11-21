@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configure las directivas de cumplimiento de comunicaciones para configurar las comunicaciones de los empleados para revisión.
-ms.openlocfilehash: 76b28443d2fa77967933ea61f2724a2a5ff072be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 0a830914a22968119d836e2190a6f133d91fd305
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38687645"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755608"
 ---
 # <a name="configure-communication-compliance-for-microsoft-365-preview"></a>Configurar el cumplimiento de la comunicación para Microsoft 365 (versión preliminar)
 
@@ -42,7 +42,7 @@ Siga estos pasos para configurar y usar el cumplimiento de la comunicación en s
 
 - **Paso 2 (obligatorio)**: [hacer que el cumplimiento de la comunicación esté disponible en su organización](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Agregarse a sí mismo al rol de **Administrador de revisión de supervisión** para que pueda configurar directivas. También necesitará asignar las funciones de **Administración de casos** y **revisión** a personas o grupos que harán la investigación y la acción de corrección en mensajes con coincidencias de directivas. Cualquiera que tenga estos roles asignados puede tener acceso a la página cumplimiento en la **comunicación** en el centro de cumplimiento de Microsoft 365. Si el correo electrónico que se puede rever está hospedado en Exchange Online, cada revisor debe tener [acceso remoto de PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Agregarse a sí mismo al rol de **Administrador de revisión de supervisión** para que pueda configurar directivas. También tendrá que crear un grupo con el administrador de **revisión de supervisión**, los roles de **Administración de casos** y **revisión** para personas o grupos que vayan a tomar medidas de investigación y corrección en mensajes con coincidencias de directivas. Cualquiera que tenga estos roles asignados puede tener acceso a la página cumplimiento en la **comunicación** en el centro de cumplimiento de Microsoft 365. Si el correo electrónico que se puede rever está hospedado en Exchange Online, cada revisor debe tener [acceso remoto de PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Paso 3 (obligatorio)**: [configurar una directiva de cumplimiento de la comunicación](#step-3-create-a-communication-compliance-policy-required)
 
@@ -77,29 +77,7 @@ Para obtener más información acerca de la configuración de grupos, vea:
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>Paso 2: hacer que el cumplimiento de la comunicación esté disponible en su organización (obligatorio)
 
-Para que el cumplimiento de la **comunicación** esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365, debe tener asignado el rol de administrador de revisión de supervisión. Para investigar y corregir mensajes con coincidencias de directivas, debe tener asignados los roles de **revisión** y **Administración de casos** .
-  
-Para ello, puede agregarse como miembro del grupo de funciones de revisión de supervisión, o bien puede crear un nuevo grupo de roles.
-  
-### <a name="add-required-roles-to-the-supervisory-reviewer-role-group"></a>Adición de los roles necesarios al grupo de roles revisor de supervisión
-
-1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
-
-2. En el centro de cumplimiento de Microsoft 365, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
-
-3. Seleccione el grupo de roles **revisión de supervisión** y, a continuación, haga clic en **Editar** en la sección **roles asignados** de la página detalles.
-
-4. Seleccione **Editar**y, a continuación, seleccione **Agregar**. Marque la casilla de verificación **Administración de casos** y **revisión**y, después, seleccione **Agregar**.
-
-5. Seleccione **listo**y haga clic en **Guardar**.
-
-6. En la sección **miembros** , seleccione **Editar** para agregar las personas que desea que administren el cumplimiento de la comunicación de su organización.
-
-7. Seleccione **Editar**y, a continuación, seleccione **Agregar**. Marque la casilla de verificación para todos los usuarios y grupos a los que desee administrar los mensajes con coincidencias de directivas y, después, seleccione **Agregar**.
-
-8. Seleccione **listo**y haga clic en **Guardar**.
-
-9. Seleccione **cerrar** para salir de la página de detalles del grupo de roles.
+Para que el cumplimiento de la **comunicación** esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365, debe tener asignado el rol de administrador de **revisión de supervisión** . Además, para investigar y corregir mensajes con coincidencias de directivas, debe crear un grupo para revisores con el **Administrador de revisión de supervisión**, los roles de **Administración de casos** y **revisión** .
 
 ### <a name="create-a-new-role-group"></a>Crear un nuevo grupo de roles
 
