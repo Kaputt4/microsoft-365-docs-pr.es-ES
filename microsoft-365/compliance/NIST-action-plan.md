@@ -12,12 +12,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 5c43a0e26dfc052c23cbaf349bd541d996dca558
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 9a1ca4898696923b7dcbe22879906b25ccebcd13
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "38710132"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757657"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Plan de acción NIST 800-53 de Microsoft 365: principales prioridades de los primeros 30 días, 90 días y el periodo posterior
 
@@ -25,7 +25,7 @@ Microsoft 365 le facilita operar su empresa con un marco de control de la nube q
 
 Microsoft se reconoce como líder del sector en seguridad en la nube. Con años de experiencia en la creación de software empresarial y la ejecución de servicios en línea, nuestro equipo está en constante aprendizaje y nuestros servicios y aplicaciones se actualizan continuamente para ofrecer un servicio de productividad en la nube seguro que cumpla los rigurosos estándares de cumplimiento del sector. Los servicios de nube de administración pública de Microsoft, incluido Office 365 Administración pública de EE. UU., cumplen los exigentes requisitos del programa FedRAMP (US Federal Risk and Authorization Management Program), lo que permite que las agencias federales de Estados Unidos se beneficien del ahorro de costos y la rigurosa seguridad de Microsoft Cloud.
 
-En este artículo se incluye un plan de acción prioritario que puede seguir mientras trabaja para cumplir los requisitos del estándar NIST 800-53. Este plan de acción se desarrolló en asociación con Protiviti, un partner de Microsoft especializado en cumplimiento normativo. Puede obtener más información sobre cómo usar este plan de acción en Microsoft Ignite si asiste a esta sesión: [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions) (Establezca su estrategia de protección de información y su ruta de cumplimiento de Microsoft 365), presentada por Maithili Dandige (Microsoft) y Antonio Maio (Protiviti).
+Este artículo comprende un plan de acción prioritaria que se puede aplicar mientras se trabaja para cumplir con los requisitos del NIST 800-53. Este plan de acción fue desarrollado en colaboración con Protiviti, un socio de Microsoft especializado en el cumplimiento de las normativas. 
 
 ## <a name="action-plan-outcomes"></a>Resultados del plan de acción
 
