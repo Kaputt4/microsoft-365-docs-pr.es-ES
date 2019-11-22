@@ -3,7 +3,7 @@ title: Configurar SPF en Office 365 para ayudar a evitar la suplantación de ide
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 11/07/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,21 +14,21 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: En este artículo se describe cómo actualizar un registro de servicio de nombre de dominio (DNS) para poder utilizar un marco de directivas de remitente (SPF) con su dominio personalizado en Office 365. SPF permite validar el correo electrónico saliente enviado desde su dominio personalizado.'
-ms.openlocfilehash: 4861799695b28b0f096000ddee6e20d7a187a5aa
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: 547577fbcddca6e17d8e70a7fda8ffa469dfb525
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038869"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191285"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad
 
  **Resumen:** En este artículo se describe cómo actualizar un registro de servicio de nombre de dominio (DNS) para poder utilizar un marco de directivas de remitente (SPF) con su dominio personalizado en Office 365. SPF permite validar el correo electrónico saliente enviado desde su dominio personalizado.
   
-Para poder utilizar un dominio personalizado, Office 365 requiere que agregue un registro TXT de marco de directivas de remitente (SPF) en su registro DNS para ayudar a evitar la suplantación de identidad. SPF identifica qué servidores de correo pueden enviar correo en su nombre. Básicamente, puede evitar la suplantación de identidad con la ayuda de SPF, junto con DKIM, DMARC y otras tecnologías compatibles con Office 365. SPF se agrega como un registro TXT que DNS usa para identificar qué servidores de correo pueden enviar correo en nombre de su dominio personalizado. Los destinatarios pueden consultar el registro TXT de SPF para determinar si un mensaje de su dominio personalizado procede de un servidor de mensajería autorizado.
+Para poder utilizar un dominio personalizado, Office 365 requiere que agregue un registro TXT de Sender Policy Framework (SPF) a su registro DNS para evitar la suplantación de identidad. SPF identifica qué servidores de correo pueden enviar correo en su nombre. Básicamente, SPF, junto con DKIM, DMARC y otras tecnologías soportadas por Office 365, ayudan a prevenir el spoofing y el phishing. SPF se agrega como un registro TXT que es usado por DNS para identificar qué servidores de correo pueden enviar correo en nombre de su dominio personalizado. Los sistemas de correo del destinatario se refieren al registro SPF TXT para determinar si un mensaje de su dominio personalizado proviene de un servidor de mensajería autorizado. 
   
 Por ejemplo, supongamos que el dominio personalizado contoso.com usa Office 365. Le agrega un registro TXT de SPF que incluye los servidores de mensajería de Office 365 como servidores de correo legítimos para su dominio. Cuando el servidor de mensajería receptor obtiene un mensaje de joe@contoso.com, el servidor busca el registro TXT de SPF para contoso.com y averigua si el mensaje es válido. Si el servidor receptor descubre que el mensaje proviene de un servidor que no es ninguno de los servidores de mensajería de Office 365 indicados en el registro SPF, el servidor de correo receptor puede rechazar el mensaje como correo no deseado.
-  
+
 Además, si el dominio personalizado no tiene un registro TXT de SPF, algunos servidores de recepción pueden rechazar directamente el mensaje. Esto se debe a que el servidor de recepción no puede validar que los mensajes procedan de un servidor de mensajería autorizado.
   
 Si ya ha configurado el correo para Office 365, ya ha incluido servidores de mensajería de Microsoft en DNS como un registro TXT de SPF. Sin embargo, en algunos casos puede que sea necesario actualizar el registro TXT de SPF en DNS. Por ejemplo:
@@ -41,7 +41,7 @@ Si ya ha configurado el correo para Office 365, ya ha incluido servidores de men
 
 ## <a name="updating-your-spf-txt-record-for-office-365"></a>Actualizar el registro TXT de SPF para Office 365
 
-Antes de actualizar el registro TXT de DNS, debe recopilar cierta información y determinar el formato del registro. Esto le ayudará a impedir que se generen errores de DNS. Para obtener ejemplos avanzados y explicaciones más detalladas sobre la sintaxis admitida de SPF, vea [Cómo funciona SPF para evitar la suplantación de identidad en Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+Antes de actualizar el registro TXT en DNS, debe recopilar cierta información y determinar el formato del registro. Esto le ayudará a evitar que genere errores de DNS. Para ejemplos avanzados y una discusión más detallada sobre la sintaxis SPF soportada, consulte [Cómo funciona el SPF para prevenir la suplantación de IP y la suplantación de identidad en Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
   
 Recopile esta información:
   
