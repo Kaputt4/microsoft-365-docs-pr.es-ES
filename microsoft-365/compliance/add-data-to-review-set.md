@@ -13,25 +13,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 03328cfeada2e6bc493bfff0ee64f95904b8c9f8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Agregue los resultados de una búsqueda asociada a un caso de exhibición de documentos electrónicos avanzado. Los elementos se copian de su ubicación original y se copian en una ubicación de almacenamiento de Azure proporcionada por Microsoft. Los elementos también se vuelven a indexar y la exhibición avanzada de documentos electrónicos realizará el reconocimiento óptico de caracteres (OCR) en los archivos de imagen y cargará el texto de la imagen para revisión y análisis.
+ms.openlocfilehash: 0a1b2a245e3a650d6a35bc1032539e7b7e969dc9
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092182"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191185"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 
 Cuando esté satisfecho con los resultados de una búsqueda y esté listo para revisar y analizar los resultados de la búsqueda, puede agregarlos a un conjunto de revisión en el caso. La copia de los datos originales en el conjunto de revisión también facilita el proceso de revisión y análisis al proporcionarle herramientas avanzadas de análisis como detección de temas, detección de casi duplicados y identificación de subprocesos de correo electrónico. También puede agregar datos de orígenes de datos que no sean de Office 365 a un conjunto de revisión, de modo que pueda revisar los datos además de los datos que recopila de Office 365. 
 
-Cuando se agregan los resultados de una búsqueda a un conjunto de revisión (los conjuntos de revisión se encuentran en la ficha **Review sets** del caso), se producen las siguientes situaciones:
+Cuando se agregan los resultados de una búsqueda a un conjunto de revisión (los conjuntos de revisión en un caso se enumeran en la ficha **Review sets** ), se producen las siguientes situaciones:
 
 - La búsqueda se vuelve a ejecutar. Esto significa que los resultados de la búsqueda reales que se copien en el conjunto de revisión pueden ser diferentes de los resultados estimados que se devolvieron cuando se ejecutó la búsqueda por última vez.
 
 - Todos los elementos de los resultados de la búsqueda se copian del origen de datos original en los servicios Live 365 de Office y se copian en una ubicación de almacenamiento seguro de Azure en la nube de Microsoft.
 
-- Todos los elementos (incluido el contenido y los metadatos) se vuelven a indizar para que todos los datos del conjunto de revisión se puedan buscar por completo durante la revisión de los datos del caso. Volver a indizar los datos da como resultado búsquedas exhaustivas y muy rápidas al buscar los datos en el conjunto de revisión durante la investigación de caso.
+- Todos los elementos (incluido el contenido y los metadatos) se vuelven a indizar para que todos los datos del conjunto de revisión se puedan buscar por completo durante la revisión de los datos del caso. Al volver a indizar los datos, se producen búsquedas exhaustivas y rápidas al buscar en los datos del conjunto de revisión durante la investigación de caso.
 
 Para agregar datos a un conjunto de revisión, haga clic en una búsqueda en la ficha **búsquedas** y, a continuación, haga clic en **Agregar resultados a revisión establecida** en la página de flotante.
 
@@ -49,8 +49,14 @@ Si desea validar los resultados de una búsqueda más minuciosamente antes de ag
 
 Para agregar un ejemplo a un conjunto de revisión, haga clic en una búsqueda en la ficha **búsquedas** y haga clic en **muestra** en la página de flotante. En la página **parámetros de muestreo** , elija una de las siguientes opciones:
 
-- **Nivel de confianza%** y **porcentaje de intervalo de confianza** : los elementos agregados al conjunto de revisión estarán determinados por los parámetros estadísticos que establezca. Si normalmente usa un nivel de confianza y un intervalo para los resultados de muestreo, debe especificarlos en los cuadros desplegables. De lo contrario, use la configuración predeterminada.
+- **Nivel de confianza%** y **intervalo de confianza%** : los elementos agregados al conjunto de revisión estarán determinados por los parámetros estadísticos que establezca. Si normalmente usa un nivel de confianza y un intervalo para los resultados de muestreo, debe especificarlos en los cuadros desplegables. De lo contrario, use la configuración predeterminada.
 
 - **Muestra aleatoria%** : los elementos agregados al conjunto de revisión se basan en una selección aleatoria del porcentaje especificado del número total de elementos devueltos por la búsqueda.
 
 Después de seleccionar y configurar una de las opciones anteriores, elija un conjunto de revisiones para agregar el ejemplo y, a continuación, haga clic en **Enviar**. Una vez más, puede realizar un seguimiento del progreso en la ficha **trabajos** o en la ficha **búsquedas** mediante la supervisión del estado en la columna **datos agregados a la configuración de revisión** .
+
+## <a name="optical-character-recognition"></a>Reconocimiento óptico de caracteres
+
+Cuando se agregan resultados de búsqueda a un conjunto de revisión, la funcionalidad de reconocimiento óptico de caracteres (OCR) en eDiscovery avanzado extrae automáticamente el texto de las imágenes e incluye el texto de la imagen con los datos que se agregan a un conjunto de revisión. Esto le permite realizar revisiones y análisis adicionales del texto de las imágenes. OCR es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Para obtener una lista de los formatos de archivo de imagen que se admiten para OCR, consulte [tipos de archivo admitidos en EDiscovery avanzado](supported-filetypes-ediscovery20.md#image).
+
+Debe habilitar la funcionalidad de OCR para cada caso que cree en la exhibición avanzada de documentos electrónicos. Para obtener más información, vea [Configure Search and Analytics Settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

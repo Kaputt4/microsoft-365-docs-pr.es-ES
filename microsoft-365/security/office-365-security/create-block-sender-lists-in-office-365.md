@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Las opciones de la lista bloquear remitente incluyen los remitentes bloqueados de Outlook, los remitentes de correo no deseado y las listas de bloqueo de dominio, las listas de direcciones IP bloqueadas y las reglas de transporte de Exchange (ETR) también denominadas reglas de flujo de correo.
-ms.openlocfilehash: 7f52472f54fb1de93f02b271ec6338da3fb1af93
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032405"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793714"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados en Office 365
 
@@ -49,7 +49,7 @@ Los pasos para configurar esto son diferentes entre [Outlook Web App](https://su
 
 Cuando se ven afectados varios usuarios, el ámbito es más amplio y es necesario usar una directiva de bloqueo de correo no deseado de lista de remitentes/dominios en toda la empresa. Puede encontrar los pasos detallados en [configurar las directivas de filtro de correo no deseado](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) . Cualquier mensaje bloqueado mediante este método seguirá la acción de correo no deseado, tal como se ha configurado en la Directiva.
 
-El límite máximo de estas listas es de aproximadamente 1000 entradas.
+El límite máximo de estas listas es de aproximadamente 1000 entradas; Aunque solo podrá especificar 30 entradas en el portal. Debe usar PowerShell para agregar más de 30 entradas.
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Usar reglas de transporte de Exchange (ETR) para bloquear remitentes específicos
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si desea asegurarse de que recibe el correo de un remitente determinado, ya que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de correo no deseado en el centro de administración de Exchange.
-ms.openlocfilehash: 2a161573e3b51f12cd7582df26a021fab3f8de84
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033695"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793684"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Crear listas de remitentes seguros en Office 365
 
@@ -87,7 +87,7 @@ Cuando no es posible usar ETR para permitir globalmente a un remitente específi
 
 La opción menos deseable es autorizar por remitente o dominio. Esta opción debe evitarse siempre que *sea posible* , ya que pasa por completo la protección contra correo no deseado/suplantación de identidad (phishing) y no evalúa la autenticación del remitente. Este método aumenta el riesgo de recibir correo de actores incorrectos y es la mejor opción recomendada temporalmente y solo cuando se realicen pruebas. Puede encontrar los pasos detallados en [configurar las directivas de filtro de correo no deseado](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) .
 
-El límite máximo de estas listas es de aproximadamente 1000 entradas.
+El límite máximo de estas listas es de aproximadamente 1000 entradas; Aunque solo podrá especificar 30 entradas en el portal. Debe usar PowerShell para agregar más de 30 entradas.
 
 > [!CAUTION]
 > La configuración de las directivas contra el correo no deseado para permitir que el *remitente o el dominio permita* que los mensajes omitan el filtrado de correo no deseado para a) los mensajes de los remitentes de la lista de permitidos, o b, todos los remitentes de un dominio permitido. Este método aumenta significativamente el riesgo de que los remitentes de correo no deseado suplanten el dominio remitente (o suplantar la dirección de correo electrónico completa) que omiten el filtrado de correo no deseado, las comprobaciones de autenticación del remitente y envían el mensaje directamente a la bandeja de entrada de una persona.

@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo iniciar sesión, configurar permisos y comprender el panel para la puntuación de cumplimiento de Microsoft, que ayuda a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: 8c9bc7d1605bad66228bb47de8f86042839ac5be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38687636"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793654"
 ---
-# <a name="microsoft-compliance-score-setup-preview"></a>Configuración de la puntuación de cumplimiento de Microsoft (versión preliminar)
+# <a name="microsoft-compliance-score-preview-setup"></a>Configuración de la puntuación de cumplimiento de Microsoft (versión preliminar)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

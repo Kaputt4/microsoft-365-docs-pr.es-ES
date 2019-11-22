@@ -14,19 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b26b031b767f23504294880f4424be5042350c71
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ba57a89365c2a76dec215f56d7ed0755f27be12d
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093550"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191215"
 ---
 # <a name="themes"></a>Temas
-¿Cómo escribe un documento un usuario? Por lo general, comienzan con una o más ideas que quieren transmitir en el documento y se redactan con palabras que se alinean con las ideas. Cuanto más frecuente sea la idea, más frecuentes serán las palabras relacionadas con dicha idea. Esto informa de cómo los usuarios también usan los documentos; lo más importante para obtener información sobre cómo leer un documento son las ideas que el documento está tratando de transmitir, así como las ideas en las que aparecen y las relaciones entre las ideas.
+
+¿Cómo escribe un documento un usuario? Por lo general, comienzan con una o más ideas que quieren transmitir en el documento y se redactan con palabras que se alinean con las ideas. Cuanto más frecuente sea la idea, más frecuentes serán las palabras relacionadas con dicha idea. Esto informa de cómo los usuarios también usan los documentos. Lo más importante que debe comprender a partir de la lectura de un documento son las ideas que el documento está tratando de transmitir, las ideas que aparecen en dónde y cuáles son las relaciones entre las ideas.
 
 Esto puede ampliarse a cómo una persona desea consumir un conjunto de documentos. Quieren ver qué ideas están presentes en los conjuntos y qué documentos están hablando sobre esas ideas. Además, si encuentran un documento concreto de interés, quieren poder ver documentos que discutan ideas similares.
 
-El módulo temas intenta imitar la razón de los usuarios de los documentos, analizando los "temas" que se tratan en un conjunto de revisión y los asigna a los documentos. Los temas van un paso más allá y identifican por documento el "tema dominante"; es decir, el tema que más se muestra.
+La funcionalidad de temas en eDiscovery avanzado intenta imitar la razón de los documentos de los usuarios mediante el análisis de los *temas* que se tratan en un conjunto de revisiones y la asignación de un tema a los documentos en el conjunto de revisión. En la exhibición avanzada de documentos electrónicos, los temas van un paso más allá e identifican el *tema dominante* en cada documento. El tema dominante es el que aparece con más frecuencia en un documento.
 
 ## <a name="how-does-themes-work"></a>¿Cómo funciona los temas?
-Los temas analizan los documentos con texto en una revisión establecida para analizar los temas comunes que aparecen en los documentos. A continuación, asigna esos temas a los documentos en los que aparecen. También etiqueta cada con las palabras que se usan en los documentos representativos del tema. Dado que un documento puede estar sobre más de un asunto, en muchos casos, un documento tiene más de un tema asignado. El tema que aparece más visiblemente en un documento se designa como su tema dominante.
+
+La funcionalidad temas analiza los documentos con texto en una revisión establecida para analizar los temas comunes que aparecen en todos los documentos del conjunto de revisión. EDiscovery avanzado asigna los temas a los documentos en los que aparecen. También etiqueta cada tema con las palabras que se usan en los documentos representativos del tema. Debido a que un documento puede contener varios tipos de asunto, eDiscovery avanzado suele asignar varios temas a los documentos. El tema que aparece más visiblemente en un documento se designa como su tema dominante.

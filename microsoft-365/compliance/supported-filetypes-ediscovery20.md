@@ -13,18 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+description: Una lista de tipos de archivo compatibles en la exhibición avanzada de documentos electrónicos de Microsoft 365. Esto incluye una lista de los tipos de archivo de imagen que son compatibles con la funcionalidad de OCR en eDiscovery avanzado.
+ms.openlocfilehash: ff9fdc77226ee476de3fe89a980b2658720749bf
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38687624"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191245"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipos de archivo admitidos en eDiscovery avanzado
 
-La exhibición avanzada de documentos electrónicos admite muchos tipos de archivos en muchos niveles diferentes, que se describen en la siguiente tabla. Esta lista no finaliza y agregamos nuevos tipos de archivo, ya que continuamos con nuestras pruebas de validación. Las tablas indican si un tipo de archivo es compatible con la extracción de texto (OCR para imágenes), que se puede ver en el visor nativo y que también es compatible con el visor de anotaciones en la exhibición avanzada de documentos electrónicos.
-
+La exhibición avanzada de documentos electrónicos admite muchos tipos de archivos en muchos niveles diferentes, que se describen en las tablas siguientes. Esta lista no finaliza y se agregarán nuevos tipos de archivo mientras se siguen nuestras pruebas de validación. Estas tablas indican si un tipo de archivo es compatible con la extracción de texto (y el reconocimiento óptico de caracteres o la extracción de texto OCR para los archivos de imagen), que se puede ver en el visor nativo y también en el visor de anotaciones del servicio de exhibición de documentos electrónicos avanzada.
 
 ## <a name="archive--container"></a>Archivo/contenedor
 
@@ -115,7 +114,7 @@ La exhibición avanzada de documentos electrónicos admite muchos tipos de archi
 | aplicación/OneNote | Sí | Sí | Sí | Sí | No | . One |
 ||||||||
 
-## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
+## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
 
 | Tipo MIME | Identificación de archivos | Extracción de metadatos | Extracción de texto | Visor nativo | Visor de anotaciones | Extensiones posibles |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

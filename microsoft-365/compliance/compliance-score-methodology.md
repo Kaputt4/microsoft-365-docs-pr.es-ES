@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo la puntuación de cumplimiento de Microsoft calcula una puntuación personalizada en función de las acciones realizadas para enfrentarse a los riesgos y mejorar la postura de cumplimiento.
-ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38687630"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793664"
 ---
-# <a name="microsoft-compliance-score-calculation-preview"></a>Cálculo de puntuación de cumplimiento de Microsoft (versión preliminar)
+# <a name="microsoft-compliance-score-preview-calculation"></a>Cálculo de la puntuación de cumplimiento de Microsoft (vista previa)
 
 > [!IMPORTANT]
 > La puntuación de cumplimiento no expresa una medida absoluta de cumplimiento organizacional con cualquier norma o reglamentación en particular. Expresa hasta qué punto ha adoptado los controles que pueden reducir los riesgos para los datos personales y la privacidad individual. Las recomendaciones de la puntuación de cumplimiento y el administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento. Este servicio se encuentra actualmente en versión preliminar y está sujeto a los términos y condiciones de los [términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910).
@@ -77,9 +77,9 @@ Cada control tiene un valor asignado en la puntuación de cumplimiento según el
 |**Tipo**|**Puntuación asignada**|
 |:-----|:-----|
 | Obligatorio de prevención | ,27 |
-| Discrecional preventivo | 9 |
-| Detective obligatorio | 3 |
-| Discrecionales de detectives | 1 |
-| Obligatorio de corrección | 3 |
-| Discrecionales correctivas | 1 |
+| Discrecional preventivo | 9  |
+| Detective obligatorio | 3  |
+| Discrecionales de detectives | 1  |
+| Obligatorio de corrección | 3  |
+| Discrecionales correctivas | 1  |
   

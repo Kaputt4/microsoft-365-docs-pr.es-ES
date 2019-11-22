@@ -3,7 +3,7 @@ title: 'Purga automática cero horas: protección contra correo no deseado y mal
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/11/2019
+ms.date: 11/21/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,27 +17,21 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La depuración automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con correo no deseado o malware que ya se han entregado a los buzones de los usuarios y, a continuación, inofensivos en el contenido malintencionado. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: 725dc9da9119169937231372585489bdf192b11e
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: dd702e88dc2400367330d9cb1b54b5b0017334e4
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37319273"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191235"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purga automática cero horas: protección contra correo no deseado y malware
 
 ## <a name="overview"></a>Información general
 
-La purga automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con phish, correo no deseado o malware que ya se han entregado a los buzones de los usuarios y, a continuación, inofensivos en el contenido malintencionado. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado; el correo se puede zapped debido al contenido de correo, las direcciones URL o los datos adjuntos.
+La purga automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con phish, correo no deseado o malware que ya se han entregado a los buzones de los usuarios y, a continuación, inofensivos en el contenido malintencionado. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado. El correo se puede zapped debido al contenido de correo, las direcciones URL o los datos adjuntos.
   
 ZAP está disponible con la protección de Exchange Online predeterminada que se incluye con cualquier suscripción a Office 365 que contenga buzones de correo de Exchange Online.
 
-ZAP está activado de forma predeterminada, pero deben cumplirse las siguientes condiciones:
-  
-- La **acción de correo no deseado** está configurada para **mover el mensaje a la carpeta correo no deseado**. También puede crear una nueva Directiva de filtro de correo no deseado que se aplique sólo a un grupo de usuarios si no desea que ZAP pueda filtrar todos los buzones.
-
-- Los usuarios han mantenido su configuración predeterminada de correo no deseado y no han desactivado la protección contra correo electrónico no deseado. (Consulte [cambiar el nivel de protección en el filtro de correo no deseado](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b) para obtener más información acerca de las opciones de usuario en Outlook).
-  
 ## <a name="how-zap-works"></a>Cómo funciona el ZAP
 
 Office 365 actualiza las firmas de malware y del motor de correo no deseado en tiempo real de manera diaria. Sin embargo, es posible que los usuarios sigan teniendo mensajes malintencionados entregados a sus bandejas de correo por diversos motivos, incluso si el contenido se ha armado después de que se entregue a los usuarios. ZAP soluciona el control continuado de las actualizaciones de las firmas de correo no deseado y malware de Office 365. ZAP puede buscar y quitar los mensajes previamente entregados que ya se encuentran en las bandejas de los usuarios.
@@ -50,23 +44,26 @@ Las listas de permitidos, [las reglas de flujo de correo](https://go.microsoft.c
 
 Para el malware recién detectado, ZAP quita los datos adjuntos de los mensajes de correo electrónico y deja el cuerpo del mensaje en el buzón del usuario. Los datos adjuntos se quitan independientemente del estado de lectura del correo.
 
-ZAP de malware está habilitado de forma predeterminada en la Directiva de malware. Puede deshabilitar el servicio ZAP de malware mediante el parámetro *ZapEnabled* en el cmdlet [set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) de PowerShell de Exchange online o Exchange Online Protection.
+ZAP de malware está habilitado de forma predeterminada en la Directiva de malware. Puede deshabilitar el servicio ZAP de malware mediante el parámetro *ZapEnabled* en el cmdlet [set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) de PowerShell de Exchange online o Exchange Online Protection. ZAP de malware también se puede habilitar o deshabilitar editando la Directiva de malware en el centro de seguridad y cumplimiento.
 
 ### <a name="phish-zap"></a>ZAP de phish
 
-Para el correo que se identifica como phish después de la entrega, ZAP realiza la acción según la Directiva de correo no deseado que el usuario está cubierta. Si la acción de phish a Directiva está configurada para realizar una acción en un correo (redirigir, eliminar, poner en cuarentena, mover a correo no deseado), ZAP moverá el mensaje a la carpeta correo no deseado de la bandeja de entrada del usuario, independientemente del estado de lectura del correo. Si la acción de phish a Directiva no está configurada para emprender acciones (agregar encabezado X, modificar asunto, sin acción), ZAP no realizará ninguna acción en el correo. Obtenga más información sobre cómo [configurar las directivas de filtro de correo no deseado](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies) aquí.
+Para el correo que se identifica como phish después de la entrega, ZAP realiza una acción según la Directiva de correo no deseado que cubre a un usuario específico, independientemente del estado de lectura del correo. Si la acción de phish a directivas está configurada para *no* llevar a cabo la acción (agregar encabezado X, modificar asunto, sin acción), ZAP no llevará a cabo ninguna acción en el correo. Si se establece que la acción de phish se mueva a correo no deseado, ZAP moverá el mensaje a la carpeta correo no deseado de la bandeja de entrada del usuario. **Para cualquier otra acción de Phish (redirigir, eliminar, poner en cuarentena) Zap moverá el mensaje a cuarentena de phish**. Lea a continuación para conocer los requisitos de configuración y las exclusiones. Obtenga más información sobre cómo [configurar las directivas de filtro de correo no deseado](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies) aquí.  
 
 La ZAP de phish está habilitada de forma predeterminada en la Directiva de correo no deseado. La ZAP de phish puede deshabilitarse con el parámetro *PhishZapEnabled* de [set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), un cmdlet de EOP.
 
-> **[Nota]** el parámetro de cmdlet *ZapEnabled* anterior, controlado tanto phish como de correo no deseado, no estará en **desuso, 1 de febrero de 2020**. Si ha escrito scripts que usan el parámetro ZapEnabled, se recomienda actualizarlos para que usen SpamZapEnabled y PhishZapEnabled. En el período transitorio, todos los tres parámetros (ZapEnabled, PhishZapEnabled y SpamZapEnabled) estarán disponibles a través del cmdlet. Hasta que se establezca explícitamente a través de la interfaz de usuario o PowerShell, PhishZapEnabled y SpamZapEnabled mostrarán un valor heredado del parámetro ZapEnabled. Una vez que se establecen los nuevos parámetros, ya no se heredarán del parámetro ZapEnabled. Una vez desusado, la configuración de ZapEnabled no tendrá ningún efecto en las propiedades PhishZapEnabled o SpamZapEnabled, y ZapEnabled se quitará de la lista de parámetros de los cmdlets.
-
 ### <a name="spam-zap"></a>ZAP de correo no deseado
 
-Para el correo identificado como correo no deseado después de la entrega, ZAP realiza la acción según la Directiva de correo no deseado que el usuario está cubierta. Si la acción de correo no deseado de la Directiva está configurada para realizar una acción en un correo (redirigir, eliminar, poner en cuarentena, mover a correo no deseado), ZAP moverá el mensaje a la carpeta correo no deseado de la bandeja de entrada del usuario, si el mensaje no está leído. Si la acción de la Directiva de correo no deseado no está configurada para emprender acciones (agregar encabezado X, modificar asunto, sin acción), ZAP no realizará ninguna acción en el correo. Obtenga más información sobre cómo [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) aquí.
+Para el correo identificado como correo no deseado después de la entrega, ZAP realiza la acción según la Directiva de correo no deseado que cubre al usuario específico, sólo si el mensaje es no leído.  Si la acción de la Directiva de correo no deseado se establece en no realizar ninguna acción (agregar encabezado X, modificar asunto, sin acción), ZAP no llevará a cabo ninguna acción en el correo. Si se establece que la acción de correo no deseado se mueva a correo no deseado, ZAP moverá el mensaje a la carpeta correo no deseado de la bandeja de entrada del usuario. **Para cualquier otra acción de correo no deseado (redirigir, eliminar, poner en cuarentena) Zap moverá el mensaje a la cuarentena de correo no deseado**. Lea a continuación para conocer los requisitos de configuración y las exclusiones. Obtenga más información sobre cómo [configurar las directivas de filtro de correo no deseado](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies) aquí.
 
 La ZAP de correo no deseado está habilitada de forma predeterminada en la Directiva de correo no deseado. Puede deshabilitar el ZAP de correo no deseado mediante el parámetro *SpamZapEnabled* del cmdlet [set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) en PowerShell de Exchange online o Exchange Online Protection.
 
-> **[Nota]** el parámetro de cmdlet *ZapEnabled* anterior, controlado tanto phish como de correo no deseado, no estará en **desuso, 1 de febrero de 2020**. Si ha escrito scripts que usan el parámetro ZapEnabled, se recomienda actualizarlos para que usen SpamZapEnabled y PhishZapEnabled. En el período transitorio, todos los tres parámetros (ZapEnabled, PhishZapEnabled y SpamZapEnabled) estarán disponibles a través del cmdlet. Hasta que se establezca explícitamente a través de la interfaz de usuario o PowerShell, PhishZapEnabled y SpamZapEnabled mostrarán un valor heredado del parámetro ZapEnabled. Una vez que se establecen los nuevos parámetros, ya no se heredarán del parámetro ZapEnabled. Una vez desusado, la configuración de ZapEnabled no tendrá ningún efecto en las propiedades PhishZapEnabled o SpamZapEnabled, y ZapEnabled se quitará de la lista de parámetros de los cmdlets.
+###<a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>Requisitos, exclusiones y avisos de los mensajes de correo no deseado de phish
+
+> [!IMPORTANT]
+> el parámetro de cmdlet *ZapEnabled* anterior, controlado tanto phish como de correo no deseado, no estará en **desuso, 1 de febrero de 2020**. Si ha escrito scripts que usan el parámetro ZapEnabled, se recomienda actualizarlos para que usen SpamZapEnabled y PhishZapEnabled. En el período transitorio, todos los tres parámetros (ZapEnabled, PhishZapEnabled y SpamZapEnabled) estarán disponibles a través del cmdlet. Hasta que se establezca explícitamente a través de la interfaz de usuario o PowerShell, PhishZapEnabled y SpamZapEnabled mostrarán un valor heredado del parámetro ZapEnabled. Una vez que se establecen los nuevos parámetros, ya no se heredarán del parámetro ZapEnabled. Una vez desusado, la configuración de ZapEnabled no tendrá ningún efecto en las propiedades PhishZapEnabled o SpamZapEnabled, y ZapEnabled se quitará de la lista de parámetros de los cmdlets.
+
+ZAP no moverá ningún mensaje a cuarentena que esté en proceso de análisis de entregas dinámicos o que ya tenga un veredicto de malware con un dato adjunto reemplazado. Si se recibe una señal de phish o correo no deseado para estos tipos de mensajes y la acción de directiva o phish de correo no deseado está configurada para realizar alguna acción (mover a correo no deseado, redirigir, eliminar, cuarentena), el valor de ZAP será la acción "mover a correo no deseado". Para que ZAP lleve a cabo la acción ' mover a correo no deseado ' en un mensaje, el usuario debe tener habilitada la protección contra correo electrónico no deseado, con la configuración predeterminada de correo no deseado. (Consulte [cambiar el nivel de protección en el filtro de correo no deseado](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b) para obtener más información acerca de las opciones de usuario en Outlook).
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Cómo ver si el ZAP movió el mensaje
 
@@ -78,12 +75,14 @@ Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerS
 
 ### <a name="disable-malware-zap"></a>Deshabilitar el ZAP de malware * *
 
+ZAP de malware puede deshabilitarse a través del parámetro *ZapEnabled* en el cmdlet [set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) en Exchange Online PowerShell o Exchange Online Protection PowerShell. ZAP de malware también se puede habilitar o deshabilitar editando la Directiva de malware en el centro de seguridad y cumplimiento.
+ 
 En este ejemplo se deshabilita ZAP en la Directiva de filtro de malware denominada "Test".
-
+ 
 ```Powershell
 Set-MalwareFilterPolicy -Identity Test -ZapEnabled $false
 ```
-
+ 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy).
 
 ### <a name="disable-phish-zap-and-spam-zap"></a>Deshabilitar el Zap de robo de phish y correo no deseado
@@ -106,7 +105,7 @@ Debe seguir el proceso normal de informes para [falsos positivos](../../complian
   
 ### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>¿Qué ocurre si utilizo la cuarentena de Office 365 en lugar de la carpeta de correo no deseado?
   
-ZAP no mueve los mensajes a cuarentena de la bandeja de entrada en este momento.
+ZAP emprenderá acciones de acuerdo con la configuración de las opciones de la acción phish y correo no deseado en la Directiva contra correo no deseado. Para obtener más información sobre malware, phish y correo no deseado, vea más arriba.
   
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>¿Qué ocurre si tengo una regla de flujo de correo personalizada (regla de bloqueo/permiso)?
   

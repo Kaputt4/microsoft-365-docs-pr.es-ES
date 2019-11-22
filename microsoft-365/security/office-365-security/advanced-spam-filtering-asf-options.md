@@ -14,23 +14,23 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Las opciones avanzadas de filtrado de correo no deseado dan a los administradores la capacidad de inspeccionar distintos atributos de contenido de un mensaje. La presencia de dichos atributos en el mensaje ya sea aumenta la puntuación de correo no deseado del mensaje (lo cual aumenta la probabilidad de que se identifique como correo no deseado) o lo marca como correo no deseado. Las opciones de ASF se centran en propiedades de mensaje específicas, tales como las etiquetas HTML y el redireccionamiento de direcciones URL, las cuales se encuentran comúnmente en los mensajes de correo no deseado.
-ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093357"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793704"
 ---
 # <a name="advanced-spam-filtering-options"></a>Opciones avanzadas de filtrado de correo no deseado
+
+> [!NOTE]
+> La configuración avanzada de filtro de correo no deseado de la Directiva contra correo no deseado actualmente está en desuso. Nuestra configuración recomendada para estas opciones es **desactivarlas.** Las funciones que estaban disponibles en el filtro de correo no deseado avanzado se están incorporando a otras partes de la pila de filtrado.
 
 Las opciones avanzadas de filtrado de correo no deseado dan a los administradores la capacidad de inspeccionar distintos atributos de contenido de un mensaje. La presencia de dichos atributos en el mensaje ya sea aumenta la puntuación de correo no deseado del mensaje (lo cual aumenta la probabilidad de que se identifique como correo no deseado) o lo marca como correo no deseado. Las opciones de ASF se centran en propiedades de mensaje específicas, tales como las etiquetas HTML y el redireccionamiento de direcciones URL, las cuales se encuentran comúnmente en los mensajes de correo no deseado.
   
 La habilitación de las opciones ASF constituye un método agresivo de filtrado de correo no deseado y todos los mensajes que se filtran mediante estas opciones no pueden identificarse como falsos positivos. Estos mensajes pueden identificarse a través de notificaciones periódicas de correo no deseado de usuario final y recuperarse de la cuarentena de correo no deseado. También pueden identificarse a través del texto del encabezado X específico de cada opción ASF y que se muestra en el encabezado de Internet de los mensajes cuando se establece una coincidencia con una opción ASF. Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
   
 Las opciones de ASF se pueden activar, desactivar o establecer en modo Prueba al modificar las directivas de filtro de contenido. Para obtener más información, consulte [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). El modo Prueba no está disponible para las opciones **Reenvío masivo de correo electrónico no deseado de NDR**, **Registro de SPF: error**, **Filtrado de id. del remitente condicional: error** y **Correo masivo**. 
-  
-> > [!TIP]
->  Considere habilitar las opciones de ASF en modo de prueba para maximizar el bloqueo de correo no deseado en función de su entorno. Se recomienda que los clientes con porcentajes altos de correo no deseado para opciones específicas de ASF prueben estas opciones antes de implementarlas en el entorno de producción. Si le preocupa la suplantación de identidad (phishing) en su organización, active la opción **registro SPF: error grave** . 
   
 La tabla siguiente describe cada una de las opciones avanzadas de filtrado de correo no deseado.
   

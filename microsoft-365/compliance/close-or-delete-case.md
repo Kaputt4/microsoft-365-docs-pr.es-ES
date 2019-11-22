@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092043"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191175"
 ---
 # <a name="close-or-delete-a-case"></a>Cerrar o eliminar un caso
 
@@ -35,16 +35,16 @@ Cuando se completa el caso legal o la investigación admitidos por un caso de ex
 
 Para cerrar un caso:
 
-1. En la página **exhibición avanzada** de documentos electrónicos, vaya a su caso.
+1. En la página **exhibición avanzada** de documentos electrónicos, seleccione el caso que quiera cerrar.
 
-2. Vaya a **configuración** y seleccione **información de caso**. 
+2. En la pestaña **configuración** , en **información de casos**, haga clic en **seleccionar**.
 
-3. Haga clic en **cerrar caso**. 
+3. Haga clic en **cerrar caso**.
 
 Para eliminar un caso:
 
-1. En la página **exhibición avanzada** de documentos electrónicos, vaya a su caso.
+1. En la página **exhibición avanzada** de documentos electrónicos, seleccione el caso que quiera eliminar.
 
-2. Vaya a **configuración** y seleccione **información de caso**. 
+2. En la pestaña **configuración** , en **información de casos**, haga clic en **seleccionar**.
 
 3. Haga clic en **eliminar caso**. 
