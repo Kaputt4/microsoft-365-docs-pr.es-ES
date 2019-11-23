@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: f758213802d32b4154924d1ab4a3d8bbff49e717
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523635"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204268"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 
 > [!NOTE] 
-> Estas actualizaciones se están implementando ahora y es posible que no estén disponibles para todos los usuarios.
+> Estas actualizaciones se están implementando ahora y es posible que no estén disponibles para todos los usuarios. Esta característica es compatible con los usuarios de Enterprise outlook.com. Actualmente no está disponible para el consumidor outlook.com.
 
 Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
 
@@ -51,11 +51,11 @@ Si es un cliente de Office 365, puede administrar esta característica a través
 
     ![Edición de remitentes no autenticados en la interfaz gráfica.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
-- Si un administrador ha identificado un falso positivo y un remitente no debe recibir el tratamiento de remitente no verificado, puede realizar una de las siguientes acciones para agregar el remitente a la lista de permitidos de falsificación de inteligencia de identidad:
+- Si un administrador ha identificado un falso positivo y un remitente no debe recibir el tratamiento de remitente no verificado, se puede llevar a cabo una de las siguientes acciones para agregar el remitente a la lista de permitidos de falsificación de inteligencia de identidad:
         
-    - Agregue el par de dominios mediante el conocimiento de inteligencia de ti falso. Para obtener más información, consulte Walkthrough: suplantar inteligencia Insight
+    - Agregue el par de dominios mediante el conocimiento de inteligencia de ti falso. Para obtener más información, consulte [Walkthrough: Spoofing Intelligence Insight](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight).
                 
-    - Agregue el par de dominios mediante el cmdlet PhishFilterPolicy. Para obtener más información, vea Set-PhishFilterPolicy y protección contra la suplantación de identidad en Office 365
+    - Agregue el par de dominios mediante el cmdlet PhishFilterPolicy. Para obtener más información, consulte [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) y [set up Office 365 ATP anti-phishing and anti-phishing Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
 
 Además, no se aplica el tratamiento de remitente no verificado si se entregó en la bandeja de entrada a través de una lista de permitidos del administrador, incluidas las reglas de transporte de correo electrónico (ETR), la lista de dominios seguros (Directiva contra correo no deseado), la lista de remitentes seguros o un usuario ha establecido este usuario como un "remitente seguro" en su entrada.
 

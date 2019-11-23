@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: a0f48fefcbb77f5972b91f7fbfbd9dffa6ad7f32
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191214"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204239"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el escritorio administrado por Microsoft?
 
@@ -35,14 +35,14 @@ Los usuarios finales disfrutarán de las últimas versiones de las aplicaciones 
 
 Por supuesto, no hay nada que le impida obtener y administrar sus propios dispositivos y las implementaciones de Microsoft 365 usted mismo. Por lo tanto, ¿qué ofrece Microsoft Managed Desktop más allá de eso?
 
-Para los usuarios finales:
+Nuestras directivas y la línea base de seguridad ofrecen a los usuarios finales estas ventajas:
 
 - Tiempos de arranque para dispositivos de escritorio administrados por Microsoft en un cuarto como Long.
 - Al menos dos veces la duración de la batería
 - Aproximadamente un tercio del número de bloqueos de dispositivo por año
 - Movilidad de dispositivos a través de la [itinerancia del estado](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)de la empresa, lo que permite a los usuarios tener la misma experiencia independientemente del dispositivo en el que inicien sesión
 
-Para los administradores de TI:
+Los administradores de TI se benefician de estas características:
 
 - Los paneles de información le mantienen constantemente al día sobre el uso, la confiabilidad, el estado del dispositivo y otros datos en dispositivos y usuarios.
 - Aproximadamente *un décimo* de la cantidad de tiempo necesario para actualizar el 95% de los dispositivos
@@ -65,7 +65,7 @@ También supervisamos el estado del dispositivo y le proporcionamos información
 
 
 ## <a name="need-more-details"></a>¿Necesita más información?
-Para obtener más información sobre el valor de escritorio administrado por Microsoft, incluidas las historias de clientes, vea [escritorio administrado de Microsoft](https://aka.ms/mmd). Los excelentes lugares para empezar con más información son el [plan de desarrollo](https://aka.ms/AA6jiam) y un resumen de [una página](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/microsoft-managed-desktop-data-sheet-v20191114.pdf)que se pueden descargar. Puede encontrar las últimas noticias en el [blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop)de Microsoft Managed Desktop.
+Para obtener más información sobre el valor de escritorio administrado por Microsoft, incluidas las historias de clientes, vea [escritorio administrado de Microsoft](https://aka.ms/mmd). Los excelentes lugares para empezar con más información son el [plan de desarrollo](https://aka.ms/AA6jiam) y un resumen de [una página](https://aka.ms/AA6ob3h)que se pueden descargar. Puede encontrar las últimas noticias en el [blog](https://aka.ms/AA6l2dd)de Microsoft Managed Desktop.
 
 Si el escritorio administrado de Microsoft parece adecuado para su organización, puede profundizar en documentación adicional que explica más sobre el servicio, cómo preparar la organización para inscribirse, cómo empezar a trabajar con el servicio y las operaciones en curso a partir de ese momento, incluir cómo usted y los usuarios finales pueden obtener fácilmente ayuda si es necesario. Si ya está listo para incorporarse, empiece con ponerse en contacto con el [equipo de cuenta local](https://pages.email.office.com/contactmmd/).
 
@@ -87,9 +87,14 @@ Prepárese **para la inscripción** En estos temas se describen los pasos que de
 
 **Introducción** Una vez que esté listo para inscribirse, en esta sección se incluyen los pasos que debe seguir para unirse al servicio, obtener y configurar dispositivos, preparar a los usuarios finales e implementar aplicaciones.
 
-- [Agregar contactos de administrador en el portal de administración de escritorio administrado de Microsoft](../get-started/add-admin-contacts.md)
+- [Agregar y verificar los contactos de administración en el portal de administración ](../get-started/add-admin-contacts.md)
+- [Ajustar el acceso condicional](../get-started/conditional-access.md)
+- [Asignar licencias](../get-started/assign-licenses.md)
+- [Instalar el portal de empresa de Intune en los dispositivos](../get-started/company-portal.md)
+- [Habilitar Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
 - [Configurar dispositivos de escritorio administrados por Microsoft](../get-started/set-up-devices.md)
-- [Implementar aplicaciones en dispositivos de escritorio administrados por Microsoft](../get-started/deploy-apps.md)
+- [Prepare a los usuarios para que usen los dispositivos](../get-started/get-started-devices.md)
+- [Implementar aplicaciones en dispositivos](../get-started/deploy-apps.md)
 
 **Trabajar con Microsoft Managed Desktop** En esta sección se incluye información sobre su vida diaria con el servicio, como la forma en que los administradores de TI pueden obtener soporte técnico si es necesario, el modo en que los usuarios finales reciben soporte técnico, administran las aplicaciones una vez que se han implementado y cómo trabajar con la configuración personalizable en los dispositivos.
 

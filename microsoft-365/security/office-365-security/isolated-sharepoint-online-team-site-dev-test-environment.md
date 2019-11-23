@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumen: Configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno para desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 0f91bcce140fd1ad00c51b27e8b1e134e5f2a283
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 8f49e449d7053642bd1c926765156f495bc36801
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032345"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202211"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas
 
@@ -83,9 +83,6 @@ $groupDesc="People allowed to view the SharePoint resources for ProjectX."
 New-MsolGroup -DisplayName $groupName -Description $groupDesc
 ```
 
-> [!TIP]
-> Haga clic [aquí](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1) para obtener un archivo de texto que contenga todos los comandos de PowerShell de este artículo.
-  
 Rellene el nombre de la organización (ejemplo: contosotoycompany), el código de país de dos caracteres para su ubicación y, después, ejecute los comandos siguientes desde el símbolo del sistema de Módulo Microsoft Azure Active Directory para Windows PowerShell:
   
 ```

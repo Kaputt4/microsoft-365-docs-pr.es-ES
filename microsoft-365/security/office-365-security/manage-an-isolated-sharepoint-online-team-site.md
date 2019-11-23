@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Resumen: administre el sitio de grupo de SharePoint Online aislado con estos procedimientos.'
-ms.openlocfilehash: e6ed86421ec199ce785e2daff5e9c5447939e69b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fd34a8af35b546266cf5d7cf308dbd387207eb1e
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093167"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202451"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Administrar un sitio de grupo de SharePoint Online aislado
 
@@ -48,9 +48,6 @@ $userUPN="<UPN of the user account>"
 $grpName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
-
-> [!TIP]
-> Para obtener un archivo de texto que contenga todos los comandos de PowerShell y una hoja de cálculo de configuración de Excel que genere comandos de PowerShell en función de los nombres de cuenta de grupo y de usuario, descargue el kit de implementación de sitios de grupo de [SharePoint Online aislado](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907). 
 
 Para agregar una cuenta de usuario a un grupo de acceso con su nombre para mostrar, use el siguiente bloque de comandos de PowerShell:
 
