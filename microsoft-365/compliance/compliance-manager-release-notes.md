@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 1a490212b2275b9f297e2585e7242f5331d0fe56
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1f233a6bc19f4a7afa495f49ad77e39e496c1dc5
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38687655"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202171"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notas de la versión del administrador de cumplimiento (versión preliminar)
 
@@ -51,8 +51,10 @@ En las siguientes secciones se abordan los problemas conocidos que deben resolve
 - Los resultados de la puntuación segura no están disponibles para algunos elementos de acciones en determinadas suscripciones de Microsoft 365 y Office 365. **No se pudo detectar** el resultado de la puntuación segura en estos casos.
 - A veces, se devuelven resultados de puntuación seguros para las directivas y los elementos de acción correspondientes no completados.
 - Para los nuevos inquilinos, se activan automáticamente las actualizaciones de puntuación seguras para todas las acciones. El administrador global puede establecer el cambio de actualización continua de puntuación segura en desactivado, lo que desactiva las actualizaciones para todas las acciones.
+  - **Nota**: cuando las organizaciones implementan por primera vez Microsoft 365 u Office 365, la puntuación segura tardará aproximadamente siete días en completarse para recopilar los datos y factorizarlos en su puntuación. Durante este tiempo, la configuración de la opción de actualización continua de puntuación segura como **desactivada** y la configuración manual de una acción para **implementada** contará esa acción hacia su puntuación. Después de los siete días iniciales, al desactivar la actualización continua de la actualización segura, se habilitará la supervisión continua a partir de ese momento.
 - Cuando las actualizaciones de calificaciones seguras están activadas, las acciones se supervisan activamente mediante una puntuación segura, aunque la fecha de prueba de la acción no se actualizará para reflejar la supervisión.
 - Cuando se crean nuevas evaluaciones, las puntuaciones incluyen automáticamente los resultados de los controles administrados por Microsoft y la integración de la puntuación segura.
+- Las acciones que no son compatibles con la integración de la puntuación segura se pueden implementar de forma manual. Una implementación manual se aplicará a la puntuación del grupo de la acción.
 
 ### <a name="microsoft-managed-controls"></a>Controles administrados por Microsoft
 

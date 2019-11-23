@@ -14,21 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Configure las opciones avanzadas de eDiscovery que se aplican a todo el conjunto de revisiones en un caso. Esto incluye la configuración de análisis y OCR.
-ms.openlocfilehash: f34f10c08be582389346b3aedc899bd9f4906a93
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 2def41ecc090b54cd3d6b789c2d9890392d1e0d3
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191145"
+ms.locfileid: "39202201"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Establecer la configuración de búsqueda y análisis
 
 Puede establecer la configuración de cada caso de exhibición avanzada de documentos electrónicos para controlar las siguientes funciones.
 
 - Duplicación cercana y subprocesamiento de correo electrónico
+
 - Temas
+
 - Consulta de conjunto de revisiones generadas automáticamente
+
 - Omitir texto
+
 - Reconocimiento óptico de caracteres
 
 Para configurar las opciones de búsqueda y análisis para un caso:
@@ -69,7 +73,7 @@ Si activa la casilla de verificación **crear automáticamente una para revisió
 
 ![La consulta autogenerada para revisión](media/AeDForReviewQuery.png)
 
-Esta consulta básicamente filtra los elementos duplicados del conjunto de revisión. Esto le permite revisar los elementos únicos en el conjunto de revisión. Esta consulta solo se crea al ejecutar análisis para cualquier revisión establecida en el caso. Para obtener más información acerca de las consultas de set View, consulte [consultar los datos de un conjunto de revisión](review-set-search.md).
+Esta consulta básicamente filtra los elementos duplicados del conjunto de revisión. Esto le permite revisar los elementos únicos en el conjunto de revisión. Esta consulta solo se crea al ejecutar análisis para un conjunto de revisión en el caso. Para obtener más información acerca de las consultas de set View, consulte [consultar los datos de un conjunto de revisión](review-set-search.md).
 
 ## <a name="ignore-text"></a>Omitir texto
 
@@ -77,7 +81,8 @@ Hay situaciones en las que cierto texto va a afectar a la calidad de los anális
 
 ## <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 
-Cuando esta opción está activada, OCR se ejecutará en archivos de imagen que se agregan a los conjuntos de revisión para que el texto de la imagen se pueda revisar, buscar, etiquetar y analizar. Para obtener más información, vea:
+Cuando esta opción está activada, OCR se ejecutará en archivos de imagen que se agregan a los conjuntos de revisión para que el texto de la imagen se pueda revisar, buscar, etiquetar y analizar. Puede ver el texto extraído en el visor de texto del archivo de imagen seleccionado en el conjunto de revisiones. Para obtener más información, vea:
 
 - [Agregar los resultados de búsqueda a un conjunto de revisión](add-data-to-review-set.md#optical-character-recognition)
+
 - [Tipos de archivo de imagen admitidos](supported-filetypes-ediscovery20.md#image)

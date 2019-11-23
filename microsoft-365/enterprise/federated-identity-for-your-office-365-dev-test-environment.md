@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumen: Configure la autenticación federada para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 703f6421a6029f5bdde4cda1942d91f2b467a94a
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: 895d6b825a3e2928fee1e9f68ce2195b92117e37
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757895"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202280"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identidad federada para el entorno de prueba de Microsoft 365
 
@@ -33,7 +33,7 @@ Office 365 admite la identidad federada. Esto significa que, en lugar de realiza
   
 En este artículo, se describe cómo puede configurar la autenticación federada para el entorno de prueba de Microsoft 365 u Office 365, lo que se traduce en el siguiente resultado:
 
-![La autenticación federada para el entorno de pruebas de Microsoft 365](media/federated-identity-for-your-office-365-dev-test-environment/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![La autenticación federada para el entorno de pruebas de Microsoft 365](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 Esta configuración se compone de: 
   
@@ -60,7 +60,7 @@ Existen cinco fases para configurar este entorno de desarrollo y pruebas:
 
 Siga las instrucciones de [Sincronización de hash de contraseñas para Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Esta es la configuración resultante.
   
-![La empresa simulada con el entorno de prueba con la sincronización de hash de contraseñas](media/federated-identity-for-your-office-365-dev-test-environment/be5b37b0-f832-4878-b153-436c31546e21.png)
+![La empresa simulada con el entorno de prueba con la sincronización de hash de contraseñas](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase1.png)
   
 Esta configuración se compone de: 
   
@@ -109,7 +109,7 @@ Restart-Computer
 
 Este es el resultado de la configuración.
   
-![Servidor de AD FS agregado a DirSync para el entorno de prueba de Microsoft 365](media/federated-identity-for-your-office-365-dev-test-environment/da82f39e-426d-41e2-842a-c13b382d63d5.png)
+![Servidor de AD FS agregado a DirSync para el entorno de prueba de Microsoft 365](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase2.png)
   
 ## <a name="phase-3-create-the-web-proxy-server"></a>Fase 3: Crear el servidor proxy web
 
@@ -176,7 +176,7 @@ Estos comandos crean un registro DNS A interno para que las máquinas virtuales 
   
 Este es el resultado de la configuración.
   
-![El servidor proxy de la aplicación web agregado a DirSync para el entorno de prueba de Microsoft 365](media/federated-identity-for-your-office-365-dev-test-environment/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![El servidor proxy de la aplicación web agregado a DirSync para el entorno de prueba de Microsoft 365](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a>Fase 4: Crear un certificado autofirmado y configurar ADFS1 y PROXY1
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8eadfbeb1a78edd12129c97dc3144a45c5c409cf
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191275"
+ms.locfileid: "39202351"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Consultar los datos de un conjunto de revisión
 
@@ -51,11 +51,11 @@ Hay varios tipos de tarjetas de condición:
 
 ### <a name="query-language"></a>Lenguaje de consulta
 
-Además de las tarjetas de condición, puede usar un lenguaje de consulta similar a tipo KQL en la tarjeta Keywords para crear la consulta. El lenguaje de consulta para las consultas set de revisión admite operadores booleanos estándar, como AND, OR, NOT y NEAR (n). También admite caracteres comodín de un solo carácter (?) y un comodín de varios caracteres (*).
+Además de las tarjetas de condición, puede usar un lenguaje de consulta similar a tipo KQL en la tarjeta Keywords para crear la consulta. El lenguaje de consulta para las consultas set de revisión admite operadores booleanos estándar, como **and**, **or**, **Not**y **Near**. También admite caracteres comodín de un solo carácter (?) y un comodín de varios caracteres (*).
 
 ## <a name="using-filters"></a>Uso de filtros
 
-Además de las consultas que puede guardar, puede usar la revisión Set filters para aplicar rápidamente condiciones adicionales a una consulta de conjunto de revisión. Esto le ayuda a restringir aún más los resultados mostrados por una consulta de conjunto de revisión. 
+Además de las consultas que puede guardar, puede usar la revisión Set filters para aplicar rápidamente condiciones adicionales a una consulta de conjunto de revisión. Esto le ayuda a restringir aún más los resultados mostrados por una consulta de conjunto de revisión.
 
 ![Revisar definir filtros](media/AeDReviewSetFilters.png)
 

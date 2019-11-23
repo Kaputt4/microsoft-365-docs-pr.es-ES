@@ -701,6 +701,8 @@
           href: compliance-score-methodology.md
         - name: Notas de la versión de la Puntuación de cumplimiento (versión preliminar)
           href: compliance-score-release-notes.md
+        - name: Preguntas más frecuentes sobre la puntuación de cumplimiento (vista previa)
+          href: compliance-score-faq.md
         - name: Administrador de cumplimiento (Versión preliminar)
           href: compliance-manager-overview.md
           items:
