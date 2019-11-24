@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Usar el Centro de seguridad y cumplimiento en Office 365 para permitir que los buzones de archivo sean compatibles con los requisitos de retención de mensajes, eDiscovery y conservación de mensajes de su organización.
-ms.openlocfilehash: ea6448c4d47eb89d16266644e5a4ab06f774e0da
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 63c6986e3bf053f09ce4c4925735e920da3b5ed4
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38708240"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793674"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar buzones de archivo en el Centro de seguridad y cumplimiento
   
 El archivado en Office 365 (también denominado archivado local) proporciona a los usuarios espacio de almacenamiento adicional en el buzón. Después de habilitar los buzones de archivo, los usuarios pueden obtener acceso a los mensajes y almacenarlos en los buzones de archivo con Microsoft Outlook y Outlook en la Web (anteriormente denominada Outlook Web App). Los usuarios también pueden mover o copiar mensajes entre su buzón de correo principal y el buzón de archivo. También pueden recuperar elementos eliminados de la carpeta de Elementos recuperables en su buzón de archivo mediante la herramienta Recuperar elementos eliminados. 
   
-> [!TIP]
-> Office 365 proporciona una cantidad ilimitada de almacenamiento de archivo con la característica de archivado de ampliación automática. Cuando se activa el archivado de extensión automática y se alcanza la cuota de almacenamiento inicial en el buzón de archivo de un usuario, Office 365 agrega automáticamente espacio de almacenamiento adicional. Esto significa que los usuarios no se quedan sin espacio de almacenamiento en el buzón y que no tendrá que administrar nada después de habilitar el buzón de archivo por primera vez y activar el archivado de ampliación automática para su organización. Para obtener más información, vea [Información general sobre el archivado ilimitado en Office 365](unlimited-archiving.md). 
+> [!NOTE]
+> La característica de archivado de ampliación automática en Office 365 ofrece hasta 1 TB de almacenamiento adicional en buzones de archivo. Cuando se activa el archivado de ampliación automática y, a continuación, se alcanzado la cuota de almacenamiento inicial en el buzón de archivo de un usuario, Office 365 agrega automáticamente espacio de almacenamiento adicional. Esto significa que los usuarios no se quedan sin espacio de almacenamiento en el buzón y que no tendrá que administrar nada después de habilitar el buzón de archivo por primera vez y activar el archivado de ampliación automática para su organización. Para obtener más información, vea [Información general sobre el archivado ilimitado en Office 365](unlimited-archiving.md). 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -43,7 +43,7 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
     
 3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Gobierno de datos** \> **Archivo**.
     
-    Aparece la página **Archivo**. La columna **Buzón de archivo** indica si un buzón de archivo está habilitado o deshabilitado para cada usuario. 
+    Aparece la página **Archivo**. La columna **Buzón de correo de archivo** indica si un buzón de archivo está habilitado o deshabilitado para cada usuario. 
     
 4. En la lista de buzones de correo, seleccione el usuario para el que desea habilitar el buzón de correo.
     
