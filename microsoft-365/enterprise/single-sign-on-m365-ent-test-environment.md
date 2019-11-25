@@ -3,7 +3,7 @@ title: Inicio de sesión único de conexión directa de Azure AD para un entorno
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y pruebe el inicio de sesión único de conexión directa de Azure AD para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: a32dca8c37d9e6788aef801e9f99a90b724e86b1
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: f263ab507e392c1172d28b5d6ef111d8d9f40682
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757677"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202241"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Inicio de sesión único de conexión directa de Azure AD para un entorno de prueba de Microsoft 365
 
@@ -81,7 +81,7 @@ En esta fase, configurará Azure AD Connect en APP1 para el SSO de conexión dir
 
 11. Desde Azure Portal, en el panel izquierdo, haga clic en **Azure Active Directory > Azure AD Connect**. Asegúrese de que la característica **Inicio de sesión único de conexión directa** esté **Habilitada**.
 
-Después, compruebe si puede iniciar sesión en su suscripción de Office 365 con el nombre de usuario <strong>user1@testlab.</strong>\<su dominio público> de la cuenta Usuario1.
+Después, compruebe si puede iniciar sesión en su suscripción con el <strong>user1@testlab.</strong>\<su nombre de usuario de dominio público> de la cuenta Usuario1.
 
 1. En Internet Explorer, en APP1, haga clic en el icono de configuración y, después, seleccione **Opciones de Internet**.
  
@@ -93,11 +93,11 @@ Después, compruebe si puede iniciar sesión en su suscripción de Office 365 co
 
 5. En **Agregar este sitio web a la zona de**, escriba **https<span>://</span>autologon.microsoftazuread-sso.com**, haga clic en **Agregar > Cerrar > Aceptar > Aceptar**.
 
-6. Cierre la sesión de Office 365 y vuelva a iniciarla, pero esta vez especifique otra cuenta.
+6. Cierre la sesión y vuelva a iniciarla, pero esta vez especifique una cuenta diferente.
 
 7. Cuando se le solicite iniciar sesión, especifique <strong>user1@testlab.</strong> \<su dominio público> nombre y, a continuación, haga clic en **siguiente**. Debería iniciar sesión correctamente como User1 sin que se le pide una contraseña. Esto demuestra que el SSO de inicio de sesión directa de Azure AD está funcionando.
 
-Tenga en cuenta que, aunque User1 tiene permisos de administrador de dominio para el dominio TESTLAB AD DS, no es un administrador global de Azure AD y Office 365. Por lo tanto, no verá el icono de **administrador** como opción.
+Tenga en cuenta que, aunque User1 tiene permisos de administrador de dominio para el dominio TESTLAB AD DS, no es un administrador global de Azure AD. Por lo tanto, no verá el icono de **administrador** como opción.
 
 Esta es la configuración resultante:
 
