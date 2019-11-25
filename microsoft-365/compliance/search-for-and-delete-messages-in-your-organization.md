@@ -1,5 +1,5 @@
 ---
-title: 'Ayuda para administradores: buscar y eliminar mensajes de correo electrónico en la organización de Office 365'
+title: Buscar y eliminar mensajes de correo electrónico en la organización de Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: cd592ca48fdb2390e8449672920aa697cc297495
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091602"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39218865"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Ayuda para administradores: buscar y eliminar mensajes de correo electrónico en la organización de Office 365
+# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Buscar y eliminar mensajes de correo electrónico en la organización de Office 365
 
 **Este artículo es para los administradores. ¿Está intentando buscar elementos que quiere eliminar en el buzón? Vea [Buscar un mensaje o elemento con la Búsqueda instantánea](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
@@ -39,11 +39,11 @@ Puede usar la característica de búsqueda de contenido de Office 365 para busca
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles **Administrador de eDiscovery** o tener asignado el rol de administración **Búsqueda de cumplimiento**. Para eliminar mensajes, tiene que ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol de administración **Búsqueda y depuración**. Para más información sobre cómo agregar usuarios a un grupo de roles, vea [Dar acceso a los usuarios al Centro de seguridad y cumplimiento](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles **Administrador de eDiscovery** o tener asignado el rol de administración **Búsqueda de cumplimiento**. Para eliminar mensajes, tiene que ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol de administración **Búsqueda y depuración**. Para más información sobre cómo agregar usuarios a un grupo de roles, vea [Dar acceso a los usuarios al Centro de seguridad y cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
 - Debe usar el PowerShell del Centro de seguridad y cumplimiento para eliminar mensajes. Vea el [paso 2](#step-2-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
     
-- Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios. Para eliminar más de 10 elementos, puede usar el comando **Search-Mailbox -DeleteContent** en PowerShell de Exchange Online. Vea [Ayuda para administradores: buscar y eliminar mensajes](search-for-and-delete-messagesadmin-help.md).
+- Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios. Para eliminar más de 10 elementos, puede usar el comando **Search-Mailbox -DeleteContent** en PowerShell de Exchange Online. Vea[Búsqueda y eliminación de mensajes](search-for-and-delete-messagesadmin-help.md)
     
 - El número máximo de buzones en una búsqueda de contenido en los que puede eliminar elementos mediante una acción de búsqueda y depuración es 50 000. Si la búsqueda de contenido (que ha creado en el [paso 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) tiene más de 50 000 buzones de origen, la acción de depuración (que ha creado en el paso 3) no se realizará correctamente. En la sección [Más información](#more-information) se muestra una sugerencia para realizar una operación de búsqueda y depuración en más de 50 000 buzones. 
     
@@ -82,13 +82,13 @@ Estos son dos ejemplos de consultas para buscar mensajes de correo electrónico 
   
 - Esta consulta devuelve los mensajes recibidos por los usuarios entre el 13 de abril de 2016 y el 14 de abril de 2016 que contengan las palabras "acción" y "necesario" en la línea de asunto.
     
-    ```
+    ```powershell
     (Received:4/13/2016..4/14/2016) AND (Subject:'Action required')
     ```
-   
+
 - Esta consulta devuelve los mensajes enviados por chatsuwloginsset12345@outlook.com que contienen la frase exacta "Actualice la información de la cuenta" en la línea de asunto.
     
-    ```
+    ```powershell
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
@@ -102,19 +102,19 @@ Si su cuenta de Office 365 usa la autenticación multifactor (MFA) o autenticaci
 
 Después de crear y restringir una búsqueda de contenido para devolver el mensaje que quiere eliminar y después de conectarse al PowerShell del Centro de seguridad y cumplimiento, el último paso es ejecutar el cmdlet **New-ComplianceSearchAction** para eliminar el mensaje. Puede eliminar el mensaje de forma temporal o permanente. Un mensaje eliminado temporalmente se mueve a la carpeta Elementos recuperables de un usuario y se conserva hasta que expire el período de retención de elementos eliminados. Los mensajes eliminados permanentemente se marcan para la eliminación definitiva del buzón y se eliminarán la próxima vez que el Asistente para carpetas administradas procese el buzón. Si se habilita la recuperación de un único elemento en el buzón, los elementos eliminados permanentemente se eliminarán definitivamente cuando expire el período de retención de elementos eliminados. Si un buzón está en retención, los mensajes eliminados se conservan hasta que expire la duración del período de retención de un elemento o hasta que se quite la retención del buzón.
   
-En el ejemplo siguiente, el comando elimina temporalmente los resultados de búsqueda devueltos por una búsqueda de contenido denominada "Quitar mensaje de suplantación de identidad". 
+En el ejemplo siguiente, el comando elimina software de los resultados de la búsqueda devueltos por una búsqueda de contenido denominada "quitar mensaje de suplantación de identidad". 
 
-```
+```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-Para eliminar permanentemente los elementos devueltos por la búsqueda de contenido "Quitar el mensaje de suplantación de identidad", debería ejecutar este comando:
+Para eliminar de forma rígida los elementos devueltos por la búsqueda de contenido "quitar el mensaje de suplantación de identidad", ejecutaría este comando:
 
-```
+```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
-Tenga en cuenta que, al ejecutar el comando anterior en mensajes de eliminación temporal o permanente, la búsqueda especificada por el parámetro *SearchName* es la búsqueda de contenido que ha creado en el paso 1. 
+Cuando ejecuta el comando anterior en mensajes de eliminación parcial o Soft, la búsqueda especificada por el parámetro *SearchName* es la búsqueda de contenido que creó en el paso 1. 
   
 Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
 
@@ -122,7 +122,7 @@ Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.m
 
 - **¿Cómo se obtiene el estado de la operación de búsqueda y eliminación? **
 
-    Ejecute **Get-ComplianceSearchAction** para obtener el estado de la operación de eliminación.  Tenga en cuenta que el nombre del objeto que se crea al ejecutar el cmdlet **New-ComplianceSearchAction** tiene este formato: `<name of Content Search>_Purge`. 
+    Ejecute **Get-ComplianceSearchAction** para obtener el estado de la operación de eliminación.  El objeto que se crea al ejecutar el cmdlet **New-ComplianceSearchAction** se denomina con este formato: `<name of Content Search>_Purge`. 
     
 - **¿Qué ocurre después de eliminar un mensaje?**
 

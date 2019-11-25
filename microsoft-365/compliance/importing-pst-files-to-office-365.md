@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Para administradores: infórmese sobre cómo usar el servicio de importación del Centro de seguridad y cumplimiento para importar grandes masas de datos de correo electrónico (archivos PST) a buzones de usuario de Exchange Online. Este tema contiene una sección de Preguntas frecuentes y explica cómo funciona el proceso de importación de PST.'
-ms.openlocfilehash: 4682114ad150f818dfe39fe662bc3440d655e4ea
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 948ba22ff88b72a3af92edb39bfdc28cfde4c385
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092383"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39218845"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Información general sobre la importación de archivos PST de su organización a Office 365
 
@@ -96,9 +96,9 @@ A continuación, le presentamos una ilustración y una descripción del proceso 
     
   - Use las [directivas de conservación](retention-policies.md) del Centro de cumplimiento y seguridad para establecer cuánto tiempo se debe conservar el contenido del buzón y elimine el contenido cuando expire el período de conservación. 
 
-  - Use [las directivas de supervisión](supervision-policies.md) para examinar los mensajes, asegurarse de que son compatibles con los estándares de mensaje y agregar un tipo de clasificación.
+  - Use [las directivas de cumplimiento con la comunidad](communication-compliance.md) para examinar los mensajes, asegurarse de que son compatibles con los estándares de mensaje y agregar un tipo de clasificación.
     
-- Importar datos a Office365 le ayuda a protegerse contra pérdidas de datos. Los datos de correo electrónico que se importan a Office 365 heredan las características de alta disponibilidad de Exchange Online.
+- Importar datos a Office365 le ayuda a protegerse contra la pérdida de datos. Los datos de correo electrónico que se importan a Office 365 heredan las características de alta disponibilidad de Exchange Online.
     
 - Los datos de correo en Office365 están disponibles para los usuarios en todos los dispositivos porque se almacenan en la nube.
     
