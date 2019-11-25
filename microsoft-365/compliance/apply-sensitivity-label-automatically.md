@@ -1,10 +1,11 @@
 ---
 title: Aplicar automáticamente una etiqueta de confidencialidad al contenido
-ms.author: laurawi
-author: laurawi
+ms.author: krowley
+author: kccross
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
+ms.date: 11/01/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: f0287eff3a462bc6f30c18c561203ba1a9a9dc19
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: eccc60dc7a306f3e7b2eb128ed45a92af65491a5
+ms.sourcegitcommit: cd748ca00088275372f51fbf8c4bc72bfd3e1437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37343113"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "39233239"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -32,8 +33,7 @@ La capacidad de aplicar automáticamente etiquetas de confidencialidad al conten
 
 - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
 
-> [!NOTE]
-> Para poder aplicar etiquetas automáticamente, se necesita una suscripción de Azure Information Protection P2. Para usar esta característica, necesita [Descargar e instalar el cliente de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/es-ES/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Estamos trabajando en la compatibilidad nativa para esta característica en las aplicaciones de Office de forma que no sea necesario usar el cliente de etiquetado unificado de Azure Information Protection. Además, el cliente de etiquetado unificado solo se ejecuta en Windows, por lo que esta característica aún no se admite en equipos Mac ni en dispositivos iOS y Android.
+Para obtener información sobre los requisitos de licencia, vea [Etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md).
 
 La configuración de etiquetado automático está disponible cuando se crea una etiqueta de confidencialidad en el Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento de Office 365 en **Clasificación** > **Etiquetas de confidencialidad**. 
 
@@ -41,15 +41,15 @@ La configuración de etiquetado automático está disponible cuando se crea una 
 
 ## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Aplicar una etiqueta de confidencialidad automáticamente basándose en condiciones específicas
 
-Una de las características más útiles de las etiquetas de confidencialidad es la capacidad de aplicarlas automáticamente a contenido que coincida con determinadas condiciones. En ese caso, los usuarios de su organización no necesitan aplicar las etiquetas de confidencialidad: Office 365 lo hace automáticamente.
-   
-Puede aplicar etiquetas de confidencialidad a contenido automáticamente cuando ese contenido contenga tipos específicos de información confidencial. Al configurar una etiqueta de confidencialidad para que se aplique automáticamente, verá la misma lista de tipos de información confidencial que al crear una directiva de prevención de pérdida de datos (DLP). Puede, por ejemplo, aplicar automáticamente la etiqueta “Extremadamente confidencial” a cualquier contenido con información de identificación personal (DCP) de clientes, como números de tarjeta de crédito o números del seguro social. 
+Una de las características más eficaces de las etiquetas de confidencialidad es la capacidad de aplicarlas automáticamente al contenido que coincide con determinadas condiciones. En este caso, no es necesario que las personas de la organización apliquen las etiquetas de confidencialidad: Office 365 realiza el trabajo por ellos.
+
+Puede aplicar etiquetas de confidencialidad a contenido automáticamente cuando ese contenido contenga tipos específicos de información confidencial. Al configurar una etiqueta de confidencialidad para que se aplique automáticamente, verá la misma lista de tipos de información confidencial que al crear una directiva de prevención de pérdida de datos (DLP). Puede, por ejemplo, aplicar automáticamente la etiqueta “Extremadamente confidencial” a cualquier contenido con información de identificación personal (DCP) de clientes, como números de tarjeta de crédito o números del seguro social.
 
 ![Opciones de precisión de coincidencia y recuento de instancias](media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-Después de seleccionar los tipos de información confidencial, puede restringir la condición al cambiar el recuento de instancias o la precisión de coincidencia. Para obtener más información, vea [Ajustar reglas para aumentar o reducir la coincidencia](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+Después de seleccionar los tipos de información confidencial, puede restringir la condición al cambiar el recuento de instancias o la precisión de coincidencia. Para obtener más información, vea [Ajustar reglas para hacer más fácil o más difícil la coincidencia](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
-Además, puede elegir si una condición tiene que detectar todos los tipos de información confidencial o solo uno de ellos. Para que las condiciones sean más flexibles o complejas, puede agregar grupos y usar operadores lógicos entre los grupos. Para obtener más información, vea [Operadores de agrupación y lógicos](data-loss-prevention-policies.md#grouping-and-logical-operators).
+Además, puede elegir si una condición debe detectar todos los tipos de información confidencial o solo uno de ellos. Y para hacer que las condiciones sean más flexibles o complejas, puede agregar grupos y usar operadores lógicos entre los grupos. Para obtener más información, vea [Operadores lógicos y de agrupación](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 Al aplicar automáticamente una etiqueta de confidencialidad, el usuario verá una notificación en la aplicación de Office. Puede seleccionar **Aceptar** para cerrar la notificación.
 
@@ -57,9 +57,9 @@ Al aplicar automáticamente una etiqueta de confidencialidad, el usuario verá u
 
 ## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Recomendación para que el usuario aplique una etiqueta de confidencialidad
 
-Si lo prefiere, en lugar de aplicar automáticamente una etiqueta de confidencialidad al contenido, puede recomendar a los usuarios que apliquen la etiqueta. Esta opción proporciona a los usuarios la flexibilidad de aceptar la clasificación y cualquier protección asociada, o bien pueden descartar la recomendación si la etiqueta no es adecuada para el documento o correo electrónico.
+Si lo prefiere, puede recomendar a los usuarios que apliquen la etiqueta. Con esta opción, los usuarios pueden aceptar la clasificación y cualquier protección asociada, o descartar la recomendación si la etiqueta no es adecuada para su documento o correo electrónico.
 
-Tenga en cuenta que las etiquetas recomendadas se admiten en Word, PowerPoint y Excel (y es necesario que esté instalado el cliente de etiquetado unificado de Azure Information Protection). Estamos trabajando para admitir las etiquetas recomendadas en Outlook.
+Las etiquetas recomendadas se admiten en Word, PowerPoint y Excel (y es necesario que esté instalado el cliente de etiquetado unificado de Azure Information Protection).
 
 ![Opción para recomendar una etiqueta de confidencialidad a los usuarios](media/Sensitivity-labels-Recommended-label-option.png)
 
@@ -69,13 +69,13 @@ Este es un ejemplo de un mensaje que se muestra al configurar una condición par
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>Forma de aplicar etiquetas recomendadas o automáticas
 
-- El etiquetado automático se aplica en Word, Excel y PowerPoint al guardar los documentos, y en Outlook al enviar correos electrónicos. Estas condiciones detectan información confidencial en el texto de cuerpo de documentos y correos electrónicos, así como en encabezados y pies de página, pero no detectan la información de la línea de asunto ni de los datos adjuntos de los correos electrónicos.
+- El etiquetado automático se aplica a Word, Excel y PowerPoint al guardar un documento, y a Outlook al enviar un correo electrónico. Estas condiciones detectan información confidencial en el texto de cuerpo de los documentos y correos electrónicos, y en los encabezados y pies de página, pero no en la línea de asunto o los datos adjuntos de correo electrónico.
 
-- No se puede usar la clasificación automática para documentos y correos electrónicos que se etiquetaron anteriormente de forma manual, ni los que se etiquetaron previamente de forma automática con una clasificación superior. Recuerde que un documento o correo electrónico solo puede tener aplicada una etiqueta de confidencialidad (además de una etiqueta de retención).
+- No puede usar la clasificación automática para documentos y mensajes de correo electrónico que se etiquetaron previamente de forma manual o de forma automática con una clasificación más alta. Recuerde, solo se puede aplicar una etiqueta de confidencialidad a un documento o correo electrónico, (además de una sola etiqueta de retención).
 
-- La clasificación recomendada se aplica en Word, Excel y PowerPoint al guardar los documentos. Estamos trabajando para admitir el etiquetado recomendado en Outlook.
+- La clasificación recomendada se aplica a Word, Excel y PowerPoint al guardar documentos.
 
-- No se puede usar la clasificación recomendada para documentos que se etiquetaron anteriormente con una mayor clasificación. En este caso, si el contenido ya se etiquetó con una mayor clasificación, el usuario no verá el mensaje con la recomendación y la sugerencia de directiva.
+- No puede usar la clasificación recomendada para documentos que anteriormente se etiquetaron con una clasificación más alta. Cuando el contenido ya está etiquetado con una clasificación más alta, el usuario no verá el mensaje con la recomendación y la sugerencia de directiva.
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Forma en que se evalúan varias condiciones cuando se aplican en más de una etiqueta
 
@@ -83,4 +83,4 @@ Las etiquetas se ordenan para su evaluación según la posición que especifique
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>No configure una etiqueta principal para que se aplique o recomiende automáticamente
 
-Recuerde que una etiqueta principal (una etiqueta con subetiquetas) no se puede aplicar al contenido. Asegúrese de no configurar una etiqueta principal para que se aplique o recomiende automáticamente, ya que la etiqueta principal no se aplicará al contenido en las aplicaciones de Office que usan el cliente de etiquetado unificado de Azure Information Protection. Para obtener más información sobre las etiquetas principales y las subetiquetas, consulte [Subetiquetas (agrupación de etiquetas)](sensitivity-labels.md#sublabels-grouping-labels).
+Recuerde, no se puede aplicar una etiqueta principal (una etiqueta con subetiquetas) al contenido. Asegúrese de no configurar una etiqueta principal para que se aplique o recomiende automáticamente, ya que la etiqueta principal no se aplicará al contenido en las aplicaciones de Office que usan el cliente de etiquetado unificado de Azure Information Protection. Para obtener más información sobre las etiquetas principales y las subetiquetas, consulte [Subetiquetas (agrupación de etiquetas)](sensitivity-labels.md#sublabels-grouping-labels).
