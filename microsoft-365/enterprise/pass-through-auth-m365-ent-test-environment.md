@@ -3,7 +3,7 @@ title: Autenticación de paso a través para el entorno de prueba de Microsoft 3
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: autenticación de paso a través para el entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 98e0ad4b216fdc3940c0077cb308d6271ffed678
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ed21007932b455c4f24af83434af75d44e583574
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757727"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202321"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticación de paso a través para el entorno de prueba de Microsoft 365
 
@@ -78,13 +78,13 @@ En esta fase, configure Azure AD Connect en APP1 para usar la autenticación de 
 
 10. Haga clic en **Autenticación de paso a través**. El panel **Autenticación de paso a través** enumera los servidores donde se instalan los agentes de autenticación. Verá APP1 en la lista. Cerrar el panel **Autenticación de paso a través**.
 
-Después, compruebe si puede iniciar sesión en su suscripción de Office 365 con el nombre de usuario <strong>user1@testlab.</strong>\<su dominio público> de la cuenta Usuario1.
+Después, compruebe si puede iniciar sesión en su suscripción con el <strong>user1@testlab.</strong>\<su nombre de usuario de dominio público> de la cuenta Usuario1.
 
-1. Desde APP1, cierre sesión en Office 365 y vuelva a iniciar sesión, esta vez especificando una cuenta diferente.
+1. Desde APP1, cierre la sesión y vuelva a iniciarla, pero esta vez especifique una cuenta diferente.
 
 2. Cuando se le solicite un nombre de usuario y contraseña, especifique <strong>user1@testlab.</strong>\<su dominio público > y la contraseña de User1. Debería poder iniciar sesión como User1.
 
-Tenga en cuenta que aunque User1 tiene permisos de administrador de dominio para el dominio de AD DS de práctica de prueba, no es un administrador global de Office 365. Por lo tanto, no verá el icono de **administrador** como opción.
+Tenga en cuenta que, aunque User1 tiene permisos de administrador de dominio para el dominio TESTLAB AD DS, no es un administrador global. Por lo tanto, no verá el icono de **administrador** como opción.
 
 Esta es la configuración resultante:
 
@@ -106,5 +106,3 @@ Explorar características de [identidad](m365-enterprise-test-lab-guides.md#iden
 [Implementar Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 
 [Documentación y recursos de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-
