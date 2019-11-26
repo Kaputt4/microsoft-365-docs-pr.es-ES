@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilice esta guía de laboratorio de pruebas para crear un entorno de prueba ligero a con objeto de probar Microsoft 365 Enterprise.
-ms.openlocfilehash: fce612000fac79fe9552fa9882d6c48fdacda1c2
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 6f49982fe71196f3c147c1638b402ee63bb861c1
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694127"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202311"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuración básica ligera
 
@@ -55,47 +55,19 @@ Para iniciar la suscripción de prueba a Office 365 E5, primero necesita el nomb
 
 1. Abra el explorador de Internet en su equipo y vaya a [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
-2. En la página **Bienvenido. Permítanos conocerle**, especifique:
-    
-  - Su ubicación física
-    
-  - El nombre y apellidos de la nueva cuenta de Microsoft
-    
-  - La dirección de la nueva cuenta de correo
-    
-  - El número de teléfono del trabajo
-    
-  - El nombre de la compañía ficticia
-    
-  - El tamaño de la organización (250 a 999 personas)
-    
-3. Haga clic en **Un solo paso más**.
-    
-4. En la página **Crear su id. de usuario**, escriba un nombre de usuario basado en la nueva dirección de correo, la empresa ficticia después del signo @ (quite todos los espacios en el nombre) y una contraseña (dos veces) para esta nueva cuenta de Office 365. 
-    
-    Anote en un lugar seguro la contraseña que escriba.
-    
-    Anote aquí el nombre de la compañía ficticia, que se denominará **nombre de la organización**: ![](./media/Common-Images/TableLine.png)
-    
-5. Haga clic en **Crear mi cuenta**.
-    
-6. En la página **Demuestre. Que. No. Es. Un. Robot.**, escriba el número de teléfono de su teléfono compatible con texto y, después, haga clic en **Enviarme un mensaje**.
-    
-7. Escriba el código de verificación del mensaje de texto recibido y, después, haga clic en **Siguiente**.
-    
-8. Anote aquí la URL de la página de inicio de sesión (seleccionar y copiar): ![](./media/Common-Images/TableLine.png)
-    
-9. Anote aquí el identificador de usuario (seleccionar y copiar): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    Este valor se denominará **nombre de administrador global de Office 365**.
-    
-10. Cuando vea **Ya está listo**, haga clic.
-    
-11. En la página siguiente, espere hasta que Office 365 complete la configuración y estén disponibles todos los iconos.
-    
-Debe ver la Página principal del portal 365 de Office, desde la que puede obtener acceso a los servicios de Office y al centro de administración de Microsoft 365.
+2. En la página **Gracias por elegir Office 365 E5**, especifique la dirección de su nueva cuenta de correo electrónico en el paso 1.
+3. En el paso 2 del proceso de suscripción de prueba, escriba la información solicitada y, después, lleve a cabo la comprobación.
+4. En el paso 3, escriba el nombre de la organización y después el nombre de la cuenta que será el administrador global de la suscripción. 
+5. En el paso 4, registre la página de inicio de sesión aquí (seleccionar y copiar): ![](./media/Common-Images/TableLine.png) 
+6. Registre aquí el identificador de usuario: ![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+   Anote en un lugar seguro la contraseña que escriba.
+   Este valor se denominará **nombre de administrador global de Office 365**.
+8. Haga clic en **Ir a Configuración**.
+9. En el programa de instalación de Office 365 E5, haga clic en **Continuar usando *su organización*.onmicrosoft.com para el correo electrónico e inicio de sesión** y, a continuación, haga clic en **Salir y continuar más tarde**.
+
+Debería ver el Centro de administración de Microsoft 365.
   
-Tenemos que crear una suscripción de prueba de Office 365 para que su entorno de desarrollo y prueba tenga un espacio empresarial de Azure AD separado de cualquier suscripción de pago que tenga actualmente.  Esta separación significa que puede agregar y quitar usuarios y grupos en el espacio empresarial de prueba sin que afecte a las suscripciones de producción.
+Tenemos que crear una suscripción de prueba de Office 365 para que su entorno de prueba tenga un inquilino de Azure AD separado de cualquier suscripción de pago que tenga actualmente. Esta separación significa que puede agregar y quitar usuarios y grupos en el espacio empresarial de prueba sin que afecte a las suscripciones de producción.
     
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>Fase 2: configurar la suscripción de prueba de Office 365
 
@@ -103,7 +75,7 @@ En esta fase, se configura la suscripción a Office 365 con usuarios adicionales
   
 Siga las instrucciones que se indican en [Conectarse a PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) para conectarse a la suscripción a Office 365 con el módulo Azure Active Directory PowerShell para Graph desde su equipo.
     
-En el cuadro de diálogo Solicitud de credenciales para Windows PowerShell, escriba el nombre de administrador global de Office 365 (por ejemplo, svalladares@contosotoycompany.onmicrosoft.com) y la contraseña.
+En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba el nombre de administrador global de Office 365 (por ejemplo, svalladares@contosotoycompany.onmicrosoft.com) y la contraseña.
   
 Rellene el nombre de la organización (ejemplo: contosotoycompany), el código de país de dos caracteres para su ubicación, la contraseña de cuenta común y, después, ejecute los comandos siguientes desde el símbolo del sistema de PowerShell:
 
@@ -139,19 +111,19 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 > [!NOTE]
-> Se usa una contraseña común para automatizar y facilitar la configuración de un entorno de prueba y desarrollo. Evidentemente, esto no se recomienda en el caso de suscripciones de producción. 
+> Aquí se usa una contraseña común para automatizar y facilitar la configuración de un entorno de prueba. Evidentemente, esto no se recomienda en el caso de suscripciones de producción. 
 
 ### <a name="record-key-information-for-future-reference"></a>Guardar información clave para futuras referencias
 
-Es recomendable que imprima este artículo para registrar la información específica que necesitará para este entorno durante los 30 días de la suscripción de prueba de Office 365. Puede extender fácilmente la suscripción de prueba otros 30 días. Para un entorno de desarrollo y pruebas permanentes, cree una nueva suscripción de pago con un espacio empresarial de Azure AD distinto y un número reducido de licencias.
+Es recomendable que imprima este artículo para registrar la información específica que necesitará para este entorno durante los 30 días de la suscripción de prueba de Office 365. Puede extender fácilmente la suscripción de prueba otros 30 días. Para un entorno de pruebas permanente, cree una nueva suscripción de pago con un inquilino de Azure AD distinto y un número reducido de licencias.
 
 Registre estos valores:
   
-- Nombre del administrador global de Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (del paso 9 de la fase 2)
+- Nombre del administrador global de Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (del paso 6 de la fase 1)
     
     Guarde también la contraseña de esta cuenta en una ubicación segura.
     
-- Nombre de la organización de la suscripción de prueba: ![](./media/Common-Images/TableLine.png) (del paso 4 de la fase 2)
+- Nombre de la organización de la suscripción de prueba: ![](./media/Common-Images/TableLine.png) (del paso 4 de la fase 1)
     
 - Para mostrar las cuentas de los usuarios 2, 3, 4 y 5, ejecute los siguientes comandos desde el símbolo del sistema del Módulo de Windows Azure Active Directory para Windows PowerShell.
     
@@ -172,9 +144,9 @@ Registre estos valores:
     También puede guardar la contraseña común de estas cuentas en un lugar seguro.
    
 
-### <a name="using-an-office-365-devtest-environment"></a>Usar un entorno de desarrollo y pruebas de Office 365
+### <a name="using-an-office-365-test-environment"></a>Usar un entorno de prueba de Office 365
 
-Si solo necesita un entorno de desarrollo y pruebas de Office 365, vea está información. 
+Si todo lo que necesita es un entorno de prueba de Office 365, puede detenerse aquí. 
 
 Consulte las [Guías del laboratorio de pruebas de Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md) para ver otras guías del laboratorio de pruebas que se aplican a Office 365 y Microsoft 365.
   
@@ -182,32 +154,34 @@ Consulte las [Guías del laboratorio de pruebas de Microsoft 365 Enterprise](m36
 
 En esta fase se inscribe en la suscripción de evaluación de Microsoft 365 E5 y la agrega a la misma organización de la suscripción de evaluación de Office 365 E5.
   
-Primero agregue la suscripción de prueba de Microsoft 365 E5 y asigne una licencia de Microsoft 365 a su cuenta de administrador global.
+Primero, agregue la suscripción de prueba de Microsoft 365 E5 y asigne la nueva licencia de Microsoft 365 a su cuenta de administrador global.
   
 1. Con una instancia privada de un explorador de Internet, inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com) con sus credenciales de cuenta de administrador global.
     
 2. En la página **Centro de administración de Microsoft 365**, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
-3. En la página **Servicios de compra**, busque el elemento **Microsoft 365 E5**. Mantenga el puntero del ratón sobre dicho elemento y haga clic en **Iniciar prueba gratuita**. 
+3. En la página **Servicios de compra**, haga clic en **Microsoft 365 E5 **y, después, haga clic en **Obtener la versión de prueba gratuita**.
 
-4. En la página de la **Versión de prueba de Microsoft 365 E5**, elija entre recibir una llamada o un mensaje de texto, escriba el número de teléfono y haga clic en **Enviarme un mensaje de texto** o **Llamarme**.
+4. En la página de la **Versión de prueba de Microsoft 365 E5**, elija entre recibir una llamada o un mensaje de texto, escriba el número de teléfono y haga clic en **Enviarme un mensaje de texto** o **Llamarme**. Realice la comprobación.
 
 5. En la página **Confirmar pedido**, haga clic en **Probar ahora**.
 
 6. En la página **Recibo del pedido**, haga clic en **Continuar**.
 
-7. En el Centro de administración de Microsoft 365, haga clic en **Usuarios activos** y en su cuenta de administrador.
+7. En el Centro de administración de Microsoft 365, haga clic en **Usuarios > Usuarios activos**.
 
-8. Haga clic en **Editar** para **Licencias de productos**.
+8. En **Usuarios activos**, haga clic en su cuenta de administrador.
 
-9. Desactive la licencia para Office 365 Enterprise E5 y active la licencia de Microsoft 365 E5.
+9. Seleccione **Licencias y aplicaciones**.
 
-10. Haga clic en **Guardar > Cerrar > Cerrar**.
+10. Desactive la licencia para Office 365 Enterprise E5 y active la licencia de Microsoft 365 E5.
+
+11. Haga clic en **Guardar cambios** y, después, cierre el panel de información de la cuenta de usuario.
 
 Después, repita los pasos del 8 al 11 del procedimiento anterior para todas las demás cuentas (usuario 2, usuario 3, usuario 4 y usuario 5).
   
 > [!NOTE]
-> La suscripción de prueba de Microsoft 365 E5 tiene una duración de 30 días. Para tener un entorno de prueba permanente, convierta esta suscripción de prueba en una suscripción de pago con unas pocas licencias. 
+> La suscripción de prueba de Microsoft 365 E5 tiene una duración de 30 días. Para tener un entorno de prueba permanente, convierta esta suscripción de prueba en una suscripción de pago con un bajo número de licencias. 
   
 Su entorno de desarrollo y prueba ahora tiene:
   
@@ -216,7 +190,7 @@ Su entorno de desarrollo y prueba ahora tiene:
     
 Esta es la configuración resultante, que agrega Microsoft 365 E5, que incluye Office 365 y Enterprise Security + administración (EMS).
   
-![Fase 2 del entorno de prueba de Microsoft 365 Enterprise](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Fase 3 del entorno de prueba de Microsoft 365 Enterprise](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## <a name="phase-4-create-a-windows-10-enterprise-computer"></a>Fase 4: crear un equipo con Windows 10 Enterprise
 
