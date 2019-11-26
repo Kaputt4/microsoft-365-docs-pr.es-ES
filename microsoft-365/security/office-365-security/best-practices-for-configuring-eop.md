@@ -1,5 +1,5 @@
 ---
-title: Procedimientos recomendados para configurar EOP
+title: Procedimientos recomendados para configurar EOP y Office 365 ATP
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,16 +10,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estos procedimientos recomendados para Exchange Online Protection (EOP) con el fin de evitar errores comunes de configuración y prepararse para usar esta característica sin problemas.
-ms.openlocfilehash: 95b415038fdddd1548b23edb89921084d70850c6
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: ccc312d6e3e9954ea38b10ebe9b4c8877a85b925
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204269"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257295"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Procedimientos recomendados para configurar EOP
 
-Siga estos procedimientos recomendados para Exchange Online Protection (EOP) con el fin de evitar errores comunes de configuración y prepararse para usar esta característica sin problemas. Como norma general, se recomienda usar la configuración predeterminada. En este tema se supone que ya completó el proceso de configuración. Si no completó la configuración de EOP, vea [Configurar un servicio de EOP](set-up-your-eop-service.md).
+Siga estos procedimientos recomendados para Exchange Online Protection (EOP) con el fin de evitar errores comunes de configuración y prepararse para usar esta característica sin problemas. En este tema se supone que ya completó el proceso de configuración. Si no completó la configuración de EOP, vea [Configurar un servicio de EOP](set-up-your-eop-service.md).
 
 ## <a name="use-a-test-domain"></a>Usar un dominio de prueba
 
@@ -27,36 +27,44 @@ Recomendamos usar un dominio, subdominio o dominio de bajo volumen de prueba par
 
 ## <a name="synchronize-recipients"></a>Sincronizar destinatarios
 
-Si su organización tiene cuentas de usuario existentes en un entorno local de Active Directory, puede sincronizar dichas cuentas con Azure Active Directory en la nube. Se recomienda usar la sincronización de directorios. Para más información sobre los beneficios de usar la sincronización de directorios y los pasos para configurarla, vea [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md).
+Si la organización cuenta con cuentas de usuario existentes en un entorno local de Active Directory, puede sincronizar esas cuentas con Azure Active Directory en la nube. Se recomienda usar la sincronización de directorios. Para más información sobre los beneficios de usar la sincronización de directorios y los pasos para configurarla, vea [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md).
 
-## <a name="spf-record-customization-to-help-prevent-spoofing"></a>Personalización del registro de SPF para impedir la suplantación de identidad
+## <a name="recommended-settings"></a>Configuración recomendada
 
-Al configurar EOP, agregó un registro de marco de directivas de remitente (SPF) para EOP a sus registros DNS. El registro de SPF ayuda a impedir la suplantación de identidad. Para obtener más información acerca de cómo un registro de SPF impide la suplantación de identidad y cómo puede Agregar las direcciones IP locales al registro de SPF, consulte [configurar SPF en Office 365 para evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+Habilitamos a los administradores de seguridad para personalizar la configuración de seguridad que satistfy las necesidades de sus entornos. Aunque, como regla general, hay dos niveles de seguridad en EOP y Office 365 ATP que se recomiendan: estándar y estricta. Esta configuración se muestra en la [configuración recomendada para EOP y Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md). 
 
-## <a name="set-anti-spam-options"></a>Establecer opciones contra correo no deseado
+### <a name="miscellaneousnon-policy-settings"></a>Configuraciones varias/sin directivas
 
-Administre la configuración del filtro de conexión agregando direcciones IP a las listas de direcciones IP permitidas y IP bloqueadas, y seleccionando la opción **Habilitar lista segura** , que debe reducir el número de falsos positivos (mensajes buenos que están clasificados incorrectamente como correo no deseado) que recibe. Para obtener más información, vea [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md). Para obtener más opciones de configuración de correo no deseado que se aplican a toda la organización, eche un vistazo a [Cómo evitar que el correo electrónico real se marque como correo no deseado en office 365](../../compliance/prevent-email-from-being-marked-as-spam.md) o [cómo reducir el correo no deseado en Office 365](reduce-spam-email.md)). Estos temas son útiles si tiene control de nivel de administrador y desea evitar falsos positivos o falsos negativos.
+Esta configuración cubre una variedad de características que se encuentran fuera de las directivas de seguridad.
 
-Administre los filtros de contenido revisando y, opcionalmente, cambie la configuración predeterminada. Por ejemplo, puede cambiar la acción de qué ocurre con los mensajes detectados como correo no deseado. Si desea seguir un enfoque agresivo del filtrado de correo no deseado, puede configurar opciones avanzadas de filtrado de correo no deseado. Le recomendamos que Pruebe estas opciones primero antes de implementarlas en su entorno de producción (al activarlas). Recomendamos que las organizaciones preocupadas por la suplantación de identidad (phishing) activen la opción **registro de SPF: error** . Para obtener más información, vea [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) y [Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md).
+Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
+|---------|---------|---------|---------|
+|[Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sí|Sí||
+|[Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md)|Sí|Sí||
+|[Usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md)|Sí|Sí|Use Action = Quarantine para Standard y Action = Reject para STRICT.|
+|Implementar el complemento de mensajes de informe para mejorar los informes de usuarios finales de correos sospechosos|Sí|Sí||
+|Programar informes de malware y correo no deseado|Sí|Sí||
+|No se debe permitir ni supervisar el reenvío automático a dominios externos|Sí|Sí||
+|La auditoría unificada debe estar habilitada|Sí|Sí||
+|Conectividad IMAP a buzón de correo|Deshabilitado|Deshabilitado||
+|Conectividad POP al buzón de correo|Deshabilitado|Deshabilitado||
+|Envío autenticado mediante SMTP al buzón de correo|Deshabilitado|Deshabilitado||
+|Conectividad de EWS al buzón de correo|Deshabilitado|Deshabilitado||
+|Conectividad de PowerShell|Deshabilitado|Deshabilitado||
+|Usar inteligencia simulada para los remitentes de listas blancas siempre que sea posible|Sí|Sí||
+|Bloqueo perimetral basado en directorios (DBEB)|Habilitado|Habilitado|Tipo de dominio = autoritario|
+|[Configurar la autenticación multifactor para todas las cuentas de administrador](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Habilitado|Habilitado||
 
-> [!IMPORTANT]
-> Si está usando la acción de filtro de contenido predeterminada, **mueva el mensaje a la carpeta correo no deseado**para asegurarse de que la acción funcionará con los buzones locales, debe configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en su organización local de Exchange para detectar los encabezados de correo no deseado que se agregan mediante EOP. Para más información, consulte [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+## <a name="troubleshooting"></a>Solución de problemas
 
-Le recomendamos que revise las [preguntas más frecuentes sobre protección contra correo electrónico no deseado](anti-spam-protection-faq.md), incluida la sección procedimientos recomendados de correo saliente, que le permitirá garantizar que el correo saliente se entregue.
+Solucionar problemas generales y tendencias mediante el uso de los informes del centro de administración. Para encontrar datos específicos en un punto único sobre un mensaje, use la herramienta de seguimiento de mensajes. Para más información sobre informes, vea [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Para más información sobre la herramienta de seguimiento de mensajes, vea [Trace an Email Message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message).
 
-Hay varias maneras de enviar falsos negativos (correo no deseado) y falsos positivos (no es correo no deseado) a Microsoft para que los analice. Para obtener más información, consulte [Enviar correo electrónico no deseado, mensajes sin correo no deseado y mensajes de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+## <a name="reporting-false-positive-and-false-negatives-to-microsoft"></a>Informar sobre falsos positivos y falsos negativos a Microsoft
 
-## <a name="set-anti-malware-options"></a>Establecer opciones antimalware
+Los administradores deben enviar falsos negativos (correo no deseado) y falsos positivos (correo no deseado) a Microsoft a través de nuestro portal de envíos de administración. Los correos electrónicos, archivos y direcciones URL pueden enviarse para ayudar a los administradores a determinar por qué nosotros entregamos o no entregamos mensajes a los usuarios finales. Para obtener más información, consulte [Cómo enviar sospechoso correo no deseado, phish, direcciones URL y archivos a Microsoft para el análisis de Office 365](admin-submission.md).
 
-Revise y ajuste la configuración del filtro de malware. Para obtener más información, vea [Configure anti-malware Policies](configure-anti-malware-policies.md). También le recomendamos que lea otras preguntas frecuentes y respuestas relacionadas con protección antimalware en [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md).
+Los usuarios finales también pueden informar directamente de falsos negativos (correo no deseado) y falsos positivos (correo no deseado) a Microsoft para su análisis cuando no están de acuerdo con los veredictos dados. Para obtener más información, consulte [Enviar correo electrónico no deseado, mensajes sin correo no deseado y mensajes de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 
-Si le preocupan los archivos ejecutables que contienen malware, puede crear una regla de flujo de correo que bloquee todos los datos adjuntos de correo electrónico que tengan contenido ejecutable. Siga los pasos [que se describen en cómo reducir las amenazas de malware a través del bloqueo de datos adjuntos de archivos en Exchange Online Protection](https://support.microsoft.com/kb/2959596) para bloquear los archivos [adjuntos a mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)que aparecen en usar reglas de flujo de correo.
-
-Puede usar el [filtro tipos de datos adjuntos comunes](protect-against-threats.md#part-1---anti-malware-protection) en directivas antimalware.
-
-Para una mayor protección, también le recomendamos usar reglas de flujo de correo para bloquear algunas o todas las extensiones siguientes: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh. Para ello, use la condición **cualquier extensión de archivo adjunto incluye estas palabras** .
-
-Los administradores y los usuarios finales pueden enviar malware que lo hacían más allá de los filtros o enviar un archivo que considera que se identificó incorrectamente como malware enviándolo a Microsoft para su análisis. Para obtener más información, vea [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md).
 
 ## <a name="create-mail-flow-rules"></a>Crear reglas de flujo de correo
 
@@ -68,35 +76,4 @@ Al implementar reglas nuevas, considere la posibilidad de agregar la acción adi
 
 En entornos híbridos donde la organización incluya tanto Exchange como Office 365, tenga en cuenta las condiciones que se usan en las reglas de flujo de correo. Si desea que las reglas se apliquen a toda la organización, asegúrese de usar las condiciones que están disponibles en Exchange local y en Office 365. Aunque la mayoría de las condiciones están disponibles en ambos entornos, hay algunas que solo están disponibles en un entorno o en la otra. Obtenga más información en [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-Puede usar reglas de flujo de correo para inspeccionar los datos adjuntos de mensajes de los mensajes en tránsito dentro de la organización. Configure las condiciones de la regla para buscar los datos adjuntos y, a continuación, realice una acción en los datos adjuntos detectados. Para obtener más información, vea [usar reglas de flujo de correo para inspeccionar datos adjuntos de mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).
 
-### <a name="phishing-and-spoofing-prevention"></a>Suplantación de identidad (phishing) y prevención de suplantación
-
-Puede mejorar la protección contra suplantación de identidad (anti-phishing) si detecta el momento en que la información personal sale de la organización en un correo electrónico. Por ejemplo, puede usar las siguientes expresiones regulares en las reglas de flujo de correo para detectar la transmisión de datos financieros personales o información que puede poner en riesgo la privacidad:
-
-- `\d\d\d\d\s\d\d\d\d\s\d\d\d\d\s\d\d\d\d`(MasterCard o Visa)
-
-- `\d\d\d\d\s\d\d\d\d\d\d\s\d\d\d\d\d`(American Express)
-
-- `\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d`(cualquier número de 16 dígitos)
-
-- `\d\d\d\-\d\d\-\d\d\d\d`(Números de la seguridad social)
-
-El éxito de las campañas de correo no deseado y de suplantación de identidad también puede reducirse mediante el bloqueo de mensajes de correo electrónico malintencionados entrantes que parecen haber sido enviados desde su propio dominio. Por ejemplo, puede crear una regla de flujo de correo que rechace los mensajes de su dominio de empresa enviados al mismo dominio de empresa para bloquear este tipo de falsificación del remitente.
-
-> [!CAUTION]
-> Se recomienda crear esta regla de rechazo solo cuando exista la certeza de que no se envía desde Internet ningún correo legítimo desde su dominio a su servidor de correo. Esto puede ocurrir, por ejemplo, cuando un usuario de la organización envía un mensaje a un destinatario externo y, posteriormente, se reenvía a otro destinatario de la organización.
-
-## <a name="reporting-and-troubleshooting"></a>Notificación y solución de problemas
-
-Solucionar problemas generales y tendencias mediante el uso de los informes del centro de administración. Para encontrar datos específicos en un punto único sobre un mensaje, use la herramienta de seguimiento de mensajes. Para más información sobre informes, vea [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Para más información sobre la herramienta de seguimiento de mensajes, vea [Trace an Email Message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message).
-
-## <a name="for-more-information"></a>Para obtener más información
-
-[Preguntas más frecuentes sobre EOP](eop-general-faq.md)
-
-[Ayuda y soporte técnico para EOP](help-and-support-for-eop.md)
-
-[Cómo evitar que los mensajes reales se marquen como correo no deseado en Office 365](../../compliance/prevent-email-from-being-marked-as-spam.md)
-
-[Cómo reducir el correo no deseado en Office 365](reduce-spam-email.md)
