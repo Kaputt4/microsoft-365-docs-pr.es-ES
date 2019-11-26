@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 1cd1a73395a7bfeb190f8a31589c27bb95312484
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 92979fd66ac2d51c48b7a0836be5eb1133ae242a
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982341"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39266183"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 y notificación de vulneraciones según el RGPD
 
@@ -71,7 +73,7 @@ Microsoft asigna la prioridad y los niveles de gravedad adecuados a la investiga
 
 El equipo de respuesta de seguridad trabaja con los ingenieros de seguridad de Microsoft Dynamics 365 y expertos en la materia para clasificar el evento basándose en datos concretos a partir de las evidencias. Un evento de seguridad se puede clasificar como:
 
-- **Falso positivo:** un evento que cumple los criterios de detección, pero que pertenece a un procedimiento empresarial normal y puede que sea necesario filtrarlo. El equipo de servicio identificará la causa principal de los falsos positivos y los solucionará de forma sistemática con el ajuste de los orígenes<span id="_Toc350859432" class="anchor"></span> de detección, según sea necesario.
+- **Falso positivo:** Es un evento que cumple con los criterios de detección pero que se considera parte de una práctica comercial normal y es preciso que sea filtrado. El equipo de servicio se ocupará de identificar la causa principal de los falsos positivos y afrontarlos de forma sistemática aprovechando las fuentes de detección y afinarlas en caso necesario.
 - **Incidente de seguridad:** un incidente en el que se produce un acceso ilegal a los datos de los clientes o de soporte técnico almacenados en equipos o instalaciones de Microsoft; o un acceso no autorizado a dichos equipos o instalaciones que da como resultado la pérdida, divulgación o modificación de datos de clientes o de soporte técnico.
 - **Incidente de seguridad o privacidad denunciado por el cliente:** un acceso o un uso ilegal o no autorizado de sistemas, equipos o instalaciones de Microsoft que da como resultado la divulgación, modificación o pérdida de datos de clientes.
 - **Incidente de privacidad**: caso específico de un incidente relativo a la seguridad que involucra datos personales. Los procedimientos de control son los mismos que los de un incidente de seguridad.
@@ -97,7 +99,7 @@ Microsoft Dynamics 365 proporciona a los clientes información detallada, lo que
 
 La notificación de una vulneración de datos personales se entregará al cliente por cualquiera de los medios que seleccione Microsoft, incluido por correo electrónico. La notificación de una vulneración de datos se entregará a la lista de administradores o contactos del cliente (solo de los espacios empresariales afectados) especificados en el Centro de seguridad de Office, lo que puede configurar el cliente o el administrador del espacio empresarial. Para garantizar que la notificación se pueda entregar correctamente, es responsabilidad del cliente comprobar que sea correcta la información del contacto administrativo de la suscripción y el portal de servicios en línea correspondientes.
 
-El equipo de Microsoft Dynamics 365 también puede enviar notificaciones adicionales a personal de Microsoft, como al servicio de atención al cliente y al administrador de cuentas del cliente o responsable técnico de cuenta (TAM). Con frecuencia, estas personas tienen una relación estrecha con el cliente y pueden facilitar una corrección más rápida.<span id="_Appendix_A" class="anchor"></span>
+El equipo de Microsoft Dynamics 365 también puede optar por informar al personal adicional de Microsoft, como el servicio de atención al cliente (CSS), el administrador de cuentas del cliente (o) o el administrador de cuentas técnicas (TAM). Por lo general, estas personas suelen tener relaciones estrechas con el cliente y pueden facilitar la reparación más rápida.
 
 ## <a name="learn-more"></a>Más información
 

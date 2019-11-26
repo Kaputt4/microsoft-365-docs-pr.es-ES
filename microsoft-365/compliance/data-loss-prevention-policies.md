@@ -12,15 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) del Centro de seguridad y cumplimiento, puede identificar, supervisar y proteger automáticamente información confidencial en todo Office 365.
-ms.openlocfilehash: 940db3e32c67ee0c457bd499f63a562343f09e2b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091797"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "39266187"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Información general sobre la prevención de pérdida de datos
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -106,6 +107,9 @@ Las condiciones disponibles ahora pueden determinar si:
 - El contenido incluye una etiqueta. Para obtener más información, consulte la sección [Usar una etiqueta como una condición en una directiva DLP](#using-a-label-as-a-condition-in-a-dlp-policy), que encontrará a continuación.
     
 - El contenido se comparte con personas de fuera o dentro de la organización.
+
+> [!NOTE]
+> Los usuarios que tienen cuentas que no son de invitado en el espacio empresarial de Active Directory o de Azure Active Directory de una organización anfitriona se consideran como personas dentro de la organización.
     
 #### <a name="types-of-sensitive-information"></a>Tipos de información confidencial
 
@@ -322,7 +326,11 @@ Puede crear una etiqueta y después:
     
 Para obtener más información sobre las etiquetas, vea [Información general sobre etiquetas de retención](labels.md).
   
-Después de crear una etiqueta, podrá usarla como una condición en sus directivas DLP. Por ejemplo, es posible que desee hacer esto porque:
+Después de crear una etiqueta, podrá usarla como una condición en sus directivas DLP. 
+
+![Etiquetas como una condición](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+Por ejemplo, es posible que desee hacer esto porque:
   
 - Publicó una etiqueta denominada **Confidencial**, de modo que los usuarios de su organización pueden aplicar manualmente la etiqueta a documentos y correo electrónico confidencial. Si usa esta etiqueta como una condición en la directiva DLP, puede restringir el uso compartido del contenido con la etiqueta **Confidencial** con personas fuera de su organización. 
     
@@ -332,9 +340,10 @@ Después de crear una etiqueta, podrá usarla como una condición en sus directi
     
 - Ha publicado una etiqueta denominada **Equipo ejecutivo de liderazgo: confidencial** a las cuentas de OneDrive y los buzones de Exchange de un grupo de ejecutivos. Al usar esta etiqueta como una condición en la directiva DLP, puede aplicar acciones de retención y protección en el mismo subconjunto de contenido y usuarios. 
     
-Al usar etiquetas como condiciones en las reglas DLP, puede también aplicar acciones de protección de forma selectiva en un conjunto específico de contenido, ubicaciones o usuarios.
-  
-![Etiquetas como una condición](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+Al usar etiquetas como condiciones en las reglas DLP, puede también aplicar acciones de protección de forma selectiva en un conjunto específico de contenido, ubicaciones o usuarios. 
+
+> [!NOTE]
+> Si especifica una etiqueta de retención como una condición en una directiva DLP e incluye también Exchange y/o Teams como una ubicación, recibirá el siguiente mensaje de error: "No se admite la protección del contenido etiquetado en el correo electrónico y los mensajes de Teams. Elimine la etiqueta debajo o desactive Exchange y Teams como ubicación." Esto se debe a que el transporte de Exchange no evalúa los metadatos de la etiqueta durante el envío y entrega de mensajes. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>La compatibilidad con las etiquetas de confidencialidad estará disponible próximamente
 
