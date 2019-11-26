@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 287d5252fd787d80a20ff6cff77a7b1f7cf7e0bf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc8002d900c38dee1b8487bbc0167b956f63b97f
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092183"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257058"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un caso de eDiscovery avanzado
 
@@ -38,7 +38,7 @@ Para agregar custodios a un caso, debe ser miembro del grupo de roles eDiscovery
 
 El primer paso es identificar y agregar custodios al caso.
 
-1. En la Página principal de **EDiscovery avanzado** , haga clic en el caso al que quiera agregar custodios. 
+1. En la Página principal de **EDiscovery avanzado** , haga clic en el caso al que desea agregar custodios. 
  
 2. Haga clic en la ficha **custodios** y, a continuación, haga clic en **+ Agregar custodios**.
 
@@ -50,17 +50,17 @@ El primer paso es identificar y agregar custodios al caso.
   
 ## <a name="step-2-select-custodian-data-sources"></a>Paso 2: seleccionar orígenes de datos custodios
 
-Una vez agregados los custodios, la herramienta de custodio le ayudará a identificar los orígenes de datos principales que posee cada custodio; concretamente, estas ubicaciones de datos son el buzón de Exchange y la cuenta de OneDrive del custodio. 
+Una vez agregados los custodios, la herramienta de custodio le ayudará a identificar los orígenes de datos principales que pertenecen a cada custodio. Estas ubicaciones de datos son el buzón de Exchange y la cuenta de OneDrive del custodio. 
 
 Para identificar los orígenes de datos de custodios: 
 
-1. Para seleccionar el buzón de Exchange para todos los custodios, haga clic en la casilla de verificación **Exchange** situada en la parte superior de la columna. Tenga en cuenta que puede anular la selección de la casilla de verificación de cualquier custodio específico para quitar un buzón de correo como una ubicación de privación. Como alternativa, puede dejar la casilla de verificación **Exchange** en la parte superior de la columna desactivada y, a continuación, seleccionar la casilla para los custodios individuales. 
+1. Para seleccionar el buzón de Exchange para todos los custodios, active la casilla de verificación **Exchange** en la parte superior de la columna. A continuación, puede desactivar la casilla de cualquier custodio específico para quitar un buzón de correo como una ubicación de privación. Como alternativa, puede dejar la casilla de verificación **Exchange** en la parte superior de la columna desactivada y, a continuación, activar la casilla para los custodios individuales. 
  
    ![Seleccionar orígenes de datos de Private](media/AddCustodianStep2.png)
  
 2. Repita lo mismo para las cuentas de OneDrive de los custodios. 
 
-    Después de seleccionar los orígenes de datos de custodios, el sistema intenta identificar y comprobar automáticamente estos orígenes de datos y, a continuación, los agrega al caso como orígenes de datos asociados con los custodios.
+    Después de seleccionar los orígenes de datos de custodios, el sistema intenta identificar y comprobar de forma automática estos orígenes de datos y, a continuación, los agrega al caso como orígenes de datos asociados con los custodios.
  
 4. Haga clic en **siguiente** para empezar a asociar orígenes de datos adicionales a los custodios en el caso.
 
@@ -74,7 +74,7 @@ Para asignar buzones de correo, sitios o equipos a un custodio específico:
   
    ![Asignar orígenes de datos adicionales](media/AddCustodianStep3.PNG)
 
-2. En la página de flotante, puede especificar un origen de datos de cualquiera de los servicios de Office 365 siguientes:
+2. En la página de flotante, puede especificar un origen de datos de cualquiera de los siguientes servicios de Office 365:
   
    -  **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. Use el cuadro de búsqueda para encontrar los buzones de correo que desea asociar con el custodio. Para especificar los buzones que se asignarán al custodio seleccionado, use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución. También puede asignar el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
 
@@ -94,17 +94,17 @@ Una vez que haya terminado de asociar los orígenes de datos adicionales con los
 
 ## <a name="step-4-place-custodians-on-hold"></a>Paso 4: poner los custodios en espera
 
-Una vez que haya finalizado los custodios y los orígenes de datos que se deben agregar al caso, también puede poner algunos o todos los custodios en retención. Cuando se pone un custodio en espera, todo el contenido en todas las ubicaciones de contenido que están asociados a la custodio se conserva hasta que se elimina la retención o se libera el custodio del. En algunos casos, es posible que quiera agregar custodios a un caso sin ponerlos en retención.
+Una vez que haya finalizado los custodios y los orígenes de datos que se deben agregar al caso, también puede poner algunos o todos los custodios en retención. Cuando se pone un custodio en espera, todo el contenido de todas las ubicaciones de contenido que están asociados con el custodio se conserva hasta que se quita la retención o se libera el custodio de la retención. En algunos casos, es posible que quiera agregar custodios a un caso sin ponerlos en retención.
 
 Para poner los custodios y los orígenes de datos en espera:
 
-1. En la página **poner una retención en la página de custodios seleccionada** , haga clic en la casilla " **suspensión** " situada en la parte superior de la columna para poner todos los custodios en retención. Tenga en cuenta que puede anular la selección de la casilla de verificación de cualquier custodio específico para quitarlo de la suspensión. Como alternativa, puede dejar la casilla " **mantener presionado** " en la parte superior de la columna desactivada y, a continuación, activar la casilla para los custodios individuales. 
+1. En la página **poner una retención en la página de custodios seleccionada** , active la casilla de verificación **suspender** situada en la parte superior de la columna para poner todos los custodios en retención. A continuación, puede desactivar la casilla de cualquier custodio específico para quitarlo de la suspensión. Como alternativa, puede dejar la casilla **mantener** en la parte superior de la columna desactivada y, a continuación, activar la casilla para custodios individuales. 
  
    ![Retenciones de posición](media/AddCustodianStep5.PNG)
 
 2. Compruebe las selecciones de retención de custodios y haga clic en **Finalizar**.
 
-Si no coloca una retención en una custodia, el custodio y sus orígenes de datos asociados se agregarán al caso, pero el contenido de dichos orígenes de datos no se colocará en retención.
+Si no coloca una retención en un custodio, el custodio y sus orígenes de datos asociados se agregarán al caso, pero el contenido de los orígenes de datos no se pondrá en retención.
 
 Una vez que un custodio se coloca en retención, se creará automáticamente una directiva de retención de custodios que contiene todas las fuentes de la Private. Para ver esta directiva:
 

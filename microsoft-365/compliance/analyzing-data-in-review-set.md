@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 60436db997d75d92e7d17fc27f66eb3944b419d8
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092147"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256907"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en eDiscovery avanzado
 
@@ -43,7 +43,7 @@ Para analizar los datos de un conjunto de revisión:
 
 Puede comprobar el progreso del análisis en la ficha **trabajos** del caso.
 
- Una vez completado el análisis, puede ver el informe de análisis, ejecutar consultas dentro de su conjunto de revisión en los resultados del análisis (vea [la consulta dentro del conjunto de revisión](review-set-search.md)) y ver los documentos relacionados de un documento determinado (vea [revisar los datos en el conjunto de revisiones](reviewing-data-in-review-set.md)).
+ Una vez completado el análisis, puede ver el informe de análisis, ejecutar consultas dentro de su conjunto de revisión en los resultados del análisis (vea la [consulta dentro del conjunto de revisión](review-set-search.md)) y ver los documentos relacionados de un documento determinado (vea [revisar los datos en el conjunto de revisiones](reviewing-data-in-review-set.md)).
 
 ## <a name="analytics-report"></a>Informe de análisis
 
@@ -63,4 +63,4 @@ El informe tiene cuatro componentes del análisis:
 
 - **Mensajes de correo electrónico:** cuántos mensajes de correo electrónico eran inclusivos, copias inclusivas, menos inclusivas o ninguna de las anteriores.
 
-- **Datos adjuntos** : Cuántos archivos adjuntos de correo electrónico eran únicos o duplicados de otro adjunto de correo electrónico en el conjunto de revisión.
+- **Datos adjuntos** : Cuántos archivos adjuntos de correo electrónico son únicos o duplicados de otro correo electrónico adjunto en el conjunto de revisión.

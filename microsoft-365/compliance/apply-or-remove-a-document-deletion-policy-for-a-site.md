@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Las organizaciones suelen estar sujetas a normas de cumplimiento, leyes u otras regulaciones que las obligan a conservar sus documentos durante un período de tiempo. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal. Por esta razón, su organización puede haber creado una directiva de eliminación de documentos para el sitio como, por ejemplo, en el caso de que los documentos empresariales de carácter general deban eliminarse cinco años después de su creación.
-ms.openlocfilehash: 3f5228c26cc4e12c129a57e2141e3eea50d029a2
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: 2eaa864cda726e6e36625f81358da76856db7db4
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342963"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256767"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Aplicar o quitar una directiva de eliminación de documentos de un sitio
 
-Las organizaciones suelen estar sujetas a normas de cumplimiento, leyes u otras regulaciones que las obligan a conservar sus documentos durante un período de tiempo. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal. Por esta razón, su organización puede haber creado una directiva de eliminación de documentos para el sitio como, por ejemplo, en el caso de que los documentos empresariales de carácter general deban eliminarse cinco años después de su creación.
+Las organizaciones suelen estar sujetas a normas de cumplimiento, leyes u otras regulaciones que las obligan a conservar sus documentos durante un período de tiempo. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal. Por este motivo, es posible que su organización haya creado una directiva de eliminación de&mdash;documentos para el sitio, por ejemplo, puede que sea necesario que los documentos generales de negocio se eliminen cinco años después de su creación.
   
 Dependiendo de la organización, una directiva de eliminación de documentos puede ser:
   
@@ -33,11 +33,11 @@ Dependiendo de la organización, una directiva de eliminación de documentos pue
     
   - Elegir otra directiva, si la hay.
     
-  - Anular la directiva si no está relacionada con el contenido del sitio.
+  - No participar en la Directiva en su totalidad si no es relevante para el contenido del sitio.
     
 - **Ni obligatoria ni predeterminada** En este caso, no se aplica ninguna directiva al sitio automáticamente, y el propietario debe aplicarla de forma manual. 
     
-Una directiva de eliminación de documentos puede contener más de una regla; por ejemplo, una regla puede especificar que los documentos se deberán eliminar un año después de la creación y otra que la eliminación de documentos deberá tener lugar un año después de la última modificación. Si una directiva contiene más de una regla, puede seleccionar la que se ajuste mejor al sitio. La regla de eliminación se aplicará a todas las bibliotecas del sitio. Solo puede haber una directiva y una regla activas en un sitio al mismo tiempo. Al igual que ocurre con las directivas, es posible establecer una regla como predeterminada para que se aplique automáticamente al aplicar la directiva.
+Una directiva de eliminación de documentos puede contener más de&mdash;una regla por ejemplo, una regla puede decir eliminar documentos un año después de su creación, pero otra regla puede decir eliminar documentos un año después de que se modificaron por última vez. Si una directiva contiene más de una regla, puede seleccionar la que se ajuste mejor al sitio. La regla de eliminación se aplicará a todas las bibliotecas del sitio. Solo puede haber una directiva y una regla activas en un sitio al mismo tiempo. Al igual que una directiva, una regla se puede establecer como predeterminada para que se aplique automáticamente cuando se aplica la Directiva.
   
 Por último, las directivas de eliminación de documentos son heredadas. Cuando se selecciona una directiva o regla para un sitio, todos los subsitios heredan esa selección, a menos que el propietario de un subsitio interrumpa la herencia seleccionando una directiva o regla distinta. Cuando seleccione una directiva o regla, tenga en cuenta el contenido de los subsitios del sitio.
   
@@ -85,7 +85,7 @@ Como propietario del sitio o propietario de la colección de sitios, su organiza
   
   - **Para dejar de participar en una directiva** Elija **no participar: Nota eliminar** \> **Guardar**.
     
-    Como propietario de un sitio, puede anular una directiva de eliminación de documentos si considera que la directiva no puede aplicarse al contenido del sitio. Sin embargo, no puede anular una directiva marcada como **Obligatoria**.
+    Como propietario de un sitio, puede rechazar una directiva de eliminación de documentos si determina que la Directiva no se aplica al contenido de su sitio. Sin embargo, no puede optar por no participar en una directiva que se haya marcado como **obligatoria**.
     
     ![Opción de cancelación](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
@@ -99,7 +99,7 @@ Un sitio puede usar otras directivas para la retención y eliminación de conten
     
 Si aplica una directiva de eliminación de documentos a un sitio que ya usa directivas de tipo de contenido o directivas de administración de información para una lista o biblioteca, dichas directivas se ignorarán mientras la directiva de eliminación de documentos esté activa. Si se omiten otras directivas, verá el mensaje "el contenido de este sitio usa directivas de eliminación de documentos".
   
-Esto quiere decir que debe configurar un sitio de forma que solo utilice directivas creadas para contenido estructurado (directivas de administración de información y directivas de tipo de contenido) o contenido no estructurado (directivas de eliminación de documentos), pero no ambos. Si anula una directiva de eliminación de documentos, no se mostrará la advertencia y los demás tipos de directivas seguirán funcionando con normalidad.
+Esto quiere decir que debe configurar un sitio de forma que solo utilice directivas creadas para contenido estructurado (directivas de administración de información y directivas de tipo de contenido) o contenido no estructurado (directivas de eliminación de documentos), pero no ambos. Si opta por no usar una directiva de eliminación de documentos, la advertencia no se mostrará y otros tipos de directivas seguirán funcionando.
   
 Las directivas del sitio no se verán afectadas por las directivas de eliminación de documentos.
   

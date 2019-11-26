@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Puede usar Information Rights Management (IRM) para ayudar a controlar y proteger los archivos que se descargan de listas o bibliotecas.
-ms.openlocfilehash: 82cbbf7fdea4a534c2bc73bf0f817d6fc3a249de
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: cd970f5e89a08de133511c99b8209b389f32cd87
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38687802"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256817"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicar Information Rights Management (IRM) a una lista o biblioteca
 
@@ -53,7 +53,7 @@ Puede usar Information Rights Management (IRM) para ayudar a controlar y protege
     
     ![Botones de configuración de la biblioteca de SharePoint en la cinta](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
-3. En **permisos y administración**, haga clic en **Information Rights Management**. Si no aparece el vínculo Information Rights Management, es posible que IRM no esté habilitado para su sitio. Póngase en contacto con el administrador del servidor para ver si es posible habilitar IRM en el sitio. El vínculo Information Rights Management no aparece para las bibliotecas de imágenes.
+3. En **permisos y administración**, haga clic en **Information Rights Management**. Si no aparece el vínculo Information Rights Management, es posible que IRM no esté habilitado en el sitio. Póngase en contacto con el administrador del servidor para ver si es posible habilitar IRM en el sitio. El vínculo Information Rights Management no aparece para las bibliotecas de imágenes.
     
 4. En la página **configuración de Information Rights Management** , active la casilla de verificación **restringir permisos de acceso a los documentos de esta biblioteca al descargarlos** para aplicar permisos restringidos a los documentos que se descargan de esta lista o biblioteca. 
     

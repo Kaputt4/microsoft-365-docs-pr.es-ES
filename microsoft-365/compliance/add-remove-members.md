@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b5fabd3b0a1e6e1951143b1a3778ced4e01a6288
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 154273f4f55e48c959f601a00901e26e421db725
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092169"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257018"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>Agregar o quitar miembros de una investigación de datos
 
@@ -29,15 +29,15 @@ Puede Agregar o quitar miembros para administrar quién puede tener acceso a la 
 
 2. Vaya a **configuración** y seleccione "acceso & permisos".
  
-3. Haga clic en **Actualizar**.
+3. Seleccione **Actualizar**.
  
-4. En **administrar miembros**, haga clic en agregar icono Agregar para agregar miembros a la investigación. También puede optar por agregar un grupo de funciones a la investigación. En **administrar grupos de roles**, haga clic en agregar icono Agregar. 
+4. En **administrar miembros**, seleccione Agregar icono Agregar para agregar miembros a la investigación. También puede optar por agregar un grupo de funciones a la investigación. En **administrar grupos de roles**, seleccione Agregar icono Agregar. 
      Tenga en cuenta que los grupos de roles controlan el permiso para obtener acceso a la investigación. Esto significa que solo puede Agregar personas a las que se les haya asignado un grupo de roles de investigadores de datos o grupos de roles personalizados con el rol de administración de investigación de datos.
  
-5. En la lista de personas o grupos de roles que pueden agregarse como miembros de la investigación, haga clic en la casilla situada junto a los nombres de los grupos de personas o roles que desea agregar.
+5. En la lista de personas o grupos de roles que pueden agregarse como miembros de la investigación, active la casilla situada junto a los nombres de los grupos de personas o roles que desea agregar.
 
-6. Una vez que haya seleccionado los grupos de personas o roles que desea agregar como miembros del grupo, haga clic en **Agregar**.
+6. Una vez que haya seleccionado los grupos de personas o roles que se agregarán como miembros del grupo, seleccione **Agregar**.
 
-7. En **administrar esta investigación**, haga clic en **Guardar** para guardar la nueva lista de miembros de la investigación.
+7. En **administrar esta investigación**, seleccione **Guardar** para guardar la nueva lista de miembros de la investigación.
 
-8. Haga clic en **Guardar** para guardar la nueva lista de miembros de la investigación.
+8. Seleccione **Guardar** para guardar la nueva lista de miembros de la investigación.
