@@ -15,18 +15,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a usar etiquetas de Office como parte de su plan de protección RGPD.
-ms.openlocfilehash: 518e5352861242bfbf9220f876edcb4b616493df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 023d6e2d3db1b6ec844801598df1925f3660217f
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092145"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256917"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar etiquetas a datos personales en Office 365
 
  Use este tema si utiliza las etiquetas de clasificación como parte de su plan de protección de RGPD. 
 
-Si utiliza etiquetas para la protección de datos personales de Office 365, Microsoft recomienda que empiece con [etiquetas de retención](labels.md). Con las etiquetas de retención, puede:
+Si utiliza etiquetas para la protección de datos personales de Office 365, Microsoft recomienda que empiece con las [etiquetas de retención](labels.md). Con las etiquetas de retención, puede:
 - Usar el Gobierno de datos avanzado para aplicar automáticamente etiquetas con tipos de información confidencial u otros criterios.
 - Usar etiquetas de retención con la prevención de pérdida de datos para aplicar la protección. 
 - Usar etiquetas con eDiscovery y Búsqueda de contenido. 
@@ -68,7 +68,7 @@ Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemp
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Etiquetas de retención Ejemplos: personal, público, datos de clientes, datos de recursos humanos, confidencial, extremadamente confidencial</td>
+<td align="left">Etiquetas de retención. Ejemplos: personal, público, datos de clientes, datos de recursos humanos, confidencial, extremadamente confidencial</td>
 <td align="left"><p>Aplicar automáticamente esta etiqueta...</p>
 <p>Datos de cliente</p>
 <p>...a documentos que coincidan con estos tipos de información confidencial...</p>
@@ -78,7 +78,7 @@ Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemp
 <p>...a documentos con esta etiqueta...</p>
 <p>Datos de cliente</p></td>
 <td align="left"><p>Enviar alerta cuando los archivos con estos atributos...</p>
-<p>Elija uno o varios atributos: atributo PII predefinido, el tipo de información confidencial de Office 365, la etiqueta de confidencialidad (AIP), expresión personalizada</p>
+<p>Elija uno o varios atributos: atributo PII predefinido, tipo de información confidencial de Office 365, etiqueta de confidencialidad (AIP), expresión personalizada.</p>
 <p>. . . en cualquier aplicación de SaaS autorizada se comparten fuera de la organización</p><p>Nota: las etiquetas de retención actualmente no se admiten en Cloud App Security.</td>
 </tr>
 <tr class="even">
@@ -99,7 +99,7 @@ Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemp
 
 Para los datos personales que están sujetos a RGPD, Microsoft recomienda aplicar etiquetas automáticamente mediante tipos de información confidencial que gestione en su entorno. Es importante que las directivas de aplicación automática de etiquetas estén bien diseñadas y probadas para asegurar que se produce el comportamiento esperado.
 
-El orden en que las directivas de aplicación automática se crean y si los usuarios también aplican estas etiquetas afectan al resultado. Por lo tanto, es importante planear cuidadosamente la distribución. Esto es lo que necesita saber.
+El orden en que las directivas de aplicación automática se crean y si los usuarios aplican o no estas etiquetas afectan al resultado. Por lo tanto, es importante planear cuidadosamente la distribución. Esto es lo que necesita saber.
 
 ### <a name="one-label-at-a-time"></a>Una etiqueta de cada vez
 
@@ -111,7 +111,7 @@ Si hay varias reglas que asignan una etiqueta de aplicación automática y el co
 
 ### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>Las etiquetas de usuario aplicadas manualmente tienen prioridad sobre las etiquetas aplicadas automáticamente
 
-Las etiquetas de usuario aplicadas manualmente tienen prioridad sobre las etiquetas aplicadas automáticamente. Las directivas de aplicación automática no pueden reemplazar una etiqueta que ya ha aplicado un usuario. Los usuarios pueden reemplazar las etiquetas que se aplican automáticamente.
+Las etiquetas que el usuario aplica manualmente tienen prioridad sobre las etiquetas aplicadas automáticamente. Las directivas de aplicación automática no pueden reemplazar una etiqueta que ya ha aplicado un usuario, pero los usuarios pueden reemplazar las etiquetas que se aplican automáticamente.
 
 ### <a name="auto-assigned-labels-can-be-updated"></a>Las etiquetas asignadas automáticamente pueden actualizarse
 
@@ -119,9 +119,9 @@ Las directivas de etiqueta más recientes o las actualizaciones de directivas ex
 
 Asegúrese de que su plan para implementar etiquetas incluye:
 
--   Dar prioridad al orden en que se crean las directivas de aplicación automática.
+- Dar prioridad al orden en que se crean las directivas de aplicación automática.
 
--   Permita el tiempo suficiente para que las etiquetas se apliquen automáticamente antes de implementarlas para que los usuarios las apliquen manualmente. Pueden ser necesarios hasta siete días para que las etiquetas se apliquen a todo el contenido que coincida con las condiciones.
+- Permita el tiempo suficiente para que las etiquetas se apliquen automáticamente antes de implementarlas para que los usuarios las apliquen manualmente. Pueden ser necesarios hasta siete días para que las etiquetas se apliquen a todo el contenido que coincida con las condiciones.
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>Prioridad de ejemplo para crear directivas de aplicación automática
 
@@ -166,7 +166,7 @@ Asegúrese de que su plan para implementar etiquetas incluye:
 
 ## <a name="create-labels-and-auto-apply-label-policies"></a>Crear etiquetas y aplicar directivas de etiqueta automáticamente
 
-Crear etiquetas y directivas en el centro de seguridad o el centro de cumplimiento.
+Cree etiquetas y directivas en el centro de seguridad o el centro de cumplimiento.
 
 <table>
 <thead>
@@ -198,8 +198,8 @@ La siguiente ilustración muestra cómo crear una etiqueta de aplicación autom�
 
 En la ilustración:
 
--   Se crea la etiqueta "Datos de cliente".
+- Se crea la etiqueta "Datos de cliente".
 
--   Se listan los tipos de información confidencial deseados para RGPD: número nacional de Bélgica, número de tarjeta de crédito, número de carnet de identidad de Croacia, documento de identidad nacional de Finlandia
+- Se listan los tipos de información confidencial deseados para RGPD: número nacional de Bélgica, número de tarjeta de crédito, número de carnet de identidad de Croacia, documento de identidad nacional de Finlandia
 
--   Crear una directiva de aplicación automática asigna la etiqueta "Datos de cliente" a cualquier archivo que contenga uno de los tipos de información confidencial que agregue a la directiva.
+- Crear una directiva de aplicación automática asigna la etiqueta "Datos de cliente" a cualquier archivo que contenga uno de los tipos de información confidencial que agregue a la directiva.

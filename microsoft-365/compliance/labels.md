@@ -1,7 +1,7 @@
 ---
 title: Introducción a las etiquetas de retención
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -10,16 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: 71630812e75ef8b4af2f172f73e51d0084fb0df1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 143d3fb97afca5b6a3b18e47b7be472f35a857ba
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091652"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39266191"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -72,10 +73,10 @@ Las etiquetas de retención son bloques de creación independientes y reutilizab
   
 ![Diagrama de etiquetas, directivas de etiquetas y ubicaciones](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Al publicar etiquetas de retención, se incluyen en una póliza de etiqueta de retención. Tenga en cuenta que los nombres de las etiquetas de retención son inmutables y no pueden editarse una vez que se han creado.
+1. Al publicar etiquetas de retención, estas se incluyen en una directiva de etiqueta de retención. Por favor, tenga en cuenta que los nombres de las etiquetas de retención son inmutables y no pueden editarse una vez que se han creado.
 
 
-2. Se puede incluir una única etiqueta de retención en numerosas pólizas de etiqueta de retención.
+2. Se puede incluir una única etiqueta de retención en varias directivas de etiqueta de retención.
 
 3. También puede incluirse una sola ubicación en numerosas directivas de etiqueta de retención.    
     
@@ -113,7 +114,7 @@ Si publica etiquetas de retención en SharePoint o OneDrive, puede que tarden un
   
 ### <a name="auto-apply-retention-labels"></a>Aplicar automáticamente etiquetas de retención
 
-Si aplica automáticamente etiquetas de retención a contenido que coincida con condiciones específicas, estas pueden tardar hasta siete días en aplicarse a todo el contenido existente que coincida con las condiciones. Pero tenga en cuenta que, una vez que se implementan las etiquetas de retención, se aplican al nuevo contenido rápidamente, normalmente en 15 minutos o menos.
+Si aplica automáticamente etiquetas de retención a contenido que coincida con condiciones específicas, estas pueden tardar hasta siete días en aplicarse a todo el contenido existente que coincida con las condiciones.
   
 ![Diagrama de cuándo entran en vigor las etiquetas de aplicación automática](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -125,17 +126,17 @@ En Exchange Online, las etiquetas de retención se publican para los usuarios fi
     
 2. Ejecute estos comandos.
     
-  ```
-  $logProps = Export-MailboxDiagnosticLogs <user> -ExtendedProperties
-  ```
+   ```powershell
+   $logProps = Export-MailboxDiagnosticLogs <user> -ExtendedProperties
+   ```
 
-  ```
-  $xmlprops = [xml]($logProps.MailboxLog)
-  ```
+   ```powershell
+   $xmlprops = [xml]($logProps.MailboxLog)
+   ```
 
-  ```
-  $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
-  ```
+   ```powershell
+   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
+   ```
 
 En los resultados, la propiedad `ELCLastSuccessTimeStamp` (UTC) muestra cuándo fue la última vez que el sistema procesó el buzón. Si esto no ha ocurrido desde el momento en que se creó la directiva, las etiquetas no van a aparecer. Para forzar el procesamiento, ejecute `Start-ManagedFolderAssistant -Identity <user>`.
     
@@ -151,19 +152,19 @@ En función de la finalidad de las etiquetas de retención, pueden publicarse en
 |Se aplica automáticamente basándose en tipos de información confidencial  <br/> |Exchange (solo todos los buzones), SharePoint, OneDrive  <br/> |
 |Se aplica automáticamente basándose en una consulta  <br/> |Exchange, SharePoint, OneDrive, Grupos de Office 365  <br/> |
    
-Tenga en cuenta que, en Exchange, las etiquetas de retención de aplicación automática (tanto para consultas como para tipos de información confidencial) solo se aplican en los nuevos mensajes enviados (datos en tránsito), no en todos los elementos que ya están presentes en el buzón (datos en reposo). Además, las etiquetas de retención de aplicación automática para tipos de información confidencial se aplican a todos los buzones (no se pueden seleccionar buzones específicos).
+En Exchange, las etiquetas de aplicación automática (tanto para consultas como para tipos de información confidencial) solo se aplican a mensajes nuevos enviados (datos en tránsito), no a todos los elementos que estén actualmente en el buzón (datos en reposo). Además, las etiquetas de aplicación automática para tipos de información confidencial solo se pueden aplicar a todos los buzones; es decir, no puede seleccionar los buzones específicos.
   
-Tenga en cuenta que las carpetas públicas de Exchange y Skype no admiten las etiquetas.
+Las carpetas públicas de Exchange y Skype no admiten las etiquetas.
   
-## <a name="how-retention-labels-enforce-retention"></a>Forma en que las etiquetas de retención aplican la retención
+## <a name="how-retention-labels-enforce-retention"></a>Cómo las etiquetas de retención aplican la retención
 
-Las etiquetas de retención pueden aplicar exactamente las mismas acciones de retención que una directiva. Puede usar etiquetas de retención para implementar un plan de contenido sofisticado (o un plan de archivos). Para obtener más información sobre cómo funciona la retención, vea [Información general sobre las directivas de retención](retention-policies.md).
+Las etiquetas de retención pueden aplicar las mismas acciones de retención que una directiva de retención. Puede usar etiquetas de retención para implementar un plan de contenido sofisticado (o un plan de archivos). Para obtener más información sobre cómo funciona la retención, vea [Introducción a las directivas de retención](retention-policies.md).
   
 Además, una etiqueta de retención tiene dos opciones de retención que solo están disponibles en una etiqueta de retención, pero no están disponibles en una directiva de retención. Con una etiqueta de retención, puede:
   
 - Desencadenar una revisión para eliminación al finalizar el período de retención para que los documentos de OneDrive y SharePoint tengan que revisarse antes de ser eliminados. Para obtener más información, vea [Información general sobre revisiones para eliminación](disposition-reviews.md).
     
-- Iniciar el período de retención desde el momento en que se etiquete el contenido, en lugar de la antigüedad del contenido o la fecha de la última modificación. Tenga en cuenta que esta opción solo se aplica al contenido de los sitios de SharePoint y las cuentas de OneDrive. Para el correo electrónico de Exchange, el período de retención siempre se basa en la fecha en la que se ha enviado o recibido el mensaje, independientemente de la opción que elija aquí.
+- Iniciar el período de retención desde el momento en que se etiquete el contenido, en lugar de la antigüedad del contenido o la fecha de la última modificación. Esta opción solo se aplica al contenido de los sitios de SharePoint y las cuentas de OneDrive. Para el correo electrónico de Exchange, el período de retención siempre se basa en la fecha en la que se ha enviado o recibido el mensaje, independientemente de la opción que elija aquí.
     
 ![Configuración de retención con opciones específicas para etiquetas](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
@@ -199,25 +200,27 @@ También puede aplicar etiquetas de retención a carpetas, en cuyo caso:
     
 - Si cambia o quita la etiqueta de retención predeterminada de una carpeta, también se cambiará o quitará la etiqueta de retención de todos los elementos de la carpeta, **excepto** en los elementos con etiquetas de retención explícitas. 
     
-- Si mueve un elemento con una etiqueta de retención predeterminada de una carpeta a otra carpeta con una etiqueta de retención predeterminada distinta, la nueva etiqueta de retención predeterminada se aplicará en el elemento.
+- Si mueve un elemento con una etiqueta de retención predeterminada de una carpeta a otra carpeta con una etiqueta de retención predeterminada distinta, el elemento obtendrá la nueva etiqueta de retención predeterminada.
     
 - Si mueve un elemento con una etiqueta de retención predeterminada de una carpeta a otra sin una etiqueta de retención predeterminada, se quitará la etiqueta de retención predeterminada anterior.
     
 ### <a name="outlook-2010-and-later"></a>Outlook 2010 y versiones posteriores
 
-Para etiquetar un elemento en Outlook en la Web, haga clic con el botón derecho en el elemento \> en la **Cinta de opciones** \> **Asignar directiva** \> y seleccione la etiqueta de retención. 
+Para etiquetar un elemento en el cliente de escritorio de Outlook, seleccione el elemento. En la pestaña **Inicio** de la cinta de opciones, haga clic en **Asignar directiva**, y luego elija la etiqueta de retención. 
   
 ![Botón Asignar directiva](media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
-Después de aplicar la etiqueta de retención, puede ver dicha etiqueta y la acción que realiza en la parte superior del elemento. Si un correo electrónico tiene una etiqueta de retención aplicada que tiene un período de retención asociado, puede ver de un vistazo cuándo va a expirar el correo electrónico.
+También puede hacer clic con el botón derecho en un elemento, hacer clic en **Asignar directiva** en el menú contextual y después, seleccionar la etiqueta de retención. 
+
+Después de aplicar la etiqueta de retención, puede ver dicha etiqueta y la acción que realiza en la parte superior del elemento. Si un correo electrónico tiene una etiqueta de retención aplicada con un período de retención asociado, puede observar a simple vista cuándo va a expirar el correo electrónico.
   
-También puede aplicar etiquetas de retención en carpetas. Este procedimiento funciona de la misma forma en Outlook en la Web que en Outlook 2010 y versiones posteriores (para obtener más información, vea la sección anterior).
+También puede aplicar etiquetas de retención a carpetas. Esto funciona tanto en Outlook 2010 y versiones posteriores, como en Outlook en la Web. Vea la sección anterior para obtener más información.
   
 ### <a name="onedrive-and-sharepoint"></a>OneDrive y SharePoint
 
 Para etiquetar un documento (incluidos archivos de OneNote) en OneDrive o SharePoint, seleccione el elemento \> en la esquina superior derecha, haga clic en **Abrir el panel de detalles**![Icono de panel de información](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Aplicar etiqueta de retención** \> y seleccione la etiqueta de retención. 
   
-Tenga en cuenta que también puede aplicar una etiqueta de retención en una carpeta o un conjunto de documentos, así como establecer una etiqueta de retención predeterminada para una biblioteca de documentos (para obtener más información, vea la sección siguiente).
+También puede aplicar una etiqueta de retención a una carpeta o un conjunto de documentos, así como establecer una etiqueta de retención predeterminada para una biblioteca de documentos. Vea la siguiente sección para obtener más información.
   
 ![Aplicar una lista de etiquetas a un elemento en SharePoint](media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
   
@@ -235,11 +238,11 @@ Al publicar etiquetas de retención en un grupo de Office 365, las etiquetas de 
 
 Para conservar el contenido de un grupo de Office 365, necesita usar la ubicación de los grupos de Office 365. Aunque un grupo de Office 365 tiene un buzón de Exchange, una directiva de retención que incluya la ubicación completa de Exchange no incluye contenido en buzones de grupo de Office 365.
 
-Además, no es posible usar la ubicación de Exchange para incluir o excluir un buzón de grupo específico. Aunque la ubicación de Exchange inicialmente permite la selección de un buzón de grupo, cuando intenta guardar la directiva de retención, recibirá el error que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
+Además, no es posible usar la ubicación de Exchange para incluir o excluir un buzón de grupo específico. Aunque la ubicación de Exchange inicialmente permite seleccionar un buzón de grupo, cuando intenta guardar la directiva de retención, recibe el error de que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Aplicar automáticamente una etiqueta de retención según las condiciones
 
-Una de las características más útiles de las etiquetas de retención es la capacidad de aplicarlas automáticamente a contenido que coincida con determinadas condiciones. En ese caso, los usuarios de su organización no necesitan aplicar las etiquetas de retención: Office 365 lo hace automáticamente.
+Una de las características más eficaces de las etiquetas es la capacidad de aplicarlas automáticamente al contenido que coincide con determinadas condiciones. En este caso, no es necesario que las personas de la organización apliquen las etiquetas de retención. Office 365 realiza el trabajo por ellos.
   
 ![Diagrama de roles y tareas para etiquetas de aplicación automática](media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
@@ -257,13 +260,17 @@ Puede aplicar automáticamente etiquetas de retención en contenido cuando este 
     
 - Palabras clave específicas que coinciden con una consulta que haya creado.
     
-![Página de selección de condición para una etiqueta de aplicación automática](media/c0b7a3ef-bda0-494c-941d-f1f93753ecdd.png)
+![Página de selección de condición para una etiqueta de aplicación automática](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+
+
+Para la aplicación automática de las etiquetas de retención se necesita una suscripción de Office 365 Enterprise E5. Además, estas pueden tardar hasta siete días en aplicarse automáticamente a todo el contenido que coincida con las condiciones, como se ha descrito anteriormente.
   
-Tenga en cuenta que, para usar las etiquetas de retención de aplicación automática, se necesita una suscripción de Office 365 Enterprise E5; además, estas pueden tardar hasta siete días en aplicarse automáticamente a todo el contenido que coincida con las condiciones, como se ha descrito anteriormente.
-  
+> [!TIP]
+> Vea [Administrar el ciclo de vida de los documentos de SharePoint con etiquetas de retención](auto-apply-retention-labels-scenario.md) para obtener más información sobre cómo usar las propiedades administradas en SharePoint para aplicar automáticamente las etiquetas de retención e implementar la retención basada en eventos.
+
 ### <a name="auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information"></a>Aplicar automáticamente etiquetas de retención a contenido con tipos específicos de información confidencial
 
-Al crear etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que al crear una directiva de prevención de pérdida de datos (DLP). Cada plantilla de directiva está preconfigurada para buscar tipos específicos de información confidencial (por ejemplo, la plantilla que se muestra aquí busca números de pasaporte, números del seguro social y números ITIN estadounidenses). Para obtener más información sobre DLP, vea [Información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md).
+Al crear etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos (DLP). Cada plantilla de directiva está preconfigurada para buscar determinados tipos de información confidencial. Por ejemplo, la plantilla que se muestra aquí busca números de ITIN, SSN y pasaporte de Estados Unidos. Para obtener más información sobre DLP, vea [Información general sobre directivas de prevención de pérdida de datos](data-loss-prevention-policies.md).
   
 ![Plantillas de directiva con tipos de información confidencial](media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
   
@@ -283,12 +290,12 @@ Puede aplicar automáticamente etiquetas a contenido que cumpla determinadas con
 
 Para obtener más información sobre la sintaxis de consultas, vea:
 
-- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Las etiquetas basadas en consultas usan el índice de búsqueda para identificar el contenido. Para obtener más información sobre las propiedades de búsqueda válidas, vea:
 
 - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
-- [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/es-ES/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Consultas de ejemplos:
 
@@ -305,19 +312,27 @@ Consultas de ejemplos:
 
 Además de permitir que los usuarios apliquen una etiqueta de retención a documentos individuales, también puede aplicar una etiqueta de retención predeterminada a una biblioteca, carpeta o conjunto de documentos de SharePoint para aplicar la etiqueta de retención predeterminada a todos los documentos de esa ubicación.
   
-En el caso de una biblioteca de documentos, esto se realiza en la página **Configuración de la biblioteca** de una biblioteca de documentos. Al seleccionar la etiqueta de retención predeterminada, también puede aplicarla a los elementos existentes de la biblioteca. 
+Para una biblioteca de documentos, esto se realiza en la página **Configuración de biblioteca** de la biblioteca de documentos. Al seleccionar la etiqueta de retención predeterminada, también se puede elegir aplicarla a los elementos existentes en la biblioteca. 
   
-Por ejemplo, si tiene una etiqueta para materiales de marketing y sabe que una biblioteca de documentos específica solo contendrá ese tipo de contenido, puede hacer que la etiqueta “Materiales de marketing” sea la predeterminada para todos los documentos de esa biblioteca.
+Por ejemplo, si tiene una etiqueta para los materiales de marketing y sabe que una biblioteca de documentos específica solo contiene ese tipo de contenido, puede hacer que la etiqueta “Materiales de marketing” sea la predeterminada para todos los documentos de esa biblioteca.
   
 ![Opción “Aplicar etiqueta” en la página Configuración de la biblioteca](media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
 Si aplica una etiqueta de retención predeterminada a elementos existentes de una biblioteca, carpeta o conjunto de documentos:
   
-- Se aplicará automáticamente la misma etiqueta de retención a todos los elementos de esa biblioteca, carpeta o conjunto de documentos, **excepto** en los elementos donde se haya aplicado de forma explícita una etiqueta de retención. Los elementos etiquetados de forma explícita mantienen la etiqueta existente. Para obtener más información, vea la sección siguiente [Los principios de retención o qué tiene precedencia](#the-principles-of-retention-or-what-takes-precedence).
+- Todos los elementos de la biblioteca, la carpeta, o conjunto de documentos reciben automáticamente la misma etiqueta de retención, **excepto** los elementos a los que se ha aplicado explícitamente una etiqueta de retención. Los elementos etiquetados explícitamente mantienen su etiqueta existente. Para obtener más información, vea la sección siguiente sobre [Los principios de la retención, o lo que tiene prioridad](#the-principles-of-retention-or-what-takes-precedence).
     
 - Si cambia o quita la etiqueta de retención predeterminada de una biblioteca, carpeta o conjunto de documentos, también se cambiará o quitará la etiqueta de retención de todos los elementos de la biblioteca, carpeta o conjunto de documentos, **excepto** de los elementos con etiquetas de retención explícitas. 
     
 - Si mueve un elemento con una etiqueta de retención predeterminada de una biblioteca, carpeta o conjunto de documentos a otra biblioteca, carpeta o conjunto de documentos, el elemento mantendrá su etiqueta de retención predeterminada existente, incluso si la nueva ubicación tiene otra etiqueta de retención predeterminada.
+
+- Si la etiqueta de retención predeterminada de una biblioteca, carpeta o conjunto de documentos declara al contenido como registro (también denominado *etiqueta de registro*), se aplicarán las características siguientes:
+
+   - Si cambia la etiqueta de retención predeterminada por una etiqueta que no declara al contenido como registro, los elementos mantienen la etiqueta de registro predeterminada existente. La nueva etiqueta de retención predeterminada no se aplicará a dichos elementos. El administrador de la colección de sitios tendría que quitar o cambiar explícitamente la etiqueta de retención.
+
+   - Si quita la etiqueta de retención predeterminada que declara al contenido como registro, la etiqueta de registro no se eliminará de los elementos de la biblioteca, carpeta o conjunto de documentos. El administrador de la colección de sitios tendría que quitar explícitamente la etiqueta de retención.
+
+   Para obtener más información sobre las etiquetas de retención que declaran al contenido como registro, vea [Información general de los registros](records.md).
     
 ## <a name="applying-a-retention-label-to-email-by-using-rules"></a>Aplicar una etiqueta de retención a correo electrónico mediante reglas
 
@@ -338,48 +353,8 @@ Por ejemplo, puede crear una etiqueta de retención llamada “Revisar más tard
 ![Página “Configuración de etiquetas” con la retención desactivada](media/17ce863b-a823-426e-aaad-83718465f762.png)
   
 ## <a name="using-retention-labels-for-records-management"></a>Uso de etiquetas de retención para la administración de registros
-
-De forma general, la administración de registros significa que:
-  
-- Los usuarios clasifican el contenido importante como registros.
     
-- Un registro no se puede modificar ni eliminar.
-    
-- Por último, los registros se eliminan cuando se cumple la duración indicada.
-    
-Puede usar etiquetas de retención para implementar una única estrategia de administración de registros coherente en Office 365, mientras que otras características de administración de registros (como el Centro de registros) solo se aplican a contenido de SharePoint. También puede exigir acciones de retención en registros para que se eliminen automáticamente al finalizar su ciclo de vida.
-  
-Al crear una etiqueta de retención, puede usarla para clasificar el contenido como un registro.
-  
-![Casilla Clasificar contenido como un registro](media/9c300739-d5d0-41d2-88dd-137f1cfc9cb6.png)
-  
-Al etiquetar un elemento como un registro, ocurren cuatro cosas:
-  
-- El elemento no se puede eliminar de forma permanente.
-    
-- El elemento no se puede editar.
-    
-- La etiqueta no se puede cambiar.
-    
-- La etiqueta no se puede quitar.
-    
-### <a name="who-can-classify-content-as-a-record"></a>Quién puede clasificar contenido como un registro
-
-En el caso de contenido de SharePoint, cualquier usuario del grupo predeterminado Miembros (el nivel de permisos Colaborar) puede aplicar una etiqueta de registro a contenido. Solo el administrador de la colección de sitios puede quitar o cambiar la etiqueta de retención una vez aplicada. Además, las etiquetas de retención que clasifican contenido como registros pueden [aplicarse al contenido automáticamente](#auto-apply-retention-labels).
-  
-### <a name="records-and-folders"></a>Registros y carpetas
-
-Puede aplicar una etiqueta de retención a una carpeta en Exchange, SharePoint o OneDrive. Si una carpeta se etiqueta como un registro y mueve un elemento dentro de esa carpeta, el elemento se etiquetará como un registro. Al mover el elemento fuera de la carpeta, este mantendrá la etiqueta de registro.
-  
-### <a name="records-cant-be-deleted"></a>Los registros no se pueden eliminar
-
-Si intenta eliminar un registro en Exchange, el elemento se moverá a la carpeta Elementos recuperables, como se describe en [Funcionamiento de una directiva de retención con contenido local](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
-  
-Si intenta eliminar un registro en SharePoint, verá un error que indica que el elemento no se ha eliminado y puede comprobar que este permanecerá en la biblioteca.
-  
-![Mensaje que indica que el elemento no se elimina de SharePoint](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
-  
-Si intenta eliminar un registro en OneDrive, el elemento se moverá a la biblioteca de conservación de documentos, como se describe en [Funcionamiento de una directiva de retención con contenido local](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+Puede usar las etiquetas de retención para declarar el contenido como un registro. Esto le permite implementar una estrategia de administración de registros única y consistente para todo Office 365. Para obtener más información, vea [Introducción a registros](records.md). 
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de retención como condición en una directiva DLP
 
@@ -421,7 +396,7 @@ Para entender cómo se aplican a contenido distintas etiquetas con acciones de r
     
 3. **La inclusión explícita tiene prioridad sobre la inclusión implícita.** Esto significa que: 
     
-    1. Si una etiqueta de retención con configuración de retención se asigna de forma manual a un usuario o elemento (como un correo electrónico de Exchange o un documento de OneDrive), tendrá precedencia sobre la directiva asignada en el nivel de sitio o buzón y una etiqueta de retención predeterminada asignada por la biblioteca de documentos. Por ejemplo, si la etiqueta de retención explícita indica que tiene que conservarse durante diez años, pero la directiva de retención asignada al sitio dice que solo tiene que conservarse durante cinco años, la etiqueta de retención tiene precedencia. Tenga en cuenta que las etiquetas de retención de aplicación automática se consideran implícitas, no explícitas, porque Office 365 las aplica automáticamente.
+    1. Si un usuario asigna manualmente una etiqueta de retención con configuración de retención a un elemento, como un correo electrónico de Exchange o un documento de OneDrive, esa etiqueta de retención tiene prioridad sobre una directiva asignada en el nivel de sitio o buzón, y una etiqueta de retención predeterminada asignada por la biblioteca de documentos. Por ejemplo, si la etiqueta de retención explícita dice que la conservación es de 10 años, pero la directiva de retención asignada al sitio dice que la conservación es de solo cinco años, la etiqueta de retención tendrá prioridad. Las etiquetas de retención de aplicación automática se consideran implícitas, no explícitas, porque Office 365 las aplica automáticamente.
     
     2. Si una directiva de retención incluye una ubicación específica (como el buzón de un usuario o una cuenta de OneDrive para la Empresa), tendrá precedencia sobre cualquier otra directiva de retención que se aplique a los buzones de todos los usuarios o a las cuentas de OneDrive para la Empresa, pero que no incluyan específicamente ese buzón de usuario.
     
@@ -435,7 +410,7 @@ Por último, una etiqueta o directiva de retención no puede eliminar de forma p
 
 Las etiquetas de retención se pueden publicar fácilmente para toda la organización, así como su contenido, en Office 365, incluidos Exchange, SharePoint, OneDrive y Grupos de Office 365. Si necesita clasificar contenido o administrar registros en cualquier lugar en Office 365, le recomendamos que use etiquetas de retención.
   
-Hay otras características que ya se han usado para clasificar contenido o administrar registros en Office 365. Se muestran a continuación. Estas características seguirán funcionando en paralelo con las etiquetas de retención. Tenga en cuenta que, aunque en algunos casos la implementación de etiquetas de retención difiere de las características anteriores, la evolución de las etiquetas de retención determinará el futuro de la administración de registros en Office 365. Por lo tanto, en adelante, se recomienda usar etiquetas de retención para el gobierno de datos en lugar de estas características.
+Hay otras características que ya se han usado para clasificar contenido o administrar registros en Office 365. Se muestran a continuación. Estas características seguirán funcionando en paralelo con las etiquetas de retención. Aunque en algunos casos la implementación de etiquetas de retención difiere de las características anteriores, la evolución de las etiquetas de retención determinará el futuro de la administración de registros en Office 365. Por lo tanto, en adelante, se recomienda usar etiquetas de retención para el gobierno de datos en lugar de estas características.
   
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -451,7 +426,7 @@ Hay otras características que ya se han usado para clasificar contenido o admin
     
 ## <a name="permissions"></a>Permisos
 
-Los miembros de su equipo de cumplimiento normativo que vayan a crear etiquetas de retención necesitan permisos del Centro de seguridad y cumplimiento. De forma predeterminada, el administrador de espacios empresariales tendrá acceso a esta ubicación y puede proporcionar acceso a los responsables de cumplimiento y otros usuarios para el Centro de seguridad y cumplimiento sin darles todos los permisos de un administrador de espacios empresariales. Para ello, se recomienda ir a la página **Permisos** del Centro de seguridad y cumplimiento, editar el grupo de roles **Administrador de cumplimiento** y agregar miembros al mismo. 
+Los miembros de su equipo de cumplimiento que vayan a crear las etiquetas de retención necesitan permisos para el Centro de &amp;Seguridad y Cumplimiento. De forma predeterminada, el administrador de inquilinos tendrá acceso a esta ubicación y puede otorgar acceso a los oficiales de cumplimiento y a otros usuarios al Centro de &amp;Cumplimiento y Seguridad, sin concederles todos los permisos de un administrador de inquilinos. Para hacerlo, le recomendamos que vaya a la página **Permisos** del Centro de &amp;Cumplimiento y Seguridad, edite el grupo de roles del **Administrador de Cumplimiento** y agregue miembros a ese grupo de roles. 
   
 Para obtener más información, vea [Conceder acceso a los usuarios al Centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   

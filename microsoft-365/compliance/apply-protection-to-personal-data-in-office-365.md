@@ -16,13 +16,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo usar las directivas DLP para proteger datos personales en Office 365.
-ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: Obtenga información sobre cómo usar las directivas de prevención de pérdida de datos (DLP) para proteger datos personales en Office 365.
+ms.openlocfilehash: e3f7bdc589b34da0aad8baabd5b54bcfd59f25b9
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708235"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256787"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Aplicar protección a los datos personales de Office 365
 
@@ -62,9 +62,9 @@ Esta ilustración muestra las opciones para crear una directiva DLP:
 
 Uno de los usos principales de DLP de Office 365 es identificar datos personales relacionados con temas de datos de la UE en su entorno de Office 365. DLP de Office 365 puede notificar a sus equipos de cumplimiento dónde se almacena información personal en SharePoint Online y OneDrive para la Empresa o cuándo los usuarios envían correo electrónico con información personal. DLP puede proporcionar sugerencias de directiva a sus empleados cuando trabajan con información personal de residentes de la UE.
 
-Instruir y aumentar el conocimiento sobre dónde se almacenan los datos de residentes de la UE en su entorno y cómo sus empleados pueden administrarlos representa un nivel de protección de información con DLP de Office 365. A menudo, los empleados que ya tengan acceso a este tipo de información requieren este acceso para realizar su trabajo diario. Al aplicar directivas DLP para ayudar a cumplir con el RGPD no necesitará restringir el acceso.
+Instruir y sensibilizar sobre dónde se almacenan los datos de residentes de la UE en su entorno y cómo sus empleados pueden administrarlos representa un nivel de protección de información con DLP de Office 365. A menudo, los empleados que ya tienen acceso a este tipo de información requieren este acceso para realizar su trabajo diario. Al aplicar directivas DLP para ayudar a cumplir con el RGPD no necesitará restringir dicho acceso.
 
-Sin embargo, el cumplimiento del RGPD normalmente implica una evaluación de riesgos de la organización desde la perspectiva de la seguridad de la información y legal, la identificación de qué tipo de información personal se almacena y dónde, así como si hay una justificación legal para almacenar y procesar la información. Con esta evaluación, implementar directivas para proteger la organización y cumplir con el RGPD puede hacer necesario quitar el acceso de los empleados a los documentos que contengan información personal para temas de datos de la UE. En los casos donde se requiera protección adicional, puede configurar protección adicional de DLP.
+Pero el cumplimiento del RGPD normalmente implica una evaluación de riesgos de la organización desde la perspectiva de la seguridad de la información y legal, la identificación del tipo de información personal que se almacena y dónde se almacena, así como la existencia de una justificación legal para almacenar y procesar la información. Con esta evaluación, implementar directivas para proteger la organización y cumplir con el RGPD puede hacer necesario quitar el acceso de los empleados a los documentos que contengan información personal para temas de datos de la UE. En los casos donde se requiera protección adicional, puede configurar protección adicional de DLP.
 
 En la siguiente tabla se muestran tres configuraciones para incrementar la protección mediante DLP. La primera configuración, reconocimiento, puede usarse como punto mínimo inicial y nivel de protección para RGPD.
 
@@ -84,7 +84,7 @@ En la siguiente tabla se muestran tres configuraciones para incrementar la prote
 <td align="left"><p>Envíe notificaciones por correo electrónico a equipos de cumplimiento cuando estos datos se encuentren en documentos de SharePoint Online y OneDrive para la Empresa.</p>
 <p>Personalice y muestre sugerencias de directiva a los empleados en SharePoint y OneDrive para la Empresa al acceder a documentos que contienen datos.</p>
 <p>Detecte y notifique cuándo se comparten datos.</p></td>
-<td align="left"><p>Informe al personal con equipos de cumplimiento, así como mediante los empleados, sobre dónde se almacenan los datos.</p>
+<td align="left"><p>Sensibilice a los equipos de cumplimiento y a los empleados sobre el lugar en el que se almacenan estos datos.</p>
 <p>Forme a los empleados sobre la directiva corporativa para controlar documentos que contienen este tipo de datos.</p>
 <p>Impida que los empleados compartan datos de forma interna o externa.</p>
 <p>Puede revisar los informes DLP de datos compartidos y decidir si quiere aumentar la protección.</p></td>
@@ -100,15 +100,15 @@ En la siguiente tabla se muestran tres configuraciones para incrementar la prote
 <tr class="odd">
 <td align="left">Evitar el uso compartido interno y externo</td>
 <td align="left"><p>Restrinja el acceso a documentos que contienen datos en SharePoint Online y OneDrive para la Empresa cuando ese contenido se comparta de forma interna o externa.</p>
-<p>Evite enviar correos electrónicos que contienen datos a destinatarios internos o externos.</p></td>
+<p>Evite enviar correos electrónicos que contienen estos datos a destinatarios internos o externos.</p></td>
 <td align="left"><p>Evita el uso compartido interno y externo de estos datos.</p>
 <p>Es posible que los empleados puedan completar tareas que requieran el uso de estos datos.</p>
-<p>Puede revisar los informes DLP de datos compartidos de forma interna o externa y decidir si es necesario entrenamiento para los usuarios finales.</p></td>
+<p>Puede revisar los informes DLP de datos compartidos de forma interna o externa y decidir si es necesario un entrenamiento para los usuarios finales.</p></td>
 </tr>
 </tbody>
 </table>
 
-Nota: A medida que aumentan los niveles de protección, la capacidad de los usuarios de acceder a información disminuirá en algunos casos y podría afectar a su productividad o capacidad para completar las tareas del día a día. Aumentar los niveles de protección implementando directivas que afectan a los empleados normalmente viene acompañado de aprendizaje para usuarios finales para instruirlos sobre las directivas de seguridad y procedimientos y ayudarles a seguir siendo productivos en un entorno más seguro.
+Nota: a medida que aumentan los niveles de protección, la capacidad de los usuarios de acceder a información disminuirá en algunos casos y podría afectar a su productividad o capacidad para completar las tareas diarias. El proceso de aumentar los niveles de protección implementando directivas que afectan a los empleados normalmente viene acompañado de un entrenamiento para los usuarios finales para instruirlos sobre las directivas de seguridad y procedimientos, y ayudarles a seguir siendo productivos en un entorno más seguro.
 
 ### <a name="example-dlp-policy-for-gdpr--awareness"></a>Ejemplo de directiva DLP para RGPD: reconocimiento 
 
@@ -156,17 +156,17 @@ Descripción: muestre sugerencias de directiva a los empleados, notifique a los 
 
 “Todas las ubicaciones” incluye:
 
--   SharePoint Online
+- SharePoint Online
 
--   Cuentas de OneDrive para la Empresa
+- Cuentas de OneDrive para la Empresa
 
--   Buzones de Exchange
+- Buzones de Exchange
 
-Dado que la búsqueda de contenido actualmente no permite comprobar los tipos de información confidencial con el correo electrónico, considere la posibilidad de crear directivas independientes de Exchange con un subconjunto de tipos de información confidencial de cada directiva y supervisar la implementación de estas directivas.
+Dado que la búsqueda de contenido actualmente no permite comprobar los tipos de información confidencial con el correo electrónico, considere la posibilidad de crear directivas independientes de Exchange con un subconjunto de tipos de información confidencial de cada directiva y supervisar su implementación.
 
 ## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-office-365"></a>Protección adicional que puede aplicar para proteger los datos personales de Office 365
 
-Las directivas de protección de pérdida de datos, las etiquetas y los tipos de información confidencial le ayudan a identificar los documentos que contienen datos específicos y a aplicar la protección. Sin embargo, estas protecciones dependen de que se configuren los permisos adecuados para el acceso a datos, de que las cuentas de usuario no estén en peligro y de que los dispositivos estén en buen estado.
+Las directivas de protección de pérdida de datos, las etiquetas y los tipos de información confidencial le ayudan a identificar los documentos que contienen datos específicos y a aplicar la protección. Pero estas protecciones dependen de que se configuren los permisos adecuados para el acceso a datos, de que las cuentas de usuario no estén en peligro y de que los dispositivos estén en buen estado.
 
 En la siguiente ilustración se detalla protección adicional que puede aplicar para proteger el acceso a datos personales.
 
@@ -239,7 +239,7 @@ La ilustración indica los niveles de permisos de control total a solo vista. La
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Colaborar, aprobar y personalizar</td>
-<td align="left">Colaborar, agregar, editar y eliminar listas (no solo elementos)</td>
+<td align="left">Colaborar, agregar, editar y eliminar listas (no solo elementos de lista)</td>
 <td align="left">Ver, agregar, actualizar y eliminar elementos de lista y documentos</td>
 <td align="left">Ver y descargar</td>
 <td align="left">Ver sin descargar</td>
@@ -257,7 +257,7 @@ Más información:
 
 Muchas organizaciones permiten el uso compartido para admitir la colaboración. Descubra cómo se configuran las opciones aplicables a todo el inquilino. Después, revise la configuración de uso compartido externo para los sitios que contienen datos personales.
 
-Un usuario externo es alguien de fuera de la organización que está invitado para acceder a sus sitios y documentos de SharePoint Online pero no tiene una licencia para su suscripción a SharePoint Online o Microsoft Office 365.
+Un usuario externo es alguien de fuera de la organización que está invitado a acceder a sus sitios y documentos de SharePoint Online pero no tiene una licencia para su suscripción a SharePoint Online o Microsoft Office 365.
 
 Las directivas de uso compartido externo se aplican a SharePoint Online y OneDrive para la Empresa.
 
@@ -311,7 +311,7 @@ SharePoint Online y OneDrive para la Empresa le permiten configurar directivas d
 
 Si configura directivas de acceso de dispositivo de nivel de sitio, no olvide coordinarlas con directivas de nivel de inquilino y con las directivas de acceso que se configuran en Azure Active Directory, Intune e Intune App Management.
 
-Las directivas de acceso de dispositivo para SharePoint y OneDrive para la empresa la compatibilidad con directivas en Azure Active Directory y Microsoft Intune según el escenario que va a implementar. En la siguiente tabla se resumen los objetivos que puede conseguir con las directivas de acceso de dispositivo y se indica qué productos requieren la compatibilidad con directivas.
+Las directivas de acceso de dispositivo para SharePoint y OneDrive para la Empresa necesitan directivas de soporte en Azure Active Directory y Microsoft Intune según el escenario que va a implementar. En la siguiente tabla se resumen los objetivos que puede conseguir con las directivas de acceso de dispositivo y se indican los productos que requieren directivas de soporte.
 
 <table>
 <thead>
@@ -358,13 +358,13 @@ Más información: [Centro de administración de SharePoint Online: Controlar el
 
 Microsoft le recomienda que configure la protección de identidades y dispositivos que acceden al servicio. El esfuerzo de proteger el acceso a servicios de Office 365 también puede usarse para proteger el acceso a otros servicios SaaS, servicios PaaS e incluso aplicaciones de otros proveedores de nube.
 
-La protección de acceso para identidades y dispositivos proporciona una línea base de protección para asegurarse de que las identidades no están en peligro, los dispositivos son seguros y los datos de la organización a los que se acceden desde dispositivos están aislados y protegidos.
+La protección de acceso para identidades y dispositivos proporciona una línea base de protección para asegurarse de que las identidades no están en peligro, los dispositivos son seguros y los datos de la organización a los que se acceden desde los dispositivos están aislados y protegidos.
 
 Para ver recomendaciones para comenzar e instrucciones de configuración, consulte [Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
 Para entornos de identidad híbridos con AD FS, consulte [Opciones y directivas de seguridad recomendadas](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
-En la siguiente ilustración se describe cómo se relacionan los servicios en la nube (SaaS, PaaS), los tipos de cuenta (cuentas de dominio de inquilino y cuentas B2B) y las funciones de acceso de servicio. Es importante que tenga en cuenta qué funciones pueden usarse con cuentas B2B.
+En la siguiente ilustración se describe cómo se relacionan los servicios en la nube (SaaS, PaaS), los tipos de cuenta (cuentas de dominio de inquilino y cuentas B2B) y las funciones de acceso de servicio. Es importante que tenga en cuenta las funciones que pueden usarse con cuentas B2B.
 
 ![Servicios en la nube, tipos de cuenta y las funciones de acceso](Media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
