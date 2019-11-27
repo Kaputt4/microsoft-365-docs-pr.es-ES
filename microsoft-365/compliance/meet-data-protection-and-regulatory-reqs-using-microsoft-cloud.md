@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: El Administrador de cumplimiento del Portal de confianza de servicios de Microsoft proporciona herramientas para realizar un seguimiento, implementar y administrar los controles que permitan a su organización alcanzar el cumplimiento con normas del sector de seguridad y protección de datos (como RGPD, ISO 27001 y 27018, e HIPAA) en relación con los Servicios en la nube de Microsoft, como Office 365 y Microsoft Azure. El Administrador de cumplimiento ayuda a la persona que supervisa la protección de datos y la estrategia de privacidad a administrar el proceso de evaluación de riesgos y cumplimiento de su organización.
-ms.openlocfilehash: 95816ca13818d068066c4e3c7fce371f1eeccc25
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 4c3f979caf2fdc3a2dc942e49fd33a09d2d1589a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417599"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "39268656"
 ---
-# <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los Servicios en la nube de Microsoft
+# <a name="microsoft-compliance-manager-classic"></a>Administrador de cumplimiento de Microsoft (clásico)
+
+> [!NOTE]
+> Esta documentación describe un producto heredado. No se aconseja a los usuarios usar esta versión del administrador de cumplimiento sino que se les aconseja usar la nueva [Puntuación de cumplimiento de Microsoft](compliance-score.md).
 
  *El Administrador de cumplimiento no está disponible en Office 365 ofrecido por 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) u Office 365 Department of Defense.* 
   
@@ -831,4 +834,4 @@ El Administrador de cumplimiento se diseñó para actualizarlo de forma periódi
 
 - [Anuncio de la disponibilidad general del Administrador de cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
 
-- [Microsoft 365 proporciona una estrategia de protección de la información como ayuda para el RGPD](https://blogs.office.com/es-ES/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
+- [Microsoft 365 proporciona una estrategia de protección de la información como ayuda para el RGPD](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

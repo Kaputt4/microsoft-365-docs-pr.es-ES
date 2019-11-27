@@ -1,7 +1,7 @@
 ---
 title: Información general sobre la retención controlada por eventos
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de retención puede hacer que un período de retención se base en el momento en que se produce un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento. La retención controlada por eventos suele usarse como parte de un proceso de administración de registros.
-ms.openlocfilehash: 1f258296017734c80cb3719eb0b830593f69b220
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092454"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "39268641"
 ---
 # <a name="overview-of-event-driven-retention"></a>Información general sobre la retención controlada por eventos
 
@@ -42,7 +42,7 @@ La retención controlada por eventos suele usarse como parte de un proceso de ad
 - Las etiquetas basadas en eventos suelen desencadenar una revisión para eliminación al finalizar el período de retención, por lo que un administrador de registros puede revisar y eliminar el contenido de forma manual. Para obtener más información, vea [Información general sobre revisiones para eliminación](disposition-reviews.md).
     
 Una etiqueta basada en un evento tiene las mismas funciones que cualquier etiqueta en Office 365. Para obtener más información, vea [Información general sobre las etiquetas](labels.md).
-    
+
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Información sobre la relación entre tipos de evento, etiquetas, eventos e id. de activo
 
 Para usar correctamente la retención controlada por eventos, es importante comprender la relación entre tipos de evento, etiquetas, eventos e id. de activo, como se muestra aquí. Encontrará una explicación después del diagrama.
@@ -75,6 +75,9 @@ Este es el flujo de trabajo general para la retención controlada por eventos. A
   
 ![Diagrama del flujo de trabajo para configurar la retención controlada por eventos](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
+> [!TIP]
+> Para obtener más información sobre cómo usar las propiedades administradas en SharePont para aplicar automáticamente las etiquetas de retención y implementar la retención basada en eventos, vea [administrar el ciclo de vida de los documentos de SharePoint con etiquetas de retención](auto-apply-retention-labels-scenario.md).
+
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Paso 1: Crear una etiqueta cuyo período de retención se base en un evento
 
 En el Centro de cumplimiento de Microsoft 365, el Centro de seguridad de Microsoft 365 o el centro de seguridad &amp; cumplimiento de Office 365, en el panel de navegación izquierdo, elija **Clasificación** > **Etiquetas de retención** >  pestaña **Etiquetas** > **Crear una etiqueta**.
@@ -103,7 +106,7 @@ Tenga en cuenta que, después de seleccionar un tipo de evento y crear la etique
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Paso 3: Publicar o aplicar automáticamente una etiqueta
 
-Al igual que cualquier etiqueta, necesita publicar o aplicar automáticamente una etiqueta basada en eventos para que se aplique en el contenido (de forma manual o automática). Para hacerlo, vaya a la página **Clasificación** > **Etiquetas de retención**.
+Como en cualquier etiqueta, es necesario publicar o aplicar automáticamente una etiqueta basada en eventos, de modo que se aplique manual o automáticamente al contenido. Puede hacer esto en **clasificación ** > **página etiquetas de retención**.
   
 ![Opciones para publicar o aplicar automáticamente una etiqueta de retención](media/options-to-publish-auto-apply-retention-label.png)
 
@@ -123,9 +126,7 @@ Tenga en cuenta que un id. de activo es simplemente otra propiedad de un documen
   
 ### <a name="step-5-create-an-event"></a>Paso 5: Crear un evento
 
-Cuando se produzca una instancia específica de ese tipo de evento (por ejemplo, cuando un producto alcanza el fin de vida), vaya a la página Eventos del Centro de seguridad y cumplimiento, y cree un evento. Necesita crear el evento para desencadenarlo manualmente.
-  
-![Página Eventos en el Centro de seguridad y cumplimiento](media/811bddfb-a7e9-4990-bf5e-abe0dfb91809.png)
+Si se produce un caso concreto de ese tipo de evento (por ejemplo, un producto llega al final de su vida útil), acceda a la página **Eventos de gestión de registros** > ** en el Centro** de cumplimiento de la seguridad&amp; y cree un evento. Se debe desencadenar manualmente un evento mediante su creación.
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Paso 6: Seleccionar el mismo tipo de evento usado por la etiqueta en el paso 2
 

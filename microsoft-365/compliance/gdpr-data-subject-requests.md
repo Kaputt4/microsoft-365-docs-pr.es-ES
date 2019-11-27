@@ -1,7 +1,7 @@
 ---
-title: Solicitudes de interesados para el RGPD
+title: Solicitudes de los temas de datos del RGPD y CCPA
 description: ''
-keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
+keywords: Microsoft 365, Educación de Microsoft 365, documentación de Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,17 +9,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: dc4352ac14f42a227f1572b0c7f1442aa4dec838
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078910"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39268644"
 ---
-# <a name="data-subject-requests-and-the-gdpr"></a>Solicitudes de interesados para el RGPD
+# <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Solicitudes de los temas de datos del RGPD y Ley de Privacidad del Consumidor de California (CCPA, por sus siglas en inglés)
 
-El reglamento general de protección de datos (RGPD), añade nuevas normas organizaciones que ofrecen bienes y servicios a los ciudadanos de la Unión Europea (UE), o que recopilen y analicen datos de los residentes de la UE, sin importar donde estén ubicados usted o su empresa. Puede encontrar más información en el [tema de resumen del RGPD](gdpr.md). <br><br>
+El Reglamento General de Protección de Datos (GDPR, por sus siglas en inglés) establece nuevas reglas para las organizaciones que suministran bienes y servicios a las personas en la Unión Europea (UE), o que recolectan y analizan los datos de los residentes de la UE, independientemente de su ubicación o de la de la empresa en la que trabajen. Puede encontrar más información en el [tema de resumen del RGPD](gdpr.md).
+
+De forma similar, la Ley de Privacidad del Consumidor de California (CCPA, por sus siglas en inglés), ofrece derechos y obligaciones de privacidad a los consumidores de California, incluyendo derechos similares a los Derechos del Sujeto de Datos de GDPR, como el derecho de eliminar, acceder y recibir (portabilidad) su información personal.  La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas".  <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
 
@@ -35,18 +39,20 @@ Este documento le informa sobre la finalización de solicitudes de interesados e
 
 ## <a name="terminology"></a>Terminología
 
-Definiciones útiles para el reglamento general de protección de datos, términos utilizados en este documento:
+Definiciones útiles de los términos del RGPD utilizados en este documento:
 
-- *Controlador de datos (controlador)*: una persona jurídica, autoridad pública, agencia u otro organismo, que por sí solos o conjuntamente con otras personas, determine el propósito y el medio del procesamiento de datos personales.  
-- *Datos personales * e *interesado*: cualquier información relacionada con una persona física identificada o una persona natural identificable (asunto de datos), una persona física identificable es la que puede identificarse, directa o indirectamente.  
-- *Procesador:* persona física o jurídica, entidad pública, agencia u otro organismo que procese datos personales en nombre del controlador.  
+- *Controlador de datos (controlador)*: una persona jurídica, autoridad pública, agencia u otro organismo, que por sí solos o conjuntamente con otras personas, determinan el propósito y el medio del procesamiento de datos personales.  
+- *Datos personales * e *interesado*: cualquier información relacionada con una persona física identificada o una persona natural identificable (interesado), una persona física identificable es la que puede identificarse, directa o indirectamente.  
+- *Procesador*: una persona física o jurídica, entidad pública, agencia u otro organismo que procese datos personales en nombre del controlador.  
 - *Datos de clientes*: datos producidos y almacenados en las operaciones diarias de su empresa.
 
 ## <a name="what-is-a-dsr"></a>¿Qué es un DSR?
 
-El Reglamento General de Protección de Datos (RGPD) otorga derechos a las personas (denominadas "interesados" en el reglamento) para administrar los datos personales recopilados por un empresario u otro tipo de agencia u organización (denominado "responsable del tratamiento de los datos" o simplemente "responsable"). El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de ellos, la solicitud de modificaciones, la restricción de procesamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro responsable del tratamiento.
+El Reglamento General de Protección de Datos (RGPD) otorga derechos a las personas (denominadas "interesados" en el reglamento) para administrar los datos personales recopilados por un empresario u otro tipo de agencia u organización (denominado "responsable del tratamiento de los datos" o simplemente "responsable"). El Reglamento general de protección de datos (RGPD) le da a los sujetos de los datos derechos específicos sobre sus datos personales; entre estos derechos se incluyen la obtención de copias de los datos, la solicitud de cambios en ellos, la restricción de su tratamiento, su eliminación o su recepción en formato electrónico para que pueda ser trasladado a otro responsable.
 
-Como controlador, tendrá que valorar cada DSR y dar una respuesta suficiente, ya sea llevando a cabo la acción solicitada o explicando los motivos por los que el controlador no puede satisfacer el DSR. Un controlador debe consultar con sus propios consejeros jurídicos o asesores de cumplimiento sobre la disposición adecuada de un DSR.
+La Ley de Privacidad del Consumidor de California (CCPA, por sus siglas en inglés), ofrece derechos y obligaciones de privacidad a los consumidores de California, incluyendo derechos similares a los Derechos del Sujeto de Datos de GDPR, como el derecho de eliminar, acceder y recibir (portabilidad) su información personal.  
+
+En su calidad de responsable de la gestión, usted está obligado a considerar rápidamente cada DSR y a proporcionar una respuesta sustantiva, ya sea adoptando las medidas necesarias o explicando las causas por las que el responsable de la gestión del DSR no puede adaptarse a las necesidades del responsable.. Un controlador debe consultar con sus propios consejeros jurídicos o asesores de cumplimiento sobre la disposición adecuada de un DSR.
 
 Es posible se requieran varios procesos para completar un DSR, según las reglas de cumplimiento del RGPD de su organización.
   
