@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Participe y use el modelo de detección de privilegios de clientes de abogados para usar la detección de contenido privilegiado basada en aprendizaje de máquina al revisar el contenido en un caso de exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: 943b788dfea62433f0f6c1dca3b6b105cf92bae8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a483941ba5d28527eb509f2e1bbd129434430244
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092082"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39603784"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configuración de la detección de privilegios de clientes de abogado en eDiscovery avanzado
 
@@ -53,39 +53,39 @@ Estas tres propiedades también se pueden buscar dentro de un conjunto de revisi
 
 ## <a name="set-up-the-attorney-client-privilege-detection-model"></a>Configuración del modelo de detección de privilegios de clientes de abogados
 
-Para habilitar el modelo de detección de privilegios de clientes de abogados, su organización tiene que optar y, a continuación, cargar una lista de abogados.
+Para habilitar el modelo de detección de privilegios de clientes de abogados, su organización tiene que participar y, a continuación, cargar una lista de abogados.
 
-### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>Paso 1: participar en la detección de privilegios de clientes y abogados
+### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>Paso 1: participar a abogado-detección de privilegios de cliente
 
 Como se mencionó anteriormente, el modelo de detección de privilegios de cliente de abogado está en versión preliminar. Por lo tanto, una persona del administrador de eDiscovery de la organización (un miembro del subgrupo de administradores de eDiscovery en el grupo de roles de eDiscovery Manager) debe participar para que el modelo esté disponible en los casos de eDiscovery avanzado.
 
 1. En el centro de seguridad & cumplimiento, vaya a **ediscovery > la exhibición avanzada**de documentos electrónicos.
 
-2. En la Página principal de **EDiscovery avanzado** , en el icono **configuración** , haga clic en **configurar características experimentales**.
+2. En la Página principal de **EDiscovery avanzado** , en el icono **configuración** , seleccione **configurar características experimentales**.
 
-   ![Haga clic en "configurar características experimentales"](media/AeDExperimentalFeatures.png)
+   ![Seleccione "configurar características experimentales"](media/AeDExperimentalFeatures.png)
 
-3. En la ficha **características experimentales** , haga clic en la **opción administrar privilegios de cliente de abogado**.
+3. En la pestaña **características experimentales** , seleccione la **opción administrar privilegios de cliente de abogado**.
 
-4. En la página de control flotante de **privilegios de cliente** , haga clic en el botón de alternancia para activar la característica y, a continuación, haga clic en **Guardar**.
+4. En la página de control flotante de **privilegios de cliente** , use el botón de alternancia para activar la característica y, a continuación, seleccione **Guardar**.
 
 ### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Paso 2: cargar una lista de abogados (opcional)
 
-Para sacar el máximo partido del modelo **de detección de** privilegios de clientes de abogados y clientes que **se ha descrito** anteriormente, se recomienda cargar una lista de direcciones de correo electrónico para el Abogados y personal legal que trabajan para su organización. 
+Para sacar el máximo provecho del modelo de detección de privilegios de clientes de abogado y usar los resultados de la detección de **abogados** o **potencialmente privilegiados** que se describió anteriormente, le recomendamos que cargue una lista de direcciones de correo electrónico para los abogados y el personal legal que trabajan para su organización. 
 
 Para cargar una lista de abogados para su uso por parte del modelo de detección de privilegios de clientes de abogados:
 
 1. Cree un archivo. csv (sin una fila de encabezado) y agregue la dirección de correo electrónico de cada persona apropiada en una línea independiente. Guarde este archivo en el equipo local.
 
-2. En la Página principal de **EDiscovery avanzado** , en el icono **configuración** , haga clic en **configurar características experimental**y, a continuación, haga clic en **administrar la configuración de privilegios de cliente o abogado**.
+2. En la Página principal de **EDiscovery avanzado** , en el icono **configuración** , seleccione **configurar características experimentales**y, a continuación, seleccione **administrar el privilegio de cliente de abogado**.
 
    Se muestra la página de **privilegios abogado-Client** y se activa el botón de alternancia **detección de privilegios de clientes o abogados** .
 
    ![Abogado-página desplegable de privilegios de cliente](media/AeDUploadAttorneyList.png)
 
-3. Haga clic en **examinar** y, a continuación, busque y seleccione el archivo. csv que creó en el paso 1.
+3. Seleccione **examinar** y, a continuación, busque y seleccione el archivo. csv que creó en el paso 1.
 
-4. Haga clic en **Guardar** para cargar la lista de abogados.
+4. Seleccione **Guardar** para cargar la lista de abogados.
 
 ## <a name="use-the-attorney-client-privilege-detection-model"></a>Usar el modelo de detección de privilegios de cliente de abogado
 
@@ -95,13 +95,13 @@ Siga los pasos descritos en esta sección para usar la detección de privilegios
 
 Una de las principales formas de ver los resultados de la detección de privilegios de clientes de abogados en el proceso de revisión consiste en usar un grupo de etiquetas inteligentes. Un grupo de etiquetas inteligentes indica los resultados de la detección de privilegios de clientes de abogados y muestra los resultados en línea junto a las etiquetas en un grupo de etiquetas inteligentes. Esto le permite identificar rápidamente los documentos potencialmente privilegiados durante la revisión del documento. Además, también puede usar las etiquetas del grupo de etiquetas inteligentes para etiquetar los documentos como privilegiados o sin privilegios. Para obtener más información acerca de las etiquetas inteligentes, consulte [configurar las etiquetas inteligentes en la exhibición avanzada de](smart-tags.md)documentos electrónicos.
 
-1. En el conjunto de revisiones que contiene los documentos que analizó en el paso 1, haga clic en **administrar conjunto de revisiones** y, a continuación, haga clic en **administrar etiquetas**.
+1. En el conjunto de revisiones que contiene los documentos que analizó en el paso 1, seleccione **administrar conjunto de revisiones** y, a continuación, seleccione **administrar etiquetas**.
  
-2. En **etiquetas**, haga clic en el vínculo desplegable junto a **Agregar grupo** y, a continuación, haga clic en **Agregar grupo de etiquetas inteligentes**.
+2. En **etiquetas**, seleccione la opción desplegable junto a **Agregar grupo** y, a continuación, seleccione **Agregar grupo de etiquetas inteligentes**.
 
-   ![Haga clic en "Agregar grupo de etiquetas inteligentes"](media/AeDCreateSmartTag.png)
+   ![Seleccione "Agregar grupo de etiquetas inteligentes"](media/AeDCreateSmartTag.png)
 
-3. En la página **Elija un modelo para la etiqueta inteligente** , haga clic en **seleccionar** junto a **abogado-Client privilegio**.
+3. En la página **Elija un modelo para la etiqueta inteligente** , elija **seleccionar** junto a **abogado-privilegio de cliente**.
 
    Se muestra un grupo de etiquetas con el **privilegio abogado-Client** . Contiene dos etiquetas secundarias denominadas **positivo** y **negativo**, que corresponden a los posibles resultados generados por el modelo.
 
@@ -111,7 +111,7 @@ Una de las principales formas de ver los resultados de la detección de privileg
 
 ### <a name="step-2-analyze-a-review-set"></a>Paso 2: analizar un conjunto de revisión
 
-Al analizar los documentos de un conjunto de revisiones, también se ejecutará el modelo de detección de privilegios de clientes de abogados y las propiedades correspondientes (que se describen en[¿Cómo funciona?](#how-does-it-work) se agregarán a todos los documentos del conjunto de revisión. Para obtener más información acerca del análisis de datos en el conjunto de revisiones, consulte [analizar datos en un conjunto de revisión en EDiscovery avanzado](analyzing-data-in-review-set.md).
+Al analizar los documentos de un conjunto de revisiones, también se ejecutará el modelo de detección de privilegios de clientes de abogados y las propiedades correspondientes (que se describen en [¿Cómo funciona?](#how-does-it-work) se agregarán a todos los documentos del conjunto de revisión. Para obtener más información acerca del análisis de datos en el conjunto de revisiones, consulte [analizar datos en un conjunto de revisión en EDiscovery avanzado](analyzing-data-in-review-set.md).
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>Paso 3: usar el grupo de etiquetas inteligentes para revisar el contenido privilegiado
 
@@ -125,7 +125,7 @@ Después de analizar el conjunto de revisión y configurar las etiquetas intelig
 
 Si el modelo determina que un documento no tiene contenido legal por naturaleza o que no contiene un participante de la lista de abogados, no se muestra ninguna etiqueta en el panel de etiquetado.
 
-Por ejemplo, en las siguientes capturas de pantallas se muestran dos documentos; el primero incluye contenido que es legal por naturaleza y tiene un participante en la lista de abogados; la segunda contiene ninguno y, por lo tanto, no muestra ninguna etiqueta.
+Por ejemplo, en las siguientes capturas de pantallas se muestran dos documentos. El primero incluye contenido que es legal por naturaleza y tiene un participante en la lista de abogados. La segunda contiene ninguno y, por lo tanto, no muestra ninguna etiqueta.
 
 ![Documento con etiquetas de abogados y contenido legal](media/AeDTaggingPanelLegalContentAttorney.png)
 

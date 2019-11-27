@@ -10,16 +10,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector nativo para importar datos desde la herramienta instantánea de chat de Bloomberg a Office 365. Esto le permite archivar datos de orígenes de datos de terceros en Office 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 97923fbd9bec8f5ae5fad822947c57bab08fe218
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38687653"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615610"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Configurar un conector para archivar datos Instant Bloomberg en Office 365
 
-Use un conector nativo en el centro de seguridad & cumplimiento en Office 365 para importar y archivar datos de chat de servicios financieros de la herramienta de colaboración [instantánea de Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) . Después de configurar y configurar un conector, se conecta al sitio FTP seguro (SFTP) de su organización una vez al día, convierte el contenido de los mensajes de chat en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones en Office 365.
+Use un conector nativo en el centro de seguridad & cumplimiento en Office 365 para importar y archivar datos de chat de servicios financieros desde la herramienta de colaboración de [Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) . Después de configurar y configurar un conector, se conecta al sitio FTP seguro (SFTP) de su organización una vez al día, convierte el contenido de los mensajes de chat en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones en Office 365.
 
 Una vez que se almacenan los datos instantáneos de Bloomberg en los buzones de usuario, puede aplicar las características de cumplimiento de Office 365, como retención por juicio, búsqueda de contenido, archivado local, auditoría, [cumplimiento de comunicación](communication-compliance.md)y políticas de retención de Office 365 a datos instantáneos de Bloomberg. Por ejemplo, puede buscar mensajes instantáneos de chat mediante la búsqueda de contenido o asociar el buzón de correo que contiene los datos de Bloomberg instantáneo con un custodio en un caso de eDiscovery avanzado. Usar un conector de Bloomberg instantáneo para importar y archivar datos en Office 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y regulatorias.
 
@@ -67,7 +67,7 @@ Muchos de los pasos de implementación necesarios para archivar datos instantán
 
     - Número de puerto para el sitio de SFTP de Bloomberg
 
-- El usuario que crea un conector para Bloomberg instantáneo en el paso 3 (y que descarga las claves públicas y la dirección IP en el paso 1) debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online. Esto es necesario para obtener acceso a la página **archivar datos de terceros** en el centro de seguridad & cumplimiento. De forma predeterminada, este rol no está asignado a ningún grupo de roles en Exchange Online. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
+- El usuario que crea un conector para Bloomberg instantáneo en el paso 3 (y que descarga las claves públicas y la dirección IP en el paso 1) debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online. Esto es necesario para obtener acceso a la página **archivar datos de terceros** en el centro de seguridad & cumplimiento. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 
 ## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>Paso 1: obtener las claves públicas SSH y PGP
 
@@ -114,7 +114,7 @@ El último paso consiste en crear un conector Bloomberg instantáneo en el centr
 
     - **dirección URL de SFTP:** La URL para el sitio de SFTP de Bloomberg (por ejemplo, sftp.bloomberg.com).
 
-    - **Puerto SFTP:** El número de puerto para el sitio de SFTP de Bloomberg. El conector lo usa para conectarse al sitio de SFTP.
+    - **Puerto SFTP:** El número de puerto para el sitio de SFTP de Bloomberg. El conector usa este puerto para conectarse al sitio de SFTP.
 
 5. En la página **buzón alternativo** , escriba la dirección de correo electrónico de un buzón que se usa para almacenar los mensajes de chat de un Bloomberg instantáneo que no estén asociados a un buzón de usuario de la organización.
 

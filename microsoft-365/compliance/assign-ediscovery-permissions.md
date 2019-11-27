@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 61b55c221c11a577a64d0d2358c89253b1e90714
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 067a54f6286df5a5ce6e5b02b7ea1d6964b16777
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687828"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39603754"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -28,7 +28,7 @@ Si desea que los usuarios usen cualquiera de las herramientas relacionadas con l
   
 El grupo de roles principal relacionado con la exhibición de documentos electrónicos en el centro de seguridad & cumplimiento se llama **Administrador de exhibición**de documentos electrónicos. Hay dos subgrupos dentro de este grupo de roles. 
   
-- **administradores** de exhibición de documentos electrónicos: un administrador de exhibición de documentos electrónicos puede usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar ubicaciones de contenido en la organización y realizar diversas acciones relacionadas con la búsqueda, como los resultados de la búsqueda de la vista previa y la exportación. Los miembros también pueden crear y administrar casos de eDiscovery, agregar y quitar miembros de un caso, crear suspensiones de casos y ejecutar búsquedas de contenido asociadas a un caso, y obtener acceso a datos de caso en eDiscovery avanzado de Office 365.  Los administradores de eDiscovery solo pueden acceder y administrar los casos que crean. No pueden acceder ni administrar los casos creados por otros administradores de exhibición de documentos electrónicos. 
+- **administradores** de exhibición de documentos electrónicos: un administrador de exhibición de documentos electrónicos puede usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar ubicaciones de contenido en la organización y realizar diversas acciones relacionadas con la búsqueda, como los resultados de la búsqueda de la vista previa y la exportación. Los miembros también pueden crear y administrar casos de eDiscovery, agregar y quitar miembros de un caso, crear casos de caso, ejecutar búsquedas de contenido asociadas a un caso y obtener acceso a datos de caso en eDiscovery avanzado de Office 365. los administradores de eDiscovery solo pueden acceder y administrar los casos que crean. No pueden acceder ni administrar los casos creados por otros administradores de exhibición de documentos electrónicos. 
     
 - **administradores de exhibición** de documentos electrónicos: un administrador de exhibición de documentos electrónicos es miembro del grupo de roles eDiscovery Manager y puede realizar las mismas tareas relacionadas con la búsqueda de contenido y la administración de casos que puede realizar un administrador de exhibición de documentos electrónicos. Además, un administrador de exhibición de documentos electrónicos puede: 
     
@@ -45,9 +45,9 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de roles) para asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
+- Debe ser miembro del grupo de roles de administración de la organización o tener asignado el rol de administración de roles para asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
     
-- Puede usar el cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) en seguridad & PowerShell del centro de cumplimiento para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles eDiscovery Manager. Sin embargo, no puede Agregar un grupo de seguridad habilitado para correo al subgrupo administradores de eDiscovery. Consulte la sección [More Information](#more-information) para obtener más información. 
+- Puede usar el cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) en seguridad & PowerShell del centro de cumplimiento para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles eDiscovery Manager. Sin embargo, no puede Agregar un grupo de seguridad habilitado para correo al subgrupo administradores de eDiscovery. Para obtener más información, consulte la sección [More Information](#more-information) . 
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -55,18 +55,18 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del centro de seguridad y cumplimiento, haga clic en **permisos**y, a continuación, haga clic en la casilla situada junto a **Administrador de exhibición**de documentos electrónicos.
+3. En el panel izquierdo del centro de seguridad y cumplimiento, seleccione **permisos**y, después, active la casilla situada junto a **Administrador de exhibición**de documentos electrónicos.
     
 4. En la página flotante del **Administrador de exhibición** de documentos electrónicos, realice una de las siguientes acciones en función de los permisos de exhibición de documentos electrónicos que desee asignar. 
   
-    **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos: Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En la sección **elegir administrador de exhibición** de documentos electrónicos, haga clic en el hipervínculo **elegir administrador de exhibición** de documentos electrónicos y haga clic en ![agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de edición seleccionar el control flotante de **eDiscovery Manager** , haga clic en **Guardar** para guardar los cambios en la pertenencia al administrador de eDiscovery.
+    **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos: Junto a **Administrador de exhibición**de documentos electrónicos, seleccione **Editar**. En la sección **elegir administrador de exhibición** de documentos electrónicos, seleccione el hipervínculo **elegir eDiscovery Manager** y, a continuación, seleccione ![agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, seleccione **Agregar**. Cuando haya terminado de agregar usuarios, seleccione **listo**. A continuación, en la página de **edición elegir administrador de exhibición** de documentos electrónicos, seleccione **Guardar** para guardar los cambios en la pertenencia al administrador de exhibición de documentos electrónicos.
   
-    **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos: Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En la sección **elegir administrador de eDiscovery** , en **administradores de eDiscovery**, haga clic en **elegir administrador de exhibición** de documentos electrónicos, haga clic en **Editar**y, a continuación, haga clic en ![agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de **exhibición**de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de **edición de elegir administrador de exhibición** de documentos electrónicos, haga clic en **Guardar** para guardar los cambios en la pertenencia del administrador de exhibición de documentos electrónicos.
+    **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos: Junto a **Administrador de exhibición**de documentos electrónicos, seleccione **Editar**. En la sección **elegir administrador de eDiscovery** , en **administradores de exhibición**de documentos electrónicos, seleccione **elegir administrador de exhibición**de documentos electrónicos, seleccione **Editar**y, a continuación, seleccione ![agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de **exhibición**de documentos electrónicos y, a continuación, **Agregar**. Cuando haya terminado de agregar usuarios, seleccione **listo**. A continuación, en la página de **edición de elegir administrador de exhibición** de documentos electrónicos, seleccione **Guardar** para guardar los cambios en la pertenencia del administrador de exhibición de documentos electrónicos.
       
 > [!NOTE]
 > También puede usar el cmdlet **Add-eDiscoveryCaseAdmin** para que un usuario sea administrador de exhibición de documentos electrónicos. Sin embargo, al usuario se le debe asignar el rol de administración de casos antes de que pueda usar este cmdlet para convertirlo en Administrador de exhibición de documentos electrónicos. Para obtener más información, vea [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
-En la página **permisos** del centro de seguridad & cumplimiento, también puede asignar permisos relacionados con la exhibición de documentos electrónicos, agregándolos a los grupos de roles administrador de cumplimiento, administración de la organización y revisor. Para obtener una descripción de los roles RBAC relacionados con la exhibición de documentos electrónicos asignados a cada uno de estos grupos de roles, consulte la sección [roles de RBAC relacionados con la exhibición](#rbac-roles-related-to-ediscovery) de documentos electrónicos. 
+En la página **permisos** del centro de seguridad & cumplimiento, también puede asignar permisos relacionados con la exhibición de documentos electrónicos agregándolos a los grupos de roles administrador de cumplimiento, administración de la organización y revisor. Para obtener una descripción de los roles RBAC relacionados con la exhibición de documentos electrónicos asignados a cada uno de estos grupos de roles, consulte la sección [roles de RBAC relacionados con la exhibición](#rbac-roles-related-to-ediscovery) de documentos electrónicos. 
 
 ## <a name="rbac-roles-related-to-ediscovery"></a>Roles RBAC relacionados con la exhibición de documentos electrónicos
 
@@ -94,9 +94,9 @@ Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a 
 
 Este rol permite a los usuarios ejecutar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar en buzones de correo y carpetas públicas, sitios de SharePoint Online, sitios de OneDrive para la empresa, conversaciones de Skype empresarial, grupos de Office 365 y Microsoft Teams. Este rol permite al usuario obtener una estimación de los resultados de la búsqueda y crear informes de exportación, pero se necesitan roles adicionales para iniciar acciones de búsqueda de contenido, como la vista previa, la exportación o la eliminación de los resultados de la búsqueda.
 
-Tenga en cuenta que los usuarios que tengan asignado el rol de búsqueda de cumplimiento pero que no tengan el rol de vista previa pueden obtener una vista previa de los resultados de una búsqueda en la que un usuario que tenga asignada la función de vista previa haya iniciado la acción de vista previa. El usuario sin el rol vista previa puede obtener una vista previa de los resultados durante 2 semanas después de que se haya creado la acción de vista previa inicial.
+Los usuarios que tienen asignado el rol de búsqueda de cumplimiento pero que no tienen el rol de vista previa pueden obtener una vista previa de los resultados de una búsqueda en la que un usuario que tenga asignada la función de vista previa haya iniciado la acción de vista previa. El usuario sin el rol vista previa puede obtener una vista previa de los resultados de hasta dos semanas después de que se haya creado la acción de vista previa inicial.
 
-De forma similar, los usuarios que tienen asignado el rol de búsqueda de cumplimiento pero no tienen la función exportar pueden descargar los resultados de una búsqueda en la que la acción de exportación ha sido iniciada por un usuario que tiene asignada la función exportar. El usuario sin el rol exportar puede descargar los resultados de una búsqueda durante 2 semanas después de que se haya creado la acción de exportación inicial. Después de eso, no podrán descargar los resultados a menos que un usuario con el rol exportar reinicie la exportación.
+De forma similar, los usuarios a los que se les ha asignado el rol de búsqueda de cumplimiento pero que no tienen la función exportar pueden descargar los resultados de una búsqueda en la que la acción de exportación ha sido iniciada por un usuario que tiene asignada la función exportar. El usuario sin el rol exportar puede descargar los resultados de una búsqueda durante un máximo de dos semanas después de que se haya creado la acción de exportación inicial. Después de eso, no pueden descargar los resultados a menos que un usuario con el rol exportar reinicie la exportación.
 
 Para obtener más información, consulte [búsqueda de contenido en Office 365](content-search.md). 
 
@@ -108,7 +108,7 @@ Para obtener más información acerca de cómo exportar resultados de búsqueda,
 
 ### <a name="hold"></a>Hold
 
-Este rol permite a los usuarios poner contenido en buzones de correo, carpetas públicas, sitios, conversaciones de Skype empresarial y grupos de Office 365 en suspensión. Cuando el contenido está en espera, los propietarios de contenido podrán modificar o eliminar el contenido original, pero el contenido se conservará hasta que se quite la retención o hasta que expire la duración de retención. 
+Este rol permite a los usuarios poner contenido en retención en buzones de correo, carpetas públicas, sitios, conversaciones de Skype empresarial y grupos de Office 365. Cuando el contenido está en espera, los propietarios de contenido pueden modificar o eliminar el contenido original, pero el contenido se conservará hasta que se quite la retención o hasta que expire la duración de retención. 
 
 Para obtener más información acerca de las suspensiones, consulte:
 
@@ -117,11 +117,11 @@ Para obtener más información acerca de las suspensiones, consulte:
 
 ### <a name="preview"></a>Vista previa
 
-Este rol permite a los usuarios ver una lista de elementos devueltos de una búsqueda de contenido. También podrán abrir y ver cada elemento de la lista para ver su contenido.
+Este rol permite a los usuarios ver una lista de elementos devueltos de una búsqueda de contenido. También pueden abrir y ver cada elemento de la lista para ver su contenido.
 
 ### <a name="review"></a>Review
 
-Esta función permite a los usuarios acceder a datos de casos en la exhibición avanzada de documentos electrónicos de Office 365. El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición avanzada de documentos electrónicos. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o para realizar otras tareas de búsqueda de contenido o de administración de casos.
+Esta función permite a los usuarios acceder a datos de casos en la exhibición avanzada de documentos electrónicos de Office 365. El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición avanzada de documentos electrónicos. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede seleccionar **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o realizar otras tareas de búsqueda de contenido o de administración de casos.
 
 ### <a name="rms-decrypt"></a>Descifrado de RMS
 
@@ -148,8 +148,8 @@ Este rol permite a los usuarios realizar la eliminación masiva de datos que coi
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Tenga en cuenta que no se admite un grupo de distribución de Exchange o un grupo de Office 365. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell con el ` New-DistributionGroup -Type Security ` comando. También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el centro de administración de Microsoft 365. Tenga en cuenta que puede tardar hasta 60 minutos después de crear una nueva seguridad habilitada para correo que esté disponible para agregarla al grupo de roles eDiscovery Managers. 
+    Los grupos de distribución de Exchange y los grupos de Office 365 no son compatibles. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell con el ` New-DistributionGroup -Type Security ` comando. También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el centro de administración de Microsoft 365. Puede tardar hasta 60 minutos después de crear una nueva seguridad habilitada para correo que esté disponible para agregarla al grupo de roles eDiscovery Managers. 
     
     Además, como se mencionó anteriormente, no puede hacer que un grupo de seguridad habilitado para correo sea un administrador de eDiscovery usando el cmdlet **Add-eDiscoveryCaseAdmin** en el PowerShell del centro de cumplimiento de & de seguridad. Solo puede Agregar usuarios individuales como administradores de exhibición de documentos electrónicos. 
     
-    Tenga en cuenta que tampoco puede Agregar un grupo de seguridad habilitado para correo como miembro de un caso.
+    Tampoco puede Agregar un grupo de seguridad habilitado para correo como miembro de un caso.

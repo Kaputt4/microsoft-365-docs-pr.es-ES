@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38687631"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615620"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -39,7 +39,7 @@ Con el administrador de cumplimiento, su organización puede:
 
 ## <a name="compliance-manager-relationships"></a>Relaciones del administrador de cumplimiento
 
-El administrador de cumplimiento usa varios componentes para ayudarle con sus actividades de administración de cumplimiento. Estos componentes funcionan de forma conjunta para proporcionar un flujo de trabajo de administración completo y informes de cumplimiento sin complicaciones para los auditores.
+El administrador de cumplimiento usa varios componentes para ayudarle con las actividades de administración de cumplimiento. Estos componentes funcionan de forma conjunta para proporcionar un flujo de trabajo de administración completo y informes de cumplimiento sin complicaciones para los auditores.
 
 El diagrama muestra las relaciones entre los componentes principales del administrador de cumplimiento:
 

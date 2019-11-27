@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenga información general sobre la fase de evaluación y su rol a la hora de determinar la riqueza de los problemas durante la formación de relevancia en la exhibición avanzada de documentos electrónicos de Office 365.
-ms.openlocfilehash: 77d9449ad15fd3a53709f2a28a96b06ab54556eb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 727b432a541e1316952faa7dc9c5b8e40ac4295c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092091"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615640"
 ---
 # <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Descripción de la evaluación en relevancia en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-La exhibición avanzada de documentos electrónicos permite una evaluación temprana, por ejemplo, para los problemas definidos y los datos importados para un caso. La exhibición avanzada de documentos electrónicos permite al experto tomar decisiones relativas a un enfoque adoptado y aplicarlos al proyecto de revisión del documento.
+La exhibición avanzada de documentos electrónicos permite una evaluación temprana, por ejemplo, para los problemas definidos y los datos importados para un caso. EDiscovery avanzado permite al experto tomar decisiones sobre un enfoque adoptado y aplicar estas decisiones al proyecto de revisión del documento.
   
 ## <a name="understanding-assessment"></a>Descripción de la evaluación
 
@@ -35,9 +35,9 @@ Cuanto mayor sea el número de archivos relevantes en el conjunto de evaluación
   
 Las estadísticas, que se presentan en las pestañas realizar seguimiento y decidir durante la formación y después del cálculo por lotes, incluyen los cálculos de la recuperación de los distintos conjuntos de revisión. En las estadísticas, las estimaciones basadas en un conjunto de muestra (en este caso, los archivos de evaluación) incluyen el margen de error y el nivel de confianza de ese margen de error. Por ejemplo, una recuperación de 80% estimada puede tener un margen de error de más o menos un 5% con un nivel de confianza de 95%. Esto significa que la recuperación estimada es en realidad del 75%-85% y esta estimación tiene un 95% de confianza. Cuanto mayor sea el conjunto de evaluación, el margen de error será más pequeño y las estadísticas serán más exactas. 
   
-Una vez que el experto revisa un conjunto de evaluación inicial de 500 archivos, la relevancia puede determinar el margen actual de error de los valores de recuperación. Relevancia también establecerá un margen de error predeterminado que recomienda alcanzar para optimizar el conjunto de evaluación. A continuación se muestran algunos ejemplos:
+Una vez que el experto revisa un conjunto de evaluación inicial de 500 archivos, la relevancia puede determinar el margen actual de error de los valores de recuperación. La relevancia también recomienda un margen de error predeterminado para llegar a la optimización del conjunto de evaluación. Aquí le mostramos otros ejemplos:
   
-- Si el conjunto de evaluación ya ha dado como resultado un margen de error de más o menos el 10%, la relevancia le recomendará pasar a la capacitación (no es necesaria ninguna revisión de evaluación adicional). 
+- Si el conjunto de evaluación ya ha dado como resultado un margen de error de más o menos el 10%, la relevancia le recomendará pasar a la formación (no es necesaria ninguna revisión de evaluación adicional). 
     
 - Si el conjunto de evaluación produjo un margen de error de más o menos el 13%, la relevancia puede recomendar la revisión de otro conjunto de archivos de evaluación para alcanzar un margen más pequeño. 
     

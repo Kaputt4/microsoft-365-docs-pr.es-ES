@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: b80edfb0425904b03426ef0ff3cdd1d251e638ea
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: c9ed6e6d7f1489a510283a344094754a6f8cdeb4
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369641"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615670"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -54,7 +54,7 @@ Al realizar una investigación de datos, ahora puede eliminar elementos de sus u
 Hemos lanzado dos nuevos roles de administrador para ayudarle a administrar la seguridad y el cumplimiento en su organización. dígale a todos sus amigos.
 
 - **Administración de datos de cumplimiento**. Los usuarios con este rol tienen permisos para proteger y realizar un seguimiento de los datos en el centro de cumplimiento de Microsoft 365, el centro de administración de Microsoft 365 y Azure. También pueden administrar todo el centro de administración de Exchange, el administrador de cumplimiento, Teams & el centro de administración de Skype empresarial y crear vales de soporte para Azure y Microsoft 365.
-- **Operador de seguridad**. Los usuarios con este rol pueden administrar alertas y tener acceso global de solo lectura a características relacionadas con la seguridad, como todo en el centro de seguridad 365 de Microsoft, Azure Active Directory, protección de identidad, administración de identidad con privilegios y Office 365 Centro de seguridad & cumplimiento.
+- **Operador de seguridad**. Los usuarios con este rol pueden administrar alertas y tener acceso global de solo lectura a características relacionadas con la seguridad, como todo en el centro de seguridad 365 de Microsoft, Azure Active Directory, protección de identidad, administración de identidad privilegiada y Office 365 Security & el centro de cumplimiento.
 
 [Obtenga más información sobre estos roles](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
 
