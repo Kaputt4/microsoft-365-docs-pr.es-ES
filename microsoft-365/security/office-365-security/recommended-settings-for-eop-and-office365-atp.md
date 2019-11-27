@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257555"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615660"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -41,7 +41,7 @@ Anti-spam, anti-malware y anti-phishing son características de EOP que los admi
 |Acción de detección de correo phishing|Colocar el mensaje en cuarentena|Colocar el mensaje en cuarentena||
 |Acción de detección de correo electrónico de phish de confianza alta|Colocar el mensaje en cuarentena|Colocar el mensaje en cuarentena||
 |Acción de detección de correo electrónico en masa|Mover mensaje a la carpeta Correo no deseado|Colocar el mensaje en cuarentena||
-|Establecer el umbral de correo electrónico masivo en|6,5|4||
+|Establecer el umbral de correo electrónico masivo en|6,5|4|Actualmente, el valor predeterminado es 7, pero se recomienda que la mayoría de las organizaciones mvoe hasta al menos 6|
 |Período de retención de cuarentena|30 días|30 días||
 |Sugerencias de seguridad|Activado|Activado||
 |Remitentes permitidos|Ninguno|Ninguno||
@@ -76,9 +76,9 @@ Hay varios otros parámetros en la Directiva contra correo no deseado denominado
 
 |Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---------|---------|---------|---------|
-|Límites de destinatarios de la Directiva de correo no deseado saliente-límite externo por hora|400|500||
-|Límites de destinatarios de la Directiva de correo no deseado saliente: límite interno por hora|800|1000||
-|Límites de destinatarios de la Directiva de correo no deseado saliente: límite diario|800|1000||
+|Límites de destinatarios de la Directiva de correo no deseado saliente-límite externo por hora|500|400||
+|Límites de destinatarios de la Directiva de correo no deseado saliente: límite interno por hora|1000|800||
+|Límites de destinatarios de la Directiva de correo no deseado saliente: límite diario|1000|800||
 |Acción cuando un usuario supera los límites|Restringir al usuario el envío de correo|Restringir al usuario el envío de correo||
 
 ### <a name="eop-anti-malware-policy-settings"></a>Configuración de la Directiva de EOP contra malware
