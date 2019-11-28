@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Obtenga información sobre cómo identificar los distintos tipos de retenciones que se pueden colocar en un buzón de correo de Office 365. Estos tipos de retenciones incluyen la retención por juicio, las suspensiones de eDiscovery y las directivas de retención de Office 365. También puede determinar si se ha excluido a un usuario de una directiva de retención para toda la organización
-ms.openlocfilehash: 3319d65f7260a50cdcd38a36b6135a3cc42fb874
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 13e7bcec4d6ce7a04b069552b599e742c8777e8a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687844"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634017"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -175,32 +175,58 @@ Para obtener más información acerca de las etiquetas de retención, vea [Overv
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Administración de buzones de correo en suspensión de retardo
 
-Una vez que se quita cualquier tipo de retención de un buzón, el valor de la propiedad de buzón *DelayHoldApplied* se establece en **true**. Esto ocurre la próxima vez que el Asistente para carpeta administrada procesa el buzón y detecta que se ha quitado una retención. Esto se denomina *retenciones* y significa que la eliminación real de la retención se retrasa durante 30 días para impedir que los datos se eliminen (purguen) de forma permanente del buzón. Esto proporciona a los administradores una oportunidad para buscar o recuperar los elementos del buzón que se purgarán después de que se quite la retención. Cuando se coloca una retención en el buzón, el buzón sigue considerándose en espera durante un período de tiempo ilimitado, como si el buzón estuviera en retención por juicio. Transcurrido el plazo de 30 días, la retención en espera expira y Office 365 intentará quitar automáticamente la retención retrasada (estableciendo la propiedad *DelayHoldApplied* en **false**) para que se elimine la retención. Después de la propiedad *DelayHoldApplied* en **false**, los elementos marcados para su eliminación se purgan la próxima vez que el Asistente para carpetas administradas procesa el buzón de correo.
+Una vez que se quita cualquier tipo de retención de un buzón, se aplica una *suspensión de retraso* . Esto significa que la eliminación real de la retención se retrasa durante 30 días para impedir que los datos se eliminen de forma permanente (purga) del buzón de correo. Esto proporciona a los administradores una oportunidad para buscar o recuperar los elementos del buzón que se purgarán después de que se quite la retención. Se coloca una retención retrasada en un buzón la próxima vez que el Asistente para carpeta administrada procesa el buzón y detecta que se ha quitado una retención. En concreto, se aplica una retención retrasada a un buzón de correo cuando el Asistente para carpeta administrada define una de las siguientes propiedades de buzón en **true**:
 
-Para ver el valor de la propiedad *DelayHoldApplied* de un buzón, ejecute el siguiente comando en Exchange Online PowerShell.
+- **DelayHoldApplied:** Esta propiedad se aplica al contenido relacionado con el correo electrónico (generado por personas que usan Outlook y Outlook en la web) que se almacena en el buzón de correo de un usuario.
+
+- **DelayReleaseHoldApplied:** Esta propiedad se aplica a contenido basado en la nube (generado por aplicaciones que no son de Outlook, como Microsoft Teams, Microsoft Forms y Microsoft Yammer) que se almacena en el buzón de un usuario. Los datos de nube generados por una aplicación de Microsoft se almacenan normalmente en una carpeta oculta en el buzón de un usuario.
+ 
+ Cuando se coloca una retención en el buzón de correo (cuando cualquiera de las propiedades anteriores se establece en **true**), el buzón sigue considerándose en espera durante una duración de retención ilimitada, como si el buzón estuviera en retención por juicio. Transcurrido el plazo de 30 días, la retención en espera expira y Office 365 intentará quitar automáticamente la retención retrasada (estableciendo la propiedad DelayHoldApplied o DelayReleaseHoldApplied en **false**) para que se elimine la retención. Una vez que cualquiera de estas propiedades se establece en **false**, los elementos correspondientes marcados para la eliminación se purgan la próxima vez que el Asistente para carpetas administradas procesa el buzón de correo.
+
+Para ver los valores de las propiedades DelayHoldApplied y DelayReleaseHoldApplied de un buzón de correo, ejecute el siguiente comando en Exchange Online PowerShell.
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL *HoldApplied*
 ```
 
-Para quitar la retención por retraso antes de que expire, puede ejecutar el siguiente comando en Exchange Online PowerShell: 
+Para quitar la retención por retraso antes de que expire, puede ejecutar uno (o ambos) los siguientes comandos en Exchange Online PowerShell, en función de la propiedad que desee cambiar: 
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Debe tener asignado el rol retención legal en Exchange Online para usar el parámetro *RemoveDelayHoldApplied* 
+O bien
+ 
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
 
-Para quitar la retención retrasada de un buzón inactivo, ejecute el siguiente comando en Exchange Online PowerShell:
+Debe tener asignado el rol retención legal en Exchange Online para usar los parámetros *RemoveDelayHoldApplied* o *RemoveDelayReleaseHoldApplied* . 
+
+Para quitar la retención retrasada en un buzón inactivo, ejecute uno de los siguientes comandos en Exchange Online PowerShell:
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
+O bien
+
+```powershell
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
+```
+
 > [!TIP]
 > La mejor forma de especificar un buzón inactivo en el comando anterior es usar su nombre distintivo o el valor de GUID de Exchange. El uso de uno de estos valores ayuda a impedir que se especifique accidentalmente el buzón equivocado. 
 
-## <a name="next-steps"></a>Pasos siguientes
+Para obtener más información acerca del uso de estos parámetros para administrar suspensiones de retardo, consulte [set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+
+Tenga en cuenta lo siguiente cuando administre un buzón de correo en espera de retraso:
+
+- Si la propiedad DelayHoldApplied o DelayReleaseHoldApplied se establece en **true** y se elimina un buzón (o la cuenta de usuario de Office 365 correspondiente), el buzón se convierte en un buzón inactivo. Esto se debe a que un buzón de correo se considera en espera si alguna de las propiedades se establece en **true**y la eliminación de un buzón de correo en retención da como resultado un buzón inactivo. Para eliminar un buzón y no convertirlo en un buzón inactivo, tiene que establecer ambas propiedades en **false**.
+
+- Como se indicó anteriormente, un buzón se considera en espera durante una duración de retención ilimitada si la propiedad DelayHoldApplied o DelayReleaseHoldApplied está establecida en **true**. Sin embargo, esto no significa que se conserve *todo* el contenido del buzón. Depende del valor que se establezca en cada propiedad. Por ejemplo, supongamos que ambas propiedades se establecen en **true** porque se quitan las suspensiones del buzón de correo. A continuación, quita solo la retención retrasada que se aplica a los datos que no son de la nube de Outlook (mediante el parámetro *RemoveDelayReleaseHoldApplied* ). La próxima vez que el Asistente para carpetas administradas procese el buzón, se purgarán los elementos que no sean de Outlook marcados para su eliminación. No se purgarán todos los elementos de Outlook marcados para su eliminación porque la propiedad DelayHoldApplied sigue establecida en **true**. Lo contrario también será true: si DelayHoldApplied se establece en **false** y DelayReleaseHoldApplied se establece en **true**, se purgarán sólo los elementos de Outlook marcados para su eliminación.
+
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de identificar las suspensiones que se aplican a un buzón de correo, puede realizar tareas como cambiar la duración de la retención, quitar temporalmente o permanentemente la retención o excluir un buzón inactivo de una directiva de retención de Office 365. Para obtener más información acerca de cómo realizar tareas relacionadas con las suspensiones, consulte uno de los siguientes temas:
 

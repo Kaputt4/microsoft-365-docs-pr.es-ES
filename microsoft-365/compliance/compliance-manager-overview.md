@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615620"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633659"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -51,7 +51,7 @@ Los [grupos](working-with-compliance-manager.md#groups) son contenedores que per
 
 ## <a name="assessments"></a>Evaluaciones
 
-Las [evaluaciones](working-with-compliance-manager.md#assessments) son contenedores que le permiten organizar los controles en función de las responsabilidades compartidas entre Microsoft y su organización para evaluar los riesgos de seguridad y cumplimiento de los servicios en la nube. Las evaluaciones le ayudan a implementar protecciones de protección de datos especificadas por un estándar de cumplimiento normativo, normas o leyes de protección de datos aplicables. Le ayudarán a distinguir la postura de protección y cumplimiento de datos con respecto al estándar de la industria seleccionado para el servicio de nube de Microsoft seleccionado. Las evaluaciones se completan mediante la implementación de controles incluidos en la evaluación que se asignan a un estándar de certificación.
+Las [evaluaciones](working-with-compliance-manager.md#assessments) son contenedores que permiten organizar los controles para las responsabilidades que comparten Microsoft y su organización para evaluar los riesgos de seguridad y cumplimiento de los servicios en la nube. Las evaluaciones le ayudan a implementar protecciones de protección de datos especificadas por un estándar de cumplimiento normativo, normas o leyes de protección de datos aplicables. Le ayudarán a distinguir la postura de protección y cumplimiento de datos con respecto al estándar de la industria seleccionado para el servicio de nube de Microsoft seleccionado. Las evaluaciones se completan mediante la implementación de controles incluidos en la evaluación que se asignan a un estándar de certificación.
 
 De forma predeterminada, el administrador de cumplimiento crea las siguientes evaluaciones para su organización:
 
@@ -107,7 +107,7 @@ Los [elementos de acciones](working-with-compliance-manager.md#controls-and-acti
 
 Los usuarios de su organización pueden usar el administrador de cumplimiento para revisar los controles administrados por el cliente de todas las evaluaciones para las que están asignados. Cuando un usuario inicia sesión en Administrador de cumplimiento y abre el panel **Elementos de acción**, ve una lista de los que tiene asignados. Según el rol de Administrador de cumplimiento asignado al usuario, este podrá proporcionar detalles sobre la prueba o la implementación, actualizar el estado o asignar elementos de acción.
 
-Los controles de certificación suelen ser implementados por una persona y comprobados por otro. Por ejemplo, después de que se completen los elementos de acción inicialmente asignados a una persona para su implementación, los elementos de acción se asignan a la siguiente persona para probar y cargar las pruebas. Cualquier usuario con permisos suficientes para las asignaciones de control puede asignar y reasignar elementos de acción. Esto permite la administración central de las asignaciones de control y el enrutamiento descentralizado de elementos de acción entre implementadores y evaluadores.
+Los controles de certificación suelen ser implementados por una persona y comprobados por otro. Por ejemplo, después de que se completen los elementos de acción inicialmente asignados a una persona para su implementación, esos elementos de acción se asignan a la siguiente persona para probar y cargar las pruebas. Cualquier usuario con permisos suficientes para las asignaciones de control puede asignar y reasignar elementos de acción. Esto permite la administración central de las asignaciones de control y el enrutamiento descentralizado de elementos de acción entre implementadores y evaluadores.
 
 ## <a name="permissions"></a>Permisos
 
@@ -118,9 +118,9 @@ El administrador del portal del administrador de cumplimiento puede establecer p
 1. En el menú desplegable **más** arriba, seleccione **Administrador**y, a continuación, **configuración**.
 2. Desde aquí, seleccione el rol que desea asignar y, a continuación, agregue el empleado que desee asignar a ese rol. A continuación, los usuarios podrán realizar determinadas acciones.
 
-Además, los usuarios a los que se ha asignado el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) tienen permiso de solo lectura para obtener acceso al administrador de cumplimiento; sin embargo, no pueden modificar los datos ni realizar ninguna acción dentro del administrador de cumplimiento.
+Además, los usuarios a los que se ha asignado el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) tienen permiso de solo lectura para obtener acceso al administrador de cumplimiento. Sin embargo, no pueden modificar datos ni realizar ninguna acción dentro del administrador de cumplimiento.
 
-Tenga en cuenta que ya no hay un rol predeterminado **acceso de invitado** Se debe asignar un rol a cada usuario para que tenga acceso y trabaje en administrador de cumplimiento
+Ya no existe un rol de **acceso de invitado** predeterminado. Se debe asignar un rol a cada usuario para que tenga acceso y trabaje en administrador de cumplimiento
   
 ## <a name="manage-evidence"></a>Administrar pruebas
 

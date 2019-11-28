@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
-ms.openlocfilehash: 3765e8236b319eaadc543782f2254aefaa8914a2
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38687638"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633669"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)
 
-El cumplimiento de la comunicación forma parte de la nueva solución de riesgo de Insider que se establece en Microsoft 365, que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de la organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams o las comunicaciones de terceros de su organización y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
+El cumplimiento de la comunicación forma parte de la nueva solución de riesgo de Insider que se establece en Microsoft 365, que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de la organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams o las comunicaciones de terceros de la organización, y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
 
 Las directivas de cumplimiento de comunicaciones de Microsoft 365 ayudan a superar muchos de los retos modernos asociados con el cumplimiento y las comunicaciones internas y externas, entre los que se incluyen:
 
 - Análisis de tipos crecientes de canales de comunicación
 - El volumen creciente de los datos de los mensajes
-- Cumplimiento normativo & el riesgo de las multas
+- Cumplimiento normativo y riesgo de multas
 
 En algunas organizaciones, puede haber una separación de tareas entre el soporte de ti y el grupo de administración de cumplimiento. Microsoft 365 admite la separación entre la configuración de cumplimiento de la comunicación y la configuración de directivas para el análisis de comunicaciones. Por ejemplo, el grupo de TI de una organización puede ser responsable de configurar los permisos de funciones y grupos para que admitan las directivas de cumplimiento de comunicaciones configuradas y administradas por el equipo de cumplimiento de la organización.
 
@@ -79,15 +79,15 @@ Los flujos de trabajo de corrección integrados permiten identificar rápidament
 - **Detección de duplicados exactos y Near**: además de analizar los términos exactos que coinciden con las directivas de cumplimiento de comunicación, Near duplicados los grupos de términos y mensajes que se asemejan de forma textual y que ayudan a acelerar el proceso de revisión.
 - **Nuevos filtros**: Investigue y solucione las alertas de directiva más rápidamente con filtros de mensaje para varios campos, incluidos el remitente, el destinatario, la fecha, los dominios y muchos más.
 - **Vistas de mensajes mejoradas**: las acciones de investigación y corrección ahora son más rápidas con las vistas de nuevos orígenes de mensajes, texto y anotaciones. Los datos adjuntos de mensajes ahora se pueden ver para proporcionar contexto completo cuando se toman acciones de corrección.
-- **Vista historial de usuarios**: vista histórica de todas las actividades de corrección de mensajes de usuario, como las notificaciones pasadas y las escalaciones de las coincidencias de directivas, ahora proporcione revisores con más contexto durante el proceso de flujo de trabajo de corrección. Las instancias de la primera vez o de repetición de las coincidencias de directivas para los usuarios ahora se archivan y se pueden ver fácilmente.
+- **Vista historial de usuarios**: vista histórica de todas las actividades de corrección de mensajes de usuario, como las notificaciones pasadas y las escalaciones de las coincidencias de directivas, ahora proporciona revisores con más contexto durante el proceso de flujo de trabajo de corrección. Las instancias de la primera vez o de repetición de las coincidencias de directivas para los usuarios ahora se archivan y se pueden ver fácilmente.
 
 ### <a name="actionable-insights"></a>Información que requiere acción
 
 Los nuevos paneles interactivos para alertas, coincidencias de directivas, acciones y tendencias le ayudan a ver rápidamente el estado de las alertas pendientes y resueltas en su organización.
 
-- **Alertas inteligentes proactivas**: las alertas de las coincidencias de directivas que requieren atención inmediata incluyen los paneles nuevos para los elementos pendientes ordenados por gravedad y la nueva notificación automática de correo electrónico enviada a los revisores designados.
+- **Alertas inteligentes proactivas**: las alertas de las coincidencias de directivas que requieren atención inmediata incluyen nuevos paneles para los elementos pendientes ordenados por gravedad y nuevas notificaciones de correo electrónico automáticas enviadas a los revisores designados.
 - **Paneles interactivos**: los nuevos paneles muestran coincidencias de directivas, acciones pendientes y resueltas, y tendencias de los usuarios y la Directiva.
-- **Compatibilidad con la auditoría**: se exporta fácilmente un registro completo de actividades de directivas y revisión desde el centro de cumplimiento de Microsoft 365 para ayudar a admitir solicitudes de revisión de auditoría.
+- **Compatibilidad con la auditoría**: un registro completo de las actividades de la Directiva y la revisión se exporta fácilmente desde el centro de cumplimiento de Microsoft 365 para ayudar a admitir solicitudes de revisión de auditoría.
 
 ## <a name="integration-with-microsoft-365-services"></a>Integración con los servicios de Microsoft 365
 
@@ -126,7 +126,7 @@ En este paso, se analizan más detalladamente los problemas detectados como coin
 - **Alertas**: cuando un mensaje coincide con una directiva de supervisión, se genera automáticamente una alerta. Para cada alerta, puede ver el estado, la gravedad, el tiempo detectado y, si se asigna un caso y su estado. Las nuevas alertas se muestran en la Página principal de cumplimiento de comunicaciones y en la página **alertas** y aparecen en orden de gravedad.
 - **Administración de problemas**: para cada alerta, puede emprender acciones de investigación para ayudar a corregir el problema detectado en el mensaje.
 - **Revisión del documento**: durante la investigación de un problema, puede usar varias vistas del mensaje para evaluar correctamente el problema detectado. Las vistas incluyen una vista de Resumen de conversación, de sólo texto, anotada y detallada de la conversación de comunicación.
-- **Revisión del historial de actividad**de los usuarios: ver el historial de las actividades de los mensajes de usuario y las acciones de corrección, como las notificaciones pasadas y las escalaciones de las coincidencias de directivas.
+- **Revisión del historial de actividad**de los usuarios: ver el historial de las actividades de los mensajes de usuario y las acciones de corrección, como las notificaciones y las escalaciones pasadas, para las coincidencias de directivas.
 - **Filters**: Use filtros como Sender, recipient, Date y sujeto para restringir rápidamente las alertas de mensaje que desea revisar.
 
 ### <a name="remediate"></a>Corrección

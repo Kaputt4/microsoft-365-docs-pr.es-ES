@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 1f233a6bc19f4a7afa495f49ad77e39e496c1dc5
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: bc702778fc135429067352cac824a31c0b60a406
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202171"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633639"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notas de la versión del administrador de cumplimiento (versión preliminar)
 
@@ -44,11 +44,11 @@ En las siguientes secciones se abordan los problemas conocidos que deben resolve
 
 ### <a name="compliance-score"></a>Puntuación de cumplimiento
 
-- Para los elementos de acción marcados como **no en el ámbito**, la puntuación asignada al elemento de acción no se excluye del cálculo de puntuación de cumplimiento. Los elementos de acción marcados **sin ámbito** no aumentan la puntuación de cumplimiento.
+- Para los elementos de acción marcados como **no en el ámbito**, la puntuación asignada al elemento de acción no se excluye del cálculo de la puntuación de cumplimiento. Los elementos de acción marcados **sin ámbito** no aumentan la puntuación de cumplimiento.
 
 ### <a name="secure-score"></a>Puntuación segura
 
-- Los resultados de la puntuación segura no están disponibles para algunos elementos de acciones en determinadas suscripciones de Microsoft 365 y Office 365. **No se pudo detectar** el resultado de la puntuación segura en estos casos.
+- Los resultados de puntuación seguros no están disponibles para algunos elementos de acciones en determinadas suscripciones de Microsoft 365 y Office 365. **No se pudo detectar** el resultado de la puntuación segura en estos casos.
 - A veces, se devuelven resultados de puntuación seguros para las directivas y los elementos de acción correspondientes no completados.
 - Para los nuevos inquilinos, se activan automáticamente las actualizaciones de puntuación seguras para todas las acciones. El administrador global puede establecer el cambio de actualización continua de puntuación segura en desactivado, lo que desactiva las actualizaciones para todas las acciones.
   - **Nota**: cuando las organizaciones implementan por primera vez Microsoft 365 u Office 365, la puntuación segura tardará aproximadamente siete días en completarse para recopilar los datos y factorizarlos en su puntuación. Durante este tiempo, la configuración de la opción de actualización continua de puntuación segura como **desactivada** y la configuración manual de una acción para **implementada** contará esa acción hacia su puntuación. Después de los siete días iniciales, al desactivar la actualización continua de la actualización segura, se habilitará la supervisión continua a partir de ese momento.
@@ -62,7 +62,7 @@ En las siguientes secciones se abordan los problemas conocidos que deben resolve
 
 ### <a name="customization"></a>Personalización
 
-- Agregar controles personalizados permite agregar un control nuevo a una familia de controles existente, pero no permite agregar una nueva familia de controles.
+- Agregar controles personalizados permite agregar un control nuevo a una familia de controles existente, pero no le permite agregar una nueva familia de controles.
 - Esta versión no admite la vinculación de elementos de acción ni la adición de elementos o controles de acciones a una evaluación.
 - Si crea una acción personalizada, no podrá editarla ni eliminarla.
 
@@ -73,8 +73,8 @@ En las siguientes secciones se abordan los problemas conocidos que deben resolve
 ### <a name="templates"></a>Plantillas
 
 - Al crear una plantilla, debe incluir las dimensiones del **producto** y la **certificación** para asegurarse de que la plantilla se muestra en la puntuación de cumplimiento.
-- Las plantillas archivadas son editables y no se pueden editar.
-- Las plantillas bloqueadas permiten la creación de evaluaciones cuando no deberían. Bloquear una plantilla tiene como objetivo evitar que se use para crear evaluaciones.
+- Las plantillas archivadas son editables y no deben ser modificables.
+- Las plantillas bloqueadas permiten la creación de evaluaciones cuando no lo hacen. Bloquear una plantilla tiene como objetivo evitar que se use para crear evaluaciones.
 
 ### <a name="export"></a>Exportar
 
@@ -93,4 +93,4 @@ En las siguientes secciones se abordan los problemas conocidos que deben resolve
  
 ### <a name="language-support"></a>Compatibilidad con idiomas
 
-- No todos los idiomas son compatibles con todas las páginas Web. Si el idioma local no es compatible, consulte en inglés (Estados Unidos).
+- Todos los idiomas no son compatibles con todas las páginas Web. Si el idioma local no es compatible, consulte en inglés (Estados Unidos).

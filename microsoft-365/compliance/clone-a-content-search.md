@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: Use el script de Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en el centro de cumplimiento de Office 365 o Microsoft 365. Cuando se clona una búsqueda, se crea una nueva búsqueda (con un nombre nuevo) que contiene las mismas propiedades que la búsqueda original. A continuación, puede editar la nueva búsqueda (cambiando la palabra clave consulta o el intervalo de fechas) y, a continuación, ejecutarla.
-ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: Use el script de Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en el centro de cumplimiento de Office 365 o Microsoft 365. Cuando se clona una búsqueda, se crea una nueva búsqueda (con un nombre nuevo) que contiene las mismas propiedades que la búsqueda original. A continuación, puede editar la nueva búsqueda cambiando la consulta de palabras clave o el intervalo de fechas y, a continuación, ejecutarla.
+ms.openlocfilehash: 87d9c75dc0a2b58b95ad6f2aaeb6c55f178e515f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687833"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633849"
 ---
 # <a name="clone-a-content-search"></a>Clonar una búsqueda de contenido
 
-La creación de una búsqueda de contenido en el centro de cumplimiento en Office 365 o Microsoft 365 que realiza búsquedas en muchos buzones o en sitios de SharePoint y OneDrive para la empresa puede tardar unos minutos. La especificación de los sitios que se van a buscar también puede provocar errores si se escribe Inde una dirección URL. Para evitar estos problemas, puede usar el script de Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente. Cuando se clona una búsqueda, se crea una nueva búsqueda (con un nombre diferente) que contiene las mismas propiedades (como las ubicaciones de contenido y la consulta de búsqueda) como la búsqueda original. A continuación, puede editar la nueva búsqueda (cambiando la palabra clave consulta o el intervalo de fechas) y ejecutarla.
+La creación de una búsqueda de contenido en el centro de cumplimiento en Office 365 o Microsoft 365 que realiza búsquedas en muchos buzones o en sitios de SharePoint y OneDrive para la empresa puede tardar unos minutos. La especificación de los sitios que se van a buscar también puede provocar errores si se escribe Inde una dirección URL. Para evitar estos problemas, puede usar el script de Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente. Al clonar una búsqueda, se crea una nueva búsqueda (con un nombre diferente) que contiene las mismas propiedades (como las ubicaciones de contenido y la consulta de búsqueda) como la búsqueda original. A continuación, puede editar la nueva búsqueda cambiando la consulta de palabras clave o el intervalo de fechas y ejecutarla.
   
 ¿Por qué clonar búsquedas de contenido?
   
@@ -30,7 +30,7 @@ La creación de una búsqueda de contenido en el centro de cumplimiento en Offic
     
 - Para evitar tener que volver a especificar un gran número de ubicaciones de contenido al crear una nueva búsqueda.
     
-- Para reducir el tamaño de los resultados de la búsqueda; por ejemplo, si tiene una búsqueda que devuelve demasiados resultados para exportar, puede clonar la búsqueda y, a continuación, agregar una condición de búsqueda basada en un intervalo de fechas para reducir el número de resultados de búsqueda.
+- Para reducir el tamaño de los resultados de la búsqueda. Por ejemplo, si tiene una búsqueda que devuelve demasiados resultados para exportar, puede clonar la búsqueda y, a continuación, agregar una condición de búsqueda basada en un intervalo de fechas para reducir el número de resultados de búsqueda.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -132,14 +132,14 @@ Para clonar una búsqueda:
     
     - Nombre de la nueva búsqueda.
     
-    El script crea la nueva búsqueda de contenido, pero no la inicia. Esto le da la oportunidad de editar y ejecutar la búsqueda en el paso siguiente. Para ver las propiedades de la nueva búsqueda, ejecute el cmdlet **Get-ComplianceSearch** o vaya a la página de **búsqueda de contenido** o de **exhibición** de documentos electrónicos en el centro de cumplimiento, en función de si la nueva búsqueda está asociada a un caso o no. 
+    El script crea la nueva búsqueda de contenido, pero no la inicia. Esto le da la oportunidad de editar y ejecutar la búsqueda en el paso siguiente. Para ver las propiedades de la nueva búsqueda, ejecute el cmdlet **Get-ComplianceSearch** o vaya a la página de **búsqueda de contenido** o de **exhibición** de documentos electrónicos en el centro de cumplimiento, en función de si la nueva búsqueda está asociada a un caso. 
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Paso 2: editar y ejecutar la búsqueda clonada en el centro de cumplimiento
 
-Una vez que haya ejecutado el script para clonar una búsqueda de contenido existente, el siguiente paso consiste en ir al centro de cumplimiento para editar y ejecutar la nueva búsqueda. Como se mencionó anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o quitando condiciones de búsqueda. Para obtener más información, vea:
+Después de ejecutar el script para clonar una búsqueda de contenido existente, el siguiente paso consiste en ir al centro de cumplimiento para editar y ejecutar la nueva búsqueda. Como se mencionó anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o quitando condiciones de búsqueda. Para obtener más información, vea:
   
 - [Búsqueda de contenido de Office 365](content-search.md)
     
-- [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md)
+- [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
     
 - [casos de eDiscovery](ediscovery-cases.md)

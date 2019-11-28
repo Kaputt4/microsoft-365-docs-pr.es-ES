@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Investigue y corrija las alertas de cumplimiento de comunicaciones en Microsoft 365.
-ms.openlocfilehash: 8aaf74ceafc737487bd97bb7c71b26fc139aacf0
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 336ce22813b60a4543941b18e11acf525570bb26
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38687642"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633689"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones (vista previa)
 
@@ -31,7 +31,7 @@ Una vez que haya configurado las directivas de cumplimiento de comunicaciones, e
 
 El primer paso para investigar los problemas detectados por las directivas es revisar las alertas generadas en el centro de cumplimiento de Microsoft 365. Hay varias áreas en el centro de cumplimiento para ayudarle a investigar rápidamente las alertas, en función de cómo prefiera ver la agrupación de alertas:
 
-- **Página de inicio de cumplimiento de comunicaciones**: cuando [https://compliance.microsoft.com](https://compliance.microsoft.com) inicie sesión con credenciales para una cuenta de administrador en la organización de Microsoft 365, seleccione**información general sobre** **cumplimiento** > de comunicaciones para mostrar la Página principal de cumplimiento de la comunicación. Aquí verá:
+- **Página de inicio de cumplimiento de comunicaciones**: cuando inicie [https://compliance.microsoft.com](https://compliance.microsoft.com) sesión en uso de credenciales para una cuenta de administrador en la organización de Microsoft 365, seleccione**información general sobre** **cumplimiento** > de comunicaciones para mostrar la Página principal de cumplimiento de la comunicación. Aquí verá:
     - Alertas que deben revisarse en la lista de gravedad alta a baja. Seleccione una alerta para iniciar la página Detalles de alerta y para iniciar acciones de corrección.
     - Coincidencias de directivas recientes ordenadas por nombre de directiva.
     - Elementos resueltos enumerados por nombre de directiva.
@@ -112,7 +112,7 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
     - **Resolve**: al seleccionar el control **resolver** , el mensaje se quita inmediatamente de la cola de **alertas pendientes** y no se pueden realizar más acciones en el mensaje. Al seleccionar **resolver**, básicamente ha cerrado la alerta sin más clasificación y no se puede volver a abrir para acciones adicionales. Todos los mensajes resueltos se muestran en la pestaña **resueltos** .
     - **Falso positivo**: siempre puede resolver un mensaje como falso positivo en cualquier momento durante el flujo de trabajo de revisión de mensajes. No se puede volver a abrir el mensaje y se muestran todos los mensajes falsos positivos en la ficha **resueltos** .
     - **Etiqueta como**: etiquete el mensaje como *compatible*, *no compatible*o tan *dudoso* como relacionado con las directivas y los estándares de su organización. Agregar etiquetas y comentarios de etiquetado puede ayudarle a microfiltrar las alertas de las directivas para las escalaciones o como parte de otros procesos internos de revisión. Una vez finalizado el etiquetado, también puede optar por resolver el mensaje para moverlo de la cola de revisión pendiente.
-    - **Notify**: puede usar el control **Notify** para asignar una plantilla de notificación personalizada a la alerta y para enviar un aviso de advertencia al usuario. Elija la plantilla de aviso adecuada y seleccione **Enviar** a correo electrónico un aviso al empleado que envió el mensaje y para resolver el problema.
+    - **Notify**: puede usar el control **Notify** para asignar una plantilla de notificación personalizada a la alerta y para enviar un aviso de advertencia al usuario. Elija la plantilla de aviso adecuada y seleccione **Enviar** a correo electrónico un recordatorio para el empleado que envió el mensaje y para resolver el problema.
     - **Escalar**: con el control **remitir** a, puede elegir quién más de la organización debe revisar el mensaje. Elija de una lista de revisores configurados para enviar una notificación por correo electrónico solicitando una revisión adicional de la alerta de mensaje. El revisor seleccionado puede usar un vínculo en la notificación de correo electrónico para ir directamente a los elementos que se han remitido a ellos para que los revisen.
 
 4. **Determine si los detalles del mensaje deben archivarse fuera del cumplimiento de la comunicación**: los detalles del mensaje se pueden exportar o descargar si necesita archivar los mensajes en una solución de almacenamiento independiente. Al seleccionar el control de **descarga** , se agregan automáticamente los mensajes seleccionados a un. Archivo ZIP que puede guardarse en el almacenamiento fuera de Microsoft 365.

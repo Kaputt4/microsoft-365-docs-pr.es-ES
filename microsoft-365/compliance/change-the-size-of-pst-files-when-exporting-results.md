@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Puede cambiar el tamaño predeterminado de los archivos PST que se descargan en el equipo cuando exporta resultados de la búsqueda de exhibición de documentos electrónicos.
-ms.openlocfilehash: b3bba45ce336b143ed948db384673f0a1a5a456f
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 3a302164a1de6d383e2e120dd7a849e692e622eb
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687819"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634007"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Cambiar el tamaño de los archivos PST al exportar los resultados de la búsqueda de eDiscovery
 
 Cuando usa la herramienta de exportación de exhibición de documentos electrónicos de Office 365 para exportar los resultados de correo electrónico de una búsqueda de exhibición de documentos electrónicos de las diferentes herramientas de eDiscovery de Microsoft, el tamaño predeterminado de un archivo PST que se puede exportar es 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Un motivo para hacerlo es que un archivo PST puede encajar en un medio extraíble, un DVD, un disco compacto o una unidad USB. 
   
 > [!NOTE]
->  La herramienta de exportación de exhibición de documentos electrónicos de Office 365 se usa para exportar los resultados de la búsqueda cuando se usa la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento, la exhibición de documentos electrónicos local en Exchange Online y el centro de exhibición de documentos electrónicos en SharePoint Online.
+> La herramienta de exportación de exhibición de documentos electrónicos de Office 365 se usa para exportar los resultados de la búsqueda cuando se usa la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento, la exhibición de documentos electrónicos local en Exchange Online y el centro de exhibición de documentos electrónicos en SharePoint Online.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Crear una configuración del registro para cambiar el tamaño de los archivos PST al exportar los resultados de la búsqueda de exhibición de documentos electrónicos
 
@@ -43,7 +43,7 @@ Realice el procedimiento siguiente en el equipo que va a usar para exportar los 
     
     |**Tamaño en GB (aprox.)**|**Tamaño en bytes**|
     |:-----|:-----|
-    |.7 GB (700 MB)  <br/> |751619277  <br/> |
+    |0,7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
@@ -68,7 +68,7 @@ El tamaño predeterminado de 10 GB se basaba en los comentarios de los clientes;
   
  **¿Debo aumentar o disminuir el tamaño predeterminado de los archivos PST?**
   
-Los clientes tienden a reducir el límite de tamaño para que los resultados de la búsqueda quepan en medios extraíbles que pueden enviar físicamente otras ubicaciones de la organización. No se recomienda aumentar el tamaño predeterminado, ya que los archivos PST con más de 10 GB podrían tener problemas de daños.
+Los clientes tienden a reducir el límite de tamaño para que los resultados de la búsqueda quepan en medios extraíbles que se pueden enviar físicamente a otras ubicaciones de la organización. No se recomienda aumentar el tamaño predeterminado, ya que los archivos PST con más de 10 GB podrían tener problemas de daños.
   
  **¿En qué equipo tengo que hacerlo?**
   

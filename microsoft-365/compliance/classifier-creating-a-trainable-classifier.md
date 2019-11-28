@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use clasificadores que se puedan entrenar cuando uno de los clasificadores de cuadros listos para usar no satisfaga sus necesidades. Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este tema se muestra cómo crear un clasificador personalizado.
-ms.openlocfilehash: 1d62b70d821593ff7d8d3889c0da0e0b5cc9809f
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38691083"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633987"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creación de un clasificador capacitado (versión preliminar)
 
@@ -38,7 +38,7 @@ Cuando quiera que un clasificador capacitado identifique de forma independiente 
 
 ## <a name="testing-content"></a>Pruebas de contenido
 
-Una vez que el clasificador que se puede entrenar haya procesado suficientes ejemplos positivos para crear un modelo de predicción, debe probar las predicciones que realiza para ver si el clasificador puede distinguir correctamente entre los elementos que coinciden con la categoría y los que no. Para ello, debe alimentarse en un conjunto de contenido seleccionado, con suerte más grande, que consista en muestras que deben incluirse en la categoría y en ejemplos que no lo hagan. Una vez que los procese, irá a los resultados manualmente y comprobará si cada predicción es correcta, incorrecta o no está seguro. El clasificador capacitado usa estos comentarios para mejorar su modelo de predicción.
+Una vez que el clasificador que se puede entrenar haya procesado suficientes ejemplos positivos para crear un modelo de predicción, debe probar las predicciones que realiza para ver si el clasificador puede distinguir correctamente entre los elementos que coinciden con la categoría y los elementos que no lo hacen. Para ello, debe alimentarse en un conjunto de contenido seleccionado, con suerte más grande, que consista en muestras que deben incluirse en la categoría y en ejemplos que no lo hagan. Una vez que los procese, revise manualmente los resultados y compruebe si cada predicción es correcta, incorrecta o no está seguro. El clasificador capacitado usa estos comentarios para mejorar su modelo de predicción.
 
 > [!TIP]
 > Para obtener los mejores resultados, tenga 10.000 elementos en su conjunto de muestras de prueba con una distribución equitativa de las coincidencias negativas y positivas.
@@ -92,7 +92,7 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 
 13. Elija `Add items to test`.
 
-14. Escriba el sitio de SharePoint Online exacto, la biblioteca y la dirección URL de la carpeta para el sitio de contenido de prueba del paso 12. Elija `Add`.
+14. Escriba la dirección URL exacta del sitio de SharePoint Online, la biblioteca y la carpeta para el sitio de contenido de prueba del paso 12. Elija `Add`.
 
 15. Para finalizar el asistente, `Done`elija. El clasificador que se pueda entrenar tardará hasta una hora en procesar los archivos de prueba.
 

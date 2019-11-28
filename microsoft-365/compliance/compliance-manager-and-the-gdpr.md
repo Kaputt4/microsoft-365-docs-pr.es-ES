@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0d2edb2f7362fa8e8bea6ae82c417f61072bccff
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092041"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633619"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Administrador de cumplimiento de Microsoft y el RGPD
 
@@ -48,7 +48,7 @@ Para buscar una cuenta de usuario:
 
 ## <a name="export-a-report-of-account-data-history"></a>Exportar un informe de historial de datos de cuenta
 
-Para cada cuenta de usuario identificada, puede generar un informe de dependencias vinculadas a esta cuenta. Esta información le permite reasignar elementos de acción abiertos o garantizar el acceso a pruebas cargadas anteriormente.
+Para cada cuenta de usuario identificada, puede generar un informe de dependencias vinculadas a la cuenta. Esta información le permite reasignar elementos de acción abiertos o garantizar el acceso a pruebas cargadas anteriormente.
   
  Para generar y exportar un informe:
   
@@ -69,6 +69,6 @@ Para eliminar el elemento de acción de la cuenta de usuario y el historial de c
   
 1. Seleccione **eliminar**.
 
-    Se muestra un cuadro de diálogo de confirmación, "*esto quita todas las asignaciones de elementos de acción de control y el historial de carga de documentos para el usuario seleccionado. Esta acción es permanente. ¿Está seguro de que desea continuar?*"
+    Se muestra un cuadro de diálogo de confirmación: "*esto quita todas las asignaciones de elementos de acción de control y el historial de carga de documentos para el usuario seleccionado. Esta acción es permanente. ¿Está seguro de que desea continuar?*"
 
 2. Para continuar, seleccione **Aceptar**; en caso contrario, seleccione **Cancelar**.

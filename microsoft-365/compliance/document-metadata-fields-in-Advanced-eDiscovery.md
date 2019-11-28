@@ -14,16 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc198bd5aa042cad2aadbe35ae4f19f66effe2bf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091730"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633589"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos del documento en eDiscovery avanzado
 
-En la siguiente tabla se enumeran los campos de metadatos de los documentos en un conjunto de revisión en un caso en eDiscovery avanzado. La tabla indica el nombre del campo de metadatos, si el campo se puede buscar al ejecutar una consulta en un conjunto de revisiones, si el campo está presente cuando se ven los metadatos de un documento seleccionado en un conjunto de revisiones y si el campo se incluye cuando documentos a re exportó.
+En la siguiente tabla se enumeran los campos de metadatos de los documentos en un conjunto de revisión en un caso en eDiscovery avanzado. La tabla proporciona la siguiente información:
+
+- Nombre del campo de metadatos (en la columna **nombre de campo** ).
+
+- Nombre de la propiedad que se puede buscar al ejecutar una consulta de [conjunto de revisiones](review-set-search.md) (en la columna **nombre de campo de búsqueda** ). Una celda en blanco significa que no se puede buscar el campo en una consulta de conjunto de revisiones.
+
+- Nombre del campo de metadatos que se incluye al exportar los documentos (en la columna **nombre de campo exportado** ).  Una celda en blanco indica que el campo de metadatos no se incluye con los metadatos exportados.
+
+- Nombre del campo de metadatos que se muestra al ver los metadatos de archivo de un documento seleccionado en un conjunto de revisiones (en la columna **nombre de campo de visualización** ). Una celda en blanco indica que el campo de metadatos no se incluye al ver los metadatos de archivo de un documento.
+
+- Descripción del campo meta data (en la **columna Descripción**).
 
 | Nombre del campo | Nombre de campo de búsqueda | Nombre del campo exportado | Mostrar nombre de campo | Descripción |
 | :- |  :- |  :- |  :- |  :- |
@@ -31,11 +41,11 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 | Nombres de datos adjuntos | AttachmentNames | Attachment_Names | Nombres de datos adjuntos | Lista de nombres de datos adjuntos. |
 | Puntuación de privilegios de cliente abogado | AttorneyClientPrivilegeScore |  | Puntuación de privilegios de cliente abogado | Abogado-puntuación del contenido del modelo de privilegio de cliente. |
 | Autor | Autor | Doc_authors | Autor | Autor de los metadatos del documento. |
-| BCC | Bcc | Email_bcc | BCC | Campo Cco para para tipos de mensaje.  El formato **es \<DisplayName SMTPAddress>**. |
-| CC | Cc | Email_cc | CC | Campo CC para para tipos de mensaje.  El formato **es \<DisplayName SMTPAddress>**. |
+| BCC | Bcc | Email_bcc | BCC | Campo Cco para tipos de mensaje.  El formato **es \<DisplayName SMTPAddress>**. |
+| CC | Cc | Email_cc | CC | Campo CC para los tipos de mensaje.  El formato **es \<DisplayName SMTPAddress>**. |
 | Etiquetas de cumplimiento | ComplianceLabels | Compliance_labels | Etiquetas de cumplimiento | Etiquetas de cumplimiento aplicadas en Office 365. |
 | Ruta de acceso compuesta | CompoundPath | Compound_path | Ruta de acceso compuesta | Ruta de acceso legible que describe el origen del elemento. |
-| Content | Content |  |  | Texto extraído del elemento. |
+| Contenido | Contenido |  |  | Texto extraído del elemento. |
 | Cuerpo de la conversación | Cuerpo de la conversación |  | Cuerpo de la conversación | Cuerpo de la conversación del elemento. |
 | Tema de conversación | Tema de conversación |  | Tema de conversación | Tema de conversación del elemento. |
 | IDENTIFICADOR de conversación | ConversationId | Conversation_ID | IDENTIFICADOR de conversación | Identificador de la conversación del mensaje. |
@@ -72,10 +82,10 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 | ExtractedTextLength |  | Extracted_text_length |  | Número de caracteres en el texto extraído. |
 | Puntuación de la relevancia de familia problema de caso 1 |  | Family_relevance_score_case_issue_1 |  | Puntuación de relevancia de familia el problema 1 de la relevancia. |
 | FamilyDuplicateSet |  | Family_duplicate_set |  | Identificador numérico de las familias que son duplicados exactos entre sí (el mismo contenido y todos los mismos datos adjuntos). |
-| IDENTIFICADOR de familia | FamilyId | Family_ID | IDENTIFICADOR de familia | ID de familia agrupa todos los elementos; para el correo electrónico, incluye el mensaje y todos los datos adjuntos; en el caso de los documentos, incluye el documento y los elementos incrustados. |
+| IDENTIFICADOR de familia | FamilyId | Family_ID | IDENTIFICADOR de familia | ID de familia agrupa todos los elementos; para el correo electrónico, incluye el mensaje y todos los datos adjuntos; en el caso de los documentos, esto incluye el documento y los elementos incrustados. |
 | Tamaño de la familia |  | Family_size | Tamaño de la familia | Número de documentos de la familia. |
 | Número de caso 1 de puntuación de relevancia de archivo |  | File_relevance_score_case_issue_1 |  | Puntuación de relevancia de archivo caso del problema 1 de la relevancia. |
-| Clase File | FileClass | File_class | Clase File | Para contenido de SharePoint y OneDrive: **documento**; para contenido de Exchange: **correo electrónico**o **datos adjuntos**. |
+| Clase File | FileClass | File_class | Clase File | Para contenido de SharePoint y OneDrive: **documento**; para contenido de Exchange: * * correo electrónico o **datos adjuntos**. |
 | IDENTIFICADOR de archivo | FileId | File_ID | IDENTIFICADOR de archivo | Identificador del documento único en el caso.|
 | Fecha de creación del sistema de archivos |  | File_system_date_created | Fecha de creación del sistema de archivos | Fecha de creación desde el sistema de archivos (solo se aplica a los datos que no son de Office 365). |
 | Fecha del sistema de archivos modificada |  | File_system_date_modified | Fecha del sistema de archivos modificada | Fecha de modificación del sistema de archivos (solo se aplica a los datos que no son de Office 365). |
@@ -83,7 +93,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 | Tiene datos adjuntos | HasAttachment | Email_has_attachment | Tiene datos adjuntos | Indica si el mensaje tiene o no datos adjuntos. |
 | Tiene abogado | HasAttorney |  | Tiene abogado | True cuando al menos uno de los participantes se encuentra en la lista de abogados; de lo contrario, el valor es false. |
 | HasText |  | Has_text |  | Indica si el elemento tiene texto, los valores posibles son true y false. |
-| IDENTIFICADOR inmutable | ImmutableId | Immutable_ID | IDENTIFICADOR inmutable | Identificador inmutable tal y como se almacena en Office 365. |
+| Identificador inmutable | ImmutableId | Immutable_ID | Identificador inmutable | Identificador inmutable tal y como se almacena en Office 365. |
 | Tipo inclusivo | InclusiveType | Inclusive_type | Tipo inclusivo | Tipo inclusivo calculado para análisis: **0** -no inclusivo; **1** -ambos inclusive; **2** -inclusive menos; **3** -copia inclusiva. |
 | En responder a ID. |  | In_reply_to_ID | En responder a ID. | En responder al identificador del mensaje. |
 | Es representativo | IsRepresentative | Is_representative | Es representativo | Un documento de cada conjunto de duplicados exactos se marca como representativo. |
@@ -141,12 +151,12 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 | Se etiquetan por el número de caso 1 |  | Tagged_by_Case_issue_1 |  | Usuario que etiquetó este documento por el problema de caso 1 en relevancia. |
 | Tags | Tags | Tags | Tags | Etiquetas aplicadas en un conjunto de revisión. |
 | Lista de temas | ThemesList | Themes_list | Lista de temas | Lista de temas tal y como se calcula para el análisis. |
-| Título | Título | Doc_title | Title | Título de los metadatos del documento. |
-| To | To | Email_to | To | Campo para para para tipos de mensaje.  El formato **es\<DisplayName SmtpAddress>** |
+| Título | Título | Doc_title | Título | Título de los metadatos del documento. |
+| To | To | Email_to | To | Campo para para los tipos de mensaje.  El formato **es\<DisplayName SmtpAddress>** |
 | Único en el conjunto de correo electrónico | UniqueInEmailSet |  | Único en el conjunto de correo electrónico | False si hay un duplicado de los datos adjuntos en su conjunto de correo electrónico. |
 | Se corrigió | WasRemediated | Was_Remediated | Se corrigió | True si el elemento se ha corregido; en caso contrario, false. |
 | Word count | WordCount | Word_count | Word count | Número de palabras del elemento. |
 ||||||
 
   > [!NOTE]
-  > Para obtener más información acerca de los campos que permiten búsquedas al buscar directamente en Office 365, consulte [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md)
+  > Para obtener más información acerca de las propiedades que permiten búsquedas al buscar ubicaciones de contenido de Office 365 cuando está recopilando datos para un caso de exhibición avanzada de documentos electrónicos, vea [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).

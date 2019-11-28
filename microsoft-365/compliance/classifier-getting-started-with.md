@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que el clasificador esté entrenado y confirme que los resultados sean correctos, úselo para buscar en el contenido de la organización, clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: 6b8574b7c87f0b038c46894940cb8d15b152ab5c
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
+ms.openlocfilehash: 458f7e6c9f15bac71cd3dadf2ed64e1c1f4ef1c5
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38690989"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633869"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introducción al entrenamiento de clasificadores (vista previa)
 
@@ -25,7 +25,7 @@ La clasificación y la etiqueta del contenido para que se pueda proteger y admin
 
 ## <a name="manually"></a>Manualmente
 
-Esto requiere la acción y los juicios humanos. Un administrador puede usar las etiquetas preexistentes y los tipos de información confidencial, o crear los suyos propios y, a continuación, publicarlos. Los usuarios y los administradores los aplican al contenido a medida que lo encuentran. A continuación, puede proteger el contenido y administrar su disposición.
+Este método requiere la intervención humana y la acción. Un administrador puede usar las etiquetas preexistentes y los tipos de información confidencial, o crear los suyos propios y, a continuación, publicarlos. Los usuarios y los administradores los aplican al contenido a medida que lo encuentran. A continuación, puede proteger el contenido y administrar su disposición.
 
 ## <a name="automated-pattern-matching"></a>Coincidencia de patrones automatizada
 
@@ -40,7 +40,7 @@ Las etiquetas de confidencialidad y retención se pueden aplicar automáticament
 
 ## <a name="trainable-classifiers"></a>Clasificadores capacitados
 
-Este método de clasificación es especialmente adecuado para el contenido que, por su naturaleza, no se ha predefinido para identificarlo fácilmente por los métodos de coincidencia de patrón manuales o automatizados. Este método de clasificación es más sobre cómo entrenar a un clasificador para identificar un elemento en función de lo que es el elemento, no por los elementos que están en el elemento (coincidencia de modelos). Un clasificador aprende a identificar un tipo de contenido mediante el uso de cientos de ejemplos del contenido que le interesa clasificar. Empiece por alimentar los ejemplos que están definitivamente en la categoría y, después, una vez que los procesa, los debe probar dándole una mezcla de ejemplos coincidentes y no coincidentes. A continuación, el clasificador realiza predicciones sobre si un elemento determinado pertenece o no a la categoría que se está creando. A continuación, se confirman los resultados, por lo que se ordenan los positivos, negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de sus predicciones. Al publicar el clasificador entrenado, los elementos se ordenan en ubicaciones, como SharePoint Online, Exchange y OneDrive y se clasifica el contenido.
+Este método de clasificación es especialmente adecuado para el contenido que no se identifica fácilmente por los métodos de coincidencia de patrón manuales o automatizados. Este método de clasificación es más sobre cómo entrenar a un clasificador para identificar un elemento en función de lo que es el elemento, no por los elementos que están en el elemento (coincidencia de modelos). Un clasificador aprende a identificar un tipo de contenido mirando cientos de ejemplos del contenido que le interesa clasificar. Empiece por alimentar los ejemplos que están en la categoría de forma indefinida. Una vez que los procesa, lo prueba mediante una combinación de ambos ejemplos que coinciden y no coinciden. A continuación, el clasificador crea predicciones sobre si un elemento determinado pertenece a la categoría que se está creando. A continuación, se confirman los resultados, se ordenan los positivos, negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de sus predicciones. Al publicar el clasificador entrenado, los elementos se ordenan en lugares como SharePoint Online, Exchange y OneDrive, y clasifican el contenido.
 
 > [!IMPORTANT]
 > Ambos tipos de clasificadores están disponibles como condición para [aplicar automáticamente una directiva de etiqueta de retención basada en una condición y el cumplimiento de la](labels.md#applying-a-retention-label-automatically-based-on-conditions) [comunicación](communication-compliance.md).
@@ -60,11 +60,11 @@ Están listos para usar clasificadores y clasificadores que se pueden entrenar. 
 Microsoft 365 incluye seis clasificadores listos para usar:
 
 - **Lenguaje ofensivo**: detecta los elementos de texto que contienen palabras soeces, Slurs, taunts y expresiones disfrazadas (que son expresiones que tienen el mismo significado que un término más ofensivo).
-- **Currículos**: detecta elementos que son cuentas de texto de la cualificación personal, educativa, profesional, experiencia laboral y otros datos de identificación personal del solicitante.
+- **Currículos**: detecta los elementos que son cuentas de texto de la cualificación personal, educativa, profesional, experiencia laboral y otra información de identificación personal del solicitante.
 - **SourceCode**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en lenguajes de programación de equipos ampliamente usados.
 - **Acosar**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con la conducta ofensiva dirigida a uno o varios individuos en función de los siguientes rasgos: raza, étnico, religión, origen nacional, sexo, orientación sexual, edad, discapacidad.
-- **Blasfemias**: detecta una categoría específica de elementos de texto de lenguaje ofensivo que contienen expresiones embarazosas de la mayoría de las personas
-- **Amenaza**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para confirmar violencia o daño físico o daño a una persona o propiedad
+- **Blasfemias**: detecta una categoría específica de elementos de texto de lenguaje ofensivo que contiene expresiones que avergonzan a la mayoría de las personas.
+- **Threat**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionadas con amenazas para confirmar violencia o daños físicos o daños a una persona o propiedad.
 
 Estos aparecen en la vista clasificación de datos del **Centro** > de cumplimiento de Microsoft 365 **(versión preliminar)** > vista de**clasificadores** que tienen el estado de `Ready to use`.
 
@@ -81,14 +81,14 @@ No es necesario entrenar a los clasificadores listos para usar, pero debe confir
 
 ### <a name="understanding-trainable-classifiers"></a>Descripción de los clasificadores que se capacitan
 
-Si los clasificadores listos para usar no satisfacen sus necesidades, puede crear y entrenar sus propios clasificadores. Hay mucho más trabajo relacionado con la creación de sus propios, pero estarán más adaptados a las necesidades de su organización. Para obtener más información sobre cómo usar un clasificador precapacitado, consulte [using a Ready for use Classifier](classifier-using-a-ready-to-use-classifier.md) .
+Si los clasificadores listos para usar no satisfacen sus necesidades, puede crear y entrenar sus propios clasificadores. Hay mucho más trabajo en lo que se refiere a la creación de los suyos, pero estarán más adaptados a las necesidades de su organización. Para obtener más información sobre cómo usar un clasificador precapacitado, consulte [using a Ready for use Classifier](classifier-using-a-ready-to-use-classifier.md) .
 
 > [!IMPORTANT]
 > Solo el usuario que crea un clasificador capacitado puede entrenar y revisar las predicciones realizadas por ese clasificador.
 
 #### <a name="process-flow-for-creating-trainable-classifiers"></a>Flujo de proceso para crear clasificadores que se capacitan
 
-La creación y publicación de un clasificador capacitado para su uso en soluciones de cumplimiento, como las directivas de retención y la supervisión de comunicaciones, sigue este flujo. Para obtener más información sobre la creación de un clasificador capacitado, vea [crear un clasificador](classifier-creating-a-trainable-classifier.md)que se pudiera entrenar.
+La creación y publicación de un clasificador capacitable para su uso en las soluciones de cumplimiento, como las directivas de retención y la supervisión de la comunicación, sigue este flujo. Para obtener más información sobre la creación de un clasificador capacitado, vea [crear un clasificador](classifier-creating-a-trainable-classifier.md)que se pudiera entrenar.
 
 ![clasificador de flujo de proceso capacitable](media/classifier-trainable-classifier-flow.png)
 

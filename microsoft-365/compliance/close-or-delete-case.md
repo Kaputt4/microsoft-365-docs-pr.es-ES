@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+description: " "
+ms.openlocfilehash: 5d8950f2e6164781111465aee8d89eaff92ee958
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191175"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633839"
 ---
 # <a name="close-or-delete-a-case"></a>Cerrar o eliminar un caso
 
@@ -31,7 +31,7 @@ Cuando se completa el caso legal o la investigación admitidos por un caso de ex
 
 - El caso todavía aparece en la página exhibición de documentos electrónicos del centro de seguridad & cumplimiento. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
 
-- Puede editar un caso después de cerrarlo. Por ejemplo, puede Agregar o quitar miembros, crear búsquedas, exportar resultados de búsqueda y preparar los resultados de búsqueda para el análisis en la exhibición avanzada de documentos electrónicos. La principal diferencia entre los casos activos y cerrados es que las suspensiones se desactivan cuando se cierra un caso.
+- Puede editar un caso después de cerrarlo. Por ejemplo, puede Agregar o quitar miembros, crear búsquedas, exportar los resultados de la búsqueda y preparar los resultados de la búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. La principal diferencia entre los casos activos y cerrados es que las suspensiones se desactivan cuando se cierra un caso.
 
 Para cerrar un caso:
 

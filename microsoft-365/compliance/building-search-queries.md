@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Use palabras clave y condiciones para restringir el ámbito de la búsqueda al buscar datos cuando use la exhibición avanzada de documentos electrónicos en Microsoft 365.
-ms.openlocfilehash: c4b2c5b6983b556ad87b553dde767c2160674a78
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Use palabras clave y condiciones para restringir el ámbito de la búsqueda al buscar datos mediante eDiscovery avanzado en Microsoft 365.
+ms.openlocfilehash: 41f445c12599f96f8bb848c571c906e2b319cc7c
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092069"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631050"
 ---
 # <a name="build-search-queries"></a>Crear consultas de búsqueda
 
@@ -29,9 +29,9 @@ Al crear consultas de búsqueda, puede usar palabras clave para buscar contenido
 
 ## <a name="keyword-searches"></a>Búsquedas de palabras clave
 
-Escriba una consulta de palabra clave en el cuadro **palabras clave** en la consulta de búsqueda. Puede especificar palabras clave, propiedades del mensaje de correo electrónico (como las fechas de envío y recepción) o propiedades del documento (como nombres de archivo o la fecha en que se modificó por última vez un documento). Puede usar consultas más complejas que usen un operador booleano, como **and**, **or**, **Not**y **Near**. También puede buscar información confidencial (por ejemplo, números de la seguridad social) en documentos de SharePoint y OneDrive (no en mensajes de correo electrónico), ni buscar documentos que se han compartido externamente. Si deja vacío el cuadro **palabras clave** , todo el contenido ubicado en las ubicaciones de contenido especificadas se encuentra en los resultados de la búsqueda.
+Escriba una consulta de palabra clave en el cuadro **palabras clave** en la consulta de búsqueda. Puede especificar palabras clave, propiedades del mensaje de correo electrónico, como las fechas de envío y recepción, o propiedades del documento, como nombres de archivo o la fecha en que se modificó por última vez un documento. También puede usar consultas más complejas con operadores booleanos como **Y**, **O**, **NOT** y **NEAR**. También puede buscar información confidencial (por ejemplo, números de la seguridad social) en documentos de SharePoint y OneDrive (no en mensajes de correo electrónico), ni buscar documentos que se han compartido externamente. Si deja vacío el cuadro **palabras clave** , todo el contenido ubicado en las ubicaciones de contenido especificadas se encuentra en los resultados de la búsqueda.
     
-Como alternativa, puede hacer clic en la casilla **Mostrar lista de palabras clave** y escribir una palabra clave o frase de palabra clave en cada fila. Si hace esto, las palabras clave de cada fila están conectadas por un operador lógico (que se representa como *c:s* en la sintaxis de consulta de búsqueda) que es similar en funcionalidad al operador **or** en la consulta de búsqueda que se crea. Esto significa que los elementos que contienen cualquier palabra clave en cualquier fila se encuentran en los resultados de la búsqueda.
+Como alternativa, puede activar la casilla de verificación **Mostrar lista de palabras clave** y escribir una palabra clave o frase de palabra clave en cada fila. Si hace esto, las palabras clave de cada fila están conectadas por un operador lógico (que se representa como *c:s* en la sintaxis de consulta de búsqueda) que es similar en funcionalidad al operador **or** en la consulta de búsqueda que se crea. Esto significa que los elementos que contienen cualquier palabra clave en cualquier fila se encuentran en los resultados de la búsqueda.
 
 ![Usar la lista de palabras clave para obtener estadísticas de cada palabra clave de la consulta](media/KeywordListSearch.png)
 
@@ -42,4 +42,4 @@ Como alternativa, puede hacer clic en la casilla **Mostrar lista de palabras cla
 
 ## <a name="conditions"></a>Condiciones
     
-Puede agregar condiciones de búsqueda para restringir el ámbito de una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición está conectada lógicamente a la consulta de palabras clave (especificada en el cuadro palabra clave) por un operador lógico (que se representa como *c:c* en la sintaxis de consulta de búsqueda) que es similar en funcionalidad al operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabra clave y una o más condiciones que se van a incluir en los resultados de la búsqueda. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y una descripción de las condiciones que se pueden usar en una consulta de búsqueda, vea la sección "condiciones de búsqueda" en [consultas de palabras clave y condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions).
+Puede agregar condiciones de búsqueda para restringir el ámbito de una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición está conectada lógicamente a la consulta de palabra clave especificada en el cuadro de palabra clave por un operador lógico (que se representa como *c:c* en la sintaxis de la consulta de búsqueda) que es similar en funcionalidad al operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabra clave y una o más condiciones que se van a incluir en los resultados de la búsqueda. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y una descripción de las condiciones que se pueden usar en una consulta de búsqueda, vea la sección "condiciones de búsqueda" en [consultas de palabras clave y condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions).
