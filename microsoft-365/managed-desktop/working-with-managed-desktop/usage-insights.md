@@ -1,20 +1,20 @@
 ---
-title: Información de uso
+title: Información sobre el uso
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f1d1deb031d26f9dec687b73be86ec8a2491a50
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256867"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634027"
 ---
-# <a name="usage-insights"></a>Información de uso
-Esta vista proporciona métricas de uso para los dispositivos de escritorio administrados por Microsoft. 
+# <a name="usage-insights"></a>Información sobre el uso
+Esta vista proporciona métricas de uso para los dispositivos de escritorio administrados por Microsoft. Por estos motivos, una aplicación se considera "en uso" si está en ejecución y en enfoque.
 
 Para ver los datos de uso, seleccione la pestaña **uso** .
 

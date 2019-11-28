@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 70be19947e31d8c2b918d12887d63b1b360cf37b
-ms.sourcegitcommit: 3df6b6092542d466661c0fa08b7bfe7cec441b55
+ms.openlocfilehash: f46f5164340ec257a056a2f31bec8f846bb4a54a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254379"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634057"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrados por Microsoft 
 
@@ -25,7 +25,7 @@ Para estar inscrito en el escritorio administrado de Microsoft, un dispositivo d
 Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ordenar los dispositivos, trabaje con los contactos de canal comercial para asegurarse de elegir la configuración correcta. En esta tabla, la *fecha de archivo* es la fecha en la que estos modelos estarán sujetos a una vida de servicio de escritorio administrada de Microsoft más corta; los dispositivos que se adjuntan después de esta fecha no recibirán un período completo de tres años de soporte desde el escritorio administrado de Microsoft. Los dispositivos archivados también se enumeran en [dispositivos de escritorio administrado de Microsoft](archived-device-list.md). *Fecha de retiro* es la fecha en la que el escritorio administrado de Microsoft ya no será compatible con este modelo. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán del escritorio administrado de Microsoft, sin importar que se hayan inscrito.
 
 >[!NOTE]
->Los dispositivos se pueden agregar a esta tabla en cualquier momento, pero se proporcionará un aviso de 90 días para cualquier cambio que afecte al archivo o a la fecha de retiro.
+>Los dispositivos se pueden agregar a esta tabla en cualquier momento, pero se proporcionará un aviso de 90 días para cualquier cambio que afecte al archivo o a la fecha de retiro. Los dispositivos agregados más recientemente están marcados con **\***.
 
 
 **Dispositivos de escritorio administrados por Microsoft**
@@ -38,8 +38,8 @@ Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ord
 | [Dell Latitude 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | 9 de enero de 2020  | 9 de enero de 2023  |
 | [Dell Latitude 7200 2-in-1/7300/7400](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | 1 de mayo de 2021  | 1 de mayo de 2024  |
 | [Dell Latitude 7390 7390 2-en-1/7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB de RAM   | Cámara IR requerida | 9 de enero de 2020 | 9 de enero de 2023 |
-| [EQUIPO portátil HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
-| [EQUIPO portátil HP EliteBook x360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
+| **\*[EQUIPO portátil HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features)** | 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
+| **\*[EQUIPO portátil HP EliteBook x360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc)** | 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
 | [HP Elite x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS03AV, se requiere cámara IR | 14 de mayo de 2020 | 14 de mayo de 2023 |
 | [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR | 14 de mayo de 2020 | 14 de mayo de 2023 |
 | [HP EliteBook x360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR | 23 de octubre de 2020 | 23 de octubre de 2023 |

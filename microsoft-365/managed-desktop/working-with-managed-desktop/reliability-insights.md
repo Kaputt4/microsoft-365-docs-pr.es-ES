@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f830e01d54aef9065727971533633f8e63bc1214
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 8ecc117b2bc6e7cec3dcf0470a6d3c61ad34adf0
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257038"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634037"
 ---
 # <a name="reliability-insights"></a>Información sobre la confiabilidad
 
@@ -35,5 +35,12 @@ En la sección **problemas principales** se explican los problemas específicos 
 - El porcentaje de dispositivos administrados que representa el número
 - Número total de repeticiones del problema específico
 - Componente de software que parece ser el origen del problema
+- La categoría del problema detectado:
+    - Explorador (Edge, Chrome, IE)
+    - Desconocido (componentes que no son de Microsoft)
+    - Controlador (audio, gráficos u otros controladores)
+    - Productividad (margen de demora, G-Suites, Microsoft Office y sus complementos o extensiones, Teams)
+    - Multimedia (imagen, música o aplicaciones de vídeo
+    - Seguridad (componentes de seguridad de Windows)
 - El estado actual de Microsoft Managed Desktop Operations investiga y corrige el problema
 
