@@ -8,20 +8,25 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Obtenga información sobre cómo cumplir los requisitos del RGPD en un entorno local de SharePoint Server.
-ms.openlocfilehash: 6da9d635506eafc2b976cf6a87f68370f40e327a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dba20f2f85bc9a474b39e427ed2628a2f9c9f437
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091690"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39625405"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>RGPD para SharePoint Server
+
+Se aplica a:
+- SharePoint Server 2013
+- SharePoint Server 2016
+- SharePoint Server 2019
 
 Como parte de la protección de información personal, le recomendamos lo siguiente:
 
 -   Clasifique sus datos con Azure Information Protection.
 
--   Ejecute SharePoint Server con una configuración de privilegios mínimos. Para obtener más información, vea [Planear la administración de privilegios mínimos en SharePoint Server](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration) y [Seguridad para SharePoint Server](https://docs.microsoft.com/es-ES/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server).
+-   Ejecute SharePoint Server con una configuración de privilegios mínimos. Para obtener más información, vea [Planear la administración de privilegios mínimos en SharePoint Server](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration) y [Seguridad para SharePoint Server](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server).
 
 -   [Habilite el cifrado de BitLocker en sus servidores](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
 
@@ -35,7 +40,7 @@ El método recomendado básico para contenido generado por usuarios contenido en
 
 El método recomendado para recursos compartidos de archivos y bibliotecas y sitios de SharePoint está compuesto por estos pasos:
 
-1.  **[Instale y configure el escáner de Azure Information Protection.](https://docs.microsoft.com/es-ES/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Instale y configure el escáner de Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Decida qué tipos de información confidencial quiere usar.
 
@@ -65,7 +70,7 @@ El método recomendado para recursos compartidos de archivos y bibliotecas y sit
 
 Al aplicar etiquetas a información confidencial, asegúrese de usar una etiqueta no configurada con protección. En la protección, se incluye el cifrado, que impide que los servicios puedan detectar información confidencial en los archivos.
 
-Para obtener más información sobre cómo usar el escáner de Azure Information Protection para buscar y etiquetar datos personales, vea el [Kit de herramientas de detección de datos de RGPD de Microsoft](http://aka.ms/gdprpartners) (http://aka.ms/gdprpartners).
+Para obtener más información sobre cómo usar el escáner de Azure Information Protection para buscar y etiquetar datos personales, vea el [Kit de herramientas de detección de datos de RGPD de Microsoft](https://aka.ms/gdprpartners) (https://aka.ms/gdprpartners).
 
 Para obtener información sobre cómo configurar el escáner para buscar condiciones y usar los tipos de información confidencial de prevención de pérdida de datos (DLP) de Office 365, vea [Configurar las condiciones para la clasificación automática y recomendada en Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification). Tenga en cuenta que los nuevos tipos de información confidencial de Office 365 no estarán disponibles inmediatamente para su uso con el escáner y que los tipos de información confidencial personalizados no pueden usarse con el escáner.
 
@@ -85,7 +90,7 @@ El proceso para quitar información personal (como metadatos o comentarios en un
 
 ### <a name="uls-logs"></a>Registros de ULS
 
-El Servicio de registro unificado (ULS) y el Registro de uso en SharePoint Server realizan un seguimiento de una amplia variedad de funciones del sistema y pueden contener información de usuario. Los registros de ULS y los registros de uso son archivos de texto y permiten realizar búsquedas con distintas herramientas de búsqueda. El [cmdlet de PowerShell Merge-SPLogFile](https://docs.microsoft.com/es-ES/powershell/module/sharepoint-server/merge-splogfile) proporciona un método para devolver entradas de registro desde los registros de ULS en varios servidores de una granja de servidores.
+El Servicio de registro unificado (ULS) y el Registro de uso en SharePoint Server realizan un seguimiento de una amplia variedad de funciones del sistema y pueden contener información de usuario. Los registros de ULS y los registros de uso son archivos de texto y permiten realizar búsquedas con distintas herramientas de búsqueda. El [cmdlet de PowerShell Merge-SPLogFile](https://docs.microsoft.com/powershell/module/sharepoint-server/merge-splogfile) proporciona un método para devolver entradas de registro desde los registros de ULS en varios servidores de una granja de servidores.
 
 Puede configurar las directivas de retención de registros con el valor mínimo necesario para sus fines empresariales. Para obtener información sobre cómo configurar el registro en SharePoint Server, vea [Configuración del registro de diagnóstico en SharePoint Server](https://docs.microsoft.com/SharePoint/administration/configure-diagnostic-logging).
 

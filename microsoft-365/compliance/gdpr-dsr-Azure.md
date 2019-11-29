@@ -1,7 +1,7 @@
 ---
-title: Solicitudes de interesados de Azure para el RGPD
+title: Solicitudes de titulares de los datos de Azure para el RGPD y la CCPA
 description: ''
-keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
+keywords: Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,28 +9,33 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 7a294893d609747b5ab36c66319427608462b451
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 73139f0ab67f728ecb55874bb92d9cc874b60408
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698342"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268663"
 ---
-# <a name="azure-data-subject-requests-for-the-gdpr"></a>Solicitudes de interesados de Azure para el RGPD
+# <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de titulares de los datos de Azure para el RGPD y la CCPA
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>Introducción a las solicitudes de interesados
 
-El [Reglamento de protección de datos (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea ofrece derechos a las personas (que se denominan *interesados* en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el *responsable de los datos* o *responsable*). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, impedir su procesamiento o eliminación, o el envío en formato electrónico para transferirlos a otro responsable. Las solicitudes formales realizadas por un interesado a un responsable para realizar una acción con sus datos personales se denominan *solicitudes de interesado*.
+El [Reglamento de protección de datos (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea ofrece derechos a las personas (que se denominan *interesados* en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el *responsable de los datos* o simplemente *responsable*). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, impedir su procesamiento o eliminación, o el envío en formato electrónico para transferirlos a otro responsable. Las solicitudes formales realizadas por un interesado a un responsable para realizar una acción con sus datos personales se denominan *solicitudes de interesado* DSR, por sus siglas en inglés.
+
+De forma similar, la Ley de Privacidad de Consumidores de California (CCPA) establece los derechos y obligaciones de privacidad a los consumidores de California, incluidos los derechos similares a los sancionados por el RGDP, como el derecho a eliminar, obtener acceso y recibir (portabilidad) sus datos personales. La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](offering-ccpa.md) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](ccpa-faq.md).
 
 Esta guía explica cómo usar productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes responsables de los datos a encontrar y actuar sobre datos personales para responder solicitudes de interesado. En concreto, esto incluye cómo encontrar, acceder y actuar sobre datos personales alojados en la nube de Microsoft. Este es un breve resumen de los procedimientos descritos en esta guía:
 
-- **Detección:** use herramientas de búsqueda y detección para encontrar con facilidad datos de clientes que puedan ser el objeto de una solicitud de derechos del titular de los datos. Después de recopilar los documentos que puedan ser el objeto de una solicitud, puede realizar una o varias de las acciones de solicitud de derechos del titular de los datos descritas en los pasos siguientes para responder a la petición. Como alternativa, puede determinar que la solicitud no cumple las directrices de respuesta a solicitudes de derechos del titular de los datos.
+- **Búsqueda**: use herramientas de búsqueda y detección para encontrar más fácilmente los datos personales que pueden ser objeto de una solicitud de DSR. Una vez recopilados los documentos de respuesta, puede realizar una o varias de las acciones de DSR siguientes para responder a la solicitud. También puede determinar que la solicitud no cumple con las directrices de la organización para responder a las solicitudes de DSR.
 - **Acceso:** recupere datos personales que residan en la nube de Microsoft y, si se le pide, realice una copia para proporcionársela al titular de los datos.
 - **Rectificación:** realice cambios o implemente otras acciones solicitadas en los datos personales, si corresponde.
-- **Restricción:** restrinja el tratamiento de datos personales, ya sea al quitar las licencias de distintos servicios de Azure o al desactivar los servicios que quiera, siempre que sea posible. También puede quitar los datos de la nube de Microsoft y conservarlos de forma local o en otra ubicación.
+- **Restricción:** restrinja el tratamiento de datos personales, ya sea al quitar las licencias de distintos servicios de Azure o al desactivar los servicios que quiera, siempre que sea posible. También puede quitar datos de la nube de Microsoft y conservarlos de manera local o en otra ubicación.
 - **Eliminación:** elimine de forma permanente los datos personales que residen en la nube de Microsoft.
-- **Exportación:** envíe una copia electrónica (en un formato de lectura mecánica) de datos personales al titular de los datos.
+- **Exportar o recibir (portabilidad):** envíe una copia electrónica (en un formato legible por máquina) de datos o información personal al titular de los datos. La información personal bajo la CCPA es cualquier información relacionada con una persona identificada o identificable. No hay distinción entre los roles privados, públicos o laborales de una persona. La definición de la CCPA de la "información personal" es a grandes rasgos similar a la que el RGPD hace de los "datos personales". Sin embargo, la CCPA también incluye datos domésticos y familiares. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](offering-ccpa.md) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](ccpa-faq.md).
 
 Cada sección de esta guía describe los procedimientos técnicos que puede realizar una organización responsable de los datos para responder a una solicitud del interesado de datos personales en la nube de Microsoft.
 
@@ -41,17 +46,17 @@ A continuación se ofrecen definiciones de términos relacionados con esta guía
 - **Poseedor:** la persona física o jurídica, entidad pública, agencia u organismo que, solo o junto a otras personas, determina los fines y los medios del procesamiento de datos personales; donde los fines y los medios de dicho procesamiento están determinados por la ley de la Unión Europea o de los Estados miembros, el poseedor o los criterios específicos para su designación pueden estar proporcionados por la ley de la Unión Europea o de los Estados miembros.
 - **Datos personales y titular de los datos:** cualquier información sobre una persona física identificada o identificable (“titular de los datos”); una persona física identificable es una que puede identificarse, directa o indirectamente, especialmente en referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más factores específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona física.
 - **Procesador:** persona física o jurídica, entidad pública, agencia u otro organismo que procesa datos personales en nombre del poseedor.
-- **Los datos de clientes:** todos los datos, (incluidos todos los archivos de texto, sonido, vídeo o imagen, y software) proporcionados a Microsoft por un cliente (o en su representación) mediante el uso del servicio empresarial. En los datos de clientes, se incluye (1) información de identificación personal de los usuarios finales (por ejemplo, nombres de usuario e información de contacto en Azure Active Directory) y contenido del cliente cargado o creado por clientes en servicios específicos (por ejemplo, el contenido del cliente en una cuenta de Azure Storage, contenido del cliente de Azure SQL Database, o la imagen de la máquina virtual de un cliente en Azure Virtual Machines).
-- **Registros generados por el sistema:** registros y datos relacionados generados por Microsoft que permiten a Microsoft prestar servicios empresariales a los usuarios. Los registros generados por el sistema contienen principalmente datos anonimiz*Registros generados por el sistema: registros y datos relacionados generados por Microsoft que permiten a Microsoft prestar servicios empresariales a los usuarios. Los registros generados por el sistema contienen principalmente datos anonimizados parcialmente, como identificadores únicos (por lo general, un número generado por el sistema que no se puede usar para identificar a una persona, pero que se usa para prestar servicios empresariales a los usuarios). Los registros generados por el sistema también pueden contener información identificable sobre los usuarios finales, como un nombre de usuario.
+- **Datos de cliente:** todos los datos, incluidos todos los archivos de texto, sonido, vídeo o imagen, y software, proporcionados a Microsoft por un cliente o en su representación mediante el uso del servicio empresarial. En los datos de clientes, se incluye (1) información de identificación personal de los usuarios finales (por ejemplo, nombres de usuario e información de contacto en Azure Active Directory) y contenido del cliente cargado o creado por clientes en servicios específicos (por ejemplo, el contenido del cliente en una cuenta de Azure Storage, contenido del cliente de la base de datos de Azure SQL, o la imagen de la máquina virtual de un cliente en Azure Virtual Machines).
+- **Registros generados por el sistema:** registros y datos relacionados generados por Microsoft que ayudan a Microsoft a proporcionar servicios empresariales a los usuarios. Los registros generados por el sistema contienen principalmente datos pseudonimizados, como identificadores únicos (por lo general, un número generado por el sistema que se usa para ofrecer los servicios a los usuarios, pero no puede identificar a un individuo). Los registros generados por el sistema también pueden contener información identificable sobre los usuarios finales, como un nombre de usuario.
 
 ## <a name="how-to-use-this-guide"></a>Uso de esta guía
 
 Esta guía consta de dos partes:
 
-- **Parte 1: Responder a solicitudes de interesados de clientes**: la primera parte de esta guía describe cómo acceder, corregir, restringir, eliminar y exportar datos desde las aplicaciones en las que se han creado. Esta sección detalla cómo ejecutar la solicitud de interesado con el contenido de cliente y también con la información identificable de los usuarios finales.
-- **Parte 2: Responder a solicitudes de interesados para registros generados por el sistema**: al usar los servicios de empresa de Microsoft, Microsoft genera información conocida como registros generados por el sistema para proporcionar el servicio. La parte 2 de esta guía explica cómo acceder, eliminar y exportar esta información para Azure.
+- **Parte 1: responda a las solicitudes de los datos de los clientes:** En la parte 1 de esta guía se explica cómo tener acceso a los datos, rectificarlos, restringirlos, eliminarlos y exportarlos desde aplicaciones en las que haya creado datos. En esta sección, se explica cómo ejecutar DSRs en el contenido de los clientes y también la información que puede identificar los usuarios finales.
+- **Parte 2: Responder a solicitudes de interesados para registros generados por el sistema**: al usar los servicios de empresa de Microsoft, Microsoft genera información conocida como registros generados por el sistema para proporcionar el servicio.  En la parte 2 de esta guía se explica cómo tener acceso, eliminar y exportar este tipo de información para Azure.
 
-## <a name="understanding-dsrs-for-azure-active-directory-and-microsoft-service-accounts"></a>Comprender las solicitudes de interesados para Azure Active Directory y cuentas de servicio de Microsoft
+## <a name="understanding-dsrs-for-azure-active-directory-and-microsoft-service-accounts"></a>Comprender las solicitudes de los interesados para Azure Active Directory y las cuentas de servicio de Microsoft
 
 Al plantear servicios proporcionados a clientes empresariales, siempre debe entenderse la ejecución de solicitudes de interesados en el contexto de un inquilino específico de Azure Active Directory (AAD). En concreto, este siempre se ejecuta en un inquilino AAD determinado. Si un usuario forma parte de varios inquilinos, es importante destacar que una solicitud de interesado *solo* se ejecuta en el contexto del inquilino específico que ha recibido la solicitud. Esto es importante para comprender que la ejecución de una solicitud de interesado por parte de un cliente empresarial **no** afecta a los datos de otro cliente empresarial adyacente.
 
@@ -85,19 +90,19 @@ Esto es útil si desea buscar o cambiar datos personales de un usuario específi
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com/) con una cuenta de administrador global para el directorio.
 
-2. Seleccione **Todos los servicios**, escriba **Usuarios y grupos** en el cuadro de texto y, después, seleccione **Entrar**.
+2. Seleccione **Azure Active Directory**.
 
-     ![Seleccionar todos los servicios](media/azure-dsr_image3.png)
+     ![Seleccionar todos los servicios](media/gdpr-azure-dsr-azure-portal.png)
 
-3. En la hoja **Usuarios y grupos**, seleccione **Usuarios**.
+3. Seleccione **Usuarios**.
 
-     ![Seleccionar usuarios](media/azure-dsr_image9.png)
+     ![Seleccionar a los usuarios](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. En la hoja **Usuarios y grupos: Usuarios**, seleccione un usuario de la lista y, a continuación, en el módulo para el usuario seleccionado, seleccione **Perfil** para ver la información de perfil de usuario que puede contener datos personales.
+4. En la hoja **Todos los usuarios**, seleccione un usuario de la lista y, a continuación, en el módulo para el usuario seleccionado, seleccione **Perfil** para ver la información de perfil de usuario que puede contener datos personales.
 
-    ![Seleccionar perfil](media/azure-dsr_image5.png)
+    ![Seleccionar perfil](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. Si necesita agregar o cambiar la información de perfil de usuario, puede hacerlo y, a continuación, en la barra de comandos, seleccione **Guardar.**
+5. Si necesita agregar o cambiar la información de perfil del usuario, puede hacerlo seleccionando **Editar** en la barra de comandos y, a continuación **Guardar** después de realizar los cambios.
 
 #### <a name="service-specific-interfaces"></a>Interfaces específicas del servicio
 
@@ -133,25 +138,21 @@ Puede corregir, actualizar o eliminar información de identificación personal s
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com/) con una cuenta de administrador global para el directorio.
 
-2. Seleccione **Todos los servicios**, escriba **Usuarios y grupos** en el cuadro de texto y, después, seleccione **Entrar**.
+2. Seleccione **Azure Active Directory**.
 
-    ![Seleccionar todos los servicios](media/azure-dsr_image3.png)
+    ![Seleccionar todos los servicios](media/gdpr-azure-dsr-azure-portal.png)
 
-3. En la hoja **Usuarios y grupos**, seleccione **Usuarios**.
+3. Seleccione **Usuarios**.
 
-    ![Seleccionar usuarios](media/azure-dsr_image9.png)
+    ![Seleccionar a los usuarios](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. En la hoja **Usuarios y grupos: Usuarios**, seleccione un usuario de la lista y, a continuación, en el módulo para el usuario seleccionado, seleccione **Perfil** para ver la información que debe corregirse o actualizarse.
+4. En la hoja **Todos los usuarios**, seleccione un usuario de la lista y, a continuación, en el módulo para el usuario seleccionado, seleccione **Perfil** para ver la información que debe corregirse o actualizarse.
 
-    ![Seleccionar perfil](media/azure-dsr_image5.png)
+    ![Seleccionar perfil](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. Corrija o actualice la información y, a continuación, en la barra de comandos, seleccione **Guardar.**
+5. Para corregir o actualizar la información de perfil del usuario, incluida la información de trabajo, seleccionando **Editar** en la barra de comandos y, a continuación  **Guardar** después de realizar los cambios.
 
-6. En la hoja del usuario seleccionado, elija **Información de trabajo** para ver la información de trabajo del usuario que requiera corregirse o actualizarse.
-
-    ![Seleccionar información de trabajo](media/azure-dsr_image4.png)
-
-7. Corrija o actualice la información de trabajo del usuario y, a continuación, en la barra de comandos, seleccione **Guardar.**
+    ![Seleccionar perfil](media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
 #### <a name="service-specific-interfaces"></a>Interfaces específicas del servicio
 
@@ -184,26 +185,30 @@ Este es el proceso de alto nivel para eliminar usuarios de su inquilino.
 
 ###### <a name="to-delete-a-user-from-an-azure-tenant"></a>Para eliminar un usuario de un inquilino de Azure
 
-1. Abra Azure Portal, seleccione la hoja **Azure Active Directory** y seleccione **Usuarios**.
+1. Iniciar sesión en el [Azure Portal](https://portal.azure.com/) con una cuenta de administrador global para el directorio.
 
-    Aparece la hoja **Usuario, Todos los usuarios**.
+2. Seleccione **Azure Active Directory**.
 
-    ![Encontrar al usuario](media/azure-dsr_image8.png)
+    ![Seleccionar todos los servicios](media/gdpr-azure-dsr-azure-portal.png)
 
-2. Active la casilla situada junto al usuario que desea eliminar, seleccione **Eliminar usuario** y después seleccione **Sí** en el cuadro que le pregunta si desea eliminar el usuario.
+3. Seleccione **Usuarios**.
 
-    ![Administración de usuarios](media/azure-dsr_image9.png)
+    ![Seleccionar a los usuarios](media/gdpr-azure-dsr-azure-all-users.png)
 
-3. En el cuadro **Mostrar** de lista desplegable, seleccione **Usuarios eliminados recientemente**.
+4. Active la casilla situada junto al usuario que desea eliminar, seleccione **Eliminar usuario** y después seleccione **Sí** en el cuadro que le pregunta si desea eliminar el usuario.
 
-    ![Ver perfil del usuario](media/azure-dsr_image10.png)
+    ![Administración de usuarios](media/gdpr-azure-dsr-azure-selected-user.png)
 
-4. Seleccione de nuevo el nombre de usuario, seleccione **Eliminar permanentemente** y después seleccione **Sí** en el cuadro que le pregunta si está seguro.
+5. En **Todos los usuarios** en la hoja, seleccione **Usuarios eliminados**.
+
+    ![Ver el perfil del usuario](media/gdpr-azure-dsr-azure-deleted-user.png)
+
+4. Seleccione el mismo usuario otra vez, luego seleccione  **Eliminar permanentemente** en la barra de comandos y, a continuación, seleccione **Sí** en el cuadro que pregunta si está seguro.
 
 >[!IMPORTANT]  
 >Tenga en cuenta que al hacer clic en **Sí** eliminará el usuario y todos los datos y registros generados por el sistema asociados de forma permanente e irrevocable. Si hace esto por error, tendrá que volver a agregar al usuario al cliente de forma manual. Los datos asociados y los registros generados por el sistema no se pueden recuperar.
 
-   ![Ver información de trabajo del usuario](media/azure-dsr_image11.png)
+   ![Ver información de trabajo del usuario](media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
 #### <a name="service-specific-interfaces"></a>Interfaces específicas del servicio
 
@@ -279,15 +284,15 @@ Este es el proceso de alto nivel para exportar datos de su inquilino.
 
 1. Abra Azure Portal, seleccione **Todos los servicios**, escriba *directiva* en el filtro y seleccione **Directiva**.
 
-     ![Filtro Todos los servicios ](media/azure-dsr_image12.png)
+     ![Filtro Todos los servicios ](media/gdpr-azure-dsr-azure-policy.png)
 
 2. En la hoja **Directiva**, seleccione **Privacidad del usuario**, a continuación **Administrar las solicitudes de usuario** y después **Agregar solicitud de exportación**.
 
-    ![Agregar solicitud de exportación ](media/azure-dsr_image13.png)
+    ![Agregar solicitud de exportación ](media/gdpr-azure-dsr-azure-add-export-request.png)
 
 3. Completar la **solicitud de exportación de datos**:
 
-    ![Nueva solicitud de exportación de datos](media/azure-dsr_image14.png)
+    ![Nueva solicitud de exportación de datos](media/gdpr-azure-dsr-azure-export-data-request.png)
 
 - **Usuario.** Escriba la dirección de correo electrónico del usuario de Azure Active Directory que solicita la exportación.
 - **Suscripción.** Seleccione la cuenta que usa para informar del uso de recursos y para facturar por servicios. Esta también es la ubicación de la cuenta de almacenamiento de Azure.

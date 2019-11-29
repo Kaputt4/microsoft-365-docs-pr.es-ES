@@ -15,20 +15,20 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determine si su organización va a implementar etiquetas como parte de su plan de RGPD.
-ms.openlocfilehash: c0886ac68cd2d7a6ca7514f39636e74c5b2043ad
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4470f766ad2f8fd2d914e0e45deac8604028ddb5
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092118"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615650"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Diseño de un esquema de clasificación de datos personales
 
 Los artículos anteriores de esta serie se centran en el uso de tipos de información confidencial para identificar datos personales que están sujetos al RGPD. Los tipos de información confidencial son una forma de clasificación. Esta puede ser toda la clasificación que necesita. Sin embargo, muchas organizaciones implementan una estrategia de gobierno de datos más amplia con etiquetas. Use este tema para decidir si también quiere implementar etiquetas como parte de su plan de RGPD. Si lo hace, este tema proporciona algunas directrices y ejemplos.
 
-Nota: Definir un esquema de clasificación de una organización y configurar directivas, etiquetas y condiciones requiere una cuidadosa planificación y preparación. Es importante tener en cuenta que este no es un proceso de TI. Asegúrese de trabajar con el equipo legal y de cumplimiento para desarrollar un esquema de clasificación y etiquetado de los datos de su organización.
+Nota: la definición de un esquema de clasificación para una organización y la configuración de directivas, etiquetas y condiciones requiere un diseño y una preparación cuidadosos. Es importante tener en cuenta que no se trata de un proceso basado en ti. Asegúrese de trabajar con su equipo legal y de cumplimiento para crear un esquema de etiquetado y clasificación adecuado para los datos de su organización.
 
-## <a name="decide-if-you-are-using-labels-in-addition-to-sensitive-data-types"></a>Decidir si debe utilizar etiquetas además de tipos de datos confidenciales
+## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>Decidir si debe utilizar etiquetas además de tipos de datos confidenciales
 
 Puede tomar uno de los dos métodos para la clasificación de información personal en Office 365. Puede usar cualquiera de estos para protección de RGPD. Si decide usar solo los tipos de información confidencial para clasificación, puede omitir el resto de este tema.
 
@@ -36,25 +36,23 @@ Elija una de las siguientes opciones.
 
 ### <a name="option-1-use-only-office-365-sensitive-information-types"></a>Opción 1: Usar solo los tipos de información confidencial de Office 365
 
--   Los tipos de información confidencial funcionan correctamente para identificar y proteger datos personales sujetos al RGPD y otros tipos de normas.
+- Los tipos de información confidencial funcionan correctamente para identificar y proteger datos personales sujetos al RGPD y otros tipos de normas.
 
--   Estos son más fáciles de usar si su organización ya no tiene o no va a implementar un plan de gobierno de datos más amplio con etiquetas.
+- Estos son más fáciles de usar si su organización ya no tiene o no va a implementar un plan de gobierno de datos más amplio con etiquetas.
 
--   Estas funcionan con reglas DLP (como sucede con las etiquetas de retención).
+- Estas funcionan con reglas DLP (como sucede con las etiquetas de retención).
 
--   Los tipos de información confidencial funcionan con Cloud App Security para que pueda detectar información confidencial en otras aplicaciones SaaS.
+- Los tipos de información confidencial funcionan con Cloud App Security para que pueda detectar información confidencial en otras aplicaciones SaaS.
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Opción 2: Usar tipos de información confidencial y etiquetas de retención
 
--   Necesitará los tipos de información confidencial para aplicar automáticamente etiquetas a datos personales que están sujetos al RGPD, por lo que son un requisito previo.
+- Necesitará los tipos de información confidencial para aplicar automáticamente etiquetas a datos personales que están sujetos al RGPD, por lo que son un requisito previo.
 
--   Usar etiquetas de retención le permite incluir información personal que está sujeta al RGPD en un plan de gobierno de datos más amplio para su organización.
-
-
+- Usar etiquetas de retención le permite incluir información personal que está sujeta al RGPD en un plan de gobierno de datos más amplio para su organización.
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>Desarrollar un esquema de etiqueta que incluya datos personales
 
-Antes de usar las capacidades técnicas para aplicar protección y etiquetas, primero trabaje en toda la organización para definir un esquema de clasificación. Es posible que su organización ya tenga un esquema de clasificación, lo que facilitará agregar datos personales. En este tema se incluye un esquema de clasificación de ejemplo. Puede usarlo como punto de partida, si es necesario.
+Antes de usar las funciones técnicas para aplicar las etiquetas y la protección, en primer lugar, puede trabajar en la organización para definir un esquema de clasificación. Es posible que su organización ya tenga un esquema de clasificación que facilite la adición de datos personales. Este tema incluye un esquema de clasificación de ejemplo. Si es necesario, puede usar este ejemplo como punto de partida.
 
 ### <a name="getting-started"></a>Introducción
 
@@ -64,28 +62,28 @@ Para empezar, decida el número y los nombres de las etiquetas que va a implemen
 
 Al diseñar e implementar directivas, etiquetas y condiciones, tenga en cuenta estas recomendaciones:
 
--   Use el esquema de clasificación existente (si corresponde): muchas organizaciones ya usan algún tipo de clasificación de datos. Evalúe con cuidado el esquema de la etiqueta existente y, si es posible, úselo tal como está. El uso de etiquetas que son reconocibles para el usuario final impulsará la adopción.
+- Use un esquema de clasificación existente (si lo hay) &ndash; muchas empresas ya usan la clasificación de datos en alguna forma. Evalúe atentamente el esquema de etiqueta existente y, si es posible, úselo como está. Usar etiquetas familiares que son reconocible para el usuario final llevará a cabo la adopción.
 
--   Comience con directivas y etiquetas predeterminadas: todas las soluciones incluyen un conjunto de directivas y etiquetas predefinidas. Evalúelas detenidamente teniendo en cuenta los requisitos legales y empresariales y considere usarlas en lugar de crear nuevas.
+- Empiece con las directivas y etiquetas predeterminadas &ndash; todas las soluciones se incluyen con un conjunto de etiquetas y directivas predefinidas. Valore estas consideraciones en los requisitos empresariales y jurídicos de la organización y considere la posibilidad de usarlos en lugar de crear otros nuevos.
 
--   Comience con poco: no hay prácticamente ningún límite en el número de etiquetas que se pueden crear. Sin embargo, grandes cantidades de etiquetas y etiquetas secundarias afectarán negativamente la adopción. Si tiene demasiadas opciones, es casi como si no tuviese ninguna opción en absoluto.
+- Iniciar pequeña &ndash; no hay prácticamente ningún límite en el número de etiquetas que se pueden crear. Sin embargo, un gran número de etiquetas y subetiquetas afectarán negativamente a la adopción. Muchas opciones suelen significar que no hay ninguna opción.
 
--   Use escenarios y casos de uso: identifique los casos de uso comunes dentro de la organización y use los escenarios que se derivan del RGPD para comprobar si la configuración de etiqueta y clasificación prevista funcionará en la práctica.
+- Use escenarios y casos de uso &ndash; identificar los casos de uso comunes en la organización y usar escenarios que se deriven de la GDPR para comprobar si la configuración de etiqueta y clasificación puede funcionar en la práctica.
 
--   Plantéese cada solicitud para una nueva etiqueta, ¿cada escenario o caso de uso necesita una nueva etiqueta o podemos usar las que ya tenemos? Mantener el número de etiquetas al mínimo mejora la adopción.
+- Pregunta en cada solicitud de una etiqueta nueva &ndash; ¿todos los escenarios o casos de uso necesitan una nueva etiqueta o pueden usar lo que ya tiene? Mantener el número de etiquetas en un mínimo mejora la adopción.
 
--   Use subetiquetas para departamentos clave: algunos departamentos tendrán necesidades específicas que requerirán etiquetas específicas. Defina estas etiquetas como subetiquetas de una etiqueta existente y considere el uso de directivas de ámbito asignadas a grupos de usuarios en lugar de globalmente.
+- Use subetiquetas para los departamentos clave &ndash; algunos departamentos tendrán necesidades específicas que requieran etiquetas específicas. Defina estas etiquetas como subetiquetas en una etiqueta existente y considere la posibilidad de usar directivas de ámbito que estén asignadas a grupos de usuarios en lugar de globalmente.
 
--   Considere usar directivas de ámbito: las directivas destinadas a subconjuntos de usuarios evitarán una "sobrecarga de etiquetas". Una directiva de ámbito permite asignar etiquetas específicas de roles o departamentos específica (sub-) solo a empleados que trabajan para ese departamento concreto.
+- Considere la posibilidad de usar directivas de ámbito &ndash; directivas dirigidas a subconjuntos de usuarios evitarán "sobrecarga de etiqueta". Una directiva con ámbito le permite asignar un rol o un departamento (subformulario) específico solo a los empleados que trabajan para ese departamento específico.
 
--   Use nombres de etiqueta significativo: se recomienda no usar argot, estándares o acrónimos como nombres de etiqueta. Intente usar nombres adecuados para el usuario final para mejorar la adopción. En lugar de usar etiquetas como PII, PCI, HIPAA, LBI, MBI y HBI considere nombres como No laborable, General, Confidencial y Extremadamente confidencial.
+- Usar nombres de etiqueta significativos &ndash; recomendamos que no use jerga, estándares o acrónimos como nombres de etiqueta. Pruebe a usar nombres que tengan repercusión en el usuario final para mejorar la adopción. En lugar de usar etiquetas como PII, PCI, HIPAA, LBI, AC, y HBI, considere la posibilidad de usar nombres como no empresarial, público, general, confidencial y muy confidencial.
 
 ### <a name="example-classification-schema"></a>Ejemplo de esquema de clasificación
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Nombre de la etiqueta</strong></th>
+<th align="left"><strong>Nombre de etiqueta</strong></th>
 <th align="left"><strong>Descripción</strong></th>
 </tr>
 </thead>
@@ -119,7 +117,7 @@ Al diseñar e implementar directivas, etiquetas y condiciones, tenga en cuenta e
 
 ## <a name="define-a-taxonomy-and-search-criteria-for-each-label"></a>Definir un criterio de búsqueda y de taxonomía en todas las etiquetas
 
-Tras desarrollar un esquema de clasificación de la organización, el siguiente paso es desarrollar criterios de búsqueda y de taxonomía para buscar datos. Para los datos personales, ya ha completado este trabajo mediante la identificación de tipos de información confidencial y también al personalizar o crear nuevos tipos de información confidencial en su entorno.
+Después de desarrollar un esquema de clasificación para su organización, el siguiente paso es desarrollar la taxonomía y los criterios de búsqueda para encontrar estos datos. En el caso de los datos personales, ya ha completado el trabajo mediante la identificación de los tipos de información confidencial y la personalización o la creación de nuevos tipos de información confidencial para su entorno.
 
 La siguiente tabla proporciona un esquema de ejemplo, taxonomía y criterios de búsqueda de una organización. Las etiquetas están ordenadas por nivel de confidencialidad de menos confidenciales a más confidenciales para asegurar que los datos que coincidan con varias condiciones de etiqueta se asignan la etiqueta adecuada.
 
@@ -141,9 +139,9 @@ Lo más importante es asegurarse de que el trabajo que dedica para clasificar lo
 <tbody>
 <tr class="odd">
 <td align="left">Personal</td>
-<td align="left">Documentos etiquetados manualmente como personales por el usuario final.</td>
+<td align="left">El usuario final ha etiquetado manualmente los documentos personales.</td>
 <td align="left">Manual</td>
-<td align="left">Documentos etiquetados manualmente como personales por el usuario final.</td>
+<td align="left">El usuario final ha etiquetado manualmente los documentos personales.</td>
 </tr>
 <tr class="even">
 <td align="left">Público</td>
@@ -161,7 +159,7 @@ Lo más importante es asegurarse de que el trabajo que dedica para clasificar lo
 </tr>
 <tr class="even">
 <td align="left">Recursos humanos: datos de empleado</td>
-<td align="left">Documentos que incluyan el id. de empleado (que distingue entre mayúsculas y minúsculas) en el formato CONTOSO-9##### donde # representa cualquier dígito.</td>
+<td align="left">Documentos que contienen el ID. de empleado que distingue mayúsculas de minúsculas en el formato CONTOSO-9##### donde # representa un número.</td>
 <td align="left"><p>KQL</p>
 <p>RegEx</p></td>
 <td align="left"><p>KQL: CONTOSO-9*</p>

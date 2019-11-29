@@ -1,6 +1,6 @@
 ---
-title: Solicitudes del interesado de Azure DevOps para el RGPD
-keywords: Visual Studio Team Services, VSTS, documentación de Azure DevOps, privacidad, RGPD
+title: Solicitudes del interesado de Azure DevOps para el RGPD y CCPA
+keywords: Visual Studio Team Services, VSTS, documentación de Azure DevOps, privacidad, RGPD, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: devops
@@ -9,19 +9,23 @@ ms.date: 06/11/2018
 author: jitojo
 ms.author: jominana
 manager: douge
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5ccb1961fe1751604b32bb5b37595b0884b395
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3af519ed13b8c647d359ea9c8d1faaff2c34209e
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071489"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268855"
 ---
-# <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Solicitudes del interesado de Azure DevOps Services para el RGPD
+# <a name="azure-devops-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado de Azure DevOps Services para el RGPD y CCPA
 
-El [Reglamento general de protección de datos (RGPD)](http://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea ofrece derechos a las personas, que se denominan *interesados* en el reglamento, para administrar los datos personales recopilados por un *responsable de los datos*. Un responsable de los datos, o simplemente *responsable* es una empresa u otro tipo de agencia u organización. Los datos personales se definen de forma amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos en sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, impedir su procesamiento o eliminación, o el envío en formato electrónico para transferirlos a otro poseedor de los datos. Las solicitudes formales realizadas por un interesado a un poseedor de los datos para realizar una acción en sus datos personales se denominan *solicitudes de interesado*.
+El [Reglamento general de protección de datos (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea ofrece derechos a las personas, que se denominan *interesados* en el reglamento, para administrar los datos personales recopilados por un *responsable de los datos*. Un responsable de los datos, o simplemente *responsable* es una empresa u otro tipo de agencia u organización. Los datos personales se definen de forma amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos en sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, impedir su procesamiento o eliminación, o el envío en formato electrónico para transferirlos a otro poseedor de los datos. Las solicitudes formales realizadas por un interesado a un poseedor de los datos para realizar una acción en sus datos personales se denominan *solicitudes de interesado*.
+
+De forma similar, la Ley de Privacidad de Consumidores de California (CCPA) establece derechos y obligaciones de privacidad a los consumidores de California, incluidos derechos similares a los sancionados por el RGDP, como el derecho a eliminar, obtener acceso y recibir (portabilidad) sus datos personales.  La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](offering-ccpa.md) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](ccpa-faq.md).
 
 Para obtener información general sobre el RGPD, consulte la [sección RGPD del Portal de confianza de servicios](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
@@ -33,11 +37,11 @@ Los artículos de la [Declaración de privacidad de Microsoft](https://privacy.m
 
 ## <a name="personal-data-we-collect"></a>Los datos personales que recopilamos
 
-Microsoft recopila datos de los usuarios para operar y mejorar Azure DevOps Services. Azure DevOps Services recopila dos categorías de datos: datos de clientes y registros generados por el sistema. En los datos de clientes, se incluyen datos de transacciones y de interacciones de usuario identificables que Azure DevOps Services necesita para ofrecer el servicio. En los registros generados por el sistema, se incluyen datos de uso del servicio que se agregan a cada área de producto y característica.
+Microsoft recopila datos para que los usuarios puedan operar y ayudar a mejorar los servicios de Azure DevOps. Azure DevOps Services recopila dos categorías de datos: los datos de clientes y los registros generados por el sistema. Los datos de los clientes incluyen datos de transacciones e interacciones que pueden identificar al usuario y que Azure DevOps necesita para su funcionamiento. Los registros generados por el sistema incluyen datos de uso del servicio que se agregan para cada área de producto y característica.
 
 ## <a name="delete-azure-devops-data"></a>Eliminar datos de Azure DevOps
 
-El primer paso para eliminar los datos de clientes de Azure DevOps Services asociados y anonimizar la información de identificación personal en registros generados por el sistema es cerrar su cuenta de identidad de Azure Active Directory (AAD) o su cuenta Microsoft (MSA). Azure DevOps Services se usa como un sistema de registro con integridad estricta, rastreabilidad y reglas de auditoría. Estas obligaciones existentes afectan a nuestras obligaciones de eliminación y retención de RGPD. Cerrar la cuenta de identidad no modifica, quita ni cambia los artefactos y registros asociados a la identidad individual de la organización de Azure DevOps. Nos aseguramos de que, cuando se elimine una organización de Azure DevOps completa, se borre del sistema toda la información de identificación personal asociada, así como los registros generados por el sistema que se encuentren en esa organización (después del período necesario de eliminación temporal de 30 días de la organización de Azure DevOps).
+El primer paso para eliminar los datos de cliente de Azure DevOps Services y hacer anónimos los datos personales que puedan identificarle en los registros generados por el sistema es cerrar su cuenta de identidad de Azure Active Directory (AAD) o su cuenta de Microsoft (MSA). Azure DevOps Services se basa en un sistema de registro con estrictos requisitos de integridad, trazabilidad y auditoría. Las obligaciones existentes afectan a nuestras obligaciones de eliminación y conservación relativas al RGPD. El cierre de la cuenta de identidad no altera, quita ni cambia los artefactos y registros asociados a la identidad individual en la organización de Azure DevOps. Le garantizamos que cuando se elimina toda una organización de Azure DevOps, todos los datos asociados que puedan identificar a una persona y los registros generados por el sistema que se encuentren en la organización se eliminan de nuestro sistema (después del período de 30 días obligatorio de eliminación temporal de Azure DevOps).
 
 ## <a name="export-azure-devops-data"></a>Exportar datos de Azure DevOps
 
