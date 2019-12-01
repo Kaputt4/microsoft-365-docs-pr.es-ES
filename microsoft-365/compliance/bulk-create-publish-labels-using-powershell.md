@@ -13,19 +13,19 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: En Office 365, puede usar etiquetas de retención para implementar una programación de retención en su organización. Como administrador de registros o responsable de cumplimiento normativo, puede que tenga que crear y publicar cientos de etiquetas de retención. Puede hacerlo mediante la interfaz de usuario del Centro de seguridad y cumplimiento, pero crear etiquetas de retención de una en una es laborioso e ineficiente. Si usa el script y los archivos .csv que se proporcionan a continuación, puede crear y publicar de forma masiva etiquetas de retención y directivas de etiquetas de retención. Primero, creará una lista de las etiquetas de retención y una lista de las directivas de etiquetas de retención en Excel y, después, creará de forma masiva las etiquetas de retención y las directivas de etiquetas de retención en esas listas con PowerShell. Esto permite crear y publicar al mismo tiempo y con mayor facilidad todas las etiquetas de retención que necesita la programación de retención.
-ms.openlocfilehash: 2be7c2251a3a35f32ff9754134cca1f5958b447a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: En Office 365, puede usar etiquetas de retención para implementar una programación de retención para su organización. Al utilizar el script y los archivos.csv proporcionados, podrá crear y publicar etiquetas de retención y directivas de etiquetas de retención de forma masiva utilizando PowerShell.
+ms.openlocfilehash: b2bf7f4a4934e1c5b0c88005e586dd6b0d38e3f9
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708234"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631600"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención de forma masiva con PowerShell
 
 En Office 365, puede usar etiquetas de retención para implementar una programación de retención en su organización. Como administrador de registros o responsable de cumplimiento normativo, puede que tenga que crear y publicar cientos de etiquetas de retención. Puede hacerlo mediante la interfaz de usuario del Centro de seguridad y cumplimiento, pero crear etiquetas de retención de una en una es laborioso e ineficiente.
   
-Si usa el script y los archivos .csv que se proporcionan a continuación, puede crear y publicar de forma masiva etiquetas de retención y directivas de etiquetas de retención. Primero, creará una lista de las etiquetas de retención y una lista de las directivas de etiquetas de retención en Excel y, después, creará de forma masiva las etiquetas de retención y las directivas de etiquetas de retención en esas listas con PowerShell. Esto permite crear y publicar al mismo tiempo y con mayor facilidad todas las etiquetas de retención que necesita la programación de retención.
+Al utilizar el script y los archivos.csv proporcionados, podrá crear y publicar etiquetas de retención y directivas de etiquetas de retención de forma masiva. En primer lugar, cree una lista de las etiquetas de retención y una lista de las directivas de etiquetas de retención en Excel, y luego utilice PowerShell para crear las etiquetas de retención y las directivas de etiquetas de retención de forma masiva en esas listas. Así es más fácil crear y publicar a la vez todas las etiquetas de retención que necesita para su programación de retención.
   
 Para obtener más información sobre las etiquetas de retención, vea [Información general sobre etiquetas de retención](labels.md).
   
@@ -65,11 +65,11 @@ Para obtener más información sobre los valores de parámetro para este cmdlet,
   
 Notas:
   
-- Si no especifica un archivo de origen para publicar etiquetas de retención, el script creará etiquetas de retención (vea la sección anterior), pero no las publicará.
+- Si no proporciona un archivo de origen para publicar etiquetas de retención, el script creará etiquetas de retención (vea la sección anterior), pero no las publicará.
     
 - Si el archivo .csv contiene una directiva de etiquetas de retención con el mismo nombre de una que ya exista, el script omitirá la creación de esa directiva de etiquetas de retención. No se crean directivas de etiquetas de retención duplicadas.
     
-- El script solo publica las etiquetas de retención que se aplican de forma manual en el contenido. Este script no admite las etiquetas de retención que se aplican automáticamente en el contenido.
+- El script solo publica las etiquetas de retención que se aplican manualmente al contenido. Este script no es compatible con las etiquetas de retención que se aplican automáticamente al contenido.
     
 - Si cambia el nombre o modifica los encabezados de columna, el script producirá errores. El script necesita un archivo .csv con el formato especificado aquí.
     

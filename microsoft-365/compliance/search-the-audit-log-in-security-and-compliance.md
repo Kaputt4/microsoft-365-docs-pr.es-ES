@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39233523"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634047"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -58,6 +58,8 @@ ms.locfileid: "39233523"
 - Actividad de analista y administrador en Microsoft Workplace Analytics
 
 - Actividad de usuario y administrador en Microsoft PowerApps
+
+- Actividad de usuario y administrador en Microsoft Forms
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -125,7 +127,9 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
   |SharePoint en línea y OneDrive para Empresas|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Yammer||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  ||||
 
 - Azure Active Directory (AD) es el servicio de directorio para Office 365. El registro de auditoría unificado contiene actividades de usuario, dominio, aplicación, grupo y de directorio que se han realizado en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
 
@@ -302,7 +306,7 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
 |[Actividades de eDiscovery avanzado](#advanced-ediscovery-activities)|[Actividades de Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Actividades de Microsoft Teams](#microsoft-teams-activities)|[Actividades de Microsoft Teams para Sanidad](#microsoft-teams-healthcare-activities)|[Actividades de Yammer](#yammer-activities)|
 |[Actividades de Microsoft Flow](#microsoft-flow-activities)|[Actividades Microsoft PowerApps](#microsoft-powerapps)|[Actividades de Microsoft Stream](#microsoft-stream-activities)|
-[Actividades de administración de Exchange](#exchange-admin-audit-log)|||
+|[Actividades de Microsoft Forms](#microsoft-forms-activities)|[Actividades de administración de Exchange](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Actividades de páginas y archivos
@@ -776,6 +780,43 @@ Puede buscar el registro de auditoría actividades relacionadas en PowerApps. En
 ### <a name="microsoft-stream-activities"></a>Actividades de Microsoft Stream
 
 Puede buscar el registro de auditoría para actividades en Microsoft Stream. Entre estas actividades se incluyen las actividades de vídeo efectuadas por los usuarios, las actividades de canal de grupo y las actividades de administración, como la administración de usuarios, administración de la configuración de la organización y exportación de informes. Para obtener una descripción de estas actividades, consulte la sección "actividades iniciadas en Microsoft Stream " en[ registros de auditoría de Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+
+### <a name="microsoft-forms-activities"></a>Actividades de Microsoft Forms
+
+En la siguiente tabla se enumeran las actividades de usuario y administración en Microsoft Forms que han sido archivadas en el registro de auditoría de Office 365. Microsoft Forms es una herramienta de formularios, cuestionarios y encuestas utilizado para recopilar datos para su análisis. 
+
+A continuación, en las descripciones, algunas operaciones contienen parámetros de actividad adicionales.
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Comentario creado|CreateComment|El propietario del formulario ha añadido comentarios o puntuaciones a un cuestionario.|
+|Formulario creado|CreateForm|Un nuevo formulario ha sido creado por el propietario.|
+|Formulario editado|EditForm|Al crear, eliminar o editar una pregunta, el propietario del formulario lo edita. <br><br>La propiedad EditOperation: La cadena indica el nombre de la operación de edición. Las operaciones posibles son: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage y ChangeTheme.  <br><br>La mayoría de los nombres de las operaciones se explican por sí solos. <br><br>FormImage incluye cualquier lugar dentro de los formularios en los que el usuario pueda subir una imagen, como en la cadena de consulta o como tema en la imagen de fondo.|
+|Formulario movido|MoveForm|Un formulario ha sido movido por el propietario. <br><br>La propiedad DestinationUserId: la cadena indica el ID de usuario de la persona que ha movido el formulario. La propiedad NewFormId: la cadena es el nuevo ID para el formulario recién copiado.|
+|Formulario eliminado|DeleteForm|Un formulario ha sido eliminado por el propietario. Esto incluye SoftDelete (eliminar la opción utilizada y mover el formulario a la papelera de reciclaje) y HardDelete (Se vacía la papelera de reciclaje).|
+|Formulario visto (tiempo de diseño)|ViewForm|Un formulario existente ha sido abierto por el propietario para su edición.|
+|Vista previa del formulario|PreviewForm|Un formulario ha sido previsualizado por el propietario con la función vista previa.|
+|Formulario exportado|ExportForm|Los resultados han sido exportado a Excel por el propietario del formulario. <br><br>La propiedad ExportFormat: la cadena indicará si el archivo de Excel se puede descargar o ver en línea.|
+|Formulario de participación permitida para su copia|AllowShareFormForCopy|Para compartir el formulario con otros usuarios el propietario ha creado un vínculo en una plantilla. Este evento es registrado cuando el propietario del formulario hace clic para generar una dirección URL en la plantilla.|
+|Formulario de participación no permitida para su copia|DisallowShareFormForCopy|El propietario del formulario ha eliminado el vínculo en la plantilla.|
+|Co-autor del formulario añadido|AddFormCoauthor|Para ayudar a diseñar y ver respuestas el usuario utiliza un vínculo de colaboración. Este evento es registrado cuando un usuario utiliza una dirección URL de colisión (no ocurre cuando se genera la URL de colisión por primera vez).|
+|Co-autor del formulario quitado|RemoveFormCoauthor|El propietario del formulario ha eliminado el vínculo de colaboración.|
+|Página de respuesta visualizada|ViewRuntimeForm|El usuario ha abierto una página de respuesta para su visualización. Este evento es registrado independientemente de si el usuario envía una respuesta o no.|
+|Respuesta creada|CreateResponse|Es similar a recibir una nueva respuesta.  Un usuario ha enviado una respuesta a un formulario. <br><br>La propiedad ResponseId: la cadena y la propiedad ResponderId: ambas indican el resultado que está siendo visualizado. <br><br>Para un respondedor anónimo, la propiedad de ResponderId será nula.|
+|Respuesta actualizada|UpdateResponse|El propietario del formulario ha actualizado un comentario o la puntuación en un cuestionario. <br><br>La propiedad ResponseId: la cadena y la propiedad ResponderId: ambas indican el resultado que está siendo visualizado. <br><br>Para un respondedor anónimo, la propiedad de ResponderId será nula.|
+|Eliminar todas las respuestas |DeleteAllResponses|Todos los datos de respuesta han sido eliminadas por el propietario del formulario |
+|Respuesta eliminada|DeleteResponse|El propietario del formulario ha eliminado una respuesta. <br><br>Property ResponseId: la cadena indicará la respuesta que está siendo eliminada.|
+|Respuestas vistas|ViewResponses|El propietario del formulario ha visualizado la lista agregada de respuestas. <br><br>La Propiedad ViewType: la cadena indica si el propietario del formulario está visualizando la lista detallada o agregada.|
+|Respuesta vista|ViewResponse|El propietario del formulario visualiza una respuesta concreta. <br><br>La propiedad ResponseId: la cadena y la propiedad ResponderId: ambas indican el resultado que está siendo visualizado. <br><br>Para un respondedor anónimo, la propiedad de ResponderId será nula.|
+|Vínculo de resumen creado|GetSummaryLink|El propietario del formulario ha creado un vínculo de resumen de resultados para ser compartidos.|
+|Vínculo de resumen eliminado|DeleteSummaryLink|El enlace de resumen de resultados ha sido eliminado por el propietario del formulario.|
+|Estado de phishing actualizado del formulario|UpdatePhishingStatus|Este evento se registra siempre que el valor detallado del estado de seguridad interna haya cambiado, independientemente de si ha cambiado el estado de seguridad final (por ejemplo, el formulario ahora se encuentra Cerrado o Abierto). Esto significa que usted puede ver eventos duplicados sin un cambio final en el Estado de Seguridad.|
+|Invitación a Forms Pro enviada|ProInvitation|El usuario hace clic para activar la versión de prueba Pro.|
+|Configuración de formulario actualizada|UpdateFormSetting|La configuración del formulario ha sido actualizada por el propietario. <br><br>La propiedad FormSettingName: la cadena indica el nombre y el nuevo valor de la configuración.|
+|Configuración del usuario actualizada |UpdateUserSetting|La configuración del usuario ha sido actualizada por el propietario del formulario. <br><br>La propiedad UserSettingName: la cadena indica el nombre y el nuevo valor de la configuración|
+|Formularios en la lista|ListForms|La lista de formularios está siendo visualizada por el propietario. <br><br>La propiedad ViewType: la cadena indicará sobre la visualización que busca el propietario del formulario: todos los formularios, compartidos conmigo o en grupos|
+|Respuesta enviada|SubmitResponse|Un usuario envía una respuesta sobre un formulario. <br><br>La propiedad IsInternalForm: booleano indicará si el respondedor está dentro de la misma organización que el propietario del formulario.|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange
 
