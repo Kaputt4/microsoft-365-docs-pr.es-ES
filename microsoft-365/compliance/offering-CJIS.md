@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 069f4dac1b04a75ff30339f8cecde4e8f82c044a
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 7fb31d007b7935d8a2beef93b80ca1958c7a3a27
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699740"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668818"
 ---
 # <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>Oferta de cumplimiento: Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
 
@@ -40,12 +40,12 @@ Obtenga información sobre las ventajas de la Directiva de seguridad de CJIS en 
 
 Obtenga información sobre cómo acelerar la Directiva de seguridad de CJIS con nuestro proyecto de Azure Security and Compliance: [descargar las instrucciones de implementación de CJIS para Microsoft Government Cloud Services](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
 - [Office 365 para el gobierno de Estados Unidos](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Servicio en la nube de Power BI, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365
+- El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
@@ -71,8 +71,6 @@ Póngase en contacto con el representante de su cuenta de Microsoft para obtener
 
 Microsoft firma un acuerdo de información con un State CJIS Systems Agency (CSA); puede solicitar una copia desde el CSA del estado. Además, Microsoft proporciona a los clientes información detallada sobre seguridad, privacidad y cumplimiento. Los clientes también pueden revisar los informes de seguridad y cumplimiento preparados por auditores independientes para que puedan validar que Microsoft ha implementado controles de seguridad (como ISO 27001) apropiados para el ámbito de auditoría correspondiente.
 
-Los Estados con documentación de CJIS apropiada, a partir del 2017 de agosto, incluyen: Alaska, Arizona, Arkansas, California, Colorado, Hawai, Georgia, Illinois, Indiana, Iowa, Kansas, Kentucky, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nevada, Nueva Jersey , Nueva York, Carolina del norte, Oregón, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Virginia, Utah, Vermont y Washington.
-
 **¿Dónde empezaré con el esfuerzo de cumplimiento de mi agencia?**
 
 La [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy) cubre las precauciones que debe tomar su agencia para proteger CJI. Además, el representante de su cuenta de Microsoft puede ponerse en contacto con los usuarios familiarizados con los requisitos de su jurisdicción
@@ -83,10 +81,10 @@ La [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy) cubre l
 - [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy)
 - [CJIS de la Directiva de seguridad de la versión 5,3](https://aka.ms/cjis-backgrounder)
 - [Directrices de implementación de CJIS para el gobierno de Azure](https://aka.ms/cjisimplementationguidelines)
-- [Marco de cumplimiento de Hub de Microsoft Common Controls](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Nube de Microsoft Government](https://go.microsoft.com/fwlink/?linkid=2087246)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/?linkid=2087246)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf).

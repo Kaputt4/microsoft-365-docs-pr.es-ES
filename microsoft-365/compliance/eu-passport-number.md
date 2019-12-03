@@ -1,7 +1,7 @@
 ---
 title: Número de pasaporte de la UE
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 8/16/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de pasaporte de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: fa3be04dec0f71a2568e046abd6b0af3e20181c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 44ee6e7b46d79772bcd3aec0fd26265f58f6c4c6
+ms.sourcegitcommit: 3fd6d175c1954ce463198e835d1d8f2f91d80d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092472"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39662805"
 ---
 # <a name="eu-passport-number"></a>Número de pasaporte de la UE
 
@@ -27,7 +27,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
 
 Una letra seguida de un espacio opcional y siete dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una combinación de una letra, siete dígitos y un espacio:
   
@@ -72,7 +72,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras seguidas de seis dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras y seguidas de seis dígitos
   
@@ -111,7 +111,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
  Nueve dígitos 
   
@@ -150,7 +150,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
  Nueve dígitos 
   
@@ -189,7 +189,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Una letra seguida de 6-8 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una letra seguida de seis a ocho dígitos
   
@@ -228,7 +228,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos sin espacios ni delimitadores
   
@@ -267,7 +267,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
  Nueve dígitos 
   
@@ -306,7 +306,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Una letra seguida de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una letra seguida de siete dígitos
   
@@ -349,7 +349,7 @@ Para obtener más información, consulte la sección "número de pasaporte de Fr
   
 ## <a name="germany"></a>Alemania
 
-Para obtener más información, consulte la sección "número de pasaporte de Alemania" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número de pasaporte en alemán" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grecia
 
@@ -357,7 +357,7 @@ Para obtener más información, consulte la sección "número de pasaporte de Al
 
 Dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras seguidas de siete dígitos
   
@@ -396,7 +396,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras seguidas por seis u siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras seguidas por seis o siete dígitos
   
@@ -435,7 +435,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras o dígitos seguidos de siete dígitos:
   
@@ -478,7 +478,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras o dígitos seguidos de siete dígitos:
   
@@ -521,7 +521,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras o dígitos seguidos de siete dígitos:
   
@@ -564,7 +564,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Ocho dígitos o letras sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos o letras (no distingue entre mayúsculas y minúsculas)
   
@@ -603,7 +603,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Ocho dígitos o letras sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos o letras (no distingue entre mayúsculas y minúsculas)
   
@@ -642,7 +642,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
  Siete dígitos 
   
@@ -681,7 +681,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve letras o dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve letras o dígitos
   
@@ -724,7 +724,7 @@ Para obtener más información, consulte la sección "número de pasaporte de Po
 
 Una letra seguida de seis dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una letra seguida de seis dígitos:
   
@@ -767,7 +767,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Ocho o nueve dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho o nueve dígitos
   
@@ -806,7 +806,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Un dígito o letra seguido de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Un dígito o letra (no distingue entre mayúsculas y minúsculas) seguido de siete dígitos
   
@@ -845,7 +845,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras seguidas de siete dígitos:
   
@@ -890,7 +890,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Una combinación de letras y números de ocho o nueve caracteres sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una combinación de letras y números de ocho o nueve caracteres:
   
@@ -937,7 +937,7 @@ Para obtener más información, consulte la sección "número de pasaporte de Su
 
 Para obtener más información, consulte la sección "Estados Unidos/Reino Unido Número de pasaporte "en [lo que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Recursos adicionales
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 
