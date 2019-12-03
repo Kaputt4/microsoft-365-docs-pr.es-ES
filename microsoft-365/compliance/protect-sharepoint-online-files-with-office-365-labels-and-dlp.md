@@ -18,16 +18,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique directivas de etiquetas de retención y de prevención de pérdida de datos (DLP) a sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: 4c9eb83cbde7d54706f109484257e97c22c4733c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: c40261df8203841e3627a0d7a0c09c7f88a02a6b
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631025"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668878"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteger archivos de SharePoint Online con DLP y etiquetas de retención
 
-Siga los pasos de este artículo para diseñar e implementar directivas de etiquetas de retención y de prevención de pérdida de datos (DLP) para sitios de grupo de base de referencia, confidenciales y extremadamente confidenciales de SharePoint Online. Para más información sobre estos tres niveles de protección, vea [Proteger sitios y archivos de SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection).
+Siga los pasos de este artículo para diseñar e implementar directivas de etiquetas de retención y de prevención de pérdida de datos (DLP) para sitios de grupo de base de referencia, confidenciales y extremadamente confidenciales de SharePoint Online. Para más información sobre estos tres niveles de protección, vea [Proteger sitios y archivos de SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md).
   
 ## <a name="how-this-works"></a>Cómo funciona
 
@@ -150,7 +150,7 @@ Siga estos pasos para configurar una directiva de DLP que notifique a los usuari
     
 14. En el panel **Customize policy tips and email notifications** (Personalizar sugerencias de directiva y notificaciones de correo electrónico), haga clic en **Customize the policy tip text** (Personalizar el texto de la sugerencia de directiva).
     
-15. En el cuadro de texto, escriba o pegue una de las siguientes sugerencias, dependiendo de si está utilizando etiquetas de sensibilidad para proteger los archivos más confidenciales:
+15. En el cuadro de texto, escriba o pegue una de las siguientes sugerencias, dependiendo de si está utilizando etiquetas de confidencialidad opcionales para proteger los archivos confidenciales:
     
   - Para compartir con un usuario de fuera de la organización, descargue el archivo y luego ábralo. Haga clic en Archivo, Proteger documento y Cifrar con contraseña y, luego, especifique una contraseña segura. Envíe la contraseña en un correo electrónico diferente u otro medio de comunicación.
   - Los archivos extremadamente confidenciales están protegidos con cifrado. Solo pueden leerlos aquellos usuarios externos a los que su departamento de TI les ha concedido permiso para acceder a los archivos.

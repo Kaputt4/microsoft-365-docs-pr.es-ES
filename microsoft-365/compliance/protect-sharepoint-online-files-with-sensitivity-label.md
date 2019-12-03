@@ -18,18 +18,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Resumen: aplique Azure Information Protection para proteger los archivos en un sitio de grupo de SharePoint Online altamente confidencial.'
-ms.openlocfilehash: b5251d393249e9023f6f437cb3df6c074ebdf436
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39638064"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668808"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Proteger los archivos de SharePoint Online con DLP y etiquetas de confidencialidad
 
 Siga los pasos de este artículo para configurar una etiqueta de confidencialidad de Office 365 que proporcione cifrado y permisos para los archivos. Estos archivos se pueden agregar a una biblioteca de SharePoint configurada para una protección extremadamente confidencial. También puede abrir un archivo directamente desde el sitio y aplicar la etiqueta. La protección de cifrado y permisos viaja con un archivo aunque este se descargue del sitio. 
 
-Estos pasos son parte de una solución más grande para la configuración de protección confidencial para sitios de SharePoint y los archivos de estos sitios. Para obtener más información, consulte [Protección de archivos y sitios de SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection). 
+Estos pasos son parte de una solución más grande para la configuración de protección confidencial para sitios de SharePoint y los archivos de estos sitios. Para obtener más información, consulte [Protección de archivos y sitios de SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md). 
 
 Usar etiquetas de confidencialidad para los archivos de SharePoint Online no es recomendable para todos los clientes, pero es una opción para aquellos que necesitan este nivel de protección de un subconjunto de archivos.
 
@@ -44,7 +44,7 @@ Para lograr este nivel extra de seguridad en los archivos en un sitio de grupo e
 
 - Usar una etiqueta de confidencialidad cuando necesite un número reducido de etiquetas tanto para los equipos de uso global como para los individuales privados.
 
-- Use una subetiqueta de confidencialidad cuando tenga un gran número de etiquetas o quiera organizar etiquetas para equipos extremadamente confidenciales bajo la etiqueta altamente regulada.
+- Use una subetiqueta de confidencialidad cuando tenga un gran número de etiquetas o quiera organizar etiquetas para equipos extremadamente confidenciales bajo la etiqueta de uso general para archivos extremadamente confidenciales.
 
 Siga [estas instrucciones ](encryption-sensitivity-labels.md) para configurar una etiqueta o subetiqueta aparte con la siguiente configuración:
 
@@ -67,7 +67,7 @@ Hay dos maneras de conceder a los usuarios externos el acceso a archivos protegi
 
 ## <a name="see-also"></a>Vea también
 
-[Protección de archivos y sitios de SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[Protección de archivos y sitios de SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
