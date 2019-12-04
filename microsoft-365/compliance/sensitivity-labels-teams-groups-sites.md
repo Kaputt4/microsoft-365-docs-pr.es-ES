@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede aplicar etiquetas a Microsoft Teams, a los grupos de Office 365 y a los sitios de SharePoint.
-ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
+ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818842"
+ms.locfileid: "39819136"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)
 
@@ -77,15 +77,15 @@ Estas imágenes muestran:
   }
 ```
 
-Office 365 ya no usa las clasificaciones antiguas para nuevos grupos y sitios de SharePoint cuando habilita esta vista previa. Si usó la [clasificación de sitios de Azure ad](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["ClassificationList"]), los grupos y sitios existentes seguirán mostrando las clasificaciones antiguas. Para mostrar las clasificaciones nuevas, conviértalos. Para obtener información sobre cómo convertirlos, vea [si usó la clasificación clásica de sitios de Azure ad](#if-you-used-classic-azure-ad-site-classification).
+Office 365 ya no usa las clasificaciones antiguas para nuevos grupos y sitios de SharePoint cuando habilita esta vista previa. Si usó la [clasificación de sitios de Azure ad](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["ClassificationList"]), los grupos y sitios existentes seguirán mostrando las clasificaciones antiguas. Para mostrar las clasificaciones nuevas, conviértalos. Para obtener información sobre cómo convertirlos, vea [si usó la clasificación clásica de sitios de Azure ad](#if-you-used-classic-azure-ad-site-classification). 
 
-## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Establecer la configuración de sitios y grupos al crear (o editar) etiquetas de confidencialidad
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Establecer la configuración de sitios y grupos al crear o editar etiquetas de confidencialidad
 
-Después de habilitar la vista previa, siga estos pasos para crear las etiquetas de confidencialidad. Los cambios en esta configuración pueden tardar hasta 24 horas en sincronizarse.
+Después de habilitar la vista previa, siga estos pasos para crear o editar las etiquetas de confidencialidad. Debe completar estos pasos para que las nuevas etiquetas de confidencialidad funcionen con sitios y grupos, incluso si ya tiene etiquetas definidas. Los cambios en esta configuración pueden tardar hasta 24 horas en sincronizarse.
 
 1. En el centro de cumplimiento de Microsoft 365, seleccione**etiquetas de sensibilidad**de **clasificación** > .
 
-2. Seleccione **crear una etiqueta**.
+2. Seleccione **crear una etiqueta**. Si ya tiene una etiqueta, vaya al paso siguiente.
 
 3. Seleccione las opciones que desee y, a continuación, en la pestaña **configuración de sitio y grupo** , elija:
 
@@ -97,6 +97,14 @@ Después de habilitar la vista previa, siga estos pasos para crear las etiquetas
 
 > [!IMPORTANT]
 > Solo la configuración de sitio y grupo surte efecto cuando se aplica una etiqueta a un equipo, grupo o sitio. Otras opciones, como el cifrado y la marcación de contenido, no se aplican a todo el contenido dentro del equipo, grupo o sitio. De forma similar, si crea una etiqueta y no activa la configuración de sitio y grupo, la etiqueta seguirá estando disponible cuando los usuarios creen equipos, grupos y sitios, pero no hará nada cuando los usuarios lo apliquen.
+
+[Obtener información sobre cómo publicar una etiqueta de confidencialidad](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+
+## <a name="troubleshoot-sensitivity-label-deployment"></a>Solucionar problemas de implementación de etiqueta de confidencialidad
+
+Si experimenta problemas al crear un grupo de Teams o 365 de Office después de habilitar esta configuración o realizar un cambio en la descripción de la etiqueta, guarde la etiqueta, espere unas cuantas horas y, a continuación, vuelva a intentar crear el grupo de Office 365 o equipo.
+
+Si sigue sin poder ver la nueva etiqueta de confidencialidad de SharePoint Online, póngase en contacto con el soporte técnico de Microsoft inmediatamente.
 
 [Obtener información sobre cómo publicar una etiqueta de confidencialidad](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
