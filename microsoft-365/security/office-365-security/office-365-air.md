@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Introducción al uso de las capacidades de respuesta a incidentes automatizada en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 13f7e95829b8cf3adf17a40cf7b02c5322b15ea7
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 9db3a788f5a2f2c7101b5165935884c1d76bccbd
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673426"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813870"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Investigar y responder automáticamente ante amenazas en Office 365
 
@@ -35,17 +35,6 @@ Con AIR, cuando se desencadenan determinadas alertas, se inician una o más guí
 - [Ver los detalles de una investigación](#view-details-of-an-investigation)
 - [Revisión y aprobación de acciones como resultado de una investigación](#review-and-approve-actions) 
 - [Ver los detalles de una alerta relacionada con una investigación](#view-details-about-an-alert-related-to-an-investigation)
-
-> [!NOTE]
-> Debe tener los permisos adecuados para realizar las tareas descritas en este artículo. Por ejemplo, Myst ser un administrador global, un administrador de seguridad, un operador de seguridad o un lector de seguridad. [Obtenga más información sobre los roles y permisos de Microsoft 365 Security Center](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
-
-AIR se incluye en las siguientes suscripciones:
-- Microsoft 365 E5
-- Seguridad de Microsoft 365 E5
-- Office 365 E5
-- Protección contra amenazas avanzada de Office 365 (plan 2)
-
-Si no tiene una de estas suscripciones, [inicie una prueba gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="view-details-of-an-investigation"></a>Ver los detalles de una investigación
 
@@ -111,7 +100,7 @@ Si su organización usa una solución de informes personalizada o de terceros, p
 
 Use los siguientes recursos para configurar esto:
 
-|Recurso  |Descripción  |
+|Resource  |Description  |
 |---------|---------|
 |[Información general de las API de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |La API de actividad de administración de Office 365 proporciona información sobre diversas acciones y eventos de usuario, administrador, sistema y directiva de los registros de actividad de Office 365 y Azure Active Directory.         |
 |[Introducción a las API de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |La API de administración 365 de Office usa Azure AD para proporcionar servicios de autenticación para que la aplicación tenga acceso a los datos de Office 365. Siga los pasos de este artículo para configurarlo.          |
@@ -120,10 +109,8 @@ Use los siguientes recursos para configurar esto:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Más información acerca de las alertas](../../compliance/alert-policies.md)
-
-[Buscar y investigar manualmente el correo electrónico malintencionado que se entregó en Office 365](investigate-malicious-email-that-was-delivered.md)
-
-[Obtener información sobre AIR en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-
-[Visite el plan de desarrollo de Microsoft 365 para ver lo que estará próximamente y que se implementará](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Descubra cómo obtener acceso a AIR y ver los permisos necesarios](automated-investigation-response-office.md#how-to-get-air)
+- [Más información acerca de las alertas](../../compliance/alert-policies.md)
+- [Buscar y investigar manualmente el correo electrónico malintencionado que se entregó en Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Obtener información sobre AIR en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Visite el plan de desarrollo de Microsoft 365 para ver lo que estará próximamente y que se implementará](https://www.microsoft.com/microsoft-365/roadmap?filters=)

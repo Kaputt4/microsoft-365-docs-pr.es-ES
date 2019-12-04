@@ -1,9 +1,9 @@
 ---
-title: Usar etiquetas de confidencialidad con Microsoft Teams, Office 365 grupos y sitios de SharePoint (versión preliminar pública)
+title: Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/13/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede aplicar etiquetas a Microsoft Teams, a los grupos de Office 365 y a los sitios de SharePoint.
-ms.openlocfilehash: 5fc7fec199482449baf9174d6e854d0a5564faa6
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687813"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818842"
 ---
-# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad con Microsoft Teams, Office 365 grupos y sitios de SharePoint (versión preliminar pública)
+# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)
 
 Al crear etiquetas de confidencialidad en el [centro de cumplimiento de microsoft 365](https://protection.office.com/), ahora puede aplicarlas a Microsoft Teams, a los grupos de Office 365 y a los sitios de SharePoint. Puede asociar directivas con las etiquetas para controlar:
 
@@ -37,6 +37,8 @@ Ahora, también puede habilitar las etiquetas de confidencialidad para los archi
 ## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>Información sobre la versión preliminar pública para Microsoft Teams, Office 365 grupos y sitios de SharePoint
 
 Las etiquetas de confidencialidad para Microsoft Teams, Office 365 grupos y sitios de SharePoint se implementan gradualmente para los inquilinos y podrían cambiar antes de la versión final.
+
+La versión preliminar pública no funciona con las redes de entrega de contenido (CDN) de Office 365.
 
 ## <a name="overview"></a>Información general
 
@@ -77,9 +79,9 @@ Estas imágenes muestran:
 
 Office 365 ya no usa las clasificaciones antiguas para nuevos grupos y sitios de SharePoint cuando habilita esta vista previa. Si usó la [clasificación de sitios de Azure ad](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["ClassificationList"]), los grupos y sitios existentes seguirán mostrando las clasificaciones antiguas. Para mostrar las clasificaciones nuevas, conviértalos. Para obtener información sobre cómo convertirlos, vea [si usó la clasificación clásica de sitios de Azure ad](#if-you-used-classic-azure-ad-site-classification).
 
-## <a name="set-site-and-group-settings-when-you-create-sensitivity-labels"></a>Establecer la configuración de sitios y grupos al crear etiquetas de confidencialidad
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Establecer la configuración de sitios y grupos al crear (o editar) etiquetas de confidencialidad
 
-Después de habilitar la vista previa, siga estos pasos:
+Después de habilitar la vista previa, siga estos pasos para crear las etiquetas de confidencialidad. Los cambios en esta configuración pueden tardar hasta 24 horas en sincronizarse.
 
 1. En el centro de cumplimiento de Microsoft 365, seleccione**etiquetas de sensibilidad**de **clasificación** > .
 

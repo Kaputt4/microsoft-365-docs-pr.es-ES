@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 93c7cca75f513008706b4a52b4bbc1bc033341aa
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: 5eb91a45d844863b27ee208bda2bee812789851e
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830488"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813850"
 ---
 # <a name="device-configuration"></a>Configuración de dispositivos
 
@@ -20,25 +20,18 @@ ms.locfileid: "35830488"
 
 <!-- Device configuration and Security Addendum-->
 
-Cuando se está configurando un nuevo dispositivo de escritorio administrado por Microsoft, se asegura de que dispone de la configuración adecuada para el escritorio administrado de Microsoft. Esto incluye un conjunto de directivas predeterminadas que se establecen como parte del proceso de incorporación. Para evitar conflictos, no modifique estas directivas. 
+Cuando se está configurando un nuevo dispositivo de escritorio administrado por Microsoft, se asegura de que dispone de la configuración adecuada para el escritorio administrado de Microsoft. Esto incluye un conjunto de directivas predeterminadas que se establecen como parte del proceso de incorporación. Estas directivas se proporcionan con la administración de dispositivos móviles (MDM) siempre que sea posible. Para obtener más información, vea [Administración de dispositivos móviles](https://docs.microsoft.com/windows/client-management/mdm/). 
 
-Los dispositivos llegarán con una imagen de firma y, a continuación, se unirán al dominio de Active Directory de Azure cuando el primer usuario inicie sesión. El dispositivo instalará automáticamente las directivas y aplicaciones necesarias sin necesidad de que intervenga la TI.
+>[!NOTE]
+>Para evitar conflictos, no modifique estas directivas.
 
-## <a name="why-mdm-over-group-policy"></a>Por qué MDM sobre la Directiva de grupo
-
-Hay algunas razones para usar la administración de dispositivos móviles (MDM) en lugar de la Directiva de Grupo:
-
-- Seguridad: las directivas de MDM son más seguras. La Directiva de grupo está diseñada para funcionar mejor con la identidad local mientras que MDM diseñada para funcionar mejor con la administración de identidades en la nube (Azure Active Directory).
-- Confiabilidad: las directivas MDM proporcionan una implementación de directivas más fiable. Además, la configuración de MDM sobrescribe las directivas de objetos de directiva de grupo (GPO). A partir de Windows 10, versión 1803, la configuración de MDM tiene prioridad sobre los valores de directiva de grupo, lo que permite a los clientes cambiar a la administración moderna. 
-- Alineación con Microsoft Managed Desktop Vision: proporciona supervisión más completa sobre la implementación de directivas y admite el método basado en grupos para implementar gradualmente los cambios de directiva con la capacidad de pausar o reanudar la implementación cuando sea necesario.
-
-Para obtener más información, vea [Administración de dispositivos móviles](https://docs.microsoft.com/windows/client-management/mdm/). 
+Los dispositivos llegarán con una imagen de firma y, a continuación, se unirán al dominio de Active Directory de Azure cuando el primer usuario inicie sesión. El dispositivo instalará automáticamente las directivas y aplicaciones necesarias sin intervención del personal de ti.
 
 ## <a name="default-policies"></a>Directivas predeterminadas
 
 En esta tabla se resaltan las directivas predeterminadas que se aplican a todos los dispositivos de escritorio administrados por Microsoft durante el aprovisionamiento de dispositivos. Se revertirán todos los cambios detectados no aprobados por el equipo de operaciones de escritorio administrado por Microsoft para objetos administrados por el escritorio administrado por Microsoft.
 
-Directiva | Descripción
+Policy | Description
 --- | ---
 Línea de base de seguridad | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) para MDM está configurado para todos los dispositivos de escritorio administrados por Microsoft. Esta línea base es la configuración estándar del sector. Se publica, se prueba de forma pública y los expertos en seguridad de Microsoft lo han revisado para mantener seguras los dispositivos de escritorio y las aplicaciones administrados por Microsoft en el lugar de trabajo moderno. <br><br>Para mitigar las amenazas del panorama de la amenaza de seguridad en constante evolución, la línea base de seguridad de Microsoft se actualizará e implementará en los dispositivos de escritorio administrados por Microsoft con cada actualización de características de Windows 10.<br><br>Para obtener más información, consulte [Baseline Security para Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
 Plantilla de seguridad recomendada para escritorio administrado de Microsoft | Un conjunto de cambios recomendados en la línea de base de seguridad que optimizan la experiencia del usuario.  Estos cambios se documentan en [el apéndice de seguridad](#security-addendum). Las actualizaciones del anexo de Directiva se producen según sea necesario.  
@@ -48,7 +41,7 @@ Conexiones de uso medido | De forma predeterminada, las actualizaciones en conex
 
  ## <a name="security-addendum"></a>Apéndice de seguridad
 
- En esta sección se describen las directivas que se implementarán además de las directivas de escritorio administradas estándar de Microsoft que aparecen en [las directivas](#default-policies)predeterminadas. Esta configuración se ha diseñado teniendo en cuenta los servicios financieros y las industrias altamente reguladas, lo que optimiza la máxima seguridad al tiempo que mantiene la productividad del usuario.
+ En esta sección se describen las directivas que se implementarán además de las directivas de escritorio administradas estándar de Microsoft que aparecen en [las directivas predeterminadas](#default-policies). Esta configuración se ha diseñado teniendo en cuenta los servicios financieros y las industrias altamente reguladas, lo que optimiza la máxima seguridad al tiempo que mantiene la productividad del usuario.
 
  ### <a name="additional-security-policies"></a>Directivas de seguridad adicionales
 

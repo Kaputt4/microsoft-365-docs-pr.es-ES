@@ -3,7 +3,7 @@ title: Respuesta de incidente automatizada (AIR) en Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: dc1f2a4c0c91cf7b1e2d351f173367e34c5d3323
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673406"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813920"
 ---
 # <a name="automated-incident-response-air-in-office-365"></a>Respuesta de incidente automatizada (AIR) en Office 365
 
 Las capacidades de respuesta de incidente automatizada (AIR) le permiten ejecutar procesos de investigación automatizada en respuesta a amenazas bien conocidas que existen actualmente. AIR puede ayudar al equipo de operaciones de seguridad a operar de manera más eficiente y efectiva.
 - Para obtener información general sobre cómo funciona AIR, use este artículo.
 - Para empezar a usar AIR, consulte [investigar y responder automáticamente a amenazas en Office 365](office-365-air.md).
-
-> [!NOTE]
-> Debe ser administrador global, administrador de seguridad, operador de seguridad o lector de seguridad para obtener acceso a las funciones de AIR. Para obtener más información acerca de estos permisos, consulte [Microsoft 365 Security Center: roles y permisos](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 ## <a name="the-overall-flow-of-air"></a>Flujo general de aire
 
@@ -47,24 +44,22 @@ En las secciones siguientes se proporcionan más detalles sobre el aire, incluid
 
 Las [alertas](../../compliance/alert-policies.md#viewing-alerts) representan desencadenadores de flujos de trabajo del equipo de operaciones de seguridad para respuesta ante incidentes. Establecer prioridades en el conjunto de alertas adecuadas para la investigación, a la vez que asegurarse de que no hay amenazas sin direcciones, supone un reto. Cuando las investigaciones en las alertas se realizan manualmente, los equipos de operaciones de seguridad deben buscar y correlacionar las entidades (por ejemplo, el contenido, los dispositivos y los usuarios) en riesgo de amenazas. Estas tareas y flujos de trabajo son muy lentos y implican el uso de varias herramientas y sistemas. Con AIR, la investigación y la respuesta se automatizan en alertas clave de seguridad y administración de amenazas que activan automáticamente las guías de respuesta de seguridad. 
 
-En la versión inicial de AIR (a partir del 2019 de abril de 2007), las alertas generadas desde las siguientes directivas de alertas de eventos únicos se investigan automáticamente. 
+En la versión inicial de AIR (a partir del 2019 de abril de 2007), las alertas generadas a partir de los siguientes tipos de directivas de alertas de un solo evento se investigan automáticamente:  
 
 - Se ha detectado un clic en una dirección URL potencialmente malintencionada
-
 - Correo electrónico notificado por el usuario como phish *
-
 - Mensajes de correo electrónico que contienen malware quitados después de la entrega *
-
 - Mensajes de correo electrónico que contienen direcciones URL de phish quitadas después de la entrega *
-
 - Patrones de envío de correo electrónico sospechosos detectados #
-
 - El usuario restringió el envío de correo electrónico #
 
 > [!NOTE]
 > A las alertas marcadas con un asterisco (*) se les asigna una gravedad *informativa* en las respectivas directivas de alerta en el centro de seguridad & cumplimiento, con las notificaciones de correo electrónico desactivadas. Las notificaciones por correo electrónico se pueden activar a través de la configuración de la [Directiva de alerta](../../compliance/alert-policies.md#alert-policy-settings). Las alertas marcadas con un hash (#) están normalmente disponibles como alertas asociadas con las guías de vista previa pública.
 
-Para ver las alertas, en el centro de seguridad & cumplimiento, elija **alertas** > **Ver alertas**. Seleccione una alerta para ver sus detalles y, desde allí, use el vínculo **Ver investigación** para ir a la [investigación](#investigation-graph)correspondiente. Tenga en cuenta que las alertas informativas están ocultas en la vista de alertas de forma predeterminada. Para verlos, debe cambiar el filtrado de alertas para incluir alertas informativas.
+Para ver las alertas, en el centro de seguridad & cumplimiento, elija **alertas** > **Ver alertas**. Seleccione una alerta para ver sus detalles y, desde allí, use el vínculo **Ver investigación** para ir a la [investigación](#investigation-graph)correspondiente. 
+
+> [!NOTE]
+> Las alertas informativas están ocultas de forma predeterminada en la vista de alertas. Para verlos, cambie el filtrado de alertas para incluir alertas informativas.
 
 Si su organización administra sus alertas de seguridad a través de un sistema de administración de alertas, un sistema de administración de servicios o un sistema de administración de eventos e información de seguridad (SIEM), puede enviar alertas de Office 365 a ese sistema mediante una notificación por correo electrónico o a través de la [API de actividad de administración de office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Las notificaciones de alerta de investigación a través de correo electrónico o API incluyen vínculos para acceder a las alertas en el centro de seguridad & cumplimiento, lo que permite que el administrador de seguridad asignado navegue rápidamente a la investigación.
 
@@ -124,8 +119,8 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |Amenazas encontradas | La investigación detectó amenazas, pero las amenazas no tienen acciones disponibles en el aire |
 |Corregido | La investigación ha finalizado y se ha corregido completamente (se han aprobado todas las acciones) |
 |Parcialmente remediado | La investigación ha finalizado y algunas de las acciones recomendadas se han aprobado |
-|Finalizado por el usuario | Un administrador terminó la investigación. |
-|Failed | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
+|Finalizada por el usuario | Un administrador terminó la investigación. |
+|Error | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
 |En cola por limitación | La investigación está esperando el análisis debido a las limitaciones del procesamiento del sistema (para proteger el rendimiento del servicio) |
 |Terminado con la limitación | La investigación no se pudo completar en el tiempo suficiente debido a las limitaciones de procesamiento del sistema y el volumen de investigación. Puede volver a desencadenar la investigación seleccionando el correo electrónico en el explorador y seleccionando la acción investigar. |
 
@@ -308,6 +303,15 @@ Office 365 AIR está incluido en las siguientes suscripciones:
 Si no tiene ninguna de estas suscripciones, [inicie una prueba gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
 
 Para obtener más información acerca de la disponibilidad de características, visite la [característica disponibilidad en los planes de protección contra amenazas avanzada (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## <a name="required-permissions-to-use-air-capabilities"></a>Permisos necesarios para usar capacidades de AIR
+
+Los permisos se conceden a través de determinadas funciones, como las que se describen en la tabla siguiente: 
+
+|Tarea |Roles necesarios |
+|--|--|
+|Para configurar las características de AIR |Uno de los siguientes: <br/>- **Administrador global**<br/>- **Administrador de seguridad** <br/>Estos roles se pueden asignar en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
+|Para aprobar o rechazar las acciones recomendadas|Una de las siguientes opciones (estos roles se pueden asignar en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>- **Administrador global** <br/>- **Administrador de seguridad**<br/>- **Lector de seguridad** <br/>---y---<br/>- **Búsqueda y depuración** (este rol solo se asigna en el [centro de cumplimiento de & de seguridad de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center))
 
 ## <a name="next-steps"></a>Pasos siguientes
 

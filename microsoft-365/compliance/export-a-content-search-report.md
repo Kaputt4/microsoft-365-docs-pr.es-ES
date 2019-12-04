@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportará.
-ms.openlocfilehash: 9fe006ba595920f938a4d070eb87987137d73f7e
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 5146120afd9ea36845f5a0d19619da35379438d5
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437790"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676797"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
@@ -44,15 +44,17 @@ Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que
     
   - Microsoft .NET Framework 4,7
     
-  - Un explorador compatible:
-    
-    - Microsoft Edge
-    
-      o
-    
-    - Microsoft Internet Explorer 10 y versiones posteriores
-    
-    **Nota:** Microsoft no fabrica extensiones de terceros o complementos para aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda con un explorador no compatible con extensiones de terceros o complementos. 
+- Debe usar uno de los siguientes exploradores compatibles para ejecutar la herramienta de exportación de exhibición de documentos electrónicos<sup>1</sup>:
+
+  - Microsoft Edge <sup>2</sup>
+
+    O BIEN
+
+  - Microsoft Internet Explorer 10 y versiones posteriores
+
+  > [!NOTE]
+  > <sup>1</sup> Microsoft no fabrica extensiones de terceros ni complementos para aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda con un explorador no compatible con extensiones de terceros o complementos.<br/>
+  > <sup>2</sup> como resultado de los últimos cambios realizados en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada. Para obtener instrucciones sobre cómo habilitar la compatibilidad con ClickOnce en Edge, consulte [use The Office 365 EDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
 
 - Si el tamaño total estimado de los resultados devueltos por una búsqueda de contenido supera los 2 TB, se producirá un error al exportar el informe. Para exportar correctamente el informe, intente restringir el ámbito y vuelva a ejecutar la búsqueda para que el tamaño estimado de los resultados sea inferior a 2 TB.
 

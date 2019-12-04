@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use clasificadores que se puedan entrenar cuando uno de los clasificadores de cuadros listos para usar no satisfaga sus necesidades. Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este tema se muestra cómo crear un clasificador personalizado.
-ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633987"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813378"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creación de un clasificador capacitado (versión preliminar)
 
@@ -28,6 +28,9 @@ Para obtener más información acerca de los diferentes tipos de clasificadores,
 Esta escala de tiempo refleja una implementación de ejemplo.
 
 ![trainable-Classifier-Timeline](media/trainable-classifier-deployment-timeline_border.png)
+
+> [!TIP]
+> La suscripción es necesaria la primera vez para los clasificadores que se deben entrenar. Se necesitan doce días para Microsoft 365 para completar una evaluación de línea de base del contenido de su organización.
 
 ## <a name="seed-content"></a>Contenido de inicialización
 
@@ -42,9 +45,6 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 
 > [!TIP]
 > Para obtener los mejores resultados, tenga 10.000 elementos en su conjunto de muestras de prueba con una distribución equitativa de las coincidencias negativas y positivas.
-
-> [!TIP]
-> La suscripción es necesaria la primera vez para los clasificadores que se deben entrenar. Se necesitan doce días para Microsoft 365 para completar una evaluación de línea de base del contenido de su organización.
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Cómo crear un clasificador que se pueda entrenar
 
@@ -107,6 +107,8 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 ![cuadro revisar elementos](media/classifier-trainable-review-detail.png)
 
 19. Revise *al menos* 200 elementos.
+
+<!-- insert Analyze steps here-->
 
 20. Continuar con la revisión hasta que la precisión alcance al menos el 70 `Publish the classifier` % y `Ready to use`el estado sea.
 

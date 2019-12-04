@@ -4,15 +4,16 @@ description: Información sobre cómo actualizar las aplicaciones de línea de n
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7aca4713aae189e39133e08a1fbcad6fd75e6a70
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012415"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813860"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Administrar aplicaciones de línea de negocio en el escritorio administrado por Microsoft
 
@@ -41,7 +42,7 @@ La aplicación actualizada se implementará en los dispositivos del usuario.
 ## <a name="update-line-of-business-apps-in-intune"></a>Actualizar las aplicaciones de línea de negocio en Intune
 
 **Para actualizar las aplicaciones de línea de negocio en Intune**
-1. Inicie sesión en [Azure portal](https://azure.portal.com).
+1. Inicie sesión en [Azure portal](https://portal.azure.com).
 2. Seleccione **todos los servicios** > de**Intune**. Intune se encuentra en la sección **Monitoring + Management** .
 3. Seleccione aplicaciones **cliente > aplicaciones**.
 4. Busque y seleccione su aplicación en la lista de aplicaciones.
