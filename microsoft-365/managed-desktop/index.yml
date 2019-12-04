@@ -24,26 +24,31 @@ sections:
             html: '<p>Introducción al escritorio administrado por Microsoft para los responsables de la toma de decisiones: Qué es, cómo funciona y qué puede hacer por usted</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_overview.svg'
+              alt: ''
             title: ¿Qué es el escritorio administrado por Microsoft?
           - href: service-description/index.md
             html: <p>Descripción detallada de todas las partes del escritorio administrado por Microsoft</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+              alt: ''
             title: Descripción del servicio
           - href: get-ready/index.md
             html: <p>Todos los pasos para conseguir que su entorno y su organización estén preparados para trabajar con el servicio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_support.svg'
+              alt: ''
             title: Preparación
           - href: get-started/index.md
             html: '<p>Obtener una organización a bordo con escritorio administrado por Microsoft, incluida la configuración de dispositivos y la implementación de aplicaciones</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+              alt: ''
             title: Introducción
           - href: working-with-managed-desktop/index.md
             html: <p>Sobre las operaciones diarias con el servicio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_portal.svg'
+              alt: ''
             title: Trabajar con el Escritorio administrado de Microsoft
   - title: Nuevos artículos y publicaciones de blog
     items:

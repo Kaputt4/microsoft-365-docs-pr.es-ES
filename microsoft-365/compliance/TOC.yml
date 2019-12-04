@@ -317,6 +317,8 @@
           href: export-search-results.md
         - name: Exportar un informe de búsqueda de contenido
           href: export-a-content-search-report.md
+        - name: Usar la herramienta de exportación de exhibición de documentos electrónicos en Microsoft Edge
+          href: configure-edge-to-export-search-results.md
         - name: Búsqueda y eliminación de mensajes de correo electrónico
           href: search-for-and-delete-messages-in-your-organization.md
         - name: Buscar los buzones basados en la nube de usuarios locales en Office 365
@@ -1106,7 +1108,7 @@
           items:
             - name: Ley de privacidad del consumidor de California (CCPA)
               href: offering-ccpa.md
-            - name: Ley de privacidad de Canadá
+            - name: Leyes de privacidad de Canadá
               href: offering-canadian-privacy-laws.md
         - name: Sudamérica
           items:
@@ -1114,7 +1116,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: "Office\_365 Empresa"
+- name: Office 365 Empresa
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
 - name: Seguridad de Microsoft 365
   href: 'https://docs.microsoft.com/microsoft-365/security/'
