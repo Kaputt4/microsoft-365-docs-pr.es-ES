@@ -58,7 +58,7 @@ A continuación, se muestra información sobre las notificaciones de incumplimie
     Un cliente puede tener constancia de una vulneración y querer ponerse en contacto con Microsoft. En este caso, notifíquelo al Soporte técnico de Microsoft, que se comunicará con los equipos de ingeniería para obtener más información.
 
 2. **[Azure y Dynamics 365](gdpr-breach-azure-dynamics.md)**  
-    Microsoft tiene un servicio de respuesta al incidente global 24x7 que sirve para reducir los efectos de los ataques en Microsoft Azure y Dynamics 365.
+    Microsoft tiene un servicio ininterrumpido y global de respuesta al incidente que sirve para reducir los efectos de los ataques en Microsoft Azure y Dynamics 365.
 
     - *Detección de vulneraciones*: ya que tanto Microsoft como el cliente tienen obligaciones de seguridad, los servicios de Azure usan un modelo de responsabilidad compartida para definir las responsabilidades operativas y de seguridad. Microsoft no supervisa ni responde a los incidentes de seguridad dentro del ámbito de responsabilidad del cliente. La respuesta a los incidentes del cliente puede implicar la colaboración con la [asistencia al cliente](https://azure.microsoft.com/support/options/) de Azure con contratos de servicio adecuados. Microsoft Azure también ofrece varios servicios (por ejemplo, [Azure Security Center](https://azure.microsoft.com/services/security-center/)) que los clientes pueden usar para desarrollar y administrar la respuesta a incidentes de seguridad.
 
