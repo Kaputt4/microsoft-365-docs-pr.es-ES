@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 12446dcb69b9f2324afcece9f230605fdcfcfdc8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034211"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39832001"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general sobre el centro de seguridad de Microsoft 365
 
@@ -25,9 +25,7 @@ La administración de la seguridad de su empresa para proteger contra un panoram
 
 Escriba Microsoft 365 Security Center (el nuevo hogar para la supervisión y la administración de la seguridad en las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura de Microsoft). Aquí puede ver fácilmente el estado de seguridad de su organización, actuar para configurar dispositivos, usuarios y aplicaciones, y obtener alertas para actividades sospechosas. El centro de seguridad 365 de Microsoft está diseñado específicamente para los administradores de seguridad y los equipos de operaciones de seguridad para administrar mejor y proteger su organización.
 
-El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365 son áreas de trabajo especializadas diseñadas para satisfacer las necesidades de los equipos de seguridad y los equipos de cumplimiento. Estas soluciones se integran en los servicios de Microsoft 365 y proporcionan información útil para ayudar a reducir los riesgos y proteger su información digital.
-
-[Obtenga más información y prepárese](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance) para el nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365.
+El nuevo centro de seguridad 365 de Microsoft y el [centro de cumplimiento de microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) son áreas de trabajo especializadas diseñadas para satisfacer las necesidades de los equipos de seguridad y los equipos de cumplimiento. Estas soluciones se integran en los servicios de Microsoft 365 y proporcionan información útil para ayudar a reducir los riesgos y proteger su información digital.
 
 Visite el centro de seguridad 365 de Microsoft en security.microsoft.com.  
 

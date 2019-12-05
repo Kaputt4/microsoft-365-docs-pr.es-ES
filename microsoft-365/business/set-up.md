@@ -13,24 +13,33 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre cómo configurar Microsoft 365 Business.
-ms.openlocfilehash: f29dbdb61636fdfe573a1a6920d0aed963b737ad
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 0001c2b9962f6cce0be1f77cbf427c68f9ee3249
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721497"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831311"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Configurar Microsoft 365 empresa en el Asistente de configuración
+
+Vea este vídeo para obtener información general sobre la configuración de Microsoft 365 Business.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Agregar el dominio, usuarios y configurar directivas
 
@@ -44,16 +53,18 @@ Al adquirir Microsoft 365 Business, tiene la opción de usar un dominio de su pr
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales de administrador global. 
 
-2. Elija **Agregar un dominio** o **Agregar usuarios** para iniciar el asistente.
+2. Elija **ir a la configuración** para iniciar el asistente.
+
+    ![Seleccione ir a la instalación.](media/gotosetupinadmincenter.png)
+
+3. En la página **instalar las aplicaciones de Office** , puede instalar de forma opcional las aplicaciones en su propio equipo.
+    
+4. En el paso **Agregar dominio** , escriba el nombre de dominio que desea usar (como contoso.com).
+
     > [!IMPORTANT]
     > Si compró un dominio durante el registro, no verá aquí **el paso agregar un dominio** . Vaya a [Agregar usuarios](#add-users-and-assign-licenses) en su lugar.
 
-    ![Seleccione ir a la instalación.](media/gotosetupinadmincenter.png)
-    
-3. En el asistente, escriba el nombre de dominio que desea usar (como contoso.com).
-
-
-    ![Captura de pantalla de la página Personalice su inicio de sesión.](media/personalizesignin.png)
+    ![Captura de pantalla de la página Personalice su inicio de sesión.](media/adddomain.png)
 
     
 4. Siga los pasos del Asistente para [crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) que compruebe que es el propietario del dominio. Si conoce el host del dominio, consulte también las [instrucciones específicas del host](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
@@ -76,13 +87,6 @@ Cualquier usuario que agregue en el asistente obtiene automáticamente una licen
 
 2. Una vez que haya agregado los usuarios, también obtendrá una opción para compartir las credenciales con los nuevos usuarios que ha agregado. Puede elegir imprimirlas, enviarlas por correo electrónico o descargarlas.
 
-3. En crear Microsoft Teams para su organización, puede elegir agregar Microsoft Teams y agregar usuarios a ellos. También puede hacerlo más adelante. Para obtener más información, vea [crear un equipo de toda la empresa](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
-
-4. Omita la migración de mensajes de correo electrónico y elija **Siguiente** en la página **Migrar los mensajes de correo electrónico**. 
-
-    Si va a cambiar de otro proveedor de correo electrónico y desea copiar los datos más adelante, puede [migrar el correo electrónico y los contactos a Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
-
-
 ### <a name="connect-your-domain"></a>Conectar el dominio
 
 > [!NOTE]
@@ -95,31 +99,29 @@ Para configurar servicios, es necesario actualizar algunos registros en su regis
     - Si tiene registros DNS existentes, por ejemplo, un sitio web existente, pero el host DNS está habilitado para la [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), elija **agregar registros**. En la página **elegir los servicios en línea** , acepte los valores predeterminados y elija **siguiente**y elija **autorizar** en la página del host DNS.
     - Si tiene registros DNS con otros hosts DNS (no habilitados para la conexión de dominio), querrá administrar sus propios registros DNS para asegurarse de que los servicios existentes permanecen conectados. Consulte [conceptos básicos de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) para obtener más información.
 
-        ![Conecte la página del dominio con Administraré mis propios registros DNS.](media/connectyourdomainpage.png)
+        ![Active la página de registros.](media/activaterecords.png)
 
 2. Siga los pasos del asistente y el correo electrónico y otros servicios se configurarán para usted.
 
-### <a name="protect-data-and-devices"></a>Proteger datos y dispositivos 
+### <a name="protect-your-organization"></a>Proteger la organización 
 
 Las directivas que configure en el asistente se aplican automáticamente a un [grupo de seguridad](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) denominado *todos los usuarios*. También puede crear grupos adicionales para asignar directivas en el centro de administración.
 
-1. En los **archivos de protección de su trabajo en dispositivos móviles**, la opción **proteger los archivos de trabajo cuando se pierdan o se roben dispositivos** se selecciona de forma predeterminada. Tiene una opción para activar **administrar la forma en que los usuarios obtienen acceso a los archivos de Office en dispositivos móviles**y se recomienda hacerlo.
+1. En el **aumento de la protección frente a las amenazas avanzadas de Cyber**, se recomienda que acepte los valores predeterminados para permitir que la [protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) examine los archivos y vínculos de las aplicaciones de Office.
 
-    ![Captura de pantalla de la página proteger archivos de trabajo en dispositivos móviles.](media/protectworkfilesondevices.png)
+    ![Captura de pantalla de la página aumentar protección.](media/increasetreatprotection.png)
 
-     - Expanda **proteger archivos de trabajo cuando se pierdan o se roben dispositivos** para mostrar los [valores predeterminados](protect-work-files-on-lost-or-stolen-device.md):
 
-        ![Captura de pantalla de los valores predeterminados para proteger los archivos en dispositivos perdidos.](media/protectworkfilesondevicesdefault.png)
+2. En la página **evitar pérdidas de datos confidenciales** , acepte los valores predeterminados para activar la prevención de pérdida de datos (DLP) de Office 365 para realizar un seguimiento de los datos confidenciales de las aplicaciones de Office y evitar el uso compartido accidental de estos fuera de la organización.
 
-    - Seleccione **administrar la forma en que los usuarios obtienen acceso a los archivos de Office en dispositivos móviles** y expándalo para mostrar los [valores predeterminados](manage-user-access-on-mobile-devices.md). Le recomendamos que acepte los valores predeterminados durante la configuración para crear directivas de aplicación para Android, iOS y Windows 10 que se aplican a todos los usuarios. Podrá crear más directivas cuando se complete la configuración.
+3. En la página **proteger datos en Office para móviles** , deje administración de aplicaciones móviles en, expanda la configuración y revise y, a continuación, seleccione **crear Directiva de administración de aplicaciones móviles**.
 
-        ![Captura de pantalla de la configuración de protección para los archivos de Office en dispositivos móviles.](media/useraccessonmobile.png)
+    ![Captura de pantalla de la página proteger datos en Office para móviles.](media/protectdatainmobile.png)
 
-2. El último paso sobre la protección de datos y dispositivos le permite configurar directivas para proteger los dispositivos Windows 10. Esta configuración se aplica automáticamente cuando Windows 10 de un usuario se conecta a su organización. Puede ampliar la **seguridad de los dispositivos Windows 10** para ver y modificar los [valores predeterminados](secure-windows-10-devices.md).
-3. También puede optar por [instalar automáticamente Office](install-office-on-windows-10-during-setup.md) en dispositivos Windows 10.
 
-    ![Captura de pantalla de la página establecer configuración de dispositivo de Windows 10.](media/setwin10config.png)
+## <a name="secure-windows-10-pcs"></a>Proteger equipos con Windows 10
 
+En el panel de navegación izquierdo, seleccione **configuración** y, a continuación, en **Complementos y seguridad**, elija **proteger los equipos con Windows 10**. Elija **Ver** para empezar. Consulte [proteger los equipos con Windows 10](secure-win-10-pcs.md) para obtener instrucciones completas.
 
 ## <a name="deploy-office-365-client-apps"></a>Implementación de aplicaciones cliente de Office 365
 
@@ -128,3 +130,7 @@ Si eligió instalar automáticamente las aplicaciones de Office durante la confi
 Para instalar Office en dispositivos móviles iOS o Android, consulte [configurar dispositivos móviles para usuarios profesionales de Microsoft 365](set-up-mobile-devices.md).
 
 También puede instalar Office de forma individual. Consulte [instalar Office en un equipo PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) para obtener instrucciones.
+
+## <a name="see-also"></a>Recursos adicionales
+
+[Vídeos de aprendizaje para empresas de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

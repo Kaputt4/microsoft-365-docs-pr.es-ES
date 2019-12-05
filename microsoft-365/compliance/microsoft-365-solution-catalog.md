@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a789aca60bbb34f6831c27afea4b1ec5d3135f59
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38687658"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831643"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Información general sobre el catálogo de soluciones de Microsoft 365 (versión preliminar)
 
@@ -80,13 +80,11 @@ Desde aquí, verá tarjetas para las siguientes soluciones:
 
 - Para visitar el catálogo de soluciones de 365 de Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) , vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la Página principal del catálogo.
 
-- Para obtener más información acerca de los requisitos, consulte [licencias y permisos necesarios](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Por qué no veo todavía el nuevo catálogo de soluciones de Microsoft 365?**
 
-En primer lugar, asegúrese de que tiene las [licencias y los permisos](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento. Si todavía no ve el nuevo catálogo de soluciones en el panel de navegación izquierdo, lo tendrá pronto.
+En primer lugar, asegúrese de que tiene las licencias y los permisos adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento. Si todavía no ve el nuevo catálogo de soluciones en el panel de navegación izquierdo, lo tendrá pronto.
 
 **Algunas de las características de cumplimiento que aparecen en la página Catálogo de soluciones no están disponibles en el centro de cumplimiento de Microsoft 365. ¿Qué hago?**
 

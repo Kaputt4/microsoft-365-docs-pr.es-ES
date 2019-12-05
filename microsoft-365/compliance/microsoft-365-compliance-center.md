@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 619f18f1113d3c84cb9629c60fca6dd044d1de76
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 920de48cf81134a22f117ee8d1dea0160b0daaa8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38687671"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831653"
 ---
 # <a name="overview-of-the-microsoft-365-compliance-center"></a>Información general del centro de cumplimiento de Microsoft 365
 
@@ -70,8 +70,6 @@ Además de los vínculos de las tarjetas en la Página principal, verá un panel
 
 - Para visitar el centro de cumplimiento de Microsoft 365, como administrador global, administrador de cumplimiento o administrador de datos de [https://compliance.microsoft.com](https://compliance.microsoft.com) cumplimiento, vaya a e inicie sesión.
 
-- Para obtener más información acerca de los requisitos, consulte [licencias y permisos necesarios](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Por qué me he extraído al centro de cumplimiento de & de seguridad de Office 365 para completar algunas tareas, como la definición de determinadas directivas?**
@@ -80,7 +78,7 @@ Todavía estamos desarrollando el centro de cumplimiento de Microsoft 365 y agre
 
 **¿Por qué no veo todavía el nuevo centro de cumplimiento de Microsoft 365?**
 
-En primer lugar, asegúrese de que tiene las [licencias y los permisos](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com)en. Si aún no ve el nuevo centro de cumplimiento, lo tendrá pronto.
+En primer lugar, asegúrese de que tiene las licencias y los permisos adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com)en. Si aún no ve el nuevo centro de cumplimiento, lo tendrá pronto.
 
 **Algunas de mis características de cumplimiento no están disponibles en el centro de cumplimiento de Microsoft 365. ¿Qué hago?**
 

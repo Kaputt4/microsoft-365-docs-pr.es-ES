@@ -1,0 +1,115 @@
+- name: Escritorio administrado por Microsoft
+  href: index.yml
+  items:
+    - name: ¿Qué es el escritorio administrado por Microsoft?
+      href: intro/index.md
+      items:
+        - name: Roles y responsabilidades
+          href: intro/roles-and-responsibilities.md
+        - name: Tecnologías en el Escritorio administrado de Microsoft
+          href: intro/technologies.md
+        - name: Escritorio administrado de Microsoft y ITIL
+          href: MMD-and-ITSM.md
+    - name: Descripción del servicio Escritorio administrado de Microsoft
+      href: service-description/index.md
+      items:
+        - name: Idiomas y regiones compatibles
+          href: service-description/regions-languages.md
+        - name: Ciclo de vida del producto
+          href: service-description/device-lifecycle.md
+        - name: Dispositivos del programa
+          href: service-description/device-list.md
+          items:
+            - name: Dispositivos del programa archivados
+              href: service-description/archived-device-list.md
+        - name: Servicios del dispositivo
+          href: service-description/device-services.md
+        - name: Configuración de dispositivos
+          href: service-description/device-policies.md
+        - name: Seguridad
+          href: service-description/security.md
+        - name: Actualizaciones
+          href: service-description/updates.md
+        - name: Soporte técnico
+          href: service-description/support.md
+        - name: Operaciones y monitoreo
+          href: service-description/operations-and-monitoring.md
+        - name: Requisitos de aplicaciones
+          href: service-description/mmd-app-requirements.md
+        - name: ' Cambios en el servicio y comunicación '
+          href: service-description/servicechanges.md
+        - name: Excepciones para el plan de servicios
+          href: service-description/customizing.md
+    - name: Prepararse para la inscripción en el Escritorio administrado de Microsoft
+      href: get-ready/index.md
+      items:
+        - name: Requisitos previos del Escritorio administrado de Microsoft
+          href: get-ready/prerequisites.md
+        - name: Preparar la red
+          href: get-ready/network.md
+        - name: Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft
+          href: get-ready/authentication.md
+        - name: Preparar unidades asignadas para el Escritorio administrado de Microsoft
+          href: get-ready/mapped-drives.md
+        - name: Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft
+          href: get-ready/certs-wifi-lan.md
+        - name: Preparar aplicaciones
+          href: get-ready/apps.md
+          items:
+            - name: Trabajar con los Servicios de Consultoría de Microsoft
+              href: get-ready/apps-MCS.md
+    - name: Introducción al Escritorio administrado de Microsoft
+      href: get-started/index.md
+      items:
+        - name: 'Agregar y verificar los contactos de administración en el portal de administración '
+          href: get-started/add-admin-contacts.md
+        - name: Ajustar el acceso condicional
+          href: get-started/conditional-access.md
+        - name: Asignar licencias
+          href: get-started/assign-licenses.md
+        - name: Desplegar el portal de empresa de Intune
+          href: get-started/company-portal.md
+        - name: Habilitar Enterprise State Roaming
+          href: get-started/enterprise-state-roaming.md
+        - name: Instalar dispositivos
+          href: get-started/set-up-devices.md
+          items:
+            - name: Registre nuevos dispositivos usted mismo
+              href: get-started/register-devices-self.md
+              items:
+                - name: Pasos para que los Socios puedan registrar dispositivos
+                  href: get-started/register-devices-partner.md
+            - name: Registre dispositivos existentes usted mismo
+              href: get-started/register-reused-devices-self.md
+        - name: Prepare a los usuarios para que usen los dispositivos
+          href: get-started/get-started-devices.md
+        - name: Implementar aplicaciones
+          href: get-started/deploy-apps.md
+          items:
+            - name: Microsoft Project y Microsoft Visio
+              href: get-started/project-visio.md
+    - name: Trabajar con el Escritorio administrado de Microsoft
+      href: working-with-managed-desktop/index.md
+      items:
+        - name: Trabajar con ideas
+          href: working-with-managed-desktop/insights.md
+          items:
+            - name: Información sobre el uso
+              href: working-with-managed-desktop/usage-insights.md
+            - name: Información sobre la confiabilidad
+              href: working-with-managed-desktop/reliability-insights.md
+        - name: Soporte de administrador
+          href: working-with-managed-desktop/admin-support.md
+        - name: Soporte técnico para usuarios finales
+          href: working-with-managed-desktop/end-user-support.md
+        - name: Administrar aplicaciones
+          href: working-with-managed-desktop/manage-apps.md
+        - name: Parámetros configurables
+          href: working-with-managed-desktop/config-setting-overview.md
+          items:
+            - name: Referencia de parámetros configurables
+              href: working-with-managed-desktop/config-setting-ref.md
+            - name: Implementar parámetros configurables
+              href: working-with-managed-desktop/config-setting-deploy.md
+    - name: Historial de cambios de la documentación del Escritorio administrado de Microsoft
+      href: change-history-managed-desktop.md

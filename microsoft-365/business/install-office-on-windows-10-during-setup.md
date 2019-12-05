@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Obtenga información sobre cómo implementar Office automáticamente en dispositivos con Windows 10 durante la instalación.
-ms.openlocfilehash: 6bcb85a0acdf738d939c10d4fe418646b00b0b95
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+ms.openlocfilehash: 7b58fd3db6c6f15effe2bc4876903a9f480366b1
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704103"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831631"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Instalar Office en Windows 10 durante la configuración
 
 ![Pancarta que apunta a https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
-Esta opción está desactivada de forma predeterminada. Puede activarla para asegurarse de que los usuarios tienen la última versión de Office en todos sus dispositivos con Windows 10, pero primero Compruebe que se cumplen todos los requisitos previos. Los usuarios deben tener una licencia para Microsoft 365 Business para esta opción para insertar el software en el dispositivo, además de otros requisitos descritos en [Prepare for Office Client Deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md). 
+Esta opción está desactivada de forma predeterminada. Puede activarla para asegurarse de que los usuarios tienen la última versión de Office en todos sus dispositivos con Windows 10, pero primero Compruebe que se cumplen todos los requisitos previos. Los usuarios deben tener una licencia para Microsoft 365 Business para esta opción para insertar el software en el dispositivo, además de otros requisitos descritos en [Prepare for Office Client Deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).
   
-Le recomendamos que acepte la configuración predeterminada durante la instalación. 
+Le recomendamos que acepte la configuración predeterminada durante la instalación.

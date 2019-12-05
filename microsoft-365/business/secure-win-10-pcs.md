@@ -20,16 +20,21 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo proteger equipos con Windows 10 una vez que haya configurado Microsoft 365 Business.
-ms.openlocfilehash: 6f599f3638ec9649be9464e1c51a531bf6c231b2
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 47598ef0b5cba60a6d5e53973cc8b88584c62d05
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39814258"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837324"
 ---
-# <a name="secure-windows-10-pcs"></a>Proteger equipos con Windows 10
+# <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
 
 Una vez que haya [configurado](set-up.md) Microsoft 365 Business, es el momento de proteger los equipos con Windows 10 en su organización contra robos y amenazas malintencionadas como virus y malware.
+Vea este vídeo para obtener información general sobre cómo configurar directivas para proteger los equipos con Windows 10.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
+
+Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="to-secure-your-windows-10-pcs"></a>Para proteger los equipos con Windows 10
 
