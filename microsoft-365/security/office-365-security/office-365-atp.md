@@ -3,7 +3,7 @@ title: Protección contra amenazas avanzada de Office 365
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: abe11acd2b254405ec432288ae87d12b626f617c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: ba7395c29a700039e29c066daa942687e610e4aa
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673416"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813770"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -43,7 +43,8 @@ La Protección contra amenazas avanzada de Office 365 (ATP) protege su organizac
 
 ATP se incluye en Office 365 E5. Sin embargo, el Plan 1 y 2 de ATP de Office 365 están disponibles como complementos para determinadas suscripciones. Para obtener más información, consulte [Disponibilidad de características en los planes de ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-Si no tiene ATP de Office 365, [inicie una versión de prueba gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> [!TIP]
+> Si no tienes Office 365 ATP, puedes [comiezar una prueba gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 
 ## <a name="configure-atp-policies"></a>Configurar directivas ATP
@@ -55,13 +56,13 @@ Con ATP de Office 365, el equipo de seguridad de su organización puede configur
 
 Las directivas definidas por la organización determinan el comportamiento y el nivel de protección para las amenazas predefinidas. Las opciones de directivas son muy flexibles. Por ejemplo, el equipo de seguridad de su organización puede establecer protección contra amenazas específica para el nivel de usuario, organización, destinatario y dominio. Es importante revisar las directivas de forma periódica, ya que a diario surgen nuevas amenazas y desafíos.  
 
-- [Datos adjuntos seguros de ATP](atp-safe-attachments.md): proporciona protección de día cero para salvaguardar su sistema de mensajería, al comprobar los datos adjuntos de correo electrónico en busca de contenido malintencionado. Dirige todos los mensajes y datos adjuntos que no tienen una firma de virus o malware a un entorno especial y, a continuación, utiliza técnicas de aprendizaje automático y análisis para detectar fines malintencionados. Si no se encuentra ninguna actividad sospechosa, el mensaje se reenvía al buzón. Para obtener más información, consulte [Configurar directivas de datos adjuntos seguros de ATP de Office 365](set-up-atp-safe-attachments-policies.md).
+- **[Archivos adjuntos seguros ATP](atp-safe-attachments.md)**: Proporciona protección de día cero para proteger su sistema de mensajería, comprobando si los archivos adjuntos del correo electrónico contienen contenido malicioso. Dirige todos los mensajes y datos adjuntos que no tienen una firma de virus o malware a un entorno especial y, a continuación, utiliza técnicas de aprendizaje automático y análisis para detectar fines malintencionados. Si no se encuentra ninguna actividad sospechosa, el mensaje se reenvía al buzón. Para obtener más información, consulte [Configurar directivas de datos adjuntos seguros de ATP de Office 365](set-up-atp-safe-attachments-policies.md).
 
-- [Vínculos seguros de ATP](atp-safe-links.md): proporciona la comprobación en el momento del clic de las direcciones URL, por ejemplo, en mensajes de correo electrónico y archivos de Office. La protección es continua y se aplica en todo su entorno de mensajería y Office. Los vínculos se analizan en cada clic: los vínculos seguros siguen siendo accesibles y los vínculos maliciosos se bloquean dinámicamente. Para obtener más información, consulte [Configurar directivas de vínculos seguros de ATP de Office 365](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies). 
+- **[Vínculos seguros de ATP](atp-safe-links.md)**: Proporciona verificación del tiempo de clic de las URL, por ejemplo, en mensajes de correo electrónico y archivos de Office. La protección es continua y se aplica en todo su entorno de mensajería y Office. Los vínculos se analizan en cada clic: los vínculos seguros siguen siendo accesibles y los vínculos maliciosos se bloquean dinámicamente. Para obtener más información, consulte [Configurar directivas de vínculos seguros de ATP de Office 365](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies). 
 
-- [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md): protege la organización cuando los usuarios colaboran y comparten archivos, al identificar y bloquear archivos malintencionados en los sitios de grupo y las bibliotecas de documentos. Para obtener más información, consulte [Activar ATP de Office 365 para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md). 
+- **[ATP para los equipos de SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)**: protege su organización cuando los usuarios colaboran y comparten archivos, identificando y bloqueando archivos maliciosos en sitios de equipo y bibliotecas de documentos. Para obtener más información, consulte [Activar ATP de Office 365 para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md). 
 
-- [Protección contra la suplantación de identidad de ATP](atp-anti-phishing.md): detecta los intentos de suplantar a los usuarios y dominios personalizados. Aplica modelos de aprendizaje automático y algoritmos avanzados de detección de suplantación para evitar ataques de suplantación de identidad. Para obtener más información, consulte [Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365](set-up-anti-phishing-policies.md).
+- **[Protección anti phishing ATP](atp-anti-phishing.md)**: detecta los intentos de suplantar la identidad de sus usuarios y dominios personalizados. Aplica modelos de aprendizaje automático y algoritmos avanzados de detección de suplantación para evitar ataques de suplantación de identidad. Para obtener más información, consulte [Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365](set-up-anti-phishing-policies.md).
 
 ## <a name="view-office-365-atp-reports"></a>Ver informes de ATP de Office 365
 
@@ -77,21 +78,21 @@ Los informes se actualizan en tiempo real y proporcionan los detalles más recie
 
 - [Informe de disposición de mensajes ATP](view-reports-for-atp.md#atp-message-disposition-report)
 
-- ... ¡y mucho más! 
+- ... y muchas más. 
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>Usar las funciones de investigación y respuesta de amenazas
 
 Office 365 ATP Plan 2 incluye las mejores [herramientas de investigación y respuesta de amenazas](office-365-ti.md) que permiten que el equipo de seguridad de su organización anticipe, entienda y evite ataques malintencionados. 
 
-- [Los rastreadores de amenazas](threat-trackers.md) proporcionan la información más reciente sobre los problemas actuales de ciberseguridad. Por ejemplo, puede ver información sobre el malware más reciente y tomar medidas antes de que se convierta en una amenaza real para su organización. Entre los rastreadores disponibles se incluyen [Rastreadores destacados](threat-trackers.md#noteworthy-trackers), [Rastreadores en tendencia](threat-trackers.md#trending-trackers), [Consultas rastreadas](threat-trackers.md#tracked-queries) y [Consultas guardadas](threat-trackers.md#saved-queries).
+- **[Los rastreadores de amenazas](threat-trackers.md)** proporcionar la información más reciente sobre los problemas de ciberseguridad existentes. Por ejemplo, puede ver información sobre el malware más reciente y tomar medidas antes de que se convierta en una amenaza real para su organización. Entre los rastreadores disponibles se incluyen [Rastreadores destacados](threat-trackers.md#noteworthy-trackers), [Rastreadores en tendencia](threat-trackers.md#trending-trackers), [Consultas rastreadas](threat-trackers.md#tracked-queries) y [Consultas guardadas](threat-trackers.md#saved-queries).
 
-- [Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md) (también conocido como Explorador) es un informe en tiempo real que le permite identificar y analizar amenazas recientes. Puede configurar el Explorador para mostrar datos de períodos personalizados.
+- **[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)** (también conocido como Explorador) es un informe en tiempo real que le permite identificar y analizar amenazas recientes. Puede configurar el Explorador para mostrar datos de períodos personalizados.
 
-- [Simulador de ataques](attack-simulator.md) le permite ejecutar escenarios de ataque realistas en la organización para identificar los puntos vulnerables. Hay disponibles simulaciones de los tipos actuales de ataques, incluido un [ataque de phishing de objetivo definido de nombre para mostrar](attack-simulator.md#display-name-spear-phishing-attack), un [ataque de difusión de contraseña](attack-simulator.md#password-spray-attack) y un [ataque de contraseña por fuerza bruta](attack-simulator.md#brute-force-password-attack) entre otros.
+- **[Simulador de ataques](attack-simulator.md)** le permite ejecutar escenarios de ataque realistas en su organización para identificar vulnerabilidades. Hay disponibles simulaciones de los tipos actuales de ataques, incluido un [ataque de phishing de objetivo definido de nombre para mostrar](attack-simulator.md#display-name-spear-phishing-attack), un [ataque de difusión de contraseña](attack-simulator.md#password-spray-attack) y un [ataque de contraseña por fuerza bruta](attack-simulator.md#brute-force-password-attack) entre otros.
     
 ## <a name="save-time-with-automated-incident-response"></a>Ahorrar tiempo con respuesta a incidencia automatizada
 
-(**NOVEDAD**) Al investigar un posible ciberataque, el tiempo es esencial. Cuanto antes pueda identificar y mitigar las amenazas, mejor será para su organización. Las funciones de la [Respuesta a incidencia automatizada](automated-investigation-response-office.md) (AIR) incluyen un conjunto de cuadernos de estrategias de seguridad que se pueden iniciar automáticamente, como cuando se activa una alerta, o manualmente, como desde una vista del Explorador. AIR puede ahorrar el tiempo y esfuerzo de su equipo de operaciones de seguridad, y reducir amenazas de manera eficaz. Para obtener más información, vea [Respuesta a incidencia automatizada en Office 365](automated-investigation-response-office.md).
+(**NOVEDAD**) Al investigar un posible ciberataque, el tiempo es esencial. Cuanto antes pueda identificar y mitigar las amenazas, mejor será para su organización. Las funciones de la [Respuesta a incidencia automatizada](automated-investigation-response-office.md) (AIR) incluyen un conjunto de cuadernos de estrategias de seguridad que se pueden iniciar automáticamente, como cuando se activa una alerta, o manualmente, como desde una vista del Explorador. AIR puede ahorrar el tiempo y esfuerzo de su equipo de operaciones de seguridad, y reducir amenazas de manera eficaz. Para obtener más información, consulte[AIR en Office 365](automated-investigation-response-office.md).
 
 ## <a name="permissions-required-to-use-atp-features"></a>Permisos necesarios para usar las características de ATP
 
@@ -99,9 +100,10 @@ Para acceder a las características de ATP en el Centro de seguridad y cumplimie
 
 |Rol o grupo de roles  |Recursos para obtener más información  |
 |---------|---------|
-|Administrador global de Office 365 |[Acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Administrador de seguridad |[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Administración de la organización en Exchange Online |[Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>y<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Administrador Global de Office 365 (esto puede ser asignado en el Azure Active Directory o en el Centro de seguridad y cumplimiento de Office 365) |[Acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Administrador de Seguridad (esto puede ser asignado en el Azure Active Directory o en el Centro de seguridad y cumplimiento de Office 365) |[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)|
+|Gestión de organizaciones de Exchange Online (esto se asigna en Exchange Online)|[Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Búsqueda y purga (esto se asigna sólo en el Centro de seguridad y cumplimiento de Office 365) |[Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md) |
 
 Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
