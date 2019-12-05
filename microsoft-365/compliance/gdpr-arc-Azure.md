@@ -13,12 +13,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 92d7e08c17d2f67781b5d261e103717ab57578d9
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 608e75dee25f73a1234a911bd5b9e4871412e59e
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38750021"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676777"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Lista de comprobación de preparación de responsabilidad de Azure para RGPD
 
@@ -137,7 +137,7 @@ Para obtener más documentación relacionada con el RGPD, visite [https://aka.ms
 | 7 <a name="7"> </a>   | [Quién puede tener acceso a los datos y en qué condiciones](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
 | 8 <a name="8"> </a>   | [Contratos de procesadores secundarios: Celebrar un contrato con Microsoft](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 9 <a name="9"> </a>   | [Solicitudes del interesado de Azure para el RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) |
-| 10 <a name="10"> </a> | [Azure y notificación de infracciones de datos en virtud del RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure) |
+| 10 <a name="10"> </a> | [Azure y Dynamics 365 notificación de infracciones bajo el GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics) |
 | 11 <a name="11"> </a> | [Información clave de Azure sobre las evaluaciones del impacto de la protección de datos de clientes](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [Informe de auditoría SOC 2 Type 2 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up), declaración de aplicabilidad de sistemas de administración de la seguridad de la información ISO/CEI 27001:2013](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |

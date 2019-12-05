@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0cf7a32d50c6fd648894934ccbb32d84959bd12b
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 275781c8e5b25555e7b65f830b8c703827d80849
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39232920"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676687"
 ---
 # <a name="compliance-offering-center-for-financial-industry-information-systems-fisc"></a>Oferta de cumplimiento: Centro de Sistemas de Información de la Industria Financiera (FISC)
 
@@ -40,12 +40,9 @@ Microsoft contrató evaluadores externos para que validaran que Microsoft Azure,
 
 Las instituciones financieras pueden confiar en esta evaluación del cumplimiento en estas tres áreas para los servicios de infraestructura y plataforma de Azure, Dynamics 365, Office 365 y Microsoft Cloud App Security, dentro del ámbito.
 
-Más información sobre las ventajas del FISC en la nube de Microsoft:
+[Obtenga más información sobre la validación de evaluadores externos y los enlaces a los sitios de los evaluadores (Sólo en japonés).](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx)
 
-- [Descargar el documento de información general del FISC de Japón](https://aka.ms/fisc-backgrounder)
-- [Obtenga más información sobre la validación de los evaluadores externos y vínculos a su sitios (solo en japonés)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx) 
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure](https://aka.ms/AzureCompliance).
 - Cloud App Security.
