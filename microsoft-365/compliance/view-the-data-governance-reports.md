@@ -1,7 +1,7 @@
 ---
 title: Ver los informes de gobierno de datos
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 6/8/2018
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con los informes de gobierno de datos del Centro de seguridad y cumplimiento de Office 365, puede ver rápidamente si las etiquetas se aplican en el contenido del modo previsto.
-ms.openlocfilehash: d6537c7c2c6f4bda9aad105ea5882e245a430f4c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d761931cea171afb84e25fa0900bec7c3a2f3c2
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093077"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813910"
 ---
 # <a name="view-the-data-governance-reports"></a>Ver los informes de gobierno de datos
 
@@ -34,7 +34,7 @@ Después de crear las etiquetas, asegúrese de que se apliquen correctamente en 
     
 En todos estos informes, se muestra el contenido etiquetado de Exchange, SharePoint y OneDrive para la Empresa.
   
-Encontrará estos informes en el Centro de seguridad y cumplimiento \> **Gobierno de datos** \> **Panel**.
+Encontrará estos informes en el Centro de seguridad&amp; y cumplimiento \> **Gobierno de datos** \> **Panel**.
   
 ![Gráfico donde se muestran tendencias de etiquetas en los últimos 90 días](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   

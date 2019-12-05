@@ -3,7 +3,7 @@ title: Cambios en el contenido de implementación de Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/19/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vea el nuevo contenido y los cambios en el contenido en la guía de implementación de Microsoft 365.
-ms.openlocfilehash: 529d781f31157c6e9ad63a83ef5f8bb96873049d
-ms.sourcegitcommit: 2bdd7b535a7d2a4896df130b7047f8c85f4d47b4
+ms.openlocfilehash: bf7cda762d2ac7a8fd57135b985d893ee03c0646
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38711894"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831831"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Cambios en el contenido de implementación de Microsoft 365 Enterprise
+
+## <a name="december-2019"></a>Diciembre de 2019
+
+### <a name="new-content"></a>Nuevo contenido 
+
+- [Guía del laboratorio de pruebas para los archivos en Equipos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment)
+
+### <a name="updates-and-enhancements"></a>Actualizaciones y mejoras
+
+- [Proteger los sitios y archivos de SharePoint Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files) para el uso de etiquetas de confidencialidad
+-  [La configuración básica ligera](lightweight-base-configuration-microsoft-365-enterprise.md) y [La configuración básica de empresa simulada](simulated-ent-base-configuration-microsoft-365-enterprise.md) para los nuevos procedimientos de suscripción de prueba
+- 
 
 ## <a name="november-2019"></a>Noviembre de 2019
 

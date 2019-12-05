@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usa Configuration Manager de Microsoft Endpoint para implementar Office 365 ProPlus.
-ms.openlocfilehash: e0e1343d2ed36b1c76ad4708545c4e6d4010bb45
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7649a4a5c77c7f743e3339db6f91b7afc3b1343f
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673166"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831991"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Implementación de Office 365 ProPlus en Contoso
 
@@ -31,7 +31,7 @@ Contoso actualizó sus equipos a Windows 10 Enterprise y Office 365 ProPlus para
 
 ## <a name="deployment-tools"></a>Herramientas de implementación
 
-En función de sus requisitos, Contoso decidió implementar Windows 10 Enterprise y Office 365 ProPlus con Configuration Manager (rama actual). Configuration Manager funciona para entornos grandes y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También cuenta con características integradas para que sea más fácil y más eficaz implementar y administrar Office, entre las que se incluyen:
+Con base en los requisitos, Contoso optó por implementar Windows 10 Enterprise y Office 365 ProPlus con Configuration Manager (Rama actual). Configuration Manager se escala en entornos de gran tamaño y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También incluye características integradas para que sea más fácil y eficaz implementar y administrar Office, entre las que se incluyen:
 
 - La caché del mismo nivel, que puede ayudar con la capacidad de red limitada cuando se implementa en dispositivos en ubicaciones remotas.
 - El panel de administración de clientes de Office, que facilita la implementación de Office y supervisa las actualizaciones. Asimismo, proporciona acceso a los administradores a las características de administración e implementación más recientes.
@@ -49,7 +49,7 @@ Office 365 ProPlus tiene un nuevo modelo de versiones: Office como servicio. El 
 
 En lugar de administrar las actualizaciones de Office con Configuration Manager, Contoso habilitó actualizaciones automáticas desde la nube. Las actualizaciones basadas en la nube redujeron la sobrecarga administrativa además de garantizar que los dispositivos permanecían actualizados. 
 
-Contoso siguió el mismo enfoque de dos fases para las actualizaciones de características que usaban en la implementación de Office: los dispositivos en el grupo piloto recibieron actualizaciones de características cuatro meses antes que los dispositivos del resto de la organización (el grupo amplio). Para habilitar esta opción para Office, Contoso usó dos [canales de actualización](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) recomendados: 
+Contoso siguió el mismo enfoque de dos fases de implementación de Office para las actualizaciones de características: los dispositivos del grupo piloto recibieron las actualizaciones de características cuatro meses antes que el resto de los dispositivos de la organización (el grupo general). Para habilitar esta opción en Office, Contoso usó dos [canales de actualización](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)recomendados: 
 
 - Canal semianual (dirigido) para las actualizaciones del grupo piloto 
 - Canal semianual para las actualizaciones del grupo general 
@@ -69,7 +69,7 @@ Para completar la implementación de Office, Contoso implementó el siguiente pr
 7. En Configuration Manager, implementaron los paquetes de Windows y Office en puntos de distribución en la red y, después, ejecutaron las secuencias de tareas de implementación de Configuration Manager para implementar el paquete piloto de Office 365 ProPlus en el grupo piloto.
 8. Después de corregir los problemas de compatibilidad con el grupo piloto, Contoso ejecutó las secuencias de tareas para implementar el paquete general de Office 365 ProPlus en el grupo general.
 
-Como Contoso decidió actualizar de forma automática los dispositivos desde la nube, no fue necesario administrar el proceso en Configuration Manager. Los dispositivos se actualizaron de forma automática directamente desde la nube según el canal de actualización definido como parte de la implementación inicial. 
+Como Contoso decidió actualizar de forma automática los dispositivos desde la nube, no fue necesario administrar el proceso en el Administrador de configuración. Los dispositivos se actualizaron de forma automática directamente desde la nube según el canal de actualización definido como parte de la implementación inicial. 
 
 Aquí se muestra la arquitectura de implementación de Office 365 ProPlus y actualizaciones continuas de Contoso.
 

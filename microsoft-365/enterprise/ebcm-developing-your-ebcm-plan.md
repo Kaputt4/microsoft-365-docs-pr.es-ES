@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspectos que debe tener en cuenta a la hora de desarrollar un plan de continuidad empresarial preparado para la nube.
-ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9f8b7f6950375fb976202a10da03662c3b2715a
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031075"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831673"
 ---
 # <a name="developing-your-continuity-plan"></a>Desarrollo de un plan de continuidad
 
@@ -26,7 +26,7 @@ Este tema proporciona instrucciones para el desarrollo de un plan de continuidad
 
 En general, la planeación de la continuidad empresarial implica cuatro aspectos, la evaluación, la planificación, la validación de la capacidad, la comunicación y la coordinación.
 
-## <a name="assesment"></a>Evaluación
+## <a name="assessment"></a>Evaluación
 En primer lugar, debe identificar las funciones empresariales de su organización y los servicios y procesos que las admiten. Esto incluye completar un análisis de impacto empresarial, donde cada función empresarial es clasificada según su importancia y usted identifica los procesos y servicios de los que depende cada una de ellas. Esta es una tabla de muestra que puede consultar para empezar a trabajar con su propia evaluación.
 
 **Ejemplo de evaluación de impacto empresarial (BIA)**
@@ -49,7 +49,7 @@ Este es un documento BIA para `name of the service, system, process, or function
 |¿Tiene la tecnología alguna orden ejecutiva conocida que impulse un SLA de procesos específico? Si es así, explíquelo detalladamente.|`details here`|
 |¿La pérdida o la exposición de los datos asociados con estos servicios ocasionan un evento importante? Si es así, explíquelo detalladamente.|`details here`|
 |¿El servicio tiene una solución alternativa u otras alternativas en lugar de algunas de las funciones y características fundamentales? Si es así, explíquelo detalladamente.|`details here`|
-|¿Procesa el servicio, almacena o transmite datos de clientes (PII)? Si es así, explíquelo detalladamente.|`details here`|
+|¿Procesa, almacena o transmite el servicio datos de clientes, como información de identificación personal (PII)? Si es así, explíquelo detalladamente.|`details here`|
 |Estado del BIA|`develop your own status classification, here are some examples: planned, started, in-progress, complete, on-hold, expired`|
 |Fecha de finalización|`the date this BIA was completed`|
 |moderador del BIA|`name of the person or group who is responsible for developing and maintaining this BIA`|
