@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Descripción del tema de la resiliencia
-ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a31e24925e65bcdff4ee6416a3e308bf46a5a955
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031055"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831861"
 ---
 # <a name="built-in-resiliency"></a>Resiliencia integrada
 
@@ -39,7 +39,7 @@ En Microsoft 365 trabajamos para que todos los servicios estén diseñados y pue
 El ámbito de una incidencia de servicio se mide en función de su gravedad, el tiempo que dura y cuántos clientes se ven afectados. Nos esforzamos por limitar el alcance de cada incidencia:
 
 - proporcionando varias instancias de cada servicio compartimentadas entre sí
-- implementando actualizaciones de una forma controlada y graduada mediante anillos de validación, de modo que los problemas que puedan surgir de la actualización se puedan detectar y mitigar anticipadamente en el proceso de implementación. Esto permite la retirada de la actualización si es necesario y sucede, en primer lugar, para un grupo reducido de Microsoft (círculo interno) antes de que se implemente en grupos de mayor tamaño, como en el caso de los 140.000 empleados de Microsoft (círculo 2) y, a continuación, para los círculos de adopción temprana (círculo 3) y, finalmente, globalmente para todos los clientes (círculo 4).
+- implementando actualizaciones de una forma controlada y graduada mediante anillos de validación, de modo que los problemas que puedan surgir de la actualización se puedan detectar y mitigar anticipadamente en el proceso de implementación. Esto permite la regresión de la actualización, si es necesario, y en primer lugar en un grupo reducido de Microsoft (anillo interno) antes de que se implemente en grupos de mayor tamaño, como en el caso de todos los 140.000 empleados de Microsoft (anillo 2) y, a continuación, en la adopción temprana de los anillos (anillo 3) y, finalmente, para todos los clientes globalmente (anillo 4).
 - promoviendo las mejoras en la supervisión gracias a la automatización. Microsoft 365 es muy grande y el tiempo de actividad objetivo del SLA es elevado. Al principio de una incidencia del servicio, si los seres humanos tuvieran que intervenir en la detección y respuesta, no podríamos responder lo suficientemente rápido para cumplir los SLA. La automatización es la clave para que la detección y respuesta de una incidencia de servicio sea rápida y eficaz. Cuanto más pronto tengamos conocimiento de algo, más rápido se podrá solucionar.
 
 Junto con las funcionalidades activo/activo integradas en la arquitectura de servicio de Microsoft 365, estos esfuerzos reducen la gravedad, la duración y el número de clientes afectados durante una incidencia del servicio.  
@@ -55,4 +55,4 @@ El uso de los servicios de M365 está muy interconectado, pero los sistemas y la
 
 ## <a name="continuous-service-improvement"></a>Mejora continua del servicio
 
-Cuando se experimenta una incidencia, nos lo tomamos en serio. Después de todo, la arquitectura redundante de la nube y los estrictos procesos internos tienen como objetivo mantener la accesibilidad a nuestros servicios. Durante una incidencia, las herramientas de supervisión detectan rápidamente los servicios afectados y, si su espacio empresarial está afectado, se le notificará inmediatamente a través de varios canales. Simultáneamente, los ingenieros siguen procedimientos muy definidos para evaluar el problema y llevar a cabo los pasos necesarios para restaurar el normal funcionamiento lo más rápidamente posible. Una vez que el servicio funciona con normalidad de nuevo, realizamos un examen posterior de incidencias como parte del ciclo de mejora continua del servicio. Durante la revisión posterior de incidencias, identificamos las causas principales de la incidencia y lo que fue necesario para corregir los problemas. Luego, teniendo en cuenta lo aprendido de la situación, lo aplicamos al diseño y a las operaciones de la totalidad de nuestra serie de ofertas. De esta forma, se evita que la misma causa principal afecte a otros servicios y a los clientes adicionales.
+Cuando se experimenta una incidencia, nos lo tomamos en serio. Después de todo, la arquitectura redundante de la nube y los estrictos procesos internos tienen como objetivo mantener la accesibilidad a nuestros servicios. Durante una incidencia, las herramientas de supervisión detectan rápidamente los servicios afectados y, si su espacio empresarial está afectado, se le notificará inmediatamente a través de varios canales. Simultáneamente, los ingenieros siguen procesos bien definidos para clasificar el problema y llevar a cabo los pasos necesarios para restaurar el funcionamiento normal lo más rápido posible. Una vez que el servicio funciona con normalidad de nuevo, realizamos un examen posterior de incidencias como parte del ciclo de mejora continua del servicio. Durante la revisión posterior de incidencias, identificamos las causas principales de la incidencia y lo que fue necesario para corregir los problemas. Luego, teniendo en cuenta lo aprendido de la situación, lo aplicamos al diseño y a las operaciones de la totalidad de nuestra serie de ofertas. De esta forma, se evita que la misma causa principal afecte a otros servicios y a los clientes adicionales.

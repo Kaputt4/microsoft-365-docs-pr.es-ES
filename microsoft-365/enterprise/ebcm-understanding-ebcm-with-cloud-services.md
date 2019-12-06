@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender cómo la planificación y la implementación de la continuidad empresarial son diferentes cuando los servicios en la nube forman parte de la oferta de TI.
-ms.openlocfilehash: 9b8d769670b53a75c2b48254cb0026488995274a
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122260"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831841"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Administración de continuidad empresarial de Enterprise (EBCM) con servicios en la nube
 
-Como parte de la transformación digital de la organización, tendrá que revisar y actualizar sus planes de recuperación ante desastres y continuidad empresarial para tener en cuenta el proceso empresarial que depende de los servicios en la nube de Microsoft 365. Los servicios en la nube de Microsoft 365, como Exchange Online, SharePoint Online y OneDrive para la Empresa, están diseñados y se pueden gestionar para ser altamente resilientes. Incluso con esta resiliencia, se pueden producir incidencias de servicio. Cuando se producen, su organización debe estar preparada y disponer de una estrategia de continuidad empresarial bien definida.
+Como parte de la transformación digital de la organización, tendrá que revisar y actualizar sus planes de recuperación ante desastres y continuidad empresarial para tener en cuenta el proceso empresarial que depende de los servicios en la nube de Microsoft 365. Los servicios en la nube de Microsoft 365, como Exchange Online, SharePoint Online y OneDrive para la Empresa, están diseñados y se pueden gestionar para ser altamente resilientes. Incluso con esta resiliencia, se pueden producir incidencias de servicio. Cuando se producen, su organización debe estar preparada y tener de una estrategia de continuidad empresarial bien definida.
 
 Si aún no ha actualizado sus planes, estos temas le ayudará a planificar la estrategia para que sus servicios puedan fallar en un estado conocido. Estos temas destacan las principales consideraciones para mejorar la preparación de la continuidad.
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre las acciones que Microsoft realiza durante una incidencia en el servicio para que pueda preparar mejor sus planes de continuidad empresarial.
-ms.openlocfilehash: c74bb83352f87faf0bb7f50e8aec4ac813516d3c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031085"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831871"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Responsabilidades de clientes y partners de la nube de administración de continuidad empresarial de Enterprise
 
@@ -34,7 +34,7 @@ Microsoft informa a los administradores de Office 365 mediante la actualización
 ## <a name="targeted"></a>Dirigida
 En la mayoría de los casos, cuando nuestros sistemas de supervisión detectan un problema, podemos identificar la base de clientes afectada, desde un único cliente hasta la región correspondiente, o incluso más, y dirigir las comunicaciones necesarias a esos clientes. Esto le ayudará a conocer lo que necesita para su empresa y a que no se distraiga por notificaciones irrelevantes que no les afecten. Por ejemplo, si se ve afectada una base de datos de buzones específica, podemos identificar exactamente qué clientes tienen usuarios en la infraestructura afectada y definir el ámbito de las comunicaciones. Si el alcance de la incidencia no está claro, ampliamos las comunicaciones al grupo más amplio de clientes que puedan verse afectados.
 
-## <a name="highly-avaliable"></a>Altamente disponible
+## <a name="highly-available"></a>Alta disponibilidad
 Microsoft mantiene varios canales para las comunicaciones de estado del servicio que los clientes pueden usar.
 
 - En caso de que el centro de administración o el panel de estado del servicio del centro de administración no estén disponibles, puede supervisar el estado del servicio con nuestro [sitio de copia de seguridad](https://status.office365.com/).

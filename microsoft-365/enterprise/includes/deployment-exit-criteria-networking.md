@@ -20,7 +20,7 @@ Use una herramienta o un sitio web desde un dispositivo de esa oficina para dete
 Si es necesario, el [paso 2](../networking-dns-resolution-same-location.md) puede ayudarle con este requisito.
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneccessary-network-hairpins-are-removed"></a>Opcional: eliminación de las redirecciones de red innecesarias
+### <a name="optional-unnecessary-network-hairpins-are-removed"></a>Opcional: quitar las redirecciones de red innecesarias
 
 Ha examinado las redirecciones de red y ha determinado su impacto en el rendimiento de todas las oficinas. Ha eliminado las redirecciones de red cuando ha sido posible, o bien ha trabajado con su proveedor de red o seguridad de terceros para implementar emparejamiento de Microsoft 365 óptimo para su red.
 
