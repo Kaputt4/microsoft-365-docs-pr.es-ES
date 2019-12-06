@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
-ms.openlocfilehash: 0a65c5c02d9361efd65a7b3c58eb8a0e516033c3
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: a570ec0c8002cc81a83da078705687b56ffe0bf1
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038989"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866432"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
@@ -200,7 +200,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Para habilitar la firma DKIM para su dominio personalizado mediante PowerShell
 
-1. [Conéctese al PowerShell de Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
+1. [Conéctese al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Ejecute el siguiente comando:
 
@@ -251,7 +251,7 @@ Deshabilitar la directiva de firmas no deshabilita DKIM completamente. Después 
   
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Para deshabilitar la directiva de firmas DKIM mediante Windows PowerShell
 
-1. [Conéctese al PowerShell de Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
+1. [Conéctese al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Ejecute uno de los siguientes comandos para cada dominio para el que quiera deshabilitar la firma DKIM.
     

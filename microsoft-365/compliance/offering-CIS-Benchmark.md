@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 968e2196bec0ff853c8f68625ca078f384d8951d
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 264f592357c9030865d3acd6dc138878bedf41bf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233613"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860060"
 ---
-# <a name="compliance-offering-center-for-internet-security-cis-benchmarks"></a>Oferta de cumplimiento: Puntos de referencia del Centro de seguridad de internet (CSI)
+# <a name="center-for-internet-security-cis-benchmarks"></a>Indicadores del Centro de seguridad de internet (CSI)
 
 ## <a name="about-cis-benchmarks"></a>Acerca de los indicadores de CSI
 

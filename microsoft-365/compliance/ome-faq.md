@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes en Office 365? Compruebe si hay una respuesta aquí.
-ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818852"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866422"
 ---
 # <a name="office-365-message-encryption-faq"></a>Preguntas más frecuentes sobre el cifrado de mensajes de Office 365
 
@@ -119,6 +119,10 @@ El cifrado de PDF permite proteger documentos PDF confidenciales mediante comuni
 
 Not yet. Los datos adjuntos de OneDrive para la empresa no son compatibles y los usuarios finales no pueden cifrar un correo que contenga datos adjuntos de OneDrive para la empresa en la nube.
   
+## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>¿Qué clientes de correo electrónico admiten la vista previa de datos adjuntos cifrados en correos electrónicos protegidos?
+
+Cuando los datos adjuntos están protegidos con correo protegido, los clientes de Outlook proporcionan la capacidad de obtener una vista previa del documento directamente. Outlook admite la vista previa de documentos de Office (docx, xlsx, pptx, doc, xls, PPT). Outlook en la Web admite la vista previa de documentos de Office (docx, xlsx, pptx) y PDF.  
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>¿Puedo cifrar mensajes automáticamente mediante la configuración de directivas?
 
 Sí. Usar reglas de flujo de correo en Exchange Online para cifrar automáticamente un mensaje en función de ciertas condiciones. Por ejemplo, puede crear directivas basadas en el identificador del destinatario, el dominio del destinatario o el contenido en el cuerpo o el asunto del mensaje. Consulte [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).

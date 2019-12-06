@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un usuario envía continuamente mensajes desde Office 365 se clasifican como correo no deseado, se le bloqueará para que no pueda enviar más mensajes de correo electrónico.
-ms.openlocfilehash: 4abb37bbda20d17b19144d6f62b4ef1a4fc8fb4c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 7d900e154e60b49b3fcfe63552b6ad3288adfc82
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032165"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871746"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado
 
@@ -34,7 +34,7 @@ Si un usuario envía continuamente mensajes de correo electrónico que se clasif
 
 Tiempo estimado para finalizar: 5 minutos
   
-Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Contra el correo electrónico no deseado" en el tema [Permisos de características de Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
+Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Contra el correo electrónico no deseado" en el tema [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions).
 
 El siguiente procedimiento también se puede llevar a cabo mediante PowerShell remoto. Use el cmdlet Get-BlockedSenderAddress para obtener la lista de usuarios restringidos y Remove-BlockedSenderAddress para quitar la restricción. Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 

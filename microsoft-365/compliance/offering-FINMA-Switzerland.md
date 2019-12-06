@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a98c628296e1b030413212ea03b48efd5ab052a5
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: a2c2fa9fbd27e3519bc993c8e94be6d802cb91dc
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233643"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859850"
 ---
-# <a name="compliance-offering-financial-market-supervisory-authority-finma-switzerland"></a>Oferta de cumplimiento normativo: Autoridad de Supervisión del Mercado Financiero (FINMA) de Suiza
+# <a name="financial-market-supervisory-authority-finma-switzerland"></a>Autoridad de Supervisión del Mercado Financiero (FINMA) de Suiza
 
 ## <a name="about-finma"></a>Acerca de FINMA
 

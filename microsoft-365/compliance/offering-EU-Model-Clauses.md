@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ef8f7c4d64f9ab02d3500f751f1dad752fcdb8e4
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 2add2a06d684b6516e749cb4a220d71915a9fa45
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233583"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859920"
 ---
-# <a name="compliance-offering-european-union-model-clauses"></a>Oferta de cumplimiento normativo: cláusulas modelo de la Unión Europea
+# <a name="european-union-model-clauses"></a>Cláusulas modelo de la Unión Europea
 
 ## <a name="european-union-model-clauses-overview"></a>Información general de las cláusulas modelo de la Unión Europea
 
@@ -34,7 +34,7 @@ Sin embargo, los clientes empresariales de Microsoft, que son los controladores 
 
 Microsoft proporcionó sus cláusulas contractuales estándares al Grupo de trabajo del artículo 29 para su revisión y aprobación. El Grupo de trabajo del artículo 29 incluye representantes del Supervisor Europeo de Protección de Datos, de la Comisión Europea y de cada una de las 28 autoridades de protección de datos de la UE (APD).
 
-El Grupo determinó que la implementación de las disposiciones en los acuerdos de Microsoft estaba en línea con sus requisitos estrictos. (Microsoft fue el primer proveedor de servicios de nube que recibo una carta aval del grupo). La aprobación abarcó las interacciones reflejadas en las cláusulas modelo 2010/87/EU, pero no en los apéndices, que describen las transferencias de datos y las medidas de seguridad implementadas por el importador de datos. La APD puede analizar los apéndices por separado.
+El Grupo determinó que la implementación de las disposiciones en los acuerdos de Microsoft estaba en línea con sus requisitos estrictos. (Microsoft fue el primer proveedor de servicios de nube que recibió una carta aval del grupo). La aprobación abarcó las interacciones reflejadas en las cláusulas modelo 2010/87/EU, pero no en los apéndices, que describen las transferencias de datos y las medidas de seguridad implementadas por el importador de datos. La APD puede analizar los apéndices por separado.
 
 Obtenga más información sobre las ventajas de las cláusulas modelo de la Unión Europea en la nube de Microsoft
 
@@ -42,9 +42,9 @@ Obtenga más información sobre las ventajas de las cláusulas modelo de la Uni�
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
-- [Azure y Azure para la Administración Pública](https://aka.ms/AzureCompliance)
+- [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para empresas medianas y clientes empresariales de Office 365
+- Servicios profesionales de Microsoft: premier y local para Azure, Dynamics 365, Intune y para empresas medianas y clientes empresariales de Office 365
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune: parte del servicio de nube de la administración de dispositivos móviles y productos de complemento de Intune para Office 365
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365

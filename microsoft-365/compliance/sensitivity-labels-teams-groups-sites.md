@@ -3,7 +3,7 @@ title: Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 12/05/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede aplicar etiquetas a Microsoft Teams, a los grupos de Office 365 y a los sitios de SharePoint.
-ms.openlocfilehash: ebe5e00c3458782e1874274cb508326968461ce3
-ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
+ms.openlocfilehash: e69968ad5939069ca8ae1611f3bbdc674f9dd7de
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39822496"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871256"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)
 
@@ -102,7 +102,7 @@ Después de habilitar la vista previa, siga estos pasos para crear o editar las 
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>Solucionar problemas de implementación de etiqueta de confidencialidad
 
-Si experimenta problemas al crear un grupo de Teams o 365 de Office después de habilitar esta configuración o realizar un cambio en la descripción de la etiqueta de confidencialidad, guarde la etiqueta, espere unas cuantas horas y, a continuación, vuelva a intentar crear el grupo de Office 365 o equipo.
+Si experimenta problemas al crear un grupo de Teams o 365 de Office después de habilitar esta configuración o realizar un cambio en la descripción de la etiqueta de confidencialidad, guarde la etiqueta, espere unas cuantas horas y, a continuación, vuelva a intentar crear el grupo de Office 365 o equipo. Para obtener más información, consulte [programar la distribución después de crear o cambiar una etiqueta de confidencialidad](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
 
 Si sigue sin poder ver la nueva etiqueta de confidencialidad de SharePoint Online, póngase en contacto con el soporte técnico de Microsoft inmediatamente.
 
@@ -171,7 +171,7 @@ No puede usar las siguientes aplicaciones y servicios para crear grupos de Offic
 - Yammer  
 - Stream  
 - Planner  
-- Project  
+- Proyecto  
 - PowerBI  
 - Centro de administración de Teams  
 - Centro de administración de 365 de Microsoft  
