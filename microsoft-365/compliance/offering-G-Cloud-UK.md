@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a79b56bc5f6150439cd945f99b53a69b34a04a45
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 525ea4c129e351b157463efdf02280a1f55797ad
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691047"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859790"
 ---
-# <a name="compliance-offering-united-kingdom-government-cloud-g-cloud"></a>Oferta de cumplimiento: Reino Unido-nube (G-Cloud)
+# <a name="united-kingdom-government-cloud-g-cloud"></a>Reino Unido Government-Cloud (G-Cloud)
 
 ## <a name="uk-g-cloud-overview"></a>Información general de Reino Unido G-Cloud
 
@@ -38,16 +38,16 @@ Obtenga más información sobre las ventajas de United Kingdom G-Cloud V6 en la 
 
 Obtenga información sobre cómo acelerar la implementación de United Kingdom G-Cloud V6 con nuestro proyecto de Azure Security and Compliance: [descargar la guía de implementación de Microsoft Blueprint uk G-Cloud Principle](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
-- [Azure](https://aka.ms/AzureCompliance)
+- [Azure](https://aka.ms/AzureCompliance).
 - Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Servicio de nube de Microsoft Flow, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365 o Dynamics 365
+- El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - Office 365: Exchange Online, SharePoint Online y Skype empresarial online
-- Servicio de nube de PowerApps, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365 o Dynamics 365
-- Servicio en la nube de Power BI, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365
+- El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
+- El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
@@ -63,7 +63,7 @@ Para confirmar que los servicios en la nube de Microsoft mantienen su cumplimien
 
 - [Entorno de riesgo de nube de Dynamics 365 UK G](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
 
-### <a name="intune"></a>Intune
+### <a name="intune"></a>Intune.
 
 - [Entorno de riesgos de nube para Intune UK G](https://aka.ms/IntuneUKGCloudRiskEnvironment)
 - [Riesgo residual de nube de Intune G](https://aka.ms/IntuneUKGCloudResidualRisk)
@@ -102,7 +102,7 @@ Además de los centros de datos del Reino Unido, los servicios en la nube de Mic
 
 **¿Cómo puedo obtener copias de los informes del Auditor?**
 
-El [portal de confianza de servicios](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) proporciona informes de cumplimiento auditados de forma independiente. Puede usar el portal para solicitar informes de auditoría para que los auditores puedan comparar los resultados de Microsoft con sus propios requisitos legales y normativos.
+El [Portal del Centro de confianza](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) ofrece informes de cumplimiento auditados de forma independiente. Puede usar el portal para solicitar informes de auditoría para que los auditores puedan comparar los resultados de Microsoft con sus propios requisitos legales y normativos.
 
 ## <a name="resources"></a>Recursos
 
@@ -111,8 +111,8 @@ El [portal de confianza de servicios](https://support.office.com/article/Get-sta
 - [G-Cloud Security Principles](https://aka.ms/UK-G-Cloud)
 - [Mercado digital](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf).

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 232d8ddcdcd108d069247bc76850d7d17f18b629
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 12af7c84a922e3db0b7d234dce6f4095ba062a64
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691027"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860040"
 ---
-# <a name="compliance-offering-committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Oferta de cumplimiento: Comité de la instrucción máquina de sistemas de seguridad nacional 1253 (CNSSI 1253)
+# <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Comité de la instrucción máquina de sistemas de seguridad nacional 1253 (CNSSI 1253)
 
 ## <a name="about-cnss-instruction-1253"></a>Acerca de la instrucción CNSS 1253
 
@@ -36,7 +36,7 @@ Azure Government actualmente posee una autorización provisional FedRAMP alta pa
   
 El cumplimiento de Azure Government con los requisitos exigentes de CNSSI 1253 significa que Azure puede ofrecer a los clientes del sector público en Estados Unidos una amplia variedad de servicios compatibles con CNSSI 1253, lo que les permite beneficiarse de los ahorros de costos y rigurosas seguridad de la nube de Microsoft.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 
@@ -64,9 +64,9 @@ Azure Government (FedRAMP Package ID F1603087869) se ha probado de nuevo estos c
 - [Administración pública de Azure](https://aka.ms/Azure-Government)
 - [Microsoft y FedRAMP](offering-fedramp.md)
 - [Autorización provisional de Microsoft y DoD](offering-DoD-DISA-L2-L4-L5.md)
-- [Nube de Microsoft Government](https://www.microsoft.com/enterprise/government)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Nube de Microsoft para la Administración Pública](https://www.microsoft.com/enterprise/government)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).

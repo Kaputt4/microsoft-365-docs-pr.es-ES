@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ac12047420e29a0c096dffac884ab584a38fad9b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691011"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859970"
 ---
-# <a name="compliance-offering-digital-production-partnership-dpp-united-kingdom"></a>Oferta de cumplimiento: Asociación de producción digital (DPP) United Kingdom
+# <a name="digital-production-partnership-dpp-united-kingdom"></a>Asociación de producción digital (DPP) United Kingdom
 
 ## <a name="about-the-dpp"></a>Acerca del DPP
 
@@ -32,9 +32,9 @@ Se ha otorgado a Microsoft Azure la marca de seguridad DPP confirmada para la di
   
 Esto significa que los broadcasters y los clientes de medios que usan Azure pueden tener la confianza de que su robusto servicio de seguridad y resistente puede ayudarle a satisfacer las demandas exclusivas de la industria de la difusión, desde el desarrollo del programa hasta la transmisión.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
-- [Azure](https://aka.ms/AzureCompliance)
+- [Azure](https://aka.ms/AzureCompliance).
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
@@ -52,8 +52,8 @@ La marca de difusión de Azure es válida durante un año y se renueva anualment
 
 - [Guía del usuario de DPP comprometidos con la lista de comprobación de difusión de seguridad programa](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [Los broadcasters de NABA y DPP se unen para promover los requisitos de seguridad Cyber para los proveedores](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf).

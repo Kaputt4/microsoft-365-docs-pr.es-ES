@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 02259b8c9e957e29ce695330a80b2a252478c0e1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7ed252a681942d7c00840d3902f4c48e80231331
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691006"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859870"
 ---
-# <a name="compliance-offering-family-educational-rights-and-privacy-act-ferpa"></a>Oferta de cumplimiento: Ley de privacidad y derechos de la educación de la familia (FERPA)
+# <a name="family-educational-rights-and-privacy-act-ferpa"></a>Ley de privacidad y derechos educativos de la familia (FERPA)
 
 ## <a name="ferpa-overview"></a>Información general sobre FERPA
 
@@ -40,14 +40,14 @@ Como resultado de estos compromisos contractuales, los clientes que están sujet
 
 Obtenga información sobre las ventajas de FERPA en la nube de Microsoft: [descargar el fondo de FERPA](https://aka.ms/ferpa-compliance)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 Los servicios a los que Microsoft acuerda ser designados como "funcionario de la escuela" con "intereses educativos legítimos" en los datos del cliente son:
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365, Office 365 el gobierno de Estados Unidos y Office 365 para la defensa del gobierno de Estados Unidos](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI, PowerApps y Microsoft Flow como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365
 - Azure DevOps Services
 - ATP de Windows Defender
@@ -75,8 +75,8 @@ Esta ley federal de Estados Unidos tiene en cuentan la protección de la privaci
 - [Guía de implementación de FERPA para Microsoft Azure](https://aka.ms/azureferpa)
 - [Asignación del marco de cumplimiento de Azure FERPA](https://aka.ms/AzureFERPAMapping)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).

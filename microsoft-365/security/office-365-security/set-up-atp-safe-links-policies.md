@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 82731d961fddf90c2b53bfead1b72a3f35df2b24
-ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
+ms.openlocfilehash: 09a9a47610915244ade77e1410024d7f055e390f
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37593885"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866622"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
@@ -47,11 +47,11 @@ ms.locfileid: "37593885"
     
 - Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos: <br>
 
-    |Rol  |Dónde y cómo se asigna  |
+    |Role  |Dónde y cómo se asigna  |
     |---------|---------|
     |Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
     |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
-    |Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o bien <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+    |Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
     Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -130,7 +130,7 @@ Las opciones de directiva predeterminadas se aplican a todos los usuarios de la 
 
 |Esta opción  |Se obtiene este resultado  |
 |---------|---------|
-|**Desactivada** <br/> |No examina direcciones URL en mensajes de correo electrónico.  <br/> Permite definir una regla de excepción, como una regla que no examina direcciones URL en mensajes de correo electrónico para un grupo específico de destinatarios.  <br/> |
+|**Desactivado** <br/> |No examina direcciones URL en mensajes de correo electrónico.  <br/> Permite definir una regla de excepción, como una regla que no examina direcciones URL en mensajes de correo electrónico para un grupo específico de destinatarios.  <br/> |
 |**On** <br/> |Reescribe las direcciones URL para enrutar a los usuarios a través de la protección de vínculos seguros de ATP cuando los usuarios hacen clic en direcciones URL en mensajes de correo electrónico y habilita vínculos seguros de ATP en Outlook (C2R) en Windows.  <br/> Comprueba una dirección URL al hacer clic en una lista de direcciones URL malintencionadas o bloqueadas y desencadena una detonación de la dirección URL en segundo plano si la dirección URL no tiene una reputación válida.  <br/> |
 |**Aplicar un análisis de URL en tiempo real de vínculos y vínculos sospechosos que señalan a archivos** <br/> |Cuando se selecciona esta opción, se examinan direcciones URL sospechosas y vínculos que apuntan al contenido descargable.  <br/> |
 |**Esperar a que se complete el análisis de URL antes de entregar el mensaje** <br/> |Cuando se selecciona esta opción, los mensajes que contienen direcciones URL que se examinarán se retendrán hasta que las direcciones URL terminen de analizar y se confirmen como seguras antes de que se entreguen los mensajes.  <br/> |
@@ -139,7 +139,7 @@ Las opciones de directiva predeterminadas se aplican a todos los usuarios de la 
 |**No permitir que los usuarios hagan clic a través de la dirección URL original** <br/> |Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.  <br/> |
 |**No volver a escribir las siguientes direcciones URL** <br/> |Deja las direcciones URL tal y como están. Mantiene una lista personalizada de direcciones URL seguras que no necesitan análisis para un grupo específico de destinatarios de correo electrónico de la organización.  Consulte [configurar una lista de direcciones URL personalizadas "no reescribir" mediante vínculos seguros ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) para obtener más información, incluidos los cambios recientes para la compatibilidad con asteriscos comodín (\*).  <br/> |
    
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que se hayan implementado las directivas de vínculos seguros de ATP, podrá ver cómo ATP está trabajando para sus orgnization consultando los informes. Vea los siguientes recursos para obtener más información:
 

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5edd043db7d5f8c401aa287032ddf7cfd9b63982
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 0e967520dbbac845861168d3eea5053e18a46edf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691051"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859810"
 ---
-# <a name="compliance-offering-federal-risk-and-authorization-management-program-fedramp"></a>Oferta de cumplimiento: programa de administración de riesgos y autorización Federal (FedRAMP)
+# <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programa de administración de riesgos y autorización Federal (FedRAMP)
 
 ## <a name="fedramp-overview"></a>Información general sobre FedRAMP
 
@@ -62,14 +62,14 @@ Una vez que se concede una P-ATO, un CSP requiere una autorización (una ATO) de
 - Office 365 (planes empresariales y empresariales) y Office 365 el gobierno de Estados Unidos tienen una agencia FedRAMP de la agencia en el nivel de impacto moderado de la oficina del Departamento de salud y servicios humanos (DHHS) del inspector general. Office 365 U.S. Government fue el primer servicio de colaboración y correo electrónico basado en la nube para obtener esta autorización.
 - Cualquier cliente que desee usar O365 U.S. Government Defense puede usar la DISA P-ATO para generar una agencia ATO para documentar su aceptación de O365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
-- [Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
+- [Azure y Azure para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365 y Office 365 el gobierno de Estados Unidos](https://aka.ms/o365-compliance-framework)
-- Office 365, defensa del gobierno de Estados Unidos
-- Servicio en la nube de Power BI, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365
+- [Office 365 y Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)
+- Office 365 U.S. Government Defense
+- El servicio en la nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 - ATP de Microsoft defender
 
 > [!NOTE]
@@ -109,11 +109,11 @@ Sí. Puede usar las certificaciones de los servicios en la nube de Microsoft com
 ## <a name="resources"></a>Recursos
 
 - [Programa de administración de riesgos y autorización Federal](https://www.fedramp.gov/)
-- [Marco de cumplimiento de Hub de Microsoft Common Controls](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Nube de Microsoft Government](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Marco de evaluación de seguridad de FedRAMP](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf).

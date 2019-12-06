@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: eb14bbe784685fb79ba09f28bc9ca12216b24d57
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 2722c5df4b96f28a449057abae353350b036a13b
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691066"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859340"
 ---
-# <a name="compliance-offering-new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Oferta de cumplimiento: consideraciones de seguridad y privacidad informática en la nube para el gobierno de Nueva Zelanda
+# <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Consideraciones sobre seguridad y privacidad de informática en la nube del gobierno de Nueva Zelanda
 
 ## <a name="new-zealand-government-cloud-computing-security-and-privacy-overview"></a>Información general sobre seguridad y privacidad de informática en la nube del gobierno de Nueva Zelanda
 
@@ -36,12 +36,12 @@ Obtenga información sobre las ventajas de NZ CC Framework en la nube de Microso
 
 Obtenga información sobre cómo acelerar su implementación de .NET Framework de NZ con nuestro proyecto de Azure Security and Compliance: [descargar la respuesta de Azure en el marco de trabajo NZ CC](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
-- [Azure y Azure Government](https://aka.ms/AzureCompliance)
+- [Azure y Azure para la Administración Pública](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Servicio en la nube de Power BI, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365
+- El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Exchange Online, SharePoint Online y Skype empresarial online. Microsoft NZ ha trabajado con el equipo de GCIO para desarrollar una arquitectura de referencia para la integración de Exchange Online y SEEMail descritas en las notas del producto [Office 365: integración de referencia y arquitectura de SEEMail](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)
 
@@ -62,9 +62,9 @@ Si su agencia necesita llevar a cabo la certificación y acreditación de su sis
 - [Estrategia de la TIC del gobierno de NZ 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [Requisitos del gobierno de NZ para la informática en la nube](https://aka.ms/NZ-Cloud-Requirements)
 - [Informática en la nube: consideraciones sobre seguridad y privacidad de la información (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
-- [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
+- [Términos de los Servicios en Línea de Microsoft](https://aka.ms/Online-Services-Terms).
 - [Office 365: arquitectura de referencia y de integración de SEEMail](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (más información sobre la adopción de Microsoft NZ sobre la adopción de servicios en la nube)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview).
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Respuestas de Microsoft a "Cloud Computing IPSC"
 
@@ -74,6 +74,6 @@ Si su agencia necesita llevar a cabo la certificación y acreditación de su sis
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf).

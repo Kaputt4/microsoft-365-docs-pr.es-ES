@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7fb31d007b7935d8a2beef93b80ca1958c7a3a27
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 8d28327e4627351c27140e954c2fa26571d1689d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668818"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860050"
 ---
-# <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>Oferta de cumplimiento: Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
+# <a name="criminal-justice-information-services-cjis-security-policy"></a>Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
 
 ## <a name="cjis-overview"></a>Información general sobre CJIS
 
@@ -40,7 +40,7 @@ Obtenga información sobre las ventajas de la Directiva de seguridad de CJIS en 
 
 Obtenga información sobre cómo acelerar la Directiva de seguridad de CJIS con nuestro proyecto de Azure Security and Compliance: [descargar las instrucciones de implementación de CJIS para Microsoft Government Cloud Services](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: de25c210fb5b361cf9bba1d7efe15e27d386e200
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691017"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859980"
 ---
-# <a name="compliance-offering-defense-federal-acquisition-regulation-supplement-dfars"></a>Oferta de cumplimiento normativo: adquisición federal de defensa suplemento del Reglamento (DFARS)
+# <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>Suplemento de la estrategia de adquisición federal de defensa (DFARS)
 
 ## <a name="dfars-overview"></a>Información general sobre DFARS
 
@@ -32,11 +32,11 @@ Los servicios de nube de Microsoft Government ayudan a los clientes de la base i
   
 Obtenga información sobre cómo acelerar la implementación de DFARS con nuestro Blueprint de Azure Security y Compliance: [descargar la matriz de responsabilidades del cliente de la DFARS de Azure: Blueprint](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 Servicios cubiertos para el nivel 5 de impacto DoD
 
-- [Azure y Azure Government](https://aka.ms/AzureCompliance)
+- [Azure y Azure para la Administración Pública](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
@@ -75,7 +75,7 @@ Además, las ofertas de Microsoft fuera del límite certificado por el FedRAMP q
 ## <a name="resources"></a>Recursos
 
 - [Suplemento de la estrategia de adquisición federal de defensa (DFARS)](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
-- [Nube de Microsoft para la administración pública](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Microsoft Cloud para la Administración Pública](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Información sin clasificar controlada (CUI)](https://www.archives.gov/cui/registry/category-list)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)

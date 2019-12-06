@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5e6af9be34fe5b14c84e8ba6cc9a55510baab92d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c88cfbfc9237e6e9a43dc8b143af015ba377ad17
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691053"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859500"
 ---
-# <a name="compliance-offering-reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Oferta de cumplimiento: Reserve Bank of India (RBI) y Insurance Regulatory and Development Authority of India (IRDAi)
+# <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Banco de reserva de la India (RBI) y normativa del seguro y la autoridad de desarrollo de India (IRDAi)
 
 ## <a name="about-rbi-and-irdai"></a>Acerca de RBI y IRDAi
 
@@ -40,10 +40,10 @@ Cuando las instituciones financieras indias subcontratan actividades empresarial
 
 La lista de comprobación de Microsoft ayuda a las empresas financieras de India que realizan evaluaciones de diligencias de vencimiento de Microsoft Business Cloud Services e incluyen:
 
-- Información general sobre el panorama normativo para el contexto.
-- Una lista de comprobación que establece los problemas a los que se van a dirigir y asigna los servicios Microsoft Azure, Microsoft Dynamics 365 y Microsoft Office 365 a las obligaciones regulatorias. La lista de comprobación se puede usar como una herramienta para medir el cumplimiento en un marco normativo y proporcionar una estructura interna para documentar el cumplimiento normativo, y ayudar a los clientes a realizar sus propias evaluaciones de riesgos de los servicios en la nube de Microsoft Business.
+- Información general sobre el panorama normativo para dar contexto.
+- Una lista de comprobación que establece los problemas a los que se van a dirigir y asigna los servicios Microsoft Azure, Microsoft Dynamics 365 y Microsoft Office 365 a las obligaciones regulatorias. La lista de comprobación puede usarse como una herramienta para medir el cumplimiento con un marco normativo y proporcionar una estructura interna para documentar el cumplimiento, así como para ayudar a los clientes a llevar a cabo sus propias evaluaciones de riesgo de los servicios empresariales en la nube de Microsoft.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -52,12 +52,12 @@ La lista de comprobación de Microsoft ayuda a las empresas financieras de India
 ## <a name="how-to-implement"></a>Cómo implementar
 
 - [Lista de comprobación de cumplimiento para India](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): las empresas financieras pueden obtener ayuda para llevar a cabo evaluaciones de riesgos de los servicios en la nube de Microsoft Business.
-- [Guía de cumplimiento de & de evaluación de riesgos](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): crear un modelo de gobierno para la evaluación de riesgos de los servicios en la nube de Microsoft y la notificación del regulador.
+- [Guía de cumplimiento y evaluación de riesgos](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): Cree un modelo de gobierno para la evaluación de riesgos de los servicios en la nube de Microsoft y las notificaciones reglamentarias.
 - [Casos de uso financiero para Azure](https://docs.microsoft.com/azure/industry/financial/): información general, tutoriales y otros recursos para crear soluciones de Azure para servicios financieros.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-**¿Hay términos obligatorios que deban incluirse en el contrato con el proveedor de servicios en la nube?**
+**¿Hay términos obligatorios que se deban incluir en el contrato con el proveedor de servicios en la nube?**
 
 Sí. Las directrices a las que se hace referencia más arriba estipulan algunos puntos específicos que las instituciones financieras deben incorporar a sus contratos de servicios en la nube. La parte 2 de la [lista de comprobación](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (página 70) los asigna a las secciones de los documentos contractuales de Microsoft donde se dirigen.
 
@@ -65,11 +65,11 @@ Sí. Las directrices a las que se hace referencia más arriba estipulan algunos 
 
 - [Microsoft y MeitY](offering-meity-india.md)
 - [Programa de cumplimiento de servicios financieros de Microsoft](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
-- [Servicios financieros y servicios de Microsoft Business Cloud](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Herramienta de evaluación de riesgos de la nube de servicios financieros de Azure](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Servicios financieros y servicios empresariales en la nube de Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Cumplimiento de los servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Herramienta de evaluación de riesgos en la nube para servicios financieros de Azure](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf).

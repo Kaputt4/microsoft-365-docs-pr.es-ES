@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1e7f850a06a95f86c2afd5c8bccc77ff5431dda4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691054"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859410"
 ---
-# <a name="compliance-offering-us-doe-10-cfr-part-810"></a>Oferta de cumplimiento normativo: la parte 810 de US Pérez 10 CFR
+# <a name="us-doe-10-cfr-part-810"></a>Parte US García 10 CFR 810
 
 ## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft y Pérez 10 CFR parte 810
 
@@ -31,12 +31,12 @@ FedRAMP ofrece una línea de base adecuada para proporcionar garantías de que A
 
 Además, Azure Government es una nube de la comunidad de administración de US Government que está físicamente separada de la nube de Azure. Proporciona garantías adicionales en relación con los requisitos específicos de detección en segundo plano por parte del gobierno de Estados Unidos, incluidos los controles específicos que restringen el acceso a la información y los sistemas para que los ciudadanos de las operaciones de Azure puedan filtrar a los ciudadanos.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - Intune
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - [NERC de la transferencia de la información & la informática en la nube](https://aka.ms/AzureNERC): Guía para las utilidades eléctricas y las entidades registradas implementación de cargas de trabajo en Azure o Azure Government.
 
@@ -63,9 +63,9 @@ Los clientes que implementan datos en Azure Government son responsables de su pr
 - [Azure Cloud Services y US Export Controls](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 - [Microsoft y FedRAMP](offering-fedramp.md)
 - [Microsoft y DoD](offering-dod-disa-l2-l4-l5.md)
-- [Nube de Microsoft Government](https://www.microsoft.com/enterprise/government)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Nube de Microsoft para la Administración Pública](https://www.microsoft.com/enterprise/government)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf).

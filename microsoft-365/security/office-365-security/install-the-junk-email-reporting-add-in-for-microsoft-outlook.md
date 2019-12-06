@@ -12,12 +12,12 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: En esta articleSupported LanguagesInstall el informe de correo electrónico no deseado Add-inUninstall el complemento de notificación de correo no deseado Add-inFor más información
-ms.openlocfilehash: 7f294ed78affba6e55f2372b81b517bbd25d3f08
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 508d542be4862a6a06b795fc7a4b97bdc405d430
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092235"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865892"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar el complemento de notificación de correo no deseado para Microsoft Outlook
   
@@ -59,13 +59,12 @@ El complemento de notificación de correo no deseado admite los siguientes idiom
 - Español
     
 ## <a name="install-the-junk-email-reporting-add-in"></a>Instalar el complemento de notificación de correo no deseado
-<a name="sectionSection1"> </a>
 
 Puede instalar el complemento de notificación de correo no deseado:
   
-- Mediante la ejecución del paquete de Windows Installer, al igual que con cualquier otro archivo .msi. Al instalar el complemento, se abre una interfaz gráfica de usuario que le guía por los pasos a través de las pantallas de instalación. Para obtener más información, consulte [Instalar el complemento de notificación de correo no deseado mediante el Asistente para instalación](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard). O BIEN
+- Mediante la ejecución del paquete de Windows Installer, al igual que con cualquier otro archivo .msi. Al instalar el complemento, se abre una interfaz gráfica de usuario que le guía por los pasos a través de las pantallas de instalación. Para obtener más información, consulte [Instalar el complemento de notificación de correo no deseado mediante el Asistente para instalación](#install-the-junk-email-reporting-add-in-using-the-setup-wizard). O BIEN
     
-- Mediante la ejecución de una instalación silenciosa que suprime la interfaz de usuario de la instalación. Otro método consiste en especificar las opciones de la línea de comandos que ejecutan un script de instalación. Al instalar el complemento, aparecen otras opciones de configuración que no están disponibles a través de la interfaz gráfica de usuario. Para obtener más información, consulte [Instalar el complemento de notificación de correo no deseado en modo silencioso](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode).
+- Mediante la ejecución de una instalación silenciosa que suprime la interfaz de usuario de la instalación. Otro método consiste en especificar las opciones de la línea de comandos que ejecutan un script de instalación. Al instalar el complemento, aparecen otras opciones de configuración que no están disponibles a través de la interfaz gráfica de usuario. Para obtener más información, consulte [Instalar el complemento de notificación de correo no deseado en modo silencioso](#install-the-junk-email-reporting-add-in-using-silent-mode).
     
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -87,7 +86,6 @@ La instalación del complemento de notificación de correo no deseado de Microso
 > Debe tener permisos de administrador en el equipo en el que vaya a instalar el complemento. 
   
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Instalar el complemento de notificación de correo no deseado mediante el Asistente para instalación
-<a name="BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard"> </a>
 
 1. En el equipo, cierre Outlook.
     
@@ -108,7 +106,6 @@ La instalación del complemento de notificación de correo no deseado de Microso
 9. Elija la flecha abajo que aparece junto a **Correo no deseado** para ver más opciones, como **Notificar como suplantación de identidad (phishing)** si desea informar a Microsoft sobre correos de suplantación de identidad (phishing). En la carpeta de correo no deseado, también puede seleccionar **Notificar como correo deseado** si un correo electrónico se ha identificado incorrectamente como correo no deseado. 
     
 ### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>Instalar el complemento de notificación de correo no deseado en modo silencioso
-<a name="BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode"> </a>
 
 1. En el equipo, cierre Outlook.
     
@@ -135,9 +132,9 @@ La instalación del complemento de notificación de correo no deseado de Microso
   
     Para agregar ambos parámetros opcionales en función de los ejemplos anteriores, especifique lo siguiente para un equipo que ejecute Outlook x86: 
     
-  ```
-  msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
-  ```
+      ```
+      msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
+      ```
 
 4. Después de completar la instalación, inicie Outlook.
     
@@ -146,21 +143,19 @@ La instalación del complemento de notificación de correo no deseado de Microso
 6. Elija la flecha abajo que aparece junto a **Correo no deseado** para ver más opciones, como **Notificar como suplantación de identidad (phishing)** si desea informar a Microsoft sobre correos de suplantación de identidad (phishing). En la carpeta de correo no deseado, también puede seleccionar **Notificar como correo deseado** si un correo electrónico se ha identificado incorrectamente como correo no deseado. 
     
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>Desinstalar el complemento de notificación de correo no deseado
-<a name="sectionSection2"> </a>
 
 Use una de estas opciones para desinstalar el complemento de notificación de correo no deseado:
   
-- Quite el complemento mediante el Panel de control de Windows. Para obtener más información, consulte [Desinstalar el complemento de notificación de correo no deseado desde el Panel de control](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel). O BIEN
+- Quite el complemento mediante el Panel de control de Windows. Para obtener más información, consulte [Desinstalar el complemento de notificación de correo no deseado desde el Panel de control](#uninstall-the-junk-email-reporting-add-in-from-control-panel).
     
-- Ejecute el paquete de Windows Installer y seleccione la opción de desinstalar. Para obtener más información, consulte [Desinstalar el complemento de notificación de correo no deseado mediante la ejecución del paquete de Windows Installer](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage). O BIEN
+- Ejecute el paquete de Windows Installer y seleccione la opción de desinstalación. Para obtener más información, consulte [desinstalar el complemento de notificación de correo no deseado ejecutando el paquete de Windows Installer](#uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package).
     
-- Ejecute una instalación silenciosa mediante la opción de desinstalar. Para obtener más información, consulte [Desinstalar el complemento de notificación de correo no deseado en modo silencioso](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#MK_UninstalltheJunkEmailReportingAdd-ininSilentMode).
+- Ejecute una instalación silenciosa mediante la opción de desinstalar. Para obtener más información, consulte [Desinstalar el complemento de notificación de correo no deseado en modo silencioso](#uninstall-the-junk-email-reporting-add-in-in-silent-mode).
     
 > [!NOTE]
 > Debe tener permisos de administrador en el equipo en el que vaya a desinstalar el complemento. 
   
 ### <a name="uninstall-the-junk-email-reporting-add-in-from-control-panel"></a>Desinstalar el complemento de notificación de correo no deseado desde el Panel de control
-<a name="BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel"> </a>
 
 1. En el equipo, cierre Outlook.
     
@@ -175,7 +170,6 @@ Use una de estas opciones para desinstalar el complemento de notificación de co
 6. Inicie Outlook de nuevo para comprobar que el complemento ya no aparece en la cinta de Outlook.
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package"></a>Desinstalar el complemento de notificación de correo no deseado mediante la ejecución del paquete de Windows Installer
-<a name="BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage"> </a>
 
 1. En el equipo, cierre Outlook.
     
@@ -191,7 +185,6 @@ Use una de estas opciones para desinstalar el complemento de notificación de co
 4. Inicie Outlook de nuevo para comprobar que el complemento ya no aparece en la cinta de Outlook.
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-in-silent-mode"></a>Desinstalar el complemento de notificación de correo no deseado en modo silencioso
-<a name="MK_UninstalltheJunkEmailReportingAdd-ininSilentMode"> </a>
 
 1. En el equipo, cierre Outlook.
     
@@ -209,7 +202,6 @@ Use una de estas opciones para desinstalar el complemento de notificación de co
 4. Inicie Outlook de nuevo para comprobar que el complemento ya no aparece en la cinta de Outlook.
     
 ## <a name="for-more-information"></a>Más información
-<a name="sectionSection3"> </a>
 
 [Informar a Microsoft de los mensajes de correo electrónico no deseado](report-junk-email-messages-to-microsoft.md)
   

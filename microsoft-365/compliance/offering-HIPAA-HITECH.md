@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b603cc6b946f62a8ca6b7cfa5c0dd7faf64dfbe4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691042"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859750"
 ---
-# <a name="compliance-offering-health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Oferta de cumplimiento: actos de portabilidad y responsabilidad de seguros de salud (HIPAA) & alta tecnología
+# <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>Información general sobre la ley HIPAA y la tecnología de alta tecnología
 
@@ -48,18 +48,18 @@ Los servicios en la nube de Microsoft Enterprise también están cubiertos por e
 
 Obtenga información sobre las ventajas de HIPAA y la tecnología de alta tecnología en la nube de Microsoft: [leer la Zwanger: Pesiri de la narración](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network) de un cliente de radiología
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
-- [Azure y Azure Government](https://aka.ms/AzureCompliance)
+- [Azure y Azure para la Administración Pública](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Servicio de robots de estado de Microsoft
 - Microsoft Stream
-- Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para medianas empresas y clientes empresariales de Office 365
-- [Dynamics 365 y Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Servicio de nube de Microsoft Flow, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365 o Dynamics 365
-- Intune
-- [Office 365, Office 365 el gobierno de Estados Unidos y Office 365 para la defensa del gobierno de Estados Unidos](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Servicio de nube de PowerApps, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365 o Dynamics 365
+- Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para empresas medianas y clientes empresariales de Office 365
+- [Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos](https://aka.ms/d365-compliance-list)
+- El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
+- Intune.
+- [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - Servicio en la nube de Power BI, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365 o Dynamics 365
 - Azure DevOps Services
 
@@ -89,7 +89,7 @@ Microsoft no puede modificar el BAA de HIPAA, ya que los servicios de Microsoft 
 
 **¿Cómo puedo obtener copias de los informes del Auditor?**
 
-El [portal de confianza de servicios](https://www.microsoft.com/trustcenter/STP/default.aspx) proporciona informes de cumplimiento auditados de forma independiente. Puede usar el portal para solicitar informes de auditoría para que los auditores puedan comparar los resultados de los servicios en la nube de Microsoft con sus propios requisitos legales y normativos.
+El [Portal del Centro de confianza](https://www.microsoft.com/trustcenter/STP/default.aspx) ofrece informes de cumplimiento auditados de forma independiente. Puede usar el portal para solicitar informes de auditoría para que los auditores puedan comparar los resultados de los servicios en la nube de Microsoft con sus propios requisitos legales y normativos.
 
 **¿Cómo puedo obtener más información sobre cómo cumplir con la ley HIPAA y la tecnología de alta tecnología?**
 
@@ -102,13 +102,13 @@ Para ayudar a los clientes con esta tarea, Microsoft ha publicado estas guías:
 ## <a name="resources"></a>Recursos
 
 - [Regla Omnibus de HIPAA](https://aka.ms/HIPAA-omnibus) (los reglamentos finales: modificación de las reglas de HIPAA)
-- [Marco de cumplimiento de Hub de Microsoft Common Controls](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Nube de Microsoft Government](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Descripción de la compatibilidad con HIPAA con Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 de mayo de 2016)
 - [Guía de implementación de Microsoft HIPAA](https://aka.ms/azure-hipaa-guide)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).

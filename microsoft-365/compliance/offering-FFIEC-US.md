@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 61028937f469c21d50688912d9acccde7d1c117c
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3ee932493aca94109381edde1b2df0aae342a4c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691008"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859860"
 ---
-# <a name="compliance-offering-federal-financial-institutions-examination-council-ffiec"></a>Oferta de cumplimiento: Consejo de examen de instituciones financieras federales (FFIEC)
+# <a name="federal-financial-institutions-examination-council-ffiec"></a>Consejo financiero federal de examen para instituciones financieras (FFIEC)
 
 ## <a name="ffiec-overview"></a>Información general sobre FFIEC
 
@@ -39,12 +39,12 @@ Para ayudar a los clientes de instituciones financieras a satisfacer sus requisi
 
 Para ayudarle a cumplir con los requisitos de FFIEC, los servicios en la nube de Microsoft proporcionan [informes de atestación de SOC](offering-SOC.md) producidos por una empresa independiente de la CPA. Por ejemplo, la atestación del SOC 1 tipo 2 se basa en el estándar AICPA SSAE 18 (vea la sección de-C 105) que reemplazó a SAS 70 y es apropiado para informar sobre determinados controles de informes financieros. Los informes de SOC incluyen la opinión del Auditor sobre la eficacia de los controles de Microsoft en la consecución de los objetivos de control relacionados durante el período de supervisión especificado. Las instituciones financieras pueden usar esta auditoría formal al cumplir con las obligaciones de cumplimiento específicas de FFIEC para activos implementados en Azure, Power BI y Office 365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Servicio en la nube de Power BI, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365
+- El servicio en la nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
@@ -62,17 +62,17 @@ Para ayudarle a cumplir estas obligaciones, Microsoft proporciona los detalles e
 - [Mapa de cumplimiento de la informática en la nube y los principios normativos en Estados Unidos](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [Manual de examen de auditoría de TI de FFIEC](https://ithandbook.ffiec.gov/it-booklets/audit.aspx)
 - [Manual de examen de TI de FFIEC Outsourcing Technology Services](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)
-- [Herramienta de evaluación de riesgos de la nube de servicios financieros de Azure](https://aka.ms/FFIEC-CSDT)
+- [Herramienta de evaluación de riesgos en la nube para servicios financieros de Azure](https://aka.ms/FFIEC-CSDT)
 - [Guía de Azure Security and Compliance FFIEC Financial Services](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
 
 ## <a name="other-microsoft-resources-for-financial-services"></a>Otros recursos de Microsoft para servicios financieros
 
 - [Programa de cumplimiento de servicios financieros de Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Servicios financieros y servicios de Microsoft Business Cloud](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
+- [Programa de cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Servicios en la nube de Microsoft para empresas y servicios financieros](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Responsabilidades compartidas para la informática en la nube](https://aka.ms/sharedresponsibility)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf).

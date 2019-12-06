@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 91dab1a0f064d35e836a921864817e670fd998b5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 4921fdaa2c6dc7199adb810f5320972f0c1ef8db
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691012"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859830"
 ---
-# <a name="compliance-offering-federal-information-processing-standard-fips-publication-140-2"></a>Oferta de cumplimiento: publicación del estándar federal de procesamiento de información (FIPS) 140-2
+# <a name="federal-information-processing-standard-fips-publication-140-2"></a>Publicación del estándar federal de procesamiento de información (FIPS) 140-2
 
 ## <a name="fips-140-2-standard-overview"></a>Información general sobre FIPS 140-2 estándar
 
@@ -32,13 +32,13 @@ Microsoft mantiene un compromiso activo para cumplir los requisitos de 140-2, co
 
 Para obtener información técnica sobre los módulos criptográficos de Microsoft Windows, la Directiva de seguridad de cada módulo y el catálogo de los detalles del certificado CMVP, consulte el [contenido de Windows y Windows Server FIPS 140-2](https://aka.ms/AA6ehud).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 Mientras que la guía de implementación de CMVP FIPS 140-2 actual excluye una validación de FIPS 140-2 para un servicio en la nube; los proveedores de servicios de nube pueden elegir obtener y operar módulos criptográficos de FIPS 140 validados para los elementos informáticos que componen su servicio en la nube. Los servicios en línea de Microsoft que incluyen componentes, que se han validado por FIPS 140-2, entre otros:
 
-- [Azure y Azure Government](https://docs.microsoft.com/azure/azure-government/documentation-government-plan-security)
+- [Azure y Azure para la Administración Pública](https://docs.microsoft.com/azure/azure-government/documentation-government-plan-security)
 - [Dynamics 365 y Dynamics 365 Government](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365)
-- [Office 365, Office 365 el gobierno de Estados Unidos y Office 365 para la defensa del gobierno de Estados Unidos](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
+- [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -83,8 +83,8 @@ Se trata de dos estándares de seguridad independientes con fines distintos, per
 - [Requisitos de seguridad de FIPS PUB 140-2 para módulos criptográficos](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [Programa de validación de módulo criptográfico NIST](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server y FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf).

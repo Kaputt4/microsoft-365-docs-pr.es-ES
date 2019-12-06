@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 283b6a45807547f9a8d0521cf2c6793a2a15c4d6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b0bb12a4c7f7120d1a607de53ec97d7e8ce915e8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691055"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859400"
 ---
-# <a name="compliance-offering-us-export-administration-regulations-ear"></a>Oferta de cumplimiento: normas para la administración de la exportación de US (EAR)
+# <a name="us-export-administration-regulations-ear"></a>Normas para la administración de la exportación de Estados Unidos (EAR)
 
 ## <a name="about-the-ear"></a>Acerca de las EAR
 
@@ -46,13 +46,13 @@ El Departamento de comercio de Estados Unidos, que exige el oído, ha tomado la 
 - **Cifrado de un extremo a otro**. Al aprovechar el puerto seguro de cifrado de extremo a extremo para ubicaciones de almacenamiento físico especificadas en las EAR, los servicios de nube de Microsoft en el ámbito proporcionan características de cifrado que pueden ayudar a protegerse contra los riesgos de control de la exportación. También ofrecen a los clientes una [amplia variedad de opciones para cifrar datos](https://aka.ms/Azure-Encryption-Overview) en tránsito y en reposo, así como la flexibilidad para elegir entre las opciones de cifrado.
 - **Herramientas y protocolos para impedir la exportación no autorizada considerada**. El uso de cifrado también ayuda a proteger contra una Exportación posible (o reexportación considerada) bajo el oído, porque incluso si una persona no estadounidense tiene acceso a datos cifrados, no se revela nada si no pueden leer o comprender los datos mientras están cifrados; por lo tanto, no hay una "versión" de datos controlados.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
-- [Azure y Azure Government](https://aka.ms/AzureCompliance)
+- [Azure y Azure para la Administración Pública](https://aka.ms/AzureCompliance)
 - [Office 365 Government (GCC-High y DoD)](https://aka.ms/Office-365-Export-Controls)
 - Intune
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 Overview of US Export Controls and Guidance for customers Evaluating The astinas The EAR.
 
@@ -88,4 +88,4 @@ Los Estados Unidos también tienen normas de control de exportación distintas y
 - [Restricciones de exportación en la criptografía](https://docs.microsoft.com/windows/uwp/security/export-restrictions-on-cryptography)
 - [Microsoft y FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft y ITAR](offering-itar.md)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)

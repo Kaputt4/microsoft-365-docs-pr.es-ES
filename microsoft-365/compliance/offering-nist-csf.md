@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7dae370f9fd41ba0a04dd4c327a238dac3841da3
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 8ed1da925da40b439d449638887808aa9830d6e0
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676657"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859369"
 ---
-# <a name="compliance-offering-national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Oferta de cumplimiento: Instituto Nacional de normas y tecnología (NIST) Cybersecurity Framework (CSF)
+# <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Instituto Nacional de normas y tecnología (NIST) Cybersecurity Framework (CSF)
 
 ## <a name="nist-csf-overview"></a>Información general sobre NIST CSF
 
@@ -37,7 +37,7 @@ Aprenda a acelerar la implementación del marco de trabajo del NIST Cybersecurit
 - [Descargar la lista de comprobación de riesgos de Azure Security and Compliance Blueprint-NIST CSF](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [Obtenga más información sobre la evaluación del CSF de NIST para Office 365 en el administrador de cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para administración pública](https://aka.ms/d365-compliance-list)

@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
-ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
+ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37993735"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871766"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -131,7 +131,7 @@ Los tipos de informes disponibles son:
 
 - **Resumen**: disponible si el intervalo de tiempo es inferior a 10 días y no requiere opciones de filtrado adicionales. Los resultados estarán disponibles casi inmediatamente después de hacer clic en **Buscar**.
 
-- **Mejorado** o **ampliado**: estos informes solo están disponibles como archivos. csv descargables y requieren una o varias de las siguientes opciones de filtrado independientemente del intervalo de tiempo: **por estas personas**, **a estas personas**o ** IDENTIFICADOR del mensaje**. Puede usar caracteres comodín para los remitentes o los destinatarios (por ejemplo, \*@contoso. com).
+- **Mejorado** o **ampliado**: estos informes solo están disponibles como archivos. csv descargables y requieren una o varias de las siguientes opciones de filtrado independientemente del intervalo de tiempo: **por estas personas**, **a estas personas o al**identificador del **mensaje**. Puede usar caracteres comodín para los remitentes o los destinatarios (por ejemplo, \*@contoso. com).
 
 **Notas**:
 
@@ -139,7 +139,7 @@ Los tipos de informes disponibles son:
 
 - Aunque puede seleccionar un informe mejorado o un informe ampliado para cualquier intervalo de fecha y hora, normalmente las últimas cuatro horas de datos archivados no estarán disponibles para estos dos tipos de informes.
 
-Al hacer clic en **siguiente**, se presenta una página de resumen que enumera las opciones de filtrado que ha seleccionado, un título único (editable) para el informe y la dirección de correo electrónico que recibe la notificación cuando finaliza el seguimiento de mensajes (también editable, y debe estar en uno de los dominios aceptados de la organización). Haga clic en **preparar Informe** para enviar el seguimiento de mensajes. En la Página principal de **seguimiento de mensajes** , puede ver el estado del informe en la sección **informes descargables** .
+Al hacer clic en **siguiente**, se presenta una página de resumen que enumera las opciones de filtrado que ha seleccionado, un título único (editable) para el informe y la dirección de correo electrónico que recibe la notificación cuando finaliza el seguimiento de mensajes (también editable y debe estar en uno de los dominios aceptados de la organización). Haga clic en **preparar Informe** para enviar el seguimiento de mensajes. En la Página principal de **seguimiento de mensajes** , puede ver el estado del informe en la sección **informes descargables** .
 
 Para obtener más información acerca de la información que se devuelve en los diferentes tipos de informes, consulte la siguiente sección.
 
@@ -263,11 +263,11 @@ Disponible (completado) los informes de Resumen mejorados están disponibles en 
 
 ### <a name="extended-reports"></a>Informes extendidos
 
-Disponible (completado) los informes extendidos están disponibles en la sección **informes descargables** al comienzo del seguimiento de mensajes. Prácticamente toda la información de un informe de resumen mejorado está disponible en un informe ampliado (con la excepción de **origin_timestamp** y **delivery_priority**). La siguiente información adicional solo está disponible en un informe ampliado:
+Disponible (completado) los informes extendidos están disponibles en la sección **informes descargables** al comienzo del seguimiento de mensajes. Prácticamente toda la información de un informe de resumen mejorado está disponible en un informe ampliado (a excepción de **origin_timestamp** y **delivery_priority**). La siguiente información adicional solo está disponible en un informe ampliado:
 
-- **client_ip**: la dirección IP del servidor de correo electrónico o el cliente de mensajería que envió el mensaje.
+- **client_ip**: la dirección IP del servidor de correo electrónico o del cliente de mensajería que envió el mensaje.
 
-- **client_hostname**: el nombre de host o el FQDN del servidor de correo electrónico o el cliente de mensajería que envió el mensaje.
+- **client_hostname**: el nombre de host o el FQDN del servidor de correo electrónico o del cliente de mensajería que envió el mensaje.
 
 - **server_IP**: la dirección IP del servidor de origen o de destino.
 
@@ -295,15 +295,15 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 - **recipient_count**: el número total de destinatarios del mensaje.
 
-- **related_recipient_address**: se usa `EXPAND`con `REDIRECT`los eventos `RESOLVE` , y para mostrar otras direcciones de correo electrónico de destinatarios asociadas al mensaje.
+- **related_recipient_address**: se usan `EXPAND`con `REDIRECT`los eventos `RESOLVE` , y para mostrar otras direcciones de correo electrónico de destinatarios asociadas al mensaje.
 
 - **referencia**: este campo contiene información adicional para tipos específicos de eventos. Por ejemplo:
 
-  - **DSN**: contiene el vínculo de informe, que es el valor **message_id** de la notificación de estado de entrega asociada (también conocido como DSN, informe de no entrega, NDR o mensaje de devolución) si se genera un DSN después de este evento. Si se trata de un mensaje de DSN, este campo contiene el valor **message_id** del mensaje original para el que se generó el DSN.
+  - **DSN**: contiene el vínculo de informe, que es el **message_id** valor de la notificación de estado de entrega asociada (también conocida como DSN, informe de no entrega, NDR o mensaje de devolución) si se genera un DSN después de este evento. Si se trata de un mensaje de DSN, este campo contiene el **message_id** valor del mensaje original para el que se generó el DSN.
 
   - **Expand**: contiene el valor **related_recipient_address** de los mensajes relacionados.
 
-  - **Receive**: puede contener el valor **message_id** del mensaje relacionado si el mensaje fue generado por otros procesos (por ejemplo, reglas de la bandeja de entrada).
+  - **Receive**: puede contener el valor de **message_id** del mensaje relacionado si el mensaje fue generado por otros procesos (por ejemplo, reglas de la bandeja de entrada).
 
   - **Send**: contiene el valor **internal_message_id** de los mensajes DSN.
 
@@ -317,7 +317,7 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 - **message_info**: información adicional sobre el mensaje. Por ejemplo:
 
-  - La fecha y hora de origen del mensaje en UTC `DELIVER` para `SEND` y eventos. La fecha y hora de origen es la hora en que el mensaje entró por primera vez en la organización de Exchange Online. La fecha y hora UTC se representa en el formato de fecha y hora ISO 8601 `yyyy-mm-ddThh:mm:ss.fffZ`:, `yyyy` donde = año `mm` , = mes `dd` , = día `T` , indica el comienzo del componente de hora `hh` , = hora `mm` , = minuto `ss` , = segundo `fff` , = fracciones de segundo, e `Z` indica `Zulu`, que es otra forma de indicar UTC.
+  - La fecha y hora de origen del mensaje en UTC `DELIVER` para `SEND` y eventos. La fecha y hora de origen es la hora en que el mensaje entró por primera vez en la organización de Exchange Online. La fecha y hora UTC se representa en el formato de fecha y hora ISO 8601 `yyyy-mm-ddThh:mm:ss.fffZ`:, `yyyy` donde = año `mm` , = mes `dd` , `T` indica el comienzo del componente `hh` de hora, = hora, `mm` = minuto, `ss` = segundo, `fff` = fracciones de un segundo e `Z` indica `Zulu`, que es otra forma de indicar UTC.
 
   - Errores de autenticación. Por ejemplo, es posible que vea el `11a` valor y el tipo de autenticación que se usó cuando se produjo el error de autenticación.
 
@@ -335,26 +335,26 @@ Varios **** agentes de Exchange Online `AGENTINFO` usan el campo custom_data par
 
 Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El filtro de contenido marcó el mensaje como correo no deseado.|
 |`SFV=BLK`|Se omitió el filtrado y se bloqueó el mensaje porque proviene de un remitente bloqueado.|
 |`SFV=SKS`|El mensaje se marcó como correo no deseado antes de que el filtro de contenido lo procesara. Esto incluye los mensajes que coinciden con una regla de transporte que marca el mensaje automáticamente como correo no deseado y omite otros tipos de filtrado.|
-|`SCL=<number>`|Para más información sobre los distintos valores SCL y su significado, vea [Niveles de confianza de correo no deseado](https://technet.microsoft.com/library/jj200686.aspx).|
-|`PCL=<number>`|Valor de nivel de confianza de protección antiphishing (PCL) del mensaje. Se puede interpretar del mismo modo que los valores de SCL descritos en [Niveles de confianza de correo no deseado](https://technet.microsoft.com/library/jj200686.aspx).  |
+|`SCL=<number>`|Para más información sobre los distintos valores SCL y su significado, vea [Niveles de confianza de correo no deseado](spam-confidence-levels.md).|
+|`PCL=<number>`|Valor de nivel de confianza de protección antiphishing (PCL) del mensaje. Se puede interpretar del mismo modo que los valores de SCL descritos en [Niveles de confianza de correo no deseado](spam-confidence-levels.md).  |
 |`DI=SB`|Se bloqueó el remitente del mensaje.|
 |`DI=SQ`|El mensaje se puso en cuarentena.|
 |`DI=SD`|El mensaje se eliminó.|
 |`DI=SJ`|El mensaje se envió a la carpeta de correo no deseado del destinatario.|
-|`DI=SN`|El mensaje se enrutó a través del grupo de entrega de mayor riesgo. Para obtener más información, consulte [grupo de entrega de alto riesgo para los mensajes salientes](https://technet.microsoft.com/library/jj200746.aspx).|
+|`DI=SN`|El mensaje se enrutó a través del grupo de entrega de mayor riesgo. Para obtener más información, consulte [grupo de entrega de alto riesgo para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md).|
 |`DI=SO`|El mensaje se enrutó a través del grupo de entrega saliente normal.|
 |`SFS=[a]|SFS=[b]`|Indica que se coincidió con reglas de correo no deseado.|
 |`IPV=CAL`|El mensaje se permitió a través de los filtros de correo no deseado porque la dirección IP estaba incluida en una lista de direcciones IP permitidas en el filtro de conexión.|
 |`H=<EHLOstring>`|La cadena HELO o EHLO del servidor de correo que se conecta.|
 |`PTR=<ReverseDNS>`|Registro PTR de la dirección IP de envío, también denominado dirección DNS inversa.|
 
-Un valor de **custom_data** de ejemplo para un mensaje que se filtra para correo no deseado de la siguiente manera:
+Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no deseado de la siguiente manera:
 
 `S:SFA=SUM|SFV=SPM|IPV=CAL|SRV=BULK|SFS=470454002|SFS=349001|SCL=9|SCORE=-1|LIST=0|DI=SN|RD=ftmail.inc.com|H=ftmail.inc.com|CIP=98.129.140.74|SFP=1501|ASF=1|CTRY=US|CLTCTRY=|LANG=en|LAT=287|LAT=260|LAT=18;`
 
@@ -362,7 +362,7 @@ Un valor de **custom_data** de ejemplo para un mensaje que se filtra para correo
 
 Un valor de **custom_data** que empieza `S:AMA` por es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -377,7 +377,7 @@ Un valor de **custom_data** que empieza `S:AMA` por es del agente de filtro de m
 |`Name=<malware>`|Se detectó el nombre del malware.|
 |`File=<filename>`|El nombre del archivo que contiene el malware.|
 
-Un valor de **custom_data** de ejemplo para un mensaje que contiene malware tiene un aspecto similar al siguiente:
+Un ejemplo de un valor **custom_data** para un mensaje que contiene malware tiene el siguiente aspecto:
 
 `S:AMA=SUM|v=1|action=b|error=|atch=1;S:AMA=EV|engine=M|v=1|sig=1.155.974.0|name=DOS/Test_File|file=filename;S:AMA=EV|engine=A|v=1|sig=201707282038|name=Test_File|file=filename`
 
@@ -385,13 +385,13 @@ Un valor de **custom_data** de ejemplo para un mensaje que contiene malware tien
 
 Un valor de **custom_data** que empieza`S:TRA` por es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|
-|`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de las acciones disponibles, consulte [mail Flow Rule Actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
+|`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de las acciones disponibles, consulte [mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|El modo de la regla. Los valores válidos son: <br/>• **Exigir**: se exigirán todas las acciones de la regla. <br/>• **Pruebe las sugerencias de directiva:**: se enviarán todas las acciones de la sugerencia de Directiva, pero no se actuará sobre otras acciones de aplicación. <br/>• **Pruebe sin sugerencias de directiva**: las acciones se mostrarán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y no se actuará sobre las acciones de aplicación.|
 
-Un valor de **custom_data** de ejemplo para un mensaje que coincide con las condiciones de una regla de flujo de correo tiene el siguiente aspecto:
+Un ejemplo de un valor **custom_data** para un mensaje que coincide con las condiciones de una regla de flujo de correo tiene el siguiente aspecto:
 
 `S:TRA=ETR|ruleId=19a25eb2-3e43-4896-ad9e-47b6c359779d|st=7/17/2017 12:31:25 AM|action=ApplyHtmlDisclaimer|sev=1|mode=Enforce`

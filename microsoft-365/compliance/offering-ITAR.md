@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b79cd30c225631b93c92f8199d008d24ecc9a06d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691040"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859660"
 ---
-# <a name="compliance-offering-international-traffic-in-arms-regulations-itar"></a>Oferta de cumplimiento: tráfico internacional en las regulaciones de armas (ITAR)
+# <a name="international-traffic-in-arms-regulations-itar"></a>Tráfico internacional en las regulaciones de brazos (ITAR)
 
 ## <a name="itar-overview"></a>Información general sobre ITAR
 
@@ -36,10 +36,10 @@ El ITAR tiene obligaciones específicas para informar sobre infracciones, que pu
   
 Los clientes que quieran hospedar datos regulados por el ITAR deben trabajar con su cuenta de Microsoft y con Microsoft Teams para obtener más información, obtener contratos adecuados y acceder a información relevante sobre la arquitectura del sistema.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
-- [Office 365, defensa del gobierno de Estados Unidos](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -54,8 +54,8 @@ Ponte en contacto con tu representante de cuentas de Microsoft.
 - [Uso de Azure Government con datos controlados por ITAR](https://aka.ms/azure-itar-guide)
 - [Administración pública de Azure](https://azure.microsoft.com/features/gov/)
 - [Office 365 para el gobierno de Estados Unidos](https://products.office.com/government/office-365-web-services-for-government)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf).

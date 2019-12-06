@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 72b5f8301dd32ed9188f52153498853720d883c1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: db357418b87e98ee0f649e48b1c00f9073d5e5de
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691029"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860070"
 ---
-# <a name="compliance-offering-commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>Oferta de cumplimiento: Estados Unidos de la Comisión de comercio de futuros sobre CFTC (1.31) (c-d)
+# <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>1.31 de reglas de la Comisión comercial de ventas de futuros (CFTC) (c-d) Estados Unidos
 
 ## <a name="about-cftc-rule-13c-d"></a>Acerca de la regla 1.3 de CFTC (c-d)
 
@@ -42,7 +42,7 @@ Para evaluar el cumplimiento de Office 365 con la regla de CFTC 1.31 (c-d), Micr
 
 El archivado en Office 365 ayuda a preservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Office 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
@@ -56,19 +56,19 @@ El archivado en Office 365 ayuda a preservar una amplia gama de datos, incluidos
 ## <a name="how-to-implement"></a>Cómo implementar
 
 - [Reglamento de servicios financieros](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): mapa de cumplimiento de los principios clave de los Estados Unidos para la informática en la nube y los servicios en línea de Microsoft.
-- [Guía de cumplimiento de & de evaluación de riesgos](https://aka.ms/RiskGovernanceGuide): crear un modelo de gobierno para la evaluación de riesgos de los servicios en la nube de Microsoft y la notificación del regulador.
-- [Casos de uso financiero](https://docs.microsoft.com/azure/industry/financial/): información general, tutoriales y otros recursos para crear soluciones de Azure para servicios financieros.
+- [Guía de cumplimiento y evaluación de riesgos](https://aka.ms/RiskGovernanceGuide): Cree un modelo de gobierno para la evaluación de riesgos de los servicios en la nube de Microsoft y las notificaciones reglamentarias.
+- [Casos de uso financiero](https://docs.microsoft.com/azure/industry/financial/): información general de casos de uso, tutoriales y otros recursos para crear soluciones de Azure para servicios financieros.
 
 ## <a name="resources"></a>Recursos
 
 - [Programa de cumplimiento de servicios financieros de Microsoft](https://aka.ms/FSCP-Print)
-- [Servicios financieros y servicios de Microsoft Business Cloud](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Herramienta de evaluación de riesgos de la nube de servicios financieros de Azure](https://aka.ms/FFIEC-CSDT)
+- [Servicios financieros y servicios empresariales en la nube de Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Cumplimiento de los servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Herramienta de evaluación de riesgos en la nube para servicios financieros de Azure](https://aka.ms/FFIEC-CSDT)
 - [Directivas de retención de Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Blog de servicios financieros de Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf).

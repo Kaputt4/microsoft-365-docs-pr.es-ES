@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Los administradores pueden aprender a usar S/MIME en Exchange Online.
-ms.openlocfilehash: 64a76d1e9eebea86e548a06bf05d0030b0396d3d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 87f7438b8297b0c7d6d7674cd2c02db6be14bb28
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032155"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872056"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME para la firma y el cifrado de mensajes en Exchange Online
 
@@ -37,7 +37,7 @@ Puede configurar S/MIME para trabajar con cualquiera de los siguientes extremos:
 
 Los pasos que debe seguir para configurar S/MIME con cada uno de estos extremos son ligeramente diferentes. Por lo general, deberá realizar los pasos siguientes:
 
-- Instale una entidad emisora de certificados basada en Windows y configure una infraestructura de clave pública para emitir certificados S/MIME. También se admiten los certificados emitidos por proveedores de certificados de terceros. Para obtener más información, consulte [Información general de Servicios de certificados de Active Directory](https://technet.microsoft.com/library/hh831740.aspx).
+- Instale una entidad emisora de certificados basada en Windows y configure una infraestructura de clave pública para emitir certificados S/MIME. También se admiten los certificados emitidos por proveedores de certificados de terceros. Para obtener más información, consulte [Información general de Servicios de certificados de Active Directory](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
 
 - Publique el certificado de usuario en una cuenta local de AD DS en los atributos **UserSMIMECertificate** y **UserCertificate** .
 
@@ -76,6 +76,6 @@ S/MIME requiere una infraestructura de certificados y publicación que suele usa
 
 ## <a name="more-information"></a>Más información
 
-[Outlook en la Web](https://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
+[Outlook en la Web](https://docs.microsoft.com/exchange/exchange-admin-center)
 
-[Correo seguro (2000)](https://technet.microsoft.com/library/cc962043.aspx)
+[Correo seguro (2000)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc962043(v=technet.10))

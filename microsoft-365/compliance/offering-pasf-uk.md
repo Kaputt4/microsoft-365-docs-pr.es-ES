@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ec66f54c8db21bf4d94feb22c5dd17ee4b45ef5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691068"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859300"
 ---
-# <a name="compliance-offering-police-assured-secure-facilities-pasf-united-kingdom"></a>Oferta de cumplimiento: instalaciones seguras garantizadas por la policía (PASF) Reino Unido
+# <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Servicios seguros de policía (PASF) United Kingdom
 
 ## <a name="about-pasf"></a>Acerca de PASF
 
@@ -34,7 +34,7 @@ Microsoft tiene un enfoque holístico de defensa en profundidad de la seguridad.
 
 Estas certificaciones están respaldadas por las medidas que tomamos para proteger la seguridad física de nuestros centros de recursos. Adoptamos un enfoque por capas que comienza con la forma en que diseñamos, creamos y operamos los centros de datos para controlar estrictamente el acceso físico a las áreas en las que se almacenan los datos de los clientes. Los centros de recursos administrados por Microsoft tienen niveles extensivos de protección con la aprobación de acceso necesaria en el perímetro de la institución, en el perímetro del edificio, dentro del edificio y en el suelo del centro de trabajo. Esto reduce el riesgo de que los usuarios no autorizados obtengan acceso físico a los recursos de datos y centros de datos.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -60,8 +60,8 @@ Sí. El cumplimiento de la ley puede usar la evaluación NPIRMT de Azure para ap
 - [Instalaciones, locales y seguridad física de Azure](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Estándares de Microsoft e ISO/IEC 27001:2013 ISM](offering-iso-27001.md)
 - [Términos de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Descargar el fondo de la oferta
+## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
-¿Necesita el documento de fondo para esta oferta? Descargue el [archivo PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).
+¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).
