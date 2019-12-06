@@ -786,7 +786,7 @@
               href: gdpr-dsr-vsts.md
             - name: Dynamics 365
               href: gdpr-dsr-dynamics365.md
-            - name: Intune
+            - name: Intune.
               href: gdpr-dsr-intune.md
             - name: Soporte técnico de Microsoft & Professional Services
               href: gdpr-dsr-prof-services.md
@@ -1071,7 +1071,7 @@
               href: 'https://aka.ms/TRUCS-Compliance'
         - name: Australia y Pacífico
           items:
-            - name: CCSL/IRAP (Australia)
+            - name: IRAP/CCSL (Australia)
               href: offering-CCSL-IRAP-Australia.md
             - name: NZ CC marco (Nueva Zelanda)
               href: offering-nz-cc-framework-nz.md
@@ -1116,7 +1116,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: Office 365 Empresa
+- name: "Office\_365 Empresa"
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
 - name: Seguridad de Microsoft 365
   href: 'https://docs.microsoft.com/microsoft-365/security/'
