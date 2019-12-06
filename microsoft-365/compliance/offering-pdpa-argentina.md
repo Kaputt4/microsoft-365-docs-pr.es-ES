@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3c1bfd0d77eb2dd1a928355441cd8bb1ca5d574c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3bb251b888ba98bd1a815bde0aed0584a4a9bc13
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39625365"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859310"
 ---
-# <a name="compliance-offering-personal-data-protection-act-pdpa-argentina"></a>Oferta de cumplimiento: Ley de Protección de Datos Personales (PDPA) de Argentina
+# <a name="personal-data-protection-act-pdpa-argentina"></a>Ley de Protección de Datos Personales (PDPA) de Argentina
 
 ## <a name="about-the-pdpa"></a>Acerca de la PDPA
 
@@ -26,7 +26,7 @@ De acuerdo con la Constitución Argentina, la [Ley de Protección de Datos Perso
 
 La PDPA se alinea con el modelo de información legislativa europeo para la protección de la privacidad de datos, y Argentina fue el primer país en Latinoamérica en lograr una calificación de "idoneidad" para las transferencias de datos de la UE.
 
-En 2016, la AAIP emitió un nuevo Reglamento, [Provisión 60-E/2016](https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (español), que rige la transferencia de datos personales entre fronteras. En este reglamento se aprueban formularios de modelo (basados parcialmente en el modelo de transferencia de datos de la UE) para las transferencias de este tipo a controladores y procesadores de datos.
+En 2016, la AAIP emitió un nuevo Reglamento, [Provisión 60-E/2016](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (español), que rige la transferencia de datos personales entre fronteras. En este reglamento se aprueban formularios de modelo (basados parcialmente en el modelo de transferencia de datos de la UE) para las transferencias de este tipo a controladores y procesadores de datos.
 
 ## <a name="microsoft-and-the-pdpa"></a>Microsoft y la PDPA
 

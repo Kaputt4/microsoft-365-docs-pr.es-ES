@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7cbe7a98c55708cca1a7f6d5d8c6ce376f591f7f
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 705b59a5ae499a580086304abe91a9318bb36fcb
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39625300"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859710"
 ---
-# <a name="compliance-offering-isoiec-20000-12011-information-technology-service-management"></a>Oferta de cumplimiento normativo: ISO/IEC 20000-1:2011 administración del servicio de tecnologías de la información
+# <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 administración del servicio de tecnologías de la información
 
 ## <a name="isoiec-20000-12011-overview"></a>Introducción a la norma ISO/IEC 20000-1:2011
 
@@ -34,7 +34,7 @@ Una empresa de auditoría de terceros independiente realizó una rigurosa revisi
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
-- [Azure y Azure para la Administración Pública](https://aka.ms/AzureCompliance)
+- [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Intune
 - Microsoft PowerApps

@@ -11,20 +11,20 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d91663a2217f3ff1f1753f9f94a44de9c1536d8c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 9ca6323d5c5ffd019c7d79f283b98cb25816cf62
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39233723"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859530"
 ---
-# <a name="compliance-offering-office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Oferta de cumplimiento: Oficina del Superintendente de Instituciones Financieras (OSFI) Canadá
+# <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Oficina del Superintendente de Instituciones Financieras (OSFI) Canadá
 
 ## <a name="about-the-osfi"></a>Acerca de la OSFI
 
-La [Oficina del Superintendente de Instituciones Financieras](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) es una agencia independiente del gobierno de Canadá responsable de la regulación prudencial y la supervisión de las instituciones financieras reguladas por el gobierno y los planes de pensiones en Canadá.
+La [Oficina del Superintendente de Instituciones Financieras](http://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) es una agencia independiente del gobierno de Canadá responsable de la regulación prudencial y la supervisión de las instituciones financieras reguladas por el gobierno y los planes de pensiones en Canadá.
 
-En su rol de supervisión, la OSFI publicó las Directrices B-10 para la [Subcontratación de Actividades, Funciones y Procesos Empresariales](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). Se establecieron "prácticas, procedimientos o estándares prudentes" para que las instituciones financieras reguladas por el gobierno evalúen y administren el riesgo asociado con la subcontratación de su negocio a un proveedor de servicios. Un memorándum posterior de la OSFI, [Requisitos de subcontratación basados en nuevas tecnologías](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), les recuerda a estas instituciones que las Directrices B-10 permanecen vigentes y deben cumplir con las expectativas de OSFI para los acuerdos materiales de subcontratación.
+En su rol de supervisión, la OSFI publicó las Directrices B-10 para la [Subcontratación de Actividades, Funciones y Procesos Empresariales](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). Se establecieron "prácticas, procedimientos o estándares prudentes" para que las instituciones financieras reguladas por el gobierno evalúen y administren el riesgo asociado con la subcontratación de su negocio a un proveedor de servicios. Un memorándum posterior de la OSFI, [Requisitos de subcontratación basados en nuevas tecnologías](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), les recuerda a estas instituciones que las Directrices B-10 permanecen vigentes y deben cumplir con las expectativas de OSFI para los acuerdos materiales de subcontratación.
 
 Además, el uso de servicios en la nube por las instituciones financieras debe cumplir con la [Ley de Protección de Información Personal y Documentos Electrónicos](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) y, en algunos casos, las leyes provinciales de privacidad de datos.
 
@@ -32,7 +32,7 @@ Además, el uso de servicios en la nube por las instituciones financieras debe c
 
 Para guiar a las instituciones financieras en Canadá que consideren la subcontratación de funciones empresariales a la nube, Microsoft ha publicado [Ábrete camino hacia la nube: Una lista de comprobación de cumplimiento para las instituciones financieras en Canadá](https://aka.ms/Azure-Canada-Compliance). Al revisar y completar la lista de comprobación, las organizaciones financieras pueden adoptar los servicios empresariales en la nube de Microsoft con la seguridad de que cumplen los requisitos normativos aplicables.
 
-Cuando las instituciones financieras canadienses subcontratan actividades comerciales, deben cumplir con las Directrices B-10 para la [Subcontratación de Actividades, Funciones y Procesos Empresariales](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) publicadas por la Oficina del Superintendente de Instituciones Financieras (OSFI), así como las leyes de privacidad canadienses, incluida la [Ley de Protección de Información Personal y Documentos Electrónicos](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA).
+Cuando las instituciones financieras canadienses subcontratan actividades comerciales, deben cumplir con las Directrices B-10 para la [Subcontratación de Actividades, Funciones y Procesos Empresariales](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) publicadas por la Oficina del Superintendente de Instituciones Financieras (OSFI), así como las leyes de privacidad canadienses, incluida la [Ley de Protección de Información Personal y Documentos Electrónicos](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA).
 
 La lista de comprobación de Microsoft ayuda a las empresas financieras canadienses que realizan evaluaciones de diligencia debida de los servicios empresariales en la nube de Microsoft e incluye:
 
@@ -58,7 +58,7 @@ La lista de comprobación de Microsoft ayuda a las empresas financieras canadien
 
 No. No se requiere notificación, consulta, ni aprobación de forma previa. El uso de la informática en la nube pública está permitido, siempre que se cumplan los requisitos de OSFI.
 
-Las [Directrices B-10 de la OSFI](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) indican que la OSFI espera que la institución financiera diseñe un programa de administración de riesgos que se aplique a todos sus acuerdos de subcontratación, con una mitigación de riesgos acorde con los riesgos asociados. Sin embargo, solo los acuerdos de subcontratación material deberán documentarse mediante un contrato escrito que aborde las garantías identificadas en las directrices. La parte 2 de la [Lista de comprobación de Microsoft](https://aka.ms/Azure-Canada-Compliance) (página 53) compara dichas cuestiones frente a las secciones de los documentos contractuales de Microsoft en las que se abordan.
+Las [Directrices B-10 de la OSFI](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) indican que la OSFI espera que la institución financiera diseñe un programa de administración de riesgos que se aplique a todos sus acuerdos de subcontratación, con una mitigación de riesgos acorde con los riesgos asociados. Sin embargo, solo los acuerdos de subcontratación material deberán documentarse mediante un contrato escrito que aborde las garantías identificadas en las directrices. La parte 2 de la [Lista de comprobación de Microsoft](https://aka.ms/Azure-Canada-Compliance) (página 53) compara dichas cuestiones frente a las secciones de los documentos contractuales de Microsoft en las que se abordan.
 
 **¿Hay términos obligatorios que se deban incluir en el contrato con el proveedor de servicios en la nube?**
 

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6002637496cfa01bc7b14ad29069493e45142c33
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: f58322fe915c811ba2613bef98116f910abc03d1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39625320"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859690"
 ---
-# <a name="compliance-offering-isoiec-270172015-code-of-practice-for-information-security-controls"></a>Oferta de cumplimiento: Código de prácticas para los controles de la seguridad de la información ISO/IEC 27017:2015
+# <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>Código de prácticas para los controles de la seguridad de la información ISO/IEC 27017:2015
 
 ## <a name="iso-iec-27017-overview"></a>Introducción a la norma ISO-IEC 27017
 
@@ -28,7 +28,7 @@ Este estándar internacional proporciona instrucciones adicionales para las impl
 
 - Roles y responsabilidades compartidos en un entorno informático en la nube
 - Eliminación y devolución de los activos de los clientes del servicio en la nube una vez que finaliza el contrato
-- Protección y separación del entorno virtual de un cliente de los de otros clientes
+- Protección y separación del entorno virtual de un cliente del de otros clientes
 - Requisitos de refuerzo de las máquinas virtuales para satisfacer las necesidades de la empresa
 - Procedimientos para las operaciones administrativas de un entorno informático en la nube
 - Permitir a los clientes supervisar las actividades pertinentes en un entorno informático en la nube

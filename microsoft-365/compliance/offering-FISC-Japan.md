@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 275781c8e5b25555e7b65f830b8c703827d80849
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 206dbd57f5fc5c41c4238e13d9dca3072ef7d121
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676687"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859820"
 ---
-# <a name="compliance-offering-center-for-financial-industry-information-systems-fisc"></a>Oferta de cumplimiento: Centro de Sistemas de Información de la Industria Financiera (FISC)
+# <a name="center-for-financial-industry-information-systems-fisc"></a>Centro de Sistemas de Información de la Industria Financiera (FISC)
 
 ## <a name="fisc-overview"></a>Información general acerca del FISC
 
