@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Estas son algunas de las cosas que debe tener en cuenta antes de empezar a trabajar con EOP.
-ms.openlocfilehash: 707e909821c4a394e230b1746bde86521d8fb10a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: ae08ff17a3ef25f0b0903d02ffe396cd201bd06c
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441567"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970526"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
 Este es el servicio de filtrado de correo electrónico hospedado de Microsoft Exchange Online Protection (EOP). A continuación, se detallan algunos aspectos que debe conocer antes de empezar a trabajar con EOP y usar este contenido:
 
-- Para más información acerca de EOP, vea la [Descripción de servicio Protección en línea de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=320619). Otros recursos útiles son [Información general de Exchange Online Protection](exchange-online-protection-overview.md), [Preguntas más frecuentes sobre EOP](eop-general-faq.md) y [Características de EOP](eop-features.md), así como la [página principal de Exchange Online Protection](https://go.microsoft.com/fwlink/?LinkId=279912).
+- Para obtener más información sobre EOP, consulte la [Descripción del servicio de protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Otros recursos útiles son [Información general de Exchange Online Protection](exchange-online-protection-overview.md), [Preguntas más frecuentes sobre EOP](eop-general-faq.md) y [Características de EOP](eop-features.md), así como la [página principal de Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection).
 
 - Para empezar a trabajar con EOP, los nuevos clientes deben ir a [Configurar un servicio de EOP](set-up-your-eop-service.md). En este tema se incluyen pasos que le ayudarán a configurar y a activar EOP.
 
@@ -67,6 +67,6 @@ El contenido de la Ayuda para asistir a los usuarios finales de EOP a administra
 
 - [Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): describe cómo los usuarios finales pueden enviar malware que ha superado los filtros o enviar un archivo que se identificó de forma incorrecta como malware.
 
-- Los usuarios finales pueden agregar determinados usuarios o dominios a una lista de remitentes seguros o a una lista de remitentes bloqueados configurando su configuración de correo no deseado en Outlook o en Outlook en la Web. Tenga en cuenta que los mensajes que se envían de remitentes bloqueados se marcan como correo no deseado, no rechazados, lo que significa que se pueden recuperar de la carpeta de correo electrónico no deseado o cuarentena (en función de dónde haya configurado el servicio para enviar correo no deseado). Para obtener más información, vea [usar el complemento de mensajes de informe](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Los usuarios finales pueden agregar determinados usuarios o dominios a una lista de remitentes seguros o a una lista de remitentes bloqueados configurando su configuración de correo no deseado en Outlook o en Outlook en la Web. Tenga en cuenta que los mensajes que se envían de remitentes bloqueados se marcan como correo no deseado, no rechazados, lo que significa que se pueden recuperar de la carpeta de correo electrónico no deseado o cuarentena (en función de dónde haya configurado el servicio para enviar correo no deseado). Para obtener más información, vea [usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 - [Ayuda y soporte técnico para EOP](help-and-support-for-eop.md) Proporciona información sobre cómo obtener ayuda y soporte técnico.

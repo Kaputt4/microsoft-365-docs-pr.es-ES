@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Puede configurar notificaciones de correo no deseado para el usuario final para la directiva predeterminada de filtro de correo no deseado de toda la compañía o para directivas personalizadas de filtro de correo no deseado que se aplican a dominios.
-ms.openlocfilehash: 0eef6f508a775513ff5c6e061d12e023534eb0bd
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 0b1b88a60ba1f14aa482dc8214739930b69cca05
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871936"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909840"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurar notificaciones de correo no deseado para el usuario final en Exchange Online
 
@@ -31,17 +31,11 @@ Las notificaciones de correo no deseado para el usuario final contienen una list
   
 Después de recibir un mensaje de notificación, los usuarios finales pueden elegir entre las siguientes opciones:
 
-**Obtenga una vista previa** del mensaje si desea obtener una vista previa del contenido o encabezado antes de llevar a cabo la acción.
-
-**Descargue** el mensaje si desea revisar el mensaje y los datos adjuntos (si los hay) en el dispositivo antes de realizar la acción.
+**Bloquear remitente** si desea que Office 365 agregue el remitente a la lista de remitentes bloqueados.
 
 **Release** si el mensaje no es correo no deseado y desea que Office 365 envíe el mensaje al buzón de correo.
 
-**Versión & Permitir remitente** si el mensaje no es correo no deseado y desea que Office 365 agregue el remitente a la lista de remitentes seguros y destinatarios para futuros correos electrónicos. Tenga en cuenta que el administrador puede tener otras configuraciones de permitir o bloquear de toda la organización que invaliden la lista de remitentes seguros.
-
-**Libere & Informe**, si el mensaje no es correo no deseado y desea enviar el mensaje al buzón de correo y notificarlo a Microsoft para su análisis.
-
-**Bloquear** si desea que Office 365 agregue el remitente a la lista de remitentes bloqueados.
+**Revise** para navegar al portal de cuarentena en el centro de seguridad & cumplimiento si desea realizar otras acciones, como la versión preliminar o la versión.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -67,7 +61,7 @@ Para obtener información acerca de los métodos abreviados de teclado que se pu
     
    - **Idioma de notificación** En la lista desplegable, seleccione el idioma en el que se escribirán las notificaciones de correo no deseado para el usuario final en esta directiva. 
     
-   - Haga clic en **Guardar **. En el panel derecho aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
+   - Haga clic en **Guardar**. En el panel derecho aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
     
 > [!NOTE]
 >  Las notificaciones de correo no deseado para el usuario final solo serán compatibles con las directivas de filtro de correo no deseado que estén habilitadas. >  Las notificaciones de correo no deseado para el usuario final se envían solo una vez al día. La hora de envío de la notificación no es configurable y, como tal, no se puede confirmar para ningún cliente en concreto. 
@@ -94,7 +88,7 @@ También puede usar el centro de seguridad y cumplimiento (SCC) para configurar 
     
    - **Idioma de notificación** En la lista desplegable, seleccione el idioma en el que se escribirán las notificaciones de correo no deseado para el usuario final en esta directiva. 
     
-   - Haga clic en **Guardar **. En el panel aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
+   - Haga clic en **Guardar**. En el panel aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
 
 ## <a name="for-more-information"></a>Más información
 

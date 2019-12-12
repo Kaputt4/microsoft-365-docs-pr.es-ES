@@ -15,17 +15,17 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: 0c81c8323db417d6e462812efe8686389139e915
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 65552e990eb5e12d2a624eea1e1bdbb74454b44f
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866642"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971428"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre datos adjuntos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre datos adjuntos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como documentos, presentaciones, hojas de cálculo, etc. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados solo mirando un mensaje de correo electrónico. Y lo último que desea es tener un dato malintencionado para llegar a través del cual se causan estragos en su organización. Afortunadamente, la [protección contra amenazas avanzada de Office 365](office-365-atp.md) (ATP) puede resultar útil. Puede configurar directivas de [datos adjuntos seguros de ATP](atp-safe-attachments.md) para ayudar a garantizar que su organización está protegida contra ataques de datos adjuntos de correo electrónico no seguro. 
   

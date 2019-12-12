@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
-ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
+ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37391223"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962207"
 ---
 # <a name="getting-help-for-end-users"></a>Obtener ayuda para usuarios finales
 
@@ -24,7 +24,7 @@ Hay dos formas en que los usuarios de su organización pueden obtener ayuda con 
 
 El método preferido para proporcionar soporte a los usuarios es **obtener ayuda**, una interfaz fácil de usar integrada en el dispositivo de usuario final.  
 
-![Obtener ayuda](images/get-help.png)
+![Icono de obtención de la aplicación de ayuda](images/get-help.png)
 
 Se trata de una aplicación que está instalada en todos los dispositivos de escritorio administrados por Microsoft y que está anclada a la barra de tareas. 
 
@@ -51,13 +51,15 @@ Los usuarios finales con dispositivos de escritorio administrados por Microsoft 
 - Estados Unidos: + 1 855 425 0216
 - Canadá (excepto Quebec): + 1 855 425 0216
 - Reino Unido: + 44 800 026 0698
+- Bélgica: + 32 800 58533
+- Luxemburgo: + 352 800 40119
 - Australia: + 61 180 037 0619
 - Nueva Zelanda: + 64 988 44380
 
 >[!NOTE]
 >Necesitará que su dirección de correo electrónico de la organización esté preparada cuando llame para comprobar su identidad. 
 
-## <a name="additional-resources"></a>Otros recursos
+## <a name="additional-resources"></a>Recursos adicionales
 - [Soporte de administración para escritorio administrado de Microsoft](admin-support.md). 
 - [Soporte para escritorio administrado de Microsoft](../service-description/support.md).
-- Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en la sección **recursos en línea** del [Administrador de escritorio administrado de Microsoft Portal](https://aka.ms/mwaasportal).
+- Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en la sección **recursos en línea** del [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal).

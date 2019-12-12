@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 952fac18db8ecc31fcd041dbfdf45e6ee8edee75
-ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
+ms.openlocfilehash: a1dbb5708cad32a0e37ddc25c97c70a765580f86
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37577766"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962527"
 ---
 # <a name="register-new-devices-yourself"></a>Registre nuevos dispositivos usted mismo
 
@@ -89,7 +89,7 @@ El archivo tiene que incluir **exactamente los mismos encabezados de columna** q
 
 En el portal de Microsoft Managed Desktop [Azure](https://aka.ms/mmdportal), seleccione **dispositivos** en el panel de navegación izquierdo. Seleccione **+ registrar dispositivos**; se abre el repaso:
 
-[![Volar después de seleccionar dispositivos de registro](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![Paso a paso después de seleccionar los dispositivos de registro, enumerar los dispositivos con columnas para los usuarios asignados, el número de serie, el estado, la fecha de última visualización y la antigüedad.](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
 
 [//]: # (Por desgracia, esto no es cierto. Podemos quitar esta nota, pero dejarla ahora hasta que podamos conversar sobre ella.)
@@ -106,7 +106,7 @@ Siga estos pasos:
 
 Puede supervisar el progreso del registro de dispositivos en la Página principal de **Microsoft administrada para equipos de escritorio** . Los posibles Estados que se notifican incluyen:
 
-| Estado | Description |
+| Estado | Descripción |
 |---------------|-------------|
 | Registro pendiente | Aún no se ha realizado el registro. Vuelva a comprobarla más tarde. |
 | Error en el registro | No se pudo completar el registro. Consulte [solución de problemas del registro de dispositivos](#troubleshooting-device-registration) para obtener más información. |

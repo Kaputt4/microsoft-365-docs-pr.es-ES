@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Información general de los pasos de configuración para Microsoft 365 Business.
-ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39812786"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967631"
 ---
 # <a name="overview-of-setup"></a>Introducción a la configuración
 
@@ -50,14 +50,16 @@ La mayoría de los pasos de configuración pueden realizarse en el Asistente de 
   
   Además de la configuración de seguridad del asistente de configuración, puede aumentar la seguridad si agrega las siguientes opciones de configuración:
 
-      - **Protección contra malware de correo electrónico**
-      - **Contra la suplantación de identidad ATP**
-      - **Archivado de Exchange Online**
-      - **Azure Information Protection (Plan1**)
 
-          Para empezar, vea [configurar las directivas de seguridad avanzada](set-up-advanced-security.md).
+- **Protección contra malware de correo electrónico**
+- **Contra la suplantación de identidad ATP**
+- **Archivado de Exchange Online**
+- **Azure Information Protection (Plan1**)
 
-        Consulte también [las 10 formas principales de proteger su empresa de Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) para obtener una guía de los procedimientos de seguridad recomendados.
+
+Para empezar, vea [configurar las directivas de seguridad avanzada](set-up-advanced-security.md).
+
+Consulte también [las 10 formas principales de proteger su empresa de Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) para obtener una guía de los procedimientos de seguridad recomendados.
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Paso 3: configurar y administrar dispositivos con Windows 10
 
@@ -83,6 +85,6 @@ Cuando se une a un dispositivo de Windows 10 a Azure AD, se aplican las directiv
 
     - Si su empresa tiene Active Directory local que contiene algunos recursos locales (como impresoras y recursos compartidos de archivos), puede dar acceso a estos recursos a los dispositivos de Azure AD siguiendo los pasos que se indican a continuación: [acceso a los recursos locales desde un dispositivo unido a Azure ad en Microsoft 365 Business](access-resources.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Vídeos de aprendizaje para empresas de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

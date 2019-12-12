@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Las opciones de la lista bloquear remitente incluyen los remitentes bloqueados de Outlook, los remitentes de correo no deseado y las listas de bloqueo de dominio, las listas de direcciones IP bloqueadas y las reglas de transporte de Exchange (ETR) también denominadas reglas de flujo de correo.
-ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: f4fab732a92df2a2500212c9825d2b3e710b0a07
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793714"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970896"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados en Office 365
 
@@ -43,7 +43,7 @@ Cuando solo se ven afectados un pequeño número de usuarios, es necesario usar 
 > [!IMPORTANT]
 > Si los mensajes no deseados son boletines de un origen fiable y reconocible, la cancelación del correo electrónico es otra opción para impedir que el usuario obtenga los correos electrónicos en el futuro.
 
-Los pasos para configurar esto son diferentes entre [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46) y el [cliente de Outlook](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Cuando los mensajes se bloquean correctamente debido a los remitentes bloqueados, verá SFV: BLK en el X-Forefront-antispam-Report** , que indica que el mensaje se está bloqueando.
+Los pasos para configurar esto son diferentes entre [Outlook en la web](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) y el [cliente de Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Cuando los mensajes se bloquean correctamente debido a los remitentes bloqueados, verá SFV: BLK en el X-Forefront-antispam-Report** , que indica que el mensaje se está bloqueando.
 
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Usar la Directiva contra correo no deseado listas de bloqueo de remitente/dominio
 

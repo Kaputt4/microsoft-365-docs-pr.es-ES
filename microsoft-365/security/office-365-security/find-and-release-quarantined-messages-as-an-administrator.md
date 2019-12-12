@@ -14,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC).
-ms.openlocfilehash: e60c0ae87f050b6e72e53b6069a61cd52df0641a
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 7d7288b85660c5569c748a3cb24a1d3cd027b72d
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871846"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971758"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Buscar y liberar mensajes en cuarentena como un administrador
 
 En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC). Office 365 dirige los mensajes a la cuarentena ya sea porque se identificaron como correo no deseado o coincidieron con una regla de flujo de correo (también denominada regla de transporte).
 
-Puede usar el centro de seguridad & cumplimiento en lugar del EAC para completar estas tareas también; el portal de cuarentena del centro de administración de Exchange (EAC) se establece en decommisioned.  Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Puede usar el centro de seguridad & cumplimiento en lugar del EAC para completar estas tareas también; el portal de cuarentena del centro de administración de Exchange (EAC) se establece en decommisioned. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
 
 Los mensajes en cuarentena figuran en la página **cuarentena** de EAC. De forma predeterminada, aparecen ordenados del más reciente al más antiguo en el campo **RECIBIDOS**. También se muestran los valores de **REMITENTE**, **ASUNTO** y **EXPIRA** de cada mensaje. Puede ordenar por cualquiera de estos campos haciendo clic en sus encabezados. Si hace clic en un encabezado de columna por segunda vez, se invertirá el orden. La página **cuarentena** puede mostrar como máximo 500 mensajes.
 
@@ -44,7 +44,7 @@ Puede ver una lista de todos los mensajes en cuarentena o puede buscar mensajes 
 - Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> ¿Problemas? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> ¿Problemas? Solicite ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-advanced-search-to-filter-and-locate-quarantined-messages"></a>Usar búsqueda avanzada para filtrar y buscar mensajes en cuarentena
 

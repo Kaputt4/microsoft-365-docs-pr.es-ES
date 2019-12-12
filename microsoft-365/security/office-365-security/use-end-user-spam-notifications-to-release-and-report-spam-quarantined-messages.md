@@ -12,32 +12,30 @@ ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: 'Los usuarios que ven un mensaje de notificación de correo no deseado para el usuario final de su administrador sobre el correo electrónico en cuarentena pueden realizar estas acciones en los mensajes. '
-ms.openlocfilehash: e533a0292bed1c6cd5d70796da2a25a7d8411884
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 5c113e186a0469714829592437698ddb1185a141
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871186"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971418"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Usar notificaciones de correo no deseado para el usuario final para liberar y notificar mensajes de correo no deseado en cuarentena
 
-[![Texto de la imagen sobre el movimiento de contenido de TechNet a support.office.com](../media/ab7c897a-4798-4f31-8c84-f17a8409b133.png)](https://go.microsoft.com/fwlink/p/?LinkID=624152)
-
 Si su administrador habilita las notificaciones de correo no deseado del usuario final, recibirá un mensaje de notificación con los mensajes destinados al buzón que se identificaron como correo no deseado y en su lugar se colocaron en cuarentena. Este mensaje incluye la cantidad de mensajes marcados como correo no deseado y en cuarentena de la lista, y la fecha y hora (en hora universal coordinada [UTC]) del último mensaje de la lista. En esta lista, puede ver la siguiente información sobre cada mensaje:
 
-- **Remitente** El nombre y la dirección de correo electrónico del remitente del mensaje en cuarentena.
+- **Sender**: el nombre y la dirección de correo electrónico del remitente del mensaje en cuarentena.
 
-- **Asunto** El texto de la línea de asunto del mensaje en cuarentena.
+- **Asunto**: el texto de la línea de asunto del mensaje en cuarentena.
 
-- **Fecha** La fecha y hora (en UTC) en que el mensaje fue colocado en cuarentena.
+- **Fecha**: la fecha y hora (en UTC) en que el mensaje se ha puesto en cuarentena.
 
-- **Tamaño** El tamaño del mensaje en cuarentena, en kilobytes (KB).
+- **Size**: el tamaño del mensaje en cuarentena, en kilobytes (KB).
 
 Puede realizar las siguientes acciones en cada mensaje:
 
-- **Liberar a Bandeja de entrada** Al hacer clic en este vínculo, se libera el mensaje al buzón de entrada, donde puede verlo.
+- **Liberar a bandeja de entrada**: al hacer clic en este vínculo, se envía el mensaje a la bandeja de entrada, donde puede verlo.
 
-- **Identificar como correo deseado** Al hacer clic en este vínculo, se envía una copia del mensaje a Microsoft para que sea analizado. El equipo de correo no deseado evalúa y analiza el mensaje, y, según de los resultados del análisis, ajusta las reglas de filtro de correo no deseado para permitir que el mensaje pase.
+- **Informar como correo deseado**: al hacer clic en este vínculo, se envía una copia del mensaje a Microsoft para su análisis. El equipo de correo no deseado evalúa y analiza el mensaje, y, según de los resultados del análisis, ajusta las reglas de filtro de correo no deseado para permitir que el mensaje pase.
 
 > [!NOTE]
 > Los mensajes que están en cuarentena debido a una coincidencia de regla de flujo de correo (también conocida como una) no se incluyen en los mensajes de cuarentena de correo no deseado del usuario final. Solo se enumeran los mensajes en cuarentena de correo no deseado. <br/><br/>  Únicamente puede liberar un mensaje e identificarlo como un falso positivo (deseado) una vez.

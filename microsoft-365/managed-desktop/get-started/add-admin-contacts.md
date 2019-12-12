@@ -1,19 +1,19 @@
 ---
-title: Agregar y comprobar contactos de administrador en el portal de administración
+title: 'Agregar y verificar los contactos de administración en el portal de administración '
 description: Indíquenos con quién ponerse en contacto para cada área de enfoque.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f77a5f6f0af83ea82d2ab3cea0798b95e27c2d2
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012071"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962617"
 ---
-# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y comprobar contactos de administrador en el portal de administración
+# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y verificar los contactos de administración en el portal de administración 
 
 Hay varias formas en las que el servicio de escritorio administrado de Microsoft se comunica con los clientes. Para simplificar la comunicación y asegurarse de que estamos comprobando con las personas adecuadas, debe proporcionar un conjunto de contactos de administración. Las operaciones de TI de escritorio administradas por Microsoft se contactan con estas personas para obtener ayuda para solucionar problemas relacionados con el espacio empresarial.
 
@@ -52,15 +52,15 @@ Los contactos de administración son necesarios cuando [envía una solicitud de 
 
 2.  En **soporte**, seleccione **contactos de administración**. 
 
-    ![Menú soporte, contactos de administración](images/admincontacts.png)
+    ![Menú soporte, contactos de administración cerca de la parte superior seleccionada](images/admincontacts.png)
 
 3. Seleccione **Agregar**.
 
-    ![Botón Agregar portal de administración](images/adminadd.png)
+    ![Portal de administración, botón Agregar, a la izquierda de exportar y actualizar](images/adminadd.png)
 
 4.  Seleccione un **área de enfoque** y escriba la información del contacto. 
 
-    ![la lista de áreas de foco](images/areaoffocus.png)
+    ![la lista de áreas de foco, como otras, aplicaciones y seguridad](images/areaoffocus.png)
 
 5. Repita este procedimiento para cada área de enfoque. 
 
@@ -70,7 +70,7 @@ Los contactos de administración son necesarios cuando [envía una solicitud de 
 2. [Ajustar el acceso condicional](conditional-access.md)
 3. [Asignar licencias](assign-licenses.md)
 4. [Instalar el portal de empresa de Intune en los dispositivos](company-portal.md)
-5. [Habilitación del itinerancia del estado de la empresa](enterprise-state-roaming.md)
+5. [Habilitar Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Configurar dispositivos de escritorio administrados por Microsoft](set-up-devices.md)
 7. [Prepare a los usuarios para que usen los dispositivos](get-started-devices.md)
 8. [Implementar aplicaciones en dispositivos](deploy-apps.md)

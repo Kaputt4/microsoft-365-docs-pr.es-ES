@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Puede usar reglas de flujo de correo (reglas de transporte) para identificar y realizar acciones en mensajes que fluyen a través de la organización de Office 365.
-ms.openlocfilehash: acd661962c1223c4124c492ce66f463d27e7ca10
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 604e2c7cb0b2cc34021e6708ae9f08769e8e6e91
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441537"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970346"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection
 
@@ -41,7 +41,7 @@ Para implementar directivas de mensajería específicas mediante el uso de regla
 
 - [Reducción de las amenazas de malware a través del bloqueo de datos adjuntos en Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [Definir reglas para cifrar o descifrar mensajes de correo electrónico](https://go.microsoft.com/fwlink/p/?Linkid=402846)
+- [Definir reglas para cifrar o descifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
 En el vídeo siguiente se ofrece una demostración de la configuración de reglas de flujo de correo en Exchange Online Protection.
 
@@ -69,7 +69,7 @@ Para obtener más información sobre las acciones de las reglas de flujo de corr
 
 En la siguiente tabla se muestra cómo se controlan múltiples condiciones, valores de condición, excepciones y acciones en una regla.
 
-|**Componente**|**Lógica**|**Comments**|
+|**Componente**|**Lógica**|**Comentarios**|
 |:-----|:-----|:-----|
 |Comentarios|Y|Un mensaje debe cumplir todas las condiciones de la regla. Si tiene que cumplir una condición u otra, use reglas independientes para cada condición. Por ejemplo, si desea agregar el mismo aviso de declinación de responsabilidades a los mensajes con archivos adjuntos y a los mensajes que contienen un texto específico, cree una regla para cada condición. En el EAC, puede copiar fácilmente una regla.|
 |Un mensaje debe coincidir con todas las condiciones de la regla. Si necesita alternar la coincidencia entre una condición y otra, use reglas independientes para cada condición. Por ejemplo, si desea agregar la misma declinación de responsabilidad a los mensajes con archivos adjuntos y a los mensajes cuyo contenido coincide con un patrón, cree una regla para cada condición. Puede copiar fácilmente una regla.|O BIEN|Determinadas condiciones permiten especificar más de un valor. El mensaje debe coincidir con alguno de los valores especificados (no todos). Por ejemplo, si un mensaje de correo tiene el asunto Información del precio en bolsa y la condición **El asunto incluye cualquiera de estas palabras** está establecida para coincidir con las palabras Contoso o bolsa, la condición se cumple ya que el asunto contiene al menos uno de los valores de la condición.  |
@@ -106,9 +106,9 @@ Hay varios tipos de mensajes que pasan a través de una organización. En la tab
 |**Tipo de mensaje**|**¿Se puede aplicar una regla?**|
 |:-----|:-----|
 |**Mensajes normales**: mensajes que contienen un único formato de texto enriquecido (RTF), HTML, un cuerpo de mensaje de texto sin formato o un conjunto alternativo o de varias partes de cuerpos de mensaje.|Sí|
-|**Office 365 cifrado de mensajes**: mensajes cifrados por el cifrado de mensajes de Office 365 en Office 365. Para obtener más información, consulte [Cifrado de mensajes de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=392525).|Las reglas siempre pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <br/><br/> Para que una regla inspeccione o modifique el contenido de un mensaje cifrado, deberá comprobar que el descifrado de transporte está habilitado (como obligatorio u opcional; el valor predeterminado es Opcional). Para obtener más información, consulte [Habilitar o deshabilitar el descifrado de transporte](https://go.microsoft.com/fwlink/p/?linkid=848060).  <br/><br/> También puede crear una regla que descifre automáticamente los mensajes cifrados. Para obtener más información, consulte [Definir reglas para cifrar o descifrar mensajes de correo electrónico](https://go.microsoft.com/fwlink/p/?Linkid=402846).  |
+|**Office 365 cifrado de mensajes**: mensajes cifrados por el cifrado de mensajes de Office 365 en Office 365. Para obtener más información, vea [Cifrado en Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Las reglas siempre pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <br/><br/> Para que una regla inspeccione o modifique el contenido de un mensaje cifrado, deberá comprobar que el descifrado de transporte está habilitado (como obligatorio u opcional; el valor predeterminado es Opcional). Para obtener más información, vea [definir reglas para cifrar o descifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**Mensajes cifrados S/MIME**|Las reglas solo pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <br/><br/> No se pueden procesar reglas con condiciones que requieran la inspección del contenido del mensaje ni acciones que pueden modificar dicho contenido.|
-|**Mensajes protegidos por RMS**: mensajes a los que se ha aplicado una directiva de Active Directory Rights Management Services (AD RMS) o Azure Rights Management (RMS).|Las reglas siempre pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <br/><br/> Para que una regla inspeccione o modifique el contenido de un mensaje protegido por RMS, deberá comprobar que el descifrado de transporte está habilitado (como obligatorio u opcional; el valor predeterminado es Opcional). Para obtener más información, consulte [Habilitar o deshabilitar el descifrado de transporte](https://go.microsoft.com/fwlink/p/?linkid=848060).  |
+|**Mensajes protegidos por RMS**: mensajes a los que se ha aplicado una directiva de Active Directory Rights Management Services (AD RMS) o Azure Rights Management (RMS).|Las reglas siempre pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <br/><br/> Para que una regla inspeccione o modifique el contenido de un mensaje protegido por RMS, deberá comprobar que el descifrado de transporte está habilitado (como obligatorio u opcional; el valor predeterminado es Opcional).|
 |**Mensajes con firma transparente**: mensajes que se han firmado pero no cifrado.|Sí|
 |**Mensajes de mensajería unificada**: mensajes creados o procesados por el servicio de mensajería unificada, como correo de voz, fax, notificaciones de llamadas perdidas y mensajes creados o reenviados mediante Microsoft Outlook Voice Access.|Sí|
 |**Mensajes anónimos**: mensajes enviados por remitentes anónimos.|Sí|
@@ -126,4 +126,4 @@ Hay varios tipos de mensajes que pasan a través de una organización. En la tab
 
 [Cifrado de correo electrónico en Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
 
-[Límites de las reglas de la Bandeja de entrada, del diario y de transporte](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Límites de reglas del diario, transporte y bandeja de entrada](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

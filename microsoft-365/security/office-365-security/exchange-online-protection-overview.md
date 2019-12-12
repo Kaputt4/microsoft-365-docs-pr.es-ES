@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Protección de Exchange Online (EOP) es un servicio de filtro de correo electrónico basado en nube que ayuda a proteger su organización contra correo no deseado y malware, e incluye características para proteger a su organización contra incumplimiento de directivas de mensajería.
-ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 2083b71655b1d5bbf30adbb7bfff3229cfb07525
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772274"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970496"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -38,7 +38,7 @@ Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el c
 
 ![Diagrama de proceso de correo electrónico.](../media/GitHubBugs/emailprocessingineop1.png)
 
-Un mensaje entrante pasa inicialmente por el filtrado de conexiones, que comprueba la reputación del remitente e inspecciona el mensaje en busca de malware. En este punto, la mayoría de los correos no deseados se interrumpen y se eliminan mediante EOP. Los mensajes continúan a través del filtrado de directivas, donde los mensajes se evalúan con reglas de flujo de correo personalizado (también conocidas como reglas de transporte) que se crean o aplican a partir de una plantilla. Por ejemplo, puede tener una regla que envíe una notificación a un administrador cuando llegue el correo de un remitente específico. (Las comprobaciones de prevención de pérdida de datos también se producen en este momento, si tiene esa característica; para obtener información sobre la disponibilidad de características, consulte la [Descripción del servicio de protección en línea de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=320619)). A continuación, los mensajes pasan por el filtrado de contenido, donde se comprueba la terminología o las propiedades comunes del correo no deseado en el contenido. Un mensaje determinado como correo no deseado por el filtro de contenido se puede enviar a la carpeta de correo no deseado o a la cuarentena de un usuario, entre otras opciones (incluida la bandeja de entrada o la carpeta personalizada), en función de la configuración. Una vez que un mensaje pasa todas estas capas de protección correctamente, se entrega al destinatario.
+Un mensaje entrante pasa inicialmente por el filtrado de conexiones, que comprueba la reputación del remitente e inspecciona el mensaje en busca de malware. En este punto, la mayoría de los correos no deseados se interrumpen y se eliminan mediante EOP. Los mensajes continúan a través del filtrado de directivas, donde los mensajes se evalúan con reglas de flujo de correo personalizado (también conocidas como reglas de transporte) que se crean o aplican a partir de una plantilla. Por ejemplo, puede tener una regla que envíe una notificación a un administrador cuando llegue el correo de un remitente específico. (Las comprobaciones de prevención de pérdida de datos también se producen en este momento, si tiene esa característica; para obtener información sobre la disponibilidad de características, consulte la [Descripción del servicio de protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)). A continuación, los mensajes pasan por el filtrado de contenido, donde se comprueba la terminología o las propiedades comunes del correo no deseado en el contenido. Un mensaje determinado como correo no deseado por el filtro de contenido se puede enviar a la carpeta de correo no deseado o a la cuarentena de un usuario, entre otras opciones (incluida la bandeja de entrada o la carpeta personalizada), en función de la configuración. Una vez que un mensaje pasa todas estas capas de protección correctamente, se entrega al destinatario.
 
 ### <a name="eop-datacenters"></a>Centros de datos de EOP
 
@@ -64,7 +64,7 @@ Los planes de suscripción de EOP disponibles son los siguientes:
 
 - **Exchange Enterprise cal con servicios**: Si tiene una organización de Exchange local en la que ha comprado otras licencias de Exchange Enterprise cal con servicios, EOP forma parte de los servicios incluidos.
 
-Para más información sobre los requisitos, límites importantes y disponibilidad de características en todos los planes de suscripción de EOP, vea la [Descripción de servicio Protección en línea de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=320619).
+Para obtener información acerca de los requisitos, límites importantes y disponibilidad de características en todos los planes de suscripción de EOP, vea la [Descripción del servicio protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 ## <a name="setting-up-eop"></a>Configurar EOP
 

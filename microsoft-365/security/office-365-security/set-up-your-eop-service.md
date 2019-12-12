@@ -10,19 +10,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Este tema explica cómo configurar Microsoft Exchange Online Protection (EOP). Si ha llegado hasta aquí desde el asistente de dominios de Office 365, regrese al asistente para dominios de Office 365 si no desea usar Exchange Online Protection. Si está buscando más información sobre cómo configurar los conectores, consulte Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 189c3bb08609eb2604e77b5140e866711e8f1a09
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4cd7d6e82c07d0b5a942427c947181b2d4e80c37
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032005"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970116"
 ---
 # <a name="set-up-your-eop-service"></a>Configurar un servicio de EOP
 
 Este tema explica cómo configurar Microsoft Exchange Online Protection (EOP). Si ha llegado hasta aquí desde el asistente de dominios de Office 365, regrese al asistente para dominios de Office 365 si no desea usar Exchange Online Protection. Si está buscando más información sobre cómo configurar los conectores, consulte [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> Se asume que tiene buzones locales y quiere protegerlos con EOP, lo que se conoce como un escenario independiente. Si desea hospedar todos los buzones de correo en la nube con Exchange Online, no es necesario completar todos los pasos indicados en este tema. Vaya a [Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286312) para suscribirse y comprar buzones en la nube. Si quiere hospedar algunos buzones de correo de forma local y otros en la nube, esto se considera un escenario híbrido. Requiere configuraciones de flujo de correo más avanzadas. [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) explica el flujo de correo híbrido y contiene vínculos a recursos que muestran cómo configurarlo.
+> Se asume que tiene buzones locales y quiere protegerlos con EOP, lo que se conoce como un escenario independiente. Si desea hospedar todos los buzones de correo en la nube con Exchange Online, no es necesario completar todos los pasos indicados en este tema. Vaya a [comparar los planes de Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) para registrarse y comprar buzones en la nube. Si quiere hospedar algunos buzones de correo de forma local y otros en la nube, esto se considera un escenario híbrido. Requiere configuraciones de flujo de correo más avanzadas. [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) explica el flujo de correo híbrido y contiene vínculos a recursos que muestran cómo configurarlo.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
@@ -30,7 +30,7 @@ Este tema explica cómo configurar Microsoft Exchange Online Protection (EOP). S
 
 - Para configurar conectores, la cuenta debe ser de un administrador global de Office 365 o un administrador de la compañía de Exchange (el grupo de roles de administración de la organización). Para obtener más información, consulte [Feature Permissions in EOP](feature-permissions-in-eop.md).
 
-- Si no se ha suscrito a EOP, visite [Protección en línea de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=282660) y elija si quiere comprar o probar el servicio.
+- Si no se ha suscrito a EOP, visite [Protección en línea de Exchange](https://products.office.com/exchange/exchange-email-security-spam-protection) y elija si quiere comprar o probar el servicio.
 
 - Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -39,7 +39,7 @@ Este tema explica cómo configurar Microsoft Exchange Online Protection (EOP). S
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Paso 1: usar el centro de administración de Microsoft 365 para agregar y comprobar el dominio
 
-1. En el [centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=521888), vaya a **configuración** para agregar el dominio al servicio.
+1. En el [centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center), vaya a **configuración** para agregar el dominio al servicio.
 
 2. Siga los pasos para agregar los registros DNS correspondientes a su proveedor de host DNS para comprobar la propiedad del dominio.
 

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Resumen: administre el sitio de grupo de SharePoint Online aislado con estos procedimientos.'
-ms.openlocfilehash: fd34a8af35b546266cf5d7cf308dbd387207eb1e
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 1b033d8c08b4b263c854213ce7b2a9fc2c0baede
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202451"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971738"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Administrar un sitio de grupo de SharePoint Online aislado
 
@@ -146,7 +146,7 @@ En algunos casos, un subconjunto de las personas que trabajan en el sitio aislad
   
 Para crear una subcarpeta de documentos con permisos personalizados, haga lo siguiente:
   
-1. Inicie sesión en Office 365 con una cuenta que sea miembro del grupo de administradores de acceso para el sitio. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en Office 365 con una cuenta que sea miembro del grupo de administradores de acceso para el sitio. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
 2. Vaya al sitio de grupo aislado y haga clic en **documentos**.
     

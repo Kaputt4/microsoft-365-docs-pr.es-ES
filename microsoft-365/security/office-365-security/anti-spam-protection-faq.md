@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
-ms.openlocfilehash: 04cffc6c6e09794e4c92653c1a09dd43718f38c0
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: b782c58bc3694bd27024f9aa7cdb2316c6d2a48a
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871996"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971977"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
@@ -71,7 +71,7 @@ P. Los mensajes de correo no deseado y los mensajes seguros se pueden enviar a M
 
  **P: ¿Puedo obtener informes de correo no deseado?**
 
-R. Sí, por ejemplo, puede obtener un informe de detección de correo no deseado en el centro de administración de Microsoft 365. Este informe muestra el volumen de correo no deseado como un recuento de mensajes únicos. Para obtener más información sobre los informes, consulte los siguientes vínculos:
+A. Sí, por ejemplo, puede obtener un informe de detección de correo no deseado en el centro de administración de Microsoft 365. Este informe muestra el volumen de correo no deseado como un recuento de mensajes únicos. Para obtener más información sobre los informes, consulte los siguientes vínculos:
 
 Clientes de Exchange Online: [supervisión, informes y seguimiento de mensajes en Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
 
@@ -93,11 +93,7 @@ A. Sí, puede configurar otro servicio de filtrado de correo no deseado y malwar
 
  **P.: ¿Microsoft tiene documentación sobre cómo protegerse de las estafas de suplantación de identidad (phishing)?**
 
-R. Sí, consulte los siguientes artículos:
-
-[Obtener ayuda relacionada con las estafas de suplantación de identidad (phishing), las estafas de loterías y otros tipos de estafas](https://go.microsoft.com/fwlink/p/?LinkId=325606)
-
-[Estafas a través de correos electrónicos y sitios web: cómo protegerse](https://go.microsoft.com/fwlink/p/?LinkID=325607)
+R. Sí, lea [proteger su privacidad en Internet](https://support.microsoft.com/help/4091455) .
 
  **P. ¿Se investigan los mensajes de malware o correo no deseado en cuanto a quién los envió o se transfieren a las autoridades judiciales?**
 
@@ -125,7 +121,7 @@ A. Las pautas presentadas a continuación son los procedimientos recomendados pa
 
     [Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-    [Preguntas más frecuentes de dominios](/office365/admin/setup/domains-faq)
+    [Preguntas más frecuentes de dominios](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 5. **Firma de correo electrónico con DKIM, firma con la resolución de nombres canónicos relajada.**
 
@@ -159,25 +155,25 @@ A. Las pautas presentadas a continuación son los procedimientos recomendados pa
 
     La suscripción doble es una práctica consistente en solicitar a un usuario que realice dos acciones para suscribirse a un correo de marketing:
 
-1. Una vez, cuando el usuario hace clic en una casilla sin activar previamente para elegir recibir más ofertas o mensajes de correo electrónico del especialista en marketing.
+   1. Una vez, cuando el usuario hace clic en una casilla sin activar previamente para elegir recibir más ofertas o mensajes de correo electrónico del especialista en marketing.
 
-2. La segunda, cuando el especialista en marketing envíe un correo electrónico de confirmación a la dirección de correo proporcionada por el usuario donde le solicite que haga clic en un vínculo sujeto a limitación temporal que completará al confirmación.
+   2. La segunda, cuando el especialista en marketing envíe un correo electrónico de confirmación a la dirección de correo proporcionada por el usuario donde le solicite que haga clic en un vínculo sujeto a limitación temporal que completará al confirmación.
 
-    El uso de la suscripción doble construye una buena reputación para las personas que envían correo electrónico masivo.
+      El uso de la suscripción doble construye una buena reputación para las personas que envían correo electrónico masivo.
 
 10. **Las personas que envían correo electrónico masivo deben crear contenido transparente del cual puedan hacerse responsables:**
 
-1. El vocabulario que requiera que los destinatarios agreguen a los remitentes a la libreta de direcciones debe especificar claramente que dicha acción no es una garantía de entrega.
+    1. El vocabulario que requiera que los destinatarios agreguen a los remitentes a la libreta de direcciones debe especificar claramente que dicha acción no es una garantía de entrega.
 
-2. Cuando el cuerpo del mensaje incluya contenido que redirija, utilice un estilo coherente para los vínculos.
+    2. Cuando el cuerpo del mensaje incluya contenido que redirija, utilice un estilo coherente para los vínculos.
 
-3. No envíe imágenes o datos adjuntos pesados o mensajes que estén únicamente compuestos por una imagen.
+    3. No envíe imágenes o datos adjuntos pesados o mensajes que estén únicamente compuestos por una imagen.
 
-4. Cuando utilice píxeles de seguimiento (errores o señalizaciones web), especifique claramente su presencia en su directiva de privacidad o configuración de P3P.
+    4. Cuando utilice píxeles de seguimiento (errores o señalizaciones web), especifique claramente su presencia en su directiva de privacidad o configuración de P3P.
 
 11. **Dé formato a las notificaciones de estado de entrega.**
 
-    Al generar mensajes de notificación del estado de entrega, los remitentes deben respetar el formato de un rebote, como se especifica en [RFC 3464](https://go.microsoft.com/fwlink/?LinkId=279715).
+    Al generar mensajes de notificación del estado de entrega, los remitentes deben respetar el formato de un rebote, como se especifica en [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt).
 
 12. **Elimine las direcciones de correo electrónico rebotadas de los usuarios inexistentes.**
 
@@ -189,12 +185,10 @@ A. Las pautas presentadas a continuación son los procedimientos recomendados pa
 
 ## <a name="for-more-information"></a>Más información
 
-[Protección contra correo no deseado de Office 365](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
+[Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 
 [Listas de remitentes seguros y bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
 [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md)
 
 [Mensajes de reenvío masivo de correo electrónico y EOP](backscatter-messages-and-eop.md)
-
-

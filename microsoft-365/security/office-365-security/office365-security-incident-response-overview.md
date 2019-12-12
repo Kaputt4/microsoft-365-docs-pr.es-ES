@@ -14,26 +14,31 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Esta solución le indica el aspecto que podrían tener los ataques de Cybersecurity más comunes en Office 365 y cómo responder a ellos.
-ms.openlocfilehash: 33cacf98efb78826f2655376b19a9d05d12955e7
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: d908b32a5c3cb01476ab9b7604861eb94c7a2745
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078079"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971598"
 ---
 # <a name="office-365-security-incident-response"></a>Respuesta a incidentes de seguridad de Office 365
 
  **Resumen:** Esta solución le indica qué son los indicadores para los ataques más comunes de Cybersecurity en Office 365, cómo confirmar positivamente cualquier ataque dado y cómo responder a él.
-  
+
 ## <a name="overview"></a>Información general
+
 No todos los cyberattacks se pueden frustrar. Los atacantes buscan constantemente nuevos puntos débiles en su estrategia defensiva o están aprovechando los viejos. Saber cómo reconocer un ataque le permite responder más rápidamente, lo que reduce la duración del incidente de seguridad.
 
 Esta serie de artículos ayuda a comprender qué aspecto puede tener un tipo determinado de ataque en Office 365 y le proporciona los pasos que puede seguir para responder. Son puntos de entrada rápida para comprender:
- 
+
 - Qué es el ataque y cómo funciona.
+
 - Qué signos, denominados indicadores de compromiso (IOC), buscar y cómo buscarlos.
+
 - Cómo confirmar positivamente el ataque.
+
 - Pasos que se deben seguir para recortar el ataque y proteger mejor su organización en el futuro.
+
 - Vínculos a información detallada sobre cada tipo de ataque.
 
 Consulte esta sección mensualmente, ya que se agregarán más artículos a lo largo del tiempo.
@@ -41,21 +46,19 @@ Consulte esta sección mensualmente, ya que se agregarán más artículos a lo l
 ## <a name="detect-and-remediate-articles"></a>Detectar y corregir artículos
 
 - [Detectar y solucionar la concesión de consentimiento ilegal en Office 365](detect-and-remediate-illicit-consent-grants.md)
-- [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
+- [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 ## <a name="incident-response-articles"></a>Artículos de respuesta a incidentes
 
 - [Responder a una cuenta de correo electrónico en peligro en Office 365](~/compliance/responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un profesional de ciberseguridad
-Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use el [Plan de seguridad de Office 365: principales prioridades para los primeros 30 días, 90 días y en adelante](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Office 365.
+
+Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use el [plan de desarrollo de seguridad de Office 365-principales prioridades de los primeros 30 días, 90 días y posteriores,](security-roadmap.md) para implementar los procedimientos recomendados de Microsoft para proteger su inquilino de Office 365.
+
 - Tareas a realizar en los primeros 30 días.  Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
+
 - Tareas para llevar a cabo en 90 días. Estos requieren un poco más de tiempo para planear e implementar, pero mejorar de manera significativa su postura de seguridad
+
 - Más de 90 días. Estas mejoras se crean en el trabajo de los 90 primeros días.
-
-
-
-
-
-

@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si desea asegurarse de que recibe el correo de un remitente determinado, ya que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de correo no deseado en el centro de administración de Exchange.
-ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793684"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970856"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Crear listas de remitentes seguros en Office 365
 
@@ -74,7 +74,7 @@ No agregue dominios de su propiedad o de dominios populares (por ejemplo `micros
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>Usar remitentes seguros de Outlook (administrado por el usuario final)
 
-En lugar de autorizar una dirección, un dominio o una dirección IP de forma global, los usuarios finales también pueden permitir el envío de direcciones a través de remitentes seguros de Outlook. Los pasos para configurar esto difieren entre [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46) y el [cliente de Outlook](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Cuando los mensajes se hayan autorizado correctamente debido a que los remitentes seguros verán SFV: SFE en el X-Forefront-antispam-Report** , lo que indica que se omitirá el filtrado de correo no deseado/falso/phish.
+En lugar de autorizar una dirección, un dominio o una dirección IP de forma global, los usuarios finales también pueden permitir el envío de direcciones a través de remitentes seguros de Outlook. Los pasos para configurar esto difieren entre [Outlook en la web](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) y el [cliente de Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Cuando los mensajes se hayan autorizado correctamente debido a que los remitentes seguros verán SFV: SFE en el X-Forefront-antispam-Report** , lo que indica que se omitirá el filtrado de correo no deseado/falso/phish.
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>Usar listas de direcciones IP permitidas de la Directiva contra correo no deseado
 

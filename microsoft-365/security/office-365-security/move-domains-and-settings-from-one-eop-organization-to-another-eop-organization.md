@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: El cambio de requisitos empresariales a veces puede requerir dividir una organización de Microsoft Exchange Online Protection (EOP) (inquilino) en dos organizaciones separadas, combinar dos organizaciones en una, o mover sus dominios y opciones de configuración de EOP desde una organización hacia otra organización.
-ms.openlocfilehash: 94d37e4e39b690c681b83a159d57d20109470497
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 4081c5ec67dc88429fd748014534830c42a816f8
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866762"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971608"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Mover dominios y opciones de configuración de una organización de EOP a otra organización de EOP
 
@@ -181,7 +181,7 @@ Ahora puede revisar y recopilar la información del centro de administración de
 
 5. Registre el registro MX o TXT que usará para comprobar su dominio, y termine con el asistente para la instalación.
 
-6. Agregue los registros TXT de comprobación a sus registros DNS. Esto le permite comprobar con más rapidez los dominios en la organización de origen después de que se quitan de la organización de destino. Para obtener más información sobre la configuración de DNS, consulte [Crear registros DNS para Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+6. Agregue los registros TXT de comprobación a sus registros DNS. Esto le permite comprobar con más rapidez los dominios en la organización de origen después de que se quitan de la organización de destino. Para obtener más información acerca de la configuración de DNS, vea [crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Paso 3: forzar a los remitentes para que pongan en cola el correo
 
@@ -191,7 +191,8 @@ Una opción para forzar a los remitentes para que pongan en cola el correo es ac
 
 Otra opción es colocar un registro MX no válido en cada dominio donde se conservan los registros DNS para el dominio (también conocido como servicio de hospedaje DNS). Esto hará que el remitente ponga en cola el correo y vuelva a intentarlo (los reintentos típicos son de 48 horas, pero esto podría variar de un proveedor a otro). Puede usar invalid.outlook.com como destino de MX no válido. La reducción del valor de período de vida (TTL) a cinco minutos en el registro MX ayudará a que el cambio se propague con más rapidez a los proveedores de DNS.
 
-Para obtener más información sobre la configuración de DNS, consulte [Crear registros DNS para Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+Para obtener más información acerca de la configuración de DNS, vea [crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+
 
 > [!IMPORTANT]
 > Diferentes proveedores ponen en cola el correo durante diferentes períodos de tiempo. Deberá configurar su nuevo inquilino rápidamente y revertir la configuración de DNS para impedir que los informes de no entrega (NDR) se envíen al remitente si caduca el tiempo en cola.

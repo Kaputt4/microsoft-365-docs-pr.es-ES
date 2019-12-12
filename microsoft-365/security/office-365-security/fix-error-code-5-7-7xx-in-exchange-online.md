@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo solucionar problemas de correo electrónico para el código de error 5.7.7 XX en Exchange Online (inquilino bloqueado del envío de correo).
-ms.openlocfilehash: d89cc0caeebbf37336a3b00346b3393dd5e74e78
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 9c95a8aa3f2dbc7b44524b4392090f7435d2800b
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39865852"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970456"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Corregir problemas de entrega de correo electrónico para el código de error 5.7.7 XX en Exchange Online
 
@@ -51,23 +51,23 @@ Hay varias cosas que debe hacer si el inquilino se bloquea para enviar correo el
 
 1. Asegúrese de registrar todos los dominios en el centro de administración de Microsoft 365. Puede encontrar más información [aquí](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Busque conectores inusuales. A menudo, los actores malintencionados crean conectores entrantes nuevos en el inquilino de Office 365 para enviar correo no deseado. Puede [encontrar más](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector)información sobre cómo comprobar los conectores. 
+2. Busque conectores inusuales. A menudo, los actores malintencionados crean conectores entrantes nuevos en el inquilino de Office 365 para enviar correo no deseado. Puede [encontrar más](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector)información sobre cómo comprobar los conectores.
 
 3. Bloquee los servidores locales y asegúrese de que no están comprometidos.
 
-> [!TIP]
-> Hay muchos factores implicados aquí, especialmente si se trata de servidores de terceros. Por lo tanto, tendrá que confirmar que todo el correo que sale de los servidores es legítimo.
+   > [!TIP]
+   > Hay muchos factores implicados aquí, especialmente si se trata de servidores de terceros. Por lo tanto, tendrá que confirmar que todo el correo que sale de los servidores es legítimo.
 
-4. Una vez hecho, deberá llamar al soporte técnico de Microsoft y pedirle que desbloquee el espacio empresarial para enviar de nuevo desde dominios no registrados.  Proporcionarle el código de error es útil, pero tendrá que probar que su entorno está protegido y que el correo no deseado no se enviará de nuevo. Puede encontrar más información sobre cómo abrir un caso de soporte [aquí](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
-  
+4. Una vez hecho, deberá llamar al soporte técnico de Microsoft y pedirle que desbloquee el espacio empresarial para enviar de nuevo desde dominios no registrados.  Proporcionarle el código de error es útil, pero tendrá que probar que su entorno está protegido y que el correo no deseado no se enviará de nuevo. Puede encontrar más información sobre cómo abrir un caso de soporte [aquí](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+
 ## <a name="for-more-information"></a>Más información
 
 [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 
-[Informes de no entrega de correo electrónico en Office 365](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
+[Informes de no entrega de correo electrónico en Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
 [Configurar el reenvío de correo electrónico para un buzón de correo](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[Cómo configurar una aplicación o dispositivo multifunción para enviar correos electrónicos mediante Office 365](https://support.office.com/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[Cómo configurar una aplicación o dispositivo multifunción para enviar correos electrónicos mediante Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3)
 
 [Administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).

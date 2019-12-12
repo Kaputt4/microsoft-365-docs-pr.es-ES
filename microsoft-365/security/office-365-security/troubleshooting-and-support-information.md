@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: En este tema se describen pasos de solución de problemas para usuarios finales y administradores, y se proporciona información acerca de cómo ponerse en contacto con el soporte técnico para obtener ayuda.
-ms.openlocfilehash: c87744608930603f70e6be1132a0b405e9646b57
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441197"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971628"
 ---
 # <a name="troubleshooting-and-support-information"></a>Solución de problemas e información de soporte técnico
 
@@ -86,6 +86,6 @@ Si necesita ayuda para instalar, configurar o desinstalar el complemento, pónga
 
 ## <a name="for-more-information"></a>Más información
 
-[Habilitar el complemento de mensajes de informe](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md)
 
 [Informar a Microsoft sobre mensajes de correo electrónico no deseado](report-junk-email-messages-to-microsoft.md)

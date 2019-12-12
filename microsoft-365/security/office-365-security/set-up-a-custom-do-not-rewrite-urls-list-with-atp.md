@@ -15,17 +15,17 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de vínculos seguros de ATP, puede incluir una lista de direcciones URL de "do-not-Rewrite" para permitir que algunos usuarios de la organización visiten los sitios que incluya en la lista.
-ms.openlocfilehash: ca1927871b834459a05c1c36e5b15d3d47aa242b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: b823ac1e995177a6f576d01c3ef686288ed47cbf
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866582"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971468"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada con los vínculos seguros de Office 365 ATP
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede tener [direcciones URL bloqueadas personalizadas](set-up-a-custom-blocked-urls-list-wtih-atp.md), de modo que cuando los usuarios hagan clic en direcciones web (URL) en mensajes de correo electrónico o en determinados documentos de Office, no se les impedirá ir a esas direcciones URL. La organización también puede tener listas personalizadas de "no reescribir" para grupos específicos de la organización. Una lista "no reescribir" permite que algunas personas visiten direcciones URL que, de lo contrario, se bloquearán mediante [vínculos seguros de ATP en Office 365](atp-safe-links.md). 
   

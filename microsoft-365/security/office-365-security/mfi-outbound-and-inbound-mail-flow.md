@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre el widget de flujo de correo entrante y saliente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 91e582accdf7556d26e5678335eda42cc3f1f174
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ceb85b9e83596c6c300c35ba471b04282074c82f
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093468"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970806"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flujo de correo entrante y saliente
 
@@ -25,9 +25,9 @@ El widget de **flujo de correo entrante y** saliente combina la información del
 
 La información del widget está relacionada con los conectores y la protección de mensajes TLS en Office 365. Para obtener más información, vea estos temas:
 
-- [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)
+- [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
-- [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](https://support.office.com/article/4CDE0CDA-3430-4DC0-B489-F2C0736C929F)
+- [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
 
 ## <a name="message-protected-in-transit-by-tls"></a>Mensaje protegido en tránsito (por TLS)
 
@@ -37,7 +37,7 @@ El widget de **flujo de correo entrante y** saliente muestra el cifrado TLS que 
 
 Actualmente, TLS 1,2 es la versión más segura de TLS que ofrece Office 365. A menudo, necesitará conocer el cifrado de TLS que se usa para las auditorías de cumplimiento. Probablemente no tiene una relación directa con la mayoría de los servidores de correo electrónico de origen y de destino (no es propietario de ellos, ni tampoco Microsoft), por lo que no tiene muchas opciones para mejorar el cifrado de TLS que usan dichos servidores.
 
-Sin embargo, puede usar [conectores](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx) para garantizar la mejor protección de TLS disponible para los mensajes que se envían entre los servidores de correo electrónico y Office 365. El flujo de correo entre Office 365 y sus propios servidores de correo electrónico o servidores que pertenecen a sus socios suele ser más importante y sensible que los mensajes normales, por lo que querrá aplicar seguridad y vigilancia adicionales a dichos mensajes. Puede actualizar o arreglar sus propios servidores de correo electrónico para mejorar el cifrado TLS que se está usando o llegar a sus asociados para hacer lo mismo. El **Informe de conectores** muestra el volumen del flujo de correo y el cifrado TLS para los mensajes que usan los conectores de Office 365.
+Sin embargo, puede usar [conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) para garantizar la mejor protección de TLS disponible para los mensajes que se envían entre los servidores de correo electrónico y Office 365. El flujo de correo entre Office 365 y sus propios servidores de correo electrónico o servidores que pertenecen a sus socios suele ser más importante y sensible que los mensajes normales, por lo que querrá aplicar seguridad y vigilancia adicionales a dichos mensajes. Puede actualizar o arreglar sus propios servidores de correo electrónico para mejorar el cifrado TLS que se está usando o llegar a sus asociados para hacer lo mismo. El **Informe de conectores** muestra el volumen del flujo de correo y el cifrado TLS para los mensajes que usan los conectores de Office 365.
 
 ## <a name="connector-report"></a>Informe de conector
 
@@ -45,10 +45,10 @@ Al hacer clic en el vínculo del **Informe del conector** desde el control flota
 
 La vista de **flujo de correo** muestra el volumen de mensajes a través del conector de la semana pasada. Puede cambiar el intervalo de fechas seleccionando **filtro** , donde puede aumentar el intervalo a un máximo de 30 días. La vista **todo el flujo de correo** muestra todo el flujo de correo hacia y desde la organización de Office 365 a través de todos los conectores. Puede seleccionar un conector específico por nombre en el menú desplegable.
 
-Puede seleccionar la vista de **uso de TLS** de la lista desplegable para ver el desglose de la protección TLS para los mensajes a través del conector. Al igual que con el informe de **Informe General de TLS** , esta vista muestra el porcentaje de las diferentes versiones de TLS. Para las conexiones TLS 1,0, es necesario que el servidor de correo electrónico o el servidor de su compañero se actualice o se corrija para evitar problemas cuando la compatibilidad con TLS 1,0 está en desuso en Office 365. Para obtener más información, vea [información de referencia técnica sobre el cifrado en Office 365](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221).
+Puede seleccionar la vista de **uso de TLS** de la lista desplegable para ver el desglose de la protección TLS para los mensajes a través del conector. Al igual que con el informe de **Informe General de TLS** , esta vista muestra el porcentaje de las diferentes versiones de TLS. Para las conexiones TLS 1,0, es necesario que el servidor de correo electrónico o el servidor de su compañero se actualice o se corrija para evitar problemas cuando la compatibilidad con TLS 1,0 está en desuso en Office 365. Para obtener más información, vea [información de referencia técnica sobre el cifrado en Office 365](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption).
 
 La información apunta a los conectores para ayudar a atraer la atención sobre posibles problemas de cifrado de TLS para el conector. La información es: **ningún TLS es superior al 25%** o **TLS 1,0 es superior al 50%**. Si ve esta información, debe investigar los servidores de correo electrónico que están asociados con el conector o ponerse en contacto con la organización asociada.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

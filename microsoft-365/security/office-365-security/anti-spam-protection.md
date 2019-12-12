@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la configuración y los filtros contra correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Office 365. ¿Obtengo mucho correo no deseado en Office 365? Puede personalizar los filtros de correo no deseado y la configuración de la Directiva contra correo no deseado.
-ms.openlocfilehash: b18ec01419e73923b4c37d9666da97423b0cb81b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871976"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970906"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protección contra spam para el correo electrónico de Office 365
 
@@ -32,9 +32,9 @@ Este artículo está destinado a los administradores de Office 365. Si no es adm
 
  **Filtrado de conexiones**: al usar el filtrado de la conexión, Office 365 comprueba la reputación del remitente antes de permitir que pase un mensaje. Puede crear una lista de permitidos o una lista de remitentes seguros para asegurarse de que recibe todos los mensajes que se le envíen desde una dirección IP específica o un intervalo de direcciones IP. También puede crear una lista de direcciones IP desde las que se van a bloquear los mensajes, denominados lista de bloqueados. Para obtener más información, vea [Configurar la directiva de filtro de conexión](configure-the-connection-filter-policy.md). Si le preocupa el correo no deseado en Office 365, use el filtrado de conexiones para ayudar a evitar el correo no deseado.
 
-Para los clientes que tienen Office 365 Enterprise E5 o han adquirido licencias de protección contra amenazas avanzada (ATP), la inteligencia de identidad utiliza el filtrado de conexiones para crear listas de permitidos y bloqueados de remitentes que suplantan el dominio. Para obtener más información, vea más información [sobre la inteligencia de suplantación de identidad](https://go.microsoft.com/fwlink/?LinkID=735009).
+Para los clientes que tienen Office 365 Enterprise E5 o han adquirido licencias de protección contra amenazas avanzada (ATP), la inteligencia de identidad utiliza el filtrado de conexiones para crear listas de permitidos y bloqueados de remitentes que suplantan el dominio. Para obtener más información, vea más información [sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).
 
- **Filtrado de correo no deseado**: Office 365 comprueba si hay características de mensajes coherentes con el correo no deseado mediante el filtrado de correo no deseado. Puede cambiar las acciones que se deben realizar en los mensajes identificados como correo no deseado y elegir si desea filtrar los mensajes escritos en idiomas específicos o enviados desde países o regiones específicos. También puede activar las opciones avanzadas de filtrado de correo no deseado si desea seguir un enfoque agresivo del filtrado de correo no deseado. Además, puede configurar notificaciones de correo no deseado para el usuario final para informar a los usuarios de que los mensajes dirigidos a ellos se han enviado a la cuarentena en su lugar. (El envío de mensajes a la cuarentena es una de las acciones configurables). A partir de estas notificaciones, los usuarios finales pueden liberar falsos positivos y notificarlos a Microsoft para su análisis. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=617147). Para ayudar a evitar el correo no deseado en Office 365, use el filtrado de correo no deseado, si le preocupa que haya demasiado correo no deseado en Office 365, use el filtrado de conexiones para ayudar a evitar el correo no deseado.
+ **Filtrado de correo no deseado**: Office 365 comprueba si hay características de mensajes coherentes con el correo no deseado mediante el filtrado de correo no deseado. Puede cambiar las acciones que se deben realizar en los mensajes identificados como correo no deseado y elegir si desea filtrar los mensajes escritos en idiomas específicos o enviados desde países o regiones específicos. También puede activar las opciones avanzadas de filtrado de correo no deseado si desea seguir un enfoque agresivo del filtrado de correo no deseado. Además, puede configurar notificaciones de correo no deseado para el usuario final para informar a los usuarios de que los mensajes dirigidos a ellos se han enviado a la cuarentena en su lugar. (El envío de mensajes a la cuarentena es una de las acciones configurables). A partir de estas notificaciones, los usuarios finales pueden liberar falsos positivos y notificarlos a Microsoft para su análisis. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). Para ayudar a evitar el correo no deseado en Office 365, use el filtrado de correo no deseado, si le preocupa que haya demasiado correo no deseado en Office 365, use el filtrado de conexiones para ayudar a evitar el correo no deseado.
 
 > [!NOTE]
 > Para clientes independientes de EOP: de manera predeterminada, los filtros de correo no deseado de EOP envían mensajes detectados como correo no deseado a la carpeta de correo no deseado de cada destinatario. Sin embargo, para asegurarse de que la acción **mover el mensaje a la carpeta correo no deseado** funcionará con los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en los servidores locales para detectar los encabezados de correo no deseado agregados por EOP. Para más información, consulte [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
@@ -45,7 +45,7 @@ En el siguiente vídeo se proporciona información general sobre cómo configura
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
 
-Para obtener más información, consulte el tema [Configure Spam Filter Policies](https://go.microsoft.com/fwlink/p/?LinkId=617147) .
+Para más información, vea el tema [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
 
 ## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Comprobar los mensajes salientes para evitar el correo no deseado en Office 365
 
@@ -65,11 +65,11 @@ Para obtener más información, consulte el tema [Configure Spam Filter Policies
 
 Si está preocupado por el correo no deseado, la suplantación de identidad (phishing) y la suplantación de identidad en Office 365, use SPF, DKIM y DMARC conjuntamente para evitar el correo no deseado y la suplantación de identidad.
 
- **Configuración administrada por el usuario final**: Si está buscando información sobre cómo los usuarios finales pueden administrar su propia configuración de correo no deseado, consulte [información general sobre el filtro de correo no deseado](https://go.microsoft.com/fwlink/?LinkId=270065) (para usuarios de Microsoft Outlook) o [información sobre correo no deseado y suplantación de identidad](https://go.microsoft.com/fwlink/?LinkId=270068) (para usuarios de Outlook en la web). Si está usando EOP para proteger los buzones locales, asegúrese de usar la sincronización de directorios para asegurarse de que esta configuración se sincronice con el servicio. Para más información sobre cómo configurar la sincronización de directorios, vea "Usar la sincronización de directorios para administrar usuarios de correo" en [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md).
+ **Configuración administrada por el usuario final**: Si está buscando información sobre cómo los usuarios finales pueden administrar su propia configuración de correo no deseado, consulte [información general sobre el filtro de correo no deseado](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (para usuarios de Microsoft Outlook) o [información sobre correo no deseado y suplantación de identidad](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31) (para usuarios de Outlook en la web). Si está usando EOP para proteger los buzones locales, asegúrese de usar la sincronización de directorios para asegurarse de que esta configuración se sincronice con el servicio. Para más información sobre cómo configurar la sincronización de directorios, vea "Usar la sincronización de directorios para administrar usuarios de correo" en [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md).
 
 ## <a name="for-more-information"></a>Más información
 
-[Blog: ¿por qué recibe correo no deseado y suplantación de identidad en Office 365?](https://go.microsoft.com/fwlink/?LinkId=528179 )
+[Blog: ¿por qué recibe correo no deseado y suplantación de identidad en Office 365?](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 
 [Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](anti-spam-protection-faq.md)
 
@@ -85,8 +85,8 @@ Si está preocupado por el correo no deseado, la suplantación de identidad (phi
 
 ## <a name="more-resources"></a>Más recursos
 
-[Obtén ayuda en los foros de la comunidad de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[Obtén ayuda en los foros de la comunidad de Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Administradores: iniciar sesión y crear una solicitud de servicio](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[Administradores: iniciar sesión y crear una solicitud de servicio](https://portal.office.com/AdminPortal/Home?ref=support)
 
-[Administradores: llamar al soporte técnico](https://go.microsoft.com/fwlink/p/?LinkID=518322)
+[AContact soporte técnico para productos empresariales: ayuda para administradores](https://docs.microsoft.com/Office365/Admin/contact-support-for-business-products)

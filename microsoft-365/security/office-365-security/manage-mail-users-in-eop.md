@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definición de usuarios de correo es una parte importante de la administración del servicio de Protección en línea de Exchange (EOP).
-ms.openlocfilehash: 065fdae30dea49220c10fd455b7ac346e70c18de
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2871ec73a06a092aa5cfdab0d9648d8cc5311460
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871776"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971748"
 ---
 # <a name="manage-mail-users-in-eop"></a>Administrar usuarios de correo en EOP
 
@@ -63,13 +63,13 @@ En esta sección se proporciona información sobre cómo administrar usuarios de
 
   - **Cuarentena de correo no deseado del usuario final**: para poder obtener acceso a la cuarentena de correo no deseado del usuario final, los usuarios finales deben tener un identificador de usuario y una contraseña válidos de Office 365. Los clientes de EOP que protejan los buzones locales deben ser usuarios de correo electrónico válidos.
 
-  - **Reglas de flujo de correo**: cuando se usa la sincronización de directorios, los usuarios y grupos de Active Directory existentes se cargan automáticamente en la nube y, a continuación, se pueden crear reglas de flujo de correo (también conocidas como reglas de transporte) dirigidas a usuarios o grupos específicos sin tener que agregarlos manualmente a través del EAC o de PowerShell de Exchange Online Protection. Tenga en cuenta que los [grupos de distribución dinámicos](https://go.microsoft.com/fwlink/?LinkId=507569) no se pueden sincronizar mediante la sincronización de directorios.
+  - **Reglas de flujo de correo**: cuando se usa la sincronización de directorios, los usuarios y grupos de Active Directory existentes se cargan automáticamente en la nube y, a continuación, se pueden crear reglas de flujo de correo (también conocidas como reglas de transporte) dirigidas a usuarios o grupos específicos sin tener que agregarlos manualmente a través del EAC o de PowerShell de Exchange Online Protection. Tenga en cuenta que los [grupos de distribución dinámicos](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) no se pueden sincronizar mediante la sincronización de directorios.
 
-Obtenga los permisos necesarios y prepárese para la sincronización de directorios, tal como se describe en [Preparar la sincronización de directorios](https://go.microsoft.com/fwlink/p/?LinkId=308908).
+Obtenga los permisos necesarios y prepárese para la sincronización de directorios, tal como se describe en [¿Qué es la identidad híbrida con Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 ### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>Para sincronizar los directorios de usuario con Azure Active Directory Connect (AAD Connect)
 
-Para sincronizar los usuarios con Azure Active Directory (AAD), primero tiene que **activar la sincronización de directorios**, tal como se describe en activar la sincronización de [directorios](https://go.microsoft.com/fwlink/p/?LinkId=308909).
+Para sincronizar los usuarios con Azure Active Directory (AAD), primero debe **activar la sincronización de directorios**, tal como se describe en [Azure ad Connect Sync: comprender y personalizar la sincronización](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
 A continuación se encuentra la instalación y la configuración de un equipo local para ejecutar AAD Connect (si todavía no tiene una, merece la pena comprobar por adelantado el tiempo). El tema de [configuración de AAD Connect, la forma exprés](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) le indica cómo configurar y sincronizar sus cuentas de local a Azure ad con AAD Connect.
 

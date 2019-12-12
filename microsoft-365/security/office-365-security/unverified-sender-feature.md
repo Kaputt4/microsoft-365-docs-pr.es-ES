@@ -13,16 +13,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: 89cd473a7b7f2ff663d7ee1eee41f84144dee6d7
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 4c8b8a0711ab66607d0db5923c1115c436537bd0
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866442"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970936"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 
-> [!NOTE] 
+> [!NOTE]
 > Estas actualizaciones se están implementando ahora y es posible que no estén disponibles para todos los usuarios. Esta característica es compatible con los usuarios de Enterprise outlook.com. Actualmente no está disponible para el consumidor outlook.com.
 
 Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
@@ -36,12 +36,11 @@ Outlook.com y Outlook en la web muestran indicadores cuando no se puede identifi
 
 ## <a name="you-see-a--in-the-sender-image"></a>Ve un '? ' en la imagen del remitente
 
-Cuando Outlook.com y Outlook en la web no pueden comprobar la identidad del remitente mediante técnicas de autenticación de correo electrónico, muestran un '? ' en la foto del remitente. 
+Cuando Outlook.com y Outlook en la web no pueden comprobar la identidad del remitente mediante técnicas de autenticación de correo electrónico, muestran un '? ' en la foto del remitente.
 
 ![El mensaje no pasó la comprobación](../media/message-did-not-pass-verification.jpg)
 
 No todos los mensajes que no se autentican son malintencionados. Sin embargo, debe tener cuidado al interactuar con los mensajes que no se autentican si no reconoce al remitente. O bien, si reconoce a un remitente que normalmente no tiene un '? ' en la imagen del remitente, pero, de repente, lo empieza a ver, es posible que se trate de una firma en la que se está suplantando el remitente.
-
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Cómo administrar qué mensajes reciben el tratamiento de remitentes no comprobados 
 
@@ -52,10 +51,10 @@ Si es un cliente de Office 365, puede administrar esta característica a través
     ![Edición de remitentes no autenticados en la interfaz gráfica.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - Si un administrador ha identificado un falso positivo y un remitente no debe recibir el tratamiento de remitente no verificado, se puede llevar a cabo una de las siguientes acciones para agregar el remitente a la lista de permitidos de falsificación de inteligencia de identidad:
-        
-    - Agregue el par de dominios mediante el conocimiento de inteligencia de ti falso. Para obtener más información, consulte [Walkthrough: Spoofing Intelligence Insight](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight).
-                
-    - Agregue el par de dominios mediante el cmdlet PhishFilterPolicy. Para obtener más información, consulte [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) y [set up Office 365 ATP anti-phishing and anti-phishing Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+
+  - Agregue el par de dominios mediante el conocimiento de inteligencia de ti falso. Para obtener más información, consulte [Walkthrough: Spoofing Intelligence Insight](walkthrough-spoof-intelligence-insight.md).
+
+  - Agregue el par de dominios mediante el cmdlet PhishFilterPolicy. Para obtener más información, consulte [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) y [set up Office 365 ATP anti-phishing and anti-phishing Policies](set-up-anti-phishing-policies.md).
 
 Además, no se aplica el tratamiento de remitente no verificado si se entregó en la bandeja de entrada a través de una lista de permitidos del administrador, incluidas las reglas de transporte de correo electrónico (ETR), la lista de dominios seguros (Directiva contra correo no deseado), la lista de remitentes seguros o un usuario ha establecido este usuario como un "remitente seguro" en su entrada.
 
@@ -81,6 +80,6 @@ No necesariamente. Outlook.com y Outlook en la web pueden tener otras propiedade
 
 [Ayuda para proteger su cuenta de correo electrónico de Outlook.com](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
-[Tratar con el abuso, suplantación de identidad (phishing) o suplantación en Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
+[Trabajar con suplantación de identidad (phishing) en Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
 [Filtrar correo no deseado y correo no deseado en Outlook en la web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)

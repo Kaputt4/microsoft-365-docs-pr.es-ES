@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
-ms.openlocfilehash: e02723b0c8e2d5b5309054babf27f0f3e9587a88
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 3be67348b9522832a754e83e57e4a99e4f9147b3
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441117"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970426"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
@@ -23,17 +23,17 @@ Los recursos de soporte técnico que se especifican aquí lo ayudarán a encontr
 
 ## <a name="self-support-options"></a>Opciones de autosoporte
 
-En el momento de iniciar sesión, el portal de Office 365 proporciona información sobre el estado de los servicios de la organización. Además, la sección sobre el estado del servicio de Office 365 muestra el estado actual de los servicios y detalles sobre interrupciones y detenciones, así como los tiempos de mantenimiento planeados. El portal de Office 365 también contiene información sobre problemas conocidos y soluciones previstas. Si se ve afectado por una incidencia masiva, debería aparecer una alerta de comunicación (que suele ir acompañada de un icono de campana). Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan. Para obtener más información sobre el área de estado del servicio de Office 365, vea [Estado del servicio](https://go.microsoft.com/fwlink/?LinkId=394289). Puede encontrar más ayuda usando las herramientas, foros y sitios de comunidad siguientes.
+En el momento de iniciar sesión, el portal de Office 365 proporciona información sobre el estado de los servicios de la organización. Además, la sección sobre el estado del servicio de Office 365 muestra el estado actual de los servicios y detalles sobre interrupciones y detenciones, así como los tiempos de mantenimiento planeados. El portal de Office 365 también contiene información sobre problemas conocidos y soluciones previstas. Si se ve afectado por una incidencia masiva, debería aparecer una alerta de comunicación (que suele ir acompañada de un icono de campana). Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan. Para obtener más información acerca del área de estado del servicio de Office 365, consulte [Service Health and Continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Puede encontrar más ayuda usando las herramientas, foros y sitios de comunidad siguientes.
 
-[Información del producto de Protección en línea de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=279912)
+[Información del producto de Protección en línea de Exchange](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Soporte técnico para Office 365 y Exchange Online](https://go.microsoft.com/fwlink/?LinkId=299655)
+[Contactar con soporte técnico para productos empresariales: ayuda para administradores](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-[Comunidad de Office 365](https://go.microsoft.com/fwlink/?LinkId=299656)
+[Comunidad de Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Solucionador de problemas "hágalo usted mismo" de Office 365](https://go.microsoft.com/fwlink/?LinkId=299657)
+[Asistente para soporte y recuperación de Microsoft (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
-[Tutorial guiado del flujo de correo de Office 365](https://go.microsoft.com/fwlink/?LinkId=323470)
+[Solucionador de problemas del flujo de correo](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Soporte técnico asistido de Microsoft
 
@@ -43,7 +43,7 @@ Puede obtener ayuda de Microsoft iniciando una nueva solicitud de servicio en el
 
 Si es un cliente de EOP y también tiene un contrato de soporte premier de Microsoft, puede obtener soporte a través de los canales normales de soporte premier de Microsoft. Esto le permite recibir acceso a todos los procesos y recursos disponibles para clientes de soporte premier, como al administrador de cuentas de soporte técnico premier (TAM) y al envío de casos. El soporte premier para Microsoft Online Services amplía el marco de trabajo de soporte premier de los productos locales a los productos en línea, lo que le proporciona una experiencia de soporte unificada en todos los productos y servicios. Este servicio ayuda a garantizar que los clientes puedan resolver los problemas rápidamente y simplifica la tarea de administrar el soporte para distintos componentes de una infraestructura de TI.
 
-Para más información sobre cómo el soporte premier puede ayudar a su organización a maximizar el valor de sus inversiones en TI, vea [Soporte premier de Microsoft](https://go.microsoft.com/fwlink/?LinkId=317437).
+Para obtener más información sobre cómo el soporte Premier puede ayudar a su organización a maximizar el valor de sus inversiones en ti, consulte [Premier Support for Partners](https://partner.microsoft.com/support/microsoft-services-premier-support).
 
 ### <a name="ask-for-help-on-the-web"></a>Solicitar ayuda en la Web
 

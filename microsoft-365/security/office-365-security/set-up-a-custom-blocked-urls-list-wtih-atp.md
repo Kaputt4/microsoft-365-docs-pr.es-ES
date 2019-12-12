@@ -15,17 +15,17 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección contra amenazas avanzada de Office 365. Las direcciones URL bloqueadas se aplicarán a los mensajes de correo electrónico y documentos de Office de acuerdo con las directivas de vínculos seguros de ATP.
-ms.openlocfilehash: 645f2642a34483ba1310c3bfcd1178dbaaf42a49
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: e565c88238895e087518dfa3354b334485a9579d
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866592"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970376"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede tener una lista personalizada de direcciones de sitios web (URL) que están bloqueadas. Cuando se bloquea una dirección URL, los usuarios que hacen clic en los vínculos a la dirección URL bloqueada se toman en una [Página de advertencia](atp-safe-links-warning-pages.md) similar a la siguiente: 
   

@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de datos adjuntos seguros de ATP, elija la entrega dinámica para evitar retrasos en los mensajes y permitir a los usuarios obtener una vista previa de los datos adjuntos que se están analizando.
-ms.openlocfilehash: 203f5082701f1f3eeea36b385918328cb85deb81
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3cf914325b493098f61c84f27c102dd64fd7d8e9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092331"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970786"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinámica y vista previa con datos adjuntos seguros de Office 365 ATP
 
@@ -45,7 +45,7 @@ La mayoría de los PDF y los documentos de Office se pueden mostrar como una vis
 
 Con la entrega dinámica, los usuarios pueden leer y responder a sus mensajes de correo electrónico inmediatamente, mientras se analizan los datos adjuntos. 
 
-El análisis de datos adjuntos seguros de ATP tiene lugar en la misma región en la que residen los datos de Office 365. Para obtener más información acerca de la geografía del centro de datos, consulte [¿dónde están los datos ubicados?](https://products.office.com/where-is-your-data-located?geo=All) 
+El análisis de datos adjuntos seguros de ATP tiene lugar en la misma región en la que residen los datos de Office 365. Para obtener más información acerca de la geografía del centro de datos, consulte [¿dónde están los datos ubicados?](https://products.office.com/where-is-your-data-located?geo=All)
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>¿Qué sucede cuando alguien reenvía un correo electrónico que contiene datos adjuntos?
 

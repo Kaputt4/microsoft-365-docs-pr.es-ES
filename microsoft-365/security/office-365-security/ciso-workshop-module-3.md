@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 44a870263a832e2d130e0404c5e2ad0736a5fae5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1f4e9afb86d475a7dd7261dfe26ff0b5a17826f
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034382"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962637"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>Módulo 3 de taller de CISO: acceso de usuario de identidades y de confianza cero
 
@@ -46,7 +46,7 @@ Obtenga información sobre cómo anticipar la confianza cero con su estrategia d
 
 ##  <a name="part-6-build-an-identity-perimeter-1357"></a>Parte 6: crear un perímetro de identidad (13:57)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
 
 ## <a name="part-7-identity-system-security-337"></a>Parte 7: seguridad del sistema de identidad (3:37)
 

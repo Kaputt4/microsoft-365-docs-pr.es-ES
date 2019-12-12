@@ -4,7 +4,6 @@ keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,32 +12,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Introducción al uso de las capacidades de respuesta a incidentes automatizada en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 9db3a788f5a2f2c7101b5165935884c1d76bccbd
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+description: Empiece a usar la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
+ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813870"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967993"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Investigar y responder automáticamente ante amenazas en Office 365
 
 ## <a name="overview"></a>Información general
 
-Según su suscripción, la [protección contra amenazas avanzada de Office 365](office-365-atp.md) puede incluir capacidades de respuesta de incidente (Air) automatizadas que pueden salvar el tiempo y el esfuerzo del equipo de operaciones de seguridad para tratar las alertas y amenazas.
+Según su suscripción, la [protección contra amenazas avanzada de Office 365](office-365-atp.md) puede incluir capacidades de investigación y respuesta automáticas (Air) que pueden ahorrar tiempo y esfuerzo en el equipo de operaciones de seguridad para tratar las alertas y las amenazas.
 
-- Para empezar a usar las funcionalidades de AIR en Office 365, use este artículo. 
-- Para obtener información general sobre cómo funciona AIR, vea [respuesta de incidente automatizada (Air) en Office 365](automated-investigation-response-office.md).
+- Para empezar a usar las capacidades de investigación y respuesta automatizadas en Office 365, use este artículo. 
+- Para obtener información general sobre cómo funciona, consulte la [investigación y la respuesta automatizadas en Office 365](automated-investigation-response-office.md).
 
-Con AIR, cuando se desencadenan determinadas alertas, se inician una o más guías de seguridad y comienza la investigación automatizada. Durante y después de un proceso de investigación automatizado, los administradores y el equipo de operaciones de seguridad pueden:
+> [!TIP]
+> ¿Tiene Microsoft 365 E5 o Microsoft 365 E3 junto con Identity & Threat Protection? Considere la posibilidad de probar la [investigación y respuesta automatizadas (Air) en la protección contra amenazas de Microsoft](../mtp/mtp-autoir.md).
+
+Con las capacidades de investigación y respuesta automatizadas, cuando se desencadenan determinadas alertas, se inician una o más guías de seguridad y se inicia el proceso de investigación automatizada. Durante y después de un proceso de investigación automatizado, su equipo de seguridad puede hacer lo siguiente:
 
 - [Ver los detalles de una investigación](#view-details-of-an-investigation)
 - [Revisión y aprobación de acciones como resultado de una investigación](#review-and-approve-actions) 
 - [Ver los detalles de una alerta relacionada con una investigación](#view-details-about-an-alert-related-to-an-investigation)
 
+> [!IMPORTANT]
+> Para llevar a cabo las tareas descritas en este artículo, debe tener asignados los permisos adecuados. Consulte [permisos necesarios para usar la funcionalidad de Air](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
+
 ## <a name="view-details-of-an-investigation"></a>Ver los detalles de una investigación
 
-1. Como administrador global de Office 365, administrador de seguridad o lector de seguridad, vaya [https://protection.office.com](https://protection.office.com) a e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
 
 2. Realice una de las acciones siguientes:
 
@@ -60,7 +65,7 @@ Con AIR, cuando se desencadenan determinadas alertas, se inician una o más guí
 
 En Office 365, las investigaciones automatizadas suelen dar como resultado una o varias acciones recomendadas. Sin embargo, no se lleva a cabo ninguna acción hasta que la aprueba el equipo de operaciones de seguridad. Use el siguiente procedimiento para revisar y aprobar acciones.
 
-1. Como administrador global de Office 365, administrador de seguridad o lector de seguridad, vaya [https://protection.office.com](https://protection.office.com) a e inicie sesión. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión. 
 
 2. Vaya a **** > **investigaciones**de administración de amenazas.
 
@@ -76,7 +81,7 @@ En Office 365, las investigaciones automatizadas suelen dar como resultado una o
 
 Ciertos tipos de alertas desencadenan la investigación automática en Office 365. Para obtener más información, vea [alertas](automated-investigation-response-office.md#alerts). Use el siguiente procedimiento para ver los detalles de una alerta asociada a una investigación automatizada.
 
-1. Como administrador global de Office 365, administrador de seguridad o lector de seguridad, vaya [https://protection.office.com](https://protection.office.com) a e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
 
 2. Vaya a **** > **investigaciones**de administración de amenazas.
 
@@ -100,7 +105,7 @@ Si su organización usa una solución de informes personalizada o de terceros, p
 
 Use los siguientes recursos para configurar esto:
 
-|Resource  |Description  |
+|Resource  |Descripción  |
 |---------|---------|
 |[Información general de las API de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |La API de actividad de administración de Office 365 proporciona información sobre diversas acciones y eventos de usuario, administrador, sistema y directiva de los registros de actividad de Office 365 y Azure Active Directory.         |
 |[Introducción a las API de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |La API de administración 365 de Office usa Azure AD para proporcionar servicios de autenticación para que la aplicación tenga acceso a los datos de Office 365. Siga los pasos de este artículo para configurarlo.          |

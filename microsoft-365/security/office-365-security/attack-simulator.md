@@ -14,16 +14,16 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: bb68850587647f7e96c940de10e3da23cd5e83de
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306184"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971938"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 
-**Resumen** Si es un administrador global de Office 365 o un administrador de seguridad y su organización tiene Office 365 el plan de protección contra amenazas avanzada 2, que incluye [capacidades de investigación y respuesta de amenazas](office-365-ti.md), puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
+**Resumen** Si es un administrador global de Office 365 o un administrador de seguridad y su organización tiene Office 365 el plan de protección contra amenazas avanzada 2, que incluye [capacidades de investigación y respuesta de amenazas](office-365-ti.md), puede usar el simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
 
 ## <a name="the-attacks"></a>Los ataques
 
@@ -47,7 +47,7 @@ Asegúrese de que usted y su organización cumplen con los siguientes requisitos
 
 - Es administrador global de Office 365 o administrador de seguridad
 
-- La [autenticación multifactor/acceso condicional](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) está activada, por lo menos la cuenta de administrador global de Office 365 y los administradores de seguridad que van a usar el simulador de ataques. (Idealmente, el acceso condicional/autenticación multifactor está activado para todos los usuarios de la organización).
+- La [autenticación multifactor/acceso condicional](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) está activada, por lo menos la cuenta de administrador global de Office 365 y los administradores de seguridad que van a usar el simulador de ataques. (Idealmente, el acceso condicional/autenticación multifactor está activado para todos los usuarios de la organización).
 
 - Su organización tiene [el plan 2 de la protección contra amenazas avanzada de Office 365](office-365-atp.md), con el &amp; simulador de ataque visible en el centro de seguridad y cumplimiento (vaya a **simulador de ataque**de administración \> de **amenazas** )
 
@@ -85,7 +85,7 @@ Puede crear el editor HTML enriquecido directamente en el propio campo **del cue
 
 6. Especifique el texto o el campo **de** . Se trata del campo que muestra la dirección de correo electrónico del remitente en el cliente de correo electrónico de recepción.
 
-   Puede escribir un espacio de nombres de correo electrónico existente dentro de la organización (al hacerlo, la dirección de correo electrónico se resolverá realmente en el cliente receptor, lo que facilitará un modelo de confianza muy alto) o puede escribir una dirección de correo electrónico externa. La dirección de correo electrónico que especifique no tiene que existir realmente, pero necesita seguir el formato de una dirección SMTP válida, como `user@domainname.extension`.
+   Puede escribir un espacio de nombres de correo electrónico existente dentro de la organización (al hacerlo, la dirección de correo electrónico se resolverá realmente en el cliente receptor, lo que facilitará un modelo de confianza muy alto) o puede escribir una dirección de correo electrónico externa. La dirección de correo electrónico que especifique no tiene que existir realmente, pero tiene que seguir el formato de una dirección SMTP válida, como `user@domainname.extension`.
 
 7. Mediante el selector de lista desplegable, seleccione una dirección URL del servidor de inicio de sesión de suplantación de identidad (phishing) que refleje el tipo de contenido que tendrá en el ataque. Se proporcionan varias URL con temas que puede elegir, como la entrega de documentos, técnicas, nóminas, etc. De hecho, se trata de la URL a la que se pide a los usuarios de destino que haga clic.
 

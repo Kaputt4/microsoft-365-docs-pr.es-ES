@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: fa10c4168720565770ec0a3bc4bb06486155c3cc
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871766"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970336"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -99,7 +99,7 @@ Puede dejar el valor predeterminado **todos** seleccionados o puede seleccionar 
 
 - **Error**: el mensaje no se entregó.
 
-- **En cuarentena**: el mensaje se puso en cuarentena (como correo no deseado, correo masivo o suplantación de identidad). Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx).
+- **En cuarentena**: el mensaje se puso en cuarentena (como correo no deseado, correo masivo o suplantación de identidad). Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
 
 - **Filtrado como correo no deseado**: el mensaje se identificó como correo no deseado y fue rechazado o bloqueado (no en cuarentena).
 
@@ -335,7 +335,7 @@ Varios **** agentes de Exchange Online `AGENTINFO` usan el campo custom_data par
 
 Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El filtro de contenido marcó el mensaje como correo no deseado.|
@@ -362,7 +362,7 @@ Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no dese
 
 Un valor de **custom_data** que empieza `S:AMA` por es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -385,7 +385,7 @@ Un ejemplo de un valor **custom_data** para un mensaje que contiene malware tien
 
 Un valor de **custom_data** que empieza`S:TRA` por es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|

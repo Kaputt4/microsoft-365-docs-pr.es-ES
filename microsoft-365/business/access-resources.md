@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Obtenga información sobre cómo obtener acceso a recursos locales como líneas de aplicaciones empresariales, recursos compartidos de archivos e impresoras desde un dispositivo Windows 10 conectado a Azure Active Directory.
-ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 89ac38f3da9cbdd3ff1a5eb33dc129d2e83521c7
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668796"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967171"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Business
 
@@ -47,7 +47,7 @@ Complete los siguientes pasos para habilitar los dispositivos de Azure AD Unidos
     
 No se necesitan pasos adicionales para obtener acceso a los recursos locales de los dispositivos Unidos de Azure AD. Esta funcionalidad está integrada en Windows 10. 
 
-Si tiene previsto iniciar sesión en el dispositivo AADJ que no sea el método de contraseña como PIN/bio-Metric mediante credenciales WHFB y, a continuación, obtener acceso a recursos locales (recursos compartidos, impresoras.. etc.), sigahttps://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
+Si tiene previsto iniciar sesión en el dispositivo AADJ que no sea el método de contraseña como PIN/bio-Metric mediante credenciales WHFB y, a continuación, obtener acceso a recursos locales (recursos compartidos, impresoras.. etc.), sigahttps://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 Si su organización no está lista para implementarla en la configuración de dispositivos Unidos a Azure AD descrita anteriormente, considere la posibilidad de configurar una [configuración de dispositivo de Unión híbrida de Azure ad](manage-windows-devices.md).
   

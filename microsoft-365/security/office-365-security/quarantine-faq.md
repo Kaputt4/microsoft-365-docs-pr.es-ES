@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospedada.
-ms.openlocfilehash: 2754efb6edee577eca351da0486ac54912ec4b5b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: f8d7d0820685671c4cbe9ae7671058cc60d8e637
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872086"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971558"
 ---
 # <a name="quarantine-faq"></a>Preguntas más frecuentes sobre la cuarentena
 
@@ -27,7 +27,7 @@ Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospeda
 
  **P. ¿Cómo puedo administrar los mensajes de malware en cuarentena en cuarentena?**
 
-Debe usar el centro de seguridad &amp; y cumplimiento para ver y trabajar con mensajes que se enviaron a cuarentena porque contienen malware. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Debe usar el centro de seguridad &amp; y cumplimiento para ver y trabajar con mensajes que se enviaron a cuarentena porque contienen malware. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
 
  **P. ¿Cómo se configura el servicio para enviar mensajes de correo no deseado en cuarentena a la cuarentena?**
 

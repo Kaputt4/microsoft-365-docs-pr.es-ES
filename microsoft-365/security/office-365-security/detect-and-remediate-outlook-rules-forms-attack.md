@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365
-ms.openlocfilehash: 5a35a227baf7c2d07ca0e7a28f791d65311c96b9
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: d5f4a653463f4105df025bf29679465ca5335098
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871896"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970796"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365
 
@@ -98,7 +98,7 @@ Puede usar cualquiera de estos dos métodos para confirmar el ataque:
 
 1. Abra el cliente de Outlook de los usuarios como usuario. Es posible que el usuario necesite su ayuda para examinar las reglas de su buzón.
 
-2. Consulte [administrar mensajes de correo electrónico](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59#ID0EAABAAA=2010) mediante el artículo de reglas para obtener los procedimientos sobre cómo abrir la interfaz de reglas en las versiones 2007, 2010 o 2013 de Outlook.
+2. Consulte [administrar mensajes de correo electrónico](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59) mediante el artículo de reglas para obtener los procedimientos sobre cómo abrir la interfaz de reglas en Outlook.
 
 3. Busque las reglas que el usuario no ha creado o las reglas o reglas inesperadas con nombres sospechosos.
 
@@ -110,7 +110,7 @@ Puede usar cualquiera de estos dos métodos para confirmar el ataque:
 
 1. Abra el cliente de Outlook de usuario como usuario.
 
-2. Siga los pasos descritos en, [Mostrar la ficha programador](https://support.office.com/article/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45) para la versión de usuario de Outlook.
+2. Siga los pasos descritos en, [Mostrar la ficha programador](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45) para la versión de usuario de Outlook.
 
 3. Abra la pestaña programador ahora visible en Outlook y haga clic en **diseñar un formulario**.
 
@@ -156,13 +156,13 @@ Si encuentra algún indicio de alguno de estos ataques, la corrección es sencil
 
 1. Identifique todos los dispositivos que el usuario ha usado con Outlook. Todos necesitan limpiarse del posible malware. No permita que el usuario inicie sesión y use el correo electrónico hasta que se limpien todos los dispositivos.
 
-2. Siga los pasos descritos en [eliminar una regla](https://support.office.com/article/Delete-a-rule-2F0E7139-F696-4422-8498-44846DB9067F) para cada dispositivo.
+2. Siga los pasos descritos en [eliminar una regla](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f) para cada dispositivo.
 
 3. Si no está seguro de la presencia de otro malware, puede formatear y volver a instalar todo el software en el dispositivo. Para dispositivos móviles, puede seguir los pasos de los fabricantes para restablecer el dispositivo en la imagen de fábrica.
 
 4. Instale las versiones más actualizadas de Outlook. Recuerde que la versión actual de Outlook bloquea ambos tipos de este ataque de forma predeterminada.
 
-5. Una vez que se hayan quitado todas las copias sin conexión del buzón de correo, restablezca la contraseña del usuario (use una alta calidad) y siga los pasos de [configurar la autenticación multifactor para los usuarios de Office 365](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) si la MFA no se ha habilitado todavía. Esto garantiza que las credenciales del usuario no se exponen a través de otros medios (como el phishing o la reutilización de contraseña).
+5. Una vez que se hayan quitado todas las copias sin conexión del buzón de correo, restablezca la contraseña del usuario (use una alta calidad) y siga los pasos de [configurar la autenticación multifactor para los usuarios de Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) si la MFA no se ha habilitado todavía. Esto garantiza que las credenciales del usuario no se exponen a través de otros medios (como el phishing o la reutilización de contraseña).
 
 ### <a name="using-powershell"></a>Mediante PowerShell
 
@@ -190,7 +190,7 @@ Hay dos cmdlets de PowerShell remoto que puede usar para quitar o deshabilitar r
 
 Los atacantes solo usan las reglas y los formularios para aprovechar una vez que han robado o infringido una de sus cuentas de usuario. Por lo tanto, el primer paso para evitar el uso de estos ataques contra su organización es proteger sus cuentas de usuario de forma agresiva. Algunas de las formas más comunes en las que las cuentas se infringen son los ataques de suplantación de identidad (phishing) o de [niebla de contraseña](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) .
 
-La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas de administrador, es [configurar la autenticación multifactor para los usuarios de Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6). También debe hacer lo siguiente:
+La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas de administrador, es [configurar la autenticación multifactor para los usuarios de Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). También debe hacer lo siguiente:
 
 - Supervisar cómo se [obtiene acceso](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)a las cuentas de usuario y cómo se usan. No puede evitar la infracción inicial, pero reducirá la duración y el impacto de la infracción al detectarla antes. Puede usar estas [directivas de seguridad de aplicaciones de nube de Office 365](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) para supervisar sus cuentas y enviar alertas sobre actividades inusuales:
 
@@ -204,7 +204,7 @@ La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas d
 
 ### <a name="second-keep-your-outlook-clients-current"></a>Segundo: mantener actualizados los clientes de Outlook
 
-Las versiones completamente actualizadas y revisadas de Outlook 2013 y 2016 deshabilitan la acción de formulario o regla "Iniciar aplicación" de forma predeterminada. Esto garantizará que, incluso si un atacante infringe la cuenta, se bloquearán las acciones de formulario y regla. Para instalar las revisiones de seguridad y las actualizaciones más recientes, siga los pasos descritos en [instalar actualizaciones de Office](https://support.office.com/article/Install-Office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5).
+Las versiones completamente actualizadas y revisadas de Outlook 2013 y 2016 deshabilitan la acción de formulario o regla "Iniciar aplicación" de forma predeterminada. Esto garantizará que, incluso si un atacante infringe la cuenta, se bloquearán las acciones de formulario y regla. Para instalar las revisiones de seguridad y las actualizaciones más recientes, siga los pasos descritos en [instalar actualizaciones de Office](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Estas son las versiones de revisión para los clientes de Outlook 2013 y 2016:
 
@@ -234,7 +234,7 @@ Los clientes con instalaciones de Exchange locales deben considerar el bloqueo d
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un profesional de ciberseguridad
 
-Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios. Use el [Plan de seguridad de Office 365: principales prioridades para los primeros 30 días, 90 días y en adelante](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Office 365.
+Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios. Use el [plan de desarrollo de seguridad de Office 365-principales prioridades de los primeros 30 días, 90 días y posteriores,](security-roadmap.md) para implementar los procedimientos recomendados de Microsoft para proteger su inquilino de Office 365.
 
 - Tareas a realizar en los primeros 30 días. Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
 

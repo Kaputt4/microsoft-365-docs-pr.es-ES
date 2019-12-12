@@ -22,19 +22,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica de vínculos seguros proporciona la comprobación del tiempo de clic de los hipervínculos en los documentos de Office y en los mensajes de correo electrónico. Use vínculos seguros para proteger a su organización del phishing y otros ataques.
-ms.openlocfilehash: 2418704c7d3d1eced0194418e98f9833cf2f962b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fadec60dc25aad418480d7c26a06e92f5a2065dd
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39865910"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970916"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros de Protección contra amenazas avanzada de Office 365
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Información general sobre los vínculos seguros de ATP de Office 365
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si usa Outlook.com, Office 365 Hogar u Office 365 personal, y está buscando información sobre vínculos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si usa Outlook.com, Office 365 Hogar u Office 365 personal, y está buscando información sobre vínculos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Los vínculos seguros de Office 365 ATP (parte de la [protección contra amenazas avanzada](office-365-atp.md)) pueden ayudar a proteger su organización proporcionando una comprobación del tiempo de clic de direcciones web (URL) en [mensajes de correo electrónico](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) y [documentos de Office](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). La protección se define mediante [las directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md) definidas por el equipo de seguridad de Office 365.
   
