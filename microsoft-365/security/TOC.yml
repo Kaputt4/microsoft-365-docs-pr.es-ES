@@ -47,22 +47,111 @@
               href: mtp/microsoft-threat-protection.md
             - name: Centro de seguridad de Microsoft 365
               href: mtp/overview-security-center.md
-        - name: Búsqueda en Microsoft 365
-          href: ./mtp/hunting.md
-        - name: Informes
+            - name: Requisitos previos
+              href: mtp/prerequisites.md
+            - name: Seguridad y privacidad de datos
+              href: mtp/data-privacy.md
+            - name: Solución de problemas
+              href: ./mtp/troubleshoot.md
+        - name: Guías de procedimientos
           items:
-            - name: Supervisar y ver informes
-              href: ./mtp/monitoring-and-reporting.md
-            - name: Seguimiento de estado y generación de informes
-              href: ./mtp/monitor-and-report-identities.md
-            - name: Supervisión e informes de datos
-              href: ./mtp/monitor-data.md
-            - name: Supervisión e informes de dispositivo
-              href: ./mtp/monitor-devices.md
-            - name: Supervisión e informes de aplicaciones
-              href: ./mtp/monitor-apps.md
-        - name: Administrar tickets a través de ServiceNow
-          href: ./mtp/tickets.md
+            - name: Activar la protección contra amenazas de Microsoft
+              href: mtp/mtp-enable.md
+            - name: Incidencia
+              items:
+                - name: Información general
+                  href: mtp/incidents-overview.md
+                - name: Priorizar incidentes
+                  href: mtp/incident-queue.md
+                - name: Investigar incidentes
+                  href: mtp/investigate-incidents.md
+                - name: Administrar incidentes
+                  href: mtp/manage-incidents.md
+            - name: Investigación y respuesta automatizada
+              items:
+                - name: Información general sobre AIR
+                  href: mtp/mtp-autoir.md
+                - name: Ir al centro de actividades
+                  href: mtp/mtp-action-center.md
+                - name: Ver los resultados de AIR
+                  href: mtp/mtp-autoir-results.md
+                - name: Aprobar o rechazar acciones pendientes
+                  href: mtp/mtp-autoir-actions.md
+            - name: Caza avanzada
+              items:
+                - name: Búsqueda en Microsoft 365
+                  href: mtp/hunting.md
+                - name: Información general sobre la búsqueda avanzada
+                  href: mtp/advanced-hunting-overview.md
+                - name: Obtener información sobre el lenguaje de consulta
+                  href: mtp/advanced-hunting-query-language.md
+                - name: Usar consultas compartidas
+                  href: mtp/advanced-hunting-shared-queries.md
+                - name: Buscar en dispositivos y correos electrónicos
+                  href: mtp/advanced-hunting-query-emails-devices.md
+                - name: Comprender el esquema
+                  href: mtp/advanced-hunting-schema-tables.md
+                  items:
+                    - name: MachineInfo
+                      href: mtp/advanced-hunting-machineinfo-table.md
+                    - name: MachineNetworkInfo
+                      href: mtp/advanced-hunting-machinenetworkinfo-table.md
+                    - name: ProcessCreationEvents
+                      href: mtp/advanced-hunting-processcreationevents-table.md
+                    - name: NetworkCommunicationEvents
+                      href: mtp/advanced-hunting-networkcommunicationevents-table.md
+                    - name: FileCreationEvents
+                      href: mtp/advanced-hunting-filecreationevents-table.md
+                    - name: RegistryEvents
+                      href: mtp/advanced-hunting-registryevents-table.md
+                    - name: LogonEvents
+                      href: mtp/advanced-hunting-logonevents-table.md
+                    - name: ImageLoadEvents
+                      href: mtp/advanced-hunting-imageloadevents-table.md
+                    - name: MiscEvents
+                      href: mtp/advanced-hunting-miscevents-table.md
+                    - name: EmailEvents
+                      href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailAttachmentInfo
+                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailUrlInfo
+                      href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: DeviceTvmSecureConfigurationAssessment
+                      href: mtp/advanced-hunting-tvm-configassessment-table.md
+                    - name: DeviceTvmSecureConfigurationAssessmentKB
+                      href: mtp/advanced-hunting-tvm-secureconfigkb-table.md
+                    - name: DeviceTvmSoftwareInventoryVulnerabilities
+                      href: mtp/advanced-hunting-tvm-softwareinventory-table.md
+                    - name: DeviceTvmSoftwareVulnerabilitiesKB
+                      href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
+                - name: Aplicar procedimientos recomendados de consulta
+                  href: mtp/advanced-hunting-best-practices.md
+            - name: Puntuación segura
+              items:
+                - name: Puntuación segura
+                  href: mtp/microsoft-secure-score.md
+                - name: Puntuación de seguridad (versión preliminar)
+                  href: mtp/microsoft-secure-score-preview.md
+            - name: Informes
+              items:
+                - name: Supervisar y ver informes
+                  href: mtp/monitoring-and-reporting.md
+                - name: Seguimiento de estado y generación de informes
+                  href: mtp/monitor-and-report-identities.md
+                - name: Supervisión e informes de datos
+                  href: mtp/monitor-data.md
+                - name: Supervisión e informes de dispositivo
+                  href: mtp/monitor-devices.md
+                - name: Supervisión e informes de aplicaciones
+                  href: mtp/monitor-apps.md
+            - name: Permisos & configuración
+              items:
+                - name: Administrar el acceso
+                  href: mtp/mtp-permissions.md
+                - name: Establecer zona horaria
+                  href: mtp/mtp-time-zone.md
+            - name: Administrar tickets a través de ServiceNow
+              href: ./mtp/tickets.md
     - name: Seguridad de Office 365
       items:
         - name: Introducción
@@ -72,7 +161,7 @@
             - name: Configurar su inquilino de Office 365 para aumentar la seguridad
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: Nuevo Centro de seguridad de Microsoft 365
-              href: ./mtp/overview-security-center.md
+              href: ./office-365-security/microsoft-security-and-compliance.md
             - name: Permisos en el Centro de seguridad y cumplimiento
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: Proporcionar a los usuarios acceso al Centro de seguridad

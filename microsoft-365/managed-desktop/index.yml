@@ -71,7 +71,14 @@ sections:
             title: '[Libro electrónico] Tener una alegría para su empresa con un lugar de trabajo moderno'
             image:
               src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+              alt: ''
   - title: Vídeos
     items:
+      - type: paragraph
+        text: Obtenga información sobre las ventajas del escritorio administrado de Microsoft desde el Vicepresidente de tecnología en los aceleradores de Indiana.
       - type: markdown
         text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
+      - type: paragraph
+        text: El administrador general de Microsoft Managed Desktop comparte todos los puntos destacados del servicio en la Conferencia de encendido anual.
+      - type: markdown
+        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'

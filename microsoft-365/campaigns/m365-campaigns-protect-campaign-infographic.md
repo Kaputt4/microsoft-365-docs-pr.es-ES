@@ -21,17 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Qué puede hacer para ayudar a proteger la campaña de los ataques digitales.
-ms.openlocfilehash: 625b72b5bb677769b6ef5cdd3aa2fa10819c5ba2
-ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
+ms.openlocfilehash: ed41ecdbf1fb6284f79cda0468bc50dbba086e63
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37662536"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909286"
 ---
-# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a><span data-ttu-id="17ae0-103">Infografía: ayudar a proteger a sí mismo y a la campaña de las amenazas digitales</span><span class="sxs-lookup"><span data-stu-id="17ae0-103">Infographic: Help protect yourself and your campaign from digital threats</span></span> 
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a><span data-ttu-id="9b9ba-103">Infografía: ayudar a proteger a sí mismo y a la campaña de las amenazas digitales</span><span class="sxs-lookup"><span data-stu-id="9b9ba-103">Infographic: Help protect yourself and your campaign from digital threats</span></span> 
+<span data-ttu-id="9b9ba-104">Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en formato tabloide (también conocido como contabilidad, 11 x 17 o a3).</span><span class="sxs-lookup"><span data-stu-id="9b9ba-104">The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
 
-<span data-ttu-id="17ae0-104">Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en formato tabloide (también conocido como contabilidad, 11 x 17 o a3).</span><span class="sxs-lookup"><span data-stu-id="17ae0-104">The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
+<span data-ttu-id="9b9ba-105">[![Imagen para proteger el gráfico de protección de la información de la campaña](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span><span class="sxs-lookup"><span data-stu-id="9b9ba-105">[![Image for secure your help protect your campaign info graphic](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span></span>
 
-<span data-ttu-id="17ae0-105">[![Imagen para proteger el gráfico de protección de la información de la campaña](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span><span class="sxs-lookup"><span data-stu-id="17ae0-105">[![Image for secure your help protect your campaign info graphic](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span></span>
-
-<span data-ttu-id="17ae0-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | de[PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span><span class="sxs-lookup"><span data-stu-id="17ae0-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span></span>
+<span data-ttu-id="9b9ba-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | de[PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span><span class="sxs-lookup"><span data-stu-id="9b9ba-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span></span>
