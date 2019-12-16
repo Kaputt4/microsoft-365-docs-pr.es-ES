@@ -100,7 +100,7 @@ En la siguiente tabla se muestran tres configuraciones para incrementar la prote
 <tr class="odd">
 <td align="left">Evitar el uso compartido interno y externo</td>
 <td align="left"><p>Restrinja el acceso a documentos que contienen datos en SharePoint Online y OneDrive para la Empresa cuando ese contenido se comparta de forma interna o externa.</p>
-<p>Evite enviar correos electrónicos que contienen estos datos a destinatarios internos o externos.</p></td>
+<p>Evite enviar correos electrónicos que contengan estos datos a destinatarios internos o externos.</p></td>
 <td align="left"><p>Evita el uso compartido interno y externo de estos datos.</p>
 <p>Es posible que los empleados puedan completar tareas que requieran el uso de estos datos.</p>
 <p>Puede revisar los informes DLP de datos compartidos de forma interna o externa y decidir si es necesario un entrenamiento para los usuarios finales.</p></td>
@@ -108,7 +108,7 @@ En la siguiente tabla se muestran tres configuraciones para incrementar la prote
 </tbody>
 </table>
 
-Nota: a medida que aumentan los niveles de protección, la capacidad de los usuarios de acceder a información disminuirá en algunos casos y podría afectar a su productividad o capacidad para completar las tareas diarias. El proceso de aumentar los niveles de protección implementando directivas que afectan a los empleados normalmente viene acompañado de un entrenamiento para los usuarios finales para instruirlos sobre las directivas de seguridad y procedimientos, y ayudarles a seguir siendo productivos en un entorno más seguro.
+Nota: A medida que aumentan los niveles de protección, la capacidad de los usuarios de acceder a información disminuirá en algunos casos y podría afectar a su productividad o capacidad para completar las tareas diarias. El proceso de aumentar los niveles de protección implementando directivas que afectan a los empleados normalmente viene acompañado de un entrenamiento para los usuarios finales con el fin de instruirlos sobre las directivas de seguridad y procedimientos, y ayudarles a seguir siendo productivos en un entorno más seguro.
 
 ### <a name="example-dlp-policy-for-gdpr--awareness"></a>Ejemplo de directiva DLP para RGPD: reconocimiento 
 
