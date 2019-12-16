@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento para administradores de EOP independiente para evitar falsos negativos de correo no deseado
-ms.openlocfilehash: cc0237ddc127c9818ae9cf4916187485e4d1dee7
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871956"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971908"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizar el filtro contra correo no deseado de Office 365 con estas opciones de configuración
 
@@ -31,7 +31,7 @@ Un administrador puede usar varias opciones de configuración del filtro contra 
 
 Para personalizar el filtro contra correo no deseado de Office 365, agregue la dirección IP del remitente a la lista de direcciones IP bloqueadas del filtro de conexión:
 
-1. Obtenga los encabezados del mensaje que quiere bloquear en su cliente de correo, como Outlook o Outlook en la Web (anteriormente conocido como Outlook Web App), como se describe en [Analizador de encabezados de mensaje](https://go.microsoft.com/fwlink/p/?LinkId=306583).
+1. Obtenga los encabezados del mensaje que quiere bloquear en su cliente de correo, como Outlook o Outlook en la Web (anteriormente conocido como Outlook Web App), como se describe en [Analizador de encabezados de mensaje](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
 2. Busque la dirección IP después de la etiqueta CIP en el encabezado X-Forefront-Antispam-Report con el [Analizador de encabezados de mensaje](https://testconnectivity.microsoft.com/?tabid=mha) o de forma manual.
 
@@ -49,7 +49,7 @@ Para personalizar el filtro contra correo no deseado de Office 365, agregue la d
 
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Los usuarios de correo electrónico también pueden asegurarse de que los falsos negativos y el correo no deseado se bloqueen con un filtro contra correo no deseado de Office 365.
 
-Facilitará los esfuerzos contra correo no deseado de Office 365 para impedir falsos negativos y correo masivo si pide a los usuarios que agreguen la dirección del remitente de correo no deseado a su lista de remitentes bloqueados en [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) o en [Outlook en la Web](https://go.microsoft.com/fwlink/p/?LinkId=294862). En Outlook en la Web, haga clic en **Configuración** \> **Opciones** \> **Bloquear o permitir** y, después, agregue la dirección a la lista de **remitentes bloqueados**, como se muestra aquí.
+Facilitará los esfuerzos contra correo no deseado de Office 365 para impedir falsos negativos y correo masivo si pide a los usuarios que agreguen la dirección del remitente de correo no deseado a su lista de remitentes bloqueados en [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) o en [Outlook en la Web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d). En Outlook en la Web, haga clic en **Configuración** \> **Opciones** \> **Bloquear o permitir** y, después, agregue la dirección a la lista de **remitentes bloqueados**, como se muestra aquí.
 
 ![Bloquear un remitente en Outlook en la Web](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
