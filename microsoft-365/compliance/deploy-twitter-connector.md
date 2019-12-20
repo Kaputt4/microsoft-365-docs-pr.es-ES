@@ -1,5 +1,5 @@
 ---
-title: Implementar un conector para archivar datos de Twitter en Office 365
+title: Implementar un conector para archivar datos de Twitter
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar datos de Twitter a Office 365. Una vez que estos datos se han importado a Office 365, puede usar las características de cumplimiento, como las directivas de retención legal, búsqueda de contenido y retención, para administrar el gobierno de los datos de Twitter de la organización.
-ms.openlocfilehash: fda03e3e489b0ae9c754f2eba18bc60785bb3def
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 87faad6546d70b1e3893e2f5737af189ebb5f77b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38687784"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806153"
 ---
-# <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Implementar un conector para archivar datos de Twitter en Office 365
+# <a name="deploy-a-connector-to-archive-twitter-data"></a>Implementar un conector para archivar datos de Twitter
 
 Este artículo contiene el proceso paso a paso para implementar un conector que usa el servicio de importación de Office 365 para importar datos de la cuenta de Twitter de su organización a Office 365. Para obtener información general de alto nivel de este proceso y una lista de los requisitos previos necesarios para implementar un conector de Twitter, vea [usar un conector de ejemplo para archivar datos de Twitter en Office 365 (versión preliminar)](archive-twitter-data-with-sample-connector.md). 
 
@@ -206,7 +206,7 @@ La aplicación de desarrollo de Twitter ya está lista para usarse.
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security-and-compliance-center"></a>Paso 7: configurar un conector personalizado en el centro de seguridad y cumplimiento
 
-1.  Vaya a <https://protection.office.com> y, a continuación, haga clic en **datos de terceros de importación \> \> de gobierno de datos**.
+1.  Vaya a <https://protection.office.com> y, a continuación, haga clic en **información de terceros archivo de importación \> \> y gobierno de información**.
 
     ![Ir a la página archivar datos de terceros en el centro de seguridad y cumplimiento](media/TCimage36.png)
 

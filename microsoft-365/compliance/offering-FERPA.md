@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7ed252a681942d7c00840d3902f4c48e80231331
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 468fa4bb8b6eb2e6b5bc4d94f193560373dfc1e7
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859870"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805042"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Ley de privacidad y derechos educativos de la familia (FERPA)
 
@@ -40,7 +41,7 @@ Como resultado de estos compromisos contractuales, los clientes que están sujet
 
 Obtenga información sobre las ventajas de FERPA en la nube de Microsoft: [descargar el fondo de FERPA](https://aka.ms/ferpa-compliance)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 Los servicios a los que Microsoft acuerda ser designados como "funcionario de la escuela" con "intereses educativos legítimos" en los datos del cliente son:
 

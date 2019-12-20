@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 30509260e83f1aaa59c57365357e18a3f12097c4
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4df4d225658c03433384ca85e5e9d15eed5f1ac8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859730"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804823"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>Publicación de US Internal Revenue Service 1075
 
@@ -42,11 +43,11 @@ Para ayudar a las agencias gubernamentales en sus esfuerzos de cumplimiento, Mic
 
 Obtenga más información sobre las ventajas de IRS 1075 en la nube de Microsoft: [descargar el fondo de irs 1075](https://aka.ms/irs1075-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 Las autorizaciones de FedRAMP se conceden a tres niveles de impacto en función de las instrucciones del NIST: bajo, medio y alto. Estos clasifican el impacto que la pérdida de confidencialidad, integridad o disponibilidad puede tener en una organización: bajo (efecto limitado), medio (efecto adverso grave) y alto (efecto grave o catastrófico).
 
-- [Azure y Azure para la Administración Pública](https://azure.microsoft.com/global-infrastructure/government/)
+- [Azure y Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - Dynamics 365 para el gobierno de Estados Unidos
 - [Office 365 y Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Office 365 U.S. Government Defense
@@ -79,7 +80,7 @@ No. Los únicos entornos en los que FTI se puede almacenar y procesar son Azure 
 
 - [Publicación de IRS 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
 - [Programa de salvaguardias de la Agencia Tributaria](https://www.irs.gov/uac/Safeguards-Program)
-- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud para la Administración Pública](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

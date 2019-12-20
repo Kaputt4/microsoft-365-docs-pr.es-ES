@@ -3,6 +3,7 @@ title: Ejecutar informes en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 'Obtenga información sobre cómo ejecutar un informe y, a continuación, descargar el archivo. csv en la exhibición avanzada de documentos electrónicos de Office 365.  '
-ms.openlocfilehash: 2eee2c423210c9d65152c7299eed5c73c5b455b0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 694346eabf5368b1f9966ba370331993d800358a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092985"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802923"
 ---
 # <a name="run-reports-in-office-365-advanced-ediscovery"></a>Ejecutar informes en Office 365 Advanced eDiscovery
 

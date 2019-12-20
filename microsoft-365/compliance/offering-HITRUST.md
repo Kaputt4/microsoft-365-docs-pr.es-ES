@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ebe89a7dc63a9adbe2c40961f92c1a6656d9ae9d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 9b0448a3ed5cf36a909ebb14e0aadf2b8ac96610
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859740"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804803"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Information Trust Trust Alliance (HITRUST) Common Security Framework (CSF)
 
@@ -36,7 +37,7 @@ Obtenga información sobre cómo acelerar la implementación de HITRUST con nues
 
 [Descargar la matriz de responsabilidad del cliente de Microsoft Azure HITRUST (CRM) Blueprint v 9.0 d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Intune
@@ -106,7 +107,7 @@ Inicie sesión en la herramienta de® HITRUST MyCSF y rellene previamente la eva
 - [HITRUST CSF 8,1](https://hitrustalliance.net/csf-license-agreement/)
 - [Descripción y aprovechamiento del CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Obtenga más información sobre el programa de responsabilidad compartida de HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

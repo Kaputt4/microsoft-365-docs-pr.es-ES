@@ -1,5 +1,6 @@
 ---
-title: Configurar directivas de supervisión para Office 365
+title: Configurar directivas de supervisión
+description: Configuración de la supervisión de comunicaciones para Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,15 +16,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Configuración de la supervisión de comunicaciones para Office 365
-ms.openlocfilehash: 694f35fd42fb534292130695efa12bacc114713c
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+titleSuffix: Office 365 Compliance
+ms.openlocfilehash: 67e7d1a8fe1ca2f64031cab9bdee72ac22c70886
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38687807"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806633"
 ---
-# <a name="configure-supervision-policies-for-office-365"></a>Configurar directivas de supervisión para Office 365
+# <a name="configure-supervision-policies-in-office-365"></a>Configurar directivas de supervisión en Office 365
 
 > [!IMPORTANT]
 > Este tema se aplica a la configuración de directivas de supervisión en una suscripción de Office 365. Si desea configurar el cumplimiento de comunicaciones para una suscripción de Microsoft 365, vea [Configure Communications Compliance in Microsoft 365 (Preview)](communication-compliance-configure.md).

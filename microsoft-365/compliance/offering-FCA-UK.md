@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f009914f2a5178104968fe443bbac0655f5541b9
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 582f7175ae7eb851c1a58497369d069d7f295aa8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859890"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805063"
 ---
 # <a name="united-kingdom-financial-conduct-authority-fca"></a>Autoridad de realización financiera del Reino Unido (FCA)
 
@@ -40,11 +41,11 @@ Obtenga información sobre cómo Azure habilita el cumplimiento de la FCA en los
 
 [Descargar el enfoque de Microsoft a FCA instrucciones de nube finalizadas](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
-- El servicio en la nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
+- El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -62,7 +63,7 @@ Sí. Sin embargo, aunque las respuestas de Microsoft a este marco están confirm
 - [Programa de cumplimiento de servicios financieros de Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Programa de cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servicios en la nube de Microsoft para empresas y servicios financieros](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

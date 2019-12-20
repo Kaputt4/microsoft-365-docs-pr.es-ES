@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información sobre cómo configurar la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: 46bfeaf0c73c4598fcdaa65d654201620396600c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5b7bf33f41bc722c557f2b515c5ab027bd401a2a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093235"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803768"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuración de la administración del acceso con privilegios en Office 365
 
@@ -35,7 +35,7 @@ Siga estos pasos para configurar y usar el acceso con privilegios en su organiza
 
 - [Paso 1: crear un grupo de aprobadores](privileged-access-management-configuration.md#step1)
 
-    Antes de empezar a usar el acceso de privilegios, determine quién necesita autoridad de aprobación para el acceso a las tareas elevadas y privilegiadas. Cualquier usuario que forme parte del grupo de aprobadores puede aprobar solicitudes de acceso. Para habilitarlo, cree un grupo de seguridad habilitado para correo en Office 365.
+    Antes de empezar a usar el acceso de privilegios, determine quién necesita autoridad de aprobación para el acceso a las tareas elevadas y privilegiadas. Cualquier usuario que forme parte del grupo de aprobadores puede aprobar solicitudes de acceso. Para habilitar este grupo, cree un grupo de seguridad habilitado para correo en Office 365.
 
 - [Paso 2: habilitar el acceso con privilegios](privileged-access-management-configuration.md#step2)
 
@@ -52,7 +52,7 @@ Siga estos pasos para configurar y usar el acceso con privilegios en su organiza
 Una vez que se haya concedido la aprobación, el usuario que realiza la solicitud puede ejecutar la tarea deseada y el acceso privilegiado autorizará y ejecutará la tarea en nombre del usuario. La aprobación sigue siendo válida durante la duración solicitada (la duración predeterminada es de 4 horas), durante el cual el solicitante puede ejecutar la tarea deseada varias veces. Todas estas ejecuciones se registran y están disponibles para la auditoría de seguridad y cumplimiento. 
 
 > [!NOTE]
-> Si desea usar el PowerShell de administración de Exchange para habilitar y configurar el acceso con privilegios, siga los pasos descritos en [Connect to Exchange Online PowerShell Using multi-factor Authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to Connect to Exchange Online PowerShell with your Office 365 necesarias. No es necesario habilitar la autenticación multifactor para su organización de Office 365 para usar los pasos para habilitar el acceso privilegiado mientras se conecta a Exchange Online PowerShell. La conexión con la autenticación multifactor crea un token de OAuth que se usa en el acceso con privilegios para firmar las solicitudes.
+> Si desea usar PowerShell de administración de Exchange para habilitar y configurar el acceso con privilegios, siga los pasos descritos en [Connect to Exchange Online PowerShell Using multi-factor Authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) para conectarse a Exchange Online PowerShell con sus credenciales de Office 365. No es necesario habilitar la autenticación multifactor para su organización de Office 365 para usar los pasos para habilitar el acceso privilegiado mientras se conecta a Exchange Online PowerShell. La conexión con la autenticación multifactor crea un token de OAuth que se usa en el acceso con privilegios para firmar las solicitudes.
 
 <a name="step1"> </a>
 
@@ -78,9 +78,9 @@ Una vez que se haya concedido la aprobación, el usuario que realiza la solicitu
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
-2. En el centro de administración, vaya a **configuración > seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración > configuración >** > **acceso con privilegios**de privacidad & seguridad.
 
-3. Habilite el control **de acceso requerir aprobaciones para privilegios** .
+3. Habilite el control **requerir aprobaciones para las tareas privilegiadas** .
 
 4. Asigne el grupo de aprobador que ha creado en el paso 1 como el **Grupo aprobadores predeterminados**.
 

@@ -3,6 +3,7 @@ title: Etiquetado y evaluación en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Revise los pasos para realizar la formación sobre la evaluación, incluidos los archivos de etiquetado y la revisión de los resultados de la evaluación en eDiscovery avanzado de Office 365. '
-ms.openlocfilehash: 067f8933bd7fc1286e468d664bf4dbd754e64f00
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33a79bd6a9debb203a5685dde11b9350da6006af
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092894"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802753"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Etiquetado y evaluación en Office 365 Advanced eDiscovery
 
@@ -118,7 +119,7 @@ Cuando la riqueza es muy baja, el número de archivos de evaluación adicionales
 En ausencia de estabilización basada en estadísticas, habrá resultados con un nivel inferior de precisión y nivel de confianza. Sin embargo, estos resultados se pueden usar para buscar archivos relevantes cuando no es necesario conocer el porcentaje de archivos relevantes encontrados. De forma similar, este estado puede usarse para entrenar problemas con escasa riqueza, donde los resultados de relevancia pueden acelerar el acceso a los archivos relevantes para un problema específico.
   
 > [!TIP]
-> En la **pestaña \> seguimiento de relevancia** , la visualización de problemas expandida, están disponibles las siguientes opciones de visualización: > el paso siguiente recomendado, como **paso siguiente:** se puede omitir el etiquetado (por problema) haciendo clic en el botón **modificar** situado a la derecha. y, a continuación, seleccione un paso diferente en el **paso siguiente**. Cuando no se haya completado el indicador de progreso de la evaluación, la evaluación será la siguiente opción recomendada, para etiquetar más archivos de evaluación y aumentar la precisión de las estadísticas. > puede cambiar el margen de error y evaluar su impacto; para ello, haga clic en **modificar**y, en el **cuadro de diálogo nivel de evaluación**, cambie el **margen de error de destino para RECALL estimaciones**y haga clic en **actualizar valores**. Además, en este cuadro de diálogo, puede ver las opciones avanzadas haciendo clic en **avanzadas**. > puede ver estadísticas del nivel de evaluación adicional y su impacto haciendo clic en **Ver**. En el cuadro de diálogo resultados detallados mostrados, las estadísticas están disponibles por problema, cuando hay al menos 500 archivos de evaluación etiquetada y al menos 18 archivos se etiquetan como pertinentes para el problema. 
+> En la **pestaña \> seguimiento de relevancia** , la visualización de problemas expandida, están disponibles las siguientes opciones de visualización: > el paso siguiente recomendado, como **paso siguiente:** se puede omitir el etiquetado (por problema) haciendo clic en el botón **modificar** situado a su derecha y, a continuación, seleccionando un paso diferente en el **paso siguiente**. Cuando no se haya completado el indicador de progreso de la evaluación, la evaluación será la siguiente opción recomendada, para etiquetar más archivos de evaluación y aumentar la precisión de las estadísticas. > puede cambiar el margen de error y evaluar su impacto; para ello, haga clic en **modificar**y, en el **cuadro de diálogo nivel de evaluación**, cambie el **margen de error de destino para RECALL estimaciones**y haga clic en **actualizar valores**. Además, en este cuadro de diálogo, puede ver las opciones avanzadas haciendo clic en **avanzadas**. > puede ver estadísticas del nivel de evaluación adicional y su impacto haciendo clic en **Ver**. En el cuadro de diálogo resultados detallados mostrados, las estadísticas están disponibles por problema, cuando hay al menos 500 archivos de evaluación etiquetada y al menos 18 archivos se etiquetan como pertinentes para el problema. 
   
 ## <a name="see-also"></a>Vea también
 

@@ -3,6 +3,7 @@ title: Usar el análisis rápido en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Obtenga información sobre cómo ejecutar el modo de análisis rápido de Office 365 Advanced eDiscovery
-ms.openlocfilehash: 04b48db445f114fd6138b099703e826c6b4ce7c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f1b26e40c2ed3a3b468ada0d501fcafd20fefe2c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092834"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802315"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Usar el análisis rápido en Office 365 Advanced eDiscovery
 
@@ -126,7 +127,7 @@ Opcionalmente, puede establecer la **Configuración avanzada** para cambiar los 
     
 Elija **Aceptar**para guardar la configuración avanzada, **restaurar los valores predeterminados** para usar los valores predeterminados o **Cancelar** para cancelar la configuración avanzada. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 <a name="BK_AdvancedSettings"> </a>
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)

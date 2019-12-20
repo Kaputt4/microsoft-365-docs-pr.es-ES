@@ -3,6 +3,7 @@ title: Ejecutar el módulo de proceso en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Obtenga información sobre las directrices para preparar archivos de casos de Office 365 datos para analizar con Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 75b6b23a913a6aa8b732501b1c52afb55b47e51e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f96b7670a3886b2bfe01801ea76061bea4a37d14
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092976"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802913"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Ejecutar el módulo de proceso en Office 365 Advanced eDiscovery
 
@@ -47,7 +48,7 @@ Los archivos de casos se cargan en la exhibición avanzada de documentos electr�
     
 - **Ruta**de acceso al archivo: eDiscovery avanzado puede cargar archivos con longitudes de ruta de hasta 400 caracteres.
     
-- **Extracción de texto**: al extraer texto de archivos nativos, además del texto normal, también se extraen los siguientes elementos: texto oculto (Excel y. doc), columnas ocultas (Excel), control de cambios (. doc), notas del orador (. ppt), objetos incrustados (por ejemplo, Objetos de Excel en un. ppt). Se pueden ver en el editor de texto.
+- **Extracción de texto**: al extraer texto de archivos nativos, además del texto normal, también se extraen los siguientes elementos: texto oculto (Excel y. doc), columnas ocultas (Excel), control de cambios (. doc), notas del orador (. ppt), objetos incrustados (por ejemplo, objetos de Excel en a. ppt). Se pueden ver en el editor de texto.
     
 - **Omitir texto**: esta característica opcional se define después de ejecutar el proceso y antes de analizar. Ignore Text debe usarse con cuidado porque su uso puede reducir el rendimiento del análisis de archivos.
     

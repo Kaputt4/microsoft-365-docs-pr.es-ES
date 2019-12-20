@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: e90609c2cb25f78345c7f4da2b7b2811dd104c16
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859410"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804183"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>Parte US García 10 CFR 810
 
@@ -31,7 +32,7 @@ FedRAMP ofrece una línea de base adecuada para proporcionar garantías de que A
 
 Además, Azure Government es una nube de la comunidad de administración de US Government que está físicamente separada de la nube de Azure. Proporciona garantías adicionales en relación con los requisitos específicos de detección en segundo plano por parte del gobierno de Estados Unidos, incluidos los controles específicos que restringen el acceso a la información y los sistemas para que los ciudadanos de las operaciones de Azure puedan filtrar a los ciudadanos.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - Intune

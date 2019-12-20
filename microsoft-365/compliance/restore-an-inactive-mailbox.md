@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Si un nuevo empleado u otro usuario necesita tener acceso al contenido de un buzón inactivo en Office 365, puede restaurar (o combinar) el contenido del buzón inactivo en un buzón existente.
-ms.openlocfilehash: fe71825435dd3dbcc0e1db79591a78ead83218ba
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 8cd8477695523fc6d1f7e8f0a1c939e8700720ba
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687898"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802999"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>Restaurar un buzón inactivo en Office 365
 
@@ -74,7 +74,7 @@ Use el cmdlet **New-MailboxRestoreRequest** con los parámetros  _SourceMailbox_
 
 ## <a name="restore-the-archive-from-an-inactive-mailbox"></a>Restaurar el archivo a partir de un buzón inactivo
 
-Si un buzón inactivo tiene un buzón de archivo, también puede restaurarlo en el buzón de archivo de un buzón existente. Para restaurar el archivo desde un buzón inactivo, tiene que agregar los modificadores  _SourceIsArchive_ y  _TargetIsAchive_ al comando utilizado para restaurar un buzón inactivo. 
+Si un buzón inactivo tiene un buzón de archivo, también puede restaurarlo en el buzón de archivo de un buzón existente. Para restaurar el archivo desde un buzón inactivo, tiene que agregar los modificadores  _SourceIsArchive_ y  _TargetIsAchive_ al comando utilizado para restaurar un buzón inactivo.
   
 1. Cree una variable que contenga las propiedades del buzón inactivo.
 
@@ -82,7 +82,7 @@ Si un buzón inactivo tiene un buzón de archivo, también puede restaurarlo en 
     $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
     ```
 
-    > [!IMPORTANT]
+    > [!NOTE]
     > En el comando anterior, use el valor de la propiedad **DistinguishedName** o **ExchangeGUID** para identificar el buzón inactivo. Estas propiedades son únicas para cada buzón en su organización, mientras que es posible que un buzón activo e inactivo puedan tener la misma dirección SMTP principal. 
   
 2. Restaure el contenido del archivo a partir del buzón inactivo (archivo de origen) en el archivo de un buzón existente (archivo de destino). En este ejemplo, el contenido del archivo de origen se copia a una carpeta denominada "Archivo de buzón inactivo" en el archivo del buzón de destino.
@@ -93,7 +93,7 @@ Si un buzón inactivo tiene un buzón de archivo, también puede restaurarlo en 
 
 ## <a name="more-information"></a>Más información
 
-- **¿Cuál es la diferencia principal entre recuperar y restaurar un buzón inactivo?** Al recuperar un buzón inactivo, el buzón se convierte básicamente en un buzón nuevo, el contenido y la estructura de carpetas del buzón inactivo se conservan y el buzón se vincula a una nueva cuenta de usuario. Una vez recuperado, el buzón inactivo deja de existir y los cambios realizados en el contenido en el nuevo buzón afectarán el contenido que se encontraba originalmente en retención en el buzón inactivo. Por el contrario, cuando se restaura un buzón inactivo, el contenido simplemente se copia a otro buzón de correo. El buzón inactivo se conserva y sigue siendo un buzón inactivo. Los cambios realizados en el contenido del buzón de destino no afectan el contenido original del buzón inactivo. El buzón inactivo todavía se puede buscar usando la herramienta de [búsqueda de contenido](run-a-content-search-in-the-security-and-compliance-center.md) en el centro de seguridad & cumplimiento, su contenido se puede restaurar a otro buzón o se puede recuperar o eliminar en una fecha posterior.
+- **¿Cuál es la diferencia principal entre recuperar y restaurar un buzón inactivo?** Al recuperar un buzón inactivo, el buzón se convierte básicamente en un buzón nuevo, el contenido y la estructura de carpetas del buzón inactivo se conservan y el buzón se vincula a una nueva cuenta de usuario. Una vez recuperado, el buzón inactivo deja de existir y los cambios realizados en el contenido en el nuevo buzón afectarán el contenido que se encontraba originalmente en retención en el buzón inactivo. Por el contrario, cuando se restaura un buzón inactivo, el contenido simplemente se copia a otro buzón de correo. El buzón inactivo se conserva y sigue siendo un buzón inactivo. Los cambios realizados en el contenido del buzón de destino no afectan el contenido original del buzón inactivo. El buzón inactivo se puede seguir buscando mediante la herramienta de [búsqueda de contenido](content-search.md), su contenido se puede restaurar a otro buzón o se puede recuperar o eliminar en una fecha posterior.
 
 - **¿Cómo se encuentran los buzones inactivos?** Para obtener una lista de los buzones inactivos en la organización y mostrar información útil para restaurar un buzón inactivo, puede ejecutar este comando.
 

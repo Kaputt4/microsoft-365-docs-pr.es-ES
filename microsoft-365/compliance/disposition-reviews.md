@@ -1,7 +1,7 @@
 ---
 title: Información general sobre las revisiones de disposición
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de retención que conserva el contenido de Microsoft 365, puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: 22079fc92cabc902cd7afee7e187b7e186aa2328
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091731"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806073"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 
@@ -116,7 +116,7 @@ En la página de **disposición pendiente** , puede ver las disposiciones pendie
   
 - La **disposición pendiente** muestra los elementos que han alcanzado el final del período de retención y requieren una revisión de disposición. Después de revisar cada elemento, decida si desea aplicar una etiqueta de retención distinta, ampliar su período de retención o eliminarlo de forma permanente. Puede seleccionar varios elementos.
     
-- La pestaña **elementos eliminados** muestra las desposiciones que se aprobaron para su eliminación durante una revisión de disposición y que ahora se encuentran en proceso de eliminación permanente. Los elementos a los que se ha aplicado una etiqueta de retención distinta o cuyo período de retención se ha ampliado como parte de una revisión no aparecerán aquí.
+- La pestaña **elementos eliminados** muestra las desposiciones que se aprobaron para su eliminación durante una revisión de disposición y que ahora se encuentran en proceso de eliminación permanente o elementos marcados como registros que ya se han eliminado. Los elementos a los que se ha aplicado una etiqueta de retención distinta o cuyo período de retención se ha ampliado como parte de una revisión no aparecerán aquí.
 
 ![Pestañas de disposición](media/Retention-Disposition-tabs.png)
     

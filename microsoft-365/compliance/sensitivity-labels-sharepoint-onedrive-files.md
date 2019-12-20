@@ -1,7 +1,7 @@
 ---
 title: Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: c050aefb9feebbb3ff37a8504ba1b8385fb0ff49
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: c62db0d77ed805c607e79bf25cb9816a554cb6d2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38687791"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802833"
 ---
-# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa pública)
+# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)
 
 Anteriormente, al aplicar las etiquetas de confidencialidad que incluían cifrado a los archivos de Office almacenados en SharePoint y OneDrive, el servicio no podía procesar el contenido de estos archivos. La coautoría, la exhibición de documentos electrónicos, la prevención de pérdida de datos, la búsqueda, Delve y otras características de colaboración no funcionarán en estas circunstancias. Esta vista previa permite estas características:
 
@@ -39,7 +39,7 @@ Anteriormente, al aplicar las etiquetas de confidencialidad que incluían cifrad
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
-Ahora también puede aplicar etiquetas de confidencialidad a Microsoft Teams, a los grupos de Office 365 y a los sitios de SharePoint. [Obtenga más información](sensitivity-labels-teams-groups-sites.md).
+Ahora también puede aplicar etiquetas de confidencialidad a Microsoft Teams, a los grupos de Office 365 y a los sitios de SharePoint. [Más información](sensitivity-labels-teams-groups-sites.md).
 
 Si es necesario, puede optar por no tener la vista previa en cualquier momento.
 
@@ -75,19 +75,24 @@ Para esta vista previa, use la versión 19.002.0121.0008 o posterior de la aplic
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>Preparar el shell de administración de SharePoint Online para la versión preliminar
 
-Antes de habilitar la vista previa, asegúrese de que está ejecutando el shell de administración de SharePoint Online más reciente. Si ya tiene la versión más reciente, puede seguir adelante y habilitar la vista previa.
+Antes de habilitar la vista previa, asegúrese de que está ejecutando la versión 16.0.19418.12000 o posterior del shell de administración de SharePoint Online. Si ya tiene la versión más reciente, puede seguir adelante y habilitar la vista previa.
 
-Para preparar el shell de administración de SharePoint Online para la vista previa:
+1. Si ha instalado una versión anterior del shell de administración de SharePoint Online desde la galería de PowerShell, puede actualizar el módulo mediante la ejecución del siguiente cmdlet.
 
-1. Si ha instalado una versión anterior del shell de administración de SharePoint Online, vaya a **Agregar o quitar programas** y desinstale el shell de administración de SharePoint Online.
+    ```PowerShell
+    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
+    ```
 
-2. En un explorador Web, vaya a la página del centro de descarga y [Descargue el shell de administración de SharePoint Online más reciente](https://go.microsoft.com/fwlink/p/?LinkId=255251).
+2. Como alternativa, si ha instalado una versión anterior del shell de administración de SharePoint Online desde el centro de descarga de Microsoft, también puede ir a **Agregar o quitar programas** y desinstalar el shell de administración de SharePoint Online.
 
-3. Seleccione su idioma y, a continuación, haga clic en **Descargar**.
+3. En un explorador Web, vaya a la página del centro de descarga y [Descargue el shell de administración de SharePoint Online más reciente](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
-4. Elija entre el archivo x64 y x86. msi. Descargue el archivo x64 si ejecuta la versión de 64 bits de Windows o el archivo x86 si ejecuta la versión de 32 bits. Si no lo sabe, consulte ¿ [qué versión del sistema operativo Windows estoy ejecutando?](https://support.microsoft.com/help/13443/windows-which-operating-system).
+4. Seleccione su idioma y, a continuación, haga clic en **Descargar**.
 
-5. Una vez descargado el archivo, ejecute el archivo y siga los pasos del Asistente para la instalación.
+5. Elija entre el archivo x64 y x86. msi. Descargue el archivo x64 si ejecuta la versión de 64 bits de Windows o el archivo x86 si ejecuta la versión de 32 bits. Si no lo sabe, consulte ¿ [qué versión del sistema operativo Windows estoy ejecutando?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+
+
+6. Una vez que haya descargado el archivo, ejecute el archivo y siga los pasos del Asistente para la instalación.
 
 ## <a name="enable-the-preview-by-using-microsoft-powershell-opt-in"></a>Habilitación de la vista previa mediante PowerShell de Microsoft (opción opcional)
 

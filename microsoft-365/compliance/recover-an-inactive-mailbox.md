@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Si un antiguo empleado vuelve a su organización, o si se contrata a un nuevo empleado para que realice las responsabilidades laborales de un empleado que ya no está en parte, puede recuperar el contenido del buzón inactivo en Office 365. Al recuperar un buzón inactivo, se convierte en un nuevo buzón que contiene el contenido del buzón inactivo. '
-ms.openlocfilehash: 9caa5d8f8c44ee5a916129e7f181532c8c0dd1a2
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6589c8b75e7d17720848ed221e9625c77b867503
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687900"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803717"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Recuperar un buzón inactivo en Office 365
 
@@ -45,9 +45,7 @@ Consulte la sección [Más información](#more-information) para obtener más de
     ```
 
     Use la información devuelta por este comando para recuperar un buzón inactivo específico.
-    
-- Para obtener más información acerca de los buzones inactivos, consulte [buzones inactivos en Office 365](inactive-mailboxes-in-office-365.md).
-    
+
 ## <a name="recover-an-inactive-mailbox"></a>Recuperar un buzón inactivo
 
 Use el cmdlet **New-Mailbox** con el parámetro *InactiveMailbox* para recuperar un buzón inactivo. 
@@ -101,5 +99,5 @@ Después de recuperar un buzón inactivo, también se crea una nueva cuenta de u
 
     Si no hay un valor para la propiedad **ExternalDirectoryObjectId**, el período de retención del buzón ha expirado y puede recuperar el buzón inactivo ejecutando el comando **New-Mailbox -InactiveMailbox**. Si hay un valor para la propiedad **ExternalDirectoryObjectId**, no ha expirado el período de retención del buzón eliminado temporalmente y tiene que recuperar el buzón de correo restaurando la cuenta de usuario de Office 365. Consulte [Suprimir o restaurar usuarios](https://go.microsoft.com/fwlink/p/?LinkId=279162).
     
-- **Considere la posibilidad de habilitar el buzón de archivo después de recuperar un buzón inactivo.** Esto permite que el usuario que vuelve o el nuevo empleado muevan mensajes antiguos al buzón de archivo. Y cuando expire la suspensión de retención, la Directiva de archivo que forma parte de la Directiva de retención de Exchange predeterminada asignada a los buzones de correo de Exchange Online moverá los elementos que tengan dos años o más con el buzón de archivo. Si no habilita el buzón de archivo, los elementos de más de dos años permanecerán en el buzón principal del usuario. Para obtener más información, consulte [Habilitar buzones de archivo en el centro &amp; de seguridad y cumplimiento de Office 365](enable-archive-mailboxes.md).
+- **Considere la posibilidad de habilitar el buzón de archivo después de recuperar un buzón inactivo.** Esto permite que el usuario que vuelve o el nuevo empleado muevan mensajes antiguos al buzón de archivo. Y cuando expire la suspensión de retención, la Directiva de archivo que forma parte de la Directiva de retención de Exchange predeterminada asignada a los buzones de correo de Exchange Online moverá los elementos que tengan dos años o más con el buzón de archivo. Si no habilita el buzón de archivo, los elementos de más de dos años permanecerán en el buzón principal del usuario. Para obtener más información, consulte [enable Archive mailboxes](enable-archive-mailboxes.md).
  

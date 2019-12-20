@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 5ec81552de43d2e67a4987b0efbaf5582be26e40
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859580"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804453"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministerio de electrónica y tecnología de la información (MeitY)
 
@@ -38,10 +39,11 @@ En noviembre de 2017, Microsoft se convirtió en uno de los primeros proveedores
 
 La acreditación MeitY de Microsoft fue el resultado de una auditoría rigurosa realizada por la dirección de prueba de estandarización y de certificación de calidad (STQC), una organización gubernamental que proporciona servicios de control de calidad mediante un marco de evaluación. se basa en el trabajo de la iniciativa de nube de MeghRaj. Con Microsoft Azure, las organizaciones del sector público ahora pueden dibujar en una amplia variedad de modelos de implementación y ofertas de servicios, como la infraestructura como servicio (IaaS), la plataforma como servicio (PaaS), la recuperación ante desastres, DevOps y la copia de seguridad administrada.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Intune
+- [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
@@ -58,7 +60,7 @@ El hecho de que los servicios gubernamentales estén a disposición de los ciuda
 - [Ministerio de electrónica y tecnología de la información](https://meity.gov.in/)
 - [Iniciativa de nube de MeghRaj](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Proveedores de servicios en la nube acreditados](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

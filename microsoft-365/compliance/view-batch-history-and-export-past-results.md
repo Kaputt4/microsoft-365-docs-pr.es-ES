@@ -3,6 +3,7 @@ title: Ver el historial del lote y exportar los resultados anteriores en eDiscov
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Aprenda a ver información detallada sobre las sesiones de lote de exportación seleccionadas y cómo deshacer la última sesión de exportación en Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: e4e84dc4115c7ec718112c8c38e20b306427c5c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5e20fa787bcbb9dc6072af779326518d6a03aaa4
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093123"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802255"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado de Office 365
 
@@ -55,7 +56,7 @@ El cuadro de diálogo historial de exportación proporciona información detalla
     
 2. Haga clic en **examinar** para seleccionar la ubicación de destino para almacenar los archivos de exportación descargados en un equipo local. 
     
-3. Haga clic en  **Iniciar **. Los archivos de exportación se descargan en el equipo local. 
+3. Haga clic en **Iniciar**. Los archivos de exportación se descargan en el equipo local. 
     
 ## <a name="see-also"></a>Vea también
 

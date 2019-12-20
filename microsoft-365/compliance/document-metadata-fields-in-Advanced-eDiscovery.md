@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 39ce4518e12b4446b339cbf7341a354bf5bd8876
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633589"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805973"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos del documento en eDiscovery avanzado
 
@@ -35,15 +35,15 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 
 - Descripción del campo meta data (en la **columna Descripción**).
 
-| Nombre del campo | Nombre de campo de búsqueda | Nombre del campo exportado | Mostrar nombre de campo | Descripción |
-| :- |  :- |  :- |  :- |  :- |
+|Nombre del campo|Nombre de campo de búsqueda|Nombre del campo exportado|Mostrar nombre de campo|Descripción|
+|:-|:-|:-|:-|:-|
 | Identificador de contenido de datos adjuntos | AttachmentContentId |  | Identificador de contenido de datos adjuntos | Identificador de contenido de datos adjuntos del elemento. |
 | Nombres de datos adjuntos | AttachmentNames | Attachment_Names | Nombres de datos adjuntos | Lista de nombres de datos adjuntos. |
 | Puntuación de privilegios de cliente abogado | AttorneyClientPrivilegeScore |  | Puntuación de privilegios de cliente abogado | Abogado-puntuación del contenido del modelo de privilegio de cliente. |
 | Autor | Autor | Doc_authors | Autor | Autor de los metadatos del documento. |
 | BCC | Bcc | Email_bcc | BCC | Campo Cco para tipos de mensaje.  El formato **es \<DisplayName SMTPAddress>**. |
 | CC | Cc | Email_cc | CC | Campo CC para los tipos de mensaje.  El formato **es \<DisplayName SMTPAddress>**. |
-| Etiquetas de cumplimiento | ComplianceLabels | Compliance_labels | Etiquetas de cumplimiento | Etiquetas de cumplimiento aplicadas en Office 365. |
+| Etiquetas de cumplimiento | ComplianceLabels | Compliance_labels | Etiquetas de cumplimiento |[Etiquetas de retención](labels.md) aplicadas al contenido en Office 365. |
 | Ruta de acceso compuesta | CompoundPath | Compound_path | Ruta de acceso compuesta | Ruta de acceso legible que describe el origen del elemento. |
 | Contenido | Contenido |  |  | Texto extraído del elemento. |
 | Cuerpo de la conversación | Cuerpo de la conversación |  | Cuerpo de la conversación | Cuerpo de la conversación del elemento. |
@@ -131,7 +131,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 | Percentil de lectura | ReadPercentile |  | Percentil de lectura | El percentil de lectura del documento en función de la relevancia. |
 | Número de destinatarios |  | Recipient_count | Número de destinatarios | Número de destinatarios del mensaje. |
 | Dominios de destinatarios | RecipientDomains | Email_recipient_domains | Dominios de destinatarios | Lista de todos los dominios de los destinatarios de un mensaje. |
-| Destinatarios | Destinatarios | Email_recipients | Destinatarios | Lista de todos los destinatarios de un mensaje (para, CC, CCO). |
+| Destinatarios | Destinatarios | Email_recipients | Recipients | Lista de todos los destinatarios de un mensaje (para, CC, CCO). |
 | Problema del caso del grupo de carga de relevancia 1 |  | Relevance_load_group_case_issue_1 |  | Problema del caso de grupo de carga de relevancia 1 de la relevancia. |
 | Problema de Descripción del caso de estado de relevancia 1 |  | Relevance_status_description_Case_issue_1 |  | Descripción del estado de relevancia caso del problema 1 de la relevancia. |
 | Problema de caso de etiqueta de relevancia 1 |  | Relevance_tag_case_issue_1 |  | Caso de la etiqueta de relevancia el problema 1 de la relevancia. |

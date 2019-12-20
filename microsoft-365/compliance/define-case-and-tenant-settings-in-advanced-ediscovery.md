@@ -3,6 +3,7 @@ title: Definir la configuración de casos y espacios empresariales en eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: 'Obtenga información sobre las etiquetas, los módulos cruzados y la configuración de inquilino que puede definir en el nivel de escenario en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: 69e6e824a7c6a5698e9dc25095d4fab49e369490
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 19c653544173afe31b299b9ab5d2b4fc37415630
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091775"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806123"
 ---
 # <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definir la configuración de casos y espacios empresariales en eDiscovery avanzado de Office 365
 
@@ -49,9 +50,9 @@ Las siguientes opciones de configuración de varios módulos son opciones de may
     
   - **Página casos**
     
-3. Haga clic en **Guardar **.
+3. Haga clic en **Guardar**.
     
-## <a name="tenant-settings"></a>Configuración de inquilino
+## <a name="tenant-settings"></a>Configuración de espacios empresariales
 
 En esta sección se describen los valores de configuración del espacio empresarial de eDiscovery avanzado.
   

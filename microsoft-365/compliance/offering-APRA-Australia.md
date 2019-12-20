@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8d6314b7a2adf3f677c8343ddece9cb27bff073e
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7a402b880778a1644d63dfcdbe73ecc96f61f5be
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859250"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805543"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autoridad de la reglamentación prudencial australiano (APRA)
 
@@ -48,7 +49,7 @@ Al confiar en nuestro enfoque integral para garantizar la seguridad de riesgos e
 
 Obtenga soporte práctico para mover datos y cargas de trabajo a Azure de acuerdo con las regulaciones de APRA: [descargar una lista de comprobación de cumplimiento para las instituciones financieras en Australia](https://aka.ms/microsoftaprachecklistjun17)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -77,7 +78,7 @@ Sí. La legislación general de privacidad (que se aplica a todos los sectores, 
 - [Programa de cumplimiento de servicios financieros de Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Programa de cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servicios en la nube de Microsoft para empresas y servicios financieros](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
