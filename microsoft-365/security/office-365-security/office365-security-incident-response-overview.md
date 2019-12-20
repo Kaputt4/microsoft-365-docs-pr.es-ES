@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Esta solución le indica el aspecto que podrían tener los ataques de Cybersecurity más comunes en Office 365 y cómo responder a ellos.
-ms.openlocfilehash: d908b32a5c3cb01476ab9b7604861eb94c7a2745
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c55a5d561fec4219d29926036842836174b790da
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971598"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823832"
 ---
 # <a name="office-365-security-incident-response"></a>Respuesta a incidentes de seguridad de Office 365
 
@@ -51,11 +51,11 @@ Consulte esta sección mensualmente, ya que se agregarán más artículos a lo l
 
 ## <a name="incident-response-articles"></a>Artículos de respuesta a incidentes
 
-- [Responder a una cuenta de correo electrónico en peligro en Office 365](~/compliance/responding-to-a-compromised-email-account.md)
+- [Responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un profesional de ciberseguridad
 
-Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use el [plan de desarrollo de seguridad de Office 365-principales prioridades de los primeros 30 días, 90 días y posteriores,](security-roadmap.md) para implementar los procedimientos recomendados de Microsoft para proteger su inquilino de Office 365.
+Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use el [Plan de seguridad de Office 365: principales prioridades para los primeros 30 días, 90 días y en adelante](security-roadmap.md) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Office 365.
 
 - Tareas a realizar en los primeros 30 días.  Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
 

@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtienen los mensajes de suplantación de identidad (phishing) y cómo hacerlo para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: bbcd57f649485cb753e3917a073ffec2b94cba24
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 03f4df5f552dab48283f18ec367ee6979afd9c89
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093608"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823852"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ajuste de la protección contra la suplantación de identidad en Office 365
 
@@ -23,7 +23,7 @@ Aunque Office 365 incluye una variedad de características antiphishing que est�
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>Primero lo primero: tratar con todas las cuentas comprometidas y asegurarse de que se impide el acceso a otros mensajes de suplantación de identidad
 
-Si la cuenta de un destinatario se viera comprometida como resultado del mensaje de suplantación de identidad (phishing), siga los pasos que se indican en [responder a una cuenta de correo electrónico comprometida en Office 365](../../compliance/responding-to-a-compromised-email-account.md).
+Si la cuenta de un destinatario se viera comprometida como resultado del mensaje de suplantación de identidad (phishing), siga los pasos que se indican en [responder a una cuenta de correo electrónico comprometida en Office 365](responding-to-a-compromised-email-account.md).
 
 Si su suscripción incluye la protección contra amenazas avanzada (ATP), puede usar la [inteligencia sobre amenazas de Office 365](office-365-ti.md) para identificar a otros usuarios que también recibieron el mensaje de suplantación de identidad (phishing). Tiene opciones adicionales para bloquear los mensajes de suplantación de identidad:
 

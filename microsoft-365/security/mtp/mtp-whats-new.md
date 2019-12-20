@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b4a8908dec501ecf6c0a7932e0f5662a752a7eef
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 786d6bacdadfeb52ae24363cfdeb4a3346fcf87f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911671"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806919"
 ---
 # <a name="whats-new-in-microsoft-365-security"></a>Novedades de Seguridad de Microsoft 365
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Este tema abarcará las funciones que están generalmente disponibles (GA) en la versión más reciente de la Seguridad de Microsoft 365. 
 

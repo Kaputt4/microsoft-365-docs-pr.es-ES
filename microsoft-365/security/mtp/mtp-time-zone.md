@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6d2ae81324e7448b9d6a339e1d2bb6a75ef580ae
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 66546b689428b5663c71c82b72ec6cd008458c0d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911672"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808565"
 ---
 # <a name="set-the-time-zone-for-microsoft-threat-protection"></a>Establecer la zona horaria para la Protección contra amenazas de Microsoft
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La Protección contra amenazas de Microsoft puede mostrar información de fecha y hora usando tanto su zona horaria local como UTC. La zona horaria seleccionada se aplicará a toda la información de fecha y hora que se muestra en las características siguientes del centro de seguridad de Microsoft 365:
 - Incidentes

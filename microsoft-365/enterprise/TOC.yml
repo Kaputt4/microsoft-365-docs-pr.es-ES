@@ -1,8 +1,8 @@
-- name: Documentación y recursos de Microsoft 365 Enterprise
+- name: Documentación y recursos de Microsoft 365 para empresas
   href: index.yml
-- name: Información general de Microsoft 365 Enterprise
+- name: Información general sobre Microsoft 365 para empresas
   href: microsoft-365-overview.md
-- name: Implementar Microsoft 365 Enterprise
+- name: Implementación de Microsoft 365 para empresas
   href: deploy-microsoft-365-enterprise.md
   items:
     - name: Implementar infraestructura básica
@@ -93,7 +93,7 @@
     - name: Implementar cargas de trabajo y escenarios
       href: deploy-workloads.md
       items:
-        - name: "Microsoft\_Teams"
+        - name: Microsoft Teams
           href: teams-workload.md
         - name: Exchange Online
           href: exchangeonline-workload.md
@@ -186,7 +186,7 @@
           href: contoso-team-for-top-secret-project.md
         - name: Sitio de SharePoint para datos altamente regulados
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Cambios en el contenido de implementación de Microsoft 365 Enterprise
+    - name: Cambios en Microsoft 365 para el contenido de implementación empresarial
       href: microsoft-365-deploment-guide-changes.md
 - name: Centro de implementación de escritorios
   href: desktop-deployment-center-home.md
@@ -219,9 +219,9 @@
       href: find-help-for-modern-desktop-deployment.md
 - name: Cumplimiento de Microsoft 365
   href: ../compliance/index.yml
-- name: Seguridad de Microsoft 365
+- name: Seguridad de 365 de Microsoft
   href: ../security/index.yml
-- name: Administración de Continuidad Empresarial de Enterprise (EBCM) con servicios en la nube
+- name: Administración de la continuidad del negocio empresarial (EBCM) con servicios en la nube
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
     - name: Responsabilidades de EBCM de clientes y de asociados en la nube

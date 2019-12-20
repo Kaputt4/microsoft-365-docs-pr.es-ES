@@ -3,7 +3,7 @@ title: Multi-factor Authentication para su entorno de prueba de Microsoft 365 En
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,22 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure multi-factor Authentication mediante mensajes de texto enviados a un smartphone en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: af4ae63f52fa74084dfddf0e6861c5ae3ba2aedb
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: ea87ab6f169829d74339b64b6edb3978bea9ca9a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673266"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801405"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Multi-factor Authentication para su entorno de prueba de Microsoft 365 Enterprise
 
-*Esta guía del entorno de pruebas se puede usar tanto para entornos de prueba empresariales de Microsoft 365 Enterprise como de Office 365.*
+*Esta guía del laboratorio de pruebas puede usarse tanto para entornos de prueba de Microsoft 365 Enterprise como de Office 365 Enterprise.*
 
-Para obtener un nivel adicional de seguridad para iniciar sesión en Office 365 o cualquier servicio o aplicación que use el inquilino de Azure AD para su organización, puede habilitar la autenticación multifactor de Azure, que requiere más que un nombre de usuario y una contraseña para comprobar una cuenta. Con la autenticación multifactor, los usuarios deben confirmar una llamada telefónica, escribir un código de comprobación enviado en un mensaje de texto o especificar una contraseña de aplicación en sus teléfonos inteligentes después de escribir correctamente sus contraseñas. Pueden iniciar sesión solo después de que se haya cumplido este segundo factor de autenticación. 
+Para obtener un nivel adicional de seguridad para iniciar sesión en Microsoft 365 o cualquier servicio o aplicación que use el inquilino de Azure AD para su suscripción, puede habilitar la autenticación multifactor de Azure, que requiere más que un nombre de usuario y una contraseña para comprobar una cuenta. 
+
+Con la autenticación multifactor, los usuarios deben confirmar una llamada telefónica, escribir un código de comprobación enviado en un mensaje de texto o especificar una contraseña de aplicación en sus teléfonos inteligentes después de escribir correctamente sus contraseñas. Pueden iniciar sesión solo después de que se haya cumplido este segundo factor de autenticación. 
   
-En este artículo se describe cómo habilitar y probar la autenticación basada en mensajes de texto para una cuenta específica.
+En este artículo se describe cómo habilitar y probar la autenticación basada en mensajes de texto para una cuenta de usuario específica.
   
 Hay dos fases para configurar la autenticación multifactor para una cuenta en el entorno de prueba de Microsoft 365 Enterprise:
   
@@ -34,7 +36,9 @@ Hay dos fases para configurar la autenticación multifactor para una cuenta en e
     
 2. Habilitar y probar la autenticación multifactor para la cuenta Usuario 2.
 
-![Guías del entorno de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+3. Habilitar y probar la autenticación multifactor con una directiva de acceso condicional (opcional).
+
+![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Haga clic [aquí](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
@@ -56,7 +60,7 @@ Siga estos pasos para habilitar la autenticación multifactor para la cuenta Usu
     
 2. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
-3. En el panel usuarios activos, haga clic en **más > configuración de multi-factor Authentication**.
+3. En el panel usuarios activos, haga clic en **multi-factor Authentication**.
     
 4. En la lista, seleccione la cuenta **usuario 2** .
     
@@ -96,10 +100,42 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
     
     Debe ver el portal de Office para el usuario 2 en la pestaña **Página principal de Microsoft Office** del explorador.
 
+## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>Fase 3: habilitar y probar la autenticación multifactor con una directiva de acceso condicional
+
+*Esta fase solo se puede usar para un entorno de prueba de Microsoft 365 Enterprise.*
+
+En esta fase, se habilita la autenticación multifactor para la cuenta de usuario 3 con un grupo y una directiva de acceso condicional.
+
+A continuación, cree un nuevo grupo denominado MFAUsers y agréguele la cuenta de usuario 3.
+
+1. En la pestaña **centro de administración de 365 de Microsoft** , haga clic en **grupos** en el panel de navegación izquierdo y, después, haga clic en **grupos**.
+2. Haga clic en **Agregar un grupo**.
+3. En el panel **elegir un tipo de grupo** , seleccione **seguridad**y, a continuación, haga clic en **siguiente**.
+4. En el panel **configurar conceptos básicos** , haga clic en **Crear grupo**y, a continuación, haga clic en **cerrar**.
+5. En el panel **revisar y finalizar agregar grupo** , escriba **MFAUsers**y, a continuación, haga clic en **siguiente**.
+6. En la lista de grupos, haga clic en el grupo **MFAUsers** .
+7. En el panel **MFAUsers** , haga clic en **miembros**y, a continuación, haga clic en **Ver todos y administrar miembros**.
+8. En el panel de **MFAUsers** , haga clic en **Agregar miembros**, seleccione la cuenta de **usuario 3** y, a continuación, haga clic en **Guardar > cerrar > cerrar**.
+
+A continuación, cree una directiva de acceso condicional para exigir la autenticación multifactor para los miembros del grupo MFAUsers.
+
+1. En una pestaña nueva del explorador, vaya a [https://portal.azure.com](https://portal.azure.com).
+2. Haga clic en **Azure active directory > Security > el acceso condicional**.
+3. En el panel **acceso condicional-directivas** , haga clic en **nueva Directiva**.
+4. En el panel **nuevo** , escriba **MFA para las cuentas de usuario** en **nombre**.
+5. En la sección **asignaciones** , haga clic en **usuarios y grupos**.
+6. En la ficha **incluir** del panel **usuarios y grupos** , haga clic en **Seleccionar usuarios y grupos > usuarios y grupos > seleccione**.
+7. En el panel de **selección** , haga clic en el grupo **MFAUsers** y, a continuación, haga clic en **seleccionar > listo**.
+8. En la sección **controles de acceso** del panel **nuevo** , haga clic en **conceder**.
+9. En el panel **conceder** , haga clic en **requerir multi-factor Authentication**y, a continuación, haga clic en **seleccionar**.
+10. En el panel **nuevo** , haga clic **en** **Habilitar Directiva**y, a continuación, haga clic en **crear**.
+11. Cierre las pestañas **Azure portal** y **centro de administración de Microsoft 365** .
+
+Para probar esta Directiva, cierre sesión e inicie sesión con la cuenta de usuario 3. Se le pedirá que configure la MFA. Esto demuestra que se está aplicando la Directiva MFAUsers.
 
 Consulte el paso [configurar la autenticación multifactor](identity-secure-user-sign-ins.md#identity-mfa) en la fase de identidad para obtener información y vínculos para implementar la autenticación multifactor en producción.
     
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Explorar características de [identidad](m365-enterprise-test-lab-guides.md#identity) adicionales y funcionalidades en su entorno de prueba.
 

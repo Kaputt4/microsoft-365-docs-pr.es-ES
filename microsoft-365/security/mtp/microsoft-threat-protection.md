@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 01a81d5f4ac68d72095f86de93b727c60d28393f
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: a47ffecbf0ef1ac7dcfeef9d8cbe4e104de9ca2d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910246"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808585"
 ---
 # <a name="microsoft-threat-protection"></a>Protección contra amenazas de Microsoft
 
-**Se aplica a:**
+**Aplica para:**
 - Protección contra amenazas de Microsoft
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La protección contra amenazas de Microsoft es un conjunto de aplicaciones de defensa de la empresa, previa y posterior, unificada que se integra de forma nativa en los extremos, la identidad, el correo electrónico y las aplicaciones para detectar, prevenir, investigar y responder automáticamente a los ataques sofisticados.  
 
@@ -74,6 +74,6 @@ Entre las características para varios productos de la protección contra amenaz
 
 
 ## <a name="get-started"></a>Introducción
-Los clientes con una licencia de Microsoft 365 E5 o equivalente pueden usar la protección contra amenazas de Microsoft. Para empezar, habilite el servicio en el centro de seguridad 365 de Microsoft en [Security.Microsoft.com](https://security.microsoft.com). Para obtener más información, lea:
+Los clientes con una licencia de Microsoft 365 E5 o equivalente pueden usar la Protección contra amenazas de Microsoft. Para empezar, habilite el servicio en el centro de seguridad 365 de Microsoft en [Security.Microsoft.com](https://security.microsoft.com). Para obtener más información, lea:
 - [Requisitos de licencia](prerequisites.md#licensing-requirements)
-- [Activar la protección contra amenazas de Microsoft](mtp-enable.md)
+- [Habilitar la Protección contra amenazas de Microsoft](mtp-enable.md)

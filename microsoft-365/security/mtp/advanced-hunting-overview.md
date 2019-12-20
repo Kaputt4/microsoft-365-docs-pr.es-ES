@@ -15,23 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 03cd648a178d63b2b964e0136c105068f4d1c6ca
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 23942b1d39bacfab470d41fca1ea630ad7b80ea3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911650"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808705"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consulta que le permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar eventos de forma proactiva en su red para localizar indicadores y entidades interesantes. El acceso flexible a los datos facilita la búsqueda sin restricciones de las amenazas conocidas y potenciales.
 
-En el Centro de seguridad de Microsoft 365, la búsqueda avanzada es compatible con consultas que buscan datos de la ATP de Microsoft Defender, cubren datos de dispositivos integrados y Office 365 ATP, y proporcionan datos de mensajes de correo electrónico. Para usar la búsqueda avanzada, [active la Protección contra amenazas de Microsoft](mtp-enable.md).
+En el centro de seguridad de Microsoft 365, la búsqueda avanzada admite consultas que buscan datos de ATP de Microsoft defender, datos de cobertura de dispositivos integrados y Office 365 ATP, que proporcionan datos de los correos electrónicos. Para usar la búsqueda avanzada, [active la Protección contra amenazas de Microsoft](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Introducción a la búsqueda avanzada
 

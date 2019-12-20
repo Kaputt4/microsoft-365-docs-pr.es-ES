@@ -3,7 +3,7 @@ title: Directivas de cumplimiento de dispositivos para el entorno de prueba de M
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2018
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,18 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del laboratorio de pruebas para agregar directivas de cumplimiento de dispositivos de Intune a su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: c323779399f6f440e1f9104e6611023a18ffe59e
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 8a746f99e16444527c44267eddbaec9f5e5156eb
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694107"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801635"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Directivas de cumplimiento de dispositivos para el entorno de prueba de Microsoft 365 Enterprise
 
 *Esta guía del laboratorio de pruebas solo se puede usar para entornos de prueba de Microsoft 365 Enterprise.*
 
-Con las instrucciones de este artículo, agregará una directiva de cumplimiento de dispositivos de Intune a su entorno de prueba de Microsoft 365 Enterprise.
+Con las instrucciones de este artículo, agregará una directiva de cumplimiento de dispositivos de Intune para dispositivos Windows 10 y Office 365 ProPlus a su entorno de prueba empresarial 365 de Microsoft.
 
 ![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -48,49 +48,46 @@ En esta fase, creará una directiva de cumplimiento de dispositivos para disposi
     
 2. En una pestaña nueva del explorador, abra Azure portal en [https://portal.azure.com](https://portal.azure.com).
 
-3. En la pestaña Azure portal del explorador, en el panel de navegación, haga clic en **todos los servicios**, escriba **Intune**y, a continuación, haga clic en **Intune**.
+3. En la pestaña Azure portal del explorador, escriba **Intune** en el cuadro de búsqueda y, a continuación, haga clic en **Intune**.
     
-4. Si ve un mensaje **que indica que no ha habilitado la administración de dispositivos todavía** en la hoja de **Microsoft Intune** , haga clic en él. En la hoja **entidad de administración de dispositivos móviles** , haga clic en **Intune MDM**y, a continuación, haga clic en **elegir**. Actualice la pestaña del explorador.
+4. Si ve un mensaje **que indica que no ha habilitado la administración de dispositivos todavía** en el panel de **Microsoft Intune** , haga clic en él. En el panel **entidad de administración de dispositivos móviles** , haga clic en **Intune MDM**y, a continuación, haga clic en **elegir**. Actualice la pestaña del explorador.
     
 5. En el panel izquierdo de navegación, haga clic en **Grupos**.
     
-6. En la hoja **grupos-todos los grupos** , haga clic en **+ nuevo grupo**.
+6. En el panel **grupos todos los grupos** , haga clic en **+ nuevo grupo**.
     
-7. En la hoja **Grupo** , seleccione **Office 365** o **seguridad** para **tipo de grupo**, escriba **usuarios de dispositivos Windows 10 administrados** en **nombre**, seleccione **asignado** en **tipo de pertenencia**y, a continuación, haga clic en **crear**. 
+7. En el panel **Grupo** , seleccione **Office 365** o **seguridad** para **tipo de grupo**, escriba **usuarios de dispositivos de Windows 10 administrados** en **nombre**, seleccione **asignado** en **tipo de pertenencia**y, a continuación, haga clic en **crear**. 
     
-8. Cierre la hoja **Grupo**.
+8. Haga clic en **Microsoft Intune**. En el panel de **Microsoft Intune** , en la lista **tareas rápidas** , haga clic en **crear una directiva de cumplimiento**.
     
-11. Cierre la hoja **grupos-todos los grupos** .
+9. En el panel **perfiles de directiva de cumplimiento** , haga clic en **crear Directiva**.
     
-12. En la hoja de **Microsoft Intune** , en la lista **tareas rápidas** , haga clic en **crear una directiva de cumplimiento**.
+10. En el panel **crear Directiva** , en **nombre**, escriba **Windows 10**. En **plataforma**, seleccione **Windows 10 y versiones posteriores**, haga clic en **Aceptar** en el panel **Directiva de cumplimiento de Windows 10** y, a continuación, haga clic en **crear**. 
     
-13. En la hoja **Perfiles de directiva de cumplimiento**, haga clic en **Crear directiva**.
+11. Haga clic en **perfiles de directiva de cumplimiento**y, a continuación, en el nombre de directiva de **Windows 10** .
     
-14. En la hoja **crear Directiva** , en **nombre**, escriba **Windows 10**. En **plataforma**, seleccione **Windows 10 y versiones posteriores**, haga clic en **Aceptar** en la hoja **Directiva de cumplimiento de Windows 10** y, a continuación, haga clic en **crear**. Cierra la hoja de **Windows 10** .
+12. En el panel **Windows 10** , haga clic en **tareas**y, a continuación, haga clic en **seleccionar grupos para incluir**.
     
-15. En la hoja **perfiles de directiva de cumplimiento** , haga clic en el nombre de directiva de **Windows 10** .
+13. En el panel **seleccionar grupos para incluir** , haga clic en el grupo **usuarios de dispositivos de Windows 10 administrados** y, a continuación, haga clic en **seleccionar**.
     
-16. En la hoja de **Windows 10** , haga clic en **tareas**y, a continuación, haga clic en **seleccionar grupos para incluir**.
+14. Haga clic en **Guardar**, haga clic en **Microsoft Intune-Overview**y, a continuación, haga clic en **aplicaciones cliente** en el panel de navegación izquierdo.
     
-17. En la hoja **seleccionar grupos para incluir** , haga clic en el grupo **usuarios de dispositivos de Windows 10 administrados** y, a continuación, haga clic en **seleccionar**.
-    
-18. Haga clic en **Guardar**y, a continuación, cierre la hoja **Windows 10-asignaciones** .
-    
-19. Cierre la hoja **Perfiles de directiva de cumplimiento**.
-    
-20. En la hoja de **Microsoft Intune** , haga clic en **aplicaciones cliente** en el panel de navegación izquierdo.
-    
-21. En la hoja **aplicaciones cliente** , haga clic en **aplicaciones**y, a continuación, en **Agregar**. 
+15. En el panel **aplicaciones cliente** , haga clic en **aplicaciones**y, a continuación, en **Agregar**. 
 
-22. En la hoja **Agregar aplicación** , seleccione **tipo de aplicación**y, a continuación, seleccione **Windows 10** en **Office 365 Suite**.
+16. En el panel **Agregar aplicación** , seleccione **tipo de aplicación**y, después, seleccione **Windows 10** en **Office 365 Suite**.
 
-23. Haga clic en **configurar conjunto de aplicaciones**y, a continuación, en **Aceptar**.
+17. En el panel **Agregar aplicación** , seleccione **información del conjunto de aplicaciones**.
+ 
+18. En el panel de **información del conjunto de aplicaciones** , escriba **Office 365 ProPlus** en el nombre del **conjunto** de aplicaciones y la **Descripción del conjunto**.
+Haga clic en Aceptar.
 
-24. Haga clic en **información del conjunto de aplicaciones**, escriba **Office apps para Windows 10** en **nombre del conjunto**, **aplicaciones de Office para Windows 10** en la **Descripción del paquete**y, a continuación, haga clic en **Aceptar**.
+19. En el panel **Agregar aplicación** , seleccione **configurar conjunto de aplicaciones**y, a continuación, haga clic en **Aceptar**.
 
-25. Haga clic en **configuración del conjunto de aplicaciones**, seleccione **semestral** en **Actualizar canal**y, a continuación, haga clic en **Aceptar**.
+20. En el panel **Agregar aplicación** , seleccione **configuración del conjunto de aplicaciones**.
 
-26. En la hoja **Agregar aplicación** , haga clic en **Agregar**.
+21. En **canal de actualización**, seleccione **semestral**y, a continuación, haga clic en **Aceptar**.
+
+22. En el panel **Agregar aplicación** , haga clic en **Agregar**.
 
 Ahora tiene una directiva de cumplimiento de dispositivos para probar las aplicaciones seleccionadas en la Directiva de cumplimiento de dispositivos de **Windows 10** y para los miembros del grupo de **usuarios de dispositivos de Windows 10 administrados** . Tenga en cuenta que, al seleccionar Office 365 como tipo de grupo, se crearán recursos adicionales. 
   

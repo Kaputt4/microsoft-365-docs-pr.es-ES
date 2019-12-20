@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1f2deef2c9ffc26f604194ff2d27d5f094471021
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911658"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808715"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La tabla `EmailEvents` en el [esquema de](advanced-hunting-overview.md) búsqueda avanzada contiene información sobre eventos que implican el procesamiento de mensajes en la ATP de Office 365. Use esta referencia para crear consultas que devuelvan información de esta tabla.
 
@@ -35,7 +35,7 @@ Para obtener información sobre otras tablas en el esquema de búsqueda avanzada
 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | Fecha y hora en que se registró el evento. |
+| `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `EmailId` | cadena | Identificador único del destinatario y correo electrónico. |
 | `NetworkMessageId` | cadena | Identificador único para el correo electrónico generado por Office 365. |
 | `InternetMessageId` | cadena | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |

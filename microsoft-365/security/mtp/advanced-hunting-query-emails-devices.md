@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b374aac84b309d18a88ee7248021b50a893e120c
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: da985621c1cee3fe5aa30d961380ef3f3d83de8d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911622"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808755"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Búsqueda de amenazas en dispositivos y mensajes de correo electrónico
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La [Búsqueda avanzada](advanced-hunting-overview.md) en la Protección contra amenazas de Microsoft le permite buscar de forma proactiva amenazas en sus dispositivos Windows y en los correos electrónicos de Office 365. Éstos son algunos escenarios de búsqueda y consultas de ejemplo que puedan ayudarle a explorar la forma en que puede crear consultas que cubran tanto dispositivos como mensajes de correo electrónico.
 
@@ -51,7 +51,7 @@ EmailAttachmentInfo
 | where SenderFromAddress =~ "MaliciousSender@example.com"
 | where isnotempty(SHA256)
 | join (
-FileCreationEvents
+DeviceFileEvents
 | project FileName, SHA256
 ) on SHA256
 ```
@@ -63,11 +63,11 @@ Esta consulta busca los 10 últimos inicios de sesión realizados por destinatar
 //Find logons that occurred right after malicious email was received
 let MaliciousEmail=EmailEvents
 | where MalwareFilterVerdict == "Malware" 
-| project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
+| project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 MaliciousEmail
 | join (
-LogonEvents
-| project LogonTime = EventTime, AccountName, ComputerName
+DeviceLogonEvents
+| project LogonTime = Timestamp, AccountName, DeviceName
 ) on AccountName 
 | where (LogonTime - TimeEmail) between (0min.. 30min)
 | take 10
@@ -80,13 +80,13 @@ Los mensajes malintencionados suelen contener documentos y otros datos adjuntos 
 //Find PowerShell activities right after email was received from malicious sender
 let x=EmailEvents
 | where SenderFromAddress =~ "MaliciousSender@example.com"
-| project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
+| project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 x
 | join (
-ProcessCreationEvents
+DeviceProcessEvents
 | where FileName =~ "powershell.exe"
 //| where InitiatingProcessParentFileName =~ "outlook.exe"
-| project TimeProc = EventTime, AccountName, ComputerName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project TimeProc = Timestamp, AccountName, DeviceName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
 ) on AccountName 
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```

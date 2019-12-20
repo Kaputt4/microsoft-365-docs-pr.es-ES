@@ -1,0 +1,66 @@
+---
+title: Aprobar o rechazar acciones pendientes tras la investigación automatizada
+description: Usar el centro de actividades para administrar acciones relacionadas con investigación y respuesta automatizadas
+keywords: acción, centro, autoair, automatizado, investigación, respuesta, corrección
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: deniseb
+author: denisebmsft
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+ms.topic: conceptual
+ms.custom: autoir
+ms.openlocfilehash: edc952a0361ee8cfa6ed3df2eaf80f0fc4bf7fd5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808465"
+---
+# <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>Aprobar o rechazar acciones pendientes de investigaciones automatizadas
+
+**Se aplica a:**
+- Protección contra amenazas de Microsoft
+
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+Cuando se ejecuta una investigación automatizada, puede resultar en una o más [acciones de corrección](mtp-action-center.md#remediation-actions) que requieran la aprobación para continuar. Por ejemplo, es posible que sea necesario eliminar un clúster de mensajes de correo electrónico o quitar un archivo en cuarentena. Es importante aprobar (o rechazar) acciones pendientes lo antes posible para que las investigaciones automatizadas puedan continuar y completarse de forma oportuna. 
+
+Las acciones pendientes se pueden revisar y aprobar mediante uno de varios métodos:
+- [Usar el centro de actividades](#review-a-pending-action-in-the-action-center)
+- [Usar la vista detalles de la investigación](#review-a-pending-action-in-the-investigation-details-view)
+
+> [!NOTE]
+> Debe tener [los permisos adecuados](mtp-action-center.md#required-permissions-for-action-center-tasks) para aprobar o rechazar acciones de corrección.
+
+## <a name="review-a-pending-action-in-the-action-center"></a>Revisar una acción pendiente en el centro de actividades
+
+1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
+
+2. En el panel de navegación, elija **Centro de actividades**. 
+
+3. En el centro de actividades, en la ficha **pendiente** , seleccione un elemento de la lista. 
+
+    - Si selecciona un elemento en la columna **número de investigación** , se abrirá la página Detalles de la investigación. Allí puede ver los resultados de la investigación y, a continuación, aprobar o rechazar la acción recomendada.
+ 
+    - Si selecciona una fila de la lista, se abre un control flotante, donde puede ver información sobre el elemento. <br/>![Aprobar o rechazar una acción](../images/air-actioncenter-itemselected.png)<br/>Use los vínculos para ver una alerta asociada o una investigación y aprobar o rechazar la acción.
+
+## <a name="review-a-pending-action-in-the-investigation-details-view"></a>Revisar una acción pendiente en la vista detalles de la investigación
+
+![Detalles de la investigación](../images/mtp-air-investdetails.png)
+
+1. En la página Detalles de la [investigación](mtp-autoir-results.md) , seleccione la pestaña **acciones pendientes** (o **acciones**). los elementos que están pendientes de aprobación aparecen aquí.
+
+2. Seleccione un elemento de la lista y, a continuación, elija **aprobar** o **rechazar**.
+
+## <a name="next-steps"></a>Siguientes pasos
+
+- [Más información sobre el Centro de actividades](mtp-action-center.md)
+- [Más información sobre incidentes](incidents-overview.md)
+- [Obtener información sobre la búsqueda](advanced-hunting-overview.md)
