@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar las herramientas de flujo de trabajo en la puntuación de cumplimiento de Microsoft para administrar el cumplimiento de la organización.
-ms.openlocfilehash: 9dc3eb41b1ad686e1c9e1f0a4cf2df66ccb3ffbe
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38687634"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802143"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Trabajar con la puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -193,7 +193,7 @@ En esta página, puede ver rápidamente información importante sobre cada evalu
 
 ### <a name="default-assessments"></a>Evaluaciones predeterminadas
 
-De forma predeterminada, verá la evaluación de línea base de protección de datos 365 de Microsoft en la página evaluaciones. Si desea agregar más evaluaciones para cubrir otras regulaciones y estándares, puede administrar las evaluaciones en el administrador de cumplimiento. La puntuación de cumplimiento proporciona más de diez evaluaciones preparadas, entre las que se incluyen las de RGPD, CCPA, ISO 27001, ISO 27018, NIST 800-53, NIST 800-171, NIST CSF, CSA CCM, FFIEC, HIPAA/alta tecnología y FedRAMP.
+De forma predeterminada, verá la evaluación de línea base de protección de datos 365 de Microsoft en la página evaluaciones. La puntuación de cumplimiento también proporciona varias evaluaciones no actualizadas ([vea la lista completa](compliance-score.md#templates)). Si desea agregar más evaluaciones para cubrir otras normativas y estándares, puede hacerlo en el administrador de cumplimiento.
 
 ### <a name="managing-assessments"></a>Administración de evaluaciones
 

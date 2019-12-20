@@ -1,7 +1,7 @@
 ---
 title: Ir al Centro de seguridad y cumplimiento de Office 365
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: Para poder usar el centro de seguridad & cumplimiento, necesitará los permisos adecuados. La cuenta profesional o educativa debe tener asignado el rol de administrador global de Office 365 o haber sido asignada a uno o varios grupos de roles del centro de cumplimiento de & de seguridad por un administrador global.
-ms.openlocfilehash: 357b9c494c9b6441d801932ed2ca313c8780db68
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7dc7afb00750586b34921cce347bcf459c2cf474
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091687"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807119"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>Ir al Centro de seguridad y cumplimiento de Office 365
 

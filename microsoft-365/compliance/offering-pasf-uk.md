@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 476d1b63cfba4c3c9d31fd38c4ad526ca167f7d7
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859300"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803993"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Servicios seguros de policía (PASF) United Kingdom
 
@@ -34,7 +35,7 @@ Microsoft tiene un enfoque holístico de defensa en profundidad de la seguridad.
 
 Estas certificaciones están respaldadas por las medidas que tomamos para proteger la seguridad física de nuestros centros de recursos. Adoptamos un enfoque por capas que comienza con la forma en que diseñamos, creamos y operamos los centros de datos para controlar estrictamente el acceso físico a las áreas en las que se almacenan los datos de los clientes. Los centros de recursos administrados por Microsoft tienen niveles extensivos de protección con la aprobación de acceso necesaria en el perímetro de la institución, en el perímetro del edificio, dentro del edificio y en el suelo del centro de trabajo. Esto reduce el riesgo de que los usuarios no autorizados obtengan acceso físico a los recursos de datos y centros de datos.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)

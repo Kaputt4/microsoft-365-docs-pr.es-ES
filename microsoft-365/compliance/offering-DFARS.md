@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: f5627194ad21b73cae664c808d2bba9f4254d8b5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859980"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805253"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>Suplemento de la estrategia de adquisición federal de defensa (DFARS)
 
@@ -32,11 +33,11 @@ Los servicios de nube de Microsoft Government ayudan a los clientes de la base i
   
 Obtenga información sobre cómo acelerar la implementación de DFARS con nuestro Blueprint de Azure Security y Compliance: [descargar la matriz de responsabilidades del cliente de la DFARS de Azure: Blueprint](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 Servicios cubiertos para el nivel 5 de impacto DoD
 
-- [Azure y Azure para la Administración Pública](https://aka.ms/AzureCompliance)
+- [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
@@ -76,6 +77,6 @@ Además, las ofertas de Microsoft fuera del límite certificado por el FedRAMP q
 
 - [Suplemento de la estrategia de adquisición federal de defensa (DFARS)](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
 - [Microsoft Cloud para la Administración Pública](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Términos de servicios en línea](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Información sin clasificar controlada (CUI)](https://www.archives.gov/cui/registry/category-list)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
