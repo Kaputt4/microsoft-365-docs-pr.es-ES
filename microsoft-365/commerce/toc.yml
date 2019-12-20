@@ -35,3 +35,5 @@
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: Administrar relaciones con mis socios
       href: manage-partners.md
+    - name: Cerrar la cuenta
+      href: close-your-account.md
