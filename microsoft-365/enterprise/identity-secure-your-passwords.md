@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Necesita que sus contraseñas sean seguras y que se puedan administrar en toda la organización.
-ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746516"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801745"
 ---
 # <a name="step-2-secure-your-passwords"></a>Paso 2: Proteja sus contraseñas
 
@@ -27,7 +27,7 @@ ms.locfileid: "37746516"
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Evite contraseñas no válidas
 
-*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365*
 
 Todos los usuarios deben utilizar la [guía de contraseñas de Microsoft](https://www.microsoft.com/research/publication/password-guidance/)para crear las contraseñas de sus cuentas de usuario.
 
@@ -46,7 +46,7 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 <a name="identity-pw-reset"></a>
 ## <a name="simplify-password-resets"></a>Simplificar los restablecimientos de contraseña
 
-*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365*
 
 En esta sección, habilitará el restablecimiento de contraseña de autoservicio (SSPR) para permitir a los usuarios restablecer o desbloquear sus contraseñas o cuentas. Para alertarle acerca de abusos o usos indebidos, el sistema incluye informes detallados del seguimiento de acceso de los usuarios al sistema, además de notificaciones. Debe habilitar la reescritura de contraseña para poder implementar los restablecimientos de contraseña.
 

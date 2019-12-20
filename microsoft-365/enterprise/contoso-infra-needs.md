@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades empresariales fueron satisfechas mediante Microsoft 365 Enterprise.
-ms.openlocfilehash: 157aa17e6ea5c345c1c1c5bdc9a2588f6384277d
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: d98f401ae4a39e3e04b5840e8f76c1e3e1b1a24d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673196"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802075"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Necesidades empresariales y de infraestructura de TI de Contoso
 
@@ -112,7 +112,7 @@ Administración:
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Asignación de las necesidades empresariales de Contoso a Microsoft 365 Enterprise
 
-Antes de la implementación, el departamento de TI de Contoso determinó la siguiente asignación de las necesidades empresariales a las características de Microsoft 365 Enterprise E5:
+Antes de la implementación, el departamento de TI de Contoso determinó la siguiente asignación de las necesidades empresariales a las características de Microsoft 365 E5:
 
 ||||
 |:-------|:-----|:-----|

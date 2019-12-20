@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise para Windows 10 Enterprise.
-ms.openlocfilehash: 98dd4b71f1c2af6d72580066d73e75dfd4aa60ff
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d51392572c78edb1a21f5edc3229057b9af3f514
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627534"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801225"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Fase 3: Criterios de salida de infraestructura de Windows 10 Enterprise
 
@@ -111,7 +111,7 @@ Implementó Protección contra vulnerabilidades de seguridad de Windows Defender
 Si es necesario, el [paso 5](windows10-enable-security-features.md#windows10-sec-eg) puede ayudarle con este requisito.
 
 <a name="crit-windows10-step5c"></a>
-## <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Necesario: Usa Protección contra amenazas avanzada de Microsoft Defender (solo Microsoft 365 Enterprise E5)
+## <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-e5-only"></a>Necesario: Usa Protección contra amenazas avanzada de Microsoft Defender (solo Microsoft 365 E5)
 
 Implementó Protección contra amenazas avanzada de Microsoft Defender (ATP) para detectar, investigar y responder a las amenazas avanzadas contra su red y los dispositivos que ejecutan Windows 10 Enterprise. 
 

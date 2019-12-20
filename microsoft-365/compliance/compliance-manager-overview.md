@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 97cbc676f9de070d1532d1e56c96db0efcce8bd0
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633659"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807339"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -51,7 +51,7 @@ Los [grupos](working-with-compliance-manager.md#groups) son contenedores que per
 
 ## <a name="assessments"></a>Evaluaciones
 
-Las [evaluaciones](working-with-compliance-manager.md#assessments) son contenedores que permiten organizar los controles para las responsabilidades que comparten Microsoft y su organización para evaluar los riesgos de seguridad y cumplimiento de los servicios en la nube. Las evaluaciones le ayudan a implementar protecciones de protección de datos especificadas por un estándar de cumplimiento normativo, normas o leyes de protección de datos aplicables. Le ayudarán a distinguir la postura de protección y cumplimiento de datos con respecto al estándar de la industria seleccionado para el servicio de nube de Microsoft seleccionado. Las evaluaciones se completan mediante la implementación de controles incluidos en la evaluación que se asignan a un estándar de certificación.
+Las [evaluaciones](working-with-compliance-manager.md#assessments) son contenedores que permiten organizar los controles en función de las responsabilidades que comparten Microsoft y su organización para evaluar los riesgos de seguridad y cumplimiento de los servicios en la nube. Las evaluaciones le ayudan a implementar protecciones de protección de datos especificadas por un estándar de cumplimiento normativo, normas o leyes de protección de datos aplicables. Le ayudarán a distinguir la postura de protección y cumplimiento de datos con respecto al estándar de la industria seleccionado para el servicio de nube de Microsoft seleccionado. Las evaluaciones se completan mediante la implementación de controles incluidos en la evaluación que se asignan a un estándar de certificación.
 
 De forma predeterminada, el administrador de cumplimiento crea las siguientes evaluaciones para su organización:
 
@@ -124,7 +124,7 @@ Ya no existe un rol de **acceso de invitado** predeterminado. Se debe asignar un
   
 ## <a name="manage-evidence"></a>Administrar pruebas
 
-El administrador de cumplimiento puede almacenar pruebas de las tareas de implementación para realizar pruebas y validar los controles administrados por el cliente. La evidencia incluye documentos, hojas de cálculo, capturas de pantallas, imágenes, scripts, archivos de salida de script y otros archivos. El administrador de cumplimiento también recibe automáticamente telemetría y crea un registro de evidencia para los elementos de acción integrados con calificación segura. Los datos cargados como pruebas en el administrador de cumplimiento se almacenan en Estados Unidos en los sitios de almacenamiento en la nube de Microsoft. Estos datos se replican en regiones de Azure ubicadas en el sudeste asiático y en Europa occidental.
+El administrador de cumplimiento puede almacenar pruebas de las tareas de implementación en torno a las pruebas y la validación de controles administrados por el cliente. La evidencia incluye documentos, hojas de cálculo, capturas de pantallas, imágenes, scripts, archivos de salida de script y otros archivos. El administrador de cumplimiento también recibe automáticamente telemetría y crea un registro de evidencia para los elementos de acción integrados con calificación segura. Los datos cargados como pruebas en el administrador de cumplimiento se almacenan en Estados Unidos en los sitios de almacenamiento en la nube de Microsoft. Estos datos se replican en regiones de Azure ubicadas en el sudeste asiático y en Europa occidental.
 
 ## <a name="templates"></a>Plantillas
 
@@ -134,16 +134,18 @@ Las plantillas preconfiguradas incluidas con el administrador de cumplimiento so
 
 1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
 2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-5. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-6. [Matriz de controles de nube (CCM) de Cloud Security Alliance (CSA) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+4. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [Matriz de controles de nube (CCM) de Cloud Security Alliance (CSA) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://go.microsoft.com/fwlink/?linkid=2109077) 
-8. [](https://go.microsoft.com/fwlink/?linkid=2109078) / [tecnología](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
-9. [Moderado FedRAMP](https://go.microsoft.com/fwlink/?linkid=2108869)
-10. [RGPD de la Unión Europea](https://go.microsoft.com/fwlink/?linkid=2108870)
-11. [Ley de privacidad del consumidor de California (CCPA)-Preview](https://go.microsoft.com/fwlink/?linkid=2108871)
-12. [Línea base de protección de datos 365 de Microsoft](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+9. [](https://go.microsoft.com/fwlink/?linkid=2109078) / [tecnología](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
+10. [Moderado FedRAMP](https://go.microsoft.com/fwlink/?linkid=2108869)
+11. [RGPD de la Unión Europea](https://go.microsoft.com/fwlink/?linkid=2108870)
+12. [Ley de privacidad del consumidor de California (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (versión preliminar)
+13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / el[gobierno australiano ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (versión preliminar)
+14. [Línea base de protección de datos 365 de Microsoft](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>Puntuación de cumplimiento
 

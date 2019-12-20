@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aprenda y luego implemente Microsoft Teams en su organización.
-ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033605"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801245"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Implementar Microsoft Teams para Microsoft 365 Enterprise
 
@@ -43,7 +43,7 @@ Para el primer conjunto de funciones Teams, consulte [Chat, equipos, canales y a
 Para obtener más información sobre funciones avanzadas de Teams, consulte:
 
 - [Reuniones y Conferencias](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
-- [Voz en la nube](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (requiere Microsoft 365 Enterprise E5)
+- [Voz en la nube](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (requiere Microsoft 365 E5)
 
 Para supervisar el uso de Teams en su organización, consulte:
 

@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 'Como usuario de Office 365, puede administrar sus propios mensajes en cuarentena o de correo no deseado de dos maneras: respondiendo notificaciones de correo no deseado que se le envíen directamente (si el administrador ha configurado esta característica) o mediante la característica de cuarentena de correo no deseado en el Centro de seguridad y cumplimiento.'
-ms.openlocfilehash: c912c19571cde31c39f4ca3f44c7628ba8b29526
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: bcc9b7ed52af0e9920506aa667e51daad7f82c80
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970466"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808005"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Buscar y liberar mensajes en cuarentena como usuario de Office 365
 
@@ -36,7 +36,7 @@ Como usuario de Office 365, puede administrar los mensajes que se pusieron en cu
 2. A la izquierda, expanda **Administración de amenazas**, elija **Revisión** y luego elija **Cuarentena**.
 
     > [!TIP]
-    > Para ir directamente a la página **Cuarentena** del Centro de seguridad y cumplimiento, use esta dirección URL: [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Para ir directamente a la página de **cuarentena** en el centro de cumplimiento de seguridad &amp;, utilice esta dirección URL: [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
 De forma predeterminada, el Centro de seguridad y cumplimiento muestra todos los mensajes de correo electrónico que se han puesto en cuarentena como correo no deseado. Los mensajes están ordenados de más recientes a más antiguos según la **fecha** en que se recibió el mensaje. **Remitente**, **Asunto** y la fecha de expiración (en **Expira**) también se muestran por cada mensaje. Puede ordenar un campo haciendo clic en el encabezado de la columna correspondiente; haga clic en un encabezado de columna una segunda vez para invertir el criterio de ordenación.
 

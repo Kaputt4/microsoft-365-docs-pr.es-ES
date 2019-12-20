@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Haga que los inicios de sesión en los dispositivos Windows y en Microsoft 365 sean más seguros.
-ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370197"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801735"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Paso 3: Proteja y administre los inicios de sesión de usuario
 
@@ -28,7 +28,7 @@ ms.locfileid: "37370197"
 <a name="identity-windows-hello"></a>
 ## <a name="use-windows-hello-for-business"></a>Use Windows Hello para empresas
 
-*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365*
 
 Windows Hello para empresas en Windows 10 Enterprise reemplaza el mero uso de contraseñas por la ultrasegura autenticación de dos factores cuando inicie sesión en un dispositivo Windows. Esta es un nueva forma de inicio de sesión que vincula el dispositivo de un usuario con un factor biométrico o un PIN.
 
@@ -38,7 +38,7 @@ Para más información, consulte [Información general para Windows Hello para e
 <a name="identity-mfa"></a>
 ## <a name="set-up-azure-multi-factor-authentication"></a>Configure Azure Multi-Factor Authentication
 
-*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365*
 
 En este paso, configurará Azure Multi-Factor Authentication (MFA) para agregar un segundo nivel de seguridad en inicios de sesión de usuario y transacciones. El MFA realiza una comprobación adicional después de que los usuarios hayan escrito correctamente su contraseña. Si no usa MFA, la contraseña será el único método de verificación de identidad. El problema de las contraseñas consiste en que un atacante pueda adivinarlas fácilmente y se pueden compartir con terceros de dudosa confianza.
 

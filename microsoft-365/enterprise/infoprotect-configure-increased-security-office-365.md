@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender y configurar cómo lograr mayores niveles de seguridad con Microsoft 365.
-ms.openlocfilehash: 290b10dd8e0bf9a7180bae72669b22f3d575f914
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370177"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801685"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>Paso 3: configurar Microsoft 365 con una mayor seguridad
 
@@ -43,11 +43,11 @@ Una vez configurada, puede obtener información sobre el estado de la seguridad 
 - Protegiendo [vínculos](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) y [datos adjuntos](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments) por correo electrónico. 
 - Ofreciendo una respuesta inteligente contra la suplantación de identidad (spoofing y phishing) por correo electrónico en Exchange Online y [para los archivos de SharePoint Online, OneDrive para la Empresa y Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams). 
 
-Office 365 ATP solo está disponible con Microsoft 365 Enterprise E5.
+Office 365 ATP solo está disponible con Microsoft 365 E5.
 
 |||
 |:-------|:-----|
-|![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del laboratorio de prueba: configurar una mayor seguridad para Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guías del laboratorio de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del laboratorio de prueba: configurar una mayor seguridad para Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step3) correspondientes a este paso.

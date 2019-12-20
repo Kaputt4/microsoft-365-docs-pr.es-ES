@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda los recursos que puede usar para implementar Microsoft 365 Enterprise en su organización.
-ms.openlocfilehash: 35f5c789d4e8db13cb46a568fc58f49bce4d3c96
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031965"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801925"
 ---
-# <a name="deploy-microsoft-365-enterprise"></a>Implementar Microsoft 365 Enterprise
+# <a name="deploy-microsoft-365-for-enterprise"></a>Implementar Microsoft 365 Enterprise
 
 Microsoft 365 Enterprise es una combinación de aplicaciones de productividad basadas en la nube local y servicios con Windows 10 Enterprise que:  
 
@@ -35,17 +35,17 @@ Hay tres formas principales de implementar Microsoft 365 Enterprise:
 
 - Puede hacerlo con los ingenieros de Microsoft, mediante [FastTrack para Microsoft 365](#fasttrack-for-microsoft-365).
 - Puede hacerlo con la ayuda de los servicios de consultoría de Microsoft o un [partner de Microsoft](https://partner.microsoft.com/).
-- Puede hacerlo usted mismo con la [Guía de implementación de Microsoft 365 Enterprise](#microsoft-365-enterprise-deployment-guide).
+- Puede hacerlo usted mismo con la [Guía de implementación de Microsoft 365 Enterprise](#microsoft-365-for-enterprise-deployment-guide).
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack para Microsoft 365
 
 FastTrack es una prestación continua y reiterativa,*disponible de forma gratuita como parte de la*suscripción, proporcionada por los ingenieros de Microsoft para ayudarle a pasarse a la nube a su propio ritmo. FastTrack también le da acceso a partners cualificados para servicios adicionales. Con más de 40 000 clientes habilitados hoy en día, FastTrack le ayuda a maximizar el ROI, acelerar la implementación y aumentar la adopción en toda la organización. Vea [FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-Si quiere aprovechar FastTrack para implementar Microsoft 365 Enterprise, puede usar el [Asesor de implementación de Microsoft 365](https://aka.ms/microsoft365setupguide) de FastTrack para obtener directrices sobre cómo implementar y configurar la infraestructura de base. Debe iniciar sesión como administrador global en un espacio empresarial de Office 365 o Microsoft 365 para acceder a esta página.
+Si quiere aprovechar FastTrack para implementar Microsoft 365 Enterprise, puede usar el [Asesor de implementación de Microsoft 365](https://aka.ms/microsoft365setupguide) de FastTrack para obtener directrices sobre cómo implementar y configurar la infraestructura básica. Debe iniciar sesión como administrador global en un espacio empresarial de Office 365 o Microsoft 365 para acceder a esta página.
 
 Empiece su recorrido de implementación de un extremo a otro con FastTrack [aquí](https://fasttrack.microsoft.com/microsoft365).
 
-## <a name="microsoft-365-enterprise-deployment-guide"></a>Guía de implementación de Microsoft 365 Enterprise
+## <a name="microsoft-365-for-enterprise-deployment-guide"></a>Guía de implementación de Microsoft 365 Enterprise
 
 La guía de implementación de Microsoft 365 Enterprise le mostrará la configuración correcta y necesaria para los productos y características de Microsoft 365 Enterprise.
 
@@ -53,7 +53,7 @@ Para implementar Microsoft 365 Enterprise por su cuenta, puede:
 
 - Implementar la [infraestructura de base](deploy-foundation-infrastructure.md) necesaria para la seguridad integrada y la integración de la administración simplificada, lo que permite garantizar con mayor facilidad que el software cliente esté actualizado con las mejoras de productividad y seguridad más recientes. 
  
-  La infraestructura de base se organiza como una serie de fases numeradas que se superponen y crean un entorno que admite cargas de trabajo y escenarios de Microsoft 365 Enterprise. 
+  La infraestructura básica se organiza como una serie de fases numeradas que se superponen y crean un entorno que es compatible con las cargas de trabajo y escenarios de Microsoft 365 Enterprise. 
 
   **Si tiene una organización más pequeña o reciente**, siga las fases en orden para crear la infraestructura metódicamente.
 
@@ -83,15 +83,15 @@ Con las TLG, puede aprender por su cuenta, demostrar, personalizar o crear una p
 
 Para obtener más información, vea [Guías del laboratorio de pruebas de Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md).
 
-![Guías del entorno de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 
-Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, vea [Iniciar la transición de su empresa a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, vea el póster [Iniciar la transición de su empresa a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Inicie la transición de su empresa a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-Este póster de dos páginas explica una forma rápida de realizar un inventario de su infraestructura existente y conseguir las instrucciones para moverse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, tales como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
+Este póster de dos páginas es una forma rápida de realizar un inventario de su infraestructura existente y conseguir las instrucciones para moverse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, tales como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
 
 También [puede descargar el póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) de transición e imprimirlo en formatos carta, oficio o tabloide (11 x 17).
 
@@ -99,9 +99,9 @@ También [puede descargar el póster](https://github.com/MicrosoftDocs/microsoft
 
 Use estos recursos para comprender cómo otras personas han implementado y usan Microsoft 365 Enterprise.
 
-### <a name="how-customers-use-microsoft-365-enterprise"></a>Cómo los clientes usan Microsoft 365 Enterprise
+### <a name="how-customers-use-microsoft-365-for-enterprise"></a>Cómo los clientes usan Microsoft 365 Enterprise
 
-Use el sitio de casos de clientes para ver cómo usan Microsoft los clientes de Microsoft 365 Enterprise.
+Use el sitio de casos de clientes para ver cómo usan Microsoft 365 Enterprise los clientes de Microsoft.
 
 1. Vaya a [https://customers.microsoft.com/](https://customers.microsoft.com/) y haga clic en **Buscar**.
 2. En el panel izquierdo, seleccione su idioma en **Idioma**.
@@ -109,7 +109,7 @@ Use el sitio de casos de clientes para ver cómo usan Microsoft los clientes de 
 4. Seleccione **Microsoft 365** en **Producto**.
 5. Haga clic en una tarjeta para consultar el caso práctico del cliente.
 
-### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
+### <a name="how-microsoft-uses-microsoft-365-for-enterprise"></a>Cómo usar Microsoft 365 Enterprise
 
 Definir una cultura digital es una prioridad principal para cada líder que se esfuerza por fomentar un lugar de trabajo moderno. Microsoft 365 se diseñó para admitir este tipo de cambio cultural para que los líderes puedan ayudar a todos los usuarios de sus empresas a desatar la creatividad y promover la colaboración. El establecimiento de la infraestructura base de Microsoft ha provocado exactamente este tipo de cambio de la cultura digital. La implementación de Microsoft 365 Enterprise nos ha permitido implementar la tecnología de colaboración, como Microsoft Teams y Exchange Online, y compartir los datos confidenciales en línea en sitios de intranet seguros de SharePoint.
 
@@ -120,9 +120,9 @@ Obtenga información sobre cómo Core Services Engineering and Operations (anter
 > [!Note]
 > Esta característica solo está disponible en inglés.
 
-### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Cómo Contoso Corporation implementó Microsoft 365 Enterprise
+### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Cómo Contoso Corporation implementó Microsoft 365 Enterprise
 
-Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Vea cómo se implementó [Microsoft 365 Enterprise para Contoso Corporation](contoso-case-study.md) y cómo la compañía ha tomado importantes decisiones sobre el diseño y los detalles de implementación de redes, identidades, Windows 10 Enterprise, Office 365 ProPlus, administración de dispositivos móviles, protección de la información y seguridad. 
+Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Vea cómo se implementó [Microsoft 365 Enterprise para Contoso](contoso-case-study.md) y cómo la compañía ha tomado importantes decisiones sobre el diseño y los detalles de implementación de redes, identidades, Windows 10 Enterprise, Office 365 ProPlus, administración de dispositivos móviles, protección de la información y seguridad. 
 
 ## <a name="stay-current-with-deployment-content"></a>Manténgase al día con el contenido de implementación
 

@@ -1,4 +1,4 @@
-Vea también [Requisitos previos](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) para obtener recomendaciones adicionales de infraestructuras de identidades.
+Vea también [Requisitos previos](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites) para obtener recomendaciones adicionales de infraestructuras de identidades.
 
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>Obligatorio: Las cuentas de administrador global están protegidas 
@@ -14,7 +14,7 @@ Si es necesario, el [Paso 1](../identity-create-protect-global-admins.md#identit
 Siga estos pasos para comprobar que protegió las cuentas de administrador global:
 
 1. Ejecute el siguiente comando de Active Directory de Azure PowerShell para Graph en el símbolo de sistema de PowerShell: Solo debería ver la lista de cuentas de administrador global dedicadas.
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. Inicie sesión en Office 365 con cada una de las cuentas del paso 1. Cada inicio de sesión tiene que exigir la Azure Multi-Factor Authentication y el método más seguro de autenticación secundaria disponible en su organización.
@@ -93,7 +93,7 @@ Si es necesario, el [paso 3](../identity-secure-user-sign-ins.md#identity-mfa) p
 5.  Elimine la cuenta de usuario de prueba.
 
 <a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>Opcional: Azure AD Identity Protection está habilitado para proteger contra riesgos de credenciales (sólo Microsoft 365 Enterprise E5)
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>Opcional: Azure AD Identity Protection está habilitado para proteger contra riesgos de credenciales (sólo Microsoft 365 E5)
 
 Habilitó Azure AD Identity Protection para:
 

@@ -1,5 +1,6 @@
 ---
-title: Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)
+title: Cumplimiento de la comunicación (versión preliminar)
+description: Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
-ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 2e54a9d6e0cb74d7e58cda9869548214a7c69582
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633669"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807359"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)
 
@@ -93,7 +93,7 @@ Los nuevos paneles interactivos para alertas, coincidencias de directivas, accio
 
 Las directivas de cumplimiento de comunicaciones examinan y capturan mensajes en varios canales de comunicación para ayudarle a revisar y corregir rápidamente los problemas de cumplimiento:
 
-- **Microsoft Teams**: las comunicaciones de chat y los datos adjuntos asociados para canales públicos y privados de [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) y chats individuales son compatibles con el cumplimiento de comunicaciones como origen de canal independiente o con otros servicios de Microsoft 365. Las directivas ahora analizan automáticamente todos los canales y equipos de Microsoft Teams para determinados usuarios definidos en una directiva, lo que elimina la necesidad de mantener una lista de asignación independiente para las asignaciones de Microsoft Teams.
+- **Microsoft Teams**: las comunicaciones de chat para canales públicos y privados de [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) y chats individuales se admiten en el cumplimiento de la comunicación como origen de canal independiente o con otros servicios de Microsoft 365. Las directivas ahora analizan automáticamente todos los canales y equipos de Microsoft Teams para determinados usuarios definidos en una directiva, lo que elimina la necesidad de mantener una lista de asignación independiente para las asignaciones de Microsoft Teams.
 - **Exchange Online**: todos los buzones hospedados en [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) en su organización de 365 de Microsoft tienen derecho a análisis. Los correos electrónicos y datos adjuntos que cumplen las condiciones de la Directiva de cumplimiento están disponibles instantáneamente para la supervisión y en los informes de supervisión. Exchange Online es ahora un canal de origen opcional y ya no es necesario en las directivas de cumplimiento de comunicaciones.
 - **Skype empresarial online**: las directivas de cumplimiento de comunicaciones admiten el análisis de comunicaciones de chat y los datos adjuntos asociados en [Skype empresarial online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Orígenes de terceros**: puede examinar mensajes de orígenes de [terceros](archiving-third-party-data.md) para los datos importados en buzones de la organización de Microsoft 365. El cumplimiento de la comunicación admite conexiones a varias plataformas populares, entre las que se incluyen los Bloomberg, Facebook, Twitter y otros usuarios instantáneos.
@@ -111,6 +111,9 @@ La identificación y resolución de problemas de cumplimiento con el cumplimient
 ### <a name="configure"></a>Configurar
 
 En este paso del flujo de trabajo, se identifican los requisitos de cumplimiento y se configuran las directivas de cumplimiento de comunicaciones aplicables. Las plantillas de Directiva son una forma excelente de configurar rápidamente una nueva Directiva de cumplimiento, pero también modificar y actualizar rápidamente las directivas a medida que cambian sus requisitos. Por ejemplo, es posible que desee probar rápidamente una directiva en busca de lenguaje ofensivo y Antiacoso en las comunicaciones de un pequeño grupo de usuarios antes de configurar una directiva para todos los usuarios de la organización.
+
+> [!Important]
+> De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de comunicaciones. Para habilitar los permisos para las características de cumplimiento de comunicaciones, consulte [hacer que el cumplimiento de la comunicación esté disponible en su organización](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required).
 
 Puede elegir entre las siguientes plantillas de directiva en el centro de cumplimiento de Microsoft 365:
 

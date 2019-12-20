@@ -1,5 +1,5 @@
 ---
-title: Archivado de datos de terceros en Office 365
+title: Archivar datos de terceros
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Los administradores pueden importar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a los buzones de la organización de Office 365. Esto le permite archivar datos de Facebook, Twitter y otros orígenes de datos de terceros en Office 365. A continuación, puede usar y aplicar las características de cumplimiento de Office 365 (por ejemplo, retenciones legales, exhibición de documentos electrónicos, archivado local y directivas de retención) para los datos de terceros.
-ms.openlocfilehash: 084cacf1c2bef8b5786e6dba804f9a1e87001338
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 10ec436887816080716ecd8870e2b2da8021e9af
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615590"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807469"
 ---
-# <a name="archive-third-party-data-in-office-365"></a>Archivado de datos de terceros en Office 365
+# <a name="archive-third-party-data"></a>Archivar datos de terceros
 
 Office 365 permite a los administradores importar y archivar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, a los buzones de la organización de Office 365. Entre los ejemplos de orígenes de datos de terceros que puede importar a Office 365 se incluyen los siguientes servicios: 
   

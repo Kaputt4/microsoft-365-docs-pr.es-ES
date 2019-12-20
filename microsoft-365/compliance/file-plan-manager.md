@@ -1,7 +1,7 @@
 ---
 title: Información general sobre el administrador del plan de archivos
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,25 +14,31 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.'
-ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a79f24beb83c27873824973410daff953e989175
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092550"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805893"
 ---
 # <a name="overview-of-file-plan-manager"></a>Información general sobre el administrador del plan de archivos
 
-El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.
+El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación. 
+
+Para acceder al administrador del plan de archivos en el centro de seguridad y cumplimiento, vaya a **Administración de registros** > **Plan de archivos**.
 
 ![Página del plan de archivos](media/file-plan-page.png)
 
 ## <a name="accessing-file-plan-manager"></a>Acceder al administrador del plan de archivos
 
 Hay dos requisitos para obtener acceso al administrador del plan de archivos, son:
+
 - Una suscripción de Office 365 Enterprise E5
-- El usuario tiene asignado uno de los siguientes roles del Centro de seguridad y cumplimiento:
+
+- El usuario tiene asignado uno de los siguientes roles en el centro de seguridad y cumplimiento:
+    
     - Administrador de retención
+    
     - Administrador de retención con permiso de vista
 
 ## <a name="default-retention-labels-and-label-policy"></a>Etiquetas de retención predeterminadas y directiva de etiquetas
@@ -58,7 +64,7 @@ El administrador del plan de archivos facilita ver y revisar la configuración d
 
 Tenga en cuenta que las etiquetas de retención creadas fuera del plan de archivos estarán disponibles en el plan de archivos y viceversa.
 
-En la pestaña **Etiquetas del plan de archivos**, están disponibles la siguiente información adicional y funciones:
+En la pestaña **Etiquetas** del plan de archivos, están disponibles la siguiente información adicional y estas funciones:
 
 ### <a name="label-settings-columns"></a>Columnas de configuración de etiqueta
 
@@ -85,15 +91,15 @@ En la pestaña **Etiquetas del plan de archivos**, están disponibles la siguien
 
 ### <a name="retention-label-file-plan-descriptors-columns"></a>Columnas de descriptores del plan de archivos de las etiquetas de retención
 
-Ahora puede incluir más información en la configuración de las etiquetas de retención. Insertar descriptores del plan de archivos en las etiquetas de retención mejorará la administración y la organización de su plan de archivos.
+Ahora puede incluir más información en la configuración de sus etiquetas de retención. Cuando se insertan descriptores del plan de archivos en las etiquetas de retención, se facilita la administración y mejora  la organización del plan de archivos.
 
-Para comenzar, el administrador del plan de archivos proporciona algunos valores de fábrica para: función o departamento, categoría, tipo de autoridad y aprovisionamiento o cita. Puede agregar nuevos archivos valores descriptores del plan de archivos al crear o editar una etiqueta de retención.
+Para comenzar, el administrador del plan de archivos proporciona algunos valores de fábrica para función o departamento, categoría, tipo de autoridad y aprovisionamiento o cita. Puede agregar nuevos valores para los descriptores del plan de archivos al crear o editar una etiqueta de retención. También puede especificar los descriptores del plan de archivos al importar las etiquetas de retención al plan de archivos. 
 
 Esta es una vista del paso de descriptores del plan de archivos al crear o editar una etiqueta de retención.
 
 ![Descriptores del plan de archivos](media/file-plan-descriptors.png)
 
-Esta es una vista de las columnas de descriptores del plan de archivos en la pestaña de etiquetas del administrador del plan de archivos.
+Esta es una vista de las columnas de descriptores del plan de archivos en la pestaña **Etiquetas** del administrador del plan de archivos.
 
 ![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
 
@@ -101,7 +107,7 @@ Esta es una vista de las columnas de descriptores del plan de archivos en la pes
 
 Desde el administrador del plan de archivos, puede exportar los detalles de todas las etiquetas de retención a un archivo .csv para facilitar el revisiones de cumplimiento periódicas con partes interesadas del gobierno de datos de su organización.
 
-Para exportar todas las etiquetas de retención, vaya al **Administrador del plan de archivos** \> **Acciones del plan de archivos** \> **Exportar etiquetas**.
+Para exportar todas las etiquetas de retención, en la página **Plan de archivos**, vaya a **Acciones del plan de archivos**\> **Exportar etiquetas**.
 
 ![Opción para exportar el plan de archivos](media/file-plan-export-labels-option.png)
 
@@ -109,52 +115,58 @@ Se abrirá un archivo *.csv que contiene todas las etiquetas de retención exist
 
 ![Archivo CSV que muestra todas las etiquetas de retención](media/file-plan-csv-file.png)
 
-## <a name="import-retention-labels-into-your-file-plan"></a>Importar las etiquetas de retención en el plan de archivos
+## <a name="import-retention-labels-into-your-file-plan"></a>Importar las etiquetas de retención al plan de archivos
 
-Desde el administrador del plan de archivos, puede importar en masa nuevas etiquetas de retención así como modificar las etiquetas de retención existentes.
+En el administrador del plan de archivos, puede importar en masa nuevas etiquetas de retención y modificar las etiquetas de retención existentes.
 
-Para importar nuevas etiquetas de retención y actualizar las etiquetas de retención existentes, vaya a **Administrador del plan de archivos** \> **Acciones del plan de archivos** \> **Importar etiquetas**.
+Cómo importar nuevas etiquetas de retención y modificar las etiquetas de retención existentes: 
 
-![Opción para importar el plan de archivos](media/file-plan-import-labels-option.png)
+1. En la página **Plan de archivos**, vaya a **Acciones del plan de archivos** > **Importar etiquetas**.
 
-![Opción para descargar una plantilla de plan de archivos en blanco](media/file-plan-blank-template-option.png)
+   ![Opción para importar el plan de archivos](media/file-plan-import-labels-option.png)
 
-Descargue una plantilla en blanco (o empiece desde una exportación de su plan actual del archivo).
+   ![Opción para descargar una plantilla de plan de archivos en blanco](media/file-plan-blank-template-option.png)
 
-![Plantilla en blanco del plan de archivos abierta en Excel](media/file-plan-blank-template.png)
+2. Descargue una plantilla en blanco para importar nuevas etiquetas de retención. Como alternativa, puede empezar con el archivo .csv que se exporta al exportar las etiquetas de retención existentes en su organización.
 
-Complete la plantilla. En esta tabla se muestran los valores válidos.
+   ![Plantilla en blanco del plan de archivos abierta en Excel](media/file-plan-blank-template.png)
 
-|**Property**|**Tipo**|**Valores válidos**|
-|:-----|:-----|:-----|
-|LabelName|Cadena|Si el valor contiene espacios, escríbalo entre comillas (").|
-|Comment|Cadena|Si el valor contiene espacios, escríbalo entre comillas ("). |
-|Notes|Cadena|Personalizado|
-|IsRecordLabel|Cadena|$True: La etiqueta es una etiqueta de registro.</br>$False: La etiqueta no es una etiqueta de registro. Este es el valor predeterminado.|
-|RetentionAction|Cadena|Delete</br>Keep</br>KeepAndDelete |
-|RetentionDuration|Cadena|Esta propiedad especifica la cantidad de días que se va a conservar el contenido. Los valores válidos son:</br>Un número entero positivo.</br>El valor es ilimitado.|
-|RetentionType|Cadena|Esta propiedad especifica si se calcula la duración de retención desde la fecha de creación de contenidos, desde la fecha etiquetado o desde la fecha de la última modificación. Los valores válidos son:</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
-|ReviewerEmail|SmtpAddress[]|Esta propiedad especifica la dirección de correo electrónico del revisor para las acciones de retención Delete y KeepAndDelete. Puede especificar varias direcciones de correo electrónico separadas por comas.|
-|ReferenceId|Cadena|Personalizado|
-|DepartmentName|Cadena|Personalizado|
-|Categoría|Cadena|Personalizado|
-|SubCategory|Cadena|Personalizado|
-|AuthorityType|Cadena|Personalizado|
-|CitationName|Cadena|Personalizado|
-|CitationUrl|Cadena|Personalizado|
-|CitationJurisdiction|Cadena|Personalizado|
-|Regulatory|Cadena|Personalizado|
-|EventType|Cadena|Esta propiedad especifica la regla de retención que está asociada a la etiqueta. Puede usar cualquier valor que identifique de forma exclusiva la regla. Por ejemplo:</br>Nombre</br>Nombre completo (DN)</br>GUID </br>Puede usar el cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/es-ES/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) para ver las reglas de retención disponibles.|
+3. Complete la plantilla. A continuación, se describen las propiedades y los valores válidos para cada propiedad en la plantilla del plan de archivos.<br/>
 
-![Plantilla del plan de archivos con información rellenada](media/file-plan-filled-out-template.png)
+   |**Propiedad**|**Tipo**|**Valores válidos**|
+   |:-----|:-----|:-----|
+   |LabelName|Cadena|Esta propiedad especifica el nombre de la etiqueta de retención.|
+   |Comentario|Cadena|Use esta propiedad para agregar una descripción sobre la etiqueta de retención para administradores. Esta descripción solo se mostrará a los administradores que administren la etiqueta en el centro de seguridad y cumplimiento.|
+   |Notas|Cadena|Use esta propiedad para agregar una descripción sobre la etiqueta de retención para usuarios. Esta descripción aparece cuando los usuarios mueven el puntero sobre la etiqueta en aplicaciones como Outlook, SharePoint y OneDrive. Si deja esta propiedad en blanco, se muestra una descripción predeterminada que explica la configuración de retención de la etiqueta. |
+   |IsRecordLabel|Cadena|Esta propiedad especifica si la etiqueta es una etiqueta de registro. Los elementos etiquetados con una etiqueta de registro se declaran como registros. Los valores válidos son:</br>**TRUE**: la etiqueta es una etiqueta de registro. Tenga en cuenta que no se pueden eliminar los elementos declarados como registros. </br>**FALSE**: la etiqueta no es una etiqueta de registro. Este es el valor predeterminado.|
+   |RetentionAction|Cadena|Esta propiedad especifica la acción que se llevará a cabo cuando expire el valor especificado por la propiedad RetentionDuration. Los valores válidos son:</br>**Delete**: se eliminan los elementos anteriores al valor especificado por la propiedad RetentionDuration.</br>**Keep**: se conservan los elementos durante el tiempo que especifica la propiedad RetentionDuration y, al expirar el período de duración, no se ejecuta ninguna acción. </br>**KeepAndDelete**: se conservan los elementos durante el tiempo que especifica la propiedad RetentionDuration y, al expirar el período de duración, se eliminan   |
+   |RetentionDuration|Cadena|Esta propiedad especifica la cantidad de días que se va a conservar el contenido. Los valores válidos son:</br>**Unlimited**: los elementos se conservarán de forma indefinida. </br>***n***: un entero positivo, por ejemplo,**365**. 
+   |RetentionType|Cadena|Esta propiedad especifica si se calcula la duración de retención desde la fecha de creación de contenidos, desde la fecha del evento, desde la fecha de etiquetado o desde la fecha de la última modificación. Los valores válidos son:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
+   |ReviewerEmail|SmtpAddress|Al rellenar esta propiedad, se activará una revisión de disposición cuando expire la duración de la retención. Esta propiedad especifica la dirección de correo electrónico del revisor para las acciones de retención **Delete** y **KeepAndDelete** Puede incluir la dirección de correo electrónico de usuarios individuales, grupos de seguridad o distribución o grupos de Office 365. Puede especificar varias direcciones de correo electrónico separadas por comas.|
+   |ReferenceId|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Reference Id**.| 
+   |DepartmentName|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Function/Department**.|
+   |Categoría|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor **Categoría** del plan de archivos.|
+   |SubCategory|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Sub category**.|
+   |AuthorityType|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Authority type**.|
+   |CitationName|Cadena|Esta propiedad especifica el nombre de la cita que se muestra en el descriptor del plan de archivos **Provision/citation**. Por ejemplo, "Ley Sarbanes-Oxley de 2002". |
+   |CitationUrl|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Provision/citation**.|
+   |CitationJurisdiction|Cadena|Esta propiedad especifica la jurisdicción o agencia que se muestra en el descriptor del plan de archivos**Provision/citation**. Por ejemplo, "Comisión de Bolsa y Valores de Estados Unidos (SEC)". |
+   |Regulatory|Cadena|Se deja en blanco. Esta propiedad no se usa en este momento.|
+   |EventType|Cadena|Esta propiedad especifica la regla de retención que está asociada a la etiqueta. Puede usar cualquier valor que identifique de forma exclusiva la regla. Por ejemplo:</br>**Nombre**</br>**Nombre distintivo (DN)**</br>**GUID** </br>Puede usar el cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) para ver las reglas de retención disponibles. Tenga en cuenta que, si exporta etiquetas de una organización que utiliza Office 365, no podrá usar los valores de la propiedad EventType de esa organización al importar  las etiquetas a otra organización que utilice Office 365. Esto sucede porque los valores de EventType son únicos para cada organización. |
+   |||
 
-Cargue la plantilla rellenada y el administrador del plan de archivos validará las entradas y mostrará las estadísticas de importación.
+   A continuación hay un ejemplo de una plantilla con información sobre las etiquetas de retención.
 
-![Estadísticas de importación del plan de archivos](media/file-plan-import-statistics.png)
+   ![Plantilla del plan de archivos con información ya completada](media/file-plan-filled-out-template.png)
 
-En caso de que se produzca un error de validación, la importación del plan de archivo seguirá validando todas las entradas del archivo de importación y mostrará todos los errores que hacen referencia a los números de línea/fila en el archivo de importación. Copie los resultados de error mostrados para que pueda volver fácilmente al archivo de importación y corregir los errores. 
+4. En el paso 3, en la página del Asistente para planes de importación de archivos, haga clic en **Buscar archivos** para cargar la plantilla completada. 
 
-Una vez completada la importación, vuelva al administrador del plan de archivos para asociar las nuevas etiquetas de retención a las directivas de etiquetas de retención nuevas o existentes.
+   El administrador del plan de archivos validará las entradas y mostrará las estadísticas de importación.
 
-![Opción para publicar etiquetas](media/file-plan-publish-labels-option.png)
+   ![Estadísticas de importación del plan de archivos](media/file-plan-import-statistics.png)
 
+   En caso de que se produzca un error de validación, la importación del plan de archivo seguirá validando todas las entradas del archivo de importación y mostrará todos los errores que hacen referencia a los números de línea/fila en el archivo de importación. Copie los resultados de error que se muestran para que pueda volver fácilmente al archivo de importación y corregir los errores.
+
+5. Una vez completada la importación, vuelva al administrador del plan de archivos para asociar las nuevas etiquetas de retención a directivas de etiquetas de retención nuevas o existentes.
+
+   ![Opción para publicar etiquetas](media/file-plan-publish-labels-option.png)

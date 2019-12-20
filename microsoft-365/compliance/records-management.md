@@ -1,7 +1,7 @@
 ---
-title: Administración de registros en Microsoft 365
-ms.author: laurawi
-author: laurawi
+title: Administración de registros
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la administración de registros de Microsoft 365, puede aplicar las programaciones de retención específicas de su organización en un plan de archivos para administrar la retención, la declaración de registros y la eliminación para dar soporte al ciclo de vida completo del contenido.
-ms.openlocfilehash: 97b5c1981cf2596554571e8b53059aa718aa561c
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: c3403dbe69414ddb23fdc2dea3e39be94a82f135
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440677"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803777"
 ---
 # <a name="records-management-in-microsoft-365"></a>Administración de registros en Microsoft 365
 
@@ -26,13 +26,13 @@ Las organizaciones de todo tipo requieren una solución de administración de re
 
 La solución de administración de registros es compatible con los siguientes elementos:
 
+- **Etiquetar contenido como un registro**. Publique [etiquetas de registro](records.md) para ser aplicadas por los usuarios finales o [aplique automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) etiquetas de registro a los elementos que contengan información confidencial, palabras clave o tipos de contenido específicos.
+
 - **Migrar y administrar su plan de retención con el plan de archivos** y usar el [administrador del plan de archivos](file-plan-manager.md) para incorporar su plan de retención existente, o crear uno nuevo con los descriptores de archivo y las jerarquías de expansión.
 
 - **Establecer directivas de retención y eliminación en la etiqueta de registro**. Definir períodos de [retención](retention-policies.md#retaining-content-for-a-specific-period-of-time) y [eliminación](retention-policies.md#deleting-content-thats-older-than-a-specific-age) en función de una serie de factores, como la fecha de la última modificación o creación.
 
 - **Activar retención basada en eventos** con [retención basada en eventos](event-driven-retention.md).
-
-- **Etiquetar como un registro**. Publique [etiquetas de registro](labels.md#using-retention-labels-for-records-management) para ser aplicadas por los usuarios finales o [aplique automáticamente etiquetas de registro](labels.md#applying-a-retention-label-automatically-based-on-conditions) a elementos que contengan información confidencial, palabras clave o tipos de contenido específicos.
 
 - **Revisar y validar la eliminación** con [la revisión de eliminación](disposition-reviews.md).
 

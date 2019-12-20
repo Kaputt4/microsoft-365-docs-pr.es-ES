@@ -1,5 +1,5 @@
 ---
-title: Estrategias de implementación de la infraestructura base de Microsoft 365 Enterprise
+title: Estrategias de implementación de la infraestructura base de Microsoft 365 para empresas
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,24 +12,24 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Conozca algunas de las formas en las que puede implementar las fases de la infraestructura base de Microsoft 365 Enterprise.
-ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+description: Conozca algunas de las formas en las que puede implementar las fases de la infraestructura base de Microsoft 365 para empresas.
+ms.openlocfilehash: 354ce1a30b91f602049143dc0e93fe01629e6b04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369441"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801895"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Estrategias de implementación de la infraestructura base de Microsoft 365 Enterprise
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Estrategias de implementación de la infraestructura base de Microsoft 365 para empresas
 
-Hay varias formas de implementar las fases de la [infraestructura base](deploy-foundation-infrastructure.md) de Microsoft 365 Enterprise y distribuir las funciones, el software y los servicios a los usuarios. Para empezar a trabajar en la administración de proyectos de esta tarea, que puede ser grande y compleja en función del tamaño de la organización y su infraestructura existente, tenga en cuenta las siguientes estrategias de implementación:
+Hay varias formas de implementar las fases de la [infraestructura base](deploy-foundation-infrastructure.md) de Microsoft 365 para empresas y distribuir las funciones, el software y los servicios a los usuarios. Para empezar a trabajar en la administración de proyectos de esta tarea, que puede ser grande y compleja en función del tamaño de la organización y su infraestructura existente, tenga en cuenta las siguientes estrategias de implementación:
 
 - Implementación de serie:
 - Implementación paralela con implementación de usuarios que no se superpone
 - Implementación paralela con implementación de usuarios que se superpone
 - Infraestructura inicial e implementación de la configuración completa
 
-Utilice estas estrategias para obtener ideas sobre cómo administrar todo el proyecto y obtener más rápidamente las ventajas empresariales de Microsoft 365 Enterprise
+Utilice estas estrategias para obtener ideas sobre cómo administrar todo el proyecto y obtener más rápidamente las ventajas empresariales de Microsoft 365 para empresas.
 
 >[!Note]
 >Este artículo contiene supuestos y simplificaciones como una manera coherente de describir las estrategias de implementación. Estas estrategias de implementación son generalizadas y no pretenden implicar períodos de tiempo concretos, ni se aplican a todas las organizaciones y situaciones.
@@ -74,14 +74,14 @@ Con una implementación de serie, se distribuye completamente una fase, lo que p
 - Dependencias de la tecnología de TI
 - Administración de cambios empresariales y resistencia del usuario final
 
-Este diagrama de Gantt muestra una implementación de serie simplificada de las fases 2 a la 6 de la infraestructura base de Microsoft 365 Enterprise.
+Este diagrama de Gantt muestra una implementación de serie simplificada de las fases 2 a la 6 de la infraestructura base de Microsoft 365 para empresas.
 
 ![La implementación en serie de las fases 2-6 de la infraestructura básica](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 Para simplificar la explicación y el ejemplo, se presupone que se tardará lo mismo en cada fase y cada segmento de implementación en cada fase.
 
 >[!Note]
->Fase 1: La creación de la red de la infraestructura base de Microsoft 365 Enterprise es una fase exclusiva del departamento de TI. Los usuarios obtienen las ventajas de una conectividad optimizada con los recursos de nube de Microsoft pero no están obligados a conseguirla.
+>Fase 1: La creación de la red de la infraestructura base de Microsoft 365 para empresas es una fase exclusiva del departamento de TI. Los usuarios obtienen las ventajas de una conectividad optimizada con los recursos de nube de Microsoft pero no están obligados a conseguirla.
 >
 
 Esta es una experiencia de usuario piloto simplificada como un ejemplo:
@@ -104,7 +104,7 @@ Esta es una experiencia de usuario final simplificada como un ejemplo:
 
 El resultado es una cadencia de 90 días entre implementaciones sucesivas de usuarios.
 
-La desventaja de esta estrategia de implementación es que se puede tardar mucho en implementar por completo la infraestructura base de Microsoft 365 Enterprise.
+La desventaja de esta estrategia de implementación es que se puede tardar mucho en implementar por completo la infraestructura base de Microsoft 365 para empresas.
 
 ### <a name="parallel-deployment-with-non-overlapping-user-rollout-parallel-1"></a>Implementación paralela con implementación de usuarios que no se superpone (paralela 1)
 
@@ -134,7 +134,7 @@ Esta es una experiencia de usuario final simplificada como un ejemplo:
 
 El resultado es una cadencia de 60 días entre implementaciones sucesivas de usuarios.
 
-La ventaja de esta estrategia de implementación es que se puede tardar menos en implementar por completo la infraestructura base de Microsoft 365 Enterprise, sin que el departamento de TI y los usuarios tengan que enfrentarse a varias implementaciones a la vez.
+La ventaja de esta estrategia de implementación es que se puede tardar menos en implementar por completo la infraestructura base de Microsoft 365 para empresas, sin que el departamento de TI y los usuarios tengan que enfrentarse a varias implementaciones a la vez.
 
 ### <a name="parallel-deployment-with-overlapping-user-rollout-parallel-2"></a>Implementación paralela con implementación de usuarios que se superpone (paralela 2)
 
@@ -172,7 +172,7 @@ Esta es una experiencia de usuario final simplificada como un ejemplo:
 
 El resultado es una cadencia de 30 días entre implementaciones sucesivas de usuarios.
 
-La ventaja de esta estrategia de implementación es que puede tardar menos en completarse la implementación de la infraestructura de Microsoft 365 Enterprise Foundation, sin necesidad de que los usuarios finales se ocupen de varias implementaciones de forma simultánea. Sin embargo, los usuarios no pueden descansar entre fases sucesivas.
+La ventaja de esta estrategia de implementación es que puede tardar menos en completarse la implementación de la infraestructura de base de Microsoft 365 para empresas, sin necesidad de que los usuarios finales se ocupen de varias implementaciones de forma simultánea. Sin embargo, los usuarios no pueden descansar entre fases sucesivas.
 
 ### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>Infraestructura inicial e implementación de la configuración completa
 
@@ -190,6 +190,6 @@ El departamento de TI configura la infraestructura de las fases 2 a la 6, luego 
 
 Tras finalizar la implementación piloto, empiece la implementación de usuarios en la que cada usuario obtiene todas las funciones la vez.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
-Inicio de la implementación de Microsoft 365 Enterprise con la [infraestructura base](deploy-foundation-infrastructure.md).
+Inicio de la implementación de Microsoft 365 para empresas con la [infraestructura base](deploy-foundation-infrastructure.md).

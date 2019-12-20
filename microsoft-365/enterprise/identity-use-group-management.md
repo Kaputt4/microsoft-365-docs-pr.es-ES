@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se pueden usar grupos para automatizar la administración de algunas tareas administrativas.
-ms.openlocfilehash: 0d46a2af5683b8da40275302460d453f1f14acbe
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 49cdb0c3d394cb423d0565d7093f1b32b6661158
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831663"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801715"
 ---
 # <a name="step-5-use-groups-for-management"></a>Paso 5: Usar grupos para administración
 
@@ -27,7 +27,7 @@ ms.locfileid: "39831663"
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>Permitir a los usuarios crear y administrar sus propios grupos
 
-*Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365*
 
 En esta sección, podrá identificar grupos de Azure Active Directory (Azure AD) que pueden ser administrados por los propietarios del grupo en lugar de los administradores de TI. Conocida como *administración autoservicio de grupos*, esta característica permite a los propietarios del grupo que no están asignados a un rol de administrador crear y administrar grupos de seguridad. 
 
@@ -44,7 +44,7 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 <a name="identity-dyn-groups"></a>
 ## <a name="set-up-dynamic-group-membership"></a>Configurar la pertenencia a grupo dinámico
 
-*Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365*
 
 En esta sección, creará una serie de reglas para añadir o eliminar automáticamente cuentas de usuario como miembros de un grupo de Azure AD. Esto se conoce como *pertenencia a grupo dinámico*. Las reglas se basan en atributos de cuenta de usuario, como el país o el departamento.
 
@@ -74,7 +74,7 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 <a name="identity-group-license"></a>
 ## <a name="set-up-automatic-licensing"></a>Configurar las licencias automáticas
 
-*Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365*
 
 En esta sección, deberá configurar los grupos de seguridad en Azure AD para asignar automáticamente licencias de un conjunto de suscripciones para todos los miembros del grupo. Esto se conoce como *licencias basadas en grupos*. Si una cuenta de usuario se añade o se elimina del grupo, se asignará o quitará la asignación de las licencias de suscripciones del grupo automáticamente desde la cuenta de usuario.
 

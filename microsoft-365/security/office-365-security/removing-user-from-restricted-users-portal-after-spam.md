@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un usuario envía continuamente mensajes desde Office 365 se clasifican como correo no deseado, se le bloqueará para que no pueda enviar más mensajes de correo electrónico.
-ms.openlocfilehash: 7d900e154e60b49b3fcfe63552b6ad3288adfc82
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 93cc7fb4af878457f7b9570a90d6950e7488d0ac
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871746"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808035"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado
 
@@ -33,19 +33,19 @@ Si un usuario envía continuamente mensajes de correo electrónico que se clasif
 <a name="sectionSection0"> </a>
 
 Tiempo estimado para finalizar: 5 minutos
-  
+
 Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Contra el correo electrónico no deseado" en el tema [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions).
 
-El siguiente procedimiento también se puede llevar a cabo mediante PowerShell remoto. Use el cmdlet Get-BlockedSenderAddress para obtener la lista de usuarios restringidos y Remove-BlockedSenderAddress para quitar la restricción. Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+El siguiente procedimiento también se puede llevar a cabo mediante PowerShell remoto. Use el cmdlet Get-BlockedSenderAddress para obtener la lista de usuarios restringidos y Remove-BlockedSenderAddress para quitar la restricción. Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Quitar las restricciones de una cuenta de correo electrónico de Office 365 bloqueada
 
 La tarea se completa en el centro de cumplimiento de & de seguridad (SCC). [Diríjase al Centro de seguridad y cumplimiento](../../compliance/go-to-the-securitycompliance-center.md)para obtener más detalles acerca SCC. Debe estar en el rol de grupo de**Administración organizacional** o de la**Administración de seguridad** en orden para poder realizar estas funciones. [Diríjase al Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md)para obtener más detalles acerca de los grupos de rol de SCC.
 
 1. Con una cuenta profesional o educativa con privilegios de administrador global de Office 365, inicie sesión en el centro de seguridad y cumplimiento de Office 365 y, en la lista de la izquierda, expanda**Administración de amenazas**, elija** revisar**y, a continuación elija**usuarios restringidos**.
-    
+
     > [!TIP]
-    > Para ir directamente a la **página de usuarios restringidos**(anteriormente conocida como el centro de actividades) en el &amp; centro de cumplimiento de seguridad, use esta dirección URL: > [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > Para ir directamente a la página **usuarios restringidos** (anteriormente conocida como el centro de actividades) en el centro de cumplimiento de seguridad &amp;, utilice esta dirección URL: [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
 2. Esta página incluirá la lista de usuarios que se les ha bloqueado el envío de correo electrónico.  Busque el usuario del que quiere quitar las restricciones y seleccione **desbloquear**.
 
@@ -56,7 +56,7 @@ La tarea se completa en el centro de cumplimiento de & de seguridad (SCC). [Dir�
 5. Haga clic en **Sí** para confirmar el cambio.
 
     > [!NOTE]
-    > Se pueden tardar 30 minutos o más antes de quitar las restricciones. 
+    > Se pueden tardar 30 minutos o más antes de quitar las restricciones.
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>Asegurarse de que se avisa a los administradores cuando esto sucede
 

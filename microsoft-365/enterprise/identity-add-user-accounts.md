@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Agregue cuentas de usuario y grupos directamente en la nube o a través de la sincronización con el directorio local.
-ms.openlocfilehash: 559ea58a5fcee5860a797893230b587adc33a17d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 04564d86031642276e964f3a70fa2729f6b16c00
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370227"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801845"
 ---
 # <a name="step-4-add-your-user-accounts"></a>Paso 4: Agregar las cuentas de usuario
 
@@ -82,7 +82,7 @@ Como control provisional, puede ver [Fase 2: Criterios de salida de infraestruct
 <a name="identity-sync-health"></a>
 ## <a name="monitor-synchronization-health"></a>Supervisión del estado de sincronización
 
-*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
+*Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365*
 
 En esta sección, deberá instalar a un agente de Azure AD Connect Health en cada uno de los controladores de dominio AD DS locales para supervisar su infraestructura de identidades y los servicios de sincronización proporcionados por Azure AD Connect. En el portal de Azure AD Connect Health podrá consultar la información de supervisión, y se pueden ver alertas, supervisión del rendimiento y análisis de uso, entre otros datos.
 

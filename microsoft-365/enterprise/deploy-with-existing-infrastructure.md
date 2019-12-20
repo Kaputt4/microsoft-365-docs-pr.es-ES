@@ -1,5 +1,5 @@
 ---
-title: Implementación de Microsoft 365 Enterprise con una infraestructura existente
+title: Implementación de Microsoft 365 para empresas con una infraestructura existente
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Revise los criterios de salida para la implementación de Microsoft 365 Enterprise si tiene una infraestructura existente.
-ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+description: Revise los criterios de salida para la implementación de Microsoft 365 para empresas si tiene una infraestructura existente.
+ms.openlocfilehash: 1b3ed8edd84a1879f4cd46795fc55e3625a97be2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148514"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801935"
 ---
-# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>Implementación de Microsoft 365 Enterprise con una infraestructura existente
+# <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>Implementación de Microsoft 365 para empresas con una infraestructura existente
 
-Muchas organizaciones tienen redes existentes, identidad y otros componentes o productos locales de Microsoft y servicios basados en la nube. En este artículo, se describe cada fase de la implementación de Microsoft 365 Enterprise para que pueda determinar rápidamente cómo adaptar o cambiar su infraestructura existente.
+Muchas organizaciones tienen redes existentes, identidad y otros componentes o productos locales de Microsoft y servicios basados en la nube. En este artículo, se describe cada fase de la implementación de Microsoft 365 para empresas para que pueda determinar rápidamente cómo adaptar o cambiar su infraestructura existente.
 
-Antes de terminar cada fase, necesita examinar los criterios de salida, que son un conjunto de condiciones obligatorias que necesita cumplir y de condiciones opcionales que es importante tener en cuenta. Los criterios de salida de cada fase garantizan que la infraestructura de nube y local, así como la configuración de un extremo a otro, cumplan con los requisitos de una implementación de Microsoft 365 Enterprise.
+Antes de terminar cada fase, necesita examinar los criterios de salida, que son un conjunto de condiciones obligatorias que necesita cumplir y de condiciones opcionales que es importante tener en cuenta. Los criterios de salida de cada fase garantizan que la infraestructura de nube y local, así como la configuración de un extremo a otro, cumplan con los requisitos de una implementación de Microsoft 365 para empresas.
 
 > [!Note] 
 > FastTrack es una prestación continua y reiterativa, disponible de forma gratuita como parte de la suscripción, proporcionada por los ingenieros de Microsoft para ayudarle a pasarse a la nube a su propio ritmo. FastTrack también le da acceso a Partners calificados para obtener servicios adicionales, si es necesario. Con más de 40.000 usuarios habilitados hasta la fecha, FastTrack le ayuda a maximizar la rentabilidad, acelerar la implementación y mejorar la adopción en toda la organización. Consulte [FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365).

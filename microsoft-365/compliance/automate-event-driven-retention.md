@@ -1,7 +1,7 @@
 ---
 title: Retención automática controlada por eventos
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este tema se explica cómo configurar los flujos de procesos empresariales para automatizar la retención mediante eventos con la API de REST de Microsoft 365.
-ms.openlocfilehash: b4ae97ad9564f61e65b990a0054fcf13d88f1d8d
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: b2aadaf4e450167cf7bff864569652c05deb7298
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631070"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807439"
 ---
 # <a name="automate-event-based-retention"></a>Retención automática basada en eventos
 
@@ -407,7 +407,7 @@ Paso 2: Ejecuta el siguiente script.
 
 Paso 1: Ir al Centro de seguridad y cumplimiento.
 
-Paso 2: Seleccionar **Eventos** en **Gobierno de datos**.
+Paso 2: seleccione los **eventos** en **control de la información**.
 
 Paso 3: Comprobar que se creó el evento.
 

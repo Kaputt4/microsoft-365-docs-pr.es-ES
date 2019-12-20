@@ -1,5 +1,5 @@
 ---
-title: Infraestructura básica de Microsoft 365 Enterprise
+title: Infraestructura básica de Microsoft 365 para empresas
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenda las fases principales para implementar la infraestructura básica de Microsoft 365 Enterprise en su organización, también conocida como la implementación principal.
-ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: Comprenda las fases principales para implementar la infraestructura básica de Microsoft 365 para empresas en su organización, también conocida como la implementación principal.
+ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370357"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801965"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infraestructura básica de Microsoft 365 Enterprise
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infraestructura básica de Microsoft 365 para empresas
 
-Si realiza la implementación de un extremo a otro de Microsoft 365 Enterprise por su cuenta, primero debe crear una base firme en la que los servicios y aplicaciones impulsen la creatividad y el trabajo en equipo en un entorno seguro. Esta base a veces se conoce como la *implementación principal*.
+Si está realizando la implementación de un extremo a otro de Microsoft 365 para empresas, debe crear primero una base firme en la que las aplicaciones y servicios puedan desbloquear la creatividad y el trabajo en equipo en un entorno seguro. Esta base a veces se conoce como la *implementación principal*.
 
-Para una ruta de implementación de un extremo a otro definida, puede usar estas fases para planear e implementar la infraestructura de base de Microsoft 365 Enterprise:
+Para una ruta de acceso de un extremo a otro definida para implementación, puede usar estas fases para planear e implementar la infraestructura básica de Microsoft 365 para empresas:
 
 | | Fase | Resultados |
 |:-------|:-----|:-----|
@@ -48,19 +48,19 @@ Pero tiene la posibilidad de configurar e implementar las fases o los pasos en f
 
 -  **Si tiene una organización empresarial**,vea las fases como capas de infraestructura de TI en lugar de una ruta definida, y determine la mejor forma de cumplir los requisitos de cada capa en toda la organización.
 
-Al final de cada fase, debe examinar *los criterios*de salida, en los que se incluyen las condiciones necesarias que debe cumplir y las condiciones opcionales que se deben considerar. Los criterios de salida para cada fase garantizan que su infraestructura local y en la nube y la configuración de un extremo al otro resultante cumplen los requisitos para una implementación de Microsoft 365 Enterprise.
+Al final de cada fase, debe examinar *los criterios*de salida, en los que se incluyen las condiciones necesarias que debe cumplir y las condiciones opcionales que se deben considerar. Los criterios de salida para cada fase garantizan que su infraestructura local y en la nube, y la configuración de un extremo al otro resultante, cumplan los requisitos para una implementación de Microsoft 365 para empresas.
 
 Para ver cómo se estructura el contenido, vea este breve vídeo.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
-Esta es la infraestructura de base de la guía de implementación de Microsoft 365 Enterprise general:
+Esta es la infraestructura básica en la guía general de implementación de Microsoft 365 para empresas:
 
-![La infraestructura de base de la guía de implementación de Microsoft 365 Enterprise general](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![La infraestructura básica en la guía general de implementación de Microsoft 365 para empresas:](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>A simple vista
 
-El [póste de Microsoft 365 Enterprise Foundation Infrastructure ](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) es una ubicación central para que lo vean, en cada fase:
+El [póster de infraestructura básica de Microsoft 365 para empresas](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) es una ubicación central para que la pueda ver, en cada fase:
 
 - Objetivos generales de la fase para administradores y usuarios
 - Los servicios, características y herramientas
@@ -69,16 +69,16 @@ El [póste de Microsoft 365 Enterprise Foundation Infrastructure ](media/deploy-
 - El proceso para incorporar a un nuevo usuario
 - Cómo supervisar y actualizar
 
-[![Imagen del póster de la infraestructura básica Microsoft 365 Enterprise](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![Imagen para el póster de la infraestructura básica de Microsoft 365 para empresas](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 Para descargar una copia del póster, haga clic [aquí](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>Configuración de la infraestructura frente a la inscripción de usuarios
 
-La infraestructura de base es un conjunto de software y servicios configurados que permiten aprovechar toda la gama de funcionalidades y protecciones que ofrece Microsoft 365 Enterprise al combinarse para un usuario. El objetivo de la implementación de un extremo a otro es que esta infraestructura se aplique a todos los usuarios y sus dispositivos con Windows. 
+La infraestructura de base es un conjunto de software y servicios configurados que permiten aprovechar toda la gama de funcionalidades y protecciones que ofrece Microsoft 365 Enterprise para empresas. El objetivo de la implementación de un extremo a otro es que esta infraestructura se aplique a todos los usuarios y sus dispositivos con Windows. 
 
-Pero es importante que tenga en cuenta que la infraestructura de base de Microsoft 365 Enterprise es independiente de la implementación de software y servicios para los usuarios. ***Puede configurar las capas de la infraestructura base sin tener que implementar esas capas para todos los usuarios.***
+Pero es importante que tenga en cuenta que la infraestructura básica de Microsoft 365 para empresas es independiente de la implementación de software y servicios para los usuarios. ***Puede configurar las capas de la infraestructura base sin tener que implementar esas capas para todos los usuarios.***
 
 Es posible configurar y probar los elementos de la infraestructura de base antes de la implementación de esos elementos para los usuarios de las oficinas, regiones y divisiones de su organización.
 

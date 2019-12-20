@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Las cuentas de administrador global necesitan un tratamiento especial para proteger la integridad de sus credenciales.
-ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627086"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801835"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Paso 1: crea y proteja sus cuentas de administrador global
 
@@ -72,7 +72,7 @@ En esta sección, configurará Azure AD Privileged Identity Management (PIM) par
 
 Sus cuentas de administrador pasan de ser administradores permanentes a ser administradores aptos. El rol de administrador permanece inactivo hasta que lo necesite. Luego completará un proceso de activación para agregar el rol de administrador a la cuenta de administrador durante un período de tiempo determinado. Cuando la hora expire, PIM quita el rol de administrador de la cuenta de administrador.
 
-PIM está disponible con Azure Active Directory Premium P2, que se incluye con Microsoft 365 Enterprise E5. Como alternativa, puede comprar licencias individuales de Azure Active Directory Premium P2 para las cuentas de administrador.
+PIM está disponible con Azure Active Directory Premium P2, que se incluye con Microsoft 365 E5. Como alternativa, puede comprar licencias individuales de Azure Active Directory Premium P2 para las cuentas de administrador.
 
 Para habilitar Azure PIM para su espacio empresarial de Azure AD y sus cuentas de administrador, vea los [pasos para configurar PIM](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
 
