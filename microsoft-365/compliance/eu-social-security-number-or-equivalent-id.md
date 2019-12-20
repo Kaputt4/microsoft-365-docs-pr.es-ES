@@ -1,7 +1,7 @@
 ---
 title: Número de la seguridad social de la UE o identificador equivalente
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0666818dc892070f5c2f0c34abd8ca33d1253e33
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092469"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805933"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Número de la seguridad social de la UE o identificador equivalente
 
@@ -27,7 +27,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
 
 10 dígitos en el formato especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos:
   
@@ -102,7 +102,7 @@ versicherungsnummer
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos
   
@@ -179,7 +179,7 @@ numéronational #
 
 11 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
  11 dígitos: 
   
@@ -254,7 +254,7 @@ osobni identifikacijski broj
 
 Diez dígitos y una barra diagonal inversa en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Diez dígitos y una barra diagonal inversa:
   
@@ -331,7 +331,7 @@ rodne cislo
 
 Diez dígitos y un guión en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Diez dígitos y un guión:
   
@@ -402,7 +402,7 @@ personnummer
 
 Una combinación de 11 caracteres en el formato especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una combinación de 11 caracteres en el formato especificado:
   
@@ -513,7 +513,7 @@ Para obtener más información, consulte la sección "tarjeta de identificación
 
 Nueve dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos
   
@@ -598,7 +598,7 @@ Para obtener más información, consulte la sección "número de la seguridad so
 
 12 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos:
   
@@ -608,7 +608,7 @@ Para obtener más información, consulte la sección "número de la seguridad so
     
   - El último dígito del número de serie indica el sexo por la asignación de un número impar para macho y un número par para hembras
     
-  - Hasta 1990, la asignación de número de serie que se corresponde con el condado en el que nació el portador del número o (si nació antes de 1947) donde estuvo viviendo, de acuerdo con los registros fiscales, el 1 de enero de 1947, con un código especial (por lo general, 9 como el séptimo dígito) para immigrants 
+  - Hasta 1990, la asignación de número de serie que se corresponde con el condado en el que nació el portador del número o (si nació antes de 1947) donde estuvo viviendo, de acuerdo con los registros fiscales, el 1 de enero de 1947, con un código especial (por lo general, 9 como el séptimo dígito) para Immigrants 
     
 - Un dígito de control
     
@@ -671,7 +671,7 @@ personnummer #
   
 identifikationsnumret #
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Configurar un conector para archivar datos de LinkedIn en Office 365 (versión preliminar)
+title: Configurar un conector para archivar datos de LinkedIn (versión preliminar)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector nativo para importar datos desde una página de la compañía de LinkedIn a Office 365. Esto le permite archivar datos de orígenes de datos de terceros en Office 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar el cumplimiento de los datos de terceros de la organización.
-ms.openlocfilehash: bd11102a15396132cb192d8b0a4cc9a0dfca5645
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 6aff67ea9112b8215ba5b10dbdd6ce3a08876984
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615630"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807795"
 ---
-# <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configurar un conector para archivar datos de LinkedIn en Office 365 (versión preliminar)
+# <a name="set-up-a-connector-to-archive-linkedin-data-preview"></a>Configurar un conector para archivar datos de LinkedIn (versión preliminar)
 
 La característica conector para archivar datos de páginas de la compañía de LinkedIn en Office 365 está en versión preliminar.
 
@@ -35,7 +35,7 @@ Una vez que los datos de la página de la compañía de LinkedIn se almacenan en
 
 ## <a name="create-a-linkedin-connector"></a>Crear un conector de LinkedIn
 
-1. Vaya a <https://protection.office.com> y seleccione **importación de gobierno \> de datos** y, a continuación, seleccione **archivar datos de terceros**.
+1. Vaya a <https://protection.office.com> y haga clic en **importación \> de gobierno de información > archivar datos de terceros**.
 
 2. En la página **archivar datos de terceros** , seleccione **Agregar un conector**y, a continuación, seleccione **LinkedIn**.
 
@@ -73,7 +73,7 @@ Para ver más detalles, seleccione el conector en la lista de la página **archi
    
    > de: "página de la compañía contoso"
 
-    O bien:
+    O bien
 
    > asunto: "página de la compañía contoso"
 

@@ -1,7 +1,7 @@
 ---
 title: Número de identificación fiscal de la UE
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación de impuestos de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: adcd9be9b5f8775ad39010d771ff2ac214df1e17
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0ee76fa46bb22b2754098d053ab769b862fdd3f2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092464"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805853"
 ---
 # <a name="eu-tax-identification-number"></a>Número de identificación fiscal de la UE
 
@@ -27,7 +27,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
 
 Nueve dígitos con guión opcional y barra diagonal
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos con guión opcional y barra diagonal:
   
@@ -92,7 +92,7 @@ steuernummer
 
 11 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
   
@@ -154,7 +154,7 @@ numéro d'identification fiscal
 
 Diez dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos
   
@@ -225,7 +225,7 @@ identificador униформ
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
   
@@ -284,7 +284,7 @@ porezni broj
 
 Ocho dígitos y una letra en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos y una letra:
   
@@ -351,7 +351,7 @@ verticales #
 
 Nueve o diez dígitos con una barra diagonal inversa opcional
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve o diez dígitos con una barra diagonal inversa opcional:
   
@@ -405,7 +405,7 @@ osobní číslo
 
 Diez dígitos que contienen un guión
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Diez dígitos que contienen un guión:
   
@@ -468,7 +468,7 @@ identificador de patinaje
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
   
@@ -533,7 +533,7 @@ isikukood
 
 Una combinación de 11 caracteres de dígitos, letras y más y un signo menos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una combinación de 11 caracteres de dígitos, letras y más y un signo menos:
   
@@ -624,7 +624,7 @@ kansallinen tunnus numero
 
 13 dígitos para personas y nueve dígitos para entidades
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos para los usuarios:
   
@@ -681,7 +681,7 @@ numéro d'identification fiscal
 
 11 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
   
@@ -752,7 +752,7 @@ steueridentifikationsnummer
 
 Nueve dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos
   
@@ -820,7 +820,7 @@ aφμ αριθμός
 
 Diez dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Diez dígitos:
   
@@ -899,7 +899,7 @@ adóhatóság szám
 
 Siete dígitos seguidos de una letra sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Siete dígitos seguidos de una letra:
   
@@ -970,7 +970,7 @@ uimhir aitheantais phearsanta
 
 16 letras y dígitos en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 16 letras y dígitos:
   
@@ -1045,7 +1045,7 @@ Codice fiscal
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos en el patrón especificado
   
@@ -1118,7 +1118,7 @@ nodokļu identifikācija numurs
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos
   
@@ -1185,7 +1185,7 @@ mokesčių identifikavimas número
 
 13 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos:
   
@@ -1258,7 +1258,7 @@ Para los nacionales de Maltés: 7 dígitos y una letra en el patrón especificad
   
 Nacionales no Maltés y entidades de Maltés: 9 dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nacionales de Malta: 7 dígitos y una letra
   
@@ -1333,7 +1333,7 @@ numru ta ' identifikazzjoni TAT-taxxa
 
 Nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos 
   
@@ -1424,7 +1424,7 @@ Nederlandse de la última identificatie
 
 Once dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Once dígitos
   
@@ -1509,7 +1509,7 @@ numeridentyfikacjipodatkowej #
 
 Nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos
   
@@ -1570,7 +1570,7 @@ número de identificação fiscal
 
 13 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos
   
@@ -1626,7 +1626,7 @@ numărul de identificare fiscală
 
 10 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos
   
@@ -1692,7 +1692,7 @@ daňové číslo súboru
 
 Ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos
   
@@ -1765,7 +1765,7 @@ davčna številka
 
 Siete u ocho dígitos y una o dos letras en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Personas físicas españolas con una tarjeta de identidad nacional de España:
   
@@ -1888,7 +1888,7 @@ cifnúmero #
 
 Diez dígitos y un símbolo en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Diez dígitos y un símbolo:
   
@@ -1973,7 +1973,7 @@ Referencia fiscal única (UTR): 10 dígitos sin espacios y delimitadores
   
 Número de seguro nacional (NINO): para obtener más información, consulte la sección "Reino Unido. Número de seguro nacional (NINO) "en [lo que se buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Referencia de contribuyente única (UTR): 10 dígitos
   
@@ -2025,7 +2025,7 @@ archivo de impuestos
   
 Nº archivo impto.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

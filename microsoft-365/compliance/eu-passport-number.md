@@ -1,7 +1,7 @@
 ---
 title: Número de pasaporte de la UE
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/16/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de pasaporte de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 44ee6e7b46d79772bcd3aec0fd26265f58f6c4c6
-ms.sourcegitcommit: 3fd6d175c1954ce463198e835d1d8f2f91d80d79
+ms.openlocfilehash: 4afcf7b764eb8976e0588464515256f7cb1bdb8d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39662805"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805953"
 ---
 # <a name="eu-passport-number"></a>Número de pasaporte de la UE
 
@@ -937,7 +937,7 @@ Para obtener más información, consulte la sección "número de pasaporte de Su
 
 Para obtener más información, consulte la sección "Estados Unidos/Reino Unido Número de pasaporte "en [lo que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

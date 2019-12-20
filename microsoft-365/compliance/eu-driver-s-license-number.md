@@ -1,7 +1,7 @@
 ---
 title: Número de permiso de conducción de la UE
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial del número de licencia de conductor de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: f1a95ecbaf6b6d1ac189290dd6d076cfd91ab30f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6df025caf8d06c617e09a3b53dc6c82d69aaf5a8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092484"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805963"
 ---
 # <a name="eu-drivers-license-number"></a>Número de permiso de conducción de la UE
 
@@ -27,7 +27,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
 
 Ocho dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos
   
@@ -57,7 +57,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_austria_eu_driver's_license_number**|
+|**Keywords_austria_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/>  número de licencia de conducir  <br/> dlno #  <br/> fuhrerschein  <br/> fuhrerschein republik osterreich  <br/> |
    
@@ -67,7 +67,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 10 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos
   
@@ -97,7 +97,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords__belgium_eu_driver's_license_number**|
+|**Keywords__belgium_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-NR  <br/> fuehrerschein-NR  <br/> fuehrerschein-NR  <br/> |
    
@@ -107,7 +107,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos
   
@@ -137,7 +137,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_bulgaria_eu_driver's_license_number**|
+|**Keywords_bulgaria_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
@@ -147,7 +147,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Ocho dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos
   
@@ -177,7 +177,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_croatia_eu_driver's_license_number**|
+|**Keywords_croatia_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vozačka dozvola  <br/> |
    
@@ -187,7 +187,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 12 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos
   
@@ -216,7 +216,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_cyprus_eu_driver's_license_number**|
+|**Keywords_cyprus_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
    
@@ -226,7 +226,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho letras y dígitos:
   
@@ -262,7 +262,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_czech_republic_eu_driver's_license_number**|
+|**Keywords_czech_republic_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
    
@@ -272,7 +272,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Ocho dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos
   
@@ -302,7 +302,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_denmark_eu_driver's_license_number**|
+|**Keywords_denmark_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
@@ -312,7 +312,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras y seis dígitos:
   
@@ -345,7 +345,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_estonia_eu_driver's_license_number**|
+|**Keywords_estonia_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> permis de conduire  <br/> |
    
@@ -355,7 +355,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 10 dígitos que contienen un guión
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos que contienen un guión:
   
@@ -390,7 +390,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_finland_eu_driver's_license_number**|
+|**Keywords_finland_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> ajokortti  <br/> |
    
@@ -408,7 +408,7 @@ Para obtener más información, consulte la sección "número de permiso de cond
 
 Nueve dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
  Nueve dígitos 
   
@@ -437,7 +437,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_greece_eu_driver's_license_number**|
+|**Keywords_greece_eu_driver ' s_license_number**|
 |:-----|
 |Biblioteca #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
    
@@ -447,7 +447,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras y seis dígitos:
   
@@ -480,7 +480,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_hungary_eu_driver's_license_number**|
+|**Keywords_hungary_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
@@ -490,7 +490,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Seis dígitos seguidos de cuatro letras
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Seis dígitos y cuatro letras:
   
@@ -523,7 +523,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_ireland_eu_driver's_license_number**|
+|**Keywords_ireland_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
    
@@ -537,7 +537,7 @@ Para obtener más información, consulte la sección "número de licencia de con
 
 Tres letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Tres letras y seis dígitos:
   
@@ -570,7 +570,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_latvia_eu_driver's_license_number**|
+|**Keywords_latvia_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
    
@@ -580,7 +580,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Ocho dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
  Ocho dígitos 
   
@@ -609,7 +609,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_lithuania_eu_driver's_license_number**|
+|**Keywords_lithuania_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
    
@@ -619,7 +619,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Seis dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
  Seis dígitos 
   
@@ -648,7 +648,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_luxemburg_eu_driver's_license_number**|
+|**Keywords_luxemburg_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
    
@@ -658,7 +658,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Combinación de dos caracteres y seis dígitos en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Combinación de dos caracteres y seis dígitos:
   
@@ -697,7 +697,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_malta_eu_driver's_license_number**|
+|**Keywords_malta_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> liċenzja sewqan  <br/> |
    
@@ -707,7 +707,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 10 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos
   
@@ -736,7 +736,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_netherlands_eu_driver's_license_number**|
+|**Keywords_netherlands_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
@@ -746,7 +746,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 14 dígitos que contienen 2 barras diagonales
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 14 dígitos y 2 barras diagonales:
   
@@ -785,7 +785,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_poland_eu_driver's_license_number**|
+|**Keywords_poland_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> prawo jazdy  <br/> |
    
@@ -795,7 +795,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras seguidas de siete números en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras seguidas de siete números con caracteres especiales:
   
@@ -834,7 +834,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_portugal_eu_driver's_license_number**|
+|**Keywords_portugal_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> Carteira de motorista  <br/> |
    
@@ -844,7 +844,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Un carácter seguido de ocho dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Un carácter seguido de ocho dígitos:
   
@@ -877,7 +877,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_romania_eu_driver's_license_number**|
+|**Keywords_romania_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> Perm de conducere  <br/> |
    
@@ -887,7 +887,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Un carácter seguido de siete dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Un carácter seguido de siete dígitos
   
@@ -920,7 +920,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_slovakia_eu_driver's_license_number**|
+|**Keywords_slovakia_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vodičský preukaz  <br/> |
    
@@ -930,7 +930,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos
   
@@ -959,7 +959,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_slovenia_eu_driver's_license_number**|
+|**Keywords_slovenia_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
    
@@ -969,7 +969,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Ocho dígitos seguidos de un carácter
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos seguidos de un carácter:
   
@@ -1002,7 +1002,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_spain_eu_driver's_license_number**|
+|**Keywords_spain_eu_driver ' s_license_number**|
 |:-----|
 |dlno #  <br/> listas #  <br/> Lic de drivers.  <br/> permiso de conducir  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> driving licence  <br/> driving license  <br/> número de licencia de conductor  <br/> número de licencia de conductor  <br/> número de licencia de drivers  <br/> número de licencia de drivers  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> permiso de conducción  <br/> número de permiso de conducir  <br/> permisos de conducción  <br/> permisos conducción  <br/> número de licencia conducir  <br/> número de cuaderno de conducir  <br/> número conducir de cuaderno  <br/> licenciar conducir  <br/> número de permisos de conducir  <br/> número de permisos conducir  <br/> número permisos conducir  <br/> permisos conducir  <br/> licencia de manejo  <br/> el cuaderno de conducir  <br/> conducir del cuaderno  <br/> |
    
@@ -1012,7 +1012,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Diez dígitos que contienen un guión
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Diez dígitos que contienen un guión:
   
@@ -1047,7 +1047,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 | |
-|**Keywords_sweden_eu_driver's_license_number**|
+|**Keywords_sweden_eu_driver ' s_license_number**|
 |:-----|
 |listas #  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> körkort  <br/> |
    
@@ -1055,7 +1055,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Para obtener más información, consulte la sección "Reino Unido. Número de permiso de conducir "en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

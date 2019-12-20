@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: c50122f390809e145af621ed6341d02ae9c3b8cf
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 556d3994241db65b70feec55ac0f96469f549361
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202361"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962257"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -157,7 +157,7 @@ De un solo vistazo, puede ver el título, el propietario, la categoría, el cump
 
 1. Seleccione los puntos suspensivos (...) de la acción que desea modificar y seleccione **Editar**.
 2. Alterne el conmutador de la actualización continua de puntuación segura en activado o desactivado para habilitar o deshabilitar la supervisión continua mediante la puntuación segura.
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
 Cuando las organizaciones implementan por primera vez Microsoft 365 u Office 365, la puntuación segura tarda aproximadamente siete días en completarse en recopilar datos y factorizar la puntuación. Durante este tiempo, la configuración de la opción de actualización continua de puntuación segura como **desactivada** y la configuración manual de una acción para **implementada** contará esa acción hacia su puntuación. Después de los siete días iniciales, al desactivar la actualización continua de la actualización segura, se habilitará la supervisión continua a partir de ese momento.
 

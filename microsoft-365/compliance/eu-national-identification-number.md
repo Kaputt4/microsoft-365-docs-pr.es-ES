@@ -1,7 +1,7 @@
 ---
 title: Número de identificación nacional de la UE
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación nacional de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c00619ed649db53777fa3629deac0162a3589475
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092476"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805943"
 ---
 # <a name="eu-national-identification-number"></a>Número de identificación nacional de la UE
 
@@ -27,7 +27,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
 
 Una combinación de letras, dígitos y caracteres especiales de 24 caracteres
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 24 caracteres:
   
@@ -81,7 +81,7 @@ Para obtener más información, consulte la sección "número nacional de Bélgi
 
 Diez dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Diez dígitos sin espacios y delimitadores
   
@@ -169,7 +169,7 @@ Para obtener más información, consulte la sección "número de identidad de Cr
 
 Diez dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
  Diez dígitos 
   
@@ -223,7 +223,7 @@ Para obtener más información, vea la sección sobre el número de identificaci
 
 11 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
   
@@ -308,7 +308,7 @@ Para obtener más información, consulte la sección "tarjeta de identificación
 
 11 dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
   
@@ -366,7 +366,7 @@ személyazonosító igazolvány
 
 Una combinación de Letras de nueve caracteres, dígitos y un espacio en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una combinación de Letras de nueve caracteres, dígitos y un espacio en el patrón especificado
   
@@ -443,7 +443,7 @@ uimh. PSP
 
 Una combinación de letras y dígitos de 16 caracteres en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una combinación de letras y dígitos de 16 caracteres:
   
@@ -525,7 +525,7 @@ Codice fiscal
 
 11 dígitos y un guión en el formato especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos y un guión:
   
@@ -589,7 +589,7 @@ roles kods
 
 11 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos sin espacios y delimitadores:
   
@@ -662,7 +662,7 @@ asmens kodas.
 
 11 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos
   
@@ -739,7 +739,7 @@ eindeutigeid #
 
 Siete dígitos seguidos de una letra
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Siete dígitos seguidos de una letra:
   
@@ -804,7 +804,7 @@ numru ta ' Identità uniku
 
 Nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos
   
@@ -877,7 +877,7 @@ Para obtener más información, consulte la sección "número de tarjeta de ciud
 
 13 dígitos sin espacios y delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos
   
@@ -958,7 +958,7 @@ numărpersonalunic #
 
 Diez dígitos que contienen una barra diagonal inversa
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Diez dígitos que contienen una barra diagonal inversa:
   
@@ -1027,7 +1027,7 @@ rodne cislo
 
 13 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos en el patrón especificado:
   
@@ -1098,7 +1098,7 @@ emšo
 
 Siete dígitos seguidos de un carácter
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Siete dígitos seguidos de un carácter
   
@@ -1180,7 +1180,7 @@ identidadúnico #
 
 Para obtener más información, consulte la sección "identificación nacional de Suecia" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

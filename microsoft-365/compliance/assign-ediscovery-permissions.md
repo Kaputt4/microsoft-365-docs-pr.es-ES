@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 067a54f6286df5a5ce6e5b02b7ea1d6964b16777
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 54a12334c4b63e1751d578dcd5a9c79d887d246d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603754"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823732"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -79,7 +79,7 @@ En la siguiente tabla se enumeran los roles RBAC relacionados con la exhibición
 |Exportar <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Vista previa <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Revisar <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |Descifrado de RMS <br/>  ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |Búsqueda y depuración <br/> | <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -88,7 +88,7 @@ En las secciones siguientes se describe cada uno de los roles RBAC relacionados 
 
 ### <a name="case-management"></a>Administración de casos
 
-Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a casos de eDiscovery en el centro de seguridad & cumplimiento. Para obtener más información, vea [administrar casos de eDiscovery en el centro de seguridad & cumplimiento](manage-ediscovery-cases.md). Como se ha explicado anteriormente, a un usuario se le debe asignar el rol de administración de casos antes de poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para convertirlo en Administrador de exhibición de documentos electrónicos. 
+Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a casos de eDiscovery en el centro de seguridad & cumplimiento. Para obtener más información, vea [administrar casos de eDiscovery en el centro de seguridad & cumplimiento](ediscovery-cases.md). Como se ha explicado anteriormente, a un usuario se le debe asignar el rol de administración de casos antes de poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para convertirlo en Administrador de exhibición de documentos electrónicos. 
 
 ### <a name="compliance-search"></a>Búsqueda de cumplimiento
 
@@ -119,7 +119,7 @@ Para obtener más información acerca de las suspensiones, consulte:
 
 Este rol permite a los usuarios ver una lista de elementos devueltos de una búsqueda de contenido. También pueden abrir y ver cada elemento de la lista para ver su contenido.
 
-### <a name="review"></a>Review
+### <a name="review"></a>Revisar
 
 Esta función permite a los usuarios acceder a datos de casos en la exhibición avanzada de documentos electrónicos de Office 365. El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición avanzada de documentos electrónicos. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede seleccionar **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o realizar otras tareas de búsqueda de contenido o de administración de casos.
 

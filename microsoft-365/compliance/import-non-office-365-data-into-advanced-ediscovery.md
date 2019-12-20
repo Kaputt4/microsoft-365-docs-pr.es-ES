@@ -3,6 +3,7 @@ title: Importar contenido no de Office 365 para el análisis avanzado de eDiscov
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Pasos para importar contenido que no está almacenado en O365 en un BLOB de Azure para que se pueda analizar con AeD
-ms.openlocfilehash: 1c971c9f95d03d05db76f80344adeb93b0a72c06
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aa14a54c20ac580c6412e8dc534ec44520abb3c8
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092382"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823792"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importar contenido no de Office 365 para el análisis avanzado de eDiscovery
 
@@ -39,7 +40,7 @@ El uso de la característica cargar no de Office 365 tal y como se describe en e
     
 - Un caso de eDiscovery existente
     
-- Todos los archivos que se van a cargar se recopilan en carpetas en las que hay una carpeta por custodio y el nombre de las carpetas se encuentra en el formato de *alias @ nombredominio* . El *alias @ domainname* debe ser users Office 365 alias y dominio. Puede recopilar todas las carpetas *alias @ domainname* en una carpeta raíz. La carpeta raíz solo puede contener las carpetas *alias @ domainname* , no debe haber archivos sueltos en la carpeta raíz 
+- Todos los archivos para carga recopilados en carpetas en las que hay una carpeta por custodio y el nombre de las carpetas se encuentran en este formato *alias@domainname* . Los *alias@domainname* deben ser usuarios alias y dominio Office 365. Puede recopilar todas las carpetas de *alias@domainname* en una carpeta raíz. La carpeta raíz solo puede contener las carpetas *alias@domainname* , no debe haber archivos sueltos en la carpeta raíz 
     
 - Una cuenta que sea administrador de exhibición de documentos electrónicos o administrador de exhibición de documentos electrónicos
     
@@ -47,7 +48,8 @@ El uso de la característica cargar no de Office 365 tal y como se describe en e
     
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Cargar contenido no de Office 365 en eDiscovery avanzado
 
-1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, Abra **eDiscovery**y abra el caso en el que se cargarán los datos que no son de Office 365. Si necesita crear un caso, consulte [administrar casos de eDiscovery en el centro de seguridad &amp; y cumplimiento de Office 365](manage-ediscovery-cases.md)
+
+1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, Abra **eDiscovery**y abra el caso en el que se cargarán los datos que no son de Office 365. Si necesita crear un caso, consulte [administrar casos de eDiscovery en el centro de seguridad &amp; y cumplimiento de Office 365](ediscovery-cases.md)
     
 2. Haga clic en **cambiar a exhibición avanzada de** documentos electrónicos
     
@@ -76,7 +78,7 @@ El uso de la característica cargar no de Office 365 tal y como se describe en e
     Para obtener más información sobre la sintaxis de Azcopy, consulte [transferir datos con Azcopy en Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
     
     > [!IMPORTANT]
-    > Debe haber una carpeta raíz por usuario y el nombre de la carpeta debe tener el formato *alias @ nombreDeDominio* . 
+    > Debe haber una carpeta raíz por usuario y el nombre de la carpeta debe tener el formato *alias@domainname* . 
   
 8. Una vez que las carpetas terminen de cargarse, vuelva a la exhibición avanzada de documentos electrónicos. El contenido de las carpetas que cargó ya está listo para su procesamiento en eDiscovery avanzado. Seleccione el contenedor y haga clic en el botón procesar. Para obtener más información sobre el procesamiento avanzado de eDiscovery, vea [ejecutar el módulo de proceso y cargar datos en eDiscovery avanzado de Office 365](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
     
@@ -84,6 +86,4 @@ El uso de la característica cargar no de Office 365 tal y como se describe en e
     > Una vez que el contenedor se procesa correctamente en eDiscovery avanzado, ya no podrá agregar nuevo contenido al almacenamiento SAS en Azure. Si recopila contenido adicional y desea agregarlo al análisis de eDiscovery avanzado, debe crear un nuevo contenedor de **datos distinto de Office 365** y repetir este procedimiento. 
   
     > [!NOTE]
-    > Si el contenedor *no se procesa correctamente debido a problemas de nombres de carpeta* y, a continuación, soluciona los problemas, deberá crear un nuevo contenedor y volver a conectar y cargar de nuevo con los procedimientos descritos en este artículo. 
-  
-
+    > Si el contenedor *no se procesa correctamente debido a problemas de nombres de carpeta* y, a continuación, soluciona los problemas, deberá crear un nuevo contenedor y volver a conectar y cargar de nuevo con los procedimientos descritos en este artículo.

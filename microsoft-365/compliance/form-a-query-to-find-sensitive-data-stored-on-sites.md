@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la prevención de pérdida de datos (DLP) en SharePoint Online, puede detectar documentos que contengan datos confidenciales en todo el espacio empresarial. Una vez detectados los documentos, puede trabajar con los propietarios de documentos para proteger los datos. Este tema puede ayudarle a formar una consulta para buscar datos confidenciales.
-ms.openlocfilehash: 0cf5d0446d8f12560e8fd7b0948dc5b6ce2bbe0f
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: 66cf1f5c4072422c3de8572a5bf4b6f39755cff3
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38687799"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823652"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Crear una consulta para buscar datos confidenciales almacenados en los sitios
 
@@ -74,7 +74,7 @@ En los ejemplos siguientes se usan diferentes tipos, propiedades y operadores de
 
 No todas las consultas son iguales. En la siguiente tabla, se proporcionan ejemplos de consultas que no funcionan con DLP en SharePoint y se describe por qué.
   
-|**Consulta no compatible**|**Motivo**|
+|**Consulta no compatible**|**Reason**|
 |:-----|:-----|
 | `SensitiveType:"Credit Card Number|.."` <br/> |Debe agregar, al menos, un número.  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"NotARule" no es un nombre de tipo confidencial válido. Solo los nombres del [inventario de tipos de información confidencial](https://go.microsoft.com/fwlink/?LinkID=509999) funcionan en las consultas de DLP.  <br/> |
@@ -88,8 +88,8 @@ No todas las consultas son iguales. En la siguiente tabla, se proporcionan ejemp
 
 [Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
   
-[Ejecutar una búsqueda de contenido en el centro de &amp; seguridad y cumplimiento de Office 365](run-a-content-search-in-the-security-and-compliance-center.md)
+[Ejecutar una búsqueda de contenido](content-search.md)
   
-[Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md)
+[Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
   
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes en Office 365? Compruebe si hay una respuesta aquí.
-ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 8f9621ea440bf089ebc8fa3e35b38ff636657555
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866422"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962567"
 ---
 # <a name="office-365-message-encryption-faq"></a>Preguntas más frecuentes sobre el cifrado de mensajes de Office 365
 
@@ -69,10 +69,10 @@ Las nuevas funciones para el cifrado de mensajes de Office 365 son una evolució
 
 |**Función**|**Versiones anteriores de OME**|**IRM**|**Nuevas funciones de OME**|
 |:-----|:-----|:-----|:-----|
-|**Enviar correo electrónico cifrado**|Solo a través de reglas de flujo de correo de Exchange|Usuario final iniciado desde Outlook para PC, Outlook para Mac o Outlook en la web; o mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde Outlook para PC, Outlook para Mac o Outlook en la web; o mediante reglas de flujo de correo|
+|**Enviar correo electrónico cifrado**|Solo a través de reglas de flujo de correo de Exchange|Usuario final iniciado desde Outlook para Windows, Outlook para Mac o Outlook en la web; o mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde Outlook para Windows, Outlook para Mac o Outlook en la web; o mediante reglas de flujo de correo|
 |**Administración de derechos**|-|No reenviar opciones y plantillas personalizadas|Opción no reenviar, opción de solo codificación, plantillas predeterminadas y personalizadas|
 |**Tipo de destinatario admitido**|Solo destinatarios externos|Solo destinatarios internos|Destinatarios internos y externos|
-|**Experiencia con el destinatario**|Los destinatarios externos recibieron un mensaje HTML que se descargaron y abrieron en un explorador o en una aplicación móvil descargada.|Los destinatarios internos solo recibieron correo electrónico cifrado en Outlook para PC, Outlook para Mac y Outlook en la Web.|Los destinatarios internos y externos reciben correo electrónico en Outlook para PC, Outlook para Mac, Outlook en la web, Outlook para Android y Outlook para iOS, o a través de un portal web, independientemente de si están o no en la misma organización de Office 365 o en cualquier Office 365 Organization. El portal OME no requiere descargas independientes.|
+|**Experiencia con el destinatario**|Los destinatarios externos recibieron un mensaje HTML que se descargaron y abrieron en un explorador o en una aplicación móvil descargada.|Los destinatarios internos solo recibieron correo electrónico cifrado en Outlook para Windows, Outlook para Mac y Outlook en la Web.|Los destinatarios internos y externos reciben correo electrónico en Outlook para Windows, Outlook para Mac, Outlook en la web, Outlook para Android y Outlook para iOS, o a través de un portal web, independientemente de si están o no en la misma organización de Office 365 o en cualquier Office 365 Organization. El portal OME no requiere descargas independientes.|
 |**Proporcionar su propio soporte clave**|No disponible|No disponible| BYOK compatible|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>¿Cómo habilito las nuevas funciones de OME para mi organización?
@@ -93,11 +93,11 @@ Los usuarios locales pueden enviar correo cifrado con las reglas de flujo de cor
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>¿Qué cliente de correo electrónico debo usar para crear un mensaje cifrado OME? ¿Qué aplicaciones se admiten para enviar mensajes protegidos?
 
-Puede crear mensajes protegidos desde Outlook 2016, y 2013 Outlook en la web, y Outlook en la Web.
+Puede crear mensajes protegidos desde Outlook 2016 y 2013 Outlook en la web para Windows y Mac, y Outlook en la Web.
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>¿Qué clientes de correo electrónico se admiten para leer y responder a los correos electrónicos protegidos?
 
-Puede leer y responder desde Outlook para PC y Mac (2013 y 2016), Outlook en la web y Outlook Mobile (Android e iOS) si es un usuario de Office 365. También puede usar el cliente de correo nativo de iOS si su organización lo permite. Si no es un usuario de Office 365, puede leer y responder a mensajes cifrados en la web a través del explorador Web.
+Puede leer y responder desde Outlook para Windows y Mac (2013 y 2016), Outlook en la web y Outlook Mobile (Android e iOS) si es un usuario de Office 365. También puede usar el cliente de correo nativo de iOS si su organización lo permite. Si no es un usuario de Office 365, puede leer y responder a mensajes cifrados en la web a través del explorador Web.
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>¿Qué tipos de archivo se admiten como datos adjuntos en correos electrónicos protegidos? ¿Los datos adjuntos heredan las directivas de protección asociadas con los correos electrónicos protegidos?
 
@@ -135,18 +135,6 @@ Los administradores pueden configurar una regla de flujo de correo para quitar e
 
 Afirma! Puede configurar reglas de flujo de correo en Exchange online o mediante DLP en el centro de &amp; seguridad y cumplimiento.
   
-## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>¿Puedo abrir mensajes cifrados enviados a un buzón compartido?
-
-Afirma! Los mensajes cifrados son compatibles con un buzón compartido.
-
-- Los usuarios pueden abrir los correos electrónicos protegidos en un buzón compartido donde el buzón compartido recibió un correo protegido como parte de un grupo de distribución.
-
-- Los usuarios pueden ver los datos adjuntos que heredan la protección del correo electrónico cuando usan Outlook para Windows, Outlook para Mac y Outlook en la Web.
-
-## <a name="is-delegated-access-supported"></a>¿Se admite el acceso delegado?
-
-No en este momento.
-
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>¿Puedo personalizar mensajes cifrados con la personalización de marca de mi empresa?
 
 Afirma! Para obtener información sobre cómo personalizar los mensajes de correo electrónico y el portal OME, consulte Agregar la marca de su organización a los mensajes cifrados. Consulte [Agregar la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md).
@@ -162,3 +150,32 @@ Sí. Todos los mensajes de correo electrónico cifrados son detectables por las 
 ## <a name="can-i-remove-encryption-from-email"></a>¿Puedo quitar el cifrado del correo electrónico?
 
 Los administradores pueden configurar una regla de flujo de correo para quitar el cifrado del correo saliente. No se puede quitar el cifrado con una regla de flujo de correo de los mensajes entrantes.
+
+## <a name="is-delegated-access-supported"></a>¿Se admite el acceso delegado?
+
+No en este momento.
+
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>¿Puedo abrir mensajes cifrados enviados a un buzón compartido?
+
+Afirma! Los mensajes cifrados son compatibles con un buzón compartido.
+
+- Los usuarios pueden abrir los correos protegidos en un mMailbox compartido en el que el buzón compartido recibió un correo protegido como parte de un grupo de distribución.
+
+- Los usuarios pueden ver los datos adjuntos que heredan la protección del correo electrónico cuando usan Outlook para Windows, Outlook para Mac y Outlook en la Web.
+
+En la siguiente tabla se enumeran los clientes compatibles con los buzones compartidos.
+
+| Plataforma | Leer correo | Ver datos adjuntos de correo electrónico |
+|----------|-----------|------------------------|
+| Outlook en la Web | Sí | Sí                |
+| Outlook para Windows| Sí | Sí                |
+| Outlook para Mac    | Sí | Sí                |
+| Outlook para Android| Sí | No                 |
+| Outlook para iOS    | Sí | No                 |
+|
+
+Actualmente, hay dos limitaciones conocidas:
+
+- Solo se admite el acceso proporcionado por la asignación directa de usuarios al buzón compartido. No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico.
+
+- No puede abrir datos adjuntos de mensajes de correo electrónico que recibe en dispositivos móviles mediante Outlook Mobile.

@@ -1,5 +1,6 @@
 ---
 title: Referencia de la característica de cumplimiento de comunicaciones (versión preliminar)
+description: Referencia de características para el cumplimiento de la comunicación en Microsoft 365. Obtenga información detallada y especificaciones para cada uno de los componentes de la característica.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Referencia de características para el cumplimiento de la comunicación en Microsoft 365. Obtenga información detallada y especificaciones para cada uno de los componentes de la característica.
-ms.openlocfilehash: 8ad7cb3d1d5e8e61fbd86dbdb4eea9b8e369e6ad
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: dc654a877e12eed308b5f8be9fd001ef9093398d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633599"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807935"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Referencia de la característica de cumplimiento de comunicaciones (versión preliminar)
 
@@ -87,12 +87,16 @@ Debe configurar un conector de terceros para la organización de Microsoft 365 a
 
 ## <a name="policy-settings"></a>Configuración de directivas
 
+### <a name="users"></a>Usuarios
+
+Tiene la opción de seleccionar **todos los usuarios** o de definir usuarios específicos en una directiva de cumplimiento de la comunicación. La selección de **todos los usuarios** aplica la Directiva a todos los usuarios y a todos los grupos en los que cualquier usuario se incluye como miembro. La definición de usuarios específicos aplica la Directiva a los usuarios definidos y a todos los grupos de los que los usuarios definidos se incluyen como miembros.
+
 ### <a name="direction"></a>Dirección
 
 De forma predeterminada, la condición **es la dirección** se muestra y no se puede quitar. La configuración de la dirección de la comunicación en una directiva se eligen de forma individual o conjunta:
 
-- **Entrante**: puede elegir **entrante** para revisar las comunicaciones enviadas **a** las personas que haya elegido supervisar **de** las personas que no estén incluidas en la Directiva.
-- **Saliente**: puede elegir **salida** si desea revisar las comunicaciones enviadas **por** las personas que ha elegido para supervisar **a** personas no incluidas en la Directiva.
+- **Entrante**: puede elegir **entrante** para revisar las comunicaciones enviadas **a** las personas que haya elegido supervisar.
+- **Saliente**: puede elegir **saliente** si desea revisar las comunicaciones enviadas **por** las personas que ha elegido supervisar.
 - **Interno**: puede elegir **interna** para revisar las comunicaciones enviadas **entre** las personas que identificó en la Directiva.
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
@@ -108,11 +112,11 @@ Para obtener más información acerca de los detalles de información confidenci
 
 ### <a name="custom-keyword-dictionaries"></a>Diccionarios de palabras clave personalizados
 
-Configure diccionarios de palabras clave personalizados (o léxicos) para proporcionar una administración sencilla de palabras clave específicas de la organización o del sector. Los diccionarios de palabras clave admiten hasta 100.000 términos por Diccionario. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de cumplimiento de la comunicación y pueden originarse a partir de un archivo (como una lista. csv o. txt) o de una lista que se puede [importar en el centro de cumplimiento](create-a-keyword-dictionary.md).
+Configure diccionarios de palabras clave personalizados (o léxicos) para proporcionar una administración sencilla de palabras clave específicas de la organización o del sector. Los diccionarios de palabras clave admiten hasta 100.000 términos por Diccionario y admiten cualquier idioma. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de cumplimiento de la comunicación y pueden originarse a partir de un archivo (como una lista. csv o. txt) o de una lista que se puede [importar en el centro de cumplimiento](create-a-keyword-dictionary.md). Use diccionarios personalizados cuando necesite admitir términos o idiomas específicos de la organización y las directivas.
 
 ### <a name="classifiers"></a>Clasificadores
 
-Los clasificadores integrados examinan los mensajes enviados o recibidos en todos los canales de comunicación de la organización para diferentes tipos de problemas de cumplimiento. Los clasificadores usan una combinación de inteligencia artificial y palabras clave para identificar el idioma de los mensajes que puedan infringir las directivas Antiacoso. Actualmente, los clasificadores solo admiten palabras clave en inglés en los mensajes.
+Los clasificadores integrados examinan los mensajes enviados o recibidos en todos los canales de comunicación de la organización para diferentes tipos de problemas de cumplimiento. Los clasificadores usan una combinación de inteligencia artificial y palabras clave para identificar el idioma de los mensajes que puedan infringir las directivas Antiacoso. Actualmente, los clasificadores integrados solo admiten palabras clave en inglés en los mensajes.
 
 Cumplimiento en comunicación los clasificadores integrados examinan las comunicaciones de términos y sentimientos para los siguientes tipos de idiomas:
 
@@ -131,15 +135,15 @@ Las condiciones que elija para la Directiva se aplican a las comunicaciones de l
 
 La siguiente tabla explica más sobre cada condición.
   
-|**Condition**|**Cómo usar esta condición**|
+|**Condición**|**Cómo usar esta condición**|
 |:-----|:-----|
 | **El contenido coincide con cualquiera de estos clasificadores** | Se aplican a la Directiva cuando se incluyen o excluyen clasificadores en un mensaje. Algunos clasificadores están predefinidos en su espacio empresarial y los clasificadores personalizados deben configurarse por separado antes de que estén disponibles para esta condición. Solo se puede definir un clasificador como condición en una directiva. Para obtener más información acerca de la configuración de clasificadores, consulte [Classifiers](classifier-getting-started-with.md). |
 | **El contenido contiene cualquiera de estos tipos de información confidencial** | Se aplican a la Directiva cuando se incluyen o excluyen tipos de información confidencial en un mensaje. Algunos clasificadores están predefinidos en su espacio empresarial y los clasificadores personalizados se pueden configurar por separado o como parte del proceso de asignación de condición. Cada tipo de información confidencial que elija se aplica por separado y solo uno de estos tipos de información confidencial se debe aplicar para que la Directiva se aplique al mensaje. Para obtener más información acerca de los tipos personalizados de información confidencial, vea [tipos personalizados de información confidencial](custom-sensitive-info-types.md). |
 | **Se recibe el mensaje desde cualquiera de estos dominios**  <br><br> **No se recibe el mensaje desde ninguno de estos dominios** | Aplicar la Directiva para incluir o excluir dominios o direcciones de correo electrónico específicos en los mensajes recibidos. Escriba cada dominio o dirección de correo electrónico y separe los distintos dominios o direcciones de correo electrónico con una coma. Cada dominio o dirección de correo electrónico que se escriba se aplica por separado, solo se debe solicitar un dominio o una dirección de correo electrónico para que la Directiva se aplique al mensaje. <br><br> Si desea analizar todo el correo electrónico de un dominio específico, pero desea excluir los mensajes que no necesitan revisión (boletines, anuncios, etc.), debe configurar un mensaje que **no se reciba de ninguna de estas** condiciones de dominio que excluya la dirección de correo electrónico (por ejemplo, "Newsletter@contoso.com"). |
 | **El mensaje se envía a cualquiera de estos dominios**  <br><br> **El mensaje no se envía a ninguno de estos dominios** | Aplicar la Directiva para incluir o excluir dominios o direcciones de correo electrónico específicos en los mensajes enviados. Escriba cada dominio o dirección de correo electrónico y separe los distintos dominios o direcciones de correo electrónico con una coma. Cada dirección de correo electrónico o dominio se aplica por separado, solo se debe solicitar un dominio o una dirección de correo electrónico para que la Directiva se aplique al mensaje. <br><br> Si desea analizar todo el correo electrónico enviado a un dominio específico, pero quiere excluir los mensajes enviados que no necesitan revisión, debe configurar dos condiciones: <br> - **Se envía un mensaje a cualquiera de estas condiciones de los dominios** que define el dominio ("contoso.com") y <br> -Un **mensaje no se envía a ninguna condición de dominio** que excluya la dirección de correo electrónico ("subscriptions@contoso.com"). |
 | **El mensaje se clasifica con cualquiera de estas etiquetas**  <br><br> **El mensaje no está clasificado con ninguna de estas etiquetas** | Para aplicar la Directiva cuando se incluyen o excluyen determinadas etiquetas de retención en un mensaje. Las etiquetas de retención se deben configurar por separado y las etiquetas configuradas se eligen como parte de esta condición. Cada etiqueta que elija se aplica por separado (solo una de estas etiquetas se debe aplicar para que la Directiva se aplique al mensaje). Para obtener más información acerca de la configuración de etiquetas de retención, consulte [Overview of Retention Labels](labels.md).|
-| **El mensaje contiene alguna de estas palabras**  <br><br> **El mensaje no contiene ninguna de estas palabras** | Para aplicar la Directiva cuando se incluyan o excluyan ciertas palabras o frases en un mensaje, escriba cada palabra o frase en una línea independiente. Cada línea de palabras que escriba se aplica por separado (solo se debe aplicar una de estas líneas para que la Directiva se aplique al mensaje). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
-| **Los datos adjuntos contienen alguna de estas palabras**  <br><br> **Los datos adjuntos no contienen ninguna de estas palabras** | Para aplicar la Directiva cuando ciertas palabras o frases se incluyen o excluyen en datos adjuntos de un mensaje (como un documento de Word), escriba cada palabra o frase en una línea independiente. Cada línea de palabras que escriba se aplica por separado (solo se debe aplicar una línea para que la Directiva se aplique a los datos adjuntos). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
+| **El mensaje contiene alguna de estas palabras**  <br><br> **El mensaje no contiene ninguna de estas palabras** | Para aplicar la Directiva cuando se incluyan o excluyan ciertas palabras o frases en un mensaje, escriba cada palabra o frase y sepárelos con una coma. Cada palabra que escriba se aplica por separado (solo se debe aplicar una palabra para que la Directiva se aplique al mensaje). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
+| **Los datos adjuntos contienen alguna de estas palabras**  <br><br> **Los datos adjuntos no contienen ninguna de estas palabras** | Para aplicar la Directiva cuando ciertas palabras o frases se incluyen o excluyen en un adjunto de mensaje (como un documento de Word), escriba cada palabra o frase y sepárelas con una coma. Cada palabra que escriba se aplica por separado (solo se debe aplicar una palabra para que la Directiva se aplique a los datos adjuntos). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **Los datos adjuntos son cualquiera de estos tipos de archivo**  <br><br> **Datos adjuntos no es ninguno de estos tipos de archivo** | Para supervisar las comunicaciones que incluyan o excluyan tipos de datos adjuntos específicos, escriba las extensiones de archivo (por ejemplo,. exe o. pdf). Si desea incluir o excluir varias extensiones de archivo, indíquela en líneas separadas. Para que se aplique la Directiva, solo debe coincidir una extensión de datos adjuntos.|
 | **El tamaño del mensaje es mayor que**  <br><br> **El tamaño del mensaje no es mayor que** | Para revisar los mensajes según un tamaño determinado, use estas condiciones para especificar el tamaño máximo o mínimo que puede tener un mensaje antes de que se someta a revisión. Por ejemplo, si especifica que **el tamaño del mensaje es superior a** \> **1,0 MB**, todos los mensajes que tengan 1,01 MB o más, estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
 | **El dato adjunto es mayor que**  <br><br> **Los datos adjuntos no tienen un tamaño superior a** | Para revisar los mensajes en función del tamaño de los datos adjuntos, especifique el tamaño máximo o mínimo que pueden tener los datos adjuntos antes de que el mensaje y sus datos adjuntos estén sujetos a revisión. Por ejemplo, si especifica que el **dato adjunto es superior** \> a **2,0 MB**, todos los mensajes con datos adjuntos 2,01 MB y sobre estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
@@ -147,7 +151,7 @@ La siguiente tabla explica más sobre cada condición.
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Coincidencia de palabras y frases para mensajes de correo electrónico o datos adjuntos
 <a name="Matchwords"> </a>
 
-Cada línea de palabras que escriba se aplica por separado (solo se debe aplicar una línea para que la condición de la Directiva se aplique al correo electrónico o datos adjuntos). Por ejemplo, vamos a usar la condición, **Message contiene cualquiera de estas palabras**, con las palabras clave "Banker" y "Insider comercia" en líneas separadas. La Directiva se aplica a todos los mensajes que incluyan la palabra "Banker" o la frase "comercio Insider". Solo una de estas palabras o frases debe aparecer para que esta condición de directiva se aplique. Las palabras del mensaje o del archivo adjunto deben coincidir exactamente con lo que se especifique.
+Cada palabra que escriba y separe con una coma se aplica por separado (solo se debe aplicar una palabra para que la condición de la Directiva se aplique al correo electrónico o los datos adjuntos). Por ejemplo, vamos a usar la condición, el **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Banker" y "comercio de Insiders" separadas por una coma (Banker, transacciones de Insider). La Directiva se aplica a todos los mensajes que incluyan la palabra "Banker" o la frase "comercio Insider". Solo una de estas palabras o frases debe aparecer para que esta condición de directiva se aplique. Las palabras del mensaje o del archivo adjunto deben coincidir exactamente con lo que se especifique.
 
 Para analizar los mensajes de correo electrónico y los datos adjuntos de las mismas palabras clave, cree una [Directiva de prevención de pérdida de datos](create-test-tune-dlp-policy.md) con un diccionario de [palabras clave personalizado](create-a-keyword-dictionary.md) para los términos que desee analizar en los mensajes. Esta configuración de directiva identifica las palabras clave definidas que aparecen en el mensaje de correo electrónico **o** en los datos adjuntos del correo electrónico. El uso de la configuración de directivas condicionales estándar (el*mensaje contiene alguna de estas palabras* y *datos adjuntos contiene alguna de estas palabras*) para **identificar los términos** de los mensajes y en los datos adjuntos requiere que los términos estén presentes en el mensaje y los datos adjuntos.
   
@@ -209,7 +213,7 @@ Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los 
 | **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, Microsoft Team chat, Bloonmberg, etc. |
 | **Dominios de destinatarios** | El dominio al que se envió el mensaje. Suele ser su dominio de suscripción de Microsoft 365 de forma predeterminada. |
 | **Recipient** | El usuario al que se envió el mensaje. |
-| **Sender** | La persona que envió el mensaje. |
+| **Remitente** | La persona que envió el mensaje. |
 | **Dominio del remitente** | El dominio que envió el mensaje. |
 | **Size** | El tamaño del mensaje en KB. |
 | **Asunto/título** | El asunto del mensaje o el título del chat. |
@@ -253,7 +257,10 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alertas para 
 
 ## <a name="audit"></a>Las
 
-En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esto puede ser un resumen de todas las actividades asociadas con una directiva de la organización definida o cada vez que cambia una directiva de cumplimiento de la comunicación. Las directivas de cumplimiento de comunicaciones tienen pistas de auditoría integradas para una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción de creación, edición y eliminación son capturados por las directivas de comunicación para proporcionar una prueba de los procedimientos de supervisión.
+En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esto puede ser un resumen de todas las actividades asociadas con una directiva de organización definida o cada vez que cambia una directiva de cumplimiento de la comunicación. Las directivas de cumplimiento de comunicaciones tienen pistas de auditoría integradas para una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción de creación, edición y eliminación son capturados por las directivas de comunicación para proporcionar una prueba de los procedimientos de supervisión.
+
+> [!Important]
+> La auditoría debe estar habilitada para su organización antes de que se registren los eventos de cumplimiento de comunicaciones. Para habilitar la auditoría, consulte [enable Auditions for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
 
 Para ver las actividades de la Directiva de cumplimiento de comunicaciones, seleccione el control **exportar actividades de revisión** en la Página principal de cualquier directiva. Esto genera un archivo de auditoría en el formato. csv que contiene la siguiente información:
 

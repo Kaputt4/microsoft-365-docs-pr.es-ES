@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use clasificadores que se puedan entrenar cuando uno de los clasificadores de cuadros listos para usar no satisfaga sus necesidades. Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este tema se muestra cómo crear un clasificador personalizado.
-ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 6343635bb8e9dac12a8dde0867b3468347c2e84a
+ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813378"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39891091"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creación de un clasificador capacitado (versión preliminar)
 
@@ -30,7 +30,7 @@ Esta escala de tiempo refleja una implementación de ejemplo.
 ![trainable-Classifier-Timeline](media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> La suscripción es necesaria la primera vez para los clasificadores que se deben entrenar. Se necesitan doce días para Microsoft 365 para completar una evaluación de línea de base del contenido de su organización.
+> La suscripción es necesaria la primera vez para los clasificadores que se deben entrenar. Se necesitan doce días para Microsoft 365 para completar una evaluación de línea de base del contenido de su organización. Póngase en contacto con el administrador global para que inicie el proceso de suscripción.
 
 ## <a name="seed-content"></a>Contenido de inicialización
 

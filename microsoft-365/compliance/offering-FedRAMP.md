@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0e967520dbbac845861168d3eea5053e18a46edf
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: da8e7e473210c42cb5d95f2701779561c95b6bb3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859810"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804953"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programa de administración de riesgos y autorización Federal (FedRAMP)
 
@@ -62,15 +63,15 @@ Una vez que se concede una P-ATO, un CSP requiere una autorización (una ATO) de
 - Office 365 (planes empresariales y empresariales) y Office 365 el gobierno de Estados Unidos tienen una agencia FedRAMP de la agencia en el nivel de impacto moderado de la oficina del Departamento de salud y servicios humanos (DHHS) del inspector general. Office 365 U.S. Government fue el primer servicio de colaboración y correo electrónico basado en la nube para obtener esta autorización.
 - Cualquier cliente que desee usar O365 U.S. Government Defense puede usar la DISA P-ATO para generar una agencia ATO para documentar su aceptación de O365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
-- [Azure y Azure para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2095323)
+- [Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365 y Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)
 - Office 365 U.S. Government Defense
-- El servicio en la nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
-- ATP de Microsoft defender
+- El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
+- ATP de Microsoft Defender
 
 > [!NOTE]
 > El uso de Azure Active Directory en Azure Government requiere el uso de componentes que se implementan fuera de Azure Government en la nube pública de Azure.
@@ -109,10 +110,10 @@ Sí. Puede usar las certificaciones de los servicios en la nube de Microsoft com
 ## <a name="resources"></a>Recursos
 
 - [Programa de administración de riesgos y autorización Federal](https://www.fedramp.gov/)
-- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Marco de evaluación de seguridad de FedRAMP](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

@@ -3,6 +3,7 @@ title: Exportar resultados en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Obtenga información sobre cómo definir opciones para exportar resultados de eDiscovery avanzado de Office 365, incluido el procedimiento para especificar parámetros para un lote de exportación. '
-ms.openlocfilehash: ad11ac742f3157811523164c7e4d063e1d101343
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d535c24a3acfeb09f45ff26e0792f852bf7e016
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092434"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805873"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados en Office 365 Advanced eDiscovery
 
@@ -112,7 +113,7 @@ La herramienta de exportación de exhibición de documentos electrónicos se usa
   
    - En **configuración del campo para revisión**, en la lista desplegable **seleccionar escenario** , seleccione el escenario y el ámbito de la revisión. La configuración se muestra en función de la selección.
     
-      - **Revisar todos los** (valor predeterminado): todos los correos electrónicos, datos adjuntos y documentos están seleccionados de forma predeterminada. 
+      - **Revisar todo** (predeterminado): todos los correos electrónicos, datos adjuntos y documentos están seleccionados de forma predeterminada. 
     
       - **Revise todo el contenido único de un conjunto**: inclusivas y copias inclusivas inclusivas, datos adjuntos únicos en el nivel del conjunto de correo electrónico, representativo de cada conjunto de duplicados exactos.
     
