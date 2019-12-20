@@ -3,6 +3,7 @@ title: Ver el historial del lote y exportar los resultados anteriores en eDiscov
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,55 +14,55 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Aprenda a ver información detallada sobre las sesiones de lote de exportación seleccionadas y cómo deshacer la última sesión de exportación en Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: e4e84dc4115c7ec718112c8c38e20b306427c5c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5e20fa787bcbb9dc6072af779326518d6a03aaa4
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093123"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802255"
 ---
-# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a><span data-ttu-id="148c2-103">Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado de Office 365</span><span class="sxs-lookup"><span data-stu-id="148c2-103">View batch history and export past results in Office 365 Advanced eDiscovery</span></span>
+# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a><span data-ttu-id="43063-103">Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado de Office 365</span><span class="sxs-lookup"><span data-stu-id="43063-103">View batch history and export past results in Office 365 Advanced eDiscovery</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="148c2-p101">Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span><span class="sxs-lookup"><span data-stu-id="148c2-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="43063-p101">Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span><span class="sxs-lookup"><span data-stu-id="43063-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
-<span data-ttu-id="148c2-106">En la siguiente sección se describen opciones adicionales para la visualización y exportación de datos por lotes en eDiscovery avanzado.</span><span class="sxs-lookup"><span data-stu-id="148c2-106">The following section describes additional options for batch viewing and export of data in Advanced eDiscovery.</span></span> 
+<span data-ttu-id="43063-106">En la siguiente sección se describen opciones adicionales para la visualización y exportación de datos por lotes en eDiscovery avanzado.</span><span class="sxs-lookup"><span data-stu-id="43063-106">The following section describes additional options for batch viewing and export of data in Advanced eDiscovery.</span></span> 
   
-## <a name="viewing-export-batch-history-and-exporting-previous-batches"></a><span data-ttu-id="148c2-107">Ver el historial del lote de exportación y exportar lotes anteriores</span><span class="sxs-lookup"><span data-stu-id="148c2-107">Viewing Export batch history and exporting previous batches</span></span>
+## <a name="viewing-export-batch-history-and-exporting-previous-batches"></a><span data-ttu-id="43063-107">Ver el historial del lote de exportación y exportar lotes anteriores</span><span class="sxs-lookup"><span data-stu-id="43063-107">Viewing Export batch history and exporting previous batches</span></span>
 
-<span data-ttu-id="148c2-108">El cuadro de diálogo historial de exportación proporciona información detallada sobre las sesiones de exportación de lote seleccionadas y permite deshacer la última sesión.</span><span class="sxs-lookup"><span data-stu-id="148c2-108">The Export history dialog provides detailed information of selected export batch sessions and also provides the ability to undo the last session.</span></span>
+<span data-ttu-id="43063-108">El cuadro de diálogo historial de exportación proporciona información detallada sobre las sesiones de exportación de lote seleccionadas y permite deshacer la última sesión.</span><span class="sxs-lookup"><span data-stu-id="43063-108">The Export history dialog provides detailed information of selected export batch sessions and also provides the ability to undo the last session.</span></span>
   
-1. <span data-ttu-id="148c2-109">En **exportar \> configuración**, seleccione el nombre de la sección en la lista desplegable **exportar lote** .</span><span class="sxs-lookup"><span data-stu-id="148c2-109">In **Export \> Setup**, select the batch name from the **Export batch** drop-down list.</span></span> 
+1. <span data-ttu-id="43063-109">En **exportar \> configuración**, seleccione el nombre de la sección en la lista desplegable **exportar lote** .</span><span class="sxs-lookup"><span data-stu-id="43063-109">In **Export \> Setup**, select the batch name from the **Export batch** drop-down list.</span></span> 
     
-2. <span data-ttu-id="148c2-110">A la derecha del nombre del lote de exportación, seleccione el icono de **historial por lotes** :</span><span class="sxs-lookup"><span data-stu-id="148c2-110">To the right of the export batch name, select the **Batch history** icon:</span></span> 
+2. <span data-ttu-id="43063-110">A la derecha del nombre del lote de exportación, seleccione el icono de **historial por lotes** :</span><span class="sxs-lookup"><span data-stu-id="43063-110">To the right of the export batch name, select the **Batch history** icon:</span></span> 
     
     ![Icono de exportar historial por lotes](media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
   
-    <span data-ttu-id="148c2-112">Se muestra el cuadro de diálogo historial de lotes.</span><span class="sxs-lookup"><span data-stu-id="148c2-112">The Batch history dialog is displayed.</span></span>
+    <span data-ttu-id="43063-112">Se muestra el cuadro de diálogo historial de lotes.</span><span class="sxs-lookup"><span data-stu-id="43063-112">The Batch history dialog is displayed.</span></span>
     
     ![Exportar historial por lotes](media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
-3. <span data-ttu-id="148c2-114">Si es necesario revertir una sesión anterior, haga clic en **deshacer la última sesión**.</span><span class="sxs-lookup"><span data-stu-id="148c2-114">If it is necessary to roll back a previous session, click **Undo last session**.</span></span> <span data-ttu-id="148c2-115">La reversión se puede realizar varias veces, lo que cancela la última sesión.</span><span class="sxs-lookup"><span data-stu-id="148c2-115">Rollback can be performed multiple times, which cancels the last session.</span></span>
+3. <span data-ttu-id="43063-114">Si es necesario revertir una sesión anterior, haga clic en **deshacer la última sesión**.</span><span class="sxs-lookup"><span data-stu-id="43063-114">If it is necessary to roll back a previous session, click **Undo last session**.</span></span> <span data-ttu-id="43063-115">La reversión se puede realizar varias veces, lo que cancela la última sesión.</span><span class="sxs-lookup"><span data-stu-id="43063-115">Rollback can be performed multiple times, which cancels the last session.</span></span>
     
-4. <span data-ttu-id="148c2-116">Si desea descargar datos en cualquier momento desde una sesión de lote de exportación ejecutada anteriormente, haga \*\*\*\* clic en ![el icono de descarga icono](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) de descarga de historial por lotes junto al lote de exportación deseado que se va a exportar.</span><span class="sxs-lookup"><span data-stu-id="148c2-116">If you want to download data at any time from a previously executed export batch session, click the **Download** icon ![Export batch history download icon](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) next to the desired export batch to be exported.</span></span> 
+4. <span data-ttu-id="43063-116">Si desea descargar datos en cualquier momento desde una sesión de lote de exportación ejecutada anteriormente, haga \*\*\*\* clic en ![el icono de descarga icono](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) de descarga de historial por lotes junto al lote de exportación deseado que se va a exportar.</span><span class="sxs-lookup"><span data-stu-id="43063-116">If you want to download data at any time from a previously executed export batch session, click the **Download** icon ![Export batch history download icon](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) next to the desired export batch to be exported.</span></span> 
     
-5. <span data-ttu-id="148c2-117">Cuando aparezca el cuadro de diálogo **firma de acceso compartido** , haga clic en **copiar al portapapeles** para copiar los datos de la sesión de exportación en el equipo local y, a continuación, haga clic en **cerrar**.</span><span class="sxs-lookup"><span data-stu-id="148c2-117">When the **Shared access signature** dialog is displayed, click **Copy to clipboard** to copy the export session data to the local machine, and then click **Close**.</span></span> <span data-ttu-id="148c2-118">Se muestra el cuadro &amp; de diálogo de la **herramienta de exportación eDiscovery** del centro de seguridad y cumplimiento de Office 365.</span><span class="sxs-lookup"><span data-stu-id="148c2-118">The Office 365 Security &amp; Compliance Center **eDiscovery Export Tool** dialog is displayed.</span></span> 
+5. <span data-ttu-id="43063-117">Cuando aparezca el cuadro de diálogo **firma de acceso compartido** , haga clic en **copiar al portapapeles** para copiar los datos de la sesión de exportación en el equipo local y, a continuación, haga clic en **cerrar**.</span><span class="sxs-lookup"><span data-stu-id="43063-117">When the **Shared access signature** dialog is displayed, click **Copy to clipboard** to copy the export session data to the local machine, and then click **Close**.</span></span> <span data-ttu-id="43063-118">Se muestra el cuadro &amp; de diálogo de la **herramienta de exportación eDiscovery** del centro de seguridad y cumplimiento de Office 365.</span><span class="sxs-lookup"><span data-stu-id="43063-118">The Office 365 Security &amp; Compliance Center **eDiscovery Export Tool** dialog is displayed.</span></span> 
     
     ![Cuadro de diálogo Exportar exhibición de documentos electrónicos](media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
-6. <span data-ttu-id="148c2-120">En el cuadro de diálogo **herramienta de exportación de exhibición** de documentos electrónicos:</span><span class="sxs-lookup"><span data-stu-id="148c2-120">In the **eDiscovery Export Tool** dialog:</span></span> 
+6. <span data-ttu-id="43063-120">En el cuadro de diálogo **herramienta de exportación de exhibición** de documentos electrónicos:</span><span class="sxs-lookup"><span data-stu-id="43063-120">In the **eDiscovery Export Tool** dialog:</span></span> 
     
-1. <span data-ttu-id="148c2-121">En **pegar la firma de acceso compartido que se usará para conectarse al origen**, pegue el valor de **firma de acceso compartido** , que se copió previamente en el portapapeles.</span><span class="sxs-lookup"><span data-stu-id="148c2-121">In **Paste the Shared Access Signature that will be used to connect to the source**, paste the **Shared access signature** value, which was previously copied to the clipboard.</span></span> 
+1. <span data-ttu-id="43063-121">En **pegar la firma de acceso compartido que se usará para conectarse al origen**, pegue el valor de **firma de acceso compartido** , que se copió previamente en el portapapeles.</span><span class="sxs-lookup"><span data-stu-id="43063-121">In **Paste the Shared Access Signature that will be used to connect to the source**, paste the **Shared access signature** value, which was previously copied to the clipboard.</span></span> 
     
-2. <span data-ttu-id="148c2-122">Haga clic en **examinar** para seleccionar la ubicación de destino para almacenar los archivos de exportación descargados en un equipo local.</span><span class="sxs-lookup"><span data-stu-id="148c2-122">Click **Browse** to select the target location for storing the downloaded export files on a local machine.</span></span> 
+2. <span data-ttu-id="43063-122">Haga clic en **examinar** para seleccionar la ubicación de destino para almacenar los archivos de exportación descargados en un equipo local.</span><span class="sxs-lookup"><span data-stu-id="43063-122">Click **Browse** to select the target location for storing the downloaded export files on a local machine.</span></span> 
     
-3. <span data-ttu-id="148c2-123">Haga clic en  \*\*Iniciar \*\*.</span><span class="sxs-lookup"><span data-stu-id="148c2-123">Click **Start**.</span></span> <span data-ttu-id="148c2-124">Los archivos de exportación se descargan en el equipo local.</span><span class="sxs-lookup"><span data-stu-id="148c2-124">The export files are downloaded to the local machine.</span></span> 
+3. <span data-ttu-id="43063-123">Haga clic en **Iniciar**.</span><span class="sxs-lookup"><span data-stu-id="43063-123">Click **Start**.</span></span> <span data-ttu-id="43063-124">Los archivos de exportación se descargan en el equipo local.</span><span class="sxs-lookup"><span data-stu-id="43063-124">The export files are downloaded to the local machine.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="148c2-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="148c2-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="43063-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="43063-125">See also</span></span>
 
-[<span data-ttu-id="148c2-126">eDiscovery avanzado de Office 365</span><span class="sxs-lookup"><span data-stu-id="148c2-126">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
+[<span data-ttu-id="43063-126">eDiscovery avanzado de Office 365</span><span class="sxs-lookup"><span data-stu-id="43063-126">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="148c2-127">Exportar resultados</span><span class="sxs-lookup"><span data-stu-id="148c2-127">Exporting results </span></span>](export-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="43063-127">Exportar resultados</span><span class="sxs-lookup"><span data-stu-id="43063-127">Exporting results </span></span>](export-results-in-advanced-ediscovery.md)
 
-[<span data-ttu-id="148c2-128">Exportar campos de informes</span><span class="sxs-lookup"><span data-stu-id="148c2-128">Export report fields</span></span>](export-report-fields-in-advanced-ediscovery.md)
+[<span data-ttu-id="43063-128">Exportar campos de informes</span><span class="sxs-lookup"><span data-stu-id="43063-128">Export report fields</span></span>](export-report-fields-in-advanced-ediscovery.md)
 

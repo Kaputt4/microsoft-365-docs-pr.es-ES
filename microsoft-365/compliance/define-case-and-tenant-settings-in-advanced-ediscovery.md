@@ -3,6 +3,7 @@ title: Definir la configuración de casos y espacios empresariales en eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,82 +13,82 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: 'Obtenga información sobre las etiquetas, los módulos cruzados y la configuración de inquilino que puede definir en el nivel de escenario en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: 69e6e824a7c6a5698e9dc25095d4fab49e369490
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 19c653544173afe31b299b9ab5d2b4fc37415630
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091775"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806123"
 ---
-# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a><span data-ttu-id="8599f-103">Definir la configuración de casos y espacios empresariales en eDiscovery avanzado de Office 365</span><span class="sxs-lookup"><span data-stu-id="8599f-103">Define case and tenant settings in Office 365 Advanced eDiscovery</span></span>
+# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a><span data-ttu-id="a74c8-103">Definir la configuración de casos y espacios empresariales en eDiscovery avanzado de Office 365</span><span class="sxs-lookup"><span data-stu-id="a74c8-103">Define case and tenant settings in Office 365 Advanced eDiscovery</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8599f-p101">Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span><span class="sxs-lookup"><span data-stu-id="8599f-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="a74c8-p101">Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span><span class="sxs-lookup"><span data-stu-id="a74c8-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
-<span data-ttu-id="8599f-106">El caso de eDiscovery avanzado y la configuración de inquilino se describen en este tema.</span><span class="sxs-lookup"><span data-stu-id="8599f-106">The Advanced eDiscovery case and tenant settings are described in this topic.</span></span>
+<span data-ttu-id="a74c8-106">El caso de eDiscovery avanzado y la configuración de inquilino se describen en este tema.</span><span class="sxs-lookup"><span data-stu-id="a74c8-106">The Advanced eDiscovery case and tenant settings are described in this topic.</span></span>
   
-## <a name="case-settings"></a><span data-ttu-id="8599f-107">Configuración de casos</span><span class="sxs-lookup"><span data-stu-id="8599f-107">Case settings</span></span>
+## <a name="case-settings"></a><span data-ttu-id="a74c8-107">Configuración de casos</span><span class="sxs-lookup"><span data-stu-id="a74c8-107">Case settings</span></span>
 
-<span data-ttu-id="8599f-108">En esta sección se describe la configuración que se puede definir en el nivel de escenario.</span><span class="sxs-lookup"><span data-stu-id="8599f-108">This sections describes the settings that can be defined at the case level.</span></span>
+<span data-ttu-id="a74c8-108">En esta sección se describe la configuración que se puede definir en el nivel de escenario.</span><span class="sxs-lookup"><span data-stu-id="a74c8-108">This sections describes the settings that can be defined at the case level.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="8599f-109">Si no hay ningún caso seleccionado actualmente en eDiscovery avanzado, la pestaña **configuración de casos** está inactiva.</span><span class="sxs-lookup"><span data-stu-id="8599f-109">If no case is currently selected in Advanced eDiscovery, the **Case settings** tab is inactive.</span></span> 
+> <span data-ttu-id="a74c8-109">Si no hay ningún caso seleccionado actualmente en eDiscovery avanzado, la pestaña **configuración de casos** está inactiva.</span><span class="sxs-lookup"><span data-stu-id="a74c8-109">If no case is currently selected in Advanced eDiscovery, the **Case settings** tab is inactive.</span></span> 
   
-### <a name="cross-module"></a><span data-ttu-id="8599f-110">Módulo cruzado</span><span class="sxs-lookup"><span data-stu-id="8599f-110">Cross module</span></span>
+### <a name="cross-module"></a><span data-ttu-id="a74c8-110">Módulo cruzado</span><span class="sxs-lookup"><span data-stu-id="a74c8-110">Cross module</span></span>
 
-<span data-ttu-id="8599f-111">Las siguientes opciones de configuración de varios módulos son opciones de mayúsculas y minúsculas que se aplican a módulos de eDiscovery avanzados.</span><span class="sxs-lookup"><span data-stu-id="8599f-111">The following Cross module settings are case options that apply to Advanced eDiscovery modules.</span></span>
+<span data-ttu-id="a74c8-111">Las siguientes opciones de configuración de varios módulos son opciones de mayúsculas y minúsculas que se aplican a módulos de eDiscovery avanzados.</span><span class="sxs-lookup"><span data-stu-id="a74c8-111">The following Cross module settings are case options that apply to Advanced eDiscovery modules.</span></span>
   
-- <span data-ttu-id="8599f-112">Página predeterminada después del inicio de sesión: establece la página predeterminada que se mostrará al iniciar la exhibición avanzada de documentos electrónicos.</span><span class="sxs-lookup"><span data-stu-id="8599f-112">Default page after login: Sets the default page to be displayed upon starting Advanced eDiscovery.</span></span>
+- <span data-ttu-id="a74c8-112">Página predeterminada después del inicio de sesión: establece la página predeterminada que se mostrará al iniciar la exhibición avanzada de documentos electrónicos.</span><span class="sxs-lookup"><span data-stu-id="a74c8-112">Default page after login: Sets the default page to be displayed upon starting Advanced eDiscovery.</span></span>
     
-- <span data-ttu-id="8599f-113">Nombre para mostrar de archivo: identificador de archivo que se mostrará en la exhibición avanzada de documentos electrónicos para identificar el archivo, como alternativa al nombre para mostrar de exhibición de documentos electrónicos avanzado del título/ruta de acceso del archivo o asunto del correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="8599f-113">File display name: File identifier that will be displayed throughout Advanced eDiscovery to identify the file, as an alternative to the Advanced eDiscovery display name of file title/path or email subject.</span></span>
+- <span data-ttu-id="a74c8-113">Nombre para mostrar de archivo: identificador de archivo que se mostrará en la exhibición avanzada de documentos electrónicos para identificar el archivo, como alternativa al nombre para mostrar de exhibición de documentos electrónicos avanzado del título/ruta de acceso del archivo o asunto del correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="a74c8-113">File display name: File identifier that will be displayed throughout Advanced eDiscovery to identify the file, as an alternative to the Advanced eDiscovery display name of file title/path or email subject.</span></span>
     
-1. <span data-ttu-id="8599f-114">Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** .</span><span class="sxs-lookup"><span data-stu-id="8599f-114">Open **Settings and utilities** by clicking the **Cogwheel** icon.</span></span> <span data-ttu-id="8599f-115">\> Abrir **configuración y ficha \> configuración de casos de utilidades** - **módulo Cross**.</span><span class="sxs-lookup"><span data-stu-id="8599f-115">Open **Settings and utilities \> Case settings** tab \> **Cross module**.</span></span> 
+1. <span data-ttu-id="a74c8-114">Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** .</span><span class="sxs-lookup"><span data-stu-id="a74c8-114">Open **Settings and utilities** by clicking the **Cogwheel** icon.</span></span> <span data-ttu-id="a74c8-115">\> Abrir **configuración y ficha \> configuración de casos de utilidades** - **módulo Cross**.</span><span class="sxs-lookup"><span data-stu-id="a74c8-115">Open **Settings and utilities \> Case settings** tab \> **Cross module**.</span></span> 
     
-2. <span data-ttu-id="8599f-116">Seleccione una de las opciones de inicio de sesión de la **página predeterminada** :</span><span class="sxs-lookup"><span data-stu-id="8599f-116">Select from the **Default page after login** options:</span></span> 
+2. <span data-ttu-id="a74c8-116">Seleccione una de las opciones de inicio de sesión de la **página predeterminada** :</span><span class="sxs-lookup"><span data-stu-id="a74c8-116">Select from the **Default page after login** options:</span></span> 
     
-  - <span data-ttu-id="8599f-117">**Última página del inicio de sesión anterior**</span><span class="sxs-lookup"><span data-stu-id="8599f-117">**Last page of previous login**</span></span>
+  - <span data-ttu-id="a74c8-117">**Última página del inicio de sesión anterior**</span><span class="sxs-lookup"><span data-stu-id="a74c8-117">**Last page of previous login**</span></span>
     
-  - <span data-ttu-id="8599f-118">**Página casos**</span><span class="sxs-lookup"><span data-stu-id="8599f-118">**Cases page**</span></span>
+  - <span data-ttu-id="a74c8-118">**Página casos**</span><span class="sxs-lookup"><span data-stu-id="a74c8-118">**Cases page**</span></span>
     
-3. <span data-ttu-id="8599f-119">Haga clic en \*\*Guardar \*\*.</span><span class="sxs-lookup"><span data-stu-id="8599f-119">Click **Save**.</span></span>
+3. <span data-ttu-id="a74c8-119">Haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="a74c8-119">Click **Save**.</span></span>
     
-## <a name="tenant-settings"></a><span data-ttu-id="8599f-120">Configuración de inquilino</span><span class="sxs-lookup"><span data-stu-id="8599f-120">Tenant settings</span></span>
+## <a name="tenant-settings"></a><span data-ttu-id="a74c8-120">Configuración de espacios empresariales</span><span class="sxs-lookup"><span data-stu-id="a74c8-120">Tenant settings</span></span>
 
-<span data-ttu-id="8599f-121">En esta sección se describen los valores de configuración del espacio empresarial de eDiscovery avanzado.</span><span class="sxs-lookup"><span data-stu-id="8599f-121">The Advanced eDiscovery Tenant settings are described in this section.</span></span>
+<span data-ttu-id="a74c8-121">En esta sección se describen los valores de configuración del espacio empresarial de eDiscovery avanzado.</span><span class="sxs-lookup"><span data-stu-id="a74c8-121">The Advanced eDiscovery Tenant settings are described in this section.</span></span>
   
-### <a name="user-administration"></a><span data-ttu-id="8599f-122">Administración de usuarios</span><span class="sxs-lookup"><span data-stu-id="8599f-122">User administration</span></span>
+### <a name="user-administration"></a><span data-ttu-id="a74c8-122">Administración de usuarios</span><span class="sxs-lookup"><span data-stu-id="a74c8-122">User administration</span></span>
 
-<span data-ttu-id="8599f-123">Las opciones de administración de usuarios se describen en [configurar usuarios y casos](set-up-users-and-cases-in-advanced-ediscovery.md).</span><span class="sxs-lookup"><span data-stu-id="8599f-123">The User administration options are described in [Setting up users and cases](set-up-users-and-cases-in-advanced-ediscovery.md).</span></span>
+<span data-ttu-id="a74c8-123">Las opciones de administración de usuarios se describen en [configurar usuarios y casos](set-up-users-and-cases-in-advanced-ediscovery.md).</span><span class="sxs-lookup"><span data-stu-id="a74c8-123">The User administration options are described in [Setting up users and cases](set-up-users-and-cases-in-advanced-ediscovery.md).</span></span>
   
-### <a name="event-log"></a><span data-ttu-id="8599f-124">Registro de eventos</span><span class="sxs-lookup"><span data-stu-id="8599f-124">Event log</span></span>
+### <a name="event-log"></a><span data-ttu-id="a74c8-124">Registro de eventos</span><span class="sxs-lookup"><span data-stu-id="a74c8-124">Event log</span></span>
 
-<span data-ttu-id="8599f-125">El registro de eventos proporciona metadatos sobre el procesamiento avanzado de eDiscovery en cualquier momento durante la operación avanzada de eDiscovery.</span><span class="sxs-lookup"><span data-stu-id="8599f-125">The Event log provides metadata regarding Advanced eDiscovery processing anytime during Advanced eDiscovery operation.</span></span> <span data-ttu-id="8599f-126">Por ejemplo, incluye la hora de inicio de los procesos principales de eDiscovery avanzado (importación, análisis, relevancia y exportación), así como la hora de finalización y el estado.</span><span class="sxs-lookup"><span data-stu-id="8599f-126">For example, it includes the start time of the main Advanced eDiscovery processes (Import, Analyze, Relevance, and Export) as well as the end time and status.</span></span> <span data-ttu-id="8599f-127">Este registro se puede usar para realizar un seguimiento de las actividades de procesamiento de datos y solucionar sus problemas, así como para resolver errores y advertencias.</span><span class="sxs-lookup"><span data-stu-id="8599f-127">This log can be used for tracking and troubleshooting data processing activities and for addressing errors and warnings.</span></span>
+<span data-ttu-id="a74c8-125">El registro de eventos proporciona metadatos sobre el procesamiento avanzado de eDiscovery en cualquier momento durante la operación avanzada de eDiscovery.</span><span class="sxs-lookup"><span data-stu-id="a74c8-125">The Event log provides metadata regarding Advanced eDiscovery processing anytime during Advanced eDiscovery operation.</span></span> <span data-ttu-id="a74c8-126">Por ejemplo, incluye la hora de inicio de los procesos principales de eDiscovery avanzado (importación, análisis, relevancia y exportación), así como la hora de finalización y el estado.</span><span class="sxs-lookup"><span data-stu-id="a74c8-126">For example, it includes the start time of the main Advanced eDiscovery processes (Import, Analyze, Relevance, and Export) as well as the end time and status.</span></span> <span data-ttu-id="a74c8-127">Este registro se puede usar para realizar un seguimiento de las actividades de procesamiento de datos y solucionar sus problemas, así como para resolver errores y advertencias.</span><span class="sxs-lookup"><span data-stu-id="a74c8-127">This log can be used for tracking and troubleshooting data processing activities and for addressing errors and warnings.</span></span>
   
-1. <span data-ttu-id="8599f-128">Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** .</span><span class="sxs-lookup"><span data-stu-id="8599f-128">Open **Settings and utilities** by clicking the **Cogwheel** icon.</span></span> 
+1. <span data-ttu-id="a74c8-128">Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** .</span><span class="sxs-lookup"><span data-stu-id="a74c8-128">Open **Settings and utilities** by clicking the **Cogwheel** icon.</span></span> 
     
-2. <span data-ttu-id="8599f-129">En la pestaña Configuración de **inquilinos de configuración y \> utilidades** , seleccione Registro de **eventos**.</span><span class="sxs-lookup"><span data-stu-id="8599f-129">In the **Settings and utilities \> Tenant settings** tab, select **Event log**.</span></span> <span data-ttu-id="8599f-130">Se muestran los datos del registro de eventos.</span><span class="sxs-lookup"><span data-stu-id="8599f-130">The event log data is displayed.</span></span>
+2. <span data-ttu-id="a74c8-129">En la pestaña Configuración de **inquilinos de configuración y \> utilidades** , seleccione Registro de **eventos**.</span><span class="sxs-lookup"><span data-stu-id="a74c8-129">In the **Settings and utilities \> Tenant settings** tab, select **Event log**.</span></span> <span data-ttu-id="a74c8-130">Se muestran los datos del registro de eventos.</span><span class="sxs-lookup"><span data-stu-id="a74c8-130">The event log data is displayed.</span></span>
     
-  - <span data-ttu-id="8599f-131">Para filtrar la salida del registro en un caso, seleccione el caso en la lista **casos** .</span><span class="sxs-lookup"><span data-stu-id="8599f-131">To filter the log output by a case, select the case from the **Cases** list.</span></span> 
+  - <span data-ttu-id="a74c8-131">Para filtrar la salida del registro en un caso, seleccione el caso en la lista **casos** .</span><span class="sxs-lookup"><span data-stu-id="a74c8-131">To filter the log output by a case, select the case from the **Cases** list.</span></span> 
     
-  - <span data-ttu-id="8599f-132">Para ordenar el registro por columnas, haga clic en un encabezado de columna.</span><span class="sxs-lookup"><span data-stu-id="8599f-132">To sort the log by columns, click a column header.</span></span> 
+  - <span data-ttu-id="a74c8-132">Para ordenar el registro por columnas, haga clic en un encabezado de columna.</span><span class="sxs-lookup"><span data-stu-id="a74c8-132">To sort the log by columns, click a column header.</span></span> 
     
-  - <span data-ttu-id="8599f-133">Para modificar el orden de las columnas, haga clic y arrastre el encabezado de columna.</span><span class="sxs-lookup"><span data-stu-id="8599f-133">To modify column order, click and drag the column header.</span></span>
+  - <span data-ttu-id="a74c8-133">Para modificar el orden de las columnas, haga clic y arrastre el encabezado de columna.</span><span class="sxs-lookup"><span data-stu-id="a74c8-133">To modify column order, click and drag the column header.</span></span>
     
-  - <span data-ttu-id="8599f-134">Para desplazarse entre las páginas **\>** de **\<** registro, haga clic en e iconos.</span><span class="sxs-lookup"><span data-stu-id="8599f-134">To move between log pages, click **\>** and **\<** icons.</span></span> 
+  - <span data-ttu-id="a74c8-134">Para desplazarse entre las páginas **\>** de **\<** registro, haga clic en e iconos.</span><span class="sxs-lookup"><span data-stu-id="a74c8-134">To move between log pages, click **\>** and **\<** icons.</span></span> 
     
-### <a name="system-information"></a><span data-ttu-id="8599f-135">Información del sistema</span><span class="sxs-lookup"><span data-stu-id="8599f-135">System information</span></span>
+### <a name="system-information"></a><span data-ttu-id="a74c8-135">Información del sistema</span><span class="sxs-lookup"><span data-stu-id="a74c8-135">System information</span></span>
 
-<span data-ttu-id="8599f-136">La información del sistema de versión de eDiscovery avanzada y las tareas activas se muestran en la pestaña Configuración de inquilino.</span><span class="sxs-lookup"><span data-stu-id="8599f-136">Advanced eDiscovery version system information and active tasks are displayed in the Tenant settings tab.</span></span>
+<span data-ttu-id="a74c8-136">La información del sistema de versión de eDiscovery avanzada y las tareas activas se muestran en la pestaña Configuración de inquilino.</span><span class="sxs-lookup"><span data-stu-id="a74c8-136">Advanced eDiscovery version system information and active tasks are displayed in the Tenant settings tab.</span></span>
   
-1. <span data-ttu-id="8599f-137">Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** .</span><span class="sxs-lookup"><span data-stu-id="8599f-137">Open **Settings and utilities** by clicking the **Cogwheel** icon.</span></span> 
+1. <span data-ttu-id="a74c8-137">Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** .</span><span class="sxs-lookup"><span data-stu-id="a74c8-137">Open **Settings and utilities** by clicking the **Cogwheel** icon.</span></span> 
     
-2. <span data-ttu-id="8599f-138">En la pestaña Configuración de \*\*inquilinos de configuración y utilidades \> \*\* , seleccione **información del sistema**.</span><span class="sxs-lookup"><span data-stu-id="8599f-138">In the **Settings and utilities \> Tenant settings** tab, select **System information**.</span></span> <span data-ttu-id="8599f-139">Se muestra la información de la versión.</span><span class="sxs-lookup"><span data-stu-id="8599f-139">The version information is displayed.</span></span>
+2. <span data-ttu-id="a74c8-138">En la pestaña Configuración de \*\*inquilinos de configuración y utilidades \> \*\* , seleccione **información del sistema**.</span><span class="sxs-lookup"><span data-stu-id="a74c8-138">In the **Settings and utilities \> Tenant settings** tab, select **System information**.</span></span> <span data-ttu-id="a74c8-139">Se muestra la información de la versión.</span><span class="sxs-lookup"><span data-stu-id="a74c8-139">The version information is displayed.</span></span>
     
-<span data-ttu-id="8599f-140">La visualización se puede actualizar haciendo clic en el icono de **actualización** debajo de la información del espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="8599f-140">The display can be updated by clicking the **Refresh** icon below the Tenant information.</span></span> 
+<span data-ttu-id="a74c8-140">La visualización se puede actualizar haciendo clic en el icono de **actualización** debajo de la información del espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="a74c8-140">The display can be updated by clicking the **Refresh** icon below the Tenant information.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="8599f-141">Vea también</span><span class="sxs-lookup"><span data-stu-id="8599f-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a74c8-141">Vea también</span><span class="sxs-lookup"><span data-stu-id="a74c8-141">See also</span></span>
 
-[<span data-ttu-id="8599f-142">eDiscovery avanzado de Office 365</span><span class="sxs-lookup"><span data-stu-id="8599f-142">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
+[<span data-ttu-id="a74c8-142">eDiscovery avanzado de Office 365</span><span class="sxs-lookup"><span data-stu-id="a74c8-142">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="8599f-143">Uso de utilidades</span><span class="sxs-lookup"><span data-stu-id="8599f-143">Using utilities</span></span>](use-advanced-ediscovery-utilities.md)
+[<span data-ttu-id="a74c8-143">Uso de utilidades</span><span class="sxs-lookup"><span data-stu-id="a74c8-143">Using utilities</span></span>](use-advanced-ediscovery-utilities.md)
 
