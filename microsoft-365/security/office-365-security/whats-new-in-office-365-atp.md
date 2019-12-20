@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4d9401c7568534e9f9a0036ef273964d327dbf06
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a43576bc18d54e3a5c9b2f9ad918c1df3ee67615
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971408"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807945"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -33,7 +33,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP Plan 1 y Plan 2
 
-Office 365 ATP está disponible en dos planes: Office 365 el plan 1 de ATP y Office 365 ATP plan 2. [Obtenga más información sobre lo que se incluye en cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+Office 365 ATP está disponible en dos planes: Office 365 el plan 1 de ATP y Office 365 ATP plan 2. [Más información](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 ## <a name="december-2019"></a>Diciembre de 2019
 

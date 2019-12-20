@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b17b5a3458458ff0c73c93fa184ef8ff6a064199
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: faa0e904ef2a07ccd209ef91630ce6fc8205e347
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012001"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801202"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte de administración para escritorio administrado de Microsoft
 
@@ -51,15 +51,22 @@ Detalles adicionales:
 - **Compatibilidad de aplicaciones** : para tener en cuenta un problema de compatibilidad de aplicaciones, debe haber un error reproducible, de la misma versión de la aplicación, entre la versión anterior y la versión actual de Windows u Office. Para resolver problemas de compatibilidad de aplicaciones, Microsoft requiere un punto de contacto del cliente con el que trabajar. La persona debe trabajar directamente con nuestro equipo de seguimiento rápido para investigar y resolver el problema.
 - **Tiempo de respuesta del cliente** Si un cliente no puede cumplir los requisitos de respuesta esperados, Microsoft reducirá la solicitud en un nivel de gravedad, con un mínimo de gravedad C. Si un cliente no responde a las solicitudes de acción, Microsoft se atenuará y cerrará la solicitud de soporte en un plazo de 48 horas a partir de la última solicitud.
 
+## <a name="provide-feedback"></a>Enviar comentarios
 
-## <a name="providing-administrator-rights-to-specific-users"></a>Ofrecer derechos de administrador a usuarios específicos
+Agradecemos sus comentarios y la usamos para mejorar la experiencia de soporte de administración.
+
+Una vez que un vale está en estado **mitigado** o **resuelto** , puede compartir sus comentarios sobre su experiencia con ese problema en particular. Para ello, vaya a la página **solicitudes de soporte técnico** en el portal de administración. Seleccione el vale específico. En el momento en que aparece en el lado derecho, seleccione la pestaña **comentarios** y proporcione la información solicitada. Tenga cuidado de no incluir información personal en el formulario de comentarios. Para obtener más información acerca de la privacidad, consulte la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+![Formulario de comentarios](images/feedback_form.png)
+
+## <a name="provide-administrator-rights-to-specific-users"></a>Proporcionar derechos de administrador a usuarios específicos
 
 Mientras trabaja con el personal de soporte técnico, es posible que deba proporcionar derechos de administrador local a un usuario en un dispositivo para ayudarle a solucionar problemas. Para ello, debe disponer de derechos de administrador global o de administrador de dispositivos en Microsoft Intune para su propia cuenta. Siga alguno de estos pasos, según su situación:
 
 - Si los usuarios están sincronizados desde una cuenta local de Active Directory, ejecute **net localgroup Administrators/Add "Contoso\username"** desde un símbolo del sistema con privilegios elevados.
 - Si los usuarios se crean en Azure Active Directory, ejecute **net localgroup Administrators/Add "AzureAD\UserUpn"** en un símbolo del sistema con privilegios elevados.
 
-## <a name="additional-resources"></a>Otros recursos
+## <a name="additional-resources"></a>Recursos adicionales
 - [Compatibilidad con el usuario final para escritorio administrado de Microsoft](end-user-support.md). 
 - [Soporte para escritorio administrado de Microsoft](../service-description/support.md). 
-- Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en la sección **recursos en línea** del [Administrador de escritorio administrado de Microsoft Portal](https://aka.ms/mwaasportal).
+- Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en la sección **recursos en línea** del [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal).

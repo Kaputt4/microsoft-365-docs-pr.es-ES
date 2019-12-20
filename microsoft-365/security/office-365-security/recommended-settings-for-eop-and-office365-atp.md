@@ -1,7 +1,8 @@
 ---
-title: Recomendaciones de Microsoft para EOP y Office 365 la configuración de seguridad de ATP, recomendaciones, marco de directivas de remitente, informes de mensajes basados en dominio y conformidad, correo identificado por DomainKeys, pasos, cómo funciona, etc.
+title: Recomendaciones de Microsoft para EOP y Office 365 la configuración de seguridad de ATP, las recomendaciones, el marco de directivas de remitente, la creación de informes de mensajes basados en dominios y su conformidad, el correo identificado por DomainKeys, los pasos, cómo funciona, las líneas de base de seguridad, las líneas de base para EOP, líneas de base para ATP, configurar ATP, configurar EOP, configurar ATP, configurar EOP, configuración de seguridad
 ms.author: tracyp
 author: MSFTTracyP
+ms.date: 12/12/2019
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -13,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 60042d5903a9dadd178fe68b3a73a3a2b9148798
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971548"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807975"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -44,7 +45,7 @@ Anti-spam, anti-malware y anti-phishing son características de EOP que los admi
 |Acción de detección de correo phishing|Colocar el mensaje en cuarentena|Colocar el mensaje en cuarentena||
 |Acción de detección de correo electrónico de phish de confianza alta|Colocar el mensaje en cuarentena|Colocar el mensaje en cuarentena||
 |Acción de detección de correo electrónico en masa|Mover mensaje a la carpeta Correo no deseado|Colocar el mensaje en cuarentena||
-|Establecer el umbral de correo electrónico masivo en|6 |4 |Actualmente, el valor predeterminado es 7, pero se recomienda cambiarlo a 6. Para obtener más información, vea [valores de nivel de queja masiva](bulk-complaint-level-values.md).|
+|Establecer el umbral de correo electrónico masivo en|6 |4|Actualmente, el valor predeterminado es 7, pero se recomienda cambiarlo a 6. Para obtener más información, vea [valores de nivel de queja masiva](bulk-complaint-level-values.md).|
 |Período de retención de cuarentena|30 días|30 días||
 |Sugerencias de seguridad|Activado|Activado||
 |Remitentes permitidos|Ninguno|Ninguno||
@@ -57,23 +58,23 @@ Anti-spam, anti-malware y anti-phishing son características de EOP que los admi
 
 Hay varios otros parámetros en la Directiva contra correo no deseado denominados filtro de correo no deseado avanzado que se han dejado de estar en desuso en el momento de escribir este tema. Nuestra configuración recomendada para estos **son desactivar los** niveles estándar y estrictos:
 
-|Nombre de la característica de seguridad|
-|---------|
-|IncreaseScoreWithImageLinks|
-|IncreaseScoreWithNumericIps|
-|IncreaseScoreWithRedirectToOtherPort|
-|IncreaseScoreWithBizOrInfoUrls|
-|MarkAsSpamEmptyMessages|
-|MarkAsSpamJavaScriptInHtml|
-|MarkAsSpamFramesInHtml|
-|MarkAsSpamObjectTagsInHtml|
-|MarkAsSpamEmbedTagsInHtml|
-|MarkAsSpamFormTagsInHtml|
-|MarkAsSpamWebBugsInHtml|
-|MarkAsSpamSensitiveWordList|
-|MarkAsSpamFromAddressAuthFail|
-|MarkAsSpamNdrBackscatter|
-|MarkAsSpamSpfRecordHardFail|
+|Nombre de la característica de seguridad| Comentarios |
+|---------|---------|
+|IncreaseScoreWithImageLinks| |
+|IncreaseScoreWithNumericIps| |
+|IncreaseScoreWithRedirectToOtherPort| |
+|IncreaseScoreWithBizOrInfoUrls| |
+|MarkAsSpamEmptyMessages| |
+|MarkAsSpamJavaScriptInHtml| |
+|MarkAsSpamFramesInHtml| |
+|MarkAsSpamObjectTagsInHtml| |
+|MarkAsSpamEmbedTagsInHtml| |
+|MarkAsSpamFormTagsInHtml| |
+|MarkAsSpamWebBugsInHtml| |
+|MarkAsSpamSensitiveWordList| |
+|MarkAsSpamFromAddressAuthFail| |
+|MarkAsSpamNdrBackscatter| |
+|MarkAsSpamSpfRecordHardFail| |
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>Configuración de directiva de filtro de correo no deseado de EOP
 
@@ -166,3 +167,14 @@ No realizar seguimiento cuando los usuarios hagan clic en vínculos seguros|Desh
 |Datos adjuntos seguros de ATP respuesta de malware desconocida|Desbloquear|Desbloquear||
 |Redirigir datos adjuntos en detección|Habilitado|Habilitado|Redirigir a la dirección de correo electrónico de un administrador de seguridad que sabe cómo determinar si los datos adjuntos son malware o no.|
 |Respuesta de datos adjuntos seguros de ATP si se produce un análisis de malware para archivos adjuntos de tiempo de espera o error|Habilitado|Habilitado||
+
+
+## <a name="related-topics"></a>Temas relacionados
+
+- ¿Necesita procedimientos recomendados con **las reglas de transporte de Exchange/flujo de correo**de Exchange? Consulte [este artículo](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) para obtener más información.
+
+- Enviar correos sospechosos, sospechosos de ser correo no deseado, phish o direcciones URL a Microsoft para su análisis. Use las instrucciones de los **envíos de administración** de [este artículo](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+
+- Use estos vínculos para obtener información sobre cómo **configurar** el [servicio de EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)y cómo **configurar** la [protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). (No olvide ver las direcciones útiles en '[proteger contra amenazas en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)').
+
+- Las **líneas de base de seguridad para Windows** se pueden encontrar [aquí](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) para las opciones de GPO/local y para la seguridad basada en Intune, [aquí](https://docs.microsoft.com/intune/protect/security-baselines). Por último [, se muestra](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)una comparación entre la protección contra amenazas avanzada (ATP) de Microsoft defender y las líneas de seguridad de Windows Intune.

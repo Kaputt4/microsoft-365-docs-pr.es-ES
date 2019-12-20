@@ -13,12 +13,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Obtenga información sobre las cuentas de facturación y cómo administrarlas.
-ms.openlocfilehash: 9ea96a0187a1f4bec9c71dc02478375a4c13b371
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 9a5d7548608cb44befb271e63420e7eb84b2e399
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837971"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805753"
 ---
 # <a name="manage-billing-accounts"></a>Administrar cuentas de facturación
 
@@ -46,6 +46,15 @@ En la siguiente tabla se enumeran los términos importantes que aparecen en la p
 | IDENTIFICADOR de impuesto | Si está fuera de los Estados Unidos, debe proporcionar un IVA o un equivalente local. Para obtener más información, consulte [información fiscal](#tax-information). |
 | Agreement | Cuando se crea una cuenta de facturación, ya sea a través de una compra directa o un acuerdo de licencias por volumen, un signatario de la organización acepta, o firma, un acuerdo que describe los términos & condiciones de la cuenta. Si procede, esta vista muestra el historial de un contrato. Si se le pide que acepte los términos actualizados, se muestra un vínculo para el **acuerdo de aprobación** . |
 | Perfiles de facturación | Un perfil de facturación define las propiedades de la factura, como quién recibe la factura, cómo se entrega la factura, las condiciones de pago y un número de pedido de compra. Para distribuir la facturación en su organización, puede crear varios perfiles de facturación e identificar el perfil de facturación adecuado en el momento de la compra. Para obtener más información acerca de los perfiles de facturación y de cómo puede usarlos para crear opciones de facturación más flexibles para su organización, [administre los perfiles de facturación](../billing-and-payments/manage-billing-profiles.md). |
+
+> [!NOTE] 
+> Si desea cambiar el nombre o la dirección del **usuario al** que se ha vendido, pero no ve ningún vínculo **Editar** , debe [ponerse en contacto con el soporte técnico](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) para cambiarlo. Las solicitudes de un cambio de nombre **vendido** requerirán una comprobación de crédito. Cuando se ponga en contacto con el soporte técnico, tenga preparado uno de los siguientes documentos:
+>
+> - Documento de anuncio externo que indica cualquier cambio en el nombre de la compañía o la estructura corporativa
+> - Documento o carta de registro emitido por el gobierno
+> - Imprimir fuera del registro de la compañía local
+>
+> El soporte técnico puede ayudarle con los cambios de nombre y dirección donde solo cambia el nombre del cliente, pero la entidad sigue siendo la misma. La documentación proporcionada debería indicar claramente que solo ha cambiado el nombre de la entidad. Si el cambio está relacionado con cualquier transacción, como una venta de negocio o un desinversión o "spinoff" de una filial de un cliente, ponte en contacto con el vendedor de Microsoft.
 
 ## <a name="shipping-addresses"></a>Direcciones de envío
 

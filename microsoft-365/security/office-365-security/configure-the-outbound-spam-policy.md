@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: El filtrado de correo no deseado saliente siempre está habilitado si utiliza el servicio para enviar correo electrónico saliente, lo que protege a las organizaciones que utilizan el servicio y sus destinatarios.
-ms.openlocfilehash: 06c74b578d7c18ad2f193bcbd4a8f9cdb6794416
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970876"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808445"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurar la directiva de correo no deseado saliente
 
@@ -61,11 +61,11 @@ Utilice el siguiente procedimiento para editar la directiva predeterminada del c
 
    Al administrador del dominio, que se especifica con esta opción de configuración, se le informa de que se han bloqueado los mensajes salientes de este usuario.  Para ver el aspecto que tiene esta notificación, véase [Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md).
 
-   [Nota] También se genera una alerta del sistema que indica que el usuario se ha restringido.  Para obtener más información sobre la alerta y cómo recuperar el usuario, vea [quitar un usuario del portal de usuarios restringidos después de enviar correo no deseado](removing-user-from-restricted-users-portal-after-spam.md).
+   > [Nota] También se genera una alerta del sistema que indica que el usuario se ha restringido.  Para obtener más información sobre la alerta y cómo recuperar el usuario, vea [quitar un usuario del portal de usuarios restringidos después de enviar correo no deseado](removing-user-from-restricted-users-portal-after-spam.md).
 
 4. Expanda la sección **límites de destinatarios** para especificar el número máximo de destinatarios a los que puede enviar un usuario, por hora, para los destinatarios internos y externos, junto con el número máximo por día.
 
-    [Nota] El número máximo para cualquier entrada es 10.000.  Para obtener más información [, consulte límites de recepción y envío en Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) .
+    > [Nota] El número máximo para cualquier entrada es 10.000.  Para obtener más información [, consulte límites de recepción y envío en Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) .
 
 7. Especifica la **acción** que se llevará a cabo cuando un usuario supere los límites especificados.  Las acciones posibles son las siguientes:
     * **Restringir al usuario el envío de correo hasta el siguiente día**.  Una vez que se ha superado el límite de envío (interno, externo o diario), se generará una alerta para el administrador y el usuario no podrá enviar más mensajes de correo electrónico hasta el día siguiente, en función de la hora UTC. El administrador no tiene forma de anular este bloque.

@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos 365 de Microsoft y las acciones recomendadas para mitigar estos riesgos.
-ms.openlocfilehash: 7a8e593a1e4280327b82802bb08a57370e4db652
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030524"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801255"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Seguridad de Microsoft 365 para responsables de decisiones empresariales
 
@@ -25,7 +25,7 @@ Este artículo está organizado por prioridad de trabajo, comenzando con la prot
 
 [![Imagen en miniatura de la hoja de cálculo recomendaciones de seguridad de Microsoft 365 BDM](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft le proporciona la herramienta de puntuación segura dentro de su espacio empresarial para analizar automáticamente su postura de seguridad en función de sus actividades habituales, asignar una puntuación y proporcionar recomendaciones para mejorar la seguridad. Antes de llevar a cabo las acciones recomendadas en este artículo, anote el resultado actual y sus recomendaciones. Las acciones que se recomiendan en este artículo aumentarán su puntuación. El objetivo no es conseguir la puntuación máxima, sino que debe tener en cuenta las oportunidades para proteger su entorno que no afectan negativamente a la productividad de los usuarios. Consulte [calificación segura de Microsoft](mtp/microsoft-secure-score.md).
+Microsoft le proporciona la herramienta de puntuación segura dentro de su espacio empresarial para analizar automáticamente su postura de seguridad en función de sus actividades habituales, asignar una puntuación y proporcionar recomendaciones para mejorar la seguridad. Antes de llevar a cabo las acciones recomendadas en este artículo, anote el resultado actual y sus recomendaciones. Las acciones que se recomiendan en este artículo aumentarán su puntuación. El objetivo no es conseguir la puntuación máxima, sino que debe tener en cuenta las oportunidades para proteger su entorno de manera que no afecte negativamente a la productividad de los usuarios. Consulte [calificación segura de Microsoft](mtp/microsoft-secure-score.md).
 
 Otra cosa antes de empezar. . . Asegúrese de [activar el registro de auditoría de Office 365](../compliance/search-the-audit-log-in-security-and-compliance.md). Necesitará estos datos más adelante, en caso de que necesite investigar un incidente o una infracción. 
 
@@ -46,14 +46,14 @@ En el siguiente diagrama se ilustran estas funciones.
 Recomendaciones adicionales:
 - Asegúrese de que las cuentas que se sincronizan desde el entorno local no tienen roles de administrador asignados para los servicios en la nube. Esto ayuda a evitar que un atacante aproveche las cuentas locales para obtener acceso administrativo a los servicios en la nube. 
 - Asegúrese de que las cuentas de servicio no tienen roles de administrador asignados. A menudo, estas cuentas no se supervisan y se establecen con contraseñas que no expiran. Para empezar, asegúrese de que los valores de las cuentas de los servicios ADFS no son administradores globales de forma predeterminada.
-- Quitar licencias de las cuentas de administrador. A menos que haya un caso de usuario específico para asignar licencias a cuentas de administrador específicas, quite las licencias de estas cuentas. 
+- Quitar licencias de las cuentas de administrador. A menos que haya un caso de uso específico para asignar licencias a cuentas de administrador específicas, quite las licencias de estas cuentas. 
 
 ## <a name="reduce-the-surface-of-attack"></a>Reducir la superficie del ataque
 
 El área de enfoque siguiente reduce la superficie de ataque. Esto puede conseguirse con el mínimo esfuerzo y el mismo impacto para los usuarios y servicios. Al reducir el área de superficie del ataque, los atacantes tienen menos formas de iniciar un ataque contra su organización.
 
 Aquí le mostramos otros ejemplos:
-- Deshabilitar los protocolos POP3, IMAP y SMTP. La mayoría de las organizaciones modernas ya no usan estos protocolos anteriores. Puede deshabilitarlos de forma segura y permitir solo las excepciones que sean necesarias. 
+- Deshabilitar los protocolos POP3, IMAP y SMTP. La mayoría de las organizaciones modernas ya no usan estos protocolos anteriores. Puede deshabilitarlos de forma segura y permitir excepciones solo según sea necesario. 
 - Reduzca y mantenga el número de administradores globales en el inquilino al mínimo absoluto necesario. Esto reduce directamente el área de superficie del ataque para todas las aplicaciones de la nube. 
 - Retire los servidores y las aplicaciones que ya no se usan en el entorno. 
 - Implemente un proceso para deshabilitar y eliminar cuentas que ya no se usan. 

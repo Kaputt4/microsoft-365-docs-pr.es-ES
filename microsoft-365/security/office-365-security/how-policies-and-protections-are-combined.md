@@ -1,6 +1,6 @@
 ---
 title: Cómo se combinan las directivas y las protecciones cuando el correo está marcado con color rojo
-description: Qué directivas se aplican y qué acciones realizar, cuando el correo electrónico está marcado como malware, correo no deseado, correo no deseado de alta confianza, phishing y masivo por EOP o ATP.
+description: Describe las directivas y las protecciones que se aplican cuando el correo electrónico detecta varias protecciones y se examina mediante varias formas de detección. Qué directivas se aplican y qué acciones realizar, cuando el correo electrónico está marcado como malware, correo no deseado, correo no deseado de alta confianza, phishing y masivo por EOP o ATP.
 keywords: seguridad, malware, Microsoft 365, M365, Security Center, ATP, Microsoft defender ATP, Office 365 ATP, ATP de Azure
 ms.author: tracyp
 author: MSFTTracyp
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1f1885730d1063a0c36d172f1f9d0e4ac4fb59c7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092243"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807995"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Qué Directiva se aplica cuando se ejecutan varios métodos de protección y exámenes de detección en el correo electrónico
 
@@ -27,28 +27,28 @@ En general, una directiva aplicada a un mensaje se identifica en el encabezado *
 
 Las directivas siguientes se aplican a _todas las organizaciones_.
 
-|Priority |Directiva  |Categoría  |Donde se administra |
+|Priority |Policy  |Categoría  |Donde se administra |
 |---------|---------|---------|---------|
-|1      | Malware      | MALW      | Directiva de malware   |
-|2      | Phishing     | PHSH     | Configurar las directivas de filtro de correo no deseado     |
-|3      | Correo no deseado de alta confianza      | HSPM        | Configurar las directivas de filtro de correo no deseado        |
-|4      | Suplantación        | SPOOF        | Directiva contra la suplantación de identidad, inteligencia de suplantación        |
-|5      | Correo no deseado         | SPM         | Configurar las directivas de filtro de correo no deseado         |
+|1     | Malware      | MALW      | Directiva de malware   |
+|segundo     | Phishing     | PHSH     | Configurar las directivas de filtro de correo no deseado     |
+|3     | Correo no deseado de alta confianza      | HSPM        | Configurar las directivas de filtro de correo no deseado        |
+|4     | Suplantación        | SPOOF        | Directiva contra la suplantación de identidad, inteligencia de suplantación        |
+|2,5     | Correo no deseado         | SPM         | Configurar las directivas de filtro de correo no deseado         |
 |6      | Masivo         | BULK        | Configurar las directivas de filtro de correo no deseado         |
 
 Además, estas directivas se aplican a _organizaciones con ATP_.
 
-|Priority |Directiva  |Categoría  |Donde se administra |
+|Priority |Policy  |Categoría  |Donde se administra |
 |---------|---------|---------|---------|
 |7      | Suplantación de dominio         | DIMP         | Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365        |
 |8      | Suplantación de usuario        | UIMP         | Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365         |
 
 Por ejemplo, si tiene dos directivas con sus prioridades respectivas:
 
-|Directiva  |Priority  |Suplantación de usuario/dominio  |Directiva contra la suplantación  |
+|Policy  |Priority  |Suplantación de usuario/dominio  |Directiva contra la suplantación  |
 |---------|---------|---------|---------|
-|A     | 1         | Activada        |Desactivada         |
-|B     | 2         | Desactivada        | Activada        |
+|A     | 1        | Activada        |Desactivado         |
+|B     | segundo        | Desactivada        | Activada        |
 
 Si un mensaje se identifica como suplantación de _usuario_ e _imitación_ (consulte anti-spoofing en la tabla anterior) y el mismo conjunto de usuarios en el ámbito de la Directiva a es el ámbito de la Directiva B, el mensaje se marca y se trata como _falso_. Sin embargo, no se aplica ninguna acción porque, aunque la suplantación de identidad se ejecuta con una prioridad superior (4) que la suplantación del usuario (8), la suplantación de identidad está desactivada.
 

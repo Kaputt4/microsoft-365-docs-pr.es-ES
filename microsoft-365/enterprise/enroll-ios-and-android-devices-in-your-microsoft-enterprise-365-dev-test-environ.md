@@ -3,7 +3,7 @@ title: Inscribir dispositivos iOS y Android en su entorno de prueba de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/11/2018
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Use esta guía del laboratorio de pruebas para inscribir dispositivos en el entorno de prueba de Microsoft 365 y administrarlos de forma remota.
-ms.openlocfilehash: b98e184d3216a779fc495cf65b73d3a2b212e257
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 98670e64045b36dcdafb46c6ff798b8be7fd6dc1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694077"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801875"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Inscribir dispositivos iOS y Android en su entorno de prueba de Microsoft 365 Enterprise
 
@@ -55,7 +55,7 @@ Microsoft Intune proporciona capacidades de restablecimiento de código de acces
 Para bloquear de forma remota un dispositivo iOS o Android:
 
 1. Inicie sesión en el portal de Azure [https://portal.azure.com](https://portal.azure.com) en con las credenciales de su cuenta de administrador global.
-2. Haga clic en **todos los servicios**, escriba **Intune**y, a continuación, haga clic en **Intune**.
+2. En la pestaña Azure portal del explorador, escriba **Intune** en el cuadro de búsqueda y, a continuación, haga clic en **Intune**.
 3. Haga clic en **dispositivos > todos los dispositivos**.
 4. En la lista de dispositivos, haga clic en un dispositivo iOS o Android y, a continuación, haga clic en la acción **bloqueo remoto** .
 
@@ -63,7 +63,7 @@ Para bloquear de forma remota un dispositivo iOS o Android:
 Para restablecer el código de acceso de forma remota:
 
 1. Si es necesario, inicie sesión en el portal de [https://portal.azure.com](https://portal.azure.com) Azure en con las credenciales de su cuenta de administrador global.
-2. Haga clic en **todos los servicios**, escriba **Intune**y, a continuación, haga clic en **Intune**.
+2. En la pestaña Azure portal del explorador, escriba **Intune** en el cuadro de búsqueda y, a continuación, haga clic en **Intune**.
 3. Haga clic en **dispositivos > todos los dispositivos**.
 4. En la lista de dispositivos que administra, haga clic en un dispositivo iOS o Android y elija **... Más**. A continuación, elija la acción quitar el dispositivo de **código** de acceso remoto.
 
