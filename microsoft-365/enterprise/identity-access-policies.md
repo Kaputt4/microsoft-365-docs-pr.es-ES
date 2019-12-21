@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
-ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
+ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37590504"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37746556"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -162,7 +162,7 @@ En las tablas siguientes se describen las opciones de configuración de directiv
 ## <a name="high-risk-users-must-change-password"></a>Los usuarios de riesgo alto deben cambiar la contraseña
 Para asegurarse de que todas las cuentas de usuarios de alto riesgo se vean obligadas a realizar un cambio de contraseña al iniciar sesión, debe aplicar la siguiente directiva.
 
-Inicie sesión en [Microsoft Azure Portal (http://portal.azure.com)](http://portal.azure.com/) con las credenciales de administrador y luego vaya a **Azure AD Identity Protection > Directiva de riesgo de usuario**.
+Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://portal.azure.com/) con las credenciales de administrador y luego vaya a **Azure AD Identity Protection > Directiva de riesgo de usuario**.
 
 **Asignaciones**
 
@@ -225,13 +225,13 @@ En las siguientes tablas se describe la configuración recomendada:
 |Acceso|Requerir PIN para acceder|Sí||
 ||Tipo de selección|Numérico||
 ||Permitir PIN sencillo|No||
-||Longitud del PIN|6,5||
+||Longitud del PIN|6 ||
 ||Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN|Sí||
 ||Deshabilitar PIN de la aplicación cuando el PIN del dispositivo esté administrado|Sí||
 ||Requerir credenciales corporativas para el acceso|No||
 ||Volver a comprobar los requisitos de acceso después de (minutos)|semestre||
 ||Bloquear captura de pantalla y asistente de Android|No|En iOS esta opción no está disponible|
-|Requisitos de seguridad de inicio de sesión|Número máximo de intentos de PIN|2,5|Restablecer PIN|
+|Requisitos de seguridad de inicio de sesión|Número máximo de intentos de PIN|5 |Restablecer PIN|
 ||Período de gracia sin conexión|720|Bloquear acceso|
 ||Intervalo sin conexión (días) antes de que se borren los datos de la aplicación|90|Borrar datos|
 ||Dispositivos con jailbreak o Rooting| |Borrar datos|
@@ -280,7 +280,7 @@ Cree una directiva para cada plataforma:
 - Windows 8,1 y versiones posteriores
 - Windows 10 y versiones posteriores
 
-Para crear directivas de cumplimiento de dispositivos, inicie sesión en el portal de Microsoft Azure con sus credenciales de administración y, a continuación, navegue hasta **Intune > el cumplimiento de dispositivos**. Seleccione **crear Directiva**.
+Para crear directivas de cumplimiento de dispositivos, inicie sesión en el portal de Microsoft Azure con sus credenciales de administración y, a continuación, navegue hasta **Intune > el cumplimiento de dispositivos**. Seleccione **Crear directiva**.
 
 Se recomiendan las siguientes opciones de configuración para Windows 10.
 
@@ -308,10 +308,10 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 |Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
 ||Contraseñas sencillas|Desbloquear||
 ||Tipo de contraseña|Valor predeterminado del dispositivo||
-||Longitud mínima de la contraseña|6,5||
-||Minutos máximos de inactividad antes de que se requiera la contraseña|15|Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores|
+||Longitud mínima de la contraseña|6 ||
+||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores|
 ||Expiración de contraseña (días)|41||
-||Número de contraseñas anteriores para impedir la reutilización|2,5||
+||Número de contraseñas anteriores para impedir la reutilización|5 ||
 ||Requerir contraseña cuando el dispositivo vuelve del estado de inactividad (móvil y holográfica)|Obligatoria|Disponible para Windows 10 y versiones posteriores|
 |Cifrado|Cifrado del almacenamiento de datos en el dispositivo|Obligatoria||
 |Seguridad del dispositivo|Éste|Obligatoria||
@@ -322,7 +322,7 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 ||Firma antimalware de Windows Defender actualizada hasta la fecha|Obligatoria||
 ||Protección en tiempo real|Obligatoria|Solo se admite en el escritorio de Windows 10|
 
-**ATP de Microsoft defender**
+**ATP de Microsoft Defender**
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
@@ -384,6 +384,6 @@ Para requerir el cumplimiento de todos los dispositivos:
 Al crear esta Directiva, no seleccione plataformas. Esto aplica los dispositivos compatibles.
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Más información sobre recomendaciones de directivas para proteger el correo electrónico](secure-email-recommended-policies.md)

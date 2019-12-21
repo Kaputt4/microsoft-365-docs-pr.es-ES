@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9f1631b054a46cac83140e07460807b2ba0edac3
-ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
+ms.openlocfilehash: beab5df5b978cc3e2fd6dd345609a22209501298
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37040782"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37113723"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías de escritorio administradas de Microsoft
 
@@ -24,22 +24,22 @@ La licencia de Microsoft 365 Enterprise es necesaria para todos los usuarios de 
 
 En este tema se resumen los componentes incluidos en las licencias Enterprise necesarias, con una descripción del modo en que el servicio usa cada componente con dispositivos de escritorio administrados por Microsoft. Las funciones y responsabilidades específicas para cada área se detallan en toda la documentación del escritorio administrado de Microsoft. 
 
-## <a name="office-365-e3"></a>Office 365 E3
+## <a name="office-365-e3-or-e5"></a>Office 365 E3 o E5
  |
  --- | ---
-Office 365 ProPlus (64 bits) | Estas aplicaciones de Office se entregarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype empresarial, OneNote.<br><br>No se incluyen las versiones completas de 64 bits de Microsoft Project y Microsoft Visio. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de Office 365 ProPlus, el escritorio administrado de Microsoft ha creado implementaciones de Microsoft Intune y grupos de seguridad predeterminados que puede usar para implementar estas aplicaciones en una licencia usuarios finales. Para obtener más información, vea [instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft](../get-started/project-visio.md) .
-OneDrive para la Empresa |El inicio de sesión único de Azure Active Directory está habilitado para los usuarios finales una vez que inicie sesión en OneDrive para la empresa<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "escritorio", "documento" y "imágenes"; habilitado y configurado por el escritorio administrado por Microsoft. 
+Office 365 ProPlus (64 bits) | Estas aplicaciones de Office se entregarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype empresarial, OneNote.<br><br>No se incluyen las versiones completas de 64 bits de Microsoft Project y Microsoft Visio. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de Office 365 ProPlus, el escritorio administrado de Microsoft ha creado implementaciones de Microsoft Intune y grupos de seguridad predeterminados que puede usar para implementar estas aplicaciones en una licencia usuarios finales. Para obtener más información, vea [instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft](../get-started/project-visio.md).
+OneDrive para la Empresa |El inicio de sesión único de Azure Active Directory está habilitado para los usuarios finales una vez que inicie sesión en OneDrive para la empresa.<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "escritorio", "documento" y "imágenes"; habilitado y configurado por el escritorio administrado por Microsoft. 
 Almacenar aplicaciones |    Microsoft Sway y Power BI no se entregan con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
 Aplicaciones Win32 |    Teams no se incluye con el dispositivo, sino que es empaquetado y proporcionado por Microsoft para dispositivos de escritorio administrados por Microsoft. El cliente de Azure Information Protection no se incluye con el dispositivo, pero puede empaquetarlo para su implementación. 
 Aplicaciones web |  Yammer, Office en un explorador, Delve, Flow, StaffHub, PowerApps y Planner no se incluyen en el dispositivo. Los usuarios pueden tener acceso a la versión Web de estas aplicaciones con un explorador.
 
 
-## <a name="windows-10-enterprise-e5"></a>Windows 10 Enterprise E5
+## <a name="windows-10-enterprise-e3-or-e5"></a>Windows 10 Enterprise E3 o E5
 
  |
  --- | ---
 Virtualización de aplicaciones (App-V) |    Los clientes pueden implementar paquetes de App-V con el cliente de administración de aplicaciones Win32 de Intune.
-Protección contra amenazas avanzada de Microsoft defender |  Microsoft Managed Desktop lo usa para supervisar la seguridad de los dispositivos. 
+Protección contra amenazas avanzada de Microsoft Defender |  Microsoft Managed Desktop lo usa para supervisar la seguridad de los dispositivos. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
