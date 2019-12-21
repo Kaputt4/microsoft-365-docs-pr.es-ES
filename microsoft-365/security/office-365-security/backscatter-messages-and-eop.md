@@ -13,21 +13,21 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: Los mensajes de reenvío masivo de correo electrónico no deseado son mensajes de devolución automatizados que los servidores de correo envían, normalmente como resultado de correo no deseado entrante. La lista DNSBL de Backscatterer contiene las direcciones IP que envían mensajes de reenvío masivo de correo electrónico. No es una lista de remitentes de correo no deseado y no intentamos quitar nuestros servidores de la lista DNSBL de Backscatterer.
-ms.openlocfilehash: a90383709763974f36aede6f10c9e78224592744
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+description: Los mensajes de reenvío masivo son mensajes de devolución automatizados que se envían a direcciones de correo electrónico falsificadas. La DNSBL de la indispersión identifica los servidores que envían mensajes de reenvío masivo (que pueden incluir muchos orígenes de correo electrónico legítimos). Dado que no se trata de una lista de remitentes de correo no deseado, no tratamos de eliminarlas de la DNSBL.
+ms.openlocfilehash: f6e8398565837f7a380c8a6a5c4cd8de422cc215
+ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034261"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "40840169"
 ---
 # <a name="backscatter-messages-and-eop"></a>Mensajes de reenvío masivo de correo electrónico y EOP
 
-Los mensajes de reenvío masivo de correo electrónico no deseado son mensajes de devolución automatizados que los servidores de correo envían, normalmente como resultado de correo no deseado entrante. Como Exchange Online Protection (EOP) es un servicio de filtrado de correo no deseado, nuestro servicio rechaza los mensajes de correo electrónico enviados a destinatarios inexistentes y a otros destinos sospechosos. Cuando esto sucede, EOP genera un mensaje de informe de no entrega (NDR) y lo entrega al "remitente". Como los remitentes de correo electrónico no deseado suelen usar una dirección "De" falsa o no válida en sus mensajes, la dirección del remitente a la que se envía el NDR puede provocar un reenvío masivo de correo electrónico no deseado. Cuando esto sucede, los servidores de salida que están asociados con la red de EOP pueden aparecer en la lista de bloqueo de DNS (DNSBL) de Backscatterer. La lista DNSBL de Backscatterer contiene las direcciones IP que envían mensajes de reenvío masivo de correo electrónico. No es una lista de remitentes de correo no deseado y no intentamos quitar nuestros servidores de la lista DNSBL de Backscatterer.
+*Los mensajes* de reenvío masivo son informes de no entrega (también conocidos como NDR o mensajes de devolución) que se reciben para los mensajes que no se enviaron. Los remitentes de correo no deseado falsifican (suplantan) la dirección de: de sus mensajes y suelen usar direcciones de correo electrónico reales para prestar credibilidad a sus mensajes. Por lo tanto, cuando envían mensajes inevitablemente a destinatarios no existentes (el correo no deseado es una operación de gran volumen), es posible que el servidor de correo electrónico de destino responda dutifully con un NDR, que se envía al remitente falsificado en la dirección from:.
+
+Exchange Online Protection (EOP) hace todo lo posible para identificar y eliminar silenciosamente los mensajes de fuentes dudosas sin generar un NDR. Pero, a partir de la gran cantidad de correo electrónico que fluye a través del servicio, siempre hay la posibilidad de que EOP envíe mensajes posdispersos de forma involuntaria.
+
+Backscatterer.org mantiene una lista de bloqueados (también conocida como una lista de bloqueados de DNS o DNSBL) de los servidores de correo electrónico responsables del envío de mensajes de reenvío masivo, y es posible que aparezcan en esta lista los servidores de EOP. Pero no estamos intentando eliminarlas de la lista de bloqueadores de Backscatterer.org porque no es una lista de remitentes de correo no deseado (por su propia admisión).
 
 > [!TIP]
-> Según las instrucciones del sitio web de Backscatterer, el uso del modo de rechazo para todo el correo entrante no es la configuración recomendada ni el uso de dicho servicio. En su lugar, se debe usar en modo seguro. Para obtener más información acerca de cómo implementar la configuración correcta de reenvío masivo de correo electrónico no deseado, visite el [sitio web de Backscatterer.org](https://www.backscatterer.org/?target=usage).
-
-## <a name="related-topics"></a>Temas relacionados
-
-[Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md)
+> De acuerdo con el servicio de dispersión. o`http://www.backscatterer.org/?target=usage`el sitio web (), se recomienda usar el servicio para comprobar el correo electrónico entrante en modo seguro en lugar de rechazar el modo (los servicios de correo electrónico grandes casi siempre envían mensajes de reenvío masivo).

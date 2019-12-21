@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
-ms.openlocfilehash: 06f2de012963333f1040861dd8268b6b088f627c
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
+ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970596"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "40840179"
 ---
 # <a name="eop-features"></a>Características de EOP
 
@@ -93,5 +93,5 @@ La tabla siguiente proporciona una lista de las características que están disp
 |Soporte técnico por web y teléfono 24 horas al día, siete días a la semana|Para obtener más información acerca de las opciones de soporte técnico y ayuda de EOP, vea [Ayuda y soporte técnico para EOP](help-and-support-for-eop.md).|
 |**Otras características**||
 |Una red mundial georredundante de servidores|EOP se ejecuta en una red mundial de centros de datos que están diseñados para ayudar a proporcionar la mejor disponibilidad. Para obtener más información, vea la sección "Centros de datos de EOP" en [Información general de Exchange Online Protection](exchange-online-protection-overview.md).  |
-|Puesta en cola de los mensajes cuando el servidor local no puede aceptar correo|Los mensajes aplazados permanecen en las colas durante 2 días. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los mensajes se reintentan cada 5 minutos, como valor promedio. Para obtener más información, vea [Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP](eop-queued-deferred-and-bounced-messages-faq.md).  |
+|Puesta en cola de los mensajes cuando el servidor local no puede aceptar correo|Los mensajes en aplazamientos permanecen en nuestras colas durante un día. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los mensajes se reintentan cada 5 minutos, como valor promedio. Para obtener más información, vea [Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
 |Cifrado de mensajes de Office 365 disponible como servicio complementario|Para obtener más información, vea [Cifrado en Office 365](https://docs.microsoft.com/office365/securitycompliance/encryption).|

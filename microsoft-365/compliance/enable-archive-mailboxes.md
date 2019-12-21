@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Usar el Centro de seguridad y cumplimiento en Office 365 para permitir que los buzones de archivo sean compatibles con los requisitos de retención de mensajes, eDiscovery y conservación de mensajes de su organización.
-ms.openlocfilehash: 63c6986e3bf053f09ce4c4925735e920da3b5ed4
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 29c90b85b4f8d05664ea6d28f8997265b7e14b49
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793674"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967363"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar buzones de archivo en el Centro de seguridad y cumplimiento
   
@@ -41,7 +41,7 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Gobierno de datos** \> **Archivo**.
+3. En el panel izquierdo del centro de cumplimiento de & de seguridad, haga clic en **control de la información** \> **archivo**.
     
     Aparece la página **Archivo**. La columna **Buzón de correo de archivo** indica si un buzón de archivo está habilitado o deshabilitado para cada usuario. 
     
@@ -72,7 +72,7 @@ Para deshabilitar un buzón de archivo:
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Gobierno de datos** \> **Archivo**.
+3. En el panel izquierdo del centro de cumplimiento de & de seguridad, haga clic en **control de la información** \> **archivo**.
     
     Aparece la página **Archivo**. La columna **Buzón de correo de archivo** indica si un buzón de archivo está habilitado o deshabilitado para cada usuario. 
     
