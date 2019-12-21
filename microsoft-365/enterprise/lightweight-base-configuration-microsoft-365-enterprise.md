@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilice esta guía de laboratorio de pruebas para crear un entorno de prueba ligero a con objeto de probar Microsoft 365 Enterprise.
-ms.openlocfilehash: 6f49982fe71196f3c147c1638b402ee63bb861c1
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 0bbb54ca054ce1f4f96a32c887fba60b982375de
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202311"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801655"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuración básica ligera
 
@@ -43,23 +43,23 @@ Inicie con una suscripción de prueba de Office 365 E5, después, agregue la sus
 
 Para iniciar la suscripción de prueba a Office 365 E5, primero necesita el nombre de una compañía ficticia y una nueva cuenta Microsoft.
   
-1. Le recomendamos que use una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una compañía ficticia usada en contenido de ejemplo de Microsoft, pero no es imprescindible. Anote aquí el nombre de la compañía ficticia: ![](./media/Common-Images/TableLine.png)
+1. Le recomendamos que use una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una compañía ficticia usada en contenido de ejemplo de Microsoft, pero no es imprescindible. Anote aquí el nombre de la compañía ficticia: ![Línea](./media/Common-Images/TableLine.png)
     
 2. Para registrarse para obtener una nueva cuenta Microsoft, vaya a [https://outlook.com](https://outlook.com) y cree una cuenta con una nueva cuenta y una dirección de correo electrónico. Usará esta cuenta para suscribirse a Office 365.
     
-  - Anote aquí el nombre y los apellidos de la nueva cuenta: ![](./media/Common-Images/TableLine.png)
+  - Anote aquí el nombre y los apellidos de la nueva cuenta: ![Línea](./media/Common-Images/TableLine.png)
     
-  - Anote aquí la dirección de la nueva cuenta de correo electrónico: ![](./media/Common-Images/TableLine.png)@outlook.com
+  - Anote la dirección de la cuenta de correo electrónico nueva aquí: ![Línea](./media/Common-Images/TableLine.png)Outlook.com
     
-### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrarse para una suscripción de prueba a Office 365 E5
+### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrarse para una suscripción de prueba de Office 365 E5
 
 1. Abra el explorador de Internet en su equipo y vaya a [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
 2. En la página **Gracias por elegir Office 365 E5**, especifique la dirección de su nueva cuenta de correo electrónico en el paso 1.
 3. En el paso 2 del proceso de suscripción de prueba, escriba la información solicitada y, después, lleve a cabo la comprobación.
 4. En el paso 3, escriba el nombre de la organización y después el nombre de la cuenta que será el administrador global de la suscripción. 
-5. En el paso 4, registre la página de inicio de sesión aquí (seleccionar y copiar): ![](./media/Common-Images/TableLine.png) 
-6. Registre aquí el identificador de usuario: ![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. En el paso 4, registre la página de inicio de sesión aquí (seleccionar y copiar):  ![Línea](./media/Common-Images/TableLine.png) 
+6. Registre aquí el identificador de usuario: ![Linea](./media/Common-Images/TableLine.png).onmicrosoft.com  
    Anote en un lugar seguro la contraseña que escriba.
    Este valor se denominará **nombre de administrador global de Office 365**.
 8. Haga clic en **Ir a Configuración**.
@@ -119,11 +119,11 @@ Es recomendable que imprima este artículo para registrar la información espec�
 
 Registre estos valores:
   
-- Nombre del administrador global de Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (del paso 6 de la fase 1)
+- Office 365 nombre del administrador global: ![Línea](./media/Common-Images/TableLine.png). onmicrosoft.com (del paso 6 de la fase 1)
     
     Guarde también la contraseña de esta cuenta en una ubicación segura.
     
-- Nombre de la organización de la suscripción de prueba: ![](./media/Common-Images/TableLine.png) (del paso 4 de la fase 1)
+- Nombre de la organización de la suscripción de prueba: ![Línea](./media/Common-Images/TableLine.png) (en el paso 4 de la fase 1)
     
 - Para mostrar las cuentas de los usuarios 2, 3, 4 y 5, ejecute los siguientes comandos desde el símbolo del sistema del Módulo de Windows Azure Active Directory para Windows PowerShell.
     
@@ -133,13 +133,13 @@ Registre estos valores:
 
     Anote aquí los nombres de las cuentas:
     
-  - Nombre de la cuenta de usuario 2: usuario2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 2: usuario2 @![Línea](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 3: usuario3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 3: usuario3 @![Línea](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 4: usuario4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 4: usuario4 @![Línea](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 5: usuario5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 5: usuario5 @![Línea](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     También puede guardar la contraseña común de estas cuentas en un lugar seguro.
    
