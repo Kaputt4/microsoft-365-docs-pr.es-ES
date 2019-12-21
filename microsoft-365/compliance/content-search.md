@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use la herramienta de búsqueda de contenido del Centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en buzones, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype Empresarial. Puede restringir los resultados de la búsqueda mediante palabras clave y condiciones de búsqueda. Después, puede consultar una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para encontrar información relacionada con la solicitud del interesado del RGPD.
-ms.openlocfilehash: ba3a8ffd495d58726c24ad7abd2e115d2e1c2b8b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39266189"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967523"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido de Office 365
 
@@ -310,7 +310,7 @@ Tenga en cuenta que las condiciones están conectadas de forma lógica a la cons
   
 ### <a name="searching-inactive-mailboxes"></a>Buscar en buzones inactivos
 
-Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **Gobierno de datos** \> **Retención** en el Centro de cumplimiento y seguridad y, a continuación, hacer clic en **Más**![Puntos suspensivos en la barra de navegación](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Buzones inactivos**.
+Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **gobernanza de la información** \> **Retención** en el centro de cumplimiento de seguridad y, a continuación, haga clic en **Más**![](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>** de la barra de navegación los buzones inactivos**.
   
 A continuación, se detallan algunos aspectos que se deben tener en cuenta al buscar buzones inactivos:
 

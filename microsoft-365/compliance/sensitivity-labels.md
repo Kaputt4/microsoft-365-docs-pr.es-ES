@@ -1,9 +1,9 @@
 ---
 title: Información general de etiquetas de confidencialidad
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: 5bc15b1ba18dbc52f9db554f8037cb59187b88fc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: f411cf5ac91581526c54f718ee83d0beaaaa2d73
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "39232918"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802843"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -130,7 +130,7 @@ Con una directiva de etiqueta, puede:
 
 - **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta etiqueta predeterminada puede establecer un nivel base de configuración de protección que desee aplicar a todo su contenido.
 
-- **Requerir una justificación para cambiar una etiqueta.** Si el contenido está marcado como Confidencial y un usuario quiere quitar esa etiqueta o reemplazarla por una clasificación inferior (por ejemplo, una etiqueta llamada Pública), puede exigir al usuario que proporcione una justificación para realizar esta acción. Estas justificaciones estarán disponibles para que el administrador pueda revisarlas.
+- **Requerir una justificación para cambiar una etiqueta.** Si el contenido está marcado como Confidencial y un usuario quiere quitar esa etiqueta o reemplazarla por una clasificación inferior (por ejemplo, una etiqueta llamada Pública), puede exigir al usuario que proporcione una justificación para realizar esta acción. Actualmente, el motivo de justificación no es enviado a [la etiqueta Analítica](label-analytics.md) para que el administrador pueda revisarla. No obstante, la [cliente de etiquetas unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) envía esta información a [Azure Information Protection Analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
     ![Aviso en el que los usuarios especifican una justificación](media/Sensitivity-label-justification-required.png)
 
