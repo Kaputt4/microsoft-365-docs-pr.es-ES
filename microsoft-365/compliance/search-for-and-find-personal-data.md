@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo buscar y encontrar datos personales en Office 365.
-ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 75c6afaae18cddc0c8e63cac671ac1140e3fa303
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38710136"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802863"
 ---
 # <a name="search-for-and-find-personal-data"></a>Buscar y encontrar datos personales
 
@@ -33,9 +33,7 @@ Artículo 4: definiciones
 
 Este artículo explica cómo buscar datos personales almacenados en SharePoint Online y OneDrive para la Empresa (que incluye los sitios de todos los grupos de Office 365 y Microsoft Teams).
 
-Buscar datos personales sujetos al RGPD depende de usar tipos de información confidencial en Office 365. Estos definen cómo el proceso automatizado reconoce tipos específicos de información, como números de tarjetas de crédito y números de la Seguridad Social. En este momento, los tipos no pueden usarse para buscar datos en buzones de Exchange en reposo. Sin embargo, sí pueden utilizarse con directivas de prevención de pérdida de datos para buscar datos personales en correo en tránsito.
-
-Aunque actualmente no puede usarse la Búsqueda de contenido para buscar datos personales almacenados en los buzones de Exchange Online, pueden usarse los tipos de información confidencial que establece para que el RGPD busque y proteja información personal cuando se envía por correo electrónico.
+Buscar datos personales sujetos a GDPR depende del uso de tipos de información confidenciales en Office 365. Estos definen cómo el proceso automatizado reconoce tipos de información específicos como números de servicio de estado y números de tarjeta de crédito. Las directivas de prevención de pérdida de datos pueden utilizarse para buscar datos personales en mail mientras se navega. Usted puede utilizar los tipos de información confidencial que usted conserva para GDPR para encontrar y proteger la información personal que se envía a través del correo electrónico. También véase[ las solicitudes de datos de GDPR administrados con la herramienta de caso de DSR en el centro de seguridad y conformidad](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
 ## <a name="use-content-search-to-find-personal-data"></a>Usar la Búsqueda de contenido para buscar datos personales
 
