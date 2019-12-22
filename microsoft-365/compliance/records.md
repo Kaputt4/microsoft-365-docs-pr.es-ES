@@ -1,7 +1,7 @@
 ---
 title: Información general de registros
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Para implementar una estrategia de administración de registros en un Office 365 o en la organización de Microsoft, use las etiquetas de retención que declaran el contenido como un registro. Después, publique o aplique automáticamente la etiqueta registro de retención.
-ms.openlocfilehash: 37f23dcd9c2b94edce99fa55977cb26e1faa4d8e
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39638054"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803837"
 ---
 # <a name="overview-of-records"></a>Información general de registros
 
@@ -62,7 +62,7 @@ Tenga en cuenta lo siguiente respecto a los registros:
 
     ![Mensaje que indica que el elemento no se elimina de SharePoint](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    Si intenta eliminar un registro en OneDrive, el elemento se moverá a la biblioteca de suspensión para conservación, como se describe en  [Funcionamiento de una directiva de retención con contenido local](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites).
+    Si un usuario trata de eliminar un registro en OneDrive, el elemento se mueve a la biblioteca de conservación de documentos, tal y como se describe en [cómo funciona una directiva de retención con el contenido en su sitio](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites).
 
   - **Las etiquetas de registros no se pueden quitar**. Cuando se ha aplicado una etiqueta de registro a un elemento, solo el administrador de esa ubicación (por ejemplo, un administrador de la colección de sitios de un sitio de SharePoint) puede quitar la etiqueta de registro.
 
@@ -76,16 +76,16 @@ Al crear una etiqueta de retención, puede usarla para clasificar el contenido c
 
    ![Haga clic en usar etiqueta para clasificar contenido como una casilla de registro](media/recordversioning6.png)
 
-3. [Publicar](labels.md#how-retention-labels-work-with-retention-label-policies) o [aplicar automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) la etiqueta de retención en los sitios de SharePoint y/o cuentas de OneDrive. 
+3. [Publicar](labels.md#how-retention-labels-work-with-retention-label-policies) o [aplicar automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) la etiqueta de retención en los sitios de SharePoint y/o cuentas de OneDrive.
 
 ### <a name="applying-a-retention-label-to-content"></a>Aplicar una etiqueta de retención al contenido
 
-Para Exchange, todos los usuarios con acceso de escritura al buzón pueden aplicar una etiqueta de registro a un mensaje de correo electrónico. Para el contenido de SharePoint y OneDrive, cualquier usuario del grupo predeterminado miembros (con nivel de permisos de contribución) puede aplicar una etiqueta de registro al contenido. Solo el administrador de la colección de sitios puede quitar o cambiar la etiqueta de registro una vez que se ha aplicado. Como se ha explicado anteriormente, una etiqueta de retención que clasifica el contenido como un registro se puede aplicar automáticamente al contenido.
+Para Exchange, todos los usuarios con acceso de escritura al buzón pueden aplicar una etiqueta de registro a un mensaje de correo electrónico. Para el contenido de SharePoint y OneDrive, cualquier usuario del grupo predeterminado miembros (con nivel de permisos de contribución) puede aplicar una etiqueta de registro al contenido. Solo el administrador de la colección de sitios puede quitar o cambiar la etiqueta de registro una vez que se ha aplicado. Como ya se explicó anteriormente, una etiqueta de retención que clasifica el contenido como un registro que se puede aplicar automáticamente al contenido.
 
 Este es el aspecto que tiene esto cuando se aplica una etiqueta de registro a un documento en un sitio de SharePoint o en una cuenta de OneDrive.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning7.png" alt-text="Panel Detalles del documento etiquetado como un registro":::
+![Panel de detalles para los documentos etiquetados como registro](media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>Control de versiones de registros
 
@@ -102,7 +102,7 @@ Para usar el control de versiones de registros, el primer paso es usar el Centro
 El control de versiones de registros está disponible automáticamente para todos los documentos que contengan una etiqueta de retención que declara el elemento como un registro. Cuando un usuario ve las propiedades del documento en el panel de detalles, se activa el **Estado del registro** de **bloqueado** a **desbloqueado**. Este solo clic crea un registro en la carpeta registros de la biblioteca de suspensión para conservación, donde se encuentra por el resto de su período de retención. Cuando el documento esté desbloqueado, todos los usuarios con permisos podrán editar el archivo. Sin embargo, los usuarios no pueden eliminar el archivo porque se considera un registro declarado. Después de realizar los cambios necesarios, el usuario puede alternar el estado de **Estado del registro** de **Desbloqueado** a **Bloqueado**, de modo que el documento se declare nuevamente un registro y no se pueda editar.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning8.png" alt-text="Propiedad de estado de registro en un documento etiquetado como registro":::
+![Propiedad de estado de registro en un documento etiquetado como registro](media/recordversioning8.png)
 
 > [!NOTE]
 > El control de versiones de registros requiere una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se ha declarado como un registro en un sitio de SharePoint o en una cuenta de OneDrive. Los usuarios que tienen acceso de solo lectura no necesitan una licencia.
@@ -112,7 +112,7 @@ El control de versiones de registros está disponible automáticamente para todo
 Cuando se asigna una etiqueta de registro a un documento, cualquier usuario del grupo predeterminado miembros (con nivel de permisos de contribución) puede desbloquear un registro o bloquear un registro desbloqueado.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning9.png" alt-text="El estado del registro muestra que el documento de registro está desbloqueado":::
+![El estado del registro muestra que el documento de registro está desbloqueado](media/recordversioning9.png)
 
 Cuando un usuario desbloquea un registro, tienen lugar las siguientes acciones:
 
@@ -133,7 +133,7 @@ Cuando un usuario bloquea un registro, no se puede editar el documento original.
 Cada vez que un usuario desbloquea un registro, la versión más reciente se copia en la carpeta registros de la biblioteca de suspensión para conservación, que contiene el valor de **registro** en el campo **comentarios** del historial de versiones.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning10.png" alt-text="Registro que se muestra en la biblioteca de suspensión para conservación":::
+![Registro que se muestra en la biblioteca de conservación de documentos](media/recordversioning10.png)
 
 Para ver el historial de versiones, seleccione un documento de la biblioteca de documentos y, a continuación, haga clic en **Historial de versiones** en el menú elemento.
 
@@ -142,11 +142,11 @@ Para ver el historial de versiones, seleccione un documento de la biblioteca de 
 Los registros se almacenan en la carpeta registros de la biblioteca de suspensión para conservación en el sitio de nivel superior de la colección de sitios. En el panel de navegación izquierdo en el sitio de nivel superior, elija **Contenidos del sitio** \> **biblioteca de suspensión para conservación**.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning11.png" alt-text="Biblioteca de suspensión para conservación":::
+![Biblioteca de conservación de documentos](media/recordversioning11.png)
 
 <br/><br/>
 
-:::image type="content" source="media/recordversioning12.png" alt-text="La carpeta registros en la biblioteca de suspensión para conservación":::
+![La carpeta registros en la biblioteca de conservación de documentos](media/recordversioning12.png)
 
 La biblioteca de suspensión para conservación solo es visible para los administradores de la colección de sitios. Asimismo, la biblioteca de suspensión para conservación no existe de forma predeterminada. Solo se crea cuando el contenido sometido a una etiqueta de retención o una directiva de retención se elimina por primera vez en la colección de sitios.
 
@@ -155,6 +155,6 @@ La biblioteca de suspensión para conservación solo es visible para los adminis
 Las acciones para bloquear y desbloquear registros se registran en el registro de auditoría de Office 365. Puede buscar actividades específicas **cambiado el estado del registro a bloqueado** y **cambiado el estado del registros a desbloqueado**, que se encuentran en la sección **Actividades de archivo y de página** de la lista desplegable **Actividades** en la página **Búsqueda de registros de auditoría** en el centro de seguridad y cumplimiento.
 <br/><br/>
 
-:::image type="content" source="media/recordversioning13.png" alt-text="Buscar en el registro de auditoría los eventos de control de versiones de registros":::
+![Buscar en el registro de auditoría los eventos de control de versiones de registros](media/recordversioning13.png)
 
 Para obtener más información sobre la búsqueda de estos eventos, vea la sección "Actividades de archivo y de página" en [Buscar el registro de auditoría en el centro de seguridad y cumplimiento](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
