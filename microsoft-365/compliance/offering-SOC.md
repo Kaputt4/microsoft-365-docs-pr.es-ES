@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4d8587438d564d98d9b30897ebdf5bf8722a09c8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859490"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804263"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -108,7 +109,7 @@ Con los informes, sus auditores pueden comparar los resultados de los servicios 
 
 **¿Con qué frecuencia se publican los informes de los SOC para Azure?**
 
-Los informes de los SOC para Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream y Centros de datos de Microsoft se basan en un periodo escalonado de 12 meses (periodo de auditoría) con nuevos informes emitidos de forma trimestral. El aumento de la frecuencia de auditoría ofrece una cobertura de control de auditoría más adecuada gracias a un informe de los SOC que da más garantías por parte de un auditor externo al compararlo con una carta puente. Los clientes pueden [descargar](https://aka.ms/stp) los informes más recientes del Portal de Confianza del Servicio.
+Los informes de SOC para Azure, la seguridad de aplicaciones en la nube, el flujo, Graph, Intune, Power BI, PowerApps, Stream y centros de datos de Microsoft se basan en una ventana de ejecución en 12 meses (período de auditoría) con nuevos informes emitidos por semestre (los finales de periodo son 31 de marzo y 30 de septiembre). Las cartas de puente se emiten en enero para cubrir el período de 10/1 – 12/31 y de julio para cubrir el período de 4/1 – 6/30. Los clientes pueden [descargar](https://aka.ms/stp) los informes más recientes del Portal de Confianza del Servicio.
 
 **¿Necesito llevar a cabo mi propia auditoria de centros de datos de Microsoft?**
 
