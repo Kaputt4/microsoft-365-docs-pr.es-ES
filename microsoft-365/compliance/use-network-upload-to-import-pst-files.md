@@ -1,5 +1,5 @@
 ---
-title: Usar la carga en la red para importar los archivos PST de su organización a Office 365
+title: Usar la carga en la red para importar los archivos PST de su organización
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Office 365.'
-ms.openlocfilehash: 8596108902cadd82cbab4bd128d457858b5c63c3
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: c25872247e72f53f5b95454acdeb3b0715763748
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38710146"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802325"
 ---
-# <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Office 365
+# <a name="use-network-upload-to-import-your-organizations-pst-files-to-office-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Office 365
 
 > [!NOTE]
 > Este artículo está dirigido a administradores. ¿Está intentando importar archivos PST a su propio buzón? Vea [Importar el correo electrónico, los contactos y el calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -63,6 +63,8 @@ Tenga en cuenta que debe llevar a cabo el paso 1 solo una vez para importar los 
     
 - Debe almacenar los archivos PST que quiere importar a Office 365 en un servidor de archivos o en una carpeta compartida de la organización. En el paso 2, ejecutará la herramienta Azure AzCopy, que cargará los archivos PST almacenados en este servidor de archivos o carpeta compartida en Office 365.
     
+- Es posible que los archivos PST de gran tamaño afecten al rendimiento del proceso de importación de PST. Por lo tanto, le recomendamos que cada archivo PST que cargue en la ubicación de  Azure Storage en el paso 2 no sea superior a 20 GB.
+
 - Este procedimiento implica copiar y guardar una copia de una dirección URL que contiene una clave de acceso. Esta información se utilizará en el paso 2 para cargar los archivos PST y, en el paso 3, si quiere ver una lista de los archivos PST cargados en Office 365. Asegúrese de tomar precauciones para proteger esta dirección URL de la misma manera que protegería las contraseñas u otra información relacionada con la seguridad. Por ejemplo, puede guardarla en un documento de Microsoft Word protegido por contraseña o en una unidad USB cifrada. Consulte la sección [Más información](#more-information) para ver un ejemplo de la clave y URL combinadas. 
     
 - Puede importar archivos PST a un buzón inactivo de Office 365. Para ello, debe especificar el GUID del buzón inactivo en el parámetro `Mailbox` del archivo de asignación de importación de PST. Vea el paso 4 en la pestaña **Instrucciones** de este tema para obtener información. 
@@ -75,7 +77,7 @@ Tenga en cuenta que debe llevar a cabo el paso 1 solo una vez para importar los 
     
     Vea el [paso 4](#step-4-create-the-pst-import-mapping-file) para obtener más información. 
     
-- Después de que los archivos PST se importan a un buzón de correo de Office 365, la configuración de espera de retención del buzón está activada durante un período de tiempo indefinido. Esto significa que la directiva de retención asignada al buzón no se procesará hasta que desactive la espera de retención o establezca una fecha para desactivar la retención. ¿Por qué lo hacemos? Si los mensajes importados a un buzón son antiguos, es posible que se eliminen de forma permanente, ya que su período de retención ha caducado en función de la configuración de retención establecida para el buzón. Al colocar el buzón en espera de retención, el propietario del buzón tiene tiempo para administrar estos mensajes recién importados o usted tendrá tiempo para cambiar la configuración de retención del buzón. Vea la pestaña **Más información** en este tema para obtener sugerencias sobre cómo administrar la espera de retención. 
+- Después de que los archivos PST se importan a un buzón de correo de Office 365, la configuración de espera de retención del buzón está activada durante un período de tiempo indefinido. Esto significa que la directiva de retención asignada al buzón no se procesará hasta que desactive la espera de retención o establezca una fecha para desactivar la retención. ¿Por qué lo hacemos? Si los mensajes importados a un buzón son antiguos, es posible que se eliminen de forma permanente, ya que su período de retención ha caducado en función de la configuración de retención establecida para el buzón. Al colocar el buzón en espera de retención, el propietario del buzón tiene tiempo para administrar estos mensajes recién importados o usted tendrá tiempo para cambiar la configuración de retención del buzón. Vea la pestaña [Más información](#more-information) en este tema para obtener sugerencias sobre cómo administrar la espera de retención. 
     
 - De forma predeterminada, el tamaño máximo de mensaje que puede recibir un buzón de Office 365 es de 35 MB. Esto se debe a que el valor predeterminado de la propiedad *MaxReceiveSize* de un buzón está establecido en 35 MB. Pero el límite de tamaño máximo de recepción de mensajes en Office 365 es de 150 MB. Por lo tanto, si importa un archivo PST que contiene un elemento superior a 35 MB, el servicio de importación de Office 365 cambiará automáticamente el valor de la propiedad *MaxReceiveSize* en el buzón de destino a 150 MB. Esto permite que se importen a buzones de usuario mensajes de hasta 150 MB. 
     
@@ -91,7 +93,7 @@ El primer paso es descargar e instalar la herramienta Azure AzCopy, que es la he
   
 1. Ve a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador en su organización de Office 365. 
     
-2. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Gobierno de datos** \> **Importar**.
+2. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **gobernanza de información**\>** Importar **\>** archivos PST**.
     
     > [!NOTE]
     > Es necesario que tenga asignados los permisos adecuados para tener acceso a la página **Importar** en el Centro de seguridad y cumplimiento. Vea la sección **Antes de empezar** para obtener más información. 
@@ -120,7 +122,10 @@ El primer paso es descargar e instalar la herramienta Azure AzCopy, que es la he
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>Paso 2: cargar los archivos PST en Office 365
 
 Ahora ya puede usar la herramienta AzCopy.exe para cargar los archivos PST en Office 365. Esta herramienta los carga y los almacena en una ubicación de Azure Storage en la nube de Microsoft. Como mencionado anteriormente, la ubicación de Azure Storage que carga los archivos PST está en el mismo centro de datos regional de Microsoft que su organización de Office 365. Para llevar a cabo este paso, los archivos PST tienen que estar ubicados en un recurso compartido de archivos o en un servidor de archivos de su organización. Esto se conoce como el directorio de origen en este procedimiento. Cada vez que ejecute la herramienta AzCopy, puede especificar un directorio de origen diferente. 
-  
+
+> [!NOTE]
+> Por lo tanto, le recomendamos que cada archivo PST que cargue en la ubicación de  Azure Storage en el paso 20 no sea superior a 20 GB. Los archivos PST con un tamaño superior a 20 GB pueden afectar al rendimiento del proceso de importación de PST que comience en el paso 6.
+
 1. Abra el símbolo del sistema del equipo local.
     
 2. Vaya al directorio en el que instaló la herramienta AzCopy.exe en el paso 1. Si ha instalado la herramienta en la ubicación predeterminada, vaya a `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`.
@@ -129,7 +134,6 @@ Ahora ya puede usar la herramienta AzCopy.exe para cargar los archivos PST en Of
 
     ```powershell
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
-  
     ```
 
     > [!IMPORTANT] 
@@ -140,11 +144,11 @@ Ahora ya puede usar la herramienta AzCopy.exe para cargar los archivos PST en Of
     |**Parámetro**|**Descripción**|**Ejemplo**|
     |:-----|:-----|:-----|
     | `/Source:` <br/> |Especifica el directorio de origen de la organización que contiene los archivos PST que se cargarán en Office 365.  <br/> No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
-    | `/Dest:` <br/> |Especifica la URL de SAS que ha obtenido en el paso 1.  <br/> No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> **Sugerencia:** (opcional) puede especificar una subcarpeta en la ubicación de Azure Storage en la que cargar los archivos PST. Para ello, agregue una ubicación de subcarpeta (después de "ingestiondata") en la dirección URL de SAS. En el primer ejemplo no se especifica una subcarpeta. Esto significa que los PST se cargan en la raíz (denominada *ingestiondata*) de la ubicación de Azure Storage. El segundo ejemplo carga los archivos PST en una subcarpeta (denominada *PSTFiles*) en la raíz de la ubicación de Azure Storage.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> O bien:  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/Dest:` <br/> |Especifica la URL de SAS que ha obtenido en el paso 1.  <br/> No olvide incluir el valor de este parámetro entre comillas dobles (" ").<br/><br/>**Nota:** si usa la dirección URL de SAS en un archivo de proceso por lotes o un script, tiene que tener cuidado con determinados caracteres que necesitan escapar.  Por ejemplo, tiene que cambiar `%` a `%%` y cambiar `&` a `^&`.<br/><br/>**Sugerencia:** (opcional) puede especificar una subcarpeta en la ubicación de Azure Storage en la que cargar los archivos PST. Para ello, agregue una ubicación de subcarpeta (después de "ingestiondata") en la dirección URL de SAS. En el primer ejemplo no se especifica una subcarpeta. Esto significa que los PST se cargan en la raíz (denominada *ingestiondata*) de la ubicación de Azure Storage. El segundo ejemplo carga los archivos PST en una subcarpeta (denominada *PSTFiles*) en la raíz de la ubicación de Azure Storage.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> O bien:  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/V:` <br/> |Resulta en mensajes de estado detallados en un archivo de registro. De forma predeterminada, el archivo de registro detallado se denomina AzCopyVerbose.log en %LocalAppData%\Microsoft\Azure\AzCopy. Si especifica una ubicación de archivo existente para esta opción, el registro detallado se anexará a ese archivo.  <br/> No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
     | `/S` <br/> |Este modificador opcional especifica el modo recursivo para que la herramienta AzCopy copie los archivos PST que se encuentran en las subcarpetas del directorio de origen especificado por el parámetro `/Source:`.  <br/> **Nota:** si incluye este modificador, los archivos PST de las subcarpetas tendrán un nombre de ruta de archivo diferente en la ubicación de Azure Storage una vez cargados. Tendrá que especificar el nombre exacto de la ruta de acceso de archivo en el archivo CSV que cree en el paso 4.  <br/> | `/S` <br/> |
     | `/Y` <br/> |Este modificador necesario permite el uso de tokens de SAS de solo escritura al cargar los archivos PST en la ubicación de Azure Storage. La URL de SAS que ha obtenido en el paso 1 (y especificado en el parámetro `/Dest:`) es una dirección URL de solo escritura de SAS, por lo que debe incluir este modificador. Una dirección URL de SAS de solo escritura no le impedirá usar el Explorador de Azure Storage para ver una lista de los archivos PST cargados en la ubicación de Azure Storage.  <br/> | `/Y` <br/> |
-   
+
 A continuación se muestra un ejemplo de la sintaxis de la herramienta AzCopy.exe, en el que se usan valores reales para cada parámetro:
     
 ```powershell
@@ -239,7 +243,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
   
 1. Ve a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador en su organización de Office 365. 
     
-2. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Gobierno de datos** y, después, en **Importar**.
+2. En el panel izquierdo del Centro de Seguridad y Cumplimiento, haga clic en **Gobernanza de la información > Importar > Importar archivos PST** .
     
 3. En la página **Importar**, haga clic en ![Agregar icono](media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
     
@@ -269,7 +273,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
     
 10. Haga clic en **Guardar** para enviar el trabajo y, después de crear correctamente el trabajo, haga clic en **Cerrar**. 
     
-    Se muestra una página de control flotante de estado, con un estado de **Análisis en curso** y el nuevo trabajo de importación en la lista de la página **Importar**. 
+    Se muestra una página de estado, con un estado de **Análisis en curso** y el nuevo trabajo de importación se muestra en la lista de la página **Importar archivos PST**. 
     
 11. Haga clic en **Actualizar** ![Icono Actualizar](media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información de estado que se muestra en la columna **Estado**. Cuando el análisis se haya completado y los datos estén listos para su importación, el estado cambia a **Análisis finalizado**.
     
@@ -303,7 +307,7 @@ Después de crear e iniciar el trabajo de importación en el paso 5, Office 365 
     
 4. Si ha elegido importar todos los datos, haga clic en **Importar datos** para iniciar el trabajo de importación. 
     
-    El estado del trabajo de importación se mostrará en la página **Importar**. Haga clic en el ![icono Actualizar](media/O365-MDM-Policy-RefreshIcon.gif) **Actualizar** para actualizar la información de estado que se muestra en la columna **Estado**. Haga clic en el trabajo de importación para mostrar la página de control flotante de estado, donde se muestra la información de estado de cada archivo PST que se importa. 
+    El estado del trabajo de importación se mostrará en la página **importar la página de archivos PST**. Haga clic en el ![icono Actualizar](media/O365-MDM-Policy-RefreshIcon.gif) **Actualizar** para actualizar la información de estado que se muestra en la columna **Estado**. Haga clic en el trabajo de importación para mostrar la página de control flotante de estado, donde se muestra la información de estado de cada archivo PST que se importa. 
 
 ## <a name="how-the-import-process-works"></a>Cómo funciona el proceso de importación
   
@@ -321,11 +325,11 @@ Aquí se muestra una ilustración y una descripción del proceso de carga en la 
     
 3. **Crear un archivo de asignación de importación de PST**: una vez que los archivos PST se hayan cargado en la ubicación de Azure Storage, el siguiente paso es crear un archivo de valores separados por comas (CSV) que especifique los buzones de usuario en los que se importarán los archivos PST. Tenga en cuenta que un archivo PST se puede importar al buzón principal de un usuario o al buzón de archivo. El servicio de importación de Office 365 usa la información del archivo CVS para importar los archivos PST.
     
-4. **Crear un trabajo de importación de PST**: el siguiente paso es crear un trabajo de importación de PST en la página **Importar** del Centro de cumplimiento y seguridad, y enviar el archivo de asignación de importación de PST creado en el paso anterior. Una vez creado el trabajo de importación, Office 365 analiza los datos de los archivos PST y, después, le permite establecer filtros para controlar los datos que se importan a los buzones especificados en el archivo de asignación de importación de PST. 
+4. **Crear un trabajo de importación de PST**: el siguiente paso es crear un trabajo de importación de PST en la página **Importar archivos PST** del Centro de seguridad y cumplimiento, y enviar el archivo de asignación de importación de PST creado en el paso anterior. Una vez creado el trabajo de importación, Office 365 analiza los datos de los archivos PST y, después, le permite establecer filtros para controlar los datos que se importan a los buzones especificados en el archivo de asignación de importación de PST. 
     
 5. **Filtrar los datos PST que se importarán a los buzones**: después de crear e iniciar el trabajo de importación, Office 365 analiza de forma segura los datos de los archivos PST. Esto conlleva identificar la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Una vez se haya completado el análisis y los datos estén listos para la importación, tiene la opción de importar todos los datos incluidos en los archivos PST o de recortar solo algunos de ellos, estableciendo filtros para controlar los datos para importar.
     
-6. **Iniciar el trabajo de importación de PST**: una vez iniciado el trabajo de importación, Office 365 usará la información del archivo de asignación para importar los archivos PST desde la ubicación de Azure Storage a los buzones de usuario. En la página de **Importar** del Centro de cumplimiento y seguridad se mostrará información de estado sobre el trabajo de importación (incluida información individual de cada archivo PST importado). Cuando finalice el trabajo de importación, el estado del trabajo aparecerá como **Completado**.
+6. **Iniciar el trabajo de importación de PST**: una vez iniciado el trabajo de importación, Office 365 usará la información del archivo de asignación para importar los archivos PST desde la ubicación de Azure Storage a los buzones de usuario. La información de estado sobre el trabajo de importación (incluida la información sobre cada archivo PST que se importa) se muestra en la página **Importar archivos PST** en el Centro de seguridad y cumplimiento. Cuando finalice el trabajo de importación, el estado del trabajo aparecerá como **Completado**.
   
 ## <a name="more-information"></a>Más información
 
