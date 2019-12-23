@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un usuario envía continuamente mensajes desde Office 365 se clasifican como correo no deseado, se le bloqueará para que no pueda enviar más mensajes de correo electrónico.
-ms.openlocfilehash: 93cc7fb4af878457f7b9570a90d6950e7488d0ac
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c817add2581ffdbe709023dc3b348631defec169
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808035"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823822"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado
 
@@ -79,7 +79,7 @@ Los comandos de PowerShell para usuarios restringidos son:
 
 ## <a name="for-more-information"></a>Para más información
 
-[Responder a una cuenta de correo electrónico en comprometida](../../compliance/responding-to-a-compromised-email-account.md)
+[Responder a una cuenta de correo electrónico en comprometida](responding-to-a-compromised-email-account.md)
 
 [Información sobre el usuario con restricción de envío de alertas de correo electrónico](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 
