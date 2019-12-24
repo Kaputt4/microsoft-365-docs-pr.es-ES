@@ -23,14 +23,20 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Información general de los pasos de configuración para Microsoft 365 Business.
-ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967631"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850812"
 ---
 # <a name="overview-of-setup"></a>Introducción a la configuración
+
+Vea un breve vídeo sobre la configuración de Microsoft 365 Business.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 La mayoría de los pasos de configuración pueden realizarse en el Asistente de configuración, pero también se muestran otras opciones.
 
@@ -50,14 +56,12 @@ La mayoría de los pasos de configuración pueden realizarse en el Asistente de 
   
   Además de la configuración de seguridad del asistente de configuración, puede aumentar la seguridad si agrega las siguientes opciones de configuración:
 
-
 - **Protección contra malware de correo electrónico**
 - **Contra la suplantación de identidad ATP**
 - **Archivado de Exchange Online**
 - **Azure Information Protection (Plan1**)
 
-
-Para empezar, vea [configurar las directivas de seguridad avanzada](set-up-advanced-security.md).
+Para empezar, vea [set up Advanced Security Policies](set-up-advanced-security.md).
 
 Consulte también [las 10 formas principales de proteger su empresa de Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) para obtener una guía de los procedimientos de seguridad recomendados.
 

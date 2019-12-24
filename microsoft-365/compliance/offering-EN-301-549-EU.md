@@ -1,5 +1,5 @@
 ---
-title: Informes de los Estándares Europeos EN 301 549
+title: Estándares europeos EN 301 549
 description: Microsoft Cloud engloba muchos servicios y está incluido en numerosos informes individuales de conformidad.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
@@ -11,26 +11,27 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 33bd7c3626e29471495e9d7d7d251fc65c4e7892
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3bb38720caaa27b0f8deba26046410c0d8f25d6c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859940"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805213"
 ---
-# <a name="european-standards-en-301-549-reports"></a>Informes de los Estándares Europeos EN 301 549
+# <a name="european-standards-en-301-549"></a>Estándares europeos EN 301 549
 
 ## <a name="about-en-301-549"></a>Acerca de EN 301 549
 
-Los requisitos de accesibilidad adecuados para la contratación pública de productos y servicios de las tecnologías de la información y las comunicaciones (TIC) se establecen en el conjunto de estándares EN 301 549 para productos y servicios del sector TIC, como sitios web, software y dispositivos digitales. El Instituto Europeo de Normas de Telecomunicaciones (ETSI) publicó los estándares EN 301 549 en 2014 en respuesta a una solicitud de la Comisión Europea y los actualizó en 2018 con la versión 2.1.2. Se ha diseñado para que lo utilicen las organizaciones gubernamentales y del sector público. EN 301 549 incorpora los estándares de WCAG 2.1 para accesibilidad web en la cláusula 9.2.
+Los requisitos de accesibilidad adecuados para la contratación pública de productos y servicios de las tecnologías de la información y las comunicaciones (TIC) se establecen en el conjunto de estándares EN 301 549 para productos y servicios del sector TIC, como sitios web, software y dispositivos digitales. La norma En 301 549 se publicó en 2014 por el Instituto Europeo de normas de telecomunicaciones (ETSI) en respuesta a la solicitud de la Comisión Europea, y se actualizó recientemente en noviembre del 2019 según la versión 3.1.1. EN 301 549 3.1.1 incorpora las [estándares de](offering-WCAG-2-1.md) WCAG para accesibilidad Web.
 
-Dado que Microsoft es uno de los proveedores principales de servicios en la nube y software para los países europeos, se compromete a cumplir con todos los [estándares gubernamentales y controles de cumplimiento normativo](https://go.microsoft.com/fwlink/p/?linkid=2051708) relevantes. Al ceñirse a estos estándares de accesibilidad amplios, Microsoft garantiza que todos los clientes (tanto dentro como fuera de la administración pública) puedan usar los servicios y productos de Microsoft.
+Microsoft es un importante proveedor de servicios en la nube y software principal para Estados europeos. Con el fin de ayudar a los clientes de la administración pública en la toma de decisiones de compra, Microsoft publica informes de cumplimiento de accesibilidad (ACRs) en el que se describa en qué medida los productos y servicios son compatibles con los criterios de EN 301 549. La información contenida en el ACRs puede ayudar a los clientes de Microsoft a determinar si un producto o servicio satisface sus necesidades específicas.
 
 ## <a name="microsoft-and-en-301-549"></a>Microsoft y EN 301 549
 
-La adherencia de Microsoft a la norma EN 301 549 muestra su compromiso con la accesibilidad de todos los clientes. EN 301 549 es el estándar de accesibilidad específico de Europa que complementa la Sección 508 (estadounidense) y la WCAG 2.1 (internacional).
+La consideración que Microsoft tiene respecto a 301 549 en el desarrollo de productos y servicios señala su compromiso con la accesibilidad para todos los clientes.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
