@@ -1,6 +1,6 @@
 ---
-title: Pautas de accesibilidad al contenido en la web 2.1
-description: Microsoft publica informes WCAG 2.1 AA que reflejan el producto o el servicio completo, o partes del producto que pueden ser instalados por separado.
+title: Directrices de accesibilidad al contenido en la web
+description: Microsoft publica informes WCAG AA que reflejan el producto o el servicio completo, o partes del producto que pueden ser instalados por separado.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -11,32 +11,33 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a1887bd2b6c04836ebb11d224fcc59debcd88e55
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 316347bb212e415848586c88936bd345fd5d1a94
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859450"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804213"
 ---
-# <a name="web-content-accessibility-guidelines-21"></a>Pautas de accesibilidad al contenido en la web 2.1
+# <a name="web-content-accessibility-guidelines"></a>Directrices de accesibilidad al contenido en la web
 
-## <a name="about-wcag-21"></a>Acerca de WCAG 2.1
+## <a name="about-wcag"></a>Acerca de WCAG
 
-WCAG 2.1 proporciona un marco para el desarrollo de contenido web que mejora la accesibilidad para personas con discapacidad, además de hacerlo para los usuarios de dispositivos con capacidades gráficas limitadas. WCAG 2.0 fue publicada en 2008 por el World Wide Web Consortium (W3C), una organización internacional dedicada a la creación de estándares web, y actualizada a WCAG 2.1 el 1 de junio de 2018. En 2012, la WCAG 2.0 también fue publicada por la Organización internacional de normalización (ISO) bajo el nombre de ISO/IEC 40500:2012.  
+Las directrices de accesibilidad de contenido web (WCAG) proporcionan un marco de trabajo para hacer que el contenido web sea más accesible para las personas con discapacidades. WCAG 2.0 fue publicada en 2008 por el World Wide Web Consortium (W3C), una organización internacional dedicada a la creación de estándares web, y actualizada a WCAG 2.1 en junio de 2018. En 2012, la WCAG 2.0 también fue publicada por la Organización internacional de normalización (ISO) bajo el nombre de ISO/IEC 40500:2012.
+
+El contenido que se ajusta a WCAG 2.1 también cumple con WCAG 2.0. Para las directivas que exigen la conformidad con WCAG 2.0, la WCAG 2.1 puede ofrecer un medio alternativo de cumplimiento.
+
+Microsoft es uno de los principales proveedores de software y servicios en la nube para consumidores, empresas y gobiernos de todo el mundo. Para ayudar a los clientes a tomar decisiones de compra, Microsoft publica informes de cumplimiento con accesibilidad que describen el grado en que nuestros productos y servicios son compatibles con los criterios WCAG. Esta información puede ayudar a los clientes de Microsoft a determinar si un producto o servicio en particular satisface sus necesidades específicas.
   
-El contenido que se ajusta a WCAG 2.1 también cumple con WCAG 2.0. Para las directivas que exigen la conformidad con WCAG 2.0, la WCAG 2.1 puede ofrecer un medio alternativo de cumplimiento.  
-  
-Los requisitos de conformidad para cada guía se miden en tres niveles: A, AA y AAA. Dado que Microsoft es uno de los proveedores principales de servicios en la nube y software para los países y gobiernos de todo el mundo, se compromete a cumplir con todos los [estándares internacionales y controles de cumplimiento normativo](https://go.microsoft.com/fwlink/p/?linkid=2052226) relevantes. Al ceñirse a estos estándares de accesibilidad amplios, Microsoft garantiza que todos los clientes (tanto dentro como fuera de la administración pública) puedan usar los servicios y productos de Microsoft.  
+## <a name="microsoft-and-wcag"></a>Microsoft y WCAG
 
-## <a name="microsoft-and-wcag-21"></a>Microsoft y la WCAG 2.1
+La consideración del estándar WCAG por parte de Microsoft en el desarrollo de productos y servicios señala su compromiso de hacer que la tecnología y los datos sean accesibles para todos los clientes.
 
-El cumplimiento de Microsoft a los estándares de WCAG 2.1 (ISO/IEC 40500) apunta al compromiso de hacer que la tecnología y los datos sean accesibles para todos los clientes. WCAG 2.1 (ISO/IEC 40500) es el requisito de accesibilidad internacional que complementa a EN 301 549 (Europa) y a la sección 508. (Estados Unidos).  
-  
-Microsoft publica informes WCAG 2.1 que reflejan el producto o servicio completo. Por lo general, no se crean informes para componentes o características individuales. A veces, Microsoft puede publicar un nuevo componente para un producto existente, o una nueva versión de un componente existente, que los usuarios pueden elegir instalar por separado, y Microsoft también puede publicar un informe WCAG 2.1 para ese componente.  
-  
-[Descargar los estándares de accesibilidad WCAG 2.1 (ISO/IEC 40500)](https://go.microsoft.com/fwlink/p/?linkid=2052226)
+Microsoft publica informes WCAG que reflejan el producto o servicio completo. Por lo general, no crea informes para componentes o características individuales. A veces, Microsoft puede publicar un nuevo componente para un producto existente, o una nueva versión de un componente existente, que los usuarios pueden elegir instalar por separado, y Microsoft también puede publicar un informe WCAG para ese componente.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+[Descargar los estándares de accesibilidad WCAG (ISO/IEC 40500)](https://www.w3.org/WAI/standards-guidelines/wcag/)
+
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
@@ -48,21 +49,14 @@ Microsoft publica informes WCAG 2.1 que reflejan el producto o servicio completo
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Informes de conformidad de la accesibilidad de Microsoft
 
-Obtenga informes WCAG para todos nuestros productos y servicios.
-
-[**Más información**](https://go.microsoft.com/fwlink/p/?linkid=2050974)
+Lea informes WCAG para [todos nuestros productos y servicios](https://go.microsoft.com/fwlink/p/?linkid=205097).
 
 ## <a name="resources"></a>Recursos
 
-[Sitio de accesibilidad de Microsoft: obtenga información sobre el uso de las características de accesibilidad y descubra las formas en que Microsoft innova para ayudar a los usuarios a lograr más.
-
-[Centro de accesibilidad de Office 365](https://go.microsoft.com/fwlink/p/?linkid=2051801)
-    - Recursos de Office 365 para personas con discapacidad.
-
-[Answer Desk Accesibilidad Empresarial](https://go.microsoft.com/fwlink/p/?linkid=2050890)
-    - Soporte técnico especializado para los clientes empresariales con preguntas sobre la accesibilidad de nuestros productos y servicios o nuestro cumplimiento normativo.
-
-[Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Sitio de accesibilidad de Microsoft](https://www.microsoft.com/accessibility): obtenga información sobre el uso de las características de accesibilidad y descubra las formas en que Microsoft innova para ayudar a los usuarios a lograr más.
+- [Centro de accesibilidad de Office 365](https://go.microsoft.com/fwlink/p/?linkid=2051801): recursos de Office 365 para discapacitados.
+- [Answer Desk empresarial para personas con discapacidad](https://go.microsoft.com/fwlink/p/?linkid=2050890): soporte técnico especializado para clientes empresariales, con preguntas sobre la accesibilidad de nuestros productos y servicios o nuestro cumplimiento normativo.
+- [Cumplimiento normativo en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 
