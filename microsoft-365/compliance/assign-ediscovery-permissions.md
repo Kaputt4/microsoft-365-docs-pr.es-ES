@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 54a12334c4b63e1751d578dcd5a9c79d887d246d
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 434fe9f4876bb29df98de5575611069b0afc6860
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823732"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854045"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -47,7 +47,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
 
 - Debe ser miembro del grupo de roles de administración de la organización o tener asignado el rol de administración de roles para asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
     
-- Puede usar el cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) en seguridad & PowerShell del centro de cumplimiento para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles eDiscovery Manager. Sin embargo, no puede Agregar un grupo de seguridad habilitado para correo al subgrupo administradores de eDiscovery. Para obtener más información, consulte la sección [More Information](#more-information) . 
+- Puede usar el cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) en seguridad & PowerShell del centro de cumplimiento para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles eDiscovery Manager. Sin embargo, no puede Agregar un grupo de seguridad habilitado para correo al subgrupo administradores de eDiscovery. Para obtener información detallada, consulte la sección [más información](#more-information) . 
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -121,7 +121,10 @@ Este rol permite a los usuarios ver una lista de elementos devueltos de una bús
 
 ### <a name="review"></a>Revisar
 
-Esta función permite a los usuarios acceder a datos de casos en la exhibición avanzada de documentos electrónicos de Office 365. El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición avanzada de documentos electrónicos. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede seleccionar **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o realizar otras tareas de búsqueda de contenido o de administración de casos.
+Esta función permite a los usuarios acceder a datos de casos en [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md) (también conocido como Advanced eDiscovery V1). El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición avanzada de documentos electrónicos de Office 365. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede seleccionar **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos de Office 365. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o realizar otras tareas de búsqueda de contenido o de administración de casos.
+
+> [!NOTE]
+> En este momento, los usuarios a los que se les asigna la función Review (o que es miembro del grupo de roles Reviewer) no pueden acceder a datos en [eDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md) (también conocido como eDiscovery avanzado V2). Para agregar miembros a un caso en eDiscovery avanzado v2 para que puedan revisar los datos de caso, un usuario debe ser miembro del grupo de roles eDiscovery Manager.
 
 ### <a name="rms-decrypt"></a>Descifrado de RMS
 

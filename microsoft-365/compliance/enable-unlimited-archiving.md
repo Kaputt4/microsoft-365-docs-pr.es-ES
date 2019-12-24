@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: Obtenga información sobre cómo habilitar el archivado de expansión automática en Office 365, que proporciona a los usuarios un almacenamiento ilimitado para sus buzones de Exchange Online. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
-ms.openlocfilehash: b5191aa080722b5bb3150c92d922b6b150fc545e
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 4059e007039a62e415fd0b5847d1d8fa120a1570
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38627096"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850894"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Habilitar el archivado ilimitado en Office 365: ayuda de administración
 
@@ -124,4 +124,4 @@ Tenga en cuenta lo siguiente después de habilitar el archivado de expansión au
 - Los administradores no pueden ajustar la cuota de almacenamiento.
 
 > [!IMPORTANT]
-> El archivado de expansión automática solo se admite para buzones de correo que se usan para usuarios individuales o buzones compartidos con una tasa de crecimiento que no supera 1 GB por día. El uso del registro en diario, las reglas de transporte o las reglas de reenvío automático para copiar mensajes en un buzón de archivo con el fin de archivar no está permitido. El buzón de archivo de un usuario está diseñado exclusivamente para dicho usuario. Microsoft se reserva el derecho de denegar el archivado ilimitado si el buzón de archivo de un usuario se usa para almacenar datos de archivo de otros usuarios.
+> El archivado de expansión automática solo se admite para buzones de correo que se usan para usuarios individuales o buzones compartidos con una tasa de crecimiento que no supera 1 GB por día. El uso del registro en diario, las reglas de transporte o las reglas de reenvío automático para copiar mensajes en un buzón de archivo con el fin de archivar no está permitido. El buzón de archivo de un usuario está diseñado exclusivamente para dicho usuario. Microsoft se reserva el derecho a denegar el archivado ilimitado en los casos en que el buzón de archivo de un usuario se usa para almacenar datos de archivo para otros usuarios o en otros casos de uso inadecuado.

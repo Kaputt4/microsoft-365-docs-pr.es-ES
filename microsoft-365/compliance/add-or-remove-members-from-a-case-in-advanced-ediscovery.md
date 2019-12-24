@@ -14,30 +14,27 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 562735b72e3f191dab6c6f2fa0a317634667e22c
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 938c67bde705183201370d4843da2d6c5f03cc62
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256727"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854015"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
 
-Puede Agregar o quitar miembros para administrar quién puede tener acceso al caso. Los usuarios que se agregan a los grupos de roles revisor o eDiscovery Manager se pueden agregar como miembros del caso. El administrador de eDiscovery que ha creado el caso se agrega automáticamente como miembro.
+Puede Agregar o quitar miembros para administrar quién puede tener acceso al caso. Sin embargo, para que un miembro pueda acceder a un caso de exhibición de documentos electrónicos avanzado (y realizar tareas en el caso), debe agregar el usuario al grupo de roles eDiscovery Manager en la página **permisos** del centro de seguridad y cumplimiento. Para obtener más información, vea [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-1. En la página **exhibición avanzada** de documentos electrónicos, vaya a su caso.
+1. En la página **exhibición avanzada** de documentos electrónicos, vaya al caso al que desea agregar un miembro.
 
-2. Vaya a **configuración** y seleccione "acceso & permisos".
+2. Haga clic en la pestaña **configuración** y, a continuación, haga clic en **seleccionar** en el mosaico **permisos de acceso &** .
 
 3. Haga clic en **Actualizar**.
 
-4. En **administrar miembros**, seleccione Agregar icono Agregar para agregar miembros al caso. También puede optar por agregar un grupo de funciones al caso. En **administrar grupos de roles**, seleccione Agregar icono Agregar.
-    Tenga en cuenta que los grupos de roles controlan el permiso de acceso al caso. Esto significa que solo puede asignar un revisor, un administrador de exhibición de documentos electrónicos o grupos de roles personalizados con el rol de administración de casos.
+4. En **administrar miembros**, haga clic en **Agregar** para agregar miembros al caso. También puede optar por agregar un grupo de funciones al caso haciendo clic en **Agregar** en **administrar grupos de roles**.
 
 5. En la lista de personas o grupos de roles que se pueden agregar como miembros del caso, active la casilla situada junto a los nombres de los grupos de personas o roles que desea agregar.
 
-6. Una vez que haya seleccionado los grupos de personas o roles que se agregarán como miembros del grupo, seleccione **Agregar**.
+6. Una vez que haya seleccionado los grupos de personas o roles que desea agregar como miembros del caso, haga clic en **Agregar**.
 
-7. En **administrar este caso**, seleccione **Guardar** para guardar la nueva lista de miembros de mayúsculas y minúsculas.
-
-8. Seleccione **Guardar** para guardar la nueva lista de miembros de casos.
+7. En la página desplegable **administrar este caso** , haga clic en **Guardar** para guardar la nueva lista de miembros de mayúsculas y minúsculas.

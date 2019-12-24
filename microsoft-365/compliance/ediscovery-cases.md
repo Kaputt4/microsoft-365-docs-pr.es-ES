@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más avanzado en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: cf880e6f54f2ab91bae23c3ecf468f88627f3025
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: efd5d20d72794ff6f71d2b1c6858bee615b14f3a
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687868"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854065"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>casos de eDiscovery en el centro de seguridad & cumplimiento
 
@@ -57,7 +57,10 @@ Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en 
 
 El primer paso consiste en asignar los permisos adecuados relacionados con eDiscovery a los usuarios para que pueda agregarlos a un caso de exhibición de documentos electrónicos en el paso 2. Debe ser miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de roles) en el centro de seguridad & cumplimiento para asignar permisos de exhibición de documentos electrónicos. En la lista siguiente se describen los grupos de roles relacionados con la exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. 
   
-- **Revisor.** Este grupo de roles tiene los permisos más restrictivos relacionados con la exhibición de documentos electrónicos. El objetivo principal de este grupo de roles es permitir a los miembros ver y obtener acceso a los datos de caso en eDiscovery avanzado de Office 365. Los miembros de este grupo solo pueden ver y abrir la lista de los casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad y cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en eDiscovery avanzado. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de la búsqueda, exportar resultados de la búsqueda o preparar los resultados para la exhibición avanzada de documentos electrónicos. 
+- **Revisor.** Este grupo de roles tiene los permisos más restrictivos relacionados con la exhibición de documentos electrónicos. El objetivo principal de este grupo de roles es permitir a los miembros ver y obtener acceso a los datos de caso en [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md) (también conocido como *eDiscovery avanzado v1*). Los miembros de este grupo solo pueden ver y abrir la lista de los casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad y cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en eDiscovery avanzado. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de la búsqueda, exportar resultados de la búsqueda o preparar los resultados para la exhibición avanzada de documentos electrónicos. 
+
+   > [!NOTE]
+   > En este momento, los usuarios que son miembros del grupo de roles Reviewer no pueden tener acceso a los datos de [eDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md) (también conocido como *eDiscovery avanzado V2*). Para agregar miembros a un caso en eDiscovery avanzado v2 para que puedan revisar los datos de caso, un usuario debe ser miembro del grupo de roles eDiscovery Manager.
     
 - **Administrador de exhibición de documentos electrónicos.** Los miembros de este grupo de roles pueden crear y administrar casos de exhibición de documentos electrónicos. Pueden agregar y quitar miembros, poner ubicaciones de contenido en suspensión, crear y editar búsquedas de contenido asociadas a un caso, exportar los resultados de una búsqueda de contenido y preparar los resultados de la búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. Hay dos subgrupos en este grupo de roles. La diferencia entre estos subgrupos se basa en el ámbito.
     

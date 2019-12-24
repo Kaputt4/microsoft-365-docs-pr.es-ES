@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Estamos creando artículos nuevos, actualizando los existentes y realizando cambios en función de sus comentarios. Descubra las novedades y las actualizaciones de este mes.
-ms.openlocfilehash: 497088cf5ad9da848879cf2c7197059917be6b07
-ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
+ms.openlocfilehash: 61e4798575c44a9759a15bb93dbbb723d5be8999
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38687684"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850884"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -147,10 +147,6 @@ Se agregaron nuevas instrucciones a los siguientes artículos sobre la ley de pr
 
 [Búsqueda de contenido en Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment) (actualizado)<br>
 [Configurar límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments) (actualizado)<br>Se agregaron detalles a ambos artículos sobre la búsqueda de contenido en entornos multigeográfico de SharePoint.
-
-### <a name="data-governance"></a>Gobierno de datos
-
-[Información general sobre el archivado ilimitado en Office 365](unlimited-archiving.md#how-auto-expanding-archiving-works) (actualizado)<br>Se agregaron detalles sobre cómo Office 365 agrega un máximo de 20 archivos auxiliares para un total de 1 TB de almacenamiento adicional.
 
 ### <a name="data-investigations"></a>Investigaciones de datos
 
