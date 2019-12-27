@@ -1,7 +1,7 @@
 ---
 title: Habilitar la Protección contra amenazas de Microsoft en el Centro de seguridad de Microsoft 365
 description: Obtenga información acerca de cómo habilitar la Protección contra amenazas de Microsoft y empiece a integrar su gestión de incidentes de seguridad y la respuesta a ellos.
-keywords: introducción, MTP, Protección contra amenazas de Microsoft, M365, seguridad, ubicación de datos
+keywords: Introducción, habilitación de MTP, protección contra amenazas de Microsoft, M365, seguridad, ubicación de datos, permisos requeridos, elegibilidad de licencia
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7790e079d4b39b5d41961a26bb17009adb1bec1d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 842c3be031e96467c8b82e8cf482435e66124960
+ms.sourcegitcommit: 5b0a2e11c86c00e6e6b534f8b0a19962d1bb2805
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808455"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "40881981"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Habilitar la Protección contra amenazas de Microsoft
 
@@ -33,8 +33,10 @@ ms.locfileid: "40808455"
 
 La Protección contra amenazas de Microsoft unifica el proceso de respuesta a incidentes de seguridad mediante la integración de las capacidades clave en la Protección contra amenazas avanzada (ATP) de Microsoft Defender, Office 365 ATP, Microsoft Cloud App Security y Azure ATP. Esta experiencia unificada aporta potentes características a las que puede acceder desde el Centro de seguridad de Microsoft 365.
 
-## <a name="check-your-eligibility"></a>Compruebe su elegibilidad
+## <a name="check-license-eligibility-and-required-permissions"></a>Comprobar la elegibilidad de la licencia y los permisos necesarios
 Los clientes con una licencia de Microsoft 365 E5 o equivalente pueden usar la Protección contra amenazas de Microsoft. Para obtener más información, [lea los requisitos de licencia](prerequisites.md#licensing-requirements).
+
+ Para poder activar la protección contra amenazas de Microsoft, debe ser **administrador global** o **Administrador de seguridad** en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## <a name="start-using-the-service"></a>Empiece a usar el servicio
 Activar el servicio de Protección contra amenazas de Microsoft agrega datos de diferentes servicios integrados. Los datos se procesan y almacenan de forma centralizada para identificar nuevas perspectivas y posibilitar la centralización de flujos de trabajo de respuesta.
@@ -44,7 +46,7 @@ Antes de activar el servicio, el Centro de seguridad de Microsoft 365 ([security
 ![Imagen del menú del Centro de seguridad de Microsoft 365 sin características de la Protección contra amenazas de Microsoft](../images/mtp-off.png)
 *Centro de seguridad de Microsoft 365 con la Protección contra amenazas de Microsoft desactivada*
 
-Para activar el servicio de Protección contra amenazas de Microsoft, vaya a **Configuración** > **** Protección contra amenazas de Microsoft > **Participar/No participar** en el Centro de seguridad de Microsoft 365. Para ello, debe ser administrador global o de seguridad de [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Para activar el servicio de Protección contra amenazas de Microsoft, vaya a **Configuración** > **** Protección contra amenazas de Microsoft > **Participar/No participar** en el Centro de seguridad de Microsoft 365.
 
 Si su organización dispone de ATP de Microsoft Defender, los datos se almacenarán y procesarán en la misma ubicación del centro de datos que seleccionara para [sus datos de ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si no tiene ATP de Microsoft defender, se le pedirá que elija una nueva ubicación del centro de datos específicamente para la Protección contra amenazas de Microsoft. Tendrá que dar su consentimiento para que los datos se compartan entre los servicios y se agreguen.
 
