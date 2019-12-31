@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 4aff384d571444e5641d3bcff58df136d27c7624
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40832053"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910121"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -31,6 +31,9 @@ Aunque se permite a los administradores de seguridad personalizar la configuraci
 > La configuración del correo electrónico no deseado tiene que estar habilitada en el buzón para que el filtrado funcione correctamente. Esta opción está habilitada de forma predeterminada, pero debe comprobarse si el filtrado parece no funcionar. Lea [set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) para obtener más información. 
 
 En este tema se describe esta configuración recomendada por Microsoft para ayudar a proteger a los usuarios de Office 365.
+
+> [!TIP]
+> Hay un nuevo módulo de PowerShell que puede descargar, llamado analizador de configuración de la protección contra amenazas avanzada de Office 365 (ORCA), que ayuda a determinar algunas de estas opciones de configuración. Cuando se ejecuta como administrador en el espacio empresarial, Get-ORCAReport le ayudará a generar una evaluación de la configuración de protección contra correo electrónico no deseado, anti-phish y otros mensajes. Puede descargar este módulo en https://www.powershellgallery.com/packages/ORCA/.
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Protección contra correo electrónico no deseado, anti-malware y antiphishing en EOP
 
@@ -45,7 +48,7 @@ Anti-spam, anti-malware y anti-phishing son características de EOP que los admi
 |Acción de detección de correo phishing|Colocar el mensaje en cuarentena|Colocar el mensaje en cuarentena||
 |Acción de detección de correo electrónico de phish de confianza alta|Colocar el mensaje en cuarentena|Colocar el mensaje en cuarentena||
 |Acción de detección de correo electrónico en masa|Mover mensaje a la carpeta Correo no deseado|Colocar el mensaje en cuarentena||
-|Establecer el umbral de correo electrónico masivo en|6 |4|Actualmente, el valor predeterminado es 7, pero se recomienda cambiarlo a 6. Para obtener más información, vea [valores de nivel de queja masiva](bulk-complaint-level-values.md).|
+|Establecer el umbral de correo electrónico masivo en|6 |4 |Actualmente, el valor predeterminado es 7, pero se recomienda cambiarlo a 6. Para obtener más información, vea [valores de nivel de queja masiva](bulk-complaint-level-values.md).|
 |Período de retención de cuarentena|30 días|30 días||
 |Sugerencias de seguridad|Activado|Activado||
 |Remitentes permitidos|Ninguno|Ninguno||
@@ -80,9 +83,9 @@ Hay varios otros parámetros en la Directiva contra correo no deseado denominado
 
 |Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---------|---------|---------|---------|
-|Límites de destinatarios de la Directiva de correo no deseado saliente-límite externo por hora|500|400||
-|Límites de destinatarios de la Directiva de correo no deseado saliente: límite interno por hora|1000|800||
-|Límites de destinatarios de la Directiva de correo no deseado saliente: límite diario|1000|800||
+|Límites de destinatarios de la Directiva de correo no deseado saliente-límite externo por hora|400|500||
+|Límites de destinatarios de la Directiva de correo no deseado saliente: límite interno por hora|800|1000||
+|Límites de destinatarios de la Directiva de correo no deseado saliente: límite diario|800|1000||
 |Acción cuando un usuario supera los límites|Restringir al usuario el envío de correo|Restringir al usuario el envío de correo||
 
 ### <a name="eop-anti-malware-policy-settings"></a>Configuración de la Directiva de EOP contra malware
