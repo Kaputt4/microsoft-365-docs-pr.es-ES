@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Obtenga información sobre los límites en vigor para la característica de búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, como el número máximo de búsquedas simultáneas. '
-ms.openlocfilehash: 6933fcb2a7b54c3617b2c01d54fa50fa4955ead2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0574908468b5c2c94f1feb78c0845bc0a0e2afff
+ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091620"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911468"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Límites de búsqueda de contenido en el centro de seguridad & cumplimiento
 
@@ -49,7 +49,7 @@ En la siguiente tabla se enumeran los límites de búsqueda en el centro de segu
 |El número máximo de caracteres de la consulta de búsqueda (incluidos los operadores y las condiciones) de una búsqueda de contenido.  <br/><br/> **Nota:** Este límite surte efecto después de que se expande la consulta, lo que significa que la consulta se expandirá en cada una de las palabras clave. Por ejemplo, si una consulta de búsqueda tiene 15 palabras clave y otros parámetros y condiciones, la consulta se expande 15 veces, cada una con los demás parámetros y condiciones de la consulta. Por lo tanto, aunque el número de caracteres en la consulta de búsqueda puede estar por debajo del límite, es la consulta ampliada que puede contribuir a exceder este límite.  <br/> |**Buzones de correo:** 10.000  <br/> **Sitios:** 4.000 al buscar en todos los sitios o en 2.000 al buscar hasta 20 sitios <sup>1</sup> <br/> |
 |Número máximo de variantes devueltas al usar un carácter comodín de prefijo para buscar una frase exacta en una consulta de búsqueda o cuando se usa un carácter comodín de prefijo y el operador booleano **Near** o **ONEAR** .  <br/> |10.000 <sup>2</sup> <br/> |
 |El número mínimo de caracteres alfabéticos para los caracteres comodín de prefijo; por ejemplo, `time*` `one*`, o `set*`.  <br/> |3   <br/> |
-|El número máximo de buzones en una búsqueda de contenido en la que se pueden eliminar elementos mediante una acción "buscar y purgar" (mediante el comando **New-ComplianceSearchAction-Purge** ). Si la búsqueda de contenido en la que está realizando una acción de purga tiene más buzones de origen que este límite, se producirá un error en la acción de purga. Para obtener más información acerca de las búsquedas y depuración, consulte [Buscar y eliminar mensajes de correo electrónico en su organización de Office 365](search-for-and-delete-messages-in-your-organization.md).  <br/> |50.000  <br/> |
+|El número máximo de buzones en una búsqueda de contenido en la que se pueden eliminar elementos mediante una acción "buscar y purgar" (mediante el comando **New-ComplianceSearchAction-Purge** ). Si la búsqueda de contenido en la que está realizando una acción de purga tiene más buzones de origen que este límite, se producirá un error en la acción de purga. Para obtener más información acerca de las búsquedas y depuración, consulte [Buscar y eliminar mensajes de correo electrónico en su organización de Office 365](search-for-and-delete-messages-in-your-organization.md).  <br/> |50 000  <br/> |
    
 > [!NOTE]
 > <sup>1</sup> al buscar ubicaciones de SharePoint y OneDrive para la empresa, los caracteres de las direcciones URL de los sitios en los que se busca se cuentan en este límite. <br/> <sup>2</sup> para las consultas que no son de frases (un valor de palabra clave que no usa comillas dobles) usamos un índice de prefijo especial. Esto indica que se produce una palabra en un documento, pero no donde se produce en el documento. Para realizar una consulta de frases (un valor de palabra clave con comillas dobles), debemos comparar la posición del documento con las palabras de la frase. Esto significa que no podemos usar el índice de prefijos para las consultas de frases. En este caso, la consulta se expande internamente con todas las palabras posibles a las que se expande el prefijo; por ejemplo, `"time*"` se puede expandir `"time OR timer OR times OR timex OR timeboxed OR …"`a. 10.000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior. 
@@ -60,8 +60,7 @@ En la tabla siguiente se describen los límites de indización que podrían dar 
   
 |**Límite de indización**|**Notas**|**Descripción**|
 |:-----|:-----|:-----|
-|Tamaño máximo de datos adjuntos (excepto los archivos de Excel)  <br/> |150 MB  <br/> |El tamaño máximo de datos adjuntos de correo electrónico que se analizarán para la indización. Los datos adjuntos que superen este límite no se analizarán para la indización y el mensaje con los datos adjuntos se marcará como parcialmente indizado.  <br/> <br/>**Nota:** El análisis es el proceso en el que el servicio de indización extrae el texto de los datos adjuntos, quita los caracteres innecesarios, como la puntuación y los espacios, y divide el texto en palabras (en un proceso denominado "tokenización"), que se almacenan en el índice.           |
-|Tamaño máximo de los archivos de Excel  <br/> |4 MB  <br/> |El tamaño máximo de un archivo de Excel ubicado en un sitio o adjunto a un mensaje de correo electrónico que se analizará para la indización. Los archivos de Excel que superen este límite no se analizarán y el archivo o el correo electrónico con los datos adjuntos del archivo se marcarán como no indizados.  <br/> |
+|Tamaño máximo de datos adjuntos|150 MB  <br/> |El tamaño máximo de datos adjuntos de correo electrónico que se analizarán para la indización. Los datos adjuntos que superen este límite no se analizarán para la indización y el mensaje con los datos adjuntos se marcará como parcialmente indizado.  <br/> <br/>**Nota:** El análisis es el proceso en el que el servicio de indización extrae el texto de los datos adjuntos, quita los caracteres innecesarios, como la puntuación y los espacios, y divide el texto en palabras (en un proceso denominado "tokenización"), que se almacenan en el índice.           |
 |Número máximo de datos adjuntos  <br/> |250  <br/> |El número máximo de archivos adjuntos a un mensaje de correo electrónico que se analizará para la indización. Si un mensaje tiene más de 250 datos adjuntos, se analizan e indizan los primeros 250, y el mensaje se marca como parcialmente indizado porque tenía datos adjuntos adicionales que no se analizaron.  <br/> |
 |Profundidad máxima de datos adjuntos  <br/> |semestre  <br/> |El número máximo de datos adjuntos anidados que se analizan. Por ejemplo, si un mensaje de correo electrónico tiene otro mensaje adjunto y el mensaje adjunto tiene un documento de Word adjunto, se indizará el documento de Word y el mensaje adjunto. Este comportamiento seguirá hasta 30 archivos adjuntos anidados.  <br/> |
 |Número máximo de imágenes adjuntas  <br/> |comprendi  <br/> |El analizador omite una imagen que se adjunta a un mensaje de correo electrónico y no se indiza.  <br/> |
@@ -69,7 +68,7 @@ En la tabla siguiente se describen los límites de indización que podrían dar 
 |Salida máxima del analizador  <br/> |2 millones de caracteres  <br/> |La cantidad máxima de salida de texto del analizador que se indiza. Por ejemplo, si el analizador extrajo 8 millones caracteres de un documento, solo se indizarán los primeros 2 millones de caracteres.  <br/> |
 |Tokens de anotación máximos  <br/> |2 millones  <br/> |Cuando se indiza un mensaje de correo electrónico, se anota cada palabra con diferentes instrucciones de procesamiento que especifican cómo debe indizarse esa palabra. Cada conjunto de instrucciones de procesamiento se denomina token de anotación. Para mantener la calidad de servicio en Office 365, hay un límite de 2 millones de tokens de anotación para un mensaje de correo electrónico.  <br/> |
 |Tamaño máximo del cuerpo en el índice  <br/> |67 millones caracteres  <br/> |El número total de caracteres en el cuerpo de un mensaje de correo electrónico y todos sus datos adjuntos. Cuando se indiza un mensaje de correo electrónico, todo el texto del cuerpo del mensaje y en todos los datos adjuntos se concatena en una sola cadena. El tamaño máximo de esta cadena indizada es de 67 millones caracteres.  <br/> |
-|Número máximo de tokens únicos en el cuerpo  <br/> |1 millón  <br/> |Como se ha explicado anteriormente, los tokens son el resultado de extraer texto del contenido, quitar los signos de puntuación y espacios y, a continuación, dividirlo en palabras (llamadas tokens) que se almacenan en el índice. Por ejemplo, la frase `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 son tokens únicos. Hay un límite de 1 millón tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice sea demasiado grande con tokens aleatorios.  <br/> |
+|Número máximo de tokens únicos en el cuerpo  <br/> |1 millón  <br/> |Como se ha explicado anteriormente, los tokens son el resultado de extraer texto del contenido, quitar los signos de puntuación y espacios y, a continuación, dividirlo en palabras (llamadas tokens) que se almacenan en el índice. Por ejemplo, la frase `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 son tokens únicos. Hay un límite de 1 millón tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice sea demasiado grande con tokens aleatorios.  <br/> |
   
 ## <a name="more-information"></a>Más información
 
@@ -85,6 +84,6 @@ Existen límites adicionales relacionados con los distintos aspectos de la búsq
     
 Para obtener más información acerca de las búsquedas de contenido, consulte:
   
-- [Búsqueda de contenido en Office 365](content-search.md)
+- [Búsqueda de contenido de Office 365](content-search.md)
     
 - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
