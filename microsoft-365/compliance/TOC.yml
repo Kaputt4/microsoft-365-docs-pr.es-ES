@@ -120,7 +120,7 @@
           href: custom-sensitive-info-types.md
         - name: Crear tipos personalizados de información confidencial con clasificación exacta de coincidencia de datos
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Crear un tipo personalizado de información confidencial en el centro de seguridad & cumplimiento
+        - name: Crear un tipo de información confidencial personalizada en el Centro de seguridad y cumplimiento.
           href: create-a-custom-sensitive-information-type.md
         - name: Crear un tipo de información confidencial personalizado con PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
@@ -962,7 +962,7 @@
               href: offering-gxp.md
             - name: TISAX (Alemania)
               href: offering-tisax-germany.md
-        - name: Elementos multimedia
+        - name: Multimedia
           items:
             - name: CDSA
               href: offering-cdsa.md
@@ -1097,6 +1097,7 @@
             - name: G-nube (UK)
               href: offering-g-cloud-uk.md
             - name: IDW PS 951 (Alemania)
+              href: 'https://www.idw.de/the-idw/about-the-idw'
             - name: Grundschutz libro (Alemania)
               href: offering-it-grundschutz-workbook-germany.md
             - name: LOPD (España)
