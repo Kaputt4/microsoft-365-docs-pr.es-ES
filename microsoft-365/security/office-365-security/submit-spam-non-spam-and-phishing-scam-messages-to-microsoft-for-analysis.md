@@ -3,7 +3,7 @@ title: Envío de mensajes de correo no deseado, mensajes seguros y mensajes de c
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/19/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Usted y sus usuarios pueden enviar mensajes de correo no deseado falsos negativos y falsos positivos a Microsoft para su análisis. '
-ms.openlocfilehash: fb939c4166bc6c732f831dc767bffe1cfd7a2f7c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093643"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959648"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis
 
@@ -58,8 +58,8 @@ Para enviar un mensaje de correo no deseado o de suplantación de identidad (phi
     
 3. Copie y pegue el mensaje de correo no deseado o de suplantación de identidad (phishing) en el nuevo mensaje como datos adjuntos. 
     
-    > [!NOTE]
-    > Puede adjuntar varios mensajes al nuevo mensaje. Asegúrese de que todos los mensajes sean del mismo tipo, ya sean mensajes de suplantación de identidad (phishing) o mensajes de correo electrónico no deseado. > Deje el cuerpo del nuevo mensaje en blanco. 
+   > [!NOTE]
+   > • Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes sean del mismo tipo: mensajes de suplantación de identidad (phishing) o mensajes de correo electrónico no deseado. <br/><br/>• Deje el cuerpo del nuevo mensaje en blanco. <br/><br/>• Use cualquiera de los formatos. msg (formato predeterminado de Outlook) o. eml (formato predeterminado de Outlook en la web) para los mensajes adjuntos.
   
 4. Haga clic en **Enviar**.
     
@@ -72,7 +72,7 @@ Los administradores pueden revisar más información de configuración de correo
   
 Puede enviar mensajes seguros de las maneras siguientes:
   
-- Si usa la acción **mover mensaje a la carpeta correo no deseado** al configurar los filtros de contenido (esta es la acción predeterminada), los usuarios pueden liberar mensajes falsos positivos en la carpeta de correo electrónico no deseado de Outlook o Outlook en la web (anteriormente conocido como Outlook Web App). . 
+- Si usa la acción **mover mensaje a la carpeta correo no deseado** al configurar los filtros de contenido (esta es la acción predeterminada), los usuarios pueden liberar mensajes falsos positivos en la carpeta de correo electrónico no deseado de Outlook o Outlook en la web (anteriormente conocido como Outlook Web App). 
     
   - Los usuarios de Outlook pueden liberar mensajes falsos positivos mediante la opción de menú contextual de **correo no deseado** . Sin embargo, deben enviar el mensaje a Microsoft a través del correo electrónico, tal como se muestra en el procedimiento de este artículo. 
     
