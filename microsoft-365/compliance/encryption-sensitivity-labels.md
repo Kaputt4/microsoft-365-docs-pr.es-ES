@@ -1,7 +1,7 @@
 ---
 title: Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: aae46b8a6fa18c9af32005bca87ad80638b5b6c0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 55a4096fb802608ac8c0e9777dc20b1026ba6b60
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708220"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962319"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
 
@@ -51,7 +51,7 @@ La encriptación usa Azure Rights Management (Azure RMS). Azure RMS usa directiv
 Para empezar, solo tiene que cambiar **Cifrado** a **Activado** y, después, elegir si quiere:
 
 - **Asignar permisos ahora** para que pueda determinar exactamente los permisos para el contenido con esa etiqueta y los usuarios que los obtendrán. Para obtener más información, vea la sección siguiente [Asignar permisos ahora](#assign-permissions-now).
-- **Permitir a los usuarios asignar permisos** al aplicar la etiqueta al contenido. De esta forma, puede permitir a los usuarios de su organización cierta flexibilidad que pueden necesitar para colaborar y llevar a cabo su trabajo. Para obtener más información, vea la sección siguiente [Permitir a los usuarios asignar permisos](#let-users-assign-permissions).
+- **Permitir a los usuarios asignar permisos** al aplicar la etiqueta al contenido. De esta forma, puede permitir a los usuarios de su organización cierta flexibilidad que pueden necesitar para colaborar y llevar a cabo su trabajo. Para obtener más información, vea la sección [Permitir a los usuarios asignar permisos](#let-users-assign-permissions) en esta página.
 
 Por ejemplo, si tiene una etiqueta de confidencialidad denominada **Extremadamente confidencial** que se aplicará al contenido más confidencial, es posible que quiera decidir ahora quién obtendrá cierto tipo de permisos para ese contenido.
 
@@ -73,7 +73,7 @@ Use las opciones siguientes para controlar quién puede tener acceso al correo e
 
 Cuando un usuario abre un documento o correo electrónico sin conexión que esté protegido por una etiqueta de confidencialidad, se concede una licencia de uso de Azure Rights Management para el usuario. Esta licencia es un certificado que contiene los derechos de uso del usuario para el documento o correo electrónico y la clave de cifrado que se usó para cifrar el contenido. La licencia de uso también contiene una fecha de vencimiento si se ha configurado y el tiempo durante el que la licencia es válida.
 
-Si no se ha establecido ninguna fecha de expiración, el período predeterminado de validez de licencia de uso para un espacio empresarial es 30 días. Durante la duración de la licencia de uso, el usuario no se vuelve a autenticar o autorizar para ver el contenido. Esto permite que el usuario pueda abrir el documento o correo electrónico protegido sin conexión a Internet. Cuando la validez de la licencia de uso expire, la próxima vez que el usuario acceda a un documento o correo electrónico protegido, el usuario debe ser autorizado y autenticarse de nuevo.
+Si no se ha establecido ninguna fecha de expiración, el período predeterminado de validez de licencia de uso para un espacio empresarial es 30 días. Durante la duración de la licencia de uso, el usuario no se vuelve a autenticar o autorizar para ver el contenido. Este proceso permite que el usuario pueda abrir el documento o correo electrónico protegido sin conexión a Internet. Cuando la validez de la licencia de uso expire, la próxima vez que el usuario acceda a un documento o correo electrónico protegido, el usuario debe ser autorizado y autenticarse de nuevo.
 
 Además de volver a hacer la autenticación, se vuelven a evaluar la pertenencia a grupos de usuario y la directiva. Esto significa que los usuarios podrían experimentar resultados diferentes de acceso para el mismo documento si hay cambios en la directiva o pertenencia a grupos con respecto al último momento en que se accedió acceso al contenido.
 
@@ -113,9 +113,9 @@ Para obtener más información sobre cada permiso específico, consulte [Derecho
 
 ![Opciones para elegir permisos predefinidos o personalizados](media/Sensitivity-Choose-permissions-settings.png)
 
-Tenga en cuenta que la misma etiqueta puede conceder diferentes permisos a diferentes usuarios. Por ejemplo, una sola etiqueta puede asignar a algunos usuarios como revisor y a otros usuarios como coautor, como se muestra a continuación.
+Tenga en cuenta que la misma etiqueta puede conceder diferentes permisos a diferentes usuarios. Por ejemplo, una sola etiqueta puede asignar a algunos usuarios como revisor y a otros usuarios como coautor, como se muestra en la siguiente captura.
 
-Para ello, agregue usuarios o grupos, asigne sus permisos y guarde las opciones de configuración. Luego repita estos pasos, agregue usuarios y asigne permisos para guardar la configuración de nuevo. Puede hacerlo tantas veces como sea necesario para definir permisos diferentes para distintos usuarios.
+Para ello, agregue usuarios o grupos, asigne sus permisos y guarde las opciones de configuración. Luego repita estos pasos, agregue usuarios y asigne permisos para guardar la configuración de nuevo. Puede repetir esta configuración tantas veces como sea necesario para definir permisos diferentes para distintos usuarios.
 
 ![Usuarios distintos con permisos diferentes](media/Sensitivity-Multiple-users-permissions.png)
 
@@ -147,7 +147,7 @@ Estas opciones determinan las aplicaciones en las que se mostrará la etiqueta d
 Una etiqueta de confidencialidad que permite a los usuarios asignar permisos solo se puede aplicar al contenido manualmente. No se puede aplicar automáticamente o usar como etiqueta recomendada.
 
 > [!NOTE]
-> Permitir a los usuarios asignar permisos requiere una suscripción de Azure Information Protection. Para usar esta característica en Word, PowerPoint y Excel, debe descargar e instalar el [cliente de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Estamos trabajando en la compatibilidad nativa de esta característica en estas aplicaciones de Office, para que no requieran el cliente de Azure Information Protection. Asimismo, el cliente solo se ejecuta en Windows, por lo que esta característica aún no se admite en Mac, iOS, Android u Office para la web.
+> Permitir a los usuarios asignar permisos requiere una suscripción de Azure Information Protection. Para usar esta característica en Word, PowerPoint y Excel, debe descargar e instalar el [cliente de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Estamos trabajando en la compatibilidad nativa de esta característica en estas aplicaciones de Office, para que no requieran el cliente de Azure Information Protection. Asimismo, este cliente solo se ejecuta en Windows, por lo que esta característica aún no se admite en Mac, iOS, Android u Office para la web.
 
 ![Configuración de cifrado para los permisos definidos por el usuario](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
@@ -215,5 +215,5 @@ Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico protegid
 
 Para asegurarse de que Exchange puede admitir estos escenarios adicionales, vea lo siguiente:
 
-- Para Exchange Online, consulte las instrucciones de [Exchange Online: configuración de IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchange-online-irm-configuration).
+- Para Exchange Online, consulte las instrucciones de [Exchange Online: configuración de IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
 - Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 

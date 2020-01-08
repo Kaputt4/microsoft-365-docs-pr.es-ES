@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859780"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959608"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>Reglamento General de Protección de Datos (RGPD)
 
@@ -67,9 +68,13 @@ Descubra cómo INAIL, cliente de Microsoft, usa Azure Information Protection par
 
 Use el [Administrador de cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=2048390) para ayudarle a realizar evaluaciones de riesgo de forma continua, obtener información práctica y simplificar sus procesos de cumplimiento.
 
-### <a name="security-and-compliance-center"></a>Centro de seguridad y cumplimiento
+### <a name="microsoft-365-compliance-center"></a>Centro de cumplimiento de Microsoft 365
 
-El Centro de seguridad y cumplimiento de Microsoft 365 te permite descubrir controles de seguridad y cumplimiento.
+El [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) le permite detectar controles de cumplimiento.
+
+### <a name="microsoft-365-security-center"></a>Centro de seguridad de Microsoft 365
+
+El [Centro de seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) le permite detectar controles de seguridad.
 
 ### <a name="discover-compliance-solutions"></a>Descubre soluciones de cumplimiento
 
