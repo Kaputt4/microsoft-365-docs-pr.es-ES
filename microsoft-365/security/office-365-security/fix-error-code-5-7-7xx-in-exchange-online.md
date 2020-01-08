@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo solucionar problemas de correo electrónico para el código de error 5.7.7 XX en Exchange Online (inquilino bloqueado del envío de correo).
-ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959658"
+ms.locfileid: "40962309"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Corregir problemas de entrega de correo electrónico para el código de error 5.7.7 XX en Exchange Online
 
@@ -53,7 +53,7 @@ Una vez comprometida, se impedirá que los inquilinos envíen correo electrónic
 
 Hay varias cosas que debe hacer si el inquilino tiene bloqueado el envío de correo electrónico:
 
-1. Compruebe que todos los dominios de correo electrónico están registrados. Para obtener más información, vea [Agregar un dominio a Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) y [administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Compruebe que todos los dominios de correo electrónico están registrados. Para obtener más información, vea [Agregar un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) y [administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 2. Busque [conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inusuales. A menudo, los actores malintencionados crean conectores entrantes nuevos en la organización de Office 365 para enviar correo no deseado. Para ver los conectores existentes, consulte [validar conectores en Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
@@ -72,7 +72,7 @@ Hay varias cosas que debe hacer si el inquilino tiene bloqueado el envío de cor
 
 [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 
-[Guía de correo masivo en la sección límites de envío de la descripción del servicio de Exchange Online](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+[Guía de correo masivo en la sección límites de envío de la descripción del servicio de Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Informes de no entrega de correo electrónico en Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
