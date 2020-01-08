@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 149b3ab2f30d2387165dd98c0ba21eeac0fc8728
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 37e273a3e01177dec23b668ecb8a6301011ab88d
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910495"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966908"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Supervisión y generación de informes de dispositivos en el centro de seguridad 365 de Microsoft
 
@@ -146,7 +146,7 @@ El **cumplimiento de dispositivos** muestra el número de dispositivos inscritos
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>Supervisión y administración de la implementación y detección de reglas de ASR
 
-[Las reglas de reducción de superficie de ataques (ASR)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) ayudan a evitar acciones y aplicaciones que normalmente usan los ataques de malware para infectar dispositivos. Estas reglas controlan Cuándo y cómo se pueden ejecutar los ejecutables. Por ejemplo, puede impedir que JavaScript o VBScript inicien un archivo ejecutable descargado, bloquee las llamadas a la API de Win32 desde macros de Office o bloquee procesos que se ejecuten desde unidades USB.
+[Las reglas de reducción de superficie de ataques (ASR)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) ayudan a evitar acciones y aplicaciones que normalmente usan los ataques de malware para infectar dispositivos. Estas reglas controlan Cuándo y cómo se pueden ejecutar los ejecutables. Por ejemplo, puede impedir que JavaScript o VBScript inicien un archivo ejecutable descargado, bloquee las llamadas a la API de Win32 desde macros de Office o bloquee procesos que se ejecuten desde unidades USB.
 
 ![Tarjeta de reducción de superficie de ataques](../images/attack-surface-reduction-rules.png)
 
@@ -183,12 +183,12 @@ Microsoft Intune proporciona funciones de administración para las reglas de ASR
 
 ### <a name="exclude-files-from-asr-rules"></a>Excluir archivos de las reglas de ASR
 
-El centro de seguridad 365 de Microsoft recopila los nombres de los [archivos que puede que desee excluir](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive) de las detecciones mediante las reglas de reducción de la superficie de ataques. Al excluir archivos, puede reducir las detecciones de falsos positivos y implementar con mayor confianza las reglas de reducción de superficie de ataques en el modo de bloqueo.
+El centro de seguridad 365 de Microsoft recopila los nombres de los [archivos que puede que desee excluir](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules) de las detecciones mediante las reglas de reducción de la superficie de ataques. Al excluir archivos, puede reducir las detecciones de falsos positivos y implementar con mayor confianza las reglas de reducción de superficie de ataques en el modo de bloqueo.
 
 Las exclusiones se administran en Microsoft Intune, pero el centro de seguridad de Microsoft 365 proporciona una herramienta de análisis para ayudarle a comprender los archivos. Para iniciar la recopilación de archivos para su exclusión, vaya a la pestaña **agregar exclusiones** en la página del informe **reglas de reducción de superficie de ataques** .
 
 >[!NOTE]  
->La herramienta analiza las detecciones por todas las reglas de reducción de la superficie de ataque, pero [solo algunas reglas admiten exclusiones](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules).
+>La herramienta analiza las detecciones por todas las reglas de reducción de la superficie de ataque, pero [solo algunas reglas admiten exclusiones](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr).
 
 ![Ficha agregar exclusiones](../images/add-exclusions-tab.png)
 
@@ -203,7 +203,8 @@ Registros para la regla de **bloqueo de credenciales de ASR robo desde el subsis
 
 Para encontrar la aplicación de origen, ejecute la siguiente [consulta de búsqueda avanzada](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) para esta regla específica (identificada por el identificador de regla 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 
-```MiscEvents
+```kusto
+MiscEvents
 | where EventTime > ago(7d)
 | where ActionType startswith "Asr"
 | where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
@@ -217,7 +218,8 @@ Para revisar un archivo, use la [Página de información del archivo](https://do
 
 Para buscar un archivo detectado en el centro de seguridad de Microsoft defender, busque todas las detecciones de ASR mediante la siguiente consulta de búsqueda avanzada:
 
-```MiscEvents
+```kusto
+MiscEvents
 | where EventTime > ago(7d)
 | where ActionType startswith "Asr"
 | project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1

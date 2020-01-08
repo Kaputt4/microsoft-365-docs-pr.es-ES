@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c6c92aeec6c1644472103a1aaf175eb813d5758
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: df811e38c55becf9ba52de40891fc1201d0afae0
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808685"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966888"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -35,7 +35,7 @@ La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](https://docs.mi
 
 En el Centro de seguridad de Microsoft 365, vaya a **Búsqueda** para ejecutar la primera consulta. Utilice el ejemplo siguiente:
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents 
 | where Timestamp > ago(7d)
@@ -55,7 +55,7 @@ Así se verá en la búsqueda avanzada.
 
 La consulta comienza con un breve comentario en el que se describe su función. Esto le ayudará si posteriormente decide guardar la consulta y compartirla con otras personas de su organización.
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents
 ```
@@ -64,19 +64,19 @@ Generalmente, la consulta comienza con un nombre de tabla seguido de una serie d
 
 El primer elemento con canalización es un filtro de tiempo que abarca los siete días anteriores. Un intervalo de tiempo tan reducido como sea posible garantiza que las consultas funcionen bien, devuelvan resultados que se puedan administrar y no se agote el tiempo de espera.
 
-```
+```kusto
 | where Timestamp > ago(7d)
 ```
 
 El intervalo de tiempo va inmediatamente seguido de una búsqueda de archivos que representan la aplicación de PowerShell.
 
-```
+```kusto
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
 
 A continuación, la consulta busca líneas de comandos que suelen usarse con PowerShell para descargar archivos.
 
-```
+```kusto
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
@@ -86,7 +86,7 @@ A continuación, la consulta busca líneas de comandos que suelen usarse con Pow
 
 Ahora que la consulta identifica claramente los datos que desea localizar, agregue elementos que definen cómo son los resultados. `project` devuelve columnas específicas y `top` limita el número de resultados, logrando que los resultados tengan el formato correcto, sean lo suficientemente grandes y fáciles de procesar.
 
-```
+```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
 | top 100 by Timestamp'
 ```
