@@ -1,5 +1,5 @@
 ---
-title: Atributos para directivas de barrera de información
+title: Atributos para las directivas de barreras de información
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,21 +11,21 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Use este artículo como referencia para los diversos atributos que puede usar en las directivas de barrera de información.
-ms.openlocfilehash: 4198728d412062edced6238604b2b891da22aeac
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12acaa4fb8d6bcd6c660381b172703bd178af81f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092538"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970788"
 ---
-# <a name="attributes-for-information-barrier-policies"></a>Atributos para directivas de barrera de información
+# <a name="attributes-for-information-barrier-policies"></a>Atributos para las directivas de barreras de información
 
 Algunos atributos de Azure Active Directory pueden usarse para segmentar usuarios. Una vez que se han definido los segmentos, estos segmentos se pueden usar como filtros para las directivas de barrera de información. Por ejemplo, puede usar **Department** para definir segmentos de usuarios por departamento dentro de la organización (suponiendo que no hay empleados que trabajen en dos departamentos al mismo tiempo). 
 
 En este artículo se describe cómo usar atributos con barreras de información y se proporciona una lista de atributos que se pueden usar. Para obtener más información acerca de las barreras de información, vea los siguientes recursos:
-- [Barreras de la información](information-barriers.md)
+- [Barreras de información](information-barriers.md)
 - [Definir directivas para las barreras de información en Microsoft Teams](information-barriers-policies.md)
-- [Editar (o quitar) directivas de barrera de información](information-barriers-edit-segments-policies.md.md)
+- [Editar (o quitar) directivas de barrera de información](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Cómo usar atributos en las directivas de barrera de información
 
@@ -81,7 +81,7 @@ En la tabla siguiente se enumeran los atributos que puede usar con barreras de l
 |MSExchExtensionCustomAttribute5 |ExtensionCustomAttribute5 |
 |MailNickname |Alias |
 |PhysicalDeliveryOfficeName |Office |
-|PostalCode |PostalCode |
+|Talco |Talco |
 |ProxyAddresses |EmailAddresses |
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |
@@ -95,9 +95,9 @@ En la tabla siguiente se enumeran los atributos que puede usar con barreras de l
 
 [Definir directivas para las barreras de información en Microsoft Teams](information-barriers-policies.md)
 
-[Solución de problemas de obstáculos para la información](information-barriers-troubleshooting.md)
+[Solución de problemas de barreras de información](information-barriers-troubleshooting.md)
 
-[Barreras de la información](information-barriers.md)
+[Barreras de información](information-barriers.md)
 
 
 

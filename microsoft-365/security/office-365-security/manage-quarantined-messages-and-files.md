@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, puede ver, liberar e informar de mensajes falsos positivos en cuarentena en Office 365. Puede configurar directivas para que Office 365 filtre mensajes y los envíe a la cuarentena por varias razones: debido a que se identificaron como correo no deseado, en masa, con suplantación de identidad (phishing) o porque coincidieron con una regla de flujo de correo. '
-ms.openlocfilehash: 89750aeed6b502155bfba50cc6e475c1ecf746e8
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970316"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970938"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar archivos y mensajes en cuarentena como un administrador en Office 365
 
@@ -32,7 +32,25 @@ De forma predeterminada, Office 365 envía mensajes de suplantación de identida
 Debe tener permisos de administrador global (GA) en Office 365, o ser miembro de uno o varios grupos de roles del centro de cumplimiento de & de seguridad, para trabajar con los mensajes en cuarentena o los archivos en cuarentena. Consulte [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) para obtener más información.
 
 > [!IMPORTANT]
->De forma predeterminada, los mensajes de correo no deseado, masivos o de suplantación de identidad se mantienen en cuarentena durante 30 días. Los mensajes que se ponen en cuarentena debido a que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Los mensajes de malware se mantienen en cuarentena durante 15 días. Puede personalizar el tiempo de cuarentena de correo no deseado en configuración contra correo no &amp; deseado en el centro de seguridad y cumplimiento. Cuando Office 365 elimina un mensaje en cuarentena, no puede recuperarlo. Si lo desea, puede cambiar el período de retención de los mensajes en cuarentena en las directivas de filtro contra correo no deseado. Para obtener más información, vea [configuración del período de retención de cuarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) en este artículo.
+> De forma predeterminada, los mensajes de correo no deseado, masivos o de suplantación de identidad se mantienen en cuarentena durante 30 días. Los mensajes que se ponen en cuarentena debido a que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Los mensajes de malware se mantienen en cuarentena durante 15 días. Puede personalizar el tiempo de cuarentena de correo no deseado en configuración contra correo no deseado en el centro de seguridad & cumplimiento. Cuando Office 365 elimina un mensaje en cuarentena, no puede recuperarlo. Si lo desea, puede cambiar el período de retención de los mensajes en cuarentena en las directivas de filtro contra correo no deseado. Para obtener más información, consulte [configuración del período de retención de cuarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime).
+
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+
+Aunque la cuarentena se encuentra en el centro de seguridad & cumplimiento, los permisos para administrar los mensajes en cuarentena se controlan mediante la pertenencia a grupos de roles de **Exchange Online** . Para obtener más información acerca de los grupos de roles en Exchange Online, consulte [administrar grupos de roles en Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+
+Los grupos de roles de Exchange online que conceden permisos para administrar los archivos en cuarentena son los siguientes:
+
+- **Administración**de la organización: los administradores globales son automáticamente miembros de este grupo.
+
+- **Administrador de seguridad**
+
+- **Administración de higiene**
+
+Los grupos de roles de Exchange online que conceden permisos para ver los archivos en cuarentena son los siguientes:
+
+- **View-Only Organization Management**
+
+- **Lector de seguridad**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>Ver los mensajes en cuarentena de la organización
 
@@ -41,9 +59,9 @@ Debe tener permisos de administrador global (GA) en Office 365, o ser miembro de
 2. En la lista de la izquierda, expanda **Administración de amenazas**, seleccione **revisar**y, a continuación, haga clic **en cuarentena**.
 
     > [!TIP]
-    > Para ir directamente a la página **Cuarentena** del Centro de seguridad y cumplimiento, use esta dirección URL: [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Para ir directamente a la página **cuarentena** en el centro de seguridad & cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
-    De forma predeterminada, el Centro de seguridad y cumplimiento muestra todos los mensajes de correo electrónico que se han puesto en cuarentena como correo no deseado. Los mensajes están ordenados de más recientes a más antiguos según la **fecha** en que se recibió el mensaje. **Remitente**, **Asunto** y la fecha de expiración (en **Expira**) también se muestran por cada mensaje. Puede ordenar un campo haciendo clic en el encabezado de la columna correspondiente; haga clic en un encabezado de columna una segunda vez para invertir el criterio de ordenación.
+    De forma predeterminada, el centro de seguridad & cumplimiento muestra todos los mensajes de correo electrónico que se han puesto en cuarentena como correo no deseado. Los mensajes están ordenados de más recientes a más antiguos según la **fecha** en que se recibió el mensaje. **Remitente**, **Asunto** y la fecha de expiración (en **Expira**) también se muestran por cada mensaje. Puede ordenar un campo haciendo clic en el encabezado de la columna correspondiente; haga clic en un encabezado de columna una segunda vez para invertir el criterio de ordenación.
 
 3. Puede ver una lista de todos los mensajes en cuarentena o puede reducir el conjunto de resultados mediante filtrado. Solo puede hacer operaciones en masa con un máximo de 100 elementos, los filtros también pueden ayudar a reducir el conjunto de resultados si tiene más de esos. Puede filtrar rápidamente los mensajes por una única razón de cuarentena eligiendo una opción del filtro en la parte superior de la página. Entre las opciones se incluyen:
 
@@ -70,13 +88,13 @@ Una vez que haya encontrado un mensaje en cuarentena específico, haga clic en e
 2. A la izquierda, expanda **Administración de amenazas**, elija **Revisión** y luego elija **Cuarentena**.
 
    > [!TIP]
-   > Para ir directamente a la página **Cuarentena** del Centro de seguridad y cumplimiento, use esta dirección URL: [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+   > Para ir directamente a la página **cuarentena** en el centro de seguridad & cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
 3. De forma predeterminada, la página muestra los mensajes de correo electrónico en cuarentena. Para ver los archivos en cuarentena, establezca los filtros en la parte superior de la página para mostrar **los archivos**, en cuarentena debido a **malware**. Debe tener permisos de administrador en Office 365 para trabajar con archivos en cuarentena.
 
 4. Los archivos se ordenan del más reciente al más antiguo en función de la fecha en que el archivo se puso en cuarentena. El **usuario** que modificó el archivo por última vez, el **servicio** al que se publicó el archivo, el **nombre del archivo**, la **Ubicación**, el **tamaño del archivo**y la fecha de caducidad ( **expira**) también se enumeran para cada archivo. Puede ordenar por un campo haciendo clic en un encabezado; Haga clic en un encabezado de columna por segunda vez para invertir el criterio de ordenación.
 
-Puede ver una lista de todos los archivos en cuarentena o puede buscar archivos específicos mediante filtros. Al igual que ocurre con los mensajes, solo puede realizar operaciones masivas en un máximo de 100 elementos. Actualmente, el centro &amp; de seguridad y cumplimiento le permite ver y administrar los archivos que están en cuarentena porque se han identificado como que contienen malware. Para obtener sugerencias, consulte [para filtrar los resultados y buscar mensajes y archivos en cuarentena](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) en este artículo.
+Puede ver una lista de todos los archivos en cuarentena o puede buscar archivos específicos mediante filtros. Al igual que ocurre con los mensajes, solo puede realizar operaciones masivas en un máximo de 100 elementos. Actualmente, el centro de seguridad & cumplimiento le permite ver y administrar los archivos que están en cuarentena porque se han identificado como que contienen malware. Para obtener sugerencias, consulte [para filtrar los resultados y buscar mensajes y archivos en cuarentena](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) en este artículo.
 
 ## <a name="to-filter-results-and-find-quarantined-messages-and-files"></a>Para filtrar los resultados y buscar mensajes y archivos en cuarentena
 <a name="BKMK_AdvSearch"> </a>
@@ -99,25 +117,25 @@ En función de la configuración, es posible que haya muchos archivos y mensajes
 
    - **Identificador del mensaje**: Use esta información para identificar un mensaje específico cuando conoce el identificador del mensaje.
 
-     Por ejemplo, si un usuario envía un mensaje específico o está destinado a un usuario de su organización, pero nunca llegó a su destino, puede buscar el mensaje mediante un seguimiento de mensajes (consulte [seguimiento de mensajes en el centro de seguridad & cumplimiento](message-trace-scc.md)). Si descubre que el mensaje se envió a la cuarentena, quizá porque coincidía con una regla de flujo de correo o se identificó como correo no deseado, puede encontrar fácilmente este mensaje en cuarentena especificando su identificador de mensaje. Asegúrese de incluir la cadena de identificador de mensaje completa. Esta podría incluir corchetes angulares (\<\>), por ejemplo:
+     Por ejemplo, si un usuario de la organización envió un mensaje específico o bien, se le envió un mensaje específico al usuario, y el mensaje nunca llegó a destino, puede buscarlo mediante la característica de seguimiento de mensaje (consulte [Seguimiento de mensajes en el Centro de seguridad y cumplimiento](message-trace-scc.md)). Si descubre que el mensaje se envió a la cuarentena, quizá porque coincidía con una regla de flujo de correo o se identificó como correo no deseado, puede encontrar fácilmente este mensaje en cuarentena especificando su identificador de mensaje. Asegúrese de incluir la cadena de identificador de mensaje completa. Esta podría incluir corchetes angulares (\<\>), por ejemplo:
 
      `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
 
-   - **Dirección de correo electrónico del remitente**: elija esta opción para filtrar por una sola dirección de correo electrónico del remitente.
+   - **Dirección de correo electrónico del remitente**: Elija filtrar por una única dirección de correo electrónico de remitente.
 
-   - **Dirección de correo electrónico del destinatario**: elija esta opción para filtrar por una sola dirección de correo electrónico de destinatarios.
+   - **Dirección de correo electrónico del destinatario**: Elija filtrar por una única dirección de correo electrónico de destinatario.
 
-   - **Asunto**: escriba el asunto de la dirección de correo electrónico que desea buscar. Dado que no se admite la búsqueda de comodines, debe usar el asunto completo del mensaje para que la búsqueda devuelva el mensaje en los resultados. La búsqueda no distingue mayúsculas de minúsculas.
+   - **Asunto**: Escriba el asunto de la dirección de correo electrónico que desea encontrar. Dado que no se admite la búsqueda de comodines, debe usar el asunto completo del mensaje para que la búsqueda devuelva el mensaje en los resultados. La búsqueda no distingue mayúsculas de minúsculas.
 
 ## <a name="view-details-about-quarantined-messages-and-files"></a>Ver los detalles de los mensajes y archivos en cuarentena
 
-Al seleccionar un elemento que se muestra en la lista de cuarentena, verá un resumen de sus propiedades en el panel de **detalles** de la parte derecha del centro &amp; de seguridad y cumplimiento.
+Al seleccionar un elemento que se muestra en la lista de cuarentena, verá un resumen de sus propiedades en el panel de **detalles** de la parte derecha del centro de seguridad & cumplimiento.
 
 ### <a name="details-displayed-for-quarantined-messages"></a>Detalles mostrados para los mensajes en cuarentena
 
-- **Identificador del mensaje**: el identificador único del mensaje.
+- **Id. de mensaje**: Identificador único del mensaje.
 
-- **Dirección del remitente**: quién envió el mensaje.
+- **Dirección del remitente**: Quién envió el mensaje.
 
 - **Received**: la fecha y la hora en que se recibió el mensaje.
 
@@ -127,7 +145,7 @@ Al seleccionar un elemento que se muestra en la lista de cuarentena, verá un re
 
 - **Expires**: fecha y hora en que el mensaje se eliminará automáticamente de la cuarentena.
 
-- **Lanzado a**: todas las direcciones de correo electrónico (si las hay) en las que se ha lanzado el mensaje.
+- **Fecha de liberación para**: Todas las direcciones de correo electrónico (si corresponde) para las que el mensaje se ha liberado.
 
 - **Todavía no se ha lanzado a**: todas las direcciones de correo electrónico (si las hay) en las que el mensaje no se ha lanzado todavía.
 
@@ -168,7 +186,7 @@ Después de seleccionar un mensaje o un grupo de mensajes, tiene varias opciones
 
 - **Ver encabezado de mensaje**: haga clic en este vínculo para ver el texto del encabezado del mensaje. Para analizar el encabezado en profundidad, copie el texto del encabezado del mensaje en el portapapeles y, a continuación, elija **analizador de encabezados de mensajes de Microsoft** para ir al analizador de conectividad remota (haga clic con el botón secundario y elija **abrir en una nueva pestaña** si no desea salir de Office 365 para completar esta tarea). Pegue el encabezado del mensaje en la página en la sección analizador de encabezados de mensaje y elija **analizar encabezados**:
 
-- **Vista previa del mensaje**: le permite ver versiones RAW o HTML del texto del cuerpo del mensaje. En la vista HTML, los vínculos se deshabilitan.
+- **Vista previa del mensaje**: Le permite ver versiones sin procesar o HTML del texto del cuerpo del mensaje. En la vista HTML, los vínculos se deshabilitan.
 
 - **Descargar mensaje** o **Descargar archivo**: elija esta opción para descargar una copia del mensaje o archivo en el dispositivo local. Tendrás que confirmar que comprendes los riesgos asociados con la descarga de elementos de cuarentena antes de que tengas permiso para hacerlo. Los mensajes se guardan en formato. eml en la carpeta que especifique. Los archivos en cuarentena se guardan en su formato original.
 
@@ -202,7 +220,7 @@ Puede configurar cuánto tiempo los mensajes y archivos permanecerán en cuarent
 2. En la parte izquierda, expanda **Administración de amenazas**, elija **Directiva**y, a continuación, elija **anti-correo no deseado**.
 
     > [!TIP]
-    > Para ir directamente a la página **contra el correo no deseado** en &amp; el centro de seguridad y cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > Para ir directamente a la página **contra el correo no deseado** en el centro de seguridad & cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
 
 3. Expanda la fila **Directiva de filtro de correo no deseado predeterminada (siempre activa)** .
 

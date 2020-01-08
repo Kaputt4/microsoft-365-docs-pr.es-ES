@@ -14,20 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Participe y use el modelo de detección de privilegios de clientes de abogados para usar la detección de contenido privilegiado basada en aprendizaje de máquina al revisar el contenido en un caso de exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: a483941ba5d28527eb509f2e1bbd129434430244
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+description: Use el modelo de detección de privilegios de cliente abogado para usar la detección de contenido privilegiado basada en el aprendizaje de la máquina al revisar el contenido en un caso de exhibición avanzada de documentos electrónicos.
+ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603784"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970868"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configuración de la detección de privilegios de clientes de abogado en eDiscovery avanzado
 
 Uno de los aspectos más importantes y costosos de la fase de revisión de cualquier proceso de eDiscovery es la revisión de los documentos para obtener un contenido privilegiado. La exhibición avanzada de documentos electrónicos proporciona detección de contenido privilegiado basada en aprendizaje automático para que este proceso sea más eficaz. Esta característica se denomina *detección de privilegios de cliente de abogado*.
-
-> [!NOTE]
-> Debe participar en el modelo de detección de privilegios de cliente de abogado para poder usarlo. Consulte el [paso 1](#step-1-opt-in-to-attorney-client-privilege-detection) para obtener instrucciones.
 
 ## <a name="how-does-it-work"></a>¿Cómo funciona?
 
@@ -53,11 +50,11 @@ Estas tres propiedades también se pueden buscar dentro de un conjunto de revisi
 
 ## <a name="set-up-the-attorney-client-privilege-detection-model"></a>Configuración del modelo de detección de privilegios de clientes de abogados
 
-Para habilitar el modelo de detección de privilegios de clientes de abogados, su organización tiene que participar y, a continuación, cargar una lista de abogados.
+Para habilitar el modelo de detección de privilegios de clientes de abogados, su organización debe activarlo y, a continuación, cargar una lista de abogados.
 
-### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>Paso 1: participar a abogado-detección de privilegios de cliente
+### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>Paso 1: activar la detección de privilegios de clientes de abogado
 
-Como se mencionó anteriormente, el modelo de detección de privilegios de cliente de abogado está en versión preliminar. Por lo tanto, una persona del administrador de eDiscovery de la organización (un miembro del subgrupo de administradores de eDiscovery en el grupo de roles de eDiscovery Manager) debe participar para que el modelo esté disponible en los casos de eDiscovery avanzado.
+Una persona que sea administrador de eDiscovery en su organización (un miembro del subgrupo de administradores de eDiscovery en el grupo de roles de eDiscovery Manager) debe hacer que el modelo esté disponible en los casos de eDiscovery avanzado.
 
 1. En el centro de seguridad & cumplimiento, vaya a **ediscovery > la exhibición avanzada**de documentos electrónicos.
 

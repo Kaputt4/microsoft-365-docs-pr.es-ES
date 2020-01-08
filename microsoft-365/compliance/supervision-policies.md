@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 1ae0b469e2edd6970f3384f2777bb9bdc5cad2a6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bd9d86a5a5d96e8f7978f5c2482eb127b0379a09
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802673"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959529"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -68,8 +68,8 @@ Las directivas de supervisión se crean en el centro de cumplimiento. Estas dire
 
 Antes de empezar a usar la supervisión, debe determinar quién necesita que se revisen sus comunicaciones. En la Directiva, las direcciones de correo electrónico de usuario identifican a los individuos o grupos de personas que deben supervisarse. Algunos ejemplos de estos grupos son los grupos de Office 365, las listas de distribución basadas en Exchange y los canales de Microsoft Teams. También puede excluir determinados usuarios o grupos de la supervisión con un grupo supervisado o una lista de grupos.
 
-> [!IMPORTANT]
-> Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5. Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5. Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -129,11 +129,11 @@ Configure diccionarios de palabras clave personalizados (o léxicos) para propor
 
 Supervisar los mensajes de correo electrónico enviados o recibidos de la organización en busca de lenguaje ofensivo. El modelo usa una combinación de aprendizaje automático, inteligencia artificial y palabras clave para identificar el idioma en los mensajes de correo electrónico que puedan infringir las directivas de Antiacoso y acosos. El modelo de lenguaje ofensivo admite en este momento palabras clave en inglés y supervisa el cuerpo de los mensajes de correo electrónico.
 
-> [!NOTE]
-> Cree una [Directiva de prevención de pérdida de datos](create-test-tune-dlp-policy.md) con un [Diccionario de palabras clave personalizado](create-a-keyword-dictionary.md) de términos bloqueados si necesita:
+>[!NOTE]
+>Cree una [Directiva de prevención de pérdida de datos](create-test-tune-dlp-policy.md) con un [Diccionario de palabras clave personalizado](create-a-keyword-dictionary.md) de términos bloqueados si necesita:
 >
-> - supervisar las comunicaciones de Microsoft Teams en su organización en busca de lenguaje ofensivo
-> - impedir o bloquear el idioma ofensivo en las comunicaciones de la organización
+>- supervisar las comunicaciones de Microsoft Teams en su organización en busca de lenguaje ofensivo
+>- impedir o bloquear el idioma ofensivo en las comunicaciones de la organización
 
 Tenga en cuenta que el modelo no proporciona una lista exhaustiva de lenguaje ofensivo. Además, los estándares de idioma y culturales cambian continuamente y, teniendo en cuenta estas realidades, Microsoft se reserva el derecho a actualizar el modelo según su criterio. Aunque el modelo puede ayudar a su organización a supervisar el lenguaje ofensivo, el modelo no está destinado a proporcionar a los únicos medios de la organización la supervisión o el direccionamiento de ese idioma. La organización, no Microsoft, sigue siendo responsable de todas las decisiones relacionadas con la supervisión y el bloqueo del lenguaje ofensivo.
 
@@ -235,8 +235,8 @@ Use los informes de supervisión para ver la actividad de revisión en el nivel 
 2. Vaya a la **** \> **consola** de informes o a la **supervisión** para ver el widget supervisión de informes para ver un resumen de la actividad de la Directiva de supervisión actual.
 3. Seleccione el widget de **supervisión** para abrir la página informe detallado.
 
-> [!NOTE]
-> Si no puede obtener acceso a la página de **informes** , compruebe que es miembro del grupo de roles revisión de supervisión, tal y como se describe en [hacer que la supervisión esté disponible en su organización](configure-supervision-policies.md). La inclusión en este grupo de roles permite crear y administrar directivas de supervisión y ejecutar el informe.
+>[!NOTE]
+>Si no puede obtener acceso a la página de **informes** , compruebe que es miembro del grupo de roles revisión de supervisión, tal y como se describe en [hacer que la supervisión esté disponible en su organización](configure-supervision-policies.md). La inclusión en este grupo de roles permite crear y administrar directivas de supervisión y ejecutar el informe.
   
 ### <a name="how-to-use-the-report"></a>Uso del informe
 
@@ -260,8 +260,8 @@ A continuación, se muestra un desglose de los valores mostrados en la columna *
 | **En ámbito** | Número total (diario) de mensajes de Exchange, Teams y orígenes de datos de terceros examinados mediante una directiva de supervisión |
 | **Resuelto** | El número total de mensajes de Exchange, Teams y orígenes de datos de terceros clasificados como **resueltos**|
 
-> [!NOTE]
-> Las directivas de supervisión deben aprovisionarse antes de que aparezcan en los informes. Si se eliminan las directivas, aún se muestran los datos históricos. Sin embargo, se indican como una "Directiva no existente" y la función de **exportación** no está disponible.
+>[!NOTE]
+>Las directivas de supervisión deben aprovisionarse antes de que aparezcan en los informes. Si se eliminan las directivas, aún se muestran los datos históricos. Sin embargo, se indican como una "Directiva no existente" y la función de **exportación** no está disponible.
 
 ## <a name="audit"></a>Las
 
@@ -288,4 +288,3 @@ Además de la información proporcionada en los informes y registros de supervis
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
 Para configurar directivas de supervisión para su organización, consulte [Configure tutela Policies](configure-supervision-policies.md).
-

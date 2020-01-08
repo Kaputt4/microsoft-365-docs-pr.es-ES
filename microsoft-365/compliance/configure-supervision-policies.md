@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 67e7d1a8fe1ca2f64031cab9bdee72ac22c70886
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e7a46e2fcd15a77f6fe7f1b97adf5ed26e97e0e2
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806633"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959628"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurar directivas de supervisión en Office 365
 
-> [!IMPORTANT]
-> Este tema se aplica a la configuración de directivas de supervisión en una suscripción de Office 365. Si desea configurar el cumplimiento de comunicaciones para una suscripción de Microsoft 365, vea [Configure Communications Compliance in Microsoft 365 (Preview)](communication-compliance-configure.md).
+>[!IMPORTANT]
+>Este tema se aplica a la configuración de directivas de supervisión en una suscripción de Office 365. Si desea configurar el cumplimiento de comunicaciones para una suscripción de Microsoft 365, vea [Configure Communications Compliance in Microsoft 365 (Preview)](communication-compliance-configure.md).
 
 Usar directivas de supervisión para capturar las comunicaciones de los empleados para que las examinen los revisores externos o internos. Para obtener más información sobre cómo las directivas de supervisión pueden ayudarle a supervisar las comunicaciones en su organización, consulte [directivas de supervisión en Office 365](supervision-policies.md).
 
-> [!NOTE]
-> Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5.
-> Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!NOTE]
+>Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5.
+>Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Siga estos pasos para configurar y usar la supervisión en su organización de Office 365:
   
@@ -182,8 +182,8 @@ Después de crear una directiva de supervisión de la comunicación, es aconseja
 1. Abra un cliente de correo electrónico o Microsoft teams que haya iniciado sesión como usuario supervisado definido en la Directiva que desea probar.
 2. Envíe un correo electrónico o un chat de Microsoft teams que cumpla los criterios que haya definido en la Directiva de supervisión. Puede ser una palabra clave, el tamaño de los datos adjuntos, el dominio, etc. Asegúrese de determinar si la configuración condicional configurada en la Directiva es demasiado restrictiva o demasiado flexible.
 
-    > [!NOTE]
-    > Los correos electrónicos sujetos a directivas definidas se procesan casi en tiempo real y se pueden probar inmediatamente una vez configurada la Directiva. Los chats de Microsoft Teams pueden tardar hasta 24 horas en procesarse por completo en una directiva. 
+    >[!NOTE]
+    >Los correos electrónicos sujetos a directivas definidas se procesan casi en tiempo real y se pueden probar inmediatamente una vez configurada la Directiva. Los chats de Microsoft Teams pueden tardar hasta 24 horas en procesarse por completo en una directiva. 
 
 3. Inicie sesión en su inquilino de Office 365 como revisor designado en la Directiva de supervisión de la comunicación. Navegue hasta la **supervisión** > de la*Directiva* > personalizada**abierta** para ver el informe de la Directiva.
 

@@ -3,7 +3,7 @@ title: Etiquetas de confidencialidad en las aplicaciones de Office
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, aplicaciones de Office para dispositivos móviles y aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: a904f1adde6ea8df6d7225ed368f77790b21161a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 092c8510acac5cafa6417f93eae19731db5df270
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802853"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970958"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -40,7 +40,7 @@ Los usuarios deben tener asignada al menos una de las siguientes licencias:
 
 - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) o superior
 
-El cliente de etiquetado integrado de Office admite las etiquetas de confidencialidad con una versión de suscripción de Office. El cliente no admite versiones independientes, por ejemplo, Office 2016 u Office 2019.
+El cliente de etiquetado integrado de Office admite las etiquetas de confidencialidad con una edición de suscripción de Office. Este cliente de etiquetado no admite ediciones independientes de Office, como Office 2016 u Office 2019. Para usar las etiquetas de confidencialidad con estas ediciones de Office en equipos con Windows, instale el cliente de etiquetado Unificado de Azure Information Protection.
 
 Para usar las etiquetas de confidencialidad automáticas o recomendadas, los usuarios deben disponer de una de las siguientes licencias:
 
@@ -48,31 +48,35 @@ Para usar las etiquetas de confidencialidad automáticas o recomendadas, los usu
 
 - [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) o posterior
 
-- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/) o superior
+- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
 ## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Compatibilidad con capacidades de etiqueta de confidencialidad en Word, Excel y PowerPoint
 
-Para cada funcionalidad, en la tabla siguiente se muestra la versión mínima que necesita para esa aplicación. TBD significa que no puede usar esa funcionalidad en esa plataforma.
+Para cada funcionalidad, en la tabla siguiente se muestra una lista de la versión mínima que necesita para que la aplicación admita las etiquetas de confidencialción mediante el uso de etiquetas integradas.
+
+Hay disponibles capacidades adicionales al instalar el cliente de etiquetado Unificado de Azure Information Protection, que se ejecuta solo en equipos con Windows. Para obtener información detallada, consulte [Compare The Labeling clients for Windows Computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 |Función                                                                                                        |Escritorio de Windows |Escritorio de Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Aplicar, cambiar o quitar manualmente la etiqueta](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | Por determinar                                                        |
+|[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | En revisión                                                        |
 |[Requerir una justificación para cambiar una etiqueta](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Vínculo proporcionar ayuda a una página de ayuda personalizada](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marcar el contenido](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Por determinar            | Por determinar        | Por determinar   | Por determinar         | Por determinar                                                        |
-|[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | Por determinar            | Por determinar        | Por determinar   | Por determinar         | Por determinar                                                        |
+|[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
+|[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
 |
-  [Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos](sensitivity-labels.md#what-label-policies-can-do)   | Por determinar            | Por determinar        | Por determinar   | Por determinar         | Por determinar                                                        |
-|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | Vista previa: en distribución a [Office Insider](https://office.com/insider)                                  | Por determinar | Por determinar | Por determinar | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Compatibilidad con [autoguardado](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) y [coautoría](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) en documentos con y sin etiquetas | Por determinar | Por determinar | Por determinar | Por determinar | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
+  [Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos](sensitivity-labels.md#what-label-policies-can-do)   | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
+|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | Vista previa: en [Office Insider](https://office.com/insider)                                  | En revisión | En revisión | En revisión | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Compatibilidad con [autoguardado](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) y [coautoría](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) en documentos con y sin etiquetas | En revisión | En revisión | En revisión | En revisión | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 ## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a>Compatibilidad con capacidades de etiqueta de confidencialidad en Outlook
 
-Para cada funcionalidad, en la tabla siguiente se muestra la versión mínima que necesita para esa aplicación. TBD significa que no puede usar esa funcionalidad en esa plataforma.
+Para cada funcionalidad, en la tabla siguiente se muestra la versión mínima que necesita para esa aplicación.
+
+Hay disponibles capacidades adicionales al instalar el cliente de etiquetado Unificado de Azure Information Protection, que se ejecuta solo en equipos con Windows. Para obtener información detallada, consulte [Compare The Labeling clients for Windows Computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 |Función                                                                                                        |Outlook en el escritorio de Windows |Escritorio de Outlook en Mac  |Outlook en iOS |Outlook en Android |Outlook en la Web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
@@ -83,10 +87,10 @@ Para cada funcionalidad, en la tabla siguiente se muestra la versión mínima qu
 |[Marcar el contenido](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sí               |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sí               |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sí               |
-|[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | Por determinar                       | Por determinar                    | Por determinar           | Por determinar               | Por determinar               |
+|[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | En revisión                       | En revisión                    | En revisión           | En revisión               | En revisión               |
 |
-  [Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos](sensitivity-labels.md#what-label-policies-can-do)   | Por determinar                       | Por determinar                    | Por determinar           | Por determinar               | Por determinar               |
-|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | Por determinar                       | Por determinar                    | Por determinar           | Por determinar               | Vista previa: en distribución a la [versión dirigida](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
+  [Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos](sensitivity-labels.md#what-label-policies-can-do)   | En revisión                       | En revisión                    | En revisión           | En revisión               | En revisión               |
+|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | En revisión                       | En revisión                    | En revisión           | En revisión               | Vista previa: en distribución a la [versión dirigida](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
 |
 
 ## <a name="about-the-office-built-in-labeling-client"></a>Información sobre el cliente de etiquetado de Office integrado

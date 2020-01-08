@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
-ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 11195e588a983bb5617dd3f556734074bc0060b0
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38691086"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970848"
 ---
 # <a name="define-policies-for-information-barriers"></a>Definir políticas para las barreras de la información
 
@@ -51,14 +51,14 @@ Al definir directivas para barreras de información, trabajará con los atributo
 |[Parte 1: segmentar usuarios en la organización](#part-1-segment-users)     |-Determine qué directivas se necesitan<br/>-Hacer una lista de segmentos para definir<br/>-Identificación de los atributos que se van a usar<br/>-Definir segmentos en términos de filtros de Directiva        |
 |[Parte 2: definir las directivas de la barrera de información](#part-2-define-information-barrier-policies)     |-Definir las directivas (no aplicar todavía)<br/>-Elegir entre dos tipos (bloquear o permitir) |
 |[Parte 3: aplicar directivas de barrera de información](#part-3-apply-information-barrier-policies)     |-Establecer directivas en el estado activo<br/>-Ejecutar la aplicación de la Directiva<br/>-Ver estado de la Directiva         |
-|(Según sea necesario) [Edición de un segmento o una directiva](information-barriers-edit-segments-policies.md.md)    |-Editar un segmento<br/>-Editar o quitar una directiva<br/>-Volver a ejecutar la aplicación de Directiva<br/>-Ver estado de la Directiva         |
+|(Según sea necesario) [Edición de un segmento o una directiva](information-barriers-edit-segments-policies.md)    |-Editar un segmento<br/>-Editar o quitar una directiva<br/>-Volver a ejecutar la aplicación de Directiva<br/>-Ver estado de la Directiva         |
 |(Según sea necesario) [Solución de problemas](information-barriers-troubleshooting.md)|-Realizar una acción cuando las cosas no funcionan como se esperaba|
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Además de las [licencias y permisos necesarios](information-barriers.md#required-licenses-and-permissions), asegúrese de que se cumplen los siguientes requisitos: 
      
-- **Datos del directorio**. Asegúrese de que la estructura de la organización se refleja en los datos del directorio. Para ello, asegúrese de que los atributos de la cuenta de usuario, como la pertenencia a grupos, el nombre del Departamento, etc., se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, consulte los siguientes recursos:
+- **Datos del directorio**. Asegúrese de que la estructura de la organización se refleja en los datos del directorio. Para ello, asegúrese de que los atributos de la cuenta de usuario, como la pertenencia a grupos, el nombre del Departamento, etc., se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, vea los siguientes recursos:
   - [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
   - [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
@@ -260,11 +260,11 @@ Hay disponibles recursos para ayudarle a administrar las directivas de barrera d
 
 - Si algo va mal con barreras de la información, consulte [solución de problemas](information-barriers-troubleshooting.md)con la información.
 
-- Para evitar que se apliquen las directivas, consulte [detener una aplicación de directiva](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
+- Para evitar que se apliquen las directivas, consulte [detener una aplicación de directiva](information-barriers-edit-segments-policies.md#stop-a-policy-application).
 
-- Para quitar una directiva de barrera de información, vea [quitar una directiva](information-barriers-edit-segments-policies.md.md#remove-a-policy).
+- Para quitar una directiva de barrera de información, vea [quitar una directiva](information-barriers-edit-segments-policies.md#remove-a-policy).
 
-- Para realizar cambios en los segmentos o las directivas, consulte [Editar (o quitar) directivas de barrera de información](information-barriers-edit-segments-policies.md.md).
+- Para realizar cambios en los segmentos o las directivas, consulte [Editar (o quitar) directivas de barrera de información](information-barriers-edit-segments-policies.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Ejemplo: departamentos, segmentos y directivas de Contoso
 
@@ -307,7 +307,7 @@ Con los segmentos definidos, contoso continúa definiendo directivas.
 
 Contoso define tres directivas, como se describe en la tabla siguiente:
 
-|Directiva  |Definición de directiva  |
+|Policy  |Definición de directiva  |
 |---------|---------|
 |Directiva 1: impedir que las ventas se comuniquen con investigación     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> En este ejemplo, la Directiva de barrera de información se denomina *ventas-investigación*. Cuando esta directiva está activa y se aplica, ayuda a evitar que los usuarios que están en el segmento de ventas se comuniquen con los usuarios del segmento de investigación. Se trata de una directiva de un solo sentido; no impedirá que la investigación se comunique con ventas. Para ello, se necesita la Directiva 2.      |
 |Directiva 2: evitar que la investigación se comunique con las ventas     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> En este ejemplo, la Directiva de barrera de información se denomina *Research-sales*. Cuando esta directiva está activa y se aplica, ayuda a evitar que los usuarios que están en el segmento de investigación se comuniquen con los usuarios del segmento de ventas.       |

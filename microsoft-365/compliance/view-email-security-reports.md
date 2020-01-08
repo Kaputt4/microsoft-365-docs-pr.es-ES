@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están &amp; disponibles en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 35220410212f285c9024d2c8df7d5a275dad03ee
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 47c53f25954bc5691fe502f3857d9e4d80b97980
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093094"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962439"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento
 
@@ -29,7 +29,7 @@ Hay disponibles varios informes en el centro de [seguridad &amp; y cumplimiento]
 ![Panel en el que se ve cómo está funcionando la protección contra amenazas avanzada](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Los informes de seguridad de correo electrónico incluyen lo siguiente:
-- [Informe de cifrado](#encryption-report) (Nueva)
+- [Informe de cifrado](#encryption-report) (nuevo)
 - [Informe de estado de protección contra amenazas](#threat-protection-status-report) 
 - [Informe de detecciones de malware](#malware-detections-report) 
 - [Informe de malware principal](#top-malware-report)
@@ -68,7 +68,7 @@ Use este informe permite que el equipo de seguridad y cumplimiento de la organiz
 El informe de **Estado de protección contra amenazas** es un informe inteligente que muestra el correo electrónico malintencionado detectado y bloqueado por Exchange Online Protection. Este informe es útil para ver el correo electrónico identificado como malware o un intento de suplantación de identidad (phishing) a lo largo del tiempo (hasta 90 días) y permite a los administradores de seguridad identificar las tendencias o determinar si las directivas necesitan ajustes.
 
 > [!NOTE]
-> Un informe de estado de protección contra amenazas está disponible para los clientes que tengan [Office 365 ATP](/security/office-365-security/office-365-atp.md) o [Exchange Online Protection](/security/office-365-security/exchange-online-protection-eop.md) (EOP); sin embargo, la información que se muestra en el informe de estado de la protección contra amenazas para los clientes de ATP probablemente contendrá distintos datos de los que pueden ver los clientes de EOP. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre [los archivos malintencionados detectados en SharePoint Online, OneDrive o Microsoft Teams](/security/office-365-security/atp-for-spo-odb-and-teams.md), una capacidad específica para ATP. ([Obtenga más información sobre los informes de ATP](/security/office-365-security/view-reports-for-atp.md)).
+> Un informe de estado de protección contra amenazas está disponible para los clientes que tengan [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) o [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop) (EOP); sin embargo, la información que se muestra en el informe de estado de la protección contra amenazas para los clientes de ATP probablemente contendrá distintos datos de los que pueden ver los clientes de EOP. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre [los archivos malintencionados detectados en SharePoint Online, OneDrive o Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams), una capacidad específica para ATP. ([Obtenga más información sobre los informes de ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)).
   
 Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya al **Panel** \> **informes** \> **Estado de protección contra amenazas**.
   
@@ -76,7 +76,7 @@ Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://
   
 Al abrir por primera vez el informe de estado de protección contra amenazas, el informe muestra los datos de los últimos siete días de forma predeterminada; sin embargo, puede hacer clic en **filtros** y cambiar el intervalo de fechas de hasta 90 días de detalle. (Si usa una suscripción de prueba, es posible que se limite a 30 días de datos).
 
-Este informe es útil para ver la eficacia y el impacto de las características de la [protección de Exchange Online](/security/office-365-security//eop-features.md)de su organización, así como para las tendencias a largo plazo. 
+Este informe es útil para ver la eficacia y el impacto de las características de la [protección de Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)de su organización, así como para las tendencias a largo plazo. 
   
 ![Filtros del informe de estado de protección contra amenazas](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -96,7 +96,7 @@ De forma similar a otros informes, como el [Informe de estado de protección con
   
 ## <a name="top-malware-report"></a>Informe de malware principal
 
-El informe de **malware superior** muestra los distintos tipos de malware detectados por [Exchange Online](/security/office-365-security/eop-features.md). 
+El informe de **malware superior** muestra los distintos tipos de malware detectados por [Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features). 
   
 Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a **informes** \> de **malware superior**del **Panel** \> de informes.
   
@@ -122,7 +122,7 @@ Cuando desplaza el puntero sobre una cuña del gráfico circular, puede ver un r
   
 Haga clic (o puntee) en el informe para abrirlo en una nueva ventana del explorador, donde puede obtener una vista más detallada del informe.
   
-Use la lista **Mostrar datos para** para elegir si desea ver los datos de los remitentes principales, los receptores, los destinatarios de correo no deseado y los destinatarios de malware. También puede ver quién recibió malware detectado por [Exchange Online Protection](/security/office-365-security/exchange-online-protection-overview.md). 
+Use la lista **Mostrar datos para** para elegir si desea ver los datos de los remitentes principales, los receptores, los destinatarios de correo no deseado y los destinatarios de malware. También puede ver quién recibió malware detectado por [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop). 
   
 ![Usar la lista Mostrar datos para para ver información específica](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
@@ -138,7 +138,7 @@ Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://
   
 Cuando se mantiene el puntero sobre un día del gráfico, puede ver cuántos mensajes de correo falsificado llegaron.
   
-Haga clic (o puntee) en el informe para abrirlo en una nueva ventana del explorador, donde puede obtener una vista más detallada del informe. Para obtener más información acerca de la protección contra la suplantación de identidad, vea [protección contra la suplantación de identidad en Office 365](/security/office-365-security/anti-spoofing-protection.md).
+Haga clic (o puntee) en el informe para abrirlo en una nueva ventana del explorador, donde puede obtener una vista más detallada del informe. Para obtener más información acerca de la protección contra la suplantación de identidad, vea [protección contra la suplantación de identidad en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spoofing-protection).
   
 ## <a name="spam-detections-report"></a>Informe de detecciones de correo no deseado
 
@@ -154,7 +154,7 @@ Haga clic (o puntee) en el informe para abrirlo en una nueva ventana del explora
   
 ![El informe de detecciones de correo no deseado indica el número de mensajes de correo no deseado bloqueados o filtrados](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
-Debajo del gráfico, verá una lista de elementos de correo no deseado que se detectaron. Seleccione un elemento para ver información adicional como, por ejemplo, si el elemento de correo no deseado era de entrada o de salida, su identificador de mensaje y su destinatario. Para obtener más información acerca de la protección contra correo no deseado, consulte [Office 365 email anti-spam protection](/security/office-365-security/anti-spam-protection.md).
+Debajo del gráfico, verá una lista de elementos de correo no deseado que se detectaron. Seleccione un elemento para ver información adicional como, por ejemplo, si el elemento de correo no deseado era de entrada o de salida, su identificador de mensaje y su destinatario. Para obtener más información acerca de la protección contra correo no deseado, consulte [Office 365 email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
   
 ## <a name="sent-and-received-email-report"></a>Informe de correo electrónico enviado y recibido
 
@@ -176,11 +176,11 @@ Debajo del gráfico, verá una lista de categorías de correo electrónico, como
   
 ![Este informe le indica sobre antimalware, contra correo no deseado y otras detecciones de mensajes](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-Para obtener más información sobre la inteligencia de correo electrónico, consulte [mail Flow Intelligence in Office 365](/security/office-365-security/mail-flow-intelligence-in-office-365.md).
+Para obtener más información sobre la inteligencia de correo electrónico, consulte [mail Flow Intelligence in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365).
   
 ## <a name="user-reported-messages-report"></a>Informe de mensajes notificados por el usuario
 
-El informe de **mensajes de** informes de usuario muestra información sobre los mensajes de correo electrónico que los usuarios han notificado como correo no deseado, intentos de suplantación de identidad (phishing) o correo correcto mediante el [complemento de mensajes de informe](/security/office-365-security/enable-the-report-message-add-in.md).
+El informe de **mensajes de** informes de usuario muestra información sobre los mensajes de correo electrónico que los usuarios han notificado como correo no deseado, intentos de suplantación de identidad (phishing) o correo correcto mediante el [complemento de mensajes de informe](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in).
   
 Hay más detalles disponibles para cada mensaje, incluidos el motivo de la entrega, la excepción de la Directiva de correo no deseado o la regla de flujo de correo configurada para la organización. Para ver los detalles, seleccione un elemento de la lista de informes de usuarios y, a continuación, vea la información en las pestañas **Resumen** y **detalles** . 
   
@@ -195,7 +195,7 @@ Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://
 ![En el centro &amp; de seguridad y cumplimiento, elija \> mensajes \> de informe de usuario de revisión de administración de amenazas](media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> Para que el informe de mensajes notificados por el usuario funcione correctamente, el **registro de auditoría debe estar activado** para su entorno de Office 365. Normalmente lo hace alguien que tiene el rol registros de auditoría asignado en Exchange Online. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md). 
+> Para que el informe de mensajes notificados por el usuario funcione correctamente, el **registro de auditoría debe estar activado** para su entorno de Office 365. Normalmente lo hace alguien que tiene el rol registros de auditoría asignado en Exchange Online. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos se necesitan para ver estos informes?
 
@@ -214,23 +214,23 @@ Para poder ver y usar los informes descritos en este artículo, **debe tener asi
 
 Para obtener más información, vea los siguientes recursos:
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 
 - [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
-Si no ve datos en los informes, compruebe que las directivas estén correctamente configuradas. Para obtener más información, consulte [proteger contra amenazas en Office 365](/security/office-365-security/protect-against-threats.md).
+Si no ve datos en los informes, compruebe que las directivas estén correctamente configuradas. Para obtener más información, consulte [proteger contra amenazas en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Protección contra correo no deseado de Office 365](/security/office-365-security/anti-spam-protection.md)
+[Protección contra correo no deseado de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
   
-[Informes y opiniones en el centro de seguridad &amp; y cumplimiento de Office 365](/security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[Informes y opiniones en el centro de seguridad &amp; y cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
   
-[Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento](/security/office-365-security/create-a-schedule-for-a-report.md)
+[Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
   
-[Configurar y descargar un informe personalizado en el centro de &amp; seguridad y cumplimiento](/security/office-365-security/set-up-and-download-a-custom-report.md)
+[Configurar y descargar un informe personalizado en el centro de &amp; seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)
   
 

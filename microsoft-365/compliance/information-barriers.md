@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
-ms.openlocfilehash: 31de709e5ac834ad628110088b0dab80efe85950
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 352f101a443b015840b09b82626f7dbee9cfb79e
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690993"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970838"
 ---
 # <a name="information-barriers"></a>Barreras de información
 
@@ -83,5 +83,4 @@ Debe estar familiarizado con los cmdlets de PowerShell para poder definir, valid
 
 - [Definir políticas para las barreras de la información](information-barriers-policies.md)
 
-- [Editar (o quitar) directivas de barrera de información](information-barriers-edit-segments-policies.md.md) 
-
+- [Editar (o quitar) directivas de barrera de información](information-barriers-edit-segments-policies.md) 

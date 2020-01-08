@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ff159546cd62b2fd2b5cb4fca031e449c860d5cb
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 5ce06f582966f7209d4b539f9de41e8045b98519
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676807"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970928"
 ---
 # <a name="microsoft-secure-score-preview"></a>Puntuación segura de Microsoft (versión preliminar)
 
@@ -63,21 +63,21 @@ Para tener permiso de acceso a la puntuación segura de Microsoft, debe tener as
 
 Con acceso de lectura y escritura, puede realizar cambios e interactuar directamente con la calificación segura. También puede asignar acceso de solo lectura a otros usuarios.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Administrador global
+* Administrador de seguridad
+* Administrador de Exchange
+* Administrador de SharePoint
 
 ### <a name="read-only-roles"></a>Solo lectura roles
 
 Con acceso de solo lectura, no es posible editar el estado ni las notas para una acción de mejora, editar zonas de puntuación ni editar comparaciones personalizadas.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Administrador del servicio de asistencia
+* Administrador de usuarios
+* Administrador de servicios
+* Lector de seguridad
+* Operador de seguridad
+* Lector global
 
 ### <a name="graph-api"></a>API de Graph
 

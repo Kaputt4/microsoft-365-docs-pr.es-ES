@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dc654a877e12eed308b5f8be9fd001ef9093398d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ece7264eba56aa9b389b0dc3555d69e71cc30ad5
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807935"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959618"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Referencia de la característica de cumplimiento de comunicaciones (versión preliminar)
 
@@ -29,8 +29,8 @@ ms.locfileid: "40807935"
 
 Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el centro de cumplimiento de Microsoft 365. Si tiene una organización de Office 365, [configurará directivas de supervisión](configure-supervision-policies.md) en el centro de seguridad & cumplimiento de Office 365. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en la organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios incluidos en el grupo de roles **Administrador de revisión de supervisión** pueden configurar directivas y cualquier persona con este rol asignado puede tener acceso a la página cumplimiento en la **comunicación** en el centro de cumplimiento de Microsoft 365. Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo. csv que también incluye el estado de las alertas revisión pendiente, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y eliminarse cuando ya no se necesiten.
 
-> [!NOTE]
-> Las directivas de supervisión creadas en el centro de seguridad y cumplimiento de Office 365 para las suscripciones a Office 365 no se pueden migrar a Microsoft 365. Si va a migrar desde una suscripción de Office 365 a una suscripción de Microsoft 365, tendrá que crear nuevas directivas de cumplimiento de comunicaciones para reemplazar las directivas de supervisión existentes.
+>[!NOTE]
+>Las directivas de supervisión creadas en el centro de seguridad y cumplimiento de Office 365 para las suscripciones a Office 365 no se pueden migrar a Microsoft 365. Si va a migrar desde una suscripción de Office 365 a una suscripción de Microsoft 365, tendrá que crear nuevas directivas de cumplimiento de comunicaciones para reemplazar las directivas de supervisión existentes.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -46,8 +46,8 @@ Las plantillas de Directiva son opciones de directiva predefinidas que puede usa
 
 Antes de empezar a usar el cumplimiento de la comunicación, debe determinar quién necesita que se revisen sus comunicaciones. En la Directiva, las direcciones de correo electrónico de usuario identifican a los individuos o grupos de personas que deben supervisarse. Algunos ejemplos de estos grupos son los grupos de Office 365, las listas de distribución basadas en Exchange y los canales de Microsoft Teams. También puede excluir usuarios o grupos específicos del análisis con un grupo de exclusión específico o con una lista de grupos.
 
-> [!IMPORTANT]
-> Los usuarios a los que se aplican las directivas de cumplimiento de comunicaciones deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5. Si no tiene un plan existente de Enterprise E5 y desea probar el cumplimiento de la comunicación, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Los usuarios a los que se aplican las directivas de cumplimiento de comunicaciones deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5. Si no tiene un plan existente de Enterprise E5 y desea probar el cumplimiento de la comunicación, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="reviewers"></a>Reviewers
 
@@ -198,8 +198,8 @@ Si desea crear más de un mensaje de correo electrónico basado en texto sencill
 </html>
 ```
 
-> [!NOTE]
-> La implementación de atributos de href HTML en las plantillas de notificación de cumplimiento de la comunicación solo admiten comillas simples, en lugar de comillas dobles para las referencias a direcciones URL.
+>[!NOTE]
+>La implementación de atributos de href HTML en las plantillas de notificación de cumplimiento de la comunicación solo admiten comillas simples, en lugar de comillas dobles para las referencias a direcciones URL.
 
 ## <a name="filters"></a>Filtros
 
@@ -232,8 +232,8 @@ Para las directivas de cumplimiento de la comunicación, los siguientes valores 
 | Umbral | 4 actividades |
 | Window | de 60 minutos |
 
-> [!Note]
-> La configuración de desencadenadores de umbral de la Directiva de alerta para actividades admite un valor mínimo de 3 o superior para las directivas de cumplimiento de la comunicación.
+>[!Note]
+>La configuración de desencadenadores de umbral de la Directiva de alerta para actividades admite un valor mínimo de 3 o superior para las directivas de cumplimiento de la comunicación.
 
 Puede cambiar la configuración predeterminada de los desencadenadores en número de actividades, período para las actividades y usuarios específicos en las directivas de alerta en la página **directivas de alerta** del centro de seguridad & cumplimiento de Office 365.
 
@@ -259,8 +259,8 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alertas para 
 
 En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esto puede ser un resumen de todas las actividades asociadas con una directiva de organización definida o cada vez que cambia una directiva de cumplimiento de la comunicación. Las directivas de cumplimiento de comunicaciones tienen pistas de auditoría integradas para una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción de creación, edición y eliminación son capturados por las directivas de comunicación para proporcionar una prueba de los procedimientos de supervisión.
 
-> [!Important]
-> La auditoría debe estar habilitada para su organización antes de que se registren los eventos de cumplimiento de comunicaciones. Para habilitar la auditoría, consulte [enable Auditions for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>[!Important]
+>La auditoría debe estar habilitada para su organización antes de que se registren los eventos de cumplimiento de comunicaciones. Para habilitar la auditoría, consulte [enable Auditions for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
 
 Para ver las actividades de la Directiva de cumplimiento de comunicaciones, seleccione el control **exportar actividades de revisión** en la Página principal de cualquier directiva. Esto genera un archivo de auditoría en el formato. csv que contiene la siguiente información:
 

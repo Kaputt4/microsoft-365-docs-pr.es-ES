@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 943c32aa535a319829bd93bde190a5fead12ef08
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910519"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970918"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -60,21 +60,21 @@ Para tener permiso de acceso a la puntuación segura de Microsoft, debe tener as
 
 Con acceso de lectura y escritura, puede realizar cambios e interactuar directamente con la calificación segura. También puede asignar acceso de solo lectura a otros usuarios.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Administrador global
+* Administrador de seguridad
+* Administrador de Exchange
+* Administrador de SharePoint
 
 ### <a name="read-only-roles"></a>Solo lectura roles
 
 Con acceso de solo lectura, no es posible editar el estado ni las notas para una acción de mejora, editar zonas de puntuación ni editar comparaciones personalizadas.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Administrador del servicio de asistencia
+* Administrador de usuarios
+* Administrador de servicios
+* Lector de seguridad
+* Operador de seguridad
+* Lector global
 
 ### <a name="graph-api"></a>API de Graph
 
@@ -146,7 +146,7 @@ Por estos motivos, todas las acciones de mejora que no se hayan puntuado o que r
 
 Para estandarizar puntos en varias experiencias, se actualizará el total del punto de acción mejora de la puntuación segura para que merezca 10 puntos o menos. Es necesario ser más coherente en el respire ancho de los controles de seguridad que tenemos hoy y los que se van a agregar en el futuro. Si bien se trata de un cambio significativo y verá los totales de los puntos de colocación, no habrá cambios en su postura de seguridad.  
 
-### <a name="preview-features"></a>Características de vista previa
+### <a name="preview-features"></a>Versión preliminar de las características
 
 Las siguientes características se incluirán en la versión preliminar:
 
