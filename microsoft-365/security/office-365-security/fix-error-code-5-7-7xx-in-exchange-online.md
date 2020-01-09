@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo solucionar problemas de correo electrónico para el código de error 5.7.7 XX en Exchange Online (inquilino bloqueado del envío de correo).
-ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962309"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989535"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Corregir problemas de entrega de correo electrónico para el código de error 5.7.7 XX en Exchange Online
 
@@ -55,18 +55,20 @@ Hay varias cosas que debe hacer si el inquilino tiene bloqueado el envío de cor
 
 1. Compruebe que todos los dominios de correo electrónico están registrados. Para obtener más información, vea [Agregar un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) y [administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Busque [conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inusuales. A menudo, los actores malintencionados crean conectores entrantes nuevos en la organización de Office 365 para enviar correo no deseado. Para ver los conectores existentes, consulte [validar conectores en Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
+2. [Habilite MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) para todos los administradores de la organización de Office 365.
 
-3. Compruebe si los usuarios están comprometidos como se describe en [responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md).
+3. Compruebe que todos los dominios de correo electrónico están registrados. Para obtener más información, vea [Agregar un dominio a Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) y [administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-4. [Habilite MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) para todos los administradores de la organización de Office 365.
+4. Busque [conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inusuales. A menudo, los actores malintencionados crean conectores entrantes nuevos en la organización de Office 365 para enviar correo no deseado. Para ver los conectores existentes, consulte [validar conectores en Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
-5. Bloquee los servidores de correo electrónico locales y compruebe que no estén comprometidos.
+5. Compruebe si los usuarios están comprometidos como se describe en [responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md).
+
+6. Bloquee los servidores de correo electrónico locales y compruebe que no estén comprometidos.
 
    > [!TIP]
    > Hay muchos factores aquí, especialmente si está usando servidores de terceros. Independientemente, tendrás que comprobar que todo el correo electrónico saliente es ahora legítimo.
 
-6. Llame al soporte técnico de Microsoft y pídale que se desbloquee el espacio empresarial para enviar de nuevo desde dominios no registrados. El código de error es útil, pero tendrá que probar que su entorno se ha asegurado y no puede enviar correo no deseado. Para abrir un caso de soporte técnico, consulte [Contact Support for Business Products: ayuda de administración](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+7. Llame al soporte técnico de Microsoft y pídale que se desbloquee el espacio empresarial para enviar el correo electrónico de nuevo. El código de error es útil, pero tendrá que probar que su entorno se ha asegurado y no puede enviar correo no deseado. Para abrir un caso de soporte técnico, consulte [Contact Support for Business Products: ayuda de administración](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## <a name="for-more-information"></a>Más información
 

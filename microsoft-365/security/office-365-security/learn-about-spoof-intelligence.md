@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Use inteligencia de identidad en el &amp; centro de seguridad y cumplimiento en la página Configuración contra correo no deseado para revisar todos los remitentes que suplantan dominios que forman parte de la organización o suplantación de dominios externos. La inteligencia de identidad está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección contra amenazas avanzada y de Exchange Online Protection.
-ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2f6a68446698747fe31261c7e892c50e6ec5c7f4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970436"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989495"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Obtener más información sobre la inteligencia de suplantación de identidad
 
@@ -79,9 +79,9 @@ Puede revisar los remitentes que están suplantando su dominio o dominios extern
 
     ![Captura de pantalla que muestra el acceso a la página contra correo electrónico no deseado](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. En la página **configuración de correo no deseado** del panel derecho, seleccione la pestaña **personalizado** y, a continuación, desplácese hacia abajo y expanda la **Directiva inteligencia empresarial de suplantación de identidad**.
+4. En la página **configuración de correo no deseado** del panel derecho, desplácese hacia abajo y expanda **Directiva de inteligencia empresarial de suplantación**.
 
-    ![Captura de pantalla que muestra el acceso a la configuración personalizada de bloqueo de correo no deseado](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![suplantación](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. Para ver la lista de remitentes que suplantan la identidad del dominio, elija **revisar nuevos remitentes** y seleccione la pestaña **dominios** .
 

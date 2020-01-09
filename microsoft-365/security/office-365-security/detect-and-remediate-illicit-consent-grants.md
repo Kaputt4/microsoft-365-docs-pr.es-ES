@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Aprenda a reconocer y corregir el consentimiento ilícito concede un ataque en Office 365.
-ms.openlocfilehash: 46387f82a38c33debdc24a6825479bf3183f0283
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0f4569a4ef8496a07fc1dc52f500ee91a6590fdd
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808435"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989545"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar y solucionar la concesión de consentimiento ilegal en Office 365
 
@@ -32,6 +32,7 @@ En un ataque de consentimiento ilícito, el atacante crea una aplicación regist
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>¿Qué aspecto tiene un ataque ilegal de concesión de consentimiento en Office 365?
 
 Debe buscar en el **registro de auditoría** de Office 365 para encontrar signos, también denominados "indicadores de peligro" (IOC) de este ataque. Para las organizaciones con muchas aplicaciones registradas en Azure y una base de usuarios grande, el procedimiento recomendado es revisar las concesiones de consentimiento de las organizaciones cada semana.
+
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Pasos para buscar signos de este ataque
 
 1. Abra el **centro de seguridad y cumplimiento** en el inquilino de Office 365.
