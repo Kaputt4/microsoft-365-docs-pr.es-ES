@@ -16,6 +16,8 @@
       href: ../business/set-up.md?toc=/microsoft-365/campaigns/toc.json
     - name: Iniciar sesión
       href: m365-campaigns-sign-in.md
+    - name: Personalizar la página de inicio de sesión
+      href: m365-customize-sign-in.md
     - name: Agregue usuarios
       href: ../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json
 - name: Aumentar la seguridad y protección
