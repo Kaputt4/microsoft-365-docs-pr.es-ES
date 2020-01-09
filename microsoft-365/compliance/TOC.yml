@@ -199,23 +199,21 @@
           href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filtrar datos al importar archivos PST
           href: filter-data-when-importing-pst-files.md
-        - name: Usar la carga en la red para importar archivos PST con cifrado RMS
-          href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: Preguntas más frecuentes sobre la importación de archivos PST
           href: faqimporting-pst-files-to-office-365.md
-        - name: Archivar datos de terceros
-          href: archiving-third-party-data.md
-          items:
-            - name: Usar un conector de ejemplo para archivar datos de Facebook
-              href: archive-facebook-data-with-sample-connector.md
-            - name: Usar un conector de ejemplo para archivar datos de Twitter
-              href: archive-twitter-data-with-sample-connector.md
-            - name: Configurar un conector para archivar datos de LinkedIn
-              href: archive-linkedin-data.md
-            - name: Configurar un conector para archivar datos instantáneos de Bloomberg
-              href: archive-instant-bloomberg-data.md
-            - name: Trabajar con un socio para archivar datos de terceros
-              href: work-with-partner-to-archive-third-party-data.md
+    - name: Archivar datos de terceros
+      href: archiving-third-party-data.md
+      items:
+        - name: Configurar un conector para archivar datos de Facebook
+          href: archive-facebook-data-with-sample-connector.md
+        - name: Configurar un conector para archivar datos de Twitter
+          href: archive-twitter-data-with-sample-connector.md
+        - name: Configurar un conector para archivar datos de LinkedIn
+          href: archive-linkedin-data.md
+        - name: Configurar un conector para archivar datos instantáneos de Bloomberg
+          href: archive-instant-bloomberg-data.md
+        - name: Trabajar con un socio para archivar datos de terceros
+          href: work-with-partner-to-archive-third-party-data.md
     - name: Almacenar datos
       items:
         - name: Habilitar buzones de archivo
