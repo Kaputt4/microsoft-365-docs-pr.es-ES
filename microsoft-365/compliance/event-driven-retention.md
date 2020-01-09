@@ -1,7 +1,7 @@
 ---
 title: Información general sobre la retención controlada por eventos
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de retención puede hacer que un período de retención se base en el momento en que se produce un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento. La retención controlada por eventos suele usarse como parte de un proceso de administración de registros.
-ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
-ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
+ms.openlocfilehash: 109b6104f2a06559beae0148b581854f44e6394a
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "39268641"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989576"
 ---
 # <a name="overview-of-event-driven-retention"></a>Información general sobre la retención controlada por eventos
 
@@ -61,7 +61,7 @@ Para usar correctamente la retención controlada por eventos, es importante comp
     
   - Palabras clave (para elementos de Exchange). En este ejemplo, la organización usa un código de producto en mensajes que contienen registros de productos, por lo que la palabra clave para los elementos de Exchange coincide con el id. de activo para documentos de OneDrive y SharePoint.
     
-  - La fecha en que se produjo el evento. La fecha se usa como el inicio del período de retención. Esta fecha solo puede ser la fecha actual o una fecha futura, no una fecha pasada.
+  - La fecha en que se produjo el evento. La fecha se usa como el inicio del período de retención. Esta fecha puede ser la fecha actual, una fecha pasada o una fecha futura.
     
 4. Después de crear un evento, esa fecha del evento se sincroniza con todo el contenido que tenga una etiqueta de ese tipo de evento y que contenga la palabra clave o el id. de activo especificado. Al igual que con cualquier etiqueta, puede tardar hasta siete días en sincronizarse. En el diagrama anterior, este evento desencadena el período de retención de todos los elementos rodeados con un círculo rojo (es decir, cuando este producto alcanza el fin de vida, el evento desencadena el período de retención de los registros del producto).
     
