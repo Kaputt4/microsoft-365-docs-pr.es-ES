@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, puede ver, liberar e informar de mensajes falsos positivos en cuarentena en Office 365. Puede configurar directivas para que Office 365 filtre mensajes y los envíe a la cuarentena por varias razones: debido a que se identificaron como correo no deseado, en masa, con suplantación de identidad (phishing) o porque coincidieron con una regla de flujo de correo. '
-ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970938"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021866"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar archivos y mensajes en cuarentena como un administrador en Office 365
 
@@ -31,26 +31,15 @@ De forma predeterminada, Office 365 envía mensajes de suplantación de identida
 
 Debe tener permisos de administrador global (GA) en Office 365, o ser miembro de uno o varios grupos de roles del centro de cumplimiento de & de seguridad, para trabajar con los mensajes en cuarentena o los archivos en cuarentena. Consulte [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) para obtener más información.
 
-> [!IMPORTANT]
-> De forma predeterminada, los mensajes de correo no deseado, masivos o de suplantación de identidad se mantienen en cuarentena durante 30 días. Los mensajes que se ponen en cuarentena debido a que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Los mensajes de malware se mantienen en cuarentena durante 15 días. Puede personalizar el tiempo de cuarentena de correo no deseado en configuración contra correo no deseado en el centro de seguridad & cumplimiento. Cuando Office 365 elimina un mensaje en cuarentena, no puede recuperarlo. Si lo desea, puede cambiar el período de retención de los mensajes en cuarentena en las directivas de filtro contra correo no deseado. Para obtener más información, consulte [configuración del período de retención de cuarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime).
+## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>¿Qué permisos se necesitan para acceder a la cuarentena del administrador?
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+Los permisos para administrar la cuarentena se controlan mediante la pertenencia a los grupos de roles del*centro de cumplimiento de & de seguridad* . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the Office 365 security & Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Aunque la cuarentena se encuentra en el centro de seguridad & cumplimiento, los permisos para administrar los mensajes en cuarentena se controlan mediante la pertenencia a grupos de roles de **Exchange Online** . Para obtener más información acerca de los grupos de roles en Exchange Online, consulte [administrar grupos de roles en Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+Los grupos de funciones de seguridad & cumplimiento que conceden permisos para administrar la cuarentena son los siguientes:
 
-Los grupos de roles de Exchange online que conceden permisos para administrar los archivos en cuarentena son los siguientes:
-
-- **Administración**de la organización: los administradores globales son automáticamente miembros de este grupo.
+- **Administrador de cuarentena**
 
 - **Administrador de seguridad**
-
-- **Administración de higiene**
-
-Los grupos de roles de Exchange online que conceden permisos para ver los archivos en cuarentena son los siguientes:
-
-- **View-Only Organization Management**
-
-- **Lector de seguridad**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>Ver los mensajes en cuarentena de la organización
 

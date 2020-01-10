@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
-ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.openlocfilehash: d353c4bee8381074b845e0774e06f411d823549f
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910121"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021836"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -59,33 +59,35 @@ Anti-spam, anti-malware y anti-phishing son características de EOP que los admi
 |Purga automática de cero horas|Activado|Activado|Para ZAP de correo no deseado y phish|
 |MarkAsSpamBulkMail|Activado|Activado|Esta opción solo está disponible en PowerShell|
 
-Hay varios otros parámetros en la Directiva contra correo no deseado denominados filtro de correo no deseado avanzado que se han dejado de estar en desuso en el momento de escribir este tema. Nuestra configuración recomendada para estos **son desactivar los** niveles estándar y estrictos:
+Hay varios otros parámetros en la Directiva contra correo no deseado denominado filtro de correo no deseado avanzado (ASF) que están en desuso. Se comunicará más información sobre las escalas de tiempo de la depreciación de estas características fuera de este tema.
+ 
+ Le recomendamos que **desactive estos valores para** los niveles estándar y estricto:
 
-|Nombre de la característica de seguridad| Comentarios |
+|Nombre de la característica de seguridad|Comentarios|
 |---------|---------|
-|IncreaseScoreWithImageLinks| |
-|IncreaseScoreWithNumericIps| |
-|IncreaseScoreWithRedirectToOtherPort| |
-|IncreaseScoreWithBizOrInfoUrls| |
-|MarkAsSpamEmptyMessages| |
-|MarkAsSpamJavaScriptInHtml| |
-|MarkAsSpamFramesInHtml| |
-|MarkAsSpamObjectTagsInHtml| |
-|MarkAsSpamEmbedTagsInHtml| |
-|MarkAsSpamFormTagsInHtml| |
-|MarkAsSpamWebBugsInHtml| |
-|MarkAsSpamSensitiveWordList| |
-|MarkAsSpamFromAddressAuthFail| |
-|MarkAsSpamNdrBackscatter| |
-|MarkAsSpamSpfRecordHardFail| |
+|IncreaseScoreWithImageLinks||
+|IncreaseScoreWithNumericIps||
+|IncreaseScoreWithRedirectToOtherPort||
+|IncreaseScoreWithBizOrInfoUrls||
+|MarkAsSpamEmptyMessages||
+|MarkAsSpamJavaScriptInHtml||
+|MarkAsSpamFramesInHtml||
+|MarkAsSpamObjectTagsInHtml||
+|MarkAsSpamEmbedTagsInHtml||
+|MarkAsSpamFormTagsInHtml||
+|MarkAsSpamWebBugsInHtml||
+|MarkAsSpamSensitiveWordList||
+|MarkAsSpamFromAddressAuthFail||
+|MarkAsSpamNdrBackscatter||
+|MarkAsSpamSpfRecordHardFail||
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>Configuración de directiva de filtro de correo no deseado de EOP
 
 |Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---------|---------|---------|---------|
-|Límites de destinatarios de la Directiva de correo no deseado saliente-límite externo por hora|400|500||
-|Límites de destinatarios de la Directiva de correo no deseado saliente: límite interno por hora|800|1000||
-|Límites de destinatarios de la Directiva de correo no deseado saliente: límite diario|800|1000||
+|Límites de destinatarios de la Directiva de correo no deseado saliente-límite externo por hora|500|400||
+|Límites de destinatarios de la Directiva de correo no deseado saliente: límite interno por hora|1000|800||
+|Límites de destinatarios de la Directiva de correo no deseado saliente: límite diario|1000|800||
 |Acción cuando un usuario supera los límites|Restringir al usuario el envío de correo|Restringir al usuario el envío de correo||
 
 ### <a name="eop-anti-malware-policy-settings"></a>Configuración de la Directiva de EOP contra malware

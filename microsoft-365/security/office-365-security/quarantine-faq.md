@@ -3,7 +3,7 @@ title: Preguntas más frecuentes sobre la cuarentena
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 06/16/2017
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospedada.
-ms.openlocfilehash: f8d7d0820685671c4cbe9ae7671058cc60d8e637
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: d275a919e58d2a908fb10d4dff412ebe0859662f
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971558"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021846"
 ---
 # <a name="quarantine-faq"></a>Preguntas más frecuentes sobre la cuarentena
 
@@ -27,7 +27,7 @@ Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospeda
 
  **P. ¿Cómo puedo administrar los mensajes de malware en cuarentena en cuarentena?**
 
-Debe usar el centro de seguridad &amp; y cumplimiento para ver y trabajar con mensajes que se enviaron a cuarentena porque contienen malware. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
+Debe usar el centro de seguridad & cumplimiento para ver y trabajar con mensajes que se enviaron a cuarentena porque contienen malware. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
 
  **P. ¿Cómo se configura el servicio para enviar mensajes de correo no deseado en cuarentena a la cuarentena?**
 
@@ -35,19 +35,19 @@ R. De manera predeterminada los mensajes de contenido filtrado se envían a los 
 
  **P. ¿Cuenta el servicio con administración de usuario final y administrador de los mensajes de correo no deseado puestos en cuarentena?**
 
-R. Como administrador, puede buscar y ver detalles de los mensajes de correo electrónico en cuarentena en el Centro de administración de Exchange (EAC). Tras encontrar el mensaje, puede publicarlo a usuarios específicos y, opcionalmente, identificarlo como falso positivo (deseado) al equipo de análisis de correo no deseado de Microsoft. Para más información, vea [Buscar y liberar mensajes en cuarentena como un administrador](find-and-release-quarantined-messages-as-an-administrator.md).
+R. Como administrador, puede buscar y ver los detalles de todos los mensajes de correo electrónico en cuarentena en el centro de seguridad y cumplimiento (SCC). Tras encontrar el mensaje, puede publicarlo a usuarios específicos y, opcionalmente, identificarlo como falso positivo (deseado) al equipo de análisis de correo no deseado de Microsoft. Para obtener más información, consulte [Manage Quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
 Como usuario final, puede administrar sus propios mensajes de correo no deseado en cuarentena a través de:
 
 - La interfaz de usuario de cuarentena de correo no deseado. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como un usuario en Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
- **Q. ¿Cómo puede conceder acceso al correo no deseado en cuarentena a mis usuarios finales?**
+ **P. ¿Cómo puedo conceder acceso a cuarentena para mis usuarios finales?**
 
 A. Para poder tener acceso a la cuarentena de correo no deseado del usuario final, los usuarios finales deben tener un identificador de usuario y una contraseña de Office 365 válidos. Los clientes de EOP que protegen los buzones locales deben ser usuarios de correo electrónico válidos creados mediante la sincronización de directorios o el EAC. Para obtener más información acerca de la administración de usuarios, los administradores de EOP pueden hacer referencia a [administrar usuarios de correo en EOP](manage-mail-users-in-eop.md). Para clientes independientes de EOP, se recomienda usar la sincronización de directorios y habilitar el bloqueo perimetral basado en directorios; para obtener más información, vea [usar bloqueo perimetral basado en directorios para rechazar mensajes enviados a destinatarios no válidos](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
- **P. ¿Se puede enviar otra cosa que no sea correo no deseado a la cuarentena?**
+ **P. ¿qué mensajes pueden hacer que los usuarios finales tengan acceso en cuarentena?**
 
-R. Sí. Los mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte) junto con los mensajes identificados como phish también se pueden enviar a la cuarentena de administrador, si esa es la acción configurada. La cuarentena del usuario final es únicamente para correo no deseado.
+A. Los usuarios finales pueden tener acceso a su propio phish, correo no deseado y correo masivo. Los usuarios finales no pueden tener acceso a su propio malware, phish de confianza alta ni a los mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte); solo están disponibles en la cuarentena de administrador. 
 
  **P. ¿Durante cuánto tiempo se guardan los mensajes en cuarentena?**
 
