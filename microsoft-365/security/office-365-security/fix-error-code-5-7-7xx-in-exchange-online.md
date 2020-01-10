@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo solucionar problemas de correo electrónico para el código de error 5.7.7 XX en Exchange Online (inquilino bloqueado del envío de correo).
-ms.openlocfilehash: 831efac29bb2e878585f97419dfd9dca67c67409
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 4e82df78cfb83865142defb14cec0841ab29ba95
+ms.sourcegitcommit: 55cb11c2475f40d0f1c64cf45446bf383d7d5f86
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995236"
+ms.locfileid: "41002980"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Corregir problemas de entrega de correo electrónico para el código de error 5.7.7 XX en Exchange Online
 
@@ -49,11 +49,11 @@ Una vez comprometida, se impedirá que los inquilinos envíen correo electrónic
 
 `550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
-## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>Cómo desbloquear el inquilino para enviar de nuevo
+## <a name="unblocking-tenant-in-order-to-send-again"></a>Desbloqueo de inquilino para enviar de nuevo
 
 Hay varias cosas que debe hacer si el inquilino tiene bloqueado el envío de correo electrónico:
 
-1. Compruebe que todos los dominios de correo electrónico están registrados. Para obtener más información, vea [Agregar un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) y [administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Cambie la contraseña de sus cuentas de administrador. Si se bloquea el envío de un inquilino, lo más probable es que se haya puesto en peligro una cuenta de administrador. Cambiar las contraseñas es el primer paso para evitar que el atacante haga más daño.
 
 2. [Habilite MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) para todos los administradores de la organización de Office 365.
 
@@ -66,7 +66,7 @@ Hay varias cosas que debe hacer si el inquilino tiene bloqueado el envío de cor
 6. Bloquee los servidores de correo electrónico locales y compruebe que no estén comprometidos.
 
    > [!TIP]
-   > Hay muchos factores aquí, especialmente si está usando servidores de terceros. Independientemente, tendrás que comprobar que todo el correo electrónico saliente es ahora legítimo.
+   > Hay muchos factores aquí, especialmente si está usando servidores de terceros. En cualquier caso, tendrá que comprobar que el correo saliente no incluye correo no deseado.
 
 7. Llame al soporte técnico de Microsoft y pídale que se desbloquee el espacio empresarial para enviar el correo electrónico de nuevo. El código de error es útil, pero tendrá que probar que su entorno se ha asegurado y no puede enviar correo no deseado. Para abrir un caso de soporte técnico, consulte [Contact Support for Business Products: ayuda de administración](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
