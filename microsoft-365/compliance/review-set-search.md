@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 140ccc3984dc09a794d822eb3ff02f139d87fcd5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202351"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004833"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Consultar los datos de un conjunto de revisión
 
@@ -27,7 +27,7 @@ En la mayoría de los casos, será útil poder profundizar más en los datos de 
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Crear y ejecutar una consulta en un conjunto de revisiones
 
-Para crear y ejecutar una consulta en los documentos de un conjunto de revisiones, haga clic en **nueva consulta** en el conjunto de revisiones. Después de asignar un nombre a la consulta y definir las condiciones, haga clic en **Guardar** para guardar y ejecutar la consulta. Para ejecutar una consulta que se ha guardado previamente, haga clic en una consulta guardada. 
+Para crear y ejecutar una consulta en los documentos de un conjunto de revisiones, haga clic en **nueva consulta** en el conjunto de revisiones. Después de asignar un nombre a la consulta y definir las condiciones, haga clic en **Guardar** para guardar y ejecutar la consulta. Para ejecutar una consulta que se ha guardado previamente, haga clic en una consulta guardada.
 
 ![Revisar establecer consultas](media/AeDReviewSetQueries.png)
 
