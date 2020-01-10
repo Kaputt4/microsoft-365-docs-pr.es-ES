@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
+ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970918"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41012193"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -135,6 +135,21 @@ La puntuación segura de Microsoft es un resumen numérico de la postura de segu
 ## <a name="whats-coming"></a>¿Qué llega?
 
 Para hacer que la puntuación segura de Microsoft sea un mejor representante de su postura de seguridad y mejorar el uso, estamos realizando algunos cambios en un futuro próximo. Se cambiará la puntuación y la puntuación máxima posible. Sin embargo, esto no implica un cambio en su postura de seguridad.
+
+### <a name="mfa-improvement-action-updates"></a>Actualizaciones de acciones de mejora de MFA
+
+Para reflejar la necesidad de las empresas de garantizar la máxima seguridad al aplicar las directivas que funcionan con su negocio, la calificación segura de Microsoft es quitar tres acciones de mejora centradas alrededor de la autenticación multifactor y agregando dos.
+
+Los tres que se quitarán:
+- Registrar todos los usuarios para la autenticación multifactor
+- Requerir MFA para todos los usuarios
+- Requerir MFA para los roles privilegiados de Azure AD
+
+Nuevas acciones de mejora:
+- Asegurarse de que todos los usuarios puedan completar la autenticación multifactor para el acceso seguro
+- Requerir MFA para roles administrativos
+
+ Estas nuevas acciones de mejora requerirán el registro de los usuarios o administradores para la autenticación multifactor (MFA) en el directorio y el establecimiento del conjunto adecuado de directivas que se adapten a las necesidades de la organización. El objetivo principal es tener flexibilidad a la vez que se asegura de que todos los usuarios y administradores puedan autenticarse con varios factores o solicitudes de verificación de identidad basadas en riesgos. Esto puede adoptar la forma de establecer los valores predeterminados de seguridad que permiten a Microsoft decidir cuándo desafiar a los usuarios para MFA o tener varias directivas que apliquen decisiones con ámbito.
 
 ### <a name="removing-not-scored-and-review-improvement-actions"></a>Eliminación de acciones de mejora "sin puntuar" y "revisión"
 
