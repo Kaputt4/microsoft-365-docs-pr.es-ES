@@ -3,7 +3,7 @@ title: Administrar archivos y mensajes en cuarentena como un administrador en Of
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: 09/05/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, puede ver, liberar e informar de mensajes falsos positivos en cuarentena en Office 365. Puede configurar directivas para que Office 365 filtre mensajes y los envíe a la cuarentena por varias razones: debido a que se identificaron como correo no deseado, en masa, con suplantación de identidad (phishing) o porque coincidieron con una regla de flujo de correo. '
-ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 610a5e584f8731440150f643365b4d307b87adf2
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021866"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023334"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar archivos y mensajes en cuarentena como un administrador en Office 365
 
@@ -33,9 +33,11 @@ Debe tener permisos de administrador global (GA) en Office 365, o ser miembro de
 
 ## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>¿Qué permisos se necesitan para acceder a la cuarentena del administrador?
 
-Los permisos para administrar la cuarentena se controlan mediante la pertenencia a los grupos de roles del*centro de cumplimiento de & de seguridad* . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the Office 365 security & Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+Los permisos para administrar la cuarentena están controlados por la pertenencia a los grupos de roles del *centro de cumplimiento de & de seguridad* (en concreto, el rol **cuarentena** ). Para obtener más información acerca de los roles y los grupos de roles del centro de seguridad & cumplimiento, consulte [Permissions in the Office 365 security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-Los grupos de funciones de seguridad & cumplimiento que conceden permisos para administrar la cuarentena son los siguientes:
+Los grupos de funciones de seguridad & cumplimiento que conceden permisos para administrar la cuarentena de forma predeterminada son los siguientes:
+
+- **Administración** de la organización (administradores globales)
 
 - **Administrador de cuarentena**
 

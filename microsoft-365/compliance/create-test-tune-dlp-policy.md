@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
-ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fe075c004c397baa2ed568a56c9d675cdd788857
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866362"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021976"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -101,7 +101,7 @@ Para demostrar la detección de TFN de forma bastante predecible, un correo elec
 
 ![Número de archivo de impuestos de Australia que no pasa la suma de comprobación](media/DLP-create-test-tune-email-test1.png)
 
-En comparación, un correo electrónico con las palabras "número de archivo de impuestos" y un TFN válido que pase la suma de comprobación activará la Directiva. Para el registro, el TFN que estoy usando se ha tomado de un sitio web que genera un TFNs válido, pero no genuino. Hay sitios similares que generan [números de tarjeta de crédito válidos pero falsos](https://www.fakecreditcardgenerator.net/). Estos sitios son muy útiles porque uno de los errores más comunes al probar una directiva DLP es usar un número falso que no es válido y no pasa la suma de comprobación (y, por lo tanto, no desencadena la Directiva).
+En comparación, un correo electrónico con las palabras "número de archivo de impuestos" y un TFN válido que pase la suma de comprobación activará la Directiva. Para el registro, el TFN que estoy usando se ha tomado de un sitio web que genera un TFNs válido, pero no genuino. Estos sitios son muy útiles porque uno de los errores más comunes al probar una directiva DLP es usar un número falso que no es válido y no pasa la suma de comprobación (y, por lo tanto, no desencadena la Directiva).
 
 ![Número de archivo de impuestos de Australia que pasa la suma de comprobación](media/DLP-create-test-tune-email-test2.png)
 
@@ -177,7 +177,6 @@ El usuario puede informar del falso positivo y el administrador puede comprobar 
 
 El caso de la licencia de conducir es un buen ejemplo para profundizar. La razón por la que se ha producido este falso positivo es que el tipo "licencia de conductor australiano" se desencadenará por cualquier cadena de 9 dígitos (incluso la que forme parte de una cadena de 10 dígitos), dentro de 300 caracteres de proximidad a las palabras clave "Sydney NSW" (no distingue entre mayúsculas y minúsculas). Por lo tanto, se desencadena por el número de teléfono y la firma de correo electrónico, solo porque el usuario se encuentra en Sydney.
 
-Curiosamente, si "Sydney, NSW" tiene una coma, la Directiva DLP no se desencadena. No tengo la idea de por qué una coma tiene alguna diferencia, ni por qué otras ciudades y Estados de Australia no se incluyen en las palabras clave para el tipo de información de licencia de la conducción australiano, pero ahí va. Por lo tanto, ¿qué podemos hacer al respecto? Hay un par de opciones.
 
 Una opción es quitar el tipo de información de licencia de la conducción australiano de la Directiva. Está ahí porque forma parte de la plantilla de directiva DLP, pero no se ve obligado a usarlo. Si solo está interesado en los números de archivo de impuestos y no en las licencias de conducir, basta con quitarlos. Por ejemplo, puede quitarla de la regla de volumen bajo de la Directiva, pero déjela en la regla de volumen alto para que se sigan detectando las listas de licencias de varios impulsores.
 
@@ -191,7 +190,7 @@ Además de cambiar el recuento de instancias, también puede ajustar la precisi�
 
 Por último, si desea que sea un poco más avanzada, puede personalizar cualquier tipo de información confidencial (por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave de la [licencia de conducción de Australia](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)) para eliminar el falso positivo que se ha activado. Para obtener información sobre cómo hacerlo con XML y PowerShell, vea este tema sobre la [Personalización de un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md).
 
-## <a name="turn-off-a-dlp-policy"></a>Desactivar una directiva DLP
+## <a name="turn-on-a-dlp-policy"></a>Activar una directiva DLP
 
 Cuando esté satisfecho de que su Directiva de DLP detecte de forma precisa y eficaz los tipos de información confidencial, y de que los usuarios finales estén preparados para tratar con las directivas que se encuentran en vigor, puede habilitar la Directiva.
 

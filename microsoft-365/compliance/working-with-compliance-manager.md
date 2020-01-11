@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 556d3994241db65b70feec55ac0f96469f549361
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo relacionadas con los productos de Microsoft.
+ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962257"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41022016"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -30,11 +30,11 @@ Para obtener acceso al Administrador de cumplimiento, vaya al Portal de confianz
   
 1. Vaya a [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
 
-2. Inicie sesión con su cuenta de servicio de Microsoft. Esta es la cuenta de usuario de Office 365, Microsoft 365 o Azure Active Directory (Azure AD).
+2. Inicie sesión con su cuenta de servicio de Microsoft, que es la cuenta de usuario de Office 365, Microsoft 365 o Azure Active Directory (Azure AD).
 
-3. En el portal de confianza de servicios, seleccione **Administrador de cumplimiento**. Esta es la versión preliminar del administrador de cumplimiento. El **Administrador de cumplimiento (clásico)** es el vínculo a la versión anterior del administrador de cumplimiento.
+3. En el portal de confianza de servicios, se recomienda seleccionar el **Administrador de cumplimiento**, que es la versión preliminar con las características más recientes. El **Administrador de cumplimiento (clásico)** le lleva a la versión anterior del administrador de cumplimiento.
 
-4. Cuando se muestre el acuerdo de no divulgación, léalo y seleccione **Aceptar** para continuar. Debe aceptar una vez y, a continuación, se muestra el panel del administrador de cumplimiento.
+4. Cuando se muestre el acuerdo de no divulgación, léalo y seleccione **Aceptar**, que muestra el panel del administrador de cumplimiento.
 
 Para comenzar, aparece una evaluación ISO/IEC 27001:2103 para Office 365 de forma predeterminada para su organización.
 
@@ -84,25 +84,40 @@ Las actualizaciones de calificaciones seguras se pueden activar automáticamente
 
 ## <a name="groups"></a>Grupos
 
-Los grupos le permiten organizar de manera lógica evaluaciones y compartir información común y tareas de flujo de trabajo entre evaluaciones que tienen los mismos controles administrados por el cliente u otros relacionados. Puede agrupar evaluaciones por año, estándar, servicio, equipo, división o agencias dentro de su organización para minimizar las acciones administradas por el cliente:
+Los grupos son contenedores que permiten organizar las evaluaciones y compartir información común y tareas de flujo de trabajo entre evaluaciones que tienen los mismos controles administrados por el cliente u otros relacionados.
+
+Puede agrupar las evaluaciones de forma lógica para usted, como por año, estándar, servicio o basándose en los equipos, las divisiones o las regiones geográficas de su organización. A continuación se muestran ejemplos de dos grupos y sus evaluaciones subyacentes:
   
-- **FFIEC es evaluaciones 2019**
+- **FFIEC es evaluaciones 2020**
   - Office 365 + FFIEC es
   - Intune + FFIEC es
 - **Evaluaciones de privacidad y seguridad de los datos**
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
-Al crear una nueva evaluación, debe crear un nuevo grupo para la evaluación o asignar la evaluación a un grupo existente. No se pueden crear grupos como entidades independientes. Se recomienda que determine una estrategia de agrupación para su organización *antes* de agregar nuevas evaluaciones. De forma predeterminada, hay disponible un grupo denominado "grupo predeterminado" para las evaluaciones iniciales. Los grupos no tienen ninguna propiedad de seguridad. Todos los permisos están asociados con evaluaciones.
+> [!NOTE]
+> Le recomendamos que determine una estrategia de agrupación para su organización *antes* de agregar nuevas evaluaciones. De forma predeterminada, hay disponible un grupo denominado "grupo predeterminado" para las evaluaciones iniciales.
 
-Cuando trabaje con grupos, recuerde lo siguiente:
+### <a name="how-to-create-a-group"></a>Cómo crear un grupo
+
+No se pueden crear grupos como entidades independientes. Un grupo siempre debe contener al menos una evaluación, por lo que, para poder crear un grupo, primero debe crear una evaluación para colocarla en el grupo. Siga los pasos siguientes para crear un grupo:
+
+1. Cree una nueva evaluación seleccionando **+ Agregar evaluación** cerca de la parte superior del panel.
+2. En el panel desplegable **evaluación** , escriba un título para la evaluación y seleccione una plantilla en el menú desplegable.
+3. En **Seleccione un grupo o agregue un nuevo grupo**, seleccione **Agregar un nuevo grupo** y escriba el nombre del grupo en el campo siguiente.
+4. Para copiar la información de un grupo existente, active la opción **¿desea copiar los datos de un grupo existente?** a **activado.** Seleccione el grupo que desea copiar en el menú desplegable que hay debajo y active las casillas de verificación de los campos que desee aplicar a la nueva evaluación en el nuevo grupo.
+5. Haga clic en **Guardar**. Cuando haya finalizado, el panel de control flotante se cerrará y el nuevo grupo se mostrará automáticamente en el panel.
+
+Qué se debe saber al trabajar con grupos:
   
-- Los controles de evaluación relacionados en diferentes evaluaciones dentro del mismo grupo se actualizan automáticamente cuando se completan.
-- Los nuevos grupos pueden copiar información de un grupo existente al crear una nueva evaluación. Toda la información agregada a los detalles de implementación y los campos de respuesta de administración y plan de pruebas de los controles administrados por el cliente desde las evaluaciones en el grupo desde el que está copiando se copian en los mismos controles administrados por el cliente (o relacionados) en el nuevo Revisión. Si está agregando una nueva evaluación a un grupo existente, la información común de las evaluaciones de ese grupo se copia en la nueva evaluación.
 - Los nombres de grupo (también denominados *identificadores de grupo*) deben ser únicos dentro de la organización.
-- Los grupos pueden contener evaluaciones para la misma certificación o regla, pero cada grupo solo puede contener una evaluación para un par de certificación o servicio en la nube específico. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 y NIST CSF. Un grupo puede contener varias evaluaciones para el mismo servicio en la nube solo si la certificación o la regla correspondiente para cada uno es diferente.
-- Una vez que se ha agregado una evaluación a un grupo de evaluación, no se puede cambiar la agrupación. Puede cambiar el nombre del grupo de evaluación, que cambia el nombre del grupo de evaluación para todas las evaluaciones asociadas con ese grupo. Puede crear una evaluación y un grupo de evaluaciones, y copiar la información de una evaluación existente, lo que creará un duplicado de esa evaluación y otro grupo de evaluaciones.
-- El archivado de una evaluación rompe la relación entre esa evaluación y el grupo. Cualquier otra actualización de evaluaciones relacionadas no se verá reflejada en la evaluación archivada.
+- Los grupos no tienen ninguna propiedad de seguridad. Todos los permisos están asociados con evaluaciones.
+- Una vez que agregue una evaluación a un grupo, no se podrá cambiar la agrupación. Puede cambiar el nombre del grupo de evaluación, que cambia el nombre del grupo de evaluación para todas las evaluaciones asociadas con ese grupo.
+- Los controles de evaluación relacionados en diferentes evaluaciones dentro del mismo grupo se actualizan automáticamente cuando se completan.
+- Si agrega una nueva evaluación a un grupo existente, la información común de las evaluaciones de ese grupo se copia en la nueva evaluación.
+- Los grupos pueden contener evaluaciones para la misma certificación o reglamentación, pero cada grupo solo puede contener una evaluación para un par de certificación de producto específico. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 y NIST CSF. Un grupo puede contener varias evaluaciones para el mismo producto solo si la certificación o el Reglamento correspondiente para cada uno es diferente.
+- La ocultación de una evaluación rompe la relación entre esa evaluación y el grupo. Las actualizaciones adicionales a otras evaluaciones relacionadas ya no se reflejan en la evaluación oculta. ([Obtenga información sobre cómo ocultar evaluaciones).](#hide-a-template-or-an-assessment)
+- No se pueden eliminar los grupos.
 
 ## <a name="tenant-management"></a>Administración de inquilinos
 
@@ -157,7 +172,7 @@ De un solo vistazo, puede ver el título, el propietario, la categoría, el cump
 
 1. Seleccione los puntos suspensivos (...) de la acción que desea modificar y seleccione **Editar**.
 2. Alterne el conmutador de la actualización continua de puntuación segura en activado o desactivado para habilitar o deshabilitar la supervisión continua mediante la puntuación segura.
-3. Seleccione **Guardar**.
+3. Haga clic en **Guardar**.
 
 Cuando las organizaciones implementan por primera vez Microsoft 365 u Office 365, la puntuación segura tarda aproximadamente siete días en completarse en recopilar datos y factorizar la puntuación. Durante este tiempo, la configuración de la opción de actualización continua de puntuación segura como **desactivada** y la configuración manual de una acción para **implementada** contará esa acción hacia su puntuación. Después de los siete días iniciales, al desactivar la actualización continua de la actualización segura, se habilitará la supervisión continua a partir de ese momento.
 

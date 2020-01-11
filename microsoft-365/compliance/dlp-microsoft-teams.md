@@ -13,19 +13,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 9c8c122a84a739a0cc2942f63ff319121510415b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a13d44ab3cff777ee8ed4610d746c3649bf558
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091734"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022365"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
 > [!NOTE]
-> Las capacidades de prevención de pérdida de datos se han agregado recientemente a los mensajes de chat y de canal de Microsoft Teams para los usuarios con licencia de Office 365 Advanced Compliance, que está disponible como opción independiente y se incluye en Office 365 E5 y el cumplimiento de Microsoft 365 E5. Office 365 y Microsoft 365 E3 incluyen la protección DLP para SharePoint Online, OneDrive y Exchange Online. Esto también incluye los archivos que se comparten a través de Teams, ya que Microsoft Teams usa SharePoint Online y OneDrive para compartir archivos.
+> Las funciones de prevención de pérdida de datos se han agregado recientemente a los mensajes de conversaciones y canales de Microsoft Teams para usuarios con licencia de Cumplimiento avanzado de Office 365, que está disponible como opción independiente y se incluye en Cumplimiento de Microsoft 365 E5 y Office 365 E5. Office 365 y Microsoft 365 E3 incluyen la protección DLP para SharePoint Online, OneDrive y Exchange Online. Esto también incluye los archivos que se comparten a través de Teams, ya que Microsoft Teams usa SharePoint Online y OneDrive para compartir archivos.
 La compatibilidad con la protección DLP en el chat de Microsoft Teams requiere E5.
-Para obtener más información sobre los requisitos de licencia, consulte la [Guía de licencias de servicios en el nivel de inquilino de 365 de Microsoft](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+Para obtener más información sobre los requisitos de licencias, consulte [Instrucciones de licencias de Microsoft 365 de el nivel de espacio empresarial](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Información general de DLP para Microsoft Teams
 
@@ -90,7 +90,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 5. Conserve la configuración predeterminada de todas las cuentas o especifique las cuentas que se van a incluir o excluir.
 
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
 
 Espere aproximadamente una hora para que los cambios funcionen en el centro de datos y sincronicen las cuentas de usuario.
 <!-- again, why user accounts? -->
@@ -109,6 +109,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 5. En la pestaña **elegir ubicaciones** , mantenga la configuración predeterminada de todas las ubicaciones o seleccione **permitirme elegir ubicaciones específicas**y, después, haga clic en **siguiente**.<br/>Si ha elegido ubicaciones específicas, selecciónelas para su Directiva DLP y, a continuación, elija **siguiente**.<br/>![Ubicaciones de directivas de DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Si desea asegurarse de que los documentos que contienen información confidencial no se compartan de manera inadecuada, asegúrese de que los **sitios de SharePoint** y **las cuentas de OneDrive** estén activados, junto con **los mensajes de chat y de canal de Teams**.
+    > Los canales de Microsoft Teams dependen de acuerdo con la funcionalidad de Exchange Online. Asegúrese de que la ubicación de **correo electrónico de Exchange** también está habilitada para las directivas que deben aplicarse para el contenido de los canales.  
 <br/>
 
 6. En la **pestaña Configuración de directiva** , en **personalizar el tipo de contenido que quiere proteger**, mantenga la configuración sencilla predeterminada o elija **Usar configuración avanzada**y, a continuación, elija **siguiente**. Si elige la configuración avanzada, puede crear o editar reglas para la Directiva. (Para obtener ayuda, consulte [Configuración sencilla frente a configuración avanzada](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)).

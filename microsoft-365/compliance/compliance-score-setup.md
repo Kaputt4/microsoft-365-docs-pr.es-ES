@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo iniciar sesión, configurar permisos y comprender el panel para la puntuación de cumplimiento de Microsoft, que ayuda a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 79e93a102107433ed2b493a56381bc60ca544157
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831183"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021916"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configuración de la puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -72,7 +72,7 @@ El panel de calificaciones de cumplimiento está diseñado para proporcionar una
 
 ### <a name="overall-compliance-score"></a>Puntuación de cumplimiento general
 
-La puntuación de cumplimiento, destacada en la parte superior, muestra un porcentaje basado en puntos alcanzables para completar acciones de mejora que se redirigen a normas y regulaciones clave de protección de datos. 
+La puntuación de cumplimiento, destacada en la parte superior, muestra un porcentaje basado en puntos alcanzables para completar acciones de mejora que se redirigen a normas y regulaciones clave de protección de datos.
 
 Cuando llega a la puntuación de cumplimiento por primera vez, su puntuación inicial se basa en la línea de base de protección de datos de Microsoft 365 integrada: un conjunto de controles que incluye normas y estándares comunes de la industria. Como la puntuación de cumplimiento examina el sistema de soluciones de Microsoft 365 existentes, ofrece una evaluación inicial de su postura de cumplimiento según la configuración de privacidad y seguridad que la organización habilita actualmente.
 
@@ -95,20 +95,20 @@ En esta sección se ofrece una vista más detallada de su puntuación de dos man
 
 ### <a name="filtering-your-dashboard-view"></a>Filtrar la vista del panel
 
-Puede filtrar la vista del panel para ver solo los elementos relacionados con normas, soluciones, tipo de acción, grupos o categorías de protección de datos en particular. Filtrar la vista de esta manera también filtrará la puntuación en el panel, indicando cuántos puntos ha obtenido del total de puntos posibles en función de los criterios del filtro.
+Puede filtrar la vista del panel para ver solo los elementos relacionados con las normativas y normas particulares, las soluciones, el tipo de acción, los [grupos de evaluaciones que configure](working-with-compliance-manager.md#groups)o las categorías de protección de datos. Filtrar la vista de esta manera también filtrará la puntuación en el panel, indicando cuántos puntos ha obtenido del total de puntos posibles en función de los criterios del filtro.
 
 Para aplicar filtros:
 
 1. Seleccione **filtrar** en la parte superior derecha del panel.
 2. Seleccione los criterios de filtro en el panel de **filtros** de FLYOUT y seleccione **aplicar**.
 
-Verá que su puntuación se ha ajustado en tiempo real y solo verá acciones de mejora, soluciones e información de desglose de puntuación que corresponda a sus criterios de filtro. Si sale de la puntuación de cumplimiento, la vista filtrada permanecerá cuando vuelva a iniciar sesión.
+Una vez aplicado un filtro, verá ajustado su puntuación en tiempo real. El porcentaje de puntuación de cumplimiento e información desglosada, y las acciones y soluciones de mejora, ahora solo pertenecen a los datos cubiertos por los criterios de filtro. Si sale de la puntuación de cumplimiento, la vista filtrada permanecerá cuando vuelva a iniciar sesión.
 
 Para quitar filtros:
 
 - En el encabezado de **filtros aplicados** encima de la puntuación de cumplimiento, seleccione la **X** junto al filtro individual que quiera quitar; o
 - Seleccione **filtrar** en la parte superior derecha del panel y, a continuación, seleccione **Borrar filtros**.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Visite [trabajar con la puntuación de cumplimiento](working-with-compliance-score.md) para comprender el flujo de trabajo de cómo emprender acciones para mejorar su puntuación.

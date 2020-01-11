@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre la puntuación de cumplimiento de Microsoft, que ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: bc0ddfe71a3de2bbfa2c9c9a0fdc507a540daf90
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "39625425"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021986"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Preguntas más frecuentes sobre la puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -41,7 +41,7 @@ La puntuación de cumplimiento y el administrador de cumplimiento comparten el m
 
 La puntuación de cumplimiento es útil para todos los usuarios de la organización que desempeñan un papel en la supervisión del cumplimiento y la realización de actividades para cumplir con los estándares normativos. Con la puntuación de cumplimiento, no es necesario estar familiarizado con las regulaciones y los estándares para ayudar a mejorar la protección de datos de su organización. La puntuación de cumplimiento es el punto de partida óptimo para todos los usuarios. Desde aquí, puede ver la puntuación de cumplimiento, saber qué acciones recomendadas pueden ayudar a minimizar los riesgos y, en muchos casos, iniciar directamente en las soluciones para llevar a cabo esas acciones.
 
-Por ahora, el administrador de cumplimiento es el lugar en el que los usuarios pueden administrar las evaluaciones y crear plantillas personalizadas para compilar evaluaciones. Obtenga más información sobre [qué acciones solo admite el administrador de cumplimiento durante la](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship) versión preliminar pública.
+Por ahora, el administrador de cumplimiento es el lugar en el que los usuarios pueden administrar las evaluaciones y crear plantillas personalizadas para compilar evaluaciones. Obtenga más información sobre [qué acciones solo admite el administrador de cumplimiento durante la](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) versión preliminar pública.
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Si tengo una puntuación alta, ¿significa que estoy completamente conforme?
 
