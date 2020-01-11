@@ -1,9 +1,9 @@
 ---
-title: Ver informes para la protección contra amenazas avanzada de Office 365
+title: Ver informes sobre la protección contra amenazas avanzada de Office 365, informes de malware, informes de Phish, cuentas comprometidas, estado de protección de URL, informes de amenazas, amenazas de informes
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 01/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo buscar y usar informes de la protección contra amenazas avanzada de Office &amp; 365 en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 9ad177e96184913be61e098a1aafa294a123199b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+description: Busque y use informes de la protección contra amenazas avanzada de Office 365 &amp; en el centro de seguridad y cumplimiento.
+ms.openlocfilehash: a03fc9e14017255faf8c1c7f58cf2baa65823962
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866412"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022405"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
 
@@ -41,7 +41,27 @@ Lea este artículo para obtener información general sobre los informes de ATP y
 
 El informe de **Estado de protección contra amenazas** es una vista única que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) y [Office 365 ATP](office-365-atp.md). Este informe es útil para ver las detecciones a lo largo del tiempo (hasta 90 días) y permite a los administradores de seguridad identificar las tendencias o determinar si las directivas necesitan ajustes. 
 
-El informe de estado de protección contra amenazas proporciona un recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado, como archivos o direcciones de sitios web (URL) bloqueados por el motor antimalware, la [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md)y las características de ATP como los [vínculos seguros ATP](atp-safe-links.md), los [datos adjuntos seguros ATP](atp-safe-attachments.md)y las [funcionalidades antiphishing de ATP](atp-anti-phishing.md). 
+El informe proporciona un recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado, como archivos o direcciones de sitios web (URL) bloqueados por el motor antimalware, [purgado automático de cero horas (ZAP)](zero-hour-auto-purge.md)y características de ATP como los [vínculos seguros](atp-safe-links.md)ATP, los [datos adjuntos seguros ATP](atp-safe-attachments.md)y las [funcionalidades antiphishing de](atp-anti-phishing.md)ATP. 
+
+Los filtros y los desgloses de la información permiten clasificaciones más detalladas de la información de este informe. En concreto, se incluye un menú de "desglosar por" para *correo electrónico >* las vistas de phishing y de *correo electrónico > malware*. Se desglosarán los datos en:
+
+| |  |
+|---------|---------|
+|Por tipo de detección    | ¿Qué directiva ayudó a detectar estas amenazas?         |
+|Por tecnología de detección     | ¿Qué tecnología subyacente de Microsoft capturó la amenaza?        |
+|Por estado de entrega     | ¿Qué ocurrió con los mensajes de correo electrónico detectados como amenazas?         |
+| | |
+
+> [!TIP]
+> El correo electrónico > phish | Las vistas de malware tienen desgloses granulares para las tecnologías de detección que se muestran, con categorías como *la reputación de archivo generado por ATP*, la *detonación de archivos*, la *detonación de dirección URL*, *anti-falseamiento: error de DMARC*, por ejemplo, útil para indicar exactamente qué característica condujo a su organización para que detecte las amenazas.
+
+![Informe de estado de protección contra amenazas desplegable que muestra ' dividir por '.](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+
+Estas vistas le ofrecen la opción de exportar, mediante un clic de botón (en correo electrónico > phish, correo electrónico > malware y vistas de contenido > malware). Los datos agregados exportados a su equipo se pueden abrir en Excel.
+
+![Este gráfico muestra exportar como una opción en el menú para la vista de malware, directamente entre crear programación y solicitar informe.](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+En las vistas información general y mensajes de correo electrónico se muestra información en horas de procesamiento, en lugar de en 24 horas (demanda re. la velocidad aumentada aquí ha sido una señal clara).
 
 > [!NOTE]
 > Un informe de estado de protección contra amenazas está disponible para los clientes que tengan [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](exchange-online-protection-eop.md) (EOP); sin embargo, la información que se muestra en el informe de estado de la protección contra amenazas para los clientes de ATP probablemente contendrá distintos datos de los que pueden ver los clientes de EOP. Por ejemplo, el informe de estado de protección contra amenazas para los clientes de ATP contendrá información sobre [los archivos malintencionados detectados en SharePoint Online, OneDrive o Microsoft Teams](atp-for-spo-odb-and-teams.md). Esta información es específica de ATP, por lo que los clientes que tengan EOP pero no ATP no verán los detalles en el informe de estado de protección contra amenazas.
@@ -61,7 +81,28 @@ De forma predeterminada, el informe de estado de protección contra amenazas mue
 También puede usar el menú **ver datos por** para cambiar la información que se muestra en el informe. 
   
 ![Visualización de opciones del informe de estado de protección contra amenazas ATP](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
-  
+
+## <a name="url-protection-status-report"></a>Informe de estado de protección de URL
+
+Este informe se basa en datos recopilados y se detectan amenazas, por clic (mientras que la mayoría de los informes relacionados con amenazas de correo electrónico son por datos de mensaje). Este informe está diseñado para mostrar las amenazas que provienen de hipervínculos en mensajes de correo electrónico y documentos, por clic. Hay dos vistas:
+
+|  |  |
+|---------|---------|
+|Acción de clic de dirección URL en protección   | Vea el número de direcciones URL bloqueadas, bloqueadas pero reemplazadas por un usuario con un clic que se ha reemplazado con un clic por un usuario y permitido.        |
+|Dirección URL haga clic por aplicación     | Vea la aplicación desde la que se hizo clic en la dirección URL.        |
+|  |  |
+
+En la tabla de detalles, podrá ver más información acerca de la hora de clic y la información del usuario. Por último, tenga en cuenta que el informe de estado de protección de URL muestra la protección de la característica de vínculos seguros de ATP, de modo que solo los clientes que hayan habilitado vínculos seguros de ATP verán los datos reflejados en este informe.
+
+> [!NOTE]
+> Se trata de un *Informe de tendencias de protección*, lo que significa que los datos representan tendencias en un conjunto de datos más grande. Los informes no están disponibles en tiempo real aquí. Para la URL en tiempo real, haga clic en datos, siga usando el seguimiento de la dirección URL.
+
+## <a name="compromised-users-report"></a>Informe de usuarios comprometidos
+
+Este informe, disponible para todos los usuarios con Exchange Online Protection, muestra el número de cuentas de usuario marcadas como usuarios sospechosos o restringidos, datos particularmente útiles como cuentas especifique cualquiera de los Estados que indican que la cuenta de usuario puede ser problemática o incluso en peligro. Con el uso frecuente, el informe de usuario comprometida puede detectar picos, e incluso tendencias, en cuentas marcadas en Estados sospechosos o restringidos, lo que demuestra que puede haber un problema con la seguridad y el bienestar del espacio empresarial.
+
+![Los usuarios comprometedores se notifican como aparecen en Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="atp-file-types-report"></a>Informe de tipos de archivos de ATP
 
 El informe de **tipos de archivo de ATP** muestra el tipo de archivos que los [datos adjuntos seguros de ATP](atp-safe-attachments.md)han detectado como malintencionados.
@@ -114,7 +155,7 @@ Para poder ver y usar los informes descritos en este artículo, **debe tener asi
     - Rol Destinatarios con permiso de vista
     - Administración de cumplimiento
 
-Para obtener más información, consulte los siguientes recursos:
+Para obtener más información, vea los siguientes recursos:
 
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
