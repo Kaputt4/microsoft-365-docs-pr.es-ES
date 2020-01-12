@@ -3,7 +3,7 @@ title: Información general de etiquetas de confidencialidad
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 01/06/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger su contenido confidencial, a la vez que se asegura de que la productividad y la capacidad de colaboración de su personal no se vea obstaculizada. Puede utilizar etiquetas de confidencialidad para aplicar configuraciones de protección que incluyan el cifrado y las marcas de agua en el contenido etiquetado.
-ms.openlocfilehash: 465b22b7d57718e5b1f38951804d2f76c10ebb3f
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962349"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023354"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
 Para realizar su trabajo, las personas de su organización colaboran con otras tanto dentro como fuera de la organización. Esto significa que el contenido ya no se queda detrás de un firewall, sino que puede desplazarse a todas partes, a través de dispositivos, aplicaciones y servicios. Y cuando se desplaza, usted quiere que lo haga de una forma segura y protegida que cumpla con las directivas empresariales y de cumplimiento de normas de su organización.
 
 Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios.
+
+> [!NOTE]
+> Las etiquetas de sensibilidad no están disponibles en la Government Community (GCC) de EE. UU.
 
 Ejemplo de etiquetas de confidencialidad:
 
@@ -102,9 +105,9 @@ Todas estas opciones están disponibles cuando se crea una etiqueta de confidenc
 
 Al crear las etiquetas de confidencialidad en el centro de administración, éstas aparecen en una lista en la pestaña **Confidencialidad** en la página de **Etiquetas**. En esta lista, el orden de las etiquetas es importante, ya que refleja su prioridad. Quiere que la etiqueta de confidencialidad más restrictiva, como la Extremadamente confidencial, aparezca en la **parte inferior** de la lista y la etiqueta de confidencialidad menos restrictiva, como la Pública, aparezca en la **parte superior**.
 
-Puede aplicar una sola etiqueta de confidencialidad a un documento o correo electrónico. Si exige a los usuarios justificar cambiar la etiqueta a una clasificación inferior, el orden de esta lista identifica las clasificaciones más bajas.
+Puede aplicar una sola etiqueta de confidencialidad a un documento o correo electrónico. Si configura una opción que exige a los usuarios proporcionar una justificación para cambiar una etiqueta a una clasificación inferior, el orden de esta lista identifica las clasificaciones más bajas. Sin embargo, esta opción no se aplica a las subetiquetas.
 
-La prioridad de la etiqueta también se aplica a las sub etiquetas.
+Aunque, el orden de las subetiquetas se usa en el [ etiquetado automático](apply-sensitivity-label-automatically.md). Cuando configure etiquetas para aplicarlas automáticamente o como recomendación, pueden producirse varias coincidencias para más de una etiqueta. Para determinar la etiqueta que se va a aplicar o recomendar, se usa el orden de las etiquetas: se selecciona la última etiqueta de confidencialidad y, a continuación, si procede, la última subetiqueta.
 
 ![Opción para crear una subetiqueta](media/Sensitivity-label-sublabel-options.png)
 
@@ -189,11 +192,7 @@ Aquí se muestran los pasos básicos que llevan a cabo el administrador, el usua
 
 ## <a name="where-sensitivity-labels-can-appear"></a>Dónde pueden aparecer las etiquetas de confidencialidad
 
-Las etiquetas de confidencialidad aparecen en la interfaz de usuario de las aplicaciones de Office. Para ver la disponibilidad actual del etiquetado incorporado para aplicaciones y plataformas específicas, utilice las siguientes tablas:
-
-- [Compatibilidad con las capacidades de las etiquetas de confidencialidad en Word, Excel y PowerPoint](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-
-- [Soporte para las capacidades de etiquetas de confidencialidad en Outlook](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
+Las etiquetas de confidencialidad aparecen en el interfaz de usuario de las aplicaciones de Office, y pueden seleccionarse desde el botón **Confidencialidad** en la pestaña Inicio de la cinta. Para ver la disponibilidad actual del etiquetado incorporado para aplicaciones y plataformas específicas, vea [ Soporte técnico para las funciones de etiqueta de confidencialidad en aplicaciones](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 Si utiliza el cliente de etiquetado unificado de Azure Information Protection para sus equipos de Windows, hay disponibles características adicionales para las etiquetas de confidencialidad. Para más información, consulte [Compare los clientes de etiquetado para equipos con Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -240,10 +239,7 @@ Los usuarios de Azure Information Protection pueden clasificar y etiquetar el co
 - Mantener las etiquetas existentes de Azure Information Protection en documentos y correos electrónicos.
 - Mantener la configuración de etiquetas existente de Azure Information Protection.
 
-Si utiliza etiquetas de protección de información azul porque su inquilino aún no está en la[ plataforma de etiquetado unificado](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), le recomendamos que evite crear nuevas etiquetas en otros centros de administración hasta que active el etiquetado unificado. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de protección de información azul a etiquetas de sensibilidad unificadas](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). 
-
-> [!NOTE]
-> La gestión de etiquetas para las etiquetas de protección de información de Azure en el portal de Azure está siendo desaprobada **31 de marzo de 2021**. Más información en la página oficial [notificación de desaprobación](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108).
+Si utiliza etiquetas de protección de información azul porque su inquilino aún no está en la[ plataforma de etiquetado unificado](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), le recomendamos que evite crear nuevas etiquetas en otros centros de administración hasta que active el etiquetado unificado. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de protección de información azul a etiquetas de sensibilidad unificadas](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>Etiquetas de confidencialidad y el cliente de Azure Information Protection
 
