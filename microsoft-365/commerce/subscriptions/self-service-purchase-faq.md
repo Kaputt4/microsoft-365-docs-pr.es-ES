@@ -13,17 +13,19 @@ search.appverid:
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre las compras de autoservicio.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: d8edca60687a269c062f44a23500b204b965863c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8671492680eba730bf123036a4bb347d055f686d
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806243"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120161"
 ---
 # <a name="self-service-purchase-faq"></a>Preguntas más frecuentes sobre las compras sin asistencia
 
 > [!NOTE]
 > La información de este artículo solo se aplica a las suscripciones de Microsoft Power Platform (Power BI, Power apps y Power Automate).
+
+Las compras de autoservicio ahora están disponibles para Power BI en Estados Unidos.
 
 ## <a name="general"></a>General
 
@@ -39,9 +41,9 @@ A partir del 14 de enero de 2020, las capacidades de administración de licencia
 
 En el mundo actual, los usuarios finales y los departamentos están buscando cada vez más soluciones tecnológicas por su cuenta. Hemos recibido varias solicitudes de estos clientes para habilitar la compra de autoservicio de los productos de la plataforma de energía. Estamos respondiendo a la necesidad de este cliente y también equilibra las necesidades de los administradores de ti, que a menudo pierden visibilidad y control cuando los usuarios de su organización adoptan soluciones de terceros sin su conocimiento. Con la próxima funcionalidad de autoservicio para los productos de la plataforma de energía, los administradores de ti tendrán una visibilidad completa de todas las compras de autoservicio en su organización, y las directivas de gobierno de datos establecidas en el nivel de la organización se acumularán en suscripciones adquiridas a través de Self-Service. Los administradores también pueden asignar licencias existentes, o comprar suscripciones adicionales, de productos de plataforma de alimentación a través de acuerdos existentes y precios para los usuarios asignados a las compras de autoservicio. Después de asignar estas licencias adquiridas de forma centralizada, los administradores pueden solicitar que los compradores cancelen sus suscripciones existentes. Microsoft está investigando formas de simplificar y simplificar este proceso para administradores en el futuro.
 
-### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>¿Cuándo estará disponible la compra de autoservicio para los productos de la plataforma de energía?
+### <a name="which-power-platform-products-are-available-for-self-service-purchase"></a>¿Qué productos de la plataforma de energía están disponibles para la compra de servicio sin ayuda?
 
-Microsoft está iniciando la compra de autoservicio para Power BI el 14 de enero de 2020 a los clientes de Estados Unidos, y los mercados adicionales estarán disponibles en los próximos meses. Las aplicaciones de energía y la automatización de energía se agregarán en las siguientes semanas. Esta capacidad no estará disponible para los inquilinos de Estados Unidos, en los que se encuentren administración pública, ONG o educación, en este momento.
+Microsoft ha lanzado la compra de autoservicio para Power BI para los clientes de los Estados Unidos, y los mercados adicionales están disponibles en los próximos meses. Power apps and Power Automatics se agregará a los clientes de los Estados Unidos el 28 de enero de 2020. Esta capacidad no estará disponible para los inquilinos de Estados Unidos, en los que se encuentren administración pública, ONG o educación, en este momento.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>¿Se habilitará la compra de autoservicio para los servicios más allá de los productos de la plataforma de energía?
 
