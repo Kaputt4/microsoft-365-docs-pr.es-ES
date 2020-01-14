@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: ad9659799494a3aaad4a3436b263ebcfd2b56d1c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959559"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112504"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorización provisional del Departamento de defensa (DoD) de Estados Unidos en los niveles 2, 4 y 5 de impacto
 
@@ -36,7 +36,7 @@ Los servicios en la nube de Microsoft Government satisfacen los exigentes requis
 - Obtenga información sobre las ventajas de DoD DISA L2, L4 y L5 en la nube de Microsoft: [descargar el fondo de DISA del Departamento de defensa](https://aka.ms/disa-backgrounder)
 - Obtenga información acerca de cómo acelerar la implementación de DoD DISA L2, L4 y L5 con nuestro Blueprint de Azure Security y Compliance: [descargar las implementaciones de control de seguridad de nivel 5 de Azure DoD](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
 
-## <a name="dod-impact-level-5-provisional-authorization"></a>[Autorización provisional nivel 5 de impacto DoD
+## <a name="dod-impact-level-5-provisional-authorization"></a>Autorización provisional de nivel 5 de impacto de DoD
 
 La compatibilidad con el servicio en la nube de DISA ha concedido un PA de nivel de impacto DoD para Microsoft Azure Government para DoD. DISA también ha concedido a Office 365 U.S. Government Defense a DoD Impact LEVEL 5 PA. El nivel de impacto 5 cubre la información no clasificada controlada (CUI) considerada por ley, otras regulaciones gubernamentales o la agencia que posee la información y necesita un mayor nivel de protección que el de nivel 4. También cubre sistemas de seguridad nacionales sin clasificar.
 

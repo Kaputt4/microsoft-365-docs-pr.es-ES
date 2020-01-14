@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 101078adea821b5ddd3d525d26a7e9dbca1e1512
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8627a46ee861751799e1175c7e030e1b28c6d935
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807379"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111893"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365-preview"></a>Configurar el cumplimiento de las comunicaciones en Microsoft 365 (versión preliminar)
 
@@ -42,7 +42,7 @@ Siga estos pasos para configurar y usar el cumplimiento de la comunicación en s
 
 - **Paso 2 (obligatorio)**: [hacer que el cumplimiento de la comunicación esté disponible en su organización](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Agregarse a sí mismo al rol de **Administrador de revisión de supervisión** para que pueda configurar directivas. También tendrá que crear un grupo con el administrador de **revisión de supervisión**, la **Administración de casos**y **revisar** roles para personas o grupos que vayan a tomar medidas de investigación y corrección en mensajes con coincidencias de directivas. Cualquiera que tenga estos roles asignados puede tener acceso a la página cumplimiento en la **comunicación** en el centro de cumplimiento de Microsoft 365. Si el correo electrónico que se puede rever está hospedado en Exchange Online, cada revisor debe tener [acceso remoto de PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Agregarse a sí mismo al rol de **Administrador de revisión de supervisión** para que pueda configurar directivas. También tendrá que crear un nuevo grupo con el administrador de **revisión de supervisión**, la **Administración de casos**y la **revisión** de roles para personas o grupos que vayan a tomar medidas de investigación y corrección en mensajes con coincidencias de directivas. Cualquiera que tenga estos roles asignados puede tener acceso a la página cumplimiento en la **comunicación** en el centro de cumplimiento de Microsoft 365. Si el correo electrónico que se puede rever está hospedado en Exchange Online, cada revisor debe tener [acceso remoto de PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Paso 3 (obligatorio)**: [configurar una directiva de cumplimiento de la comunicación](#step-3-create-a-communication-compliance-policy-required)
 
@@ -88,15 +88,17 @@ Para que el cumplimiento de la **comunicación** esté disponible como una opci�
 
 ### <a name="create-a-new-role-group"></a>Crear un nuevo grupo de roles
 
-1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización de Office 365.
+1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
 
-2. En el centro de cumplimiento de Microsoft 365, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
+2. En el centro de seguridad y cumplimiento de Microsoft Office 365, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
 
 3. Seleccione **Crear**.
 
 4. En el campo **nombre** , asigne un nombre descriptivo al nuevo grupo de roles. Seleccione **Siguiente**.
 
 5. Seleccione **elegir roles** y, después, haga clic en **Agregar**. Marque la casilla de **verificación administrador de revisión de supervisión**, administración de **casos**y **revisión**y, a continuación, seleccione **Agregar** y **listo**. Seleccione **Siguiente**.
+
+    ![Grupos de roles obligatorios de cumplimiento de comunicación](media/communication-compliance-role-groups.png)
 
 6. Seleccione **elegir miembros** y, a continuación, seleccione **Agregar**. Marque la casilla de verificación para todos los usuarios y grupos que desee que creen directivas y administre los mensajes con coincidencias de directivas y, a continuación, seleccione **Agregar** y **listo**. Seleccione **Siguiente**.
 

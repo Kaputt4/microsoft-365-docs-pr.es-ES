@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: db89e3b1f8b5b8073eab62e4b4d38087e1e73fa4
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913051"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112664"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Aplicaciones en el escritorio administrado de Microsoft
 
@@ -32,7 +32,7 @@ Con su licencia de escritorio administrado de Microsoft se incluyen las versione
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Qué hace Microsoft para admitir las aplicaciones que proporcionamos
 
-Microsoft proporcionará servicio completo para la implementación, actualización y soporte para las aplicaciones de Office 365 ProPlus incluidas. Las versiones de hacer clic y ejecutar de Microsoft Project y Visio *no* se incluyen de forma predeterminada, pero el escritorio administrado de Microsoft proporcionará grupos de implementación que permitan al administrador de ti administrar las licencias e implementarlas de forma adecuada para su Organization. Microsoft proporcionará soporte a los usuarios finales de estas aplicaciones a través de los canales de soporte técnico de Microsoft administrados para equipos de escritorio.
+Microsoft proporcionará servicio completo para la implementación, actualización y soporte para las aplicaciones de Office 365 ProPlus incluidas. Las versiones de hacer clic y ejecutar de Microsoft Project y Visio *no* se incluyen de forma predeterminada, pero el escritorio administrado de Microsoft proporcionará grupos de implementación que permitan al administrador de ti administrar las licencias e implementarlas de forma adecuada para la organización. Microsoft proporcionará soporte a los usuarios finales de estas aplicaciones a través de los canales de soporte técnico de Microsoft administrados para equipos de escritorio.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Qué necesita hacer para admitir las aplicaciones que proporcionamos
 
@@ -46,7 +46,7 @@ Todavía hay algunas cosas que debe hacer con estas aplicaciones:
 
 Por supuesto, probablemente tenga varias aplicaciones que necesita para las operaciones de la empresa. Solo se pueden implementar en dispositivos de escritorio administrados por Microsoft mediante la canalización de implementación de Microsoft Intune. Si la aplicación lo necesita, puede hacer que un proveedor lo empaquete (que puede ser un proveedor que no sea de Microsoft o un servicio de consultoría de Microsoft (MCS)) o, si tiene los medios, puede empaquetarlos usted mismo. A continuación, agregue estos paquetes al portal de escritorio administrado de Microsoft y asígnelos a los grupos de Azure Active Directory para desencadenar la implementación. 
 
-Si actualmente implementa sus aplicaciones con System Center Configuration Manager, Microsoft Managed Desktop puede proporcionarle una consulta para evaluar sus aplicaciones y detectar cuáles están listas para que se migren a Microsoft Intune y cuáles podrían requerir algún ajuste .
+Si actualmente implementa sus aplicaciones con Microsoft Endpoint Configuration Manager, Microsoft Managed Desktop puede proporcionarle una consulta para evaluar sus aplicaciones y detectar cuáles están listas para que se migren a Microsoft Intune y cuáles podrían requerir Cód.
 
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Preparar sus propias aplicaciones para su inclusión en el escritorio administrado de Microsoft
@@ -75,6 +75,6 @@ Hay tres opciones para empaquetar las aplicaciones:
 
 ## <a name="deploying-apps"></a>Implementación de aplicaciones
 
-Independientemente del método que use para obtener las aplicaciones, una vez que se haya completado, estará listo para seguir los pasos descritos en [deploy apps to Microsoft Managed Desktop](../get-started/deploy-apps.md)Devices.
+Independientemente del método que use para obtener las aplicaciones, una vez que se haya completado, estará listo para seguir los pasos descritos en [deploy apps to Microsoft Managed Desktop Devices](../get-started/deploy-apps.md).
 
 

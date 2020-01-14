@@ -14,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 8ce6e21bcc25853e641ee20126ffd38c785e76f7
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: f7fc45ca1df86fa29c6e2af69da5258fe6d564b6
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033941"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112654"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -64,8 +64,8 @@ Los detalles dependen de si la suscripción a Office 365 incluye [Exchange Onlin
 
 |Si su suscripción incluye... |Verá estos detalles |
 |---------|---------|
-|EOP pero no Office 365 ATP     |Correo electrónico malintencionado detectado y bloqueado por EOP<br> Consulte [Informe de estado de protección contra amenazas (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report).| 
-|Office 365 ATP |Contenido malintencionado y correo electrónico malintencionado detectados y bloqueados por EOP y a ATP de Office 365<br>Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, la [depuración automática de cero horas](zero-hour-auto-purge.md)y las características de ATP (incluidos [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [protección contra phishing ATP](atp-anti-phishing.md)).<br>Consulte [Informe de estado de protección contra amenazas (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
+|EOP pero no Office 365 ATP     |Correo electrónico malintencionado detectado y bloqueado por EOP<br> Consulte [Informe de estado de protección contra amenazas (EOP)](view-email-security-reports.md#threat-protection-status-report).| 
+|ATP de Office 365 |Contenido malintencionado y correo electrónico malintencionado detectados y bloqueados por EOP y a ATP de Office 365<br>Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, la [depuración automática de cero horas](zero-hour-auto-purge.md)y las características de ATP (incluidos [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [protección contra phishing ATP](atp-anti-phishing.md)).<br>Consulte [Informe de estado de protección contra amenazas (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
 
 Para ver o acceder al widget de estado de protección contra amenazas, debe tener permisos para ver los informes de protección contra amenazas avanzada. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
@@ -119,7 +119,7 @@ Para ver o acceder al widget de alertas de administración de amenazas reciente,
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento](../../compliance/view-email-security-reports.md)
+[Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento](view-email-security-reports.md)
   
 [Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md)
   

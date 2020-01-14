@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Office 365 Advanced eDiscovery v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: c0cef17acf0028472a9b92352afd51786a8ae25c
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: cb24c40cc2018fba6d1feb13ef0d6426abd2c49a
+ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970828"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41107909"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas de eDiscovery heredadas
 
@@ -59,7 +59,7 @@ En las siguientes secciones de este artículo se proporcionan instrucciones sobr
 
 De acuerdo con el anuncio original del 1 de julio de 2017, se está retirando la funcionalidad de conservación de exhibición de documentos electrónicos local & en el centro de administración de Exchange (EAC). La página suspensiones de exhibición de documentos electrónicos & local en el EAC le permite buscar, conservar y exportar contenido de Exchange Online. La exhibición de documentos electrónicos local también le permite copiar los resultados de la búsqueda en un buzón de correo de detección para que usted u otros administradores de eDiscovery puedan revisar el contenido y hacer que esté disponible para las solicitudes legales, reglamentarias y públicas.
 
-Ya están disponibles todas estas capacidades (excepto para copiar los resultados de la búsqueda en un buzón de correo de detección) en la búsqueda de contenido, las herramientas eDiscovery y de eDiscovery avanzado del [centro de cumplimiento de microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (con funcionalidad mejorada, confiabilidad y soporte para una amplia gama de servicios de Microsoft 365), le recomendamos que empiece a usar estas herramientas tan pronto como sea posible. Para ayudarle en la transición a estas otras herramientas de eDiscovery, en la tabla siguiente se enumeran las herramientas que puede usar en lugar de la exhibición de documentos electrónicos local y la conservación local.
+Debido a que todas estas capacidades (excepto la de copiar los resultados de la búsqueda en un buzón de correo de detección) ahora están disponibles en la búsqueda de contenido, las herramientas eDiscovery y eDiscovery avanzado del [centro de cumplimiento de microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (con funcionalidad, confiabilidad y soporte mejorados para una amplia gama de servicios de Microsoft 365), se recomienda empezar a usar estas herramientas tan pronto como sea posible. Para ayudarle en la transición a estas otras herramientas de eDiscovery, en la tabla siguiente se enumeran las herramientas que puede usar en lugar de la exhibición de documentos electrónicos local y la conservación local.
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
     
@@ -168,7 +168,7 @@ Como estas capacidades ahora están disponibles en el [<span class="underline">c
     
 - 1 de abril de 2020: no podrá usar **New-MailboxSearch** para crear nuevas búsquedas de exhibición de documentos electrónicos local y retenciones locales, pero todavía puede usar cmdlets para ejecutar, editar y eliminar las búsquedas y las suspensiones existentes bajo su responsabilidad. El soporte técnico de Microsoft ya no ofrece asistencia para estos tipos de búsquedas y suspensiones.
     
-- 1 de julio de 2020: como se indicó anteriormente, la funcionalidad de la exhibición de documentos electrónicos local & retiene la funcionalidad en el EAC se colocará en modo de solo lectura. Eso también significa que no podrá usar los cmdlets **New-mailboxsearch**, **Start-mailboxsearch**o **set-mailboxsearch** . Solo podrás obtener y quitar búsquedas y suspensiones existentes.
+- 1 de julio de 2020: como se indicó anteriormente, la funcionalidad de la exhibición de documentos electrónicos local & retiene la funcionalidad en el EAC se colocará en modo de solo lectura. Esto también significa que no podrá usar los cmdlets **New-mailboxsearch**, **Start-mailboxsearch**o **set-mailboxsearch** . Solo podrás obtener y quitar búsquedas y suspensiones existentes.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
 
@@ -205,7 +205,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="odd">
 <td>Copiar los resultados de la búsqueda en un buzón de detección</td>
 <td>Ninguno</td>
-<td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las siguientes preguntas más frecuentes más adelante para obtener soluciones alternativas.</td>
+<td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las preguntas más frecuentes siguientes para obtener soluciones alternativas.</td>
 </tr>
 </tbody>
 </table>
@@ -268,7 +268,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
-<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction trabajan conjuntamente para ayudarle a buscar y depurar contenido. Puede crear y ejecutar una búsqueda con los cmdlets <strong>New-compliancesearch</strong> y <strong>New-compliancesearch</strong> y, a continuación, puede purgar el contenido con <strong>New-ComplianceSearchAction-Purge y-PurgeType</strong> comando.</p>
+<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction trabajan conjuntamente para ayudarle a buscar y depurar contenido. Puede crear y ejecutar una búsqueda con los cmdlets <strong>New-compliancesearch</strong> y <strong>New-compliancesearch</strong> y, a continuación, puede purgar el contenido con el comando <strong>New-ComplianceSearchAction-Purge-PurgeType</strong> . Para obtener más información, vea <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Buscar y eliminar mensajes</span></a>.</p>
 </td>
 </tr>
 <tr class="odd">
@@ -317,7 +317,7 @@ En este momento, le recomendamos que empiece a realizar la transición del flujo
     
 - 1 de abril de 2020: no podrá crear nuevos casos de exhibición de documentos electrónicos v 1.0 avanzado.
     
-- 1 de julio de 2020: el soporte técnico de Microsoft no proporcionará soporte técnico. Consulte [esta notificación](https://go.microsoft.com/fwlink/?linkid=2113221). No podrá agregar nuevos datos (preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos) en ningún caso. Podrá seguir trabajando con los datos en casos existentes bajo su propio riesgo.
+- 1 de julio de 2020: el soporte técnico de Microsoft no proporcionará soporte técnico. Vea [esta notificación](https://go.microsoft.com/fwlink/?linkid=2113221). No podrá agregar nuevos datos (preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos) en ningún caso. Podrá seguir trabajando con los datos en casos existentes bajo su propio riesgo.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
     

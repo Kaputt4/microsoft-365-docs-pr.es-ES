@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 8d2bc20a1d429510dfcd651c6b15dc1a2a89de9d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 1d9b390cc28002b4561d61fa1d6cc411f3b135f1
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962607"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112714"
 ---
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
@@ -43,10 +43,10 @@ Microsoft Managed Desktop identifica cada dispositivo de manera única haciendo 
 
 #### <a name="configuration-manager"></a>Configuration Manager
 
-Puede usar el administrador de configuración de System Center para recopilar los hash de hardware de los dispositivos existentes que desea registrar con el escritorio administrado de Microsoft.
+Puede usar el administrador de configuración de Microsoft Endpoint para recopilar los hash de hardware de los dispositivos existentes que desee registrar con el escritorio administrado de Microsoft.
 
 > [!IMPORTANT]
-> Los dispositivos para los que quiera obtener esta información deben ejecutar Windows 10, versión 1703 o posterior. También necesita un dispositivo que sea un cliente de Configuration Manager conectado al sitio de sucursal actual de System Center. También necesita el rol de sistema del sitio del punto de informe configurado en su entorno con SQL Server Reporting Services habilitado. 
+> Los dispositivos para los que quiera obtener esta información deben ejecutar Windows 10, versión 1703 o posterior. También necesitará un dispositivo que sea un cliente de Configuration Manager conectado al sitio del administrador de configuración (rama actual). También necesita el rol de sistema del sitio del punto de informe configurado en su entorno con SQL Server Reporting Services habilitado. 
 
 Si ha cumplido todos estos requisitos previos, estará listo para recopilar la información siguiendo estos pasos:
 
@@ -148,7 +148,7 @@ Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegis
 Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
 ```
 3. Obtenga acceso a los directorios en los que haya entradas para los dispositivos. Quite las entradas de *todos los dispositivos de todos los* directorios, incluidos los servicios de dominio de Active Directory de Windows Server y Azure Active Directory. Tenga en cuenta que esta eliminación puede tardar varias horas en procesarse por completo.
-4. Acceso a servicios de administración donde es posible que haya entradas para los dispositivos. Quite las entradas de *todos los dispositivos de todos los* servicios de administración, como System Center Configuration Manager, Microsoft Intune y Windows AutoPilot. Tenga en cuenta que esta eliminación puede tardar varias horas en procesarse por completo.
+4. Acceso a servicios de administración donde es posible que haya entradas para los dispositivos. Quite las entradas de *todos los dispositivos de todos los* servicios de administración, incluidos Microsoft Endpoint Configuration Manager, Microsoft Intune y Windows AutoPilot. Tenga en cuenta que esta eliminación puede tardar varias horas en procesarse por completo.
 
 Ahora puede seguir [registrando dispositivos](#register-devices).
 

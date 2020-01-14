@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: e7a46e2fcd15a77f6fe7f1b97adf5ed26e97e0e2
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: a04d97cf887a14d89052d03ffdf3353f62cd612f
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959628"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111934"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurar directivas de supervisión en Office 365
 
@@ -123,7 +123,7 @@ Para ello, puede agregarse como miembro del grupo de funciones de revisión de s
 
 ### <a name="create-a-new-role-group"></a>Crear un nuevo grupo de roles
 
-1. Inicie sesión [https://protection.office.com](https://protection.office.com) con las credenciales de una cuenta de administrador en la organización de Office 365.
+1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Office 365.
 
 2. En el centro de seguridad y cumplimiento de Office 365, vaya a **permisos** y, después**+**, haga clic en Agregar ().
 

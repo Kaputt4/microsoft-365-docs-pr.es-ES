@@ -1,5 +1,5 @@
 ---
-title: casos de eDiscovery en el centro de seguridad & cumplimiento
+title: Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,21 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más avanzado en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: efd5d20d72794ff6f71d2b1c6858bee615b14f3a
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más adelante en eDiscovery avanzado de Office 365.
+ms.openlocfilehash: 3d5e67edf30f1b1f78e6c4992760c18d1493e108
+ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854065"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41107919"
 ---
-# <a name="ediscovery-cases-in-the-security--compliance-center"></a>casos de eDiscovery en el centro de seguridad & cumplimiento
+# <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
 Puede usar casos de eDiscovery en el centro de cumplimiento de Office 365 y Microsoft 365 para controlar quién puede crear, tener acceso y administrar casos de eDiscovery en su organización. Si su organización tiene una suscripción a Office 365 E5, también puede usar casos de exhibición de documentos electrónicos para analizar los resultados de la búsqueda con Office 365 Advanced eDiscovery.
   
 Un caso de exhibición de documentos electrónicos permite agregar miembros a un caso, controlar qué tipos de acciones pueden realizar determinados miembros del caso, colocar una suspensión en ubicaciones de contenido relevantes a un proceso legal y asociar varias búsquedas de contenido con un solo caso. También puede exportar los resultados de cualquier búsqueda de contenido que esté asociado a un caso o preparar los resultados de búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. Los casos de exhibición de documentos electrónicos son una buena manera de limitar quién puede tener acceso a los resultados de búsqueda y a las búsquedas de contenido de un caso legal específico de la organización.
   
-Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en el centro de seguridad & cumplimiento y la exhibición avanzada de documentos electrónicos.
+Use el siguiente flujo de trabajo para configurar y usar casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento y la exhibición avanzada de documentos electrónicos.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -140,7 +140,7 @@ Después de crear un caso, el siguiente paso consiste en Agregar miembros al cas
     > [!TIP]
     > Si tiene una lista grande de personas que pueden agregarse como miembros, use el cuadro de **búsqueda** para buscar una persona específica en la lista. 
   
-5. Una vez que haya seleccionado los grupos de personas o roles que desea agregar como miembros del grupo, haga clic en **Agregar**.
+5. Una vez que haya seleccionado los grupos de personas o roles que se agregarán como miembros del grupo, haga clic en **Agregar**.
     
     En **administrar este caso**, haga clic en **Guardar** para guardar la nueva lista de miembros de mayúsculas y minúsculas. 
     
@@ -148,7 +148,7 @@ Después de crear un caso, el siguiente paso consiste en Agregar miembros al cas
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Paso 4: poner las ubicaciones de contenido en retención
 
-Puede usar un caso de exhibición de documentos electrónicos para crear suspensiones con el fin de conservar el contenido que pueda ser relevante para el caso. Puede retener una retención en los buzones y en los sitios de OneDrive para la empresa de las personas que son custodios en el caso. También puede poner una retención en el buzón de grupo, el sitio de SharePoint y el sitio de OneDrive para la empresa para un grupo de Office 365. De forma similar, puede poner una retención en el buzón de correo y el sitio asociados a Microsoft Teams. Cuando se colocan ubicaciones de contenido en retención, el contenido se conserva hasta que se quita la retención de la ubicación del contenido o hasta que se elimina la suspensión.
+Puede usar un caso de exhibición de documentos electrónicos para crear suspensiones con el fin de conservar el contenido que pueda ser relevante para el caso. Puede retener una retención en los buzones y en los sitios de OneDrive para la empresa de las personas que son custodios en el caso. También puede poner una retención en el buzón de grupo, el sitio de SharePoint y el sitio de OneDrive para la empresa para un grupo de Office 365. De forma similar, puede retener una retención en los buzones de correo y sitios asociados a Microsoft Teams o a los grupos de Yammer. Cuando se colocan ubicaciones de contenido en retención, el contenido se conserva hasta que se quita la retención de la ubicación del contenido o hasta que se elimina la suspensión.
 
 > [!NOTE]
 > Después de poner una ubicación de contenido en retención, la retención tarda hasta 24 horas en surtir efecto. 
@@ -186,14 +186,14 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
     
     ![Elegir las ubicaciones de contenido para colocar en suspensión](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Correo electrónico de Exchange.** Haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   a. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
     
     > [!NOTE]
     > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda. 
-  
-   b. **Sitios de SharePoint.** Haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
+
+   b. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Haga clic en **elegir**y, a continuación, en **listo**.
     
-    Consulte la sección [More Information](#more-information) para obtener sugerencias sobre cómo poner en espera grupos de Office 365 y Microsoft Teams. 
+    Consulte la sección [más información](#more-information) para obtener sugerencias sobre cómo poner Microsoft Teams, grupos de Yammer y grupos de Office 365 en suspensión. 
     
     > [!NOTE]
     > En el caso poco probable de que se cambie el nombre principal de usuario (UPN) de una persona, también se cambiará la dirección URL de su cuenta de OneDrive para incorporar el nuevo UPN. Si esto ocurre, tendrá que modificar la retención agregando la nueva dirección URL de OneDrive del usuario y quitando la antigua. 
@@ -272,7 +272,7 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
     ![Ubicaciones, ubicaciones en suspensión](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **Todas las ubicaciones.** Seleccione esta opción para buscar en todas las ubicaciones de contenido de la organización. Si selecciona esta opción, puede elegir buscar todos los buzones de Exchange (que incluye los buzones de todos los grupos de Office 365 y Microsoft Teams), todos los sitios de SharePoint y OneDrive para la empresa (que incluye los sitios de todos los grupos de Office 365 y Microsoft Teams) y todas las carpetas públicas.
+    - **Todas las ubicaciones** : Seleccione esta opción para buscar en todas las ubicaciones de contenido de la organización. Si selecciona esta opción, puede elegir buscar todos los buzones de Exchange (que incluye los buzones de todos los grupos de Microsoft Teams, Yammer y Office 365), todos los sitios de SharePoint y OneDrive para la empresa (que incluye los sitios para todos los equipos de Microsoft Teams, grupos de Yammer y grupos de Office 365) y todas las carpetas públicas.
     
     - **Todas las ubicaciones en espera.** Seleccione esta opción para buscar en todas las ubicaciones de contenido que se encuentran en espera en el caso. Si el caso contiene varias suspensiones, las ubicaciones de contenido de todas las suspensiones se buscarán cuando seleccione esta opción. Además, si se colocó una ubicación de contenido en una suspensión basada en consulta, solo se buscará en los elementos que están en espera cuando ejecute la búsqueda de contenido que está creando en este paso. Por ejemplo, si un usuario se colocó en la suspensión de casos basada en consultas y conserva los elementos que se enviaron o crearon antes de una fecha específica, solo se buscarían en esos elementos usando los criterios de búsqueda de la búsqueda de contenido. Esto se logra conectando la consulta de suspensión de casos y la consulta de búsqueda de contenido por un operador **and** . Consulte la sección [más información](#more-information) al final de este artículo para obtener más información sobre cómo buscar contenido de casos. 
     
@@ -288,9 +288,9 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
       - Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones en los que se va a buscar, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en **elegir usuarios, grupos o equipos**, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda, active la casilla de verificación situada junto al nombre y, a continuación, haga clic en **elegir**. 
     
-      - Puede Agregar buzones inactivos, Office 365 grupos, Microsoft Teams y grupos de distribución a la lista de buzones para buscar. No se admiten grupos de distribución dinámicos. Si agrega grupos de Office 365 o Microsoft Teams, se busca el buzón de grupo o de equipo. No se busca en los buzones de los miembros del grupo.
+      - Puede Agregar buzones inactivos, Microsoft Teams, grupos de Yammer, grupos de Office 365 y grupos de distribución a la lista de buzones de correo para la búsqueda. No se admiten grupos de distribución dinámicos. Si agrega Microsoft Teams, grupos de Yammer o grupos de Office 365, se busca en el buzón de grupo o de equipo; no se busca en los buzones de los miembros del grupo.
     
-      - Para agregar sitios, haga clic en **elegir sitios**, haga clic en **elegir sitios** de nuevo y, a continuación, escriba la dirección URL de cada sitio que desee buscar. También puede Agregar la dirección URL del sitio de SharePoint para los grupos de Office 365 y Microsoft Teams. 
+      - Para agregar sitios, haga clic en **elegir sitios**, haga clic en **elegir sitios** de nuevo y, a continuación, escriba la dirección URL de cada sitio que desee buscar. También puede Agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. 
     
 10. Una vez seleccionadas las ubicaciones de contenido para buscar, haga clic en **listo** y, a continuación, en **Guardar**.
     
@@ -519,6 +519,30 @@ Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación 
     
     Una vez finalizado el proceso, el estado del caso cambia a **activo** en la página de **exhibición** de documentos electrónicos. 
   
+## <a name="optional-step-11-delete-a-case"></a>Opcional Paso 11: eliminar un caso
+
+También puede eliminar los casos activos y cerrados. Cuando se elimina un caso, se eliminan todas las búsquedas y exportaciones en el caso y se quita de la lista de casos de la página **exhibición** de documentos electrónicos del centro de seguridad & cumplimiento. No se puede volver a abrir un caso eliminado. 
+
+Antes de que pueda eliminar un caso (ya sea activo o cerrado), primero debe eliminar *todas las* suspensiones asociadas con el caso. Esto incluye la eliminación de suspensiones con el estado **desactivado**. 
+
+Para eliminar una suspensión:
+
+1. Vaya a la pestaña **suspensiones** en caso de que desee eliminar.
+
+2. Haga clic en la suspensión que desee eliminar.
+
+3. En la página flotante, haga clic en **eliminar suspensión**.
+
+Para eliminar un caso:
+
+1. En el centro de seguridad & cumplimiento, **haga clic en** \> eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
+    
+2. Haga clic en el nombre del caso que desea eliminar.
+
+3. En **administrar estado de caso** en la página flotante, haga clic en **eliminar caso**.
+
+Si el caso que está intentando eliminar todavía contiene suspensiones, recibirá un mensaje de error. Tendrá que eliminar todas las suspensiones asociadas con el caso y, a continuación, volver a intentar eliminar el caso.
+
 ## <a name="more-information"></a>Más información
 
 - **¿Hay algún límite para casos de eDiscovery o suspensiones asociados a un caso de exhibición de documentos electrónicos?** En la siguiente tabla se enumeran los límites de casos de eDiscovery y suspensiones de casos.
