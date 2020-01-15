@@ -122,9 +122,9 @@
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
                 - name: Aplicar procedimientos recomendados de consulta
                   href: mtp/advanced-hunting-best-practices.md
-            - name: Puntuación de seguridad
+            - name: Puntuación segura
               items:
-                - name: Puntuación de seguridad
+                - name: Puntuación segura
                   href: mtp/microsoft-secure-score.md
                 - name: Puntuación de seguridad (versión preliminar)
                   href: mtp/microsoft-secure-score-preview.md
@@ -412,6 +412,8 @@
               href: ./office-365-security/enable-the-report-message-add-in.md
             - name: Seguimiento de mensajes en el Centro de seguridad y cumplimiento
               href: ./office-365-security/message-trace-scc.md
+            - name: Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
+              href: ./office-365-security/view-email-security-reports.md
             - name: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
