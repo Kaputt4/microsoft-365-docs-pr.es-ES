@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Obtenga información sobre el correo electrónico y las propiedades de archivo que puede buscar en los buzones de Exchange Online y en los sitios de SharePoint o de OneDrive para la empresa mediante la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento.  '
-ms.openlocfilehash: d76f92de4b41c7f6f0494af36a7e1aee953b9896
-ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
+ms.openlocfilehash: 2d3b69090d8b19d474e2049c2082516459d18148
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911478"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123661"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido
 
@@ -328,6 +328,12 @@ En este ejemplo se devuelven mensajes de correo electrónico o reuniones del cal
   
  `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
   
+## <a name="special-characters"></a>Caracteres especiales
+
+Algunos caracteres especiales no se incluyen en el índice de búsqueda y, por lo tanto, no se pueden buscar. Esto también incluye los caracteres especiales que representan los operadores de búsqueda en la consulta de búsqueda. Esta es una lista de caracteres especiales que se reemplazan por un espacio en blanco en la consulta de búsqueda real o causan un error de búsqueda.
+
+`+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
+
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Búsqueda de contenido de sitio compartido con usuarios externos
 
 También puede usar la característica de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar documentos almacenados en SharePoint y los sitios de OneDrive para la empresa que se han compartido con usuarios fuera de la organización. Esto puede ayudarle a identificar información confidencial o de propiedad que esté compartiéndose fuera de su organización. Para ello, puede usar la `ViewableByExternalUsers` propiedad en una consulta de palabras clave. Esta propiedad devuelve documentos o sitios que se han compartido con usuarios externos mediante uno de los siguientes métodos de uso compartido: 
@@ -400,21 +406,19 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 ## <a name="search-tips-and-tricks"></a>Trucos y sugerencias de búsqueda
 
 - Las búsquedas de palabras clave no distinguen entre mayúsculas y minúsculas. Por ejemplo, tanto si escribe **gato** como **GATO**, obtendrá los mismos resultados. 
-    
-- Los operadores booleanos **and**, **or**, **Not**, **Near**y **ONEAR** deben estar en mayúsculas. 
-    
-- A space between two keywords or two  `property:value` expressions is the same as using **AND**. Por ejemplo, `from:"Sara Davis" subject:reorganization` devuelve todos los mensajes enviados por Sara Davis que contienen la palabra reorganización en la línea de asunto. 
-    
-- Use una sintaxis que coincida `property:value` con el formato. Los valores no distinguen mayúsculas de minúsculas y no pueden tener un espacio después del operador. Si hay un espacio, el valor previsto será una búsqueda de texto completo. Por ejemplo `to: pilarp` , busca "pilarp" como palabra clave, en lugar de para los mensajes que se enviaron a pilarp. 
-    
-- Al buscar una propiedad de destinatario, como Para, De, Cc o los destinatarios, puede utilizar una dirección SMTP, un alias o un nombre para mostrar para indicar un destinatario. Por ejemplo, puede utilizar pilarp@contoso.com, pilarp o "Pilar Pinilla".
-    
-- Solo puede usar la búsqueda de caracteres comodín de prefijo; por ejemplo, **CAT\* ** o **set\***. No se admiten las búsquedas de sufijos (**\*CAT**), las búsquedas infijas (**\*c t**) y las búsquedas de subcadenas (**\*CAT\***). 
-    
-- Al buscar una propiedad, use comillas dobles ("") si el valor de búsqueda consta de varias palabras. Por ejemplo `subject:budget Q1` , devuelve los mensajes que contienen **presupuesto** en la línea de asunto y que contienen el **primer trimestre** en cualquier lugar del mensaje o en cualquiera de las propiedades del mensaje. El `subject:"budget Q1"` uso de devuelve todos los mensajes que contienen **Budget Q1** en cualquier lugar de la línea de asunto. 
-    
-- Para excluir de los resultados de la búsqueda el contenido marcado con un valor de propiedad determinado, coloque un signo menos (-) delante del nombre de la propiedad. Por ejemplo, `-from:"Sara Davis"` excluye los mensajes enviados por Sara Davis.
 
-- Algunos caracteres especiales no se incluyen en el índice de búsqueda y, por lo tanto, no se pueden buscar, entre ellos se incluyen los operadores para la búsqueda (+-=:) y los siguientes caracteres que se reemplazan por un $null o pueden producir errores si se buscan! @ #% ^ &; _ / ?
+- Los operadores booleanos **and**, **or**, **Not**, **Near**y **ONEAR** deben estar en mayúsculas. 
+
+- A space between two keywords or two  `property:value` expressions is the same as using **AND**. Por ejemplo, `from:"Sara Davis" subject:reorganization` devuelve todos los mensajes enviados por Sara Davis que contienen la palabra reorganización en la línea de asunto. 
+
+- Use una sintaxis que coincida `property:value` con el formato. Los valores no distinguen mayúsculas de minúsculas y no pueden tener un espacio después del operador. Si hay un espacio, el valor previsto será una búsqueda de texto completo. Por ejemplo `to: pilarp` , busca "pilarp" como palabra clave, en lugar de para los mensajes que se enviaron a pilarp. 
+
+- Al buscar una propiedad de destinatario, como Para, De, Cc o los destinatarios, puede utilizar una dirección SMTP, un alias o un nombre para mostrar para indicar un destinatario. Por ejemplo, puede utilizar pilarp@contoso.com, pilarp o "Pilar Pinilla".
+
+- Solo puede usar la búsqueda de caracteres comodín de prefijo; por ejemplo, **CAT\* ** o **set\***. No se admiten las búsquedas de sufijos (**\*CAT**), las búsquedas infijas (**\*c t**) y las búsquedas de subcadenas (**\*CAT\***).
+
+- Al buscar una propiedad, use comillas dobles ("") si el valor de búsqueda consta de varias palabras. Por ejemplo `subject:budget Q1` , devuelve los mensajes que contienen **presupuesto** en la línea de asunto y que contienen el **primer trimestre** en cualquier lugar del mensaje o en cualquiera de las propiedades del mensaje. El `subject:"budget Q1"` uso de devuelve todos los mensajes que contienen **Budget Q1** en cualquier lugar de la línea de asunto.
+
+- Para excluir de los resultados de la búsqueda el contenido marcado con un valor de propiedad determinado, coloque un signo menos (-) delante del nombre de la propiedad. Por ejemplo, `-from:"Sara Davis"` excluye los mensajes enviados por Sara Davis.
 
 - Puede exportar elementos en función del tipo de mensaje. Por ejemplo, para exportar conversaciones y chats de Skype en Microsoft Teams, use `kind:im`la sintaxis. Para devolver solo los mensajes de correo electrónico, `kind:email`debe usar. Para devolver chats, reuniones y llamadas en Microsoft Teams, use `kind:microsoftteams`.

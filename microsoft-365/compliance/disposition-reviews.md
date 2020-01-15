@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de retención que conserva el contenido de Microsoft 365, puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a48d47c6b02ebe20ba5fb48470a2efc88aa3dbc7
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806073"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123671"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 
@@ -56,18 +56,22 @@ Una revisión de disposición puede incluir contenido en buzones de Exchange, si
   
 ![Página disposiciones del centro de seguridad y cumplimiento](media/Retention-Dispositions-v2-page.png)
 
+
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Configuración de la revisión de disposición mediante la creación de una etiqueta de retención
 
 Este es el flujo de trabajo básico para configurar una revisión de disposición. Tenga en cuenta que este flujo muestra una etiqueta de retención que se publica y que un usuario aplica manualmente; como alternativa, una etiqueta de retención que activa una revisión de disposición se puede aplicar automáticamente al contenido.
   
 ![Gráfico que muestra el flujo de trabajo de disposición](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Una revisión de disposición es una opción cuando se crea una etiqueta de retención en Office 365. Tenga en cuenta que esta opción no está disponible en una directiva de retención, sino solo en una etiqueta de retención configurada para conservar contenido.
+Una revisión de disposición es una opción cuando se crea una etiqueta de retención en Office 365. Esta opción no está disponible en una directiva de retención, sino solo en una etiqueta de retención configurada para conservar el contenido.
   
 Para obtener más información acerca de las etiquetas de retención, consulte [Overview of Retention Labels](labels.md).
   
 ![Configuración de retención de una etiqueta](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
-  
+ 
+> [!NOTE]
+> Cuando se especifica la opción **notificar a estas personas cuando hay elementos listos para revisar**, especifique un usuario o un grupo de seguridad habilitado para correo. Los grupos de Office 365 no son compatibles con esta opción.
+
 ## <a name="disposing-content"></a>Eliminación de contenido
 
 Cuando se notifica a un revisor por correo electrónico que el contenido está listo para su revisión, puede ir a la página de **disposición** en &amp; el centro de seguridad y cumplimiento. Los revisores pueden ver cuántos elementos tiene la etiqueta de retención en espera de disposición y, a continuación, seleccionar una etiqueta de retención para ver todo el contenido con esa etiqueta.
@@ -94,9 +98,15 @@ Además, tenga en cuenta que se auditan todas las acciones de disposición. Para
   
 ## <a name="permissions-for-disposition"></a>Permisos para disposición
 
-Para obtener acceso a la página de **disposición** , los revisores deben ser miembros de la función de **Administración de disposición** y el rol **registros de auditoría con permiso de vista** . Se recomienda crear un nuevo grupo de roles denominado revisores de disposición, agregar estos dos roles a ese grupo de roles y, a continuación, agregar miembros al grupo de roles. 
-  
-Para obtener más información, vea [conceder acceso a los usuarios al &amp; centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+Para obtener acceso a la página de **disposición** , los revisores deben ser miembros de la función de **Administración de disposición** y el rol **registros de auditoría con permiso de vista** . Le recomendamos que cree un nuevo grupo de funciones denominado **revisores de disposición**y que agregue estos dos roles a ese grupo de roles. 
+
+Específica del rol **registros de auditoría con permiso de vista** :
+
+- Dado que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet de Exchange Online, debe asignar a los usuarios este rol mediante el [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), en lugar de usar la página **permisos** del centro de seguridad & cumplimiento. Para obtener instrucciones, vea [administrar grupos de roles en Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+
+- Los grupos de Office 365 no son compatibles con este rol. En su lugar, asigne buzones de usuario, usuarios de correo o grupos de seguridad habilitados para correo.
+
+Para obtener instrucciones sobre cómo conceder a los usuarios la función de **Administración de disposición** y crear su nueva función de **revisores de disposición** , vea [conceder acceso a los usuarios al centro de seguridad &amp; y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Cuánto tiempo se eliminará permanentemente el contenido desechado
 
