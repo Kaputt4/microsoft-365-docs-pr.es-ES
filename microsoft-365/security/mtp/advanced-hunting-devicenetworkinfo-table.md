@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceNetworkInfo en el esquema de búsqueda avanzada
 description: Obtenga información sobre la configuración de red en la tabla DeviceNetworkInfo del esquema de búsqueda avanzada.
-keywords: caza avanzado, cazar amenazas, búsqueda de amenazas del ciberespacio, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, machinenetworkinfo, DeviceNetworkInfo, dispositivo, equipo, Mac, IP, adaptador, DNS, DHCP, puerta de enlace, túnel
+keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, machinenetworkinfo, DeviceNetworkInfo, dispositivo máquina, Mac, IP, adaptador, DNS, DHCP, puerta de enlace, túnel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e0d183dd762aba7f11ee46acc81a89b453dc70cb
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 938eb02da1b37f27f15f06ad67748a9e3beca68a
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809415"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210422"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -36,20 +36,20 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `DeviceId` | cadena | Identificador único para el equipo en servicio |
+| `DeviceId` | string | Identificador único para el equipo en servicio |
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y timestamp. |
-| `NetworkAdapterName` | cadena | Nombre del adaptador de red |
-| `MacAddress` | cadena | Dirección MAC del adaptador de red |
-| `NetworkAdapterType` | cadena | Tipo de adaptador de red. Para obtener los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) . |
-| `NetworkAdapterStatus` | cadena | Estado operativo del adaptador de red. Para obtener los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) . |
-| `TunnelType` | cadena | Protocolo de túnel, si se usa la interfaz para este propósito, por ejemplo, 6to4, Teredo, ISATAP, PPTP, SSTP y SSH |
-| `ConnectedNetworks` | cadena | Redes a las que está conectado el adaptador. Cada matriz JSON contiene el nombre de red, la categoría (pública, privada o de dominio), una descripción y una marca que indica si está conectado públicamente a Internet |
-| `DnsAddresses` | cadena | Direcciones de servidor DNS en formato de matriz JSON |
-| `IPv4Dhcp` | cadena | Dirección IPv4 del servidor DHCP |
-| `IPv6Dhcp` | cadena | Dirección IPv6 del servidor DHCP |
-| `DefaultGateways` | cadena | Direcciones de puerta de enlace predeterminadas en formato de matriz JSON |
-| `IPAddresses` | cadena | Matriz JSON que contiene todas las direcciones IP asignadas al adaptador, junto con el prefijo de subred y el espacio de direcciones IP respectivos, como Public, Private o local Link |
+| `NetworkAdapterName` | string | Nombre del adaptador de red |
+| `MacAddress` | string | Dirección MAC del adaptador de red |
+| `NetworkAdapterType` | string | Tipo de adaptador de red. Para obtener los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) . |
+| `NetworkAdapterStatus` | string | Estado operativo del adaptador de red. Para obtener los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) . |
+| `TunnelType` | string | Protocolo de túnel, si se usa la interfaz para este propósito, por ejemplo, 6to4, Teredo, ISATAP, PPTP, SSTP y SSH |
+| `ConnectedNetworks` | string | Redes a las que está conectado el adaptador. Cada matriz JSON contiene el nombre de red, la categoría (pública, privada o de dominio), una descripción y una marca que indica si está conectado públicamente a Internet |
+| `DnsAddresses` | string | Direcciones de servidor DNS en formato de matriz JSON |
+| `IPv4Dhcp` | string | Dirección IPv4 del servidor DHCP |
+| `IPv6Dhcp` | string | Dirección IPv6 del servidor DHCP |
+| `DefaultGateways` | string | Direcciones de puerta de enlace predeterminadas en formato de matriz JSON |
+| `IPAddresses` | string | Matriz JSON que contiene todas las direcciones IP asignadas al adaptador, junto con el prefijo de subred y el espacio de direcciones IP respectivos, como Public, Private o local Link |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Búsqueda proactiva de amenazas](advanced-hunting-overview.md)

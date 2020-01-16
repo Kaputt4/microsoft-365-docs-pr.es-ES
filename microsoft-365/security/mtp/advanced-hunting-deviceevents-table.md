@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceEvents en el esquema de búsqueda avanzada
 description: Obtenga información sobre antivirus, Firewall y otros tipos de eventos en la tabla eventos de dispositivos diversos (DeviceEvents) del esquema de búsqueda avanzada.
-keywords: caza avanzado, cazar amenazas, búsqueda de amenazas en el ciberespacio, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, eventos de seguridad, antivirus, firewall, protección contra ataques, DeviceEvents
+keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, eventos de seguridad, antivirus, firewall, protección contra vulnerabilidades, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aec5751cf400f94abaf259aaa5fe2238b4b91311
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 26516dc4559a428880637c6cf8248d50bb802f08
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809406"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209935"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -38,50 +38,50 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `DeviceId` | string | Identificador único para el equipo en servicio |
-| `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `ActionType` | cadena | Tipo de actividad que ha desencadenado el evento |
-| `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
-| `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
-| `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
+| `DeviceName` | string | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
+| `ActionType` | string | Tipo de actividad que ha desencadenado el evento |
+| `FileName` | string | Nombre del archivo donde se aplicó la acción registrada |
+| `FolderPath` | string | Carpeta que contiene el archivo al que se aplicó la acción grabada |
+| `SHA1` | string | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele rellenarse; use la columna SHA1 cuando esté disponible |
-| `MD5` | cadena | Hash MD5 del archivo al que se aplicó la acción grabada |
-| `AccountDomain` | cadena | Dominio de la cuenta |
-| `AccountName` | cadena | Nombre de usuario de la cuenta |
-| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
-| `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
+| `MD5` | string | Hash MD5 del archivo al que se aplicó la acción grabada |
+| `AccountDomain` | string | Dominio de la cuenta |
+| `AccountName` | string | Nombre de usuario de la cuenta |
+| `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
+| `RemoteUrl` | string | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
 | `RemoteDeviceName` | cadena | Nombre del equipo que llevó a cabo una operación remota en el equipo afectado. Según el evento del que se informa, este nombre puede ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información del dominio |
 | `ProcessId` | entero | IDENTIFICADOR de proceso (PID) del proceso recién creado |
-| `ProcessCommandLine` | cadena | Línea de comandos usada para crear el nuevo proceso |
+| `ProcessCommandLine` | string | Línea de comandos usada para crear el nuevo proceso |
 | `ProcessCreationTime` | datetime | Fecha y hora de creación del proceso |
-| `ProcessTokenElevation` | cadena | Tipo de token que indica la presencia o ausencia de la elevación de privilegios de control de acceso de usuario (UAC) que se aplica al proceso recién creado. |
-| `LogonId` | cadena | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
-| `RegistryKey` | cadena | Clave del registro a la que se aplicó la acción grabada |
-| `RegistryValueName` | cadena | Nombre del valor del registro al que se aplicó la acción grabada |
-| `RegistryValueData` | cadena | Datos del valor del registro al que se aplicó la acción grabada |
-| `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
+| `ProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de la elevación de privilegios de control de acceso de usuario (UAC) que se aplica al proceso recién creado. |
+| `LogonId` | string | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
+| `RegistryKey` | string | Clave del registro a la que se aplicó la acción grabada |
+| `RegistryValueName` | string | Nombre del valor del registro al que se aplicó la acción grabada |
+| `RegistryValueData` | string | Datos del valor del registro al que se aplicó la acción grabada |
+| `RemoteIP` | string | Dirección IP a la que se ha conectado |
 | `RemotePort` | entero | Puerto TCP del dispositivo remoto al que se estaba conectando |
-| `LocalIP` | cadena | Dirección IP asignada al equipo local usada durante la comunicación |
+| `LocalIP` | string | Dirección IP asignada al equipo local usada durante la comunicación |
 | `LocalPort` | entero | Puerto TCP del equipo local usado durante la comunicación |
-| `FileOriginUrl` | cadena | Dirección URL desde la que se descargó el archivo |
-| `FileOriginIP` | cadena | Dirección IP desde la que se descargó el archivo |
-| `AdditionalFields` | cadena | Información adicional sobre el evento en el formato de matriz JSON |
-| `InitiatingProcessSHA1` | cadena | SHA-1 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessSHA256` | cadena | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele rellenarse; use la columna SHA1 cuando esté disponible |
-| `InitiatingProcessFileName` | cadena | Nombre del proceso que inició el evento |
-| `InitiatingProcessFolderPath` | cadena | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
+| `FileOriginUrl` | string | Dirección URL desde la que se descargó el archivo |
+| `FileOriginIP` | string | Dirección IP desde la que se descargó el archivo |
+| `AdditionalFields` | string | Información adicional sobre el evento en el formato de matriz JSON |
+| `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele rellenarse; use la columna SHA1 cuando esté disponible |
+| `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
+| `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessId` | entero | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
-| `InitiatingProcessCommandLine` | cadena | Línea de comandos que se usa para ejecutar el proceso que inició el evento |
+| `InitiatingProcessCommandLine` | string | Línea de comandos que se usa para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
 | `InitiatingProcessParentId` | entero | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
-| `InitiatingProcessParentFileName` | cadena | Nombre del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el primario del proceso responsable del evento |
-| `InitiatingProcessMD5` | cadena | Hash MD5 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessAccountDomain` | cadena | Dominio de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountName` | cadena | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountSid` | cadena | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessLogonId` | cadena | Identificador de una sesión de inicio del proceso que inició el evento. Este identificador es único en el mismo equipo solo entre reinicios |
+| `InitiatingProcessMD5` | string | Hash MD5 del proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountSid` | string | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessLogonId` | string | Identificador de una sesión de inicio del proceso que inició el evento. Este identificador es único en el mismo equipo solo entre reinicios |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y timestamp. |
-| `AppGuardContainerId` | cadena | Identificador del contenedor virtualizado que usa la protección de aplicaciones para aislar la actividad del explorador |
+| `AppGuardContainerId` | string | Identificador del contenedor virtualizado que usa la protección de aplicaciones para aislar la actividad del explorador |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Búsqueda proactiva de amenazas](advanced-hunting-overview.md)

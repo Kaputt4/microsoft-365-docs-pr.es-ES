@@ -1,7 +1,7 @@
 ---
 title: Tabla EmailAttachmentInfo del esquema de búsqueda avanzada
 description: Obtenga más información sobre los datos adjuntos en la tabla de EmailAttachmentInfo del esquema de búsqueda avanzada.
-keywords: Búsqueda, avanzada, de amenazas, de ciberamenazas, consulta, telemetría, referencia del esquema, kusto, tabla, columna, tipo de datos, descripción, EmailAttachmentInfo, ID de mensaje de red, remitente, destinatario, identificador de datos adjuntos, nombre del archivo adjunto, veredicto de código malintencionado.
+keywords: caza avanzado, cazar amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailAttachmentInfo, identificador de mensaje de red, remitente, destinatario, identificador de datos adjuntos, nombre de datos adjuntos, veredicto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9368185fff037b8c3c2f5b70a178f2485fda3736
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3bd4c3ed69c53a4520e0e0739801ef4a74b77059
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808725"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210375"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 

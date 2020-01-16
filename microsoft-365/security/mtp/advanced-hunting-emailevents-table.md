@@ -1,7 +1,7 @@
 ---
 title: La tabla EmailEvents en el esquema de búsqueda avanzada
 description: Obtenga más información sobre los eventos asociados con los correos electrónicos de Office 365 en la tabla EmailEvents del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, buscar, consulta, telemetría, referencia del esquema, kusto, tabla, columna, tipo de datos, descripción, EmailEvents, Id. de mensaje de red, remitente, destinatario, Id. de datos adjuntos, nombre de datos adjuntos, veredicto de software malintencionado, veredicto de suplantación de identidad, recuento de datos adjuntos, recuento de vínculos, recuento de URL
+keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailEvents, identificador de mensaje de red, remitente, destinatario identificador de datos adjuntos, nombre de datos adjuntos, veredicto de malware, veredicto de phishing, número de datos adjuntos, recuento de vínculos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 43d30772fa756369971bde747825028b50e9540b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808715"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210365"
 ---
 # <a name="emailevents"></a>EmailEvents
 

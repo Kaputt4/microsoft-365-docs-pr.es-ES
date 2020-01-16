@@ -1,9 +1,9 @@
 ---
-title: Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento
+title: Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento, usuarios comprometidos, cifrado, estado de protección contra amenazas, detecciones de malware, malware principal, detección de correo no deseado, correo enviado y recibido, mensajes notificados por el usuario, informes de lectura, detección, datos de seguridad, información de seguridad
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/29/2019
+ms.date: 01/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están &amp; disponibles en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 70eceb8d7afa227027b71d475aa22b2151f2dea6
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: c44944c8f392b2df8cfe4b9e1741ba4b7ea13382
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112493"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209955"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento
 
@@ -29,7 +29,8 @@ Hay disponibles varios informes en el centro de [seguridad &amp; y cumplimiento]
 ![Panel en el que se ve cómo está funcionando la protección contra amenazas avanzada](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Los informes de seguridad de correo electrónico incluyen lo siguiente:
-- [Informe de cifrado](#encryption-report) (nuevo)
+- [Informe de usuarios comprometidos (**nuevo**)](#compromised-users-report-new)
+- [Informe de cifrado](#encryption-report)
 - [Informe de estado de protección contra amenazas](#threat-protection-status-report) 
 - [Informe de detecciones de malware](#malware-detections-report) 
 - [Informe de malware principal](#top-malware-report)
@@ -38,10 +39,17 @@ Los informes de seguridad de correo electrónico incluyen lo siguiente:
 - [Informe de detecciones de correo no deseado](#spam-detections-report)
 - [Informe de correo electrónico enviado y recibido](#sent-and-received-email-report)
 - [Informe de mensajes notificados por el usuario](#user-reported-messages-report)
-    
+
+
+## <a name="compromised-users-report-new"></a>Informe de usuarios comprometidos (**nuevo**) 
+
+Este informe, disponible para todos los usuarios con Exchange Online Protection, muestra el número de cuentas de usuario marcadas como usuarios sospechosos o restringidos, datos particularmente útiles como cuentas especifique cualquiera de los Estados que indican que la cuenta de usuario puede ser problemática o incluso en peligro. Con el uso frecuente, el informe de usuario comprometida puede detectar picos, e incluso tendencias, en cuentas marcadas en Estados sospechosos o restringidos, lo que demuestra que puede haber un problema con la seguridad y el bienestar del espacio empresarial.
+
+![Los usuarios comprometedores se notifican como aparecen en Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="encryption-report"></a>Informe de cifrado
 
-(**Nueva**) El **Informe de cifrado** muestra información sobre los mensajes de correo electrónico que se han cifrado, ya sea a través de las directivas de la organización o a través de los controles de usuario final. El equipo de seguridad de la organización puede usar la información de este informe para identificar patrones y aplicar de forma proactiva o ajustar las directivas de los mensajes de correo electrónico confidenciales.
+El **Informe de cifrado** muestra información sobre los mensajes de correo electrónico que se han cifrado, ya sea a través de las directivas de la organización o a través de los controles de usuario final. El equipo de seguridad de la organización puede usar la información de este informe para identificar patrones y aplicar de forma proactiva o ajustar las directivas de los mensajes de correo electrónico confidenciales.
 
 Para ver este informe, en el centro de seguridad & cumplimiento, vaya a **Informe de cifrado**de **paneles** \> de **informes** \> .
 

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
-ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
+ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41012193"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210155"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -50,7 +50,7 @@ La mayoría se puntuan de una manera binaria: Si implementa la acción de mejora
 
 ### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
 
-Actualmente hay recomendaciones para Office 365 (como SharePoint Online, Exchange Online, OneDrive para la empresa, Microsoft Information Protection, etc.), Azure AD, Intune y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad, como ATP de Azure y ATP de Microsoft defender. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero.
+Actualmente hay recomendaciones para Office 365 (como SharePoint Online, Exchange Online, OneDrive para la empresa, Microsoft Information Protection, etc.), Azure AD y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad, como ATP de Azure y ATP de Microsoft defender. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero.
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
@@ -136,16 +136,53 @@ La puntuación segura de Microsoft es un resumen numérico de la postura de segu
 
 Para hacer que la puntuación segura de Microsoft sea un mejor representante de su postura de seguridad y mejorar el uso, estamos realizando algunos cambios en un futuro próximo. Se cambiará la puntuación y la puntuación máxima posible. Sin embargo, esto no implica un cambio en su postura de seguridad.
 
+### <a name="removing-improvement-actions-from-intune"></a>Eliminación de acciones de mejora de Intune
+
+Después de una evaluación de las acciones de mejora de la puntuación segura de Microsoft que se han proporcionado desde Intune, se decidió que no proporcionan una representación útil de la postura de seguridad de los dispositivos en las organizaciones. En lugar de centrarse en las directivas, estamos trabajando para incluir controles de seguridad que evalúen directamente el estado de configuración de los dispositivos.
+
+Se quitarán las siguientes acciones para la mejora de Intune:
+
+- Habilitar la administración de dispositivos móviles de Microsoft Intune
+- Crear una directiva de cumplimiento de Microsoft Intune para Android
+- Crear una directiva de cumplimiento de Microsoft Intune para Android para trabajar
+- Crear una directiva de protección de aplicaciones de Microsoft Intune para Android
+- Crear una directiva de protección de aplicaciones de Microsoft Intune para iOS
+- Marcar dispositivos sin directiva de cumplimiento de Microsoft Intune asignada como no compatible
+- Crear una directiva de cumplimiento de Microsoft Intune para iOS
+- Crear una directiva de cumplimiento de Microsoft Intune para macOS
+- Crear una directiva de cumplimiento de Microsoft Intune para Windows
+- Crear un perfil de configuración de Microsoft Intune para Android
+- Crear un perfil de configuración de Microsoft Intune para Android para trabajar
+- Crear un perfil de configuración de Microsoft Intune para macOS
+- Crear un perfil de configuración de Microsoft Intune para iOS
+- Crear un perfil de configuración de Microsoft Intune para Windows
+- Habilitar la detección de jailbreak mejorada en Microsoft Intune
+- Requerir que todos los dispositivos sean revisados, tengan antivirus y firewalls habilitados
+- Habilitar la integración de ATP de Windows Defender en Microsoft Intune
+- Crear una directiva de Windows Information Protection para Microsoft Intune
+- Requerir que todos los dispositivos tengan configuraciones de seguridad avanzada
+- Revisar semanalmente el informe de dispositivos bloqueados
+
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Eliminación de acciones de mejora que no cumplen las expectativas para una medida fiable
+
+Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quita la siguiente acción de mejora.
+
+- Activar la grabación de datos de auditoría
+- Descubra aplicaciones de TI de instantáneas arriesgadas y no compatibles
+- Revisión de permisos & bloquear aplicaciones de OAuth arriesgadas conectadas a su entorno
+
 ### <a name="mfa-improvement-action-updates"></a>Actualizaciones de acciones de mejora de MFA
 
 Para reflejar la necesidad de las empresas de garantizar la máxima seguridad al aplicar las directivas que funcionan con su negocio, la calificación segura de Microsoft es quitar tres acciones de mejora centradas alrededor de la autenticación multifactor y agregando dos.
 
 Los tres que se quitarán:
+
 - Registrar todos los usuarios para la autenticación multifactor
 - Requerir MFA para todos los usuarios
 - Requerir MFA para los roles privilegiados de Azure AD
 
 Nuevas acciones de mejora:
+
 - Asegurarse de que todos los usuarios puedan completar la autenticación multifactor para el acceso seguro
 - Requerir MFA para roles administrativos
 

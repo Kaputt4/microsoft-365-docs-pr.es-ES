@@ -1,7 +1,7 @@
 ---
 title: Buscar amenazas en Microsoft 365
 description: Usar capacidades de búsqueda de amenazas en el centro de seguridad de Microsoft 365 para buscar de forma proactiva las infracciones y otras amenazas
-keywords: seguridad, malware, Microsoft 365, M365, protección contra amenazas de Microsoft, MTP, centro de seguridad, búsqueda, búsqueda de amenazas, búsqueda en cyberthreat, ATP de Microsoft defender, Office 365 ATP, ATP de Azure, búsqueda avanzada
+keywords: Microsoft 365, M365, protección contra amenazas de Microsoft, MTP, centro de seguridad, búsqueda, caza de amenazas, cyberthreat de Microsoft defender ATP, Office 365 ATP, ATP de Azure, búsqueda avanzada
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e0f4c97a1c2963fc714420457208b40af688d86b
-ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
+ms.openlocfilehash: c2bb0b088a40511eea36348d39790fd5e88fa40b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41173506"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210165"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>Buscar amenazas en Microsoft 365
 
