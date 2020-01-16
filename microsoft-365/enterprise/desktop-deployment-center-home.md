@@ -14,17 +14,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Información general acerca del Centro de implementación de escritorios.
-ms.openlocfilehash: 0e901a162be61c7be2465a0054669ebc459e6f3f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b7f4ef60b4f9c82055dce42291b1abca504a8248
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031095"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112554"
 ---
 # <a name="desktop-deployment-center"></a>Centro de implementación de escritorios
 
 <strong>Actualizar de Windows 7 a Windows 10</strong>
-<p>El soporte técnico ampliado de Windows 7 finaliza el 14 de enero de 2020. La forma de implementación más rápida es realizar una actualización local de Windows 7 a Windows 10. Puede <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">actualizar un solo equipo</a> o <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">actualizar miles de equipos con System Center Configuration Manager</a>. Con las actualizaciones locales no es necesario que invierta tiempo en la entrega de aplicaciones, la migración de archivos, la creación de imágenes personalizadas o la habilitación de los servicios en la nube. Puede usar las herramientas que ya tiene para actualizar las computadoras de escritorio existentes y centrarse en los siguientes pasos de implementación para las actualizaciones: </p>
+<p>El soporte técnico ampliado de Windows 7 finaliza el 14 de enero de 2020. La forma de implementación más rápida es realizar una actualización local de Windows 7 a Windows 10. Puede <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">actualizar un solo equipo</a> o <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">actualizar miles de equipos con Microsoft Endpoint Configuration Manager</a>. Con las actualizaciones locales no es necesario que invierta tiempo en la entrega de aplicaciones, la migración de archivos, la creación de imágenes personalizadas o la habilitación de los servicios en la nube. Puede usar las herramientas que ya tiene para actualizar las computadoras de escritorio existentes y centrarse en los siguientes pasos de implementación para las actualizaciones: </p>
 
 <p>
 </p>
