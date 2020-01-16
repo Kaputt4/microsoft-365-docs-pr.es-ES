@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 0083eb91b49561c858cacc94a148e97c7463b754
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801365"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112514"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
 Estos laboratorios prácticos para descargar se centran en la implementación de Windows 10 y Office 365 junto con las consideraciones de administración y configuración posteriores a la implementación. Este aprendizaje es muy recomendable para las organizaciones que preparan el fin del período activo de Windows 7, pero también se aplica si en la actualidad usa Windows 10 y Office 365 Plus u Office 2019. Se incluyen guías para Windows 10, Office 365 ProPlus, Enterprise Mobility + Security y productos y servicios relacionados.
 
-Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos que ejecuten Windows 10 Enterprise y Office 365 ProPlus. Los laboratorios abarcan los pasos y las herramientas que se describen en la rueda de implementación de escritorio, incluyendo el System Center Configuration Manager, Desktop Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
+Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos que ejecuten Windows 10 Enterprise y Office 365 ProPlus. Los laboratorios abarcan los pasos y las herramientas que se describen en la rueda de implementación de escritorio, incluyendo Microsoft Endpoint Configuration Manager, Desktop Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 
 Como parte del proceso de [implementación de escritorio](https://www.aka.ms/howtoshift) para Windows 10 y Office 365 ProPlus, se recomienda empezar con un entorno de laboratorio aislado cuando comience a explorar las actualizaciones de la herramienta de implementación y a probar su automatización en el marco de la implementación.
 
@@ -38,7 +38,7 @@ El laboratorio proporciona un entorno de laboratorio virtual aprovisionado de fo
 
   - Windows 10 Enterprise, versión 1909
   - Windows 7 Enterprise
-  - System Center Configuration Manager, versión 1902
+  - Microsoft Endpoint Configuration Manager, versión 1902
   - Windows Assessment and Deployment Kit para Windows 10, versión 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
@@ -72,7 +72,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 ### <a name="office-and-lob-app-delivery"></a>**Entrega de aplicaciones de Office y de LOB**
 
-  - Implementación de Office 365 ProPlus mediante System Center Configuration Manager
+  - Implementación de Office 365 ProPlus con Microsoft Endpoint Configuration Manager
   - Implementación de Office 365 ProPlus con Microsoft Intune
   - Implementación y administración de aplicaciones mediante Microsoft Intune
   - Implementación de aplicaciones e instalación de autoservicio con Microsoft Store para Empresas
@@ -126,7 +126,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
   - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Implementación de sistema operativo de System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Implementación de sistema operativo de Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan de implementación de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

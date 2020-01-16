@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Dónde obtener ayuda para la implementación de Windows 10 y Office 365 ProPlus.
-ms.openlocfilehash: a6064fb49f6bdd44275a9038eeb8b264638ea618
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b7eb30e8a9b5b46635793e9c79e2609467d87848
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031025"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112544"
 ---
 # <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Obtener ayuda para la implementación de Windows 10 y Office 365 ProPlus 
 
@@ -49,7 +49,7 @@ A continuación encuentra un mapa de los servicios disponibles alineados con el 
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Entrega de aplicaciones de Office y de LOB</strong></p>
 <ul>
-<li><p>Configuración e implementación de <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>, donde los especialistas de Microsoft FastTrack proporcionan asistencia con el aprovisionamiento de licencias de usuario, la configuración de la instalación y opciones de actualización para Hacer clic y ejecutar y la creación de paquetes si su organización usa el administrador de configuración de System Center.</p></li>
+<li><p>Configuración e implementación de <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>, donde los especialistas de Microsoft FastTrack brindan asistencia con el aprovisionamiento de licencias de usuario, la configuración de la instalación y opciones de actualización para hacer clic y ejecutar, y la creación de paquetes si su organización usa Microsoft Endpoint Configuration Manager.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ A continuación encuentra un mapa de los servicios disponibles alineados con el 
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="step 6" height="144" width="144" /></td>
 <td><p><strong>Implementación del sistema operativo y actualizaciones de características</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>, donde especialistas de Microsoft FastTrack proporcionarán asistencia con el aprovisionamiento de licencias de usuario y la configuración piloto de Windows Autopilot para nuevos dispositivos, las directivas MDM para su Windows 10 y otros dispositivos móviles, incluyendo la implementación de aplicaciones; los perfiles Wi-Fi y VPN; la administración conjunta con el Administrador de configuración de System Center y mucho más.</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>, donde especialistas de Microsoft FastTrack brindarán asistencia con el aprovisionamiento de licencias de usuario y la configuración de Windows Autopilot para nuevos dispositivos, las directivas MDM para su Windows 10 y otros dispositivos móviles, incluyendo la implementación de aplicaciones; los perfiles Wi-Fi y VPN; la administración conjunta con Microsoft Endpoint Configuration Manager y mucho más.</p></li>
 </ul></td>
 </tr>
 <tr class="even">

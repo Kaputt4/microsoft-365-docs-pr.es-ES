@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo migrar los archivos y la configuración de los usuarios.
-ms.openlocfilehash: 8b9bde4eb1ddf0951a2ab27795dadef9965f6a1c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031495"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112574"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Paso 4: Migración de los archivos y la configuración del usuario
 
@@ -51,7 +51,7 @@ Si opta por una migración manual, deberá evaluar si podrá completar la tarea 
 
 ## <a name="automated-migration-using-usmt"></a>Migración automatizada con USMT 
 
-Para las implementaciones a gran escala puede automatizar gran parte del proceso mediante herramientas de automatización de la implementación basadas en secuencias de tareas como System Center Configuration Manager o Microsoft Deployment Toolkit (MDT). En ambas soluciones se usa la Herramienta de migración de estado de usuario (USMT) como parte del proceso de implementación integral. USMT forma parte de [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+Para las implementaciones a gran escala puede automatizar gran parte del proceso mediante herramientas de automatización de la implementación basadas en secuencias de tareas como Microsoft Endpoint Configuration Manager o Microsoft Deployment Toolkit (MDT). En ambas soluciones se usa la Herramienta de migración de estado de usuario (USMT) como parte del proceso de implementación integral. USMT forma parte del [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
 USMT captura las cuentas y los archivos del usuario, la configuración del sistema operativo y la aplicación, y lo migra a una instalación nueva de Windows. También ofrece al administrador de TI el control exacto de lo que se va a migrar y, opcionalmente, permite excluir tipos de archivos no deseados, como archivos ejecutables, de vídeo o audio.
 

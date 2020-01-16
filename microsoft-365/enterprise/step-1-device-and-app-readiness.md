@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los dispositivos y las aplicaciones en el entorno.
-ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031635"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112724"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Paso 1: Preparación de dispositivos y aplicaciones
 
@@ -45,7 +45,7 @@ Este artículo le guiará por esa primera fase (Preparación de dispositivos y a
 
 ## <a name="windows-10-compatibility-scan"></a>Análisis de compatibilidad de Windows 10
 
-Antes de implementar Windows 10 Microsoft recomienda comprobar la preparación de los dispositivos existentes que ejecutan Windows 7 o 8/8.1. Los medios de instalación de Windows 10 son compatibles con un modificador de línea de comandos para que setup.exe ejecute la actualización, pero solo compruebe compatibilidad, sin llegar a realizar la actualización. ScanOnly se puede ejecutar como un archivo por lotes secuenciados o integrado en una secuencia de tareas de System Center Configuration Manager, incluyendo la capacidad de ejecutar la ScanOnly directamente desde la red para que el medio de instalación de Windows 10 no se transmita al dispositivo local. Cuando ScanOnly acabe se devuelven los resultados a través de códigos de retorno de los archivos de registro generados por Setup.EXE.   
+Antes de implementar Windows 10 Microsoft recomienda comprobar la preparación de los dispositivos existentes que ejecutan Windows 7 o 8/8.1. Los medios de instalación de Windows 10 son compatibles con un modificador de línea de comandos para que setup.exe ejecute la actualización, pero solo compruebe compatibilidad, sin llegar a realizar la actualización. ScanOnly se puede ejecutar como un archivo por lotes secuenciados o integrado en una secuencia de tareas de Microsoft Endpoint Configuration Manager, incluyendo la capacidad de ejecutar el ScanOnly directamente desde la red para que el medio de instalación de Windows 10 no se transmita al dispositivo local. Cuando ScanOnly acabe se devuelven los resultados a través de códigos de retorno de los archivos de registro generados por Setup.EXE.   
 
 Una línea de comandos de ejemplo de ScanOnly que complete la detección de compatibilidad silenciosamente sería similar a la siguiente:
 
@@ -57,7 +57,7 @@ Para obtener más información acerca de ScanOnly y otros modificadores de coman
 
 Análisis de escritorio ofrece numerosas ventajas para los sistemas de administración de escritorio tradicionales y es la herramienta recomendada. No tiene agente y le guiará por los pasos que deben realizarse haciendo uso de la información de compatibilidad de aplicaciones y controladores recopilada a través de la actualización de millones de equipos de clientes. Esta información le proporciona una evaluación detallada, que identifica los problemas de compatibilidad que podrían bloquear la actualización, con vínculos a las correcciones sugeridas que conoce Microsoft.
 
-Para configurar Análisis de escritorio primero debe configurar una suscripción de Azure e incluir un área de trabajo de Análisis del registro de Azure para ello. Una vez que se esté ejecutando el servicio de Análisis de escritorio, podrá inscribir cualquier dispositivo con Windows 7 SP1 o una versión posterior conectado a Internet mediante la configuración de Directiva de grupo. Así de simple. No tiene que implementar ningún agente y el flujo de trabajo visual de Análisis de escritorio le guiará desde la implementación de prueba a la de producción. Si quiere, puede exportar datos de Análisis de escritorio a herramientas de implementación de software, como la rama actual de System Center Configuration Manager, directamente a equipos de destino y crear colecciones a medida que estén listas para su implementación.
+Para configurar Análisis de escritorio primero debe configurar una suscripción de Azure e incluir un área de trabajo de Análisis del registro de Azure para ello. Una vez que se esté ejecutando el servicio de Análisis de escritorio, podrá inscribir cualquier dispositivo con Windows 7 SP1 o una versión posterior conectado a Internet mediante la configuración de Directiva de grupo. Así de simple. No tiene que implementar ningún agente y el flujo de trabajo visual de Análisis de escritorio le guiará desde la implementación de prueba a la de producción. Si quiere, puede exportar datos de Análisis de escritorio a herramientas de implementación de software, como la rama actual de Microsoft Endpoint Configuration Manager, directamente a equipos de destino y crear colecciones a medida que estén listas para su implementación.
 
 Si en la actualidad no ha configurado Análisis de escritorio para su entorno o quiere suscribirse a una prueba, vaya a la página de Análisis de escritorio (https://www.aka.ms/desktopanalytics)) para empezar.
 
@@ -103,7 +103,7 @@ Mientras recorre la lista para corregir los problemas, verá que aumenta el núm
 
 El inventario de software de Configuration Manager es una alternativa a usar soluciones de análisis basadas en la nube para la preparación de aplicaciones y dispositivos. Puede usar cuentas de instalación y explorar equipos específicos para ayudar a clasificar la validación y pruebas de compatibilidad y establecer los paquetes de aplicaciones como compatibles con Windows 10 a través de la configuración del paquete. Aunque esta opción no ofrece la capacidad para comparar la información de compatibilidad conocida con servicios de análisis de Microsoft, puede ser una solución eficaz para un conjunto más pequeño de aplicaciones prioritarias para pruebas manuales. 
 
-Para obtener más información, vea [Introducción al inventario de software en System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory) y cómo establecer requisitos de plataforma en paquetes de aplicación en [Paquetes y programas en System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
+Para obtener más información, vea [Introducción al inventario de software en Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) y cómo establecer requisitos de plataforma en paquetes de aplicación en [Paquetes y programas en Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
 
 ## <a name="desktop-app-assure"></a>Desktop App Assure
