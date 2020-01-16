@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b1832e2080c3178837f43cbfd45366fc4d48322d
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970858"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173826"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Habilitar la Protección contra amenazas de Microsoft
 
@@ -41,7 +41,7 @@ Los clientes con una licencia de Microsoft 365 E5 o equivalente pueden usar la P
 ## <a name="start-using-the-service"></a>Empiece a usar el servicio
 Activar el servicio de Protección contra amenazas de Microsoft agrega datos de diferentes servicios integrados. Los datos se procesan y almacenan de forma centralizada para identificar nuevas perspectivas y posibilitar la centralización de flujos de trabajo de respuesta.
 
-Antes de activar el servicio, el Centro de seguridad de Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)) no muestra en el menú los **Incidentes** ni las opciones del **Centro de actividades**.
+Antes de activar el servicio, el centro de seguridad 365 de Microsoft ([Security.Microsoft.com](https://security.microsoft.com)) no muestra los **incidentes** ni las opciones del **centro de actividades** en el menú.
 
 ![Imagen del menú del Centro de seguridad de Microsoft 365 sin características de la Protección contra amenazas de Microsoft](../images/mtp-off.png)
 *Centro de seguridad de Microsoft 365 con la Protección contra amenazas de Microsoft desactivada*
@@ -71,7 +71,7 @@ Los datos se eliminarán de forma permanente y se quitarán las características
 
 ## <a name="get-assistance"></a>Cómo recibir asistencia
 
-El personal de Microsoft puede ayudarle a recibir o anular el servicio y los recursos relacionados en su espacio empresarial. Para obtener ayuda, [póngase en contacto con el soporte técnico Premier](https://go.microsoft.com/fwlink/?LinkID=733758).
+El personal de Microsoft puede ayudarle a recibir o anular el servicio y los recursos relacionados en su espacio empresarial. Para obtener ayuda, seleccione **¿necesita ayuda?** en el centro de seguridad de Microsoft 365. Al describir sus preocupaciones, mencione "protección contra amenazas de Microsoft".
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -3,7 +3,7 @@ title: Remitente no verificado
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 07/11/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: 4c8b8a0711ab66607d0db5923c1115c436537bd0
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 65b9d1dd3eb1a764867103710448255be96cd183
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970936"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173516"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 
@@ -44,25 +44,25 @@ No todos los mensajes que no se autentican son malintencionados. Sin embargo, de
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Cómo administrar qué mensajes reciben el tratamiento de remitentes no comprobados 
 
-Si es un cliente de Office 365, puede administrar esta característica a través del centro de seguridad & cumplimiento. 
+Si es un cliente de Office 365, puede administrar esta característica a través del centro de seguridad & cumplimiento de Office 365.
 
-- En el centro de seguridad & cumplimiento de Office 365, los administradores globales o de seguridad pueden activar o desactivar la característica a través de la protección contra la suplantación de identidad (phishing) en la Directiva ANTIPHISH. Además, puede administrarse mediante el cmdlet "Set-AntiPhishPolicy". Para obtener más información, consulte [protección contra la suplantación de identidad en Office 365](anti-phishing-protection.md) y [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
+- En el centro de seguridad & cumplimiento, los administradores globales o de seguridad pueden activar o desactivar la característica mediante protección contra la suplantación de identidad (phishing) en la Directiva ANTIPHISH. Además, puede usar el cmdlet **set-AntiPhishPolicy** en Exchange Online PowerShell. Para obtener más información, consulte [protección contra la suplantación de identidad en Office 365](anti-phishing-protection.md) y [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
 
     ![Edición de remitentes no autenticados en la interfaz gráfica.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - Si un administrador ha identificado un falso positivo y un remitente no debe recibir el tratamiento de remitente no verificado, se puede llevar a cabo una de las siguientes acciones para agregar el remitente a la lista de permitidos de falsificación de inteligencia de identidad:
 
-  - Agregue el par de dominios mediante el conocimiento de inteligencia de ti falso. Para obtener más información, consulte [Walkthrough: Spoofing Intelligence Insight](walkthrough-spoof-intelligence-insight.md).
+  - Agregue el par de dominios mediante el conocimiento de inteligencia de ti falso. Para obtener más información, vea [Tutorial: suplantar la información sobre inteligencia empresarial](walkthrough-spoof-intelligence-insight.md).
 
-  - Agregue el par de dominios mediante el cmdlet PhishFilterPolicy. Para obtener más información, consulte [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) y [set up Office 365 ATP anti-phishing and anti-phishing Policies](set-up-anti-phishing-policies.md).
+  - Agregue el par de dominios mediante el cmdlet **set-PhishFilterPolicy** en Exchange Online PowerShell. Para obtener más información, consulte [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) y [set up Office 365 ATP anti-phishing and anti-phishing Policies](set-up-anti-phishing-policies.md).
 
-Además, no se aplica el tratamiento de remitente no verificado si se entregó en la bandeja de entrada a través de una lista de permitidos del administrador, incluidas las reglas de transporte de correo electrónico (ETR), la lista de dominios seguros (Directiva contra correo no deseado), la lista de remitentes seguros o un usuario ha establecido este usuario como un "remitente seguro" en su entrada.
+Además, no se aplica el tratamiento de remitente no verificado si el mensaje se entregó a la bandeja de entrada a través de reglas de flujo de correo (también denominadas reglas de transporte), lista de dominios seguros (Directiva contra correo no deseado) o lista de remitentes seguros.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>¿Qué criterios usa Outlook.com y Outlook en la web para agregar las propiedades "?" y "Via"?
 
-Para el '? ' en la imagen del remitente: Outlook.com requiere que el mensaje pase la autenticación de SPF o DKIM y reciba una transferencia de dMarc o un paso de autenticación compuesto de la inteligencia de Office 365 suplantación de identidad. Para obtener más información, consulte [configurar SPF en Office 365 para evitar la suplantación de identidad (spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) ) y el uso de [DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md).
+Para el '? ' en la imagen del remitente: Outlook.com requiere que el mensaje pase la autenticación de SPF o DKIM y reciba una transferencia de dMarc o un paso de autenticación compuesto de la inteligencia de Office 365 suplantación de identidad. Para obtener más información, consulte [configurar SPF en Office 365 para evitar la suplantación de identidad (spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) ) y el [uso de DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md).
 
 Para la etiqueta Via: Si el dominio de la dirección de es diferente del dominio de la firma DKIM o del correo SMTP de, Outlook.com muestra el dominio en uno de estos dos campos (prefiriendo la firma DKIM).
 
