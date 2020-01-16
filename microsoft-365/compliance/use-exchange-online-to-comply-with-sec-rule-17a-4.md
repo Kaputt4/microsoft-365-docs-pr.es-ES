@@ -1,7 +1,7 @@
 ---
 title: Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates ha validado que, cuando Exchange Online y el Centro de seguridad y cumplimiento se configuran según las recomendaciones, cumplen con los requisitos de almacenamiento relevantes de las normas CFTC 1.31(c)-(d), FINRA 4511 y SEC 17a-4. Puede descargar la evaluación.
-ms.openlocfilehash: 60b8d27ed75afbfd6ffc5d8e254738ea62e0d21b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092835"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122429"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
 
@@ -65,7 +65,7 @@ Se puede bloquear una directiva de retención mediante el uso de PowerShell. Par
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
-Somos conscientes de algunas limitaciones en Exchange Online. Estamos trabajando de forma activa en estas limitaciones y esperamos admitir estos escenarios en julio de 2019:
+Actualmente existen algunas limitaciones para Exchange Online:
 
 - La auditoría de nivel de elemento no está disponible en los buzones de grupo de Office 365.
 - Las comunicaciones en conversaciones no están disponibles para los mensajes de canal y de chat de Teams.
