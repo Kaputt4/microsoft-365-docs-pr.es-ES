@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Office 365 Advanced eDiscovery v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: cb24c40cc2018fba6d1feb13ef0d6426abd2c49a
-ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
+ms.openlocfilehash: 08f568a82096efb143ff5c9fd87011a3d3029e42
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41107909"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210065"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas de eDiscovery heredadas
 
@@ -45,7 +45,7 @@ Como resultado de esta nueva y mejorada funcionalidad de eDiscovery en el centro
    - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
-   
+
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
 - [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), que es la primera versión de eDiscovery avanzado al que se tiene acceso a través de un caso de eDiscovery en el centro de seguridad & cumplimiento de Office 365.
@@ -62,7 +62,7 @@ De acuerdo con el anuncio original del 1 de julio de 2017, se está retirando la
 Debido a que todas estas capacidades (excepto la de copiar los resultados de la búsqueda en un buzón de correo de detección) ahora están disponibles en la búsqueda de contenido, las herramientas eDiscovery y eDiscovery avanzado del [centro de cumplimiento de microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (con funcionalidad, confiabilidad y soporte mejorados para una amplia gama de servicios de Microsoft 365), se recomienda empezar a usar estas herramientas tan pronto como sea posible. Para ayudarle en la transición a estas otras herramientas de eDiscovery, en la tabla siguiente se enumeran las herramientas que puede usar en lugar de la exhibición de documentos electrónicos local y la conservación local.
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
-    
+
 - Office 365 y Microsoft 365 organizaciones empresariales
 
 - Organizaciones de Educación de Office 365 y Microsoft 365
@@ -71,11 +71,10 @@ Debido a que todas estas capacidades (excepto la de copiar los resultados de la 
 
 - Office 365 Germany
 
-
 ### <a name="timeline-for-retirement"></a>Escala de tiempo para la jubilación
-    
+
 - 1 de abril de 2020: no podrá crear nuevas búsquedas y suspensiones, pero puede seguir ejecutando, editando y eliminando las búsquedas existentes bajo su propio riesgo. El soporte técnico de Microsoft ya no guardará la exhibición de documentos electrónicos & retenciones en el EAC.
-    
+
 - 1 de julio de 2020: el & de la exhibición de documentos electrónicos local contiene funcionalidad en el EAC se colocará en modo de solo lectura. Esto significa que solo podrá quitar búsquedas y suspensiones existentes.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
@@ -87,7 +86,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="header">
 <th><strong>Funcionalidad</strong></th>
 <th><strong>Herramienta alternativa</strong></th>
-<th><strong>Comentarios</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -131,6 +130,11 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <p>
 <p>Como alternativa, puede exportar los resultados de la búsqueda a archivos PST y, a continuación, usar el servicio de importación de Microsoft 365 para importar los archivos PST a un buzón de correo de detección. Para obtener instrucciones paso a paso, consulte <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">usar la carga de red para importar archivos PST a Office 365</a>.
 </tr>
+<tr class="even">
+<td>Restaurar elementos de la carpeta elementos recuperables</td>
+  <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
+  <td>Puede restaurar elementos eliminados permanentemente (también conocidos como elementos <i>eliminados temporalmente</i> ) en buzones de correo, siempre que el período de retención de elementos eliminados para un elemento no haya expirado. Para obtener más información, vea <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">carpeta elementos recuperables en Exchange Online</a>.</td>
+</tr>
 </tbody>
 </table>
 
@@ -155,7 +159,7 @@ Según el aviso original anunciado el 1 de julio de 2017 en el centro de adminis
 Como estas capacidades ahora están disponibles en el [<span class="underline">centro de cumplimiento de Microsoft 365</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) y el PowerShell del centro de cumplimiento de & de seguridad de Office 365 con mejoras en el rendimiento y la escalabilidad, debería usar estos cmdlets mejorados. Estos cmdlets incluyen [<span class="underline"> \*-ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase), [<span class="underline"> \*-ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch), [<span class="underline"> \*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy), [<span class="underline"> \*-CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule)y [<span class="underline"> \*-ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction).
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
-    
+
 - Office 365 y Microsoft 365 organizaciones empresariales
 
 - Organizaciones de Educación de Office 365 y Microsoft 365
@@ -165,9 +169,9 @@ Como estas capacidades ahora están disponibles en el [<span class="underline">c
 - Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
-    
+
 - 1 de abril de 2020: no podrá usar **New-MailboxSearch** para crear nuevas búsquedas de exhibición de documentos electrónicos local y retenciones locales, pero todavía puede usar cmdlets para ejecutar, editar y eliminar las búsquedas y las suspensiones existentes bajo su responsabilidad. El soporte técnico de Microsoft ya no ofrece asistencia para estos tipos de búsquedas y suspensiones.
-    
+
 - 1 de julio de 2020: como se indicó anteriormente, la funcionalidad de la exhibición de documentos electrónicos local & retiene la funcionalidad en el EAC se colocará en modo de solo lectura. Esto también significa que no podrá usar los cmdlets **New-mailboxsearch**, **Start-mailboxsearch**o **set-mailboxsearch** . Solo podrás obtener y quitar búsquedas y suspensiones existentes.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
@@ -179,7 +183,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="header">
 <th><strong>Funcionalidad</strong></th>
 <th><strong>Herramientas alternativas</strong></th>
-<th><strong>Comentarios</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -239,7 +243,7 @@ El cmdlet **Search-Mailbox** en Exchange Online PowerShell se está retirando co
 - Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
-    
+
 -  1 de abril de 2020: el cmdlet **Search-Mailbox** dejará de estar disponible y el soporte técnico de Microsoft ya no proporcionará asistencia.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
@@ -251,7 +255,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="header">
 <th><strong>Funcionalidad</strong></th>
 <th><strong>Herramientas alternativas</strong></th>
-<th><strong>Comentarios</strong></th>
+<th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -314,11 +318,11 @@ En este momento, le recomendamos que empiece a realizar la transición del flujo
 - Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
-    
+
 - 1 de abril de 2020: no podrá crear nuevos casos de exhibición de documentos electrónicos v 1.0 avanzado.
-    
-- 1 de julio de 2020: el soporte técnico de Microsoft no proporcionará soporte técnico. Vea [esta notificación](https://go.microsoft.com/fwlink/?linkid=2113221). No podrá agregar nuevos datos (preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos) en ningún caso. Podrá seguir trabajando con los datos en casos existentes bajo su propio riesgo.
+
+- 1 de julio de 2020: no podrá agregar nuevos datos (preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos) en ningún caso. Podrá seguir trabajando con los datos en casos existentes bajo su propio riesgo. El soporte técnico de Microsoft ya no ofrece asistencia. 
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
-    
+
 La [solución Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) en el centro de cumplimiento de Microsoft 365.
