@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e67ff2b28a6dec741b2ad7af5179dca226fb86ad
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962577"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230218"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Administrar tickets a través de ServiceNow
 
@@ -109,15 +109,19 @@ Establezca la configuración de la tabla "registros de aplicación" en default:
 
 Vaya a la tabla registros de aplicaciones (menú > el registro de aplicaciones de OAuth > sistema) en ServiceNow y busque la entidad OAuth que ha creado el usuario (nombre que le ha asignado).
 
-### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Cómo validar el usuario de integración creado con la lista de comprobación de instalación para el conector de seguridad & cumplimiento de Microsoft 365
-
-Vaya a la tabla de usuarios (menú > usuarios de > de administración de usuarios) en ServiceNow y busque el usuario de integración creado por usted (nombre que le ha asignado).
+### <a name="logging-in-as-the-integration-user"></a>Inicio de sesión como usuario de integración
 
 Antes de autorizar la conexión entre el centro de seguridad de Microsoft 365 y ServiceNow, asegúrese de usar el inicio de sesión de usuario y la contraseña de integración que creó en los pasos de instalación. No use sus credenciales personales.
 
-### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>La instalación se ha completado, pero no ve los vales y no se puede compartir
+1. Vaya a la página de autorización en ServiceNow.
+2. Si ha iniciado sesión con sus credenciales personales, seleccione el vínculo **que desee** en la esquina superior derecha.
+3. Inicie sesión en ServiceNow como el usuario de integración que creó anteriormente a partir de la lista de comprobación de instalación.  
+4. Seleccione **permitir** en la página de servicenow que pregunta si el conector Security + Compliance Connector puede conectarse a su cuenta de servicenow.
+5. Continúe con los pasos de configuración.
 
-Si se han completado los pasos de instalación y configuración, pero no ve las tarjetas de ServiceNow en la Página principal y no puede compartir con ServiceNow desde la puntuación segura de Microsoft, compruebe el estado de la página https://security.microsoft.com/ticketProvisioningde aprovisionamiento en. Seleccione **Guardar** y volver a la Página principal. Deben aparecer las tarjetas.
+### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Cómo validar el usuario de integración creado con la lista de comprobación de instalación para el conector de seguridad & cumplimiento de Microsoft 365
+
+Vaya a la tabla de usuarios (menú > usuarios de > de administración de usuarios) en ServiceNow y busque el usuario de integración creado por usted (nombre que le ha asignado).
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>Su empresa tiene habilitado el inicio de sesión único, lo que le impide conectarse a ServiceNow a través del centro de seguridad de Microsoft 365
 
@@ -135,3 +139,7 @@ Si su compañía ha habilitado el inicio de sesión único y recibe un error o e
 
 1. Cree un usuario con privilegios de administrador de seguridad en Azure Active Directory. El usuario debe tener el mismo nombre y dirección de correo electrónico que el usuario de integración que ha creado a partir de la lista de comprobación de instalación. Puede quitar el rol de administrador de seguridad una vez que se haya completado el inicio de sesión y la conexión.
 2. Inicie sesión en el centro de seguridad 365 de Microsoft como este usuario y siga los pasos de configuración.
+
+### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>La instalación se ha completado, pero no ve los vales y no se puede compartir
+
+Si se han completado los pasos de instalación y configuración, pero no ve las tarjetas de ServiceNow en la Página principal y no puede compartir con ServiceNow desde la puntuación segura de Microsoft, compruebe el estado de la página https://security.microsoft.com/ticketProvisioningde aprovisionamiento en. Seleccione **Guardar** y volver a la Página principal. Deben aparecer las tarjetas.

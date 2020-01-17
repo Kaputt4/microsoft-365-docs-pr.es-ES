@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210155"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230198"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -170,6 +170,7 @@ Para asegurarse de que la puntuación segura de Microsoft es significativa y que
 - Activar la grabación de datos de auditoría
 - Descubra aplicaciones de TI de instantáneas arriesgadas y no compatibles
 - Revisión de permisos & bloquear aplicaciones de OAuth arriesgadas conectadas a su entorno
+- Configurar el control de versiones en las bibliotecas de documentos de SharePoint Online
 
 ### <a name="mfa-improvement-action-updates"></a>Actualizaciones de acciones de mejora de MFA
 
