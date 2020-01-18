@@ -65,6 +65,8 @@
     - name: Etiquetas de confidencialidad
       href: sensitivity-labels.md
       items:
+        - name: Crear y publicar etiquetas de confidencialidad
+          href: create-sensitivity-labels.md
         - name: Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
           href: encryption-sensitivity-labels.md
         - name: Aplicar automáticamente una etiqueta de confidencialidad al contenido

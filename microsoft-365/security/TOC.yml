@@ -176,7 +176,7 @@
                   href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                 - name: Preguntas más frecuentes sobre la protección antimalware
                   href: ./office-365-security/anti-malware-protection-faq-eop.md
-                - name: Protección contra correo electrónico no deseado y antimalware en Office 365
+                - name: Protección contra malware
                   href: ./office-365-security/anti-malware-protection.md
                 - name: Preguntas más frecuentes sobre protección contra correo electrónico no deseado
                   href: ./office-365-security/anti-spam-protection-faq.md
