@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 0d47ce82b5138827c4ae1c1ea29c902a8cd77cc0
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230218"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233881"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Administrar tickets a través de ServiceNow
 
@@ -107,7 +107,7 @@ Establezca la configuración de la tabla "registros de aplicación" en default:
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Cómo validar la entidad de OAuth creada para el conector de cumplimiento de & de seguridad de Microsoft 365
 
-Vaya a la tabla registros de aplicaciones (menú > el registro de aplicaciones de OAuth > sistema) en ServiceNow y busque la entidad OAuth que ha creado el usuario (nombre que le ha asignado).
+Vaya a la tabla registros de aplicaciones (**menú > el registro de aplicaciones de oauth > sistema**) en ServiceNow y busque la entidad OAuth que ha creado, con el nombre que le ha asignado.
 
 ### <a name="logging-in-as-the-integration-user"></a>Inicio de sesión como usuario de integración
 
@@ -121,13 +121,13 @@ Antes de autorizar la conexión entre el centro de seguridad de Microsoft 365 y 
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Cómo validar el usuario de integración creado con la lista de comprobación de instalación para el conector de seguridad & cumplimiento de Microsoft 365
 
-Vaya a la tabla de usuarios (menú > usuarios de > de administración de usuarios) en ServiceNow y busque el usuario de integración creado por usted (nombre que le ha asignado).
+Vaya a la tabla de usuarios **(menú > User Administration >** users) en ServiceNow y busque el usuario de integración creado por usted, con el nombre que le haya asignado.
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>Su empresa tiene habilitado el inicio de sesión único, lo que le impide conectarse a ServiceNow a través del centro de seguridad de Microsoft 365
 
 Si su compañía ha habilitado el inicio de sesión único y recibe un error o el inicio de sesión es incorrecto, siga una de las dos soluciones.
 
-#### <a name="logging-into-servicenow-as-the-integration-user"></a>Iniciar sesión en ServiceNow como usuario de integración
+#### <a name="log-into-servicenow-as-the-integration-user"></a>Inicie sesión en ServiceNow como usuario de integración
 
 1. Vuelva a navegar a la página Authorization en ServiceNow.
 2. Seleccione el vínculo **que desee** en la esquina superior derecha.
@@ -142,4 +142,5 @@ Si su compañía ha habilitado el inicio de sesión único y recibe un error o e
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>La instalación se ha completado, pero no ve los vales y no se puede compartir
 
-Si se han completado los pasos de instalación y configuración, pero no ve las tarjetas de ServiceNow en la Página principal y no puede compartir con ServiceNow desde la puntuación segura de Microsoft, compruebe el estado de la página https://security.microsoft.com/ticketProvisioningde aprovisionamiento en. Seleccione **Guardar** y volver a la Página principal. Deben aparecer las tarjetas.
+Si se han completado los pasos de instalación y configuración, pero no ve las tarjetas de ServiceNow en la Página principal y no puede compartir con ServiceNow desde la puntuación segura de Microsoft, compruebe el estado de la página https://security.microsoft.com/ticketProvisioningde aprovisionamiento en. Seleccione **autorizar** y volver a la Página principal. Deben aparecer las tarjetas.
+

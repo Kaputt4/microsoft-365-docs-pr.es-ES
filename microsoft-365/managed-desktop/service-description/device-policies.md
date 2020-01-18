@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 479aa8888a3a8e67c51cb7edf14747c840295a4f
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: d8de760fb4690af6675b67678b2441773993a8e5
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823722"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233921"
 ---
 # <a name="device-configuration"></a>Configuración de dispositivos
 
@@ -37,7 +37,8 @@ Línea de base de seguridad | [Microsoft Security Baseline](https://docs.microso
 Plantilla de seguridad recomendada para escritorio administrado de Microsoft | Un conjunto de cambios recomendados en la línea de base de seguridad que optimizan la experiencia del usuario.  Estos cambios se documentan en [el apéndice de seguridad](#security-addendum). Las actualizaciones del anexo de Directiva se producen según sea necesario.  
 Implementación de la actualización | Use Windows Update para empresas para realizar la implementación gradual de las actualizaciones de software. Los administradores de ti no pueden modificar la configuración de las directivas de grupo de implementación. Para obtener más información sobre la implementación basada en grupos, vea [cómo se administran las actualizaciones en el escritorio administrado por Microsoft](updates.md).
 Datos de diagnóstico | Los dispositivos se configurarán para proporcionar datos de diagnóstico mejorados a Microsoft en un identificador comercial conocido. Como parte del escritorio administrado de Microsoft, los administradores de ti no pueden cambiar esta configuración. Para los clientes de las regiones generales del Reglamento de protección de datos (RGPD), los usuarios finales pueden reducir el nivel de datos de diagnóstico que se proporciona, pero habrá una reducción del servicio. Por ejemplo, el escritorio administrado de Microsoft no podrá recopilar los datos necesarios para iterar en las configuraciones y directivas que mejor se adapten a las necesidades de rendimiento y seguridad. Para obtener más información, vea [Configure Windows Diagnostic Data in your Organization.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
-Conexiones de uso medido | De forma predeterminada, las actualizaciones en conexiones de uso medido (como las redes LTE) están desactivadas, aunque cada usuario puede activar de forma independiente esta característica en la **configuración > actualizaciones > opciones avanzadas**. Si desea permitir que todos los usuarios habiliten las actualizaciones a través de conexiones de uso medido, [envíe una solicitud de cambio](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support), que se activará en todos los dispositivos.
+Conexiones de uso medido | De forma predeterminada, las actualizaciones en conexiones de uso medido (como las redes LTE) están desactivadas, aunque cada usuario puede activar de forma independiente esta característica en la **configuración > actualizaciones > opciones avanzadas**. Si desea permitir que todos los usuarios habiliten las actualizaciones a través de conexiones de uso medido, [envíe una solicitud de cambio](../working-with-managed-desktop/admin-support.md), que se activará en todos los dispositivos.
+| Cumplimiento de dispositivos | Estas directivas se configuran para todos los dispositivos de escritorio administrados por Microsoft. Se notifica que un dispositivo no es compatible cuando se deriva de nuestra configuración de seguridad necesaria.
 
  ## <a name="security-addendum"></a>Apéndice de seguridad
 

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 65497522907a4bfc8e2e3d55ccd3a82cde9b8bb7
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230198"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233891"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -165,7 +165,7 @@ Se quitarán las siguientes acciones para la mejora de Intune:
 
 ### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Eliminación de acciones de mejora que no cumplen las expectativas para una medida fiable
 
-Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quita la siguiente acción de mejora.
+Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quitan las siguientes acciones de mejora.
 
 - Activar la grabación de datos de auditoría
 - Descubra aplicaciones de TI de instantáneas arriesgadas y no compatibles
@@ -182,7 +182,7 @@ Los tres que se quitarán:
 - Requerir MFA para todos los usuarios
 - Requerir MFA para los roles privilegiados de Azure AD
 
-Nuevas acciones de mejora:
+Nuevas acciones de mejora agregadas:
 
 - Asegurarse de que todos los usuarios puedan completar la autenticación multifactor para el acceso seguro
 - Requerir MFA para roles administrativos
@@ -201,7 +201,7 @@ Para estandarizar puntos en varias experiencias, se actualizará el total del pu
 
 ### <a name="preview-features"></a>Versión preliminar de las características
 
-Las siguientes características se incluirán en la versión preliminar:
+Las siguientes características se incluirán en la [versión preliminar](microsoft-secure-score-preview.md):
 
 * Todas las nuevas métricas y vistas de tendencias para CISO y discusiones de nivel de liderazgo
 * Nuevas formas de realizar un seguimiento y evaluar su puntuación
