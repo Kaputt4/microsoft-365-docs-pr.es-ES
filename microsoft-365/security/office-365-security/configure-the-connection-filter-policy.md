@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Para asegurarse de que el correo electrónico enviado por personas de confianza no está bloqueado, puede usar la Directiva de filtro de conexión para crear una lista de permitidos, también conocida como lista de remitentes seguros, de las direcciones IP en las que confía. También puede crear una lista de remitentes bloqueados.
-ms.openlocfilehash: d3151ab436c5d904897d518fa119d52a11db4850
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971838"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238427"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar la directiva de filtro de conexión
 
@@ -29,7 +29,7 @@ La mayoría de nosotros tenemos amigos y socios comerciales en los que confiamos
 
 - Una directiva de filtro de conexión que crea una lista de bloqueo puede considerarse como la detección de menos o con cuentas no fidedignas en el filtro en su lugar.
 
- Para obtener más opciones de configuración de correo no deseado que se aplican a toda la organización, eche un vistazo [a cómo evitar que el correo electrónico correcto se marque como correo no deseado en office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) o [cómo reducir el correo no deseado en Office 365](reduce-spam-email.md). Estos son útiles si tiene control de nivel de administrador y desea evitar falsos positivos o negativos falsos.
+ Para obtener más opciones de configuración de correo no deseado que se aplican a toda la organización, eche un vistazo [a cómo evitar que el correo electrónico correcto se marque como correo no deseado en office 365](prevent-email-from-being-marked-as-spam.md) o [cómo reducir el correo no deseado en Office 365](reduce-spam-email.md). Estos son útiles si tiene control de nivel de administrador y desea evitar falsos positivos o negativos falsos.
 
 > [!TIP]
 > Puede que quiera pausar y leer sobre cómo crear listas de bloqueo [(o remitentes seguros)](create-safe-sender-lists-in-office-365.md) y [bloquear listas](create-block-sender-lists-in-office-365.md).
@@ -157,6 +157,6 @@ Básicamente es el mismo procedimiento de creación de reglas desde el [ámbito 
 
 [Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md)
 
-[Cómo evitar que un buen correo electrónico se marque como correo no deseado en Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Evitar que el correo electrónico deseado se marque como correo no deseado en Office 365](prevent-email-from-being-marked-as-spam.md)
 
 [Cómo reducir el correo no deseado en Office 365](reduce-spam-email.md)

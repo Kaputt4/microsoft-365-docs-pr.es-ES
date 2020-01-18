@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Usted y sus usuarios pueden enviar mensajes de correo no deseado falsos negativos y falsos positivos a Microsoft para su análisis. '
-ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 6ca4c99d5e8803fdf7f41ff00cc2a5e65ab38049
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959648"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238437"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis
 
@@ -68,7 +68,7 @@ Para enviar un mensaje de correo no deseado o de suplantación de identidad (phi
 
 Si un mensaje se identificó incorrectamente como correo no deseado, puede enviar el mensaje "falso positivo" al equipo de análisis de correo no deseado de Microsoft. Los analistas evaluarán y analizarán el mensaje. Según los resultados del análisis, se podrían ajustar las reglas de filtro de contenido de correo no deseado de todo el sistema a fin de permitir que pase el mensaje.
   
-Los administradores pueden revisar más información de configuración de correo no deseado que se aplica a toda la organización. Vea [Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](../../compliance/prevent-email-from-being-marked-as-spam.md). Esta información es útil si tiene control de nivel de administrador y desea evitar falsos positivos.
+Los administradores pueden revisar más información de configuración de correo no deseado que se aplica a toda la organización. Vea [Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](prevent-email-from-being-marked-as-spam.md). Esta información es útil si tiene control de nivel de administrador y desea evitar falsos positivos.
   
 Puede enviar mensajes seguros de las maneras siguientes:
   
@@ -122,7 +122,7 @@ La evaluación del correo no deseado es un proceso continuo que se aplica indepe
 
 [Protección contra correo no deseado y malware](anti-spam-and-anti-malware-protection.md)
   
-[Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](prevent-email-from-being-marked-as-spam.md)
   
 [Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar problemas de negativos falsos](reduce-spam-email.md)
   

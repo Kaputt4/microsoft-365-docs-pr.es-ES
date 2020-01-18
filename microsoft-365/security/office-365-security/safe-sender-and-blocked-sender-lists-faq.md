@@ -13,18 +13,18 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: Como administrador de Exchange Online o Exchange Online Protection (EOP), puede ayudar a garantizar que un mensaje de correo que pasa a través del servicio no se marque como correo no deseado. Una forma de hacerlo es crear listas de remitentes bloqueados y de remitentes seguros para las personas de su organización.
-ms.openlocfilehash: 5530fa8c8ee5a83c4e8515a8f31f91e45b2ec97b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 9c281460aeff64226343af5e5608ccf42fc83799
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971678"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238397"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listas de remitentes seguros y bloqueados en Exchange Online
 
 Como administrador de Exchange Online o Exchange Online Protection (EOP), puede ayudar a garantizar que un mensaje de correo que pasa a través del servicio no se marque como correo no deseado. Una forma de hacerlo es crear listas de remitentes bloqueados y de remitentes seguros para las personas de su organización.
 
-*Vea la versión actualizada de las sugerencias y los procedimientos para trabajar con estas listas como administrador de* [Cómo evitar que el correo electrónico correcto se marque como correo no deseado en Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam).
+*Vea la versión actualizada de las sugerencias y los procedimientos para trabajar con estas listas como administrador de* [Cómo evitar que el correo electrónico correcto se marque como correo no deseado en Office 365](prevent-email-from-being-marked-as-spam.md).
 
 Si no es un administrador y solo desea administrar su propio correo electrónico no deseado en Outlook mediante una lista de remitentes seguros, consulte los pasos de la[información general del filtro de correo electrónico no deseado](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 

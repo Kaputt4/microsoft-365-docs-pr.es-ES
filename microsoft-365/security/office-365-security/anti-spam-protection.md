@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la configuración y los filtros contra correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Office 365. ¿Obtengo mucho correo no deseado en Office 365? Puede personalizar los filtros de correo no deseado y la configuración de la Directiva contra correo no deseado.
-ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 33a1415306dcfc635e6c5608f3834b79932d9420
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970906"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238537"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protección contra spam para el correo electrónico de Office 365
 
@@ -34,7 +34,7 @@ Este artículo está destinado a los administradores de Office 365. Si no es adm
 
 Para los clientes que tienen Office 365 Enterprise E5 o han adquirido licencias de protección contra amenazas avanzada (ATP), la inteligencia de identidad utiliza el filtrado de conexiones para crear listas de permitidos y bloqueados de remitentes que suplantan el dominio. Para obtener más información, vea más información [sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).
 
- **Filtrado de correo no deseado**: Office 365 comprueba si hay características de mensajes coherentes con el correo no deseado mediante el filtrado de correo no deseado. Puede cambiar las acciones que se deben realizar en los mensajes identificados como correo no deseado y elegir si desea filtrar los mensajes escritos en idiomas específicos o enviados desde países o regiones específicos. También puede activar las opciones avanzadas de filtrado de correo no deseado si desea seguir un enfoque agresivo del filtrado de correo no deseado. Además, puede configurar notificaciones de correo no deseado para el usuario final para informar a los usuarios de que los mensajes dirigidos a ellos se han enviado a la cuarentena en su lugar. (El envío de mensajes a la cuarentena es una de las acciones configurables). A partir de estas notificaciones, los usuarios finales pueden liberar falsos positivos y notificarlos a Microsoft para su análisis. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). Para ayudar a evitar el correo no deseado en Office 365, use el filtrado de correo no deseado, si le preocupa que haya demasiado correo no deseado en Office 365, use el filtrado de conexiones para ayudar a evitar el correo no deseado.
+ **Filtrado de correo no deseado**: Office 365 comprueba si hay características de mensajes coherentes con el correo no deseado mediante el filtrado de correo no deseado. Puede cambiar las acciones que se deben realizar en los mensajes identificados como correo no deseado y elegir si desea filtrar los mensajes escritos en idiomas específicos o enviados desde países o regiones específicos. También puede activar las opciones avanzadas de filtrado de correo no deseado si desea seguir un enfoque agresivo del filtrado de correo no deseado. Además, puede configurar notificaciones de correo no deseado para el usuario final para informar a los usuarios de que los mensajes dirigidos a ellos se han enviado a la cuarentena en su lugar. (El envío de mensajes a la cuarentena es una de las acciones configurables). A partir de estas notificaciones, los usuarios finales pueden liberar falsos positivos y notificarlos a Microsoft para su análisis. Para obtener más información, consulte [Configure sus políticas de filtro de correo no deseado](configure-your-spam-filter-policies.md). Para ayudar a evitar el correo no deseado en Office 365, use el filtrado de correo no deseado, si le preocupa que haya demasiado correo no deseado en Office 365, use el filtrado de conexiones para ayudar a evitar el correo no deseado.
 
 > [!NOTE]
 > Para clientes independientes de EOP: de manera predeterminada, los filtros de correo no deseado de EOP envían mensajes detectados como correo no deseado a la carpeta de correo no deseado de cada destinatario. Sin embargo, para asegurarse de que la acción **mover el mensaje a la carpeta correo no deseado** funcionará con los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en los servidores locales para detectar los encabezados de correo no deseado agregados por EOP. Para más información, consulte [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
@@ -73,7 +73,7 @@ Si está preocupado por el correo no deseado, la suplantación de identidad (phi
 
 [Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](anti-spam-protection-faq.md)
 
-[Impedir falsos positivos de correo electrónico marcado como correo no deseado con una lista segura u otras técnicas](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Impedir falsos positivos de correo electrónico marcado como correo no deseado con una lista segura u otras técnicas](prevent-email-from-being-marked-as-spam.md)
 
 [Cómo configurar el filtrado de correo no deseado de Office 365 para ayudar a bloquear los mensajes de correo no deseado](reduce-spam-email.md)
 
