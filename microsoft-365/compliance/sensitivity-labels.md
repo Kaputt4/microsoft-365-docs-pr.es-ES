@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger su contenido confidencial, a la vez que se asegura de que la productividad y la capacidad de colaboración de su personal no se vea obstaculizada. Puede utilizar etiquetas de confidencialidad para aplicar configuraciones de protección que incluyan el cifrado y las marcas de agua en el contenido etiquetado.
-ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 91dd28284ad83ec8505f52d380284e31dc9882d5
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023354"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233841"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -178,7 +178,7 @@ Si bien la prioridad es importante en las directivas de etiqueta de confidencial
 
 ## <a name="how-to-get-started-with-sensitivity-labels"></a>Introducción a las etiquetas de confidencialidad
 
-Comenzar a utilizar las etiquetas de confidencialidad es un proceso rápido:
+Siga este proceso para empezar a usar las etiquetas de confidencialidad:
 
 1. **Defina las etiquetas.** En primer lugar, establezca su taxonomía para definir los diferentes niveles de confidencialidad del contenido Utilice nombres o términos comunes que tengan sentido para sus usuarios. Por ejemplo, puede empezar con etiquetas como Personal, Público, General, Confidencial y Altamente confidencial. Puede utilizar subetiquetas para agrupar etiquetas similares por categoría. Además, cuando crea una etiqueta, se requiere una sugerencia de herramienta, que aparece en las aplicaciones de Office cuando un usuario pasa el cursor sobre una opción de etiqueta en la cinta.
 
@@ -189,6 +189,8 @@ Comenzar a utilizar las etiquetas de confidencialidad es un proceso rápido:
 Aquí se muestran los pasos básicos que llevan a cabo el administrador, el usuario y la aplicación de Office para hacer funcionar las etiquetas de confidencialidad.
 
 ![Diagrama que muestra el flujo de trabajo de las etiquetas de confidencialidad](media/Sensitivity-label-flow.png)
+
+Para obtener información sobre procedimientos, consulte [ Crear y configurar etiquetas de confidencialidad y sus directivas ](create-sensitivity-labels.md).
 
 ## <a name="where-sensitivity-labels-can-appear"></a>Dónde pueden aparecer las etiquetas de confidencialidad
 
