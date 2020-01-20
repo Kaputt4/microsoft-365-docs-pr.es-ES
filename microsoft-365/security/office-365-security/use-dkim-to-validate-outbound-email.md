@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
-ms.openlocfilehash: 350a8aa793270522b3ca79b9f0fda09c49f21a62
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 7861e2c0009b34d558d64a87a44a10cc3c953b3c
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971648"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233781"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
@@ -61,10 +61,7 @@ En este artículo:
 
 - [Pasos siguientes: Después de configurar DKIM para Office 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
-> [!NOTE]
-> Microsoft 365 es compatible con el usuario de 1024 bits ó DKIM de 2048 bits. Si utiliza 1024 y quiere configurar DKIM de 2048 bits, no se pierda los pasos para rotar la configuración de firma DKIM en este artículo. A finales de 2019, Microsoft será compatible con claves de 2048 bits de forma predeterminada para todos los clientes.
-
-## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>Cómo DKIM funciona mejor que solo SPF para evitar la suplantación de identidad malintencionada en Office 365
+## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>Cómo DKIM funciona mejor que SPF solo para evitar la suplantación de identidad malintencionada en Office 365
 <a name="HowDKIMWorks"> </a>
 
 SPF agrega información a un sobre del mensaje pero DKIM cifra realmente una firma dentro del encabezado del mensaje. Cuando reenvía un mensaje, el servidor de reenvío puede quitar partes de ese sobre del mensaje. Como la firma digital permanece en el mensaje de correo electrónico porque forma parte del encabezado del correo, DKIM funciona incluso cuando un mensaje se ha reenviado como se muestra en el siguiente ejemplo.
