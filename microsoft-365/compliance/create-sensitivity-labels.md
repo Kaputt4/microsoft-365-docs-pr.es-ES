@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los documentos y correos electrónicos de su organización.
-ms.openlocfilehash: 200b101b0083abbba90eaced9720db854ff02bbb
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: edcfcf5a4f4891e4e1159c4c42327e59ceb35449
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233870"
+ms.locfileid: "41238407"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -30,7 +30,18 @@ En primer lugar, cree y configure las etiquetas de confidencialidad que quiera q
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Crear y configurar etiquetas de confidencialidad
 
-1. En el centro de administración de etiquetas, desplácese hasta **Clasificación** > **Etiquetas de confidencialidad**.
+1. En el centro de administración de etiquetas, desplácese hasta etiquetas de confidencialidad:
+    
+    - Centro de cumplimiento de Microsoft 365: 
+        - **Soluciones** > **Protección de la información (versión preliminar)**
+        
+        Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**. 
+    
+    - Centro de seguridad de Microsoft 365: 
+        - **Clasificación** > **Etiquetas de confidencialidad**
+    
+    - Centro de seguridad y cumplimiento de Office 365:
+        - **Clasificación** > **Etiquetas de confidencialidad**
 
 2. En la pestaña **Etiquetas**, seleccione **+Crear una etiqueta** para iniciar el asistente de ** Nueva etiqueta de confidencialidad**.
 
