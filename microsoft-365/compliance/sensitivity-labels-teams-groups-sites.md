@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede aplicar etiquetas en Microsoft Teams, en grupos de Office 365 y en sitios de SharePoint.
-ms.openlocfilehash: 4a8cf810ba29c2bb025b50e1529081a1a9ba6843
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: 0b5c4e8ef3611b417c59f7ac5b36f83a799e3397
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966898"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238447"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)
 
@@ -148,7 +148,7 @@ Una vez se crea y se publica una etiqueta de confidencialidad, puede tardar hast
 
 3. Cuando transcurran 24 horas, utilice una de las cuentas de usuario que especificó en el paso 1 para crear un equipo, un grupo de Office 365 o un sitio de SharePoint con la etiqueta creada en el paso 1.
 
-4. Si no se han producido errores durante la operación de creación del paso 3, publique la etiqueta para todos los usuarios de su espacio empresarial. Si hay errores, póngase en contacto con el soporte técnico de Microsoft.
+4. Si no se han producido errores durante la operación de creación del paso 3, publique la etiqueta para todos los usuarios de su espacio empresarial. Si hay errores, póngase en contacto con el [Soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 **Modificar y eliminar etiquetas publicadas:**
 
@@ -160,14 +160,14 @@ Si modifica o elimina una etiqueta de confidencialidad incluida en una o varias 
 
 3. Transcurrida la espera de 48 horas, pruebe a crear un equipo, grupo o sitio y compruebe que la etiqueta ya no es visible.
 
-4. Si la etiqueta de confidencialidad no es visible, ya la puede modificar o eliminar de forma segura. Si la etiqueta sigue visible, póngase en contacto con el soporte técnico de Microsoft.
+4. Si la etiqueta de confidencialidad no es visible, ya la puede modificar o eliminar de forma segura. Si la etiqueta sigue visible, póngase en contacto con el [Soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>Resolución de problemas de implementación de etiquetas de confidencialidad
 
 ### <a name="labels-not-visible-after-publishing"></a>Las etiquetas no son visibles tras su publicación
 Si tiene problemas al crear un equipo o un grupo de Office 365 después de habilitar esta configuración o de modificar la descripción de una etiqueta de confidencialidad, guarde la etiqueta, espere algunas horas y, a continuación, vuelva a intentar crear el equipo o grupo. Para obtener más información, consulte [Programar la implementación tras crear o cambiar una etiqueta de confidencialidad](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
 
-Si sigue sin poder ver la nueva etiqueta de confidencialidad desde SharePoint Online, póngase en contacto con el soporte técnico de Microsoft.
+Si sigue sin poder ver la nueva etiqueta de confidencialidad desde SharePoint Online, póngase en contacto con el [Soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ### <a name="team-group-or-sharepoint-site-creation-errors"></a>Errores de creación de equipo, grupo o sitio de SharePoint
 Si experimenta errores de creación durante la versión preliminar pública, tiene dos opciones:
