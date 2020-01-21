@@ -11,16 +11,16 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar las páginas de empresa de Facebook a Office 365. Una vez que estos datos se han importado a Office 365, puede usar las características de cumplimiento, como las directivas de retención legal, búsqueda de contenido y retención, para administrar el gobierno de los datos de Facebook de la organización.
-ms.openlocfilehash: e1ab281b8a3b684f408f80f86246778a9ee6267d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bb348c6e08151d63e92973d3f262704357e40814
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806263"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247483"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data"></a>Implementación de un conector para archivar datos de Facebook
 
-Este artículo contiene el proceso paso a paso para implementar un conector que usa el servicio de importación de Office 365 para importar datos de las páginas empresariales de Facebook a Office 365. Para obtener una descripción general de este proceso y una lista de los requisitos previos necesarios para implementar un conector de Facebook, vea [usar un conector de ejemplo para archivar datos de Facebook en Office 365 (versión preliminar)](archive-facebook-data-with-sample-connector.md). 
+Este artículo contiene el proceso paso a paso para implementar un conector que usa el servicio de importación de Office 365 para importar datos de las páginas empresariales de Facebook a Office 365. Para obtener información general de alto nivel de este proceso y una lista de los requisitos previos necesarios para implementar un conector de Facebook, vea [usar un conector para archivar datos de Facebook en Office 365 (versión preliminar)](archive-facebook-data-with-sample-connector.md). 
 
 ## <a name="step-1-download-the-package"></a>Paso 1: descargar el paquete
 

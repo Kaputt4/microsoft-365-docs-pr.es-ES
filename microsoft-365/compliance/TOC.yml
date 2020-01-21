@@ -16,24 +16,10 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Planificación de la seguridad y el cumplimiento en Office 365
       href: plan-for-security-and-compliance.md
-- name: Administración de riesgos internos
+- name: Administrar los riesgos de Insider
   items:
     - name: Proteger el acceso de usuario y de dispositivo
       href: protect-access-to-data-and-services.md
-    - name: Caja de seguridad del cliente
-      href: customer-lockbox-requests.md
-    - name: Privileged Access Management
-      items:
-        - name: Obtenga más información sobre la administración del acceso con privilegios
-          href: privileged-access-management-overview.md
-        - name: Configurar la administración del acceso con privilegios
-          href: privileged-access-management-configuration.md
-    - name: Clave del cliente
-      items:
-        - name: Controlar los datos en Office 365 con la clave de cliente
-          href: controlling-your-data-using-customer-key.md
-        - name: Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365
-          href: service-encryption-with-customer-key-faq.md
     - name: Cumplimiento de la comunicación (versión preliminar)
       items:
         - name: Obtener más información sobre el cumplimiento de las comunicaciones (versión preliminar)
@@ -59,13 +45,27 @@
           href: information-barriers-troubleshooting.md
         - name: Editar directivas de barreras de información
           href: information-barriers-edit-segments-policies.md
+    - name: Privileged Access Management
+      items:
+        - name: Obtenga más información sobre la administración del acceso con privilegios
+          href: privileged-access-management-overview.md
+        - name: Configurar la administración del acceso con privilegios
+          href: privileged-access-management-configuration.md
+    - name: Clave del cliente
+      items:
+        - name: Controlar los datos en Office 365 con la clave de cliente
+          href: controlling-your-data-using-customer-key.md
+        - name: Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365
+          href: service-encryption-with-customer-key-faq.md
+    - name: Caja de seguridad del cliente
+      href: customer-lockbox-requests.md
 - name: Administrar la protección de la información
   href: protect-information.md
   items:
     - name: Etiquetas de confidencialidad
       href: sensitivity-labels.md
       items:
-        - name: Crear y publicar etiquetas de confidencialidad
+        - name: Crear y administrar etiquetado de confidencialidad
           href: create-sensitivity-labels.md
         - name: Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
           href: encryption-sensitivity-labels.md
@@ -214,6 +214,8 @@
           href: archive-linkedin-data.md
         - name: Configurar un conector para archivar datos instantáneos de Bloomberg
           href: archive-instant-bloomberg-data.md
+        - name: Configurar un conector para importar datos de recursos humanos
+          href: import-hr-data.md
         - name: Trabajar con un socio para archivar datos de terceros
           href: work-with-partner-to-archive-third-party-data.md
     - name: Almacenar datos

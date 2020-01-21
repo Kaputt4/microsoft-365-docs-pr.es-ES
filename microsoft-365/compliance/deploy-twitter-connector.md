@@ -11,16 +11,16 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar datos de Twitter a Office 365. Una vez que estos datos se han importado a Office 365, puede usar las características de cumplimiento, como las directivas de retención legal, búsqueda de contenido y retención, para administrar el gobierno de los datos de Twitter de la organización.
-ms.openlocfilehash: 87faad6546d70b1e3893e2f5737af189ebb5f77b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ee15086c6389fa2d2e7d07412ab533301cd8a842
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806153"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247473"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Implementar un conector para archivar datos de Twitter
 
-Este artículo contiene el proceso paso a paso para implementar un conector que usa el servicio de importación de Office 365 para importar datos de la cuenta de Twitter de su organización a Office 365. Para obtener información general de alto nivel de este proceso y una lista de los requisitos previos necesarios para implementar un conector de Twitter, vea [usar un conector de ejemplo para archivar datos de Twitter en Office 365 (versión preliminar)](archive-twitter-data-with-sample-connector.md). 
+Este artículo contiene el proceso paso a paso para implementar un conector que usa el servicio de importación de Office 365 para importar datos de la cuenta de Twitter de su organización a Office 365. Para obtener información general de alto nivel de este proceso y una lista de los requisitos previos necesarios para implementar un conector de Twitter, vea [usar un conector para archivar datos de Twitter en Office 365 (versión preliminar)](archive-twitter-data-with-sample-connector.md). 
 
 ## <a name="step-1-download-the-package"></a>Paso 1: descargar el paquete
 
