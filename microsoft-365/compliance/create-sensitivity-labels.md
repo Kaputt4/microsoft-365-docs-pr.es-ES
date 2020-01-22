@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los documentos y correos electrónicos de su organización.
-ms.openlocfilehash: edcfcf5a4f4891e4e1159c4c42327e59ceb35449
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 964fd20d6ada935d2a76ca0bffccc5bf46161c58
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238407"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247463"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -53,7 +53,10 @@ En primer lugar, cree y configure las etiquetas de confidencialidad que quiera q
 
 5. Cuando haya creado todas las etiquetas que necesita, revise el pedido y, si es necesario, muévalos hacia arriba o hacia abajo. Para cambiar el orden de una etiqueta, seleccione **...** para **Más acciones**y, a continuación, seleccione **Subir** o **Bajar**. Para obtener más información, consulte [Prioridad de etiquetas (el orden importa)](sensitivity-labels.md#label-priority-order-matters) en la parte de información general.
 
-Para editar una etiqueta existente, selecciónela y, a continuación, seleccione **Editar etiqueta**. Se iniciará el asistente para **Editar etiquetas de confidencialidad**, lo que le permite cambiar todas las configuraciones de la etiqueta en el paso 3. Si la etiqueta ya se ha publicado con una directiva de etiqueta, no se necesitan pasos adicionales, pero permita que pasen por lo menos 24 horas para que los cambios se repitan en los usuarios y las ubicaciones.
+Para editar una etiqueta existente, selecciónela y, a continuación, seleccione **Editar etiqueta**. Se iniciará el asistente para **Editar etiquetas de confidencialidad**, lo que le permite cambiar todas las configuraciones de la etiqueta en el paso 3. 
+
+> [!NOTE]
+> Si edita una etiqueta ya publicada con una directiva de etiqueta, no necesita realizar pasos adicionales cuando finalice el asistente. Por ejemplo, no es necesario agregarla a una nueva Directiva de etiqueta. Sin embargo, sí debe dar un margen de 24 horas para que los cambios realizados se apliquen a los usuarios y servicios.
 
 Hasta que publique las etiquetas, no estarán disponibles para seleccionarlas en aplicaciones o en servicios. Para publicar las etiquetas, deben agregarse a una directiva de etiqueta.
 
@@ -67,7 +70,18 @@ Con este cmdlet, también puede especificar [ opciones avanzadas ](https://docs.
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publicar etiquetas de sensibilidad mediante la creación de una directiva de etiqueta
 
-1. En el centro de administración de etiquetas, desplácese hasta **Clasificación** > **Etiquetas de confidencialidad**.
+1. En el centro de administración de etiquetas, desplácese hasta etiquetas de confidencialidad:
+    
+    - Centro de cumplimiento de Microsoft 365: 
+        - **Soluciones** > **Protección de la información (versión preliminar)**
+        
+        Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**. 
+    
+    - Centro de seguridad de Microsoft 365: 
+        - **Clasificación** > **Etiquetas de confidencialidad**
+    
+    - Centro de seguridad y cumplimiento de Office 365:
+        - **Clasificación** > **Etiquetas de confidencialidad**
 
 2. Seleccione la pestaña ** Directiva de etiquetas **.
 
@@ -87,7 +101,9 @@ Con este cmdlet, también puede especificar [ opciones avanzadas ](https://docs.
 
 Al completar el asistente, se publica automáticamente la directiva de etiqueta. Para realizar cambios en una directiva publicada, solo tiene que editarla. No es necesario que seleccione una acción específica para publicar o volver a publicar.
 
-Para editar una directiva de etiquetas existente, selecciónela y, a continuación, seleccione **Editar directiva **. Se iniciará el asistente para ** Crear directivas **, que le permite editar las etiquetas que se incluirán y su configuración. Cuando finalice el asistente, todos los cambios se repetirán automáticamente en los usuarios y ubicaciones seleccionados. Deje que pasen por lo menos 24 horas para que la replicación se complete.
+Para editar una directiva de etiquetas existente, selecciónela y, a continuación, seleccione **Editar directiva **. Se iniciará el asistente para ** Crear directivas **, que le permite editar las etiquetas que se incluirán y su configuración. Cuando finalice el asistente, todos los cambios se aplicarán automáticamente a los usuarios y servicios seleccionados.
+
+Normalmente, los usuarios pueden ver las etiquetas en las aplicaciones de Office en un par de horas. Sin embargo, dé un margen de hasta 24 horas para que las directivas de etiqueta y los cambios que se realicen en ellas se apliquen a todos los usuarios y servicios.
 
 ### <a name="additional-label-policy-settings-with-office-365-security--compliance-center-powershell"></a>Configuración adicional de las directivas de etiquetas con PowerShell del Centro de seguridad y cumplimiento de Office 365
 
@@ -100,7 +116,7 @@ También puede usar este cmdlet para agregar o quitar etiquetas a una directiva 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para configurar y usar las etiquetas de confidencialidad en escenarios específicos, consulte los artículos siguientes:
+Para configurar y usar las etiquetas de confidencialidad en escenarios específicos, use los artículos siguientes:
 
 - [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
 

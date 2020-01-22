@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: d33844c1bd774f6b53dbbaa428762c4832fccb85
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e70fa5f226b25df72514f75bb20873665d9021f6
+ms.sourcegitcommit: ca06ee52dec472d3827983d67b049847ec2fdfc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806989"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41256556"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Ver los detalles y los resultados de una investigación automatizada
 
@@ -92,6 +92,9 @@ Cuando una investigación automatizada se completa, se llega a un veredicto para
 |Limpiar  |Dispositivos o contenido de correo electrónico   |No es necesario realizar ninguna acción correctiva|
 
 [Revisar una acción pendiente en el centro de actividades](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
+
+> [!TIP]
+> Si cree que algo ha perdido o detectado erróneamente las características de respuesta e investigación automatizada en la protección contra amenazas de Microsoft, háganoslo saber. Consulte [Cómo informar de falsos positivos/negativos en capacidades de investigación y respuesta automatizadas (Air) en la protección contra amenazas de Microsoft](mtp-autoir-report-false-positives-negatives.md).
 
 ## <a name="next-steps"></a>Siguientes pasos
 
