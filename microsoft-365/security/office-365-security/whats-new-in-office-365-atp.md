@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a43576bc18d54e3a5c9b2f9ad918c1df3ee67615
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2ad99943869d3edc16316d90efb9bbfd70a6f18f
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807945"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260228"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -30,10 +30,6 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 > [!TIP]
 > ¿Todavía no tiene Office 365 ATP? [Póngase en contacto con sales para iniciar una versión de prueba](https://go.microsoft.com/fwlink/p/?LinkId=518644).
-
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP Plan 1 y Plan 2
-
-Office 365 ATP está disponible en dos planes: Office 365 el plan 1 de ATP y Office 365 ATP plan 2. [Más información](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 ## <a name="december-2019"></a>Diciembre de 2019
 
@@ -65,8 +61,14 @@ Office 365 ATP está disponible en dos planes: Office 365 el plan 1 de ATP y Off
 
 - [Ver datos sobre las direcciones URL de suplantación de identidad y hacer clic en el veredicto](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP plan 1 o plan 2)
 
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP Plan 1 y Plan 2
+
+¿Sabía que Office 365 ATP está disponible en dos planes? Hay Office 365 ATP plan 1 y Office 365 ATP plan 2. [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+
 ## <a name="see-also"></a>Vea también
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Descripción del servicio ATP de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+[Investigación y respuesta automatizada en la Protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

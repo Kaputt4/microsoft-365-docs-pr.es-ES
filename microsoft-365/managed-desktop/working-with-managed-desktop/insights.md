@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2366c7b9e3c95ee88753ffb7677a7031c8ac9786
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962327"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260108"
 ---
 # <a name="work-with-insights"></a>Trabajar con ideas
 
@@ -40,4 +40,9 @@ Obtenga más información sobre [Usage Insights](usage-insights.md).
 ## <a name="reliability-insights"></a>Información sobre la confiabilidad
 Esta vista le proporciona un resumen de estado de los dispositivos administrados. Para ver los datos de confiabilidad, seleccione la ficha **confiabilidad** .
 
-Obtenga más información acerca de la [confiabilidad](reliability-insights.md)
+Obtenga más información acerca de la [confiabilidad](reliability-insights.md).
+
+## <a name="battery-insights"></a>Información sobre las baterías
+Esta vista muestra información sobre el consumo de energía de las aplicaciones y la duración prevista de la batería para los dispositivos de su entorno. Para ver esta información, seleccione la pestaña **batería** .
+
+Obtenga más información sobre la información sobre las [baterías](battery-insights.md).

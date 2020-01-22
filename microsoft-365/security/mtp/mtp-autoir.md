@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ea3201838e625969a239aee4339e0de605d95c55
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9459b1b8ff431624045c5b57ade531288d41866e
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808615"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260188"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-threat-protection"></a>Investigación y respuesta automatizada (AIR) en la Protección contra amenazas de Microsoft
 
@@ -38,24 +38,26 @@ Imagínese tener un analista virtual en su equipo de operaciones de seguridad de
 
 AIR permite al equipo de operaciones de seguridad aumentar drásticamente la capacidad de la organización para abordar las alertas de seguridad y las incidencias. Con AIR, puede reducir el coste de la gestión de las actividades de investigación y corrección y sacar el máximo partido del conjunto de aplicaciones de protección contra amenazas. AIR ayuda a su equipo de operaciones de seguridad a:
 
-1.  Determinar si una amenaza requiere una acción;
-2.  Llevar a cabo (o recomendar) todas las acciones de corrección necesarias;
-3.  Determinar qué investigaciones adicionales deben realizarse; y
-4.  Repetir el proceso según sea necesario para otras alertas.
+1. Determinar si una amenaza requiere una acción;
+2. Llevar a cabo (o recomendar) todas las acciones de corrección necesarias;
+3. Determinar qué investigaciones adicionales deben realizarse; y
+4. Repetir el proceso según sea necesario para otras alertas.
 
 ## <a name="the-automated-investigation-process"></a>El proceso de investigación automatizada
 
 **Alerta** > **incidente** > **investigación automatizada** > **veredicto** > **acción de corrección**
 
-A grandes rasgos, una alerta activada crea un incidente que puede iniciar una investigación automatizada. Esa investigación puede dar como resultado una o varias acciones correctivas. En la Protección contra amenazas de Microsoft, cada investigación automatizada correlaciona las señales en Azure Advanced Threat Protection (Azure ATP), la Protección contra amenazas avanzada de Microsoft Defender (ATP de Microsoft Defender) y la Protección contra amenazas avanzada de Office 365 (ATP de Office 365), tal y como se resume en la tabla siguiente: 
+Una alerta desencadenada crea un incidente, que puede iniciar una investigación automatizada. Esa investigación puede dar como resultado una o varias acciones correctivas. En la Protección contra amenazas de Microsoft, cada investigación automatizada correlaciona las señales en Azure Advanced Threat Protection (Azure ATP), la Protección contra amenazas avanzada de Microsoft Defender (ATP de Microsoft Defender) y la Protección contra amenazas avanzada de Office 365 (ATP de Office 365), tal y como se resume en la tabla siguiente: 
 
 |Entidades |Servicios de protección contra amenazas  |
 |---------|---------|
 |Dispositivos (también denominados puntos de conexión)     |[ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Contenido de correo electrónico (archivos y mensajes de los buzones)     |[ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-
 En cada investigación se generan veredictos (*Malintencionado*, *Sospechoso* o *Limpio*) para cada elemento que se investiga. En función del tipo de amenaza y el veredicto resultante, las acciones de corrección se ejecutan automáticamente o una vez que el equipo de operaciones de seguridad de la organización las aprueban. Las acciones pendientes y completadas se muestran en el [Centro de actividades](mtp-action-center.md).
+
+> [!TIP]
+> Si cree que algo ha perdido o detectado erróneamente las características de respuesta e investigación automatizada en la protección contra amenazas de Microsoft, háganoslo saber. Consulte [Cómo informar de falsos positivos/negativos en capacidades de investigación y respuesta automatizadas (Air) en la protección contra amenazas de Microsoft](mtp-autoir-report-false-positives-negatives.md).
 
 Durante la ejecución de una investigación, todas las demás alertas relacionadas que puedan surgir se agregarán a la investigación hasta que se finalice. Si se detecta una entidad involucrada en otro lugar, la investigación automatizada ampliará el ámbito para incluir esa entidad y se ejecutará un cuaderno de estrategias de seguridad. 
 

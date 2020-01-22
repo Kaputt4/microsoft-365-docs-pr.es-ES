@@ -73,6 +73,8 @@
                   href: mtp/mtp-autoir-results.md
                 - name: Aprobar o rechazar acciones pendientes
                   href: mtp/mtp-autoir-actions.md
+                - name: Informar de falsos positivos/negativos
+                  href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Búsqueda avanzada
               items:
                 - name: Búsqueda en Microsoft 365

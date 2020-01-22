@@ -83,7 +83,7 @@
               href: get-started/register-reused-devices-self.md
         - name: Prepare a los usuarios para que usen los dispositivos
           href: get-started/get-started-devices.md
-        - name: Implementar aplicaciones
+        - name: Implementar las aplicaciones
           href: get-started/deploy-apps.md
           items:
             - name: Microsoft Project y Microsoft Visio
@@ -98,6 +98,8 @@
               href: working-with-managed-desktop/usage-insights.md
             - name: Información sobre la confiabilidad
               href: working-with-managed-desktop/reliability-insights.md
+            - name: Información sobre las baterías
+              href: working-with-managed-desktop/battery-insights.md
         - name: Soporte de administrador
           href: working-with-managed-desktop/admin-support.md
         - name: Soporte técnico para usuarios finales
