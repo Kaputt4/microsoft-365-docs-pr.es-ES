@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 incluye varios clasificadores listos para usar para el aprendizaje automático que puede usar para identificar y etiquetar el contenido en toda la organización. En este tema se muestra cómo prepararse para usar estos clasificadores listos para usarlos.
-ms.openlocfilehash: 6eaa3689dce1bfb37fdad6b1b22dcac3539bb31e
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: b94a49930cc2d460fb2db5ff4ff0f441f6c7b35a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807419"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259436"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>Usar un clasificador listo para usar (vista previa)
 
@@ -45,7 +45,7 @@ Microsoft ha entrenado y probado varios clasificadores con conjuntos de datos de
 
 2. Cree una carpeta dedicada de SharePoint Online; espere al menos una hora para que la carpeta se agregue al índice de búsqueda. Anote la dirección URL de la carpeta.
 
-3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o con el rol de administrador de seguridad y abra el **centro de cumplimiento** de Microsoft 365 o la ficha**directivas** de la administración de registros del **Centro** > de seguridad de Microsoft 365 **(versión preliminar)** > .
+3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o el rol de administrador de seguridad y abra la ficha**directivas** de administración de registros del **Centro** > de cumplimiento de Microsoft 365 **(versión preliminar)** > .
 
 4. Elija `Auto-apply a label`.
 

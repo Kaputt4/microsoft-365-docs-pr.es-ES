@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use las herramientas de búsqueda y la exhibición de documentos electrónicos de Office 365 para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687867"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259426"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie de soluciones de eDiscovery: escenario de derrame de datos: búsqueda y depuración
 
@@ -54,7 +54,7 @@ A continuación se describe cómo administrar un incidente de derrame de datos:
     
 - Para crear un caso, debe ser miembro del grupo de roles de administrador de eDiscovery o ser miembro de un grupo de roles personalizado que tenga asignado el rol de administración de casos. Si no es miembro, solicite a un administrador de 365 de Office que [le agregue al grupo de roles eDiscovery Manager](assign-ediscovery-permissions.md).
     
-- Para eliminar datos que se han derramado en la organización, debe usar el comando [Search-Mailbox-DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) en Exchange Online PowerShell. Además, para usar el parámetro *DeleteContent* , también debe ser miembro de un grupo de roles en Exchange online que tenga asignada la función de importación y exportación de buzones de correo. Consulte la sección "agregar un rol a un grupo de roles" en [Manage role Groups](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx).
+- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - Para buscar las actividades de eDiscovery del registro de auditoría de Office 365 en el paso 8, la auditoría debe estar activada para su organización. Puede buscar actividades que se han realizado en los últimos 90 días. Para obtener más información acerca de cómo habilitar y usar la auditoría, vea la sección [auditar el proceso de investigación del derrame de datos](#auditing-the-data-spillage-investigation-process) en el paso 8. 
     
@@ -84,7 +84,7 @@ Después de crear una búsqueda de contenido, debe revisar y validar que los res
   
 Si tiene más de 1.000 buzones o más de 100 mensajes de correo electrónico por buzón para revisar, puede dividir la búsqueda inicial en varias búsquedas mediante palabras clave o condiciones adicionales, como el intervalo de fechas o el remitente o el destinatario, y revisar los resultados de cada búsqueda de forma individual. Asegúrese de anotar todas las consultas de búsqueda que debe usar cuando elimine mensajes en el [paso 7](#step-7-permanently-delete-the-spilled-data).
 
-Si se asigna una licencia de Office 36 E5 a un custodio o un usuario final, puede examinar hasta 10.000 resultados de búsqueda a la vez con Office 365 Advanced eDiscovery. Si hay más de 10.000 mensajes de correo electrónico para revisar, puede dividir la consulta de búsqueda por intervalo de fechas y revisar cada resultado individualmente, ya que los resultados de la búsqueda se ordenan por fecha. En la exhibición avanzada de documentos electrónicos, puede marcar los resultados de la búsqueda con la **etiqueta como** característica en el panel de vista previa y filtrar los resultados de búsqueda por la etiqueta que ha etiquetado. Esto es útil cuando se colabora con un revisor secundario. Mediante el uso de herramientas de análisis adicionales en eDiscovery avanzado, como el reconocimiento óptico de caracteres, el subprocesamiento de correo electrónico y la codificación predictiva, puede procesar y revisar rápidamente miles de mensajes y etiquetarlos para revisión posterior. Consulte [Quick Setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
+Si se asigna una licencia de Office 365 E5 a un custodio o un usuario final, puede examinar hasta 10.000 resultados de búsqueda a la vez con Office 365 Advanced eDiscovery. Si hay más de 10.000 mensajes de correo electrónico para revisar, puede dividir la consulta de búsqueda por intervalo de fechas y revisar cada resultado individualmente, ya que los resultados de la búsqueda se ordenan por fecha. En la exhibición avanzada de documentos electrónicos, puede marcar los resultados de la búsqueda con la **etiqueta como** característica en el panel de vista previa y filtrar los resultados de búsqueda por la etiqueta que ha etiquetado. Esto es útil cuando se colabora con un revisor secundario. Mediante el uso de herramientas de análisis adicionales en eDiscovery avanzado, como el reconocimiento óptico de caracteres, el subprocesamiento de correo electrónico y la codificación predictiva, puede procesar y revisar rápidamente miles de mensajes y etiquetarlos para revisión posterior. Consulte [Quick Setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
 
 Cuando encuentre un mensaje de correo electrónico que contenga datos derramados, compruebe los destinatarios del mensaje para determinar si se ha compartido de forma externa. Para seguir trazando un mensaje, puede recopilar información del remitente y un intervalo de fechas para poder usar los registros de seguimiento de mensajes, que se describen en el [paso 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
@@ -136,7 +136,7 @@ Hay dos formas de recopilar una lista de direcciones de correo electrónico de b
     
 2. En la página flotante, haga clic en **ver resultados**.
     
-3. En la lista desplegable **resultados individuales** , haga clic en **estadísticas de búsqueda**.
+3. En la lista desplegable de **resultados individuales**, haga clic en **Estadísticas de búsqueda**.
     
 4. En la lista desplegable **tipo** , haga clic en **ubicaciones superiores**.
     
@@ -168,31 +168,9 @@ Asegúrese de revertir el buzón a configuraciones previas después de comprobar
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Paso 7: eliminar permanentemente los datos derramados
 
-Con las ubicaciones de buzón que recopiló y preparó en el paso 6 y la consulta de búsqueda que se creó y perfeccionó en el paso 3 para buscar mensajes de correo electrónico que contengan los datos derramados, ahora puede eliminar de forma permanente los datos derramados. Como se ha explicado anteriormente, debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online para eliminar mensajes mediante el siguiente procedimiento.
-  
-1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554).
-    
-2. Ejecute el siguiente comando:
-    
-    ```powershell
-    Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
-    ```
+Con las ubicaciones de buzón que recopiló y preparó en el paso 6 y la consulta de búsqueda que se creó y perfeccionó en el paso 3 para buscar mensajes de correo electrónico que contengan los datos derramados, ahora puede eliminar de forma permanente los datos derramados.  Como se ha explicado anteriormente, para eliminar mensajes, debe ser miembro del grupo de roles de administración de la organización o tener asignado el rol de administración de búsqueda y depuración. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-3. Vuelva a ejecutar el comando anterior para cada buzón de correo que contenga los datos derramados; para ello, reemplace el valor del parámetro Identity; por ejemplo:
-
-    ```powershell
-    Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-    ```powershell
-    Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-   ```powershell
-   Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-   ```
-
-Como se mencionó anteriormente, también puede crear un [script de PowerShell](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) y ejecutarlo en una lista de buzones para que el script elimine los datos derramados en cada buzón.
+Para eliminar los mensajes derramados, vea los pasos 2 & 3 en [Buscar y eliminar mensajes de correo electrónico en su organización de Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Paso 8: comprobar, proporcionar una prueba de eliminación y auditoría
 
@@ -214,12 +192,9 @@ Si las palabras clave de la consulta de búsqueda que ha creado y usado en el pa
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación del derrame de datos
 
-Puede buscar en el registro de auditoría de Office 365 las actividades de eDiscovery que se llevaron a cabo durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría que se crearon cuando ejecutó el comando **Search-Mailbox-DeleteContent** para eliminar los datos derramados. Para obtener más información, vea:
+Puede buscar en el registro de auditoría de Office 365 las actividades de eDiscovery que se llevaron a cabo durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría para el comando **New-ComplianceSearchAction-Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para obtener más información, vea:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 
 - [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md)
-
-- Consulte la sección "actividades auditadas-registro de auditoría de administración de Exchange" en [Buscar el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#audited-activities) para obtener instrucciones sobre cómo buscar registros de auditoría relacionados con los cmdlets en Exchange Online.
   
-

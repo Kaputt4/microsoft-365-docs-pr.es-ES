@@ -18,8 +18,24 @@
       href: plan-for-security-and-compliance.md
 - name: Administrar los riesgos de Insider
   items:
-    - name: Proteger el acceso de usuario y de dispositivo
-      href: protect-access-to-data-and-services.md
+    - name: Administración de riesgos de Insider (versión preliminar)
+      items:
+        - name: Obtenga información sobre la administración de riesgos de Insider (versión preliminar)
+          href: insider-risk-management.md
+        - name: Introducción a la administración de riesgos de Insider (versión preliminar)
+          href: insider-risk-management-configure.md
+        - name: Crear y administrar directivas de riesgos del Insider (versión preliminar)
+          href: insider-risk-management-policies.md
+        - name: Investigar las alertas de los riesgos de Insider (versión preliminar)
+          href: insider-risk-management-alerts.md
+        - name: Realizar acciones en casos de riesgo de Insider (versión preliminar)
+          href: insider-risk-management-cases.md
+        - name: Revisar datos con el explorador de contenido de riesgo de Insider (versión preliminar)
+          href: insider-risk-management-content-explorer.md
+        - name: Adición de usuarios a las directivas de riesgos de Insider (versión preliminar)
+          href: insider-risk-management-users.md
+        - name: Crear avisos de riesgos de Insider (versión preliminar)
+          href: insider-risk-management-notices.md
     - name: Cumplimiento de la comunicación (versión preliminar)
       items:
         - name: Obtener más información sobre el cumplimiento de las comunicaciones (versión preliminar)
@@ -57,6 +73,8 @@
           href: controlling-your-data-using-customer-key.md
         - name: Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365
           href: service-encryption-with-customer-key-faq.md
+    - name: Proteger el acceso de usuario y de dispositivo
+      href: protect-access-to-data-and-services.md
     - name: Caja de seguridad del cliente
       href: customer-lockbox-requests.md
 - name: Administrar la protección de la información

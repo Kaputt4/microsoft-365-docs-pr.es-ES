@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión y problemas conocidos de la puntuación de cumplimiento de Microsoft (versión preliminar), una característica del centro de cumplimiento de M365 que ayuda a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: b1054a455b2d2c78cfa6131410941b1a36738a43
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 370c714c927d09a16272f8ab265c7b0c4e36381a
+ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021936"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41261874"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Notas de la versión de calificación de cumplimiento de Microsoft (versión preliminar)
 
@@ -31,9 +31,11 @@ La puntuación de cumplimiento es una nueva característica del [centro de cumpl
 
 Las nuevas plantillas preconfiguradas para evaluaciones se publican en producción para la puntuación de cumplimiento (versión preliminar) a medida que estén disponibles. Compruebe la [lista completa de plantillas aquí](compliance-score.md#templates). Las plantillas agregadas recientemente incluyen:
 
-- ISO 27701:2019
+- Ley de protección de datos general de Brasil (LGPD)
 - IRAP/Australian Government ISM (versión preliminar)
-
+- ISO 27701:2019
+- SOC 1
+- SOC 2
 
 ### <a name="compliance-score-relationship-to-compliance-manager"></a>Relación de puntuación de cumplimiento con el administrador de cumplimiento
 

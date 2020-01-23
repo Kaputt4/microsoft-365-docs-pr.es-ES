@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b881e51f08e201f2870ea979e3f6c8181ab2ea02
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: 54f66932f16e094b2ed970596c35e4754763aafc
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247603"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260097"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Información general sobre el catálogo de soluciones de Microsoft 365 (versión preliminar)
 
@@ -93,7 +93,7 @@ Todavía estamos agregando funcionalidad al centro de cumplimiento de Microsoft 
 
 Si está buscando una solución de cumplimiento existente y no está disponible en el centro de cumplimiento de Microsoft 365, puede tener acceso a las soluciones en el centro de seguridad y cumplimiento de Office 365 en el [https://protection.office.com](https://protection.office.com)centro de seguridad y cumplimiento de Office existente yendo a. Como alternativa, puede hacer clic en la pestaña **más recursos** en el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365 y seleccionar la tarjeta del centro de seguridad y cumplimiento de Office 365.  
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - **Revise su puntuación de cumplimiento de Microsoft**, una puntuación personalizada basada en riesgos para ayudarle a comprender el estado de cumplimiento de la organización con respecto a los estándares y regulaciones clave. Proporciona las acciones recomendadas que puede realizar para fortalecer su postura general de cumplimiento y proporciona funciones de flujo de trabajo que le ayudarán a llevar a cabo esas acciones de manera eficaz. Para obtener más información, consulte [calificación de cumplimiento (vista previa)](compliance-score.md).
 

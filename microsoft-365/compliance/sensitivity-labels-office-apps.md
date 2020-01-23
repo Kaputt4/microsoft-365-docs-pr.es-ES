@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, aplicaciones de Office para dispositivos móviles y aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: 3b8522dea71cd0ece5ec63f07a733e1eb5283a43
-ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
+ms.openlocfilehash: 611497bd485435d5705552cbbffe59286e2b27c8
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41123631"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259968"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -28,7 +28,7 @@ Este artículo describe:
 - Las funciones de etiqueta de confidencialidad que admite cada aplicación de Office.
 - Qué sucede cuando combina las etiquetas de confidencialidad con otras tecnologías de seguridad y cumplimiento de Microsoft que funcionan con las aplicaciones de Office.
 - Cómo pueden usar las personas de su organización las etiquetas de confidencialidad cuando funcionan con las aplicaciones de Office para Windows y las aplicaciones de Office para la Web.
-- Dónde obtener acceso a las personas de su organización que se inician con etiquetas de confidencialidad.
+- Recursos adicionales para ayudar a las personas de su organización a empezar a usar etiquetas de confidencialidad.
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Requisitos de suscripción y licencia para las etiquetas de confidencialidad
 
@@ -66,7 +66,7 @@ Hay disponibles capacidades adicionales al instalar el cliente de etiquetado Uni
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | En revisión                                                        |
 |[Requerir una justificación para cambiar una etiqueta](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Vínculo proporcionar ayuda a una página de ayuda personalizada](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Marcar el contenido](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Marcar el contenido](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
 |[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
@@ -95,17 +95,15 @@ Hay disponibles capacidades adicionales al instalar el cliente de etiquetado Uni
 
 ## <a name="about-the-office-built-in-labeling-client"></a>Información sobre el cliente de etiquetado de Office integrado
 
-El cliente de etiquetado integrado de Office descarga etiquetas y opciones de configuración de directivas desde los siguientes centros de administración:
-
-- Centro de seguridad y cumplimiento de Office 365
-
-- Centro de seguridad de Microsoft 365
+La configuración de directiva de la etiqueta de confidencialidad de descargas de clientes de la etiqueta integrada de Office de los siguientes centros de administración:
 
 - Centro de cumplimiento de Microsoft 365
+- Centro de seguridad de Microsoft 365
+- Centro de seguridad y cumplimiento de Office 365
 
-Para usar el cliente de etiquetado integrado de Office, debe tener una o más directivas de [etiquetas publicadas](sensitivity-labels.md#what-label-policies-can-do) para los usuarios de uno de los centros de administración que aparecen en la lista.
+Para usar el cliente de etiquetado integrado de Office, debe tener una o más directivas de [etiquetas publicadas](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) para los usuarios de uno de los centros de administración que aparecen en la lista.
 
-Sin embargo, si los usuarios tienen instalado uno de los clientes de Azure Information Protection ([cliente de etiquetado unificado](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) o [cliente clásico](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), el cliente de etiquetado integrado estará deshabilitado en las aplicaciones de Office de forma predeterminada. Para usar etiquetas integradas en lugar del cliente de Azure Information Protection para las aplicaciones de Office, deshabilite o desinstale el complemento de Office para Azure Information Protection:
+Sin embargo, si los usuarios tienen instalado uno de los clientes de Azure Information Protection ([cliente de etiquetado unificado](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) o [cliente clásico](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), el cliente de etiquetado integrado se desactivará en las aplicaciones de Office de forma predeterminada. Para usar etiquetas integradas en lugar del cliente de Azure Information Protection para las aplicaciones de Office, deshabilite o desinstale el complemento de Office para Azure Information Protection:
 
 1. Complete una de estas opciones:
     
@@ -143,9 +141,9 @@ Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, los dat
 
 Para usar el cliente de etiquetado integrado de Office en Office en la web, el documento debe estar ubicado en una instancia de OneDrive para la empresa o de SharePoint Online que haya optado [por la habilitación de las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="when-office-365-applies-marks-and-encryption-to-content"></a>Cuando Office 365 aplica marcas y cifrado al contenido
+## <a name="when-office-365-applies-content-marking-and-encryption-to-content"></a>Cuando Office 365 aplica marcado y cifrado de contenido al contenido
 
-Office 365 aplica marcas de contenido o cifrado con una etiqueta de confidencialidad diferente según la aplicación que use.
+Office 365 aplica el marcado y el cifrado de contenido con una etiqueta de confidencialidad de forma diferente, en función de la aplicación que use.
 
 | Aplicación | Marcado de contenido | Cifrado |
 | --- | --- | --- |
@@ -156,6 +154,6 @@ Office 365 aplica marcas de contenido o cifrado con una etiqueta de confidencial
 
 ## <a name="more-resources"></a>Más recursos
 
-[Preguntas más frecuentes sobre la clasificación y etiquetado en Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)
-
 [Aplicar etiquetas de confidencialidad en sus documentos y correo electrónico en Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+
+- [Problemas conocidos al aplicar etiquetas de confidencialidad en sus archivos de Office](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
