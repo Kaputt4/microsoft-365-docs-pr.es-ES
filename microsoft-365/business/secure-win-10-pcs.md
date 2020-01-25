@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo proteger equipos con Windows 10 una vez que haya configurado Microsoft 365 Business.
-ms.openlocfilehash: 47598ef0b5cba60a6d5e53973cc8b88584c62d05
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 3c558132f1e370a19735a38f9caa09ddb8e1f9f4
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837324"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515591"
 ---
 # <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
 
@@ -34,12 +34,12 @@ Vea este vídeo para obtener información general sobre cómo configurar directi
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
 
-Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="to-secure-your-windows-10-pcs"></a>Para proteger los equipos con Windows 10
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales de administrador global. 
-2. En el panel de navegación izquierdo, seleccione **configuración** y, a continuación, en **Complementos y seguridad**, elija **proteger los equipos con Windows 10**. Elija **Ver** para empezar.
+2. En el panel de navegación izquierdo, seleccione **configuración** y, a continuación, en **Inicio de sesión y seguridad**, elija **proteger los equipos con Windows 10**. Elija **Ver** para empezar.
 3. En la página **proteger los equipos con Windows 10** , lea toda la información para comprender lo que está convirtiendo y qué impacto tiene el usuario.
 
     En la parte superior de la página, **Elija introducción**.

@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bf3666d4ad44b4fcf17ec93a1e425ffa0f12f766
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 7e882b19b69380d2787c9b1784ad3dadce5c1ce9
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259808"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515691"
 ---
 # <a name="insider-risk-management-policies-preview"></a>Directivas de administración de riesgos de Insider (versión preliminar)
 
@@ -36,19 +36,25 @@ El **Panel de directivas** permite ver rápidamente las directivas de la organiz
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
-Las plantillas de administración de riesgos de internación son condiciones de directiva predefinidas que definen los tipos de indicadores de riesgo supervisados por una directiva. Cada Directiva debe tener una plantilla asignada en el Asistente para la creación de directivas antes de que se cree la Directiva. Están disponibles las siguientes plantillas:
+Las plantillas de administración de riesgos de internación son condiciones de directiva predefinidas que definen los tipos de indicadores de riesgo supervisados por una directiva. Cada Directiva debe tener una plantilla asignada en el Asistente para la creación de directivas antes de que se cree la Directiva. Al crear una nueva Directiva de riesgos de Insider, tendrás que elegir una de las siguientes plantillas.
 
-- **Robo de datos del empleado**de salida: cuando los empleados dejan la organización, hay indicadores de riesgo específicos que normalmente se asocian con el robo de datos al abandonar a los empleados. Esta plantilla de directiva da prioridad a estos indicadores y se centra en la detección y las alertas de este área de riesgos. El robo de datos por parte de los empleados puede incluir la descarga de archivos de SharePoint Online, la copia de archivos en dispositivos portátiles, como unidades USB, la impresión de archivos y la copia de datos a servicios de almacenamiento y mensajería en la nube personal, cerca de la retirada del empleo y fechas de finalización. Esta plantilla prioriza los indicadores de riesgos relacionados con estas actividades y el modo en que se relacionan con el estado de empleo de los empleados.
+### <a name="departing-employee-data-theft"></a>Robo de datos del empleado
 
-    >[!IMPORTANT]
-    >Cuando use esta plantilla, debe configurar un conector de Microsoft 365 de RRHH para importar periódicamente la información de fecha de retirada y de cancelación para los empleados de su organización. Consulte el tema de [importación de datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso sobre la configuración del conector de 365 de RRHH de Microsoft para su organización.
+Cuando los empleados dejan la organización, hay indicadores de riesgos específicos normalmente asociados con el robo de datos al abandonar a los empleados. Esta plantilla de directiva da prioridad a estos indicadores y se centra en la detección y las alertas de este área de riesgos. El robo de datos por parte de los empleados puede incluir la descarga de archivos de SharePoint Online, la copia de archivos en dispositivos portátiles, como unidades USB, la impresión de archivos y la copia de datos a servicios de almacenamiento y mensajería en la nube personal, cerca de la retirada del empleo y fechas de finalización. Esta plantilla prioriza los indicadores de riesgos relacionados con estas actividades y el modo en que se relacionan con el estado de empleo de los empleados.
 
-- **Pérdidas de datos**: la protección de datos y la prevención de pérdidas de datos es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por empleados, dispositivos y servicios. Los empleados están capacitados para crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de pérdidas de datos sea cada vez más compleja y difícil. Las pérdidas de datos pueden incluir el reuso compartido accidental de información fuera de la organización o el robo de datos con malas intenciones. Esta plantilla da prioridad a la detección en tiempo real de descargas de datos sospechosas de SharePoint Online, uso compartido de archivos y carpetas, copiando archivos en dispositivos portátiles, como unidades USB, archivos de impresión y copiando datos en servicios de almacenamiento y mensajería en la nube personal.
+>[!IMPORTANT]
+>Cuando use esta plantilla, debe configurar un conector de Microsoft 365 de RRHH para importar periódicamente la información de fecha de retirada y de cancelación para los empleados de su organización. Consulte el tema de [importación de datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso sobre la configuración del conector de 365 de RRHH de Microsoft para su organización.
 
-    >[!IMPORTANT]
-    >Al usar esta plantilla, debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir la información confidencial de su organización. Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización.
+### <a name="data-leaks"></a>Pérdidas de datos
 
-- **Lenguaje ofensivo en el correo electrónico**: la detección y la realización de acciones para evitar el comportamiento ofensivo y abusivo es un componente crítico para evitar el riesgo. Los clasificadores de idiomas ofensivos integrados en Microsoft 365 pueden analizar los mensajes de correo electrónico enviados desde buzones de Exchange online en su organización para diferentes tipos de problemas de cumplimiento. Estos clasificadores usan una combinación de inteligencia artificial y palabras clave para identificar el idioma en el correo electrónico que probablemente infrinja las directivas de Antiacoso. Use esta plantilla para crear rápidamente una directiva que use estos clasificadores para detectar automáticamente el contenido de los mensajes de correo electrónico que puedan considerarse abusivos u ofensivos. La administración de riesgos de Insiders usa clasificadores que exploran mensajes de correo electrónico enviados según los términos del idioma inglés y que se recomiendan en lenguaje ofensivo.
+La protección de datos y la prevención de pérdidas de datos es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por empleados, dispositivos y servicios. Los empleados están capacitados para crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de pérdidas de datos sea cada vez más compleja y difícil. Las pérdidas de datos pueden incluir el reuso compartido accidental de información fuera de la organización o el robo de datos con malas intenciones. Esta plantilla da prioridad a la detección en tiempo real de descargas de datos sospechosas de SharePoint Online, uso compartido de archivos y carpetas, copiando archivos en dispositivos portátiles, como unidades USB, archivos de impresión y copiando datos en servicios de almacenamiento y mensajería en la nube personal.
+
+>[!IMPORTANT]
+>Al usar esta plantilla, debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir la información confidencial de su organización. Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización.
+
+### <a name="offensive-language-in-email"></a>Lenguaje ofensivo en el correo electrónico
+
+La detección y la realización de acciones para evitar el comportamiento ofensivo y abusivo es un componente crítico de evitar el riesgo. Los clasificadores de idiomas ofensivos integrados en Microsoft 365 pueden analizar los mensajes de correo electrónico enviados desde buzones de Exchange online en su organización para diferentes tipos de problemas de cumplimiento. Estos clasificadores usan una combinación de inteligencia artificial y palabras clave para identificar el idioma en el correo electrónico que probablemente infrinja las directivas de Antiacoso. Use esta plantilla para crear rápidamente una directiva que use estos clasificadores para detectar automáticamente el contenido de los mensajes de correo electrónico que puedan considerarse abusivos u ofensivos. La administración de riesgos de Insiders usa clasificadores que exploran mensajes de correo electrónico enviados según los términos del idioma inglés y que se recomiendan en lenguaje ofensivo.
 
 ## <a name="monitoring-windows"></a>Ventanas de supervisión
 

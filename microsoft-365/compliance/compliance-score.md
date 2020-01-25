@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La puntuación de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: 27720412ee8d2b03869b96a1ff9fce68b2fe6eb4
-ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
+ms.openlocfilehash: 8a523878cb003e1cc676ea65d69f402ddf056e84
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41261864"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515681"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -141,4 +141,4 @@ Obtenga información sobre cómo [crear grupos en el administrador de cumplimien
 
 ## <a name="next-step-begin-setup"></a>Siguiente paso: iniciar la instalación
 
-Inicie sesión, configure los permisos y obtenga información sobre el panel de calificaciones de cumplimiento en la configuración de la [puntuación de cumplimiento](compliance-score-setup.md).
+Obtenga información sobre cómo iniciar sesión, configurar los permisos y configurar las actualizaciones y las vistas del panel en la configuración de la [puntuación de cumplimiento](compliance-score-setup.md).

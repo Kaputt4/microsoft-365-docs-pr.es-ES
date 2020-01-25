@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo la puntuación de cumplimiento de Microsoft calcula una puntuación personalizada en función de las acciones realizadas para enfrentarse a los riesgos y mejorar la postura de cumplimiento.
-ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793664"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515581"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Cálculo de la puntuación de cumplimiento de Microsoft (vista previa)
 
@@ -43,11 +43,13 @@ La puntuación de cumplimiento le proporciona una calificación de preinstalaci�
 
 ## <a name="how-compliance-score-continuously-assesses-controls"></a>Cómo evalúan de forma continuada los controles la puntuación de cumplimiento
 
-La puntuación de cumplimiento examina automáticamente el entorno de Microsoft 365 y detecta la configuración del sistema, actualizando de forma continua y automática el estado de control técnico. Por ejemplo, si ha activado la autenticación multifactor (MFA) en el portal de Azure AD, la puntuación de cumplimiento detecta la configuración y refleja que en los detalles de la solución de control de acceso. Por el contrario, si no activó la MFA, los indicadores de puntuación de cumplimiento como una acción recomendada para realizarla.
+La puntuación de cumplimiento examina automáticamente el entorno de Microsoft 365 y detecta la configuración del sistema, actualizando de forma continua y automática el estado de control técnico. La puntuación de cumplimiento usa la puntuación segura como motor subyacente que realiza la supervisión. [Obtenga más información sobre la puntuación segura y cómo funciona](../security/mtp/microsoft-secure-score.md).
 
-Puntuación de cumplimiento actualiza el estado del control cada 24 horas. Una vez que haya seguido una recomendación para implementar un control, verá que el estado del control se actualizó el día siguiente.
+El estado del control se actualiza en el panel de calificaciones de cumplimiento cada 24 horas. Una vez que haya seguido una recomendación para implementar un control, verá que el estado del control se actualizó el día siguiente.
 
-Durante la vista previa pública, la evaluación continua está disponible para los controles de parte, pero no para todos.
+Por ejemplo, si activa la autenticación multifactor (MFA) en el portal de Azure AD, la puntuación de cumplimiento detecta la configuración y refleja que en los detalles de la solución de control de acceso. Por el contrario, si no activó la MFA, los indicadores de puntuación de cumplimiento como una acción recomendada para realizarla.
+
+Durante la versión preliminar pública, la evaluación continua está disponible para una parte de los controles, pero no para todos.
   
 ## <a name="control-types-and-points"></a>Tipos y puntos de control
 
@@ -78,8 +80,8 @@ Cada control tiene un valor asignado en la puntuación de cumplimiento según el
 |:-----|:-----|
 | Obligatorio de prevención | ,27 |
 | Discrecional preventivo | 9  |
-| Detective obligatorio | 3  |
-| Discrecionales de detectives | 1  |
-| Obligatorio de corrección | 3  |
-| Discrecionales correctivas | 1  |
+| Detective obligatorio | 3 |
+| Discrecionales de detectives | 1 |
+| Obligatorio de corrección | 3 |
+| Discrecionales correctivas | 1 |
   

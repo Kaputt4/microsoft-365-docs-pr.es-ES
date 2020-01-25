@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c3318be31335c9c9250b056e5972bb1c50ffbcbd
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 56a1836d4224534a8959816578869f4a809ec996
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860010"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260058"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Certificación Cloud Security Alliance (CSA) STAR
 
@@ -46,6 +47,7 @@ Infórmese sobre cómo acelerar la implementación de la certificación de CSA S
 - Graph
 - Health Bot
 - Intune
+- Escritorio administrado de Microsoft
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - OMS Service Map
 - El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
@@ -54,7 +56,7 @@ Infórmese sobre cómo acelerar la implementación de la certificación de CSA S
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
-- [Certificación CSA STAR: Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI y Stream](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [ Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Escritorio administrado de Microsoft, OMS Service Map, PowerApps, Power BI y Microsoft Stream; todos con la certificación CSA STAR](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

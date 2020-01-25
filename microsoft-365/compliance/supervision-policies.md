@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 6ccf5cb4dff8b458c91700ebc1e7dc830d16aafc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: aaeb73553d023ac1664ba3bbff10d7edbb4dea54
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112274"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515881"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -41,6 +41,16 @@ Para obtener una introducción rápida a las directivas de supervisión, vea el 
 Para obtener más información acerca de las mejoras y la disponibilidad de las próximas características de supervisión, consulte el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
 ¿Desea probar la nueva experiencia de cumplimiento de comunicaciones de Microsoft 365? Consulte las características nuevas y mejoradas disponibles en el cumplimiento de la [comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md).
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Transición desde la supervisión en Office 365
+
+Las organizaciones que usan directivas de supervisión en Office 365 y la planeación de la transición a [directivas de cumplimiento de comunicaciones en Microsoft 365](communication-compliance.md) necesitan comprender estos puntos importantes:
+
+- Ambas soluciones pueden usarse en paralelo en la organización, pero las directivas usadas en cada solución deben tener nombres de directiva únicos. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre las soluciones durante un período de transición.
+- Los mensajes guardados en la supervisión de las coincidencias de directivas de Office 365 no se pueden mover ni compartir con el cumplimiento de la comunicación en Microsoft 365.
+- La solución de supervisión de Office 365 se reemplazará completamente por la solución de cumplimiento de comunicaciones en Microsoft 365. Se recomienda crear nuevas directivas en el cumplimiento de la comunicación que tengan la misma configuración que las directivas de supervisión existentes para usar las nuevas mejoras de investigación y corrección. Al realizar la transición al cumplimiento de la comunicación en Microsoft 365, debe planear la exportación de los datos de informes desde la supervisión en Office 365 si tiene requisitos internos de la Directiva de retención de cumplimiento.
+
+Para obtener información de jubilación para la supervisión en Office 365, consulte el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener más información.
 
 ## <a name="scenarios-for-supervision-policies"></a>Escenarios para directivas de supervisión
 

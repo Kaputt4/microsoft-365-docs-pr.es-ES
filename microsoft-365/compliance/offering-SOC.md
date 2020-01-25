@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804263"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259988"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -52,6 +52,7 @@ Obtenga más información sobre las ventajas de SOC 1, 2, 3 en la nube de Micros
 - [Lista detallada](https://aka.ms/d365-compliance-list) para Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos
 - Graph
 - Intune
+- Escritorio administrado de Microsoft
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - [Lista detallada](https://go.microsoft.com/fwlink/p/?LinkID=2077751) para Office 365, Office 365 U.S. Government y Office 365 U.S. Government Defense. Yammer ha logrado un informe SOC 1 Tipo 1
 - Office 365 Germany
@@ -66,6 +67,7 @@ Obtenga más información sobre las ventajas de SOC 1, 2, 3 en la nube de Micros
 - Cloud App Security
 - Graph
 - Intune
+- Escritorio administrado de Microsoft
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - Power BI

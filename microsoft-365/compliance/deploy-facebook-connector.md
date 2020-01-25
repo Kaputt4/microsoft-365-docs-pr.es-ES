@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar las páginas de empresa de Facebook a Microsoft 365. Una vez que estos datos se han importado a Microsoft 365, puede usar las características de cumplimiento, como las directivas de retención legal, búsqueda de contenido y retención, para administrar el gobierno de los datos de Facebook de la organización.
-ms.openlocfilehash: 1222a82e3a3b8415aa3fc98cd3c06376e491beb0
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: c13f055a9ca96d9b7cc1ec5791c476e6cda8e5f0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269431"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515741"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Implementación de un conector para archivar datos de páginas empresariales de Facebook
 
@@ -60,15 +60,12 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    ![Copiar el valor del secreto y guardarlo](media/FBCimage9.png)
 
-10. Vaya al **manifiesto** y copie identifieruris a (que también se denomina el URI de la aplicación AAD), tal y como se resalta en la siguiente captura de pantalla. Copie el URI de la aplicación de AAD en un archivo de texto u otra ubicación de almacenamiento. Se usa en el paso 6.
-
-    ![Vaya al manifiesto y copie el URI de la aplicación AAD](media/FBCimage10.png)
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Paso 2: implementar el servicio Web del conector desde GitHub a su cuenta de Azure
 
-1. Vaya a [este sitio de github](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) y haga clic en **implementar en Azure**.
+1. Vaya a [este sitio de github](https://github.com/microsoft/m365-sample-connector-csharp-aspnet) y haga clic en **implementar en Azure**.
 
-    ![Haga clic en implementar en Azure](media/FBCimage11.png)
+    ![Haga clic en implementar en Azure](media/FBCGithubApp.png)
 
 2. Después de hacer clic en **implementar en Azure**, se le redirigirá a un portal de Azure con una página de plantilla personalizada. Rellene los detalles de **conceptos básicos** y **configuración** y, a continuación, haga clic en **comprar**.
 

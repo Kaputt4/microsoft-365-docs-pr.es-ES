@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b5f6ae8d7047ab36867938b65bf546a5ffb7b0a6
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6a76a557ef391462db09d9b0b3d409ba2b4a042c
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860020"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260068"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>Certificación STAR de Cloud Security Alliance (CSA)
 
@@ -41,6 +42,7 @@ Se ha concedido la Certificación STAR CSA a Microsoft Azure y Microsoft Intune.
 - Cloud App Security
 - Graph
 - Intune
+- Escritorio administrado de Microsoft
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365 
 - Power BI

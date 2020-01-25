@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar datos de Twitter a Microsoft 365. Una vez que estos datos se han importado a Microsoft 365, puede usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar el gobierno de los datos de Twitter de la organización.
-ms.openlocfilehash: 5a7d7749f99615d9fd6858be05cc63153cfe1d31
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 9bf0be8684eb18fbc022f4eefa798c5c9265b3d7
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269401"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515701"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Implementar un conector para archivar datos de Twitter
 
@@ -56,9 +56,6 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    ![Copiar y guardar el secreto](media/TCimage09.png)
 
-9. Vaya al **manifiesto** y copie identifieruris a (que también se denomina el URI de la aplicación AAD), tal y como se resalta en la siguiente captura de pantalla. Copie el URI de la aplicación de AAD en un archivo de texto u otra ubicación de almacenamiento. Se usa en el paso 6.
-
-    ![Copiar y guardar el URI de la aplicación AAD](media/TCimage10.png)
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Paso 2: implementar el servicio Web del conector desde GitHub a su cuenta de Azure
 

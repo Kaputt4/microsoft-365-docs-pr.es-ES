@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La depuración automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con correo no deseado o malware que ya se han entregado a los buzones de los usuarios y, a continuación, inofensivos en el contenido malintencionado. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: 87d0837b74606a57c7a4aaee3150f70449b09b81
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: b2e2fb8fb0786f921b7c5330e92df519b0877d30
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238387"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515901"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purga automática cero horas: protección contra correo no deseado y malware
 
@@ -36,7 +36,7 @@ ZAP está disponible con la protección de Exchange Online predeterminada que se
 
 Office 365 actualiza las firmas de malware y del motor de correo no deseado en tiempo real de manera diaria. Sin embargo, es posible que los usuarios sigan teniendo mensajes malintencionados entregados a sus bandejas de correo por diversos motivos, incluso si el contenido se ha armado después de que se entregue a los usuarios. ZAP soluciona el control continuado de las actualizaciones de las firmas de correo no deseado y malware de Office 365. ZAP puede buscar y quitar los mensajes previamente entregados que ya se encuentran en las bandejas de los usuarios.
 
-La acción ZAP es fluida para el usuario del buzón de correo; no se notifica si se mueve un mensaje de correo electrónico. El mensaje no debe tener más de 2 días.
+La acción ZAP es fluida para el usuario del buzón de correo; no se notifica si se mueve un mensaje de correo electrónico. 
 
 Las listas de permitidos, [las reglas de flujo de correo](use-transport-rules-to-configure-bulk-email-filtering.md) (también conocidas como reglas de transporte) y las reglas de usuario final o los filtros adicionales tienen prioridad sobre Zap.
 
@@ -67,8 +67,8 @@ ZAP no moverá ningún mensaje a cuarentena que esté en proceso de análisis de
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Cómo ver si el ZAP movió el mensaje
 
-Para determinar si la ZAP movió el mensaje, puede usar el informe de estado de la [protección contra amenazas](view-email-security-reports.md#threat-protection-status-report) o el [Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md).
-
+Para determinar si la ZAP movió el mensaje, puede usar el informe de estado de la [protección contra amenazas](view-email-security-reports.md#threat-protection-status-report) o el [Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md). Tenga en cuenta que, como acción del sistema, ZAP no se registra en los registros de auditoría de buzones de Exchange. 
+ 
 ## <a name="disable-zap"></a>Deshabilitar ZAP
 
 Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a PowerShell de Exchange Online Protection, vea [conectarse a PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
@@ -114,6 +114,16 @@ Las reglas creadas por los administradores (reglas de flujo de correo) o las reg
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>¿Qué ocurre si un mensaje se mueve a otra carpeta (por ejemplo, una regla de bandeja de entrada)?
 
 ZAP sigue funcionando en este caso, a menos que el mensaje se haya eliminado o esté en correo no deseado.
+
+### <a name="does-zap-change-the-email-header"></a>¿ZAP cambia el encabezado del correo electrónico?
+
+Una acción ZAP no realiza ningún cambio en el encabezado de un correo electrónico.
+
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>¿Cómo afecta el ZAP a los buzones en retención?
+
+ZAP no quitará los mensajes de los buzones en retención y, por lo tanto, no se podrá mover a la acción de cuarentena en los mensajes. Los mensajes se moverán a la carpeta de correo no deseado si así lo especifica la Directiva. 
+
+[Haga clic aquí para obtener más información sobre las suspensiones de buzones.](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
 
 ## <a name="related-topics"></a>Temas relacionados
 

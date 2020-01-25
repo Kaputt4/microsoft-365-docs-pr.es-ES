@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 89804f5f5f10d06879effd411cec4a7c52037620
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 02cde8915691565614e3d1d04a1fc57ed9a718cb
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859800"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41263332"
 ---
 # <a name="financial-supervisory-authority-fsa-denmark"></a>Autoridad de supervisión financiera (FSA) de Dinamarca
 
@@ -36,7 +37,7 @@ Directrices publicadas por el Ministerio de industria, negocios y asuntos financ
 
 ## <a name="microsoft-and-the-fsa"></a>Microsoft y la FSA
 
-Para guiar a las instituciones financieras en Dinamarca que valoren la externalización de funciones empresariales en la nube, Microsoft ha publicado [Una lista de comprobación de cumplimiento para las instituciones financieras en Dinamarca](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf /5fa5cdde-3219-4e95-946d-0c0d05494362). Al revisar y completar la lista de comprobación, las organizaciones financieras pueden adoptar los servicios empresariales en la nube de Microsoft con la seguridad de que cumplen los requisitos normativos aplicables.
+Para guiar a las instituciones financieras en Dinamarca que valoren la externalización de funciones empresariales en la nube, Microsoft ha publicado [una lista de comprobación de cumplimiento para las instituciones financieras en Dinamarca](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf). Al revisar y completar la lista de comprobación, las organizaciones financieras pueden adoptar los servicios empresariales en la nube de Microsoft con la seguridad de que cumplen los requisitos normativos aplicables.
 
 Cuando las instituciones financieras danesas subcontratan actividades empresariales, las mismas deben cumplir con los requisitos de la Autoridad de supervisión financiera (FSA) y trabajar dentro del amplio marco de las políticas de la Autoridad bancaria europea (ABE). Concretamente, dichos requisitos se centran en cómo los acuerdos contractuales entre los servicios financieros y los proveedores de servicios en la nube pueden asegurar un control adecuado de las actividades subcontratadas.
 

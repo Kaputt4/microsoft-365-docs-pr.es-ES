@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 705b59a5ae499a580086304abe91a9318bb36fcb
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4ae0df3ddc8eec28cc6f29bddd0a46a09d33b0dc
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859710"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260048"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 administración del servicio de tecnologías de la información
 
@@ -37,6 +38,7 @@ Una empresa de auditoría de terceros independiente realizó una rigurosa revisi
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Intune
+- Escritorio administrado de Microsoft
 - Microsoft PowerApps
 - Microsoft Flow
 - Microsoft Graph
@@ -46,7 +48,7 @@ Una empresa de auditoría de terceros independiente realizó una rigurosa revisi
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
-2017 ISO 20000-1 documentación para Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics y centros de datos de Microsoft
+Documentación ISO 20000-1:2017 para Azure, Intune, Escritorio administrado de Microsoft, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics y centros de datos de Microsoft
 
 - [Informe de la evaluación](https://go.microsoft.com/fwlink/p/?linkid=2077810)
 - [Certificado](https://go.microsoft.com/fwlink/p/?linkid=2077815)

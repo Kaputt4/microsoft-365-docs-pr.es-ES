@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39218865"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259978"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Buscar y eliminar mensajes de correo electrónico en la organización de Office 365
 
@@ -39,7 +39,7 @@ Puede usar la característica de búsqueda de contenido de Office 365 para busca
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles **Administrador de eDiscovery** o tener asignado el rol de administración **Búsqueda de cumplimiento**. Para eliminar mensajes, tiene que ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol de administración **Búsqueda y depuración**. Para más información sobre cómo agregar usuarios a un grupo de roles, vea [Dar acceso a los usuarios al Centro de seguridad y cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles **Administrador de eDiscovery** o tener asignado el rol de administración **Búsqueda de cumplimiento**. Para eliminar mensajes, tiene que ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol de administración **Búsqueda y depuración**. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](assign-ediscovery-permissions.md).
     
 - Debe usar el PowerShell del Centro de seguridad y cumplimiento para eliminar mensajes. Vea el [paso 2](#step-2-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
     

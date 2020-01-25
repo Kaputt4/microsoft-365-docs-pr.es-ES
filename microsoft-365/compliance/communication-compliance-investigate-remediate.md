@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 322e74b846cc574b52708627d5f59dde3cfe9e80
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 221c773e04bd9b7a4e404d0ec6a5fd5695ca089c
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807389"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515761"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones (vista previa)
 
@@ -58,7 +58,7 @@ Para obtener una lista completa de los filtros y los detalles de los campos, con
 
 5. Seleccione el control **filtros** para abrir la página de detalles de **filtros** .
 
-6. Active una o más casillas para habilitar los filtros para estas alertas.
+6. Active una o más casillas para habilitar los filtros para estas alertas. Puede elegir entre varios filtros, incluidos *fecha*, *remitente*, *asunto/título*, *clasificadores*, etc.
 
 7. Si desea guardar el filtro seleccionado como filtro predeterminado, seleccione **Guardar como predeterminado**. Si desea usar este filtro como filtro guardado, seleccione **listo**.
 

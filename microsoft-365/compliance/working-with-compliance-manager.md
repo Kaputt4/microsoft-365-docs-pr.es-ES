@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo relacionadas con los productos de Microsoft.
-ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: db63f1b5cba2166ae8e4f922b84672677b52c4e9
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022016"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515871"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -72,13 +72,25 @@ Para agregar o quitar usuarios de los roles del Administrador de cumplimiento.
 
 ### <a name="controlling-automatic-secure-score-updates"></a>Control de las actualizaciones automáticas de calificación segura
 
-Las actualizaciones de calificaciones seguras se pueden activar automáticamente para todas las acciones, se pueden desactivar para todas las acciones o se pueden establecer mediante acciones individuales.
+Las actualizaciones de puntuación segura se pueden activar automáticamente para todas las acciones, desactivadas para todas las acciones o establecidas por acción individual siguiendo estos pasos.
 
 1. Inicie sesión en el [portal de confianza de servicios](https://servicetrust.microsoft.com) con su cuenta de administrador global.
 
-2. En la barra de menús superior del portal de confianza del servicio, seleccione **Administrador** y, después, **configuración**.
+2. En la barra de menús del portal de confianza del servicio superior, en **más**, seleccione **Administrador** y, después, seleccione **configuración**.
 
-4. En la ficha **puntuación segura** , seleccione el botón adecuado para la configuración elegida.
+3. En la ficha **puntuación segura** , seleccione el botón correspondiente para **activar todas las acciones**, **desactivar para todas las acciones**o **establecer por acción.**
+
+Si elige **establecer por acción,** siga estos pasos adicionales para activar las actualizaciones de puntuación segura para acciones individuales:
+
+4. Seleccione **Administrador de cumplimiento** en el menú superior (Nota: no seleccione "Administrador de cumplimiento (clásico)").
+
+5. Seleccione **Administración de inquilinos** en la esquina superior derecha de la pantalla.
+
+6. En el panel **acciones del cliente** , busque la acción prevista con puntos suspensivos (**...**) en la columna **acciones afectadas** . Haga clic en los puntos suspensivos y seleccione **Editar.**
+
+7. Cambie el conmutador de alternancia de **actualización continua de puntuación segura** a **activado.**
+
+8. Seleccione **Guardar.** Puntuación segura la supervisión continua ahora está activada para esa acción.
 
 **Nota:** Solo el administrador global puede activar o desactivar las actualizaciones automáticas para todas las acciones. El administrador del administrador de cumplimiento puede activar actualizaciones automáticas para acciones individuales, pero no para todas las acciones de forma global.
 

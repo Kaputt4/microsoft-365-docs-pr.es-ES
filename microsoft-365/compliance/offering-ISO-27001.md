@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 67cb8cd6a7320f0b2ff79566be4cf6c6fa3f67a6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: efedbdd8230b5fac81b59ca51c0fe863ab4f0c2a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "39233743"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260118"
 ---
 # <a name="compliance-offerings-isoiec-270012013-information-security-management-standards"></a>Ofertas de cumplimiento normativo: ISO/IEC 27001:2013 Information Security Management Standards (Estándares de administración de seguridad de la información ISO/IEC 27001:2013)
 
@@ -43,6 +44,7 @@ Obtenga más información acerca de las ventajas de la norma ISO-Iec-27001 en la
 - Graph
 - Health Bot
 - Intune
+- Escritorio administrado de Microsoft
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
@@ -60,7 +62,7 @@ Ciclo de auditoría: los servicios de nube de Microsoft se auditan al menos anua
 
 ### <a name="azure"></a>Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream y centro de datos de Microsoft: certificado de ISO 27001](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Escritorio administrado de Microsoft, OMS Service Map, PowerApps, Power BI, Stream y centro de datos de Microsoft; todos con el certificado ISO 27001](https://go.microsoft.com/fwlink/p/?linkid=2078342)
 
 ### <a name="office-365"></a>Office 365
 
@@ -88,7 +90,7 @@ Ciclo de auditoría: los servicios de nube de Microsoft se auditan al menos anua
 
 ### <a name="azure"></a>Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream y centro de datos de Microsoft: informe de evaluación de auditoría de ISO 27001 y 27018](https://go.microsoft.com/fwlink/p/?linkid=2078010)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Escritorio administrado de Microsoft, OMS Service Map, PowerApps, Power BI, Stream y centro de datos de Microsoft; todos con el informe de evaluación de auditoría ISO 27001 y 27018 ](https://go.microsoft.com/fwlink/p/?linkid=2078010)
 - [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream y centro de datos de Microsoft: declaración de aplicabilidad (SOA) de ISO 27001 y 27018](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ### <a name="office-365"></a>Office 365

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector nativo para importar datos de Twitter a Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar el gobierno de los datos de terceros de la organización.
-ms.openlocfilehash: cba4509c9752fbfefd8aadfdeac679aa45159711
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 65e2c5e2090364d28863763746b135a56fa58dee
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269381"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515801"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data"></a>Configurar un conector para archivar datos de Twitter
 
@@ -53,27 +53,30 @@ Para obtener instrucciones paso a paso, consulte [crear una aplicación en Azure
 Al finalizar este paso (siguiendo las instrucciones paso a paso), guardará la siguiente información en un archivo de texto. Estos valores se usarán en pasos posteriores del proceso de implementación.
 
 - IDENTIFICADOR de la aplicación AAD
+
+- Secreto de la aplicación AAD
+
 - Identificador de inquilino
 
 ## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>Paso 2: implementar el servicio Web del conector desde el repositorio de GitHub a su cuenta de Azure
 
 El siguiente paso es implementar el código fuente de la aplicación de Twitter Connector que usará la API de Twitter para conectarse a su cuenta de Twitter y extraer los datos para que pueda importarlos a Microsoft 365. El conector de Twitter que implemente para su organización cargará los elementos desde la cuenta de Twitter de su organización a la ubicación de almacenamiento de Azure que se crea en este paso. Después de crear un conector de Twitter en el centro de cumplimiento de Microsoft 365 (en el paso 5), el servicio de importación de Office 365 copiará los datos de Twitter desde la ubicación de Azure Storage a un buzón en Microsoft 365. Como se explicó anteriormente en la sección [requisitos previos](#prerequisites-for-setting-up-a-connector-for-twitter) , debe tener una suscripción de Azure válida para crear una cuenta de almacenamiento de Azure.
 
-El conector de Twitter que implemente para su organización carga los elementos desde Twitter a la ubicación de almacenamiento de Azure que cree en este paso. Después de crear un conector personalizado en el centro de seguridad & cumplimiento (en el paso 7), el servicio de importación de Office 365 copiará los datos de Twitter desde la ubicación de almacenamiento de Azure a un buzón en Office 365. Como se explicó anteriormente en la sección [requisitos previos](#prerequisites-for-setting-up-a-connector-for-twitter) , debe tener una suscripción de Azure válida para crear una cuenta de almacenamiento de Azure.
-
-Para implementar el código fuente de la aplicación de Twitter Connector,
+Para implementar el código fuente de la aplicación de Twitter Connector:
 
 1. Vaya a [este sitio de github](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet).
-2. Haga clic en el botón **implementar en Azure**
+
+2. Haga clic en **implementar en Azure**.
 
 Para obtener instrucciones paso a paso, consulte [implementar el servicio Web del conector de github en su cuenta de Azure](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
 Mientras sigue las instrucciones paso a paso para completar este paso, proporciona la siguiente información
 
 - APISecretKey: este secreto se crea durante la finalización de este paso. Se usa en el paso 5.
+
 - tenantId: el identificador de inquilino de su organización de Microsoft 365 que copió después de crear la aplicación de Twitter en Azure Active Directory en el paso 1.
 
-Después de completar este paso, asegúrese de copiar la dirección URL del servicio de aplicaciones ( https://twitterconnector.azurewebsites.net)por ejemplo,. Debe usar esta dirección URL para completar los pasos 3, 4 y 5).
+Después de completar este paso, asegúrese de copiar la dirección URL del servicio de aplicaciones ( `https://twitterconnector.azurewebsites.net`por ejemplo,). Debe usar esta dirección URL para completar los pasos 3, 4 y 5).
 
 ## <a name="step-3-create-developer-app-on-twitter"></a>Paso 3: crear una aplicación para desarrolladores en Twitter
 
@@ -84,8 +87,11 @@ Para obtener instrucciones paso a paso, consulte [crear la aplicación de Twitte
 Al finalizar este paso (siguiendo las instrucciones paso a paso), guarde la siguiente información en un archivo de texto. Estos valores se usarán para configurar la aplicación de Twitter Connector en el paso 4.
 
 - Clave de API de Twitter
+
 - Clave secreta de API de Twitter
+
 - Token de acceso de Twitter
+
 - Secreto de token de acceso de Twitter
 
 ## <a name="step-4-configure-the-twitter-connector-app"></a>Paso 4: configurar la aplicación de Twitter Connector
@@ -97,10 +103,15 @@ Para obtener instrucciones paso a paso, consulte [Configure the Connector Web Ap
 Al finalizar este paso (siguiendo las instrucciones paso a paso), proporcionará la siguiente información (que ha copiado a un archivo de texto después de completar los pasos anteriores):
 
 - Clave de API de Twitter (obtenida en el paso 3)
+
 - Clave secreta de la API de Twitter (obtenida en el paso 3)
+
 - Token de acceso de Twitter (obtenido en el paso 3)
+
 - Token de acceso de Twitter secreto (obtenido en el paso 3)
+
 - IDENTIFICADOR de aplicación de Azure Active Directory (el identificador de la aplicación de AAD que se obtuvo en el paso 1)
+
 - Secreto de la aplicación de Azure Active Directory (el secreto de la aplicación AAD obtenido en el paso 1)
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>Paso 5: configurar un conector de Twitter en el centro de cumplimiento de Microsoft 365
@@ -112,4 +123,5 @@ Para obtener instrucciones paso a paso, consulte [configurar un conector de Twit
 Al finalizar este paso (siguiendo las instrucciones paso a paso), proporcionará la siguiente información (que ha copiado en un archivo de texto después de completar los pasos).
 
 - Dirección URL de Azure App Service (obtenida en el paso 2 `https://twitterconnector.azurewebsites.net`; por ejemplo,)
+
 - APISecretKey (creado en el paso 2)

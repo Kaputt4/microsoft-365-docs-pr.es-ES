@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo iniciar sesión, configurar permisos y comprender el panel para la puntuación de cumplimiento de Microsoft, que ayuda a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: 79e93a102107433ed2b493a56381bc60ca544157
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: d6ec9617ff97a254514370c863b02b2fb0415798
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021916"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515661"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configuración de la puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -63,6 +63,38 @@ Para establecer permisos en el centro de cumplimiento de Microsoft 365:
 
 1. Vaya al [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) e inicie sesión con su cuenta de administrador global.
 2. Seleccione **permisos** en el panel de navegación izquierdo. Desde aquí, puede ver roles y asignar permisos.
+
+## <a name="configure-automatic-secure-score-updates"></a>Configurar actualizaciones de calificación segura automáticas
+
+De forma predeterminada, todos los nuevos inquilinos tienen activada la opción actualizaciones automáticas de [puntuación segura](../security/mtp/microsoft-secure-score.md) . Esto significa que todas las acciones supervisadas por la calificación segura actualizarán automáticamente el estado de la misma acción en la puntuación de cumplimiento.
+
+El administrador global puede administrar esta configuración para desactivar las actualizaciones automáticas para todas las acciones, o bien establecer actualizaciones para las acciones de forma individual.
+
+Durante la versión preliminar pública, tendrá que ir al portal de confianza del servicio de Microsoft (donde está ubicado el administrador de cumplimiento) para administrar las actualizaciones de puntuación segura.
+
+Para administrar las actualizaciones de calificaciones seguras automáticas, siga estos pasos:
+
+1. Inicie sesión en el [portal de confianza de servicios](https://servicetrust.microsoft.com) con su cuenta de administrador global.
+
+2. En la barra de menús del portal de confianza del servicio superior, en **más**, seleccione **Administrador** y, después, seleccione **configuración**.
+
+3. En la ficha **puntuación segura** , seleccione el botón correspondiente para **activar todas las acciones**, **desactivar para todas las acciones**o **establecer por acción.**
+
+Si elige **establecer por acción,** siga estos pasos adicionales para activar las actualizaciones de puntuación segura para acciones individuales:
+
+4. Seleccione **Administrador de cumplimiento** en el menú superior (Nota: no seleccione "Administrador de cumplimiento (clásico)").
+
+5. Seleccione **Administración de inquilinos** en la esquina superior derecha de la pantalla.
+
+6. En el panel **acciones del cliente** , busque la acción prevista con puntos suspensivos (**...**) en la columna **acciones afectadas** . Haga clic en los puntos suspensivos y seleccione **Editar.**
+
+7. Cambie el conmutador de alternancia de **actualización continua de puntuación segura** a **activado.**
+
+8. Seleccione **Guardar.** Puntuación segura la supervisión continua ahora está activada para esa acción.
+
+**Nota:** Solo el administrador global puede activar o desactivar las actualizaciones automáticas para todas las acciones. El administrador del administrador de cumplimiento puede activar actualizaciones automáticas para acciones individuales, pero no para todas las acciones de forma global.
+
+Obtenga más información sobre la [Administración de actualizaciones de calificaciones seguras](compliance-manager-release-notes.md#secure-score).
 
 ## <a name="understand-the-compliance-score-dashboard"></a>Descripción del panel de calificaciones de cumplimiento
 

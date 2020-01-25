@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1f4bfd1c219de2126bc6cb9443f3b899b99945c6
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 08f05939e6cd4ebdff81fb2fd2fda47bac05e882
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859700"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260038"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Norma ISO 22301:2012 de Administración de Continuidad Empresarial 
 
@@ -39,7 +40,8 @@ Obtenga más información acerca de las ventajas de la norma ISO/IEC 22301 en la
 - Genomics
 - Graph
 - Intune
-- El servicio en la nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
+- Escritorio administrado de Microsoft
+- El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - [Office 365 Comercial, Administración Pública y Educación](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - El servicio en la nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365

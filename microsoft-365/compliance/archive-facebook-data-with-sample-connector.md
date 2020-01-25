@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar datos de terceros desde orígenes de datos como páginas empresariales de Facebook, Twitter, páginas de la compañía de LinkedIn y Bloomberg instantáneo. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar el gobierno de los datos de terceros de la organización.
-ms.openlocfilehash: f0e7e7e040debd489e538c9075925db29bfe8f9f
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: dbc38840ccaa98a4e89fc91216765f209b844326
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269441"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515781"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data"></a>Configurar un conector para archivar datos de Facebook
 
@@ -53,8 +53,6 @@ Al finalizar este paso (mediante las instrucciones paso a paso anteriores), guar
 - IDENTIFICADOR de la aplicación AAD
 
 - Secreto de la aplicación AAD
-
-- URI de la aplicación AAD
 
 - Identificador de inquilino
 

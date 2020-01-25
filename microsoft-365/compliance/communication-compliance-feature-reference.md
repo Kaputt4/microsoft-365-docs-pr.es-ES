@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 886ede889e1843c7f7e94b89aeffb89d59a0120a
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 64514c8c46cbc2ef35746e052e1ffb87831933c2
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111854"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515791"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Referencia de la característica de cumplimiento de comunicaciones (versión preliminar)
 
@@ -84,6 +84,16 @@ Con las directivas de cumplimiento de la comunicación, puede elegir analizar lo
     - [Conector de datos personalizado](archiving-third-party-data.md)
 
 Debe configurar un conector de terceros para la organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de la comunicación. La sección **fuentes** de terceros del Asistente para la Directiva de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Transición desde la supervisión en Office 365
+
+Las organizaciones que usan directivas de supervisión en Office 365 y la planeación de la transición a directivas de cumplimiento de comunicaciones en Microsoft 365 necesitan comprender estos puntos importantes:
+
+- Ambas soluciones pueden usarse en paralelo en la organización, pero las directivas usadas en cada solución deben tener nombres de directiva únicos. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre las soluciones durante un período de transición.
+- Los mensajes guardados en la supervisión de las coincidencias de directivas de Office 365 no se pueden mover ni compartir con el cumplimiento de la comunicación en Microsoft 365.
+- La solución de supervisión de Office 365 se reemplazará completamente por la solución de cumplimiento de comunicaciones en Microsoft 365. Se recomienda crear nuevas directivas en el cumplimiento de la comunicación que tengan la misma configuración que las directivas de supervisión existentes para usar las nuevas mejoras de investigación y corrección. Al realizar la transición al cumplimiento de la comunicación en Microsoft 365, debe planear la exportación de los datos de informes desde la supervisión en Office 365 si tiene requisitos internos de la Directiva de retención de cumplimiento.
+
+Para obtener información de jubilación para la supervisión en Office 365, consulte el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener más información.
 
 ## <a name="policy-settings"></a>Configuración de directivas
 
@@ -219,6 +229,7 @@ Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los 
 | **Asunto/título** | El asunto del mensaje o el título del chat. |
 | **Tags** | Las etiquetas asignadas a un mensaje, ya sea *dudosa*, *compatible*o *no compatible*. |
 | **Remitir a** | El nombre de usuario de la persona incluida como parte de una acción de elevación de mensajes. |
+| **Clasificadores** | El nombre de los clasificadores integrados y personalizados que se aplican al mensaje. Algunos ejemplos son el *lenguaje ofensivo*, el *acoso dirigido*, la *blasfemia*, la *amenaza*y mucho más.
 
 ## <a name="alert-policies"></a>Directivas de alerta
 
