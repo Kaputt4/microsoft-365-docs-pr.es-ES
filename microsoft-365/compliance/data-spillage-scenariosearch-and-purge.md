@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use las herramientas de búsqueda y la exhibición de documentos electrónicos de Office 365 para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 06c02a9d5f31f8b7d6845214c10a150b6cacf379
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259426"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558367"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie de soluciones de eDiscovery: escenario de derrame de datos: búsqueda y depuración
 
@@ -54,7 +54,7 @@ A continuación se describe cómo administrar un incidente de derrame de datos:
     
 - Para crear un caso, debe ser miembro del grupo de roles de administrador de eDiscovery o ser miembro de un grupo de roles personalizado que tenga asignado el rol de administración de casos. Si no es miembro, solicite a un administrador de 365 de Office que [le agregue al grupo de roles eDiscovery Manager](assign-ediscovery-permissions.md).
     
-- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - Para buscar las actividades de eDiscovery del registro de auditoría de Office 365 en el paso 8, la auditoría debe estar activada para su organización. Puede buscar actividades que se han realizado en los últimos 90 días. Para obtener más información acerca de cómo habilitar y usar la auditoría, vea la sección [auditar el proceso de investigación del derrame de datos](#auditing-the-data-spillage-investigation-process) en el paso 8. 
     
@@ -124,7 +124,7 @@ Puede usar el seguimiento de mensajes en el centro de seguridad y cumplimiento o
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Paso 6: preparar los buzones
 
-Después de revisar y validar que los resultados de la búsqueda solo contengan los mensajes que deben eliminarse, debe recopilar una lista de las direcciones de correo electrónico de los buzones afectados que se usarán en el paso 7 cuando ejecute el comando **Search-Mailbox-DeleteContent** . También es posible que tenga que preparar los buzones para poder eliminar permanentemente los mensajes de correo electrónico en función de si la recuperación de un único elemento está habilitada en los buzones que contienen los datos derramados o si alguno de esos buzones de correo está en suspensión.
+Después de revisar y validar que los resultados de la búsqueda solo contengan los mensajes que se deben eliminar, debe recopilar una lista de las direcciones de correo electrónico de los buzones afectados que se usarán en el paso 7 cuando elimine los datos derramados. También es posible que tenga que preparar los buzones para poder eliminar permanentemente los mensajes de correo electrónico en función de si la recuperación de un único elemento está habilitada en los buzones que contienen los datos derramados o si alguno de esos buzones de correo está en suspensión.
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Obtener una lista de direcciones de buzones de correo con datos revertidos
 
@@ -168,9 +168,9 @@ Asegúrese de revertir el buzón a configuraciones previas después de comprobar
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Paso 7: eliminar permanentemente los datos derramados
 
-Con las ubicaciones de buzón que recopiló y preparó en el paso 6 y la consulta de búsqueda que se creó y perfeccionó en el paso 3 para buscar mensajes de correo electrónico que contengan los datos derramados, ahora puede eliminar de forma permanente los datos derramados.  Como se ha explicado anteriormente, para eliminar mensajes, debe ser miembro del grupo de roles de administración de la organización o tener asignado el rol de administración de búsqueda y depuración. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+Con las ubicaciones de buzón que recopiló y preparó en el paso 6 y la consulta de búsqueda que se creó y perfeccionó en el paso 3 para buscar mensajes de correo electrónico que contengan los datos derramados, ahora puede eliminar de forma permanente los datos derramados.  Como se ha explicado anteriormente, para eliminar mensajes, debe ser miembro del grupo de roles de administración de la organización o tener asignado el rol de administración de búsqueda y depuración. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-Para eliminar los mensajes derramados, vea los pasos 2 & 3 en [Buscar y eliminar mensajes de correo electrónico en su organización de Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
+Para eliminar los mensajes derramados, vea los pasos 2 & 3 en [Buscar y eliminar mensajes de correo electrónico](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization) .
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Paso 8: comprobar, proporcionar una prueba de eliminación y auditoría
 

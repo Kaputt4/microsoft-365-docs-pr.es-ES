@@ -347,8 +347,6 @@
           href: csv-file-for-an-id-list-content-search.md
         - name: Usar búsqueda de contenido para buscar datos de terceros
           href: use-content-search-to-search-third-party-data-that-was-imported.md
-        - name: Usar Búsqueda de contenido en el flujo de trabajo de eDiscovery
-          href: use-content-search-in-ediscovery.md
         - name: Comprobar errores en la consulta de búsqueda de contenido
           href: check-your-content-search-query-for-errors.md
         - name: Volver a intentar una búsqueda de contenido fallida
@@ -1013,7 +1011,7 @@
             - name: EAR (US Export Admin. Reg.)
               href: offering-ear.md
             - name: ENISA IAF (EU)
-              href: 'https://aka.ms/ENISA'
+              href: offering-enisa.md
             - name: Cláusulas del modelo de UE
               href: offering-eu-model-clauses.md
             - name: EBA (EU)
@@ -1107,7 +1105,7 @@
             - name: ENS (España)
               href: offering-ens-spain.md
             - name: ENISA IAF (EU)
-              href: 'https://aka.ms/ENISA'
+              href: offering-enisa.md
             - name: Cláusulas del modelo de UE
               href: offering-eu-model-clauses.md
             - name: Escudo de privacidad estadounidense UE

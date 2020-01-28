@@ -14,19 +14,19 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Una vez que un buzón de correo de Office 365 se convierte en inactivo, puede cambiar la duración de la Directiva de retención de Office 365 o de suspensión asignada al buzón inactivo. La duración de retención define cuánto tiempo se retienen los elementos en la carpeta Elementos recuperables.
-ms.openlocfilehash: 05f9b218098a48ca374e31fad1e9dc049e0062bc
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: e1c2515c155192739e771bd646753f24bac92a2d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39630900"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558397"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Cambiar la duración de retención para un buzón inactivo en Office 365
 
 Un buzón inactivo se usa para conservar el correo electrónico de un antiguo empleado después de que abandone la organización. Un buzón se vuelve inactivo cuando se coloca en el buzón una retención por juicio, una directiva de retención de Office 365 o una retención asociada a un caso de exhibición de documentos electrónicos, y se elimina la cuenta de usuario de Office 365 correspondiente. The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. La duración de retención define cuánto tiempo se retienen los elementos en la carpeta Elementos recuperables. Cuando expira la duración de retención de un elemento en la carpeta Elementos recuperables, el elemento se elimina permanentemente (se purga) del buzón inactivo. Una vez que un buzón de correo se convierte en inactivo, puede cambiar la duración de la retención o la Directiva de retención de Office 365 asignada al buzón inactivo.
   
 > [!IMPORTANT]
-> Hemos pospuesto la fecha límite del 1 de julio de 2017 para crear conservaciones locales con el fin de desactivar buzones, pero más adelante este año o a principios del año que viene ya no podrá crear conservaciones locales en Exchange Online. A partir de ese momento, solo podrán usarse retenciones por juicio y directivas de retención de Office 365 para crear buzones inactivos. Aun así, se seguirán admitiendo los buzones inactivos existentes que estén en conservación local y podrá seguir administrando las conservaciones locales de buzones inactivos. Esto incluye el cambio de la duración de las conservaciones locales y la eliminación de forma permanente de buzones inactivos al quitar la conservación local. 
+> A medida que seguimos invirtiendo en diferentes formas de conservar el contenido de los buzones, estamos anunciando la retirada de conservaciones locales en el centro de administración de Exchange. Esto significa que debe usar las retenciones por juicio y las directivas de retención de Office 365 para crear un buzón inactivo. A partir del 1 de abril de 2020, no podrá crear nuevas retenciones locales en Exchange Online. Pero todavía podrá cambiar la duración de retención de una conservación local colocada en un buzón inactivo. Sin embargo, a partir del 1 de julio de 2020, no podrá cambiar la duración de retención. Solo se podrá eliminar un buzón inactivo si se quita la retención local. Los buzones inactivos existentes que se encuentran en conservación local se conservarán hasta que se quite la retención. Para obtener más información acerca de la retirada de suspensiones locales, consulte [jubilación de las herramientas de eDiscovery heredadas](legacy-ediscovery-retirement.md).
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -149,7 +149,7 @@ El resultado es que los elementos del buzón inactivo se conservan indefinidamen
     
     ![Captura de pantalla del cambio de duración para una conservación local](media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Usar Exchange Online PowerShell para cambiar la duración de retención
 

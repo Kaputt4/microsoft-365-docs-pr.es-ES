@@ -9,26 +9,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: fa10c4168720565770ec0a3bc4bb06486155c3cc
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: cf0b69d691b3071ee35119f67e389e49ccbb13ad
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970336"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558617"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
 ## <a name="overview"></a>Información general
 
-Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensajes de correo electrónico mientras viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
+El seguimiento de mensajes en el centro de seguridad & cumplimiento de Office 365 sigue los mensajes de correo electrónico mientras viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
+
+El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora el seguimiento de mensajes original que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con los mensajes, solucionar problemas del flujo de correo y validar los cambios de la Directiva.
 
 > [!NOTE]
-> Para realizar el seguimiento de mensajes, el administrador debe ser miembro de la administración de la organización, la administración del cumplimiento o los grupos de funciones del servicio de asistencia.
-
-El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora según el seguimiento de mensajes que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con sus mensajes, solucionar problemas del flujo de correo y validar los cambios en la Directiva.
-
-> [!NOTE]
-> Solo se muestran los primeros 50000 mensajes en los resultados. El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) de PowerShell de Exchange Online PowerShell o Exchange Online Protection de Exchange devuelve todos los mensajes de los resultados.
+> • Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles administración de la organización, administración del cumplimiento o asistencia técnica. Para obtener más información, consulte [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (consulte la sección [elegir tipo de informe](#choose-report-type) para obtener más información). El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) de PowerShell de Exchange Online PowerShell o Exchange Online Protection de Exchange devuelve todos los mensajes de los resultados.
 
 ## <a name="open-message-trace"></a>Abrir el seguimiento de mensajes
 
@@ -63,7 +60,7 @@ Los valores predeterminados son **todos los remitentes** y **todos los destinata
 - **A estas personas**: haga clic en este campo para seleccionar uno o más destinatarios de la organización.
 
 > [!NOTE]
-> También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín (por ejemplo `*@contoso.com`,), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo.<br/>Puede pegar varias listas de remitentes o destinatarios separados por punto y coma (`;`). espacios (`\s`), retornos`\r`de carro () o líneas`\n`siguientes ().
+> También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín (por ejemplo `*@contoso.com`,), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo. <br/><br/> Puede pegar varias listas de remitentes o destinatarios separados por punto y coma (`;`). espacios (`\s`), retornos`\r`de carro () o líneas`\n`siguientes ().
 
 ### <a name="time-range"></a>Intervalo de tiempo
 
@@ -71,17 +68,17 @@ El valor predeterminado es de **2 días**, pero puede especificar intervalos de 
 
 - De forma predeterminada, se selecciona el intervalo de tiempo en la vista de **control deslizante** mediante una línea de tiempo. Solo puede seleccionar la configuración de día o de hora que se muestra. Al intentar seleccionar un valor en entre, el burbuja de inicio/final se ajustará a la opción que se muestra más próxima.
 
-   ![Un intervalo de tiempo del control deslizante en un nuevo seguimiento de mensajes en el centro de seguridad & cumplimiento](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![Un intervalo de tiempo del control deslizante en un nuevo seguimiento de mensajes en el centro de seguridad & cumplimiento](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
-   Sin embargo, también puede cambiar a la vista **personalizada** donde puede especificar los valores de fecha de **Inicio** y **fecha de finalización** (incluidas las horas), y también puede seleccionar la **zona horaria** para el intervalo de fecha y hora. Tenga en cuenta que la configuración de la **zona horaria** se aplica tanto a las entradas de consulta como a los resultados de la consulta.
+  Sin embargo, también puede cambiar a la vista **personalizada** donde puede especificar los valores de fecha de **Inicio** y **fecha de finalización** (incluidas las horas), y también puede seleccionar la **zona horaria** para el intervalo de fecha y hora. Tenga en cuenta que la configuración de la **zona horaria** se aplica tanto a las entradas de consulta como a los resultados de la consulta.
 
-   ![Un intervalo de tiempo personalizado en un nuevo seguimiento de mensajes en el centro de seguridad & cumplimiento](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![Un intervalo de tiempo personalizado en un nuevo seguimiento de mensajes en el centro de seguridad & cumplimiento](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
-   Durante 10 días o menos, los resultados están disponibles al instante como un informe de **Resumen** . Si especifica un intervalo de tiempo que es incluso ligeramente mayor que 10 días, los resultados se retrasarán, ya que solo están disponibles como archivo CSV descargable ( **Resumen mejorado** o informes **extendidos** ).
+  Durante 10 días o menos, los resultados están disponibles al instante como un informe de **Resumen** . Si especifica un intervalo de tiempo que es incluso ligeramente mayor que 10 días, los resultados se retrasarán, ya que solo están disponibles como archivo CSV descargable ( **Resumen mejorado** o informes **extendidos** ).
 
-   Para obtener más información acerca de los diferentes tipos de informes, vea la sección [Choose Report Type](#choose-report-type) de este tema.
+  Para obtener más información acerca de los diferentes tipos de informes, vea la sección [Choose Report Type](#choose-report-type) de este tema.
 
-   **Nota**: el resumen mejorado y los informes extendidos se preparan con datos de seguimiento de mensajes archivados y puede tardar varias horas antes de que el informe esté disponible para su descarga. En función de cuántos otros administradores hayan enviado solicitudes de informe alrededor del mismo tiempo, es posible que también perciba un retraso antes de que se inicie el procesamiento para la solicitud en cola.
+  **Nota**: el resumen mejorado y los informes extendidos se preparan con datos de seguimiento de mensajes archivados y puede tardar varias horas antes de que el informe esté disponible para su descarga. En función de cuántos otros administradores hayan enviado solicitudes de informe alrededor del mismo tiempo, es posible que también perciba un retraso antes de que se inicie el procesamiento para la solicitud en cola.
 
 - Guardar una consulta en la vista de **control deslizante** guarda el intervalo de tiempo relativo (por ejemplo, 3 días a partir de hoy). Al guardar una consulta en la vista **personalizada** se guarda el intervalo de fechas y horas absolutas (por ejemplo, 2018-05-06 13:00 a 2018-05-08 18:00).
 
@@ -129,9 +126,9 @@ Puede archivar los resultados por dirección IP del cliente para investigar los 
 
 Los tipos de informes disponibles son:
 
-- **Resumen**: disponible si el intervalo de tiempo es inferior a 10 días y no requiere opciones de filtrado adicionales. Los resultados estarán disponibles casi inmediatamente después de hacer clic en **Buscar**.
+- **Resumen**: disponible si el intervalo de tiempo es inferior a 10 días y no requiere opciones de filtrado adicionales. Los resultados estarán disponibles casi inmediatamente después de hacer clic en **Buscar**. El informe devuelve hasta 20000 resultados.
 
-- **Mejorado** o **ampliado**: estos informes solo están disponibles como archivos. csv descargables y requieren una o varias de las siguientes opciones de filtrado independientemente del intervalo de tiempo: **por estas personas**, **a estas personas o al**identificador del **mensaje**. Puede usar caracteres comodín para los remitentes o los destinatarios (por ejemplo, \*@contoso. com).
+- **Mejorado** o **ampliado**: estos informes solo están disponibles como archivos. csv descargables y requieren una o varias de las siguientes opciones de filtrado independientemente del intervalo de tiempo: **por estas personas**, **a estas personas o al**identificador del **mensaje**. Puede usar caracteres comodín para los remitentes o los destinatarios (por ejemplo, \*@contoso. com). El informe de resumen mejorado devuelve hasta 50000 resultados. El informe extendido devuelve hasta 1000 resultados.
 
 **Notas**:
 
@@ -335,7 +332,7 @@ Varios **** agentes de Exchange Online `AGENTINFO` usan el campo custom_data par
 
 Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El filtro de contenido marcó el mensaje como correo no deseado.|
@@ -362,7 +359,7 @@ Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no dese
 
 Un valor de **custom_data** que empieza `S:AMA` por es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -385,7 +382,7 @@ Un ejemplo de un valor **custom_data** para un mensaje que contiene malware tien
 
 Un valor de **custom_data** que empieza`S:TRA` por es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|

@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b6f24cb1afcefc9ddbe468530855603e7ee0f484
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 73c1d7be6da17ae29c6ea8423c879286714fe8f1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804193"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558607"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>Ley de privacidad del consumidor de California (CCPA)
 
@@ -37,7 +37,7 @@ Para los clientes comerciales que hacen negocios en California, Microsoft actuar
 
 Tal y como se establece en el OST, Microsoft cumple con todas las leyes y regulaciones aplicables a la prestación de los servicios en línea, que incluirían la CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Operaciones de Azure dev
@@ -51,7 +51,7 @@ Tal y como se establece en el OST, Microsoft cumple con todas las leyes y regula
 
 Estos son algunos de los pasos que puede realizar para prepararse para el CCPA:
 
-- Empiece por aprovechar la evaluación del RGPD en el Administrador de cumplimiento como parte de su programa de privacidad de la CCPA.
+- Empiece a aprovechar la evaluación de RGPD en la [puntuación de cumplimiento](compliance-score.md) como parte de su programa de privacidad de CCPA.
 - Establecer un proceso para responder de manera eficaz a las solicitudes de acceso de sujetos de datos (DSARs) mediante la herramienta de solicitudes de interesados.
 - Configure etiquetas y directivas para detectar, clasificar, etiquetar y proteger los datos confidenciales con Microsoft Information Protection.
 - Use las capacidades de cifrado de correo electrónico para controlar aún más la información confidencial.

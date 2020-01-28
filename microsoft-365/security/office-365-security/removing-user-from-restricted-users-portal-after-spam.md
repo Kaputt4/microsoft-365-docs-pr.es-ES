@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un usuario envía continuamente mensajes desde Office 365 se clasifican como correo no deseado, se le bloqueará para que no pueda enviar más mensajes de correo electrónico.
-ms.openlocfilehash: c817add2581ffdbe709023dc3b348631defec169
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: e942cd9012c3eba226db58808031ac200fbdfeca
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823822"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558637"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado
 

@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: eacbb5577c070ce463ad8e17ba6d0d19a1d8736c
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 3d0bba3c75bda77cbffbbd515215a10d579755be
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40971420"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558567"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrar las búsquedas y suspensiones de eDiscovery heredado al centro de cumplimiento de Microsoft 365
 
@@ -75,7 +75,7 @@ La salida de estos dos comandos será similar a la siguiente:
 ![Ejemplo de resultados de PowerShell de usar Get-MailboxSearch para una búsqueda individual](media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> La duración de la conservación local en este ejemplo es indefinida (*ItemHoldPeriod: Unlimited*). Esto es típico para escenarios de eDiscovery y de investigación legal. Si la duración de retención tiene un valor diferente a indefinido, es probable que la razón sea que la retención se usa para conservar el contenido en un escenario de retención. En lugar de usar los cmdlets de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del centro de cumplimiento de 365 Office PowerShell para escenarios de retención, se recomienda usar [New-HoldCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy) y [New-HoldComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule) para conservar el contenido. El resultado de usar estos cmdlets será similar a usar **New-CaseHoldPolicy** y **New-CaseHoldRule**, pero podrá especificar un período de retención y una acción de retención, como la eliminación de contenido una vez que expire el período de retención. Además, el uso de cmdlets de retención no requiere que se asocien las suspensiones de retención con un caso de exhibición de documentos electrónicos.
+> La duración de la conservación local en este ejemplo es indefinida (*ItemHoldPeriod: Unlimited*). Esto es típico para escenarios de eDiscovery y de investigación legal. Si la duración de retención tiene un valor diferente a indefinido, es probable que la razón sea que la retención se usa para conservar el contenido en un escenario de retención. En lugar de usar los cmdlets de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del centro de cumplimiento de 365 Office PowerShell para escenarios de retención, se recomienda usar [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) y [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) para conservar el contenido. El resultado de usar estos cmdlets será similar a usar **New-CaseHoldPolicy** y **New-CaseHoldRule**, pero podrá especificar un período de retención y una acción de retención, como la eliminación de contenido una vez que expire el período de retención. Además, el uso de cmdlets de retención no requiere que se asocien las suspensiones de retención con un caso de exhibición de documentos electrónicos.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Paso 4: crear un caso en el centro de cumplimiento de Microsoft 365
 

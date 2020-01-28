@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa de Microsoft 365 Business a Microsoft 365 E3.
-ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cf6aa741c7f0b427a434d472df7169ef37c5418
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111874"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558047"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrar de Microsoft 365 Empresa a Microsoft 365 E3
 
@@ -77,7 +77,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business y Microso
 | Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |       ![Incluido con Microsoft 365 E3](./media/check-mark.png) | 
 | **Cumplimiento**        | | | 
 | Archivado de correo electrónico ilimitado | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | ![Incluido con Microsoft 365 E3](./media/check-mark.png) | 
-| Administrador de cumplimiento    | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | ![Incluido con Microsoft 365 E3](./media/check-mark.png) | 
+| Puntuación de cumplimiento/administrador de cumplimiento   | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | ![Incluido con Microsoft 365 E3](./media/check-mark.png) | 
 | eDiscovery    | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | ![Incluido con Microsoft 365 E3](./media/check-mark.png) | 
 | Conservación local y retención por juicio | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | ![Incluido con Microsoft 365 E3](./media/check-mark.png) | 
 | Etiquetas de retención y directivas de retención de administración de registros de mensajería (MRM)  | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | ![Incluido con Microsoft 365 E3](./media/check-mark.png) | 

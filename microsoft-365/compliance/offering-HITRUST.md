@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9b0448a3ed5cf36a909ebb14e0aadf2b8ac96610
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6085446677e592425d5453aa350541590de1b9d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804803"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558537"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Information Trust Trust Alliance (HITRUST) Common Security Framework (CSF)
 
@@ -37,7 +37,7 @@ Obtenga información sobre cómo acelerar la implementación de HITRUST con nues
 
 [Descargar la matriz de responsabilidad del cliente de Microsoft Azure HITRUST (CRM) Blueprint v 9.0 d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Intune
@@ -58,15 +58,15 @@ Empiece a aprovechar las ventajas de la nube para obtener soluciones de datos de
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>Acelere el cumplimiento de la ley HIPAA/HITRUST al usar Office 365
 
-Use Office 365 para administrar la información de estado de forma segura y conforme con el administrador de cumplimiento, lo que le permite realizar evaluaciones de riesgos contra las regulaciones de estado como HIPAA y los marcos de control de seguridad, como NIST CSF y NIST 800-53. Puede seguir instrucciones paso a paso para saber cómo implementar y mantener controles de protección de datos que le ayuden a cumplir con las obligaciones de cumplimiento de la atención sanitaria.
+Use Office 365 para administrar la información de estado de forma segura y conforme con la puntuación de cumplimiento, lo que le permite realizar evaluaciones de riesgos contra las regulaciones de estado como HIPAA y los marcos de control de seguridad, como NIST CSF y NIST 800-53. Puede seguir instrucciones paso a paso para saber cómo implementar y mantener controles de protección de datos que le ayuden a cumplir con las obligaciones de cumplimiento de la atención sanitaria.
 
-[Empezar a usar el administrador de cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=862650)
+[Empezar a usar la puntuación de cumplimiento](compliance-score.md)
 
 ## <a name="collaborate-with-microsoft-in-the-hitrust-shared-responsibility-program"></a>Colaborar con Microsoft en el programa de responsabilidad compartida de HITRUST
 
 Acelere el cumplimiento de HITRUST para su solución hospedada en Microsoft Azure rellenando previamente su evaluación con controles de responsabilidad completamente heredados o compartidos para Azure en la herramienta HITRUST MyCSF y colaborando con Microsoft en su revisión.
 
-[Más información](https://go.microsoft.com/fwlink/p/?linkid=2100268)
+[Obtener más información](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -95,7 +95,7 @@ Al almacenar los datos en un SaaS como Office 365, se trata de una responsabilid
 
 **¿Microsoft proporciona orientación a mi organización para que implemente controles apropiados al usar Office 365?**
 
-Sí, puede encontrar acciones recomendadas para el cliente en el administrador de cumplimiento, soluciones de nube entre Microsoft que ayudan a su organización a cumplir con las obligaciones de cumplimiento complejas al usar servicios en la nube. Concretamente, para HITRUST CSF, se recomienda realizar evaluaciones de riesgos mediante las evaluaciones NIST 800-53 y NIST CSF en el administrador de cumplimiento. En las evaluaciones, le proporcionamos instrucciones paso a paso y las soluciones de Microsoft que puede usar para implementar los controles de protección de datos. Puede obtener más información sobre el administrador de cumplimiento en este [documento](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us).
+Sí, puede encontrar las acciones de cliente recomendadas en puntuación de cumplimiento, soluciones en la nube entre-Microsoft que ayudan a su organización a cumplir con las obligaciones de cumplimiento complejas al usar servicios en la nube. Específicamente, para HITRUST CSF, se recomienda realizar evaluaciones de riesgos con las evaluaciones de NIST 800-53 y NIST CSF en puntuación de cumplimiento. En las evaluaciones, le proporcionamos instrucciones paso a paso y las soluciones de Microsoft que puede usar para implementar los controles de protección de datos. Puede obtener más información sobre la puntuación de cumplimiento en la [puntuación de cumplimiento de Microsoft](compliance-score.md).
 
 **¿Cómo puedo participar con Microsoft?**
 
