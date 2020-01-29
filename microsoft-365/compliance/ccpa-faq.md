@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 567c104fcb960cce3bd09cd636fed8814cdbeb4c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 9323cce022af6c624b76b56a27fe35ff55c3519f
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39638065"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558427"
 ---
 # <a name="california-consumer-privacy-act-ccpa-frequently-asked-questions"></a>Preguntas más frecuentes: Ley de Privacidad del Consumidor de California (CCPA)
 
@@ -98,7 +98,7 @@ Como Microsoft ya ha implementado a escala global solicitudes de interesados rel
 
 **¿Qué herramientas pueden ayudar a mi organización a empezar a prepararse para la CCPA?**
 
-- Empiece por aprovechar la evaluación del RGPD en el Administrador de cumplimiento como parte de su programa de privacidad de la CCPA.
+- Empiece a aprovechar la evaluación de la GDPR en la puntuación de cumplimiento como parte de su programa de privacidad de la CCPA.
 - Establezca un proceso de respuesta eficaz a las solicitudes de los clientes.
 - Configure etiquetas y directivas para detectar, clasificar, etiquetar y proteger los datos confidenciales con Microsoft Information Protection.
 - Use las capacidades de cifrado de correo electrónico para controlar aún más la información confidencial.

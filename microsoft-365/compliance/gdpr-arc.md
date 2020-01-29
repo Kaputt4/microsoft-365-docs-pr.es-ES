@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 1bc2ac17d8548382dff721decba674952de977d6
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: db67326b7fa1f09576ae49de75e3f1de525ffd86
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38750016"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558077"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Apoye a su programa de RGPD con las listas de comprobación de preparación de responsabilidad
 
@@ -36,7 +37,7 @@ Puede ver una guía con cuatro secciones específicas para familias de productos
 - [Azure](gdpr-arc-Azure.md)
 - [Soporte técnico y servicios profesionales de Microsoft](gdpr-arc-prof-services.md)
 
-Puede administrar los elementos de esta lista de comprobación con el [Administrador de cumplimiento](https://servicetrust.microsoft.com/ComplianceManager) haciendo referencia al identificador de control y el título del control en Controles administrados de cliente en el icono RGPD.
+Los elementos de esta lista de comprobación se podrán administrar con [resultado de la conformidad](compliance-score.md) haciendo referencia a la Identificación y al Título de Control que se encuentra en Controles administrados por el cliente en la casilla de GDPR..
 
 Las listas de comprobación incluyen cuatro categorías básicas para un programa de privacidad compatible con el RGPD. Estas se muestran a continuación acompañadas con ejemplos de requisitos.
 

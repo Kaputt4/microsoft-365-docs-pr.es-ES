@@ -11,36 +11,36 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Si desea asegurarse de que recibe el correo de un remitente determinado, ya que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de correo no deseado en el centro de administración de Exchange.
-ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+description: Si desea asegurarse de que recibe el correo de un remitente determinado, ya que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de correo no deseado.
+ms.openlocfilehash: 02457a863445cf9544f75682aa2df3bf2b7e765a
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970856"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573007"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Crear listas de remitentes seguros en Office 365
 
-Si quiere asegurarse de que los usuarios reciben mensajes de correo electrónico de un remitente o remitentes concretos, ya que confía en ellos y sus mensajes, hay varios métodos disponibles que puede elegir. Estas opciones incluyen reglas de transporte de Exchange (ETR), remitentes seguros de Outlook, listas de direcciones IP permitidas, remitente/dominio de correo electrónico no deseado.
+Si quiere asegurarse de que los usuarios reciben mensajes de correo electrónico de un remitente o remitentes concretos, ya que confía en ellos y sus mensajes, hay varios métodos disponibles que puede elegir. Estas opciones incluyen reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), remitentes seguros de Outlook, listas de direcciones IP permitidas, remitente/dominio de correo no deseado.
 
 > [!IMPORTANT]
 > Aunque las listas de permitidos de la organización se pueden usar para solucionar falsos positivos, esto debe considerarse una solución temporal y evitarse si es posible. No se recomienda la administración de falsos positivos mediante listas de permitidos, ya que puede abrir involuntariamente su organización para la suplantación, la suplantación y otros ataques. Si va a usar una lista de permitidos para este propósito, tendrá que estar atento y mantener el artículo sobre el envío de correo no deseado [, correo no deseado y mensajes de suplantación de identidad (phishing) a Microsoft para su análisis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), en la lista desplegable.
 
-El método recomendado para configurar una lista de remitentes seguros es usar las reglas de transporte de Exchange (ETR), ya que esto supone la máxima flexibilidad para asegurarse de que solo se permiten los mensajes correctos. *Las listas de permitidos basadas en dominios* y *direcciones de correo electrónico de la Directiva contra correo no deseado* no son tan seguras como *las listas basadas en direcciones IP* , ya que los dominios se pueden suplantar fácilmente. Pero las listas de permitidos basadas en IP de la Directiva contra correo no deseado también presentan los riesgos, ya que permiten que los dominios enviados a través de esa IP omitan el filtrado de correo no deseado. Tenga cuidado y supervise *las* excepciones realizadas, con cuidado.
+El método recomendado para configurar una lista de remitentes seguros es usar reglas de flujo de correo, ya que esto presenta la máxima flexibilidad para asegurarse de que solo se permiten los mensajes correctos. *Las listas de permitidos basadas en dominios* y *direcciones de correo electrónico de la Directiva contra correo no deseado* no son tan seguras como *las listas basadas en direcciones IP* , ya que los dominios se pueden suplantar fácilmente. Pero las listas de permitidos basadas en IP de la Directiva contra correo no deseado también presentan los riesgos, ya que permiten que los dominios enviados a través de esa IP omitan el filtrado de correo no deseado. Tenga cuidado y supervise *las* excepciones realizadas, con cuidado.
 
 > [!IMPORTANT]
 > [Aquí](create-block-sender-lists-in-office-365.md)encontrarás información sobre cómo crear una **lista de remitentes bloqueados** .
 
 ## <a name="options-from-most-to-least-recommended"></a>Se recomiendan opciones de mayor a menor
 
-Siempre debe restringir las listas de permitidos porque omiten muchas medidas de seguridad. Debe volver a comprobar todas las listas de permitidos como parte de su mantenimiento estándar para conocer quién está autorizado a omitir. La recomendación es usar ETR restrictivas siempre que sea posible.
+Siempre debe restringir las listas de permitidos porque omiten muchas medidas de seguridad. Debe volver a comprobar todas las listas de permitidos como parte de su mantenimiento estándar para conocer quién está autorizado a omitir. La recomendación es usar reglas de flujo de correo restrictivas siempre que sea posible.
 
-- Reglas de transporte de Exchange (ETR también denominadas reglas de flujo de correo)
+- Reglas de flujo de correo de Exchange
 - Remitentes seguros de Outlook
 - Directiva contra correo no deseado: listas de direcciones IP permitidas
 - Directiva contra correo no deseado: listas de permitidos de remitente/dominio
 
-## <a name="using-exchange-transport-rules-etrs-to-allow-specific-senders-recommended"></a>Uso de reglas de transporte de Exchange (ETR) para permitir remitentes específicos (recomendado)
+## <a name="using-exchange-mail-flow-rules-to-allow-specific-senders-recommended"></a>Uso de reglas de flujo de correo de Exchange para permitir remitentes específicos (recomendado)
 
 Para asegurarse de que solo se permiten mensajes legítimos en la organización, la condición debe ser una de las siguientes:
 
@@ -59,7 +59,7 @@ La acción de la regla debe seguir este patrón:
 
 1. Establezca el nivel de confianza contra correo no deseado (SCL) en-1 (pase por alto el filtrado de correo no deseado).
 
-2. Agregue un encabezado X para indicar lo que hace la regla. En el ejemplo siguiente, puede Agregar un encabezado sencillo "X-ETR: omitir el filtrado de correo no deseado para `contoso.com`el remitente autenticado". Si tiene más de un dominio en esta regla, puede cambiar el texto del encabezado según corresponda. **Cuando un mensaje omite el filtrado debido a un ETR, marca SFV: SKN en el encabezado X-Forefront-antispam-Report** (**si se encuentra en una lista de direcciones IP permitidas, también marca IPV: cal**). Esto le ayudará con la solución de problemas.
+2. Agregue un encabezado X para indicar lo que hace la regla. En el ejemplo siguiente, puede Agregar un encabezado `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`sencillo. Si tiene más de un dominio en esta regla, puede cambiar el texto del encabezado según corresponda. **Cuando un mensaje omite el filtrado debido a una regla de flujo de correo, marca SFV: SKN en el encabezado X-Forefront-antispam-Report** (**si se encuentra en una lista de direcciones IP permitidas, también marca IPV: cal**). Esto le ayudará con la solución de problemas.
 
 ![GUI para omitir el filtrado de correo no deseado.](../media/1-AllowList-SkipFilteringFromContoso.png)
 
@@ -70,7 +70,7 @@ La acción de la regla debe seguir este patrón:
 
 No agregue dominios de su propiedad o de dominios populares (por ejemplo `microsoft.com`,) a la regla de flujo de correo como una condición. Esto se considera un riesgo alto, ya que crea oportunidades para que los actores incorrectos le envíen correo que, de lo contrario, se filtraría.
 
-[Haga clic en para conocer los pasos para crear un ETR, también conocido como reglas de flujo de correo](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages).
+Para obtener más información, vea [usar reglas de flujo de correo para establecer el SCL en los mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>Usar remitentes seguros de Outlook (administrado por el usuario final)
 
@@ -78,7 +78,7 @@ En lugar de autorizar una dirección, un dominio o una dirección IP de forma gl
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>Usar listas de direcciones IP permitidas de la Directiva contra correo no deseado
 
-Cuando no es posible usar ETR para permitir globalmente a un remitente específico mientras se valida la autenticación del remitente, o al asociar un dominio y una IP juntos, la siguiente mejor opción es agregar el remitente a la *lista de direcciones IP permitidas de la Directiva contra correo no deseado*. [Puede encontrar los pasos detallados en Configure the Connection Filter Policy Document](https://docs.microsoft.com/office365/securitycompliance/configure-the-connection-filter-policy). Es importante mantener la lista de direcciones IP permitidas en el mínimo y evitar usar intervalos de direcciones IP. Evite agregar intervalos de direcciones IP que pertenezcan a servicios de consumo o infraestructuras compartidas y *Asegúrese* de revisar la lista de direcciones IP permitidas de forma regular y quitar las que ya no son necesarias.
+Cuando no es posible usar reglas de flujo de correo para permitir globalmente a un remitente específico mientras se valida la autenticación del remitente, o al asociar un dominio y una IP juntos, la siguiente mejor opción es agregar el remitente a la *lista de direcciones IP permitidas de la Directiva contra correo no deseado*. Puede encontrar los pasos detallados en [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md). Es importante mantener el número mínimo de direcciones IP permitidas, por lo que debe evitar usar intervalos de direcciones IP completos. Además, no debe agregar intervalos de direcciones IP que pertenezcan a servicios de consumo o infraestructuras compartidas, y también *asegurarse* de que revisa la lista de direcciones IP permitidas de forma regular y quitar las que ya no son necesarias.
 
 > [!CAUTION]
 > La configuración de las directivas contra el correo no deseado para permitir en función de la dirección IP del remitente sólo hará que se omita el filtrado de correo no deseado para todos los mensajes de esa dirección IP en la regla permitir. Esto crea un riesgo alto de que los actores incorrectos le envíen correo que, de lo contrario, se filtraría. Este método también omite el filtrado de correo no deseado, las comprobaciones de autenticación del remitente y el mensaje que se encuentra en la bandeja de entrada del usuario, lo que aumenta el riesgo.
@@ -89,10 +89,5 @@ La opción menos deseable es autorizar por remitente o dominio. Esta opción deb
 
 El límite máximo de estas listas es de aproximadamente 1000 entradas; Aunque solo podrá especificar 30 entradas en el portal. Debe usar PowerShell para agregar más de 30 entradas.
 
-> [!CAUTION]
-> La configuración de las directivas contra el correo no deseado para permitir que el *remitente o el dominio permita* que los mensajes omitan el filtrado de correo no deseado para a) los mensajes de los remitentes de la lista de permitidos, o b, todos los remitentes de un dominio permitido. Este método aumenta significativamente el riesgo de que los remitentes de correo no deseado suplanten el dominio remitente (o suplantar la dirección de correo electrónico completa) que omiten el filtrado de correo no deseado, las comprobaciones de autenticación del remitente y envían el mensaje directamente a la bandeja de entrada de una persona.
-> 
-> No agregue dominios que sean de su propiedad o de dominios populares `microsoft.com`(por ejemplo,) a la regla de flujo de correo como una condición. Este método se considera un riesgo alto, ya que crea oportunidades para que los actores incorrectos le envíen correo que, de lo contrario, se filtraría, lo que aumentaría el riesgo.
-
 > [!IMPORTANT]
-> [Aquí](create-block-sender-lists-in-office-365.md)encontrarás información sobre cómo crear una **lista de remitentes bloqueados** .
+> • La configuración de directivas contra el correo no deseado para permitir que el *remitente o el dominio permita* que los mensajes omitan el filtrado de correo no deseado para a) los mensajes de los remitentes de la lista de permitidos, o b, todos los remitentes de un dominio permitido. Este método aumenta significativamente el riesgo de que los remitentes de correo no deseado suplanten el dominio remitente (o suplantar la dirección de correo electrónico completa) que omiten el filtrado de correo no deseado, las comprobaciones de autenticación del remitente y envían el mensaje directamente a la bandeja de entrada de una persona. <br/><br/>• No agregue dominios que sean de su propiedad o de dominios populares `microsoft.com`(por ejemplo,) a la regla de flujo de correo como una condición. Este método se considera un riesgo alto, ya que crea oportunidades para que los actores incorrectos le envíen correo que, de lo contrario, se filtraría, lo que aumentaría el riesgo. <br/><br/>• [Aquí](create-block-sender-lists-in-office-365.md)puede obtener información sobre cómo crear una **lista de remitentes bloqueados** .

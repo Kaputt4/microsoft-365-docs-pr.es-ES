@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
-ms.openlocfilehash: 995f0b273753d7b3a92b8c5acef6eb94d51458b3
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 43133ed638f91957307b832826c21ae81aa269b0
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872106"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572977"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -31,11 +31,11 @@ Existen muchas herramientas que pueden usarse para supervisar el uso y transport
 
 En la ilustración:
 
--   Comience con los informes de prevención de pérdida de datos de Office 365 para supervisar datos personales en SharePoint Online, OneDrive para la Empresa y correo electrónico en tránsito. Proporcionan mayor nivel de detalle de supervisión de datos personales. No obstante, estos informes no incluyen todos los servicios de Office 365.
+- Comience con los informes de prevención de pérdida de datos de Office 365 para supervisar datos personales en SharePoint Online, OneDrive para la Empresa y correo electrónico en tránsito. Proporcionan mayor nivel de detalle de supervisión de datos personales. No obstante, estos informes no incluyen todos los servicios de Office 365.
 
--   Después, use directivas de alerta y el registro de Office 365 para supervisar la actividad de los servicios de Office 365. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría de Office 365 funciona en todos los servicios de Office 365: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo en tránsito y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
+- Después, use directivas de alerta y el registro de Office 365 para supervisar la actividad de los servicios de Office 365. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría de Office 365 funciona en todos los servicios de Office 365: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo en tránsito y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
 
--   Por último, use Microsoft Cloud App Security para supervisar los archivos con datos confidenciales de otros proveedores de SaaS. Próximamente se podrán usar los tipos de información confidencial de Office 365 y las etiquetas unificadas en Azure Information Protection y Office con Cloud App Security. Puede configurar directivas que se aplican a todas las aplicaciones específicas (como cuadro) o a aplicaciones SaaS. Cloud App Security no busca archivos en Exchange Online, incluidos los archivos adjuntos de correo electrónico.
+- Por último, use Microsoft Cloud App Security para supervisar los archivos con datos confidenciales de otros proveedores de SaaS. Próximamente, se podrán usar los tipos de información confidencial de Office 365 y las etiquetas unificadas en Azure Information Protection y Office con Cloud App Security. Puede configurar directivas que se aplican a todas las aplicaciones específicas (como cuadro) o a aplicaciones SaaS. Cloud App Security no busca archivos en Exchange Online, incluidos los archivos adjuntos de correo electrónico.
 
 ## <a name="office-365-data-loss-prevention-reports"></a>Informes de prevención de pérdida de datos de Office 365
 
@@ -43,23 +43,23 @@ Después de crear las directivas de prevención de pérdida de datos (DLP), debe
 
 Puede usar los informes DLP para lo siguiente:
 
--   Centrarse en períodos de tiempo específicos y comprender las causas de los picos y las tendencias.
+- Centrarse en períodos de tiempo específicos y comprender las causas de los picos y las tendencias.
 
--   Descubrir los procesos de negocio que infringen las directivas DLP de su organización.
+- Descubrir los procesos de negocio que infringen las directivas DLP de su organización.
 
--   Comprender cualquier impacto de negocio de las directivas DLP.
+- Comprender cualquier impacto de negocio de las directivas DLP.
 
--   Ver las justificaciones enviadas por los usuarios cuando resuelven una sugerencia de directiva reemplazando la directiva o informando de un falso positivo.
+- Ver las justificaciones enviadas por los usuarios cuando resuelven una sugerencia de directiva reemplazando la directiva o informando de un falso positivo.
 
--   Comprobar el cumplimiento de una directiva DLP específica mostrando las coincidencias de dicha directiva.
+- Comprobar el cumplimiento de una directiva DLP específica mostrando las coincidencias de dicha directiva.
 
--   Ver una lista de los archivos con datos confidenciales que coincida con las directivas DLP en el panel de detalles.
+- Ver una lista de los archivos con datos confidenciales que coincida con las directivas DLP en el panel de detalles.
 
 Además, puede usar los informes DLP para ajustar las directivas DLP a medida que las ejecuta en modo de prueba.
 
 Los informes DLP están en el centro de seguridad y el centro de cumplimiento. Vaya a Informes \> Ver informes. En Prevención de pérdida de datos (DLP), elija Coincidencias de regla y directiva DLP o Falsos positivos y reemplazos de DLP.
 
-Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
+Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
 
 ![Informe que muestra coincidencias de directivas DLP](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -69,9 +69,9 @@ El registro de auditoría de Office 365 contiene eventos de Exchange Online, Sha
 
 El centro de seguridad y el centro de cumplimiento ofrecen dos formas de supervisar e informar en el registro de auditoría de Office 365:
 
--   Configurar directivas de alerta, ver alertas y supervisar tendencias: use la directiva de alerta y el panel de herramientas de alerta en el centro de seguridad o el centro de cumplimiento.
+- Configurar directivas de alerta, ver alertas y supervisar tendencias: use la directiva de alerta y el panel de herramientas de alerta en el centro de seguridad o el centro de cumplimiento.
 
--   Buscar el registro de auditoría directamente: busque todos los eventos en un intervalo de fechas especificado, o puede filtrar los resultados basándose en criterios específicos, como la acción, el usuario que la realizó o el objeto de destino.
+- Buscar el registro de auditoría directamente: busque todos los eventos en un intervalo de fechas especificado, o puede filtrar los resultados basándose en criterios específicos, como la acción, el usuario que la realizó o el objeto de destino.
 
 Los equipos de seguridad y cumplimiento de información pueden usar estas herramientas para revisar proactivamente las actividades realizadas por los usuarios finales y los administradores en los servicios de Office 365. Pueden configurarse alertas automáticas para enviar notificaciones por correo electrónico cuando se producen ciertas actividades en colecciones de sitios específicos, por ejemplo, cuando se comparte el contenido de los sitios que se sabe que contiene información relacionada con RGPD. Esto permite que los equipos contacten con usuarios para asegurarse de que se siguen directivas de seguridad corporativa, así como proporcionar aprendizaje adicional.
 
@@ -81,17 +81,17 @@ Existen soluciones que se adhieren a los Registros de auditoría unificados medi
 
 Más información sobre las directivas de alerta y buscar en el registro de auditoría:
 
-- [Directivas de alerta en los centros de seguridad y cumplimiento de Microsoft 365](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+- [Directivas de alerta en los centros de seguridad y cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
 
-- [Buscar en el registro de auditoría de actividad de usuario y administración de Office 365](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introducción)
+- [Buscar en el registro de auditoría de actividad de usuario y administración de Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introducción)
 
-- [Activar o desactivar la búsqueda de registros de auditoría de Office 365](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+- [Activar o desactivar la búsqueda de registros de auditoría de Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
-- [Buscar en el registro de auditoría](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+- [Buscar en el registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
 
-- [Propiedades detalladas del registro de auditoría de Office 365](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+- [Propiedades detalladas del registro de auditoría de Office 365](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -111,9 +111,9 @@ La segunda directiva bloquea las descargas de archivos en cualquier dispositivo 
 
 Estos tipos de atributo estarán pronto disponibles en Cloud App Security:
 
--   Tipos de información confidencial de Office 365
+- Tipos de información confidencial de Office 365
 
--   Etiquetas unificadas en Office 365 y Azure Information Protection
+- Etiquetas unificadas en Office 365 y Azure Information Protection
 
 ### <a name="cloud-app-security-dashboard"></a>Panel de Cloud App Security
 
@@ -125,11 +125,11 @@ Nota: No olvide habilitar "Analizar automáticamente archivos de etiquetas de cl
 
 Más información:
 
--   [Implementar Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Implementar Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Más información sobre Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Más información sobre Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [Bloqueo de descargas de información confidencial con el proxy de Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [Bloqueo de descargas de información confidencial con el proxy de Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Directivas de archivo y actividad de ejemplo para detectar el uso compartido de datos personales
 
@@ -173,7 +173,7 @@ Envíe una alerta cuando se comparte un archivo que contiene un número de tarje
 <tr class="odd">
 <td align="left">Control de contenido</td>
 <td align="left"><p>Incluye los archivos que coinciden con una expresión actual: Todos los países: Finanzas: Número de tarjeta de crédito</p>
-<p>No requerir contexto relevante: desactivado (esto coincidirá con palabras clave como regex)</p>
+<p>No requerir contexto relevante: desactivado (esto coincidirá con palabras clave, así como regex)</p>
 <p>Incluir archivos con al menos 1 coincidencia</p>
 <p>Quitar máscara de los últimos 4 caracteres de la infracción: activada</p></td>
 </tr>
@@ -198,9 +198,9 @@ Envíe una alerta cuando se comparte un archivo que contiene un número de tarje
 
 Directivas similares:
 
--   Detectar el uso compartido de archivos que contengan DCP: dirección de correo electrónico
+- Detectar el uso compartido de archivos que contengan DCP: dirección de correo electrónico
 
--   Detectar el uso compartido de archivos que contengan DCP: número de pasaporte
+- Detectar el uso compartido de archivos que contengan DCP: número de pasaporte
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Detectar Datos de recursos humanos o Datos de cliente en Box o OneDrive para la Empresa
 
@@ -208,9 +208,9 @@ Envía una alerta cuando se carga un archivo etiquetado como Datos de recursos h
 
 Notas:
 
--   La supervisión de Box requiere un conector configurado con el SDK API Connector.
+- La supervisión de Box requiere un conector configurado con el SDK API Connector.
 
--   Esta directiva requiere funcionalidades que actualmente están en versión preliminar privada.
+- Esta directiva requiere funcionalidades que actualmente están en versión preliminar privada.
 
 <table>
 <thead>
@@ -267,6 +267,6 @@ Notas:
 
 Directivas similares:
 
--   Detectar descargas grandes de Datos de clientes o Datos de recursos humanos: envía una alerta cuando se detecta que un solo usuario está descargando un gran número de archivos que contienen datos de recursos humanos o de clientes en un breve período de tiempo.
+- Detectar descargas grandes de Datos de clientes o Datos de recursos humanos: envía una alerta cuando se detecta que un solo usuario está descargando un gran número de archivos que contienen datos de recursos humanos o de clientes en un breve período de tiempo.
 
--   Detectar el uso compartido de Datos de clientes y Datos de recursos humanos: envía una alerta cuando se comparten archivos con Datos de clientes o de recursos humanos.
+- Detectar el uso compartido de Datos de clientes y Datos de recursos humanos: envía una alerta cuando se comparten archivos con Datos de clientes o de recursos humanos.

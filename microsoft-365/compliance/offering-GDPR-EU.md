@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: b0563e7056510682a685cb0950324dafa1fd2dd2
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959608"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558527"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>Reglamento General de Protección de Datos (RGPD)
 
@@ -37,7 +37,7 @@ Descubre los procedimientos recomendados de los programas de privacidad y cómo 
 
 ### <a name="abrona-prepares-for-gdpr-with-microsoft-365"></a>Abrona se prepara para el RGPD con Microsoft 365
 
-Descubra cómo la organización sanitaria neerlandesa Abrona utiliza tecnologías de Microsoft, como el Administrador de Cumplimiento y Azure Information Protection, para prepararse para el RGPD.
+Vea cómo la organización sanitaria neerlandesa Abrona utiliza tecnologías de Microsoft, como el Administrador de Cumplimiento y Azure Information Protection, para prepararse para el RGPD.
 
 [Ver ahora](https://go.microsoft.com/fwlink/p/?linkid=2048705)
 
@@ -64,9 +64,9 @@ Descubra cómo INAIL, cliente de Microsoft, usa Azure Information Protection par
 
 [Más información](offering-iso-27701.md)
 
-### <a name="compliance-manager"></a>Administrador de cumplimiento
+### <a name="compliance-score"></a>Puntuación de conformidad
 
-Use el [Administrador de cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=2048390) para ayudarle a realizar evaluaciones de riesgo de forma continua, obtener información práctica y simplificar sus procesos de cumplimiento.
+Use [puntuación de conformidad](compliance-score.md) para ayudarle a realizar evaluaciones de riesgos continuadas, obtener perspectivas útiles y simplificar los procesos de cumplimiento.
 
 ### <a name="microsoft-365-compliance-center"></a>Centro de cumplimiento de Microsoft 365
 

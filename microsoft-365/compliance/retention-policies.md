@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: 5bc131b98bbc0af5cdc9629e029c06f20a003d5f
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989605"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558597"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -116,7 +116,7 @@ Cuando se asigna una directiva de retención a un buzón de correo o una carpeta
 
 El control de versiones es una característica de todas las bibliotecas de documentos de SharePoint Online y OneDrive para la Empresa. De forma predeterminada, el control de versiones retiene un mínimo de 500 versiones principales, aunque puede aumentar este límite. Para obtener más información, vea [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-Una directiva para retener (una directiva de retención que retiene contenido y no es solo de eliminación) retiene todas las versiones de un documento en una cuenta de OneDrive o una colección de sitios de SharePoint. Cada vez que se edita un documento sujeto a una directiva de retención o suspensión, se copia una versión a la Biblioteca de suspensión para conservación. Cada vez que un documento sujeto a una directiva de retención o conservación se elimina, todas las versiones se copian en la Biblioteca de conservación de documentos si está habilitado el control de versiones. Cada versión de un documento de la Biblioteca de conservación de documentos es un elemento independiente con un periodo de retención distinto:
+Una directiva para retener (una directiva de retención que retiene contenido y no es solo de eliminación) retiene todas las versiones de un documento en una cuenta de OneDrive o una colección de sitios de SharePoint. Cuando un documento está sujeto a una directiva de retención o retención se edita por primera vez, se copia una versión del documento original a la biblioteca de conservación de documentos. Cuando se elimina un documento con una directiva de retención o retención, todas las versiones se copian en la biblioteca de conservación de documentos si está habilitado el control de versiones. Cada versión de un documento de la Biblioteca de conservación de documentos es un elemento independiente con un periodo de retención distinto:
   
 - Si la directiva de retención se basa en la fecha de creación del contenido, cada versión tiene la misma fecha de vencimiento que el documento original. El documento original y sus versiones expiran al mismo tiempo.
     
@@ -193,7 +193,7 @@ Una de las características más eficaces de una directiva de retención es que 
     
 - Cuentas de OneDrive
     
-- Grupos de Office 365 (se aplica al contenido del buzón de correo, el sitio y los documentos del grupo). La compatibilidad con el contenido de Planner, Yammer y CRM Microsoft Teams, PowerBI, Stream, Exchange y sitios de grupo de SharePoint estará disponible próximamente.
+- Grupos de Office 365 (se aplica al contenido del buzón del grupo y al sitio de SharePoint asociado).
     
 - Carpetas públicas de Exchange
     

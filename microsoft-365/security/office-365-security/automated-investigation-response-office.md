@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d36215c83c926f96b23e930f888e5c8dca40dc60
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: fcb48da4b6f3777fa8c21ef514d5f591e342562e
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808485"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573047"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Investigación y respuesta automatizadas (AIR) en Office 365
 
@@ -34,10 +34,10 @@ En un nivel alto, el flujo de aire funciona de la siguiente manera:
 
 |Fase  |Qué implica  |
 |---------|---------|
-|1     |Un evento de Office desencadena una [alerta](#alerts) y una guía de [seguridad](#security-playbooks) inicia una investigación automatizada de las alertas seleccionadas. <br/><br/>Como alternativa, un analista de seguridad puede [iniciar una investigación automatizada manualmente](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)desde un correo electrónico desde el [Explorador](threat-explorer.md).        |
-|segundo     |Mientras se ejecuta una investigación automatizada, recopila datos adicionales sobre el correo electrónico y las entidades relacionadas con ese correo electrónico: archivos, direcciones URL y destinatarios.  El ámbito de la investigación puede aumentar, a medida que se desencadenen nuevas alertas relacionadas.         |
-|3     |Durante y después de una investigación automatizada, [los detalles y los resultados](#investigation-graph) están disponibles para su visualización. Los resultados incluyen [acciones recomendadas](#recommended-actions) que se pueden llevar a cabo para responder y corregir cualquier amenaza que se detectó. Además, hay disponible un registro de la [Guía](#playbook-log) que realiza un seguimiento de la actividad de la investigación.<br/><br/>Si su organización usa una solución de informes personalizada o una solución de terceros, puede [usar la API de actividad de administración de Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) para ver información sobre las amenazas y las investigaciones automatizadas.         |
-|4     |El equipo de operaciones de seguridad revisa los resultados de la investigación y las recomendaciones y aprueba las acciones de corrección. En Office 365, las acciones de corrección solo se realizan tras la aprobación del equipo de seguridad de la organización.         |
+|1      |Un evento de Office desencadena una [alerta](#alerts) y una guía de [seguridad](#security-playbooks) inicia una investigación automatizada de las alertas seleccionadas. <br/><br/>Como alternativa, un analista de seguridad puede [iniciar una investigación automatizada manualmente](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)desde un correo electrónico desde el [Explorador](threat-explorer.md).        |
+|2      |Mientras se ejecuta una investigación automatizada, recopila datos adicionales sobre el correo electrónico y las entidades relacionadas con ese correo electrónico: archivos, direcciones URL y destinatarios.  El ámbito de la investigación puede aumentar, a medida que se desencadenen nuevas alertas relacionadas.         |
+|3      |Durante y después de una investigación automatizada, [los detalles y los resultados](#investigation-graph) están disponibles para su visualización. Los resultados incluyen [acciones recomendadas](#recommended-actions) que se pueden llevar a cabo para responder y corregir cualquier amenaza que se detectó. Además, hay disponible un registro de la [Guía](#playbook-log) que realiza un seguimiento de la actividad de la investigación.<br/><br/>Si su organización usa una solución de informes personalizada o una solución de terceros, puede [usar la API de actividad de administración de Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) para ver información sobre las amenazas y las investigaciones automatizadas.         |
+|4      |El equipo de operaciones de seguridad revisa los resultados de la investigación y las recomendaciones y aprueba las acciones de corrección. En Office 365, las acciones de corrección solo se realizan tras la aprobación del equipo de seguridad de la organización.         |
 
 En las secciones siguientes se proporcionan más detalles sobre el aire, incluidos detalles sobre las alertas, las guías de seguridad y los detalles de la investigación. Además, se incluyen dos ejemplos de cómo funciona AIR en este artículo. Para empezar a usar AIR, consulte [investigar y responder automáticamente a amenazas en Office 365](office-365-air.md).
 
@@ -122,7 +122,7 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |Corregido | La investigación ha finalizado y se ha corregido completamente (se han aprobado todas las acciones) |
 |Parcialmente remediado | La investigación ha finalizado y algunas de las acciones recomendadas se han aprobado |
 |Finalizada por el usuario | Un administrador terminó la investigación. |
-|Failed | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
+|Error | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
 |En cola por limitación | La investigación está esperando el análisis debido a las limitaciones del procesamiento del sistema (para proteger el rendimiento del servicio) |
 |Terminado con la limitación | La investigación no se pudo completar en el tiempo suficiente debido a las limitaciones de procesamiento del sistema y el volumen de investigación. Puede reactivar la investigación seleccionando el correo electrónico en el explorador y seleccionando la acción investigar. |
 

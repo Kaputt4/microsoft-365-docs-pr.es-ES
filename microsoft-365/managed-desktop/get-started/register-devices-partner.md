@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: ceda5765ca6450959c99222daf457cf7584401ba
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: eb7ff76ef51078e423201b41cf24780b822ba452
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074732"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572246"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Pasos para que los Socios puedan registrar dispositivos
 
@@ -25,7 +25,7 @@ Antes de completar el registro de un cliente, primero debe establecer una relaci
 Para completar el registro del cliente, cree primero un archivo CSV.
 
 >[!NOTE]
->Para su comodidad, puede descargar una [plantilla](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.xlsx) para esta *versión de asociado* del archivo CSV.
+>Para su comodidad, puede descargar un [archivo CSV de ejemplo](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv) para esta *versión del asociado*.
 
 El archivo tiene que incluir **exactamente los mismos encabezados de columna** que el ejemplo uno (fabricante, modelo, etc.), pero sus propios datos para las otras filas. Si usa la plantilla, ábrala en una herramienta de edición de texto como el Bloc de notas y considere la posibilidad de dejar sólo todos los datos de la fila 1, introduciendo solo los datos en las filas 2 y anteriores. 
     

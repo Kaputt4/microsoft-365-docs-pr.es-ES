@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico en peligro en Office 365
-ms.openlocfilehash: 76ce2cd9b942403f5d25b7f356740cce6c2acad7
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0262ca29681aa04d66c628a7d9101e3d3296481b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971517"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572716"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Responder a una cuenta de correo electrónico en peligro en Office 365
 
@@ -56,9 +56,11 @@ Los usuarios pueden observar e informar sobre actividad inusual en sus buzones d
 
 Si un usuario informa de los síntomas anteriores, debería realizar una mayor investigación. El Centro de seguridad y cumplimiento de Microsoft 365 y el Portal de Azure ofrecen herramientas para ayudarle a investigar la actividad de una cuenta de usuario que crea que puede estar en riesgo.
 
-- Registros de auditoría unificados de Office 365 en el Centro de seguridad y cumplimiento: revise todas las actividades de la cuenta sospechosa, filtre los resultados con un rango de fechas que abarque desde antes de que se produjese la actividad sospechosa hasta la fecha actual. No filtre las actividades durante la búsqueda.
+- **Registros de auditoría unificados de Office 365 en el Centro de seguridad y cumplimiento**: revise todas las actividades de la cuenta sospechosa, filtre los resultados con un rango de fechas que abarque desde antes de que se produjese la actividad sospechosa hasta la fecha actual. No filtre las actividades durante la búsqueda.
 
-- Use los registros de inicio de sesión de Azure AD y otros informes de riesgos que están disponibles en el portal de Azure AD. Examine los valores de estas columnas:
+- **Registros de auditoría de administrador de Office 365 en el EAC**: en Exchange Online, puede usar el Centro de administración de Exchange (EAC) para buscar y ver las entradas del registro de auditoría del administrador. El registro de auditoría del administrador registra acciones específicas, según los cmdlets de PowerShell de Exchange Online, realizadas por administradores y usuarios que tienen asignados privilegios de administrador. Las entradas en el registro de auditoría del administrador proporcionan información acerca del cmdlet que se ejecutó, los parámetros que se usaron, el usuario que ejecutó el cmdlet y los objetos que se vieron afectados.
+
+- **Registros de inicio de sesión de Azure AD y otros informes de riesgos en el portal de Azure AD**: examine los valores de estas columnas:
 
   - Revise la dirección IP
 
@@ -92,7 +94,7 @@ Debe realizar todos los pasos siguientes para volver a tener acceso a su cuenta 
 - Si la identidad local se federa con Office 365, debe cambiar la contraseña en el entorno local y, a continuación, debe notificar a su administrador del ataque.
 
 > [!TIP]
-> Se recomienda que habilite la autenticación multifactor (MFA) para evitar los robos de cuenta, especialmente para las cuentas con privilegios de administrador.  Puede obtener más información [aquí](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> Se recomienda que habilite la autenticación multifactor (MFA) para evitar los robos de cuenta, especialmente para las cuentas con privilegios de administrador.  Puede encontrar más información sobre MFA [aquí](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Paso 2 Eliminar direcciones de reenvío de correo electrónico sospechosas
 
