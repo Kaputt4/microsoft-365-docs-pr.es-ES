@@ -1,5 +1,7 @@
 ---
 title: Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de seguridad & cumplimiento
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de cumplimiento de Office 365 y Microsoft 365 para administrar las investigaciones de los DSR de su organización.
-ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6d7770be686e62dc6afde368bcb4e821f72c2fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687837"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582939"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de seguridad & cumplimiento
 
@@ -53,7 +55,7 @@ Mediante el uso de la herramienta de caso DSR, puede:
     
 - Exportar datos en respuesta a una solicitud de exportación o acceso de DSR.
     
-- Elimine casos cuando se complete el proceso de investigación de DSR. Esto quita todas las búsquedas y los trabajos de exportación asociados con el caso.
+- Elimine los casos cuando se complete el proceso de investigación de DSR. Esto quita todas las búsquedas y los trabajos de exportación asociados con el caso.
     
 Este es el proceso de alto nivel para usar la herramienta de caso DSR para administrar investigaciones de DSR:
   

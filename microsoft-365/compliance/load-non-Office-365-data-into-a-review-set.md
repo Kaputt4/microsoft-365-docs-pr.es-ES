@@ -1,5 +1,7 @@
 ---
 title: Cargar datos que no son de Office 365 a un conjunto de revisión
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importar datos que no son de Office 365 a un conjunto de revisión en un caso de exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: 508346c3fe3a8f67addfed4ced08693daa2d49e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092635"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585689"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Cargar datos que no son de Office 365 a un conjunto de revisión
 
@@ -40,7 +42,7 @@ El uso de la característica de carga que no es de Office 365 que se describe en
 
 - Los datos que no son de Office 365 deben ser un tipo de archivo compatible con la exhibición avanzada de documentos electrónicos. Para obtener más información, consulte [tipos de archivo admitidos en EDiscovery avanzado](supported-filetypes-ediscovery20.md).
 
-- Todos los archivos que se cargan en un conjunto de revisión deben estar ubicados en carpetas, donde cada carpeta está asociada a un custodio específico. Los nombres de estas carpetas deben usar el siguiente formato de nombre: *alias @ domainname*. El alias @ domainname debe ser el alias y el dominio de Office 365 del usuario. Puede recopilar todas las carpetas alias @ domainname en una carpeta raíz. La carpeta raíz solo puede contener las carpetas alias @ domainname. No se admiten los archivos separados en la carpeta raíz.
+- Todos los archivos que se cargan en un conjunto de revisión deben estar ubicados en carpetas, donde cada carpeta está asociada a un custodio específico. Los nombres de estas carpetas deben usar el siguiente formato de nomenclatura: *alias@domainname*. El alias@domainname debe ser el alias y el dominio de Office 365 del usuario. Puede recopilar todas las carpetas de alias@domainname en una carpeta raíz. La carpeta raíz solo puede contener las carpetas de alias@domainname. No se admiten los archivos separados en la carpeta raíz.
 
    La estructura de carpetas para los datos que no son de Office 365 que desea cargar sería similar al ejemplo siguiente:
 

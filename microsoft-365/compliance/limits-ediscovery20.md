@@ -1,5 +1,7 @@
 ---
 title: Límites avanzados de eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre los límites en vigor para la solución Advanced eDiscovery en Microsoft 365. Esto incluye los límites de mayúsculas y minúsculas, los límites de indización y los límites de búsqueda cuando se usa la herramienta de búsqueda para recopilar datos de casos.
-ms.openlocfilehash: 622d2669457a2a1e84909aadae9b653ca37684ce
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b3e5dd1d80a60249ccc24d1af20f5e78f94f8421
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092519"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585719"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 

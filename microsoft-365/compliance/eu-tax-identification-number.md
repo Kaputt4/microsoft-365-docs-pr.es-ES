@@ -1,5 +1,7 @@
 ---
 title: Número de identificación fiscal de la UE
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación de impuestos de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 0ee76fa46bb22b2754098d053ab769b862fdd3f2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5467db921bd518eeeab18a36ee2de473f9017358
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805853"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41591021"
 ---
 # <a name="eu-tax-identification-number"></a>Número de identificación fiscal de la UE
 

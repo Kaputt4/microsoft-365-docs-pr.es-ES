@@ -1,5 +1,7 @@
 ---
 title: Información heredada para el cifrado de mensajes de Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si todavía no ha movido su organización de Office 365 a las nuevas capacidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que cree un plan para cambiar a las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection. Si desea obtener más información sobre cómo funcionan las nuevas funciones en primer lugar, consulte Office 365 Message Encryption. En el resto de este artículo se hace referencia al comportamiento OME antes de la publicación de las nuevas capacidades de OME.
-ms.openlocfilehash: 5320c678dee5ef08f7095c4415a22841e6202b5f
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: cb5315c99b586f250ecd2e5ee51ee6f4534e8bff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38691077"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585729"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 

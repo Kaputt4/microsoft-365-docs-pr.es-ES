@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d64d9b98fe3cf24a14b3f3126ff3f38b1d84087d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749997"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41557987"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Resumen del reglamento general de protección de datos 
 
@@ -99,7 +100,7 @@ Al ser un procesador de datos, Microsoft garantiza que los clientes pueden cumpl
 
 ### <a name="accountability-readiness-checklists-for-the-gdpr"></a>Listas de comprobación de preparación de responsabilidad para el reglamento general de protección de datos (RGPD)
 
-Estas [listas de comprobación](gdpr-arc.md)proporciona una forma cómoda de obtener acceso a la información que puede necesitar para respaldar el reglamento general de protección de datos (RGPD) al usar los productos de Microsoft. Puede administrar los elementos de esta lista de comprobación con el [Administrador de cumplimiento](https://servicetrust.microsoft.com/ComplianceManager) haciendo referencia al Controlador de identificación y el Controlador de título de los Controles administrados de cliente en el icono del reglamento general de protección de datos (RGPD).
+Estas [listas de comprobación](gdpr-arc.md)proporciona una forma cómoda de obtener acceso a la información que puede necesitar para respaldar el reglamento general de protección de datos (RGPD) al usar los productos de Microsoft. Los elementos de en la lista de control se podrán administrar con la[ puntuación de cumplimiento Microsoft](compliance-score.md) haciendo referencia al identificador y título de control encontrados en los controles administrados por el cliente en el icono del RGPD.
 
 ## <a name="learn-more"></a>Más información
 

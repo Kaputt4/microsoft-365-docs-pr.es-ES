@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Use la herramienta de búsqueda de contenido del Centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en buzones, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype Empresarial. Puede restringir los resultados de la búsqueda mediante palabras clave y condiciones de búsqueda. Después, puede consultar una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para encontrar información relacionada con la solicitud del interesado del RGPD.
-ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+description: Use la herramienta de búsqueda de contenido del centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en los buzones, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype Empresarial. Puede restringir los resultados de la búsqueda mediante palabras clave y condiciones de búsqueda. Después, puede consultar una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para encontrar información relacionada con la solicitud del interesado del RGPD.
+ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967523"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558407"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido de Office 365
 
@@ -35,8 +35,10 @@ Puede usar la herramienta eDiscovery de búsqueda de contenido en el Centro de c
 - Conversaciones de Skype Empresarial
     
 - Microsoft Teams 
-    
+
 - Grupos de Office 365
+
+- Grupos de Yammer 
     
 Después de ejecutar una búsqueda de contenido, se mostrará el número de ubicaciones de contenido y un número estimado de resultados de la búsqueda en las estadísticas de búsqueda. También puede ver rápidamente estadísticas como las ubicaciones de contenido con la mayor cantidad de elementos encontrados por la consulta de búsqueda. Después de ejecutar una búsqueda, puede obtener una vista previa de los resultados o exportarlos a un equipo local.
 
@@ -81,9 +83,9 @@ Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vi
     
        - **Ubicaciones**: elegir las ubicaciones de contenido a buscar
     
-      - **Todas las ubicaciones**: Seleccione esta opción para buscar en todas las ubicaciones de contenido de su organización. Esto incluye el correo electrónico en todos los buzones de Exchange (incluidos todos los buzones inactivos, los buzones de todos los Grupos de Office 365 y todos los buzones de Microsoft Teams), todas las conversaciones de Skype Empresarial, todos los sitios de SharePoint y OneDrive para la Empresa (incluidos los sitios para todos los grupos de Office 365 y Microsoft Teams), y los elementos de todas las carpetas públicas de Exchange.
+      - **Todas las ubicaciones**: Seleccione esta opción para buscar en todas las ubicaciones de contenido de su organización. Esto incluye el correo electrónico en todos los buzones de Exchange (incluidos todos los buzones inactivos, los buzones de todos los Grupos de Office 365 y todos los buzones de Microsoft Teams), todas las conversaciones de Skype Empresarial, todos los sitios de SharePoint y OneDrive para la Empresa (incluidos los sitios para los grupos de Office 365 y Microsoft Teams), y los elementos de todas las carpetas públicas de Exchange.
     
-      - **Ubicaciones específicas**: Use esta opción para buscar en ubicaciones de contenido específicas. Puede buscar en todas las ubicaciones de contenido de un servicio específico de Office 365 (por ejemplo, en todos los buzones de Exchange o todos los sitios de SharePoint) o en ubicaciones específicas en cualquiera de los servicios de Office 365 que se muestren. 
+      - **Ubicaciones específicas:** Utilice esta opción para buscar contenido de ubicaciones específicas. Puede buscar contenido en todas las ubicaciones de un servicio específico de Office 365 (por ejemplo, buscar en todos los buzones de Exchange o en todos los sitios de SharePoint) o puede buscar contenido en ubicaciones específicas de cualquiera de los servicios de Office 365 que se muestran. 
     
         ![Interfaz de usuario para elegir ubicaciones de contenido en las que buscar](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
@@ -91,8 +93,7 @@ Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vi
     
        > [!NOTE]
        > Cuando busque en todas las ubicaciones del buzón o solo en buzones específicos, los datos de otras aplicaciones de Office 365 guardados en los buzones de usuario se incluirán en la exportación de resultados de una Búsqueda de contenido. Estos datos no se incluyen en los resultados de búsqueda estimados y no aparecen en la vista previa. Solo se incluyen cuando exporte y descargue los resultados de búsqueda. Para obtener más información, consulte [Contenido almacenado en los buzones de Exchange Online](what-is-stored-in-exo-mailbox.md).
-
-    
+   
 6. Una vez que haya configurado la consulta de búsqueda, haga clic en **Guardar y ejecutar**.
     
 7. En la página **Guardar búsqueda**, escriba un nombre y una descripción opcional que le ayude a identificar la búsqueda. El nombre de la búsqueda debe ser único en la organización. 
@@ -176,6 +177,8 @@ Vea las siguientes secciones para obtener más información sobre las búsquedas
 [Buscar cuentas de OneDrive](#searching-onedrive-accounts)
   
 [Buscar en grupos de Microsoft Teams y Office 365](#searching-microsoft-teams-and-office-365-groups)
+
+[Buscando en los grupos Yammer](#searching-yammer-groups)
   
 [Buscar en buzones inactivos](#searching-inactive-mailboxes)
   
@@ -308,6 +311,25 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y Grupos de 
 
 Tenga en cuenta que las condiciones están conectadas de forma lógica a la consulta de palabra clave por el operador **Y**. Esto significa que un elemento tiene que coincidir con la consulta de la palabra clave y con la condición de búsqueda para que aparezca en los resultados de la búsqueda. Para obtener más información, vea la sección de «Guías para utilizar condiciones» en [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
+### <a name="searching-yammer-groups"></a>Buscando en los grupos Yammer
+
+Para buscar elementos de conversación específicos en los Grupos Yammer puede utilizar la propiedad de correo electrónico **ItemClass** o **escribir** las condiciones de búsqueda
+
+  - Con el fin de utilizar la propiedad **ItemClass** como parte de la consulta de búsqueda de palabras clave, en el cuadro de **Palabras** clave de una consulta de búsqueda, puede escribir uno (o todos) de los siguientes pares de propiedades de valor:
+
+     - ItemClass:IPM.Yammer.message
+     - ItemClass:IPM.Yammer.poll
+     - ItemClass:IPM.Yammer.praise
+     - ItemClass:IPM.Yammer.question
+  
+    Por ejemplo, puede usar la siguiente consulta de búsqueda para devolver mensajes de Yammer y elementos de elogio de Yammer:
+
+    ![Utilice la propiedad ItemClass para buscar elementos de Yammer](media/YammerContentSearch1.png)
+  
+  - Como alternativa, puede utilizar la condición de **Escribir** el correo electrónico y seleccionar los **mensajes Yammer** para devolver los elementos Yammer. Por ejemplo, la siguiente consulta de búsqueda devolverá todos los elementos de conversación de Yammer que contengan la palabra clave "confidencial". 
+
+    ![Utilice la tarjeta de condición de tipo para buscar elementos de conversación de Yammer](media/YammerContentSearch2.png)
+
 ### <a name="searching-inactive-mailboxes"></a>Buscar en buzones inactivos
 
 Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **gobernanza de la información** \> **Retención** en el centro de cumplimiento de seguridad y, a continuación, haga clic en **Más**![](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>** de la barra de navegación los buzones inactivos**.
@@ -321,7 +343,7 @@ A continuación, se detallan algunos aspectos que se deben tener en cuenta al bu
 - Puede usar Security & PowerShell del centro de cumplimiento para crear una búsqueda de contenido para buscar en un buzón inactivo. Para ello, tiene que agregar previamente un punto (. Dirección de correo electrónico del propietario del buzón de correo. Por ejemplo, el comando siguiente crea una búsqueda de contenido que busca en un buzón inactivo con la dirección de correo electrónico pavelb@contoso.onmicrosoft.com:
 
    ``` 
-   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - Le recomendamos que no tenga un buzón activo y un buzón inactivo con la misma dirección SMTP. Si necesita volver a usar la dirección SMTP que está asignada a un buzón inactivo, le recomendamos que recupere el buzón inactivo o restaure el contenido de un buzón inactivo a uno activo (o el archivo de un buzón activo) y, después, elimine el buzón inactivo. Para obtener más información, vea uno de los siguientes temas:

@@ -1,5 +1,7 @@
 ---
 title: Administrar las notificaciones de retención
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0b1b20a8b41803a945bc9f5c39cd0618c420b0c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f43510d0055a487cf1ee00e799a7244114016384
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092600"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582909"
 ---
 # <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
 
@@ -62,7 +64,7 @@ Para actualizar el contenido del aviso de suspensión inicial:
 2. Una vez que haya seleccionado un caso, vaya a la pestaña **comunicaciones** .
 3. Seleccione el aviso de retención que quiera actualizar y haga clic en **Editar**.
 4. En Editar flujo de trabajo, seleccione **definir contenido del portal** y actualizar el contenido del aviso. 
-5. Haga clic en **Guardar **. Una vez guardado, se enviará el aviso de reemisión a todos los custodios que están actualmente asignados a la notificación de retenciones legales. Además, si se habilitan los avisos de aviso/remisión, estos flujos de trabajo también se reiniciarán. 
+5. Haga clic en **Guardar**. Una vez guardado, se enviará el aviso de reemisión a todos los custodios que están actualmente asignados a la notificación de retenciones legales. Además, si se habilitan los avisos de aviso/remisión, estos flujos de trabajo también se reiniciarán. 
 
 
 #### <a name="update-legal-hold-notifications-and-settings"></a>Actualizar la configuración y las notificaciones de retención legal

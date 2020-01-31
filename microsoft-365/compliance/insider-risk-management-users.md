@@ -5,17 +5,19 @@ keywords: Microsoft 365, administración de riesgos de Insider, administración 
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5688d1554bc48632c3dca40dd33c65b4ea41ee20
-ms.sourcegitcommit: ca06ee52dec472d3827983d67b049847ec2fdfc1
+ms.openlocfilehash: f79fcebf220f1aee98ba97c537ff80b65b6e3881
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41256743"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582859"
 ---
 # <a name="insider-risk-management-users-preview"></a>Usuarios de administración de riesgos de Insider (versión preliminar)
 
