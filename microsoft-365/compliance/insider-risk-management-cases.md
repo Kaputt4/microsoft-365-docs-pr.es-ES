@@ -5,17 +5,19 @@ keywords: Microsoft 365, administración de riesgos de Insider, administración 
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e6fd3dd08ff5170a3b0e2afcd97ec788c2aebd93
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259896"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41590681"
 ---
 # <a name="insider-risk-management-cases-preview"></a>Casos de administración de riesgos de Insider (versión preliminar)
 
@@ -72,7 +74,7 @@ El panel de **detalles de caso** está disponible en todas las pestañas de admi
 La ficha **alertas** resume las alertas actuales incluidas en el caso. Se pueden agregar nuevas alertas a un caso existente y se agregarán a la cola de **alertas** a medida que se asignen. Los siguientes atributos de alerta aparecen en la cola:
 
 - Estado
-- Gravedad
+- Severity
 - Tiempo detectado
 
 Seleccione una alerta de la cola para mostrar la página de detalles de la **alerta** .
@@ -80,7 +82,7 @@ Seleccione una alerta de la cola para mostrar la página de detalles de la **ale
 Use el control de búsqueda para buscar nombres de alertas de texto específico y use el filtro de alerta para ordenar los casos por los siguientes atributos:
 
 - Estado
-- Gravedad
+- Severity
 - Tiempo detectado, fecha de inicio y fecha de finalización
 
 ### <a name="user-activity"></a>Actividad de usuario
