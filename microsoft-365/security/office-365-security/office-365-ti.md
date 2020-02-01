@@ -1,5 +1,7 @@
 ---
 title: Capacidades de investigación y respuesta de la amenaza de Office 365 en Office 365 plan de protección contra amenazas avanzada 2
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra cómo las capacidades de inteligencia sobre amenazas de Office 365 Advanced Threat Protection pueden ayudarle a investigar amenazas contra su organización, responder a malware, phishing y otros ataques que Office 365 ha detectado en su nombre y buscar amenazas indicadores.
-ms.openlocfilehash: 45c12647b999e626cb620046aabc95fb4bfa8f4c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2f95054d35edee7db419bc665b520b2b48dda447
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808125"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598757"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Investigación y respuesta de amenazas de Office 365
 

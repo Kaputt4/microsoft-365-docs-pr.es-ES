@@ -1,5 +1,7 @@
 ---
 title: Administrar cuentas de facturación
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -13,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Obtenga información sobre las cuentas de facturación y cómo administrarlas.
-ms.openlocfilehash: 9a5d7548608cb44befb271e63420e7eb84b2e399
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d05b0c78da31ca0c829a71708906c34d6b54be97
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805753"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594157"
 ---
 # <a name="manage-billing-accounts"></a>Administrar cuentas de facturación
 

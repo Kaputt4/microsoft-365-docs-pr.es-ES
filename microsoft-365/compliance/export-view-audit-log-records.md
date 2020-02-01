@@ -1,5 +1,7 @@
 ---
 title: Exportar, configurar y ver registros de registro de auditoría
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Después de exportar y descargar los resultados de una búsqueda de registro de auditoría de Office 365 en un archivo CSV, puede usar la característica transformación de JSON en el editor de Power Query en Excel para dividir cada propiedad en el objeto JSON de la columna AuditData en su propia columna. Esto puede ayudarle a encontrar rápidamente los datos de auditoría específicos que está buscando.
-ms.openlocfilehash: dc96bb8fbcf3acbab66bdb8d4b3d1450e9d3aeaf
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+ms.openlocfilehash: de116db76597c6eb7966541c3cc0f34f91c06c70
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39858186"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594611"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportar, configurar y ver registros de registro de auditoría
 

@@ -1,5 +1,7 @@
 ---
 title: Recomendaciones de Microsoft para EOP y Office 365 la configuración de seguridad de ATP, las recomendaciones, el marco de directivas de remitente, la creación de informes de mensajes basados en dominios y su conformidad, el correo identificado por DomainKeys, los pasos, cómo funciona, las líneas de base de seguridad, las líneas de base para EOP, líneas de base para ATP, configurar ATP, configurar EOP, configurar ATP, configurar EOP, configuración de seguridad
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 12/12/2019
@@ -14,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: d353c4bee8381074b845e0774e06f411d823549f
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: fd2b1fdbb0356cfc2cea080f15bf696d8073fc10
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021836"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598647"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 

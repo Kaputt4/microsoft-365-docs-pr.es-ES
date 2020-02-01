@@ -1,5 +1,7 @@
 ---
 title: Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST en la organización
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Use la herramienta de recopilación de Microsoft PST para buscar en la red de su organización para obtener un inventario de los archivos PST que están dispersos en toda la organización. Después de encontrar los archivos PST, puede usar la herramienta de recopilación de PST para copiarlos en una ubicación central para poder importarlos a Office 365.
-ms.openlocfilehash: 703208b574a723eb4f91aad0a892d6ea4abf427b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 59c4222966bba4e72e73135aa57fb45e0362f765
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687846"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594561"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST en la organización
 
@@ -217,7 +219,7 @@ Para obtener instrucciones paso a paso para importar archivos PST a Office 365, 
   
 - [Usar la carga en la red para importar archivos PST en Office 365](use-network-upload-to-import-pst-files.md)
     
-- [Usar el envío de unidades para importar los archivos PST a Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
+- [Use el envío de unidades para importar archivos PST a Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
 
 ## <a name="step-5-delete-the-pst-files-found-on-your-network"></a>Paso 5: eliminar los archivos PST encontrados en la red

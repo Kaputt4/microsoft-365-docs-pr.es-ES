@@ -1,5 +1,7 @@
 ---
 title: Número de identificación nacional de la UE
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación nacional de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: c00619ed649db53777fa3629deac0162a3589475
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f001d23ec3d6d8a2b3aa9575d4a9d602c4315e13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805943"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41592241"
 ---
 # <a name="eu-national-identification-number"></a>Número de identificación nacional de la UE
 

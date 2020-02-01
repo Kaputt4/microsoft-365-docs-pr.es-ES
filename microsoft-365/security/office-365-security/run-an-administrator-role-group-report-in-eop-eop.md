@@ -1,5 +1,7 @@
 ---
 title: 'Ejecutar un informe de grupo de roles de administrador en EOP '
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: Los administradores pueden aprender a ejecutar un informe de grupo de roles de administrador en Exchange Online Protection (EOP). Este informe registra cuando un administrador agrega o quita miembros de grupos de roles de administrador, Microsoft Exchange Online Protection (EOP) registra cada ocurrencia.
-ms.openlocfilehash: 59557f6fab2281cd36569b40afcf3e0225bd9347
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d9e7db8accae259b3eb332ce17c52c6749c2bec2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441407"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598547"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>Ejecutar un informe de grupo de roles de administrador en EOP
 
@@ -48,7 +50,7 @@ Ejecute el informe de grupo de roles de administrador para buscar los cambios en
 
 Si se encuentran cambios con los criterios especificados, aparecerán en el panel de resultados. Haga clic en un grupo de roles de los resultados de la búsqueda para ver los cambios en el panel de detalles.
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Si se ejecutó correctamente un informe de grupo de roles de administrador, los grupos de roles que cambiaron dentro del intervalo de fechas se muestran en el panel de resultados de la búsqueda. Si no hay resultados, entonces no se hicieron cambios a los grupos de funciones dentro del intervalo de fechas especificado. Si cree que debería haber resultados, cambie el intervalo de fechas y vuelva a ejecutar el informe.
 

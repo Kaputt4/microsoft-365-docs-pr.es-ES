@@ -1,5 +1,7 @@
 ---
 title: Notas de la versión para investigaciones de datos (versión preliminar) en Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 200b1c6c08d0fdb1c4af5da59fa75836b4b1fab3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091801"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595417"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de la versión para investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -45,4 +47,4 @@ Puede usar la nueva herramienta de investigaciones de datos (vista previa) en en
 
 - **Trabajos** : seguimiento del estado de los procesos de ejecución prolongada.
 
-- Eliminar de forma permanente **los elementos del buzón de correo** -en situaciones urgentes, es posible que deba eliminar los elementos mal colocados de forma permanente. Para ello, puede ejecutar el comando **New-ComplianceSearchAction-Purge-PurgeType HardDelete** en Security & Compliance Center PowerShell para eliminar de forma permanente los elementos de los buzones. Para obtener más información, vea [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- Eliminar de forma permanente **los elementos del buzón de correo** -en situaciones urgentes, es posible que deba eliminar los elementos mal colocados de forma permanente. Para ello, puede ejecutar el comando **New-ComplianceSearchAction-Purge-PurgeType HardDelete** en Security & Compliance Center PowerShell para eliminar de forma permanente los elementos de los buzones. Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).

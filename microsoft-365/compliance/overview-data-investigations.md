@@ -1,5 +1,7 @@
 ---
 title: Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 1b578487a42e8663757468c848772afd93529753
-ms.sourcegitcommit: 0b5ef663f379c8bb0a223ebd3f09eec984d93812
+ms.openlocfilehash: cd60b16f6d0f968c0c87f3e44ee2f643c90ebb10
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "38687602"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597797"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 

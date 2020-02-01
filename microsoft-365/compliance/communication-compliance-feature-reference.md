@@ -1,6 +1,8 @@
 ---
 title: Referencia de la característica de cumplimiento de comunicaciones (versión preliminar)
 description: Referencia de características para el cumplimiento de la comunicación en Microsoft 365. Obtenga información detallada y especificaciones para cada uno de los componentes de la característica.
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 64514c8c46cbc2ef35746e052e1ffb87831933c2
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: b844003b2cf0da80588d9fe2622c3353a57d73b4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515791"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595837"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Referencia de la característica de cumplimiento de comunicaciones (versión preliminar)
 

@@ -5,22 +5,24 @@ keywords: historial de cambios
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 8713b678432d71304649e05fba466659de0369ad
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 9a5d163d14dda6aed50a39a27ae9a03ffbed526c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260128"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596587"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historial de cambios de la documentación del Escritorio administrado de Microsoft
 
 En este tema se enumeran los temas nuevos y actualizados de la [documentación del escritorio administrado de Microsoft](index.yml). Los temas "actualizados" son aquellos en los que se han agregado o corregidos materiales; no se muestran las correcciones secundarias, como la corrección de errores tipográficos, de estilo o de formato. Siempre puede ver el historial de confirmaciones específicas (incluidos los detalles de los cambios) visitando el [repositorio en github](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
 ## <a name="december-2019"></a>Diciembre de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Soporte de administración para escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Tema actualizado
 [Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Tema actualizado
@@ -29,7 +31,7 @@ Tema nuevo o modificado | Description
 
 
 ## <a name="november-2019"></a>Noviembre de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Trabajar con ideas](working-with-managed-desktop/insights.md) | Tema nuevo
 [Información sobre el uso](working-with-managed-desktop/usage-insights.md) | Tema nuevo
@@ -42,7 +44,7 @@ Tema nuevo o modificado | Description
 
 
 ## <a name="october-2019"></a>Octubre de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Excepciones para el plan de servicios](service-description/customizing.md) | Tema nuevo
 [Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Tema actualizado
@@ -56,7 +58,7 @@ Tema nuevo o modificado | Description
 
 
 ## <a name="september-2019"></a>Septiembre de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Tecnologías de escritorio administradas de Microsoft](intro/technologies.md) | Tema actualizado
 [Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Tema actualizado
@@ -70,7 +72,7 @@ Tema nuevo o modificado | Description
 [Cómo se administran las actualizaciones en el escritorio administrado por Microsoft](service-description/updates.md) | Tema actualizado
 
 ## <a name="august-2019"></a>Agosto de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Tema actualizado
 [Soporte de administración para escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Tema actualizado
@@ -81,7 +83,7 @@ Tema nuevo o modificado | Description
 
 
 ## <a name="july-2019"></a>Julio de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Tema actualizado
 [Escritorio administrado de Microsoft y ITIL](MMD-and-ITSM.md) | Tema nuevo
@@ -89,7 +91,7 @@ Tema nuevo o modificado | Description
 
 
 ## <a name="june-2019"></a>Junio de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Aplicaciones en el escritorio administrado de Microsoft](get-ready/apps.md) | Tema actualizado
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Tema nuevo
@@ -99,7 +101,7 @@ Tema nuevo o modificado | Description
 
 
 ## <a name="may-2019"></a>Mayo de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Regiones e idiomas admitidos por Microsoft Managed Desktop](service-description/regions-languages.md) | Tema actualizado
 [Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Tema actualizado
@@ -110,7 +112,7 @@ Tema nuevo o modificado | Description
 [Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md)
 
 ## <a name="april-2019"></a>Abril de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Instalar el portal de empresa de Intune en dispositivos de escritorio administrados por Microsoft](get-started/company-portal.md) | Tema nuevo
 [Instalar Microsoft Project y Microsoft Visio en dispositivos de escritorio administrados por Microsoft](get-started/project-visio.md) | Tema nuevo 
@@ -120,13 +122,13 @@ Tema nuevo o modificado | Description
 [Implementar aplicaciones en dispositivos de escritorio administrados por Microsoft](get-started/deploy-apps.md) | Tema actualizado
 
 ## <a name="march-2019"></a>Marzo de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Instalar el portal de empresa de Intune en dispositivos de escritorio administrados por Microsoft](get-started/company-portal.md) | Tema nuevo
 [Instalar Microsoft Project y Microsoft Visio en dispositivos de escritorio administrados por Microsoft](get-started/project-visio.md) | Tema nuevo
 
 ## <a name="february-2019"></a>Febrero de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Dispositivos del programa](service-description/device-list.md) | Se actualizó con compatibilidad con determinados dispositivos Dell y HP.
 [Información general de configuración configurable](working-with-managed-desktop/config-setting-overview.md) | Tema nuevo
@@ -135,20 +137,20 @@ Tema nuevo o modificado | Description
 [Introducción a los dispositivos](get-started/get-started-devices.md) | Tema nuevo
 
 ## <a name="january-2019"></a>Enero de 2019
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Implementación de aplicaciones para dispositivos de escritorio administrados por Microsoft](get-started/deploy-apps.md) | Tema nuevo.
 [Administrar aplicaciones para el escritorio administrado por Microsoft](working-with-managed-desktop/manage-apps.md) | Se actualizó con información sobre cómo actualizar o revertir a una versión de previoius de las aplicaciones de línea de negocio. 
 
 ## <a name="december-2018"></a>Diciembre de 2018
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Operaciones y supervisión para el escritorio administrado de Microsoft](service-description/operations-and-monitoring.md) | Se agregó la tabla saldo de responsabilidad y otras tablas actualizadas.
 [Soporte de administración para escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Tipos de soporte actualizados, explicaciones de gravedad y detalles adicionales.
 
 ## <a name="november-2018"></a>Noviembre de 2018
 
-Tema nuevo o modificado | Description
+Tema nuevo o modificado | Descripción
 --- | ---
 [Soporte para escritorio administrado de Microsoft](service-description/support.md)<br />[soporte técnico del usuario final para Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Se actualizó para incluir Australia.
 

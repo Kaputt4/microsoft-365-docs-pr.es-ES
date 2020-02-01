@@ -1,5 +1,7 @@
 ---
 title: Preparar datos para Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: 'Obtenga información sobre cómo usar el centro de &amp; seguridad y cumplimiento de Microsoft 365 para preparar datos de Office 365 para el análisis con Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 0429c957035068074a571c97cf430b27f9ad5904
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 6407b6f2a2bbe9bc69842057232ec01569ef64c8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803827"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597767"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Preparar datos para Office 365 Advanced eDiscovery
 
 En este tema se describe cómo cargar los resultados de una búsqueda de contenido en un caso en eDiscovery avanzado. 
   
-> [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> [!IMPORTANT]
+> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos el retiro de Office 365 Advanced eDiscovery (también conocido como *Advanced eDiscovery v 1.0*). Si todavía está usando la exhibición avanzada de documentos electrónicos v 1.0, pase a la [versión más avanzada de eDiscovery 2.0](overview-ediscovery-20.md) (también denominada *solución de exhibición avanzada de documentos electrónicos en Microsoft 365*) lo antes posible. EDiscovery avanzado 2,0 contiene una funcionalidad similar que se encuentra en eDiscovery avanzado v 1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información acerca de la retirada de eDiscovery avanzado v 1.0, consulte [jubilación de las herramientas de eDiscovery heredadas](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Paso 1: preparar los datos de Office 365 para la exhibición avanzada de documentos electrónicos
 

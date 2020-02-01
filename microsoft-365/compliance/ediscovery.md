@@ -1,5 +1,7 @@
 ---
 title: Exhibición de documentos electrónicos en Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 ofrece varias herramientas de eDiscovery distintas que puede usar para buscar y conservar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la empresa, grupos de Office 365 y conversaciones de Skype empresarial.
-ms.openlocfilehash: 33d3ca2e86a1ee4a2c191e72198d80c4c52c69e9
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 2386fcc2115b7acb3c869d79d04987a88f10de26
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823762"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595125"
 ---
 # <a name="ediscovery-in-office-365"></a>Exhibición de documentos electrónicos en Office 365
 

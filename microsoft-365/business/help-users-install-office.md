@@ -1,5 +1,7 @@
 ---
 title: Ayudar a los usuarios a instalar Office en dispositivos Windows 10
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Ayudar a los usuarios a instalar las aplicaciones de Office.
-ms.openlocfilehash: 73eb3ed9bb88dca4232865b2ecd9015441875c07
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 86a32f5f7a9fbd78a56fc934c4668970f8cdc719
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831213"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593921"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Ayudar a los usuarios a instalar Office en dispositivos Windows 10
 
@@ -42,7 +44,7 @@ Vea un breve vídeo sobre la instalación de aplicaciones de Office.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="manage-office-deployments"></a>Administrar implementaciones de Office
 
@@ -59,6 +61,6 @@ Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa
     
       :::image type="content" source="media/sendemailtousers.png" alt-text="Seleccione usuarios para enviar un correo electrónico con el vínculo de descarga de Office.":::
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
-[Vídeos de aprendizaje para empresas de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

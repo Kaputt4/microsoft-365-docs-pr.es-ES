@@ -1,5 +1,7 @@
 ---
 title: Enviar notificaciones de email y mostrar sugerencias para directivas DLP
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e3b83c72c8f18ad58fcedb6b8c4271bfebdf8c13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38687793"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597357"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -91,7 +93,7 @@ Para cada regla en una directiva DLP, puede:
   
 - Enviar la notificación a las personas que elija. Estas personas pueden ser el propietario del contenido, la persona que modificó por última vez el contenido, el propietario del sitio donde se almacena el contenido o un usuario específico.
     
-- Personalizar el texto que se incluye en la notificación mediante HTML o tokens. Vea la sección siguiente para obtener más información.
+- Personalizar el texto que se incluye en la notificación mediante HTML o tokens. Vea la siguiente sección para obtener más información.
     
 > [!NOTE]
 >  Las notificaciones de correo electrónico solo pueden enviarse a destinatarios individuales, no a grupos ni a listas de distribución. Tenga en cuenta que solo el contenido nuevo desencadenará una notificación por correo electrónico. Al editar el contenido existente, se desencadenarán sugerencias de Directiva, pero no una notificación de correo electrónico. 
@@ -279,7 +281,7 @@ Puede personalizar el texto de las sugerencias de directiva independientemente d
 
 - [Información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)
     
-- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
+- [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
     
 - [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
     

@@ -1,5 +1,7 @@
 ---
 title: Agregar los resultados de búsqueda a un conjunto de revisión
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Agregue los resultados de una búsqueda asociada a un caso de exhibición de documentos electrónicos avanzado. Los elementos se copian de su ubicación original y se copian en una ubicación de almacenamiento de Azure proporcionada por Microsoft. Los elementos también se vuelven a indexar y la exhibición avanzada de documentos electrónicos realizará el reconocimiento óptico de caracteres (OCR) en los archivos de imagen y cargará el texto de la imagen para revisión y análisis.
-ms.openlocfilehash: 838301576d84f4cf3dcb618904f55b661bcf95b3
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 748de7f3cb3fec5a37cb205e0d480701b4cded2e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257028"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594641"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 

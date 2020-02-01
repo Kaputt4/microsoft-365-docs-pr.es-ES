@@ -1,5 +1,7 @@
 ---
 title: Crear un clasificador que se pudiera entrenar (versión preliminar)
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use clasificadores que se puedan entrenar cuando uno de los clasificadores de cuadros listos para usar no satisfaga sus necesidades. Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este tema se muestra cómo crear un clasificador personalizado.
-ms.openlocfilehash: 6343635bb8e9dac12a8dde0867b3468347c2e84a
-ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
+ms.openlocfilehash: f11da4c36c9d6ed1667d5bed4a7d3e59c2cb21a9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39891091"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595917"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creación de un clasificador capacitado (versión preliminar)
 

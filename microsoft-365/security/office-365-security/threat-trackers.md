@@ -1,5 +1,7 @@
 ---
 title: 'Rastreadores de amenazas: nuevos y destacables'
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos comentarios destacados, para ayudar a su organización a estar al tanto de los problemas de seguridad.
-ms.openlocfilehash: 084d3c6de104c675a2af47984a2fcbffcf89447e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2a68cfbbae0ce91716f69514e30136ac223bbf8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093606"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598187"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -34,7 +36,7 @@ Los rastreadores de amenazas son widgets y vistas informativas que le proporcion
   
 ![Ejemplo de rastreador de amenazas que muestra campañas de malware](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
-La mayoría de las páginas de Tracker incluyen números de tendencia que se actualizan periódicamente, widgets para ayudarle a comprender qué problemas son los más grandes o que han crecido más y un vínculo rápido en la columna **acciones** que le conduce al explorador, donde puede ver más información información. 
+La mayoría de las páginas de Tracker incluyen números de tendencia que se actualizan periódicamente, widgets para ayudarle a comprender qué problemas son los más grandes o que han crecido más y un vínculo rápido en la columna **acciones** que le conduce al explorador, donde puede ver información más detallada. 
   
 ![Ejemplo de información de la campaña en el explorador](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
@@ -91,7 +93,7 @@ En el mundo de las amenazas Riddled, la ejecución de análisis de antimalware t
   
 El filtro de nueva amenaza notable resalta los elementos que se detectaron recientemente a través de datos adjuntos seguros ATP. Estas detecciones representan elementos que son nuevos archivos malintencionados, que no se han encontrado previamente en Office 365 en el correo electrónico del flujo de correo electrónico o de otros clientes. Preste atención a los elementos del rastreador de amenazas digno de destacar, consulte quién lo ha dirigido y revise los detalles de detonación que se muestran en la ficha análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el explorador). Nota solo encontrará esta pestaña en los mensajes de correo electrónico detectados por la funcionalidad de datos adjuntos seguros de ATP: este Tracker destacado incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el explorador.
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - Si su organización no dispone ya de estas capacidades de investigación y respuesta de amenazas de Office 365, consulte [¿Cómo obtenemos las capacidades de investigación de amenazas y respuesta de office 365?](office-365-ti.md).
     

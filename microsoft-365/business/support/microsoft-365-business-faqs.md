@@ -2,6 +2,8 @@
 title: Preguntas más frecuentes sobre Microsoft 365 empresa 
 description: Encuentre respuestas a las preguntas más frecuentes sobre Microsoft 365 Business, una nueva solución diseñada para pequeñas y medianas empresas (PYMES). 
 author: Sirkkuw
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -10,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, preguntas frecuentes, preguntas más frecuentes, respuestas, empresa
 ms.date: 06/08/2018
-ms.openlocfilehash: 09a155c87bf90309f8a4cdd2eb5c0b71d2337d58
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 706646eae722b0040db2a5bd7bcf187f5e1295bf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748379"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594236"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Preguntas más frecuentes sobre Microsoft 365 empresa
 

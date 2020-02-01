@@ -1,5 +1,7 @@
 ---
 title: Archivar datos de terceros
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Los administradores pueden importar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a los buzones de la organización de Microsoft 365. Esto le permite archivar datos de Facebook, Twitter y otros orígenes de datos de terceros en Microsoft 365. A continuación, puede usar y aplicar las características de cumplimiento de Microsoft 365 (como la retención legal, la exhibición de documentos electrónicos, el archivado local y las directivas de retención) para los datos de terceros.
-ms.openlocfilehash: b2931a018dedb6ac85d7896bef345654cb07ca5b
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: ac732110dac8d590ac30cfb062251d2e970bdd3d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247553"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596007"
 ---
 # <a name="archive-third-party-data"></a>Archivar datos de terceros
 

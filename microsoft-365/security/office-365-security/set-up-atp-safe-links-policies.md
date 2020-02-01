@@ -1,5 +1,7 @@
 ---
 title: Configurar directivas de vínculos seguros de Office 365 ATP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 7914c29f932469cdcea7436d1084536eaaf3d093
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 4ae3b75ce13b783bc8a373202a0ae42bb14d7cfc
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959668"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598367"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
@@ -142,7 +144,7 @@ Las opciones de directiva predeterminadas se aplican a todos los usuarios de la 
 |**No permitir que los usuarios hagan clic a través de la dirección URL original** <br/> |Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.  <br/> |
 |**No volver a escribir las siguientes direcciones URL** <br/> |Deja las direcciones URL tal y como están. Mantiene una lista personalizada de direcciones URL seguras que no necesitan análisis para un grupo específico de destinatarios de correo electrónico de la organización.  Consulte [configurar una lista de direcciones URL personalizadas "no reescribir" mediante vínculos seguros ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) para obtener más información, incluidos los cambios recientes para la compatibilidad con asteriscos comodín (\*).  <br/> |
    
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que se hayan implementado las directivas de vínculos seguros de ATP, podrá ver cómo ATP está trabajando para sus orgnization consultando los informes. Vea los siguientes recursos para obtener más información:
 

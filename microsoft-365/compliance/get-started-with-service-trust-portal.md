@@ -1,5 +1,7 @@
 ---
 title: Introducción al portal de confianza de servicios de Microsoft
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para los informes de cumplimiento normativo de Office 365, Azure y Dynamics 365, para ver auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y cómo puede cumplir con las normas ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando use estos servicios en línea.
-ms.openlocfilehash: 69475ae493f429e994e2b4edb37b12e8b74cf8db
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: d8347a20543664a1de86001709f068bf39b1cb5d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004915"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596347"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
@@ -120,7 +122,7 @@ Vaya a **más > administrador** para acceder a funciones administrativas que sol
 
 - **Configuración de privacidad del usuario:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el administrador de cumplimiento para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado. Para obtener más información, vea [configuración de privacidad de usuario](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings).
 
-### <a name="search"></a>Búsqueda
+### <a name="search"></a>Buscar
 
 Haga clic en la lupa de la esquina superior derecha de la página portal de confianza de servicios para expandir el cuadro, escriba los términos de búsqueda y presione **entrar**. Se muestra la página de **búsqueda** , con el término de búsqueda en el cuadro de búsqueda y los resultados de la búsqueda que se enumeran a continuación.
   

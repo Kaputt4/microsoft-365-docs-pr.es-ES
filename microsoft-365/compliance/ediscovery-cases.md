@@ -1,5 +1,7 @@
 ---
 title: Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más adelante en eDiscovery avanzado de Office 365.
-ms.openlocfilehash: 3d5e67edf30f1b1f78e6c4992760c18d1493e108
-ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
+ms.openlocfilehash: f687f405b6b721ec3f3f1d94e11091c1023d1aea
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41107919"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595145"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 

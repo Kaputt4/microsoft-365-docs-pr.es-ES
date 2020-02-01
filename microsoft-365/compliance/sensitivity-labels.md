@@ -1,5 +1,7 @@
 ---
 title: Información general de etiquetas de confidencialidad
+f1.keywords:
+- CSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger su contenido confidencial, a la vez que se asegura de que la productividad y la capacidad de colaboración de su personal no se vea obstaculizada. Puede utilizar etiquetas de confidencialidad para aplicar configuraciones de protección que incluyan el cifrado y las marcas de agua en el contenido etiquetado.
-ms.openlocfilehash: aa0c379e7d1209fb4ac9afc2924500f7b1af82e2
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 1cf7b47fbb9161b8000f5cfcce0bb36b86d0aa50
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515891"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597527"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -74,25 +76,35 @@ Cada elemento de contenido puede tener una única etiqueta de confidencialidad a
 
 ## <a name="what-sensitivity-labels-can-do"></a>Qué pueden hacer las etiquetas de confidencialidad
 
-Además del correo electrónico y los documentos, las etiquetas de confidencialidad están disponibles en varias versiones de vista previa pública. Para obtener más información acerca de cómo se pueden usar las etiquetas de confidencialidad para archivos, equipos, grupos y sitios, vea estos artículos:
-
-- [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)](sensitivity-labels-sharepoint-onedrive-files.md)
-
-- [Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md)
+> [!NOTE]
+> Además de aplicar etiquetas en mensajes de correo electrónico y documentos en aplicaciones de Office, ahora las etiquetas de confidencialidad también están disponibles en las siguientes versiones de versión preliminar pública:
+> 
+> - [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)](sensitivity-labels-sharepoint-onedrive-files.md)
+> - [Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md)
 
 Después de aplicar una etiqueta de confidencialidad a un documento o correo electrónico, cualquier configuración de protección de la etiqueta se aplica en el contenido. Con una etiqueta de confidencialidad, puede:
 
-- **Cifre** solo el correo electrónico o el correo electrónico y los documentos. Puede elegir qué usuarios o grupos tienen permisos para realizar las acciones y durante cuánto tiempo. Por ejemplo, puede elegir permitir que los usuarios de un grupo específico en otra organización tengan permisos para revisar el contenido solo 7 días después de que se haya marcado el contenido. Como alternativa, en lugar de permisos definidos por el administrador, puede permitir a los usuarios asignar permisos al contenido al aplicar la etiqueta. Para obtener más información, vea [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md).
+- **Cifre** solo el correo electrónico o el correo electrónico y los documentos. Puede elegir qué usuarios o grupos tienen permisos para realizar las acciones y durante cuánto tiempo. Por ejemplo, puede elegir permitir que los usuarios de un grupo específico en otra organización tengan permisos para revisar el contenido solo 7 días después de que se haya marcado el contenido. Como alternativa, en lugar de permisos definidos por el administrador, puede permitir a los usuarios asignar permisos al contenido al aplicar la etiqueta. 
+    
+    Para obtener más información sobre la configuración de **Cifrado** cuando cree o edite una etiqueta de confidencialidad, vea [Restringir el acceso a contenido con el cifrado en etiquetas de confidencialidad](encryption-sensitivity-labels.md).
 
-- **Marcar el contenido** cuando utilice las aplicaciones de Office, agregando marcas de agua, encabezados o pies de página a correos electrónicos o documentos que tengan aplicada la etiqueta. Las marcas de agua pueden aplicarse a los documentos, pero no al correo electrónico, y tienen un límite de 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel. Para obtener información sobre cuándo se aplican las marcas de contenido, consulte [Cuando Office 365 aplica el marcado y el cifrado de contenido al contenido](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+- **Marcar el contenido** cuando utilice las aplicaciones de Office, agregando marcas de agua, encabezados o pies de página a correos electrónicos o documentos que tengan aplicada la etiqueta. Por ejemplo:
     
     ![Marca de agua y encabezado aplicados a un documento](media/Sensitivity-label-watermark-header.png)
+    
+    Para obtener información sobre cuándo se aplican las marcas de contenido, consulte [Cuando Office 365 aplica el marcado y el cifrado de contenido al contenido](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+    
+    Más información sobre la configuración de **Marcadores de contenido** al crear o modificar una etiqueta de confidencialidad: las marcas de agua se pueden aplicar a los documentos, pero no al correo electrónico, y están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
-- **Evitar la pérdida de datos** activando la opción Endpoint Protection de Intune. Si se descarga contenido confidencial, puede ayudar a evitar la pérdida de datos en los dispositivos Windows. Por ejemplo, no se puede copiar contenido etiquetado en Dropbox, Gmail o en una unidad USB. Antes de que las etiquetas de confidencialidad puedan usar Windows Information Protection (WIP), primero necesita crear una directiva de protección de aplicaciones en el portal de Azure. Para obtener más información, consulte [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+- **Evitar la pérdida de datos** activando la opción Endpoint Protection de Intune. Si se descarga contenido confidencial, puede ayudar a evitar la pérdida de datos en los dispositivos Windows. Por ejemplo, no se puede copiar contenido etiquetado en Dropbox, Gmail o en una unidad USB. Antes de que las etiquetas de confidencialidad puedan usar Windows Information Protection (WIP), primero necesita crear una directiva de protección de aplicaciones en el portal de Azure. 
+    
+    Para obtener más información sobre la configuración de **prevención de pérdida de datos del extremo** al crear o editar una etiqueta de confidencialidad, incluidos los requisitos previos importantes, vea [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
-- **Aplicar la etiqueta automáticamente al contenido que contenga información confidencial.** Puede elegir el tipo de información confidencial que desee etiquetar y la etiqueta se puede aplicar automáticamente o, si lo prefiere, puede pedir a los usuarios que apliquen una etiqueta específica. Si recomienda una etiqueta, el aviso muestra el texto que elija. Para obtener más información, vea [Aplicar una etiqueta de contenido sensible automáticamente](apply-sensitivity-label-automatically.md).
-
+- **Aplicar la etiqueta automáticamente al contenido que contenga información confidencial.** Puede elegir el tipo de información confidencial que desee etiquetar y la etiqueta se puede aplicar automáticamente o, si lo prefiere, puede pedir a los usuarios que apliquen una etiqueta específica. Si recomienda una etiqueta, el aviso muestra el texto que elija. Por ejemplo:
+    
     ![Aviso para asignar una etiqueta necesaria](media/Sensitivity-label-Prompt-for-required-label.png)
+    
+    Para obtener más información sobre la configuración **Aplicación automática de etiquetas para aplicaciones de Office** al crear o editar una etiqueta de confidencialidad, vea [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
 
 ### <a name="label-priority-order-matters"></a>Prioridad de etiqueta (el orden importa)
 
@@ -181,11 +193,11 @@ Los metadatos aplicados por los dos conjuntos de etiquetas son compatibles, por 
 
 ### <a name="azure-information-protection-clients"></a>Clientes de Azure Information Protection
 
-Cuando se usan etiquetas de confidencialidad en aplicaciones de Office 365 ProPlus en equipos con Windows, tiene la opción de usar un cliente de Azure Information Protection o usar etiquetas integradas en Office. 
+Cuando se usan etiquetas de confidencialidad en aplicaciones de Office 365 ProPlus en equipos con Windows, tiene la opción de usar un cliente de Azure Information Protection o usar etiquetas integradas en Office.
 
-De forma predeterminada, la etiqueta integrada está desactivada en estas aplicaciones cuando el cliente de Azure Information Protection está instalado. Para obtener más información, consulte [Sobre el cliente integrado de etiquetas de Office](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
+De forma predeterminada, la etiqueta integrada está desactivada en estas aplicaciones cuando el cliente de Azure Information Protection está instalado. Para obtener más información, incluido cómo cambiar este comportamiento predeterminado, consulte [Sobre el cliente integrado de etiquetas de Office](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
 
-Si necesita ayuda para decidir cuál es el cliente de etiquetado que quiere usar, consulte [Elegir el cliente de etiquetado que se usará para los equipos de Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) en la documentación de Azure Information Protection.
+Si no está familiarizado con Azure Information Protection, o si es un cliente de Azure Information Protection que acaba de migrar sus etiquetas, consulte [Elegir el cliente de etiquetas que se usará para los equipos Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) en la documentación de Azure Information Protection.
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>Etiquetas de confidencialidad y Microsoft Cloud App Security
 
@@ -193,11 +205,11 @@ Cuando hace uso de Cloud App Security (CAS), puede detectar, clasificar, etiquet
 
 Cloud App Security funciona con las etiquetas mismas y las de confidencialidad de Azure Information Protection:
 
-- Si los centros de administración de etiquetas tienen las mismas etiquetas que las que se incluyen en el Azure Portal: se usan etiquetas de confidencialidad. Para seleccionar estas etiquetas en Cloud App Security, al menos una etiqueta debe ser [publicada](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) para al menos un usuario.
+- Si los centros de administración de etiquetas tienen una o más etiquetas de confidencialidad [publicadas](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) para al menos un usuario: se usan las etiquetas de confidencialidad.
 
-- Si los centros de administración de etiquetas no tienen las mismas etiquetas que en Azure Portal: las etiquetas de confidencialidad no se usan desde los centros de administración de etiquetas y, en su lugar, las etiquetas de Azure Information Protection se recuperan desde el portal de Azure.
+- Si los centros de administración de etiquetas no tienen etiquetas de confidencialidad publicadas: se usan las etiquetas de Azure Information Protection.
 
-Para obtener instrucciones sobre cómo usar Cloud App Security con estas etiquetas, consulte [Aplicar automáticamente las etiquetas de clasificación de Azure Information Protection](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
+Para obtener instrucciones sobre cómo usar Cloud App Security con estas etiquetas, consulte [Integración de Azure Information Protection](https://docs.microsoft.com/cloud-app-security/azip-integration).
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Etiquetas de confidencialidad y el SDK de protección de la información de Microsoft
 

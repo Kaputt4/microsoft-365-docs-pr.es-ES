@@ -1,5 +1,7 @@
 ---
 title: Ajuste de la protección contra la suplantación de identidad en Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtienen los mensajes de suplantación de identidad (phishing) y cómo hacerlo para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: 03f4df5f552dab48283f18ec367ee6979afd9c89
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: b7ce09ff85c0341ea8cb901942e87dbe10ba0435
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823852"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598147"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ajuste de la protección contra la suplantación de identidad en Office 365
 

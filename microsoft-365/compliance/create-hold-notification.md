@@ -1,5 +1,7 @@
 ---
 title: Crear un aviso de suspensión legal
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c34271f5dce3bc830241ba0fa5bad70cd294ba22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091898"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595627"
 ---
 # <a name="create-a-legal-hold-notice"></a>Crear un aviso de suspensión legal
 
@@ -100,7 +102,7 @@ Para crear una notificación de nueva emisión:
    
 4. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio). Tenga en cuenta que el contenido del portal que definió en el paso 2 se agrega al final del aviso de reemisión.
    
-5. Haga clic en **Guardar **.
+5. Haga clic en **Guardar**.
 
 >[!Note]
 >Si se modifica una notificación de retención, se enviará automáticamente la notificación de reemisión a todos los custodios asignados a la notificación. Una vez enviada la notificación, se pedirá a los custodios que vuelvan a confirmar su aviso de suspensión. Si ha configurado un flujo de trabajo de aviso o de escalado, también se reiniciará. 

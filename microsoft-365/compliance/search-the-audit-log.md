@@ -1,5 +1,7 @@
 ---
 title: Buscar en el registro de auditoría la actividad de usuario y de administrador en Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 'El registro de auditoría de Office 365 es un registro de auditoría unificado. ¿Por qué un registro de auditoría unificado? Como los eventos de la mayoría de los servicios de Office 365 a los que está suscrito la organización se registran en un único registro de auditoría que puede buscar. Esto significa que puede buscar actividades de usuario y de administrador en estos servicios:'
-ms.openlocfilehash: 1d3f45d24a8d1a83c20f5d36b12ced761e00f936
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 82ed3c1afd4f59136b04120982ddb1433f4dd0eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092948"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597537"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Buscar en el registro de auditoría la actividad de usuario y de administrador en Office 365
 

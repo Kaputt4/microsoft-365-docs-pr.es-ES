@@ -1,5 +1,7 @@
 ---
 title: Crear y aplicar directivas de administración de información
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Las directivas de administración de la información permiten a su organización controlar el tiempo que se conservará el contenido, auditar lo que hacen los usuarios con el contenido y agregar códigos de barras o etiquetas a los documentos. Una Directiva puede ayudar a garantizar el cumplimiento de las regulaciones legales y gubernamentales o los procesos de negocio internos. Como administrador, puede configurar una directiva para controlar cómo realizar un seguimiento de los documentos y durante cuánto tiempo se conservan los documentos.
-ms.openlocfilehash: d8572f570db7b0223bc2f08cd78875224897e02c
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: b61c18390dde2e5d2da92189acced42ea5ece64c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38687796"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595617"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 

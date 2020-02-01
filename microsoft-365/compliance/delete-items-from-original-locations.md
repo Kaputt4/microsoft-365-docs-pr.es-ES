@@ -1,5 +1,7 @@
 ---
 title: Eliminar elementos de su ubicación original
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo usar la herramienta de nueva investigación de datos (vista previa) en el centro de seguridad & cumplimiento para eliminar elementos de sus ubicaciones originales.
-ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38687810"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595325"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminar elementos de su ubicación original (versión preliminar)
 
@@ -76,7 +78,7 @@ En este momento, cuando se eliminan elementos de su ubicación de contenido orig
 
 - **Buzones de correo:** Cuando un elemento de buzón se elimina temporalmente, se mueve a la carpeta elementos recuperables del buzón de correo. Este comportamiento es similar cuando un usuario elimina un elemento de la carpeta elementos eliminados o elimina permanentemente un elemento presionando MAYÚS + SUPR. En este punto, el usuario puede recuperar el elemento hasta que expire el período de retención de elementos eliminados. En Office 365, el período de retención de elementos eliminados es de 14 días de manera predeterminada, pero un administrador puede aumentar el período de retención a 30 días. Una vez transcurrido el período de retención, el elemento se mueve a una carpeta oculta (denominada la carpeta *purga* ). El elemento se elimina permanentemente de Office 365 la próxima vez que se procesa el buzón de correo. Los buzones se procesan una vez cada siete días).
 
-- **Sitios de SharePoint y OneDrive:** Cuando un archivo o un documento de un sitio se elimina temporalmente, se mueve a la papelera de reciclaje del sitio (también denominada Papelera de reciclaje de *primera etapa* ). El elemento permanece en la papelera de reciclaje durante 93 días (el período de retención de elementos eliminados para los sitios de Office 365). Durante el período de 93 días, los elementos eliminados todavía pueden ser recuperados por un administrador de la colección de sitios en SharePoint o por el usuario o el administrador en OneDrive. Los elementos también se pueden eliminar de la papelera de reciclaje de primera etapa. Cuando esto ocurre, los elementos se mueven a la papelera de reciclaje para la colección de sitios, que se denomina la papelera de reciclaje *de la segunda etapa* . El período de retención es de 93 días para las papeleras de reciclaje de primera etapa y de segunda etapa. Esto significa que la retención de la papelera de reciclaje de la segunda etapa se inicia cuando el elemento se elimina inicialmente. Esto significa que el tiempo de retención máximo total es de 93 días para ambas papeleras de reciclaje. Si un elemento se elimina de la papelera de reciclaje de la segunda etapa (manualmente un administrador o automáticamente cuando expira el período de retención), un administrador ya no puede tener acceso.
+- **Sitios de SharePoint y OneDrive:** Cuando un archivo o un documento de un sitio se elimina temporalmente, se mueve a la papelera de reciclaje del sitio (también denominada Papelera de reciclaje de *primera etapa* ). El elemento permanece en la Papelera de reciclaje durante 93 días (el período de retención de elementos eliminados para sitios en Office 365). Durante el período de 93 días, los elementos eliminados todavía pueden ser recuperados por un administrador de la colección de sitios en SharePoint o por el usuario o el administrador en OneDrive. Los elementos también se pueden eliminar de la papelera de reciclaje de primera etapa. Cuando esto ocurre, los elementos se mueven a la papelera de reciclaje para la colección de sitios, que se denomina la papelera de reciclaje *de la segunda etapa* . El período de retención es de 93 días para las papeleras de reciclaje de primera etapa y de segunda etapa. Esto significa que la retención de la papelera de reciclaje de la segunda etapa se inicia cuando el elemento se elimina inicialmente. Esto significa que el tiempo de retención máximo total es de 93 días para ambas papeleras de reciclaje. Si un elemento se elimina de la papelera de reciclaje de la segunda etapa (manualmente un administrador o automáticamente cuando expira el período de retención), un administrador ya no puede tener acceso.
 
 ## <a name="what-happens-if-a-content-location-is-on-hold"></a>¿Qué sucede si una ubicación de contenido está en espera?
 

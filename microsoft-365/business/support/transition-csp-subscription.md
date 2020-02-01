@@ -2,6 +2,8 @@
 title: Transición a una suscripción de CSP de Microsoft 365 Empresa 
 description: Descubre cómo puedes hacer la transición a una suscripción de CSP de Microsoft 365 Empresa desde una versión preliminar a GA. 
 author: jasongroce
+f1.keywords:
+- NOCSH
 ms.author: jasgro
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -9,12 +11,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, transición suscripción de CSP
 ms.date: 11/01/2017
-ms.openlocfilehash: 72e620df69a425ca7e5c41c5a6651bc0f7f533de
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 4aadfa24bec8728c7e011ac6da48a8e30516e145
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748349"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595053"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transición a una suscripción de CSP de Microsoft 365 Empresa
 
@@ -22,7 +24,7 @@ Si tienes una suscripción de CSP de versión preliminar de Microsoft 365 sigue 
 
 **Cómo realizar la transición de una suscripción de versión preliminar a GA**
 
-1. Inicie sesión en el <a href="https://partnercenter.microsoft.com" target="_blank">centro de asociados</a>.
+1. Inicie sesión en el <a href="https://partnercenter.microsoft.com" target="_blank">Centro de partners</a>.
 2. En el panel, selecciona **Clientes** y, a continuación, busca y selecciona el nombre de la compañía.
 
     Se mostrarán las suscripciones de la compañía.

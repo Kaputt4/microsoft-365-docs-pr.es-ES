@@ -1,5 +1,7 @@
 ---
 title: Establecer la configuración de protección de aplicaciones para dispositivos Windows 10
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -25,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Obtenga información sobre cómo crear una directiva de administración de aplicaciones y proteger los archivos de trabajo en dispositivos con Windows 10.
-ms.openlocfilehash: ca6d789e0242975a0395e6cf5653d3f43f819801
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 703f63fc1c90966eb8412886e82670af3e9d6f62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715260"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593544"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Windows 10
 

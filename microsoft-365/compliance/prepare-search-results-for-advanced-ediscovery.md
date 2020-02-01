@@ -1,5 +1,7 @@
 ---
 title: Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos de Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,18 +17,21 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365 para seguir analizando la herramienta eDiscovery avanzada.
-ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 115657a1ea8a603676ff168cce7653e56f5664ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093238"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597747"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos de Office 365
 
-Una vez que se ha ejecutado correctamente una búsqueda asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento, puede preparar los resultados de la búsqueda para un análisis más avanzado con la exhibición de documentos electrónicos de Office 365 Advanced eDiscovery, que le permitirá analizar conjuntos de datos grandes y sin estructurar y reducir la cantidad de datos que son relevantes para un caso legal. Las características avanzadas de eDiscovery incluyen:
+> [!IMPORTANT]
+> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos el retiro de Office 365 Advanced eDiscovery (también conocido como *Advanced eDiscovery v 1.0*). Si todavía está usando la exhibición avanzada de documentos electrónicos v 1.0, pase a la [versión más avanzada de eDiscovery 2.0](overview-ediscovery-20.md) (también denominada *solución de exhibición avanzada de documentos electrónicos en Microsoft 365*) lo antes posible. EDiscovery avanzado 2,0 contiene una funcionalidad similar que se encuentra en eDiscovery avanzado v 1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información acerca de la retirada de eDiscovery avanzado v 1.0, consulte [jubilación de las herramientas de eDiscovery heredadas](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+
+Una vez que se haya ejecutado correctamente una búsqueda asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento, podrá preparar los resultados de la búsqueda para un análisis más avanzado con la exhibición de documentos electrónicos de Office 365 Advanced eDiscovery, que le permitirá analizar conjuntos de datos grandes y sin estructurar y reducir la cantidad de datos que son relevantes para un caso legal. Las características avanzadas de eDiscovery incluyen:
   
-- **Reconocimiento óptico de caracteres** : al preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos, la funcionalidad de reconocimiento óptico de caracteres (OCR) extrae automáticamente el texto de las imágenes e incluye esto con los resultados de la búsqueda que se cargan en EDiscovery avanzado para el análisis. OCR es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Esto le permite aplicar las capacidades de análisis de texto de eDiscovery avanzado (casi duplicados, subprocesamiento de correo electrónico, temas y codificación de predicción) al contenido de texto de los archivos de imagen. EDiscovery avanzado el OCR admite los siguientes formatos para los archivos de imagen:
+- **Reconocimiento óptico de caracteres** : al preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos, la funcionalidad de reconocimiento óptico de caracteres (OCR) extrae automáticamente el texto de las imágenes e incluye esto con los resultados de la búsqueda que se cargan en la exhibición avanzada de documentos electrónicos para el análisis. OCR es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Esto le permite aplicar las capacidades de análisis de texto de eDiscovery avanzado (casi duplicados, subprocesamiento de correo electrónico, temas y codificación de predicción) al contenido de texto de los archivos de imagen. EDiscovery avanzado el OCR admite los siguientes formatos para los archivos de imagen:
 
     - GIF
     - JPEG
@@ -103,7 +108,7 @@ Una vez finalizada la preparación, el siguiente paso es ir a la exhibición ava
     
 4. Para cargar los datos de resultados de búsqueda de un contenedor en el caso de eDiscovery avanzado, seleccione un contenedor y, a continuación, haga clic en **procesar**.
     
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que se agregan los resultados de una búsqueda de exhibición de documentos electrónicos a un caso, el siguiente paso consiste en usar las herramientas avanzadas de eDiscovery para analizar los datos e identificar el contenido que responde a un caso legal específico. Para obtener información sobre el uso de la exhibición avanzada de documentos electrónicos, vea [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md).
   

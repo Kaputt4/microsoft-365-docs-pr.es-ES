@@ -1,5 +1,7 @@
 ---
 title: Aumentar la protección contra amenazas
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtener ayuda para aumentar el nivel de protección en Microsoft 365 Business
-ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 3cfb8d0a38fc797ec25fb0e4e33409e225646ef2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748311"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594855"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -77,9 +79,9 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la siguiente tabla para la regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
     
-|**Setting**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
+|**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla antiransomware: advertir a los usuarios  <br/>  |
 |Aplicar esta regla si. . .  <br/> |Los datos adjuntos. . . coincidencias de extensión de archivo. . .  <br/> |
@@ -111,9 +113,9 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
     
 5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
     
-|**Setting**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
+|**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
 |Nombre  <br/> |Impedir el reenvío automático de correo electrónico a dominios externos  <br/> |
 |Aplicar esta regla si...  <br/> |El remitente. . . es externo/interno. . . Dentro de la organización  <br/> |
@@ -152,7 +154,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
 |Elegir acciones  <br/> |Si un usuario suplantado envía un correo electrónico: elija **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, *Alicia<span><span>@contoso. com*.          Si un dominio suplantado envía un correo electrónico: elija **mensaje en cuarentena**.  <br/> |
 |Inteligencia de buzones  <br/> |De forma predeterminada, la inteligencia de buzones se selecciona cuando se crea una nueva Directiva antiphishing. Deje esta configuración **activada** para obtener los mejores resultados.  <br/> |
 |Agregar dominios y remitentes de confianza  <br/> |Aquí puede agregar sus propios dominios o cualquier otro dominio de confianza.  <br/> |
-|Aplicado a  <br/> |Seleccione **el dominio del destinatario es**. En **cualquiera de estos**, seleccione **elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, *contoso.<span> com <span>*, en la lista y, a continuación, seleccione **Agregar**. Seleccione **listo**.  <br/> |
+|Aplicado a  <br/> |Seleccione **el dominio del destinatario es**. En **cualquiera de estos**, seleccione **elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, *contoso.<span> com <span>*, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.  <br/> |
    
 Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
@@ -233,7 +235,7 @@ Para modificar la directiva predeterminada:
     
 2. En **configuración que se aplica al contenido excepto el correo electrónico**, seleccione **Office 365 ProPlus, Office para iOS y Android**.
     
-3. Haga clic en **Guardar **. 
+3. Haga clic en **Guardar**. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -241,7 +243,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Haga clic en **Guardar **. 
+3. Haga clic en **Guardar**. 
 
 |**Configuración u opción**|**Configuración recomendada** <br/>|
 |:-----|:-----|

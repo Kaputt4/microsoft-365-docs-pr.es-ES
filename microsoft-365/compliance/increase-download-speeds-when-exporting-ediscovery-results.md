@@ -1,5 +1,7 @@
 ---
 title: Aumentar la velocidad de descarga al exportar resultados de búsqueda de exhibición de documentos electrónicos de Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Obtenga información sobre cómo configurar el registro de Windows para aumentar el rendimiento de los datos al descargar resultados de búsqueda y datos de búsqueda del centro de seguridad & cumplimiento y la exhibición avanzada de documentos electrónicos en Office 365.
-ms.openlocfilehash: f74d164250f9d5b9b8315fe2651d3374457451ed
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: bb4ba0e788463e68588989c7c2c0c721dd15e018
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687842"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597927"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Aumentar la velocidad de descarga al exportar resultados de búsqueda de exhibición de documentos electrónicos de Office 365
 

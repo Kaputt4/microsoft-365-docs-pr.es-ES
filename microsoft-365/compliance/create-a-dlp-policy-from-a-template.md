@@ -1,5 +1,7 @@
 ---
 title: Crear una directiva DLP a partir de una plantilla
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
-ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
-ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
+ms.openlocfilehash: b101714190879e4bdd1090b05f94f1f36e5d8729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "38687626"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595667"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
@@ -140,7 +142,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos PII de Esta
     
      Antes de crear las directivas de DLP, considere la posibilidad de implementarlas gradualmente para valorar su impacto y probar su eficacia antes de que las exija por completo. Por ejemplo, no desea que una nueva Directiva de DLP bloquee involuntariamente el acceso a miles de documentos que los usuarios necesitan para realizar su trabajo. 
     
-    Si va a crear directivas de DLP con un gran impacto potencial, le recomendamos seguir esta secuencia:
+    Si está creando directivas DLP con un gran impacto potencial, se recomienda seguir esta secuencia:
     
 17. Inicie en modo de prueba sin sugerencias de directiva y, a continuación, use los informes DLP para evaluar el impacto. Los informes DLP le sirven para ver el número, la ubicación, el tipo y la gravedad de las coincidencias de directivas. En función de los resultados, puede ajustar las reglas según sea necesario. En el modo de prueba, las directivas DLP no afectarán a la productividad de las personas que trabajan en su organización. 
     
@@ -184,7 +186,7 @@ Además, puede desactivar cada regla por separado editando la Directiva y, a con
 
 - [Información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)
     
-- [Enviar notificaciones y mostrar sugerencias para directivas DLP](use-notifications-and-policy-tips.md)
+- [Enviar notificaciones y mostrar sugerencias de directivas para directivas DLP](use-notifications-and-policy-tips.md)
     
 - [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
     

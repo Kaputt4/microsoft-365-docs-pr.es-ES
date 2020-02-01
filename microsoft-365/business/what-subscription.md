@@ -1,5 +1,7 @@
 ---
 title: ¿Qué suscripción es adecuada para su empresa?
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Determine si Office 365 E3, Office 365 empresa Premium o Microsoft 365 Business es adecuado para su empresa.
-ms.openlocfilehash: f3adf67cf164b14596bc0cedf1cacd7dec41955e
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 44d8b6c64882b0357674793e8430423802b0fc1a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748329"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594943"
 ---
 # <a name="what-subscription-is-right-for-your-small-business"></a>¿Qué suscripción es la más adecuada para su pequeña empresa?
 

@@ -1,5 +1,7 @@
 ---
 title: Solicitudes de caja de seguridad del cliente de Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de caja del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede tener acceso a los datos cuando se tiene un problema.
-ms.openlocfilehash: a9f7f6116d4667e294666afc71747a6fad1efb33
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 915f8570271835939f0086f6c19af41a42d4f0d0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233771"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595507"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de caja de cliente en Office 365
 

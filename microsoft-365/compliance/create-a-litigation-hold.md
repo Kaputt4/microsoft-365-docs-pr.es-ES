@@ -1,5 +1,7 @@
 ---
 title: Crear una retención por juicio
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: 720381c067ba17614df253ffdf0543821a0bf192
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: dbcddd57fcf2d1471b4a4aa4b715dcae22dbc40c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687826"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596197"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
@@ -74,7 +76,7 @@ El comando anterior conserva los elementos indefinidamente porque no se especifi
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-Para obtener más información, vea [set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+Para obtener más información, vea [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
 
 ## <a name="how-does-litigation-hold-work"></a>¿Cómo funciona la retención por juicio?
 

@@ -1,5 +1,7 @@
 ---
 title: Configurar directivas de acceso condicional para campañas de 365 de Microsoft
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar directivas de acceso condicional para campañas de 365 de Microsoft.
-ms.openlocfilehash: aebdb733c2dd9a05947335ad4f151104d801568e
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 335fbd7e771b1595e1846529daed76e5ddd3a8f5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718837"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593393"
 ---
 # <a name="set-up-conditional-access-policies"></a>Configurar directivas de acceso condicional
 

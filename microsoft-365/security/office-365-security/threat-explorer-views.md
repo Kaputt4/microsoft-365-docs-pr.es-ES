@@ -1,5 +1,7 @@
 ---
 title: Vistas en el explorador de amenazas y detecciones en tiempo real
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,18 +14,18 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los distintos tipos de vistas disponibles en el explorador de amenazas y las detecciones en tiempo real.
-ms.openlocfilehash: 7c3d78c5b5d4b1708fc57adba6951b4e352f0eaa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7f506b77673e416aaecdc707e0659006e6089142
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093610"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598257"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
 ![Explorador de amenazas](../media/ThreatExplorerFirstOpened.png)
 
-[Explorador de amenazas](threat-explorer.md) (y el informe de detecciones en tiempo real) es una herramienta eficaz, casi en tiempo real, que ayuda a los equipos de operaciones de seguridad a investigar &amp; y responder a amenazas en el centro de seguridad y cumplimiento. Explorer (y el informe de detecciones en tiempo real) muestra información sobre el malware y el phish sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización. 
+El [Explorador de amenazas](threat-explorer.md) (y el informe de detecciones en tiempo real) es una herramienta eficaz, casi en tiempo real, que ayuda a los equipos de operaciones de seguridad &amp; a investigar y responder a amenazas en el centro de seguridad y cumplimiento. Explorer (y el informe de detecciones en tiempo real) muestra información sobre el malware y el phish sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización. 
 
 - Si tiene [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) Plan 2, entonces tiene Explorer.
 - Si tiene Office 365 ATP plan 1, tendrá detecciones en tiempo real.

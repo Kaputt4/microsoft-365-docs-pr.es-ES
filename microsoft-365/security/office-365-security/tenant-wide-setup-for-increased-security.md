@@ -1,5 +1,7 @@
 ---
 title: Configurar su inquilino de Office 365 para aumentar la seguridad
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Le guía por la configuración recomendada para la configuración de todos los inquilinos que afectan a la seguridad de su entorno de Office 365. Las necesidades de seguridad pueden requerir más o menos seguridad. Use estas recomendaciones como punto de partida.
-ms.openlocfilehash: f5df416b71cd3b4885033786d83160644b6d7b1a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 01cf10818c83171fbbf30b5ec7f08871f0b9b328
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971458"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598207"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar su inquilino de Office 365 para aumentar la seguridad
 
@@ -126,6 +128,7 @@ Más información:
 
 En estos artículos y guías se proporciona información preceptiva adicional para proteger el entorno de Office 365:
 
-- [Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance) (puede usar estas recomendaciones en cualquier entorno, especialmente en entornos solo de nube)
+- [Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (puede usar estas recomendaciones en cualquier entorno, especialmente en entornos solo de nube)
+
 
 - [Directivas y configuraciones de seguridad recomendadas para los dispositivos y las identidades](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (estas recomendaciones incluyen ayuda para entornos de AD FS)

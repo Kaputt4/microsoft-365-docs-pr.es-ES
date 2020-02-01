@@ -1,5 +1,7 @@
 ---
 title: Auditar el uso compartido para buscar recursos compartidos con usuarios externos
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'El uso compartido es una actividad clave en SharePoint Online y OneDrive para la empresa. Los administradores ahora pueden usar la auditoría de uso compartido en el registro de auditoría de Office 365 para identificar recursos que se han compartido con usuarios fuera de la organización. '
-ms.openlocfilehash: 8d473a3e3fb1c8e5e8753265c3982b27271ed39c
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38687795"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597287"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Auditar el uso compartido para buscar recursos compartidos con usuarios externos
 
@@ -99,7 +101,7 @@ El primer paso es buscar eventos de uso compartido en el registro de auditoría 
     
 3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de**registros de auditoría**de **búsqueda**  > .
     
-    Se muestra la página de **búsqueda de registros de auditoría** . 
+    La página del**registro de auditoría de búsqueda**será mostrada. 
     
 4. En **actividades**, haga clic en **compartir y obtener acceso a actividades de solicitud** para buscar eventos relacionados con el uso compartido. 
     

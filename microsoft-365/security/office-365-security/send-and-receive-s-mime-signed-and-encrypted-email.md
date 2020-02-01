@@ -1,5 +1,7 @@
 ---
 title: Enviar y recibir correo electrónico cifrado y firmado con S/MIME en Exchange Online
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: Enviar o responder a un mensaje cifrado con S/MIME en Microsoft Outlook es muy similar a la experiencia con un mensaje no cifrado.
-ms.openlocfilehash: ccea4e3359ecb9a5b214e4d19afa3e188b1b2865
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a7050ed2b2cd37b08bd2e95b90577f36086f0e85
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970286"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598427"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>Enviar y recibir correo electrónico cifrado y firmado con S/MIME en Exchange Online
 

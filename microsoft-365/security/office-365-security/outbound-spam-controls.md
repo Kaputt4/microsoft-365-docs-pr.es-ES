@@ -1,5 +1,7 @@
 ---
 title: Controlar el correo no deseado saliente en Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si su organización envía una gran cantidad de correo masivo marcado como correo no deseado, puede bloquear el envío de correo electrónico con Office 365. Lea este artículo para obtener más información sobre por qué ocurre esto y lo que puede hacer al respecto.
-ms.openlocfilehash: 28677e2bbfad7f44595de1300e42b9c58ab99c2b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1b1e0f56398db774a9aabc56cdcde52ad17791a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031855"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598737"
 ---
 # <a name="control-outbound-spam-in-office-365"></a>Controlar el correo no deseado saliente en Office 365
 

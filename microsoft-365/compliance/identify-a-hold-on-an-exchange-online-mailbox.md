@@ -1,5 +1,7 @@
 ---
 title: Cómo identificar el tipo de retención en un buzón de Exchange Online
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Obtenga información sobre cómo identificar los distintos tipos de retenciones que se pueden colocar en un buzón de correo de Office 365. Estos tipos de retenciones incluyen la retención por juicio, las suspensiones de eDiscovery y las directivas de retención de Office 365. También puede determinar si se ha excluido a un usuario de una directiva de retención para toda la organización
-ms.openlocfilehash: dcdb79aa1c1cae83602a42e6c99136a2f85226a1
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: f45310547d41d8ec1092a3fecfaa0b50c4439559
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558017"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596507"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -198,7 +200,7 @@ Para quitar la retención por retraso antes de que expire, puede ejecutar uno (o
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -212,7 +214,7 @@ Para quitar la retención retrasada en un buzón inactivo, ejecute uno de los si
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied

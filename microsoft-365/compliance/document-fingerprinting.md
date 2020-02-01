@@ -1,5 +1,7 @@
 ---
 title: Creación de huella digital de documento
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. La creación de huella digital de documento facilita la protección de esta información al identificar los formularios estándar que se usan en toda la organización. En este tema se describen los conceptos relacionados con la creación de huellas digitales de documentos y cómo crear una mediante PowerShell.
-ms.openlocfilehash: 8ac8e0f44c71f0f52d362f6c6c84f7fc9e55face
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 6aea349495aa31eba8c9b57abffb92131d00864c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38687750"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595205"
 ---
 # <a name="document-fingerprinting"></a>Creación de huella digital de documento
 

@@ -1,5 +1,7 @@
 ---
 title: Trabajar con proveedores de soluciones
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 description: Puede trabajar con proveedores de soluciones certificados por Microsoft para comprar y administrar productos y servicios para su organización o centro educativo.
 keywords: Partner, proveedor de soluciones
-ms.openlocfilehash: bb78e1a704529fd2d12ff49639913fe80b75be7a
-ms.sourcegitcommit: a7edd3840226e67e82126bb9dee423b3458fef4d
+ms.openlocfilehash: 341a353247635eab491eb0962273eeed09b31599
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36994081"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594124"
 ---
 # <a name="working-with-solution-providers-in-microsoft-store-for-business"></a>Trabajar con proveedores de soluciones en Microsoft Store para empresas
 

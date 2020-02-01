@@ -1,5 +1,7 @@
 ---
 title: Desuso de la aplicación del visor de cifrado de mensajes de Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 ms.date: 6/29/2018
@@ -14,12 +16,12 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: El 15 de agosto de 2018, se quitará la aplicación móvil del visor de cifrado de mensajes de Office 365 (OME) de Android y las tiendas de Apple. Se necesita la aplicación móvil del visor de cifrado de mensajes de Office 365 para leer mensajes de correo electrónico y datos adjuntos que se han cifrado con la versión anterior de OME en Apple y teléfonos Android. Además de quitar la aplicación Visor OME, no se realizan otros cambios en la versión anterior de OME.
-ms.openlocfilehash: 3b5c92d4fa700a1ae8d7b104e33100301cf43506
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 791a882650cfa3ffd5caaafbb835c8f272f8665e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091761"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595275"
 ---
 # <a name="deprecating-office-365-message-encryption-viewer-app"></a>Desuso de la aplicación del visor de cifrado de mensajes de Office 365
 

@@ -1,5 +1,7 @@
 ---
 title: Análisis de relevancia de pruebas en Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: 'Obtenga información sobre cómo usar la pestaña prueba tras el cálculo por lotes en Office 365 Advanced eDiscovery para probar, comparar y validar la calidad general de procesamiento.  '
-ms.openlocfilehash: cda959c77b2d51f85f1396eb27d16d2690321bb6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0931e0ea6aabfb9fbeca04973f17395d4f245f41
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802633"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597377"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Análisis de relevancia de pruebas en Office 365 Advanced eDiscovery
 

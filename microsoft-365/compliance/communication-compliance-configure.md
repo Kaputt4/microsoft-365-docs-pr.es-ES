@@ -1,6 +1,8 @@
 ---
 title: Configuración del cumplimiento de la comunicación (versión preliminar)
 description: Configure las directivas de cumplimiento de comunicaciones para configurar las comunicaciones de los empleados para revisión.
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b230da002bb537f35934e38395758721cffe2b25
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 24c87b8244b2dc53f58a07784c07231fb1588121
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558387"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595847"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365-preview"></a>Configurar el cumplimiento de las comunicaciones en Microsoft 365 (versión preliminar)
 

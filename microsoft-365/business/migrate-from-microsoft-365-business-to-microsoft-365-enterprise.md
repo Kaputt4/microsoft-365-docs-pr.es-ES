@@ -1,5 +1,7 @@
 ---
 title: Migrar de Microsoft 365 Empresa a Microsoft 365 E3
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa de Microsoft 365 Business a Microsoft 365 E3.
-ms.openlocfilehash: 1cf6aa741c7f0b427a434d472df7169ef37c5418
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 2515c2d56727b9a8be643dea76e150eeaadce5c9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558047"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593699"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrar de Microsoft 365 Empresa a Microsoft 365 E3
 
@@ -139,7 +141,7 @@ No es necesario realizar ningún cambio en la configuración de Intune actual an
 Microsoft 365 Business incluye Windows 10 Business, que puede instalar con Windows AutoPilot. Al migrar a Microsoft 365 E3, cada licencia de usuario incluye Windows 10 Enterprise E3, que también puede instalar con Windows AutoPilot.
 
 <a name="office-365-business"></a>
-### <a name="office-365-business"></a>Office 365 Empresa
+### <a name="office-365-business"></a>Office 365 Empresa
 
 El cliente de Office 365 empresa instalado en los dispositivos comenzará a usar automáticamente las características de Office 365 ProPlus. Después de la migración, ahora puede usar:
 

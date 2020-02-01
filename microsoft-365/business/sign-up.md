@@ -1,5 +1,7 @@
 ---
 title: Regístrese para obtener Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo comprar y registrarse en Microsoft 365 Business.
-ms.openlocfilehash: d755931b6383a15376d3a875a9cf1ed93e9f4a63
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 63bff3d34df017d1c7cc437ef050d53623e76aa9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831251"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594256"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Regístrese para obtener Microsoft 365 Business
 
@@ -50,7 +52,7 @@ Vea este vídeo para obtener una introducción rápida al proceso de registro.<b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Para suscribirse y comprar Microsoft 365 para su empresa, siga los pasos que se indican a continuación:
 
@@ -91,6 +93,6 @@ Seleccione **ir al programa de instalación** para completar otros pasos, como a
 
 Para obtener ayuda con la instalación, consulte [configurar](set-up.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
-[Vídeos de aprendizaje para empresas de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

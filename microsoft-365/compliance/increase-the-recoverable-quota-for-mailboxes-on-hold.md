@@ -1,5 +1,7 @@
 ---
 title: Aumentar la cuota de elementos recuperables para los buzones de correo en retención
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Habilite el buzón de archivo y active el archivado de expansión automática para aumentar el tamaño de la carpeta elementos recuperables para un buzón de correo en Office 365. '
-ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687847"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597937"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 
@@ -61,7 +63,7 @@ En el resto de este tema se describen procedimientos paso a paso para crear una 
 
 El primer paso consiste en crear una etiqueta de retención personalizada (denominada etiqueta de directiva de retención o RPT) para la carpeta Elementos recuperables. Como se ha explicado anteriormente, esta RPT mueve elementos de la carpeta Elementos recuperables del buzón de correo principal del usuario a la carpeta Elementos recuperables del buzón de archivo del usuario. Debe usar PowerShell para crear una RPT para la carpeta elementos recuperables. No puede usar el Centro de administración de Exchange (EAC). 
   
-1. [Conectarse a Exchange Online con el PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [Conectarse a Exchange Online mediante PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
 2. Ejecute el comando siguiente para crear una RPT para la carpeta Elementos recuperables:  
     
@@ -84,7 +86,7 @@ El siguiente paso consiste en crear una directiva de retención y agregarle etiq
   
 Antes de crear la directiva de retención, determine las etiquetas de retención adicionales que quiere agregar. Para obtener una lista de las etiquetas de retención que se agregan a la directiva de MRM predeterminada y para obtener información sobre cómo crear etiquetas de retención, vea lo siguiente:
   
-- [Directiva de retención predeterminada en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- [Directiva de retención predeterminada de Exchange Online ](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
 - [Carpetas predeterminadas que admiten etiquetas de la directiva de retención](https://go.microsoft.com/fwlink/p/?LinkId=746957)
     

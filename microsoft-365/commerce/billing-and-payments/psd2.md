@@ -1,5 +1,7 @@
 ---
 title: Directiva 2 de servicios de pago y alta autenticación de clientes para clientes comerciales
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 description: A partir del 14 de septiembre de 2019, los bancos de los 31 países del espacio económico europeo están obligados a verificar la identidad de la persona que realiza una compra en línea antes de que se pueda procesar el pago.
 keywords: Directiva 2 de servicios de pago, autenticación de varios factores en el cliente segura
-ms.openlocfilehash: 1e9272803fd592062676e3324d172560b6b2219b
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: f59808d3735f10b57ed5c0cd279b6703b24a44a4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646460"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594711"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Directiva 2 de servicios de pago y alta autenticación de clientes para clientes comerciales
 

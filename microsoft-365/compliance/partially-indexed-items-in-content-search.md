@@ -1,5 +1,7 @@
 ---
 title: Elementos parcialmente indizados en la búsqueda de contenido en Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de contenido ejecutada a través del centro de seguridad & cumplimiento. '
-ms.openlocfilehash: 7a5baa37abbade64ac77ed288afbb5389ac2295f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092958"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597787"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Elementos parcialmente indizados en la búsqueda de contenido en Office 365
 
 Una búsqueda de contenido que se ejecuta desde el centro de seguridad & cumplimiento en Office 365 automáticamente incluye elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indexados parcialmente son elementos de buzones de Exchange y documentos de sitios de SharePoint y OneDrive para la empresa que, por algún motivo, no se han indizado completamente para la búsqueda. En Exchange, un elemento parcialmente indizado normalmente contiene un archivo, de un tipo de archivo que no se puede indizar, que está adjunto a un mensaje de correo electrónico. A continuación se muestran algunos otros motivos por los que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados cuando se ejecuta una búsqueda: 
   
-- El tipo de archivo no se reconoce o no se admite para la indización.
+- El tipo de archivo no se admite o está deshabilitado para la indexación.
     
 -  Los mensajes tienen un archivo adjunto sin un controlador válido, como archivos de imagen; Esta es la causa más común de los elementos de correo electrónico parcialmente indizados. 
     
@@ -81,7 +83,7 @@ Tenga en cuenta lo siguiente sobre los elementos parcialmente indizados:
     
 - Si la búsqueda desde la que está exportando resultados es una búsqueda de ubicaciones de contenido específicas o de todas las ubicaciones de contenido de su organización, solo se exportarán los elementos sin indexar de las ubicaciones de contenido que contienen elementos que coinciden con los criterios de búsqueda. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. El motivo es que exportar los elementos parcialmente indizados de muchos lugares de la organización puede aumentar la probabilidad de errores de exportación y aumentar el tiempo que se tarda en exportar y descargar los resultados de la búsqueda.
     
-    Para exportar elementos parcialmente indizados de todas las ubicaciones de contenido de una búsqueda, configure la búsqueda para devolver todos los elementos (quitando las palabras clave de la consulta de búsqueda) y, a continuación, exporte solo los elementos parcialmente indizados al exportar los resultados de la búsqueda (haciendo clic **solo en los elementos que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos** en **las opciones de salida**).
+    Para exportar elementos parcialmente indizados de todas las ubicaciones de contenido de una búsqueda, configure la búsqueda para devolver todos los elementos (quitando las palabras clave de la consulta de búsqueda) y, a continuación, exporte solo los elementos parcialmente indizados cuando exporte los resultados de la búsqueda (para ello, haga **** clic **solo en los elementos que tienen un formato no reconocido, están cifrados**
     
 - Si elige incluir todos los elementos del buzón de correo en los resultados de la búsqueda o si una consulta de búsqueda no especifica ninguna palabra clave o solo especifica un intervalo de fechas, es posible que no se copien los elementos parcialmente indizados en el archivo PST que contiene los elementos parcialmente indizados. Esto se debe a que todos los elementos, incluidos los elementos parcialmente indizados, se incluirán automáticamente en los resultados de la búsqueda normales.
     
@@ -141,7 +143,7 @@ Para obtener una lista de los límites de indización de documentos de SharePoin
     
 - Los mensajes protegidos con Information Rights Management (IRM) se indexan y se incluyen en los resultados de la búsqueda si coinciden con la consulta de búsqueda.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Investigar elementos indizados parcialmente en eDiscovery de Office 365](investigating-partially-indexed-items-in-ediscovery.md)
 

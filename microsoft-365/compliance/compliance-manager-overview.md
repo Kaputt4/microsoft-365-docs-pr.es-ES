@@ -1,5 +1,7 @@
 ---
 title: Información general del administrador de cumplimiento de Microsoft
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 97cbc676f9de070d1532d1e56c96db0efcce8bd0
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807339"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595797"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -147,7 +149,7 @@ Las plantillas preconfiguradas incluidas con el administrador de cumplimiento so
 13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / el[gobierno australiano ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (versión preliminar)
 14. [Línea base de protección de datos 365 de Microsoft](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
-## <a name="compliance-score"></a>Puntuación de cumplimiento
+## <a name="compliance-score"></a>Puntuación de conformidad
 
 La [puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md) es una característica del centro de cumplimiento de Microsoft 365 que le ayuda a comprender la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. Conocer la puntuación de cumplimiento general ayuda a su organización a comprender y administrar el cumplimiento. Comprenda [cómo se calcula la puntuación de cumplimiento](compliance-score-methodology.md).
   

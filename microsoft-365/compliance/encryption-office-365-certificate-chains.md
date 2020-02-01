@@ -1,5 +1,7 @@
 ---
 title: Cadenas de cifrado de Office 365
+f1.keywords:
+- NOCSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Ver una lista completa de certificados raíz y entidades de certificación (CA) en Office 365.
-ms.openlocfilehash: 8cbb36afc5cb28e2eeea7aa87957cedade2e5f30
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7b3aeb4012f510b8ccd3d7e608a9aa9be04b01ea
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807724"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593201"
 ---
 # <a name="office-365-encryption-chains"></a>Cadenas de cifrado de Office 365
 

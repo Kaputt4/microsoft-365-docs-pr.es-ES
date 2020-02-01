@@ -1,5 +1,7 @@
 ---
 title: Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: 13f45ce55f23d91a81068031691436383ec87ba3
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: bd167246bc43cba20a444594a2309ac888c734fc
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687892"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597477"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -193,7 +195,7 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |NAM  <br/> |Norteamérica (centros de administración de centros de recursos en los Estados Unidos)  <br/> |
     |EUR  <br/> |Europa  <br/> |
     |APC  <br/> |Asia Pacífico  <br/> |
-    |CAN <br/> |Canada|
+    |CAN <br/> |Canadá|
     |||
     
 - **Búsquedas de contenido de ruta:** Puede enrutar las búsquedas de contenido de los sitios de SharePoint y las cuentas de OneDrive a un centro de datos satélite. Esto significa que puede especificar la ubicación del centro de recursos donde se ejecutarán las búsquedas.

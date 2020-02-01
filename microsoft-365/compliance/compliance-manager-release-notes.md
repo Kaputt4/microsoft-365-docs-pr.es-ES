@@ -1,5 +1,7 @@
 ---
 title: Notas de la versión de Microsoft Compliance Manager
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: c988a727bc48a5b27146168a66a0831c9b57b216
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c3d0efbfcf58eb001d2df5832439c22c7cc662aa
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806693"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595787"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notas de la versión del administrador de cumplimiento (versión preliminar)
 
@@ -42,7 +44,7 @@ Puede usar la herramienta actualizada del [Administrador de cumplimiento](https:
 
 En las siguientes secciones se abordan los problemas conocidos que deben resolverse en próximas versiones del administrador de cumplimiento.
 
-### <a name="compliance-score"></a>Puntuación de cumplimiento
+### <a name="compliance-score"></a>Puntuación de conformidad
 
 - Para los elementos de acción marcados como **no en el ámbito**, la puntuación asignada al elemento de acción no se excluye del cálculo de la puntuación de cumplimiento. Los elementos de acción marcados **sin ámbito** no aumentan la puntuación de cumplimiento.
 

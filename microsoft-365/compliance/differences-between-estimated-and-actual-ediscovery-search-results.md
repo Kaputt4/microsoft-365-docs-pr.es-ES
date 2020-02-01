@@ -1,5 +1,7 @@
 ---
 title: Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos Estimado y real en Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprenda por qué los resultados de búsqueda reales y estimados pueden variar en las búsquedas ejecutadas con herramientas de eDiscovery en Office 365. '
-ms.openlocfilehash: dfa6895f464e1a10f30bd642ef6b11e0869a7e5d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091743"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595255"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos Estimado y real en Office 365
 
@@ -59,7 +61,7 @@ Estos son algunos de los motivos de estas diferencias:
     
     Al usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento, tiene la opción de incluir elementos sin indexar en la estimación de la búsqueda. El número de elementos sin indexar devueltos por la búsqueda se muestra en el panel de detalles junto con los demás resultados de búsqueda estimados. Los elementos sin indexar también se incluirán en el tamaño total de los resultados de búsqueda estimados. Al exportar los resultados de la búsqueda, tiene la opción de incluir o no los elementos no indexados. La forma en que se configuran estas opciones puede dar lugar a diferencias entre los resultados de búsqueda reales y estimados que se descargan. 
     
-- **Exportar los resultados de una búsqueda de contenido que incluya todas las ubicaciones de contenido** : Si la búsqueda desde la que está exportando resultados es una búsqueda de todas las ubicaciones de contenido de la organización, solo los elementos sin indexar de las ubicaciones de contenido que contienen se exportarán los elementos que coinciden con los criterios de búsqueda. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Sin embargo, los elementos no indexados de todas las ubicaciones de contenido (incluso los que no contienen elementos que coinciden con la consulta de búsqueda) se incluirán en los resultados de búsqueda estimados. 
+- **Exportar los resultados de una búsqueda de contenido que incluya todas las ubicaciones de contenido** : Si la búsqueda desde la que está exportando resultados es una búsqueda de todas las ubicaciones de contenido de la organización, se exportarán solo los elementos sin indexar de las ubicaciones de contenido que contienen elementos que coinciden con los criterios de búsqueda. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Sin embargo, los elementos no indexados de todas las ubicaciones de contenido (incluso los que no contienen elementos que coinciden con la consulta de búsqueda) se incluirán en los resultados de búsqueda estimados. 
     
     Como alternativa, si la búsqueda que está exportando los resultados de ubicaciones de contenido específicas incluidas, los elementos sin indexar (que no se excluyen por los criterios de búsqueda) de todas las ubicaciones de contenido especificadas en la búsqueda se exportarán. En este caso, el número estimado de elementos sin indexar y el número de elementos no indexados que se han exportado realmente deben ser iguales.
     

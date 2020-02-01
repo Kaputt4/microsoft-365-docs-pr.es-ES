@@ -1,5 +1,7 @@
 ---
 title: Crear una consulta para buscar datos confidenciales almacenados en los sitios
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la prevención de pérdida de datos (DLP) en SharePoint Online, puede detectar documentos que contengan datos confidenciales en todo el espacio empresarial. Una vez detectados los documentos, puede trabajar con los propietarios de documentos para proteger los datos. Este tema puede ayudarle a formar una consulta para buscar datos confidenciales.
-ms.openlocfilehash: 66cf1f5c4072422c3de8572a5bf4b6f39755cff3
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: e3750ee69a197de5e7e5c0ac9346124568b8d5f5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823652"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594551"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Crear una consulta para buscar datos confidenciales almacenados en los sitios
 
@@ -74,7 +76,7 @@ En los ejemplos siguientes se usan diferentes tipos, propiedades y operadores de
 
 No todas las consultas son iguales. En la siguiente tabla, se proporcionan ejemplos de consultas que no funcionan con DLP en SharePoint y se describe por qué.
   
-|**Consulta no compatible**|**Reason**|
+|**Consulta no compatible**|**Motivo**|
 |:-----|:-----|
 | `SensitiveType:"Credit Card Number|.."` <br/> |Debe agregar, al menos, un número.  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"NotARule" no es un nombre de tipo confidencial válido. Solo los nombres del [inventario de tipos de información confidencial](https://go.microsoft.com/fwlink/?LinkID=509999) funcionan en las consultas de DLP.  <br/> |

@@ -1,5 +1,7 @@
 ---
 title: Configurar un servicio de EOP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Este tema explica cómo configurar Microsoft Exchange Online Protection (EOP). Si ha llegado hasta aquí desde el asistente de dominios de Office 365, regrese al asistente para dominios de Office 365 si no desea usar Exchange Online Protection. Si está buscando más información sobre cómo configurar los conectores, consulte Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 4cd7d6e82c07d0b5a942427c947181b2d4e80c37
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 135f3ce2d966c2c2918199f4680678031d9dc8d4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970116"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598307"
 ---
 # <a name="set-up-your-eop-service"></a>Configurar un servicio de EOP
 
@@ -70,7 +72,7 @@ Después de configurar los conectores, espere 72 horas para que las actualizacio
 
 Para asegurarse de que el correo no deseado se enrute correctamente a la carpeta de correo no deseado de cada usuario, debe realizar varios pasos de configuración. Los pasos se proporcionan [para asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-Si no desea mover mensajes a la carpeta de correo no deseado de cada usuario, puede elegir otra acción si modifica las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
+Si no desea mover mensajes a la carpeta de correo no deseado de cada usuario, puede elegir otra acción si modifica las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, consulte [Configure sus políticas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Paso 6: usar el centro de administración de Microsoft 365 para apuntar el registro MX a EOP
 

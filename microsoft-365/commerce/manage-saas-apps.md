@@ -7,16 +7,18 @@ ms.sitesec: library
 ms.pagetype: ''
 search.appverid: MET150
 author: trudyha
+f1.keywords:
+- NOCSH
 ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: 047c93dd6dbeeb1e55bfc22b337f42870f34e104
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 6473fefc0db3b21b2bf6ed5820d2d48018b45264
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753559"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594681"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administrar suscripciones de aplicaciones de terceros para la organización
 
@@ -66,7 +68,7 @@ Los administradores administran aplicaciones de terceros en dos ubicaciones: el 
 ### <a name="app-status"></a>Estado de la aplicación
 Una vez activada, la aplicación permanece activa a menos que se cancele, expire o si el pago no se mantiene actualizado. Estos eventos cambian el estado de la aplicación a deshabilitado. Una vez que una aplicación está deshabilitada, no se puede reactivar. Debe comprar otra copia de la aplicación para seguir utilizándola.
 
-| Centro de administración de 365 de Microsoft | Portal del publicador de aplicaciones |
+| Centro de administración de Microsoft 365 | Portal del publicador de aplicaciones |
 | --- | --- |
 | Cambiar la cantidad de licencias <br> Administrar la forma de pago de la factura <br> Administrar la forma de pago de la factura <br> Cambiar el método de pago (tarjeta de crédito) <br> Ver factura <br> Cancelar la suscripción a la aplicación | Configurar la aplicación (una vez por cada aplicación) <br> Asignar licencias a usuarios <br> Soporte técnico |
 

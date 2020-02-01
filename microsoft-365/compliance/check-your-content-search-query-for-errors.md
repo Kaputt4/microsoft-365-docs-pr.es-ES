@@ -1,5 +1,7 @@
 ---
 title: Comprobar errores en la consulta de búsqueda de contenido
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Antes de ejecutar la búsqueda, compruebe si hay errores y errores tipográficos en la consulta de palabras clave para la búsqueda de contenido, por ejemplo, caracteres no admitidos y operadores booleanos en minúsculas. Si encontramos un error, sugerimos una consulta revisada.
-ms.openlocfilehash: 1d2c9a9f3e2204fa65fe29c9adaffe818d2f7a4c
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633997"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595927"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Comprobar errores en la consulta de búsqueda de contenido
 

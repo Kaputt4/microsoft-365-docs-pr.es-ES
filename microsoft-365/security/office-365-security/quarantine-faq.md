@@ -1,5 +1,7 @@
 ---
 title: Preguntas más frecuentes sobre la cuarentena
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospedada.
-ms.openlocfilehash: d275a919e58d2a908fb10d4dff412ebe0859662f
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: b4112bf785a6ee2f4c833ab08d2c199388585093
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021846"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598667"
 ---
 # <a name="quarantine-faq"></a>Preguntas más frecuentes sobre la cuarentena
 

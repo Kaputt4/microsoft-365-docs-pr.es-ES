@@ -1,5 +1,7 @@
 ---
 title: Buscar datos en una investigación
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcd7f3f38f53ef22fc50823f3d2e3564af333431
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 62d42c29182a81cfa133c5d8863add56aba29be3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37091604"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597557"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Buscar datos en una investigación
 
@@ -27,7 +29,7 @@ En la ficha **Buscar** de una investigación de datos, puede buscar datos confid
 
 Después de ejecutar una búsqueda, puede ver las estadísticas de los elementos devueltos por la búsqueda, como las ubicaciones de contenido que tienen la mayoría de los elementos que coinciden con la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados. Una vez que haya identificado el conjunto de documentos que se van a investigar, puede Agregar los resultados de la búsqueda a un conjunto de evidencias para procesarlos y analizarlos.
 
-## <a name="create-a-search"></a>Create a search
+## <a name="create-a-search"></a>Crear una búsqueda
 
 1. En una investigación, haga clic en la ficha **búsquedas** y, a continuación, haga clic en **nueva búsqueda**. 
 

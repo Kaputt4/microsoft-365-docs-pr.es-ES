@@ -4,15 +4,17 @@ description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a6397f1c78bb15e198ed75be50c51953b049ed68
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074701"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596567"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el escritorio administrado por Microsoft
 
@@ -39,10 +41,10 @@ Tenga en cuenta que la dirección URL del escritorio administrada de Microsoft s
 
 Servicio de Microsoft  | Direcciones URL necesarias en la lista de permitidos 
 --- | --- | ---
-Escritorio administrado por Microsoft | prod-mwaas-services-customerapi.azurewebsites.net
+Escritorio administrado de Microsoft | prod-mwaas-services-customerapi.azurewebsites.net
 Obtener ayuda | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
 Asistencia rápida | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
-Asistente para soporte y recuperación de Microsoft para Office 365 | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
+Asistente para soporte y recuperación de Office 365 de Microsoft | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
  
 
 ### <a name="endpoints-allowed---other-microsoft-products"></a>Extremos permitidos: otros productos de Microsoft

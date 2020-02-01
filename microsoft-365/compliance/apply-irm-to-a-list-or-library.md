@@ -1,5 +1,7 @@
 ---
 title: Aplicar Information Rights Management (IRM) a una lista o biblioteca
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Puede usar Information Rights Management (IRM) para ayudar a controlar y proteger los archivos que se descargan de listas o bibliotecas.
-ms.openlocfilehash: cd970f5e89a08de133511c99b8209b389f32cd87
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256817"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596087"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicar Information Rights Management (IRM) a una lista o biblioteca
 

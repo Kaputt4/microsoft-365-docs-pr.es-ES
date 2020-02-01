@@ -1,5 +1,7 @@
 ---
 title: Crear una directiva DLP para proteger documentos con FCI u otras propiedades
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Muchas organizaciones disponen de un proceso para identificar y clasificar información confidencial mediante las propiedades de clasificación en la infraestructura de clasificación de archivos (FCI) de Windows Server, las propiedades del documento en SharePoint o las propiedades del documento aplicadas por un sistema de terceros. Si esto describe su organización, puede crear una directiva DLP en Office 365 que reconozca las propiedades que la FCI de Windows Server u otro sistema ha aplicado a documentos, de modo que se pueda aplicar la directiva DLP en documentos de Office con una FCI específica u otros valores de propiedad.
-ms.openlocfilehash: 286a66968727737c906ba24ac900eacd7732276e
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 1ae70571817de1df3a48b38a44da1ed1e3695750
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38687754"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597707"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Crear una directiva DLP para proteger documentos con FCI u otras propiedades
 
@@ -129,7 +131,7 @@ Para detectar contenido con esa propiedad en todas partes, tal vez le convenga s
 > [!CAUTION]
 > Volver a indexar un sitio puede provocar una carga masiva en el sistema de búsqueda. No vuelva a indizar el sitio a menos que su escenario lo requiera absolutamente. 
   
-Para obtener más información, consulte [solicitar manualmente el rastreo y la nueva indización de un sitio, una biblioteca o una lista](https://go.microsoft.com/fwlink/p/?LinkID=627457).
+Para obtener más información, vea [Solicitar manualmente el rastreo y una nueva indexación de un sitio, una biblioteca o una lista](https://go.microsoft.com/fwlink/p/?LinkID=627457).
   
 ### <a name="re-index-a-site-optional"></a>Volver a indexar un sitio (opcional)
 
@@ -141,9 +143,9 @@ Para obtener más información, consulte [solicitar manualmente el rastreo y la 
 
 - [Información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)
     
-- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
+- [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
     
-- [Enviar notificaciones y mostrar sugerencias para directivas DLP](use-notifications-and-policy-tips.md)
+- [Enviar notificaciones y mostrar sugerencias de directivas para directivas DLP](use-notifications-and-policy-tips.md)
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     

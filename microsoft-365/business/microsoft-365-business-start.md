@@ -1,5 +1,7 @@
 ---
 title: Introducción a Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Aprenda a configurar Microsoft 365 Business.
-ms.openlocfilehash: 32bb30208083c4f62dd449290a7c9f5d8c725631
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: a353e39b824bae702fa015b0c7d3dd7e6416454c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831421"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593729"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Introducción a Microsoft 365 Business
 
@@ -61,7 +63,7 @@ Vea este vídeo para obtener información general sobre la configuración de Mic
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1: configurar Microsoft 365 Business (Administrador)
@@ -103,10 +105,10 @@ Si conserva un Active Directory local que contiene algunos recursos locales (com
     
 - Como administrador de Microsoft 365 Business, tiene acceso a nuestro equipo de soporte técnico al cliente: ** [póngase en contacto con el soporte técnico para productos empresariales: ayuda para administradores](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Documentación y recursos de Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
 [Administrar microsoft 365 Business](manage.md)[migrar a Microsoft 365 Business](migrate-to-microsoft-365-business.md)
 
-[Vídeos de aprendizaje para empresas de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

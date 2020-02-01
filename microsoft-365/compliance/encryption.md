@@ -1,5 +1,7 @@
 ---
 title: Cifrado en Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Con Office 365, el contenido está cifrado en reposo y en tránsito con el cifrado, los protocolos y las tecnologías más seguros disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: e63eb239f37f5f68da05f90998baf5bf6201fb71
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b16c3c4e71a3898acff0d23848b2fba185836729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38687698"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593181"
 ---
 # <a name="encryption-in-office-365"></a>Cifrado en Office 365
 
@@ -57,7 +59,7 @@ Con Office 365, hay varias capas y tipos de cifrado que funcionan conjuntamente 
 
 Office 365 proporciona soluciones administradas por Microsoft para el cifrado de volúmenes, el cifrado de archivos y el cifrado de buzones en Office 365. Además, Office 365 proporciona soluciones de cifrado que puede administrar y controlar. Estas soluciones de cifrado se basan en Azure.
   
-Para obtener más información, consulte los siguientes recursos:
+Para obtener más información, vea los siguientes recursos:
   
 - [¿Qué es Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
@@ -81,4 +83,4 @@ Para obtener más información, consulte los siguientes recursos:
 
 [Planeación de las capacidades de protección de la información y la seguridad de Office 365](plan-for-security-and-compliance.md)
 
-[Las diez formas principales de proteger los planes de negocio de Office 365 y Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[Las 10 mejores formas de proteger los planes de Office 365 y Microsoft 365 Empresa](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)

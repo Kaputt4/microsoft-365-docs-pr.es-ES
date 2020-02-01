@@ -1,7 +1,9 @@
 ---
 title: Administración del ciclo de vida de los documentos de producto almacenados en SharePoint Online mediante etiquetas de retención
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Este escenario de solución muestra cómo administrar el ciclo de vida de los documentos relacionados con el producto y almacenados en SharePoint Online mediante las etiquetas de retención de Office 365. Esto se lleva a cabo con el uso de metadatos del documento para clasificar el contenido y, en concreto, al aplicar automáticamente las etiquetas de retención de Office 365 y configurar la retención basada en eventos.
-ms.openlocfilehash: 3c9afd05fd4f59a5136ab12dbd7558ade3073e43
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 7e0c688502922903cf2c17345713579bf04cc55a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39638084"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596377"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Administración del ciclo de vida de documentos de SharePoint con etiquetas de retención
 
@@ -278,82 +280,38 @@ En este escenario, usamos el flujo siguiente para desencadenar el evento:
 
 ![Configuración del flujo que activará el evento](media/SPRetention24.png)
 
-Para crear este flujo, parta de un conector de SharePoint y seleccione el desencadenador **Cuando se crea o modifica un elemento**. Especifique la dirección del sitio y el nombre de la lista y agregue una condición basada en que el valor de la columna de lista **En producción** se establezca en **No** (o que sea igual a falso en la tarjeta condicional). Después, agregue una acción basada en la plantilla HTTP integrada. Use los valores de la tabla siguiente para configurar la acción HTTP. Puede copiar los valores de las propiedades URI y Cuerpo de la tabla siguiente y pegarlos en la plantilla.
+Para crear este flujo, parta de un conector de SharePoint y seleccione el desencadenador **Cuando se crea o modifica un elemento**. Especifique la dirección del sitio y el nombre de la lista y agregue una condición basada en que el valor de la columna de lista **En producción** se establezca en **No** (o que sea igual a falso en la tarjeta condicional). Después, agregue una acción basada en la plantilla HTTP integrada. Use los valores de la sección siguiente para configurar la acción HTTP. Puede copiar los valores de las propiedades URI y Body de la sección siguiente y pegarlos en la plantilla.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parámetro</strong></th>
-<th><strong>Valor</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Método</td>
-<td>PUBLICAR</td>
-<tr class="even">
-<td>URI</td>
-<td><a href="https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Encabezados</td>
-<td>Clave = Content-Type, valor = application/atom+xml</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Cuerpo</td>
-<td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
-<p>&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</p>
-<p>&lt;content type='application/xml'&gt;</p>
-<p>&lt;m:properties&gt;</p>
-<p>&lt;d:Name&gt;Cese de producción @{triggerBody()?['Product_x0020_Name']?['Value']}&lt;/d:Name&gt;</p>
-<p>&lt;d:EventType&gt;Cese de producción&lt;/d:EventType&gt;</p>
-<p>&lt;d:SharePointAssetIdQuery&gt;ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}&quot;&lt;/d:SharePointAssetIdQuery&gt;</p>
-<p>&lt;d:EventDateTime&gt;@{formatDateTime(utcNow(),'yyyy-MM-dd')}&lt;/d:EventDateTime&gt;</p>
-<p>&lt;/m:properties&gt;</p>
-<p>&lt;/content&gt;</p>
-<p>&lt;/entry&gt;</p></td>
-<td></td>
-</tr>
+- **Method**: POST
+- **URI**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+- **Body**:
 
-</tbody>
-</table>
+```HTML
+<?xml version='1.0' encoding='utf-8' standalone='yes'>
+<entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
+<category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
+<updated>9/9/2017 10:50:00 PM</updated>
+<content type='application/xml'>
+<m:properties>
+<d:Name>Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}</d:Name>
+<d:EventType>Product Cessation&lt;</d:EventType>
+<d:SharePointAssetIdQuery>ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}<d:SharePointAssetIdQuery>
+<d:EventDateTime>@{formatDateTime(utcNow(),'yyyy-MM-dd')}</d:EventDateTime>
+</m:properties>
+</content&gt>
+</entry>
+```
 
-En la tabla siguiente se describen los parámetros de la propiedad Body de la acción que se deben configurar específicamente para este escenario. 
+En la sección siguiente se describen los parámetros de la propiedad *Body* de la acción que se deben configurar específicamente para este escenario.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parámetro</strong></th>
-<th><strong>Descripción</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nombre</td>
-<td>Este parámetro especifica el nombre del evento que se creará en el centro de seguridad y cumplimiento. Para este escenario, el nombre es "Cese de producción xxx", donde xxx es el valor de la propiedad administrada NombreProducto que hemos creado anteriormente. </th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EventType</td>
-<td>El valor de este parámetro corresponde al tipo de evento al que se aplicará el evento creado. Este tipo de evento se definió al crear la etiqueta de retención. Para este escenario, el tipo de evento es "Cese de producción".</td>
-</tr>
-<tr class="even">
-<td>SharePointAssetIdQuery</td>
-<td>Este parámetro define el Id. de activo del evento. La retención basada en eventos necesita un identificador único para el documento. Podemos usar Id. de activos para identificar los documentos a los que se aplica un evento determinado, o bien, como se hace para este escenario, una columna de metadatos, nuestro Nombre del producto. Para ello, debemos crear una nueva propiedad administrada llamada NombreProducto que pueda usarse en la consulta KQL (también podíamos haber usado RefinableString00 en lugar de crear una nueva propiedad administrada). También necesitamos asignar esta nueva propiedad administrada a la propiedad rastreada ows_Product_x0020_Name. Esta es una captura de pantalla de esta propiedad administrada.
+- **Name**: este parámetro especifica el nombre del evento que se creará en el centro de seguridad y cumplimiento. Para este escenario, el nombre es "Cese de producción xxx", donde xxx es el valor de la propiedad administrada NombreProducto que hemos creado anteriormente.
+- **EventType**: el valor de este parámetro corresponde al tipo de evento al que se aplicará el evento creado. Este tipo de evento se definió al crear la etiqueta de retención. Para este escenario, el tipo de evento es "Cese de producción".
+- **SharePointAssetIdQuery**: este parámetro define el Id. de activo del evento. La retención basada en eventos necesita un identificador único para el documento. Podemos usar Id. de activos para identificar los documentos a los que se aplica un evento determinado, o bien, como se hace para este escenario, una columna de metadatos, nuestro Nombre del producto. Para ello, debemos crear una nueva propiedad administrada llamada NombreProducto que pueda usarse en la consulta KQL (también podíamos haber usado RefinableString00 en lugar de crear una nueva propiedad administrada). También necesitamos asignar esta nueva propiedad administrada a la propiedad rastreada ows_Product_x0020_Name. Esta es una captura de pantalla de esta propiedad administrada.
 
-<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /></td>
-</tr>
-<tr class="odd">
-<td>EventDateTime</td>
-<td>Este parámetro define la fecha en la que se produce el evento. Use el formato de fecha actual: <strong>formatDateTime(utcNow(),'aaaa-MM-dd'<strong>)</strong></td>
-</tr>
-</tbody>
-</table>
+    ![Propiedad administrada de retención](media/SPRetention25.png)
+
+- **EventDateTime**: este parámetro define la fecha en la que se produce el evento. Use el formato de fecha actual: *formatDateTime(utcNow(),'aaaa-MM-dd'*)
 
 ### <a name="putting-it-all-together"></a>En conclusión
 
@@ -390,9 +348,3 @@ En la captura de pantalla anterior, también podemos ver que existe otra propied
 ## <a name="summary"></a>Resumen
 
 Este artículo muestra un escenario de administración de documentos donde aplicamos automáticamente una etiqueta de retención basada en una columna de sitio en SharePoint. Después, se utiliza la retención basada en eventos y Microsoft Flow para activar automáticamente el inicio del periodo de retención en función de un evento externo.
-
-## <a name="credits"></a>Créditos
-
-Este escenario lo creó:
-
-Frederic Lapierre<br/>Consultor principal de Microsoft Services

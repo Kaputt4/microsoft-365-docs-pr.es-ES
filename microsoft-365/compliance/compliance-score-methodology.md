@@ -1,5 +1,7 @@
 ---
 title: Cálculo de puntuación de cumplimiento
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo la puntuación de cumplimiento de Microsoft calcula una puntuación personalizada en función de las acciones realizadas para enfrentarse a los riesgos y mejorar la postura de cumplimiento.
-ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 1ee9410e3b40a8180d768945a643d3e52c29046b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515581"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596247"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Cálculo de la puntuación de cumplimiento de Microsoft (vista previa)
 
@@ -80,8 +82,8 @@ Cada control tiene un valor asignado en la puntuación de cumplimiento según el
 |:-----|:-----|
 | Obligatorio de prevención | ,27 |
 | Discrecional preventivo | 9  |
-| Detective obligatorio | 3 |
-| Discrecionales de detectives | 1 |
-| Obligatorio de corrección | 3 |
-| Discrecionales correctivas | 1 |
+| Detective obligatorio | 3  |
+| Discrecionales de detectives | 1  |
+| Obligatorio de corrección | 3  |
+| Discrecionales correctivas | 1  |
   

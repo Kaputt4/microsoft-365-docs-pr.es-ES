@@ -1,5 +1,7 @@
 ---
 title: Información general de configuración de Microsoft 365 para las campañas
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Información general de configuración de Microsoft 365 para las campañas
-ms.openlocfilehash: 882ca516d0e06658e24f675d5a1fe2b21a3c98b3
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: cca8866241a3759c022a362d39f7b208dff72580
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772337"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594178"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Configurar Microsoft 365 para las campañas
 
@@ -54,7 +56,7 @@ Los usuarios tendrán que realizar unos minutos para configurar los dispositivos
 Para configurar los dispositivos de usuario: 
 1. Cada usuario [configura sus dispositivos móviles](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json). 
 2. Para los dispositivos no administrados, los usuarios configuran sus [PCS y Mac](m365-campaigns-protect-pcs-macs.md). Para el personal clave, le recomendamos que use los [dispositivos administrados](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) para una protección aún mejor. Para todos los dispositivos, querrá configurar la [autenticación multifactor](m365-campaigns-multifactor-authenication.md). 
-3. Todos los usuarios deben saber cómo protegerse a sí mismos y a su campaña aprendiendo sobre suplantaciones [de identidad (phishing) y otros tipos de ataques](m365-campaigns-phishing-and-attacks.md). Este [infografía](m365-campaigns-protect-campaign-infographic.md) también puede ayudar a los usuarios a comprender cómo ayudar a proteger la campaña de las amenazas en línea.
+3. Todos los usuarios deben saber cómo protegerse a sí mismos y a su campaña aprendiendo sobre [suplantaciones de identidad (phishing) y otros tipos de ataques](m365-campaigns-phishing-and-attacks.md). Este [infografía](m365-campaigns-protect-campaign-infographic.md) también puede ayudar a los usuarios a comprender cómo ayudar a proteger la campaña de las amenazas en línea.
 
 ## <a name="contact-support"></a>Contactar soporte
 

@@ -1,5 +1,7 @@
 ---
 title: Cómo se asignan las características de protección de Microsoft 365 Business a la configuración de Intune
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Obtenga información sobre cómo se asignan las características de protección de Microsoft 365 Business Map a la configuración de Intune. La suscripción le proporciona una licencia para modificar la configuración de Intune.
-ms.openlocfilehash: b7d87e9a174e942a6533ae034b4f4a551ae2159f
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: f8c28d5ee5c543e76e960b5c9f868048b91ee704
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633297"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593769"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Cómo se asignan las características de protección de Microsoft 365 Business a la configuración de Intune
 

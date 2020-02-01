@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37746556"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596958"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -190,7 +192,7 @@ Las directivas de protección de aplicaciones definen qué aplicaciones están p
 Cree una directiva para cada plataforma:
 - iOS
 - Android
-- Windows 10
+- Windows 10
 
 Para crear una nueva Directiva de protección de aplicaciones, inicie sesión en el portal de Microsoft Azure con sus credenciales de administrador y, a continuación, navegue a > **directivas de protección**de aplicaciones de **aplicaciones cliente**. Elija **crear Directiva**.
 
@@ -305,7 +307,7 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
+|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
 ||Contraseñas sencillas|Desbloquear||
 ||Tipo de contraseña|Valor predeterminado del dispositivo||
 ||Longitud mínima de la contraseña|6 ||
@@ -384,6 +386,6 @@ Para requerir el cumplimiento de todos los dispositivos:
 Al crear esta Directiva, no seleccione plataformas. Esto aplica los dispositivos compatibles.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Más información sobre recomendaciones de directivas para proteger el correo electrónico](secure-email-recommended-policies.md)

@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: d7e71eda9cf0750ce44a978dca742b43f2101d63
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f854a4ec72c01f49f12774617188610d753e7b40
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801265"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596637"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>Paso 5: implementar las características de seguridad de Windows 10 Enterprise
 
@@ -91,7 +93,7 @@ Puede realizar problemas básicos o proporcionar a Microsoft de forma opcional a
 
 
 <a name="windows10-sec-atp"></a>
-## <a name="microsoft-defender-advanced-threat-protection"></a>Protección contra amenazas avanzada de Microsoft Defender
+## <a name="microsoft-defender-advanced-threat-protection"></a>Protección contra amenazas avanzada de Microsoft Defender
 Microsoft defender ATP, que solo está disponible con el plan 365 E5 de Microsoft, es un servicio de seguridad que permite a los clientes empresariales detectar, investigar y responder a amenazas avanzadas en sus redes. Para obtener más información acerca de ATP de Microsoft defender, los requisitos mínimos y cómo puede administrar esta característica, consulte:
 
 * [ATP de Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
@@ -128,6 +130,6 @@ Es posible que se produzcan problemas durante la incorporación o al usar el pro
 * [Solución de problemas de incorporación](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
 * [Solución de problemas de ATP de Microsoft defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection)
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 [Criterios de salida de la infraestructura de Windows 10 Enterprise](windows10-exit-criteria.md)

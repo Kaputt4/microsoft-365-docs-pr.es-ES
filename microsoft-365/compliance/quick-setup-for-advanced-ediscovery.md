@@ -1,8 +1,11 @@
 ---
 title: Configuración rápida de eDiscovery avanzado de Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,23 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Obtenga información sobre cómo obtener acceso a eDiscovery avanzado de Office 365 desde el Centro de seguridad y cumplimiento de Office 365, así como revisar el flujo de trabajo típico para usar eDiscovery avanzado.  '
-ms.openlocfilehash: 6b73177a0bd98dfb0d9e2f9127e682911f82703f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6df2d68639f2be9f6ba38ea7211654058bc73035
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093204"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597677"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Configuración rápida de eDiscovery avanzado de Office 365
 
+> [!IMPORTANT]
+> Mientras seguimos invirtiendo en las versiones más recientes de Advanced eDiscovery, anunciamos la retirada de eDiscovery avanzado de Office 365 (también conocido como *eDiscovery avanzado v1.0*). Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+
 En esta sección de configuración, se muestra cómo un administrador de eDiscovery del Centro de seguridad y cumplimiento de Microsoft 365 puede empezar a usar eDiscovery avanzado. Se da por hecho un conocimiento práctico de ambas herramientas.
-  
-> [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>Obtener acceso a un caso en eDiscovery avanzado
 
-Puede obtener acceso a eDiscovery avanzado desde el Centro de seguridad y cumplimiento. Necesita ser miembro de un caso de eDiscovery en el Centro de seguridad y cumplimiento para poder obtener acceso a un caso en eDiscovery avanzado. Para obtener instrucciones sobre cómo asignar permisos de casos de eDiscovery y agregar usuarios a un caso de eDiscovery, vea [Administrar casos de eDiscovery en Office 365](manage-ediscovery-cases.md). 
+
+Puede obtener acceso a eDiscovery avanzado desde el Centro de seguridad y cumplimiento. Necesita ser miembro de un caso de eDiscovery en el Centro de seguridad y cumplimiento para poder obtener acceso a un caso en eDiscovery avanzado. Para obtener instrucciones sobre cómo asignar permisos de casos de eDiscovery y agregar usuarios a un caso de eDiscovery, vea [Administrar casos de eDiscovery en Office 365](ediscovery-cases.md). 
   
 Para ir a un caso en eDiscovery avanzado: 
   

@@ -1,5 +1,7 @@
 ---
 title: Novedades en el centro de cumplimiento de Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: brendonb
 author: brendonb
 manager: laurawi
@@ -15,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 5d9a4dbd1339fdcf44d1169e5dedc4ea5e0a9f09
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 78c2d2da6c8925e86bcba6c498682b72c9292922
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515861"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597187"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -49,7 +51,7 @@ Este es un resumen de las nuevas soluciones que encontrará. No deje de mirarlas
 > Estas soluciones se encuentran solo en el centro de cumplimiento de Microsoft 365. No se pueden administrar en el centro de seguridad & cumplimiento de Office 365.
 <br/>
 
-|**Nueva solución**|**Descripción**|**Obtener más información**|
+|**Nueva solución**|**Descripción**|**Más información**|
 |:-----|:-----|:-----|
 |Puntuación de cumplimiento de Microsoft (versión preliminar) <br/>|Basado en el [Administrador de cumplimiento](compliance-manager-overview.md), la puntuación de cumplimiento es una característica independiente con un diseño más sencillo y más fácil de entender que le ayuda a comprender y mejorar la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. <br/>|[Información general sobre la puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md)|
 |Catálogo de soluciones (versión preliminar) <br/>|El catálogo de soluciones es su único punto de partida para descubrir, aprender y comenzar rápidamente con nuestras soluciones de administración de riesgos y cumplimiento. El catálogo está organizado en tres categorías de cumplimiento, cada una de las cuales contiene detalles sobre las soluciones que conforman esa categoría. Las categorías incluyen protección de la información & gobernanza, administración de riesgos de Insider y respuesta de & de detección <br/>|[Información general sobre el catálogo de soluciones (versión preliminar)](microsoft-365-solution-catalog.md)|
@@ -65,7 +67,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 > Algunas características siguen estando disponibles únicamente en el centro de cumplimiento de & de seguridad de Office 365: estos se indican a continuación. Pero estamos trabajando para obtener una vista previa de estas en el centro de cumplimiento de Microsoft 365, así que Manténgase atento a las actualizaciones. 
 <br/>
 
-|**Característica**|**Centro de seguridad y cumplimiento de Office 365**|**Centro de cumplimiento de Microsoft 365**|**Obtener más información**|
+|**Característica**|**Centro de seguridad y cumplimiento de Office 365**|**Centro de cumplimiento de Microsoft 365**|**Más información**|
 |:-----|:-----|:-----|:-----|
 |eDiscovery avanzado|eDiscovery > eDiscovery avanzado <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > avanzado <br/> https://compliance.microsoft.com/advancedediscovery | [Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365](overview-ediscovery-20.md) |
 |Directivas de alerta|Alertas > directivas de alertas <br/> https://protection.office.com/alertpolicies |En este momento, las directivas de alertas se administran solo en el centro de cumplimiento de & de seguridad de Office 365. |[Directivas de alerta en el centro de seguridad y cumplimiento](alert-policies.md) |
@@ -98,13 +100,13 @@ Cuando configure el cifrado para una etiqueta de confidencialidad, ahora tiene d
 - Al aplicar la etiqueta a un **correo electrónico de Outlook**, los usuarios pueden exigir restricciones equivalentes a la opción no reenviar. Los destinatarios podrán leer el mensaje pero no reenviar, imprimir ni copiar el contenido.
 - Al aplicar la etiqueta a los **archivos de Word, PowerPoint y Excel**, a los usuarios se les pedirá que asignen permisos de acceso a determinados usuarios y grupos.
 
-[Obtener más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
+[Más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
 
 ## <a name="august-2019"></a>Agosto de 2019
 
 ### <a name="update-to-data-investigations"></a>Actualización a investigaciones de datos
 
-Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Obtener más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>Julio de 2019
 

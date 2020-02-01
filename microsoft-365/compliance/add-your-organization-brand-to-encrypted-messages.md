@@ -1,5 +1,7 @@
 ---
 title: Agregar la marca de organización a los mensajes cifrados
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Como administrador global de Office 365, puede aplicar la personalización de marca de su organización a los mensajes de correo electrónico cifrados de la organización y al contenido del portal de cifrado.
-ms.openlocfilehash: 118bf93f7bdcb7dc522f95978eb5bb4456e90d5b
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: b4712edd86099b1c382ef02ca54520b68a54614e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256747"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594031"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Agregar la marca de su organización a los mensajes cifrados
 
