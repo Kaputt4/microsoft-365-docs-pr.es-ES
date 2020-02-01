@@ -1,5 +1,7 @@
 ---
 title: Administrar grupos en EOP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: Puede usar Exchange Online Protection (EOP) para crear grupos habilitados para correo para una organización de Exchange. También puede usar EOP para definir o actualizar propiedades de grupo que especifiquen su pertenencia, las direcciones de correo electrónico y otros aspectos de los grupos.
-ms.openlocfilehash: dcc816118f36d5e451c459aa67bef638eb97dad9
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: ae4e0a8c39c97720cb51c0f5d7b69547258b11b7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866970"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598997"
 ---
 # <a name="manage-groups-in-eop"></a>Administrar grupos en EOP
 

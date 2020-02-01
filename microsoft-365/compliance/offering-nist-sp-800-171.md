@@ -1,10 +1,12 @@
 ---
 title: NIST SP 800 – 171
 description: Los servicios en la nube de Microsoft cumplen con las directrices de NIST SP 800 – 171 para proteger la información no clasificada controlada (CUI) en sistemas de información no federales.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a7967a4bd12f98f3654f2b5006568c868a7e134f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 070ec3977768d131e4e4d9c2f493e630a1a707c9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804023"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601897"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -40,7 +42,7 @@ Los requisitos de NIST SP 800 – 171 son un subconjunto de NIST SP 800-53, el e
 
 Cualquier entidad que procese o almacene CUI gubernamentales (instituciones de investigación, empresas de consultoría, contratistas de fabricación) debe cumplir con las rigurosas necesidades de NIST SP 800-171. Esta atestación significa que los servicios en la nube de Microsoft en el ámbito pueden acomodar a los clientes que quieran implementar cargas de trabajo de CUI con la certeza de que Microsoft tiene el total cumplimiento. Por ejemplo, todos los contratistas de DoD que procesan, almacenan o transmiten "información de defensa cubierta" mediante servicios en la nube de Microsoft en el ámbito de sus sistemas de información cumplen las cláusulas DFARS del Departamento de defensa de Estados Unidos que requieren el cumplimiento de la seguridad. requisitos de NIST SP 800 – 171.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)

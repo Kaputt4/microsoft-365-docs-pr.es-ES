@@ -1,5 +1,7 @@
 ---
 title: Retirada de herramientas de eDiscovery heredadas
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,18 +12,18 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Office 365 Advanced eDiscovery v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: 08f568a82096efb143ff5c9fd87011a3d3029e42
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210065"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600567"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas de eDiscovery heredadas
 
 A lo largo de los años, Microsoft ha ofrecido herramientas de eDiscovery que le permiten buscar, obtener una vista previa y exportar contenido de correo electrónico desde Exchange Online. Sin embargo, estas herramientas ya no ofrecen una forma efectiva de buscar contenido que no es de Exchange en otros servicios de Office 365, como SharePoint Online y Office 365 groups. Para solucionar esto, Microsoft ofrece otras herramientas de eDiscovery que le ayudarán a buscar una amplia variedad de contenido de Office 365. Y hemos trabajado duro para incorporar la funcionalidad de exhibición de documentos electrónicos más actual y eficaz en el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). Esto permite a las organizaciones responder a solicitudes de contenido legales, internas y de otro documento sobre muchos de los servicios de Office 365, incluido Exchange Online.
 
-Como resultado de esta nueva y mejorada funcionalidad de eDiscovery en el centro de cumplimiento de Microsoft 365, estamos retirando las siguientes características relacionadas con la exhibición de documentos electrónicos y la funcionalidad relacionada con la búsqueda de contenido de correo electrónico:
+Como resultado de esta nueva y mejorada funcionalidad de eDiscovery en el centro de cumplimiento de Microsoft 365, estamos retirando las siguientes características relacionadas con la exhibición de documentos electrónicos y la funcionalidad relacionada con la búsqueda de contenido de correo electrónico en Exchange Online y Office 365:
 
 - [Exhibición](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) de documentos electrónicos local y [conservaciones locales](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) en el centro de administración de Exchange.
 

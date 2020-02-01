@@ -1,10 +1,12 @@
 ---
 title: Ley de privacidad del consumidor de California (CCPA)
 description: Servicios de Microsoft y la ley de privacidad del consumidor de California (CCPA).
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 73c1d7be6da17ae29c6ea8423c879286714fe8f1
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 24217ed5782d14cc67277bc980e4a94b7bc904f5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558607"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601987"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>Ley de privacidad del consumidor de California (CCPA)
 
@@ -37,7 +39,7 @@ Para los clientes comerciales que hacen negocios en California, Microsoft actuar
 
 Tal y como se establece en el OST, Microsoft cumple con todas las leyes y regulaciones aplicables a la prestación de los servicios en línea, que incluirían la CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Operaciones de Azure dev
@@ -97,4 +99,4 @@ El CCPA requiere que los negocios regulados recopilen, transfieran y vendan info
 - [Introducción a la guía de CCPA](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [Solicitudes de interesados de datos y RGPD](gdpr-data-subject-requests.md)
 - [Preguntas y Respuestas: Ley de Privacidad del Consumidor de California (CCPA)](ccpa-faq.md)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

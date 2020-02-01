@@ -1,5 +1,7 @@
 ---
 title: Protección contra spam para el correo electrónico de Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la configuración y los filtros contra correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Office 365. ¿Obtengo mucho correo no deseado en Office 365? Puede personalizar los filtros de correo no deseado y la configuración de la Directiva contra correo no deseado.
-ms.openlocfilehash: 33a1415306dcfc635e6c5608f3834b79932d9420
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238537"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599867"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protección contra spam para el correo electrónico de Office 365
 

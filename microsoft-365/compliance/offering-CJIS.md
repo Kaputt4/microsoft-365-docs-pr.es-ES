@@ -1,10 +1,12 @@
 ---
 title: Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
 description: Microsoft Government Cloud Services cumple la Directiva de seguridad de los servicios de información de Justicia de Estados Unidos.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdaf19b59960745e32e00b6833cea5edfd6258a5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 97f769b763b5698dd664dee4ae8659999a62b078
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805413"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602617"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
 
@@ -41,7 +43,7 @@ Obtenga información sobre las ventajas de la Directiva de seguridad de CJIS en 
 
 Obtenga información sobre cómo acelerar la Directiva de seguridad de CJIS con nuestro proyecto de Azure Security and Compliance: [descargar las instrucciones de implementación de CJIS para Microsoft Government Cloud Services](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -82,7 +84,7 @@ La [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy) cubre l
 - [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy)
 - [CJIS de la Directiva de seguridad de la versión 5,3](https://aka.ms/cjis-backgrounder)
 - [Directrices de implementación de CJIS para el gobierno de Azure](https://aka.ms/cjisimplementationguidelines)
-- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/?linkid=2087246)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

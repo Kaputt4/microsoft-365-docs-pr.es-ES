@@ -1,5 +1,7 @@
 ---
 title: Qué buscan los tipos de información confidencial
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 9c3111069ff30784af5fe781200de5e770c79066
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: efd5d2f8003bd79620118a6a058576e5593699b1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38687921"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601217"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -31,7 +33,7 @@ La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cump
 
 9 dígitos, que pueden tener un patrón con o sin formato
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Con formato
 - Cuatro dígitos a partir de 0, 1, 2, 3, 6, 7 u 8
@@ -91,7 +93,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Ocho dígitos separados por puntos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos:
 - Dos dígitos
@@ -140,7 +142,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 De 6 a 10 dígitos con o sin número de sucursal bancaria de estado
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El número de cuenta tiene entre 6 y 10 dígitos.
 Número de sucursal bancaria de Australia:
@@ -203,7 +205,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve letras y dígitos: 
 
@@ -354,7 +356,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Entre 10 y 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Entre 10 y 11 dígitos:
 - el primer dígito está en el intervalo de 2 a 6
@@ -416,7 +418,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 Una letra seguida de siete dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una letra (no distingue entre mayúsculas y minúsculas) seguida de siete dígitos
 
@@ -487,7 +489,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Entre 8 y 9 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 8-9 dígitos que normalmente se presentan con espacios como sigue:
 - Tres dígitos 
@@ -572,7 +574,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 La cadena "DocumentDb" seguida de los caracteres y las cadenas que se describen en el patrón siguiente.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "DocumentDb"
 - Cualquier combinación de entre 3-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
@@ -624,7 +626,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 La cadena "Server", "Server" o "Data Source" seguida de los caracteres y las cadenas que se describen en el siguiente patrón, incluida la cadena "CloudApp. Azure.<!--no-hyperlink-->com "o" CloudApp. Azure.<!--no-hyperlink-->net "o" Database. Windows.<!--no-hyperlink-->net "y la cadena" Password "o" Password "o" pwd ".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "servidor", "servidor" o "origen de datos"
 - 0-2 caracteres de espacio en blanco
@@ -684,7 +686,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 La cadena "HostName" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluidas las cadenas "Azure-Devices.<!--no-hyperlink-->net "y" SharedAccessKey ".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "HostName"
 - 0-2 caracteres de espacio en blanco
@@ -744,7 +746,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 La cadena "userpwd =" seguida de una cadena alfanumérica.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "userpwd ="
 - Cualquier combinación de 60 letras minúsculas o dígitos
@@ -795,7 +797,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 La cadena "Redis. Cache. Windows.<!--no-hyperlink-->net "seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluida la cadena" Password "o" pwd ".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "Redis. Cache. Windows.<!--no-hyperlink-->ADO.net
 - Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
@@ -850,7 +852,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 La cadena "SIG" seguida de los caracteres y las cadenas que se describen en el patrón siguiente.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "SIG"
 - 0-2 caracteres de espacio en blanco
@@ -884,7 +886,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 La cadena "EndPoint" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluidas las cadenas "ServiceBus. Windows.<!--no-hyperlink-->net "y" SharedAccesKey ".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "EndPoint"
 - 0-2 caracteres de espacio en blanco
@@ -944,7 +946,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 La cadena "DefaultEndpointsProtocol" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluida la cadena "AccountKey".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "DefaultEndpointsProtocol"
 - 0-2 caracteres de espacio en blanco
@@ -1010,7 +1012,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 Cualquier combinación de 86 letras minúsculas o mayúsculas, dígitos, la barra diagonal (/) o el signo más (+), precedido o seguido por los caracteres descritos en el patrón siguiente.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - 0-1 del símbolo mayor que (>), apóstrofe ('), signo de igual (=), Comillas (") o almohadilla (#)
 - Cualquier combinación de 86 caracteres que sean letras minúsculas o mayúsculas, dígitos, la barra diagonal (/) o el signo más (+)
@@ -1041,7 +1043,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 11 dígitos más delimitadores
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos más delimitadores:
 - Seis dígitos y dos puntos con el formato AA.MM.DD para la fecha de nacimiento  
@@ -1104,7 +1106,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 11 dígitos incluido un dígito de control y que pueden tener o no formato
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Con formato
 - Tres dígitos 
@@ -1166,7 +1168,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 14 dígitos que incluyen un número de registro, número de sucursal y dígitos de comprobación, además de delimitadores
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 14 dígitos más delimitadores:
 - Dos dígitos 
 - Un punto  
@@ -1218,7 +1220,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Entidad jurídica 
 - Entidades jurídicas 
 - Estado de registro 
-- Empresa 
+- Negocio 
 - Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
@@ -1238,7 +1240,7 @@ Registro geral (formato anterior): nueve dígitos
 
 Registro de Identidade (RIC) (nuevo formato): 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Registro de Geral (formato antiguo):
 - Dos dígitos 
@@ -1294,7 +1296,7 @@ Cédula de Identidade identidad nacional identificador número de rregistro regi
 
 Siete o doce dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El número de una cuenta bancaria de Canadá contiene siete o doce dígitos.
 
@@ -1367,7 +1369,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 Varía según la provincia
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Varios patrones que cubren Alberta, British Columbia, Manitoba, New Brunswick, Terranova y Labrador, Nueva Escocia, Ontario, Isla del Príncipe Eduardo, Quebec y Saskatchewan
 
@@ -1584,7 +1586,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 10 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos
 
@@ -1630,7 +1632,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras mayúsculas seguidas por seis dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras mayúsculas seguidas por seis dígitos
 
@@ -1697,7 +1699,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos
 
@@ -1758,7 +1760,7 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
 - New Brunswick
 - Nova Scotia
 - Prince Edward Island
-- Canada
+- Canadá
    
 ## <a name="canada-social-insurance-number"></a>Número de seguridad social de Canadá
 
@@ -1766,7 +1768,7 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
 
 Nueve dígitos con guiones opcionales o espacios
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Con formato
 - Tres dígitos 
@@ -1849,7 +1851,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 7-8 dígitos más delimitadores, un dígito de control o una letra
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 7 u 8 dígitos más delimitadores:
 - 1 o 2 dígitos  
@@ -1911,7 +1913,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 18 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 18 dígitos:
 - Seis dígitos que son un código de dirección  
@@ -1968,7 +1970,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 16 dígitos que pueden ser formateados o sin formato (dddddddddddddddd) y deben pasar la prueba Luhn.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón muy complejo y robusto que detecta las tarjetas de todas las principales marcas en todo el mundo, incluidas Visa, MasterCard, tarjeta Discover, JCB, American Express, tarjetas regalo y tarjetas diner.
 
@@ -2212,7 +2214,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 Nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos consecutivos
 
@@ -2250,7 +2252,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
 - 10 dígitos 
@@ -2299,7 +2301,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve dígitos con barra diagonal (formato antiguo) 10 dígitos con barra diagonal (nuevo formato) opcional
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos (formato antiguo):
 - Nueve dígitos
@@ -2349,7 +2351,7 @@ Se supera la suma de comprobación.
 
 10 dígitos que contienen un guión
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos:
 - Seis dígitos en el formato DDMMAA que son la fecha de nacimiento  
@@ -2391,7 +2393,7 @@ Se supera la suma de comprobación.
 
 Dos letras seguidas de siete dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El patrón debe incluir todo lo siguiente:
 - Una letra (no distingue entre mayúsculas y minúsculas) de este conjunto de letras posibles: abcdefghjklmnprstux, que es un código de inscrito 
@@ -2428,7 +2430,7 @@ Ninguno
 
 16 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón muy complejo y robusto
 
@@ -2797,7 +2799,7 @@ Para obtener más información, vea [tipo de información confidencial de númer
 
 Seis dígitos y un carácter que indican un siglo, más tres dígitos y un dígito de control
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El patrón debe incluir todo lo siguiente:
 - Seis dígitos en el formato DDMMAA que son una fecha de nacimiento 
@@ -2849,7 +2851,7 @@ Palabras clave Keyword_finland_passport_number Passi de Passport
 
 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos con validación para descontar patrones similares como los números de teléfono franceses
 
@@ -2898,7 +2900,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos
 
@@ -2930,7 +2932,7 @@ Ninguno
 
 Nueve dígitos y letras
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos y letras:
 - Dos dígitos 
@@ -2987,11 +2989,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 15 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Debe coincidir uno de los dos patrones:
 - 13 dígitos seguidos de un espacio seguido de dos dígitos<br/>
-o bien
+o
 - 15 dígitos consecutivos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -3062,7 +3064,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 Combinación de 11 dígitos y letras
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos y letras (no distingue entre mayúsculas y minúsculas):
 - Un dígito o letra 
@@ -3204,7 +3206,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 10 dígitos o letras
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El patrón debe incluir todo lo siguiente:
 - El primer carácter es un dígito o una letra de este conjunto (C, F, G, H, J, K) 
@@ -3290,7 +3292,7 @@ Desde el 1 de noviembre de 2010: nueve letras y dígitos
 
 Desde el 1 de abril de 1987 hasta el 31 de octubre de 2010:10 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Desde el 1 de noviembre de 2010:
 - Una letra (no distingue entre mayúsculas y minúsculas) 
@@ -3337,7 +3339,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 Combinación de 7 u 8 letras y números más un guión
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Siete letras y números (formato antiguo):
 - Una letra (cualquier letra del alfabeto griego)  
@@ -3384,7 +3386,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Combinación de 8 o 9 letras y números, más paréntesis opcionales alrededor del carácter final
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Combinación de 8 o 9 letras:
 - 1 o 2 letras (no distingue entre mayúsculas y minúsculas)  
@@ -3466,7 +3468,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 10 letras o dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 letras o dígitos:
 - Cinco letras (no distingue entre mayúsculas y minúsculas)  
@@ -3507,7 +3509,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 12 dígitos que contienen espacios o guiones opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos:
 - Cuatro dígitos 
@@ -3553,7 +3555,7 @@ Se supera la suma de comprobación.
 
 16 dígitos que contienen puntos opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 16 dígitos:
 - Código de la provincia de dos dígitos  
@@ -3606,7 +3608,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 Código de país (dos letras) más dígitos de control (dos dígitos), más el número IBAN (hasta 30 caracteres)
 
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El patrón debe incluir todo lo siguiente:
 
@@ -3652,7 +3654,7 @@ Patrón complejo que representa las versiones con formato (con puntos) y sin for
 #### <a name="ipv6"></a>Protocolo
  Patrón complejo que representa el formato de números IPv6 (que incluye signos de dos puntos)
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -3712,7 +3714,7 @@ Para IPv6, una directiva DLP está segura al 95% de que este tipo de informació
 
 Dictionary
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Palabra clave
 
@@ -3754,7 +3756,7 @@ Cualquier término del Diccionario de palabras clave Dictionary_icd_10_codes, qu
 
 Dictionary
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Palabra clave
 
@@ -3799,7 +3801,7 @@ Formato antiguo (hasta el 31 de diciembre de 2012):
 Nuevo formato (1 de enero de 2013 y posterior):
 - Siete dígitos seguidos por dos letras
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Formato antiguo (hasta el 31 de diciembre de 2012):
 - Siete dígitos  
@@ -3866,7 +3868,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 13 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Con formato
 - Dos dígitos 
@@ -3915,7 +3917,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos consecutivos
 
@@ -3955,7 +3957,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Una combinación de 10 letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - Una combinación de 10 letras y dígitos:
 - Una letra (no distingue entre mayúsculas y minúsculas) 
@@ -3998,7 +4000,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Siete u ocho dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Número de cuenta bancaria:
 - Siete u ocho dígitos
@@ -4113,7 +4115,7 @@ Otemachi
 
 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos consecutivos
 
@@ -4173,7 +4175,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras seguidas de siete dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras (no distingue entre mayúsculas y minúsculas) seguidas por siete dígitos
 
@@ -4212,7 +4214,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos consecutivos
 
@@ -4259,7 +4261,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 De 7 a 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 7-12 dígitos:
 - Cuatro dígitos 
@@ -4311,7 +4313,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 12 letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 letras y dígitos:
 - Dos letras (no distingue entre mayúsculas y minúsculas) 
@@ -4353,7 +4355,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 12 dígitos que contienen guiones opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos:
 - Seis dígitos en el formato DDMMAA que son la fecha de nacimiento  
@@ -4419,7 +4421,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 8 o 9 dígitos que contienen espacios opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 8 o 9 dígitos:
 - Tres dígitos 
@@ -4469,7 +4471,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 Tres letras, un espacio (opcional) y cuatro dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Tres letras (no distingue entre mayúsculas y minúsculas), un espacio (opcional) y cuatro dígitos
 
@@ -4511,7 +4513,7 @@ Keyword_nz_terms
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
 - Seis dígitos en el formato DDMMAA que son la fecha de nacimiento  
@@ -4563,7 +4565,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 12 dígitos separados por guiones
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos:
 - Cuatro dígitos 
@@ -4608,7 +4610,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Tres letras y seis dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Tres letras (no distingue entre mayúsculas y minúsculas) seguidas por seis dígitos
 
@@ -4651,7 +4653,7 @@ Se supera la suma de comprobación.
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos consecutivos
 
@@ -4690,7 +4692,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 Dos letras y siete dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras (no distingue entre mayúsculas y minúsculas) seguidas por siete dígitos
 
@@ -4731,7 +4733,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 Ocho dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos
 
@@ -4771,7 +4773,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 10 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos consecutivos
 
@@ -4813,7 +4815,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - Nueve letras y dígitos:
 - La letra "F", "G", "S", o "T" (no distingue entre mayúsculas y minúsculas)  
@@ -4867,7 +4869,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 13 dígitos que pueden contener espacios
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos:
 - Seis dígitos en el formato DDMMAA que son la fecha de nacimiento  
@@ -4911,7 +4913,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 13 dígitos que contienen un guión
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos:
 - Seis dígitos en el formato DDMMAA que son la fecha de nacimiento  
@@ -4965,7 +4967,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 11 o 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11-12 dígitos:
 - Dos dígitos 
@@ -5003,7 +5005,7 @@ Ninguno
 
 La cadena "User ID", "User ID", "UID" o "UserId" seguida de los caracteres y las cadenas que se describen en el patrón siguiente.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "User ID", "User ID", "UID" o "UserId"
 - Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
@@ -5079,7 +5081,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 10 o 12 dígitos y un delimitador opcional
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 o 12 dígitos y un delimitador opcional:
 - 2-4 dígitos (opcionales) 
@@ -5116,7 +5118,7 @@ No
 
 Ocho dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos consecutivos
 
@@ -5186,7 +5188,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Cuatro letras seguidas de 5 a 31 letras o dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Cuatro letras seguidas de 5-31 letras o dígitos:
 - Código del banco de cuatro letras (no distingue entre mayúsculas y minúsculas) 
@@ -5256,7 +5258,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Una letra  seguida de nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una letra seguida de nueve dígitos:
 - Una letra (en inglés, no distingue mayúsculas de minúsculas) 
@@ -5310,7 +5312,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Número de pasaporte biométrico: nueve dígitos
 - Número de pasaporte no biométrico: nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 Número de pasaporte biométrico:
 - El dígito "3"  
 - Ocho dígitos
@@ -5358,7 +5360,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 10 letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 letras y dígitos:
 - Dos letras (no distingue entre mayúsculas y minúsculas)  
@@ -5395,7 +5397,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
  
 - Tarjeta de identificación 
 - Certificado de residente extranjero 
-- ARCOS 
+- ARC 
 - Certificado de residente en el área de Taiwán 
 - TARC 
 - 居留證 
@@ -5408,7 +5410,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 13 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos:
 - El primer dígito no es 0 ni 9 
@@ -5457,7 +5459,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos
 
@@ -5502,7 +5504,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Combinación de 18 letras y dígitos en el formato especificado
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 18 letras y dígitos:
 - Cinco letras (no distinguen entre mayúsculas y minúsculas) o el dígito "9" en lugar de una letra 
@@ -5558,7 +5560,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Dos letras seguidas por entre 1 y 4 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras (no distingue entre mayúsculas y minúsculas) seguidas por entre 1 y 4 números
 
@@ -5600,7 +5602,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 De 10 a 17 dígitos separados por espacios
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10-17 dígitos:
 - 3 o 10 dígitos 
@@ -5667,7 +5669,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 7 caracteres o 9 caracteres separados por espacios o guiones
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos patrones posibles:
 
@@ -5742,7 +5744,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos consecutivos
 
@@ -5794,7 +5796,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Entre 8 y 17 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Entre 8 y 17 dígitos consecutivos
 
@@ -5856,7 +5858,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 Depende del estado
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Depende del estado, por ejemplo, Nueva York:
 - Nueve dígitos con formato como DDD DDD DDD coincidirán.
@@ -6006,7 +6008,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 Nueve dígitos que empiezan con un "9" y contienen un "7" u "8" como cuarto dígito; se puede optar por un formato con espacios o guiones
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Con formato
 - El dígito "9" 
@@ -6102,7 +6104,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 > [!NOTE]
 > Si se ha emitido antes de mediados de 2011, el SSN tiene un formato seguro en aquellas partes del número que deben incluirse dentro de ciertos rangos para que sean válidas (pero no hay ninguna suma de comprobación).
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Cuatro funciones buscan SSN en cuatro patrones diferentes:
 - Func_ssn busca SSN con formato seguro anteriores a 2011 y formateados con guiones o espacios (ddd-dd-dddd O ddd dd dddd)

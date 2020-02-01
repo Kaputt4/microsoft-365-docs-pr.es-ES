@@ -1,5 +1,7 @@
 ---
 title: Cifrado en Microsoft Cloud
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Información general sobre el cifrado en la nube de Microsoft.
-ms.openlocfilehash: 1ca3d1711589ab2d65a27a8d1eeb6da265ce727b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11cce463cf953bd9f8ea0df61e3fe97b356608eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690998"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601827"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Cifrado en Microsoft Cloud
 
@@ -40,8 +42,8 @@ FIPS 140-2 es un estándar diseñado específicamente para validar módulos de p
 Microsoft certifica los módulos criptográficos subyacentes que se usan en nuestros servicios en la nube con cada nueva versión del sistema operativo Windows:
 
 - Azure y Azure U.S. Government
-- Dynamics 365 y Dynamics 365 U.S. Government
-- Office 365, Office 365 el gobierno de Estados Unidos y Office 365 para la defensa del gobierno de Estados Unidos
+- Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos
+- Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense
 
 El cifrado de los datos de cliente de Office 365 en reposo lo proporcionan varias tecnologías de servicio, como BitLocker, DKM, el cifrado de servicio de almacenamiento de Azure y el cifrado de servicios en Exchange Online, Skype empresarial, OneDrive para la empresa y SharePoint Online. Office 365 Service Encryption incluye una opción para usar las claves de cifrado administradas por el cliente que se almacenan en Azure Key Vault. Esta opción de clave administrada por el cliente, llamada [clave de cliente de Office 365](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697), está disponible para Exchange Online, SharePoint Online, Skype empresarial y OneDrive para la empresa.
 

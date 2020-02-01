@@ -1,6 +1,8 @@
 ---
 title: Investigar y responder automáticamente ante amenazas en Office 365
 keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzadas, amenazas, protección
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Empiece a usar la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967993"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598767"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Investigar y responder automáticamente ante amenazas en Office 365
 
@@ -30,7 +32,7 @@ Según su suscripción, la [protección contra amenazas avanzada de Office 365](
 - Para obtener información general sobre cómo funciona, consulte la [investigación y la respuesta automatizadas en Office 365](automated-investigation-response-office.md).
 
 > [!TIP]
-> ¿Tiene Microsoft 365 E5 o Microsoft 365 E3 junto con Identity & Threat Protection? Considere la posibilidad de probar la [investigación y respuesta automatizadas (Air) en la protección contra amenazas de Microsoft](../mtp/mtp-autoir.md).
+> ¿Tiene Microsoft 365 E5 o Microsoft 365 E3 junto con la protección de la identidad y contra amenazas? Considere la posibilidad de probar la [investigación y respuesta automatizadas (Air) en la protección contra amenazas de Microsoft](../mtp/mtp-autoir.md).
 
 Con las capacidades de investigación y respuesta automatizadas, cuando se desencadenan determinadas alertas, se inician una o más guías de seguridad y se inicia el proceso de investigación automatizada. Durante y después de un proceso de investigación automatizado, su equipo de seguridad puede hacer lo siguiente:
 
@@ -112,7 +114,7 @@ Use los siguientes recursos para configurar esto:
 |[Referencia de las API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)     |Puede usar la API de actividad de administración de Office 365 para recuperar información sobre las acciones y eventos de usuario, administrador, sistema y Directiva de los registros de actividad de Office 365 y Azure AD. Lea este artículo para obtener más información sobre cómo funciona.        |
 |[Esquema de la API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)     |Obtenga información general sobre el [esquema común](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) y el [esquema de investigación y respuesta de ATP y la investigación de amenazas de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) para obtener información sobre los tipos de datos específicos disponibles a través de la API de actividad de administración de Office 365.         |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Descubra cómo obtener acceso a AIR y ver los permisos necesarios](automated-investigation-response-office.md#how-to-get-air)
 - [Más información acerca de las alertas](../../compliance/alert-policies.md)

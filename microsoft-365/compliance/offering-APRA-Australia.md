@@ -1,10 +1,12 @@
 ---
 title: Autoridad de la reglamentación prudencial australiano (APRA)
 description: Microsoft Guidance para ayudar a los clientes de servicios financieros a cumplir con las normas de subcontratación de la autoridad de la normativa australiana prudencial.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a402b880778a1644d63dfcdbe73ecc96f61f5be
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e8e46ba396d3900da52886815a6ef01243d8f24
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805543"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602697"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autoridad de la reglamentación prudencial australiano (APRA)
 
@@ -49,7 +51,7 @@ Al confiar en nuestro enfoque integral para garantizar la seguridad de riesgos e
 
 Obtenga soporte práctico para mover datos y cargas de trabajo a Azure de acuerdo con las regulaciones de APRA: [descargar una lista de comprobación de cumplimiento para las instituciones financieras en Australia](https://aka.ms/microsoftaprachecklistjun17)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -78,7 +80,7 @@ Sí. La legislación general de privacidad (que se aplica a todos los sectores, 
 - [Programa de cumplimiento de servicios financieros de Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Programa de cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servicios en la nube de Microsoft para empresas y servicios financieros](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

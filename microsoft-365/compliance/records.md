@@ -1,5 +1,7 @@
 ---
 title: Información general de registros
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Para implementar una estrategia de administración de registros en un Office 365 o en la organización de Microsoft, use las etiquetas de retención que declaran el contenido como un registro. Después, publique o aplique automáticamente la etiqueta registro de retención.
-ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 36482ea4a6bb9fb932d72b76dff5f0647d467a9b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803837"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601687"
 ---
 # <a name="overview-of-records"></a>Información general de registros
 
@@ -78,6 +80,10 @@ Al crear una etiqueta de retención, puede usarla para clasificar el contenido c
 
 3. [Publicar](labels.md#how-retention-labels-work-with-retention-label-policies) o [aplicar automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) la etiqueta de retención en los sitios de SharePoint y/o cuentas de OneDrive.
 
+> [!NOTE]
+> La declaración de un elemento como registro con [etiquetas de retención](labels.md) requiere una licencia de Office 365 Enterprise E5 o equivalente para cada usuario que tenga permisos para editar el contenido en esta ubicación. Los usuarios que tienen acceso de solo lectura no necesitan una licencia.
+
+
 ### <a name="applying-a-retention-label-to-content"></a>Aplicar una etiqueta de retención al contenido
 
 Para Exchange, todos los usuarios con acceso de escritura al buzón pueden aplicar una etiqueta de registro a un mensaje de correo electrónico. Para el contenido de SharePoint y OneDrive, cualquier usuario del grupo predeterminado miembros (con nivel de permisos de contribución) puede aplicar una etiqueta de registro al contenido. Solo el administrador de la colección de sitios puede quitar o cambiar la etiqueta de registro una vez que se ha aplicado. Como ya se explicó anteriormente, una etiqueta de retención que clasifica el contenido como un registro que se puede aplicar automáticamente al contenido.
@@ -105,7 +111,7 @@ El control de versiones de registros está disponible automáticamente para todo
 ![Propiedad de estado de registro en un documento etiquetado como registro](media/recordversioning8.png)
 
 > [!NOTE]
-> El control de versiones de registros requiere una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se ha declarado como un registro en un sitio de SharePoint o en una cuenta de OneDrive. Los usuarios que tienen acceso de solo lectura no necesitan una licencia.
+> El control de versiones de registros requiere una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se ha declarado como un registro en un sitio de SharePoint o en una cuenta de OneDrive. Los usuarios que tienen acceso de solo lectura no necesitan esta licencia.
 
 ### <a name="locking-and-unlocking-a-record"></a>Bloquear y desbloquear un registro
 

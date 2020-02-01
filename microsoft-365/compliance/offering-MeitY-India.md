@@ -1,10 +1,12 @@
 ---
 title: Ministerio de electrónica y tecnología de la información (MeitY)
 description: El Ministerio de electrónica y tecnología de la información de Microsoft ha ofrecido plena acreditación en la India.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ec81552de43d2e67a4987b0efbaf5582be26e40
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3b1f93b301ba4db44b7260ae588688acf648e345
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804453"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602147"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministerio de electrónica y tecnología de la información (MeitY)
 
@@ -39,7 +41,7 @@ En noviembre de 2017, Microsoft se convirtió en uno de los primeros proveedores
 
 La acreditación MeitY de Microsoft fue el resultado de una auditoría rigurosa realizada por la dirección de prueba de estandarización y de certificación de calidad (STQC), una organización gubernamental que proporciona servicios de control de calidad mediante un marco de evaluación. se basa en el trabajo de la iniciativa de nube de MeghRaj. Con Microsoft Azure, las organizaciones del sector público ahora pueden dibujar en una amplia variedad de modelos de implementación y ofertas de servicios, como la infraestructura como servicio (IaaS), la plataforma como servicio (PaaS), la recuperación ante desastres, DevOps y la copia de seguridad administrada.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -60,7 +62,7 @@ El hecho de que los servicios gubernamentales estén a disposición de los ciuda
 - [Ministerio de electrónica y tecnología de la información](https://meity.gov.in/)
 - [Iniciativa de nube de MeghRaj](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Proveedores de servicios en la nube acreditados](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

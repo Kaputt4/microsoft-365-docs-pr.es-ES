@@ -1,5 +1,7 @@
 ---
 title: Configurar un conector para importar datos de recursos humanos
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: ba673f6328751a7eee10d5ab4097aa334c09f339
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247692"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600697"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de recursos humanos
 
@@ -27,7 +29,7 @@ Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 
 
 - El usuario que crea el conector de recursos humanos en el paso 3 debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 
-- Deberá determinar cómo recuperar o exportar los datos del sistema de RRHH de su organización (de forma regular) y agregar el archivo CSV que se describe en el paso 2. El script que ejecutó en el paso 4 cargará los datos de recursos humanos en el archivo CSV en la nube de Microsoft.
+- Deberá determinar cómo recuperar o exportar los datos del sistema de RRHH de su organización (de forma regular) y agregarlos al archivo CSV que se describe en el paso 2. El script que ejecutó en el paso 4 cargará los datos de recursos humanos en el archivo CSV en la nube de Microsoft.
 
 - El script de ejemplo que ejecutó en el paso 4 cargará los datos de recursos humanos en la nube de Microsoft para que puedan usarse en otras herramientas de Microsoft, como la solución de administración de riesgos de Insider. Este script de ejemplo no es compatible con ningún servicio o programa de soporte estándar de Microsoft. El script de ejemplo se proporciona tal cual sin garantías de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Todo el riesgo derivado del uso o el rendimiento de la secuencia de comandos de muestra y la documentación se conservan con usted. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
 
@@ -64,7 +66,7 @@ En la tabla siguiente se describe cada una de las columnas del archivo CSV:
 |**LastWorkingDate**|Especifica el último día de trabajo del empleado que ha finalizado. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Después de crear el archivo CSV con los datos de recursos humanos necesarios, almacene en un equipo local o en una ubicación de red que se pueda especificar al ejecutar el script en el paso 4. También debe implementar una estrategia de actualización para que el archivo CSV siempre contenga la información más actual, de modo que cualquier cosa que ejecute el script, los datos de finalización del empleado más actual se carguen en la nube de Microsoft.
+Después de crear el archivo CSV con los datos de HR necesarios, almacénelo en el equipo local en el que ejecute el script en el paso 4. También debe implementar una estrategia de actualización para asegurarse de que el archivo CSV siempre contiene la información más actual, de modo que cualquier cosa que ejecute el script, los datos de finalización de empleado más actuales se cargarán en la nube de Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Paso 3: crear el conector de recursos humanos
 
@@ -104,7 +106,7 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Paso 4: ejecutar el script de ejemplo para cargar los datos de recursos humanos
 
-El último paso para configurar un conector de recursos humanos es ejecutar un script de ejemplo que cargará los datos de recursos humanos en el archivo CSV (que creó en el paso 2) a la nube de Microsoft. Después de ejecutar el script, el conector de recursos humanos que creó en el paso 3 puede tener acceso e importar los datos en la organización de Microsoft 365, donde puede tener acceso a ellos otras herramientas de cumplimiento, como la solución de administración de riesgos de Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para que se ejecute de forma automática diariamente, de modo que los datos de finalización de los empleados más actuales se carguen en la nube de Microsoft. Consulte [programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
+El último paso para configurar un conector de recursos humanos es ejecutar un script de ejemplo que cargará los datos de recursos humanos en el archivo CSV (que creó en el paso 2) a la nube de Microsoft. En concreto, la secuencia de comandos carga los datos en el conector de recursos humanos. Después de ejecutar el script, el conector de recursos humanos que creó en el paso 3 importa los datos de recursos humanos a su organización de Microsoft 365, donde puede tener acceso a ellos otras herramientas de cumplimiento, como la solución de administración de riesgos de Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para que se ejecute de forma automática diariamente, de modo que los datos de finalización de los empleados más actuales se carguen en la nube de Microsoft. Consulte [programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Vaya a [este sitio de github](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) para acceder al script de ejemplo.
 
@@ -132,7 +134,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
    |`appId` |Este es el identificador de la aplicación de AAD para la aplicación que ha creado en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a la organización de 365 de Microsoft. | 
    |`appSecret`|Este es el secreto de la aplicación de AAD para la aplicación que ha creado en Azure AD en el paso 1. También se usa para la autenticación.|
    |`jobId`|Se trata del identificador de trabajo para el conector de recursos humanos que creó en el paso 3. Se usa para asociar los datos de recursos humanos cargados en la nube de Microsoft con el conector de recursos humanos.|
-   |`csvFilePath`|Esta es la ruta de acceso al archivo en el equipo local (la que está usando para ejecutar el script) para el archivo CSV que creó en el paso 2. Si el archivo CSV está ubicado en una ubicación de red compartida, deberá especificar la ruta de acceso completa del archivo para dicha ubicación. Intente evitar espacios en la ruta de acceso al archivo; de lo contrario, use comillas simples.|
+   |`csvFilePath`|Esta es la ruta de acceso al archivo en el equipo local (la que está usando para ejecutar el script) para el archivo CSV que creó en el paso 2. Intente evitar espacios en la ruta de acceso al archivo; de lo contrario, use comillas simples.|
    |||
    
    A continuación, se muestra un ejemplo de la sintaxis del script del conector de recursos humanos con valores reales para cada parámetro:

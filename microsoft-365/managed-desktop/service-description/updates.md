@@ -4,15 +4,17 @@ description: Mantener el escritorio administrado de Microsoft actualizado es un 
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 89ebb1bf9787ae90eac1b62078157f1338ce5dcd
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 63e07ffd58a7add7f7f72aad20b6389cd22d2ca7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074762"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602757"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Cómo se administran las actualizaciones en el escritorio administrado por Microsoft
 
@@ -56,7 +58,7 @@ Cómo funciona la implementación de actualizaciones:
 <tr><th colspan="5">Actualizar la configuración de la implementación</th></tr>
 <tr><th>Tipo de actualización</th><th>Prueba</th><th>Primero</th><th>Rápida</th><th>Amplias</th></tr>
 <tr><td>Actualizaciones de calidad para el sistema operativo</td><td>0 días</td><td>0 días</td><td>0 días</td><td>3 días</td></tr>
-<tr><td>Actualizaciones de características para el sistema operativo</td><td>0 días</td><td>30 días</td><td>60 días</td><td>90 días</td></tr>
+<tr><td>Actualizaciones de características para el sistema operativo</td><td>0 días</td><td>30 días</td><td>60 días</td><td>90 días</td></tr>
 <tr><td>Controladores o firmware</td><td colspan="4">Sigue la programación de las actualizaciones de calidad</td></tr>
 <tr><td>Definición de antivirus</td><td colspan="4">Se actualizó con cada examen</td></tr>
 <tr><td>Office 365 ProPlus</td><td colspan="4">Después del canal mensual de Office

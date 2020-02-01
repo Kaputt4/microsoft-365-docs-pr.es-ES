@@ -1,5 +1,7 @@
 ---
 title: Instalar el complemento de notificación de correo no deseado para Microsoft Outlook
+f1.keywords:
+- NOCSH
 ms.author: MSFTTracyP
 author: tracyp
 manager: dansimp
@@ -12,12 +14,12 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: En esta articleSupported LanguagesInstall el informe de correo electrónico no deseado Add-inUninstall el complemento de notificación de correo no deseado Add-inFor más información
-ms.openlocfilehash: 14c3914601ab8a6b3273b56a3915df9c909fc06c
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0f7a5a3cbaddf9aef5e518db38ffb36c397cd1f0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970396"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599157"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar el complemento de notificación de correo no deseado para Microsoft Outlook
 

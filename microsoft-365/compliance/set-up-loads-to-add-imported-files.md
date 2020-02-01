@@ -1,5 +1,7 @@
 ---
 title: Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos de Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar el aprendizaje de relevancia en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: 779ec505212753305a8ae604201ce2d6fd858fc3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 6778666e1ef0e5900a2afcc2949bdc9579c21fd1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802693"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601467"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos de Office 365
 

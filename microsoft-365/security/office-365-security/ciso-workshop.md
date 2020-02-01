@@ -1,5 +1,7 @@
 ---
 title: Taller sobre el director de seguridad de la información (CISO)
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 9a6fc72cd905a99b555417269aa9f7ec84faef1f
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7377eb0bedf86e69618a82a05a7f048cc9b1cde7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012425"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599657"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Formación del taller Chief Information Security Office (CISO)
 
@@ -38,4 +40,4 @@ Los vídeos del taller de CISO y el contenido de descarga de PDF o PowerPoint so
 
 - [Módulo 4B: estrategia de protección contra amenazas, parte II](ciso-workshop-module-4b.md): en este módulo se revisa la evolución y la trayectoria de los centros de operaciones de seguridad (SOC), con tecnología de los billones de señales del gráfico de seguridad inteligente de Microsoft.
 
-- [Módulo 5: protección](ciso-workshop-module-5.md)de la información: Obtenga información sobre cómo proteger la información confidencial donde va con la clasificación automática, el cifrado persistente en los dispositivos y la supervisión continua de datos en dispositivos móviles, servicios en la nube y otros activos corporativos.
+- [Módulo 5: protección](ciso-workshop-module-5.md)de la información: Obtenga información sobre cómo proteger la información confidencial donde va con la clasificación automática, el cifrado persistente en los dispositivos y la supervisión continua de los datos en dispositivos móviles, servicios en la nube y otros activos corporativos.

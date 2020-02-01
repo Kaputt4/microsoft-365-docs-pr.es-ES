@@ -1,10 +1,12 @@
 ---
 title: Lista de servicios en la nube certificados por el gobierno de Australia (CCSL)
 description: Microsoft se incluye en la lista de servicios en la nube con certificación Australian para los marcadores de limitación de divulgación sin clasificar (DLM) y los datos protegidos basados en una evaluación y certificación de IRAP por medio del centro de seguridad de Australian Cyber (ACSC).
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4be943b83d1b2286a01731de87dd2b0af34cb322
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3cbc0008841456e91dd2ffe6a9e5c78fba0ba43d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805483"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602677"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Programa de evaluación de la seguridad de la información del gobierno australiano (IRAP)
 
@@ -61,7 +63,7 @@ Como siempre, los controles de compensación adicionales se pueden implementar e
 
 La evaluación de IRAP de los servicios de Microsoft ayuda a garantizar a los clientes del sector público en el gobierno y a sus socios que Microsoft tiene controles de seguridad adecuados y efectivos en su ubicación para el procesamiento, el almacenamiento y la transmisión de protección y por debajo de la información clasificada. Esto incluye la mayoría de los datos gubernamentales, de atención médica y de educación en Australia.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure y Dynamics](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
@@ -90,4 +92,4 @@ Empiece con [Qué es IRAP](https://www.cyber.gov.au/irap/what-irap) y siga la in
 - [Página de Australia del portal de confianza de servicios de Microsoft (STP)](https://aka.ms/au-irap)
 - [Guías de seguridad y puerta de enlace de Australia](https://docs.microsoft.com/azure/azure-australia)
 - [Servicios de nube certificados de ASD](https://acsc.gov.au/infosec/irap/certified_clouds.htm)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

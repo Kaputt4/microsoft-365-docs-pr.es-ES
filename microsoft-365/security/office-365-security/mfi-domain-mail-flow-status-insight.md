@@ -1,5 +1,7 @@
 ---
-title: Información del estado del flujo de correo de dominio superior
+title: Información de estado de flujo de correo de dominio superior
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,14 +11,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el conocimiento del estado del flujo de correo del dominio superior del panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: b193eea87a76ad45e91c98511627b24b04d48fb5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1fb22ac1543c490dcbd316464803f5393003d503
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093165"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598887"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a>Información del estado del flujo de correo de dominio superior
+# <a name="top-domain-mail-flow-status-insight"></a>Información de estado de flujo de correo de dominio superior
 
 La información del **Estado del flujo de correo de dominio superior** le ofrece el estado actual de los dominios de su organización en términos de flujo de correo. Esta visión le ayudará a identificar y solucionar problemas de dominios que experimentan problemas de impacto en el ***flujo de correo*** (por ejemplo, no se puede recibir correo electrónico externo), en especial expiraciones de dominio o dominios con registros MX incorrectos.
 
@@ -30,6 +32,6 @@ Una x de color rojo para un dominio indica que se ha cambiado el registro MX y q
 
 ![El control flotante de detalles en la información del estado del flujo superior del dominio](../media/domain-mail-flow-status-flyout.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

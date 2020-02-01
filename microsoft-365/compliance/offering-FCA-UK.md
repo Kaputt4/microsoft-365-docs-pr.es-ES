@@ -1,10 +1,12 @@
 ---
 title: Autoridad de realización financiera del Reino Unido (FCA)
 description: La guía de Microsoft para empresas financieras en el Reino Unido sigue las instrucciones de administración financiera y las directrices para la contratación externa a la nube.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 582f7175ae7eb851c1a58497369d069d7f295aa8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f96b4eccec92f78b22eb28caecf3910a5d4ace2d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805063"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602447"
 ---
 # <a name="united-kingdom-financial-conduct-authority-fca"></a>Autoridad de realización financiera del Reino Unido (FCA)
 
@@ -41,7 +43,7 @@ Obtenga información sobre cómo Azure habilita el cumplimiento de la FCA en los
 
 [Descargar el enfoque de Microsoft a FCA instrucciones de nube finalizadas](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -63,7 +65,7 @@ Sí. Sin embargo, aunque las respuestas de Microsoft a este marco están confirm
 - [Programa de cumplimiento de servicios financieros de Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Programa de cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servicios en la nube de Microsoft para empresas y servicios financieros](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

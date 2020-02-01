@@ -1,5 +1,7 @@
 ---
 title: Tipos de archivo admitidos en investigaciones de datos (versión preliminar)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 60e4baf2df94793b532fb4035a34ca3c7a5cd332
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 055104a5b7f60fe54b421e7236143aa9af08b57f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092905"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601437"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Tipos de archivo admitidos en investigaciones de datos (versión preliminar)
 
@@ -63,7 +65,7 @@ Las investigaciones de datos (versión preliminar) admiten muchos tipos de archi
 | Image/TIFF | Image (Imagen) | Sí | Sí | Sí | No | . tif |
 | Image/vnd. DWG | Document | Sí | Sí | Sí | No | . dwg;. ficheros |
 | imagen/WMF | Document | Sí | Sí | Sí | No | .wmf |
-| mensaje/rfc822 | Productividad y colaboración | No | No | No | No | . eml |
+| mensaje/rfc822 | Productividad y colaboración | No | No | No | No | .eml |
 | texto/CSV | Document | Sí | Sí | Sí | No | . csv |
 | texto/HTML | Document | Sí | Sí | Sí | No | . html;. shtml;. htm |
 | texto/sin formato | Document | Sí | Sí | Sí | No | . txt;. CSS;. con;. pl;. csv;. dat |

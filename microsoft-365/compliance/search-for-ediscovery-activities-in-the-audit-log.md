@@ -1,5 +1,7 @@
 ---
 title: Buscar actividades de eDiscovery en el registro de auditoría de Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,26 +14,26 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre cómo buscar en el registro de auditoría de Office 365 eventos que se registran cuando los administradores de cumplimiento realizan tareas de casos de exhibición de documentos electrónicos y búsqueda de contenido en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 7be0cbd5a6cbdad0158228b808802200034265d5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ef9c40debb8c28f0d017423d29016ca4f52b7a17
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092954"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601537"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría de Office 365
 
 La búsqueda de contenido y las actividades relacionadas con la exhibición de documentos electrónicos que se realizan en el centro de seguridad & cumplimiento o mediante la ejecución de los cmdlets de Windows PowerShell correspondientes se registran en el registro de auditoría de Office 365. Los eventos se registran cuando los administradores o los administradores de cumplimiento (o cualquier usuario que tenga asignados permisos de exhibición de documentos electrónicos) realizan las siguientes tareas relacionadas con la exhibición de documentos electrónicos y la búsqueda de contenido en el centro de seguridad & cumplimiento:
   
-- Creación y administración de casos de eDiscovery
+- Crear y administrar casos de exhibición de documentos electrónicos
     
-- Creación, Inicio y edición de búsquedas de contenido
+- Crear, iniciar y editar búsquedas de contenido
     
-- Realización de acciones de búsqueda de contenido, como vista previa, exportación y eliminación de resultados de búsqueda
+- Realizar acciones de búsqueda de contenido, como la vista previa, la exportación y la eliminación de resultados de búsqueda
     
-- Configuración del filtrado de permisos para búsqueda de contenido
+- Configurar el filtrado de permisos para la búsqueda de contenido
     
-- Administración del rol de administrador de eDiscovery
+- Administrar el rol de administrador de la exhibición de documentos electrónicos
     
 > [!IMPORTANT]
 > Las actividades descritas en este artículo solo son el resultado de las tareas de eDiscovery realizadas mediante el centro de seguridad & cumplimiento. las tareas de eDiscovery que se realizaron con la herramienta de exhibición de documentos electrónicos local en Exchange online o el centro de exhibición de documentos electrónicos en SharePoint Online no se incluyen. 
@@ -57,7 +59,7 @@ Actualmente, tiene que hacer algunas cosas específicas para ver las actividades
     
 6. En el cuadro **usuarios** , seleccione uno o más usuarios para los que desea mostrar los resultados de la búsqueda. Deje este cuadro en blanco para devolver las entradas de todos los usuarios. 
     
-7. Haga clic en **Buscar** para ejecutar la búsqueda con los criterios de búsqueda. 
+7. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda.  
     
 8. Una vez que se muestran los resultados de la búsqueda, puede hacer clic en **filtrar resultados** para filtrar u ordenar los registros de actividad resultantes. Desafortunadamente, no se puede usar el filtrado para excluir explícitamente ciertas actividades. 
     
@@ -66,9 +68,9 @@ Actualmente, tiene que hacer algunas cosas específicas para ver las actividades
     Se muestra una página **detalles** de la marcha que contiene las propiedades detalladas del registro del evento. Para mostrar información adicional, haga clic en **más información**. Para obtener una descripción de estas propiedades, consulte la sección [propiedades detalladas para actividades de eDiscovery](#detailed-properties-for-ediscovery-activities) . 
 
   
-## <a name="ediscovery-activities"></a>actividades de eDiscovery
+## <a name="ediscovery-activities"></a>Actividades de eDiscovery
 
-En la tabla siguiente se describen las actividades relacionadas con la exhibición de documentos electrónicos y la búsqueda de contenido que se registran cuando un administrador o un usuario realiza una actividad relacionada con eDiscovery mediante el centro de seguridad & cumplimiento o mediante la ejecución del cmdlet correspondiente en remoto PowerShell conectado al centro de seguridad & cumplimiento de la organización. 
+En la tabla siguiente se describen las actividades relacionadas con la exhibición de documentos electrónicos y la búsqueda de contenido que se registran cuando un administrador o un usuario realiza una actividad relacionada con eDiscovery mediante el centro de seguridad & cumplimiento o mediante la ejecución del cmdlet correspondiente en PowerShell remoto que está conectado al centro de seguridad & cumplimiento de la organización. 
   
 > [!NOTE]
 > Las actividades de eDiscovery descritas en esta sección proporcionan información similar a las actividades del cmdlet de exhibición de documentos electrónicos que se describen en la siguiente sección. Le recomendamos que use las actividades de eDiscovery descritas en esta sección, ya que aparecerán en los resultados de la búsqueda del registro de auditoría en 30 minutos. Las actividades del cmdlet eDiscovery tardan hasta 24 horas en aparecer en los resultados de la búsqueda de registros de auditoría. 
@@ -112,7 +114,7 @@ En la tabla siguiente se describen las actividades relacionadas con la exhibici�
   
 ## <a name="ediscovery-cmdlet-activities"></a>actividades del cmdlet eDiscovery
 
-En la tabla siguiente se enumeran los registros de auditoría de cmdlet que se registran cuando un administrador o un usuario realiza una actividad relacionada con eDiscovery mediante el centro de seguridad & cumplimiento o mediante la ejecución del cmdlet correspondiente en PowerShell remoto que está conectado a el centro de seguridad & cumplimiento de la organización. Tenga en cuenta que la información detallada en el registro de auditoría es diferente para las actividades de cmdlet que se enumeran en esta tabla y las actividades de eDiscovery descritas en la sección anterior. 
+En la tabla siguiente se enumeran los registros de auditoría de cmdlet que se registran cuando un administrador o usuario realiza una actividad relacionada con eDiscovery mediante el centro de seguridad & cumplimiento o mediante la ejecución del cmdlet correspondiente en PowerShell remoto que está conectado al centro de seguridad & cumplimiento de la organización. Tenga en cuenta que la información detallada en el registro de auditoría es diferente para las actividades de cmdlet que se enumeran en esta tabla y las actividades de eDiscovery descritas en la sección anterior. 
   
 Como se mencionó anteriormente, las actividades de cmdlet de eDiscovery tardan hasta 24 horas en aparecer en los resultados de búsqueda de registros de auditoría.
   
@@ -185,4 +187,4 @@ En la tabla siguiente se describen las propiedades que se incluyen al hacer clic
 |UserServicePlan  <br/> |La suscripción de Office 365 usada por su organización. Para actividades de eDiscovery, esta propiedad suele estar en blanco.  <br/> |
 |UserType  <br/> |El tipo de usuario que llevó a cabo la operación. Los siguientes valores indican el tipo de usuario.  <br/> 0 un usuario normal. 2 un administrador de la organización de Office 365. 3 una cuenta de Microsoft Datacenter Administrator o Datacenter System. 4 una cuenta del sistema. 5 una aplicación. 6 una entidad de servicio. |
 |Versión  <br/> |Indica el número de versión de la actividad (identificado por la propiedad Operation) que se registra.  <br/> |
-|Carga de trabajo  <br/> |El servicio de Office 365 donde se produjo la actividad. Para las actividades de eDiscovery, el valor es **SecurityComplianceCenter**.  <br/> |
+|Carga de trabajo  <br/> |El servicio de Office 365 en el que se produjo la actividad. Para las actividades de eDiscovery, el valor es **SecurityComplianceCenter**.  <br/> |

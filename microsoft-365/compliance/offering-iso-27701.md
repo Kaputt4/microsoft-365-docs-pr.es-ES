@@ -5,18 +5,21 @@ keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 69d105e41050c7c9d1b9fbcf37e891e430a79ef1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4bc6663efe704205787e1c69d4e6dd06122419c3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859380"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601917"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Sistema de Administración de Información de Privacidad (PIMS)
 
@@ -63,6 +66,11 @@ Puntos clave en ISO/IEC 27001 y PIMS:
 ## <a name="what-should-your-organization-do-with-pims"></a>¿Qué debe hacer su organización con PIMS?
 
 Indistintamente del tamaño de su organización y de si se trata de un controlador o un procesador, su organización debe considerar la posibilidad de obtener la certificación, ya sea para su propia organización o solicitarla a proveedores o suministradores en función de los requisitos de su negocio. Esto es especialmente aplicable a los procesadores, subprocesadores y co-controladores que procesan grandes volúmenes de datos confidenciales o personales. En todo caso, su organización debe evaluar las necesidades de su negocio para determinar si la certificación de sus propios productos y servicios es adecuada.
+
+## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
+
+- [Certificación de Azure ISO/IEC 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Informe de evaluación de Azure ISO/IEC 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 
 ## <a name="resources"></a>Recursos
 

@@ -1,10 +1,12 @@
 ---
 title: United Kingdom Cyber Essentials PLUS
 description: Cyber Essentials PLUS es un esquema definido por el gobierno de Reino Unido para ayudar a las organizaciones a protegerse frente a las amenazas más comunes de la seguridad en el ciberespacio.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1a98b2511e773d8c784e93338fb68850d4d3a779
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: da137e3333164970729d0c737f7077c3c96ee634
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805263"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602547"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>United Kingdom Cyber Essentials PLUS
 
@@ -48,7 +50,7 @@ La [certificación Azure Cyber Essentials Plus](https://aka.ms/AzureCyberEPlusCe
 ## <a name="resources"></a>Recursos
 
 - [Esquema de seguridad del ciberespacio: marco de seguridad](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

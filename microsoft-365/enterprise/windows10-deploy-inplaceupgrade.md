@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112694"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602857"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Paso 2: implementar Windows 10 Enterprise para los dispositivos existentes como actualización local
 
@@ -29,7 +31,7 @@ Si ya tiene equipos que ejecutan Windows 7 o Windows 8,1, le recomendamos esta r
 
 Siga estos pasos para configurar e implementar una imagen de Windows 10 Enterprise con Microsoft Endpoint Configuration Manager como una actualización local.
 
-## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Póster de implementación de Windows 10 con Configuration Manager
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>El póster para la implementación de Windows 10 con Configuration Manager 
 
 El póster de Configuration Manager es una página en el modo horizontal (17x11). Haga clic en la imagen siguiente para ver un PDF en el explorador. 
 

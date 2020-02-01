@@ -1,10 +1,12 @@
 ---
 title: Consejo financiero federal de examen para instituciones financieras (FFIEC)
 description: Microsoft ayuda a los clientes de servicios financieros a cumplir con los requisitos de auditoría del Consejo de investigación de instituciones financieras federales (FFIEC).
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b1b852ee79b377b5d67ada8a5a4de602a74e466
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 74ce16a1cc98943ea808bbae08eccd54f8f21fad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805043"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602427"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Consejo financiero federal de examen para instituciones financieras (FFIEC)
 
@@ -40,7 +42,7 @@ Para ayudar a los clientes de instituciones financieras a satisfacer sus requisi
 
 Para ayudarle a cumplir con los requisitos de FFIEC, los servicios en la nube de Microsoft proporcionan [informes de atestación de SOC](offering-SOC.md) producidos por una empresa independiente de la CPA. Por ejemplo, la atestación del SOC 1 tipo 2 se basa en el estándar AICPA SSAE 18 (vea la sección de-C 105) que reemplazó a SAS 70 y es apropiado para informar sobre determinados controles de informes financieros. Los informes de SOC incluyen la opinión del Auditor sobre la eficacia de los controles de Microsoft en la consecución de los objetivos de control relacionados durante el período de supervisión especificado. Las instituciones financieras pueden usar esta auditoría formal al cumplir con las obligaciones de cumplimiento específicas de FFIEC para activos implementados en Azure, Power BI y Office 365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune

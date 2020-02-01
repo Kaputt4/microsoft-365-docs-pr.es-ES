@@ -1,5 +1,7 @@
 ---
-title: Informe de dominio no aceptado
+title: Informe de dominios no aceptados
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,14 +11,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de dominio no aceptado en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 6d256eb99a573b3dc9a6e1bcd14bffdd0800081c
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 7872f454f10c8f8b7bb2f79fd62671e200463f7b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306174"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599217"
 ---
-# <a name="non-accepted-domain-report"></a>Informe de dominio no aceptado
+# <a name="non-accepted-domain-report"></a>Informe de dominios no aceptados
 
 De forma similar a la información del **dominio del remitente** , el servicio de información de **dominio no aceptado** identifica los mensajes de su organización de correo electrónico local, pero el dominio del remitente no está configurado como un dominio aceptado en la organización de Office 365.
 

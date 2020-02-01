@@ -1,5 +1,7 @@
 ---
 title: Garantía del servicio en el centro de seguridad & cumplimiento
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
-ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093566"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601527"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el centro de seguridad & cumplimiento
 
@@ -47,9 +49,9 @@ También puede averiguar cómo Office 365 puede ayudar a los clientes a cumplir 
  De forma predeterminada, los **miembros de suscripción de O365** pueden obtener acceso a la sección Garantía del servicio en el centro de protección de Office365 si no se ha implementado el acceso basado en roles del servicio de seguridad en la suscripción. Garantía del servicio proporciona informes y documentos que describen los procedimientos de seguridad de Microsoft para los datos de clientes almacenados en Office 365. También proporciona informes de auditoría de terceros independientes en Office 365. 
   
 > [!NOTE]
-> Nota: Si su compañía ha implementado acceso basado en roles de garantía de servicio en su suscripción de Office 365 (que podría ser si se ha proporcionado acceso a informes personalizados a su organización) y necesita acceso a garantía del servicio, pero no está incluido en la parte izquierda panel del centro de seguridad & cumplimiento, pida al administrador de Office 365 que le agregue al grupo de roles usuario de garantía del servicio en la página **permisos** . Para obtener más información, consulte incorporar otros usuarios o grupos de garantía del servicio. 
+> Nota: Si su compañía ha implementado acceso basado en roles de garantía de servicio en su suscripción de Office 365 (que podría ser si se ha proporcionado acceso a informes personalizados a su organización) y necesita acceso a garantía del servicio, pero no se incluye en el panel izquierdo del centro de seguridad & cumplimiento, solicite al administrador de Office 365 que le agregue al grupo de roles de **usuario de garantía** Para obtener más información, consulte incorporar otros usuarios o grupos de garantía del servicio. 
   
- **Acceso basado en roles de servicios de garantía de servicio: usuarios aprovisionados** Si su empresa ha implementado acceso basado en roles de garantía de servicios, puede proporcionar acceso al servicio de seguridad a todo el personal de seguridad y cumplimiento, incluidos los equipos de seguridad de la información, la administración de riesgos, el cumplimiento y los equipos de auditoría y el personal de su Organization. Para obtener más información, consulte [incorporar otros usuarios o grupos de garantía del servicio](service-assurance.md#addother).
+ **Acceso basado en roles de servicios de garantía de servicio: usuarios aprovisionados** Si su empresa ha implementado el acceso basado en roles de garantía de servicios, puede proporcionar acceso al servicio de seguridad a todo el personal de seguridad y cumplimiento, incluidos los equipos y el personal de seguridad de la información, la administración de riesgos, el cumplimiento y la auditoría de la organización. Para obtener más información, consulte [incorporar otros usuarios o grupos de garantía del servicio](service-assurance.md#addother).
   
 La garantía del servicio es accesible mediante el centro de seguridad & cumplimiento. Esta es la manera de acceder a.
   
@@ -120,7 +122,7 @@ Para obtener acceso a los informes predeterminados que están disponibles en gen
     
     ![Usuario de garantía del servicio: agregar](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
-3. En el siguiente cuadro de diálogo, busque y elija individuos o grupos que necesiten ver los informes de cumplimiento de garantía del servicio y los recursos de confianza y, a continuación, seleccione **Agregar** para cada selección que realice y haga clic en la **X** en la esquina superior derecha del panel cuando haya terminado. 
+3. En el cuadro de diálogo siguiente, busque y elija individuos o grupos que necesiten ver los informes de cumplimiento de garantía del servicio y los recursos de confianza y, a continuación, seleccione **Agregar** para cada selección que realice y haga clic en la **X** en la esquina superior derecha del panel cuando haya terminado. 
     
     ![Usuario de garantía del servicio: elegir usuario](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   

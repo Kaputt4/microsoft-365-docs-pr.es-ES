@@ -1,5 +1,7 @@
 ---
 title: Reporte de reglas de flujo de correo lento
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: Los administradores pueden obtener información sobre las reglas de flujo de correo lentas Insight en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 34b2b0b3089dcb00668b0b9cd708691381a31ced
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 706b9b53e710252308817913718edd92e416e96c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093460"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598817"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Reporte de reglas de flujo de correo lento
 
@@ -35,6 +37,6 @@ Al hacer clic en **Ver detalles**, aparece un panel flotante donde puede revisar
 
 ![Panel flotante después de hacer clic en ver detalles en una ventana de flujo de correo lenta información sobre las reglas del panel flujo de correo](../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

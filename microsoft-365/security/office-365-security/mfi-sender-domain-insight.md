@@ -1,5 +1,7 @@
 ---
-title: Revisión del conocimiento del dominio del remitente
+title: Solucionar la información del dominio del remitente
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,14 +11,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre la información sobre el dominio del remitente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: bda6482b2c9264337db9e95f84ff41ce08582363
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306154"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598827"
 ---
-# <a name="fix-sender-domain-insight"></a>Revisión del conocimiento del dominio del remitente
+# <a name="fix-sender-domain-insight"></a>Solucionar la información del dominio del remitente
 
 Office 365 requiere mensajes que envían desde entornos de correo electrónico locales internos a Office 365 para cumplir ciertos criterios de seguridad:
 
@@ -32,7 +34,7 @@ Office 365 requiere mensajes que envían desde entornos de correo electrónico l
 
 Los mensajes que no cumplen los criterios no se atribuirán a la organización y podrían rechazarse.
 
-La introducción a la **solución de dominio del remitente** muestra el correo electrónico de su entorno local que no cumple los criterios, le ayuda a identificar las cuentas de usuario y equipos potencialmente comprometidos en su entorno de correo electrónico local y le ayuda a tomar acciones de corrección.
+La introducción a **Fix Domain Sender** le muestra el correo electrónico de su entorno local que no cumple con los criterios, le ayuda a identificar las cuentas de usuario y equipos potencialmente comprometidos en su entorno de correo electrónico local y le ayuda a tomar medidas de corrección.
 
 ![La información del dominio del remitente Fix del panel del flujo de correo del centro de seguridad & cumplimiento](../media/sender-domain-insight-selected.png)
 

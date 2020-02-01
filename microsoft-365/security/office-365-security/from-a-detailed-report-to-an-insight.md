@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: desde un informe detallado a un reporte'
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: Obtenga información acerca de cómo puede pasar de un informe detallado a un conocimiento con las acciones recomendadas en el centro de seguridad &amp; y cumplimiento.
-ms.openlocfilehash: 0ab5f99fb1dd8a313ead93950cfb6f7d0f86558c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9385f7bc8bc8c2277df5e3f774015081b39f37a9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092268"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599267"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Tutorial: desde un informe detallado a un reporte
 

@@ -1,5 +1,7 @@
 ---
 title: Mantenga su organización segura con las capacidades de investigación y respuesta de amenazas de Office 365
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo las capacidades de investigación y respuesta de las amenazas de Office 365 pueden ayudar a su organización a detectar intrusiones y amenazas, y mitigar rápidamente y recuperarse de amenazas.
-ms.openlocfilehash: f51a4de9b0bd1da43ccbd2d5e814f0fa6ef87459
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971788"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599107"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenga su organización segura con las capacidades de investigación y respuesta de amenazas de Office 365
 
@@ -47,7 +49,7 @@ Una vez que los administradores de seguridad han identificado algo sospechoso o 
 
 Las capacidades de investigación y respuesta de amenazas de Office 365 se alimentan con datos del [gráfico de seguridad inteligente de Microsoft](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph/). El gráfico adquiere la última señal de amenazas de más de 1 mil millones dispositivos Windows, 450 mil millones inicios de sesión mensuales de Azure y 400 mil millones mensajes de correo electrónico mensuales en Office 365. Esta señal de amenaza sin rival es la que proporciona la visibilidad amplia que tiene el equipo de operaciones de seguridad para una visión más completa de las amenazas que afectan a su organización.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - Obtenga más información sobre la [protección contra amenazas avanzada de Office 365](office-365-atp.md).
 

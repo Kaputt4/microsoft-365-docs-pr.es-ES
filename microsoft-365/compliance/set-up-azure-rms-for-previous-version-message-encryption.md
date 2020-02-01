@@ -1,5 +1,7 @@
 ---
 title: Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versión anterior de Office 365 cifrado de mensajes depende de Microsoft Azure Rights Management (anteriormente conocido como Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: a6ba18982a65ff9687374b9e5dc370646817d96d
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: be0fad248465927ee7cc59b31a36e65ce5c053db
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38687734"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601487"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365
 
@@ -114,7 +116,7 @@ Un TPD es un archivo XML que contiene información sobre la configuración de la
 
 Puede seguir usando las reglas de flujo de correo de cifrado de mensajes de Office 365 existentes con Active Directory Rights Management, pero no puede configurar ni usar las nuevas funciones de OME. En su lugar, debe migrar a Azure Information Protection. Para obtener información sobre la migración y qué significa para su organización, vea [migrar de AD RMS a Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms).
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="importTPDs"> </a>
 
 Una vez que haya completado la instalación de Azure Rights Management, si desea habilitar las nuevas capacidades de OME, vea [set up New Office 365 Message Encryption Capabilities Built on of Azure Information Protection.](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)

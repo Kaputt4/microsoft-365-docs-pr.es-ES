@@ -8,6 +8,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
@@ -15,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4c8c5cef3ba99339176086ada055d266f92c30cf
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: ab7e48eaf582dbf6bc26d0393d26fea433da2253
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210452"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600447"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -43,7 +45,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `OSArchitecture` | string | Arquitectura del sistema operativo que se ejecuta en el equipo. |
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 7. |
 | `OSBuild` | string | Versión de compilación del sistema operativo que se ejecuta en el equipo |
-| `IsAzureADJoined` | booleano | Indicador booleano de si el equipo está unido a Azure Active Directory |
+| `IsAzureADJoined` | boolean | Indicador booleano de si el equipo está unido a Azure Active Directory |
 | `LoggedOnUsers` | string | Lista de todos los usuarios que han iniciado sesión en el equipo en el momento del evento en el formato de matriz JSON |
 | `RegistryDeviceTag` | string | Etiqueta de máquina agregada a través del registro |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y timestamp. |

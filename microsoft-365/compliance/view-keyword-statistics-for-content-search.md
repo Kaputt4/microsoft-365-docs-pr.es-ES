@@ -1,5 +1,7 @@
 ---
 title: Ver las estadísticas de palabras clave para resultados de búsqueda de contenido
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,20 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Use la característica estadísticas de búsqueda para mostrar y comparar estadísticas de varias búsquedas de contenido en el centro de seguridad & cumplimiento. También puede configurar la lista de palabras clave al crear o editar una consulta de búsqueda para obtener estadísticas mejoradas que muestren el número de elementos que coinciden con cada palabra clave o frase de palabras clave.
-ms.openlocfilehash: 558d8bd269d1c1d8bfcf3f15452a83de74f3e38d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093095"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601257"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Ver las estadísticas de palabras clave para resultados de búsqueda de contenido
 
-Después de crear y ejecutar una búsqueda de contenido, puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda (similar al Resumen de los resultados de búsqueda estimados que se muestran en el panel de detalles), las estadísticas de la consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda, y el nombre de las ubicaciones de contenido que tienen más elementos coincidentes. Puede mostrar estadísticas de una o más búsquedas de contenido. Esto le permite comparar rápidamente los resultados de varias búsquedas y tomar decisiones sobre la eficacia de las consultas de búsqueda.
+Después de crear y ejecutar una búsqueda de contenido, puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda (similar al Resumen de los resultados de búsqueda estimados que se muestran en el panel de detalles), las estadísticas de la consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda, y el nombre de las ubicaciones de contenido que tienen más elementos coincidentes. Puede mostrar las estadísticas de una o más búsquedas de contenido. Esto le permite comparar rápidamente los resultados de varias búsquedas y tomar decisiones sobre la eficacia de las consultas de búsqueda.
   
 Además, puede configurar búsquedas nuevas y existentes para devolver las estadísticas de cada palabra clave en una consulta de búsqueda. Esto le permite comparar el número de resultados de cada palabra clave de una consulta y comparar las estadísticas de palabras clave de varias búsquedas.
   
-También puede descargar las estadísticas de búsqueda y las estadísticas de palabras clave en un archivo CSV. Esto le permite usar las características de filtrado y ordenación de Excel para comparar los resultados y preparar los informes para los resultados de la búsqueda.
+También puede descargar estadísticas de búsqueda y de palabras clave en un archivo CSV. Así, una vez que abra el archivo con Excel podrá usar las opciones de filtrado y ordenación del programa para comparar los resultados, o preparar informes de los resultados de búsqueda.
   
 ## <a name="get-statistics-for-content-searches"></a>Obtener estadísticas para las búsquedas de contenido
 
@@ -88,7 +90,7 @@ Para mostrar las estadísticas de las búsquedas de contenido:
     
     **Principales ubicaciones**
     
-    Esta página muestra estadísticas sobre el número de elementos que coinciden con la consulta de búsqueda en cada ubicación de contenido en la que se ha buscado. Se muestran las principales 1.000 ubicaciones. Si ve las estadísticas de varias búsquedas, se muestran las principales 1.000 ubicaciones de cada búsqueda. Tenga en cuenta que una ubicación de contenido no se incluye en esta página si no contiene elementos que coinciden con la consulta de búsqueda.
+    Esta página muestra estadísticas sobre el número de elementos que coinciden con la consulta de búsqueda en cada ubicación de contenido en la que se ha buscado. Se mostrarán las 1000 ubicaciones más importantes. Si ve las estadísticas de varias búsquedas, se muestran las principales 1.000 ubicaciones de cada búsqueda. Tenga en cuenta que una ubicación de contenido no se incluye en esta página si no contiene elementos que coinciden con la consulta de búsqueda.
     
     ![Estadísticas sobre el número de elementos encontrados en las ubicaciones de contenido en las que se realizó la búsqueda](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   

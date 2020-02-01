@@ -1,5 +1,7 @@
 ---
 title: Configurar el filtrado de permisos para Búsqueda de contenido
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda de contenido para permitir que un administrador de eDiscovery busque solo en un subconjunto de buzones y sitios de su organización de Office 365.
-ms.openlocfilehash: 97f01a7d0c91359251b4af2a26fe9c48aab7122e
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 670dd2e5d0c88c520234cd7e71805cfa97ad9ec9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687902"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601767"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configurar el filtrado de permisos para Búsqueda de contenido
 

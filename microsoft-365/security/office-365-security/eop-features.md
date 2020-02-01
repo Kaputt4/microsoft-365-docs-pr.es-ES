@@ -1,5 +1,7 @@
 ---
 title: Características de EOP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
-ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840179"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599377"
 ---
 # <a name="eop-features"></a>Características de EOP
 
@@ -36,10 +38,10 @@ La tabla siguiente proporciona una lista de las características que están disp
 |Protección contra suplantación de identidad|EOP incluye 750.000 dominios de remitentes de correo no deseado conocidos.|
 |**Administración del correo no deseado**||
 |Capacidad para configurar listas de direcciones IP permitidas y bloqueadas para el filtro de conexión|Las direcciones IP especificadas en el filtro de conexión se respetan para direcciones IP únicas y para intervalos de direcciones IP CIDR. El servicio también admite direcciones IPv6. Para obtener más información, vea [Configurar la directiva de filtro de conexión](configure-the-connection-filter-policy.md).|
-|Capacidad para personalizar las directivas de filtrado de contenido por usuario, grupo o dominio|Para una mayor precisión, puede crear directivas de filtro de contenido personalizadas y aplicarlas a usuarios, grupos o dominios específicos en la organización. Las directivas personalizadas siempre tienen prioridad con respecto a la directiva predeterminada, pero puede cambiar la prioridad (es decir, el orden de ejecución) de las directivas personalizadas. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).|
-|Capacidad para configurar acciones en mensajes filtrados por contenido|Hay varias acciones configurables. Por ejemplo, puede eliminar los mensajes filtrados por contenido o enviarlos a la carpeta Correo electrónico no deseado o a cuarentena. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).|
+|Capacidad para personalizar las directivas de filtrado de contenido por usuario, grupo o dominio|Para una mayor precisión, puede crear directivas de filtro de contenido personalizadas y aplicarlas a usuarios, grupos o dominios específicos en la organización. Las directivas personalizadas siempre tienen prioridad con respecto a la directiva predeterminada, pero puede cambiar la prioridad (es decir, el orden de ejecución) de las directivas personalizadas. Para obtener más información, consulte [Configure sus políticas de filtro de correo no deseado](configure-your-spam-filter-policies.md).|
+|Capacidad para configurar acciones en mensajes filtrados por contenido|Hay varias acciones configurables. Por ejemplo, puede eliminar los mensajes filtrados por contenido o enviarlos a la carpeta Correo electrónico no deseado o a cuarentena. Para obtener más información, consulte [Configure sus políticas de filtro de correo no deseado](configure-your-spam-filter-policies.md).|
 |Capacidad para configurar opciones avanzadas para el filtrado agresivo de correo no deseado|Para obtener más información, vea [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) (donde se configuran) y [Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md) (que proporciona detalles específicos acerca de cada una de las opciones).|
-|Filtrado de correo no deseado internacional|Puede configurar EOP para que filtre los mensajes escritos en idiomas específicos o enviados desde países o regiones determinados. Puede configurar hasta 86 idiomas distintos y 250 regiones diferentes. El servicio aplicará la acción configurada para correo no deseado de confianza alta. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).|
+|Filtrado de correo no deseado internacional|Puede configurar EOP para que filtre los mensajes escritos en idiomas específicos o enviados desde países o regiones determinados. Puede configurar hasta 86 idiomas distintos y 250 regiones diferentes. El servicio aplicará la acción configurada para correo no deseado de confianza alta. Para obtener más información, consulte [Configure sus políticas de filtro de correo no deseado](configure-your-spam-filter-policies.md).|
 |Administración de correo no deseado a través de Outlook o Outlook en la web (anteriormente conocido como Outlook Web App)|Los administradores y usuarios finales pueden crear listas de remitentes seguros y listas de remitentes bloqueados. Para obtener más información: <br/>• **Outlook en la web**: vea [bloquear o permitir (configuración del correo electrónico no deseado)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46).  <br/>• **Outlook**: vea [información general sobre el filtro de correo no deseado](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). <br/><br/> Si está usando EOP para proteger los buzones locales, asegúrese de usar la sincronización de directorios para ayudar a garantizar que esta configuración se sincronice con el servicio. Para más información sobre cómo configurar la sincronización de directorios, vea "Usar la sincronización de directorios para administrar usuarios de correo" en [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md).|
 |Enviar correo no deseado mediante el complemento Informes de correo electrónico no deseado para Microsoft Office Outlook|Puede descargar un complemento para Outlook que permite enviar mensajes de correo no deseado a Microsoft para su análisis. Para obtener más información sobre cómo descargar y usar esta herramienta, consulte [Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md). <br/><br/> Si usa Exchange Server 2013 o posterior con EOP, también puede hacer clic con el botón secundario en Outlook en la web para enviar mensajes de correo no deseado, como se describe en [informes de correo no deseado y estafas de suplantación de identidad en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).|
 |Enviar correo no deseado y mensajes que no son correo no deseado mediante un alias de correo electrónico|Puede enviar mensajes de correo no deseado y mensajes que no son correo no deseado a Microsoft por correo electrónico. Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).|

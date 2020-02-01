@@ -1,5 +1,7 @@
 ---
 title: Administración de investigaciones legales en Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Use casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento en Office 365 para administrar la investigación legal de su organización. Si tiene una suscripción a E5, puede analizar más datos de caso con las capacidades de análisis de texto, aprendizaje de la máquina y Codificación predictiva de eDiscovery avanzado.
-ms.openlocfilehash: ce476c93e9c33d949c5615f872b8399a97420bba
-ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
+ms.openlocfilehash: f3d51fbd0df6d4bf4c88f5efef53a3c7f11e190c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "38687604"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600537"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Administración de investigaciones legales en Office 365
 
@@ -52,7 +54,7 @@ La solución Advanced eDiscovery de Microsoft 365 se basa en las capacidades exi
 
 EDiscovery avanzado requiere una suscripción a e5 para la organización de Office 365 o Microsoft 365. Como alternativa, los usuarios con una licencia E3 requieren la suscripción complementaria de cumplimiento avanzado para que pueda administrarlos como custodios en un caso de eDiscovery avanzado.
 
-A continuación, se presenta una introducción rápida al flujo de trabajo integrado en eDiscovery avanzado. Para obtener más información, vea [Overview of The Advanced eDiscovery Solution en Microsoft 365](overview-ediscovery-20.md).
+A continuación, se presenta una introducción rápida al flujo de trabajo integrado en eDiscovery avanzado. Para más información, consulte[ información sobre la solución de eDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
 
 - [Crear un caso](create-new-ediscovery-case.md) para empezar
 

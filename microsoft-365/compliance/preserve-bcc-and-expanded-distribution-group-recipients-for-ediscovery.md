@@ -1,5 +1,7 @@
 ---
 title: Conservar los destinatarios de grupos de distribución expandidos y CCO para la exhibición de documentos electrónicos
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: La retención local, la retención por juicio y las directivas de retención de Office 365 le permiten conservar el contenido de los buzones para cumplir los requisitos de eDiscovery y cumplimiento normativo.
-ms.openlocfilehash: 46ec9f39f4fe5629ca1854fab44304f30784dbf4
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 3d128016e89a5e1eadeae4e2c189588c4b2951a3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38687759"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601757"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservar los destinatarios de grupos de distribución expandidos y CCO para la exhibición de documentos electrónicos
   

@@ -1,10 +1,12 @@
 ---
 title: Asociación de producción digital (DPP) United Kingdom
 description: Microsoft Azure ha obtenido el DPP confirmado en la marca de seguridad para la difusión.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b49a898c3a517b6c9468478ad7b7eddeeee1755c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d621017a125a43fc0fc9523e6ce8700b66077f2e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805243"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602537"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>Asociación de producción digital (DPP) United Kingdom
 
@@ -33,7 +35,7 @@ Se ha otorgado a Microsoft Azure la marca de seguridad DPP confirmada para la di
   
 Esto significa que los broadcasters y los clientes de medios que usan Azure pueden tener la confianza de que su robusto servicio de seguridad y resistente puede ayudarle a satisfacer las demandas exclusivas de la industria de la difusión, desde el desarrollo del programa hasta la transmisión.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -53,7 +55,7 @@ La marca de difusión de Azure es válida durante un año y se renueva anualment
 
 - [Guía del usuario de DPP comprometidos con la lista de comprobación de difusión de seguridad programa](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [Los broadcasters de NABA y DPP se unen para promover los requisitos de seguridad Cyber para los proveedores](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

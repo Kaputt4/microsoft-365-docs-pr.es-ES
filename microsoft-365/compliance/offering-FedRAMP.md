@@ -1,10 +1,12 @@
 ---
 title: Programa de administración de riesgos y autorización Federal (FedRAMP)
 description: Microsoft nos ha otorgado el programa federal de administración de riesgos y autorizaciones P-ATOs y ATOs.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: da8e7e473210c42cb5d95f2701779561c95b6bb3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2b7ad248299c12edfeed880ac731f2d23e9b1949
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804953"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602367"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programa de administración de riesgos y autorización Federal (FedRAMP)
 
@@ -63,7 +65,7 @@ Una vez que se concede una P-ATO, un CSP requiere una autorización (una ATO) de
 - Office 365 (planes empresariales y empresariales) y Office 365 el gobierno de Estados Unidos tienen una agencia FedRAMP de la agencia en el nivel de impacto moderado de la oficina del Departamento de salud y servicios humanos (DHHS) del inspector general. Office 365 U.S. Government fue el primer servicio de colaboración y correo electrónico basado en la nube para obtener esta autorización.
 - Cualquier cliente que desee usar O365 U.S. Government Defense puede usar la DISA P-ATO para generar una agencia ATO para documentar su aceptación de O365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -110,10 +112,10 @@ Sí. Puede usar las certificaciones de los servicios en la nube de Microsoft com
 ## <a name="resources"></a>Recursos
 
 - [Programa de administración de riesgos y autorización Federal](https://www.fedramp.gov/)
-- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Marco de evaluación de seguridad de FedRAMP](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

@@ -1,5 +1,7 @@
 ---
 title: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre el panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: a8bc8dbc2dcd25e3b26b35221cadf9534f9f668b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0e87fde41c78f46aaac55602175a3716ba54fe7b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092199"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599047"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -32,7 +34,7 @@ La información, los informes y los widgets que están disponibles en el panel d
 
 - [Informe de no entrega](mfi-non-delivery-report.md)
 
-- [Informe de dominio no aceptado](mfi-non-accepted-domain-report.md)
+- [Informe de dominios no aceptados](mfi-non-accepted-domain-report.md)
 
 - [Flujo de correo entrante y saliente](mfi-outbound-and-inbound-mail-flow.md)
 

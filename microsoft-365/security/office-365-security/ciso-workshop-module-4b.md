@@ -1,5 +1,7 @@
 ---
 title: 'Taller Director de seguridad de la información (CISO), módulo 4B: estrategia de protección contra amenazas'
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 88cb6ab079afcd420202f5cca47f555895d0d46a
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 38f7a1af7592801a97fd8b5156dcbfaa1c5ebfdf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517509"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599687"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO Workshop Module 4B: estrategia de protección contra amenazas 
 

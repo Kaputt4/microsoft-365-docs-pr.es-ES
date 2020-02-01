@@ -1,5 +1,7 @@
 ---
 title: Solución de problemas de barreras de información
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Use este artículo como guía para solucionar problemas con las barreras de la información.
-ms.openlocfilehash: 07c3c6fc12ec1b288ae9499715ddadb21764f6ef
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b4c9bb46bc1e3c13cdc8b46a95733558714a44df
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970808"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600597"
 ---
 # <a name="troubleshooting-information-barriers"></a>Solución de problemas de barreras de información
 
@@ -144,7 +146,7 @@ Tenga en cuenta que, al ejecutar el cmdlet de aplicación de Directiva, se aplic
 
 2. Según los resultados del paso anterior, realice uno de los siguientes pasos:
   
-    |Estado  |Siguiente paso  |
+    |Estado  |Paso siguiente  |
     |---------|---------|
     |**No iniciado**     |Si ha transcurrido más de 45 minutos desde que se ejecutó el cmdlet **Start-InformationBarrierPoliciesApplication** , revise el registro de auditoría para ver si hay errores en las definiciones de directiva o alguna otra razón por la que la aplicación no se ha iniciado. |
     |**Failed**     |Si se ha producido un error en la aplicación, revise el registro de auditoría. Revise también sus segmentos y directivas. ¿Hay algún usuario asignado a más de un segmento? ¿Hay algún segmento asignado a más de un poliicy? Si es necesario, [modifique los segmentos](information-barriers-edit-segments-policies.md#edit-a-segment) o [edite las directivas](information-barriers-edit-segments-policies.md#edit-a-policy)y, a continuación, vuelva a ejecutar el cmdlet **Start-InformationBarrierPoliciesApplication** .  |
@@ -162,7 +164,7 @@ Asegúrese de que su organización no tiene [directivas de libreta de direccione
 
 2. Ejecute el cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) y revise los resultados.
 
-    |Resultados  |Siguiente paso  |
+    |Resultados  |Paso siguiente  |
     |---------|---------|
     |Las directivas de la libreta de direcciones de Exchange aparecen     |[Quitar directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
     |No existen directivas de libreta de direcciones |Revisar los registros de auditoría para averiguar por qué se produce un error en la aplicación de Directiva |

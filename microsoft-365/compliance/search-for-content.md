@@ -1,5 +1,7 @@
 ---
 title: Buscar contenido en Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Use la herramienta de búsqueda de contenido eDiscovery en el centro de seguridad & cumplimiento para encontrar rápidamente el correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial.
-ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093200"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601547"
 ---
 # <a name="search-for-content-in-office-365"></a>Buscar contenido en Office 365
 
@@ -77,7 +79,7 @@ La búsqueda de contenido es fácil de usar, pero también es una herramienta ef
 
 A veces tiene que realizar tareas de búsqueda de contenido más avanzadas, complejas y repetitivas. En estos casos, es más fácil y rápido usar comandos de PowerShell en el centro de seguridad & cumplimiento. Para facilitar esta tarea, hemos creado una serie de scripts de PowerShell del centro de seguridad & cumplimiento que le ayudarán a completar tareas complejas relacionadas con la búsqueda de contenido.
   
-- [Buscar en carpetas de sitio y buzones específicas](use-content-search-for-targeted-collections.md) (denominada *colección de destino* ) cuando tiene la certeza de que los elementos que responden a un caso se encuentran en esa carpeta 
+- [Buscar en buzones de correo y carpetas específicas](use-content-search-for-targeted-collections.md) (lo que se denomina *colección de destino* ) cuando se tiene la certeza de que los elementos que responden a un caso se encuentran en esa carpeta 
     
 - Buscar una lista de usuarios en [el buzón y en la ubicación de OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) 
     

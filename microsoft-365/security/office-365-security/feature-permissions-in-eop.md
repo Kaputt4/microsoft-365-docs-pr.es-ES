@@ -1,5 +1,7 @@
 ---
 title: Permisos de características en EOP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Los permisos necesarios para hacer tareas de administración en Microsoft Exchange Online Protection (EOP) varían en función de la característica que se administre.
-ms.openlocfilehash: dcf56a5295f7964b2271331deb2e7f8c1ba1635e
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2129df7faaa977d59f8af8082291520d33bc9cc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871856"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599317"
 ---
 # <a name="feature-permissions-in-eop"></a>Permisos de características en EOP
 
@@ -31,7 +33,7 @@ Para ver los permisos necesarios para administrar características de EOP, vea l
 |:-----|:-----|
 |Antimalware|Administración de la organización <br/><br/> Administración de higiene|
 |Contra correo electrónico no deseado|Administración de la organización <br/><br/> Administración de higiene|
-|Reglas de flujo de correo|Administración de la organización <br/><br/> Records Management|
+|Reglas de flujo de correo|Administración de la organización <br/><br/> Administración de registros|
 |Dominios|Administración de la organización <br/><br/> Administración de la organización de solo visualización|
 |Protección contra amenazas avanzada (ATP)|Administración de la organización <br/><br/> Administración de higiene|
 |Conectores de Office 365|Administración de la organización|

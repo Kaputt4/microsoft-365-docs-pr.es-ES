@@ -1,5 +1,7 @@
 ---
 title: Administrar trabajos en la exhibición avanzada de documentos electrónicos
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 37e7712fcd8f499ad48434199aa3f87ea84f7f50
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: f829c6735bc8326a775a9d259da8b64aaa8b02ac
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962237"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600467"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Administrar trabajos en la exhibición avanzada de documentos electrónicos
 
@@ -54,5 +56,5 @@ En la tabla siguiente se describen los distintos Estados de los trabajos.
 | En curso | El trabajo está en curso, puede supervisar el progreso del trabajo en la pestaña **trabajos** . |
 | Se ejecuta correctamente | El trabajo se ha completado correctamente. La fecha y la hora en que se completó el trabajo se muestran en la columna **completado** de la ficha **trabajos** . |
 | Parcialmente correcta | El trabajo se ha realizado parcialmente correctamente. |
-| Failed | Error en el trabajo.  Intente volver a ejecutar la acción que desencadenó el trabajo. Si se produce un error en el trabajo por segunda vez, le recomendamos que se ponga en contacto con el soporte técnico de Microsoft y proporcione la información de soporte técnico del trabajo. |
+| Error | Error en el trabajo.  Intente volver a ejecutar la acción que desencadenó el trabajo. Si se produce un error en el trabajo por segunda vez, le recomendamos que se ponga en contacto con el soporte técnico de Microsoft y proporcione la información de soporte técnico del trabajo. |
 |||

@@ -1,10 +1,12 @@
 ---
 title: Publicación de US Internal Revenue Service 1075
 description: Microsoft tiene controles que cumplen los requisitos de la publicación 1075 de los servicios de ingresos internos de US.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4df4d225658c03433384ca85e5e9d15eed5f1ac8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bb7a805fa927756753e3ba09c3dd5eb2998467e7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804823"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602297"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>Publicación de US Internal Revenue Service 1075
 
@@ -43,7 +45,7 @@ Para ayudar a las agencias gubernamentales en sus esfuerzos de cumplimiento, Mic
 
 Obtenga más información sobre las ventajas de IRS 1075 en la nube de Microsoft: [descargar el fondo de irs 1075](https://aka.ms/irs1075-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 Las autorizaciones de FedRAMP se conceden a tres niveles de impacto en función de las instrucciones del NIST: bajo, medio y alto. Estos clasifican el impacto que la pérdida de confidencialidad, integridad o disponibilidad puede tener en una organización: bajo (efecto limitado), medio (efecto adverso grave) y alto (efecto grave o catastrófico).
 
@@ -80,7 +82,7 @@ No. Los únicos entornos en los que FTI se puede almacenar y procesar son Azure 
 
 - [Publicación de IRS 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
 - [Programa de salvaguardias de la Agencia Tributaria](https://www.irs.gov/uac/Safeguards-Program)
-- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud para la Administración Pública](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

@@ -1,10 +1,12 @@
 ---
 title: Parte US García 10 CFR 810
 description: Los clientes sujetos a los requisitos de control de exportación de US Pérez 10 CFR parte 810 pueden usar Azure Government.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e90609c2cb25f78345c7f4da2b7b2811dd104c16
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f9054c164efa340b489de917fb820e0460123df5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804183"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601977"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>Parte US García 10 CFR 810
 
@@ -32,7 +34,7 @@ FedRAMP ofrece una línea de base adecuada para proporcionar garantías de que A
 
 Además, Azure Government es una nube de la comunidad de administración de US Government que está físicamente separada de la nube de Azure. Proporciona garantías adicionales en relación con los requisitos específicos de detección en segundo plano por parte del gobierno de Estados Unidos, incluidos los controles específicos que restringen el acceso a la información y los sistemas para que los ciudadanos de las operaciones de Azure puedan filtrar a los ciudadanos.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - Intune

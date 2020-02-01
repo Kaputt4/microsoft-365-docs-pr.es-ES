@@ -1,5 +1,7 @@
 ---
 title: Colas y alertas de cola
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden obtener información sobre las alertas de cola y las colas del panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 66bd4116cfb84d15bbecafa269fcc2c7a88789d8
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: 1f3fb139890cbfc6705c3c3c65670b61727fadb3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38290550"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598857"
 ---
 # <a name="queue-alerts-and-queues"></a>Colas y alertas de cola
 

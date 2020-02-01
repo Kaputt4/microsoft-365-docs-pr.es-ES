@@ -1,10 +1,12 @@
 ---
 title: Tráfico internacional en las regulaciones de brazos (ITAR)
 description: Azure Government es compatible con los clientes que crean tráfico internacional en los brazos regs.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a15b787904149073394bfc08a3ae8faf119d7ac8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 045f6c177acd3f5feb0645fb56d25426632638e7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804614"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602197"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Tráfico internacional en las regulaciones de brazos (ITAR)
 
@@ -37,7 +39,7 @@ El ITAR tiene obligaciones específicas para informar sobre infracciones, que pu
   
 Los clientes que quieran hospedar datos regulados por el ITAR deben trabajar con su cuenta de Microsoft y con Microsoft Teams para obtener más información, obtener contratos adecuados y acceder a información relevante sobre la arquitectura del sistema.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
@@ -55,7 +57,7 @@ Ponte en contacto con tu representante de cuentas de Microsoft.
 - [Uso de Azure Government con datos controlados por ITAR](https://aka.ms/azure-itar-guide)
 - [Administración pública de Azure](https://azure.microsoft.com/features/gov/)
 - [Office 365 para el gobierno de Estados Unidos](https://products.office.com/government/office-365-web-services-for-government)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

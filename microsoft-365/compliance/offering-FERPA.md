@@ -1,10 +1,12 @@
 ---
 title: Ley de privacidad y derechos educativos de la familia (FERPA)
 description: Microsoft se alinea con los requisitos de la ley de privacidad y derechos educativos de la serie estadounidense.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 468fa4bb8b6eb2e6b5bc4d94f193560373dfc1e7
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 11fa59476737fd3326fb49427945f183f8b990bc
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805042"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602437"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Ley de privacidad y derechos educativos de la familia (FERPA)
 
@@ -41,7 +43,7 @@ Como resultado de estos compromisos contractuales, los clientes que están sujet
 
 Obtenga información sobre las ventajas de FERPA en la nube de Microsoft: [descargar el fondo de FERPA](https://aka.ms/ferpa-compliance)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 Los servicios a los que Microsoft acuerda ser designados como "funcionario de la escuela" con "intereses educativos legítimos" en los datos del cliente son:
 

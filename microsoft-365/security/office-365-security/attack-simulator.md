@@ -1,5 +1,7 @@
 ---
 title: Simulador de ataques en Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971938"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599827"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 
@@ -39,7 +41,7 @@ Para que un ataque se inicie correctamente, asegúrese de que la cuenta que usa 
 
 Para tener acceso al simulador de ataques &amp; , en el centro de seguridad y cumplimiento, elija **simulador de ataques**de **Administración** \> de amenazas.
 
-## <a name="before-you-begin"></a>Antes de comenzar...
+## <a name="before-you-begin"></a>Antes de empezar...
 
 Asegúrese de que usted y su organización cumplen con los siguientes requisitos para simuladores de ataques:
 

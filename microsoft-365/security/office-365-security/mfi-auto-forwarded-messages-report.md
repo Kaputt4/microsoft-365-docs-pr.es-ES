@@ -1,5 +1,7 @@
 ---
 title: Informe de mensajes reenviados automáticamente
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: f8909a983dab3f752c8396948e3c6e7d11281208
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2949f8991d7c65861fd390d3c843053ad36c0d60
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37093501"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598907"
 ---
 # <a name="auto-forwarded-messages-report"></a>Informe de mensajes reenviados automáticamente
 
@@ -34,6 +36,6 @@ Al hacer clic en el número de mensajes del widget, aparece un panel flotante qu
 
 Se generan dos perspectivas en función de los datos del informe: **nuevos usuarios de reenvío** y **nuevos dominios de reenvío**. Cada conocimiento proporciona un resumen del número de reenviadores o dominios nuevos con un vínculo al **nuevo informe de reenvío** que proporciona más detalles sobre los dos tipos de datos. El **nuevo informe de reenvío** también muestra una vista de escala de tiempo de la actividad nueva y la tabla de detalles identifica quién empezó a reenviar y a qué dominios.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

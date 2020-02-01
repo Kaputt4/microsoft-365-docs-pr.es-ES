@@ -1,5 +1,7 @@
 ---
 title: Informe de clientes de autenticación SMTP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de clientes de autenticación SMTP en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: a273da9e0ebe7987a22669c54f3ebfe103e5933c
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 7dee70de4000b23302348d964010801c8e097744
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306034"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598837"
 ---
 # <a name="smtp-auth-clients-report"></a>Informe de clientes de autenticación SMTP
 

@@ -1,10 +1,12 @@
 ---
 title: Federación contra robos de copyright (FACT)
 description: Microsoft Azure obtuvo la certificación de la Federación contra el robo de copyright en el Reino Unido.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a23cd042004747dd65f53da71817cf571a520de5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2aa68d75f795e670390c913c999c154a0164c18c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805153"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602467"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>Federación contra robos de copyright (FACT)
 
@@ -33,7 +35,7 @@ Basado en el envío voluntario de Microsoft a una auditoría de hechos, el Audit
 
 Obtenga más información sobre las ventajas de FACT en la nube de Microsoft: [descargar el fondo de hechos](https://aka.ms/fact-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 [Azure y Azure Government](https://aka.ms/AzureCompliance)
 

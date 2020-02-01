@@ -1,10 +1,12 @@
 ---
 title: Information Trust Trust Alliance (HITRUST) Common Security Framework (CSF)
 description: Azure y Office 365 están certificados para el marco de seguridad común de información de mantenimiento (HITRUST) de Information Trust Alliance (CSF).
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6085446677e592425d5453aa350541590de1b9d
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: aa93ea90748f4beeb7a6d2ad6f537b098f19376c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558537"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602307"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Information Trust Trust Alliance (HITRUST) Common Security Framework (CSF)
 
@@ -37,7 +39,7 @@ Obtenga información sobre cómo acelerar la implementación de HITRUST con nues
 
 [Descargar la matriz de responsabilidad del cliente de Microsoft Azure HITRUST (CRM) Blueprint v 9.0 d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Intune
@@ -66,7 +68,7 @@ Use Office 365 para administrar la información de estado de forma segura y conf
 
 Acelere el cumplimiento de HITRUST para su solución hospedada en Microsoft Azure rellenando previamente su evaluación con controles de responsabilidad completamente heredados o compartidos para Azure en la herramienta HITRUST MyCSF y colaborando con Microsoft en su revisión.
 
-[Obtener más información](https://go.microsoft.com/fwlink/p/?linkid=2100268)
+[Más información](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -107,7 +109,7 @@ Inicie sesión en la herramienta de® HITRUST MyCSF y rellene previamente la eva
 - [HITRUST CSF 8,1](https://hitrustalliance.net/csf-license-agreement/)
 - [Descripción y aprovechamiento del CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Obtenga más información sobre el programa de responsabilidad compartida de HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

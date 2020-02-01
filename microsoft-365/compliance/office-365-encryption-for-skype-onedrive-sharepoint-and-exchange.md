@@ -1,5 +1,7 @@
 ---
 title: Office 365 cifrado para Skype, OneDrive, SharePoint y Exchange
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 'Resumen: Descripción del cifrado para Skype, OneDrive, SharePoint y Exchange Online.'
-ms.openlocfilehash: 220f3060bd9581b22183bbb56e68c3ec930d0c24
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: cffaab87049f466794706ad6537e663e43d5de91
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38691081"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601847"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Office 365 cifrado para Skype empresarial, OneDrive para la empresa, SharePoint Online y Exchange Online
 

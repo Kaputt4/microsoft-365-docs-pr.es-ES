@@ -1,10 +1,12 @@
 ---
 title: Suplemento de la estrategia de adquisición federal de defensa (DFARS)
 description: Microsoft Azure Government es compatible con los requisitos del Reglamento de adquisición federal de defensa (DFARS).
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f5627194ad21b73cae664c808d2bba9f4254d8b5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1b850db09306f3cb4664433fb5659e8b65b421ba
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805253"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602557"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>Suplemento de la estrategia de adquisición federal de defensa (DFARS)
 
@@ -33,7 +35,7 @@ Los servicios de nube de Microsoft Government ayudan a los clientes de la base i
   
 Obtenga información sobre cómo acelerar la implementación de DFARS con nuestro Blueprint de Azure Security y Compliance: [descargar la matriz de responsabilidades del cliente de la DFARS de Azure: Blueprint](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 Servicios cubiertos para el nivel 5 de impacto DoD
 
@@ -77,6 +79,6 @@ Además, las ofertas de Microsoft fuera del límite certificado por el FedRAMP q
 
 - [Suplemento de la estrategia de adquisición federal de defensa (DFARS)](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
 - [Microsoft Cloud para la Administración Pública](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- [Términos de servicios en línea](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Información sin clasificar controlada (CUI)](https://www.archives.gov/cui/registry/category-list)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

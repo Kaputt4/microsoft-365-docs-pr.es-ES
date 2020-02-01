@@ -1,5 +1,7 @@
 ---
 title: Crear listas de remitentes bloqueados en Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -11,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Las opciones de la lista bloquear remitente incluyen los remitentes bloqueados de Outlook, los remitentes de correo no deseado y las listas de bloqueo de dominio, las listas de direcciones IP bloqueadas y las reglas de flujo de correo de Exchange (reglas de transporte).
-ms.openlocfilehash: 09a90fce31bd1ed9aea8275e2f01cda3ba816b1b
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: fb5228bca7ac0c98a2aafd9d7b582e370698649a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572336"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599547"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados en Office 365
 

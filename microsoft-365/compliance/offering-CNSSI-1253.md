@@ -1,10 +1,12 @@
 ---
 title: Comité de la instrucción máquina de sistemas de seguridad nacional 1253 (CNSSI 1253)
 description: Azure Government cumple con los controles de seguridad de CNSSI 1253 para los sistemas gubernamentales de Estados Unidos que requieren alta confidencialidad, alta integridad y alta disponibilidad.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7e5d72b6a8992b8db91820c04b451979b474aeb9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f65baf936e83e4f5128f207a82bce50100cd58b2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805423"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602597"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Comité de la instrucción máquina de sistemas de seguridad nacional 1253 (CNSSI 1253)
 
@@ -37,7 +39,7 @@ Azure Government actualmente posee una autorización provisional FedRAMP alta pa
   
 El cumplimiento de Azure Government con los requisitos exigentes de CNSSI 1253 significa que Azure puede ofrecer a los clientes del sector público en Estados Unidos una amplia variedad de servicios compatibles con CNSSI 1253, lo que les permite beneficiarse de los ahorros de costos y rigurosas seguridad de la nube de Microsoft.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 
