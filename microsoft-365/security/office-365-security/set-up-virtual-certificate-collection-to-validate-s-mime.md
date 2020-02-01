@@ -1,5 +1,7 @@
 ---
 title: Configurar una colección de certificados virtuales en Exchange Online para validar S/MIME
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,41 +14,41 @@ search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: Los administradores pueden aprender a crear una colección de certificados virtuales que se usará para validar certificados S/MIME en Exchange Online.
-ms.openlocfilehash: f7ccd9995c51385c2d3152bdecc7b9e51ed7456b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 232f45b63a38ce4591c83e4ec7a9c09a03c339d4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970126"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598327"
 ---
-# <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a><span data-ttu-id="17f7a-103">Configurar una colección de certificados virtuales en Exchange Online para validar S/MIME</span><span class="sxs-lookup"><span data-stu-id="17f7a-103">Set up virtual certificate collection in Exchange Online to validate S/MIME</span></span>
+# <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a><span data-ttu-id="ebb88-103">Configurar una colección de certificados virtuales en Exchange Online para validar S/MIME</span><span class="sxs-lookup"><span data-stu-id="ebb88-103">Set up virtual certificate collection in Exchange Online to validate S/MIME</span></span>
 
-<span data-ttu-id="17f7a-104">Como administrador, tendrá que configurar una colección de certificados virtuales en Exchange online que se usará para validar los certificados S/MIME.</span><span class="sxs-lookup"><span data-stu-id="17f7a-104">As an admin, you will need to configure a virtual certificate collection in Exchange Online that will be used to validate S/MIME certificates.</span></span> <span data-ttu-id="17f7a-105">Esta colección de certificados virtuales se configura como un almacén de certificados con una extensión de nombre de archivo SST.</span><span class="sxs-lookup"><span data-stu-id="17f7a-105">This virtual certificate collection is set up as a certificate store with an SST filename extension.</span></span> <span data-ttu-id="17f7a-106">El archivo SST contiene todos los certificados raíz e intermedios que se usan al validar un certificado S/MIME.</span><span class="sxs-lookup"><span data-stu-id="17f7a-106">The SST file contains all the root and intermediate certificates that are used when validating an S/MIME certificate.</span></span>
+<span data-ttu-id="ebb88-104">Como administrador, tendrá que configurar una colección de certificados virtuales en Exchange online que se usará para validar los certificados S/MIME.</span><span class="sxs-lookup"><span data-stu-id="ebb88-104">As an admin, you will need to configure a virtual certificate collection in Exchange Online that will be used to validate S/MIME certificates.</span></span> <span data-ttu-id="ebb88-105">Esta colección de certificados virtuales se configura como un almacén de certificados con una extensión de nombre de archivo SST.</span><span class="sxs-lookup"><span data-stu-id="ebb88-105">This virtual certificate collection is set up as a certificate store with an SST filename extension.</span></span> <span data-ttu-id="ebb88-106">El archivo SST contiene todos los certificados raíz e intermedios que se usan al validar un certificado S/MIME.</span><span class="sxs-lookup"><span data-stu-id="ebb88-106">The SST file contains all the root and intermediate certificates that are used when validating an S/MIME certificate.</span></span>
 
-## <a name="create-and-save-an-sst"></a><span data-ttu-id="17f7a-107">Crear y guardar un SST</span><span class="sxs-lookup"><span data-stu-id="17f7a-107">Create and save an SST</span></span>
+## <a name="create-and-save-an-sst"></a><span data-ttu-id="ebb88-107">Crear y guardar un SST</span><span class="sxs-lookup"><span data-stu-id="ebb88-107">Create and save an SST</span></span>
 
-<span data-ttu-id="17f7a-108">Puede crear este archivo de almacén de certificados SST exportando los certificados de una máquina de confianza mediante el cmdlet **Export-Certificate** en Windows PowerShell y especificando el valor de _tipo_ como SST.</span><span class="sxs-lookup"><span data-stu-id="17f7a-108">You can create this SST certificate store file by exporting the certificates from a trusted machine using the **Export-Certificate** cmdlet in Windows PowerShell and specifying the _Type_ value as SST.</span></span> <span data-ttu-id="17f7a-109">Para obtener instrucciones, consulte [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate).</span><span class="sxs-lookup"><span data-stu-id="17f7a-109">For instructions, see [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate).</span></span>
+<span data-ttu-id="ebb88-108">Puede crear este archivo de almacén de certificados SST exportando los certificados de una máquina de confianza mediante el cmdlet **Export-Certificate** en Windows PowerShell y especificando el valor de _tipo_ como SST.</span><span class="sxs-lookup"><span data-stu-id="ebb88-108">You can create this SST certificate store file by exporting the certificates from a trusted machine using the **Export-Certificate** cmdlet in Windows PowerShell and specifying the _Type_ value as SST.</span></span> <span data-ttu-id="ebb88-109">Para obtener instrucciones, consulte [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate).</span><span class="sxs-lookup"><span data-stu-id="ebb88-109">For instructions, see [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate).</span></span>
 
-<span data-ttu-id="17f7a-110">Una vez que tenga el archivo del almacén de certificados SST, use la siguiente sintaxis en Exchange Online PowerShell para guardar el contenido del archivo SST en el almacén de certificados virtuales de Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="17f7a-110">Once you have the SST certificate store file, use the following syntax in Exchange Online PowerShell to save the SST file contents in the Exchange Online virtual certificate store.</span></span> <span data-ttu-id="17f7a-111">Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="17f7a-111">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
+<span data-ttu-id="ebb88-110">Una vez que tenga el archivo del almacén de certificados SST, use la siguiente sintaxis en Exchange Online PowerShell para guardar el contenido del archivo SST en el almacén de certificados virtuales de Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="ebb88-110">Once you have the SST certificate store file, use the following syntax in Exchange Online PowerShell to save the SST file contents in the Exchange Online virtual certificate store.</span></span> <span data-ttu-id="ebb88-111">Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="ebb88-111">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
 
 ```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)
 ```
 
-<span data-ttu-id="17f7a-112">En este ejemplo se importa el archivo SST C:\Mis Documentos\exported rules de certificados Store. SST.</span><span class="sxs-lookup"><span data-stu-id="17f7a-112">This example imports the SST file C:\My Documents\Exported Certificate Store.sst.</span></span>
+<span data-ttu-id="ebb88-112">En este ejemplo se importa el archivo SST C:\Mis Documentos\exported rules de certificados Store. SST.</span><span class="sxs-lookup"><span data-stu-id="ebb88-112">This example imports the SST file C:\My Documents\Exported Certificate Store.sst.</span></span>
 
 ```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
 ```
 
-<span data-ttu-id="17f7a-113">Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig).</span><span class="sxs-lookup"><span data-stu-id="17f7a-113">For detailed syntax and parameter information, see [Set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig).</span></span>
+<span data-ttu-id="ebb88-113">Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig).</span><span class="sxs-lookup"><span data-stu-id="ebb88-113">For detailed syntax and parameter information, see [Set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig).</span></span>
 
-## <a name="ensuring-a-certificate-is-valid"></a><span data-ttu-id="17f7a-114">Garantizar que un certificado es válido</span><span class="sxs-lookup"><span data-stu-id="17f7a-114">Ensuring a certificate is valid</span></span>
+## <a name="ensuring-a-certificate-is-valid"></a><span data-ttu-id="ebb88-114">Garantizar que un certificado es válido</span><span class="sxs-lookup"><span data-stu-id="ebb88-114">Ensuring a certificate is valid</span></span>
 
-<span data-ttu-id="17f7a-115">En Exchange Online, solo se usa SST para la validación de certificados.</span><span class="sxs-lookup"><span data-stu-id="17f7a-115">In Exchange Online, only the SST is used for certificate validation.</span></span>
+<span data-ttu-id="ebb88-115">En Exchange Online, solo se usa SST para la validación de certificados.</span><span class="sxs-lookup"><span data-stu-id="ebb88-115">In Exchange Online, only the SST is used for certificate validation.</span></span>
 
-## <a name="more-information"></a><span data-ttu-id="17f7a-116">Más información</span><span class="sxs-lookup"><span data-stu-id="17f7a-116">More Information</span></span>
+## <a name="more-information"></a><span data-ttu-id="ebb88-116">Más información</span><span class="sxs-lookup"><span data-stu-id="ebb88-116">More Information</span></span>
 
-[<span data-ttu-id="17f7a-117">S/MIME para la firma y el cifrado de mensajes</span><span class="sxs-lookup"><span data-stu-id="17f7a-117">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
+[<span data-ttu-id="ebb88-117">S/MIME para la firma y el cifrado de mensajes</span><span class="sxs-lookup"><span data-stu-id="ebb88-117">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
 
-[<span data-ttu-id="17f7a-118">Get-SmimeConfig</span><span class="sxs-lookup"><span data-stu-id="17f7a-118">Get-SmimeConfig</span></span>](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-smimeconfig)
+[<span data-ttu-id="ebb88-118">Get-SmimeConfig</span><span class="sxs-lookup"><span data-stu-id="ebb88-118">Get-SmimeConfig</span></span>](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-smimeconfig)
