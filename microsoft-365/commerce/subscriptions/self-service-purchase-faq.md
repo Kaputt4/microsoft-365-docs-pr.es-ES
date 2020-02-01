@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre las compras de autoservicio.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594104"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661916"
 ---
 # <a name="self-service-purchase-faq"></a>Preguntas más frecuentes sobre las compras sin asistencia
 
@@ -101,7 +101,7 @@ La persona que compre la suscripción a través de la compra de autoservicio se 
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>¿Qué funcionalidades tiene un administrador para las compras de autoservicio?
 
-Los administradores pueden ver todas las compras de autoservicio realizadas en su organización en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>. Pueden ver el producto, el nombre del comprador, las suscripciones adquiridas, la fecha de expiración, el historial de pedidos, el precio de compra y los usuarios asignados para cada una de las compras de servicios automáticos. Si es necesario para su organización, los administradores podrán desactivar las compras de autoservicio por producto a través de PowerShell. Los administradores tienen las mismas directivas de administración y acceso de datos que los productos adquiridos a través de la compra de autoservicio o de forma centralizada.
+Los administradores pueden ver todas las compras de autoservicio realizadas en su organización en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>. Pueden ver el producto, el nombre del comprador, las suscripciones adquiridas, la fecha de expiración, el historial de pedidos, el precio de compra y los usuarios asignados para cada una de las compras de servicios automáticos. En el centro de administración de la plataforma de energía, los administradores también pueden ver la capacidad de las compras sin ayuda del servicio. Si es necesario para su organización, los administradores podrán desactivar las compras de autoservicio por producto a través de PowerShell. Los administradores tienen las mismas directivas de administración y acceso de datos que los productos adquiridos a través de la compra de autoservicio o de forma centralizada.
 
 Los administradores también pueden controlar si los usuarios de su organización pueden realizar compras sin servicio de asistencia. Para obtener más información, vea [usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce](allowselfservicepurchase-powershell.md).
 
