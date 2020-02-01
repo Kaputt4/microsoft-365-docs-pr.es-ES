@@ -5,6 +5,8 @@ keywords: Office 365, solicitud del interesado, Microsoft 365, Microsoft 365 Edu
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 685e653d7f0b8d31990724c58eccafe9a25ae6a5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004935"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628126"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado de Office 365 para el RGPD y la CCPA
 
@@ -90,7 +92,7 @@ Una forma rápida de identificar las aplicaciones de Office 365 que los usuarios
 
 ## <a name="using-the-content-search-ediscovery-tool-to-respond-to-dsrs"></a>Usar la herramienta Búsqueda de contenido eDiscovery para responder a solicitudes del interesado
 
-Al buscar datos personales en el conjunto más amplio de datos que su organización crea y almacena en Office 365, debería considerar qué aplicaciones es más probable que se hayan usado para crear los datos que busca. Microsoft calcula que más del 90 % de los datos de una organización que se almacenan en Office 365 se han creado en Word, Excel, PowerPoint, OneNote y Outlook. Es muy probable que los documentos creados en estas aplicaciones de Office, aunque se hayan adquirido mediante Office 365 ProPlus o una licencia perpetua de Office, estén almacenados en un sitio de SharePoint Online, en la cuenta de OneDrive para la Empresa de un usuario o en el buzón de Exchange Online de un usuario. Esto significa que puede usar la herramienta Búsqueda de contenido eDiscovery para buscar (y realizar otras acciones relacionadas con solicitudes del interesado) en sitios de SharePoint Online, cuentas de OneDrive para la Empresa y buzones de Exchange Online (incluidos los sitios y buzones asociados a Grupos de Office 365, Microsoft Teams, EDU Assignments y StaffHub) para encontrar documentos y elementos del buzón que puedan ser relevantes para la DSR que investiga. También puede usar la herramienta Búsqueda de contenido para descubrir datos del cliente creados en otras aplicaciones de Office 365.
+Al buscar datos personales en el conjunto más amplio de datos que su organización crea y almacena en Office 365, debería considerar qué aplicaciones es más probable que se hayan usado para crear los datos que busca. Microsoft calcula que más del 90 % de los datos de una organización que se almacenan en Office 365 se han creado en Word, Excel, PowerPoint, OneNote y Outlook. Es muy probable que los documentos creados en estas aplicaciones de Office, aunque se hayan adquirido mediante Office 365 ProPlus o una licencia perpetua de Office, estén almacenados en un sitio de SharePoint Online, en la cuenta de OneDrive para la Empresa de un usuario o en el buzón de Exchange Online de un usuario. Esto significa que puede usar la herramienta Búsqueda de contenido eDiscovery para buscar (y realizar otras acciones relacionadas con solicitudes del interesado) en sitios de SharePoint Online, cuentas de OneDrive para la Empresa y buzones de Exchange Online (incluidos los sitios y buzones asociados a Grupos de Office 365, Microsoft Teams y EDU Assignments) para encontrar documentos y elementos del buzón que puedan ser relevantes para la DSR que investiga. También puede usar la herramienta Búsqueda de contenido para descubrir datos del cliente creados en otras aplicaciones de Office 365.
 
 En la tabla siguiente se enumeran las aplicaciones de Office 365 que usan los usuarios para crear contenido ellos mismos y que puede detectarse con la Búsqueda de contenido. Esta sección de la guía DSR ofrece instrucciones sobre cómo descubrir, obtener acceso, exportar y eliminar datos creados con estas aplicaciones de Office 365.
 
@@ -631,9 +633,8 @@ Aunque la gran mayoría de datos del cliente se crean y producen con las aplicac
 | ![Icono de Access](media/o365-access-64x64.png) <br> [Access](#access) | ![Icono de Office](media/O365-DSR-Doc_image22.png) <br> [Aplicaciones empresariales<br> para Office 365](#business-apps-for-office-365) | ![Icono de Office](media/O365-DSR-Doc_image22.png) <br> [Educación](#education)|
 | ![Icono de flujo](media/o365-flow-64x64.png) <br> [Flujo](#flow) | ![Icono de formularios](media/o365-forms-64x64.png) <br> [Formularios](#forms) |![Icono de Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
 | ![Icono de Planificador](media/o365-planner-64x64.png) <br> [Planificador](#planner) |![Icono de PowerApps](media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Icono de Power BI](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Icono de proyecto](media/o365-project-64x64.png) <br> [Proyecto](#project-online) |![Icono de Publisher](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Icono de StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](#staffhub) |
-|![Icono de secuencia](media/o365-stream-64x64.png) <br> [Secuencia](#stream) |![Icono de Sway](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Icono de pizarra](media/O365-DSR-Doc_image36.png) <br> [Pizarra](#whiteboard) |
-||![Icono de Yammer](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+|![Icono de proyecto](media/o365-project-64x64.png) <br> [Proyecto](#project-online) |![Icono de Publisher](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Icono de secuencia](media/o365-stream-64x64.png) <br> [Secuencia](#stream) |![Icono de Sway](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Icono de pizarra](media/O365-DSR-Doc_image36.png) <br> [Pizarra](#whiteboard) |
+|![Icono de Yammer](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### <a name="access"></a>Access
@@ -1164,33 +1165,6 @@ Puede proporcionar un asunto de datos con el archivo de Publisher real o, como s
 #### <a name="delete"></a>Eliminar
 
 Puede eliminar el contenido de una publicación, eliminar páginas completas o eliminar un archivo completo de Publisher. Vea [Agregar o eliminar páginas](https://support.office.com/article/add-or-delete-pages-daf71e39-86e0-4bbc-a186-d5ec70450b08)
-
-### <a name="staffhub"></a>StaffHub
-
-Las siguientes secciones explican cómo usar la función integrada en la aplicación de Microsoft StaffHub para acceder a datos personales, buscarlos, exportarlos y eliminarlos.
-
-#### <a name="discover"></a>Detectar
-
-La mayoría de los datos de StaffHub está disponible para todos los miembros del equipo de StaffHub y administradores. Para revisar los datos de StaffHub, haga que un miembro del grupo o el administrador vaya a <https://staffhub.office.com> para buscar datos potencialmente relevantes respecto a la solicitud de interesado o haga que le agreguen como miembro de su equipo para que puede revisar la información en StaffHub en busca de información relevante.
-
-#### <a name="access"></a>Acceder
-
-Cuando encuentre contenido de StaffHub relevante, puede verlo y tomar capturas de pantalla de los datos que le gustaría proporcionar al interesado desde la aplicación o descargarlos.
-
-- **Información de programación**: la pestaña **Programación** de StaffHub ofrece una **vista Personas** y una **vista Turnos** que le permiten ver la programación diaria, semanal y mensual de los miembros del equipo o los turnos de trabajo. Estas vistas se pueden descargar en Excel, seleccione los puntos suspensivos en la esquina superior izquierda de la aplicación web StaffHub y haga clic en **Exportar programación**.
-- **Archivos compartidos**: todos los archivos de StaffHub se almacenan en SharePoint Online y por tanto es posible descubrirlos, acceder a ellos y exportarlos mediante la búsqueda de contenido tal como se describió anteriormente. También pueden verse desde StaffHub en la pestaña **Archivos**.
-- **Mensajería**: actualmente, se puede acceder a los mensajes siguiendo estos pasos para acceder a datos específicos de usuarios en el siguiente elemento. En el futuro, todos los mensajes de StaffHub se almacenarán en Microsoft Teams, lo que supondrá que podrá usar la herramienta de búsqueda de contenido para acceder a ellos.
-- **Datos específicos de usuarios**: los datos específicos de usuarios se componen de la configuración de usuario, la fuente de actividades del usuario y la solicitud de historial del usuario. Los administradores y los miembros del equipo no pueden ver ninguno de estos datos. Para obtener acceso a los datos específicos del usuario o exportarlos, haga que el interesado inicie sesión con su cuenta de StaffHub. De forma alternativa, si el interesado ha dejado la organización, puede obtener sus datos haciendo que el administrador reinicie la cuenta de forma que usted o el administrador puedan iniciar sesión en dicha cuenta.
-- **Kronos**: StaffHub admite conexiones a [Kronos](https://www.kronos.com/), que es una herramienta de administración de recursos de terceros. StaffHub y Kronos son encargados del tratamiento independientes y tratan los datos de su organización en los términos individuales que haya aceptado con cada parte. Si su DSR está relacionado con los datos mantenidos por Kronos, debe ponerse en contacto con Kronos para obtener asistencia con el DSR y viceversa.
-
-#### <a name="delete"></a>Eliminar
-
-- Un administrador de grupo puede eliminar la mayoría del patrón de contenido de datos de la aplicación en StaffHub. Como se mencionó anteriormente en la sección Descubrir de StaffHub, puede agregarse a un equipo como administrador de grupo y eliminar los datos.
-- Cuando una cuenta de usuario se elimina permanentemente, StaffHub registra durante 30 días el nombre, el número de teléfono, la dirección de correo electrónico y la imagen de perfil del usuario días de la cuenta que se está eliminando.
-
-#### <a name="export"></a>Exportar
-
-Consulte la sección [Acceder](#access-12) de StaffHub.
 
 ### <a name="stream"></a>Stream
 
@@ -1794,8 +1768,9 @@ La siguiente tabla enumeran los cambios realizados en la Guía de solicitudes de
 |18/09/2018 | [Whiteboard](#whiteboard) |La vista previa de Whiteboard ya no está en vista previa y se ha publicado para disponibilidad general. Por lo tanto, se ha cambiado el nombre de la sección de vista previa de Whiteboard a "Whiteboard para PC, Surface Hub y otras plataformas"; los procedimientos para el acceso, la exportación y la eliminación de datos se han eliminado de esta sección y han sido reemplazados con un vínculo al artículo de soporte técnico de Whiteboard.|
 |08/11/2018 | [Workplace Analytics](#workplace-analytics) |Añadidas instrucciones paso a paso a la sección Eliminar acerca de cómo quitar a un interesado de Workplace Analytics y quitar la información sobre un interesado de un informe de Workplace Analytics.|
 |12/11/2018| Todo| Se han arreglado los marcadores y los vínculos a temas externos que no funcionaban.|
-|9/1/2019|[StaffHub](#staffhub)|En la sección Eliminar se ha actualizado la descripción de lo que ocurre cuando una cuenta de usuario se elimina permanentemente.|
+|9/1/2019| StaffHub |En la sección Eliminar se ha actualizado la descripción de lo que ocurre cuando una cuenta de usuario se elimina permanentemente.|
 |8/5/2019| [Publisher](#publisher)|Contenido agregado sobre cómo responder a solicitudes del interesado sobre Publisher.|
 |11/7/2019| [MyAnalytics](#myanalytics)|La capacidad de un administrador de usar la herramienta de caso de DSR en el Centro de seguridad y cumplimiento de Office 365 para exportar los datos de MyAnalytics se quitó porque todos los usuarios ya pueden ver sus datos directamente en la aplicación MyAnalytics. |
 |6/11/2019|[Educación](#education)|Vinculado a nuevos temas sobre el uso de los scripts de PowerShell para obtener una lista de clases para alumnos concretos y, a continuación, exportar o eliminar sus datos.|
+|28/1/2020| Todo | Se quitó StaffHub del documento, StaffHub se ha retirado. |
 ||||

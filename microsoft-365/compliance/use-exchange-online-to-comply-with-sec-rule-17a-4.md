@@ -1,5 +1,7 @@
 ---
 title: Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates ha validado que, cuando Exchange Online y el Centro de seguridad y cumplimiento se configuran según las recomendaciones, cumplen con los requisitos de almacenamiento relevantes de las normas CFTC 1.31(c)-(d), FINRA 4511 y SEC 17a-4. Puede descargar la evaluación.
-ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
-ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
+ms.openlocfilehash: dc61521043d176781c2a6fbd9e1b283cc93eb270
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41122429"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628596"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
 
@@ -67,6 +69,8 @@ Se puede bloquear una directiva de retención mediante el uso de PowerShell. Par
 
 Actualmente existen algunas limitaciones para Exchange Online:
 
-- La auditoría de nivel de elemento no está disponible en los buzones de grupo de Office 365.
 - Las comunicaciones en conversaciones no están disponibles para los mensajes de canal y de chat de Teams.
 - Los “me gusta” no se conservan para los mensajes de canal y de chat de Teams.
+
+> [!NOTE]
+> La auditoría de nivel de elemento no está disponible en los buzones de grupo de Office 365. Para más información, vea [Administrar auditoría del buzón](enable-mailbox-auditing.md)..
