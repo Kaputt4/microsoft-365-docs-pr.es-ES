@@ -5,6 +5,8 @@ keywords: Microsoft 365, M365, protección contra amenazas de Microsoft, MTP, ce
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 manager: dansimp
@@ -12,28 +14,28 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: c2bb0b088a40511eea36348d39790fd5e88fa40b
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 9f647ba306215d20d6fb1d0c7dbfd8d3b96fb909
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210165"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600247"
 ---
-# <a name="hunt-for-threats-in-microsoft-365"></a><span data-ttu-id="76114-104">Buscar amenazas en Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="76114-104">Hunt for threats in Microsoft 365</span></span>
+# <a name="hunt-for-threats-in-microsoft-365"></a><span data-ttu-id="5551c-104">Buscar amenazas en Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="5551c-104">Hunt for threats in Microsoft 365</span></span>
 
-<span data-ttu-id="76114-105">Con las capacidades de búsqueda de amenazas en el centro de seguridad de Microsoft 365, puede buscar de forma proactiva amenazas en su organización que afectan el correo electrónico y los datos, los dispositivos y las identidades.</span><span class="sxs-lookup"><span data-stu-id="76114-105">With threat hunting capabilities in the Microsoft 365 security center, you can proactively find threats in your organization affecting email and data, devices, and identities.</span></span> <span data-ttu-id="76114-106">Desde la pantalla de **búsqueda** , puede acceder a las herramientas de búsqueda de amenazas que están disponibles en varias soluciones:</span><span class="sxs-lookup"><span data-stu-id="76114-106">From the **Hunting** screen, you can access threat hunting tools made available by various solutions:</span></span>
-- <span data-ttu-id="76114-107">Office 365 ATP: [Buscar amenazas para el correo electrónico y los datos](../office-365-security/office-365-atp.md)</span><span class="sxs-lookup"><span data-stu-id="76114-107">Office 365 ATP — [hunt for threats to email and data](../office-365-security/office-365-atp.md)</span></span>
-- <span data-ttu-id="76114-108">Microsoft defender ATP — [Buscar amenazas a los dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)</span><span class="sxs-lookup"><span data-stu-id="76114-108">Microsoft Defender ATP — [hunt for threats to devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)</span></span>
-- <span data-ttu-id="76114-109">ATP de Azure: [Buscar amenazas a identidades](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)</span><span class="sxs-lookup"><span data-stu-id="76114-109">Azure ATP — [hunt for threats to identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)</span></span>
+<span data-ttu-id="5551c-105">Con las capacidades de búsqueda de amenazas en el centro de seguridad de Microsoft 365, puede buscar de forma proactiva amenazas en su organización que afectan el correo electrónico y los datos, los dispositivos y las identidades.</span><span class="sxs-lookup"><span data-stu-id="5551c-105">With threat hunting capabilities in the Microsoft 365 security center, you can proactively find threats in your organization affecting email and data, devices, and identities.</span></span> <span data-ttu-id="5551c-106">Desde la pantalla de **búsqueda** , puede acceder a las herramientas de búsqueda de amenazas que están disponibles en varias soluciones:</span><span class="sxs-lookup"><span data-stu-id="5551c-106">From the **Hunting** screen, you can access threat hunting tools made available by various solutions:</span></span>
+- <span data-ttu-id="5551c-107">Office 365 ATP: [Buscar amenazas para el correo electrónico y los datos](../office-365-security/office-365-atp.md)</span><span class="sxs-lookup"><span data-stu-id="5551c-107">Office 365 ATP — [hunt for threats to email and data](../office-365-security/office-365-atp.md)</span></span>
+- <span data-ttu-id="5551c-108">Microsoft defender ATP — [Buscar amenazas a los dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)</span><span class="sxs-lookup"><span data-stu-id="5551c-108">Microsoft Defender ATP — [hunt for threats to devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)</span></span>
+- <span data-ttu-id="5551c-109">ATP de Azure: [Buscar amenazas a identidades](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)</span><span class="sxs-lookup"><span data-stu-id="5551c-109">Azure ATP — [hunt for threats to identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)</span></span>
 
 ![Página de búsqueda](../images/hunt.png)
 
 
-## <a name="hunt-with-microsoft-threat-protection"></a><span data-ttu-id="76114-111">Búsqueda con la protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="76114-111">Hunt with Microsoft Threat Protection</span></span>
+## <a name="hunt-with-microsoft-threat-protection"></a><span data-ttu-id="5551c-111">Búsqueda con la protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="5551c-111">Hunt with Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="76114-112">[Active la protección contra amenazas de Microsoft](mtp-enable.md) para obtener la interfaz de consulta de búsqueda avanzada directamente en el centro de seguridad de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="76114-112">[Turn on Microsoft Threat Protection](mtp-enable.md) to get the advanced hunting query interface directly in the Microsoft 365 security center.</span></span> <span data-ttu-id="76114-113">Con la [búsqueda avanzada](advanced-hunting-overview.md), puede crear consultas únicas que buscan datos de ATP de Microsoft defender, datos de cobertura de dispositivos integrados y Office 365 ATP, que proporcionan datos de los correos electrónicos.</span><span class="sxs-lookup"><span data-stu-id="76114-113">With [advanced hunting](advanced-hunting-overview.md), you can create single queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails.</span></span>
+<span data-ttu-id="5551c-112">[Active la protección contra amenazas de Microsoft](mtp-enable.md) para obtener la interfaz de consulta de búsqueda avanzada directamente en el centro de seguridad de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="5551c-112">[Turn on Microsoft Threat Protection](mtp-enable.md) to get the advanced hunting query interface directly in the Microsoft 365 security center.</span></span> <span data-ttu-id="5551c-113">Con la [búsqueda avanzada](advanced-hunting-overview.md), puede crear consultas únicas que buscan datos de ATP de Microsoft defender, datos de cobertura de dispositivos integrados y Office 365 ATP, que proporcionan datos de los correos electrónicos.</span><span class="sxs-lookup"><span data-stu-id="5551c-113">With [advanced hunting](advanced-hunting-overview.md), you can create single queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="76114-114">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="76114-114">Related topics</span></span>
-- [<span data-ttu-id="76114-115">Información general sobre la búsqueda avanzada</span><span class="sxs-lookup"><span data-stu-id="76114-115">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="76114-116">Introducción a la Protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="76114-116">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
-- [<span data-ttu-id="76114-117">Habilitar la Protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="76114-117">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)
+## <a name="related-topics"></a><span data-ttu-id="5551c-114">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="5551c-114">Related topics</span></span>
+- [<span data-ttu-id="5551c-115">Información general sobre la búsqueda avanzada</span><span class="sxs-lookup"><span data-stu-id="5551c-115">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="5551c-116">Introducción a la Protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="5551c-116">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
+- [<span data-ttu-id="5551c-117">Habilitar la Protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="5551c-117">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)

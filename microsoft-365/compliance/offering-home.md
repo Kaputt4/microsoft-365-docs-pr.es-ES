@@ -3,6 +3,8 @@ title: Oferta de cumplimiento de Microsoft
 layout: LandingPage
 description: Obtenga información sobre cómo los productos y servicios de Microsoft ayudan a su organización a cumplir los estándares de cumplimiento normativo.
 author: robmazz
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 manager: laurawi
 ms.topic: landing-page
@@ -11,12 +13,12 @@ localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 256827bdf545487a06530d246c678152b63c3d4c
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: cec221e7695b939f79e71dc0b6ba1156ce724745
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558557"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601947"
 ---
 # <a name="microsoft-compliance-offerings"></a>Oferta de cumplimiento de Microsoft
 

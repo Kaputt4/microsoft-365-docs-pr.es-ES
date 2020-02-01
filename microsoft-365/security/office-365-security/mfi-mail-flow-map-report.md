@@ -1,5 +1,7 @@
 ---
 title: Informe de mapa de flujo de correo
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,45 +11,45 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de mapa de flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: a72cfed9bca57a0f3cecd13d83a6c87f05d40a1a
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 266626b46e3e1db559178c66a716a5a8ce347986
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306144"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598897"
 ---
-# <a name="mail-flow-map-report"></a><span data-ttu-id="62207-103">Informe de mapa de flujo de correo</span><span class="sxs-lookup"><span data-stu-id="62207-103">Mail flow map report</span></span>
+# <a name="mail-flow-map-report"></a><span data-ttu-id="ece8a-103">Informe de mapa de flujo de correo</span><span class="sxs-lookup"><span data-stu-id="ece8a-103">Mail flow map report</span></span>
 
-<span data-ttu-id="62207-104">Este informe proporciona información sobre cómo fluye el correo a través de la organización de Office 365.</span><span class="sxs-lookup"><span data-stu-id="62207-104">This report gives insights as to how mail flows through your Office 365 organization.</span></span> <span data-ttu-id="62207-105">Puede usar esta información para aprender patrones, identificar anomalías y corregir problemas a medida que se produzcan.</span><span class="sxs-lookup"><span data-stu-id="62207-105">You can use this information to learn patterns, identify anomalies, and fix issues as they arise.</span></span>
+<span data-ttu-id="ece8a-104">Este informe proporciona información sobre cómo fluye el correo a través de la organización de Office 365.</span><span class="sxs-lookup"><span data-stu-id="ece8a-104">This report gives insights as to how mail flows through your Office 365 organization.</span></span> <span data-ttu-id="ece8a-105">Puede usar esta información para aprender patrones, identificar anomalías y corregir problemas a medida que se produzcan.</span><span class="sxs-lookup"><span data-stu-id="ece8a-105">You can use this information to learn patterns, identify anomalies, and fix issues as they arise.</span></span>
 
 ![El informe de mapa de flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento](../media/mail-flow-map-selected.png)
 
-## <a name="mail-flow-map-widget"></a><span data-ttu-id="62207-107">Widget de mapa de flujo de correo</span><span class="sxs-lookup"><span data-stu-id="62207-107">Mail flow map widget</span></span>
+## <a name="mail-flow-map-widget"></a><span data-ttu-id="ece8a-107">Widget de mapa de flujo de correo</span><span class="sxs-lookup"><span data-stu-id="ece8a-107">Mail flow map widget</span></span>
 
-<span data-ttu-id="62207-108">De forma predeterminada, el mapa de flujo de correo muestra el patrón de flujo de correo de alto nivel del día anterior.</span><span class="sxs-lookup"><span data-stu-id="62207-108">By default, the mail flow map shows the high level mail flow pattern from the previous day.</span></span> <span data-ttu-id="62207-109">Puede usar las flechas izquierda y derecha para los distintos días.</span><span class="sxs-lookup"><span data-stu-id="62207-109">You can use the left and right arrows for different days.</span></span> <span data-ttu-id="62207-110">Al colocar el cursor del mouse sobre cada área del informe, se mostrará el volumen de correo desde y hacia la organización de Office 365, tal como se muestra en el siguiente diagrama:</span><span class="sxs-lookup"><span data-stu-id="62207-110">Hovering your mouse cursor over each area in the report will show the volume of mail to and from your Office 365 organization as shown in the following diagram:</span></span>
+<span data-ttu-id="ece8a-108">De forma predeterminada, el mapa de flujo de correo muestra el patrón de flujo de correo de alto nivel del día anterior.</span><span class="sxs-lookup"><span data-stu-id="ece8a-108">By default, the mail flow map shows the high level mail flow pattern from the previous day.</span></span> <span data-ttu-id="ece8a-109">Puede usar las flechas izquierda y derecha para los distintos días.</span><span class="sxs-lookup"><span data-stu-id="ece8a-109">You can use the left and right arrows for different days.</span></span> <span data-ttu-id="ece8a-110">Al colocar el cursor del mouse sobre cada área del informe, se mostrará el volumen de correo desde y hacia la organización de Office 365, tal como se muestra en el siguiente diagrama:</span><span class="sxs-lookup"><span data-stu-id="ece8a-110">Hovering your mouse cursor over each area in the report will show the volume of mail to and from your Office 365 organization as shown in the following diagram:</span></span>
 
 ![Flechas izquierda y derecha en el widget mapa de flujo de correo](../media/mail-flow-map-widget.png)
 
-## <a name="overview"></a><span data-ttu-id="62207-112">Información general</span><span class="sxs-lookup"><span data-stu-id="62207-112">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="ece8a-112">Información general</span><span class="sxs-lookup"><span data-stu-id="ece8a-112">Overview</span></span>
 
-<span data-ttu-id="62207-113">Al hacer clic en el widget **mapa de flujo de correo** , irá al informe de mapa de flujo de **correo** .</span><span class="sxs-lookup"><span data-stu-id="62207-113">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span> <span data-ttu-id="62207-114">Aquí puede ver el nivel de informe más granular, puede hacer clic en ver tabla de detalles para ver los datos detallados.</span><span class="sxs-lookup"><span data-stu-id="62207-114">Here you can see more granular level of report, you can click View details table to see detailed data.</span></span> <span data-ttu-id="62207-115">También puede descargar el informe detallado haciendo clic en Request Report.</span><span class="sxs-lookup"><span data-stu-id="62207-115">You can also download the detailed report by clicking Request report.</span></span>
+<span data-ttu-id="ece8a-113">Al hacer clic en el widget **mapa de flujo de correo** , irá al informe de mapa de flujo de **correo** .</span><span class="sxs-lookup"><span data-stu-id="ece8a-113">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span> <span data-ttu-id="ece8a-114">Aquí puede ver el nivel de informe más granular, puede hacer clic en ver tabla de detalles para ver los datos detallados.</span><span class="sxs-lookup"><span data-stu-id="ece8a-114">Here you can see more granular level of report, you can click View details table to see detailed data.</span></span> <span data-ttu-id="ece8a-115">También puede descargar el informe detallado haciendo clic en Request Report.</span><span class="sxs-lookup"><span data-stu-id="ece8a-115">You can also download the detailed report by clicking Request report.</span></span>
 
 ![Vista general en el informe de mapa de flujo de correo](../media/mail-flow-map-overview.png)
 
-## <a name="details"></a><span data-ttu-id="62207-117">Detalles</span><span class="sxs-lookup"><span data-stu-id="62207-117">Details</span></span>
+## <a name="details"></a><span data-ttu-id="ece8a-117">Detalles</span><span class="sxs-lookup"><span data-stu-id="ece8a-117">Details</span></span>
 
-<span data-ttu-id="62207-118">De forma predeterminada, **Mostrar datos para** se establece en el valor **información general**.</span><span class="sxs-lookup"><span data-stu-id="62207-118">By default, **Show data for** is set to the value **Overview**.</span></span> <span data-ttu-id="62207-119">Al hacer clic en la lista desplegable y seleccionar **detalles**, la vista cambia a los detalles del nivel de dominio.</span><span class="sxs-lookup"><span data-stu-id="62207-119">When you click on the drop down and select **Detail**, the view switches to the domain level detail.</span></span>
+<span data-ttu-id="ece8a-118">De forma predeterminada, **Mostrar datos para** se establece en el valor **información general**.</span><span class="sxs-lookup"><span data-stu-id="ece8a-118">By default, **Show data for** is set to the value **Overview**.</span></span> <span data-ttu-id="ece8a-119">Al hacer clic en la lista desplegable y seleccionar **detalles**, la vista cambia a los detalles del nivel de dominio.</span><span class="sxs-lookup"><span data-stu-id="ece8a-119">When you click on the drop down and select **Detail**, the view switches to the domain level detail.</span></span>
 
 ![Seleccione detalle en Mostrar datos para en la vista de información general en el informe de mapa de flujo de correo](../media/mail-flow-map-select-detail.png)
 
-<span data-ttu-id="62207-121">Se enumeran los dominios principales de remitente y destinatario, y el resto se colocará en **otros** como se muestra en los siguientes diagramas:</span><span class="sxs-lookup"><span data-stu-id="62207-121">The top sender and recipient domains are listed, and the rest will be put in **Others** as shown in the following diagrams:</span></span>
+<span data-ttu-id="ece8a-121">Se enumeran los dominios principales de remitente y destinatario, y el resto se colocará en **otros** como se muestra en los siguientes diagramas:</span><span class="sxs-lookup"><span data-stu-id="ece8a-121">The top sender and recipient domains are listed, and the rest will be put in **Others** as shown in the following diagrams:</span></span>
 
 ![Vista de detalles en el informe de mapa de flujo de correo](../media/mail-flow-map-detail.png)
 
-## <a name="related-insights"></a><span data-ttu-id="62207-123">Información relacionada</span><span class="sxs-lookup"><span data-stu-id="62207-123">Related insights</span></span>
+## <a name="related-insights"></a><span data-ttu-id="ece8a-123">Información relacionada</span><span class="sxs-lookup"><span data-stu-id="ece8a-123">Related insights</span></span>
 
-<span data-ttu-id="62207-124">La información relacionada se muestra debajo del mapa de flujo de correo si está disponible (por ejemplo, el conocimiento del dominio del remitente o el conocimiento del bucle de correo).</span><span class="sxs-lookup"><span data-stu-id="62207-124">Related insights are shown beneath the Mail flow map if they're available (for example, the Sender domain insight or the Mail loop insight).</span></span>
+<span data-ttu-id="ece8a-124">La información relacionada se muestra debajo del mapa de flujo de correo si está disponible (por ejemplo, el conocimiento del dominio del remitente o el conocimiento del bucle de correo).</span><span class="sxs-lookup"><span data-stu-id="ece8a-124">Related insights are shown beneath the Mail flow map if they're available (for example, the Sender domain insight or the Mail loop insight).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="62207-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="62207-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ece8a-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="ece8a-125">See also</span></span>
 
-<span data-ttu-id="62207-126">Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="62207-126">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="ece8a-126">Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="ece8a-126">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
