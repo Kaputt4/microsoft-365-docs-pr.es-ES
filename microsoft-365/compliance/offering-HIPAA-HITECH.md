@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ec30692d5721c316c205cf8b561e59cd6e65e0b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602317"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628097"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 
@@ -51,7 +51,7 @@ Los servicios en la nube de Microsoft Enterprise también están cubiertos por e
 
 Obtenga información sobre las ventajas de HIPAA y la tecnología de alta tecnología en la nube de Microsoft: [leer la Zwanger: Pesiri de la narración](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network) de un cliente de radiología
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -62,7 +62,7 @@ Obtenga información sobre las ventajas de HIPAA y la tecnología de alta tecnol
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - Intune
 - [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- El servicio en la nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
+- El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - Servicio en la nube de Power BI, ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365 o Dynamics 365
 - Azure DevOps Services
 
@@ -70,7 +70,7 @@ Obtenga información sobre las ventajas de HIPAA y la tecnología de alta tecnol
 
 Empiece a aprovechar las ventajas de la nube para obtener soluciones de datos de estado con el proyecto de Azure Security and Compliance Blueprint: datos de salud de HIPAA/HITRUST y AI. Este proyecto le proporciona herramientas y orientación para empezar a crear soluciones de HIPAA/HITRUST en la actualidad.
 
-[Empezar a usar el Blueprint de Azure HIPAA/HITRUST](https://aka.ms/healthblueprint)
+[Empezar a usar el Blueprint de Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -105,12 +105,12 @@ Para ayudar a los clientes con esta tarea, Microsoft ha publicado estas guías:
 ## <a name="resources"></a>Recursos
 
 - [Regla Omnibus de HIPAA](https://aka.ms/HIPAA-omnibus) (los reglamentos finales: modificación de las reglas de HIPAA)
-- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Descripción de la compatibilidad con HIPAA con Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 de mayo de 2016)
 - [Guía de implementación de Microsoft HIPAA](https://aka.ms/azure-hipaa-guide)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

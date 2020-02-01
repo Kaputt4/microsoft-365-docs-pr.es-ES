@@ -11,6 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
+ms.date: 01/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: d9175e78326832a2be874359babae5ae9c689420
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 44c90c6c9394b1f9fee34b8eb068bb7c232c4d78
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600087"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627976"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo informar de falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -32,17 +33,52 @@ ms.locfileid: "41600087"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-¿Las [capacidades automatizadas de investigación y respuesta](mtp-autoir.md) en Microsoft Threat Protection no se han detectado o no detectan nada correctamente? Puede informar a Microsoft o ajustar sus avisos (si es necesario). Use la tabla siguiente como guía: 
+¿Las [capacidades automatizadas de investigación y respuesta](mtp-autoir.md) en Microsoft Threat Protection no se han detectado o no detectan nada correctamente? Hay pasos que puede llevar a cabo para solucionarlo. Puede:
+- [Informar de un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [Ajustar las alertas](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si es necesario); y 
+- [Deshacer las acciones de corrección que se tomaron en los dispositivos](#undo-a-remediation-action-that-was-taken-on-a-device). 
 
+Use este artículo como guía. 
 
-|Item  |Detectado por  |Cómo notificarlo  |
+## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Informar de un falso positivo/negativo a Microsoft para su análisis
+
+|El elemento perdió o no se detectó correctamente |Servicio  |Qué hacer  |
 |---------|---------|---------|
-|Mensaje de correo electrónico <br/>Datos adjuntos de correo <br/>Dirección URL en un mensaje de correo electrónico o un archivo de Office      |[Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft para Office 365 Scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|-Mensaje de correo electrónico <br/>-Datos adjuntos de correo electrónico <br/>-URL en un mensaje de correo electrónico<br/>-URL en un archivo de Office      |[Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft para Office 365 Scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |Archivo o aplicación en un dispositivo    |[Protección contra amenazas avanzada de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)         |[Enviar un archivo a Microsoft para el análisis de malware](https://www.microsoft.com/wdsi/filesubmission)         |
-|Alerta desencadenada por uso legítimo <br/>Alerta no precisa    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> o <br/>[Detección de amenazas avanzadas de Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Administrar alertas en Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+
+## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajustar una alerta para evitar que se repitan falsos positivos
+
+|Escenario |Servicio |Qué hacer |
+|--------|--------|--------|
+|-El uso legítimo desencadena una alerta <br/>-Una alerta no es precisa    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> o <br/>[Detección de amenazas avanzadas de Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Administrar alertas en Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+|Un archivo, una dirección IP, una dirección URL o un dominio se trata como malware en un dispositivo, aunque sea seguro|[Protección contra amenazas avanzada de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) |[Crear un indicador personalizado con una acción "permitir"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Deshacer una acción de corrección que se ha realizado en un dispositivo
+
+Si se realizó una acción de corrección en un dispositivo (como un dispositivo de Windows 10) y el elemento que realmente está limpio, el equipo de operaciones de seguridad puede deshacer la acción de corrección en el [centro de actividades](mtp-action-center.md).
+
+> [!IMPORTANT]
+> Asegúrese de que tiene los [permisos necesarios](mtp-action-center.md#required-permissions-for-action-center-tasks) antes de intentar realizar la siguiente tarea.
+
+1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
+
+2. En el panel de navegación, elija **Centro de actividades**. 
+
+3. En la ficha **historial** , seleccione la acción que desea deshacer. Se abrirá un control flotante.<br/>
+    > [!TIP]
+    > Use filtros para restringir la lista de resultados. 
+
+4. En el control flotante del elemento seleccionado, seleccione **abrir página de investigación**.
+
+5. En la vista detalles de la investigación, seleccione la ficha **acciones** .
+
+6. Seleccione un elemento que tenga el estado **completado**y busque un vínculo, como **aprobado**, en la columna **decisiones** . Se abrirá un control flotante con más detalles sobre la acción.
+
+7. Para deshacer la acción, seleccione **eliminar corrección**.
+
+## <a name="related-articles"></a>Artículos relacionados
 
 - [Aprobar o rechazar acciones relacionadas con la investigación y la respuesta automatizadas](mtp-autoir-actions.md)
 - [Más información sobre el Centro de actividades](mtp-action-center.md)
