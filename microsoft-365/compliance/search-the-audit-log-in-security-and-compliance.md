@@ -1,5 +1,7 @@
 ---
 title: Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265898"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662006"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -122,6 +124,7 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
   |Microsoft Project|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |PowerApps|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Power BI|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Centro de seguridad y cumplimiento|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint en línea y OneDrive para Empresas|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -335,7 +338,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |(ninguno)|FileModifiedExtended|Esto está relacionado con la actividad "Archivo modificado" (FileModified). Se registra un evento FileModifiedExtended cuando la misma persona modifica constantemente un archivo durante un largo período de tiempo (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileModifiedExtended es reducir el número de eventos FileModified que se registran cuando se modifica continuamente un archivo. Esto ayuda a reducir el ruido de varios registros de FileModified para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento FileModified inicial (el más importante).|
 |Archivo movido|FileMoved|El usuario mueve un documento de su ubicación actual en un sitio a una nueva ubicación.|
 |(ninguno)|FilePreviewed|El usuario obtiene la vista previa de un documento de SharePoint o de OneDrive para un sitio de Empresas. Estos sucesos suelen producirse en grandes volúmenes basándose en una sola actividad, como ver una galería de imágenes.|
-|Consulta de búsqueda realizada|SearchQueryPerformed|La cuenta del sistema o el usuario lleva a cabo una búsqueda en SharePoint o OneDrive para la Empresa. Entre los escenarios comunes en los que una cuenta de servicio lleva a cabo una consulta de búsqueda se incluye aplicar una retención de eDiscovery o una directiva de retención a sitios y cuentas de OneDrive, y cuando las etiquetas de retención o sensibilidad se aplican automáticamente al contenido del sitio. En muchos de estos casos, el nombre de la cuenta de servicio que se registra en el campo de Usuario del registro de auditoría es **app@sharepoint**. </br></br> **Sugerencia:** los campos ApplicationDisplayName y EventData en el registro de auditoría de la Actividad de la consulta de búsqueda realizada pueden ayudarle a identificar el escenario o servicio que desencadenó este evento.|
+|Consulta de búsqueda realizada|SearchQueryPerformed|La cuenta del sistema o el usuario lleva a cabo una búsqueda en SharePoint o OneDrive para la Empresa. Entre los escenarios comunes en los que una cuenta de servicio lleva a cabo una consulta de búsqueda se incluye aplicar una retención de eDiscovery o una directiva de retención a sitios y cuentas de OneDrive, y cuando las etiquetas de retención o sensibilidad se aplican automáticamente al contenido del sitio. En muchos de estos casos, el nombre de la cuenta de servicio que se registra en el campo de Usuario del registro de auditoría es**app\@sharepoint**. </br></br> **Sugerencia:** los campos ApplicationDisplayName y EventData en el registro de auditoría de la Actividad de la consulta de búsqueda realizada pueden ayudarle a identificar el escenario o servicio que desencadenó este evento.|
 |Todas las versiones menores del archivo recicladas|FileVersionsAllMinorsRecycled|El usuario elimina todas las versiones secundarias del historial de versiones de un archivo. Las versiones eliminadas se mueven a la Papelera de reciclaje del sitio.|
 |Todas las versiones del archivo recicladas|FileVersionsAllRecycled|El usuario elimina todas las versiones del historial de versiones de un archivo. Las versiones eliminadas se mueven a la Papelera de reciclaje del sitio.|
 |Versión del archivo reciclada|FileVersionRecycled|El usuario elimina una versión del historial de versiones de un archivo. La versión eliminada se mueve a la Papelera de reciclaje del sitio.|

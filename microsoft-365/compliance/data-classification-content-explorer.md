@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 71ec7b4e27a6f125754e693ecb5239c66404a9ad
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628086"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661915"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Usar el explorador de contenido de clasificación de datos (vista previa)
 
@@ -51,11 +51,13 @@ Una [etiqueta de retención](labels.md) le permite definir durante cuánto tiemp
 
 Hay dos roles que otorgan acceso al explorador de contenido:
 
-- **Visor de listas del explorador de contenido**: la pertenencia a este grupo de roles permite ver cada elemento y su ubicación.
+- **Visor de listas del explorador de contenido**: la pertenencia a este grupo de roles permite ver cada elemento y su ubicación. El rol `data classification list viewer` se ha asignado previamente a este grupo de roles.
 
-- **Visor de contenido del explorador de contenido**: la pertenencia a este grupo de roles permite ver el contenido de cada elemento de la lista.
+- **Visor de contenido del explorador de contenido**: la pertenencia a este grupo de roles permite ver el contenido de cada elemento de la lista. El rol `data classification content viewer` se ha asignado previamente a este grupo de roles.
 
 La cuenta que use para tener acceso al explorador de contenido debe estar en uno de los grupos de roles o en ambos. Estos son grupos de roles independientes y no son acumulativos. Por ejemplo, si desea conceder a una cuenta la capacidad para ver los elementos y sus ubicaciones únicamente, conceda a los derechos de visores de listas de explorador de contenido. Si desea que esa misma cuenta también pueda ver el contenido de los elementos de la lista, conceda los derechos de visor de contenido de explorador de contenido.
+
+También puede asignar uno o ambos roles a un grupo de roles personalizado para ajustar el acceso a Content Explorer.
 
 ### <a name="how-to-use-content-explorer"></a>Cómo usar el explorador de contenido
 

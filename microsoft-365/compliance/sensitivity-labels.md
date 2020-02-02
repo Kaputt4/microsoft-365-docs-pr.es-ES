@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger su contenido confidencial, a la vez que se asegura de que la productividad y la capacidad de colaboración de su personal no se vea obstaculizada. Puede utilizar etiquetas de confidencialidad para aplicar configuraciones de protección que incluyan el cifrado y las marcas de agua en el contenido etiquetado.
-ms.openlocfilehash: 1cf7b47fbb9161b8000f5cfcce0bb36b86d0aa50
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 723bedfc5208da140140ab475be69400d5308061
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597527"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661996"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -88,13 +88,13 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     Para obtener más información sobre la configuración de **Cifrado** cuando cree o edite una etiqueta de confidencialidad, vea [Restringir el acceso a contenido con el cifrado en etiquetas de confidencialidad](encryption-sensitivity-labels.md).
 
-- **Marcar el contenido** cuando utilice las aplicaciones de Office, agregando marcas de agua, encabezados o pies de página a correos electrónicos o documentos que tengan aplicada la etiqueta. Por ejemplo:
+- **Marcar el contenido** cuando utilice las aplicaciones de Office, agregando marcas de agua, encabezados o pies de página a correos electrónicos o documentos que tengan aplicada la etiqueta. Las marcas de agua se pueden aplicar en documentos, pero no en mensajes de correo electrónico. Encabezado y marca de agua de ejemplo:
     
     ![Marca de agua y encabezado aplicados a un documento](media/Sensitivity-label-watermark-header.png)
     
-    Para obtener información sobre cuándo se aplican las marcas de contenido, consulte [Cuando Office 365 aplica el marcado y el cifrado de contenido al contenido](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+    ¿Necesita comprobar cuándo se aplican marcas de contenido? Consulte [cuando Office 365 aplica el marcado y el cifrado de contenido en](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content)de contenido.
     
-    Más información sobre la configuración de **Marcadores de contenido** al crear o modificar una etiqueta de confidencialidad: las marcas de agua se pueden aplicar a los documentos, pero no al correo electrónico, y están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
+    Longitudes de cadena: las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
 - **Evitar la pérdida de datos** activando la opción Endpoint Protection de Intune. Si se descarga contenido confidencial, puede ayudar a evitar la pérdida de datos en los dispositivos Windows. Por ejemplo, no se puede copiar contenido etiquetado en Dropbox, Gmail o en una unidad USB. Antes de que las etiquetas de confidencialidad puedan usar Windows Information Protection (WIP), primero necesita crear una directiva de protección de aplicaciones en el portal de Azure. 
     
