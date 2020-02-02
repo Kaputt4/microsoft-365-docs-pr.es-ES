@@ -1,5 +1,5 @@
 ---
-title: Cumplimiento de la comunicación (versión preliminar)
+title: Cumplimiento con la comunidad
 description: Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8aa7beeea621ccbb0014059766fe217c1a25e2a2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595817"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661946"
 ---
-# <a name="communication-compliance-in-microsoft-365-preview"></a>Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)
+# <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 
 El cumplimiento de la comunicación forma parte de la nueva solución de riesgo de Insider que se establece en Microsoft 365, que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de la organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams o las comunicaciones de terceros de la organización, y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
 
@@ -114,8 +114,8 @@ La identificación y resolución de problemas de cumplimiento con el cumplimient
 
 En este paso del flujo de trabajo, se identifican los requisitos de cumplimiento y se configuran las directivas de cumplimiento de comunicaciones aplicables. Las plantillas de Directiva son una forma excelente de configurar rápidamente una nueva Directiva de cumplimiento, pero también modificar y actualizar rápidamente las directivas a medida que cambian sus requisitos. Por ejemplo, es posible que desee probar rápidamente una directiva en busca de lenguaje ofensivo y Antiacoso en las comunicaciones de un pequeño grupo de usuarios antes de configurar una directiva para todos los usuarios de la organización.
 
-> [!Important]
-> De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de comunicaciones. Para habilitar los permisos para las características de cumplimiento de comunicaciones, consulte [hacer que el cumplimiento de la comunicación esté disponible en su organización](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required).
+>[!Important]
+>De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de comunicaciones. Para habilitar los permisos para las características de cumplimiento de comunicaciones, consulte [hacer que el cumplimiento de la comunicación esté disponible en su organización](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
 Puede elegir entre las siguientes plantillas de directiva en el centro de cumplimiento de Microsoft 365:
 
@@ -143,6 +143,7 @@ El siguiente paso consiste en corregir los problemas de cumplimiento de comunica
 - **Notificar al usuario**: a menudo, los usuarios infringen accidental o involuntariamente una directiva de cumplimiento de la comunicación. Puede usar la función Notify para proporcionar un aviso de advertencia al usuario y para resolver el problema.
 - **Remitir a otro revisor**: a veces, el revisor inicial de un problema necesita información de otros revisores para ayudar a resolver el incidente. Puede remitir fácilmente los problemas de los mensajes a los revisores de otras áreas de la organización como parte del proceso de resolución.
 - **Marcar como falso positivo**: los mensajes que se detectan incorrectamente como coincidencias de las directivas de cumplimiento se aplicarán en ocasiones al proceso de revisión. Puede marcar estos tipos de alertas como falsos positivos y resolver el problema automáticamente.
+- **Crear un caso**: en las situaciones más graves, es posible que necesite compartir la información de cumplimiento de comunicaciones con otros revisores de la organización. El cumplimiento de la comunicación se integra estrechamente con otras características de cumplimiento de Microsoft 365 para ayudarle con la resolución de riesgos de un extremo a otro. Escalar un caso para la investigación le permite transferir datos y administrar el caso a la exhibición avanzada de documentos electrónicos en Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. Permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal. Para obtener más información sobre los casos avanzados de eDiscovery, vea [información general sobre EDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Supervisar
 

@@ -1,5 +1,5 @@
 ---
-title: Referencia de la característica de cumplimiento de comunicaciones (versión preliminar)
+title: Referencia de la característica de cumplimiento de comunicación
 description: Referencia de características para el cumplimiento de la comunicación en Microsoft 365. Obtenga información detallada y especificaciones para cada uno de los componentes de la característica.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b844003b2cf0da80588d9fe2622c3353a57d73b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ff765d309e3f01dbc1c2ef7fa75ed3287c8a5c0a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595837"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661966"
 ---
-# <a name="communication-compliance-feature-reference-preview"></a>Referencia de la característica de cumplimiento de comunicaciones (versión preliminar)
+# <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
 ## <a name="policies"></a>Directivas
 
@@ -67,14 +67,14 @@ Con las directivas de cumplimiento de la comunicación, puede elegir analizar lo
 
 - **Microsoft Teams**: se pueden analizar las comunicaciones de chat y los datos adjuntos asociados tanto en canales públicos y privados de Microsoft Teams como en chats individuales. Chats de Microsoft Teams las condiciones de la Directiva de cumplimiento de comunicaciones se procesan una vez cada 24 horas y, a continuación, están disponibles en los informes de cumplimiento de comunicaciones. Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuarios individuales y las comunicaciones de canal en Microsoft Teams:
 
-    - **Para las comunicaciones de chat de Microsoft Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esto es para las relaciones de usuario y chat uno a uno o uno a varios.
+    - **Para las comunicaciones de chat de Microsoft Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esta configuración es para relaciones de usuario y chat uno a uno o uno a varios.
     - **Para las comunicaciones de canal de Teams:** Asigne cada canal de Microsoft Teams o grupo de Office 365 que desee analizar que contenga un usuario específico a la Directiva de cumplimiento de la comunicación. Si agrega el mismo usuario a otros canales de Microsoft Teams o a otros grupos de Office 365, asegúrese de agregar estos nuevos canales y grupos a la Directiva de cumplimiento de la comunicación.
 
 - **Correo electrónico de Exchange**: los buzones hospedados en Exchange online como parte de su suscripción a Microsoft 365 u Office 365 son aptos para el análisis de mensajes. Los correos electrónicos y datos adjuntos que cumplen las condiciones de la Directiva de cumplimiento de comunicaciones están disponibles instantáneamente en los informes de cumplimiento. Los tipos de datos adjuntos admitidos para el cumplimiento de la comunicación son los mismos que los [tipos de archivo compatibles con las visitas de contenido de reglas de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 - **Skype empresarial online**: las comunicaciones de chat y los datos adjuntos asociados en Skype empresarial online pueden supervisarse. Chats de Skype empresarial online las condiciones de la Directiva de cumplimiento de comunicaciones se procesan una vez cada 24 horas y, a continuación, están disponibles en los informes de cumplimiento de comunicaciones. Las conversaciones de chat supervisadas se han originado a partir de [conversaciones anteriores guardadas en Skype empresarial online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use la siguiente configuración de administración de grupos para supervisar las comunicaciones de chat de los usuarios en Skype empresarial online:
 
-    - **Para las comunicaciones de chat de Skype empresarial online**: asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esto es para las relaciones de usuario y chat uno a uno o uno a varios.
+    - **Para las comunicaciones de chat de Skype empresarial online**: asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esta configuración es para relaciones de usuario y chat uno a uno o uno a varios.
 
 - **Orígenes de terceros**: puede examinar las comunicaciones de orígenes de terceros para los datos importados en buzones de la organización de Microsoft 365. Los conectores admiten los siguientes recursos de terceros:
 
@@ -85,13 +85,13 @@ Con las directivas de cumplimiento de la comunicación, puede elegir analizar lo
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Conector de datos personalizado](archiving-third-party-data.md)
 
-Debe configurar un conector de terceros para la organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de la comunicación. La sección **fuentes** de terceros del Asistente para la Directiva de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
+Debe configurar un conector de terceros para la organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de la comunicación. La sección **orígenes de terceros** del Asistente para la Directiva de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transición desde la supervisión en Office 365
 
 Las organizaciones que usan directivas de supervisión en Office 365 y la planeación de la transición a directivas de cumplimiento de comunicaciones en Microsoft 365 necesitan comprender estos puntos importantes:
 
-- Ambas soluciones pueden usarse en paralelo en la organización, pero las directivas usadas en cada solución deben tener nombres de directiva únicos. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre las soluciones durante un período de transición.
+- Ambas soluciones pueden usarse en paralelo en la organización, pero las directivas que se usan en cada solución deben tener nombres de directiva únicos. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre las soluciones durante un período de transición.
 - Los mensajes guardados en la supervisión de las coincidencias de directivas de Office 365 no se pueden mover ni compartir con el cumplimiento de la comunicación en Microsoft 365.
 - La solución de supervisión de Office 365 se reemplazará completamente por la solución de cumplimiento de comunicaciones en Microsoft 365. Se recomienda crear nuevas directivas en el cumplimiento de la comunicación que tengan la misma configuración que las directivas de supervisión existentes para usar las nuevas mejoras de investigación y corrección. Al realizar la transición al cumplimiento de la comunicación en Microsoft 365, debe planear la exportación de los datos de informes desde la supervisión en Office 365 si tiene requisitos internos de la Directiva de retención de cumplimiento.
 
@@ -223,7 +223,7 @@ Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los 
 | **Clase File** | La clase del mensaje en función del tipo de mensaje, ya sea *mensaje* o *datos adjuntos*. |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, Microsoft Team chat, Bloonmberg, etc. |
-| **Dominios de destinatarios** | El dominio al que se envió el mensaje. Suele ser su dominio de suscripción de Microsoft 365 de forma predeterminada. |
+| **Dominios de destinatarios** | El dominio al que se envió el mensaje. Este dominio suele ser su dominio de suscripción de Microsoft 365 de forma predeterminada. |
 | **Recipient** | El usuario al que se envió el mensaje. |
 | **Remitente** | La persona que envió el mensaje. |
 | **Dominio del remitente** | El dominio que envió el mensaje. |
@@ -270,19 +270,19 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alertas para 
 
 ## <a name="audit"></a>Las
 
-En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esto puede ser un resumen de todas las actividades asociadas con una directiva de organización definida o cada vez que cambia una directiva de cumplimiento de la comunicación. Las directivas de cumplimiento de comunicaciones tienen pistas de auditoría integradas para una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción de creación, edición y eliminación son capturados por las directivas de comunicación para proporcionar una prueba de los procedimientos de supervisión.
+En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esta información puede ser un resumen de todas las actividades asociadas con una directiva de organización definida o cada vez que cambia una directiva de cumplimiento de la comunicación. Las directivas de cumplimiento de comunicaciones tienen pistas de auditoría integradas para una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción de creación, edición y eliminación son capturados por las directivas de comunicación para proporcionar una prueba de los procedimientos de supervisión.
 
 >[!Important]
->La auditoría debe estar habilitada para su organización antes de que se registren los eventos de cumplimiento de comunicaciones. Para habilitar la auditoría, consulte [enable Auditions for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>La auditoría debe estar habilitada para su organización antes de que se registren los eventos de cumplimiento de comunicaciones. Para habilitar la auditoría, consulte [enable Auditions for your Communication Compliance Policies](communication-compliance-configure.md#step-6-optional-enable-auditing-for-your-communication-compliance-policies).
 
-Para ver las actividades de la Directiva de cumplimiento de comunicaciones, seleccione el control **exportar actividades de revisión** en la Página principal de cualquier directiva. Esto genera un archivo de auditoría en el formato. csv que contiene la siguiente información:
+Para ver las actividades de la Directiva de cumplimiento de comunicaciones, seleccione el control **exportar actividades de revisión** en la Página principal de cualquier directiva. Esta acción genera un archivo de auditoría en el formato. csv que contiene la siguiente información:
 
 |**Field**|**Detalles**|
 |:-----|:-----|
-| **CreationDate** | Cuando se realizó la actividad en una directiva. |
+| **CreationDate** | Fecha en que se realizó la actividad en una directiva. |
 | **UserIds** | El usuario que realizó la actividad en una directiva. |
 | **Operations** | Las operaciones realizadas en la Directiva. |
-| **AuditData** | Este es el campo origen de datos principal para todas las actividades de la Directiva. Todas las actividades se registran y se separan mediante delimitadores de coma. |
+| **AuditData** | Este campo es el origen de datos principal para todas las actividades de la Directiva. Todas las actividades se registran y se separan mediante delimitadores de coma. |
 
 También puede ver actividades de auditoría en el registro de auditoría unificado o con el cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell.
 

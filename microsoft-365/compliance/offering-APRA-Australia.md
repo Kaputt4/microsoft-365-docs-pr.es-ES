@@ -14,28 +14,34 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 27f521a992bcc0a8d4dd7369d0a3110d502c3134
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 568a078c18ead86ddbf3e92cfec3bfc7367595e2
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627966"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662046"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autoridad de la reglamentación prudencial australiano (APRA)
 
 ## <a name="apra-overview"></a>Información general sobre APRA
 
-La [autoridad de reglamentación prudencial australiano](https://www.apra.gov.au/) (APRA) supervisa los bancos, las entidades de crédito, las compañías de seguros y otras instituciones de servicios financieros en Australia. Al reconocer el impulso hacia la informática en la nube, APRA ha llamado a en las entidades reguladas para implementar una estrategia de adopción de la nube exhaustiva con un control eficaz, una evaluación de riesgos minuciosa y un proceso de seguridad regular. Las instituciones reguladas deben cumplir con la APRA de la [231 CPS del estándar prudencial estándar de unicontratación](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf) cuando se subcontrata una actividad de negocio de material, es decir, cualquier actividad que tenga el potencial, si se ha interrumpido, para tener un impacto significativo en las operaciones empresariales de la institución financiera o en la capacidad de administrar los riesgos de manera eficaz. En función de su revisión de las disposiciones de outsourcing relacionadas con los servicios de informática en la nube que se envían a APRA, APRA publicó una guía específica y detallada en su documento de información, [Outsourcing en relación con los servicios de informática en la nube (incluida la nube)](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf) para ayudar a las entidades reguladas a evaluar los proveedores y servicios de nube de forma más eficaz a través  Cuando se subcontrata, incluido el servicio en la nube, las instituciones reguladas también deben revisar y considerar su cumplimiento continuo con la seguridad de la información del estándar APRA de [234 CPS estándar](https://www.legislation.gov.au/Details/F2018L01745).
+La [autoridad de reglamentación prudencial australiano](https://www.apra.gov.au/) (APRA) supervisa los bancos, las entidades de crédito, las compañías de seguros y otras instituciones de servicios financieros en Australia. Al reconocer el impulso hacia la informática en la nube, APRA ha llamado a en las entidades reguladas para implementar una estrategia de adopción de la nube exhaustiva con un control eficaz, una evaluación de riesgos minuciosa y un proceso de seguridad regular. Las instituciones reguladas deben cumplir con la APRA de la [231 CPS del estándar prudencial estándar de unicontratación](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf) cuando se subcontrata una actividad de negocio de material, es decir, cualquier actividad que tenga el potencial, si se ha interrumpido, para tener un impacto significativo en las operaciones empresariales de la institución financiera o en la capacidad de administrar los riesgos de manera eficaz. En función de su revisión de las disposiciones de outsourcing relacionadas con los servicios de informática en la nube que se envían a APRA, APRA publicó una guía específica y detallada en su documento de información, [subcontratación de servicios de informática en la nube](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf) para ayudar a las entidades reguladas a evaluar los proveedores y servicios de nube de forma más eficaz y a través de los problemas normativos de la contratación  Cuando se subcontrata, incluido el servicio en la nube, las instituciones reguladas también deben revisar y considerar su cumplimiento continuo con la seguridad de la información del estándar APRA de [234 CPS estándar](https://www.legislation.gov.au/Details/F2018L01745).
 
 ## <a name="microsoft-and-apra"></a>Microsoft y APRA
 
-Para instituciones financieras de Australia que están evaluando los proveedores de nube y sus servicios, Microsoft ha publicado la [respuesta de Microsoft al documento de información de APRA en la nube](https://aka.ms/navigatecloudaustralia) y los [servicios en la nube de Microsoft: lista de comprobación de cumplimiento para instituciones financieras en Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C). Juntos demuestran el modo en que las empresas financieras pueden mover los datos y las cargas de trabajo a Microsoft Azure con la certeza de que cumplen con los reglamentos y las directrices de la autoridad del Reglamento prudencial (APRA) de Australia.
+Para las instituciones financieras de Australia que están evaluando los proveedores de nube y sus servicios, Microsoft ha publicado:
 
-Obtenga información sobre las ventajas de los servicios financieros compatibles con APRA en Azure: [leer el Regtech cumple con FinTech: perpetuo y Microsoft Transform el artículo del sector financiero](https://news.microsoft.com/en-au/features/regtech-meets-fintech-perpetual-microsoft-transform-finance-sector/)
+- [Respuesta de Microsoft al documento de información de APRA en la nube](https://aka.ms/navigatecloudaustralia) 
+- [Servicios en la nube de Microsoft: lista de comprobación de cumplimiento para instituciones financieras en Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)
+- [Servicios en la nube de Microsoft: compatibilidad con CPS APRA estándar prudencial 234](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OsZg)
+
+Juntos demuestran el modo en que las empresas financieras pueden mover los datos y las cargas de trabajo a Microsoft Azure con la certeza de que cumplen con los reglamentos y las directrices de la autoridad del Reglamento prudencial (APRA) de Australia.
+
+Para obtener información sobre las ventajas de los servicios financieros compatibles con APRA en Azure, lea el [Regtech cumple con FinTech: perpetuo y Microsoft Transform The Finance](https://news.microsoft.com/en-au/features/regtech-meets-fintech-perpetual-microsoft-transform-finance-sector/) article.
 
 ## <a name="microsoft-response-to-the-apra-information-paper-on-cloud"></a>Respuesta de Microsoft al documento de información de APRA en la nube
 
-En este documento de Microsoft se proporcionan instrucciones detalladas para los servicios financieros con una respuesta detallada a cada problema que se plantea en el documento de información de APRA, con [Outsourcing en relación con los servicios de informática en la nube](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf). Las instrucciones de APRA identifican tres categorías de riesgo en las que el uso de la nube normalmente cae (bajo, elevado y extremo de riesgo) y resaltan los problemas clave que las entidades reguladas deben tener en cuenta como parte de su evaluación de riesgos.
+En este documento de Microsoft se proporcionan instrucciones detalladas para los servicios financieros con una respuesta detallada a cada problema que se plantea en el documento de información de APRA [outsourcing que implica los servicios de informática en la nube](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf). Las instrucciones de APRA identifican tres categorías de riesgo en las que el uso de la nube normalmente cae (bajo, elevado y extremo de riesgo) y resaltan los problemas clave que las entidades reguladas deben tener en cuenta como parte de su evaluación de riesgos.
 
 La respuesta de Microsoft se centra en las dos categorías de riesgo más elevados. Mientras que los servicios en la nube no están prohibidos por ninguna categoría de riesgo, APRA espera que realice un nivel de diligencia proporcionalmente superior y que espere un nivel creciente de escrutinio de APRA, a medida que sube las categorías de riesgo. APRA enumera una serie de factores que, por lo general, indican un riesgo inherente alto o extremo de la contratación de la nube. Microsoft aborda cada uno de estos factores en profundidad y proporciona información y herramientas para ayudarle a evaluar y administrar el riesgo de mover los datos y las cargas de trabajo a Azure.
 
@@ -62,13 +68,13 @@ Esta lista de comprobación de Microsoft presenta los requisitos normativos de A
 
 Al confiar en nuestro enfoque integral para garantizar la seguridad de riesgos en la nube, confiamos en que las organizaciones de servicios financieros australianos pueden pasar a los servicios en la nube de Microsoft de una manera que no solo es coherente con la orientación de APRA, pero pueden proporcionar a los clientes un perfil de administración de riesgos de seguridad más avanzado que en las instalaciones locales u otras soluciones hospedadas.
 
-Obtenga soporte práctico para mover datos y cargas de trabajo a Azure de acuerdo con las regulaciones de APRA: [descargar los servicios en la nube de Microsoft: lista de comprobación de cumplimiento para instituciones financieras en Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
+Obtenga soporte práctico para mover datos y cargas de trabajo a Azure de acuerdo con las regulaciones de APRA: [Descargar servicios en la nube de Microsoft: una lista de comprobación de cumplimiento para instituciones financieras en Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Dynamics 365
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -76,7 +82,7 @@ Obtenga soporte práctico para mover datos y cargas de trabajo a Azure de acuerd
 
 No. Sin embargo, la mayoría de las organizaciones financieras reguladas deben notificar a APRA después de haber entrado en contratos para subcontratar actividades de negocio en Australia o consultar con APRA antes de subcontratar esas actividades fuera de Australia.
 
-Además, si se considera que los servicios en la nube transportarán un riesgo "elevado o un riesgo inherente", tal como se describe en el [documento de información](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf)de Apra, se aconseja a la institución financiera (aunque no es necesario) que consulte con APRA, independientemente de si el servicio se proporciona dentro o fuera de Australia.
+Además, si se considera que los servicios en la nube transportarán un riesgo "más elevado o un riesgo inherente", tal como se describe en el [documento de información de APRA en las nubes](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf), se aconseja a la institución financiera (aunque no es necesaria) que consulte con APRA, independientemente de si el servicio se proporciona dentro o fuera de Australia.
 
 **¿Se permiten las transferencias de datos fuera de Australia?**
 
@@ -84,10 +90,10 @@ Sí. La legislación general de privacidad (que se aplica a todos los sectores, 
 
 ## <a name="resources"></a>Recursos
 
-- [Subcontratación de CPS 231 estándar prudencial](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf)
-- [Outsourcing en relación con los servicios de informática en la nube](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf)
-- [Seguridad de la información de CPS 234 estándar prudencial](https://www.legislation.gov.au/Details/F2018L01745)
 - [Autoridad de la reglamentación cautelar australiano](https://www.apra.gov.au/)
+- [APRA información sobre el outsourcing de documentos relacionados con los servicios de informática en la nube](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf)
+- [Subcontratación de CPS 231 estándar prudencial](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf)
+- [Seguridad de la información de CPS 234 estándar prudencial](https://www.legislation.gov.au/Details/F2018L01745)
 - [Respuesta de Microsoft al documento de información de APRA en la nube](https://aka.ms/navigatecloudaustralia)
 - [Servicios en la nube de Microsoft: lista de comprobación de cumplimiento para instituciones financieras en Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)
 - [Servicios en la nube de Microsoft: compatibilidad con CPS APRA estándar prudencial 234](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OsZg)

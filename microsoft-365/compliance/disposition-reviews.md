@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de retención que conserva el contenido de Microsoft 365, puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: 8dafaf45df0d681880ef513c9feab6b833c99cb8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 267b2bc7a8bc65e3a816c2d3d88397589734b55d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595235"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661936"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 
@@ -128,7 +128,7 @@ En la página de **disposición pendiente** , puede ver las disposiciones pendie
   
 - La **disposición pendiente** muestra los elementos que han alcanzado el final del período de retención y requieren una revisión de disposición. Después de revisar cada elemento, decida si desea aplicar una etiqueta de retención distinta, ampliar su período de retención o eliminarlo de forma permanente. Puede seleccionar varios elementos.
     
-- La pestaña **elementos eliminados** muestra las desposiciones que se aprobaron para su eliminación durante una revisión de disposición y que ahora se encuentran en proceso de eliminación permanente o elementos marcados como registros que ya se han eliminado. Los elementos a los que se ha aplicado una etiqueta de retención distinta o cuyo período de retención se ha ampliado como parte de una revisión no aparecerán aquí.
+- La pestaña **elementos desechados** muestra los elementos eliminados de forma permanente que ya han sido a través de una revisión de disposición. Se muestran aquí porque el proceso de eliminación permanente puede durar varios días, como se indica en la sección anterior. No aparecerán aquí los elementos a los que se aplicó una etiqueta de retención distinta o que tenían su período de retención ampliado como parte de una revisión.
 
 ![Pestañas de disposición](media/Retention-Disposition-tabs.png)
     

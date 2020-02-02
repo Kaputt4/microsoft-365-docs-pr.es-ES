@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: Obtenga información sobre cómo conservar el contenido de los buzones de correo para los antiguos empleados al convertir el buzón en un buzón inactivo. Para ello, puede colocar el buzón en retención por juicio o aplicar una directiva de retención de Office 365 al buzón y, a continuación, quitar la cuenta de Office 365 correspondiente.
-ms.openlocfilehash: 7b60ce92382c0b8111dcf4c1b8d9fb4c793717c6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75ede1ae199bdecfea2662a187c3965cc2b676d7
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597947"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661886"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Información general sobre los buzones inactivos en Office 365
 
@@ -85,7 +85,7 @@ Por el contrario, se ignora cualquier directiva de archivo (que son etiquetas de
   
 ## <a name="creating-an-inactive-mailbox"></a>Creación de un buzón inactivo
 
-Para convertir un buzón en inactivo, se le debe asignar una licencia de plan 2 de Exchange Online (o una licencia de plan 1 de Exchange Online con una licencia de complemento de archivado de Exchange Online) para que se pueda aplicar una directiva de retención por juicio u 365 al buzón antes de que se eliminados. Una vez eliminado el buzón, todas las licencias de Exchange Online asociadas a él estarán disponibles para asignar a un nuevo usuario. Los buzones inactivos no necesitan licencias en curso.
+Para convertir un buzón en inactivo, se le debe asignar una licencia de plan 2 de Exchange Online (o una licencia de plan 1 de Exchange Online con una licencia de complemento de archivado de Exchange Online) para que se pueda aplicar una directiva de retención por juicio u 365 al buzón antes de que se eliminados. Una vez eliminado el buzón, todas las licencias de Exchange Online asociadas a él estarán disponibles para asignar a un nuevo usuario.
   
 En la tabla siguiente se resume el proceso de creación de un buzón inactivo para diferentes escenarios de retención. Para obtener más información, vea [administrar buzones inactivos en Office 365](create-and-manage-inactive-mailboxes.md).
   

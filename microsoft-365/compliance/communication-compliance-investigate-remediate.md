@@ -1,5 +1,5 @@
 ---
-title: Investigar y corregir las alertas de cumplimiento de las comunicaciones (vista previa)
+title: Investigar y corregir las alertas de cumplimiento de comunicaciones
 description: Investigue y corrija las alertas de cumplimiento de comunicaciones en Microsoft 365.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0bf47842945d904c30c8a034d2ed255a743332ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595827"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661956"
 ---
-# <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones (vista previa)
+# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de comunicaciones
 
 Una vez que haya configurado las directivas de cumplimiento de comunicaciones, empezará a recibir alertas en el centro de cumplimiento de Microsoft 365 para los problemas de mensajes que coinciden con las condiciones de la Directiva. Siga las instrucciones de flujo de trabajo aquí para investigar y corregir los problemas de alertas.
 
@@ -70,7 +70,7 @@ Para obtener una lista completa de los filtros y los detalles de los campos, con
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Uso del análisis de duplicados Near y Exact
 
-Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticamente los duplicados de mensajes cercanos y exactos sin ningún paso de configuración adicional. Esto le permite corregir rápidamente mensajes similares uno a uno o un grupo, lo que reduce la carga de la investigación de mensajes para revisores. A medida que se detectan duplicados, los controles de duplicados **cercanos** o los controles de **duplicados exactos** se muestran en la barra de herramientas acción de corrección.
+Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticamente los duplicados de mensajes cercanos y exactos sin ningún paso de configuración adicional. Esta vista permite corregir rápidamente mensajes similares uno a uno o un grupo, lo que reduce la carga de la investigación de mensajes para revisores. A medida que se detectan duplicados, los controles de duplicados **cercanos** o los controles de **duplicados exactos** se muestran en la barra de herramientas acción de corrección.
 
 #### <a name="to-remediate-duplicates"></a>Para corregir duplicados
 
@@ -116,5 +116,6 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
     - **Etiqueta como**: etiquete el mensaje como *compatible*, *no compatible*o tan *dudoso* como relacionado con las directivas y los estándares de su organización. Agregar etiquetas y comentarios de etiquetado puede ayudarle a microfiltrar las alertas de las directivas para las escalaciones o como parte de otros procesos internos de revisión. Una vez finalizado el etiquetado, también puede optar por resolver el mensaje para moverlo de la cola de revisión pendiente.
     - **Notify**: puede usar el control **Notify** para asignar una plantilla de notificación personalizada a la alerta y para enviar un aviso de advertencia al usuario. Elija la plantilla de aviso adecuada y seleccione **Enviar** a correo electrónico un recordatorio para el empleado que envió el mensaje y para resolver el problema.
     - **Escalar**: con el control **remitir** a, puede elegir quién más de la organización debe revisar el mensaje. Elija de una lista de revisores configurados para enviar una notificación por correo electrónico solicitando una revisión adicional de la alerta de mensaje. El revisor seleccionado puede usar un vínculo en la notificación de correo electrónico para ir directamente a los elementos que se han remitido a ellos para que los revisen.
+    - **Crear un caso**: con el control **crear un caso** , puede crear un nuevo [caso de exhibición](overview-ediscovery-20.md) de documentos electrónicos avanzado para uno o varios mensajes. Proporcionará un nombre y notas para el nuevo caso, y el usuario que envió el mensaje que coincida con la Directiva se asigna automáticamente como custodio de caso. No es necesario ningún permiso adicional para administrar el caso. La creación de un caso no resuelve ni crea una nueva etiqueta para el mensaje.
 
 4. **Determine si los detalles del mensaje deben archivarse fuera del cumplimiento de la comunicación**: los detalles del mensaje se pueden exportar o descargar si necesita archivar los mensajes en una solución de almacenamiento independiente. Al seleccionar el control de **descarga** , se agregan automáticamente los mensajes seleccionados a un. Archivo ZIP que puede guardarse en el almacenamiento fuera de Microsoft 365.
