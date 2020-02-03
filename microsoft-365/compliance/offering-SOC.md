@@ -5,6 +5,8 @@ keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259988"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662026"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -47,15 +49,14 @@ Obtenga más información sobre las ventajas de SOC 1, 2, 3 en la nube de Micros
 
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>Servicios cubiertos por los SOC 1 y SOC 2
 
-- [Lista detallada](https://aka.ms/AzureCompliance) para Azure, Azure Government y Azure Alemania
+- [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- [Lista detallada](https://aka.ms/d365-compliance-list) para Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos
+- [Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
 - Escritorio administrado de Microsoft
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
-- [Lista detallada](https://go.microsoft.com/fwlink/p/?LinkID=2077751) para Office 365, Office 365 U.S. Government y Office 365 U.S. Government Defense. Yammer ha logrado un informe SOC 1 Tipo 1
-- Office 365 Germany
+- [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 - Stream
@@ -63,13 +64,14 @@ Obtenga más información sobre las ventajas de SOC 1, 2, 3 en la nube de Micros
 
 ### <a name="covered-services-for-soc-3"></a>Servicios cubiertos por los SOC 3
 
-- [Lista detallada](https://aka.ms/AzureCompliance) para Azure, Azure Government y Azure Alemania
+- [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Graph
 - Intune
 - Escritorio administrado de Microsoft
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
+- [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
 - Stream
 
@@ -93,11 +95,13 @@ Los servicios de nube de Microsoft se auditan al menos anualmente para certifica
 
 #### <a name="office-365"></a>Office 365
 
-- [Informe de auditoría SOC 1 SSAE 16 Tipo 2 de Office 365](https://aka.ms/office365soc1auditreport)
-- [Informe de auditoría SOC 2 AT 101 Tipo 2 de Office 365](https://aka.ms/Office365SOC2AuditReport)
+- [Informe SOC 1 SSAE 18 de Office 365 Core](https://aka.ms/o365SOC-1)
+- [Informe SOC 2 SSAE 18 de Office 365 Core](https://aka.ms/o365SOC-2)
+- [Informe SOC 3 SSAE 18 de Office 365 Core](https://aka.ms/o365SOC-3)
+- [Office 365 Microservices T1: tipo SOC2 SSAE 18 I Informe](https://aka.ms/o365-MS-SOC-2-type1)
 - [Informe de auditoría de Office 365 de Caja de seguridad del cliente SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
-- [Informe de auditoría SOC 2 AT 101 Tipo 2 de Yammer](https://aka.ms/YammerSOC2AuditReport)
 - [Informe de auditoría SOC 2 AT 101 Tipo 1 de Yammer](https://aka.ms/YammerSOC2Type1AuditReport)
+- [Informe SOC 2 de tipo II de Yammer](https://aka.ms/yammerSOC-2)
 - [Ver cartas puente (cartas de confianza entre periodos no cubiertos por el SOC y el fin del año fiscal) y otros informes de auditoría](https://aka.ms/auditreports)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
@@ -127,15 +131,10 @@ El [kit de herramientas de SOC para empresas de servicio](https://aka.ms/soc-too
 
 ## <a name="resources"></a>Recursos
 
- - [Proteja mejor sus datos con los servicios de Microsoft Cloud](https://www.microsoft.com/trustcenter/guidance/protect-data)
- - [Informes del marco Controles para la Organización de Servicios (SOC)](https://aka.ms/mssocreports)
- - [Estándares de auditoría SSAE 16](https://www.ssae-16.com/)
- - [Estándares ISAE 3402](https://isae3402.com/)
- - [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
- - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
- - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
- - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).
+- [Proteja mejor sus datos con los servicios de Microsoft Cloud](https://www.microsoft.com/trustcenter/guidance/protect-data)
+- [Informes del marco Controles para la Organización de Servicios (SOC)](https://aka.ms/mssocreports)
+- [Información genera sobre SSAE 16](http://ssae16.com/SSAE16_overview.html)
+- [Información genera sobre ISAE 3402](http://isae3402.com/ISAE3402_overview.html)
+- [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
+- [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
