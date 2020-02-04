@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 02/03/2020
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con el cifrado de mensajes de Office 365, su organización puede enviar y recibir mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de la organización. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios deseados puedan ver el contenido de los mensajes.
-ms.openlocfilehash: 9da6084348a4bdc89f620eb894c9ffa113d64292
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76d3688fbc30923e204b9cba338b61bc955b8f95
+ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601787"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680099"
 ---
 # <a name="office-365-message-encryption"></a>Cifrado de mensajes de Office 365
 
@@ -30,12 +30,38 @@ Las personas suelen usar el correo para intercambiar información confidencial, 
 
 Con el cifrado de mensajes de Office 365, su organización puede enviar y recibir mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de la organización. El cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo!, gmail y otros servicios de correo electrónico. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios deseados puedan ver el contenido de los mensajes.
 
+## <a name="important-updates-to-ome-to-enhance-email-authenticity---action-required"></a>Actualizaciones importantes de OME para mejorar la autenticidad del correo electrónico: acción necesaria
+
+A partir de febrero de 2020, estamos implementando mejoras en OME que mejoran la autenticidad de correo de los correos electrónicos OME cambiando las direcciones del remitente que usa OME. Sin estas mejoras, algunas organizaciones rechazaban el correo generado por el sistema de OME, como el código de paso de un solo tiempo, como las respuestas del portal y el correo, porque la dirección del remitente era del dominio messaging.onmicrosoft.com. Con este cambio, estos correos electrónicos generados por el sistema se enviarán desde los dominios personalizados de la organización en lugar de onmicrosoft.com. Para poder implementar esta mejora, debe actualizar las reglas de flujo de correo.
+
+Para Exchange Online, debe actualizar todas las reglas de flujo de correo que busquen las direcciones de correo electrónico de OME antiguas, o cualquier dirección de fuera de la organización, para buscar las direcciones de OME nuevas. Dado que los mensajes de correo electrónico del nuevo OME (código de paso de un solo tiempo y respuesta del portal) proceden de su dominio personalizado, dejarán de ser válidos como procedentes de fuera de la organización.
+
+Si está usando soluciones de terceros que funcionan con con Exchange local o Exchange Online, deberá actualizar todas las reglas de OME anteriores para reflejar las nuevas direcciones de correo electrónico de OME. Por ejemplo, si tenía una lista blanca de las direcciones de correo electrónico de OME anteriores, deberá agregar los nuevos correos electrónicos a la lista de correos electrónicos de lista blanca.
+
+### <a name="changes-to-ome-email-addresses"></a>Cambios en las direcciones de correo electrónico de OME
+
+Dirección del remitente con el código de acceso único:
+
+- Dirección antigua:``onetimepasscode@messaging.onmicrosoft.com``
+
+- Nueva dirección:``onetimepasscode@<yourdomain.com>``
+
+Respuestas OME desde el portal OME:
+
+- Dirección antigua:``omeportal@messaging.onmicrosoft.com``
+
+- Nueva dirección:``omeportal@<yourdomain.com>``
+
+### <a name="errors-routing-mail-from-exchange-online-through-exchange-on-premises-to-external-recipients"></a>Errores de enrutamiento de correo desde Exchange Online a través de Exchange local a destinatarios externos
+
+Si dirige el correo desde Exchange Online a través de Exchange local a los destinatarios externos a la organización, algunos sistemas de terceros devuelven errores de DMARC y no aceptan el correo electrónico. Por ejemplo, gmail devolverá un error de DMARC si redirige el correo de esta forma. Para solucionar este problema, enrute el correo electrónico directamente desde Exchange Online a los destinatarios externos, pasando por alto Exchange local.
+
+## <a name="how-office-365-message-encryption-works"></a>Cómo funciona el cifrado de mensajes de Office 365
+
 El resto de este artículo se aplica a las nuevas capacidades de OME.
 
 > [!NOTE]
 > Los delegados que tienen permisos de acceso total a un buzón de correo pueden leer los mensajes cifrados que se envían al buzón.
-
-## <a name="how-office-365-message-encryption-works"></a>Cómo funciona el cifrado de mensajes de Office 365
 
 El cifrado de mensajes de Office 365 es un servicio en línea que se basa en Microsoft Azure Rights Management (Azure RMS), que forma parte de Azure Information Protection. Esto incluye directivas de cifrado, identidades y autorización para ayudar a proteger el correo electrónico. Puede cifrar mensajes mediante el uso de plantillas de Rights Management, la [opción no reenviar](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)y la [opción de solo cifrado](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
