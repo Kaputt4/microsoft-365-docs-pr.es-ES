@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: fd2b1fdbb0356cfc2cea080f15bf696d8073fc10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8a64b92e8191000be2767f498fbaee179c3b9e69
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598647"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678919"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -97,7 +97,7 @@ Hay varios otros parámetros en la Directiva contra correo no deseado denominado
 |Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---------|---------|---------|---------|
 |Respuesta de detección de malware|No|No|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pondrá en cuarentena y solo un administrador podrá publicarlo.|
-|"Filtro de tipo de datos adjuntos comunes" para bloquear tipos de archivos sospechosos|Activado|Activado||
+|"Filtro de tipos de datos adjuntos comunes" para bloquear tipos de archivos sospechosos|Activado|Activado||
 |Purga automática de cero horas de malware|Activado|Activado||
 |Notificar a los remitentes internos del mensaje no entregado|Deshabilitado|Deshabilitado||
 |Notificar a remitentes externos del mensaje no entregado|Deshabilitado|Deshabilitado||

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 461193bf7278a07de9bec1e3879fecc8fb6d91ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c9b22ef66fb1db762168812385420823788b4bfc
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598927"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678934"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -31,13 +31,9 @@ El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora el se
 
 ## <a name="open-message-trace"></a>Abrir el seguimiento de mensajes
 
-1. [Inicie sesión en Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con su cuenta profesional o educativa.
+1. Abra el centro de cumplimiento de & de seguridad <https://protection.office.com>de Office 365 en.
 
-2. Seleccione el icono del iniciador de aplicaciones ![Icono del iniciador de aplicaciones de Office 365](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) de la esquina superior izquierda y elija **Administrador**.
-
-3. En el panel de navegación inferior izquierdo, expanda **centros de administración** y seleccione **seguridad & cumplimiento**.
-
-4. En la página **seguridad & cumplimiento** que se abre, expanda **flujo de correo**y seleccione seguimiento de **mensajes**.
+2. Expanda **flujo de correo**y, a continuación, haga clic en **seguimiento de mensajes**.
 
 ## <a name="message-trace-page"></a>Página de seguimiento de mensajes
 
@@ -334,7 +330,7 @@ Varios **** agentes de Exchange Online `AGENTINFO` usan el campo custom_data par
 
 Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El filtro de contenido marcó el mensaje como correo no deseado.|
@@ -361,7 +357,7 @@ Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no dese
 
 Un valor de **custom_data** que empieza `S:AMA` por es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -384,7 +380,7 @@ Un ejemplo de un valor **custom_data** para un mensaje que contiene malware tien
 
 Un valor de **custom_data** que empieza`S:TRA` por es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|
