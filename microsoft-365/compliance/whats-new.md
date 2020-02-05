@@ -17,19 +17,20 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 78c2d2da6c8925e86bcba6c498682b72c9292922
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ec046b6b5aa78e5eb44bbe6eebff222752f9c18
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597187"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774206"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
 Estamos agregando de forma continuada nuevas características al [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md), solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Eche un vistazo a la parte inferior para ver lo que está disponible hoy mismo. Algunas características se implementan a los clientes a velocidades diferentes. Si aún no ve una característica, pruebe a agregarse a la [versión dirigida](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
 
 > [!TIP]
-> ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+> ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
+Y visite el [mapa de ruta de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) para saber más sobre las características de 365 Microsoft que se lanzaron, están en desarrollo, se han cancelado o han sido publicadas anteriormente.
 
 ## <a name="november--december-2019"></a>Noviembre & 2019 de diciembre
 

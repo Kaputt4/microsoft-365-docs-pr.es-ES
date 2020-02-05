@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
-ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
+ms.openlocfilehash: 3d5765de70b21036800d87cedd175ea4fd53b7ba
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243941"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774236"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Seguridad en el escritorio administrado por Microsoft
 
@@ -19,25 +19,12 @@ ms.locfileid: "36243941"
 
 Microsoft Managed Desktop usa varias tecnologías de Microsoft para ayudar a proteger los datos y los dispositivos administrados. En particular: 
 
-- [Seguridad de datos](#data-security) : tipos de datos recopilados por el escritorio administrado por Microsoft y donde se almacenan de forma segura
+
 - [Seguridad](#device-security) de los dispositivos: seguridad y protección en dispositivos de escritorio administrados por Microsoft
 - [Administración de acceso e identidades](#identity-and-access-management) : administración del uso seguro de dispositivos a través de Azure Active Directory Identity Services
 - [Seguridad de red](#network-security) : información de VPN y configuración y solución recomendadas para escritorio administrado de Microsoft
 - [Seguridad](#information-security) de la información: servicios opcionales disponibles para proteger aún más la información confidencial 
 
-## <a name="data-security"></a>Seguridad de datos
-
-Los datos recopilados de inquilinos de clientes (que habilitan las operaciones y servicios de TI de escritorio administrados de Microsoft) se almacenan en bases de datos de Azure SQL en el inquilino de Microsoft hospedado en Estados Unidos de América.
-
-Para obtener más información, vea [seguridad de Microsoft Azure](https://docs.microsoft.com/azure/security/azure-database-security-overview).
-
-A continuación se enumeran los tipos de datos que se transmiten desde su espacio empresarial:
-
-- Datos de actualización de dispositivos, uso y confiabilidad
-- Datos de confiabilidad y de implementación de aplicaciones
-- Actualización y datos de implementación de la Directiva de seguridad
-- Usuarios asignados a dispositivos
-- Registros de seguridad de su espacio empresarial relacionados con las cuentas usadas por el escritorio administrado por Microsoft para administrar el servicio
 
 
 

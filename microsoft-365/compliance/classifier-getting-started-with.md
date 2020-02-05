@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: 4b4bfa996b1f68f9db8c206aaaec43878abf3f42
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595907"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722031"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introducción al entrenamiento de clasificadores (vista previa)
 
@@ -49,6 +49,10 @@ Este método de clasificación es especialmente adecuado para el contenido que n
 
 > [!IMPORTANT]
 > Los clasificadores que se pueden entrenar solo funcionan con elementos que no están cifrados y que están en inglés.
+
+### <a name="licensing-requirements"></a>Requisitos de licencia
+
+Los clasificadores que se pueden entrenar son una característica de cumplimiento de Microsoft 365 E5 o E5. Debe tener una de estas suscripciones para poder usarla.
 
 ## <a name="types-of-classifiers"></a>Tipos de clasificadores
 

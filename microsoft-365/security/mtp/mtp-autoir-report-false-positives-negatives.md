@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 44c90c6c9394b1f9fee34b8eb068bb7c232c4d78
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 1177f552652e728928a2b1d322b4ce0217415509
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627976"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774196"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo informar de falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -57,7 +57,7 @@ Use este artículo como guía.
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Deshacer una acción de corrección que se ha realizado en un dispositivo
 
-Si se realizó una acción de corrección en un dispositivo (como un dispositivo de Windows 10) y el elemento que realmente está limpio, el equipo de operaciones de seguridad puede deshacer la acción de corrección en el [centro de actividades](mtp-action-center.md).
+Si se realizó una acción de corrección en un dispositivo (como un dispositivo de Windows 10) y el elemento está realmente limpio, el equipo de operaciones de seguridad puede deshacer la acción de corrección en el [centro de actividades](mtp-action-center.md).
 
 > [!IMPORTANT]
 > Asegúrese de que tiene los [permisos necesarios](mtp-action-center.md#required-permissions-for-action-center-tasks) antes de intentar realizar la siguiente tarea.
