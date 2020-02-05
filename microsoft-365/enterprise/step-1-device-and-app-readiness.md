@@ -1,5 +1,7 @@
 ---
 title: 'Paso 1: Preparación de dispositivos y aplicaciones'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los dispositivos y las aplicaciones en el entorno.
-ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112724"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774216"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Paso 1: Preparación de dispositivos y aplicaciones
 
@@ -106,9 +108,9 @@ El inventario de software de Configuration Manager es una alternativa a usar sol
 Para obtener más información, vea [Introducción al inventario de software en Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) y cómo establecer requisitos de plataforma en paquetes de aplicación en [Paquetes y programas en Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
 
-## <a name="desktop-app-assure"></a>Desktop App Assure
+## <a name="app-assure"></a>App Assure
 
-Otra herramienta para ayudar con la compatibilidad de aplicaciones de Windows 10 y Office 365 ProPlus es el programa [Desktop App Assure](https://aka.ms/desktopappassure) disponible a través del Centro de FastTrack. Mediante Desktop App Assure en caso de problemas de aplicación válida un ingeniero de Microsoft colaborará con usted sin coste adicional para ayudarle a solucionar la compatibilidad de aplicaciones.
+Otra herramienta para ayudar con la compatibilidad de aplicaciones de Windows 10 y Office 365 ProPlus es el programa [App Assure](https://aka.ms/appassure), disponible a través del Centro de FastTrack. En caso de problemas de aplicación válida, un ingeniero de Microsoft le guiará con App Assure sin coste adicional para ayudarle a solucionar la compatibilidad de aplicaciones.
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Uso continuado de herramientas de datos de diagnóstico
 

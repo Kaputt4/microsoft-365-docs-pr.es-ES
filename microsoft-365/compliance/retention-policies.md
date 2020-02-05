@@ -1,5 +1,7 @@
 ---
 title: Introducción a las directivas de retención
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558597"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774226"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -54,7 +56,9 @@ Crear y administrar directivas de retención en:
 
 - La página **Directivas** en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 - La página **Retención** en **Gobierno de datos** en el [Centro de seguridad y &amp;cumplimiento de Office 365](https://protection.office.com/).
-  
+
+**Si desea poder revisar el contenido antes de que se elimine de forma permanente,** considere la posibilidad de usar [etiquetas de retención](labels.md) en lugar de una directiva de retención. Cuando se crea una etiqueta de retención, puede configurar una [revisión de disposición](disposition-reviews.md) para revisar el contenido al final de su período de retención.
+
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funcionamiento de una directiva de retención local
 
 Cuando se incluye en una directiva de retención una ubicación como un sitio o buzón, el contenido permanece en su ubicación original. Los usuarios pueden seguir trabajando con sus documentos o buzones como si nada hubiera cambiado, pero si modifican o eliminan contenido que esté incluido en la directiva, se conservará una copia del mismo tal como era cuando se aplicó la directiva.
