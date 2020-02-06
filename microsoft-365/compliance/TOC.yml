@@ -67,12 +67,6 @@
           href: privileged-access-management-overview.md
         - name: Configurar la administración del acceso con privilegios
           href: privileged-access-management-configuration.md
-    - name: Clave del cliente
-      items:
-        - name: Controlar los datos en Office 365 con la clave de cliente
-          href: controlling-your-data-using-customer-key.md
-        - name: Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365
-          href: service-encryption-with-customer-key-faq.md
     - name: Proteger el acceso de usuario y de dispositivo
       href: protect-access-to-data-and-services.md
     - name: Caja de seguridad del cliente
@@ -85,7 +79,7 @@
       items:
         - name: Crear y administrar etiquetado de confidencialidad
           href: create-sensitivity-labels.md
-        - name: Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
+        - name: Restringir el acceso al contenido mediante las etiquetas de confidencialidad para aplicar el cifrado
           href: encryption-sensitivity-labels.md
         - name: Aplicar automáticamente una etiqueta de confidencialidad al contenido
           href: apply-sensitivity-label-automatically.md
@@ -150,6 +144,18 @@
           href: document-fingerprinting.md
         - name: Funciones de DLP para información confidencial
           href: what-the-dlp-functions-look-for.md
+    - name: Clave del cliente
+      items:
+        - name: Cifrado de servicios con clave de cliente en Office 365
+          href: customer-key-overview.md
+        - name: Configurar la clave de cliente de Office 365
+          href: customer-key-set-up.md
+        - name: Administrar la clave de cliente de Office 365
+          href: customer-key-manage.md
+        - name: Rollo o rotación de una clave de cliente o una clave de disponibilidad
+          href: customer-key-availability-key-roll.md
+        - name: Obtenga información sobre la clave de disponibilidad para Office 365 Customer Key
+          href: customer-key-availability-key-understand.md
     - name: Cifrado de correo electrónico
       href: email-encryption.md
       items:
@@ -1138,7 +1144,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: Office 365 Empresa
+- name: "Office\_365 Empresa"
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
 - name: Seguridad de Microsoft 365
   href: 'https://docs.microsoft.com/microsoft-365/security/'

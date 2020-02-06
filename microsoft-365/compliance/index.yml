@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: b6c5cf658bcd10b4ec7f7ffafad2532efdeb7b58
-  ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+  ms.openlocfilehash: e3c8b712931c4225bff0a989b9846957f9a6be79
+  ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/01/2019
-  ms.locfileid: "38690987"
+  ms.lasthandoff: 02/06/2020
+  ms.locfileid: "41800070"
 landingContent:
 - title: Administrar la protección de la información
   linkLists:
@@ -65,7 +65,7 @@ landingContent:
     - text: Barreras de información
       url: information-barriers.md
     - text: Clave del cliente
-      url: controlling-your-data-using-customer-key.md
+      url: customer-key-overview.md
 - title: Detectar y responder
   linkLists:
   - linkListType: overview
@@ -82,7 +82,7 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Puntuación de cumplimiento
+    - text: Puntuación de conformidad
       url: compliance-score.md
     - text: Plan de acción de cumplimiento de RGPD
       url: gdpr-action-plan.md

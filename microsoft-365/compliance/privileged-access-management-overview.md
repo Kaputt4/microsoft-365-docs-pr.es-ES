@@ -17,19 +17,19 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información acerca de la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: 0c9d8ba22f57c7f6a576f1995e8df92be7478073
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29436c9f647de2844f95f05e66b3b6c05527352b
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597737"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784667"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Administración del acceso con privilegios en Office 365
 
 > [!IMPORTANT]
 > En este tema se tratan las instrucciones de implementación y configuración de las características disponibles actualmente en Office 365 E5 y las SKU de cumplimiento avanzado.
 
-La administración de acceso privilegiado permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger a su organización de las infracciones que usan cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o al acceso a las opciones de configuración críticas. La administración de acceso privilegiado requiere que los usuarios soliciten acceso puntual para completar las tareas elevadas y privilegiadas a través de un flujo de trabajo de aprobación limitado por el ámbito y de gran alcance. Esto proporciona a los usuarios un acceso suficiente para realizar la tarea a mano, sin arriesgar la exposición de los datos confidenciales o las opciones de configuración críticas. La habilitación de la administración de acceso privilegiada en Office 365 permite que su organización opere con privilegios de cero de posición y proporciona un nivel de defensa contra las vulnerabilidades de acceso administrativo.
+La administración de acceso privilegiado permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger a su organización de las infracciones que usan cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o al acceso a las opciones de configuración críticas. La administración de acceso privilegiado requiere que los usuarios soliciten acceso puntual para completar las tareas elevadas y privilegiadas a través de un flujo de trabajo de aprobación limitado por el ámbito y de gran alcance. Esta configuración proporciona a los usuarios un acceso suficiente para realizar la tarea a mano, sin arriesgar la exposición de los datos confidenciales o las opciones de configuración críticas. La habilitación de la administración de acceso privilegiada en Office 365 permite que su organización opere con privilegios de cero de posición y proporciona un nivel de defensa contra las vulnerabilidades de acceso administrativo.
 
 Para obtener información general sobre el flujo de trabajo de clientes integrados y el flujo de trabajo de administración de acceso privilegiado, consulte esta [caja de control de acceso de cliente y administración de acceso privilegiada en Office 365 video](https://go.microsoft.com/fwlink/?linkid=2066800).
 
@@ -76,18 +76,23 @@ Para una solicitud aprobada, el espacio de ejecución de administración de Exch
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>¿Qué SKU puede usar el acceso con privilegios en Office 365?
+
 La administración del acceso con privilegios está disponible para los clientes con Office 365 E5 y las SKU de cumplimiento avanzado.
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>¿Cuándo será compatible el acceso a Office 365 cargas de trabajo de Office más allá de Exchange?
+
 La administración del acceso privilegiado estará disponible en otras cargas de trabajo de Office 365 pronto. Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener más información.
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-policies-will-this-limit-be-increased"></a>Mi organización necesita más de 30 directivas de acceso privilegiadas, ¿aumentará este límite?
+
 Sí, aumentar el límite actual de 30 directivas de acceso con privilegios por organización de Office 365 se encuentra en la guía básica de características.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>¿Es necesario ser administrador global para administrar el acceso con privilegios en Office 365?
-No, necesita la función de administración de roles de Exchange asignada a cuentas que administran el acceso privilegiado en Office 365. Si no desea configurar el rol de administración de roles como un permiso de cuenta independiente, el rol de administrador global incluye esta función de forma predeterminada y puede administrar el acceso privilegiado. Los usuarios incluidos en un grupo de aprobadores no tienen que ser administrador global o tener asignado el rol de administración de roles para revisar y aprobar solicitudes.
+
+No, necesita la función de administración de roles de Exchange asignada a cuentas que administran el acceso privilegiado en Office 365. Si no desea configurar el rol de administración de roles como un permiso de cuenta independiente, el rol de administrador global incluye esta función de forma predeterminada y puede administrar el acceso privilegiado. Los usuarios incluidos en un grupo de aprobadores no tienen que ser administrador global o tener el rol de administración de roles asignado para revisar y aprobar solicitudes con PowerShell.
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>¿Cómo es la administración de acceso privilegiada en Office 365 relacionada con caja de caja del cliente?
+
 [Caja de caja del cliente](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) permite un nivel de control de acceso para las organizaciones cuando Microsoft obtiene acceso a los datos. La administración de acceso con privilegios en Office 365 permite un control de acceso granular dentro de una organización para todas las tareas privilegiadas de Office 365.
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?

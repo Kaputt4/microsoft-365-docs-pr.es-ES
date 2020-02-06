@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9371429caedfe2081331fab1aebbe0e1ec761e81
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661976"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784697"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurar el cumplimiento de la comunicación en Microsoft 365
 
@@ -67,7 +67,14 @@ Para que el cumplimiento de la **comunicación** esté disponible como una opci�
 
 Para obtener más información acerca de los grupos de roles y los permisos, consulte [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-## <a name="step-2-optional-set-up-groups-for-communication-compliance"></a>Paso 2 (opcional): configurar grupos para el cumplimiento de la comunicación
+## <a name="step-2-required-enable-the-office-365-audit-log"></a>Paso 2 (obligatorio): habilitar el registro de auditoría de Office 365
+
+El cumplimiento de la comunicación requiere registros de auditoría para mostrar alertas y realizar un seguimiento de las acciones de corrección realizadas por los revisores. Los registros de auditoría son un resumen de todas las actividades asociadas con una directiva de organización definida o cada vez que cambia una directiva de cumplimiento de la comunicación.
+
+Para obtener instrucciones paso a paso para activar la auditoría, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md). Después de activar la auditoría, se muestra un mensaje que indica que se está preparando el registro de auditoría y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
+
+
+## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Paso 3 (opcional): configurar grupos para el cumplimiento de la comunicación
 
  Al crear una directiva de cumplimiento de la comunicación, se define quién ha revisado sus comunicaciones y quién realiza las revisiones. En la Directiva, usará direcciones de correo electrónico para identificar personas o grupos de personas. Para simplificar la configuración, puede crear grupos para los usuarios que tengan su comunicación revisada y grupos para los usuarios que revisen dichas comunicaciones. Si está usando grupos, es posible que necesite varios. Por ejemplo, si desea supervisar las comunicaciones entre dos grupos de personas distintas o si desea especificar un grupo que no va a supervisarse.
 
@@ -86,7 +93,7 @@ Para obtener más información acerca de la configuración de grupos, vea:
 - [Administrar grupos de seguridad habilitados para correo](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Información general sobre los grupos de Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-3-required-create-a-communication-compliance-policy"></a>Paso 3 (obligatorio): crear una directiva de cumplimiento de la comunicación
+## <a name="step-4-required-create-a-communication-compliance-policy"></a>Paso 4 (obligatorio): crear una directiva de cumplimiento de la comunicación
   
 1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
 
@@ -120,7 +127,7 @@ Para obtener más información acerca de la configuración de grupos, vea:
 
 6. La página se **ha creado la Directiva** se muestra con instrucciones sobre cuándo se activará la Directiva y qué comunicaciones se capturarán.
 
-## <a name="step-4-optional-create-employee-notice-templates"></a>Paso 4 (opcional): crear plantillas de avisos de empleados
+## <a name="step-5-optional-create-employee-notice-templates"></a>Paso 5 (opcional): crear plantillas de avisos de empleados
 
 Si desea tener la opción de responder a una alerta de Directiva mediante el envío de una notificación de recordatorio al empleado asociado, deberá crear al menos una plantilla de aviso en la organización. Los campos de plantilla de aviso son editables antes de que se envíen como parte del proceso de corrección de alertas y se recomienda crear una plantilla de notificación personalizada para cada directiva de cumplimiento de la comunicación.
 
@@ -140,7 +147,7 @@ Si desea tener la opción de responder a una alerta de Directiva mediante el env
 
 5. Seleccione **Guardar** para crear y guardar la plantilla de aviso.
 
-## <a name="step-5-optional-test-your-communication-compliance-policy"></a>Paso 5 (opcional): probar la Directiva de cumplimiento de la comunicación
+## <a name="step-6-optional-test-your-communication-compliance-policy"></a>Paso 6 (opcional): probar la Directiva de cumplimiento de la comunicación
 
 Después de crear una directiva de cumplimiento de comunicaciones, es una buena idea probarla para asegurarse de que la Directiva aplica correctamente las condiciones definidas. Es posible que también desee [probar sus directivas de prevención de pérdida de datos (DLP)](create-test-tune-dlp-policy.md) si las directivas de cumplimiento de comunicaciones incluyen tipos de información confidencial. Asegúrese de dar tiempo a las directivas de activación para que se capturen las comunicaciones que desea probar.
 
@@ -155,11 +162,3 @@ Siga estos pasos para probar la Directiva de cumplimiento de la comunicación:
 3. Inicie sesión en Microsoft 365 como revisor designado en la Directiva de cumplimiento de la comunicación. Navegue a **** > **alertas** de cumplimiento de comunicaciones para ver las alertas de las directivas.
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta se haya resuelto correctamente.
-
-## <a name="step-6-optional-enable-auditing-for-your-communication-compliance-policies"></a>Paso 6 (opcional): habilitar la auditoría para las directivas de cumplimiento de la comunicación
-
-Una vez probadas las directivas, es posible que desee habilitar la auditoría para que se registren las actividades asociadas a la administración de cumplimiento de la comunicación. Esta auditoría puede ser un resumen de todas las actividades asociadas con una directiva de organización definida o cada vez que cambia una directiva de cumplimiento de la comunicación.
-
-Cuando la auditoría está habilitada, las directivas de cumplimiento de comunicaciones tienen pistas de auditoría integradas para estar completamente preparados para las auditorías internas o externas. Puede usar el control **exportar actividades de revisión** en la Página principal de cualquier directiva para generar un archivo de auditoría o ver actividades de auditoría en el registro de auditoría unificado si la auditoría está habilitada.
-
-Para activar la auditoría, haga clic en **iniciar grabación de usuario y actividad de administrador** en la página de **búsqueda de registros de auditoría** en el centro de seguridad & cumplimiento de Office 365. Si no ve este vínculo, la auditoría ya se ha activado para la organización. Después de activar la auditoría, se muestra un mensaje que indica que se está preparando el registro de auditoría y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
