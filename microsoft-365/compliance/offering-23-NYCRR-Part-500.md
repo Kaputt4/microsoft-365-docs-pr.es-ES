@@ -5,18 +5,21 @@ keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 09126b4086f178f2f94e1344a4f4210a67b66621
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: e5d9c847173af4155d6c9eb0f8c59a07053435c2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860130"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602897"
 ---
 # <a name="title-23-nycrr-part-500"></a>Título 23 NYCRR parte 500
 
@@ -26,27 +29,27 @@ En respuesta a las serias y crecientes amenazas contra la ciberseguridad de los 
 
 ## <a name="microsoft-and-title-23-nycrr-part-500"></a>Microsoft y Título 23 NYCRR parte 500
 
-Microsoft proporciona una guía completa,[Servicios en la nube de Microsoft: soporte técnico con los requisitos de ciberseguridad NYDFS](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f7e56dc6-4e52-4e9a-af06-aa41d5851d36&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides), para servicios financieros regulados bajo el Título 23 NYCRR parte 500. Esta explica en profundidad cómo Azure, Office 365 y los servicios en la nube de Power BI apoyan en el cumplimiento de los requisitos. Las instituciones financieras que buscan operar en el centro financiero global de Nueva York deben cumplirlos, motivo por el cual son críticos para numerosas instituciones.
+Microsoft proporciona una guía completa, [Servicios en la nube de Microsoft: soporte técnico con los requisitos de ciberseguridad NYDFS](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f7e56dc6-4e52-4e9a-af06-aa41d5851d36&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides), para servicios financieros regulados bajo el Título 23 NYCRR parte 500. Esta explica en profundidad cómo Azure, Office 365 y los servicios en la nube de Power BI apoyan en el cumplimiento de los requisitos. Las instituciones financieras que buscan operar en el centro financiero global de Nueva York deben cumplirlos, motivo por el cual son críticos para numerosas instituciones.
 
-Siga estas instrucciones para acelerar el cumplimiento normativo con el Título 23 NYCRR parte 500, Servicios en la nube de Microsoft: [Soporte técnico con los requisitos de ciberseguridad NYDFS](https://go.microsoft.com/fwlink/p/?linkid=2098969)
+Siga estas instrucciones para acelerar el cumplimiento normativo con el Título 23 NYCRR parte 500, Servicios en la nube de Microsoft: [Soporte técnico con los requisitos de ciberseguridad de NYDFS](https://go.microsoft.com/fwlink/p/?linkid=2098969)
 
 Las normativas de Nueva York requieren que cada entidad financiera:
 
 - **Desarrolle y mantenga un programa de ciberseguridad robusto** que comience por evaluar el perfil de riesgo específico de la institución y, a continuación, diseñe un programa que los direccione. El [Programa de cumplimiento para los servicios financieros de Microsoft Cloud](https://www.microsoft.com/download/confirmation.aspx?id=55332) se creó para ayudar a los servicios financieros a evaluar los riesgos de usar los servicios en la nube de Microsoft. Incluye la participación directa con nuestros técnicos y responsables corporativos, además de acceso a nuestros expertos en seguridad y cumplimiento normativo.
-- **Implemente una política de ciberseguridad completa** que se ocupe de la seguridad de la información, clasificación y gobernanza de datos, controles de acceso, continuidad empresarial y otros similares. Microsoft ofrece una guía para desarrollar esta directiva con información detallada sobre nuestras certificaciones y evaluaciones de riesgos; mediciones de recuperación ante desastres y continuidad empresarial; y diagnósticos para el registro y auditoría.
-- **Designar un Director de seguridad de la información** (CISO) para administrar el programa de ciberseguridad y aplicar la directiva. Para ayudar a su CISO, Microsoft le proporciona información detallada sobre ciberseguridad para las implementaciones en la nube de Microsoft a través del [Azure Security Center](https://azure.microsoft.com/services/security-center/?v=17.23h), [Análisis de amenazas avanzada de Office 365](https://docs.microsoft.com/advanced-threat-analytics/) y [Seguridad de Power BI](https://go.microsoft.com/fwlink/?LinkId=829185).
-- **Supervisar y probar la efectividad de su programa de ciberseguridad**: Microsoft proporciona información de las auditorías en sus prácticas de ciberseguridad, las cuales incluyen supervisión continua, pruebas de infiltración periódicas y evaluación de vulnerabilidades. Los clientes pueden llevar a cabo sus propias pruebas sin permiso previo de Microsoft.
-- **Mantener una traza de auditoría.** Las funciones de auditoría integradas de los clientes de Azure, Office 365 de Power BI generan información que se puede usar para reconstruir transacciones financieras y desarrollar información de la traza de auditoría.
-- **Limite el acceso a sistemas de información que contengan información no pública**: Medidas que Azure, Office 365 y Power BI ofrecen para un control de acceso basado en roles (RBAC) nativo de cada servicio, estrictos requisitos de seguridad y acceso para todos los administradores de Microsoft y auditorías de todas las solicitudes de acceso con privilegios elevados.
-- **Establecer procedimientos para evaluar y probar la seguridad de las aplicaciones desarrolladas de forma externa**: Para desarrolladores que usan Visual Studio, [las Reglas de seguridad](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code) para el código administrado pueden ayudar a garantizar que las amenazas de ciberseguridad de la aplicación se detecten y mitiguen antes de implementar el código.
-- **Use evaluaciones de riesgos periódicas para diseñar y mejorar los programas de ciberseguridad**: Para los clientes, Microsoft agrega información acerca de las amenazas de seguridad, proporciona guías básicas de administración de cambios y actualiza la información de los subcontratistas periódicamente. Microsoft también realiza de forma periódica evaluaciones de riesgos de sus propios servicios cuyos resultados están disponibles para los clientes.
+- **Implemente una directiva de ciberseguridad completa** que se ocupe de la seguridad de la información, la clasificación y el gobierno de datos, los controles de acceso, la continuidad empresarial y otros aspectos similares. Microsoft ofrece una guía para desarrollar esta directiva con información detallada sobre nuestras certificaciones y evaluaciones de riesgos; mediciones de recuperación ante desastres y continuidad empresarial; y diagnósticos para el registro y la auditoría.
+- **Designe a un Director de seguridad de la información** (CISO) para administrar el programa de ciberseguridad y aplicar la directiva. Para ayudar a su CISO, Microsoft le proporciona información detallada sobre ciberseguridad para las implementaciones en la nube de Microsoft a través de [Azure Security Center](https://azure.microsoft.com/services/security-center/?v=17.23h), [Análisis de amenazas avanzada de Office 365](https://docs.microsoft.com/advanced-threat-analytics/) y [Seguridad de Power BI](https://go.microsoft.com/fwlink/?LinkId=829185).
+- **Supervise y pruebe la efectividad de su programa de ciberseguridad**: Microsoft proporciona información de las auditorías en sus prácticas de ciberseguridad, las cuales incluyen supervisión continua, pruebas de infiltración periódicas y evaluación de vulnerabilidades. Los clientes pueden llevar a cabo sus propias pruebas sin permiso previo de Microsoft.
+- **Mantenga una traza de auditoría.** Las funciones de auditoría integradas de los clientes de Azure, Office 365 y de Power BI generan información que se puede usar para reconstruir transacciones financieras y desarrollar información de la traza de auditoría.
+- **Limite el acceso a sistemas de información que contengan información no pública**: medidas que Azure, Office 365 y Power BI ofrecen para un control de acceso basado en roles (RBAC) nativo de cada servicio, estrictos requisitos de seguridad y acceso para todos los administradores de Microsoft y auditorías de todas las solicitudes de acceso con privilegios elevados.
+- **Establezca procedimientos para evaluar y probar la seguridad de las aplicaciones desarrolladas de forma externa**: para desarrolladores que usan Visual Studio, [las Reglas de seguridad](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code) para el código administrado pueden ayudar a garantizar que las amenazas de ciberseguridad de la aplicación se detecten y mitiguen antes de implementar el código.
+- **Use evaluaciones de riesgos periódicas para diseñar y mejorar los programas de ciberseguridad**: para los clientes, Microsoft agrega información acerca de las amenazas de seguridad, proporciona guías básicas de administración de cambios y actualiza la información de los subcontratistas periódicamente. Microsoft también realiza de forma periódica evaluaciones de riesgos de sus propios servicios cuyos resultados están disponibles para los clientes.
 - **Utilice personal calificado para administrar los riesgos de ciberseguridad y supervisar las funciones de ciberseguridad**: Microsoft emplea procedimientos estrictos para el acceso de nuestros empleados a los datos de sus clientes. Si contratamos a los subcontratistas, nos hacemos responsables por la prestación del servicio y garantizamos que los subcontratistas cumplan todos los compromisos de privacidad y seguridad de Microsoft, incluidos los requisitos para administrar datos confidenciales, revisión de antecedentes y acuerdos de confidencialidad.
-- **Implemente directivas y procedimientos para garantizar la seguridad de la información que mantienen los proveedores de servicios externos**: Azure, Office 365 y Power BI hacen que la autenticación multifactor esté disponible para todas las conexiones entrantes a las redes de la empresa; implementan controles, incluido el cifrado, para proteger la información no pública durante el tránsito en redes externas y en reposo; finalmente ofrecen los[Términos de servicios en línea de Microsoft](https://aka.ms/Online-Services-Terms) que permiten a los clientes recibir notificaciones, investigar incidencias y mitigar el riesgo de incidentes de seguridad.
-- **Implemente directivas y procedimientos de retención y eliminación de datos**: Puede obtener acceso a los datos de los clientes y extraerlos en Azure, Office 365 y Power BI en cualquier momento.
-- **Supervise la actividad de usuarios autorizados, detecte el acceso no autorizado y ofrezca un entrenamiento en ciberseguridad periódico a los empleados**: Azure, Office 365 y Power BI incluyen la supervisión de afuera hacia adentro para emitir alertas sobre incidencias y diagnósticos extensivos para el registro y auditoría. [Microsoft Virtual Academy](https://mva.microsoft.com/)ofrece formación en línea que cubre la ciberseguridad de los servicios en la nube de Microsoft.
-- **Desarrolle planes para responder y recuperarse de incidentes de ciberseguridad **: Microsoft le ayuda a prepararse para los incidentes de ciberseguridad mediante una estrategia defensiva para detectar, predecir y evitar las infracciones de seguridad antes de que se produzcan. Cuando desarrolle sus propios planes, puede recurrir a nuestro plan de administración de incidentes para reaccionar a infracciones de ciberseguridad.
+- **Implemente directivas y procedimientos para garantizar la seguridad de la información que mantienen los proveedores de servicios externos**: Azure, Office 365 y Power BI hacen que la autenticación multifactor esté disponible para todas las conexiones entrantes a las redes de la empresa; implementan controles, incluido el cifrado, para proteger la información no pública durante el tránsito en redes externas y en reposo; finalmente ofrecen los [Términos de servicios en línea de Microsoft](https://aka.ms/Online-Services-Terms) que permiten a los clientes recibir notificaciones, investigar incidencias y mitigar el riesgo de incidentes de seguridad.
+- **Implemente directivas y procedimientos de retención y eliminación de datos**: puede obtener acceso a los datos de los clientes y extraerlos en Azure, Office 365 y Power BI en cualquier momento.
+- **Supervise la actividad de usuarios autorizados, detecte el acceso no autorizado y ofrezca un entrenamiento en ciberseguridad periódico a los empleados**: Azure, Office 365 y Power BI incluyen la supervisión de interacción indirecta para emitir alertas sobre incidencias y diagnósticos extensivos para el registro y la auditoría. [Microsoft Virtual Academy](https://mva.microsoft.com/) ofrece formación en línea que cubre la ciberseguridad de los servicios en la nube de Microsoft.
+- **Desarrolle planes para responder a incidentes de ciberseguridad y recuperarse de ellos**: Microsoft le ayuda a prepararse para los incidentes de ciberseguridad mediante una estrategia defensiva para detectar, predecir y evitar las infracciones de seguridad antes de que se produzcan. Cuando desarrolle sus propios planes, puede recurrir a nuestro plan de administración de incidentes para reaccionar ante infracciones de ciberseguridad.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube dentro del alcance de Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -57,7 +60,7 @@ Las normativas de Nueva York requieren que cada entidad financiera:
 
 **¿Qué instituciones se cubren en virtud de este reglamento?**
 
-Consulte al Departamento de Servicios Financieros de Nueva York, [el cual supervisamos,](https://go.microsoft.com/fwlink/p/?linkid=2099374) para determinar si su institución está regulada por el presente reglamento.
+Consulte al Departamento de Servicios Financieros de Nueva York, [el cual supervisamos,](https://go.microsoft.com/fwlink/p/?linkid=2099374) para determinar si su institución se rige por el presente reglamento.
 
 ## <a name="resources"></a>Recursos
 

@@ -5,18 +5,21 @@ keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 22703f7c9589a246464b16a3088036a858f59475
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6a2957ed5782c9449a1715669a7e220940572a66
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860000"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602577"
 ---
 # <a name="canadian-privacy-laws"></a>Leyes de privacidad de Canadá
 
@@ -24,7 +27,7 @@ ms.locfileid: "39860000"
 
 Las leyes de privacidad de Canadá se establecieron para proteger la privacidad de los usuarios y darles el derecho de acceder a la información recopilada sobre ellos. La [Oficina de la Comisaría de Protección de Datos Personales de Canadá](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) (OPCC) supervisa el cumplimiento de estas leyes.
 
-La [Ley de Privacidad](https://privacy.microsoft.com/es-ES/#heading-0-0-2-1) regula cómo las organizaciones de administración federal recopilan, usan y divulgan información de identificación personal, incluida la de los empleados federales. La [Ley de Protección de Información Personal y Documentos Electrónicos](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) rige lo mismo para las actividades empresariales de las empresas con fines de lucro y para los empleados de empresas reguladas por el gobierno federal como bancos, aerolíneas y empresas de telecomunicaciones.
+La [Ley de Privacidad](https://privacy.microsoft.com/en-US/#heading-0-0-2-1) regula cómo las organizaciones de administración federal recopilan, usan y divulgan información de identificación personal, incluida la de los empleados federales. La [Ley de Protección de Información Personal y Documentos Electrónicos](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) rige lo mismo para las actividades empresariales de las empresas con fines de lucro y para los empleados de empresas reguladas por el gobierno federal como bancos, aerolíneas y empresas de telecomunicaciones.
 
 La ley PIPEDA se basa en 10 [principios de información justa](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/) que las empresas deben seguir para cumplir con ella. Por ejemplo, el principio básico del consentimiento da lugar al requisito de PIPEDA de que las organizaciones deben obtener el permiso de un individuo para recopilar o usar su información personal. Los individuos tienen tanto el derecho de acceder a esa información personal como a cuestionar su exactitud (con base en el principio de "acceso individual"). El principio de "propósitos de identificación" conduce a la regla de que la información personal solo puede usarse para los propósitos acordados.
 
