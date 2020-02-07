@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de retención que conserva el contenido de Microsoft 365, puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: 267b2bc7a8bc65e3a816c2d3d88397589734b55d
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: d308dcc58bbacf118374bbabdebf27c35ad2d73a
+ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661936"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836720"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 
@@ -37,7 +37,7 @@ Cuando el contenido alcanza el final de su período de retención, existen vario
     
 Cuando se crea una etiqueta de retención en el centro de cumplimiento de Microsoft 365, el centro de seguridad de Microsoft 365 o el centro de cumplimiento de & de seguridad de Office 365, puede optar por desencadenar una revisión de disposición al finalizar el período de retención. En una revisión de disposición:
   
-- Las personas que elija reciben una notificación por correo electrónico de que tienen contenido que revisar. Estos revisores pueden ser usuarios individuales, grupos de seguridad o de distribución o grupos de Office 365. Tenga en cuenta que las notificaciones se envían cada semana.
+- Las personas que elija reciben una notificación por correo electrónico de que tienen contenido que revisar. Tenga en cuenta que las notificaciones se envían cada semana.
     
 - Los revisores van a la página de **disposición** en el &amp; centro de seguridad y cumplimiento para revisar el contenido. Los revisores pueden ver cuántos elementos tiene la etiqueta de retención en espera de disposición y, a continuación, seleccionar una etiqueta de retención para ver todo el contenido con esa etiqueta.
     
@@ -72,7 +72,7 @@ Para obtener más información acerca de las etiquetas de retención, consulte [
 ![Configuración de retención de una etiqueta](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> Cuando se especifica la opción **notificar a estas personas cuando hay elementos listos para revisar**, especifique un usuario o un grupo de seguridad habilitado para correo. Los grupos de Office 365 no son compatibles con esta opción.
+> Cuando especifique la opción **notificar a estas personas cuando hay elementos listos para revisar**, especifique un usuario. Los grupos de Office 365 no son compatibles con esta opción.
 
 ## <a name="disposing-content"></a>Eliminación de contenido
 
@@ -100,15 +100,13 @@ Además, tenga en cuenta que se auditan todas las acciones de disposición. Para
   
 ## <a name="permissions-for-disposition"></a>Permisos para disposición
 
-Para obtener acceso a la página de **disposición** , los revisores deben ser miembros de la función de **Administración de disposición** y el rol **registros de auditoría con permiso de vista** . Le recomendamos que cree un nuevo grupo de funciones denominado **revisores de disposición**y que agregue estos dos roles a ese grupo de roles. 
+Para acceder a la página de **disposición** , los revisores deben tener asignado el rol de **Administración de disposición** y el rol **registros de auditoría con permiso de vista** . [Vea las instrucciones](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md) para asignar roles.
 
 Específica del rol **registros de auditoría con permiso de vista** :
 
 - Dado que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet de Exchange Online, debe asignar a los usuarios este rol mediante el [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), en lugar de usar la página **permisos** del centro de seguridad & cumplimiento. Para obtener instrucciones, vea [administrar grupos de roles en Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Los grupos de Office 365 no son compatibles con este rol. En su lugar, asigne buzones de usuario, usuarios de correo o grupos de seguridad habilitados para correo.
-
-Para obtener instrucciones sobre cómo conceder a los usuarios la función de **Administración de disposición** y crear su nueva función de **revisores de disposición** , vea [conceder acceso a los usuarios al centro de seguridad &amp; y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Los grupos de Office 365 no son compatibles con este rol. En su lugar, asigne buzones de usuario o usuarios de correo.
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Cuánto tiempo se eliminará permanentemente el contenido desechado
 

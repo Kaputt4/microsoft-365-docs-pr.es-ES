@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre la clave de disponibilidad que se usa para recuperar claves de cliente de Office 365 perdidas.
-ms.openlocfilehash: b363d3b90c6ea783bd051bea6c44a94689b87ac1
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
+ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804867"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845369"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>Obtenga información sobre la clave de disponibilidad para Office 365 Customer Key
 
@@ -54,7 +54,7 @@ Microsoft comparte la responsabilidad de la protección de datos con usted crean
 
 ### <a name="availability-key-secret-stores"></a>Almacenes principales del secreto de disponibilidad
 
-Microsoft protege las claves de disponibilidad en almacenes de secreto interno controlados por acceso, similares al almacén de claves de Azure accesible para el cliente. Implementamos controles de acceso para evitar que los administradores de Microsoft accedan directamente a los secretos contenidos en. Las operaciones del almacén secreto, incluida la rotación, la eliminación y la recuperación clave se producen a través de comandos automatizados que nunca implican acceso directo a la clave de disponibilidad. El acceso para ajustar estos comandos está limitado a ingenieros específicos y requiere el aumento de privilegios a través de una herramienta interna, Lockbox. La elevación de privilegios requiere la aprobación del administrador y la justificación antes de que se concedan. Lockbox asegura que el acceso esté enlazado a tiempo con la revocación de acceso automática cuando se agote el tiempo o se cierre la sesión del ingeniero.
+Microsoft protege las claves de disponibilidad en almacenes de secreto interno controlados por acceso, como el almacén de claves de Azure accesible para el cliente. Implementamos controles de acceso para evitar que los administradores de Microsoft accedan directamente a los secretos contenidos en. Las operaciones del almacén secreto, incluida la rotación, la eliminación y la recuperación clave se producen a través de comandos automatizados que nunca implican acceso directo a la clave de disponibilidad. El acceso para ajustar estos comandos está limitado a ingenieros específicos y requiere el aumento de privilegios a través de una herramienta interna, Lockbox. La elevación de privilegios requiere la aprobación del administrador y la justificación antes de que se concedan. Lockbox asegura que el acceso esté enlazado a tiempo con la revocación de acceso automática cuando se agote el tiempo o se cierre la sesión del ingeniero.
 
 Las claves de disponibilidad de **Skype empresarial y Exchange Online** se almacenan en un almacén secreto de Active Directory. Exchange Online Active Directory está compuesto por bosques de administración que enrutan el tráfico y los bosques de capacidad que contienen objetos, identidades y datos. Los bosques de capacidad constan de bosques de cuentas y bosques de recursos. Los bosques de cuentas tienen varios controladores de dominio de capacidad que se sincronizan entre sí. Las claves de disponibilidad se almacenan de forma segura dentro de estos controladores de dominio de capacidad. Esta ubicación de almacenamiento seguro es independiente y aislada del almacén secreto de SharePoint Online, OneDrive para la empresa y archivos de Microsoft Teams.
 
@@ -62,9 +62,9 @@ Las claves de disponibilidad de **los archivos de SharePoint Online, OneDrive pa
 
 ### <a name="defense-in-depth"></a>Defensa en profundidad
 
-Microsoft emplea una estrategia de defensa en profundidad para evitar que los actores malintencionados afecten a la confidencialidad, la integridad o la disponibilidad de los datos de clientes almacenados en la nube de Microsoft. Se implementan controles preventivos y de detectives específicos para proteger la clave de disponibilidad como parte de la estrategia de seguridad general.
+Microsoft emplea una estrategia de defensa en profundidad para evitar que los actores malintencionados afecten a la confidencialidad, la integridad o la disponibilidad de los datos de clientes almacenados en la nube de Microsoft. Se implementan controles preventivos y de detectives específicos para proteger el almacén secreto y la clave de disponibilidad como parte de la estrategia de seguridad general.
 
-Office 365 se ha creado para evitar el mal uso de la clave de disponibilidad. La capa de aplicación es el único método a través del cual se pueden usar claves, incluida la clave de disponibilidad, para cifrar y descifrar datos. Solo el código de servicio de Office 365 tiene la capacidad de interpretar y recorrer la jerarquía de claves para actividades de cifrado y descifrado. Si un administrador malintencionado de Microsoft omitió los controles para extraer una clave de disponibilidad del almacén secreto, la clave no puede usarse para obtener acceso a los datos del cliente. El aislamiento lógico se encuentra entre las ubicaciones de almacenamiento de las claves de cliente, las claves de disponibilidad, otras claves jerárquicas y los datos de clientes, lo que reduce el riesgo de exposición de los datos en caso de que una o más ubicaciones estén en peligro.
+Office 365 se ha creado para evitar el mal uso de la clave de disponibilidad. La capa de aplicación es el único método a través del cual se pueden usar claves, incluida la clave de disponibilidad, para cifrar y descifrar datos. Solo el código de servicio de Office 365 tiene la capacidad de interpretar y recorrer la jerarquía de claves para actividades de cifrado y descifrado. Si un administrador malintencionado de Microsoft omitió los controles para extraer una clave de disponibilidad del almacén secreto, la clave no puede usarse para obtener acceso a los datos del cliente. El aislamiento lógico se encuentra entre las ubicaciones de almacenamiento de las claves de cliente, las claves de disponibilidad, otras claves jerárquicas y los datos de clientes. Este aislamiento reduce el riesgo de exposición de los datos en caso de que una o más ubicaciones estén en peligro. Cada capa de la jerarquía ha incorporado capacidades de detección de intrusiones 24x7 para proteger los almacenes de datos y secretos.
 
 Los controles de acceso se implementan para evitar el acceso no autorizado a sistemas internos, incluidos los almacenes de claves secretas de disponibilidad. Los ingenieros de Microsoft no tienen acceso directo a los almacenes de clave secretas de disponibilidad. Para obtener más información sobre los controles de acceso, revise [controles de acceso administrativo en Office 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview).
 
@@ -80,9 +80,11 @@ Si pierde el control de las claves de cliente, la clave de disponibilidad le pro
 
 ### <a name="recovery-procedure-for-exchange-online-and-skype-for-business"></a>Procedimiento de recuperación para Exchange Online y Skype empresarial
 
-Si pierde el control de las claves de cliente, la clave de disponibilidad seguirá proporcionando acceso a los datos mientras se recupera. Para cifrar los datos con nuevas claves de cliente, cree nuevas claves en Azure Key Vault, cree un nuevo DEP, asocie el nuevo DEP a sus nuevas claves de cliente y, a continuación, indique a la DEP que cifre los buzones cifrados actualmente con el DEP anterior para el que se perdieron o Compens las claves. omised. Cuando se realiza, la clave de disponibilidad descifrará los buzones que se cifrarán con la nueva Directiva.
+Si pierde el control de las claves de cliente, la clave de disponibilidad le ofrece la capacidad de recuperar los datos y de volver a poner en línea los recursos de Office 365 afectados. La clave de disponibilidad sigue protegiendo sus datos mientras se recupera. En un nivel alto, para una recuperación completa de la pérdida de clave, deberá crear un nuevo DEP y mover los recursos afectados a la nueva Directiva.
 
-Este proceso puede tardar hasta 72 horas, que es la duración estándar cuando se cambia un DEP.
+Para cifrar los datos con nuevas claves de cliente, cree nuevas claves en Azure Key Vault, cree un nuevo DEP con las nuevas claves de cliente y, a continuación, asigne el nuevo DEP a los buzones que están cifrados actualmente con el DEP anterior para el que las claves se han perdido o están en peligro.
+
+Este proceso de nuevo cifrado puede tardar hasta 72 horas. Esta es la duración estándar cuando se cambia un DEP.
   
 ### <a name="recovery-procedure-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Procedimiento de recuperación para archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams
 
@@ -92,7 +94,7 @@ Esta operación es proporcional al número de sitios de la organización. Una ve
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Uso de la clave de disponibilidad en Exchange Online y Skype empresarial
 
-Cuando se crea un DEP con una clave de cliente, Office 365 genera una clave de la Directiva de cifrado de datos (clave DEP) asociada a ese DEP. El servicio cifra la clave DEP tres veces: una con cada una de las claves de cliente y otra con la clave de disponibilidad. Solo se almacenan las versiones cifradas de la clave de DEP y una clave de DEP solo se puede descifrar con las claves de cliente o la clave de disponibilidad. A continuación, se usa la clave DEP para cifrar las claves de buzón, que se usan para cifrar buzones individuales. 
+Cuando se crea un DEP con una clave de cliente, Office 365 genera una clave de la Directiva de cifrado de datos (clave DEP) asociada a ese DEP. El servicio cifra la clave DEP tres veces: una con cada una de las claves de cliente y otra con la clave de disponibilidad. Solo se almacenan las versiones cifradas de la clave de DEP y una clave de DEP solo se puede descifrar con las claves de cliente o la clave de disponibilidad. A continuación, se usa la clave DEP para cifrar las claves de buzón, que se usan para cifrar buzones individuales.
   
 Office 365 sigue este proceso para descifrar y proporcionar datos cuando los clientes usan el servicio:
   
