@@ -1,5 +1,7 @@
 ---
 title: Protección de archivos y sitios de SharePoint Online
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -19,12 +21,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumen: recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.'
-ms.openlocfilehash: c175e0e480670f9e5ce00a701704cedf1abeff26
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 29bd8ade5f32a2ba7e810d587d731d5036a372b6
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572356"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830994"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Protección de archivos y sitios de SharePoint Online
 
@@ -158,7 +160,7 @@ Para consultar los pasos necesarios para configurar etiquetas de retención y di
 
 Si existe una justificación para sus circunstancias de seguridad, puede usar las etiquetas de confidencialidad para aplicar protección a los archivos donde quiera que vayan. Las etiquetas de confidencialidad en el Centro de cumplimiento de Microsoft 365 y las etiquetas de Azure Information Protection son las mismas. Para esta solución, se recomienda usar una etiqueta de confidencialidad o una subetiqueta de la etiqueta Extremadamente confidencial para conceder permisos y cifrar los archivos que deben protegerse con el máximo nivel de seguridad.
 
-Tenga en cuenta que, cuando se aplica el cifrado de la etiqueta de confidencialidad a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas DLP solo pueden trabajar con los metadatos (incluidas las etiquetas de retención), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).
+Si su organización no ha [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (versión preliminar pública)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files): tenga en cuenta que, cuando se aplica el cifrado de la etiqueta de confidencialidad a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas DLP solo pueden trabajar con los metadatos (incluidas las etiquetas de retención), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).
 
 Para obtener más información, vea [Información general sobre las etiquetas de retención](../../compliance/sensitivity-labels.md).
 

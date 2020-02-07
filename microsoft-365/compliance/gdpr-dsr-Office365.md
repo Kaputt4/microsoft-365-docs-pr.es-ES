@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 4e5ee52f9158df64e80f057adcfbf49c45f6dc31
+ms.sourcegitcommit: d4941dd0b598fb315e2c87083246ec3b26bbc032
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628126"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41779035"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado de Office 365 para el RGPD y la CCPA
 
@@ -1581,61 +1581,18 @@ No se permite restringir o rectificar los datos de los registros generados por e
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>Acceder a registros generados por el sistema y exportarlos
 
-Los administradores pueden obtener acceso a registros generados por el sistema asociados con el uso de un usuario específico de las aplicaciones y servicios de Office 365. Para obtener acceso y exportar los registros generados por el sistema:
+El "derecho de portabilidad de datos" permite a un interesado solicitar una copia de sus datos personales en formato electrónico (es decir, un “formato estructurado, de uso común, compatible con dispositivos electrónicos e interoperable”) que pueda transmitirse a otro responsable de los datos. Azure soporta esto al permitir que su organización exporte los datos en formato nativo JSON a su contenedor de almacenamiento de Azure especificado.
 
-1. Vaya al [Portal de confianza de servicios de Microsoft](https://servicetrust.microsoft.com/) e inicie sesión con las credenciales de un administrador global de Office 365.
+>[!IMPORTANT]
+>Debe ser un administrador de espacios empresariales para exportar datos de usuario del espacio empresarial.
 
-2. En la lista desplegable **Privacidad** de la parte superior de la página, haga clic en **Solicitud del interesado**.
+#### <a name="azure-active-directory"></a>Azure Active Directory
 
-3. En la página **Solicitud del interesado**, en **Registros generados por el sistema**, haga clic en **Exportación de registros de datos**.
+Con respecto a los datos de clientes, Microsoft ofrece un portal y las experiencias del producto para proporcionar al administrador de inquilinos del cliente empresarial la capacidad de exportar solicitudes de información de identificación sobre un usuario final.
 
-    Se mostrará **la exportación de registro de datos**. Se mostrará una lista de las solicitudes de datos de exportación enviadas por su organización.
+#### <a name="service-specific-interfaces"></a>Interfaces específicas del servicio
 
-4. Para crear una nueva solicitud para usuario, haga clic en **Crear solicitud de exportación de datos**.
-
-Después de crear una solicitud, esta se mostrará en la página **Exportar el registro de datos**, donde puede realizar un seguimiento de su estado. Después de completar una solicitud, puede hacer clic en un vínculo para obtener acceso a los registros generados por el sistema, que se exportarán a la ubicación de Azure Storage de su organización en un plazo de 30 días tras crear la solicitud. Los datos se guardan en los formatos de archivo más habituales y legibles por máquina, como JSON o XML. Si su organización no tiene una cuenta de Azure ni una ubicación de Azure Storage, debe crearlas para que la herramienta de exportación del registro de datos pueda exportar los registros generados por el sistema. Para más información, vea [Introducción a Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
-
->[!NOTE]
->Al crear una solicitud de exportación de datos, los datos generados por el sistema para algunas aplicaciones no se exportarán mediante la herramienta Exportación de registros de datos. Para exportar datos de estas aplicaciones, vea [Pasos adicionales para exportar datos de registros generados por el sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
-
-Este es un resumen de las acciones de acceso y exportación de registros generados por el sistema con la herramienta Exportación de registros de datos:
-
-- **¿Cuánto tarda la herramienta Exportación de registros de datos de Microsoft en completar una solicitud? ** Esto depende de varios factores. En la mayoría de los casos debe completarse en uno o dos días, pero puede tardar hasta 30 días.
-
-- **¿Qué formato tendrá el resultado?** El resultado son archivos con formato de lectura mecánica estructurados, como XML, CSV o JSON.
-
-- **¿Quién tiene acceso a la herramienta Exportación de registros de datos para enviar solicitudes de acceso de registros generados por el sistema?** Los administradores globales de Office 365 tienen acceso a la utilidad Administrador de registros del RGPD.
-
-- **¿Qué datos devuelve la herramienta Exportación de registros de datos?** La herramienta Exportación de registros de datos devuelve registros generados por el sistema que Microsoft almacena. Los datos exportados pertenecen a varios servicios Microsoft, como Office 365, Azure y Dynamics.
-
-- **¿Cómo se devuelven los datos al usuario?** Los datos se exportan a la ubicación de Azure Storage de su organización. Los administradores de la organización deben determinar cómo mostrarán o enviarán estos datos a los usuarios.
-
-- **¿Cuál será la apariencia de los datos en los registros generados por el sistema?** Ejemplo de una entrada de registro generado por el sistema en formato JSON:
-
-   ```JSON
-   [{
-            "DateTime": "2017-04-28T12:09:29-07:00",
-             "AppName": "SharePoint",
-             "Action": "OpenFile",
-             "IP": "154.192.13.131",
-             "DevicePlatform": "Windows 1.0.1607"
-   }]
-   ```
-
->[!NOTE]
->Algunas características no permiten exportar ni eliminar los registros generados por el sistema con información personal para mantener la integridad de dicha información con fines de seguridad y auditoría.
-
-Los datos sobre el producto y el servicio de algunos de los servicios más utilizados de Microsoft, como Exchange Online, SharePoint Online, Skype empresarial, Yammer y Office 365 también se pueden recuperar al buscar el registro de auditoría de Office 365 en el Centro de seguridad y cumplimiento. Para obtener más información, vea [Usar la herramienta de búsqueda de registros de auditoría de Office 365 en investigaciones DSR](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) en el Apéndice A. Es posible que el uso del registro de auditoría le sea útil, ya que es posible asignar permisos a otras personas de su organización (como el trabajador encargado de la conformidad) para que busquen en el registro de auditoría el acceso a estos datos.
-
-#### <a name="national-clouds"></a>Nubes nacionales
-
-En las siguientes nubes nacionales, un administrador de TI global tiene que realizar este procedimiento para exportar registros de datos generados por el sistema:
-
-- Office 365 Alemania: [Visite el Portal de confianza del servicio Microsoft de Alemania](https://aka.ms/MicrosoftSTPGermany) y siga los pasos descritos anteriormente.
-
-- Office 365 Administración pública de EE. UU.: [vaya al Portal de administración de Office 365](https://portal.office365.us) y envíe una solicitud al Soporte técnico de Microsoft.
-
-- Office 365 ofrecido por 21Vianet (China): [vaya al Portal de administración de Office 365 operado por 21Vianet](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) y después a **Comercio** > **Suscripción** > **Privacidad** > **RGPD** y escriba la información necesaria.
+Microsoft proporciona la capacidad de detectar datos de clientes directamente a través de interfaces de programación de aplicaciones (API) o interfaces de usuario (UI) ya existentes para servicios específicos. Los detalles se describen en la documentación de referencia de los respectivos servicios, que describen las operaciones CRUD (creación, lectura, actualización y eliminación) aplicables.
 
 ### <a name="deleting-system-generated-logs"></a>Eliminar registros generados por el sistema
 
