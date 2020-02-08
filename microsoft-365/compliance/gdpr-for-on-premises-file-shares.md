@@ -1,5 +1,8 @@
 ---
 title: RGPD de uso compartido de archivos local
+description: Obtenga información sobre cómo cumplir los requisitos de RGPD en el uso compartido de archivos de Windows Server local.
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,50 +10,50 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: Obtenga información sobre cómo cumplir los requisitos de RGPD en el uso compartido de archivos de Windows Server local.
-ms.openlocfilehash: 1b57bff104539691ca53c3c90dc676b7c0769743
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: e5431c4f0953a9d65246f65d783bf6753c5f9bef
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38750005"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596427"
 ---
-# <a name="gdpr-for-on-premises-windows-server-file-shares"></a><span data-ttu-id="c554e-103">RGPD para uso compartido de archivos de Windows Server local.</span><span class="sxs-lookup"><span data-stu-id="c554e-103">GDPR for on-premises Windows Server file shares</span></span>
+# <a name="gdpr-for-on-premises-windows-server-file-shares"></a><span data-ttu-id="11854-103">RGPD para uso compartido de archivos de Windows Server local.</span><span class="sxs-lookup"><span data-stu-id="11854-103">GDPR for on-premises Windows Server file shares</span></span>
 
-<span data-ttu-id="c554e-104">El método recomendado básico para el uso compartido de archivos es:</span><span class="sxs-lookup"><span data-stu-id="c554e-104">The basic recommended approach for file shares is:</span></span>
+<span data-ttu-id="11854-104">El método recomendado básico para el uso compartido de archivos es:</span><span class="sxs-lookup"><span data-stu-id="11854-104">The basic recommended approach for file shares is:</span></span>
 
--   <span data-ttu-id="c554e-105">Use Azure Information Protection para etiquetar los datos confidenciales.</span><span class="sxs-lookup"><span data-stu-id="c554e-105">Use Azure Information Protection to label sensitive data.</span></span>
+-   <span data-ttu-id="11854-105">Use Azure Information Protection para etiquetar los datos confidenciales.</span><span class="sxs-lookup"><span data-stu-id="11854-105">Use Azure Information Protection to label sensitive data.</span></span>
 
--   <span data-ttu-id="c554e-106">Use el escáner de Azure Information Protection para buscar datos.</span><span class="sxs-lookup"><span data-stu-id="c554e-106">Use Azure Information Protection scanner to find data.</span></span>
+-   <span data-ttu-id="11854-106">Use el escáner de Azure Information Protection para buscar datos.</span><span class="sxs-lookup"><span data-stu-id="11854-106">Use Azure Information Protection scanner to find data.</span></span>
 
-<span data-ttu-id="c554e-107">El enfoque recomendado para el uso compartido de archivos incluye estos pasos:</span><span class="sxs-lookup"><span data-stu-id="c554e-107">The recommended approach for files shares includes these steps:</span></span>
+<span data-ttu-id="11854-107">El enfoque recomendado para el uso compartido de archivos incluye estos pasos:</span><span class="sxs-lookup"><span data-stu-id="11854-107">The recommended approach for files shares includes these steps:</span></span>
 
-1.  <span data-ttu-id="c554e-108">**Instale y configure el escáner de Azure Information Protection.**</span><span class="sxs-lookup"><span data-stu-id="c554e-108">**Install and configure Azure Information Protection scanner.**</span></span>
+1.  <span data-ttu-id="11854-108">**Instale y configure el escáner de Azure Information Protection.**</span><span class="sxs-lookup"><span data-stu-id="11854-108">**Install and configure Azure Information Protection scanner.**</span></span>
 
-    -   <span data-ttu-id="c554e-109">Decida qué tipos de datos confidenciales quiere usar.</span><span class="sxs-lookup"><span data-stu-id="c554e-109">Decide which sensitive data types to use.</span></span>
+    -   <span data-ttu-id="11854-109">Decida qué tipos de datos confidenciales quiere usar.</span><span class="sxs-lookup"><span data-stu-id="11854-109">Decide which sensitive data types to use.</span></span>
 
-    -   <span data-ttu-id="c554e-110">Especifique las carpetas locales y los recursos compartidos de red que se van a usar.</span><span class="sxs-lookup"><span data-stu-id="c554e-110">Specify local folders and network shares to use.</span></span>
+    -   <span data-ttu-id="11854-110">Especifique las carpetas locales y los recursos compartidos de red que se van a usar.</span><span class="sxs-lookup"><span data-stu-id="11854-110">Specify local folders and network shares to use.</span></span>
 
-2.  <span data-ttu-id="c554e-111">**Complete un ciclo de detección.**</span><span class="sxs-lookup"><span data-stu-id="c554e-111">**Complete a discovery cycle.**</span></span>
+2.  <span data-ttu-id="11854-111">**Complete un ciclo de detección.**</span><span class="sxs-lookup"><span data-stu-id="11854-111">**Complete a discovery cycle.**</span></span>
 
-    -   <span data-ttu-id="c554e-112">Ejecute el escáner en el modo de detección y valide los resultados.</span><span class="sxs-lookup"><span data-stu-id="c554e-112">Run the scanner in discovery mode and validate the findings.</span></span>
+    -   <span data-ttu-id="11854-112">Ejecute el escáner en el modo de detección y valide los resultados.</span><span class="sxs-lookup"><span data-stu-id="11854-112">Run the scanner in discovery mode and validate the findings.</span></span>
 
-    -   <span data-ttu-id="c554e-113">Si es necesario, optimice las condiciones y los tipos de información confidencial.</span><span class="sxs-lookup"><span data-stu-id="c554e-113">If needed, optimize the conditions and sensitive information types.</span></span>
+    -   <span data-ttu-id="11854-113">Si es necesario, optimice las condiciones y los tipos de información confidencial.</span><span class="sxs-lookup"><span data-stu-id="11854-113">If needed, optimize the conditions and sensitive information types.</span></span>
 
-    -   <span data-ttu-id="c554e-114">Evalúe el impacto esperado de aplicar etiquetas automáticamente.</span><span class="sxs-lookup"><span data-stu-id="c554e-114">Assess the expected impact of automatically applying labels.</span></span>
+    -   <span data-ttu-id="11854-114">Evalúe el impacto esperado de aplicar etiquetas automáticamente.</span><span class="sxs-lookup"><span data-stu-id="11854-114">Assess the expected impact of automatically applying labels.</span></span>
 
-3.  <span data-ttu-id="c554e-115">**Ejecute el analizador de Azure Information Protection para aplicar etiquetas a los documentos necesarios**.</span><span class="sxs-lookup"><span data-stu-id="c554e-115">**Run the Azure Information Protection scanner to apply labels to qualifying documents**.</span></span>
+3.  <span data-ttu-id="11854-115">**Ejecute el analizador de Azure Information Protection para aplicar etiquetas a los documentos necesarios**.</span><span class="sxs-lookup"><span data-stu-id="11854-115">**Run the Azure Information Protection scanner to apply labels to qualifying documents**.</span></span>
 
-4.  <span data-ttu-id="c554e-116">**Para obtener protección:**</span><span class="sxs-lookup"><span data-stu-id="c554e-116">**For protection:**</span></span>
+4.  <span data-ttu-id="11854-116">**Para obtener protección:**</span><span class="sxs-lookup"><span data-stu-id="11854-116">**For protection:**</span></span>
 
-    -   <span data-ttu-id="c554e-117">Configure las reglas de prevención de pérdida de datos de Exchange para proteger los documentos con la etiqueta que desee.</span><span class="sxs-lookup"><span data-stu-id="c554e-117">Configure Exchange data loss prevention rules to protect documents with the desired label.</span></span>
+    -   <span data-ttu-id="11854-117">Configure las reglas de prevención de pérdida de datos de Exchange para proteger los documentos con la etiqueta que desee.</span><span class="sxs-lookup"><span data-stu-id="11854-117">Configure Exchange data loss prevention rules to protect documents with the desired label.</span></span>
 
-    -   <span data-ttu-id="c554e-118">Asegúrese de usar permisos para limitar quién puede obtener acceso a los archivos.</span><span class="sxs-lookup"><span data-stu-id="c554e-118">Be sure to use permissions to limit who can access files.</span></span>
+    -   <span data-ttu-id="11854-118">Asegúrese de usar permisos para limitar quién puede obtener acceso a los archivos.</span><span class="sxs-lookup"><span data-stu-id="11854-118">Be sure to use permissions to limit who can access files.</span></span>
 
-5.  <span data-ttu-id="c554e-119">**Para supervisar, integre los registros de Windows Server con una herramienta SIEM.**</span><span class="sxs-lookup"><span data-stu-id="c554e-119">**For monitoring, integrate Windows Server logs with a SIEM tool.**</span></span>
+5.  <span data-ttu-id="11854-119">**Para supervisar, integre los registros de Windows Server con una herramienta SIEM.**</span><span class="sxs-lookup"><span data-stu-id="11854-119">**For monitoring, integrate Windows Server logs with a SIEM tool.**</span></span>
 
-    -   <span data-ttu-id="c554e-p101">Para buscar datos personales para solicitudes de datos personales, utilice el escáner de Azure Information Protection. También puede configurar la búsqueda de SharePoint Server para rastrear el uso compartido de archivos.</span><span class="sxs-lookup"><span data-stu-id="c554e-p101">To find personal data for data subject requests, use Azure Information Protection scanner. You can also configure SharePoint Server search to crawl file shares.</span></span>
+    -   <span data-ttu-id="11854-p101">Para buscar datos personales para solicitudes de datos personales, utilice el escáner de Azure Information Protection. También puede configurar la búsqueda de SharePoint Server para rastrear el uso compartido de archivos.</span><span class="sxs-lookup"><span data-stu-id="11854-p101">To find personal data for data subject requests, use Azure Information Protection scanner. You can also configure SharePoint Server search to crawl file shares.</span></span>
 
-<span data-ttu-id="c554e-122">Para obtener más información sobre cómo usar el escáner de Azure Information Protection para buscar y etiquetar datos personales, vea el Kit de herramientas de detección de datos de RGPD de Microsoft en [https://aka.ms/gdprpartners](<https://aka.ms/gdprpartners>).</span><span class="sxs-lookup"><span data-stu-id="c554e-122">For more information on using Azure Information Protection scanner to find and label personal data, see the Microsoft GDPR Data Discovery Toolkit at [https://aka.ms/gdprpartners](<https://aka.ms/gdprpartners>).</span></span>
+<span data-ttu-id="11854-122">Para obtener más información sobre cómo usar el escáner de Azure Information Protection para buscar y etiquetar datos personales, vea el Kit de herramientas de detección de datos de RGPD de Microsoft en [https://aka.ms/gdprpartners](<https://aka.ms/gdprpartners>).</span><span class="sxs-lookup"><span data-stu-id="11854-122">For more information on using Azure Information Protection scanner to find and label personal data, see the Microsoft GDPR Data Discovery Toolkit at [https://aka.ms/gdprpartners](<https://aka.ms/gdprpartners>).</span></span>
 
-<span data-ttu-id="c554e-p102">Para obtener información sobre cómo configurar el escáner para buscar condiciones y usar los tipos de información confidencial prevención de pérdida de datos (DLP) de Office 365, consulte [Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification). Tenga en cuenta que los nuevos tipos de información confidencial de Office 365 no estarán disponibles inmediatamente para su uso con el escáner y que los tipos de información confidencial personalizados no pueden usarse con este.</span><span class="sxs-lookup"><span data-stu-id="c554e-p102">For information on configuring the scanner for conditions and using the Office 365 data loss prevention (DLP) sensitive information types, see [How to configure conditions for automatic and recommended classification for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification). Note that new Office 365 sensitive information types will not be immediately available to use with the scanner and custom sensitive information types cannot be used with the scanner.</span></span>
+<span data-ttu-id="11854-p102">Para obtener información sobre cómo configurar el escáner para buscar condiciones y usar los tipos de información confidencial prevención de pérdida de datos (DLP) de Office 365, consulte [Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification). Tenga en cuenta que los nuevos tipos de información confidencial de Office 365 no estarán disponibles inmediatamente para su uso con el escáner y que los tipos de información confidencial personalizados no pueden usarse con este.</span><span class="sxs-lookup"><span data-stu-id="11854-p102">For information on configuring the scanner for conditions and using the Office 365 data loss prevention (DLP) sensitive information types, see [How to configure conditions for automatic and recommended classification for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification). Note that new Office 365 sensitive information types will not be immediately available to use with the scanner and custom sensitive information types cannot be used with the scanner.</span></span>
