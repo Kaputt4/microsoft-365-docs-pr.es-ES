@@ -79,7 +79,7 @@
       items:
         - name: Crear y administrar etiquetado de confidencialidad
           href: create-sensitivity-labels.md
-        - name: Restringir el acceso al contenido mediante las etiquetas de confidencialidad para aplicar el cifrado
+        - name: Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
           href: encryption-sensitivity-labels.md
         - name: Aplicar automáticamente una etiqueta de confidencialidad al contenido
           href: apply-sensitivity-label-automatically.md
@@ -695,12 +695,14 @@
   items:
     - name: Búsquedas en el registro de auditoría
       href: search-the-audit-log-in-security-and-compliance.md
-    - name: Administrar directivas de alerta
-      href: alert-policies.md
+    - name: Auditoría avanzada
+      href: advanced-audit.md
     - name: Activar o desactivar la búsqueda de registros de auditoría
       href: turn-audit-log-search-on-or-off.md
     - name: Administrar la auditoría de buzones de correo
       href: enable-mailbox-auditing.md
+    - name: Administración de directivas de retención de registro de auditoría
+      href: audit-log-retention-policies.md
     - name: Propiedades detalladas del registro de auditoría
       href: detailed-properties-in-the-office-365-audit-log.md
     - name: 'Exportar, configurar y ver registros de registro de auditoría'
@@ -711,6 +713,8 @@
       href: use-sharing-auditing.md
     - name: Buscar actividades de eDiscovery en el registro de auditoría
       href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: Administrar directivas de alerta
+      href: alert-policies.md
 - name: Administración de los riesgos de cumplimiento
   items:
     - name: Portal de confianza del servicio de Microsoft

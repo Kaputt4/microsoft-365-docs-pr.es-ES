@@ -1,5 +1,7 @@
 ---
 title: Implementar sitios de SharePoint Online con tres niveles de protección
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Resumen: Cree y configure sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: 1396a45103bfbaf6ea2de6c5ba6c4b086da344ec
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 8aee0018db9035ca29037448e3d1200471589a7c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668868"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595295"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implementar sitios de SharePoint Online con tres niveles de protección
 
@@ -104,6 +106,6 @@ Los miembros del sitio, a través de la pertenencia a grupos en uno de los grupo
 
 [Protección de archivos y sitios de SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
-[Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

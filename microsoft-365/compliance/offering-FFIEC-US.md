@@ -1,7 +1,7 @@
 ---
 title: Consejo financiero federal de examen para instituciones financieras (FFIEC)
 description: Microsoft ayuda a los clientes de servicios financieros a cumplir con los requisitos de auditoría del Consejo de investigación de instituciones financieras federales (FFIEC).
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 74ce16a1cc98943ea808bbae08eccd54f8f21fad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602427"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851827"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Consejo financiero federal de examen para instituciones financieras (FFIEC)
 
@@ -42,7 +42,7 @@ Para ayudar a los clientes de instituciones financieras a satisfacer sus requisi
 
 Para ayudarle a cumplir con los requisitos de FFIEC, los servicios en la nube de Microsoft proporcionan [informes de atestación de SOC](offering-SOC.md) producidos por una empresa independiente de la CPA. Por ejemplo, la atestación del SOC 1 tipo 2 se basa en el estándar AICPA SSAE 18 (vea la sección de-C 105) que reemplazó a SAS 70 y es apropiado para informar sobre determinados controles de informes financieros. Los informes de SOC incluyen la opinión del Auditor sobre la eficacia de los controles de Microsoft en la consecución de los objetivos de control relacionados durante el período de supervisión especificado. Las instituciones financieras pueden usar esta auditoría formal al cumplir con las obligaciones de cumplimiento específicas de FFIEC para activos implementados en Azure, Power BI y Office 365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -58,6 +58,10 @@ Informes de atestación de Azure y Office 365 SOC.
 **¿Puedo usar Microsoft Compliance con los estándares de SOC para cumplir con las obligaciones de cumplimiento de FFIEC para mi institución?**
 
 Para ayudarle a cumplir estas obligaciones, Microsoft proporciona los detalles específicos sobre nuestro cumplimiento de los estándares de SOC, tal como se describió anteriormente. Sin embargo, en última instancia, depende de usted determinar si nuestros servicios cumplen con las leyes y regulaciones específicas que se aplican a su institución. La FFIEC también aconseja que los usuarios de informes o revisiones de auditoría no se basan exclusivamente en la información incluida en el informe para comprobar el entorno de control interno del TSP. Deben usar procedimientos de comprobación y supervisión adicionales como se ha explicado más detalladamente en el [folleto de tecnología tercerizada](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) del manual de estudio de TI de FFIEC.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de cumplimiento de Microsoft para evaluar el riesgo
+
+La [puntuación de cumplimiento de Microsoft](compliance-score.md) es una característica de vista previa del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), use la plantilla preconfigurada de [Office 365 FFIEC](https://go.microsoft.com/fwlink/?linkid=2117912) y la [plantilla de FFIEC Intune](https://go.microsoft.com/fwlink/?linkid=2118101) para ayudar a su organización a cumplir los requisitos de este Reglamento.
 
 ## <a name="resources"></a>Recursos
 

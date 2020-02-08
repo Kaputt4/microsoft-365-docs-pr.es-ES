@@ -1,5 +1,7 @@
 ---
 title: Buscar y eliminar mensajes de correo electrónico en la organización de Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259978"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601557"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Buscar y eliminar mensajes de correo electrónico en la organización de Office 365
 
@@ -43,7 +45,7 @@ Puede usar la característica de búsqueda de contenido de Office 365 para busca
     
 - Debe usar el PowerShell del Centro de seguridad y cumplimiento para eliminar mensajes. Vea el [paso 2](#step-2-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
     
-- Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios. Para eliminar más de 10 elementos, puede usar el comando **Search-Mailbox -DeleteContent** en PowerShell de Exchange Online. Vea[Búsqueda y eliminación de mensajes](search-for-and-delete-messagesadmin-help.md)
+- Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios.
     
 - El número máximo de buzones en una búsqueda de contenido en los que puede eliminar elementos mediante una acción de búsqueda y depuración es 50 000. Si la búsqueda de contenido (que ha creado en el [paso 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) tiene más de 50 000 buzones de origen, la acción de depuración (que ha creado en el paso 3) no se realizará correctamente. En la sección [Más información](#more-information) se muestra una sugerencia para realizar una operación de búsqueda y depuración en más de 50 000 buzones. 
     

@@ -1,7 +1,9 @@
 ---
 title: Cómo se identifica el contenido para las recomendaciones de gobierno de datos
+f1.keywords:
+- NOCSH
 ms.author: brendonb
-author: laurawi
+author: cabailey
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: El Centro de seguridad y cumplimiento de Office 365 ofrece recomendaciones para el gobierno de datos según la configuración actual de su organización y le permite realizar configuraciones con un par de clics. Algunas de estas recomendaciones detectan el contenido específico de su organización y, luego, proporcionan pasos recomendados para administrarlo. Por ejemplo, una recomendación puede detectar los elementos que contienen contenido crítico para la empresa (como privilegios abogado-cliente o información NDA) y hacer que pueda aplicar automáticamente una etiqueta de retención a dichos elementos para asegurarse de que están clasificados y se conservan según sea necesario. En este tema se enumeran las recomendaciones de gobierno de datos que puede ver y se describe el contenido que se detecta para desencadenar cada uno.
-ms.openlocfilehash: e860a41b616be2265904775a63454aba1a6040c1
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: af3c08f568bb0b44e8454ee345a84308b53cf01f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708232"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595437"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>Cómo se identifica el contenido para las recomendaciones de gobierno de datos
 

@@ -1,5 +1,7 @@
 ---
 title: Configurar las nuevas capacidades de cifrado de mensajes de Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Con las nuevas capacidades de cifrado de mensajes de Office 365 creadas con base en Azure Information Protection, su organización puede usar la comunicación por correo electrónico protegida con personas de dentro y fuera de la organización. Las nuevas funcionalidades de OME funcionan con otras organizaciones de Office 365, Outlook.com, Gmail y otros servicios de correo electrónico.
-ms.openlocfilehash: c772151250d30e62a3f2689df5cd853536af3ede
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 766e1d2ae054a5a5e91786a360177492ee9ba1b7
+ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "39218739"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680089"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes de Office 365
 
@@ -84,7 +86,7 @@ Puede comprobar que su espacio empresarial de Office 365 está configurado corre
      Sus resultados deben ser similares a estos:
 
      ```text
-    Results : Acquiring RMS Templates ...
+     Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.
             Verifying encryption ...
@@ -95,7 +97,7 @@ Puede comprobar que su espacio empresarial de Office 365 está configurado corre
                 - PASS: IRM verified successfully.
 
             OVERALL RESULT: PASS
-    ```
+     ```
 
    - El nombre de su organización de Office 365 reemplazará a *Contoso*.
 

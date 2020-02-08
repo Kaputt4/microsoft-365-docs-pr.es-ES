@@ -1,5 +1,7 @@
 ---
 title: Proteger los archivos de SharePoint Online con DLP y etiquetas de confidencialidad
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Resumen: aplique Azure Information Protection para proteger los archivos en un sitio de grupo de SharePoint Online altamente confidencial.'
-ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 296d5774b13699c25efda6d036e097344d4fefeb
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668808"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855369"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Proteger los archivos de SharePoint Online con DLP y etiquetas de confidencialidad
 
@@ -34,7 +36,7 @@ Estos pasos son parte de una solución más grande para la configuración de pro
 Usar etiquetas de confidencialidad para los archivos de SharePoint Online no es recomendable para todos los clientes, pero es una opción para aquellos que necesitan este nivel de protección de un subconjunto de archivos.
 
 Algunas notas importantes sobre esta solución:
-- Cuando se aplica el cifrado a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas de prevención de pérdida de datos (DLP) solo pueden trabajar con los metadatos (incluidas las etiquetas de Office 365), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).
+- Si su organización no ha [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (versión preliminar pública)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files): cuando se aplica el cifrado a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas de prevención de pérdida de datos (DLP) solo pueden trabajar con los metadatos (incluidas las etiquetas de Office 365), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).
 
 - Esta solución requiere que el usuario seleccione una etiqueta para aplicar la protección. Si necesita el cifrado automático y la capacidad de SharePoint para indizar y revisar los archivos, considere la posibilidad de usar Information Rights Management (IRM) en SharePoint Online. Al configurar una biblioteca de SharePoint para IRM, los archivos se cifran automáticamente al descargarse para su edición.  IRM de SharePoint presenta algunas limitaciones que pueden influir en su decisión. Para obtener más información, consulte [Configurar Information Rights Management (IRM) en el Centro de administración de SharePoint](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
 
@@ -67,8 +69,6 @@ Hay dos maneras de conceder a los usuarios externos el acceso a archivos protegi
 
 ## <a name="see-also"></a>Vea también
 
-[Protección de archivos y sitios de SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
 [Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

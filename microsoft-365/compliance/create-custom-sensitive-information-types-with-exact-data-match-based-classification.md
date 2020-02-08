@@ -1,5 +1,7 @@
 ---
 title: Crear un tipo de información confidencial personalizado con coincidencia exacta de datos
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
-ms.openlocfilehash: 90fde2475529200ab53411b5cb0c6d3c64de2fee
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
+ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515671"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836730"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -72,10 +74,12 @@ La configuración de la clasificación basada en EDM implica guardar los datos c
 
 2. Estructure los datos confidenciales en el archivo .csv de forma que la primera fila incluya los nombres de los campos que se usan para la clasificación basada en EDM. En el archivo .csv, puede que tenga nombres de campo, como "NSS", "FechaNacimiento", "Nombre", "Apellido", etc. Por ejemplo, nuestro archivo .csv se llama *RegistrosPacientes.csv* e incluye las columnas *IdPaciente*,  *NEM*, *Apellidos*, *Nombre*, *NSS* , etc.
 
-3. Defina el esquema de la base de datos de información confidencial en formato .xml (similar al ejemplo siguiente). Nombre este archivo de esquema edm.xml y configúrelo para que por cada columna de la base de datos haya una línea que use la sintaxis \<Field name="" searchable=""/\>.
+3. Defina el esquema de la base de datos de información confidencial en formato .xml (similar al ejemplo siguiente). Nombre este archivo de esquema  **edm.xml** y configúrelo para que por cada columna de la base de datos haya una línea que use la sintaxis: 
 
-      - Use nombres de columna para los valores *Nombre de campo* .
-      - Use *searchable="true"* para los campos que quiere que se puedan buscar, hasta un máximo de 5 campos. Debe designar un mínimo de un campo como utilizable para búsqueda.
+`\<Field name="" searchable=""/\>`.
+
+- Use nombres de columna para los valores *Nombre de campo* .
+- Use *searchable="true"* para los campos que quiere que se puedan buscar, hasta un máximo de 5 campos. Debe designar un mínimo de un campo como utilizable para búsqueda.
 
 Por ejemplo, el siguiente archivo .xml define el esquema para una base de datos de registros de pacientes, con cinco campos especificados para la búsqueda: *IdPaciente*, *NEM*,  *NSS*, *Teléfono* y *FechaNacimiento*.
 
@@ -126,11 +130,11 @@ Ahora que se ha definido el esquema de la base de datos de información confiden
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>Editar el esquema de la clasificación basada en EDM
 
-Si quiere realizar cambios en el archivo edm.xml, como cambiar los campos que se usan para la clasificación basada en EDM, siga estos pasos:
+Si quiere realizar cambios en el archivo **edm.xml**, como cambiar los campos que se usan para la clasificación basada en EDM, siga estos pasos:
 
-1. Edite el archivo edm.xml (este es el archivo tratado en la sección [Definir el esquema](#define-the-schema-for-your-database-of-sensitive-information) de este artículo).
+1. Edite el archivo **edm.xml** (este es el archivo tratado en la sección  [Definir el esquema](#define-the-schema-for-your-database-of-sensitive-information)  de este artículo).
 
-2. [Conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+2. [Conéctese al PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 3. Para actualizar el esquema de la base de datos, ejecute, uno a la vez, los siguientes cmdlets:
 
@@ -184,7 +188,7 @@ Se le pedirá que confirme lo siguiente:
 
 1. Cree un paquete de reglas en formato .xml (con codificación Unicode), similar al ejemplo siguiente: (Puede copiar, modificar y usar nuestro ejemplo).
 
-Cuando configure el paquete de reglas, asegúrese de hacer referencia correctamente al archivo .csv y al archivo edm.xml. Puede copiar, modificar y usar nuestro ejemplo. En este XML de ejemplo, debe personalizar los siguientes campos para crear el tipo confidencial de EDM:
+Cuando configure el paquete de reglas, asegúrese de hacer referencia correctamente al archivo .csv y al archivo **edm.xml**. Puede copiar, modificar y usar nuestro ejemplo. En este XML de ejemplo, debe personalizar los siguientes campos para crear el tipo confidencial de EDM:
 
 - **RulePack id y ExactMatch id**: use  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  para generar un GUID.
 
@@ -249,7 +253,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 Ya tiene configurada la clasificación basada en EDM. El siguiente paso es indexar los datos confidenciales y luego cargar los datos indizados.
 
-Recuerde del procedimiento anterior que nuestro esquema RegistrosPacientes define cinco campos para la búsqueda: *IdPaciente*, *NEM*, *NSS*, *Teléfono* y *FechaNacimiento*. Nuestro paquete de reglas de ejemplo incluye esos campos y hace referencia al archivo de esquema de la base de datos (edm.xml), con un elemento *ExactMatch* por campo de búsqueda. Considere el siguiente elemento ExactMatch:
+Recuerde del procedimiento anterior que nuestro esquema RegistrosPacientes define cinco campos para la búsqueda: *IdPaciente*, *NEM*, *NSS*, *Teléfono* y *FechaNacimiento*. Nuestro paquete de reglas de ejemplo incluye esos campos y hace referencia al archivo de esquema de la base de datos (**edm.xml**), con un elemento  *ExactMatch*  por campo de búsqueda. Considere el siguiente elemento ExactMatch:
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -287,18 +291,18 @@ Durante esta fase, configurará una cuenta de usuario y un grupo de seguridad pe
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configuración de la cuenta de usuario y del grupo de seguridad personalizado
 
-1. Como administrador global, vaya al centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com/)) y [cree un grupo de seguridad](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) denominado EDM\_DataUploaders.
+1. Como administrador global, vaya al centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com/)) y [cree un grupo de seguridad](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) denominado  **EDM\_DataUploaders**.
 
-2. Agregue uno o más usuarios al grupo de seguridad *EDM\_DataUploaders* . (Estos usuarios administrarán la base de datos de información confidencial).
+2. Agregue uno o más usuarios al grupo de seguridad **EDM\_DataUploaders** . (Estos usuarios administrarán la base de datos de información confidencial).
 
 3. Asegúrese de que cada usuario que administra la información confidencial es un administrador local en el equipo que usa para el agente de carga de EDM.
 
 #### <a name="set-up-the-edm-upload-agent"></a>Configuración del agente de carga de EDM
 
 >[!NOTE]
-> Antes de comenzar este procedimiento, asegúrese de que es miembro del grupo de seguridad *EDM\_DataUploaders* y un administrador local en el equipo.
+> Antes de comenzar este procedimiento, asegúrese de que es miembro del grupo de seguridad **EDM\_DataUploaders** y un administrador local en el equipo.
 
-1. Descargue e instale el [Agente de carga de EDM](https://go.microsoft.com/fwlink/?linkid=2088639). De forma predeterminada, la ubicación de la instalación debe ser C:\\Archivos de programa\\Microsoft\\EdmUploadAgent.
+1. Descargue e instale el [Agente de carga de EDM](https://go.microsoft.com/fwlink/?linkid=2088639). De forma predeterminada, la ubicación de la instalación debe ser  **C:\\Archivos de programa\\Microsoft\\EdmUploadAgent**.
 
 > [!TIP]
 > Para obtener una lista de los parámetros de comando compatibles, ejecute el agente sin argumentos. Por ejemplo, 'EdmUploadAgent.exe'.
@@ -313,7 +317,7 @@ El siguiente paso es usar el agente de carga de EDM para indexar los datos confi
 
 #### <a name="index-and-upload-the-sensitive-data"></a>Indización y carga de datos confidenciales
 
-Guarde el archivo de datos confidenciales (recuerde que nuestro ejemplo es *RegistrosPacientes.csv*) en la unidad local en el equipo. (Hemos guardado nuestro archivo *RegistrosPacientes.csv*  de ejemplo en C:\\Edm\\Data).
+Guarde el archivo de datos confidenciales (recuerde que nuestro ejemplo es **RegistrosPacientes.csv**) en la unidad local en el equipo. (Hemos guardado nuestro archivo  **RegistrosPacientes.csv**  de ejemplo en  **C:\\Edm\\Data**).
 
 Para indizar y cargar los datos confidenciales, ejecute el siguiente comando en el símbolo de Windows:
 
@@ -327,13 +331,17 @@ Para indizar los datos confidenciales, ejecute el siguiente comando en el símbo
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-Ejemplo: **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\RegistrosPacientes.csv /HashLocation C:\\Edm\\Hash**
+Por ejemplo:
+
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
 Para cargar los datos indizados, ejecute el siguiente comando en el símbolo de Windows:
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-Ejemplo: **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\RegistrosPacientes.EdmHash**
+Por ejemplo: 
+
+> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 Para comprobar que se han cargado los datos confidenciales, ejecute el siguiente comando en el Símbolo del sistema de Windows:
 

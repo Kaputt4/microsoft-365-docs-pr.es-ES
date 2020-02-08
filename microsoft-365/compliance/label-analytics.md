@@ -1,5 +1,7 @@
 ---
 title: Ver el uso de etiquetas con el análisis de etiquetas
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Después de crear sus etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan en el espacio empresarial. Con el análisis de etiquetas en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365, puede ver rápidamente las etiquetas que más se usan y dónde se aplican
-ms.openlocfilehash: 45cebbe67a773b76289920554d4e39fcbce789cc
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38710142"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600587"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Ver el uso de etiquetas con el análisis de etiquetas
 

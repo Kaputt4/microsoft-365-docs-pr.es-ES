@@ -1,7 +1,7 @@
 ---
 title: Ley de privacidad del consumidor de California (CCPA)
 description: Servicios de Microsoft y la ley de privacidad del consumidor de California (CCPA).
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 24217ed5782d14cc67277bc980e4a94b7bc904f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601987"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851847"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>Ley de privacidad del consumidor de California (CCPA)
 
 ## <a name="ccpa-overview"></a>Información general sobre CCPA
 
-La ley de privacidad del consumidor de California (CCPA) es la primera ley de privacidad completa en Estados Unidos. Proporciona una variedad de derechos de privacidad para los consumidores de California.  Las empresas reguladas por el CCPA tendrán una cantidad de obligaciones para los consumidores, incluidas las divulgaciones, el Reglamento de protección general de datos (RGPD), como los derechos de los interesados en los datos de consumidores (interesado), una "cancelación" para determinadas transferencias de datos y una "participación" requisito para menores.
+La ley de privacidad del consumidor de California (CCPA) es la primera ley de privacidad completa en Estados Unidos. Proporciona una variedad de derechos de privacidad para los consumidores de California.  Las empresas reguladas por el CCPA tendrán una cantidad de obligaciones para los consumidores, incluidas las divulgaciones, el Reglamento de protección general de datos (RGPD), como los derechos de los interesados en los datos de consumidores (interesado), una "exclusión" para determinadas transferencias de datos y una "participación" requisito para menores.
 
 CCPA sólo se aplica a las empresas que realizan negocios en California y que cumplen uno o varios de los siguientes elementos: (1) tienen un ingreso bruto anual superior a $25 millones o (2) derivan más del 50% de sus ingresos anuales de la venta del consumidor de California personal información o (3) comprar, vender o compartir la información personal de más de 50.000 consumidores de California anualmente.
 
@@ -39,7 +39,7 @@ Para los clientes comerciales que hacen negocios en California, Microsoft actuar
 
 Tal y como se establece en el OST, Microsoft cumple con todas las leyes y regulaciones aplicables a la prestación de los servicios en línea, que incluirían la CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Operaciones de Azure dev
@@ -72,10 +72,10 @@ Hay muchas diferencias. Es más fácil centrarse en las similitudes, entre las q
 
 - Obligaciones de transparencia y revelación,
 - Los derechos de los consumidores para obtener acceso, eliminar y recibir una copia de los datos,
-- Definición de "proveedores de servicios" que es similar a cómo RGPD define "procesadores" con una obligación contractual similar, y
-- Definición de "negocios" que engloba la definición de "controladores" de RGPD.
+- Definición de ' proveedores de servicios ' que es similar a la RGPD define ' procesadores ' con una obligación contractual similar, y
+- Definición de ' negocios ' que engloba la definición de RGPD de ' controladores '.
 
-La mayor diferencia con la CCPA es la exigencia troncal de permitir la "no participación" de las ventas de datos a terceros ("ventas" se define ampliamente para incluir el uso compartido de los datos con fines onerosos).
+La diferencia más grande en CCPA es el requisito principal para permitir la cancelación de ventas de datos a terceros (con una definición general de "ventas" para incluir el uso compartido de datos por motivos valiosos).
 
 **¿Qué derechos deben habilitar las empresas conforme a la CCPA?**
 
@@ -93,10 +93,14 @@ El CCPA requiere que los negocios regulados recopilen, transfieran y vendan info
 - La CCPA introduce obligaciones del consentimiento paterno compatibles con la Ley de Protección de la Privacidad en Línea de los Niños (COPPA) para menores de 13 años.
 - Para los menores de 13 a 16 años, CCPA imponen una nueva obligación de obtener el consentimiento de suscripción del menor.
 
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de cumplimiento de Microsoft para evaluar el riesgo
+
+La [puntuación de cumplimiento de Microsoft](compliance-score.md) es una característica de vista previa del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), use la plantilla preconfigurada de [CCPA](https://go.microsoft.com/fwlink/?linkid=2118004) para ayudar a su organización a cumplir los requisitos de este Reglamento.
+
 ## <a name="resources"></a>Recursos
 
 - [5 sugerencias para ayudarle a prepararse para la nueva ley de privacidad del consumidor de California](https://aka.ms/M365ComplianceBlog_RSA)
 - [Introducción a la guía de CCPA](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [Solicitudes de interesados de datos y RGPD](gdpr-data-subject-requests.md)
 - [Preguntas y Respuestas: Ley de Privacidad del Consumidor de California (CCPA)](ccpa-faq.md)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)

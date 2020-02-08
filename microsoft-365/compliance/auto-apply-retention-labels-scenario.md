@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Este escenario de solución muestra cómo administrar el ciclo de vida de los documentos relacionados con el producto y almacenados en SharePoint Online mediante las etiquetas de retención de Office 365. Esto se lleva a cabo con el uso de metadatos del documento para clasificar el contenido y, en concreto, al aplicar automáticamente las etiquetas de retención de Office 365 y configurar la retención basada en eventos.
-ms.openlocfilehash: 7e0c688502922903cf2c17345713579bf04cc55a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca3dd4699a608d2e3313efa3c10fc61b72f9b36e
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596377"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628116"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Administración del ciclo de vida de documentos de SharePoint con etiquetas de retención
 
@@ -348,3 +348,9 @@ En la captura de pantalla anterior, también podemos ver que existe otra propied
 ## <a name="summary"></a>Resumen
 
 Este artículo muestra un escenario de administración de documentos donde aplicamos automáticamente una etiqueta de retención basada en una columna de sitio en SharePoint. Después, se utiliza la retención basada en eventos y Microsoft Flow para activar automáticamente el inicio del periodo de retención en función de un evento externo.
+
+## <a name="credits"></a>Créditos
+
+Este escenario lo creó: 
+
+Frederic Lapierre<br/>Consultor principal de Microsoft Services

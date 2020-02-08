@@ -1,7 +1,9 @@
 ---
 title: Ver los informes de gobierno de datos
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 6/8/2018
 audience: Admin
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con los informes de gobierno de datos del Centro de seguridad y cumplimiento de Office 365, puede ver rápidamente si las etiquetas se aplican en el contenido del modo previsto.
-ms.openlocfilehash: 6d761931cea171afb84e25fa0900bec7c3a2f3c2
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813910"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597217"
 ---
 # <a name="view-the-data-governance-reports"></a>Ver los informes de gobierno de datos
 

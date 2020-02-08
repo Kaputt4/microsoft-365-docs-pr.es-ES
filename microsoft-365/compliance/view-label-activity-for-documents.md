@@ -1,5 +1,7 @@
 ---
 title: Ver la actividad de etiquetas de documentos
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con el Explorador de actividad de etiquetas en el Centro de seguridad y cumplimiento de Office 365, puede buscar y visualizar rápidamente actividades de etiquetas de todo el contenido en SharePoint OneDrive para la Empresa en los últimos 30 días. Estos son datos en tiempo real que le ofrecen una vista clara de lo que ocurre en el espacio empresarial.
-ms.openlocfilehash: 9c34cde4d9dde96b8fb1251e9d2be449031cc58a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: eebe1938195740565f064bbac20608255aa5ef73
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802235"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597237"
 ---
 # <a name="view-label-activity-for-documents"></a>Ver la actividad de etiquetas de documentos
 

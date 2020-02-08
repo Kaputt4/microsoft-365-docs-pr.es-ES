@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600697"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862040"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de recursos humanos
 
@@ -80,9 +80,9 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
 4. En la página **credenciales de autenticación** , realice lo siguiente y, a continuación, haga clic en **siguiente**:
 
-   a. Escriba o pegue el identificador de la aplicación de AAD para la aplicación de Azure que creó en el paso 1.
+   A. Escriba o pegue el identificador de la aplicación de AAD para la aplicación de Azure que creó en el paso 1.
 
-   b. Escriba un nombre para el conector de recursos humanos.
+   B. Escriba un nombre para el conector de recursos humanos.
 
 5. En la página **asignación de archivos** , escriba los tres nombres de encabezado de columna (también denominados *parámetros* del archivo CSV que creó en el paso 2 en cada uno de los cuadros correspondientes. Los nombres no distinguen mayúsculas de minúsculas. Como se ha explicado anteriormente, los nombres que escriba en estos cuadros deben coincidir con los nombres de los parámetros en el archivo CSV. Por ejemplo, en la siguiente captura de pantalla se muestran los nombres de parámetro del ejemplo del archivo CSV de ejemplo que se muestra en el paso 2.
 
@@ -179,15 +179,15 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
 5. En **Opciones de seguridad**, haga lo siguiente:
 
-   a. Determine si desea ejecutar el script solo cuando haya iniciado sesión en el equipo o ejecutarlo cuando haya iniciado sesión o no.
+   A. Determine si desea ejecutar el script solo cuando haya iniciado sesión en el equipo o ejecutarlo cuando haya iniciado sesión o no.
    
-   b. Asegúrese de que la casilla **ejecutar con los privilegios más altos** está seleccionada.
+   B. Asegúrese de que la casilla **ejecutar con los privilegios más altos** está seleccionada.
 
 6. Seleccione la pestaña **desencadenadores** , haga clic en **nuevo**y, a continuación, realice las siguientes acciones:
 
-   a. En **configuración**, seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
+   A. En **configuración**, seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
    
-   b. En **Configuración avanzada**, asegúrese de que esté activada la casilla de verificación **habilitado** .
+   B. En **Configuración avanzada**, asegúrese de que esté activada la casilla de verificación **habilitado** .
    
    c. Haga clic en **Aceptar**.
 
@@ -195,9 +195,9 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
    ![Configuración de la acción para crear una nueva tarea programada para el script del conector de recursos humanos](media/HRConnectorScheduleTask1.png)
 
-   a. En la lista desplegable **acción** , asegúrese de que está seleccionado **iniciar un programa** .
+   A. En la lista desplegable **acción** , asegúrese de que está seleccionado **iniciar un programa** .
 
-   b. En el cuadro **programa/script** , haga clic en **examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`cuadro:.
+   B. En el cuadro **programa/script** , haga clic en **examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`cuadro:.
 
    c. En el cuadro **Agregar argumentos (opcional)** , pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
@@ -211,6 +211,6 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
    ![La nueva tarea se muestra en la biblioteca del programador de tareas](media/HRConnectorTaskSchedulerLibrary.png)
 
-   La última vez que se ejecuta la secuencia de comandos se muestra la última vez que se ejecutó ejecutar. Puede hacer doble clic en la tarea para editarla.
+   Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
 
    También puede comprobar la última vez que se ejecutó el script en la página flotante del conector HR correspondiente en el centro de cumplimiento.

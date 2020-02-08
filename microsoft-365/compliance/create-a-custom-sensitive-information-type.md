@@ -1,5 +1,7 @@
 ---
 title: Crear un tipo de información confidencial personalizada en el Centro de seguridad y cumplimiento.
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en la interfaz gráfica de usuario del Centro de seguridad y cumplimiento.
-ms.openlocfilehash: 12a44fcc4fb5228f1e1d901502c1e6dd0e2582af
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7f7c4c787bff6fa9d4c644b5640d05b9320686ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806613"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596217"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Crear un tipo de información confidencial personalizada en el Centro de seguridad y cumplimiento.

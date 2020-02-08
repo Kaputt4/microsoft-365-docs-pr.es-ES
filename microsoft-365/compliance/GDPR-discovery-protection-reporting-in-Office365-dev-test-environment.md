@@ -1,5 +1,8 @@
 ---
 title: 'RGPD: Informes, protección y detección de en el entorno de desarrollo y pruebas de Office 365'
+description: Aquí se detallan las capacidades del RGPD en Office 365.
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,13 +17,13 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
-description: Aquí se detallan las capacidades del RGPD en Office 365.
-ms.openlocfilehash: 98339aeec2c89edd4fead1482f98aa3d9f316856
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: f7bf98da5d358f9b76f38372353a1c2a9d0d45d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38750027"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594094"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>RGPD: Informes, protección y detección de en el entorno de desarrollo y pruebas de Office 365
 

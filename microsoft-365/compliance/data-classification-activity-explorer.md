@@ -1,5 +1,7 @@
 ---
 title: Usar el explorador de actividad de clasificación de datos
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: ab80de0e1be3a164da8414ef3791fb9717bcc190
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 8af23cac590eb226890979719f938b8e79099bb3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233701"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595477"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>Ver la actividad en el contenido de la etiqueta (vista previa)
 
@@ -47,7 +49,6 @@ Todas las cuentas que tienen acceso al explorador de actividad y lo usan deben t
 - Office 365 (E5)
 - Complemento de cumplimiento avanzado (E5)
 - Complemento de inteligencia de amenazas avanzado (E5)
-- Complemento de protección contra amenazas avanzado (E5)
 
 ## <a name="activity-type"></a>Tipo de actividad
 

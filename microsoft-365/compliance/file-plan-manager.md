@@ -1,5 +1,7 @@
 ---
 title: Información general sobre el administrador del plan de archivos
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.'
-ms.openlocfilehash: a79f24beb83c27873824973410daff953e989175
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805893"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594581"
 ---
 # <a name="overview-of-file-plan-manager"></a>Información general sobre el administrador del plan de archivos
 

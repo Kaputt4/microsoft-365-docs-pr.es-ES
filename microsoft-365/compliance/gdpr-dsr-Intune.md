@@ -5,24 +5,27 @@ keywords: Microsoft 365, Educación de Microsoft 365, documentación de Microsof
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: dougeby
-author: dougeby
-manager: angrobe
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+author: robmazz
+manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9e668f4571ed193bd23b1373c170d3c0be929013
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 1e5323682d5c3b2da03e4a3d176c3b3bacb4e19f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268662"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594329"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de Intune Data Subject para GDPR y CCPA
 
-El Reglamento[general de protección de datos (GDPR. por sus siglas en inglés)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm)de la Unión Europea otorga derechos a los usuarios (conocidos en el Reglamento como *sujetos de datos*) para administrar los datos personales recogidos por un empresario o otro tipo de agencia u organización (conocida como *controlador de datos*o solo *controlador*). Los datos personales se definen ampliamente en el RGPD como cualquier dato que guarde relación con una persona física identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de ellos, la solicitud de modificaciones, la restricción de procesamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro controlador del tratamiento. Una solicitud formal de datos sujetos a un controlador para realizar una acción en sus datos personales se denomina *Solicitudes de los interesados* o DSR solicitud.
+El [Reglamento de protección de datos (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea ofrece derechos a las personas (que se denominan *interesados* en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (es decir, el *responsable de los datos* o simplemente *responsable*). Los datos personales se definen de forma muy amplia según el RGPD como cualquier dato relacionado con una persona física, ya sea identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de sus datos, la solicitud de correcciones, impedir su procesamiento o eliminación, o el envío en formato electrónico para transferirlos a otro responsable. Las solicitudes formales realizadas por un interesado a un responsable para realizar una acción con sus datos personales se denominan *solicitudes de interesado* DSR, por sus siglas en inglés.
 
 De forma similar, la Ley de Privacidad de Consumidores de California (CCPA) establece los derechos y obligaciones de privacidad a los consumidores de California, incluidos los derechos similares a los sancionados por el RGDP, como el derecho a eliminar, obtener acceso y recibir (portabilidad) sus datos personales.  La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](offering-ccpa.md) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](ccpa-faq.md).
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más adelante en eDiscovery avanzado de Office 365.
-ms.openlocfilehash: f687f405b6b721ec3f3f1d94e11091c1023d1aea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cc0cb0a709463be0e624162555dd221564b4dd3
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595145"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862110"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
@@ -188,12 +188,12 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
     
     ![Elegir las ubicaciones de contenido para colocar en suspensión](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   A. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
     
     > [!NOTE]
     > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda. 
 
-   b. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Haga clic en **elegir**y, a continuación, en **listo**.
+   B. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Haga clic en **elegir**y, a continuación, en **listo**.
     
     Consulte la sección [más información](#more-information) para obtener sugerencias sobre cómo poner Microsoft Teams, grupos de Yammer y grupos de Office 365 en suspensión. 
     
@@ -209,9 +209,9 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
     ![Crear una suspensión basada en consulta con condiciones](media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
     
-       a. En el cuadro debajo de **palabras clave**, escriba una consulta de búsqueda en el cuadro para que solo se coloque en retención el contenido que cumpla los criterios de búsqueda. Puede especificar palabras clave, propiedades de mensaje o propiedades de documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como **and**, **or**o **Not**. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se colocará en retención.
+       A. En el cuadro debajo de **palabras clave**, escriba una consulta de búsqueda en el cuadro para que solo se coloque en retención el contenido que cumpla los criterios de búsqueda. Puede especificar palabras clave, propiedades de mensaje o propiedades de documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como **and**, **or**o **Not**. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se colocará en retención.
     
-    b. Haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **Agregar condiciones** para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición se conecta lógicamente a la consulta de palabra clave (especificada en el cuadro de palabra clave) mediante el operador **AND**. Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a poner en retención.
+    B. Haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **Agregar condiciones** para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición se conecta lógicamente a la consulta de palabra clave (especificada en el cuadro de palabra clave) mediante el operador **AND**. Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a poner en retención.
 
     Para obtener más información acerca de la creación de una consulta de búsqueda y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
     
@@ -624,7 +624,5 @@ Si el caso que está intentando eliminar todavía contiene suspensiones, recibir
     
     > [!NOTE]
     > La capacidad de retener contenido de wiki para un canal de equipo o equipo de Microsoft (cuando se ubica el sitio de SharePoint del equipo en espera) se presentó el 22 de junio de 2017. Si un sitio de grupo está en suspensión, el contenido de la wiki se conservará a partir de esa fecha. Sin embargo, si un sitio de grupo está en suspensión y el contenido de la wiki se eliminó antes del 22 de junio de 2017, no se conservó el contenido de la wiki. 
-  
-  - Al poner una retención en un equipo de Microsoft, la retención no se aplica a los mensajes de canal privado. Solo se conservan los mensajes en canales estándar. Pronto estará disponible la compatibilidad con la conservación de mensajes de canal privado.
 
 - **¿Cómo encuentro la dirección URL de los sitios de OneDrive para la empresa?** Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la empresa de su organización para que pueda agregarlas a una suspensión o una búsqueda asociada a un caso de exhibición de documentos electrónicos, vea [crear una lista de todas las ubicaciones de OneDrive en la organización](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). El script en este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive. Para ejecutar este script, tiene que instalar y usar el Shell de SharePoint Online Management. Asegúrese de anexar la dirección URL para el dominio MiSitio de su organización a cada sitio de OneDrive que quiera buscar. Este es el dominio que contiene todos los sitios OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para un sitio de usuario de OneDrive: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.

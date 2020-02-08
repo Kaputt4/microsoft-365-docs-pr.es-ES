@@ -5,6 +5,8 @@ keywords: Microsoft 365, Educación de Microsoft 365, documentación de Microsof
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ca3da7e4fcfc5e639ea29b41f92fbfbb2711d450
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268661"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722021"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado de Dynamics 365 para el RGPD y la CCPA
 
@@ -197,134 +200,6 @@ Tanto Dynamics 365 for Finance and Operations como ***Dynamics 365 for Talent***
 - Puede exportar los datos del cliente a un archivo de Excel. En Excel puede editar los datos del cliente que se incluirán en la solicitud de portabilidad y guardarlo en un formato de lectura mecánica de uso habitual, como .csv o .xml. Para obtener más información, vea [Exportar los datos profesionales a Excel.](https://docs.microsoft.com/dynamics365/business-central/about-export-data)
 - Puede exportar los datos del cliente a un archivo de Excel. En Excel puede editar los datos del cliente que se incluirán en la solicitud de portabilidad y guardarlo en un formato de lectura mecánica de uso habitual, como .csv o .xml. Para obtener más información, vea [Exportar los datos profesionales a Excel.](https://docs.microsoft.com/dynamics365/business-central/about-export-data)
 
-### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
-
-Como Microsoft Social Engagement procesa datos personales que podían encontrarse en datos de cliente y contenido social, esta aplicación ofrece una forma única de procesar solicitudes de derechos del titular de los datos, ya que está relacionada con los datos personales recuperados de redes sociales. El contenido social está compuesto por contenido público recopilado de redes sociales (como Twitter, Facebook y YouTube) y datos indexados o servicios de agregación de datos en respuesta a consultas de búsqueda de clientes ejecutadas en Microsoft Social Engagement. El contenido social no son datos de cliente. Las restricciones adicionales de tratamiento, uso y almacenamiento de contenido social se describen en los Términos de Microsoft Online Services.
-
-### <a name="finding-personal-data"></a>Buscar datos personales
-
-El primer paso para responder a una solicitud de titular de los datos es buscar e identificar los datos personales que son el objeto de la solicitud. Microsoft Social Engagement almacena los datos siguientes:
-
-#### <a name="for-social-media-users"></a>Para usuarios de redes sociales
-
-- Datos de usuario de red social (conocido como *autor* en Social Engagement) que Social Engagement obtiene de plataformas sociales. Se puede incluir el nombre, el nombre de usuario, la imagen de perfil, la ubicación, el sitio web y la biografía, si esta información es proporcionada por el autor.
-- Las etiquetas de autor usadas para agrupar y clasificar autores (por ejemplo, como influyentes, competidores o seguidores).
-
-#### <a name="for-employees"></a>Para empleados
-
-- Perfiles de usuario donde se incluye el nombre del empleado, información de contacto y la imagen de perfil, y se administran en Office 365.
-- Direcciones de correo electrónico proporcionadas por empleados que crearon alertas de publicaciones y alertas de tendencias.
-- Cuentas de redes sociales (denominados *perfiles sociales* en Social Engagement) que se autentican en Social Engagement por empleados para interactuar con otros en una plataforma social. Pueden ser propiedad de un empleado o de la organización, e incluir datos que los empleados proporcionaron al registrar una cuenta en una plataforma social. Estos perfiles representan a la organización en redes sociales y se usan para interactuar con publicaciones en nombre de la organización desde la aplicación Social Engagement.
-- Nombres de usuario en Power BI, si su organización usa el [Paquete de contenido de Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) para Power BI para analizar el rendimiento del equipo en las redes sociales.
-
-Este primer paso (buscar y revisar los datos personales que sean objeto de la solicitud) le permitirá determinar si la solicitud del titular de los datos cumple con los requisitos de la organización para aceptarla o rechazarla. Por ejemplo, después de encontrar y revisar los datos personales, puede determinar que la solicitud no cumple los requisitos de su organización porque al llevarse a cabo puede afectar negativamente los derechos y libertades de terceros.
-
-#### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
-
-- Para encontrar sus datos personales, siga los primeros cuatro pasos de [Buscar y eliminar un autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#find-and-delete-an-author).
-- Los empleados pueden crear reglas de Social Engagement que busquen contenido específico en plataformas sociales; estas reglas de búsqueda pueden contener nombres de autor. Para buscar esas reglas, revise las reglas de búsqueda de cuentas de redes sociales para encontrar la cuenta correspondiente (por ejemplo, [Twitter](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-private-messages-rule), [Instagram](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-custom-sources-rule) y [YouTube](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a--rule)).
-- Para encontrar las etiquetas de autor de un actor, primero [filtre las publicaciones](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/use-filters#add-edit-or-remove-a-filter) por [autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/understand-filters#authors) y, después, [vea las etiquetas de autor](https://go.microsoft.com/fwlink/?linkid=864795).
-
-##### <a name="your-employees"></a>Sus empleados
-
-Para buscar:
-
-- Un perfil de usuario, vaya al [Centro de administración](https://portal.office.com/adminportal/home). En el **Centro de administración**, seleccione **Usuarios**. En la página **Usuarios activos**, busque el usuario en la lista. En Social Engagement, vaya a **Configuración \> Administración de usuarios** para ver la información que se sincroniza automáticamente desde Office 365.
-- El destinatario de una alerta, siga los primeros dos pasos de [Administrar destinatarios de alertas como administrador](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator).
-- Datos de perfiles sociales especificados por los empleados, vaya a **Configuración \> Perfiles sociales**. (Para obtener más información, vea [Administrar perfiles sociales](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles)).
-- Nombres de usuario en Power BI, abra el panel de Power BI de Social Engagement y filtre por nombre de empleado.
-
-### <a name="providing-a-copy-of-personal-data"></a>Facilitar una copia de los datos personales
-
-El RGPD concede a los titulares de los datos el derecho de obtener una copia de datos personales a petición. Cuando encuentre el contenido del cliente que contenga los datos que puedan ser objeto de la solicitud, es responsabilidad de la organización decidir si quiere proporcionar una copia al titular de los datos.
-
-#### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
-
-- Para exportar los datos personales de autores, siga los pasos que se indican en [Exportar información de autores](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#export-author-information) para exportar los datos a un archivo de Excel.
-- Para extraer las etiquetas de autor que se agregaron a un autor específico, puede [exportar datos de etiquetas de autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#export-author-tags-data).
-
-##### <a name="your-employees"></a>Sus empleados
-
-Para exportar:
-
-- los datos de clientes de perfiles de usuario, vaya al [Centro de administración](https://portal.office.com/adminportal/home). En el **Centro de administración**, seleccione **Usuarios**. En la página **Usuarios activos**, busque el usuario cuyos datos desea exportar. Elimine todos los usuarios excepto el usuario de destino y seleccione **Exportar** para exportar los datos a un archivo .csv que podrá abrir en Excel para ver la información.
-- Direcciones de correo electrónico de un destinatario de alertas (los únicos datos de cliente de una alerta).  siga los pasos que se indican en [Administrar destinatarios de alertas como administrador](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Seleccione **Exportar** para descargar una lista de Excel de las alertas donde se incluya este destinatario.
-- Nombres de usuario de Power BI: [Informes de interacciones](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) donde se muestran nombres de usuario e informes del rendimiento del equipo en redes sociales. Para exportar estos datos, filtre por el usuario en el panel de Power BI o en el [informe](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), y [exporte los datos](https://docs.microsoft.com/power-bi/service-export-to-pbix).
-
-### <a name="rectifying-personal-data"></a>Rectificar los datos personales
-
-Para corregir datos personales incompletos o imprecisos:
-
-#### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
-
-- Necesita preguntar al propietario de los datos (autor) que realice el cambio en la plataforma social (como Twitter, WordPress o Tumblr). El titular de los datos es el propietario de los datos en la cuenta de red social, por lo que son los únicos datos que puede cambiar. Cuando el autor realice el cambio, Social Engagement sincronizará automáticamente los detalles revisados.
-- Etiquetas de autor, siga los pasos que se indican en [Cambiar etiquetas de autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#change-author-tags).
-
-##### <a name="your-employees"></a>Sus empleados
-
-- Perfiles de usuario: para realizar cambios en los datos de cliente de un perfil de usuario, vea [Cambiar un nombre de usuario y una dirección de correo electrónico en Office 365](https://support.office.com/article/change-a-user-name-and-email-address-in-office-365-fb5ac074-e203-4e1f-9843-b9d1a3e03297) y [Agregar una foto de perfil en Office 365](https://support.office.com/article/add-your-profile-photo-to-office-365-2eaf93fd-b3f1-43b9-9cdc-bdcd548435b7). Estos cambios se sincronizarán automáticamente en Social Engagement. Para buscarlos, vaya a **Configuración** \> **Administración de usuarios**.
-
-- Destinatarios de alertas: puede [cambiar una alerta](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#change-an-alert).
-
-### <a name="restricting-the-processing-of-personal-data"></a>Restringir el procesamiento de datos personales
-
-#### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
-
-Para detener el procesamiento de datos de cliente de los autores en Social Engagement, [elimine el autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author).
-
-Esto bloqueará el procesamiento futuro de los datos de ese titular de los datos y de todas sus publicaciones futuras, además de eliminar todos los datos sobre el autor. Cada vez que Social Engagement obtenga nuevas publicaciones, comprobará automáticamente si el autor se eliminó anteriormente y descartará las publicaciones de los autores eliminados. Esto no tiene ningún efecto en la cuenta de usuario de la plataforma social.
-
-##### <a name="your-employees"></a>Sus empleados
-
-- Para detener el procesamiento de datos de cliente de los empleados, puede [quitar su licencia](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1) en Office 365. De esta forma, se eliminarán todos los elementos relacionados con Social Engagement, como roles de usuario y perfiles, todas las configuraciones personalizadas definidas por el usuario, alertas, mapas de actividad y flujos de contenido. Los temas de búsqueda y los perfiles sociales no se eliminan. Los administradores heredan la propiedad de los perfiles sociales de los usuarios eliminados y pueden eliminarlos a petición.
-- Para restringir el envío de mensajes de correo electrónico de alerta, puede quitar una dirección de correo electrónico de todas las alertas que se agregaron; para hacerlo, siga los pasos que se indican en [Administrar destinatarios de alertas como administrador](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator).
-
-### <a name="deleting-personal-data"></a>Eliminar datos personales
-
-El RGPD concede a los titulares de los datos el derecho de solicitar al poseedor la eliminación de los datos personales en determinadas circunstancias. El “derecho a ser olvidado” al quitar esos datos de una organización es una protección clave en el RGPD.
-
-#### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
-
-Para eliminar de forma permanente todos los datos personales de un actor en Social Engagement, elimine todo el perfil social de este autor. Vea [](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors)[Eliminar un autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author).  
-
-La acción de eliminación no se puede deshacer. Se eliminarán todos los datos del autor en Social Engagement y se impedirá el procesamiento futuro de sus datos y de sus publicaciones. Cada vez que Social Engagement obtenga nuevas publicaciones, comprobará automáticamente si el autor se eliminó anteriormente y descartará las publicaciones de los autores eliminados. Esto no tiene ningún efecto en la cuenta de usuario de la plataforma social.
-
-Para eliminar etiquetas de autor, vea [Quitar etiquetas de autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#remove-author-tags).
-
->[!NOTE]
->Si se le pide que quite información sobre un autor específico, le recomendamos que primero confirme la identidad de ese autor para validar la solicitud. Para confirmar su identidad, puede solicitar un mensaje privado del autor desde su cuenta de red social.
-
-Social Engagement implementó fuentes de cumplimiento de distintas plataformas sociales (como Twitter, WordPress y Tumblr) para actuar en señales, como eliminaciones de publicaciones que se desencadenaron directamente en las plataformas de redes sociales. Esta característica se activa automáticamente con todas las instalaciones de Social Engagement y no necesita la interacción del usuario. Además, Social Engagement ofrece un mecanismo que permite a algunos servicios (como Dynamics 365 for Customer Engagement) que usan contenido social de Social Engagement heredar estas señales.
-
-##### <a name="your-employees"></a>Sus empleados
-
-Para eliminar de forma permanente todos los datos de cliente de un empleado, puede [quitar su licencia](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1) en Office 365.
-
-- De esta forma, se eliminarán todos los elementos relacionados con Social Engagement, como roles de usuario y perfiles, todas las configuraciones personalizadas definidas por el usuario, alertas, mapas de actividad y flujos de contenido. Los temas de búsqueda y los perfiles sociales no se eliminan. (Los administradores heredan la propiedad de los perfiles sociales de los usuarios eliminados y pueden eliminarlos a petición).
-- Estos cambios se sincronizarán automáticamente en Social Engagement. Para encontrarlos, vaya a **Configuración \> Administración de usuarios**.
-- Las entradas de empleado de un informe de interacción de Power BI se anonimizan al eliminar sus datos personales.
-
-Puede eliminar un [perfil social](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles#delete-a-social-profile).
-
-Para eliminar una dirección de correo electrónico de todas las alertas a las que se agregaron, siga los pasos que se indican en [Administrar destinatarios de alertas como administrador](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator).[](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)
-
-### <a name="exporting-personal-data"></a>Exportar datos personales
-
-Puede proporcionar a los titulares de los datos su información personal en formato electrónico.
-
-#### <a name="social-media-users-authors"></a>Usuarios de redes sociales (autores)
-
-Para exportar los datos personales de autores, siga los pasos que se indican en [Exportar información de autores](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#export-author-information) para exportar los datos a un archivo de Excel.
-
-Para extraer las etiquetas de autor que se agregaron a un autor específico, puede [exportar datos de etiquetas de autor](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#export-author-tags-data).
-
-##### <a name="your-employees"></a>Sus empleados
-
-Para exportar:
-
-- los datos de clientes de perfiles de usuario, vaya al [Centro de administración](https://portal.office.com/adminportal/home). En el **Centro de administración**, seleccione **Usuarios**. En la página **Usuarios activos**, busque el usuario cuyos datos desea exportar. Elimine todos los usuarios excepto el usuario de destino y seleccione **Exportar** para exportar los datos a un archivo .csv que podrá abrir en Excel para ver la información.
-- Las direcciones de correo electrónico de un destinatario de alertas (los únicos datos personales de una alerta). Siga los pasos que se indican en [Administrar destinatarios de alertas como administrador](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Después, seleccione **Exportar** para descargar una lista de Excel de las alertas donde se incluya este destinatario.
-- Nombres de usuario de Power BI: [Informes de interacciones](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) donde se muestran nombres de usuario e informes del rendimiento del equipo en redes sociales. Para exportar estos datos, filtre por el usuario en el panel de Power BI o en el [informe](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), y [exporte los datos](https://docs.microsoft.com/power-bi/service-export-to-pbix).
 
 ## <a name="part-2-responding-to-dsrs-for-system-generated-logs"></a>Parte 2: Responder a solicitudes de interesados relativas a registros generados por el sistema
 

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre la clave de disponibilidad que se usa para recuperar claves de cliente de Office 365 perdidas.
-ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
-ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
+ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845369"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862090"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>Obtenga información sobre la clave de disponibilidad para Office 365 Customer Key
 
@@ -94,7 +94,7 @@ Esta operación es proporcional al número de sitios de la organización. Una ve
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Uso de la clave de disponibilidad en Exchange Online y Skype empresarial
 
-Cuando se crea un DEP con una clave de cliente, Office 365 genera una clave de la Directiva de cifrado de datos (clave DEP) asociada a ese DEP. El servicio cifra la clave DEP tres veces: una con cada una de las claves de cliente y otra con la clave de disponibilidad. Solo se almacenan las versiones cifradas de la clave de DEP y una clave de DEP solo se puede descifrar con las claves de cliente o la clave de disponibilidad. A continuación, se usa la clave DEP para cifrar las claves de buzón, que se usan para cifrar buzones individuales.
+Cuando se crea un DEP con una clave de cliente, Office 365 genera una clave de la Directiva de cifrado de datos (clave DEP) asociada a ese DEP. El servicio cifra la clave DEP tres veces: una con cada una de las claves de cliente y otra con la clave de disponibilidad. Solo se almacenan las versiones cifradas de la clave de DEP y una clave de DEP solo se puede descifrar con las claves de cliente o la clave de disponibilidad. A continuación, se usa la clave DEP para cifrar las claves de buzón, que cifran los buzones individuales.
   
 Office 365 sigue este proceso para descifrar y proporcionar datos cuando los clientes usan el servicio:
   
@@ -171,7 +171,7 @@ Sistemas automatizados en Office 365 procesar todos los datos a medida que se tr
 
 ### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Registro de claves de disponibilidad de Skype empresarial y Exchange Online
 
-Exchange Online y Skype empresarial usan automáticamente la clave de disponibilidad durante los errores transitorios. Cuando se produce esta reserva, Office 365 publica registros visibles para el cliente accesibles desde el centro de seguridad y cumplimiento. Cada vez que estos servicios cambian a usar la clave de disponibilidad, se genera un registro de auditoría para la operación de clave de disponibilidad. Un nuevo tipo de registro denominado "cifrado del servicio de clave de cliente" con el tipo de actividad "fallback to Availability key" permite a los administradores filtrar los resultados de la búsqueda de registros de [Auditoría unificada](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) para ver los registros clave de disponibilidad. El registro de la clave de disponibilidad se genera solo cuando la clave Customer se usa para obtener acceso a los datos y no para las claves administradas por el servicio de Microsoft.
+Exchange Online y Skype empresarial usan automáticamente la clave de disponibilidad durante los errores transitorios. Cuando se produce esta reserva, Office 365 publica registros visibles para el cliente accesibles desde el centro de seguridad y cumplimiento. Cada vez que estos servicios usan la clave de disponibilidad, se genera un registro de auditoría para la operación de clave de disponibilidad. Un nuevo tipo de registro denominado "cifrado del servicio de clave de cliente" con el tipo de actividad "fallback to Availability key" permite a los administradores filtrar los resultados de la búsqueda de registros de [Auditoría unificada](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) para ver los registros clave de disponibilidad. El registro de la clave de disponibilidad se genera solo cuando la clave Customer se usa para obtener acceso a los datos y no para las claves administradas por el servicio de Microsoft.
 
 Los registros de registro incluyen atributos como la fecha, la hora, la actividad, el identificador de la organización y el identificador de la Directiva de cifrado de datos. El registro está disponible como parte de los registros de auditoría unificada de Office 365 y es accesible desde la ficha de búsqueda de registro de auditoría del centro de seguridad y cumplimiento de Office 365.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0448082ce6dcbcd9d1cee52557a78b2d7913a034
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6f467f938ce14aacb9553b11d51dc63431ab409
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588360"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862080"
 ---
 # <a name="export-documents-from-a-review-set"></a>Exportar documentos desde un conjunto de revisión
 
@@ -45,7 +45,7 @@ La exportación permite a los usuarios personalizar el contenido que se incluye 
 
 ### <a name="metadata-file"></a>Archivo de metadatos
 
-Esto puede considerarse el "Cargar archivo" que contiene metadatos asociados con los archivos exportados. Para obtener una lista de los campos disponibles en el archivo de \[metadatos, vea Link\]. Por lo general, este archivo puede ser incorporado por las herramientas<sup>de terceros de terceras</sup> partes.
+Esto puede considerarse el "Cargar archivo" que contiene metadatos asociados con los archivos que se exportan. Para obtener una lista de los campos exportados disponibles en el archivo de metadatos, consulte [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). Por lo general, este archivo puede ser recopilado por herramientas de terceros.
 
 ### <a name="tag-data"></a>Datos de etiqueta
 
@@ -53,11 +53,11 @@ Este contenido se agregaría como campos en el archivo de metadatos. Contiene to
 
 ### <a name="text-files"></a>Archivos de texto
 
-Los archivos de texto se pueden generar para cada archivo exportado de un conjunto de revisión. A menudo, los asociados de servicio necesitan estos archivos como parte de la recopilación de datos en herramientas<sup>de terceros de</sup> terceros.
+Los archivos de texto se pueden generar para cada archivo exportado de un conjunto de revisión. A menudo, los asociados de servicios necesitan estos archivos como parte de la recopilación de datos en herramientas de terceros.
 
 ### <a name="redacted-files"></a>Archivos censurados
 
-Si se generan documentos PDF censurados durante la revisión, estos archivos están disponibles durante la exportación. Los usuarios pueden decidir si desea exportar solo los archivos nativos o reemplazar los nativos que tienen redacciones con el grabado en documentos PDF.
+Si se generan archivos PDF censurados durante la revisión, estos archivos están disponibles durante la exportación. Puede decidir si desea exportar solo los archivos nativos o reemplazar los archivos nativos que requerían censura con los archivos PDF que contienen las redacciones reales.
 
 ### <a name="export-location"></a>Ubicación de exportación
 
