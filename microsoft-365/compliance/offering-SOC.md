@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662026"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851887"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -128,6 +128,10 @@ Sí. Al migrar las aplicaciones y los datos a los servicios en la nube de Micros
 **¿Cómo puedo empezar con los esfuerzos de cumplimiento normativo de mi organización?**
 
 El [kit de herramientas de SOC para empresas de servicio](https://aka.ms/soc-toolkit) es un recurso útil para comprender los procesos de informes de los SOC y fomentar el uso de los mismos por parte de su organización.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
+
+[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), utilice la [plantilla preconfigurada SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) y la [plantilla SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) para ayudar a su organización a cumplir los requisitos de este reglamento.
 
 ## <a name="resources"></a>Recursos
 

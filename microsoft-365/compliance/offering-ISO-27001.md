@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d88ef57ea9340d95073db7f5ddd4423d5275c840
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef99b36737627a9ea457e7d4235b42241f34248b
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602257"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851817"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 Information Security Management Standards (Estándares de administración de seguridad de la información ISO/IEC 27001:2013)
 
@@ -141,6 +141,10 @@ La adopción de la norma ISO/IEC 27001 es un compromiso estratégico. Como punto
 **¿Puedo usar el cumplimiento de la norma ISO/IEC 27001 de los servicios Microsoft en la certificación de mi organización?**
 
 Sí. Si su empresa requiere la certificación de ISO/IEC 27001 para las implementaciones realizadas en los servicios de Microsoft, puede usar la certificación correspondiente en la evaluación de cumplimiento. Sin embargo, usted tiene la responsabilidad de contratar un asesor para evaluar los controles y procesos de su propia organización, y la implementación para el cumplimiento de la norma ISO/IEC 27001.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
+
+[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), utilice la [plantilla preconfigurada ISO 27001](https://go.microsoft.com/fwlink/?linkid=2117914) para ayudar a su organización a cumplir los requisitos de este reglamento.
 
 ## <a name="resources"></a>Recursos
 

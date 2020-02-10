@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662006"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862130"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -77,17 +77,17 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
   > [!IMPORTANT]
   > Si asigna a un usuario el rol de Registros de auditoría o Registros de auditoría de solo lectura en la página de **permisos** del centro de seguridad y cumplimiento, no podrán buscar el registro de auditoría de Office 365 Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
 
-- Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de Office 365 de su organización. La cantidad de tiempo que se retiene un registro de auditoría (y que se puede buscar en el registro de auditoría) depende de la suscripción a Office 365 y, específicamente, del tipo de licencia que se ha asignado a un usuario específico.
+- Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de Office 365 de su organización. La cantidad de tiempo que se retiene un registro de auditoría (y que se puede buscar en el registro de auditoría) depende de la suscripción a Office 365 o Microsoft 365 y, específicamente, del tipo de licencia que se ha asignado a un usuario específico.
 
-  - **Office 365 E3:** Los registros de auditoría se conservan durante 90 días. Eso significa que puede buscar en registro de auditoría las actividades que se han realizado en los últimos 90 días.
+  - **Office 365 y Microsoft 365 E3:** los registros de auditoría se conservan durante 90 días. Eso significa que puede buscar en registro de auditoría las actividades que se han realizado en los últimos 90 días.
 
     > [!NOTE]
     > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que los eventos de auditoría del buzón de algunos usuarios no se encuentren en búsquedas de registro de auditoría en el Centro de seguridad y cumplimiento a través de la API de Actividad de administración de Office 365. Para obtener más información, vea [Más información sobre el registro de auditoría del buzón de correo](enable-mailbox-auditing.md#more-information).
 
-  - **Office 365 E5:** los registros de auditoría también se conservan durante 90 días. La retención mantenimiento de registros de auditoría para un año puede estar disponible en ocasiones para usuarios de E5 y usuarios con una licencia de E3 y una licencia de complemento a Cumplimiento avanzado de Office 365.
+  - **Office 365 o Microsoft 365 E5 o usuarios con una licencia de complemento de Cumplimiento de Microsoft 365 E5:** los registros de auditoría de Azure Active Directory, Exchange y la actividad de SharePoint se conservan durante un año de forma predeterminada. Las organizaciones también pueden crear directivas de retención de registros de auditoría para conservar registros de auditoría de actividad en otros servicios durante un año. Para obtener más información, vea [administrar directivas de retención de los registros de auditoría](audit-log-retention-policies.md).
 
     > [!NOTE]
-    > El programa de la versión preliminar privada para el período de retención de un año para los registros de auditoría de las organizaciones E5 (o para los usuarios de las organizaciones E3 que tienen licencias de complemento a Cumplimiento avanzado) está cerrado a la nueva inscripción. Este artículo se actualizará cuando el período de retención de un año se encuentre disponible en vista previa pública o se publique para la disponibilidad general.
+    > Si su organización ha participado en el programa de vista previa privado para la retención de registros de auditoría de un año, la duración de la retención de los registros de auditoría que se generaron antes de la fecha de lanzamiento de disponibilidad general no se restablecerá.
 
 - Si desea desactivar la búsqueda en el registro de auditoría de Office 365 de su organización, puede ejecutar el comando siguiente en el PowerShell remoto conectado a su organización Exchange en línea:
 
@@ -851,10 +851,6 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-**¿Dónde puedo encontrar información acerca de las características que ofrece el servicio de auditoría en Office 365?**
-
-Para obtener más información sobre las características de auditoría e informes disponibles en Office 365, consulte[auditoría e informes en Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-auditing-and-reporting-overview).
-
 **¿Cuáles son los distintos servicios de Office 365 que están actualmente auditados?**
 
 Los servicios de Office 365 más usados como Exchange Online, SharePoint Online, OneDrive para la empresa, Azure Active Directory, Microsoft Teams, Dynamics 365, la protección contra amenazas avanzada y Power BI son auditados. Consulte el [principio de este artículo](search-the-audit-log-in-security-and-compliance.md) para obtener una lista de los servicios que se van a auditar.
@@ -869,16 +865,13 @@ Los datos más auditados están disponibles un máximo de 30 minutos pero puede 
 
 **¿Durante cuánto tiempo se conservan los registros de auditoría?**
 
-Como se ha explicado anteriormente, el período de retención de los registros de auditoría depende de la suscripción a Office 365 de la organización.
+Como se ha explicado anteriormente, el período de retención de los registros de auditoría depende de la suscripción a Office 365 o Microsoft de la organización.
 
-- **Office 365 E3:** Los registros de auditoría se conservan durante 90 días.
+  - **Office 365 y Microsoft 365 E3:** los registros de auditoría se conservan durante 90 días. Eso significa que puede buscar en registro de auditoría las actividades que se han realizado en los últimos 90 días.
 
-- **Office 365 E5:** Los registros de auditoría también se conservan durante 90 días. La retención mantenimiento de registros de auditoría para un año puede estar disponible en ocasiones para usuarios de E5 y usuarios con una licencia de E3 y una licencia de complemento a Cumplimiento avanzado de Office 365.
+  - **Office 365 o Microsoft 365 E5 o usuarios con una licencia de complemento de Cumplimiento de Microsoft 365 E5:** los registros de auditoría de Azure Active Directory, Exchange y la actividad de SharePoint se conservan durante un año de forma predeterminada. Las organizaciones también pueden crear directivas de retención de registros de auditoría para conservar registros de auditoría de actividad en otros servicios durante un año. Para obtener más información, vea [administrar directivas de retención de los registros de auditoría](audit-log-retention-policies.md).
 
-  > [!NOTE]
-  > Como se explicó anteriormente, el programa de la versión preliminar privada para el período de retención de un año para los registros de auditoría de las organizaciones E5 (o para las organizaciones E3 que tienen licencias de complemento a Cumplimiento avanzado) está cerrado a la nueva inscripción. Este artículo se actualizará cuando el período de retención de un año se encuentre disponible en vista previa pública o se publique para la disponibilidad general.
-
-Asimismo, tenga en cuenta que la duración del período de retención de los registros de auditoría se basa en las licencias por usuario. Por ejemplo, si a un usuario de su organización se le asigna una licencia de Office 365 E3 o E5, los registros de auditoría de las actividades que realiza el usuario se conservan durante 90 días.
+Asimismo, tenga en cuenta que la duración de la retención de los registros de auditoría se basa en las licencias por usuario. Por ejemplo, si a un usuario de su organización se le asigna una licencia de Office 365 E3, los registros de auditoría de las actividades que realiza el usuario se conservan durante 90 días.
 
 **¿Puedo tener acceso a los datos de auditoría mediante programación?**
 
@@ -902,4 +895,6 @@ No. Actualmente, tenemos auditorías de canalización de implementaciones en las
 
 **¿Está la auditoría de datos encriptada?**
 
-Los datos de auditoría se almacenan en buzones de Exchange (datos en reposo) en la misma región donde se implementa la canalización de auditoría. Estos datos no estan encriptados. Sin embargo, los datos en tránsito siempre están encriptados.
+Los datos de auditoría se almacenan en buzones de Exchange (datos en reposo) en la misma región donde se implementa la canalización de auditoría unificada. Exchange no cifra los datos de los buzones en reposo. Sin embargo, el cifrado de nivel de servicio cifra todos los datos de los buzones, ya que los servidores de Exchange en centros de datos de Microsoft se cifran mediante BitLocker. Para obtener más información, consulte [Cifrado de Office 365 para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md).
+
+Los datos de correo en tránsito siempre se cifran.
