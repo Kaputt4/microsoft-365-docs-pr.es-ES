@@ -5,19 +5,19 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 12/9/2016
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estos procedimientos recomendados para Exchange Online Protection (EOP) con el fin de evitar errores comunes de configuración y prepararse para usar esta característica sin problemas.
-ms.openlocfilehash: 053b5f551be528e7eedb3c218bb1e49ab6b8be91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b4b1f02e3b034b7e89d605a2164b6add3f20dae5
+ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599747"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41887307"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Procedimientos recomendados para configurar EOP y Office 365 ATP
 
@@ -33,13 +33,13 @@ Si la organización cuenta con cuentas de usuario existentes en un entorno local
 
 ## <a name="recommended-settings"></a>Configuración recomendada
 
-Habilitamos a los administradores de seguridad para personalizar la configuración de seguridad que satistfy las necesidades de sus entornos. Aunque, como regla general, hay dos niveles de seguridad en EOP y Office 365 ATP que se recomiendan: estándar y estricta. Esta configuración se muestra en la [configuración recomendada para EOP y Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md). 
+Habilitamos a los administradores de seguridad para que personalicen la configuración de seguridad para satisfacer las necesidades de su organización. Aunque, como regla general, hay dos niveles de seguridad en EOP y Office 365 ATP que se recomiendan: estándar y estricta. Esta configuración se muestra en la [configuración recomendada para EOP y Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md).
 
 ### <a name="miscellaneousnon-policy-settings"></a>Configuraciones varias/sin directivas
 
 Esta configuración cubre una variedad de características que se encuentran fuera de las directivas de seguridad.
 
-Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
+|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---------|---------|---------|---------|
 |[Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sí|Sí||
 |[Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md)|Sí|Sí||
@@ -48,25 +48,24 @@ Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |Programar informes de malware y correo no deseado|Sí|Sí||
 |No se debe permitir ni supervisar el reenvío automático a dominios externos|Sí|Sí||
 |La auditoría unificada debe estar habilitada|Sí|Sí||
-|Conectividad IMAP a buzón de correo|Deshabilitado|Deshabilitado||
-|Conectividad POP al buzón de correo|Deshabilitado|Deshabilitado||
+|[Conectividad IMAP a buzón de correo](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Deshabilitado|Deshabilitado||
+|[Conectividad POP al buzón de correo](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Deshabilitado|Deshabilitado||
 |Envío autenticado mediante SMTP al buzón de correo|Deshabilitado|Deshabilitado||
 |Conectividad de EWS al buzón de correo|Deshabilitado|Deshabilitado||
-|Conectividad de PowerShell|Deshabilitado|Deshabilitado||
+|[Conectividad de PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Deshabilitado|Deshabilitado|Disponible para usuarios de buzones de correo o usuarios de correo (objetos de usuario devueltos por el cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) ).|
 |Usar inteligencia simulada para los remitentes de listas blancas siempre que sea posible|Sí|Sí||
 |Bloqueo perimetral basado en directorios (DBEB)|Habilitado|Habilitado|Tipo de dominio = autoritario|
 |[Configurar la autenticación multifactor para todas las cuentas de administrador](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Habilitado|Habilitado||
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-Solucionar problemas generales y tendencias mediante el uso de los informes del centro de administración. Para encontrar datos específicos en un punto único sobre un mensaje, use la herramienta de seguimiento de mensajes. Para más información sobre informes, vea [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Para más información sobre la herramienta de seguimiento de mensajes, vea [Trace an Email Message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message).
+Solucionar problemas generales y tendencias mediante el uso de los informes del centro de administración. Para encontrar datos específicos en un punto único sobre un mensaje, use la herramienta de seguimiento de mensajes. Para más información sobre informes, vea [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Obtenga más información sobre la herramienta de seguimiento de mensajes en [el seguimiento de mensajes en el centro de seguridad & cumplimiento](message-trace-scc.md).
 
 ## <a name="reporting-false-positive-and-false-negatives-to-microsoft"></a>Informar sobre falsos positivos y falsos negativos a Microsoft
 
 Los administradores deben enviar falsos negativos (correo no deseado) y falsos positivos (correo no deseado) a Microsoft a través de nuestro portal de envíos de administración. Los correos electrónicos, archivos y direcciones URL pueden enviarse para ayudar a los administradores a determinar por qué nosotros entregamos o no entregamos mensajes a los usuarios finales. Para obtener más información, consulte [Cómo enviar sospechoso correo no deseado, phish, direcciones URL y archivos a Microsoft para el análisis de Office 365](admin-submission.md).
 
 Los usuarios finales también pueden informar directamente de falsos negativos (correo no deseado) y falsos positivos (correo no deseado) a Microsoft para su análisis cuando no están de acuerdo con los veredictos dados. Para obtener más información, consulte [Enviar correo electrónico no deseado, mensajes sin correo no deseado y mensajes de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
-
 
 ## <a name="create-mail-flow-rules"></a>Crear reglas de flujo de correo
 
@@ -77,5 +76,3 @@ Al implementar una regla nueva en producción, seleccione primero uno de los mod
 Al implementar reglas nuevas, considere la posibilidad de agregar la acción adicional de **Generar informe de incidentes** para supervisar la regla en acción.
 
 En entornos híbridos donde la organización incluya tanto Exchange como Office 365, tenga en cuenta las condiciones que se usan en las reglas de flujo de correo. Si desea que las reglas se apliquen a toda la organización, asegúrese de usar las condiciones que están disponibles en Exchange local y en Office 365. Aunque la mayoría de las condiciones están disponibles en ambos entornos, hay algunas que solo están disponibles en un entorno o en la otra. Obtenga más información en [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
-
-
