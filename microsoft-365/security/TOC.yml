@@ -172,14 +172,21 @@
             - name: Protección contra correo electrónico no deseado y antimalware
               href: ./office-365-security/anti-spam-and-anti-malware-protection.md
               items:
+                - name: Protección contra malware
+                  href: ./office-365-security/anti-malware-protection.md
+                  items:
+                    - name: Preguntas más frecuentes sobre la protección antimalware
+                      href: ./office-365-security/anti-malware-protection-faq-eop.md
+                    - name: Configurar directivas antimalware
+                      href: ./office-365-security/configure-anti-malware-policies.md
+                    - name: Enviar malware y no malware a Microsoft para su análisis
+                      href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                    - name: Detección de virus en SharePoint Online
+                      href: ./office-365-security/virus-detection-in-spo.md
                 - name: Opciones avanzadas de filtrado de correo no deseado
                   href: ./office-365-security/advanced-spam-filtering-asf-options.md
                 - name: Grupo de entrega de alto riesgo para mensajes salientes
                   href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                - name: Preguntas más frecuentes sobre la protección antimalware
-                  href: ./office-365-security/anti-malware-protection-faq-eop.md
-                - name: Protección contra malware
-                  href: ./office-365-security/anti-malware-protection.md
                 - name: Preguntas más frecuentes sobre protección contra correo electrónico no deseado
                   href: ./office-365-security/anti-spam-protection-faq.md
                 - name: Evite usar caracteres no válidos en las reglas de filtro de correo no deseado y directiva de filtro de correo no deseado
@@ -194,8 +201,6 @@
                   href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
                 - name: Lucha contra el correo no deseado enviado a Office 365
                   href: ./office-365-security/fighting-junk-email.md
-                - name: Detección de virus en SharePoint Online
-                  href: ./office-365-security/virus-detection-in-spo.md
                 - name: Protección contra spam para el correo electrónico de Office 365
                   href: ./office-365-security/anti-spam-protection.md
                 - name: Cómo se combinan las directivas y las protecciones
@@ -214,8 +219,6 @@
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                 - name: Administrar listas de remitentes seguros para troyanos de envío masivo de correo electrónico
                   href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
-                - name: Configurar directivas antimalware
-                  href: ./office-365-security/configure-anti-malware-policies.md
                 - name: Configurar las directivas contra correo electrónico no deseado
                   href: ./office-365-security/configure-the-anti-spam-policies.md
                 - name: Crear-listas-de-remitentes-a-bloquear-en-Office-365
@@ -240,8 +243,6 @@
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                 - name: Envíos de administración en Office 365
                   href: ./office-365-security/admin-submission.md
-                - name: Enviar malware y no malware a Microsoft para su análisis
-                  href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
                 - name: Encabezados de mensajes de correo no deseado
