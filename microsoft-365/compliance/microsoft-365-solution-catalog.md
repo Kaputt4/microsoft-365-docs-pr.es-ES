@@ -1,5 +1,5 @@
 ---
-title: Información general sobre el catálogo de soluciones de Microsoft 365
+title: Catálogo de soluciones de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,18 +11,16 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 57591d385ce05454151b9ed28c5d764096d9e95b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e147ac6ac17a9fdd395aa0b1a00bd8f630cd10c1
+ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602747"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41891983"
 ---
-# <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Información general sobre el catálogo de soluciones de Microsoft 365 (versión preliminar)
+# <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
-## <a name="overview"></a>Información general
-
-¿Necesita una forma rápida de empezar a trabajar con las tareas de cumplimiento en Microsoft 365? Consulte el nuevo [Catálogo de soluciones de Microsoft 365](https://compliance.microsoft.com/solutioncatalog) para descubrir, aprender y comenzar rápidamente con soluciones de administración de riesgos y cumplimiento de normas.
+¿Necesita una forma rápida de empezar a trabajar con las tareas de cumplimiento en Microsoft 365? Consulte el [Catálogo de soluciones de 365 de Microsoft](https://compliance.microsoft.com/solutioncatalog) para descubrir, aprender y comenzar rápidamente con soluciones de administración de riesgos y cumplimiento de normas.
 
 Las soluciones de cumplimiento de Microsoft 365 son colecciones de capacidades integradas que puede usar para ayudarle a administrar escenarios de cumplimiento de un extremo a otro. Las herramientas y capacidades de una solución pueden incluir una combinación de directivas, alertas, informes y mucho más.
 
@@ -79,19 +77,17 @@ Desde aquí, verá tarjetas para las siguientes soluciones:
 
 ## <a name="how-do-i-get-this"></a>¿Cómo obtengo esto?
 
-- Si aún no tiene el nuevo catálogo de soluciones de Microsoft 365, lo tendrá pronto. Estamos habilitando el catálogo de soluciones para todas las suscripciones de Microsoft 365 en un lanzamiento incremental.
-
-- Para visitar el catálogo de soluciones de 365 de Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) , vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la Página principal del catálogo.
+Para visitar el catálogo de soluciones de 365 de Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) , vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la Página principal del catálogo.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-**¿Por qué no veo todavía el nuevo catálogo de soluciones de Microsoft 365?**
+**¿Por qué no veo el catálogo de soluciones de Microsoft 365?**
 
-En primer lugar, asegúrese de que tiene las licencias y los permisos adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento. Si todavía no ve el nuevo catálogo de soluciones en el panel de navegación izquierdo, lo tendrá pronto.
+En primer lugar, asegúrese de que tiene las licencias y los permisos adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento.
 
 **Algunas de las características de cumplimiento que aparecen en la página Catálogo de soluciones no están disponibles en el centro de cumplimiento de Microsoft 365. ¿Qué hago?**
 
-Todavía estamos agregando funcionalidad al centro de cumplimiento de Microsoft 365 y al catálogo de soluciones. Si no encuentra una solución específica en el área de navegación, será accesible cuando la solución esté disponible en su suscripción.
+Siempre estamos trabajando para agregar nuevas funciones al centro de cumplimiento de Microsoft 365 y al catálogo de soluciones. Si no encuentra una solución específica en el área de navegación, será accesible cuando la solución esté disponible en su suscripción.
 
 Si está buscando una solución de cumplimiento existente y no está disponible en el centro de cumplimiento de Microsoft 365, puede tener acceso a las soluciones en el centro de seguridad y cumplimiento de Office 365 en el [https://protection.office.com](https://protection.office.com)centro de seguridad y cumplimiento de Office existente yendo a. Como alternativa, puede hacer clic en la pestaña **más recursos** en el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365 y seleccionar la tarjeta del centro de seguridad y cumplimiento de Office 365.  
 
@@ -99,12 +95,12 @@ Si está buscando una solución de cumplimiento existente y no está disponible 
 
 - **Revise su puntuación de cumplimiento de Microsoft**, una puntuación personalizada basada en riesgos para ayudarle a comprender el estado de cumplimiento de la organización con respecto a los estándares y regulaciones clave. Proporciona las acciones recomendadas que puede realizar para fortalecer su postura general de cumplimiento y proporciona funciones de flujo de trabajo que le ayudarán a llevar a cabo esas acciones de manera eficaz. Para obtener más información, consulte [calificación de cumplimiento (vista previa)](compliance-score.md).
 
-- **Configure las directivas de administración de riesgos de Insider** para ayudar a minimizar los riesgos internos y permitirle detectar, investigar y emprender acciones para actividades arriesgadas en su organización. Consulte [Administración de riesgos de Insider](insider-risk-management.md).
+- **Configure las directivas de administración de riesgos de Insider** para ayudar a minimizar los riesgos internos y permitirle detectar, investigar y emprender acciones para actividades arriesgadas en su organización. Vea [Administración de riesgos de Insider (versión preliminar)](insider-risk-management.md).
+
+- **Obtenga información sobre y cree directivas de cumplimiento de comunicaciones** para identificar y corregir rápidamente las infracciones de directivas corporativas sobre código de conducta. Consulte [cumplimiento](communication-compliance.md)de la comunicación.
 
 - **Microsoft Information Protection**, obtenga información sobre cómo las soluciones de Microsoft 365 le ayudarán a descubrir, clasificar y proteger información confidencial en cualquier lugar en que se encuentre o viaje.
     - **Familiarícese con y configure Microsoft Cloud App Security**. Consulte [QuickStart: Introducción a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
     - Empezar **a trabajar con clasificadores**. Clasificar el contenido y, a continuación, etiquetarlo para que se pueda proteger y administrar correctamente es el punto de partida de la disciplina de protección de la información. Consulte [Introducción a los clasificadores capacitados](classifier-getting-started-with.md).
-
-- **Obtenga información sobre y cree directivas de cumplimiento de comunicaciones** para identificar y corregir rápidamente las infracciones de directivas corporativas sobre código de conducta. Consulte [cumplimiento de la comunicación en Microsoft 365](communication-compliance.md).
 
 - **Visite con frecuencia el catálogo de soluciones de Microsoft 365**y asegúrese de revisar las nuevas soluciones para ayudarle con sus necesidades de cumplimiento. Inicie sesión en [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, seleccione **Catálogo** en el panel de navegación izquierdo.

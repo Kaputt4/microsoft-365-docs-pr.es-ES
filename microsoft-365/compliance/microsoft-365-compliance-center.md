@@ -1,5 +1,5 @@
 ---
-title: Información general del centro de cumplimiento de Microsoft 365
+title: Centro de cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,16 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a6fd689240b15fa915c609291259999ae8a31ce3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 62c70fc4e7ea8a491db23a4fc9695b2b11b283ac
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602787"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916935"
 ---
-# <a name="overview-of-the-microsoft-365-compliance-center"></a>Información general del centro de cumplimiento de Microsoft 365
-
-## <a name="overview"></a>Información general
+# <a name="microsoft-365-compliance-center"></a>Centro de cumplimiento de Microsoft 365
 
 Si está interesado en la postura de cumplimiento de su organización, le va a encantar el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). El centro de cumplimiento de Microsoft 365 proporciona acceso sencillo a los datos y las herramientas que necesita para administrar las necesidades de cumplimiento de su organización.
 
@@ -60,7 +58,7 @@ También puede usar la característica **Agregar tarjetas** para agregar tarjeta
 
 ## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>Navegación sencilla a más características y capacidades de cumplimiento
 
-Además de los vínculos de las tarjetas en la Página principal, verá un panel de navegación en la parte izquierda de la pantalla que le proporcionará acceso sencillo a sus [avisos](../security/office-365-security/alerts.md), [informes](reports-in-security-and-compliance.md), [directivas](alert-policies.md), soluciones de cumplimiento y mucho más.
+Además de los vínculos de las tarjetas en la Página principal, verá un panel de navegación en la parte izquierda de la pantalla que le proporcionará acceso sencillo a sus [avisos](../security/office-365-security/alerts.md), [informes](reports-in-security-and-compliance.md), [directivas](alert-policies.md), soluciones de cumplimiento y mucho más. Para agregar o quitar opciones de un panel de navegación personalizado, use el control **personalizar navegación** del panel de navegación. Esto abre la configuración **personalizar el panel de navegación** para que pueda configurar los elementos que aparecerán en el panel de navegación.
 
 |  |  |
 |---------|---------|
