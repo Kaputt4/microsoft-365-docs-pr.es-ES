@@ -8,7 +8,7 @@
       href: recently-updated-topics-mcc.md
     - name: Centro de cumplimiento de Microsoft 365
       href: microsoft-365-compliance-center.md
-    - name: Catálogo de soluciones de Microsoft 365 (versión preliminar)
+    - name: Catálogo de soluciones de Microsoft 365
       href: microsoft-365-solution-catalog.md
     - name: Ir al Centro de seguridad y cumplimiento
       href: go-to-the-securitycompliance-center.md
@@ -202,7 +202,7 @@
           href: data-classification-content-explorer.md
         - name: Ver actividad de la etiqueta (vista previa)
           href: data-classification-activity-explorer.md
-        - name: Notas de la versión preliminar pública de clasificación de datos (versión preliminar)
+        - name: Notas de la versión preliminar pública de la clasificación de datos (vista previa)
           href: data-classification-pub-preview-relnotes.md
         - name: Introducción al entrenamiento de clasificadores (vista previa)
           href: classifier-getting-started-with.md
@@ -458,8 +458,6 @@
               href: review-set-search.md
             - name: Etiquetar documentos en un conjunto de revisión
               href: tagging-documents.md
-            - name: Configurar la detección de privilegios abogado-cliente
-              href: attorney-privilege-detection.md
             - name: Usar el panel de Review set (vista previa)
               href: advanced-ediscovery-dashboard.md
         - name: Analizar datos de casos
@@ -500,6 +498,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Campos de metadatos del documento
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Configurar la detección de privilegios abogado-cliente
+              href: attorney-privilege-detection.md
             - name: Conjuntos de revisión de conversación
               href: conversation-review-sets.md
             - name: Informes avanzados de eDiscovery (versión preliminar)
