@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre las compras de autoservicio.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 1a8cea3b11ecdc6e3ac6d382dc8ffe92c84e187a
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661916"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932280"
 ---
 # <a name="self-service-purchase-faq"></a>Preguntas más frecuentes sobre las compras sin asistencia
 
 > [!NOTE]
 > La información de este artículo solo se aplica a las suscripciones de Microsoft Power Platform (Power BI, Power apps y Power Automate).
 
-Las compras de autoservicio ahora están disponibles para la plataforma de alimentación en los Estados Unidos.
+Las compras de autoservicio ahora están disponibles para la plataforma de alimentación en Estados Unidos, Australia, Canadá y Japón.
 
 ## <a name="general"></a>General
 

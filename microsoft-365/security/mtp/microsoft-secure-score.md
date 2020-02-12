@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aeae243b4e363f69729ccdbd2bc3fc465ec1449b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b37b8f0aaa225dec9e522964b59871047081be9d
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600177"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932310"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -134,6 +134,16 @@ Puede ver un gráfico de la puntuación de su organización con el tiempo en la 
 
 La puntuación segura de Microsoft es un resumen numérico de la postura de seguridad en función de las configuraciones del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad; no es una medida absoluta de la probabilidad de que se infrinja el sistema o sus datos. En su lugar, representa en qué medida ha adoptado controles de seguridad en su entorno de Microsoft, lo que puede ayudar a compensar el riesgo de infracciones. Ningún servicio en línea está completamente inmune a las infracciones de seguridad y la puntuación segura no se debe interpretar como una garantía contra la infracción de seguridad de ninguna manera.
 
+## <a name="whats-new"></a>Novedades
+
+Para hacer que Microsoft califique de forma segura sea un mejor representante de su postura de seguridad, hemos realizado algunos cambios.
+
+### <a name="removed-not-scored-improvement-actions"></a>Acciones de mejora "sin puntuar" quitadas
+
+Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. Una calificación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Las acciones de mejora no puntuadas no se pueden medir.  
+
+Por estos motivos, se han eliminado todas las acciones de mejora que no se han puntuado. No es necesario realizar ninguna acción en su parte.
+
 ## <a name="whats-coming"></a>¿Qué llega?
 
 Para hacer que la puntuación segura de Microsoft sea un mejor representante de su postura de seguridad y mejorar el uso, estamos realizando algunos cambios en un futuro próximo. Se cambiará la puntuación y la puntuación máxima posible. Sin embargo, esto no implica un cambio en su postura de seguridad.
@@ -173,6 +183,11 @@ Para asegurarse de que la puntuación segura de Microsoft es significativa y que
 - Descubra aplicaciones de TI de instantáneas arriesgadas y no compatibles
 - Revisión de permisos & bloquear aplicaciones de OAuth arriesgadas conectadas a su entorno
 - Configurar el control de versiones en las bibliotecas de documentos de SharePoint Online
+- Almacenar documentos de usuario en OneDrive para la empresa
+- No permitir la delegación de buzones
+- Permitir vínculos de uso compartido de invitados anónimos para sitios y documentos
+- Configurar las directivas de datos adjuntos seguros de Office 365 ATP
+- Configurar vínculos seguros de Office 365 para comprobar direcciones URL
 
 ### <a name="mfa-improvement-action-updates"></a>Actualizaciones de acciones de mejora de MFA
 
@@ -191,11 +206,11 @@ Nuevas acciones de mejora agregadas:
 
  Estas nuevas acciones de mejora requerirán el registro de los usuarios o administradores para la autenticación multifactor (MFA) en el directorio y el establecimiento del conjunto adecuado de directivas que se adapten a las necesidades de la organización. El objetivo principal es tener flexibilidad a la vez que se asegura de que todos los usuarios y administradores puedan autenticarse con varios factores o solicitudes de verificación de identidad basadas en riesgos. Esto puede adoptar la forma de establecer los valores predeterminados de seguridad que permiten a Microsoft decidir cuándo desafiar a los usuarios para MFA o tener varias directivas que apliquen decisiones con ámbito.
 
-### <a name="removing-not-scored-and-review-improvement-actions"></a>Eliminación de acciones de mejora "sin puntuar" y "revisión"
+### <a name="removing-review-improvement-actions"></a>Eliminación de acciones de mejora de "revisión"
 
-Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. Una calificación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Las acciones de mejora no puntuadas no se pueden medir y las acciones de mejora de revisión no se miden en el mismo estándar que otras acciones de mejora.  
+Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. Una calificación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Revisión las acciones de mejora no se miden en el mismo estándar que otras acciones de mejora.  
 
-Por estos motivos, todas las acciones de mejora que no se hayan puntuado o que requerían una cadencia de revisión se eliminarán temporalmente. No es necesario realizar ninguna acción en su parte.
+Por estos motivos, todas las acciones de mejora que requerían una cadencia de revisión se eliminarán temporalmente. No es necesario realizar ninguna acción en su parte.
 
 ### <a name="simplification-of-the-point-system"></a>Simplificación del sistema de punto
 
