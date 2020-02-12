@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. La creación de huella digital de documento facilita la protección de esta información al identificar los formularios estándar que se usan en toda la organización. En este tema se describen los conceptos relacionados con la creación de huellas digitales de documentos y cómo crear una mediante PowerShell.
-ms.openlocfilehash: 6aea349495aa31eba8c9b57abffb92131d00864c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
+ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595205"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41892033"
 ---
 # <a name="document-fingerprinting"></a>Creación de huella digital de documento
 
@@ -25,25 +25,25 @@ Los trabajadores de la información en su organización tratan con diversos tipo
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Escenario básico para la creación de huella digital de documento
 
-La huella digital de documento es una característica de prevención de pérdida de datos (DLP) que convierte un formulario estándar en un tipo de información confidencial, que se puede usar en las reglas de las directivas de DLP. Por ejemplo, puede crear una huella digital de documento con base en una plantilla de patente en blanco y después crear una directiva DLP que detecte y bloquee todas las plantillas de patente salientes que incluyan contenido confidencial. Opcionalmente, puede configurar sugerencias de [Directiva](use-notifications-and-policy-tips.md) para notificar a los remitentes que puedan enviar información confidencial y el remitente debe comprobar que los destinatarios están cualificados para recibir las patentes. Este proceso funciona con cualquier formulario basado en texto que se use en la organización. Algunos ejemplos adicionales de formularios que puede cargar son: 
+La huella digital de documento es una característica de prevención de pérdida de datos (DLP) que convierte un formulario estándar en un tipo de información confidencial, que se puede usar en las reglas de las directivas de DLP. Por ejemplo, puede crear una huella digital de documento con base en una plantilla de patente en blanco y después crear una directiva DLP que detecte y bloquee todas las plantillas de patente salientes que incluyan contenido confidencial. Opcionalmente, puede configurar sugerencias de [Directiva](use-notifications-and-policy-tips.md) para notificar a los remitentes que puedan enviar información confidencial y el remitente debe comprobar que los destinatarios están cualificados para recibir las patentes. Este proceso funciona con cualquier formulario basado en texto que se use en la organización. Algunos ejemplos adicionales de formularios que puede cargar son:
   
 - Formularios de gobierno
-    
-- Formularios de cumplimiento de Health Insurance Portability and Accountability Act (HIPAA)
-    
+- Formularios de cumplimiento de Health Insurance Portability and Accountability Act (HIPAA)  
 - Formularios de información sobre empleados para los departamentos de recursos humanos
-    
 - Formularios personalizados creados específicamente para la organización
-    
+
 Idealmente, la organización ya tiene una práctica de negocios establecida sobre el uso de determinados formularios para transmitir información confidencial. Después de cargar un formulario vacío para convertirlo en una huella digital de documento y configurar una directiva correspondiente, DLP detecta los documentos en el correo saliente que coinciden con esa huella digital.
-  
+
 ## <a name="how-document-fingerprinting-works"></a>Funcionamiento de la creación de huella digital de documento
 
 Probablemente ya adivinó que los documentos no tienen huellas digitales reales, pero el nombre ayuda a explicar la característica. Del mismo modo que las huellas digitales de una persona tienen patrones únicos, los documentos tienen patrones de palabras únicos. Cuando se carga un archivo, DLP identifica el patrón de palabra único en el documento, crea una huella digital de documento basada en ese patrón y usa dicha huella digital de documento para detectar los documentos salientes que contengan el mismo patrón. Por ello, la carga de un formulario o plantilla crea el tipo más efectivo de huella digital de documento. Todas las personas que rellenan un formulario usan el mismo conjunto de palabras original y después agregan sus propias palabras al documento. Siempre que el documento de salida no esté protegido con contraseña y contenga todo el texto del formulario original, DLP puede determinar si el documento coincide con la huella digital de documento.
-  
+
+> [!IMPORTANT]
+> Por ahora, DLP puede usar la firma digital de documentos como método de detección solo en Exchange Online.
+
 El siguiente ejemplo muestra qué sucede si crea una huella digital de documento con base en una plantilla de patente, pero puede usar cualquier formulario como base para crear una huella digital de documento.
   
-**Ejemplo de documento de patente que coincide con una huella digital de documento de una plantilla de patente**
+### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Ejemplo de documento de patente que coincide con una huella digital de documento de una plantilla de patente
 
 ![Document-Fingerprinting-diagram. png](media/Document-Fingerprinting-diagram.png)
   
@@ -60,11 +60,9 @@ La huella digital de documento admite los mismos tipos de archivo que son compat
 La huella digital de documento no detectará información confidencial en los siguientes casos:
   
 - Archivos protegidos por contraseña
-    
 - Archivos que solo contienen imágenes
-    
 - Documentos que no contienen todo el texto del formulario original utilizado para crear la huella digital de documento
-    
+
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Usar PowerShell para crear un paquete de reglas de clasificación basado en la creación de huellas digitales de documentos
 
 Tenga en cuenta que actualmente puede crear una huella digital de documento solo con PowerShell en &amp; el centro de seguridad y cumplimiento. Para conectarse, vea [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
