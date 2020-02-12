@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Los usuarios de Microsoft Outlook en la web pueden informar de las estafas de suplantación de identidad (spam) o de suplantación de identidad mediante las opciones integradas de informes de correo electrónico. También puede informar a Microsoft de si un correo electrónico se identificó de forma incorrecta como correo no deseado (correo no deseado).
-ms.openlocfilehash: e433a91d1152e1e87aa9f45b0ccfe94e8b39f0f9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598597"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957425"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Informar de correo electrónico no deseado y estafas de suplantación de identidad (phishing) en Outlook en la Web
 
@@ -38,7 +38,7 @@ Para enviar un mensaje de correo no deseado a Microsoft:
    > [!NOTE]
    > También puede hacer clic con el botón derecho en un mensaje para mostrar un menú y después hacer clic en **Marcar como correo no deseado**.
 
-   Puede informar sobre un mensaje de correo no deseado desde la **Bandeja de entrada**, **Otros correos** o la carpeta **Elementos eliminados**.
+   Puede informar sobre un mensaje de correo no deseado de la **bandeja de entrada** o de la carpeta **elementos eliminados** .
 
 2. Se abrirá un cuadro de diálogo que le pregunta si desea enviar una copia del mensaje de correo electrónico no deseado a Microsoft para su análisis. Haga clic en **Informar** para enviar el mensaje al equipo de análisis de correo no deseado de Microsoft. Opcionalmente, active la casilla **No volver a mostrarme este mensaje** si quiere enviar automáticamente futuros mensajes de correo no deseado a Microsoft sin necesidad de confirmación.
 
@@ -57,7 +57,7 @@ Para enviar un mensaje de correo de suplantación de identidad (phishing) a Micr
 
    También puede hacer clic con el botón derecho en un mensaje para mostrar un menú y después hacer clic en **Marcar como correo de suplantación de identidad (phishing)**.
 
-   Puede informar sobre un mensaje de correo de suplantación de identidad desde la **Bandeja de entrada**, **Otros correos** o la carpeta **Elementos eliminados**.
+   Puede informar de un mensaje de suplantación de identidad (phishing) de la carpeta **bandeja de entrada** o **elementos eliminados** .
 
 2. En algunas organizaciones, se abrirá un cuadro de diálogo que le pregunta si desea enviar una copia del mensaje de correo electrónico de suplantación de identidad a Microsoft para su análisis. Haga clic en **Informar** para enviar el mensaje al equipo de análisis de correo no deseado de Microsoft. Esta opción de notificación está disponible actualmente para un número limitado de organizaciones; es posible que no se le solicite que informe a Microsoft de un correo de suplantación de identidad.
 

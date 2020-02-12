@@ -15,19 +15,19 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: Las notificaciones de correo no deseado para el usuario final se pueden configurar en la directiva de filtro de contenido de toda la compañía, o bien en las directivas de filtro de contenido personalizadas que se aplican a los dominios.
-ms.openlocfilehash: 2bbeaf48fc0d17b2df97f794956b65e090a06e1d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 95a8142b4f4687c66657cd01e1110470c8b08bc4
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599647"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957405"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurar notificaciones de correo no deseado para el usuario final en EOP
   
 > [!IMPORTANT]
 > Este tema va dirigido a clientes independientes de Exchange Online Protection (EOP) que protegen buzones locales. Los clientes de Exchange online que protegen buzones hospedados en la nube deben leer el siguiente tema en su lugar: [configurar notificaciones de correo no deseado para el usuario final en Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
-Puede configurar notificaciones de correo no deseado para el usuario final para la directiva predeterminada de filtro de correo no deseado para toda la compañía o para directivas personalizadas de filtro de correo no deseado. La habilitación de mensajes de notificación de correo no deseado para el usuario final permite a los usuarios administrar sus propios mensajes de correo no deseado en cuarentena. 
+Puede configurar notificaciones de correo no deseado para el usuario final para la directiva predeterminada de filtro de correo no deseado para toda la compañía o para directivas personalizadas de filtro de correo no deseado. La habilitación de mensajes de notificación de correo no deseado para el usuario final permite a los usuarios administrar sus propios mensajes de correo no deseado, en masa o de suplantación de cuarentena. 
   
 Las notificaciones de correo no deseado para el usuario final contienen una lista de los mensajes de correo no deseado puestos en cuarentena que recibió el usuario final durante el período de tiempo que usted configure (puede especificar cualquier valor entre 1 y 15 días). También puede configurar el idioma en el que está escrito el mensaje de notificación.
   

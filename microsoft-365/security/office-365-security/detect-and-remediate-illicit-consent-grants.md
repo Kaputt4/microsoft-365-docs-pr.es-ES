@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Aprenda a reconocer y corregir el consentimiento ilícito concede un ataque en Office 365.
-ms.openlocfilehash: 72109b6522a750e4eb31f289352e4ee2abfa7d33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599457"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957155"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar y solucionar la concesión de consentimiento ilegal en Office 365
 
@@ -39,11 +39,13 @@ Debe buscar en el **registro de auditoría** de Office 365 para encontrar signos
 
 1. Abra el **centro de seguridad y cumplimiento** en el inquilino de Office 365.
 
-2. Navegue hasta el nodo de **investigación de & de búsqueda** y seleccione búsqueda de registros de **Auditoría** .
+2. Desplácese hasta **Buscar** y seleccione **búsqueda de registros de auditoría**.
 
-3. Cree una búsqueda (todas las actividades y todos los usuarios), filtre los resultados para el consentimiento de la aplicación y agregue OAuth2PermissionGrant.
+3. Búsqueda (todas las actividades y todos los usuarios), especifique la fecha de inicio y la fecha de finalización si es necesario y, a continuación, haga clic en **Buscar**. 
 
-4. Examine las propiedades extendidas y compruebe si IsAdminContent está establecido en true.
+4. Filtre los resultados por consentimiento a Application y agregue OAuth2PermissionGrant.
+
+5. Haga clic en el resultado para ver los detalles de la actividad. Haga clic en **más información** para obtener detalles de la actividad. Compruebe si IsAdminContent está establecido en true.
 
 > [!NOTE]
 > • Puede tardar hasta 30 minutos o hasta 24 horas después de que se produzca un evento para que la entrada del registro de auditoría correspondiente se muestre en los resultados de la búsqueda. <br/><br/> • El período de tiempo que se retiene un registro de auditoría y se pueden buscar en el registro de auditoría depende de la suscripción de Office 365 y, específicamente, del tipo de licencia asignado a un usuario específico. Para obtener más información, vea [registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).

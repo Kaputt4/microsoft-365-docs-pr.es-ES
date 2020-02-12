@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599827"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957415"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 
@@ -31,7 +31,9 @@ ms.locfileid: "41599827"
 
 Actualmente hay disponibles tres tipos de simulaciones de ataque:
 
-- [Nombre para mostrar: ataque de suplantación de identidad](#display-name-spear-phishing-attack)
+- [Robo de credenciales de Spear-phishing](#credential-harvest-spear-phishing-attack)
+
+- [Datos adjuntos ataques de suplantación de identidad](#attachment-spear-phishing-attack)
 
 - [Ataque rociado de contraseñas](#password-spray-attack)
 
@@ -49,13 +51,15 @@ Asegúrese de que usted y su organización cumplen con los siguientes requisitos
 
 - Es administrador global de Office 365 o administrador de seguridad
 
+- Las campañas de suplantación de identidad (phishing) recopilarán y procesarán eventos durante un período de 30 días, los datos de la campaña histórica estarán disponibles durante un máximo de 90 días después de que se inicie la campaña.
+
 - La [autenticación multifactor/acceso condicional](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) está activada, por lo menos la cuenta de administrador global de Office 365 y los administradores de seguridad que van a usar el simulador de ataques. (Idealmente, el acceso condicional/autenticación multifactor está activado para todos los usuarios de la organización).
 
 - Su organización tiene [el plan 2 de la protección contra amenazas avanzada de Office 365](office-365-atp.md), con el &amp; simulador de ataque visible en el centro de seguridad y cumplimiento (vaya a **simulador de ataque**de administración \> de **amenazas** )
 
     ![Administración de amenazas: simulador de ataque](../media/ThreatMgmt-AttackSimulator.png)
 
-## <a name="display-name-spear-phishing-attack"></a>Nombre para mostrar: ataque de suplantación de identidad
+## <a name="credential-harvest-spear-phishing-attack"></a>Robo de credenciales de Spear-phishing
 
 La suplantación de identidad (phishing) es un término genérico para un conjunto amplio de ataques que se clasifican como un ataque de tipo de ingeniería social. Este ataque se centra en la suplantación de identidad (phishing), un ataque más objetivo destinado a un grupo específico de personas o una organización. Normalmente, se trata de un ataque personalizado con algún reconocimiento realizado y con un nombre para mostrar que generará confianza en el destinatario, como un mensaje de correo electrónico que parece que proviene de un ejecutivo de la organización.
 
@@ -103,11 +107,25 @@ Puede crear el editor HTML enriquecido directamente en el propio campo **del cue
 
 11. Elija **siguiente y** luego **Finalizar** para iniciar el ataque. El mensaje de correo electrónico de "Spear phishing" se entrega a los buzones de los destinatarios de destino.
 
+## <a name="attachment-spear-phishing-attack"></a>Datos adjuntos ataques de suplantación de identidad
+
+La suplantación de identidad (phishing) es un término genérico para un conjunto amplio de ataques que se clasifican como un ataque de tipo de ingeniería social. Este ataque se centra en la suplantación de identidad de los datos adjuntos, un ataque más dirigido destinado a un grupo específico de personas o una organización. Normalmente, se trata de un ataque personalizado con algún reconocimiento realizado y con un nombre para mostrar que generará confianza en el destinatario, como un mensaje de correo electrónico que parece que proviene de un ejecutivo de la organización.
+
+Este ataque se centra en permitirle manipular a la que parece que el mensaje se ha originado cambiando el nombre para mostrar y la dirección de origen, pero esta vez, en lugar de ofrecer una dirección URL para intentar atraer al usuario final para hacer clic en, ofrecemos datos adjuntos que estamos tratando de obtener t se abra el usuario final. 
+
+### <a name="to-simulate-a-attachment-spear-phishing-attack"></a>Para simular un ataque de suplantación de identidad de datos adjuntos
+
+1. Siga los pasos anteriores, teniendo en cuenta que este tiempo ha hecho clic en el **ataque de datos adjuntos** en la página de aterrizaje.
+
+2. A medida que avance en el asistente, verá dos opciones que puede configurar. El **tipo de datos adjuntos**son compatibles con dos tipos de datos adjuntos: **. docx** o **. pdf**. El **nombre de los datos adjuntos**, use este campo para crear un nombre de archivo adjunto significativo para la campaña.
+
 ## <a name="password-spray-attack"></a>Ataque rociado de contraseñas
 
 Un ataque por pulverización de contraseña contra una organización suele usarse después de que un actor incorrecto haya adquirido correctamente una lista de usuarios válidos del espacio empresarial. El actor incorrecto conoce las contraseñas comunes que usan las personas. Se trata de un ataque de uso generalizado, ya que es un ataque barato de ejecutar y más difícil de detectar que los enfoques de fuerza bruta.
 
 Este ataque se centra en permitir que especifique una contraseña común en una base de usuarios de gran tamaño.
+
+**Nota importante** la ejecución del ataque de pulverización de contraseñas contra cuentas de usuario final que ya tienen autenticación multifactor dará como resultado un intento incorrecto de las cuentas en el informe. Esto se debe a que la autenticación multifactor es una de las mechanims principales para ayudar a proteger contra ataques por pulverización de contraseñas, por lo que se espera.
 
 ### <a name="to-simulate-a-password-spray-attack"></a>Para simular un ataque rociado de contraseñas
 
@@ -125,6 +143,8 @@ Este ataque se centra en permitir que especifique una contraseña común en una 
 
 Un ataque de fuerza bruta contra una organización se suele usar después de que un actor incorrecto haya adquirido correctamente una lista de usuarios clave del espacio empresarial. Este ataque se centra en probar un conjunto de contraseñas en una sola cuenta de usuario.
 
+**Nota importante** la ejecución de los ataques de fuerza bruta contra contraseñas contra las cuentas de usuario final que ya tienen autenticación multifactor dará como resultado un intento no satisfactorio en las cuentas del informe. Esto se debe a que la autenticación multifactor es una de las mechanims principales para ayudar a proteger contra ataques de contraseñas de fuerza bruta, por lo que se espera.
+
 ### <a name="to-simulate-a-brute-force-password-attack"></a>Para simular un ataque de fuerza bruta de contraseña
 
 1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), elija **simulador de ataque**de administración \> de **amenazas** .
@@ -137,23 +157,11 @@ Un ataque de fuerza bruta contra una organización se suele usar después de que
 
 5. Elija **Finalizar** para iniciar el ataque.
 
-## <a name="new-features-in-attack-simulator"></a>Nuevas características en el simulador de ataques
 
-Las nuevas características se han agregado recientemente a simulador de ataque. Entre ellos se incluyen:
-
-- Capacidades avanzadas de generación de informes. La capacidad de ver datos como el tiempo más rápido (o más lento) para abrir un mensaje de correo electrónico de simulación de ataques, el tiempo más rápido o más lento para hacer clic en un vínculo del mensaje y más visualizaciones.
-
-- Editor de plantillas de correo electrónico. La capacidad de crear una plantilla de correo electrónico personalizada y reutilizable es que puede usar para simulaciones de ataque futuras.
-
-- Importación de destinatarios CSV. La capacidad de usar un archivo. csv para importar la lista de destinatarios de destino en lugar de usar el selector de la libreta de direcciones.
-
-Pronto estarán disponibles más características nuevas en el simulador de ataque. Entre ellos se incluyen:
-
-- Carga de los datos adjuntos simulación de phishing. La capacidad de usar un archivo adjunto como carga útil para la simulación de suplantación de identidad en vez de una dirección URL.
 
 Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que se está desarrollando, lo que está implementando y lo que ya se ha iniciado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Descripción del servicio de Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 

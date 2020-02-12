@@ -15,30 +15,30 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: 0dd8b54d2c8153b4200336d8c0e439f278f7ae77
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598137"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957255"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 
 > [!NOTE]
-> Estas actualizaciones se están implementando ahora y es posible que no estén disponibles para todos los usuarios. Esta característica es compatible con los usuarios de Enterprise outlook.com. Actualmente no está disponible para el consumidor outlook.com.
+> Estas actualizaciones se están implementando ahora y es posible que no estén disponibles para todos los usuarios. Esta característica es compatible con los usuarios de Outlook.com y de escritorio de Outlook de empresa de Enterprise. Actualmente no está disponible para usuarios de Office 365 de consumo.
 
-Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
+Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Office 365 comprueba que los remitentes son quienes dicen que son y marcan los mensajes sospechosos como correo no deseado.
 
 > [!IMPORTANT]
-> Cuando un mensaje se marca como una estafa de suplantación de identidad (phishing), Outlook.com y Outlook en la web muestran una advertencia en la parte superior de la página, pero los vínculos del mensaje todavía se pueden abrir.
+> Cuando un mensaje se marca como una estafa de suplantación de identidad, Outlook muestra una advertencia en la parte superior de la página, pero los vínculos del mensaje todavía se pueden abrir.
 
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>¿Cómo puedo identificar un mensaje sospechoso en mi bandeja de entrada?
 
-Outlook.com y Outlook en la web muestran indicadores cuando no se puede identificar el remitente de un mensaje o su identidad es diferente de la que se ve en la dirección de remitente.
+Outlook muestra indicadores cuando no se puede identificar el remitente de un mensaje o su identidad es diferente de la que se ve en la dirección from.
 
 ## <a name="you-see-a--in-the-sender-image"></a>Ve un '? ' en la imagen del remitente
 
-Cuando Outlook.com y Outlook en la web no pueden comprobar la identidad del remitente mediante técnicas de autenticación de correo electrónico, muestran un '? ' en la foto del remitente.
+Cuando Office 365 no puede comprobar la identidad del remitente mediante técnicas de autenticación de correo electrónico, se muestra un '? ' en la imagen del remitente.
 
 ![El mensaje no pasó la comprobación](../media/message-did-not-pass-verification.jpg)
 
@@ -58,25 +58,29 @@ Si es un cliente de Office 365, puede administrar esta característica a través
 
   - Agregue el par de dominios mediante el cmdlet **set-PhishFilterPolicy** en Exchange Online PowerShell. Para obtener más información, consulte [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) y [set up Office 365 ATP anti-phishing and anti-phishing Policies](set-up-anti-phishing-policies.md).
 
-Además, no se aplica el tratamiento de remitente no verificado si el mensaje se entregó a la bandeja de entrada a través de reglas de flujo de correo (también denominadas reglas de transporte), lista de dominios seguros (Directiva contra correo no deseado) o lista de remitentes seguros.
+Además, no se aplica el tratamiento de remitente no verificado si el mensaje se entregó a la bandeja de entrada a través de reglas de flujo de correo (también conocidas como reglas de transporte) o la lista de dominios seguros (directivas contra correo no deseado).
+
+## <a name="how-to-manage-the-via-tag"></a>Cómo administrar la etiqueta "mediante" 
+
+Si es un cliente de Office 365, puede administrar esta característica a través del centro de seguridad & cumplimiento de Office 365, del mismo modo que administra el tratamiento de remitentes no comprobados. Si agrega el remitente a la lista de permitidos de imitación de inteligencia empresarial, no se aplicará el tratamiento "Via".
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>¿Qué criterios usa Outlook.com y Outlook en la web para agregar las propiedades "?" y "Via"?
+### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>¿Qué criterios Outlook.com y Outlook Win32 Desktop usan para agregar las propiedades "?" y "Via"?
 
 Para el '? ' en la imagen del remitente: Outlook.com requiere que el mensaje pase la autenticación de SPF o DKIM y reciba una transferencia de dMarc o un paso de autenticación compuesto de la inteligencia de Office 365 suplantación de identidad. Para obtener más información, consulte [configurar SPF en Office 365 para evitar la suplantación de identidad (spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) ) y el [uso de DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md).
 
 Para la etiqueta Via: Si el dominio de la dirección de es diferente del dominio de la firma DKIM o del correo SMTP de, Outlook.com muestra el dominio en uno de estos dos campos (prefiriendo la firma DKIM).
 
-### <a name="how-do-i-remove-the-"></a>¿Cómo quito el "?"
+### <a name="how-do-i-remove-the--without-utilizing-the-spoof-intelligence-spoof-allow-list"></a>¿Cómo quito el '? ' sin usar la lista de permitidos de simulación de simulación de falsificación?
 
 Para el '? ' en la imagen del remitente: como remitente, debe autenticar el mensaje con SPF o DKIM.
 
 Para la etiqueta Via: como remitente, debe asegurarse de que el dominio de la firma DKIM o el correo SMTP de sea el mismo que o sea un subdominio de, el dominio de la dirección de remitente.
 
-### <a name="does-outlookcom-and-outlook-on-the-web-show-this-for-every-message-that-doesnt-pass-authentication"></a>¿Outlook.com y Outlook en la web muestran esto por cada mensaje que no supera la autenticación?
+### <a name="do-outlookcom-and-outlook-win32-desktop-show-this-for-every-message-that-doesnt-pass-authentication"></a>¿Outlook.com y Outlook Win32 de escritorio muestran esto para cada mensaje que no supera la autenticación?
 
-No necesariamente. Outlook.com y Outlook en la web pueden tener otras propiedades dentro del mensaje para autenticar al remitente.
+No necesariamente. Office 365 puede tener otras propiedades dentro del mensaje para autenticar al remitente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

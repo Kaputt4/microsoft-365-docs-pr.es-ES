@@ -14,24 +14,24 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si desea asegurarse de que recibe el correo de un remitente determinado, ya que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de correo no deseado.
-ms.openlocfilehash: 4ac97192327cd9ced853ce63537375931f3f0ec3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599537"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957265"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Crear listas de remitentes seguros en Office 365
 
 Si quiere asegurarse de que los usuarios reciben mensajes de correo electrónico de un remitente o remitentes concretos, ya que confía en ellos y sus mensajes, hay varios métodos disponibles que puede elegir. Estas opciones incluyen reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), remitentes seguros de Outlook, listas de direcciones IP permitidas, remitente/dominio de correo no deseado.
 
 > [!IMPORTANT]
-> Aunque las listas de permitidos de la organización se pueden usar para solucionar falsos positivos, esto debe considerarse una solución temporal y evitarse si es posible. No se recomienda la administración de falsos positivos mediante listas de permitidos, ya que puede abrir involuntariamente su organización para la suplantación, la suplantación y otros ataques. Si va a usar una lista de permitidos para este propósito, tendrá que estar atento y mantener el artículo sobre el envío de correo no deseado [, correo no deseado y mensajes de suplantación de identidad (phishing) a Microsoft para su análisis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), en la lista desplegable.
+> Aunque las listas de permitidos de la organización se pueden usar para solucionar falsos positivos, esto debe considerarse una solución temporal y evitarse si es posible. No se recomienda la administración de falsos positivos mediante listas de permitidos, ya que puede abrir involuntariamente su organización para la suplantación, la suplantación y otros ataques. Si va a usar una lista de permitidos para este propósito, tendrá que estar atento y mantener el artículo sobre el envío de correo no deseado [, correo no deseado y mensajes de suplantación de identidad (phishing) a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md), en la lista desplegable.
 
 El método recomendado para configurar una lista de remitentes seguros es usar reglas de flujo de correo, ya que esto presenta la máxima flexibilidad para asegurarse de que solo se permiten los mensajes correctos. *Las listas de permitidos basadas en dominios* y *direcciones de correo electrónico de la Directiva contra correo no deseado* no son tan seguras como *las listas basadas en direcciones IP* , ya que los dominios se pueden suplantar fácilmente. Pero las listas de permitidos basadas en IP de la Directiva contra correo no deseado también presentan los riesgos, ya que permiten que los dominios enviados a través de esa IP omitan el filtrado de correo no deseado. Tenga cuidado y supervise *las* excepciones realizadas, con cuidado.
 
 > [!IMPORTANT]
-> [Aquí](create-block-sender-lists-in-office-365.md)encontrarás información sobre cómo crear una **lista de remitentes bloqueados** .
+> • [Aquí](create-block-sender-lists-in-office-365.md)puede obtener información sobre cómo crear una **lista de remitentes bloqueados** . <br/><br/> • Para permitir a un dominio del remitente enviar correo electrónico no autenticado (evitar la protección contra la suplantación de identidad) pero no omitir las comprobaciones contra correo no deseado y antimalware, puede agregarlo a la [lista de remitentes seguros de AllowedToSpoof](walkthrough-spoof-intelligence-insight.md).
 
 ## <a name="options-from-most-to-least-recommended"></a>Se recomiendan opciones de mayor a menor
 
@@ -46,7 +46,7 @@ Siempre debe restringir las listas de permitidos porque omiten muchas medidas de
 
 Para asegurarse de que solo se permiten mensajes legítimos en la organización, la condición debe ser una de las siguientes:
 
-- Use el estado de autenticación del remitente del dominio de envío. Esto se realiza comprobando el encabezado Authentication-Results para asegurarse de que contiene "dMarc = pass" o "dMarc = bestguesspass". Esto garantiza que el dominio de envío se ha autenticado y no se está falsificando. Haga clic para obtener más información sobre la autenticación de correo electrónico de [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)y [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) .
+- Use el estado de autenticación del remitente del dominio de envío. Esto se realiza comprobando el encabezado Authentication-Results para asegurarse de que contiene "dMarc = pass" o "dMarc = bestguesspass". Esto garantiza que el dominio de envío se ha autenticado y no se está falsificando. Haga clic para obtener más información sobre la autenticación de correo electrónico de [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md) .
 
 - O bien, si el dominio remitente no tiene autenticación, use el dominio remitente *más* una IP de envío (o intervalo IP). Asegúrese de que es lo más *restrictiva posible*, el objetivo es que lo haga de la forma más segura posible. *No* se recomienda un intervalo IP mayor que/24. Evite agregar intervalos de direcciones IP que pertenezcan a servicios de consumo o infraestructuras compartidas.
 
@@ -87,7 +87,7 @@ Cuando no es posible usar reglas de flujo de correo para permitir globalmente a 
 
 ## <a name="use-anti-spam-policy-senderdomain-allow-lists"></a>Usar listas de remitentes/dominios permitidos de directivas contra correo no deseado
 
-La opción menos deseable es autorizar por remitente o dominio. Esta opción debe evitarse siempre que *sea posible* , ya que pasa por completo la protección contra correo no deseado/suplantación de identidad (phishing) y no evalúa la autenticación del remitente. Este método aumenta el riesgo de recibir correo de actores incorrectos y es la mejor opción recomendada temporalmente y solo cuando se realicen pruebas. Puede encontrar los pasos detallados en [configurar las directivas de filtro de correo no deseado](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) .
+La opción menos deseable es autorizar por remitente o dominio. Esta opción debe evitarse siempre que *sea posible* , ya que pasa por completo la protección contra correo no deseado/suplantación de identidad (phishing) y no evalúa la autenticación del remitente. Este método aumenta el riesgo de recibir correo de actores incorrectos y es la mejor opción recomendada temporalmente y solo cuando se realicen pruebas. Puede encontrar los pasos detallados en [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) .
 
 El límite máximo de estas listas es de aproximadamente 1000 entradas; Aunque solo podrá especificar 30 entradas en el portal. Debe usar PowerShell para agregar más de 30 entradas.
 

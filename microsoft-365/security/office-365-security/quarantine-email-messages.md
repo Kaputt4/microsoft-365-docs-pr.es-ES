@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Puede configurar una cuarentena para los mensajes de correo electrónico entrantes en Office 365 donde los mensajes de correo electrónico entrantes que se filtraron como correo no deseado, masivo, correo de suplantación de identidad (phishing) y malware se pueden conservar para una revisión posterior.
-ms.openlocfilehash: 253e1b9e03d395f67ff1290a527e035cbf8dfc3f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598677"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957435"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>Cuarentena de mensajes de correo electrónico en Office 365
 
@@ -34,7 +34,7 @@ De forma predeterminada, los mensajes que se filtraron por suplantación de iden
 Tanto los usuarios como los administradores pueden trabajar con los mensajes en cuarentena. Los usuarios pueden trabajar en cuarentena solo con sus propios mensajes filtrados. Los administradores pueden buscar y administrar los mensajes en cuarentena para todos los usuarios.
 
 > [!NOTE]
-> Mensajes de phish de confianza alta y mensajes puestos en cuarentena por acciones de reglas de flujo de correo solo están disponibles en la cuarentena de administrador. Los usuarios pueden tener acceso a sus propios mensajes de Phish, correo no deseado y correo masivo. 
+> Malware, mensajes de phish de alta confianza y mensajes puestos en cuarentena por acciones de regla de flujo de correo solo están disponibles en la cuarentena de administrador. Los usuarios pueden tener acceso a sus propios mensajes de Phish, correo no deseado y correo masivo. 
   
 Obtenga más información sobre cómo trabajar con mensajes en cuarentena:
   
