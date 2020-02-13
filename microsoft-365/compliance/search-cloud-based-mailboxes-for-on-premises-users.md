@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar y exportar datos de chat de Microsoft Teams (denominados 1xN chats) para usuarios locales en una implementación híbrida de Exchange.
-ms.openlocfilehash: d59af2e39d91bf107567016428102a5aba9cb724
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597577"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957145"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Buscar buzones de correo basados en la nube para usuarios locales en Office 365
 
@@ -109,7 +109,7 @@ Una vez habilitada la característica, puede usar la búsqueda de contenido en e
 
 Puede usar los cmdlets **New-compliancesearch** y **set-ComplianceSearch** en el PowerShell del centro de cumplimiento de & de seguridad para buscar en el buzón de correo basado en nube para los usuarios locales. Como se ha explicado anteriormente, no tiene que enviar una solicitud de soporte técnico para usar PowerShell para buscar los datos de chat de Microsoft Teams para los usuarios locales. 
   
-1. [Conéctese al centro de seguridad & PowerShell del centro de cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Ejecute el siguiente comando de PowerShell para crear una búsqueda de contenido que busque los buzones de correo basados en la nube de los usuarios locales.
 
@@ -137,9 +137,8 @@ Para obtener más información sobre el uso de estos cmdlets, consulte:
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- Actualmente, solo puede buscar, obtener una vista previa y exportar el contenido de los buzones basados en la nube para los usuarios locales. No se admite la colocación de un buzón basado en la nube para un usuario local en una retención asociada con un caso de exhibición de documentos electrónicos o la asignación a una directiva de retención de Office 365. 
+- Actualmente, puede buscar, obtener una vista previa y exportar el contenido de los buzones de correo basados en la nube para los usuarios locales. También puede poner un buzón de correo basado en la nube para un usuario local en una suspensión asociada con un caso de exhibición de documentos electrónicos y aplicar una directiva de retención para los chats de Microsoft Teams o enviar mensajes de canal a buzones de correo basados en la nube para los usuarios locales. Sin embargo, en este momento, no puede aplicar una directiva de retención para otras ubicaciones de contenido (como buzones de Exchange y sitios de SharePoint) a buzones de correo basados en la nube para los usuarios locales. 
 
-- El selector de ubicación de contenido para eDiscovery muestra los usuarios locales y le permitirá seleccionarlos. Sin embargo, como se explicó anteriormente, la retención no se aplicará al usuario local.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -157,7 +156,7 @@ No. Al migrar el buzón principal de un usuario local a la nube, los datos de ch
   
  **¿Puedo aplicar una retención de exhibición de documentos electrónicos o directivas de retención de Office 365 a los usuarios locales?**
   
-No.
+Sí. Puede aplicar retenciones de eDiscovery o directivas de retención para los chats de Microsoft Teams y los mensajes de canal a los buzones de correo basados en la nube para los usuarios locales.
   
  **¿Puede buscar contenido buscar chats más antiguos de Microsoft Teams para los usuarios locales antes del tiempo que mi organización envió la solicitud para habilitar esta característica?**
   

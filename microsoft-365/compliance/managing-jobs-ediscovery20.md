@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f829c6735bc8326a775a9d259da8b64aaa8b02ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600467"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960336"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Administrar trabajos en la exhibición avanzada de documentos electrónicos
 
@@ -55,6 +55,6 @@ En la tabla siguiente se describen los distintos Estados de los trabajos.
 | Error de envío | Error en el envío del trabajo.  Intente volver a ejecutar la acción que desencadenó el trabajo. |
 | En curso | El trabajo está en curso, puede supervisar el progreso del trabajo en la pestaña **trabajos** . |
 | Se ejecuta correctamente | El trabajo se ha completado correctamente. La fecha y la hora en que se completó el trabajo se muestran en la columna **completado** de la ficha **trabajos** . |
-| Parcialmente correcta | El trabajo se ha realizado parcialmente correctamente. |
-| Error | Error en el trabajo.  Intente volver a ejecutar la acción que desencadenó el trabajo. Si se produce un error en el trabajo por segunda vez, le recomendamos que se ponga en contacto con el soporte técnico de Microsoft y proporcione la información de soporte técnico del trabajo. |
+| Parcialmente correcta | El trabajo se ha realizado parcialmente correctamente. Normalmente, este estado se devuelve cuando el trabajo no ha encontrado datos parcialmente indizados (también denominados *datos no indizados*) en algunos de los orígenes de datos de custodios.  |
+| Failed | Error en el trabajo.  Intente volver a ejecutar la acción que desencadenó el trabajo. Si se produce un error en el trabajo por segunda vez, le recomendamos que se ponga en contacto con el soporte técnico de Microsoft y proporcione la información de soporte técnico del trabajo. |
 |||

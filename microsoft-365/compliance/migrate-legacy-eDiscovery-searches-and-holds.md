@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: db05b598fb0dab3cac9420b33b0bd4e12b6b7e9a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602797"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957195"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrar las búsquedas y suspensiones de eDiscovery heredado al centro de cumplimiento de Microsoft 365
 
@@ -41,7 +41,7 @@ El primer paso consiste en conectarse a PowerShell de Exchange Online PowerShell
 ```powershell
 $UserCredential = Get-Credential
 $sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session -AllowClobber -DisableNameChecking
+Import-PSSession $sccSession -DisableNameChecking
 $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
@@ -87,23 +87,19 @@ Para crear una retención de exhibición de documentos electrónicos, tiene que 
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
 
-![Ejemplo de la ejecución del comando New-ComplianceCase](media/MigrateLegacyeDiscovery3.png)
-
 ## <a name="step-5-create-the-ediscovery-hold"></a>Paso 5: crear la retención de exhibición de documentos electrónicos
 
 Una vez creado el caso, puede crear la retención y asociarla al caso que haya creado en el paso anterior. Es importante recordar que debe crear una directiva de suspensión de casos y una regla de suspensión de casos. Si la regla de suspensión de casos no se crea después de crear la Directiva de suspensión de casos, la retención de exhibición de documentos electrónicos no se creará y el contenido no se pondrá en retención.
 
-Ejecute los siguientes comandos para volver a crear la suspensión de exhibición de documentos electrónicos que desea migrar. En estos ejemplos se usan las propiedades de la conservación local del paso 3 que desea migrar.
+Ejecute los siguientes comandos para volver a crear la suspensión de exhibición de documentos electrónicos que desea migrar. En estos ejemplos se usan las propiedades de la conservación local del paso 3 que desea migrar. El primer comando crea una nueva Directiva de suspensión de casos y guarda las propiedades en una variable. El segundo comando crea la regla de suspensión de casos correspondiente.
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
 ```
 
 ```powershell
-$rule = New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
+New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
-
-![Ejemplo de uso de cmdlets NewCaseHoldPolicy y NewCaseHoldRule](media/MigrateLegacyeDiscovery4.png)
 
 ## <a name="step-6-verify-the-ediscovery-hold"></a>Paso 6: comprobar la conservación de la exhibición de documentos electrónicos
 
