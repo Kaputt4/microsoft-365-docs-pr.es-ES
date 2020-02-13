@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ffd5bd81542e2d39a928789c8575178c1b9a7633
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e419dd362ec42f7f2acb8cda03688afe3ade37be
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594430"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916925"
 ---
 # <a name="gdpr-breach-notification"></a>Notificación de incumplimiento del RGPD
 
-El Reglamento general de protección de datos (RGPD) añade nuevas normas para organizaciones que ofrecen bienes y servicios a los ciudadanos de la Unión Europea (UE) o que recopilan y analizan datos de los residentes de la UE, independientemente de donde estén ubicados usted o su empresa. Puede encontrar más información en el [tema de resumen del RGPD](gdpr.md).<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG] 
-
-Este documento le da información sobre la finalización de las notificaciones de incumplimiento en virtud del GDPR al usar productos y servicios de Microsoft.
+El Reglamento general de protección de datos (RGPD) añade nuevas normas para organizaciones que ofrecen bienes y servicios a los ciudadanos de la Unión Europea (UE) o que recopilan y analizan datos de los residentes de la UE, independientemente de donde estén ubicados usted o su empresa. Puede encontrar más información en el [tema de resumen del RGPD](gdpr.md). Este documento le da información sobre la finalización de las notificaciones de incumplimiento en virtud del GDPR al usar productos y servicios de Microsoft.
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>¿Qué constituye una vulneración de datos personales en virtud del RGPD?
 
@@ -47,7 +43,7 @@ Definiciones útiles de los términos del RGPD utilizados en este documento:
 
 En Microsoft nos tomamos muy en serio nuestras obligaciones relativas al Reglamento general de protección de datos (RGPD). Un incidente de seguridad o vulneración de datos consiste en eventos como el acceso ilícito a los datos de los clientes almacenados en el equipo de Microsoft o en las instalaciones de Microsoft, o el acceso no autorizado a los mismos, que puede resultar en la pérdida, divulgación o alteración de los datos del cliente.
 
-Al ser un procesador de datos, Microsoft garantiza que los clientes de servicios pueden cumplir los requisitos de notificación de incumplimiento del RGPD como controladores de datos. Nuestra notificación proporciona la información necesaria para realizar la valoración. Microsoft informa a los clientes de cualquier vulneración de datos personales, excepto los casos en los que se confirma que los datos personales son ininteligibles (por ejemplo, datos codificados de forma segura en los que se confirma la integridad de las claves).
+Al ser un procesador de datos, Microsoft garantiza que los clientes de servicios pueden cumplir los requisitos de notificación de incumplimiento del RGPD como controladores de datos. Nuestra notificación proporciona la información necesaria para realizar la valoración. Microsoft informa a los clientes de cualquier vulneración de datos personales, excepto los casos en los que se confirma que los datos personales son ininteligibles (por ejemplo, datos cifrados en los que se confirma la integridad de las claves).
 
 Los controladores de datos son responsables de evaluar los riesgos relacionados con la privacidad de los datos y determinar si una vulneración requiere la notificación a la DPA de un cliente. Para realizar esa valoración, Microsoft proporciona la información necesaria, junto con su directiva de cumplimiento del RGPD.
 
@@ -73,13 +69,17 @@ A continuación, se muestra información sobre las notificaciones de incumplimie
     - *Notificación al cliente*: Microsoft Azure envía notificaciones a los clientes y a las autoridades competentes de las vulneraciones de datos, según sea necesario. Los avisos a los clientes se entregan en no más de 72 horas desde el momento en que se declaró una vulneración, excepto en las siguientes circunstancias:
 
         - Microsoft cree que el acto de realizar una notificación aumentará el riesgo para otros clientes.
-        - La línea de tiempo de 72 horas puede dejar algunos detalles del incidente disponibles. Se le proporcionarán a medida que avanza la investigación.
+        - El plazo de 72 horas puede permitir que algunos detalles del incidente estén disponibles. Se le proporcionará esta información a medida que avanza la investigación.
 
         Puede encontrar más detalles en [Notificación de cliente](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification).
 
 3. **[Soporte técnico y Servicios profesionales de Microsoft](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
     La naturaleza de los servicios profesionales significa que algunos incidentes de protección de datos pueden estar dentro del ámbito de responsabilidad del cliente. Cuando los Servicios profesionales de Microsoft identifican un incidente relacionado con la protección de datos, se sigue el plan de respuesta estándar del sector documentado, tal como se describe en el [Ámbito y límites del proceso de respuesta a incidentes de protección de datos](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process).
 
-## <a name="learn-more"></a>Más información
+## <a name="breach-notification-admin-tools"></a>Herramientas de administración de notificación de infracciones
+
+- **Establecer el contacto de privacidad de la organización**: los administradores de espacios empresariales pueden usar el [Portal de administración de Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2052736) para definir el contacto de privacidad de la organización por si Microsoft necesita comunicarse con él.
+
+## <a name="learn-more"></a>Obtén más información
 
 - [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

@@ -5,6 +5,8 @@ keywords: Microsoft 365, Educación de Microsoft 365, documentación de Microsof
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,22 +14,19 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d2f9ac660c30b815d4ac381f347e1c1aa354ce0d
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39268644"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916915"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Solicitudes de los temas de datos del RGPD y Ley de Privacidad del Consumidor de California (CCPA, por sus siglas en inglés)
 
 El Reglamento General de Protección de Datos (GDPR, por sus siglas en inglés) establece nuevas reglas para las organizaciones que suministran bienes y servicios a las personas en la Unión Europea (UE), o que recolectan y analizan los datos de los residentes de la UE, independientemente de su ubicación o de la de la empresa en la que trabajen. Puede encontrar más información en el [tema de resumen del RGPD](gdpr.md).
 
-De forma similar, la Ley de Privacidad del Consumidor de California (CCPA, por sus siglas en inglés), ofrece derechos y obligaciones de privacidad a los consumidores de California, incluyendo derechos similares a los Derechos del Sujeto de Datos de GDPR, como el derecho de eliminar, acceder y recibir (portabilidad) su información personal.  La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas".  <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
-
-Este documento le informa sobre la finalización de solicitudes de interesados en virtud del RGPD al usar productos y servicios de Microsoft.
+De forma similar, la Ley de Privacidad de Consumidores de California (CCPA) establece derechos y obligaciones de privacidad a los consumidores de California, incluidos derechos similares a los sancionados por el RGPD, como el derecho a eliminar, obtener acceso y recibir (portabilidad) sus datos personales.  La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas". Este documento le informa sobre la finalización de solicitudes de interesados en virtud del RGPD al usar productos y servicios de Microsoft.
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -50,7 +49,7 @@ Definiciones útiles de los términos del RGPD utilizados en este documento:
 
 El Reglamento General de Protección de Datos (RGPD) otorga derechos a las personas (denominadas "interesados" en el reglamento) para administrar los datos personales recopilados por un empresario u otro tipo de agencia u organización (denominado "responsable del tratamiento de los datos" o simplemente "responsable"). El Reglamento general de protección de datos (RGPD) le da a los sujetos de los datos derechos específicos sobre sus datos personales; entre estos derechos se incluyen la obtención de copias de los datos, la solicitud de cambios en ellos, la restricción de su tratamiento, su eliminación o su recepción en formato electrónico para que pueda ser trasladado a otro responsable.
 
-La Ley de Privacidad del Consumidor de California (CCPA, por sus siglas en inglés), ofrece derechos y obligaciones de privacidad a los consumidores de California, incluyendo derechos similares a los Derechos del Sujeto de Datos de GDPR, como el derecho de eliminar, acceder y recibir (portabilidad) su información personal.  
+La Ley de Privacidad del Consumidor de California (CCPA, por sus siglas en inglés), ofrece derechos y obligaciones de privacidad a los consumidores de California, incluyendo derechos similares a los Derechos del Sujeto de Datos del RGPD, como el derecho de eliminar, acceder y recibir (portabilidad) su información personal.  
 
 En su calidad de responsable de la gestión, usted está obligado a considerar rápidamente cada DSR y a proporcionar una respuesta sustantiva, ya sea adoptando las medidas necesarias o explicando las causas por las que el responsable de la gestión del DSR no puede adaptarse a las necesidades del responsable.. Un controlador debe consultar con sus propios consejeros jurídicos o asesores de cumplimiento sobre la disposición adecuada de un DSR.
 
@@ -79,7 +78,7 @@ Los registros y datos relacionados generados por Microsoft pueden considerarse, 
 
 ### <a name="yammer-and-kaizala"></a>Yammer y Kaizala
 
-La eliminación de una cuenta de usuario no quitará los registros generados por los sistemas de Yammer y Kaizala. Para quitar los datos de estas aplicaciones, vea uno de los siguientes:
+La eliminación de una cuenta de usuario no quitará los registros generados por los sistemas de Yammer y Kaizala. Para quitar los datos de estas aplicaciones, consulte uno de los siguientes recursos:
 
 - [Gestión de solicitudes del interesado de RGPD en Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [Exportar o eliminar datos de la organización de un usuario en Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
@@ -100,6 +99,12 @@ En algunas circunstancias, los usuarios de su organización pueden acceder a los
 
 Para los productos y servicios de terceros a los que se accede a través de la autenticación de cuentas de Microsoft, cualquier solicitud del interesado debe dirigirse al tercero correspondiente.
 
-## <a name="learn-more"></a>Más información
+## <a name="data-subject-request-admin-tools"></a>Herramientas de administración de solicitudes del titular de los datos
+
+- **Centro de cumplimiento y seguridad**: los datos generados por el usuario se exportan a través del [Centro de cumplimiento y seguridad](https://aka.ms/stpsecurityandcompliance) o de funciones integradas en la aplicación.
+- **Centro de administración de Azure AD**: eliminar un sujeto de datos de Azure Active Directory y los servicios relacionados empleando el [Centro de administración de Azure AD](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/Allusers/menuId/).
+- **Exportación de registros de datos de Microsoft**: los administradores de cuentas empresariales pueden exportar los registros generados por el sistema mediante la [Exportación de registros de datos de Microsoft](https://aka.ms/MicrosoftGDPR).
+
+## <a name="learn-more"></a>Obtén más información
 
 - [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: cc633dc261594607a87e7aae7da03e0a427a2492
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0a62cf2ef40bbf9da219309cf75eed27ea8739e4
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594420"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916905"
 ---
 # <a name="data-protection-impact-assessment-for-the-gdpr"></a>Evaluación de impacto de la protección de datos para el RGPD
 
-El Reglamento General de Protección de Datos (RGPD) añade nuevas normas para organizaciones que ofrecen bienes y servicios a los ciudadanos de la Unión Europea (UE) o que recopilan y analizan datos de los residentes de la UE, independientemente de donde estén ubicados usted o su empresa. Puede encontrar más información en el [tema de resumen del RGPD](gdpr.md). <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
-
-Este documento le guiará por la información relativa a la Evaluación de Impacto de Protección de Datos (EIPD) de conformidad con el RGPD al utilizar productos y servicios de Microsoft.
+El Reglamento General de Protección de Datos (RGPD) añade nuevas normas para organizaciones que ofrecen bienes y servicios a los ciudadanos de la Unión Europea (UE) o que recopilan y analizan datos de los residentes de la UE, independientemente de donde estén ubicados usted o su empresa. Puede encontrar más información en el [tema de resumen del RGPD](gdpr.md). Este documento le guiará por la información relativa a la Evaluación de Impacto de Protección de Datos (EIPD) de conformidad con el RGPD al utilizar productos y servicios de Microsoft.
 
 ## <a name="terminology"></a>Terminología
 
@@ -41,32 +37,36 @@ Definiciones útiles de los términos del RGPD utilizados en este documento:
 
 ## <a name="what-is-a-dpia"></a>¿Qué es una EIPD?
 
-El Reglamento General de Protección de Datos (RGPD) exige a los controladores de datos que elaboren una evaluación de impacto de la protección de datos (EIPD) para las operaciones que sea "probable que resulten en un alto riesgo para los derechos y libertades de las personas físicas". No hay nada inherente a los productos y servicios de Microsoft que necesite la creación de una evaluación de impacto de la protección de datos (EIPD). Sin embargo, dado que los productos y servicios de Microsoft son muy personalizables, es posible que se necesite una EIPD en función de las características de su configuración de Microsoft. Microsoft no controla esta información y tiene muy poco o ningún conocimiento sobre ella. Usted, como controlador de los datos, debe determinar los usos adecuados de sus datos.
+El Reglamento General de Protección de Datos (RGPD) exige a los controladores de datos que elaboren una evaluación de impacto de la protección de datos (EIPD) para las operaciones que sea "probable que resulten en un alto riesgo para los derechos y libertades de las personas físicas". No hay nada inherente a los productos y servicios de Microsoft que necesitan la creación de un evaluación de impacto de la protección de datos (EIPA). Sin embargo, dado que los productos y servicios de Microsoft son muy personalizables, es posible que se necesite una EIPD en función de las características de su configuración de Microsoft. Microsoft no controla esta información y tiene muy poco o ningún conocimiento sobre ella. Usted, como controlador de los datos, debe determinar los usos adecuados de sus datos.
 
 ## <a name="dpia-in-action"></a>La EIPD en acción
 
 La guía de EIPD se aplica a los servicios profesionales y de soporte técnico de Office 365, Azure, Dynamics 365 y Microsoft. Esta guía presenta incluye consideraciones sobre:
 
-1. **¿Cuándo se necesita una EIPD?**: Al considerar si se realiza una EIPD, se deben tratar los factores de riesgo que aparecen a continuación. En la primera parte de cada una de las instrucciones se encuentran otros factores potenciales y detalles adicionales.  
+**¿Cuándo se necesita una EIPD?**
 
-    - Una evaluación sistemática y extensa de los datos basada en el procesamiento automatizado.  
-    - Procesamiento a gran escala de categorías especiales de datos (datos que revelan información unívoca para la identificación de una persona física) o de datos personales relativos a delitos y condenas penales.
-    - Supervisión sistemática a gran escala de un área de acceso público.
+Al considerar si se realiza una EIPD, se deben tratar los factores de riesgo que aparecen a continuación. En la primera parte de cada una de las instrucciones se encuentran otros factores potenciales y detalles adicionales.  
 
-    El RGPD aclara que: "El tratamiento de datos personales no debe considerarse a gran escala si lo realiza, respecto de datos personales de pacientes o clientes, un solo médico, otro profesional de la salud o abogado. En estos casos, la evaluación de impacto de la protección de datos no debe ser obligatoria".
+- Una evaluación sistemática y extensa de los datos basada en el procesamiento automatizado.  
+- Procesamiento a gran escala de categorías especiales de datos (datos que revelan información unívoca para la identificación de una persona física) o de datos personales relativos a delitos y condenas penales.
+- Supervisión sistemática a gran escala de un área de acceso público.
 
-2. **¿Qué se necesita para elaborar una EIPD? **: Una EIPD debe proporcionar información específica sobre el procesamiento previsto, que se detalla en la segunda parte de las instrucciones. Esta información incluye:
+El RGPD aclara que: "El tratamiento de datos personales no debe considerarse a gran escala si lo realiza, respecto de datos personales de pacientes o clientes, un solo médico, otro profesional de la salud o abogado. En estos casos, la evaluación de impacto de la protección de datos no debe ser obligatoria".
 
-    - Una evaluación de la necesidad y proporcionalidad del procesamiento de datos en relación con el propósito de EIPD.  
-    - Una evaluación de los riesgos para los derechos y libertades de las personas físicas.
-    - Las medidas previstas para abordar los riesgos, las protecciones, las medidas de seguridad y los mecanismos para asegurar la protección de los datos personales y demostrar el cumplimiento del RGPD.
-    - Finalidades del procesamiento  
-    - Categorías de datos personales procesados  
-    - Retención de datos  
-    - Ubicación y transferencias de datos personales  
-    - Uso compartido de datos con subprocesadores terceros  
-    - Uso compartido de datos con terceros independientes  
-    - Derechos del titular de los datos
+**¿Qué se necesita para elaborar una EIPD?**
+
+Una EIPD debe proporcionar información específica sobre el procesamiento previsto, que se detalla en la segunda parte de las instrucciones. Esta información incluye:
+
+- Una evaluación de la necesidad y proporcionalidad del procesamiento de datos en relación con el propósito de EIPD.  
+- Una evaluación de los riesgos para los derechos y libertades de las personas físicas.
+- Las medidas previstas para abordar los riesgos, las protecciones, las medidas de seguridad y los mecanismos para asegurar la protección de los datos personales y demostrar el cumplimiento del RGPD.
+- Finalidades del procesamiento  
+- Categorías de datos personales procesados  
+- Retención de datos  
+- Ubicación y transferencias de datos personales  
+- Uso compartido de datos con subprocesadores terceros  
+- Uso compartido de datos con terceros independientes  
+- Derechos del titular de los datos
 
 ## <a name="additional-considerations"></a>Consideraciones adicionales
 
