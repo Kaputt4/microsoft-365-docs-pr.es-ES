@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 341d3bf53ac11b2233749210b6a34aa7c4df0208
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: d10b47ccf85493f22d9ef5bdfa0e36e4e954c8a7
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855269"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957175"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -322,19 +322,15 @@ Por ejemplo, si tiene una etiqueta para los materiales de marketing y sabe que u
   
 Si aplica una etiqueta de retención predeterminada a elementos existentes de una biblioteca, carpeta o conjunto de documentos:
   
-- Todos los elementos de la biblioteca, la carpeta, o conjunto de documentos reciben automáticamente la misma etiqueta de retención, **excepto** los elementos a los que se ha aplicado explícitamente una etiqueta de retención. Los elementos etiquetados explícitamente mantienen su etiqueta existente. Para obtener más información, vea la sección siguiente sobre [Los principios de la retención, o lo que tiene prioridad](#the-principles-of-retention-or-what-takes-precedence).
+- Todos los elementos de la biblioteca, la carpeta o el conjunto de documentos reciben automáticamente la misma etiqueta de retención, **excepto** los elementos a los que se les ha aplicado explícitamente una etiqueta de retención (como los registros). Los elementos etiquetados explícitamente mantienen su etiqueta existente. Para obtener más información, vea la sección siguiente sobre [Los principios de la retención, o lo que tiene prioridad](#the-principles-of-retention-or-what-takes-precedence).
     
-- Si cambia o quita la etiqueta de retención predeterminada de una biblioteca, carpeta o conjunto de documentos, también se cambiará o quitará la etiqueta de retención de todos los elementos de la biblioteca, carpeta o conjunto de documentos, **excepto** de los elementos con etiquetas de retención explícitas. 
+- Si cambia o elimina la etiqueta de retención predeterminada de una biblioteca, carpeta o conjunto de documentos, la etiqueta de retención también se cambia o elimina para todos los elementos de la biblioteca, la carpeta o el conjunto de documentos, **excepto** los elementos con etiquetas de retención explícitas (como los registros).
     
 - Si mueve un elemento con una etiqueta de retención predeterminada de una biblioteca, carpeta o conjunto de documentos a otra biblioteca, carpeta o conjunto de documentos, el elemento mantendrá su etiqueta de retención predeterminada existente, incluso si la nueva ubicación tiene otra etiqueta de retención predeterminada.
 
-- Si la etiqueta de retención predeterminada de una biblioteca, carpeta o conjunto de documentos declara al contenido como registro (también denominado *etiqueta de registro*), se aplicarán las características siguientes:
+** Registros: **Si se aplica un sello de registro predeterminado a una biblioteca, carpeta o conjunto de documentos, entonces se aplica un sello de registro a todos los elementos individuales dentro de esas ubicaciones. Cuando mueves un nuevo elemento a un lugar con una etiqueta de registro, ese elemento es etiquetado como un registro. Sin embargo, si cambia la etiqueta de retención predeterminada por una etiqueta que no declare el contenido como registro, esa acción **no** elimina la etiqueta de registro de los elementos individuales; esos elementos conservan su etiqueta de registro. Sólo el administrador de la colección del sitio puede eliminar o cambiar explícitamente la etiqueta de retención de los artículos de registro.
 
-   - Si cambia la etiqueta de retención predeterminada por una etiqueta que no declara al contenido como registro, los elementos mantienen la etiqueta de registro predeterminada existente. La nueva etiqueta de retención predeterminada no se aplicará a dichos elementos. El administrador de la colección de sitios tendría que quitar o cambiar explícitamente la etiqueta de retención.
-
-   - Si quita la etiqueta de retención predeterminada que declara al contenido como registro, la etiqueta de registro no se eliminará de los elementos de la biblioteca, carpeta o conjunto de documentos. El administrador de la colección de sitios tendría que quitar explícitamente la etiqueta de retención.
-
-   Para obtener más información sobre las etiquetas de retención que declaran al contenido como registro, vea [Información general de los registros](records.md).
+Para obtener más información sobre las etiquetas de retención que declaran al contenido como registro, vea [Información general de los registros](records.md).
     
 ## <a name="applying-a-retention-label-to-email-by-using-rules"></a>Aplicar una etiqueta de retención a correo electrónico mediante reglas
 

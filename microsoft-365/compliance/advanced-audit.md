@@ -17,21 +17,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: La auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 49d2e2bbf7d1c19bb4c282920008a0ca9a34188d
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862425"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960246"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
-La [funcionalidad de auditoría unificada](search-the-audit-log-in-security-and-compliance.md) en Microsoft 365 proporciona a las organizaciones la visibilidad de muchos tipos de actividades auditadas a través de los distintos servicios de Microsoft 365. Con el lanzamiento de la auditoría avanzada en Microsoft 365, agregamos nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
+La [funcionalidad de auditoría unificada](search-the-audit-log-in-security-and-compliance.md) en Microsoft 365 proporciona a las organizaciones la visibilidad de muchos tipos de actividades auditadas a través de los distintos servicios de Microsoft 365. Ahora, con el lanzamiento de la auditoría avanzada en Microsoft 365, estamos añadiendo nuevas capacidades de auditoría que pueden ayudar a su organización con las investigaciones forenses y de cumplimiento.
 
 > [!NOTE]
-> La auditoría avanzada está disponible para organizaciones que tengan una suscripción a Office 365 o Microsoft 365 Enterprise E5. Además, se puede asignar a los usuarios una suscripción al complemento de cumplimiento de Microsoft 365 E5 para cuando se requiera una licencia por usuario para las funciones avanzadas de auditoría, como es el caso de la retención a largo plazo de los registros de auditoría y de los eventos de auditoría de alto valor.
+> La auditoría avanzada está disponible para organizaciones con una suscripción a Office 365 o Microsoft 365 Enterprise E5. Además, se puede asignar a los usuarios una suscripción al complemento del Cumplimiento de Microsoft 365 E5 para cuando se requiera una licencia por usuario para las funciones de auditoría avanzada, como es el caso de la conservación a largo plazo de los registros de auditoría y de los eventos de auditoría de alto valor.
 
-Este artículo ofrece una visión general de las características de la auditoría avanzada.
+Este artículo ofrece una visión general de estas capacidades de auditoría avanzada.
 
 ## <a name="long-term-retention-of-audit-logs"></a>Retención a largo plazo de los registros de auditoría
 
@@ -67,7 +67,7 @@ Para obtener más información sobre el registro de auditoría de buzones de cor
 
 Las organizaciones que tienen acceso a registros de auditoría a través de la API de Actividad de administración de Office 365 se restringieron con límites en el nivel de publicador. Esto significa que para un publicador que extraía datos en nombre de múltiples clientes, el límite era compartido por todos esos clientes.
 
-Con el lanzamiento de la auditoría avanzada, pasamos de un límite de nivel de publicador a un límite de nivel de inquilino. El resultado es que cada organización obtendrá su propia cuota de ancho de banda totalmente asignada para acceder a los datos de auditoría. El ancho de banda no es un límite estático y predefinido, sino que se basa en una combinación de factores que incluyen el número de puestos en la organización y que las organizaciones E5 obtendrán más ancho de banda que las organizaciones que no son E5.
+Con el lanzamiento de la auditoría avanzada, estamos pasando de un límite de nivel de editor a un límite de nivel de inquilino. El resultado es que cada organización obtendrá su propia cuota de ancho de banda totalmente asignada para acceder a los datos de auditoría. El ancho de banda no es un límite estático y predefinido, sino que se basa en una combinación de factores que incluyen el número de puestos en la organización y que las organizaciones E5 obtendrán más ancho de banda que las organizaciones que no son E5.
 
 Se asigna inicialmente una línea base de 2000 solicitudes por minuto a todas las organizaciones. Este límite se incrementará de forma dinámica dependiendo del número de puestos de la organización y su suscripción de licencias. Las organizaciones E5 obtendrán aproximadamente el doble de ancho de banda que las organizaciones no son E5. También habrá un límite en el ancho de banda máximo para proteger el estado del servicio.
 
