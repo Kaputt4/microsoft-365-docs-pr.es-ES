@@ -1,5 +1,7 @@
 ---
 title: Configurar las directivas de filtro de correo no deseado
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado.
-ms.openlocfilehash: 107b4cfa79a83ec5703edd3b47d00c59da81f4b6
-ms.sourcegitcommit: 8b619cc0587d180322d0799fdad813cdd929d9dc
+ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "40929796"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957205"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar las directivas de filtro de correo no deseado
 La configuración del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado. La configuración de la directiva de filtro de correo no deseado se aplica solo a los mensajes entrantes. Hay dos tipos:
@@ -138,7 +140,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>Ajustar la directiva de filtro de correo no deseado para evitar falsos positivos y falsos negativos
 
-Puede habilitar las técnicas avanzadas de filtrado de correo no deseado si quiere usar un filtrado de correo no deseado más agresivo. Para obtener información sobre la configuración genérica de correo no deseado que se aplica a toda la organización, consulte [Cómo prevenir que el correo electrónico deseado se marque como correo no deseado en Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) o [Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar los problemas de falso negativo](reduce-spam-email.md). Estos son útiles si tiene control de nivel de administrador y desea evitar falsos positivos o negativos falsos.
+Puede habilitar las técnicas avanzadas de filtrado de correo no deseado si quiere usar un filtrado de correo no deseado más agresivo. Para obtener información sobre la configuración genérica de correo no deseado que se aplica a toda la organización, consulte [Cómo prevenir que el correo electrónico deseado se marque como correo no deseado en Office 365](prevent-email-from-being-marked-as-spam.md) o [Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar los problemas de falso negativo](reduce-spam-email.md). Estos son útiles si tiene control de nivel de administrador y desea evitar falsos positivos o negativos falsos.
 
 ## <a name="allowblock-lists"></a>Lista de bloqueados y lista de permitidos
 
@@ -160,6 +162,9 @@ Ambas listas se configuran como parte de cualquier directiva de correo no desead
    - Agregue remitentes no deseados a la lista de bloqueados del remitente. Haga clic en **Editar**![Icono Agregar](../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de bloqueados**.
 
    - Agregue dominios no deseados a la lista de bloqueados del dominio. Haga clic en **Editar**![Icono agregar](../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de bloqueados**.
+   
+     > [!NOTE]
+     > En la política del filtro de spam, puedes bloquear dominios enteros o remitentes específicos, pero no puedes usar comodines (\*). 
 
 > [!TIP]
 > Puede ocurrir que la organización no esté de acuerdo con la clasificación hecha por el servicio. En este caso, usted puede plantearse mantener la lista de permitidos o bloqueados de forma permanente. Sin embargo, si va a colocar un dominio en la lista de permitidos durante largos períodos de tiempo, debe solicitar al remitente que se asegure de que su dominio está autenticado y, si no lo está, establecer DMARC para rechazarlo.
@@ -171,7 +176,7 @@ Ambas listas se configuran como parte de cualquier directiva de correo no desead
 
 [Cuarentena](quarantine.md)
 
-[Evitar que el correo electrónico deseado se marque como correo no deseado en Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Evitar que el correo electrónico deseado se marque como correo no deseado en Office 365](prevent-email-from-being-marked-as-spam.md)
 
 [Cómo reducir el correo no deseado en Office 365](reduce-spam-email.md)
 
