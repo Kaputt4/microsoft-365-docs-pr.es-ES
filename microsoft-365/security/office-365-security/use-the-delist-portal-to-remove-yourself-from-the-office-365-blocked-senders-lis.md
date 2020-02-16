@@ -16,12 +16,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Office 365? Si cree que no debería recibir este mensaje de error, use el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365.
-ms.openlocfilehash: af528f7fed60130bec8ff53ad182df928d09faee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3e131addb391ecbf90d74ad4fdfa65b802c5e1ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598037"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081969"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
 
@@ -45,7 +45,7 @@ _IP address_ es la dirección IP del equipo en el que se ejecuta el servidor de 
 
 3. Haga clic en **Enviar**.
 
-    El portal enviará un correo electrónico a la dirección que indique. El correo electrónico tendrá un aspecto similar al siguiente ![: captura de pantalla de correo electrónico recibido cuando envía una solicitud a través del portal de eliminación de la lista](../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    El portal enviará un correo electrónico a la dirección que indique. El correo electrónico tendrá un aspecto similar al siguiente ![: captura de pantalla de correo electrónico recibido cuando envía una solicitud a través del portal de eliminación de la lista](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. Haga clic en el vínculo de confirmación que aparece en el correo electrónico que le ha enviado el portal de eliminación de la lista.
 

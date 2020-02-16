@@ -17,12 +17,12 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: Obtenga información acerca de cómo puede pasar de un informe detallado a un conocimiento con las acciones recomendadas en el centro de seguridad &amp; y cumplimiento.
-ms.openlocfilehash: 9385f7bc8bc8c2277df5e3f774015081b39f37a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc18af7d4ca813adb6fbfc01d44138b4a9266c6e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599267"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086226"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Tutorial: desde un informe detallado a un reporte
 
@@ -34,13 +34,13 @@ Este es uno de los diversos tutoriales del centro &amp; de seguridad y cumplimie
 
 Vamos a recorrer el flujo de un informe detallado a un conocimiento y acciones. (Este es un breve ejemplo de [antimalware y contra correo no deseado](anti-spam-and-anti-malware-protection.md) ). 
   
-1. Comencemos con los informes del [centro de cumplimiento de seguridad &amp; ](https://protection.office.com) . (Vaya a **** \> **Panel**de informes). <br/>![En el centro &amp; de seguridad y cumplimiento, vaya \> a informes de panel](../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Comencemos con los informes del [centro de cumplimiento de seguridad &amp; ](https://protection.office.com) . (Vaya a **** \> **Panel**de informes). <br/>![En el centro &amp; de seguridad y cumplimiento, vaya \> a informes de panel](../../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. Elegimos un informe para obtener una vista más detallada. (Elija un informe, como el informe de **Estado de protección contra amenazas** ).<br/>![Informe de estado de protección contra amenazas que muestra información](../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. Elegimos un informe para obtener una vista más detallada. (Elija un informe, como el informe de **Estado de protección contra amenazas** ).<br/>![Informe de estado de protección contra amenazas que muestra información](../../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
 3. Observamos un indicador de información en el gráfico, así como debajo del informe. Al colocar el puntero del mouse sobre el marcador de la información se proporcionan algunos detalles adicionales. (Mantenga el mouse sobre el marcador de información para ver más detalles).
     
-4. Al hacer clic en el marcador de información del gráfico o del widget información sobre malware, debajo del gráfico se abre un panel de detalles. (Debajo del gráfico, seleccione el widget información).<br/>![Detalles de información sobre malware](../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>El panel de detalles proporciona información y recomendaciones que se deben tener en cuenta, incluidas las directivas de revisión, la realización de exploraciones adicionales y el estado de edición. ([Obtenga más información sobre protección contra correo no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md)).
+4. Al hacer clic en el marcador de información del gráfico o del widget información sobre malware, debajo del gráfico se abre un panel de detalles. (Debajo del gráfico, seleccione el widget información).<br/>![Detalles de información sobre malware](../../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>El panel de detalles proporciona información y recomendaciones que se deben tener en cuenta, incluidas las directivas de revisión, la realización de exploraciones adicionales y el estado de edición. ([Obtenga más información sobre protección contra correo no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md)).
     
 De esta forma, podemos pasar de un informe detallado a un conocimiento y realizar acciones recomendadas. 
   

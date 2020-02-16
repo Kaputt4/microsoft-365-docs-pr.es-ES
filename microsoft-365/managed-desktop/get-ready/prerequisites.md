@@ -1,19 +1,19 @@
 ---
-title: Requisitos previos para el escritorio administrado de Microsoft
+title: Requisitos previos del Escritorio administrado de Microsoft
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6595b6496c8fb2e71542b6aae9f35e4f40c08aa4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b729712a188c105fdf8a38e208124c2ef4c27a33
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981721"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085879"
 ---
-# <a name="prerequisites-for-microsoft-managed-desktop"></a>Requisitos previos para el escritorio administrado de Microsoft
+# <a name="prerequisites-for-microsoft-managed-desktop"></a>Requisitos previos del Escritorio administrado de Microsoft
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
 <!--from Prerequisites -->
@@ -48,7 +48,7 @@ Microsoft Managed Desktop requiere determinadas opciones de licencia para poder 
 |Azure Active Directory Premium P1     |-Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Azure Active Directory Premium P1|  Proporciona acceso a los servicios en la nube de Microsoft; permite que AutoPilot registre dispositivos      |
 |Microsoft Intune | -Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Microsoft Intune  |  Necesario para registrar dispositivos, implementar actualizaciones y administrar dispositivos       |
 |Windows 10 Enterprise  |-Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E3<br>-Windows 10 Enterprise E5 | Proporciona características empresariales de Windows 10       |
-|Protección contra amenazas avanzada de Microsoft defender | -Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E5<br>-Protección contra amenazas avanzada de Microsoft defender   |  Proporciona detección, supervisión, alertas y respuesta a amenazas  |
+|Protección contra amenazas avanzada de Microsoft Defender | -Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E5<br>-Protección contra amenazas avanzada de Microsoft defender   |  Proporciona detección, supervisión, alertas y respuesta a amenazas  |
 |Office 365 ProPlus  |-Microsoft 365 E5<br>-Microsoft 365 E3<br>-Office 365 E5<br>-Office 365 E3| Activa la oficina y las herramientas de colaboración y productividad    |
 
 > [!TIP]

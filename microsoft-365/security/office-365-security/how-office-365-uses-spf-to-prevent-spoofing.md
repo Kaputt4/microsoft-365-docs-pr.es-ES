@@ -16,12 +16,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: Este artículo describe cómo Office 365 usa el registro TXT para el marco de directivas de remitente (SPF) en DNS para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado. Esto se aplica al correo saliente enviado desde Office 365. Los mensajes enviados desde Office 365 a un destinatario dentro de Office 365 siempre pasarán SPF.'
-ms.openlocfilehash: f02219b19af592f9ad27ea963cb07a260c09327f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e2863c0b8a66fa511c4ce842dc8026e880594292
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599197"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086017"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Cómo Office 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
 
@@ -78,7 +78,7 @@ Los ejemplos siguientes muestran cómo funciona SPF en diferentes situaciones. E
 
 SPF funciona mejor cuando la ruta de acceso del remitente al receptor es directa, por ejemplo:
 
-![Diagrama que muestra cómo SPF autentica el correo electrónico cuando se envía directamente de servidor a servidor.](../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
+![Diagrama que muestra cómo SPF autentica el correo electrónico cuando se envía directamente de servidor a servidor.](../../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
 
 Cuando woodgrovebank.com recibe el mensaje, si la dirección IP #1 está en el registro TXT SPF para contoso.com, el mensaje supera la comprobación SPF y se autentica.
 
@@ -87,7 +87,7 @@ Cuando woodgrovebank.com recibe el mensaje, si la dirección IP #1 está en el r
 
 Supongamos que un suplantador de identidad busca una forma de suplantar contoso.com:
 
-![Diagrama que muestra cómo SPF autentica el correo electrónico cuando se envía desde un servidor falsificado.](../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
+![Diagrama que muestra cómo SPF autentica el correo electrónico cuando se envía desde un servidor falsificado.](../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
 
 Como la dirección IP #12 no está en el registro TXT SPF de contoso.com, el mensaje no supera la comprobación SPF y el receptor puede marcarlo como correo no deseado.
 
@@ -96,7 +96,7 @@ Como la dirección IP #12 no está en el registro TXT SPF de contoso.com, el men
 
 Un inconveniente de SPF es que no funciona cuando se ha reenviado un correo electrónico. Por ejemplo, supongamos que el usuario de woodgrovebank.com ha configurado una regla de reenvío para enviar todo el correo electrónico a una cuenta de outlook.com:
 
-![Diagrama que muestra que SPF no puede autenticar el correo electrónico cuando se reenvía el mensaje.](../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
+![Diagrama que muestra que SPF no puede autenticar el correo electrónico cuando se reenvía el mensaje.](../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
 
 En un principio, el mensaje supera la comprobación SPF en woodgrovebank.com pero no supera la comprobación SPF en outlook.com, ya que la dirección IP #25 no se encuentra en el registro TXT SPF de contoso.com. Outlook.com puede marcar entonces el mensaje como correo no deseado. Para solucionar este problema, use SPF junto con otros métodos de autenticación de correo electrónico como DKIM y DMARC.
 

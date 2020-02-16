@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1b91186837ad558965d675f82d013a7081c7c7ec
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 1bc5d937616cba60c5af43fe22a7c4dccf89a55e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012509"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085815"
 ---
 # <a name="adjust-conditional-access"></a>Ajustar el acceso condicional
 
@@ -27,11 +27,11 @@ Si tiene algún problema con el acceso condicional, póngase en [contacto con el
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar a trabajar con el escritorio administrado de Microsoft
 
-1. [Agregar y comprobar contactos de administrador en el portal de administración](add-admin-contacts.md)
+1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
 2. Ajustar el acceso condicional (este tema)
 3. [Asignar licencias](assign-licenses.md)
-4. [Implementar el portal de empresa de Intune](company-portal.md)
-5. [Habilitación del itinerancia del estado de la empresa](enterprise-state-roaming.md)
+4. [Desplegar el portal de empresa de Intune](company-portal.md)
+5. [Habilitar Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Instalar dispositivos](set-up-devices.md)
 7. [Prepare a los usuarios para que usen los dispositivos](get-started-devices.md)
 8. [Implementar aplicaciones](deploy-apps.md)

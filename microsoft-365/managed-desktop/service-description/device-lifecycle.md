@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 431b28635f856ebd50e1de4129c00149e1e7c78d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962347"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085859"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Ciclo de vida de productos de escritorio administrado de Microsoft
 
@@ -33,7 +33,7 @@ Este tema detalla el ciclo de vida de los dispositivos a medida que se agregan y
 
 En esta ilustración se muestra la secuencia completa:
 
-![escala de tiempo del ciclo de vida: comenzando con la disponibilidad general del producto, "disponibilidad principal" dura dos años. Durante este tiempo, la ventana de certificación finaliza y en algún punto en el que el dispositivo está incorporado. Al final de la disponibilidad principal, el producto se archiva y comienza el "período de gracia" de tres años. Desde el momento en que el dispositivo está incorporado, tiene un período de 3 años de uso hasta que se quita de la administración. Al final del período de gracia, se quita el producto del catálogo.](images/non-dark1-edits.PNG)
+![escala de tiempo del ciclo de vida: comenzando con la disponibilidad general del producto, "disponibilidad principal" dura dos años. Durante este tiempo, la ventana de certificación finaliza y en algún punto en el que el dispositivo está incorporado. Al final de la disponibilidad principal, el producto se archiva y comienza el "período de gracia" de tres años. Desde el momento en que el dispositivo está incorporado, tiene un período de 3 años de uso hasta que se quita de la administración. Al final del período de gracia, se quita el producto del catálogo.](../../media/non-dark1-edits.PNG)
 
 Los productos permanecen en el catálogo durante un máximo de 24 meses, pero los <em>dispositivos</em> permanecen bajo la administración durante 3 años según sus fechas de inscripción individuales. De hecho, cada producto tiene tres fechas importantes, pero cada dispositivo solo tiene una. Para los productos, las tres fechas se calculan en función de la <em>fecha de aprobación</em>y, por lo tanto, publicamos estas fechas tras la aprobación, de modo que siempre pueda seguir adelante y planear adecuadamente el ciclo de vida completo del producto.
 
@@ -58,7 +58,7 @@ En esta tabla se muestran las fechas de ejemplo para *dispositivos*teóricos:
 
 El ciclo de vida del producto comienza cuando un fabricante publica públicamente el producto:
 
-![escala de tiempo de ciclo de vida que muestra el período de lanzamiento y evaluación](images/non-dark3-edits.PNG)
+![escala de tiempo de ciclo de vida que muestra el período de lanzamiento y evaluación](../../media/non-dark3-edits.PNG)
 
 Durante esta fase, el equipo de ingeniería de escritorio administrado por Microsoft realiza su evaluación y certificación de un producto. El equipo evalúa cosas como la confiabilidad y el rendimiento con Windows, el cumplimiento de una línea de base de hardware, el comportamiento del mercado y la preparación del canal y del inventario, entre otras cosas. Este proceso suele tardar aproximadamente 6 semanas.
   
@@ -71,7 +71,7 @@ Al final de esta fase, Microsoft Managed Desktop agrega el producto a la [lista 
 
 Este período es la base de la disponibilidad del producto:
 
-![escala de tiempo de ciclo de vida que muestra la disponibilidad principal](images/non-dark4-edits.PNG)
+![escala de tiempo de ciclo de vida que muestra la disponibilidad principal](../../media/non-dark4-edits.PNG)
 
 Cualquier dispositivo inscrito durante este período recibe los tres años de soporte técnico completos desde el escritorio administrado de Microsoft (como se muestra en la escala de tiempo azul). Este período dura hasta que se establezca una fecha de finalización de 24 meses a partir de la fecha de disponibilidad general.
 
@@ -84,7 +84,7 @@ El período de gracia del producto es un período de tres años que sigue a la d
 Si ha comprado recientemente una cantidad de dispositivos aprobados antes de inscribirse en el escritorio administrado de Microsoft, todavía puede inscribirse, pero no recibirá un total de tres años de administración. En su lugar, se quedarán sin cumplimiento en la fecha de retiro, independientemente de Cuándo estaban inscritos. En segundo plano, el escritorio administrado de Microsoft tratará estos dispositivos como si estuvieran inscritos en el último día de la disponibilidad principal. En esta ilustración, puede ver este escenario indicando que el dispositivo azul y verde terminan el mismo día, a pesar de la diferencia de un año en la inscripción:
 
 
-![escala de tiempo de ciclo de vida que muestra período de gracia](images/non-dark2-edits.PNG)
+![escala de tiempo de ciclo de vida que muestra período de gracia](../../media/non-dark2-edits.PNG)
 
 El ejemplo de equipo portátil de Fabrikam de la tabla anterior muestra esta situación: 
 
@@ -111,7 +111,7 @@ El equipo de escritorio administrado de Microsoft sabe que los ciclos de adquisi
 Además, también llevaremos a cabo las siguientes acciones automatizadas para garantizar que los nuevos dispositivos se implementen a tiempo:
 
 
-|Escala de tiempo  |Acción  |
+|Escala de tiempo  |Action  |
 |---------|---------|
 |T-90     | Marcaremos este dispositivo como **expirará pronto**, con un marcador amarillo en el sitio web de inventario de dispositivos.  |
 |T-60     | Marcaremos este dispositivo como **expirando** con un marcador rojo en el sitio web de inventario de dispositivos.       |

@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Obtenga información sobre las cuentas de facturación y cómo administrarlas.
-ms.openlocfilehash: d05b0c78da31ca0c829a71708906c34d6b54be97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37b9d8a9de8b187e5685f2b10fbb20d1589904b4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594157"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080407"
 ---
 # <a name="manage-billing-accounts"></a>Administrar cuentas de facturación
 
@@ -142,7 +142,7 @@ Prepare la siguiente documentación:
 |País o configuración regional | Documentación |
 |------------------|----------------|
 | Estados Unidos | Certificado de exención de impuestos de ventas |
-| Canadá | Certificado de exención (o letra de autorización equivalente) |
+| Canada | Certificado de exención (o letra de autorización equivalente) |
 | Irlanda | Certificado de exención de impuestos de 13B/56A|
 | Organizaciones internacionales que mantienen la exención de impuestos | Confirmación de certificación/carta de las autoridades fiscales locales |
 | Puerto Rico | Certificado de compra exentas |

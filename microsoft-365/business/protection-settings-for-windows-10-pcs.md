@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración predeterminada y otras opciones disponibles en Microsoft 365 Business para proteger los dispositivos Windows 10.
-ms.openlocfilehash: b286eb417a8e723b01838c16286ceb612d497c7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1b424fe6a85ad23b2914ea29f47d1dc16b333c94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593524"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064980"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Establecer la configuración de protección de dispositivos para equipos con Windows 10
 
@@ -49,7 +49,7 @@ Vea un vídeo sobre cómo proteger los dispositivos Windows 10 con Microsoft 365
     
     Siempre puede usar el vínculo **Restablecer la configuración predeterminada** para volver a la configuración predeterminada. 
     
-    ![Add policy pane with Windows 10 Device configuration selected](media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
+    ![Add policy pane with Windows 10 Device configuration selected](../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Después, decida **a qué usuarios se aplica esta configuración**. Si no quiere usar el grupo de seguridad predeterminado **Todos los usuarios**, elija **Cambiar**, busque los grupos de seguridad que recibirán esta configuración \> **Seleccionar**.
     
@@ -63,7 +63,7 @@ Para obtener más información, consulte [Cómo se asignan las características 
   
 |||
 |:-----|:-----|
-|Valor  <br/> |Descripción  <br/> |
+|Configuración  <br/> |Descripción  <br/> |
 |Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  <br/> |Es necesario que el antivirus Windows Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
 |Usar reglas que reducen la superficie expuesta a ataques de los dispositivos  <br/> |Al activar la reducción de la superficie expuesta a ataques, se bloquean acciones y aplicaciones que suelen usarse en ataques de malware para infectar dispositivos. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Reducir las superficies expuestas a ataques](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |

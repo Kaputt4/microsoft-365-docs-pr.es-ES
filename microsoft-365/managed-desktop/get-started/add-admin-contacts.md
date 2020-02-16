@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004925"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085916"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y verificar los contactos de administración en el portal de administración 
 
@@ -52,15 +52,15 @@ Los contactos de administración son necesarios cuando [envía una solicitud de 
 
 2.  En **soporte**, seleccione **contactos de administración**. 
 
-    ![Menú soporte, contactos de administración cerca de la parte superior seleccionada](images/admincontacts.png)
+    ![Menú soporte, contactos de administración cerca de la parte superior seleccionada](../../media/admincontacts.png)
 
 3. Seleccione **Agregar**.
 
-    ![Portal de administración, botón Agregar, a la izquierda de exportar y actualizar](images/adminadd.png)
+    ![Portal de administración, botón Agregar, a la izquierda de exportar y actualizar](../../media/adminadd.png)
 
 4.  Seleccione un **área de enfoque** y escriba la información del contacto. 
 
-    ![la lista de áreas de foco, como otras, aplicaciones y seguridad](images/areaoffocus.png)
+    ![la lista de áreas de foco, como otras, aplicaciones y seguridad](../../media/areaoffocus.png)
 
 5. Repita este procedimiento para cada área de enfoque. 
 

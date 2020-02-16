@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Los usuarios de Microsoft Outlook en la web pueden informar de las estafas de suplantación de identidad (spam) o de suplantación de identidad mediante las opciones integradas de informes de correo electrónico. También puede informar a Microsoft de si un correo electrónico se identificó de forma incorrecta como correo no deseado (correo no deseado).
-ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 58973e59644b2e20853cfe053a18586efa5211bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957425"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082419"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Informar de correo electrónico no deseado y estafas de suplantación de identidad (phishing) en Outlook en la Web
 
@@ -33,7 +33,7 @@ Para enviar un mensaje de correo no deseado a Microsoft:
 
 1. Haga clic en el mensaje no deseado y después en **No deseado** en la barra de herramientas. Así mueve el mensaje a la carpeta de correo electrónico no deseado y se agrega el remitente a la lista de remitentes bloqueados.
 
-   ![Indicar que el correo electrónico es correo no deseado de Outlook en la web](../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+   ![Indicar que el correo electrónico es correo no deseado de Outlook en la web](../../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
 
    > [!NOTE]
    > También puede hacer clic con el botón derecho en un mensaje para mostrar un menú y después hacer clic en **Marcar como correo no deseado**.
@@ -42,7 +42,7 @@ Para enviar un mensaje de correo no deseado a Microsoft:
 
 2. Se abrirá un cuadro de diálogo que le pregunta si desea enviar una copia del mensaje de correo electrónico no deseado a Microsoft para su análisis. Haga clic en **Informar** para enviar el mensaje al equipo de análisis de correo no deseado de Microsoft. Opcionalmente, active la casilla **No volver a mostrarme este mensaje** si quiere enviar automáticamente futuros mensajes de correo no deseado a Microsoft sin necesidad de confirmación.
 
-   ![Informar sobre correo no deseado a Microsoft desde Outlook en la web](../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+   ![Informar sobre correo no deseado a Microsoft desde Outlook en la web](../../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
 
    > [!TIP]
    > Aunque active la casilla **No volver a mostrarme este mensaje**, puede cambiar posteriormente sus preferencias sobre notificación de correo electrónico no deseado accediendo a las opciones de presentación de Outlook en la web. (Puede acceder a estas opciones a través del menú de engranaje que aparece junto a su nombre de inicio de sesión).
@@ -53,7 +53,7 @@ Para enviar un mensaje de correo de suplantación de identidad (phishing) a Micr
 
 1. Haga clic en el mensaje de correo de suplantación de identidad, haga clic en la flecha abajo junto a **Correo no deseado** y luego haga clic en **Suplantación de identidad (phishing)** en la barra de herramientas. Office 365 no bloquea al remitente porque los remitentes de este tipo de mensajes suelen suplantar a remitentes legítimos. Si lo prefiere, agregue el remitente a la lista de remitentes bloqueados siguiendo las instrucciones del tema [filtrar correo electrónico no deseado y correo no deseado en Outlook en la web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d).
 
-   ![Indicar que un correo electrónico es un correo de suplantación de identidad (phishing) en Outlook en la web](../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
+   ![Indicar que un correo electrónico es un correo de suplantación de identidad (phishing) en Outlook en la web](../../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
 
    También puede hacer clic con el botón derecho en un mensaje para mostrar un menú y después hacer clic en **Marcar como correo de suplantación de identidad (phishing)**.
 

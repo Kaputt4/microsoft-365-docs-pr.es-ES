@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del entorno de pruebas para habilitar la configuración adicional de seguridad de Microsoft 365 su entorno de prueba empresarial de Microsoft 365.
-ms.openlocfilehash: 7587a840a765a4dfb6f966f927314e63ac28fe85
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 465e9df40e8dfe9883a81d352eabff17151df8f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600987"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067267"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Aumentó la seguridad de Microsoft 365 para su entorno de prueba empresarial de Microsoft 365
 
@@ -27,10 +27,10 @@ ms.locfileid: "41600987"
 
 Con las instrucciones de este artículo, se configuran opciones adicionales de configuración de Microsoft 365 para aumentar la seguridad en el entorno de pruebas de Microsoft 365 Enterprise.
 
-![Guías del laboratorio de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
 
@@ -70,7 +70,7 @@ Office 365 Advanced Threat Protection (ATP) para SharePoint, OneDrive y Microsof
 
 3. En **proteger archivos en SharePoint, OneDrive y Microsoft Teams**. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
 
-4. Haga clic en **Guardar**.
+4. Haga clic en **Guardar **.
 
 
 ### <a name="enable-anti-malware"></a>Habilitar anti-malware

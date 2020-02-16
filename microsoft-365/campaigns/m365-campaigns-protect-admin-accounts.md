@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo configurar y proteger las cuentas de administrador.
-ms.openlocfilehash: 6160f7458dc9a4c343c48f07d87776529c4f1326
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594825"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080597"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteger las cuentas de administrador
 
@@ -48,18 +48,18 @@ Para crear cuentas de administrador adicionales:
 
  1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">centro de administración</a> y, a continuación, elija usuarios **activos** de **usuarios** \> en el panel de navegación izquierdo.
 
-    ![Elija usuarios y, a continuación, usuarios activos en el panel de navegación izquierdo](media/Activeusers.png)
+    ![Elija usuarios y, a continuación, usuarios activos en el panel de navegación izquierdo](../media/Activeusers.png)
 
 2. En la página **usuarios activos** , seleccione **Agregar un usuario** en la parte superior de la página y, en el panel **nuevo usuario** , escriba el nombre y otra información.
 3. Expanda la sección **roles** y elija **administrador global** para conceder a este usuario acceso de administrador global. También puede elegir **Administrador personalizado** y elegir cualquiera de los roles que se muestran.
 
     Escriba un correo electrónico alternativo en el cuadro de texto **dirección de correo alternativa** . Puede usar esta dirección para recuperar la información de contraseña si se bloquea. Para los administradores globales, también se enviará una declaración de facturación a esta dirección.
 
-    ![Elegir el rol de administrador](media/adminroles.png)
+    ![Elegir el rol de administrador](../media/adminroles.png)
     
 4. En la sección **licencias de productos** , mueva el selector de **Microsoft 365 Business** a **desactivado** y la opción **crear usuario sin licencia de producto** en **activado**.
 
-    ![Elegir la licencia del producto](media/productlicense.png)
+    ![Elegir la licencia del producto](../media/productlicense.png)
 
 ## <a name="create-an-emergency-admin-account"></a>Crear una cuenta de administrador de emergencia
 

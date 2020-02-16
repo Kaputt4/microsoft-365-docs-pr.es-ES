@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso implementó un sitio de SharePoint para datos altamente regulados para una colaboración más sencilla entre sus equipos de investigación.'
-ms.openlocfilehash: c0b9e36f90e64e1d1c7f7ea2c4b1b4b65e60b95c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a1ffb336e85eb6eb850b53ed14adf947b56642cc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601137"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068286"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sitio de SharePoint para activos digitales altamente confidenciales de Contoso Corporation
 
@@ -67,7 +67,7 @@ Contoso Admins creó una nueva subetiqueta de confidencialidad de Office 365 den
 
 Esta es la configuración resultante del sitio de grupo de **investigación** para los activos extremadamente confidenciales.
 
-![La configuración resultante del sitio de grupo de investigación para los activos extremadamente confidenciales](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![La configuración resultante del sitio de grupo de investigación para los activos extremadamente confidenciales](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 Los archivos de las carpetas del sitio de **investigación** están protegidos por:
 
@@ -77,7 +77,7 @@ Los archivos de las carpetas del sitio de **investigación** están protegidos p
 
 A continuación, se muestra un ejemplo de un archivo almacenado en el sitio de **investigación** con la subetiqueta de confidencialidad de **Teams de investigación** asignada.
 
-![La configuración resultante del sitio de grupo de investigación para los activos extremadamente confidenciales](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
+![La configuración resultante del sitio de grupo de investigación para los activos extremadamente confidenciales](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
 ## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a>Paso 4: migrar los datos de la investigación de SharePoint local

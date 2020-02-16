@@ -1,5 +1,7 @@
 ---
 title: Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Obtenga información sobre cómo usar Windows AutoPilot para configurar nuevos dispositivos con Windows 10 para su empresa.
-ms.openlocfilehash: 5f40dac57285b83da57d4506bac58e562475522c
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: e5774b1e2079a5249e0f6e9e7142de19268253b5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38323103"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068561"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot
 
@@ -42,7 +44,7 @@ Los dispositivos deben cumplir estos requisitos:
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Usar la guía de configuración para crear perfiles y dispositivos
 
-[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Si aún no ha creado grupos de dispositivos o perfiles, la mejor forma de empezar es usar la guía paso a paso. También puede [Agregar dispositivos](create-and-edit-autopilot-devices.md) y [asignarles perfiles](create-and-edit-autopilot-profiles.md) sin usar la guía. 
   
@@ -50,11 +52,11 @@ Si aún no ha creado grupos de dispositivos o perfiles, la mejor forma de empeza
 
 2. En el panel de navegación izquierdo, elija **dispositivos** \> **AutoPilot**.
 
-    ![En el centro de administración, elija dispositivos y, a continuación, AutoPilot.](media/AutoPilot.png)
+    ![En el centro de administración, elija dispositivos y, a continuación, AutoPilot.](../media/AutoPilot.png)
   
 2. En la página **AutoPilot** , haga clic o pulse **Guía de inicio**.
     
-    ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
 3. En la página **Cargar archivo. csv con la lista de dispositivos** , vaya a la ubicación donde se ha preparado el. Archivo CSV y, a continuación, **abrir** \> **siguiente**. El archivo debe tener tres encabezados:
     

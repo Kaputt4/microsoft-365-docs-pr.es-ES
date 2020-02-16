@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una programación para un informe en el centro &amp; de seguridad y cumplimiento.
-ms.openlocfilehash: 743bb0cd71fb4a5c6ce9b875c797ad3ca54d0485
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599557"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083479"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento
 
@@ -55,7 +55,7 @@ En el centro &amp; de seguridad y cumplimiento, hay disponibles varios [informes
     
 3. En la esquina superior izquierda del informe, elija **+ crear programación**. 
     
-    ![Crear programación](../media/atpfiletypes-createschedule.png)
+    ![Crear programación](../../media/atpfiletypes-createschedule.png)
 
     (Nota: no todos los informes tienen el botón **+ crear programación** ).
   
@@ -63,7 +63,7 @@ En el centro &amp; de seguridad y cumplimiento, hay disponibles varios [informes
     
 4. Mantenga la configuración predeterminada y elija **crear programación**o elija **personalizar programación**.
     
-    ![Puede usar la configuración predeterminada o personalizar una programación de informes](../media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![Puede usar la configuración predeterminada o personalizar una programación de informes](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
     Si opta por personalizar la programación del informe, puede especificar la frecuencia del informe, la dirección de correo electrónico del remitente y la dirección de correo electrónico del destinatario. 
     

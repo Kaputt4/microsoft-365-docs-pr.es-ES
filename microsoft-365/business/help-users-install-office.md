@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Ayudar a los usuarios a instalar las aplicaciones de Office.
-ms.openlocfilehash: 86a32f5f7a9fbd78a56fc934c4668970f8cdc719
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7497be6b0796fdd28156d8c9a6018b05e3dcfe75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593921"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065724"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Ayudar a los usuarios a instalar Office en dispositivos Windows 10
 
-[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Puede instalar Office de forma rápida y sencilla en equipos con Windows 10 desde el centro de administración de negocios de Microsoft 365.
   
@@ -59,7 +59,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 4. En el panel **Descargar a los usuarios de correo electrónico** , seleccione los usuarios que quiere enviar por correo electrónico y, a continuación, **envíe un correo electrónico a los usuarios seleccionados**.
 
     
-      :::image type="content" source="media/sendemailtousers.png" alt-text="Seleccione usuarios para enviar un correo electrónico con el vínculo de descarga de Office.":::
+      :::image type="content" source="../media/sendemailtousers.png" alt-text="Seleccione usuarios para enviar un correo electrónico con el vínculo de descarga de Office.":::
 
 ## <a name="see-also"></a>Consulte también
 

@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Para ver las directivas y las acciones de dispositivos, inicie sesión en Microsoft 365 empresa con credenciales de administrador global.
-ms.openlocfilehash: 9664a72d85cf6eed9993937299d38a84b9a8f0d2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac8ea8a5b484fe6401e72fd0eaab4d79515f3aac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595595"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056610"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Ver y administrar directivas y dispositivos
 
-[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="view-and-edit-device-policies"></a>Ver y editar directivas de dispositivo
 
@@ -40,7 +40,7 @@ ms.locfileid: "41595595"
 
     En esta página, puede crear, editar, cambiar el grupo de destino o eliminar una directiva.
 
-    ![Screenshot of the Policies page](media/devicepolicies.png)
+    ![Screenshot of the Policies page](../media/devicepolicies.png)
   
 ## <a name="view-and-manage-devices"></a>Ver y administrar dispositivos
 
@@ -48,5 +48,5 @@ ms.locfileid: "41595595"
     
     En esta página, puede seleccionar uno o más dispositivos y quitar datos de la compañía. En el caso de los dispositivos con Windows 10 para los que tenga configuradas las opciones de protección, también puede elegir restablecer la configuración de fábrica.
   
-   ![Página administrar dispositivos](media/devicesmanage.png)
+   ![Página administrar dispositivos](../media/devicesmanage.png)
 

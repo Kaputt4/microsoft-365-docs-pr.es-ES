@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 'Obtenga información sobre cómo usar Microsoft 365 Business para quitar datos de la compañía de los dispositivos de usuario o equipos de Windows. '
-ms.openlocfilehash: ff0ad9d7f22f9bb1b21ee15fe383c6994896a9a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 338ce030cb37a6cbd4a1f63c33dc6866bef93c24
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593504"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064920"
 ---
 # <a name="remove-company-data-from-devices"></a>Eliminar datos de la empresa de dispositivos
 
-[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>Quitar datos de la compañía
 
@@ -45,7 +45,7 @@ Puede usar Microsoft 365 Business para eliminar los datos de la empresa que los 
     
 4. En el panel siguiente, seleccione el dispositivo o dispositivos en la lista **dispositivos** . En el panel de dispositivos que se abre, puede elegir restablecer el dispositivo a la configuración de fábrica o quitar datos de la empresa, según el tipo de dispositivo. 
     
-    ![En el panel quitar datos de la compañía, seleccione el dispositivo del que desea quitar los datos.](media/resetorremove.png)
+    ![En el panel quitar datos de la compañía, seleccione el dispositivo del que desea quitar los datos.](../media/resetorremove.png)
   
 5. En el panel de confirmación, elija **confirmar** \> **cierre**.
     

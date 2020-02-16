@@ -1,5 +1,7 @@
 ---
 title: Validar la configuración de protección de aplicaciones en PC con Windows 10
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Obtenga información sobre cómo validar la configuración de Microsoft 365 Business App Protection en dispositivos con Windows 10.
-ms.openlocfilehash: b8793ab7f77bbc7f608f237e2455f6fd12c3bb26
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 1762382aec00a80e006cf38b66c28d02c0c25989
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721808"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056707"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de dispositivos en equipos con Windows 10
 
@@ -37,23 +39,23 @@ Una vez que haya [configurado las directivas de dispositivos](protection-setting
   
 1. Vaya a **configuración** \> **actualización &amp; seguridad** \> **Windows Update** \> **restart** y confirme que todas las opciones están atenuadas. 
     
-    ![Todas las opciones de reinicio están atenuadas.](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![Todas las opciones de reinicio están atenuadas.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
 2. Vaya a **configuración** \> **actualizar &amp; seguridad** \> **Windows Update** \> **Opciones avanzadas** y confirme que toda la configuración está atenuada. 
     
-    ![Las opciones de actualizaciones avanzadas de Windows están atenuadas.](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Las opciones de actualizaciones avanzadas de Windows están atenuadas.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Ir a **configuración** \> **actualización &amp; seguridad** \> **Windows Update** \> **Opciones** \> avanzadas **Elija cómo se entregan las actualizaciones**.
     
     Confirme que puede ver el mensaje (en rojo) que la organización está ocultando o administrando, y que todas las opciones están atenuadas.
     
-    ![Elegir cómo se entregan las actualizaciones la página indica que la configuración está oculta o administrada por la organización.](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+    ![Elegir cómo se entregan las actualizaciones la página indica que la configuración está oculta o administrada por la organización.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
 4. Para abrir el centro de seguridad de Windows Defender, vaya a **configuración** \> ** &amp; actualización seguridad** \> **Windows Defender** \> haga clic en **abrir el centro** \> de seguridad de Windows Defender configuración de protección frente a **virus &amp; **de protección de ** &amp; subprocesos.** \> 
     
 5. Compruebe que todas las opciones están atenuadas. 
     
-    ![La configuración de protección contra virus y amenazas está atenuada.](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+    ![La configuración de protección contra virus y amenazas está atenuada.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
 ## <a name="related-topics"></a>Temas relacionados
 

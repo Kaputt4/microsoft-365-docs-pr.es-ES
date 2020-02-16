@@ -1,5 +1,7 @@
 ---
 title: Validar la configuración de protección de aplicaciones en PC con Windows 10
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Obtenga información sobre cómo validar la configuración de protección de aplicaciones empresariales de Microsoft 365 en dispositivos Windows 10.
-ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 577921f7f33eafbbe652dcf825a145d89f1ff556
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721868"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057354"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de aplicaciones en PC con Windows 10
 
@@ -36,11 +38,11 @@ Después de [configurar directivas de protección de la aplicación](protection-
   
 1. After you sign in with Microsoft 365 Business credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
     
-    ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
+    ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
 2. En la página **administrado por** \<nombre\> de espacio empresarial, puede ver la **información de conexión** que incluye una dirección del servidor de **Administración** como la que se muestra en la siguiente ilustración. 
     
-    ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
+    ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
  **Comprobar que no se pueden pegar datos de la empresa en una aplicación no administrada**
   
@@ -52,7 +54,7 @@ Después de [configurar directivas de protección de la aplicación](protection-
     
     Recibirá un error que indica que la aplicación no puede acceder al contenido.
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     Sin embargo, puede pegar el mismo contenido en Word 2016.
     
@@ -68,11 +70,11 @@ Después de [configurar directivas de protección de la aplicación](protection-
     
 4. En la página **Acceso profesional o educativo**, elija **Cuenta profesional o educativa** y, a continuación, elija **Información**.
     
-    ![Haga clic o pulse en información en el cuadro de diálogo de la cuenta profesional o educativa.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![Haga clic o pulse en información en el cuadro de diálogo de la cuenta profesional o educativa.](../media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
 5. En la página **tener acceso a la escuela o el trabajo** , puede ver la **información de conexión** que incluye una dirección del servidor de **Administración** como la que se muestra en la figura siguiente, e incluye las palabras *WIP* y *MAM* en. 
     
-    ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
+    ![Managed by page shows connection info URL that includes the words mam and wpi.](../media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
  **Comprobar que no se pueden pegar datos de la empresa en una aplicación no administrada**
   
@@ -84,7 +86,7 @@ Después de [configurar directivas de protección de la aplicación](protection-
     
     Recibirá un error que indica que la aplicación no puede obtener acceso al contenido.
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     Sin embargo, puede pegar el mismo contenido en Word 2016.
     

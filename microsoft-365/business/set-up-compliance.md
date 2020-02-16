@@ -1,5 +1,7 @@
 ---
 title: Aumentar la protección contra amenazas para Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y etiquete los datos confidenciales.
-ms.openlocfilehash: 6fae95e8c5e6d133e3163dbdfd3c09cfede11382
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: d569ff8d84faf82881035f0ed54e5d175605776f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715130"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064721"
 ---
 # <a name="set-up-compliance-features"></a>Configurar las características de cumplimiento
 
@@ -68,6 +70,6 @@ Para instalar manualmente el cliente de AIP:
 1. Descargue **AzinfoProtection_UL. exe** desde el [centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
  
 2. Puede comprobar que la instalación se ha realizado viendo un documento de Word y asegurándose de que la opción de **sensibilidad** esté disponible en la pestaña **Inicio** .
-<br/>![Cuadro desplegable de la pestaña protección en un documento de Word.](media/word-sensitivity.png)
+<br/>![Cuadro desplegable de la pestaña protección en un documento de Word.](../media/word-sensitivity.png)
 
 Para obtener más información, vea [Install the Client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).

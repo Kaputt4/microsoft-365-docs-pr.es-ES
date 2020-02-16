@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga información sobre cómo comprar Microsoft 365 Business desde el centro de Partners de Microsoft.
-ms.openlocfilehash: 18af5b0aee378784199e91c8254b50fd1104172b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ba6aa806e3e628e8c3478abb57c4529e4f5692bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593959"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065840"
 ---
 # <a name="get-microsoft-365-business"></a>Obtener Microsoft 365 Empresa
 
@@ -46,13 +46,13 @@ También puede ir a [Microsoft Store](https://www.microsoft.com/en-us/store/loca
     
 2. En el panel del asociado, elija **clientes**y, a continuación, seleccione el cliente o agregue un nuevo cliente antes de obtener Microsoft 365 Business.
     
-    ![En el centro de Partners de Microsoft, agregue un cliente.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![En el centro de Partners de Microsoft, agregue un cliente.](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
 3. En la página de **suscripción** del cliente, seleccione **Agregar suscripción**, elija la opción pequeña empresa en catálogo y, a continuación, elija **Microsoft 365 empresa**.
     
     Seleccione el número de licencias que necesita (hasta 300). Si tiene más de 300 usuarios, consulte [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) en su lugar. 
     
-    ![En la página nueva suscripción, elija pequeña empresa.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![En la página nueva suscripción, elija pequeña empresa.](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
     Complete el resto de los pasos para agregar un nuevo cliente, incluido el nombre de la empresa.
     

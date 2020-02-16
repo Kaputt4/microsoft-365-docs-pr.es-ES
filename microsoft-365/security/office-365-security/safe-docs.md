@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre documentos seguros en Office 365 ATP.
-ms.openlocfilehash: db73fc152a5a580a28bf6d8424ebc2a139cf3303
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: c76ae2c776c31cf798c21d7330bce488ad1e7cc6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960364"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082378"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Documentos seguros en Office 365 protección contra amenazas avanzada
 
@@ -46,7 +46,7 @@ Documentos seguros es una característica de la protección contra amenazas avan
 
 4. Cuando haya terminado, haga clic en **Guardar**.
 
-![Página de datos adjuntos seguros de ATP](../media/safe-docs.png)
+![Página de datos adjuntos seguros de ATP](../../media/safe-docs.png)
 
 ### <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-safe-documents"></a>Usar Exchange Online PowerShell o Exchange Online Protection PowerShell para configurar documentos seguros
 

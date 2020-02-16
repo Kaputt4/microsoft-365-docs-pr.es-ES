@@ -15,18 +15,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Comprenda y configure la administración del acceso con privilegios para Office 365
-ms.openlocfilehash: da047d21094854f15fdb39fc46fd046a1c4605ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f29b1e0934a4b9a6d4e3347584f39423d446ed58
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600967"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067237"
 ---
 # <a name="step-7-configure-privileged-access-management-for-office-365"></a>Paso 7: Configurar la administración de acceso con privilegios para Office 365
 
 *Este paso es opcional y solo es válido para las versiones E5 y de cumplimiento avanzado de Microsoft 365 Enterprise*
 
-![Fase 6: Protección de la información](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: Protección de la información](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 La administración del acceso con privilegios se habilita configurando directivas que especifiquen el acceso puntual para actividades basadas en tareas en el inquilino de Office 365. Permite proteger la organización ante infracciones que puedan usar las cuentas existentes de administrador con privilegios y acceso permanente para acceder a datos confidenciales o acceder a opciones de configuración críticas. Por ejemplo, puede configurar una directiva de administración del acceso con privilegios que requiera una autorización explícita para acceder a la configuración del buzón de correo del inquilino de Office 365 y modificar la misma.
 
@@ -44,7 +44,7 @@ Para obtener más información, vea el tema [Administración del acceso con priv
 
 |||
 |:-------|:-----|
-|![Guías del entorno de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para poner en práctica esta configuración en un entorno de prueba, consulte [Guía de gestión de acceso privilegiado en un entorno de pruebas](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|![Guías del entorno de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para poner en práctica esta configuración en un entorno de prueba, consulte [Guía de gestión de acceso privilegiado en un entorno de pruebas](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
 |||
 
 Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step7) correspondientes a este paso.

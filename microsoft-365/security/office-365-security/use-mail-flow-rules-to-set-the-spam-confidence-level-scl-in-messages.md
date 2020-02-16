@@ -16,12 +16,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo establecer el SCL de los mensajes en Exchange Online Protection.
-ms.openlocfilehash: 4befc3c371118416b6d07f151eb2c346f8520608
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598063"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081988"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
 
@@ -39,14 +39,14 @@ Puede crear una regla de flujo de correo (también denominada regla de transport
 
 1. En el Centro de administración de Exchange (EAC), elija **Flujo de correo** \> **Reglas**.
 
-2. Elija **Nuevo**![Agregar icono](../media/ITPro-EAC-AddIcon.gif) y seleccione **Crea una nueva regla**.
+2. Elija **Nuevo**![Agregar icono](../../media/ITPro-EAC-AddIcon.gif) y seleccione **Crea una nueva regla**.
 
 3. Especifique un nombre para la regla.
 
 4. Elija **Más opciones** y, en **Aplicar esta regla si**, especifique una condición que desencadenará la acción que establecerá para esta regla (que es establecer el valor SCL).
 
    Por ejemplo, puede establecer que **El remitente** \> **es interno/externo** y, a continuación, en el cuadro de diálogo **seleccionar ubicación de remitente**, seleccionar **Dentro de la organización** y elegir **aceptar**.<br/>
-   ![Seleccionar ubicación del remitente](../media/EOP-ETR-SetSCL-1.jpg)
+   ![Seleccionar ubicación del remitente](../../media/EOP-ETR-SetSCL-1.jpg)
 
 5. En **Hacer lo siguiente**, seleccione **Modificar propiedades del mensaje** \> **establecer el nivel de confianza de correo no deseado (SCL)**.
 
@@ -67,6 +67,6 @@ Puede crear una regla de flujo de correo (también denominada regla de transport
    > [!TIP]
    > Para obtener más información sobre las propiedades adicionales que puede seleccionar o especificar para esta regla, vea [usar el EAC para crear reglas de flujo de correo](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules).
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que este procedimiento funciona correctamente, envíe un mensaje de correo electrónico a una persona de su organización y compruebe que la acción que se realiza en el mensaje sea como se esperaba. Por ejemplo, si **establece el nivel de confianza de correo no deseado (SCL)** en **Omitir el filtrado de correo no deseado**, el mensaje debe enviarse a la bandeja de entrada del destinatario especificado. Sin embargo, si **establece el nivel de confianza de correo no deseado (SCL)** en **9** y la acción **Correo no deseado de confianza alta** para las directivas de filtro de contenido aplicables es mover el mensaje a la carpeta de correo no deseado, el mensaje debe enviarse a la carpeta de correo no deseado del destinatario especificado.

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar directivas de acceso condicional para campañas de 365 de Microsoft.
-ms.openlocfilehash: 335fbd7e771b1595e1846529daed76e5ddd3a8f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1ef90bd77da43ded624d85cef9c7a33beec74345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593393"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064626"
 ---
 # <a name="set-up-conditional-access-policies"></a>Configurar directivas de acceso condicional
 
@@ -52,7 +52,7 @@ Para obtener más información acerca de estas directivas, vea [¿Qué son las d
 1. Vaya a [Azure portal](https://portal.azure.com)y navegue a **Azure Active Directory** \> **Conditional Access**.
     
     Las directivas de línea base se enumeran en la página. <br/> <br/>
-    ![Página donde se enumeran las directivas de línea base para el acceso condicional.](media/baslinepolicies.png)
+    ![Página donde se enumeran las directivas de línea base para el acceso condicional.](../media/baslinepolicies.png)
 1. Consulte las siguientes instrucciones específicas para cada directiva:
 
   - [Requerir MFA para los administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

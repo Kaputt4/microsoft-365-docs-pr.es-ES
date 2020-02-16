@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtienen los mensajes de suplantación de identidad (phishing) y cómo hacerlo para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: b7ce09ff85c0341ea8cb901942e87dbe10ba0435
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 94c28bf63ad7ba87d06298576cf7989b6848f8e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598147"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082029"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ajuste de la protección contra la suplantación de identidad en Office 365
 

@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Le guía por la configuración recomendada para la configuración de todos los inquilinos que afectan a la seguridad de su entorno de Office 365. Las necesidades de seguridad pueden requerir más o menos seguridad. Use estas recomendaciones como punto de partida.
-ms.openlocfilehash: 3bf11ae0520ac6f715e3f84669c6d6f615deaf14
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: 38c07739ebfd6e10fe08dbc5496e4ae7634ed510
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932300"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082057"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar su inquilino de Office 365 para aumentar la seguridad
 
@@ -59,7 +59,7 @@ Visite estos informes y paneles para obtener más información sobre el estado d
 |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)|También se encuentra en la sección **Administración de amenazas** del centro de seguridad. Si está investigando o experimentando un ataque contra su espacio empresarial de Office 365, use el explorador (o detecciones en tiempo real) para analizar las amenazas. Explorer (y el informe de detecciones en tiempo real) le muestra el volumen de ataques a lo largo del tiempo, y puede analizar estos datos por familias de amenazas, la infraestructura de los intrusos y mucho más. También puede marcar cualquier correo electrónico sospechoso para la lista de incidentes.|
 |Informes: panel|En la sección **informes** del centro de seguridad, vea informes de auditoría para sus organizaciones de SharePoint Online y Exchange Online. También puede obtener acceso a los informes de inicio de sesión de usuario de Azure Active Directory (Azure AD), informes de actividad de usuario y el registro de auditoría de Azure AD desde la página **ver informes** .|
 
-![Panel del centro de seguridad](../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Panel del centro de seguridad](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Configurar opciones adicionales para todos los inquilinos de Exchange Online
 
@@ -122,7 +122,7 @@ Más información:
 
 - [¿Qué es Cloud App Security?](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
-![Panel de Cloud App Security](../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Panel de Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

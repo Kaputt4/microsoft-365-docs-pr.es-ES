@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Protección de Exchange Online (EOP) es un servicio de filtro de correo electrónico basado en nube que ayuda a proteger su organización contra correo no deseado y malware, e incluye características para proteger a su organización contra incumplimiento de directivas de mensajería.
-ms.openlocfilehash: 6728139c5a2bd925e6090a69aa745206d2988233
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a87b9b40d1a95f7c4da194ffd2138aa9d1726032
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599337"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083128"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -38,7 +38,7 @@ En la siguiente lista se describe cómo puede usar EOP para la protección de me
 
 Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el correo entrante:
 
-![Diagrama de proceso de correo electrónico.](../media/GitHubBugs/emailprocessingineop1.png)
+![Diagrama de proceso de correo electrónico.](../../media/GitHubBugs/emailprocessingineop1.png)
 
 Un mensaje entrante pasa inicialmente por el filtrado de conexiones, que comprueba la reputación del remitente e inspecciona el mensaje en busca de malware. En este punto, la mayoría de los correos no deseados se interrumpen y se eliminan mediante EOP. Los mensajes continúan a través del filtrado de directivas, donde los mensajes se evalúan con reglas de flujo de correo personalizado (también conocidas como reglas de transporte) que se crean o aplican a partir de una plantilla. Por ejemplo, puede tener una regla que envíe una notificación a un administrador cuando llegue el correo de un remitente específico. (Las comprobaciones de prevención de pérdida de datos también se producen en este momento, si tiene esa característica; para obtener información sobre la disponibilidad de características, consulte la [Descripción del servicio de protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)). A continuación, los mensajes pasan por el filtrado de contenido, donde se comprueba la terminología o las propiedades comunes del correo no deseado en el contenido. Un mensaje determinado como correo no deseado por el filtro de contenido se puede enviar a la carpeta de correo no deseado o a la cuarentena de un usuario, entre otras opciones (incluida la bandeja de entrada o la carpeta personalizada), en función de la configuración. Una vez que un mensaje pasa todas estas capas de protección correctamente, se entrega al destinatario.
 

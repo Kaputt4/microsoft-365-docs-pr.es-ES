@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre el panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 0e87fde41c78f46aaac55602175a3716ba54fe7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 36183f6b5f664a8d5a971f9e141b0607fa66a0bb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599047"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082939"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -72,4 +72,4 @@ Para obtener información sobre cómo asignar roles de seguridad & el centro de 
 
 2. Expanda **flujo de correo** y seleccione **Panel**.
 
-   ![Panel flujo de correo en el centro de seguridad & cumplimiento de Office 365](../media/mail-flow-dashboard-v2.png)
+   ![Panel flujo de correo en el centro de seguridad & cumplimiento de Office 365](../../media/mail-flow-dashboard-v2.png)

@@ -17,12 +17,12 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección contra amenazas avanzada de Office 365. Las direcciones URL bloqueadas se aplicarán a los mensajes de correo electrónico y documentos de Office de acuerdo con las directivas de vínculos seguros de ATP.
-ms.openlocfilehash: bb5eb8572aee11be1c4264863b572f014b281985
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598407"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088099"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598407"
 
 Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede tener una lista personalizada de direcciones de sitios web (URL) que están bloqueadas. Cuando se bloquea una dirección URL, los usuarios que hacen clic en los vínculos a la dirección URL bloqueada se toman en una [Página de advertencia](atp-safe-links-warning-pages.md) similar a la siguiente: 
   
-![Este sitio está bloqueado](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![Este sitio está bloqueado](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
 La lista de URL bloqueadas se define en el equipo de seguridad de Office 365 de su organización y esa lista se aplica a todas las personas de la organización que están cubiertas por las directivas de vínculos seguros de ATP de Office 365. 
   
@@ -58,7 +58,7 @@ Para editar (o definir) las directivas de ATP, debe tener asignado uno de los ro
     
 2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **vínculos seguros**de **Directiva** \> .
     
-3. En la sección **directivas que se aplican a toda la organización** , seleccione predeterminado y, a continuación, elija **Editar** (el botón Editar **es**similar a un lápiz).<br/>![Haga clic en Editar para editar la directiva predeterminada para protección de vínculos seguros](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>Esto le permite ver la lista de direcciones URL bloqueadas. En primer lugar, es posible que no tenga ninguna dirección URL mencionada aquí.<br/>![Lista de direcciones URL bloqueadas en la Directiva de vínculos seguros predeterminada](../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. En la sección **directivas que se aplican a toda la organización** , seleccione predeterminado y, a continuación, elija **Editar** (el botón Editar **es**similar a un lápiz).<br/>![Haga clic en Editar para editar la directiva predeterminada para protección de vínculos seguros](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>Esto le permite ver la lista de direcciones URL bloqueadas. En primer lugar, es posible que no tenga ninguna dirección URL mencionada aquí.<br/>![Lista de direcciones URL bloqueadas en la Directiva de vínculos seguros predeterminada](../../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. Seleccione el cuadro **Escriba una dirección URL válida** , escriba una dirección URL y, a continuación, elija**+** el signo más (). 
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Proporciona una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: b66289ab66770d75743ff5cee88eb2a47efe11b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596857"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066905"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general sobre Microsoft 365 para empresas
 
@@ -59,7 +59,7 @@ Para obtener más información, consulte [features and Capabilities for each pla
 
 ## <a name="get-the-big-picture"></a>Obtener una visión general
 
-El [póster de Microsoft 365 para empresas](media/m365-poster/Microsoft365Enterprise.pdf) es una ubicación central que puede ver:
+El [póster de Microsoft 365 para empresas](../media/m365-poster/Microsoft365Enterprise.pdf) es una ubicación central que puede ver:
 
 - Las ventajas de Microsoft 365 para empresas y cómo se asignan las aplicaciones y los servicios a sus pilares de valor
 - Microsoft 365 para planes empresariales y qué componentes contienen 
@@ -67,16 +67,16 @@ El [póster de Microsoft 365 para empresas](media/m365-poster/Microsoft365Enterp
 - La [biblioteca de productividad de 365 de Microsoft](https://www.microsoft.com/microsoft-365/success/) y los escenarios representativos para algunos departamentos comunes de la organización
 - La guía básica de adopción que destaca la guía de [implementación](deploy-microsoft-365-enterprise.md) de Microsoft 365 para empresas
 
-[![Imagen del póster para Microsoft 365 Enterprise](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Imagen del póster para Microsoft 365 Enterprise](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 Para descargar una copia del póster, haga clic [aquí](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 
-Para obtener una imagen mejor sobre cómo mover toda la organización a los productos y servicios de Microsoft 365 para empresas, descargue el [póster de transición](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Para obtener una imagen mejor sobre cómo mover toda la organización a los productos y servicios de Microsoft 365 para empresas, descargue el [póster de transición](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Imagen para la transición a un póster de Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) 
+[![Imagen para la transición a un póster de Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) 
 
 Este póster de dos páginas es una forma rápida de realizar un inventario de su infraestructura existente y conseguir las instrucciones para moverse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, tales como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
 
@@ -94,9 +94,9 @@ Los siguientes productos alcanzan el final del soporte técnico el **13 de octub
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-Para obtener un resumen visual de las opciones de actualización, migración y desplazamiento a la nube de estos productos, vea el [póster de fin de soporte técnico.](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+Para obtener un resumen visual de las opciones de actualización, migración y desplazamiento a la nube de estos productos, vea el [póster de fin de soporte técnico.](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-[![Imagen para el final del soporte técnico para los servidores y clientes de Office 2010 y póster de Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Imagen para el final del soporte técnico para los servidores y clientes de Office 2010 y póster de Windows 7](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Windows 7 y Office 2010 alcancen la finalización del soporte técnico, con las rutas de soporte y la compatibilidad preferida en Microsoft 365 para Enterprise resaltado.
 
@@ -142,11 +142,11 @@ Para obtener más información sobre la implementación, consulte How:
 
 |||
 |:-------|:-----|
-![Aprendizaje de Microsoft 365 fundamentales](./media/m365-poster/m365-fundamentals.svg)| Obtenga formación y trabaje para obtener una certificación de 365 de Microsoft. <BR> Comience con los [conceptos básicos de Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![Aprendizaje de Microsoft 365 fundamentales](../media/m365-poster/m365-fundamentals.svg)| Obtenga formación y trabaje para obtener una certificación de 365 de Microsoft. <BR> Comience con los [conceptos básicos de Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 |||
 
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Si va a realizar la implementación usted mismo, inicie el [viaje de la implementación de Microsoft 365 para empresas](deploy-microsoft-365-enterprise.md).
 

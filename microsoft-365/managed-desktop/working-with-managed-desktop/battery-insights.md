@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269391"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085739"
 ---
 # <a name="battery-insights"></a>Información sobre las baterías
 Esta vista proporciona métricas de uso de energía, batería y aplicaciones para los dispositivos de escritorio administrados por Microsoft. Por estos motivos, una aplicación se considera "en uso" si está en ejecución y en enfoque.
 
 Para ver los datos de uso, seleccione la pestaña **batería** .
 
-![Panel batería: duración prevista de la batería por modelo de dispositivo en la parte superior izquierda y los principales consumidores de energía (por aplicación) en la parte superior derecha y en la tabla información en la parte inferior. Vínculo de documentación en la esquina superior derecha.](images/insights_battery.png)
+![Panel batería: duración prevista de la batería por modelo de dispositivo en la parte superior izquierda y los principales consumidores de energía (por aplicación) en la parte superior derecha y en la tabla información en la parte inferior. Vínculo de documentación en la esquina superior derecha.](../../media/insights_battery.png)
 
 ## <a name="predicted-battery-life"></a>Duración prevista de la batería
 

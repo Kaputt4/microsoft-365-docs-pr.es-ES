@@ -17,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Vea cómo funciona el nuevo conocimiento de inteligencia de TI de suplantación.
-ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 940203bc86339e4cc749565be355d717be9e914d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598017"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084369"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Tutorial: información sobre inteligencia de inteligencia de suplantación
 
@@ -50,7 +50,7 @@ Este es uno de los diversos tutoriales del centro &amp; de seguridad y cumplimie
 
 El conocimiento del panel muestra la información de este tipo.
   
-![Captura de pantalla de la información sobre inteligencia de suplantación](../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+![Captura de pantalla de la información sobre inteligencia de suplantación](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
   
 Esta visión tiene dos modos:
   
@@ -82,7 +82,7 @@ Aparece la página **Suplantar visión de inteligencia empresarial** , que muest
     
 2. Seleccione un elemento de la tabla para abrir un panel de detalles que contenga información enriquecida sobre el par de dominios, incluido por qué lo hemos capturado, lo que debe hacer, un resumen de dominio, datos WhoIs sobre el remitente y mensajes de correo electrónico similares que hemos visto en su espacio empresarial del mismo remitente. Desde aquí, también puede Agregar o quitar el par de dominios de la lista de remitentes seguros de **AllowedToSpoof** . 
   
-![Captura de pantalla de un dominio en el panel de detalles de inteligencia empresarial de suplantación](../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+![Captura de pantalla de un dominio en el panel de detalles de inteligencia empresarial de suplantación](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
   
 ## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Agregar o quitar un dominio de la lista de remitentes seguros de AllowedToSpoof
 

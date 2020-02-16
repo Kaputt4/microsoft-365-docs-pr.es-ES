@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso usó un equipo para datos altamente regulados para un proyecto de secreto principal para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597077"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068036"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo para un proyecto confidencial de la empresa Contoso
 
@@ -68,7 +68,7 @@ Los administradores de Contoso crearon una nueva etiqueta de confidencialidad de
 
 Esta es la configuración resultante del equipo del proyecto de 2X.
 
-![La configuración resultante del equipo del proyecto de 2X](./media/contoso-team-for-highly-confidential-assets/final-config.png)
+![La configuración resultante del equipo del proyecto de 2X](../media/contoso-team-for-highly-confidential-assets/final-config.png)
  
 Los archivos de la sección documentos del proyecto subyacente 2X del sitio de SharePoint estaban protegidos por:
 
@@ -79,7 +79,7 @@ Los archivos de la sección documentos del proyecto subyacente 2X del sitio de S
 
 A continuación, se muestra un ejemplo de un archivo almacenado en el sitio del espacio de nombre 2X subyacente con la etiqueta de retención altamente regulada y la etiqueta de sensibilidad espacio en proyecto 2X asignada.
 
-![Un ejemplo de un archivo almacenado en el sitio del proyecto 2X subyacente](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
+![Un ejemplo de un archivo almacenado en el sitio del proyecto 2X subyacente](../media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
  
 ## <a name="step-4-trained-project-2x-team-members"></a>Paso 4: miembros del equipo con experiencia en el 2X del proyecto
 

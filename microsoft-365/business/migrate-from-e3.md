@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Business desde Office 365 E3.
-ms.openlocfilehash: 210f3ebf76da49349dfb6d61d0b8ce88d15d3734
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593709"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065584"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migración de Office 365 E3 a Microsoft 365 Business 
 
@@ -44,25 +44,25 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business y Office 
 | Aplicaciones de Office<sup>1</sup>   | Office 365 Empresa   | Office 365 ProPlus | 
 | **Aplicaciones de productividad en la nube**       | | | 
 | Exchange Online y Outlook   | límite de almacenamiento de 50 GB por buzón y archivado ilimitado de Exchange Online   | límite de almacenamiento de 100 GB por buzón y archivado ilimitado de Exchange Online | 
-| Teams | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | ![Incluido con Office 365 E3](./media/check-mark.png) | 
+| Teams | ![Incluido en Microsoft 365 Business](../media/check-mark.png)  | ![Incluido con Office 365 E3](../media/check-mark.png) | 
 | OneDrive para la Empresa | límite de almacenamiento de 1 TB por usuario   | Ilimitado | 
-| Yammer, SharePoint Online, Planner, stream    | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | ![Incluido con Office 365 E3](./media/check-mark.png) | 
-| StaffHub  | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | ![Incluido con Office 365 E3](./media/check-mark.png) | 
-| Administrador de clientes de Outlook, MileIQ  | ![Incluido en Microsoft 365 Business](./media/check-mark.png)   | | 
+| Yammer, SharePoint Online, Planner, stream    | ![Incluido en Microsoft 365 Business](../media/check-mark.png)  | ![Incluido con Office 365 E3](../media/check-mark.png) | 
+| StaffHub  | ![Incluido en Microsoft 365 Business](../media/check-mark.png)  | ![Incluido con Office 365 E3](../media/check-mark.png) | 
+| Administrador de clientes de Outlook, MileIQ  | ![Incluido en Microsoft 365 Business](../media/check-mark.png)  | | 
 | **Protección contra amenazas**     | | | 
-| Plan 1 de protección avanzada contra amenazas (ATP) de Office 365 | ![Incluido en Microsoft 365 Business](./media/check-mark.png)  | No se incluye, pero puede agregarse en | 
+| Plan 1 de protección avanzada contra amenazas (ATP) de Office 365 | ![Incluido en Microsoft 365 Business](../media/check-mark.png) | No se incluye, pero puede agregarse en | 
 | **Administración de identidades**       | | | 
-| Restablecimiento de contraseña de autoservicio para cuentas híbridas de Azure Active Directory (Azure AD), Azure multi-factor Authentication (MFA), acceso condicional, escritura diferida de contraseñas para identidades locales|    ![Incluido en Microsoft 365 Business](./media/check-mark.png) |  | 
+| Restablecimiento de contraseña de autoservicio para cuentas híbridas de Azure Active Directory (Azure AD), Azure multi-factor Authentication (MFA), acceso condicional, escritura diferida de contraseñas para identidades locales|    ![Incluido en Microsoft 365 Business](../media/check-mark.png)    |  | 
 | **Administración de dispositivos y aplicaciones**     | | |
-| Microsoft Intune, Windows AutoPilot|  ![Incluido en Microsoft 365 Business](./media/check-mark.png) |  |
-| Activación en equipos compartidos|   ![Incluido en Microsoft 365 Business](./media/check-mark.png) | ![Incluido con Office 365 E3](./media/check-mark.png)| 
-| Derechos de actualización a Windows 10 Pro desde licencias Win 7/8.1 Pro|     ![Incluido en Microsoft 365 Business](./media/check-mark.png) || 
+| Microsoft Intune, Windows AutoPilot|  ![Incluido en Microsoft 365 Business](../media/check-mark.png)    |  |
+| Activación en equipos compartidos|   ![Incluido en Microsoft 365 Business](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png)| 
+| Derechos de actualización a Windows 10 Pro desde licencias Win 7/8.1 Pro|     ![Incluido en Microsoft 365 Business](../media/check-mark.png)    || 
 | **Protección de la información**        | | |
-|Prevención de pérdida de datos de Office 365|   ![Incluido en Microsoft 365 Business](./media/check-mark.png)|![Incluido con Office 365 E3](./media/check-mark.png)|
-|Plan 1 de Azure Information Protection, cumplimiento de BitLocker|![Incluido en Microsoft 365 Business](./media/check-mark.png)||
-|Plan 1 de Azure Information Protection, etiquetas de confidencialidad|![Incluido en Microsoft 365 Business](./media/check-mark.png)||
+|Prevención de pérdida de datos de Office 365|   ![Incluido en Microsoft 365 Business](../media/check-mark.png)|![Incluido con Office 365 E3](../media/check-mark.png)|
+|Plan 1 de Azure Information Protection, cumplimiento de BitLocker|![Incluido en Microsoft 365 Business](../media/check-mark.png)||
+|Plan 1 de Azure Information Protection, etiquetas de confidencialidad|![Incluido en Microsoft 365 Business](../media/check-mark.png)||
 |**Licencia de acceso de cliente (derechos de CAL)**|||
-|Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Incluido con Office 365 E3](./media/check-mark.png)|
+|Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Incluido con Office 365 E3](../media/check-mark.png)|
 
 <sup>1</sup> la versión de Microsoft 365 Business de las aplicaciones de Office no incluye la activación por volumen a través de la Directiva de grupo, la telemetría de aplicaciones, los controles de actualización, la comparación de hojas de cálculo y las consultas o la inteligencia empresarial.
 
@@ -78,7 +78,7 @@ No es necesario realizar ningún cambio en la suscripción o los datos actuales 
 - Configuración de autenticación y cuentas de usuario y de grupo, como la autenticación multifactor o las directivas de acceso condicional.
 - Las configuraciones del servicio de productividad y sus datos, como Teams, buzones de correo de Exchange Online, sitios de SharePoint Online, carpetas de OneDrive para la empresa y blocs de notas de OneNote.
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Si sus ventanas ya no están en la actualización del creador de Windows Pro, [actualícelas a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
 

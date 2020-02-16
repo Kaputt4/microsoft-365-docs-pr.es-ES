@@ -15,12 +15,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: Puede crear una regla de flujo de correo de Exchange para evitar que los usuarios envíen mensajes de correo electrónico a Microsoft para su análisis y usarlos en sus propios procesos de seguridad.
-ms.openlocfilehash: 530cc12fd83650f319da3f65e961c925a1de7409
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae8655416840dc326344e2c2aea7c67486389492
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598067"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084379"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
 
@@ -38,7 +38,7 @@ Para obtener información acerca de los métodos abreviados de teclado que se pu
 
 1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-2. Click ![Agregar icono](../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
+2. Click ![Agregar icono](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
 
 3. Give the rule a name and then click **More options**.
 
@@ -46,11 +46,11 @@ Para obtener información acerca de los métodos abreviados de teclado que se pu
 
 5. En el cuadro **especificar palabras o frases** , siga estos pasos:
 
-   - Escriba `abuse@messaging.microsoft.com`, haga **** ![clic en agregar](../media/ITPro-EAC-AddIcon.gif)icono de `junk@office365.microsoft.com` agregar, escriba y, a](../media/ITPro-EAC-AddIcon.gif)continuación, haga clic en **Agregar** ![icono Agregar. These email addresses are used to submit false negative messages to Microsoft.
+   - Escriba `abuse@messaging.microsoft.com`, haga **** ![clic en agregar](../../media/ITPro-EAC-AddIcon.gif)icono de `junk@office365.microsoft.com` agregar, escriba y, a](../../media/ITPro-EAC-AddIcon.gif)continuación, haga clic en **Agregar** ![icono Agregar. These email addresses are used to submit false negative messages to Microsoft.
 
-   - Escriba `phish@office365.microsoft.com` y, a continuación, haga](../media/ITPro-EAC-AddIcon.gif)clic en **Agregar** ![icono de agregar. Esta dirección de correo electrónico se usa para enviar mensajes de suplantación de identidad perdidos a Microsoft.
+   - Escriba `phish@office365.microsoft.com` y, a continuación, haga](../../media/ITPro-EAC-AddIcon.gif)clic en **Agregar** ![icono de agregar. Esta dirección de correo electrónico se usa para enviar mensajes de suplantación de identidad perdidos a Microsoft.
 
-   - Escriba `false_positive@messaging.microsoft.com`, haga **** ![clic en agregar](../media/ITPro-EAC-AddIcon.gif)icono de `not_junk@office365.microsoft.com`agregar, escriba y, a continuación](../media/ITPro-EAC-AddIcon.gif), haga clic en **Agregar** ![icono de agregar. These email addresses are used to submit false positive messages to Microsoft.
+   - Escriba `false_positive@messaging.microsoft.com`, haga **** ![clic en agregar](../../media/ITPro-EAC-AddIcon.gif)icono de `not_junk@office365.microsoft.com`agregar, escriba y, a continuación](../../media/ITPro-EAC-AddIcon.gif), haga clic en **Agregar** ![icono de agregar. These email addresses are used to submit false positive messages to Microsoft.
 
    - Haga clic en **Aceptar**.
 
