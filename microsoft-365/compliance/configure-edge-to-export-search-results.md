@@ -13,51 +13,51 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Tiene que habilitar la compatibilidad de ClickOnce para usar Microsoft Edge para exportar los resultados de búsqueda de la búsqueda de contenido y la exhibición de documentos electrónicos en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 896d39d81fa56b3a118b2bee450476e422ac3921
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db70b4cdbc57f519db3b6b962eb8aa43585ba335
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595737"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078605"
 ---
-# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a><span data-ttu-id="a2ee8-103">Usar la herramienta de exportación de exhibición de documentos electrónicos de Office 365 en Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="a2ee8-103">Use the Office 365 eDiscovery Export Tool in Microsoft Edge</span></span>
+# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a><span data-ttu-id="b1b65-103">Usar la herramienta de exportación de exhibición de documentos electrónicos de Office 365 en Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="b1b65-103">Use the Office 365 eDiscovery Export Tool in Microsoft Edge</span></span>
 
-<span data-ttu-id="a2ee8-104">Como resultado de los últimos cambios realizados en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-104">As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default.</span></span> <span data-ttu-id="a2ee8-105">Para seguir usando la herramienta de exportación de exhibición de documentos electrónicos 365 de Microsoft Office para descargar los resultados de búsqueda de contenido o de exhibición de documentos electrónicos, debe usar [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o habilitar la compatibilidad con ClickOnce en Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-105">To continue using the Microsoft Office 365 eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in Microsoft Edge.</span></span>
+<span data-ttu-id="b1b65-104">Como resultado de los últimos cambios realizados en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada.</span><span class="sxs-lookup"><span data-stu-id="b1b65-104">As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default.</span></span> <span data-ttu-id="b1b65-105">Para seguir usando la herramienta de exportación de exhibición de documentos electrónicos 365 de Microsoft Office para descargar los resultados de búsqueda de contenido o de exhibición de documentos electrónicos, debe usar [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o habilitar la compatibilidad con ClickOnce en Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="b1b65-105">To continue using the Microsoft Office 365 eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in Microsoft Edge.</span></span>
 
-## <a name="how-to-enable-clickonce-support-in-microsoft-edge"></a><span data-ttu-id="a2ee8-106">Cómo habilitar la compatibilidad con ClickOnce en Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="a2ee8-106">How to enable ClickOnce support in Microsoft Edge</span></span>
+## <a name="how-to-enable-clickonce-support-in-microsoft-edge"></a><span data-ttu-id="b1b65-106">Cómo habilitar la compatibilidad con ClickOnce en Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="b1b65-106">How to enable ClickOnce support in Microsoft Edge</span></span>
 
-1. <span data-ttu-id="a2ee8-107">En Microsoft Edge, navegue a **edge://flags/#edge clic una vez**.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-107">In Microsoft Edge, navigate to **edge://flags/#edge-click-once**.</span></span>
+1. <span data-ttu-id="b1b65-107">En Microsoft Edge, navegue a **edge://flags/#edge clic una vez**.</span><span class="sxs-lookup"><span data-stu-id="b1b65-107">In Microsoft Edge, navigate to **edge://flags/#edge-click-once**.</span></span>
 
-2. <span data-ttu-id="a2ee8-108">Si el valor existente se establece en **predeterminado** o está **deshabilitado** en la lista desplegable, cámbielo a **habilitado**.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-108">If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.</span></span>
+2. <span data-ttu-id="b1b65-108">Si el valor existente se establece en **predeterminado** o está **deshabilitado** en la lista desplegable, cámbielo a **habilitado**.</span><span class="sxs-lookup"><span data-stu-id="b1b65-108">If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.</span></span>
     
-   ![](media/ClickOnceimage1.png)
+   ![](../media/ClickOnceimage1.png)
 
-3. <span data-ttu-id="a2ee8-109">Desplácese hacia abajo hasta la parte inferior de la ventana del explorador y haga clic en **reiniciar** para reiniciar el perímetro.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-109">Scroll down to the bottom of the browser window and click **Restart** to restart Edge.</span></span>
+3. <span data-ttu-id="b1b65-109">Desplácese hacia abajo hasta la parte inferior de la ventana del explorador y haga clic en **reiniciar** para reiniciar el perímetro.</span><span class="sxs-lookup"><span data-stu-id="b1b65-109">Scroll down to the bottom of the browser window and click **Restart** to restart Edge.</span></span>
 
-   ![](media/ClickOnceimage2.png)
+   ![](../media/ClickOnceimage2.png)
 
-<span data-ttu-id="a2ee8-110">**Nota:** Las organizaciones pueden usar la Directiva de grupo para deshabilitar la compatibilidad con ClickOnce.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-110">**Note:** Organizations can use Group Policy to disable ClickOnce support.</span></span> <span data-ttu-id="a2ee8-111">Para comprobar si existe una directiva de la organización para la compatibilidad con ClickOnce, vaya a **Edge://Policy**.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-111">To check if there is an organizational policy for ClickOnce support, navigate to **edge://policy**.</span></span> <span data-ttu-id="a2ee8-112">En la siguiente captura de pantalla se muestra que ClickOnce está habilitado en toda la organización.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-112">The following screenshot shows that ClickOnce is enabled across the entire organization.</span></span> <span data-ttu-id="a2ee8-113">Si el valor de esta Directiva se establece en **false**, deberá ponerse en contacto con un administrador de la organización.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-113">If this policy value is set to **false**, you will need to contact an admin in your organization.</span></span>
+<span data-ttu-id="b1b65-110">**Nota:** Las organizaciones pueden usar la Directiva de grupo para deshabilitar la compatibilidad con ClickOnce.</span><span class="sxs-lookup"><span data-stu-id="b1b65-110">**Note:** Organizations can use Group Policy to disable ClickOnce support.</span></span> <span data-ttu-id="b1b65-111">Para comprobar si existe una directiva de la organización para la compatibilidad con ClickOnce, vaya a **Edge://Policy**.</span><span class="sxs-lookup"><span data-stu-id="b1b65-111">To check if there is an organizational policy for ClickOnce support, navigate to **edge://policy**.</span></span> <span data-ttu-id="b1b65-112">En la siguiente captura de pantalla se muestra que ClickOnce está habilitado en toda la organización.</span><span class="sxs-lookup"><span data-stu-id="b1b65-112">The following screenshot shows that ClickOnce is enabled across the entire organization.</span></span> <span data-ttu-id="b1b65-113">Si el valor de esta Directiva se establece en **false**, deberá ponerse en contacto con un administrador de la organización.</span><span class="sxs-lookup"><span data-stu-id="b1b65-113">If this policy value is set to **false**, you will need to contact an admin in your organization.</span></span>
 
-![](media/ClickOnceimage3.png)
+![](../media/ClickOnceimage3.png)
 
-## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a><span data-ttu-id="a2ee8-114">Instalar y ejecutar la herramienta de exportación de Office 365 eDiscovery</span><span class="sxs-lookup"><span data-stu-id="a2ee8-114">Install and run the Office 365 eDiscovery Export Tool</span></span>
+## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a><span data-ttu-id="b1b65-114">Instalar y ejecutar la herramienta de exportación de Office 365 eDiscovery</span><span class="sxs-lookup"><span data-stu-id="b1b65-114">Install and run the Office 365 eDiscovery Export Tool</span></span>
 
-1. <span data-ttu-id="a2ee8-115">Haga clic en **Descargar resultados** en la página de flotante de una exportación en una búsqueda de contenido o un caso de exhibición de documentos electrónicos.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-115">Click **Download results** on the flyout page of an export in Content Search or an eDiscovery case.</span></span>
+1. <span data-ttu-id="b1b65-115">Haga clic en **Descargar resultados** en la página de flotante de una exportación en una búsqueda de contenido o un caso de exhibición de documentos electrónicos.</span><span class="sxs-lookup"><span data-stu-id="b1b65-115">Click **Download results** on the flyout page of an export in Content Search or an eDiscovery case.</span></span>
 
-   ![Haga clic en descargar resultados en la página de flotante para descargar los resultados de la búsqueda](media/ClickOnceExport1.png)
+   ![Haga clic en descargar resultados en la página de flotante para descargar los resultados de la búsqueda](../media/ClickOnceExport1.png)
 
-2. <span data-ttu-id="a2ee8-117">Se le pedirá que confirme que desea iniciar la herramienta; para ello, haga clic en **abrir**.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-117">You will be prompted with a confirmation to launch the tool, Click **Open**.</span></span>
+2. <span data-ttu-id="b1b65-117">Se le pedirá que confirme que desea iniciar la herramienta; para ello, haga clic en **abrir**.</span><span class="sxs-lookup"><span data-stu-id="b1b65-117">You will be prompted with a confirmation to launch the tool, Click **Open**.</span></span>
 
-   ![Haga clic en abrir para iniciar la herramienta de exportación de exhibición de documentos electrónicos](media/ClickOnceimage4.png)
+   ![Haga clic en abrir para iniciar la herramienta de exportación de exhibición de documentos electrónicos](../media/ClickOnceimage4.png)
 
-   <span data-ttu-id="a2ee8-119">Si la herramienta de exportación de exhibición de documentos electrónicos 365 de Microsoft Office no está instalada, se le mostrará una advertencia de seguridad.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-119">If the Microsoft Office 365 eDiscovery Export Tool isn't installed, you will be prompted with a Security Warning,</span></span> 
+   <span data-ttu-id="b1b65-119">Si la herramienta de exportación de exhibición de documentos electrónicos 365 de Microsoft Office no está instalada, se le mostrará una advertencia de seguridad.</span><span class="sxs-lookup"><span data-stu-id="b1b65-119">If the Microsoft Office 365 eDiscovery Export Tool isn't installed, you will be prompted with a Security Warning,</span></span> 
 
-   ![Haga clic en instalar para instalar la herramienta de exportación de exhibición de documentos electrónicos](media/ClickOnceimage5.png)
+   ![Haga clic en instalar para instalar la herramienta de exportación de exhibición de documentos electrónicos](../media/ClickOnceimage5.png)
 
-3. <span data-ttu-id="a2ee8-121">Haga clic en **Instalar**.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-121">Click **Install**.</span></span> <span data-ttu-id="a2ee8-122">Una vez instalada, la herramienta de exportación se iniciará automáticamente.</span><span class="sxs-lookup"><span data-stu-id="a2ee8-122">After it's installed, the export tool will launch automatically.</span></span>
+3. <span data-ttu-id="b1b65-121">Haga clic en **Instalar**.</span><span class="sxs-lookup"><span data-stu-id="b1b65-121">Click **Install**.</span></span> <span data-ttu-id="b1b65-122">Una vez instalada, la herramienta de exportación se iniciará automáticamente.</span><span class="sxs-lookup"><span data-stu-id="b1b65-122">After it's installed, the export tool will launch automatically.</span></span>
 
-<span data-ttu-id="a2ee8-123">Para obtener más información, vea los siguientes temas:</span><span class="sxs-lookup"><span data-stu-id="a2ee8-123">For more information, see the following topics:</span></span>
+<span data-ttu-id="b1b65-123">Para obtener más información, vea los siguientes temas:</span><span class="sxs-lookup"><span data-stu-id="b1b65-123">For more information, see the following topics:</span></span>
 
-- [<span data-ttu-id="a2ee8-124">Exportar resultados de la búsqueda de contenido</span><span class="sxs-lookup"><span data-stu-id="a2ee8-124">Export Content Search results</span></span>](export-search-results.md)
+- [<span data-ttu-id="b1b65-124">Exportar resultados de la búsqueda de contenido</span><span class="sxs-lookup"><span data-stu-id="b1b65-124">Export Content Search results</span></span>](export-search-results.md)
 
-- [<span data-ttu-id="a2ee8-125">Cómo habilitar las marcas de experimento en Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="a2ee8-125">How to enable experiment flags in Microsoft Edge</span></span>](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [<span data-ttu-id="b1b65-125">Cómo habilitar las marcas de experimento en Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="b1b65-125">How to enable experiment flags in Microsoft Edge</span></span>](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
