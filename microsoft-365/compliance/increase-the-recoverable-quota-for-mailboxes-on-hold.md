@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Habilite el buzón de archivo y active el archivado de expansión automática para aumentar el tamaño de la carpeta elementos recuperables para un buzón de correo en Office 365. '
-ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597937"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072937"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 
@@ -96,15 +96,15 @@ Puede usar el EAC o Exchange Online PowerShell para crear una directiva de reten
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Uso de EAC para crear una directiva de retención
   
-1. En el EAC, vaya a **** \> **directivas de retención**de administración de cumplimiento y, a continuación](media/ITPro-EAC-AddIcon.gif), haga clic en **Agregar** ![icono de agregar.
+1. En el EAC, vaya a **** \> **directivas de retención**de administración de cumplimiento y, a continuación](../media/ITPro-EAC-AddIcon.gif), haga clic en **Agregar** ![icono de agregar.
     
 2. En la página **Nueva directiva de retención**, en **Nombre**, escriba un nombre que describa el propósito de la directiva, como **MRM Policy for Mailboxes on Hold** (Directiva de MRM para buzones de correo en suspensión).  
     
-3. En **etiquetas de retención**, haga clic en](media/ITPro-EAC-AddIcon.gif) **Agregar** ![icono de agregar.
+3. En **etiquetas de retención**, haga clic en](../media/ITPro-EAC-AddIcon.gif) **Agregar** ![icono de agregar.
     
 4. En la lista de etiquetas de retención, seleccione la RPT de Elementos recuperables que ha creado en el paso 1 y, después, haga clic en **Agregar**.
     
-    ![Seleccione la etiqueta de retención personalizada Elementos recuperables](media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![Seleccione la etiqueta de retención personalizada Elementos recuperables](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
 5. Seleccione las etiquetas de retención adicionales que quiera agregar a la directiva de retención. Por ejemplo, podría interesarle agregar las mismas etiquetas que se incluyen en la directiva de MRM predeterminada.
     
@@ -114,7 +114,7 @@ Puede usar el EAC o Exchange Online PowerShell para crear una directiva de reten
     
     Observe que las etiquetas de retención vinculadas a la directiva de retención se muestran en el panel de detalles
     
-    ![Las etiquetas de retención vinculadas a la directiva de retención se muestran en el panel de detalles](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![Las etiquetas de retención vinculadas a la directiva de retención se muestran en el panel de detalles](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
 ### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>Usar Exchange Online PowerShell para crear una directiva de retención
   
@@ -139,7 +139,7 @@ El último paso consiste en aplicar la nueva directiva de retención que ha crea
   
 1. Vaya a **Destinatarios** \> **Buzones de correo**.
     
-2. En la vista de lista, seleccione el buzón al que desea aplicar la Directiva de retención y, a **** ![continuación, haga](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)clic en Editar icono de edición.
+2. En la vista de lista, seleccione el buzón al que desea aplicar la Directiva de retención y, a **** ![continuación, haga](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)clic en Editar icono de edición.
     
 3. En la página **Buzón de usuario**, haga clic en **Características de buzón de correo**.
     

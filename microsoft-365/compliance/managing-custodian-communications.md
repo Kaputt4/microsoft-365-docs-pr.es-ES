@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: La exhibición avanzada de documentos electrónicos facilita la administración del flujo de trabajo de notificación de retención legal alrededor de los custodios de notificación en investigaciones legales.
-ms.openlocfilehash: ffad61d5bc00202f7f72f6f9021b4f62e81fef96
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ca3e5a8e500f6a8e5a5483ccc3efd070c05c5cd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582749"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071587"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Trabajar con comunicaciones en eDiscovery avanzado
 

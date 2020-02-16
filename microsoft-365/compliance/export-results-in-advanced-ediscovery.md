@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Obtenga información sobre cómo definir opciones para exportar resultados de eDiscovery avanzado de Office 365, incluido el procedimiento para especificar parámetros para un lote de exportación. '
-ms.openlocfilehash: ae25c0aac64a437f902ec5533453a05b8bdb5be6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9194bc9dc44587fb03798c2107c408d2afb2ae70
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588320"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074347"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados en Office 365 Advanced eDiscovery
 
@@ -68,18 +68,18 @@ La herramienta de exportación de exhibición de documentos electrónicos se usa
     
     - Para exportar los resultados de los nuevos archivos que agregó a un caso existente, continúe con el lote actual. Para crear una sesión en el lote, seleccione el mismo número de lote y haga clic en **crear sesión de exportación** puede usar esta opción para exportar los mismos parámetros que el lote anterior, de forma incremental. 
     
-    - Para exportar a un nuevo lote, haga **** ![clic en agregar](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
+    - Para exportar a un nuevo lote, haga **** ![clic en agregar](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
     
-    - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic en **Editar** ![icono Editar y, a continuación, modifique los campos.
+    - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic en **Editar** ![icono Editar y, a continuación, modifique los campos.
     
       > [!NOTE]
       > Después de ejecutar sesiones para un lote de exportación, no se pueden eliminar. Además, solo algunos parámetros pueden editarse una vez ejecutada la primera sesión. 
   
-    - Para crear un lote de exportación duplicado, elija **duplicar** ![lote de exportación cree un](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) icono de exportación de lote duplicado y escriba un nombre y una descripción para el lote duplicado en el panel. 
+    - Para crear un lote de exportación duplicado, elija **duplicar** ![lote de exportación cree un](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) icono de exportación de lote duplicado y escriba un nombre y una descripción para el lote duplicado en el panel. 
     
-    - Para eliminar un lote de exportación, elija **eliminar** ![eliminar lote de exportación](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+    - Para eliminar un lote de exportación, elija **eliminar** ![eliminar lote de exportación](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
     
-    - Para ver el historial de un lote, seleccione icono ![](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)de historial de vista de **historial por lotes** .
+    - Para ver el historial de un lote, seleccione icono ![](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)de historial de vista de **historial por lotes** .
     
 2. En **rellenar**, seleccione **incluir solo los archivos por encima de la puntuación de recorte de relevancia** o **refinar el lote de exportación** si desea ajustar la configuración del lote de exportación. 
     
@@ -111,7 +111,7 @@ La herramienta de exportación de exhibición de documentos electrónicos se usa
   
 6. Haga clic en **modificar** para establecer la configuración del campo ' para revisión '. 
     
-    ![Configurar las opciones de campo de revisión para un lote de exportación](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![Configurar las opciones de campo de revisión para un lote de exportación](../media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
    - En **configuración del campo para revisión**, en la lista desplegable **seleccionar escenario** , seleccione el escenario y el ámbito de la revisión. La configuración se muestra en función de la selección.
     
@@ -159,13 +159,13 @@ La herramienta de exportación de exhibición de documentos electrónicos se usa
     
 9. En la ventana **descargar archivos** , haga clic en **copiar al portapapeles** para copiar la clave de exportación. 
     
-    ![Descargar archivos](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
+    ![Descargar archivos](../media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
 10. Haga clic en **Cerrar**. 
     
     Se ha iniciado la herramienta de exportación de exhibición de documentos electrónicos.
     
-    ![Herramienta de exportación de exhibición de documentos electrónicos](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
+    ![Herramienta de exportación de exhibición de documentos electrónicos](../media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
 11. En la **herramienta de exportación de exhibición**de documentos electrónicos:
     

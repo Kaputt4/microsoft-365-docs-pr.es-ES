@@ -1,5 +1,7 @@
 ---
 title: Administrar un incidente de derrame de datos en Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe el uso de la herramienta nueva investigación de datos (vista previa) en el centro de seguridad & cumplimiento para administrar un incidente de derrame de datos.
-ms.openlocfilehash: 53193d3bd915562037a6409766e9be9d42d272c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37092623"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072037"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de derrame de datos en Microsoft 365
 
@@ -125,7 +127,7 @@ Para eliminar elementos de sus ubicaciones originales:
  
 2. Haga clic en **acción** y, a continuación, en **eliminar elementos desde ubicaciones originales**.
 
-   ![Haga clic en acción y, a continuación, en eliminar elementos desde ubicaciones originales](media/DataInvestigationsDeleteItems1.png)
+   ![Haga clic en acción y, a continuación, en eliminar elementos desde ubicaciones originales](../media/DataInvestigationsDeleteItems1.png)
 
 3. En la página de flotante, compruebe el número de elementos y los documentos secundarios relacionados que se eliminarán y, a continuación, haga clic en **eliminar**.
 

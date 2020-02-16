@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+description: Los trabajos de eDiscovery avanzados le ayudan a realizar un seguimiento del estado de los procesos de ejecución prolongada relacionados con la realización de diversas tareas avanzadas de eDiscovery.
+ms.openlocfilehash: eca2eff32b54f783c6c983a8a20237db2faf2240
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960336"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071577"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Administrar trabajos en la exhibición avanzada de documentos electrónicos
 
@@ -40,7 +40,7 @@ Esta es una lista de los trabajos (que suelen ser procesos de larga duración) c
 |Preparación de datos para la exportación | Un usuario exporta documentos de un conjunto de revisión. Una vez finalizado el proceso de exportación, pueden descargar los datos exportados en un equipo local. Para obtener más información, vea [exportar datos de casos](exporting-data-ediscover20.md). | 
 |Preparación para la resolución de errores |Cuando un usuario selecciona un archivo y crea un nuevo corrección de errores en la vista de error en la ficha **procesamiento** de un caso, el primer paso del proceso es cargar el archivo que tiene el error de procesamiento en una ubicación de almacenamiento de Azure en la nube de Microsoft. Este trabajo realiza un seguimiento del progreso del proceso de carga. Para obtener más información acerca del flujo de trabajo de corrección de errores, vea [corrección de errores al procesar datos](error-remediation.md). | 
 |Preparación de la vista previa de búsqueda | Después de que un usuario crea y ejecuta una nueva búsqueda (o vuelve a ejecutar una búsqueda existente), la herramienta de búsqueda prepara un subconjunto de elementos de muestra (que coinciden con la consulta de búsqueda) que se pueden obtener en una vista previa. La vista previa de los resultados de búsqueda ayuda a determinar la eficacia de la búsqueda.  Para obtener más información, vea [recopilar datos para un caso](collecting-data-for-ediscovery.md#view-search-results-and-statistics). | 
-|Volver a indizar los datos del custodio | Cuando agrega un custodio a un caso, todos los elementos parcialmente indizados de los orígenes de datos seleccionados del custodio se reindizan mediante un proceso denominado *indización avanzada*. Este trabajo también se desencadena cuando se hace clic en **Actualizar índice** en la vista índice en la ficha **procesamiento** de un caso. Para obtener más información, consulte [indización avanzada de los datos de custodios](indexing-custodian-data.md).
+|Volver a indizar los datos del custodio | Cuando agrega un custodio a un caso, todos los elementos parcialmente indizados de los orígenes de datos seleccionados del custodio se reindizan mediante un proceso denominado *indización avanzada*. Este trabajo también se desencadena cuando se hace clic en **Actualizar índice** en la ficha **procesamiento** de un caso y cuando se actualiza el índice de un custodio específico en la página flotante de propiedades de custodios. Para obtener más información, consulte [indización avanzada de los datos de custodios](indexing-custodian-data.md).
 |Ejecución de análisis | Un usuario analiza los datos en un conjunto de revisión mediante la ejecución de herramientas avanzadas de análisis de exhibición de documentos electrónicos, como detección de duplicados, análisis de subprocesos de correo electrónico y análisis de temas. Para obtener más información, consulte [analizar datos en un conjunto de revisión](analyzing-data-in-review-set.md). | 
 |Etiquetando documentos | Este trabajo se desencadena cuando un usuario hace clic en **iniciar trabajo de etiquetado** en el **Panel etiquetado** al revisar los documentos de un conjunto de revisión. Un usuario puede iniciar este trabajo después de etiquetar los documentos en un conjunto de revisión y, a continuación, seleccionarlos de forma masiva en el panel ver documento. Para obtener más información, vea [etiquetar documentos en un conjunto de revisión](tagging-documents.md). | 
 |||

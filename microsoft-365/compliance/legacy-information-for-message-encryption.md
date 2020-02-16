@@ -16,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si todavía no ha movido su organización de Office 365 a las nuevas capacidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que cree un plan para cambiar a las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection. Si desea obtener más información sobre cómo funcionan las nuevas funciones en primer lugar, consulte Office 365 Message Encryption. En el resto de este artículo se hace referencia al comportamiento OME antes de la publicación de las nuevas capacidades de OME.
-ms.openlocfilehash: cb5315c99b586f250ecd2e5ee51ee6f4534e8bff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29bebb89bf8fcfed25e5348789d80d244a044b6f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585729"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072247"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -53,7 +53,7 @@ Cuando alguien envía un mensaje de correo electrónico en Exchange online que c
   
 En el siguiente diagrama se resume el paso de un mensaje de correo electrónico a través del proceso de cifrado y descrifrado.
   
-![Diagrama que muestra la ruta de acceso de un correo electrónico cifrado](media/O365-Office365MessageEncryption-Concept.png)
+![Diagrama que muestra la ruta de acceso de un correo electrónico cifrado](../media/O365-Office365MessageEncryption-Concept.png)
   
 Para obtener más información, vea [información de servicio para el cifrado de mensajes de Office 365 heredado antes de la publicación de las nuevas capacidades de OME](legacy-information-for-message-encryption.md#LegacyServiceInfo).
   
@@ -87,7 +87,7 @@ También puede volver a la apariencia predeterminada en cualquier momento.
   
 El siguiente ejemplo muestra un logotipo personalizado para ContosoPharma en los datos adjuntos de correo electrónico:
   
-![Ejemplo de la página de visualización del mensaje cifrado](media/TA-OME-3attachment2.jpg)
+![Ejemplo de la página de visualización del mensaje cifrado](../media/TA-OME-3attachment2.jpg)
   
  **Para personalizar los mensajes de correo electrónico de cifrado y el portal de cifrado con la marca de la organización**
   

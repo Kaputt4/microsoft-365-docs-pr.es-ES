@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f43510d0055a487cf1ee00e799a7244114016384
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f10995e5180afc0d8aa7de2b2fdb8040f0f838ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582909"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072017"
 ---
 # <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
 
@@ -64,7 +64,7 @@ Para actualizar el contenido del aviso de suspensión inicial:
 2. Una vez que haya seleccionado un caso, vaya a la pestaña **comunicaciones** .
 3. Seleccione el aviso de retención que quiera actualizar y haga clic en **Editar**.
 4. En Editar flujo de trabajo, seleccione **definir contenido del portal** y actualizar el contenido del aviso. 
-5. Haga clic en **Guardar**. Una vez guardado, se enviará el aviso de reemisión a todos los custodios que están actualmente asignados a la notificación de retenciones legales. Además, si se habilitan los avisos de aviso/remisión, estos flujos de trabajo también se reiniciarán. 
+5. Haga clic en **Guardar **. Una vez guardado, se enviará el aviso de reemisión a todos los custodios que están actualmente asignados a la notificación de retenciones legales. Además, si se habilitan los avisos de aviso/remisión, estos flujos de trabajo también se reiniciarán. 
 
 
 #### <a name="update-legal-hold-notifications-and-settings"></a>Actualizar la configuración y las notificaciones de retención legal

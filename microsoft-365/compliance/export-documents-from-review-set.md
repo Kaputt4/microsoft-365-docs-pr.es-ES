@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b6f467f938ce14aacb9553b11d51dc63431ab409
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 9a732258e787de3407731f0fdfc98ed07653df71
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862080"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074366"
 ---
 # <a name="export-documents-from-a-review-set"></a>Exportar documentos desde un conjunto de revisión
 
@@ -37,7 +37,7 @@ La descarga ofrece una forma sencilla de descargar contenido de un conjunto de r
 
 Para descargar contenido de un conjunto de revisión, seleccione los archivos que desea descargar y, a continuación, seleccione "Descargar" en el menú acciones.
 
-![Una captura de pantalla de una descripción de equipo generada automáticamente](media/eDiscoDownload.png)
+![Una captura de pantalla de una descripción de equipo generada automáticamente](../media/eDiscoDownload.png)
 
 ## <a name="export-documents-from-a-review-set"></a>Exportar documentos desde un conjunto de revisión
 

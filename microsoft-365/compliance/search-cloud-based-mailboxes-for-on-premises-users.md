@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar y exportar datos de chat de Microsoft Teams (denominados 1xN chats) para usuarios locales en una implementación híbrida de Exchange.
-ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 40439c338e00e7ae94ff82ec4be1af78a250acd6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957145"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070027"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Buscar buzones de correo basados en la nube para usuarios locales en Office 365
 
@@ -41,13 +41,13 @@ Estos son los requisitos y las limitaciones para configurar buzones de correo ba
 > [!NOTE]
 > Las conversaciones del canal de Teams siempre se almacenan en el buzón de correo basado en la nube que está asociado al equipo. Esto significa que puede usar la búsqueda de contenido para buscar conversaciones de canal sin tener que archivar una solicitud de soporte técnico. Para obtener más información sobre las conversaciones del canal de búsqueda en Teams, consulte [Searching Microsoft Teams and Office 365 Groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Si un usuario habilitado para Microsoft Teams tiene un buzón de correo local y su cuenta de usuario/identidad se ha sincronizado en la nube, Microsoft crea un buzón de correo basado en la nube para almacenar los datos de chat de 1xN Teams. Una vez que los datos de chat de Microsoft Teams se almacenan en el buzón basado en la nube, se indizan para la búsqueda. Esto le permite usar la búsqueda de contenido (y las búsquedas asociadas con casos de eDiscovery) para buscar, obtener una vista previa y exportar los datos de chat de Microsoft Teams a los usuarios locales. También puede usar ** \*** los cmdlets de ComplianceSearch en el PowerShell del centro de cumplimiento de & de seguridad para buscar los datos de chat de Microsoft Teams para los usuarios locales. 
   
 En el gráfico siguiente se muestra el flujo de trabajo de cómo los datos de chat de Teams para usuarios locales están disponibles para la búsqueda, la vista previa y la exportación.
   
-![Almacenamiento basado en la nube para usuarios locales en Microsoft Teams](media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Almacenamiento basado en la nube para usuarios locales en Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
 Además de esta nueva capacidad, puede usar la búsqueda de contenido para buscar, obtener una vista previa y exportar contenido de Teams en el sitio de SharePoint basado en la nube y el buzón de correo de Exchange asociado con cada equipo de Microsoft y 1xN los datos de chat del buzón de correo de Exchange Online para usuarios basados en la nube.
 
@@ -71,7 +71,7 @@ Una vez implementada esta característica en la organización de Office 365, se 
   
 - La casilla **agregar contenido de aplicación de Office a los usuarios locales** se agrega en las **ubicaciones** en la búsqueda de contenido. 
     
-    ![La casilla "agregar contenido de la aplicación de Office para usuarios locales" se agrega a la interfaz de usuario de búsqueda de contenido](media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![La casilla "agregar contenido de la aplicación de Office para usuarios locales" se agrega a la interfaz de usuario de búsqueda de contenido](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
 - Los usuarios locales se muestran en el selector de ubicaciones de contenido que se usan para seleccionar los buzones de usuario que se van a buscar. 
 
@@ -81,7 +81,7 @@ Una vez habilitada la característica, puede usar la búsqueda de contenido en e
   
 1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido** de **búsqueda** \> .
     
-2. En la página **Buscar** , haga ![clic en](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) agregar icono **nueva búsqueda**.
+2. En la página **Buscar** , haga ![clic en](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) agregar icono **nueva búsqueda**.
     
     Como se ha explicado anteriormente, la casilla de verificación **agregar contenido de aplicación de Office a los usuarios locales** se muestra en **ubicaciones**. Está seleccionada de forma predeterminada.
     

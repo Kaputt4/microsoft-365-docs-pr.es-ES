@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862040"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073054"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de recursos humanos
 
@@ -80,13 +80,13 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
 4. En la página **credenciales de autenticación** , realice lo siguiente y, a continuación, haga clic en **siguiente**:
 
-   A. Escriba o pegue el identificador de la aplicación de AAD para la aplicación de Azure que creó en el paso 1.
+   a. Escriba o pegue el identificador de la aplicación de AAD para la aplicación de Azure que creó en el paso 1.
 
-   B. Escriba un nombre para el conector de recursos humanos.
+   b. Escriba un nombre para el conector de recursos humanos.
 
 5. En la página **asignación de archivos** , escriba los tres nombres de encabezado de columna (también denominados *parámetros* del archivo CSV que creó en el paso 2 en cada uno de los cuadros correspondientes. Los nombres no distinguen mayúsculas de minúsculas. Como se ha explicado anteriormente, los nombres que escriba en estos cuadros deben coincidir con los nombres de los parámetros en el archivo CSV. Por ejemplo, en la siguiente captura de pantalla se muestran los nombres de parámetro del ejemplo del archivo CSV de ejemplo que se muestra en el paso 2.
 
-   ![Los nombres de encabezado de columna coinciden con los del archivo CSV](media/HRConnectorWizard3.png)
+   ![Los nombres de encabezado de columna coinciden con los del archivo CSV](../media/HRConnectorWizard3.png)
 
 6. En la página **revisión** , revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
 
@@ -98,7 +98,7 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
 8. Haga clic en el conector de recursos humanos que acaba de crear para mostrar la página de flotante, que contiene propiedades y otra información sobre el conector. 
 
-   ![Página de control flotante para nuevo conector de recursos humanos](media/HRConnectorWizard7.png)
+   ![Página de control flotante para nuevo conector de recursos humanos](../media/HRConnectorWizard7.png)
 
    Si aún no lo ha hecho, puede copiar los valores del identificador de la **aplicación de Azure** y del identificador de trabajo del **conector**. Necesitará estos para ejecutar el script en el paso siguiente. También puede descargar el script de la página flotante (o descargarlo con el vínculo en el paso siguiente).
 
@@ -153,11 +153,11 @@ Después de crear el conector de recursos humanos y ejecutar el script para carg
 
 2. Haga clic en la pestaña **conectores** y, a continuación, seleccione el conector de RRHH para mostrar la página de flotante, que contiene las propiedades y la información sobre el conector.
 
-   ![Página de control flotante de conector de RRHH con propiedades y estado](media/HRConnectorFlyout1.png)
+   ![Página de control flotante de conector de RRHH con propiedades y estado](../media/HRConnectorFlyout1.png)
 
 3. En **curso**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV a la nube de Microsoft. 
 
-   ![El archivo de registro del conector de recursos humanos muestra las filas de números del archivo CSV que se cargaron](media/HRConnectorLogFile.png)
+   ![El archivo de registro del conector de recursos humanos muestra las filas de números del archivo CSV que se cargaron](../media/HRConnectorLogFile.png)
 
    El campo **RecordsSaved** indica el número de filas del archivo CSV que se han cargado. Por ejemplo, si el archivo CSV contiene 4 filas, el valor de los campos **RecordsSaved** es 4 Si el script cargó correctamente todas las filas en el archivo CSV.
 
@@ -179,25 +179,25 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
 5. En **Opciones de seguridad**, haga lo siguiente:
 
-   A. Determine si desea ejecutar el script solo cuando haya iniciado sesión en el equipo o ejecutarlo cuando haya iniciado sesión o no.
+   a. Determine si desea ejecutar el script solo cuando haya iniciado sesión en el equipo o ejecutarlo cuando haya iniciado sesión o no.
    
-   B. Asegúrese de que la casilla **ejecutar con los privilegios más altos** está seleccionada.
+   b. Asegúrese de que la casilla **ejecutar con los privilegios más altos** está seleccionada.
 
 6. Seleccione la pestaña **desencadenadores** , haga clic en **nuevo**y, a continuación, realice las siguientes acciones:
 
-   A. En **configuración**, seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
+   a. En **configuración**, seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
    
-   B. En **Configuración avanzada**, asegúrese de que esté activada la casilla de verificación **habilitado** .
+   b. En **Configuración avanzada**, asegúrese de que esté activada la casilla de verificación **habilitado** .
    
    c. Haga clic en **Aceptar**.
 
 7. Seleccione la pestaña **acciones** , haga clic en **nueva**y, a continuación, realice las siguientes acciones:
 
-   ![Configuración de la acción para crear una nueva tarea programada para el script del conector de recursos humanos](media/HRConnectorScheduleTask1.png)
+   ![Configuración de la acción para crear una nueva tarea programada para el script del conector de recursos humanos](../media/HRConnectorScheduleTask1.png)
 
-   A. En la lista desplegable **acción** , asegúrese de que está seleccionado **iniciar un programa** .
+   a. En la lista desplegable **acción** , asegúrese de que está seleccionado **iniciar un programa** .
 
-   B. En el cuadro **programa/script** , haga clic en **examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`cuadro:.
+   b. En el cuadro **programa/script** , haga clic en **examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`cuadro:.
 
    c. En el cuadro **Agregar argumentos (opcional)** , pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
@@ -209,7 +209,7 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
    La nueva tarea se muestra en la biblioteca del programador de tareas.
 
-   ![La nueva tarea se muestra en la biblioteca del programador de tareas](media/HRConnectorTaskSchedulerLibrary.png)
+   ![La nueva tarea se muestra en la biblioteca del programador de tareas](../media/HRConnectorTaskSchedulerLibrary.png)
 
    Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
 

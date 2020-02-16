@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Aprenda a ver información detallada sobre las sesiones de lote de exportación seleccionadas y cómo deshacer la última sesión de exportación en Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 0309c84bb28f4034f3a0ec8726a21ca2a4b4f22f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a13faf7a0c81eb22498239b5ac9f26cce52387f6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601267"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069143"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado de Office 365
 
@@ -38,19 +38,19 @@ El cuadro de diálogo historial de exportación proporciona información detalla
     
 2. A la derecha del nombre del lote de exportación, seleccione el icono de **historial por lotes** : 
     
-    ![Icono de exportar historial por lotes](media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
+    ![Icono de exportar historial por lotes](../media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
   
     Se muestra el cuadro de diálogo historial de lotes.
     
-    ![Exportar historial por lotes](media/04c5b75c-348c-491d-b4fe-716659333890.png)
+    ![Exportar historial por lotes](../media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
 3. Si es necesario revertir una sesión anterior, haga clic en **deshacer la última sesión**. La reversión se puede realizar varias veces, lo que cancela la última sesión.
     
-4. Si desea descargar datos en cualquier momento desde una sesión de lote de exportación ejecutada anteriormente, haga **** clic en ![el icono de descarga icono](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) de descarga de historial por lotes junto al lote de exportación deseado que se va a exportar. 
+4. Si desea descargar datos en cualquier momento desde una sesión de lote de exportación ejecutada anteriormente, haga **** clic en ![el icono de descarga icono](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) de descarga de historial por lotes junto al lote de exportación deseado que se va a exportar. 
     
 5. Cuando aparezca el cuadro de diálogo **firma de acceso compartido** , haga clic en **copiar al portapapeles** para copiar los datos de la sesión de exportación en el equipo local y, a continuación, haga clic en **cerrar**. Se muestra el cuadro &amp; de diálogo de la **herramienta de exportación eDiscovery** del centro de seguridad y cumplimiento de Office 365. 
     
-    ![Cuadro de diálogo Exportar exhibición de documentos electrónicos](media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
+    ![Cuadro de diálogo Exportar exhibición de documentos electrónicos](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
 6. En el cuadro de diálogo **herramienta de exportación de exhibición** de documentos electrónicos: 
     

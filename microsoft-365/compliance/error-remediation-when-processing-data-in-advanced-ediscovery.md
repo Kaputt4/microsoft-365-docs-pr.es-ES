@@ -1,5 +1,7 @@
 ---
 title: Corrección de errores al procesar los datos
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 66c515ff083d8b71a9ec4851986639063858514d
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 5421ba811e401bdd191aee0ddbff21a1286dc9fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38687620"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074577"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
@@ -34,7 +36,7 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en caso
 
 1. En la pestaña **procesamiento** del caso de eDiscovery avanzado, seleccione **errores** en el menú desplegable **Ver** y, a continuación, seleccione un conjunto de revisiones o todo el caso en el menú desplegable **ámbito** . En esta sección se muestran todos los errores del caso o del error de un conjunto de revisión específico.
 
-   ![Corrección de errores](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+   ![Corrección de errores](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
 2. Seleccione los errores que desea corregir haciendo clic en el botón de opción situado junto a tipo de error o tipo de archivo.  En el siguiente ejemplo, estamos corrigiendo un archivo protegido con contraseña.
 
@@ -42,11 +44,11 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en caso
 
     El flujo de trabajo de corrección de errores comienza con una etapa de preparación donde los archivos con errores se copian en una ubicación de almacenamiento de Azure proporcionada por Microsoft para que pueda descargarlos en el equipo local para corregirlos.
 
-    ![Preparación de la corrección de errores](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Preparación de la corrección de errores](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. Una vez completada la preparación, haga clic en **siguiente: descargar archivos** para continuar con la descarga.
 
-    ![Descargar archivos](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Descargar archivos](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. Para descargar archivos, especifique la **ruta de destino de la descarga**. Se trata de una ruta de acceso a la carpeta principal en el equipo local donde se descargará el archivo.  La ruta de acceso predeterminada,%USERPROFILE%\Downloads\errors, apunta a la carpeta descargas del usuario que ha iniciado sesión. Si lo desea, puede cambiar esta ruta de acceso. Si lo cambia, le recomendamos que use una ruta de acceso de archivo local para obtener el mejor rendimiento. No use una ruta de acceso de red remota. Por ejemplo, puede usar la ruta de acceso **C:\Remediation**. 
 
@@ -54,7 +56,7 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en caso
 
 6. Copie el comando predefinido; para ello, haga clic en **copiar al portapapeles**. Abra un símbolo del sistema de Windows, pegue el comando AzCopy y, a continuación, presione **entrar**.  
 
-    ![Preparar la corrección de errores](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![Preparar la corrección de errores](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
 
     > [!NOTE]
     > Debe usar AzCopy v 8.1 para usar correctamente el comando que se proporciona en la página **descargar archivos** . También debe usar AzCopy v 8.1 para cargar los archivos en el paso 10. Para instalar esta versión de AzCopy, consulte [transferir datos con AzCopy v 8.1 en Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Si el comando AzCopy proporcionado no se produce, consulte [solucionar problemas de azcopy en EDiscovery avanzado](troubleshooting-azcopy.md).
@@ -82,7 +84,7 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en caso
 
 8. Vuelva a eDiscovery avanzado y el Asistente para la corrección de errores y, a continuación, haga clic en **siguiente: cargar archivos**.  Se desplaza a la página siguiente, donde ahora puede cargar los archivos.
 
-    ![Cargar archivos](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Cargar archivos](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Especifique la carpeta principal donde se encuentran los archivos corregidos en el cuadro **de texto Ruta de acceso a la ubicación de los archivos** . Una vez más, la carpeta principal debe tener la misma estructura de subcarpetas que se creó cuando se descargaron los archivos.
 
@@ -90,7 +92,7 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en caso
 
 10. Copie el comando predefinido; para ello, haga clic en **copiar al portapapeles**. Abra un símbolo del sistema de Windows, pegue el comando AzCopy y, a continuación, presione **entrar**. cargar los archivos.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Después de ejecutar el comando AzCopy, haga clic en **siguiente: procesar archivos**.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con los informes de DLP en Office 365, puede ver rápidamente el número de coincidencias de directivas de DLP, invalidaciones o falsos positivos; ver si las tendencias están arriba o abajo con el tiempo; filtrar el informe de diferentes formas; y ver detalles adicionales seleccionando un punto en una línea del gráfico.
-ms.openlocfilehash: 1605e2ebed9ada5903402ae5facdb40ce2f12c39
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c00047680f684e3845c4383face09c2cee579721
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601237"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068775"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
@@ -59,19 +59,19 @@ Todos los informes de DLP pueden mostrar datos del período de tiempo de cuatro 
   
 Puede encontrar estos informes en el **Panel**de &amp; \> **informes** \> del centro de cumplimiento de seguridad.
   
-![Informe de coincidencias de directivas de DLP](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![Informe de coincidencias de directivas de DLP](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Ver la justificación enviada por un usuario para una invalidación
 
 Si su Directiva DLP permite a los usuarios invalidarla, puede usar el informe de anulación y de falso positivo para ver el texto enviado por los usuarios en la sugerencia de directiva.
   
-![Campo de justificación en detalles del informe de reemplazo y falso positivo de DLP](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![Campo de justificación en detalles del informe de reemplazo y falso positivo de DLP](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## <a name="take-action-on-insights-and-recommendations"></a>Realizar acciones en información y recomendaciones
 
 Los informes pueden mostrar información y recomendaciones en las que puede hacer clic en el icono rojo de advertencia para ver los detalles de los posibles problemas y realizar posibles acciones correctivas.
   
-![Hacer clic en un icono de información para ver los detalles y las acciones que se deben realizar](media/51782036-7299-4960-8175-75c2b1637159.png)
+![Hacer clic en un icono de información para ver los detalles y las acciones que se deben realizar](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>Permisos para informes de DLP
 

@@ -1,7 +1,7 @@
 ---
 title: Título de administración de alimentos y medicamentos CFR 21 parte 11
 description: Microsoft ayuda a los clientes a cumplir con estos reglamentos de administración de alimentos y medicamentos de Estados Unidos.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fdde59b04c7f52f163028aa7ba4759e226fccb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602457"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071287"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Título de administración de alimentos y medicamentos CFR 21 parte 11
 
@@ -45,14 +45,15 @@ Los clientes pueden solicitar el acceso a los informes de cumplimiento, en funci
 
 Obtenga información sobre cómo acelerar la implementación del título 21 del FDA CFR: [descargar la guía de calificación de Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 Aunque no existe ninguna certificación para cumplir con la parte 11 del título de CFR, los siguientes servicios en la nube de Microsoft Enterprise se han sometido a auditorías independientes de terceros, lo que puede ayudar a los clientes en sus esfuerzos de cumplimiento. Entre estos servicios se incluyen:
 
 - Azure: servicios en la nube, almacenamiento, administrador de tráfico, máquinas virtuales y red virtual
+- Azure DevOps
 - Intune
 - [Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos](https://aka.ms/d365-compliance-list)
-- [Office 365 y Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Office 365 y Office 365 para las Administraciones públicas de EE. UU.
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
@@ -89,7 +90,7 @@ Microsoft garantiza que los servicios en la nube de su empresa cumplan los térm
 - [Guía de la FDA para la parte 11 del sector: registros y firmas electrónicas](https://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 - [Directrices de calificación para Azure](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Directrices de calificación para Office 365](https://aka.ms/o365-qualification-guideline)
-- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud para la Administración Pública](https://aka.ms/govt-cloud)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

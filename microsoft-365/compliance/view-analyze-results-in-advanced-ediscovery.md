@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Comprenda dónde ver los resultados del proceso de análisis en la exhibición avanzada de documentos electrónicos de Office 365, incluidas las definiciones de las opciones de tarea mostradas.  '
-ms.openlocfilehash: 9e06770135afd62a39115c9365a698df4493bd72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597257"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069197"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Ver los resultados de ANALYZE en Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ En la exhibición avanzada de documentos electrónicos, el progreso y los result
 
 En **preparar \> el \> estado \> **de la tarea de resultados del análisis, el estado se muestra durante y después de analizar la ejecución del proceso. 
   
-![Analizar el estado de la tarea](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
+![Analizar el estado de la tarea](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
 Las tareas mostradas pueden variar en función de las opciones seleccionadas. 
   
@@ -73,7 +73,7 @@ Los resultados de los **mensajes** de correo electrónico muestran el número de
     
 Los resultados de los **datos adjuntos** muestran el número de datos adjuntos, según el tipo único y duplicados. 
   
-![Casi duplicados y subprocesos de correo electrónico](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![Casi duplicados y subprocesos de correo electrónico](../media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>Vea también
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: bd167246bc43cba20a444594a2309ac888c734fc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9ca390dfc96307e6323e897e762813719f2b3ac0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597477"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069757"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -31,7 +31,7 @@ Los límites de cumplimiento crean límites lógicos dentro de una organización
   
 Usamos el ejemplo de la siguiente ilustración para explicar cómo funcionan los límites de cumplimiento.
   
-![Los límites de cumplimiento constan de filtros de permisos de búsqueda que controlan el acceso a agencias y grupos de roles de administrador que controlan el acceso a casos de eDiscovery](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![Los límites de cumplimiento constan de filtros de permisos de búsqueda que controlan el acceso a agencias y grupos de roles de administrador que controlan el acceso a casos de eDiscovery](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
 En este ejemplo, contoso LTD es una organización de Office 365 que consta de dos subsidiarias, Fourth Coffee y Coho Winery. La empresa requiere que los administradores de eDiscovery y los investigadores solo puedan realizar búsquedas en los buzones de Exchange, las cuentas de OneDrive y los sitios de SharePoint de su agencia. Además, los profesionales de la exhibición de documentos electrónicos y los investigadores solo pueden ver casos de eDiscovery en su agencia y solo pueden acceder a los casos de los que son miembros. Aquí se muestra cómo los límites de cumplimiento cumplen estos requisitos.
   
@@ -162,9 +162,9 @@ Para crear un caso y asignar miembros:
     
 2. En la lista de casos de eDiscovery, haga clic en el nombre del caso que ha creado.
     
-3. En la página desplegable **administrar este caso** , en **administrar grupos**de roles ![, haga](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) clic en agregar icono **Agregar**.
+3. En la página desplegable **administrar este caso** , en **administrar grupos**de roles ![, haga](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) clic en agregar icono **Agregar**.
     
-    ![Agregar un grupo de roles como miembro de un caso de exhibición de documentos electrónicos](media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
+    ![Agregar un grupo de roles como miembro de un caso de exhibición de documentos electrónicos](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. En la lista de grupos de roles, seleccione uno de los grupos de roles que ha creado en el paso 3 y haga clic en **Agregar**.
     
@@ -195,7 +195,7 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |NAM  <br/> |Norteamérica (centros de administración de centros de recursos en los Estados Unidos)  <br/> |
     |EUR  <br/> |Europa  <br/> |
     |APC  <br/> |Asia Pacífico  <br/> |
-    |CAN <br/> |Canadá|
+    |CAN <br/> |Canada|
     |||
     
 - **Búsquedas de contenido de ruta:** Puede enrutar las búsquedas de contenido de los sitios de SharePoint y las cuentas de OneDrive a un centro de datos satélite. Esto significa que puede especificar la ubicación del centro de recursos donde se ejecutarán las búsquedas.

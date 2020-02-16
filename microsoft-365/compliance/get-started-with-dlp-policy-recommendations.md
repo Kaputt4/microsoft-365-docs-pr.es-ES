@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Esta recomendación basada en la información ayuda a su organización a mantener la seguridad del contenido confidencial cuando se almacena y se comparte en Office 365, ya que le informa cuando hay una brecha posible en la cobertura de la Directiva DLP. Verá esta recomendación en la Página principal del centro de seguridad &amp; y cumplimiento, si los documentos contienen alguno de los cinco tipos más comunes de información confidencial, pero no están protegidos por una directiva DLP.
-ms.openlocfilehash: 3bbdbd230e9ae28136bcd89df46f0e9c10cb80fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7fb99942a2288a2545123d44ebdfde89b449edc3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596357"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073227"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Introducción a las recomendaciones de la directiva DLP
 
@@ -26,7 +26,7 @@ Esta recomendación basada en la información ayuda a su organización a mantene
   
 Puede usar este widget para crear rápidamente una directiva de DLP personalizada en tan solo un clic o dos y después de crear esta directiva de DLP, es totalmente personalizable. Tenga en cuenta que si no ve la recomendación en primer lugar, intente hacer clic en **+ más** en la parte inferior de la sección **recomendada para usted** . 
   
-![Widget denominado información confidencial desprotegida](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![Widget denominado información confidencial desprotegida](../media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
 ## <a name="create-the-recommended-dlp-policy"></a>Crear la Directiva de DLP recomendada
 
@@ -48,7 +48,7 @@ También puede elegir que la Directiva DLP:
     
 Si desea cambiar estas opciones más adelante, puede editar la Directiva DLP una vez creada. Por ejemplo, puede hacer que la Directiva sea más restrictiva impidiendo que los usuarios compartan contenido que contiene información confidencial en el primer lugar; consulte la siguiente sección.
   
-![Configuración del widget denominado información confidencial desprotegida](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![Configuración del widget denominado información confidencial desprotegida](../media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
 ## <a name="edit-the-recommended-dlp-policy"></a>Edición de la Directiva de DLP recomendada
 
@@ -56,7 +56,7 @@ Después de usar el widget para crear una directiva de DLP, la directiva aparece
   
 De forma predeterminada, la Directiva se denomina **Directiva recomendada del sistema para compartir información confidencial**. Esta directiva es totalmente personalizable, igual que cualquier directiva DLP que se cree a partir de cero. Por ejemplo, si decidió no activar los informes de incidentes y las sugerencias de directiva al usar el widget, siempre puede editar la Directiva y activar estas opciones en cualquier momento.
   
-![Directiva recomendada por el sistema para compartir información confidencial](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![Directiva recomendada por el sistema para compartir información confidencial](../media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Cuando el widget no aparece
 

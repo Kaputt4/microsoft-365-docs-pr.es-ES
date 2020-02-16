@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'Obtenga información sobre cómo encontrar los resultados de un módulo de proceso en la exhibición avanzada de documentos de Office 365, incluido el estado de la tarea y el resumen del proceso.  '
-ms.openlocfilehash: 2c492b9c8dfa2b6851620c434f1a5b4bbddc2e4e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597227"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068857"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Ver los resultados del módulo de proceso en Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ Una vez iniciado el **proceso** de **preparación** \> , puede ver el progreso y
 
 En **preparar** \> los **resultados**del **proceso** \> , la página muestra el estado actual (si el proceso se está ejecutando actualmente) o el estado de la tarea de estado de proceso último como se muestra en el siguiente ejemplo.
   
-![Estado de la tarea del módulo de proceso](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
+![Estado de la tarea del módulo de proceso](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
 Las tareas mostradas pueden variar en función de las opciones de proceso seleccionadas. 
   
@@ -82,7 +82,7 @@ Los paneles presentan una representación gráfica de las estadísticas del arch
     
     Si se produce un error en la marcación de archivos **predefinidos** , también se indica. 
     
-![Resumen del módulo de proceso](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
+![Resumen del módulo de proceso](../media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
 ## <a name="process-summary-accumulated-and-last-charts"></a>Gráficos acumulativos y último resumen del proceso
 
@@ -106,7 +106,7 @@ La barra derecha, procesada, incluye:
 
 En la \> sección \> preparar \> los resultados del proceso último error, se muestran detalles de los errores de la última sesión o acción realizada.
   
-![Errores del módulo de proceso](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
+![Errores del módulo de proceso](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## <a name="see-also"></a>Vea también
 

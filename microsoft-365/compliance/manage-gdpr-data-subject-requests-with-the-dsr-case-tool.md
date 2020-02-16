@@ -18,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de cumplimiento de Office 365 y Microsoft 365 para administrar las investigaciones de los DSR de su organización.
-ms.openlocfilehash: 6d7770be686e62dc6afde368bcb4e821f72c2fff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35ea4230680f567a702f8f2368f80986c473039f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582939"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072127"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de seguridad & cumplimiento
 
@@ -89,7 +89,7 @@ El siguiente paso es crear un caso DSR. Al crear un caso, puede optar por inicia
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión en Office 365 con su cuenta profesional o educativa. 
     
-2. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de ![ **privacidad** \> de](media/ITPro-EAC-AddIcon.gif) datos y, a continuación, haga clic en agregar icono **nuevo caso DSR**.
+2. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de ![ **privacidad** \> de](../media/ITPro-EAC-AddIcon.gif) datos y, a continuación, haga clic en agregar icono **nuevo caso DSR**.
     
 3. En la página flotante de **nuevo caso de DSR** , indique un nombre, escriba una descripción opcional y, a continuación, haga clic en **siguiente**. El nombre del caso debe ser exclusivo en la organización.
     
@@ -102,7 +102,7 @@ El siguiente paso es crear un caso DSR. Al crear un caso, puede optar por inicia
     
     Se muestra una página que confirma que se ha creado el nuevo maletín DSR.
     
-    ![Iniciar la búsqueda o cerrar la página del nuevo caso de DSR](media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
+    ![Iniciar la búsqueda o cerrar la página del nuevo caso de DSR](../media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
   
     En este punto, puede hacer una de estas dos cosas:
     
@@ -195,11 +195,11 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
     
 2. Haga clic en la ficha **búsqueda** en la parte superior de la página y, a continuación, haga clic en la casilla situada junto a la búsqueda integrada que se creó al crear el caso del DSR. O bien, haga clic en otra búsqueda para exportar datos de esa búsqueda. 
     
-3. En la página desplegable de búsqueda ![, haga clic en](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) exportar resultados de búsqueda **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
+3. En la página desplegable de búsqueda ![, haga clic en](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) exportar resultados de búsqueda **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
     
 4. En la página resultados de la **exportación** , seleccione las siguientes opciones recomendadas para las solicitudes de exportación de DSR. 
     
-    ![Configuración de las opciones de exportación](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
+    ![Configuración de las opciones de exportación](../media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
     a. En **Opciones de salida**, seleccione la primera opción (**todos los elementos, excluidos los que tienen los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos**) para exportar solo los elementos indizados. El motivo por el que no desea exportar elementos parcialmente indizados de la búsqueda integrada es porque también se exportarán los elementos parcialmente indizados de otros usuarios. Para exportar solo los elementos parcialmente indizados del titular de los datos, se recomienda crear una búsqueda independiente. Para obtener más información, vea [exportar elementos indexados parcialmente](#exporting-partially-indexed-items) en la sección "más información sobre el uso de la herramienta de casos de DSR".
     
@@ -219,7 +219,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
     
 8. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Use esta clave en el paso 11 para descargar los resultados de la búsqueda.
     
-9. Haga ![clic en exportar el](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
+9. Haga ![clic en exportar el](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
     
 10. En la ventana emergente situada en la parte inferior de la página, haga clic en **abrir** para abrir la herramienta de exportación de exhibición de documentos electrónicos **365 de Microsoft Office**. La **herramienta de exportación de exhibición** de documentos electrónicos se instalará la primera vez que descargue los resultados de búsqueda. 
     
@@ -260,11 +260,11 @@ Para modificar las ubicaciones de contenido que se van a buscar:
     
 2. En la consulta de búsqueda, en **ubicaciones**, haga clic en **modificar** junto a la opción **ubicaciones específicas** . 
     
-    ![Haga clic en modificar para cambiar las ubicaciones de contenido de la consulta de búsqueda integrada](media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
+    ![Haga clic en modificar para cambiar las ubicaciones de contenido de la consulta de búsqueda integrada](../media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
   
     Se muestra la página de control flotante **modificar ubicaciones** . Esta es una descripción de las ubicaciones de contenido en la búsqueda integrada y de información sobre cómo modificar las ubicaciones en las que se realiza la búsqueda. 
     
-    ![Página de control flotante de modificar ubicaciones](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
+    ![Página de control flotante de modificar ubicaciones](../media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
     a. La opción alternar de la sección **seleccionar todo** en el buzón de la parte superior de la página de flotante está seleccionada, lo que indica que se busca en todos los buzones. Para restringir el ámbito de la búsqueda, haga clic en el botón de alternancia para anular la selección y, a continuación, haga clic en **elegir usuarios, grupos o equipos** y elija buzones específicos para buscar.
     
@@ -304,13 +304,13 @@ Cuando se exportan datos desde el servicio de itinerancia de Office, los datos s
   
 1. En el centro de seguridad & cumplimiento, haga clic en **solicitudes del interesado**de datos de **privacidad** \> de datos y, a continuación, haga clic en **abrir** junto al caso del DS1800 para el interesado al que desea exportar los datos de uso. 
     
-2. Haga clic en la ficha **búsqueda** en la parte superior de la página y ![, a](media/ITPro-EAC-AddIcon.gif) continuación, haga clic en agregar icono de **búsqueda guiada**.
+2. Haga clic en la ficha **búsqueda** en la parte superior de la página y ![, a](../media/ITPro-EAC-AddIcon.gif) continuación, haga clic en agregar icono de **búsqueda guiada**.
     
 3. Haga clic en **Cancelar** en la página **asigne un nombre a la búsqueda** . 
     
 4. En **consulta de búsqueda**, en la condición **tipo** , active la casilla situada junto a servicio de **itinerancia de Office**. 
     
-    ![Seleccione la casilla servicio de Office roaming para exportar datos de uso](media/O365_DSRCase_SDSDataExport1.png)
+    ![Seleccione la casilla servicio de Office roaming para exportar datos de uso](../media/O365_DSRCase_SDSDataExport1.png)
   
     La condición **tipo** (que son clases de mensajes de correo electrónico) debe ser el único elemento de la consulta de búsqueda. Puede eliminar el cuadro **palabras clave** o dejarlo en blanco. 
     
@@ -326,13 +326,13 @@ Cuando se exportan datos desde el servicio de itinerancia de Office, los datos s
     
  **Para exportar datos del servicio de itinerancia de Office:**
   
-1. Una vez completada la búsqueda que ha creado en el paso anterior, haga clic en la ficha **búsqueda** situada en la parte superior de la página y, a continuación, haga clic en la casilla situada junto a la búsqueda. Puede que tenga que hacer ![clic](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) en actualizar **actualización** para mostrar la búsqueda. 
+1. Una vez completada la búsqueda que ha creado en el paso anterior, haga clic en la ficha **búsqueda** situada en la parte superior de la página y, a continuación, haga clic en la casilla situada junto a la búsqueda. Puede que tenga que hacer ![clic](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) en actualizar **actualización** para mostrar la búsqueda. 
     
-2. En la página desplegable de búsqueda ![, haga clic en](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) exportar resultados de búsqueda **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
+2. En la página desplegable de búsqueda ![, haga clic en](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) exportar resultados de búsqueda **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
     
 3. En la página **exportar resultados** , seleccione las opciones recomendadas para exportar datos de uso. 
     
-    ![Opciones de exportación al exportar datos de uso del servicio de movilidad de Office](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
+    ![Opciones de exportación al exportar datos de uso del servicio de movilidad de Office](../media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
     a. En **Opciones de salida**, seleccione la primera opción (**todos los elementos, excluidos los que tienen los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos**) para exportar solo los elementos indizados.
     
@@ -350,7 +350,7 @@ Cuando se exportan datos desde el servicio de itinerancia de Office, los datos s
     
 7. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Use esta clave en el paso 10 para descargar los resultados de la búsqueda.
     
-8. Haga ![clic en exportar el](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
+8. Haga ![clic en exportar el](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
     
 9. En la ventana emergente situada en la parte inferior de la página, haga clic en **abrir** para abrir la herramienta de exportación de exhibición de documentos electrónicos **365 de Microsoft Office**. La **herramienta de exportación de exhibición** de documentos electrónicos se instalará la primera vez que descargue los resultados de búsqueda. 
     

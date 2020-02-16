@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la nueva versión de eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: 30b69bbd80799b0f3e32b008ec1d4affc8be6605
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b3583037953d8dcb36ea6b3f7a2ba521e47fd9c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662016"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071067"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
 
@@ -31,7 +31,7 @@ La solución Advanced eDiscovery de Microsoft 365 se basa en las capacidades exi
 
 El flujo de trabajo integrado de eDiscovery avanzado se alinea con el proceso de eDiscovery descrito por el modelo de referencia de detección electrónica (EDRM). 
 
-![Modelo de referencia de detección electrónica (EDRM)](media/EDRMv1.png)
+![Modelo de referencia de detección electrónica (EDRM)](../media/EDRMv1.png)
 
 (Origen de la imagen por cortesía de edrm.net. La imagen de origen estaba disponible en la licencia no desported de Creative Commons Atribution 3,0.)
 
@@ -57,7 +57,7 @@ En las secciones siguientes se describe cada paso del flujo de trabajo integrado
 
 Para obtener más información acerca del flujo de trabajo de un extremo a otro en la exhibición avanzada de documentos electrónicos, vea este [vídeo de Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133). 
 
-![Las pestañas en eDiscovery avanzado siguen el flujo de trabajo de EDRM](media/aedisco-homepage-1.png)
+![Las pestañas en eDiscovery avanzado siguen el flujo de trabajo de EDRM](../media/aedisco-homepage-1.png)
 
 ## <a name="managing-custodians"></a>Administración de custodios
 

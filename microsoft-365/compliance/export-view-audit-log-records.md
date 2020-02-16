@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Después de exportar y descargar los resultados de una búsqueda de registro de auditoría de Office 365 en un archivo CSV, puede usar la característica transformación de JSON en el editor de Power Query en Excel para dividir cada propiedad en el objeto JSON de la columna AuditData en su propia columna. Esto puede ayudarle a encontrar rápidamente los datos de auditoría específicos que está buscando.
-ms.openlocfilehash: de116db76597c6eb7966541c3cc0f34f91c06c70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594611"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074164"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportar, configurar y ver registros de registro de auditoría
 
@@ -36,7 +36,7 @@ El primer paso consiste en buscar en el registro de auditoría y, a continuació
     
 2. Haga clic en **exportar resultados** y seleccione **descargar todos los resultados**. 
     
-   ![Haga clic en descargar todos los resultados](media/ExportAuditSearchResults.png)
+   ![Haga clic en descargar todos los resultados](../media/ExportAuditSearchResults.png)
 
    Esta opción permite exportar todos los registros de auditoría de la búsqueda de registros de auditoría que ejecutó en el paso 1 y descarga los datos sin procesar del registro de auditoría a un archivo CSV. 
 
@@ -44,7 +44,7 @@ El primer paso consiste en buscar en el registro de auditoría y, a continuació
 
 3. Haga clic en **guardar > guardar como** y guarde el archivo CSV en el equipo local. Se tarda un rato en descargar muchos resultados de búsqueda. Este suele ser el caso cuando se busca en todas las actividades o en un intervalo de fechas amplio. Se muestra un mensaje en la parte inferior de la ventana cuando se termina de descargar el archivo CSV.
  
-   ![Mensaje que se muestra cuando se termina de descargar el archivo CSV](media/ExportAuditSearchResultsFinish.png)
+   ![Mensaje que se muestra cuando se termina de descargar el archivo CSV](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
   > Puede descargar un máximo de 50 000 entradas en un archivo CSV desde una única búsqueda de registros de auditoría. Si se descargan 50 000 entradas en el archivo CSV, probablemente puede suponer que existen más de 50 000 eventos que cumplen los criterios de búsqueda. Para exportar más de este límite, pruebe a usar un intervalo de fechas para reducir el número de registros de auditoría. Puede que tenga que ejecutar varias búsquedas con intervalos de fecha de menor tamaño para exportar más de 50 000 entradas.
@@ -57,29 +57,29 @@ El paso siguiente es usar la característica transformación de JSON en el edito
     
 2.  En la pestaña **datos** , en el grupo de cinta **obtener & transformar datos** , haga clic en **desde texto/CSV**.
 
-    ![En la pestaña datos, haga clic en desde texto/CSV.](media/JSONTransformOpenCSVFile.png)
+    ![En la pestaña datos, haga clic en desde texto/CSV.](../media/JSONTransformOpenCSVFile.png)
 
 3. Abra el archivo CSV que ha descargado en el paso 1.
     
 4. En la ventana que se muestra, haga clic en **transformar datos**.
 
-   ![Haga clic en transformar datos](media/JSONOpenPowerQuery.png)
+   ![Haga clic en transformar datos](../media/JSONOpenPowerQuery.png)
 
 El archivo CSV se abre en el **Editor de consultas**. Hay cuatro columnas: **CreationDate**, **userid**, **Operations**y **AuditData**. La columna **AuditData** es un objeto JSON que contiene varias propiedades. El paso siguiente es crear una columna para cada propiedad en el objeto JSON.
     
 5. Haga clic con el botón secundario en el título de la columna **AuditData** , haga clic en **transformar**y, a continuación, en **JSON**. 
  
-   ![Haga clic con el botón secundario en la columna AuditData, haga clic en transformar y seleccione JSON.](media/JSONTransform.png)
+   ![Haga clic con el botón secundario en la columna AuditData, haga clic en transformar y seleccione JSON.](../media/JSONTransform.png)
 
 6. En la esquina superior derecha de la columna **AuditData** , haga clic en el icono de expandir.
     
-   ![En la columna AuditData, haga clic en el icono de expandir](media/JSONTransformExpandIcon.png)
+   ![En la columna AuditData, haga clic en el icono de expandir](../media/JSONTransformExpandIcon.png)
 
    Se muestra una lista parcial de las propiedades de los objetos JSON en la columna **AuditData** .
 
 7. Haga clic en **cargar más** para mostrar todas las propiedades de los objetos JSON en la columna **AuditData** .
 
-   ![Haga clic en cargar más para mostrar todas las propiedades en el objeto JSON](media/JSONTransformLoadJSONProperties.png)
+   ![Haga clic en cargar más para mostrar todas las propiedades en el objeto JSON](../media/JSONTransformLoadJSONProperties.png)
 
    Puede anular la selección de la casilla de verificación situada junto a cualquier propiedad que no desee incluir. Eliminar columnas que no son útiles para la investigación es una buena forma de reducir la cantidad de datos que se muestran en el registro de auditoría. 
 

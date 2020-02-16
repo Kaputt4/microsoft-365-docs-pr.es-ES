@@ -1,7 +1,7 @@
 ---
 title: Securities and Exchange Commission-Commission Compliance and Integrity Systems (SCI)
 description: Las reglas de SCI se aplican a las entidades de SCI, que incluyen organizaciones de autoreglamentación (SROs) como intercambios de valores y opciones, agencias de compensación registradas y sistemas comerciales alternativos (ATSs).
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601867"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071227"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission: el Reglamento de cumplimiento e integridad de sistemas (SCI)
 
@@ -43,7 +43,7 @@ Para ayudar a los clientes de servicios financieros de Estados Unidos que deben 
 
 En este documento se proporciona una lista de comprobación completa de las áreas de enfoque de la ciencia de la reglamentación crítica. Esta lista de comprobación ayuda a las organizaciones financieras a adoptar Azure para garantizar que sus reguladores, clientes y liderazgo puedan cumplir con los requisitos normativos aplicables.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -69,11 +69,11 @@ Las organizaciones financieras o las entidades de SCI que están sujetas a este 
 - [Respuestas de la SEC a preguntas más frecuentes referentes a la reglamentación SCI](https://www.sec.gov/divisions/marketreg/regulation-sci-faq.shtml)
 - [Continuidad empresarial y recuperación ante desastres (BCDR): regiones emparejadas de Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [Mapa de cumplimiento de los principios normativos de informática en la nube y Microsoft Online Services](https://aka.ms/FinServ-Guide-US)
-- [Programa de cumplimiento de servicios financieros en la nube de Microsoft](https://aka.ms/FSCP-Print)
+- [Programa de cumplimiento para los servicios financieros de Microsoft Cloud](https://aka.ms/FSCP-Print)
 - [Cumplimiento de los servicios financieros en Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Servicios financieros de Microsoft](https://aka.ms/FinServ-Compliance)
 - [Microsoft y reglas de la SEC 17a-4](offering-SEC-17a-4.md)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

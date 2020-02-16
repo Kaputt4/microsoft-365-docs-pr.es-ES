@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más adelante en eDiscovery avanzado de Office 365.
-ms.openlocfilehash: 6cc0cb0a709463be0e624162555dd221564b4dd3
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 7ae834e7f93c381cf6d386131e3a5c671e2bc529
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862110"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075165"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
@@ -91,11 +91,11 @@ Para obtener más información sobre los permisos de exhibición de documentos e
     
 3. En el centro de seguridad & cumplimiento, haga clic en **permisos**y, a continuación, realice una de las siguientes acciones en función de los permisos de exhibición de documentos electrónicos que desee asignar.
     
-    - Para asignar permisos de revisor, seleccione el grupo de roles de **Revisor** y, a continuación, junto a **miembros**, haga clic en **Editar**. Haga clic en **seleccionar miembros**, haga clic en **Editar**, ![haga clic en agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**, seleccione el usuario que desea agregar al grupo de funciones de revisor y, a continuación, haga clic en **Agregar**.
+    - Para asignar permisos de revisor, seleccione el grupo de roles de **Revisor** y, a continuación, junto a **miembros**, haga clic en **Editar**. Haga clic en **seleccionar miembros**, haga clic en **Editar**, ![haga clic en agregar icono](../media/ITPro-EAC-AddIcon.gif) **Agregar**, seleccione el usuario que desea agregar al grupo de funciones de revisor y, a continuación, haga clic en **Agregar**.
     
-    - Para asignar permisos de administrador de eDiscovery, seleccione el grupo de roles **eDiscovery Manager** y, a continuación, junto a **eDiscovery Manager**, haga clic en **Editar**. Haga clic en **elegir administrador de exhibición**de documentos ![electrónicos,](media/ITPro-EAC-AddIcon.gif) haga clic en **Editar**, haga clic en agregar icono * * Agregar * *, seleccione el usuario que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**.
+    - Para asignar permisos de administrador de eDiscovery, seleccione el grupo de roles **eDiscovery Manager** y, a continuación, junto a **eDiscovery Manager**, haga clic en **Editar**. Haga clic en **elegir administrador de exhibición**de documentos ![electrónicos,](../media/ITPro-EAC-AddIcon.gif) haga clic en **Editar**, haga clic en agregar icono * * Agregar * *, seleccione el usuario que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**.
     
-    - Para asignar permisos de administrador de eDiscovery, seleccione el grupo de roles **eDiscovery Manager** y, a continuación, junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. Haga clic en **elegir administrador de eDiscovery**, haga ![clic en](media/ITPro-EAC-AddIcon.gif) **Editar**, haga clic en agregar icono **Agregar**, seleccione el usuario que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**.
+    - Para asignar permisos de administrador de eDiscovery, seleccione el grupo de roles **eDiscovery Manager** y, a continuación, junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. Haga clic en **elegir administrador de eDiscovery**, haga ![clic en](../media/ITPro-EAC-AddIcon.gif) **Editar**, haga clic en agregar icono **Agregar**, seleccione el usuario que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**.
     
 4. Una vez que haya agregado todos los usuarios, haga clic en **listo**, haga clic en **Guardar** para guardar los cambios en el grupo de roles y, a continuación, haga clic en **cerrar**.
 
@@ -107,11 +107,11 @@ El paso siguiente es crear un caso de exhibición de documentos electrónicos. D
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el centro de seguridad & cumplimiento, **haga clic en** \> **exhibición de**documentos ![electrónicos eDiscovery](media/ITPro-EAC-AddIcon.gif) y, a continuación, en agregar icono **crear un caso**.
+3. En el centro de seguridad & cumplimiento, **haga clic en** \> **exhibición de**documentos ![electrónicos eDiscovery](../media/ITPro-EAC-AddIcon.gif) y, a continuación, en agregar icono **crear un caso**.
     
 4. En la página **nuevo caso** , indique el caso como un nombre, escriba una descripción opcional y, a continuación, haga clic en **Guardar**. El nombre del caso debe ser único en la organización.
     
-    ![Crear un caso](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
+    ![Crear un caso](../media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
   
     El nuevo caso se muestra en la lista de casos de la página de **exhibición** de documentos electrónicos. Puede desplazar el cursor sobre un nombre de caso para mostrar información sobre el caso, incluido el estado del caso (**activo** o **cerrado**), la descripción del caso (creado en el paso anterior) y cuándo se modificó el caso la última vez y quién lo modificó.
     
@@ -128,11 +128,11 @@ Después de crear un caso, el siguiente paso consiste en Agregar miembros al cas
     
     Se muestra la página flotante **administrar este caso** . 
     
-    ![Página para administrar un escenario flotante](media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
+    ![Página para administrar un escenario flotante](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
-3. En **administrar miembros**, haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **Agregar** para agregar miembros al caso. 
+3. En **administrar miembros**, haga ![clic en](../media/ITPro-EAC-AddIcon.gif) agregar icono **Agregar** para agregar miembros al caso. 
     
-    También puede optar por agregar un grupo de funciones al caso. En **administrar grupos de roles**, ![haga clic](media/ITPro-EAC-AddIcon.gif) en agregar icono **Agregar**.
+    También puede optar por agregar un grupo de funciones al caso. En **administrar grupos de roles**, ![haga clic](../media/ITPro-EAC-AddIcon.gif) en agregar icono **Agregar**.
     
     > [!NOTE]
     > Los grupos de roles controlan quién puede asignar miembros a un caso de exhibición de documentos electrónicos. Esto significa que solo puede asignar a un caso los grupos de roles de los que es miembro.
@@ -172,13 +172,13 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
     
 3. En la página **principal** del caso, haga clic en la pestaña **retención** . 
     
-    ![Haga clic en la pestaña retención.](media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
+    ![Haga clic en la pestaña retención.](../media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
   
-4. En la página **suspensión** , haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **crear**.
+4. En la página **suspensión** , haga ![clic en](../media/ITPro-EAC-AddIcon.gif) agregar icono **crear**.
     
 5. En la página nombre de la **retención** , asigne un nombre a la retención. El nombre de la suspensión debe ser exclusivo en la organización. 
     
-    ![Asigne un nombre único a la retención.](media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
+    ![Asigne un nombre único a la retención.](../media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
   
 6. Opcional En el cuadro **Descripción** , agregue una descripción de la suspensión. 
     
@@ -186,32 +186,32 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
     
 8. Elija las ubicaciones de contenido que desea poner en retención. Puede poner buzones de correo, sitios y carpetas públicas en retención.
     
-    ![Elegir las ubicaciones de contenido para colocar en suspensión](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
+    ![Elegir las ubicaciones de contenido para colocar en suspensión](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   A. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   a. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
     
     > [!NOTE]
     > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda. 
 
-   B. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Haga clic en **elegir**y, a continuación, en **listo**.
+   b. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365. Haga clic en **elegir**y, a continuación, en **listo**.
     
     Consulte la sección [más información](#more-information) para obtener sugerencias sobre cómo poner Microsoft Teams, grupos de Yammer y grupos de Office 365 en suspensión. 
     
     > [!NOTE]
     > En el caso poco probable de que se cambie el nombre principal de usuario (UPN) de una persona, también se cambiará la dirección URL de su cuenta de OneDrive para incorporar el nuevo UPN. Si esto ocurre, tendrá que modificar la retención agregando la nueva dirección URL de OneDrive del usuario y quitando la antigua. 
   
-   c. **Carpetas públicas de Exchange.** Mueva el control](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) de alternancia ![de alternancia a la posición **All** para poner todas las carpetas públicas en la organización de Exchange online en retención. No puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
+   c. **Carpetas públicas de Exchange.** Mueva el control](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) de alternancia ![de alternancia a la posición **All** para poner todas las carpetas públicas en la organización de Exchange online en retención. No puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
     
 9. Cuando haya acabado de agregar ubicaciones de contenido a la suspensión, haga clic en **siguiente**.
     
 10. Para crear una retención basada en consultas con condiciones, realice lo siguiente. De lo contrario, haga clic en **siguiente**
     
-    ![Crear una suspensión basada en consulta con condiciones](media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
+    ![Crear una suspensión basada en consulta con condiciones](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
     
-       A. En el cuadro debajo de **palabras clave**, escriba una consulta de búsqueda en el cuadro para que solo se coloque en retención el contenido que cumpla los criterios de búsqueda. Puede especificar palabras clave, propiedades de mensaje o propiedades de documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como **and**, **or**o **Not**. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se colocará en retención.
+       a. En el cuadro debajo de **palabras clave**, escriba una consulta de búsqueda en el cuadro para que solo se coloque en retención el contenido que cumpla los criterios de búsqueda. Puede especificar palabras clave, propiedades de mensaje o propiedades de documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como **and**, **or**o **Not**. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se colocará en retención.
     
-    B. Haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **Agregar condiciones** para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición se conecta lógicamente a la consulta de palabra clave (especificada en el cuadro de palabra clave) mediante el operador **AND**. Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a poner en retención.
+    b. Haga ![clic en](../media/ITPro-EAC-AddIcon.gif) agregar icono **Agregar condiciones** para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición se conecta lógicamente a la consulta de palabra clave (especificada en el cuadro de palabra clave) mediante el operador **AND**. Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a poner en retención.
 
     Para obtener más información acerca de la creación de una consulta de búsqueda y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
     
@@ -223,7 +223,7 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
 
 Después de un rato, se muestra información sobre la nueva retención en el panel de detalles de la página **suspensiones** para la suspensión seleccionada. Esta información incluye el número de buzones de correo y sitios en espera y estadísticas sobre el contenido que se ha puesto en suspensión, como el número total y el tamaño de los elementos que se encuentran en suspensión y la última vez que se calcularon las estadísticas de retención. Estas estadísticas de retención ayudan a identificar cuánto contenido está relacionado con el caso de exhibición de documentos electrónicos. 
   
-![Almacenar estadísticas](media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
+![Almacenar estadísticas](../media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
   
 Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
   
@@ -231,7 +231,7 @@ Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
     
 - El número de elementos en espera también incluye los elementos sin indexar encontrados en las ubicaciones de contenido. Si crea una suspensión basada en consulta, todos los elementos sin indexar en las ubicaciones de contenido se colocan en retención. Esto incluye los elementos sin indexar que no coinciden con los criterios de búsqueda de una retención basada en consultas y los elementos sin indexar que podrían estar fuera de una condición de intervalo de fechas. Esto es diferente a lo que sucede cuando se ejecuta una búsqueda de contenido, en la que los elementos no indexados que no coinciden con la consulta de búsqueda o se excluyen por una condición de intervalo de fechas no se incluyen en los resultados de la búsqueda. Para obtener más información acerca de los elementos sin indexar, vea [elementos parcialmente indizados en la búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md).
     
-- Puede obtener las estadísticas de retención más recientes haciendo clic en **actualizar estadísticas** para volver a ejecutar una estimación de búsqueda que calcula el número actual de elementos en espera. Si es necesario, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización en la barra de herramientas para actualizar las estadísticas de retención en el panel de detalles. 
+- Puede obtener las estadísticas de retención más recientes haciendo clic en **actualizar estadísticas** para volver a ejecutar una estimación de búsqueda que calcula el número actual de elementos en espera. Si es necesario, ****![haga clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización en la barra de herramientas para actualizar las estadísticas de retención en el panel de detalles. 
     
 - Es normal que el número de elementos que se retengan se incremente con el transcurso del tiempo porque los usuarios cuyo buzón o sitio está en espera suelen enviar o recibir nuevos mensajes de correo electrónico y crear nuevos documentos de SharePoint y OneDrive para la empresa.
     
@@ -248,19 +248,19 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
 3. En la página **principal** del caso, haga clic en la ficha **búsqueda** . 
     
-    ![Ficha de búsqueda](media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
+    ![Ficha de búsqueda](../media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
   
-4. En la página **Buscar** , haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **nueva búsqueda**. 
+4. En la página **Buscar** , haga ![clic en](../media/ITPro-EAC-AddIcon.gif) agregar icono **nueva búsqueda**. 
     
 5. En la página **Nueva búsqueda**, puede agregar palabras clave y condiciones para crear la consulta de búsqueda. 
     
-    ![Nueva búsqueda](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
+    ![Nueva búsqueda](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
 6. Puede especificar palabras clave, propiedades del mensaje, como las fechas de envío y recepción, o propiedades del documento, como nombres de archivo o la fecha en que se modificó por última vez un documento. Puede usar consultas más complejas que usen un operador booleano, como **and**, **or**, **Not**, **Near**o **ONEAR**. Además, puede buscar información confidencial (como los números de la seguridad social) en documentos o buscar en documentos que se han compartido de forma externa. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se incluirá en los resultados de la búsqueda. 
     
 7. Puede hacer clic en la casilla **Mostrar lista de palabras clave** y escribir una palabra clave en cada fila. Si hace esto, las palabras clave de cada fila están conectadas mediante el operador **or** en la consulta de búsqueda que se crea. 
     
-    ![Lista de palabras clave](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
+    ![Lista de palabras clave](../media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
     ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto le ayudará a identificar rápidamente las palabras clave más (y menos) efectivas. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para saber más sobre las estadísticas de búsqueda, consulte [Ver estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md).
     
@@ -272,7 +272,7 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
 9. En **ubicaciones: ubicaciones en espera**, elija las ubicaciones de contenido en las que desea realizar la búsqueda. Puede buscar buzones de correo, sitios y carpetas públicas en la misma búsqueda.
     
-    ![Ubicaciones, ubicaciones en suspensión](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
+    ![Ubicaciones, ubicaciones en suspensión](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
     - **Todas las ubicaciones** : Seleccione esta opción para buscar en todas las ubicaciones de contenido de la organización. Si selecciona esta opción, puede elegir buscar todos los buzones de Exchange (que incluye los buzones de todos los grupos de Microsoft Teams, Yammer y Office 365), todos los sitios de SharePoint y OneDrive para la empresa (que incluye los sitios para todos los equipos de Microsoft Teams, grupos de Yammer y grupos de Office 365) y todas las carpetas públicas.
     
@@ -280,7 +280,7 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
     - **Ubicaciones específicas.** Seleccione esta opción para seleccionar los buzones y sitios en los que desea buscar. Cuando seleccione esta opción y haga clic en **modificar**, aparecerá una lista de ubicaciones. Puede elegir buscar en cualquiera o todos los usuarios, grupos, equipos o ubicaciones de sitio.
     
-      ![Seleccionar ubicaciones específicas](media/97469b15-7be1-4aee-be27-f8343636152c.png)
+      ![Seleccionar ubicaciones específicas](../media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
       También puede optar por buscar en todas las carpetas públicas de la organización, pero si selecciona esta opción y busca en cualquier ubicación de contenido que esté en espera, cualquier consulta de una suspensión de casos basada en consultas no se aplicará a la consulta de búsqueda. En otras palabras, se busca en todo el contenido de una ubicación, no solo en el contenido que se conserva mediante una retención de casos basada en la consulta.
     
@@ -304,7 +304,7 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
     Se inicia la búsqueda. Después de un rato, se muestra una estimación de los resultados de la búsqueda en el panel de detalles. La estimación incluye el tamaño total y el número de elementos que coinciden con los criterios de búsqueda. La estimación de la búsqueda también incluye el número de elementos sin indexar en las ubicaciones de contenido en las que se realizó la búsqueda. El número de elementos no indexados que no cumplen los criterios de búsqueda se incluirán en las estadísticas de búsqueda que se muestran en el panel de detalles. Si un elemento sin indizar coincide con la consulta de búsqueda (porque otras propiedades de mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Si un elemento sin indexar se excluye por los criterios de búsqueda, tampoco se incluirá en la estimación de los elementos sin indexar.
     
-  Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización para actualizar la información en el panel de detalles. 
+  Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, ****![haga clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización para actualizar la información en el panel de detalles. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Paso 6: exportar los resultados de una búsqueda de contenido asociada a un caso
 
@@ -320,11 +320,11 @@ Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export
     
 3. En la página **principal** del caso, haga clic en **Buscar**.
     
-4. En la lista de búsquedas del caso, haga clic en la búsqueda de la que desea exportar resultados de búsqueda, ![haga clic en exportar](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) resultados de búsqueda **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
+4. En la lista de búsquedas del caso, haga clic en la búsqueda de la que desea exportar resultados de búsqueda, ![haga clic en exportar](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) resultados de búsqueda **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
     
     Se mostrará la página resultados de la **exportación** . 
     
-    ![Página de resultados de la exportación](media/ab0bb46d-310b-4374-8644-717146df6676.png)
+    ![Página de resultados de la exportación](../media/ab0bb46d-310b-4374-8644-717146df6676.png)
   
     El flujo de trabajo para exportar los resultados de una búsqueda de contenido asociada a un caso es el mismo que para exportar los resultados de búsqueda de una búsqueda en la página **Búsqueda de contenido**. Para obtener instrucciones paso a paso, consulte [exportar resultados](export-search-results.md)de la búsqueda de contenido.
     
@@ -333,9 +333,9 @@ Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export
   
 5. Haga clic en la pestaña **exportar** para mostrar la lista de trabajos de exportación que existen en ese caso. 
     
-    ![Ficha exportar](media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
+    ![Ficha exportar](../media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
   
-    Es posible que deba hacer ****![clic en actualizar](media/O365-MDM-Policy-RefreshIcon.gif) icono de actualización para actualizar la lista de trabajos de exportación de modo que muestre el trabajo de exportación que ha creado. Los trabajos de exportación tienen el mismo nombre que la búsqueda de contenido correspondiente con **_Export** anexado al final del nombre de búsqueda. 
+    Es posible que deba hacer ****![clic en actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) icono de actualización para actualizar la lista de trabajos de exportación de modo que muestre el trabajo de exportación que ha creado. Los trabajos de exportación tienen el mismo nombre que la búsqueda de contenido correspondiente con **_Export** anexado al final del nombre de búsqueda. 
     
 6. Haga clic en el trabajo de exportación que acaba de crear para mostrar la información de estado en el panel de detalles. Esta información incluye el porcentaje de elementos que se han transferido a un área de almacenamiento de Azure en la nube de Microsoft.
     
@@ -361,10 +361,10 @@ Como alternativa a la exportación de los resultados de una sola búsqueda de co
   
 5. Después de seleccionar las búsquedas, aparece la página **acciones en masa** . 
     
-    ![En la página acciones en masa, haga clic en exportar resultados](media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
+    ![En la página acciones en masa, haga clic en exportar resultados](../media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
   
     
-6. Haga ![clic en exportar](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **resultados**de búsqueda.
+6. Haga ![clic en exportar](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **resultados**de búsqueda.
 
 7. En la página **exportar resultados** , asigne un nombre único a la exportación, seleccione Opciones de resultados y elija cómo se exportará el contenido. Haga clic en **Exportar**.
     
@@ -375,9 +375,9 @@ Como alternativa a la exportación de los resultados de una sola búsqueda de co
   
 8. Después de iniciar la exportación, haga clic en la pestaña **exportar** para mostrar la lista de trabajos de exportación para ese caso. 
     
-    ![Ficha exportar, varias búsquedas](media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
+    ![Ficha exportar, varias búsquedas](../media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
   
-    Puede que tenga que hacer **** ![clic en actualizar](media/O365-MDM-Policy-RefreshIcon.gif) icono para actualizar la lista de trabajos de exportación para mostrar el trabajo de exportación que ha creado. Las búsquedas incluidas en el trabajo de exportación se enumeran en la columna **búsquedas** . 
+    Puede que tenga que hacer **** ![clic en actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) icono para actualizar la lista de trabajos de exportación para mostrar el trabajo de exportación que ha creado. Las búsquedas incluidas en el trabajo de exportación se enumeran en la columna **búsquedas** . 
     
 8. Haga clic en el trabajo de exportación que acaba de crear para mostrar la información de estado en el panel de detalles. Esta información incluye el porcentaje de elementos que se han transferido a un área de almacenamiento de Azure en la nube de Microsoft.
     
@@ -416,9 +416,9 @@ Al preparar los resultados de búsqueda para la exhibición avanzada de document
     
 3. En la página **principal** del caso, haga clic en **Buscar**y, a continuación, seleccione la búsqueda.
     
-4. En el panel de detalles, ![haga clic en exportar](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) resultados de búsqueda **más**y, a continuación, haga clic en **preparar exhibición avanzada de**documentos electrónicos.
+4. En el panel de detalles, ![haga clic en exportar](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) resultados de búsqueda **más**y, a continuación, haga clic en **preparar exhibición avanzada de**documentos electrónicos.
     
-    ![Preparar los resultados para la exhibición avanzada de documentos electrónicos](media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
+    ![Preparar los resultados para la exhibición avanzada de documentos electrónicos](../media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
   
 5. En la página **preparar para la exhibición avanzada** de documentos electrónicos, elija preparar una de las siguientes opciones: 
     
@@ -448,11 +448,11 @@ Para ir a un caso en eDiscovery avanzado:
     
 3. En la página **principal** del caso, haga clic en **cambiar a exhibición avanzada**de documentos electrónicos.
     
-    ![Seleccionar cambiar a eDiscovery avanzado](media/d7e31558-e79c-4782-b841-2b735568a576.png)
+    ![Seleccionar cambiar a eDiscovery avanzado](../media/d7e31558-e79c-4782-b841-2b735568a576.png)
   
     Se muestra la barra de progreso **conectarse a la exhibición avanzada de** documentos electrónicos. Cuando está conectado a la exhibición avanzada de documentos electrónicos, se muestra una lista de contenedores en la página. 
     
-    ![Barra de progreso de eDiscorvery avanzada](media/4a84273d-765b-44b8-9006-c20e810ea393.png)
+    ![Barra de progreso de eDiscorvery avanzada](../media/4a84273d-765b-44b8-9006-c20e810ea393.png)
   
     Estos contenedores representan los resultados de búsqueda que ha preparado para el análisis en la exhibición avanzada de documentos electrónicos en el paso 7. El nombre del contenedor tiene el mismo nombre que la búsqueda de contenido en el caso del centro de seguridad & cumplimiento. Los contenedores de la lista son los que ha preparado. Si un usuario diferente ha preparado los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los contenedores correspondientes no se incluirán en la lista.
     
@@ -483,7 +483,7 @@ Para cerrar un caso:
     
     Se muestra la página flotante **administrar este caso** . 
     
-3. En **administrar estado de caso**, ![haga clic en quitar](media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) el **cierre de mayúsculas**del botón de inspección.
+3. En **administrar estado de caso**, ![haga clic en quitar](../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) el **cierre de mayúsculas**del botón de inspección.
     
     Se muestra una advertencia que indica que las suspensiones asociadas con el caso se desactivarán.
     
@@ -493,7 +493,7 @@ Para cerrar un caso:
     
 5. Cierre la página **administrar este caso** . 
     
-6. En la **Página exhibición** de documentos ![electrónicos,](media/O365-MDM-Policy-RefreshIcon.gif) haga clic en actualizar icono **Actualizar** para actualizar el estado del caso cerrado. El proceso de cierre puede tardar hasta 60 minutos en completarse. 
+6. En la **Página exhibición** de documentos ![electrónicos,](../media/O365-MDM-Policy-RefreshIcon.gif) haga clic en actualizar icono **Actualizar** para actualizar el estado del caso cerrado. El proceso de cierre puede tardar hasta 60 minutos en completarse. 
     
     Una vez finalizado el proceso, el estado del caso cambia a **cerrado** en la página de **exhibición** de documentos electrónicos. Vuelva a hacer clic en el nombre del caso para mostrar la página flotante **administrar este caso** , que contiene información sobre cuándo se cerró el caso y quién lo cerró. 
      
@@ -517,7 +517,7 @@ Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación 
     
 5. Cierre la página **administrar este caso** . 
     
-6. En la **Página exhibición** de documentos ![electrónicos,](media/O365-MDM-Policy-RefreshIcon.gif) haga clic en actualizar icono **Actualizar** para actualizar el estado del caso reabierto. El proceso de reapertura puede tardar hasta 60 minutos en completarse. 
+6. En la **Página exhibición** de documentos ![electrónicos,](../media/O365-MDM-Policy-RefreshIcon.gif) haga clic en actualizar icono **Actualizar** para actualizar el estado del caso reabierto. El proceso de reapertura puede tardar hasta 60 minutos en completarse. 
     
     Una vez finalizado el proceso, el estado del caso cambia a **activo** en la página de **exhibición** de documentos electrónicos. 
   

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 80c5bb701c7805f673280d24903935c2951046b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590801"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072887"
 ---
 # <a name="insider-risk-management-alerts-preview"></a>Alertas de administración de riesgos de Insider (versión preliminar)
 
@@ -34,7 +34,7 @@ El panel de **alertas** de riesgo de Insider le permite ver y emprender acciones
     - Tiempo medio para resolver alertas de gravedad media, enumeradas en horas, días o meses.
     - Tiempo medio para resolver alertas de gravedad baja, enumeradas en horas, días o meses.
 
-![Panel de alertas de administración de riesgos de Insider](media/insider-risk-alerts-dashboard.png)
+![Panel de alertas de administración de riesgos de Insider](../media/insider-risk-alerts-dashboard.png)
 
 ## <a name="alert-status-and-severity"></a>Estado y gravedad de la alerta
 

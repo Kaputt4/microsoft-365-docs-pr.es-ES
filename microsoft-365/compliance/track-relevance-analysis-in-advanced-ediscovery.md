@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Obtenga información sobre cómo ver e interpretar el estado de aprendizaje de relevancia y los resultados de los problemas de caso en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: 5fa9fe49f1a644f2a64321c1ec106b11c487c885
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 224a817e662462d0c51650e7bd364e717dbfbd62
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601407"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069531"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Seguimiento del análisis de relevancia en Office 365 Advanced eDiscovery
 
@@ -44,7 +44,7 @@ En la exhibición avanzada de documentos electrónicos, la pestaña seguimiento 
     
     En el ejemplo, se muestra una evaluación completada correctamente de un problema, indicada por el indicador de progreso de color completado y la marca de verificación. Se está realizando un etiquetado, pero el caso se considera inestable (el estado de estabilidad también se muestra en un Consejo de herramientas). La recomendación de paso siguiente es "Training". 
     
-    ![Formación del seguimiento de relevancia paso 1](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
+    ![Formación del seguimiento de relevancia paso 1](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
     La vista expandida muestra información adicional y opciones. El margen de error actual mostrado es el margen de error de la recuperación en el estado actual de la evaluación, dados los archivos de evaluación existentes (ya etiquetados).
     
@@ -55,7 +55,7 @@ En la exhibición avanzada de documentos electrónicos, la pestaña seguimiento 
     
     En el **seguimiento**de **relevancia** \> , el indicador de progreso de formación y la información sobre herramientas indican el número estimado de muestras adicionales necesarias para alcanzar la estabilidad. Esta estimación proporciona una pauta para la formación adicional necesaria.
     
-    ![Formación del seguimiento de relevancia](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Formación del seguimiento de relevancia](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
 2. Cuando haya terminado de realizar el etiquetado y tenga que continuar con la formación, haga clic en **entrenamiento**. Se genera otro conjunto de archivos de ejemplo a partir del conjunto de archivos cargados para obtener más formación. A continuación, se vuelve a la pestaña etiqueta para etiquetar y entrenar a más archivos.
     
@@ -100,13 +100,13 @@ Si hay incoherencias en el etiquetado de archivos, puede afectar al análisis. E
 
 En la **pestaña \> seguimiento de relevancia** , expanda la fila de un problema y, junto a **resultados detallados**, haga clic en **Ver**. Se mostrarán los paneles de resultados detallados, tal y como se describe a continuación.
   
-![Resultados detallados de la formación de relevancia](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Resultados detallados de la formación de relevancia](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Resumen de etiquetación
 
  En el ejemplo que se muestra a continuación, el **Resumen de etiquetado** muestra los totales de cada proceso de etiquetado de archivos de evaluación, formación y captura. 
   
-![Resumen de etiquetado del seguimiento de relevancia](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Resumen de etiquetado del seguimiento de relevancia](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
 ### <a name="keywords"></a>Palabras clave
 
@@ -120,7 +120,7 @@ La lista de palabras clave de eDiscovery avanzada se puede usar para complementa
 
 El panel **progreso del entrenamiento** incluye un gráfico de progreso de formación y una visualización del indicador de calidad, como se muestra en el ejemplo siguiente. 
   
-![Progreso de formación del seguimiento de relevancia](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Progreso de formación del seguimiento de relevancia](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
  **Indicador de calidad de formación**: muestra la clasificación de la coherencia de etiquetado de la siguiente manera:
   
@@ -156,7 +156,7 @@ El panel de **resultados de cálculo por lotes** incluye el número de archivos 
 
 El panel de **estadísticas de formación** muestra las estadísticas y los gráficos basados en los resultados de la formación avanzada de relevancia de eDiscovery. 
   
-![Estadísticas de formación del seguimiento de relevancia](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
+![Estadísticas de formación del seguimiento de relevancia](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 Esta vista muestra lo siguiente:
   

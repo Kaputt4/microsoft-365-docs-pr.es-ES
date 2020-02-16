@@ -13,12 +13,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Use la herramienta de recopilación de Microsoft PST para buscar en la red de su organización para obtener un inventario de los archivos PST que están dispersos en toda la organización. Después de encontrar los archivos PST, puede usar la herramienta de recopilación de PST para copiarlos en una ubicación central para poder importarlos a Office 365.
-ms.openlocfilehash: 59c4222966bba4e72e73135aa57fb45e0362f765
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 736e317318f860936450b7412bc465fc7c9d59e1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594561"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073937"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST en la organización
 
@@ -33,7 +33,7 @@ Otra cosa que puede hacer con la herramienta de recopilación de PST es impedir 
 
 A continuación, se presenta una introducción rápida al proceso de uso de la herramienta de recopilación de PST para buscar, controlar, recopilar y eliminar archivos PST en la organización.
   
-![Información general sobre el proceso de la herramienta de recopilación de PST](media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
+![Información general sobre el proceso de la herramienta de recopilación de PST](../media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
   
 1. **[Paso 1: buscar archivos PST en la red](#step-1-find-pst-files-on-your-network)** : cuando ejecuta la herramienta para buscar archivos PST, especifica una ubicación, como una unidad organizativa que contiene objetos de Active Directory para equipos cliente y servidor. También puede buscar equipos específicos o recursos compartidos de archivos de red. Al ejecutar la herramienta, se instala un agente de colección "ligero" en los equipos de destino. Este agente busca archivos PST en el equipo de destino y, a continuación, envía información a la herramienta de recopilación de PST sobre cualquier archivo PST que encuentre. La herramienta crea archivos de registro que contienen información sobre los archivos PST que se encontraron en las ubicaciones especificadas. Estos archivos se usan cuando se ejecuta la herramienta en pasos posteriores. 
     
@@ -240,7 +240,7 @@ Una vez que los archivos PST que ha encontrado y recopilado se han importado a l
     
     |Parámetro * * * *|****Descripción****|Ejemplos * * * *|
     |:-----|:-----|:-----|
-    | `DataSource` <br/> |Especifica el tipo de datos que se va a buscar. Actualmente, puede usar la herramienta de recopilación de PST para buscar archivos PST. ![separador](media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
+    | `DataSource` <br/> |Especifica el tipo de datos que se va a buscar. Actualmente, puede usar la herramienta de recopilación de PST para buscar archivos PST. ![separador](../media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |Especifica el tipo de operación que realizará la herramienta. Use el valor `Delete` para eliminar los archivos PST que se encontraron al ejecutar la herramienta en el modo de búsqueda.  <br/> | `-Mode Delete` <br/> |
     | `JobName` <br/> |Especifica el nombre de un trabajo de colección de archivos PST existente. Debe usar el mismo nombre de trabajo que usó al ejecutar la herramienta en el modo de búsqueda y el modo de recopilación en el paso 1 y el paso 3. Este nombre de trabajo también se agrega al nombre del archivo de registro que se crea al ejecutar la herramienta en el modo de eliminación.  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |Especifica la carpeta que contiene el archivo de configuración. XML que se creó al ejecutar la herramienta en el modo de recopilación. Use el mismo valor que usó para este parámetro en el paso 3.  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |

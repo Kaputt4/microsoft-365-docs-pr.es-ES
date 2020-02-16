@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0da96fe4148ffc30ac8e2f7854157675786cd321
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582879"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072773"
 ---
 # <a name="insider-risk-management-in-microsoft-365-preview"></a>Administración de riesgos de Insider en Microsoft 365 (versión preliminar)
 
@@ -56,7 +56,7 @@ La administración de riesgos de Insiders le ayuda a identificar, investigar y e
 
 La identificación y resolución de actividades de riesgo internas y problemas de cumplimiento de la administración de riesgos de Insider en Microsoft 365 usa el siguiente flujo de trabajo:
 
-![Flujo de trabajo de administración de riesgos de internación](media/insider-risk-workflow.png)
+![Flujo de trabajo de administración de riesgos de internación](../media/insider-risk-workflow.png)
 
 ### <a name="policies"></a>Directivas
 
@@ -70,7 +70,7 @@ Puede seleccionar entre las siguientes [plantillas de directiva](insider-risk-ma
 
 Para obtener más información, vea [directivas de administración de riesgos de Insider](insider-risk-management-policies.md).
 
-![Panel de directivas de administración de riesgos de Insider](media/insider-risk-policy-dashboard.png)
+![Panel de directivas de administración de riesgos de Insider](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>Alertas
 
@@ -84,7 +84,7 @@ Los indicadores de riesgo generan automáticamente alertas que coinciden con las
 
 Para obtener más información, vea [alertas de administración de riesgos de Insider](insider-risk-management-alerts.md).
 
-![Panel de alertas de administración de riesgos de Insider](media/insider-risk-alerts-dashboard.png)
+![Panel de alertas de administración de riesgos de Insider](../media/insider-risk-alerts-dashboard.png)
 
 ### <a name="triage"></a>Prioridades
 
@@ -92,7 +92,7 @@ Las nuevas actividades que necesitan investigación generan automáticamente ale
 
 Las alertas se resuelven abriendo un nuevo caso, asignando la alerta a un caso existente o desechando la alerta. Mediante el uso de filtros de alerta, es fácil identificar rápidamente las alertas por estado, gravedad o tiempo detectado. Como parte del proceso de evaluación de prioridades, los revisores pueden ver los detalles de la alerta para la coincidencia de la Directiva, ver la actividad de usuario asociada a la coincidencia, ver la gravedad de la alerta y revisar la información de Perfil de usuario.
 
-![Clasificación de la administración de riesgos de Insider](media/insider-risk-triage.png)
+![Clasificación de la administración de riesgos de Insider](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>Averiguar
 
@@ -106,9 +106,9 @@ Al seleccionar un caso en el panel del caso, se abre el caso de investigación y
 
 Para obtener más información, vea [casos de administración de riesgos de Insider](insider-risk-management-cases.md).
 
-![Investigación de administración de riesgos de Insider](media/insider-risk-investigate.png)
+![Investigación de administración de riesgos de Insider](../media/insider-risk-investigate.png)
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez que se han investigado los casos, los revisores pueden tomar medidas rápidamente para resolver el caso o colaborar con otras partes interesadas de riesgo de la organización. Cuando los empleados infringen accidental o involuntariamente las condiciones de las directivas, se puede enviar una notificación de recordatorio simple al empleado a partir de plantillas de notificación que puede configurar para su organización. Estos avisos pueden servir como recordatorios sencillos o dirigir al empleado a un entrenamiento o guía de refresco para ayudar a evitar un comportamiento arriesgado futuro. Para obtener más información, consulte [plantillas de aviso de administración de riesgos de Insider](insider-risk-management-notices.md).
 

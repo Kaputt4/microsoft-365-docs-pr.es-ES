@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Obtenga información sobre cómo usar IRM de SharePoint Online a través de Microsoft Azure Active Directory Rights Management Services (RMS) para proteger listas y bibliotecas de documentos de SharePoint.
-ms.openlocfilehash: 47321ea6151b51ac3637b3c044af37fbbc032d56
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f5aae2ba78997a8277989dcc3b5e68e00f0bfcb4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597447"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069617"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center.
 
@@ -38,7 +38,7 @@ Después de activar el servicio Rights Management, inicie sesión en el centro d
   
 1. Inicie sesión en Office 365 como administrador global o de SharePoint.
     
-2. Seleccione el icono del iniciador de aplicaciones ![Icono del iniciador de aplicaciones de Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) situado en la esquina superior izquierda y elija **Administración** para abrir el centro de administración de Microsoft 365. (Si no ve el icono Administración, no tiene permisos de administrador de Office 365 en su organización). 
+2. Seleccione el icono del iniciador de aplicaciones ![Icono del iniciador de aplicaciones de Office 365](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) situado en la esquina superior izquierda y elija **Administración** para abrir el centro de administración de Microsoft 365. (Si no ve el icono Administración, no tiene permisos de administrador de Office 365 en su organización). 
     
 3. En el panel izquierdo, elija **Centro** \> de administración de **SharePoint**.
     

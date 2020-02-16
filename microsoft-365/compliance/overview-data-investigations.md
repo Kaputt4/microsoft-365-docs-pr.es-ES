@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: cd60b16f6d0f968c0c87f3e44ee2f643c90ebb10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597797"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071087"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -37,7 +37,7 @@ Para tener acceso a una investigación de datos y realizarla, debe ser miembro d
 
 En las secciones siguientes se describe cada paso del flujo de trabajo integrado en investigaciones de datos (versión preliminar). En la siguiente captura de pantalla se muestra la pestaña **Inicio** de una investigación llamada *High Risk: Finance Documents fuga*. 
 
-![Flujo de trabajo en la herramienta investigaciones de datos](media/DataInvestigationsWorkflow.png)
+![Flujo de trabajo en la herramienta investigaciones de datos](../media/DataInvestigationsWorkflow.png)
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Buscar datos confidenciales, malintencionados o mal colocados
 

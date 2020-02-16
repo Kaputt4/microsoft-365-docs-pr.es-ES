@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 18d67983d4e5e934e606944c1502dd76331812a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dffbc68714470e65557c58ded710ae53d64a3868
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597637"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070087"
 ---
 # <a name="review-the-data-in-evidence"></a>Revisar los datos de pruebas
 
@@ -48,14 +48,14 @@ Esta vista muestra varias propiedades de metadatos asociadas con el documento se
 
 A continuación, se muestra un ejemplo de los metadatos de archivo para un documento. Para obtener más información acerca de los campos de metadatos, vea [Document Metadata Fields in Data investigaciones (Preview)](document-metadata-fields.md).
 
-![Panel metadatos de archivo](media/Reviewimage2.png)
+![Panel metadatos de archivo](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Vista nativa
 
 El visor nativo muestra la vista más exacta de un documento en su formato nativo. La vista nativa es compatible con cientos de tipos de archivo y está destinada a mostrar documentos en la experiencia nativa más real posible. Para los archivos de Microsoft Office, el visor nativo usa la versión Web de las aplicaciones de Office. Esto le permite ver contenido como comentarios en diferentes documentos de Office, fórmulas y filas o columnas ocultas en Excel y la vista de notas en PowerPoint.
 
 ![Vista nativa
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Vista de texto
 
@@ -70,12 +70,12 @@ El visor de texto proporciona una vista del texto extraído de un archivo. Omite
 **Ejemplo de contador de línea y resaltado de búsqueda en el texto y en la barra de desplazamiento**
 
 ![Vista de texto
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 **Ejemplo de la vista diff**
 
 ![Vista de diferencias
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Vista de anotar
 
@@ -101,7 +101,7 @@ La vista anotar también proporciona las siguientes funciones de navegación:
 
 **Ejemplo de la vista anotar**
 
-![Vista de anotar](media/Reviewimage1.png)
+![Vista de anotar](../media/Reviewimage1.png)
 
 > [!NOTE]
 > Las anotaciones se aplican a una copia del documento que se agregó al conjunto de evidencias. No se han anotado los documentos originales en el servicio activo.

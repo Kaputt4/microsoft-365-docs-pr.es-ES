@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 161118bb8ff8a5c79ee507d329e20bad1421d8fd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac029959470d92fff9c0c5e942cd667f659e307d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590621"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072827"
 ---
 # <a name="insider-risk-management-policies-preview"></a>Directivas de administración de riesgos de Insider (versión preliminar)
 
@@ -34,7 +34,7 @@ El **Panel de directivas** permite ver rápidamente las directivas de la organiz
 - **Eficacia**de la Directiva: el porcentaje determinado por las alertas confirmadas totales dividido por las acciones totales realizadas en las alertas (que es la suma de las alertas que se confirmaron o despasón durante el año anterior).
 - **Active**: el estado del caso, ya sea *sí* o *no*.
 
-![Panel de directivas de administración de riesgos de Insider](media/insider-risk-policy-dashboard.png)
+![Panel de directivas de administración de riesgos de Insider](../media/insider-risk-policy-dashboard.png)
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 

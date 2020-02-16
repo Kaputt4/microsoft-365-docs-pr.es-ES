@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Use la característica estadísticas de búsqueda para mostrar y comparar estadísticas de varias búsquedas de contenido en el centro de seguridad & cumplimiento. También puede configurar la lista de palabras clave al crear o editar una consulta de búsqueda para obtener estadísticas mejoradas que muestren el número de elementos que coinciden con cada palabra clave o frase de palabras clave.
-ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601257"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068995"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Ver las estadísticas de palabras clave para resultados de búsqueda de contenido
 
@@ -37,9 +37,9 @@ Para mostrar las estadísticas de las búsquedas de contenido:
   
 1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido**de **búsqueda** \> .
     
-2. En la lista de búsquedas, seleccione una o más búsquedas y, a continuación ****![, haga clic en el](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)botón estadísticas de búsqueda de estadísticas de búsqueda.
+2. En la lista de búsquedas, seleccione una o más búsquedas y, a continuación ****![, haga clic en el](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)botón estadísticas de búsqueda de estadísticas de búsqueda.
     
-    ![Seleccione varias búsquedas y, a continuación, haga clic en estadísticas de búsqueda](media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
+    ![Seleccione varias búsquedas y, a continuación, haga clic en estadísticas de búsqueda](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
 3. En la página **estadísticas de búsqueda** , haga clic en uno de los siguientes vínculos para mostrar estadísticas sobre las búsquedas seleccionadas. 
     
@@ -47,7 +47,7 @@ Para mostrar las estadísticas de las búsquedas de contenido:
     
     Esta página muestra estadísticas similares a las que se muestran en el panel de detalles en la página **búsqueda de contenido** . Se muestran las estadísticas de todas las búsquedas seleccionadas. Tenga en cuenta que también puede volver a ejecutar las búsquedas seleccionadas desde esta página para actualizar las estadísticas. 
     
-    ![Resumen de las estadísticas de las búsquedas seleccionadas](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
+    ![Resumen de las estadísticas de las búsquedas seleccionadas](../media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
     a.  El nombre de la búsqueda de contenido. Como se mencionó anteriormente, puede mostrar y comparar las estadísticas de varias búsquedas.
     
@@ -63,7 +63,7 @@ Para mostrar las estadísticas de las búsquedas de contenido:
     
     En esta página se muestran estadísticas sobre la consulta de búsqueda.
     
-    ![Estadísticas de consultas de búsqueda para las búsquedas seleccionadas](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
+    ![Estadísticas de consultas de búsqueda para las búsquedas seleccionadas](../media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
     a. El nombre de la búsqueda de contenido para la que la fila contiene estadísticas de consulta.
     
@@ -86,13 +86,13 @@ Para mostrar las estadísticas de las búsquedas de contenido:
     
     f. El número de elementos (desde la ubicación de contenido especificada) que coinciden con la consulta de búsqueda enumerada en la columna **consulta** . Como se explicó anteriormente, si un elemento contiene varias instancias de una palabra clave que se está buscando, solo se considera una vez en la columna this. 
     
-    REG. Tamaño total de todos los elementos encontrados (en la ubicación de contenido especificada) que coinciden con la consulta de búsqueda en la columna de **consulta** . 
+    g. Tamaño total de todos los elementos encontrados (en la ubicación de contenido especificada) que coinciden con la consulta de búsqueda en la columna de **consulta** . 
     
     **Principales ubicaciones**
     
     Esta página muestra estadísticas sobre el número de elementos que coinciden con la consulta de búsqueda en cada ubicación de contenido en la que se ha buscado. Se mostrarán las 1000 ubicaciones más importantes. Si ve las estadísticas de varias búsquedas, se muestran las principales 1.000 ubicaciones de cada búsqueda. Tenga en cuenta que una ubicación de contenido no se incluye en esta página si no contiene elementos que coinciden con la consulta de búsqueda.
     
-    ![Estadísticas sobre el número de elementos encontrados en las ubicaciones de contenido en las que se realizó la búsqueda](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
+    ![Estadísticas sobre el número de elementos encontrados en las ubicaciones de contenido en las que se realizó la búsqueda](../media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
     a. Nombre de la ubicación del contenido.
     
@@ -109,11 +109,11 @@ Para crear una lista de palabras clave y ver las estadísticas de palabras clave
   
 1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido**de **búsqueda** \> .
     
-2. En la lista de búsquedas de contenido, haga clic en y en una búsqueda y, a](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)continuación, haga clic en **Editar** ![icono Editar.
+2. En la lista de búsquedas de contenido, haga clic en y en una búsqueda y, a](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)continuación, haga clic en **Editar** ![icono Editar.
     
 3. Haga clic en **consulta** y, a continuación, realice las siguientes acciones: 
     
-    ![Haga clic en la casilla Mostrar lista de palabras clave y escriba una palabra clave en cada fila.](media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
+    ![Haga clic en la casilla Mostrar lista de palabras clave y escriba una palabra clave en cada fila.](../media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
     a. Haga clic en la casilla **Mostrar lista de palabras clave** . 
     
@@ -121,11 +121,11 @@ Para crear una lista de palabras clave y ver las estadísticas de palabras clave
     
 4. Después de agregar las palabras clave para las que desea buscar y obtener estadísticas, haga clic en **Buscar** para ejecutar la búsqueda revisada. 
     
-5. Una vez finalizada la búsqueda, selecciónela en la lista de búsquedas y, a continuación **** ![, haga clic en el](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)botón estadísticas de búsqueda de estadísticas de búsqueda. También puede mostrar y comparar las estadísticas de palabras clave para varias búsquedas.
+5. Una vez finalizada la búsqueda, selecciónela en la lista de búsquedas y, a continuación **** ![, haga clic en el](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)botón estadísticas de búsqueda de estadísticas de búsqueda. También puede mostrar y comparar las estadísticas de palabras clave para varias búsquedas.
     
 6. En la página **estadísticas de búsqueda** , haga clic en **consulta** para mostrar las estadísticas de palabras clave de las búsquedas seleccionadas. 
     
-    ![Se muestran las estadísticas de cada palabra clave de las búsquedas seleccionadas](media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
+    ![Se muestran las estadísticas de cada palabra clave de las búsquedas seleccionadas](../media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
   
     Como se muestra en la captura de pantalla anterior, se muestran las estadísticas de cada palabra clave; Esto incluye: 
     

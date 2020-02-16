@@ -20,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'El uso compartido es una actividad clave en SharePoint Online y OneDrive para la empresa. Los administradores ahora pueden usar la auditoría de uso compartido en el registro de auditoría de Office 365 para identificar recursos que se han compartido con usuarios fuera de la organización. '
-ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597287"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069247"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Auditar el uso compartido para buscar recursos compartidos con usuarios externos
 
@@ -99,13 +99,13 @@ El primer paso es buscar eventos de uso compartido en el registro de auditoría 
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de**registros de auditoría**de **búsqueda**  > .
+3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Buscar**  > **Búsqueda de registros de auditoría**.
     
-    La página del**registro de auditoría de búsqueda**será mostrada. 
+    La página de **Búsqueda de registros de auditoría** se mostrará. 
     
 4. En **actividades**, haga clic en **compartir y obtener acceso a actividades de solicitud** para buscar eventos relacionados con el uso compartido. 
     
-    ![En actividades, seleccione compartir y actividades de solicitud de acceso](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![En actividades, seleccione compartir y actividades de solicitud de acceso](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Seleccione un intervalo de fecha y hora para buscar los eventos de uso compartido que se produjeron dentro de ese período. 
     

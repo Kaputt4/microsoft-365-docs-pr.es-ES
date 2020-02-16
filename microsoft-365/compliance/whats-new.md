@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 2ec046b6b5aa78e5eb44bbe6eebff222752f9c18
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: c3537657eb0bd3bf5b31f1b90c513c3e49eef000
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774206"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068725"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -32,11 +32,71 @@ Estamos agregando de forma continuada nuevas características al [centro de cump
 > ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 Y visite el [mapa de ruta de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) para saber más sobre las características de 365 Microsoft que se lanzaron, están en desarrollo, se han cancelado o han sido publicadas anteriormente.
 
+## <a name="january-2020"></a>Enero de 2020
+
+La espera ha finalizado. Nos complace anunciar que el centro de cumplimiento de Microsoft 365 está disponible para todos los clientes con los planes de Microsoft 365, Office 365, Enterprise Mobility + Security (EMS) y Windows 10 Enterprise. Cualquier dato o Directiva que estuviera administrando en el centro de cumplimiento de Office 365 Security & está disponible en el centro de cumplimiento, por lo que no es necesario saltar hacia delante y hacia atrás.
+
+> [!TIP]
+> Vuelva a leer la actualización del mes anterior para obtener una vista previa de algunas de las [nuevas soluciones](#new-compliance-solutions) que se han mostrado recientemente, así como un [mapa de ruta](#updated-compliance-solutions) que muestra dónde están ahora en directo las características de cumplimiento del centro de seguridad & cumplimiento de Office 365 en Microsoft 365.
+
+Marque y recorra ahora para [https://compliance.microsoft.com](https://compliance.microsoft.com) repasar su punto de partida único para administrar el cumplimiento en su organización... o [Lea este artículo](microsoft-365-compliance-center.md) para profundizar un poco más.
+
+![Página principal del centro de cumplimiento de Microsoft 365](../media/mcc-home-ga.png)
+
+También hemos lanzado soluciones nuevas y actualizadas este mes. Este es un vistazo rápido a los puntos destacados.
+
+### <a name="now-in-preview"></a>Ahora en versión preliminar
+
+**Administración de riesgos de Insider (versión preliminar)**
+
+Nos complace anunciar que nuestra solución de administración de riesgos de Insider se encuentra ahora en versión preliminar pública. En pocas palabras, la administración de riesgos de Insiders ayuda a su organización a identificar de forma inteligente y a emprender acciones sobre los riesgos de Insider proporcionando:
+
+- Controles de anonimato que ayudan a garantizar la privacidad del usuario.
+- Plantillas de directivas inteligentes con indicadores nativos y de terceros que identifican las amenazas internas, como las pérdidas de datos.
+- Flujos de trabajo de investigación end-to-end integrados que se extienden por los equipos de ti, recursos humanos y legales.
+
+Nos encantaría oír su opinión. Cuando use la solución, déjenos comentarios para asegurarnos de que estamos satisfaciendo sus necesidades a medida que nos encontramos en la disponibilidad general.
+
+[Obtenga más información sobre la administración de riesgos de Insiders](insider-risk-management.md)
+
+### <a name="just-launched"></a>Acaba de iniciar
+
+**Cumplimiento con la comunidad**
+
+Graduación de la fase de vista previa a la disponibilidad completa, el cumplimiento de la comunicación es un componente clave de nuestro nuevo conjunto de soluciones de riesgo de Insider. Esta sólida solución ayuda a minimizar los riesgos de comunicación mediante flujos de trabajo para detectar, investigar y realizar acciones de corrección para los mensajes que no cumplen los estándares de la organización.
+
+Los comentarios de los clientes durante la vista previa resultaron fantásticos. Resultó en varias mejoras, incluida una experiencia de primera ejecución para ayudarle a empezar, mejoras en las acciones de investigación y corrección, entre otras cosas.
+
+[Obtenga más información sobre el cumplimiento de la comunicación](communication-compliance.md)
+
+![Página cumplimiento de la comunicación en el centro de cumplimiento de Microsoft 365 que muestra la primera tarjeta de la experiencia de bienvenida](../media/mcc-communication-compliance-page-with-fre.png)
+
+**Conectores de datos**
+
+Anteriormente compartiendo espacio con otras características de ' importación ' en el centro de seguridad & cumplimiento de Office 365, los conectores de datos ahora tienen su propio hogar en el centro de cumplimiento de Microsoft 365. Use la nueva página "conectores de datos" para importar y archivar datos de los archivos de recursos humanos de la organización (HR) y varias plataformas de terceros (como Facebook, LinkedIn, Twitter y el modo Instant Bloomberg) a los buzones de la organización de Microsoft 365. Una vez importado, estos datos se pueden administrar en varias soluciones de cumplimiento, como eDiscovery, la administración de riesgos de Insider, el cumplimiento de comunicaciones, las directivas de retención, y más.
+
+[Obtenga más información sobre conectores de datos](archiving-third-party-data.md)
+
+![Página conectores de datos en el centro de cumplimiento de Microsoft 365](../media/mcc-data-connectors-page.png)
+
+### <a name="noteworthy-updates"></a>Actualizaciones notables
+
+**Nuevas plantillas de evaluación para la puntuación de cumplimiento (versión preliminar)**
+
+Siempre trabajando duro para ayudarle a adelantarse al panorama de cumplimiento en constante evolución, nuestro equipo de puntuación de cumplimiento ha enviado un nuevo conjunto de plantillas para ayudarle a evaluar la postura de cumplimiento de la organización con respecto a las normativas recientes y obtener orientación sobre cómo implementar controles más efectivos. Verá nuevas plantillas para:
+
+- ISO/IEC 27701:2019
+- Ley de privacidad del consumidor de California (CCPA)
+- Ley de protección de datos general de Brasil (lei Geral de proteção de dados-LGPD)
+- SOC 1 tipo 2 y SOC 2 tipo 2
+
+[Más información sobre las plantillas de puntuación de cumplimiento](compliance-score.md#templates)
+
 ## <a name="november--december-2019"></a>Noviembre & 2019 de diciembre
 
 Durante las vacaciones, empezamos a implementar todas las grandes soluciones de cumplimiento que se mostraban en la demostración. La mayoría de estos están en un estado de vista previa, por lo que debe probarlos y asegurarse de que sabemos lo que piensa al abrir la tarjeta de comentarios en la parte inferior derecha del centro de cumplimiento.
 
-![feedback](media/Feedback_card_MCC.JPG)
+![feedback](../media/Feedback_card_MCC.JPG)
 
 ### <a name="get-to-know-the-new-neighborhood"></a>Familiarizarse con el nuevo entorno
 
@@ -74,7 +134,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Directivas de alerta|Alertas > directivas de alertas <br/> https://protection.office.com/alertpolicies |En este momento, las directivas de alertas se administran solo en el centro de cumplimiento de & de seguridad de Office 365. |[Directivas de alerta en el centro de seguridad y cumplimiento](alert-policies.md) |
 |Alertas|Alertas > ver alertas <br/> https://protection.office.com/viewalerts |Alertas <br/> https://compliance.microsoft.com/compliancealerts |[Ver alertas](alert-policies.md#viewing-alerts)|
 |Archivo|Archivo de > de gobierno de información <br/> https://protection.office.com/archiving |Ficha archivo del gobierno de información > <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Habilitar buzones de archivo](enable-archive-mailboxes.md)|
-|Búsqueda de registros de auditoría|Búsqueda > búsqueda de registros de auditoría <br/> https://protection.office.com/unifiedauditlog |En este momento, solo puede buscar en el registro de auditoría del centro de cumplimiento de & de seguridad de Office 365.| [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md)|
+|Búsqueda de registros de auditoría|Búsqueda > búsqueda de registros de auditoría <br/> https://protection.office.com/unifiedauditlog |Las <br/> https://compliance.microsoft.com/auditlogsearch| [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md)|
 |Búsqueda de contenido|Búsqueda de > de búsqueda de contenido <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Búsqueda de contenido <br/> https://compliance.microsoft.com/contentsearch |[Buscar contenido en Office 365](search-for-content.md) |
 |Conectores de datos|Gobierno de la información > archivar datos de terceros <br/> https://protection.office.com/nativeconnector | Conectores de datos <br/> https://compliance.microsoft.com/connectorlanding |[Archivar datos de terceros](archiving-third-party-data.md)|
 |Prevención de pérdida de datos|Prevención de pérdida de datos <br/> https://protection.office.com/datalossprevention |Prevención de pérdida de datos <br/> https://compliance.microsoft.com/datalossprevention |[Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)|
@@ -86,8 +146,8 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Explorador de actividades de etiqueta|Control del gobierno de información > de actividad de etiquetas <br/> https://protection.office.com/labelexplorer |Clasificación de datos > ficha explorador de actividades <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Ver la actividad en el contenido de la etiqueta (vista previa)](data-classification-activity-explorer.md)|
 |Etiquetas de retención y directivas de etiquetas |Clasificación > etiquetas de retención > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/retentionlabels |Pestañas de gobierno de información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Introducción a las etiquetas de retención](labels.md)|
 |Directivas de retención|Control de > la retención de información <br/> https://protection.office.com/retention |Ficha > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Información general sobre las directivas de retención](retention-policies.md)|
-|Tipos de información confidencial|Tipos de información confidencial de clasificación > <br/> https://protection.office.com/sensitivetypes |Clasificación de datos > ficha tipos de información confidencial <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)|
-|Etiquetas de confidencialidad y directivas de etiquetas|Etiquetas de distinción de > de clasificación > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/sensitivity |Pestañas de protección de la información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Información general de etiquetas de confidencialidad](sensitivity-labels.md) |
+|Tipos de información confidencial|Tipos de información confidencial de clasificación > <br/> https://protection.office.com/sensitivetypes |Clasificación de datos > ficha tipos de información confidencial <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)|
+|Etiquetas de confidencialidad y directivas de etiquetas|Etiquetas de distinción de > de clasificación > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/sensitivity |Pestañas de protección de la información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Obtener información sobre las etiquetas de confidencialidad](sensitivity-labels.md) |
 |Garantía de servicio|Garantía de servicio <br/> https://protection.office.com/serviceassurance/dashboard |En este momento, solo se puede tener acceso a los recursos de garantía del servicio en el centro de seguridad & cumplimiento de Office 365. |[Garantía del servicio en el centro de seguridad & cumplimiento](service-assurance.md)|
 |Supervisión|Supervisión <br/> https://protection.office.com/supervisoryreviewv2 |Cumplimiento con la comunidad <br/> https://compliance.microsoft.com/supervisoryreview |[Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md) |
 
@@ -124,4 +184,4 @@ Hemos lanzado dos nuevos roles de administrador para ayudarle a administrar la s
 
 No hay más desplazamiento a través de un mar de informes para encontrar los que desea. Ahora puede buscar informes (en función de sus títulos) y filtrar por categorías como "etiquetas" y "cumplimiento" y fuentes como "Office 365" y "Microsoft Cloud App Security".
 
-![Captura de pantalla de los botones de búsqueda y filtro para los informes con un filtro aplicado](media/mcc_report_filtering.png)
+![Captura de pantalla de los botones de búsqueda y filtro para los informes con un filtro aplicado](../media/mcc_report_filtering.png)

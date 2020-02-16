@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: Puede activar la característica de búsqueda de registros de auditoría en el centro de seguridad & cumplimiento. Si cambia de opinión, puede desactivar la opción en cualquier momento. Cuando la búsqueda de registros de auditoría está desactivada, los administradores no pueden buscar en el registro de auditoría de Office 365 la actividad de usuario y de administrador de su organización.
-ms.openlocfilehash: dfa637bfe6df0e4643d96a921a604ea5d0deba9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4e5a8c3236da9d2cf6e9392b8a9a29d064b0ce0d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601377"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069449"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Activar o desactivar la búsqueda de registros de auditoría de Office 365
 
@@ -53,7 +53,7 @@ Puede usar el centro de seguridad & cumplimiento o PowerShell para activar la b�
 
 2. Haga clic en **Activar auditoría**.
     
-    ![Haga clic en activar auditoría](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+    ![Haga clic en activar auditoría](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
     El banner se actualiza para indicar que se está preparando el registro de auditoría y que puede buscar la actividad de usuario y de administrador en unas horas.
     

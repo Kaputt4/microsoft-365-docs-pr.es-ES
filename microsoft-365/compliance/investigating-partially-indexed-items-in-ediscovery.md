@@ -1,5 +1,7 @@
 ---
 title: Investigar elementos indizados parcialmente en eDiscovery de Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Los elementos parcialmente indizados (también llamado elementos sin indexar) son elementos de buzón de Exchange y documentos en sitios de SharePoint y OneDrive que, por algún motivo, no se han indizado completamente para la búsqueda de contenido. En este artículo, puede obtener información sobre por qué los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados, identificar errores de búsqueda de elementos parcialmente indizados y usar un script de PowerShell para determinar la exposición de su organización a un correo electrónico parcialmente indizado. elementos.
-ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b67b7d5cfedd37315a9f8bc9027e03b820598846
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38687843"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072367"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigar elementos indizados parcialmente en eDiscovery de Office 365
 
@@ -49,7 +51,7 @@ Después de ejecutar una búsqueda de contenido en el centro de seguridad & cump
 
 Para comprender la exposición de la organización a los elementos parcialmente indizados, puede ejecutar una búsqueda de todo el contenido de todos los buzones (mediante una consulta de palabras clave en blanco). En el siguiente ejemplo, hay 56.208 (4.830 MB) de elementos completamente indizados y 470 (316 MB) de elementos parcialmente indizados.
   
-![Ejemplo de estadísticas de búsqueda que muestran elementos parcialmente indizados](media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Ejemplo de estadísticas de búsqueda que muestran elementos parcialmente indizados](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
   
 Puede determinar el porcentaje de elementos parcialmente indizados mediante los siguientes cálculos.
   
@@ -74,7 +76,7 @@ Por lo tanto, en el ejemplo anterior, 6,54% del tamaño total de los elementos d
 
 En los casos en los que necesite examinar elementos parciales para validar que no contienen información relevante, puede [exportar un informe de búsqueda de contenido](export-a-content-search-report.md) que contenga información sobre los elementos parcialmente indizados. Cuando exporte un informe de búsqueda de contenido, asegúrese de elegir una de las opciones de exportación que incluya elementos parcialmente indizados. 
   
-![Elija la segunda o la tercera opción para exportar elementos parcialmente indizados](media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Elija la segunda o la tercera opción para exportar elementos parcialmente indizados](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
 Cuando se exportan resultados de la búsqueda de contenido o un informe de búsqueda de contenido mediante una de estas opciones, la exportación incluye un informe denominado elementos sin indexar. csv. Este informe incluye la mayor parte de la información que el archivo ResultsLog. csv. sin embargo, el archivo items. csv sin indexar también incluye dos campos relacionados con elementos parcialmente indizados: **etiquetas de error** y **propiedades de error**. Estos campos contienen información sobre el error de indización para cada elemento parcialmente indizado. El uso de la información de estos dos campos puede ayudarle a determinar si el error de indización de un determinado impacto en la investigación. Si es así, puede realizar una búsqueda de contenido dirigido y recuperar y exportar mensajes de correo electrónico específicos y documentos de SharePoint o de OneDrive para poder examinarlos y determinar si son relevantes para la investigación. Para obtener instrucciones paso a paso, consulte [preparar un archivo CSV para una búsqueda de contenido dirigida en Office 365](csv-file-for-an-id-list-content-search.md).
   
@@ -164,7 +166,7 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
   
 ```
 
-2. [Conéctese al centro de seguridad & PowerShell del centro de cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
 3. En el PowerShell del centro de cumplimiento de & de seguridad, vaya a la carpeta en la que guardó el script en el paso 1 y, a continuación, ejecute el script. por ejemplo:
 
@@ -174,7 +176,7 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
 
 Este es un ejemplo del resultado que devuelve el script.
   
-![Ejemplo de salida de script que genera un informe sobre la exposición de su organización a elementos de correo electrónico parcialmente indizados](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Ejemplo de salida de script que genera un informe sobre la exposición de su organización a elementos de correo electrónico parcialmente indizados](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
 Tenga en cuenta lo siguiente:
   

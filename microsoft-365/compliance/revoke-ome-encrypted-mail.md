@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Como administrador de Office 365, puede revocar determinados mensajes de correo electrónico cifrados con el cifrado avanzado de mensajes de Office 365.
-ms.openlocfilehash: 9d694c200df161c0a52884ded14d29908376a9b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cbe0704d6e84282d71c37c72a45712c30f3ac61
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597607"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070046"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Revocar el correo electrónico cifrado por el cifrado avanzado de mensajes de Office 365
 
@@ -41,7 +41,7 @@ El hecho de que un destinatario reciba una experiencia basada en vínculos o una
 
 Una vez que se ha revocado un correo electrónico, el destinatario recibe un error cuando accede al correo electrónico cifrado a través del portal de cifrado de mensajes de Office 365: "el remitente ha revocado el mensaje".
 
-![Captura de pantalla que muestra un correo electrónico cifrado revocado.](media/revoked-encrypted-email.png)
+![Captura de pantalla que muestra un correo electrónico cifrado revocado.](../media/revoked-encrypted-email.png)
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>Cómo revocar un correo electrónico cifrado
 
@@ -99,7 +99,7 @@ Para revocar el correo electrónico en &amp; el centro de seguridad y cumplimien
 
 Puede revocar un correo electrónico mediante Windows PowerShell con el cmdlet Set-OMEMessageRevocation.
 
-1. [Conéctese al PowerShell de Exchange Online](https://aka.ms/exopowershell).
+1. [Conexión a PowerShell de Exchange Online](https://aka.ms/exopowershell).
 
 2. Ejecute el cmdlet Set-OMEMessageRevocation de la siguiente manera:
 

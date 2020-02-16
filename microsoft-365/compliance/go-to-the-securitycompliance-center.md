@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: Para poder usar el centro de seguridad & cumplimiento, necesitará los permisos adecuados. La cuenta profesional o educativa debe tener asignado el rol de administrador global de Office 365 o haber sido asignada a uno o varios grupos de roles del centro de cumplimiento de & de seguridad por un administrador global.
-ms.openlocfilehash: 0ac56ad7fb4123b8cd2bd11cdcca7ee90d8126b0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c141f7f9de5a47412dc009ae6c077404cd3f795d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596527"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073097"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>Ir al Centro de seguridad y cumplimiento de Office 365
 
@@ -40,4 +40,4 @@ Esta es la forma más directa de obtener el centro de cumplimiento de & de segur
 
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
 
-![Página de inicio del centro de seguridad & cumplimiento de Office 365](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
+![Página de inicio del centro de seguridad & cumplimiento de Office 365](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

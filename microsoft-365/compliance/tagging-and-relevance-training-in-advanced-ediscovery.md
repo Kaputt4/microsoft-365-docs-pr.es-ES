@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de formación de relevancia de Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: fa690857fabb6a732d329dc8a75896d9e1aa195d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601427"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069587"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Aprendizaje de la etiqueta y la relevancia en Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
 
 1. En la **pestaña \> etiqueta de relevancia** , el panel etiquetado se muestra de forma predeterminada en el panel izquierdo y se muestran los archivos de ejemplo, uno por vez, para el etiquetado. 
     
-    ![Panel de etiquetas de relevancia](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Panel de etiquetas de relevancia](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     En la ficha **etiqueta** , se muestra el nombre para mostrar del archivo. Puede ser la ruta de acceso, el asunto del correo electrónico, el título o el nombre definido por el usuario. El identificador, la ruta de acceso de archivo o la ruta de acceso de texto se pueden copiar haciendo clic con el botón secundario en la ruta de acceso del archivo. 
     
@@ -50,7 +50,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
 |-----|-----|-----|-----|
 |R  <br/> |Metabolito  <br/> |Z  <br/> |Mayús + Z  <br/> |
 |Nº  <br/> |No relevante  <br/> |X  <br/> |Mayús + X  <br/> |
-|Avanzar  <br/> |Avanzar  <br/> |C  <br/> |Mayús + A  <br/> |
+|Skip  <br/> |Skip  <br/> |C  <br/> |Mayús + A  <br/> |
    
   - Cuando hay varios problemas para un archivo, después de marcar un problema, la selección se mueve al siguiente problema (si lo hay). 
     
@@ -58,7 +58,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
     
     De forma opcional, en la pestaña **etiqueta** , haga clic en **configuración de etiqueta** para establecer las siguientes opciones: 
     
-    ![Configuración de etiquetas de relevancia](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+    ![Configuración de etiquetas de relevancia](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
   - **Etiqueta masiva**: Use esta opción para asignar varios problemas a un archivo; para ello, seleccione **todos** para establecer la etiqueta del archivo seleccionado para todos los problemas (invalida los problemas ya etiquetados) o seleccione **el resto** para aplicar la etiqueta a los demás problemas sin etiquetar. La opción seleccionada permanece en vigor para todos los casos de este usuario hasta que la modifica el usuario (la configuración es por usuario para todos los casos del usuario). 
     
@@ -80,7 +80,7 @@ La lista de archivos de muestra le permite ver una lista de los archivos en un e
   
 1. En la **ficha \> etiqueta de relevancia** , seleccione los archivos de ejemplo en la lista desplegable del panel izquierdo. Los archivos de ejemplo se muestran en el panel izquierdo. 
     
-    ![Lista de archivos de ejemplo de etiqueta de relevancia](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![Lista de archivos de ejemplo de etiqueta de relevancia](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
 2. Seleccione un ejemplo o un número de archivo específico especificando o seleccionando su número en los cuadros **muestra** o **archivo** . 
     

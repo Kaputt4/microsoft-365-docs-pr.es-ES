@@ -1,5 +1,5 @@
 ---
-title: Etiquetas de confidencialidad en las aplicaciones de Office
+title: Usar las etiquetas de confidencialidad en las aplicaciones de Office
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,23 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, aplicaciones de Office para dispositivos móviles y aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: bbdc2ed7407104298e36e214dc3e532cc305c94d
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, las aplicaciones de Office para dispositivos móviles y las aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
+ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855349"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069867"
 ---
-# <a name="sensitivity-labels-in-office-apps"></a>Etiquetas de confidencialidad en las aplicaciones de Office
+# <a name="use-sensitivity-labels-in-office-apps"></a>Usar las etiquetas de confidencialidad en las aplicaciones de Office
 
-Este artículo describe:
+Una vez publicadas las etiquetas de confidencialidad del centro de cumplimiento de Microsoft 365 o del centro de etiquetas equivalente, comienzan a aparecer en las aplicaciones de Office para que los usuarios clasifiquen y protejan los datos cuando se crean o editan.
 
-- Requisitos para el entorno antes de aplicar las etiquetas de confidencialidad a los correos electrónicos, archivos y datos adjuntos.
-- Las funciones de etiqueta de confidencialidad que admite cada aplicación de Office.
-- Qué sucede cuando combina las etiquetas de confidencialidad con otras tecnologías de seguridad y cumplimiento de Microsoft que funcionan con las aplicaciones de Office.
-- Cómo pueden usar las personas de su organización las etiquetas de confidencialidad cuando funcionan con las aplicaciones de Office para Windows y las aplicaciones de Office para la Web.
-- Recursos adicionales para ayudar a las personas de su organización a empezar a usar etiquetas de confidencialidad.
+Use la información de este artículo como ayuda para administrar correctamente las etiquetas de confidencialidad de uso en las aplicaciones de Office. Por ejemplo, las versiones mínimas de las aplicaciones que necesita para admitir etiquetas integradas, interacciones con el cliente de etiquetado Unificado de Azure Information Protection y la compatibilidad con otras aplicaciones y servicios.
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Requisitos de suscripción y licencia para las etiquetas de confidencialidad
 
@@ -70,7 +66,7 @@ Hay disponibles capacidades adicionales al instalar el cliente de etiquetado Uni
 |[Vínculo proporcionar ayuda a una página de ayuda personalizada](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marcar el contenido](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Vista previa: implementación en [Office Insider](https://office.com/insider)            | Vista previa: implementación en [Office Insider](https://office.com/insider)        | En revisión   | En revisión         | En revisión                                                        |
+|[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Vista previa: en [Office Insider](https://office.com/insider)            | Vista previa: en [Office Insider](https://office.com/insider)        | En revisión   | En revisión         | En revisión                                                        |
 |[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
 |[Pedir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos](sensitivity-labels.md#what-label-policies-can-do)   | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | Vista previa: en [Office Insider](https://office.com/insider)                                  | En revisión | En revisión | En revisión | [Versión preliminar](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -93,7 +89,7 @@ Hay disponibles capacidades adicionales al instalar el cliente de etiquetado Uni
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | Vista previa: implementación en [Office Insider](https://office.com/insider)                       | En revisión                    | En revisión           | En revisión               | Sí |
 |
 
-## <a name="about-the-office-built-in-labeling-client"></a>Información sobre el cliente de etiquetado de Office integrado
+## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Cliente de etiquetado de Office integrado y el cliente de Azure Information Protection
 
 La configuración de directiva de la etiqueta de confidencialidad de descargas de clientes de la etiqueta integrada de Office de los siguientes centros de administración:
 
@@ -127,21 +123,24 @@ Si necesita convertir plantillas de protección existentes en etiquetas, use Azu
 
 Los usuarios pueden aplicar una sola etiqueta a la vez para cada documento o correo electrónico.
 
-Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, los datos adjuntos no heredan la etiqueta. Si los datos adjuntos tenían una etiqueta que conservan esa etiqueta por separado. Si los datos adjuntos no tienen etiqueta, los datos adjuntos permanecen sin etiqueta. Sin embargo, si la etiqueta del correo electrónico aplica protección, esa protección se aplicará a los datos adjuntos de Office.
+Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, los datos adjuntos no se heredan de la etiqueta:
+
+- Si los datos adjuntos tienen una etiqueta, se conservan como etiquetas aplicadas por separado.
+- Si los datos adjuntos no tienen etiqueta, los datos adjuntos permanecen sin etiqueta. Sin embargo, si la etiqueta del correo electrónico aplica protección, esa protección se aplicará a los datos adjuntos de Office.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilidad de las etiquetas de confidencialidad
 
-**Con aplicaciones habilitadas para RMS**. Si abre un documento o correo electrónico con la etiqueta _y cifrada_ en una [aplicación habilitada para RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) que no admite las etiquetas de confidencialidad, la aplicación sigue forzando el cifrado y la administración de derechos.
+**Con aplicaciones habilitadas para RMS**: Si abre un documento o un correo electrónico con la etiqueta y cifrada en una [aplicación habilitada para RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) que no admite etiquetas de confidencialidad, la aplicación sigue forzando el cifrado y la administración de derechos.
 
-**Con el cliente de Azure Information Protection**. Puede ver y cambiar las etiquetas de confidencialidad que se aplican a los documentos y correos electrónicos con el cliente de etiquetación integrado de Office con el cliente de Azure Information Protection y la otra forma.
+**Con el cliente de Azure Information Protection**: puede ver y cambiar las etiquetas de confidencialidad que se aplican a los documentos y correos electrónicos con el cliente de etiquetación integrado de Office mediante el cliente de Azure Information Protection y la otra forma.
 
-**Con otras versiones de Office**. Cualquier usuario autorizado puede abrir documentos con etiquetas y correos electrónicos en otras versiones de Office. Sin embargo, solo puede ver o cambiar la etiqueta en versiones de Office compatibles o en el cliente de Azure Information Protection. Las versiones de aplicaciones de Office admitidas se muestran en las tablas de este artículo.
+**Con otras versiones de Office**: cualquier usuario autorizado puede abrir documentos con etiquetas y correos electrónicos en otras versiones de Office. Sin embargo, solo puede ver o cambiar la etiqueta en versiones de Office compatibles o mediante el cliente de Azure Information Protection. Las versiones de aplicaciones de Office admitidas se muestran en la [sección anterior](#support-for-sensitivity-label-capabilities-in-apps).
 
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>Compatibilidad con archivos de OneDrive y SharePoint protegidos por etiquetas de confidencialidad
 
-Para usar el cliente de etiquetado integrado de Office en Office en la web, el documento debe estar ubicado en una instancia de OneDrive para la empresa o de SharePoint Online que haya optado [por la habilitación de las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Para usar el cliente de etiquetado integrado de Office con Office en la web para documentos en OneDrive para la empresa o SharePoint Online, asegúrese de haber elegido la vista previa para [habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="when-office-365-applies-content-marking-and-encryption-to-content"></a>Cuando Office 365 aplica marcado y cifrado de contenido al contenido
+## <a name="when-office-365-applies-content-marking-and-encryption"></a>Cuando Office 365 aplica marcado y cifrado de contenido
 
 Office 365 aplica el marcado y el cifrado de contenido con una etiqueta de confidencialidad de forma diferente, en función de la aplicación que use.
 
@@ -152,7 +151,7 @@ Office 365 aplica el marcado y el cifrado de contenido con una etiqueta de confi
 | Outlook en la web, iOS, y Android | Después de que Exchange Online envíe el correo electrónico | Después de que Exchange Online envíe el correo electrónico |
 |
 
-## <a name="more-resources"></a>Más recursos
+## <a name="end-user-documentation"></a>Documentación para el usuario final
 
 - [Aplicar etiquetas de confidencialidad en sus documentos y correo electrónico en Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 

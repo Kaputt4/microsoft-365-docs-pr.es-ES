@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e147ac6ac17a9fdd395aa0b1a00bd8f630cd10c1
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41891983"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071376"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -30,17 +30,17 @@ Lea este artículo para familiarizarse con el nuevo catálogo de soluciones en e
 
 El catálogo de soluciones está organizado en secciones que contienen tarjetas de información para cada solución de cumplimiento disponible en la suscripción a Microsoft 365. Cada sección contiene tarjetas para soluciones agrupadas por área de cumplimiento.
 
-![Página principal del catálogo de soluciones de Microsoft 365](media/m365-solution-catalog-home.png)
+![Página principal del catálogo de soluciones de Microsoft 365](../media/m365-solution-catalog-home.png)
 
 Al seleccionar **Ver** para una tarjeta de solución, verá información detallada sobre la solución de cumplimiento y cómo comenzar. Esta información incluye una introducción, los requisitos previos a la configuración, los recursos de aprendizaje, los controles que permiten anclar la tarjeta al panel de navegación y una opción para compartir la solución como un vínculo, un correo electrónico o un mensaje de Microsoft Teams.
 
-![Solución de cumplimiento de comunicación de Microsoft 365](media/m365-solution-catalog-communication-compliance.png)
+![Solución de cumplimiento de comunicación de Microsoft 365](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>Sección de gobierno de & Information Protection
 
 La sección de **gobierno de Information protection &** le muestra de un vistazo cómo puede usar las soluciones de cumplimiento de Microsoft 365 para proteger y controlar los datos de su organización.
 
-![Sección de gobierno y protección de información del catálogo de soluciones de Microsoft 365](media/m365-solution-catalog-information-protection-governance.png)
+![Sección de gobierno y protección de información del catálogo de soluciones de Microsoft 365](../media/m365-solution-catalog-information-protection-governance.png)
 
 Desde aquí, verá tarjetas para las siguientes soluciones:
 
@@ -53,7 +53,7 @@ Desde aquí, verá tarjetas para las siguientes soluciones:
 
 La sección **Administración de riesgos de Insider** de la Página principal muestra de un vistazo cómo su organización puede identificar, analizar y emprender acciones sobre riesgos internos antes de que puedan dañarlos.
 
-![Sección de administración de riesgos de Insider de catálogo de soluciones de Microsoft 365](media/m365-solution-catalog-insider-risk-management.png)
+![Sección de administración de riesgos de Insider de catálogo de soluciones de Microsoft 365](../media/m365-solution-catalog-insider-risk-management.png)
 
 Desde aquí, verá tarjetas para las siguientes soluciones:
 
@@ -64,7 +64,7 @@ Desde aquí, verá tarjetas para las siguientes soluciones:
 
 La sección de **& respuesta de detección** de la Página principal muestra de un vistazo cómo su organización puede buscar, investigar y responder a los problemas de cumplimiento con los datos relevantes de manera rápida.
 
-![Sección de detección y respuesta de catálogos de soluciones de Microsoft 365](media/m365-solution-catalog-discovery-response.png)
+![Sección de detección y respuesta de catálogos de soluciones de Microsoft 365](../media/m365-solution-catalog-discovery-response.png)
 
 Desde aquí, verá tarjetas para las siguientes soluciones:
 

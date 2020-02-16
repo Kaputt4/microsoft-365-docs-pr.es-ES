@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: cde55f9dd3a1a9aacc48ba816cd0ef00472dad56
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5636e2e6186107bee3a0116d203910bc7b766990
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661746"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069052"
 ---
 # <a name="view-documents-in-a-review-set"></a>Ver documentos de un conjunto de revisión
 
@@ -36,14 +36,14 @@ EDiscovery avanzado muestra contenido a través de varios visores cada uno con f
 Este panel puede activarse o desactivarse para mostrar varios metadatos asociados con el documento. Aunque la cuadrícula de resultados de búsqueda se puede personalizar para Mostrar metadatos específicos, hay casos en los que el desplazamiento horizontal puede resultar difícil mientras se revisan los datos. El panel metadatos de archivo permite al usuario alternar una vista dentro del visor.
 
 ![Panel metadatos de archivo
-](media/Reviewimage2.png)
+](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Vista nativa
 
 El visor nativo muestra la vista más completa de un documento. Admite cientos de tipos de archivo y está destinado a mostrar la experiencia más auténtica posible a la experiencia nativa. Para los archivos de Microsoft Office, el visor usa la versión Web de las aplicaciones de Office para mostrar contenido como comentarios del documento, fórmulas de Excel, filas o columnas ocultas y notas de PowerPoint.
 
 ![Vista nativa
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Vista de texto
 
@@ -56,10 +56,10 @@ El visor de texto proporciona una vista del texto extraído de un archivo. Ignor
   - La vista de diferencias proporciona una vista de comparación que resalta las diferencias textuales al ver documentos con duplicados Near
 
 ![Vista de texto
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 ![Vista de diferencias
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Vista de anotar
 
@@ -86,7 +86,7 @@ La vista anotar proporciona características que permiten a los usuarios aplicar
   - Buscar: el usuario puede buscar en un documento y desplazarse a los distintos aciertos dentro del documento
     
     ![Vista de anotar
-    ](media/Reviewimage1.png)
+    ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Vista de panel 
 La vista de panel permite visualizar y resumir los datos en la cuadrícula de resultados de la búsqueda. En esta vista, puede crear widgets personalizados para que el análisis y la creación de informes de su conjunto de revisión sean intuitivos y sencillos. Una vez que haya creado los widgets, puede interactuar con ellos para obtener recuentos de elementos o para crear una búsqueda. 

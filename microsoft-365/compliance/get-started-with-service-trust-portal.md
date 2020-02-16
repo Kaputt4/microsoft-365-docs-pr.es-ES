@@ -14,12 +14,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para los informes de cumplimiento normativo de Office 365, Azure y Dynamics 365, para ver auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y cómo puede cumplir con las normas ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando use estos servicios en línea.
-ms.openlocfilehash: d8347a20543664a1de86001709f068bf39b1cb5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596347"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073167"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
@@ -56,7 +56,7 @@ Al registrarse para obtener una prueba gratuita o una suscripción, debe habilit
 
 El contenido y las características del portal de confianza de servicios son accesibles desde el menú principal.
   
-![Menú portal de confianza de servicios](media/STPMenus1.png)
+![Menú portal de confianza de servicios](../media/STPMenus1.png)
 
 En las secciones siguientes se describe cada elemento en el menú principal.
   
@@ -122,17 +122,17 @@ Vaya a **más > administrador** para acceder a funciones administrativas que sol
 
 - **Configuración de privacidad del usuario:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el administrador de cumplimiento para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado. Para obtener más información, vea [configuración de privacidad de usuario](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings).
 
-### <a name="search"></a>Buscar
+### <a name="search"></a>Búsqueda
 
 Haga clic en la lupa de la esquina superior derecha de la página portal de confianza de servicios para expandir el cuadro, escriba los términos de búsqueda y presione **entrar**. Se muestra la página de **búsqueda** , con el término de búsqueda en el cuadro de búsqueda y los resultados de la búsqueda que se enumeran a continuación.
   
-![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 De forma predeterminada, la búsqueda devuelve los resultados del documento. Puede filtrar los resultados con las listas desplegables para refinar la lista de documentos mostrados. Puede usar varios filtros para restringir la lista de documentos. Los filtros incluyen los servicios en la nube específicos, categorías de cumplimiento o prácticas de seguridad, regiones e industrias. Haga clic en el vínculo nombre del documento para descargar el documento.
   
 Para enumerar controles a partir de evaluaciones en el administrador de cumplimiento relacionadas con los términos de búsqueda, haga clic en **Administrador de cumplimiento**. Los resultados de la búsqueda muestran la fecha en que se creó la evaluación, el nombre de la agrupación de la evaluación, el servicio aplicable en la nube de Microsoft y si el control es Microsoft o administrado por el cliente. Haga clic en el nombre del control para ver el control en la evaluación en Compliance Manager.
   
-![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
 > Los informes y documentos del portal de confianza de servicios están disponibles para su descarga durante al menos 12 meses después de su publicación o hasta que esté disponible una nueva versión del documento.
@@ -161,7 +161,7 @@ Para acceder a estos paquetes de inicio, vaya a **Service Trust Portal > Industr
 
 El portal de confianza del servicio le permite ver el contenido de la página en diferentes idiomas. Para cambiar el idioma de la página, simplemente haga clic en el icono del globo terráqueo en la esquina inferior izquierda de la página y seleccione el idioma de su elección. 
   
-![Portal de confianza de servicios: Opciones de contenido localizado](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Portal de confianza de servicios: Opciones de contenido localizado](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Comentarios
 
@@ -169,4 +169,4 @@ Podemos ayudarle con las preguntas sobre el portal de confianza de servicios o c
   
 Su opinión es importante para nosotros. Haga clic en el botón comentarios de la parte inferior de la página para enviarnos comentarios sobre lo que ha hecho o no le gusta, o sugerencias que puede tener para mejorar nuestros productos o características del producto.
   
-![¿Qué tipo de comentarios tiene](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![¿Qué tipo de comentarios tiene](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
