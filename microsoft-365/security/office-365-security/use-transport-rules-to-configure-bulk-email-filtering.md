@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar reglas de flujo de correo en Exchange Online Protection para el filtrado masivo de correo electrónico.
-ms.openlocfilehash: 5188ce077ce15ab7ad5d03e4aa2c172db6a80c37
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598047"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081828"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Usar reglas de flujo de correo para configurar el filtrado masivo de correo electrónico en Exchange Online Protection
 
@@ -35,11 +35,11 @@ Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de 
 
 1. En el Centro de administración de Exchange (EAC), vaya a **Flujo de correo**\>** Reglas**.
 
-2. Haga **** ![clic en agregar](../media/ITPro-EAC-AddIcon.gif) icono Agregar y, a continuación, seleccione **crear una nueva regla**.
+2. Haga **** ![clic en agregar](../../media/ITPro-EAC-AddIcon.gif) icono Agregar y, a continuación, seleccione **crear una nueva regla**.
 
 3. Especifique un nombre para la regla.
 
-4. Haga clic en **más opciones** ![icono](../media/ITPro-EAC-MoreOptionsIcon.png)más opciones. En **Aplicar esta regla si**, seleccione **El asunto o el cuerpo** \> **el asunto o el cuerpo coincide con estos patrones de texto**.
+4. Haga clic en **más opciones** ![icono](../../media/ITPro-EAC-MoreOptionsIcon.png)más opciones. En **Aplicar esta regla si**, seleccione **El asunto o el cuerpo** \> **el asunto o el cuerpo coincide con estos patrones de texto**.
 
 5. En el cuadro de diálogo **especificar palabras o frases** , agregue las siguientes expresiones regulares que se encuentran generalmente en los correos masivos, de una en una, y haga clic en **Aceptar** cuando haya terminado:
 
@@ -87,7 +87,7 @@ Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de 
 
 1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-2. Haga **** ![clic en agregar](../media/ITPro-EAC-AddIcon.gif) icono Agregar y, a continuación, seleccione **crear una nueva regla**.
+2. Haga **** ![clic en agregar](../../media/ITPro-EAC-AddIcon.gif) icono Agregar y, a continuación, seleccione **crear una nueva regla**.
 
 3. Especifique un nombre para la regla.
 

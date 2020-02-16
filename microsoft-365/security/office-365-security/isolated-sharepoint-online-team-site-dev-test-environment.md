@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumen: Configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno para desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 49443a5dd6b2c93e6bd7817c09747d49b163cabd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599127"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083017"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas
 
@@ -142,7 +142,7 @@ En la figura 1 se muestran los grupos de acceso y su pertenencia.
 
 **Figura 1**
 
-![Los grupos de Office 365 y su pertenencia a un sitio de grupo de SharePoint Online aislado](../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![Los grupos de Office 365 y su pertenencia a un sitio de grupo de SharePoint Online aislado](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Fase 3: Crear un sitio de grupo de SharePoint Online para ProyectoX y aislarlo
 
@@ -208,7 +208,7 @@ En la figura 2 se muestran los grupos de SharePoint y su pertenencia.
 
 **Figura 2**
 
-![Los grupos de SharePoint Online y su pertenencia a un sitio de grupo de SharePoint Online aislado](../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![Los grupos de SharePoint Online y su pertenencia a un sitio de grupo de SharePoint Online aislado](../../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
 
 Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del responsable de diseño:
 
@@ -278,7 +278,7 @@ Ahora vamos a mostrar cómo acceder con una cuenta de usuario que no tiene permi
 
 El sitio de SharePoint Online aislado ya está listo para sus experimentos adicionales.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Cuando esté preparado para implementar un sitio de grupo de SharePoint Online aislado en producción, vea las consideraciones de diseño paso a paso en [Diseñar un sitio de grupo aislado de SharePoint Online](design-an-isolated-sharepoint-online-team-site.md).
 

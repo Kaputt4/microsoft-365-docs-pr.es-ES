@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Presenta sugerencias de seguridad para los mensajes de correo filtrados por el filtro de correo no deseado de EOP y Office 365.
-ms.openlocfilehash: 244b2ceb8ccf5e2e49b56fdebd370f75033f652b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1fddb38be711a9d43e85adea34fe14eb9e7a85ef
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598527"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082359"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Sugerencias de seguridad en mensajes de correo en Office 365
 
@@ -32,25 +32,25 @@ La sugerencia de seguridad (un mensaje codificado por colores) le avisará de lo
 
 - Correo sospechoso (sugerencia de seguridad roja).
 
-    ![Captura de pantalla que muestra una sugerencia de seguridad roja.](../media/5078a0be-e556-44a1-b169-09d780d26898.png)
+    ![Captura de pantalla que muestra una sugerencia de seguridad roja.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     Una sugerencia de seguridad roja en un correo electrónico significa que el mensaje que ha recibido contiene algo sospechoso, como una estafa de suplantación de identidad (phishing). Le recomendamos que elimine este tipo de mensaje de correo electrónico de la bandeja de entrada sin abrirlo.
 
 - Correo no deseado (sugerencia de seguridad amarilla).
 
-    ![Captura de pantalla que muestra una sugerencia de seguridad amarilla.](../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
+    ![Captura de pantalla que muestra una sugerencia de seguridad amarilla.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
 
     Una sugerencia de seguridad amarilla en un correo electrónico significa que el mensaje se ha marcado como correo no deseado. Si no reconoce y no confía en el remitente del mensaje, no descargue ningún dato adjunto ni ninguna imagen y no haga clic en ningún vínculo del mensaje. En Outlook en la web, puede hacer clic en **no es correo no deseado** en la barra amarilla de un elemento de correo no deseado para mover el mensaje a la bandeja de entrada. Si aparece la sugerencia de seguridad amarilla en un mensaje que se entregó en la bandeja de entrada, probablemente se deba a que ha deshabilitado el traslado de correo no deseado a la carpeta correo electrónico no deseado.
 
 - Correo seguro (sugerencia de seguridad verde).
 
-    ![Captura de pantalla que muestra una sugerencia de seguridad de color verde.](../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
+    ![Captura de pantalla que muestra una sugerencia de seguridad de color verde.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     Además de los mensajes no seguros, también le mostraremos los mensajes válidos de los remitentes en los que confíe con una sugerencia de seguridad verde. Una sugerencia de seguridad verde en un correo electrónico significa que se ha comprobado el remitente del mensaje y que se ha comprobado que es seguro. Microsoft mantiene esta lista de remitentes de confianza que incluyen organizaciones financieras y otros usuarios que se falsifican o suplantan con frecuencia.
 
 - Correo sin filtrar (sugerencia de seguridad gris).
 
-    ![Captura de pantalla que muestra una sugerencia de seguridad gris.](../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
+    ![Captura de pantalla que muestra una sugerencia de seguridad gris.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
 
     También le informaremos cuando omitimos la comprobación de correo, ya que procede de un remitente en el que confía en la lista de remitentes seguros o si existe una regla de flujo de correo para omitir el filtrado.
 

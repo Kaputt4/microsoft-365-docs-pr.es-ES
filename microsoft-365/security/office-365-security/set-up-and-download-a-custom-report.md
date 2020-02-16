@@ -16,12 +16,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar y descargar un informe con un intervalo de fechas personalizado y filtros en el &amp; centro de seguridad y cumplimiento.
-ms.openlocfilehash: 0de4b9bf2ac8d16c0e0ecc38fa69a3c9bf5e2774
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 170360a796d94501b6c13a6ffd4b062401296462
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598387"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088009"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurar y descargar un informe personalizado en el centro de &amp; seguridad y cumplimiento
 
@@ -34,11 +34,11 @@ En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com),
   
 1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a **informes** \> de **Panel**.
     
-2. Elija un informe. (Para este ejemplo, usaremos el informe de disposición del mensaje).<br/>![Elegir informe de solicitud para descargar un informe](../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. Elija un informe. (Para este ejemplo, usaremos el informe de disposición del mensaje).<br/>![Elegir informe de solicitud para descargar un informe](../../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
 3. En la esquina superior izquierda del informe, elija **request Report**.
     
-4. En el cuadro de diálogo **Informe de solicitud** , especifique un nombre, una fecha de inicio y una fecha de finalización para el informe. A continuación, elija **siguiente**.<br/>![En el centro &amp; de seguridad y cumplimiento, \> elija informes informes para descarga](../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. En el cuadro de diálogo **Informe de solicitud** , especifique un nombre, una fecha de inicio y una fecha de finalización para el informe. A continuación, elija **siguiente**.<br/>![En el centro &amp; de seguridad y cumplimiento, \> elija informes informes para descarga](../../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
 5. Especifique los filtros que desee usar para el informe. (Por ejemplo, puede especificar una dirección IP de cliente para el informe de disposición del mensaje). A continuación, elija **siguiente**.
     

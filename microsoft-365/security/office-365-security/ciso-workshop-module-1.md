@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: e90c26575db04afffd5e5c2722b75a1c7235523d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a527816ca701e2f2e9ab2e8d2b9b20cad1230a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599927"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086569"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>Módulo 1 del taller de CISO: Informe sobre Microsoft Cybersecurity
 
 Este módulo incluye información general sobre la higiene crítica de la seguridad, la arquitectura de referencia de Microsoft Cybersecurity, la resistencia de Cybersecurity, Internet de las cosas (IoT) y la tecnología operativa.
 
-- Descarga del Resumen de PDF: [módulo 1: instrucciones para Microsoft Cybersecurity](../media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- Descarga del Resumen de PDF: [módulo 1: instrucciones para Microsoft Cybersecurity](../../media/ciso-workshop-1-cybersecurity-briefing.pdf)
 - Descargar Resumen de PowerPoint: [módulo 1: instrucciones para Microsoft Cybersecurity](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ## <a name="part-1-course-introduction-and-overview-913"></a>Parte 1: Introducción al curso e información general (9:13)

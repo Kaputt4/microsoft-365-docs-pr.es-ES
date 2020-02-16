@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Use inteligencia de identidad en el &amp; centro de seguridad y cumplimiento en la página Configuración contra correo no deseado para revisar todos los remitentes que suplantan dominios que forman parte de la organización o suplantación de dominios externos. La inteligencia de identidad está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección contra amenazas avanzada y de Exchange Online Protection.
-ms.openlocfilehash: 82b3759290e4cf0024aaf74a066354f46ea3a303
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599097"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082986"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Obtener más información sobre la inteligencia de suplantación de identidad
 
@@ -79,7 +79,7 @@ Puede revisar los remitentes que están suplantando su dominio o dominios extern
 
 3. En el centro &amp; de seguridad y cumplimiento, expanda **protección contra correo no deseado**de la **Directiva** \> de **Administración** \> de amenazas.
 
-    ![Captura de pantalla que muestra el acceso a la página contra correo electrónico no deseado](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![Captura de pantalla que muestra el acceso a la página contra correo electrónico no deseado](../../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
 4. En la página **configuración de correo no deseado** del panel derecho, desplácese hacia abajo y expanda **Directiva de inteligencia empresarial de suplantación**.
 
@@ -89,7 +89,7 @@ Puede revisar los remitentes que están suplantando su dominio o dominios extern
 
     Si ya ha revisado los remitentes y desea cambiar algunas de las opciones anteriores, puede elegir **Mostrar los remitentes que ya he revisado** en su lugar. En cualquier caso, aparece el siguiente panel.
 
-    ![Captura de pantalla que muestra el acceso a la pestaña remitentes falseados](../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![Captura de pantalla que muestra el acceso a la pestaña remitentes falseados](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
     Cada usuario imitado se muestra en una fila separada para que pueda elegir si desea permitir o bloquear al remitente la falsificación individual de cada usuario.
 
@@ -97,7 +97,7 @@ Puede revisar los remitentes que están suplantando su dominio o dominios extern
 
     Para establecer la Directiva para los dominios que no son de su propiedad, seleccione la ficha **dominios externos** . cambie el remitente a **sí** en la columna **permitido para suplantación** para permitir que el remitente envíe correo electrónico no autenticado a su organización. Como alternativa, si piensa que Office 365 ha cometido un error al permitir que el remitente envíe correo electrónico falsificado, cambie la columna **permitido a suplantar** a **no**.
 
-    ![Captura de pantalla que muestra si se permite que un remitente suplante](../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![Captura de pantalla que muestra si se permite que un remitente suplante](../../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
 
 6. Elija **Guardar** para guardar los cambios.
 
@@ -128,7 +128,7 @@ Aunque la Directiva contra la suplantación de identidad aparece bajo la Directi
 
 6. A continuación, configure las acciones que se deben realizar cuando se detecta un mensaje como una suplantación de identidad entre dominios. El comportamiento predeterminado es mover el mensaje a la carpeta de correo no deseado del destinatario. La otra opción es enviar el mensaje a la cuarentena. Para obtener más información acerca de la administración de mensajes enviados a la cuarentena, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
 
-    ![Captura de pantalla que muestra las opciones de edición de directivas antifalsificación](../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
+    ![Captura de pantalla que muestra las opciones de edición de directivas antifalsificación](../../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
 
 7. Realice su elección y, a continuación, elija **Guardar**.
 

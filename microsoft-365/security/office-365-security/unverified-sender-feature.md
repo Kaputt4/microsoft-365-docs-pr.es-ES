@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 513a45594dd41db56abe143ea6edca7074539d2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957255"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082018"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 
@@ -40,7 +40,7 @@ Outlook muestra indicadores cuando no se puede identificar el remitente de un me
 
 Cuando Office 365 no puede comprobar la identidad del remitente mediante técnicas de autenticación de correo electrónico, se muestra un '? ' en la imagen del remitente.
 
-![El mensaje no pasó la comprobación](../media/message-did-not-pass-verification.jpg)
+![El mensaje no pasó la comprobación](../../media/message-did-not-pass-verification.jpg)
 
 No todos los mensajes que no se autentican son malintencionados. Sin embargo, debe tener cuidado al interactuar con los mensajes que no se autentican si no reconoce al remitente. O bien, si reconoce a un remitente que normalmente no tiene un '? ' en la imagen del remitente, pero, de repente, lo empieza a ver, es posible que se trate de una firma en la que se está suplantando el remitente.
 
@@ -50,7 +50,7 @@ Si es un cliente de Office 365, puede administrar esta característica a través
 
 - En el centro de seguridad & cumplimiento, los administradores globales o de seguridad pueden activar o desactivar la característica mediante protección contra la suplantación de identidad (phishing) en la Directiva ANTIPHISH. Además, puede usar el cmdlet **set-AntiPhishPolicy** en Exchange Online PowerShell. Para obtener más información, consulte [protección contra la suplantación de identidad en Office 365](anti-phishing-protection.md) y [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
 
-    ![Edición de remitentes no autenticados en la interfaz gráfica.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+    ![Edición de remitentes no autenticados en la interfaz gráfica.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - Si un administrador ha identificado un falso positivo y un remitente no debe recibir el tratamiento de remitente no verificado, se puede llevar a cabo una de las siguientes acciones para agregar el remitente a la lista de permitidos de falsificación de inteligencia de identidad:
 

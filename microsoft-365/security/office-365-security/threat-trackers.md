@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos comentarios destacados, para ayudar a su organización a estar al tanto de los problemas de seguridad.
-ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 50566abfa7bec55fb42465132361971113453a06
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957365"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084509"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -34,11 +34,11 @@ Las capacidades de [investigación y respuesta de amenazas de Office 365](office
 
 Los rastreadores de amenazas son widgets y vistas informativas que le proporcionan inteligencia sobre diferentes problemas de Cybersecurity que pueden afectar a su empresa. Por ejemplo, puede ver información sobre las campañas de malware de tendencias mediante los rastreadores de amenazas.
   
-![Ejemplo de rastreador de amenazas que muestra campañas de malware](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![Ejemplo de rastreador de amenazas que muestra campañas de malware](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
 La mayoría de las páginas de Tracker incluyen números de tendencia que se actualizan periódicamente, widgets para ayudarle a comprender qué problemas son los más grandes o que han crecido más y un vínculo rápido en la columna **acciones** que le conduce al explorador, donde puede ver información más detallada. 
   
-![Ejemplo de información de la campaña en el explorador](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![Ejemplo de información de la campaña en el explorador](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
 Los rastreadores son sólo algunas de las muchas características de gran calidad que obtiene con [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Los rastreadores de amenazas incluyen [Noteworth](#noteworthy-trackers), rastreadores de [tendencias](#trending-trackers), [consultas de seguimiento](#tracked-queries)y [consultas guardadas](#saved-queries).
   
@@ -57,7 +57,7 @@ Por lo general, los rastreadores dignos de opinión se publicarán por un par de
 
 Los rastreadores de tendencias (anteriormente denominados campañas) resaltan nuevas amenazas recibidas en el correo electrónico de la organización de la semana pasada.
   
-![Ejemplo de widget de campañas de malware de tendencias](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Ejemplo de widget de campañas de malware de tendencias](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   
 Los rastreadores de tendencias le proporcionan una idea de las nuevas amenazas que debe revisar para asegurarse de que su entorno corporativo más amplio esté preparado contra los ataques.
   
@@ -65,13 +65,13 @@ Los rastreadores de tendencias le proporcionan una idea de las nuevas amenazas q
 
 Las consultas con seguimiento aprovechan las consultas guardadas para evaluar periódicamente la actividad de Office 365 en su organización. Esto le ofrece tendencias de eventos, con más que venir en los próximos meses. Las consultas con seguimiento se ejecutan automáticamente y proporcionan información actualizada sin tener que acordarse de volver a ejecutar las consultas.
   
-![Ejemplo de consultas con seguimiento con una seleccionada](../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![Ejemplo de consultas con seguimiento con una seleccionada](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
 ### <a name="saved-queries"></a>Consultas guardadas
 
 Las consultas guardadas también se encuentran en la sección de rastreadores. Puede usar consultas guardadas para almacenar las búsquedas comunes del explorador que desea volver a volver más rápido y de forma repetida, sin tener que volver a crear la búsqueda cada vez.
   
-![Ejemplo de consultas guardadas con una seleccionada](../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![Ejemplo de consultas guardadas con una seleccionada](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
   
 Siempre puede guardar una consulta de seguimiento de forma notable o cualquiera de sus propias consultas del explorador mediante el botón **Guardar consulta** en la parte superior de la página del explorador. Cualquier elemento guardado en la lista de **consultas guardadas** se mostrará en la página rastreador. 
   
@@ -81,19 +81,19 @@ Ya sea que esté revisando el correo electrónico, el contenido o las actividade
   
 Y recuerde que siempre puede enviarnos sus comentarios sobre esta u otras características de seguridad de Office 365 haciendo clic en el botón **comentarios** en la esquina inferior derecha de la [información general del centro &amp; de seguridad y cumplimiento de Office 365](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Office 365 Security &amp; Compliance Center](../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Rastreadores y Office 365 protección contra amenazas avanzada
 
 Con nuestra amenaza de inaugural de confianza, destacamos las amenazas de malware avanzadas detectadas por los [datos adjuntos seguros de ATP de Office 365](atp-safe-attachments.md). Si es cliente de Office 365 Enterprise E5 y no usa la [protección contra amenazas avanzada](office-365-atp.md) (ATP) de Office 365, debe estar incluido en la suscripción. ATP proporciona valor incluso si tiene otras herramientas de seguridad filtrando el flujo de correo electrónico con los servicios de Office 365. Sin embargo, las características contra correo no deseado y [vínculos seguros de Office 365 ATP](atp-safe-links.md) funcionan mejor cuando la solución principal de seguridad de correo electrónico es a través de Office 365. 
   
-![ATP en el centro &amp; de seguridad y cumplimiento](../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![ATP en el centro &amp; de seguridad y cumplimiento](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
 En el mundo de las amenazas Riddled, la ejecución de análisis de antimalware tradicionales significa que no está protegido lo suficiente como para evitar los ataques. Los atacantes más sofisticados de hoy usan las herramientas disponibles habitualmente para crear ataques nuevos, ofuscados o retrasados que no serán reconocidos por los motores de antimalware tradicionales basados en firmas. La característica de datos adjuntos seguros de ATP lleva archivos adjuntos de correo y los detona en un entorno virtual para determinar si son seguros o malintencionados. Este proceso de detonación abre cada archivo en un entorno de equipo virtual y, a continuación, observa lo que sucede después de abrir el archivo. Tanto si se trata de un archivo PDF, un archivo comprimido o un documento de Office, el código malintencionado se puede ocultar en un archivo, activando una vez que la víctima la abre en su equipo. Al detonar y analizar el archivo en el flujo de correo electrónico, las capacidades de ATP de Office 365 encuentran estas amenazas en función de los comportamientos, la reputación del archivo y una serie de reglas heurísticas.
   
 El filtro de nueva amenaza notable resalta los elementos que se detectaron recientemente a través de datos adjuntos seguros ATP. Estas detecciones representan elementos que son nuevos archivos malintencionados, que no se han encontrado previamente en Office 365 en el correo electrónico del flujo de correo electrónico o de otros clientes. Preste atención a los elementos del rastreador de amenazas digno de destacar, consulte quién lo ha dirigido y revise los detalles de detonación que se muestran en la ficha análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el explorador). Nota solo encontrará esta pestaña en los mensajes de correo electrónico detectados por la funcionalidad de datos adjuntos seguros de ATP: este Tracker destacado incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el explorador.
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - Si su organización no dispone ya de estas capacidades de investigación y respuesta de amenazas de Office 365, consulte [¿Cómo obtenemos las capacidades de investigación de amenazas y respuesta de office 365?](office-365-ti.md).
     

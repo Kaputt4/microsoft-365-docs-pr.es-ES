@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: El Centro de administración de Exchange (EAC) es la consola de administración basada en web para Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 3a00b6b259c94e1446b6d6dc49b0f5daa9178cbd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599407"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083307"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administración de Exchange en Exchange Online Protection 
 
@@ -41,7 +41,7 @@ You can also access the EAC sign in page directly via the following URL: `https:
 
 En esta sección se describen los elementos de la interfaz de usuario del EAC.
 
-![EOP: AdminCenter](../media/EOP-AdminCenter.png)
+![EOP: AdminCenter](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Panel de características
 
@@ -67,14 +67,14 @@ Al hacer clic en la mayoría de las pestañas, verá una barra de herramientas. 
 
 |**Icono**|**Nombre**|**Action**|
 |:-----|:-----|:-----|
-|![Agregar icono](../media/ITPro-EAC-AddIcon.gif)|Agregar, nuevo|Utilice este icono para crear un nuevo objeto. Algunos de estos iconos tienen una flecha hacia abajo asociada donde puede hacer clic para mostrar objetos adicionales que puede crear.|
-|![Icono Editar](../media/ITPro-EAC-EditIcon.gif)|Editar|Utilice este icono para editar un objeto.|
-|![Eliminar icono](../media/ITPro-EAC-DeleteIcon.gif)|Eliminar|Utilice este icono para eliminar un objeto. Algunos iconos eliminados tienen una flecha hacia abajo donde puede hacer clic para mostrar opciones adicionales.|
-|![icono de Buscar](../media/ITPro-EAC-.gif)|Búsqueda|Usar este icono para abrir una casilla de búsqueda donde puede escribir una frase de búsqueda para el objeto que desee encontrar.|
-|![Icono Actualizar](../media/ITPro-EAC-RefreshIcon.gif)|Actualizar|Utilice este icono para actualizar la vista de lista.|
-|![Icono Más opciones](../media/ITPro-EAC-MoreOptionsIcon.gif)|Más opciones|Use este icono para ver más acciones que puede realizar para los objetos de la pestaña. Por ejemplo, al hacer clic en este icono en **Destinatarios \> Usuarios**, se muestra la opción para realizar una **Búsqueda avanzada**.  |
-|![Icono flecha arriba](../media/ITPro-EAC-UpArrowIcon.gif)![Icono flecha abajo](../media/ITPro-EAC-DownArrowIcon.gif)|Flecha hacia arriba y flecha hacia abajo|Utilice estos iconos para mover la prioridad de un objeto hacia arriba o hacia abajo.|
-|![Icono de quitar](../media/ITPro-EAC-RemoveIcon.gif)|Quitar|Utilice este icono para quitar objetos de la lista.|
+|![Agregar icono](../../media/ITPro-EAC-AddIcon.gif)|Agregar, nuevo|Utilice este icono para crear un nuevo objeto. Algunos de estos iconos tienen una flecha hacia abajo asociada donde puede hacer clic para mostrar objetos adicionales que puede crear.|
+|![Icono Editar](../../media/ITPro-EAC-EditIcon.gif)|Editar|Utilice este icono para editar un objeto.|
+|![Eliminar icono](../../media/ITPro-EAC-DeleteIcon.gif)|Eliminar|Utilice este icono para eliminar un objeto. Algunos iconos eliminados tienen una flecha hacia abajo donde puede hacer clic para mostrar opciones adicionales.|
+|![icono de Buscar](../../media/ITPro-EAC-.gif)|Búsqueda|Usar este icono para abrir una casilla de búsqueda donde puede escribir una frase de búsqueda para el objeto que desee encontrar.|
+|![Icono Actualizar](../../media/ITPro-EAC-RefreshIcon.gif)|Actualizar|Utilice este icono para actualizar la vista de lista.|
+|![Icono Más opciones](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Más opciones|Use este icono para ver más acciones que puede realizar para los objetos de la pestaña. Por ejemplo, al hacer clic en este icono en **Destinatarios \> Usuarios**, se muestra la opción para realizar una **Búsqueda avanzada**.  |
+|![Icono flecha arriba](../../media/ITPro-EAC-UpArrowIcon.gif)![Icono flecha abajo](../../media/ITPro-EAC-DownArrowIcon.gif)|Flecha hacia arriba y flecha hacia abajo|Utilice estos iconos para mover la prioridad de un objeto hacia arriba o hacia abajo.|
+|![Icono de quitar](../../media/ITPro-EAC-RemoveIcon.gif)|Quitar|Utilice este icono para quitar objetos de la lista.|
 
 ### <a name="list-view"></a>Vista de lista
 
@@ -86,9 +86,9 @@ Cuando seleccione un objeto de la vista de lista, la información acerca del obj
 
 ### <a name="me-tile-and-help"></a>Mosaico Yo y Ayuda
 
-El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente. Desde el menú desplegable en **Ayuda**![Icono de ayuda](../media/ITPro-EAC-HelpIcon.gif), puede realizar las siguientes acciones:
+El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente. Desde el menú desplegable en **Ayuda**![Icono de ayuda](../../media/ITPro-EAC-HelpIcon.gif), puede realizar las siguientes acciones:
 
-1. **Ayuda**: haga ![clic en](../media/ITPro-EAC-HelpIcon.gif) el icono ayuda para ver el contenido de la ayuda en línea.
+1. **Ayuda**: haga ![clic en](../../media/ITPro-EAC-HelpIcon.gif) el icono ayuda para ver el contenido de la ayuda en línea.
 
 2. **Deshabilitar la burbuja de ayuda**: la burbuja de ayuda muestra la ayuda contextual de los campos cuando se crea o edita un objeto. Puede desactivar el globo de Ayuda o activarlo si estaba deshabilitado.
 

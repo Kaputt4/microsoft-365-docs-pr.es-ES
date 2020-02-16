@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si desea asegurarse de que recibe el correo de un remitente determinado, ya que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de correo no deseado.
-ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 727c0eec837627bdf7da05411f619f7705425fe7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957265"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083448"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Crear listas de remitentes seguros en Office 365
 
@@ -63,12 +63,12 @@ La acción de la regla debe seguir este patrón:
 
 2. Agregue un encabezado X para indicar lo que hace la regla. En el ejemplo siguiente, puede Agregar un encabezado `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`sencillo. Si tiene más de un dominio en esta regla, puede cambiar el texto del encabezado según corresponda. **Cuando un mensaje omite el filtrado debido a una regla de flujo de correo, marca SFV: SKN en el encabezado X-Forefront-antispam-Report** (**si se encuentra en una lista de direcciones IP permitidas, también marca IPV: cal**). Esto le ayudará con la solución de problemas.
 
-![GUI para omitir el filtrado de correo no deseado.](../media/1-AllowList-SkipFilteringFromContoso.png)
+![GUI para omitir el filtrado de correo no deseado.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 > [!CAUTION]
 > No configure reglas de flujo de correo solo con *el dominio del remitente* como una condición para omitir el filtrado de correo no deseado. Este método aumenta significativamente el riesgo de que los remitentes de correo no deseado suplanten el dominio remitente (o suplantar la dirección de correo electrónico completa) omitir el filtrado de correo no deseado, las comprobaciones de autenticación de remitente y el mensaje llegará a la bandeja de entrada de una persona.
 
-![Cómo establecer el SCL en menos de uno.](../media/2-AllowList-SetsSCLMinus1.png)
+![Cómo establecer el SCL en menos de uno.](../../media/2-AllowList-SetsSCLMinus1.png)
 
 No agregue dominios de su propiedad o de dominios populares (por ejemplo `microsoft.com`,) a la regla de flujo de correo como una condición. Esto se considera un riesgo alto, ya que crea oportunidades para que los actores incorrectos le envíen correo que, de lo contrario, se filtraría.
 

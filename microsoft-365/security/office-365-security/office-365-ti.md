@@ -17,12 +17,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra cómo las capacidades de inteligencia sobre amenazas de Office 365 Advanced Threat Protection pueden ayudarle a investigar amenazas contra su organización, responder a malware, phishing y otros ataques que Office 365 ha detectado en su nombre y buscar amenazas indicadores.
-ms.openlocfilehash: 2f95054d35edee7db419bc665b520b2b48dda447
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4bd23dcafeed2faf04979b2c757d5517073a210d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598757"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082518"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Investigación y respuesta de amenazas de Office 365
 
@@ -47,7 +47,7 @@ La exposición de amenazas y la funcionalidad de respuesta &amp; en el centro de
 
 Use el panel de amenazas (también se conoce como el [Panel de seguridad](security-dashboard.md)) para ver rápidamente las amenazas que se han tratado y como una forma visual de informar a los responsables de las decisiones empresariales sobre cómo los servicios de Office 365 protegen su empresa.
   
-![Panel de amenazas](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
+![Panel de amenazas](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 Para ver y usar este panel, en el centro de seguridad &amp; y cumplimiento de Office 365, vaya a **Panel**de **Administración** \> de amenazas.
   
@@ -55,7 +55,7 @@ Para ver y usar este panel, en el centro de seguridad &amp; y cumplimiento de Of
 
 Use el [Explorador de amenazas (y las detecciones en tiempo real)](threat-explorer.md) para analizar las amenazas, ver el volumen de ataques a lo largo del tiempo y analizar los datos por familias de amenazas, la infraestructura del atacante, etc. El explorador de amenazas (también conocido como explorador) es el punto de partida del flujo de trabajo de la investigación del analista de seguridad.
   
-![Explorador de amenazas](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+![Explorador de amenazas](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
 Para ver y usar este informe, en el centro de seguridad &amp; y cumplimiento de Office 365, vaya a **Threat Management** \> **Explorer**.
   
@@ -63,11 +63,11 @@ Para ver y usar este informe, en el centro de seguridad &amp; y cumplimiento de 
 
 Use la lista incidentes (también denominada investigaciones) para ver una lista de los incidentes de seguridad de vuelo. Los incidentes se usan para realizar un seguimiento de las amenazas como los mensajes de correo electrónico sospechosos y para llevar a cabo una mayor investigación y corrección.
   
-![Lista de incidentes de amenazas actuales en Office 365](../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![Lista de incidentes de amenazas actuales en Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
 Para ver la lista de incidentes actuales de su organización, en el centro &amp; de seguridad y cumplimiento, vaya a **incidentes**de **revisión** \> de **Administración** \> de amenazas.
   
-![En el centro &amp; de seguridad y cumplimiento, elija \> revisión de administración de amenazas](../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+![En el centro &amp; de seguridad y cumplimiento, elija \> revisión de administración de amenazas](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### <a name="attack-simulator"></a>Simulador de ataque
 
@@ -81,7 +81,7 @@ Use las capacidades de investigación y respuesta automatizadas (AIR) para ahorr
 
 Como parte de la oferta del plan 2 de protección contra amenazas avanzada de Office 365, los analistas de seguridad pueden revisar los detalles sobre una amenaza conocida. Esto es útil para determinar si hay pasos o medidas preventivas adicionales que se pueden llevar a cabo para mantener a los usuarios seguros.
   
-![Tendencias de seguridad que muestran información sobre amenazas recientes](../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
+![Tendencias de seguridad que muestran información sobre amenazas recientes](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
 ## <a name="how-do-we-get-these-capabilities"></a>¿Cómo obtenemos estas capacidades?
 

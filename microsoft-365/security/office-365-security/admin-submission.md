@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo enviar correos sospechosos, direcciones URL y mensajes de suplantación de identidad sospechoso, correo no deseado y otros mensajes potencialmente peligrosos, direcciones URL y archivos desde el inquilino de Office 365 a Microsoft para su análisis.
-ms.openlocfilehash: a12981ee302ea72e112826104996fb775e4ac3fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b123aef485628728df9db27875117b47295975ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599987"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083649"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Cómo enviar sospechoso de correo no deseado, phish, direcciones URL y archivos a Microsoft para el análisis de Office 365
 
@@ -35,7 +35,7 @@ Para enviar contenido a Microsoft, haga clic en el botón **nuevo envío** en el
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Enviar un correo electrónico cuestionable a Microsoft
 
-![Ejemplo de envío de correo electrónico](../media/submission-flyout-email.PNG)
+![Ejemplo de envío de correo electrónico](../../media/submission-flyout-email.PNG)
 
 1. Para enviar un correo electrónico, seleccione **correo electrónico** y especifique el **identificador de mensaje de red** de correo electrónico o cargue el archivo de correo electrónico.
 
@@ -51,7 +51,7 @@ Para enviar contenido a Microsoft, haga clic en el botón **nuevo envío** en el
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Enviar una dirección URL sospechosa a Microsoft
 
-![Ejemplo de envío de correo electrónico](../media/submission-url-flyout.png)
+![Ejemplo de envío de correo electrónico](../../media/submission-url-flyout.png)
 
 1. Para enviar una dirección URL, seleccione **dirección URL** en el control flotante. Escriba la dirección URL completa, incluido el protocolo (**https://**).
 
@@ -61,7 +61,7 @@ Para enviar contenido a Microsoft, haga clic en el botón **nuevo envío** en el
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Enviar un archivo sospechoso a Microsoft
 
-![Ejemplo de envío de correo electrónico](../media/submission-file-flyout.PNG)
+![Ejemplo de envío de correo electrónico](../../media/submission-file-flyout.PNG)
 
 1. Para enviar un **archivo de selección de archivo desde** el control flotante y cargar el archivo que desea examinar.
 

@@ -17,12 +17,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de vínculos seguros de ATP, puede incluir una lista de direcciones URL de "do-not-Rewrite" para permitir que algunos usuarios de la organización visiten los sitios que incluya en la lista.
-ms.openlocfilehash: 3a2fd98adc1eee36a984ac09b80546ae6b98e31d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1983e0ff2ea85092af483d4f7a563681a6441152
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598377"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082219"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada con los vínculos seguros de Office 365 ATP
 
@@ -54,7 +54,7 @@ Para editar (o definir) las directivas de ATP, debe tener asignado un rol apropi
 
 2. En el panel de navegación izquierdo, en **vínculos seguros**de la **Directiva** \> de **Administración** \> de amenazas.
 
-3. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un **+** signo más ()) para crear una nueva Directiva. (También puede editar una directiva existente).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un **+** signo más ()) para crear una nueva Directiva. (También puede editar una directiva existente).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. Especifique un nombre y una descripción para la Directiva.
 

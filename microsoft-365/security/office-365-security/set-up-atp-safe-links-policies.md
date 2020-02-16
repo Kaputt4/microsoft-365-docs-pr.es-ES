@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 4ae3b75ce13b783bc8a373202a0ae42bb14d7cfc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f06b2b895899973d071df384b53a090b766fd77f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598367"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082239"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
@@ -71,7 +71,7 @@ Cuando tenga la [protección contra amenazas avanzada de Office 365](office-365-
     
 2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **vínculos seguros**de **directiva \> ** .
     
-3. En la sección **directivas que se aplican a toda la organización** , seleccione predeterminado y, a continuación, elija **Editar** (el botón Editar **es**similar a un lápiz).<br/>![Haga clic en Editar para editar la directiva predeterminada para protección de vínculos seguros](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. En la sección **directivas que se aplican a toda la organización** , seleccione predeterminado y, a continuación, elija **Editar** (el botón Editar **es**similar a un lápiz).<br/>![Haga clic en Editar para editar la directiva predeterminada para protección de vínculos seguros](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. En la sección **bloquear las siguientes direcciones URL** , especifique una o más direcciones URL en las que desee impedir que los usuarios de la organización puedan visitar. (Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md)).
     
@@ -89,7 +89,7 @@ Una vez que haya revisado (o editado) la directiva predeterminada de vínculos s
     
 3. Elija **vínculos seguros**.
     
-4. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un **+** signo más ()).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un **+** signo más ()).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. Especifique el nombre, la descripción y la configuración de la directiva.<br/>**Ejemplo:** Para configurar una directiva denominada "no hay clic directo a través de" que no permite a los usuarios de un grupo determinado de su organización hacer clic a través de un sitio web específico sin protección de vínculos seguros de ATP, puede especificar la siguiente configuración recomendada: 
     

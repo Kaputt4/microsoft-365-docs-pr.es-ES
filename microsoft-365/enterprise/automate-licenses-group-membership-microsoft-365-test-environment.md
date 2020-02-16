@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure las licencias basadas en grupos y la pertenencia a grupos dinámica en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 0575f2aa763f85a0042e6d02f9cce65e69064973
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 266ae8cb133eccf74ea75382b400ca8241782ec5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601187"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068507"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatizar la concesión de licencias y la pertenencia a grupos para el entorno de prueba de Microsoft 365 Enterprise
 
@@ -33,10 +33,10 @@ Hay dos fases para configurar la licencia automática y la pertenencia a grupos 
 1. Crear el entorno de pruebas de Microsoft 365 Enterprise.
 2. Configurar y probar la pertenencia a grupos dinámica y las licencias automáticas.
 
-![Guías del laboratorio de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Haga clic [aquí](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
 
@@ -63,7 +63,7 @@ En primer lugar, cree un nuevo grupo de ventas y agregue una regla de pertenenci
    - Seleccione la propiedad **Department** .
    - Seleccione el operador **es igual** a.
    - Escriba **sales** en **Value**.
-10. Haga clic en **Guardar**.
+10. Haga clic en **Guardar **.
 11. Haga clic en **Crear**.
 
 A continuación, configure el grupo ventas para que a los miembros se les asigne automáticamente la licencia 365 E5 de Microsoft.

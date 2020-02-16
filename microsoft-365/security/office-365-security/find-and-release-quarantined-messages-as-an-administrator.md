@@ -16,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC).
-ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c46ff11b8d08c46c3000232c836af8148c58511
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599397"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083107"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Buscar y liberar mensajes en cuarentena como un administrador
 
@@ -137,7 +137,7 @@ Si desea liberar los mensajes dirigidos para sus destinatarios, tiene las opcion
 
 2. Haga clic en un mensaje para seleccionarlo y, a continuación, haga clic en el icono **Liberar mensaje** que se muestra en la siguiente pantalla.
 
-   ![Muestra la página de cuarentena con el icono de liberar mensaje resaltado y con las opciones de liberación.](../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
+   ![Muestra la página de cuarentena con el icono de liberar mensaje resaltado y con las opciones de liberación.](../../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
 
    Haga clic en **Liberar el mensaje seleccionado y permitir el remitente** en la lista desplegable.
 
@@ -157,7 +157,7 @@ Si desea liberar los mensajes dirigidos para sus destinatarios, tiene las opcion
 
 4. Haga clic en **publicar**.
 
-Si hace clic en **Actualizar** ![icono](../media/ITPro-EAC-RefreshIcon.gif) de actualización para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha lanzado a los destinatarios deseados.
+Si hace clic en **Actualizar** ![icono](../../media/ITPro-EAC-RefreshIcon.gif) de actualización para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha lanzado a los destinatarios deseados.
 
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>Liberar un mensajes en cuarentena (o más) para todos los destinatarios
 
@@ -184,7 +184,7 @@ Si hace clic en **Actualizar** ![icono](../media/ITPro-EAC-RefreshIcon.gif) de a
 > [!TIP]
 > Para ayudar a garantizar que un mensaje no se marque como correo no deseado, siga los pasos en [Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md).
 
-Si hace clic en el icono **Actualizar**![Icono Actualizar](../media/ITPro-EAC-RefreshIcon.gif) para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha liberado para los destinatarios previstos.
+Si hace clic en el icono **Actualizar**![Icono Actualizar](../../media/ITPro-EAC-RefreshIcon.gif) para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha liberado para los destinatarios previstos.
 
 ## <a name="for-more-information"></a>Más información
 

@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure Azure AD Identity Protection y analice las cuentas actuales en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 376fc838191314e93ae37accb7fc5066456499fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f3740e42c7ec909f44a3c761dfc743359b3f030
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597167"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068497"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identity Protection para su entorno de prueba de Microsoft 365 Enterprise
 
@@ -33,10 +33,10 @@ Hay dos fases para la configuración de Azure AD Identity Protection en su entor
 1. Crear el entorno de pruebas de Microsoft 365 Enterprise.
 2. Use Azure AD Identity Protection.
 
-![Guías del laboratorio de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Haga clic [aquí](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
 
@@ -55,7 +55,7 @@ Si quiere probar Azure AD Identity Protection en una empresa simulada, siga las 
 4. En **notificar**, haga clic en **alertas de usuarios en riesgo detectado**.
 5. En el panel de **alertas usuarios en riesgo detectados** , seleccione **medio**.
 6. Para **los mensajes de correo electrónico se envían a los siguientes usuarios**, haga clic en **incluido** y compruebe que la cuenta de administrador global está en la lista de miembros seleccionados.
-7. Haga clic en **Guardar**.
+7. Haga clic en **Guardar **.
 
 Haga clic en las diferentes directivas en **proteger** para ver cómo configurarlas. Si crea y activa una directiva, asegúrese de que no bloquee el acceso por un ámbito de condiciones demasiado amplio o de que no pueda iniciar sesión, ni siquiera como administrador global.
 

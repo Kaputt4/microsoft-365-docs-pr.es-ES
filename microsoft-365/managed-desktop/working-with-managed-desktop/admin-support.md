@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: faa0e904ef2a07ccd209ef91630ce6fc8205e347
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801202"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085719"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte de administración para escritorio administrado de Microsoft
 
@@ -57,7 +57,7 @@ Agradecemos sus comentarios y la usamos para mejorar la experiencia de soporte d
 
 Una vez que un vale está en estado **mitigado** o **resuelto** , puede compartir sus comentarios sobre su experiencia con ese problema en particular. Para ello, vaya a la página **solicitudes de soporte técnico** en el portal de administración. Seleccione el vale específico. En el momento en que aparece en el lado derecho, seleccione la pestaña **comentarios** y proporcione la información solicitada. Tenga cuidado de no incluir información personal en el formulario de comentarios. Para obtener más información acerca de la privacidad, consulte la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-![Formulario de comentarios](images/feedback_form.png)
+![Formulario de comentarios](../../media/feedback_form.png)
 
 ## <a name="provide-administrator-rights-to-specific-users"></a>Proporcionar derechos de administrador a usuarios específicos
 

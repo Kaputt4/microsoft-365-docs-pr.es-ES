@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre la información sobre el dominio del remitente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598827"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082586"
 ---
 # <a name="fix-sender-domain-insight"></a>Solucionar la información del dominio del remitente
 
@@ -36,15 +36,15 @@ Los mensajes que no cumplen los criterios no se atribuirán a la organización y
 
 La introducción a **Fix Domain Sender** le muestra el correo electrónico de su entorno local que no cumple con los criterios, le ayuda a identificar las cuentas de usuario y equipos potencialmente comprometidos en su entorno de correo electrónico local y le ayuda a tomar medidas de corrección.
 
-![La información del dominio del remitente Fix del panel del flujo de correo del centro de seguridad & cumplimiento](../media/sender-domain-insight-selected.png)
+![La información del dominio del remitente Fix del panel del flujo de correo del centro de seguridad & cumplimiento](../../media/sender-domain-insight-selected.png)
 
 Al hacer clic en **Ver detalles**, se le lleva a otro widget con más detalles como se muestra en el siguiente diagrama:
 
-![Widget de detalles en el información sobre la solución de dominio del remitente](../media/sender-domain-view-details.png)
+![Widget de detalles en el información sobre la solución de dominio del remitente](../../media/sender-domain-view-details.png)
 
 Verá el conector de entrada que se usó para entregar los mensajes a Office 365. También puede hacer clic en **ver identificadores de mensaje de ejemplo** para ver los detalles de los mensajes que se enviaron desde su entorno de correo electrónico local. Debido a que estos mensajes fueron rechazados por Office 365, no puede usar el seguimiento de mensajes, pero puede usar los identificadores de mensaje de ejemplo para realizar un seguimiento de los mensajes en su entorno de correo electrónico local.
 
-![Ver identificadores de mensaje de ejemplo en el información de dominio del remitente de corrección](../media/sender-domain-view-sample-message-ids.png)
+![Ver identificadores de mensaje de ejemplo en el información de dominio del remitente de corrección](../../media/sender-domain-view-sample-message-ids.png)
 
 ## <a name="see-also"></a>Vea también
 

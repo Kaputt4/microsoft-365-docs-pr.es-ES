@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 07/01/2019
+ms.date: 02/14/2020
 audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden obtener información sobre los permisos que están disponibles en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: 209e871ee9df4bd40568bc647b4bae838ddace73
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2676115e9675bbfe184b4e0fbe43bdc03689c4d9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598717"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088309"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Permisos en el Centro de seguridad y cumplimiento de Office 365
 
@@ -30,7 +30,7 @@ El centro de seguridad & cumplimiento de Office 365 le permite conceder permisos
 
 Los permisos del centro de seguridad & cumplimiento se basan en el modelo de permisos de control de acceso basado en roles (RBAC). Se trata del mismo modelo de permisos que usa Exchange, por lo que si está familiarizado con Exchange, conceder permisos en el centro de seguridad & cumplimiento será muy similar. Sin embargo, es importante recordar que los grupos de roles de Exchange y los grupos de roles del centro de seguridad & cumplimiento no comparten los permisos o la pertenencia. Aunque ambos tienen un grupo de roles de administración de la organización, no son iguales. Los permisos que conceden y los miembros de los grupos de roles son diferentes. A continuación se incluye una lista de los grupos de roles del centro de cumplimiento & cumplimiento.
 
-![Página de permisos en el Centro de seguridad y cumplimiento de Office 365](../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
+![Página de permisos en el Centro de seguridad y cumplimiento de Office 365](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relación de los miembros, los roles y los grupos de roles
 
@@ -40,7 +40,7 @@ Un **grupo de roles** es un conjunto de roles que permite que los usuarios reali
 
 El centro de seguridad & cumplimiento incluye grupos de roles predeterminados para las tareas y funciones más comunes que necesitará asignar a los usuarios. Le recomendamos que agregue simplemente usuarios individuales como **miembros** a los grupos de roles predeterminados.
 
-![Diagrama que muestra la relación de los grupos de roles con los roles y los miembros](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagrama que muestra la relación de los grupos de roles con los roles y los miembros](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 Puede editar o eliminar los grupos de roles existentes, pero no lo recomendamos. En lugar de modificar un grupo de roles predeterminado, puede copiarlo, modificarlo y guardarlo con un nombre diferente.
 
@@ -98,7 +98,6 @@ Tenga en cuenta que los siguientes roles no se asignan al grupo de roles adminis
 |:-----|:-----|:-----|
 |**Registros de auditoría**|Active y configure la auditoría para la organización de Office 365, vea los informes de auditoría de la organización y, a continuación, exporte estos informes a un archivo.|Administración de la organización <br/><br/> Administración de registros <br/><br/> Administrador de seguridad|
 |**Administración de casos**|Crear, editar, eliminar y controlar el acceso a casos de eDiscovery.|Administrador de cumplimiento <br/><br/> Administrador de exhibición de documentos electrónicos <br/><br/> Administración de la organización|
-|**Investigador de datos**|Realizar búsquedas en buzones de correo, sitios de SharePoint Online y ubicaciones de OneDrive para la empresa.|Exportar <br/><br/> Descifrado de RMS <br/><br/> Custodian <br/><br/> Comunicación <br/><br/> Revisar <br/><br/> Vista previa <br/><br/> Búsqueda de cumplimiento <br/><br/> Administración de la investigación de datos|
 |**Comunicación**|Administre todas las comunicaciones con los custodios identificados en un caso de exhibición avanzada de documentos electrónicos.  Cree notificaciones de retención, recordatorios de retención y escalamientos a la administración. Realice un seguimiento de la confirmación del custodio de notificaciones de retención y administre el acceso al portal de custodios que usa cada custodio en un caso para realizar un seguimiento de las comunicaciones para los casos en los que se identificaron como custodios.|Administrador de exhibición de documentos electrónicos|
 |**Administrador de cumplimiento**|Ver y editar la configuración y los informes de las características de cumplimiento.|Administrador de cumplimiento <br/><br/> Administrador de datos de cumplimiento <br/><br/> Administración de la organización|
 |**Búsqueda de cumplimiento**|Realizar búsquedas en los buzones de correo y obtener una estimación de los resultados.|Administrador de cumplimiento <br/><br/> Administrador de datos de cumplimiento <br/><br/> Administrador de exhibición de documentos electrónicos <br/><br/> Administración de la organización <br/><br/> Operador de seguridad|

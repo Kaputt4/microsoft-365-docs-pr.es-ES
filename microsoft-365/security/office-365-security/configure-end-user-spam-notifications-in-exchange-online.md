@@ -15,12 +15,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Puede configurar notificaciones de correo no deseado para el usuario final para la directiva predeterminada de filtro de correo no deseado de toda la compañía o para directivas personalizadas de filtro de correo no deseado que se aplican a dominios.
-ms.openlocfilehash: f7ef916eea8d9c926f53ef073874dfb299cb92f8
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: cc3054715fdc5cbe72bc6655462b61eb8a9db5d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957395"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086469"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurar notificaciones de correo no deseado para el usuario final en Exchange Online
 
@@ -63,14 +63,14 @@ Para obtener información acerca de los métodos abreviados de teclado que se pu
     
    - **Idioma de notificación** En la lista desplegable, seleccione el idioma en el que se escribirán las notificaciones de correo no deseado para el usuario final en esta directiva. 
     
-   - Haga clic en **Guardar**. En el panel derecho aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
+   - Haga clic en **Guardar **. En el panel derecho aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
     
 > [!NOTE]
 >  Las notificaciones de correo no deseado para el usuario final solo serán compatibles con las directivas de filtro de correo no deseado que estén habilitadas. >  Las notificaciones de correo no deseado para el usuario final se envían solo una vez al día. La hora de envío de la notificación no es configurable y, como tal, no se puede confirmar para ningún cliente en concreto. 
   
  **Sugerencia:** Si desea probar las notificaciones de correo no deseado para el usuario final enviándolas a un conjunto limitado de usuarios antes de implementarlos por completo, cree una directiva personalizada de filtro de correo no deseado que permita notificaciones de correo no deseado para el usuario final para los dominios en los que residen los usuarios. A continuación, en el EAC, en **reglas \> de flujo de correo**, cree una regla de flujo de correo (también denominada regla de transporte) para bloquear mensajes de Quarantine@messaging.microsoft.com (la dirección de correo electrónico que envía notificaciones) con excepciones para los usuarios que desea que reciban las notificaciones. La siguiente imagen es un ejemplo de cómo crear una excepción para dos usuarios (SaraD y AlexD) desde el dominio Contoso.com: 
   
-![Regla de transporte para probar las notificaciones de correo no deseado de usuario final](../media/EOP-ESN-testspecificusers.jpg)
+![Regla de transporte para probar las notificaciones de correo no deseado de usuario final](../../media/EOP-ESN-testspecificusers.jpg)
   
 ## <a name="use-the-scc-to-configure-end-user-spam-notifications"></a>Usar el SCC para configurar las notificaciones de correo no deseado para el usuario final
 
@@ -90,7 +90,7 @@ También puede usar el centro de seguridad y cumplimiento (SCC) para configurar 
     
    - **Idioma de notificación** En la lista desplegable, seleccione el idioma en el que se escribirán las notificaciones de correo no deseado para el usuario final en esta directiva. 
     
-   - Haga clic en **Guardar**. En el panel aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
+   - Haga clic en **Guardar **. En el panel aparecerá un resumen de la configuración de la Directiva de filtro de correo no deseado, incluida la configuración de notificaciones de correo no deseado para el usuario final.
 
 ## <a name="for-more-information"></a>Más información
 

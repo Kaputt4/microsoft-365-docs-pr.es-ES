@@ -15,12 +15,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: Las notificaciones de correo no deseado para el usuario final se pueden configurar en la directiva de filtro de contenido de toda la compañía, o bien en las directivas de filtro de contenido personalizadas que se aplican a los dominios.
-ms.openlocfilehash: 95a8142b4f4687c66657cd01e1110470c8b08bc4
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6ac43ee3419e7b768312b6826994a5b8f5e4a231
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957405"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083508"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurar notificaciones de correo no deseado para el usuario final en EOP
   
@@ -71,7 +71,7 @@ Para obtener información acerca de los métodos abreviados de teclado que se pu
   
  **Sugerencia:** Si quiere probar las notificaciones de correo no deseado para el usuario final enviándolas a un conjunto limitado de usuarios antes de implementarlas totalmente, cree una directiva de filtro de contenido personalizada que habilite notificaciones de correo no deseado para el usuario final para los dominios en los que residen los usuarios. A continuación, en el EAC, en **reglas \> de flujo de correo**, cree una regla de flujo de correo (también denominada regla de transporte) para bloquear mensajes de Quarantine@messaging.microsoft.com (la dirección de correo electrónico que envía notificaciones) con excepciones para los usuarios que desea que reciban las notificaciones. La siguiente imagen es un ejemplo de cómo crear una excepción para dos usuarios (SaraD y AlexD) desde el dominio Contoso.com: 
   
-![Regla de transporte para probar las notificaciones de correo no deseado de usuario final](../media/EOP-ESN-testspecificusers.jpg)
+![Regla de transporte para probar las notificaciones de correo no deseado de usuario final](../../media/EOP-ESN-testspecificusers.jpg)
   
 ## <a name="for-more-information"></a>Más información
 

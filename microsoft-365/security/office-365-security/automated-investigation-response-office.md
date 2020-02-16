@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 975c6d8a00e3e1cd8c30b2d417c74cde39b8cd5a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ca4cf6033b843b92a2edceaae27f43d6eed8e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599807"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086895"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Investigación y respuesta automatizadas (AIR) en Office 365
 
@@ -66,7 +66,7 @@ Para ver las alertas, en el centro de seguridad & cumplimiento, elija **alertas*
 
 Si su organización administra sus alertas de seguridad a través de un sistema de administración de alertas, un sistema de administración de servicios o un sistema de administración de eventos e información de seguridad (SIEM), puede enviar alertas de Office 365 a ese sistema mediante una notificación por correo electrónico o a través de la [API de actividad de administración de office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Las notificaciones de alerta de investigación a través de correo electrónico o API incluyen vínculos para acceder a las alertas en el centro de seguridad & cumplimiento, lo que permite que el administrador de seguridad asignado navegue rápidamente a la investigación.
 
-![Alertas que vinculan a investigaciones](../media/air-alerts-page-details.png) 
+![Alertas que vinculan a investigaciones](../../media/air-alerts-page-details.png) 
 
 ## <a name="security-playbooks"></a>Guías de seguridad
 
@@ -103,7 +103,7 @@ Cada paso de alto nivel incluye una serie de subpasos que se ejecutan para propo
 
 La página investigaciones automatizadas muestra las investigaciones de su organización y sus Estados actuales.
 
-![Página principal de investigación para AIR](../media/air-maininvestigationpage.png) 
+![Página principal de investigación para AIR](../../media/air-maininvestigationpage.png) 
   
 Puede:
 - Vaya directamente a una investigación (seleccione un **identificador de investigación**).
@@ -124,7 +124,7 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |Corregido | La investigación ha finalizado y se ha corregido completamente (se han aprobado todas las acciones) |
 |Parcialmente remediado | La investigación ha finalizado y algunas de las acciones recomendadas se han aprobado |
 |Finalizada por el usuario | Un administrador terminó la investigación. |
-|Error | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
+|Failed | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
 |En cola por limitación | La investigación está esperando el análisis debido a las limitaciones del procesamiento del sistema (para proteger el rendimiento del servicio) |
 |Terminado con la limitación | La investigación no se pudo completar en el tiempo suficiente debido a las limitaciones de procesamiento del sistema y el volumen de investigación. Puede reactivar la investigación seleccionando el correo electrónico en el explorador y seleccionando la acción investigar. |
 
@@ -132,7 +132,7 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 
 Al abrir una investigación específica, verá la página gráfico de investigación. En esta página se muestran todas las entidades distintas: mensajes de correo electrónico, usuarios (y sus actividades) y dispositivos que se investigaron automáticamente como parte de la alerta que se activó.
 
-![Página de gráfico de investigación de aire](../media/air-investigationgraphpage.png)
+![Página de gráfico de investigación de aire](../../media/air-investigationgraphpage.png)
 
 Puede:
 - Obtenga información general visual de la investigación actual.
@@ -144,7 +144,7 @@ Puede:
 
 En la pestaña **alertas** de una investigación, puede ver las alertas relevantes para la investigación. Los detalles incluyen la alerta que desencadenó la investigación y otras alertas correlacionadas, como el inicio de sesión peligroso, las infracciones de directivas de DLP, etc., que están relacionadas con la investigación. En esta página, un analista de seguridad también puede ver detalles adicionales de alertas individuales.
 
-![Página de alertas de AIR](../media/air-investigationalertspage.png)
+![Página de alertas de AIR](../../media/air-investigationalertspage.png)
 
 Puede:
 - Obtenga información general visual de la alerta desencadenadora actual y de cualquier alerta asociada.
@@ -177,14 +177,14 @@ Los recuentos de correo electrónico se calculan en el momento de la investigaci
 
 Como ejemplo, considere el siguiente escenario. El primer clúster de tres mensajes de correo electrónico se consideró phish. Se ha encontrado otro clúster de mensajes similares con la misma dirección IP y asunto, y se ha considerado malintencionado, ya que algunos de ellos se identificaron como phish durante la detección inicial. 
 
-![Página de investigación de correo electrónico de AIR](../media/air-investigationemailpage.png)
+![Página de investigación de correo electrónico de AIR](../../media/air-investigationemailpage.png)
 
 Puede:
 - Obtenga información general visual de los resultados y amenazas de clúster actuales encontrados.
 - Haga clic en una entidad de clúster o en una lista de amenazas para abrir una página emergente que muestre los detalles de alerta completos.
 - Para investigar más detalladamente el clúster de correo electrónico, haga clic en el vínculo "abrir en el explorador" que se encuentra en la parte superior de la pestaña "detalles del clúster de correo electrónico"
 
-![Correo electrónico de investigación de aire con detalles de control flotante](../media/air-investigationemailpageflyoutdetails.png)
+![Correo electrónico de investigación de aire con detalles de control flotante](../../media/air-investigationemailpageflyoutdetails.png)
 
 > [!NOTE]
 > En el contexto del correo electrónico, es posible que vea una superficie de amenaza con anomalías de volumen como parte de la investigación. Una anomalía de volumen indica un pico en mensajes de correo electrónico similares en torno a la hora del evento de investigación en comparación con los plazos anteriores. Este pico en el tráfico de correo electrónico con características similares (por ejemplo, el asunto y el dominio del remitente, la similitud de cuerpo y la IP del remitente) es el principio del inicio de las campañas de correo electrónico o de los ataques. Sin embargo, las campañas de correo electrónico masivos, de correo no deseado y legítimas suelen compartir estas características. Las anomalías de volumen representan una amenaza potencial y, en consecuencia, podrían ser menos graves en comparación con amenazas de malware o phish identificadas mediante motores antivirus, detonación o reputación malintencionada.
@@ -195,7 +195,7 @@ En la pestaña **usuarios** , puede ver todos los usuarios identificados como pa
 
 Por ejemplo, en la siguiente imagen, AIR ha identificado indicadores de peligro y anomalías en función de una nueva regla de bandeja de entrada creada. Hay disponibles detalles adicionales (evidencia) de la investigación en vistas detalladas de esta ficha. los indicadores de exposición y anomalías también pueden incluir detecciones de anomalías de [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security).
 
-![Página de usuarios de investigación de aire](../media/air-investigationuserspage.png)
+![Página de usuarios de investigación de aire](../../media/air-investigationuserspage.png)
 
 Puede:
 - Obtenga una introducción visual de los resultados de usuario identificados y los riesgos encontrados.
@@ -205,7 +205,7 @@ Puede:
 
 En la pestaña **máquinas** , puede ver todos los equipos identificados como parte de la investigación. 
 
-![Página de la máquina de investigación de aire](../media/air-investigationmachinepage.png)
+![Página de la máquina de investigación de aire](../../media/air-investigationmachinepage.png)
 
 Como parte de las guías, AIR correlaciona las amenazas de correo electrónico con los dispositivos (por ejemplo, malware zapped). Por ejemplo, una investigación pasa un hash de archivo malintencionado entre en [Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) para investigar. Esto permite la investigación automatizada de las máquinas pertinentes para los usuarios, para ayudar a garantizar que las amenazas se dirijan en la nube y en los extremos. 
@@ -220,19 +220,19 @@ En la pestaña **entidades** , puede ver las entidades identificadas y analizada
 
 Aquí, puede ver las entidades investigadas y los detalles de los tipos de entidades, como los mensajes de correo electrónico, los clústeres, las direcciones IP, los usuarios, etc. También puede ver cuántas entidades se han analizado y las amenazas que se han asociado a cada una de ellas. 
 
-![Página de entidades de investigación de aire](../media/air-investigationentitiespage.png)
+![Página de entidades de investigación de aire](../../media/air-investigationentitiespage.png)
 
 Puede:
 - Obtenga información general visual de las entidades de investigación y las amenazas encontradas.
 - Seleccione una entidad para abrir una página emergente que muestre los detalles de la entidad relacionada.
 
-![Detalles de entidades de investigación de aire](../media/air-investigationsentitiespagedetails.png)
+![Detalles de entidades de investigación de aire](../../media/air-investigationsentitiespagedetails.png)
 
 ### <a name="playbook-log"></a>Registro de la guía
 
 En la pestaña **registro** , puede ver todos los pasos de la guía que se han producido durante la investigación. El registro captura un inventario completo de todos los analizadores y las acciones completadas por las capacidades de investigación automática de Office 365 como parte del aire. Proporciona una vista clara de todos los pasos realizados, incluida la propia acción, una descripción y la duración de la real desde el principio hasta el final. 
 
-![Página de registro de investigación de aire](../media/air-investigationlogpage.png)
+![Página de registro de investigación de aire](../../media/air-investigationlogpage.png)
 
 Puede:
 - Vea una descripción general visual de los pasos de la guía realizados.
@@ -266,7 +266,7 @@ En la ficha **acciones** , puede ver todas las acciones de la guía que se recom
 
 Acciones Capture los pasos que Microsoft recomienda realizar al final de una investigación. Puede realizar acciones de corrección aquí si selecciona una o varias acciones. Al hacer clic en **aprobar** se permite comenzar la corrección. (Es necesario disponer de los permisos adecuados: el rol "buscar y purgar" es necesario para ejecutar acciones desde el explorador y el aire). Por ejemplo, un lector de seguridad puede ver las acciones pero no aprobarlas. Nota: no es necesario aprobar todas las acciones. Si no está de acuerdo con la acción recomendada o su organización no elige determinados tipos de acciones, puede optar por **rechazar** las acciones o simplemente omitirlas y no realizar ninguna acción. La aprobación o el rechazo de todas las acciones permite que la investigación se cierre completamente (el estado pasa a ser corregido), mientras que dejar algunas acciones incompletas da como resultado un cambio en el estado de la investigación a un estado parcialmente corregido.
 
-![Página de acción de investigaciones de aire](../media/air-investigationactionspage.png)
+![Página de acción de investigaciones de aire](../../media/air-investigationactionspage.png)
 
 Puede:
 - Obtenga información general visual de las acciones recomendadas de la guía.
@@ -319,11 +319,11 @@ Además de las investigaciones automáticas desencadenadas por una alerta, el eq
 
 Por ejemplo, supongamos que está viendo datos en el explorador acerca de los mensajes detectados por el usuario. Puede seleccionar un elemento de la lista de resultados y, a continuación, hacer clic en **investigar** en el menú Acción (siempre que tenga permisos de corrección apropiados).
 
-![Mensajes detectados por el usuario en el explorador con el botón investigar](../media/Explorer-UserReported-Investigate.png)
+![Mensajes detectados por el usuario en el explorador con el botón investigar](../../media/Explorer-UserReported-Investigate.png)
 
 Como otro ejemplo, supongamos que está viendo datos sobre los mensajes de correo electrónico que se detectan como que contienen malware y que se detectan varios mensajes de correo electrónico que contienen malware. Puede seleccionar la pestaña **correo electrónico** , seleccionar uno o más mensajes de correo electrónico y, a continuación, en el menú **acciones** , seleccione **investigar**. 
 
-![Iniciar una investigación de malware en el explorador](../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![Iniciar una investigación de malware en el explorador](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 De forma similar a las guías activadas por una alerta, las investigaciones automáticas que se desencadenan desde una vista del explorador incluyen una investigación raíz, pasos para identificar y correlacionar amenazas y las acciones recomendadas para mitigar esas amenazas.
 

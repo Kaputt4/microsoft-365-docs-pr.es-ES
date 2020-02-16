@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 93a2601322fd33024c1310e1df69ad1dea2f07b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957415"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083707"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 
@@ -57,7 +57,7 @@ Asegúrese de que usted y su organización cumplen con los siguientes requisitos
 
 - Su organización tiene [el plan 2 de la protección contra amenazas avanzada de Office 365](office-365-atp.md), con el &amp; simulador de ataque visible en el centro de seguridad y cumplimiento (vaya a **simulador de ataque**de administración \> de **amenazas** )
 
-    ![Administración de amenazas: simulador de ataque](../media/ThreatMgmt-AttackSimulator.png)
+    ![Administración de amenazas: simulador de ataque](../../media/ThreatMgmt-AttackSimulator.png)
 
 ## <a name="credential-harvest-spear-phishing-attack"></a>Robo de credenciales de Spear-phishing
 
@@ -67,7 +67,7 @@ Este ataque se centra en permitirle manipular a la que parece que el mensaje se 
 
 ### <a name="to-simulate-a-spear-phishing-attack"></a>Para simular un ataque de "Spear phishing"
 
-![Crear cuerpo de correo electrónico](../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+![Crear cuerpo de correo electrónico](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
 Puede crear el editor HTML enriquecido directamente en el propio campo **del cuerpo del correo electrónico** o trabajar con el código fuente HTML.
 
@@ -75,15 +75,15 @@ Puede crear el editor HTML enriquecido directamente en el propio campo **del cue
 
 2. Especifique un nombre de campaña significativo para el ataque o seleccione una plantilla.
 
-   ![Página de inicio de phishing](../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   ![Página de inicio de phishing](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
 3. Especifique los destinatarios de destino. Puede tratarse de personas o grupos de la organización. Cada destinatario de destino debe tener un buzón de Exchange Online para que el ataque tenga éxito.
 
-   ![Selección de destinatarios](../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+   ![Selección de destinatarios](../../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
 
 4. Configure los detalles del correo de suplantación de identidad.
 
-   ![Configuración de detalles de correo electrónico](../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
+   ![Configuración de detalles de correo electrónico](../../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
 
    El formato HTML puede ser tan complejo o básico como las necesidades de la campaña. Como el formato de correo electrónico es HTML, puede insertar imágenes y texto para mejorar la increíble. Tiene control sobre la apariencia que tendrá el mensaje recibido en el cliente de correo electrónico de recepción.
 
@@ -161,7 +161,7 @@ Un ataque de fuerza bruta contra una organización se suele usar después de que
 
 Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que se está desarrollando, lo que está implementando y lo que ya se ha iniciado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Descripción del servicio de Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 

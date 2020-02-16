@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Empiece a usar la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598767"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088319"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Investigar y responder automáticamente ante amenazas en Office 365
 
@@ -55,11 +55,11 @@ Con las capacidades de investigación y respuesta automatizadas, cuando se desen
 
     Cualquiera de estos métodos le lleva a una lista de investigaciones.
 
-    ![Página principal de investigación para AIR](../media/air-maininvestigationpage.png) 
+    ![Página principal de investigación para AIR](../../media/air-maininvestigationpage.png) 
 
 3. En la lista de investigaciones, seleccione un elemento en la columna **ID** . Se abrirá la página Detalles de la investigación, empezando por el gráfico de investigación en la vista.
 
-    ![Página de gráfico de investigación de aire](../media/air-investigationgraphpage.png)
+    ![Página de gráfico de investigación de aire](../../media/air-investigationgraphpage.png)
 
 4. Use las distintas pestañas para obtener más información sobre la investigación.
 

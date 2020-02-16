@@ -16,12 +16,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Para asegurarse de que el correo electrónico enviado por personas de confianza no está bloqueado, puede usar la Directiva de filtro de conexión para crear una lista de permitidos, también conocida como lista de remitentes seguros, de las direcciones IP en las que confía. También puede crear una lista de remitentes bloqueados.
-ms.openlocfilehash: 06915527af68df6a858ca8ed97612ab40178be84
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db0d7acc6189f29b247c1dc4004311d2843d139b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599597"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086289"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar la directiva de filtro de conexión
 
@@ -60,7 +60,7 @@ Puede crear una lista de direcciones IP permitidas o una lista de direcciones IP
 
 2. Haga clic en el elemento de menú **Filtrado de conexiones** y, a continuación, cree las listas que desee: una lista de direcciones IP deseadas, una lista de direcciones IP bloqueadas, o ambas.
 
-   Para crear estas listas, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif). En el cuadro de diálogo que sigue, especifique la dirección IP o el intervalo de direcciones y, a continuación, haga clic en **aceptar**. Repita este proceso para agregar direcciones adicionales. (También puede editar o quitar direcciones IP después de haberlas agregado).
+   Para crear estas listas, haga clic en ![Agregar icono](../../media/ITPro-EAC-AddIcon.gif). En el cuadro de diálogo que sigue, especifique la dirección IP o el intervalo de direcciones y, a continuación, haga clic en **aceptar**. Repita este proceso para agregar direcciones adicionales. (También puede editar o quitar direcciones IP después de haberlas agregado).
 
    Especifique direcciones IP IPV4 con el formato NNN. nnn. nnn. nnn donde nnn es un número entre 0 y 255. También puede especificar intervalos de Enrutamiento de interdominios sin clases (CIDR) con el formato nnn.nnn.nnn.nnn/rr, donde rr es un número del 24 al 32. Para especificar intervalos fuera del intervalo de 24 a 32, consulte la siguiente sección, [consideraciones adicionales para configurar listas de direcciones IP permitidas](#additional-considerations-when-configuring-ip-allow-lists).
 
@@ -83,13 +83,13 @@ Para crear esta regla de flujo de correo, siga estos pasos.
 
 1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-2. Click ![Agregar icono](../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
+2. Click ![Agregar icono](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
 
 3. Especifique un nombre para la regla y luego haga clic en **Más opciones**.
 
 4. Dentro de **Aplicar esta regla si**, seleccione **El remitente** y luego elija **La dirección IP se encuentra en cualquiera de estos intervalos o coincide exactamente con**.
 
-5. En **especificar direcciones IP**, especifique el intervalo de direcciones IP, haga **** ![clic en agregar](../media/ITPro-EAC-AddIcon.gif)icono de agregar y, a continuación, haga clic en **Aceptar**.
+5. En **especificar direcciones IP**, especifique el intervalo de direcciones IP, haga **** ![clic en agregar](../../media/ITPro-EAC-AddIcon.gif)icono de agregar y, a continuación, haga clic en **Aceptar**.
 
 6. En el cuadro **Haga lo siguiente**, establezca la acción al elegir **Modificar propiedades del mensaje** y luego **Establecer el nivel de confianza contra correo no deseado (SCL)**. En el cuadro **Especificar SCL**, seleccione **Omitir filtrado contra correo no deseado** y haga clic en **Aceptar**.
 
@@ -109,19 +109,19 @@ Para ello, realice los siguientes pasos:
 
 1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-2. Click ![Agregar icono](../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
+2. Click ![Agregar icono](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
 
 3. Especifique un nombre para la regla y luego haga clic en **Más opciones**.
 
 4. Dentro de **Aplicar esta regla si**, seleccione **El remitente** y luego elija **La dirección IP se encuentra en cualquiera de estos intervalos o coincide exactamente con**.
 
-5. En el cuadro **especificar direcciones IP** , especifique la dirección IP o el intervalo de direcciones IP que ha especificado en la lista de direcciones IP permitidas, haga clic en **Agregar** ![icono](../media/ITPro-EAC-AddIcon.gif)agregar y, a continuación, haga clic en **Aceptar**.
+5. En el cuadro **especificar direcciones IP** , especifique la dirección IP o el intervalo de direcciones IP que ha especificado en la lista de direcciones IP permitidas, haga clic en **Agregar** ![icono](../../media/ITPro-EAC-AddIcon.gif)agregar y, a continuación, haga clic en **Aceptar**.
 
 6. En **hacer lo siguiente**, seleccione **modificar las propiedades del mensaje** para establecer la acción y, a continuación, **establezca el nivel de confianza contra correo no deseado (SCL)**. En el cuadro **especificar SCL** , seleccione **0**y, a continuación, haga clic en **Aceptar**.
 
 7. Haga clic en **Agregar excepción**y, en **excepto si**, seleccione **el remitente** y elija el **dominio es**.
 
-8. En el cuadro **especificar dominio** , escriba el dominio para el que desea omitir el filtrado de correo no deseado, como **contosob.com**. Haga **** ![clic en agregar](../media/ITPro-EAC-AddIcon.gif) icono para agregarlo para moverlo a la lista de frases. Repita este paso si desea agregar dominios adicionales como excepciones y haga clic en **Aceptar** cuando finalice.
+8. En el cuadro **especificar dominio** , escriba el dominio para el que desea omitir el filtrado de correo no deseado, como **contosob.com**. Haga **** ![clic en agregar](../../media/ITPro-EAC-AddIcon.gif) icono para agregarlo para moverlo a la lista de frases. Repita este paso si desea agregar dominios adicionales como excepciones y haga clic en **Aceptar** cuando finalice.
 
 9. Si lo desea, puede realizar selecciones para auditar la regla, probarla, activarla durante un período de tiempo específico y otras selecciones. Recomendamos probar la regla durante un tiempo antes de aplicarla. [Procedimientos para reglas de flujo de correo en Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contiene más información acerca de estas selecciones.
 
@@ -149,7 +149,7 @@ Básicamente es el mismo procedimiento de creación de reglas desde el [ámbito 
 
 ||
 |:-----|
-|![El icono reducido de LinkedIn Learning](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿Es la primera vez que usa Office 365?** LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de **Office 365 admins and IT pros**.|
+|![El icono reducido de LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿Es la primera vez que usa Office 365?** LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de **Office 365 admins and IT pros**.|
 
 ## <a name="for-more-information"></a>Más información
 

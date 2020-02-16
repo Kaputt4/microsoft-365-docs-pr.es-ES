@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6e114f60d95edb68797e096f56b93836a14425a8
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 43e1ec21719dd4dcab2d2e285197476d54734a13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962357"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085658"
 ---
 # <a name="usage-insights"></a>Información sobre el uso
 Esta vista proporciona métricas de uso para los dispositivos de escritorio administrados por Microsoft. Por estos motivos, una aplicación se considera "en uso" si está en ejecución y en enfoque.
 
 Para ver los datos de uso, seleccione la pestaña **uso** .
 
-![Panel de uso. Gráfico de uso de dispositivo (porcentaje de uso frente a tiempo) en la parte superior izquierda. Tabla de uso de la aplicación en la parte superior derecha. Tabla de enumeración de dispositivos en la parte inferior con columnas Nombre del dispositivo, modelo, número de serie, nombre para mostrar, nombre de usuario, estado actual (activo, bajo o inactivo), uso total del dispositivo en horas y número de días activos.](images/insights_usage.png)
+![Panel de uso. Gráfico de uso de dispositivo (porcentaje de uso frente a tiempo) en la parte superior izquierda. Tabla de uso de la aplicación en la parte superior derecha. Tabla de enumeración de dispositivos en la parte inferior con columnas Nombre del dispositivo, modelo, número de serie, nombre para mostrar, nombre de usuario, estado actual (activo, bajo o inactivo), uso total del dispositivo en horas y número de días activos.](../../media/insights_usage.png)
 
 ## <a name="device-usage"></a>Uso de dispositivos
 

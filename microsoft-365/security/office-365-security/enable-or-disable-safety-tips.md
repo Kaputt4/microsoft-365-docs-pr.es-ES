@@ -16,12 +16,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: Indica a Office 365 y a los administradores de EOP cómo habilitar y deshabilitar las sugerencias de seguridad en los mensajes de correo electrónico.
-ms.openlocfilehash: 6b94d34b6cf8bebc0aa4032f255b874fb7d4affb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae8a3bc9811aa54b0c5ae4cc8a0e2eb9aa80aef0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599417"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086269"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar o deshabilitar las sugerencias de seguridad en Office 365
 
@@ -48,15 +48,15 @@ En este tema:
 
 4. En la página **Directiva** , elija **anti-spam**.
 
-    ![En esta captura de pantalla se muestra cómo obtener acceso a la página Configuración de correo &amp; no deseado en el centro de seguridad y cumplimiento.](../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
+    ![En esta captura de pantalla se muestra cómo obtener acceso a la página Configuración de correo &amp; no deseado en el centro de seguridad y cumplimiento.](../../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
 
 5. En la página **configuración contra correo no deseado,** elija la pestaña **personalizado** .
 
-    ![Esta captura de pantalla muestra la ubicación de la pestaña personalizada en la página Configuración contra correo no deseado &amp; del centro de seguridad y cumplimiento.](../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
+    ![Esta captura de pantalla muestra la ubicación de la pestaña personalizada en la página Configuración contra correo no deseado &amp; del centro de seguridad y cumplimiento.](../../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
 
 6. Si es necesario, elija el modificador de **configuración personalizado** para activar la configuración personalizada. Si el modificador de configuración personalizado está **desactivado**, no podrá modificar las directivas de filtro de correo no deseado.
 
-    ![Esta captura de pantalla muestra la configuración de directiva de filtro contra correo no deseado personalizada desactivada.](../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
+    ![Esta captura de pantalla muestra la configuración de directiva de filtro contra correo no deseado personalizada desactivada.](../../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
 
 7. Expanda la Directiva de correo no deseado que desea modificar y, a continuación, elija **Editar Directiva**. Por ejemplo, seleccione la flecha abajo junto a **Directiva de filtro de correo no deseado predeterminada**. O bien, si lo desea, puede crear una nueva Directiva eligiendo **Agregar una directiva**.
 
