@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f0cd296157e1d4856c27d1dc547de045510e788b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600767"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084218"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directivas para proteger los archivos y los sitios de SharePoint
 
@@ -35,7 +35,7 @@ Además de implementar esta guía, asegúrese de configurar los sitios de ShareP
 
 El siguiente diagrama ilustra el conjunto de directivas recomendadas para proteger archivos en SharePoint Online y OneDrive para la empresa. Indica qué directivas deben actualizarse o recién creadas para agregar protección a SharePoint Online y OneDrive para la empresa.
 
-![Resumen de directivas para SharePoint Online y OneDrive](../images/identity-access-ruleset-sharepoint.png)
+![Resumen de directivas para SharePoint Online y OneDrive](../media/identity-access-ruleset-sharepoint.png)
 
 Si incluyó SharePoint Online al crear las directivas comunes, solo tiene que crear las nuevas directivas. Al configurar reglas de acceso condicional, SharePoint Online incluye OneDrive para la empresa.
 
@@ -77,7 +77,7 @@ Es importante comprender que los permisos de sitio de SharePoint suelen basarse 
 
 En la siguiente ilustración se muestra un ejemplo de cómo las directivas de acceso a dispositivos de SharePoint protegen el acceso a los sitios.
 
-![Cómo protegen las directivas de acceso a dispositivos de SharePoint los sitios](../images/SharePoint-rules-scenario.png)
+![Cómo protegen las directivas de acceso a dispositivos de SharePoint los sitios](../media/SharePoint-rules-scenario.png)
 
 En la ilustración:
 

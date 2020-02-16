@@ -12,16 +12,16 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: f854a4ec72c01f49f12774617188610d753e7b40
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5407370933c2a99781adf4ca58d3fa905328ed04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596637"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085579"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>Paso 5: implementar las características de seguridad de Windows 10 Enterprise
 
-![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 proporciona características de seguridad para proteger a los usuarios de la empresa, detener ciberamenazas y evitar la pérdida de datos. 
 
@@ -93,7 +93,7 @@ Puede realizar problemas básicos o proporcionar a Microsoft de forma opcional a
 
 
 <a name="windows10-sec-atp"></a>
-## <a name="microsoft-defender-advanced-threat-protection"></a>Protección contra amenazas avanzada de Microsoft Defender
+## <a name="microsoft-defender-advanced-threat-protection"></a>Protección contra amenazas avanzada de Microsoft Defender
 Microsoft defender ATP, que solo está disponible con el plan 365 E5 de Microsoft, es un servicio de seguridad que permite a los clientes empresariales detectar, investigar y responder a amenazas avanzadas en sus redes. Para obtener más información acerca de ATP de Microsoft defender, los requisitos mínimos y cómo puede administrar esta característica, consulte:
 
 * [ATP de Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
@@ -130,6 +130,6 @@ Es posible que se produzcan problemas durante la incorporación o al usar el pro
 * [Solución de problemas de incorporación](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
 * [Solución de problemas de ATP de Microsoft defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection)
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 [Criterios de salida de la infraestructura de Windows 10 Enterprise](windows10-exit-criteria.md)

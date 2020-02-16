@@ -12,18 +12,18 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 69ff4846e3daeef39310aa63961e0b3f5ccb9875
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9b83082a4dc859c10db03608de2edebdbb633cbe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596597"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085529"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Paso 1: preparar la organización para Windows 10 Enterprise
 
 *Este artículo se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Antes de actualizar los dispositivos a Windows 10 Enterprise, tenga en cuenta lo siguiente:
 
@@ -69,7 +69,7 @@ Como control provisional, puede consultar los [criterios de salida](windows10-ex
 
 |||
 |:-------|:-----|
-|![Paso 2](./media/stepnumbers/Step2.png)| [Implementación de Windows 10 Enterprise para dispositivos existentes como actualización local](windows10-deploy-inplaceupgrade.md) |
+|![Paso 2](../media/stepnumbers/Step2.png)| [Implementación de Windows 10 Enterprise para dispositivos existentes como actualización local](windows10-deploy-inplaceupgrade.md) |
 
 
 
