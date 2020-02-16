@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Configure las opciones avanzadas de eDiscovery que se aplican a todo el conjunto de revisiones en un caso. Esto incluye la configuración de análisis y OCR.
-ms.openlocfilehash: 93e638dc29ec935f86fc2e078d8206b1f20ab14d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595717"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078337"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Establecer la configuración de búsqueda y análisis
 
@@ -45,7 +45,7 @@ Para configurar las opciones de búsqueda y análisis para un caso:
 
    Se muestra la página Configuración de casos. Esta configuración se aplica a todos los conjuntos de revisión en un caso.
 
-   ![Configurar los análisis y la configuración de búsqueda para un caso de exhibición avanzada de documentos electrónicos](media/AeDCaseSettings.png)
+   ![Configurar los análisis y la configuración de búsqueda para un caso de exhibición avanzada de documentos electrónicos](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Duplicación cercana y subprocesamiento de correo electrónico
 
@@ -73,7 +73,7 @@ En esta sección, puede establecer parámetros para los temas. Para obtener más
 
 Si activa la casilla de verificación **crear automáticamente una para revisión guardada para revisión después de análisis** , Advanced eDiscovery autogenerará la consulta del conjunto de revisión denominado **para revisión.** 
 
-![La consulta autogenerada para revisión](media/AeDForReviewQuery.png)
+![La consulta autogenerada para revisión](../media/AeDForReviewQuery.png)
 
 Esta consulta básicamente filtra los elementos duplicados del conjunto de revisión. Esto le permite revisar los elementos únicos en el conjunto de revisión. Esta consulta solo se crea al ejecutar análisis para un conjunto de revisión en el caso. Para obtener más información acerca de las consultas de set View, consulte [consultar los datos de un conjunto de revisión](review-set-search.md).
 

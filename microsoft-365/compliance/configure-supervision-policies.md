@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: d0bd5411e99471ff326906f65747ec7a6f841545
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 230d363c8150899fdc5fd5f46aa1cb2576382267
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596207"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078297"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurar directivas de supervisión en Office 365
 
 >[!IMPORTANT]
->Este tema se aplica a la configuración de directivas de supervisión en una suscripción de Office 365. Si desea configurar el cumplimiento de comunicaciones para una suscripción de Microsoft 365, vea [Configure Communications Compliance in Microsoft 365 (Preview)](communication-compliance-configure.md).
+>Este tema se aplica a la configuración de directivas de supervisión en una suscripción de Office 365. Si desea configurar el cumplimiento de comunicaciones para una suscripción de Microsoft 365, vea [Configure Communications Compliance in Microsoft 365](communication-compliance-configure.md).
 
 Usar directivas de supervisión para capturar las comunicaciones de los empleados para que las examinen los revisores externos o internos. Para obtener más información sobre cómo las directivas de supervisión pueden ayudarle a supervisar las comunicaciones en su organización, consulte [directivas de supervisión en Office 365](supervision-policies.md).
 

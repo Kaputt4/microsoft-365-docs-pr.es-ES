@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 incluye varios clasificadores listos para usar para el aprendizaje automático que puede usar para identificar y etiquetar el contenido en toda la organización. En este tema se muestra cómo prepararse para usar estos clasificadores listos para usarlos.
-ms.openlocfilehash: c6659bc32131948c57ad0bf7c8e3a30fbce125d9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f3df8e7851bf453add162df4088e11dc7745cee
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595897"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078797"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>Usar un clasificador listo para usar (vista previa)
 
@@ -61,7 +61,7 @@ Microsoft ha entrenado y probado varios clasificadores con conjuntos de datos de
 
 9. Elija `Apply label to content that matches a trainable classifier`.
 
-![selección de clasificador como condición](media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+![selección de clasificador como condición](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
 
 10. Elija su clasificador de la lista, en este caso`Source Code`
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 736117f62877bd0b33ae1007f00d5a32680963fb
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: c3bd87f6a6b06cf6fc75705073df5a95a1025a31
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662290"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079967"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>Informes avanzados de eDiscovery (versión preliminar)
 
@@ -51,11 +51,11 @@ Para acceder a los informes avanzados de eDiscovery:
   
    En la Página principal de **EDiscovery avanzado** , se muestran las pestañas caso, custodio, origen de datos y informe de comunicaciones en la parte superior de la página. 
   
-   ![Informes avanzados de eDiscovery en la Página principal](media/report-home.png)
+   ![Informes avanzados de eDiscovery en la Página principal](../media/report-home.png)
 
 5. Para ver un informe, haga clic en una ficha de informe y, a continuación, si es necesario, puede realizar una de las siguientes acciones:
 
-   ![Puede filtrar o descargar datos de informes](media/AeDReportsFilterDownload.png)
+   ![Puede filtrar o descargar datos de informes](../media/AeDReportsFilterDownload.png)
 
    a. Haga clic en **filtro** para restringir los datos del informe. Puede filtrar por diferentes propiedades para cada informe.
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el botón Reintentar para resolver búsquedas de contenido que tienen errores de ubicación de contenido.
-ms.openlocfilehash: ce88749a887fea57e977e210de1eda40268cb832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6eb08c006f206e3ad7850d67e541f6fc3f496441
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601627"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081587"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Volver a intentar una búsqueda de contenido para resolver un error de ubicación de contenido
 
@@ -46,7 +46,7 @@ Al buscar en un gran número de buzones, la búsqueda se distribuye entre miles 
 
 El reinicio de la búsqueda con frecuencia provocará errores similares en servidores diferentes. En lugar de reiniciar la búsqueda, haga clic en el botón **Reintentar** que se muestra en la parte superior de la página de resultados de búsqueda.
 
-![Haga clic en el botón Reintentar para resolver los errores de ubicación de contenido](media/retrycontentsearch3.png)
+![Haga clic en el botón Reintentar para resolver los errores de ubicación de contenido](../media/retrycontentsearch3.png)
 
 Esto hará que se vuelva a intentar la búsqueda de los buzones de correo que no se realizaron correctamente. Cuando se vuelve a intentar la búsqueda, se conservan los otros resultados que se devolvieron correctamente.
 

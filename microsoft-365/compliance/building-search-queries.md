@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use palabras clave y condiciones para restringir el ámbito de la búsqueda al buscar datos mediante eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: 7a6d175016053cd963b03cae91ff43f9c4b3336c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c704b338600c715193829e442e1bd6ba7c780455
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596297"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079047"
 ---
 # <a name="build-search-queries"></a>Crear consultas de búsqueda
 
 Al crear consultas de búsqueda, puede usar palabras clave para buscar contenido y condiciones específicos para reducir el ámbito de la búsqueda y devolver los elementos más relevantes para la investigación legal.
 
-![Usar palabras clave y condiciones para restringir los resultados de una búsqueda](media/SearchQueryBox.png)
+![Usar palabras clave y condiciones para restringir los resultados de una búsqueda](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>Búsquedas de palabras clave
 
@@ -35,7 +35,7 @@ Escriba una consulta de palabra clave en el cuadro **palabras clave** en la cons
     
 Como alternativa, puede activar la casilla de verificación **Mostrar lista de palabras clave** y escribir una palabra clave o frase de palabra clave en cada fila. Si hace esto, las palabras clave de cada fila están conectadas por un operador lógico (que se representa como *c:s* en la sintaxis de consulta de búsqueda) que es similar en funcionalidad al operador **or** en la consulta de búsqueda que se crea. Esto significa que los elementos que contienen cualquier palabra clave en cualquier fila se encuentran en los resultados de la búsqueda.
 
-![Usar la lista de palabras clave para obtener estadísticas de cada palabra clave de la consulta](media/KeywordListSearch.png)
+![Usar la lista de palabras clave para obtener estadísticas de cada palabra clave de la consulta](../media/KeywordListSearch.png)
 
 ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestren cuántos elementos coinciden con cada palabra clave de la lista de palabras clave. Esto puede ayudarle a identificar rápidamente las palabras clave más eficaces (y menos) efectivas. También puede usar una frase de palabras clave (entre paréntesis) en una fila de la lista de palabras clave. Para obtener más información acerca de las estadísticas de búsqueda, vea [estadísticas de búsqueda](search-statistics.md).
 

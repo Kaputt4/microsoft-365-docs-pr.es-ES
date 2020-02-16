@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Puede usar Information Rights Management (IRM) para ayudar a controlar y proteger los archivos que se descargan de listas o bibliotecas.
-ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4366a9fa5c42a8f4505163e0987da1decf727564
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596087"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079915"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicar Information Rights Management (IRM) a una lista o biblioteca
 
@@ -47,13 +47,13 @@ Puede usar Information Rights Management (IRM) para ayudar a controlar y protege
 ## <a name="apply-irm-to-a-list-or-library"></a>Aplicar IRM a una lista o biblioteca
 <a name="__toc256598179"> </a>
 
-![Configuración de Information Rights Management](media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
+![Configuración de Information Rights Management](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. Vaya a la lista o biblioteca para la que desea configurar IRM.
     
 2. En la cinta, haga clic en la pestaña **biblioteca** y, a continuación, haga clic en **configuración de biblioteca**. (Si está trabajando en una lista, haga clic en la pestaña **lista** y, a continuación, haga clic en configuración de la **lista**).
     
-    ![Botones de configuración de la biblioteca de SharePoint en la cinta](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![Botones de configuración de la biblioteca de SharePoint en la cinta](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. En **permisos y administración**, haga clic en **Information Rights Management**. Si no aparece el vínculo Information Rights Management, es posible que IRM no esté habilitado en el sitio. Póngase en contacto con el administrador del servidor para ver si es posible habilitar IRM en el sitio. El vínculo Information Rights Management no aparece para las bibliotecas de imágenes.
     

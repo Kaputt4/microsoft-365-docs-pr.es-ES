@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La puntuación de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: c1f912deacd9e7a9b30cbc4665a259177aeebf65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595747"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078535"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -39,7 +39,7 @@ Si actualmente usa el [Administrador de cumplimiento](compliance-manager-overvie
 
 La página de puntuación de cumplimiento principal es su panel personalizado. Muestra su puntuación actual, le ayuda a ver qué necesita atención y le guía a acciones para mejorar su calificación. El panel de calificaciones de cumplimiento tendrá el siguiente aspecto:
 
-![Puntuación de cumplimiento: panel](media/compliance-score-dashboard.png "Panel de calificaciones de cumplimiento")
+![Puntuación de cumplimiento: panel](../media/compliance-score-dashboard.png "Panel de calificaciones de cumplimiento")
 
 ### <a name="simplified-compliance-management"></a>Administración de cumplimiento simplificada
 
@@ -75,7 +75,7 @@ Obtenga más información sobre [cómo se calcula y se supervisa continuamente l
 
 La puntuación de cumplimiento usa varios componentes para ayudarle a administrar las actividades de cumplimiento. A medida que se usa la puntuación de cumplimiento para asignar, probar y supervisar las actividades de cumplimiento, resulta útil tener un conocimiento básico de estos componentes clave. Este diagrama muestra las relaciones entre ellos:
 
-![Relaciones en el administrador de cumplimiento versión 3](media/compliance-manager-relationships.png "Componentes de puntuación de cumplimiento")
+![Relaciones en el administrador de cumplimiento versión 3](../media/compliance-manager-relationships.png "Componentes de puntuación de cumplimiento")
 
 ### <a name="controls"></a>Controles
 

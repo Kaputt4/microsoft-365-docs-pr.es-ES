@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Las organizaciones suelen necesitar conservar algunos documentos durante cierto período de tiempo para satisfacer el cumplimiento de ciertas normas legales u otras regulaciones. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal.
-ms.openlocfilehash: 9ada3f2756b627965c9f215c1111ff2fe72da1e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596237"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077982"
 ---
 # <a name="create-a-document-deletion-policy"></a>Crear una directiva de eliminación de documentos
 
@@ -32,19 +32,19 @@ Con una directiva de eliminación de documentos, puede reducir el riesgo de form
   
 Después de crear una directiva de eliminación de documentos, puede asignarla a una plantilla de colección de sitios, de forma que la directiva estará disponible para todas las colecciones de sitios creadas a partir de esa plantilla. También puede asignar una directiva a una colección de sitios determinada, lo que reemplaza a cualquier otra directiva que se haya asignado a la plantilla para esa colección de sitios.
   
-![Página de inicio de Centro de directivas de eliminación de documentos](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![Página de inicio de Centro de directivas de eliminación de documentos](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="policy-templates"></a>Plantillas de directiva
 
 Puede crear una directiva de eliminación de documentos desde cero o puede usar una de las directivas de ejemplo. El Centro de directivas de cumplimiento de normas incluye directivas de ejemplo que puede usar tal cual, o bien puede usarlas como punto de partida y después cambiarles el nombre o modificarlas.
   
-![Directivas de eliminación de documentos de muestra](media/IP-Sample-deletion-policies.png)
+![Directivas de eliminación de documentos de muestra](../media/IP-Sample-deletion-policies.png)
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>Ejemplos
 
 Una colección de sitios o una plantilla de colección de sitios puede tener una o varias directivas asignadas, y cada una de estas directivas puede tener una o más reglas. Sin embargo, solo puede haber una Directiva activa por sitio y solo puede haber una regla de eliminación activa en cualquier momento para las bibliotecas dentro del sitio.
   
-![Diagrama con relación entre directivas](media/IP-Two-policies-four-rules.png)
+![Diagrama con relación entre directivas](../media/IP-Two-policies-four-rules.png)
   
 Además, puede seleccionar una directiva como obligatoria o predeterminada, y puede seleccionar una regla de eliminación como regla predeterminada: 
   
@@ -68,7 +68,7 @@ Es posible que quiera aplicar una directiva de eliminación de documentos en una
     
 En este ejemplo, la regla de eliminación predeterminada se aplicará a todas las bibliotecas en todas las colecciones de sitios creadas a partir de la plantilla, y los propietarios de los sitios no podrán anular la directiva. Esta es la forma más sencilla de aplicar una directiva de eliminación de documentos de forma rígida y completa.
   
-![Diagrama con una sola directiva obligatoria](media/IP-Example-1-doc-deletion-policies.png)
+![Diagrama con una sola directiva obligatoria](../media/IP-Example-1-doc-deletion-policies.png)
   
 ### <a name="example-2-apply-a-single-policy-with-several-rules-to-a-site-collection-template"></a>Ejemplo 2: aplicar una sola directiva con varias reglas a una plantilla de colección de sitios
 
@@ -84,7 +84,7 @@ Podrá seguir creando y administrando las directivas centralmente. También pued
     
 Los propietarios de los sitios pueden seleccionar una de las reglas de eliminación alternativas, anular la directiva, o no hacer nada y estar sujetos a la directiva y la regla predeterminadas.
   
-![Diagrama con una directiva que tiene muchas reglas](media/IP-Example-2-doc-deletion-policies.png)
+![Diagrama con una directiva que tiene muchas reglas](../media/IP-Example-2-doc-deletion-policies.png)
   
 ### <a name="example-3-apply-several-policies-with-one-or-more-rules-to-a-site-collection"></a>Ejemplo 3: aplicar varias directivas con una o varias reglas a una colección de sitios
 
@@ -104,7 +104,7 @@ Para configurar este escenario, puede:
     
 Además, las directivas y reglas se adaptan a una colección de sitios determinada, en la que los propietarios de los sitios podrán interrumpir la herencia si seleccionan la directiva y la regla que mejor se adapten a su sitio.
   
-![Diagrama con muchas directivas y reglas](media/IP-Example-3-doc-deletion-policies.png)
+![Diagrama con muchas directivas y reglas](../media/IP-Example-3-doc-deletion-policies.png)
   
 ## <a name="create-a-document-deletion-policy"></a>Crear una directiva de eliminación de documentos
 
@@ -114,7 +114,7 @@ Además, las directivas y reglas se adaptan a una colección de sitios determina
     
 2. Elija **directivas de eliminación**.
     
-    ![Opción Directivas de eliminación](media/IP-Deletion-Policies-option.png)
+    ![Opción Directivas de eliminación](../media/IP-Deletion-Policies-option.png)
   
 3. Elija **Elemento nuevo**.
     
@@ -132,9 +132,9 @@ Además, las directivas y reglas se adaptan a una colección de sitios determina
     
   - Elija si la regla es una regla predeterminada. La primera regla que cree se establece automáticamente como la regla predeterminada. Una regla predeterminada se aplica automáticamente a todas las bibliotecas de los sitios que usan la directiva.
     
-![Página para nueva regla de eliminación](media/IP-New-deletion-rule.png)
+![Página para nueva regla de eliminación](../media/IP-New-deletion-rule.png)
   
-7. Haga clic en **Guardar**.
+7. Haga clic en **Guardar **.
     
 8. Cree reglas adicionales si quiere que los propietarios de los sitios puedan elegir distintas reglas para aplicar a su sitio. La regla predeterminada, si la hay, se aplicará si el propietario del sitio no realiza ninguna acción.
     
@@ -143,7 +143,7 @@ Además, las directivas y reglas se adaptan a una colección de sitios determina
     > [!NOTE]
     > Si elimina una regla y la Directiva no contiene ninguna regla predeterminada, no se aplicará ninguna regla a esa Directiva; es decir, no se eliminará ningún documento. 
   
-![Mensaje de confirmación para eliminar regla de directiva](media/IP-Remove-rule-from-policy-message.png)
+![Mensaje de confirmación para eliminar regla de directiva](../media/IP-Remove-rule-from-policy-message.png)
   
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection-template"></a>Asignar la directiva de eliminación de documentos a una plantilla de colección de sitios
 
@@ -155,7 +155,7 @@ Es importante comprender que el período de tiempo especificado para una directi
     
 2. Elija **Asignaciones de directivas para plantillas**.
     
-    ![Opción de asignaciones de directivas para plantillas](media/IP-Policy-Assignments-for-Templates-option.png)
+    ![Opción de asignaciones de directivas para plantillas](../media/IP-Policy-Assignments-for-Templates-option.png)
   
 3. Elija **Elemento nuevo**.
     
@@ -168,24 +168,24 @@ Es importante comprender que el período de tiempo especificado para una directi
     > [!NOTE]
     > Cuando asigne una directiva a una plantilla de colección de sitios, dicha directiva estará disponible para las colecciones de sitios existentes creadas a partir de esa plantilla y para las que se creen en el futuro. 
   
-![Página Seleccionar una plantilla con la opción OneDrive](media/IP-Choose-a-template.png)
+![Página Seleccionar una plantilla con la opción OneDrive](../media/IP-Choose-a-template.png)
   
-5. Haga clic en **Guardar**.
+5. Haga clic en **Guardar **.
     
     > [!NOTE]
     > Cada plantilla puede tener solamente un conjunto de directivas asignadas. Si ve un error que indica que esta plantilla ya tiene directivas asignadas, seleccione **Cancelar** \> **asignar a colección de sitios** en el panel de \> navegación izquierdo para ver y administrar el conjunto de directivas que ya están asignadas. 
   
 6. Elija **Administrar directivas asignadas**, seleccione las directivas que quiere asignar y, a continuación, elija si una directiva es la directiva predeterminada. Cuando se establece una directiva predeterminada, todos los sitios asignados automáticamente a la directiva tienen la directiva activa sin necesidad de que el propietario del sitio realice ninguna acción.
     
-    ![Página Agregar y administrar directivas](media/IP-Add-and-manage-policies-page.png)
+    ![Página Agregar y administrar directivas](../media/IP-Add-and-manage-policies-page.png)
   
-7. Haga clic en **Guardar**.
+7. Haga clic en **Guardar **.
     
 8. Si quiere aplicar la directiva en todos los sitios sin permitir que los propietarios de sitios puedan anularla, elija **Marcar directiva como obligatoria**. Cuando establezca una directiva como obligatoria, solo podrá asignarse esa directiva a la plantilla de colección de sitios. La directiva también debe marcarse como predeterminada.
     
     Si esta opción está atenuada, elija **Administrar directivas asignadas** y asegúrese de que al menos una directiva esté asignada y establecida como predeterminada. 
     
-9. Haga clic en **Guardar**.
+9. Haga clic en **Guardar **.
     
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection"></a>Asignar la directiva de eliminación de documentos a una colección de sitios
 
@@ -197,7 +197,7 @@ Es importante comprender que el período de tiempo especificado para una directi
     
 2. Elija **Asignaciones de directivas para colecciones de sitios**.
     
-    ![Opción de asignaciones de directivas para colecciones de sitios](media/IP-Policy-Assignments-for-Site-Collections-option.png)
+    ![Opción de asignaciones de directivas para colecciones de sitios](../media/IP-Policy-Assignments-for-Site-Collections-option.png)
   
 3. Elija **Elemento nuevo**.
     
@@ -206,19 +206,19 @@ Es importante comprender que el período de tiempo especificado para una directi
     > [!NOTE]
     > Cada colección de sitios puede tener solamente un conjunto de directivas asignadas. Si ve un error que indica que esta colección de sitios ya tiene directivas asignadas, elija **Cancelar** \> **asignar a colección de sitios** y seleccione una colección de sitios para ver y administrar el conjunto de directivas que ya están asignadas. 
   
-![Página Seleccionar una colección de sitios](media/IP-Choose-a-site-collection-page.png)
+![Página Seleccionar una colección de sitios](../media/IP-Choose-a-site-collection-page.png)
   
 5. Elija **Administrar directivas asignadas**, seleccione las directivas que quiere asignar y, a continuación, elija si una directiva es la directiva predeterminada. Cuando se establece una directiva predeterminada, todos los sitios asignados automáticamente a la directiva tienen la directiva activa sin necesidad de que el propietario del sitio realice ninguna acción.
     
-    ![Página Agregar y administrar directivas](media/IP-Add-and-manage-policies-page.png)
+    ![Página Agregar y administrar directivas](../media/IP-Add-and-manage-policies-page.png)
   
-6. Haga clic en **Guardar**.
+6. Haga clic en **Guardar **.
     
 7. Si quiere aplicar la directiva en todos los sitios sin permitir que los propietarios de sitios puedan anularla, elija **Marcar directiva como obligatoria**. Cuando establezca una directiva como obligatoria, solo podrá asignarse esa directiva a la colección de sitios. La directiva también debe marcarse como predeterminada.
     
     Si esta opción está atenuada, elija **Administrar directivas asignadas** y asegúrese de que al menos una directiva esté asignada y establecida como predeterminada. 
     
-8. Haga clic en **Guardar**.
+8. Haga clic en **Guardar **.
     
 ## <a name="delete-a-policy-assignment"></a>Eliminar una asignación de directivas
 
@@ -230,7 +230,7 @@ Cuando se elimina una asignación, las directivas asignadas ya no se aplicarán 
     
 3. Seleccione el elemento de asignación y haga clic en **Eliminar elemento**.
     
-    ![Comando Eliminar elemento para asignación de directiva](media/IP-Delete-policy-assignment.png)
+    ![Comando Eliminar elemento para asignación de directiva](../media/IP-Delete-policy-assignment.png)
   
 ## <a name="delete-a-policy"></a>Eliminar una directiva
 
@@ -240,17 +240,17 @@ No se puede eliminar una directiva que está en uso. Antes de poder eliminar una
     
 2. Elija * * directivas de eliminación * *.
     
-    ![Opción Directivas de eliminación](media/IP-Deletion-Policies-option.png)
+    ![Opción Directivas de eliminación](../media/IP-Deletion-Policies-option.png)
   
 3. Seleccione la directiva.
     
 4. En la pestaña \> **** \> elementos de la cinta de opciones, **Quite Directiva**.
     
-    ![Botón Quitar directiva en cinta](media/IP-Remove-Policy-button-on-Ribbon.png)
+    ![Botón Quitar directiva en cinta](../media/IP-Remove-Policy-button-on-Ribbon.png)
   
 5. Si la Directiva está en uso, se le preguntará si desea quitar la Directiva de todas las colecciones de sitios en las que se usa. Si está seguro, haga clic en **Aceptar**.
     
-    ![Mensaje para confirmar eliminación de directiva](media/IP-Delete-policy-confirmation.png)
+    ![Mensaje para confirmar eliminación de directiva](../media/IP-Delete-policy-confirmation.png)
   
 ## <a name="see-also"></a>Vea también
 

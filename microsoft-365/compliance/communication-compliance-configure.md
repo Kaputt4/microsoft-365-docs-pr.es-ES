@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 1c53eded5e50d480cdce2ccbcb61f732bc899041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784697"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078787"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurar el cumplimiento de la comunicación en Microsoft 365
 
@@ -59,7 +59,7 @@ Para que el cumplimiento de la **comunicación** esté disponible como una opci�
 
 5. Seleccione **elegir roles** y, después, haga clic en **Agregar**. Marque la casilla de **verificación administrador de revisión de supervisión**, administración de **casos**y **revisión**y, a continuación, seleccione **Agregar** y **listo**. Seleccione **Siguiente**.
 
-    ![Grupos de roles obligatorios de cumplimiento de comunicación](media/communication-compliance-role-groups.png)
+    ![Grupos de roles obligatorios de cumplimiento de comunicación](../media/communication-compliance-role-groups.png)
 
 6. Seleccione **elegir miembros** y, a continuación, seleccione **Agregar**. Marque la casilla de verificación para todos los usuarios y grupos que desee que creen directivas y administre los mensajes con coincidencias de directivas y, a continuación, seleccione **Agregar** y **listo**. Seleccione **Siguiente**.
 

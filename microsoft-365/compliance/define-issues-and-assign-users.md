@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Obtenga información sobre cómo agregar o editar un problema, incluida la asignación de usuarios a él, o cómo eliminar un problema para un caso de exhibición de documentos electrónicos en Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 78f0b53c1f66adb9c1c8534bbf4b1e1915f6ba0d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d0777f6829944a6f64c71bda805edd1b5d55de4b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595355"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075906"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Definir problemas y asignar usuarios en Office 365 Advanced eDiscovery
 
@@ -33,11 +33,11 @@ En la exhibición avanzada de documentos electrónicos, se pueden definir uno o 
 
 1. En la pestaña \> configuración de **relevancia de relevancia \> ** , seleccione **problemas**.
     
-    ![Problemas de configuración de relevancia](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
+    ![Problemas de configuración de relevancia](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
 2. Para agregar un problema, haga clic en el icono * * + * *. Se mostrará el cuadro de diálogo **Agregar problema** . 
     
-    ![Problema al agregar la configuración de relevancia](media/c8e94982-139a-472a-b85d-282f2d742046.png)
+    ![Problema al agregar la configuración de relevancia](../media/c8e94982-139a-472a-b85d-282f2d742046.png)
   
     Para editar un problema, haga clic en el icono **Editar** . 
     

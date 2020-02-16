@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Una vez que un buzón de correo de Office 365 se convierte en inactivo, puede cambiar la duración de la Directiva de retención de Office 365 o de suspensión asignada al buzón inactivo. La duración de retención define cuánto tiempo se retienen los elementos en la carpeta Elementos recuperables.
-ms.openlocfilehash: c50f7845377b6428a4cdce2bb7240a7ca973a8eb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bcfea972bd627da831e9927884669d2ed8ee5234
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595947"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078947"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Cambiar la duración de retención para un buzón inactivo en Office 365
 
@@ -139,7 +139,7 @@ El resultado es que los elementos del buzón inactivo se conservan indefinidamen
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Seleccione la conservación local que quiera cambiar y, después, seleccione **Editar** ![icono](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)editar.
+3. Seleccione la conservación local que quiera cambiar y, después, seleccione **Editar** ![icono](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)editar.
     
 4. En la página propiedades **de la &amp; retención de exhibición de** documentos electrónicos local, seleccione **conservación local**. 
     
@@ -149,9 +149,9 @@ El resultado es que los elementos del buzón inactivo se conservan indefinidamen
     
     2. Seleccione **especificar el número de días que se retendrán los elementos relacionados con la fecha de recepción** para los elementos de un período específico. Type the number of days that you want to hold items for. 
     
-    ![Captura de pantalla del cambio de duración para una conservación local](media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
+    ![Captura de pantalla del cambio de duración para una conservación local](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Usar Exchange Online PowerShell para cambiar la duración de retención
 

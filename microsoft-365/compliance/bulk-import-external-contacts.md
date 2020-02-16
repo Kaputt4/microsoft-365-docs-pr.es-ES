@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Obtenga información sobre cómo los administradores pueden usar Exchange Online PowerShell y un archivo CSV para importar de forma masiva contactos externos a la lista global de direcciones.
-ms.openlocfilehash: b6f7c430cef13985a679abf42a2f91d9605bf556
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c74e8932f7ed2feeca472848c88bdddbc740fe28
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596267"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078957"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importación masiva de contactos externos a Exchange Online
 
@@ -123,7 +123,7 @@ Después de ejecutar el comando en el paso 2, se crean los contactos externos, p
     
 1. En el EAC, vaya a **Destinatarios** \> **Contactos**.
     
-2. Haga clic en un contacto y, a continuación](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) , haga clic en **Editar** ![icono Editar para mostrar las propiedades del contacto. 
+2. Haga clic en un contacto y, a continuación](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) , haga clic en **Editar** ![icono Editar para mostrar las propiedades del contacto. 
     
 Y eso es todo. Los usuarios pueden ver los contactos y la información adicional en la libreta de direcciones de Outlook y Outlook en la Web.
   

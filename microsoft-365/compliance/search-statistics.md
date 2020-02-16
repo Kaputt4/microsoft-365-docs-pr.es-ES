@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 665ffe5fea6fa6996b405198524ef7dfb51e162f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601747"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081386"
 ---
 # <a name="search-statistics"></a>Estadísticas de búsqueda
 
 Una manera eficaz de validar los resultados de la búsqueda cuando la investigación es un incidente de datos es ver las estadísticas de los resultados de la búsqueda para asegurarse de que se ajustan a sus expectativas. Cuando una búsqueda termina de ejecutarse, se muestran las siguientes estadísticas de alto nivel bajo **Estado** en la página flotante de búsqueda de detalles:
 
-![Página flotante de búsqueda en detalles de statisics de búsqueda](media/SearchDetailsFlyout.png)
+![Página flotante de búsqueda en detalles de statisics de búsqueda](../media/SearchDetailsFlyout.png)
 
 - Número estimado y tamaño de los elementos que coinciden con los criterios de búsqueda.
 
@@ -37,7 +37,7 @@ Una manera eficaz de validar los resultados de la búsqueda cuando la investigac
 
 Para ver estadísticas más detalladas, haga clic en **estadísticas** en la página flotante de detalles de búsqueda. En la página **estadísticas de búsqueda** , puede ver el Resumen de la búsqueda, la ubicación superior que contenía los elementos que coincidían con los resultados de la búsqueda, y estadísticas detalladas sobre la consulta de búsqueda.
 
-![Lista desplegable de estadísticas de búsqueda](media/SearchStatisticsDropDownList.png)
+![Lista desplegable de estadísticas de búsqueda](../media/SearchStatisticsDropDownList.png)
 
 ## <a name="summary"></a>Resumen
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661946"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078707"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 
@@ -61,7 +61,7 @@ El cumplimiento de la comunicación en Microsoft 365 se basa en las característ
 - Flujos de trabajo de corrección flexibles
 - Información que requiere acción
 
-![Página principal de cumplimiento de comunicaciones](media/communication-compliance-home.png)
+![Página principal de cumplimiento de comunicaciones](../media/communication-compliance-home.png)
 
 ### <a name="intelligent-customizable-templates"></a>Plantillas inteligentes y personalizables
 
@@ -108,7 +108,7 @@ El cumplimiento de la comunicación le ayuda a enfrentar Pain Points comunes aso
 
 La identificación y resolución de problemas de cumplimiento con el cumplimiento de la comunicación en Microsoft 365 usa el siguiente flujo de trabajo:
 
-![Flujo de trabajo de cumplimiento de comunicaciones](media/communication-compliance-workflow.png)
+![Flujo de trabajo de cumplimiento de comunicaciones](../media/communication-compliance-workflow.png)
 
 ### <a name="configure"></a>Configurar
 
@@ -153,4 +153,4 @@ Mantener el seguimiento y administrar los problemas de cumplimiento identificado
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-Para configurar el cumplimiento de comunicaciones para la organización de Microsoft 365, vea [Configure Communication Compliance for Microsoft 365 (Preview)](communication-compliance-configure.md).
+Para configurar el cumplimiento de comunicaciones para la organización de Microsoft 365, vea [Configure Communication Compliance for Microsoft 365](communication-compliance-configure.md).

@@ -16,12 +16,12 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS.
-ms.openlocfilehash: 9af8de571285843a994c943ef33baa2f5966b328
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9d1dee8ca0992f1e2f9cb344baba4f245d3ca37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596257"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078507"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
   
@@ -167,4 +167,4 @@ Para comprobar si ha importado el TPD y ha habilitado IRM correctamente, haga lo
   
 - Use el cmdlet **Test-IRMConfiguration** para probar si IRM funciona. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](https://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
 
-- Redacte un nuevo mensaje en Outlook en la web y protéjalo con IRM seleccionando la opción **establecer permisos** en el menú extendido ( ![icono](media/ITPro-EAC-MoreOptionsIcon.gif)más opciones).
+- Redacte un nuevo mensaje en Outlook en la web y protéjalo con IRM seleccionando la opción **establecer permisos** en el menú extendido ( ![icono](../media/ITPro-EAC-MoreOptionsIcon.gif)más opciones).

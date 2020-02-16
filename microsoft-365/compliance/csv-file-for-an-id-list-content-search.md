@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Use el archivo Results. csv o unindexed items. csv de una búsqueda de contenido existente para crear una búsqueda de lista de IDENTIFICADOres que devuelva un mensaje de correo electrónico específico. Las búsquedas de listas de IDENTIFICADOres se usan normalmente para devolver elementos de buzón parcialmente indizados.
-ms.openlocfilehash: 19128e182183b43edbc5957ac2aca5420b58cfe2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595527"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077037"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparar un archivo CSV para una búsqueda de contenido de la lista de IDENTIFICADOres en Office 365
 
@@ -65,7 +65,7 @@ Tenga en cuenta que puede usar un archivo CSV desde una búsqueda que incluya si
 
     Este es un ejemplo del archivo CSV que está listo para enviarse para una búsqueda de contenido de la lista de IDENTIFICADOres.
 
-    ![Ejemplo de un archivo CSV para una búsqueda de contenido de destino](media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
+    ![Ejemplo de un archivo CSV para una búsqueda de contenido de destino](../media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
 
 6. Guarde el archivo CSV o use **Guardar como** para guardar el archivo con otro nombre de archivo. En ambos casos, asegúrese de guardar el archivo con el formato CSV.
 
@@ -78,9 +78,9 @@ El siguiente paso es crear una nueva búsqueda de contenido de la lista de IDENT
 
 1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido**de **búsqueda** \> .
 
-2. En la **página Buscar** , haga clic en la flecha ![junto a](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) agregar icono **nueva búsqueda**y, a continuación, haga clic en **Buscar por lista de identificadores**.
+2. En la **página Buscar** , haga clic en la flecha ![junto a](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) agregar icono **nueva búsqueda**y, a continuación, haga clic en **Buscar por lista de identificadores**.
 
-    ![Haga clic en buscar por lista de IDENTIFICADOres en la nueva lista desplegable de búsqueda](media/e65f9942-09b2-4127-865e-e64029a590df.png)
+    ![Haga clic en buscar por lista de IDENTIFICADOres en la nueva lista desplegable de búsqueda](../media/e65f9942-09b2-4127-865e-e64029a590df.png)
 
 3. En el control flotante de la **lista Buscar por identificador** , asigne un nombre a la búsqueda (y, opcionalmente, describa) y, a continuación, haga clic en **examinar** y seleccione el archivo CSV que preparó en el paso anterior.
 
@@ -90,7 +90,7 @@ El siguiente paso es crear una nueva búsqueda de contenido de la lista de IDENT
 
     Este es un ejemplo de los resultados de búsqueda estimados y la consulta que se genera para una búsqueda de lista de ID.
 
-    ![Consulta de búsqueda para una búsqueda de contenido dirigida en el panel de detalles](media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
+    ![Consulta de búsqueda para una búsqueda de contenido dirigida en el panel de detalles](../media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
 
     Tenga en cuenta que el número de elementos estimados que se muestran en las estadísticas para la búsqueda ID debe coincidir con el número de elementos que seleccionó en el archivo CSV.
 

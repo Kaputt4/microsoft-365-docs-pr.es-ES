@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Para los administradores: Aprenda a importar de forma masiva los archivos PST de su organización a los buzones de correo de Office 365 copiando los archivos PST en una unidad de disco duro y, a continuación, se envíen a Microsoft. '
-ms.openlocfilehash: 5de4143f84a4c5beed0e408c302ce2ca1e39e17a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4edd06fbedc6ee40053921b20bdb27ae00aace63
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597367"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080883"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files-to-office-365"></a>Usar el envío de unidades para importar los archivos PST de su organización a Office 365
 
@@ -63,7 +63,7 @@ Para conocer las preguntas más frecuentes sobre el uso del envío de unidades p
   - Debe ser administrador global en su organización de Office 365. 
     
     > [!TIP]
-    > Puede crear un nuevo grupo de roles en Exchange Online que está pensado específicamente para la importación de archivos PST a Office 365. Para obtener el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles de importación y exportación de buzón y de destinatarios de correo al nuevo grupo de roles y, a continuación, agregue a los miembros. 
+    > Puede crear un nuevo grupo de roles en Exchange Online que está pensado específicamente para la importación de archivos PST a Office 365. Para obtener el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles de importación o exportación de buzón y de destinatarios de correo al nuevo grupo de roles y, después, agregue a los miembros. 
   
 - Debe almacenar los archivos PST que desea copiar en una unidad de disco duro de un servidor de archivos o una carpeta compartida de la organización. En el paso 2, ejecute la herramienta de importación y exportación de Azure (herramienta waimportexport. exe) que copia los archivos PST que se almacenan en este servidor de archivos o carpeta compartida en la unidad de disco duro.
 
@@ -123,17 +123,17 @@ El primer paso consiste en descargar la clave de almacenamiento seguro y la herr
     > [!NOTE]
     > Como se mencionó anteriormente, tiene que tener asignados los permisos adecuados para acceder a la página **importar** en el centro de seguridad & cumplimiento. 
   
-3. En la página **Importar**, haga clic en ![Agregar icono](media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
+3. En la página **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
     
 4. En el Asistente para importar trabajo, escriba un nombre para el trabajo de importación de PST y, a continuación, haga clic en **siguiente**. Use letras minúsculas, números, guiones y caracteres de subrayado. Las letras en mayúscula no se pueden usar ni se pueden incluir espacios en el nombre.
     
 5. En la página **elegir tipo de trabajo de importación** , haga clic en **enviar discos duros a una de las ubicaciones físicas** y, a continuación, haga clic en **siguiente**.
     
-    ![Haga clic en enviar unidades de disco duro a una de nuestras ubicaciones físicas para crear un trabajo de importación de unidades de envío](media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
+    ![Haga clic en enviar unidades de disco duro a una de nuestras ubicaciones físicas para crear un trabajo de importación de unidades de envío](../media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
   
 6. En la página **Importar datos**, siga los dos pasos siguientes: 
     
-    ![Copie la clave de almacenamiento seguro y descargue la herramienta de importación y exportación de Azure en la página importar datos.](media/e22e0b48-e5ce-48e0-95bc-0490a2b3b983.png)
+    ![Copie la clave de almacenamiento seguro y descargue la herramienta de importación y exportación de Azure en la página importar datos.](../media/e22e0b48-e5ce-48e0-95bc-0490a2b3b983.png)
   
     a. En el paso 2, haga clic en **Copiar la clave de almacenamiento seguro**. Cuando se muestre la clave de almacenamiento, haga clic en **copiar al portapapeles** y, a continuación, péguela y guárdela en un archivo para poder acceder a él más adelante.
     
@@ -253,7 +253,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
     
 2. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **gobernanza de información**\>** Importar **\>** archivos PST**.
     
-3. En la página **Importar**, haga clic en ![Agregar icono](media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
+3. En la página **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
     
     > [!NOTE]
     > Como se mencionó anteriormente, tiene que tener asignados los permisos adecuados para acceder a la página **importar** en el centro de seguridad & cumplimiento. 
@@ -262,15 +262,15 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
     
 5. En la página **elegir tipo de trabajo de importación** , haga clic en **enviar discos duros a una de las ubicaciones físicas** y, a continuación, haga clic en **siguiente**.
     
-    ![Haga clic en enviar unidades de disco duro a una de nuestras ubicaciones físicas para crear un trabajo de importación de unidades de envío](media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
+    ![Haga clic en enviar unidades de disco duro a una de nuestras ubicaciones físicas para crear un trabajo de importación de unidades de envío](../media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
   
 6. En el paso 6, haga clic en las casillas de verificación **he preparado mis discos duros y tienen acceso a los archivos de diario de unidades necesarios** y **tengo acceso a los** archivos de asignación y, a continuación, haga clic en **siguiente**.
     
-    ![Haga clic en las dos casillas de verificación del paso 6](media/fad43078-ea68-4acd-b2ed-75a800183262.png)
+    ![Haga clic en las dos casillas de verificación del paso 6](../media/fad43078-ea68-4acd-b2ed-75a800183262.png)
   
 7. En la página **seleccionar el archivo de unidad** , haga clic en **Seleccionar archivo de unidad**y, a continuación, vaya a la misma carpeta en la que se encuentra la herramienta herramienta waimportexport. exe. En esta carpeta se copió el archivo de diario creado en el paso 2.
     
-    ![Haga clic en seleccionar archivo de unidad para enviar el archivo de diario que se creó al ejecutar la herramienta herramienta waimportexport. exe](media/1ea35c04-bd88-4d7e-b7d9-dc390149d94f.png)
+    ![Haga clic en seleccionar archivo de unidad para enviar el archivo de diario que se creó al ejecutar la herramienta herramienta waimportexport. exe](../media/1ea35c04-bd88-4d7e-b7d9-dc390149d94f.png)
   
 8. Seleccione el archivo de diario; por ejemplo, `PSTHDD1.jrn`.
     
@@ -279,7 +279,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
   
 9. Una vez que el nombre del archivo de la unidad aparezca en **nombre de archivo**de la unidad, haga clic en **validar** para comprobar si hay errores en el archivo de la unidad. 
     
-    ![Haga clic en validar para validar el archivo de unidad que ha seleccionado](media/4b707f5a-152a-4e74-b9f5-449c88d1fec4.png)
+    ![Haga clic en validar para validar el archivo de unidad que ha seleccionado](../media/4b707f5a-152a-4e74-b9f5-449c88d1fec4.png)
   
     El archivo de unidad tiene que validarse correctamente para crear un trabajo de importación de PST. Tenga en cuenta que el nombre del archivo se cambia a verde una vez que se ha validado correctamente. Si se produce un error de validación, haga clic en el vínculo **Ver registro**. Se abre un informe de errores de validación con un mensaje de error con información sobre el motivo del error. 
     
@@ -288,13 +288,13 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
   
 10. Después de agregar y validar un archivo de diario para cada unidad de disco duro que envíe a Microsoft, haga clic en **siguiente**.
     
-11. Haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **Seleccione el archivo de asignación** para enviar el archivo de asignación de importaciones de PST que creó en el paso 3. 
+11. Haga ![clic en](../media/ITPro-EAC-AddIcon.gif) agregar icono **Seleccione el archivo de asignación** para enviar el archivo de asignación de importaciones de PST que creó en el paso 3. 
     
-    ![Hacer clic en Seleccionar el archivo de asignación para enviar el archivo CSV que ha creado para el trabajo de importación](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
+    ![Hacer clic en Seleccionar el archivo de asignación para enviar el archivo CSV que ha creado para el trabajo de importación](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
 12. Cuando el nombre del archivo CSV aparezca en **Asignación del nombre de archivo**, haga clic en **Validar** para comprobar si hay errores en el archivo CSV. 
     
-    ![Hacer clic en Validar para comprobar si hay errores en el archivo CSV](media/4680999d-5538-4059-b878-2736a5445037.png)
+    ![Hacer clic en Validar para comprobar si hay errores en el archivo CSV](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
     El archivo CSV debe estar validado correctamente para poder crear un trabajo de importación de PST. Tenga en cuenta que el nombre del archivo se cambia a verde una vez que se ha validado correctamente. Si se produce un error de validación, haga clic en el vínculo **Ver registro**. Se abre un informe de errores de validación, con un mensaje de error para cada fila del archivo que ha fallado. 
     
@@ -308,7 +308,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
     
     Cuando el trabajo de importación se crea correctamente, se muestra una página de estado que explica los pasos siguientes del proceso de envío de la unidad.
     
-16. En la página **importar archivos PST** , haga ![clic en](media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono **Actualizar** para mostrar el nuevo trabajo de importación de envío de unidades en la lista de trabajos de importación. El estado se establece en **Waiting para el número de seguimiento**. También puede hacer clic en el trabajo de importación para mostrar la página flotante de estado, que contiene información más detallada sobre el trabajo de importación.
+16. En la página **importar archivos PST** , haga ![clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono **Actualizar** para mostrar el nuevo trabajo de importación de envío de unidades en la lista de trabajos de importación. El estado se establece en **Waiting para el número de seguimiento**. También puede hacer clic en el trabajo de importación para mostrar la página flotante de estado, que contiene información más detallada sobre el trabajo de importación.
  
 ## <a name="step-5-ship-the-hard-drive-to-microsoft"></a>Paso 5: enviar la unidad de disco duro a Microsoft
 
@@ -353,7 +353,7 @@ Cuando haya enviado la unidad de disco duro a Microsoft, lleve a cabo el procedi
     
 6. Haga clic en **Guardar** para guardar esta información del trabajo de importación. 
     
-    En la página **importar archivos PST** , haga ![clic en](media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono **Actualizar** para actualizar la información de su trabajo de importación de envío de unidad. Observe que el estado ahora está establecido en **Unidades en tránsito**.
+    En la página **importar archivos PST** , haga ![clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono **Actualizar** para actualizar la información de su trabajo de importación de envío de unidad. Observe que el estado ahora está establecido en **Unidades en tránsito**.
 
 ## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>Paso 6: filtrar los datos e iniciar el trabajo de importación de PST
 
@@ -367,7 +367,7 @@ Una vez que se cargan los archivos PST en Azure, el estado cambia a **análisis 
     
 3. En la página **importar archivos PST** , haga clic en **listo para importar a Office 365** para el trabajo de importación que ha creado en el paso 4. 
     
-    ![Hacer clic en Preparado para importar a Office 365, junto al trabajo de importación que ha creado](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+    ![Hacer clic en Preparado para importar a Office 365, junto al trabajo de importación que ha creado](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
     Se muestra una página de control flotante con información sobre los archivos PST y otra información sobre el trabajo de importación.
     
@@ -375,7 +375,7 @@ Una vez que se cargan los archivos PST en Azure, el estado cambia a **análisis 
     
 5. Se mostrará la página **Filtrar los datos**. Contiene las información sobre datos resultante del análisis realizado en los archivos PST por Office 365, incluida la antigüedad de los datos. En este momento, tiene la opción de filtrar los datos que se importarán o importar todos los datos tal como estén. 
     
-    ![Puede recortar los datos de los archivos PST o importarlos todos](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
+    ![Puede recortar los datos de los archivos PST o importarlos todos](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
 6. Realice una de las acciones siguientes:
     
@@ -389,7 +389,7 @@ Una vez que se cargan los archivos PST en Azure, el estado cambia a **análisis 
     
 7. Si ha elegido importar todos los datos, haga clic en **Importar datos** para iniciar el trabajo de importación. 
     
-    El estado del trabajo de importación se muestra en la página **importar archivos PST** . Haga clic en el ![icono Actualizar](media/O365-MDM-Policy-RefreshIcon.gif) **Actualizar** para actualizar la información de estado que se muestra en la columna **Estado**. Haga clic en el trabajo de importación para mostrar la página de control flotante de estado, donde se muestra la información de estado de cada archivo PST que se importa. Cuando se haya completado la importación y se hayan importado los archivos PST a los buzones de usuario, el estado cambiará a **completado**.
+    El estado del trabajo de importación se muestra en la página **importar archivos PST** . Haga clic en el ![icono Actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) **Actualizar** para actualizar la información de estado que se muestra en la columna **Estado**. Haga clic en el trabajo de importación para mostrar la página de control flotante de estado, donde se muestra la información de estado de cada archivo PST que se importa. Cuando se haya completado la importación y se hayan importado los archivos PST a los buzones de usuario, el estado cambiará a **completado**.
 
 ## <a name="view-a-list-of-the-pst-files-uploaded-to-office-365"></a>Ver una lista de los archivos PST cargados en Office 365
 
@@ -407,7 +407,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
     
 2. En el panel izquierdo del Centro de Seguridad y Cumplimiento, haga clic en **Gobernanza de la información > Importar > Importar archivos PST** .
     
-3. En la página **Importar**, haga clic en ![Agregar icono](media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
+3. En la página **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif) **Nuevo trabajo de importación**.
     
 4. En el Asistente para importar trabajo, escriba un nombre para el trabajo de importación de PST y, a continuación, haga clic en **siguiente**. Use letras minúsculas, números, guiones y caracteres de subrayado. Las letras en mayúscula no se pueden usar ni se pueden incluir espacios en el nombre.
     
@@ -426,7 +426,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
     
 3. Inicie el Explorador de Microsoft Azure Storage, haga clic derecho en **Cuentas de almacenamiento** en el panel izquierdo y, después, haga clic en **Conectar con Azure Storage**.
     
-    ![Haga clic derecho en Cuentas de almacenamiento y, después, en Conectar a Azure Storage](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![Haga clic derecho en Cuentas de almacenamiento y, después, en Conectar a Azure Storage](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
 4. Haga clic en **Usar un URI de Firma de acceso compartido (SAS) o cadena de conexión** y, luego, en **Siguiente**.
     
@@ -436,11 +436,11 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
     
     El contenedor **ingestiondata** está abierto. Contiene los archivos PST de la unidad de disco duro. El contenedor **ingestiondata** se encuentra en **Cuentas de almacenamiento** \> **(servicios vinculados de SAS)** \> **Contenedores de blob**.
     
-    ![El Explorador de Azure Storage muestra una lista de los archivos PST que ha cargado](media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
+    ![El Explorador de Azure Storage muestra una lista de los archivos PST que ha cargado](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
   
 7. Cuando termine de usar el Explorador de Microsoft Azure Storage, haga clic derecho en **ingestiondata** y, después, en **Desasociar** para desconectarse del área de Azure Storage. En caso contrario, recibirá un error la próxima vez que intente vincularse. 
     
-    ![Haga clic derecho en Ingesta y, luego, seleccione Desasociar para desconectarse de su área de Azure Storage](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
+    ![Haga clic derecho en Ingesta y, luego, seleccione Desasociar para desconectarse de su área de Azure Storage](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
 
 ## <a name="troubleshooting-tips"></a>Sugerencias para solucionar problemas
 

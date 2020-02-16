@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Su organización puede trabajar con un socio de Microsoft para configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce chatter, Yahoo Messenger o Yammer. Esto le permite archivar datos de orígenes de datos de terceros en Office 365 para poder usar las características de cumplimiento de Office 365, como directivas de retención, búsqueda de contenido y retención legal para administrar el gobierno de los datos de terceros de la organización.
-ms.openlocfilehash: 01188110b19dc4784920a5f18e673f92e064e034
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 6104381b842b9a4d76de7278c0b7280ec2f11222
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628616"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085029"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>Trabajar con un partner para archivar datos de terceros en Office 365
 
@@ -39,7 +39,7 @@ A continuación, se presenta una introducción al proceso y los pasos necesarios
 
 En la siguiente ilustración y descripción se explica cómo funciona el proceso de importación de datos de terceros al trabajar con un partner.
   
-![Cómo funciona el proceso de importación de datos de terceros](media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
+![Cómo funciona el proceso de importación de datos de terceros](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
 1. El cliente trabaja con su compañero de elección para configurar un conector que extraerá elementos del origen de datos de terceros y, a continuación, importará dichos elementos a Office 365.
     
@@ -537,7 +537,7 @@ Estos son los pasos para acceder y aceptar la solicitud para registrar el conect
 
    Se muestra el siguiente cuadro de diálogo. Puede expandir los Cares para revisar los permisos que se asignarán al conector.
 
-   ![Se muestra el cuadro de diálogo de solicitud de permisos](media/O365-ThirdPartyDataConnector-OptIn1.png)
+   ![Se muestra el cuadro de diálogo de solicitud de permisos](../media/O365-ThirdPartyDataConnector-OptIn1.png)
 
 2. Haga clic en **Aceptar**.
 

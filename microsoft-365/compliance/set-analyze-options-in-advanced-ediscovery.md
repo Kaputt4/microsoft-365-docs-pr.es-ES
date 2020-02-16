@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Revise los pasos para configurar las opciones del proceso analizar en la exhibición avanzada de documentos electrónicos de Office 365, incluidos los subduplicados, los subprocesos de correo electrónico y los temas.  '
-ms.openlocfilehash: e9acb30d991bd2ee0acba5a9ddde619272788ceb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597467"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081166"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Establecer las opciones de análisis en Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ En la exhibición avanzada de documentos electrónicos, establezca las opciones 
 
 Abra **preparar \> ** la \> **instalación**de Analyze. Se muestra la siguiente ventana.
   
-![Establecer las opciones de análisis](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
+![Establecer las opciones de análisis](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
  **Casi duplicados y subprocesos de correo electrónico** Active esta casilla si desea ejecutar el análisis. Está seleccionada de forma predeterminada. 
   
@@ -51,11 +51,11 @@ Abra **preparar \> ** la \> **instalación**de Analyze. Se muestra la siguiente 
     
     Por ejemplo, si la palabra sugerida es "equipo" y ha especificado "2" como "número máximo de temas", la exhibición avanzada de documentos electrónicos intentará generar dos temas relacionados con la palabra "equipo". Por ejemplo, los dos temas podrían ser "software de equipo" y "hardware de equipo". 
     
-    ![Agregar tema sugerido](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![Agregar tema sugerido](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
 1. Para ver, agregar o editar los temas sugeridos, haga clic en **modificar**.
     
-2. En el **Panel temas sugeridos** , haga clic en el](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono **Agregar** ![icono Agregar para agregar un tema. En el panel **Agregar tema sugerido** , agregue las palabras separadas por comas. 
+2. En el **Panel temas sugeridos** , haga clic en el](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono **Agregar** ![icono Agregar para agregar un tema. En el panel **Agregar tema sugerido** , agregue las palabras separadas por comas. 
     
 3. En **número de temas**, seleccione un valor para determinar el número de temas que la exhibición avanzada de documentos electrónicos intentará generar para estas palabras (el valor predeterminado es 1 tema).
     

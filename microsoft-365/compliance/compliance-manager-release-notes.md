@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: c3d0efbfcf58eb001d2df5832439c22c7cc662aa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3fc16e92e912676d7aedc861ffe8306d68388c95
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595787"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078657"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notas de la versión del administrador de cumplimiento (versión preliminar)
 
@@ -48,7 +48,7 @@ En las siguientes secciones se abordan los problemas conocidos que deben resolve
 
 - Para los elementos de acción marcados como **no en el ámbito**, la puntuación asignada al elemento de acción no se excluye del cálculo de la puntuación de cumplimiento. Los elementos de acción marcados **sin ámbito** no aumentan la puntuación de cumplimiento.
 
-### <a name="secure-score"></a>Puntuación de seguridad
+### <a name="secure-score"></a>Puntuación segura
 
 - Los resultados de puntuación seguros no están disponibles para algunos elementos de acciones en determinadas suscripciones de Microsoft 365 y Office 365. **No se pudo detectar** el resultado de la puntuación segura en estos casos.
 - A veces, se devuelven resultados de puntuación seguros para las directivas y los elementos de acción correspondientes no completados.

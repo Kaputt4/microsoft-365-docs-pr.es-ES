@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: En eDiscovery avanzado, el módulo de búsqueda y etiquetado le permite buscar, obtener una vista previa y organizar los documentos en su caso. Actualmente, este módulo está en versión beta.
-ms.openlocfilehash: d79b702471b7a7234a7f0d147eb4f50bfc56a4c7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a3597cf0abad7095de7a7c6857052f269d202598
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601717"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081407"
 ---
 # <a name="search-and-tagging"></a>Búsqueda y etiquetado
 
@@ -69,7 +69,7 @@ En la siguiente tabla se enumeran las propiedades que se pueden buscar con una c
 
 Como alternativa, puede usar una tarjeta de condición en la herramienta de búsqueda de eDiscovery avanzada para agregar una condición (para las propiedades seleccionadas) a una consulta de búsqueda. En la siguiente captura de pantalla se muestran las condiciones que se pueden agregar a una consulta. La columna **Grupo** indica si la propiedad se aplica al correo electrónico, a los documentos del sitio o a ambos (indicado por el valor *Common*). Esta columna también identifica las propiedades que se pueden buscar y que están disponibles después de ejecutar el módulo relevancia.
 
-![Condiciones de búsqueda en la herramienta de búsqueda avanzada de eDiscovery](media/AeDSearchConditions.png)
+![Condiciones de búsqueda en la herramienta de búsqueda avanzada de eDiscovery](../media/AeDSearchConditions.png)
 
 Para obtener más información acerca de las propiedades que permiten búsquedas, consulte [Keyword queries and search conditions](keyword-queries-and-search-conditions.md).
   

@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: efd5d2f8003bd79620118a6a058576e5593699b1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 517ff6ae711d61b783e837aebeeb991dfaa53daa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601217"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084339"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -1080,7 +1080,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Identidad
 - Registro
 - Determinación 
-- Id. 
+- ID 
 - Identiteitskaart
 - Registratie nummer 
 - Identificatie nummer 
@@ -1502,7 +1502,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driver's Licence
 - Driver's Licences
 - Permis de Conduire
-- id
+- identificador
 - ids
 - idcard number
 - idcard numbers
@@ -1760,7 +1760,7 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
 - New Brunswick
 - Nova Scotia
 - Prince Edward Island
-- Canadá
+- Canada
    
 ## <a name="canada-social-insurance-number"></a>Número de seguridad social de Canadá
 
@@ -1896,7 +1896,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - Número de identificación nacional 
 - tarjeta de identidad 
-- Id. 
+- ID 
 - Determinación 
 - Rol Único Nacional 
 - REALIZAR 
@@ -3326,7 +3326,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 #### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
 - tarjeta de identidad
-- Id.
+- ID
 - Determinación
 - Personalausweis
 - Identifizierungsnummer
@@ -4904,7 +4904,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- Id.
+- ID
 - Determinación 
    
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -5905,7 +5905,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - DISTRIBUCIÓN 
 - CDL 
 - CDLS 
-- Id. 
+- ID 
 - Falta 
 - LISTAS # 
 - DISTRIBUCIÓN # 
@@ -6122,92 +6122,40 @@ No
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_ssn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
-- La función Func_us_date encuentra una fecha en el formato de fecha correcto.
-- La función Func_us_address encuentra una dirección en el formato correcto.
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_unformatted_ssn busca contenido que coincida con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
-- La función Func_us_date encuentra una fecha en el formato de fecha correcto.
-- La función Func_us_address encuentra una dirección en el formato correcto.
 
 Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_randomized_formatted_ssn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
-- La función Func_us_date encuentra una fecha en el formato de fecha correcto.
-- La función Func_us_address encuentra una dirección en el formato correcto.
 
 Una directiva DLP está segura al 55% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_randomized_unformatted_ssn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
-- La función Func_us_date encuentra una fecha en el formato de fecha correcto.
-- La función Func_us_address encuentra una dirección en el formato correcto.
 
-Una directiva DLP está 40% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_ssn encuentra contenido que coincide con el patrón.
-- La función Func_unformatted_ssn no encuentra contenido que coincide con el patrón.
-- La función Func_randomized_unformatted_ssn no encuentra contenido que coincida con el patrón.
-- No se encuentra una palabra clave de Keyword_ssn.
- 
-O bien
-
-- La función Func_randomized_formatted_ssn encuentra contenido que coincide con el patrón.
-- La función Func_unformatted_ssn no encuentra contenido que coincide con el patrón.
-- La función Func_randomized_unformatted_ssn no encuentra contenido que coincida con el patrón.
-- No se encuentra una palabra clave de Keyword_ssn.
 
 ```xml
 <!-- U.S. Social Security Number (SSN) -->
   <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_ssn" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
+        <Match idRef="Keyword_ssn" />
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
       </Pattern>
       <Pattern confidenceLevel="65">
         <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_ssn" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
+        <Match idRef="Keyword_ssn" />
       </Pattern>
       <Pattern confidenceLevel="55">
         <IdMatch idRef="Func_randomized_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
       </Pattern>
-      <Pattern confidenceLevel="40">
-        <IdMatch idRef="Func_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_unformatted_ssn" />
-          <Match idRef="Func_randomized_unformatted_ssn" />
-          <Match idRef="Keyword_ssn" />
-        </Any>
-      </Pattern>
-      <Pattern confidenceLevel="40">
-        <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_unformatted_ssn" />
-          <Match idRef="Func_randomized_unformatted_ssn" />
-          <Match idRef="Keyword_ssn" />
-        </Any>
-      </Pattern>
-    </Entity>
+  </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave

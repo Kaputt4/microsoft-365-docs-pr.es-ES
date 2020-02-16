@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661956"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078754"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de comunicaciones
 
@@ -66,7 +66,7 @@ Para obtener una lista completa de los filtros y los detalles de los campos, con
 
 8. Si desea guardar los filtros seleccionados como una consulta de filtro, seleccione **guardar el control de consulta** después de haber configurado al menos un valor de filtro. Escriba un nombre para la consulta de filtro y seleccione **Guardar**. Este filtro está disponible para usarse solo para esta directiva y aparece en la sección **consultas de filtro guardadas** de la página de detalles de **filtros** .
 
-    ![Controles de detalle del filtro de cumplimiento de comunicaciones](media/communication-compliance-filter-detail-controls.png)
+    ![Controles de detalle del filtro de cumplimiento de comunicaciones](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Uso del análisis de duplicados Near y Exact
 
@@ -90,7 +90,7 @@ Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticam
 
 8. Seleccione **cerrar** después de completar las acciones de corrección en los mensajes.
 
-    ![Controles de duplicados exactos de cumplimiento de comunicaciones](media/communication-compliance-duplicates-controls.png)
+    ![Controles de duplicados exactos de cumplimiento de comunicaciones](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>Corregir alertas
 
@@ -98,7 +98,7 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
 
 1. **Examine los conceptos básicos de los mensajes**: a veces es obvio que el origen o el asunto es un mensaje que se puede corregir inmediatamente. Puede que el mensaje sea falso o incorrectamente coincidente con una directiva y debe resolverse como falso positivo. Seleccione el control de **falso positivo** para resolver inmediatamente la alerta y quitarla de la cola de alertas pendientes. En la información de origen o de remitente, es posible que ya sepa cómo se debe enrutar o administrar el mensaje en estas circunstancias. Considere la posibilidad de usar los controles **etiquetar como** o **escalar** para asignar una etiqueta a los mensajes correspondientes o para enviar mensajes a un revisor designado.
 
-    ![Controles de corrección de cumplimiento de comunicaciones](media/communication-compliance-remediation-controls.png)
+    ![Controles de corrección de cumplimiento de comunicaciones](../media/communication-compliance-remediation-controls.png)
 
 2. **Examine los detalles del mensaje**: después de revisar los conceptos básicos del mensaje, es el momento de abrir un mensaje para examinar los detalles y para determinar las acciones de corrección adicionales. Seleccione un mensaje para ver la información del cuerpo y el encabezado del mensaje completo. Hay disponibles varias vistas diferentes para ayudarle a decidir el curso adecuado de acción:
 
@@ -107,7 +107,7 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
     - **Vista de anotar**: esta vista permite a los revisores agregar anotaciones directamente en el mensaje que se guardan en la vista del mensaje.
     - **Historial del usuario**: la vista historial del usuario muestra todas las demás alertas generadas por cualquier directiva de cumplimiento de la comunicación para el usuario que envía el mensaje.
 
-    ![Controles de vista de mensajes de cumplimiento de comunicaciones](media/communication-compliance-message-views.png)
+    ![Controles de vista de mensajes de cumplimiento de comunicaciones](../media/communication-compliance-message-views.png)
 
 3. **Decidir una acción de corrección**: ahora que ha revisado los detalles del mensaje para la alerta, puede elegir varias acciones de corrección:
 

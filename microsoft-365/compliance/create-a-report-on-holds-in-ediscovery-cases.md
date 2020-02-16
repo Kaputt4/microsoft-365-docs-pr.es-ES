@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Use el script de este artículo para generar un informe que contenga información sobre todas las suspensiones asociadas con casos de eDiscovery en el centro de cumplimiento en Office 365 o en Microsoft 365.
-ms.openlocfilehash: 415e484938a74620f0e3578bd1e00735232164de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8c426ff06bb0b2bafdfa91b9098b321994d558d7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595647"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077717"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Crear un informe sobre suspensiones en casos de eDiscovery en Office 365
   
@@ -176,7 +176,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     Este es un ejemplo de cómo se ejecuta el script CaseHoldsReport. ps1. 
     
-    ![El resultado después de ejecutar el script CaseHoldsReport. ps1](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![El resultado después de ejecutar el script CaseHoldsReport. ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Más información
 

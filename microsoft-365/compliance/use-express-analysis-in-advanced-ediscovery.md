@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Obtenga información sobre cómo ejecutar el modo de análisis rápido de Office 365 Advanced eDiscovery
-ms.openlocfilehash: 41de4b0c4e4e57501fb2a0774c556e2556c3d496
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 49e8f04b893f0a15563cf091c728352a97c4141f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597317"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080755"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Usar el análisis rápido en Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Puede usar el análisis rápido para calcular los subprocesos de correo electró
 
 1. En la ficha **análisis rápido** (1), seleccione un contenedor para habilitar los botones * * Express Analysis * * (2) y **Configuración avanzada** . 
     
-    ![Captura de pantalla de la página de análisis de Express](media/60009974-5d1f-4971-8ebe-e5ec74e7fd2a.jpg)
+    ![Captura de pantalla de la página de análisis de Express](../media/60009974-5d1f-4971-8ebe-e5ec74e7fd2a.jpg)
   
 2. En **parámetros de análisis**:
     
@@ -62,7 +62,7 @@ Puede usar el análisis rápido para calcular los subprocesos de correo electró
     
     En la **Página estado** de la tarea, puede ampliar las pestañas **proceso**, **analizar** y **exportar** para mostrar detalles sobre la ejecución rápida. 
     
-    ![Captura de pantalla de la página de estado de tarea de análisis avanzado de eDiscovery Express](media/bf30ab02-9828-4a6d-a485-0babc2c49ae5.jpg)
+    ![Captura de pantalla de la página de estado de tarea de análisis avanzado de eDiscovery Express](../media/bf30ab02-9828-4a6d-a485-0babc2c49ae5.jpg)
   
 5. Seleccione la página **Resumen de análisis urgente** para enumerar la información detallada sobre la ejecución. 
     
@@ -86,7 +86,7 @@ Opcionalmente, puede establecer la **Configuración avanzada** para cambiar los 
     
     Por ejemplo, si la palabra sugerida es "equipo" y ha especificado "2" como "número máximo de temas", la exhibición avanzada de documentos electrónicos intentará generar dos temas relacionados con la palabra "equipo". Por ejemplo, los dos temas podrían ser "software de equipo" y "hardware de equipo".
     
-    ![Agregar tema sugerido](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![Agregar tema sugerido](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
   - **Modo** En la lista desplegable, seleccione una opción de **temas** : 
     
@@ -104,18 +104,18 @@ Opcionalmente, puede establecer la **Configuración avanzada** para cambiar los 
     
   - Para exportar los resultados de los nuevos archivos que agregó a un caso existente, continúe con el lote actual. Para crear una sesión en el lote, seleccione el mismo número de lote y haga clic en **crear sesión de exportación** puede usar esta opción para exportar los mismos parámetros que el lote anterior, de forma incremental. 
     
-  - Para exportar a un nuevo lote, haga **** ![clic en agregar](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
+  - Para exportar a un nuevo lote, haga **** ![clic en agregar](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
     
-  - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic en **Editar** ![icono Editar y, a continuación, modifique los campos.
+  - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic en **Editar** ![icono Editar y, a continuación, modifique los campos.
     
     > [!NOTE]
     > Después de ejecutar sesiones para un lote de exportación, no se pueden eliminar. Además, solo algunos parámetros pueden editarse una vez ejecutada la primera sesión. 
   
-  - Para crear un lote de exportación duplicado, elija **duplicar** ![lote de exportación cree un](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) icono de exportación de lote duplicado y escriba un nombre y una descripción para el lote duplicado en el panel. 
+  - Para crear un lote de exportación duplicado, elija **duplicar** ![lote de exportación cree un](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) icono de exportación de lote duplicado y escriba un nombre y una descripción para el lote duplicado en el panel. 
     
-  - Para eliminar un lote de exportación, elija **eliminar** ![eliminar lote de exportación](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+  - Para eliminar un lote de exportación, elija **eliminar** ![eliminar lote de exportación](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
     
-  - Para ver el historial de un lote, seleccione icono ![](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)de historial de vista de **historial por lotes** .
+  - Para ver el historial de un lote, seleccione icono ![](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)de historial de vista de **historial por lotes** .
     
 2. En definir p? **opulation:** seleccione **incluir sólo los archivos que superen la puntuación de recorte de relevancia** o **refinar el lote de exportación** si desea ajustar la configuración del lote de exportación. Si selecciona **incluir sólo los archivos de la puntuación de recorte**de la relevancia, el **problema** está habilitado y, si la puntuación de relevancia del archivo es superior a la puntuación de corte para el problema seleccionado, el archivo se exportará. El archivo se exportará a menos que el filtro " **para revisión** " lo excluya. Si selecciona **refinar lote de exportación**, los botones **de opción desduplicación** y **filtrar por "para revisión"** están habilitados. Si elige **desduplicación**, los archivos duplicados se filtrarán de acuerdo con la Directiva definida: [nivel de caso (predeterminado): de cada conjunto de archivos duplicados en todo el caso, se desduplicarán todos los archivos menos uno. Nivel de custodio: de cada conjunto de archivos duplicados del mismo custodio, se desduplicarán todos menos un archivo. Hay disponible un registro de todos los archivos duplicados en la salida de la exportación. Si elige **filtrar por ' para revisión '** , seleccione **modificar en metadatos** para escribir la configuración del campo **' para revisión '**. Seleccione **incluir archivos de entrada**para incluir los archivos de origen en el contenido del paquete. Puede desactivar esta opción para acelerar el proceso de exportación. Tenga en cuenta que los archivos nativos se exportarán en cualquier caso.
     

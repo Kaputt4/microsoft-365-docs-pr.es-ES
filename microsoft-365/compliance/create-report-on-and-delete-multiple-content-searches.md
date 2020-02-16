@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Aprenda a automatizar las tareas de búsqueda de contenido como la creación de búsquedas y la ejecución de informes a través de scripts de PowerShell en el centro de seguridad & cumplimiento en Office 365.
-ms.openlocfilehash: 6c92d9dab093b802acc518aebb96ddf83cf54ea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 915ea910eebba8f6f39ceb41d9475769a6403729
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595577"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077238"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
 
@@ -191,7 +191,7 @@ Para ejecutar el script:
     
     La secuencia de comandos muestra el progreso de la creación y ejecución de las búsquedas. Una vez finalizado el script, vuelve a la pregunta. 
     
-    ![Resultado de ejemplo de la ejecución de la secuencia de comandos para crear varias búsquedas de cumplimiento](media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+    ![Resultado de ejemplo de la ejecución de la secuencia de comandos para crear varias búsquedas de cumplimiento](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
   
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Paso 4: ejecutar el script para informar de las estimaciones de búsqueda
 
@@ -266,7 +266,7 @@ Después de crear las búsquedas, el siguiente paso es ejecutar un script que mu
     
     La secuencia de comandos muestra el progreso de la creación y ejecución de las búsquedas. Una vez finalizado el script, se muestra el informe. 
     
-    ![Ejecutar el informe de búsqueda para mostrar las estimaciones para el grupo de búsqueda](media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+    ![Ejecutar el informe de búsqueda para mostrar las estimaciones para el grupo de búsqueda](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
   
 > [!NOTE]
 > Si se especifica el mismo buzón o sitio que una ubicación de contenido en más de una búsqueda en un grupo de búsqueda, el cálculo total de resultados en el informe (tanto para el número de elementos como para el tamaño total) puede incluir resultados para los mismos elementos. Esto se debe a que el mismo mensaje de correo electrónico o documento se contará más de una vez si coincide la consulta para diferentes búsquedas en el grupo de búsqueda. 
@@ -301,4 +301,4 @@ Como es posible que esté creando muchas búsquedas, este último script solo fa
     
     El script muestra el nombre de cada búsqueda que se ha eliminado.
     
-    ![Ejecutar la secuencia de comandos para eliminar las búsquedas en el grupo de búsqueda](media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+    ![Ejecutar la secuencia de comandos para eliminar las búsquedas en el grupo de búsqueda](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

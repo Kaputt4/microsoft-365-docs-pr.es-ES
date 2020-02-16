@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar posibles amenazas, pérdidas de datos y problemas de permisos. A continuación, puede ver y administrar las alertas que se generan cuando los usuarios realizan actividades que cumplen las condiciones de una directiva de alertas.
-ms.openlocfilehash: 025bf927b194a7faa6357dbabc12a424fe3f3124
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a5ac38f30d42ceff67f982c6c9ac9b03507d34cb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596107"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080057"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el centro de seguridad y cumplimiento
 
@@ -37,7 +37,7 @@ Las directivas de alerta se basan en y amplían la funcionalidad de las alertas 
 
 A continuación, se presenta una introducción rápida sobre cómo funcionan las directivas de alertas y las alertas que se desencadenan cuando la actividad de usuario o de administrador cumpla las condiciones de una directiva de alerta.
 
-![Información general sobre cómo funcionan las directivas de alertas](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
+![Información general sobre cómo funcionan las directivas de alertas](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
 1. Un administrador de su organización crea, configura y activa una directiva de alertas mediante la página **directivas de alerta** en el centro de seguridad y cumplimiento. También puede crear directivas de alerta con el cmdlet **New-ProtectionAlert** en el PowerShell del centro de cumplimiento de & de seguridad. Para crear directivas de alerta, debe tener asignado el rol administrar alertas o la configuración de la organización en el centro de seguridad y cumplimiento.
 
@@ -53,7 +53,7 @@ Una directiva de alertas consiste en un conjunto de reglas y condiciones que def
 
 Para ver y crear directivas de alerta, vaya [https://protection.office.com](https://protection.office.com) a y, a continuación, seleccione **directivas**de alertas de **alertas** \> .
 
-![En el centro de seguridad y cumplimiento, seleccione alertas y, a continuación, seleccione directivas de alerta para ver y crear directivas de alerta.](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
+![En el centro de seguridad y cumplimiento, seleccione alertas y, a continuación, seleccione directivas de alerta para ver y crear directivas de alerta.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
 Una directiva de alertas consta de los siguientes valores y condiciones.
 
@@ -66,7 +66,7 @@ Una directiva de alertas consta de los siguientes valores y condiciones.
 
 - **Cuando se activa la alerta** , puede configurar una opción que defina la frecuencia con la que se puede producir una actividad antes de que se desencadene una alerta. Esto le permite configurar una directiva para generar una alerta cada vez que una actividad coincida con las condiciones de la Directiva, cuando se supere un umbral determinado o cuando la actividad en la que se realiza el seguimiento de la alerta sea inusual para la organización.
 
-    ![Configurar el modo en que se desencadenan las alertas, en función de Cuándo se produce la actividad, un umbral o una actividad inusual para la organización](media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
+    ![Configurar el modo en que se desencadenan las alertas, en función de Cuándo se produce la actividad, un umbral o una actividad inusual para la organización](../media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
 
     Si selecciona la configuración en función de actividad inusual, Office 365 establece un valor de línea base que define la frecuencia normal para la actividad seleccionada. El establecimiento de esta línea base tarda hasta siete días en el que no se generarán alertas. Una vez establecida la línea base, se desencadena una alerta cuando la frecuencia de la actividad a la que se realiza el seguimiento por parte de la Directiva de alerta supera en gran medida el valor de línea base. Para actividades relacionadas con la auditoría (como actividades de archivos y carpetas), puede establecer una línea base basada en un único usuario o en función de todos los usuarios de la organización; para actividades relacionadas con el malware, puede establecer una línea base en una única familia de malware, un solo destinatario o todos los mensajes de la organización.
 
@@ -79,7 +79,7 @@ Una directiva de alertas consta de los siguientes valores y condiciones.
 
   - Gobierno de la información
 
-  - Flujo de correo
+  - Flujo del correo
 
   - Permisos
 
@@ -115,7 +115,7 @@ La tabla también indica el plan Office 365 Enterprise y Office 365 US Governmen
 |**Mensajes de correo electrónico que contienen direcciones URL de phish quitadas después de la entrega**|Genera una alerta cuando se entregan mensajes con phish a los buzones de la organización. Si se produce este evento, Office 365 quita los mensajes infectados de los buzones de correo de Exchange online mediante la [depuración automática de cero horas](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una configuración de gravedad **informativa** y desencadena automáticamente [investigación y respuesta automatizada en Office 365](https://go.microsoft.com/fwlink/?linkid=2084737).|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
 |**Correo electrónico notificado por el usuario como malware o phish**|Genera una alerta cuando los usuarios de la organización informen de mensajes como correo electrónico de suplantación de identidad mediante el complemento de mensajes de informe. Esta directiva tiene una configuración de gravedad **informativa** . Para obtener más información sobre este complemento, vea [use the Report Message Add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Para Office 365 ATP P2, E5, G5 clientes, esta alerta activa automáticamente la [investigación y la respuesta automatizadas en Office 365](https://go.microsoft.com/fwlink/?linkid=2084737).|Administración de amenazas|E1/F1/G1, E3/G3 o E5/G5|
 |**Límite de envío de correo electrónico superado**|Genera una alerta cuando una persona de la organización ha enviado más correo del que permite la Directiva de correo no deseado saliente. Suele ser una indicación de que el usuario está enviando demasiado correo electrónico o que la cuenta puede estar en peligro. Esta directiva tiene una configuración de gravedad **media** . Si recibe una alerta generada por esta directiva de alerta, es aconsejable [comprobar si la cuenta de usuario está comprometida](../security/office-365-security/responding-to-a-compromised-email-account.md).|Administración de amenazas|E1/F1/G1, E3/G3 o E5/G5|
-|**Los mensajes se han retrasado**|Genera una alerta cuando Office 365 no puede entregar mensajes de correo electrónico a su organización local o a un servidor asociado mediante un conector. Cuando esto ocurre, el mensaje se coloca en la cola en Office 365. Esta alerta se desencadena cuando hay 2.000 mensajes o más que se han puesto en cola durante más de una hora. Esta directiva tiene una configuración de gravedad **alta** .|Flujo de correo|E1/F1/G1, E3/G3 o E5/G5|
+|**Los mensajes se han retrasado**|Genera una alerta cuando Office 365 no puede entregar mensajes de correo electrónico a su organización local o a un servidor asociado mediante un conector. Cuando esto ocurre, el mensaje se coloca en la cola en Office 365. Esta alerta se desencadena cuando hay 2.000 mensajes o más que se han puesto en cola durante más de una hora. Esta directiva tiene una configuración de gravedad **alta** .|Flujo del correo|E1/F1/G1, E3/G3 o E5/G5|
 |**Campaña de malware detectada tras la entrega**|Genera una alerta cuando se entrega un número inusualmente grande de mensajes que contienen malware a los buzones de la organización. Si se produce este evento, Office 365 quita los mensajes infectados de los buzones de correo de Exchange Online. Esta directiva tiene una configuración de gravedad **alta** .|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
 |**Campaña de malware detectada y bloqueada**|Genera una alerta cuando alguien intenta enviar un número inusualmente elevado de mensajes de correo electrónico que contienen un determinado tipo de malware a los usuarios de la organización. Si se produce este evento, los mensajes infectados están bloqueados por Office 365 y no se entregan a los buzones de correo. Esta directiva tiene una configuración de gravedad **baja** .|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
 |**Campaña de malware detectada en SharePoint y OneDrive**|Genera una alerta cuando se detecta un volumen inusualmente alto de malware o virus en los archivos ubicados en los sitios de SharePoint o en las cuentas de OneDrive de la organización. Esta directiva tiene una configuración de gravedad **alta** .|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
@@ -141,7 +141,7 @@ Cuando una actividad realizada por los usuarios de la organización coincide con
 
 Para ver las alertas, vaya [https://protection.office.com](https://protection.office.com) a y, a continuación, seleccione **alertas** \> **Ver alertas**.
 
-![En seguridad y cumplimiento, seleccione alertas y, a continuación, seleccione Ver alertas para ver alertas](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
+![En seguridad y cumplimiento, seleccione alertas y, a continuación, seleccione Ver alertas para ver alertas](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
 
 Puede usar los siguientes filtros para ver un subconjunto de todas las alertas en la página **Ver alertas** .
 
@@ -173,37 +173,37 @@ En la siguiente tabla se enumeran las funciones necesarias para ver las alertas 
 
 Para ver a qué categoría se asigna una directiva de alerta predeterminada, consulte la tabla de la sección [directivas de alertas predeterminadas](#default-alert-policies) .
 
-|&nbsp;|Gobierno de la información|Prevención de pérdida de datos|Flujo de correo|Permisos|Administración de amenazas|Otros|
+|&nbsp;|Gobierno de la información|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||
-|Administrador de cumplimiento|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Administrador de cumplimiento|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Búsqueda de cumplimiento|||||||
 |Administración de dispositivos|||||||
 |Administración de disposición|||||||
-|Administración de cumplimiento de DLP||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|Administración de cumplimiento de DLP||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
 |Exportar|||||||
 |Hold|||||||
-|Administrar alertas||||||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Configuración de la organización||||||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Administrar alertas||||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Configuración de la organización||||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Vista previa|||||||
-|Administración de registros|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Administración de retención|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Administración de registros|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Administración de retención|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |Revisar|||||||
 |Descifrado de RMS|||||||
-|Administración de funciones||||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Administración de funciones||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |Búsqueda y depuración|||||||
-|Administrador de seguridad||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Lector de seguridad||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Administrador de seguridad||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Lector de seguridad||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
 |Vista de garantía del servicio|||||||
 |Administrador de revisión de supervisión|||||||
 |Registros de auditoría de solo vista|||||||
 |Administración de dispositivos de solo vista|||||||
-|Administración de cumplimiento de DLP de solo vista||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Ver-solo administrar alertas||||||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Destinatarios con permiso de vista|||  ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|Administración de registros de solo vista|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|View-Only Retention Management|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Administración de cumplimiento de DLP de solo vista||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|Ver-solo administrar alertas||||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Destinatarios con permiso de vista|||  ![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
+|Administración de registros de solo vista|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|View-Only Retention Management|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
 **Sugerencia:** Para ver los roles asignados a cada uno de los grupos de roles predeterminados, ejecute los siguientes comandos en el PowerShell del centro de cumplimiento de & de seguridad:
@@ -250,11 +250,11 @@ Las organizaciones que tienen Microsoft Cloud App Security como parte de una sus
 
 Para mostrar solo alertas de Cloud App Security en el centro de seguridad y cumplimiento, use el filtro de **origen** y seleccione **Cloud App Security**.
 
-![Usar el filtro de origen para mostrar solo alertas de Cloud App Security](media/FilterCASAlerts.png)
+![Usar el filtro de origen para mostrar solo alertas de Cloud App Security](../media/FilterCASAlerts.png)
 
 Similar a una alerta desencadenada por una directiva de alerta en el centro de seguridad y cumplimiento, puede seleccionar una alerta de Cloud App Security para mostrar una página de control flotante con detalles sobre la alerta. La alerta incluye un vínculo para ver los detalles y administrar la alerta en Cloud App Security portal y un vínculo a la Directiva de seguridad de la aplicación de nube correspondiente que activó la alerta. Consulte [supervisar alertas en Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
-![Detalles de alertas contienen vínculos al portal de Cloud App Security](media/CASAlertDetail.png)
+![Detalles de alertas contienen vínculos al portal de Cloud App Security](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
 > Si se cambia el estado de una alerta de Cloud App Security en el centro de seguridad y cumplimiento, no se actualizará el estado de resolución de la misma alerta en Cloud App Security portal. Por ejemplo, si marca el estado de la alerta como **resuelto** en el centro de seguridad y cumplimiento, el estado de la alerta en Cloud App Security Portal no cambia. Para resolver o descartar una alerta de Cloud App Security, administre la alerta en Cloud App Security portal.

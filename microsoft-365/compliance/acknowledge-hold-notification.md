@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Es posible que deba informar a los custodios de su obligación de conservar la información almacenada electrónicamente como parte de la investigación legal. La exhibición avanzada de documentos electrónicos le permite administrar fácilmente el proceso de notificación de retención.
-ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594073"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080286"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención
 
@@ -52,4 +52,4 @@ En función de la configuración de la notificación de suspensión legal, es po
 
 Además de las notificaciones de correo electrónico, cada custodio tendrá acceso a un portal de cumplimiento único. A través del portal, cada custodio puede ver, acceder y reconocer sus notificaciones de retención activas.
 
-![Portal de cumplimiento de un custodio](media/CustodianPortal.jpg)
+![Portal de cumplimiento de un custodio](../media/CustodianPortal.jpg)

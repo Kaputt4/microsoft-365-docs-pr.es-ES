@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar el aprendizaje de relevancia en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: 6778666e1ef0e5900a2afcc2949bdc9579c21fd1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601467"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081106"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos de Office 365
 
@@ -42,7 +42,7 @@ Todos los archivos importados deben agregarse a una carga para ser procesados en
   
 1. En la **pestaña \> configuración de relevancia** para la relevancia, seleccione **carga**.
     
-    ![Pestaña Cargas de configuración de relevancia](media/278aac7f-655f-462f-852a-6baa5d818768.png)
+    ![Pestaña Cargas de configuración de relevancia](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
 2. **Archivos de inclusión**: Seleccione una opción para los archivos que se van a incluir. De forma predeterminada, la adición de archivos a la carga actual se basa en el llenado "todos los archivos".
     

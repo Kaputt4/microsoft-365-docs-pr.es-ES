@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 78997bfb6a3a77a03d95560d5f0c38eaae2dda4c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595677"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078157"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Revisar las conversaciones en eDiscovery avanzado 
 
@@ -47,7 +47,7 @@ Estas son algunas definiciones para ayudarle a empezar a usar la reconstrucción
 
 - **Conversación:** Representa una agrupación de uno o más mensajes. En las distintas aplicaciones, las conversaciones pueden representarse de formas diferentes. En algunas aplicaciones, hay una acción explícita que se produce al responder a un mensaje existente. Las conversaciones se crean de forma explícita como resultado de esta acción del usuario. Por ejemplo, aquí se muestra una captura de pantalla de una conversación de canal en Microsoft Teams.
 
-   ![Conversación de canal de Microsoft Teams](media/threadedchat.png)
+   ![Conversación de canal de Microsoft Teams](../media/threadedchat.png)
 
    En otras aplicaciones (como los mensajes de chat de 1xN en Microsoft Teams), no hay una cadena de respuestas formales y en su lugar los mensajes aparecen como una "río plano de mensajes" en un único subproceso. En estas aplicaciones de tipos, las conversaciones se deducen de un grupo de mensajes que se producen en un momento determinado. Esta "agrupación flexible" de mensajes (a diferencia de una cadena de respuesta) representa la conversación "hacia delante y hacia atrás" sobre un tema específico de interés. 
 
@@ -71,7 +71,7 @@ Una vez que haya revisado y finalizado la consulta de búsqueda, puede Agregar l
 
 Al agregar datos de conversaciones a un conjunto de revisión, puede usar las opciones de recuperación de conversaciones para expandir la búsqueda e incluir mensajes contextuales. Después de establecer las opciones de recuperación de conversaciones, pueden ocurrir las siguientes cosas:
 
-  ![Recuperación de conversaciones](media/messagesandconversations.png)
+  ![Recuperación de conversaciones](../media/messagesandconversations.png)
   
 1. Mediante una consulta de palabra clave y un intervalo de fechas, la búsqueda devolvió un error en el *mensaje 3*. Este mensaje formaba parte de una conversación más amplia, ilustrada por *CRC1*. 
   
@@ -99,13 +99,13 @@ Una vez que el contenido se ha procesado y agregado al conjunto de revisiones, p
 
 En un conjunto de revisiones estándar, los mensajes se procesan y se muestran como elementos individuales, de manera similar a como se almacenan en una carpeta de buzón de correo. En este flujo de trabajo, cada mensaje se procesa como un elemento independiente. Como resultado, las opciones de exportación y Resumen encadenados no están disponibles en un conjunto de revisión estándar. 
 
-  ![Conjunto de revisión estándar](media/standardrs.PNG)
+  ![Conjunto de revisión estándar](../media/standardrs.PNG)
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Revisar conversaciones en un conjunto de revisión de conversación
 
 En un conjunto de revisión de conversación, los mensajes individuales se enlazan juntos y se presentan como conversaciones. Esto le permite revisar y exportar conversaciones contextuales. 
 
-  ![Conjunto de revisión de conversación](media/ConversationRSOptions.PNG)
+  ![Conjunto de revisión de conversación](../media/ConversationRSOptions.PNG)
 
 En las siguientes secciones se describe cómo revisar y exportar conversaciones en un conjunto de revisión de conversación.
 
@@ -134,7 +134,7 @@ En un conjunto de revisión de conversación, puede usar las siguientes opciones
 
 En un conjunto de revisión de conversación, puede establecer las siguientes opciones para exportar conversaciones:
 
-![Exportar](media/export.png)
+![Exportar](../media/export.png)
 
 a. Opciones de metadatos
 

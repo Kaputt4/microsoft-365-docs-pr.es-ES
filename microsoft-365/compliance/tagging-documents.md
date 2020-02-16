@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: be4c86a5df7e0964744f6b5d7551382916e7ed2d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cd622430df4a636a9529a4d10ddc90057548a810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597417"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081002"
 ---
 # <a name="tag-documents-in-a-review-set"></a>Etiquetar documentos en un conjunto de revisión
 
@@ -47,11 +47,11 @@ La exhibición avanzada de documentos electrónicos proporciona dos tipos de eti
 
 Además de los tipos de etiqueta, la estructura de las etiquetas que se organizan en el panel etiqueta se puede usar para que los documentos de etiquetado sean más intuitivos. Las etiquetas se agrupan por secciones. revisión Set Search admite la capacidad de buscar por etiqueta y por etiqueta. Esto significa que puede crear una búsqueda de conjunto de revisión para recuperar documentos etiquetados con cualquier etiqueta en una sección.
 
-![Secciones de etiquetas en el panel etiqueta](media/Tagtypes.png)
+![Secciones de etiquetas en el panel etiqueta](../media/Tagtypes.png)
 
 Las etiquetas se pueden organizar en mayor profundidad si se anidan dentro de una sección. Por ejemplo, si la intención es identificar y etiquetar contenido privilegiado, se puede usar la anidación para dejar claro que un usuario puede etiquetar un documento como "privilegiado" y seleccionar el tipo de privilegio comprobando la etiqueta anidada adecuada.
 
-![Etiquetas anidadas dentro de una sección de etiqueta](media/Nestingtags.png)
+![Etiquetas anidadas dentro de una sección de etiqueta](../media/Nestingtags.png)
 
 ## <a name="applying-tags"></a>Aplicar etiquetas
 
@@ -61,7 +61,7 @@ Hay varias formas de aplicar una etiqueta al contenido.
 
 Al ver un documento en un conjunto de revisiones, puede mostrar las etiquetas que puede usar una revisión haciendo clic en **Panel de codificación**.
 
-![Haga clic en el panel de etiquetas para mostrar el panel de etiquetas](media/Singledoctag.png)
+![Haga clic en el panel de etiquetas para mostrar el panel de etiquetas](../media/Singledoctag.png)
 
 Esto le permitirá aplicar etiquetas al documento que se muestra en el visor.
 
@@ -69,7 +69,7 @@ Esto le permitirá aplicar etiquetas al documento que se muestra en el visor.
 
 La etiquetación en masa se puede realizar seleccionando varios archivos en la cuadrícula de resultados y, a continuación, usando las etiquetas en el **Panel de codificación** , de forma similar a la etiqueta de un único documento. Para realizar un etiquetado masivo, puede seleccionar las etiquetas dos veces; el primer clic aplicará la etiqueta y la segunda se asegurará de que la etiqueta se borre para todos los archivos seleccionados.
 
-![Una captura de pantalla de una descripción de teléfono móvil generada automáticamente](media/Bulktag.png)
+![Una captura de pantalla de una descripción de teléfono móvil generada automáticamente](../media/Bulktag.png)
 
 > [!NOTE]
 > Cuando se realiza un etiquetado masivo, el panel etiquetado muestra un recuento de archivos que se etiquetan para cada etiqueta del panel.
@@ -88,4 +88,4 @@ Por ejemplo, aquí se muestra cómo mostrar el **Panel de codificación** al usa
 
 3. Para etiquetar todos los documentos, seleccione todos los documentos en el panel de la **familia de documentos** , haga clic en **documentos de código**y, a continuación, elija las etiquetas que se aplicarán a toda la familia de documentos.
 
-![Captura de pantalla de una descripción de post de medio social generada automáticamente](media/Relatedtag.png)
+![Captura de pantalla de una descripción de post de medio social generada automáticamente](../media/Relatedtag.png)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede usar la herramienta de búsqueda de registros de auditoría de Office 365 para ayudarle a solucionar problemas comunes como la investigación de una cuenta en peligro, para averiguar quién ha configurado el reenvío de correo para un buzón o determinar por qué un usuario externo inició sesión correctamente en su organización.
-ms.openlocfilehash: b453cccb0486ab923de720edb5a6a877395b9b7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595977"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079197"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría de 365 de Office para investigar problemas de compatibilidad comunes
 
@@ -47,9 +47,9 @@ En esta sección se describen los conceptos básicos para crear y ejecutar búsq
 
 1. Vaya a [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e inicie sesión con su cuenta profesional o educativa.
     
-    La página del**registro de auditoría de búsqueda**será mostrada. 
+    La página de **Búsqueda de registros de auditoría** se mostrará. 
     
-    ![Configure los criterios y, a continuación, seleccione Buscar para ejecutar la búsqueda](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configure los criterios y, a continuación, seleccione Buscar para ejecutar la búsqueda](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
 4. Puede configurar los siguientes criterios de búsqueda. Cada escenario de solución de problemas de este artículo recomienda una guía específica para configurar estos campos.
     
@@ -106,11 +106,11 @@ Esta es la manera de configurar una consulta de búsqueda de registros de audito
 
 Después de ejecutar la búsqueda, seleccione **filtrar resultados** en la página de resultados de búsqueda. En el cuadro en encabezado de columna **actividad** , escriba **set-Mailbox** para que solo se muestren los registros de auditoría relacionados con el cmdlet **set-Mailbox** .
 
-![Filtrado de los resultados de una búsqueda de registros de auditoría](media/emailforwarding1.png)
+![Filtrado de los resultados de una búsqueda de registros de auditoría](../media/emailforwarding1.png)
 
 En este punto, tiene que mirar los detalles de cada registro de auditoría para determinar si la actividad está relacionada con el reenvío de correo electrónico. Seleccione el registro de auditoría para mostrar la página flotante de **detalles** y, a continuación, seleccione **más información**. La siguiente captura de pantalla y las descripciones resaltan la información que indica el reenvío de correo electrónico que se estableció en el buzón.
 
-![Información detallada del registro de auditoría](media/emailforwarding2.png)
+![Información detallada del registro de auditoría](../media/emailforwarding2.png)
 
 a. En el campo **objectId** , se muestra el alias del buzón de correo en el que se ha configurado el reenvío de correo electrónico. Este buzón también se muestra en la columna de **elementos** de la página de resultados de búsqueda.
 
@@ -152,11 +152,11 @@ Después de ejecutar la búsqueda, puede filtrar los resultados de la búsqueda 
 
 **Ejemplo de campo AffectedItems para un elemento eliminado temporalmente**
 
-![Registro de auditoría para elemento eliminado temporalmente](media/softdeleteditem.png)
+![Registro de auditoría para elemento eliminado temporalmente](../media/softdeleteditem.png)
 
 **Ejemplo de campo AffectedItems para un elemento eliminado permanentemente**
 
-![Registro de auditoría para elemento de correo electrónico eliminado permanentemente](media/harddeleteditem.png)
+![Registro de auditoría para elemento de correo electrónico eliminado permanentemente](../media/harddeleteditem.png)
 
 ### <a name="recover-deleted-email-items"></a>Recuperar elementos de correo electrónico eliminados
 
@@ -186,7 +186,7 @@ Esta es la manera de configurar una consulta de búsqueda de registros de audito
 
 Después de ejecutar la búsqueda, se muestran todos los registros de auditoría de esta actividad en los resultados de la búsqueda. Seleccione un registro de auditoría para mostrar la página flotante de **detalles** y, a continuación, seleccione **más información**. La información sobre la configuración de las reglas de la bandeja de entrada se muestra en el campo **parámetros** . La siguiente captura de pantalla y descripciones resaltan la información sobre las reglas de la bandeja de entrada
 
-![Registro de auditoría para nueva regla de bandeja de entrada](media/NewInboxRuleRecord.png)
+![Registro de auditoría para nueva regla de bandeja de entrada](../media/NewInboxRuleRecord.png)
 
 a. En el campo **objectId** , se muestra el nombre completo de la regla de bandeja de entrada. Este nombre incluye el alias del buzón de correo del usuario (por ejemplo, Sara) y el nombre de la regla de bandeja de entrada (por ejemplo, "mover mensajes desde el administrador").
 
@@ -207,7 +207,7 @@ Este comportamiento es intencionado. Azure Active Directory (Azure AD), el servi
 
 Este es un ejemplo y descripciones de propiedades relevantes en un registro de auditoría para un **usuario registrado en** un evento que es el resultado de la autenticación de paso a través. Seleccione el registro de auditoría para mostrar la página flotante de **detalles** y, a continuación, seleccione **más información**.
 
-![Ejemplo de registro de auditoría para la autenticación de paso a través correcta](media/PassThroughAuth1.png)
+![Ejemplo de registro de auditoría para la autenticación de paso a través correcta](../media/PassThroughAuth1.png)
 
    a. Este campo indica que el usuario que intentó tener acceso a un recurso de la organización no se encontró en el Azure AD de la organización.
 
@@ -232,7 +232,7 @@ A continuación se muestran dos escenarios de ejemplo que darían como resultado
 
 - Busque en el registro de auditoría actividades realizadas por el usuario externo identificado en el registro **de auditoría registrado del usuario** . Escriba el UPN del usuario externo en el cuadro **usuarios** y use un intervalo de fechas si es relevante para su escenario. Por ejemplo, puede crear una búsqueda con los siguientes criterios de búsqueda:
 
-   ![Buscar todas las actividades realizadas por el usuario externo](media/PassThroughAuth2.png)
+   ![Buscar todas las actividades realizadas por el usuario externo](../media/PassThroughAuth2.png)
 
     Además de las actividades **de inicio de sesión del usuario** , se pueden devolver otros registros de auditoría, tales que indican que un usuario de la organización compartió recursos con el usuario externo y si el usuario externo obtuvo acceso, modificó o descargó un documento compartido con ellos.
 

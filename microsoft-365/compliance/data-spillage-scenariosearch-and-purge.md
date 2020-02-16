@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use las herramientas de búsqueda y la exhibición de documentos electrónicos de Office 365 para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 3efeb183ca0629ea642eb21f14e31401d8618eea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c143095ecd26d2a9c8f2271b9d28f75b1c71502c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595407"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076345"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie de soluciones de eDiscovery: escenario de derrame de datos: búsqueda y depuración
 
@@ -37,7 +37,7 @@ Este documento proporciona una lista de instrucciones sobre cómo quitar de form
 
 A continuación se describe cómo administrar un incidente de derrame de datos:
 
-![El flujo de trabajo de 8 pasos para administrar los incidentes de derrame de datos](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![El flujo de trabajo de 8 pasos para administrar los incidentes de derrame de datos](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [Opcional Paso 1: administrar quién puede tener acceso al caso y establecer los límites de cumplimiento](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [Paso 2: crear un caso de exhibición de documentos electrónicos](#step-2-create-an-ediscovery-case)<br/>
@@ -100,7 +100,7 @@ Afer ha comprobado los resultados de la búsqueda, es posible que desee comparti
  
       Se muestra la página exportar informe.
 
-    ![Seleccione la búsqueda y, a continuación, haga clic en más > exportar informe en la página de flotante](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![Seleccione la búsqueda y, a continuación, haga clic en más > exportar informe en la página de flotante](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. Seleccione **todos los elementos, incluidos los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos** y, a continuación, haga clic en **generar informe**.
 
@@ -108,7 +108,7 @@ Afer ha comprobado los resultados de la búsqueda, es posible que desee comparti
 
 5. Haga clic en el trabajo de exportación y, a continuación, haga clic en **Descargar** informe en la página de control flotante.
  
-    ![En la página exportar, haga clic en exportar y, a continuación, en "descargar informe"](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![En la página exportar, haga clic en exportar y, a continuación, en "descargar informe"](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 El informe de **Resumen de exportación** contiene el número de ubicaciones que se han encontrado con los resultados y el tamaño de los resultados de la búsqueda. Puede usarlo para comparar con el informe generado tras la eliminación y proporcionar como prueba de eliminación. El informe de **resultados** contiene un resumen más detallado de los resultados de la búsqueda, incluidos el asunto, el remitente, los destinatarios, si el correo electrónico se leyó, fechas y tamaño de cada mensaje. Si alguno de los detalles de este informe contiene los datos reales derramados, asegúrese de eliminar permanentemente el archivo Results. csv cuando se complete la investigación.
 
@@ -142,7 +142,7 @@ Hay dos formas de recopilar una lista de direcciones de correo electrónico de b
     
 4. En la lista desplegable **tipo** , haga clic en **ubicaciones superiores**.
     
-    ![Obtener una lista de buzones de correo que contienen resultados de búsqueda en la página ubicaciones superiores en las estadísticas de búsqueda](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![Obtener una lista de buzones de correo que contienen resultados de búsqueda en la página ubicaciones superiores en las estadísticas de búsqueda](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     Se muestra una lista de buzones de correo que contienen los resultados de la búsqueda. También se muestra el número de elementos de cada buzón de correo que coinciden con la consulta de búsqueda.
     
@@ -190,7 +190,7 @@ Si las palabras clave de la consulta de búsqueda que ha creado y usado en el pa
     
 2. En la página flotante, haga clic en **eliminar**.
 
-    ![Seleccione la búsqueda y, a continuación, haga clic en eliminar en la página de control flotante.](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![Seleccione la búsqueda y, a continuación, haga clic en eliminar en la página de control flotante.](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación del derrame de datos
 

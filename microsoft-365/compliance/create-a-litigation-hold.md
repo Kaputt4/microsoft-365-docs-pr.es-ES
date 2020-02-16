@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: dbcddd57fcf2d1471b4a4aa4b715dcae22dbc40c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d465e2a28b47abc5020480a4a862cbbca1d5e678
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596197"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077737"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
@@ -86,7 +86,7 @@ Cuando un buzón se coloca en una retención por juicio, los elementos de la sub
 
 En la ilustración siguiente se muestran las subcarpetas en las carpetas Elementos recuperables y el proceso de flujo de trabajo de retención.
 
-![Ciclo de vida de retención por juicio](media/LitigationHoldLifeCycle.png)
+![Ciclo de vida de retención por juicio](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > Si una retención asociada con un caso de exhibición de documentos electrónicos se coloca en un buzón, los elementos purgados se mueven de la subcarpeta eliminaciones a la subcarpeta retenciones y se conservan hasta que el buzón se libere de la suspensión de exhibición de documentos electrónicos.

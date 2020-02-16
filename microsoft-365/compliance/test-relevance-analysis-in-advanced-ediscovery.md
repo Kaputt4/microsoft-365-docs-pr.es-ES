@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: 'Obtenga información sobre cómo usar la pestaña prueba tras el cálculo por lotes en Office 365 Advanced eDiscovery para probar, comparar y validar la calidad general de procesamiento.  '
-ms.openlocfilehash: 0931e0ea6aabfb9fbeca04973f17395d4f245f41
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e07d02a0eff1e07cacbce5debd27d4057fe40db2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597377"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080947"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Análisis de relevancia de pruebas en Office 365 Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Esta prueba proporciona estadísticas y una comparación entre el conjunto de re
     
 2. En la pestaña **prueba** , haga clic en **nueva prueba**. Se muestra el cuadro de diálogo **crear prueba** , tal como se muestra en el siguiente ejemplo. 
     
-    ![Resultados de Probar el resto de relevancia](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![Resultados de Probar el resto de relevancia](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
 3. En **nombre**de la prueba y **Descripción**, escriba el nombre y la descripción.
     
@@ -66,7 +66,7 @@ Esta prueba proporciona estadísticas y una comparación entre el conjunto de re
     
 11. En la pestaña prueba, puede hacer clic en **ver resultados** para ver los resultados de la prueba. En la siguiente figura se muestra un ejemplo. 
     
-    ![Resultados de Probar el resto](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
+    ![Resultados de Probar el resto](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
 En la figura anterior, la sección **parámetros de ejemplo** de la tabla contiene detalles sobre el número de archivos del ejemplo etiquetado por el experto y el número de archivos relevantes que se encuentran en ese ejemplo. 
   
