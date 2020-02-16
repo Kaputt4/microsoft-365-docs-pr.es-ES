@@ -11,12 +11,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, transición suscripción de CSP
 ms.date: 11/01/2017
-ms.openlocfilehash: 4aadfa24bec8728c7e011ac6da48a8e30516e145
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d8e04a0136f86d3c4bb51208081fd1dcbecf59d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595053"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057346"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transición a una suscripción de CSP de Microsoft 365 Empresa
 
@@ -29,33 +29,33 @@ Si tienes una suscripción de CSP de versión preliminar de Microsoft 365 sigue 
 
     Se mostrarán las suscripciones de la compañía.
 
-    ![Suscripciones de cliente en el Centro de partners](images/pc_customer_subscriptions_1.png)
+    ![Suscripciones de cliente en el Centro de partners](../../media/pc_customer_subscriptions_1.png)
     
 3. En la página **suscripciones** de la compañía, seleccione **Agregar suscripción**.
 4. En la página **nueva suscripción** , seleccione **pequeña empresa** y, a continuación, seleccione **Microsoft 365 empresa** de la lista.
 5. Añade el número de licencias y, a continuación, selecciona **Siguiente: Revisión** para revisar la suscripción y, a continuación, selecciona **Enviar**.
 
-    ![Revisar la nueva suscripción a Microsoft 365 Empresa](images/pc_customer_reviewnewsubscription.png)
+    ![Revisar la nueva suscripción a Microsoft 365 Empresa](../../media/pc_customer_reviewnewsubscription.png)
 
     Las **suscripciones basadas en licencia** mostrará **Versión preliminar de Microsoft 365 Empresa** y **Microsoft 365 Empresa**. Suspenderá la suscripción a la vista previa a continuación.
 
 6. Selecciona **Versión preliminar de Microsoft 365 Empresa**.
 7. En la página **Microsoft 365 Business Preview** , seleccione **Suspended** para suspender la suscripción de vista previa.
 
-    ![Suspender la suscripción a la versión preliminar de Microsoft 365 Empresa](images/pc_customer_m365bpreview_suspend.png)
+    ![Suspender la suscripción a la versión preliminar de Microsoft 365 Empresa](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Selecciona **Enviar** para confirmar.
 
     En la página **suscripciones** , confirme que el estado **Microsoft 365 Business Preview** muestra **suspendido**.
 
-    ![Confirmar el estado suspendido de la suscripción de la vista preliminar](images/pc_customer_m365bpreview_suspend_confirm.png)
+    ![Confirmar el estado suspendido de la suscripción de la vista preliminar](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Opcionalmente, también puedes validar el contrato de licencia. Para ello, sigue estos pasos:
     1. Selecciona **Usuarios y licencias** desde la página **Suscripciones** de la compañía.
     2. En la página **usuarios y licencias** , seleccione un usuario.
     3. En la página del usuario, active la sección **asignar licencias** y confirme que muestra **Microsoft 365 empresa**.
 
-        ![Confirmar que al usuario se le asigna la licencia de Microsoft 365 Empresa](images/pc_customer_userslicenses_m365b_validate.png)
+        ![Confirmar que al usuario se le asigna la licencia de Microsoft 365 Empresa](../../media/pc_customer_userslicenses_m365b_validate.png)
 
 ## <a name="impact-to-customers-and-users-during-and-after-transition"></a>Impacto en clientes y usuarios durante y después de la transición
 
