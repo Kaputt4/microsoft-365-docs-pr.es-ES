@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f0f436e2b4e9a26f10ec134718796624c9496e81
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f7b3f2fcaac71eefa2579a0c3fd66666fe00f605
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600157"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087709"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Supervisión y generación de informes de aplicaciones en el centro de seguridad de Microsoft 365
 
@@ -29,7 +29,7 @@ Estos informes proporcionan más información sobre cómo se usan las aplicacion
 
 La **protección de correo electrónico** muestra las cuentas de correo electrónico en riesgo. Puede hacer clic en una cuenta para investigar más en el centro de seguridad de Microsoft defender.
 
-![Tarjeta de protección de correo electrónico](../images/email-protection.png)
+![Tarjeta de protección de correo electrónico](../../media/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>Supervisar los permisos de aplicación concedidos por los usuarios
 
@@ -37,25 +37,25 @@ La **protección de correo electrónico** muestra las cuentas de correo electró
 
 Los factores de riesgo comienzan desde información general, como el editor de la aplicación, hasta medidas de seguridad y controles, por ejemplo, si la aplicación admite el cifrado en reposo o proporciona un registro de auditoría de la actividad de los usuarios.
 
-![Tarjeta de aplicaciones de OAuth para Cloud App Security](../images/cloud-app-security-oauth-apps.png)
+![Tarjeta de aplicaciones de OAuth para Cloud App Security](../../media/cloud-app-security-oauth-apps.png)
 
 ## <a name="monitor-cloud-app-user-accounts"></a>Supervisar las cuentas de usuario de aplicación de nube
 
 **Cuentas de aplicación de nube para revisión** enumera las cuentas que pueden requerir atención.
 
-![Cuentas de aplicación de nube para la tarjeta de revisión](../images/cloud-app-accounts-for-review.png)
+![Cuentas de aplicación de nube para la tarjeta de revisión](../../media/cloud-app-accounts-for-review.png)
 
 ## <a name="understand-which-cloud-apps-are-used"></a>Comprender qué aplicaciones en la nube se usan
 
 Las **aplicaciones en la nube detectadas (categorías)** muestran qué tipos de aplicaciones se usan en la organización y vínculos al panel de detección en la nube en Cloud App Security. Para obtener más información, consulte [Inicio rápido: trabajar con aplicaciones detectadas](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
 
-![Tarjeta de categorías de aplicaciones en la nube detectadas](../images/discovered-cloud-apps-categories.png)
+![Tarjeta de categorías de aplicaciones en la nube detectadas](../../media/discovered-cloud-apps-categories.png)
 
 ## <a name="monitor-where-users-access-cloud-apps"></a>Supervisar dónde acceden los usuarios a las aplicaciones en la nube
 
 Las **ubicaciones de actividad de aplicación de nube** muestran dónde los usuarios están accediendo a las aplicaciones en la nube.
 
-![Tarjeta de ubicaciones de actividad de aplicación en la nube](../images/cloud-app-activity-locations.png)
+![Tarjeta de ubicaciones de actividad de aplicación en la nube](../../media/cloud-app-activity-locations.png)
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Supervisión del estado de las cargas de trabajo de la infraestructura
 
@@ -65,4 +65,4 @@ El centro de seguridad de Azure proporciona administración de seguridad unifica
 
 Para obtener más información, vea la [documentación del centro de seguridad de Azure](https://docs.microsoft.com/azure/security-center/).
 
-![Tarjeta de mantenimiento de la infraestructura](../images/infrastructure-health.png)
+![Tarjeta de mantenimiento de la infraestructura](../../media/infrastructure-health.png)

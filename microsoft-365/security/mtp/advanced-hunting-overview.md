@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7e96ca06a7b77a6bdc0cf4af55d519aebda833cd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f268c87da68c2badbfa885f0d9357a6a53d0a039
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600387"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087508"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft
 
@@ -61,14 +61,14 @@ Haga clic con el botón derecho en un valor en el conjunto de resultados para me
 - Excluir el valor seleccionado de la consulta (`!=`)
 - Obtenga más operadores avanzados para agregar el valor a la consulta, como `contains`, `starts with` y `ends with` 
 
-![Imagen del conjunto de resultados de la búsqueda avanzado ATP de Microsoft Defender](../images/advanced-hunting-results-filter.png)
+![Imagen del conjunto de resultados de la búsqueda avanzado ATP de Microsoft Defender](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtrar los resultados de la consulta
 Los filtros que aparecen a la derecha proporcionan un resumen del conjunto de resultados. Cada columna tiene una sección en la que se muestra una lista de los valores de la columna y el número de instancias.
 
 Para refinar la consulta, seleccione los botones "+" o "-" que aparecen en los valores que desea incluir o excluir y, a continuación, seleccione **ejecutar consulta**.
 
-![Imagen del filtro de búsqueda avanzada](../images/advanced-hunting-filter.png)
+![Imagen del filtro de búsqueda avanzada](../../media/advanced-hunting-filter.png)
 
 Cuando aplica el filtro para modificar la consulta y, a continuación, ejecuta la consulta, los resultados se actualizan en consecuencia.
 

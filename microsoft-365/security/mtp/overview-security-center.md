@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9d701091cd6c93c78674a3676a9880a8b9296a54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7be52ae276fa00b8bad6f03b27c88ebba0f02880
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600487"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086609"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general sobre el centro de seguridad de Microsoft 365
 
@@ -54,7 +54,7 @@ El centro de seguridad 365 de Microsoft incluye:
 * **Directivas** : Configure las directivas para administrar dispositivos, Protéjase contra amenazas y reciba alertas sobre diversas actividades de su organización.
 * **Permisos** : administre quién en su organización tiene acceso al centro de seguridad 365 de Microsoft para ver contenido y realizar tareas. También puede asignar permisos de Microsoft 365 en el portal de Azure AD.
 
-## <a name="learn-more"></a>Más información 
+## <a name="learn-more"></a>Obtén más información 
 
 Explore estos temas sobre cómo supervisar, revisar y responder a sus necesidades de seguridad:
 - Conectar los puntos de las alertas a través de [incidentes](incident-queue.md)

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 26e227b4b1e8047ca962ca9e65b139bacae55e03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599997"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086955"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Administrar tickets a través de ServiceNow
 
@@ -61,7 +61,7 @@ Cuando se crea un vale de ServiceNow a partir del centro de seguridad 365 de Mic
 
 Vaya a la página de inicio del centro de seguridad 365 de Microsoft para ver la tarjeta de conexión de ServiceNow.
 
-![¿Usa ServiceNow?](../images/do-you-use-servicenow-250.png)
+![¿Usa ServiceNow?](../../media/do-you-use-servicenow-250.png)
 
 Seleccione "conectarse a ServiceNow" para ir a la página de configuración de ServiceNow. Siga las instrucciones para autorizar la aplicación conector de 365 de Microsoft.
 
@@ -74,7 +74,7 @@ Una vez que haya seguido las instrucciones y la autorización de la conexión, v
 
 Una vez que la integración esté configurada, cree tareas de ServiceNow basadas en acciones específicas para la mejora de la calificación segura de Microsoft. Vaya a cualquier acción de mejora en puntuación segura en el portal del centro de seguridad 365 de Microsoft y seleccione el icono "compartir". Una de las opciones de lista desplegable es ServiceNow.
 
-![Uso compartido de ServiceNow en calificación segura](../images/servicenow-share.png)
+![Uso compartido de ServiceNow en calificación segura](../../media/servicenow-share.png)
 
 Se genera una tarea en la que puede establecer la prioridad y editar el nombre, la descripción o la fecha de vencimiento. Una vez que se hayan rellenado todos los campos obligatorios, envíe la tarea a ServiceNow.
 
@@ -84,7 +84,7 @@ La tarea es visible en ServiceNow como una solicitud de cambio de configuración
 
 Una vez que se han creado los vales de administración de cambios y la administración de cambios de ServiceNow, se muestran en las tarjetas de la página de inicio del centro de seguridad de Microsoft 365. Desde estas tarjetas, puede crear un vale, ver todos los vales o administrar la configuración de ServiceNow.
 
-![Vales de administración de cambios de ServiceNow](../images/change-management-375.png)  ![Vales de administración de incidentes de ServiceNow](../images/incident-management-375.png)
+![Vales de administración de cambios de ServiceNow](../../media/change-management-375.png)  ![Vales de administración de incidentes de ServiceNow](../../media/incident-management-375.png)
 
 Para volver a aprovisionar o administrar la integración de ServiceNow en el centro de seguridad de Microsoft 365, seleccione **administrar la configuración de servicenow** en una de las tarjetas. Desde allí, elimine la conexión de ServiceNow actual y personalice los nombres de los Estados de las incidencias.
 

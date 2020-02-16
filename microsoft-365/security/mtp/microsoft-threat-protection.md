@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 031fc4164307d9fa8c78f02c775b230f7eff5383
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c165ec5869f8f53c28fb28414a04d73033a5772
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600187"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087633"
 ---
 # <a name="microsoft-threat-protection"></a>Protección contra amenazas de Microsoft
 
@@ -48,13 +48,13 @@ La única capa de productos cruzados de Microsoft Threat Protection aumenta los 
 - Automatizar la respuesta a la intromisión mediante la activación de la autorreparación para los activos afectados mediante la corrección automatizada.
 - Permitir que los equipos de seguridad realicen una búsqueda de amenazas detallada y eficaz en los datos de la oficina y el punto de conexión
 
-![Imagen de la página información general sobre incidentes](../images/overview-incident.png) <br>
+![Imagen de la página información general sobre incidentes](../../media/overview-incident.png) <br>
 Incidente entre productos (Introducción)
 
-![Imagen de la cola de alertas](../images/incident-list.png)<br>
+![Imagen de la cola de alertas](../../media/incident-list.png)<br>
 Todas las alertas relacionadas en los productos de la Suite están relacionadas entre sí en un solo incidente (vista de alertas)
 
-![Imagen de la cola de incidentes](../images/advanced-hunting.png)<br>
+![Imagen de la cola de incidentes](../../media/advanced-hunting.png)<br>
 Búsqueda basada en consultas sobre los datos de correo electrónico sin procesar de los extremos
 
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: af061b50e92d2b7f00be3fab217a60855f0669c4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b12bf7b4bbda79a8699e01f31c97d0cfde330b5c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600237"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087409"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>Investigar incidentes en la Protección contra amenazas de Microsoft
 
@@ -42,7 +42,7 @@ Investigue las alertas que afectan a la red, entienda lo que significa y interca
 
 1. Seleccione un incidente en la cola incidentes. <BR> Se abrirá un panel lateral y se mostrará una vista previa de información importante, como el estado, la gravedad, las categorías y las entidades afectadas.
 
-    ![Imagen del panel lateral del incidente](../images/incident-side-panel.png)
+    ![Imagen del panel lateral del incidente](../../media/incident-side-panel.png)
 
 2. Seleccione **abrir página de incidente**. <BR> Se abrirá la página de incidente, donde encontrará información más detallada sobre incidentes, comentarios y acciones, pestañas (información general, alertas, dispositivos, usuarios, investigaciones, evidencia).
 
@@ -52,7 +52,7 @@ Investigue las alertas que afectan a la red, entienda lo que significa y interca
 En la página de información general encontrará un resumen de las instantáneas en las principales cosas que debe tener en cuenta al incidente.
 
 
-![Imagen de la página información general de incidentes](../images/incidents-overview.png)
+![Imagen de la página información general de incidentes](../../media/incidents-overview.png)
 
 
 Las categorías de ataque proporcionan una visión visual y numérica de cómo ha progresado el ataque en la cadena de eliminación. Al igual que otros productos de seguridad de Microsoft, la Protección contra amenazas de Microsoft se alinea con el marco de trabajo [MITRE ATT & CK&trade;](https://attack.mitre.org/). 
@@ -69,7 +69,7 @@ Esta descripción general puede ayudar en la clasificación inicial del incident
 ## <a name="alerts"></a>Alertas 
 Puede ver todas las alertas relacionadas con el incidente y otra información relacionada con la gravedad, las entidades involucradas en la alerta, la fuente de las alertas (Azure ATP, ATP de Microsoft Defender, ATP de Office 365) y el motivo por el que fueron vinculadas entre sí. 
 
-![Imagen de la página de alertas de incidente](../images/incident-alerts.png)
+![Imagen de la página de alertas de incidente](../../media/incident-alerts.png)
 
 De forma predeterminada, los avisos se ordenan cronológicamente, para que pueda ver en primer lugar cómo se ha producido el ataque a lo largo del tiempo. Al hacer clic en cada alerta, accederá a la página de alertas correspondiente, donde puede realizar una investigación detallada de dicha alerta. 
 
@@ -78,7 +78,7 @@ En la pestaña dispositivos se muestran todos los dispositivos en los que se ven
 
 Al hacer clic en el nombre del equipo en el que se realizó el ataque, es dirigido a la página de su equipo, donde puede ver las alertas que se activaron y los eventos relacionados que se proporcionan para facilitar la investigación. 
 
-![Imagen de la pestaña equipos de un incidente](../images/incident-machines.png)
+![Imagen de la pestaña equipos de un incidente](../../media/incident-machines.png)
 
 Seleccionar la pestaña escala de tiempo permite desplazarse por la escala de tiempo de la máquina y ver todos los eventos y comportamientos que se observan en el equipo en orden cronológico, intercalados con las alertas iniciadas. 
 
@@ -89,18 +89,18 @@ Vea los usuarios que se han identificado como parte de un incidente determinado 
 Al hacer clic en el nombre de usuario, se accede a la página de seguridad de la aplicación en la nube del usuario, donde se pueden realizar más investigaciones.
 
 
-![Imagen de la pestaña usuarios de un incidente](../images/incident-users.png)
+![Imagen de la pestaña usuarios de un incidente](../../media/incident-users.png)
 
 ## <a name="mailboxes"></a>Buzones
 Investigue los buzones que se han identificado como parte de un incidente o relacionados con él. Para realizar más trabajos de investigación, al seleccionar la alerta relacionada con el correo, se abrirá la Protección contra amenazas avanzada de Office 365, donde puede realizar acciones correctivas.
 
 
-![Imagen de la pestaña buzón de un incidente](../images/incident-mailboxes.png)
+![Imagen de la pestaña buzón de un incidente](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>Investigaciones
 Seleccione **investigaciones** para ver toda la investigación automatizada activada por alertas en este incidente. Las investigaciones realizarán acciones de corrección o esperarán la aprobación de los analistas en función de cómo haya configurado las investigaciones automatizadas para que se ejecuten en la Protección contra amenazas avanzada de Office 365 y ATP de Microsoft.
 
-![Imagen de la pestaña investigaciones de un incidente](../images/incident-investigations.png)
+![Imagen de la pestaña investigaciones de un incidente](../../media/incident-investigations.png)
 
 
 Seleccione una investigación para ir a la página de detalles de la investigación para obtener toda la información sobre la investigación y el estado de corrección. Si hay acciones pendientes de aprobación como parte de la investigación, aparecerán en la pestaña acciones pendientes. Tome medidas como parte de la corrección de incidentes.
@@ -109,7 +109,7 @@ Seleccione una investigación para ir a la página de detalles de la investigaci
 ## <a name="evidence"></a>Evidencia
 La Protección contra amenazas de Microsoft investiga automáticamente todos los eventos admitidos por los incidentes y entidades sospechosas en las alertas, brindándole respuestas automáticas e información sobre los archivos, procesos, servicios, correos electrónicos importantes y más. Esto permite detectar y bloquear rápidamente posibles amenazas en el incidente. 
 
-![Imagen de la pestaña evidencia de un incidente](../images/incident-evidence.png)
+![Imagen de la pestaña evidencia de un incidente](../../media/incident-evidence.png)
 
 Cada una de las entidades analizadas se marcará con un veredicto (malintencionada, sospechosa, limpia), así como un estado de corrección. Esto le ayuda a comprender el estado de corrección de todo el incidente y cuáles son los siguientes pasos a seguir para solucionarlo.
 
