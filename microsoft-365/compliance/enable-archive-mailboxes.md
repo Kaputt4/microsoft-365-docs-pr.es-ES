@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Usar el Centro de seguridad y cumplimiento en Office 365 para permitir que los buzones de archivo sean compatibles con los requisitos de retención de mensajes, eDiscovery y conservación de mensajes de su organización.
-ms.openlocfilehash: dfbbb3fa238f7b04fab6742f3eb0c041f39c72d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 36a5f2003232d55fd82965773b38a26c4fa29b33
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593263"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074736"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar buzones de archivo en el Centro de seguridad y cumplimiento
   
@@ -49,7 +49,7 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
     
 4. En la lista de buzones de correo, seleccione el usuario para el que desea habilitar el buzón de correo.
     
-    ![Haga clic en Activar en el panel de detalles del usuario seleccionado para habilitar el buzón de archivo.](media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
+    ![Haga clic en Activar en el panel de detalles del usuario seleccionado para habilitar el buzón de archivo.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
   
 5. En el panel de detalles para el usuario seleccionado, haga clic en **Habilitar**. 
     
@@ -57,7 +57,7 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
     
 6. Haga clic en **Sí** para habilitar el buzón de archivo. 
     
-    Puede tardar unos momentos para crear el buzón de archivo. Una vez creado, aparece **Buzón de archivo: habilitado** en el panel de detalles del usuario seleccionado. Es posible que deba hacer clic en **Actualizar** ![Icono de actualizar](media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información en el panel de detalles. 
+    Puede tardar unos momentos para crear el buzón de archivo. Una vez creado, aparece **Buzón de archivo: habilitado** en el panel de detalles del usuario seleccionado. Es posible que deba hacer clic en **Actualizar** ![Icono de actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información en el panel de detalles. 
     
 > [!TIP]
 > También puede habilitar buzones de archivo de forma masiva seleccionando varios usuarios con los buzones de archivo deshabilitados (use las teclas Mayús o Ctrl). Después de seleccionar varios buzones, haga clic en **Habilitar** en el panel de detalles. 
@@ -86,7 +86,7 @@ Para deshabilitar un buzón de archivo:
     
 6. Haga clic en **Sí** para deshabilitar el buzón de archivo. 
     
-    El buzón de archivo puede tardar un poco en deshabilitarse. Una vez deshabilitado, aparece **Buzón de archivo: deshabilitado** en el panel de detalles del usuario seleccionado. Es posible que deba hacer clic en **Actualizar** ![Icono de actualizar](media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información en el panel de detalles. 
+    El buzón de archivo puede tardar un poco en deshabilitarse. Una vez deshabilitado, aparece **Buzón de archivo: deshabilitado** en el panel de detalles del usuario seleccionado. Es posible que deba hacer clic en **Actualizar** ![Icono de actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información en el panel de detalles. 
     
 > [!TIP]
 > También puede deshabilitar buzones de archivo de forma masiva seleccionando varios usuarios con los buzones de archivo habilitados (use las teclas Mayús o Ctrl). Después de seleccionar varios buzones, haga clic en **Deshabilitar** en el panel de detalles. 

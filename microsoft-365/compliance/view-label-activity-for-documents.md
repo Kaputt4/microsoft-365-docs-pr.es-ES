@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con el Explorador de actividad de etiquetas en el Centro de seguridad y cumplimiento de Office 365, puede buscar y visualizar rápidamente actividades de etiquetas de todo el contenido en SharePoint OneDrive para la Empresa en los últimos 30 días. Estos son datos en tiempo real que le ofrecen una vista clara de lo que ocurre en el espacio empresarial.
-ms.openlocfilehash: eebe1938195740565f064bbac20608255aa5ef73
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f1bb6f7a79759a9b2d36b5af334ced89e5b2b28a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597237"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068907"
 ---
 # <a name="view-label-activity-for-documents"></a>Ver la actividad de etiquetas de documentos
 
@@ -44,7 +44,7 @@ Encontrará el Explorador de actividad de etiquetas en el &amp;Centro de segurid
   
 Tenga en cuenta que, para usar el Explorador de actividad de etiquetas, se necesita una suscripción de Office 365 Enterprise E5.
   
-![Explorador de actividad de etiquetas](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+![Explorador de actividad de etiquetas](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## <a name="view-label-activities-for-files-or-folders"></a>Ver actividades de etiquetas de archivos o carpetas
 
@@ -52,7 +52,7 @@ En la parte superior del Explorador de actividad de etiquetas, puede ver las act
   
 Puede que quiera ver la actividad de etiquetas de las carpetas porque, si etiqueta una carpeta, todos los archivos dentro de esa carpeta también se etiquetarán (excepto los archivos donde se aplicó una etiqueta de forma explícita). Por lo tanto, etiquetar carpetas podría afectar a un número elevado de archivos. Para obtener más información, vea [Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
-![Menú desplegable donde se muestran actividades de etiquetas de archivos y carpetas](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
+![Menú desplegable donde se muestran actividades de etiquetas de archivos y carpetas](../media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   
 ### <a name="label-activities"></a>Actividades de etiquetas
 
@@ -62,12 +62,12 @@ Puede que quiera ver la actividad de etiquetas de las carpetas porque, si etique
 
  En **Cambios de etiquetas**, se incluyen las acciones que pueden ser arriesgadas, como **quitar** o **cambiar** una etiqueta. Puede usar esta vista para ver rápidamente esas acciones arriesgadas y el usuario que las realizó. En la lista de actividades debajo del gráfico, puede seleccionar un archivo y, después, en el panel de detalles de la parte derecha, hacer clic en un vínculo a ese archivo. 
   
-![Panel de detalles para actividad de etiquetas](media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
+![Panel de detalles para actividad de etiquetas](../media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
   
 ## <a name="filter-label-activity"></a>Filtrar actividad de etiquetas
 
 Puede filtrar rápidamente los datos para ver toda la actividad de etiquetas de una etiqueta, archivo o usuario específicos. También puede filtrar la actividad de etiquetas por ubicación (SharePoint o OneDrive para la Empresa), así como filtrar dependiendo de si la etiqueta se aplicó automáticamente o de forma manual.
   
-![Filtros para actividad de etiquetas](media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
+![Filtros para actividad de etiquetas](../media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
   
 

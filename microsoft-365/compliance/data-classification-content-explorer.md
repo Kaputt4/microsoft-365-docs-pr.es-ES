@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661915"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076437"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Usar el explorador de contenido de clasificación de datos (vista previa)
 
@@ -45,7 +45,7 @@ Las etiquetas de confidencialidad deben habilitarse para los archivos de SharePo
 
 Una [etiqueta de retención](labels.md) le permite definir durante cuánto tiempo se conserva un elemento con una etiqueta y los pasos que se deben seguir antes de eliminarlo. Se puede aplicar manualmente o automáticamente mediante directivas. Puede ayudar a su organización a mantener el cumplimiento normativo y los requerimientos legales.
 
-![Captura de pantalla contraída de Content Explorer](media/data-classification-content-explorer-1.png)
+![Captura de pantalla contraída de Content Explorer](../media/data-classification-content-explorer-1.png)
 
 ### <a name="permissions"></a>Permisos
 

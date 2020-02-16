@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: 8af23cac590eb226890979719f938b8e79099bb3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595477"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076784"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>Ver la actividad en el contenido de la etiqueta (vista previa)
 
 La descripción general de la clasificación de datos y las pestañas del explorador de contenido le ofrecen visibilidad sobre el contenido que se ha descubierto y etiquetado, y dónde está ese contenido. El explorador de actividad complementa este conjunto de funciones permitiéndole supervisar lo que se lleva a cabo con el contenido de la etiqueta. El explorador de actividad ofrece una vista histórica.
 
-![Marcador de posición captura de pantalla información general explorador de actividad](media/data-classification-activity-explorer-1.png)
+![Marcador de posición captura de pantalla información general explorador de actividad](../media/data-classification-activity-explorer-1.png)
 
 Puede filtrar los datos de la siguiente forma:
 
@@ -71,11 +71,11 @@ El valor de comprensión de las acciones que se toman con el contenido identific
 
 Una vez que haya establecido los filtros, puede:
 
-- Mantenga el mouse sobre un segmento del gráfico de barras para ver el número de elementos que se encuentran en la categoría ![el explorador de actividad desplace el puntero sobre](media/data-classification-activity-explorer-hover-over-2.png)
+- Mantenga el mouse sobre un segmento del gráfico de barras para ver el número de elementos que se encuentran en la categoría ![el explorador de actividad desplace el puntero sobre](../media/data-classification-activity-explorer-hover-over-2.png)
 - Exportar los datos
 - seleccionar un elemento determinado de la lista y ver los detalles de la acción en el menú desplegable
 
-![menú desplegable con los detalles del explorador de actividad](media/data-classification-activity-explorer-fly-out-3.png)
+![menú desplegable con los detalles del explorador de actividad](../media/data-classification-activity-explorer-fly-out-3.png)
 
 ## <a name="see-also"></a>Vea también
 - [Etiquetas de confidencialidad](sensitivity-labels.md)

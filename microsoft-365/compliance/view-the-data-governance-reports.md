@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con los informes de gobierno de datos del Centro de seguridad y cumplimiento de Office 365, puede ver rápidamente si las etiquetas se aplican en el contenido del modo previsto.
-ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597217"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068807"
 ---
 # <a name="view-the-data-governance-reports"></a>Ver los informes de gobierno de datos
 
@@ -38,10 +38,10 @@ En todos estos informes, se muestra el contenido etiquetado de Exchange, SharePo
   
 Encontrará estos informes en el Centro de seguridad&amp; y cumplimiento \> **Gobierno de datos** \> **Panel**.
   
-![Gráfico donde se muestran tendencias de etiquetas en los últimos 90 días](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
+![Gráfico donde se muestran tendencias de etiquetas en los últimos 90 días](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
 Puede filtrar los informes de gobierno de datos por fecha (hasta 90 días) y ubicación (Exchange, SharePoint y OneDrive para la Empresa). Los datos más recientes pueden tardar hasta 24 horas en aparecer en los informes.
   
-![Filtros para informes de gobierno de datos](media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
+![Filtros para informes de gobierno de datos](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
 
