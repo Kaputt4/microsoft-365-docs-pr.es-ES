@@ -11,27 +11,27 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de no entrega en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: dbae97d572a6330e40308fa2016437c9329f93cc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ea15237900abd3d73634a9aa744b59ef7bce5ee
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598867"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082699"
 ---
-# <a name="non-delivery-report"></a><span data-ttu-id="c89a6-103">Informe de no entrega</span><span class="sxs-lookup"><span data-stu-id="c89a6-103">Non-delivery report</span></span>
+# <a name="non-delivery-report"></a><span data-ttu-id="891ec-103">Informe de no entrega</span><span class="sxs-lookup"><span data-stu-id="891ec-103">Non-delivery report</span></span>
 
-<span data-ttu-id="c89a6-104">El **Informe de no entrega** muestra los códigos de error más encontrados en los informes de no entrega (también conocidos como NDR o mensajes de devolución) para los usuarios de su organización.</span><span class="sxs-lookup"><span data-stu-id="c89a6-104">The **Non-delivery report** shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization.</span></span> <span data-ttu-id="c89a6-105">Este informe tiene como objetivo mostrar los detalles de NDR, de modo que pueda solucionar problemas.</span><span class="sxs-lookup"><span data-stu-id="c89a6-105">This report is intended to show the details of NDRs, so you can troubleshoot problems.</span></span>
+<span data-ttu-id="891ec-104">El **Informe de no entrega** muestra los códigos de error más encontrados en los informes de no entrega (también conocidos como NDR o mensajes de devolución) para los usuarios de su organización.</span><span class="sxs-lookup"><span data-stu-id="891ec-104">The **Non-delivery report** shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization.</span></span> <span data-ttu-id="891ec-105">Este informe tiene como objetivo mostrar los detalles de NDR, de modo que pueda solucionar problemas.</span><span class="sxs-lookup"><span data-stu-id="891ec-105">This report is intended to show the details of NDRs, so you can troubleshoot problems.</span></span>
 
-![El informe de no entrega del panel de flujo de correo en el centro de seguridad & cumplimiento](../media/non-delivery-report-selected.png)
+![El informe de no entrega del panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/non-delivery-report-selected.png)
 
-<span data-ttu-id="c89a6-107">Puede mostrar información de todos los códigos NDR o de un código específico haciendo clic en **Mostrar datos de**.</span><span class="sxs-lookup"><span data-stu-id="c89a6-107">You can show information for all NDR codes or a specific code by clicking **Show data for**.</span></span> <span data-ttu-id="c89a6-108">También puede hacer clic en **ver tabla de detalles** para ver una vista más detallada como se muestra en el siguiente diagrama:</span><span class="sxs-lookup"><span data-stu-id="c89a6-108">You can also click **View details table** to see a more detailed view as shown in the following diagram:</span></span>
+<span data-ttu-id="891ec-107">Puede mostrar información de todos los códigos NDR o de un código específico haciendo clic en **Mostrar datos de**.</span><span class="sxs-lookup"><span data-stu-id="891ec-107">You can show information for all NDR codes or a specific code by clicking **Show data for**.</span></span> <span data-ttu-id="891ec-108">También puede hacer clic en **ver tabla de detalles** para ver una vista más detallada como se muestra en el siguiente diagrama:</span><span class="sxs-lookup"><span data-stu-id="891ec-108">You can also click **View details table** to see a more detailed view as shown in the following diagram:</span></span>
 
-![Ver la tabla de detalles en el informe de no entrega](../media/non-delivery-report-view-details-table.png)
+![Ver la tabla de detalles en el informe de no entrega](../../media/non-delivery-report-view-details-table.png)
 
-<span data-ttu-id="c89a6-110">Cuando selecciona una fila en la tabla para ver los detalles del NDR específico, puede usar la información detallada para solucionar los problemas y realizar las acciones necesarias.</span><span class="sxs-lookup"><span data-stu-id="c89a6-110">When you select a row in the table to view the details of the specific NDR, you can use the detailed information to troubleshoot and take the necessary actions.</span></span>
+<span data-ttu-id="891ec-110">Cuando selecciona una fila en la tabla para ver los detalles del NDR específico, puede usar la información detallada para solucionar los problemas y realizar las acciones necesarias.</span><span class="sxs-lookup"><span data-stu-id="891ec-110">When you select a row in the table to view the details of the specific NDR, you can use the detailed information to troubleshoot and take the necessary actions.</span></span>
 
-![Seleccionar una fila en la tabla de detalles en el informe de no entrega](../media/non-delivery-report-details-table-select-row.png)
+![Seleccionar una fila en la tabla de detalles en el informe de no entrega](../../media/non-delivery-report-details-table-select-row.png)
 
-## <a name="see-also"></a><span data-ttu-id="c89a6-112">Vea también</span><span class="sxs-lookup"><span data-stu-id="c89a6-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="891ec-112">Vea también</span><span class="sxs-lookup"><span data-stu-id="891ec-112">See also</span></span>
 
-<span data-ttu-id="c89a6-113">Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="c89a6-113">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="891ec-113">Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="891ec-113">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

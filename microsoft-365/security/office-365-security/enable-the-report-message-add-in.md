@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 03/26/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,179 +16,185 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: 77fa9c2766ee1e2392ad9ea962a43f4779238209
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 94dbe7d9dcd5cf3dc8bd5874550880d813f879f5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599467"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086444"
 ---
-# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="787be-103">Habilitar el complemento de mensajes de informe</span><span class="sxs-lookup"><span data-stu-id="787be-103">Enable the Report Message add-in</span></span>
+# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="d4a7a-103">Habilitar el complemento de mensajes de informe</span><span class="sxs-lookup"><span data-stu-id="d4a7a-103">Enable the Report Message add-in</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="787be-104">El complemento de mensajes de informe para Outlook y Outlook en la web no es exactamente lo mismo que el [filtro de correo electrónico no deseado de Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), aunque ambos pueden usarse para marcar el correo electrónico como correo no deseado, no deseado o como un intento de suplantación de identidad.</span><span class="sxs-lookup"><span data-stu-id="787be-104">The Report Message add-in for Outlook and Outlook on the web is not exactly the same thing as the [Outlook Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), although both can be used to mark email as junk, not junk, or a phishing attempt.</span></span> <span data-ttu-id="787be-105">La diferencia es que el complemento de mensajes de informe para Outlook y Outlook en la web notifica a Microsoft sobre el correo electrónico no clasificado, mientras que el filtro de correo electrónico no deseado de Outlook se usa para organizar los mensajes de correo electrónico en el buzón de un usuario.</span><span class="sxs-lookup"><span data-stu-id="787be-105">The difference is, the Report Message add-in for Outlook and Outlook on the web notifies Microsoft about misclassified email, whereas the Outlook Junk Email Filter is used to organize email messages in a user's mailbox.</span></span>
+> <span data-ttu-id="d4a7a-104">El complemento de mensajes de informe para Outlook y Outlook en la web no es exactamente lo mismo que el [filtro de correo electrónico no deseado de Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), aunque ambos pueden usarse para marcar el correo electrónico como correo no deseado, no deseado o como un intento de suplantación de identidad.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-104">The Report Message add-in for Outlook and Outlook on the web is not exactly the same thing as the [Outlook Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), although both can be used to mark email as junk, not junk, or a phishing attempt.</span></span> <span data-ttu-id="d4a7a-105">La diferencia es que el complemento de mensajes de informe para Outlook y Outlook en la web notifica a Microsoft sobre el correo electrónico no clasificado, mientras que el filtro de correo electrónico no deseado de Outlook se usa para organizar los mensajes de correo electrónico en el buzón de un usuario.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-105">The difference is, the Report Message add-in for Outlook and Outlook on the web notifies Microsoft about misclassified email, whereas the Outlook Junk Email Filter is used to organize email messages in a user's mailbox.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="787be-106">Información general</span><span class="sxs-lookup"><span data-stu-id="787be-106">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="d4a7a-106">Información general</span><span class="sxs-lookup"><span data-stu-id="d4a7a-106">Overview</span></span>
 
-<span data-ttu-id="787be-107">El complemento de mensajes de informe para Outlook y Outlook en la web permite a los usuarios informar fácilmente de correo no clasificado, ya sea seguro o malintencionado, a Microsoft y a sus filiales para su análisis.</span><span class="sxs-lookup"><span data-stu-id="787be-107">The Report Message add-in for Outlook and Outlook on the web enables people to easily report misclassified email, whether safe or malicious, to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="787be-108">Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="787be-108">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="787be-109">Además, si su organización usa [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) o [plan 2](office-365-ti.md), el complemento de mensajes de informe proporciona al equipo de seguridad de su organización información útil que puede usar para revisar y actualizar las directivas de seguridad.</span><span class="sxs-lookup"><span data-stu-id="787be-109">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
+<span data-ttu-id="d4a7a-107">El complemento de mensajes de informe para Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) permite a los usuarios informar fácilmente de los correos electrónicos clasificados de forma segura, ya sean seguros o malintencionados, a Microsoft y sus filiales para el análisis.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-107">The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report misclassified email, whether safe or malicious, to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="d4a7a-108">Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-108">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="d4a7a-109">Además, si su organización usa [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) o [plan 2](office-365-ti.md), el complemento de mensajes de informe proporciona al equipo de seguridad de su organización información útil que puede usar para revisar y actualizar las directivas de seguridad.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-109">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
 
-<span data-ttu-id="787be-110">Por ejemplo, supongamos que las personas están notificando una gran cantidad de mensajes como suplantación de identidad.</span><span class="sxs-lookup"><span data-stu-id="787be-110">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="787be-111">Esta información se Surfaces en el [Panel de seguridad](security-dashboard.md) y otros informes.</span><span class="sxs-lookup"><span data-stu-id="787be-111">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="787be-112">El equipo de seguridad de su organización puede usar esta información como indicación de que es posible que sea necesario actualizar las directivas antiphishing.</span><span class="sxs-lookup"><span data-stu-id="787be-112">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="787be-113">O bien, si los usuarios notifican un gran número de mensajes que se marcaron como correo no deseado mediante el complemento de mensajes de informe, es posible que el equipo de seguridad de la organización deba ajustar [las directivas contra correo no deseado](configure-the-anti-spam-policies.md).</span><span class="sxs-lookup"><span data-stu-id="787be-113">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-the-anti-spam-policies.md).</span></span>
+<span data-ttu-id="d4a7a-110">Por ejemplo, supongamos que las personas están notificando una gran cantidad de mensajes como suplantación de identidad.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-110">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="d4a7a-111">Esta información se Surfaces en el [Panel de seguridad](security-dashboard.md) y otros informes.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-111">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="d4a7a-112">El equipo de seguridad de su organización puede usar esta información como indicación de que es posible que sea necesario actualizar las directivas antiphishing.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-112">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="d4a7a-113">O bien, si los usuarios notifican un gran número de mensajes que se marcaron como correo no deseado mediante el complemento de mensajes de informe, es posible que el equipo de seguridad de la organización deba ajustar [las directivas contra correo no deseado](configure-the-anti-spam-policies.md).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-113">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-the-anti-spam-policies.md).</span></span>
 
-<span data-ttu-id="787be-114">El complemento de mensajes de informe funciona con su suscripción a Office 365 y los productos siguientes:</span><span class="sxs-lookup"><span data-stu-id="787be-114">The Report Message add-in works with your Office 365 subscription and the following products:</span></span>
- - <span data-ttu-id="787be-115">Outlook en la Web</span><span class="sxs-lookup"><span data-stu-id="787be-115">Outlook on the web</span></span>
- - <span data-ttu-id="787be-116">Outlook 2013 SP1</span><span class="sxs-lookup"><span data-stu-id="787be-116">Outlook 2013 SP1</span></span>
- - <span data-ttu-id="787be-117">Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="787be-117">Outlook 2016</span></span>
- - <span data-ttu-id="787be-118">Outlook 2016 para Mac</span><span class="sxs-lookup"><span data-stu-id="787be-118">Outlook 2016 for Mac</span></span>
- - <span data-ttu-id="787be-119">Outlook incluido con Office 365 ProPlus</span><span class="sxs-lookup"><span data-stu-id="787be-119">Outlook included with Office 365 ProPlus</span></span>
+<span data-ttu-id="d4a7a-114">El complemento de mensajes de informe funciona con la mayoría de las suscripciones de Office 365 y los productos siguientes:</span><span class="sxs-lookup"><span data-stu-id="d4a7a-114">The Report Message add-in works with most Office 365 subscriptions and the following products:</span></span>
 
-<span data-ttu-id="787be-120">El explorador Web existente debería ser suficiente para que funcione el complemento de mensajes de informe; sin embargo, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe con otro explorador.</span><span class="sxs-lookup"><span data-stu-id="787be-120">Your existing web browser should suffice for the Report Message add-in to work; however, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
+ - <span data-ttu-id="d4a7a-115">Outlook en la Web</span><span class="sxs-lookup"><span data-stu-id="d4a7a-115">Outlook on the web</span></span>
+ - <span data-ttu-id="d4a7a-116">Outlook 2013 SP1</span><span class="sxs-lookup"><span data-stu-id="d4a7a-116">Outlook 2013 SP1</span></span>
+ - <span data-ttu-id="d4a7a-117">Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d4a7a-117">Outlook 2016</span></span>
+ - <span data-ttu-id="d4a7a-118">Outlook 2016 para Mac</span><span class="sxs-lookup"><span data-stu-id="d4a7a-118">Outlook 2016 for Mac</span></span>
+ - <span data-ttu-id="d4a7a-119">Outlook incluido con Office 365 ProPlus</span><span class="sxs-lookup"><span data-stu-id="d4a7a-119">Outlook included with Office 365 ProPlus</span></span>
 
-<span data-ttu-id="787be-121">Si es un usuario individual, puede [Habilitar el complemento de mensajes de informe para usted mismo](#get-the-report-message-add-in-for-yourself).</span><span class="sxs-lookup"><span data-stu-id="787be-121">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
+<span data-ttu-id="d4a7a-120">El complemento de mensajes de informe no está disponible actualmente para:</span><span class="sxs-lookup"><span data-stu-id="d4a7a-120">The Report Message add-in is currently not available for:</span></span>
 
-<span data-ttu-id="787be-122">Si es un administrador global de Office 365 o un administrador de Exchange Online y Exchange está configurado para usar la autenticación OAuth, puede [Habilitar el complemento de mensajes de informe para su organización](#get-and-enable-the-report-message-add-in-for-your-organization).</span><span class="sxs-lookup"><span data-stu-id="787be-122">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="787be-123">El complemento de mensajes de informe ahora está disponible a través de la [implementación centralizada](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span><span class="sxs-lookup"><span data-stu-id="787be-123">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
+ - <span data-ttu-id="d4a7a-121">Buzones de correo en organizaciones locales de Exchange</span><span class="sxs-lookup"><span data-stu-id="d4a7a-121">Mailboxes in on-premises Exchange organizations</span></span>
+ - <span data-ttu-id="d4a7a-122">Las suscripciones GCC, GCC HIGH o DoD</span><span class="sxs-lookup"><span data-stu-id="d4a7a-122">GCC, GCC HIGH, or DoD subscriptions</span></span>
 
-## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="787be-124">Obtener el complemento de mensajes de informe para usted mismo</span><span class="sxs-lookup"><span data-stu-id="787be-124">Get the Report Message add-in for yourself</span></span>
+<span data-ttu-id="d4a7a-123">El explorador Web existente debería ser suficiente para que funcione el complemento de mensajes de informe; sin embargo, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe con otro explorador.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-123">Your existing web browser should suffice for the Report Message add-in to work; however, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
 
-1. <span data-ttu-id="787be-125">En [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), busque el [complemento de mensajes de informe](https://appsource.microsoft.com/product/office/wa104381180).</span><span class="sxs-lookup"><span data-stu-id="787be-125">In [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), search for the [Report Message add-in](https://appsource.microsoft.com/product/office/wa104381180).</span></span>
+<span data-ttu-id="d4a7a-124">Si es un usuario individual, puede [Habilitar el complemento de mensajes de informe para usted mismo](#get-the-report-message-add-in-for-yourself).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-124">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
 
-2. <span data-ttu-id="787be-126">Elija **obtenerlo ahora**.</span><span class="sxs-lookup"><span data-stu-id="787be-126">Choose **GET IT NOW**.</span></span>
+<span data-ttu-id="d4a7a-125">Si es un administrador global de Office 365 o un administrador de Exchange Online y Exchange está configurado para usar la autenticación OAuth, puede [Habilitar el complemento de mensajes de informe para su organización](#get-and-enable-the-report-message-add-in-for-your-organization).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-125">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="d4a7a-126">El complemento de mensajes de informe ahora está disponible a través de la [implementación centralizada](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-126">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
 
-   ![Mensaje de informe: obtenerlo ahora](../media/ReportMessageGETITNOW.png)
+## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="d4a7a-127">Obtener el complemento de mensajes de informe para usted mismo</span><span class="sxs-lookup"><span data-stu-id="d4a7a-127">Get the Report Message add-in for yourself</span></span>
 
-3. <span data-ttu-id="787be-128">Revise las condiciones de uso y la Directiva de privacidad.</span><span class="sxs-lookup"><span data-stu-id="787be-128">Review the terms of use and privacy policy.</span></span> <span data-ttu-id="787be-129">Después, elija **Continuar**.</span><span class="sxs-lookup"><span data-stu-id="787be-129">Then choose **Continue**.</span></span>
+1. <span data-ttu-id="d4a7a-128">En [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), busque el [complemento de mensajes de informe](https://appsource.microsoft.com/product/office/wa104381180).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-128">In [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), search for the [Report Message add-in](https://appsource.microsoft.com/product/office/wa104381180).</span></span>
 
-4. <span data-ttu-id="787be-130">Inicie sesión en Office 365 con su cuenta profesional o educativa (para uso empresarial) o su cuenta Microsoft (para uso personal).</span><span class="sxs-lookup"><span data-stu-id="787be-130">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
+2. <span data-ttu-id="d4a7a-129">Elija **obtenerlo ahora**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-129">Choose **GET IT NOW**.</span></span>
 
-<span data-ttu-id="787be-131">Una vez instalado y habilitado el complemento, verá los iconos siguientes:</span><span class="sxs-lookup"><span data-stu-id="787be-131">After the add-in is installed and enabled, you'll see the following icons:</span></span>
+   ![Mensaje de informe: obtenerlo ahora](../../media/ReportMessageGETITNOW.png)
 
-- <span data-ttu-id="787be-132">En Outlook, el icono tiene el siguiente aspecto:</span><span class="sxs-lookup"><span data-stu-id="787be-132">In Outlook, the icon looks like this:</span></span>
+3. <span data-ttu-id="d4a7a-131">Revise las condiciones de uso y la Directiva de privacidad.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-131">Review the terms of use and privacy policy.</span></span> <span data-ttu-id="d4a7a-132">Después, elija **Continuar**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-132">Then choose **Continue**.</span></span>
 
-  ![Icono del complemento de mensajes de informe para Outlook](../media/OutlookReportMessageIcon.png)
+4. <span data-ttu-id="d4a7a-133">Inicie sesión en Office 365 con su cuenta profesional o educativa (para uso empresarial) o su cuenta Microsoft (para uso personal).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-133">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
 
-- <span data-ttu-id="787be-134">En Outlook en la web (anteriormente conocido como Outlook Web App), el icono tiene un aspecto similar a este:</span><span class="sxs-lookup"><span data-stu-id="787be-134">In Outlook on the web (formerly known as Outlook Web App), the icon looks like this:</span></span>
+<span data-ttu-id="d4a7a-134">Una vez instalado y habilitado el complemento, verá los iconos siguientes:</span><span class="sxs-lookup"><span data-stu-id="d4a7a-134">After the add-in is installed and enabled, you'll see the following icons:</span></span>
 
-  ![Icono del complemento de mensaje de informe de Outlook en la web](../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+- <span data-ttu-id="d4a7a-135">En Outlook, el icono tiene el siguiente aspecto:</span><span class="sxs-lookup"><span data-stu-id="d4a7a-135">In Outlook, the icon looks like this:</span></span>
 
-> [!TIP]
-> <span data-ttu-id="787be-136">Como paso siguiente, aprenda a [usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span><span class="sxs-lookup"><span data-stu-id="787be-136">As a next step, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+  ![Icono del complemento de mensajes de informe para Outlook](../../media/OutlookReportMessageIcon.png)
 
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="787be-137">Obtener y habilitar el complemento de mensajes de informe para la organización</span><span class="sxs-lookup"><span data-stu-id="787be-137">Get and enable the Report Message add-in for your organization</span></span>
+- <span data-ttu-id="d4a7a-137">En Outlook en la web (anteriormente conocido como Outlook Web App), el icono tiene un aspecto similar a este:</span><span class="sxs-lookup"><span data-stu-id="d4a7a-137">In Outlook on the web (formerly known as Outlook Web App), the icon looks like this:</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="787be-138">Debe ser un administrador global de Office 365 o un administrador de Exchange Online para completar esta tarea.</span><span class="sxs-lookup"><span data-stu-id="787be-138">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span> <span data-ttu-id="787be-139">Además, Exchange debe estar configurado para usar la autenticación OAuth para obtener más información, consulte [requisitos de Exchange (Implementación centralizada de complementos)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span><span class="sxs-lookup"><span data-stu-id="787be-139">In addition, Exchange must be configured to use OAuth authentication To learn more, see [Exchange requirements (Centralized Deployment of add-ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
-
-1. <span data-ttu-id="787be-140">Vaya a la [Página servicios & complementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) en el centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="787be-140">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
-
-   ![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](../media/ServicesAddInsPageNewM365AdminCenter.png)
-
-2. <span data-ttu-id="787be-142">Elija **+ implementar complemento**.</span><span class="sxs-lookup"><span data-stu-id="787be-142">Choose **+ Deploy Add-in**.</span></span>
-
-   ![Elija implementar complemento](../media/ServicesAddIns-ChooseDeployAddIn.png)
-
-3. <span data-ttu-id="787be-144">En la pantalla **nuevo complemento** , revise la información y, a continuación, elija **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="787be-144">In the **New Add-In** screen, review the information, and then choose **Next**.</span></span>
-
-   ![Detalles de los complementos nuevos](../media/NewAddInScreen1.png)
-
-4. <span data-ttu-id="787be-146">Seleccione **quiero agregar un complemento de la tienda Office**y, a continuación, elija **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="787be-146">Select **I want to add an Add-In from the Office Store**, and then choose **Next**.</span></span>
-
-   ![Deseo agregar un nuevo complemento](../media/NewAddInScreen2.png)
-
-5. <span data-ttu-id="787be-148">Buscar **mensaje de informe**y, en la lista de resultados, junto al complemento de **mensajes de informe**, elija **Agregar**.</span><span class="sxs-lookup"><span data-stu-id="787be-148">Search for **Report Message**, and in the list of results, next to the **Report Message Add-In**, choose **Add**.</span></span>
-
-   ![Buscar mensaje de informe y, a continuación, elija Agregar](../media/NewAddInScreen3.png)
-
-6. <span data-ttu-id="787be-150">En la pantalla de **mensajes del informe** , revise la información y, a continuación, elija **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="787be-150">On the **Report Message** screen, review the information, and then choose **Next**.</span></span>
-
-   ![Detalles de mensaje de informe](../media/ReportMessageAdd-InNewScreen4.png)
-
-7. <span data-ttu-id="787be-152">Especifique la configuración predeterminada de usuario de Outlook y, a continuación, elija **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="787be-152">Specify the user default settings for Outlook, and  then choose **Next**.</span></span>
-
-   ![Notificar la configuración predeterminada de los mensajes para Outlook](../media/ReportMessageOptionsScreen5.png)
-
-8. <span data-ttu-id="787be-154">Especifique quién recibe el complemento de mensajes de informe y, a continuación, elija **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="787be-154">Specify who gets the Report Message Add-in, and then choose **Save**.</span></span>
-
-   ![Quién recibe el complemento de mensajes de informe](../media/ReportMessageOptionsScreen6.png)
+  ![Icono del complemento de mensaje de informe de Outlook en la web](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
 > [!TIP]
-> <span data-ttu-id="787be-156">Le recomendamos que configure [una regla para obtener una copia de los mensajes de correo electrónico que notifican los usuarios](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span><span class="sxs-lookup"><span data-stu-id="787be-156">We recommend [setting up a rule to get a copy of email messages reported by your users](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span></span>
+> <span data-ttu-id="d4a7a-139">Como paso siguiente, aprenda a [usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-139">As a next step, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
 
-<span data-ttu-id="787be-157">En función de lo que haya seleccionado al configurar el complemento (los pasos del 7-8 anterior), los usuarios de la organización tendrán disponible el [complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) .</span><span class="sxs-lookup"><span data-stu-id="787be-157">Depending on what you selected when you set up the add-in (steps 7-8 above), people in your organization will have the [Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) available.</span></span> <span data-ttu-id="787be-158">Los usuarios de la organización verán los siguientes iconos:</span><span class="sxs-lookup"><span data-stu-id="787be-158">People in your organization will see the following icons:</span></span>
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="d4a7a-140">Obtener y habilitar el complemento de mensajes de informe para la organización</span><span class="sxs-lookup"><span data-stu-id="d4a7a-140">Get and enable the Report Message add-in for your organization</span></span>
 
-- <span data-ttu-id="787be-159">En Outlook, el icono tiene el siguiente aspecto:</span><span class="sxs-lookup"><span data-stu-id="787be-159">In Outlook, the icon looks like this:</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="d4a7a-141">Debe ser un administrador global de Office 365 o un administrador de Exchange Online para completar esta tarea.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-141">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span> <span data-ttu-id="d4a7a-142">Además, Exchange debe estar configurado para usar la autenticación OAuth para obtener más información, consulte [requisitos de Exchange (Implementación centralizada de complementos)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-142">In addition, Exchange must be configured to use OAuth authentication To learn more, see [Exchange requirements (Centralized Deployment of add-ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
 
-  ![Icono del complemento de mensajes de informe para Outlook](../media/OutlookReportMessageIcon.png)
+1. <span data-ttu-id="d4a7a-143">Vaya a la [Página servicios & complementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) en el centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-143">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
 
-- <span data-ttu-id="787be-161">En Outlook en la web, el icono tiene el siguiente aspecto:</span><span class="sxs-lookup"><span data-stu-id="787be-161">In Outlook on the web, the icon looks like this:</span></span>
+   ![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-  ![Icono del complemento de mensaje de informe de Outlook en la web](../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+2. <span data-ttu-id="d4a7a-145">Elija **+ implementar complemento**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-145">Choose **+ Deploy Add-in**.</span></span>
+
+   ![Elija implementar complemento](../../media/ServicesAddIns-ChooseDeployAddIn.png)
+
+3. <span data-ttu-id="d4a7a-147">En la pantalla **nuevo complemento** , revise la información y, a continuación, elija **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-147">In the **New Add-In** screen, review the information, and then choose **Next**.</span></span>
+
+   ![Detalles de los complementos nuevos](../../media/NewAddInScreen1.png)
+
+4. <span data-ttu-id="d4a7a-149">Seleccione **quiero agregar un complemento de la tienda Office**y, a continuación, elija **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-149">Select **I want to add an Add-In from the Office Store**, and then choose **Next**.</span></span>
+
+   ![Deseo agregar un nuevo complemento](../../media/NewAddInScreen2.png)
+
+5. <span data-ttu-id="d4a7a-151">Buscar **mensaje de informe**y, en la lista de resultados, junto al complemento de **mensajes de informe**, elija **Agregar**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-151">Search for **Report Message**, and in the list of results, next to the **Report Message Add-In**, choose **Add**.</span></span>
+
+   ![Buscar mensaje de informe y, a continuación, elija Agregar](../../media/NewAddInScreen3.png)
+
+6. <span data-ttu-id="d4a7a-153">En la pantalla de **mensajes del informe** , revise la información y, a continuación, elija **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-153">On the **Report Message** screen, review the information, and then choose **Next**.</span></span>
+
+   ![Detalles de mensaje de informe](../../media/ReportMessageAdd-InNewScreen4.png)
+
+7. <span data-ttu-id="d4a7a-155">Especifique la configuración predeterminada de usuario de Outlook y, a continuación, elija **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-155">Specify the user default settings for Outlook, and  then choose **Next**.</span></span>
+
+   ![Notificar la configuración predeterminada de los mensajes para Outlook](../../media/ReportMessageOptionsScreen5.png)
+
+8. <span data-ttu-id="d4a7a-157">Especifique quién recibe el complemento de mensajes de informe y, a continuación, elija **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-157">Specify who gets the Report Message Add-in, and then choose **Save**.</span></span>
+
+   ![Quién recibe el complemento de mensajes de informe](../../media/ReportMessageOptionsScreen6.png)
 
 > [!TIP]
-> <span data-ttu-id="787be-163">Cuando notifique a los usuarios sobre el complemento de mensajes de informe, incluya un vínculo para [usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span><span class="sxs-lookup"><span data-stu-id="787be-163">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+> <span data-ttu-id="d4a7a-159">Le recomendamos que configure [una regla para obtener una copia de los mensajes de correo electrónico que notifican los usuarios](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-159">We recommend [setting up a rule to get a copy of email messages reported by your users](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span></span>
 
-## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a><span data-ttu-id="787be-164">Configurar una regla para obtener una copia de los mensajes de correo electrónico que notifican los usuarios</span><span class="sxs-lookup"><span data-stu-id="787be-164">Set up a rule to get a copy of email messages reported by your users</span></span>
+<span data-ttu-id="d4a7a-160">En función de lo que haya seleccionado al configurar el complemento (los pasos del 7-8 anterior), los usuarios de la organización tendrán disponible el [complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) .</span><span class="sxs-lookup"><span data-stu-id="d4a7a-160">Depending on what you selected when you set up the add-in (steps 7-8 above), people in your organization will have the [Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) available.</span></span> <span data-ttu-id="d4a7a-161">Los usuarios de la organización verán los siguientes iconos:</span><span class="sxs-lookup"><span data-stu-id="d4a7a-161">People in your organization will see the following icons:</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="787be-165">Debe ser administrador de Exchange Online para realizar esta tarea.</span><span class="sxs-lookup"><span data-stu-id="787be-165">You must be an Exchange Online Administrator to perform this task.</span></span>
+- <span data-ttu-id="d4a7a-162">En Outlook, el icono tiene el siguiente aspecto:</span><span class="sxs-lookup"><span data-stu-id="d4a7a-162">In Outlook, the icon looks like this:</span></span>
 
-<span data-ttu-id="787be-166">Puede configurar una regla para obtener una copia de los mensajes de correo electrónico que notifican los usuarios de la organización.</span><span class="sxs-lookup"><span data-stu-id="787be-166">You can set up a rule to get a copy of email messages reported by users in your organization.</span></span> <span data-ttu-id="787be-167">Hágalo después de haber descargado y habilitado el complemento de mensajes de informe para su organización.</span><span class="sxs-lookup"><span data-stu-id="787be-167">You do this after you have downloaded and enabled the Report Message add-in for your organization.</span></span>
+  ![Icono del complemento de mensajes de informe para Outlook](../../media/OutlookReportMessageIcon.png)
 
-1. <span data-ttu-id="787be-168">En el centro de administración de Exchange, elija **reglas**de **flujo** \> de correo.</span><span class="sxs-lookup"><span data-stu-id="787be-168">In the Exchange admin center, choose **mail flow** \> **rules**.</span></span>
+- <span data-ttu-id="d4a7a-164">En Outlook en la web, el icono tiene el siguiente aspecto:</span><span class="sxs-lookup"><span data-stu-id="d4a7a-164">In Outlook on the web, the icon looks like this:</span></span>
 
-2. <span data-ttu-id="787be-169">Elija **+** \> **crear una nueva regla**.</span><span class="sxs-lookup"><span data-stu-id="787be-169">Choose **+** \> **Create a new rule**.</span></span>
+  ![Icono del complemento de mensaje de informe de Outlook en la web](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-3. <span data-ttu-id="787be-170">En el cuadro **nombre** , escriba un nombre, como envíos.</span><span class="sxs-lookup"><span data-stu-id="787be-170">In the **Name** box, type a name, such as Submissions.</span></span>
+> [!TIP]
+> <span data-ttu-id="d4a7a-166">Cuando notifique a los usuarios sobre el complemento de mensajes de informe, incluya un vínculo para [usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-166">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
 
-4. <span data-ttu-id="787be-171">En la lista **aplicar esta regla si** , elija **la dirección del destinatario incluye...**</span><span class="sxs-lookup"><span data-stu-id="787be-171">In the **Apply this rule if** list, choose **The recipient address includes...**.</span></span>
-
-5. <span data-ttu-id="787be-172">En la pantalla **especificar palabras o frases** , agregue `junk@office365.microsoft.com` y `phish@office365.microsoft.com`, a continuación, elija **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="787be-172">In the **specify words or phrases** screen, add `junk@office365.microsoft.com` and `phish@office365.microsoft.com`, and then choose **OK**.</span></span>
-
-   ![Especificar las direcciones de correo electrónico no deseado y phish para la regla](../media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
-
-6. <span data-ttu-id="787be-174">En la lista **haga lo siguiente...** , elija **CCO el mensaje a...**.</span><span class="sxs-lookup"><span data-stu-id="787be-174">In the **Do the following...** list, choose **Bcc the message to...**.</span></span>
-
-7. <span data-ttu-id="787be-175">Agregue un administrador global, un administrador de seguridad o un lector de seguridad que debe recibir una copia de cada mensaje de correo electrónico que los usuarios informan a Microsoft y, a continuación, elija **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="787be-175">Add a global administrator, security administrator, and/or security reader who should receive a copy of each email message that people report to Microsoft, and then choose **OK**.</span></span>
-
-   ![Agregar un administrador global o de seguridad para recibir una copia de cada mensaje notificado](../media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
-
-8. <span data-ttu-id="787be-177">Seleccione **auditar esta regla con nivel de gravedad**y elija **media**.</span><span class="sxs-lookup"><span data-stu-id="787be-177">Select **Audit this rule with severity level**, and choose **Medium**.</span></span>
-
-9. <span data-ttu-id="787be-178">En **elegir un modo para esta regla**, elija **aplicar**.</span><span class="sxs-lookup"><span data-stu-id="787be-178">Under **Choose a mode for this rule**, choose **Enforce**.</span></span>
-
-   ![Configurar una regla para obtener una copia de cada mensaje notificado](../media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
-
-10. <span data-ttu-id="787be-180">Elija **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="787be-180">Choose **Save**.</span></span>
-
-<span data-ttu-id="787be-181">Una vez colocada esta regla, cada vez que un usuario de la organización notifique un mensaje de correo electrónico mediante el complemento de mensajes de informe, el administrador global, el administrador de seguridad o el lector de seguridad recibirá una copia del mensaje.</span><span class="sxs-lookup"><span data-stu-id="787be-181">With this rule in place, whenever someone in your organization reports an email message using the Report Message add-in, your global administrator, security administrator, and/or security reader will receive a copy of that message.</span></span> <span data-ttu-id="787be-182">Esta información puede permitirle configurar o ajustar directivas como, por ejemplo, las directivas de [vínculos seguros de Office 365 ATP](atp-safe-links.md) o su configuración [contra correo no deseado](anti-spam-protection.md) .</span><span class="sxs-lookup"><span data-stu-id="787be-182">This information can enable you to set up or adjust policies, such as [Office 365 ATP Safe Links](atp-safe-links.md) policies, or your [anti-spam](anti-spam-protection.md) settings.</span></span>
-
-## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="787be-183">Obtener información sobre cómo usar el complemento de mensajes de informe</span><span class="sxs-lookup"><span data-stu-id="787be-183">Learn how to use the Report Message add-in</span></span>
-
-<span data-ttu-id="787be-184">Consulte [usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span><span class="sxs-lookup"><span data-stu-id="787be-184">See [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
-
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="787be-185">Revisión o edición de la configuración del complemento de mensajes de informe</span><span class="sxs-lookup"><span data-stu-id="787be-185">Review or edit settings for the Report Message add-in</span></span>
-
-<span data-ttu-id="787be-186">Puede revisar y editar la configuración predeterminada para el complemento de mensajes de informe en la [Página de servicios & complementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns).</span><span class="sxs-lookup"><span data-stu-id="787be-186">You can review and edit the default settings for the Report Message add-in on the [Services & Add-Ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns).</span></span>
+## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a><span data-ttu-id="d4a7a-167">Configurar una regla para obtener una copia de los mensajes de correo electrónico que notifican los usuarios</span><span class="sxs-lookup"><span data-stu-id="d4a7a-167">Set up a rule to get a copy of email messages reported by your users</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="787be-187">Debe ser un administrador global de Office 365 o un administrador de Exchange Online para completar esta tarea.</span><span class="sxs-lookup"><span data-stu-id="787be-187">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span>
+> <span data-ttu-id="d4a7a-168">Debe ser administrador de Exchange Online para realizar esta tarea.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-168">You must be an Exchange Online Administrator to perform this task.</span></span>
 
-1. <span data-ttu-id="787be-188">Vaya a la [Página servicios & complementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) en el centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="787be-188">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="d4a7a-169">Puede configurar una regla para obtener una copia de los mensajes de correo electrónico que notifican los usuarios de la organización.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-169">You can set up a rule to get a copy of email messages reported by users in your organization.</span></span> <span data-ttu-id="d4a7a-170">Hágalo después de haber descargado y habilitado el complemento de mensajes de informe para su organización.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-170">You do this after you have downloaded and enabled the Report Message add-in for your organization.</span></span>
 
-   ![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](../media/ServicesAddInsPageNewM365AdminCenter.png)
+1. <span data-ttu-id="d4a7a-171">En el centro de administración de Exchange, elija **reglas**de **flujo** \> de correo.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-171">In the Exchange admin center, choose **mail flow** \> **rules**.</span></span>
 
-2. <span data-ttu-id="787be-190">Busque y seleccione el complemento de mensajes de informe.</span><span class="sxs-lookup"><span data-stu-id="787be-190">Find and select the Report Message add-in.</span></span>
+2. <span data-ttu-id="d4a7a-172">Elija **+** \> **crear una nueva regla**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-172">Choose **+** \> **Create a new rule**.</span></span>
 
-   ![Buscar y seleccionar el complemento de mensajes de informe](../media/FindReportMessageAddIn.png)
+3. <span data-ttu-id="d4a7a-173">En el cuadro **nombre** , escriba un nombre, como envíos.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-173">In the **Name** box, type a name, such as Submissions.</span></span>
 
-3. <span data-ttu-id="787be-192">En la pantalla de mensaje de informe, revise y edite las opciones según corresponda para su organización.</span><span class="sxs-lookup"><span data-stu-id="787be-192">On the Report Message screen, review and edit settings as appropriate for your organization.</span></span>
+4. <span data-ttu-id="d4a7a-174">En la lista **aplicar esta regla si** , elija **la dirección del destinatario incluye...**</span><span class="sxs-lookup"><span data-stu-id="d4a7a-174">In the **Apply this rule if** list, choose **The recipient address includes...**.</span></span>
 
-   ![Configuración del complemento de mensajes de informe](../media/EditReportMessageAddIn.png)
+5. <span data-ttu-id="d4a7a-175">En la pantalla **especificar palabras o frases** , agregue `junk@office365.microsoft.com` y `phish@office365.microsoft.com`, a continuación, elija **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-175">In the **specify words or phrases** screen, add `junk@office365.microsoft.com` and `phish@office365.microsoft.com`, and then choose **OK**.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="787be-194">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="787be-194">Related topics</span></span>
+   ![Especificar las direcciones de correo electrónico no deseado y phish para la regla](../../media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
 
-[<span data-ttu-id="787be-195">Usar el complemento de mensajes de informe</span><span class="sxs-lookup"><span data-stu-id="787be-195">Use the Report Message add-in</span></span>](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+6. <span data-ttu-id="d4a7a-177">En la lista **haga lo siguiente...** , elija **CCO el mensaje a...**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-177">In the **Do the following...** list, choose **Bcc the message to...**.</span></span>
 
-[<span data-ttu-id="787be-196">Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento</span><span class="sxs-lookup"><span data-stu-id="787be-196">View email security reports in the Security &amp; Compliance Center</span></span>](view-email-security-reports.md)
+7. <span data-ttu-id="d4a7a-178">Agregue un administrador global, un administrador de seguridad o un lector de seguridad que debe recibir una copia de cada mensaje de correo electrónico que los usuarios informan a Microsoft y, a continuación, elija **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-178">Add a global administrator, security administrator, and/or security reader who should receive a copy of each email message that people report to Microsoft, and then choose **OK**.</span></span>
 
-[<span data-ttu-id="787be-197">Ver informes para la protección contra amenazas avanzada de Office 365</span><span class="sxs-lookup"><span data-stu-id="787be-197">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+   ![Agregar un administrador global o de seguridad para recibir una copia de cada mensaje notificado](../../media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
 
-[<span data-ttu-id="787be-198">Usar el explorador en el &amp; centro de seguridad y cumplimiento</span><span class="sxs-lookup"><span data-stu-id="787be-198">Use Explorer in the Security &amp; Compliance Center</span></span>](threat-explorer.md)
+8. <span data-ttu-id="d4a7a-180">Seleccione **auditar esta regla con nivel de gravedad**y elija **media**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-180">Select **Audit this rule with severity level**, and choose **Medium**.</span></span>
+
+9. <span data-ttu-id="d4a7a-181">En **elegir un modo para esta regla**, elija **aplicar**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-181">Under **Choose a mode for this rule**, choose **Enforce**.</span></span>
+
+   ![Configurar una regla para obtener una copia de cada mensaje notificado](../../media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
+
+10. <span data-ttu-id="d4a7a-183">Elija **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-183">Choose **Save**.</span></span>
+
+<span data-ttu-id="d4a7a-184">Una vez colocada esta regla, cada vez que un usuario de la organización notifique un mensaje de correo electrónico mediante el complemento de mensajes de informe, el administrador global, el administrador de seguridad o el lector de seguridad recibirá una copia del mensaje.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-184">With this rule in place, whenever someone in your organization reports an email message using the Report Message add-in, your global administrator, security administrator, and/or security reader will receive a copy of that message.</span></span> <span data-ttu-id="d4a7a-185">Esta información puede permitirle configurar o ajustar directivas como, por ejemplo, las directivas de [vínculos seguros de Office 365 ATP](atp-safe-links.md) o su configuración [contra correo no deseado](anti-spam-protection.md) .</span><span class="sxs-lookup"><span data-stu-id="d4a7a-185">This information can enable you to set up or adjust policies, such as [Office 365 ATP Safe Links](atp-safe-links.md) policies, or your [anti-spam](anti-spam-protection.md) settings.</span></span>
+
+## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="d4a7a-186">Obtener información sobre cómo usar el complemento de mensajes de informe</span><span class="sxs-lookup"><span data-stu-id="d4a7a-186">Learn how to use the Report Message add-in</span></span>
+
+<span data-ttu-id="d4a7a-187">Consulte [usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-187">See [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="d4a7a-188">Revisión o edición de la configuración del complemento de mensajes de informe</span><span class="sxs-lookup"><span data-stu-id="d4a7a-188">Review or edit settings for the Report Message add-in</span></span>
+
+<span data-ttu-id="d4a7a-189">Puede revisar y editar la configuración predeterminada para el complemento de mensajes de informe en la [Página de servicios & complementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns).</span><span class="sxs-lookup"><span data-stu-id="d4a7a-189">You can review and edit the default settings for the Report Message add-in on the [Services & Add-Ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns).</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="d4a7a-190">Debe ser un administrador global de Office 365 o un administrador de Exchange Online para completar esta tarea.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-190">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span>
+
+1. <span data-ttu-id="d4a7a-191">Vaya a la [Página servicios & complementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) en el centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-191">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
+
+   ![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+
+2. <span data-ttu-id="d4a7a-193">Busque y seleccione el complemento de mensajes de informe.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-193">Find and select the Report Message add-in.</span></span>
+
+   ![Buscar y seleccionar el complemento de mensajes de informe](../../media/FindReportMessageAddIn.png)
+
+3. <span data-ttu-id="d4a7a-195">En la pantalla de mensaje de informe, revise y edite las opciones según corresponda para su organización.</span><span class="sxs-lookup"><span data-stu-id="d4a7a-195">On the Report Message screen, review and edit settings as appropriate for your organization.</span></span>
+
+   ![Configuración del complemento de mensajes de informe](../../media/EditReportMessageAddIn.png)
+
+## <a name="related-topics"></a><span data-ttu-id="d4a7a-197">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="d4a7a-197">Related topics</span></span>
+
+[<span data-ttu-id="d4a7a-198">Usar el complemento de mensajes de informe</span><span class="sxs-lookup"><span data-stu-id="d4a7a-198">Use the Report Message add-in</span></span>](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+
+[<span data-ttu-id="d4a7a-199">Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento</span><span class="sxs-lookup"><span data-stu-id="d4a7a-199">View email security reports in the Security &amp; Compliance Center</span></span>](view-email-security-reports.md)
+
+[<span data-ttu-id="d4a7a-200">Ver informes para la protección contra amenazas avanzada de Office 365</span><span class="sxs-lookup"><span data-stu-id="d4a7a-200">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+
+[<span data-ttu-id="d4a7a-201">Usar el explorador en el &amp; centro de seguridad y cumplimiento</span><span class="sxs-lookup"><span data-stu-id="d4a7a-201">Use Explorer in the Security &amp; Compliance Center</span></span>](threat-explorer.md)
