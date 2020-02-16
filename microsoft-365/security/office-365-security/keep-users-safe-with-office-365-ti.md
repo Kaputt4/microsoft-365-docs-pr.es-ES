@@ -16,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo las capacidades de investigación y respuesta de las amenazas de Office 365 pueden ayudar a su organización a detectar intrusiones y amenazas, y mitigar rápidamente y recuperarse de amenazas.
-ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6734903198fa29cdd7ac4295feb6313479ecab50
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599107"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088687"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenga su organización segura con las capacidades de investigación y respuesta de amenazas de Office 365
 
@@ -35,7 +35,7 @@ El [Explorador de amenazas](threat-explorer.md) (también conocido como explorad
 
 El explorador también ayuda a los administradores a navegar por las relaciones entre los usuarios y el correo. ¿Conoce un correo determinado que fue malo? Buscarla para ver qué usuarios recibieron el correo y, a continuación, seguir la serie de eventos y ver lo que los usuarios han hecho a su vez.
 
-![Captura de pantalla del explorador de amenazas en Office 365, con código de color por familia de malware](../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Captura de pantalla del explorador de amenazas en Office 365, con código de color por familia de malware](../../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
 
 ## <a name="quickly-mitigate-and-recover-from-threats"></a>Mitigar rápidamente y recuperarse de amenazas
 
@@ -43,7 +43,7 @@ Una vez que los administradores de seguridad han identificado algo sospechoso o 
 
  **Actualización:** Se ha agregado la capacidad de eliminar mensajes de correo electrónico (eliminación flexible o en disco) directamente desde el marco de incidente. Los administradores anteriores solo podían mover correos a la carpeta de correo no deseado de un usuario, donde los usuarios podían recuperar el elemento. Con las capacidades de eliminación recién sueltas, ahora puede asegurarse de que se elimina un correo malintencionado o no deseado de forma permanente.
 
-![Captura de pantalla de la lista de correo electrónico de corrección de incidentes](../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![Captura de pantalla de la lista de correo electrónico de corrección de incidentes](../../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
 
 ## <a name="leverage-the-threat-telemetry-of-microsoft"></a>Aprovechar la telemetría de amenazas de Microsoft
 

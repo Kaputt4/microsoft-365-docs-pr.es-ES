@@ -11,26 +11,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: 2949f8991d7c65861fd390d3c843053ad36c0d60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 43e32dda70da5a8252af7f4f01bbdbb5599454fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598907"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088577"
 ---
 # <a name="auto-forwarded-messages-report"></a>Informe de mensajes reenviados automáticamente
 
 El informe de **mensajes reenviados automáticamente** del panel de flujo de correo muestra información sobre los mensajes que se reenvían automáticamente desde la organización de Office 365 a los destinatarios de los dominios externos.
 
-![Los mensajes de reenvío automático Insight en el centro de seguridad & cumplimiento de Office 365](../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Los mensajes de reenvío automático Insight en el centro de seguridad & cumplimiento de Office 365](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
-![El informe de mensajes reenviados automáticamente del panel del flujo de correo en el centro de seguridad & cumplimiento de Office 365](../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![El informe de mensajes reenviados automáticamente del panel del flujo de correo en el centro de seguridad & cumplimiento de Office 365](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Detalles de los mensajes reenviados automáticamente
 
 Al hacer clic en el número de mensajes del widget, aparece un panel flotante que muestra el estado del mensaje reenviado automáticamente. Puede ver los detalles haciendo clic en el vínculo **Informe de reenvío** .
 
-![El control flotante detalles del informe de mensajes reenviados automáticamente en el centro de seguridad & cumplimiento de Office 365](../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+![El control flotante detalles del informe de mensajes reenviados automáticamente en el centro de seguridad & cumplimiento de Office 365](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
 
 ## <a name="insights"></a>Información
 

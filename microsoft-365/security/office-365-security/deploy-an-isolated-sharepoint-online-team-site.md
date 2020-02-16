@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Resumen: implemente un nuevo sitio de grupo aislado de SharePoint Online con estas instrucciones paso a paso.'
-ms.openlocfilehash: c49b8d2d0c69f76f284061e21c8be31ee2204a54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 39cf33ce3314e2eb0cd313ff0382f50d7cb8487a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599527"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088816"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implementar un sitio de grupo de SharePoint Online aislado
 
@@ -89,7 +89,7 @@ Debe crear los siguientes grupos de acceso en Azure AD:
   
 Esta es la configuración resultante con los tres grupos de acceso al sitio.
   
-![Los tres grupos de acceso para la implementación de un sitio de SharePoint Online aislado.](../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
+![Los tres grupos de acceso para la implementación de un sitio de SharePoint Online aislado.](../../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
 ### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>Paso 5. Agregar las cuentas de usuario a los grupos de acceso
 
@@ -151,7 +151,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 Esta es la configuración resultante con los tres grupos de acceso al sitio rellenados con cuentas de usuario o grupos.
   
-![Los tres grupos de acceso completados con cuentas de usuario.](../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
+![Los tres grupos de acceso completados con cuentas de usuario.](../../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Fase 2: crear y configurar el sitio de grupo aislado
 
@@ -221,7 +221,7 @@ Los resultados de esta configuración de permisos son los siguientes:
     
 Esta es la configuración resultante con los tres grupos de SharePoint para el sitio configurado para usar los tres grupos de acceso, que se rellenan con cuentas de usuario o grupos de Azure AD.
   
-![La configuración final del sitio de SharePoint Online aislado con grupos de acceso y cuentas de usuario.](../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
+![La configuración final del sitio de SharePoint Online aislado con grupos de acceso y cuentas de usuario.](../../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
   
 Usted y los miembros del sitio, a través de la pertenencia a grupos en uno de los grupos de acceso, ahora pueden colaborar con los recursos del sitio.
   

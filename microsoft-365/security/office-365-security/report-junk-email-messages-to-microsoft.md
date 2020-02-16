@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 'El complemento de notificación de correo no deseado de Microsoft para Microsoft Office Outlook permite notificar mensajes de correo no deseado de varias formas:'
-ms.openlocfilehash: a2a427f13c329c4c72f718bb19ecc0dce06f8f91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f8d07a2499fa3c8690393aa444e018b83c632b1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598577"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088269"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Informar a Microsoft sobre mensajes de correo electrónico no deseado
 
@@ -47,10 +47,10 @@ El complemento de notificación de correo no deseado permite enviar informes al 
 1. Haga clic con el botón derecho en los mensajes que quiera notificar como correo no deseado.
 
 2. Seleccione **No deseado** y, a continuación, haga clic en **Informar de correo electrónico no deseado**.
-    ![Denunciar mensajes no deseados desde la bandeja de entrada](../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
+    ![Denunciar mensajes no deseados desde la bandeja de entrada](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
 
 3. Aparecerá el cuadro de diálogo del **complemento de notificación de correo no deseado de Microsoft**. Si está seguro de que desea enviar los mensajes que ha seleccionado como no deseado, haga clic en **Sí**.
-    ![Confirmar denuncia como no deseado](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![Confirmar denuncia como no deseado](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > Si no desea recibir un mensaje de confirmación al enviar mensajes de correo no deseado, active la casilla **No volver a mostrar este mensaje**.
@@ -59,10 +59,10 @@ Los mensajes seleccionados se envían a Microsoft para su análisis y se mueven 
 
 ### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>Para notificar mensajes de correo electrónico no deseado desde un mensaje abierto
 
-1. En un mensaje abierto, haga clic en el botón **Informar de correo electrónico no deseado** en la cinta del mensaje. Por ejemplo **, haga clic** \> en enviar **correo no** ![deseado en el informe de correo no deseado de un mensaje](../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
+1. En un mensaje abierto, haga clic en el botón **Informar de correo electrónico no deseado** en la cinta del mensaje. Por ejemplo **, haga clic** \> en enviar **correo no** ![deseado en el informe de correo no deseado de un mensaje](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
 
 2. Aparecerá el cuadro de diálogo del **complemento de notificación de correo no deseado de Microsoft**. Si está seguro de que desea enviar el mensaje que ha seleccionado como no deseado, haga clic en **Sí**.
-    ![Confirmar denuncia como no deseado](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![Confirmar denuncia como no deseado](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > Si no desea recibir un mensaje de confirmación al enviar mensajes de correo no deseado, active la casilla **No volver a mostrar este mensaje**.

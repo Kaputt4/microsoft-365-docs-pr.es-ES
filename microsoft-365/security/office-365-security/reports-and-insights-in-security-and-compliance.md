@@ -17,12 +17,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información general sobre los informes y avialable en el centro de seguridad &amp; y cumplimiento.
-ms.openlocfilehash: edbc4cd53b5cd830996220c875a1b48565a96c13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3c205350ef57514c434ac75fae21c104a2c1706e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598567"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088149"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Informes inteligentes y opiniones del centro de seguridad &amp; y cumplimiento de Office 365
 
@@ -32,7 +32,7 @@ Si forma parte del equipo de seguridad de Office 365 de su organización y tiene
 
 Las capacidades de supervisión disponibles en el centro &amp; de seguridad y cumplimiento de Office 365 incluyen informes inteligentes e información que permiten a los administradores de seguridad y cumplimiento centrarse en problemas de alta prioridad, como ataques de seguridad o mayor actividad sospechosa. En un panel, los informes inteligentes y los conocimientos son similares a los de la siguiente imagen:
   
-![En el centro &amp; de seguridad y cumplimiento, \> elija Panel de informes](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![En el centro &amp; de seguridad y cumplimiento, \> elija Panel de informes](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 Además de resaltar las áreas problemáticas, los informes y la información inteligentes incluyen recomendaciones y vínculos para ver y explorar los datos, además de realizar acciones rápidas. Por ejemplo, si la organización tiene un gran número de mensajes de correo electrónico que se marcan como correo no deseado por parte de los usuarios finales, es posible que se le aconseje volver a visitar las directivas contra correo no deseado para asegurarse de que el nivel adecuado de protección está en su ubicación.
   
@@ -51,7 +51,7 @@ Hay una amplia variedad de informes disponibles en el centro &amp; de seguridad 
 |**Tipo de información**|**Cómo llegar ahí**|**Dónde ir para obtener más información**|
 |:-----|:-----|:-----|
 |**Informes &amp; del centro de seguridad y cumplimiento** (todo hacia arriba)  <br/> Información y recomendaciones principales, así como vínculos a informes de &amp; cumplimiento de seguridad, como informes de prevención de pérdida de datos, etiquetas, informes de seguridad de correo electrónico, informes de protección contra amenazas avanzada, etc.  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **informes** \> de **Panel** <br/> |[Supervisión y visualización de informes en el centro de seguridad 365 de Microsoft](../mtp/monitoring-and-reporting.md) <br/> |
-|**Prevención de pérdida de datos (DLP)** <br/> Coincidencias de directivas de prevención de pérdida de datos, falsos positivos y reemplazos, y vínculos para crear o editar directivas  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **Directiva** de **prevención** \> de pérdida de datos. <br/> |[Ver los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md) <br/> |
+|**Prevención de pérdida de datos** <br/> Coincidencias de directivas de prevención de pérdida de datos, falsos positivos y reemplazos, y vínculos para crear o editar directivas  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **Directiva** de **prevención** \> de pérdida de datos. <br/> |[Ver los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md) <br/> |
 |**Gobierno de datos** <br/> Información sobre cómo se aplican etiquetas, etiquetas clasificadas como registros, tendencias de etiquetas, etc.  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya al **Panel** de **gobierno** \> de información. <br/> |[Ver los informes de gobierno de datos](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**Panel de administración de amenazas** (esto también se conoce como el panel de seguridad y el panel de inteligencia sobre amenazas)  <br/> Detecciones de amenazas, tendencias de malware, usuarios de destino principales, detalles sobre los mensajes de correo electrónico enviados y recibidos, etc.  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **Threat Management** \> **Dashboard** . <br/> |[Introducción al panel de seguridad](security-dashboard.md) <br/> |
 |**Explorador de amenazas** (también conocido como explorador) o **detecciones en tiempo real** <br/> Se ha detectado malware sospechoso en correo electrónico y archivos en Office 365  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **Threat Management** \> **Explorer** o a **detección en tiempo real** .<br/> |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md) <br/> |

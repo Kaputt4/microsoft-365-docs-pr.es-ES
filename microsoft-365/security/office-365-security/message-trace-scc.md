@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: c9b22ef66fb1db762168812385420823788b4bfc
-ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
+ms.openlocfilehash: ce0919a1190da06279081089810221e55a8f59b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678934"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088648"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -66,11 +66,11 @@ El valor predeterminado es de **2 días**, pero puede especificar intervalos de 
 
 - De forma predeterminada, se selecciona el intervalo de tiempo en la vista de **control deslizante** mediante una línea de tiempo. Solo puede seleccionar la configuración de día o de hora que se muestra. Al intentar seleccionar un valor en entre, el burbuja de inicio/final se ajustará a la opción que se muestra más próxima.
 
-  ![Un intervalo de tiempo del control deslizante en un nuevo seguimiento de mensajes en el centro de seguridad & cumplimiento](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![Un intervalo de tiempo del control deslizante en un nuevo seguimiento de mensajes en el centro de seguridad & cumplimiento](../../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
   Sin embargo, también puede cambiar a la vista **personalizada** donde puede especificar los valores de fecha de **Inicio** y **fecha de finalización** (incluidas las horas), y también puede seleccionar la **zona horaria** para el intervalo de fecha y hora. Tenga en cuenta que la configuración de la **zona horaria** se aplica tanto a las entradas de consulta como a los resultados de la consulta.
 
-  ![Un intervalo de tiempo personalizado en un nuevo seguimiento de mensajes en el centro de seguridad & cumplimiento](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![Un intervalo de tiempo personalizado en un nuevo seguimiento de mensajes en el centro de seguridad & cumplimiento](../../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
   Durante 10 días o menos, los resultados están disponibles al instante como un informe de **Resumen** . Si especifica un intervalo de tiempo que es incluso ligeramente mayor que 10 días, los resultados se retrasarán, ya que solo están disponibles como archivo CSV descargable ( **Resumen mejorado** o informes **extendidos** ).
 
@@ -146,7 +146,7 @@ Los diferentes tipos de informes devuelven diferentes niveles de información. L
 
 Después de ejecutar el seguimiento de mensajes, se mostrarán los resultados, ordenados por fecha y hora de forma descendente (primero el más reciente).
 
-![Resultados del informe de Resumen de seguimiento de mensajes en el centro de seguridad & cumplimiento](../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
+![Resultados del informe de Resumen de seguimiento de mensajes en el centro de seguridad & cumplimiento](../../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
 
 El informe de Resumen contiene la siguiente información:
 
@@ -172,7 +172,7 @@ Puede exportar los resultados después de haber seleccionado una o más filas ha
 
 Los registros de mensajes relacionados son registros que compartieron el mismo identificador de mensaje. Recuerde, incluso un único mensaje que se envía entre dos personas puede generar varios registros. El número de registros aumenta cuando el mensaje se ve afectado por la expansión del grupo de distribución, el reenvío y las reglas de flujo de correo (también conocidos como reglas de transporte), etc.
 
-Después de seleccionar la casilla de verificación de una fila, puede buscar registros relacionados del mensaje haciendo clic en el botón **Buscar relacionado** que aparece o seleccionando **más opciones** ![](../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **para buscar registros relacionados para este mensaje**.
+Después de seleccionar la casilla de verificación de una fila, puede buscar registros relacionados del mensaje haciendo clic en el botón **Buscar relacionado** que aparece o seleccionando **más opciones** ![](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **para buscar registros relacionados para este mensaje**.
 
 Para obtener más información acerca del identificador de mensaje, vea la sección identificador de mensaje anteriormente en este tema.
 
@@ -182,9 +182,9 @@ En el resultado del informe de Resumen, puede ver los detalles de un mensaje med
 
 - Seleccione la fila (haga clic en cualquier lugar de la fila excepto en la casilla de verificación).
 
-- Active la casilla de verificación de la fila y haga clic](../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> en **más opciones** ![para **ver los detalles**de los mensajes.
+- Active la casilla de verificación de la fila y haga clic](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> en **más opciones** ![para **ver los detalles**de los mensajes.
 
-   ![Detalles tras hacer doble clic en una fila en el informe de Resumen de resultados de seguimiento de mensajes en el centro de seguridad & cumplimiento](../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
+   ![Detalles tras hacer doble clic en una fila en el informe de Resumen de resultados de seguimiento de mensajes en el centro de seguridad & cumplimiento](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
 Los detalles del seguimiento de mensajes contienen la siguiente información adicional que no está presente en el informe de Resumen:
 
@@ -330,7 +330,7 @@ Varios **** agentes de Exchange Online `AGENTINFO` usan el campo custom_data par
 
 Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El filtro de contenido marcó el mensaje como correo no deseado.|
@@ -357,7 +357,7 @@ Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no dese
 
 Un valor de **custom_data** que empieza `S:AMA` por es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -380,7 +380,7 @@ Un ejemplo de un valor **custom_data** para un mensaje que contiene malware tien
 
 Un valor de **custom_data** que empieza`S:TRA` por es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|
