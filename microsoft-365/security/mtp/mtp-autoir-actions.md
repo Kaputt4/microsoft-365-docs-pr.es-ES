@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 77770904454228f595e1772e5f6927f943af8294
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fa572e71ec5b6613e5db7751e0341ea94fb9bf5f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600117"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087549"
 ---
 # <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>Aprobar o rechazar acciones pendientes de investigaciones automatizadas
 
@@ -54,11 +54,11 @@ Las acciones pendientes se pueden revisar y aprobar mediante uno de varios méto
 
     - Si selecciona un elemento en la columna **número de investigación** , se abrirá la página Detalles de la investigación. Allí puede ver los resultados de la investigación y, a continuación, aprobar o rechazar la acción recomendada.
  
-    - Si selecciona una fila de la lista, se abre un control flotante, donde puede ver información sobre el elemento. <br/>![Aprobar o rechazar una acción](../images/air-actioncenter-itemselected.png)<br/>Use los vínculos para ver una alerta asociada o una investigación y aprobar o rechazar la acción.
+    - Si selecciona una fila de la lista, se abre un control flotante, donde puede ver información sobre el elemento. <br/>![Aprobar o rechazar una acción](../../media/air-actioncenter-itemselected.png)<br/>Use los vínculos para ver una alerta asociada o una investigación y aprobar o rechazar la acción.
 
 ## <a name="review-a-pending-action-in-the-investigation-details-view"></a>Revisar una acción pendiente en la vista detalles de la investigación
 
-![Detalles de la investigación](../images/mtp-air-investdetails.png)
+![Detalles de la investigación](../../media/mtp-air-investdetails.png)
 
 1. En la página Detalles de la [investigación](mtp-autoir-results.md) , seleccione la pestaña **acciones pendientes** (o **acciones**). los elementos que están pendientes de aprobación aparecen aquí.
 

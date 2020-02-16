@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad incluidas en Microsoft 365 Business.
-ms.openlocfilehash: 0e1823374ec1843b6caa3f080393ca013302bf72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5f67d70c5a8f22e95b60a229d68ae12574d0036
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593433"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064818"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business
 
@@ -35,7 +35,7 @@ Microsoft 365 Business ofrece características de seguridad simplificadas para a
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Características de seguridad del centro de administración de Microsoft 365 Business
 
-[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Puede administrar muchas de las características de seguridad empresarial de Microsoft 365 en el centro de administración, lo que le proporciona una forma simplificada de activar o desactivar estas características. En el centro de administración, puede hacer lo siguiente:
   
@@ -123,6 +123,6 @@ Sí, estas características están disponibles en todos los mercados en los que 
     
 2. En el panel de navegación izquierdo, busque **centros de administración** y expándalo. 
     
-    ![En el panel de navegación izquierdo del centro de administración de Microsoft 365, elija centros de administración.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![En el panel de navegación izquierdo del centro de administración de Microsoft 365, elija centros de administración.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. Elija **cumplimiento &amp; de seguridad** para ir al &amp; centro de seguridad y cumplimiento.

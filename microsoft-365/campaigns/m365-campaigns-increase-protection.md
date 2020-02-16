@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtener ayuda para aumentar el nivel de protección en Microsoft 365 Business
-ms.openlocfilehash: 3cfb8d0a38fc797ec25fb0e4e33409e225646ef2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2dfccc7041c5fa32fb56d2ef2b113e9a3c883392
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594855"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080701"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -48,7 +48,7 @@ El entorno de Office 365 o Microsoft 365 incluye protección contra malware, per
     
 3. Haga doble clic en la directiva predeterminada para editar esta directiva de toda la compañía.
     
-4. Haga clic en **configuración**.
+4. Haga clic en **Configuración**.
     
 5. En **filtro de tipos de datos adjuntos comunes**, seleccione **activado**. Los tipos de archivo que están bloqueados aparecen en la ventana que se encuentra justo debajo de este control.  Asegúrese de agregar estos FileTypes:
    - ADE, ADP, Ani, Bas, Bat, CHM, CMD, com, cpl, CRT, HLP, HT, HTA, INF, ins, ISP, Job, JS, JSE, lnk, MDA, MdB, MDE, MDZ, MSC, MSI, MSP, MST, PCD, reg, SCR, SCT, SHS, URL, VB, VBE, vbs, WSC, wsf, WSH, exe, PIF  <br/> Puede Agregar o eliminar tipos de archivo más adelante, si es necesario.
@@ -79,7 +79,7 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la siguiente tabla para la regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
-6. Haga clic en **Guardar**.
+6. Haga clic en **Guardar **.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
 |:-----|:-----|:-----|
@@ -113,7 +113,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
     
 5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlas.
     
-6. Haga clic en **Guardar**.
+6. Haga clic en **Guardar **.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
@@ -145,7 +145,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
 6. Una vez que haya revisado la configuración, elija **crear esta directiva** o **Guardar**, según corresponda.
     
 
-|**Configuración u opción**<br/>|**Configuración recomendada** <br/>|
+|**Configuración u opción**<br/>|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Dominio y personal de la campaña más valioso  <br/> |
 |Descripción  <br/> |Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> |
@@ -160,24 +160,24 @@ Para obtener más información, consulte [configurar las directivas de anti-phis
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Protección contra datos adjuntos malintencionados, archivos y vínculos con la protección contra amenazas avanzada (ATP)
 
-![Pancarta que apunta a https://aka.ms/aboutM365preview.](../business/media/m365admincenterchanging.png)
+![Pancarta que apunta a https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
 
 En primer lugar, asegúrese de <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> que en el centro de administración de tenga activada la nueva vista previa del centro de administración. Active la alternancia junto al texto **nuevo centro de administración**.
 
-   ![La nueva vista previa del centro de administración.](media/previewon.png)
+   ![La nueva vista previa del centro de administración.](../media/previewon.png)
 
 Si aún no ve la página **configuración** con tarjetas en su inquilino, vea cómo completar estos pasos en el centro de seguridad &amp; y cumplimiento de Office 365. Consulte [configurar los datos adjuntos seguros ATP en el centro de seguridad & cumplimiento](#set-up-atp-safe-attachments-in-the-security--compliance-center) y [configurar vínculos seguros ATP en el centro de seguridad & cumplimiento](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  En el panel de navegación izquierdo, elija **instalar**.
 2. En la página **configuración** , elija **Ver** en la ficha **aumentar protección frente a amenazas avanzadas** .</br></br>
-    ![Elija Ver en el aumentar protección frente a amenazas avanzadas.](media/startatp.png) 
+    ![Elija Ver en el aumentar protección frente a amenazas avanzadas.](../media/startatp.png) 
 
 3. En la página **aumentar la protección desde amenazas avanzadas** , **Elija introducción**.
 4. En el panel que se abre, active las casillas situadas junto a **vínculos y datos adjuntos en el correo electrónico**, **analizar archivos en SharePoint, OneDrive y Microsoft Teams**, y **examinar los vínculos de las aplicaciones de escritorio y Office online de Office** en **buscar contenido malintencionado**.
 
       - En **vínculos y datos adjuntos en el correo electrónico**, escriba todos los usuarios o los usuarios específicos cuyo correo electrónico desea examinar.
 
-    ![Active todas las casillas de verificación en aumentar protección frente a amenazas avanzadas.](media/setatp.png)
+    ![Active todas las casillas de verificación en aumentar protección frente a amenazas avanzadas.](../media/setatp.png)
 5. Elija **crear directivas** para activar los datos adjuntos seguros de ATP y vínculos seguros ATP.
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Configurar datos adjuntos seguros de ATP en el centro de seguridad & cumplimiento
@@ -201,7 +201,7 @@ Para crear una directiva de datos adjuntos seguros de ATP, vea [este breve víde
 7. Una vez que haya revisado la configuración, elija **crear esta directiva** o **Guardar**, según corresponda.
     
 
-|**Configuración u opción**|**Configuración recomendada** <br/>|
+|**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Bloquear los correos electrónicos actuales y futuros con malware detectado.  <br/> |
 |Descripción  <br/> |Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> |
@@ -235,7 +235,7 @@ Para modificar la directiva predeterminada:
     
 2. En **configuración que se aplica al contenido excepto el correo electrónico**, seleccione **Office 365 ProPlus, Office para iOS y Android**.
     
-3. Haga clic en **Guardar**. 
+3. Haga clic en **Guardar **. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -243,9 +243,9 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Haga clic en **Guardar**. 
+3. Haga clic en **Guardar **. 
 
-|**Configuración u opción**|**Configuración recomendada** <br/>|
+|**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Directiva de vínculos seguros para todos los destinatarios del dominio  <br/> |
 |Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes  <br/> |Seleccione **activado: las direcciones URL se rescribirán y comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo**.  <br/> |
@@ -263,7 +263,7 @@ Debe tener asignado el rol registros de auditoría en Exchange Online para activ
 1. Para activar la búsqueda de registros de auditoría, vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> y, a continuación, elija **cumplimiento** en **centros de administración** en el panel de navegación izquierdo. 
 2. En la página **Microsoft 365 Compliance** , elija **más recursos**y, a continuación, **abra** en la tarjeta del **centro de seguridad &amp; de Office 365** .
 
-    ![Elija abrir en los coches de cumplimiento de & de seguridad de Office 365.](media/gotosecandcomp.png)
+    ![Elija abrir en los coches de cumplimiento de & de seguridad de Office 365.](../media/gotosecandcomp.png)
 3. En la página seguridad y cumplimiento, haga clic en **Buscar** y, a continuación, en **búsqueda de registros de auditoría**.
 1. En la parte superior de la página de **búsqueda de registros de auditoría** , seleccione **Activar auditoría**.
 
@@ -276,14 +276,14 @@ Una vez activada la característica, puede buscar archivos, carpetas y muchas ac
 2. En el centro de administración de SharePoint, vaya a **uso compartido**de **directivas** \> .
 3. En la página de **uso compartido** , en **vínculos de archivos y carpetas**, seleccione **personas específicas**y, en **Configuración avanzada para vínculos de "cualquiera"**, seleccione **estos vínculos deben expirar dentro de estos muchos días**y escriba 14 (o cualquier otro número de días que desee restringir la duración del vínculo).
 
-    ![Elija personas específicas y establezca expiración de vínculos en 14 días.](media/anyonelinks.png)
+    ![Elija personas específicas y establezca expiración de vínculos en 14 días.](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>Alertas de actividad
 
 Puede usar alertas de actividad para realizar un seguimiento de las actividades de administración y de usuario y detectar los incidentes de malware y prevención de pérdida de datos en la organización. La suscripción incluye un conjunto de directivas predeterminadas, pero también puede crear otras personalizadas. Para obtener más información, consulte [Alert Policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Por ejemplo, si almacena un archivo importante en SharePoint que no quiere que nadie comparta de forma externa, puede crear una notificación que le avise si alguien lo comparte.
 
 La siguiente figura muestra las directivas predeterminadas que se incluyen en Microsoft 365 Business. <br/><br/>
-    ![Directivas de alertas predeterminadas incluidas en Microsoft 365 Business.](media/alertpolicies.png)
+    ![Directivas de alertas predeterminadas incluidas en Microsoft 365 Business.](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>Deshabilitar o administrar el uso compartido de calendarios
 
@@ -296,10 +296,10 @@ Puede impedir que los usuarios de su organización compartan sus calendarios o t
 3. Elija **Guardar cambios** en la parte inferior de la página.
 
     En la siguiente figura se muestra el uso compartido de calendarios no permitido. </br></br>
-    ![Captura de pantalla que muestra el uso compartido de calendario externo como no permitido.](media/nocalendarsharing.png)
+    ![Captura de pantalla que muestra el uso compartido de calendario externo como no permitido.](../media/nocalendarsharing.png)
 
     En la siguiente figura se muestra la configuración cuando se permite el uso compartido de calendarios con un vínculo de correo electrónico con información de disponibilidad.
 
-   ![Captura de pantalla del uso compartido de disponibilidad del calendario con cualquier usuario.](media/sharefreebusy.png)
+   ![Captura de pantalla del uso compartido de disponibilidad del calendario con cualquier usuario.](../media/sharefreebusy.png)
 
 Si los usuarios pueden compartir sus calendarios, vea [estas instrucciones](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) sobre cómo compartir desde Outlook en la Web.

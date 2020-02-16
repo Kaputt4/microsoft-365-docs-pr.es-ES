@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Obtenga información sobre cómo mover los archivos a OneDrive.
-ms.openlocfilehash: 0417325f93582ac5445cb739f9ca877a34f1d1c4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 85ff7ad2ecab3646eeb196a380f85983b1403f7a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593667"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065243"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para la Empresa
 
@@ -44,9 +44,9 @@ Si un usuario tiene un equipo que incluye muchos archivos personales, primero de
   
 1. Vaya a portal.office.com e inicie sesión con las credenciales de Microsoft 365 Business del usuario.
     
-2. Haga clic en el iniciador de aplicaciones ![The app launcher icon in Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) y vaya a OneDrive. 
+2. Haga clic en el iniciador de aplicaciones ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) y vaya a OneDrive. 
     
-3. Elija **Cargar**![Upload](media/d9b963b8-10af-42e2-953d-360301b83d3c.png) en la barra de menús y después vaya a los archivos que quiera guardar. 
+3. Elija **Cargar**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) en la barra de menús y después vaya a los archivos que quiera guardar. 
     
 Para transferir el perfil de usuario y archivos importantes, también puede usar una herramienta de terceros, como ForensiT. Debe cargar los archivos resultantes también en OneDrive para la Empresa.
   

@@ -1,5 +1,7 @@
 ---
 title: Configurar dispositivos móviles para los usuarios de Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Instale Office en un iPhone o un teléfono Android, y los archivos de trabajo de las aplicaciones de Office estarán protegidos por Microsoft 365 Business.
-ms.openlocfilehash: 6dc116f9c0822d33e8d742d065c8485a0cf82c37
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: 36cc3cb9b35cb5746a4147509f17e4f4d7909617
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850832"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42089463"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Configurar dispositivos móviles para los usuarios de Microsoft 365 Business
 
@@ -43,31 +45,31 @@ Vea un breve vídeo sobre cómo configurar las aplicaciones de Office en disposi
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Vaya al **App Store** y, en el campo de búsqueda, escriba Microsoft Outlook.
   
-![Go to the iPhone App Store](media/886913de-76e5-4883-8ed0-4eb3ec06188f.png)
+![Go to the iPhone App Store](../media/886913de-76e5-4883-8ed0-4eb3ec06188f.png)
   
 Pulse el icono de nube para instalar Outlook.
   
-![Tap the cloud icon to install Outlook](media/665e1620-948a-4ab8-b914-dca49530142c.png)
+![Tap the cloud icon to install Outlook](../media/665e1620-948a-4ab8-b914-dca49530142c.png)
   
 Cuando haya terminado la instalación, pulse el botón **Abrir** para abrir Outlook y, después, pulse **Introducción**.
   
-![Screenshot of Outlook with Get Started button](media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
+![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
 Escriba su dirección de correo electrónico de trabajo en la pantalla **Agregar una cuenta de correo electrónico** \> **Agregar cuenta** y, después, escriba sus credenciales de Microsoft 365 Business \> **Iniciar sesión**.
   
-![Sign in to your work account](media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
+![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
 Si su organización protege los archivos de las aplicaciones, verá un cuadro de diálogo en el que se indica que la organización está protegiendo los datos de la aplicación y que debe reiniciar la aplicación para seguir utilizándola. Pulse **Aceptar** y cierre Outlook. 
   
-![Captura de pantalla que muestra que su organización está protegiendo ahora su aplicación de Outlook](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![Captura de pantalla que muestra que su organización está protegiendo ahora su aplicación de Outlook](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
 Busque Outlook en el iPhone y reinícielo. Cuando se le solicite, escriba un PIN y compruebe. Ya puede usar su Outlook para iPhone.
   
-![Set a PIN to access your organization's data](media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
+![Set a PIN to access your organization's data](../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
 ## <a name="androidtabandroid"></a>[Android](#tab/Android)
   
@@ -75,34 +77,34 @@ Vea un vídeo sobre cómo instalar Outlook y Office en dispositivos Android.<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-Si este vídeo le ha servido de ayuda, consulte la [serie de formación completa para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Para iniciar la instalación en un teléfono Android, vaya a la tienda de Play.
   
-![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
+![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
 Escriba Microsoft Outlook en el cuadro de búsqueda de Google Play y pulse **instalar**. Una vez que haya finalizado la instalación de Outlook, pulse **abrir**.
   
-![Tap Open to open Outlook app](media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
+![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
 En la aplicación de Outlook, pulse **Introducción**, a continuación, agregue su cuenta \> de correo electrónico de Microsoft 365 Business **continue**e inicie sesión con las credenciales de su organización.
   
-![Sign in to your organizational account in Outlook](media/18f67c66-4bab-4b99-94bd-080839312e29.png)
+![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
 En el cuadro de diálogo que indica que debe instalar la aplicación Portal de empresa de Intune, pulse **Ir a la tienda**.
   
-![Tap on Go to store to get Intune Company Portal app](media/a702d712-5622-45dd-a511-b1adaee63071.png)
+![Tap on Go to store to get Intune Company Portal app](../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
 En Play Store, instale portal de empresa de Intune.
   
-![Screenshot that shows the install button for Intune Company Portal in Google Play Store](media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
+![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
 Vuelva a abrir Outlook e introduzca y confirme un PIN. La aplicación de Outlook ya está lista para que la use.
   
-![Set  PIN for Outlook app in Android](media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
+![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Vídeos de aprendizaje para empresas de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

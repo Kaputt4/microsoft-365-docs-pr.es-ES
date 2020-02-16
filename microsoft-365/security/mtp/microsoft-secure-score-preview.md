@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3fe8a390e92e56a98d16a4cbc647a74b38c248ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600197"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087587"
 ---
 # <a name="microsoft-secure-score-preview"></a>Puntuación segura de Microsoft (versión preliminar)
 
@@ -41,7 +41,7 @@ Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y
 
 Además, puede obtener acceso a sus recomendaciones y puntuaciones a través de la [API de Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Obtenga información sobre el [tipo de recurso de puntuación segura](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad o resolver la acción de mejora con una aplicación o software de terceros. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios. Si no puede o no desea activar una de las acciones de mejora, puede optar por aceptar el riesgo o el riesgo restante.
 
@@ -100,7 +100,7 @@ Para ayudarle a la información que necesita con mayor rapidez, las acciones de 
 
 En la página información general sobre la calificación segura de Microsoft, puede ver cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. La página de información general también es la ubicación para obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de los bancos de pruebas y las acciones de mejora ordenadas por prioridad que se pueden realizar para mejorar la puntuación.
 
-![Página Web de](../media/secure-score/secure-score-homepage.png)
+![Página Web de](../../media/secure-score/secure-score-homepage.png)
 puntuación segura*figura 1: Página de introducción a la calificación segura de Microsoft*
 
 ## <a name="take-action-to-improve-your-score"></a>Tomar medidas para mejorar su puntuación
@@ -115,7 +115,7 @@ La clasificación se basa en el número de puntos restantes que quedan para logr
 
 Al seleccionar una acción de mejora específica, aparece un elemento flotante de página completa.  
 
-![Ejemplo](../media/secure-score/secure-score-improvement-action.png)
+![Ejemplo](../../media/secure-score/secure-score-improvement-action.png)
 de control flotante de acción de mejora*figura 2: ejemplo de control flotante de acción de mejora*
 
 Para completar la acción, tiene algunas opciones:

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ec659a939064d34d3e0cc078a90cd343e495ae58
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6a0caa80d89ad40c3a2e2b0caa55c8dc2027a06d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957375"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087286"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -38,7 +38,7 @@ Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y
 
 Además, puede obtener acceso a sus recomendaciones y puntuaciones a través de la [API de Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Obtenga información sobre el [tipo de recurso de puntuación segura](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o solucionar la acción de mejora con una aplicación o un software de terceros. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios.
 
@@ -97,7 +97,7 @@ Para ayudarle a la información que necesita con mayor rapidez, las acciones de 
 
 En la página información general sobre la calificación segura de Microsoft, puede ver cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. La página de información general también es la ubicación para obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de los bancos de pruebas y las acciones de mejora ordenadas por prioridad que se pueden realizar para mejorar la puntuación.
 
-![Página Web de](../media/secure-score/homepage-original.png)
+![Página Web de](../../media/secure-score/homepage-original.png)
 puntuación segura*figura 1: Página de introducción a la calificación segura de Microsoft*
 
 ## <a name="take-action-to-improve-your-score"></a>Tomar medidas para mejorar su puntuación
@@ -122,7 +122,7 @@ Cuando se selecciona una acción de mejora específica, aparece una volar hacia 
 
 4. Seleccione **revisar** porque la acción de mejora requiere que Revise regularmente una parte del entorno para obtener y conservar puntos. Por ejemplo, las reglas de reenvío de buzones deben revisarse cada semana para asegurarse de que los datos no se están exfiltrando desde la red. No es necesario realizar ningún cambio, pero se debe realizar una acción. Si revisa las reglas con regularidad, recibirá los puntos. Si no es así, se reduce el resultado.
 
-![Ejemplo de acción de mejora de puntuación segura](../media/secure-score/secure-score1x450.png) ![Ejemplo de acción para mejorar la revisión de calificaciones seguras](../media/secure-score/secure-score2x450.png)
+![Ejemplo de acción de mejora de puntuación segura](../../media/secure-score/secure-score1x450.png) ![Ejemplo de acción para mejorar la revisión de calificaciones seguras](../../media/secure-score/secure-score2x450.png)
 
 *Figuras 2 & 3: controles flotantes de acciones de mejora*
 
@@ -140,7 +140,7 @@ Para hacer que Microsoft califique de forma segura sea un mejor representante de
 
 ### <a name="removed-not-scored-improvement-actions"></a>Acciones de mejora "sin puntuar" quitadas
 
-Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. Una calificación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Las acciones de mejora no puntuadas no se pueden medir.  
+Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. La puntuación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Las acciones de mejora no puntuadas no se pueden medir.  
 
 Por estos motivos, se han eliminado todas las acciones de mejora que no se han puntuado. No es necesario realizar ninguna acción en su parte.
 
@@ -210,11 +210,7 @@ Nuevas acciones de mejora agregadas:
 
 Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. Una calificación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Revisión las acciones de mejora no se miden en el mismo estándar que otras acciones de mejora.  
 
-Por estos motivos, todas las acciones de mejora que requerían una cadencia de revisión se eliminarán temporalmente. No es necesario realizar ninguna acción en su parte.
-
-### <a name="simplification-of-the-point-system"></a>Simplificación del sistema de punto
-
-Para estandarizar puntos en varias experiencias, se actualizará el total del punto de acción mejora de la puntuación segura para que merezca 10 puntos o menos. Es necesario ser más coherente en el respire ancho de los controles de seguridad que tenemos hoy y los que se van a agregar en el futuro. Si bien se trata de un cambio significativo y verá los totales de los puntos de colocación, no habrá cambios en su postura de seguridad.  
+Por estos motivos, todas las acciones de mejora que requerían una cadencia de revisión se eliminarán temporalmente. No es necesario realizar ninguna acción en su parte. 
 
 ### <a name="preview-features"></a>Versión preliminar de las características
 
@@ -225,6 +221,7 @@ Las siguientes características se incluirán en la [versión preliminar](micros
 * Mejor seguimiento y supervisión de regresiones de puntuación
 * Filtrar, etiquetar, buscar y agrupar las acciones de mejora
 * Administrar hacia sus metas futuras mediante proyecciones de puntuación y acciones planeadas
+* Simplificación del sistema de puntos
 * Y mucho más.
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión

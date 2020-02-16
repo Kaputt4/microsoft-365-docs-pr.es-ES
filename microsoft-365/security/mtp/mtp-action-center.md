@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a0b86240e09838ff290bb9c3b4b53f5cce3e2995
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600127"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083797"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Vaya a Centro de actividades para ver las acciones correctivas
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600127"
 
 ## <a name="a-single-pane-of-glass-experience"></a>Una perspectiva centralizada
 
-![Centro de actividades](../images/air-actioncenter.png)
+![Centro de actividades](../../media/air-actioncenter.png)
 
 Use el centro de actividades para ver los resultados de las investigaciones actuales y pasadas en los buzones y dispositivos de su organización. En función del tipo de amenaza y el [veredicto resultante](mtp-autoir-results.md#remediation-actions-following-automated-investigation), las acciones de corrección se ejecutan automáticamente o una vez que el equipo de operaciones de seguridad de la organización las aprueban. Todas las acciones de corrección, tanto si están pendientes de aprobación como si ya se han aprobado, se consolidan en el Centro de actividades. 
 
@@ -65,9 +65,9 @@ En la tabla siguiente se enumeran las acciones de corrección que se admiten act
 
     - En la pestaña **Historial** se muestran las investigaciones pasadas y las acciones de corrección que se han ejecutado automáticamente. Puede ver los datos del día, la semana, el mes o los seis meses anteriores.
 
-4. Para mostrar solo las columnas que quiera ver, seleccione **Personalizar columnas**.<br/>![Centro de actividades en la Protección contra amenazas de Microsoft](../images/mtp-action-center.png)
+4. Para mostrar solo las columnas que quiera ver, seleccione **Personalizar columnas**.<br/>![Centro de actividades en la Protección contra amenazas de Microsoft](../../media/mtp-action-center.png)
 
-5. Seleccione un elemento de la lista para ver más detalles sobre una investigación. Se abrirá la vista de detalles de la investigación.<br/>![Detalles de la investigación](../images/mtp-air-investdetails.png)
+5. Seleccione un elemento de la lista para ver más detalles sobre una investigación. Se abrirá la vista de detalles de la investigación.<br/>![Detalles de la investigación](../../media/mtp-air-investdetails.png)
 
     - Si la investigación afecta al contenido de correo electrónico (por ejemplo, la entidad es un buzón), los detalles de la investigación se abren en el Centro de seguridad y cumplimiento de Office 365 ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
 

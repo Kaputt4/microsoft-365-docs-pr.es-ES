@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 272e8a76cdb3a1555f561bd56e63422f14394904
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596958"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067437"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -31,7 +31,7 @@ En esta guía se explica cómo implementar las directivas recomendadas en un ent
 
 El siguiente diagrama ilustra el conjunto de directivas recomendado. Muestra el nivel de protección al que se aplica cada directiva y si las directivas se aplican a equipos, teléfonos y tabletas o a ambas categorías de dispositivos. También indica dónde están configuradas estas directivas.
 
-![Directivas comunes para configurar el acceso a los dispositivos e identidades](../images/Identity_device_access_policies_byplan.png)
+![Directivas comunes para configurar el acceso a los dispositivos e identidades](../media/Identity_device_access_policies_byplan.png)
 
 
 En el resto de este artículo se describe cómo configurar estas directivas. 
@@ -62,13 +62,13 @@ Una práctica recomendada es crear un grupo de Azure AD para la exclusión de ac
 
 El siguiente diagrama muestra un ejemplo de asignación de usuarios y exclusiones.
 
-![Ejemplo de asignaciones y exclusiones de usuario para las reglas de MFA](../images/identity-access-policies-assignment.png)
+![Ejemplo de asignaciones y exclusiones de usuario para las reglas de MFA](../media/identity-access-policies-assignment.png)
 
 En la ilustración, se asigna una directiva de acceso condicional que requiere MFA *siempre*a "Top Secret Project X Team". Tenga cuidado al aplicar niveles más altos de protección a los usuarios. Los miembros de este equipo de proyecto tendrán que proporcionar dos formas de autenticación cada vez que inicien sesión, incluso si no están viendo contenido altamente regulado.  
 
 Todos los grupos de Azure AD creados como parte de estas recomendaciones deben crearse como grupos de Office 365. Esto es especialmente importante para la implementación de Azure Information Protection (AIP) al proteger documentos en SharePoint Online.
 
-![Captura de pantalla para crear grupos de Office 365](../images/identity-device-AAD-groups.png)
+![Captura de pantalla para crear grupos de Office 365](../media/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Requerir MFA según el riesgo de inicio de sesión
@@ -84,7 +84,7 @@ Para crear una directiva de acceso condicional, haga lo siguiente:
 
 4. Pulse **Nueva directiva**.
 
-![Directiva de acceso condicional de base de referencia](./media/secure-email/CA-EXO-policy-1.png)
+![Directiva de acceso condicional de base de referencia](../media/secure-email/CA-EXO-policy-1.png)
 
  En las tablas siguientes se describen las opciones de configuración de directivas de acceso condicional para implementarlas en esta Directiva.
 
@@ -192,7 +192,7 @@ Las directivas de protección de aplicaciones definen qué aplicaciones están p
 Cree una directiva para cada plataforma:
 - iOS
 - Android
-- Windows 10
+- Windows 10
 
 Para crear una nueva Directiva de protección de aplicaciones, inicie sesión en el portal de Microsoft Azure con sus credenciales de administrador y, a continuación, navegue a > **directivas de protección**de aplicaciones de **aplicaciones cliente**. Elija **crear Directiva**.
 
@@ -277,7 +277,7 @@ Cree una directiva para cada plataforma:
 - Android
 - Android Enterprise
 - iOS
-- Os
+- macOS
 - Esta opción está disponible en los siguientes tipos de dispositivos:
 - Windows 8,1 y versiones posteriores
 - Windows 10 y versiones posteriores
@@ -307,7 +307,7 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
+|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
 ||Contraseñas sencillas|Desbloquear||
 ||Tipo de contraseña|Valor predeterminado del dispositivo||
 ||Longitud mínima de la contraseña|6 ||

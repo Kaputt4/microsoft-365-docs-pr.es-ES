@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5ad616deb8717772a68b01147ed858f8e7f6ed7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f7aaf7eb4425dadeb27699654656c86d2b6263
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600257"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087309"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Priorizar incidentes con la Protección contra amenazas de Microsoft
 
@@ -39,7 +39,7 @@ La Protección contra amenazas de Microsoft aplica análisis de correlación y a
 La **cola de incidentes** muestra un conjunto de incidentes que se han marcado desde diferentes dispositivos, usuarios y buzones de correo. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada.
 
 
-![Imagen de cola de incidentes](../images/incidents-queue.png) 
+![Imagen de cola de incidentes](../../media/incidents-queue.png) 
 
 De manera predeterminada, la cola del Centro de seguridad de Microsoft 365 muestra los incidentes encontrados en los últimos 30 días, con el incidente más reciente en la parte superior de la lista, ayudándole así a ver primero los incidentes más recientes.
 

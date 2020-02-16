@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602857"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085589"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Paso 2: implementar Windows 10 Enterprise para los dispositivos existentes como actualización local
 
 *Este artículo se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 La ruta más sencilla para actualizar equipos que ejecutan Windows 7 o Windows 8,1 a Windows 10 es a través de una actualización inmediata. Puede usar una secuencia de tareas del administrador de configuración (Administrador de configuración) para automatizar el proceso por completo. 
 
@@ -35,7 +35,7 @@ Siga estos pasos para configurar e implementar una imagen de Windows 10 Enterpri
 
 El póster de Configuration Manager es una página en el modo horizontal (17x11). Haga clic en la imagen siguiente para ver un PDF en el explorador. 
 
-[![Implementación de Windows 10 con el póster de Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+[![Implementación de Windows 10 con el póster de Configuration Manager](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
 También puede descargar este póster en [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) o en formato de [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx).
 
@@ -151,4 +151,4 @@ Como control provisional, puede consultar los [criterios de salida](windows10-ex
 
 |||
 |:-------|:-----|
-|![Paso 3](./media/stepnumbers/Step3.png)| [Implementar Windows 10 Enterprise para dispositivos nuevos con Windows AutoPilot](windows10-deploy-autopilot.md) |
+|![Paso 3](../media/stepnumbers/Step3.png)| [Implementar Windows 10 Enterprise para dispositivos nuevos con Windows AutoPilot](windows10-deploy-autopilot.md) |

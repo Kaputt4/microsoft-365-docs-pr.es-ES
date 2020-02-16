@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 para campañas
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 para campañas
-ms.openlocfilehash: d80e25aedaf3a0160fc6ed926222dd3c12cf7466
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 32437ccc0c110c0539cb3d24f036438d6a313921
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38029084"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056515"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 para Campañas
 ===========================
@@ -43,7 +45,7 @@ En nuestro mundo actual, mantener la seguridad de los datos y las comunicaciones
 - Proteger los archivos de trabajo en todos los dispositivos iOS, Android y Windows 10 con seguridad de nivel empresarial que sea fácil de administrar 
 - Aplicar mayor protección para las cuentas de usuario y la identidad 
 
-![Microsoft 365 Business protege sus herramientas de productividad, herramientas de colaboración, almacenamiento de archivos, correo electrónico, dispositivos e identidad.](media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business protege sus herramientas de productividad, herramientas de colaboración, almacenamiento de archivos, correo electrónico, dispositivos e identidad.](../media/M365-WhatIsIt-SecurityFocus.png)
 
 Aunque las campañas de elección federal de los Estados Unidos han sido aptas para precios especiales para Microsoft 365 Business, cualquier organización con este plan puede aprovechar esta guía para configurar una mayor seguridad y obtener información sobre cómo colaborar de forma segura.
 
@@ -92,7 +94,7 @@ Una vez que haya configurado el entorno seguro de Microsoft 365, puede usar las 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
+                            <img src="../media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -110,7 +112,7 @@ Una vez que haya configurado el entorno seguro de Microsoft 365, puede usar las 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/m365-democracy-teams-meetings.png" alt="an online meeting" />
+                            <img src="../media/m365-democracy-teams-meetings.png" alt="an online meeting" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -128,7 +130,7 @@ Una vez que haya configurado el entorno seguro de Microsoft 365, puede usar las 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
+                            <img src="../media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -146,7 +148,7 @@ Una vez que haya configurado el entorno seguro de Microsoft 365, puede usar las 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
+                            <img src="../media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -164,7 +166,7 @@ Una vez que haya configurado el entorno seguro de Microsoft 365, puede usar las 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
+                            <img src="../media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
                         </div>
                     </div>
                     <div class="cardText">

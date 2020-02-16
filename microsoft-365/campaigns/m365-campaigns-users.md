@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo Microsoft 365 para las campañas afecta a los usuarios.
-ms.openlocfilehash: 7c510de861758da3da2c86a6804a58de6d4e8030
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594761"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080516"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Cómo Microsoft 365 para las campañas afecta a los usuarios
 
 Microsoft 365 para las campañas dificulta que los hackers obtengan acceso a su entorno. El equilibrio es que los usuarios tendrán que saber cómo trabajar en este entorno más seguro. Sabemos que es necesario algo más de paciencia, pero merece la pena mantener la organización protegida.
 
-![Ilustración que resume los puntos clave desde abajo para iPhone, dispositivos Android, Mac, Windows 10, uso compartido y personal clave](media/M365-democracy-Users_700px.png)
+![Ilustración que resume los puntos clave desde abajo para iPhone, dispositivos Android, Mac, Windows 10, uso compartido y personal clave](../media/M365-democracy-Users_700px.png)
 
 ## <a name="use-secure-email-practices"></a>Usar prácticas de correo electrónico seguro
 Todos los usuarios deben conocer y usar estos procedimientos de correo electrónico para ayudar a mantener seguro su correo electrónico:

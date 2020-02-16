@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo requerir MFA y cómo configurar directivas de acceso condicional para Microsoft 365 Business.
-ms.openlocfilehash: b65cccf9931da4701157f26ffece7a7c90689094
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594865"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056431"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Requerir la autenticación multifactor y configurar directivas de acceso condicional
 
@@ -58,13 +58,13 @@ Para requerir que todos los usuarios inicien sesión con un segundo formulario d
 2. En la página Configuración, elija **Ver** en la tarjeta para **crear un inicio de sesión más seguro** .
 
 
-    ![Haga que el inicio de sesión sea una tarjeta más segura.](media/setupmfa.png)
+    ![Haga que el inicio de sesión sea una tarjeta más segura.](../media/setupmfa.png)
 3. En la página hacer que **el inicio de**sesión sea más seguro, elija introducción.
  
 4. En el panel reforzar la seguridad de inicio de sesión, active las casillas situadas junto a **requerir autenticación multifactor para administradores** y **requerir que los usuarios se registren para la autenticación multifactor y bloquear el acceso si se detecta un riesgo**.
     Asegúrese de excluir la cuenta de administrador de [emergencia](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) o "ruptura de cristal" del requisito de MFA en el cuadro **Buscar usuarios** .
     
-    ![Página de seguridad de complementos de refuerzo.](media/requiremfa.png)
+    ![Página de seguridad de complementos de refuerzo.](../media/requiremfa.png)
 
 5. Elija **crear Directiva** en la parte inferior de la página.
 
@@ -74,7 +74,7 @@ Para requerir que todos los usuarios inicien sesión con un segundo formulario d
     
     Las directivas de línea base se enumeran en la página y puede ver que **requieren MFA para los administradores** y la **protección del usuario final** ya están habilitados después de completar los pasos de [requerir MFA](#require-mfa).
 
-    ![Página donde se enumeran las directivas de línea base para el acceso condicional.](media/casettings.png)
+    ![Página donde se enumeran las directivas de línea base para el acceso condicional.](../media/casettings.png)
 2. Consulte las siguientes instrucciones específicas para cada directiva:
 
     - [Requerir MFA para los administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

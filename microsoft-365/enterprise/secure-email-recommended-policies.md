@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: e8c2b10f3e1dd88703b15c326dedb164a686cfca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596737"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084319"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -34,7 +34,7 @@ Estas recomendaciones requieren que los usuarios usen clientes de correo electr�
 
 En el siguiente diagrama se ilustran las directivas comunes de identidad y acceso a dispositivos, y se indica qué directivas deben actualizarse para proteger el correo electrónico. Tenga en cuenta la adición de una nueva regla para que Exchange Online bloquee los clientes de ActiveSync. Esto fuerza el uso de Outlook Mobile.
 
-![Resumen de las actualizaciones de directivas para proteger el correo electrónico](../images/identity-access-ruleset-mail.png)
+![Resumen de las actualizaciones de directivas para proteger el correo electrónico](../media/identity-access-ruleset-mail.png)
 
 Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configurarlas, solo tiene que crear la nueva Directiva para bloquear a los clientes de ActiveSync. Revise las directivas enumeradas en la tabla siguiente y haga las adiciones recomendadas, o bien confirme que ya se han incluido. Cada regla tiene vínculos a las instrucciones de configuración asociadas en el artículo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
@@ -70,7 +70,7 @@ Esta directiva impide que los clientes de ActiveSync omitan otras reglas de acce
 
 8. Elija **condiciones**y, a continuación, elija **aplicaciones cliente**.
 
-9. Para **configurar**, seleccione **sí**. Compruebe solo lo siguiente: **aplicaciones móviles y clientes de escritorio** y **clientes de Exchange ActiveSync**. Elija **Listo**.
+9. Para **configurar**, seleccione **sí**. Compruebe solo lo siguiente: **aplicaciones móviles y clientes de escritorio** y **clientes de Exchange ActiveSync**. Seleccione **Listo**.
 
 10. Pulse **Conceder** en la sección **Controles de acceso**.
 

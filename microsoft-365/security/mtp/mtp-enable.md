@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a85680e323c7a8fba6f2d74d5cc00c58c2013d23
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 8f966060ebc9a30166647b397b93f2b45356df74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083739"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Habilitar la Protección contra amenazas de Microsoft
 
@@ -45,7 +45,7 @@ Microsoft Threat Protection agrega datos de los diversos servicios integrados. P
 
 Antes de activar el servicio, el centro de seguridad 365 de Microsoft ([Security.Microsoft.com](https://security.microsoft.com)) no muestra los **incidentes** ni las opciones del **centro de actividades** en el panel de navegación.
 
-![Imagen del panel de navegación del centro de seguridad de Microsoft 365 sin](../images/mtp-off.png)
+![Imagen del panel de navegación del centro de seguridad de Microsoft 365 sin](../../media/mtp-off.png)
 Microsoft Threats Features Microsoft*365 centro de seguridad con Microsoft Threat Protection* desactivado
 
 Para activar la protección contra amenazas de Microsoft, seleccione **configuración** en el panel de navegación. En la **[página Configuración](https://security.microsoft.com/settings)**, vaya a la**opción de activación/exclusión**de **Microsoft Threat Protection** > .
@@ -65,7 +65,7 @@ Una vez que recibe el servicio, este agrega:
 - Un centro de actividades para administrar [una investigación y respuestas automáticas](mtp-autoir.md)
 - [Características de búsqueda](advanced-hunting-overview.md) avanzadas en la página de **Búsqueda**
 
-![Imagen del panel de navegación del centro de seguridad de Microsoft 365 con](../images/mtp-on.png)
+![Imagen del panel de navegación del centro de seguridad de Microsoft 365 con](../../media/mtp-on.png)
 Microsoft Threat Protection características de*Microsoft 365 Security Center con incidentes de administración de incidentes y otras capacidades de protección contra amenazas de Microsoft*
 
 ### <a name="getting-azure-atp-data"></a>Obtener datos de Azure ATP

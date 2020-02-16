@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 208cbb49afc2f4520fa44a4ef283194bcaff22be
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08aa1f0c252d931ab1abf078b1c0cfcf7d9b43a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600097"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083769"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Ver los detalles y los resultados de una investigación automatizada
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600097"
 
 Cuando se produce una investigación automatizada en la Protección contra amenazas de Microsoft, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizada. Si tiene los [permisos necesarios](mtp-action-center.md#required-permissions-for-action-center-tasks), puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes. 
 
-![Detalles de la investigación](../images/mtp-air-investdetails.png)
+![Detalles de la investigación](../../media/mtp-air-investdetails.png)
 
 ## <a name="open-the-investigation-details-view"></a>Abrir la vista de detalles de la investigación
 
@@ -60,7 +60,7 @@ Use una página de detalles de un incidente para ver información detallada sobr
 
 2. En el panel de navegación, elija **incidentes**. 
 
-3. Seleccione un elemento de la lista para abrir la vista detalles del incidente.<br/>![Detalles del incidente](../images/mtp-incidentdetails-tabs.png)
+3. Seleccione un elemento de la lista para abrir la vista detalles del incidente.<br/>![Detalles del incidente](../../media/mtp-incidentdetails-tabs.png)
 
 4. En la pestaña **investigaciones**, seleccione una investigación en la lista.
 
@@ -68,7 +68,7 @@ Use una página de detalles de un incidente para ver información detallada sobr
 
 Use la vista detalles de la investigación para ver la actividad pasada, actual y pendiente relacionada con una investigación. La vista de detalles de la investigación es similar a la siguiente imagen:
 
-![Detalles de la investigación](../images/mtp-air-investdetails.png)
+![Detalles de la investigación](../../media/mtp-air-investdetails.png)
 
 En la vista de detalles de la investigación, puede ver información en las pestañas **gráfico de investigación**, **alertas**, **dispositivos**, **identidades**, **resultados clave**, **entidades**, **registro**, y **acciones pendientes**, que se describen en la siguiente tabla.
 
