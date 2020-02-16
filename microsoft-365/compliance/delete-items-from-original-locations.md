@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo usar la herramienta de nueva investigación de datos (vista previa) en el centro de seguridad & cumplimiento para eliminar elementos de sus ubicaciones originales.
-ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0232a822af0427fcfa669fa1e86558ca54996202
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595325"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075866"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminar elementos de su ubicación original (versión preliminar)
 
@@ -52,22 +52,22 @@ Realice los siguientes pasos para eliminar elementos de su ubicación original:
  
 2. Haga clic en **acción** y, a continuación, en **eliminar elementos desde ubicaciones originales**.
 
-   ![Haga clic en acción y, a continuación, en eliminar elementos desde ubicaciones originales](media/DataInvestigationsDeleteItems1.png)
+   ![Haga clic en acción y, a continuación, en eliminar elementos desde ubicaciones originales](../media/DataInvestigationsDeleteItems1.png)
 
 3. En la página de flotante, compruebe el número de elementos y los documentos secundarios relacionados que se eliminarán y, a continuación, haga clic en **eliminar**.
 
-   ![La página de control flotante muestra el número de elementos y los documentos adjuntos que se han seleccionado para su eliminación.](media/DataInvestigationsDeleteItems2.png)
+   ![La página de control flotante muestra el número de elementos y los documentos adjuntos que se han seleccionado para su eliminación.](../media/DataInvestigationsDeleteItems2.png)
 
    > [!NOTE]
    > En la captura de pantalla anterior, el número de elementos indica el número de elementos que se seleccionan para su eliminación. El número de documentos indica el número total de elementos, incluidos los archivos que están adjuntos a un elemento primario. Por ejemplo, si selecciona un mensaje de correo electrónico y ese mensaje tiene un documento de Word adjunto, el número de elementos y documentos que se muestra en **documentos seleccionados sólo** sería de **1 elemento (2 documentos)**.
 
 Puede realizar un seguimiento del progreso del trabajo **eliminar elementos desde ubicaciones originales** en la pestaña **trabajos** . Haga clic en el trabajo para mostrar la página de flotante.
 
-![Página de control flotante para eliminar elementos de la tarea ubicaciones originales](media/DataInvestigationsDeleteItems3.png)
+![Página de control flotante para eliminar elementos de la tarea ubicaciones originales](../media/DataInvestigationsDeleteItems3.png)
 
 Cuando se eliminan los elementos del trabajo, el estado del trabajo se establece en **correcto**. También se muestra la fecha y la hora del trabajo completado.
 
-![Trabajo de eliminación de elementos completada](media/DataInvestigationsDeleteItems4.png)
+![Trabajo de eliminación de elementos completada](../media/DataInvestigationsDeleteItems4.png)
 
 > [!NOTE]
 > Es posible que reciba un estado de **parcialmente correcto** para el trabajo **eliminar elementos de ubicaciones originales** . Hay una serie de situaciones que dan como resultado este estado de trabajo. Para obtener más información, vea la sección [eliminaciones parcialmente correctas](#partially-successful-deletions) en este artículo.

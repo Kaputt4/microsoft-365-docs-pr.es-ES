@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante el cifrado de mensajes de Office 365.
-ms.openlocfilehash: a2f37bff8fa3fd45999a44341cfdb077b4f43e62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bdd479ec09f0ecefd2758e2b8012a1a7351d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595345"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075877"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365
 
@@ -48,7 +48,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 3. En el centro de administración de Microsoft 365, elija centro de **Administración** \> , **Exchange**.
 
-4. En el EAC, vaya a **** \> **reglas** de flujo de correo **** ![y seleccione nuevo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. En el EAC, vaya a **** \> **reglas** de flujo de correo **** ![y seleccione nuevo](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. En **nombre**, escriba un nombre para la regla, como cifrar correo para DrToniRamos@hotmail.com.
 
@@ -82,7 +82,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 4. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-5. En la lista de reglas de flujo de correo, seleccione la regla que desea modificar para usar las nuevas funciones de OME y **** ![, a continuación](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif), elija Editar icono Editar.
+5. En la lista de reglas de flujo de correo, seleccione la regla que desea modificar para usar las nuevas funciones de OME y **** ![, a continuación](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif), elija Editar icono Editar.
 
 6. Para habilitar el cifrado con las nuevas capacidades de OME, desde **haga lo siguiente**, elija **modificar la seguridad de los mensajes** y, a continuación, elija **aplicar el cifrado de mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar** y, a continuación, elija **Aceptar**.
 
@@ -106,7 +106,7 @@ Si todavía no ha movido su organización de Office 365 a las nuevas capacidades
 
 3. En el centro de administración de Microsoft 365, elija centro de **Administración** \> , **Exchange**.
 
-4. En el EAC, vaya a **** \> **reglas** de flujo de correo **** ![y seleccione nuevo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. En el EAC, vaya a **** \> **reglas** de flujo de correo **** ![y seleccione nuevo](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. En **nombre**, escriba un nombre para la regla, como cifrar correo para DrToniRamos@hotmail.com.
 
@@ -164,7 +164,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 3. En el centro de administración de Microsoft 365, elija centro de **Administración** \> , **Exchange**.
 
-4. En el EAC, vaya a **** \> **reglas** de flujo de correo **** ![y seleccione nuevo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. En el EAC, vaya a **** \> **reglas** de flujo de correo **** ![y seleccione nuevo](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. En **nombre**, escriba un nombre para la regla, como quitar el cifrado del correo entrante.
 
@@ -172,7 +172,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 7. En **hacer lo siguiente**, seleccione **modificar la seguridad** \> **de los mensajes Quite la versión anterior de OME**.
 
-8. Haga clic en **Guardar**.
+8. Seleccione **Guardar**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones de OME
 
