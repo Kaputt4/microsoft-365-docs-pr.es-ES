@@ -1,5 +1,7 @@
 ---
 title: Supervisar pérdidas de datos personales
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -16,18 +18,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
-ms.openlocfilehash: 43133ed638f91957307b832826c21ae81aa269b0
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572977"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088417"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
 Existen muchas herramientas que pueden usarse para supervisar el uso y transporte de datos personales. En este tema se describen tres herramientas que funcionan bien.
 
-![Herramientas para supervisar el uso y transporte de datos personales](../media/Monitor-for-leaks-of-personal-data-image1.png)
+![Herramientas para supervisar el uso y transporte de datos personales](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 En la ilustración:
 
@@ -61,7 +63,7 @@ Los informes DLP están en el centro de seguridad y el centro de cumplimiento. V
 
 Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
 
-![Informe que muestra coincidencias de directivas DLP](../media/Monitor-for-leaks-of-personal-data-image2.png)
+![Informe que muestra coincidencias de directivas DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="office-365-audit-log-and-alert-policies"></a>Directivas de alerta y registro de auditoría de Office 365
 
@@ -103,7 +105,7 @@ Para entender mejor su entorno de nube, la característica de investigación Clo
 
 Para obtener ejemplos, la siguiente ilustración muestra dos directivas Cloud App Security que pueden ayudarle con el RGPD.
 
-![Directivas de Cloud App Security de ejemplo](../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Directivas de Cloud App Security de ejemplo](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 Las primera directiva envía una alerta cuando se comparten archivos con un atributo DCP predefinido o una expresión personalizada que elija fuera de la organización desde las aplicaciones SaaS que elija.
 
@@ -121,7 +123,7 @@ Si aún no empezó a usar Cloud App Security, inícielo. Para obtener acceso a C
 
 Nota: No olvide habilitar "Analizar automáticamente archivos de etiquetas de clasificación de Azure Information Protection" (en la configuración General) al comenzar a usar Cloud App Security o antes de asignar etiquetas. Tras la configuración, Cloud App Security no vuelve a examinar los archivos existentes hasta que se modifican.
 
-![Panel en el que se muestra información de alertas](../media/Monitor-for-leaks-of-personal-data-image4.png)
+![Panel en el que se muestra información de alertas](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Más información:
 

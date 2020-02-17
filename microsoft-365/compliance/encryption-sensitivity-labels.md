@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: e27e130e96086dd37dd1cf5f49c30ebc764a8958
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830954"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074676"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -63,7 +63,7 @@ Cuando [crea o modifica una etiqueta de confidencialidad](create-sensitivity-lab
 
 Configuración de las opciones de cifrado:
 
-![Opciones de etiqueta de confidencialidad para el cifrado](media/encrytion-options-sensitivity-label.png)
+![Opciones de etiqueta de confidencialidad para el cifrado](../media/encrytion-options-sensitivity-label.png)
 
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qué sucede con el cifrado existente al aplicar una etiqueta
@@ -111,7 +111,7 @@ Por otra parte, si tiene una etiqueta de confidencialidad denominada **Contratos
 
 Elegir si asignar permisos ahora o permitir a los usuarios asignar permisos: 
 
-![Opción para agregar permisos definidos por el usuario o un administrador](media/sensitivity-label-user-or-admin-defined-permissions.png)
+![Opción para agregar permisos definidos por el usuario o un administrador](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
 ## <a name="assign-permissions-now"></a>Asignar permisos ahora
@@ -124,7 +124,7 @@ Use las opciones siguientes para controlar quién puede tener acceso al correo e
 
 Configuración de control de acceso para contenido cifrado:
 
-![Configuración de permisos definidos por el administrador](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![Configuración de permisos definidos por el administrador](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licencia de uso de administración de derechos para el acceso sin conexión
 
@@ -146,7 +146,7 @@ Puede conceder permisos a usuarios específicos para que solo pueden interactuar
 
 Asignación de permisos:
 
-![Opciones para asignar permisos a usuarios](media/Sensitivity-Assign-permissions-settings.png)
+![Opciones para asignar permisos a usuarios](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>Agregar usuarios o grupos
 
@@ -179,13 +179,13 @@ Al elegir qué permisos permitir para los usuarios o grupos, puede seleccionar e
 
 Para obtener más información sobre cada permiso específico, consulte [Derechos y descripciones de uso](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Opciones para elegir permisos predefinidos o personalizados](media/Sensitivity-Choose-permissions-settings.png)
+![Opciones para elegir permisos predefinidos o personalizados](../media/Sensitivity-Choose-permissions-settings.png)
 
 Tenga en cuenta que la misma etiqueta puede conceder diferentes permisos a diferentes usuarios. Por ejemplo, una sola etiqueta puede asignar a algunos usuarios como revisor y a otros usuarios como coautor, como se muestra en la siguiente captura.
 
 Para ello, agregue usuarios o grupos, asigne sus permisos y guarde las opciones de configuración. Luego repita estos pasos, agregue usuarios y asigne permisos para guardar la configuración de nuevo. Puede repetir esta configuración tantas veces como sea necesario para definir permisos diferentes para distintos usuarios.
 
-![Usuarios distintos con permisos diferentes](media/Sensitivity-Multiple-users-permissions.png)
+![Usuarios distintos con permisos diferentes](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>El emisor de administración de derechos (el usuario que aplica la etiqueta de confidencialidad) siempre tiene control total
 
@@ -207,7 +207,9 @@ Puede usar estas opciones para que los usuarios puedan asignar permisos cuando a
 
 - En Word, PowerPoint y Excel, se pide al usuario que seleccione sus propios permisos para organizaciones, usuarios o grupos específicos. 
     > [!NOTE]
-    > Esta opción para Word, PowerPoint y Excel es compatible con el cliente de etiquetado unificado de Azure Information Protection. Para las aplicaciones que usan etiquetas integradas, el soporte se encuentra actualmente en [versión preliminar para Windows y Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). Si esta opción está seleccionada pero no es compatible con la aplicación de un usuario, dicha etiqueta no se mostrará al usuario.
+    > Esta opción para Word, PowerPoint y Excel es compatible con el cliente de etiquetado unificado de Azure Information Protection. Para las aplicaciones que usan etiquetas integradas, hay compatibilidad en las [versiones preliminares para Windows y Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) actualmente. 
+    > 
+    > Si esta opción está seleccionada, pero no es compatible con la aplicación de un usuario, la etiqueta no se mostrará al usuario, o bien (actualmente, se está implementando en la versión preliminar para iOS y Android) la etiqueta se mostrará por coherencia, pero no se podrá aplicar con un mensaje de explicación para los usuarios.
 
 Cuando se admitan las opciones, use la tabla siguiente para identificar cuándo los usuarios ven la etiqueta de confidencialidad:
 
@@ -222,13 +224,13 @@ Una etiqueta de confidencialidad que permite a los usuarios asignar permisos sol
 
 Configurar los permisos asignados por el usuario:
 
-![Configuración de cifrado para los permisos definidos por el usuario](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Configuración de cifrado para los permisos definidos por el usuario](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Restricciones de Outlook
 
 En Outlook, cuando un usuario aplica una etiqueta de confidencialidad que les permite asignar permisos a un mensaje, las restricciones son las mismas que la opción No reenviar. El usuario verá el nombre y la descripción de la etiqueta en la parte superior del mensaje, lo que indica que se está protegiendo el contenido. A diferencia de Word, PowerPoint y Excel (vea la [siguiente sección](#word-powerpoint-and-excel-permissions)), no se pide a los usuarios que seleccionen permisos específicos.
 
-![Etiqueta de confidencialidad aplicada al mensaje en Outlook](media/sensitivity-label-outlook-protection-applied.png)
+![Etiqueta de confidencialidad aplicada al mensaje en Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
 Cuando la opción No reenviar se aplica a un correo electrónico, este se cifra y los destinatarios tienen que autenticarse. Luego, los destinatarios no podrán reenviarlo, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar y las opciones de menú Guardar como e Imprimir no están disponibles, y no se pueden agregar o cambiar destinatarios en los cuadros Para, CC o CCO.
 
@@ -244,7 +246,7 @@ Por ejemplo, con el cliente de etiquetas unificado de Azure Information Protecti
 - Seleccionar organizaciones, usuarios o grupos. Esto puede incluir usuarios dentro o fuera de su organización.
 - Establecer una fecha de expiración, después de la que los usuarios seleccionados no pueden tener acceso al contenido. Para obtener más información, vea la sección anterior [Licencia de uso de Rights Management para el acceso sin conexión](#rights-management-use-license-for-offline-access).
 
-![Opciones de protección para el usuario con permisos personalizados](media/sensitivity-aip-custom-permissions-dialog.png)
+![Opciones de protección para el usuario con permisos personalizados](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 Para las etiquetas integradas, los usuarios verán el mismo cuadro de diálogo si seleccionan lo siguiente:
 

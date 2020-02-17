@@ -1,5 +1,7 @@
 ---
 title: 'Paso 5: Consideraciones de seguridad y cumplimiento'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre consideraciones importantes de seguridad y cumplimiento para Windows y Office.
-ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112564"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085278"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Paso 5: Consideraciones de seguridad y cumplimiento
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>Paso 5: Consideraciones de seguridad y cumplimiento</strong></p>
 <p>Windows 10 y Office 365 ProPlus proporcionan nuevas formas de proteger sus datos, dispositivos y usuarios, y de detectar y responder rápidamente ante las amenazas. Además, obtenga información sobre cómo solucionar problemas comunes relacionados con el cifrado de discos, aplicaciones antimalware y directivas al migrar a Windows 10.</p></td>
-<td><a href="https://aka.ms/ddev5" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -63,7 +65,7 @@ Como resultado, por naturaleza estas aplicaciones pueden ser frágiles al cambia
 
 Es posible que la configuración de directiva de grupo de Active Directory que se usaba en versiones anteriores de Windows y Office no se traduzca directamente a Windows 10 y Office 365 ProPlus, y existen otras consideraciones con las funciones nuevas de seguridad y cumplimiento. Es recomendable usar Microsoft Security Compliance Toolkit para obtener una base de referencia de las directivas de seguridad para las versiones actuales de Windows y Office. Además, es importante examinar las directivas de administración de dispositivos móviles como parte de Microsoft Intune.
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
 ## 
 

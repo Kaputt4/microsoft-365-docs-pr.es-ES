@@ -1,5 +1,7 @@
 ---
 title: Implementación de equipos con tres niveles de protección de archivos
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: Cree y configure equipos con Microsoft Teams en distintos niveles de protección de archivos.
-ms.openlocfilehash: 3b90a1b084f7cd7e56d1d6448d74a7d2c2469a4d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971828"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083359"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>Implementación de equipos con tres niveles de protección de archivos
 
@@ -38,7 +40,7 @@ Siga las instrucciones que se indican en [este artículo](https://support.office
 
 Esta es la configuración resultante.
 
-![Protección de nivel de línea base de un equipo público.](../media/baseline-public-team.png)
+![Protección de nivel de línea base de un equipo público.](../../media/baseline-public-team.png)
 
 ### <a name="private"></a>Private
 
@@ -46,7 +48,7 @@ Siga las instrucciones que se indican en [este artículo](https://support.office
 
 Esta es la configuración resultante.
 
-![Protección de nivel de línea base de un equipo privado.](../media/baseline-private-team.png)
+![Protección de nivel de línea base de un equipo privado.](../../media/baseline-private-team.png)
 
 ## <a name="sensitive-teams"></a>Equipos confidenciales
 
@@ -66,7 +68,7 @@ Después, hay que configurar el sitio de SharePoint subyacente para evitar que l
 
 Este es el resultado de la configuración.
 
-![Protección confidencial de un equipo.](../media/sensitive-team.png)
+![Protección confidencial de un equipo.](../../media/sensitive-team.png)
 
 ## <a name="highly-confidential-teams"></a>Equipos extremadamente confidenciales
 
@@ -88,7 +90,7 @@ Después, hay que configurar el sitio de SharePoint subyacente para evitar que l
 
 Este es el resultado de la configuración.
 
-![Protección extremadamente confidencial de un equipo.](../media/highly-confidential-team.png)
+![Protección extremadamente confidencial de un equipo.](../../media/highly-confidential-team.png)
 
 ## <a name="next-step"></a>Siguiente paso
 

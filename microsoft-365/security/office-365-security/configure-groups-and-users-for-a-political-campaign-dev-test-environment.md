@@ -1,5 +1,7 @@
 ---
 title: Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumen: Cree suscripciones de evaluación de Office 365 y Enterprise Mobility + Security (EMS) que incluyan usuarios y grupos en un entorno de desarrollo y prueba para una campaña política.'
-ms.openlocfilehash: a5bce86ef7bce79d58628b78d95e02484051c389
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971848"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083489"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
 
@@ -185,11 +187,11 @@ Siga estos pasos para comprobar que las licencias basadas en grupos y la pertene
 
 Registre estos valores para trabajar con las suscripciones de prueba de Office 365 y EMS en este entorno de desarrollo y pruebas:
 
-- Nombre de la organización de la suscripción de prueba: ![Subrayado](../media/Common-Images/TableLine.png)
+- Nombre de la organización de la suscripción de prueba: ![Subrayado](../../media/Common-Images/TableLine.png)
 
   Por ejemplo, en el nombre de dominio de la suscripción de prueba de contoso.onmicrosoft.com, el nombre de la organización es “contoso”.
 
-- El nombre del administrador global de Office 365: ![Subrayado](../media/Common-Images/TableLine.png).onmicrosoft.com
+- El nombre del administrador global de Office 365: ![Subrayado](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Registre la contraseña de esta cuenta y la contraseña inicial común de las demás cuentas de usuario en una ubicación segura.
 

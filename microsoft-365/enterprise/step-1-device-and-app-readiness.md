@@ -15,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los dispositivos y las aplicaciones en el entorno.
-ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774216"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085513"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Paso 1: Preparación de dispositivos y aplicaciones
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="130" width="130" /></td>
 <td><p><strong>Paso 1: Preparación de dispositivos y aplicaciones</strong></p>
 <p>Inicie el proyecto de implementación de escritorio con un inventario de los dispositivos y las aplicaciones, priorice lo que debe avanzar, pruebe los dispositivos y las aplicaciones prioritarios, y corrija los aspectos necesarios para prepararse para la implementación.</p></td>
-<td><a href="https://aka.ms/ddev1" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev1" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -71,15 +71,15 @@ La preparación de dispositivos y aplicaciones consta de cuatro pasos: 1. Invent
 
 En Análisis de escritorio se usa un proceso sin agente para realizar el inventario de equipos y aplicaciones en el estado de escritorio. También se proporcionan informes acerca de los sitios de Internet muy visitados, las aplicaciones y las ubicaciones de Intranet para ayudar con las pruebas de compatibilidad más adelante.
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. Priorizar
 
 Una vez realizado el inventario, Análisis de escritorio le ayuda a identificar y priorizar el hardware y las aplicaciones más comunes que se usan en la organización, y le ayuda a identificar en qué centrarse para desbloquear tantos equipos como sea posible para la implementación.
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
 También proporciona instrucciones para ayudarle a evaluar qué actualizaciones son necesarias para resolver problemas durante el paso siguiente: las pruebas.
 
@@ -91,13 +91,13 @@ Puede usar Análisis de escritorio para evaluar también los problemas de compat
 
 Además, para facilitar el cambio a Office 365 ProPlus, es posible que quiera usar [Readiness Toolkit para Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) a fin de probar la compatibilidad de los complementos y las macros de Microsoft Visual Basic para Aplicaciones (VBA).
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
 ### <a name="4-remediation"></a>4\. Corrección
 
 La fase final de la preparación de las aplicaciones y los dispositivos es la "corrección". Aquí le interesará recopilar los paquetes de software o controladores necesarios; los usará para sustituir o actualizar las versiones anteriores como parte del proceso de implementación.
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-7.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-7.png)
 
 Mientras recorre la lista para corregir los problemas, verá que aumenta el número de equipos "Listos para la implementación". Esto significa que las aplicaciones y los controladores en los equipos se indican como compatibles con la versión de Windows 10 seleccionada como destino para la implementación.
 

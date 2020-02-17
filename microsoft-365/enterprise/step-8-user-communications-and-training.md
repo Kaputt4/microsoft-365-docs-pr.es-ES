@@ -1,5 +1,7 @@
 ---
 title: 'Paso 8: Comunicación con los usuarios y aprendizaje'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo preparar a los usuarios finales para Windows 10 y Office 365 ProPlus con el uso de comunicación y aprendizaje.
-ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033665"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085145"
 ---
 # <a name="step-8-user-communications-and-training"></a>Paso 8: Comunicación con los usuarios y aprendizaje
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Paso 8: Comunicación con los usuarios y aprendizaje</strong></p>
 <p>Asegúrese de que los usuarios están informados sobre las nuevas experiencias y las nuevas formas de trabajar al cambiar los equipos a Windows 10 y Office 365 ProPlus. Obtenga información sobre cómo aprovechar la asistencia para la adopción por parte de los usuarios con Microsoft FastTrack, los materiales de aprendizaje y las plantillas de comunicación, así como nuevas formas para supervisar la aceptación y el uso por parte de los usuarios.</p></td>
-<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -47,7 +49,7 @@ Empezando con Office, si implementa Office 365 ProPlus por primera vez, puede co
 
 Hay disponibles comunicaciones detalladas y plantillas de formación para estas aplicaciones y también para otras locales o de navegador, como Teams y Planner.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
 
 También ofrecemos guiar a través de las nuevas capacidades de las aplicaciones, como adjuntar archivos vinculados de OneDrive a Outlook o usar las nuevas transiciones de transformación y las características de diseñador en PowerPoint.
 
@@ -77,7 +79,7 @@ La implementación con fases con anillos de implementación consiste en comenzar
 
 La creación de anillos de documentación funciona mejor en cooperación con unidades de negocios y sus administradores. Querrá conocer las fechas y las horas críticas que debe evitar al implementar o realizar cambios. Sin una planificación cuidadosa y la aceptación de las partes interesadas, será difícil conseguir que los usuarios se sientan cómodos con los cambios a los que se enfrenten.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### <a name="phase-1-the-it-team-and-early-adopter-insiders"></a>Fase 1: El equipo de TI y los primeros usuarios 
 
@@ -117,7 +119,7 @@ Estos componentes y servicios juntos pueden funcionar bien durante la fase pilot
 
 Conforme se expanda el piloto deberá publicar preguntas más frecuentes y contenido de autoservicio para ayudar a reducir proactivamente incidencias de soporte técnico.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>Fase 3 en adelante: Implementación de producción general 
 
