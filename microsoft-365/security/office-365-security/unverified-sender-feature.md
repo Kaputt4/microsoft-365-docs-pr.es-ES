@@ -64,7 +64,7 @@ Además, no se aplica el tratamiento de remitente no verificado si el mensaje se
 
 Si es un cliente de Office 365, puede administrar esta característica a través del centro de seguridad & cumplimiento de Office 365, del mismo modo que administra el tratamiento de remitentes no comprobados. Si agrega el remitente a la lista de permitidos de imitación de inteligencia empresarial, no se aplicará el tratamiento "Via".
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>¿Qué criterios Outlook.com y Outlook Win32 Desktop usan para agregar las propiedades "?" y "Via"?
 

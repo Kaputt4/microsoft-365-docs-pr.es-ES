@@ -43,16 +43,16 @@ Para ayudar a los clientes de servicios financieros de Estados Unidos que deben 
 
 En este documento se proporciona una lista de comprobación completa de las áreas de enfoque de la ciencia de la reglamentación crítica. Esta lista de comprobación ayuda a las organizaciones financieras a adoptar Azure para garantizar que sus reguladores, clientes y liderazgo puedan cumplir con los requisitos normativos aplicables.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
 
 - [Azure](https://aka.ms/AzureCompliance)
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - [Guía de implementación](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers)de la regla de SCI: asigna las capacidades de Azure en comparación con el Reglamento y detalla la responsabilidad compartida del cumplimiento.
 - [Diseño de aplicaciones confiables de Azure](https://docs.microsoft.com/azure/architecture/resiliency/): breve introducción sobre cómo crear confiabilidad en cada paso del diseño de la aplicación de Azure.
 - [Diseño de aplicaciones de alta disponibilidad](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): cómo los desarrolladores pueden ayudar a garantizar que sus aplicaciones de almacenamiento de Azure estén altamente disponibles.
-- [Guía de cumplimiento y evaluación de riesgos](https://aka.ms/RiskGovernanceGuide): Cree un modelo de gobierno para la evaluación de riesgos de los servicios en la nube de Microsoft y las notificaciones reglamentarias.
+- [Guía de evaluación de riesgos y cumplimiento normativo](https://aka.ms/RiskGovernanceGuide): Cree un modelo de gobernanza para la evaluación de riesgos sobre los Servicios en la Nube de Microsoft y las notificaciones reglamentarias.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -69,8 +69,8 @@ Las organizaciones financieras o las entidades de SCI que están sujetas a este 
 - [Respuestas de la SEC a preguntas más frecuentes referentes a la reglamentación SCI](https://www.sec.gov/divisions/marketreg/regulation-sci-faq.shtml)
 - [Continuidad empresarial y recuperación ante desastres (BCDR): regiones emparejadas de Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [Mapa de cumplimiento de los principios normativos de informática en la nube y Microsoft Online Services](https://aka.ms/FinServ-Guide-US)
-- [Programa de cumplimiento para los servicios financieros de Microsoft Cloud](https://aka.ms/FSCP-Print)
-- [Cumplimiento de los servicios financieros en Azure](https://aka.ms/FinServ-Compliance-Azure)
+- [Programa de cumplimiento de servicios financieros en la nube de Microsoft](https://aka.ms/FSCP-Print)
+- [Programa de cumplimiento de servicios financieros en Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Servicios financieros de Microsoft](https://aka.ms/FinServ-Compliance)
 - [Microsoft y reglas de la SEC 17a-4](offering-SEC-17a-4.md)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

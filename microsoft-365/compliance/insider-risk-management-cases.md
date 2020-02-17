@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590681"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072873"
 ---
 # <a name="insider-risk-management-cases-preview"></a>Casos de administración de riesgos de Insider (versión preliminar)
 
@@ -41,7 +41,7 @@ La cola de casos enumera todos los casos activos y cerrados para la organizació
 - **Última actualización**: el tiempo que ha pasado desde que se ha agregado una nota de caso o un cambio en el estado de caso.
 - **Última actualización**: el nombre del analista o investigador de administración de riesgos de Insider que ha actualizado el caso por última vez.
 
-![Panel de casos de administración de riesgos de Insider](media/insider-risk-cases-dashboard.png)
+![Panel de casos de administración de riesgos de Insider](../media/insider-risk-cases-dashboard.png)
 
 Use el control de **búsqueda** para buscar nombres de casos específicos de texto y usar el filtro de casos para ordenar los casos por los siguientes atributos:
 
@@ -67,7 +67,7 @@ El panel de **detalles de caso** está disponible en todas las pestañas de admi
 - **Alertas confirmadas**: lista de alertas del usuario confirmada para el caso.
 - **Contenido en riesgo**: lista de contenido, ordenada por tipos y orígenes de contenido. Por ejemplo, por caso de contenido de alertas en SharePoint Online, es posible que aparezcan nombres de archivo o carpeta asociados a la actividad de riesgo para las alertas en el caso.
 
-![Detalles de casos de administración de riesgos de Insider](media/insider-risk-case-details.png)
+![Detalles de casos de administración de riesgos de Insider](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>Alertas
 
@@ -89,7 +89,7 @@ Use el control de búsqueda para buscar nombres de alertas de texto específico 
 
 La ficha de **actividad de usuario** es una de las herramientas más eficaces para el análisis y la investigación de riesgos internos para los casos de la solución de administración de riesgos de Insider. Esta ficha está estructurada para habilitar la revisión rápida de un caso, incluida una escala de tiempo histórica de todas las alertas, todos los detalles de las alertas, la puntuación de riesgo actual para el usuario en el caso y los controles para emprender acciones efectivas que contengan los riesgos en el caso.
 
-![Actividad de usuario de administración de riesgos de Insider](media/insider-risk-user-activities.png)
+![Actividad de usuario de administración de riesgos de Insider](../media/insider-risk-user-activities.png)
 
 1. **Filtros de tiempo de fecha y de ventana**: de forma predeterminada, los últimos seis meses de alertas confirmadas en el caso se muestran en el gráfico de actividad del usuario. Puede filtrar fácilmente la vista de gráfico con los controles deslizantes situados en ambos extremos de la ventana gráfico o definiendo fechas de inicio y finalización específicas en el control de filtro de gráfico.
 2. **Actividad de alertas de riesgos y detalles**: las actividades de riesgo se muestran visualmente como burbujas de color en el gráfico de actividad del usuario. Las burbujas se crean para diferentes categorías de riesgo y el tamaño de la burbuja es proporcional al número de actividades de riesgo para la categoría. Seleccione una burbuja para mostrar los detalles de cada actividad de riesgo. Entre los detalles se incluyen:
@@ -107,7 +107,7 @@ La ficha **Explorador de contenido** permite a los analistas de riesgos y a los 
 
 El explorador de contenido es una herramienta eficaz con características básicas y avanzadas de búsqueda y filtrado. Para obtener más información sobre el uso del explorador de contenido, vea el [Explorador de contenido de administración de riesgos de Insider](insider-risk-management-content-explorer.md).
 
-![Explorador de contenido de caso de administración de riesgos de Insider](media/insider-risk-content-explorer.png)
+![Explorador de contenido de caso de administración de riesgos de Insider](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>Notas del caso
 

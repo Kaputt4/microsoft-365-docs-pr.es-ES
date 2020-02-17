@@ -386,6 +386,6 @@ Para requerir el cumplimiento de todos los dispositivos:
 Al crear esta Directiva, no seleccione plataformas. Esto aplica los dispositivos compatibles.
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Más información sobre recomendaciones de directivas para proteger el correo electrónico](secure-email-recommended-policies.md)
