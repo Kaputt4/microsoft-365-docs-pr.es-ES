@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 88dc03613a6a2b77ed9cb440d8c8d80c7cfbae2b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596497"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073336"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de interesados del soporte técnico y los servicios profesionales de Microsoft para el RGPD y la CCPA
 
@@ -133,7 +133,7 @@ Al detectar datos relevantes y obtener ayuda de Microsoft, los clientes tienen d
 
 Para identificar interacciones específicas, los clientes necesitan buscar en todas sus interacciones. Para los clientes Premier, el administrador de servicios del contrato de un cliente puede ver todas las solicitudes de soporte técnico creadas en esa programación de contrato. Para los clientes que no sean Premier, hay disponibles portales equivalentes de interacción de soporte técnico, como las áreas de soporte técnico de servicios en línea.
 
-![Buscar en SMC](media/Prof-Serv-DSR-Doc-Final_image3.png)El administrador de servicios del contrato puede ir al portal support.microsoft.com ([https://support.microsoft.com/\<localcódigo de idioma\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") para seleccionar y revisar las solicitudes de soporte técnico. (Nota: En la URL, sustituya el texto por su código de idioma local).
+![Buscar en SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)El administrador de servicios del contrato puede ir al portal support.microsoft.com ([https://support.microsoft.com/\<localcódigo de idioma\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") para seleccionar y revisar las solicitudes de soporte técnico. (Nota: En la URL, sustituya el texto por su código de idioma local).
 
 >[!IMPORTANT]
 >Además del historial del caso en SMC, los clientes también pueden tener datos personales de un usuario final en archivos recopilados por Microsoft (o, con el permiso del cliente, quitados del servicio en línea) durante una interacción de soporte técnico. Algunos ejemplos pueden ser copias de los buzones de Exchange del cliente, Azure VM o bases de datos. Estos datos personales se pueden mencionar o no en el historial del caso (es decir, la incidencia) de una interacción específica. Para revisar esos datos, el contacto del cliente tiene que ser un contacto de solicitud de soporte técnico autenticado específicamente (con AAD o MSA) que recibió una URL para un área de trabajo en la herramienta Administración y transferencia de datos de Soporte técnico de Microsoft (DTM). Un contacto de cliente tendrá acceso a los archivos, pero no hay disponible una vista global, y SMC no indicará si los archivos existen.

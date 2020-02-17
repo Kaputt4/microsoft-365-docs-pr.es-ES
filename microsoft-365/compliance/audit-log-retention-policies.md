@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las políticas de retención de registros de auditoría forman parte de las nuevas capacidades de auditoría avanzada de Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: 32bb9510d789b56bc48b133dee4abd948009e3a9
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: 5e2a1e328888a6aadf5c3057bbe7882ac0f72fbe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960256"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079225"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
@@ -59,11 +59,11 @@ Advanced Audit en Microsoft 365 proporciona una política de retención de regis
 
     La página de **Búsqueda de registros de auditoría** se mostrará.
 
-    ![La página de búsqueda de registros de auditoría](media/AuditLogRetentionPolicy1.png)
+    ![La página de búsqueda de registros de auditoría](../media/AuditLogRetentionPolicy1.png)
 
 3. Haga clic en **Nueva directiva de retención**, y después, complete los siguientes campos en la página flotante:
 
-    ![Página flotante de la directiva de retención de registros de auditoría](media/AuditLogRetentionPolicy2.png)
+    ![Página flotante de la directiva de retención de registros de auditoría](../media/AuditLogRetentionPolicy2.png)
 
    a. **Nombre:** el nombre de la directiva de retención de registros de auditoría. Este nombre debe ser exclusivo en la organización.
    

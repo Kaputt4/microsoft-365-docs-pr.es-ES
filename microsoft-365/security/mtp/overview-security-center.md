@@ -54,7 +54,7 @@ El centro de seguridad 365 de Microsoft incluye:
 * **Directivas** : Configure las directivas para administrar dispositivos, Protéjase contra amenazas y reciba alertas sobre diversas actividades de su organización.
 * **Permisos** : administre quién en su organización tiene acceso al centro de seguridad 365 de Microsoft para ver contenido y realizar tareas. También puede asignar permisos de Microsoft 365 en el portal de Azure AD.
 
-## <a name="learn-more"></a>Obtén más información 
+## <a name="learn-more"></a>Más información 
 
 Explore estos temas sobre cómo supervisar, revisar y responder a sus necesidades de seguridad:
 - Conectar los puntos de las alertas a través de [incidentes](incident-queue.md)
