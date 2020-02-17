@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a usar etiquetas de Office como parte de su plan de protección RGPD.
-ms.openlocfilehash: 7561daccb400fd5364e8c1ed948924f7975af5a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596097"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079817"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar etiquetas a datos personales en Office 365
 
@@ -41,7 +41,7 @@ En este momento, no se recomienda usar Azure Information Protection para aplicar
 
 Pueden aplicarse etiquetas de confidencialidad a correo en Exchange Online que funcionan con la prevención de pérdida de datos de Office 365. 
 
-![Etiquetas de Office 365 y de Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Etiquetas de Office 365 y de Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 En la ilustración:
@@ -55,7 +55,7 @@ En la ilustración:
 
 En la ilustración siguiente se muestra cómo pueden aprovecharse las etiquetas de retención y los tipos de información confidencial en las directivas de etiquetas, de prevención de pérdida de datos y de Cloud App Security.
 
-![Etiquetas y tipos de información confidencial de Office](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
+![Etiquetas y tipos de información confidencial de Office](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
 Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemplos que en la ilustración.
 
@@ -196,7 +196,7 @@ Cree etiquetas y directivas en el centro de seguridad o el centro de cumplimient
 
 La siguiente ilustración muestra cómo crear una etiqueta de aplicación automática para la etiqueta Datos de cliente.
 
-![Crear y aplicar una etiqueta de datos de cliente](Media/Apply-labels-to-personal-data-in-Office-365-image3.png)
+![Crear y aplicar una etiqueta de datos de cliente](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
 En la ilustración:
 

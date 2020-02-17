@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Después de crear sus etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan en el espacio empresarial. Con el análisis de etiquetas en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365, puede ver rápidamente las etiquetas que más se usan y dónde se aplican
-ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75eb86cb8671c81b80afc67b19d7c54830c4c401
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600587"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072326"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Ver el uso de etiquetas con el análisis de etiquetas
 
@@ -36,7 +36,7 @@ Por ejemplo, con el análisis de etiquetas, puede ver:
 
 Puede encontrar el análisis de etiquetas en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/labelanalytics) o [Centro de seguridad de Microsoft 365](https://security.microsoft.com/labelanalytics) > **Clasificación**  >  **Análisis de etiquetas**.
 
-![Página de análisis de etiquetas](media/label-analytics-page.png)
+![Página de análisis de etiquetas](../media/label-analytics-page.png)
 
 ## <a name="sensitivity-label-usage"></a>Uso de etiquetas de confidencialidad
 
@@ -50,7 +50,7 @@ Para el uso de etiquetas de confidencialidad:
 - Para ver la cantidad de cada etiqueta principal, seleccione el gráfico de barras y lea la información sobre herramientas que aparece.
 - El informe muestra dónde se aplican las etiquetas de confidencialidad por aplicación (mientras que las etiquetas de retención se muestran por ubicación).
 
-![Informe de uso de etiquetas de confidencialidad](media/sensitivity-label-usage-report.png)
+![Informe de uso de etiquetas de confidencialidad](../media/sensitivity-label-usage-report.png)
 
 ## <a name="retention-label-usage"></a>Uso de etiquetas de retención
 
@@ -63,7 +63,7 @@ Para el uso de etiquetas de retención:
 - El informe muestra dónde se aplican las etiquetas de retención por ubicación (mientras que las etiquetas de confidencialidad se muestran por aplicación).
 - Para las etiquetas de retención, este es un resumen de todos los datos del espacio empresarial; no se filtra para un intervalo de fechas específico. Por el contrario, el [Explorador de actividad de etiquetas](view-label-activity-for-documents.md) muestra los datos de solo los últimos 30 días.
 
-![Informe de uso de etiquetas de retención](media/retention-label-usage-report.png)
+![Informe de uso de etiquetas de retención](../media/retention-label-usage-report.png)
 
 ## <a name="view-all-content-with-a-specific-retention-label"></a>Ver todo el contenido con una etiqueta de retención específica
 
@@ -71,15 +71,15 @@ En el informe de uso de etiquetas de retención, puede explorar rápidamente tod
 
 Primero, elija **Ver detalles** en la parte inferior del informe.
 
-![Opción de Ver detalles en la parte inferior del informe de uso de etiquetas de retención](media/retention-label-usage-view-details.png)
+![Opción de Ver detalles en la parte inferior del informe de uso de etiquetas de retención](../media/retention-label-usage-view-details.png)
 
 Después elija una etiqueta de retención > **Explorar elementos** en el panel derecho.
 
-![Opción Explorar los elementos en el panel derecho](media/retention-label-usage-explore-items.png)
+![Opción Explorar los elementos en el panel derecho](../media/retention-label-usage-explore-items.png)
 
 Para esa etiqueta, puede elegir la ficha **Actividad** para ver el número de elementos con esa etiqueta según la ubicación.
 
-![Ficha actividad para una etiqueta de retención](media/retention-label-usage-activity-tab.png)
+![Ficha actividad para una etiqueta de retención](../media/retention-label-usage-activity-tab.png)
 
 También puede elegir la ficha **Elementos con esta etiqueta**. Después, puede explorar ubicaciones específicas:
 
@@ -88,7 +88,7 @@ También puede elegir la ficha **Elementos con esta etiqueta**. Después, puede 
 
 Al elegir una colección de sitios o un buzón, puede ver una lista de los elementos con esa etiqueta de retención en esa ubicación.
 
-![Ficha Elementos con esta etiqueta que muestra todos los elementos con esa etiqueta de retención](media/retention-label-usage-content-explorer.png)
+![Ficha Elementos con esta etiqueta que muestra todos los elementos con esa etiqueta de retención](../media/retention-label-usage-content-explorer.png)
 
 ## <a name="permissions"></a>Permisos
 

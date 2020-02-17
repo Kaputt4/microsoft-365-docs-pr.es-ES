@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar las directivas de prevención de pérdida de datos (DLP) para proteger datos personales en Office 365.
-ms.openlocfilehash: b529a6d58537c4effca3cf198dcf807a0680129d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596067"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079776"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Aplicar protección a los datos personales de Office 365
 
@@ -46,7 +46,7 @@ Con la DLP, puede:
 
 Para obtener más información, consulte [Información general sobre directivas de prevención de pérdida de datos](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
-![Opciones para crear una directiva de prevención de pérdida de datos](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
+![Opciones para crear una directiva de prevención de pérdida de datos](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
 Esta ilustración muestra las opciones para crear una directiva DLP:
 
@@ -172,7 +172,7 @@ Las directivas de protección de pérdida de datos, las etiquetas y los tipos de
 
 En la siguiente ilustración se detalla protección adicional que puede aplicar para proteger el acceso a datos personales.
 
-![Protección adicional para proteger el acceso a datos personales](Media/Apply-protection-to-personal-data-in-Office-365-image2.png)
+![Protección adicional para proteger el acceso a datos personales](../media/Apply-protection-to-personal-data-in-Office-365-image2.png)
 
 Para la accesibilidad, la siguiente tabla contiene la misma información que la ilustración.
 
@@ -222,7 +222,7 @@ Caja de seguridad del cliente: la Caja de seguridad del cliente le permite contr
 
 Use los permisos de SharePoint para proporcionar o restringir el acceso de usuarios al sitio o a su contenido. Agregue usuarios individuales o grupos de Azure Active Directory a los grupos de SharePoint predeterminados, o bien cree un grupo personalizado para obtener un control más preciso.
 
-![Niveles de permisos de control total a solo vista](Media/Apply-protection-to-personal-data-in-Office-365-image3.png)
+![Niveles de permisos de control total a solo vista](../media/Apply-protection-to-personal-data-in-Office-365-image3.png)
 
 La ilustración indica los niveles de permisos de control total a solo vista. La siguiente tabla contiene la misma información.
 
@@ -368,7 +368,7 @@ Para entornos de identidad híbridos con AD FS, consulte [Opciones y directivas 
 
 En la siguiente ilustración se describe cómo se relacionan los servicios en la nube (SaaS, PaaS), los tipos de cuenta (cuentas de dominio de inquilino y cuentas B2B) y las funciones de acceso de servicio. Es importante que tenga en cuenta las funciones que pueden usarse con cuentas B2B.
 
-![Servicios en la nube, tipos de cuenta y las funciones de acceso](Media/Apply-protection-to-personal-data-in-Office-365-image4.png)
+![Servicios en la nube, tipos de cuenta y las funciones de acceso](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
 Para la accesibilidad, el resto de esta sección describe esta ilustración.
 

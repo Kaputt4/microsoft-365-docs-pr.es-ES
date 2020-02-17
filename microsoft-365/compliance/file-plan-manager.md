@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.'
-ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bad2e592359cb3e1f63e3fa020914ad49a65a471
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594581"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074254"
 ---
 # <a name="overview-of-file-plan-manager"></a>Información general sobre el administrador del plan de archivos
 
@@ -29,7 +29,7 @@ El administrador del plan de archivos proporciona funciones avanzadas de adminis
 
 Para acceder al administrador del plan de archivos en el centro de seguridad y cumplimiento, vaya a **Administración de registros** > **Plan de archivos**.
 
-![Página del plan de archivos](media/file-plan-page.png)
+![Página del plan de archivos](../media/file-plan-page.png)
 
 ## <a name="accessing-file-plan-manager"></a>Acceder al administrador del plan de archivos
 
@@ -89,7 +89,7 @@ En la pestaña **Etiquetas** del plan de archivos, están disponibles la siguien
     - Eliminación automática
     - Revisión necesaria (también conocido como revisión de disposición)
 
-![Configuración de etiqueta en el plan de archivos](media/file-plan-label-columns.png)
+![Configuración de etiqueta en el plan de archivos](../media/file-plan-label-columns.png)
 
 ### <a name="retention-label-file-plan-descriptors-columns"></a>Columnas de descriptores del plan de archivos de las etiquetas de retención
 
@@ -99,11 +99,11 @@ Para comenzar, el administrador del plan de archivos proporciona algunos valores
 
 Esta es una vista del paso de descriptores del plan de archivos al crear o editar una etiqueta de retención.
 
-![Descriptores del plan de archivos](media/file-plan-descriptors.png)
+![Descriptores del plan de archivos](../media/file-plan-descriptors.png)
 
 Esta es una vista de las columnas de descriptores del plan de archivos en la pestaña **Etiquetas** del administrador del plan de archivos.
 
-![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>Exportar todas las etiquetas de retención existentes para analizar y/o realizar revisiones sin conexión
 
@@ -111,11 +111,11 @@ Desde el administrador del plan de archivos, puede exportar los detalles de toda
 
 Para exportar todas las etiquetas de retención, en la página **Plan de archivos**, vaya a **Acciones del plan de archivos**\> **Exportar etiquetas**.
 
-![Opción para exportar el plan de archivos](media/file-plan-export-labels-option.png)
+![Opción para exportar el plan de archivos](../media/file-plan-export-labels-option.png)
 
 Se abrirá un archivo *.csv que contiene todas las etiquetas de retención existentes.
 
-![Archivo CSV que muestra todas las etiquetas de retención](media/file-plan-csv-file.png)
+![Archivo CSV que muestra todas las etiquetas de retención](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importar las etiquetas de retención al plan de archivos
 
@@ -125,13 +125,13 @@ Cómo importar nuevas etiquetas de retención y modificar las etiquetas de reten
 
 1. En la página **Plan de archivos**, vaya a **Acciones del plan de archivos** > **Importar etiquetas**.
 
-   ![Opción para importar el plan de archivos](media/file-plan-import-labels-option.png)
+   ![Opción para importar el plan de archivos](../media/file-plan-import-labels-option.png)
 
-   ![Opción para descargar una plantilla de plan de archivos en blanco](media/file-plan-blank-template-option.png)
+   ![Opción para descargar una plantilla de plan de archivos en blanco](../media/file-plan-blank-template-option.png)
 
 2. Descargue una plantilla en blanco para importar nuevas etiquetas de retención. Como alternativa, puede empezar con el archivo .csv que se exporta al exportar las etiquetas de retención existentes en su organización.
 
-   ![Plantilla en blanco del plan de archivos abierta en Excel](media/file-plan-blank-template.png)
+   ![Plantilla en blanco del plan de archivos abierta en Excel](../media/file-plan-blank-template.png)
 
 3. Complete la plantilla. A continuación, se describen las propiedades y los valores válidos para cada propiedad en la plantilla del plan de archivos.<br/>
 
@@ -159,16 +159,16 @@ Cómo importar nuevas etiquetas de retención y modificar las etiquetas de reten
 
    A continuación hay un ejemplo de una plantilla con información sobre las etiquetas de retención.
 
-   ![Plantilla del plan de archivos con información ya completada](media/file-plan-filled-out-template.png)
+   ![Plantilla del plan de archivos con información ya completada](../media/file-plan-filled-out-template.png)
 
 4. En el paso 3, en la página del Asistente para planes de importación de archivos, haga clic en **Buscar archivos** para cargar la plantilla completada. 
 
    El administrador del plan de archivos validará las entradas y mostrará las estadísticas de importación.
 
-   ![Estadísticas de importación del plan de archivos](media/file-plan-import-statistics.png)
+   ![Estadísticas de importación del plan de archivos](../media/file-plan-import-statistics.png)
 
    En caso de que se produzca un error de validación, la importación del plan de archivo seguirá validando todas las entradas del archivo de importación y mostrará todos los errores que hacen referencia a los números de línea/fila en el archivo de importación. Copie los resultados de error que se muestran para que pueda volver fácilmente al archivo de importación y corregir los errores.
 
 5. Una vez completada la importación, vuelva al administrador del plan de archivos para asociar las nuevas etiquetas de retención a directivas de etiquetas de retención nuevas o existentes.
 
-   ![Opción para publicar etiquetas](media/file-plan-publish-labels-option.png)
+   ![Opción para publicar etiquetas](../media/file-plan-publish-labels-option.png)

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: El Administrador de cumplimiento del Portal de confianza de servicios de Microsoft proporciona herramientas para realizar un seguimiento, implementar y administrar los controles que permitan a su organización alcanzar el cumplimiento con normas del sector de seguridad y protección de datos (como RGPD, ISO 27001 y 27018, e HIPAA) en relación con los Servicios en la nube de Microsoft, como Office 365 y Microsoft Azure. El Administrador de cumplimiento ayuda a la persona que supervisa la protección de datos y la estrategia de privacidad a administrar el proceso de evaluación de riesgos y cumplimiento de su organización.
-ms.openlocfilehash: 52f6cbfb6e1c711b8b6bebec36bea965a9dc6e62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602907"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071977"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Administrador de cumplimiento de Microsoft (clásico)
 
@@ -68,7 +68,7 @@ Una evaluación está formada por varios componentes:
     
     Este es un ejemplo de tres controles administrados por Microsoft en la familia de controles **Seguridad** de una evaluación de Office 365 y RGPD. 
 
-    ![Detalles de controles administrados por Microsoft en el Administrador de cumplimiento](media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
+    ![Detalles de controles administrados por Microsoft en el Administrador de cumplimiento](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
   a. Especifica la siguiente información de la certificación o reglamento asignado al control administrado por Microsoft.
 
@@ -100,17 +100,17 @@ En la tabla siguiente, se describen los permisos del Administrador de cumplimien
   
 ||**Lector del Administrador de cumplimiento**|**Colaborador del Administrador de cumplimiento**|**Evaluador del Administrador de cumplimiento**|**Administrador del Administrador de cumplimiento**|**Administrador del portal**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|**Leer datos**: los usuarios pueden leer datos, pero no pueden editarlos.  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|
-|**Editar datos**: los usuarios pueden editar todos los campos, excepto “Resultado de la prueba” y “Fecha de la prueba”.  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Editar resultados de pruebas**: los usuarios pueden editar los campos “Resultado de la prueba” y “Fecha de la prueba”.  <br/> ||<br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Administrar evaluaciones**: los usuarios pueden crear, archivar y eliminar evaluaciones.  <br/> |||<br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Administrar usuarios**: los usuarios pueden agregar a otros usuarios de su organización a los roles Lector, Colaborador, Evaluador y Administrador. Solo los usuarios con el rol Administrador global de su organización pueden agregar o quitar usuarios del rol Administrador del portal.  <br/> ||||<br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Leer datos**: los usuarios pueden leer datos, pero no pueden editarlos.  <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|
+|**Editar datos**: los usuarios pueden editar todos los campos, excepto “Resultado de la prueba” y “Fecha de la prueba”.  <br/> ||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Editar resultados de pruebas**: los usuarios pueden editar los campos “Resultado de la prueba” y “Fecha de la prueba”.  <br/> ||<br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Administrar evaluaciones**: los usuarios pueden crear, archivar y eliminar evaluaciones.  <br/> |||<br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Administrar usuarios**: los usuarios pueden agregar a otros usuarios de su organización a los roles Lector, Colaborador, Evaluador y Administrador. Solo los usuarios con el rol Administrador global de su organización pueden agregar o quitar usuarios del rol Administrador del portal.  <br/> ||||<br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 ## <a name="understanding-the-compliance-score"></a>Información sobre la puntuación de cumplimiento
 
 En el tablero de instrumentos, el Administrador de cumplimiento muestra la puntuación total de las evaluaciones de Office 365 en la esquina superior derecha de la bandeja. Esta es la puntuación total de cumplimiento total de la evaluación, y es la acumulación de puntos recibidos por cada evaluación de control que ha sido calificada como Implementada y Probada en la evaluación. Al agregar una Valoración, verá que la puntuación de cumplimiento ya está activada hasta finalizar, debido a que ya se han aplicado los puntos para los controles administrados por Microsoft que han sido implementados además de ser probados y aplicados por terceros independientes.
   
-![Panel del Administrador de cumplimiento: Puntuación de cumplimiento total](media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
+![Panel del Administrador de cumplimiento: Puntuación de cumplimiento total](../media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
   
 Los puntos restantes provienen de la evaluación correcta de controles de cliente y de la implementación y prueba de los controles administrados por el cliente, cada uno con un valor específico que contribuye a la puntuación de cumplimiento global. 
   
@@ -118,11 +118,11 @@ Cada evaluación muestra una puntuación de cumplimiento basada en el riesgo par
   
 Por ejemplo, el control de evaluación “Administración de acceso de usuario” que se muestra abajo tiene una clasificación de riesgo de gravedad muy alta y se muestra un valor asignado de 10.
   
-![Administrador de cumplimiento: Gravedad alta de control de evaluación (puntuación de 10)](media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
+![Administrador de cumplimiento: Gravedad alta de control de evaluación (puntuación de 10)](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
   
  En comparación, el control de evaluación “Copia de seguridad de la información” que se muestra abajo tiene una clasificación de riesgo de gravedad inferior y se muestra con un valor asignado de 3. 
   
-![Administrador de cumplimiento: Gravedad baja de control de evaluación (puntuación de 3)](media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
+![Administrador de cumplimiento: Gravedad baja de control de evaluación (puntuación de 3)](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
   
 El Administrador de cumplimiento asigna una clasificación de gravedad predeterminada a cada control. Las clasificaciones de riesgos se calculan basándose en los criterios siguientes:
   
@@ -140,17 +140,17 @@ Lo más importante es que la puntuación de cumplimiento puede ayudarle a identi
   
 Por ejemplo, en la imagen siguiente, la evaluación “Office 365: RGPD” se completó al 46 %, con 51 de 111 evaluaciones de control completadas para una puntuación de cumplimiento total de 289 de un máximo posible de 600.
   
-![Administrador de cumplimiento: Resumen de la evaluación](media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
+![Administrador de cumplimiento: Resumen de la evaluación](../media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
   
 Dentro de la evaluación, el control de RGPD 7.5.5 está relacionado con otros 5 controles (7.4.1, 7.4.3, 7.4.4, 7.4.8 y 7.4.9) cada uno con una calificación de riesgo de gravedad moderada a alta de 6 o 8). Usando el filtro de evaluación, se han seleccionado todos estos controles, haciéndolos visibles en la vista de evaluación, y se puede ver a continuación que ninguno de ellos ha sido evaluado. 
   
-![Administrador de cumplimiento: Vista de evaluación (controles de filtro, ninguno evaluado)](media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Como los seis controles están relacionados, al finalizar alguno de ellos, se sincronizarán esos resultados de pruebas en todos los controles relacionados de esta evaluación (así como en todos los controles relacionados en una evaluación que se encuentre en la misma agrupación de evaluaciones). Al finalizar la implementación y las pruebas del control 7.5.5 del RGPD, el área de detalle del control se actualiza para indicar que se evaluaron los seis controles, con un incremento correspondiente en el número de controles evaluados hasta 57 y el 51 % evaluados, y un cambio en la puntuación de cumplimiento total de +40. 
+![Administrador de cumplimiento: Vista de evaluación (controles de filtro, ninguno evaluado)](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Como los seis controles están relacionados, al finalizar alguno de ellos, se sincronizarán esos resultados de pruebas en todos los controles relacionados de esta evaluación (así como en todos los controles relacionados en una evaluación que se encuentre en la misma agrupación de evaluaciones). Al finalizar la implementación y las pruebas del control 7.5.5 del RGPD, el área de detalle del control se actualiza para indicar que se evaluaron los seis controles, con un incremento correspondiente en el número de controles evaluados hasta 57 y el 51 % evaluados, y un cambio en la puntuación de cumplimiento total de +40. 
   
-![Vista de evaluación del Administrador de cumplimiento: Resultados del control sincronizados](media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
+![Vista de evaluación del Administrador de cumplimiento: Resultados del control sincronizados](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
   
 Este cuadro de diálogo de confirmación de la actualización se mostrará si va a cambiar el estado de la implementación de un control relacionado de forma que afecte al resto de los controles relacionados.
   
-![Evaluación del Administrador de cumplimiento: Cuadro de diálogo de confirmación de actualización de controles relacionados](media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
+![Evaluación del Administrador de cumplimiento: Cuadro de diálogo de confirmación de actualización de controles relacionados](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
   
 > [!NOTE]
 > Actualmente, solo se incluye una puntuación de cumplimiento en las evaluaciones para los servicios en la nube de Office 365. En las evaluaciones para Azure y Dynamics, se muestra un estado de evaluación. 
@@ -166,7 +166,7 @@ Las evaluaciones del Administrador de cumplimiento se basan en el modelo de resp
   
 Como se muestra en la Evaluación de RGPD de Office 365 a continuación, Microsoft y los clientes son responsables de realizar diferentes acciones que están diseñadas para cumplir los requisitos del reglamento o estándar que se evaluará. Racionalizar y comprender lo que se requiere. Actuando a través de una variedad de estándares y regulaciones, el Administrador de Cumplimiento trata todos los estándares y reglamentos como si fueran marcos de control. Por tanto, las acciones realizadas por Microsoft y por clientes para cada evaluación implican la implementación y la validación de los distintos controles.
   
-![Administrador de cumplimiento: Evaluación del RGPD](media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
+![Administrador de cumplimiento: Evaluación del RGPD](../media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
   
 Este es el flujo de trabajo básico para una acción típica:
   
@@ -202,7 +202,7 @@ El Administrador de cumplimiento usa una metodología de puntuación basada en r
     
 - Los factores externos del control
     
-![Administrador de cumplimiento: Metodología de puntuación de cumplimiento](media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
+![Administrador de cumplimiento: Metodología de puntuación de cumplimiento](../media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
   
  ### <a name="essence-of-the-control"></a>Esencia del control
   
@@ -322,23 +322,23 @@ Como se ha explicado anteriormente, una de las ventajas más importantes de los 
   
 Tomemos como ejemplo estos dos controles de evaluación relacionados, cada uno vinculado con el cifrado de datos en redes públicas, el control 6.10.1.2 en la evaluación del RGPD de Office 365, y el control SC-13 en la evaluación Office 365 - NIST 800-53. Estos son controles de evaluación relacionados, en dos evaluaciones distintas, ambas en el grupo predeterminado. Inicialmente, ninguna evaluación completa evaluaciones de control de cliente, ya que estas dos evaluaciones se muestran en el Panel del Administrador de cumplimiento.
   
-![Panel del Administrador de cumplimiento: Evaluaciones agrupadas (antes)](media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
+![Panel del Administrador de cumplimiento: Evaluaciones agrupadas (antes)](../media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
   
 Al hacer clic en la evaluación **Office 365: RGPD** y usar los controles de filtro para ver el control del RGPD 6.10.1.2, vemos que el control SC-13 de NIST 800-53 se muestra como un control relacionado.
   
-![Evaluación del Administrador de Cumplimiento: Controles compartidos](media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
+![Evaluación del Administrador de Cumplimiento: Controles compartidos](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
   
  Aquí se muestra la finalización de la implementación y pruebas del control del RGPD 6.10.1.2. 
   
-![Control de evaluación del Administrador de cumplimiento del RGPD 6.10.1.2: Estado correcto](media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
+![Control de evaluación del Administrador de cumplimiento del RGPD 6.10.1.2: Estado correcto](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
   
 Al navegar al control relacionado en la evaluación agrupada, vemos que el SC-13 de NIST 800-53 también se marcó como completado con la misma fecha y hora, sin ningún esfuerzo de pruebas o implementación.
   
-![Evaluación del Administrador de Cumplimiento: NIST 800-53 SC(13) completado](media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
+![Evaluación del Administrador de Cumplimiento: NIST 800-53 SC(13) completado](../media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
   
 De nuevo en el panel, podemos ver que cada evaluación tiene una evaluación de control completada y que la puntuación de cumplimiento total de cada evaluación se incrementó en ocho (el valor de la puntuación de cumplimiento del control compartido).
   
-![Panel del Administrador de cumplimiento — sincronización del progreso de evaluación agrupada](media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
+![Panel del Administrador de cumplimiento — sincronización del progreso de evaluación agrupada](../media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
 
 ## <a name="administrative-functions"></a>Funciones administrativas
 
@@ -351,7 +351,7 @@ Hay funciones administrativas específicas que solo están disponibles en la cue
 
 Cada rol del Administrador de cumplimiento tiene permisos ligeramente distintos. Puede ver los permisos asignados a cada rol, ver qué usuarios se encuentran en cada rol y agregar o quitar usuarios de ese rol mediante el Portal de confianza de servicios; para hacerlo, seleccione el elemento de menú **Administrador** y, después, haga clic en **Configuración**. 
   
-![Menú Administrador de STP: Configuración seleccionada](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![Menú Administrador de STP: Configuración seleccionada](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 Para agregar o quitar usuarios de los roles del Administrador de cumplimiento.
   
@@ -367,11 +367,11 @@ Para agregar o quitar usuarios de los roles del Administrador de cumplimiento.
     
 6. Para agregar usuarios al rol, haga clic en **Agregar**. En el cuadro de diálogo **Agregar usuarios**, haga clic en el campo del usuario. Puede desplazarse por la lista de usuarios disponibles, o bien puede empezar a escribir el nombre de usuario para filtrar la lista según el término de búsqueda. Haga clic en el usuario para agregar esa cuenta a la lista **Agregar usuarios** que se aprovisionarán con ese rol. Para agregar varios usuarios de forma simultánea, empiece a escribir un nombre de usuario para filtrar la lista y, después, haga clic en el usuario para agregarlo a la lista. Haga clic en **Guardar** para aprovisionar el rol seleccionado a esos usuarios. 
     
-    ![Administrador de cumplimiento: Aprovisionar roles (agregar usuarios)](media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
+    ![Administrador de cumplimiento: Aprovisionar roles (agregar usuarios)](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
 7. Para quitar usuarios de este rol, seleccione los usuarios y, después, haga clic en **Eliminar**. 
     
-    ![Administrador de cumplimiento: Aprovisionar roles (quitar usuario)](media/17004def-604f-471d-a54d-f678fcc01c1e.png)
+    ![Administrador de cumplimiento: Aprovisionar roles (quitar usuario)](../media/17004def-604f-471d-a54d-f678fcc01c1e.png)
  
 ## <a name="user-privacy-settings"></a>Configuración de privacidad del usuario
 
@@ -385,7 +385,7 @@ Algunos reglamentos exigen que una organización pueda eliminar los datos de his
 
 - [Eliminar el historial de datos de usuarios](#delete-user-data-history)
     
-![Administración del Administrador de cumplimiento: Funciones de configuración de privacidad del usuario](media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+![Administración del Administrador de cumplimiento: Funciones de configuración de privacidad del usuario](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
   
 ### <a name="search-for-a-user"></a>Buscar un usuario
 
@@ -463,13 +463,13 @@ Esto establece las acciones de control como “Sin asignar” para todas las acc
 
 El Administrador de cumplimiento proporciona herramientas para asignar, realizar un seguimiento y registrar actividades relacionadas con evaluaciones y cumplimiento, lo que puede ayudar a su organización a cruzar las barreras de los equipos para alcanzar los objetivos de cumplimiento.
   
-![Panel del Administrador de cumplimiento: Menú superior (menú Administrador actualizado)](media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
+![Panel del Administrador de cumplimiento: Menú superior (menú Administrador actualizado)](../media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
 
 ## <a name="accessing-compliance-manager"></a>Obtener acceso al Administrador de cumplimiento
 
 Para obtener acceso al Administrador de cumplimiento, vaya al Portal de confianza de servicios. Cualquier usuario con una cuenta Microsoft o una cuenta de organización de Azure Active Directory puede obtener acceso al Administrador de cumplimiento.
   
-![Administrador de cumplimiento: Obtener acceso al Administrador de cumplimiento desde el menú de STP](media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
+![Administrador de cumplimiento: Obtener acceso al Administrador de cumplimiento desde el menú de STP](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
   
 1. Vaya a [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
     
@@ -481,15 +481,15 @@ Para obtener acceso al Administrador de cumplimiento, vaya al Portal de confianz
 
     Para ayudarle a empezar, agregamos las siguientes evaluaciones de forma predeterminada:
     
-    ![Evaluaciones predeterminadas del Administrador de cumplimiento](media/8c59b45a-706a-4362-a7ba-2cb782931bf7.png)
+    ![Evaluaciones predeterminadas del Administrador de cumplimiento](../media/8c59b45a-706a-4362-a7ba-2cb782931bf7.png)
     
-5. Haga clic en el ![icono de ayuda del Administrador de cumplimiento](media/c1b3092f-6ac7-43ab-b1c4-63a54598450c.png) **Ayuda** para realizar un paseo breve por el Administrador de cumplimiento. 
+5. Haga clic en el ![icono de ayuda del Administrador de cumplimiento](../media/c1b3092f-6ac7-43ab-b1c4-63a54598450c.png) **Ayuda** para realizar un paseo breve por el Administrador de cumplimiento. 
   
 ## <a name="viewing-action-items"></a>Ver acciones
 
 El Administrador de cumplimiento proporciona una vista útil de todas las acciones de evaluaciones de control asignadas, lo que le permite realizar acciones en estas de forma rápida y sencilla. Para ver todas las acciones o seleccionar las acciones que se correspondan con una certificación específica, haga clic en la pestaña asociada con esa evaluación. Por ejemplo, en la imagen siguiente, se seleccionó la pestaña RGPD, donde se muestran controles relacionados con la evaluación del RGPD.
   
-![Administrador de cumplimiento: Acciones donde se muestran varias pestañas (RGPD seleccionada)](media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
+![Administrador de cumplimiento: Acciones donde se muestran varias pestañas (RGPD seleccionada)](../media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
   
 Para ver las acciones:
   
@@ -503,7 +503,7 @@ Para ver las acciones:
 
 Para agregar una evaluación al Administrador de cumplimiento:
   
-1. En el panel del Administrador de cumplimiento, haga clic en ![icono de agregar](media/ITPro-EAC-AddIcon.gif) **Agregar evaluación**. 
+1. En el panel del Administrador de cumplimiento, haga clic en ![icono de agregar](../media/ITPro-EAC-AddIcon.gif) **Agregar evaluación**. 
     
 2. En la ventana **Agregar una evaluación**, puede crear un grupo al que agregar la evaluación, o bien puede agregarlo a un grupo existente (el grupo integrado se denomina “Grupo inicial”). Según la opción que seleccione, escriba el nombre del nuevo grupo, o bien seleccione un grupo existente en la lista desplegable. Para obtener más información, vea [Agrupar evaluaciones](#grouping-assessments).
     
@@ -523,7 +523,7 @@ Para agregar una evaluación al Administrador de cumplimiento:
     
 6. Haga clic en el menú **Acciones** para ver las acciones asignadas, cambiar el nombre del grupo de evaluaciones, exportar el informe de evaluación o archivar la evaluación. 
     
-    ![Administrador de cumplimiento: Icono de evaluación](media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
+    ![Administrador de cumplimiento: Icono de evaluación](../media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
 
 ## <a name="copying-information-from-existing-assessments"></a>Copiar información de evaluaciones existentes
 
@@ -543,7 +543,7 @@ Asimismo, se sincroniza la información de controles administrados por el client
 
 1. Busque el icono de evaluación que se corresponda con la evaluación que quiera ver y, después, haga clic en el nombre de la evaluación para abrirla y ver controles administrados por el cliente y por Microsoft asociados a la evaluación, además de una lista de los servicios en la nube que están dentro del ámbito de la evaluación. Este es un ejemplo de la evaluación para Office 365 y el RGPD.
     
-    ![Vista de evaluación del Administrador de cumplimiento: Pantalla completa con globos](media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
+    ![Vista de evaluación del Administrador de cumplimiento: Pantalla completa con globos](../media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
   
 1. En esta sección, se muestra información de resumen de la evaluación, como el nombre de la agrupación de evaluaciones, el producto, el nombre de la evaluación y el número de controles de evaluación.
     
@@ -563,19 +563,19 @@ Inicialmente, el creador de una evaluación es su único usuario. Para cada cont
   
 Esta es una lista de las tareas que puede realizar con las características de flujo de trabajo del Administrador de cumplimiento.
   
-![Flujo de trabajo de evaluación del Administrador de cumplimiento con globos](media/9e5ae34d-b55e-4452-a021-e0e5b10218f5.png)
+![Flujo de trabajo de evaluación del Administrador de cumplimiento con globos](../media/9e5ae34d-b55e-4452-a021-e0e5b10218f5.png)
   
 1. **Usar las opciones de filtro para encontrar controles de evaluación específicos**: el Administrador de cumplimiento proporciona **opciones de filtro**, que ofrecen criterios de selección altamente granulares para mostrar controles de evaluación, lo que le permitirá dedicarse de forma precisa a áreas específicas de sus esfuerzos de cumplimiento. 
     
-    Haga clic en el icono de embudo de la parte derecha de la página para mostrar u ocultar los controles de **Opciones de filtro**. Estos controles le permiten especificar criterios de filtro, y en la parte inferior solo se mostrarán los controles de evaluación que se correspondan con esos criterios. ![Controles de filtro de evaluaciones del Administrador de cumplimiento](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
+    Haga clic en el icono de embudo de la parte derecha de la página para mostrar u ocultar los controles de **Opciones de filtro**. Estos controles le permiten especificar criterios de filtro, y en la parte inferior solo se mostrarán los controles de evaluación que se correspondan con esos criterios. ![Controles de filtro de evaluaciones del Administrador de cumplimiento](../media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
   
     - **Artículos**: filtra el nombre del artículo y devuelve los controles de evaluación asociados con ese artículo. Por ejemplo, al escribir “Artículo (5)”, se muestra una lista de selección de artículos cuyo nombre contiene esa cadena (es decir, artículo (5)(1)(a), artículo (5)(1)(b), artículo (5)(1)(c), etc.). Si selecciona el artículo (5)(1)(c) se le mostrarán solo los controles asociados con dicho artículo. Este es un campo de selección múltiple que usa un operador “O” con varios valores (por ejemplo, si selecciona el artículo (5)(1)(a) y, después, agrega el artículo (5)(1)(c), el filtro mostrará los controles asociados con el artículo (5)(1)(a) o con el artículo (5)(1)(c)). 
     
-      ![Vista de evaluación del Administrador de cumplimiento: Filtrar por nombre de artículo](media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
+      ![Vista de evaluación del Administrador de cumplimiento: Filtrar por nombre de artículo](../media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
   
     - **Controles**: muestra la lista de controles cuyos nombres coinciden con el filtro (por ejemplo, al escribir 7.3, se mostrará una lista de selección de elementos como, 7.3.1, 7.3.4, 7.3.5, etc.). Es un campo de selección múltiple que usa un operador OR con varios valores (por ejemplo, si selecciona 7.3.1 y, después, agrega 7.3.4, el filtro mostrará los controles asociados con 7.3.1 o 7.3.4). 
     
-      ![Vista de evaluación del Administrador de cumplimiento: Selección múltiple de controles de filtro](media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
+      ![Vista de evaluación del Administrador de cumplimiento: Selección múltiple de controles de filtro](../media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
   
     - **Usuarios asignados**: muestra la lista de controles asignados al usuario seleccionado. 
     
@@ -585,7 +585,7 @@ Esta es una lista de las tareas que puede realizar con las características de f
     
     Al aplicar condiciones de filtro, la vista de los controles cambiará para corresponderse con las condiciones de filtro. Expanda las secciones de las familias de controles para mostrar los detalles de controles abajo. 
     
-    ![Vista de evaluación del Administrador de cumplimiento: Filtrar resultados de artículos](media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
+    ![Vista de evaluación del Administrador de cumplimiento: Filtrar resultados de artículos](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
   
 2. Si, no se muestran resultados después de seleccionar los filtros deseados, quiere decir que no hay controles que se correspondan con las condiciones de filtro especificadas. Por ejemplo, si selecciona un **Usuario asignado** específico y, después, elige un nombre de **control** que no se corresponde con el control asignado a ese usuario, no se mostrará ninguna evaluación en la página inferior. 
     
@@ -670,17 +670,17 @@ Al visualizar una evaluación archivada, ninguno de los controles que pueden edi
 
 ## <a name="using-search"></a>Uso de la búsqueda
 
-![Portal de confianza de servicios: Campo de búsqueda](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Portal de confianza de servicios: Campo de búsqueda](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
 Haga clic en el icono de lupa de la esquina superior derecha de la página para expandir el campo de búsqueda, escriba los términos de búsqueda y presione Entrar. Se mostrará el control de búsqueda con el término de búsqueda en el campo de entrada del panel de búsqueda y, en la parte inferior, se mostrarán los resultados de la búsqueda.
   
 De forma predeterminada, la búsqueda muestra resultados de documentos, y puede usar las listas desplegables “Filtrar por” para restringir la lista de documentos mostrados con el fin de agregar o quitar resultados de la búsqueda de la vista. Puede usar varios atributos de filtro al mismo tiempo para restringir los documentos mostrados a elementos específicos, como servicios en la nube, categorías de cumplimiento o procedimientos de seguridad, regiones del mundo o sectores. Haga clic en el vínculo del nombre del documento para descargar el documento.
   
-![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 Haga clic en el vínculo Administrador de cumplimiento para mostrar los resultados de búsqueda para los controles de evaluación del Administrador de cumplimiento. En la lista de resultados de búsqueda, se muestra la fecha en la que se creó la evaluación, el nombre de la agrupación de evaluaciones, el servicio en la nube aplicable y si los controles están administrados por Microsoft o por el cliente.
   
-![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
 > Los informes y documentos del Portal de confianza de servicios pueden descargarse como mínimo durante 12 meses después de su publicación, o bien hasta que se publique una nueva versión del documento. 
@@ -689,7 +689,7 @@ Haga clic en el vínculo Administrador de cumplimiento para mostrar los resultad
 
 El Portal de confianza de servicios de permite ver el contenido de la página en distintos idiomas. Para cambiar el idioma de la página, haga clic en el icono de globo de la esquina inferior izquierda de la página y seleccionar el idioma que prefiera. 
   
-![Portal de confianza de servicios: Opciones de contenido localizado](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Portal de confianza de servicios: Opciones de contenido localizado](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 
 ## <a name="change-log-for-customer-managed-controls"></a>Registro de cambios de controles administrados por el cliente

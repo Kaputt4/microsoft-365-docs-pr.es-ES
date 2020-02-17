@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates ha validado que, cuando Exchange Online y el Centro de seguridad y cumplimiento se configuran según las recomendaciones, cumplen con los requisitos de almacenamiento relevantes de las normas CFTC 1.31(c)-(d), FINRA 4511 y SEC 17a-4. Puede descargar la evaluación.
-ms.openlocfilehash: dc61521043d176781c2a6fbd9e1b283cc93eb270
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: d2f92f97ba15bcce9466e8886198c7502c41732b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628596"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069266"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
 
@@ -36,7 +36,7 @@ Cohasset ha validado que, cuando Exchange Online y el Centro de seguridad y cump
 
 Puede [descargar la evaluación de Cohasset aquí](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
 
-![Página de título de la evaluación descargable por Cohasset Associates](media/cohasset-associates-assessment.png)
+![Página de título de la evaluación descargable por Cohasset Associates](../media/cohasset-associates-assessment.png)
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>Esta evaluación es específica para Exchange Online.
 

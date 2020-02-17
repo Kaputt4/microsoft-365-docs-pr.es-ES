@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este tema se explica cómo configurar los flujos de procesos empresariales para automatizar la retención mediante eventos con la API de REST de Microsoft 365.
-ms.openlocfilehash: 46276e1a40df8c5491d569337a683666984be23a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 692671ca5e7d956cb168ac0de2e409e7023cfd04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596327"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079116"
 ---
 # <a name="automate-event-based-retention"></a>Retención automática basada en eventos
 
@@ -121,13 +121,13 @@ Además, se debe calcular el período de retención de cada uno de estos emplead
 
 El siguiente diagrama muestra cómo puede haber varias etiquetas asociadas a un único evento. En este caso, todos los archivos de la etiqueta de indemnización del Trabajador y los que pertenecen a la etiqueta de beneficios del Trabajador se asocian a un único evento, que es la salida del empleado. Cada uno de estos archivos diferentes tiene diferentes relojes de retención. Por lo tanto, cuando un empleado deja la organización, cada archivo dentro de una misma etiqueta experimenta un período de retención diferente. Activar todos estos relojes de retención diferentes para cada tipo de archivo o etiqueta en un solo empleado es una tarea muy desafiante. Imagine este proceso con varios empleados.
 
-![Diagrama de tipo de evento, evento y etiquetas](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
+![Diagrama de tipo de evento, evento y etiquetas](../media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
 Por lo tanto, un proceso automatizado para activar estos relojes de retención diferentes para varios empleados permitirá ahorrar tiempo, evitar errores y lograr una alta eficiencia.
 
 **Configuración de retención automatizada basada en eventos para este escenario:**
 
-![Diagrama de funciones y acciones para el escenario del empleado que deja la organización](media/automate-event-driven-retention-employee-termination-diagram.png)
+![Diagrama de funciones y acciones para el escenario del empleado que deja la organización](../media/automate-event-driven-retention-employee-termination-diagram.png)
 
   - La administración crea carpetas del empleado en un conjunto de documentos denominado Naiara Padilla, David Pulido.
 
@@ -151,9 +151,9 @@ Por lo tanto, un proceso automatizado para activar estos relojes de retención d
 
 Paso 1: crear un flujo para crear un evento mediante la API de REST de Microsoft 365
 
-![Usar Flow para crear un evento](media/automate-event-driven-retention-flow-1.png)
+![Usar Flow para crear un evento](../media/automate-event-driven-retention-flow-1.png)
 
-![Usar Flow para llamar a la API de REST](media/automate-event-driven-retention-flow-2.png)
+![Usar Flow para llamar a la API de REST](../media/automate-event-driven-retention-flow-2.png)
 
 ##### <a name="create-an-event"></a>Crear un evento
 
@@ -423,7 +423,7 @@ Un sistema de administración de relaciones de cliente (CRM) puede trabajar con 
 
 **Configuración de retención automatizada basada en eventos para este escenario:**
 
-![Diagrama de los funciones y tareas para escenarios de expiración del contrato](media/automate-event-driven-retention-contract-expiration.png)
+![Diagrama de los funciones y tareas para escenarios de expiración del contrato](../media/automate-event-driven-retention-contract-expiration.png)
 
   - La administración crea una biblioteca de SharePoint con carpetas diferentes para cada tipo de contrato.
 
@@ -451,7 +451,7 @@ Un sistema de planeación de recursos empresariales (ERP) puede trabajar con Mic
 
 **Configuración de retención automatizada basada en eventos para este escenario:**
 
-![Diagrama de las funciones y tareas para escenarios de ciclo de vida del producto](media/automate-event-driven-retention-product-lifecycle-expiration.png)
+![Diagrama de las funciones y tareas para escenarios de ciclo de vida del producto](../media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
   - La administración crea carpetas de productos en el conjunto de documentos como Producto 1, Producto 2, etc.
 
