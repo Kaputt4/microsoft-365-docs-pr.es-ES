@@ -73,7 +73,7 @@ Si forma parte del equipo de seguridad de Office 365 de su organización y tiene
 
 - La **descarga de un archivo** permite descargar y analizar el archivo en busca de falsos positivos.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 1. [Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
 

@@ -64,7 +64,7 @@ Las acciones pendientes se pueden revisar y aprobar mediante uno de varios méto
 
 2. Seleccione un elemento de la lista y, a continuación, elija **aprobar** o **rechazar**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre el Centro de actividades](mtp-action-center.md)
 - [Más información sobre incidentes](incidents-overview.md)

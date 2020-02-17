@@ -50,8 +50,8 @@ El siguiente diagrama ilustra el conjunto de directivas recomendadas para proteg
 Estos son los servicios dependientes que se deben incluir en la asignación de aplicaciones en la nube para Teams:
 
 - Microsoft Teams
-- SharePoint Online y OneDrive para la Empresa
-- Exchange Online
+- SharePoint en línea y OneDrive para Empresas
+- Exchange en línea
 - Skype Empresarial Online
 - Microsoft Stream (grabaciones de reuniones)
 - Microsoft Planner (tareas de Planner y datos del plan)
@@ -118,7 +118,7 @@ Teams también le permite usar aplicaciones en varios lugares, como canales o ch
 
 Para obtener más información sobre las directivas de permisos de la aplicación, consulte [Manage App Permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Obtenga información sobre cómo habilitar el acceso condicional para Exchange Online](secure-email-recommended-policies.md)
 

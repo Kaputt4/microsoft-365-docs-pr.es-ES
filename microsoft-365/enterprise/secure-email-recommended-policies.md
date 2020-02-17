@@ -84,6 +84,6 @@ Con las nuevas capacidades de cifrado de mensajes de Office 365 (OME), que aprov
 
 Para obtener más información, vea [set up New Office 365 Message Encryption Capabilities](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Más información sobre las recomendaciones de directiva para la protección de sitios y archivos de SharePoint](sharepoint-file-access-policies.md)

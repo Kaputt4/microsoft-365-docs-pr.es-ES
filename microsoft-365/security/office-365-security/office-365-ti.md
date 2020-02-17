@@ -106,7 +106,7 @@ La protección contra amenazas avanzada de Office 365 usa el control de acceso b
 |Integración del plan 2 de la protección contra amenazas avanzada de Office 365 con la protección contra amenazas avanzada de Microsoft defender  <br/><br/> Integración del plan 2 de la protección contra amenazas avanzada de Office 365 con un servidor de SIEM  <br/> |El **administrador global de Office 365** o el rol de **Administrador de seguridad** asignado en Azure Active Directory[https://portal.azure.com](https://portal.azure.com)() o en el centro de administración[https://admin.microsoft.com](https://admin.microsoft.com)de Microsoft 365 ().<br/>--- **Asimismo** ---<br/>Una función adecuada asignada en aplicaciones adicionales (como el [centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor de Siem)  |
    
     
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga información sobre los rastreadores de amenazas: nuevos y dignos](threat-trackers.md)
     

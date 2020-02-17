@@ -93,7 +93,7 @@ En el mundo de las amenazas Riddled, la ejecución de análisis de antimalware t
   
 El filtro de nueva amenaza notable resalta los elementos que se detectaron recientemente a través de datos adjuntos seguros ATP. Estas detecciones representan elementos que son nuevos archivos malintencionados, que no se han encontrado previamente en Office 365 en el correo electrónico del flujo de correo electrónico o de otros clientes. Preste atención a los elementos del rastreador de amenazas digno de destacar, consulte quién lo ha dirigido y revise los detalles de detonación que se muestran en la ficha análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el explorador). Nota solo encontrará esta pestaña en los mensajes de correo electrónico detectados por la funcionalidad de datos adjuntos seguros de ATP: este Tracker destacado incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el explorador.
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si su organización no dispone ya de estas capacidades de investigación y respuesta de amenazas de Office 365, consulte [¿Cómo obtenemos las capacidades de investigación de amenazas y respuesta de office 365?](office-365-ti.md).
     
