@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión preliminar pública de la clasificación de datos
-ms.openlocfilehash: fecf643d12cf544c16570c173b15bb1e0dc043f0
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: 1beae92089833327cedf6090690530d9e5457a37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887347"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076367"
 ---
 # <a name="data-classification-public-preview-release-notes-preview"></a>Notas de la versión preliminar pública de la clasificación de datos (vista previa)
 
@@ -40,7 +40,7 @@ Notará la aparición de información breve sobre herramientas cuando explore en
 
 ## <a name="seeing-guids-instead-of-label-names"></a>Ver GUID en lugar de los nombres de las etiquetas
 
-Existen casos en que los clientes de la visión preliminar privada vieron cómo la eliminación de una etiqueta cuyo contenido ya había sido sellado daba como resultado que los nombres de las etiquetas se resolvieran en un GUID de 32 bits en el explorador de contenido y el explorador de actividades en lugar del nombre de la etiqueta. 
+Existen casos en que los clientes de la versión preliminar privada vieron cómo las etiquetas migradas o la eliminación de una etiqueta cuyo contenido ya había sido sellado daba como resultado que los nombres de las etiquetas se resolvieran en un GUID de 32 bits en el explorador de contenido y el explorador de actividades en lugar del nombre de la etiqueta. 
 
 ## <a name="rendering-of-encrypted-documents"></a>Representación de documentos codificados
 

@@ -61,7 +61,7 @@ Hay una amplia variedad de informes disponibles en el centro &amp; de seguridad 
 |**Registro de auditoría** <br/> Información acerca de las actividades, los usuarios, los archivos o las carpetas de Office 365, etc.  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a búsqueda de registros de \> **Auditoría** de **investigación de búsqueda &amp; ** <br/> |[Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Informes de cumplimiento** <br/> Informes de FedRAMP, informes de gobierno, riesgos y cumplimiento, informes de administración de seguridad de la información ISO y controles de la organización de servicios informes de auditoría y evaluación  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **informes de cumplimiento** de **garantía** \> del servicio. <br/> |[Planeación del &amp; cumplimiento de la seguridad en Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que tiene una introducción a los informes y a la información, el siguiente paso es aprender a personalizar, administrar y descargar informes. Consulte los siguientes artículos:
   

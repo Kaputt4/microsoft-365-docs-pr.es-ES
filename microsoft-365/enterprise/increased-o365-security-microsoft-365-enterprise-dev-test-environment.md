@@ -27,7 +27,7 @@ ms.locfileid: "42067267"
 
 Con las instrucciones de este artículo, se configuran opciones adicionales de configuración de Microsoft 365 para aumentar la seguridad en el entorno de pruebas de Microsoft 365 Enterprise.
 
-![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
@@ -113,7 +113,7 @@ La puntuación segura de Microsoft muestra su postura de seguridad como un núme
 
 Para obtener más información, consulte [calificación segura de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Consulte el paso [configurar mayor seguridad para Microsoft 365](infoprotect-configure-increased-security-office-365.md) en la fase de protección de la **información** para obtener información y vínculos para configurar estas opciones en producción.
 

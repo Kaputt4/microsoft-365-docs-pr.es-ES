@@ -50,9 +50,9 @@ Use el valor adecuado de la tabla siguiente cuando configure la Directiva de adm
 | Nivel | Datos recopilados | Valor |
 |:--- |:--- |:--- |
 | Seguridad | Solo datos de seguridad. | comprendi |
-| Básica | Datos de seguridad y datos básicos del sistema y de calidad. | 1  |
-| Mejor | Datos de seguridad, datos básicos del sistema y de calidad, y datos mejorados y datos de confiabilidad avanzada. | 2  |
-| Full | Datos de seguridad, datos básicos del sistema y de calidad, conocimientos mejorados y datos de confiabilidad avanzada y datos de diagnóstico completos. | 3  |
+| Básica | Datos de seguridad y datos básicos del sistema y de calidad. | 1 |
+| Mejor | Datos de seguridad, datos básicos del sistema y de calidad, y datos mejorados y datos de confiabilidad avanzada. | segundo |
+| Full | Datos de seguridad, datos básicos del sistema y de calidad, conocimientos mejorados y datos de confiabilidad avanzada y datos de diagnóstico completos. | 3 |
 
 Puede habilitar los datos de diagnóstico a través de cualquiera de estos métodos:
 

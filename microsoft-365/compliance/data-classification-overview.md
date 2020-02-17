@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 06fe15af513a737ac7669a3115891b7b731d7458
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76c1199fa3842428900db197f15728c116f778b9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595457"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076417"
 ---
 # <a name="data-classification-overview-preview"></a>Información general sobre la clasificación de datos (vista previa)
 
@@ -41,11 +41,11 @@ Microsoft 365 dispone de un gran número de definiciones de tipos de informació
 
 En la tarjeta del tipo de información confidencial se muestran los tipos de información confidencial principales que se han encontrado y etiquetado en la organización.
 
-![tipos principales de información confidencial](media/data-classification-sens-info-types-card.png)
+![tipos principales de información confidencial](../media/data-classification-sens-info-types-card.png)
 
 Para averiguar cuántos elementos hay en una categoría de clasificación determinada, mueva el puntero sobre la barra de la categoría.
 
-![detalle de los tipos principales de información confidencial](media/data-classification-sens-info-types-hover.png)
+![detalle de los tipos principales de información confidencial](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
 > Si la tarjeta muestra el mensaje "No se ha encontrado ningún dato que contenga información confidencial". Significa que no hay ningún elemento de la organización que se haya clasificado como un tipo de información confidencial o que no se ha rastreado ningún elemento. Para comenzar a usar las etiquetas, vea:
@@ -60,13 +60,13 @@ Al aplicar una etiqueta de confidencialidad a un elemento a través de Microsoft
 - se incrusta en el documento una etiqueta que indica el valor que tiene el elemento para la organización y que acompañará al documento a cualquier lugar al que vaya;
 - la presencia de la etiqueta habilita varios comportamientos de protección, como, por ejemplo, la marca de agua o el cifrado obligatorios. Con la protección del punto de conexión habilitada, podrá incluso evitar que un elemento abandone el control de la organización.
 
-Para obtener más información sobre las etiquetas de confidencialidad, vea [Información general de etiquetas de retención](sensitivity-labels.md).
+Para obtener más información sobre las etiquetas de confidencialidad, vea: [Información general de etiquetas de confidencialidad](sensitivity-labels.md).
 
 Las etiquetas de confidencialidad deben habilitarse para los archivos de SharePoint y OneDrive para que los datos correspondientes aparezcan en la página de clasificación de datos. Para más información, vea[ habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)](sensitivity-labels-sharepoint-onedrive-files.md)
 
 La tarjeta de la etiqueta de confidencialidad muestra el número de elementos (correo electrónico o documento) por nivel de confidencialidad.
 
-![captura de pantalla de marcador de posición del desglose del contenido según la clasificación de las etiquetas de confidencialidad](media/data-classification-top-sensitivity-labels-applied.png)
+![captura de pantalla de marcador de posición del desglose del contenido según la clasificación de las etiquetas de confidencialidad](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
 > Si no ha creado ni publicado ninguna etiqueta de confidencialidad o si el contenido no tiene ninguna etiqueta de confidencialidad aplicada, esta tarjeta mostrará el mensaje "No se ha detectado ninguna etiqueta de confidencialidad". Para comenzar a usar las etiquetas, vea:
@@ -78,7 +78,7 @@ Las etiquetas de retención se usan para administrar la eliminación de contenid
 
 La tarjeta de etiquetas principales de retención aplicadas muestra el número de elementos que tienen una etiqueta de retención determinada.
 
-![captura de pantalla de marcador de posición de etiquetas principales de retención aplicadas](media/data-classification-top-retention-labels-applied.png)
+![captura de pantalla de marcador de posición de etiquetas principales de retención aplicadas](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
 > Si esta tarjeta muestra el mensaje "No se ha detectado ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no hay ningún contenido con una etiqueta de retención aplicada. Para comenzar a usar las etiquetas de retención, vea:

@@ -36,7 +36,7 @@ Asegúrese de que la configuración cumple los siguientes requisitos para la inf
 - Las características y ajustes se configuraron y aplicaron en los dispositivos con los usuarios y grupos de Azure AD que creó (por ejemplo, habilitar la protección antivirus y restringir aplicaciones específicas).
 - Las directivas de cumplimiento están en su ubicación para requerir un firewall o una longitud de contraseña en un dispositivo. Si los dispositivos no son compatibles, el acceso condicional bloquea el acceso a los datos de la organización.
 
-## <a name="results-and-next-steps"></a>Resultados y siguientes pasos
+## <a name="results-and-next-steps"></a>Resultados y pasos siguientes
 
 Los dispositivos se inscriben en Intune y se configuran con las directivas adecuadas.
 

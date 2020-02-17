@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862130"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069977"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -113,25 +113,25 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
 
   |**Servicio de Office 365**|**30 minutos**|**24 horas**|
   |:-----|:-----:|:-----:|
-  |Esquema de Protección e Inteligencia contra amenazas|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Azure Active Directory (eventos administrativos)||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Prevención de pérdida de datos|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |eDiscovery|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange en línea|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Project|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |PowerApps|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power BI|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Centro de seguridad y cumplimiento|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |SharePoint en línea y OneDrive para Empresas|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Workplace Analytics|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Esquema de Protección e Inteligencia contra amenazas|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Azure Active Directory (eventos administrativos)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Prevención de pérdida de datos|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |eDiscovery|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Exchange en línea|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Project|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Stream|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Teams|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |PowerApps|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power BI|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Centro de seguridad y cumplimiento|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |SharePoint en línea y OneDrive para Empresas|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Sway||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Workplace Analytics|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Yammer||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   ||||
 
 - Azure Active Directory (AD) es el servicio de directorio para Office 365. El registro de auditoría unificado contiene actividades de usuario, dominio, aplicación, grupo y de directorio que se han realizado en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
@@ -163,7 +163,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
     La página del**registro de auditoría de búsqueda**será mostrada.
 
-    ![Configure los criterios y luego, haga clic en Buscar para ejecutar el informe.](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configure los criterios y luego, haga clic en Buscar para ejecutar el informe.](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
 
     > [!NOTE]
     > Primeramente tiene que activar el registro de auditoría antes de que pueda ejecutar una búsqueda de registros de auditoría. Si se muestra el vínculo**Iniciar el registro de la actividad administrativa y de usuario**, haga clic en él para activar la auditoría. Si no ve este vínculo, la auditoría ya se ha activado para la organización.
@@ -195,13 +195,13 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
    Los resultados de búsqueda se cargan y, después de unos minutos, se muestran en **Resultados**. Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. En el**panel resultados** se mostrará un máximo de 5 000 eventos en incrementos de 150 eventos. Si hay más de 5 000 eventos que cumplen los criterios de búsqueda, se muestran los 5 000 eventos más recientes.
 
-   ![El número de resultados se muestra cuando haya terminado la búsqueda](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![El número de resultados se muestra cuando haya terminado la búsqueda](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>Sugerencias para buscar el registro de auditoría
 
 - Puede seleccionar actividades específicas de búsqueda haciendo clic en el nombre de la actividad. O puede buscar todas las actividades en un grupo (como **Actividades de archivos y carpetas**) haciendo clic en el nombre de grupo. Si se selecciona una actividad, puede hacer clic en ella para cancelar la selección. También puede usar el cuadro de búsqueda para mostrar las actividades que contengan la palabra clave que usted escriba.
 
-  ![Haga clic en el nombre de grupo de actividades para seleccionar todas las actividades](media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![Haga clic en el nombre de grupo de actividades para seleccionar todas las actividades](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - Tiene que seleccionar **Mostrar resultados para todas las actividades** en la lista de**Actividades** para mostrar los eventos del registro de auditoría de administración de Exchange. Los eventos de este registro de auditoría muestran un nombre de cmdlet (por ejemplo,**Set-Mailbox**) en la columna de**Actividad**en los resultados. Para obtener más información, haga clic en la pestaña** actividades auditadas**de este tema y luego haga clic en**actividades de administración de Exchange**.
 
@@ -239,7 +239,7 @@ Los resultados contienen la siguiente información sobre cada evento que la bús
 
 Puede ver más detalles sobre un evento al hacer clic en el registro de eventos de la lista de resultados de búsqueda. Se muestra una página de**detalles** que contiene las propiedades detalladas del registro de eventos. Las propiedades que se muestran dependen del servicio de Office 365 en el que se produce el evento. Para mostrar esos detalles, haga clic en**Más información**. Para descripciones, consulte[Propiedades detalladas del registro de auditoría de Office 365](detailed-properties-in-the-office-365-audit-log.md)
 
-![Haga clic en Obtener más información para ver las propiedades detalladas del registro de eventos de auditoría.](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![Haga clic en Obtener más información para ver las propiedades detalladas del registro de eventos de auditoría.](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
 ### <a name="step-3-filter-the-search-results"></a>Paso 3: Filtrar los resultados de la búsqueda
 
@@ -255,7 +255,7 @@ Para filtrar los resultados:
 
 3. Haga clic en uno de lo cuadros que se visualizan en las cabeceras de columna y escriba una palabra o frase, dependiendo de la columna que esté filtrando. Los resultados se volverán a ajustar de manera dinámica para mostrar los eventos que coincidan con su filtro.
 
-   ![Escriba una palabra en el filtro para mostrar los eventos que coincidan con el filtro](media/542dc323-a997-402c-934b-cc5e218e50bc.png)
+   ![Escriba una palabra en el filtro para mostrar los eventos que coincidan con el filtro](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
 4. Para borrar un filtro, haga clic en la**X**en el cuadro de filtro o haga clic en **Ocultar filtrado**.
 
@@ -330,7 +330,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Archivo eliminado de la papelera de reciclaje|FileDeletedFirstStageRecycleBin|El usuario elimina un archivo de la papelera de reciclaje de un sitio.|
 |Archivo eliminado de la papelera de reciclaje de segundo nivel|FileDeletedSecondStageRecycleBin|El usuario elimina un archivo de la papelera del segundo nivel de la papelera de reciclaje de un sitio.|
 |Política de cumplimiento de etiqueta borrada|ComplianceRecordDelete|Un documento que se clasificó como un registro fue eliminado. Un documento se considera un registro cuando se le aplica una etiqueta de retención que clasifica el contenido como un registro.|
-|Desfase detectado de la sensibilidad del documento |DocumentSensitivityMismatchDetected|El usuario carga un documento clasificado con una etiqueta de sensibilidad que tiene una prioridad mayor que la que se ha aplicado al sitio en el que se carga el documento. <br/><br/> Este evento no se activa si la etiqueta de sensibilidad que se aplica a un sitio tiene una prioridad más alta que la etiqueta de sensibilidad que se ha aplicado a un documento cargado en el sitio. Para obtener más información acerca de la prioridad de las etiquetas de sensibilidad, consulte la sección "prioridad de etiqueta" en[Introducción a las etiquetas de carácter](sensitivity-labels.md#label-priority-order-matters).|
+|Desfase detectado de la sensibilidad del documento |DocumentSensitivityMismatchDetected|El usuario carga un documento clasificado con una etiqueta de sensibilidad que tiene una prioridad mayor que la que se ha aplicado al sitio en el que se carga el documento. <br/><br/> Este evento no se activa si la etiqueta de sensibilidad que se aplica a un sitio tiene una prioridad más alta que la etiqueta de sensibilidad que se ha aplicado a un documento cargado en el sitio. Para obtener más información sobre la prioridad de las etiquetas de confidencialidad, consulte la sección "prioridad de etiqueta" en [Introducción a las etiquetas de confidencialidad](sensitivity-labels.md#label-priority-order-matters).|
 |Malware detectado en archivo|FileMalwareDetected|El antivirus de SharePoint detecta el malware en un archivo.|
 |Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) la extracción del repositorio de un archivo. Eso significa que cualquier cambio que haya realizado en el archivo cuando estaba extraído del repositorio se descarta y no se guarda en la versión del documento de la biblioteca de documentos.|
 |Archivo descargado|FileDownloaded|El usuario descarga un documento de un sitio.|
@@ -744,7 +744,7 @@ En la siguiente tabla se enumeran las actividades de usuario y administrador en 
 
 Si su organización usa la [aplicación Pacientes](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) en Microsoft Teams, puede buscar el registro de auditoría para las actividades relacionadas con el uso de la aplicación Pacientes. Si su entorno está configurado para admitir la aplicación Pacientes, un grupo adicional de actividad está disponible para estas actividades en la lista del selector **Actividades**.
 
-![Actividades de Microsoft Teams para Sanidad en la lista del selector Actividades](media/TeamsHealthcareAuditActivities.png)
+![Actividades de Microsoft Teams para Sanidad en la lista del selector Actividades](../media/TeamsHealthcareAuditActivities.png)
 
 Para obtener una descripción de las actividades de la aplicación Pacientes, consulte [Registros de auditoría de la aplicación para Pacientes](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
@@ -835,7 +835,7 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
 
 - Para mostrar los eventos del registro de auditoría de administración de Exchange, filtre los resultados de búsqueda y escriba un**-** (guion) en el cuadro de filtro **Actividad**. Esto mostrará los nombres de los cmdlet, que se muestran en la columna**Actividad**de los eventos de administración de Exchange. Luego usted puede ordenar los nombres de cmdlet en orden alfabético.
 
-  ![Escriba un guión en el cuadro de actividades para filtrar los eventos de administración de Exchange](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![Escriba un guión en el cuadro de actividades para filtrar los eventos de administración de Exchange](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - Para obtener información sobre qué cmdlet se ha ejecutado, qué parámetros y valores de parámetro se han usado y qué objetos se han visto afectados, tendrá que exportar los resultados de búsqueda y seleccionar la opción **Descargar todos los resultados**. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
 

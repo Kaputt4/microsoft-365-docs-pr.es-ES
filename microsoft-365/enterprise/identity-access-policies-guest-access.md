@@ -65,7 +65,7 @@ Para obtener más información, vea [limitaciones de la protección de identidad
 ### <a name="excluding-guest-and-external-users-from-device-management"></a>Excluir usuarios externos y invitados de la administración de dispositivos 
 Solo una organización puede administrar un dispositivo. Si no excluye a los usuarios externos y invitados de las directivas que requieran el cumplimiento de dispositivos, estas directivas bloquearán a estos usuarios. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Obtenga información sobre cómo habilitar el acceso condicional de Teams](teams-access-policies.md)
 

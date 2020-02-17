@@ -49,7 +49,7 @@ Una vez que los administradores de seguridad han identificado algo sospechoso o 
 
 Las capacidades de investigación y respuesta de amenazas de Office 365 se alimentan con datos del [gráfico de seguridad inteligente de Microsoft](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph/). El gráfico adquiere la última señal de amenazas de más de 1 mil millones dispositivos Windows, 450 mil millones inicios de sesión mensuales de Azure y 400 mil millones mensajes de correo electrónico mensuales en Office 365. Esta señal de amenaza sin rival es la que proporciona la visibilidad amplia que tiene el equipo de operaciones de seguridad para una visión más completa de las amenazas que afectan a su organización.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Obtenga más información sobre la [protección contra amenazas avanzada de Office 365](office-365-atp.md).
 

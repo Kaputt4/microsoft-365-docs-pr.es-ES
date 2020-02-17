@@ -145,6 +145,6 @@ La tabla anterior refleja la tendencia de muchas organizaciones para admitir una
 
 Recomendamos que los dispositivos de propiedad corporativa se administren con Intune o con un dominio Unido para aplicar protecciones y control adicionales. En función de la sensibilidad de los datos, su organización puede optar por no permitir BYODs para determinados grupos de usuarios o aplicaciones específicas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades](identity-access-prerequisites.md)

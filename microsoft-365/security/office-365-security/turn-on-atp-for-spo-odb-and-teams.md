@@ -96,7 +96,7 @@ Para recibir una notificación cuando se identificó un archivo en SharePoint On
 
 Para obtener más información acerca de las alertas, consulte [Create Activity Alerts in the Office 365 Security & Compliance Center](../../compliance/create-activity-alerts.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 1. [Ver información sobre los archivos malintencionados detectados en SharePoint, OneDrive o Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 
