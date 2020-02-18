@@ -1,5 +1,7 @@
 ---
 title: 'Paso 3: Evitar las redirecciones de red'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,22 +15,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información y elimine las redirecciones de red para mejorar el rendimiento.
-ms.openlocfilehash: 8d3c971c1295f8f1112c594635bfd791b251bd68
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: f9499fdb8e8c3f7b77e3349d6cc99f6dbf465870
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370337"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066725"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>Paso 3: Evitar las redirecciones de red
 
 *Este paso es obligatorio y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![Fase 1-Red](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1-Red](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Una [redirección de red](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) ocurre cuando el tráfico vinculado a un destino se dirige por primera vez a otra ubicación intermedia, como una pila de seguridad local, un agente de acceso a la nube o una puerta de enlace web basada en la nube. Aquí le mostramos un ejemplo.
 
-![Ejemplo de una redirección de red](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
+![Ejemplo de una redirección de red](../media/networking-avoid-network-hairpins/network-hairpin-example.png)
 
 Una redirección de red también puede deberse a un bajo enrutamiento en Internet debido a los proveedores de servicios de red. 
 
@@ -44,7 +46,7 @@ Si usa servicios de red o seguridad basados en la nube para el tráfico de Micro
 
 Siempre que sea posible, configure los enrutadores perimetrales para enviar directamente el tráfico de Microsoft 365 de confianza, en lugar de a través de un proxy o túnel mediante un proveedor de seguridad de red de terceros en la nube o basado en la nube que procesa el tráfico de Internet. 
 
-![Ejemplo de cómo evitar una redirección de red](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+![Ejemplo de cómo evitar una redirección de red](../media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
 
 Como punto de control provisional, puede ver los [criterios de salida](networking-exit-criteria.md#crit-networking-step3) de este paso.
 
@@ -52,4 +54,4 @@ Como punto de control provisional, puede ver los [criterios de salida](networkin
 
 |||
 |:-------|:-----|
-|![Paso 4](./media/stepnumbers/Step4.png)|[Configurar la omisión de tráfico](networking-configure-proxies-firewalls.md)|
+|![Paso 4](../media/stepnumbers/Step4.png)|[Configurar la omisión de tráfico](networking-configure-proxies-firewalls.md)|

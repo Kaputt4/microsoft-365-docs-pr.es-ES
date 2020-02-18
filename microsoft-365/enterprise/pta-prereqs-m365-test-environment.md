@@ -1,9 +1,11 @@
 ---
 title: Requisitos previos de acceso de dispositivos e identidades para la autenticación de paso a través en el entorno de prueba de Microsoft 365
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades con los requisitos previos para la autenticación de paso a través.
-ms.openlocfilehash: 7bef08ba10413f95fb23707ce2ecc4ac248c4bc2
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: f9f5fd8f235787512d59b29dc06b080bc9cfa0ff
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673326"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085609"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades para la autenticación de paso a través en el entorno de prueba de Microsoft 365
 
@@ -45,7 +47,7 @@ Siga las instrucciones de [Autenticación de paso a través](pass-through-auth-m
 
 Esta es la configuración resultante.
 
-![La empresa simulada con el entorno de prueba de la autenticación de paso a través](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![La empresa simulada con el entorno de prueba de la autenticación de paso a través](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
 ## <a name="phase-2-configure-azure-ad-seamless-single-sign-on"></a>Fase 2: Configurar el inicio de sesión único de conexión directa de Azure AD
 
@@ -87,7 +89,7 @@ Pruebe la autenticación multifactor solo para la cuenta Usuario 2.
 
 ## <a name="phase-7-enable-azure-ad-identity-protection"></a>Fase 7: Habilitación de Azure AD Identity Protection
 
-Siga las instrucciones en la [Guía de laboratorio de pruebas, fase 2 de Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection). 
+Siga las instrucciones en la [Guía de laboratorio de pruebas, fase 2 de Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
 ## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Fase 8: Habilitar autenticación moderna para Exchange Online y Skype Empresarial Online
 

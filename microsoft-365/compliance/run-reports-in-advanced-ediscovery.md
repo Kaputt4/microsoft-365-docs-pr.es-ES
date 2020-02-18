@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 'Obtenga información sobre cómo ejecutar un informe y, a continuación, descargar el archivo. csv en la exhibición avanzada de documentos electrónicos de Office 365.  '
-ms.openlocfilehash: 9d459065878eceaf9f0fc8b6ebacb749ff4c4830
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: badc657e100961ba89de6a49349b7016ae790b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597597"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069997"
 ---
 # <a name="run-reports-in-office-365-advanced-ediscovery"></a>Ejecutar informes en Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Puede descargar un archivo. csv con un informe para el proceso seleccionado.
   
 1. En la ficha **informes** , seleccione una opción de la lista **nombre del informe** . Seleccione una de las tres opciones de **nombre de informe** : **decisión de relevancia**, **lista de temas** o **archivos etiquetados**.
     
-    ![Informes de análisis de exhibición de documentos electrónicos](media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
+    ![Informes de análisis de exhibición de documentos electrónicos](../media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
   
 2. Los parámetros disponibles, y las opciones de ordenación y filtro se pueden establecer, en función del informe seleccionado. 
     

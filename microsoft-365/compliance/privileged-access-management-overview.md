@@ -99,6 +99,6 @@ No, necesita la función de administración de roles de Exchange asignada a cuen
 
 Inicie [la configuración de la organización para la administración del acceso privilegiado](privileged-access-management-configuration.md).
 
-## <a name="learn-more"></a>Obtén más información
+## <a name="learn-more"></a>Más información
 
 [Guía interactiva: supervise y controle las tareas de administrador con privilegios de administración de acceso](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

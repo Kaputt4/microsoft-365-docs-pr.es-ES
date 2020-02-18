@@ -1,5 +1,5 @@
 ---
-title: Información general de etiquetas de confidencialidad
+title: Información sobre las etiquetas de confidencialidad
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger su contenido confidencial, a la vez que se asegura de que la productividad y la capacidad de colaboración de su personal no se vea obstaculizada. Puede utilizar etiquetas de confidencialidad para aplicar configuraciones de protección que incluyan el cifrado y las marcas de agua en el contenido etiquetado.
-ms.openlocfilehash: 723bedfc5208da140140ab475be69400d5308061
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: fa04fdc2713cbba090ec56972cd87e6cbdc4387b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661996"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081500"
 ---
-# <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
+# <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
 Para realizar su trabajo, las personas de su organización colaboran con otras tanto dentro como fuera de la organización. Esto significa que el contenido ya no se queda detrás de un firewall, sino que puede desplazarse a todas partes, a través de dispositivos, aplicaciones y servicios. Y cuando se desplaza, usted quiere que lo haga de una forma segura y protegida que cumpla con las directivas empresariales y de cumplimiento de normas de su organización.
 
@@ -32,7 +32,7 @@ Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger los 
 
 Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en la pestaña **Inicio** de la cinta de opciones. En este ejemplo, la etiqueta aplicada se muestra en la barra de estado:
 
-![Etiqueta de sensibilidad en la barra de herramientas de Excel y en la barra de estado](media/Sensitivity-label-in-Excel.png)
+![Etiqueta de sensibilidad en la barra de herramientas de Excel y en la barra de estado](../media/Sensitivity-label-in-Excel.png)
 
 Las etiquetas de confidencialidad sólo se admiten para los espacios empresariales en la nube global (pública). Actualmente, las etiquetas de compatibilidad no son compatibles con los espacios empresariales de otras nubes, como las[nubes nacionales](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
 
@@ -45,7 +45,7 @@ Puede usar etiquetas de confidencialidad para:
   
 - **Aplicar opciones de protección como encriptación o marcas de agua en el contenido etiquetado.** Por ejemplo, los usuarios pueden aplicar una etiqueta Confidencial a un documento o correo electrónico, y esa etiqueta puede encriptar el contenido y aplicar una marca de agua Confidencial.
 
-- **Proteger el contenido de las aplicaciones de Office en distintos dispositivos y plataformas.** Para obtener una lista de aplicaciones compatibles, vea [Etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md).
+- **Proteger el contenido de las aplicaciones de Office en distintos dispositivos y plataformas.** Para obtener una lista de aplicaciones compatibles, vea [Uso de etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md).
 
 - **Evitar que el contenido confidencial salga de su organización en dispositivos con Windows ** utilizando Endpoint Protection de Microsoft Intune. Después de aplicar una etiqueta de confidencialidad a un contenido que se encuentra en un dispositivo Windows, Endpoint Protection puede impedir que el contenido se copie en una aplicación de terceros, como Twitter o Gmail, o en un almacenamiento extraíble, como una unidad USB.
 
@@ -72,7 +72,7 @@ En las aplicaciones de Office, una etiqueta de confidencialidad se muestra como 
 Cada elemento de contenido puede tener una única etiqueta de confidencialidad aplicada. Un elemento puede tener a la vez una única etiqueta de confidencialidad y una única [etiqueta de retención](labels.md) aplicadas.
 
 > [!div class="mx-imgBorder"]
-> ![Etiqueta de confidencialidad aplicada a un correo electrónico](media/Sensitivity-label-on-email.png)
+> ![Etiqueta de confidencialidad aplicada a un correo electrónico](../media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>Qué pueden hacer las etiquetas de confidencialidad
 
@@ -90,9 +90,9 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
 
 - **Marcar el contenido** cuando utilice las aplicaciones de Office, agregando marcas de agua, encabezados o pies de página a correos electrónicos o documentos que tengan aplicada la etiqueta. Las marcas de agua se pueden aplicar en documentos, pero no en mensajes de correo electrónico. Encabezado y marca de agua de ejemplo:
     
-    ![Marca de agua y encabezado aplicados a un documento](media/Sensitivity-label-watermark-header.png)
+    ![Marca de agua y encabezado aplicados a un documento](../media/Sensitivity-label-watermark-header.png)
     
-    ¿Necesita comprobar cuándo se aplican marcas de contenido? Consulte [cuando Office 365 aplica el marcado y el cifrado de contenido en](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content)de contenido.
+    ¿Necesita comprobar cuándo se aplican marcas de contenido? Consulte [cuando Office 365 aplica el marcado y el cifrado de contenido en](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)de contenido.
     
     Longitudes de cadena: las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
@@ -102,7 +102,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
 
 - **Aplicar la etiqueta automáticamente al contenido que contenga información confidencial.** Puede elegir el tipo de información confidencial que desee etiquetar y la etiqueta se puede aplicar automáticamente o, si lo prefiere, puede pedir a los usuarios que apliquen una etiqueta específica. Si recomienda una etiqueta, el aviso muestra el texto que elija. Por ejemplo:
     
-    ![Aviso para asignar una etiqueta necesaria](media/Sensitivity-label-Prompt-for-required-label.png)
+    ![Aviso para asignar una etiqueta necesaria](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     Para obtener más información sobre la configuración **Aplicación automática de etiquetas para aplicaciones de Office** al crear o editar una etiqueta de confidencialidad, vea [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
 
@@ -114,7 +114,7 @@ Puede aplicar una sola etiqueta de confidencialidad a un documento o correo elec
 
 Aunque, el orden de las subetiquetas se usa en el [ etiquetado automático](apply-sensitivity-label-automatically.md). Cuando configure etiquetas para aplicarlas automáticamente o como recomendación, pueden producirse varias coincidencias para más de una etiqueta. Para determinar la etiqueta que se va a aplicar o recomendar, se usa el orden de las etiquetas: se selecciona la última etiqueta de confidencialidad y, a continuación, si procede, la última subetiqueta.
 
-![Opción para crear una subetiqueta](media/Sensitivity-label-sublabel-options.png)
+![Opción para crear una subetiqueta](../media/Sensitivity-label-sublabel-options.png)
 
 ### <a name="sublabels-grouping-labels"></a>Subetiquetas (agrupación de etiquetas)
 
@@ -126,7 +126,7 @@ No elija una etiqueta principal como etiqueta predeterminada ni configure una et
 
 Ejemplo de cómo se muestran las subetiquetas para los usuarios:
 
-![Subetiquetas agrupadas en la cinta de opciones](media/Sensitivity-label-grouped-labels2.png)
+![Subetiquetas agrupadas en la cinta de opciones](../media/Sensitivity-label-grouped-labels2.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Modificar o eliminar una etiqueta de confidencialidad
 
@@ -146,18 +146,18 @@ Con una directiva de etiqueta, puede:
 
 - **Requerir una justificación para cambiar una etiqueta.** Si el contenido está marcado como Confidencial y un usuario intenta quitar esa etiqueta o reemplazarla por una clasificación inferior (por ejemplo, una etiqueta llamada Pública), puede exigir al usuario que proporcione una justificación para realizar esta acción. Actualmente, el motivo de justificación no es enviado a [la etiqueta Analítica](label-analytics.md) para que el administrador pueda revisarla. No obstante, la [cliente de etiquetas unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) envía esta información a [Azure Information Protection Analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-    ![Aviso en el que los usuarios especifican una justificación](media/Sensitivity-label-justification-required.png)
+    ![Aviso en el que los usuarios especifican una justificación](../media/Sensitivity-label-justification-required.png)
 
 - **Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos.** También conocido como etiqueta obligatoria, puede solicitar que se aplique una etiqueta para que los usuarios puedan guardar documentos y enviar correos electrónicos. Use esta opción para mejorar la cobertura de la etiqueta. El usuario puede asignar manualmente la etiqueta, automáticamente como resultado de una condición configurada, o bien puede asignarse de forma predeterminada (la opción de etiqueta predeterminada se ha indicado anteriormente). El aviso que se muestra en Outlook cuando se requiere que un usuario asigne una etiqueta:
 
-    ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
+    ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
     > Las etiquetas obligatorias requieren una suscripción en Azure Information Protection. Para usar esta característica, debe instalar el [Cliente de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Este cliente solo se ejecuta en Windows, por lo que esta característica aún no se admite en Mac, iOS y Android.
 
 - **Proporcione un vínculo de ayuda a una página de ayuda personalizada.** Si los usuarios no están seguros de lo que significan las etiquetas de confidencialidad o cómo deben usarse, puede proporcionar una URL con más información que aparecerá en la parte inferior del menú **Etiqueta de confidencialidad** en las aplicaciones de Office:
 
-    ![Vínculo para obtener más información en la cinta o botón de confidencialidad](media/Sensitivity-label-learn-more.png)
+    ![Vínculo para obtener más información en la cinta o botón de confidencialidad](../media/Sensitivity-label-learn-more.png)
 
 Después de crear una directiva de etiqueta que asigne etiquetas de confidencialidad a usuarios y grupos, espere hasta 24 horas para que estos usuarios puedan ver las etiquetas en las aplicaciones de Office.
 
@@ -177,7 +177,7 @@ Puede incluir un usuario en varias políticas de etiquetas, y el usuario verá t
 
 Si no ve la configuración de la etiqueta o la configuración de la misma que esperaba para un usuario o un grupo, y ha esperado 24 horas, compruebe el orden de las directivas de etiqueta de sensibilidad. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de carácter > seleccione los puntos suspensivos a la derecha > **Mover abajo** o **Mover arriba**.
 
-![Opción Mover en la página de directivas de etiquetas de confidencialidad](media/sensitivity-label-policy-priority.png)
+![Opción Mover en la página de directivas de etiquetas de confidencialidad](../media/sensitivity-label-policy-priority.png)
 
 Si usa las etiquetas de retención además de las etiquetas de confidencialidad, es importante que recuerde que la prioridad importa para las directivas de etiquetas de confidencialidad, pero no para las [directivas de etiqueta de retención](labels.md#the-principles-of-retention-or-what-takes-precedence).
 
@@ -195,7 +195,17 @@ Los metadatos aplicados por los dos conjuntos de etiquetas son compatibles, por 
 
 Cuando se usan etiquetas de confidencialidad en aplicaciones de Office 365 ProPlus en equipos con Windows, tiene la opción de usar un cliente de Azure Information Protection o usar etiquetas integradas en Office.
 
-De forma predeterminada, la etiqueta integrada está desactivada en estas aplicaciones cuando el cliente de Azure Information Protection está instalado. Para obtener más información, incluido cómo cambiar este comportamiento predeterminado, consulte [Sobre el cliente integrado de etiquetas de Office](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
+De forma predeterminada, la etiqueta integrada está desactivada en estas aplicaciones cuando el cliente de Azure Information Protection está instalado. Para obtener más información, incluido cómo cambiar este comportamiento predeterminado, consulte [cliente de etiquetas integrado de Office y cliente de Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
+
+Incluso si usa etiquetas integradas en las aplicaciones de Office, también puede usar el cliente de etiquetas Unificado de Azure Information Protection con etiquetas de confidencialidad para lo siguiente:
+
+- Un escáner para detectar información confidencial almacenada localmente y, si quiere, etiquete el contenido
+
+- Opciones de botón derecho en el explorador de archivos para que los usuarios puedan aplicar etiquetas a todos los tipos de archivo
+
+- Un visor para mostrar archivos cifrados para texto, imágenes o documentos PDF
+
+- Un módulo de PowerShell para detectar información confidencial en los archivos locales y aplicar o quitar las etiquetas y el cifrado de estos archivos.
 
 Si no está familiarizado con Azure Information Protection, o si es un cliente de Azure Information Protection que acaba de migrar sus etiquetas, consulte [Elegir el cliente de etiquetas que se usará para los equipos Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) en la documentación de Azure Information Protection.
 
@@ -213,24 +223,11 @@ Para obtener instrucciones sobre cómo usar Cloud App Security con estas etiquet
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Etiquetas de confidencialidad y el SDK de protección de la información de Microsoft
 
-Como una etiqueta de confidencialidad se almacena como texto no cifrado en los metadatos de un documento, los servicios y aplicaciones de terceros pueden decidir si identificar y proteger el contenido que está marcado con una etiqueta. La compatibilidad con otras aplicaciones y servicios siempre se encuentra en expansión.
-
-Con el [SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk), las aplicaciones y los servicios de terceros pueden leer y aplicar etiquetas de confidencialidad y protección a los documentos en muchas plataformas. Para obtener más información, consulte [el anuncio en el blog de la comunidad tecnológica](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
+Como las etiquetas de sensibilidad se almacenan como texto sin formato en los metadatos de un documento, las aplicaciones y los servicios de terceros pueden leer y escribir en los metadatos de etiqueta para complementar la implementación de la etiqueta. Además, los desarrolladores de software pueden usar el [SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) para admitir por completo las características de etiquetado y cifrado en varias plataformas. Para obtener más información, consulte el [anuncio de disponibilidad general en el blog de la comunidad tecnológica](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
 También puede obtener más información sobre [las soluciones de asociados que se integran con la protección de la información de Microsoft](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
-## <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
+## <a name="deployment-guidance"></a>Instrucciones de implementación
 
-1. **Creación de las etiquetas.** Cree y asigne un nombre a las etiquetas de confidencialidad en función de la taxonomía de clasificación de su organización para distintos niveles de confidencialidad de contenido. Utilice nombres o términos comunes que tengan sentido para sus usuarios. Si aún no tiene una taxonomía establecida, considere la posibilidad de empezar por nombres de etiqueta como personal, público, general, confidencial y muy confidencial. Puede utilizar subetiquetas para agrupar etiquetas similares por categoría. Cuando se crea una etiqueta, use el texto de información sobre herramientas para ayudar a los usuarios a seleccionar la etiqueta apropiada.
+Consulte [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md).
 
-2. **Defina la función de cada etiqueta.** Configure los ajustes de protección que desea asociar a cada etiqueta. Por ejemplo, tal vez desee que el contenido de menor confidencialidad (como una etiqueta "General") pueda simplemente tener un encabezado o pie de página aplicado, mientras que el contenido de mayor confidencialidad (como una etiqueta "Confidencial") debiera tener una marca de agua, encriptación y protección de los puntos de conexión.
-
-3. **Publique las etiquetas.** Una vez configuradas las etiquetas de sensibilidad, publíquelas mediante una directiva de etiqueta. Decida qué usuarios y grupos deben tener las etiquetas y qué configuración de directiva usar. Una sola etiqueta es reutilizable: se define una vez y, después, se puede incluir en varias directivas de etiquetas asignadas a diferentes usuarios. Por ejemplo, puede crear una prueba de las etiquetas de confidencialidad asignando una directiva de etiqueta a solo algunos usuarios. Cuando esté listo para implementar las etiquetas en la organización, puede crear una nueva directiva para sus etiquetas y, esta vez, especificar todos los usuarios.
-
-Pasos básicos de lo que llevan a cabo el administrador, el usuario, y las aplicaciones y los servicios de Office para hacer funcionar las etiquetas de confidencialidad:
-
-![Diagrama que muestra el flujo de trabajo de las etiquetas de confidencialidad](media/Sensitivity-label-flow.png)
-
-Ya está listo para [crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md). 
-
-Para obtener más información sobre el uso de etiquetas de confidencialidad para las aplicaciones de Office, consulte [Etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md).

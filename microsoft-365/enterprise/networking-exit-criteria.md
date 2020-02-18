@@ -1,5 +1,7 @@
 ---
 title: 'Fase 1: Criterios de salida de la infraestructura de red'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise sobre la infraestructura de red.
-ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 1ace68fd19c62e4dc389604c1b0c02ddc18b52dc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831951"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066632"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Fase 1: Criterios de salida de la infraestructura de red
 
-![Fase 1-Red](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1-Red](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Asegúrese de que su infraestructura de red cumpla los siguientes criterios necesarios y que ha considerado aquellos que son opcionales.
 
@@ -38,7 +40,7 @@ Si es necesario, el [paso 1](networking-provide-bandwidth-cloud-services.md) pue
 <a name="crit-networking-step2"></a>
 ## <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Obligatorio: las oficinas locales tienen conexión a Internet local y resolución de nombres
 
-Ha configurado cada oficina local con acceso a Internet con un ISP local cuyos servidores DNS usan una dirección IP pública local que identifica su ubicación en Internet.  Esto asegura el mejor rendimiento posible para los usuarios que accedan a los servicios en la nube de Microsoft 365.
+Ha configurado cada oficina local con acceso a Internet con un ISP local cuyos servidores DNS usan una dirección IP pública local que identifica su ubicación en Internet. Esto asegura el mejor rendimiento posible para los usuarios que accedan a los servicios en la nube de Microsoft 365.
 
 Si no usa un ISP local para cada sucursal, puede verse afectado el rendimiento porque el tráfico de red debe recorrer la estructura de una organización o las solicitudes de datos se procesan mediante servidores front-end remotos.
 
@@ -83,4 +85,4 @@ Los usuarios de la intranet ya están listos para usar los servicios en la nube 
 
 |||
 |:-------|:-----|
-|![Fase 2-Identidad](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Si sigue las fases de la implementación de extremo a extremo de Microsoft 365 Enterprise, la siguiente fase es la [identidad](identity-infrastructure.md). |
+|![Fase 2-Identidad](../media/deploy-foundation-infrastructure/identity_icon-small.png)| Si sigue las fases de la implementación de extremo a extremo de Microsoft 365 Enterprise, la siguiente fase es la [identidad](identity-infrastructure.md). |

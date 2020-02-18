@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Antes de crear la primera Directiva de prevención de pérdida de datos (DLP), DLP ayuda a proteger la información confidencial con una directiva predeterminada. Esta directiva predeterminada y su recomendación (que se muestra a continuación) ayudan a mantener seguro el contenido confidencial mediante una notificación cuando el correo electrónico o los documentos que contienen un número de tarjeta de crédito se han compartido con alguien ajeno a la organización.
-ms.openlocfilehash: 3ac2fef32c7ba20d906ec96e2510971c94ef2652
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596547"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073136"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introducción a la directiva predeterminada de DLP
 
@@ -30,7 +30,7 @@ Antes de crear la primera Directiva de prevención de pérdida de datos (DLP), D
   
 Puede usar este widget para ver rápidamente cuándo y cuánto se ha compartido la información confidencial y, a continuación, refinar la Directiva de DLP predeterminada en solo un clic o dos. También puede editar la Directiva DLP predeterminada en cualquier momento, ya que es totalmente personalizable. Tenga en cuenta que si no ve la recomendación en primer lugar, intente hacer clic en **+ más** en la parte inferior de la sección **recomendada para usted** . 
   
-![Widget denominado protección de contenido compartido adicional](media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![Widget denominado protección de contenido compartido adicional](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
 ## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Ver el informe y refinar la Directiva de DLP predeterminada
 
@@ -58,7 +58,7 @@ Para obtener más información sobre los informes de incidentes o restringir el 
   
 Si desea cambiar estas opciones más adelante, puede editar la Directiva DLP predeterminada en cualquier momento (consulte la sección siguiente).
   
-![Configuración del widget con el nombre protección de contenido compartido adicional](media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Configuración del widget con el nombre protección de contenido compartido adicional](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>Edición de la Directiva de DLP predeterminada
 
@@ -66,7 +66,7 @@ Esta Directiva se denomina **Directiva DLP predeterminada de Office 365** y apar
   
 Esta directiva es totalmente personalizable, igual que cualquier directiva DLP que se cree a partir de cero. También puede desactivar o eliminar la Directiva para que los usuarios dejen de recibir sugerencias de directiva o notificaciones de correo electrónico.
   
-![Directiva DLP denominada Directiva DLP predeterminada de Office 365](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![Directiva DLP denominada Directiva DLP predeterminada de Office 365](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Cuando el widget no aparece
 

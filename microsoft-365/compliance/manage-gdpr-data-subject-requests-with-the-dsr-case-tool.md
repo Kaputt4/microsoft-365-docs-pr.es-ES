@@ -182,7 +182,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
     
   - Microsoft Edge
     
-    O bien
+    O bien:
     
   - Microsoft Internet Explorer 10 y versiones posteriores
     

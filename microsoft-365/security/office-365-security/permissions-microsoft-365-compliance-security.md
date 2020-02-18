@@ -1,5 +1,7 @@
 ---
 title: Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usando el Centro de cumplimiento de Microsoft 365 o el Centro de seguridad de Microsoft 365, puede administrar los permisos de forma centralizada para todas las tareas relacionadas con la seguridad y el cumplimiento.
-ms.openlocfilehash: 070e9bb1f7bf070a1b95995c2010b79dee7cbc9b
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 6553020c215b3ffad0707a699414a6939ef368ca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572967"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082457"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365
 
@@ -27,7 +29,7 @@ Su organización necesita administrar los escenarios de seguridad y cumplimiento
 
 Después de que el administrador global asigna los roles de administrador, los administradores tienen acceso a características y datos que abarcan todos los servicios de Microsoft 365, como el Centro de seguridad de Microsoft 365, el Centro de cumplimiento de Microsoft 365, Azure, Office 365 y Enterprise Mobility + Security.
 
-![Página de permisos en el Centro de seguridad de Microsoft 365](../media/m365-security-permissions-page.png)
+![Página de permisos en el Centro de seguridad de Microsoft 365](../../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>Lo que son los roles de Microsoft 365
 
@@ -128,13 +130,13 @@ Cuando selecciona un rol en el Centro de cumplimiento de Microsoft 365 y en el C
 
 Para más información, consulte [Visualización y asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
-![Vincular a administrar permisos en Azure Active Directory](../media/permissions-manage-in-azure-ad-link.png)
+![Vincular a administrar permisos en Azure Active Directory](../../media/permissions-manage-in-azure-ad-link.png)
 
 ## <a name="managing-roles-in-a-service-instead-of-azure-active-directory"></a>Administrar roles en un servicio en lugar de Azure Active Directory
 
 Los roles que aparecen en el Centro de cumplimiento de Microsoft 365 y en el Centro de seguridad de Microsoft 365 también aparecen en los servicios en los que tienen permisos. Por ejemplo, puede ver estos roles en el Centro de seguridad y cumplimiento de Office 365.
 
-![Roles en el Centro de seguridad y cumplimiento de Office 365](../media/m365-roles-in-o365-scc.png)
+![Roles en el Centro de seguridad y cumplimiento de Office 365](../../media/m365-roles-in-o365-scc.png)
 
 ### <a name="breaking-inheritance"></a>Interrumpir herencia
 
