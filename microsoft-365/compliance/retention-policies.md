@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070278"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093449"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -201,8 +201,9 @@ Una de las características más eficaces de una directiva de retención es que 
     
 - Carpetas públicas de Exchange
     
+
 ![Opción Todas las ubicaciones](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
-  
+
 Otras características importantes de una directiva de retención para toda la organización son:
   
 - No hay ningún límite en el número de buzones o sitios que puede incluir la directiva.
