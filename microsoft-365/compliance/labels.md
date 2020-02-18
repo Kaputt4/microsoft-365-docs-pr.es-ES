@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 27f680bf2acf844618f133b074faf6f5ec3f7e90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 162b9fed66fa3135829f422ccd04a396ddf7e632
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072645"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093459"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -44,9 +44,11 @@ Con las etiquetas de retención, puede:
     
 - **Aplicar etiquetas de retención a contenido automáticamente** si coincide con condiciones específicas, como: 
     
-  - Tipos específicos de información confidencial.
+    - Tipos específicos de información confidencial.
     
-  - Palabras clave específicas que coinciden con una consulta que haya creado.
+    - Palabras clave específicas que coinciden con una consulta que haya creado.
+    
+    - Coincidencias de patrón para un clasificador que se puede entrenar.
     
   La capacidad de aplicar etiquetas de retención automáticamente al contenido ofrece las ventajas siguientes:
     
@@ -57,13 +59,13 @@ Con las etiquetas de retención, puede:
    - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
 
   > [!NOTE]
-  > La capacidad de aplicar etiquetas automáticamente requiere una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se etiqueta automáticamente en un sitio o su buzón es seleccionado para etiquetado automático. Los usuarios que tienen acceso de solo lectura al contenido o respondan a correos electrónicos etiquetados no necesitan esta licencia.
+  > La función para aplicar etiquetas automáticamente requiere un mínimo de una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se ha etiquetado automáticamente en un sitio o cuyo buzón está seleccionado para etiquetado automático. Esta licencia no es necesaria para los usuarios que solo tengan acceso de solo lectura al contenido o que respondan a los mensajes de correo electrónico con etiquetas.
       
 - **Implementar la administración de registros en todo Office 365**, tanto en correos electrónicos como en documentos. Puede usar una etiqueta de retención para clasificar contenido como un registro. Cuando ocurra esto, la etiqueta no se puede cambiar ni quitar, y el contenido no se puede editar ni eliminar. 
 
 - **Aplique una etiqueta de retención predeterminada a una biblioteca de documentos, carpeta o conjunto de documentos** en SharePoint, para que todos los documentos que llegan a esa ubicación hereden la etiqueta de retención predeterminada.  
     
-Las etiquetas de retención se crean en el Centro de cumplimiento de Microsoft 365, el Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento de Office 365. En el panel de navegación izquierdo, elija **Clasificación** > **Etiqueta de retención** > **Crear una etiqueta**.
+Las etiquetas de retención se crean en el Centro de cumplimiento de Microsoft 365, el Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento de Office 365.
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>Funcionamiento de las etiquetas de retención con directivas de etiquetas de retención
 
@@ -258,14 +260,17 @@ Las etiquetas de retención de aplicación automática son realmente útiles por
     
 Puede aplicar automáticamente etiquetas de retención en contenido cuando este coincida con:
   
-- Tipos específicos de información confidencial.
+- [Tipos específicos de información confidencial](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
     
-- Palabras clave específicas que coinciden con una consulta que haya creado.
+- [Palabras clave específicas que coinciden con una consulta que haya creado](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [Una coincidencia para clasificadores que se pueden entrenar](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
 ![Página de selección de condición para una etiqueta de aplicación automática](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
+La aplicación automática de las etiquetas de retención configuradas para las dos primeras opciones necesita una suscripción a Office 365 Enterprise E5. Si usa la opción para clasificadores que se pueden entrenar, esta funcionalidad tiene [requisitos de licencia adicionales](classifier-getting-started-with.md#licensing-requirements).
 
-Para la aplicación automática de las etiquetas de retención se necesita una suscripción de Office 365 Enterprise E5. Además, estas pueden tardar hasta siete días en aplicarse automáticamente a todo el contenido que coincida con las condiciones, como se ha descrito anteriormente.
+Las etiquetas de retención aplicadas automáticamente puede tardar hasta siete días en aplicarse a todo el contenido que coincida con las condiciones que ha configurado.
   
 > [!TIP]
 > Vea [Administrar el ciclo de vida de los documentos de SharePoint con etiquetas de retención](auto-apply-retention-labels-scenario.md) para obtener más información sobre cómo usar las propiedades administradas en SharePoint para aplicar automáticamente las etiquetas de retención e implementar la retención basada en eventos.
@@ -309,6 +314,17 @@ Consultas de ejemplos:
     - sitio:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
 ![Editor de consultas](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
+
+Si elige la opción para un clasificador que se puede entrenar, puede seleccionar uno de los clasificadores integrado o un clasificador personalizado. Los clasificadores integrados incluyen **lenguaje ofensivo**, **currículum vítae**, **código fuente**, **acoso**, **blasfemia** y **amenazas**.
+
+Para aplicar una etiqueta automáticamente usando esta opción, los buzones y sitios de SharePoint Online deben tener al menos 10 MB de datos.
+
+Para obtener más información sobre los clasificadores que se pueden entrenar, consulte [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md).
+
+Para obtener un ejemplo de configuración, consulte [cómo preparar y usar un clasificador listo para usar](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint
 

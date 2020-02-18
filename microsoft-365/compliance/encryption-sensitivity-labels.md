@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 102d1da2ec5f49e26a634611f4f640a083d167ff
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074676"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101270"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -44,15 +44,15 @@ Por último, como administrador, al configurar una etiqueta de confidencialidad 
 
 La configuración de cifrado está disponible cuando se [crea una etiqueta de confidencialidad](create-sensitivity-labels.md) en el Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento de Office 365.
 
-## <a name="how-encryption-works"></a>Cómo funciona la encriptación
+## <a name="understand-how-the-encryption-works"></a>Entender cómo funciona el cifrado
 
 El cifrado usa el servicio Azure Rights Management (Azure RMS) de Azure Information Protection. Esta solución de protección usa directivas de cifrado, identidades y de autorización. Para obtener más información, consulte [¿qué es Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) en la documentación de Azure Information Protection. 
 
 Cuando usa esta solución de cifrado, la característica de **superusuario** garantiza que los usuarios y los servicios autorizados siempre puedan leer e inspeccionar los datos que se han cifrado para la organización. Si es necesario, el cifrado puede quitarse o modificarse. Para obtener más información, consulte [configuración de superusuarios para Azure Information Protection y servicios de detección y de recuperación de datos de Azure](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-## <a name="configuring-a-label-for-encryption"></a>Configurar una etiqueta para el cifrado
+## <a name="how-to-configure-a-label-for-encryption"></a>Cómo configurar una etiqueta para el cifrado
 
-Cuando [crea o modifica una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), en la página **cifrado** del asistente, puede seleccionar una de las siguientes opciones:
+[Cree o edite una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) y, en la página de **cifrado** del asistente, seleccione una de las opciones siguientes:
 
 - **Ninguno**: es la configuración predeterminada para una nueva etiqueta. No se aplica ningún nuevo cifrado.
 - **Aplicar**: activa el cifrado y podrá especificar la configuración de cifrado.
@@ -98,7 +98,7 @@ Cuando un mensaje de correo electrónico se cifre con cualquier método, todos l
 
 Los documentos que ya están cifrados y se agregan como datos adjuntos siempre conservan el cifrado original. 
 
-## <a name="how-to-configure-encryption-settings-for-a-sensitivity-label"></a>Cómo configurar la configuración de cifrado para una etiqueta de confidencialidad
+## <a name="configure-encryption-settings"></a>Configurar opciones de cifrado
 
 Cuando selecciona **Aplicar** en la página **Cifrado** del asistente para crear o editar una etiqueta de confidencialidad, elija si quiere:
 

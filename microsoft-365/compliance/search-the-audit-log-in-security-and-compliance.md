@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069977"
+ms.locfileid: "42091373"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -109,7 +109,7 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
 
 - Si desea descargar mediante programación los datos del registro de auditoría de Office 365, le recomendamos que use la API de Actividad de administración de Office 365 en lugar de usar un script de PowerShell. La API de Actividad de administración de Office 365 es un servicio REST de la web que puede usar para desarrollar operaciones, soluciones de supervisión de seguridad y cumplimiento para su organización. Para obtener más información, consulte[la referencia de la API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- La entrada del registro de auditoría correspondiente puede tardar en aparecer en los resultados de búsqueda un máximo de 30 minutos o 24 horas después de que se produzca el evento. En la siguiente tabla, se muestra el tiempo que tarda para los distintos servicios en Office 365..
+- El registro de auditoría correspondiente puede tardar hasta 30 minutos o 24 horas después de que se produzca el evento en mostrarse en los resultados de una búsqueda de registro de auditoría. En la siguiente tabla, se muestra el tiempo que tarda para los distintos servicios en Office 365..
 
   |**Servicio de Office 365**|**30 minutos**|**24 horas**|
   |:-----|:-----:|:-----:|
@@ -117,14 +117,14 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
   |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (eventos administrativos)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Prevención de pérdida de datos|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |eDiscovery|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange en línea|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Microsoft Project|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |PowerApps|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |PowerApps||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Centro de seguridad y cumplimiento|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint en línea y OneDrive para Empresas|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
