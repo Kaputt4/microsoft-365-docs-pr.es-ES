@@ -1,5 +1,7 @@
 ---
 title: 'Fase 2: Identidad'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,72 +15,72 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar su infraestructura de identidad para Microsoft 365 Enterprise.
-ms.openlocfilehash: 50c3321dfd8a552d7585606f654360b9cff35b3c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f32df9a35e09b438b5034ad963523879a639a3fc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030895"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067336"
 ---
-# <a name="phase-2-identity"></a><span data-ttu-id="ffe5a-103">Fase 2: Identidad</span><span class="sxs-lookup"><span data-stu-id="ffe5a-103">Phase 2: Identity</span></span>
+# <a name="phase-2-identity"></a><span data-ttu-id="c411f-103">Fase 2: Identidad</span><span class="sxs-lookup"><span data-stu-id="c411f-103">Phase 2: Identity</span></span>
 
-![Fase 2: Identidad](./media/deploy-foundation-infrastructure/identity_icon.png)
+![Fase 2: Identidad](../media/deploy-foundation-infrastructure/identity_icon.png)
 
-<span data-ttu-id="ffe5a-105">En Microsoft 365 Enterprise, una infraestructura de identidades bien planeada y ejecutada prepara el camino para conseguir una seguridad y un acceso más eficaces solo por parte de los usuarios y dispositivos autenticados a las cargas de trabajo de productividad y sus datos.</span><span class="sxs-lookup"><span data-stu-id="ffe5a-105">In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.</span></span>
+<span data-ttu-id="c411f-105">En Microsoft 365 Enterprise, una infraestructura de identidades bien planeada y ejecutada prepara el camino para conseguir una seguridad y un acceso más eficaces solo por parte de los usuarios y dispositivos autenticados a las cargas de trabajo de productividad y sus datos.</span><span class="sxs-lookup"><span data-stu-id="c411f-105">In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.</span></span>
 
-<span data-ttu-id="ffe5a-106">Vea este vídeo para obtener una introducción a los modelos de identidad y autenticación de Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="ffe5a-106">Watch this video for an overview of identity models and authentication for Microsoft 365 Enterprise.</span></span>
+<span data-ttu-id="c411f-106">Vea este vídeo para obtener una introducción a los modelos de identidad y autenticación de Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="c411f-106">Watch this video for an overview of identity models and authentication for Microsoft 365 Enterprise.</span></span>
 
-<span data-ttu-id="ffe5a-107"><p> </p></span><span class="sxs-lookup"><span data-stu-id="ffe5a-107"><p> </p></span></span>
+<span data-ttu-id="c411f-107"><p> </p></span><span class="sxs-lookup"><span data-stu-id="c411f-107"><p> </p></span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
 >[!Note]
-><span data-ttu-id="ffe5a-108">Si ya ha implementado una infraestructura de identidades, vea los [criterios de salida de identidades](identity-exit-criteria.md) para asegurarse de que cumple con las condiciones obligatorias y opcionales para Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="ffe5a-108">If you’ve already deployed an identity infrastructure, please see the [identity exit criteria](identity-exit-criteria.md) to make sure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
+><span data-ttu-id="c411f-108">Si ya ha implementado una infraestructura de identidades, vea los [criterios de salida de identidades](identity-exit-criteria.md) para asegurarse de que cumple con las condiciones obligatorias y opcionales para Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="c411f-108">If you’ve already deployed an identity infrastructure, please see the [identity exit criteria](identity-exit-criteria.md) to make sure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
 >
 
-<span data-ttu-id="ffe5a-109">Para obtener información sobre las características de los diferentes planes de Microsoft 365 Enterprise, la función de Azure Active Directory (Azure AD), los componentes locales y basados en la nube, así como las configuraciones de autenticación más habituales, vea el [póster Infraestructura de identidad](media/identity-infrastructure/M365E-ID-Infra.pdf).</span><span class="sxs-lookup"><span data-stu-id="ffe5a-109">For the identity features of each Microsoft 365 Enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](media/identity-infrastructure/M365E-ID-Infra.pdf).</span></span>
+<span data-ttu-id="c411f-109">Para obtener información sobre las características de los diferentes planes de Microsoft 365 Enterprise, la función de Azure Active Directory (Azure AD), los componentes locales y basados en la nube, así como las configuraciones de autenticación más habituales, vea el [póster Infraestructura de identidad](../media/identity-infrastructure/M365E-ID-Infra.pdf).</span><span class="sxs-lookup"><span data-stu-id="c411f-109">For the identity features of each Microsoft 365 Enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../media/identity-infrastructure/M365E-ID-Infra.pdf).</span></span>
 
-<span data-ttu-id="ffe5a-110">[![El póster Infraestructura de identidad](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)</span><span class="sxs-lookup"><span data-stu-id="ffe5a-110">[![The Identity Infrastructure poster](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)</span></span>
+<span data-ttu-id="c411f-110">[![El póster Infraestructura de identidad](../media/identity-infrastructure/m365e-identity-arch-poster.png)](../media/identity-infrastructure/M365E-ID-Infra.pdf)</span><span class="sxs-lookup"><span data-stu-id="c411f-110">[![The Identity Infrastructure poster](../media/identity-infrastructure/m365e-identity-arch-poster.png)](../media/identity-infrastructure/M365E-ID-Infra.pdf)</span></span>
 
-<span data-ttu-id="ffe5a-111">Este póster de dos páginas es una forma rápida de optimizar los conceptos de identidad y sus configuraciones para Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="ffe5a-111">This two-page poster is a quick way to ramp up on identity concepts and configurations for Microsoft 365 Enterprise.</span></span>
+<span data-ttu-id="c411f-111">Este póster de dos páginas es una forma rápida de optimizar los conceptos de identidad y sus configuraciones para Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="c411f-111">This two-page poster is a quick way to ramp up on identity concepts and configurations for Microsoft 365 Enterprise.</span></span>
 
-<span data-ttu-id="ffe5a-112">Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).</span><span class="sxs-lookup"><span data-stu-id="ffe5a-112">You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.</span></span>
+<span data-ttu-id="c411f-112">Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).</span><span class="sxs-lookup"><span data-stu-id="c411f-112">You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.</span></span>
 
-## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a><span data-ttu-id="ffe5a-113">Planear e implementar la infraestructura de identidades de Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="ffe5a-113">Plan and deploy your Microsoft 365 Enterprise identity infrastructure</span></span> 
+## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a><span data-ttu-id="c411f-113">Planear e implementar la infraestructura de identidades de Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="c411f-113">Plan and deploy your Microsoft 365 Enterprise identity infrastructure</span></span> 
 
-<span data-ttu-id="ffe5a-p101">Siga estos pasos para planear e implementar la nueva infraestructura de identidades en la nube. También puede usar estos pasos para adaptar su infraestructura de identidades híbrida o local para trabajar con Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="ffe5a-p101">Use the following steps to plan and deploy your new identity infrastructure in the cloud. You can also use these steps to adapt your existing on-premises or hybrid identity infrastructure to work with Microsoft 365 Enterprise.</span></span> 
-
-|||
-|:-------|:-----|
-|![Paso 1](./media/stepnumbers/Step1.png)| [<span data-ttu-id="ffe5a-117">Cree y proteja sus cuentas de administrador global</span><span class="sxs-lookup"><span data-stu-id="ffe5a-117">Create and protect your global admin accounts</span></span>](identity-create-protect-global-admins.md) |
-|![Paso 2](./media/stepnumbers/Step2.png)| [<span data-ttu-id="ffe5a-119">Proteja sus contraseñas</span><span class="sxs-lookup"><span data-stu-id="ffe5a-119">Secure your passwords</span></span>](identity-secure-your-passwords.md) |
-|![Paso 3](./media/stepnumbers/Step3.png)| [<span data-ttu-id="ffe5a-121">Proteja y administre los inicios de sesión de usuario</span><span class="sxs-lookup"><span data-stu-id="ffe5a-121">Secure and manage your user sign-ins</span></span>](identity-secure-user-sign-ins.md) |
-|![Paso 4](./media/stepnumbers/Step4.png)| [<span data-ttu-id="ffe5a-123">Agregue cuentas de usuario</span><span class="sxs-lookup"><span data-stu-id="ffe5a-123">Add your user accounts</span></span>](identity-add-user-accounts.md) |
-|![Paso 5](./media/stepnumbers/Step5.png)| [<span data-ttu-id="ffe5a-125">Use grupos para administración</span><span class="sxs-lookup"><span data-stu-id="ffe5a-125">Use groups for management</span></span>](identity-use-group-management.md) |
-|![Paso 6](./media/stepnumbers/Step6.png)| [<span data-ttu-id="ffe5a-127">Configure Identity Governance</span><span class="sxs-lookup"><span data-stu-id="ffe5a-127">Configure identity governance</span></span>](identity-configure-identity-governance.md) |
-
-<span data-ttu-id="ffe5a-128">Cuando complete estos pasos, vaya a los [criterios de salida](identity-exit-criteria.md) de esta fase para asegurarse de que cumple con las condiciones obligatorias y opcionales de identidad en Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="ffe5a-128">When you've completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise identity.</span></span>
-
-## <a name="identity-and-device-access-recommendations"></a><span data-ttu-id="ffe5a-129">Recomendaciones de acceso a dispositivos e identidades</span><span class="sxs-lookup"><span data-stu-id="ffe5a-129">Identity and device access recommendations</span></span>
-
-<span data-ttu-id="ffe5a-p102">Microsoft proporciona un conjunto de recomendaciones para el [acceso a dispositivos e identidades](microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los usuarios. Para la identidad, use la configuración y las recomendaciones de los artículos siguientes junto con los pasos en esta fase:</span><span class="sxs-lookup"><span data-stu-id="ffe5a-p102">Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For identity, use the recommendations and settings in the following articles along with the steps in this phase:</span></span>
-
-- [<span data-ttu-id="ffe5a-132">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="ffe5a-132">Prerequisites</span></span>](identity-access-prerequisites.md)
-- [<span data-ttu-id="ffe5a-133">Directivas comunes de acceso a dispositivos e identidades</span><span class="sxs-lookup"><span data-stu-id="ffe5a-133">Common identity and device access policies</span></span>](identity-access-policies.md)
-
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="ffe5a-134">Cómo Microsoft utiliza Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="ffe5a-134">How Microsoft does Microsoft 365 Enterprise</span></span>
-
-<span data-ttu-id="ffe5a-135">Aprenda como los expertos de IT en Microsoft[administran identidades y acceso seguro](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).</span><span class="sxs-lookup"><span data-stu-id="ffe5a-135">Learn how IT experts at Microsoft [manage identities and secure access](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).</span></span>
-
-## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="ffe5a-136">Cómo Contoso hizo Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="ffe5a-136">How Contoso did Microsoft 365 Enterprise</span></span>
-
-<span data-ttu-id="ffe5a-137">Vea cómo Contoso Corporation, una empresa multinacional ficticia pero representativa, [implementó una infraestructura de identidad híbrida](contoso-identity.md) para los servicios en la nube de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ffe5a-137">See how the Contoso Corporation, a fictional but representative multi-national business, [deployed a hybrid identity infrastructure](contoso-identity.md) for Microsoft 365 cloud services.</span></span>
-
-![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
-
-
-## <a name="next-step"></a><span data-ttu-id="ffe5a-139">Siguiente paso</span><span class="sxs-lookup"><span data-stu-id="ffe5a-139">Next step</span></span>
+<span data-ttu-id="c411f-p101">Siga estos pasos para planear e implementar la nueva infraestructura de identidades en la nube. También puede usar estos pasos para adaptar su infraestructura de identidades híbrida o local para trabajar con Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="c411f-p101">Use the following steps to plan and deploy your new identity infrastructure in the cloud. You can also use these steps to adapt your existing on-premises or hybrid identity infrastructure to work with Microsoft 365 Enterprise.</span></span> 
 
 |||
 |:-------|:-----|
-|![Paso 1](./media/stepnumbers/Step1.png)| [<span data-ttu-id="ffe5a-141">Cree y proteja sus cuentas de administrador global</span><span class="sxs-lookup"><span data-stu-id="ffe5a-141">Create and protect your global admin accounts</span></span>](identity-create-protect-global-admins.md) |
+|![Paso 1](../media/stepnumbers/Step1.png)| [<span data-ttu-id="c411f-117">Cree y proteja sus cuentas de administrador global</span><span class="sxs-lookup"><span data-stu-id="c411f-117">Create and protect your global admin accounts</span></span>](identity-create-protect-global-admins.md) |
+|![Paso 2](../media/stepnumbers/Step2.png)| [<span data-ttu-id="c411f-119">Proteja sus contraseñas</span><span class="sxs-lookup"><span data-stu-id="c411f-119">Secure your passwords</span></span>](identity-secure-your-passwords.md) |
+|![Paso 3](../media/stepnumbers/Step3.png)| [<span data-ttu-id="c411f-121">Proteja y administre los inicios de sesión de usuario</span><span class="sxs-lookup"><span data-stu-id="c411f-121">Secure and manage your user sign-ins</span></span>](identity-secure-user-sign-ins.md) |
+|![Paso 4](../media/stepnumbers/Step4.png)| [<span data-ttu-id="c411f-123">Agregue cuentas de usuario</span><span class="sxs-lookup"><span data-stu-id="c411f-123">Add your user accounts</span></span>](identity-add-user-accounts.md) |
+|![Paso 5](../media/stepnumbers/Step5.png)| [<span data-ttu-id="c411f-125">Use grupos para administración</span><span class="sxs-lookup"><span data-stu-id="c411f-125">Use groups for management</span></span>](identity-use-group-management.md) |
+|![Paso 6](../media/stepnumbers/Step6.png)| [<span data-ttu-id="c411f-127">Configure Identity Governance</span><span class="sxs-lookup"><span data-stu-id="c411f-127">Configure identity governance</span></span>](identity-configure-identity-governance.md) |
+
+<span data-ttu-id="c411f-128">Cuando complete estos pasos, vaya a los [criterios de salida](identity-exit-criteria.md) de esta fase para asegurarse de que cumple con las condiciones obligatorias y opcionales de identidad en Microsoft 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="c411f-128">When you've completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise identity.</span></span>
+
+## <a name="identity-and-device-access-recommendations"></a><span data-ttu-id="c411f-129">Recomendaciones de acceso a dispositivos e identidades</span><span class="sxs-lookup"><span data-stu-id="c411f-129">Identity and device access recommendations</span></span>
+
+<span data-ttu-id="c411f-p102">Microsoft proporciona un conjunto de recomendaciones para el [acceso a dispositivos e identidades](microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los usuarios. Para la identidad, use la configuración y las recomendaciones de los artículos siguientes junto con los pasos en esta fase:</span><span class="sxs-lookup"><span data-stu-id="c411f-p102">Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For identity, use the recommendations and settings in the following articles along with the steps in this phase:</span></span>
+
+- [<span data-ttu-id="c411f-132">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="c411f-132">Prerequisites</span></span>](identity-access-prerequisites.md)
+- [<span data-ttu-id="c411f-133">Directivas comunes de acceso a dispositivos e identidades</span><span class="sxs-lookup"><span data-stu-id="c411f-133">Common identity and device access policies</span></span>](identity-access-policies.md)
+
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="c411f-134">Cómo Microsoft utiliza Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="c411f-134">How Microsoft does Microsoft 365 Enterprise</span></span>
+
+<span data-ttu-id="c411f-135">Aprenda como los expertos de IT en Microsoft[administran identidades y acceso seguro](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).</span><span class="sxs-lookup"><span data-stu-id="c411f-135">Learn how IT experts at Microsoft [manage identities and secure access](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).</span></span>
+
+## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="c411f-136">Cómo Contoso hizo Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="c411f-136">How Contoso did Microsoft 365 Enterprise</span></span>
+
+<span data-ttu-id="c411f-137">Vea cómo Contoso Corporation, una empresa multinacional ficticia pero representativa, [implementó una infraestructura de identidad híbrida](contoso-identity.md) para los servicios en la nube de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="c411f-137">See how the Contoso Corporation, a fictional but representative multi-national business, [deployed a hybrid identity infrastructure](contoso-identity.md) for Microsoft 365 cloud services.</span></span>
+
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+
+
+## <a name="next-step"></a><span data-ttu-id="c411f-139">Siguiente paso</span><span class="sxs-lookup"><span data-stu-id="c411f-139">Next step</span></span>
+
+|||
+|:-------|:-----|
+|![Paso 1](../media/stepnumbers/Step1.png)| [<span data-ttu-id="c411f-141">Cree y proteja sus cuentas de administrador global</span><span class="sxs-lookup"><span data-stu-id="c411f-141">Create and protect your global admin accounts</span></span>](identity-create-protect-global-admins.md) |
