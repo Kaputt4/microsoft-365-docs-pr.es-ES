@@ -287,4 +287,4 @@ Puede personalizar el texto de las sugerencias de directiva independientemente d
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
-- [Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)

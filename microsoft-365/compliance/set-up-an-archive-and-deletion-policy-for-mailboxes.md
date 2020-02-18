@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Crear una directiva de archivado y eliminación en Office 365 que mueva automáticamente elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: 23732306abccbbdff654577ff120df8b79b78e6d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 53da9c027895421edaa99ebc18d17eafc0dbc679
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597487"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081255"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización de Office 365
 
@@ -81,11 +81,11 @@ El primer paso consiste en habilitar el buzón de archivo para cada usuario de l
     
 6. Haga clic en **sí** para cerrar el mensaje de advertencia e iniciar el proceso para habilitar el buzón de archivo para cada buzón seleccionado. 
     
-7. Una vez completado el proceso, haga **** ![clic en](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) actualizar actualización para actualizar la lista en la página **archivo** . 
+7. Una vez completado el proceso, haga **** ![clic en](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) actualizar actualización para actualizar la lista en la página **archivo** . 
     
     El buzón de archivo está habilitado para todos los usuarios de la organización.
     
-    ![La lista de buzones con el buzón de archivo habilitado](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
+    ![La lista de buzones con el buzón de archivo habilitado](../media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
 8. Deje abierto el centro de seguridad & cumplimiento. Lo usará en el paso siguiente.
     
@@ -105,7 +105,7 @@ Para crear nuevas etiquetas de retención, debe usar el centro de administració
     
 2. En el panel de navegación izquierdo del centro de administración de Microsoft 365, haga clic en **centros de administración**y, a continuación, en **Exchange**.
     
-    ![Captura de pantalla que muestra el centro de administración de Microsoft 365 con la opción centros de administración expandida y Exchange seleccionada.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Captura de pantalla que muestra el centro de administración de Microsoft 365 con la opción centros de administración expandida y Exchange seleccionada.](../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. En el EAC, vaya a **** \> **etiquetas de retención** de administración de cumplimiento.
     
@@ -115,11 +115,11 @@ Para crear nuevas etiquetas de retención, debe usar el centro de administració
   
 En primer lugar, deberá crear una etiqueta de directiva predeterminada de archivo (DPT) personalizada que moverá los elementos al buzón de archivo después de tres años. 
   
-1. En la **Página etiquetas de retención** , haga clic en **nueva etiqueta**![nuevo icono](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)y, a continuación, seleccione **aplicado automáticamente a todo el buzón (predeterminado)**. 
+1. En la **Página etiquetas de retención** , haga clic en **nueva etiqueta**![nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)y, a continuación, seleccione **aplicado automáticamente a todo el buzón (predeterminado)**. 
     
 2. En la página **nueva etiqueta aplicada automáticamente a todo el buzón (predeterminado)** , complete los campos siguientes: 
     
-    ![Configuración para crear una nueva etiqueta de directiva predeterminada de archivado](media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![Configuración para crear una nueva etiqueta de directiva predeterminada de archivado](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
 1. **Nombre** de Escriba un nombre para la nueva etiqueta de retención. 
     
@@ -137,11 +137,11 @@ En primer lugar, deberá crear una etiqueta de directiva predeterminada de archi
   
 A continuación, creará otra DPT personalizada, pero ésta será una directiva de eliminación que eliminará permanentemente los elementos después de 7 años.
   
-1. En la **Página etiquetas de retención** , haga clic en **nueva etiqueta**![nuevo icono](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)y, a continuación, seleccione **aplicado automáticamente a todo el buzón (predeterminado)**. 
+1. En la **Página etiquetas de retención** , haga clic en **nueva etiqueta**![nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)y, a continuación, seleccione **aplicado automáticamente a todo el buzón (predeterminado)**. 
     
 2. En la página **nueva etiqueta aplicada automáticamente a todo el buzón (predeterminado)** , complete los campos siguientes: 
     
-    ![Configuración para crear una nueva etiqueta de directiva predeterminada de eliminación](media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![Configuración para crear una nueva etiqueta de directiva predeterminada de eliminación](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
 1. **Nombre** de Escriba un nombre para la nueva etiqueta de retención. 
     
@@ -159,11 +159,11 @@ A continuación, creará otra DPT personalizada, pero ésta será una directiva 
   
 La última etiqueta de retención que creará es una etiqueta de directiva de retención (RPT) personalizada para la carpeta elementos eliminados. Esta etiqueta eliminará los elementos de la carpeta elementos eliminados después de 5 años y proporciona un período de recuperación en el que los usuarios pueden usar la herramienta recuperar elementos eliminados para recuperar un elemento.
   
-1. En la **Página etiquetas de retención** , haga clic en **nueva etiqueta** ![nuevo icono](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)y, a continuación, seleccione **aplicado automáticamente a una carpeta predeterminada**. 
+1. En la **Página etiquetas de retención** , haga clic en **nueva etiqueta** ![nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)y, a continuación, seleccione **aplicado automáticamente a una carpeta predeterminada**. 
     
 2. En la página **nueva etiqueta aplicada automáticamente a una carpeta predeterminada** , complete los campos siguientes: 
     
-    ![Configuración para crear una nueva etiqueta de directiva de retención para la carpeta elementos eliminados](media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Configuración para crear una nueva etiqueta de directiva de retención para la carpeta elementos eliminados](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
 1. **Nombre** de Escriba un nombre para la nueva etiqueta de retención. 
     
@@ -185,17 +185,17 @@ Después de crear las etiquetas de retención personalizadas, el siguiente paso 
   
 1. En el EAC, vaya a **** \> **directivas de retención**de administración de cumplimiento.
     
-2. En la **Página directivas de retención** , haga clic en](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) **nuevo** ![icono nuevo.
+2. En la **Página directivas de retención** , haga clic en](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) **nuevo** ![icono nuevo.
     
 3. En el cuadro **nombre** , escriba un nombre para la nueva Directiva de retención; por ejemplo, **Directiva de archivo y eliminación de Alpine House**. 
     
-4. En **etiquetas de retención**, haga clic en](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) **Agregar** ![nuevo icono.
+4. En **etiquetas de retención**, haga clic en](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) **Agregar** ![nuevo icono.
     
     Se muestra una lista de las etiquetas de retención de la organización. Nota se muestran las etiquetas personalizadas que creó en el paso 2.
     
 5. Agregue las 9 etiquetas de retención resaltadas en la siguiente captura de pantalla (estas etiquetas se describen con más detalle en la sección [más información](#more-information) ). Para agregar una etiqueta de retención, selecciónela y, a continuación, haga clic en **Agregar**. 
     
-    ![Agregar etiquetas de retención a la nueva Directiva de retención](media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
+    ![Agregar etiquetas de retención a la nueva Directiva de retención](../media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
   
     > [!TIP]
     > Puede seleccionar varias etiquetas de retención Si mantiene presionada la tecla **Ctrl** y, a continuación, hace clic en cada etiqueta. 
@@ -206,7 +206,7 @@ Después de crear las etiquetas de retención personalizadas, el siguiente paso 
     
     La nueva Directiva de retención se muestra en la lista. Selecciónelo para mostrar las etiquetas de retención vinculadas en el panel de detalles.
     
-    ![La nueva Directiva de retención y la lista de etiquetas de retención vinculadas](media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
+    ![La nueva Directiva de retención y la lista de etiquetas de retención vinculadas](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
   
 ## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>Paso 4: asignar la nueva Directiva de retención a los buzones de usuario
 
@@ -228,7 +228,7 @@ Cuando se crea un nuevo buzón de correo, se le asigna de forma predeterminada u
     
 7. Para comprobar que la nueva Directiva de retención se asignó a los buzones, puede hacer lo siguiente: Seleccione un buzón en la página buzones de correo y, a continuación, haga clic en Editar. 
     
-1. Seleccione un buzón en la página **buzones de correo** y, a continuación](media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png), haga clic en **Editar** ![edición. 
+1. Seleccione un buzón en la página **buzones de correo** y, a continuación](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png), haga clic en **Editar** ![edición. 
     
 2. En la página de propiedades del buzón del usuario seleccionado, haga clic en **características de buzón**.
     

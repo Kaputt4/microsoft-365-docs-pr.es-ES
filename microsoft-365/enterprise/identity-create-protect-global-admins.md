@@ -1,5 +1,7 @@
 ---
 title: 'Paso 1: crea y proteja sus cuentas de administrador global'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Las cuentas de administrador global necesitan un tratamiento especial para proteger la integridad de sus credenciales.
-ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801835"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067347"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Paso 1: crea y proteja sus cuentas de administrador global
 
-![Fase 2-Identidad](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2-Identidad](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>Proteger las cuentas de administrador globales
@@ -57,7 +59,7 @@ Los resultados de esta sección son:
 
 |||
 |:-------|:-----|
-|![Guías del entorno de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para poner en práctica esta configuración en un entorno de prueba, consulte la [Guía de entorno de pruebas para proteger cuentas de administrador global](protect-global-administrator-accounts-microsoft-365-test-environment.md). |
+|![Guías del entorno de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para poner en práctica esta configuración en un entorno de prueba, consulte la [Guía de entorno de pruebas para proteger cuentas de administrador global](protect-global-administrator-accounts-microsoft-365-test-environment.md). |
 |||
 
 Como control provisional, puede consultar los [criterios de salida](identity-exit-criteria.md#crit-identity-global-admin) correspondientes a esta sección.
@@ -101,7 +103,7 @@ Para obtener más información, vea el tema [Administración del acceso con priv
 
 |||
 |:-------|:-----|
-|![Guías del entorno de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para poner en práctica esta configuración en un entorno de prueba, consulte [Guía de gestión de acceso privilegiado en un entorno de pruebas](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|![Guías del entorno de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para poner en práctica esta configuración en un entorno de prueba, consulte [Guía de gestión de acceso privilegiado en un entorno de pruebas](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
 |||
 
 Como punto de control provisional, vea los [criterios de salida](identity-exit-criteria.md#crit-identity-pam) correspondientes a este paso.
@@ -110,5 +112,5 @@ Como punto de control provisional, vea los [criterios de salida](identity-exit-c
 
 |||
 |:-------|:-----|
-|![Paso 2](./media/stepnumbers/Step2.png)| [Proteja sus contraseñas](identity-secure-your-passwords.md) |
+|![Paso 2](../media/stepnumbers/Step2.png)| [Proteja sus contraseñas](identity-secure-your-passwords.md) |
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprenda por qué los resultados de búsqueda reales y estimados pueden variar en las búsquedas ejecutadas con herramientas de eDiscovery en Office 365. '
-ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b14e3aca51737b0a7c15b5219fda38c57ecad9d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595255"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075486"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos Estimado y real en Office 365
 
@@ -35,21 +35,21 @@ Este tema se aplica a las búsquedas que se pueden ejecutar con una de las sigui
    
 Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos, la herramienta que se está usando devolverá una estimación del número de elementos (y su tamaño total) que cumplan los criterios de búsqueda. Por ejemplo, cuando se ejecuta una búsqueda en el centro de seguridad & cumplimiento, los resultados de búsqueda estimados se muestran en el panel de detalles de la búsqueda seleccionada.
   
-![Cálculo de resultados que se muestra en el panel de detalles de la búsqueda seleccionada](media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
+![Cálculo de resultados que se muestra en el panel de detalles de la búsqueda seleccionada](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
 Esta es la misma estimación de tamaño total y número de elementos que se muestra en la herramienta de exportación de exhibición de documentos electrónicos cuando se exportan resultados a un equipo local y en el informe de Resumen de exportación que se descarga con los resultados de la búsqueda.
   
 **Resultados estimados en la herramienta de exportación de exhibición de documentos electrónicos**
 
-![Resultados estimados en la herramienta de exportación de exhibición de documentos electrónicos](media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
+![Resultados estimados en la herramienta de exportación de exhibición de documentos electrónicos](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
   
 **Resultados estimados en el informe de Resumen de exportación**
 
-![Los resultados de la búsqueda estimada se incluyen en el informe de resumen de exportación](media/44b579da-86c2-4f33-81b5-84d604003eda.png)
+![Los resultados de la búsqueda estimada se incluyen en el informe de resumen de exportación](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
   
 Sin embargo, como verá en la captura de pantalla anterior del informe de Resumen de exportación, el tamaño y el número de resultados de búsqueda reales que se descargan son distintos del tamaño y el número de resultados de búsqueda estimados. 
   
-![Diferencia entre los resultados de la búsqueda estimados y descargados](media/84aef318-230f-430d-9d9e-02f21342d364.png)
+![Diferencia entre los resultados de la búsqueda estimados y descargados](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
   
 Estos son algunos de los motivos de estas diferencias:
   

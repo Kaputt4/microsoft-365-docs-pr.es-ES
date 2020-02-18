@@ -1,6 +1,8 @@
 ---
 title: Estrategias de implementación de la infraestructura base de Microsoft 365 para empresas
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/24/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Conozca algunas de las formas en las que puede implementar las fases de la infraestructura base de Microsoft 365 para empresas.
-ms.openlocfilehash: 354ce1a30b91f602049143dc0e93fe01629e6b04
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801895"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067832"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Estrategias de implementación de la infraestructura base de Microsoft 365 para empresas
 
@@ -51,7 +53,7 @@ El conjunto de usuarios de la implementación piloto no es igual al de la implem
 
 En este artículo se usan los gráficos siguientes para representar estas definiciones: 
 
-![Los gráficos para representar las definiciones de implementación piloto y de usuarios](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![Los gráficos para representar las definiciones de implementación piloto y de usuarios](../media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 El sombreado del gráfico de implementación de usuarios indica el porcentaje en toda la organización de 0 % a 100 % con un enfoque estructurado o metódico, como grupos, departamentos o regiones.
 
@@ -76,7 +78,7 @@ Con una implementación de serie, se distribuye completamente una fase, lo que p
 
 Este diagrama de Gantt muestra una implementación de serie simplificada de las fases 2 a la 6 de la infraestructura base de Microsoft 365 para empresas.
 
-![La implementación en serie de las fases 2-6 de la infraestructura básica](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![La implementación en serie de las fases 2-6 de la infraestructura básica](../media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 Para simplificar la explicación y el ejemplo, se presupone que se tardará lo mismo en cada fase y cada segmento de implementación en cada fase.
 
@@ -110,7 +112,7 @@ La desventaja de esta estrategia de implementación es que se puede tardar mucho
 
 En esta estrategia, se inicia la implementación piloto de la siguiente fase durante la última parte de la implementación de usuarios de la fase actual. Aquí tiene la implementación de las fases de la 2 a la 6 cuando la implementación piloto se produce al concluir la implementación de usuarios de la fase anterior.
 
-![Implementación paralela de las fases 2-6 con implementación de usuarios que no se superpone](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![Implementación paralela de las fases 2-6 con implementación de usuarios que no se superpone](../media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 El resultado final es que la implementación de usuarios de la fase actual se completa en toda la organización antes de que empiece la siguiente. Los usuarios que no están en la implementación piloto no se enfrentan a las implementaciones de varias fases al mismo tiempo, pero las implementaciones piloto se realizan en paralelo con las implementaciones de usuarios.
 
@@ -145,7 +147,7 @@ Con esta estrategia de implementación, se inicia:
 
 Aquí tiene una comparación simplificada entre distintas estrategias de implementación.
 
-![Implementación paralela de las fases 2-6 con implementación de usuarios que se superpone](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![Implementación paralela de las fases 2-6 con implementación de usuarios que se superpone](../media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 El resultado final es que:
 
@@ -178,7 +180,7 @@ La ventaja de esta estrategia de implementación es que puede tardar menos en co
 
 En el caso de organizaciones más pequeñas con la posibilidad de comprimir las fases de la 2 a la 6 en un solo segmento de implementación, la implementación resultante tiene el siguiente aspecto:
  
-![Infraestructura inicial e implementación de la configuración completa](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![Infraestructura inicial e implementación de la configuración completa](../media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 El departamento de TI configura la infraestructura de las fases 2 a la 6, luego la distribuye a los usuarios piloto para comprobar la funcionalidad completa. Por ejemplo, los usuarios piloto obtienen toda esta funcionalidad al mismo tiempo:
 

@@ -91,7 +91,7 @@ Siempre estamos trabajando para agregar nuevas funciones al centro de cumplimien
 
 Si está buscando una solución de cumplimiento existente y no está disponible en el centro de cumplimiento de Microsoft 365, puede tener acceso a las soluciones en el centro de seguridad y cumplimiento de Office 365 en el [https://protection.office.com](https://protection.office.com)centro de seguridad y cumplimiento de Office existente yendo a. Como alternativa, puede hacer clic en la pestaña **más recursos** en el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365 y seleccionar la tarjeta del centro de seguridad y cumplimiento de Office 365.  
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - **Revise su puntuación de cumplimiento de Microsoft**, una puntuación personalizada basada en riesgos para ayudarle a comprender el estado de cumplimiento de la organización con respecto a los estándares y regulaciones clave. Proporciona las acciones recomendadas que puede realizar para fortalecer su postura general de cumplimiento y proporciona funciones de flujo de trabajo que le ayudarán a llevar a cabo esas acciones de manera eficaz. Para obtener más información, consulte [calificación de cumplimiento (vista previa)](compliance-score.md).
 

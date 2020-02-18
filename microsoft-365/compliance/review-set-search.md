@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4005b1e379b138f4eb22bb5c11e1f278185dc65e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c1acdb515e278c40ca25d47e2d9fd24c23d51f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597617"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070075"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Consultar los datos de un conjunto de revisión
 
@@ -31,7 +31,7 @@ En la mayoría de los casos, será útil poder profundizar más en los datos de 
 
 Para crear y ejecutar una consulta en los documentos de un conjunto de revisiones, haga clic en **nueva consulta** en el conjunto de revisiones. Después de asignar un nombre a la consulta y definir las condiciones, haga clic en **Guardar** para guardar y ejecutar la consulta. Para ejecutar una consulta que se ha guardado previamente, haga clic en una consulta guardada.
 
-![Revisar establecer consultas](media/AeDReviewSetQueries.png)
+![Revisar establecer consultas](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>Creación de una consulta de conjunto de revisión
 
@@ -59,7 +59,7 @@ Además de las tarjetas de condición, puede usar un lenguaje de consulta simila
 
 Además de las consultas que puede guardar, puede usar la revisión Set filters para aplicar rápidamente condiciones adicionales a una consulta de conjunto de revisión. Esto le ayuda a restringir aún más los resultados mostrados por una consulta de conjunto de revisión.
 
-![Revisar definir filtros](media/AeDReviewSetFilters.png)
+![Revisar definir filtros](../media/AeDReviewSetFilters.png)
 
 Los filtros difieren de las consultas de dos maneras significativas:
 

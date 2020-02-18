@@ -47,7 +47,7 @@ En esta sección se describen los conceptos básicos para crear y ejecutar búsq
 
 1. Vaya a [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e inicie sesión con su cuenta profesional o educativa.
     
-    La página de **Búsqueda de registros de auditoría** se mostrará. 
+    La página del**registro de auditoría de búsqueda**será mostrada. 
     
     ![Configure los criterios y, a continuación, seleccione Buscar para ejecutar la búsqueda](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   

@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Use la búsqueda de contenido en el centro de cumplimiento de & de seguridad para realizar colecciones de destino. Una colección de destino significa que tiene la certeza de que los elementos que responden a un caso o los elementos con privilegios están ubicados en un buzón o carpeta de sitio específicos. Use el script de este artículo para obtener el identificador de carpeta o la ruta de acceso de las carpetas de sitio o de buzón de correo específicas que desea buscar.
-ms.openlocfilehash: 66929911cdb1692ea1ee2a8920dad349d50ec156
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8afe9e65aa65c697d9c5cefbeaf89638c1782d4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597307"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080825"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar la búsqueda de contenido en Office 365 para colecciones dirigidas
 
@@ -201,7 +201,7 @@ Si está obteniendo identificadores de carpeta de buzón de correo, el script se
   
 A continuación, se muestra un ejemplo del resultado devuelto por el script para las carpetas de buzón de correo.
   
-![Ejemplo de la lista de carpetas de buzones y de identificadores de carpetas devueltos por el script](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![Ejemplo de la lista de carpetas de buzones y de identificadores de carpetas devueltos por el script](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
 El ejemplo del paso 2 muestra la consulta utilizada para buscar en la subcarpeta Purges de la carpeta elementos recuperables del usuario.
   
@@ -211,7 +211,7 @@ Si va a obtener la ruta de acceso de la propiedad **documentlink** de los sitios
   
 A continuación, se muestra un ejemplo de los resultados devueltos por el script para las carpetas del sitio.
   
-![Ejemplo de la lista de nombres de documentlink para las carpetas de sitio devueltas por el script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Ejemplo de la lista de nombres de documentlink para las carpetas de sitio devueltas por el script](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Paso 2: usar un identificador de carpeta o documentlink para realizar una colección de destino
 
@@ -221,7 +221,7 @@ Después de ejecutar el script para recopilar una lista de identificadores de ca
     
 2. Inicie sesión en Office 365 con la cuenta y las credenciales que usó para ejecutar el script en el paso 1.
     
-3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de **contenido**de **búsqueda** \> y, a continuación, en **nuevo** ![icono](media/O365-MDM-CreatePolicy-AddIcon.gif)agregar.
+3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de **contenido**de **búsqueda** \> y, a continuación, en **nuevo** ![icono](../media/O365-MDM-CreatePolicy-AddIcon.gif)agregar.
     
 4. En la página **Búsqueda nueva**, escriba un nombre para la búsqueda de contenido. Este nombre debe ser único en la organización. 
     
@@ -229,7 +229,7 @@ Después de ejecutar el script para recopilar una lista de identificadores de ca
     
     - Haga clic en **elegir buzones específicos para buscar** y, a continuación, agregue el mismo buzón que especificó cuando ejecutó el script en el paso 1. 
     
-      O bien
+      O bien:
     
     - Haga clic en **elegir sitios específicos para buscar** en buscar y, a continuación, agregue la dirección URL del sitio que especificó al ejecutar el script en el paso 1. 
     
@@ -239,7 +239,7 @@ Después de ejecutar el script para recopilar una lista de identificadores de ca
     
     Por ejemplo, en la siguiente captura de pantalla se buscará cualquier elemento de la subcarpeta depuraciones en la carpeta elementos recuperables del usuario (el valor de la `folderid` propiedad de la subcarpeta purgas se muestra en la captura de pantalla del paso 1):
     
-    ![Pegue el folderId o documentlink en el cuadro de palabras clave de la consulta de búsqueda](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Pegue el folderId o documentlink en el cuadro de palabras clave de la consulta de búsqueda](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Haga clic en **Buscar** para iniciar la búsqueda de colección de destino. 
   

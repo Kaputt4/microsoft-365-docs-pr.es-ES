@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Use el modelo de detección de privilegios de cliente abogado para usar la detección de contenido privilegiado basada en el aprendizaje de la máquina al revisar el contenido en un caso de exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: b60fe72cf476b9a6cbbd5cae3ed1a1e541d6b313
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fb635e429af2ae4d796e9c847a34d949d8dd6d9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595967"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079300"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configuración de la detección de privilegios de clientes de abogado en eDiscovery avanzado
 
@@ -46,7 +46,7 @@ El modelo genera las siguientes tres propiedades para cada documento:
 
 Estas propiedades (y sus valores correspondientes) se agregan a los metadatos de archivo de los documentos en un conjunto de revisión, como se muestra en la siguiente captura de pantalla:
 
-![Abogado-propiedades de privilegio de cliente mostradas en metadatos de archivo](media/AeDAttorneyClientPrivilegeMetadata.png)
+![Abogado-propiedades de privilegio de cliente mostradas en metadatos de archivo](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
 Estas tres propiedades también se pueden buscar dentro de un conjunto de revisión. Para obtener más información, consulte [consultar los datos de un conjunto de revisión](review-set-search.md).
 
@@ -62,7 +62,7 @@ Una persona que sea administrador de eDiscovery en su organización (un miembro 
 
 2. En la Página principal de **EDiscovery avanzado** , en el icono **configuración** , haga clic en **configurar la configuración global de análisis**.
 
-   ![Seleccione "configurar características experimentales"](media/AeDExperimentalFeatures.png)
+   ![Seleccione "configurar características experimentales"](../media/AeDExperimentalFeatures.png)
 
 3. En la pestaña **configuración de Analytics** , seleccione **administrar el privilegio de cliente de abogado**.
 
@@ -80,7 +80,7 @@ Para cargar una lista de abogados para su uso por parte del modelo de detección
 
    Se muestra la página de **privilegios abogado-Client** y se activa el botón de alternancia **detección de privilegios de clientes o abogados** .
 
-   ![Abogado-página desplegable de privilegios de cliente](media/AeDUploadAttorneyList.png)
+   ![Abogado-página desplegable de privilegios de cliente](../media/AeDUploadAttorneyList.png)
 
 3. Seleccione **examinar** y, a continuación, busque y seleccione el archivo. csv que creó en el paso 1.
 
@@ -98,13 +98,13 @@ Una de las principales formas de ver los resultados de la detección de privileg
  
 2. En **etiquetas**, seleccione la opción desplegable junto a **Agregar grupo** y, a continuación, seleccione **Agregar grupo de etiquetas inteligentes**.
 
-   ![Seleccione "Agregar grupo de etiquetas inteligentes"](media/AeDCreateSmartTag.png)
+   ![Seleccione "Agregar grupo de etiquetas inteligentes"](../media/AeDCreateSmartTag.png)
 
 3. En la página **Elija un modelo para la etiqueta inteligente** , elija **seleccionar** junto a **abogado-privilegio de cliente**.
 
    Se muestra un grupo de etiquetas con el **privilegio abogado-Client** . Contiene dos etiquetas secundarias denominadas **positivo** y **negativo**, que corresponden a los posibles resultados generados por el modelo.
 
-   ![Grupo de etiquetas inteligentes abogado-privilegio de cliente](media/AeDAttorneyClientSmartTagGroup.png)
+   ![Grupo de etiquetas inteligentes abogado-privilegio de cliente](../media/AeDAttorneyClientSmartTagGroup.png)
 
 3. Cambie el nombre del grupo de etiquetas y las etiquetas según corresponda para su revisión. Por ejemplo, puede cambiar el nombre de **positivo** a **privilegiado** y de **negativo** a **no privilegiado**.
 
@@ -126,8 +126,8 @@ Si el modelo determina que un documento no tiene contenido legal por naturaleza 
 
 Por ejemplo, en las siguientes capturas de pantallas se muestran dos documentos. El primero incluye contenido que es legal por naturaleza y tiene un participante en la lista de abogados. La segunda contiene ninguno y, por lo tanto, no muestra ninguna etiqueta.
 
-![Documento con etiquetas de abogados y contenido legal](media/AeDTaggingPanelLegalContentAttorney.png)
+![Documento con etiquetas de abogados y contenido legal](../media/AeDTaggingPanelLegalContentAttorney.png)
 
-![Documento sin etiquetas](media/AeDTaggingPanelNegative.png)
+![Documento sin etiquetas](../media/AeDTaggingPanelNegative.png)
 
 Después de revisar un documento para ver si contiene contenido privilegiado, puede etiquetar el documento con la etiqueta adecuada.

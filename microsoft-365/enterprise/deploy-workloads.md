@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Incorpore a los usuarios de su organización en las cargas de trabajo de productividad de Microsoft 365 para empresas
-ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 692deeee652a4d27b8cc46a8e02890cccb8bb311
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801905"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067856"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 para empresas, cargas de trabajo y escenarios
 
@@ -47,7 +47,7 @@ Estos escenarios le guiarán en la configuración de un sitio de SharePoint o un
 
 En la ilustración siguiente se muestran las cargas de trabajo y los escenarios de la guía de implementación general de Microsoft 365 para empresas:
 
-![Las cargas de trabajo y los escenarios en la guía de implementación general de Microsoft 365 para empresas.](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Las cargas de trabajo y los escenarios en la guía de implementación general de Microsoft 365 para empresas.](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 Vea la[Biblioteca de productividad de Microsoft 365](https://aka.ms/productivitylibrary)(https://aka.ms/productivitylibrary)para escenarios adicionales. 
 

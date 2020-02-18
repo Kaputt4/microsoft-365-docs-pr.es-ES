@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use clasificadores que se puedan entrenar cuando uno de los clasificadores de cuadros listos para usar no satisfaga sus necesidades. Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este tema se muestra cómo crear un clasificador personalizado.
-ms.openlocfilehash: f11da4c36c9d6ed1667d5bed4a7d3e59c2cb21a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bbf2fac4e912e6619f3fe1c9a328aa61782cb640
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595917"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078896"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creación de un clasificador capacitado (versión preliminar)
 
@@ -29,7 +29,7 @@ Para obtener más información acerca de los diferentes tipos de clasificadores,
 
 Esta escala de tiempo refleja una implementación de ejemplo.
 
-![trainable-Classifier-Timeline](media/trainable-classifier-deployment-timeline_border.png)
+![trainable-Classifier-Timeline](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > La suscripción es necesaria la primera vez para los clasificadores que se deben entrenar. Se necesitan doce días para Microsoft 365 para completar una evaluación de línea de base del contenido de su organización. Póngase en contacto con el administrador global para que inicie el proceso de suscripción.
@@ -80,7 +80,7 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 10. Ahora puede ver la página de detalles eligiendo el clasificador.
 
 
-![clasificador entrenado preparado para pruebas](media/classifier-trainable-ready-to-test-detail.png)
+![clasificador entrenado preparado para pruebas](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Recopile al menos 200 elementos de contenido de prueba. Microsoft recomienda 10.000 para obtener los mejores resultados. Debe tratarse de una mezcla de elementos que son fuertes positivos, negativos fuertes y algunos que son un poco menos obvios en su naturaleza. Vea las [extensiones de nombre de archivo y los tipos de archivo analizados predeterminados en SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para los tipos de archivo compatibles.
 
@@ -100,13 +100,13 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 
 16. Cuando el clasificador que se pueda entrenar termine de procesar los archivos de prueba, el estado de la página `Ready to review`detalles cambiará a. Si necesita aumentar el tamaño de la muestra de prueba, `Add items to test` elija y permita que el clasificador que se puede entrenar procese los elementos adicionales.
 
-![captura de pantalla de listo para revisar](media/classifier-trainable-ready-to-review-detail.png)
+![captura de pantalla de listo para revisar](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Elija `Tested items to review` Tab para revisar los elementos.
 
 18. Microsoft 365 presentará 30 elementos a la vez. Revise y, en el `We predict this item is "Relevant". Do you agree?` cuadro, `Yes` elija o `No` o `Not sure, skip to next item`. La precisión del modelo se actualiza automáticamente después de cada 30 elementos.
 
-![cuadro revisar elementos](media/classifier-trainable-review-detail.png)
+![cuadro revisar elementos](../media/classifier-trainable-review-detail.png)
 
 19. Revise *al menos* 200 elementos.
 
@@ -114,7 +114,7 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 
 20. Continuar con la revisión hasta que la precisión alcance al menos el 70 `Publish the classifier` % y `Ready to use`el estado sea.
 
-![precisión y lista para publicar](media/classifier-trainable-review-ready-to-publish.png)
+![precisión y lista para publicar](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Publique el clasificador.
 

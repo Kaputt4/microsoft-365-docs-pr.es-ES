@@ -1,5 +1,7 @@
 ---
 title: 'Paso 1: Preparar la red para Microsoft 365'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre la necesidad de ancho de banda de Internet que tienen los servicios en la nube de Microsoft 365 Enterprise.
-ms.openlocfilehash: ea92bcbd19c0b4cef16292d652cf5f8aa45aee07
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 2f20542609c757c4fbccd2f9b0e4af59d9bc7566
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370297"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066534"
 ---
 # <a name="step-1-prepare-your-network-for-microsoft-365"></a>Paso 1: Preparar la red para Microsoft 365
 
 *Este paso es obligatorio y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![Fase 1-Red](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1-Red](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 En el paso 1, realice lo siguiente:
 
@@ -40,5 +42,5 @@ Como control provisional, puede consultar los [criterios de salida](networking-e
 
 |||
 |:-------|:-----|
-|![Paso 2](./media/stepnumbers/Step2.png)|[Configurar conexiones a Internet locales para cada oficina](networking-dns-resolution-same-location.md)|
+|![Paso 2](../media/stepnumbers/Step2.png)|[Configurar conexiones a Internet locales para cada oficina](networking-dns-resolution-same-location.md)|
 

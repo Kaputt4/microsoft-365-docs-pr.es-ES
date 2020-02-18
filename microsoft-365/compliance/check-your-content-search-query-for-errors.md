@@ -13,18 +13,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Antes de ejecutar la búsqueda, compruebe si hay errores y errores tipográficos en la consulta de palabras clave para la búsqueda de contenido, por ejemplo, caracteres no admitidos y operadores booleanos en minúsculas. Si encontramos un error, sugerimos una consulta revisada.
-ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595927"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078926"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Comprobar errores en la consulta de búsqueda de contenido
 
 Al crear o editar una búsqueda de contenido, puede hacer que Office 365 Compruebe la consulta en busca de caracteres no admitidos y operadores booleanos en minúsculas. ¿Cómo se hace? Solo tiene que hacer clic en **comprobar consulta si hay errores tipográficos** en la página consulta de una búsqueda de contenido. 
   
-![Haga clic en "consultar si hay errores tipográficos" para comprobar la consulta de búsqueda en busca de caracteres no admitidos](media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
+![Haga clic en "consultar si hay errores tipográficos" para comprobar la consulta de búsqueda en busca de caracteres no admitidos](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
 Esta es una lista de los caracteres no admitidos que se buscarán. Los caracteres no admitidos suelen estar ocultos y, por lo general, provocan un error de búsqueda o devuelven resultados no deseados.
   
@@ -40,7 +40,7 @@ Esta es una lista de los caracteres no admitidos que se buscarán. Los caractere
 
 Si se encuentran caracteres no admitidos en la consulta, se muestra un mensaje de advertencia que indica que se encontraron caracteres no admitidos y sugiere una alternativa. A continuación, tiene la opción de conservar la consulta original o reemplazarla por la consulta revisada sugerida. Este es un ejemplo del mensaje de advertencia que se muestra después de hacer clic en **consultar consulta para ver si hay errores ortográficos** para la consulta de búsqueda en la captura de pantalla anterior. Observe que la consulta original contiene comillas tipográficas y operadores booleanos en minúsculas. 
   
-![Se muestra un mensaje de advertencia con una revisión sugerida de la consulta](media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![Se muestra un mensaje de advertencia con una revisión sugerida de la consulta](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Cómo evitar los caracteres no admitidos en las consultas de búsqueda
 

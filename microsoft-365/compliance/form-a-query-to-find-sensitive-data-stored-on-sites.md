@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la prevención de pérdida de datos (DLP) en SharePoint Online, puede detectar documentos que contengan datos confidenciales en todo el espacio empresarial. Una vez detectados los documentos, puede trabajar con los propietarios de documentos para proteger los datos. Este tema puede ayudarle a formar una consulta para buscar datos confidenciales.
-ms.openlocfilehash: e3750ee69a197de5e7e5c0ac9346124568b8d5f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c0b17ef8f1e6a10d095f4533867a108b937a56a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594551"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073907"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Crear una consulta para buscar datos confidenciales almacenados en los sitios
 
@@ -35,7 +35,7 @@ Los usuarios suelen almacenar datos confidenciales, como números de tarjetas de
 
 Una consulta básica de DLP está formada por tres partes: SensitiveType, intervalo de recuento e intervalo de confianza. Tal y como se muestra en el siguiente gráfico, se requiere **SensitiveType: "\<\>Type"** y tanto**|\<el intervalo\> de recuento** como el intervalo**|\<\> de confianza** son opcionales. 
   
-![Consulta de ejemplo dividida entre obligatorio y opcional](media/DLP-query-example-text.png)
+![Consulta de ejemplo dividida entre obligatorio y opcional](../media/DLP-query-example-text.png)
   
 ### <a name="sensitive-type---required"></a>Tipo confidencial: obligatorio
 

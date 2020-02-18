@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Obtenga información sobre cómo agregar palabras clave definidas por el usuario a relevancia para ayudarle a identificar los archivos relevantes mientras se etiquetan en Office 365 Advanced eDiscovery y para especificar los parámetros de costo.  '
-ms.openlocfilehash: 4b74730498b3cb08cd646d57845446ae91daeee9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595367"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075946"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definir palabras clave resaltadas y opciones avanzadas en la exhibición avanzada de documentos electrónicos de Office 365
 
@@ -48,11 +48,11 @@ Tal y como se describe a continuación, se pueden agregar listas de palabras cla
     
 6. En **Descripción**, escriba la lista de palabras clave (opcional).
     
-    ![Agregar nuevas palabras clave](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
+    ![Agregar nuevas palabras clave](../media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
   
 7. Haga clic en **Aceptar** cuando haya terminado. La lista creada se agrega a la tabla lista de palabras clave y se puede editar o eliminar. 
     
-    ![Lista de palabras clave de configuración de relevancia](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
+    ![Lista de palabras clave de configuración de relevancia](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
 Se mostrarán las palabras clave definidas por el usuario, en la etiqueta colores \> especificados en la relevancia. 
   
@@ -68,9 +68,9 @@ Esta configuración afecta a los gráficos Track y decida en importancia.
     
 2. En la lista **número de archivos revisados por hora** , seleccione la cantidad o acepte el valor predeterminado. 
     
-    ![Parámetros de costo de configuración de relevancia](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
+    ![Parámetros de costo de configuración de relevancia](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. Haga clic en **Guardar**. Se guarda la configuración seleccionada.
+3. Haga clic en **Guardar **. Se guarda la configuración seleccionada.
     
 ## <a name="see-also"></a>Vea también
 
