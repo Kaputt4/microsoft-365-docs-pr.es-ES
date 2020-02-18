@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector nativo para importar datos desde la herramienta de chat instantánea de Bloomberg a Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 9711442e75e5a60540c8c7debea83d90c89e7893
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e93802eaf3197139fe8b8384bc1ec3ee16b2d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596037"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079667"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurar un conector para archivar datos instantáneos de Bloomberg
 
@@ -29,7 +29,7 @@ Una vez que se almacenan los datos instantáneos de Bloomberg en los buzones de 
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de los chats instantáneos de Bloomberg en Microsoft 365. 
 
-![Proceso de importación y archivo instantánea de Bloomberg](media/InstantBloombergDataArchiving.png)
+![Proceso de importación y archivo instantánea de Bloomberg](../media/InstantBloombergDataArchiving.png)
 
 1. Su organización trabaja con Bloomberg para configurar un sitio de SFTP de Bloomberg. También trabajará con Bloomberg para configurar el sitio web Bloomberg para copiar los mensajes de chat en su sitio de SFTP de Bloomberg.
 

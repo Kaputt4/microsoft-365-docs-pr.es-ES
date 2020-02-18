@@ -116,7 +116,7 @@ Después de crear un trabajo de importación de PST, siga estos pasos para filtr
     
     e. Haga clic en **importar datos** para iniciar la importación. Tenga en cuenta que se muestra la cantidad total de datos que se van a importar. 
     
-    O bien
+    O bien:
     
     a. Haga clic en **no, deseo importar todo** para importar todos los datos de los archivos PST a Office 365 y, a continuación, haga clic en **siguiente**.
     

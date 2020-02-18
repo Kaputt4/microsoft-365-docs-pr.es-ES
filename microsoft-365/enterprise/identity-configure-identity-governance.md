@@ -1,5 +1,7 @@
 ---
 title: 'Paso 7: Configurar Identity Governance'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure el gobierno de identidades para su cuenta empresarial de Azure AD.
-ms.openlocfilehash: d9a9a63f46230a07b35052a3b02231f7b5315d9e
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 5b7b1c91735611046133a0247ae028ed090106fd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302927"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067357"
 ---
 # <a name="step-6-configure-identity-governance"></a>Paso 6: Configurar el gobierno de identidad
 
-![Fase 2-Identidad](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2-Identidad](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 El gobierno de identidades consiste en proteger, supervisar y auditar el acceso a recursos críticos mientras se garantiza la productividad de los empleados. Por ejemplo, con la gobernanza de identidades puede asegurarse de que los usuarios adecuados tengan el acceso adecuado a los recursos adecuados y determinar si este acceso cambia a lo largo del tiempo.
 

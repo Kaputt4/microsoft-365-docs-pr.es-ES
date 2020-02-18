@@ -1,6 +1,8 @@
 ---
 title: Implementar Microsoft 365 Enterprise
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda los recursos que puede usar para implementar Microsoft 365 Enterprise en su organización.
-ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801925"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067967"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Implementar Microsoft 365 Enterprise
 
@@ -65,7 +67,7 @@ Para implementar Microsoft 365 Enterprise por su cuenta, puede:
 
 Esta la relación entre la infraestructura de base y las cargas de trabajo y los escenarios.
 
-![Relación entre la infraestructura de base y las cargas de trabajo y los escenarios.](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Relación entre la infraestructura de base y las cargas de trabajo y los escenarios.](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 Las cargas de trabajo y los escenarios operan sobre la parte superior de la infraestructura de base. Pero no necesitará que todas las fases de infraestructura de base estén implementadas para empezar a usar las cargas de trabajo para la colaboración y la productividad.
 
@@ -83,13 +85,13 @@ Con las TLG, puede aprender por su cuenta, demostrar, personalizar o crear una p
 
 Para obtener más información, vea [Guías del laboratorio de pruebas de Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md).
 
-![Guías del laboratorio de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 
-Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, vea el póster [Iniciar la transición de su empresa a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, vea el póster [Iniciar la transición de su empresa a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Inicie la transición de su empresa a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Inicie la transición de su empresa a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Este póster de dos páginas es una forma rápida de realizar un inventario de su infraestructura existente y conseguir las instrucciones para moverse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, tales como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
 

@@ -1,5 +1,7 @@
 ---
 title: Protección de equipos para archivos en un entorno de desarrollo y pruebas
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: Cree equipos confidenciales y extremadamente confidenciales en Microsoft Teams para archivos en un entorno de desarrollo y pruebas.'
-ms.openlocfilehash: 26fed13973a87acdd62957dcfc2e0f69323234ef
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202301"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082279"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>Protección de equipos para archivos en un entorno de desarrollo y pruebas
 
 En este artículo se proporcionan instrucciones pormenorizadas para crear un entorno de desarrollo y pruebas que incluya los equipos confidenciales y extremadamente confidenciales de la solución [Protección de archivos en Microsoft Teams](secure-files-in-teams.md).
   
-![Equipos confidenciales y extremadamente confidenciales en Microsoft Teams para archivos.](../media/sensitive-highly-confidential-teams-dev-test.png)
+![Equipos confidenciales y extremadamente confidenciales en Microsoft Teams para archivos.](../../media/sensitive-highly-confidential-teams-dev-test.png)
   
 Use este entorno de desarrollo y pruebas para experimentar y adaptar la configuración a sus necesidades específicas antes de implementar estos tipos de equipos en producción.
   
@@ -86,7 +88,7 @@ Después conéctese al módulo de PowerShell de Azure Active Directory para Grap
   
 Rellene el nombre de la organización, la ubicación y una contraseña común; después, ejecute los siguientes comandos desde el símbolo del sistema de PowerShell o el entorno de scripts integrado (ISE) para crear cuentas de usuario y agregarlas a sus respectivos grupos:
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -167,7 +169,7 @@ En esta fase se crean y configuran los equipos confidenciales y extremadamente c
 
 Para crear un equipo confidencial para que los miembros del grupo de marketing puedan colaborar en las campañas de marketing existentes:
 
-1. [Cree un equipo privado](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) llamado **Campañas de marketing**.
+1. [Cree un equipo privado](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) llamado **Campañas de marketing**.
 2. Abra el equipo **Campañas de marketing**.
 3.  En la barra de herramientas del equipo, haga clic en **Archivos**.
 4.  Haga clic en los puntos suspensivos y, luego, en **Abrir en SharePoint**.
@@ -226,13 +228,13 @@ Después, configure una directiva de prevención de pérdida de datos (DLP) que 
 
 Esta es la configuración resultante del equipo Campañas de marketing.
 
-![Configuración del equipo Campañas de marketing.](../media/sensitive-team-config-dev-test.png)
+![Configuración del equipo Campañas de marketing.](../../media/sensitive-team-config-dev-test.png)
   
 ### <a name="company-strategy-team-site"></a>Sitio de equipo de estrategia de empresa
 
 Para crear un equipo extremadamente confidencial para que los miembros del equipo de alta dirección puedan colaborar en la estrategia de empresa:
 
-1. [Cree un equipo privado](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) llamado **Estrategia de empresa**.
+1. [Cree un equipo privado](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) llamado **Estrategia de empresa**.
 2. Abra el equipo **Estrategia de empresa**.
 3.  En la barra de herramientas del equipo, haga clic en **Archivos**.
 4.  Haga clic en los puntos suspensivos y, luego, en **Abrir en SharePoint**.
@@ -300,7 +302,7 @@ Después de crear la nueva etiqueta, publíquela. Si inicia sesión como miembro
 
 Esta es la configuración resultante del equipo Estrategia de empresa.
 
-![Configuración del equipo Estrategia de empresa.](../media/highlyconfidential-team-config-dev-test.png) 
+![Configuración del equipo Estrategia de empresa.](../../media/highlyconfidential-team-config-dev-test.png) 
 
 Los archivos en la sección de documentos del sitio de SharePoint subyacente de Estrategia de empresa tienen asignada la etiqueta de retención Extremadamente confidencial, y están sujetos a la directiva DLP configurada correspondiente. Estos archivos también pueden tener asignada la etiqueta de confidencialidad de Estrategia de empresa.    
   

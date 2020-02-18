@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Estamos creando artículos nuevos, actualizando los existentes y realizando cambios en función de sus comentarios. Descubra las novedades y las actualizaciones de este mes.
-ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b285b51ca20e2822be9d8193d33e634418adbeb3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601657"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081628"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -117,13 +117,13 @@ Se agregaron nuevas instrucciones a los siguientes artículos sobre la ley de pr
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
-[Aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md) (actualizado)<br>Se ha quitado la información sobre el próximo soporte para la etiquetación recomendada en Outlook. Se quitó la información de licencias duplicadas. Ahora apunta a información autoritativa en las [etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md).
+[Aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md) (actualizado)<br>Se ha quitado la información sobre el próximo soporte para la etiquetación recomendada en Outlook. Se quitó la información de licencias duplicadas. Ahora apunta a información autoritativa en [usar etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md).
 
 [Habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa pública)](sensitivity-labels-sharepoint-onedrive-files.md) (nueva)<br>Instrucciones sobre cómo preparar SharePoint y OneDrive para la aplicación de las etiquetas de confidencialidad al contenido almacenado en esas ubicaciones.
 
 [Información general sobre las etiquetas de confidencialidad](sensitivity-labels.md) (actualizada)<br>Se agregó más información sobre la compatibilidad con aplicaciones de Office en la web, Microsoft Teams, Office 365 grupos, sitios de SharePoint y archivos de Office en SharePoint y OneDrive.
 
-[Etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md) (actualizada)<br>Varias actualizaciones, incluidos detalles sobre aplicaciones compatibles recientemente, requisitos de suscripción y licencias, e interacción entre las plantillas definidas por el administrador (como las que se incluyen en el cifrado de mensajes y las etiquetas de confidencialidad de Office 365).
+[Usar las etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md) (actualizada)<br>Varias actualizaciones, incluidos detalles sobre aplicaciones compatibles recientemente, requisitos de suscripción y licencias, e interacción entre las plantillas definidas por el administrador (como las que se incluyen en el cifrado de mensajes y las etiquetas de confidencialidad de Office 365).
 
 [Usar etiquetas de confidencialidad con Microsoft Teams, Office 365 grupos y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md) (nueva)<br>Detalles sobre cómo configurar y aplicar etiquetas de confidencialidad en Microsoft Teams, Office 365 grupos y sitios de SharePoint.
 

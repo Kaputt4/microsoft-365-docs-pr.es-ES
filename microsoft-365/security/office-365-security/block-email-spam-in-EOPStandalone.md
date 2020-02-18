@@ -1,5 +1,7 @@
 ---
 title: Bloquear correo no deseado en EOP independiente
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
@@ -16,12 +18,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento para administradores de EOP independiente para evitar falsos negativos de correo no deseado
-ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 6261c183d39b84435110616491f5bd0b2f3f891b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971908"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086599"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizar el filtro contra correo no deseado de Office 365 con estas opciones de configuración
 
@@ -41,7 +43,7 @@ Para personalizar el filtro contra correo no deseado de Office 365, agregue la d
 
 ¿Es el correo no deseado principalmente correo masivo (por ejemplo, boletines o promociones)? Puede personalizar el filtro de correo no deseado en Office 365 si [usa reglas de flujo de correo para configurar el filtro de mensajes de correo masivo](use-transport-rules-to-configure-bulk-email-filtering.md) o activar la opción **Correo masivo** en las [Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md) del filtro de correo no deseado. En el centro de administración de Exchange, primero haga clic en **Protección** \> **Filtro de contenido** y, después, haga doble clic en la directiva de filtro que quiera ajustar. Haga clic en **Acciones de correo no deseado y correo masivo** para ajustar la configuración, como se muestra aquí.
 
-![Establecer el filtro de correo masivo en Exchange Online](../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
+![Establecer el filtro de correo masivo en Exchange Online](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Bloquear el correo no deseado con listas de bloqueados de filtro de correo no deseado
 
@@ -51,7 +53,7 @@ Para personalizar el filtro contra correo no deseado de Office 365, agregue la d
 
 Facilitará los esfuerzos contra correo no deseado de Office 365 para impedir falsos negativos y correo masivo si pide a los usuarios que agreguen la dirección del remitente de correo no deseado a su lista de remitentes bloqueados en [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) o en [Outlook en la Web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d). En Outlook en la Web, haga clic en **Configuración** \> **Opciones** \> **Bloquear o permitir** y, después, agregue la dirección a la lista de **remitentes bloqueados**, como se muestra aquí.
 
-![Bloquear un remitente en Outlook en la Web](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![Bloquear un remitente en Outlook en la Web](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
 > [!NOTE]
 > Para obtener más información con mayor detalle sobre las listas de remitentes seguros, vea [Sender Safe y listas de remitentes bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
@@ -87,4 +89,4 @@ El servicio EOP se diseñó para respetar las listas de remitentes bloqueados y 
 
 [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 
-[Impedir falsos positivos de correo electrónico marcado como correo no deseado con una lista segura u otras técnicas](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Impedir falsos positivos de correo electrónico marcado como correo no deseado con una lista segura u otras técnicas](prevent-email-from-being-marked-as-spam.md)

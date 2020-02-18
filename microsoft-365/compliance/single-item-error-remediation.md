@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Puede corregir un error de procesamiento en un documento en un conjunto de revisión en eDiscovery avanzado sin tener que seguir el proceso de corrección de errores en masa.
-ms.openlocfilehash: c049ce4b5d3f8fc12a015a61ea927b744ae76eb3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3c50f9dcd1448ee36edd0e82e5b2c2879c11d6b5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601497"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069717"
 ---
 # <a name="single-item-error-remediation"></a>Corrección de errores de un único elemento
 
@@ -31,21 +31,21 @@ La corrección de errores proporciona a los usuarios avanzados de eDiscovery la 
 
 Los documentos con errores de procesamiento en un conjunto de revisiones ahora están identificados (con un banner). Puede corregir o ignorar el error. En la siguiente captura de pantalla se muestra el mensaje de error de procesamiento de un documento de Word en un conjunto de revisión protegido con contraseña. Observe también que puede ver los metadatos de archivo de los documentos con errores de procesamiento.
 
-![Banner mostrado para un documento con un error de procesamiento](media/SIERimage1.png)
+![Banner mostrado para un documento con un error de procesamiento](../media/SIERimage1.png)
 
 También puede buscar documentos que tienen errores de procesamiento mediante la condición de **Estado de procesamiento** cuando [consulta los documentos en un conjunto de revisión](review-set-search.md).
 
-![Usar la condición estado de procesamiento para buscar documentos de error](media/SIERimage2.png)
+![Usar la condición estado de procesamiento para buscar documentos de error](../media/SIERimage2.png)
 
 ### <a name="ignore-errors"></a>Omitir errores
 
 Puede omitir un error de procesamiento haciendo clic en **omitir** en el banner de error de procesamiento. Cuando se omite un error, el documento se quita del [flujo de trabajo de corrección de errores en masa](error-remediation-when-processing-data-in-advanced-ediscovery.md). Después de omitir un error, el titular del documento cambia de color e indica que se ha omitido el error de procesamiento. En cualquier momento, puede revertir la decisión para omitir el error; para ello, haga clic en **revertir**.
 
-![Haga clic en Omitir para omitir el error de procesamiento](media/SIERimage3.png)
+![Haga clic en Omitir para omitir el error de procesamiento](../media/SIERimage3.png)
 
 También puede buscar todos los documentos que tuvieron un error de procesamiento que se omitió mediante la condición *errores de procesamiento omitidos* al consultar los documentos en un conjunto de revisión.
 
-![Use la condición errores de procesamiento omitidos para buscar documentos de error omitidos](media/SIERimage4.png)
+![Use la condición errores de procesamiento omitidos para buscar documentos de error omitidos](../media/SIERimage4.png)
 
 ## <a name="remediate-a-document-with-errors"></a>Corregir un documento con errores
 
@@ -55,26 +55,26 @@ Para corregir un único documento, siga estos pasos:
 
 1. Haga clic en **Descargar** > **Descargar original** para descargar una copia del archivo en un equipo local.
 
-   ![Descargar el documento con el error de procesamiento](media/SIERimage5.png)
+   ![Descargar el documento con el error de procesamiento](../media/SIERimage5.png)
 
 2. Corrija el error en el archivo sin conexión. En el caso de los archivos cifrados, sería necesario el software de descifrado para quitar la protección con contraseña, proporcionar la contraseña y guardar el archivo o usar un Cracker con contraseña. Una vez corregido el archivo, vaya al paso siguiente.
 
 3. En el conjunto de revisiones, seleccione el archivo con el error de procesamiento que ha corregido y, a continuación, haga clic en **corrección**.
 
-   ![Hacer clic en corrección en el encabezado del documento con error de procesamiento](media/SIERimage6.png)
+   ![Hacer clic en corrección en el encabezado del documento con error de procesamiento](../media/SIERimage6.png)
 
 
 4. Haga clic en **examinar**, vaya a la ubicación del archivo corregido en el equipo local y, a continuación, seleccione el archivo.
 
-   ![Haga clic en examinar y seleccione el archivo corregido en el equipo local.](media/SIERimage7.png)
+   ![Haga clic en examinar y seleccione el archivo corregido en el equipo local.](../media/SIERimage7.png)
 
     Después de seleccionar el archivo corregido, éste se carga automáticamente en el conjunto de revisión. Puede realizar un seguimiento del estado de procesamiento del archivo.
 
-    ![Se muestra el estado del proceso de corrección](media/SIERimage8.png)
+    ![Se muestra el estado del proceso de corrección](../media/SIERimage8.png)
 
    Una vez finalizado el procesamiento, puede ver el documento corregido.
 
-    ![Puede ver el archivo corregido en el formato nativo en el conjunto de revisiones](media/SIERimage9.png)
+    ![Puede ver el archivo corregido en el formato nativo en el conjunto de revisiones](../media/SIERimage9.png)
 
 Para obtener más información sobre lo que sucede cuando se corrige un documento, vea [lo que ocurre cuando se corrigen los archivos](error-remediation.md#what-happens-when-files-are-remediated).
 

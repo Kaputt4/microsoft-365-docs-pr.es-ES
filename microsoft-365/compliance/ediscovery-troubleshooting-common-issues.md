@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: ''
 description: Investigue, solucione problemas y resuelva problemas comunes en la exhibición de documentos electrónicos de Office 365.
 siblings_only: true
-ms.openlocfilehash: c8eb4a330ab565900a685959ab1291990a6119bb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595135"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074826"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar problemas y resolver problemas comunes de eDiscovery
 
@@ -60,7 +60,7 @@ Compruebe si hay usuarios duplicados o una lista de distribución con el mismo i
 Una exhibición de documentos electrónicos o búsqueda de contenido puede producir el siguiente error:
 >Esta búsqueda se completó con errores (#).  ¿Desea volver a intentar la búsqueda en las ubicaciones con errores?
 
-![Captura de pantalla del error de la ubicación específica de búsqueda con errores]( media/edisc-tshoot-specific-location-search-fails.png)
+![Captura de pantalla del error de la ubicación específica de búsqueda con errores](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>Resolución
 
@@ -136,7 +136,7 @@ Al exportar resultados de búsqueda de eDiscovery o búsqueda de contenido en el
 
 Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos, si se produce un error en la búsqueda con un error similar a "error interno del servidor (500)", es posible que tenga que volver a ejecutar la búsqueda solo en ubicaciones de buzón específicas.
 
-![Captura de pantalla del error interno del servidor 500](media/edisc-tshoot-error-500.png)
+![Captura de pantalla del error interno del servidor 500](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>Resolución
 

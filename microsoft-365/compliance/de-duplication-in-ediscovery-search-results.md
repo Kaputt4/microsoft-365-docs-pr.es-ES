@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Tiene la opción de desduplicar los resultados de la búsqueda de eDiscovery que se exportan para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en diferentes buzones.
-ms.openlocfilehash: bfd810d358a85c0cdfacab50fb512a8d2a9c8828
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: f3a0291c2c611814e35528e87f5a3897c4e8ba59
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892043"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076286"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 
@@ -45,11 +45,11 @@ Los gráficos siguientes muestran cómo se muestran los mensajes duplicados en l
   
  ### <a name="resultscsv-report-viewed-in-excel"></a>Informe Results. csv (visto en Excel)
   
-![Ver información acerca de los elementos duplicados en el informe Results. csv](media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Ver información acerca de los elementos duplicados en el informe Results. csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
  ### <a name="manifestxml-report-viewed-in-excel"></a>Informe de manifest. XML (visto en Excel)
   
-![Ver información acerca de los elementos duplicados en el informe manifest. XML](media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Ver información acerca de los elementos duplicados en el informe manifest. XML](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 Además, se incluyen otras propiedades de los mensajes duplicados en los informes de exportación. Esto incluye el buzón en el que se encuentra el mensaje duplicado, si el mensaje se envió a un grupo de distribución y si el mensaje fue CC o CCO a otro usuario.
   

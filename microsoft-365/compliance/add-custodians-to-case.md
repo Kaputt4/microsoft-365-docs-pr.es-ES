@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3acd3b300c4472b32a261d28aeae6a9d94e17423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594063"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080261"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un caso de eDiscovery avanzado
 
@@ -29,7 +29,7 @@ Use la herramienta de administración de custodios integrada en eDiscovery avanz
 
 Use el siguiente flujo de trabajo para agregar y administrar custodios en casos avanzados de eDiscovery. 
 
-![Pestaña de administración de custodios](media/CustodianMgtPage.png)
+![Pestaña de administración de custodios](../media/CustodianMgtPage.png)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -46,7 +46,7 @@ El primer paso es identificar y agregar custodios al caso.
 
 3. Busque los custodios que se agregarán al caso. Escriba la primera parte del nombre de una persona para mostrar a los usuarios de Azure Active Directory de la organización. Cuando encuentre la persona correcta, haga clic en su nombre para agregarla a la lista.
 
-   ![Identificar custodios potenciales](media/AddCustodianStep1.png)
+   ![Identificar custodios potenciales](../media/AddCustodianStep1.png)
  
 4. Una vez que haya agregado todos los custodios pertinentes, haga clic en **siguiente** para seleccionar los orígenes de datos principales de los custodios.
   
@@ -58,7 +58,7 @@ Para identificar los orígenes de datos de custodios:
 
 1. Para seleccionar el buzón de Exchange para todos los custodios, active la casilla de verificación **Exchange** en la parte superior de la columna. A continuación, puede desactivar la casilla de cualquier custodio específico para quitar un buzón de correo como una ubicación de privación. Como alternativa, puede dejar la casilla de verificación **Exchange** en la parte superior de la columna desactivada y, a continuación, activar la casilla para los custodios individuales. 
  
-   ![Seleccionar orígenes de datos de Private](media/AddCustodianStep2.png)
+   ![Seleccionar orígenes de datos de Private](../media/AddCustodianStep2.png)
  
 2. Repita lo mismo para las cuentas de OneDrive de los custodios. 
 
@@ -74,7 +74,7 @@ Para asignar buzones de correo, sitios o equipos a un custodio específico:
 
 1. En la página **seleccionar orígenes de datos adicionales** , haga clic en **Agregar** en la fila del custodio específico. 
   
-   ![Asignar orígenes de datos adicionales](media/AddCustodianStep3.PNG)
+   ![Asignar orígenes de datos adicionales](../media/AddCustodianStep3.PNG)
 
 2. En la página de flotante, puede especificar un origen de datos de cualquiera de los siguientes servicios de Office 365:
   
@@ -87,7 +87,7 @@ Para asignar buzones de correo, sitios o equipos a un custodio específico:
      
      - **Teams** : haga clic en **elegir** Teams y, a continuación, haga clic en **elegir Teams** de nuevo para mostrar una lista de Microsoft Teams a la que pertenece actualmente el custodio. Seleccione los equipos que quiera agregar a su custodio. Una vez seleccionado, el sistema identificará automáticamente & seleccionar el sitio de SharePoint y el buzón de grupo asociados a ese equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
 
-       ![Orígenes de datos de asignación](media/AddCustodianStep4.PNG)
+       ![Orígenes de datos de asignación](../media/AddCustodianStep4.PNG)
         
       > [!NOTE]
       > Para asociar un equipo adicional con un custodio, debe agregar por separado el buzón y el sitio asociados con el equipo mediante el **correo de Exchange** y las ubicaciones de los **sitios de SharePoint** .
@@ -102,7 +102,7 @@ Para poner los custodios y los orígenes de datos en espera:
 
 1. En la página **poner una retención en la página de custodios seleccionada** , active la casilla de verificación **suspender** situada en la parte superior de la columna para poner todos los custodios en retención. A continuación, puede desactivar la casilla de cualquier custodio específico para quitarlo de la suspensión. Como alternativa, puede dejar la casilla **mantener** en la parte superior de la columna desactivada y, a continuación, activar la casilla para custodios individuales. 
  
-   ![Retenciones de posición](media/AddCustodianStep5.PNG)
+   ![Retenciones de posición](../media/AddCustodianStep5.PNG)
 
 2. Compruebe las selecciones de retención de custodios y haga clic en **Finalizar**.
 

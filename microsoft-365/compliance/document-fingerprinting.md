@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. La creación de huella digital de documento facilita la protección de esta información al identificar los formularios estándar que se usan en toda la organización. En este tema se describen los conceptos relacionados con la creación de huellas digitales de documentos y cómo crear una mediante PowerShell.
-ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892033"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074957"
 ---
 # <a name="document-fingerprinting"></a>Creación de huella digital de documento
 
@@ -45,7 +45,7 @@ El siguiente ejemplo muestra qué sucede si crea una huella digital de documento
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Ejemplo de documento de patente que coincide con una huella digital de documento de una plantilla de patente
 
-![Document-Fingerprinting-diagram. png](media/Document-Fingerprinting-diagram.png)
+![Document-Fingerprinting-diagram. png](../media/Document-Fingerprinting-diagram.png)
   
 La plantilla de patente contiene los campos en blanco "título de patente", "inventoras" y "Descripción" y descripciones para cada uno de esos campos, que es la palabra pattern. Al cargar la plantilla de patentes original, se encuentra en uno de los tipos de archivo admitidos y en texto sin formato. DLP convierte este patrón de palabras en una huella digital de documento, que es un pequeño archivo XML Unicode que contiene un valor de hash único que representa el texto original y la huella digital se guarda como una clasificación de datos en Active Directory. (Como medida de seguridad, el documento original no se almacena en el servicio; solo se almacena el valor hash y no se puede reconstruir el documento original a partir del valor hash). La huella digital de patente se convierte en un tipo de información confidencial que puede asociar con una directiva de DLP. Después de asociar la huella digital con una directiva DLP, DLP detecta los mensajes de correo electrónico salientes que contienen documentos que coinciden con la huella digital de patente y se ocupan de ellos según la Directiva de la organización. 
 

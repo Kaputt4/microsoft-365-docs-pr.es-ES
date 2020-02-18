@@ -1,6 +1,8 @@
 ---
 title: Implementación de Windows 10 Enterprise para Contoso
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usó Configuration Manager de Microsoft Endpoint para implementar las actualizaciones locales de Windows 10 Enterprise.
-ms.openlocfilehash: 2080562aeb2f6359aa2a4f836de3406e4ca2439c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5dc58a9090dd6976d7c521f7552181a10f22f5b2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672706"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068016"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Implementación de Windows 10 Enterprise para Contoso
 
@@ -49,7 +51,7 @@ Antes y durante las actualizaciones locales de Windows 10 Enterprise, Contoso us
 
   Identifica los dispositivos que se bloquean con frecuencia y que quizás deban volver a crearse o reemplazarse, y los controladores de dispositivos que estén causando bloqueos en los mismos, y ofrece sugerencias de versiones alternativas de dichos controladores que pueden reducir el número de bloqueos. Proporciona una notificación de las configuraciones incorrectas de Windows Information Protection que envía avisos a los usuarios finales.
  
-Contoso tiene una infraestructura existente de Configuration Manager (rama actual). Configuration Manager funciona para entornos grandes y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También tiene características integradas que hacen que sea más fácil y eficaz implementar y administrar Windows 10 Enterprise.
+Contoso tiene una infraestructura existente de Configuration Manager (Rama actual). Configuration Manager se escala en entornos de gran tamaño y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También incluye características integradas para que sea más fácil y eficaz implementar y administrar Windows 10 Enterprise.
 
 ## <a name="planning-process"></a>Proceso de planeación
 
@@ -77,7 +79,7 @@ Para completar la implementación de actualizaciones locales de Windows 10 Enter
 
 Aquí se muestra la arquitectura de implementación de actualización local y actualizaciones continuas de Contoso.
 
-![Infraestructura de implementación de Windows 10 Enterprise de Contoso](./media/contoso-win10/contoso-win10-fig1.png)
+![Infraestructura de implementación de Windows 10 Enterprise de Contoso](../media/contoso-win10/contoso-win10-fig1.png)
 
 Esta infraestructura consta de:
 

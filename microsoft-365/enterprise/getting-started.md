@@ -1,5 +1,7 @@
 ---
 title: 'Introducción: Implementación de escritorio'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introducción al proceso de implementación de escritorio.
-ms.openlocfilehash: a9ad328f6a2548a24a981ee3b49665c3091277c9
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112534"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067513"
 ---
 # <a name="getting-started---desktop-deployment"></a>Introducción: Implementación de escritorio
 
-![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
+![](../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>Introducción: Orientaciones acerca de personas, procesos y tecnología</strong></p>
 <p>Descubra las ventajas de Windows 10 y Office 365 ProPlus, los cambios y consideraciones clave frente a implementaciones anteriores, y los procedimientos recomendados para garantizar un transición sin problemas a Windows 10 y Office 365 ProPlus.</p></td>
-<td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -111,7 +113,7 @@ Como en anteriores actualizaciones, la Herramienta de migración de estado de us
 
 **[Paso 7: Windows y Office como servicio](https://aka.ms/mdd7) ** Esto representa un gran cambio en la manera de mantener los escritorios de los usuarios. Con el cambio a Windows 10 y Office 365 ProPlus puede pasar a administrar Windows y Office como un servicio. En lugar de un cambio masivo en tecnología cada pocos años, introducirá continuamente nuevas funciones, experiencias y protecciones para el usuario. Las actualizaciones de características semestrales ofrecen nuevas funciones en el otoño y la primavera de cada año, mientras que las actualizaciones acumulativas mensuales contienen correcciones de errores, de fiabilidad y de seguridad. Aunque puede optar por implementar al cliente de Office 2019, le recomendamos cambiar a Office 365 ProPlus. Este sigue un plan de servicio similar a Windows por lo que los usuarios también reciben actualizaciones para las aplicaciones de Office de forma regular.
 
-![](media/getting-started-media/getting-started-media-2.png)
+![](../media/getting-started-media/getting-started-media-2.png)
 
 [Información general de Windows como servicio](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [Información general de Office como servicio](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)

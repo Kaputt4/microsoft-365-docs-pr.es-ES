@@ -1,5 +1,7 @@
 ---
 title: 'Paso 4: Migración de los archivos y la configuración del usuario'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,25 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo migrar los archivos y la configuración de los usuarios.
-ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112574"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085298"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Paso 4: Migración de los archivos y la configuración del usuario
 
 Mover archivos y la configuración de los usuarios a los equipos nuevos o actualizados es un proceso crítico en el que no se admiten errores. Puede migrar manualmente cada equipo o elegir uno de los distintos métodos para automatizar el proceso. Independientemente del método de migración que elija, hay tres aspectos principales que deberá abordar: la transferencia de archivos de los usuarios, su configuración y la gestión de inicio de Windows 10 y de los diseños de barra de tareas.
 
-![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
+![](../media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
 <td><p><strong>Paso 4: Archivos y configuración del usuario</strong></p>
 <p>Al actualizar o reemplazar los equipos, puede ahorrar tiempo si automatiza la copia de seguridad del estado del usuario y la restauración. Las nuevas opciones de sincronización de archivos en la nube permiten aplicar la sincronización, por cada usuario, de las carpetas Escritorio, Documentos e Imágenes en OneDrive para acceder a los archivos de forma directa desde las nuevas instalaciones de Windows.</p></td>
-<td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev4" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
 

@@ -1,6 +1,8 @@
 ---
 title: Protección de la información en Contoso Corporation
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/02/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo Contoso usa las características de protección de la información de Microsoft 365 Enterprise para proteger sus activos digitales en la nube.
-ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831683"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068427"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protección de la información en Contoso Corporation
 
@@ -85,7 +87,7 @@ Junto con la infraestructura de administración de identidad y dispositivos móv
 
 Aquí se muestra el conjunto resultante de directivas de protección de la información de Contoso.
 
-![Directivas de acceso condicional de SharePoint, Exchange Online y dispositivo](./media/contoso-info-protect/contoso-info-protect-fig1.png)
+![Directivas de acceso condicional de SharePoint, Exchange Online y dispositivo](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >Contoso también configuró directivas de acceso condicional adicionales para identidad e inicio de sesión. Vea [Identidad para Contoso Corporation](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
@@ -113,7 +115,7 @@ En la tabla siguiente se muestra la asignación de los niveles de datos de Conto
 
 Esta es la configuración de protección de la información resultante de Contoso.
 
-![Configuración de protección de información resultante de Contoso](./media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Configuración de protección de información resultante de Contoso](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>Paso siguiente
 

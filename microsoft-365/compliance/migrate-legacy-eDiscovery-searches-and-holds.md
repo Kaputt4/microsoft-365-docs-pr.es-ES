@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: f53d9cbf719b0e16749c9ea1dcae2533f8c48e50
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957195"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091393"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrar las búsquedas y suspensiones de eDiscovery heredado al centro de cumplimiento de Microsoft 365
 
@@ -58,7 +58,7 @@ Get-MailboxSearch
 
 La salida del cmdlet será similar a la siguiente:
 
-![Ejemplo de PowerShell Get-MailboxSearch](media/MigrateLegacyeDiscovery1.png)
+![Ejemplo de PowerShell Get-MailboxSearch](../media/MigrateLegacyeDiscovery1.png)
 
 ## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>Paso 3: obtener información sobre las búsquedas de exhibición de documentos electrónicos local y las suspensiones locales que desea migrar
 
@@ -74,7 +74,7 @@ $search | FL
 
 La salida de estos dos comandos será similar a la siguiente:
 
-![Ejemplo de resultados de PowerShell de usar Get-MailboxSearch para una búsqueda individual](media/MigrateLegacyeDiscovery2.png)
+![Ejemplo de resultados de PowerShell de usar Get-MailboxSearch para una búsqueda individual](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
 > La duración de la conservación local en este ejemplo es indefinida (*ItemHoldPeriod: Unlimited*). Esto es típico para escenarios de eDiscovery y de investigación legal. Si la duración de retención tiene un valor diferente a indefinido, es probable que la razón sea que la retención se usa para conservar el contenido en un escenario de retención. En lugar de usar los cmdlets de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del centro de cumplimiento de 365 Office PowerShell para escenarios de retención, se recomienda usar [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) y [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) para conservar el contenido. El resultado de usar estos cmdlets será similar a usar **New-CaseHoldPolicy** y **New-CaseHoldRule**, pero podrá especificar un período de retención y una acción de retención, como la eliminación de contenido una vez que expire el período de retención. Además, el uso de cmdlets de retención no requiere que se asocien las suspensiones de retención con un caso de exhibición de documentos electrónicos.
@@ -86,6 +86,7 @@ Para crear una retención de exhibición de documentos electrónicos, tiene que 
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
+![Ejemplo de la ejecución del comando New-ComplianceCase](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>Paso 5: crear la retención de exhibición de documentos electrónicos
 
@@ -101,6 +102,8 @@ $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLo
 New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
 
+![Ejemplo de uso de cmdlets NewCaseHoldPolicy y NewCaseHoldRule](../media/MigrateLegacyeDiscovery4.png)
+
 ## <a name="step-6-verify-the-ediscovery-hold"></a>Paso 6: comprobar la conservación de la exhibición de documentos electrónicos
 
 Para asegurarse de que no haya problemas en la creación de la retención, es conveniente comprobar que el estado de la distribución de la retención es correcto. Distribución significa que la suspensión se ha aplicado a todas las ubicaciones de contenido especificadas en el parámetro *ExchangeLocation* en el paso anterior. Para ello, puede ejecutar el cmdlet **Get-CaseHoldPolicy** . Como las propiedades guardadas en la variable *$Policy* que creó en el paso anterior no se actualizan automáticamente en la variable, deberá volver a ejecutar el cmdlet para comprobar que la distribución se ha realizado correctamente. Las directivas de suspensión de casos pueden tardar entre 5 minutos y 24 horas en distribuirse correctamente.
@@ -113,7 +116,7 @@ Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 
 El valor de **Success** para la propiedad *DistributionStatus* indica que la retención se colocó correctamente en las ubicaciones de contenido. Si aún no se ha completado la distribución, se muestra un valor de **pendiente** .
 
-![Ejemplo de PowerShell Get-CaseHoldPolicy](media/MigrateLegacyeDiscovery5.png)
+![Ejemplo de PowerShell Get-CaseHoldPolicy](../media/MigrateLegacyeDiscovery5.png)
 
 ## <a name="step-7-create-the-search"></a>Paso 7: crear la búsqueda
 
@@ -123,21 +126,21 @@ El último paso consiste en volver a crear la búsqueda que identificó en el pa
 New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxes -ContentMatchQuery $search.SearchQuery -Case $case.name
 ```
 
-![Ejemplo de New-ComplianceSearch de PowerShell](media/MigrateLegacyeDiscovery6.png)
+![Ejemplo de New-ComplianceSearch de PowerShell](../media/MigrateLegacyeDiscovery6.png)
 
 ## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Paso 8: comprobar el caso, la retención y la búsqueda en el centro de cumplimiento de Microsoft 365
 
 Para asegurarse de que todo está configurado correctamente, vaya al centro de cumplimiento de Microsoft 365 en [https://compliance.microsoft.com](https://compliance.microsoft.com)y haga clic en **eDiscovery > Core**.
 
-![Exhibición de documentos electrónicos de Microsoft 365 Compliance Center](media/MigrateLegacyeDiscovery7.png)
+![Exhibición de documentos electrónicos de Microsoft 365 Compliance Center](../media/MigrateLegacyeDiscovery7.png)
 
 El caso que ha creado en el paso 3 se incluye en la página **principal de eDiscovery** . Abra el caso y observe la retención que ha creado en el paso 4 en la lista de la ficha **suspensiones** . Puede hacer clic en la retención para ver los detalles, incluido el número de buzones a los que se aplica la retención y el estado de distribución.
 
-![suspensiones de eDiscovery en el centro de cumplimiento de Microsoft 365](media/MigrateLegacyeDiscovery8.png)
+![suspensiones de eDiscovery en el centro de cumplimiento de Microsoft 365](../media/MigrateLegacyeDiscovery8.png)
 
 La búsqueda que creó en el paso 7 aparece en la lista de la ficha **búsquedas** en el caso de exhibición de documentos electrónicos.
 
-![búsqueda de casos de eDiscovery en el centro de cumplimiento de Microsoft 365](media/MigrateLegacyeDiscovery9.png)
+![búsqueda de casos de eDiscovery en el centro de cumplimiento de Microsoft 365](../media/MigrateLegacyeDiscovery9.png)
 
 Si migra una búsqueda de exhibición de documentos electrónicos local, pero no la asocia a un caso de exhibición de documentos electrónicos, se mostrará en la página búsqueda de contenido en el centro de cumplimiento de Microsoft 365.
 

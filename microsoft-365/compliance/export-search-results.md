@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
-ms.openlocfilehash: b1bd09777bd934cccf7f1247ed72201bcc4a081f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588200"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074047"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -267,11 +267,11 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
     Para exportar elementos parcialmente indizados de todas las ubicaciones de contenido de una búsqueda, configure la búsqueda para devolver todos los elementos (quitando las palabras clave de la consulta de búsqueda) y, a continuación, exporte solo los elementos parcialmente indizados cuando exporte los resultados de la búsqueda.
     
-    ![Use la tercera opción de exportación para exportar solo los elementos sin indexar](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Use la tercera opción de exportación para exportar solo los elementos sin indexar](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - Al exportar resultados de búsqueda de sitios de SharePoint o de OneDrive para la empresa, la capacidad de exportar elementos sin indexar también depende de la opción de exportación que seleccione y de si un sitio en el que se realizó la búsqueda contiene un elemento indizado que coincida con los criterios de búsqueda. Por ejemplo, si busca sitios específicos de SharePoint o de OneDrive para la empresa y no se encuentra ningún resultado de búsqueda, no se exportarán elementos sin indexar de esos sitios si elige la segunda opción de exportación para exportar tanto los elementos indexados como los no indizados. Si un elemento indizado de un sitio coincide con los criterios de búsqueda, se exportarán todos los elementos no indexados de ese sitio cuando se exportan tanto elementos indizados como no indizados. En la siguiente ilustración se describen las opciones de exportación en función de si un sitio contiene un elemento indizado que coincida con los criterios de búsqueda.
     
-    ![Elija la opción exportar en función de si un sitio contiene un elemento indizado que coincida con los criterios de búsqueda.](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Elija la opción exportar en función de si un sitio contiene un elemento indizado que coincida con los criterios de búsqueda.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
     a. Solo se exportan los elementos indexados que coinciden con los criterios de búsqueda. No se exportan elementos parcialmente indizados.

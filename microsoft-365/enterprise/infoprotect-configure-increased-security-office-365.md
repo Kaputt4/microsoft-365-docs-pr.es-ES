@@ -1,5 +1,7 @@
 ---
 title: 'Paso 3: configurar Microsoft 365 con una mayor seguridad'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender y configurar cómo lograr mayores niveles de seguridad con Microsoft 365.
-ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: eabf0d60f3cfb61b7fffcc688a080ba99f83293e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801685"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067247"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>Paso 3: configurar Microsoft 365 con una mayor seguridad
 
 *Este paso es obligatorio y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![Fase 6: Protección de la información](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: Protección de la información](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Para asegurarse de que su suscripción a Microsoft 365 y sus datos estén protegidos contra amenazas desde el principio, configure lo siguiente:
 
@@ -47,7 +49,7 @@ Office 365 ATP solo está disponible con Microsoft 365 E5.
 
 |||
 |:-------|:-----|
-|![Guías del laboratorio de pruebas para la nube de Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del laboratorio de prueba: configurar una mayor seguridad para Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del laboratorio de prueba: configurar una mayor seguridad para Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 Como punto de control provisional, vea los [criterios de salida](infoprotect-exit-criteria.md#crit-infoprotect-step3) correspondientes a este paso.
@@ -57,6 +59,6 @@ Como punto de control provisional, vea los [criterios de salida](infoprotect-exi
 
 |||
 |:-------|:-----|
-|![Paso 4](./media/stepnumbers/Step4.png)|[Configurar Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![Paso 4](../media/stepnumbers/Step4.png)|[Configurar Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
 
 

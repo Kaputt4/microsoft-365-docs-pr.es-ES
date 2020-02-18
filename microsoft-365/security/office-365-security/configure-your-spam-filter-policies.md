@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado.
-ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957205"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086279"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar las directivas de filtro de correo no deseado
 La configuración del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado. La configuración de la directiva de filtro de correo no deseado se aplica solo a los mensajes entrantes. Hay dos tipos:
@@ -109,10 +109,10 @@ Para habilitar más opciones personalizadas o agregar directivas personalizadas,
 
 6. Haga clic en **Guardar **. En el panel de la derecha, aparece un resumen de la configuración de la directiva.
 
-La directiva predeterminada no se puede deshabilitar ni eliminar, y las directivas personalizadas siempre tienen prioridad sobre la predeterminada. Puede habilitar o deshabilitar las directivas personalizadas marcando o desmarcando las casillas de la columna **HABILITADO**. De manera predeterminada, todas las directivas están habilitadas. Para eliminar una directiva personalizada, selecciónela, haga clic en **Eliminar** ![Icono Eliminar](../media/ITPro-EAC-DeleteIcon.gif) y confirme que quiere eliminar la directiva.
+La directiva predeterminada no se puede deshabilitar ni eliminar, y las directivas personalizadas siempre tienen prioridad sobre la predeterminada. Puede habilitar o deshabilitar las directivas personalizadas marcando o desmarcando las casillas de la columna **HABILITADO**. De manera predeterminada, todas las directivas están habilitadas. Para eliminar una directiva personalizada, selecciónela, haga clic en **Eliminar** ![Icono Eliminar](../../media/ITPro-EAC-DeleteIcon.gif) y confirme que quiere eliminar la directiva.
 
 > [!TIP]
-> Para cambiar la prioridad (orden de ejecución) de las directivas personalizadas, haga clic en la ![Icono de flecha arriba](../media/ITPro-EAC-UpArrowIcon.gif) flecha de arriba y la ![Icono de flecha abajo](../media/ITPro-EAC-DownArrowIcon.gif) flecha de abajo. La directiva con **PRIORIDAD** de **0** se ejecutará primero, seguida de la **1**, la **2** y, así, sucesivamente.
+> Para cambiar la prioridad (orden de ejecución) de las directivas personalizadas, haga clic en la ![Icono de flecha arriba](../../media/ITPro-EAC-UpArrowIcon.gif) flecha de arriba y la ![Icono de flecha abajo](../../media/ITPro-EAC-DownArrowIcon.gif) flecha de abajo. La directiva con **PRIORIDAD** de **0** se ejecutará primero, seguida de la **1**, la **2** y, así, sucesivamente.
 
 ## <a name="use-powershell-to-configure-spam-filter-policies"></a>Usar PowerShell para configurar directivas de filtro de correo no deseado
 
@@ -150,18 +150,18 @@ Ambas listas se configuran como parte de cualquier directiva de correo no desead
 
 1. En la sección **Listas de permitidos**, puede especificar entradas, como remitentes o dominios, que siempre se entregarán en la Bandeja de entrada. El filtro contra correo no deseado no procesa el correo electrónico de estas entradas.
 
-   - Agregue remitentes de confianza a la lista de permitidos del remitente. Haga clic en **Editar**![Icono Agregar](../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea permitir. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de permitidos**.
+   - Agregue remitentes de confianza a la lista de permitidos del remitente. Haga clic en **Editar**![Icono Agregar](../../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea permitir. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de permitidos**.
 
-   - Agregue dominios de confianza a la lista de permitidos del dominio. Haga clic en **Editar**![Icono agregar](../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea permitir. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de permitidos**.
+   - Agregue dominios de confianza a la lista de permitidos del dominio. Haga clic en **Editar**![Icono agregar](../../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea permitir. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de permitidos**.
 
    > [!CAUTION]
    > Nunca use dominios aceptados (dominios de su propiedad) o dominios comunes como Microsoft.com, office.com, etc. en una lista de permitidos. Esto permite a usuarios malintencionados enviar correo indiscriminadamente a su organización.
 
 2. En la página **Listas de bloqueados**, puede especificar entradas, como remitentes o dominios, que siempre se marcarán como correo no deseado. El servicio aplicará la acción de correo no deseado de alta confianza configurada en el correo electrónico que coincida con estas entradas.
 
-   - Agregue remitentes no deseados a la lista de bloqueados del remitente. Haga clic en **Editar**![Icono Agregar](../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de bloqueados**.
+   - Agregue remitentes no deseados a la lista de bloqueados del remitente. Haga clic en **Editar**![Icono Agregar](../../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de bloqueados**.
 
-   - Agregue dominios no deseados a la lista de bloqueados del dominio. Haga clic en **Editar**![Icono agregar](../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de bloqueados**.
+   - Agregue dominios no deseados a la lista de bloqueados del dominio. Haga clic en **Editar**![Icono agregar](../../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de bloqueados**.
    
      > [!NOTE]
      > En la política del filtro de spam, puedes bloquear dominios enteros o remitentes específicos, pero no puedes usar comodines (\*). 

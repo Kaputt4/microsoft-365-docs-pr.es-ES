@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Use el editor de búsqueda en masa en el centro de seguridad y cumplimiento de Office 365 o Microsoft 365 para cambiar rápidamente las ubicaciones de consulta y de contenido de una o más búsquedas de contenido.
-ms.openlocfilehash: 40d3a6c04a57f368a4f53ae0bbc543b049b26d52
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5d1fd8a877ffb6c2012567583e46e561fb09836f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596277"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079007"
 ---
 # <a name="bulk-edit-content-searches"></a>Edición masiva de búsquedas de contenido
 
@@ -30,13 +30,13 @@ Para obtener más información acerca del uso de la herramienta de estadísticas
 
 1. Vaya a [https://protection.office.com](https://protection.office.com)y, a continuación, seleccione búsqueda de **contenido**de **búsqueda** \> .
     
-2. En la lista de búsquedas, seleccione una o más búsquedas y, a continuación **, seleccione** ![el botón](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)editor de búsqueda en masa del editor de búsqueda masiva.
+2. En la lista de búsquedas, seleccione una o más búsquedas y, a continuación **, seleccione** ![el botón](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)editor de búsqueda en masa del editor de búsqueda masiva.
     
-    ![Selecciona una o más búsquedas y, a continuación, selecciona el editor de búsqueda masiva.](media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
+    ![Selecciona una o más búsquedas y, a continuación, selecciona el editor de búsqueda masiva.](../media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
   
     La siguiente información se muestra en la página **consultas** del editor masivo de búsqueda. 
     
-    ![La página editor de búsqueda en masa muestra las consultas de las búsquedas seleccionadas](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
+    ![La página editor de búsqueda en masa muestra las consultas de las búsquedas seleccionadas](../media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
     a. La columna **Buscar** muestra el nombre de la búsqueda de contenido. Como se mencionó anteriormente, puede editar la consulta para varias búsquedas. 
     
@@ -46,7 +46,7 @@ Para obtener más información acerca del uso de la herramienta de estadísticas
     
    - Escriba la nueva consulta en la celda. No se puede editar una parte de la consulta. Tiene que escribir toda la consulta.
     
-      O bien
+      O bien:
     
     - Pega una nueva consulta en la celda. En este ejemplo se supone que se ha copiado el texto de la consulta desde un archivo, como un archivo de texto o un archivo de Excel.
     
@@ -71,7 +71,7 @@ Estas son algunas sugerencias para editar consultas con el editor de búsqueda e
     
     La siguiente información se muestra en la página **ubicaciones** del editor masivo de búsqueda. 
     
-    ![Seleccione habilitar el editor de ubicación en masa y, a continuación, seleccione ubicaciones para agregar o quitar ubicaciones de contenido](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
+    ![Seleccione habilitar el editor de ubicación en masa y, a continuación, seleccione ubicaciones para agregar o quitar ubicaciones de contenido](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
     a. **Buzones de correo para buscar** En esta sección se muestra una columna para cada búsqueda de contenido seleccionada y una fila para cada buzón de correo que se incluye en la búsqueda. Una marca de verificación indica que el buzón de correo se incluye en la búsqueda. Puede Agregar buzones a una búsqueda escribiendo la dirección de correo electrónico del buzón en una fila en blanco y, a continuación, activando la casilla de verificación de la búsqueda de contenido a la que desea agregarla. O bien, puede quitar un buzón de una búsqueda desactivando la casilla de verificación.
     

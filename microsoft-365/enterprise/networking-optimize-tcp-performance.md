@@ -1,5 +1,7 @@
 ---
 title: 'Paso 5: Optimizar el rendimiento del servicio de Office 365 y el cliente'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configure las opciones de TCP y los servicios de Office 365 para obtener un mejor rendimiento.
-ms.openlocfilehash: f89ae816780101c31971c8e3e60df803f82f1e55
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: e3aefb417330ab791a3dd217e2e34591eba3e1d1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370077"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066546"
 ---
 # <a name="step-5-optimize-client-and-office-365-service-performance"></a>Paso 5: Optimizar el rendimiento del servicio de Office 365 y el cliente
 
 *Este paso es opcional y es válido para las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![Fase 1-Red](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1-Red](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Puede aumentar el rendimiento si ajusta la forma en que el Protocolo de control de transmisión (TCP) funciona entre los dispositivos cliente y los servicios de Office 365.
 

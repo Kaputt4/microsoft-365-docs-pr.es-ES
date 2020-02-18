@@ -1,5 +1,7 @@
 ---
 title: Protección contra la suplantación de identidad en Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Este artículo describe cómo Office 365 reduce los ataques de phishing que usan dominios de remitentes falsificados, es decir, dominios suplantados. Para ello, analiza los mensajes y bloquea los que no pueden autenticarse mediante métodos de autenticación de correo electrónico estándar ni otras técnicas de reputación del remitente. Este cambio se implementó para reducir el número de ataques de phishing a los que se exponen las organizaciones de Office 365.
-ms.openlocfilehash: cb978dd39e9645b8179490d498713137ab79af46
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233901"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087229"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra la suplantación de identidad en Office 365
 
@@ -41,13 +43,13 @@ Los mensajes de suplantación de identidad tienen dos implicaciones negativas pa
 
 En primer lugar, un mensaje falsificado puede engañar a un usuario para que haga clic en un vínculo y proporcione sus credenciales, descargue malware o responda a un mensaje con contenido confidencial (esto último se conoce como Business Email Compromise: compromiso de correo electrónico empresarial). Por ejemplo, el siguiente es un mensaje de suplantación de identidad con un remitente falsificado de msoutlook94@service.outlook.com:
 
-![Mensaje de suplantación de identidad que suplanta service.outlook.com](../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+![Mensaje de suplantación de identidad que suplanta service.outlook.com](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
 El mensaje anterior no proviene realmente de service.outlook.com, pero el atacante lo ha falsificado para que así parezca. Intenta engañar a un usuario para que haga clic en el vínculo del mensaje.
 
 En el ejemplo siguiente se está suplantando contoso.com:
 
-![Mensaje de suplantación de identidad: compromiso de correo electrónico empresarial](../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+![Mensaje de suplantación de identidad: compromiso de correo electrónico empresarial](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
 El mensaje parece legítimo, pero en realidad es una suplantación de identidad. Este mensaje de suplantación de identidad es un tipo de compromiso de correo electrónico empresarial, que es una subcategoría de suplantación de identidad.
 
@@ -55,7 +57,7 @@ El mensaje parece legítimo, pero en realidad es una suplantación de identidad.
 
 En segundo lugar, los mensajes falsificados crean incertidumbre para los usuarios que conocen los mensajes de suplantación de identidad, pero no pueden diferenciar un mensaje verdadero de uno falso. Por ejemplo, el siguiente es un ejemplo de un restablecimiento de contraseña real desde la dirección de correo electrónico de la cuenta de Microsoft Security:
 
-![Restablecimiento de contraseña legítimo de Microsoft](../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+![Restablecimiento de contraseña legítimo de Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
 El mensaje anterior proviene de Microsoft, pero al mismo tiempo, los usuarios están acostumbrados a recibir mensajes de suplantación de identidad que pueden engañar a un usuario para que haga clic en un vínculo y proporcione sus credenciales, descargue malware o responda a un mensaje con contenido confidencial. Como es difícil notar la diferencia entre un restablecimiento de contraseña verdadero y uno falso, muchos usuarios ignoran estos mensajes, los marcan como correo no deseado o informan innecesariamente sobre ellos a Microsoft como intentos de suplantaciones de identidad.
 
@@ -63,7 +65,7 @@ Para detener la suplantación de identidad, el sector de filtrado de correo elec
 
 Pero, el problema es que los registros de autenticación de correo electrónico son opcionales, no necesarios. Por lo tanto, aunque los dominios con directivas de autenticación seguras como microsoft.com y skype.com están protegidos frente a la suplantación de identidad, los que utilizan directivas de autenticación más débiles o no usan ninguna directiva son objetivos para la suplantación.  En marzo de 2018, sólo un 9% de los dominios de las empresas en la Fortune 500 publicaron directivas de autenticación de correo electrónico seguras. El 91% restante podía ser falsificado por un atacante y, a menos que el filtro de correo electrónico lo detectara con otra directiva, podía llegar a un usuario final y engañarlo:
 
-![Directivas DMARC de las empresas en Fortune 500](../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![Directivas DMARC de las empresas en Fortune 500](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 La proporción de pequeñas y medianas empresas que no están en la lista Fortune 500 y que publican directivas de autenticación de correo electrónico seguras es menor y es incluso más pequeña para los dominios que están fuera de Norteamérica y Europa occidental.
 
@@ -149,7 +151,7 @@ Esto ocurre cuando el dominio remitente de la dirección en De: es un dominio ex
 
 En ambos casos, se marca la siguiente sugerencia de seguridad roja en el mensaje o un equivalente personalizado para el idioma del buzón del destinatario:
 
-![Sugerencia de seguridad roja: detección de fraude](../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+![Sugerencia de seguridad roja: detección de fraude](../../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
 
 Puede diferenciar entre suplantación de identidad dentro de la organización y entre dominios solo consultando la dirección en De: y sabiendo cuál es el correo electrónico del destinatario o examinando los encabezados de correo electrónico.
 
@@ -221,7 +223,7 @@ To: receiver @ contoso.com
 
 En el cliente de correo electrónico (Outlook, Outlook en la Web o cualquier otro cliente de correo electrónico), se muestra solo el dominio en De:, sin el dominio en SPF o DKIM. Esto puede confundir al usuario y hacerle pensar que el mensaje proviene de fabrikam.com, pero realmente procede de dominioMalintencionado.com.
 
-![El mensaje autenticado pero el dominio en De: no se alinea con lo que no produce error de SPF o DKIM](../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
+![El mensaje autenticado pero el dominio en De: no se alinea con lo que no produce error de SPF o DKIM](../../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
 
 Por ello, Office 365 requiere que el dominio de la dirección en De: se alinee con el dominio en la firma SPF o DKIM y si no, que contenga otras señales internas que indican que el mensaje es legítimo. En caso contrario, el mensaje es un error compauth.
 
@@ -259,17 +261,17 @@ Hay varias maneras para suplantar un mensaje (vea [Diferenciar entre los distint
 
 Para crear o actualizar la configuración de directiva de suplantación (entre dominios), vaya a Protección contra suplantación de identidad \> Configuración contra la suplantación en la pestaña Administración de amenazas \> Directiva en el Centro de seguridad &amp; cumplimiento. Si no ha creado ninguna configuración contra suplantación de identidad, debe crearla:
 
-![Protección contra la suplantación de identidad: crear una nueva directiva](../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![Protección contra la suplantación de identidad: crear una nueva directiva](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
 Si ya la ha creado, puede seleccionarla para modificarla:
 
-![Protección contra la suplantación de identidad: modificar una directiva existente](../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![Protección contra la suplantación de identidad: modificar una directiva existente](../../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
 
 Seleccione la directiva que acaba de crear y siga los pasos, como se describe en [Obtener más información sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).
 
-![Habilitar o deshabilitar la protección contra la suplantación de identidad](../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![Habilitar o deshabilitar la protección contra la suplantación de identidad](../../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
 
-![Habilitar o deshabilitar las sugerencias de seguridad contra la suplantación de identidad](../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
+![Habilitar o deshabilitar las sugerencias de seguridad contra la suplantación de identidad](../../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
 
 Para crear una nueva directiva con PowerShell:
 
@@ -295,11 +297,11 @@ Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 
 Más adelante en 2018, en lugar de tener que crear una directiva de forma predeterminada, se creará una que tenga como ámbito todos los destinatarios de la organización para que no tenga que especificarlos manualmente (las capturas de pantalla siguientes están sujetas a cambios antes de la implementación final).
 
-![Directiva predeterminada contra la suplantación de identidad](../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![Directiva predeterminada contra la suplantación de identidad](../../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
 
 A diferencia de una directiva que cree, no puede eliminar la directiva predeterminada, modificar su prioridad o elegir el ámbito de usuarios, dominios o grupos con los que usarla.
 
-![Detalles de la directiva predeterminada contra la suplantación de identidad](../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![Detalles de la directiva predeterminada contra la suplantación de identidad](../../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
 
 Configurar la protección predeterminada mediante PowerShell:
 
@@ -338,7 +340,7 @@ Para dominios externos, el usuario falsificado es el dominio de la dirección en
 
 Para permitir que este remitente envíe correos electrónicos sin autenticar, cambie de **No** a **Sí**.
 
-![Configurar remitentes permitidos en la protección contra la suplantación ](../media/d4334921-d820-4334-8217-788279701e94.jpg)
+![Configurar remitentes permitidos en la protección contra la suplantación ](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 También puede usar PowerShell para permitir que un remitente específico suplante su dominio:
 
@@ -347,13 +349,13 @@ $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![Obtener remitentes falsificados de Powershell](../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![Obtener remitentes falsificados de Powershell](../../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
 
 En la imagen anterior, se han agregado saltos de línea adicionales para ajustar esta captura de pantalla. Normalmente, todos los valores aparecerían en una sola línea.
 
 Edite el archivo y busque la línea que corresponde a outlook.com y bing.com, cambie la entrada AllowedToSpoof de No a Sí:
 
-![Configuración de permiso de suplantación de identidad como Sí en Powershell](../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![Configuración de permiso de suplantación de identidad como Sí en Powershell](../../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
 
 Guarde el archivo y, después, ciérrelo:
 
@@ -380,7 +382,7 @@ Aunque puede ser difícil empezar a enviar dominios para la autenticación, con 
 
 Cuando está habilitada la directiva contra la suplantación, puede usar las funciones de investigación y respuesta de amenazas para hacerse una idea de cuántos mensajes se marcan como phishing. Para ello, vaya al Centro de seguridad &amp; cumplimiento (SCC) en Administración de amenazas \> Explorador, establezca la vista phishing y ordene por dominio remitente o estado de protección:
 
-![Vista de cuántos mensajes se marcan como phishing](../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+![Vista de cuántos mensajes se marcan como phishing](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
 Puede interactuar con los diversos informes para ver cuántos se han marcado como phishing, incluidos los mensajes marcados como SPOOF. Para obtener más información, vea [Introducción a la investigación de amenazas y respuestas de Office 365](office-365-ti.md).
 
@@ -388,7 +390,7 @@ Todavía no puede dividir los mensajes que se marcaron debido a la suplantación
 
 La captura de pantalla siguiente es un ejemplo de cómo se mostrarán estos datos, pero puede que cambie a la hora de la publicación:
 
-![Vista de los informes de suplantación de identidad por tipo de detección](../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+![Vista de los informes de suplantación de identidad por tipo de detección](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
 Para los clientes de ATP y E5, estos informes estarán disponibles más adelante en los informes de estado de protección contra amenazas (TPS), pero se retrasarán al menos 24 horas. Esta página se actualizará cuando se integren en el Centro de seguridad &amp; cumplimiento.
 
@@ -398,9 +400,9 @@ Una vez que Office 365 actualiza su configuración para que pueda desactivar el 
 
 Esta característica está actualmente en desarrollo. A medida de que se vayan definiendo más detalles, esta página se actualizará con capturas de pantalla del Centro de seguridad y cumplimiento y con ejemplos de PowerShell.
 
-![El informe "Qué ocurre si" para habilitar la protección contra la suplantación](../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![El informe "Qué ocurre si" para habilitar la protección contra la suplantación](../../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
 
-![Posible experiencia de usuario al permitir a un remitente falsificado](../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+![Posible experiencia de usuario al permitir a un remitente falsificado](../../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
 
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Escenarios legítimos para deshabilitar la protección contra la suplantación
 
@@ -410,23 +412,23 @@ Por ello, es mejor trabajar con los falsos positivos de la protección contra la
 
 Pero, hay un escenario legítimo donde debe deshabilitarse, es decir cuando hay productos de filtrado de correo electrónico adicionales en el enrutamiento de mensajes y Office 365 no es el primer paso en la ruta de acceso al correo electrónico:
 
-![El registro MX del cliente no apunta a Office 365](../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
+![El registro MX del cliente no apunta a Office 365](../../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
 
 El otro servidor puede ser el servidor de correo de Exchange local, un dispositivo de filtrado de correo electrónico, como Ironport, u otro servicio hospedado en la nube. 
 
 Si el registro MX del dominio del destinatario no apunta a Office 365, no es necesario deshabilitar la protección contra la suplantación porque Office 365 busca el registro MX de su dominio receptor y suprime la protección contra la suplantación si apunta a otro servicio. Si no sabe si su dominio tiene delante otro servidor, puede usar un sitio web como MX Toolbox para buscar el registro MX. Puede aparecer como se muestra a continuación:
 
-![El registro MX indica que el dominio no apunta a Office 365](../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+![El registro MX indica que el dominio no apunta a Office 365](../../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
 
 Este dominio tiene un registro MX que no apunta a Office 365, por lo que Office 365 no aplica el cumplimiento de la protección contra la suplantación.
 
 Pero, si el registro MX del dominio del destinatario *sí* apunta a Office 365, aunque hay otro servicio frente a Office 365, debe deshabilitar la protección contra la suplantación. El ejemplo más común es mediante la reescritura del destinatario:
 
-![Diagrama de enrutamiento para reescritura del destinatario](../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+![Diagrama de enrutamiento para reescritura del destinatario](../../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
 
 El registro MX del dominio contoso.com apunta al servidor local, mientras que el registro MX del dominio @office365.contoso.net apunta a Office 365, porque contiene \*.protection.outlook.com o \*.eo.outlook.com en el registro MX:
 
-![El registro MX apunta a Office 365, por tanto, probable reescritura del destinatario](../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+![El registro MX apunta a Office 365, por tanto, probable reescritura del destinatario](../../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
 
 No olvide diferenciar cuando el registro MX del dominio del destinatario no apunta a Office 365 y cuando se ha realizado una reescritura del destinatario. Es importante saber la diferencia entre estos dos casos.
 
@@ -452,11 +454,11 @@ Si no contiene dichos valores significa que MX no apunta a Office 365. Una herra
 
 Para este ejemplo concreto, la captura de pantalla siguiente indica que para contoso.com, el dominio que parece el destinatario ya que era el encabezado Para:, el registro MX apunta a un servidor local:
 
-![Registro MX que apunta al servidor local](../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
+![Registro MX que apunta al servidor local](../../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
 
 Pero, el destinatario real es office365.contoso.net, cuyo registro MX apunta a Office 365:
 
-![MX que apunta a Office 365, debe ser reescritura del destinatario](../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+![MX que apunta a Office 365, debe ser reescritura del destinatario](../../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
 
 Por lo tanto, para este mensaje probablemente se ha realizado una reescritura del destinatario.
 

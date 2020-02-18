@@ -1,5 +1,7 @@
 ---
 title: 'Paso 2: Proteja sus contraseñas'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Necesita que sus contraseñas sean seguras y que se puedan administrar en toda la organización.
-ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801745"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067287"
 ---
 # <a name="step-2-secure-your-passwords"></a>Paso 2: Proteja sus contraseñas
 
-![Fase 2: identidad](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2: identidad](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Evite contraseñas no válidas
@@ -54,7 +56,7 @@ Consulte las [instrucciones para habilitar el restablecimiento de contraseña](h
 
 |||
 |:-------|:-----|
-|![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del laboratorio de pruebas: restablecimiento de contraseña](password-reset-m365-ent-test-environment.md) |
+|![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del laboratorio de pruebas: restablecimiento de contraseña](password-reset-m365-ent-test-environment.md) |
 |||
 
 Como control provisional, puede consultar los [criterios de salida](identity-exit-criteria.md#crit-identity-pw-reset) correspondientes a esta sección.
@@ -73,7 +75,7 @@ Vea las [instrucciones para configurar el SSO de conexión directa de Azure AD](
 
 |||
 |:-------|:-----|
-|![Guías del entorno de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: Inicio de sesión único de conexión directa de Azure AD](single-sign-on-m365-ent-test-environment.md) |
+|![Guías del entorno de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guía del entorno de pruebas: Inicio de sesión único de conexión directa de Azure AD](single-sign-on-m365-ent-test-environment.md) |
 |||
 
 Como control provisional, puede consultar los [criterios de salida](identity-exit-criteria.md#crit-identity-sso) correspondientes a esta sección.
@@ -98,4 +100,4 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 
 |||
 |:-------|:-----|
-|![Paso 3](./media/stepnumbers/Step3.png)| [Proteja y administre los inicios de sesión de usuario](identity-secure-user-sign-ins.md) |
+|![Paso 3](../media/stepnumbers/Step3.png)| [Proteja y administre los inicios de sesión de usuario](identity-secure-user-sign-ins.md) |

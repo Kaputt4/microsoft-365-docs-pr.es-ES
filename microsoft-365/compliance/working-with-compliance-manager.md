@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo relacionadas con los productos de Microsoft.
-ms.openlocfilehash: 645d2bca907d81e32d8262051fd159dd52ba3039
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597207"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083936"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -50,7 +50,7 @@ Una vez que el administrador asigna roles de administrador de cumplimiento a otr
 
 Cada rol del administrador de cumplimiento tiene permisos ligeramente diferentes. Puede ver los permisos asignados a cada rol, ver qué usuarios tienen roles y agregar o quitar usuarios de esa función a través del portal de confianza de servicios. Seleccione el elemento de menú **Administrador** y elija la **configuración** que desea ver.
   
-![Menú de administración de STP: configuración seleccionada](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![Menú de administración de STP: configuración seleccionada](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 Para agregar o quitar usuarios de los roles del Administrador de cumplimiento.
   
@@ -66,11 +66,11 @@ Para agregar o quitar usuarios de los roles del Administrador de cumplimiento.
 
 6. Para agregar usuarios a este rol, seleccione **Agregar**. En el cuadro de diálogo **Agregar usuarios** , seleccione el campo de usuario. Puede desplazarse por la lista de usuarios disponibles o empezar a escribir el nombre de usuario para filtrar la lista en función del término de búsqueda. Seleccione el usuario para agregar esa cuenta a la lista **Agregar usuarios** aprovisionada con dicha función. Si desea agregar varios usuarios a la vez, empiece a escribir un nombre de usuario para filtrar la lista y, a continuación, seleccione el usuario que desea agregar a la lista. Seleccione **Guardar** para aprovisionar el rol seleccionado a estos usuarios. 
 
-    ![Administrador de cumplimiento: agregar usuarios](media/compliance-manager-add-users.png)
+    ![Administrador de cumplimiento: agregar usuarios](../media/compliance-manager-add-users.png)
   
 7. Para quitar usuarios de este rol, seleccione los usuarios y seleccione **eliminar**.
 
-    ![Administrador de cumplimiento: eliminar usuarios](media/compliance-manager-delete-users.png)
+    ![Administrador de cumplimiento: eliminar usuarios](../media/compliance-manager-delete-users.png)
 
 ### <a name="controlling-automatic-secure-score-updates"></a>Control de las actualizaciones automáticas de calificación segura
 
@@ -120,7 +120,7 @@ No se pueden crear grupos como entidades independientes. Un grupo siempre debe c
 2. En el panel desplegable **evaluación** , escriba un título para la evaluación y seleccione una plantilla en el menú desplegable.
 3. En **Seleccione un grupo o agregue un nuevo grupo**, seleccione **Agregar un nuevo grupo** y escriba el nombre del grupo en el campo siguiente.
 4. Para copiar la información de un grupo existente, active la opción **¿desea copiar los datos de un grupo existente?** a **activado.** Seleccione el grupo que desea copiar en el menú desplegable que hay debajo y active las casillas de verificación de los campos que desee aplicar a la nueva evaluación en el nuevo grupo.
-5. Haga clic en **Guardar**. Cuando haya finalizado, el panel de control flotante se cerrará y el nuevo grupo se mostrará automáticamente en el panel.
+5. Seleccione **Guardar**. Cuando haya finalizado, el panel de control flotante se cerrará y el nuevo grupo se mostrará automáticamente en el panel.
 
 Qué se debe saber al trabajar con grupos:
   
@@ -178,7 +178,7 @@ No puede editar un nombre de propietario, pero puede modificar la descripción q
 
 El área acciones del cliente muestra todas las acciones del cliente para todas las plantillas y evaluaciones en el administrador de cumplimiento (versión preliminar).
 
-![Administrador de cumplimiento: agregar usuarios](media/compliance-manager-customer-actions.png "Acciones del cliente del administrador de cumplimiento")
+![Administrador de cumplimiento: agregar usuarios](../media/compliance-manager-customer-actions.png "Acciones del cliente del administrador de cumplimiento")
 
 De un solo vistazo, puede ver el título, el propietario, la categoría, el cumplimiento y la puntuación de una acción, y determinar si está integrado con una puntuación segura. Puede expandir una acción y seleccionar **leer más** para leer la descripción de la acción y tener acceso a los vínculos de la descripción. También puede usar esta interfaz para habilitar y deshabilitar la integración de la puntuación segura en función de cada acción y para agregar acciones personalizadas. Las acciones que tienen capacidades de integración de puntuación segura tienen un botón de puntos suspensivos (...) junto a ellas (tenga en cuenta que las acciones personalizadas también tienen puntos suspensivos junto a ellas).
 
@@ -186,7 +186,7 @@ De un solo vistazo, puede ver el título, el propietario, la categoría, el cump
 
 1. Seleccione los puntos suspensivos (...) de la acción que desea modificar y seleccione **Editar**.
 2. Alterne el conmutador de la actualización continua de puntuación segura en activado o desactivado para habilitar o deshabilitar la supervisión continua mediante la puntuación segura.
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
 Cuando las organizaciones implementan por primera vez Microsoft 365 u Office 365, la puntuación segura tarda aproximadamente siete días en completarse en recopilar datos y factorizar la puntuación. Durante este tiempo, la configuración de la opción de actualización continua de puntuación segura como **desactivada** y la configuración manual de una acción para **implementada** contará esa acción hacia su puntuación. Después de los siete días iniciales, al desactivar la actualización continua de la actualización segura, se habilitará la supervisión continua a partir de ese momento.
 
@@ -266,15 +266,15 @@ Al crear una evaluación, tiene la opción de copiar la información de un grupo
 
 A continuación, se muestra un ejemplo de la evaluación de Office 365 e ISO 27001. La primera vista ilustra la nueva vista de elementos de acción en el administrador de cumplimiento (versión preliminar).
 
-![Vista de elementos de acción del administrador de cumplimiento](media/compliance-manager-action-items.png)
+![Vista de elementos de acción del administrador de cumplimiento](../media/compliance-manager-action-items.png)
 
 Las acciones se muestran en orden alfabético, y a cada acción se le asigna una puntuación y un propietario. Seleccione el vínculo **leer más** para leer los detalles de cada acción. 
 
-![Vista de elementos de acción del administrador de cumplimiento](media/compliance-manager-actions-read-more.png)
+![Vista de elementos de acción del administrador de cumplimiento](../media/compliance-manager-actions-read-more.png)
 
 Seleccione el vínculo **revisión** para administrar, asignar, implementar y probar la acción. A continuación se muestra un ejemplo de acción.
 
-![Vista de acción del administrador de cumplimiento](media/compliance-manager-action.png)
+![Vista de acción del administrador de cumplimiento](../media/compliance-manager-action.png)
 
 En versiones anteriores del administrador de cumplimiento, el flujo de trabajo para implementar los requisitos se realizó en el nivel de control. Un responsable de cumplimiento asignaría un control a alguien para implementar el control. Hubo dos inconvenientes:
 
@@ -295,7 +295,7 @@ En el administrador de cumplimiento (versión preliminar), el proceso de flujo d
 
 El administrador de cumplimiento (versión preliminar) también incluye la tabla dinámica basada en el control que se encuentra en las versiones anteriores. Seleccione el panel de **información de controles** para verlo. Puede ver la información de los controles en el nivel de evaluación y de plantilla. A continuación se muestra un ejemplo del panel de información de controles para evaluaciones.
 
-![Vista de información de controles del administrador de cumplimiento](media/compliance-manager-controls-info.png)
+![Vista de información de controles del administrador de cumplimiento](../media/compliance-manager-controls-info.png)
 
 Para las evaluaciones, se muestra el panel de información de controles:
 
@@ -311,7 +311,7 @@ Para las evaluaciones, se muestra el panel de información de controles:
     - **Sus acciones** muestran las acciones del cliente que puede realizar para satisfacer algunos o todos los requisitos del control. Muchos controles tienen varias acciones asociadas a ellos, y todas las acciones asociadas a un control se muestran aquí. Las acciones tienen la misma interfaz de usuario que las que aparecen en el panel acciones.
     - **Acciones de Microsoft** muestra la lista de controles del marco interno de Microsoft que se aplican al control de certificación seleccionado. Para cada control interno, seleccione **implementado** para ver los detalles de implementación y pruebas de Microsoft, junto con el resultado de la prueba y la fecha de prueba, como se muestra a continuación.
 
-![Vista de acción de Microsoft del administrador de cumplimiento](media/compliance-manager-microsoft-action.png)
+![Vista de acción de Microsoft del administrador de cumplimiento](../media/compliance-manager-microsoft-action.png)
 
 ### <a name="export-an-assessment"></a>Exportación de una evaluación
 
@@ -329,7 +329,7 @@ El informe de evaluación se descarga como un archivo de Excel en la sesión del
 
 Cuando haya terminado con una plantilla o una evaluación y ya no la necesite para fines de cumplimiento, puede ocultarla en la vista. Cuando una plantilla o evaluación está oculta, se quita de la vista predeterminada y debe seleccionar **incluir casilla oculta** para mostrarla.
 
-![Vista de plantilla oculta del administrador de cumplimiento](media/compliance-manager-hidden-template.png "Plantilla oculta del administrador de cumplimiento")
+![Vista de plantilla oculta del administrador de cumplimiento](../media/compliance-manager-hidden-template.png "Plantilla oculta del administrador de cumplimiento")
 
 > [!IMPORTANT]
 > Las evaluaciones ocultas no conservan sus vínculos a los documentos de evidencia cargados. Se recomienda encarecidamente que exporte la evaluación antes de ocultarla para conservar los vínculos a los documentos de evidencia del informe.
@@ -367,7 +367,7 @@ Los controles y las acciones son las tablas dinámicas de datos principales que 
 
 Los controles se pueden ver desde el panel de información de controles. Los controles representan los requisitos de un estándar, una certificación, una regla o un marco. Para asignar estos requisitos en varios estándares, normas, etc., y para asociarlos con acciones, todo se trata como si fuera un marco de control. Por ejemplo, como un marco de control, las normativas, como HIPAA, se han desglosado por sección y los controles de HIPAA en el administrador de cumplimiento usan el mismo esquema de numeración que estas secciones, como se muestra a continuación:
 
-![Detalles de los controles de Microsoft del administrador de cumplimiento](media/compliance-manager-control-details.png)
+![Detalles de los controles de Microsoft del administrador de cumplimiento](../media/compliance-manager-control-details.png)
 
 Hay tres tipos de controles:
 
@@ -403,7 +403,7 @@ Esta función permite a una organización quitar las dependencias activas o pend
 
 Una plantilla es el objeto base del administrador de cumplimiento (versión preliminar) que está asociado a un producto y una certificación (por ejemplo, estándar, regla, marco de control, etc.). Las plantillas se pueden ver y agregar desde el panel Plantillas.
 
-![Panel de plantillas de Microsoft del administrador de cumplimiento](media/compliance-manager-template-dashboard.png)
+![Panel de plantillas de Microsoft del administrador de cumplimiento](../media/compliance-manager-template-dashboard.png)
  
 El panel muestra cada plantilla, junto con la certificación y el producto asociado a la plantilla, las fechas en que se creó y modificó por última vez el libro, el número de controles administrados por el cliente y por Microsoft, la puntuación máxima de cumplimiento para el Plantilla y el estado de la plantilla (por ejemplo, aprobado, pendiente de aprobación, importado).
 
@@ -594,7 +594,7 @@ Puede exportar una evaluación a un archivo de Excel para las partes interesadas
 2. Seleccione el grupo y la evaluación en los menús desplegables para la evaluación que desea exportar.
 3. Seleccione exportar. La exportación de la evaluación se descarga como un archivo de Excel.
 
-![Informe de Excel de evaluación del administrador de cumplimiento](media/compliance-manager-assessment-report.png)
+![Informe de Excel de evaluación del administrador de cumplimiento](../media/compliance-manager-assessment-report.png)
 
 ## <a name="permissions"></a>Permisos
 

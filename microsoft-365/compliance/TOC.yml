@@ -75,8 +75,11 @@
   href: protect-information.md
   items:
     - name: Etiquetas de confidencialidad
-      href: sensitivity-labels.md
       items:
+        - name: Obtener información sobre las etiquetas de confidencialidad
+          href: sensitivity-labels.md
+        - name: Empiece a usar las etiquetas de confidencialidad
+          href: get-started-with-sensitivity-labels.md
         - name: Crear y administrar etiquetado de confidencialidad
           href: create-sensitivity-labels.md
         - name: Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
@@ -89,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Etiquetas de confidencialidad en las aplicaciones de Office
+        - name: Usar las etiquetas de confidencialidad en las aplicaciones de Office
           href: sensitivity-labels-office-apps.md
     - name: Prevención de pérdida de datos (DLP)
       href: data-loss-prevention-policies.md

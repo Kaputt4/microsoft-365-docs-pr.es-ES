@@ -1,6 +1,8 @@
 ---
 title: Responsabilidades de continuidad empresarial de Enterprise de clientes y partners de la nube
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre las acciones que Microsoft realiza durante una incidencia en el servicio para que pueda preparar mejor sus planes de continuidad empresarial.
-ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831871"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067685"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Responsabilidades de clientes y partners de la nube de administración de continuidad empresarial de Enterprise
 
@@ -53,7 +55,7 @@ Microsoft mantiene varios canales para las comunicaciones de estado del servicio
  
 Proporcionar acceso a los servicios en línea de Microsoft 365 supone una colaboración entre su organización y Microsoft. En el gráfico siguiente se resume el equilibrio de las responsabilidades de Microsoft y del cliente durante una incidencia en el servicio y durante las operaciones habituales.
 
-![equilibrio de responsabilidades de clientes y Microsoft](media/ebcm/responsibilities.png)
+![equilibrio de responsabilidades de clientes y Microsoft](../media/ebcm/responsibilities.png)
 
 ## <a name="your-environment---service-continuity"></a>El entorno: continuidad del servicio
 Cuando piense en su plan de continuidad, tenga en cuenta los eventos que pueden afectar a su organización y su capacidad global de comunicación. A un alto nivel, hay tres factores que pueden afectar a su empresa.
@@ -69,6 +71,6 @@ Microsoft publica los[principios de conectividad de red](https://docs.microsoft.
 Muchas soluciones de colaboración dependen de sistemas, como la red de área extensa (WAN) de la empresa. Cuando estos sistemas no estén disponibles, cómo responderá su organización?
 Este gráfico representa los problemas que pueden afectar a más de un área. En la tabla adjunta se ofrecen ejemplos que debe tener en cuenta
 
-![diagrama de Venn](media/ebcm/venn-diagram.png)
+![diagrama de Venn](../media/ebcm/venn-diagram.png)
 
 Sus planes de continuidad deben tener en cuenta cada una de estas áreas. Por ejemplo: Si necesita que los usuarios estén en la red corporativa y hay una tormenta de nieve, ¿cómo tienen estos usuarios acceso a los recursos clave? Si la nieve impide que lleguen a la oficina y se necesita que los ingenieros de mantenimiento conecten la red corporativa, ¿hay alguna directiva que les exige tener sus equipos portátiles corporativos en su poder en casa?

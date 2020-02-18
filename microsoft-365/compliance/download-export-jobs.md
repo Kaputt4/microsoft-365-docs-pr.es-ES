@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Instale y use el explorador de Azure Storage para descargar documentos que se exportaron desde un conjunto de revisión en eDiscovery avanzado.
-ms.openlocfilehash: c92b92a91755ef641d7fd5f4ef0533065e1f8349
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 640dd9b6d5768a22cb6529f476e4003c5eeb4d86
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595155"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074917"
 ---
 # <a name="download-export-jobs"></a>Descargar trabajos de exportación
 
@@ -43,7 +43,7 @@ El siguiente paso es obtener la dirección URL de la firma de acceso compartido 
 
 3. En la página de flotante, en **ubicaciones**, copie la dirección URL de SAS que se muestra. Si es necesario, puede guardarlo en un archivo para poder tener acceso a él en el paso 3.
  
-   ![Copie la dirección URL de SAS que se muestra en ubicaciones](./media/eDiscoExportJob.png)
+   ![Copie la dirección URL de SAS que se muestra en ubicaciones](../media/eDiscoExportJob.png)
 
 ## <a name="step-3-connect-to-the-azure-storage-location"></a>Paso 3: conectarse a la ubicación de almacenamiento de Azure
 
@@ -53,15 +53,15 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
 
 2. Haga clic en el icono **Agregar cuenta** . Como alternativa, puede hacer clic con el botón secundario en **cuentas de almacenamiento**.
 
-   ![Haga clic en el icono Agregar cuenta](./media/AzureStorageConnect.png)
+   ![Haga clic en el icono Agregar cuenta](../media/AzureStorageConnect.png)
 
 3.  En la página **conectar con el almacenamiento de Azure** , haga clic en **usar un URI de firma de acceso compartido (SAS)** y, a continuación, haga clic en **siguiente**.
 
-    ![Haga clic en usar un URI de firma de acceso compartido (SAS) y, a continuación, haga clic en siguiente](./media/AzureStorageConnect2.png)
+    ![Haga clic en usar un URI de firma de acceso compartido (SAS) y, a continuación, haga clic en siguiente](../media/AzureStorageConnect2.png)
 
 4.  En la página **adjuntar con URI de SAS** , haga clic en el cuadro URI y, a continuación, pegue la dirección URL de SAS que obtuvo en el paso 2. 
 
-    ![Pegue la dirección URL de SAS en el cuadro URI](./media/AzureStorageConnect3.png)
+    ![Pegue la dirección URL de SAS en el cuadro URI](../media/AzureStorageConnect3.png)
 
     Observe que una parte de la dirección URL de SAS se muestra en el cuadro **nombre para mostrar** . Se usará como el nombre para mostrar del contenedor que se crea en las cuentas de **almacenamiento** después de conectarse a la ubicación de almacenamiento. Este nombre consta del identificador del caso de eDiscovery avanzado y un identificador único. Puede conservar el nombre para mostrar predeterminado o cambiarlo. Si lo cambia, el nombre para mostrar debe ser único.
 
@@ -69,13 +69,13 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
 
     Se muestra la página de **Resumen de conexión** .
    
-    ![Haga clic en conectar en la página de Resumen de conexión para conectarse a la ubicación de almacenamiento de Azure.](./media/AzureStorageConnect4.png)
+    ![Haga clic en conectar en la página de Resumen de conexión para conectarse a la ubicación de almacenamiento de Azure.](../media/AzureStorageConnect4.png)
 
 6. En la página **Resumen de conexión** , revise la información de conexión y, a continuación, haga clic en **conectar**. 
 
     Se abre el nodo **contenedores de blobs** (en **cuentas** > de almacenamiento **(contenedores adjuntos)** \> . 
 
-    ![Exportar trabajos en el nodo contenedores de blobs](./media/AzureStorageConnect5.png)
+    ![Exportar trabajos en el nodo contenedores de blobs](../media/AzureStorageConnect5.png)
 
     Contiene un contenedor denominado con el nombre para mostrar del paso 4. Este contenedor contiene una carpeta para cada trabajo de exportación que haya creado. A estas carpetas se les asigna un identificador que corresponde al identificador del trabajo de exportación. Puede encontrar estos identificadores de exportación (y el nombre de la exportación) en **información de soporte técnico** en la página de control flotante para cada trabajo **de preparación de datos para exportar** que aparecen en la ficha **trabajos** .
 
@@ -83,7 +83,7 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
 
    Se muestra una lista de carpetas y los informes de exportación.
    
-    ![La carpeta exportar contiene archivos exportados y exportar informes](./media/AzureStorageConnect6.png)
+    ![La carpeta exportar contiene archivos exportados y exportar informes](../media/AzureStorageConnect6.png)
 
    La carpeta exportar trabajo contiene los siguientes elementos. Los elementos reales de la carpeta de exportación se determinan mediante las opciones de exportación configuradas cuando se creó el trabajo de exportación. Para obtener más información, vea [exportar documentos de un conjunto de revisión](export-documents-from-review-set.md).
 
@@ -107,7 +107,7 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
 
     El explorador de almacenamiento de Azure inicia el proceso de exportación. El estado de la descarga de los elementos exportados se muestra en el panel **actividades** . Se muestra un mensaje cuando la descarga ha finalizado.
 
-    ![Se muestra un mensaje cuando finaliza la descarga](./media/AzureStorageConnect8.png)
+    ![Se muestra un mensaje cuando finaliza la descarga](../media/AzureStorageConnect8.png)
 
 > [!NOTE]
 > En lugar de descargar todo el trabajo de exportación, puede seleccionar elementos específicos para descargarlos. En lugar de descargar elementos, puede hacer doble clic en un elemento para verlo.

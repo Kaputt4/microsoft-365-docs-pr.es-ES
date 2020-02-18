@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95c45034204e04a0b7fe6e0be5a9b3315c821b6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 06dc88e395ea31d40a4163565d7894a2720cb469
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582739"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081805"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Administrar conjuntos de revisión en la exhibición avanzada de documentos electrónicos
 
@@ -41,15 +41,15 @@ Los conjuntos de revisión son un conjunto estático de documentos en los que pu
 
 Los conjuntos de revisión se pueden crear en la pestaña **conjuntos de revisión** haciendo clic en **+ Agregar conjunto de revisión**.
 
-![Agregar conjunto de revisión](media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![Agregar conjunto de revisión](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
 En la página Agregar elemento emergente de **conjunto de revisiones** , escriba un nombre para el conjunto de revisión y, a continuación, haga clic en **Guardar**. El nuevo conjunto de revisiones se muestra en la lista de la pestaña **conjuntos de revisión** .
 
-![Nuevo conjunto de revisión enumerado en la pestaña conjunto de revisiones](media/AeDnewreviewset.png)
+![Nuevo conjunto de revisión enumerado en la pestaña conjunto de revisiones](../media/AeDnewreviewset.png)
 
 Hay tres formas diferentes de agregar datos a un conjunto de revisión en un caso de exhibición avanzada de documentos electrónicos.
 
-![Tres formas de agregar a un conjunto de revisión](media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![Tres formas de agregar a un conjunto de revisión](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [Agregar los resultados de búsqueda a un conjunto de revisión](add-data-to-review-set.md)
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: Obtenga información sobre cómo habilitar el archivado de expansión automática en Office 365, que proporciona a los usuarios un almacenamiento ilimitado para sus buzones de Exchange Online. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
-ms.openlocfilehash: d37243c65770ff7bbcce4cbe4cfd593b68b7a869
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0ca31372d99f0727a6da48be4d8276a533fbe3f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593211"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074697"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Habilitar el archivado ilimitado en Office 365: ayuda de administración
 
@@ -102,7 +102,7 @@ Tenga en cuenta lo siguiente después de habilitar el archivado de expansión au
     
 - De forma similar, los valores de las propiedades del buzón *ArchiveQuota* y *ArchiveWarningQuota* no cambian cuando habilita el archivado de expansión automática. De hecho, cuando habilita el archivado de expansión automática para un buzón de usuario y la propiedad *AutoExpandingArchiveEnabled* se establece `True`en, se omiten las propiedades *ArchiveQuota* y *ArchiveWarningQuota* . Este es un ejemplo de estas propiedades de buzón de correo después de habilitar el archivado de expansión automática para el buzón de un usuario. 
     
-    ![Las propiedades ArchiveQuota y ArchiveWarningQuota se ignoran después de habilitar el archivado de expansión automática](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
+    ![Las propiedades ArchiveQuota y ArchiveWarningQuota se ignoran después de habilitar el archivado de expansión automática](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
 ## <a name="more-information"></a>Más información

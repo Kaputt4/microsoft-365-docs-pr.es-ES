@@ -69,7 +69,7 @@ SharePoint Online admite el cifrado de los siguientes tipos de archivo:
     
 - Formato de especificación de papel XML (XPS)
     
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="__toc220831191"> </a>
 
 Una vez que haya habilitado IRM para SharePoint Online, puede empezar a aplicar Rights Management a listas y bibliotecas. Para obtener más información, vea [aplicar Information Rights Management a una lista o biblioteca](apply-irm-to-a-list-or-library.md).

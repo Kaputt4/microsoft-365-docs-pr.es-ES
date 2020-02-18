@@ -1,6 +1,8 @@
 ---
 title: Identidad para Contoso Corporation
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso aprovecha la Identidad como servicio (IDaaS) y proporciona autenticación basada en la nube a sus empleados y autenticación federada a sus partners y clientes.
-ms.openlocfilehash: dc893fb1e632cf15a612ebf13e911173933d9af3
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673216"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068477"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
@@ -30,7 +32,7 @@ Contoso usa un único bosque de Active Directory Domain Services (AD DS) para co
 
 Este es el bosque de Contoso con dominios regionales para las distintas partes del mundo que contienen centros regionales.
 
-![Bosque y dominios de Contoso en todo el mundo](./media/contoso-identity/contoso-identity-fig1.png)
+![Bosque y dominios de Contoso en todo el mundo](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contoso quería usar las cuentas y los grupos del bosque contoso.com para la autenticación y la autorización de sus cargas de trabajo y servicios en Microsoft 365.
 
@@ -43,7 +45,7 @@ Contoso permite lo siguiente:
 
 Esta es la red perimetral de Contoso con un sitio web público, una extranet de partners y un conjunto de servidores de Active Directory Federation Services (AD FS). La red perimetral está conectada al Internet que contiene clientes, partners y servicios de Internet.
 
-![Soporte de Contoso de autenticación federada para los clientes y partners](./media/contoso-identity/contoso-identity-fig2.png)
+![Soporte de Contoso de autenticación federada para los clientes y partners](../media/contoso-identity/contoso-identity-fig2.png)
  
 Los servidores de AD FS de la red perimetral facilitan autenticar las credenciales de cliente en sus proveedores de identidad para el acceso al sitio web público y las credenciales de partner para el acceso a la extranet de partners.
 
@@ -59,7 +61,7 @@ Para realizar la sincronización continua de directorios, Costoso ha implementad
 
 Este es el servidor que ejecuta Azure AD Connect y que sondea el bosque AD DS de Contoso en busca de cambios, para después sincronizar dichos cambios con la cuenta empresarial de Azure AD.
 
-![Infraestructura de sincronización PHS de directorios de Contoso](./media/contoso-identity/contoso-identity-fig4.png)
+![Infraestructura de sincronización PHS de directorios de Contoso](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Directivas de Acceso Condicional a identidades y dispositivos
 
@@ -71,7 +73,7 @@ Contoso creó un conjunto de [directivas de Acceso Condicional](identity-access-
 
 Este es el conjunto resultante de directivas de acceso condicional a identidades.
 
-![Directivas de acceso condicional a identidades y dispositivos de Contoso](./media/contoso-identity/contoso-identity-fig5.png)
+![Directivas de acceso condicional a identidades y dispositivos de Contoso](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>Paso siguiente
 

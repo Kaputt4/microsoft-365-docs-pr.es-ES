@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
-ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 823722fe49349a11e828ca56978240e662c8435c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601527"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081350"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el centro de seguridad & cumplimiento
 
@@ -71,7 +71,7 @@ Al obtener acceso al servicio de garantía del servicio por primera vez, el prim
   
 1. Después de acceder a garantía del servicio, seleccione **configuración** y la página Configuración regional y de la industria se muestra como se muestra en la siguiente captura de pantalla. 
     
-    ![Muestra la página de configuración del centro de protección.](media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
+    ![Muestra la página de configuración del centro de protección.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
 2. En la página **configuración** , seleccione la flecha abajo situada junto a **región** y compruebe las regiones adecuadas para su organización. 
     
@@ -86,15 +86,15 @@ Para revisar y descargar contenido, seleccione una opción en el panel de navega
   
 - **Informes de cumplimiento** para ver las auditorías independientes y las evaluaciones de Office 365 y otros servicios en la nube de Microsoft, tal como se muestra en la siguiente captura de pantalla. 
     
-    ![Muestra la página de garantía del servicio: informes de cumplimiento del servicio.](media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
+    ![Muestra la página de garantía del servicio: informes de cumplimiento del servicio.](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
 - **Confiar** en los documentos para ver información sobre cómo Microsoft opera Office 365 como se muestra en la siguiente captura de pantalla. 
     
-    ![Muestra la página de garantía del servicio: confiar en documentos proporcionados por Microsoft](media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Muestra la página de garantía del servicio: confiar en documentos proporcionados por Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **Controles auditados** para ver información acerca de cómo Office 365 controla los requisitos de seguridad, cumplimiento y privacidad, tal como se muestra en la siguiente captura de pantalla. 
     
-    ![Muestra la pantalla controles auditados de garantía del servicio.](media/4baf252b-603d-45e0-af12-32616154df65.png)
+    ![Muestra la pantalla controles auditados de garantía del servicio.](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
 Seleccione el informe que desee descargar y seleccione **Guardar** para descargarlo en el equipo. Para los controles auditados, seleccione el informe que desee y, a continuación, seleccione **Descargar**. En la tabla siguiente se describen los informes que puede encontrar en cada página de garantía del servicio. 
   
@@ -116,15 +116,15 @@ Para obtener acceso a los informes predeterminados que están disponibles en gen
   
 1. En el centro de seguridad & cumplimiento, seleccione **permisos** en el panel izquierdo, tal y como se muestra en la siguiente captura de pantalla. 
     
-    ![Menú &amp; permisos de cumplimiento de seguridad](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
+    ![Menú &amp; permisos de cumplimiento de seguridad](../media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
 2. En el panel derecho, seleccione **usuario de garantía del servicio**y, a continuación, seleccione **Editar Grupo de roles**y, en la sección **miembros** , seleccione **Editar** para agregar miembros al rol de usuario de garantía del servicio, como se muestra en la siguiente captura de pantalla. 
     
-    ![Usuario de garantía del servicio: agregar](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
+    ![Usuario de garantía del servicio: agregar](../media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
 3. En el cuadro de diálogo siguiente, busque y elija individuos o grupos que necesiten ver los informes de cumplimiento de garantía del servicio y los recursos de confianza y, a continuación, seleccione **Agregar** para cada selección que realice y haga clic en la **X** en la esquina superior derecha del panel cuando haya terminado. 
     
-    ![Usuario de garantía del servicio: elegir usuario](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
+    ![Usuario de garantía del servicio: elegir usuario](../media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
 4. Cada usuario o grupo que agregó al rol de usuario de garantía del servicio puede encontrar ahora garantía del servicio y descargar informes y otros documentos en el centro de seguridad & cumplimiento.
     

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595797"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078677"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -45,7 +45,7 @@ El administrador de cumplimiento usa varios componentes para ayudarle con las ac
 
 El diagrama muestra las relaciones entre los componentes principales del administrador de cumplimiento:
 
-![Relaciones en el administrador de cumplimiento versión 3](media/compliance-manager-relationships.png)
+![Relaciones en el administrador de cumplimiento versión 3](../media/compliance-manager-relationships.png)
 
 ## <a name="groups"></a>Grupos
 
@@ -77,7 +77,7 @@ Las evaluaciones incluyen varios componentes:
 - **Identificador de artículo**: este campo es solo para evaluaciones de RGPD y especifica el número de artículo de RGPD correspondiente.
 - **Descripción**: texto de control de la certificación o reglamentación correspondiente. Debido a restricciones de copyright, se incluye un vínculo a la información relevante para los estándares ISO.
 
-![Controles de la versión 3 del administrador de cumplimiento](media/compliance-manager-controls.png)
+![Controles de la versión 3 del administrador de cumplimiento](../media/compliance-manager-controls.png)
 
 Hay tres tipos de controles en el administrador de cumplimiento, **controles administrados por el**cliente, controles **administrados por el cliente**y **controles de administración compartidos**
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de caja del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede tener acceso a los datos cuando se tiene un problema.
-ms.openlocfilehash: 915f8570271835939f0086f6c19af41a42d4f0d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8906fde608e6e6c26604450eed063915e4617d29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595507"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076896"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de caja de cliente en Office 365
 
@@ -50,7 +50,7 @@ Los pasos siguientes describen el flujo de trabajo típico cuando un ingeniero d
 
 5. Una vez que un administrador de soporte de Microsoft aprueba la solicitud, el Lockbox del cliente envía al aprobador designado en la organización una notificación de correo electrónico sobre la solicitud de acceso pendiente de Microsoft.
 
-    ![Ejemplo de notificación de correo electrónico del Lockbox del cliente](media/CustomerLockbox1.png)
+    ![Ejemplo de notificación de correo electrónico del Lockbox del cliente](../media/CustomerLockbox1.png)
 
    Cualquier usuario que tenga asignado el rol de administrador [aprobador de acceso de Lockbox de cliente](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) en el centro de administración de Microsoft 365 puede aprobar solicitudes de caja de caja de cliente.
 
@@ -74,11 +74,11 @@ Puede activar los controles de caja de caja del cliente en el centro de administ
 
 2. Elija **configuración > seguridad & privacidad**.
 
-    ![Edición de la configuración de la caja de opciones del cliente en el centro de administración](media/CustomerLockbox2.png)
+    ![Edición de la configuración de la caja de opciones del cliente en el centro de administración](../media/CustomerLockbox2.png)
 
 3. En el icono de **Lockbox del cliente** , elija **Editar**y, a continuación, mueva el botón de alternancia a **activado** o **desactivado** para activar o desactivar la característica.
 
-    ![Require approval for Customer Lockbox](media/CustomerLockbox4.png)
+    ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
 ## <a name="approve-or-deny-a-customer-lockbox-request"></a>Aprobar o denegar una solicitud de caja de caja del cliente
 
@@ -86,19 +86,19 @@ Puede activar los controles de caja de caja del cliente en el centro de administ
 
 2. Elija **admitir > solicitudes de caja de caja del cliente**.
 
-    ![Haga clic en soporte técnico y en solicitudes de caja de caja del cliente](media/CustomerLockbox5.png)
+    ![Haga clic en soporte técnico y en solicitudes de caja de caja del cliente](../media/CustomerLockbox5.png)
 
     Se muestra una lista de solicitudes de caja de caja de clientes.
 
-    ![Lista de solicitudes de caja de caja del cliente](media/CustomerLockbox6.png)
+    ![Lista de solicitudes de caja de caja del cliente](../media/CustomerLockbox6.png)
 
 3. Seleccione una solicitud de caja de caja de cliente y, a continuación, elija **aprobar** o **denegar**.
 
-    ![Aprobar o denegar solicitudes de caja de caja de cliente](media/CustomerLockbox7.png)
+    ![Aprobar o denegar solicitudes de caja de caja de cliente](../media/CustomerLockbox7.png)
 
     Se muestra un mensaje de confirmación sobre la aprobación de la solicitud de caja de trabajo del cliente.
 
-    ![Aprobar o denegar solicitudes de caja de caja de cliente](media/CustomerLockbox8.png)
+    ![Aprobar o denegar solicitudes de caja de caja de cliente](../media/CustomerLockbox8.png)
 
 ## <a name="auditing-customer-lockbox-requests"></a>Auditoría de solicitudes de caja de comprobación del cliente
 
@@ -116,7 +116,7 @@ Antes de poder usar el registro de auditoría para realizar un seguimiento de la
 
     Se muestra la página de **búsqueda de registros de auditoría** .
 
-    ![Página de búsqueda de registros de auditoría](media/auditlogsearch1.png)
+    ![Página de búsqueda de registros de auditoría](../media/auditlogsearch1.png)
   
 4. Configurar los siguientes criterios de búsqueda: 
 
@@ -138,7 +138,7 @@ Antes de poder usar el registro de auditoría para realizar un seguimiento de la
 
    - Para mostrar registros de auditoría relacionados con un ingeniero de Microsoft llevando a cabo acciones en respuesta a una solicitud de caja de control del cliente aprobada: en el cuadro de la columna **usuario** , escriba **operador de Microsoft**. La columna **actividad** muestra la acción realizada por el ingeniero.
 
-      ![Filtrar por "operador de Microsoft" para mostrar registros de auditoría](media/CustomerLockbox10.png)
+      ![Filtrar por "operador de Microsoft" para mostrar registros de auditoría](../media/CustomerLockbox10.png)
 
 7. En la lista de resultados, haga clic en un registro de auditoría para mostrarlo.
 
@@ -152,11 +152,11 @@ Cuando una persona de su organización aprueba o deniega una solicitud de caja d
 | Dirección IP | La dirección IP del equipo que el aprobador ha usado para aprobar o denegar una solicitud. |
 | Usuario       | La cuenta de servicio\[BOXServiceAccount@\]customerforest. Prod.Outlook.com.            |
 | Actividad   | Set-AccessToCustomerDataRequest; se trata de la actividad de auditoría que se registra al aprobar o denegar una solicitud de caja de control del cliente.                                |
-| Item       | El GUID de la solicitud de caja de caja del cliente                             |
+| Elemento       | El GUID de la solicitud de caja de caja del cliente                             |
 
 En la siguiente captura de pantalla se muestra un ejemplo de un registro de auditoría que se corresponde con una solicitud de caja de control de cliente aprobada. Si se denegó una solicitud de caja de caja del cliente, el valor del parámetro **ApprovalDecision** sería **Deny**.
 
-![Registro de auditoría para una solicitud de caja de control de cliente aprobada](media/CustomerLockbox9.png)
+![Registro de auditoría para una solicitud de caja de control de cliente aprobada](../media/CustomerLockbox9.png)
 
 > [!TIP]
 > Para mostrar información más detallada en un registro de auditoría, haga clic en **más información**.
@@ -171,7 +171,7 @@ Las acciones realizadas por un ingeniero de Microsoft después de que se aprueba
 | Dirección IP | La dirección IP del equipo que utilizó el ingeniero de Microsoft. |
 | Usuario       | Operador de Microsoft; Este valor indica que este registro está relacionado con una solicitud de caja de caja del cliente.                                  |
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
-| Item       | \<está\>                                             |
+| Elemento       | \<está\>                                             |
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

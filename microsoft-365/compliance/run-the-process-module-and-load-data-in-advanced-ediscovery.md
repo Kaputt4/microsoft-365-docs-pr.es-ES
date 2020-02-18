@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Obtenga información sobre cómo usar el centro de &amp; seguridad y cumplimiento de Office 365 para obtener acceso a eDiscovery avanzado de Office 365 y ejecutar el módulo de proceso para un caso.  '
-ms.openlocfilehash: e99071246e6c63292bf3ca1fbca0a0fd25eab5a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601597"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081537"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Ejecutar el módulo de proceso y cargar datos en eDiscovery avanzado de Office 365
 
@@ -49,7 +49,7 @@ Realice los siguientes pasos para ejecutar el proceso.
     
 4. En **preparar** \> el **proceso** \> de **instalación**, seleccione un contenedor de la lista de contenedores disponibles.
     
-    ![Haga clic en proceso para agregar los resultados de la búsqueda al caso](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![Haga clic en proceso para agregar los resultados de la búsqueda al caso](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
 5. Haga clic en **Configuración avanzada...** si desea agregar el contenedor como archivos semilla o como archivos etiquetados previamente. 
     
@@ -57,7 +57,7 @@ Realice los siguientes pasos para ejecutar el proceso.
     
     Use archivos etiquetados previamente para automatizar el entrenamiento de relevancia. Debe etiquetar al menos 1.500 archivos y mantener la proporción de archivos relevantes y no relevantes del mismo modo que en la colección agregada a relevancia. Estos archivos se deben etiquetar manualmente y debe estar seguro de la calidad de etiquetado.
     
-    ![Captura de pantalla de la página Configuración avanzada para procesar archivos por lotes](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![Captura de pantalla de la página Configuración avanzada para procesar archivos por lotes](../media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - En la sección **SEED** : 
     
