@@ -1,5 +1,7 @@
 ---
 title: Criterios de salida de infraestructura de protección de información
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Examine los criterios para la infraestructura y los servicios basados en la protección de información a fin de asegurarse de que su configuración cumple los requisitos de Microsoft 365 Enterprise.
-ms.openlocfilehash: f4896baeb4c18fc1eabac10b15f3ad8e150ab260
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 28eff02ea870dcfca7e2e32580ed6a3a9e8a9484
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370137"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067117"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Criterios de salida de infraestructura de protección de información
 
-![Fase 6: Protección de la información](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: Protección de la información](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Asegúrese de que su infraestructura de protección de información cumpla los siguientes criterios necesarios y que ha considerado aquellos que son opcionales.
 

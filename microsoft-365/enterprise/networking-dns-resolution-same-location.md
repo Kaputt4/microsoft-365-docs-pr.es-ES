@@ -1,5 +1,7 @@
 ---
 title: 'Paso 2: Configurar conexiones a Internet locales para cada oficina'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda y configure su resolución DNS para mejorar el rendimiento.
-ms.openlocfilehash: b47131b9a5f854c630f5d54bd4d3b4738ed953b3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370307"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066675"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>Paso 2: Configurar conexiones a Internet locales para cada oficina
 
 *Este paso es obligatorio y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
-![Fase 1-Red](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1-Red](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 En el paso 2, se asegura de que todas las oficinas tienen conexión local a Internet y usan servidores DNS locales. Estos dos elementos son necesarios para reducir la latencia de la conexión y asegurarse de que los equipos cliente locales establecen conexiones con el punto de entrada más próximo a los servicios basados en la nube de Microsoft 365.
 
@@ -32,13 +34,13 @@ En las redes tradicionales para grandes organizaciones, el tráfico de Internet 
 
 La Red Global de Microsoft incluye una infraestructura de *Servicio Front End Distribuido*, un perímetro de red altamente disponible y escalable con ubicaciones geográficas. Termina las conexiones de usuario final en un servidor front-end y enruta eficazmente el tráfico de usuario final en la Red Global de Microsoft.
 
-![La Red Global de Microsoft](./media/networking-dns-resolution-same-location/microsoft-global-network.png)
+![La Red Global de Microsoft](../media/networking-dns-resolution-same-location/microsoft-global-network.png)
 
 Para obtener el mejor rendimiento, los clientes locales deben acceder a un servidor front-end que esté geográficamente más próximo a ellos, en lugar de enviar el tráfico a través de una red troncal al servidor front-end más próximo a la conexión de Internet central de la organización.
 
 He aquí un ejemplo.
 
-![Ejemplo de uso de la Red Global de Microsoft](./media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
+![Ejemplo de uso de la Red Global de Microsoft](../media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
 
 Cuando un usuario de la sucursal de París desea tener acceso a un sitio de SharePoint Online:
 
@@ -61,4 +63,4 @@ Como punto de control provisional, puede ver los [criterios de salida](networkin
 
 |||
 |:-------|:-----|
-|![Paso 3](./media/stepnumbers/Step3.png)|[Evitar las redirecciones de red](networking-avoid-network-hairpins.md)|
+|![Paso 3](../media/stepnumbers/Step3.png)|[Evitar las redirecciones de red](networking-avoid-network-hairpins.md)|

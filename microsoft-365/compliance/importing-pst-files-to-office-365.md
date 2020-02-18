@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Para administradores: infórmese sobre cómo usar el servicio de importación del Centro de seguridad y cumplimiento para importar grandes masas de datos de correo electrónico (archivos PST) a buzones de usuario de Exchange Online. Este tema contiene una sección de Preguntas frecuentes y explica cómo funciona el proceso de importación de PST.'
-ms.openlocfilehash: eb916ef3f06cc8d58c962b5b05ea4524e9469e4b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82e1ccc41d2df5986b54054d8fb98350608c642e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600677"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072977"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Información general sobre la importación de archivos PST de su organización a Office 365
 
@@ -32,9 +32,9 @@ ms.locfileid: "41600677"
 
 Puede usar el servicio de importación del Centro de seguridad y cumplimiento para importar grandes cantidades de archivos PST rápidamente a buzones de Exchange online a su organización de Office 365. Hay dos formas de importar archivos PST a Office 365:
 
-- **Carga en la red** ![Carga en la nube](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png): cargue los archivos PST a través de la red en una ubicación temporal de Azure Storage en la nube de Microsoft. Después, use el servicio de importación de Office 365 para importar los datos PST a los buzones de su organización de Office 365. 
+- **Carga en la red** ![Carga en la nube](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png): cargue los archivos PST a través de la red en una ubicación temporal de Azure Storage en la nube de Microsoft. Después, use el servicio de importación de Office 365 para importar los datos PST a los buzones de su organización de Office 365. 
 
-- **Envío de unidad** ![Disco duro](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png): Copie los archivos PST a un disco duro cifrado por BitLocker y envíe físicamente la unidad a Microsoft. Cuando Microsoft reciba la unidad de disco duro, el personal del centro de datos cargará los datos a una ubicación temporal de Azure Storage en la nube de Microsoft. Después, use el servicio de importación de Office 365 para importar los datos a los buzones de su organización de Office 365.
+- **Envío de unidad** ![Disco duro](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png): Copie los archivos PST a un disco duro cifrado por BitLocker y envíe físicamente la unidad a Microsoft. Cuando Microsoft reciba la unidad de disco duro, el personal del centro de datos cargará los datos a una ubicación temporal de Azure Storage en la nube de Microsoft. Después, use el servicio de importación de Office 365 para importar los datos a los buzones de su organización de Office 365.
 
 ## <a name="step-by-step-instructions"></a>Instrucciones detalladas
   
@@ -48,7 +48,7 @@ Consulte uno de los siguientes temas con instrucciones paso a paso para importar
 
 A continuación, le presentamos una ilustración y una descripción del proceso completo de importación de PST. La ilustración muestra el flujo de trabajo principal y resalta las diferencias entre la carga por red y los métodos de envío de unidades.
   
-![Flujo de trabajo del proceso de importación de PST](media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
+![Flujo de trabajo del proceso de importación de PST](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
   
 1. **Descargar las herramientas de importación de PST y la clave de la ubicación privada de Azure Storage**: el primer paso es descargar la herramienta y la clave de acceso utilizadas para cargar los archivos PST o copiarlos en una unidad de disco duro. Puede obtenerlas en la página **Importar** en el Centro de seguridad y cumplimiento. La clave le ofrece (a usted o al personal del centro de datos de Microsoft en el caso de envío de unidades) los permisos necesarios para cargar los archivos PST a una ubicación privada y segura de Azure Storage. Esta clave de acceso es exclusiva para su organización y le ayuda a evitar el acceso no autorizado a archivos PST tras su carga en la nube de Microsoft. Tenga en cuenta que para importar archivos PST a Office 365 su organización no necesita una suscripción a Azure separada. 
     

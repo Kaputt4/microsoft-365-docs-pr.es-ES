@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 5ef03851064104df6dcb00ac853bf7dff65cbfd3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e18db2e5c180bd896e82d98506e8a65831550bce
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596437"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073247"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>RGPD para servidores locales de Office
 
@@ -40,7 +40,7 @@ Antes de realizar cualquier trabajo con los datos locales, consulte con sus equi
 
 La siguiente ilustración enumera las capacidades recomendadas que se deben usar en cada una de estas cargas de trabajo para descubrir, clasificar, proteger y vigilar los datos personales. Consulte los artículos de esta sección para obtener más información.
 
-![](media/gdpr-for-office-servers-image1.png)
+![](../media/gdpr-for-office-servers-image1.png)
 
 ## <a name="illustration-description"></a>Descripción de la ilustración
 

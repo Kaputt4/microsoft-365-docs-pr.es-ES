@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 89ddb00045e2a17821ef2e841ad9a9b4c38d2219
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c5b79c29c6946ae66e53073189376e858e3d978b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596467"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073317"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>Conjunto de herramientas de migración de FastTrack para cursar solicitudes de eliminación
 
@@ -49,9 +49,9 @@ Microsoft admite la versión inicial de este conjunto de herramientas en la plat
 
 Este conjunto de herramientas está disponible en la Galería de PowerShell de la aplicación de consola de PowerShell. Para encontrar y cargar este módulo de cmdlet, abra primero PowerShell en el modo de administrador para, así, contar con los permisos adecuados para instalar el módulo. Si no ha usado PowerShell anteriormente, vaya a la barra de tareas de Windows y, en el cuadro de búsqueda, escriba "PowerShell". Seleccione la aplicación de consola haciendo clic con el botón derecho, elija **Ejecutar como administrador** y haga clic en **Sí** para ejecutar Windows PowerShell.
 
-![PowerShell: ejecutar como administrador](media/fasttrack-powershell_image.png)
+![PowerShell: ejecutar como administrador](../media/fasttrack-powershell_image.png)
 
-![PowerShell: permitir que la aplicación haga cambios](media/fasttrack-run-powershell_image.png)
+![PowerShell: permitir que la aplicación haga cambios](../media/fasttrack-run-powershell_image.png)
 
 Con la consola ya abierta, hay que configurar los permisos que permitan ejecutar scripts. Para ello, escriba el siguiente comando: "Set-ExecutionPolicy – ExecutionPolicy: Bypass – Scope: Process".
 
@@ -59,7 +59,7 @@ Se le pedirá que confirme esta acción, dado que el administrador puede cambiar
 
 ***Definir la directiva de ejecución***
 
-![Cambio de establecimiento de la directiva de ejecución en PowerShell](media/powershell-set-execution-policy_image.png)
+![Cambio de establecimiento de la directiva de ejecución en PowerShell](../media/powershell-set-execution-policy_image.png)
 
 Ahora que la consola está configurada para permitir la ejecución de scripts, ejecute el siguiente comando para instalar el módulo:
 

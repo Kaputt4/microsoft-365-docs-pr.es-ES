@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use la herramienta de búsqueda de contenido del centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en los buzones, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype Empresarial. Puede restringir los resultados de la búsqueda mediante palabras clave y condiciones de búsqueda. Después, puede consultar una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para encontrar información relacionada con la solicitud del interesado del RGPD.
-ms.openlocfilehash: 8de78da9328d7f8c0a76edab5703821bdb0e6099
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9fdf5359538209d0793211632979fae1b332d13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595727"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078479"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido de Office 365
 
@@ -52,9 +52,9 @@ Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vi
     
 2. Haga clic en **Buscar** \> **Búsqueda de contenido**.
     
-3. En la página **Buscar**, haga clic en la flecha junto al ![icono Agregar](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nueva búsqueda**. 
+3. En la página **Buscar**, haga clic en la flecha junto al ![icono Agregar](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nueva búsqueda**. 
     
-    ![La nueva lista desplegable de búsqueda](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+    ![La nueva lista desplegable de búsqueda](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     Puede elegir una de las opciones siguientes:
     
@@ -70,7 +70,7 @@ Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vi
     
 5. En **Consulta de búsqueda**, especifique las siguientes opciones:
     
-    ![Indique las palabras clave, condiciones y ubicaciones a buscar](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![Indique las palabras clave, condiciones y ubicaciones a buscar](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
    - **Palabras clave para buscar:** escriba una consulta de búsqueda en el cuadro **Palabras clave**. Puede especificar palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. También puede usar consultas más complejas con operadores booleanos como **Y**, **O**, **NOT** y **NEAR**. Además, puede buscar información confidencial (como los números de la seguridad social) en documentos o buscar en documentos que se han compartido de forma externa. Si deja el cuadro de la palabra clave en blanco, todo el contenido en las ubicaciones especificadas se incluye en los resultados de la búsqueda.
     
@@ -89,7 +89,7 @@ Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vi
     
       - **Ubicaciones específicas:** Utilice esta opción para buscar contenido de ubicaciones específicas. Puede buscar contenido en todas las ubicaciones de un servicio específico de Office 365 (por ejemplo, buscar en todos los buzones de Exchange o en todos los sitios de SharePoint) o puede buscar contenido en ubicaciones específicas de cualquiera de los servicios de Office 365 que se muestran. 
     
-        ![Interfaz de usuario para elegir ubicaciones de contenido en las que buscar](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![Interfaz de usuario para elegir ubicaciones de contenido en las que buscar](../media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
          También puede agregar grupos de distribución a la lista de buzones de Exchange en los que desea buscar. En los grupos de distribución, se busca en los buzones de los miembros del grupo. No se admiten grupos de distribución dinámicos.
     
@@ -106,13 +106,13 @@ Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vi
     
 Para acceder nuevamente a esta búsqueda de contenido o para ver otras búsquedas de contenido en la página **Búsqueda de contenido**, seleccione la búsqueda y, a continuación, haga clic en **Abrir**. 
   
-Para borrar los resultados o crear otra búsqueda, haga clic en ![Agregar icono](media/O365-MDM-CreatePolicy-AddIcon.gif) **Nueva búsqueda**. 
+Para borrar los resultados o crear otra búsqueda, haga clic en ![Agregar icono](../media/O365-MDM-CreatePolicy-AddIcon.gif) **Nueva búsqueda**. 
   
 ## <a name="preview-search-results"></a>Vista previa de los resultados de búsqueda
 
 Hay dos opciones de configuración para obtener una vista previa de los resultados de búsqueda. Después de ejecutar una búsqueda nueva o abrir una existente, haga clic en **Resultados individuales** para ver la siguiente configuración de vista previa: 
   
-![Opciones de vista previa de los resultados de búsqueda](media/83519477-1c85-4442-8886-481f186fd758.png)
+![Opciones de vista previa de los resultados de búsqueda](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
 1. **Vista previa de resultados automáticamente**: muestra los resultados de la búsqueda después de ejecutarla.
     
@@ -157,7 +157,7 @@ Exportar resultados de búsqueda:
   
 1. En la página **Búsqueda de contenido**, haga clic en la búsqueda cuyos resultados quiere exportar. 
     
-2. En la página flotante, haga clic en el ![icono Exportar resultados de búsqueda](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Más** y después, haga clic, en **Exportar resultados**. También puede exportar un informe de resultados de búsqueda.
+2. En la página flotante, haga clic en el ![icono Exportar resultados de búsqueda](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Más** y después, haga clic, en **Exportar resultados**. También puede exportar un informe de resultados de búsqueda.
     
 3. Complete las secciones de la página flotante **Exportar resultados**. Asegúrese de usar la barra de desplazamiento para ver todas las opciones de exportación. 
     
@@ -217,21 +217,21 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
     
     **Incorrecto:**
     
-    ![La forma incorrecta de dar formato a una lista de palabras clave (pegar la lista en el cuadro de palabras clave)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![La forma incorrecta de dar formato a una lista de palabras clave (pegar la lista en el cuadro de palabras clave)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
     **Correcto:**
     
-    ![La forma correcta de dar formato a una lista de palabras clave (seleccionar la casilla y, después, pegar la lista)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![La forma correcta de dar formato a una lista de palabras clave (seleccionar la casilla y, después, pegar la lista)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
 - También puede crear una lista de palabras clave o frases clave en un archivo de Excel o en un archivo de texto sin formato y, después, pegarla en la lista de palabras clave. Para hacerlo, seleccione la casilla **Mostrar lista de palabras clave**. Después, haga clic en la primera fila de la lista de palabras clave y pegue la lista. Cada línea del archivo de texto o Excel se pegará en la línea correspondiente de la lista de palabras clave. 
     
 - Después de crear la consulta con la lista de palabras clave, es recomendable comprobar la sintaxis de la consulta para asegurarse de que es lo que desea buscar. En la consulta de búsqueda, que puede ver debajo de **Consulta** en el panel de detalles, las palabras clave quedan separadas por **(c:s)**. Esto significa que están conectadas por un operador lógico similar al operador **O**. Del mismo modo, si la consulta de búsqueda incluye condiciones, las palabras clave aparecen separadas de las condiciones por **(c:c)**. Esto significa que están conectadas a las condiciones por un operador lógico similar a **Y**. Este ejemplo muestra una consulta de búsqueda (situada en el panel de detalles) obtenida al usar la lista de palabras clave con una condición. 
     
-    ![Ejemplo de consulta creada utilizando la lista de palabras clave y una condición](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Ejemplo de consulta creada utilizando la lista de palabras clave y una condición](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
 - Cuando ejecuta una búsqueda de contenido, Office 365 comprueba automáticamente la búsqueda para verificar que no haya caracteres no admitidos ni operadores booleanos en minúsculas. Los caracteres no admitidos suelen estar ocultos y pueden provocar un error de búsqueda o devolver resultados no deseados. Para obtener más información acerca de la verificación de caracteres no compatibles, vea [Comprobar si hay errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md).
     
-- Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccionar el código cultural del idioma y país relevantes para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa. 
+- Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccionar el código cultural del idioma y país relevantes para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa. 
   
 ### <a name="searching-onedrive-accounts"></a>Buscar en cuentas de OneDrive
 
@@ -299,17 +299,17 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y Grupos de 
 
   En los resultados de búsqueda, los resúmenes de reunión se identifican como **Reunión** en el **campo Tipo** y los resúmenes de llamadas se identifican como **Llamada**. Asimismo, las conversaciones que forman parte de un canal de Teams y los chats de Teams (conocidos como 1xN) se identifican como **Mensajería instantánea** en el campo **Tipo**.
   
-  ![Las reuniones de Teams, las llamadas y los chats 1xN se identifican en el campo Tipo](media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Las reuniones de Teams, las llamadas y los chats 1xN se identifican en el campo Tipo](../media/O365-ContentSearch-Teams-MessageKind.png)
 
 - Puede usar la propiedad de correo **Tipo** o la condición de búsqueda **Tipo de mensaje** para buscar contenido en Teams de forma más específica. 
   
   - Para usar la propiedad **Tipo** como parte de la consulta de búsqueda de palabras clave, escriba `kind:microsoftteams` en el cuadro de **palabras clave** de una consulta de búsqueda.
 
-    ![Escriba kind:microsoftteams en el cuadro de palabras clave](media/O365-ContentSearch-Teams-Keywords.png)
+    ![Escriba kind:microsoftteams en el cuadro de palabras clave](../media/O365-ContentSearch-Teams-Keywords.png)
   
   - Para usar una condición de búsqueda, agregue la condición de **Tipo de mensaje** y use el valor `microsoftteams`. 
 
-    ![Use la condición de tipo de mensaje con el valor microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![Use la condición de tipo de mensaje con el valor microsoftteams.](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 Tenga en cuenta que las condiciones están conectadas de forma lógica a la consulta de palabra clave por el operador **Y**. Esto significa que un elemento tiene que coincidir con la consulta de la palabra clave y con la condición de búsqueda para que aparezca en los resultados de la búsqueda. Para obtener más información, vea la sección de «Guías para utilizar condiciones» en [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
@@ -326,15 +326,15 @@ Para buscar elementos de conversación específicos en los Grupos Yammer puede u
   
     Por ejemplo, puede usar la siguiente consulta de búsqueda para devolver mensajes de Yammer y elementos de elogio de Yammer:
 
-    ![Utilice la propiedad ItemClass para buscar elementos de Yammer](media/YammerContentSearch1.png)
+    ![Utilice la propiedad ItemClass para buscar elementos de Yammer](../media/YammerContentSearch1.png)
   
   - Como alternativa, puede utilizar la condición de **Escribir** el correo electrónico y seleccionar los **mensajes Yammer** para devolver los elementos Yammer. Por ejemplo, la siguiente consulta de búsqueda devolverá todos los elementos de conversación de Yammer que contengan la palabra clave "confidencial". 
 
-    ![Utilice la tarjeta de condición de tipo para buscar elementos de conversación de Yammer](media/YammerContentSearch2.png)
+    ![Utilice la tarjeta de condición de tipo para buscar elementos de conversación de Yammer](../media/YammerContentSearch2.png)
 
 ### <a name="searching-inactive-mailboxes"></a>Buscar en buzones inactivos
 
-Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **gobernanza de la información** \> **Retención** en el centro de cumplimiento de seguridad y, a continuación, haga clic en **Más**![](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>** de la barra de navegación los buzones inactivos**.
+Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **gobernanza de la información** \> **Retención** en el centro de cumplimiento de seguridad y, a continuación, haga clic en **Más**![](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>** de la barra de navegación los buzones inactivos**.
   
 A continuación, se detallan algunos aspectos que se deben tener en cuenta al buscar buzones inactivos:
 

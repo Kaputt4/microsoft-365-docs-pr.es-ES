@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información general sobre la protección de la información de Office 365 para GDPR. Obtenga información acerca de cómo descubrir, clasificar, proteger y supervisar datos personales.
-ms.openlocfilehash: 079ff7b7dab099f289bbd0366bba00d5ecf55b80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597867"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071186"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Información general de Information Protection de Office 365 para RGPD
 
@@ -47,7 +47,7 @@ El primer paso para el cumplimiento de RGPD es evaluar si el RGPD se aplica a su
 
 La puntuación de cumplimiento ofrece herramientas para realizar un seguimiento de los controles de auditoría, implementarlos y administrarlos para que su organización cumpla el cumplimiento con varios estándares, incluido GDPR.
 
-![Usar puntuaciones de cumplimiento y administrador de cumplimiento para ver los requisitos y realizar un seguimiento del progreso](Media/Overview-image1.png)
+![Usar puntuaciones de cumplimiento y administrador de cumplimiento para ver los requisitos y realizar un seguimiento del progreso](../media/Overview-image1.png)
 
 Para obtener más información, consulte [Calificación de Conformidad](compliance-score.md).
 
@@ -59,7 +59,7 @@ Descubra los datos personales en su entorno sujetos a la RGPD. Use la Búsqueda 
 
 - Optimizar los tipos de datos confidenciales y otras consultas para encontrar todos los datos personales en su entorno.
 
-![Usar la Búsqueda de contenido y los tipos de información confidencial para buscar datos personales](Media/Overview-image2.png)
+![Usar la Búsqueda de contenido y los tipos de información confidencial para buscar datos personales](../media/Overview-image2.png)
 
 Los tipos de información confidencial definen cómo el proceso automatizado reconoce tipos específicos de información como números de tarjeta de crédito y números de estado del servicio. Este artículo contiene un conjunto que puede usar como punto de partida. Pronto habrá muchos más tipos de información confidencial datos personales en los países de la UE.
 
@@ -69,7 +69,7 @@ Para obtener más información, consulte [Buscar y encontrar datos personales](s
 
 Algunas de las funciones que se usan para la protección de información en Office 365 también pueden usarse para proteger datos confidenciales de otras aplicaciones SaaS.
 
-![Clasificar, proteger y vigilar datos personales](Media/Overview-image3.png)
+![Clasificar, proteger y vigilar datos personales](../media/Overview-image3.png)
 
 Esta ilustración se describe con el resto en esta sección (los pasos 3 a 5).
 
