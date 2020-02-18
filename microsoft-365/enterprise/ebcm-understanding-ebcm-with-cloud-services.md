@@ -1,6 +1,8 @@
 ---
 title: Información general sobre la administración de continuidad empresarial de Enterprise con servicios en la nube
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender cómo la planificación y la implementación de la continuidad empresarial son diferentes cuando los servicios en la nube forman parte de la oferta de TI.
-ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: ced840852aeef9949d005e431125ad2d659cba33
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831841"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597007"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Administración de continuidad empresarial de Enterprise (EBCM) con servicios en la nube
 

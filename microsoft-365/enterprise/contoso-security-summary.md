@@ -1,6 +1,8 @@
 ---
 title: Resumen de seguridad de Microsoft 365 Enterprise para Contoso Corporation
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/02/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo usa Contoso las características de seguridad de Microsoft 365 Enterprise.
-ms.openlocfilehash: fd3f73919a113389e9d423dbed11cf0074fb5833
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 036c812e645399e00af270e62d057637867595fe
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802065"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597097"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Resumen de seguridad de Microsoft 365 Enterprise para Contoso Corporation
 
