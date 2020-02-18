@@ -1,5 +1,7 @@
 ---
 title: 'Paso 6: Implementación del sistema operativo y actualizaciones de características'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre las opciones de implementación del sistema operativo y actualizaciones de características.
-ms.openlocfilehash: 7da7c9ade2be43e8c60726bafd69cc7939b7bddc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112684"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085245"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Paso 6: Implementación del sistema operativo y actualizaciones de características
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
 <td><p><strong>Paso 6: Implementación del sistema operativo y actualizaciones de características</strong></p>
 <p>La implementación basada en secuencias de tareas se usa para automatizar la implementación por fases a gran escala de instalaciones completas, la restauración del equipo y la sustitución del equipo. Las secuencias de tareas de actualización también le ayudarán a estar al día con actualizaciones semestrales principales. Y Windows Autopilot es una incorporación reciente que moderniza el proceso de adquisición de nuevos equipos.</p></td>
-<td><a href="https://aka.ms/ddev6" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev6" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -81,7 +83,7 @@ En la actualización local se usa el programa de instalación de Windows. El mot
 
 [Validación previa a la actualización de Windows 10 con setup.exe](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/)
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-3.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-3.png)
 
 El escenario de actualización local se puede usar para migrar a Windows 10 desde versiones heredadas de Windows, así como para actualizar desde versiones anteriores de Windows 10. Cuando el programa de instalación de Windows complete la actualización, se puede seguir ejecutando la secuencia de tareas y actualizar aplicaciones como Office, reemplazar controladores y aplicar configuraciones personalizadas. Del mismo modo, la secuencia de tareas Actualizar se puede usar para realizar tareas previas a la instalación o comprobaciones antes de llevar a cabo la actualización.
 
@@ -93,7 +95,7 @@ El escenario de actualización local se puede usar para migrar a Windows 10 desd
 
 Mientras planea la implementación, tendrá que seleccionar como destino los equipos para las rutas de implementación sin sistema operativo, actualización y reemplazo. En este caso, el enfoque recomendado es usar una implementación por fases para colecciones de equipos similares. De esta forma, puede validar la compatibilidad, la entrega y automatización, la aceptación del usuario, el consumo de ancho de banda y otros factores antes de aumentar la escala de la implementación.
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
 ### <a name="recommended-tools-microsoft-endpoint-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Herramientas recomendadas: Microsoft Endpoint Configuration Manager (rama actual) y Microsoft Deployment Toolkit
 
@@ -103,7 +105,7 @@ Con independencia del tipo de implementación elegido, deberá asegurarse de que
 
   - Otra opción de implementación conocida y gratuita es **[Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT), que normalmente se usa en organizaciones de pequeño y mediano tamaño para la implementación de sistema operativo. Apenas requiere infraestructura. MDT se integra con Servicios de implementación de Windows (WDS) para el arranque de red. Admite los cuatro tipos de implementación, así como la instalación de aplicaciones, controladores y configuración. Y por supuesto, incluso se pueden integrar con Configuration Manager.
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 

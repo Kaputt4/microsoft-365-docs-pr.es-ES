@@ -1,5 +1,7 @@
 ---
 title: 'Paso 3: Entrega de aplicaciones de Office y de LOB'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo entregar aplicaciones de Office y de LOB.
-ms.openlocfilehash: a4bc1a765edf6938ad37d91d8bf94950b6672bfe
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112602"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085358"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Paso 3: Entrega de aplicaciones de Office y de LOB
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>Paso 3: Entrega de aplicaciones de Office y de LOB</strong></p>
 <p>Asegúrese de que las aplicaciones están empaquetadas y listas para la instalación automática. Obtenga información sobre cómo el empaquetado Hacer clic y ejecutar con Office 365 ProPlus ofrece opciones nuevas para configurar, entregar y mantener actualizadas las aplicaciones de Office.</p></td>
-<td><a href="https://aka.ms/ddev3" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -51,13 +53,13 @@ Para las aplicaciones de línea de negocio, es probable que use paquetes basados
 
 Las herramientas de implementación de software como Microsoft Endpoint Configuration Manager y Microsoft Intune también están optimizadas para la entrega de aplicaciones empaquetadas como MSI. Después de validar las aplicaciones en Windows 10, puede usar Microsoft Endpoint Configuration Manager (rama actual) para la entrega. Si usa el Portal de empresa de Microsoft Intune, puede ampliar la selección de aplicaciones autorizadas por TI disponibles para la organización con el fin de incluir las más recientes y que los usuarios seleccionen ellos mismos las que necesitan.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
 
 ## <a name="pc-imaging"></a>Creación de imágenes de equipo
 
 Otro método popular de entrega de aplicaciones es la creación de imágenes del equipo. En este caso, las aplicaciones se instalan mediante una secuencia de tareas o de forma manual en un equipo de ejemplo, después se captura una imagen del sistema con las aplicaciones necesarias preinstaladas. El enfoque de creación de imágenes para compilar y capturar ahorrará tiempo cuando aprovisione nuevos equipos, pero recuerde que los sistemas operativos y las aplicaciones dentro de la imagen pueden quedarse obsoletos rápidamente. El modelo de actualización acumulativa en Windows 10 y Office 365 ProPlus ayuda con este problema, pero no lo elimina por completo. Por eso, se recomienda un enfoque de imagen ligera, en el que las aplicaciones se instalan desde fuera de la imagen en el momento de la implementación.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
 Si quiere incluir Office 365 ProPlus en la imagen, recuerde que se usa una activación basada en el usuario; el administrador del sistema no lo puede activar previamente. Use la herramienta de implementación de Office antes de preinstalar Office en el dispositivo del que se va a crear la imagen y omita el inicio de sesión del usuario. Cuando esté implementada la imagen los usuarios finales podrán iniciar sesión con sus credenciales de Office 365 y activar Office 365 ProPlus.
 
@@ -73,11 +75,11 @@ Los programas que se envíen a través de Hacer clic y ejecutar se ejecutan en u
 
 Microsoft recomienda usar la [Herramienta de personalización de Office](https://config.office.com/) para personalizar la configuración de implementación y crear el archivo XML de configuración. Mediante la Herramienta de personalización de Office puede establecer los idiomas y las aplicaciones que se instalarán, cómo se actualizarán las aplicaciones, la configuración de la aplicación y la configuración de la experiencia de instalación.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
 Si usa Configuration Manager, puede seguir usándolo para la implementación general de Office 365 ProPlus. Configuration Manager (rama actual) tiene compatibilidad nativa con la Herramienta de personalización de Office actualizada, la personalización de paquetes para hacer clic y ejecutar en tiempo de instalación y la compatibilidad nativa para la administración de actualizaciones de software después de la instalación.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
 [Guía de implementación de Office 365 ProPlus](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 

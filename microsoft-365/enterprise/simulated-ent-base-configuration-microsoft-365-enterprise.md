@@ -1,5 +1,7 @@
 ---
 title: Configuración básica empresarial simulada para Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilice esta guía de laboratorio de pruebas para crear un entorno de prueba empresarial simulado para Microsoft 365 Enterprise.
-ms.openlocfilehash: d279ea4eaea1e167b18f48db3c7484885ed48fea
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 66d62677843843476baffac3f295e41eda71be69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831703"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084145"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>La configuración básica empresarial simulada
 
@@ -31,14 +33,14 @@ En este artículo se ofrecen instrucciones paso a paso para crear un entorno sim
 - Una suscripción de prueba o de pago de Microsoft 365 E5.
 - Una intranet de organización simplificada conectada a Internet, que consta de tres máquinas virtuales en una red virtual de Azure (DC1, APP1 y CLIENTE1).
  
-![La configuración básica empresarial simulada](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![La configuración básica empresarial simulada](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 Puede usar el entorno resultante para probar las características y funcionalidades de [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise), con [guías de laboratorio de pruebas](m365-enterprise-test-lab-guides.md) adicionales o por su cuenta.
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Fase 1: Crear una intranet simulada
 
@@ -63,7 +65,7 @@ Después de leer las instrucciones, haga clic en **Implementar en Azure** en la 
 
 Esta la configuración una vez completada la plantilla.
 
-![Una intranet simulada en servicios de infraestructura de Azure](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Una intranet simulada en servicios de infraestructura de Azure](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ### <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>Método 2: Crear la intranet simulada con Azure PowerShell
 
@@ -230,7 +232,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Esta es su configuración actual.
   
-![Paso 1 de la configuración básica empresarial simulada](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![Paso 1 de la configuración básica empresarial simulada](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
 #### <a name="step-2-configure-app1"></a>Paso 2: Configurar APP1
 
@@ -285,7 +287,7 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 Esta es su configuración actual.
   
-![Paso 2 de la configuración básica empresarial simulada](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Paso 2 de la configuración básica empresarial simulada](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 #### <a name="step-3-configure-client1"></a>Paso 3: Configurar CLIENT1.
 
@@ -349,7 +351,7 @@ Después, compruebe que tiene acceso a recursos compartidos de archivos y web en
     
 Esta es su configuración actual.
   
-![Paso 3 de la configuración básica empresarial simulada](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Paso 3 de la configuración básica empresarial simulada](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>Fase 2: crear la suscripción a Microsoft 365 E5
@@ -393,7 +395,7 @@ Su entorno de desarrollo y prueba ahora tiene:
     
 Esta es la configuración final.
   
-![Fase 2 de la configuración básica empresarial simulada](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Fase 2 de la configuración básica empresarial simulada](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 Ahora está preparado para experimentar con otras características de [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   

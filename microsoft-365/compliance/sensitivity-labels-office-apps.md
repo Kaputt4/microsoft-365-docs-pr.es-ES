@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, las aplicaciones de Office para dispositivos móviles y las aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069867"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101240"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar las etiquetas de confidencialidad en las aplicaciones de Office
 
-Una vez publicadas las etiquetas de confidencialidad del centro de cumplimiento de Microsoft 365 o del centro de etiquetas equivalente, comienzan a aparecer en las aplicaciones de Office para que los usuarios clasifiquen y protejan los datos cuando se crean o editan.
+Una vez [publicadas](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) las etiquetas de confidencialidad del centro de cumplimiento de Microsoft 365 o del centro de etiquetas equivalente, comienzan a aparecer en las aplicaciones de Office para que los usuarios clasifiquen y protejan los datos cuando se crean o editan.
 
-Use la información de este artículo como ayuda para administrar correctamente las etiquetas de confidencialidad de uso en las aplicaciones de Office. Por ejemplo, las versiones mínimas de las aplicaciones que necesita para admitir etiquetas integradas, interacciones con el cliente de etiquetado Unificado de Azure Information Protection y la compatibilidad con otras aplicaciones y servicios.
+Use la información de este artículo como ayuda para administrar correctamente las etiquetas de confidencialidad en las aplicaciones de Office. Por ejemplo, identifique las versiones mínimas de las aplicaciones que necesita para admitir etiquetas integradas y comprenda las interacciones con el cliente de etiquetado Unificado de Azure Information Protection y la compatibilidad con otras aplicaciones y servicios.
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Requisitos de suscripción y licencia para las etiquetas de confidencialidad
 

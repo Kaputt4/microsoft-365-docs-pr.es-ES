@@ -1,5 +1,7 @@
 ---
 title: Protección de los archivos de los equipos con etiquetas de retención y DLP
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique etiquetas de retención y directivas de prevención de pérdida de datos (DLP) a los archivos de los equipos con distintos niveles de protección de la información.'
-ms.openlocfilehash: 89320a074d5d52062268a7585081849ac42d2025
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 94d8a02d0ea88fa8a05cd6a2c95a2db866d72fad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925882"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083419"
 ---
 # <a name="protect-files-in-teams-with-retention-labels-and-dlp"></a>Protección de los archivos de los equipos con etiquetas de retención y DLP
 
@@ -114,7 +116,7 @@ Siga estos pasos para aplicar las etiquetas de retención a las carpetas de docu
     
 Este es el resultado de la configuración.
   
-![Etiquetas de retención de los cuatro tipos de sitios de SharePoint subyacentes.](../media/retention-labels.png)
+![Etiquetas de retención de los cuatro tipos de sitios de SharePoint subyacentes.](../../media/retention-labels.png)
   
 ## <a name="dlp-policies-for-your-underlying-sharepoint-sites"></a>Directivas DLP de los sitios de SharePoint subyacentes
 
@@ -165,7 +167,7 @@ Siga estos pasos para configurar una directiva DLP que notifique a los usuarios
     
 Esta es la configuración resultante de los equipos confidenciales.
   
-![Directiva DLP de equipos confidenciales que usan la etiqueta de retención confidencial](../media/retention-labels-sensitive-dlp.png)
+![Directiva DLP de equipos confidenciales que usan la etiqueta de retención confidencial](../../media/retention-labels-sensitive-dlp.png)
   
 Después, siga estos pasos para configurar una directiva DLP que bloquee a los usuarios cada vez que compartan un documento en un sitio de SharePoint subyacente fuera de la organización.
   
@@ -211,7 +213,7 @@ Después, siga estos pasos para configurar una directiva DLP que bloquee a los 
     
 Esta es la configuración resultante del equipo extremadamente confidencial.
   
-![Directiva DLP de un equipo de confidencialidad extrema que usa la etiqueta de retención extremadamente confidencial](../media/retention-labels-highly-confidential-dlp.png)
+![Directiva DLP de un equipo de confidencialidad extrema que usa la etiqueta de retención extremadamente confidencial](../../media/retention-labels-highly-confidential-dlp.png)
   
 ## <a name="next-step"></a>Siguiente paso
 
