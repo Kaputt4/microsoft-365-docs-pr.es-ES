@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger su contenido confidencial, a la vez que se asegura de que la productividad y la capacidad de colaboración de su personal no se vea obstaculizada. Puede utilizar etiquetas de confidencialidad para aplicar configuraciones de protección que incluyan el cifrado y las marcas de agua en el contenido etiquetado.
-ms.openlocfilehash: fa04fdc2713cbba090ec56972cd87e6cbdc4387b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Use las etiquetas de confidencial del marco de Microsoft Information Protection para clasificar y proteger los datos de la organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se vean obstaculizadas. Estas etiquetas pueden aplicar la configuración de protección, que incluye marcadores visuales de cifrado como pies de página y marcas de agua.
+ms.openlocfilehash: 92bfb768cf044b6a4837e5dab6936c2d77424a25
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081500"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106833"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
 Para realizar su trabajo, las personas de su organización colaboran con otras tanto dentro como fuera de la organización. Esto significa que el contenido ya no se queda detrás de un firewall, sino que puede desplazarse a todas partes, a través de dispositivos, aplicaciones y servicios. Y cuando se desplaza, usted quiere que lo haga de una forma segura y protegida que cumpla con las directivas empresariales y de cumplimiento de normas de su organización.
 
-Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger los datos de la organización, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios.
+Las etiquetas de confidencial del marco de Microsoft Information Protection le permiten clasificar y proteger los datos de la organización, a la vez que se asegura de que no se obstaculice la productividad de los usuarios y su capacidad de colaboración.
 
 Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en la pestaña **Inicio** de la cinta de opciones. En este ejemplo, la etiqueta aplicada se muestra en la barra de estado:
 
@@ -100,7 +100,11 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     Para obtener más información sobre la configuración de **prevención de pérdida de datos del extremo** al crear o editar una etiqueta de confidencialidad, incluidos los requisitos previos importantes, vea [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
-- **Aplicar la etiqueta automáticamente al contenido que contenga información confidencial.** Puede elegir el tipo de información confidencial que desee etiquetar y la etiqueta se puede aplicar automáticamente o, si lo prefiere, puede pedir a los usuarios que apliquen una etiqueta específica. Si recomienda una etiqueta, el aviso muestra el texto que elija. Por ejemplo:
+- **Proteja el contenido de los contenedores como sitios y grupos** cuando opta por la versión preliminar para [usar etiquetas de confidencial con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md).
+    
+    Las opciones de configuración para **configuración de sitio y de grupo** no se mostrarán hasta que opte por la versión preliminar. Tenga en cuenta que esta configuración de etiqueta no da como resultado que los documentos se etiqueten automáticamente, sino que la configuración de la etiqueta protege el contenido al controlar el acceso al contenedor donde se almacenan los documentos. Esta configuración incluye el nivel de privacidad, si un propietario de un grupo de Office 365 puede agregar invitados al grupo y el nivel de acceso concedido a un dispositivo no administrado.
+
+- **Aplicar la etiqueta automáticamente en aplicaciones de Office o recomendar una etiqueta.** Puede elegir qué tipos de información confidencial quiere etiquetar y la etiqueta se puede aplicar automáticamente, o bien puede solicitar a los usuarios que apliquen la etiqueta que recomiende usar. Si recomienda una etiqueta, el mensaje mostrará el texto que elija. Por ejemplo:
     
     ![Aviso para asignar una etiqueta necesaria](../media/Sensitivity-label-Prompt-for-required-label.png)
     

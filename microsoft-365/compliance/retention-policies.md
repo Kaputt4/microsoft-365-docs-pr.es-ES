@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
-ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
+ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42093449"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106902"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -189,7 +189,7 @@ Puede aplicar fácilmente una directiva de retención a toda la organización, a
   
 ### <a name="org-wide-policy"></a>Directiva para toda la organización
 
-Una de las características más eficaces de una directiva de retención es que de forma predeterminada se aplica a las ubicaciones de Office 365, como:
+Una de las características más eficaces de una directiva de retención es que se puede aplicar a las ubicaciones de Office 365, como:
   
 - Correo electrónico de Exchange
     
@@ -202,7 +202,7 @@ Una de las características más eficaces de una directiva de retención es que 
 - Carpetas públicas de Exchange
     
 
-![Opción Todas las ubicaciones](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![Opción Todas las ubicaciones](../media/retention-policies-all-locations.png)
 
 Otras características importantes de una directiva de retención para toda la organización son:
   
@@ -215,9 +215,7 @@ Otras características importantes de una directiva de retención para toda la o
 Al elegir ubicaciones, puede incluir o excluir fácilmente una ubicación completa, como correo electrónico de Exchange o cuentas de OneDrive. Para ello, active o desactive el **estado** de esa ubicación. 
   
 Al igual que una directiva para toda la organización, si una directiva se aplica a cualquier combinación de ubicaciones completas, no hay ningún límite en el número de buzones o sitios que puede incluir la directiva. Por ejemplo, si la directiva incluye todo el correo electrónico de Exchange y todos los sitios de SharePoint, todos los sitios y buzones se incluirán, sin importar el número. Y en Exchange, todos los buzones que se creen una vez que se aplica la directiva, heredarán automáticamente la directiva.
- 
-![Página Elegir ubicaciones](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
-  
+
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Una directiva con inclusiones o exclusiones específicas
 
 También puede aplicar una directiva de retención a usuarios específicos, grupos de Office 365 o sitios. Para ello, cambie el **estado** de esa ubicación y, después, use los vínculos para incluir o excluir determinados usuarios, grupos de Office 365 o sitios. 
@@ -232,9 +230,11 @@ Aunque existen estos límites, comprenda que puede superarlos si aplica una dire
   
 ### <a name="skype-locations"></a>Ubicaciones de Skype
 
-Al contrario que el correo electrónico de Exchange, no puede cambiar el estado de la ubicación de Skype en para incluir todos los usuarios, pero puede activar dicha ubicación y, a continuación, elegir manualmente los usuarios cuyas conversaciones quiera conservar.
+Al contrario que el correo electrónico de Exchange, no puede cambiar el estado de la ubicación de Skype en para incluir todos los usuarios, pero cuando active dicha ubicación y, elegirá manualmente los usuarios cuyas conversaciones quiera conservar:
+
+![Elegir la ubicación de Skype para las directivas de retención](../media/skype-location-retention-policies.png)
   
-Si elige usuarios de Skype Empresarial, puede incluir rápidamente todos los usuarios seleccionando el cuadro **nombre** en el encabezado de columna. Sin embargo, es importante entender que cada usuario tiene que contar con una inclusión específica en la Directiva. Por lo tanto, si incluye más de 1 000 usuarios, se aplicarán los límites señalados en la sección anterior. Seleccionar aquí todos los usuarios de Skype no es lo mismo que usar una directiva para toda la organización que pudiera incluir todos los usuarios de Skype de forma predeterminada. 
+Cuando seleccione **Elegir usuarios**, puede incluir rápidamente todos los usuarios seleccionando el cuadro **Nombre** en el encabezado de columna. Sin embargo, es importante entender que cada usuario tiene que contar con una inclusión específica en la Directiva. Por lo tanto, si incluye más de 1 000 usuarios, se aplicarán los límites señalados en la sección anterior. Seleccionar aquí todos los usuarios de Skype no es lo mismo que usar una directiva para toda la organización que pudiera incluir todos los usuarios de Skype de forma predeterminada. 
   
 ![Página Elegir usuarios de Skype](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
