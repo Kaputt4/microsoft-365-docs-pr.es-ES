@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre las compras de autoservicio.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: a9e49f5b9b518711f72c9b9a29e690c55acf3861
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b5289f4c9b7ea8c723dab8bf4bf97b83fef5b34c
+ms.sourcegitcommit: 290d95f9ba118336cb136f34313de265b97e869e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080317"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155629"
 ---
 # <a name="self-service-purchase-faq"></a>Preguntas más frecuentes sobre las compras sin asistencia
 
 > [!NOTE]
 > La información de este artículo solo se aplica a las suscripciones de Microsoft Power Platform (Power BI, Power apps y Power Automate).
 
-Las compras de autoservicio ahora están disponibles para la plataforma de alimentación en Estados Unidos, Australia, Canadá y Japón.
+Las compras de autoservicio ahora están disponibles para la plataforma de alimentación en varios países.
 
 ## <a name="general"></a>General
 
@@ -146,3 +146,9 @@ Los usuarios válidos seguirán teniendo uso total de la compra de autoservicio 
 ### <a name="whats-the-role-of-microsofts-partners-in-self-service-purchases"></a>¿Cuál es la función de los socios de Microsoft en las compras sin servicio de asistencia?
 
 Los socios que tienen privilegios de administración delegados pueden ver las compras de autoservicio en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>, igual que un administrador. Los socios pueden ayudar a una organización que quiera centralizar los productos adquiridos a través de las compras de autoservicio. Además, es posible que los socios ofrezcan soluciones para ampliar las capacidades de una compra de servicio sin ayuda.
+
+## <a name="country-availability"></a>Disponibilidad del país
+
+### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>¿En qué países puedo realizar una compra sin servicio?
+
+Las compras de autoservicio están disponibles en los siguientes países: Australia, Canadá, Japón y Estados Unidos.
