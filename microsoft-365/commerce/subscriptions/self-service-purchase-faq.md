@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre las compras de autoservicio.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: b5289f4c9b7ea8c723dab8bf4bf97b83fef5b34c
-ms.sourcegitcommit: 290d95f9ba118336cb136f34313de265b97e869e
+ms.openlocfilehash: b94a09757cf6e7126a6b7cc73ac5cc0930d1ea2e
+ms.sourcegitcommit: 08f9af6cd98e2de4bb634b90f5630e6a66676497
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155629"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42157382"
 ---
 # <a name="self-service-purchase-faq"></a>Preguntas más frecuentes sobre las compras sin asistencia
 
@@ -151,4 +151,4 @@ Los socios que tienen privilegios de administración delegados pueden ver las co
 
 ### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>¿En qué países puedo realizar una compra sin servicio?
 
-Las compras de autoservicio están disponibles en los siguientes países: Australia, Canadá, Japón y Estados Unidos.
+Las compras de autoservicio están disponibles en los siguientes países: Australia, Canadá, Francia, Alemania, Japón, Reino Unido y Estados Unidos.
