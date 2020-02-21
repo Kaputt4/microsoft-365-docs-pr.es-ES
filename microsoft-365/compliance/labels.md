@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 162b9fed66fa3135829f422ccd04a396ddf7e632
-ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
+ms.openlocfilehash: 0675601a888d19e6faaeb75169691909b071b92d
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42093459"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179211"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
 Es posible que su organización disponga de distintos tipos de contenido que haya que usar de manera diferente para cumplir con las normativas del sector y las directivas internas. Por ejemplo:
   
-- Formularios fiscales que sea necesario **conservar** durante un período de tiempo mínimo. 
+- Formularios fiscales que deben **conservarse** durante un período mínimo de tiempo. 
     
-- Materiales de prensa que deban **eliminarse de forma permanente** cuando alcancen una determinada antigüedad. 
+- Materiales de prensa que deben **eliminarse de forma permanente** cuando llegan a una determinada edad. 
     
 - Información sobre la competencia que sea necesario **conservar** y, después, **eliminar de forma permanente**. 
     
@@ -152,8 +152,8 @@ En función de la finalidad de las etiquetas de retención, pueden publicarse en
   
 |**Si la etiqueta de retención es...**|**La directiva de etiquetas se puede aplicar en…**|
 |:-----|:-----|
-|Se publica a los usuarios finales  <br/> |Exchange, SharePoint, OneDrive, Grupos de Office 365  <br/> |
-|Se aplica automáticamente basándose en tipos de información confidencial  <br/> |Exchange (solo todos los buzones), SharePoint, OneDrive  <br/> |
+|Se publica a los usuarios finales  <br/> |Exchange, SharePoint, OneDrive, grupos de Office 365  <br/> |
+|Se aplica automáticamente basándose en los tipos de información confidencial  <br/> |Exchange (solo todos los buzones), SharePoint, OneDrive  <br/> |
 |Se aplica automáticamente basándose en una consulta  <br/> |Exchange, SharePoint, OneDrive, Grupos de Office 365  <br/> |
    
 En Exchange, las etiquetas de aplicación automática (tanto para consultas como para tipos de información confidencial) solo se aplican a mensajes nuevos enviados (datos en tránsito), no a todos los elementos que estén actualmente en el buzón (datos en reposo). Además, las etiquetas de aplicación automática para tipos de información confidencial solo se pueden aplicar a todos los buzones; es decir, no puede seleccionar los buzones específicos.
@@ -178,7 +178,7 @@ Si los usuarios finales asignarán la etiqueta de retención al contenido, puede
   
 - Outlook en la Web
     
-- Outlook 2010 y versiones posteriores
+- Outlook 2010 y versiones posteriores
     
 - OneDrive
     
@@ -340,11 +340,11 @@ Si aplica una etiqueta de retención predeterminada a elementos existentes de un
   
 - Todos los elementos de la biblioteca, la carpeta o el conjunto de documentos reciben automáticamente la misma etiqueta de retención, **excepto** los elementos a los que se les ha aplicado explícitamente una etiqueta de retención (como los registros). Los elementos etiquetados explícitamente mantienen su etiqueta existente. Para obtener más información, vea la sección siguiente sobre [Los principios de la retención, o lo que tiene prioridad](#the-principles-of-retention-or-what-takes-precedence).
     
-- Si cambia o elimina la etiqueta de retención predeterminada de una biblioteca, carpeta o conjunto de documentos, la etiqueta de retención también se cambia o elimina para todos los elementos de la biblioteca, la carpeta o el conjunto de documentos, **excepto** los elementos con etiquetas de retención explícitas (como los registros).
+- Si cambia o elimina la etiqueta de retención predeterminada de una biblioteca, una carpeta o un conjunto de documentos, la etiqueta de retención también se cambia o elimina para todos los elementos de la biblioteca, la carpeta o el conjunto de documentos, **excepto** los elementos con etiquetas de retención explícitas (como los registros).
     
-- Si mueve un elemento con una etiqueta de retención predeterminada de una biblioteca, carpeta o conjunto de documentos a otra biblioteca, carpeta o conjunto de documentos, el elemento mantendrá su etiqueta de retención predeterminada existente, incluso si la nueva ubicación tiene otra etiqueta de retención predeterminada.
+- Si mueve un elemento con una etiqueta de retención predeterminada de una colección de sitios, biblioteca, carpeta o conjunto de documentos a otra colección de sitios, biblioteca, carpeta o conjunto de documentos con una etiqueta distinta, el elemento mantendrá su etiqueta de retención predeterminada existente, incluso si la nueva ubicación tiene otra etiqueta de retención predeterminada. Si el elemento no tiene una etiqueta antes de moverlo, llevará la etiqueta de retención predeterminada de la nueva ubicación.
 
-** Registros: **Si se aplica un sello de registro predeterminado a una biblioteca, carpeta o conjunto de documentos, entonces se aplica un sello de registro a todos los elementos individuales dentro de esas ubicaciones. Cuando mueves un nuevo elemento a un lugar con una etiqueta de registro, ese elemento es etiquetado como un registro. Sin embargo, si cambia la etiqueta de retención predeterminada por una etiqueta que no declare el contenido como registro, esa acción **no** elimina la etiqueta de registro de los elementos individuales; esos elementos conservan su etiqueta de registro. Sólo el administrador de la colección del sitio puede eliminar o cambiar explícitamente la etiqueta de retención de los artículos de registro.
+**Registros:** Si se aplica un sello de registro predeterminado a una biblioteca, una carpeta o un conjunto de documentos, entonces se aplica un sello de registro a todos los elementos individuales dentro de esas ubicaciones. Cuando mueve un nuevo elemento a una ubicación con una etiqueta de registro, ese elemento se etiqueta como registro. Sin embargo, si cambia la etiqueta de retención predeterminada por una etiqueta que no declare el contenido como registro, esa acción **no** elimina la etiqueta de registro de los elementos individuales; esos elementos conservan su etiqueta de registro. Solo el administrador de la colección del sitio puede eliminar o cambiar explícitamente la etiqueta de retención de los artículos de registro.
 
 Para obtener más información sobre las etiquetas de retención que declaran al contenido como registro, vea [Información general de los registros](records.md).
     

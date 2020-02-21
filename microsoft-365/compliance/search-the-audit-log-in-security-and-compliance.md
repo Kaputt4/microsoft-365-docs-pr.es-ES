@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091373"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219191"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -62,6 +62,8 @@ ms.locfileid: "42091373"
 - Actividad de usuario y administrador en Microsoft Power Apps
 
 - Actividad de usuario y administrador en Microsoft Forms
+
+- Actividad de administrador y usuario para las etiquetas de confidencialidad de los sitios que usan SharePoint Online o Microsoft Teams
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -309,7 +311,7 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
 |[Actividades de eDiscovery avanzado](#advanced-ediscovery-activities)|[Actividades de Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Actividades de Microsoft Teams](#microsoft-teams-activities)|[Actividades de Microsoft Teams para Sanidad](#microsoft-teams-healthcare-activities)|[Actividades de Yammer](#yammer-activities)|
 |[ Actividades en Microsoft Power Automate ](#microsoft-power-automate-activities)|[ Actividades en Microsoft Power Apps ](#microsoft-power-apps-activities)|[Actividades de Microsoft Stream](#microsoft-stream-activities)|
-|[Actividades de Microsoft Forms](#microsoft-forms-activities)|[Actividades de administración de Exchange](#exchange-admin-audit-log)|||
+|[Actividades de Microsoft Forms](#microsoft-forms-activities)|[Actividades de la etiqueta de confidencialidad](#sensitivity-label-activities)|[Actividades de administración de Exchange](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>Actividades de páginas y archivos
@@ -330,7 +332,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Archivo eliminado de la papelera de reciclaje|FileDeletedFirstStageRecycleBin|El usuario elimina un archivo de la papelera de reciclaje de un sitio.|
 |Archivo eliminado de la papelera de reciclaje de segundo nivel|FileDeletedSecondStageRecycleBin|El usuario elimina un archivo de la papelera del segundo nivel de la papelera de reciclaje de un sitio.|
 |Política de cumplimiento de etiqueta borrada|ComplianceRecordDelete|Un documento que se clasificó como un registro fue eliminado. Un documento se considera un registro cuando se le aplica una etiqueta de retención que clasifica el contenido como un registro.|
-|Desfase detectado de la sensibilidad del documento |DocumentSensitivityMismatchDetected|El usuario carga un documento clasificado con una etiqueta de sensibilidad que tiene una prioridad mayor que la que se ha aplicado al sitio en el que se carga el documento. <br/><br/> Este evento no se activa si la etiqueta de sensibilidad que se aplica a un sitio tiene una prioridad más alta que la etiqueta de sensibilidad que se ha aplicado a un documento cargado en el sitio. Para obtener más información sobre la prioridad de las etiquetas de confidencialidad, consulte la sección "prioridad de etiqueta" en [Introducción a las etiquetas de confidencialidad](sensitivity-labels.md#label-priority-order-matters).|
+|Desfase detectado de la sensibilidad del documento |DocumentSensitivityMismatchDetected|El usuario carga un documento a un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad inferior al sitio. <br/><br/> Este evento no se activa si la etiqueta de confidencialidad que se aplica a un sitio tiene una prioridad más alta que la etiqueta de confidencialidad que se ha aplicado a un documento cargado en el sitio. Para obtener más información sobre la prioridad de las etiquetas de confidencialidad, vea [prioridad de etiquetas (el orden importa)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware detectado en archivo|FileMalwareDetected|El antivirus de SharePoint detecta el malware en un archivo.|
 |Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) la extracción del repositorio de un archivo. Eso significa que cualquier cambio que haya realizado en el archivo cuando estaba extraído del repositorio se descarta y no se guarda en la versión del documento de la biblioteca de documentos.|
 |Archivo descargado|FileDownloaded|El usuario descarga un documento de un sitio.|
@@ -350,6 +352,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Ver señalado por el cliente|ClientViewSignaled|El cliente de un usuario (como un sitio web o una aplicación móvil) ha señalado que el usuario ha visto la página indicada. Esta actividad a menudo se registra después de un evento de PagePrefetched para una página. <br/><br/>**Nota**: Como el cliente señaliza eventos ClientViewSignaled, en lugar del servidor, es posible que el servidor no pueda registrar el evento y, por lo tanto, puede que no aparezca en el registro de auditoría. También es posible que la información del registro de auditoría no sea confiable. Sin embargo, dado que la identidad del usuario se valida por símbolo usado para crear la señal, la identidad del usuario que aparece en el registro de auditoría correspondiente es precisa. |
 |(ninguno)|PagePrefetched|El cliente de un usuario (como el sitio web o la aplicación móvil) ha solicitado la página indicada para ayudar a mejorar el rendimiento si el usuario lo explora. Este evento se registra para indicar que el contenido de la página se ha puesto para el cliente del usuario. Este evento no es una indicación definitiva de que el usuario ha navegado hasta la página. <br/><br/> Cuando el contenido de la página es emitido por el cliente (de acuerdo con la solicitud del usuario), debe generarse un evento ClientViewSignaled. No todos los clientes son compatibles con la búsqueda previa, y por lo tanto, algunas actividades que se buscan previamente se pueden registrar como eventos PageViewed.|
 ||||
+
 
 ### <a name="folder-activities"></a>Actividades de carpetas
 
@@ -822,6 +825,18 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Respuesta enviada|SubmitResponse|Un usuario envía una respuesta sobre un formulario. <br><br>La propiedad IsInternalForm:boolean indicará si el respondedor está dentro de la misma organización que el propietario del formulario.|
 ||||
 
+### <a name="sensitivity-label-activities"></a>Actividades de la etiqueta de confidencialidad 
+
+En la tabla siguiente se enumeran los eventos que se producen a partir de las tareas de etiquetado para los sitios de SharePoint Online y Teams.
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Etiqueta de confidencialidad aplicada al sitio|SensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un sitio de SharePoint o Teams.|
+|Etiqueta de confidencialidad eliminada del sitio|SensitivityLabelRemoved|Se ha quitado una etiqueta de confidencialidad de un sitio de SharePoint o Teams.|
+|Etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un documento mediante Office en la web.|
+|Se ha cambiado la etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelChanged|Se ha aplicado una etiqueta de confidencialidad diferente a un documento mediante Office en la web.|
+|Etiqueta de confidencialidad eliminada del sitio|FileSensitivityLabelRemoved|Se ha quitado una etiqueta de confidencialidad de un documento mediante Office en la web.|
+
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange
 
 El registro de auditoría de administrador de Exchange (que está habilitado de manera predeterminada en Office 365) registra un evento en el registro de auditoría de Office 365 cuando un administrador (o un usuario al que se le han asignado permisos administrativos) realiza un cambio en su organización de Exchange en línea. Los cambios que se han realizado mediante el Centro de administración de Exchange o mediante la ejecución de un cmdlet en PowerShell en Exchange en línea se registran en el registro de auditoría del administrador de Exchange. Los cmdlets que comienzan con el verbo **conseguir**, ** buscar**o **probar**, no se registran en el registro de auditoría de Office 365. Para obtener más información detallada sobre el registro de auditoría del administrador en Exchange, consulte [Registro de auditoría de administrador](https://go.microsoft.com/fwlink/p/?LinkID=619225).
@@ -848,6 +863,7 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
    Tenga en cuenta que las mismas actividades de administración de Exchange se registran tanto en el registro de auditoría de administración de Exchange como en el registro de auditoría de Office 365.
+
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
