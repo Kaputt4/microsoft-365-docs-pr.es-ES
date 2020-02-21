@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083797"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175713"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Vaya a Centro de actividades para ver las acciones correctivas
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="a-single-pane-of-glass-experience"></a>Una perspectiva centralizada
 
@@ -47,11 +45,6 @@ El equipo de operaciones de seguridad puede trabajar con más eficacia y eficien
 
 ## <a name="remediation-actions"></a>Acciones de corrección
 
-En la tabla siguiente se enumeran las acciones de corrección que se admiten actualmente en el Centro de actividades: 
-
-|Acciones de corrección de puntos de conexión  |Acciones de corrección de correo electrónico  |
-|---------|---------|
-|Poner archivo en cuarentena<br/>Eliminar clave del registro<br/>Terminar proceso <br/>Detener el servicio <br/>Eliminar clave del registro <br/>Deshabilitar controlador <br/>Eliminar tarea programada.      |Eliminar temporalmente mensajes de correo electrónico o clústeres<br/>Bloquear URL (tiempo de clic)<br/>Desactivar el reenvío de correo externo          |
 
 ## <a name="go-to-the-action-center"></a>Vaya al Centro de actividades
 

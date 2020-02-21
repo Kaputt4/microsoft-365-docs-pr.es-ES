@@ -19,19 +19,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 1177f552652e728928a2b1d322b4ce0217415509
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: eef4cfa07fc25a2e7c8732dc89b66ffdbb3e3f7e
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774196"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175693"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo informar de falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ¿Las [capacidades automatizadas de investigación y respuesta](mtp-autoir.md) en Microsoft Threat Protection no se han detectado o no detectan nada correctamente? Hay pasos que puede llevar a cabo para solucionarlo. Puede:
 - [Informar de un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);

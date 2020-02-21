@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085739"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170600"
 ---
 # <a name="battery-insights"></a>Información sobre las baterías
 Esta vista proporciona métricas de uso de energía, batería y aplicaciones para los dispositivos de escritorio administrados por Microsoft. Por estos motivos, una aplicación se considera "en uso" si está en ejecución y en enfoque.
@@ -33,7 +33,7 @@ La tabla proporciona la duración prevista de la batería (en horas), la duraci�
 
 ## <a name="top-energy-consumers"></a>Principales consumidores de energía
 
-En el área de los **principales consumidores de energía** , encontrará las aplicaciones de su entorno que consumen más energía en milliWatt-horas (MWh). Las aplicaciones que se muestran son por dispositivo específico, que se seleccionan en la sección duración de la **batería de previsiones** a la izquierda. Por ejemplo, para ver el consumo por aplicación para los dispositivos de la libreta de direcciones 2 de todos, seleccione esa fila en el área duración de la batería. Si no selecciona ningún modelo, los datos de consumo de la aplicación mostrados son para todas las aplicaciones para las que tenemos datos colectivamente.
+En el área de los **principales consumidores de energía** , encontrará las aplicaciones de su entorno que consumen más energía en milliWatt-horas (MWh). Las aplicaciones que se muestran son por dispositivo específico, que se seleccionan en la sección duración de la **batería de previsiones** a la izquierda. Por ejemplo, para ver el consumo por aplicación para los dispositivos de Microsoft Surface Book 2, seleccione esa fila en el área duración de la batería. Si no selecciona ningún modelo, los datos de consumo de la aplicación mostrados son para todas las aplicaciones para las que tenemos datos colectivamente.
 
  Para cada aplicación, los segmentos de color muestran la distribución del uso de energía de la aplicación entre estas categorías:
 
