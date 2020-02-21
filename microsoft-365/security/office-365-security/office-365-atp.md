@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: 7210cc2cfbb060ee6afe9042a5c8934ff6f53576
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9d7b2561c40e1322b7f15e72c48755268c119f24
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598747"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106843"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -101,7 +101,7 @@ Office 365 ATP Plan 2 incluye las mejores [herramientas de investigación y resp
 
 - **[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)** (también conocido como Explorador) es un informe en tiempo real que le permite identificar y analizar amenazas recientes. Puede configurar el Explorador para mostrar datos de períodos personalizados.
 
-- **[Simulador de ataques](attack-simulator.md)** le permite ejecutar escenarios de ataque realistas en su organización para identificar vulnerabilidades. Hay disponibles simulaciones de los tipos actuales de ataques, incluido un [ataque de phishing de objetivo definido de nombre para mostrar](attack-simulator.md#display-name-spear-phishing-attack), un [ataque de difusión de contraseña](attack-simulator.md#password-spray-attack) y un [ataque de contraseña por fuerza bruta](attack-simulator.md#brute-force-password-attack) entre otros.
+- **[Simulador de ataques](attack-simulator.md)** le permite ejecutar escenarios de ataque realistas en su organización para identificar vulnerabilidades. Hay disponibles simulaciones de los tipos actuales de ataques, que incluyen un [ataque de recolección de contraseñas de phishing de objetivo definido](attack-simulator.md#credential-harvest-spear-phishing-attack), un [ataque de difusión de contraseña](attack-simulator.md#password-spray-attack) y un [ataque de contraseña por fuerza bruta](attack-simulator.md#brute-force-password-attack) entre otros.
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Ahorre tiempo gracias a las investigaciones y respuestas automáticas
 

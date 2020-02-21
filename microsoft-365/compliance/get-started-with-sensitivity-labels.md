@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de etiquetas de confidencialidad para ayudar a proteger los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 9ffe0f52adf108ba03a41b2dba7261d21171bbba
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: 6c461cd049cb89a2de0dbfc4cb1a5f8ea28c3ea6
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101260"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106863"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -61,7 +61,7 @@ Use la siguiente documentación para ayudarle con su implementación de etiqueta
 |Quiero...|Documentación|
 |----------------|---------------|
 |Crear y publicar etiquetas de confidencialidad que ayudarán a proteger los datos de mi organización|[Crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md)|
-|Cifre documentos y mensajes de correo electrónico con etiquetas de confidencialidad y restrinja quién puede tener acceso a ellos y cómo puede usar el contenido. |[Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md)|
+|Cifre documentos y mensajes de correo electrónico con etiquetas de confidencialidad y restrinja quién puede tener acceso a ellos y cómo puede usar el contenido |[Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md)|
 |Habilite las características de colaboración en SharePoint (y OneDrive) para los documentos que se etiquetan con el cifrado | [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)](sensitivity-labels-sharepoint-onedrive-files.md)
 |Administre etiquetas de confidencialidad para las aplicaciones de Office para que el contenido se etiquete a medida que se crea |[Usar etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md)|
 |Aplique etiquetas de confidencialidad automáticamente o recomiende etiquetas a los usuarios al crear contenido | [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)|

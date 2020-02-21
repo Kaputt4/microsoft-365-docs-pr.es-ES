@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 76c1199fa3842428900db197f15728c116f778b9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bec44dea9059c779a567a3ff222cc41360de9321
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076417"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175804"
 ---
-# <a name="data-classification-overview-preview"></a>Información general sobre la clasificación de datos (vista previa)
+# <a name="know-your-data---data-classification-overview-preview"></a>Información general sobre la clasificación de datos (vista previa)
 
 Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerla sea cual sea su ubicación y garantizar que se conserve y elimine en función de las necesidades de la organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](labels.md) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
 
