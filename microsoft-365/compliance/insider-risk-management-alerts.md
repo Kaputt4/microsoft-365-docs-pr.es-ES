@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072887"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179221"
 ---
-# <a name="insider-risk-management-alerts-preview"></a>Alertas de administración de riesgos de Insider (versión preliminar)
+# <a name="insider-risk-management-alerts"></a>Alertas de administración de riesgos de Insider
 
 Los indicadores de riesgo definidos en las directivas de administración de riesgos de Insider generan automáticamente alertas de administración de riesgos de Insider. Estas alertas dan a los analistas y investigadores de cumplimiento una visión general del estado de riesgo actual y permiten que su organización clasifique y realice acciones para los riesgos detectados.
 
@@ -29,7 +29,7 @@ El panel de **alertas** de riesgo de Insider le permite ver y emprender acciones
 
 - **Alertas para revisión**: se enumera el número total de alertas que se deben revisar y clasificar, incluido un desglose por gravedad de alerta.
 - **Alertas abiertas durante los últimos 30 días**: el número total de alertas creadas por las coincidencias de directivas en los últimos 30 días, ordenadas por niveles de gravedad de alertas alta, media y baja.
-- **Tiempo promedio para las alertas resueltas**: un resumen de las estadísticas de alertas útiles:
+- **Tiempo promedio para resolver alertas**: un resumen de las estadísticas de alertas útiles:
     - Tiempo medio para resolver alertas de gravedad alta, enumeradas en horas, días o meses.
     - Tiempo medio para resolver alertas de gravedad media, enumeradas en horas, días o meses.
     - Tiempo medio para resolver alertas de gravedad baja, enumeradas en horas, días o meses.

@@ -1,5 +1,5 @@
 ---
-title: Usuarios de administración de riesgos de Insider (versión preliminar)
+title: Usuarios de administración de riesgos de Insider
 description: Obtenga información sobre los usuarios de administración de riesgos de Insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos de Insider, administración de riesgos, cumplimiento
 localization_priority: Normal
@@ -12,19 +12,19 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a9ff7e38a99a5fe5bd8da5301bec5e19bc015cf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072797"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179111"
 ---
-# <a name="insider-risk-management-users-preview"></a>Usuarios de administración de riesgos de Insider (versión preliminar)
+# <a name="insider-risk-management-users"></a>Usuarios de administración de riesgos de Insider
 
 Los usuarios de administración de riesgos de Insider son empleados de su organización que están incluidos en una o varias directivas de administración de riesgos de Insider. Use el **Panel usuarios** para revisar rápidamente la información de riesgos de los empleados y agregar un empleado a una directiva de administración de riesgos de Insider existente. Cada usuario incluido en una directiva de administración de riesgos de Insider tiene la siguiente información que se muestra en el **Panel de usuarios**:
 
 - **Users**: el nombre de usuario de un usuario.
-- **Nivel de riesgo**: 
+- **Nivel de riesgo**: el nivel de riesgo calculado actual del usuario. Esta puntuación se calcula cada 24 horas y usa los resultados de riesgo de alertas de todas las alertas activas asociadas al usuario.
 - **Alertas activas**: el número de alertas activas para todas las directivas.
 - **Infracciones confirmadas**: el número de casos resueltos como *infracción de la Directiva confirmada* para el usuario.
 - **Caso**: el caso activo actual para el usuario.
@@ -54,5 +54,5 @@ Complete los siguientes pasos para agregar un usuario a una directiva de riesgos
 2. Seleccione **Agregar un usuario a una directiva** en la barra de herramientas.
 3. En el cuadro de diálogo **Agregar un nuevo usuario** , empiece a escribir un nombre de usuario en el campo **usuario** . Seleccione el usuario que desea agregar a una directiva.
 4. Seleccione la flecha desplegable del campo de **Directiva** para mostrar las directivas de administración de riesgos de Insider configuradas. Seleccione la Directiva a la que desea agregar el usuario.
-5. Use el control deslizante de la **ventana de supervisión** para definir la...... El intervalo para la ventana de supervisión es de 5 a 30 días.
+5. Use el control deslizante de la **ventana de activación** para definir el tiempo que la Directiva está activa para este usuario y se desencadena cuando el usuario realiza la primera actividad que coincide con la Directiva. El intervalo para la ventana de supervisión es de 5 a 30 días.
 6. Seleccione **Agregar** y **confirme** para agregar el usuario a la Directiva.

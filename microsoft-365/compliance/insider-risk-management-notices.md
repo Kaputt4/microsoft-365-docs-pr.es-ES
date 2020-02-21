@@ -1,5 +1,5 @@
 ---
-title: Plantillas de aviso de administración de riesgos de Insider (versión preliminar)
+title: Plantillas de aviso de administración de riesgos de Insider
 description: Obtenga información sobre las plantillas de aviso de administración de riesgos de Insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos de Insider, administración de riesgos, cumplimiento
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072816"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179091"
 ---
-# <a name="insider-risk-management-notice-templates-preview"></a>Plantillas de aviso de administración de riesgos de Insider (versión preliminar)
+# <a name="insider-risk-management-notice-templates"></a>Plantillas de aviso de administración de riesgos de Insider
 
 Las plantillas de aviso de administración de riesgos de Insider permiten enviar mensajes de correo electrónico a los empleados cuando sus actividades generan una coincidencia de directiva y una alerta. En la mayoría de los casos, las acciones de los empleados que generan alertas son el resultado de errores o actividades involuntarias sin intención. Los avisos sirven como sencillos avisos a los empleados para que tengan más cuidado o proporcionen vínculos o información para un aprendizaje de refresco o recursos de directivas corporativas. Los avisos pueden ser una parte importante del programa de formación de cumplimiento interno y pueden ayudar a crear una pista de auditoría documentada para los empleados con actividades recurrentes de riesgo.
 

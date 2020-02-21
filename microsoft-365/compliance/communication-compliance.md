@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078707"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179241"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 
@@ -36,6 +36,8 @@ Las directivas de cumplimiento de comunicaciones de Microsoft 365 ayudan a super
 - Cumplimiento normativo y riesgo de multas
 
 En algunas organizaciones, puede haber una separación de tareas entre el soporte de ti y el grupo de administración de cumplimiento. Microsoft 365 admite la separación entre la configuración de cumplimiento de la comunicación y la configuración de directivas para el análisis de comunicaciones. Por ejemplo, el grupo de TI de una organización puede ser responsable de configurar los permisos de funciones y grupos para que admitan las directivas de cumplimiento de comunicaciones configuradas y administradas por el equipo de cumplimiento de la organización.
+
+Para obtener una introducción rápida al cumplimiento de las normas de comunicación, consulte el vídeo " [detectar el acoso del lugar de trabajo y responder con el cumplimiento de la comunicación" en microsoft 365](https://youtu.be/z33ji7a7Zho) en el canal de [Microsoft](https://www.youtube.com/user/OfficeGarageSeries).
 
 ## <a name="scenarios-for-communication-compliance"></a>Escenarios para el cumplimiento de la comunicación
 

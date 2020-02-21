@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175713"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219181"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Vaya a Centro de actividades para ver las acciones correctivas
 
@@ -42,9 +42,6 @@ El Centro de actividades proporciona una perspectiva centralizada de diferentes 
 - Revisión de las acciones de corrección completadas.
 
 El equipo de operaciones de seguridad puede trabajar con más eficacia y eficiencia, ya que el Centro de actividades ofrece una vista integral de la Protección contra amenazas de Microsoft en el trabajo.
-
-## <a name="remediation-actions"></a>Acciones de corrección
-
 
 ## <a name="go-to-the-action-center"></a>Vaya al Centro de actividades
 

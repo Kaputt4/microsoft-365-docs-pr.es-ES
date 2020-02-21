@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071376"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179151"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -95,7 +95,7 @@ Si está buscando una solución de cumplimiento existente y no está disponible 
 
 - **Revise su puntuación de cumplimiento de Microsoft**, una puntuación personalizada basada en riesgos para ayudarle a comprender el estado de cumplimiento de la organización con respecto a los estándares y regulaciones clave. Proporciona las acciones recomendadas que puede realizar para fortalecer su postura general de cumplimiento y proporciona funciones de flujo de trabajo que le ayudarán a llevar a cabo esas acciones de manera eficaz. Para obtener más información, consulte [calificación de cumplimiento (vista previa)](compliance-score.md).
 
-- **Configure las directivas de administración de riesgos de Insider** para ayudar a minimizar los riesgos internos y permitirle detectar, investigar y emprender acciones para actividades arriesgadas en su organización. Vea [Administración de riesgos de Insider (versión preliminar)](insider-risk-management.md).
+- **Configure las directivas de administración de riesgos de Insider** para ayudar a minimizar los riesgos internos y permitirle detectar, investigar y emprender acciones para actividades arriesgadas en su organización. Consulte [Administración de riesgos de Insider](insider-risk-management.md).
 
 - **Obtenga información sobre y cree directivas de cumplimiento de comunicaciones** para identificar y corregir rápidamente las infracciones de directivas corporativas sobre código de conducta. Consulte [cumplimiento](communication-compliance.md)de la comunicación.
 

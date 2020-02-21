@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 30436659b8b1bd336823e8dc6be06c8fbc8e08e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2c530279dde03f357386f11b9e9af5d68be5ee7f
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075355"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170560"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
@@ -31,7 +31,12 @@ Para obtener más información sobre los requisitos de licencias, consulte [Inst
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Información general de DLP para Microsoft Teams
 
-Recientemente, se ampliaron las capacidades de [prevención de pérdida de datos](data-loss-prevention-policies.md) (DLP) para incluir los mensajes de chat y canales de Microsoft Teams. Si su organización tiene DLP, ahora puede definir directivas que impiden que los usuarios compartan información confidencial en una sesión de chat o de canal de Microsoft Teams. A continuación, se muestran algunos ejemplos de cómo funciona esta protección:
+Recientemente, se ampliaron las capacidades de [prevención de pérdida de datos](data-loss-prevention-policies.md) (DLP) para incluir los mensajes de chat y canales de Microsoft Teams.
+
+> [!NOTE]
+> En este momento, no se admite DLP para mensajes de canal privado.
+
+Si su organización tiene DLP, ahora puede definir directivas que impiden que los usuarios compartan información confidencial en una sesión de chat o de canal de Microsoft Teams. A continuación, se muestran algunos ejemplos de cómo funciona esta protección:
 
 - **Ejemplo 1: proteger la información confidencial en los mensajes**. Suponga que alguien intenta compartir información confidencial en un canal o chat de Microsoft Teams con invitados (usuarios externos). Si tiene definida una directiva DLP para evitar esto, se eliminan los mensajes con información confidencial que se envían a los usuarios externos. Esto sucede automáticamente y en segundos, según la configuración de la Directiva DLP.
 
@@ -50,7 +55,7 @@ En este caso, el remitente ha intentado compartir un número de la seguridad soc
 
 ![Opciones para resolver el mensaje bloqueado](../media/dlp-teams-blockedmessage-possibleactions.png)
 
-En su organización, puede optar por permitir que los usuarios invaliden una directiva DLP. Y, cuando configure las directivas de DLP, puede usar las sugerencias de directiva predeterminadas o [personalizar las sugerencias de directiva](#to-customize-policy-tips) para su organización. 
+En su organización, puede optar por permitir que los usuarios invaliden una directiva DLP. Y, cuando configure las directivas de DLP, puede usar las sugerencias de directiva predeterminadas o [personalizar las sugerencias de directiva](#to-customize-policy-tips) para su organización.
 
 Volviendo a nuestro ejemplo, en el que un remitente compartió un número de la seguridad social en un canal de Teams, esto es lo que vio el destinatario:
 
@@ -64,7 +69,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
 
-2. Elija **** > **Directiva**de prevención de pérdida de datos. 
+2. Elija **** > **Directiva**de prevención de pérdida de datos.
 
 3. Seleccione una directiva y, junto a **configuración de directiva**, elija **Editar**.
 
@@ -72,7 +77,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 5. En la pestaña **notificaciones del usuario** , seleccione **personalizar el texto del correo electrónico** o **personalizar las opciones de texto de la sugerencia de directiva** .<br/>![Personalizar las notificaciones de usuario y las sugerencias de Directiva](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
-6. Especifique el texto que desea usar para las notificaciones de correo electrónico o las sugerencias de directiva y, a continuación, elija **Guardar**. 
+6. Especifique el texto que desea usar para las notificaciones de correo electrónico o las sugerencias de directiva y, a continuación, elija **Guardar**.
 
 7. En la pestaña **configuración de directiva** , elija **Guardar**.
 
@@ -84,7 +89,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
 
-2. Elija **** > **Directiva**de prevención de pérdida de datos. 
+2. Elija **** > **Directiva**de prevención de pérdida de datos.
 
 3. Seleccione una directiva y mire los valores en **ubicaciones**. Si ve **los mensajes de chat y de canal de Microsoft Teams**, ya está todo configurado. Si no lo hace, haga clic en **Editar**.<br/>![Ubicaciones para la directiva existente](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -102,11 +107,11 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
 
-2. Elegir **** > **** directiva > **de prevención de pérdida de datos + crear una directiva**. 
+2. Elegir **** > **** directiva > **de prevención de pérdida de datos + crear una directiva**.
 
 3. Elija una [plantilla](data-loss-prevention-policies.md#dlp-policy-templates)y, a continuación, elija **siguiente**.<br/>En nuestro ejemplo, elegimos la plantilla de datos de información de identificación personal de Estados Unidos.<br/>![Plantilla de privacidad para la Directiva DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
-4. En la pestaña Nombre de la **Directiva** , especifique un nombre y una descripción para la Directiva y, a continuación, elija **siguiente**. 
+4. En la pestaña Nombre de la **Directiva** , especifique un nombre y una descripción para la Directiva y, a continuación, elija **siguiente**.
 
 5. En la pestaña **elegir ubicaciones** , mantenga la configuración predeterminada de todas las ubicaciones o seleccione **permitirme elegir ubicaciones específicas**y, después, haga clic en **siguiente**.<br/>Si ha elegido ubicaciones específicas, selecciónelas para su Directiva DLP y, a continuación, elija **siguiente**.<br/>![Ubicaciones de directivas de DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
@@ -120,7 +125,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 8. En la **pestaña Configuración de directiva** , en **¿desea activar la Directiva o probar la primera?**, elija si desea activar la Directiva, [probarla primero](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)o dejarla desactivada por ahora y, a continuación, elija **siguiente**.<br/>![Especificar si se va a activar la Directiva](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
-9. En la pestaña **revisar la configuración** , revise la configuración de la nueva Directiva. Elija **Editar** para realizar cambios. Cuando haya terminado, elija **crear**. 
+9. En la pestaña **revisar la configuración** , revise la configuración de la nueva Directiva. Elija **Editar** para realizar cambios. Cuando haya terminado, elija **crear**.
 
 Espere aproximadamente una hora para que la nueva Directiva funcione a través del centro de datos y sincronice las cuentas de usuario.
 

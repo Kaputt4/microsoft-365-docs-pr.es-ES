@@ -1,5 +1,5 @@
 ---
-title: Casos de administración de riesgos de Insider (versión preliminar)
+title: Casos de administración de riesgos de Insider
 description: Obtenga información sobre los casos de administración de riesgos de Insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos de Insider, administración de riesgos, cumplimiento
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072873"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179181"
 ---
-# <a name="insider-risk-management-cases-preview"></a>Casos de administración de riesgos de Insider (versión preliminar)
+# <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
 Los casos son el corazón de la administración de riesgos del Insider y le permiten investigar y realizar acciones profundamente en los problemas generados por los indicadores de riesgo definidos en las directivas. Los casos se crean manualmente a partir de alertas en las situaciones en las que se necesitan acciones adicionales para resolver un problema relacionado con el cumplimiento de un empleado. Cada caso está en el ámbito de un único empleado y se pueden agregar varias alertas para el empleado a un caso existente o a un nuevo caso. Después de investigar los detalles de un caso, puede emprender acciones enviando un aviso al empleado, resolviendo el caso como benigno o remitiéndose a un dato o a una investigación de empleado.
 
@@ -96,7 +96,7 @@ La ficha de **actividad de usuario** es una de las herramientas más eficaces pa
     - **Fecha** de la actividad de riesgo.
     - Categoría de la **actividad de riesgo**. Por ejemplo, *correo electrónico con datos adjuntos enviados fuera de la organización* o *archivos descargados desde SharePoint Online*.
     - **Puntuación de riesgo** para la alerta. Esta puntuación es la puntuación numérica para el nivel de gravedad de riesgo de alertas.
-    - Número de **archivos** o **mensajes de correo electrónico** asociados a la alerta. También se encuentran disponibles vínculos a cada archivo o correo electrónico asociado con la actividad de riesgo.
+    - Número de eventos asociados a la alerta. También se encuentran disponibles vínculos a cada archivo o correo electrónico asociado con la actividad de riesgo.
 3. **Leyenda de actividad de riesgo**: en la parte inferior del gráfico de actividad de usuario, una leyenda con código de color ayuda a determinar rápidamente la categoría de riesgo para cada alerta.
 4. **Actividad de riesgo cronología**: se enumera toda la cronología de todas las alertas de riesgo asociadas con el caso, incluidos todos los detalles disponibles en la burbuja de alerta correspondiente.
 5. **Acciones de casos**: las opciones para resolver el caso se muestran en la barra de herramientas acción de escenario. Puede resolver un caso, enviar un aviso por correo electrónico al empleado o remitir el caso a una investigación de los datos o de un empleado.

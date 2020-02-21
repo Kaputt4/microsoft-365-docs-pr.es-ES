@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072773"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179191"
 ---
-# <a name="insider-risk-management-in-microsoft-365-preview"></a>Administración de riesgos de Insider en Microsoft 365 (versión preliminar)
+# <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos de Insider en Microsoft 365
 
-La administración de riesgos de Insiders es una solución de riesgo interna en Microsoft 365 que ayuda a minimizar los riesgos internos, ya que permite detectar, investigar y realizar acciones en actividades de riesgo de la organización. Las directivas personalizadas le permiten detectar y realizar acciones en actividades malintencionadas e involuntarias de riesgos en su organización, incluidos la escalabilidad de casos a otras soluciones de investigación de Microsoft 365, si es necesario. Los analistas de riesgos de la organización pueden emprender rápidamente las acciones adecuadas para asegurarse de que los usuarios cumplan los estándares de cumplimiento de la organización.
+La administración de riesgos de Insider es una solución en Microsoft 365 que contribuye a minimizar los riesgos internos, ya que permite detectar, investigar y realizar acciones en actividades de riesgo de la organización. Las directivas personalizadas le permiten detectar y realizar acciones en actividades malintencionadas e involuntarias de riesgos en su organización, incluidos el reajuste de casos a la exhibición avanzada de documentos electrónicos de Microsoft si es necesario. Los analistas de riesgos de la organización pueden emprender rápidamente las acciones adecuadas para asegurarse de que los usuarios cumplan los estándares de cumplimiento de la organización.
 
 Vea el vídeo a continuación para obtener información sobre cómo la administración de riesgos de Insider puede ayudar a su organización a prevenir, detectar y contener riesgos, a la vez que prioriza los valores de la organización, la cultura y la experiencia de los empleados:
 <br>
@@ -66,7 +66,7 @@ Puede seleccionar entre las siguientes [plantillas de directiva](insider-risk-ma
 
 - Robo de datos del empleado
 - Pérdidas de datos
-- Lenguaje ofensivo en la comunicación
+- Lenguaje ofensivo en el correo electrónico
 
 Para obtener más información, vea [directivas de administración de riesgos de Insider](insider-risk-management-policies.md).
 

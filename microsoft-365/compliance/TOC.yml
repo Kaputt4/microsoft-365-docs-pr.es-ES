@@ -18,23 +18,23 @@
       href: plan-for-security-and-compliance.md
 - name: Administrar los riesgos de Insider
   items:
-    - name: Administración de riesgos de Insider (versión preliminar)
+    - name: Administración de riesgos de Insider
       items:
-        - name: Obtenga información sobre la administración de riesgos de Insider (versión preliminar)
+        - name: Obtener información sobre la administración de riesgos de Insider
           href: insider-risk-management.md
-        - name: Introducción a la administración de riesgos de Insider (versión preliminar)
+        - name: Introducción a la administración de riesgos de Insider
           href: insider-risk-management-configure.md
-        - name: Crear y administrar directivas de riesgos del Insider (versión preliminar)
+        - name: Crear y administrar directivas de riesgos de Insider
           href: insider-risk-management-policies.md
-        - name: Investigar las alertas de los riesgos de Insider (versión preliminar)
+        - name: Investigar las alertas de los riesgos de Insider
           href: insider-risk-management-alerts.md
-        - name: Realizar acciones en casos de riesgo de Insider (versión preliminar)
+        - name: Emprender acciones en casos de riesgo de Insider
           href: insider-risk-management-cases.md
-        - name: Revisar datos con el explorador de contenido de riesgo de Insider (versión preliminar)
+        - name: Revisar los datos con el explorador de contenido de riesgo de Insider
           href: insider-risk-management-content-explorer.md
-        - name: Adición de usuarios a las directivas de riesgos de Insider (versión preliminar)
+        - name: Adición de usuarios a directivas de riesgos de Insider
           href: insider-risk-management-users.md
-        - name: Crear plantillas de aviso de riesgo de Insider (versión preliminar)
+        - name: Crear plantillas de aviso de riesgo de Insider
           href: insider-risk-management-notices.md
     - name: Cumplimiento con la comunidad
       items:
@@ -76,7 +76,7 @@
   items:
     - name: Etiquetas de confidencialidad
       items:
-        - name: Obtener información sobre las etiquetas de confidencialidad
+        - name: Información sobre las etiquetas de confidencialidad
           href: sensitivity-labels.md
         - name: Empiece a usar las etiquetas de confidencialidad
           href: get-started-with-sensitivity-labels.md
@@ -92,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Usar las etiquetas de confidencialidad en las aplicaciones de Office
+        - name: Usar etiquetas de confidencialidad en las aplicaciones de Office
           href: sensitivity-labels-office-apps.md
     - name: Prevención de pérdida de datos (DLP)
       href: data-loss-prevention-policies.md
