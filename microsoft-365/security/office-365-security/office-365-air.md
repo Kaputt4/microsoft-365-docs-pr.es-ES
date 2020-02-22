@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Empiece a usar la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d777ca0a61655c8df16d62c72691195bdec330a9
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 7bfa07880a302f77769ee15e9108db21dac2519c
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175784"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228576"
 ---
 # <a name="office-365-automated-investigation-and-response"></a>Investigación y respuesta automatizada de Office 365
 
@@ -42,3 +42,31 @@ Durante y después de un proceso de investigación automatizado, su equipo de se
 - [Revisión y aprobación de acciones como resultado de una investigación](air-remediation-actions.md#approve-or-reject-pending-actions)
 
 Para obtener más información, vea [Cómo funciona Air](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
+
+## <a name="how-to-get-air"></a>Cómo obtener aire
+
+Office 365 AIR está incluido en las siguientes suscripciones:
+
+- Microsoft 365 E5
+- Office 365 E5
+- Protección contra amenazas de Microsoft
+- Protección contra amenazas avanzada de Office 365 (plan 2)
+
+Si no tiene ninguna de estas suscripciones, [inicie una prueba gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
+
+Para obtener más información acerca de la disponibilidad de características, visite la [característica disponibilidad en los planes de protección contra amenazas avanzada (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## <a name="required-permissions-to-use-air-capabilities"></a>Permisos necesarios para usar capacidades de AIR
+
+Los permisos se conceden a través de determinadas funciones, como las que se describen en la tabla siguiente: 
+
+|Tarea |Roles necesarios |
+|--|--|
+|Para configurar las características de AIR |Una de las siguientes funciones: <br/>- **Administrador global**<br/>- **Administrador de seguridad** <br/>Estos roles se pueden asignar en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
+|Para aprobar o rechazar las acciones recomendadas|Una de las siguientes funciones, asignada en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>- **Administrador global** <br/>- **Administrador de seguridad**<br/>- **Lector de seguridad** <br/>--- y ---<br/>- **Búsqueda y depuración** (este rol solo se asigna en el [centro de cumplimiento de & de seguridad de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Es posible que tenga que crear un nuevo grupo de funciones y agregar el rol de búsqueda y depuración al nuevo grupo de roles.
+
+## <a name="related-articles"></a>Artículos relacionados
+
+- [Investigación y respuesta automatizada en la Protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+
+- [Investigación y corrección automáticas en protección contra amenazas avanzada de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)

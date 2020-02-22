@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las acciones de corrección en la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 1a39ffb5bf57e0f4ffa38a210c299480d3081345
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: e75ef1523247cbddcf6cb28d69a889db1de8e42f
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175969"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228536"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Acciones de corrección tras una investigación automatizada en Office 365
 
@@ -42,14 +42,13 @@ ms.locfileid: "42175969"
 Mientras ve los [detalles de una investigación](air-view-investigation-results.md), puede aprobar o rechazar cualquier acción de corrección pendiente. Le recomendamos hacerlo tan pronto como sea posible para que las investigaciones automatizadas se completen.
 
 > [!IMPORTANT]
-> Es necesario disponer de los permisos adecuados para aprobar o rechazar acciones de corrección. Consulte [permisos necesarios para usar la funcionalidad de Air](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
+> Es necesario disponer de los permisos adecuados para aprobar o rechazar acciones de corrección. Consulte [permisos necesarios para usar la funcionalidad de Air](office-365-air.md#required-permissions-to-use-air-capabilities).
 
 1. Seleccione la ficha **acciones** .
 
 2. Seleccione un elemento de la lista. (Esto activa los botones aprobar y rechazar).
 
 3. Revise la información disponible de los elementos seleccionados y, a continuación, apruebe o rechace las acciones. 
-
  - **APPROVE** permite que se inicie la corrección.
  - **Rechazar** no realiza ninguna acción adicional
 

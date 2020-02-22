@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/28/2020
-ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.date: 02/21/2020
+ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106853"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42230073"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -45,6 +45,8 @@ En este artículo se enumeran las nuevas características de la versión más re
     - Filtros de tiempo granulares (día, hora, media hora) 
 
 - El widget **incidentes** ahora es el widget **centro de actividades** . (Para ver los widgets de seguridad, en el centro de seguridad & cumplimiento de Office 365, vaya a**revisión**de **Administración** > de amenazas).
+
+- [Documentos seguros en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(versión preliminar)**
 
 ## <a name="december-2019"></a>Diciembre de 2019
 
@@ -80,7 +82,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Office 365 ATP está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
