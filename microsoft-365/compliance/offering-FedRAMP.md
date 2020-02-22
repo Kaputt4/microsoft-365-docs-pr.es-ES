@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 71be1e70a04881b937ee1f75d5fda6f03efdbd5f
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: fb667cdf13ed8ed6777f454b8fa3e21342f90272
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851867"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222092"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programa de administración de riesgos y autorización Federal (FedRAMP)
 
@@ -65,7 +65,7 @@ Una vez que se concede una P-ATO, un CSP requiere una autorización (una ATO) de
 - Office 365 (planes empresariales y empresariales) y Office 365 el gobierno de Estados Unidos tienen una agencia FedRAMP de la agencia en el nivel de impacto moderado de la oficina del Departamento de salud y servicios humanos (DHHS) del inspector general. Office 365 U.S. Government fue el primer servicio de colaboración y correo electrónico basado en la nube para obtener esta autorización.
 - Cualquier cliente que desee usar O365 U.S. Government Defense puede usar la DISA P-ATO para generar una agencia ATO para documentar su aceptación de O365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
 
 - [Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -109,17 +109,17 @@ Para obtener información general sobre los pasos que deben realizar las agencia
 
 Sí. Puede usar las certificaciones de los servicios en la nube de Microsoft como base para cualquier programa o iniciativa que requiera una ATO de una agencia gubernamental federal. Sin embargo, debe conseguir sus propias autorizaciones para los componentes fuera de estos servicios.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de cumplimiento de Microsoft para evaluar el riesgo
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
 
-La [puntuación de cumplimiento de Microsoft](compliance-score.md) es una característica de vista previa del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), use la plantilla preconfigurada de [FedRAMP](https://go.microsoft.com/fwlink/?linkid=2118102) para ayudar a su organización a cumplir los requisitos de este Reglamento.
+[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Una vez configurada la [puntuación de cumplimiento](compliance-score-setup.md), seleccione la [plantilla FedRAMP](https://go.microsoft.com/fwlink/?linkid=2118102) preconfigurada en el menú desplegable **plantilla** para ayudar a su organización a cumplir los requisitos de este Reglamento.
 
 ## <a name="resources"></a>Recursos
 
 - [Programa de administración de riesgos y autorización Federal](https://www.fedramp.gov/)
-- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Marco de evaluación de seguridad de FedRAMP](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

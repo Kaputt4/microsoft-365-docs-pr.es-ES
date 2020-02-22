@@ -1,7 +1,7 @@
 ---
 title: Sección 508 de Estados Unidos
 description: Microsoft ofrece informes detallados de conformidad con la accesibilidad para muchos de sus servicios en la nube que describen las características de accesibilidad de dichos servicios.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d9d0c213fcca5b991b4912d5b9158e2d3836aff9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc5e8312f219176dbed7a84072c90e0ca165cd11
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602027"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228526"
 ---
 # <a name="us-section-508"></a>Sección 508 de Estados Unidos
 
@@ -33,7 +33,7 @@ Microsoft es un proveedor importante de servicios en la nube y de software para 
 
 La consideración de Microsoft de la sección 508 de Estados Unidos en el desarrollo de productos y servicios apunta a su compromiso de hacer que los datos y la tecnología sean accesibles para todos los clientes.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
 
 - [Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
@@ -45,7 +45,7 @@ La consideración de Microsoft de la sección 508 de Estados Unidos en el desarr
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Informes de conformidad de la accesibilidad de Microsoft
 
-Obtenga [informes de conformidad](https://go.microsoft.com/fwlink/p/?linkid=2050974) para todos nuestros productos y servicios.
+Obtenga [informes de conformidad](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/) para todos nuestros productos y servicios.
 
 ## <a name="resources"></a>Recursos
 

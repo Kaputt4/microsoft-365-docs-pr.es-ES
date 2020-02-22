@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4aae95778a829203dc8d34fe1882528cf866b913
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 8794a51c60b778814d05a84d2332dc018b54a80a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851807"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222012"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Instituto Nacional de normas y tecnología (NIST) Cybersecurity Framework (CSF)
 
@@ -40,7 +40,7 @@ Aprenda a acelerar la implementación del marco de Cybersecurity de NIST con pun
 - [Descargar la lista de comprobación de riesgos de Azure Security and Compliance Blueprint-NIST CSF](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [Obtenga más información acerca de la evaluación del CSF de NIST para Office 365 en puntuación de cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para administración pública](https://aka.ms/d365-compliance-list)
@@ -97,9 +97,9 @@ La certificación in-Scope Services of NIST CSF es archivado de Exchange Online,
 
 Microsoft proporciona las ofertas más completas en comparación con otros proveedores de servicios de nube. Para estar al día de nuestras amplias ofertas de cumplimiento en todas las regiones e industrias, incluimos servicios en el ámbito de nuestros esfuerzos de seguridad en función de la demanda del mercado, los comentarios de los clientes y el ciclo de vida de los productos. Si un servicio no se incluye en el ámbito actual de una oferta de cumplimiento específica, su organización tiene la responsabilidad de evaluar los riesgos basándose en las obligaciones de cumplimiento y determinar la forma en que se procesan los datos en el servicio. Recopilamos continuamente los comentarios de los clientes y trabajamos con reguladores y auditores para ampliar nuestra cobertura de cumplimiento para satisfacer sus necesidades de seguridad y cumplimiento.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de cumplimiento de Microsoft para evaluar el riesgo
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
 
-La [puntuación de cumplimiento de Microsoft](compliance-score.md) es una característica de vista previa del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. Una vez configurada la [puntuación de cumplimiento](compliance-score-setup.md), use la [plantilla CSF](https://go.microsoft.com/fwlink/?linkid=2117917) preconfigurada del NIST para ayudar a su organización a cumplir los requisitos de este Reglamento.
+[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Una vez configurada la [puntuación de cumplimiento](compliance-score-setup.md), seleccione la [plantilla CSF](https://go.microsoft.com/fwlink/?linkid=2117917) preconfigurada del NIST en el menú desplegable **plantilla** para ayudar a su organización a cumplir los requisitos de este Reglamento.
 
 ## <a name="resources"></a>Recursos
 
@@ -109,7 +109,7 @@ La [puntuación de cumplimiento de Microsoft](compliance-score.md) es una caract
 - [Solicitud Ejecutiva Presidencia sobre el fortalecimiento del Cybersecurity de las redes federales y la infraestructura crítica](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

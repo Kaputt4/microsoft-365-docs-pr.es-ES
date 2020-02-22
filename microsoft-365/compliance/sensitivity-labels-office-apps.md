@@ -1,5 +1,5 @@
 ---
-title: Usar las etiquetas de confidencialidad en las aplicaciones de Office
+title: Usar etiquetas de confidencialidad en las aplicaciones de Office
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, las aplicaciones de Office para dispositivos móviles y las aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: 5ca3d7b68f931b7596bc61a587d5e4199aa5f70f
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101240"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225518"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>Usar las etiquetas de confidencialidad en las aplicaciones de Office
+# <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
 Una vez [publicadas](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) las etiquetas de confidencialidad del centro de cumplimiento de Microsoft 365 o del centro de etiquetas equivalente, comienzan a aparecer en las aplicaciones de Office para que los usuarios clasifiquen y protejan los datos cuando se crean o editan.
 
@@ -123,10 +123,15 @@ Si necesita convertir plantillas de protección existentes en etiquetas, use Azu
 
 Los usuarios pueden aplicar una sola etiqueta a la vez para cada documento o correo electrónico.
 
-Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, los datos adjuntos no se heredan de la etiqueta:
+Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, los datos adjuntos no heredan la etiqueta con una excepción:
 
-- Si los datos adjuntos tienen una etiqueta, se conservan como etiquetas aplicadas por separado.
-- Si los datos adjuntos no tienen etiqueta, los datos adjuntos permanecen sin etiqueta. Sin embargo, si la etiqueta del correo electrónico aplica protección, esa protección se aplicará a los datos adjuntos de Office.
+- Los datos adjuntos son un documento de Office con una etiqueta que no aplica el cifrado y la etiqueta que se aplica al mensaje de correo electrónico aplica el cifrado. En este caso, el documento de Office por correo electrónico hereda la etiqueta del correo electrónico con su configuración de cifrado.
+
+En caso contrario: 
+
+- Si los datos adjuntos tienen una etiqueta, mantienen su etiqueta originalmente aplicada.
+- Si los datos adjuntos se cifran sin etiqueta, el cifrado permanece pero no se etiquetan.
+- Si los datos adjuntos no tienen etiqueta, permanecen sin etiqueta.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilidad de las etiquetas de confidencialidad
 

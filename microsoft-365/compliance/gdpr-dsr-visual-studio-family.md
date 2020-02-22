@@ -18,12 +18,12 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 08c6bfbcfc571103939d0b824d5fda0fcb789bb6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 159e7a69f0714b93913c36d745641485d7c80798
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596487"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225513"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de interesados de la familia de Visual Studio para el RGPD y CCPA
 
@@ -47,7 +47,7 @@ Nuestros procedimientos de procesamiento de datos se explican en los Términos d
 
 En tanto que procesador de datos en virtud de lo estipulado en el RGPD, Microsoft recopila los datos que necesitamos de los usuarios para proporcionar experiencias y mejorar Visual Studio y Visual Studio para Mac, además de para facilitar extensiones de Microsoft aplicables a ellos y a Visual Studio Code. Existen dos categorías de datos: datos de cliente y registros generados por el sistema. Los datos de cliente son los datos de interacciones y transacciones que identifican al usuario que estos productos necesitan para realizar el servicio que prestan. Por ejemplo, para facilitar a los usuarios experiencias personalizadas como la configuración de itinerancia, necesitamos recopilar información de la cuenta de usuario y datos de configuración. En cuanto a los registros generados por el sistema, son datos de uso y de diagnóstico que sirven para detectar y solucionar problemas y mejorar nuestros productos y servicios. Este tipo de datos también puede contener información que identifique a los usuarios finales, como sus nombres de usuario. Los registros generados por el sistema se conservan durante un máximo de 18 meses. A modo de ejemplo, los registros generados por el sistema se agregan cada día de uso del producto e incluyen la fecha de uso, el producto empleado (por ejemplo, "Visual Studio 2017"), la acción realizada (por ejemplo, "vs/core/packagecostsummary/solutionload") y el número de veces que dicha acción se ha realizado, como se muestra en este ejemplo:
 
-```
+```Log
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
 "DevicePlatform":"Windows 10 Enterprise","IP":null,"InputMethod":null,
 "SearchTerm":null,"SearchResult":null}

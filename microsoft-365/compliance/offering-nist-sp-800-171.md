@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e90d5e47c6aa5ac6c2813f150e8136b93214fa3d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851787"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222002"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -42,7 +42,7 @@ Los requisitos de NIST SP 800 – 171 son un subconjunto de NIST SP 800-53, el e
 
 Cualquier entidad que procese o almacene CUI gubernamentales (instituciones de investigación, empresas de consultoría, contratistas de fabricación) debe cumplir con las rigurosas necesidades de NIST SP 800-171. Esta atestación significa que los servicios en la nube de Microsoft en el ámbito pueden acomodar a los clientes que quieran implementar cargas de trabajo de CUI con la certeza de que Microsoft tiene el total cumplimiento. Por ejemplo, todos los contratistas de DoD que procesan, almacenan o transmiten "información de defensa cubierta" mediante los servicios en la nube de Microsoft en sus sistemas de información cumplen las cláusulas DFARS del Departamento de defensa de Estados Unidos que requieren el cumplimiento de la seguridad. requisitos de NIST SP 800 – 171.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -53,7 +53,7 @@ Cualquier entidad que procese o almacene CUI gubernamentales (instituciones de i
 
 - [Atestación del gobierno de Azure del cumplimiento con NIST SP 800 – 171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - [NIST SP 800 – 171 Blueprint](https://aka.ms/NIST-800-171-Blueprint): Obtenga soporte para implementar cargas de trabajo en Azure que cumplan con NIST SP 800 – 171.
 
@@ -63,9 +63,9 @@ Cualquier entidad que procese o almacene CUI gubernamentales (instituciones de i
 
 Sí. Los clientes de Microsoft pueden usar los controles auditados que se describen en los informes de organizaciones independientes de evaluación de terceros (3PAO) en estándares de FedRAMP como parte de sus propios FedRAMP y el análisis de riesgos y la calificación de los NIST. Estos informes atestiguan la eficacia de los controles que Microsoft ha implementado en sus servicios en la nube en el ámbito. Los clientes son responsables de garantizar que sus cargas de trabajo de CUI cumplan las directrices de NIST SP 800 – 171.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de cumplimiento de Microsoft para evaluar el riesgo
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
 
-La [puntuación de cumplimiento de Microsoft](compliance-score.md) es una característica de vista previa del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), use la plantilla preconfigurada de [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2117526) para ayudar a su organización a cumplir los requisitos de este Reglamento.
+[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), seleccione la plantilla preconfigurada [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2117526) en el menú desplegable **plantilla** para ayudar a su organización a cumplir los requisitos de este Reglamento.
 
 ## <a name="resources"></a>Recursos
 
