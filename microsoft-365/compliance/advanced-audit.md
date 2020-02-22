@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: La auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960246"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170520"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
 La [funcionalidad de auditoría unificada](search-the-audit-log-in-security-and-compliance.md) en Microsoft 365 proporciona a las organizaciones la visibilidad de muchos tipos de actividades auditadas a través de los distintos servicios de Microsoft 365. Ahora, con el lanzamiento de la auditoría avanzada en Microsoft 365, estamos añadiendo nuevas capacidades de auditoría que pueden ayudar a su organización con las investigaciones forenses y de cumplimiento.
 
 > [!NOTE]
-> La auditoría avanzada está disponible para organizaciones con una suscripción a Office 365 o Microsoft 365 Enterprise E5. Además, se puede asignar a los usuarios una suscripción al complemento del Cumplimiento de Microsoft 365 E5 para cuando se requiera una licencia por usuario para las funciones de auditoría avanzada, como es el caso de la conservación a largo plazo de los registros de auditoría y de los eventos de auditoría de alto valor.
+> La auditoría avanzada está disponible para organizaciones con una suscripción a Office 365 o Microsoft 365 Enterprise E5. Además, se puede asignar a los usuarios una suscripción al complemento del Cumplimiento de Microsoft 365 E5 para cuando se requiera una licencia por usuario para las funciones de auditoría avanzada, como es el caso de la conservación a largo plazo de los registros de auditoría y el acceso a eventos fundamentales para las investigaciones.
 
 Este artículo ofrece una visión general de estas capacidades de auditoría avanzada.
 
@@ -49,9 +49,9 @@ Todos los registros de auditoría generados en otros servicios que no estén cub
 
 También puede especificar el tiempo de retención de los registros de auditoría que coincidan con la directiva y el nivel de prioridad, de modo que ciertas políticas específicas tengan prioridad sobre otras. También debe tener en cuenta que cualquier directiva de retención de registros personalizados de auditoría tendrán prioridad sobre la directiva predeterminada de retención de auditorías en caso de que necesite conservar los registros de auditoría de Exchange, SharePoint o Azure Active Directory durante menos de un año para todos o algunos de los usuarios de su organización. Para obtener más información, vea [administrar directivas de retención de los registros de auditoría](audit-log-retention-policies.md).
 
-## <a name="high-value-audit-events"></a>Eventos de auditoría de alto valor
+## <a name="access-to-crucial-events-for-investigations"></a>Acceso a eventos fundamentales para investigaciones
 
-Los eventos de auditoría de alto valor relacionados con la seguridad y el cumplimiento son aquellos que pueden ayudarle a investigar las posibles infracciones u otras investigaciones forenses. El primero de estos eventos de alto valor que estamos lanzando es el evento de auditoría del buzón *MailItemsAccessed* Este evento se desencadena cuando se obtiene acceso a los datos del correo mediante protocolos y clientes de correo. El evento MailItemsAccess puede ayudar a los investigadores a identificar las vulneraciones de datos y determinar el ámbito de los mensajes que han estado en peligro. Si un atacante obtuvo acceso a los mensajes de correo electrónico, se desencadenará el evento MailItemsAccessed aunque no haya ninguna señal explícita de que se haya leído realmente (es decir, el tipo de acceso como, por ejemplo, mediante enlace o sincronización, se graba en el registro de auditoría).
+Los eventos de auditoría de alto valor relacionados con la seguridad y el cumplimiento son aquellos que pueden ayudarle a investigar las posibles infracciones u otras investigaciones forenses. El primero de estos eventos fundamentales que estamos lanzando es el evento de auditoría del buzón *MailItemsAccessed* Este evento se desencadena cuando se obtiene acceso a los datos del correo mediante protocolos y clientes de correo. El evento MailItemsAccess puede ayudar a los investigadores a identificar las vulneraciones de datos y determinar el ámbito de los mensajes que han estado en peligro. Si un atacante obtuvo acceso a los mensajes de correo electrónico, se desencadenará el evento MailItemsAccessed aunque no haya ninguna señal explícita de que se haya leído realmente (es decir, el tipo de acceso como, por ejemplo, mediante enlace o sincronización, se graba en el registro de auditoría).
 
 La nueva acción de buzón MailItemsAccessed reemplaza a MessageBind en el registro de auditoría de buzón de Exchange Online y proporciona las siguientes mejoras:
 
