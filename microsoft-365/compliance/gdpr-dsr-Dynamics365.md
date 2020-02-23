@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 1eeed6c1dfef1765089a5998200c93be595a719a
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722021"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225528"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado de Dynamics 365 para el RGPD y la CCPA
 
@@ -82,10 +82,9 @@ Clasificar correctamente los datos de clientes resulta esencial para trabajar co
 
 Microsoft proporciona funciones que le ayudan a responder a solicitudes de derechos de los interesados y, por lo tanto, a obtener acceso a datos de clientes. Pero es su responsabilidad garantizar que los datos personales se clasifiquen y organicen correctamente.
 
-***Dynamics 365 for Customer Engagement*** le ofrece varios métodos de buscar datos personales en registros: Búsqueda avanzada, Búsqueda por relevancia y Búsqueda de registros. Todas estas funciones le permiten identificar (encontrar) datos personales.
+***Dynamics 365 for Customer Engagement*** le ofrece varios métodos para buscar datos personales en registros, como: Búsqueda avanzada y Búsqueda de registros. Todas estas funciones le permiten identificar (encontrar) datos personales.
 
 - [Búsqueda avanzada](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)
-- [Búsqueda por relevancia](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results) son búsquedas que se pueden guardar para futuras referencias con los paneles.
 - [Búsqueda de registros](https://docs.microsoft.com/dynamics365/customer-engagement/basics/search-records) en varios tipos de registro.
 
 En Dynamics 365 for Marketing, tiene las siguientes funciones adicionales:
