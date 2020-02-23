@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851887"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222052"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -131,7 +131,7 @@ El [kit de herramientas de SOC para empresas de servicio](https://aka.ms/soc-too
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
 
-[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), utilice la [plantilla preconfigurada SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) y la [plantilla SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) para ayudar a su organización a cumplir los requisitos de este reglamento.
+[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), seleccione la [plantilla preconfigurada SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) y la [plantilla SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) en el menú desplegable **plantilla** para ayudar a su organización a cumplir los requisitos de esta regla.
 
 ## <a name="resources"></a>Recursos
 

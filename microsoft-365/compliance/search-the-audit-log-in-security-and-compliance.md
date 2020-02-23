@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: fe91f43d088242336d7e77e5422093979d34193b
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219191"
+ms.locfileid: "42228596"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -725,7 +725,7 @@ En la siguiente tabla se enumeran las actividades de usuario y administrador en 
 |Bot agregado al equipo|BotAddedToTeam|Un usuario agrega un bot a un equipo.|
 |Canal agregado|ChannelAdded|Un usuario agrega un canal a un equipo.|
 |Conector agregado|ConnectorAdded|Un usuario agrega un conector a un canal.|
-|Miembros agregados al equipo|MemberAdded|El propietario de un equipo agrega miembros a un equipo.|
+|Miembros agregados|MemberAdded|El propietario de un equipo agrega miembros a un equipo o un chat de grupo.|
 |Pestaña agregada|TabAdded|Un usuario agrega una pestaña a un canal.|
 |Configuración de canal cambiada|ChannelSettingChanged|La operación ChannelSettingChanged se registra cuando se realizan las siguientes actividades por un miembro del equipo. Para cada una de estas actividades, se muestra una descripción de la opción de configuración que se modificó (mostrada entre paréntesis a continuación) mostrada en la columna **Elemento** de los resultados de la búsqueda en el registro de auditoría. <br/><br/>- Cambia el nombre de un canal de equipo (**Nombre del canal**). <br/><br/>- Cambia la descripción de un canal de equipo (**Descripción del canal**).|
 |Configuración de organización cambiada|TeamsTenantSettingChanged|La operación OrganizationSettingChanged se registra cuando un administrador global realiza las siguientes actividades (mediante el Centro de administración de Microsoft 365); Tenga en cuenta que estas actividades afectarán a la configuración de Microsoft Teams de toda la organización. Para obtener más información, consulte [Configuración de administrador de Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2). <br/> Para cada una de estas actividades, se muestra una descripción de la opción de configuración que se modificó (mostrada entre paréntesis a continuación) mostrada en la columna **Elemento** de los resultados de la búsqueda en el registro de auditoría. <br/><br/>- Habilita o deshabilita Microsoft Teams para la organización (**Microsoft Teams**). <br/><br/>- Habilita o deshabilita la interoperabilidad entre Microsoft Teams y Skype Empresarial para la organización (**Interoperabilidad de Skype Empresarial**). <br/><br/>- Habilita o deshabilita la vista de organigrama en los clientes de Microsoft Teams (vista de organigrama **). <br/><br/>- Habilita o deshabilita la posibilidad que tienen los miembros del equipo para programar reuniones privadas (** Programación de reuniones privadas **). <br/><br/>- Habilita o deshabilita la posibilidad que tienen los miembros del equipo para programar reuniones de canal (Programación de reuniones de canal**). <br/><br/>- Habilita o deshabilita las llamadas de vídeo en las reuniones de Teams (Vídeo para reuniones de Skype **). <br/><br/>- Habilita o deshabilita la pantalla compartida en las reuniones Microsoft Teams de la organización (** Uso compartido de pantalla para reuniones de Skype **). <br/><br/>- Habilita o deshabilita la posibilidad de agregar imágenes animadas (denominadas imágenes Giphy) a las conversaciones de Teams (Imágenes animadas**). <br/><br/>- Cambia la configuración de la clasificación de contenido de la organización (**Clasificación de contenido**). La clasificación de contenido restringe el tipo de imagen animada que se puede mostrar en las conversaciones. <br/><br/>- Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen imágenes personalizables (denominadas memes personalizados) de Internet a las conversaciones del equipo (Imágenes personalizables de Internet **). <br/><br/>- Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen imágenes editables (denominadas adhesivos) a las conversaciones del equipo (** Imágenes editables **). <br/><br/>- Habilita o deshabilita la posibilidad de que los miembros del equipo usen bots en canales y chats de Microsoft Teams (Bots en toda la organización**). <br/><br/>- Habilita bots específicos para Microsoft Teams. Esto no incluye a T-Bot, que es el robot de ayuda de Microsoft Teams que está disponible cuando se habilitan los bots para la organización (**Bots individuales**). <br/><br/>- Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen extensiones o pestañas (**Extensiones o pestañas**). <br/><br/>- Habilita o deshabilita la carga lateral de los bots de propiedad para Microsoft Teams (**Carga lateral de bots**). <br/><br/>- Habilita o deshabilita la posibilidad de que los usuarios envíen mensajes de correo electrónico a un canal de Microsoft Teams (**Correo electrónico del canal**).|
@@ -736,7 +736,7 @@ En la siguiente tabla se enumeran las actividades de usuario y administrador en 
 |Equipo eliminado|TeamDeleted|Un propietario de equipo elimina un equipo.|
 |Bot quitado del equipo|BotRemovedFromTeam|Un usuario quita un bot de un equipo.|
 |Conector quitado|ConnectorRemoved|Un usuario quita un conector de un canal.|
-|Miembros quitados del equipo|MemberRemoved|El propietario de un equipo remueve miembros de un equipo.|
+|Miembros quitados|MemberRemoved|El propietario de un equipo quita a los miembros de un equipo o de un chat de grupo.|
 |Pestaña removida|TabRemoved|Un usuario quita una pestaña de un canal.|
 |Conector actualizado|ConnectorUpdated|Un usuario ha modificado un conector en un canal.|
 |Pestaña actualizada|TabUpdated|Un usuario ha modificado una pestaña en un canal.|
@@ -836,6 +836,7 @@ En la tabla siguiente se enumeran los eventos que se producen a partir de las ta
 |Etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un documento mediante Office en la web.|
 |Se ha cambiado la etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelChanged|Se ha aplicado una etiqueta de confidencialidad diferente a un documento mediante Office en la web.|
 |Etiqueta de confidencialidad eliminada del sitio|FileSensitivityLabelRemoved|Se ha quitado una etiqueta de confidencialidad de un documento mediante Office en la web.|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange
 
