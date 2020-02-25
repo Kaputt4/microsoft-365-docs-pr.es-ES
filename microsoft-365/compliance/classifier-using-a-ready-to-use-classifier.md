@@ -1,5 +1,5 @@
 ---
-title: Usar un clasificador listo para usar (vista previa)
+title: Uso de un clasificador integrado (versión preliminar)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,15 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 incluye varios clasificadores listos para usar para el aprendizaje automático que puede usar para identificar y etiquetar el contenido en toda la organización. En este tema se muestra cómo prepararse para usar estos clasificadores listos para usarlos.
-ms.openlocfilehash: 8f3df8e7851bf453add162df4088e11dc7745cee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 incluye varios clasificadores integrados que puede usar para identificar y etiquetar el contenido en toda la organización. En este tema se muestra cómo prepararse para usar estos clasificadores.
+ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078797"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266736"
 ---
-# <a name="using-a-ready-to-use-classifier-preview"></a>Usar un clasificador listo para usar (vista previa)
+# <a name="using-a-built-in-classifier-preview"></a>Uso de un clasificador integrado (versión preliminar)
 
 Microsoft ha entrenado y probado varios clasificadores con conjuntos de datos de ejemplo muy grandes, lo que puede ayudar a identificar determinadas categorías de contenido. Consulte [Introducción a los clasificadores capacitados (versión preliminar)](classifier-getting-started-with.md). Estos clasificadores se muestran en el `Ready to use` grupo de forma predeterminada.
 
@@ -33,14 +33,14 @@ Microsoft ha entrenado y probado varios clasificadores con conjuntos de datos de
 - **Threat**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionadas con amenazas para confirmar violencia o daño físico o daño a una persona o propiedad.
 
 > [!NOTE]
-> Antes de usar los clasificadores listos para usar en el flujo de trabajo de clasificación y etiquetado, debe probarlo con una muestra del contenido de la organización que sienta que se ajusta a la categoría para comprobar que sus predicciones de clasificación satisfacen sus expectativas.
+> Antes de usar clasificadores integrados en el flujo de trabajo de clasificación y etiquetado, debe probarlo con una muestra del contenido de la organización que considere que la categoría para comprobar que sus predicciones de clasificación satisfacen sus expectativas.
 
 > [!IMPORTANT]
 > Tenga en cuenta que el idioma ofensivo, el acoso, los términos blasfemos y los clasificadores de amenazas solo funcionan con texto que admite búsquedas no es exhaustivo o completo. Además, los estándares de idioma y culturales cambian continuamente y, teniendo en cuenta estas realidades, Microsoft se reserva el derecho de actualizar estos clasificadores según su criterio. Aunque los clasificadores pueden ayudar a su organización a supervisar el uso ofensivo y otros idiomas, los clasificadores no abordan las consecuencias de dicho lenguaje y no pretenden proporcionar a los únicos medios de supervisión de la organización o responder al uso de ese idioma. Su organización, y no Microsoft o sus subsidiarias, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, la aplicación, el bloqueo, la eliminación y la retención de cualquier contenido identificado por un clasificador previamente entrenado.
 
-## <a name="how-to-prepare-for-and-use-a-ready-to-use-classifier"></a>Cómo preparar y usar un clasificador listo para usar
+## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>Cómo preparar y usar un clasificador integrado
 
-1. Recopile los elementos de contenido de pruebas desechables que considera que pertenecen a la categoría del clasificador listo para usar (coincidencias positivas) y de los que no se deben incluir (coincidencias negativas) en la categoría que está probando.
+1. Recopile los elementos de contenido de pruebas desechables que considera que pertenecen a la categoría del clasificador integrado (coincidencias positivas) y los que no se deben incluir (coincidencias negativas) en la categoría que está probando.
 
 > [!IMPORTANT]
 > Los elementos de ejemplo no deben estar cifrados y deben estar en inglés.
@@ -65,7 +65,7 @@ Microsoft ha entrenado y probado varios clasificadores con conjuntos de datos de
 
 10. Elija su clasificador de la lista, en este caso`Source Code`
 
-11. Asigne un nombre a la Directiva, por ejemplo, "código fuente preparado para usar la prueba de clasificador".
+11. Asigne un nombre a la Directiva, por ejemplo, "prueba de clasificador del código fuente integrada".
 
 12. Elija `Let me choose specific locations`.
 

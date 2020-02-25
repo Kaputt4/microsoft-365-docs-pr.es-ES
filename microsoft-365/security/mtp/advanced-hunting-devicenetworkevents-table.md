@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 43110a119e8a38cd893a4a5cba41467fa39d7825
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2e7999fef43adb372947d9edf92b84ac67f347fe
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600427"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235009"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 La `DeviceNetworkEvents` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre conexiones de red y eventos relacionados. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 

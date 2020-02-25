@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 34401bde5af594899f88b93f8ca76695ce3c7132
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602767"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235049"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 La tabla o `DeviceEvents` los eventos de dispositivos variados del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contienen información sobre varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad, como antivirus de Windows Defender y protección contra la vulnerabilidad. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 

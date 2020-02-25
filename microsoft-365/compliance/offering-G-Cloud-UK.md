@@ -1,7 +1,7 @@
 ---
 title: Reino Unido Government-Cloud (G-Cloud)
 description: El servicio de corona Commercial renovó la clasificación de servicios en la nube de Microsoft a la nube de administración pública v. 6.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ecd8a362b0e77df846f486b0a424425f012ee68b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602357"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236890"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Reino Unido Government-Cloud (G-Cloud)
 
@@ -41,7 +41,7 @@ Obtenga más información sobre las ventajas de United Kingdom G-Cloud V6 en la 
 
 Obtenga información sobre cómo acelerar la implementación de United Kingdom G-Cloud V6 con nuestro proyecto de Azure Security and Compliance: [descargar la guía de implementación de Microsoft Blueprint uk G-Cloud Principle](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance).
 - Cloud App Security
@@ -49,7 +49,7 @@ Obtenga información sobre cómo acelerar la implementación de United Kingdom G
 - Intune
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - Office 365: Exchange Online, SharePoint Online y Skype empresarial online
-- El servicio en la nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
+- El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
@@ -64,17 +64,17 @@ Para confirmar que los servicios en la nube de Microsoft mantienen su cumplimien
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
-- [Entorno de riesgo de nube de Dynamics 365 UK G](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
+- [Entorno de riesgo de nube de Dynamics 365 UK G](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ### <a name="intune"></a>Intune
 
-- [Entorno de riesgos de nube para Intune UK G](https://aka.ms/IntuneUKGCloudRiskEnvironment)
+- [Entorno de riesgos de nube para Intune UK G](https://go.microsoft.com/fwlink/?linkid=2099702)
 - [Riesgo residual de nube de Intune G](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Resumen de la evaluación de seguridad en la nube de Azure UK G](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 UK G entorno de riesgos de nube](https://aka.ms/Office365UKGCloudRiskEnvironment)
+- [Office 365 UK G entorno de riesgos de nube](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ## <a name="accelerate-your-deployment-of-uk-g-cloud-solutions-on-azure"></a>Acelere la implementación de las soluciones de la nube en el Reino Unido en Azure
 
@@ -114,7 +114,7 @@ El [Portal del Centro de confianza](https://support.office.com/article/Get-start
 - [G-Cloud Security Principles](https://aka.ms/UK-G-Cloud)
 - [Mercado digital](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

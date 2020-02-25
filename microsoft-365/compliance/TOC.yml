@@ -209,7 +209,7 @@
           href: data-classification-pub-preview-relnotes.md
         - name: Introducción al entrenamiento de clasificadores (vista previa)
           href: classifier-getting-started-with.md
-        - name: Usar un clasificador listo para usar (vista previa)
+        - name: Uso de un clasificador integrado (versión preliminar)
           href: classifier-using-a-ready-to-use-classifier.md
         - name: Crear y entrenar clasificadores (vista previa)
           href: classifier-creating-a-trainable-classifier.md
@@ -1153,7 +1153,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: "Office\_365 Empresa"
+- name: Office 365 Empresa
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
 - name: Seguridad de Microsoft 365
   href: 'https://docs.microsoft.com/microsoft-365/security/'

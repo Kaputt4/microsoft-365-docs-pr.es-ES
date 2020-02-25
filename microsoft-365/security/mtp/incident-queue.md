@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 90f7aaf7eb4425dadeb27699654656c86d2b6263
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ef10eede38128bbf9b23537d860113b71f603089
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087309"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235129"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Priorizar incidentes con la Protección contra amenazas de Microsoft
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 La Protección contra amenazas de Microsoft aplica análisis de correlación y agrega todas las alertas y las investigaciones relacionadas de diferentes productos en un incidente. La Protección contra amenazas de Microsoft también activa alertas exclusivas en actividades que solo se pueden identificar como malintencionadas, y esto es posible gracias a que la Protección contra amenazas de Microsoft tiene visibilidad de un extremo a otro en todo el conjunto de productos de Microsoft. Al hacerlo, la Protección contra amenazas de Microsoft narra una historia más amplia del ataque, lo que permite que el analista de operaciones de seguridad entienda y se ocupe de las amenazas complejas en toda la organización.
 

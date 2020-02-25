@@ -13,13 +13,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Use clasificadores que se puedan entrenar cuando uno de los clasificadores de cuadros listos para usar no satisfaga sus necesidades. Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este tema se muestra cómo crear un clasificador personalizado.
-ms.openlocfilehash: bbf2fac4e912e6619f3fe1c9a328aa61782cb640
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Use clasificadores que se podrán entrenar cuando uno de los clasificadores integrados no satisfaga sus necesidades. Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este tema se muestra cómo crear un clasificador personalizado.
+ms.openlocfilehash: 31fb4374290bcf92a5c68bc4e7531e9472622b0b
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078896"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266899"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creación de un clasificador capacitado (versión preliminar)
 
@@ -123,7 +123,7 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 > [!CAUTION]
 > Una vez publicado un clasificador, no puede pasar por ningún entrenamiento adicional, así que asegúrese de que ha probado y revisado el mayor número de elementos posible para asegurarse de que la precisión sea lo más alta posible.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

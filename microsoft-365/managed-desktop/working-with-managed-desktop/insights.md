@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085699"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250430"
 ---
 # <a name="work-with-insights"></a>Trabajar con ideas
 
@@ -23,6 +23,10 @@ Con estos paneles puede encontrar respuestas a preguntas como las siguientes:
 - ¿Qué aplicaciones se usan más y durante qué tiempo?
 - ¿Qué aplicaciones están causando problemas al bloquear o colgar un lote?
 - ¿Cómo pueden mitigar o resolver estos problemas los Operations de escritorio administrado por Microsoft?
+- ¿Qué aplicaciones están consumiendo más energía?
+- ¿Cuál es la duración de la batería prevista mis dispositivos?
+- ¿Cuál es el estado actual de las actualizaciones de seguridad en los dispositivos?
+- ¿Cuánto tiempo tardó el 95% de los dispositivos en estar al día con la actualización de seguridad más reciente?
 
 Para obtener acceso a estas vistas desde el centro de administración de Microsoft 365, seleccione **Ver detalles** en el área **informes** :
 
@@ -46,3 +50,9 @@ Obtenga más información acerca de la [confiabilidad](reliability-insights.md).
 Esta vista muestra información sobre el consumo de energía de las aplicaciones y la duración prevista de la batería para los dispositivos de su entorno. Para ver esta información, seleccione la pestaña **batería** .
 
 Obtenga más información sobre la información sobre las [baterías](battery-insights.md).
+
+## <a name="windows-security-update-insights"></a>Información sobre la actualización de seguridad de Windows
+
+Esta vista muestra información sobre el estado de las actualizaciones de seguridad para los dispositivos de escritorio administrados por Microsoft. Para ver esta información, seleccione la ficha **udates de seguridad de Windows** .
+
+Obtenga más información sobre [Insights de actualizaciones de seguridad](security-update-insights.md).
