@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6a0caa80d89ad40c3a2e2b0caa55c8dc2027a06d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8bcfd7229a6e27b2e68523754c2b29c1bb9c3cdc
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087286"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266106"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -38,7 +38,7 @@ Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y
 
 Además, puede obtener acceso a sus recomendaciones y puntuaciones a través de la [API de Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Obtenga información sobre el [tipo de recurso de puntuación segura](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o solucionar la acción de mejora con una aplicación o un software de terceros. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios.
 
@@ -138,79 +138,13 @@ La puntuación segura de Microsoft es un resumen numérico de la postura de segu
 
 Para hacer que Microsoft califique de forma segura sea un mejor representante de su postura de seguridad, hemos realizado algunos cambios.
 
+Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md)
+
 ### <a name="removed-not-scored-improvement-actions"></a>Acciones de mejora "sin puntuar" quitadas
 
 Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. La puntuación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Las acciones de mejora no puntuadas no se pueden medir.  
 
 Por estos motivos, se han eliminado todas las acciones de mejora que no se han puntuado. No es necesario realizar ninguna acción en su parte.
-
-## <a name="whats-coming"></a>¿Qué llega?
-
-Para hacer que la puntuación segura de Microsoft sea un mejor representante de su postura de seguridad y mejorar el uso, estamos realizando algunos cambios en un futuro próximo. Se cambiará la puntuación y la puntuación máxima posible. Sin embargo, esto no implica un cambio en su postura de seguridad.
-
-### <a name="removing-improvement-actions-from-intune"></a>Eliminación de acciones de mejora de Intune
-
-Después de una evaluación de las acciones de mejora de la puntuación segura de Microsoft que se han proporcionado desde Intune, se decidió que no proporcionan una representación útil de la postura de seguridad de los dispositivos en las organizaciones. En lugar de centrarse en las directivas, estamos trabajando para incluir controles de seguridad que evalúen directamente el estado de configuración de los dispositivos.
-
-Se quitarán las siguientes acciones para la mejora de Intune:
-
-- Habilitar la administración de dispositivos móviles de Microsoft Intune
-- Crear una directiva de cumplimiento de Microsoft Intune para Android
-- Crear una directiva de cumplimiento de Microsoft Intune para Android para trabajar
-- Crear una directiva de protección de aplicaciones de Microsoft Intune para Android
-- Crear una directiva de protección de aplicaciones de Microsoft Intune para iOS
-- Marcar dispositivos sin directiva de cumplimiento de Microsoft Intune asignada como no compatible
-- Crear una directiva de cumplimiento de Microsoft Intune para iOS
-- Crear una directiva de cumplimiento de Microsoft Intune para macOS
-- Crear una directiva de cumplimiento de Microsoft Intune para Windows
-- Crear un perfil de configuración de Microsoft Intune para Android
-- Crear un perfil de configuración de Microsoft Intune para Android para trabajar
-- Crear un perfil de configuración de Microsoft Intune para macOS
-- Crear un perfil de configuración de Microsoft Intune para iOS
-- Crear un perfil de configuración de Microsoft Intune para Windows
-- Habilitar la detección de jailbreak mejorada en Microsoft Intune
-- Requerir que todos los dispositivos sean revisados, tengan antivirus y firewalls habilitados
-- Habilitar la integración de ATP de Windows Defender en Microsoft Intune
-- Crear una directiva de Windows Information Protection para Microsoft Intune
-- Requerir que todos los dispositivos tengan configuraciones de seguridad avanzada
-- Revisar semanalmente el informe de dispositivos bloqueados
-
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Eliminación de acciones de mejora que no cumplen las expectativas para una medida fiable
-
-Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quitan las siguientes acciones de mejora.
-
-- Activar la grabación de datos de auditoría
-- Descubra aplicaciones de TI de instantáneas arriesgadas y no compatibles
-- Revisión de permisos & bloquear aplicaciones de OAuth arriesgadas conectadas a su entorno
-- Configurar el control de versiones en las bibliotecas de documentos de SharePoint Online
-- Almacenar documentos de usuario en OneDrive para la empresa
-- No permitir la delegación de buzones
-- Permitir vínculos de uso compartido de invitados anónimos para sitios y documentos
-- Configurar las directivas de datos adjuntos seguros de Office 365 ATP
-- Configurar vínculos seguros de Office 365 para comprobar direcciones URL
-
-### <a name="mfa-improvement-action-updates"></a>Actualizaciones de acciones de mejora de MFA
-
-Para reflejar la necesidad de las empresas de garantizar la máxima seguridad al aplicar las directivas que funcionan con su negocio, la calificación segura de Microsoft es quitar tres acciones de mejora centradas alrededor de la autenticación multifactor y agregando dos.
-
-Los tres que se quitarán:
-
-- Registrar todos los usuarios para la autenticación multifactor
-- Requerir MFA para todos los usuarios
-- Requerir MFA para los roles privilegiados de Azure AD
-
-Nuevas acciones de mejora agregadas:
-
-- Asegurarse de que todos los usuarios puedan completar la autenticación multifactor para el acceso seguro
-- Requerir MFA para roles administrativos
-
- Estas nuevas acciones de mejora requerirán el registro de los usuarios o administradores para la autenticación multifactor (MFA) en el directorio y el establecimiento del conjunto adecuado de directivas que se adapten a las necesidades de la organización. El objetivo principal es tener flexibilidad a la vez que se asegura de que todos los usuarios y administradores puedan autenticarse con varios factores o solicitudes de verificación de identidad basadas en riesgos. Esto puede adoptar la forma de establecer los valores predeterminados de seguridad que permiten a Microsoft decidir cuándo desafiar a los usuarios para MFA o tener varias directivas que apliquen decisiones con ámbito.
-
-### <a name="removing-review-improvement-actions"></a>Eliminación de acciones de mejora de "revisión"
-
-Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. Una calificación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Revisión las acciones de mejora no se miden en el mismo estándar que otras acciones de mejora.  
-
-Por estos motivos, todas las acciones de mejora que requerían una cadencia de revisión se eliminarán temporalmente. No es necesario realizar ninguna acción en su parte. 
 
 ### <a name="preview-features"></a>Versión preliminar de las características
 

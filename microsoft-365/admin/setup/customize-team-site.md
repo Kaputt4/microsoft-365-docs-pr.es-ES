@@ -1,0 +1,122 @@
+---
+title: Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos
+f1.keywords:
+- NOCSH
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: mnirkhe
+audience: Admin
+ms.topic: get-started-article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+- SPO_Content
+ms.custom:
+- IT_Networking
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
+description: Obtenga información sobre cómo personalizar, organizar y administrar el sitio de grupo.
+ms.openlocfilehash: 8b399caf0724b0aa01ee18faa0e743df1d1073ef
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42257021"
+---
+# <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos
+
+Si tiene una pequeña empresa con algunos empleados, una de las mejores formas de configurar y facilitar el uso compartido de archivos y la colaboración en línea es usar OneDrive y un sitio de grupo de SharePoint de forma conjunta. Se recomienda crear un sitio de grupo que esté conectado a un grupo de Office 365. Si desea usar el chat, puede crear este sitio creando un equipo en Microsoft Teams. Para obtener más información sobre Teams, vea [vídeo: ¿Qué es Microsoft Teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). Si no desea usar Teams, puede crear un sitio de grupo desde la página de inicio de SharePoint. 
+  
+[¿Qué es un sitio de grupo de SharePoint?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
+  
+[Crear un sitio de grupo en SharePoint](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx)
+  
+Estas son algunas ideas y vínculos para ayudarle a personalizar, organizar y administrar el sitio de grupo. 
+  
+ 
+## <a name="customize-your-team-site"></a>Personalizar un sitio de grupo
+
+Para dar más visibilidad a los datos en un sitio de grupo, puede personalizar la página de inicio de SharePoint para que le ayude a usted y a sus empleados a obtener la información que necesita rápidamente. Por ejemplo, puede tener vínculos a carpetas de empleado de OneDrive y vínculos a documentos, contactos, tareas, calendarios y un bloc de notas de OneNote donde almacene las notas y agendas de la reunión.
+  
+Para obtener información sobre cómo personalizar la apariencia de la página de inicio, vea [cambiar el aspecto de su sitio de SharePoint](https://support.office.com/article/06bbadc3-6b04-4a60-9d14-894f6a170818.aspx).
+  
+Mejorar la navegación en el sitio con [personalizar la navegación en el sitio de SharePoint](https://support.office.com/article/3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca.aspx).
+  
+Para mejorar la detectabilidad de un sitio, agréguelo como un vínculo destacado en la página de inicio de SharePoint. Para obtener información, vea [Agregar vínculos destacados a la página de inicio de SharePoint](/sharepoint/change-links-list-on-sharepoint-home-page).
+  
+Para agregar una imagen a la página de inicio de un sitio de grupo, vea [Agregar una imagen o un archivo de imagen a una página de SharePoint](https://support.office.com/article/4A9B0E98-C89A-4A41-8ADB-B7750DCCCA16.aspx#ID0EAACAAA=SharePoint_Online).
+  
+Para agregar páginas a su sitio, vea [Agregar una página a un sitio](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec.aspx).
+  
+Para obtener información sobre la configuración del sitio de grupo, vea [Manage Your SharePoint Team Site Settings](https://support.office.com/article/8376034D-D0C7-446E-9178-6AB51C58DF42.aspx).
+  
+## <a name="work-with-document-libraries"></a>Trabajar con bibliotecas de documentos
+
+Un sitio de grupo incluye una biblioteca de documentos que puede empezar a usar inmediatamente. 
+
+Para empezar a cargar, vea [cargar una carpeta o archivos en una biblioteca de documentos](https://support.office.com/article/eb18fcba-c953-4d45-8d90-8da66edeacdb) .
+   
+Obtenga información sobre cómo editar, eliminar, desproteger archivos y mucho más. Para obtener más información, vea [trabajar con archivos en una biblioteca de documentos](https://support.office.com/article/a9d89171-1673-4892-9dd2-1ca52037dea2.aspx).
+  
+Para obtener información sobre cómo crear vistas de bibliotecas para datos específicos de una superficie, vea [crear una vista personalizada de una biblioteca de documentos](https://support.office.com/article/8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7.aspx).
+  
+## <a name="work-with-lists-to-organize-data"></a>Trabajar con listas para organizar los datos
+
+SharePoint incluye muchas plantillas para listas que puede Agregar a su sitio, como una lista de vínculos, un calendario, contactos o tareas. 
+  
+Obtenga información sobre cómo [crear una lista en SharePoint](https://support.office.com/article/0D397414-D95F-41EB-ADDD-5E6EFF41B083.aspx#ID0EAAGAAA=Online).
+  
+Para obtener información sobre cómo expandir las listas con más columnas, vea [crear una columna en una lista o biblioteca de SharePoint](https://support.office.com/article/2b0361ae-1bd3-41a3-8329-269e5f81cfa2.aspx#ID0EAADAAA=Online).
+  
+Si va a almacenar una gran cantidad de datos en una lista, vea [administrar listas y bibliotecas de gran tamaño en SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
+  
+Ver un vídeo sobre cómo agregar calendarios a su sitio, vea [crear un calendario compartido en Office 365](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+
+## <a name="organize-sites-into-hubs"></a>Organizar sitios en concentradores
+
+El sitio de grupo comparte casi todo lo que hay con todos los miembros del grupo asociado con el sitio. Si desea tener un sitio independiente para clientes específicos, puede crear sitios de grupo adicionales y administrarlos mediante sitios concentradores de SharePoint. Aquí tiene más información. 
+  
+Los sitios de concentradores le permiten agregar y asociar sitios. Para obtener más información, vea [¿Qué es un sitio concentrador de SharePoint?](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx).
+  
+Listo para crear un sitio concentrador, consulte [crear un sitio concentrador en SharePoint Online](/sharepoint/create-hub-site).
+  
+Para obtener información sobre cómo agregar sitios a un sitio concentrador, vea [asociar un sitio de SharePoint a un sitio concentrador](https://support.office.com/article/ae0009fd-af04-4d3d-917d-88edb43efc05.aspx).
+  
+## <a name="sharing-files-with-the-team"></a>Uso compartido de archivos con el equipo
+
+Aunque el almacenamiento y la organización son un comienzo, el uso compartido con su equipo y los clientes externos también es importante. Estos son algunos vínculos a temas que le ayudarán a administrar los usuarios y a compartir sus datos. 
+  
+Para compartir archivos con su equipo, vea [compartir archivos o carpetas de SharePoint en Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
+  
+Para comprender el uso compartido fuera de su equipo, vea [external Sharing Overview](/sharepoint/external-sharing-overview).
+  
+## <a name="managing-users-and-groups"></a>Administración de usuarios y grupos
+
+Al administrar el sitio de grupo, es posible que tenga que agregar o quitar usuarios. Esta es la información que le ayudará a comprender, agregar y administrar usuarios en el sitio de grupo. 
+  
+Vea un vídeo sobre los grupos con los [grupos comprender y administrar](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx). 
+  
+Para agregar usuarios a un grupo de Office 365, vea [Agregar usuarios individualmente o de forma masiva a office 365: ayuda para administradores](../add-users/add-users.md).
+  
+Obtenga información sobre cómo controlar solicitudes de acceso con [configurar y administrar solicitudes de acceso](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx).
+  
+## <a name="here-are-more-topics-you-might-be-interested-in"></a>Otros temas que podrían interesarle
+
+- **Configurar las aplicaciones de Office en tabletas y teléfonos**. Tiene que realizar esta acción para poder editar los archivos almacenados en el sitio de grupo desde su tableta o teléfono. Si no instala las aplicaciones de Office en su tableta o teléfono, podrá ver los archivos en el sitio de grupo, pero no editarlos. 
+    
+  - [Instalar y configurar Office en un dispositivo Android con Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+    
+  - [Instalar y configurar Office en un iPhone o iPad con Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+    
+  - [Configurar Office en Windows Phone con Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+    
+- [Más información sobre el uso de OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
+    
+
+
