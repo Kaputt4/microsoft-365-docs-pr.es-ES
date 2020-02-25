@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 63e07ffd58a7add7f7f72aad20b6389cd22d2ca7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602757"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250480"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Cómo se administran las actualizaciones en el escritorio administrado por Microsoft
 
@@ -23,7 +23,7 @@ ms.locfileid: "41602757"
 
 <!--Update management -->
 
-Microsoft Managed Desktop conecta todos los dispositivos con una infraestructura moderna basada en la nube. Mantener Windows, Office, los controladores, el firmware y las aplicaciones de Microsoft Store para empresas actualizadas es un equilibrio entre velocidad y estabilidad. Los grupos de implementación se usarán para asegurarse de que las directivas y las actualizaciones del sistema operativo se implementan de forma segura. 
+Microsoft Managed Desktop conecta todos los dispositivos con una infraestructura moderna basada en la nube. Mantener Windows, Office, los controladores, el firmware y las aplicaciones de Microsoft Store para empresas actualizadas es un equilibrio entre velocidad y estabilidad. Los grupos de implementación se usarán para asegurarse de que las directivas y las actualizaciones del sistema operativo se implementan de forma segura. Para obtener más información al respecto, vea el vídeo [Microsoft Managed Desktop Change and Release Process](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
 
 Las actualizaciones que Microsoft publica son acumulativas y se clasifican como actualizaciones de calidad o de características.
 Para obtener más información, vea [Windows Update para empresas: actualizar tipos](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
@@ -58,7 +58,7 @@ Cómo funciona la implementación de actualizaciones:
 <tr><th colspan="5">Actualizar la configuración de la implementación</th></tr>
 <tr><th>Tipo de actualización</th><th>Prueba</th><th>Primero</th><th>Rápida</th><th>Amplias</th></tr>
 <tr><td>Actualizaciones de calidad para el sistema operativo</td><td>0 días</td><td>0 días</td><td>0 días</td><td>3 días</td></tr>
-<tr><td>Actualizaciones de características para el sistema operativo</td><td>0 días</td><td>30 días</td><td>60 días</td><td>90 días</td></tr>
+<tr><td>Actualizaciones de características para el sistema operativo</td><td>0 días</td><td>30 días</td><td>60 días</td><td>90 días</td></tr>
 <tr><td>Controladores o firmware</td><td colspan="4">Sigue la programación de las actualizaciones de calidad</td></tr>
 <tr><td>Definición de antivirus</td><td colspan="4">Se actualizó con cada examen</td></tr>
 <tr><td>Office 365 ProPlus</td><td colspan="4">Después del canal mensual de Office

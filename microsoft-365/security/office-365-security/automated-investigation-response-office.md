@@ -14,21 +14,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 436d70934e32f8609d35532188ac71cbd590c345
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 49b7e95e1669c106ee7f7bf9191ff8e73ae4802f
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228586"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261977"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Investigación y respuesta automatizadas (AIR) en Office 365
 
 A medida que se activen las alertas de seguridad, el equipo de operaciones de seguridad será el encargado de consultar esas alertas y tomar las medidas necesarias para proteger su organización. A veces, los equipos de operaciones de seguridad pueden sentirse abrumados por el volumen de alertas que se desencadenan. La funcionalidad de investigación y respuesta automatizada (AIR) de Office 365 puede ser de ayuda. AIR permite que el equipo de operaciones de seguridad funcione de forma más eficiente y eficaz. Las capacidades de AIR incluyen procesos de investigación automatizada en respuesta a amenazas bien conocidas que existen en la actualidad. Acciones de corrección adecuadas esperando la aprobación, lo que permite al equipo de operaciones de seguridad responder a amenazas detectadas. 
 
 En este artículo se proporciona información general sobre AIR y sus componentes. Cuando esté listo para empezar a usar AIR, vea [investigar y responder automáticamente a amenazas en Office 365](office-365-air.md).
-
-> [!TIP]
-> ¿Tiene Microsoft 365 E5 o Microsoft 365 E3 junto con la protección de la identidad y contra amenazas? Considere probar la [Protección contra amenazas de Microsoft](../mtp/microsoft-threat-protection.md).
 
 ## <a name="at-a-high-level"></a>A un alto nivel
 
