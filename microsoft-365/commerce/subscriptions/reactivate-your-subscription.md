@@ -1,0 +1,104 @@
+---
+title: Reactivar la suscripción
+f1.keywords:
+- NOCSH
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: mnirkhe
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+- commerce
+ms.custom:
+- TopSMBIssues
+- fwlink 874703
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+- BEA160
+- GEA150
+ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
+description: Obtenga información acerca de cómo reactivar la suscripción de Office 365 cuando expire, o si Microsoft la deshabilita o la cancela en el medio.
+ms.openlocfilehash: 7b902e210e39f41f6753958c5b6453c85a242f6c
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42245985"
+---
+# <a name="reactivate-your-subscription"></a>Reactivar la suscripción
+
+Si su suscripción expira o fue deshabilitada por Microsoft o si la canceló a mediados de un término de suscripción, puede reactivarla en el centro de administración.
+  
+ **¿No es un administrador?** Póngase en contacto con su administración para reactivar la suscripción.
+
+::: moniker range="o365-worldwide"
+
+> [!NOTE]
+> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
+
+1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+
+2. En la página **productos & Services** , busque la suscripción que desea reactivar. En la sección **facturación** , seleccione **reactivar**.
+  
+    Si no ve **reactivar** como acción disponible, [llame al soporte técnico](../../admin/contact-support-for-business-products.md) para reactivar la suscripción.
+
+3. Confirme los datos de pago. Puede actualizar aquí su información de pago actual. Cuando haya terminado de introducir el método de pago, seleccione **reactivar**.
+
+  - Si su suscripción ha expirado, después de enviar los detalles de pago, la suscripción vuelve a un estado activo y la siguiente fecha de **facturación** se extiende un mes o un año, en función de su compromiso de suscripción actual. Si paga con tarjeta de crédito o cuenta bancaria, se le cobrará la extensión a su tarjeta de crédito o cuenta bancaria. Si paga mediante factura, verá la extensión reflejada en la siguiente factura. Para asegurarse de que la suscripción no expira de nuevo, siga los pasos para [activar o desactivar la facturación periódica](renew-your-subscription.md).
+
+    > [!NOTE]
+    > La capacidad para pagar por cuenta bancaria no está disponible en algunos países o regiones.
+  
+  - Si la suscripción se ha cancelado o se ha deshabilitado porque no se ha recibido un pago, vuelve a un estado activo y la próxima fecha de **facturación** sigue siendo la misma.
+
+::: moniker-end
+
+
+::: moniker range="o365-germany"
+  
+1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+
+2. Busque la suscripción que desea reactivar y, a continuación, seleccione **reactivar**.
+
+    ![Primer plano de una tarjeta de suscripción que indica que se ha deshabilitado y se ha reducido la funcionalidad con un botón reactivate.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+  
+    Si no ve **reactivar** como acción disponible, [llame al soporte técnico](../../admin/contact-support-for-business-products.md) para reactivar la suscripción.
+
+3. Introduzca los datos de pago. Puede actualizar aquí su información de pago actual.
+
+  - Si su suscripción ha expirado, después de enviar los detalles de pago, la suscripción vuelve a un estado activo y la siguiente fecha de **facturación** se extiende un mes o un año, en función de su compromiso de suscripción actual. Si paga con tarjeta de crédito o cuenta bancaria, se le cobrará la extensión a su tarjeta de crédito o cuenta bancaria. Si paga mediante factura, verá la extensión reflejada en la siguiente factura. Para asegurarse de que la suscripción no expira de nuevo, siga los pasos para [activar o desactivar la facturación periódica](renew-your-subscription.md).
+
+    > [!NOTE]
+    > La capacidad para pagar por cuenta bancaria no está disponible en algunos países o regiones.
+  
+  - Si la suscripción se ha cancelado o se ha deshabilitado porque no se ha recibido un pago, vuelve a un estado activo y la próxima fecha de **facturación** sigue siendo la misma.
+
+  ::: moniker-end
+
+::: moniker range="o365-21vianet"
+  
+1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+
+2. Busque la suscripción que desea reactivar y, a continuación, seleccione **reactivar**.
+
+    ![Primer plano de una tarjeta de suscripción que indica que se ha deshabilitado y se ha reducido la funcionalidad con un botón reactivate.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+  
+    Si no ve **reactivar** como acción disponible, [llame al soporte técnico](../../admin/contact-support-for-business-products.md) para reactivar la suscripción.
+
+3. Introduzca los datos de pago. Puede actualizar aquí su información de pago actual.
+
+  - Si su suscripción ha expirado, después de enviar los detalles de pago, la suscripción vuelve a un estado activo y la siguiente fecha de **facturación** se extiende un mes o un año, en función de su compromiso de suscripción actual. Si paga con tarjeta de crédito o cuenta bancaria, se le cobrará la extensión a su tarjeta de crédito o cuenta bancaria. Si paga mediante factura, verá la extensión reflejada en la siguiente factura. Para asegurarse de que la suscripción no expira de nuevo, siga los pasos para [activar o desactivar la facturación periódica](renew-your-subscription.md).
+
+    > [!NOTE]
+    > La capacidad para pagar por cuenta bancaria no está disponible en algunos países o regiones.
+  
+  - Si la suscripción se ha cancelado o se ha deshabilitado porque no se ha recibido un pago, vuelve a un estado activo y la próxima fecha de **facturación** sigue siendo la misma.
+
+  ::: moniker-end

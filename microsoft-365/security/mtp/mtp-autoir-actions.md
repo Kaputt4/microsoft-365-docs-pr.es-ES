@@ -1,5 +1,5 @@
 ---
-title: Aprobar o rechazar acciones pendientes tras la investigación automatizada
+title: Aprobar o rechazar acciones pendientes tras una investigación automatizada
 description: Usar el centro de actividades para administrar acciones relacionadas con investigación y respuesta automatizadas
 keywords: acción, centro, autoair, automatizado, investigación, respuesta, corrección
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5118f7fddaee0fa768675597dee862eb75e4ed96
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225498"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261987"
 ---
-# <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>Aprobar o rechazar acciones pendientes de investigaciones automatizadas
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Aprobar o rechazar acciones pendientes tras una investigación automatizada
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -35,9 +35,7 @@ Cuando se ejecuta una investigación automatizada, puede resultar en una o más 
 > [!TIP]
 > Si cree que algo ha perdido o detectado erróneamente las características de respuesta e investigación automatizada en la protección contra amenazas de Microsoft, háganoslo saber. Consulte [Cómo informar de falsos positivos/negativos en capacidades de investigación y respuesta automatizadas (Air) en la protección contra amenazas de Microsoft](mtp-autoir-report-false-positives-negatives.md).
 
-Las acciones pendientes se pueden revisar y aprobar mediante uno de varios métodos:
-- [Usar el centro de actividades](#review-a-pending-action-in-the-action-center)
-- [Usar la vista detalles de la investigación](#review-a-pending-action-in-the-investigation-details-view)
+Las acciones pendientes se pueden revisar y aprobar mediante el [centro de actividades](#review-a-pending-action-in-the-action-center) o la [vista detalles](#review-a-pending-action-in-the-investigation-details-view)de la investigación.
 
 > [!NOTE]
 > Debe tener [los permisos adecuados](mtp-action-center.md#required-permissions-for-action-center-tasks) para aprobar o rechazar acciones de corrección.
@@ -65,5 +63,7 @@ Las acciones pendientes se pueden revisar y aprobar mediante uno de varios méto
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre el Centro de actividades](mtp-action-center.md)
+
 - [Más información sobre incidentes](incidents-overview.md)
+
 - [Obtener información sobre la búsqueda](advanced-hunting-overview.md)

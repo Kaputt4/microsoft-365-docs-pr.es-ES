@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d8ec204a0483edc6df6a5803659f33a5ed9ea146
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e3f51cfbe19a7b487f7382f0d2534b4a5efaab95
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600457"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235059"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 La `DeviceImageLoadEvents` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre los eventos de carga de dll. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 

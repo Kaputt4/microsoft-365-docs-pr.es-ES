@@ -1,5 +1,5 @@
 ---
-title: Cómo informar de falsos positivos o falsos negativos en AIR en la protección contra amenazas de Microsoft
+title: Controlar falsos positivos o falsos negativos en AIR en la protección contra amenazas de Microsoft
 description: ¿Perdió o se detectó un error por aire en la protección contra amenazas de Microsoft? Obtenga información sobre cómo enviar falsos positivos o falsos negativos a Microsoft para su análisis.
 keywords: automatizado, investigación, alerta, desencadenador, acción, corrección, falso positivo, falso negativo
 search.appverid: met150
@@ -19,21 +19,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: eef4cfa07fc25a2e7c8732dc89b66ffdbb3e3f7e
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175693"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262007"
 ---
-# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo informar de falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
+# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Controlar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
 ¿Las [capacidades automatizadas de investigación y respuesta](mtp-autoir.md) en Microsoft Threat Protection no se han detectado o no detectan nada correctamente? Hay pasos que puede llevar a cabo para solucionarlo. Puede:
+
 - [Informar de un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+
 - [Ajustar las alertas](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si es necesario); y 
+
 - [Deshacer las acciones de corrección que se tomaron en los dispositivos](#undo-a-remediation-action-that-was-taken-on-a-device). 
 
 Use este artículo como guía. 
@@ -79,5 +82,7 @@ Si se realizó una acción de corrección en un dispositivo (como un dispositivo
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Aprobar o rechazar acciones relacionadas con la investigación y la respuesta automatizadas](mtp-autoir-actions.md)
+
 - [Más información sobre el Centro de actividades](mtp-action-center.md)
+
 - [Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft](advanced-hunting-overview.md)

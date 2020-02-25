@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219181"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262027"
 ---
-# <a name="go-to-the-action-center-to-view-remediation-actions"></a>Vaya a Centro de actividades para ver las acciones correctivas
+# <a name="the-action-center"></a>El centro de actividades
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-## <a name="a-single-pane-of-glass-experience"></a>Una perspectiva centralizada
+Use el centro de actividades para ver los resultados de las investigaciones actuales y pasadas en los buzones y dispositivos de su organización. Según el tipo de amenaza y el veredicto resultante, [las acciones de corrección](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) se producen automáticamente o al aprobarlas por parte del equipo de operaciones de seguridad de la organización. Todas las acciones de corrección, tanto si están pendientes de aprobación como si ya se han aprobado, se consolidan en el Centro de actividades. 
 
 ![Centro de actividades](../../media/air-actioncenter.png)
 
-Use el centro de actividades para ver los resultados de las investigaciones actuales y pasadas en los buzones y dispositivos de su organización. En función del tipo de amenaza y el [veredicto resultante](mtp-autoir-results.md#remediation-actions-following-automated-investigation), las acciones de corrección se ejecutan automáticamente o una vez que el equipo de operaciones de seguridad de la organización las aprueban. Todas las acciones de corrección, tanto si están pendientes de aprobación como si ya se han aprobado, se consolidan en el Centro de actividades. 
+## <a name="a-single-pane-of-glass-experience"></a>Una perspectiva centralizada
 
 El Centro de actividades proporciona una perspectiva centralizada de diferentes tareas, como, por ejemplo:
 - Aprobación de las acciones de corrección pendientes;
@@ -63,7 +63,6 @@ El equipo de operaciones de seguridad puede trabajar con más eficacia y eficien
 
     - Si la investigación está relacionada con un dispositivo, los detalles de la investigación se abren en el centro de seguridad ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-
 > [!TIP]
 > Si cree que algo ha perdido o detectado erróneamente las características de respuesta e investigación automatizada en la protección contra amenazas de Microsoft, háganoslo saber. Consulte [Cómo informar de falsos positivos/negativos en capacidades de investigación y respuesta automatizadas (Air) en la protección contra amenazas de Microsoft](mtp-autoir-report-false-positives-negatives.md).
 
@@ -82,6 +81,8 @@ Para aprobar o rechazar las acciones pendientes en el Centro de actividades, deb
 ## <a name="next-steps"></a>Siguientes pasos 
 
 - [Obtenga más información sobre los incidentes en la Protección contra amenazas de Microsoft](incidents-overview.md)
+
 - [Ver los resultados de una investigación automatizada](mtp-autoir-results.md)
+
 - [Obtenga más información sobre la búsqueda avanzada en la Protección contra amenazas de Microsoft](advanced-hunting-overview.md)
 

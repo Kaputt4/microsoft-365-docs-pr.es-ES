@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085719"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266096"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte de administración para escritorio administrado de Microsoft
 
@@ -59,12 +59,7 @@ Una vez que un vale está en estado **mitigado** o **resuelto** , puede comparti
 
 ![Formulario de comentarios](../../media/feedback_form.png)
 
-## <a name="provide-administrator-rights-to-specific-users"></a>Proporcionar derechos de administrador a usuarios específicos
 
-Mientras trabaja con el personal de soporte técnico, es posible que deba proporcionar derechos de administrador local a un usuario en un dispositivo para ayudarle a solucionar problemas. Para ello, debe disponer de derechos de administrador global o de administrador de dispositivos en Microsoft Intune para su propia cuenta. Siga alguno de estos pasos, según su situación:
-
-- Si los usuarios están sincronizados desde una cuenta local de Active Directory, ejecute **net localgroup Administrators/Add "Contoso\username"** desde un símbolo del sistema con privilegios elevados.
-- Si los usuarios se crean en Azure Active Directory, ejecute **net localgroup Administrators/Add "AzureAD\UserUpn"** en un símbolo del sistema con privilegios elevados.
 
 ## <a name="additional-resources"></a>Recursos adicionales
 - [Compatibilidad con el usuario final para escritorio administrado de Microsoft](end-user-support.md). 

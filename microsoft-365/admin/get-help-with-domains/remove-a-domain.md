@@ -1,0 +1,236 @@
+---
+title: Quitar dominios de Office 365
+f1.keywords:
+- NOCSH
+ms.author: pebaum
+author: pebaum
+manager: mnirkhe
+audience: Admin
+ms.topic: get-started-article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+- Adm_O365_Setup
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+- GEA150
+ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
+description: Obtenga información sobre cómo quitar un dominio anterior de Office 365 y mover usuarios y grupos a otro dominio.
+ms.openlocfilehash: 9c960b5f18f3892c57f7dc9907e580a02fce39d4
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42255080"
+---
+# <a name="remove-a-domain-from-office-365"></a>Quitar dominios de Office 365
+
+Colaboradores: [![Peter Baumgartner](../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
+  
+ **[Consulte Preguntas más frecuentes sobre dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+  
+¿Va a quitar su dominio porque quiere agregarlo a un plan de suscripción de Office 365 diferente? ¿O solo quiere cancelar su suscripción? Puede [cambiar su plan o suscripción](../../commerce/subscriptions/switch-to-a-different-plan.md), o bien [cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md).
+  
+### <a name="step-1-move-users-to-another-domain"></a>Paso 1: mover usuarios a otro dominio
+
+#### <a name="move-users"></a>Mover usuarios
+
+::: moniker range="o365-worldwide"
+
+> [!NOTE]
+> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
+
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración</a>.
+
+2. > Seleccione **usuarios** **activos**.
+
+3. Active las casillas situadas junto a los nombres de todos los usuarios que desee mover.
+
+4. Seleccione **más opciones** (**...**), en la parte superior de la página y, a continuación, elija **cambiar dominios**.
+
+5. En el panel **cambiar dominios** , seleccione un dominio diferente.
+
+Tendrá que realizar esta acción también para su propio usuario si se encuentra en el dominio que quiere quitar. Al editar el dominio para su cuenta, tendrá que cerrar sesión y volver a iniciarla con el dominio nuevo que eligió para continuar.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>.  
+
+2. > Seleccione **usuarios** **activos**.
+
+3. Active las casillas situadas junto a los nombres de todos los usuarios que desee mover.
+
+4. En la parte superior de la página, elija **más** > **dominios de edición**.
+
+5. En el panel **Editar dominios** , seleccione un dominio diferente.
+  
+Tendrá que realizar esta acción también para su propio usuario si se encuentra en el dominio que quiere quitar. Al editar el dominio para su cuenta, tendrá que cerrar sesión y volver a iniciarla con el dominio nuevo que eligió para continuar.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>.  
+
+2. > Seleccione **usuarios** **activos**.
+
+3. Active las casillas situadas junto a los nombres de todos los usuarios que desee mover.
+
+4. En la parte superior de la página, elija **más** > **dominios de edición**.
+
+5. En el panel **Editar dominios** , seleccione un dominio diferente.
+  
+Tendrá que realizar esta acción también para su propio usuario si se encuentra en el dominio que quiere quitar. Al editar el dominio para su cuenta, tendrá que cerrar sesión y volver a iniciarla con el dominio nuevo que eligió para continuar.
+
+::: moniker-end
+
+#### <a name="move-yourself"></a>Desplazarse
+
+::: moniker range="o365-worldwide"
+
+> [!NOTE]
+> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
+
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>.
+
+2. Vaya a **** \> usuarios **activos**y seleccione su cuenta de la lista.
+
+3. En la pestaña **cuenta** , seleccione **administrar nombre de usuario**y, a continuación, elija un dominio diferente.
+  
+4. En la parte superior, selecciona el nombre de la cuenta y, a continuación, selecciona **Cerrar sesión**.
+
+5. Inicie sesión con el nuevo dominio y la misma contraseña.
+
+También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) para obtener más información. Para establecer el dominio predeterminado, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Vaya a **** \> usuarios **activos**y seleccione su nombre en la lista.
+
+2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar**y, a continuación, elija un dominio diferente.
+
+3. Seleccione **establecer como principal** > **Guardar** > **cierre**.
+  
+4. En la parte superior, selecciona el nombre de la cuenta y, a continuación, selecciona **Cerrar sesión**.
+
+5. Inicie sesión con el nuevo dominio y la misma contraseña.
+
+También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) para obtener más información. Para establecer el dominio predeterminado, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Vaya a **** \> usuarios **activos**y seleccione su nombre en la lista.
+
+2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar**y, a continuación, elija un dominio diferente.
+
+3. Seleccione **establecer como principal** > **Guardar** > **cierre**.
+  
+4. En la parte superior, selecciona el nombre de la cuenta y, a continuación, selecciona **Cerrar sesión**.
+
+5. Inicie sesión con el nuevo dominio y la misma contraseña.
+
+También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) para obtener más información. Para establecer el dominio predeterminado, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
+
+::: moniker-end
+
+### <a name="step-2-move-groups-to-another-domain"></a>Paso 2: mover grupos a otro dominio
+
+::: moniker range="o365-worldwide"
+
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+  
+2. Seleccione el nombre del grupo y, a continuación, en la pestaña **General** , en **dirección de correo electrónico,** haga clic en **Editar**.
+
+3. Use la lista desplegable para elegir otro dominio.
+
+4. Seleccione **Guardar**y, a continuación, **cerrar**. Repita este proceso para todas las listas de distribución o grupos que estén asociados al dominio que quiere quitar.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** > **** página grupos de grupos.
+
+2. Seleccione el nombre del grupo y, a continuación, seleccione **Editar** junto a **nombre**.
+
+3. Use la lista desplegable para elegir otro dominio.
+
+4. Seleccione **Guardar**y, a continuación, **cerrar**. Repita este proceso para todas las listas de distribución o grupos que estén asociados al dominio que quiere quitar.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** > **** página grupos de grupos.
+
+2. Seleccione el nombre del grupo y, a continuación, seleccione **Editar** junto a **nombre**.
+
+3. Use la lista desplegable para elegir otro dominio.
+
+4. Seleccione **Guardar**y, a continuación, **cerrar**. Repita este proceso para todas las listas de distribución o grupos que estén asociados al dominio que quiere quitar.
+
+::: moniker-end
+
+### <a name="step-3-remove-the-old-domain"></a>Paso 3: quitar el dominio anterior
+
+::: moniker range="o365-worldwide"
+
+1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el centro de administración, vaya a la página de **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">dominios</a> .
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el centro de administración, vaya a la página de **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">dominios</a> .
+
+::: moniker-end
+  
+2. En la página **dominios** , seleccione el dominio que quiera quitar.
+
+3. En el panel derecho, seleccione **quitar**.
+
+4. Siga los mensajes adicionales y, a continuación, seleccione **cerrar**.
+
+## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>¿Cuánto tiempo tarda un dominio en quitarse?
+
+Se puede tardar tan solo 5 minutos para que Office 365 Quite un dominio si no se hace referencia a él en muchos lugares como, por ejemplo, grupos de seguridad, listas de distribución, usuarios y grupos de Office 365. Si hay muchas referencias que usan el dominio, el dominio puede tardar varias horas (o incluso un día) en quitarse.
+  
+Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los usuarios y moverlos a otro dominio. En caso contrario, es posible que falten usuarios en la interfaz y que, cuando vaya a quitar el dominio, no pueda y no sepa por qué. Vea [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) para obtener más información. Para establecer el dominio predeterminado, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
+  
+## <a name="still-need-help"></a>¿Sigue necesitando ayuda?
+
+::: moniker range="o365-worldwide"
+
+> [!NOTE]
+> No puede quitar el dominio [". onmicrosoft.com"](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) de su cuenta.
+  
+¿Todavía no funciona? Puede que su dominio necesite quitarse manualmente. [Llámenos](../contact-support-for-business-products.md) y le ayudaremos.
+  
+::: moniker-end
+
+## <a name="related-articles"></a>Artículos relacionados
+
+[Preguntas más frecuentes de dominios](../setup/domains-faq.md)
+
+[Obtener ayuda con Office 365 dominios](get-help-with-domains.md)
+
+[Cambiar a otro plan de Office 365 para empresas](../../commerce/subscriptions/switch-to-a-different-plan.md)
+
+[Cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md)
