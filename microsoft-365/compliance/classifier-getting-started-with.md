@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: 7ebd991fe70401b91c14673bcff8aabbdabbda6a
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 877001784f30f4b51e0e8c9fdb15091ea6308bf5
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266882"
+ms.locfileid: "42277207"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introducción al entrenamiento de clasificadores (vista previa)
 
@@ -44,10 +44,8 @@ Las etiquetas de confidencialidad y retención se pueden aplicar automáticament
 
 Este método de clasificación es especialmente adecuado para el contenido que no se identifica fácilmente por los métodos de coincidencia de patrón manuales o automatizados. Este método de clasificación es más sobre cómo entrenar a un clasificador para identificar un elemento en función de lo que es el elemento, no por los elementos que están en el elemento (coincidencia de modelos). Un clasificador aprende a identificar un tipo de contenido mirando cientos de ejemplos del contenido que le interesa clasificar. Empiece por alimentar los ejemplos que están en la categoría de forma indefinida. Una vez que los procesa, lo prueba mediante una combinación de ambos ejemplos que coinciden y no coinciden. A continuación, el clasificador crea predicciones sobre si un elemento determinado pertenece a la categoría que se está creando. A continuación, se confirman los resultados, se ordenan los positivos, negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de sus predicciones. Al publicar el clasificador entrenado, los elementos se ordenan en lugares como SharePoint Online, Exchange y OneDrive, y clasifican el contenido.
 
-<!-- add link in the below note to sensitivity label topic when carolb provides -->
-
 > [!IMPORTANT]
-> Ambos tipos de clasificadores están disponibles como condición para [aplicar automáticamente una directiva de etiqueta de retención basada en una condición y el cumplimiento de la](labels.md#applying-a-retention-label-automatically-based-on-conditions) [comunicación](communication-compliance.md).
+> Ambos tipos de clasificadores están disponibles como condición para [aplicar automáticamente una directiva de etiqueta de retención basada en una condición y el cumplimiento de la](labels.md#applying-a-retention-label-automatically-based-on-conditions) [comunicación](communication-compliance.md). Las etiquetas de confidencialidad solo pueden usar clasificadores integrados como condición, vea [aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
 > Los clasificadores que se pueden entrenar solo funcionan con elementos que no están cifrados y que están en inglés.
@@ -100,7 +98,7 @@ La creación y publicación de un clasificador capacitable para su uso en las so
 
 ![clasificador de flujo de proceso capacitable](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Etiquetas de retención](labels.md)
 - [directivas de retención](retention-policies.md)

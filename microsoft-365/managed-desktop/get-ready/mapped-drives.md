@@ -1,19 +1,20 @@
 ---
-title: Preparar unidades asignadas para el escritorio administrado por Microsoft
+title: Preparar unidades asignadas para el Escritorio administrado de Microsoft
 description: Pasos importantes para asegurarse
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e4c2dbe8f1cae12aa1b10c6cd43f295a9a6062d0
-ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
+ms.openlocfilehash: 8bdbbefb1fc3bfff324787eedb497afe781184f0
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34100716"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280178"
 ---
-#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el escritorio administrado por Microsoft
+#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el Escritorio administrado de Microsoft
 
 Muchos entornos empresariales tienen requisitos heredados para las unidades asignadas para permitir que sus usuarios o equipos compartan y almacenen archivos, o para las aplicaciones locales. Microsoft no recomienda el uso de unidades asignadas con el escritorio administrado de Microsoft. En su lugar, se recomienda modernizar las soluciones de acceso a archivos de Yor de la siguiente manera:
   

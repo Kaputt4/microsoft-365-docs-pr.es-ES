@@ -15,66 +15,75 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: f10995e5180afc0d8aa7de2b2fdb8040f0f838ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Use el flujo de trabajo de comunicaciones en la exhibición avanzada de documentos electrónicos para realizar un seguimiento del estado de las notificaciones de retención legal y, si es necesario, actualizarlos y volver a enviarlos.
+ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072017"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280118"
 ---
 # <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
 
-Una vez que haya iniciado el flujo de trabajo de la notificación de retención legal, puede aprovechar la exhibición avanzada de documentos electrónicos para realizar un seguimiento del estado de las comunicaciones. La pestaña comunicaciones exhibe todas las notificaciones de retención en el caso de eDiscovery avanzado. Aquí puede ver los detalles, como el número de custodios que se han asignado o que han confirmado el aviso.
+Una vez que haya iniciado el flujo de trabajo de la notificación de retención legal, puede usar el flujo de trabajo de comunicaciones en eDiscovery avanzado para realizar un seguimiento del estado de las comunicaciones. La pestaña comunicaciones contiene una lista de todas las notificaciones en el caso de eDiscovery avanzado. Puede ver detalles como el número de custodios que se han asignado o que han confirmado el aviso.
 
-## <a name="view-communication-details"></a>Ver detalles de comunicación
+## <a name="monitor-acknowledgments"></a>Comprobar confirmaciones
 
-### <a name="track-acknowledgements"></a>Rastrear confirmaciones
+Después de seleccionar una comunicación en la pestaña **comunicaciones** , puede ver una lista de custodios que han confirmado una notificación de retención. 
 
-Una vez que seleccione una comunicación en la ficha **comunicaciones**, puede ver una lista de custodios que han confirmado un aviso de retención. 
+1. En el centro de cumplimiento, vaya a **ediscovery > Advanced eDiscovery**.
 
-### <a name="preview-acknowledgements"></a>Vista previa de confirmaciones
+2. Seleccione un caso y, a continuación, haga clic en la pestaña **comunicaciones** .
 
-En el control flotante comunicación de detalles, puede obtener una vista previa de los detalles de la comunicación de suspensión legal. En el panel **vista previa** , podrá ver una instantánea rápida del aviso de retención legal, así como la configuración y el contenido de las notificaciones de flujo de trabajo. El panel de vista previa también muestra detalles sobre qué custodios ya han confirmado el aviso.
+3. Seleccione una comunicación para mostrar la página flotante de **comunicación de custodios** .
 
-## <a name="taking-action-on-existing-communications"></a>Realizar acciones en las comunicaciones existentes
+En la página flotante de comunicación se muestra una lista de custodios asociados a la comunicación seleccionada. Esta página también muestra información y el número de reconocimientos que se han recibido y cuántos están pendientes. La página también muestra qué administradores han enviado una confirmación de que recibieron la notificación de retención.
 
-### <a name="re-send-a-hold-notice"></a>Volver a enviar un aviso de suspensión
+## <a name="re-send-a-hold-notice"></a>Volver a enviar un aviso de suspensión
 
-En ocasiones, los custodios pierden el seguimiento de sus correos electrónicos en su trabajo cotidiano. O bien, para un litigio de larga duración, un custodio puede ponerse en contacto con usted y pedirle que vuelva a enviar un aviso. Mientras administra el flujo de trabajo en torno a los avisos de suspensión legal, es posible que deba volver a enviar un aviso para volver a colocarlo en la "parte superior del buzón de un usuario".
+En ocasiones, los custodios pierden el seguimiento de los mensajes de correo electrónico en su trabajo cotidiano. Para un caso de litigio de ejecución prolongada, un custodio puede ponerse en contacto con usted o con otros usuarios y solicitarle que vuelva a enviar un aviso. Mientras administra el flujo de trabajo de comunicaciones para avisos de suspensión legal, es posible que deba volver a enviar un aviso para volver a la "parte superior del buzón de un usuario".
 
-Puede volver a enviar un aviso de suspensión a su custodio:
-1. Navegue a un caso en **seguridad y cumplimiento > EDiscovery avanzado**.
-2. Una vez que haya seleccionado un caso, vaya a la pestaña **comunicaciones** .
-3. Para volver a enviar un aviso de suspensión legal a un custodio, seleccione la comunicación y haga clic en la opción **volver a enviar** .
-4. Si un custodio todavía no ha reconocido su notificación de retención, se reiniciará el flujo de aviso y escalado. Si un custodio ya ha confirmado el aviso de retenciones, el custodio recibirá una copia del aviso de retenciones inicial.
+Para volver a enviar un aviso de suspensión a un custodio:
+
+1. En eDiscovery avanzado, seleccione un caso y, a continuación, haga clic en la pestaña **comunicaciones** .
+
+2. Seleccione una comunicación para mostrar la página flotante de **comunicación de custodios** .
+
+3. Haga clic en **más > aviso de reenvío de retención**.
+
+4. En la página desplegable **reenviar notificación de reenvío** , seleccione los custodios que desea que vuelva a enviar el aviso y escriba una razón opcional.
+
+5. Haga clic en **volver a enviar** para enviar el aviso a los custodios seleccionados.
+
+Si un custodio no ha reconocido la notificación de retención, se reiniciará el flujo de trabajo de Reminder y remisión. Si un custodio ha reconocido la notificación de retención, el custodio recibirá una copia del aviso de suspensión original.
 
 > [!NOTE]
-> Solo se puede volver a enviar una notificación de suspensión legal a los custodios asignados a la comunicación. 
+> Solo puede reenviar una notificación de suspensión legal a los custodios asignados a la comunicación. 
 
-### <a name="edit-a-communication"></a>Editar una comunicación
-
-#### <a name="update-preservation-requirements"></a>Requisitos de conservación de la actualización
+## <a name="update-preservation-requirements"></a>Requisitos de conservación de la actualización
   
 A medida que avanza el caso, es posible que se necesiten custodios para conservar más o menos datos de los que se indicó anteriormente. En términos de exhibición de documentos electrónicos, debe volver a emitir el aviso de suspensión con contenido actualizado.
 
 Para actualizar el contenido del aviso de suspensión inicial:
 
-1. Navegue a un caso en **seguridad y cumplimiento > EDiscovery avanzado**.
-2. Una vez que haya seleccionado un caso, vaya a la pestaña **comunicaciones** .
-3. Seleccione el aviso de retención que quiera actualizar y haga clic en **Editar**.
-4. En Editar flujo de trabajo, seleccione **definir contenido del portal** y actualizar el contenido del aviso. 
-5. Haga clic en **Guardar **. Una vez guardado, se enviará el aviso de reemisión a todos los custodios que están actualmente asignados a la notificación de retenciones legales. Además, si se habilitan los avisos de aviso/remisión, estos flujos de trabajo también se reiniciarán. 
+1. En eDiscovery avanzado, seleccione un caso y, a continuación, haga clic en la pestaña **comunicaciones** .
 
+2. Seleccione el aviso de retención que quiera actualizar y haga clic en **Editar** en la página flotante de **comunicación de custodios** .
 
-#### <a name="update-legal-hold-notifications-and-settings"></a>Actualizar la configuración y las notificaciones de retención legal
+3. En el asistente **Editar comunicación** , haga clic en **definir contenido del portal** en el panel izquierdo del asistente y actualice el contenido del aviso.
+
+4. Haga clic en **Guardar **.
+
+El aviso de reemisión se enviará a todos los custodios asignados a la notificación de retención legal. Además, si el aviso de remisión o remisión está habilitado, se reiniciarán los flujos de trabajo de esos tipos de notificación.
+
+## <a name="update-legal-hold-notifications-and-settings"></a>Actualizar la configuración y las notificaciones de retención legal
 
 Cuando se actualiza el contenido o la configuración del aviso de emisión, publicación, reemisión, aviso o escalado, estos cambios se aplican a todas las comunicaciones futuras generadas por el flujo de trabajo.
 
-## <a name="related-information"></a>Información relacionada 
+## <a name="more-information"></a>Más información
+
+- [Agregar administradores a un caso](add-custodians-to-case.md)
 
 - [Crear un aviso de suspensión legal](create-hold-notification.md)
-    
+
 - [Confirmar una notificación de retención](acknowledge-hold-notification.md)
-    
-- [Agregar administradores a un caso](add-custodians-to-case.md)

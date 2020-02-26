@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Obtenga información sobre cómo cambiar el tema predeterminado de Office 365 y personalizarlo para que se ajuste al logotipo o al logotipo de su compañía. '
-ms.openlocfilehash: b59efa21195c0c7bed12c98b9d360d84451b3d35
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247873"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280188"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Personalizar el tema de Office 365 para su organización
 
@@ -43,7 +43,7 @@ Obtenga información sobre cómo personalizar el tema en el centro de administra
   - **Usar una imagen de logotipo personalizada**: elija si desea usar una imagen de una dirección URL o cargar una imagen. Si usa una dirección URL, asegúrese de que la dirección URL use HTTPS y de 200 x 30 píxeles de cualquier formato de cualquier tamaño. Puede cargar un logotipo de menos de 10 KB de 200 x 30 píxeles en formato JPG, PNG, GIF o SVG.
 
     > [!NOTE]
-    > Para que el logotipo aparezca en la aplicación móvil de SharePoint, use solo imágenes SVG. Las imágenes que se cargan en cualquier otro formato no se muestran en la aplicación. 
+    > Para que el logotipo aparezca en la aplicación móvil de SharePoint, use solo imágenes SVG. Las imágenes que se cargan en cualquier otro formato no se muestran en la aplicación. No se pueden hacer clic en los logotipos en la aplicación móvil de SharePoint.
     
   - **Hacer que el logotipo haga clic**en: puede usar su logotipo en la barra de navegación como un vínculo a cualquier recurso de la empresa. Puede escribir la dirección URL del logotipo aquí, comenzando con http://o https://. Esto es opcional.
     
