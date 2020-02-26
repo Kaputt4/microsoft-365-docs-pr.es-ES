@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino de Office 365 y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: 4351658f2637b86c9b3233f55916d8e0ac0f8cfb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
+ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255049"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42278766"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -82,9 +82,9 @@ Si no desea usar el informe de activaciones, puede pedir a un usuario que abra u
 Para obtener ayuda con Office 365 ProPlus, vea [Consejos de solución de problemas para Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
 
-### <a name="exchange-requirements"></a>Requisitos de Exchange
+### <a name="exchange-online-requirements"></a>Requisitos de Exchange Online
 
-Microsoft Exchange almacena los manifiestos de complemento dentro del inquilino de su organización. El administrador que implementa los complementos y los usuarios que los reciben deben estar en una versión Exchange Server compatible con autenticación OAuth. De forma predeterminada, las implementaciones multiinquilino y VNext dedicadas de Exchange son compatibles con OAuth. Las implementaciones locales heredadas dedicadas e híbridas de Exchange pueden configurarse para ser compatibles con OAuth. Sin embargo, no es su configuración predeterminada.
+Microsoft Exchange almacena los manifiestos de complementos dentro del espacio empresarial de la organización. El administrador que implementa los complementos y los usuarios que reciben esos complementos deben estar en una versión de Exchange online que admita la autenticación de OAuth. De forma predeterminada, las implementaciones de Exchange multiinquilino y de VNext dedicadas admiten OAuth. 
   
 Póngase en contacto con el administrador de Exchange de su organización para averiguar qué configuración está en uso. La conectividad de OAuth por usuario puede comprobarse usando el cmdlet de PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
 
