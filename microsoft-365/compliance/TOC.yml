@@ -698,27 +698,30 @@
           href: manage-jobs.md
 - name: Administrar las auditorías y las directivas de alerta
   items:
-    - name: Búsquedas en el registro de auditoría
-      href: search-the-audit-log-in-security-and-compliance.md
+    - name: Auditoría unificada
+      items:
+        - name: Búsquedas en el registro de auditoría
+          href: search-the-audit-log-in-security-and-compliance.md
+        - name: Activar o desactivar la búsqueda de registros de auditoría
+          href: turn-audit-log-search-on-or-off.md
+        - name: Propiedades detalladas del registro de auditoría
+          href: detailed-properties-in-the-office-365-audit-log.md
+        - name: 'Exportar, configurar y ver registros de registro de auditoría'
+          href: export-view-audit-log-records.md
+        - name: Usar el registro de auditoría para investigar problemas comunes
+          href: auditing-troubleshooting-scenarios.md
+        - name: Usar el uso compartido de auditoría en el registro de auditoría
+          href: use-sharing-auditing.md
+        - name: Buscar actividades de eDiscovery en el registro de auditoría
+          href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: Auditoría de buzones
+      href: enable-mailbox-auditing.md
     - name: Auditoría avanzada
       href: advanced-audit.md
-    - name: Activar o desactivar la búsqueda de registros de auditoría
-      href: turn-audit-log-search-on-or-off.md
-    - name: Administrar la auditoría de buzones de correo
-      href: enable-mailbox-auditing.md
-    - name: Administrar directivas de retención de registros de auditoría
-      href: audit-log-retention-policies.md
-    - name: Propiedades detalladas del registro de auditoría
-      href: detailed-properties-in-the-office-365-audit-log.md
-    - name: 'Exportar, configurar y ver registros de registro de auditoría'
-      href: export-view-audit-log-records.md
-    - name: Usar el registro de auditoría para investigar problemas comunes
-      href: auditing-troubleshooting-scenarios.md
-    - name: Usar el uso compartido de auditoría en el registro de auditoría
-      href: use-sharing-auditing.md
-    - name: Buscar actividades de eDiscovery en el registro de auditoría
-      href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Administrar directivas de alerta
+      items:
+        - name: Administrar directivas de retención de registros de auditoría
+          href: audit-log-retention-policies.md
+    - name: Directivas de alerta
       href: alert-policies.md
 - name: Administración de los riesgos de cumplimiento
   items:
@@ -804,7 +807,7 @@
               href: gdpr-arc-dynamics365.md
             - name: Soporte técnico de Microsoft & Professional Services
               href: gdpr-arc-prof-services.md
-            - name: Office 365
+            - name: Creación de inquilino
               href: gdpr-arc-office365.md
         - name: Protección de la información
           href: gdpr-information-protection.md
@@ -822,7 +825,7 @@
               href: gdpr-dsr-intune.md
             - name: Soporte técnico de Microsoft & Professional Services
               href: gdpr-dsr-prof-services.md
-            - name: Office 365
+            - name: Creación de inquilino
               href: gdpr-dsr-office365.md
             - name: Familia de Visual Studio
               href: gdpr-dsr-visual-studio-family.md
@@ -834,7 +837,7 @@
               href: gdpr-breach-azure-dynamics.md
             - name: Soporte técnico de Microsoft & Professional Services
               href: gdpr-breach-microsoft-support-professional-services.md
-            - name: Office 365
+            - name: Creación de inquilino
               href: gdpr-breach-office365.md
         - name: Evaluaciones de impacto en la protección de datos
           items:
@@ -846,7 +849,7 @@
               href: gdpr-dpia-dynamics.md
             - name: Soporte técnico de Microsoft & Professional Services
               href: gdpr-dpia-prof-services.md
-            - name: Office 365
+            - name: Creación de inquilino
               href: gdpr-dpia-office365.md
         - name: Responsable de la protección de datos de Microsoft
           href: gdpr-data-protection-officer.md
