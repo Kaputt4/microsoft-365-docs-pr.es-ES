@@ -12,7 +12,7 @@
               href: ./office-365-security/ciso-workshop-module-1.md
             - name: 'Módulo 2: administración de seguridad'
               href: ./office-365-security/ciso-workshop-module-2.md
-            - name: Modulo 3 - Identidad y acceso y cero confianza del usuario
+            - name: 'Modulo 3: identidad y acceso de usuario de confianza cero'
               href: ./office-365-security/ciso-workshop-module-3.md
             - name: 'Módulo 4a: estrategia de protección contra amenazas, parte I'
               href: ./office-365-security/ciso-workshop-module-4a.md
@@ -23,7 +23,7 @@
     - name: Configuraciones de acceso a dispositivos e identidades
       href: ../enterprise/microsoft-365-policies-configurations.md
       items:
-        - name: Trabajo de requisito previo
+        - name: Trabajo de requisitos previos
           href: ../enterprise/identity-access-prerequisites.md
         - name: Directivas comunes de acceso a dispositivos e identidades
           href: ../enterprise/identity-access-policies.md
@@ -41,7 +41,7 @@
           items:
             - name: ¿Qué es la Protección contra amenazas de Microsoft?
               href: mtp/microsoft-threat-protection.md
-            - name: Novedades de la protección contra amenazas de Microsoft
+            - name: Novedades de Protección contra amenazas de Microsoft
               href: mtp/whats-new.md
             - name: Centro de seguridad de Microsoft 365
               href: mtp/overview-security-center.md
@@ -49,7 +49,7 @@
               href: mtp/prerequisites.md
             - name: Seguridad y privacidad de datos
               href: mtp/data-privacy.md
-            - name: Solución de problemas
+            - name: Solucionar problemas
               href: ./mtp/troubleshoot.md
         - name: Guías de procedimientos
           items:
@@ -67,17 +67,17 @@
                   href: mtp/manage-incidents.md
             - name: Investigación y respuesta automatizada
               items:
-                - name: Información general sobre AIR
+                - name: Visión general de AIR
                   href: mtp/mtp-autoir.md
                 - name: Acciones de corrección
                   href: mtp/mtp-remediation-actions.md
                 - name: El centro de actividades
                   href: mtp/mtp-action-center.md
-                - name: Ver los detalles y los resultados de la investigación automatizada
+                - name: Ver los detalles y los resultados de una investigación automatizada
                   href: mtp/mtp-autoir-results.md
                 - name: Aprobar o rechazar acciones pendientes
                   href: mtp/mtp-autoir-actions.md
-                - name: Informar de falsos positivos/negativos
+                - name: Informar sobre falsos positivos/negativos
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Búsqueda avanzada
               items:
@@ -89,7 +89,7 @@
                   href: mtp/advanced-hunting-query-language.md
                 - name: Usar consultas compartidas
                   href: mtp/advanced-hunting-shared-queries.md
-                - name: Buscar en dispositivos y correos electrónicos
+                - name: Buscar dispositivos y mensajes de correo electrónico
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Entender el esquema
                   href: mtp/advanced-hunting-schema-tables.md
@@ -136,7 +136,7 @@
                   href: mtp/microsoft-secure-score.md
                 - name: Puntuación de seguridad (versión preliminar)
                   href: mtp/microsoft-secure-score-preview.md
-                - name: Lo que está llegando
+                - name: Próximas novedades
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Informes
               items:
@@ -150,11 +150,11 @@
                   href: mtp/monitor-devices.md
                 - name: Supervisión e informes de aplicaciones
                   href: mtp/monitor-apps.md
-            - name: Permisos & configuración
+            - name: Permisos y configuraciones
               items:
                 - name: Administrar el acceso
                   href: mtp/mtp-permissions.md
-                - name: Establecer zona horaria
+                - name: Establecer la zona horaria
                   href: mtp/mtp-time-zone.md
             - name: Administrar tickets a través de ServiceNow
               href: ./mtp/tickets.md
@@ -170,7 +170,7 @@
               href: ./mtp/overview-security-center.md
             - name: Permisos en el Centro de seguridad y cumplimiento
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
-            - name: Proporcionar a los usuarios acceso al Centro de seguridad
+            - name: Dar a los usuarios acceso al centro de seguridad
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
         - name: Protección contra amenazas
           href: ./office-365-security/protect-against-threats.md
@@ -178,7 +178,7 @@
             - name: Protección contra correo electrónico no deseado y antimalware
               href: ./office-365-security/anti-spam-and-anti-malware-protection.md
               items:
-                - name: Protección contra malware
+                - name: Protección antimalware
                   href: ./office-365-security/anti-malware-protection.md
                   items:
                     - name: Preguntas más frecuentes sobre la protección antimalware
@@ -203,17 +203,17 @@
                   href: ./office-365-security/safe-sender-and-blocked-sender-lists-faq.md
                 - name: Sugerencias de seguridad en mensajes de correo en Office 365
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida
+                - name: Notificación de ejemplo cuando se bloquea a un remitente para enviar correo no deseado saliente
                   href: ./office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md
                 - name: Usar notificaciones de correo no deseado para el usuario final para liberar y notificar mensajes de correo no deseado en cuarentena
                   href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
                 - name: Lucha contra el correo no deseado enviado a Office 365
                   href: ./office-365-security/fighting-junk-email.md
-                - name: Protección contra spam para el correo electrónico de Office 365
+                - name: Protección contra correo no deseado para el correo electrónico de Office 365
                   href: ./office-365-security/anti-spam-protection.md
                 - name: Cómo se combinan las directivas y las protecciones
                   href: ./office-365-security/how-policies-and-protections-are-combined.md
-                - name: Reducir el correo no deseado en Office 365
+                - name: Cómo reducir el correo no deseado en Office 365
                   href: ./office-365-security/reduce-spam-email.md
                 - name: Controlar el correo no deseado saliente en Office 365
                   href: ./office-365-security/outbound-spam-controls.md
@@ -364,25 +364,25 @@
                       href: ./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md
                 - name: Tareas de configuración de administrador de roles
                   items:
-                    - name: 'Activar ATP para SharePoint, OneDrive y Microsoft Teams.'
+                    - name: 'Activar ATP para SharePoint, OneDrive y Microsoft Teams'
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Vistas de campañas
               href: ./office-365-security/campaigns.md
-            - name: Descripción de los últimos ataques de análisis de amenazas
+            - name: Descripción de los ataques más recientes con análisis de amenazas
               href: ./mtp/latest-attack-campaigns.md
             - name: Investigación y respuesta automatizada
               items:
-                - name: Información general sobre AIR
+                - name: Visión general de AIR
                   href: ./office-365-security/office-365-air.md
-                - name: Ver los detalles y los resultados de la investigación automatizada
+                - name: Ver los detalles y los resultados de una investigación automatizada
                   href: ./office-365-security/air-view-investigation-results.md
                 - name: Aprobar o rechazar acciones pendientes
                   href: ./office-365-security/air-remediation-actions.md
-                - name: Integrar AIR con una solución personalizada o una solución de otro fabricante
+                - name: Integrar AIR con una solución personalizada o una solución de terceros
                   href: ./office-365-security/air-custom-reporting.md
-            - name: Detectar y dirigir rápidamente las cuentas de usuario en peligro
+            - name: Detectar y dirigirse rápidamente a las cuentas de usuario en peligro
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Investigar y corregir el correo electrónico malintencionado
+            - name: Investigar y solucionar correo electrónico malintencionado
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Ver y leer los informes de ATP
               href: ./office-365-security/view-reports-for-atp.md
@@ -407,15 +407,15 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: Cómo funciona ATP
               items:
-                - name: Cómo funciona la investigación y la respuesta automatizadas
+                - name: Cómo funciona la Investigación y respuesta automatizada
                   href: ./office-365-security/automated-investigation-response-office.md
-                - name: Cómo funcionan los Vínculos seguros de ATP
+                - name: Cómo funcionan los vínculos seguros de ATP
                   href: ./office-365-security/how-atp-safe-links-works.md
                 - name: Cómo funcionan los datos adjuntos seguros de ATP
                   href: ./office-365-security/how-atp-safe-attachments-works.md
                 - name: Detalles de vista previa y entrega dinámica
                   href: ./office-365-security/dynamic-delivery-and-previewing.md
-                - name: 'ATP para SharePoint, OneDrive y Microsoft Teams.'
+                - name: 'ATP para SharePoint, OneDrive y Microsoft Teams'
                   href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: Cómo funciona la investigación y respuesta ante amenazas
                   href: ./office-365-security/office-365-ti.md
@@ -501,7 +501,7 @@
                   items:
                     - name: Procedimientos recomendados para configurar EOP
                       href: ./office-365-security/best-practices-for-configuring-eop.md
-                    - name: 'Ajustes recomendados para configurar EOP y Seguridad ATP de Office 365 '
+                    - name: Ajustes recomendados para configurar EOP y Seguridad ATP de Office 365
                       href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
                     - name: Script de ejemplo para aplicar la configuración de EOP a varios inquilinos
                       href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
@@ -546,7 +546,7 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Inteligencia de flujo de correo en Office 365
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Cuarentena
+                - name: Quarantine
                   href: ./office-365-security/quarantine.md
                   items:
                     - name: Buscar y liberar mensajes en cuarentena como un administrador
