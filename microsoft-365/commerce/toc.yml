@@ -1,24 +1,24 @@
-- name: Administrar las compras y la facturación de Commerce
+- name: Administrar las compras y la facturación de Comercio
   href: index.md
   expanded: true
   items:
     - name: Administrar suscripciones
       items:
-        - name: Administración de aplicaciones de terceros
+        - name: Administrar aplicaciones de terceros
           href: manage-saas-apps.md
-        - name: Actualización de suscripciones
+        - name: Actualizar suscripciones
           href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
-        - name: Administración de compras de autoservicio (usuarios)
+        - name: Administrar compras de autoservicio (usuarios)
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
-        - name: Administración de compras sin servicio (administración)
+        - name: Administrar compras de autoservicio (administrador)
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
-    - name: Administración de licencias
+    - name: Administrar licencias
       items:
         - name: Comprar licencias
           href: /microsoft-365/commerce/licenses/buy-licenses
         - name: Asignar licencias
           href: /microsoft-365/admin/manage/assign-licenses-to-users
-        - name: Cancelar la asignación de licencias
+        - name: Anular la asignación de licencias
           href: /microsoft-365/admin/manage/remove-licenses-from-users
         - name: Eliminar licencias de la suscripción
           href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
@@ -26,17 +26,17 @@
       items:
         - name: Entender la factura
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
-        - name: Administrar los métodos de pago
+        - name: Administrar métodos de pago
           href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
-        - name: Administración de perfiles de facturación
+        - name: Administrar perfiles de facturación
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: Directiva 2 de servicios de pago y autenticación de cliente segura
+        - name: Directiva de servicios de pago Directiva 2 y autenticación de cliente robusta
           href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: Cuentas de facturación
       items:
         - name: Administrar cuentas de facturación
           href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
-        - name: Asociar un inquilino con mi cuenta de facturación
+        - name: Asociar un espacio empresarial a mi cuenta de facturación
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: Administrar relaciones con mis socios
       href: manage-partners.md

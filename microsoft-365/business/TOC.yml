@@ -6,19 +6,19 @@
       href: microsoft-365-business-overview.md
     - name: Obtener Microsoft 365 Empresa
       href: sign-up.md
-    - name: Requisitos previos para la protección de datos
+    - name: Requisitos previos para proteger los datos
       href: pre-requisites-for-data-protection.md
     - name: Configuración
       items:
-        - name: Introducción a la configuración
+        - name: Información general sobre la configuración
           href: set-up-overview.md
         - name: Configurar Microsoft 365 Empresa
           href: set-up.md
-        - name: Proteger equipos con Windows 10
+        - name: "Proteger equipos con Windows\_10"
           href: secure-win-10-pcs.md
         - name: Actualizar a Windows Pro Creators Update
           href: upgrade-to-windows-pro-creators-update.md
-        - name: Prepararse para la implementación del cliente Office
+        - name: Preparar la implementación del cliente Office
           href: prepare-for-office-client-deployment.md
         - name: Ayudar a los usuarios a instalar Office
           href: help-users-install-office.md
@@ -30,7 +30,7 @@
               href: access-resources.md
     - name: Configuración del dispositivo de usuario
       items:
-        - name: Configurar dispositivos móviles
+        - name: Configuración de dispositivos móviles
           href: set-up-mobile-devices.md
         - name: Configurar dispositivos Windows
           href: set-up-windows-devices.md
@@ -45,7 +45,7 @@
           href: set-up-compliance.md
     - name: Administración de usuarios
       items:
-        - name: Agregue usuarios
+        - name: Agregar usuarios
           href: add-users-m365b.md
         - name: Quitar un empleado
           href: /Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
@@ -53,7 +53,7 @@
       items:
         - name: Ver y editar directivas y dispositivos
           href: view-policies-and-devices.md
-        - name: Quitar datos de la compañía
+        - name: Quitar datos de la empresa
           href: remove-company-data.md
         - name: Restablecer dispositivos a la configuración de fábrica
           href: reset-devices-to-factory-settings.md
@@ -81,21 +81,21 @@
           href: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
     - name: Facturación
       items:
-        - name: Su factura
+        - name: La factura
           href: /Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
         - name: Pagar
           href: /Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
-        - name: Cancel
+        - name: Cancelar
           href: /Office365/Admin/subscriptions-and-billing/cancel-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
     - name: Autopilot
       items:
         - name: Agregar dispositivos y perfil de Autopilot
           href: add-autopilot-devices-and-profile.md
-        - name: Crear y editar perfiles de AutoPilot
+        - name: Crear y editar perfiles de Autopilot
           href: create-and-edit-autopilot-profiles.md
-        - name: Crear y editar dispositivos de AutoPilot
+        - name: Crear y editar dispositivos de Autopilot
           href: create-and-edit-autopilot-devices.md
-        - name: Configuración de perfiles de AutoPilot
+        - name: Configuración de perfiles de Autopilot
           href: autopilot-profile-settings.md
         - name: Estados de dispositivo
           href: device-states.md
