@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 380c424acbcb609944ebfc3ea775ca31ac02bfe8
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 0dc9173c03d93ebe79544f8d417842b407025054
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266746"
+ms.locfileid: "42277227"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -795,6 +795,9 @@ En la siguiente tabla se enumeran las actividades de usuario y administración e
 
 A continuación, en las descripciones, algunas operaciones contienen parámetros de actividad adicionales.
 
+> [!NOTE]
+> Si se lleva a cabo una actividad de Forms por parte de un coautor o alguien que responde anónimamente, se registrará de forma ligeramente distinta. Para obtener más información, consulte la sección [actividades de formularios que realizan los coautores y respondedores anónimos](#forms-activities-performed-by-co-authors-and-anonymous-responders).
+
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Comentario creado|CreateComment|El propietario del formulario ha añadido comentarios o puntuaciones a un cuestionario.|
@@ -826,7 +829,23 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Respuesta enviada|SubmitResponse|Un usuario envía una respuesta sobre un formulario. <br><br>La propiedad IsInternalForm:boolean indicará si el respondedor está dentro de la misma organización que el propietario del formulario.|
 ||||
 
-### <a name="sensitivity-label-activities"></a>Actividades de la etiqueta de confidencialidad 
+#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>Actividades de Forms que realizan los coautores y respondedores anónimos
+
+Forms es compatible con la colaboración al diseñar formularios y al analizar las respuestas. Un colaborador de formulario se conoce como *coautor*. Los coautores pueden hacer todo lo que puede hacer el propietario de un formulario, excepto eliminar o mover un formulario. Forms también permite crear un formulario que se puede responder de forma anónima. Esto significa que no es necesario que la persona que responde haya iniciado sesión en la organización para responder a un formulario. 
+
+En la siguiente tabla se describen las actividades de auditoría y la información del registro de auditoría para las actividades realizadas por los coautores y los participantes anónimos.
+
+|**Tipo de actividad**|**Usuario interno o externo**|**Identificador de usuario que ha iniciado sesión**|**Organización que ha iniciado sesión**|**Tipo de usuario de Forms**|
+|:-----|:-----|:-----|:-----|:-----|
+|Actividades de coautoría|Interno|UPN|Organización del propietario del formulario|Coautoría|
+|Actividades de coautoría|Externo|UPN<br>|Organización de coautores<br>|Coautoría|
+|Actividades de coautoría|Externo|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario<br>|Coautoría|
+|Actividades de respuesta|Externo|UPN<br>|Organización del usuario que responde<br>|Responder|
+|Actividades de respuesta|Externo|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. de usuario es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario|Responder|
+|Actividades de respuesta|Anónimo|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. de usuario es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario|Responder|
+||||
+
+### <a name="sensitivity-label-activities"></a>Actividades de la etiqueta de confidencialidad
 
 En la tabla siguiente se enumeran los eventos que se producen a partir de las tareas de etiquetado para los sitios de SharePoint Online y Teams.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 0675601a888d19e6faaeb75169691909b071b92d
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 5dcd97400067645c48f02a31061721644bae553c
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179211"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42277447"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -324,7 +324,7 @@ Para aplicar una etiqueta automáticamente usando esta opción, los buzones y si
 
 Para obtener más información sobre los clasificadores que se pueden entrenar, consulte [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md).
 
-Para obtener un ejemplo de configuración, consulte [cómo preparar y usar un clasificador listo para usar](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
+Para obtener un ejemplo de configuración, consulte [cómo preparar y usar un clasificador integrado](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier).
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint
 

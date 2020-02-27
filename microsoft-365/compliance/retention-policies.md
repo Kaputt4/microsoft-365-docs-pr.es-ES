@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 9ecc74610c0d150dd511a8e24fb66037768587a4
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106902"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280208"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -275,7 +275,7 @@ Estamos trabajando continuamente en optimizar la funcionalidad de retención en 
    > [!NOTE]
    > Se ha usado para ser verdadera que una directiva de retención no pudo eliminar el contenido de Teams que tiene menos de 30 días, pero hemos quitado esta limitación. Ahora, el período de retención de contenido de Teams puede ser el número de días que elija y tan breve como un día. Si tiene un período de retención de un día, se tardará hasta tres días después de que expire el período de retención antes de que se eliminen de forma permanente los mensajes.
     
-En un equipo, los archivos compartidos en un chat se almacenan en la cuenta de OneDrive del usuario que ha compartido el archivo. Los archivos que se cargan en canales se almacenan en el sitio de SharePoint para el equipo. Por lo tanto, para conservar o eliminar archivos de un equipo, deberá crear una directiva de retención que se aplique específicamente a las ubicaciones de SharePoint y OneDrive. Si quiere aplicar una directiva a los archivos de un único grupo específico, puede elegir el sitio de SharePoint para el equipo y las cuentas de OneDrive de los usuarios del equipo.
+En Teams, los archivos compartidos en un chat se almacenan en la cuenta de OneDrive del usuario que ha compartido el archivo. Los archivos que se cargan en canales se almacenan en el sitio de SharePoint para el equipo. Por lo tanto, para conservar o eliminar archivos de Teams, deberá crear una directiva de retención que se aplique a las ubicaciones de grupos de Office 365 y OneDrive. Si desea aplicar una directiva a los archivos compartidos en Teams de un usuario o equipo específico, puede elegir las ubicaciones de grupos de Office 365 y OneDrive e incluir el usuario o equipo específicos.
   
 Una directiva de retención que se aplica a Teams puede usar [Bloqueo de conservación](#locking-a-retention-policy).
   
@@ -402,7 +402,7 @@ Si usa una directiva de conservación, esa Directiva se ha convertido automátic
 
 Los miembros de su equipo de cumplimiento normativo que vayan a crear las directivas de retención necesitan permisos para el [Centro&amp; de cumplimiento de seguridad](https://protection.office.com/). De forma predeterminada, el administrador de inquilinos tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otros usuarios acceso al [Centro de cumplimiento de seguridad &amp; cumplimiento](https://protection.office.com/), sin concederles todos los permisos de un administrador de inquilinos. Para hacerlo, le recomendamos que vaya a la página de **Permisos** del [Centro de cumplimiento de seguridad &amp; cumplimiento](https://protection.office.com/), edite el grupo de roles **Administrador de cumplimiento normativo** y agregue miembros a ese grupo de roles. 
   
-Para más información, vea [Conceder acceso a los usuarios para el Centro de seguridad y cumplimiento de Office 365](/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
+Para más información, vea [Conceder acceso a los usuarios para el Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 Estos permisos son necesarios solo para crear y aplicar una directiva de retención. La aplicación de directivas no requiere acceso al contenido.
   
