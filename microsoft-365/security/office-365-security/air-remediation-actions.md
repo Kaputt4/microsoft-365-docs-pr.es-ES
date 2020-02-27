@@ -15,18 +15,20 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las acciones de corrección en la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 433813ed1a801117a88da696392030db5091b54b
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: 0db49a28fb90bcddcdd874ac54216957e4be5fa1
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261057"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288518"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Acciones de corrección tras una investigación automatizada en Office 365
 
 ## <a name="remediation-actions"></a>Acciones de corrección
 
-[Capacidades automatizadas de investigación y respuesta](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) en Office 365 Advanced Threat Protection incluye ciertas acciones de corrección. Siempre que se ejecuta una investigación automatizada o se ha completado, normalmente verá una o más acciones de corrección que requieren la aprobación del equipo de operaciones de seguridad para continuar. En la tabla siguiente se resumen las acciones de corrección disponibles actualmente en la protección contra amenazas avanzada de Office 365. 
+[Capacidades automatizadas de investigación y respuesta](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) en Office 365 Advanced Threat Protection incluye ciertas acciones de corrección. Siempre que se ejecuta una investigación automatizada o se ha completado, normalmente verá una o más acciones de corrección que requieren la aprobación del equipo de operaciones de seguridad para continuar. 
+
+En la tabla siguiente se resumen las acciones de corrección disponibles actualmente en la [protección contra amenazas avanzada de Office 365](office-365-atp.md). 
 
 |Acción | Descripción |
 |-----|-----|

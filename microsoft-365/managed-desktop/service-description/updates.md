@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0acbb82001d8856639f5b67daa99323f333e26ad
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250480"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284381"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Cómo se administran las actualizaciones en el escritorio administrado por Microsoft
 
@@ -32,7 +32,7 @@ Para obtener más información, vea [Windows Update para empresas: actualizar ti
 
 Microsoft Managed Desktop usa cuatro grupos de Azure AD para administrar las actualizaciones:
 
-- **Prueba**: se usa para validar cambios en la Directiva de escritorio administrada de Microsoft, actualizaciones del sistema operativo, actualizaciones de características y otros cambios que se envían al inquilino. No debe haber ningún usuario final ubicado en el grupo de prueba. El grupo de prueba está exento de todos los contratos de nivel de servicio establecidos y el soporte para el usuario final. Este grupo está disponible para su uso para validar la compatibilidad de las aplicaciones con la nueva Directiva o los bloqueos del sistema operativo.  
+- **Prueba**: se usa para validar cambios en la Directiva de escritorio administrada de Microsoft, actualizaciones del sistema operativo, actualizaciones de características y otros cambios que se envían al inquilino. No debe haber ningún usuario final ubicado en el grupo de prueba. El grupo de prueba está exento de todos los contratos de nivel de servicio establecidos y el soporte para el usuario final. Este grupo está disponible para su uso para validar la compatibilidad de las aplicaciones con nuevos cambios en la Directiva o en el sistema operativo.  
 - **Primero**: contiene los primeros y primeros fabricantes de software que pueden estar sujetos a actualizaciones preliminares. Los dispositivos de este grupo podrían experimentar interrupciones si hay escenarios que no se trataron durante las pruebas en el anillo de prueba.
 - **Rápida**: prioriza la velocidad sobre la estabilidad. Es útil para detectar problemas de calidad antes de que se ofrezcan al grupo general. Este grupo funciona como una siguiente capa de validación, pero suele ser más estable que la prueba y los primeros grupos. 
 - **Amplio**: último grupo para tener actualizaciones de características y calidad disponibles. Este grupo contiene la mayoría de los usuarios en el espacio empresarial y, por lo tanto, favorecer la estabilidad sobre la velocidad en la implementación. Las pruebas de aplicaciones deben realizarse aquí porque el entorno es más estable. 

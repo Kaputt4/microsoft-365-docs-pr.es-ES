@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Centro de ayuda de Microsoft 365 para administradores y profesionales de ti
-summary: Explore la ayuda y los recursos de aprendizaje de Microsoft 365.
+title: Centro de ayuda de Microsoft 365 para administradores y profesionales de TI
+summary: Explore los recursos de ayuda y aprendizaje de Microsoft 365.
 brand: m365
 metadata:
-  title: Centro de ayuda de Microsoft 365 para administradores y profesionales de ti
-  description: Configurar, implementar y administrar Microsoft 365 para dar soporte a su organización, pequeña empresa, campaña o educadores y alumnos
+  title: Centro de ayuda de Microsoft 365 para administradores y profesionales de TI
+  description: Configure, implemente y administre el servicio de soporte técnico de Microsoft 365 para que su organización, pequeña empresa, campaña o profesores y estudiantes sean compatibles
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.topic: hub-page
@@ -15,25 +15,25 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 0575321bf9ed7953389e5a6a8be6b8c21479326a
   ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 02/24/2020
   ms.locfileid: "42250470"
 highlightedContent:
   items:
-  - title: Formación para administradores y profesionales de ti
+  - title: Entrenamiento para administradores y profesionales de TI
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
-  - title: Aprendizaje para usuarios finales
+  - title: Entrenamiento para usuarios finales
     itemType: learn
     url: https://support.office.com/modernworkplace
-  - title: Configurar su empresa en la nube
+  - title: Configurar su empresa en la nube de Microsoft
     itemType: learn
     url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
-  - title: Guías del laboratorio de pruebas para profesionales de ti
+  - title: Guías del laboratorio de pruebas para profesionales de TI
     itemType: how-to-guide
     url: ./enterprise/m365-enterprise-test-lab-guides.md
-  - title: Microsoft 365 Tech Community
+  - title: Comunidad tecnológica de Microsoft 365
     itemType: get-started
     url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
   - title: Recursos para desarrolladores
@@ -42,29 +42,29 @@ highlightedContent:
 additionalContent:
   sections:
   - title: Obtener ayuda con Microsoft 365
-    summary: Seleccione una tarjeta para obtener más información acerca de Microsoft 365.
+    summary: Seleccione una tarjeta para obtener más información sobre Microsoft 365.
     items:
     - title: Centro de administración de Microsoft 365
-      summary: Configure y administre Office 365 y Microsoft 365 para empresas y Enterprise subspcriptions.
+      summary: Configure y administre sus suscripciones a Office 365, Microsoft 365 para Empresas y Microsoft 365 Enterprise.
       url: ./admin/admin-home.md
     - title: Microsoft 365 Empresa
-      summary: Diseñado para pequeñas y medianas empresas. Ejecute su empresa con la última versión de Windows y las aplicaciones de Office, como Excel y Outlook. Aproveche la protección de datos y la seguridad que se extiende a todos los dispositivos de la empresa.
+      summary: Diseñado para pequeñas y medianas empresas. Dirija su negocio con las últimas versiones de Windows y aplicaciones de Office como Excel y Outlook. Aprovéchese de la protección de datos y la seguridad que se extiende a todos los dispositivos de su empresa.
       url: ./business/index.yml
     - title: Microsoft 365 Enterprise
-      summary: Diseñado para organizaciones de gran tamaño. Proteja su negocio y transforme la forma de trabajar con aplicaciones de Office, Windows 10 y Enterprise Mobility + Security.
+      summary: Diseñado para organizaciones de gran tamaño. Proteja su empresa y transforme su forma de trabajar con las aplicaciones de Office, Windows 10 y Enterprise Mobility + Security.
       url: ./enterprise/index.yml
     - title: Microsoft 365 Educación
-      summary: Diseñado para que los educadores desbloqueen la creatividad, promuevan el trabajo en equipo y proporcionen una experiencia sencilla y segura en una sola solución asequible diseñada para el ámbito educativo.
+      summary: Permite a los educadores impulsar la creatividad, fomentar el trabajo en equipo y proporcionar una experiencia segura y sencilla en una única solución asequible diseñada para el ámbito educativo.
       url: https://docs.microsoft.com/education/
     - title: Cumplimiento de Microsoft 365
-      summary: Ayude a su organización a controlar la información, proteger contra los riesgos y cumplir con los estándares legales o normativos.
+      summary: Ayuda a su organización a controlar información, protegerse frente a los riesgos y cumplir con los estándares jurídicos o normativos.
       url: ./compliance/index.yml
-    - title: Seguridad de 365 de Microsoft
-      summary: Obtenga información sobre las soluciones de seguridad sólidas y los servicios en la seguridad de Microsoft 365 para que pueda proteger mejor su organización en todas las superficies de ataque.
+    - title: Seguridad de Microsoft 365
+      summary: Conozca las soluciones de seguridad sólidas y los servicios de seguridad de Microsoft 365, para que pueda proteger mejor su organización en las superficies de ataque.
       url: ./security/index.yml
     - title: Microsoft 365 para Campañas
-      summary: Mantenga la campaña o los datos profesionales y las comunicaciones seguros con esta configuración recomendada para Microsoft 365 Business.
+      summary: Mantiene la campaña o los datos empresariales y las comunicaciones seguros con la configuración recomendada para Microsoft 365 Empresa.
       url: ./campaigns/index.md
     - title: Escritorio administrado de Microsoft
-      summary: Microsoft Managed Desktop combina Microsoft 365 Enterprise, la administración de dispositivos basada en la nube de Microsoft y la supervisión de seguridad, lo que permite liberar a sus equipos de TI para centrarse en las necesidades principales de la empresa.
+      summary: Escritorio administrado de Microsoft combina Microsoft 365 Enterprise, la administración de dispositivos basada en la nube de Microsoft y la supervisión de seguridad, lo que le permite liberar a los equipos de TI para que se concentren en las necesidades básicas de la empresa.
       url: ./managed-desktop/index.yml

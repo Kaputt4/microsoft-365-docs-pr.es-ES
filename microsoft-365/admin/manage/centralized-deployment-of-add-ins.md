@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino de Office 365 y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: 09487e0ff495f4b561e7a27eecf2c99fd4da10af
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278766"
+ms.locfileid: "42284391"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -84,7 +84,7 @@ Para obtener ayuda con Office 365 ProPlus, vea [Consejos de solución de problem
 
 ### <a name="exchange-online-requirements"></a>Requisitos de Exchange Online
 
-Microsoft Exchange almacena los manifiestos de complementos dentro del espacio empresarial de la organización. El administrador que implementa los complementos y los usuarios que reciben esos complementos deben estar en una versión de Exchange online que admita la autenticación de OAuth. De forma predeterminada, las implementaciones de Exchange multiinquilino y de VNext dedicadas admiten OAuth. 
+Microsoft Exchange almacena los manifiestos de complementos dentro del espacio empresarial de la organización. El administrador que implementa los complementos y los usuarios que reciben esos complementos deben estar en una versión de Exchange online que admita la autenticación de OAuth.
   
 Póngase en contacto con el administrador de Exchange de su organización para averiguar qué configuración está en uso. La conectividad de OAuth por usuario puede comprobarse usando el cmdlet de PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
 

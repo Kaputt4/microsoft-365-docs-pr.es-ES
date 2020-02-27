@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Empiece a usar la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.custom: air
+ms.openlocfilehash: c06874ea5d55334d9049d6c5d9d5c55a499dae06
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262017"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288478"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Investigación y respuesta automatizadas (AIR) en Office 365
 
@@ -28,7 +29,9 @@ ms.locfileid: "42262017"
 
 ## <a name="the-overall-flow-of-air"></a>Flujo general de aire
 
-En un nivel alto, el flujo de aire funciona de la siguiente manera:
+Se desencadena una alerta y se inicia una guía de seguridad, que inicia una investigación automatizada. O bien, un analista de seguridad desencadena una investigación automatizada mientras utiliza el explorador de amenazas. La investigación automática se ejecuta y, normalmente, se identifican ciertas acciones de corrección. Esas acciones son revisadas y aprobadas por su equipo de operaciones de seguridad y se completa la investigación. 
+
+En la siguiente tabla se describe el flujo de aire general, paso a paso:
 
 |Paso  |Qué ocurre  |
 |---------|---------|
