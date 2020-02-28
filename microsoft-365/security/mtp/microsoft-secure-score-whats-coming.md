@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55c7cb34c5484eaf8f6693be0ce439e33a82550f
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 4d445d4c917a46b12592308f599570725ace8e9d
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266990"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322569"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>¿Qué viene con la puntuación segura de Microsoft?
 
@@ -59,7 +59,7 @@ Se quitarán las siguientes acciones para la mejora de Intune:
 - Requerir que todos los dispositivos tengan configuraciones de seguridad avanzada
 - Revisar semanalmente el informe de dispositivos bloqueados
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Eliminación de acciones de mejora que no cumplen las expectativas para una medida fiable
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Eliminación de acciones de mejora que no cumplen las expectativas para una medida fiable 
 
 Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quitan las siguientes acciones de mejora.
 
@@ -93,7 +93,7 @@ Por estos motivos, todas las acciones de mejora que requerían una cadencia de r
 
 ## <a name="march-16th-2020"></a>16 de marzo de 2020
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Eliminación de acciones de mejora que no cumplen las expectativas para una medida fiable
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Eliminación de acciones de mejora que no cumplen con las expectativas para una medición fiable o que no proporcionan una representación útil de la postura de seguridad
 
 Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quitan las siguientes acciones de mejora.
 
@@ -102,6 +102,7 @@ Para asegurarse de que la puntuación segura de Microsoft es significativa y que
 - Configurar vínculos seguros de Office 365 para comprobar direcciones URL
 - No permitir la delegación de buzones
 - Permitir vínculos de uso compartido de invitados anónimos para sitios y documentos
+- Activar la consola de Cloud App Security
 
 ### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Compatibilidad con los valores predeterminados de seguridad para acciones de mejora de Azure AD
 

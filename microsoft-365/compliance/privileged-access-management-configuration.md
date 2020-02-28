@@ -1,5 +1,5 @@
 ---
-title: Configuración de la administración del acceso con privilegios en Office 365
+title: Introducción a la administración de acceso privilegiada
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
-description: Use este tema para obtener más información sobre cómo configurar la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: 36a473369ba539230bc4bbb2a630d74830844fc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Use este tema para obtener más información acerca de la configuración de la administración del acceso con privilegios.
+ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601737"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322536"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a>Configuración de la administración del acceso con privilegios en Office 365
+# <a name="get-started-with-privileged-access-management"></a>Introducción a la administración de acceso privilegiada
 
 >[!IMPORTANT]
 >En este tema se tratan las instrucciones de implementación y configuración de las características disponibles actualmente en Office 365 E5 y las SKU de cumplimiento avanzado.

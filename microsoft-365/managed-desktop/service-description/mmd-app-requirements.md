@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ca08e84bf27a64ba7515b6f4c0307c94621601c
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 01c580cd671a84ef68c18b114e133f046a3e5b3b
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280108"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328072"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisitos de la aplicación de escritorio administrada de Microsoft
 
@@ -59,5 +59,5 @@ Seguridad:
 
 El escritorio administrado de Microsoft solo admite controladores de dispositivos que están disponibles a través de Windows Update o la bandeja de entrada instalada con el dispositivo administrado por Microsoft. 
 
-Si una aplicación requiere un controlador o controladores específicos para ejecutarse, se considera una aplicación restringida y requiere que se implemente en el escritorio administrado de Microsoft. 
+Si una aplicación requiere un controlador o controladores específicos para ejecutarse, se considera una aplicación restringida y requiere una excepción antes de que se implemente en el escritorio administrado de Microsoft. 
 

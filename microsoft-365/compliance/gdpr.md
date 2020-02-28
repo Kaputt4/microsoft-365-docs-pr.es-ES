@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7c2a19a58dd616e2516ea70492f4f65ab211441
-ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
+ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41916885"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322559"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Resumen del reglamento general de protección de datos 
 
@@ -56,15 +56,11 @@ Las siguientes tareas están relacionadas con el cumplimiento de los estándares
 
 Como se ha mencionado anteriormente, el plan de acción recomendado para las listas de comprobación de la preparación de el reglamento general de protección de datos (RGPD), y el control en las listas de comprobación ofrece una guía de conformidad para implementar o evaluar el reglamento general de protección de datos (RGPD), con los productos y servicios de Microsoft.
 
-## <a name="the-gdpr-in-action"></a>El reglamento general de protección de datos (RGPD) en acción
-
-En esta sección se proporcionan un esquema y un enfoque para completar las tareas del reglamento general de protección de datos (RGPD) mencionadas anteriormente. La realización de estas tareas puede variar en función de la configuración de Microsoft.
-
-### <a name="data-subject-request-dsr"></a>Solicitud de temas de datos (STD).
+## <a name="data-subject-request-dsr"></a>Solicitud de temas de datos (STD).
 
 El RGPD concede a las personas (o interesados) determinados derechos en relación con el procesamiento de sus datos personales, incluido el derecho a corregir datos inexactos, borrar datos o restringir su procesamiento, recibir sus datos y cumplimentar una solicitud para transmitirlos a otro responsable del tratamiento. El controlador es responsable de proporcionar a tiempo una respuesta coherente del reglamento general de protección de datos (RGPD). Para obtener información técnica, consulte [Solicitudes de temas de datos](gdpr-data-subject-requests.md).  
 
-#### <a name="dsr-faqs"></a>Preguntas frecuentes sobre STD
+### <a name="dsr-faqs"></a>Preguntas frecuentes sobre STD
 
 **¿Qué medidas serán necesarias para completar una solicitud de temas de datos (STD)?**
 
@@ -107,11 +103,11 @@ Puede encontrar una serie de artículos relacionados con el RGPD aquí. Elaborad
 Los servicios en línea ofrecen innumerables funcionalidades que le permiten, como responsable del tratamiento, dar respuesta a una solicitud de los interesados. Los controles administrativos y los servicios en línea de Microsoft le ayudan a actuar sobre datos personales que responden a solicitudes de derechos de interesados, lo que le permite detectar, tener acceso a, rectificar, restringir y exportar datos personales que residen en los datos administrados por responsables del tratamiento que se almacenan en la nube de Microsoft.
  Los servicios en línea también proporcionan datos en formato de lectura mecánica cuando lo necesite.
 
-### <a name="data-protection-impact-assessment"></a>Evaluaciones de impacto de protección de datos
+## <a name="data-protection-impact-assessment"></a>Evaluaciones de impacto de protección de datos
 
 De acuerdo con el reglamento general de protección de datos (RGPD), los controladores de datos son requeridos para preparar una[evaluación de impacto de la protección de datos ](gdpr-data-protection-impact-assessments.md)(EPIA) para procesar operaciones que sean "probables que resulten en un alto riesgo para los derechos y libertades de las personas naturales". No hay nada inherente a los productos y servicios de Microsoft que necesitan la creación de un evaluación de impacto de la protección de datos (EIPA). En su lugar, depende de los detalles de la configuración de Microsoft. Encontrará una lista de los detalles que debe considerar de Office en [Contenido de la evaluación de impacto de la protección de datos (EIPA)](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia)
 
-#### <a name="dpia-faqs"></a>Preguntas frecuentes sobre EIPA
+### <a name="dpia-faqs"></a>Preguntas frecuentes sobre EIPA
 
 **¿Cuándo debería llevar a cabo una evaluación de impacto de la protección de datos (EIPA)?**
 
@@ -146,11 +142,11 @@ Estas revisiones de privacidad tienden a estar pormenorizadas (es posible que un
 
 Como encargado del tratamiento, Microsoft tiene la obligación de asistir a los responsables del tratamiento en garantizar el cumplimiento de los requisitos de EIPA establecidos en el RGPD. Para apoyar a nuestros clientes, se extraen las secciones pertinentes de las EIPA de Microsoft, que se ofrecerán a través de esta sección en futuras actualizaciones, con la intención de permitir que los responsables del tratamiento cuenten con los servicios de Microsoft para aprovechar los extractos y crear sus propias DPIA.
 
-### <a name="breach-notification"></a>Notificación de infracciones
+## <a name="breach-notification"></a>Notificación de infracciones
 
 El RGPD impone requisitos de notificación a los responsables del tratamiento y a los encargados del tratamiento en caso de vulneración de datos personales. Al ser un procesador de datos, Microsoft garantiza que los clientes pueden cumplir los requisitos de notificación de incumplimiento del reglamento general de protección de datos (RGPD). Los controladores de datos son responsables de evaluar los riesgos relacionados con la privacidad de los datos y determinar si una vulneración requiere la notificación a la DPA de un cliente. Microsoft proporciona la información necesaria para realizar la evaluación. Para obtener más información sobre cómo Microsoft detecta y responde ante una violación de datos personales, en[Notificación de violación de datos según el reglamento general de protección de datos (RGPD)](gdpr-breach-notification.md).
 
-#### <a name="breach-notification-faqs"></a>Preguntas frecuentes sobre notificación de infracciones
+### <a name="breach-notification-faqs"></a>Preguntas frecuentes sobre notificación de infracciones
 
 **¿Qué constituye una vulneración de datos personales en virtud del RGPD?**
 
@@ -182,7 +178,7 @@ Para apoyarle en una vulneración de datos personales, Microsoft cuenta con:
 
 Microsoft cuenta con directivas y procedimientos para notificarle inmediatamente. Para que cumpla los requisitos de notificación a la DPA, le proporcionaremos una descripción del proceso que usamos para determinar si se ha producido una vulneración de datos personales, una descripción de la naturaleza de la vulneración y una descripción de las medidas que tomamos para mitigar sus efectos.
 
-### <a name="accountability-readiness-checklists-for-the-gdpr"></a>Listas de comprobación de preparación de responsabilidad para el reglamento general de protección de datos (RGPD)
+## <a name="accountability-readiness-checklists-for-the-gdpr"></a>Listas de comprobación de preparación de responsabilidad para el reglamento general de protección de datos (RGPD)
 
 Estas [listas de comprobación](gdpr-arc.md)proporciona una forma cómoda de obtener acceso a la información que puede necesitar para respaldar el reglamento general de protección de datos (RGPD) al usar los productos de Microsoft. Los elementos de en la lista de control se podrán administrar con la[ puntuación de cumplimiento Microsoft](compliance-score.md) haciendo referencia al identificador y título de control encontrados en los controles administrados por el cliente en el icono del RGPD.
 

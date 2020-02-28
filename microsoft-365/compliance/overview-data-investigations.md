@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071087"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328082"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -31,7 +31,7 @@ En este artículo se describe el uso de las funciones de la nueva herramienta de
 
 ## <a name="permissions"></a>Permisos
 
-Para tener acceso a una investigación de datos y realizarla, debe ser miembro del grupo de funciones de investigador de datos. Para obtener más información, vea [asignar permisos para investigaciones de datos](permissions.md).
+Para tener acceso a una investigación de datos y realizarla, debe ser miembro del grupo de funciones de investigador de datos. Para obtener más información, vea [asignar permisos para investigaciones de datos](data-investigations-permissions.md).
 
 ## <a name="data-investigations-preview-workflow"></a>Flujo de trabajo de investigaciones de datos (vista previa) 
 
