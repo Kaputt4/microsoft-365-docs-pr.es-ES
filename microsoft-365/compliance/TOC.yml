@@ -65,7 +65,7 @@
       items:
         - name: Obtenga más información sobre la administración del acceso con privilegios
           href: privileged-access-management-overview.md
-        - name: Configurar la administración del acceso con privilegios
+        - name: Introducción a la administración de acceso privilegiada
           href: privileged-access-management-configuration.md
     - name: Proteger el acceso de usuario y de dispositivo
       href: protect-access-to-data-and-services.md
@@ -621,14 +621,15 @@
         - name: Preservar CCO y los destinatarios del grupo de distribución expandido
           href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Administrar investigaciones de datos
-  href: overview-data-investigations.md
   items:
+    - name: Información general sobre investigaciones de datos
+      href: overview-data-investigations.md
     - name: Administrar un incidente de pérdidas de datos
       href: manage-data-spillage-incidents.md
+    - name: Asignar permisos para investigaciones de datos
+      href: data-investigations-permissions.md
     - name: Crear una nueva investigación
       href: create-new-investigation.md
-    - name: Asignar permisos para investigaciones de datos
-      href: permissions.md
     - name: Buscar datos en una investigación
       href: search-for-data.md
       items:
