@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1c53eded5e50d480cdce2ccbcb61f732bc899041
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4f456b44ed0d7b3fb83a20d9c66ab49ff8af4946
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078787"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333670"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurar el cumplimiento de la comunicación en Microsoft 365
 
@@ -45,7 +45,7 @@ Siga estos pasos para configurar y usar el cumplimiento de la comunicación en s
 >[!Important]
 >De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de comunicaciones. Los roles asignados en este paso son necesarios antes de que se pueda tener acceso a las características de cumplimiento de la comunicación.
 
-Para que el cumplimiento de la **comunicación** esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365, debe tener asignado el rol de administrador de **revisión de supervisión** . Debe crear un nuevo grupo de roles para los revisores con los roles **Administrador de revisión de supervisión**, administración de **casos**y **revisión** para investigar y corregir mensajes con coincidencias de directivas.
+Para que el cumplimiento de la **comunicación** esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365, debe tener asignado el rol de administrador de **revisión de supervisión** . Debe crear un nuevo grupo de roles para revisores con el **Administrador de revisión de supervisión**, la **Administración de casos**, el **Administrador de cumplimiento**y la **revisión** de roles para investigar y corregir mensajes con coincidencias de directivas.
 
 ### <a name="create-a-new-role-group"></a>Crear un nuevo grupo de roles
 
@@ -57,9 +57,9 @@ Para que el cumplimiento de la **comunicación** esté disponible como una opci�
 
 4. En el campo **nombre** , asigne un nombre descriptivo al nuevo grupo de roles. Seleccione **Siguiente**.
 
-5. Seleccione **elegir roles** y, después, haga clic en **Agregar**. Marque la casilla de **verificación administrador de revisión de supervisión**, administración de **casos**y **revisión**y, a continuación, seleccione **Agregar** y **listo**. Seleccione **Siguiente**.
+5. Seleccione **elegir roles** y, después, haga clic en **Agregar**. Marque la casilla de **verificación administrador de revisión de supervisión**, administración de **casos**, **Administrador de cumplimiento**y **revisión**y, a continuación, seleccione **Agregar** y **listo**. Seleccione **Siguiente**.
 
-    ![Grupos de roles obligatorios de cumplimiento de comunicación](../media/communication-compliance-role-groups.png)
+    ![Grupos de roles obligatorios de cumplimiento de comunicación](../media/communication-compliance-role-groups-1.png)
 
 6. Seleccione **elegir miembros** y, a continuación, seleccione **Agregar**. Marque la casilla de verificación para todos los usuarios y grupos que desee que creen directivas y administre los mensajes con coincidencias de directivas y, a continuación, seleccione **Agregar** y **listo**. Seleccione **Siguiente**.
 

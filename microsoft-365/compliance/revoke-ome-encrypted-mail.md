@@ -9,19 +9,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 10/8/2019
+ms.date: 02/28/2020
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Como administrador de Office 365, puede revocar determinados mensajes de correo electrónico cifrados con el cifrado avanzado de mensajes de Office 365.
-ms.openlocfilehash: 6cbe0704d6e84282d71c37c72a45712c30f3ac61
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0e3ef031e61ed8bc7dd450e7ef61b6b7f41152c6
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070046"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333707"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Revocar el correo electrónico cifrado por el cifrado avanzado de mensajes de Office 365
 
@@ -29,11 +29,11 @@ La revocación de correo electrónico se ofrece como parte de un cifrado de mens
 
 Este artículo forma parte de una amplia serie de artículos sobre el [cifrado de mensajes de Office 365](ome.md).
 
-Si un mensaje se cifró mediante el cifrado de mensajes avanzado de Office 365 y usted es administrador de Office 365, puede revocar el mensaje en determinadas circunstancias. En este artículo se describen las circunstancias en las que es posible la revocación y cómo hacerlo.
+Si un mensaje se cifró mediante el cifrado de mensajes avanzado de Office 365 y es administrador de Office 365, puede revocar el mensaje en determinadas condiciones. En este artículo se describen las circunstancias en las que es posible la revocación y cómo hacerlo.
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>Mensajes de correo electrónico cifrados que puede revocar
 
-Puede revocar los correos electrónicos cifrados si el destinatario recibe un correo electrónico cifrado basado en vínculos con marcas. Si el destinatario recibe una experiencia en línea nativa en un cliente de Outlook compatible, dichos mensajes no se pueden revocar.
+Puede revocar los correos electrónicos cifrados si el destinatario recibe un correo electrónico cifrado basado en vínculos con marcas. Si el destinatario recibe una experiencia en línea nativa en un cliente de Outlook compatible, no podrá revocar esos.
 
 El hecho de que un destinatario reciba una experiencia basada en vínculos o una experiencia en línea depende del tipo de identidad del destinatario: Office 365 y los destinatarios de la cuenta de Microsoft (por ejemplo, usuarios outlook.com) obtienen una experiencia en línea en clientes de Outlook compatibles. Todos los demás tipos de destinatarios, como los destinatarios de gmail, obtienen una experiencia basada en vínculos.
 
@@ -45,9 +45,17 @@ Una vez que se ha revocado un correo electrónico, el destinatario recibe un err
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>Cómo revocar un correo electrónico cifrado
 
+Los administradores de Office 365 siguen estos pasos generales para revocar un correo electrónico cifrado apto:
+
+- Obtenga el identificador de mensaje del correo electrónico.
+- Compruebe que puede revocar el mensaje.
+- Revocar el correo.
+
+Siga leyendo para obtener instrucciones detalladas para cada paso del proceso de revocación.
+
 ### <a name="step-1-obtain-the-message-id-of-the-email"></a>Paso 1. Obtener el identificador del mensaje de correo electrónico
 
-Para poder revocar un correo cifrado, debe recopilar el identificador de mensaje del correo. El MessageId suele tener el formato:
+Para poder revocar un correo cifrado, reúna el identificador de mensaje del correo. El MessageId suele tener el formato:
 
 `<xxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.xxxx.prod.outlook.com>`  
 
@@ -81,12 +89,12 @@ Para comprobar si puede revocar un mensaje de correo electrónico determinado me
      Get-OMEMessageStatus -MessageId "<message id>" | ft -a  Subject, IsRevocable
      ```
 
-   Esto devuelve el asunto del mensaje y si el mensaje es revocable. For example,
+   Este comando devuelve el asunto del mensaje y si el mensaje es revocable. For example,
 
      ```text
-     Subject IsRevocable
-     ------- -----------
-     “Test message”  True
+     Subject        IsRevocable
+     -------        -----------
+     “Test message” True
      ```
 
 ### <a name="step-3-revoke-the-mail"></a>Paso 3. Revocar el correo
@@ -95,11 +103,13 @@ Una vez que conozca el identificador de mensaje del correo electrónico que dese
 
 Para revocar el mensaje mediante el &amp; centro de seguridad y cumplimiento
 
-Para revocar el correo electrónico en &amp; el centro de seguridad y cumplimiento, en el informe de cifrado, en la tabla de **detalles** del mensaje, elija **revocar mensaje**.
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, conéctese al centro de seguridad & cumplimiento.
 
-Puede revocar un correo electrónico mediante Windows PowerShell con el cmdlet Set-OMEMessageRevocation.
+2. En el **Informe de cifrado**, en la tabla de **detalles** del mensaje, elija **revocar mensaje**.
 
-1. [Conexión a PowerShell de Exchange Online](https://aka.ms/exopowershell).
+Para revocar un correo electrónico mediante Windows PowerShell, use el cmdlet Set-OMEMessageRevocation.
+
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, [Conéctese a PowerShell de Exchange Online](https://aka.ms/exopowershell).
 
 2. Ejecute el cmdlet Set-OMEMessageRevocation de la siguiente manera:
 
