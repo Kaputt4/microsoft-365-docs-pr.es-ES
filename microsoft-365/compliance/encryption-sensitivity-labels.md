@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: ef4b5c9768687864427a0805039a35958c476142
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: 5a9ebf1cb2333f4aa7ca98ce36171ad5fce8dad2
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278776"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328128"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -155,7 +155,10 @@ Al asignar permisos, puede elegir:
 - Todos los usuarios de su organización (todos los miembros del espacio empresarial). Esta configuración excluye cuentas de invitado.
 - Todos los usuarios autenticados. Asegúrese de comprender [las limitaciones y los requisitos](#requirements-and-limitations-for-add-any-authenticated-users) de esta configuración antes de seleccionarla.
 - Cualquier usuario específico o grupo de seguridad habilitado para correo electrónico, grupo de distribución, grupo de Office 365 o grupo de distribución dinámico. 
-- Cualquier dirección de correo electrónico o dominio fuera de su organización, como gmail.com, outlook.com o hotmail.com. 
+- Cualquier dirección de correo electrónico o dominio. Use esta opción para especificar todos los usuarios de otra organización que usan Azure AD, escribiendo un nombre de dominio de dicha organización. También puede usar esta opción para proveedores de redes sociales si escribe su nombre de dominio, como **gmail.com**, **hotmail.com** o **outlook.com**.
+
+> [!NOTE]
+> Si especifica un dominio de una organización que usa Azure AD, no puede restringir el acceso a ese dominio específico. En su lugar, todos los dominios comprobados en Azure AD se incluyen automáticamente para el espacio empresarial propietario del nombre de dominio que especifique.
 
 Cuando elige a todos los miembros del espacio empresarial o busca en el directorio, los usuarios o grupos deben tener una dirección de correo electrónico.
 
@@ -163,7 +166,7 @@ Se recomienda usar grupos en lugar de usuarios. Esta estrategia mantiene la conf
 
 ##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Requisitos y limitaciones para **Todos los usuarios autenticados**
 
-Esta configuración no impide que los usuarios tengan acceso al contenido cifrado por la etiqueta, a la vez que cifra el contenido y ofrece opciones para restringir la manera en que puede usarse el contenido (permisos) y tener acceso a él (acceso de expiración y sin conexión). Sin embargo, la aplicación que abra el contenido cifrado debe poder admitir la autenticación que se usa. Por este motivo, los proveedores de redes sociales federadas, como Google, y la autenticación de contraseña de una sola vez, solo funcionan para correo electrónico, y solo cuando se usa Exchange Online y las nuevas funciones del Cifrado de mensajes de Office 365. Las cuentas de Microsoft se pueden usar con las aplicaciones de Office 365 y el [visor de Azure Information Protection](https://portal.azurerms.com/#/download).
+Esta configuración no impide que los usuarios tengan acceso al contenido cifrado por la etiqueta, a la vez que cifra el contenido y ofrece opciones para restringir la manera en que puede usarse el contenido (permisos) y tener acceso a él (acceso de expiración y sin conexión). Sin embargo, la aplicación que abra el contenido cifrado debe poder admitir la autenticación que se usa. Por este motivo, los proveedores de redes sociales federadas, como Google, y la autenticación de contraseña de una sola vez, solo funcionan para correo electrónico, y solo cuando se usa Exchange Online. Las cuentas de Microsoft se pueden usar con las aplicaciones de Office 365 y el [visor de Azure Information Protection](https://portal.azurerms.com/#/download).
 
 Algunos escenarios comunes para la configuración de todos los usuarios autenticados:
 - No le importa quién vea el contenido, pero desea restringir cómo se usa. Por ejemplo, no quiere que el contenido se pueda modificar, copiar o imprimir.
@@ -175,9 +178,9 @@ Algunos escenarios comunes para la configuración de todos los usuarios autentic
 Al elegir qué permisos permitir para los usuarios o grupos, puede seleccionar entre:
 
 - Un [nivel de permiso predefinido](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) con un grupo de derechos preestablecido, como coautor o revisor.
-- Un grupo personalizado de derechos, donde elije los permisos que quiere.
+- Permisos personalizados, donde puede elegir uno o más derechos de uso.
 
-Para obtener más información sobre cada permiso específico, consulte [Derechos y descripciones de uso](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+Para obtener más información sobre cómo seleccionar los permisos adecuados, consulte [derechos y descripciones de uso](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
 ![Opciones para elegir permisos predefinidos o personalizados](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -255,6 +258,97 @@ Para las etiquetas integradas, los usuarios verán el mismo cuadro de diálogo s
 - MacOS: pestaña **Revisar** > **Protección** > **Permisos** > **Acceso restringido**
 
 
+## <a name="example-configurations-for-the-encryption-settings"></a>Configuraciones de ejemplo para la configuración de cifrado
+
+Para cada ejemplo que se muestra a continuación, lleve a cabo la configuración desde la página **cifrado** del asistente cuando [cree o edite una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). En primer lugar, asegúrese de que el **cifrado** se establece en **aplicar**:
+
+![Opción Aplicar cifrado en el Asistente de etiquetas de confidencialidad](../media/apply-encryption-option.png)
+
+### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>Ejemplo 1: etiqueta que aplica No reenviar para enviar un correo electrónico cifrado a una cuenta de Gmail
+
+Esta etiqueta solo está disponible en Outlook y Outlook en la Web y debe usar Exchange Online. Pida a los usuarios que seleccionen esta etiqueta cuando necesiten enviar un correo electrónico cifrado a las personas que usen una cuenta de Gmail (o cualquier otra cuenta de correo electrónico fuera de su organización). 
+
+Los usuarios escriben la dirección de correo electrónico de Gmail en el cuadro **Para**.  Después, seleccionan la etiqueta y la opción No reenviar se agrega automáticamente al correo electrónico. El resultado es que los destinatarios no pueden reenviar el correo electrónico o imprimirlo, copiar desde él o guardar el correo electrónico fuera de su buzón con la opción **Guardar como**. 
+
+1. En la página **Cifrado**: para **¿Quiere asignar permisos ahora o permitir que los usuarios decidan?** seleccione **Permita a los usuarios asignar permisos al aplicar la etiqueta**.
+
+3. Marque la casilla de verificación: **En Outlook, aplicar restricciones equivalentes a la opción No reenviar**.
+
+4. Si está seleccionada, desactive la casilla: **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen los permisos**.
+
+5. Seleccione **Siguiente** y finalice el asistente.
+
+
+### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>Ejemplo 2: etiqueta que restringe los permisos de solo lectura a todos los usuarios de otra organización
+
+Esta etiqueta es adecuada para compartir documentos muy confidenciales como solo lectura, y los documentos siempre requieren una conexión a Internet para verlos.
+
+Esta etiqueta no es adecuada para correos electrónicos.
+
+1. En la página **Cifrado**: para **¿Quiere asignar permisos ahora o permitir que los usuarios decidan?** seleccione **Asignar permisos ahora**.
+
+3. Para **permitir el acceso sin conexión**, seleccione **nunca**.
+
+4. Seleccione **asignar permisos**.
+
+3. En el panel **asignar permisos**, seleccione **agregar estas direcciones de correo electrónico o dominios**.
+
+4. En el cuadro de texto, escriba el nombre de un dominio de la otra organización, por ejemplo, **fabrikam.com**. A continuación, seleccione **Aceptar**.
+
+5. Seleccione **elegir permisos predefinidos o personalizados**.
+
+6. En el panel **elegir permisos predefinidos o personalizados**, seleccione el cuadro de lista desplegable, seleccione **visor** y seleccione **guardar**.
+
+6. De nuevo, en el panel **asignar permisos**, seleccione **guardar**.
+
+7. En la página **cifrado**, seleccione **siguiente** y finalice el asistente.
+
+
+### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>Ejemplo 3: agregar usuarios externos a una etiqueta existente que cifra el contenido
+
+Los nuevos usuarios que agregue serán capaces de abrir documentos y mensajes de correo electrónico que ya estén protegidos con esta etiqueta. Los permisos concedidos a estos usuarios pueden ser distintos de los permisos que tienen los usuarios existentes.
+
+1. En la página **Cifrado**: para **¿Quiere asignar permisos ahora o permitir que los usuarios decidan?** asegúrese de que la opción **Asignar permisos ahora** está seleccionada.
+
+2. Seleccione **asignar permisos**.
+
+3. En el panel **asignar permisos**, seleccione **agregar estas direcciones de correo electrónico o dominios**.
+
+4. En el cuadro de texto, escriba la dirección de correo electrónico del primer usuario (o grupo) que desea agregar y seleccione **agregar**.
+
+5. Seleccione **elegir permisos predefinidos o personalizados**.
+
+6. En el panel **elegir permisos predefinidos o personalizados**, seleccione los permisos para este usuario (o grupo) y seleccione **guardar**.
+
+7. De nuevo, en el panel **asignar permisos**, repita los pasos del 3 al 6 para cada usuario (o grupo) que quiera agregar a esta etiqueta. Después, haga clic en **Guardar**.
+
+8. En la página **cifrado**, seleccione **siguiente** y finalice el asistente.
+
+
+### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>Ejemplo 4: etiqueta que cifra el contenido, pero que no restringe quién puede tener acceso a él.
+
+Esta configuración tiene la ventaja de no tener que especificar usuarios, grupos o dominios para cifrar un correo electrónico o un documento. El contenido seguirá estando cifrado y aún podrá especificar derechos de uso, una fecha de expiración y acceso sin conexión. 
+
+Use esta configuración solo si no necesita restringir quién puede abrir el documento o correo electrónico protegido. [Más información sobre esta configuración](#requirements-and-limitations-for-add-any-authenticated-users)
+
+1. En la página **Cifrado**: para **¿Quiere asignar permisos ahora o permitir que los usuarios decidan?** asegúrese de que la opción **Asignar permisos ahora** está seleccionada.
+
+2. Configure las opciones de **el acceso de usuario al contenido expira** y **permitir el acceso sin conexión** según sea necesario.
+
+3. Seleccione **asignar permisos**.
+
+4. En el panel **asignar permisos**, seleccione **agregar cualquiera de los usuarios autenticados**. 
+    
+    Para **usuarios y grupos**, verá que **AuthenticatedUsers** se agrega automáticamente. No se puede cambiar este valor, solo eliminarlo, lo que cancela la selección de **agregar cualquiera de los usuarios autenticados**.
+
+5. Seleccione **elegir permisos predefinidos o personalizados**.
+
+6. En el panel **elegir permisos predefinidos o personalizados**, seleccione el cuadro de lista desplegable, seleccione los permisos de **visor** que quiera y seleccione **guardar**.
+
+7. De nuevo, en el panel **asignar permisos**, seleccione **guardar**.
+
+8. En la página **cifrado**, seleccione **siguiente** y finalice el asistente.
+
 ## <a name="considerations-for-encrypted-content"></a>Consideraciones sobre el contenido cifrado
 
 Cifrar los documentos y mensajes de correo electrónico más confidenciales le ayuda a asegurarse de que solo los usuarios autorizados puedan acceder a estos datos. Sin embargo, hay algunas consideraciones que debe tener en cuenta:
@@ -291,9 +385,9 @@ Para que las etiquetas de confidencialidad puedan aplicar el cifrado, el servici
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>Configurar Exchange para Azure Information Protection
 
-Exchange no tiene que estar configurado para Azure Information Protection antes de que los usuarios puedan aplicar etiquetas en Outlook para proteger los mensajes. Sin embargo, hasta que Exchange no esté configurado para Azure Information Protection, no obtendrá toda la funcionalidad del uso de la protección de Azure Rights Management con Exchange.
+Exchange no necesita configurarse para Azure Information Protection para que los usuarios puedan aplicar etiquetas en Outlook para cifrar sus correos electrónicos. Sin embargo, hasta que Exchange se configure para Azure Information Protection, no tendrá la funcionalidad completa para usar la protección de Azure Rights Management con Exchange.
  
-Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico protegidos en teléfonos móviles o con Outlook en la Web, no se puede indizar mensajes de correo electrónico protegidos para la búsqueda y no puede se configura Exchange Online DLP para la protección de administración de derechos. 
+Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico cifrados en teléfonos móviles o con Outlook en la Web, no se pueden indizar mensajes de correo electrónico cifrados para la búsqueda y no puede configurar Exchange Online DLP para la protección de administración de derechos. 
 
 Para asegurarse de que Exchange puede admitir estos escenarios adicionales, vea lo siguiente:
 
