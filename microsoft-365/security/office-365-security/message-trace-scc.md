@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: ce0919a1190da06279081089810221e55a8f59b7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 463e4ee5b99b1aaf34c91fc9b8976547a6c2edbd
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088648"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341267"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -342,8 +342,8 @@ Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de c
 |`DI=SQ`|El mensaje se puso en cuarentena.|
 |`DI=SD`|El mensaje se eliminó.|
 |`DI=SJ`|El mensaje se envió a la carpeta de correo no deseado del destinatario.|
-|`DI=SN`|El mensaje se enrutó a través del grupo de entrega de mayor riesgo. Para obtener más información, consulte [grupo de entrega de alto riesgo para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md).|
-|`DI=SO`|El mensaje se enrutó a través del grupo de entrega saliente normal.|
+|`DI=SN`|El mensaje se enrutó a través del grupo de entrega saliente normal.|
+|`DI=SO`|El mensaje se enrutó a través del grupo de entrega de mayor riesgo. Para obtener más información, consulte [grupo de entrega de alto riesgo para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Indica que se coincidió con reglas de correo no deseado.|
 |`IPV=CAL`|El mensaje se permitió a través de los filtros de correo no deseado porque la dirección IP estaba incluida en una lista de direcciones IP permitidas en el filtro de conexión.|
 |`H=<EHLOstring>`|La cadena HELO o EHLO del servidor de correo que se conecta.|

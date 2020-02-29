@@ -1,19 +1,19 @@
 ---
-title: Información sobre la actualización de seguridad de Windows
+title: Información de actualización de seguridad de Windows
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 600491fbdd70315385587eb8cb443a1696c3bee6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257831"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341259"
 ---
-# <a name="windows-security-update-insights"></a>Información sobre la actualización de seguridad de Windows
+# <a name="windows-security-update-insights"></a>Información de actualización de seguridad de Windows
 En esta vista se proporciona información general sobre el estado de las actualizaciones de seguridad para los dispositivos de escritorio administrados por Microsoft. 
 
 Para ver los datos de uso, seleccione la pestaña <strong>actualizaciones de seguridad de Windows</strong> .
@@ -28,7 +28,7 @@ Clasificamos la actividad de los dispositivos en el contexto de Windows Update c
 
 - <strong>Activo:</strong> Dispositivos que cumplen los criterios de uso mínimos (seis horas, dos continuas) para la versión de actualización de seguridad más reciente y que se han protegido con Microsoft Intune como mínimo cada cinco días
 - <strong>Sincronizado:</strong> Dispositivos que se han protegido con Intune en los últimos 28 días
-- No <strong>sincronizados</strong> : dispositivos que <i>no</i> se han protegido con Intune en los últimos 28 días
+- No <strong>sincronizado:</strong> Dispositivos que <i>no</i> se han protegido con Intune en los últimos 28 días
 
 
 
