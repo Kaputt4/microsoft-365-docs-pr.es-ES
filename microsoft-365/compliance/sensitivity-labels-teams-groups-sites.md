@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede aplicar etiquetas en Microsoft Teams, en grupos de Office 365 y en sitios de SharePoint.
-ms.openlocfilehash: 350e1906e4d645c444d772b1ade9a2ff9c850992
-ms.sourcegitcommit: 1b1425142ae06deae3da10a7d30dce4db029d6d3
+ms.openlocfilehash: 477b168435d36170a1506adff021ee4cb5ab5162
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42313805"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333717"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)
 
-Al crear etiquetas de confidencialidad en el [Centro de cumplimiento de Microsoft 365](https://protection.office.com/), ahora puede aplicarlas a los siguientes contenedores: Microsoft Teams, grupos de Office 365 y sitios de SharePoint. Utilice la configuración de la etiqueta para controlar las siguientes opciones de estos contenedores:
+Al crear etiquetas de confidencialidad en el [Centro de cumplimiento de Microsoft 365](https://protection.office.com/), ahora puede aplicarlas a los siguientes contenedores: Microsoft Teams, grupos de Office 365 y sitios de SharePoint. Use la configuración de etiquetas para controlar las opciones siguientes para estos contenedores:
 
 - La privacidad (pública o privada) de los sitios de los equipos conectados a grupos de Office 365
 - Acceso de usuarios externos
@@ -42,17 +42,17 @@ Las etiquetas de confidencialidad de Microsoft Teams, grupos de Office 365 y sit
 
 Antes de habilitar esta versión preliminar y configurar las etiquetas de confidencialidad para la nueva configuración, los usuarios pueden ver y aplicar etiquetas de confidencialidad en sus aplicaciones. Por ejemplo, en Word:
 
-![Una etiqueta de sensibilidad que se muestra en la aplicación de escritorio de Word](../media/sensitivity-label-word.png)
+![Una etiqueta de confidencialidad mostrada en la aplicación de escritorio de Word](../media/sensitivity-label-word.png)
 
 Después de habilitar y configurar esta versión preliminar, los usuarios también pueden ver y aplicar etiquetas de confidencialidad en Microsoft Teams, en los grupos de Office 365 y en los sitios de SharePoint. Por ejemplo, al crear un sitio de grupo de SharePoint:
 
-![Una etiqueta de sensibilidad al crear un sitio de equipo desde SharePoint](../media/sensitivity-labels-new-team-site.png)
+![Una etiqueta de confidencialidad al crear un sitio de grupo de SharePoint](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="enable-this-preview-and-synchronize-labels"></a>Habilitar versión preliminar y sincronizar etiquetas
 
 1. Dado que esta característica usa la funcionalidad de Azure AD, siga las instrucciones de la documentación de Azure AD para habilitar la versión preliminar: [asignar etiquetas de confidencialidad a grupos de Office 365 en Azure Active Directory (versión preliminar)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. En una sesión de PowerShell, conéctese al Centro de seguridad y cumplimiento con una cuenta profesional o educativa con privilegios de administrador global. Para obtener instrucciones, consulte [cumplimiento al conectarse al Powershell del centro de seguridad de Office 365l](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. En una sesión de PowerShell, conéctese al Centro de seguridad y cumplimiento con una cuenta profesional o educativa con privilegios de administrador global. Para obtener instrucciones, consulte [Conectarse al Centro de seguridad y cumplimiento de Office 365 desde PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 3. Ejecute los siguientes comandos para sincronizar las etiquetas en Azure AD, de modo que se puedan usar con los grupos de Office 365:
     
@@ -80,14 +80,14 @@ En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 
 - **Dispositivos no administrados**: para [dispositivos sin administrar](/sharepoint/control-access-from-unmanaged-devices), permite acceso total, acceso de solo Web, o bloquear el acceso completamente. 
 
-![La pestaña de configuración del sitio y del grupo](../media/edit-sensitivity-label-site-group.png)
+![La pestaña de configuración de sitio y grupo](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
 > La configuración de sitio y grupo solo surte efecto al aplicar una etiqueta a un equipo, grupo o sitio. El resto de opciones de configuración de etiqueta, como el cifrado y la marcación de contenido, no se aplican a todo el contenido del equipo, grupo o sitio.
 > 
 > De forma similar, si crea una etiqueta y no activa la configuración de sitio y de grupo, la etiqueta seguirá estando disponible cuando los usuarios creen equipos, grupos y sitios, pero solo se aplicará el nombre de la etiqueta.
 
-Si la etiqueta aún no se ha publicado, publíquela [agregándola a una directiva de etiqueta](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
+Si la etiqueta de confidencialidad aún no se ha publicado, publíquela [agregándola a una directiva de etiqueta de confidencialidad](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). Los usuarios que tienen asignada una directiva de etiqueta de confidencialidad que incluye esta etiqueta podrán seleccionarla para sitios y grupos.
 
 ## <a name="sensitivity-label-management"></a>Administración de etiquetas de confidencialidad
 
@@ -207,7 +207,7 @@ Siempre que haga un cambio en la configuración de sitio y de grupo de una etiqu
 
 Puede usar las etiquetas de confidencialidad que ha configurado para la configuración del sitio y el grupo con las siguientes aplicaciones y servicios:
 
-- SharePoint en linea
+- SharePoint Online
 - Teams
 - Outlook en la Web
 - Centro de administración de SharePoint
@@ -232,7 +232,7 @@ Otras aplicaciones y servicios que actualmente no puede usar las etiquetas de co
 
 ## <a name="classic-azure-ad-site-classification"></a>Clasificación clásica de sitio de Azure AD
 
-Office 365 ya no admite las antiguas clasificaciones para los nuevos grupos y sitios de SharePoint cuando se habilita esta vista previa. Sin embargo, los grupos y sitios existentes aún muestran las clasificaciones antiguas a menos que las convierta para usar etiquetas de confidencialidad. Entre las clasificaciones antiguas se incluyen la clasificación de sitios "modernos" que usted haya configurado, probablemente a través de PowerShell de Azure AD o la biblioteca principal PnP, donde se definían valores para la configuración de `ClassificationList`.
+Office 365 ya no admite las clasificaciones antiguas para nuevos grupos y sitios de SharePoint una vez habilitada esta versión preliminar. Sin embargo, los grupos y sitios existentes aún muestran las clasificaciones antiguas a menos que las convierta para usar etiquetas de confidencialidad. Entre las clasificaciones antiguas se incluyen la clasificación de sitios "modernos" que usted haya configurado, probablemente a través de PowerShell de Azure AD o la biblioteca principal PnP, donde se definían valores para la configuración de `ClassificationList`.
 
 Por ejemplo, en PowerShell:
 
@@ -248,7 +248,7 @@ Para convertir las clasificaciones antiguas en etiquetas de confidencialidad, si
 
 - Crear etiquetas nuevas: especifique la configuración de la etiqueta que desee para los sitios y grupos creando y publicando nuevas etiquetas de confidencialidad que tengan los mismos nombres que las de las clasificaciones existentes.
 
-Luego: 
+Entonces: 
 
 1. Use PowerShell para aplicar las etiquetas de confidencialidad a los grupos de Office 365 y a los sitios de SharePoint mediante la asignación de nombres. Vea la siguiente sección para obtener instrucciones.
 
@@ -288,7 +288,7 @@ Aunque no se puede impedir que los usuarios creen grupos nuevos en aplicaciones 
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. Para cada grupo, agregue la nueva etiqueta de sensibilidad GUID. Por ejemplo:
+6. Para cada grupo, agregue el nuevo GUID de etiqueta de confidencialidad. Por ejemplo:
 
     ```PowerShell
     foreach ($g in $groups)
@@ -309,7 +309,7 @@ Cuando alguien agrega o quita una etiqueta de confidencialidad a un sitio o grup
 
 Para obtener instrucciones sobre cómo buscar el registro de auditoría, vea [buscar el registro de auditoría en el Centro de seguridad y cumplimiento](search-the-audit-log-in-security-and-compliance.md).
 
-## <a name="troubleshoot-sensitivity-label-deployment"></a>Solucionar el despliegue de la etiqueta de sensibilidad
+## <a name="troubleshoot-sensitivity-label-deployment"></a>Resolución de problemas de implementación de etiquetas de confidencialidad
 
 ¿Tiene problemas con las etiquetas de confidencialidad de Microsoft Teams, Grupos de Office 365 y sitios de SharePoint? Compruebe lo siguiente:
 
