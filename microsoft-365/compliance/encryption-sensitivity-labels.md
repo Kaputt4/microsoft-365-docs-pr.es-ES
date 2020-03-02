@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: 5a9ebf1cb2333f4aa7ca98ce36171ad5fce8dad2
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328128"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341283"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -266,7 +266,7 @@ Para cada ejemplo que se muestra a continuación, lleve a cabo la configuración
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>Ejemplo 1: etiqueta que aplica No reenviar para enviar un correo electrónico cifrado a una cuenta de Gmail
 
-Esta etiqueta solo está disponible en Outlook y Outlook en la Web y debe usar Exchange Online. Pida a los usuarios que seleccionen esta etiqueta cuando necesiten enviar un correo electrónico cifrado a las personas que usen una cuenta de Gmail (o cualquier otra cuenta de correo electrónico fuera de su organización). 
+Esta etiqueta solo se muestra en Outlook y Outlook en la Web y debe usar Exchange Online. Pida a los usuarios que seleccionen esta etiqueta cuando necesiten enviar un correo electrónico cifrado a las personas que usen una cuenta de Gmail (o cualquier otra cuenta de correo electrónico fuera de su organización). 
 
 Los usuarios escriben la dirección de correo electrónico de Gmail en el cuadro **Para**.  Después, seleccionan la etiqueta y la opción No reenviar se agrega automáticamente al correo electrónico. El resultado es que los destinatarios no pueden reenviar el correo electrónico o imprimirlo, copiar desde él o guardar el correo electrónico fuera de su buzón con la opción **Guardar como**. 
 
