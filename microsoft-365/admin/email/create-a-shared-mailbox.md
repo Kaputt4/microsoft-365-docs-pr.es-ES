@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 270894da77d9ddf2b35187d8409cd2fd878b0e6d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2ceec37928eafab0c4f02382dd24aa3fa91aa9cd
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255256"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362305"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -64,17 +64,17 @@ Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones c
     
 3. En la página **buzones compartidos**, seleccione **+ agregar un buzón**. Escriba un nombre para el buzón compartido. A continuación, el asistente elige una dirección de correo electrónico, pero puede editarla.
     
-    ![Asigne un nombre a su buzón  compartido.](../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
+    ![Asigne un nombre a su buzón  compartido.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
 4. Seleccione **Agregar**. Puede tardar unos minutos antes de poder agregar miembros.
 
 5. En **Pasos siguientes**, elija **Agregar miembros a este buzón**. Los miembros son las personas que podrán ver el correo entrante para este buzón de correo compartido y las respuestas salientes.
 
-   ![Seleccione Agregar miembros.](../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Seleccione Agregar miembros.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. Elija el botón **+ Agregar miembros**. Coloque una marca de verificación junto a las personas que desea que usen este buzón de correo compartido y seleccione **Guardar**.
 
-   ![Asignar miembros al buzón compartido](../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Asignar miembros al buzón compartido](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Seleccione **Cerrar**.
 
@@ -95,7 +95,7 @@ Pero, ¿qué sucede si un administrador simplemente restablece la contraseña de
 
 2. En la lista de cuentas de usuario, busque la cuenta para el buzón de correo compartido (por ejemplo, cambie el filtro a **usuarios sin licencia**).
 
-3. Seleccione el usuario para abrir su panel de propiedades y seleccione el icono **bloquear este usuario** ![captura de pantalla del icono bloquear este usuario](../media/block-user-icon.png).
+3. Seleccione el usuario para abrir su panel de propiedades y seleccione el icono **bloquear este usuario** ![captura de pantalla del icono bloquear este usuario](../../media/block-user-icon.png).
 
    **Nota**: Si la cuenta ya está bloqueada, se mostrará **inicio de sesión bloqueado** en la parte superior y el icono indicará **desbloquear este usuario**.
 

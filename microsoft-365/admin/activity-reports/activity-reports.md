@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe detallado de cómo las personas de su organización están utilizando los servicios de Office 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: 6962d8ed9632ae2e819f1ea1d0e0950d82ef7ad7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245278"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353971"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Informes de actividad en el Centro de Administración de Microsoft 365
 
@@ -58,7 +58,7 @@ Vea este vídeo para obtener información general sobre cómo puede usar los inf
 ::: moniker-end
 
    
-2. Seleccione **Seleccione un informe** en la parte superior del panel para seleccionarlo de una lista de todos los informes disponibles. También puede seleccionar un widget de actividad de un vistazo de un servicio (correo electrónico, OneDrive, etc.) para ver más información. <br/>![Panel de uso de Office 365](../media/usage-report-dashboard.png)
+2. Seleccione **Seleccione un informe** en la parte superior del panel para seleccionarlo de una lista de todos los informes disponibles. También puede seleccionar un widget de actividad de un vistazo de un servicio (correo electrónico, OneDrive, etc.) para ver más información. <br/>![Panel de uso de Office 365](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Quién puede ver los informes
 
@@ -164,7 +164,7 @@ Si desea ocultar la información de nivel de usuario cuando está generando sus 
   
 La lista de usuarios será similar a la siguiente:
   
-![Informes de Office 365: lista anónima de usuarios](../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Informes de Office 365: lista anónima de usuarios](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a la API de informes.
   

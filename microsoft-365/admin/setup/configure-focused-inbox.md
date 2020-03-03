@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 'Obtenga información acerca de cómo configurar la Bandeja de entrada Prioritarios para todos los usuarios específicos de su organización. '
-ms.openlocfilehash: 6762bf4e81254e962171ddc80027273542288f34
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 29f412b82121b8955c2ddabb5d152bbe6b2255e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257071"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360881"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurar la Bandeja de entrada Prioritarios para todos los usuarios de la organización
 
@@ -52,7 +52,7 @@ Get-OrganizationConfig
 
 4. Busque **FocusedInboxOn** para ver la configuración actual: 
     
-    ![Respuesta de PowerShell sobre el estado de la Bandeja de entrada Prioritarios.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Respuesta de PowerShell sobre el estado de la Bandeja de entrada Prioritarios.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Ejecute el cmdlet siguiente para desactivar la Bandeja de entrada Prioritarios.
     
@@ -74,11 +74,11 @@ Get-OrganizationConfig
 
 Los usuarios verán la vista Prioritarios solo tras cerrar y reiniciar Outlook. Cuando reinicien Outlook, verán una sugerencia en la interfaz de usuario de Outlook, en la que se les dará la opción de usar la nueva Bandeja de entrada Prioritarios. 
   
-![Imagen del aspecto de la Bandeja de entrada Prioritarios cuando un usuario abre por primera vez Outlook en la web.](../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
+![Imagen del aspecto de la Bandeja de entrada Prioritarios cuando un usuario abre por primera vez Outlook en la web.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
 Si va a cambiar de Otros correos a Bandeja de entrada Prioritarios, los usuarios podrán decidir si habilitan (en "Probar") o si descartan la característica. Si el usuario tiene varios clientes (compatibles), puede habilitar o deshabilitar la Bandeja de entrada Prioritarios de forma individual para cada uno de ellos. La sugerencia tiene un aspecto similar a este:
   
-![Se vuelve a abrir una imagen del aspecto de la Bandeja de entrada Prioritarios cuando se implementa para los usuarios y Outlook.](../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
+![Se vuelve a abrir una imagen del aspecto de la Bandeja de entrada Prioritarios cuando se implementa para los usuarios y Outlook.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
 Cuando un usuario decide empezar a usar la Bandeja de entrada Prioritarios, Otros correos se deshabilita automáticamente. La carpeta Otros correos se convierte en una carpeta estándar que el usuario puede renombrar o eliminar.
   
@@ -98,7 +98,7 @@ En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker A
 
 4. Busque FocusedInboxOn para ver la configuración actual:
     
-    ![Respuesta de PowerShell sobre el estado de la Bandeja de entrada Prioritarios.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Respuesta de PowerShell sobre el estado de la Bandeja de entrada Prioritarios.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Ejecute el cmdlet siguiente para desactivar la Bandeja de entrada Prioritarios:
     
@@ -116,13 +116,13 @@ En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker A
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
     
-2. Vaya a **flujo de correo** \> **Reglas**. Seleccione ![Agregar icono EAC](../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) y, a continuación, seleccione **Crear una nueva regla...**. 
+2. Vaya a **flujo de correo** \> **Reglas**. Seleccione ![Agregar icono EAC](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) y, a continuación, seleccione **Crear una nueva regla...**. 
     
 3. Cuando termine de crear la regla, seleccione **Guardar** para iniciarla. 
     
     En la siguiente imagen, se muestra un ejemplo en el que todos los mensajes del "Departamento de nóminas" se entregarán en la Bandeja de entrada Prioritarios.
     
-    ![Bandeja de entrada Prioritarios de nóminas](../media/focusedinbox-transport-rule.PNG)
+    ![Bandeja de entrada Prioritarios de nóminas](../../media/focusedinbox-transport-rule.PNG)
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Usar PowerShell para crear reglas de transporte que dirijan los mensajes de correo electrónico hacia la vista Prioritarios de todos los usuarios
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Obtenga información acerca de cómo hacer que su organización sea más segura frente a ataques a contraseñas y por qué debe prohibir contraseñas comunes y habilitar la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: 0d18605559cc58dd23b91446f2ef13dc28d144cb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7136243aa0a358a59e4be6c348f53ca459e8a65d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248057"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361331"
 ---
 # <a name="password-policy-recommendations-for-office-365"></a>Recomendaciones de directiva de contraseñas para Office 365
  

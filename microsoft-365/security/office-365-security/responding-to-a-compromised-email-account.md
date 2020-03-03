@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico en peligro en Office 365
-ms.openlocfilehash: 3aa8be9b53f2aa8f3fc6bf64744b36de5d912645
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598607"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372488"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Responder a una cuenta de correo electrónico en peligro en Office 365
 
@@ -194,7 +194,7 @@ Su suscripción a Office 365 incluye un potente conjunto de capacidades de segur
 
 ## <a name="see-also"></a>Vea también
 
-- [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](/security/office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+- [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Centro de Quejas de Crímenes por Internet](https://www.ic3.gov/preventiontips.aspx)
 

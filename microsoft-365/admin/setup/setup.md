@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Aprenda a configurar su suscripción a Office 365 Empresa Premium, Office 365 Empresa Essentials, Office 365 Empresa u Office 365 Educación.
-ms.openlocfilehash: 28847b1b2773a0f725a5ac1a99dfc2a807f66b82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 303e736bb3296eba5ddb7ca7e9da8f86ebdc0217
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247836"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360451"
 ---
 # <a name="set-up-office-365-for-business"></a>Configurar Office 365 para empresas
 
@@ -56,9 +56,9 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 3. Siga estos pasos para suscribirse a un plan de Office 365 Empresa.
 
-    Cuando finalice el proceso de suscripción, se le dirigirá al Centro de administración, donde un asistente le indicará como instalar las aplicaciones de Office, agregar su dominio, agregar usuarios y asignar licencias. Una vez completada la configuración inicial, puede usar la página de **instalación del Centro de administración para seguir instalando y configurando los servicios que se incluyen en las suscripciones.
+    Cuando finalice el proceso de suscripción, se le dirigirá al Centro de administración, donde un asistente le indicará como instalar las aplicaciones de Office, agregar su dominio, agregar usuarios y asignar licencias. Una vez completada la configuración inicial, puede usar la página de **instalación** del Centro de administración para seguir instalando y configurando los servicios que se incluyen en las suscripciones.
 
-    Para obtener más información sobre el Asistente para la instalación de Office 365 y la página de **Configuración** del Centro de administración, vea Diferencias entre el Asistente de configuración de Office 365 y la página de Configuración.
+    Para obtener más información sobre el Asistente para la instalación de Office 365 y la página de **Configuración** del Centro de administración, vea [Diferencias entre el Asistente de configuración de Office 365 y la página de Configuración](o365-setup-wizard-and-setup-page.md).
 
 ### <a name="2-set-up-outlook-for-email"></a>2. Configurar Outlook para el correo electrónico
 
@@ -168,7 +168,7 @@ Si usa Office 365 ofrecido por 21Vianet, inicie sesión en [https://portal.partn
 
 1. Seleccione **Correo**.
 
-2. En la barra de navegación de Outlook, seleccione **Configuración**![Configuración: actualizar el perfil, instalar software y conectarse a la nube](../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png)\>**Opciones**.
+2. En la barra de navegación de Outlook, seleccione **Configuración**![Configuración: actualizar el perfil, instalar software y conectarse a la nube](../../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png)\>**Opciones**.
 
 3. En el panel de la izquierda, elija **Correo** y, en **Cuentas**, seleccione **Cuentas conectadas**.
 

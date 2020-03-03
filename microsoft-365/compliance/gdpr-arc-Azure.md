@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7c3be3d13e40c3a758edeb224aa2b8383908dd1f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef8a7695e3e54acda069f73eea88fd54b292ba8a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594531"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353941"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Lista de comprobación de preparación de responsabilidad de Azure para RGPD
 
@@ -145,7 +145,7 @@ Para obtener más documentación relacionada con el RGPD, visite [https://aka.ms
 | 12 <a name="12"> </a> | [Informe de auditoría SOC 2 Type 2 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up), declaración de aplicabilidad de sistemas de administración de la seguridad de la información ISO/CEI 27001:2013](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Ofertas de Cumplimiento del Centro de confianza de Microsoft](offering-home.md)  |
-| 15 <a name="15"> </a> | [Privacidad y datos personales en Intune](https://review.docs.microsoft.com/intune/privacy-personal-data) |
+| 15 <a name="15"> </a> | [Privacidad y datos personales en Intune](https://docs.microsoft.com/intune/privacy-personal-data) |
 | 16 <a name="16"> </a> | [Se ha completado la descarga del](https://aka.ms/GDPRControls) conjunto [de control Azure GDPR](compliance-score.md) |
 | 17 <a name="17"> </a> | [Información sobre el responsable de protección de datos de Microsoft](https://aka.ms/GDPRDPO) |
 
