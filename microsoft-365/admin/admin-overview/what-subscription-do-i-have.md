@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Obtenga información para comprobar qué suscripciones tiene su organización yendo a la página suscripciones.
 ms.custom: okr_SMB
-ms.openlocfilehash: e8871e5d10d86f7e0f45dc34dd824bae6fb2c007
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a63b0b17333ad12846ba8bac2c83b2d8dfc67a8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245589"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352831"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
@@ -52,13 +52,13 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 
 2. Si solo tiene una suscripción, se mostrará en la página **Suscripciones**, junto con el nombre de la suscripción, información sobre esta y su estado. En la siguiente captura de pantalla, podrá ver que tengo una suscripción de Office 365 Empresa.
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. Si tiene varias suscripciones, verá una columna junto a la información detallada de la suscripción que enumera las suscripciones que ha adquirido, así como las suscripciones de prueba. De manera predeterminada, la suscripción situada en la parte superior de la lista está seleccionada automáticamente y se muestra la información detallada de esa suscripción.
 
     Si tiene varias suscripciones, elija la que desee para ver información detallada. La tarjeta de suscripción se actualizará con información sobre esa suscripción.
 
-    ![La página suscripciones del centro de administración muestra una lista de varias suscripciones agrupadas por su estado.](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![La página suscripciones del centro de administración muestra una lista de varias suscripciones agrupadas por su estado.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > Si tiene suscripciones que han expirado o que han sido deshabilitadas, aparecerán según su estado actual.
@@ -71,13 +71,13 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 
 2. Si solo tiene una suscripción, se mostrará en la página **Suscripciones**, junto con el nombre de la suscripción, información sobre esta y su estado. En la siguiente captura de pantalla, podrá ver que tengo una suscripción de Office 365 Empresa.
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. Si tiene varias suscripciones, verá una columna junto a la información detallada de la suscripción que enumera las suscripciones que ha adquirido, así como las suscripciones de prueba. De manera predeterminada, la suscripción situada en la parte superior de la lista está seleccionada automáticamente y se muestra la información detallada de esa suscripción.
 
     Si tiene varias suscripciones, elija la que desee para ver información detallada. La tarjeta de suscripción se actualizará con información sobre esa suscripción.
 
-    ![La página suscripciones del centro de administración muestra una lista de varias suscripciones agrupadas por su estado.](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![La página suscripciones del centro de administración muestra una lista de varias suscripciones agrupadas por su estado.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > Si tiene suscripciones que han expirado o que han sido deshabilitadas, aparecerán según su estado actual.

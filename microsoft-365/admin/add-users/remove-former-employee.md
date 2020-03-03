@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Siga esta lista de comprobación para quitar a un empleado de Office 365 y proteger los datos. '
-ms.openlocfilehash: a59ad66f6c188695e6794bd259668b97669f2217
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f29f24e0f9cf583e768000cff2d6081eb9df6d87
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245691"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353121"
 ---
 # <a name="remove-a-former-employee-from-office-365"></a>Quitar un antiguo empleado de Office 365
   
@@ -159,7 +159,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo. 
   
-5. Seleccione **Guardar**. 
+5. Haga clic en **Guardar**. 
     
 6. Recuerde no eliminar la cuenta del antiguo empleado.
  
@@ -175,7 +175,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo. 
   
-5. Seleccione **Guardar**. 
+5. Haga clic en **Guardar**. 
     
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
@@ -191,7 +191,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo. 
   
-5. Seleccione **Guardar**. 
+5. Haga clic en **Guardar**. 
     
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
@@ -211,9 +211,9 @@ Si su antiguo empleado tenía un teléfono de la organización, puede utilizar e
     
 4. Seleccione el usuario y, en **dispositivos móviles**, seleccione **Ver detalles**. 
     
-5. En la página **detalles del dispositivo móvil** , **en dispositivos móviles**, seleccione el dispositivo móvil, seleccione barrido de borrado](../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)de **datos**![y, a continuación, seleccione **bloquear**. 
+5. En la página **detalles del dispositivo móvil** , **en dispositivos móviles**, seleccione el dispositivo móvil, seleccione barrido de borrado](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)de **datos**![y, a continuación, seleccione **bloquear**. 
     
-6. Seleccione **Guardar**. 
+6. Haga clic en **Guardar**. 
     
     **Sugerencia**: asegúrese de quitar o deshabilitar el usuario de su servicio de BlackBerry Enterprise local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario. 
     

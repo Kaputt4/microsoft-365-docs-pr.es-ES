@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando los servicios de Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: ce55d8374c4fd927914ae3fb63edbdf1f7df4089
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8770d3f49c50ffcab46c1aba302320a49cff8312
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255904"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355281"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 ---
@@ -49,7 +49,7 @@ El Resumen Ejecutivo es una visión general de alto nivel de Microsoft 365 para 
 
 Este Resumen le permite comprender rápidamente los patrones de uso de Office y cómo y dónde colaboran los empleados.
 
-![Imagen del Resumen de uso ejecutivo de Microsoft 365.](../media/office365usage-exec-summary.png)
+![Imagen del Resumen de uso ejecutivo de Microsoft 365.](../../media/office365usage-exec-summary.png)
 
 ## <a name="overview"></a>Información general
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e96801c51137954de86f0da0afa12f9a5a7e698
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 18337b77cfdd2f39ecd87647c4af82654c16f736
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248473"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356721"
 ---
 # <a name="contact-support-for-saint-lucia"></a>Póngase en contacto con el soporte técnico para Santa Lucía
 

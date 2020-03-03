@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en 1&1 IONOS para Office 365.
-ms.openlocfilehash: 88a46fa51ac3e259d617d6d6e1a3dbb189c1ee6d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d4ff6bea0d96402c34b1d1ae302510a6e718c38d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246861"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352061"
 ---
 # <a name="create-dns-records-at-11-ionos-for-office-365"></a>Crear registros DNS en 1&1 IONOS para Office 365
 
@@ -39,7 +39,7 @@ Después de agregar estos registros a la 1&1 IONOS, su dominio estará configura
 Para obtener información acerca del hospedaje web y de DNS para sitios web con Office 365, consulte [Usar un sitio web público con Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Buscar y corregir problemas después de agregar el dominio o los registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
@@ -67,9 +67,9 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://support.of
     ||||
     |:-----|:-----|:-----|
     |**Tipo** <br/> |**Prefijo** <br/> |**Valor de nombre** <br/> |
-    |TXT  <br/> |(Deje este campo en blanco)  <br/> |MS=ms *XXXXXXXX*  <br/> Nota: este es un ejemplo. Utilice aquí su valor de **Dirección o puntos de destino**, de la tabla de Office 365. [¿Cómo puedo encontrarlo?](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(Deje este campo en blanco)  <br/> |MS=ms *XXXXXXXX*  <br/> Nota: este es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. Seleccione **Guardar**.
+7. Haga clic en **Guardar**.
     
 8. Vuelva a seleccionar **Guardar** . 
     
@@ -77,21 +77,21 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://support.of
     
 10. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
     
-2. En la página **dominios** , seleccione el dominio que desea comprobar. 
+2. En la página **Dominios**, elija el dominio que está verificando. 
     
-3. En la página **configuración** , seleccione **Iniciar configuración**.
+3. En la página de **Configuración**, elija ** Iniciar configuración**.
     
-4. En la página **comprobar dominio** , seleccione **comprobar**.
+4. En la página**Verificar dominio**, elija **Verificar**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Buscar y corregir problemas después de agregar el dominio o los registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Office 365
 <a name="BKMK_add_MX"> </a>
@@ -109,9 +109,9 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:22)](https://support.of
     
 4. En el área **configuración del dominio** , seleccione **Editar configuración DNS**.
     
-5. In the **MX Records** section, in the ** Mail Exchanger (MX Record) ** area, select **Other mail server**.<br/>(Es posible que tenga que desplazarse hacia abajo).<br/>![1&amp;1-BP-configure-2-1](../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. In the **MX Records** section, in the ** Mail Exchanger (MX Record) ** area, select **Other mail server**.<br/>(Es posible que tenga que desplazarse hacia abajo).<br/>![1&amp;1-BP-configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
-6. Si ya aparecen registros MX en la lista, elimínelos seleccionando el registro y, después, presionando la tecla **Eliminar** del teclado.<br/>(Si no hay ningún registro MX en la lista, continúe con el paso siguiente).<br/>![1&amp;1-BP-configure-2-2](../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
+6. Si ya aparecen registros MX en la lista, elimínelos seleccionando el registro y, después, presionando la tecla **Eliminar** del teclado.<br/>(Si no hay ningún registro MX en la lista, continúe con el paso siguiente).<br/>![1&amp;1-BP-configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
 7. En los cuadros para el registro **MX 1**, escriba o copie y pegue los valores de la tabla siguiente. 
     
@@ -119,11 +119,11 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:22)](https://support.of
     |:-----|:-----|
     | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/>  Nota: obtenga la \<clave\> de dominio de su cuenta de Office 365. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | 
     
-    ![1 y 1-configurar 2 y 3](../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
+    ![1 y 1-configurar 2 y 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. Seleccione **Guardar**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-configure-2-4](../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. Haga clic en **Guardar**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
-9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**.<br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**.<br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Agregar los seis registros CNAME necesarios para Office 365
 <a name="BKMK_add_CNAME"> </a>
@@ -144,39 +144,39 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:57)](https://support.of
     
 2. Seleccione **administrar dominios**.
     
-3. En la página **centro de dominios** , busque el dominio que desea actualizar y, a continuación, seleccione **administrar subdominios**.<br/>![1&amp;1-BP-configure-3-0](../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Ahora podrá crear dos subdominios y establecer un valor **Alias** para cada uno.<br/>(Esto es necesario porque 1&1 IONOS admite solo un registro CNAME de nivel superior, pero Office 365 requiere varios registros CNAME).<br/>En primer lugar, debe crear el subdominio Autodiscover.
+3. En la página **centro de dominios** , busque el dominio que desea actualizar y, a continuación, seleccione **administrar subdominios**.<br/>![1&amp;1-BP-configure-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Ahora podrá crear dos subdominios y establecer un valor **Alias** para cada uno.<br/>(Esto es necesario porque 1&1 IONOS admite solo un registro CNAME de nivel superior, pero Office 365 requiere varios registros CNAME).<br/>En primer lugar, debe crear el subdominio Autodiscover.
     
 4. En la sección **información general de subdominio** , seleccione **crear subdominio**.
     
-    ![1&amp;1-BP-Configure-3-1](../media/95c63639-eb80-443d-8951-98e8b6cdcc4f.png)
+    ![1&amp;1-BP-Configure-3-1](../../media/95c63639-eb80-443d-8951-98e8b6cdcc4f.png)
   
 5. En el cuadro **Crear subdominio** del nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor **Alias** en un paso posterior).
 
     |**Crear subdominio**|**Alias**|
     |:-----|:-----|
-    |autodiscover  <br/> |autodiscover.outlook.com   | 
+    |autodescubrir  <br/> |autodiscover.outlook.com   | 
 
-    ![1&amp;1-BP-configure-3-2](../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
+    ![1&amp;1-BP-configure-3-2](../../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
   
-6. Seleccione **crear subdominio**.<br/>![1&amp;1-BP-configure-3-3](../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
+6. Seleccione **crear subdominio**.<br/>![1&amp;1-BP-configure-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
   
-7. En la sección **información general de subdominio** , localice el subdominio **Autodiscover** que acaba de crear y, a continuación, seleccione el control **Panel (v)** para ese subdominio. <br/>![1&amp;1-BP-configure-3-4](../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
+7. En la sección **información general de subdominio** , localice el subdominio **Autodiscover** que acaba de crear y, a continuación, seleccione el control **Panel (v)** para ese subdominio. <br/>![1&amp;1-BP-configure-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
   
-8. En el área **configuración de subdominio** , seleccione **Editar configuración DNS**. <br/>![1&amp;1-BP-configure-3-5](../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
+8. En el área **configuración de subdominio** , seleccione **Editar configuración DNS**. <br/>![1&amp;1-BP-configure-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
   
-9. En la sección **registros A/AAAA (direcciones IP)** , en el área **dirección IP (registro A)** , seleccione **CNAME**.<br/>![1&amp;1-BP-configure-3-6](../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
+9. En la sección **registros A/AAAA (direcciones IP)** , en el área **dirección IP (registro A)** , seleccione **CNAME**.<br/>![1&amp;1-BP-configure-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
   
 10. En el cuadro de diálogo **Alias:**, escriba o copie y pegue solo el valor **Alias** de la tabla siguiente.<br/> 
     
     |**Crear subdominio**|**Alias**|
     |:-----|:-----|
-    |autodiscover  <br/> |autodiscover.outlook.com   |
+    |autodescubrir  <br/> |autodiscover.outlook.com   |
 
-    ![1&amp;1-BP-configure-3-7](../media/afac3118-3337-4f99-98dd-a7ca930230ce.png)
+    ![1&amp;1-BP-configure-3-7](../../media/afac3118-3337-4f99-98dd-a7ca930230ce.png)
   
-11. Active la casilla del aviso de declinación de responsabilidades **Soy consciente**.<br/>![1&amp;1-BP-configure-3-8-1](../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
+11. Active la casilla del aviso de declinación de responsabilidades **Soy consciente**.<br/>![1&amp;1-BP-configure-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
-12. Seleccione **Guardar**.<br/>![1&amp;1-BP-configure-3-8-2](../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
+12. Haga clic en **Guardar**.<br/>![1&amp;1-BP-configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
   
   
 ### <a name="additional-cname-records"></a>Registros CNAME adicionales
@@ -248,7 +248,7 @@ Los registros CNAME adicionales creados con el procedimiento siguiente habilitan
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte estos [registros del sistema de nombres de dominio externo para Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Para validar el registro de SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.md). 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Para validar el registro de SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.md). 
   
 Siga los pasos siguientes o [vea el vídeo (empieza en 5:09)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
   
@@ -269,15 +269,15 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:09)](https://support.of
     
     |**Tipo**|**Prefijo**|**Valor de nombre**|
     |:-----|:-----|:-----|
-    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** Se recomienda copiar y pegar esta entrada para que todo el espaciado sea correcto.           | 
+    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           | 
     
-    ![Registro TXT](../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
+    ![Registro TXT](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
   
-7. Seleccione **Guardar**.<br/>![Agregar registro](../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
+7. Haga clic en **Guardar**.<br/>![Agregar registro](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
   
-8. Seleccione **Guardar**.<br/>![Guardar registro](../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
+8. Haga clic en **Guardar**.<br/>![Guardar registro](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
-9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**.<br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**.<br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Agregar los dos registros SRV necesarios para Office 365
 
@@ -298,21 +298,21 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:51)](https://support.of
     
 6. Agregue el primero de los dos registros SRV.<br/>En el área **Agregar registro**, en los cuadros para el nuevo registro, escriba o copie y pegue los valores que aparecen en la primera fila de la tabla siguiente. <br/>(Seleccione los valores **tipo** y **TTL** que se muestran en la lista desplegable). 
     
-    |**Tipo**|**Servicio**|**Protocolo**|**Nombre**|**Host**|**Prioridad**|**Peso**|**Puerto**|**TTL**|
+    |**Tipo**|**Servicio**|**Protocolo**|**Nombre**|**Host**|**Prioridad**|**Grosor**|**Puerto**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV  <br/> |sip  <br/> |_tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (1 h)  <br/> |
     |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Deje este campo en blanco).  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (1 h)  <br/> |  
     
-    ![1&amp;1-BP-configure-5-1](../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
+    ![1&amp;1-BP-configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
-7. Seleccione **Guardar**. <br/>![1&amp;1-BP-configure-5-2](../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
+7. Haga clic en **Guardar**. <br/>![1&amp;1-BP-configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
   
-8. Seleccione **Guardar**. <br/>![1&amp;1-BP-configure-5-3](../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
+8. Haga clic en **Guardar**. <br/>![1&amp;1-BP-configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
-9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**. <br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**. <br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 10. Agregue el otro registro SRV. <br/>En la sección **registros txt y SRV** , seleccione **Agregar registro**. <br/>En el área **Agregar registro** , cree un registro con los valores de la otra fila de la tabla y, a continuación, vuelva a seleccionar **Agregar**, **Guardar**y **sí** para completar el registro. 
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Buscar y corregir problemas después de agregar el dominio o los registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
   

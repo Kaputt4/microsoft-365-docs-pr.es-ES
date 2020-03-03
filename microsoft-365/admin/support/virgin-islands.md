@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cdd3c54a8d654a1c42473ec1f4af72cdd1a2b74e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: cee2459a235f345346d2b4d4fe8615738334d894
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255417"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355551"
 ---
 # <a name="contact-support-for-virgin-islands-us"></a>Póngase en contacto con el soporte de Islas Vírgenes (Estados Unidos)
 

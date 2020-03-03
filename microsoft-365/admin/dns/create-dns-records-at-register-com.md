@@ -1,0 +1,269 @@
+---
+title: Crear registros DNS en Register.com para Office 365
+f1.keywords:
+- NOCSH
+ms.author: pebaum
+author: pebaum
+manager: mnirkhe
+audience: Admin
+ms.topic: get-started-article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+- Adm_O365_Setup
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
+description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Register.com para Office 365.
+ms.openlocfilehash: 0210c03a48112d9cc517ae15f879db3b40eb8c94
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354141"
+---
+# <a name="create-dns-records-at-registercom-for-office-365"></a>Crear registros DNS en Register.com para Office 365
+
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+  
+Si Register.com es su proveedor de host DNS, siga los pasos de este artículo para comprobar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
+  
+Estos son los registros principales que agregar. Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+  
+- [Agregar un registro TXT en Register.com para comprobar que es el propietario del dominio](#add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain)
+    
+- [Agregar un registro MX para que el correo electrónico del dominio vaya a Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+    
+- [Agregar los registros CNAME necesarios para Office 365](#add-the-cname-records-that-are-required-for-office-365)
+    
+- [Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
+
+- [Agregar los dos registros SRV necesarios para Office 365](#add-the-two-srv-records-that-are-required-for-office-365)
+    
+Después de agregar estos registros a Register.com, el dominio estará configurado para funcionar con los servicios de Office 365.
+  
+Para obtener información acerca del hospedaje web y de DNS para sitios web con Office 365, consulte [Usar un sitio web público con Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+  
+> [!NOTE]
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+  
+## <a name="add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain"></a>Agregar un registro TXT en Register.com para comprobar que es el propietario del dominio
+<a name="BKMK_verify"> </a>
+
+Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es de su propiedad. Si puede iniciar sesión en la cuenta en su registrador de dominios y crear el registro DNS, Office 365 sabrá que es el propietario del dominio.
+  
+> [!NOTE]
+> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
+  
+Siga los pasos siguientes o [vea el vídeo (empieza en 0:44)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+  
+1. Para empezar, vaya a su página de dominios en Register.com a través de [este vínculo](https://www.register.com/myaccount/). Se le pedirá que inicie sesión en primer lugar.
+    
+2. Seleccione **Dominios**.
+    
+3. Seleccione **administrar**.
+    
+4. Busque la fila que contiene el nombre del dominio que desea modificar; y, a continuación, en esa fila, seleccione **administrar**.
+    
+5. Desplácese hacia abajo hasta la sección **configuración técnica avanzada** y, a continuación, seleccione **Editar registros txt (SPF)**.
+    
+6. In the boxes for the new record, type or copy and paste the values from the following table.
+    
+    |||
+    |:-----|:-----|
+    |**Host Name** <br/> |**TXT Record** <br/> |
+    |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+   
+7. Seleccione **continuar**.
+    
+8. En la página siguiente, seleccione **continuar** de nuevo para confirmar los cambios. 
+    
+9. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
+    
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
+  
+Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
+  
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
+    
+2. En la página **Dominios**, elija el dominio que está verificando. 
+    
+3. En la página de **Configuración**, elija ** Iniciar configuración**.
+    
+4. En la página**Verificar dominio**, elija **Verificar**.
+    
+> [!NOTE]
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+  
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Office 365
+<a name="BKMK_add_MX"> </a>
+
+Siga los pasos siguientes o [vea el vídeo (empieza en 3:32)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+  
+1. Para empezar, vaya a su página de dominios en Register.com a través de [este vínculo](https://www.register.com/myaccount/). Se le pedirá que inicie sesión en primer lugar.
+    
+2. Seleccione **Dominios**.
+    
+3. Seleccione **administrar**.
+    
+4. Busque la fila que contiene el nombre del dominio que desea modificar; y, a continuación, en esa fila, seleccione **administrar**.
+    
+5. Desplácese hasta la sección **configuración técnica avanzada** y, a continuación, seleccione **Editar registros de intercambio de correo**.
+    
+    ![Seleccionar Editar registros de intercambio de correo](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
+  
+6. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente.
+    
+    (Elija el valor **prioridad** de la lista desplegable). 
+    
+    |****Nombre de host****|****Prioridad****|****Servidor de correo****|
+    |:-----|:-----|:-----|
+    |@  <br/> |Alta  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/>  <br/>**Nota:** Obtenga la \<*clave-de-dominio*\> desde su cuenta de Office 365. <br> [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+   
+    ![Copie y pegue el valor de la tabla](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
+  
+7. Si se muestran otros registros MX en la lista, seleccione todos los registros que quiera eliminar.
+    
+    ![Select each record to delete](../../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
+  
+8. Seleccione **continuar**.
+    
+    ![Seleccione continuar.](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
+  
+9. En la página siguiente, seleccione **continuar** de nuevo para confirmar y guardar los cambios. 
+    
+    ![Seleccione continuar.](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
+  
+## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Agregar los registros CNAME necesarios para Office 365
+<a name="BKMK_add_CNAME"> </a>
+
+Siga los pasos siguientes o [vea el vídeo (empieza en 4:23)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+  
+1. Para empezar, vaya a su página de dominios en Register.com a través de [este vínculo](https://www.register.com/myaccount/). Se le pedirá que inicie sesión en primer lugar.
+    
+2. Seleccione **Dominios**.
+    
+3. Seleccione **administrar**.
+    
+4. Busque la fila que contiene el nombre del dominio que desea modificar; y, a continuación, en esa fila, seleccione **administrar**.
+    
+5. Desplácese hasta la sección **configuración técnica avanzada** y, a continuación, seleccione **Editar registros de alias de dominio**.
+    
+    ![Seleccione Editar registros de alias de dominio](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
+  
+6. Seleccione **Agregar más alias de dominio**.
+    
+    ![Seleccione Agregar alias de dominios](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
+  
+7. Agregar los registros CNAME necesarios.
+    
+    En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila de la tabla siguiente.
+    
+    |****Primer campo (sin etiqueta)****|****Señala a****|
+    |:-----|:-----|
+    |autodescubrir  <br/> |autodiscover.outlook.com  <br/>  <br/> |
+    |sip  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |lyncdiscover  <br/> |webdir.online.lync.com <br/>  <br/> |
+    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/>  <br/> |
+    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/>  <br/> |
+   
+     ![Copiar y pegar los valores DNS de la tabla](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
+  
+8. Una vez que haya agregado todos los registros CNAME que necesita, seleccione **continuar**.
+    
+    ![Seleccione continuar.](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
+  
+9. En la página siguiente, seleccione **continuar** de nuevo para confirmar y guardar los cambios. 
+    
+    ![Seleccione continuar.](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
+  
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
+<a name="BKMK_add_TXT"> </a>
+
+> [!IMPORTANT]
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. If you already have an SPF record for your domain, don't create a new one for Office 365. Instead, add the required Office 365 values to the current record so that you have a single SPF record that includes both sets of values.  
+  
+Siga los pasos siguientes o [vea el vídeo (empieza en 5:12)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+  
+1. Para empezar, vaya a su página de dominios en Register.com a través de [este vínculo](https://www.register.com/myaccount/). Se le pedirá que inicie sesión en primer lugar.
+    
+2. Seleccione **Dominios**.
+    
+3. Seleccione **administrar**.
+    
+4. Busque la fila que contiene el nombre del dominio que desea modificar; y, a continuación, en esa fila, seleccione **administrar**.
+    
+5. Desplácese hasta la sección **configuración técnica avanzada** y, a continuación, seleccione **Editar registros txt (SPF)**.
+    
+    ![Seleccionar Editar registros TXT (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
+  
+6. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente.
+    
+    |****Nombre de host****|****Registro TXT****|
+    |:-----|:-----|
+    |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.  |
+   
+     ![Copiar y pegar los valores de la tabla](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
+  
+7. Seleccione **continuar**.
+    
+    ![Seleccione continuar.](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
+  
+8. En la página siguiente, seleccione **continuar** de nuevo para confirmar y guardar los cambios. 
+    
+    ![Seleccione continuar.](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
+  
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Agregar los dos registros SRV necesarios para Office 365
+<a name="BKMK_add_SRV"> </a>
+
+Siga los pasos siguientes o [vea el vídeo (empieza en 5:55)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+  
+1. Para empezar, vaya a su página de dominios en Register.com a través de [este vínculo](https://www.register.com/myaccount/). Se le pedirá que inicie sesión en primer lugar.
+    
+2. Seleccione **Dominios**.
+    
+3. Seleccione **administrar**.
+    
+4. Busque la fila que contiene el nombre del dominio que desea modificar; y, a continuación, en esa fila, seleccione **administrar**.
+    
+5. Desplácese hasta la sección **configuración técnica avanzada** y, a continuación, seleccione **Editar registros SRV**.
+    
+    ![Seleccionar Editar registros SRV](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
+  
+6. Agregue el primero de los dos registros SRV:
+    
+    En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila de la tabla siguiente.
+    
+    (Elija el valor **prioridad** de la lista desplegable). 
+    
+    |****Servicio****|****Puerto****|****Nombre****|****Prioridad****|****Grosor****|****Puerto****|****Destino****|
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |_sip  <br/> |_tls  <br/> |@  <br/> |Máximo  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |Máximo  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+   
+    ![Copiar y pegar los valores de la tabla](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
+  
+7. Seleccione **Agregar más registros SRV**.
+    
+    ![Seleccione Agregar más registros SRV](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
+  
+8. Agregue el segundo registro SRV:
+    
+    Copie y pegue los valores de la segunda fila de la tabla anterior en los cuadros para el segundo registro.
+    
+9. Una vez que haya agregado los dos registros SRV, seleccione **continuar**.
+    
+    ![Seleccione continuar.](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
+  
+10. En la página siguiente, seleccione **continuar** de nuevo para confirmar y guardar los cambios. 
+    
+    ![Seleccione continuar.](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
+  
+> [!NOTE]
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+  

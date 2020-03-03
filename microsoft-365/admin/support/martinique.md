@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b8c37e773af40880391f8adefd17030b244fd71c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d9f60a2129ffdf93b7116f97150a1df49038e8c9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248660"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357751"
 ---
 # <a name="contact-support-for-martinique"></a>Póngase en contacto con el soporte para Martinica
 

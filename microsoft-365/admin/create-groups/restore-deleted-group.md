@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 'Obtenga información sobre cómo restaurar un grupo de Office 365 eliminado mediante el centro de administración de Exchange. '
-ms.openlocfilehash: 98eb00d90f5b607a58cd32728ce43cb4a1de1ff5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c88f10df27e5f3a0af79c93c7d0e347c5646abc9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246556"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352441"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>Restaurar un grupo de Office 365 eliminado
 
@@ -77,9 +77,9 @@ Debe tener permisos de administrador global de Office 365.
       
 4. Seleccione el grupo que desea restaurar y, a continuación, seleccione el icono restaurar.
     
-    ![Elija el grupo que desea restaurar y, a continuación, seleccione el icono restaurar.](../media/restore-group.png)
+    ![Elija el grupo que desea restaurar y, a continuación, seleccione el icono restaurar.](../../media/restore-group.png)
   
-5. Seleccione actualizar ![Icono Actualizar](../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) para actualizar la información de la página. El grupo se mostrará como Activo. También se restaurarán los formularios y los datos de formulario asociados con su grupo.
+5. Seleccione actualizar ![Icono Actualizar](../../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) para actualizar la información de la página. El grupo se mostrará como Activo. También se restaurarán los formularios y los datos de formulario asociados con su grupo.
     
 ## <a name="restore-an-office-365-group-using-powershell"></a>Restaurar un grupo de Office 365 con PowerShell
 

@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Obtenga información sobre cómo administrar los métodos de pago en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 56ffbcc638ecfe304ff71273ec2ce00abd05ddca
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 894b1cbf9033521c6978f54d0483fe61c3d6114d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341228"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354941"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Agregar, actualizar o quitar los métodos de pago
 
@@ -172,11 +172,11 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 
 2. Elige la suscripción por la que deseas pagar con la nueva tarjeta de crédito o cuenta bancaria y, a continuación, selecciona **actualizar detalles de pago**.
 
-    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Seleccione la flecha desplegable en **Agregar o seleccionar un método de pago**y, a continuación, seleccione **nueva tarjeta de crédito** o **nueva cuenta bancaria**.
 
-    ![El menú desplegable que muestra las opciones nueva tarjeta de crédito y nueva cuenta bancaria.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![El menú desplegable que muestra las opciones nueva tarjeta de crédito y nueva cuenta bancaria.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Escriba la información de la nueva tarjeta de crédito o cuenta bancaria y, después, seleccione **Enviar**.
 
@@ -203,11 +203,11 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 
 2. Elige la suscripción por la que deseas pagar con la nueva tarjeta de crédito o cuenta bancaria y, a continuación, selecciona **actualizar detalles de pago**.
 
-    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Seleccione la flecha desplegable en **Agregar o seleccionar un método de pago**y, a continuación, seleccione **nueva tarjeta de crédito** o **nueva cuenta bancaria**.
 
-    ![El menú desplegable que muestra las opciones nueva tarjeta de crédito y nueva cuenta bancaria.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![El menú desplegable que muestra las opciones nueva tarjeta de crédito y nueva cuenta bancaria.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Escriba la información de la nueva tarjeta de crédito o cuenta bancaria y, después, seleccione **Enviar**.
 
@@ -230,17 +230,17 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
     > [!NOTE]
     > Si la suscripción la compró otro administrador, no podrá actualizar la información de la tarjeta de crédito o de la cuenta bancaria que usó para ello. Si la tarjeta de crédito está a punto de caducar y el otro administrador no puede actualizarla, puede evitar la interrupción del servicio si agrega una tarjeta de crédito distinta o una nueva cuenta bancaria para la suscripción.
   
-    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Seleccione la flecha desplegable en **Agregar o seleccione un método de pago**. Seleccione la tarjeta de crédito o cuenta bancaria que quiera actualizar y, después, seleccione **editar detalles**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Actualice la información de su tarjeta de crédito o cuenta bancaria (el nombre de la tarjeta de crédito o la cuenta bancaria, la dirección de facturación. número de teléfono o fecha de expiración) según sea necesario, seleccione **Enviar**.
 
 5. Aparece un mensaje de confirmación. Si no, consulte [Solución de problemas con las tarjetas de crédito y las cuentas bancarias](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![El mensaje de confirmación: "el método de pago se actualizó correctamente".](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![El mensaje de confirmación: "el método de pago se actualizó correctamente".](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -258,17 +258,17 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
     > [!NOTE]
     > Si la suscripción la compró otro administrador, no podrá actualizar la información de la tarjeta de crédito o de la cuenta bancaria que usó para ello. Si la tarjeta de crédito está a punto de caducar y el otro administrador no puede actualizarla, puede evitar la interrupción del servicio si agrega una tarjeta de crédito distinta o una nueva cuenta bancaria para la suscripción.
   
-    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Seleccione la flecha desplegable en **Agregar o seleccione un método de pago**. Seleccione la tarjeta de crédito o cuenta bancaria que quiera actualizar y, después, seleccione **editar detalles**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Actualice la información de su tarjeta de crédito o cuenta bancaria (el nombre de la tarjeta de crédito o la cuenta bancaria, la dirección de facturación. número de teléfono o fecha de expiración) según sea necesario, seleccione **Enviar**.
 
 5. Aparece un mensaje de confirmación. Si no, consulte [Solución de problemas con las tarjetas de crédito y las cuentas bancarias](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![El mensaje de confirmación: "el método de pago se actualizó correctamente".](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![El mensaje de confirmación: "el método de pago se actualizó correctamente".](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -279,20 +279,20 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 
 2. Elija cualquier suscripción y, a continuación, seleccione **actualizar detalles de pago**.
 
-    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Seleccione la flecha desplegable en **Agregar o seleccione un método de pago**.
 
 4. Seleccione la tarjeta de crédito o la cuenta bancaria y, después, seleccione **quitar**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 5. Seleccione **quitar** de nuevo para eliminar la tarjeta de crédito o la cuenta bancaria.
 
-    ![Los botones quitar y cancelar.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![Los botones quitar y cancelar.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > No podrá quitar una tarjeta de crédito o una cuenta bancaria si actualmente se usa para pagar una suscripción. Si lo intenta, verá un mensaje similar al siguiente: ![el mensaje de error que aparece si intenta quitar un método de pago que se usa actualmente para pagar una suscripción activa.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > No podrá quitar una tarjeta de crédito o una cuenta bancaria si actualmente se usa para pagar una suscripción. Si lo intenta, verá un mensaje similar al siguiente: ![el mensaje de error que aparece si intenta quitar un método de pago que se usa actualmente para pagar una suscripción activa.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > Para quitar la tarjeta de crédito o la cuenta bancaria, seleccione **atrás** y siga los pasos de este artículo para cambiar la tarjeta de crédito o cuenta bancaria que usa para pagar la suscripción. Después, intente eliminarla de nuevo.
 
 ::: moniker-end
@@ -304,20 +304,20 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 
 2. Elija cualquier suscripción y, a continuación, seleccione **actualizar detalles de pago**.
 
-    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Seleccione la flecha desplegable en **Agregar o seleccione un método de pago**.
 
 4. Seleccione la tarjeta de crédito o la cuenta bancaria y, después, seleccione **quitar**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
 
 5. Seleccione **quitar** de nuevo para eliminar la tarjeta de crédito o la cuenta bancaria.
 
-    ![Los botones quitar y cancelar.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![Los botones quitar y cancelar.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > No podrá quitar una tarjeta de crédito o una cuenta bancaria si actualmente se usa para pagar una suscripción. Si lo intenta, verá un mensaje similar al siguiente: ![el mensaje de error que aparece si intenta quitar un método de pago que se usa actualmente para pagar una suscripción activa.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > No podrá quitar una tarjeta de crédito o una cuenta bancaria si actualmente se usa para pagar una suscripción. Si lo intenta, verá un mensaje similar al siguiente: ![el mensaje de error que aparece si intenta quitar un método de pago que se usa actualmente para pagar una suscripción activa.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > Para quitar la tarjeta de crédito o la cuenta bancaria, seleccione **atrás** y siga los pasos de este artículo para cambiar la tarjeta de crédito o cuenta bancaria que usa para pagar la suscripción. Después, intente eliminarla de nuevo.
 
 ::: moniker-end
@@ -329,11 +329,11 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 
 2. Elige la suscripción por la que deseas pagar con la nueva tarjeta de crédito o cuenta bancaria y, a continuación, selecciona **actualizar detalles de pago**.
 
-    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Seleccione la flecha desplegable en **Agregar o seleccionar un método de pago** y seleccione la tarjeta de crédito o cuenta bancaria que desee usar.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Seleccione **Enviar**. Si la tarjeta de crédito o cuenta bancaria que desea usar todavía no aparece en la lista, elija **nueva tarjeta de crédito** o **nueva cuenta bancaria** para agregarla.
 
@@ -346,11 +346,11 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 
 2. Elige la suscripción por la que deseas pagar con la nueva tarjeta de crédito o cuenta bancaria y, a continuación, selecciona **actualizar detalles de pago**.
 
-    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sección método de pago de la página de suscripción que muestra el vínculo actualizar detalles de pago.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Seleccione la flecha desplegable en **Agregar o seleccionar un método de pago** y seleccione la tarjeta de crédito o cuenta bancaria que desee usar.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Seleccione **Enviar**. Si la tarjeta de crédito o cuenta bancaria que desea usar todavía no aparece en la lista, elija **nueva tarjeta de crédito** o **nueva cuenta bancaria** para agregarla.
 

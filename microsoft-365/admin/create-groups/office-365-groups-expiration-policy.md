@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las directivas de expiración de grupos de 365 de Office.
-ms.openlocfilehash: 5a7a9f9a67e8436a8d4120551e306a68a015bcb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245422"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352591"
 ---
 # <a name="office-365-group-expiration-policy"></a>Directiva de expiración de grupo de Office 365
 
@@ -54,7 +54,7 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 |Role|Qué pueden hacer|
 |---------|---------|
 |Office 365 administrador global (en Azure, el administrador de la compañía), administrador del usuario|Cree, lea, actualice o elimine la configuración de la Directiva de expiración de grupos de Office 365.|
-|Usuario|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Office 365 que son de su propiedad|
+|User|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Office 365 que son de su propiedad|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la Directiva de expiración
 
@@ -66,7 +66,7 @@ Si el grupo no tiene un propietario, los correos electrónicos de expiración Ir
 
 Puede establecer la Directiva para todos los grupos, sólo para los grupos seleccionados, o bien desactivarla completamente seleccionando **ninguno**. Tenga en cuenta que actualmente no puede tener diferentes directivas para grupos diferentes.
 
-![Captura de pantalla de la configuración de expiración de grupos en Azure Active Directory](../media/azure-groups-expiration-settings.png)
+![Captura de pantalla de la configuración de expiración de grupos en Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>Funcionamiento de la expiración con la Directiva de retención
 

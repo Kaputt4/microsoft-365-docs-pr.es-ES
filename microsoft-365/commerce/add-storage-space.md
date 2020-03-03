@@ -28,12 +28,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Obtenga información sobre cómo agregar y reducir el almacenamiento de archivos en su suscripción de Office 365. Con el almacenamiento de archivos adicionales, puede almacenar más contenido en SharePoint Online y OneDrive.
-ms.openlocfilehash: 9bf87715cb5acbcc5c6dd34ccd023d5aa5ce6c2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 64e98ff830b592b12e25620e4c2e89e09a161a3e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246520"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354851"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
 
@@ -118,14 +118,14 @@ Si aún no ha adquirido almacenamiento extra para su suscripción, puede hacerlo
 
 2. En la página **suscripciones** , elija la suscripción a la que desea agregar espacio de almacenamiento y, a continuación, seleccione **Complementos**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Si no ve **Complementos**y la suscripción se compró a través de un partner, seleccione **centro de servicios de licencias por volumen (VLSC)**.
   
 3. Seleccione **Buy add-ons**.
 
-    ![Vínculo comprar complementos en la página suscripciones del centro de administración.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Vínculo comprar complementos en la página suscripciones del centro de administración.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. En la página **servicios de compra** , pase el mouse por el servicio de **almacenamiento extra de archivos de Office 365**y seleccione **comprar ahora**.
   
@@ -143,14 +143,14 @@ Si aún no ha adquirido almacenamiento extra para su suscripción, puede hacerlo
 
 2. En la página **suscripciones** , elija la suscripción a la que desea agregar espacio de almacenamiento y, a continuación, seleccione **Complementos**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Si no ve **Complementos**y la suscripción se compró a través de un partner, seleccione **centro de servicios de licencias por volumen (VLSC)**.
   
 3. Seleccione **Buy add-ons**.
 
-    ![Vínculo comprar complementos en la página suscripciones del centro de administración.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Vínculo comprar complementos en la página suscripciones del centro de administración.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. En la página **servicios de compra** , pase el mouse por el servicio de **almacenamiento extra de archivos de Office 365**y seleccione **comprar ahora**.
   
@@ -189,14 +189,14 @@ Si ya ha comprado almacenamiento de archivos extra mediante el complemento de **
 
 2. En la página **suscripciones** , seleccione **Complementos**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Si no ve **Complementos**y la suscripción se compró a través de un partner, seleccione **centro de servicios de licencias por volumen (VLSC)**.
   
 3. En **Office 365 extra File Storage**, seleccione **cambiar cantidad**.
 
-    ![Cambiar vínculo Cantidad.](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Cambiar vínculo Cantidad.](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. En el panel derecho, escriba el número total de gigabytes que necesita y, después, seleccione **Enviar**.
 
@@ -212,14 +212,14 @@ Si ya ha comprado almacenamiento de archivos extra mediante el complemento de **
 
 2. En la página **suscripciones** , seleccione **Complementos**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Si no ve **Complementos**y la suscripción se compró a través de un partner, seleccione **centro de servicios de licencias por volumen (VLSC)**.
   
 3. En **Office 365 extra File Storage**, seleccione **cambiar cantidad**.
 
-    ![Cambiar vínculo Cantidad.](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Cambiar vínculo Cantidad.](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. En el panel derecho, escriba el número total de gigabytes que necesita y, después, seleccione **Enviar**.
 

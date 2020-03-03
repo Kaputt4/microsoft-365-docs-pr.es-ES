@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5db7ee8f41ef84b45f9abeaa86280ecd05243c1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6f13ff7f2f5690008c89bbf873d096c0be791c2e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256257"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358071"
 ---
 # <a name="contact-support-for-kosovo"></a>Póngase en contacto con el soporte técnico para Kosovo
 

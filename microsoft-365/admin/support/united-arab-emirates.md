@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7a628bc6eed4977727bd1e5421b3b1eabbbe7165
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 11e94c595909c570cb8e4a9b8df548983f75c6fb
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255433"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355831"
 ---
 # <a name="contact-support-for-uae-united-arab-emirates"></a>Póngase en contacto con el soporte técnico de Eau (Emiratos Árabes Unidos)
 

@@ -26,12 +26,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Comprenda lo que necesita saber antes de pasar por el proceso de registro de Office 365. '
-ms.openlocfilehash: 40d7084be08187a366733b6de39e1f534a73032e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bd827a4cc57386127083111b0df556786d01f2cc
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245613"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352961"
 ---
 # <a name="how-to-sign-up-for-office-365---admin-help"></a>Cómo iniciar sesión en Office 365 ayuda de administración
 
@@ -144,6 +144,6 @@ No es necesario que cancele la versión de prueba. Si no compra la suscripción 
     > [!IMPORTANT]
     >  Al registrarse, asegúrese de elegir la mejor opción de pago para su organización. Para cambiar las opciones de pago, debe llamar al soporte técnico de facturación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

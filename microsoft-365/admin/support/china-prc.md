@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6184dc81d3a8c0c2b09bef94cc4e95e48337a9b9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f9ab7cfa33781f5227831b9809a2099bc8eea2b9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256680"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359491"
 ---
 # <a name="contact-support-for-china-prc"></a>Póngase en contacto con el soporte técnico de China (PRC)
 
@@ -42,7 +42,7 @@ Inglés: 24 horas al día, 7 días a la semana
 Número de teléfono alternativo: 400 920 0365 (móvil)
 
 ## <a name="follow-us-on-wechat"></a>Síganos en WeChat
-![Código QR WeChat](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![Código QR WeChat](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>Póngase en contacto con el soporte técnico de Office 365 solo para 21Vianet
 ## <a name="phone-number"></a>Número de teléfono

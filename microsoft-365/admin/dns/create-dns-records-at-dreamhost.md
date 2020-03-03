@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Dreamhost para Office 365.
-ms.openlocfilehash: f3f52e97fefece72dd96d9370e75e24fc4cebedf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 201452bc68f82138c08e2054452747a900ed0e6b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248884"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42349491"
 ---
 # <a name="create-dns-records-at-dreamhost-for-office-365"></a>Crear registros DNS en Dreamhost para Office 365
 
@@ -50,15 +50,15 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
   
 1. Para empezar, vaya a su página de dominios en DreamHost a través de [este vínculo](https://panel.dreamhost.com/). Se le pedirá que inicie sesión.
     
-    ![Dreamhost-BP-configure-1-1](../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
+    ![Dreamhost-BP-configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
 2. En la página **Panel** , seleccione **dominios**y, a continuación, **administrar dominios**.
     
-    ![Dreamhost-BP-configure-1-2](../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
+    ![Dreamhost-BP-configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
 3. En la página **administrar dominios** , en la sección **dominio** , seleccione **DNS** para el dominio que quiera editar. 
     
-    ![Dreamhost-BP-configure-1-3](../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
+    ![Dreamhost-BP-configure-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
 4. In the **Add a custom DNS record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -68,32 +68,32 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
     
     |**Name**|**Type**|**Valor**|**Comment**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** Este es un ejemplo. Utilice aquí su valor de **Dirección o puntos de destino**, de la tabla de Office 365.           [¿Cómo puedo encontrarlo?](../get-help-with-domains/information-for-dns-records.md)          |(Este campo es opcional).  <br/> |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |(Este campo es opcional).  <br/> |
    
-   ![Dreamhost-BP-Verify-1-1](../media/ed4a7d43-eeeb-4ec8-849c-37f81315dc69.png)
+   ![Dreamhost-BP-Verify-1-1](../../media/ed4a7d43-eeeb-4ec8-849c-37f81315dc69.png)
   
 5. Seleccione **Agregar registro ahora.**
     
-    ![Dreamhost-BP-Verify-1-2](../media/5b89c89b-3a8e-4624-895a-86f3cc4638f6.png)
+    ![Dreamhost-BP-Verify-1-2](../../media/5b89c89b-3a8e-4624-895a-86f3cc4638f6.png)
   
 6. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
     
-2. En la página **dominios** , seleccione el dominio que desea comprobar. 
+2. En la página **Dominios**, elija el dominio que está verificando. 
     
     
   
-3. En la página **configuración** , seleccione **Iniciar configuración**.
+3. En la página de **Configuración**, elija ** Iniciar configuración**.
     
     
   
-4. En la página **comprobar dominio** , seleccione **comprobar**.
+4. En la página**verificar dominio**, seleccione **verificar**.
     
     
   
@@ -109,15 +109,15 @@ Siga estos pasos.
   
 1. Para empezar, vaya a su página de dominios en DreamHost a través de [este vínculo](https://panel.dreamhost.com/). Se le pedirá que inicie sesión.
     
-    ![Dreamhost-BP-configure-1-1](../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
+    ![Dreamhost-BP-configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
 2. En la página **Panel** , seleccione **correo**y, a continuación, **Custom mx**.
     
-    ![Dreamhost-BP-configure-2-1](../media/58478679-4018-49cc-9d83-371dc5fa4a22.png)
+    ![Dreamhost-BP-configure-2-1](../../media/58478679-4018-49cc-9d83-371dc5fa4a22.png)
   
 3. En la sección **administrar la entrega de correo** , en la columna **acciones** , seleccione **Editar** en el dominio que quiera editar. 
     
-    ![Dreamhost-BP-configure-2-2](../media/6eed0be2-6477-4f49-9f90-39e190499a53.png)
+    ![Dreamhost-BP-configure-2-2](../../media/6eed0be2-6477-4f49-9f90-39e190499a53.png)
   
 4. En la sección **registro MX personalizado** , en los cuadros para el nuevo registro, escriba o copie y pegue los valores siguientes de la tabla siguiente. 
     
@@ -127,21 +127,21 @@ Siga estos pasos.
     
     |**Registro MX (obligatorio)**|
     |:-----|
-    |0  *\<clave-de-dominio\>*  .mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> El 0 es el valor de prioridad MX. Agréguelo al principio del valor MX, separado del resto del valor por un espacio.  <br/> **Nota:** Obtenga la * \<clave\> de dominio* de su cuenta de Office 365.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  *\<clave-de-dominio\>*  .mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> El 0 es el valor de prioridad MX. Agréguelo al principio del valor MX, separado del resto del valor por un espacio.  <br/> **Nota:** Obtenga la * \<clave\> de dominio* de su cuenta de Office 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Dreamhost-BP-configure-2-3](../media/90da1816-e186-4016-ab22-7962f8b86add.png)
+    ![Dreamhost-BP-configure-2-3](../../media/90da1816-e186-4016-ab22-7962f8b86add.png)
   
 5. Seleccione **cambiar este dominio para usar registros MX personalizados ahora.**
     
-    ![Dreamhost-BP-configure-2-4](../media/3221c767-83d3-4f30-9d08-dc998772d2a3.png)
+    ![Dreamhost-BP-configure-2-4](../../media/3221c767-83d3-4f30-9d08-dc998772d2a3.png)
   
 6. Si hay otros registros MX, elimine cada uno de ellos seleccionando la entrada y, después, presionando la tecla **suprimir** en el teclado. 
     
-    ![Dreamhost-BP-configure-2-5](../media/1827733c-3609-4b0f-bba1-531ab090da91.png)
+    ![Dreamhost-BP-configure-2-5](../../media/1827733c-3609-4b0f-bba1-531ab090da91.png)
   
 7. Si ha eliminado algún registro, seleccione **actualizar los registros MX personalizados ahora.**
     
-    ![Dreamhost-BP-configure-2-6](../media/177462be-0686-47b7-a389-025dfc8d6526.png)
+    ![Dreamhost-BP-configure-2-6](../../media/177462be-0686-47b7-a389-025dfc8d6526.png)
 
   
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Agregar los seis registros CNAME necesarios para Office 365
@@ -151,15 +151,15 @@ Siga estos pasos.
   
 1. Para empezar, vaya a su página de dominios en DreamHost a través de [este vínculo](https://panel.dreamhost.com/). Se le pedirá que inicie sesión.
     
-    ![Dreamhost-BP-configure-1-1](../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
+    ![Dreamhost-BP-configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
 2. En la página **Panel** , seleccione **dominios**y, a continuación, **administrar dominios**.
     
-    ![Dreamhost-BP-configure-1-2](../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
+    ![Dreamhost-BP-configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
 3. En la página **administrar dominios** , en la sección **dominio** , seleccione **DNS** para el dominio que quiera editar. 
     
-    ![Dreamhost-BP-configure-1-3](../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
+    ![Dreamhost-BP-configure-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
 4. En la sección **Agregar un registro DNS personalizado** , en los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila en la tabla siguiente. 
     
@@ -175,11 +175,11 @@ Siga estos pasos.
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |(Este campo es opcional).  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |(Este campo es opcional).  <br/> |
    
-    ![Dreamhost-BP-configure-3-1](../media/0c4cc587-ea24-47f2-8dc6-a35735b250e6.png)
+    ![Dreamhost-BP-configure-3-1](../../media/0c4cc587-ea24-47f2-8dc6-a35735b250e6.png)
   
 5. Seleccione **Agregar registro ahora.**
     
-    ![Dreamhost-BP-configure-3-2](../media/b5d4f939-de6d-4d1f-a20a-4eb5fe715281.png)
+    ![Dreamhost-BP-configure-3-2](../../media/b5d4f939-de6d-4d1f-a20a-4eb5fe715281.png)
   
 6. Con los dos pasos anteriores y los valores de las otras cinco filas de la tabla, agregue cada uno de los otros cinco registros CNAME.
 
@@ -188,21 +188,21 @@ Siga estos pasos.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores.
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores.
   
 Siga estos pasos.
   
 1. Para empezar, vaya a su página de dominios en DreamHost a través de [este vínculo](https://panel.dreamhost.com/). Se le pedirá que inicie sesión.
     
-    ![Dreamhost-BP-configure-1-1](../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
+    ![Dreamhost-BP-configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
 2. En la página **Panel** , seleccione **dominios**y, a continuación, **administrar dominios**.
     
-    ![Dreamhost-BP-configure-1-2](../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
+    ![Dreamhost-BP-configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
 3. En la página **administrar dominios** , en la sección **dominio** , seleccione **DNS** para el dominio que quiera editar. 
     
-    ![Dreamhost-BP-configure-1-3](../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
+    ![Dreamhost-BP-configure-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
 4. En la sección **Agregar un registro DNS personalizado** , en los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila en la tabla siguiente. 
     
@@ -212,13 +212,13 @@ Siga estos pasos.
     
     |**Name**|**Type**|**Valor**|**Comment**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** Se recomienda copiar y pegar esta entrada para que todo el espaciado sea correcto.           |(Este campo es opcional).  <br/> |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |(Este campo es opcional).  <br/> |
    
-   ![Dreamhost-BP-configure-4-1](../media/cbc4bbca-bdbc-4dc9-b1b7-b55491eb1e53.png)
+   ![Dreamhost-BP-configure-4-1](../../media/cbc4bbca-bdbc-4dc9-b1b7-b55491eb1e53.png)
   
 5. Seleccione **Agregar registro ahora.**
     
-    ![Dreamhost-BP-configure-4-2](../media/2bd7cae8-1fbc-4407-8dfa-06ce37c586c0.png)
+    ![Dreamhost-BP-configure-4-2](../../media/2bd7cae8-1fbc-4407-8dfa-06ce37c586c0.png)
   
 6. Con los dos pasos anteriores y los valores de la segunda fila de la tabla, agregue el otro registro SRV.
     
@@ -230,15 +230,15 @@ Siga estos pasos.
   
 1. Para empezar, vaya a su página de dominios en DreamHost a través de [este vínculo](https://panel.dreamhost.com/). Se le pedirá que inicie sesión.
     
-    ![Dreamhost-BP-configure-1-1](../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
+    ![Dreamhost-BP-configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
 2. En la página **Panel** , seleccione **dominios**y, a continuación, **administrar dominios**.
     
-    ![Dreamhost-BP-configure-1-2](../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
+    ![Dreamhost-BP-configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
 3. En la página **administrar dominios** , en la sección **dominio** , seleccione **DNS** para el dominio que quiera editar. 
     
-    ![Dreamhost-BP-configure-1-3](../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
+    ![Dreamhost-BP-configure-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
 4. En la sección **Agregar un registro DNS personalizado** , en los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila en la tabla siguiente. 
     
@@ -251,11 +251,11 @@ Siga estos pasos.
     |_sip. _tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |(Este campo es opcional).  <br/> |
     |_sipfederationtls. _tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |(Este campo es opcional).  <br/> |
    
-    ![Dreamhost-BP-configure-5-1](../media/934eb79f-3617-4b72-802c-c42c7d165283.png)
+    ![Dreamhost-BP-configure-5-1](../../media/934eb79f-3617-4b72-802c-c42c7d165283.png)
   
 5. Seleccione **Agregar registro ahora**.
     
-    ![Dreamhost-BP-configure-5-2](../media/015bc73c-8f88-49ce-87f9-e5a6ea3e10a8.png)
+    ![Dreamhost-BP-configure-5-2](../../media/015bc73c-8f88-49ce-87f9-e5a6ea3e10a8.png)
   
 6. Con los dos pasos anteriores y los valores de la segunda fila de la tabla, agregue el otro registro SRV.
     

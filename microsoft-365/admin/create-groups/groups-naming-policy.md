@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Obtenga información sobre cómo crear una directiva de nomenclatura para grupos de Office 365.
-ms.openlocfilehash: 50ea076e22680a444cb9acf04466a7e7d052bb7a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 11e2907462d325e4ad421914ae5a0deb5013e695
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245488"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352721"
 ---
 # <a name="office-365-groups-naming-policy"></a>Directiva de nomenclatura de grupos de Office 365
 
@@ -125,7 +125,7 @@ Para configurar una directiva de nomenclatura:
 5. Elija entre **atributo** y **cadena** para cada línea y, a continuación, especifique el atributo o la cadena.
 6. Cuando haya agregado los prefijos y los sufijos que necesita, haga clic en **Guardar**.
 
-![Captura de pantalla de la configuración de la Directiva de nomenclatura de grupos en Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Captura de pantalla de la configuración de la Directiva de nomenclatura de grupos en Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 ## <a name="naming-policy-experiences-across-office-365-apps"></a>Experiencias de directiva de nomenclatura en las aplicaciones de Office 365
 
@@ -135,7 +135,7 @@ Las aplicaciones de Office 365 se han actualizado para mostrar una vista previa 
 
 Outlook en la web (anteriormente conocido como Outlook Web App o OWA) muestra el nombre representativo de la Directiva de nomenclatura cuando el usuario escribe un nombre de grupo o un alias de grupo. Cuando un usuario escribe una palabra bloqueada personalizada, se muestra un mensaje de error en la interfaz de usuario junto con la palabra bloqueada para que el usuario pueda quitarla. Las instantáneas de la experiencia de Outlook en la web se muestran a continuación.
 
-![Vista en paralelo de la Directiva de nomenclatura de grupos en Office 365 grupos](../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
+![Vista en paralelo de la Directiva de nomenclatura de grupos en Office 365 grupos](../../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
 
 ## <a name="outlook-desktop"></a>Escritorio de Outlook
 
@@ -145,19 +145,19 @@ Los grupos creados en el escritorio de Outlook son compatibles con la Directiva 
 
 Microsoft Teams muestra el nombre representativo de la Directiva de nomenclatura cuando el usuario escribe un nombre de equipo. Cuando un usuario escribe una palabra bloqueada personalizada, se muestra un mensaje de error junto con la palabra bloqueada para que el usuario pueda quitarla.
 
-![Directiva de nomenclatura de grupos en Microsoft Teams ejemplo bloqueado](../media/7c904546-5853-4642-949a-a55dbb004eca.png)
+![Directiva de nomenclatura de grupos en Microsoft Teams ejemplo bloqueado](../../media/7c904546-5853-4642-949a-a55dbb004eca.png)
 
 ## <a name="sharepoint"></a>SharePoint
 
 SharePoint muestra el nombre de la Directiva de nomenclatura cuando el usuario escribe un nombre de sitio o una dirección de correo electrónico de grupo. Cuando un usuario escribe una palabra bloqueada personalizada, se muestra un mensaje de error junto con la palabra bloqueada para que el usuario pueda quitarla.
 
-![Directiva de nomenclatura de Grupo: nombre bloqueado del sitio de SharePoint](../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
+![Directiva de nomenclatura de Grupo: nombre bloqueado del sitio de SharePoint](../../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
 Microsoft Stream muestra el nombre representativo de la Directiva de nomenclatura cuando el usuario escribe un nombre de grupo o alias de correo electrónico de grupo. Cuando un usuario escribe una palabra bloqueada personalizada, se muestra un mensaje de error con la palabra bloqueada para que el usuario pueda quitarla.
 
-![Directiva de nomenclatura de grupo de ejemplo bloqueado para Microsoft Stream](../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
+![Directiva de nomenclatura de grupo de ejemplo bloqueado para Microsoft Stream](../../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
 
 ## <a name="outlook-ios-and-android-app"></a>Aplicación de Outlook para iOS y Android
 
@@ -167,13 +167,13 @@ Los grupos creados en aplicaciones de Outlook son compatibles con la Directiva d
 
 Planner es compatible con la Directiva de nomenclatura. Planner muestra la vista previa de la Directiva de nomenclatura al especificar el nombre del plan. Cuando un usuario escribe una palabra bloqueada personalizada, se muestra un mensaje de error al crear el plan, por lo que el usuario puede quitar la palabra bloqueada.
 
-![Directiva de nomenclatura de grupos: ejemplo de creación de un nuevo plan bloqueado](../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
+![Directiva de nomenclatura de grupos: ejemplo de creación de un nuevo plan bloqueado](../../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
 
 ## <a name="dynamics-365-for-customer-engagement"></a>Dynamics 365 para el compromiso del cliente
 
 Dynamics 365 for Customer Engagement es compatible con la Directiva de nomenclatura. Dynamics 365 muestra el nombre representativo de la Directiva de nomenclatura cuando el usuario escribe un nombre de grupo o alias de correo electrónico de grupo. Cuando el usuario escribe una palabra bloqueada personalizada, se muestra un mensaje de error con la palabra bloqueada para que el usuario pueda quitarla.
 
-![Dynamics 365](../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
+![Dynamics 365](../../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
 
 ## <a name="school-data-sync-sds"></a>School Data Sync (SDS)
 

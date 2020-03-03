@@ -1,5 +1,5 @@
 ---
-title: Cancelar la suscripción
+title: Cancelar su suscripción
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Obtenga información sobre cómo cancelar la suscripción de prueba o de pago de Office 365 para empresas o Microsoft 365.
-ms.openlocfilehash: d3590f224757265af3107566023413d276443c46
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245992"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354601"
 ---
-# <a name="cancel-your-subscription"></a>Cancelar la suscripción
+# <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
 *Elegibilidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar la suscripción de prueba de Office 365 para empresas o pago en línea en el centro de administración en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, [llame al soporte técnico para cancelar la suscripción](../../admin/contact-support-for-business-products.md).
 
@@ -64,7 +64,7 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 3. En el menú **más acciones** , seleccione **Cancelar suscripción**.
 
-    ![Se cierra el menú más acciones.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Se cierra el menú más acciones.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Revise las fechas importantes, envíe comentarios sobre el motivo de la cancelación y, después, seleccione **Cancelar suscripción**.
 
@@ -80,7 +80,7 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 3. En el menú **más acciones** , seleccione **Cancelar suscripción**.
 
-    ![Se cierra el menú más acciones.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Se cierra el menú más acciones.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Revise las fechas importantes, envíe comentarios sobre el motivo de la cancelación y, después, seleccione **Cancelar suscripción**.
 

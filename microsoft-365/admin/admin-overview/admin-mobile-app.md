@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Obtenga la aplicación de administración de Microsoft 365 y aprenda a administrar su organización en línea desde su teléfono o tableta.
-ms.openlocfilehash: 6f81da66ff8d60f1adc249c1e21542b0174050d6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245650"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353041"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil de administración de Microsoft 365
 
 ¿Es un administrador que suele ir? A continuación, consulte la [aplicación de administración 365 de Microsoft](https://go.microsoft.com/fwlink/?LinkID=627216). Puede usar la aplicación para administrar su organización en línea desde su teléfono o tableta. Puede obtener la aplicación desde Apple Store y desde Google Play. <br> 
 
-![Captura de pantalla de la Página principal de la aplicación móvil de administración, que muestra la búsqueda, los mensajes, el estado y los vínculos rápidos.](../media/admin-mobile-app-darkbg.png)
+![Captura de pantalla de la Página principal de la aplicación móvil de administración, que muestra la búsqueda, los mensajes, el estado y los vínculos rápidos.](../../media/admin-mobile-app-darkbg.png)
 
 La aplicación de administración es una aplicación de características enriquecidas que tiene más de 80 características para ayudarle a administrar su organización cuando no puede acceder a un equipo. Esta es una lista de solo algunas de las tareas que puede realizar desde la aplicación:
 
@@ -42,7 +42,7 @@ La aplicación de administración es una aplicación de características enrique
 - Restablecer una contraseña de usuario
 - Asignar licencias
 - Agregar o quitar pertenencias a grupos
-- Agregue usuarios 
+- Agregar usuarios 
 
 Además, si eres usuario responsable de más de una organización en línea, inicias sesión en varias organizaciones y cambia rápidamente de una a otra. 
   
@@ -102,6 +102,6 @@ Puede probar algunos pasos para la solución de problemas de aplicaciones móvil
 
 Correo electrónico [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para informar de un problema con la aplicación. O puede enviar comentarios en la parte inferior de este artículo. 
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

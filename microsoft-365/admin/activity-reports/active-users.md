@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel informes de 365 de Microsoft en el centro de administración de Microsoft 365 y descubra el número de licencias de producto que se usan.
-ms.openlocfilehash: 23637a3aeb7b8e03cfdb3ee9f6fbf7969896981c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6ac56f17e1d106eaa4d1c3a46ff603631532075f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245175"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353961"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Microsoft 365 Reports en el centro de administración: usuarios activos
 
@@ -50,7 +50,7 @@ Por ejemplo, puede usar el informe **Usuarios activos** para conocer cuántas li
 |3.  <br/> |En el gráfico **Usuarios activos** se muestran los usuarios activos diarios en el período de informe separados por producto.  <br/> El gráfico **Servicios** se muestra el número de usuarios por tipo de actividad y servicio.  <br/> |
 |4.  <br/> | En el gráfico **Usuarios activos**, en el eje x se muestra el período de informe seleccionado y en el eje y se muestran los usuarios activos diarios separados y codificados por colores según el tipo de licencia.  <br/>  En el gráfico de actividad **Servicios**, en el eje X se muestran los servicios individuales habilitados para los usuarios en el período especificado y en el eje Y se muestra el número de usuarios por estado de actividad, codificados por colores según el estado de la actividad.  <br/> |
 |5.  <br/> |Puede filtrar la serie que ve en el gráfico seleccionando un elemento de la leyenda. Si cambia esta selección, no cambiará la información en la tabla de cuadrícula.  <br/> |
-|6.  <br/> |También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** ![los datos a](../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) un archivo de Excel. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.  <br/> |
+|6.  <br/> |También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** ![los datos a](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) un archivo de Excel. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.  <br/> |
 |7.  <br/> |Puede cambiar la información que se muestra en la tabla de cuadrícula con controles de columna.  <br/> Si la suscripción se ha operado por 21Vianet, no verá Yammer. <br/> <br/> |
 |||
 

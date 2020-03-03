@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Cambie Office 365 para las suscripciones empresariales manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: 5fe50cbc0a11c4fe9976be07bfb0ab752bae5bba
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257460"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354716"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Cambiar manualmente Office 365 para planes de empresas
 
@@ -74,7 +74,7 @@ Asegúrese de comprar una suscripción para la misma organización en la que se 
 
    **La nueva suscripción de Office 365 para empresas con licencias disponibles**
 
-    ![La página de la suscripción que muestra el número de licencias de la nueva suscripción.](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
+    ![La página de la suscripción que muestra el número de licencias de la nueva suscripción.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
 3. **Comprobar que tiene licencias suficientes para cada usuario**
 
@@ -115,7 +115,7 @@ Las licencias de la suscripción actual se quitarán más adelante; solo pagará
     > [!TIP]
     > Para limitar los servicios que están disponibles para el usuario, cambie el botón de alternancia a la posición **desactivado** para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype empresarial online, puede cambiar el cambio del servicio Skype empresarial online a la posición **desactivado** .
   
-    ![Configuración de asignaciones de licencia para un usuario.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Configuración de asignaciones de licencia para un usuario.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 5. Cambie el botón de alternancia a la posición **desactivado** para las licencias que este usuario ya no necesita.
 
@@ -141,7 +141,7 @@ Las licencias de la suscripción actual se quitarán más adelante; solo pagará
     > - Para limitar los servicios que están disponibles para el usuario, cambie a la posición **desactivado** para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype empresarial online, puede cambiar el cambio del servicio Skype empresarial online a la posición **desactivado** .
     > - Cualquier asignación de licencia anterior para los usuarios seleccionados se quitará.
   
-    ![Configuración de asignaciones de licencia para un usuario.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Configuración de asignaciones de licencia para un usuario.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. En la parte inferior del panel **Reemplazar productos existentes**, seleccione **Reemplazar** \> **Cerrar**.
 

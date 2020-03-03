@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Obtenga el informe de actividad de Yammer y sepa más sobre el número de usuarios que usan Yammer para publicar, como, o leer un mensaje.
-ms.openlocfilehash: 0b6e7feb1d80ddc56c9ea172fa3c7e91ea0903b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245847"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353521"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Office 365 Reports en el centro de administración: informe de actividad de Yammer
 
@@ -44,7 +44,7 @@ Como administrador de Microsoft 365, el panel **informes** muestra los datos de 
 
 Puede obtener una vista de la actividad de Yammer del usuario consultando los gráficos Actividad y Usuarios.
   
-![Informe de actividad de Yammer](../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
+![Informe de actividad de Yammer](../../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
   
 El informe de actividad contiene la siguiente información.
   
@@ -54,13 +54,13 @@ El informe de actividad contiene la siguiente información.
     
 - Puede ver el gráfico **Actividad** para comprender la tendencia de la cantidad de actividad de Yammer en su organización. Podrá comprender la división de mensajes publicados, leídos o que han gustado. 
     
-    ![Vista de actividad en el informe de actividad de Yammer](../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
+    ![Vista de actividad en el informe de actividad de Yammer](../../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
   
   - En el gráfico **Actividad**, el eje Y es el recuento de las actividades de los mensajes que se han publicado, leído o que han gustado. 
     
 - Puede ver el gráfico **Usuario** para comprender la tendencia de la cantidad de usuarios únicos que generan las actividades de Yammer. Puede consultar la tendencia de los usuarios que publican, leen o a quienes les gustan mensajes de Yammer. 
     
-    ![Usuarios ven en el informe de actividad de Yammer](../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
+    ![Usuarios ven en el informe de actividad de Yammer](../../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
   
   - En el gráfico de actividad **Usuarios**, el eje Y es el usuario que publica, lee o le gustan mensajes de Yammer. 
     
@@ -68,7 +68,7 @@ El informe de actividad contiene la siguiente información.
     
 - Puede filtrar la serie que ve en el gráfico seleccionando un elemento de la leyenda. Por ejemplo, en el gráfico **actividad** , seleccione **publicado**, **leído**o **me gusta** ver solo la información relacionada con cada uno de ellos. 
     
-    ![Opciones de publicación, lectura y gusta](../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
+    ![Opciones de publicación, lectura y gusta](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
   
     Al cambiar esta selección, no se cambia la información de la tabla de cuadrícula.
     
@@ -76,7 +76,7 @@ El informe de actividad contiene la siguiente información.
     
     Puede usar el menú para filtrar y ordenar los datos.
     
-    ![Opciones de menú para informes de Yammer](../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
+    ![Opciones de menú para informes de Yammer](../../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
   
     También puede agregar y quitar columnas. Las columnas disponibles son:
     

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Netregistry para Office 365.
-ms.openlocfilehash: de4e16fa20f950edef8d30b4c6d02214e3753b9c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 91f802afccd337a97b23ca514c9d9921595abcd1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254673"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42348821"
 ---
 # <a name="create-dns-records-at-netregistry-for-office-365"></a>Crear registros DNS en Netregistry para Office 365
 
@@ -63,19 +63,19 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
   
 1. Para empezar, vaya a su página de dominios en Netregistry a través de [este vínculo](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
     
-    ![Netregistry_login](../media/ed3c785f-01c3-49e7-affd-c04637c0ffe9.png)
+    ![Netregistry_login](../../media/ed3c785f-01c3-49e7-affd-c04637c0ffe9.png)
   
 2. Junto al dominio que quiera administrar, seleccione **administrar**.
     
-    ![Netregistry_Manage](../media/64ad542a-5ec4-4148-96f8-d6e163449352.png)
+    ![Netregistry_Manage](../../media/64ad542a-5ec4-4148-96f8-d6e163449352.png)
   
 3. Seleccione **Administrador de zonas**.
     
-    ![Netregistry_selectZoneManager](../media/e18c32f9-c1e7-4aa2-9aa6-8dc9c5ea44af.png)
+    ![Netregistry_selectZoneManager](../../media/e18c32f9-c1e7-4aa2-9aa6-8dc9c5ea44af.png)
   
 4. En **Agregar un registro de zona**, elija **registro TXT** de la lista y, a continuación, seleccione **crear nuevo registro**.
     
-    ![Netregistry_TXT_select](../media/eb1761e6-9deb-4631-8deb-bc5d09926722.png)
+    ![Netregistry_TXT_select](../../media/eb1761e6-9deb-4631-8deb-bc5d09926722.png)
   
     > [!NOTE]
     > Debe usar comillas antes y después de la entrada en el cuadro TXT. 
@@ -84,27 +84,27 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
     
     |**Nombre**|**TTL (SEG.)**|**TXT (apunta a la dirección o al valor)**|
     |:-----|:-----|:-----|
-    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |"MS = msXXXXXXXX"  <br/> **Nota:** Este es un ejemplo. Utilice aquí su valor de **Dirección o puntos de destino**, de la tabla de Office 365. [¿Cómo puedo encontrarlo?](../get-help-with-domains/information-for-dns-records.md)  |
+    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |"MS = msXXXXXXXX"  <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
        
-    ![Netregistry_verificationTXTvalues](../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
+    ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
 6. Seleccione **Agregar registro**.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
-2. En la página **dominios** , seleccione el dominio que desea comprobar. 
-    
-    
-  
-3. En la página **configuración** , seleccione **Iniciar configuración**.
+2. En la página **Dominios**, elija el dominio que está verificando. 
     
     
   
-4. En la página **comprobar dominio** , seleccione **comprobar**.
+3. En la página de **Configuración**, elija ** Iniciar configuración**.
+    
+    
+  
+4. En la página**verificar dominio**, seleccione **verificar**.
     
     
   
@@ -116,56 +116,56 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. Para empezar, vaya a su página de dominios en Netregistry a través de [este vínculo](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
     
-    ![Netregistry_login](../media/80277b0e-547e-4635-aa6a-5d8ebe3fba85.png)
+    ![Netregistry_login](../../media/80277b0e-547e-4635-aa6a-5d8ebe3fba85.png)
   
 2. Junto al dominio que quiera administrar, seleccione **administrar**.
     
-    ![Netregistry_Manage](../media/96e2c6e4-21fd-4405-a4fe-b1188400b985.png)
+    ![Netregistry_Manage](../../media/96e2c6e4-21fd-4405-a4fe-b1188400b985.png)
   
 3. Seleccione **Administrador de zonas**.
     
-    ![Netregistry_selectZoneManager](../media/914021f6-dff3-4640-84d6-b83cf8f61cf1.png)
+    ![Netregistry_selectZoneManager](../../media/914021f6-dff3-4640-84d6-b83cf8f61cf1.png)
   
 4. En **registros de la zona actual**, quite los registros MX predeterminados seleccionando **quitar** junto a cada registro MX de la lista. 
     
-    ![Netregistry_MX_remove](../media/494670a9-8b8d-46e5-8136-05e82212a115.png)
+    ![Netregistry_MX_remove](../../media/494670a9-8b8d-46e5-8136-05e82212a115.png)
   
 5. En **Agregar un registro de zona**, elija **registro MX** de la lista y, después, seleccione **crear nuevo registro**.
     
-    ![Netregistry_MX_select](../media/29b60eb9-6c40-490f-9669-e65b65962f37.png)
+    ![Netregistry_MX_select](../../media/29b60eb9-6c40-490f-9669-e65b65962f37.png)
   
 6. En el formulario **nuevo registro MX** , escriba (o copie y pegue) los valores de la tabla siguiente. 
     
     |**Nombre**|**TTL (SEG.)**|**Exchange (apunta a la dirección o al valor)**|**¿Es el host completo?**|**Preferencia (prioridad)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/> **Nota:** Obtenga la * \<clave\> de dominio* de su cuenta de Office 365.  [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)      |(seleccione la casilla de verificación)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/> **Nota:** Obtenga la * \<clave\> de dominio* de su cuenta de Office 365.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)      |(seleccione la casilla de verificación)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
-    ![Netregistry_MX_values](../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
+    ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
 7. Seleccione **Agregar registro**.
     
-    ![Netregistry_MX_values_AddRecord](../media/8194cb38-afa0-48ac-831c-fd34b6ad652e.png)
+    ![Netregistry_MX_values_AddRecord](../../media/8194cb38-afa0-48ac-831c-fd34b6ad652e.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Agregar los registros CNAME necesarios para Office 365
 <a name="bkmk_cname"> </a>
 
 1. Para empezar, vaya a su página de dominios en Netregistry a través de [este vínculo](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
     
-    ![Netregistry_login](../media/cbf83dce-86d2-4008-9400-56def4b6fcd7.png)
+    ![Netregistry_login](../../media/cbf83dce-86d2-4008-9400-56def4b6fcd7.png)
   
 2. Junto al dominio que quiera administrar, seleccione **administrar**.
     
-    ![Netregistry_Manage](../media/7bee4b0f-2c1d-43ca-b1bb-9b889ca0c5e4.png)
+    ![Netregistry_Manage](../../media/7bee4b0f-2c1d-43ca-b1bb-9b889ca0c5e4.png)
   
 3. Seleccione **Administrador de zonas**.
     
-    ![Netregistry_selectZoneManager](../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
+    ![Netregistry_selectZoneManager](../../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
   
 4. En **Agregar un registro de zona**, elija **registro CNAME** de la lista y, después, seleccione **crear nuevo registro**.
     
-    ![Netregistry_CNAME_CreateNewRecord](../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
+    ![Netregistry_CNAME_CreateNewRecord](../../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
   
-5. In the boxes for the new record, type or copy and paste the values from the following table.
+5. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente.
     
     |**Name**|**Type**|**TTL**|**HOST (valor de punto o dirección)**|
     |:-----|:-----|:-----|:-----|
@@ -175,11 +175,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |CNAME  <br/> |3600 (segundos)  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |3600 (segundos)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
        
-    ![Netregistry_CNAME_values](../media/93c479f0-3ce2-491a-9113-6dde1cd7131b.png)
+    ![Netregistry_CNAME_values](../../media/93c479f0-3ce2-491a-9113-6dde1cd7131b.png)
       
 6. Seleccione **Agregar registro**.
     
-    ![Netregistry_CNAME_values_AddRecord](../media/046c8c64-ea71-4530-9fc6-69f0c70993b6.png)
+    ![Netregistry_CNAME_values_AddRecord](../../media/046c8c64-ea71-4530-9fc6-69f0c70993b6.png)
   
 7. Repita los pasos anteriores para crear los otros cinco registros CNAME.
     
@@ -189,73 +189,73 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores.
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores.
   
 1. Para empezar, vaya a su página de dominios en Netregistry a través de [este vínculo](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
     
-    ![Netregistry_login](../media/a841f11f-1c0f-4926-acea-a2b8bb083984.png)
+    ![Netregistry_login](../../media/a841f11f-1c0f-4926-acea-a2b8bb083984.png)
   
 2. Junto al dominio que quiera administrar, seleccione **administrar**.
     
-    ![Netregistry_Manage](../media/4245bbbb-4e2d-49e7-a89c-679949aa3d18.png)
+    ![Netregistry_Manage](../../media/4245bbbb-4e2d-49e7-a89c-679949aa3d18.png)
   
 3. Seleccione **Administrador de zonas**.
     
-    ![Netregistry_selectZoneManager](../media/372e5918-b6dc-4268-8f9a-0aa71d65deef.png)
+    ![Netregistry_selectZoneManager](../../media/372e5918-b6dc-4268-8f9a-0aa71d65deef.png)
   
 4. En **Agregar un registro de zona**, elija **registro TXT** de la lista y, a continuación, seleccione **crear nuevo registro**.
     
-    ![Netregistry_TXT_select](../media/a2930d03-853a-4f1e-9205-d00f25bed35f.png)
+    ![Netregistry_TXT_select](../../media/a2930d03-853a-4f1e-9205-d00f25bed35f.png)
   
-5. In the boxes for the new record, type or copy and paste the values from the following table. 
+5. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente. 
     
     > [!NOTE]
     > Debe usar comillas antes y después de la entrada en el cuadro TXT. 
   
     |**Name**|**Type**|**TTL**|**Datos TXT (destino)**|
     |:-----|:-----|:-----|:-----|
-    |(se deja en blanco)  <br/> |TXT  <br/> |3600 (segundos)  <br/> |"v = spf1 include include SPF. Protection. Outlook. com-All"  <br/> **Nota:** Se recomienda copiar y pegar esta entrada para que todo el espaciado sea correcto.           |
+    |(se deja en blanco)  <br/> |TXT  <br/> |3600 (segundos)  <br/> |"v = spf1 include include SPF. Protection. Outlook. com-All"  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
    
-    ![Netregistry_SPF-TXTvalues](../media/a369345a-d774-48bc-8160-b628ab8247f9.png)
+    ![Netregistry_SPF-TXTvalues](../../media/a369345a-d774-48bc-8160-b628ab8247f9.png)
   
 6. Seleccione **Agregar registro**.
     
-    ![Netregistry_SPF TXTvalues_AddRecord](../media/063bfbaf-940a-489f-970f-29c026b4b312.png)
+    ![Netregistry_SPF TXTvalues_AddRecord](../../media/063bfbaf-940a-489f-970f-29c026b4b312.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Agregar los dos registros SRV necesarios para Office 365
 <a name="bkmk_srv"> </a>
 
 1. Para empezar, vaya a su página de dominios en Netregistry a través de [este vínculo](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
     
-    ![Netregistry_login](../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
+    ![Netregistry_login](../../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
   
 2. Junto al dominio que quiera administrar, seleccione **administrar**.
     
-    ![Netregistry_Manage](../media/e0ddc79e-0123-4e24-8380-9645bdb41aac.png)
+    ![Netregistry_Manage](../../media/e0ddc79e-0123-4e24-8380-9645bdb41aac.png)
   
 3. Seleccione **Administrador de zonas**.
     
-    ![Netregistry_selectZoneManager](../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
+    ![Netregistry_selectZoneManager](../../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
   
 4. En **Agregar un registro de zona**, elija **registro SRV** en la lista y, a continuación, seleccione **crear nuevo registro**.
     
-    ![Netregistry_SRV_select](../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
+    ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   
-5. In the boxes for the new record, type or copy and paste the values from the following table.
+5. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente.
     
     > [!NOTE]
     > El campo nombre es una combinación del servicio (por ejemplo, _sip) y el protocolo (por ejemplo, _tls). 
   
-    |**Tipo**|**Nombre**|**TTL (SEG.)**|**Prioridad**|**Peso**|**Puerto**|**Destino**|
+    |**Tipo**|**Nombre**|**TTL (SEG.)**|**Prioridad**|**Grosor**|**Puerto**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV (servicio)  <br/> |_sip. _tls  <br/> |3600 (segundos)  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |SRV (servicio)  <br/> |_sipfederationtls. _tcp  <br/> |3600 (segundos)  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
-    ![Netregistry_SRV_values](../media/49292846-1598-4b8c-9940-db6e10675753.png)
+    ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   
 6. Seleccione **Agregar registro**.
     
-    ![Netregistry_SRV_values_AddRecord](../media/abc82061-939f-4757-87e4-0e8f9e43ebcb.png)
+    ![Netregistry_SRV_values_AddRecord](../../media/abc82061-939f-4757-87e4-0e8f9e43ebcb.png)
   
 7. Repita los pasos anteriores para crear el otro registro SRV.
     

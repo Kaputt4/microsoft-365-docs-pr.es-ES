@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en OVH para Office 365.
-ms.openlocfilehash: 87de24fd47ce048cb88a2b7d4bcff97b1c155456
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4857addd7dfd096c1ddd6e59f1f17ace76b75a9e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248969"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354351"
 ---
 # <a name="create-dns-records-at-ovh-for-office-365"></a>Crear registros DNS en OVH para Office 365
 
@@ -62,51 +62,51 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
   
 1. Para empezar, vaya a su página de dominios en OVH a través de [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.
     
-    ![Inicio de sesión de OVH](../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
+    ![Inicio de sesión de OVH](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
 2. En **dominios**, seleccione el nombre del dominio que desea editar.
     
-    ![OVH Seleccione el dominio](../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
+    ![OVH Seleccione el dominio](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
 3. Seleccione **zona DNS**.
     
-    ![OVH seleccionar la zona DNS](../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
+    ![OVH seleccionar la zona DNS](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
 4. Seleccione **Agregar una entrada**.
     
-    ![Agregar una entrada a OVH](../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![Agregar una entrada a OVH](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 5. Seleccionar **txt**
     
-    ![OVH seleccione la entrada TXT](../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
+    ![OVH seleccione la entrada TXT](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
   
-6. In the boxes for the new record, type or copy and paste the values from the following table. Para asignar un valor TTL, elija **personalizado** en la lista desplegable y, a continuación, escriba el valor en el cuadro de texto. 
+6. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente. Para asignar un valor TTL, elija **personalizado** en la lista desplegable y, a continuación, escriba el valor en el cuadro de texto. 
     
     |**Tipo de registro**|**Subdominio**|**TTL**|**Valor**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |MS = msxxxxxxxx  <br/> **Nota:** Este es un ejemplo. Utilice aquí su valor de **Dirección o puntos de destino**, de la tabla de Office 365.           [¿Cómo puedo encontrarlo?](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |MS = msxxxxxxxx  <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Seleccione **confirmar**. 
     
-    ![OVH confirmar TXT para verificación](../media/bde45596-9a55-4634-b5e7-16d7cde6e1b8.png)
+    ![OVH confirmar TXT para verificación](../../media/bde45596-9a55-4634-b5e7-16d7cde6e1b8.png)
   
 8. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
-2. En la página **dominios** , seleccione el dominio que desea comprobar. 
-    
-    
-  
-3. En la página **configuración** , seleccione **Iniciar configuración**.
+2. En la página **Dominios**, elija el dominio que está verificando. 
     
     
   
-4. En la página **comprobar dominio** , seleccione **comprobar**.
+3. En la página de **Configuración**, elija ** Iniciar configuración**.
+    
+    
+  
+4. En la página**verificar dominio**, seleccione **verificar**.
     
     
   
@@ -118,46 +118,46 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. Para empezar, vaya a su página de dominios en OVH a través de [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.
     
-    ![Inicio de sesión de OVH](../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
+    ![Inicio de sesión de OVH](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
 2. En **dominios**, seleccione el nombre del dominio que desea editar.
     
-    ![OVH Seleccione el dominio](../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
+    ![OVH Seleccione el dominio](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
 3. Seleccione **zona DNS**.
     
-    ![OVH seleccionar la zona DNS](../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
+    ![OVH seleccionar la zona DNS](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
 4. Seleccione **Agregar una entrada**.
     
-    ![Agregar una entrada a OVH](../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![Agregar una entrada a OVH](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 5. Seleccione **mx**.
     
-    ![Tipo de registro MX de OVH](../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
+    ![Tipo de registro MX de OVH](../../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
   
-6. In the boxes for the new record, type or copy and paste the values from the following table. Para asignar un valor TTL, elija **personalizado** en la lista desplegable y, a continuación, escriba el valor en el cuadro de texto. 
+6. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente. Para asignar un valor TTL, elija **personalizado** en la lista desplegable y, a continuación, escriba el valor en el cuadro de texto. 
     
     > [!NOTE]
     > De forma predeterminada OVH usa la notación relativa para el destino, que agrega el nombre de dominio al final del registro de destino. Para usar la notación absoluta en su lugar, agregue un punto al registro de destino, como se muestra en la siguiente tabla. 
   
-    |**Tipo de registro**|**Subdominio**|**TTL**|**Prioridad**|**Target**|
+    |**Tipo de registro**|**Subdominio**|**TTL**|**Prioridad**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<Domain-Key\>. mail.Protection.Outlook.com.  <br/> **Nota:** Obtenga la * \<clave\> de dominio* de su cuenta de Office 365.  [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<Domain-Key\>. mail.Protection.Outlook.com.  <br/> **Nota:** Obtenga la * \<clave\> de dominio* de su cuenta de Office 365.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
    
-    ![OVH registro MX para correo](../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
+    ![OVH registro MX para correo](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
 7. Seleccione **Siguiente**.
     
-    ![OVH registro MX Seleccione siguiente](../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
+    ![OVH registro MX Seleccione siguiente](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
   
 8. Seleccione **confirmar**.
     
-    ![OVH seleccionar confirmar registro MX](../media/090bfb11-a753-4af0-8982-582a4069a169.png)
+    ![OVH seleccionar confirmar registro MX](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
   
 9. Si hay otros registros MX, elimínelos en la lista de la página **zona DNS** . Seleccione cada registro y, a continuación, en la columna **acciones** , seleccione el icono de papelera de **eliminación** . 
     
-    ![Eliminar registro MX de OVH](../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
+    ![Eliminar registro MX de OVH](../../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
   
 10. Seleccione **confirmar**.
     
@@ -166,23 +166,23 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. Para empezar, vaya a su página de dominios en OVH a través de [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.
     
-    ![Inicio de sesión de OVH](../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
+    ![Inicio de sesión de OVH](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
 2. En **dominios**, seleccione el nombre del dominio que desea editar.
     
-    ![OVH Seleccione el dominio](../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
+    ![OVH Seleccione el dominio](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
 3. Seleccione **zona DNS**.
     
-    ![OVH seleccionar la zona DNS](../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
+    ![OVH seleccionar la zona DNS](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
 4. Seleccione **Agregar una entrada**.
     
-    ![Agregar una entrada a OVH](../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![Agregar una entrada a OVH](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 5. Seleccione **CNAME**.
     
-    ![OVH agregar tipo de registro CNAME](../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
+    ![OVH agregar tipo de registro CNAME](../../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
   
 6. Cree el primer registro CNAME.
     
@@ -196,11 +196,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> |de 3600 segundos  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> |de 3600 segundos  <br/> |
    
-    ![Registro CNAME de OVH](../media/516938b3-0b12-4736-a631-099e12e189f5.png)
+    ![Registro CNAME de OVH](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
 7. Seleccione **Siguiente**.
     
-    ![OVH agregar valores CNAME y seleccionar siguiente](../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
+    ![OVH agregar valores CNAME y seleccionar siguiente](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
 8. Seleccione **confirmar**.
     
@@ -212,79 +212,79 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
   
 1. Para empezar, vaya a su página de dominios en OVH a través de [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.
     
-    ![Inicio de sesión de OVH](../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
+    ![Inicio de sesión de OVH](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
 2. En **dominios**, seleccione el nombre del dominio que desea editar.
     
-    ![OVH Seleccione el dominio](../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
+    ![OVH Seleccione el dominio](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
 3. Seleccione **zona DNS**.
     
-    ![OVH seleccionar la zona DNS](../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
+    ![OVH seleccionar la zona DNS](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
 4. Seleccione **Agregar una entrada**.
     
-    ![Agregar una entrada a OVH](../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![Agregar una entrada a OVH](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 5. Seleccione **txt**.
     
 6. In the boxes for the new record, type or copy and paste the following values.
     
-    |**Tipo de registro**|**Subdominio**|**TTL**|**TXT Value**|
+    |**Tipo de registro**|**Subdominio**|**TTL**|**Valor TXT**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** Se recomienda copiar y pegar esta entrada para que todo el espaciado sea correcto.           |
+    |TXT  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
    
-    ![OVH agregar registro TXT para SPF](../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
+    ![OVH agregar registro TXT para SPF](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
 7. Seleccione **Siguiente**.
     
-    ![OVH agregar registro TXT para SPF y seleccionar siguiente](../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
+    ![OVH agregar registro TXT para SPF y seleccionar siguiente](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
 8. Seleccione **confirmar**.
     
-    ![OVH agregar registro TXT para SPF y confirmar](../media/649eefeb-3227-49e3-98a0-1ce19c42fa54.png)
+    ![OVH agregar registro TXT para SPF y confirmar](../../media/649eefeb-3227-49e3-98a0-1ce19c42fa54.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Agregar los dos registros SRV necesarios para Office 365
 <a name="bkmk_srv"> </a>
 
 1. Para empezar, vaya a su página de dominios en OVH a través de [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.
     
-    ![Inicio de sesión de OVH](../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
+    ![Inicio de sesión de OVH](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
 2. En **dominios**, seleccione el nombre del dominio que desea editar.
     
-    ![OVH Seleccione el dominio](../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
+    ![OVH Seleccione el dominio](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
 3. Seleccione **zona DNS**.
     
-    ![OVH seleccionar la zona DNS](../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
+    ![OVH seleccionar la zona DNS](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
 4. Seleccione **Agregar una entrada**.
     
-    ![Agregar una entrada a OVH](../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![Agregar una entrada a OVH](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 5. Seleccione **SRV**.
     
-    ![OVH Seleccione el tipo de registro SRV](../media/66bad536-a531-4a4e-b08d-c0d99f6ea1b2.png)
+    ![OVH Seleccione el tipo de registro SRV](../../media/66bad536-a531-4a4e-b08d-c0d99f6ea1b2.png)
   
 6. Cree el primer registro SRV.
     
     En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila de la tabla siguiente. Para asignar un valor TTL, elija **personalizado** en la lista desplegable y, a continuación, escriba el valor en el cuadro de texto. 
     
-    |**Tipo de registro**|**Subdominio**|**Prioridad**|**Peso**|**Puerto**|**TTL**|**Target**|
+    |**Tipo de registro**|**Subdominio**|**Prioridad**|**Grosor**|**Puerto**|**TTL**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV (servicio)  <br/> |_sip. _tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (segundos)  <br/> |sipdir.online.lync.com.  <br/> |
     |SRV (servicio)  <br/> |_sipfederationtls. _tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (segundos)  <br/> |sipfed.online.lync.com.  <br/> |
        
-    ![Registro SRV de OVH](../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
+    ![Registro SRV de OVH](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
 7. Seleccione **Siguiente**.
     
-    ![OVH de la selección de registro SRV siguiente](../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
+    ![OVH de la selección de registro SRV siguiente](../../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
   
 8. Seleccione **confirmar**.
     

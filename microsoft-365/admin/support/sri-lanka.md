@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6f94f47d9e97359bd74625999d989477fabd51de
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 127b4b6ac85d13b37c738c253918019592088501
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247441"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356221"
 ---
 # <a name="contact-support-for-sri-lanka"></a>Póngase en contacto con el soporte para Sri Lanka
 

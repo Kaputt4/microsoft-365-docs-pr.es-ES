@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Obtenga información acerca de cómo reactivar la suscripción de Office 365 cuando expire, o si Microsoft la deshabilita o la cancela en el medio.
-ms.openlocfilehash: 7b902e210e39f41f6753958c5b6453c85a242f6c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245985"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354611"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
 
@@ -67,7 +67,7 @@ Si su suscripción expira o fue deshabilitada por Microsoft o si la canceló a m
 
 2. Busque la suscripción que desea reactivar y, a continuación, seleccione **reactivar**.
 
-    ![Primer plano de una tarjeta de suscripción que indica que se ha deshabilitado y se ha reducido la funcionalidad con un botón reactivate.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Primer plano de una tarjeta de suscripción que indica que se ha deshabilitado y se ha reducido la funcionalidad con un botón reactivate.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     Si no ve **reactivar** como acción disponible, [llame al soporte técnico](../../admin/contact-support-for-business-products.md) para reactivar la suscripción.
 
@@ -88,7 +88,7 @@ Si su suscripción expira o fue deshabilitada por Microsoft o si la canceló a m
 
 2. Busque la suscripción que desea reactivar y, a continuación, seleccione **reactivar**.
 
-    ![Primer plano de una tarjeta de suscripción que indica que se ha deshabilitado y se ha reducido la funcionalidad con un botón reactivate.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Primer plano de una tarjeta de suscripción que indica que se ha deshabilitado y se ha reducido la funcionalidad con un botón reactivate.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     Si no ve **reactivar** como acción disponible, [llame al soporte técnico](../../admin/contact-support-for-business-products.md) para reactivar la suscripción.
 

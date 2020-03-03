@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Obtenga información sobre cómo comprar un complemento para agregar funciones adicionales a la suscripción de Office 365 para empresas. También puede actualizar y quitar un complemento.
 ms.custom: okr_SMB
-ms.openlocfilehash: 717290306eb981018739604d9491da9ab3372d70
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246387"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354811"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Comprar o editar un complemento para Office 365 para empresas
 
@@ -69,7 +69,7 @@ Muchos de los planes de Office 365 para empresas tienen complementos que puede c
 
 3. En la esquina inferior izquierda de los detalles de la suscripción, seleccione **Complementos** \> de **compra de complementos**.
 
-    ![Vínculo para comprar complementos en la página suscripciones del centro de administración de Microsoft 365.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Vínculo para comprar complementos en la página suscripciones del centro de administración de Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. En la página **servicios de compra** , pase el mouse o pulse la suscripción de complemento que quiera comprar y, después, seleccione **comprar ahora**.
 
@@ -91,7 +91,7 @@ Muchos de los planes de Office 365 para empresas tienen complementos que puede c
 
 3. En la esquina inferior izquierda de los detalles de la suscripción, seleccione **Complementos** \> de **compra de complementos**.
 
-    ![Vínculo para comprar complementos en la página suscripciones del centro de administración de Microsoft 365.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Vínculo para comprar complementos en la página suscripciones del centro de administración de Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. En la página **servicios de compra** , pase el mouse o pulse la suscripción de complemento que quiera comprar y, después, seleccione **comprar ahora**.
 
@@ -143,14 +143,14 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 4. Seleccione el vínculo **cambiar cantidad** para el complemento que desea actualizar. 
 
-    ![Vínculo a complementos y vínculo para cambiar cantidad.](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Vínculo a complementos y vínculo para cambiar cantidad.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Escriba el número de licencias de usuario que necesita en el cuadro y, a continuación, seleccione **Enviar**.
 
     > [!TIP]
     > También puede usar las flechas arriba y abajo para cambiar la cantidad de licencias de usuario o simplemente escriba el número que quiera en el cuadro.
   
-    ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -166,14 +166,14 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 4. Seleccione el vínculo **cambiar cantidad** para el complemento que desea actualizar. 
 
-    ![Vínculo a complementos y vínculo para cambiar cantidad.](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Vínculo a complementos y vínculo para cambiar cantidad.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Escriba el número de licencias de usuario que necesita en el cuadro y, a continuación, seleccione **Enviar**.
 
     > [!TIP]
     > También puede usar las flechas arriba y abajo para cambiar la cantidad de licencias de usuario o simplemente escriba el número que quiera en el cuadro.
   
-    ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 
 ::: moniker-end
@@ -201,7 +201,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
     > [!TIP]
     > También puede usar las flechas arriba y abajo para cambiar la cantidad de licencias o simplemente escriba el número que desee en el cuadro.
   
-    ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -216,7 +216,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
     > [!TIP]
     > También puede usar las flechas arriba y abajo para cambiar la cantidad de licencias o simplemente escriba el número que desee en el cuadro.
   
-    ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 

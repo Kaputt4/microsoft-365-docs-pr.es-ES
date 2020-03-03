@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 89658e391e2f0f7fa561dd440492363ee754178b
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: dc593416e807a38b7e4a3a2b096b1b3041dfc236
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247316"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355771"
 ---
 # <a name="contact-support-for-united-kingdom"></a>Póngase en contacto con el soporte técnico de Reino Unido
 

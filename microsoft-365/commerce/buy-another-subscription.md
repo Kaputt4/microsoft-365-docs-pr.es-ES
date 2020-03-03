@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Obtenga información sobre cómo comprar otra suscripción de Office 365 para empresas para su organización cuando ya tiene una suscripción. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 5f134d69c83e3c3fbb62dbb794e40e22d544ad1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246406"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354651"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>Comprar otra suscripción a Office 365 para empresas
 
@@ -66,11 +66,11 @@ Después de comprar una nueva suscripción, deberá asignar a los usuarios que d
 
     Verá las suscripciones que están disponibles para su organización. Las suscripciones que ya haya comprado se identifican del modo siguiente.
 
-    ![Banner que muestra que ya se ha comprado una suscripción para esta organización.](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![Banner que muestra que ya se ha comprado una suscripción para esta organización.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. Pase el mouse o pulse la suscripción que desea comprar y, después, seleccione **comprar ahora**.
 
-    ![Vínculo comprar ahora en la página de servicios de compra del centro de administración de Microsoft 365.](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Vínculo comprar ahora en la página de servicios de compra del centro de administración de Microsoft 365.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. Escriba el número de licencias de usuario que necesita, elija si desea pagar cada mes o por todo el año y, a continuación, seleccione **Agregar al carro**.
 
@@ -92,11 +92,11 @@ Después de comprar una nueva suscripción, deberá asignar a los usuarios que d
 
     Verá las suscripciones que están disponibles para su organización. Las suscripciones que ya haya comprado se identifican del modo siguiente.
 
-    ![Banner que muestra que ya se ha comprado una suscripción para esta organización.](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![Banner que muestra que ya se ha comprado una suscripción para esta organización.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. Pase el mouse o pulse la suscripción que desea comprar y, después, seleccione **comprar ahora**.
 
-    ![Vínculo comprar ahora en la página de servicios de compra del centro de administración de Microsoft 365.](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Vínculo comprar ahora en la página de servicios de compra del centro de administración de Microsoft 365.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. Escriba el número de licencias de usuario que necesita, elija si desea pagar cada mes o por todo el año y, a continuación, seleccione **Agregar al carro**.
 

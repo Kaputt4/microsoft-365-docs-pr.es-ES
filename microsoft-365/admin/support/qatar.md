@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2fe3f1bf253cd11dacbde3bb440b6cb21f7d1809
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3a47440affa68a822d275c7fbecb5991d530841f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248492"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356871"
 ---
 # <a name="contact-support-for-qatar"></a>Póngase en contacto con el soporte técnico para Qatar
 

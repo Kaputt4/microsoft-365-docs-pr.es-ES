@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Obtenga información sobre cómo personalizar los informes en el explorador y en Power BI Desktop.
-ms.openlocfilehash: 5fc3b399638b2f1e9b1b2726fbf58e22eda33e01
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248233"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355161"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizar los informes en análisis de uso de Microsoft 365
 
@@ -42,19 +42,19 @@ En este ejemplo se muestra cómo modificar la pestaña **activación** en el inf
   
 1. En el informe de **activación/licencia** , haga clic en la pestaña **activación** .
     
-2. Para entrar en el modo de edición **** , haga clic en el botón Editar ![en la parte superior con el botón](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) más página del botón Power BI. 
+2. Para entrar en el modo de edición **** , haga clic en el botón Editar ![en la parte superior con el botón](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) más página del botón Power BI. 
     
-    ![Click Edit report on the top right navigation](../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
 3. En la parte superior derecha, haga clic en **duplicar esta página**.
     
-    ![Choose Duplicate this page](../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+    ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
 4. En la parte inferior derecha, haga clic en cualquiera de los gráficos de barras que muestren el número de usuarios que se activan según el sistema operativo, como Android, iOS, Mac, etc.
     
 5. En el área **visualizaciones** de la derecha, para quitar el **recuento de Mac** del objeto visual, haga clic en la **X** junto a él.
 
-    ![Quitar recuento Mac](../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
+    ![Quitar recuento Mac](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
 ### <a name="create-a-new-visual"></a>Crear un objeto visual
 
@@ -62,13 +62,13 @@ En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un
   
 1. Vaya al informe de **uso del producto** usando el panel de navegación izquierdo y haga clic en la pestaña **Yammer** .
     
-2. Cambie al modo de edición haciendo clic ![en el botón más página en Power](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) BI y **editando**. 
+2. Cambie al modo de edición haciendo clic ![en el botón más página en Power](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) BI y **editando**. 
     
-3. En la parte inferior de la página, haz clic en ![Botón Agregar página de Power BI](../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) para crear una nueva página.
+3. En la parte inferior de la página, haz clic en ![Botón Agregar página de Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) para crear una nueva página.
   
 4. En el área **visualizaciones** de la derecha, haga clic en el **gráfico de barras apiladas** (fila superior, primero desde la izquierda).
 
-    ![Seleccionar gráfico de barras](../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
+    ![Seleccionar gráfico de barras](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
 5. Haga clic en la esquina inferior derecha de esa visualización y arrástrela para ampliar su tamaño.
 
@@ -76,7 +76,7 @@ En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un
 
 7. Arrastre **MonthName** al área de campos, directamente debajo del título **Ejes**, en el área **Visualizaciones**.
  
-    ![Arrastrar nombre del mes](../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![Arrastrar nombre del mes](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
 8. En el área **Campos** de la parte derecha, expanda la tabla **TenantProductUsage**.
 
@@ -86,9 +86,9 @@ En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un
 
 11. En el área **Tipo de filtro** que se muestre, active la casilla **Yammer**.
 
-    ![Casilla de verificación seleccionar Yammer](../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Casilla de verificación seleccionar Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Justo debajo de la lista de visualizaciones, haga **** clic en ![el icono formato de formato de](../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)icono de Power BI Visualizaions.
+12. Justo debajo de la lista de visualizaciones, haga **** clic en ![el icono formato de formato de](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)icono de Power BI Visualizaions.
 
 13. Expanda el título y cambie el valor de **Texto del título** a **Nuevos usuarios de Yammer por mes**.
     
@@ -112,7 +112,7 @@ Puede empezar conectando directamente a las API de informes de ODATA desde Micro
     
     **Nota:** Las API de informes se encuentran en versión preliminar y están sujetas a cambios hasta que entran en producción. 
   
-    ![OData feed URL for Power BI desktop](../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
 3. Escriba sus credenciales de administrador de Microsoft 365 (organización o escuela) para autenticar a Microsoft 365 cuando se le solicite.
     
@@ -124,7 +124,7 @@ Puede empezar conectando directamente a las API de informes de ODATA desde Micro
     
     Se descargarán los datos en Power BI Desktop. Guarde el archivo y, después, ya podrá empezar a crear los informes que necesite.
     
-    ![Valores de ODATA disponibles en la API de informes](../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![Valores de ODATA disponibles en la API de informes](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>Usar la plantilla de análisis de uso de Microsoft 365
 
@@ -136,7 +136,7 @@ Puede descargar el archivo de plantilla de Power BI desde el centro de descarga 
     
 2. Escriba el valor del id. de espacio empresarial en el cuadro de diálogo.
     
-    ![Enter your tenant ID to open the pbit file](../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
 3. Escriba sus credenciales de administrador para autenticar a Microsoft 365 cuando se le solicite.
     

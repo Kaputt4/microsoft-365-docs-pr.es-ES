@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Obtenga información sobre cómo interpretar los cargos, la facturación y la información de pago en la factura de Office 365 for Business y cómo cambiar el número de pedido de compra.
-ms.openlocfilehash: 2cb95b49136c186158d3b8ba3fe868d2c863e0de
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246429"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354691"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>Entender la factura de Office 365 para empresas
 
@@ -37,11 +37,11 @@ Cada mes recibirá un correo electrónico que le indicará que el nuevo extracto
   
 Su factura contiene dos páginas. La página 1 es el resumen de la factura, y contiene la información general acerca de esta, del pedido, del importe debido, de cómo realizar el pago y de cómo ponerse en contacto con el soporte técnico.
   
-![Page 1 of a sample invoice.](../../admin/media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
+![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
 La página 2 contiene los detalles acerca de la actividad de facturación para cada suscripción.
   
-![Page 2 of a sample invoice.](../../admin/media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
+![Page 2 of a sample invoice.](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
   
 Para obtener descripciones de los campos y términos incluidos en su factura, consulte [Glosario de los campos de la factura](#invoice-field-glossary) más tarde en este artículo.
   
