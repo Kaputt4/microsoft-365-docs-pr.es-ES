@@ -20,38 +20,38 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: Obtenga información sobre cómo trabajar con los registradores habilitados de conexión de dominio y agregar su dominio a Microsoft 365.
-ms.openlocfilehash: e014504116e5d19c8413549c802fd110dddfb8df
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 59e2f94fe83f87a5426064e49f0441356fbd732e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255144"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362185"
 ---
-# <a name="using-domain-connect"></a><span data-ttu-id="5455b-103">Uso de conexión de dominio</span><span class="sxs-lookup"><span data-stu-id="5455b-103">Using Domain Connect</span></span>
+# <a name="using-domain-connect"></a><span data-ttu-id="9c3e9-103">Uso de conexión de dominio</span><span class="sxs-lookup"><span data-stu-id="9c3e9-103">Using Domain Connect</span></span>
 
- <span data-ttu-id="5455b-104">**[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca.</span><span class="sxs-lookup"><span data-stu-id="5455b-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span>
+ <span data-ttu-id="9c3e9-104">**[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca.</span><span class="sxs-lookup"><span data-stu-id="9c3e9-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span>
   
-<span data-ttu-id="5455b-105">Los registradores habilitados para la [conexión de dominio](https://www.domainconnect.org/) le permiten agregar su dominio a Microsoft 365 en un proceso de tres pasos que tarda minutos.</span><span class="sxs-lookup"><span data-stu-id="5455b-105">[Domain Connect ](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes.</span></span> 
+<span data-ttu-id="9c3e9-105">Los registradores habilitados para la [conexión de dominio](https://www.domainconnect.org/) le permiten agregar su dominio a Microsoft 365 en un proceso de tres pasos que tarda minutos.</span><span class="sxs-lookup"><span data-stu-id="9c3e9-105">[Domain Connect ](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes.</span></span> 
   
-<span data-ttu-id="5455b-106">En el asistente, simplemente confirmaremos que es el propietario del dominio y, a continuación, configuraremos automáticamente los registros del dominio, por lo que el correo electrónico se entrega a Microsoft 365 y otros servicios de Microsoft 365, como Teams, funcionan con su dominio.</span><span class="sxs-lookup"><span data-stu-id="5455b-106">In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.</span></span>
+<span data-ttu-id="9c3e9-106">En el asistente, simplemente confirmaremos que es el propietario del dominio y, a continuación, configuraremos automáticamente los registros del dominio, por lo que el correo electrónico se entrega a Microsoft 365 y otros servicios de Microsoft 365, como Teams, funcionan con su dominio.</span><span class="sxs-lookup"><span data-stu-id="9c3e9-106">In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="5455b-107">Asegúrese de desactivar los bloqueadores de ventanas emergente en el explorador antes de iniciar el Asistente de configuración.</span><span class="sxs-lookup"><span data-stu-id="5455b-107">Make sure you disable any popup blockers in your browser before you start the setup wizard.</span></span>
+> <span data-ttu-id="9c3e9-107">Asegúrese de desactivar los bloqueadores de ventanas emergente en el explorador antes de iniciar el Asistente de configuración.</span><span class="sxs-lookup"><span data-stu-id="9c3e9-107">Make sure you disable any popup blockers in your browser before you start the setup wizard.</span></span>
   
-## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a><span data-ttu-id="5455b-108">Registradores de conexión de dominio que se integran con Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="5455b-108">Domain Connect registrars integrating with Microsoft 365</span></span>
+## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a><span data-ttu-id="9c3e9-108">Registradores de conexión de dominio que se integran con Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="9c3e9-108">Domain Connect registrars integrating with Microsoft 365</span></span>
 
-- [<span data-ttu-id="5455b-109">1&amp;1 IONOS</span><span class="sxs-lookup"><span data-stu-id="5455b-109">1&amp;1 IONOS</span></span>](https://www.1and1.com/)
-- [<span data-ttu-id="5455b-110">123Reg</span><span class="sxs-lookup"><span data-stu-id="5455b-110">123Reg</span></span>](https://www.123-reg.co.uk/)
-- [<span data-ttu-id="5455b-111">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="5455b-111">GoDaddy</span></span>](https://www.godaddy.com/)
-- [<span data-ttu-id="5455b-112">WordPress</span><span class="sxs-lookup"><span data-stu-id="5455b-112">WordPress</span></span>](https://wordpress.com/)
-- [<span data-ttu-id="5455b-113">Plesk</span><span class="sxs-lookup"><span data-stu-id="5455b-113">Plesk</span></span>](https://www.plesk.com/)
-- [<span data-ttu-id="5455b-114">MediaTemple</span><span class="sxs-lookup"><span data-stu-id="5455b-114">MediaTemple</span></span>](https://mediatemple.net/)
-- <span data-ttu-id="5455b-115">SecureServer o WildWestDomains (revendedores de GoDaddy que usen el hospedaje de SecureServer DNS)</span><span class="sxs-lookup"><span data-stu-id="5455b-115">SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)</span></span>
-    - [<span data-ttu-id="5455b-116">Dominios de MadDog</span><span class="sxs-lookup"><span data-stu-id="5455b-116">MadDog Domains</span></span>](https://www.maddogdomains.com/)
-    - [<span data-ttu-id="5455b-117">CheapNames</span><span class="sxs-lookup"><span data-stu-id="5455b-117">CheapNames</span></span>](https://www.cheapnames.com)
+- [<span data-ttu-id="9c3e9-109">1&amp;1 IONOS</span><span class="sxs-lookup"><span data-stu-id="9c3e9-109">1&amp;1 IONOS</span></span>](https://www.1and1.com/)
+- [<span data-ttu-id="9c3e9-110">123Reg</span><span class="sxs-lookup"><span data-stu-id="9c3e9-110">123Reg</span></span>](https://www.123-reg.co.uk/)
+- [<span data-ttu-id="9c3e9-111">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="9c3e9-111">GoDaddy</span></span>](https://www.godaddy.com/)
+- [<span data-ttu-id="9c3e9-112">WordPress</span><span class="sxs-lookup"><span data-stu-id="9c3e9-112">WordPress</span></span>](https://wordpress.com/)
+- [<span data-ttu-id="9c3e9-113">Plesk</span><span class="sxs-lookup"><span data-stu-id="9c3e9-113">Plesk</span></span>](https://www.plesk.com/)
+- [<span data-ttu-id="9c3e9-114">MediaTemple</span><span class="sxs-lookup"><span data-stu-id="9c3e9-114">MediaTemple</span></span>](https://mediatemple.net/)
+- <span data-ttu-id="9c3e9-115">SecureServer o WildWestDomains (revendedores de GoDaddy que usen el hospedaje de SecureServer DNS)</span><span class="sxs-lookup"><span data-stu-id="9c3e9-115">SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)</span></span>
+    - [<span data-ttu-id="9c3e9-116">Dominios de MadDog</span><span class="sxs-lookup"><span data-stu-id="9c3e9-116">MadDog Domains</span></span>](https://www.maddogdomains.com/)
+    - [<span data-ttu-id="9c3e9-117">CheapNames</span><span class="sxs-lookup"><span data-stu-id="9c3e9-117">CheapNames</span></span>](https://www.cheapnames.com)
 
-## <a name="what-happens-to-my-email-and-website"></a><span data-ttu-id="5455b-118">¿Qué ocurre con mi correo electrónico y el sitio web?</span><span class="sxs-lookup"><span data-stu-id="5455b-118">What happens to my email and website?</span></span>
+## <a name="what-happens-to-my-email-and-website"></a><span data-ttu-id="9c3e9-118">¿Qué ocurre con mi correo electrónico y el sitio web?</span><span class="sxs-lookup"><span data-stu-id="9c3e9-118">What happens to my email and website?</span></span>
 
-<span data-ttu-id="5455b-119">Una vez finalizada la instalación, el registro MX de su dominio se actualiza para que apunte a Microsoft 365 y todo el correo electrónico de su dominio empezará a ser de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="5455b-119">After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365.</span></span> <span data-ttu-id="5455b-120">Asegúrese de que agregó usuarios y configuró los buzones en Office 365 para todos los usuarios que reciban correo electrónico en el dominio.</span><span class="sxs-lookup"><span data-stu-id="5455b-120">Make sure you've added users and set up mailboxes in Office 365 for everyone who gets email on your domain!</span></span>
+<span data-ttu-id="9c3e9-119">Una vez finalizada la instalación, el registro MX de su dominio se actualiza para que apunte a Microsoft 365 y todo el correo electrónico de su dominio empezará a ser de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="9c3e9-119">After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365.</span></span> <span data-ttu-id="9c3e9-120">Asegúrese de que agregó usuarios y configuró los buzones en Office 365 para todos los usuarios que reciban correo electrónico en el dominio.</span><span class="sxs-lookup"><span data-stu-id="9c3e9-120">Make sure you've added users and set up mailboxes in Office 365 for everyone who gets email on your domain!</span></span>
   
-<span data-ttu-id="5455b-121">Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ahora.</span><span class="sxs-lookup"><span data-stu-id="5455b-121">If you have a website that you use with your business, it will keep working where it is.</span></span> <span data-ttu-id="5455b-122">Los pasos de configuración de conexión de dominio no afectan a su sitio Web.</span><span class="sxs-lookup"><span data-stu-id="5455b-122">The Domain Connect setup steps don't affect your website.</span></span>
+<span data-ttu-id="9c3e9-121">Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ahora.</span><span class="sxs-lookup"><span data-stu-id="9c3e9-121">If you have a website that you use with your business, it will keep working where it is.</span></span> <span data-ttu-id="9c3e9-122">Los pasos de configuración de conexión de dominio no afectan a su sitio Web.</span><span class="sxs-lookup"><span data-stu-id="9c3e9-122">The Domain Connect setup steps don't affect your website.</span></span>
