@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento y el uso compartido de archivos.
-ms.openlocfilehash: ec55e54fb15113589d7c9b68add511d2cfa9bc97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: be3c845710fdf5531b1a3d91b9579c55cdc4d203
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256951"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360501"
 ---
 # <a name="set-up-office-365-file-storage-and-sharing"></a>Configurar el almacenamiento y el uso compartido de archivos de Office 365
 
@@ -52,7 +52,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 Los sitios de grupo y de OneDrive proporcionan acceso desde cualquier lugar para usted y para sus empleados.
   
-![Un diagrama que muestra cómo los productos de Office 365 pueden usar OneDrive o los sitios de grupo](../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Un diagrama que muestra cómo los productos de Office 365 pueden usar OneDrive o los sitios de grupo](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Estas son algunas recomendaciones sobre lo que se debe almacenar en cada ubicación al usar OneDrive y los sitios de grupo juntos:
   
@@ -81,7 +81,7 @@ Esta es la forma en que cada persona de su equipo puede configurar OneDrive y co
 
 3. En OneDrive, los miembros del equipo pueden almacenar sus propios archivos relacionados con la empresa. Puede compartir archivos individuales o bien una carpeta completa. Elija un archivo o carpeta, haga clic con el botón secundario y, a continuación, elija **compartir**.
 
-    ![Uso compartido de una carpeta](../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
+    ![Uso compartido de una carpeta](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
 4. En la página **Enviar vínculo** , deje la selección predeterminada que **todos los usuarios con el vínculo puedan ver y editar**.
 
@@ -89,15 +89,15 @@ Esta es la forma en que cada persona de su equipo puede configurar OneDrive y co
 
     Si desea que se envíe su propia copia del correo electrónico, agregue su dirección de correo electrónico a la lista.
 
-    ![Compartir un vínculo cuadro de diálogo que muestra la escritura y la selección de un nombre.](../media/877e6587-db9d-4903-a87b-11e570eee926.png)
+    ![Compartir un vínculo cuadro de diálogo que muestra la escritura y la selección de un nombre.](../../media/877e6587-db9d-4903-a87b-11e570eee926.png)
   
 5. Cuando termine de escribir la persona con la que desea compartir, seleccione **Enviar**. El correo electrónico se envía inmediatamente a las personas a las que invites.
 
-    ![Compartir un vínculo, que muestra una lista de nombres](../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![Compartir un vínculo, que muestra una lista de nombres](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. Así es como se ve el correo electrónico. 
 
-    ![Correo electrónico con vínculo para compartir la carpeta de OneDrive](../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![Correo electrónico con vínculo para compartir la carpeta de OneDrive](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>Cargar archivos en un sitio de grupo para colaboración en línea
 
@@ -138,15 +138,15 @@ Siga estos pasos para sincronizar archivos en el sitio de grupo con el equipo de
   
 4. Si, a continuación, obtiene un mensaje de **configuración de OneDrive** , inicie sesión con su cuenta profesional o educativa.
 
-    ![Pantalla de configuración de OneDrive](../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![Pantalla de configuración de OneDrive](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. Si todavía no ha sincronizado su OneDrive, es posible que vea **la pantalla esta es tu carpeta de onedrive** . Compruebe que la ruta de la **carpeta de OneDrive está aquí**. Elija **Cambiar ubicación** si desea usar una ruta de acceso diferente y, a continuación, seleccione **siguiente**.
 
-    ![Cambiar la carpeta local en esta pantalla](../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![Cambiar la carpeta local en esta pantalla](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. Los archivos de los sitios de grupo aparecerán en el panel izquierdo del explorador de archivos, en el nombre de la organización. Los archivos en OneDrive aparecerán en "OneDrive: \<nombre de la organización\>"
 
-    ![Ver qué se ha sincronizado en la carpeta local](../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![Ver qué se ha sincronizado en la carpeta local](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. Para probar la sincronización, abra un archivo en la carpeta del equipo del equipo. Realice un cambio y, después, elija **Guardar**.
 

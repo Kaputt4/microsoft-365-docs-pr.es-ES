@@ -18,12 +18,12 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Obtenga información sobre el nuevo centro de administración de Microsoft 365.
-ms.openlocfilehash: 1506dc63c2ba1e7e8926985b3c5e1cd7d6a11b52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257420"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361605"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Acerca del nuevo centro de administración de Microsoft 365
 
@@ -50,9 +50,9 @@ Nos encantaría participar en el nuevo centro de administración de 365 de Micro
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>Cambiar al nuevo centro de administración y volver a él
 
-- Cuando esté disponible el nuevo centro de administración de Microsoft 365, puede optar por activar la opción **probar el nuevo centro de administración** que se encuentra en la parte superior de la Página principal. Si inicia sesión en el centro de administración, recordamos su selección y volverá a iniciar sesión en el nuevo centro de administración. <br/><br/>![El nuevo centro de administración cambia del centro de administración anterior](media/admin-center-toggle-off.png) 
+- Cuando esté disponible el nuevo centro de administración de Microsoft 365, puede optar por activar la opción **probar el nuevo centro de administración** que se encuentra en la parte superior de la Página principal. Si inicia sesión en el centro de administración, recordamos su selección y volverá a iniciar sesión en el nuevo centro de administración. <br/><br/>![El nuevo centro de administración cambia del centro de administración anterior](../media/admin-center-toggle-off.png) 
   
-- Vuelva al centro de administración antiguo desde la Página principal; para ello, **desactive**el botón de alternancia. <br/><br/>![El nuevo botón de alternancia del centro de administración está activado](media/admin-center-toggle-on.png)
+- Vuelva al centro de administración antiguo desde la Página principal; para ello, **desactive**el botón de alternancia. <br/><br/>![El nuevo botón de alternancia del centro de administración está activado](../media/admin-center-toggle-on.png)
 
 En el nuevo centro de administración, puede enviar comentarios a Microsoft sobre su experiencia seleccionando **Enviar comentarios** junto al botón **¿necesita ayuda?** en la parte inferior de cada página. Díganos qué le gusta y qué podríamos hacer mejor. Además, puede obtener encuestas emergentes de tiempo a tiempo con respecto a las impresiones generales o a una experiencia concreta que se haya lanzado recientemente. También puede enviar comentarios al final de este artículo seleccionando ¿le resultó **útil esta información?**
   

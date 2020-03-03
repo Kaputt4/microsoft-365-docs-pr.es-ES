@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: f499cacd0ec63f9a192e2773b3604473d2153545
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179111"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370499"
 ---
 # <a name="insider-risk-management-users"></a>Usuarios de administración de riesgos de Insider
 
@@ -30,6 +30,9 @@ Los usuarios de administración de riesgos de Insider son empleados de su organi
 - **Caso**: el caso activo actual para el usuario.
 
 ![Panel de usuarios de administración de riesgos de Insider](../media/insider-risk-users-dashboard.png)
+
+>[!NOTE]
+>El número de usuarios que se muestran en el panel de usuario puede verse limitado en algunos casos, según el volumen de las alertas activas y las directivas coincidentes. Los usuarios con alertas activas se muestran cuando se generan las alertas, y es posible que haya casos raros de que se alcance el número máximo de usuarios mostrados. Si esto ocurre, los usuarios con alertas activas que no se muestran se agregarán al panel de usuario, ya que las alertas de usuario existentes se evaluarán.
 
 ## <a name="view-user-details"></a>Ver detalles del usuario
 

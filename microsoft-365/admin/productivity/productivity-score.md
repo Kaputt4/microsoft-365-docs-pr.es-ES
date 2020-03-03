@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 863d644a2dc3b7f756c61b8a9c3063a8545c1fb0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 03a8e68248458f5dfa1d7192a5c2771b46723129
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257221"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361321"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Puntuación de productividad de Microsoft (versión preliminar)
 
@@ -39,7 +39,7 @@ La puntuación y la información están presentes en dos categorías:
 
 - **Experiencia tecnológica** (próximamente): le ayuda a optimizar sus experiencias de dispositivo, como corregir de forma proactiva los problemas comunes del Departamento de soporte técnico, y mejorar el tiempo de inicio del equipo y la red para asegurarse de que las aplicaciones funcionan correctamente.  
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 ### <a name="areas-of-scoring"></a>Áreas de puntuación 
 
@@ -84,7 +84,7 @@ Puede tener acceso a la experiencia desde la Página principal de administració
 
 la página de inicio de puntuación de productividad proporciona la puntuación y el historial actuales en un porcentaje, información primaria sobre áreas de cada categoría de puntuación complementadas con benchmarks. 
 
-![Página principal de puntuación de productividad](../media/pslanding.png)
+![Página principal de puntuación de productividad](../../media/pslanding.png)
 
 1.**la puntuación de productividad** se muestra en un porcentaje, así como en <numerator> / <denominator> el formato, de modo que también puede ver los puntos absolutos (Numerator) y los puntos máximos posibles  
 1. Esta tabla dinámica le permite seleccionar la categoría de puntuación en la que desea centrarse. En la vista previa, solo puede ver la **experiencia del empleado**, pero la selección se expandirá pronto para incluir **experiencia tecnológica**. 
@@ -113,7 +113,7 @@ Además, toda la información contiene los siguientes elementos:
 
 ### <a name="area-detail-page--collaborating-on-content"></a>Página de detalles del área: colaborar en el contenido 
 
-![Collaborationg en la página de contenido.](../media/pscollab.png)
+![Collaborationg en la página de contenido.](../../media/pscollab.png)
 
 La página colaborar en el contenido contiene la información principal de la página de inicio de la puntuación de productividad. Tiene los siguientes componentes:
 
@@ -134,7 +134,7 @@ Los tipos de archivo considerados para la colaboración son Word/Excel/PowerPoin
 
 ### <a name="area-detail-page--working-anywhere"></a>Página de detalles de área: trabajo en cualquier lugar 
 
-![Página trabajar en cualquier lugar.](../media/psflexibility.png)
+![Página trabajar en cualquier lugar.](../../media/psflexibility.png)
 
 La página trabajar en cualquier lugar cuantifica los usuarios (como un porcentaje y un valor absoluto) que usó al menos una aplicación de productividad en dos o más plataformas, que son de escritorio, móviles y Web. Los usuarios obtienen un mayor nivel de puntuación para usar más aplicaciones y plataformas. Las aplicaciones que se consideran son Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype. La base de la información está habilitada para los usuarios de Office 365 ProPlus, Exchange, Yammer, Skype o Teams.
 
@@ -147,7 +147,7 @@ La página trabajar en cualquier lugar cuantifica los usuarios (como un porcenta
 
 Para favorecer la capacidad de la acción, cada información auxiliar incluye acciones en línea que pueden ayudar a transformar la experiencia de los empleados, algunas de las cuales pueden ser cambios de configuración o campañas de conciencia. Al hacer clic en estas llamadas a la acción se abre en las opciones de panel acciones recomendadas que puede considerar. Actualmente están habilitadas las acciones de la **colaboración en el contenido** .
 
-![Página colaborar en documentos de Office.](../media/psactions1.png)
+![Página colaborar en documentos de Office.](../../media/psactions1.png)
 
 1. Las **acciones de vista** se redirigen a un panel en el que se enumeran todas las acciones relacionadas con la colaboración en el contenido.
 1. **Anime a los usuarios a colaborar** en una lista de vídeos guía sobre la colaboración con temas como la co-autoría y la @mentions. 
@@ -156,7 +156,7 @@ Para favorecer la capacidad de la acción, cada información auxiliar incluye ac
 
 Al seleccionar cualquiera de los botones de acción se abre el panel **acciones recomendadas** de la derecha, que contiene un resumen de cada acción y un vínculo a las páginas de documentación.
 
-![Panel acciones recomendadas.](../media/psacttions2.png)
+![Panel acciones recomendadas.](../../media/psacttions2.png)
 
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión 

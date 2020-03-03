@@ -1,7 +1,7 @@
 ---
 title: Requisitos previos de la Protección contra amenazas de Microsoft
 description: Obtenga más información sobre las licencias, requisitos previos de hardware y software, y otras opciones de configuración que le ofrece Protección contra amenazas de Microsoft.
-keywords: requisitos, requisitos previos, hardware, software, explorador, MTP, M365, licencia
+keywords: requisitos, requisitos previos, hardware, software, explorador, MTP, M365, licencia, E5, A5, EMS, compras
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,19 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c99ef0634c5858e458b9aa4aa622a7ab55c32088
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: ef26a2ebc25d7f55e7dc22347d85767dab970536
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288548"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372058"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Requisitos previos de la Protección contra amenazas de Microsoft
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
-
-
 
 Obtenga información sobre las licencias, los requisitos de hardware y software, y otras opciones de configuración para aprovisionar y usar la protección contra amenazas de Microsoft.
 
@@ -41,8 +39,13 @@ Para usar la protección contra amenazas de Microsoft, necesita *una* de las sig
 - Microsoft 365 E5
 - Seguridad de Microsoft 365 E5
 - Office 365 E5 y "Enterprise Mobility + Security E5 (EMS E5)" y Windows E5
+- Microsoft 365 A5
+- Microsoft 365 A5 Security
+- Office 365 A5 y "Enterprise Mobility + Security A5 (EMS A5)" y Windows a5
 
-[Ver los planes de servicio de Microsoft 365 Enterprise](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
+Para obtener más información, [vea los planes de servicio de Microsoft 365 Enterprise](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
+
+> ¿Todavía no tiene licencia? [Probar o comprar una suscripción a Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>Comprobar las licencias existentes
 Vaya al centro de administración de 365 de Microsoft ([admin.Microsoft.com](https://admin.microsoft.com/)) para ver las licencias existentes. En el Centro de administración, vaya a **Facturación** > **Licencias**.

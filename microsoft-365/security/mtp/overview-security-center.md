@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: eb341e3f27ade163c6d646f759efed7504dad342
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 3f60c40ecd1810d630a4607d6b0915d6f3089a99
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333697"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372048"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general sobre el centro de seguridad de Microsoft 365
 
@@ -65,4 +65,4 @@ Explore estos temas sobre cómo supervisar, revisar y responder a sus necesidade
 - [Comprenda las campañas y técnicas de ataque más recientes con el](latest-attack-campaigns.md) análisis de amenazas
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Portales de seguridad 365 de Microsoft](portals.md)
+- [Portales de seguridad de Microsoft](portals.md)

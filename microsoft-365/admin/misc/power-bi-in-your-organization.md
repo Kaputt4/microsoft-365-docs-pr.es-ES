@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Obtenga información sobre Power BI y cómo los usuarios de su organización pueden usar este servicio de Business Analytics.
-ms.openlocfilehash: 56a6dd1c90b8dcb810e74c36b5e7f93ab6a0eb2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4d89594812486d06629d614ab0c59fba09dcdad8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257301"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361341"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI en su organización
 
@@ -102,7 +102,7 @@ Si un inquilino ha sido creado por Microsoft, puede reclamar y administrar dicho
     
 4. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija **Administrador**.
     
-    ![The Office 365 app launcher with the Admin app highlighted](../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![The Office 365 app launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Lea las instrucciones de la página **convertirse en Administrador** y, después **, seleccione Sí, deseo ser el administrador**.
     
@@ -209,7 +209,7 @@ Si un usuario se registró en Power BI pero ya no desea que tenga acceso a Power
     
 4. Desactivar la opción de **Microsoft Power BI** .
     
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end 
 

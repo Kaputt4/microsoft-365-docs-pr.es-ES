@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre la autenticación multifactor en Office 365 y los pasos que debe seguir para configurarla.
-ms.openlocfilehash: c3d5e83b951e4fd4a05cb18408ecb3d26e397cf9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2e2cbc9d6d966a9858fafb62f08d26893c9f4353
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257210"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361181"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Plan de Multi-Factor Authentication para implementaciones de Office 365
 
@@ -77,7 +77,7 @@ En la siguiente figura se muestra cómo las aplicaciones de dispositivo de Offic
     
 Esto se detalla en la figura siguiente:
   
-![Autenticación moderna para las aplicaciones para dispositivo de Office 2013.](../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
+![Autenticación moderna para las aplicaciones para dispositivo de Office 2013.](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
   
 ## <a name="software-requirements"></a>Requisitos de software
 
@@ -91,7 +91,7 @@ Para determinar si la instalación de Office se basa en Hacer clic y ejecutar o 
     
 3. En las instalaciones basadas en Hacer clic y ejecutar de Outlook 2013, aparecerá un elemento **Opciones de actualización**. En las instalaciones basadas en MSI, no aparecerá un elemento **Opciones de actualización**. 
     
-    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
   
 ### <a name="click-to-run-based-installations"></a>Instalaciones basadas en Hacer clic y ejecutar
 

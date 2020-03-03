@@ -21,16 +21,16 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Obtenga información sobre cómo quitar un dominio anterior de Office 365 y mover usuarios y grupos a otro dominio.
-ms.openlocfilehash: 9c960b5f18f3892c57f7dc9907e580a02fce39d4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c012d7a8484026d04bbe216ff28715e9df0de15c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255080"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362215"
 ---
 # <a name="remove-a-domain-from-office-365"></a>Quitar dominios de Office 365
 
-Colaboradores: [![Peter Baumgartner](../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
+Colaboradores: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **[Consulte Preguntas más frecuentes sobre dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
   
@@ -154,7 +154,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 3. Use la lista desplegable para elegir otro dominio.
 
-4. Seleccione **Guardar**y, a continuación, **cerrar**. Repita este proceso para todas las listas de distribución o grupos que estén asociados al dominio que quiere quitar.
+4. Seleccione **Guardar** y, a continuación, **Cerrar**. Repita este proceso para todas las listas de distribución o grupos que estén asociados al dominio que quiere quitar.
 
 ::: moniker-end
 
@@ -166,7 +166,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 3. Use la lista desplegable para elegir otro dominio.
 
-4. Seleccione **Guardar**y, a continuación, **cerrar**. Repita este proceso para todas las listas de distribución o grupos que estén asociados al dominio que quiere quitar.
+4. Seleccione **Guardar** y, a continuación, **Cerrar**. Repita este proceso para todas las listas de distribución o grupos que estén asociados al dominio que quiere quitar.
 
 ::: moniker-end
 
@@ -178,7 +178,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 3. Use la lista desplegable para elegir otro dominio.
 
-4. Seleccione **Guardar**y, a continuación, **cerrar**. Repita este proceso para todas las listas de distribución o grupos que estén asociados al dominio que quiere quitar.
+4. Seleccione **Guardar** y, a continuación, **Cerrar**. Repita este proceso para todas las listas de distribución o grupos que estén asociados al dominio que quiere quitar.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
 ::: moniker-end
 

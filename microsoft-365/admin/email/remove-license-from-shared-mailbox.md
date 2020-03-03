@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Quitar la licencia de un buzón compartido para asignarlo a otro usuario. '
-ms.openlocfilehash: 7b708c7877a307e2d51b97848a3780c5586d7d2a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 90ec29681aa5b15dd04895df2b48b2b1619b521d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255185"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362225"
 ---
-# <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar una licencia de un buzón compartido
+# <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 
 Los buzones compartidos no necesitan una licencia a menos que el buzón tenga más de 50 GB de datos. Siga estas instrucciones para quitar una licencia de un buzón de correo compartido de manera que pueda asignarla a un usuario o devolver la licencia para que no pague por una licencia que no necesite.
   
@@ -67,7 +67,7 @@ Los buzones compartidos no necesitan una licencia a menos que el buzón tenga m�
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 
@@ -86,7 +86,7 @@ Los buzones compartidos no necesitan una licencia a menos que el buzón tenga m�
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 

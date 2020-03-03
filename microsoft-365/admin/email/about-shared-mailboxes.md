@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan tener acceso al mismo buzón. Obtenga información sobre lo que necesita saber antes de crear un buzón de correo compartido.
-ms.openlocfilehash: a5565f7299a8565b9f70745efebea3444296f353
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3bb78cc272a1920d9eab92aff50a14e345dce2e1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255344"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362385"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -65,6 +65,6 @@ Antes [de crear un buzón de correo compartido](create-a-shared-mailbox.md), est
 
 [Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md)
 
-[Quitar una licencia de un buzón compartido](remove-license-from-shared-mailbox.md)
+[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md)
 
 [Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md)

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información sobre Office 365 operado por 21Vianet que está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3c211421db74bc6ff916682d0670570d1de98568
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c473dacee7fe6f2e779960711a87368e261c3448
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247932"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360801"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -41,7 +41,7 @@ Microsoft no gestiona el servicio. 21Vianet opera, proporciona y administra la e
   
 Digitalice este código QR para seguirnos en WeChat y obtener las actualizaciones más recientes para Office 365 ofrecido por 21Vianet.
   
-![Digitalice este código QR para síganos en WeChat](../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
+![Digitalice este código QR para síganos en WeChat](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
  **Acerca de los servicios de Office 365 operado por 21Vianet**
   
@@ -151,9 +151,9 @@ Use la tabla siguiente para obtener más información sobre la compatibilidad de
 
 |**Versión de Exchange local**|**MRM (archivo dividido)**|**Acceso de OWA (archivo dividido)**|**Exhibición de documentos electrónicos locales**|**Auditoría de buzones**|**Conservación local/archivado**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| Todos los 2013 CU5  <br/> | Compatible <br/>  | No se admite <br/>  | Compatible. <br/>  | Compatible.  <br/> | Compatible. <br/> |
-| Todos los 2010 SP3 <br/>  | No admitido <br/>  | No admitido <br/>  | <sup>1</sup> compatible <br/> | Compatible.  <br/> | Compatible. <br/>  |
-| Al menos un servidor anterior a 2013 CU5  <br/> | <sup>2</sup> admitidos <br/> | No admitido  <br/> | No admitido <br/> | Compatible.  <br/> | Compatible. <br/> |
+| Todos los 2013 CU5  <br/> | Compatible <br/>  | No se admite <br/>  | Compatible <br/>  | Compatible  <br/> | Compatible <br/> |
+| Todos los 2010 SP3 <br/>  | No admitido <br/>  | No admitido <br/>  | <sup>1</sup> compatible <br/> | Compatible  <br/> | Compatible <br/>  |
+| Al menos un servidor anterior a 2013 CU5  <br/> | <sup>2</sup> admitidos <br/> | No admitido  <br/> | No admitido <br/> | Compatible  <br/> | Compatible <br/> |
 |||
 
 <sup>1</sup> las búsquedas independientes son necesarias para los buzones de correo locales y de Exchange Online.  <br/> <sup>2</sup> las directivas de traslado a archivo de MRM se pueden usar para buzones de correo ubicados en un servidor Exchange 2013 CU5 o superior. 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Obtenga información sobre las aplicaciones integradas y cómo activarlas para permitir que aplicaciones de terceros accedan a la información de Office 365 de los usuarios.
-ms.openlocfilehash: 932a99ec2c65b14e903ccffb86d291dac20ddfcf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3c7c92e16b375fc374563e87ea2f6166c7384a29
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248068"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361391"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Activar o desactivar las aplicaciones integradas
 
@@ -48,11 +48,11 @@ Cuando las aplicaciones integradas están activadas y usa una aplicación, esta 
 
 Existen dos tipos de permisos que se utilizan cuando se usan las aplicaciones integradas en Office 365: permisos de usuario y permisos de administrador. Por ejemplo, cuando la organización tiene las aplicaciones integradas activadas y un usuario utiliza una aplicación de terceros, la aplicación puede pedir permiso del usuario para leer detalles de su perfil, modificar o eliminar sus archivos, leer elementos en las colecciones de sitios, y enviar correo electrónico como dicho usuario.
 
-![Permisos de usuario de aplicaciones integradas](../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
+![Permisos de usuario de aplicaciones integradas](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
 
 Si un administrador registra una aplicación para todos los usuarios de una organización, se le pide permiso para permitir que la aplicación obtenga acceso a la información y los recursos de la organización. Después de esto, cuando otros usuarios de la organización la aplicación, no se les pedirá permiso. Cuando un administrador registra una aplicación, debe asegurarse de que confían en el desarrollador de esa aplicación. Para obtener más información sobre cómo registrar una aplicación, vea [Agregar, actualizar o eliminar una aplicación](https://go.microsoft.com/fwlink/p/?LinkID=518600).
 
-![Permisos de administrador de aplicaciones integradas](../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
+![Permisos de administrador de aplicaciones integradas](../../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
 
 Si las aplicaciones integradas están desactivadas, las aplicaciones que ya se han instalado y tienen permiso para obtener acceso a la información no se desinstalarán ni se retirarán los permisos. Aunque las aplicaciones integradas estén desactivadas, los administradores pueden registrar aplicaciones para que estén disponibles para sus usuarios y permitir que esas aplicaciones tengan acceso a la información de los usuarios. Para más información sobre cómo quitar una aplicación registrada y sus permisos, vea [Agregar, actualizar o eliminar una aplicación](https://go.microsoft.com/fwlink/?LinkID=518600&amp;clcid=0x409).
 

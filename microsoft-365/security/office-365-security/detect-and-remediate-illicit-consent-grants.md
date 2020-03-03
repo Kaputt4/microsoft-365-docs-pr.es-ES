@@ -2,9 +2,9 @@
 title: Detectar y solucionar la concesión de consentimiento ilegal en Office 365
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Aprenda a reconocer y corregir el consentimiento ilícito concede un ataque en Office 365.
-ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957155"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363056"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar y solucionar la concesión de consentimiento ilegal en Office 365
 
@@ -79,7 +79,7 @@ Puede buscar las aplicaciones a las que cualquier usuario individual ha concedid
 
 5. Seleccione **aplicaciones**.
 
-Esto le mostrará las aplicaciones que se asignan al usuario y qué permisos tienen en el Applcations.
+Esto le mostrará las aplicaciones que se asignan al usuario y qué permisos tienen las aplicaciones.
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Pasos para hacer que los usuarios enumeren el acceso a la aplicación
 
@@ -102,7 +102,7 @@ La forma más sencilla de comprobar el ataque de consentimiento ilícito es ejec
 
 1. Inicie sesión en el equipo en el que va a ejecutar el script con derechos de administrador local.
 
-2. Descargue o copie el script [Get-AzureADPSPermissions. PS1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) de github a una carpeta desde la que se ejecutará el scruipt. Se trata de la misma carpeta en la que se escribirá el archivo "Permissions. csv" de salida.
+2. Descargue o copie el script [Get-AzureADPSPermissions. PS1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) de github a una carpeta desde la que se ejecutará el script. Se trata de la misma carpeta en la que se escribirá el archivo "Permissions. csv" de salida.
 
 3. Abra una instancia de PowerShell como administrador y abra la carpeta en la que guardó el script.
 

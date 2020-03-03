@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: acb6febf03e40b37b167113666b3577e0b9fb61e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254961"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361955"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos de Office 365 en el Centro de administración de Microsoft 365
 
@@ -250,7 +250,7 @@ Ahora que ya ha implementado el complemento, los usuarios finales pueden empezar
   
 Si el complemento es compatible con comandos de complemento, estos aparecerán en la cinta de opciones de Office. En el siguiente ejemplo, el comando **Buscar cita** aparece para el complemento **Citas**. 
 
-![Cinta de Office con citas de búsqueda](../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Cinta de Office con citas de búsqueda](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
 Si el complemento implementado no es compatible con los comandos de complemento o si desea ver todos los complementos implementados, puede verlos a través **de mis complementos**. 
   
@@ -260,11 +260,11 @@ Si el complemento implementado no es compatible con los comandos de complemento 
     
 2. Seleccione la pestaña **Gestionado por el administrador** en la ventana Complementos de Office. 
     
-3. Haga doble clic en el complemento que ha implementado antes (en este ejemplo, **Citas** ). <br/>![Pestaña administrada de administración de la página de complementos de Office](../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. Haga doble clic en el complemento que ha implementado antes (en este ejemplo, **Citas** ). <br/>![Pestaña administrada de administración de la página de complementos de Office](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>En Outlook
 
-1. En la cinta de opciones **Inicio** , seleccione **obtener complementos**.<br/>![Botón Tienda en Outlook](../media/getaddinsicon.png)
+1. En la cinta de opciones **Inicio** , seleccione **obtener complementos**.<br/>![Botón Tienda en Outlook](../../media/getaddinsicon.png)
   
 2. Seleccione **administrada por el administrador** en el panel de navegación izquierdo.
 

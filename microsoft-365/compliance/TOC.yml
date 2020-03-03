@@ -218,8 +218,9 @@
     - name: Administración del gobierno de la información
       href: manage-information-governance.md
     - name: Importar datos
-      href: importing-pst-files-to-office-365.md
       items:
+        - name: Información general sobre la importación de archivos PST
+          href: importing-pst-files-to-office-365.md
         - name: Usar la carga en la red para importar archivos PST
           href: use-network-upload-to-import-pst-files.md
         - name: Usar el envío de unidades para importar los archivos PST
@@ -231,8 +232,9 @@
         - name: Preguntas más frecuentes sobre la importación de archivos PST
           href: faqimporting-pst-files-to-office-365.md
     - name: Archivar datos de terceros
-      href: archiving-third-party-data.md
       items:
+        - name: Información general sobre el archivado de datos de terceros
+          href: archiving-third-party-data.md
         - name: Configurar un conector para archivar datos de Facebook
           href: archive-facebook-data-with-sample-connector.md
         - name: Configurar un conector para archivar datos de Twitter
@@ -276,8 +278,9 @@
     - name: Eliminar datos
       href: disposition-reviews.md
     - name: Administrar buzones inactivos
-      href: inactive-mailboxes-in-office-365.md
       items:
+        - name: Información general sobre buzones inactivos
+          href: inactive-mailboxes-in-office-365.md
         - name: Crear y administrar buzones inactivos
           href: create-and-manage-inactive-mailboxes.md
         - name: Cambiar la duración de retención para un buzón inactivo
@@ -718,10 +721,13 @@
     - name: Auditoría de buzones
       href: enable-mailbox-auditing.md
     - name: Auditoría avanzada
-      href: advanced-audit.md
       items:
+        - name: Información general sobre la auditoría avanzada
+          href: advanced-audit.md
         - name: Administrar directivas de retención de registros de auditoría
           href: audit-log-retention-policies.md
+        - name: Usar la auditoría avanzada para investigar las cuentas comprometidas
+          href: mailitemsaccessed-forensics-investigations.md
     - name: Directivas de alerta
       href: alert-policies.md
 - name: Administración de los riesgos de cumplimiento
@@ -808,7 +814,7 @@
               href: gdpr-arc-dynamics365.md
             - name: Soporte técnico de Microsoft & Professional Services
               href: gdpr-arc-prof-services.md
-            - name: Creación de inquilino
+            - name: Office 365
               href: gdpr-arc-office365.md
         - name: Protección de la información
           href: gdpr-information-protection.md
@@ -826,7 +832,7 @@
               href: gdpr-dsr-intune.md
             - name: Soporte técnico de Microsoft & Professional Services
               href: gdpr-dsr-prof-services.md
-            - name: Creación de inquilino
+            - name: Office 365
               href: gdpr-dsr-office365.md
             - name: Familia de Visual Studio
               href: gdpr-dsr-visual-studio-family.md
@@ -838,7 +844,7 @@
               href: gdpr-breach-azure-dynamics.md
             - name: Soporte técnico de Microsoft & Professional Services
               href: gdpr-breach-microsoft-support-professional-services.md
-            - name: Creación de inquilino
+            - name: Office 365
               href: gdpr-breach-office365.md
         - name: Evaluaciones de impacto en la protección de datos
           items:
@@ -850,7 +856,7 @@
               href: gdpr-dpia-dynamics.md
             - name: Soporte técnico de Microsoft & Professional Services
               href: gdpr-dpia-prof-services.md
-            - name: Creación de inquilino
+            - name: Office 365
               href: gdpr-dpia-office365.md
         - name: Responsable de la protección de datos de Microsoft
           href: gdpr-data-protection-officer.md
@@ -1001,7 +1007,7 @@
               href: offering-gxp.md
             - name: TISAX (Alemania)
               href: offering-tisax-germany.md
-        - name: Multimedia
+        - name: Elementos multimedia
           items:
             - name: CDSA
               href: offering-cdsa.md

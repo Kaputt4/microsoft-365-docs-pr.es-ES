@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Obtenga información sobre cómo agregar un usuario o un contacto de Office 365 a un grupo de distribución. Por ejemplo, puede Agregar un empleado, asociado o un proveedor a su grupo de distribución de correo electrónico.
-ms.openlocfilehash: ef9721a8620044a07909dd329dd42a01b2c700e8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2a6ee1336f738b57740469d6d74b461a69d7fc8c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255321"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362375"
 ---
 # <a name="add-a-user-or-contact-to-an-office-365-distribution-group"></a>Agregar un usuario o contacto a un grupo de distribución de Office 365
 
@@ -45,7 +45,7 @@ Como administrador de una organización de Office 365, es posible que tenga que 
 
 4. En la página **Ver miembros** , seleccione **Agregar miembros**y seleccione el usuario o el contacto que desea agregar al grupo de distribución. 
     
-    ![Agregar miembros a un grupo de distribución](../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![Agregar miembros a un grupo de distribución](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Seleccione **Guardar** y, a continuación, **cerrar**.
 
@@ -61,7 +61,7 @@ Como administrador de una organización de Office 365, es posible que tenga que 
   
 4. En la página **Ver miembros** , seleccione **Agregar miembros**y seleccione el usuario o el contacto que desea agregar al grupo de distribución. 
     
-    ![Agregar miembros a un grupo de distribución](../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![Agregar miembros a un grupo de distribución](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Seleccione **Guardar** y, a continuación, **cerrar**.
     
@@ -79,7 +79,7 @@ Si todavía no ha creado el [contacto](../misc/contacts.md), créelo primero tal
   
 4. En la página **Ver miembros** , seleccione **Agregar miembros**y seleccione el usuario o el contacto que desea agregar al grupo de distribución. 
     
-    ![Agregar miembros a un grupo de distribución](../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![Agregar miembros a un grupo de distribución](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Seleccione **Guardar** y, a continuación, **cerrar**.
     

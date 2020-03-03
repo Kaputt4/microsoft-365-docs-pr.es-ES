@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Obtenga información sobre cómo convertirse en Administrador y obtener una suscripción de Office 365 para su organización. '
-ms.openlocfilehash: 6fd85f79b32d0a51a5069cfbb55ca58e7cdb1b36
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257401"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361555"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>Convertirse en administrador y comprar Office 365 para su organización
 
@@ -55,16 +55,16 @@ Tras convertirse en administrador, si quiere, puede también agregar nuevos usua
   
 ## <a name="overview-of-the-steps"></a>Introducción a los pasos
 
-![Vista de alto nivel de las fases que implica convertirse en administrador y comprar Office 365.](../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
+![Vista de alto nivel de las fases que implica convertirse en administrador y comprar Office 365.](../../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
   
 Un asistente le guiará por el proceso, pero aquí tiene un resumen de cada paso.
   
 |||
 |:-----|:-----|
-|![Número uno en un círculo rosa](../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**Registro**: para convertirse en administrador, debe estar registrado ya en Reuniones de Skype con su dirección de correo electrónico del trabajo.  <br/> |
-|![Número dos en un círculo rosa.](../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Ejecución del asistente**: una vez registrado, ejecute el asistente mediante uno de estos procedimientos:  <br/>  Ejecute el Asistente para **convertirse en Administrador** que aparece después de seleccionar **Administrador** en el iniciador de aplicaciones.  <br/>  O BIEN  <br/>  Elija **actualizar a office 365** en reuniones de Skype y, a continuación, seleccione la suscripción de Office 365 a la que desea actualizar.  <br/> |
-|![Número 3 en un círculo rosa.](../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**Comprobación de la propiedad del dominio**: después tendrá que comprobar en Office 365 que es el propietario o administrador del nombre de dominio (como contoso.com) que está asociado a las direcciones de correo electrónico de la organización. Solo el propietario del nombre de dominio está autorizado a hacerlo.  <br/> |
-|![Número 4 en un círculo rosa.](../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**Compra de licencias**: en el último paso del asistente, puede comprar licencias de Office 365 para cada persona de la organización que se haya registrado en Reuniones de Skype con el correo electrónico del trabajo.  <br/> Por ejemplo, si se han suscrito dos usuarios en Reuniones de Skype con su correo electrónico del trabajo, tendrá que comprar dos licencias, una para cada uno.  <br/> > [!NOTE]> No podrá administrar Office 365 hasta que haya comprado las licencias.           |
+|![Número uno en un círculo rosa](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**Registro**: para convertirse en administrador, debe estar registrado ya en Reuniones de Skype con su dirección de correo electrónico del trabajo.  <br/> |
+|![Número dos en un círculo rosa.](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Ejecución del asistente**: una vez registrado, ejecute el asistente mediante uno de estos procedimientos:  <br/>  Ejecute el Asistente para **convertirse en Administrador** que aparece después de seleccionar **Administrador** en el iniciador de aplicaciones.  <br/>  O BIEN  <br/>  Elija **actualizar a office 365** en reuniones de Skype y, a continuación, seleccione la suscripción de Office 365 a la que desea actualizar.  <br/> |
+|![Número 3 en un círculo rosa.](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**Comprobación de la propiedad del dominio**: después tendrá que comprobar en Office 365 que es el propietario o administrador del nombre de dominio (como contoso.com) que está asociado a las direcciones de correo electrónico de la organización. Solo el propietario del nombre de dominio está autorizado a hacerlo.  <br/> |
+|![Número 4 en un círculo rosa.](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**Compra de licencias**: en el último paso del asistente, puede comprar licencias de Office 365 para cada persona de la organización que se haya registrado en Reuniones de Skype con el correo electrónico del trabajo.  <br/> Por ejemplo, si se han suscrito dos usuarios en Reuniones de Skype con su correo electrónico del trabajo, tendrá que comprar dos licencias, una para cada uno.  <br/> > [!NOTE]> No podrá administrar Office 365 hasta que haya comprado las licencias.           |
 
 ## <a name="your-office-365-subscription"></a>Su suscripción a Office 365
 

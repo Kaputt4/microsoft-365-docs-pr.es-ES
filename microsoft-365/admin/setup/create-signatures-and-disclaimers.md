@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Obtenga información sobre cómo agregar una firma de correo electrónico, una declinación de responsabilidades o una declaración de divulgación a todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: 3d95e92c4994a99ab3426133580d70453a2f83eb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257031"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360671"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidad en toda la organización
 
@@ -46,23 +46,23 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
     
 ::: moniker range="o365-worldwide"
 
-Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.
+Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.
 
 ::: moniker-end
 
-1. Seleccione el iniciador ![de aplicaciones el icono del iniciador](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)de aplicaciones en Office 365 y, a continuación, seleccione **Administración**.
+1. Seleccione el iniciador ![de aplicaciones el icono del iniciador](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)de aplicaciones en Office 365 y, a continuación, seleccione **Administración**.
    
     ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **Todas las aplicaciones** para ver una lista alfabética de las aplicaciones de Office 365 disponibles para usted. Ahí podrá buscar una aplicación específica. 
     

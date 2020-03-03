@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Obtenga información sobre cómo transferir datos manualmente entre dos cuentas de Office 365 al cambiar el nombre de la empresa o del plan, o combinar varias suscripciones en una.
-ms.openlocfilehash: 004dd586c207678157afdb418e54f3c3b5353304
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 91f9d7b17a0296931393a89ff95d70628400c61a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255072"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362155"
 ---
 # <a name="transfer-data-manually-between-two-office-365-accounts"></a>Transferencia manual de datos entre dos cuentas de Office 365
 
@@ -43,7 +43,7 @@ Prepárese para resumir las fundas y bloquear un trozo de tiempo en el calendari
 > [!IMPORTANT]
 > Si necesita [cambiar el plan de suscripción](../../commerce/subscriptions/switch-to-a-different-plan.md) y puede usar el Asistente para cambiar de planes o si necesita transferir a un nuevo plan de suscripción en la misma familia de suscripciones incluso cuando el Asistente para cambiar de planes no funciona, no es necesario transferir los datos de forma manual y no hay tiempo de inactividad.
 
-|**Tareas**|**Pasos**|
+|**Tareas** |**Pasos**|
 |:-----|:-----|
 |Compre el plan al que desea desplazarse.  <br/> |Al registrarse, debe especificar el nombre de la compañía que se va a usar en los nombres de dominio iniciales: *yourcompany* . onmicrosoft.com, *yourcompany* -public.sharepoint.com y *yourcompany* . SharePoint.com. Debe usar un nombre de *yourcompany* diferente al que hizo para las suscripciones existentes.  <br/> > [!NOTE]> suele tardar un mínimo de varios meses después de cancelar una suscripción para liberar los nombres de dominio iniciales que usan *yourcompany* desde nuestros sistemas. Incluso si tiene previsto guardar todos los datos de su suscripción antigua de Office 365 y cancelar esa suscripción, el antiguo valor de *yourcompany* no está disponible inmediatamente para su uso en una nueva suscripción.           |
 |Quite su dominio personalizado de su suscripción antigua de Office 365.  <br/> | Siga los [pasos necesarios antes de quitar un dominio](remove-a-domain.md) para quitar el nombre de dominio de las direcciones de correo electrónico del usuario y quitar los registros DNS para el correo electrónico y Lync para el dominio personalizado. Si hospeda su sitio web público en Office 365, también tendrá que quitar el registro CNAME que apunta a él.  <br/> > [!IMPORTANT]> después de quitar el registro MX que enruta el correo electrónico a este dominio personalizado, el correo electrónico dejará de funcionar hasta que haya agregado el dominio a la nueva cuenta, a configurar el nuevo registro MX y a configurar a los usuarios. Al quitar los registros DNS para Lync, Lync dejará de funcionar. Y, después de quitar el registro CNAME que señala a su sitio web público, no estará disponible.           [Quite el dominio](remove-a-domain.md) .  <br/> |
@@ -59,7 +59,7 @@ Si está transfiriendo datos de Office 365 a Office 365 mediana empresa u Office
   
 Para Office 365 Enterprise y Office 365 mediana empresa:
   
-|**Ubicación**|**Finalidad**|
+|**Location**|**Finalidad**|
 |:-----|:-----|
 |**Configuración del servicio** **Office 365** \> del **Administrador** \> <br/> |Seleccione cada pestaña para la configuración de correo, sitios, Lync, software de usuario, contraseñas, comunidad, administración de derechos y móvil.  <br/> |
 |**Administración** \> de **Exchange** <br/> | Configuración de Exchange Online  <br/> |
@@ -68,7 +68,7 @@ Para Office 365 Enterprise y Office 365 mediana empresa:
 
 Para Office 365 Small Business
   
-|**Ubicación**|**Finalidad**|
+|**Location**|**Finalidad**|
 |:-----|:-----|
 |**Administración** \> **administrar la configuración de toda la organización** <br/> |Configuración administrativa  <br/> |
 

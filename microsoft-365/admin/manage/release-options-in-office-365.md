@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de lanzamiento de actualizaciones de productos y características nuevas en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 2d4940003c791e50926eff46aaf6a299e60fb9aa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254928"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361805"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>Configurar las opciones de las versiones estándar o dirigida de Office 365
 
@@ -39,7 +39,7 @@ Con Office 365, recibe actualizaciones de productos y características nuevas de
 
 Las nuevas versiones se prueban y validan por primera vez por el equipo de características y, a continuación, por todo el equipo de características de Office 365, seguidos de todo Microsoft. Después de la validación y las pruebas internas, el siguiente paso es una **Versión dirigida** (anteriormente conocida como First Release) para los clientes que hayan decidido participar. En cada anillo de versión, Microsoft recopila comentarios y valida posteriormente la calidad mediante la supervisión de métricas de uso claves. Esta serie de validaciones progresivas se realiza de forma local para asegurar que la versión publicada mundialmente es tan sólida como sea posible. Las versiones se representan en la siguiente ilustración. 
   
-![Liberar timbres de validación para Office 365](../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Liberar timbres de validación para Office 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 Para las actualizaciones importantes, los clientes de Office se notifican inicialmente mediante el [plan de desarrollo de Microsoft 365](https://products.office.com/business/office-365-roadmap). A medida que se acerca la actualización, se comunica a través de su [centro de mensajes de Office 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 

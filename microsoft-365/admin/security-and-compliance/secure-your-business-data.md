@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: d3abaa4fef1a50ab5aad4762e688efe451d0a4cf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 68e5061b7238d456ee0397a50eff37f07214d13f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42247985"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361121"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>Las 10 mejores formas de proteger los planes de Office 365 y Microsoft 365 Empresa
 
@@ -35,20 +35,20 @@ Microsoft recomienda que complete las tareas que se enumeran en la siguiente tab
   
 ||**Tarea**|**Office 365 Empresa Premium**|**Microsoft 365 Empresa**|
 |:-----|:-----|:-----|:-----|
-|1  <br/> |[Configurar la autenticación multifactor](secure-your-business-data.md#setup) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|segundo  <br/> |[Proporcionar formación a los usuarios](secure-your-business-data.md#train) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3  <br/> |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|4  <br/> |[Aumentar el nivel de protección contra malware en correo](secure-your-business-data.md#malware) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2,5  <br/> |[Proteger contra ransomware](secure-your-business-data.md#ransomware) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|6   <br/> |[Detener el reenvío automático de correo electrónico](secure-your-business-data.md#forwarding) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|7   <br/> |[Usar el cifrado de mensajes de Office](secure-your-business-data.md#encryption) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|8   <br/> |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|9   <br/> |[Protección contra archivos adjuntos malintencionados y archivos con datos adjuntos seguros de ATP](secure-your-business-data.md#atp) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10   <br/> |[Proteger contra ataques de suplantación de identidad con vínculos seguros de ATP](secure-your-business-data.md#phishingatp) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1  <br/> |[Configurar la autenticación multifactor](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|segundo  <br/> |[Proporcionar formación a los usuarios](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3  <br/> |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|4  <br/> |[Aumentar el nivel de protección contra malware en correo](secure-your-business-data.md#malware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2,5  <br/> |[Proteger contra ransomware](secure-your-business-data.md#ransomware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|6,5  <br/> |[Detener el reenvío automático de correo electrónico](secure-your-business-data.md#forwarding) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|0,7  <br/> |[Usar el cifrado de mensajes de Office](secure-your-business-data.md#encryption) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|8,5  <br/> |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|9  <br/> |[Protección contra archivos adjuntos malintencionados y archivos con datos adjuntos seguros de ATP](secure-your-business-data.md#atp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10   <br/> |[Proteger contra ataques de suplantación de identidad con vínculos seguros de ATP](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 Antes de empezar, Compruebe la [puntuación segura de microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) en el centro de seguridad de Microsoft 365. Desde un panel centralizado, puede supervisar y mejorar la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365. Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o dirigir recomendaciones con una aplicación o software de terceros. Con información adicional y una mayor visibilidad en un conjunto más amplio de productos y servicios de Microsoft, puede sentirse seguro de informar sobre el estado de seguridad de la organización.
   
-![Captura de pantalla de la puntuación segura de Microsoft](../media/secure-score.png)
+![Captura de pantalla de la puntuación segura de Microsoft](../../media/secure-score.png)
   
 ## <a name="1-set-up-multi-factor-authentication"></a>1: configurar la autenticación multifactor
 <a name="setup"> </a>
@@ -147,7 +147,7 @@ Para crear una regla de transporte de correo, vea un [vídeo de aprendizaje cort
     
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
     
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|**Bloquear tipos de archivo que puedan contener ransomware o cualquier otro código malintencionado**|
 |:-----|:-----|:-----|
@@ -183,7 +183,7 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
     
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
@@ -210,11 +210,11 @@ Es posible que su organización haya configurado opciones adicionales que apliqu
 
 En Outlook para PC, seleccione **Opciones** en el correo electrónico y, a continuación, elija **permisos**. 
   
-![Cifrado de mensajes de correo electrónico en Outlook](../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
+![Cifrado de mensajes de correo electrónico en Outlook](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
   
 En Outlook.com, seleccione **proteger** en el correo electrónico. La protección predeterminada es **no reenviar**. Para cambiarlo a cifrar, seleccione **cambiar permisos** \> **cifrados**. 
   
-![Cifrado de mensajes de correo electrónico en Outlook.com](../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
+![Cifrado de mensajes de correo electrónico en Outlook.com](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
   
 ### <a name="to-receive-encrypted-email"></a>Para recibir correo electrónico cifrado
 
@@ -231,7 +231,7 @@ Si ha configurado uno o más dominios personalizados para el entorno de Office 3
   
 Le recomendamos que empiece con esta protección creando una directiva para proteger a los usuarios más importantes y a su dominio personalizado. 
   
-![Creación de una directiva contra la suplantación de identidad ATP](../media/security-and-compliance-center.png)
+![Creación de una directiva contra la suplantación de identidad ATP](../../media/security-and-compliance-center.png)
   
 Para crear una directiva contra la suplantación de identidad ATP, vea un [vídeo de aprendizaje corto](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)o realice los pasos siguientes:
   
@@ -302,7 +302,7 @@ Para modificar la directiva predeterminada:
     
 2. En **configuración que se aplica al contenido excepto el correo electrónico**, seleccione **Office 365 ProPlus, Office para iOS y Android**.
     
-3. Seleccione **Guardar**. 
+3. Haga clic en **Guardar**. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -310,7 +310,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Seleccione **Guardar**. 
+3. Haga clic en **Guardar**. 
     
 | | | Configuración **u opción**|**recomendada** <br/>| | Denomina  <br/> | Directiva de vínculos seguros para todos los destinatarios del dominio  <br/> | | Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes  <br/> | Seleccione **activado: las direcciones URL se rescribirán y comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo**.  <br/> | | Usar datos adjuntos seguros para analizar contenido descargable  <br/> | Seleccione esta casilla.  <br/> | | Aplicado a  <br/> | El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
    

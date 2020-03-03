@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Obtenga información sobre cómo configurar una cuenta de correo electrónico en Outlook para Windows y Mac, y sobre cómo instalar aplicaciones de Office y acceder a los correos electrónicos en línea.
-ms.openlocfilehash: 87a1bd45f763b4a802b083eb4936d67c50a92df3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257280"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361241"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurar Outlook para leer el correo electrónico
 
@@ -44,7 +44,7 @@ Leer el [artículo completo](https://support.office.com/article/6e27792a-9267-4a
 
 1. Vaya a [admin.Microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).
     
-2. Inicie sesión con su cuenta profesional o educativa
+2. Inicie sesión con su cuenta profesional o educativa.
     
 3. En administrar instalaciones, seleccione **instalar**.
     
@@ -64,7 +64,7 @@ Leer el [artículo completo](https://support.office.com/article/6e27792a-9267-4a
 
 Después de iniciar sesión en Office 365, seleccione **Outlook**.
   
-![Página principal de Office 365 con la aplicación de Outlook resaltada](../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Página principal de Office 365 con la aplicación de Outlook resaltada](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
 ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **Todas las aplicaciones** para ver una lista alfabética de las aplicaciones de Office 365 disponibles para usted. Ahí podrá buscar una aplicación específica. 
   
