@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 4812f81140bc80a1437c13b7bce38a7ed101592d
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280164"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370489"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -61,7 +61,7 @@ La nueva acción de buzón MailItemsAccessed reemplaza a MessageBind en el regis
 
 - Las acciones de MessageBind desencadenarían la creación de múltiples registros de auditoría cuando se accediera al mismo mensaje de correo electrónico, lo que daría lugar a un "ruido" de auditoría. En cambio, los eventos de MailItemsAccessed se agregan en menos registros de auditoría.
 
-Para obtener más información sobre el registro de auditoría de buzones de correo, vea [Administrar la auditoría de buzones](enable-mailbox-auditing.md).
+Para obtener información sobre los registros de auditoría de las actividades de MailItemsAccessed, vea [usar la auditoría avanzada para investigar cuentas comprometidas](mailitemsaccessed-forensics-investigations.md).
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>Buscar registros de auditoría de MailItemsAccessed
 
