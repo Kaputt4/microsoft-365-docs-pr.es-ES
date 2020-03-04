@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más adelante en eDiscovery avanzado de Office 365.
-ms.openlocfilehash: 7ae834e7f93c381cf6d386131e3a5c671e2bc529
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 22547a69b78e8ca8497dd2e2a6ae5d77f913a08f
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075165"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409745"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
@@ -77,9 +77,6 @@ El primer paso consiste en asignar los permisos adecuados relacionados con eDisc
     - Obtenga acceso a los datos de caso en eDiscovery avanzado para cualquier caso de la organización.
     
     Consulte la sección [More information](#more-information) para saber por qué quizás quiera tener un administrador de exhibición de documentos electrónicos en su organización. 
-    
-> [!IMPORTANT]
-> Si una persona no es miembro de uno de estos grupos de roles relacionados con la exhibición de documentos electrónicos, o no es miembro de un grupo de roles que tiene asignado el rol de revisor, no puede agregarlo como miembro de un caso de exhibición de documentos electrónicos. 
 
 Para obtener más información sobre los permisos de exhibición de documentos electrónicos, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
   
@@ -117,32 +114,31 @@ El paso siguiente es crear un caso de exhibición de documentos electrónicos. D
     
     > [!TIP]
     > Después de crear un nuevo caso, puede cambiarle el nombre en cualquier momento. Solo tiene que hacer clic en el nombre del caso en la página de **exhibición** de documentos electrónicos. En la página desplegable **administrar este caso** , cambie el nombre que se muestra en el cuadro de **nombre**y, a continuación, guarde el cambio. 
-  
 ## <a name="step-3-add-members-to-a-case"></a>Paso 3: agregar miembros a un caso
 
-Después de crear un caso, el siguiente paso consiste en Agregar miembros al caso. Como se ha explicado anteriormente, solo los usuarios que son miembros de los grupos de roles Reviewer o eDiscovery Manager pueden agregarse como miembros del caso. El administrador de eDiscovery que ha creado el caso se agrega automáticamente como miembro.
+Después de crear un caso, el siguiente paso consiste en Agregar miembros al caso. El administrador de eDiscovery que ha creado el caso se agrega automáticamente como miembro. Como se ha explicado anteriormente, los miembros tienen que asignar los permisos de eDiscovery apropiados para que puedan tener acceso al caso después de agregarlos.
   
 1. En el centro de seguridad & cumplimiento, **haga clic en** \> eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
-    
+
 2. Haga clic en el nombre del caso al que desea agregar miembros.
-    
+
     Se muestra la página flotante **administrar este caso** . 
-    
+
     ![Página para administrar un escenario flotante](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
 3. En **administrar miembros**, haga ![clic en](../media/ITPro-EAC-AddIcon.gif) agregar icono **Agregar** para agregar miembros al caso. 
-    
+
     También puede optar por agregar un grupo de funciones al caso. En **administrar grupos de roles**, ![haga clic](../media/ITPro-EAC-AddIcon.gif) en agregar icono **Agregar**.
-    
+
     > [!NOTE]
     > Los grupos de roles controlan quién puede asignar miembros a un caso de exhibición de documentos electrónicos. Esto significa que solo puede asignar a un caso los grupos de roles de los que es miembro.
-    
+
 4. En la lista de personas o grupos de roles que se pueden agregar como miembros del caso, haga clic en la casilla situada junto a los nombres de los grupos de personas o roles que desea agregar.
-    
+
     > [!TIP]
     > Si tiene una lista grande de personas que pueden agregarse como miembros, use el cuadro de **búsqueda** para buscar una persona específica en la lista. 
   
-5. Una vez que haya seleccionado los grupos de personas o roles que se agregarán como miembros del grupo, haga clic en **Agregar**.
+5. Después de seleccionar los grupos de personas o roles que se agregarán como miembros del grupo, haga clic en **Agregar**.
     
     En **administrar este caso**, haga clic en **Guardar** para guardar la nueva lista de miembros de mayúsculas y minúsculas. 
     
@@ -154,7 +150,7 @@ Puede usar un caso de exhibición de documentos electrónicos para crear suspens
 
 > [!NOTE]
 > Después de poner una ubicación de contenido en retención, la retención tarda hasta 24 horas en surtir efecto. 
->   
+
 Al crear una suspensión, tiene las siguientes opciones para limitar el contenido que se almacena en las ubicaciones de contenido especificadas:
   
 - Se crea una retención infinita en la que todo el contenido se coloca en retención. Como alternativa, puede crear una retención basada en consultas en la que solo se coloca en retención el contenido que coincide con una consulta de búsqueda.

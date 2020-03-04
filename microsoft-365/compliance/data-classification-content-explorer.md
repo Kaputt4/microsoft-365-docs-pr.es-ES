@@ -16,16 +16,25 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 205ec6b4f2049e18ee95f25505d8a58d7eb7ac77
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076437"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409695"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Usar el explorador de contenido de clasificación de datos (vista previa)
 
 El explorador de contenido de la clasificación de datos le permite ver de forma nativa los elementos que se resumiendo en la página información general.
+
+## <a name="prerequisites"></a>Requisitos previos
+
+Todas las cuentas que tienen acceso al explorador de actividad y lo usan deben tener una licencia de asignada de una de estas suscripciones:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Complemento de cumplimiento avanzado (E5)
+- Complemento de inteligencia de amenazas avanzado (E5)
 
 ## <a name="content-explorer"></a>Explorador de contenido
 
@@ -58,6 +67,8 @@ Hay dos roles que otorgan acceso al explorador de contenido:
 La cuenta que use para tener acceso al explorador de contenido debe estar en uno de los grupos de roles o en ambos. Estos son grupos de roles independientes y no son acumulativos. Por ejemplo, si desea conceder a una cuenta la capacidad para ver los elementos y sus ubicaciones únicamente, conceda a los derechos de visores de listas de explorador de contenido. Si desea que esa misma cuenta también pueda ver el contenido de los elementos de la lista, conceda los derechos de visor de contenido de explorador de contenido.
 
 También puede asignar uno o ambos roles a un grupo de roles personalizado para ajustar el acceso a Content Explorer.
+
+Un administrador global, un administrador de cumplimiento o un administrador de datos pueden asignar el visor de listas del explorador de contenido cuando sea necesario y la pertenencia al grupo de funciones del visor del explorador de contenido.
 
 ### <a name="how-to-use-content-explorer"></a>Cómo usar el explorador de contenido
 

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: La herramienta de administración de custodios de eDiscovery avanzado le permite administrar el flujo de trabajo en torno a la identificación, preservación y recopilación de datos asociados con las personas de interés en un caso legal.
-ms.openlocfilehash: fd796471ae4caeafbabc7b588dcf03b8cad80bc4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d8ac1c67b4ddc3395bccb5ab699ce7df63f331d
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600497"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400917"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Trabajar con custodios en eDiscovery avanzado
 
 Cuando una organización responde a una investigación legal, el flujo de trabajo en torno a la identificación, preservación y recopilación de contenido potencialmente relevante se basa en las personas de la organización que son los custodios de los datos relevantes. En eDiscovery, estas personas se denominan *custodios de datos* (o simplemente *custodios*) y se definen como "personas con control administrativo de un documento o un archivo electrónico". Por ejemplo, el custodio de un mensaje de correo electrónico podría ser el propietario del buzón que contiene el mensaje relevante.  
 
-Cuando se inicia una investigación, el equipo de eDiscovery debe identificar rápidamente todos los custodios y orígenes de datos relevantes relacionados con el caso. Con el tiempo, la lista de custodios y sus orígenes de datos puede aumentar o decreasse. Como resultado, las organizaciones deben mantener un proceso controlado en torno a la identificación, preservación y recopilación de contenido de apoyo durante todo el ciclo de vida de un caso.
+Cuando se inicia una investigación, el equipo de eDiscovery debe identificar rápidamente todos los custodios y orígenes de datos relevantes relacionados con el caso. Con el tiempo, la lista de custodios y sus orígenes de datos puede aumentar o disminuir. Como resultado, las organizaciones deben mantener un proceso controlado en torno a la identificación, preservación y recopilación de contenido de apoyo durante todo el ciclo de vida de un caso.
 
 En un caso de exhibición avanzada de documentos electrónicos, los equipos jurídicos pueden agregar personas en su organización como custodios e identificar y conservar automáticamente orígenes de datos de Private como buzones de correo de Exchange, cuentas de OneDrive y sitios de SharePoint y Microsoft Teams. Mediante el uso de la herramienta de administración de custodios integrada en eDiscovery avanzado, las organizaciones pueden proteger la información almacenada electrónicamente de la eliminación accidental (o intencional). Esto le permite eliminar el proceso lento de tiempo y propenso a errores de tener que llevar a cabo manualmente los procesos de retención legal. 
 

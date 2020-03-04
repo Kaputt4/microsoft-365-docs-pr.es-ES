@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprenda los motivos por los que algunas veces el cambio de plan debe realizarse manualmente o al llamar a soporte técnico.
-ms.openlocfilehash: d7c076a5ce003f7d5ce5317f4330857e632e53ad
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a78ce8614dcc7382543bfda5bdfdfb025b6e5077
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246970"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409625"
 ---
 # <a name="why-cant-i-switch-office-365-for-business-plans"></a>¿Por qué no puedo cambiar de planes de Office 365 para empresas?
 
@@ -41,12 +41,12 @@ Si no ve el botón **cambiar** de plan, el plan no se puede cambiar automáticam
   
 ::: moniker range="o365-worldwide"
 
- **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md) | [cancele las](cancel-your-subscription.md) | [suscripciones](../subscriptions-and-billing.md) | de suscripción y el[soporte de llamadas](../../admin/contact-support-for-business-products.md) de facturación
+ **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md) | [cancele las](cancel-your-subscription.md) | [suscripciones](../index.yml) | de suscripción y el[soporte de llamadas](../../admin/contact-support-for-business-products.md) de facturación
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md) | [cancele las](cancel-your-subscription.md) | [suscripciones](../subscriptions-and-billing.md) | de suscripción y el[soporte de llamadas](../../admin/contact-support-for-business-products.md) de facturación
+ **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md) | [cancele las](cancel-your-subscription.md) | [suscripciones](../index.yml) | de suscripción y el[soporte de llamadas](../../admin/contact-support-for-business-products.md) de facturación
 
 ::: moniker-end
 

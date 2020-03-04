@@ -16,16 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la nueva versión de eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: b3583037953d8dcb36ea6b3f7a2ba521e47fd9c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a9c7811d9ad0660105f7063e674a54c01707ea58
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071067"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400956"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
 
 La solución Advanced eDiscovery de Microsoft 365 se basa en las capacidades existentes de eDiscovery y de análisis en Office 365. Esta nueva solución, denominada *exhibición avanzada*de documentos electrónicos, proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. También permite a los equipos jurídicos administrar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores involucrados en un caso. 
+
+> [!NOTE]
+> EDiscovery avanzado requiere una suscripción de Office 365 o Microsoft 365 E5 Enterprise. Para obtener más información sobre las licencias de eDiscovery avanzadas, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery).
 
 ## <a name="alignment-with-edrm"></a>Alineación con EDRM
 

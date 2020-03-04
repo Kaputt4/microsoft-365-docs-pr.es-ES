@@ -1,5 +1,5 @@
 ---
-title: Cancelar asignación a licencias de usuarios
+title: Cancelar la asignación de licencias a los usuarios
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Obtenga información sobre cómo quitar licencias de cuentas de usuario.
-ms.openlocfilehash: bd14b7c62672d08e608b476e9c5982ac4b5ce070
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254880"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400937"
 ---
-# <a name="unassign-licenses-from-users"></a>Cancelar asignación a licencias de usuarios
+# <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a los usuarios
 
 ::: moniker range="o365-worldwide"
 Puede quitar o quitar la asignación de licencias de los usuarios en la página **usuarios activos** o en la página **licencias** . El método que use dependerá de si desea cancelar la asignación de licencias de producto de determinados usuarios o desasignar licencias de usuarios de productos específicos.
@@ -148,9 +148,11 @@ Cuando usa la página **licencias** para cancelar la asignación de licencias, p
 
 - También puede [eliminar cuentas de usuario](../add-users/delete-a-user.md) a las que se les haya asignado una licencia para que esta esté disponible para otros usuarios. Al eliminar una cuenta de usuario, su licencia está disponible inmediatamente para su asignación a otra persona.
 
-- Cuando se quita una licencia de un usuario, los datos asociados con dicha cuenta se conservan durante 30 días. Después del período de gracia de 30 días, los datos se eliminan y no se pueden recuperar. Los archivos que se guardan en OneDrive o SharePoint Online no se eliminan. Para obtener más información, vea [retención y eliminación de OneDrive](https://docs.microsoft.com/onedrive/retention-and-deletion)
+- Cuando se quita una licencia de un usuario, los datos asociados con dicha cuenta se conservan durante 30 días. Después del período de gracia de 30 días, los datos se eliminan y no se pueden recuperar.
 
-   Además, el buzón del usuario ya no se puede buscar con una herramienta de exhibición de documentos electrónicos, como búsqueda de contenido o exhibición de documentos electrónicos avanzada cuando se quita la licencia. Para obtener más información, consulte la sección "búsqueda de buzones de correo desconectados o de deslicenciado" en [búsqueda de contenido en Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Tenga en cuenta que los archivos guardados en OneDrive para la empresa no se eliminan a menos que el usuario se elimine del centro de administración de Microsoft 365 o se elimine mediante la sincronización de Active Directory. Para obtener más información, vea [retención y eliminación de OneDrive](https://docs.microsoft.com/onedrive/retention-and-deletion).
+
+- Además, el buzón del usuario ya no se puede buscar con una herramienta de exhibición de documentos electrónicos, como búsqueda de contenido o exhibición de documentos electrónicos avanzada cuando se quita la licencia. Para obtener más información, consulte la sección "búsqueda de buzones de correo desconectados o de deslicenciado" en [búsqueda de contenido en Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
 - Si tiene una suscripción de Enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos de buzón de una cuenta de usuario eliminada mediante el uso de [buzones inactivos](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). Para obtener más información, vea [crear y administrar buzones inactivos en Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
 

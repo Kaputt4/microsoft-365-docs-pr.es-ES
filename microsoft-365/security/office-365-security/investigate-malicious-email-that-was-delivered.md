@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: 5fe9e06a582d72b46c4f90f13aee283050a06253
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1cb7c418e9c4ae5f2223748d512e8718f81b010c
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088737"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409755"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Investigar y corregir el correo electrónico malintencionado que se entregó en Office 365
 
@@ -32,7 +32,7 @@ La [protección contra amenazas avanzada de Office 365](office-365-atp.md) le pe
 
 Asegúrese de que se cumplen los siguientes requisitos:
   
-- Su organización tiene [Office 365 de protección contra amenazas avanzada](office-365-atp.md) y [se asignan licencias a los usuarios](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- Su organización tiene [Office 365 de protección contra amenazas avanzada](office-365-atp.md) y [se asignan licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
     
 - El [registro de auditoría de Office 365](../../compliance/turn-audit-log-search-on-or-off.md) está activado para su organización. 
     

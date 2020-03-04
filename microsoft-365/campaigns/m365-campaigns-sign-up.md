@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Registro paso a paso para Microsoft 365 para las campañas. Proteja su campaña de Cybersecurity amenazas para el correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: e142adcc9b1858355414c28b7e94116a6505f1b9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080537"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409665"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Inscríbase en Microsoft 365 para las campañas 
 
@@ -84,13 +84,10 @@ Si ya tiene y la suscripción existente a Office 365 para empresas, por ejemplo,
 4. En el **¿qué aspecto tiene?** escriba el número de usuarios que tiene y elija **siguiente**. No es necesario escribir un código de promoción porque ya está incluido en la dirección URL de la invitación.
 5. En la página **¿cómo quiere pagar?** , escriba el método de pago y seleccione **realizar pedido**.
 
-Una vez que haya completado estos pasos, estará listo para [asignar las licencias nuevas](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) al personal de la campaña. 
+Una vez que haya completado estos pasos, estará listo para [asignar las licencias nuevas](../admin/manage/assign-licenses-to-users.md) al personal de la campaña.
 
 
 ## <a name="whats-next"></a>?Cu?l es el siguiente paso?
 - [Configure microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) para completar la configuración de Microsoft 365 para las campañas. 
 - [Agregue usuarios](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) al plan. Incluya al candidato de la campaña, al personal de la campaña Senior y a todos los usuarios que tendrán acceso a información confidencial de la entidad o de la entidad.
 - [Protección frente a golpes en la campaña](m365-campaigns-security-overview.md)
-
-
-

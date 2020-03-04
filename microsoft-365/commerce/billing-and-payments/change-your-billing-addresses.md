@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Obtenga información sobre cómo actualizar las direcciones de facturación de Office 365 para empresas. También puede actualizar la dirección de correo electrónico que se usa para recibir notificaciones de facturación.
 ms.custom: okr_SMB
-ms.openlocfilehash: 8cf7a8a8ac3414e8c40a1642b33e36f9b5cdf1a9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354761"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409645"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>Cambiar las direcciones de facturación de Office 365 para empresas
 
@@ -195,5 +195,4 @@ También puede cambiar la dirección de correo electrónico alternativa de otros
 
 [Pagar por yoursubscription](pay-for-your-subscription.md)
 
-[Suscripciones y facturación-ayuda para administradores](../subscriptions-and-billing.md)
-
+[Suscripciones y facturación-ayuda para administradores](../index.yml)

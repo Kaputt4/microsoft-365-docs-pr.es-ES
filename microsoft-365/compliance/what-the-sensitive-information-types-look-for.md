@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 517ff6ae711d61b783e837aebeeb991dfaa53daa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 368ccef9e5213a7494140d2c305ddafe1e0c3f79
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084339"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409515"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -1502,7 +1502,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driver's Licence
 - Driver's Licences
 - Permis de Conduire
-- identificador
+- id
 - ids
 - idcard number
 - idcard numbers
@@ -1760,7 +1760,7 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
 - New Brunswick
 - Nova Scotia
 - Prince Edward Island
-- Canada
+- Canadá
    
 ## <a name="canada-social-insurance-number"></a>Número de seguridad social de Canadá
 
@@ -1968,7 +1968,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-16 dígitos que pueden ser formateados o sin formato (dddddddddddddddd) y deben pasar la prueba Luhn.
+de 14 a 16 dígitos que pueden ser formateados o sin formato (dddddddddddddddd) y que deben pasar la prueba Luhn.
 
 ### <a name="pattern"></a>Pattern
 
@@ -6171,4 +6171,3 @@ Una directiva DLP está segura al 55% de que este tipo de información confidenc
 - SS # 
 - SSID 
    
-

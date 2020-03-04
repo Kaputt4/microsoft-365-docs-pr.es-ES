@@ -18,24 +18,24 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo leer y entender la factura de productos para empresas de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
-ms.openlocfilehash: bf6f26b2f3bbeb3ac22273eca98b223383b88924
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594701"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409715"
 ---
 # <a name="understand-your-invoice"></a>Entender la factura
 
 La factura proporciona un resumen de los cargos e instrucciones de pago. Puede [ver su factura en línea](#view-your-online-invoice) en el centro de administración de Microsoft 365. También puede descargarla en el formato de documento portátil (. pdf) para enviar por correo electrónico.
 
-Si solo tiene una suscripción de Office 365, consulte [ver la factura de office 365 para empresas](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+Si solo tiene una suscripción de Office 365, consulte [ver la factura de office 365 para empresas](view-your-bill-or-invoice.md).
 
 ## <a name="understand-the-invoice-header"></a>Descripción del encabezado de la factura
 
 La parte superior de la primera página identifica quién es responsable del pago, a dónde se envía la factura y un resumen de los gastos.
 
-| Term | Descripción |
+| Term | Description |
 | --- | --- |
 | Vendido a |La cuenta de facturación que identifica el nombre y la dirección de la entidad jurídica responsable del pago. Esta información puede administrarse en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">cuentas de facturación</a> , donde puede encontrar el contrato de cuenta y administrar los roles y permisos. |
 | Factura a |Identifica quién recibe la factura. Esta información puede administrarse en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">perfiles de facturación</a> . El perfil de facturación también se muestra en la página de facturas en línea, en la sección **Resumen de facturas** . Para obtener más información acerca de los perfiles de facturación y de cómo puede usarlos para crear opciones de facturación más flexibles para su organización, consulte [Manage Billing profiles](manage-billing-profiles.md). |
@@ -48,7 +48,7 @@ La parte superior de la primera página identifica quién es responsable del pag
 
 El **Resumen de facturación** muestra el Resumen de los cargos desde el período de facturación anterior, los créditos que se aplicaron, los impuestos y el importe total debido.
 
-| Term | Descripción |
+| Term | Description |
 | --- | --- |
 | Cargos|Número total de productos adquiridos para este período de facturación y sus cargos y impuestos relacionados. Las compras se agregan para proporcionar una vista concisa de la factura. |
 | Créditos |Créditos que ha recibido de devoluciones |
@@ -60,7 +60,7 @@ El **Resumen de facturación** muestra el Resumen de los cargos desde el períod
 
 Las páginas de cargos muestran el costo desglosado por producto. Para los clientes de Azure, los cargos podrían estar organizados por sección de facturas. Para obtener más información sobre cómo se usan las secciones de facturas con productos de Azure, vea [secciones de facturas](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) en Introducción [a su cuenta de facturación de contratos de clientes de Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-overview). Dentro de cada pedido de producto, el costo se desglosa por familia de servicios.
 
-| Term |Descripción |
+| Term |Description |
 | --- | --- |
 | Precio unitario | Precio unitario efectivo del servicio (en la moneda de precios) que se usa para calcular el cargo. Este precio es único para un producto, una familia de servicios, un medidor y una oferta. |
 | Cdad | Cantidad adquirida o consumida durante el período de facturación |
@@ -102,7 +102,7 @@ Las facturas están disponibles en línea. Un vínculo a su factura en línea es
 
 ### <a name="to-view-your-online-invoice"></a>Para ver la factura en línea
 
-1. En el centro de administración, vaya a **la** \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">facturas & pagos</a> .
+1. En el Centro de administración, vaya a la página **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 
 2. Para descargar la versión de. pdf de la factura, elija **Descargar factura PDF** en la fila de la factura que desea ver.
 
@@ -112,4 +112,4 @@ Las facturas están disponibles en línea. Un vínculo a su factura en línea es
 
 Si tienes preguntas o necesitas ayuda con los créditos de Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">crea una solicitud de soporte técnico con Azure support</a>.
 
-Si tiene alguna pregunta o necesita ayuda con la factura en el centro de administración de Microsoft 365, [póngase en contacto con soporte técnico para productos empresariales](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Si tiene alguna pregunta o necesita ayuda con la factura en el centro de administración de Microsoft 365, [póngase en contacto con soporte técnico para productos empresariales](../../admin/contact-support-for-business-products.md).

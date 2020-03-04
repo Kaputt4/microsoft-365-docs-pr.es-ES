@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: 676581a5cfdf7308cf6c5cd71083dedae34836fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084093"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409585"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -50,7 +50,7 @@ En el centro de seguridad &amp; y cumplimiento de Office 365, al crear una direc
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Agregar notificaciones de usuario a una directiva DLP
 
-Al crear una directiva DLP, las notificaciones de correo electrónico y las sugerencias de directiva forman parte de la sección **notificaciones de usuario** . 
+Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. Cuando se habilita, Microsoft 365 envía notificaciones de correo electrónico y sugerencias de directiva. Puede personalizar quién se envían los correos electrónicos de notificación, el texto de correo electrónico y el texto de la sugerencia de directiva.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     

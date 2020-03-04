@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
-ms.openlocfilehash: f3ccd1f8ab5f2f9fc78e2920182155ef7f6f16e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080337"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409635"
 ---
-# <a name="manage-self-service-purchases-admin"></a>Administración de compras sin servicio (administración)
+# <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
 
 Como administrador, puede ver las compras de autoservicio realizadas por las personas de su organización. Puede ver el producto, el nombre del comprador, las suscripciones adquiridas, la fecha de expiración, el precio de compra y los usuarios asignados para cada compra de servicio autónomo. Si es necesario para su organización, puede desactivar las compras de autoservicio por producto a través de PowerShell. Tiene las mismas directivas de administración y acceso de datos que los productos adquiridos a través de la compra de autoservicio o de forma centralizada.
 
@@ -76,7 +76,7 @@ Puede asignar licencias existentes o comprar suscripciones adicionales a través
 
 5. Siga los pasos [que se indican en View of licenses for a Self-Service adquirid subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) para exportar una lista de usuarios a la que hacer referencia en el paso 6.
 
-6. Asigne licencias a todos los usuarios que tengan una licencia en la otra suscripción. Para obtener los pasos completos, consulte [asignar licencias a usuarios](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+6. Asigne licencias a todos los usuarios que tengan una licencia en la otra suscripción. Para obtener los pasos completos, consulte [asignar licencias a usuarios](../../admin/manage/assign-licenses-to-users.md).
 
 7. Póngase en contacto con la persona que compró la suscripción de compra de autoservicio y pídale que la cancele.
 
@@ -84,4 +84,4 @@ Puede asignar licencias existentes o comprar suscripciones adicionales a través
 
 Para obtener preguntas comunes sobre las compras de autoservicio, consulte [preguntas más frecuentes](self-service-purchase-faq.md)sobre las compras sin ayuda.
 
-Si tiene alguna pregunta o necesita ayuda con las compras de servicios de autoservicio, [póngase en contacto con el soporte técnico](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Si tiene alguna pregunta o necesita ayuda con las compras de servicios de autoservicio, [póngase en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).
