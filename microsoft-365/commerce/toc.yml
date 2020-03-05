@@ -36,10 +36,8 @@
           href: subscriptions/manage-self-service-purchases-admins.md
     - name: Administración de licencias
       items:
-        - name: Comprar licencias
+        - name: Administrar las licencias de suscripción
           href: licenses/buy-licenses.md
-        - name: Quitar licencias de la suscripción
-          href: licenses/remove-licenses-from-subscription.md
         - name: Asignar licencias a los usuarios
           href: ../admin/manage/assign-licenses-to-users.md
         - name: Cancelar asignación a licencias de usuarios
