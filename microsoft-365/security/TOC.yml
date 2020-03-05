@@ -43,6 +43,8 @@
               href: mtp/microsoft-threat-protection.md
             - name: Novedades de Protección contra amenazas de Microsoft
               href: mtp/whats-new.md
+            - name: Versión preliminar de las características
+              href: mtp/preview.md
             - name: Centro de seguridad de Microsoft 365
               href: mtp/overview-security-center.md
             - name: Requisitos previos
