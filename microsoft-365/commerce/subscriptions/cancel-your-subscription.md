@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Obtenga información sobre cómo cancelar la suscripción de prueba o de pago de Office 365 para empresas o Microsoft 365.
-ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
+ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354601"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42415655"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -88,6 +88,19 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 ::: moniker-end
 
+## <a name="what-happens-when-you-cancel-a-subscription"></a>Qué sucede cuando cancela una suscripción
+
+Si cancela una suscripción antes del final del período, la suscripción se mueve directamente a un Estado deshabilitado. Para casi todas las suscripciones, en la mayoría de los países y las regiones, el estado de deshabilitada dura 90 días. Los administradores todavía podrán tener acceso y realizar copias de seguridad de los datos de su organización mientras la suscripción está en el estado de deshabilitada, pero se recomienda que los administradores [hagan una copia de seguridad de sus datos](back-up-data-before-switching-plans.md) antes de cancelar una suscripción, especialmente si es su única suscripción. Los datos que no se guarden se podrán eliminar en los siguientes 90 días y se eliminarán en los siguientes 180 días transcurridos tras la cancelación.
+
+### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Qué pasará con usted y sus usuarios si cancela una suscripción
+  
+- **Acceso de administrador** Los administradores todavía pueden iniciar sesión y acceder al centro de administración, y comprar otras suscripciones según sea necesario. Como administrador global o de facturación, tiene 90 días para [reactivar la suscripción](reactivate-your-subscription.md) con todos los datos intactos. 
+    
+- **Acceso de usuario** Los usuarios no podrán usar servicios como OneDrive para la empresa ni acceder a datos de clientes como correo electrónico o documentos en los sitios de grupo. Finalmente, las aplicaciones de Office, como Word y Excel, pasarán a un modo de solo lectura y de funcionalidad reducida y mostrarán [notificaciones de producto sin licencia](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+    
+ **Importante**: Si quiere que se eliminen los datos de su suscripción antes de que se termine el período típico de deshabilitación, puede solicitar que se anule el aprovisionamiento urgente. Cuando solicite la anulación de aprovisionamiento urgente, los datos de su suscripción se eliminan dentro de los 3 días posteriores. Para usar la anulación de aprovisionamiento urgente, [llame al soporte técnico](../../admin/contact-support-for-business-products.md).
+  
+Para obtener más información, vea [¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?](what-if-my-subscription-expires.md)
 
 ## <a name="other-steps-you-might-have-to-take"></a>Otros pasos que puede que tenga que realizar
 
@@ -132,5 +145,3 @@ Si ha cancelado la suscripción y no ha trasladado a los usuarios a otra suscrip
 [Renovar la suscripción](renew-your-subscription.md)
 
 [Reactivar la suscripción](reactivate-your-subscription.md)
-
-[Cambiar a un plan o una suscripción diferentes](switch-to-a-different-plan.md)

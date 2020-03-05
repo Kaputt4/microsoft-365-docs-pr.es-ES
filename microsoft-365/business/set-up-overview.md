@@ -1,5 +1,5 @@
 ---
-title: Introducción a la configuración
+title: Información general sobre la configuración
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,19 +20,20 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Información general de los pasos de configuración para Microsoft 365 Business.
-ms.openlocfilehash: 07cbd4fd187f78474783db848ac9b69068d2b44a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Obtenga información sobre los pasos de configuración para Microsoft 365 Business, la suscripción, la adición de un dominio y usuarios, la configuración de directivas de seguridad y mucho más.
+ms.openlocfilehash: 75ef784a886de754e7550d9e86af1242209346dd
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595073"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417234"
 ---
-# <a name="overview-of-setup"></a>Introducción a la configuración
+# <a name="overview-of-setup"></a>Información general sobre la configuración
 
 Vea un breve vídeo sobre la configuración de Microsoft 365 Business.<br><br>
 
@@ -91,6 +92,6 @@ Cuando se une a un dispositivo de Windows 10 a Azure AD, se aplican las directiv
 
     - Si su empresa tiene Active Directory local que contiene algunos recursos locales (como impresoras y recursos compartidos de archivos), puede dar acceso a estos recursos a los dispositivos de Azure AD siguiendo los pasos que se indican a continuación: [acceso a los recursos locales desde un dispositivo unido a Azure ad en Microsoft 365 Business](access-resources.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

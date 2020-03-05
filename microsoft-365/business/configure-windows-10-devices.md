@@ -1,5 +1,7 @@
 ---
 title: Configurar dispositivos con Windows 10
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -18,18 +20,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Obtenga información sobre las directivas de dispositivos para Windows 10 que se aplican a todos los usuarios de la organización.
-ms.openlocfilehash: ad092d2b2760a55e16c44a66350626c90c9ac7c5
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+description: Obtenga información sobre cómo configurar las directivas de dispositivo para Windows 10 que se aplican a todos los usuarios de la organización, lo que garantiza que se conecten de forma segura.
+ms.openlocfilehash: 9b690d34df6270731ea08bca1e59483d697b04d5
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38321372"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417274"
 ---
 # <a name="configure-windows-10-devices"></a>Configurar dispositivos con Windows 10
 
