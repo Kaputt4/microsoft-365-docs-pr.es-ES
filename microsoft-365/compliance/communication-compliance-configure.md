@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4f456b44ed0d7b3fb83a20d9c66ab49ff8af4946
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 3e3f16339d25c8cc592e937e30a446ed7e7cd333
+ms.sourcegitcommit: 0d7f27982fe9e18a4df423da23b86e0b15e77c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333670"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42542544"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurar el cumplimiento de la comunicación en Microsoft 365
 
@@ -113,7 +113,7 @@ Para obtener más información acerca de la configuración de grupos, vea:
     Si decide usar el Asistente para directivas para crear una directiva personalizada, deberá:
 
     - Asigne un nombre y una descripción a la Directiva. Los nombres de las directivas no se pueden cambiar una vez creada la Directiva.
-    - Elija los usuarios o grupos que desea supervisar, incluidos todos los usuarios de la organización, usuarios y grupos específicos, u otros usuarios y grupos que quiera excluir. -
+    - Elija los usuarios o grupos que desea supervisar, incluidos todos los usuarios de la organización, usuarios y grupos específicos, u otros usuarios y grupos que quiera excluir.
     - Elija los revisores para la Directiva. Los revisores pueden ser usuarios individuales o [grupos de seguridad habilitados para correo](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). Todos los revisores deben tener buzones hospedados en Exchange Online.
     - Elija los canales de comunicación para analizar, incluidos Exchange, Microsoft Teams o Skype empresarial. También elige analizar los orígenes de terceros si ha configurado un conector en Microsoft 365.
     - Elija la dirección de comunicación que se va a supervisar, incluidas las comunicaciones entrantes, salientes o internas.

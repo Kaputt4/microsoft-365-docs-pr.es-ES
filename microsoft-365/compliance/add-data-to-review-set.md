@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Agregue los resultados de una búsqueda asociada a un caso de exhibición de documentos electrónicos avanzado. Los elementos se copian de su ubicación original y se copian en una ubicación de almacenamiento de Azure proporcionada por Microsoft. Los elementos también se vuelven a indexar y la exhibición avanzada de documentos electrónicos realizará el reconocimiento óptico de caracteres (OCR) en los archivos de imagen y cargará el texto de la imagen para revisión y análisis.
 ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080166"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550466"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 

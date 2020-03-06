@@ -19,21 +19,22 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Obtenga información sobre cómo configurar los dispositivos Windows que ejecutan Windows 10 Pro para los usuarios de Microsoft 365 empresa. '
-ms.openlocfilehash: 427e1c25b5c6ad52ab280502133a0e2808bb48b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información sobre cómo configurar dispositivos Windows que ejecuten Windows 10 Pro para usuarios de Microsoft 365 Business, lo que permite controles de seguridad y administración centralizados.
+ms.openlocfilehash: 62d909b1e5658131f9381d1a800a70fad6e16cab
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42090774"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550025"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurar dispositivos con Windows para usuarios de Microsoft 365 Business
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>Requisitos previos para configurar dispositivos Windows para usuarios profesionales de Microsoft 365
 
 Para poder configurar dispositivos Windows para los usuarios de Microsoft 365 Business, asegúrese de que todos los dispositivos Windows estén ejecutando la versión 1703 de Windows 10 Pro (Creators Update). Windows 10 Pro es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y funciones de administración de dispositivos que funciona como complemento de Windows 10 Pro y, además, proporciona una administración centralizada y controles de seguridad de Microsoft 365 Business.
   
@@ -121,10 +122,10 @@ Compruebe que los dispositivos Windows 10 unidos a Azure AD se hayan actualizado
     
     ![Verify that Windows edition is Windows 10 Business.](../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Para configurar dispositivos móviles, vea [Configurar dispositivos móviles para los usuarios de Microsoft 365 Business](set-up-mobile-devices.md). Para establecer las directivas de protección de dispositivos o de aplicaciones, consulte [Administrar Microsoft 365 Business](manage.md).
   
-## <a name="see-also"></a>Consulte también
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Para obtener más información sobre la configuración y el uso de Microsoft 365 Business
 
 [Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

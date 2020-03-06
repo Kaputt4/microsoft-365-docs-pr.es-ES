@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 description: Obtenga más información sobre la aplicación de Microsoft Office para Android para Office 365 operado por 21Vianet y cómo descargarla para clientes en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: b9dbc09affeba6f1d3588ed3ab81bb4ba2e32f0a
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: 3ccf9d25d7b9ac6c036b83fdaf084a95c72b4d62
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410064"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547681"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>Aplicación de Office para Android para Office 365 operado por 21Vianet
 
-La aplicación de Microsoft Office para Android combina aplicaciones móviles de Word, Excel y PowerPoint en una sola aplicación que se puede descargar para teléfonos y tabletas Android. Con la aplicación de Office para Android, puede conectarse a Office 365 de la misma manera que lo haría con las aplicaciones móviles de Word, Excel y PowerPoint. La descarga de la aplicación de Office para Android no afectará a las instalaciones existentes de Word, Excel y PowerPoint.
+La aplicación de Microsoft Office para Android combina aplicaciones móviles de Word, Excel y PowerPoint en una sola aplicación que se puede descargar para teléfonos Android. Con la aplicación de Office para Android, puede conectarse a Office 365 de la misma manera que lo haría con las aplicaciones móviles de Word, Excel y PowerPoint. La descarga de la aplicación de Office para Android no afectará a las instalaciones existentes de Word, Excel y PowerPoint.
 
 Algunas de las características de aplicaciones de Office para Android no están disponibles para los clientes de Office 365 operado por 21Vianet:
 
@@ -43,13 +43,17 @@ Algunas de las características de aplicaciones de Office para Android no están
 
 ## <a name="download-the-office-app-for-android"></a>Descargar la aplicación de Office para Android
 
-- Descargue la aplicación de Office para teléfonos y tabletas Android desde cualquiera de los siguientes almacenes:
-- Huawei
-- Xiaomi
-- Lenovo
-- Baidu
-- OppO
-- Wandujia
+Descargue la aplicación de Office para teléfonos Android de cualquiera de estos almacenes de China:
+- [Baidu](https://shouji.baidu.com/software/26842919.html)
+- [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
+- [Huawei](https://appstore.huawei.com/app/C10888510)
+- [Lenovo](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
+- [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
+- [tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)
+- [wandoujia](https://www.wandoujia.com/apps/1502895)
+
+> [!NOTE]
+> Actualmente, la aplicación de Office para Android solo está disponible para teléfonos. La compatibilidad con tabletas se agregará en un momento posterior. 
 
 
 ## <a name="security-considerations"></a>Consideraciones acerca de la seguridad

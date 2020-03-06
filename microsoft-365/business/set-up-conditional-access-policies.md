@@ -18,17 +18,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo configurar directivas de acceso condicional para campañas de 365 de Microsoft.
-ms.openlocfilehash: 1ef90bd77da43ded624d85cef9c7a33beec74345
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información sobre cómo configurar directivas de acceso condicional para las campañas de Microsoft 365 para agregar una seguridad adicional importante.
+ms.openlocfilehash: be3ca0da3d27e3ec49f1227e4482cfd7fcaae8cb
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064626"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550085"
 ---
 # <a name="set-up-conditional-access-policies"></a>Configurar directivas de acceso condicional
 

@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Compre una suscripción de Office 365 para empresas. Puede comprar el mismo tipo de suscripción que ha probado o un plan diferente.
-ms.openlocfilehash: fcd38783082f9b86c4e1b99b1eec06d948e8e4b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246411"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549807"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>Proceso para comprar Office 365 de prueba
 
@@ -41,14 +41,14 @@ Ha probado Office 365 y ahora ya puede comprarlo. Tiene dos opciones para compra
 - [Comprar el mismo plan que la versión de prueba](#buy-the-same-plan-as-your-trial)
 - [Comprar un plan diferente del plan de prueba](#buy-a-different-plan-than-your-trial)
 
+> [!NOTE]
+> Al finalizar el período de prueba gratuito, la suscripción de prueba se convertirá automáticamente en una suscripción de pago. La suscripción de pago se establece de forma predeterminada en el plan para el que está registrado. Todavía puede comprar un plan diferente siguiendo los pasos descritos en la sección [compre un plan diferente a la versión de prueba que](#buy-a-different-plan-than-your-trial) se muestra a continuación.
+
 ## <a name="buy-the-same-plan-as-your-trial"></a>Comprar el mismo plan que la versión de prueba
 
 Es fácil y, además, si compra el mismo tipo de suscripción que el de la versión de prueba, no tendrá que preocuparse por la pérdida de los datos, de las cuentas ni de la configuración.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 
@@ -94,7 +94,7 @@ Es fácil y, además, si compra el mismo tipo de suscripción que el de la versi
 
 ## <a name="buy-a-different-plan-than-your-trial"></a>Comprar un plan diferente del plan de prueba
 
-Si el tipo de suscripción que compre es diferente al de la versión de prueba, deberá reasignar las licencias de usuario del plan de la versión de prueba al nuevo (antes de que finalice el periodo de gracia de 90 días que se inicia una vez que expira el plan de la versión de prueba) para conservar los datos, las cuentas y la configuración.
+Si adquiere un tipo de suscripción diferente al de la versión de prueba, tendrá que reasignar las licencias de usuario del plan de prueba a su nuevo plan (antes de que finalice el período de gracia de 90 días después de que expire el plan de prueba) para conservar los datos, las cuentas y la configuración.
 
 ::: moniker range="o365-worldwide"
 

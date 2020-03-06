@@ -22,23 +22,24 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Obtenga más información sobre Microsoft 365 Business.
-ms.openlocfilehash: bfda6801bee526084ad11ead819fcd04787d17ce
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga más información acerca de Microsoft 365 Business, un servicio de suscripción que incluye Office 365 más protección avanzada para su empresa contra amenazas de la cyber.
+ms.openlocfilehash: 508262daa9367ebd3b973a7a519fbb953d719fb1
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065667"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547859"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Información general de Microsoft 365 Business
 
 ## <a name="what-is-microsoft-365-business"></a>Qué es Microsoft 365 empresa
 
-Microsoft 365 Business es un servicio de suscripción que incluye Office 365 herramientas de productividad y capacidades avanzadas para ayudarle a proteger su empresa contra ciberamenazas, proteger sus datos y administrar dispositivos.
+Microsoft 365 Business es un servicio de suscripción que incluye Office 365 herramientas de productividad y capacidades avanzadas para ayudar a proteger su negocio contra amenazas de la cibernéticos, proteger sus datos y administrar dispositivos.
 
 Vea este vídeo para obtener una introducción rápida a Microsoft 365 Business.<br><br>
 
@@ -114,6 +115,6 @@ Para ver la lista completa de las características de seguridad, consulte [Micro
     > [!NOTE]
     > Este vínculo es solo para tiendas en Estados Unidos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

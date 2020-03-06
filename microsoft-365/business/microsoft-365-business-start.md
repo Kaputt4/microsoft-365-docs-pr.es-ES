@@ -21,17 +21,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Aprenda a configurar Microsoft 365 Business.
-ms.openlocfilehash: 5491486c2bf8da1ee38fcd986d5ecd682d57c82e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga más información sobre Microsoft 365 Business, cómo configurarlo y cómo preparar los dispositivos y equipos de los usuarios para asegurarse de que están protegidos por la empresa de Microsoft 365.
+ms.openlocfilehash: f6fd73762c0b57777c19d32886f758875e2e7e6a
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065627"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547739"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Introducción a Microsoft 365 Business
 
@@ -97,7 +98,7 @@ Si su organización usa Windows Server Active Directory local, puede configurar 
 Si conserva un Active Directory local que contiene algunos recursos locales (como impresoras y recursos compartidos de archivos), puede conceder a los **dispositivos Unidos a Azure ad** acceso a estos recursos siguiendo los pasos que se indican a continuación: [acceso a recursos locales desde un dispositivo unido a Azure ad en Microsoft 365 Business](access-resources.md).
   
   
-## <a name="contact-support"></a>Contactar soporte
+## <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
 
  **Si necesita ponerse en contacto con soporte técnico:**
   

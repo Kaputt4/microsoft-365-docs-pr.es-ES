@@ -1,5 +1,7 @@
 ---
 title: Aumentar la protección contra amenazas para Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -14,16 +16,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
-description: Configurar la protección contra amenazas avanzada de Office 365 y proteger los datos confidenciales.
-ms.openlocfilehash: 87a5c79636a2eefe394b4a30e72971eb851e3ecb
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+description: Configurar la protección contra amenazas avanzada de Office 365 y proteger los datos confidenciales de suplantación de identidad (phishing), malware y otras amenazas.
+ms.openlocfilehash: 9d7bae60091c87fa0246a697f2a49e1cbc6e2f06
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704083"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550365"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -76,7 +79,7 @@ Para crear una regla de transporte de correo:
     
 6. Haga clic en **Guardar**.
     
-|**Setting**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
+|**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla antiransomware: advertir a los usuarios  <br/>  |
 |Aplicar esta regla si. . .  <br/> |Los datos adjuntos. . . coincidencias de extensión de archivo. . .  <br/> |
@@ -108,7 +111,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
     
 6. Haga clic en **Guardar**.
     
-|**Setting**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
+|**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
 |Nombre  <br/> |Impedir el reenvío automático de correo electrónico a dominios externos  <br/> |
 |Aplicar esta regla si...  <br/> |El remitente. . . es externo/interno. . . Dentro de la organización  <br/> |
@@ -138,7 +141,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
 6. Una vez que haya revisado la configuración, elija **crear esta directiva** o **Guardar**, según corresponda.
     
 
-|**Configuración u opción**<br/>|**Configuración recomendada** <br/>|
+|**Configuración u opción**<br/>|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Dominio y personal de la campaña más valioso  <br/> |
 |Descripción  <br/> |Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> |
@@ -147,7 +150,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
 |Elegir acciones  <br/> |Si un usuario suplantado envía un correo electrónico: elija **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, *Alicia<span><span>@contoso. com*. Si un dominio suplantado envía un correo electrónico: elija **mensaje en cuarentena**.  <br/> |
 |Inteligencia de buzones  <br/> |De forma predeterminada, la inteligencia de buzones se selecciona cuando se crea una nueva Directiva antiphishing. Deje esta configuración **activada** para obtener los mejores resultados.  <br/> |
 |Agregar dominios y remitentes de confianza  <br/> |Aquí puede agregar sus propios dominios o cualquier otro dominio de confianza.  <br/> |
-|Aplicado a  <br/> |Seleccione **el dominio del destinatario es**. En **cualquiera de estos**, seleccione **elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, *contoso.<span> com <span>*, en la lista y, a continuación, seleccione **Agregar**. Seleccione **listo**.  <br/> |
+|Aplicado a  <br/> |Seleccione **el dominio del destinatario es**. En **cualquiera de estos**, seleccione **elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, *contoso.<span> com <span>*, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.  <br/> |
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Protección contra archivos adjuntos malintencionados y archivos con datos adjuntos seguros de ATP
 
@@ -170,7 +173,7 @@ Para crear una directiva de datos adjuntos seguros de ATP, vea [este breve víde
 7. Una vez que haya revisado la configuración, elija **crear esta directiva** o **Guardar**, según corresponda.
     
 
-|**Configuración u opción**|**Configuración recomendada** <br/>|
+|**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Bloquear los correos electrónicos actuales y futuros con malware detectado.  <br/> |
 |Descripción  <br/> |Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> |
@@ -216,7 +219,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 3. Haga clic en **Guardar**. 
 
-|**Configuración u opción**|**Configuración recomendada** <br/>|
+|**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Directiva de vínculos seguros para todos los destinatarios del dominio  <br/> |
 |Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes  <br/> |Seleccione **activado: las direcciones URL se rescribirán y comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo**.  <br/> |

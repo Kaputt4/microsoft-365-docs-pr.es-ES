@@ -18,18 +18,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: Obtenga información sobre la configuración disponible para proteger los archivos de trabajo en caso de pérdida o robo del dispositivo de un usuario.
-ms.openlocfilehash: 5f137354b51a0151e57e5e109b1ebbb043c68f60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Obtenga información sobre la configuración disponible en Microsoft 365 Business para proteger los archivos de trabajo en caso de pérdida o robo del dispositivo de un usuario.
+ms.openlocfilehash: 244e4773f1efa9548dd2126e03a007aefb840b40
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593564"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550175"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Proteger los archivos de trabajo después de la pérdida o robo de un dispositivo móvil
 
@@ -41,7 +42,7 @@ Las siguientes opciones de configuración permiten proteger archivos de trabajo 
   
 |||
 |:-----|:-----|
-|Valor  <br/> |Descripción  <br/> |
+|Configuración  <br/> |Descripción  <br/> |
 |Eliminar archivos de trabajo de un dispositivo inactivo después de este número de días  <br/> |Si un dispositivo no se usa durante el número de días que especifique aquí, los archivos de trabajo almacenados en el dispositivo se eliminarán automáticamente.  <br/> |
 |Exigir que los usuarios guarden todos los archivos de trabajo en OneDrive para la Empresa  <br/> |Si esta configuración está **activada**, la única ubicación de guardado disponible para los archivos de trabajo es OneDrive para la empresa.  <br/> |
 |Cifrar los archivos de trabajo  <br/> |Mantenga **activada** esta opción para proteger con cifrado los archivos de trabajo. Incluso si el dispositivo se pierde o es robado, nadie puede leer los datos de la compañía.  <br/> |

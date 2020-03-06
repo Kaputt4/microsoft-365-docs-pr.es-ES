@@ -20,16 +20,17 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
-description: Obtenga información sobre cómo comprar y registrarse en Microsoft 365 Business.
-ms.openlocfilehash: 63bff3d34df017d1c7cc437ef050d53623e76aa9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Obtenga información sobre lo que incluye Microsoft 365 Business y obtenga instrucciones paso a paso para registrarse en Microsoft 365 Business.
+ms.openlocfilehash: 003bf332a9183a5e062a294297a30c9b7d19fdb9
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594256"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547839"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Regístrese para obtener Microsoft 365 Business
 
@@ -93,6 +94,6 @@ Seleccione **ir al programa de instalación** para completar otros pasos, como a
 
 Para obtener ayuda con la instalación, consulte [configurar](set-up.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -16,17 +16,18 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Obtenga información sobre cómo validar la configuración de protección de aplicaciones empresariales de Microsoft 365 en dispositivos Windows 10.
-ms.openlocfilehash: 577921f7f33eafbbe652dcf825a145d89f1ff556
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Validar la configuración de Microsoft 365 Business App Protection en dispositivos Windows 10 y comprobar que los usuarios no pueden copiar datos de la empresa en archivos personales o aplicaciones no administradas.
+ms.openlocfilehash: 4d3d7e950311ac32606e700ebb35bf026ae091cc
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42057354"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550005"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de aplicaciones en PC con Windows 10
 
