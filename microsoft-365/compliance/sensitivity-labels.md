@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de confidencial del marco de Microsoft Information Protection para clasificar y proteger los datos de la organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se vean obstaculizadas. Estas etiquetas pueden aplicar la configuración de protección, que incluye marcadores visuales de cifrado como pies de página y marcas de agua.
-ms.openlocfilehash: 92bfb768cf044b6a4837e5dab6936c2d77424a25
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 3b8e5e39ef6e2cb2e452fbf1764d53bd51ad24d8
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106833"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543170"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -146,9 +146,9 @@ Con una directiva de etiqueta, puede:
 
 - **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier grupo de seguridad habilitado para correo electrónico, grupo de Office 365 o grupo de distribución dinámico.
 
-- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Considere utilizar una etiqueta predeterminada para establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. Sin embargo, sin el aprendizaje del usuario y otros controles, esta configuración también puede dar como resultado una etiqueta incorrecta. 
+- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta opción también se aplica a los contenedores, si [habilita las etiquetas de confidencialidad para Microsoft Teams, los grupos de Office 365 y los sitios de SharePoint](sensitivity-labels-teams-groups-sites.md). Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico. Considere utilizar una etiqueta predeterminada para establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. Sin embargo, sin el aprendizaje del usuario y otros controles, esta configuración también puede dar como resultado una etiqueta incorrecta. 
 
-- **Requerir una justificación para cambiar una etiqueta.** Si el contenido está marcado como Confidencial y un usuario intenta quitar esa etiqueta o reemplazarla por una clasificación inferior (por ejemplo, una etiqueta llamada Pública), puede exigir al usuario que proporcione una justificación para realizar esta acción. Actualmente, el motivo de justificación no es enviado a [la etiqueta Analítica](label-analytics.md) para que el administrador pueda revisarla. No obstante, la [cliente de etiquetas unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) envía esta información a [Azure Information Protection Analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
+- **Requerir una justificación para cambiar una etiqueta.** Si un usuario intenta quitar una etiqueta o reemplazarla por una etiqueta con un número de pedido inferior, puede solicitar que el usuario proporcione una justificación para realizar esa acción. Por ejemplo, un usuario abre un documento con la etiqueta Confidencial (número de pedido 3) y reemplaza dicha etiqueta por una llamada Público (número de pedido 1). Actualmente, el motivo de justificación no es enviado a [la etiqueta Analítica](label-analytics.md) para que el administrador pueda revisarla. No obstante, la [cliente de etiquetas unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) envía esta información a [Azure Information Protection Analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
     ![Aviso en el que los usuarios especifican una justificación](../media/Sensitivity-label-justification-required.png)
 
