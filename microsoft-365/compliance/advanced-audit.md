@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
-ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
+ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42370489"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42551813"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
 La [funcionalidad de auditoría unificada](search-the-audit-log-in-security-and-compliance.md) en Microsoft 365 proporciona a las organizaciones la visibilidad de muchos tipos de actividades auditadas a través de los distintos servicios de Microsoft 365. Ahora, con el lanzamiento de la Auditoría avanzada en Microsoft 365, estamos agregando nuevas capacidades de auditoría que pueden ayudar a su organización con las investigaciones forenses y de cumplimiento.
 
 > [!NOTE]
-> La auditoría avanzada está disponible para organizaciones con una suscripción a Office 365 o Microsoft 365 Enterprise E5. Además, se puede asignar a los usuarios una suscripción al complemento del Cumplimiento de Microsoft 365 E5 para cuando se requiera una licencia por usuario para las funciones de auditoría avanzada, como es el caso de la conservación a largo plazo de los registros de auditoría y el acceso a eventos fundamentales para las investigaciones.
+> Auditoría avanzada está disponible para organizaciones con una suscripción a Office 365 E5 o Microsoft 365 Enterprise E5. Además, se puede asignar a los usuarios una licencia al complemento Cumplimiento de Microsoft 365 E5 para cuando se requiera una licencia por usuario para las funciones de Auditoría avanzada, como es el caso de la conservación a largo plazo de los registros de auditoría y el acceso a eventos fundamentales para las investigaciones.
 
 Este artículo ofrece una visión general de estas capacidades de auditoría avanzada.
 
