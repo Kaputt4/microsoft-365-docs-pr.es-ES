@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 2140b2b529ccec9a4d081a2e7b6ea1fdb7fb900f
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
+ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106813"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42552044"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -31,6 +31,36 @@ Estamos agregando de forma continuada nuevas características al [centro de cump
 > [!TIP]
 > ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 Y visite el [mapa de ruta de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) para saber más sobre las características de 365 Microsoft que se lanzaron, están en desarrollo, se han cancelado o han sido publicadas anteriormente.
+
+## <a name="february-2020"></a>Febrero de 2020
+
+### <a name="insider-risk-management-is-officially-released"></a>Se ha lanzado oficialmente la administración de riesgos de Insider
+
+Rollo de tambor, por... La administración de riesgos de Insider ahora está disponible para las organizaciones con las siguientes suscripciones:
+
+- [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (pago o de prueba)
+- Suscripción a Microsoft 365 Enterprise E3 con el [complemento de cumplimiento de Microsoft E5](https://go.microsoft.com/fwlink/?linkid=2120432)
+
+Se ha dado por hecho que hemos realizado algunas mejoras desde la versión preliminar, incluidos los [nuevos grupos de roles](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) y [la configuración de toda la solución](insider-risk-management-configure.md#step-4-required-configure-insider-risk-settings).
+
+Como siempre, envíe sus comentarios a medida que use la solución para que podamos seguir realizando mejoras.
+
+### <a name="records-management"></a>Administración de registros
+
+Esta nueva solución trae todas las capacidades de administración de registros en un solo paraguas. Los elementos destacados incluyen la introducción de versiones de registros para SharePoint y OneDrive y la prueba de eliminación de registros.
+
+![Página de administración de registros en el centro de cumplimiento de Microsoft 365](../media/mcc-records-management-page.png)
+
+[Obtenga más información sobre la administración de registros](records-management.md)
+
+### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>Información destacada de la solución: conectores de datos para Facebook y Twitter
+
+Los conectores de datos se [publicaron el mes pasado](#just-launched) y estamos buscando ayuda en la prueba de los siguientes conectores para validar su funcionamiento como se esperaba.
+
+- [Páginas empresariales de Facebook](archive-facebook-data-with-sample-connector.md). Importa y archiva datos de las páginas de empresa de Facebook a Microsoft 365. Beneficioso para las soluciones de cumplimiento como la administración de registros y la exhibición de documentos electrónicos.
+- [Twitter](archive-twitter-data-with-sample-connector.md). Importa y archiva datos de Twitter a Microsoft 365. Beneficioso para las soluciones de cumplimiento como la administración de registros y la exhibición de documentos electrónicos.
+
+Mientras configura y valida estos conectores, envíenos sus comentarios sobre lo que ha ido bien, lo que no y lo que podemos hacer para mejorar la experiencia.
 
 ## <a name="january-2020"></a>Enero de 2020
 
@@ -112,7 +142,7 @@ Este es un resumen de las nuevas soluciones que encontrará. No deje de mirarlas
 > Estas soluciones se encuentran solo en el centro de cumplimiento de Microsoft 365. No se pueden administrar en el centro de seguridad & cumplimiento de Office 365.
 <br/>
 
-|**Nueva solución**|**Descripción**|**Obtener más información**|
+|**Nueva solución**|**Descripción**|**Más información**|
 |:-----|:-----|:-----|
 |Puntuación de cumplimiento de Microsoft (versión preliminar) <br/>|Basado en el [Administrador de cumplimiento](compliance-manager-overview.md), la puntuación de cumplimiento es una característica independiente con un diseño más sencillo y más fácil de entender que le ayuda a comprender y mejorar la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. <br/>|[Información general sobre la puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md)|
 |Catálogo de soluciones (versión preliminar) <br/>|El catálogo de soluciones es su único punto de partida para descubrir, aprender y comenzar rápidamente con nuestras soluciones de administración de riesgos y cumplimiento. El catálogo está organizado en tres categorías de cumplimiento, cada una de las cuales contiene detalles sobre las soluciones que conforman esa categoría. Las categorías incluyen protección de la información & gobernanza, administración de riesgos de Insider y respuesta de & de detección <br/>|[Información general sobre el catálogo de soluciones (versión preliminar)](microsoft-365-solution-catalog.md)|
@@ -128,7 +158,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 > Algunas características siguen estando disponibles únicamente en el centro de cumplimiento de & de seguridad de Office 365: estos se indican a continuación. Pero estamos trabajando para obtener una vista previa de estas en el centro de cumplimiento de Microsoft 365, así que Manténgase atento a las actualizaciones. 
 <br/>
 
-|**Característica**|**Centro de seguridad y cumplimiento de Office 365**|**Centro de cumplimiento de Microsoft 365**|**Obtener más información**|
+|**Característica**|**Centro de seguridad y cumplimiento de Office 365**|**Centro de cumplimiento de Microsoft 365**|**Más información**|
 |:-----|:-----|:-----|:-----|
 |eDiscovery avanzado|eDiscovery > eDiscovery avanzado <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > avanzado <br/> https://compliance.microsoft.com/advancedediscovery | [Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365](overview-ediscovery-20.md) |
 |Directivas de alerta|Alertas > directivas de alertas <br/> https://protection.office.com/alertpolicies |En este momento, las directivas de alertas se administran solo en el centro de cumplimiento de & de seguridad de Office 365. |[Directivas de alerta en el centro de seguridad y cumplimiento](alert-policies.md) |
@@ -161,13 +191,13 @@ Cuando configure el cifrado para una etiqueta de confidencialidad, ahora tiene d
 - Al aplicar la etiqueta a un **correo electrónico de Outlook**, los usuarios pueden exigir restricciones equivalentes a la opción no reenviar. Los destinatarios podrán leer el mensaje pero no reenviar, imprimir ni copiar el contenido.
 - Al aplicar la etiqueta a los **archivos de Word, PowerPoint y Excel**, a los usuarios se les pedirá que asignen permisos de acceso a determinados usuarios y grupos.
 
-[Obtener más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
+[Más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
 
 ## <a name="august-2019"></a>Agosto de 2019
 
 ### <a name="update-to-data-investigations"></a>Actualización a investigaciones de datos
 
-Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Obtener más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>Julio de 2019
 
