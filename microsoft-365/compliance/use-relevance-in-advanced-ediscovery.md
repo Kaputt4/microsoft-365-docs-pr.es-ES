@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Obtenga información sobre el módulo relevancia en Office 365 Advanced eDiscovery, incluido un flujo de trabajo y directrices, y pasos para la revisión del archivo y el aprendizaje.  '
-ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080717"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557638"
 ---
-# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Usar el módulo relevancia en Office 365 Advanced eDiscovery
+# <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Usar el módulo de relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -133,7 +133,7 @@ Es posible aceptar o invalidar las opciones de procesamiento avanzado de paso po
   
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

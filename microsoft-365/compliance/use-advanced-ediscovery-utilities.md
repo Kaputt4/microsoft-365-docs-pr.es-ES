@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: 'Obtenga información sobre las utilidades de la exhibición avanzada de documentos electrónicos de Office 365, incluidos el registro de casos, datos claros, errores de proceso, modificación de relevancia y análisis de transparencia.  '
-ms.openlocfilehash: 3952d1ec58b3f55f997079cec16f16ddb301ed89
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ce8eb00382bd6ff0514dfef99d18a8e4b2679cec
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601337"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557660"
 ---
-# <a name="use-office-365-advanced-ediscovery-utilities"></a>Uso de utilidades avanzadas de exhibición de documentos electrónicos de Office 365
+# <a name="use-advanced-ediscovery-classic-utilities"></a>Usar las utilidades avanzadas de exhibición de documentos electrónicos (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -109,7 +109,7 @@ En un escenario de casos de varios problemas, se puede generar un informe de an�
     
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Definir la configuración de casos y espacios empresariales](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 

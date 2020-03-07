@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: 'Obtenga información general sobre el proceso de análisis, que le permite establecer parámetros, opciones de ejecución y ver resultados, en la exhibición avanzada de documentos electrónicos de Office 365. '
-ms.openlocfilehash: ff26d0ce28d725cb922c228ff4b6ddf9ab174757
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 31745651ddbebbfc5e9670a5a906d82cf493aea4
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596127"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556808"
 ---
-# <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Analizar datos de casos con Office 365 Advanced eDiscovery
+# <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>Analizar datos de casos con eDiscovery avanzado (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -45,7 +45,7 @@ Antes de ejecutar Analyze, defina los criterios para seleccionar y procesar arch
   
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Descripción de la similitud de documentos](understand-document-similarity-in-advanced-ediscovery.md)
   

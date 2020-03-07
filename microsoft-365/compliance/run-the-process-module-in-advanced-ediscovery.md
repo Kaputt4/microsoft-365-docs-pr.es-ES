@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Obtenga información sobre las directrices para preparar archivos de casos de Office 365 datos para analizar con Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 779f9ae4f93933063139b2d7d65deb2500b263e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: eb608eeac33e0d5d06dce9d0c35cd86f4e0bc280
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597587"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557820"
 ---
-# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Ejecutar el módulo de proceso en Office 365 Advanced eDiscovery
+# <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Ejecutar el módulo de proceso en la exhibición avanzada de documentos electrónicos (Classic)
 
 Los archivos de casos se cargan en la exhibición avanzada de documentos electrónicos durante el **proceso**de **preparación** \> . 
   
@@ -74,7 +74,7 @@ Una etiqueta definida por el usuario puede asociarse a un conjunto de archivos p
   
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Ejecutar el módulo de proceso y cargar datos](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fbc2ad99433e2bf296e2891b6f3e85e22b6af6df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0f9cb386ce57d6581ade5caa05e029511100d9b3
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079937"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556788"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en eDiscovery avanzado
 
@@ -57,12 +57,18 @@ Para ver un informe de análisis de un conjunto de revisión:
 
 3. Haga clic en **Ver informe**.
 
-El informe tiene cuatro componentes del análisis:
+El informe tiene siete componentes del análisis:
 
-- **Desglose** : cuántos mensajes de correo electrónico, datos adjuntos y documentos sueltos se encontraron en el conjunto de revisión.
+- **Rellenado de destino:** El número de mensajes de correo electrónico, datos adjuntos y documentos sueltos que se encuentran en el conjunto de revisión.
 
-- **Documentos (sin datos adjuntos)** : Cuántos documentos sueltos eran tablas dinámicas, únicas cerca de duplicados de un pivote o un duplicado exacto de otro documento.
+- **Documentos (sin datos adjuntos):** El número de documentos sueltos que son dinámicos, únicos Near duplicados de un pivote o un duplicado exacto de otro documento.
 
-- **Mensajes de correo electrónico:** cuántos mensajes de correo electrónico eran inclusivos, copias inclusivas, menos inclusivas o ninguna de las anteriores.
+- **Mensajes de correo electrónico:** El número de mensajes de correo electrónico que son inclusivos, copias inclusivas, menos inclusivas o ninguna de las anteriores.
 
-- **Datos adjuntos** : Cuántos archivos adjuntos de correo electrónico son únicos o duplicados de otro correo electrónico adjunto en el conjunto de revisión.
+- **Datos adjuntos:** El número de datos adjuntos de correo electrónico que son únicos o duplicados de otro correo electrónico adjunto en el conjunto de revisión.
+
+- **Número de archivos por tipo:** El número de archivos, identificados por extensión de archivo.
+
+- **Documentos por origen:** Un resumen del contenido por su origen de datos original.
+
+- **Documentos agregados por proceso:** Un resumen del contenido de los procesos del conjunto de revisión. 

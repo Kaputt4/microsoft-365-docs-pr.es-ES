@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Obtenga información sobre cómo ver e interpretar el estado de aprendizaje de relevancia y los resultados de los problemas de caso en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: 224a817e662462d0c51650e7bd364e717dbfbd62
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9c15bd285848d1906243137bfba451b19900b28e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069531"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557680"
 ---
-# <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Seguimiento del análisis de relevancia en Office 365 Advanced eDiscovery
+# <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Seguimiento del análisis de relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -172,7 +172,7 @@ Esta vista muestra lo siguiente:
     
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

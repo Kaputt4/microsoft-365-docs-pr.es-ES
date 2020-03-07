@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: 9ca390dfc96307e6323e897e762813719f2b3ac0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069757"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557755"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
+
+Las instrucciones de este artículo se pueden aplicar al usar la exhibición de documentos electrónicos principal o la exhibición avanzada de documentos electrónicos para administrar las investigaciones.
 
 Los límites de cumplimiento crean límites lógicos dentro de una organización de Office 365 que controlan las ubicaciones de contenido del usuario (como buzones de correo, sitios de SharePoint y cuentas de OneDrive) que los administradores de eDiscovery pueden buscar. Además, los límites de cumplimiento controlan quién puede tener acceso a casos de eDiscovery que se usan para administrar las investigaciones legales, de recursos humanos u otras investigaciones dentro de la organización. La necesidad de límites de cumplimiento suele ser necesaria para las corporaciones multinacionales que deben respetar los reglamentos y las regulaciones geográficas y para los gobiernos, que a menudo se dividen en diferentes agencias. En Office 365, los límites de cumplimiento le ayudan a cumplir estos requisitos cuando realizan búsquedas de contenido y administran investigaciones con casos de eDiscovery.
   
@@ -157,29 +159,29 @@ El último paso consiste en crear un caso de exhibición de documentos electrón
 - Cuando un miembro del grupo de funciones asignado a un caso ejecuta una búsqueda asociada con el caso, solo podrá buscar en las ubicaciones de contenido de su agencia (definido por el filtro de permisos de búsqueda que creó en el paso 4).
 
 Para crear un caso y asignar miembros:
-    
-1. Vaya a la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento y cree un caso. 
-    
+
+1. Vaya a la **** página exhibición **avanzada** de documentos electrónicos o exhibición de documentos electrónicos en el centro de seguridad & cumplimiento y cree un caso. 
+
 2. En la lista de casos de eDiscovery, haga clic en el nombre del caso que ha creado.
-    
+
 3. En la página desplegable **administrar este caso** , en **administrar grupos**de roles ![, haga](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) clic en agregar icono **Agregar**.
-    
+
     ![Agregar un grupo de roles como miembro de un caso de exhibición de documentos electrónicos](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. En la lista de grupos de roles, seleccione uno de los grupos de roles que ha creado en el paso 3 y haga clic en **Agregar**.
-    
+
 5. Haga clic en **Guardar** en el control flotante **administrar este caso** para guardar el cambio. 
 
 ## <a name="compliance-boundary-limitations"></a>Limitaciones de los límites de cumplimiento
 
 Tenga en cuenta las siguientes limitaciones al administrar casos de eDiscovery e investigaciones que usan límites de cumplimiento.
   
-- Al crear y ejecutar una búsqueda de contenido, puede seleccionar ubicaciones de contenido que están fuera de la Agencia. Sin embargo, debido al filtro de permisos de búsqueda, el contenido de esas ubicaciones no se incluye en los resultados de la búsqueda.
-    
+- Al crear y ejecutar una búsqueda, puede seleccionar ubicaciones de contenido que están fuera de la Agencia. Sin embargo, debido al filtro de permisos de búsqueda, el contenido de esas ubicaciones no se incluye en los resultados de la búsqueda.
+
 - Los límites de cumplimiento no se aplican a las retenciones en casos de eDiscovery. Esto significa que un administrador de exhibición de documentos electrónicos en una agencia puede poner a un usuario en suspensión en una agencia diferente. Sin embargo, el límite de cumplimiento se aplicará si el administrador de exhibición de documentos electrónicos busca en las ubicaciones de contenido del usuario que se colocó en suspensión. Esto significa que el administrador de exhibición de documentos electrónicos no podrá buscar en las ubicaciones de contenido del usuario, aunque haya podido poner el usuario en espera.
-    
+
     Además, la retención de estadísticas solo se aplicará a las ubicaciones de contenido de la Agencia.
-    
+
 - Los filtros de permisos de búsqueda no se aplican a las carpetas públicas de Exchange.
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Búsqueda y exportación de contenido en entornos multigeográfico
@@ -195,7 +197,7 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |NAM  <br/> |Norteamérica (centros de administración de centros de recursos en los Estados Unidos)  <br/> |
     |EUR  <br/> |Europa  <br/> |
     |APC  <br/> |Asia Pacífico  <br/> |
-    |CAN <br/> |Canada|
+    |CAN <br/> |Canadá|
     |||
     
 - **Búsquedas de contenido de ruta:** Puede enrutar las búsquedas de contenido de los sitios de SharePoint y las cuentas de OneDrive a un centro de datos satélite. Esto significa que puede especificar la ubicación del centro de recursos donde se ejecutarán las búsquedas.

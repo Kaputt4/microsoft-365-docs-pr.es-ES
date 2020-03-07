@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Obtenga información sobre cómo Office 365 Advanced eDiscovery puede ayudarle a analizar datos dentro de Office 365, a racionalizar las revisiones de documentos y a tomar decisiones para la exhibición de documentos electrónicos eficaz.
-ms.openlocfilehash: a3a6291459005d60defe61a8bca40ce382b6d052
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2e84ada8c6ca004c0f3c50a79fa6908148770955
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597897"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557880"
 ---
-# <a name="office-365-advanced-ediscovery"></a>eDiscovery avanzado de Office 365
+# <a name="advanced-ediscovery-classic"></a>Exhibición avanzada de documentos electrónicos (Classic)
 
 > [!IMPORTANT]
-> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos el retiro de Office 365 Advanced eDiscovery (también conocido como *Advanced eDiscovery v 1.0*). Si todavía está usando la exhibición avanzada de documentos electrónicos v 1.0, pase a la [versión más avanzada de eDiscovery 2.0](overview-ediscovery-20.md) (también denominada *solución de exhibición avanzada de documentos electrónicos en Microsoft 365*) lo antes posible. EDiscovery avanzado 2,0 contiene una funcionalidad similar que se encuentra en eDiscovery avanzado v 1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información acerca de la retirada de eDiscovery avanzado v 1.0, consulte [jubilación de las herramientas de eDiscovery heredadas](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos el retiro de Office 365 Advanced eDiscovery, conocido también como *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
 Con la exhibición avanzada de documentos electrónicos, puede comprender mejor los datos de Office 365 y reducir los costos de eDiscovery. La exhibición avanzada de documentos electrónicos le ayuda a analizar datos no estructurados en Office 365, realizar una revisión más eficaz del documento y tomar decisiones para reducir los datos para la exhibición de documentos electrónicos. Puede trabajar con datos almacenados en Exchange Online, SharePoint Online, OneDrive para la empresa, Skype empresarial, Office 365 grupos y Microsoft Teams. Puede realizar una búsqueda de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento para buscar contenido en grupos, buzones y sitios individuales y, a continuación, analizar los resultados de la búsqueda con la exhibición avanzada de documentos electrónicos. Al preparar los resultados de búsqueda para el análisis en la exhibición avanzada de documentos electrónicos, el reconocimiento óptico de caracteres permite la extracción del texto de las imágenes. Esta característica permite que las eficaces capacidades analíticas de texto de eDiscovery avanzado se apliquen a los archivos de imagen.
   

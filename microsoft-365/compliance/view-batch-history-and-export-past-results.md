@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Aprenda a ver información detallada sobre las sesiones de lote de exportación seleccionadas y cómo deshacer la última sesión de exportación en Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: a13faf7a0c81eb22498239b5ac9f26cce52387f6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: de7366e1eb43c276899ecf35339c0443fad4879d
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069143"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557618"
 ---
-# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado de Office 365
+# <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado (clásico)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -62,7 +62,7 @@ El cuadro de diálogo historial de exportación proporciona información detalla
     
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Exportar resultados](export-results-in-advanced-ediscovery.md)
 

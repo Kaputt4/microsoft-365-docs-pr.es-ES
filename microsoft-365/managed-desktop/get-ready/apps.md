@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112664"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557578"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Aplicaciones en el escritorio administrado de Microsoft
 
@@ -23,7 +23,7 @@ ms.locfileid: "41112664"
 
 Microsoft incluye ciertas aplicaciones clave junto con la licencia de Microsoft 365 E3 o E5 necesaria para participar en el escritorio administrado de Microsoft. Sin embargo, aunque proporcionamos estas aplicaciones, aún tiene ciertas responsabilidades y acciones para completarse.
 
-También puede implementar aplicaciones adicionales que no son de Microsoft para los usuarios finales para el autoservicio a través del portal de la empresa o una instalación en segundo plano obligatoria, todo con la canalización de implementación de Microsoft Intune. Si tiene la experiencia, puede migrar las aplicaciones que necesita usted mismo; Si no lo son los servicios de consultoría de Microsoft (MCS) o los proveedores que no son de Microsoft, se alegrará de ayudarle con un proyecto de empaquetado y migración. Para obtener más información sobre cómo trabajar con MCS, vea [Working with Microsoft Consulting Services](apps-MCS.md).
+También puede implementar aplicaciones adicionales que no son de Microsoft para los usuarios finales para el autoservicio a través del portal de la empresa o una instalación en segundo plano obligatoria, todo con la canalización de implementación de Microsoft Intune. Si tiene la experiencia, puede migrar las aplicaciones que necesita; como alternativa, los servicios de consultoría de Microsoft (MCS) o proveedores que no son de Microsoft se alegrarán de ayudarle con un proyecto de empaquetado y migración. Para obtener más información sobre cómo trabajar con MCS, vea [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## <a name="apps-provided-by-microsoft"></a>Aplicaciones proporcionadas por Microsoft

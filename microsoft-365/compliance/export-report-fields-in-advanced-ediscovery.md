@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Describe todos los campos que se incluyen en la exportación de informes para eDiscovery avanzada.
-ms.openlocfilehash: facd93422bbe41a9dc8c5f252cf08eab7fb308f2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8c932dac9218e2020bfcd57d21483728325e488f
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594621"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558211"
 ---
-# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportar campos de informe en Office 365 Advanced eDiscovery
+# <a name="export-report-fields-in-advanced-ediscovery-classic"></a>Exportar campos de informe en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -137,7 +137,7 @@ En la tabla siguiente se enumeran los campos de cada plantilla de exportación.
    
 ## <a name="related-topics"></a>Temas relacionados
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Exportación de datos de casos con eDiscovery avanzado](export-case-data-in-advanced-ediscovery.md)
   

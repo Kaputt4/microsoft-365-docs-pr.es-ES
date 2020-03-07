@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 53cf720694a52ea18e73a49817418abb489d8c72
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3ed96d032a16eee066e4f9fb3be56a5a0a8cec84
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073486"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558020"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de titulares de los datos de Azure para el RGPD y la CCPA
 
@@ -319,4 +319,4 @@ Si tiene problemas al exportar o eliminar datos desde Azure Portal, vaya a la ho
 
 ## <a name="learn-more"></a>Más información
 
-- [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

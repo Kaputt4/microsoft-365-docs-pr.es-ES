@@ -1,7 +1,7 @@
 ---
 title: Centros de administración y portales de seguridad de Microsoft
 description: Busque el portal o el centro de administración de Microsoft adecuado para administrar varios servicios relacionados con la seguridad de Microsoft 365
-keywords: seguridad, portales, Microsoft 365, M365, centro de seguridad, centro de administración, dirección URL, vínculo, MTP, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, OATP, AATP
+keywords: seguridad, portales, Microsoft 365, M365, centro de seguridad, centro de administración, dirección URL, vínculo, MTP, ATP de Microsoft, centro de seguridad de Microsoft defender, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, OATP, AATP, Cloud App Security, Azure AD, Security & el centro de cumplimiento
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 24bfd07b4b7baf9082ef99691fb1048e1f0b655e
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 98bfa8da792bfc5b75d1a2532492c2de6071f1b1
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42336923"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558241"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Centros de administración y portales de seguridad de Microsoft
-Mientras que el [centro de seguridad 365 de Microsoft](overview-security-center.md) es el nuevo hogar para supervisar y administrar la seguridad en todas sus identidades, datos, dispositivos, aplicaciones, necesitará tener acceso a varios portales para determinadas tareas especializadas.
+Mientras que el [centro de seguridad 365 de Microsoft](overview-security-center.md) es el nuevo hogar para supervisar y administrar la seguridad en las identidades, los datos, los dispositivos y las aplicaciones, necesitará tener acceso a varios portales para determinadas tareas especializadas.
 
 > [!TIP] 
 > Para tener acceso a varios portales relevantes desde el centro de seguridad 365 de Microsoft, seleccione **más recursos** en el panel de navegación.

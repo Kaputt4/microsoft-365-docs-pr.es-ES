@@ -17,17 +17,17 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365 para seguir analizando la herramienta eDiscovery avanzada.
-ms.openlocfilehash: 3ba115cf45aa3be7b9cb43b3a261687e073edba2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 01a09da78198c31ff88b0e539ae9b149b2fbdd02
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071027"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557860"
 ---
-# <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos de Office 365
+# <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!IMPORTANT]
-> Mientras seguimos invirtiendo en las versiones más recientes de Advanced eDiscovery, anunciamos la retirada de eDiscovery avanzado de Office 365 (también conocido como *eDiscovery avanzado v1.0*). Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos el retiro de Office 365 Advanced eDiscovery, conocido también como *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
 
 Una vez que se haya ejecutado correctamente una búsqueda asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento, podrá preparar los resultados de la búsqueda para un análisis más avanzado con la exhibición de documentos electrónicos de Office 365 Advanced eDiscovery, que le permitirá analizar conjuntos de datos grandes y sin estructurar y reducir la cantidad de datos que son relevantes para un caso legal. Las características avanzadas de eDiscovery incluyen:
   
@@ -110,7 +110,7 @@ Una vez finalizada la preparación, el siguiente paso es ir a la exhibición ava
     
 ## <a name="next-steps"></a>Pasos siguientes
 
-Una vez que se agregan los resultados de una búsqueda de exhibición de documentos electrónicos a un caso, el siguiente paso consiste en usar las herramientas avanzadas de eDiscovery para analizar los datos e identificar el contenido que responde a un caso legal específico. Para obtener información sobre el uso de la exhibición avanzada de documentos electrónicos, vea [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md).
+Una vez que se agregan los resultados de una búsqueda de exhibición de documentos electrónicos a un caso, el siguiente paso consiste en usar las herramientas avanzadas de eDiscovery para analizar los datos e identificar el contenido que responde a un caso legal específico. Para obtener información acerca del uso de la exhibición avanzada de documentos electrónicos, vea [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md).
   
 ## <a name="more-information"></a>Más información
 

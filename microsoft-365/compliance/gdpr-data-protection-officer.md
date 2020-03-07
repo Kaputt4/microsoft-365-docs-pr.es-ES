@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 2b37cce37db01c664a51327ac3d2a0d34ecc21a7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8e517db11806085339f6f431c9b942b468a211ed
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073847"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558070"
 ---
 # <a name="microsofts-data-protection-officer"></a>Responsable de la protección de datos de Microsoft
 
@@ -57,4 +57,4 @@ La autoridad de control de Microsoft posee la información de contacto del respo
 
 ## <a name="learn-more"></a>Más información
 
-- [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

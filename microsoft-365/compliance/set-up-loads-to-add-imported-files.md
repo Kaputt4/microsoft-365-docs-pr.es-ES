@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar el aprendizaje de relevancia en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3dd302e107b10726dd0110dfcb19bf59a3703add
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081106"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557770"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos de Office 365
+# <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -138,7 +138,7 @@ Las cargas graduales y la funcionalidad de puesta en marcha varían de la siguie
     
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Definir asuntos y asignar usuarios](define-issues-and-assign-users.md)
   

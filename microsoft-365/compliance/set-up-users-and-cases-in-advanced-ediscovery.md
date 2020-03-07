@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Obtenga información sobre cómo configurar roles de usuario, crear casos y asignar usuarios a los casos en Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 754cc7d73fc3325c2525e3101d1378d55afea4de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76d5e6ab503cc053e31811cc06ac12545a9eeb7e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601457"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557760"
 ---
-# <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurar usuarios y casos en la exhibición de documentos electrónicos avanzada de Office 365
+# <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>Configurar usuarios y casos en eDiscovery avanzado (Classic)
 
-En este tema se describe cómo configurar usuarios y casos para la exhibición avanzada de documentos electrónicos de Office 365.
+En este tema se describe cómo configurar usuarios y casos para la exhibición avanzada de documentos electrónicos (Classic).
   
 > [!IMPORTANT]
-> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos el retiro de Office 365 Advanced eDiscovery (también conocido como *Advanced eDiscovery v 1.0*). Si todavía está usando la exhibición avanzada de documentos electrónicos v 1.0, pase a la [versión más avanzada de eDiscovery 2.0](overview-ediscovery-20.md) (también denominada *solución de exhibición avanzada de documentos electrónicos en Microsoft 365*) lo antes posible. EDiscovery avanzado 2,0 contiene una funcionalidad similar que se encuentra en eDiscovery avanzado v 1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información acerca de la retirada de eDiscovery avanzado v 1.0, consulte [jubilación de las herramientas de eDiscovery heredadas](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos el retiro de Office 365 Advanced eDiscovery, conocido también como *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -61,7 +61,7 @@ Después de crear un caso de exhibición de documentos electrónicos y agregar m
   
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Preparar datos](prepare-data-for-advanced-ediscovery.md)
  

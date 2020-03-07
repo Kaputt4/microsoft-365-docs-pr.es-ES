@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42552044"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557592"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -36,7 +36,7 @@ Y visite el [mapa de ruta de microsoft 365](https://www.microsoft.com/en-us/micr
 
 ### <a name="insider-risk-management-is-officially-released"></a>Se ha lanzado oficialmente la administración de riesgos de Insider
 
-Rollo de tambor, por... La administración de riesgos de Insider ahora está disponible para las organizaciones con las siguientes suscripciones:
+Rollo de tambor, por...<br>La administración de riesgos de Insider ahora está disponible para las organizaciones con las siguientes suscripciones:
 
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (pago o de prueba)
 - Suscripción a Microsoft 365 Enterprise E3 con el [complemento de cumplimiento de Microsoft E5](https://go.microsoft.com/fwlink/?linkid=2120432)
@@ -47,7 +47,7 @@ Como siempre, envíe sus comentarios a medida que use la solución para que poda
 
 ### <a name="records-management"></a>Administración de registros
 
-Esta nueva solución trae todas las capacidades de administración de registros en un solo paraguas. Los elementos destacados incluyen la introducción de versiones de registros para SharePoint y OneDrive y la prueba de eliminación de registros.
+Esta nueva solución aporta todas las capacidades de administración de registros bajo un solo paraguas. Los elementos destacados incluyen la introducción de versiones de registros para SharePoint y OneDrive y la prueba de eliminación de registros.
 
 ![Página de administración de registros en el centro de cumplimiento de Microsoft 365](../media/mcc-records-management-page.png)
 
@@ -55,7 +55,7 @@ Esta nueva solución trae todas las capacidades de administración de registros 
 
 ### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>Información destacada de la solución: conectores de datos para Facebook y Twitter
 
-Los conectores de datos se [publicaron el mes pasado](#just-launched) y estamos buscando ayuda en la prueba de los siguientes conectores para validar su funcionamiento como se esperaba.
+Los conectores de datos se [publicaron el mes pasado](#just-launched) y estamos buscando ayuda en la prueba de los siguientes conectores.
 
 - [Páginas empresariales de Facebook](archive-facebook-data-with-sample-connector.md). Importa y archiva datos de las páginas de empresa de Facebook a Microsoft 365. Beneficioso para las soluciones de cumplimiento como la administración de registros y la exhibición de documentos electrónicos.
 - [Twitter](archive-twitter-data-with-sample-connector.md). Importa y archiva datos de Twitter a Microsoft 365. Beneficioso para las soluciones de cumplimiento como la administración de registros y la exhibición de documentos electrónicos.

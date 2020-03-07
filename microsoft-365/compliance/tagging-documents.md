@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cd622430df4a636a9529a4d10ddc90057548a810
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1c0eaed5d5971a55e4e9851bac3133bcd961eb36
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081002"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557700"
 ---
 # <a name="tag-documents-in-a-review-set"></a>Etiquetar documentos en un conjunto de revisión
 
 La organización de contenido en un conjunto de revisión es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Esto incluye:
 
--  Selección de contenido innecesario
+- Selección de contenido innecesario
 
 - Identificación del contenido relevante
  
--  Identificación de contenido que debe ser revisado por un experto o un abogado
+- Identificación de contenido que debe ser revisado por un experto o un abogado
 
 Cuando expertos, abogados u otros usuarios revisan el contenido de un conjunto de revisión, se pueden capturar sus opiniones relacionadas con el contenido mediante el uso de etiquetas. Por ejemplo, si la intención es deseleccionar contenido innecesario, un usuario puede etiquetar documentos con una etiqueta como "sin respuesta". Una vez que se ha revisado y etiquetado el contenido, se puede crear una búsqueda de conjunto de revisión para excluir cualquier Contenido etiquetado como "sin respuesta", lo que elimina este contenido de los pasos siguientes en el flujo de trabajo de eDiscovery. El panel de etiquetas se puede personalizar para cada caso, de modo que las etiquetas puedan admitir el flujo de trabajo de revisión previsto.
 
@@ -39,13 +39,13 @@ Cuando expertos, abogados u otros usuarios revisan el contenido de un conjunto d
 
 La exhibición avanzada de documentos electrónicos proporciona dos tipos de etiquetas:
 
-- **Etiquetas de opción única** : limita a los usuarios a seleccionar una sola etiqueta dentro de un grupo. Esto puede ser útil para asegurarse de que los usuarios no seleccionan etiquetas conflictivas como "receptivo" y "sin respuesta". 
+- **Etiquetas de opción única** : limita a los usuarios a seleccionar una sola etiqueta dentro de un grupo. Esto puede ser útil para asegurarse de que los usuarios no seleccionan etiquetas conflictivas como "receptivo" y "sin respuesta". Se mostrarán como botones de opción.
 
-- **Etiquetas de varias opciones** : permite a los usuarios seleccionar varias etiquetas dentro de un grupo.
+- **Etiquetas de varias opciones** : permite a los usuarios seleccionar varias etiquetas dentro de un grupo. Se mostrarán como casillas de verificación.
 
 ## <a name="tag-structure"></a>Estructura de etiquetas
 
-Además de los tipos de etiqueta, la estructura de las etiquetas que se organizan en el panel etiqueta se puede usar para que los documentos de etiquetado sean más intuitivos. Las etiquetas se agrupan por secciones. revisión Set Search admite la capacidad de buscar por etiqueta y por etiqueta. Esto significa que puede crear una búsqueda de conjunto de revisión para recuperar documentos etiquetados con cualquier etiqueta en una sección.
+Además de los tipos de etiqueta, la estructura de la forma en que se organizan las etiquetas en el panel etiqueta puede usarse para que los documentos de etiquetado sean más intuitivos. Las etiquetas se agrupan por secciones. Revisión Set Search admite la capacidad de buscar por etiqueta y por etiqueta. Esto significa que puede crear una búsqueda de conjunto de revisión para recuperar documentos etiquetados con cualquier etiqueta en una sección.
 
 ![Secciones de etiquetas en el panel etiqueta](../media/Tagtypes.png)
 
@@ -59,7 +59,7 @@ Hay varias formas de aplicar una etiqueta al contenido.
 
 ### <a name="tagging-a-single-document"></a>Etiquetado de un solo documento
 
-Al ver un documento en un conjunto de revisiones, puede mostrar las etiquetas que puede usar una revisión haciendo clic en **Panel de codificación**.
+Al ver un documento en un conjunto de revisiones, puede mostrar las etiquetas que puede usar una revisión haciendo clic en **Panel de etiquetado**.
 
 ![Haga clic en el panel de etiquetas para mostrar el panel de etiquetas](../media/Singledoctag.png)
 
@@ -67,7 +67,7 @@ Esto le permitirá aplicar etiquetas al documento que se muestra en el visor.
 
 ### <a name="bulk-tagging"></a>Etiquetado masivo
 
-La etiquetación en masa se puede realizar seleccionando varios archivos en la cuadrícula de resultados y, a continuación, usando las etiquetas en el **Panel de codificación** , de forma similar a la etiqueta de un único documento. Para realizar un etiquetado masivo, puede seleccionar las etiquetas dos veces; el primer clic aplicará la etiqueta y la segunda se asegurará de que la etiqueta se borre para todos los archivos seleccionados.
+La etiquetación en masa se puede realizar seleccionando varios archivos en la cuadrícula de resultados y, a continuación, usando las etiquetas en el **Panel de etiquetado** , de forma similar a la etiqueta de un único documento. Para realizar un etiquetado masivo, puede seleccionar las etiquetas dos veces; el primer clic aplicará la etiqueta y la segunda se asegurará de que la etiqueta se borre para todos los archivos seleccionados.
 
 ![Una captura de pantalla de una descripción de teléfono móvil generada automáticamente](../media/Bulktag.png)
 
@@ -76,16 +76,16 @@ La etiquetación en masa se puede realizar seleccionando varios archivos en la c
 
 ### <a name="tagging-in-other-review-panels"></a>Etiquetado en otros paneles de revisión
 
-Al revisar los documentos, puede usar los otros paneles de revisión para revisar otras características de los documentos en la cuadrícula de resultados. Esto incluye la revisión de otros documentos relacionados, subprocesos de correo electrónico, Near duplicados y duplicados de hash. Por ejemplo, cuando se revisan documentos relacionados (mediante el panel revisión de **familia de documentos** ), puede reducir significativamente el tiempo de revisión mediante la etiquetación en masa de los documentos relacionados. Por ejemplo, si un mensaje de correo electrónico tiene varios datos adjuntos y desea asegurarse de que toda la familia se etiquete de forma coherente.
+Al revisar los documentos, puede usar los otros paneles de revisión para revisar otras características de los documentos en la cuadrícula de resultados. Esto incluye la revisión de otros documentos relacionados, subprocesos de correo electrónico, Near duplicados y duplicados de hash. Por ejemplo, cuando está revisando documentos relacionados (mediante el panel revisión de **familia de documentos** ), puede reducir significativamente el tiempo de revisión mediante el etiquetado en masa de los documentos relacionados. Por ejemplo, si un mensaje de correo electrónico tiene varios datos adjuntos y desea asegurarse de que toda la familia se etiquete de forma coherente.
 
-Por ejemplo, aquí se muestra cómo mostrar el **Panel de codificación** al usar el panel revisión de **familia de documentos** :
+Por ejemplo, aquí se muestra cómo mostrar el **Panel de etiquetado** al usar el panel de revisión de la **familia de documentos** :
 
-1. Con el panel revisión abierto para un documento seleccionado (por ejemplo, mostrando la lista de contenido relacionado en el panel revisión de **familia de documentos** , haga clic en **documentos de código** en la parte superior del panel revisión actual).
+1. Con el panel revisión abierto para un documento seleccionado (por ejemplo, Mostrar la lista de contenido relacionado en el panel revisión de **familia de documentos** , haga clic en **etiquetar documentos** en el panel revisión de familia de documentos.
 
-   El panel de codificación se muestra como una ventana emergente.
+   El panel de etiquetado se muestra como una ventana emergente.
 
 2. Elija una o más etiquetas para aplicar el documento seleccionado. 
 
-3. Para etiquetar todos los documentos, seleccione todos los documentos en el panel de la **familia de documentos** , haga clic en **documentos de código**y, a continuación, elija las etiquetas que se aplicarán a toda la familia de documentos.
+3. Para etiquetar todos los documentos, seleccione todos los documentos en el panel de la **familia de documentos** , haga clic en **etiquetar documentos**y, a continuación, elija las etiquetas que se aplicarán a toda la familia de documentos.
 
 ![Captura de pantalla de una descripción de post de medio social generada automáticamente](../media/Relatedtag.png)

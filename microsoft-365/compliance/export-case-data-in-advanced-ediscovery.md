@@ -1,5 +1,7 @@
 ---
 title: Exportar datos de casos en Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: 'Comprenda las directrices para exportar datos de casos de eDiscovery y los resultados de la revisión mediante el proceso de exportación en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: 22713d38bf93f32a59646d6b0105f6c0cece69bd
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ced09e872ab1cf7f3f5a798a916357cb8016b797
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805813"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558221"
 ---
-# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>Exportar datos de casos en Office 365 Advanced eDiscovery
+# <a name="export-case-data-in-advanced-ediscovery-classic"></a>Exportar datos de casos en eDiscovery avanzado (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -37,7 +39,7 @@ El proceso de exportación en eDiscovery avanzado permite la exportación de con
     
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Exportar resultados](export-results-in-advanced-ediscovery.md)
   

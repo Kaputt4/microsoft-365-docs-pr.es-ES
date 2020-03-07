@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ca8389bf6a7622d4db98bdf7422aea85942e8978
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078157"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556778"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Revisar las conversaciones en eDiscovery avanzado 
 
@@ -79,8 +79,6 @@ Al agregar datos de conversaciones a un conjunto de revisión, puede usar las op
   
 3. Una vez agregados los elementos al conjunto de revisión, puede revisar todos los mensajes individuales de *CRC1*. 
 
-
-
 Para habilitar la recuperación de conversaciones:
   
 1. En la pestaña **búsquedas** en el caso de eDiscovery avanzado, seleccione una búsqueda y, a continuación, haga clic en **Agregar a conjunto de revisiones** en la página de flotante.
@@ -91,7 +89,7 @@ Para habilitar la recuperación de conversaciones:
   
 4. Una vez finalizado el trabajo **Agregar a la definición de revisión** en la ficha **trabajos** , puede iniciar la revisión de las conversaciones.
 
-## <a name="step-4-review-conversations-in-the-review-set"></a>Paso 4: revisar las conversaciones en el conjunto de revisiones
+## <a name="step-4-review-and-export-conversations-in-a-review-set"></a>Paso 4: revisar y exportar conversaciones en un conjunto de revisión
 
 Una vez que el contenido se ha procesado y agregado al conjunto de revisiones, puede iniciar la revisión de los datos en el conjunto de revisión. Las capacidades de revisión son diferentes en función de si el contenido se agregó a un conjunto de revisión estándar o un conjunto de revisión de conversación. 
 
@@ -129,7 +127,6 @@ En un conjunto de revisión de conversación, puede usar las siguientes opciones
 
 - **Volver a ejecutar la conversión de conversación:** Cuando se agregan mensajes a un conjunto de revisión de conversación, se ejecuta automáticamente un trabajo de conversión para crear las vistas de Resumen y anotaciones de conversaciones. Si se produce un error en el trabajo de reconstrucción de conversaciones, puede volver a ejecutar este trabajo haciendo clic en **acción > crear una conversación en PDF** en el conjunto de revisión.
 
-
 #### <a name="exporting-conversations"></a>Exportar conversaciones
 
 En un conjunto de revisión de conversación, puede establecer las siguientes opciones para exportar conversaciones:
@@ -161,7 +158,7 @@ c. Otras opciones
 
 Para obtener más información sobre cómo revisar los datos de casos en la exhibición avanzada de documentos electrónicos, vea los siguientes artículos:
 
-- [Ver datos de casos](view-documents-in-review-set.md) 
+- [Ver datos de casos](view-documents-in-review-set.md)
 
 - [Analizar datos de casos](analyzing-data-in-review-set.md)
 

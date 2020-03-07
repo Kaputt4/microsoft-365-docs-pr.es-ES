@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e9efb9117acba88b4baa8d91d8b3af2a1dc82049
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 05bf6a14e27e716e4e30b6ad3715f3cdd4f49eec
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594480"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558141"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Lista de comprobación de preparación de responsabilidad del soporte técnico y los servicios profesionales de Microsoft para RGPD
 
@@ -145,4 +145,4 @@ Consideración para el cliente (6.3)*** | El cliente debe definir (dentro de su 
 
 ## <a name="learn-more"></a>Más información
 
-- [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

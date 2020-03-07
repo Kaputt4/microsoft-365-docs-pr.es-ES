@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: 'Obtenga información sobre cómo usar la pestaña prueba tras el cálculo por lotes en Office 365 Advanced eDiscovery para probar, comparar y validar la calidad general de procesamiento.  '
-ms.openlocfilehash: e07d02a0eff1e07cacbce5debd27d4057fe40db2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c65c10878bdc057a1c53c4370f6a6750e1fe8e9d
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080947"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557690"
 ---
-# <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Análisis de relevancia de pruebas en Office 365 Advanced eDiscovery
+# <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Análisis de relevancia de prueba en eDiscovery avanzado (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -112,7 +112,7 @@ La prueba "probar el sector" realiza una prueba similar a la prueba "probar el r
     
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

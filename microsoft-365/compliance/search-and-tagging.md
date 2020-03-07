@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: En eDiscovery avanzado, el módulo de búsqueda y etiquetado le permite buscar, obtener una vista previa y organizar los documentos en su caso. Actualmente, este módulo está en versión beta.
-ms.openlocfilehash: a3597cf0abad7095de7a7c6857052f269d202598
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 012154e117e0d2b800f0e1077d43f2e1c1d10b0e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081407"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557810"
 ---
 # <a name="search-and-tagging"></a>Búsqueda y etiquetado
 
@@ -75,7 +75,7 @@ Para obtener más información acerca de las propiedades que permiten búsquedas
   
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 'Obtenga información sobre cómo ejecutar un informe y, a continuación, descargar el archivo. csv en la exhibición avanzada de documentos electrónicos de Office 365.  '
-ms.openlocfilehash: badc657e100961ba89de6a49349b7016ae790b09
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1ca01fc0ab77ec0a727029c3f8ef680a56f9c5c6
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069997"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557840"
 ---
-# <a name="run-reports-in-office-365-advanced-ediscovery"></a>Ejecutar informes en Office 365 Advanced eDiscovery
+# <a name="run-reports-in-advanced-ediscovery-classic"></a>Ejecutar informes en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -44,5 +44,4 @@ Puede descargar un archivo. csv con un informe para el proceso seleccionado.
     
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
-
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)

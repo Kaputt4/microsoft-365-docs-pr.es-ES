@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Revise los pasos para configurar las opciones del proceso analizar en la exhibición avanzada de documentos electrónicos de Office 365, incluidos los subduplicados, los subprocesos de correo electrónico y los temas.  '
-ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8897099d7531b48f7c6618c106eeb6f051dac546
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081166"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557790"
 ---
-# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Establecer las opciones de análisis en Office 365 Advanced eDiscovery
+# <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Establecer las opciones de análisis en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -78,7 +78,7 @@ Una vez establecidas estas opciones, haga clic en **analizar** para ejecutar. Se
   
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Descripción de la similitud de documentos](understand-document-similarity-in-advanced-ediscovery.md)
   

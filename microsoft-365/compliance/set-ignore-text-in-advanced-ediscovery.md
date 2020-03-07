@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Obtenga información sobre cómo definir la regla para omitir texto específico cuando use los módulos Analyze y Process en Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 440393061fef9b5a3c946322307fcafd034be81c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0253ce619901e5fec34da234e005f2c3b6ece090
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081145"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557780"
 ---
-# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Establecer la opción omitir texto para analizar en Office 365 Advanced eDiscovery
+# <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Establecer la opción omitir texto para analizar en eDiscovery avanzado (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -126,7 +126,7 @@ Las expresiones regulares se pueden usar al definir omitir texto. A continuació
   
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Descripción de la similitud de documentos](understand-document-similarity-in-advanced-ediscovery.md)
   

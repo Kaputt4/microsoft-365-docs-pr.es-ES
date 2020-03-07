@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Obtenga información sobre cómo ejecutar el modo de análisis rápido de Office 365 Advanced eDiscovery
-ms.openlocfilehash: 49e8f04b893f0a15563cf091c728352a97c4141f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d4b8e1fa5e8251f5ede2d9a3003c756decac3b45
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080755"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557648"
 ---
-# <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Usar el análisis rápido en Office 365 Advanced eDiscovery
+# <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Usar el análisis rápido en eDiscovery avanzado (clásico) 
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -132,5 +132,5 @@ Elija **Aceptar**para guardar la configuración avanzada, **restaurar los valore
 ## <a name="see-also"></a>Vea también
 <a name="BK_AdvancedSettings"> </a>
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
 

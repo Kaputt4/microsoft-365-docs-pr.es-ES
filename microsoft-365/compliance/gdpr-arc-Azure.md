@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ef8a7695e3e54acda069f73eea88fd54b292ba8a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: c815d2691c5f2aa344775b2fcaccc9512fc4ce36
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353941"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558171"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Lista de comprobación de preparación de responsabilidad de Azure para RGPD
 
@@ -151,5 +151,5 @@ Para obtener más documentación relacionada con el RGPD, visite [https://aka.ms
 
 ## <a name="learn-more"></a>Más información
 
-- [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Portal de confianza segura](https://aka.ms/gdprgetstarted)

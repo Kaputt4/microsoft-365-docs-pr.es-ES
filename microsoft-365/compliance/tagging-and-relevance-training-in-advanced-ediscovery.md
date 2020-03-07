@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de formación de relevancia de Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6362aef6f4e0e17b39429dfeebca796d58d2d13e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069587"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557720"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Aprendizaje de la etiqueta y la relevancia en Office 365 Advanced eDiscovery
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Aprendizaje de la etiqueta y la relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -50,7 +50,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
 |-----|-----|-----|-----|
 |R  <br/> |Metabolito  <br/> |Z  <br/> |Mayús + Z  <br/> |
 |Nº  <br/> |No relevante  <br/> |X  <br/> |Mayús + X  <br/> |
-|Skip  <br/> |Skip  <br/> |C  <br/> |Mayús + A  <br/> |
+|Avanzar  <br/> |Avanzar  <br/> |C  <br/> |Mayús + A  <br/> |
    
   - Cuando hay varios problemas para un archivo, después de marcar un problema, la selección se mueve al siguiente problema (si lo hay). 
     
@@ -100,7 +100,7 @@ La lista de archivos de muestra le permite ver una lista de los archivos en un e
     
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

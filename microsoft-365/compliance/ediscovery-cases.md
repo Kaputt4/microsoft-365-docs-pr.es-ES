@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más adelante en eDiscovery avanzado de Office 365.
-ms.openlocfilehash: 22547a69b78e8ca8497dd2e2a6ae5d77f913a08f
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409745"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557754"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
@@ -59,7 +59,7 @@ Use el siguiente flujo de trabajo para configurar y usar casos de exhibición de
 
 El primer paso consiste en asignar los permisos adecuados relacionados con eDiscovery a los usuarios para que pueda agregarlos a un caso de exhibición de documentos electrónicos en el paso 2. Debe ser miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de roles) en el centro de seguridad & cumplimiento para asignar permisos de exhibición de documentos electrónicos. En la lista siguiente se describen los grupos de roles relacionados con la exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. 
   
-- **Revisor.** Este grupo de roles tiene los permisos más restrictivos relacionados con la exhibición de documentos electrónicos. El objetivo principal de este grupo de roles es permitir a los miembros ver y obtener acceso a los datos de caso en [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md) (también conocido como *eDiscovery avanzado v1*). Los miembros de este grupo solo pueden ver y abrir la lista de los casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad y cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en eDiscovery avanzado. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de la búsqueda, exportar resultados de la búsqueda o preparar los resultados para la exhibición avanzada de documentos electrónicos. 
+- **Revisor.** Este grupo de roles tiene los permisos más restrictivos relacionados con la exhibición de documentos electrónicos. El objetivo principal de este grupo de roles es permitir a los miembros ver y obtener acceso a los datos de caso en [eDiscovery avanzado (](office-365-advanced-ediscovery.md) también conocido como *eDiscovery avanzado v1*). Los miembros de este grupo solo pueden ver y abrir la lista de los casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad y cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en eDiscovery avanzado. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de la búsqueda, exportar resultados de la búsqueda o preparar los resultados para la exhibición avanzada de documentos electrónicos. 
 
    > [!NOTE]
    > En este momento, los usuarios que son miembros del grupo de roles Reviewer no pueden tener acceso a los datos de [eDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md) (también conocido como *eDiscovery avanzado V2*). Para agregar miembros a un caso en eDiscovery avanzado v2 para que puedan revisar los datos de caso, un usuario debe ser miembro del grupo de roles eDiscovery Manager.
