@@ -16,29 +16,29 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Puede aplicar etiquetas en Microsoft Teams, en grupos de Office 365 y en sitios de SharePoint.
-ms.openlocfilehash: 1e08df688a62d6c15ef0100b5379e62482ed7b50
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Office 365.
+ms.openlocfilehash: 934999f3c1b55c738ebc30eb9b87c65c5cc08376
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372038"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550427"
 ---
-# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)
+# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Office 365 y los sitios de SharePoint (versión preliminar pública)
 
-Al crear etiquetas de confidencialidad en el [Centro de cumplimiento de Microsoft 365](https://protection.office.com/), ahora puede aplicarlas a los siguientes contenedores: Microsoft Teams, grupos de Office 365 y sitios de SharePoint. Utilice la configuración de la etiqueta para controlar las siguientes opciones de estos contenedores:
+Al crear etiquetas de confidencialidad en el [Centro de cumplimiento de Microsoft 365](https://protection.office.com/), ya puede aplicarlas a los siguientes contenedores: sitios de Microsoft Teams, grupos de Office 365 y sitios de SharePoint. Use la siguiente configuración de etiqueta para ayudar a proteger el contenido de estos contenedores:
 
 - La privacidad (pública o privada) de los sitios de los equipos conectados a grupos de Office 365
 - Acceso de usuarios externos
 - Acceso desde dispositivos no administrados 
 
-Cuando aplica esta etiqueta a uno de los contenedores compatibles, la etiqueta aplica automáticamente las opciones configuradas en el sitio de SharePoint o en el sitio de grupo conectado. 
+Cuando aplica esta etiqueta a un contenedor compatible, la etiqueta aplica automáticamente las opciones configuradas al grupo o sitio conectado. 
 
-Sin embargo, el contenido de esos contenedores no hereda las etiquetas para configuraciones como el nombre de la etiqueta, las marcas visuales o el cifrado. Para etiquetar archivos en sitios de SharePoint o sitios de grupo, [habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Sin embargo, el contenido de esos contenedores no hereda las etiquetas para configuraciones como el nombre de la etiqueta, las marcas visuales o el cifrado. Para que los usuarios puedan etiquetar los documentos en sitios de SharePoint o sitios de grupo, [habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>Acerca de la versión preliminar pública para Microsoft Teams, grupos de Office 365 y sitios de SharePoint
 
-Las etiquetas de confidencialidad de Microsoft Teams, grupos de Office 365 y sitios de SharePoint se están introduciendo gradualmente para los inquilinos y es posible que haya cambios antes de la versión final. Esta versión preliminar pública no funciona con las redes de entrega de contenido (CDN) de Office 365.
+Las etiquetas de confidencialidad de Microsoft Teams, grupos de Office 365 y sitios de SharePoint se están introduciendo gradualmente para los espacios empresariales y es posible que haya cambios antes de la versión final. Esta versión preliminar pública no funciona con las redes de entrega de contenido (CDN) de Office 365.
 
 Antes de habilitar esta versión preliminar y configurar las etiquetas de confidencialidad para la nueva configuración, los usuarios pueden ver y aplicar etiquetas de confidencialidad en sus aplicaciones. Por ejemplo, en Word:
 
@@ -77,9 +77,11 @@ Si necesita ayuda para crear o editar una etiquetas de confidencialidad, vea las
 
 En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 
-- **Privacidad de los sitios de equipos conectados a grupos de Office 365**: la configuración predeterminada como **pública** está seleccionada automáticamente, lo que significa que cualquier persona de su organización puede tener acceso al sitio de grupo en el que se aplica esta etiqueta. Seleccione **Privado** cuando quiera que solo los miembros aprobados en la organización tengan acceso al sitio de grupo del grupo. 
+- **Privacidad de los sitios de equipos conectados a grupos de Office 365**: la configuración predeterminada de **Ninguna, permitir que el usuario elija quién puede tener acceso al sitio** se está implementando actualmente para los espacios empresariales. Mantenga esta configuración predeterminada cuando desee proteger el contenido del contenedor mediante el uso de la etiqueta de confidencialidad, pero permita que los usuarios configuren la configuración de privacidad ellos mismos.
     
-    La configuración seleccionada reemplaza a la configuración de privacidad anterior que puede estar configurada para el grupo y bloquea el valor de privacidad, para que solo se pueda modificar quitando primero la etiqueta de confidencialidad del sitio o grupo de equipo. Después de quitar la etiqueta de confidencialidad, la configuración de privacidad de la etiqueta permanece y ahora puede cambiarla si es necesario.
+    Seleccione **Pública** o**Privada** para establecer y bloquear la configuración de privacidad cuando aplica esta etiqueta al contenedor. Elija **Pública** si desea que alguien de su organización acceda al sitio del grupo o equipo donde se aplica esta etiqueta, o **Privada** si desea que el acceso esté restringido solo a miembros aprobados en su organización. 
+    
+    La configuración **Pública** o **Privada** reemplaza cualquier configuración de privacidad anterior que pueda configurarse para el equipo o grupo, y bloquea el valor de privacidad para que solo se pueda cambiar quitando primero la etiqueta de confidencialidad del contenedor. Después de quitar la etiqueta de confidencialidad, la configuración de privacidad de la etiqueta permanece y los usuarios ya pueden cambiarla de nuevo.
 
 - **Acceso de usuarios externos**: controla si el propietario del grupo puede [agregar invitados al grupo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
@@ -90,9 +92,11 @@ En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 > [!IMPORTANT]
 > La configuración de sitio y grupo solo surte efecto al aplicar una etiqueta a un equipo, grupo o sitio. El resto de opciones de configuración de etiqueta, como el cifrado y la marcación de contenido, no se aplican a todo el contenido del equipo, grupo o sitio.
 > 
-> De forma similar, si crea una etiqueta y no activa la configuración de sitio y de grupo, la etiqueta seguirá estando disponible cuando los usuarios creen equipos, grupos y sitios, pero solo se aplicará el nombre de la etiqueta.
+> Implementación gradual en espacios empresariales: solo las etiquetas con la configuración de sitio y de grupo estarán disponibles para seleccionarlas cuando los usuarios creen equipos, grupos y sitios. Si actualmente puede aplicar una etiqueta a un contenedor cuando la etiqueta no tiene habilitadas las configuraciones de sitio y grupo, solo se aplica el nombre de la etiqueta al contenedor.
 
 Si la etiqueta de confidencialidad aún no se ha publicado, publíquela [agregándola a una directiva de etiqueta de confidencialidad](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). Los usuarios que tienen asignada una directiva de etiqueta de confidencialidad que incluye esta etiqueta podrán seleccionarla para sitios y grupos.
+
+En la Directiva de etiqueta, solo la configuración de directiva **aplicar esta etiqueta de forma predeterminada a los documentos y el correo electrónico** es aplicable cuando se aplica esta etiqueta a contenedores. No se aplican otras opciones de configuración de Directiva, como la etiqueta obligatoria, que requiere la justificación del usuario y un vínculo a la página de ayuda personalizada.
 
 ## <a name="sensitivity-label-management"></a>Administración de etiquetas de confidencialidad
 
@@ -115,7 +119,7 @@ Una vez se crea y se publica una etiqueta de confidencialidad, puede tardar hast
 
 **Modificar y eliminar etiquetas publicadas:**
 
-Si modifica o elimina una etiqueta de confidencialidad incluida en una o varias directivas de etiquetas, estas acciones pueden ocasionar errores en la creación de todos los equipos, grupos y sitios. Para evitarlo, siga las instrucciones que se indican a continuación:
+Si modifica o elimina una etiqueta de confidencialidad con la configuración del sitio y del grupo habilitada, y esa etiqueta se incluye en una o más directivas de etiquetas, estas acciones pueden provocar fallas de creación para todos los equipos, grupos y sitios. Para evitarlo, siga las instrucciones que se indican a continuación:
 
 1. Elimine la etiqueta de confidencialidad de todas las directivas de etiqueta que la incluyan.
 
@@ -137,7 +141,7 @@ Ya está listo para aplicar la etiqueta o las etiquetas de confidencialidad a lo
 
 ## <a name="apply-a-sensitivity-label-to-a-new-team"></a>Aplicar una etiqueta de confidencialidad a un nuevo equipo
 
-Los usuarios pueden seleccionar etiquetas de confidencialidad al crear nuevos equipos en Microsoft Teams. Cuando seleccionan el nivel de confidencialidad, la configuración de privacidad cambia según las necesidades. En función de la configuración de acceso de usuarios externos que haya seleccionado para la etiqueta, los usuarios pueden o no, agregar al equipo personas de fuera de la organización.
+Los usuarios pueden seleccionar etiquetas de confidencialidad al crear nuevos equipos en Microsoft Teams. Al seleccionar la etiqueta en la lista desplegable **confidencialidad**, es posible que la configuración de privacidad cambie para reflejar la configuración de la etiqueta. En función de la configuración de acceso de usuarios externos que haya seleccionado para la etiqueta, los usuarios pueden o no, agregar al equipo personas de fuera de la organización.
 
 [Más información sobre las etiquetas de confidencialidad para Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
@@ -157,13 +161,13 @@ En Outlook en la Web, al crear un grupo, puede seleccionar o cambiar la opción 
 
 ## <a name="apply-a-sensitivity-label-to-a-new-site"></a>Aplicar una etiqueta de confidencialidad a un nuevo sitio
 
-Los administradores y los usuarios finales pueden seleccionar etiquetas de confidencialidad cuando [crean sitios de grupo y de comunicación modernos](/sharepoint/create-site-collection).
-
-Cuando los usuarios crean sitios modernos de equipo y comunicación, ya hay una etiqueta de confidencialidad seleccionada de forma predeterminada. Los usuarios pueden seleccionar el icono de ayuda para obtener más información sobre las etiquetas.
+Los administradores y los usuarios finales pueden seleccionar las etiquetas de confidencialidad cuando [crean sitios de grupo y de comunicación modernos](/sharepoint/create-site-collection) y expandir la **configuración avanzada**:
 
 ![Crear un sitio y seleccionar una opción en Confidencialidad](../media/sensitivity-label-new-communication-site.png)
 
-Cuando los usuarios exploren el sitio, podrán ver el nombre de la etiqueta y las directivas aplicadas.
+En el cuadro desplegable se mostrarán los nombres de etiqueta de la selección, y en el icono de ayuda se mostrarán todos los nombres de etiqueta con la información sobre herramientas, que puede ayudar a los usuarios a determinar la etiqueta correcta que debe aplicar.
+
+Cuando los usuarios exploren el sitio, podrán ver el nombre de la etiqueta y las directivas aplicadas. Por ejemplo, este sitio se ha etiquetado como **confidencial** y la configuración de privacidad se ha establecido en **privada**:
 
 ![Un sitio en el que se ha aplicado una etiqueta de confidencialidad](../media/sensitivity-label-site.png)
 
@@ -319,14 +323,10 @@ Para obtener instrucciones sobre cómo buscar el registro de auditoría, vea [bu
 ¿Tiene problemas con las etiquetas de confidencialidad de Microsoft Teams, Grupos de Office 365 y sitios de SharePoint? Compruebe lo siguiente:
 
 ### <a name="labels-not-visible-after-publishing"></a>Las etiquetas no son visibles tras su publicación
-Si tiene problemas al crear un equipo o grupo de Office 365 después de habilitar estas opciones de configuración o modificar la descripción de una etiqueta de confidencialidad, espere unas horas después de guardar los cambios en la etiqueta y, después, intente crear de nuevo el equipo o grupo. Para obtener más información, consulte [Programar la implementación tras crear o cambiar una etiqueta de confidencialidad](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
+Si experimenta problemas al crear un sitio o un grupo de Office 365 después de habilitar esta configuración o modificar el nombre o la información sobre herramientas de una etiqueta de confidencialidad, espere unas horas después de guardar los cambios en la etiqueta y luego intente crear el equipo o grupo nuevamente. Para obtener más información, consulte [Programar la implementación tras crear o cambiar una etiqueta de confidencialidad](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
 
-Si sigue sin poder ver la nueva etiqueta de confidencialidad desde SharePoint Online, póngase en contacto con el [Soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Si sigue sin poder ver la nueva etiqueta de confidencialidad de SharePoint Online, póngase en contacto con el [Soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-### <a name="team-group-or-sharepoint-site-creation-errors"></a>Errores de creación de equipo, grupo o sitio de SharePoint
-Si experimenta errores de creación durante la versión preliminar pública, tiene dos opciones:
-
-- Asegúrese de que las etiquetas de confidencialidad no son obligatorias para algún usuario.
-
-- Puede desactivar las etiquetas de confidencialidad de Microsoft Teams, los grupos de Office 365 y los sitios de SharePoint siguiendo las mismas instrucciones que se indican en [Habilitar la compatibilidad con las etiquetas de confidencialidad en PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Sin embargo, para deshabilitar la versión preliminar, en el paso 5, deshabilite la característica con `$setting["EnableMIPLabels"] = "False"`.
+### <a name="team-group-or-sharepoint-site-creation-errors"></a>Errores de creación de Teams, grupo o sitio de SharePoint
+Si experimenta errores de creación durante la versión preliminar pública, puede desactivar las etiquetas de confidencialidad para Microsoft Teams, grupos de Office 365 y sitios de SharePoint utilizando las mismas instrucciones de [Habilitar la compatibilidad de etiquetas de confidencialidad en PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Sin embargo, para deshabilitar la versión preliminar, en el paso 5, deshabilite la característica con `$setting["EnableMIPLabels"] = "False"`.
 
