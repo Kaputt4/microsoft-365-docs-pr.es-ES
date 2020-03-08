@@ -19,18 +19,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Obtenga información sobre cómo comprobar que la configuración de protección de aplicaciones empresariales de Microsoft 365 surta efecto en los dispositivos Windows 10 de los usuarios.
-ms.openlocfilehash: 1b661b41a8042e81f653463cbd32fc6bf6428b53
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 47977f8d79eb6dbb2f4d087af8f8ad7da4313c61
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549965"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560688"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de dispositivos en equipos con Windows 10
 

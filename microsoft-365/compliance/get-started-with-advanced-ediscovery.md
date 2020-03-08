@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo empezar a usar la exhibición avanzada de documentos electrónicos en Microsoft 365. Una vez que haya completado algunos pasos rápidos, la herramienta eDiscovery avanzado estará lista para usarse. El primer paso consiste en crear un caso y, a continuación, empezar a usar las funciones y características de eDiscovery avanzadas.
-ms.openlocfilehash: b351524f1bcaa54360d9f7422c0955c5c4a35254
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 2819fdd2f3b98ca82535aa0f08830bb37744c3f7
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557924"
+ms.locfileid: "42561670"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introducción a la exhibición avanzada de documentos electrónicos
 
@@ -94,7 +94,7 @@ Para obtener más información acerca de los permisos de exhibición de document
 
 ## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>Paso 3: configurar las opciones globales de eDiscovery avanzado
 
-El último paso para completar antes de que los usuarios de la organización comiencen a crear y a usar casos es configurar las opciones globales que se aplican a todos los casos de la organización. En este momento, la única configuración global que está disponible es la *detección de privilegios de clientes de abogados* (la configuración global estará disponible en el futuro). Esta configuración permite que el modelo de privilegios abogado-Client se ejecute al analizar datos en un conjunto de revisión. El modelo usa el aprendizaje de la máquina para determinar la probabilidad de que un documento incluya contenido que sea legal por naturaleza. También compara los participantes de los documentos con una lista de abogados (que se envía al configurar el modelo) para determinar si un documento tiene al menos un participante que es un abogado.
+El último paso para completar antes de que los usuarios de la organización comiencen a crear y a usar casos es configurar las opciones globales que se aplican a todos los casos de la organización. En este momento, la única configuración global es *abogado-detección de privilegios de cliente* (más configuraciones globales estarán disponibles en el futuro). Esta configuración permite que el modelo de privilegios abogado-Client se ejecute al analizar datos en un conjunto de revisión. El modelo usa el aprendizaje de la máquina para determinar la probabilidad de que un documento incluya contenido que sea legal por naturaleza. También compara los participantes de los documentos con una lista de abogados (que se envía al configurar el modelo) para determinar si un documento tiene al menos un participante que es un abogado.
 
 Para obtener más información acerca de la configuración y el uso del modelo de detección de privilegios de clientes de abogados, consulte [set up abogado-Client Privilege Detection in Advanced eDiscovery](attorney-privilege-detection.md).
 
