@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Lea las recomendaciones para configurar el entrenamiento de Relevancia en eDiscovery avanzado de Office 365 con el fin de puntuar archivos según su relevancia y generar resultados de análisis.
-ms.openlocfilehash: 1a88d554d06b575f3efb0d01534008b6c35032e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 49c7614eb1fec4e61fb374fb637093fd6e860619
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600507"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557890"
 ---
-# <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Administrar la configuración de relevancia en eDiscovery avanzado de Office 365
+# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestionar la configuración de la relevancia en Advanced eDiscovery (clásico)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -73,7 +73,7 @@ Después de establecer los parámetros, el revisor o experto puede empezar a ent
   
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Definir asuntos y asignar usuarios](define-issues-and-assign-users.md)
   
