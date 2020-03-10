@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19907517f94cc8b6dbf041cccf56f1d8e232f2f
-ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
+ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374214"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569051"
 ---
-# <a name="deploy-supported-services"></a>Implementación de servicios admitidos
+# <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -36,9 +36,9 @@ ms.locfileid: "42374214"
 [Microsoft Threat Protection](microsoft-threat-protection.md) integra varios servicios de seguridad de Microsoft para proporcionar capacidades de detección, prevención e investigación centralizadas frente a ataques sofisticados. En este artículo se describen los servicios compatibles, sus requisitos de licencia, las ventajas y las limitaciones asociadas con la implementación de uno o más servicios, y vínculos a cómo puede implementarlos por completo de forma individual.
 
 ## <a name="supported-services"></a>Servicios admitidos
-La seguridad de [microsoft 365 E5, E5 Security, A5 o a5 o una combinación válida de licencias](prerequisites.md#licensing-requirements) proporciona acceso a los siguientes servicios admitidos y le da derecho a usar la protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365.
+Una [licencia de microsoft 365 E5, E5 o a5 o una combinación válida de licencias](prerequisites.md#licensing-requirements) proporciona acceso a los siguientes servicios admitidos y le da derecho a usar la protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365.
 
-| Servicio compatible | Descripción |
+| Servicio compatible | Description |
 | ------ | ------ |
 | ATP de Microsoft Defender | Conjunto de aplicaciones de Endpoint Protection creado alrededor de sensores de comportamiento poderosos, análisis de nube e inteligencia de amenazas |
 | ATP de Office 365 | Protección avanzada de sus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |

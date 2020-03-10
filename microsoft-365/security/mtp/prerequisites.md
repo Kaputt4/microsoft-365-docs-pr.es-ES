@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ef26a2ebc25d7f55e7dc22347d85767dab970536
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 3e18759387525ec600c24f74c96d6cddf206fc82
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372058"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569050"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Requisitos previos de la Protección contra amenazas de Microsoft
 
@@ -40,8 +40,6 @@ Para usar la protección contra amenazas de Microsoft, necesita *una* de las sig
 - Seguridad de Microsoft 365 E5
 - Office 365 E5 y "Enterprise Mobility + Security E5 (EMS E5)" y Windows E5
 - Microsoft 365 A5
-- Microsoft 365 A5 Security
-- Office 365 A5 y "Enterprise Mobility + Security A5 (EMS A5)" y Windows a5
 
 Para obtener más información, [vea los planes de servicio de Microsoft 365 Enterprise](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
