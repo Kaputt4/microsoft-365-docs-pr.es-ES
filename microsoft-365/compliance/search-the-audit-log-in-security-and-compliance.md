@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 2c69cc6f7e5b332819061e3bf92b9ab02a1dc8db
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42551825"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562048"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -340,7 +340,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |(ninguno)|FileModifiedExtended|Esto está relacionado con la actividad "Archivo modificado" (FileModified). Se registra un evento FileModifiedExtended cuando la misma persona modifica constantemente un archivo durante un largo período de tiempo (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileModifiedExtended es reducir el número de eventos FileModified que se registran cuando se modifica continuamente un archivo. Esto ayuda a reducir el ruido de varios registros de FileModified para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento FileModified inicial (el más importante).|
 |Archivo movido|FileMoved|El usuario mueve un documento de su ubicación actual en un sitio a una nueva ubicación.|
 |(ninguno)|FilePreviewed|El usuario obtiene la vista previa de un documento de SharePoint o de OneDrive para un sitio de Empresas. Estos sucesos suelen producirse en grandes volúmenes basándose en una sola actividad, como ver una galería de imágenes.|
-|Consulta de búsqueda realizada|SearchQueryPerformed|La cuenta del sistema o el usuario lleva a cabo una búsqueda en SharePoint o OneDrive para la Empresa. Entre los escenarios comunes en los que una cuenta de servicio lleva a cabo una consulta de búsqueda se incluye aplicar una retención de eDiscovery o una directiva de retención a sitios y cuentas de OneDrive, y cuando las etiquetas de retención o sensibilidad se aplican automáticamente al contenido del sitio. En muchos de estos casos, el nombre de la cuenta de servicio que se registra en el campo de Usuario del registro de auditoría es**app\@sharepoint**. </br></br> **Sugerencia:** los campos ApplicationDisplayName y EventData en el registro de auditoría de la Actividad de la consulta de búsqueda realizada pueden ayudarle a identificar el escenario o servicio que desencadenó este evento.|
+|Consulta de búsqueda realizada|SearchQueryPerformed|La cuenta del sistema o el usuario lleva a cabo una búsqueda en SharePoint o OneDrive para la Empresa. Entre los escenarios comunes en los que una cuenta de servicio lleva a cabo una consulta de búsqueda se incluye aplicar una directiva de retención de eDiscovery a los sitios y cuentas de OneDrive, y aplicar automáticamente etiquetas de retención o confidencialidad al contenido del sitio.|
 |Todas las versiones menores del archivo recicladas|FileVersionsAllMinorsRecycled|El usuario elimina todas las versiones secundarias del historial de versiones de un archivo. Las versiones eliminadas se mueven a la Papelera de reciclaje del sitio.|
 |Todas las versiones del archivo recicladas|FileVersionsAllRecycled|El usuario elimina todas las versiones del historial de versiones de un archivo. Las versiones eliminadas se mueven a la Papelera de reciclaje del sitio.|
 |Versión del archivo reciclada|FileVersionRecycled|El usuario elimina una versión del historial de versiones de un archivo. La versión eliminada se mueve a la Papelera de reciclaje del sitio.|
@@ -353,10 +353,25 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |(ninguno)|PagePrefetched|El cliente de un usuario (como el sitio web o la aplicación móvil) ha solicitado la página indicada para ayudar a mejorar el rendimiento si el usuario la explora. Este evento se registra para indicar que el contenido de la página se ha servido para el cliente del usuario. Este evento no es una indicación definitiva de que el usuario ha navegado hasta la página. <br/><br/> Cuando el cliente muestra el contenido de la página (de acuerdo con la solicitud del usuario), debe generarse un evento ClientViewSignaled. No todos los clientes son compatibles con la búsqueda previa, y por lo tanto, algunas actividades que se buscan previamente se pueden registrar como eventos PageViewed.|
 ||||
 
+#### <a name="the-appsharepoint-user-in-audit-records"></a>El usuario app\@sharepoint en los registros de auditoría
+
+En los registros de auditoría para actividades de archivo (y otras actividades relacionadas con SharePoint), puede que el usuario que aparezca como el autor de la actividad (identificado en los campos usuario y seudónimo) es app@sharepoint. Esto indica que el "usuario" que llevó a cabo la actividad era una aplicación. En este caso, se otorgó a la aplicación permisos en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. Este proceso de conceder permisos a una aplicación se denomina acceso *a SharePoint solo para aplicación*. Esto indica que la autenticación presentada en SharePoint para realizar una acción la realizó una aplicación, en lugar de un usuario. Por este motivo, el usuario app@sharepoint se identifica en ciertos registros de auditoría. Para obtener más información, lea [Conceder acceso a SharePoint solo para aplicación](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+
+Por ejemplo, app@sharepoint se identifica por lo general como el usuario para los eventos "Ha realizado una consulta de búsqueda" y "Archivo al que se obtuvo acceso". Esto se debe a que una aplicación que tenga acceso a SharePoint solo para aplicación, realiza consultas de búsqueda y obtiene acceso a los archivos cuando se apliquen directivas de retención a sitios y cuentas de OneDrive.
+
+Aquí se muestran algunos otros escenarios en los que se puede identificar app@sharepoint en un registro de auditoría como el usuario que realizó una actividad:
+
+- Grupos de Office 365 Cuando un usuario o un administrador crea un grupo nuevo, se generan registros de auditoría para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint. Estas tareas se ejecutan en una aplicación en nombre del usuario que creó el grupo.
+
+- Microsoft Teams. Como ocurre en los grupos de Office 365, cuando se crea un equipo se generan registros de auditoría para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint.
+
+- Características de cumplimiento. Estas se dan cuando un administrador implementa características de cumplimiento, como directivas de retención, suspensiones de eDiscovery y etiquetas de confidencialidad de aplicación automática.
+
+En estas y otras situaciones, verá que se crearon varios registros de auditoría con app@sharepoint como usuario específico en un período de tiempo muy breve, a menudo en unos pocos segundos. Esto indica que se activaron probablemente por la misma tarea iniciada por el usuario. Además, los campos ApplicationDisplayName y EventData del registro de auditoría pueden ayudarle a identificar el escenario o la aplicación que desencadenó el evento.
 
 ### <a name="folder-activities"></a>Actividades de carpetas
 
-La siguiente tabla describe las actividades de archivos y páginas en SharePoint en línea y OneDrive para empresas.
+La siguiente tabla describe las actividades de archivos y páginas en SharePoint en línea y OneDrive para empresas. Como se ha explicado anteriormente, los registros de auditoría de algunas actividades de SharePoint indicarán que el usuario app@sharepoint ha realizado la actividad en nombre de usuario o administrador que inició la acción. Para obtener más información, lea [El usuario app\@sharepoint en los registros de auditoría](#the-appsharepoint-user-in-audit-records).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -373,7 +388,7 @@ La siguiente tabla describe las actividades de archivos y páginas en SharePoint
 
 ### <a name="sharepoint-list-activities"></a>Lista de actividades de SharePoint
 
-En la siguiente tabla se describen las actividades relacionadas cuando los usuarios interactúan con listas y elementos de lista en SharePoint en línea.
+En la siguiente tabla se describen las actividades relacionadas cuando los usuarios interactúan con listas y elementos de lista en SharePoint en línea. Como se ha explicado anteriormente, los registros de auditoría de algunas actividades de SharePoint indicarán que el usuario app@sharepoint ha realizado la actividad en nombre de usuario o administrador que inició la acción. Para obtener más información, lea [El usuario app\@sharepoint en los registros de auditoría](#the-appsharepoint-user-in-audit-records).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -451,7 +466,7 @@ La siguiente tabla enumera la sincronización de archivos de actividades en Shar
 
 ### <a name="site-permissions-activities"></a>Actividades de sitios de permisos 
 
-La siguiente tabla enumera eventos relacionan asignar permisos en SharePoint con usar grupos para dar (y revocar) acceso a sitios.
+La siguiente tabla enumera eventos relacionan asignar permisos en SharePoint con usar grupos para dar (y revocar) acceso a sitios. Como se ha explicado anteriormente, los registros de auditoría de algunas actividades de SharePoint indicarán que el usuario app@sharepoint ha realizado la actividad en nombre de usuario o administrador que inició la acción. Para obtener más información, lea [El usuario app\@sharepoint en los registros de auditoría](#the-appsharepoint-user-in-audit-records).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -475,7 +490,7 @@ La siguiente tabla enumera eventos relacionan asignar permisos en SharePoint con
 
 ### <a name="site-administration-activities"></a>Actividades de administración del sitio
 
-En la tabla siguiente se enumeran los eventos que se producen de las tareas de administración del sitio en SharePoint en línea.
+En la tabla siguiente se enumeran los eventos que se producen de las tareas de administración del sitio en SharePoint en línea. Como se ha explicado anteriormente, los registros de auditoría de algunas actividades de SharePoint indicarán que el usuario app@sharepoint ha realizado la actividad en nombre de usuario o administrador que inició la acción. Para obtener más información, lea [El usuario app\@sharepoint en los registros de auditoría](#the-appsharepoint-user-in-audit-records).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
