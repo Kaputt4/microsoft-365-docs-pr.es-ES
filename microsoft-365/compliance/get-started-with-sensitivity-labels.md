@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: 3/05/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de etiquetas de confidencialidad para ayudar a proteger los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: eea03384b77dbcea29196c9f8142f748af0bf5be
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 3e9dd5c02b3502eab2d3abfe5d65b5baebe18cda
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557591"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "42569164"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -36,7 +36,7 @@ Cuando esté listo para empezar a proteger los datos de la organización mediant
 
 1. **Creación de las etiquetas.** Cree y asigne un nombre a las etiquetas de confidencialidad en función de la taxonomía de clasificación de su organización para distintos niveles de confidencialidad de contenido. Utilice nombres o términos comunes que tengan sentido para sus usuarios. Si aún no tiene una taxonomía establecida, considere la posibilidad de empezar por nombres de etiqueta como personal, público, general, confidencial y muy confidencial. Puede utilizar subetiquetas para agrupar etiquetas similares por categoría. Cuando se crea una etiqueta, use el texto de información sobre herramientas para ayudar a los usuarios a seleccionar la etiqueta apropiada.
     
-    Para una guía más extensa para definir una taxonomía de clasificación, descargue el libro blanco, "Clasificación de Datos y Taxonomía de Etiquetas de Sensibilidad" del[Portal de confianza de servicios](https://aka.ms/DataClassificationWhitepaper).
+    Para una guía más extensa para definir una taxonomía de clasificación, descargue el documento técnico "Clasificación de datos y taxonomía de etiquetas de confidencialidad" del [Portal de confianza de servicios](https://aka.ms/DataClassificationWhitepaper).
 
 2. **Defina la función de cada etiqueta.** Configure los ajustes de protección que desea asociar a cada etiqueta. Por ejemplo, tal vez desee que el contenido de menor confidencialidad (como una etiqueta "General") pueda simplemente tener un encabezado o pie de página aplicado, mientras que el contenido de mayor confidencialidad (como una etiqueta "Confidencial") debiera tener una marca de agua, encriptación y protección de los puntos de conexión.
 
