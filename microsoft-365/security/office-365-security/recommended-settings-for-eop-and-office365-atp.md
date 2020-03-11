@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 8a64b92e8191000be2767f498fbaee179c3b9e69
-ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
+ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678919"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42587290"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -62,8 +62,8 @@ Anti-spam, anti-malware y anti-phishing son características de EOP que los admi
 |MarkAsSpamBulkMail|Activado|Activado|Esta opción solo está disponible en PowerShell|
 
 Hay varios otros parámetros en la Directiva contra correo no deseado denominado filtro de correo no deseado avanzado (ASF) que están en desuso. Se comunicará más información sobre las escalas de tiempo de la depreciación de estas características fuera de este tema.
- 
- Le recomendamos que **desactive estos valores para** los niveles estándar y estricto:
+
+Le recomendamos que **desactive estos valores para** los niveles estándar y estricto:
 
 |Nombre de la característica de seguridad|Comentarios|
 |---------|---------|
@@ -145,10 +145,9 @@ Los clientes de EOP obtienen contra la suplantación de identidad (phishing) bá
 |Habilitación de la protección contra la suplantación de identidad|Activado|Activado||
 |Habilitar remitente sin autenticar (etiquetado)|Activado|Activado||
 |Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio|Mover mensaje a las carpetas de correo no deseado de los destinatarios|Poner en cuarentena el mensaje||
-|EnableAuthenticationSafetyTip|True|True|Esta opción solo está disponible en PowerShell|
-|EnableAuthenticationSoftPassSafetyTip|False|True|Esta opción solo está disponible en PowerShell|
 |EnableSuspiciousSafetyTip|False|True|Esta opción solo está disponible en PowerShell|
 |TreatSoftPassAsAuthenticated|True|False|Esta opción solo está disponible en PowerShell|
+
 
 |Nombre de la característica de seguridad de configuración avanzada|Estándar|Estricta|Comentario|
 |---------|---------|---------|---------|
@@ -170,7 +169,7 @@ No realizar seguimiento cuando los usuarios hagan clic en vínculos seguros|Desh
 
 |Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---------|---------|---------|---------|
-|Activar ATP para SharePoint, OneDrive y Microsoft Teams.|Habilitado|Habilitado||
+|Activar ATP para SharePoint, OneDrive y Microsoft Teams|Habilitado|Habilitado||
 |Datos adjuntos seguros de ATP respuesta de malware desconocida|Desbloquear|Desbloquear||
 |Redirigir datos adjuntos en detección|Habilitado|Habilitado|Redirigir a la dirección de correo electrónico de un administrador de seguridad que sabe cómo determinar si los datos adjuntos son malware o no.|
 |Respuesta de datos adjuntos seguros de ATP si se produce un análisis de malware para archivos adjuntos de tiempo de espera o error|Habilitado|Habilitado||

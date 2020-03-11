@@ -5,16 +5,16 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b65724a1eee35149d473fb69ff646b5ef5751b2c
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085859"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583177"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Ciclo de vida de productos de escritorio administrado de Microsoft
 
-Ventajas para equipos de escritorio administrados por Microsoft los usuarios finales aseguran que siempre usen dispositivos que ofrecen el mejor rendimiento, confiabilidad, diseño y capacidades de seguridad (por ejemplo, compatibilidad con características como Windows Hello). Para ello, el escritorio administrado de Microsoft mantiene un breve catálogo de los [dispositivos aprobados](device-list.md)que se actualizan de forma continua. 
+Ventajas del escritorio administrado por Microsoft los usuarios finales aseguran que siempre usen dispositivos que ofrecen el mejor rendimiento, confiabilidad, diseño y capacidades de seguridad (por ejemplo, compatibilidad con características como Windows Hello). Para ello, el escritorio administrado de Microsoft mantiene un breve catálogo de los [dispositivos aprobados](device-list.md)que se actualizan de forma continua. 
  
 Este tema detalla el ciclo de vida de los dispositivos a medida que se agregan y se quitan del catálogo aprobado. 
 
@@ -31,7 +31,7 @@ Este tema detalla el ciclo de vida de los dispositivos a medida que se agregan y
 - [Retirada de productos](#product-retirement)
 
 
-En esta ilustración se muestra la secuencia completa:
+En esta ilustración se muestra toda la secuencia:
 
 ![escala de tiempo del ciclo de vida: comenzando con la disponibilidad general del producto, "disponibilidad principal" dura dos años. Durante este tiempo, la ventana de certificación finaliza y en algún punto en el que el dispositivo está incorporado. Al final de la disponibilidad principal, el producto se archiva y comienza el "período de gracia" de tres años. Desde el momento en que el dispositivo está incorporado, tiene un período de 3 años de uso hasta que se quita de la administración. Al final del período de gracia, se quita el producto del catálogo.](../../media/non-dark1-edits.PNG)
 
@@ -40,7 +40,7 @@ Los productos permanecen en el catálogo durante un máximo de 24 meses, pero lo
 En esta tabla se muestran las fechas de ejemplo para un producto teórico:
 
 
-|Producto  |Fecha de aprobación  |Fin de la disponibilidad principal  |Final de eligiblity  |
+|Producto  |Fecha de aprobación  |Fin de la disponibilidad principal  |Fin de la elegibilidad  |
 |---------|---------|---------|---------|
 |Portátil Fabrikam    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
 |Portátil Adatum   | 1/1/2018 | 6/1/2020 | 6/1/2023  |
@@ -64,14 +64,14 @@ Durante esta fase, el equipo de ingeniería de escritorio administrado por Micro
   
 Microsoft Managed Desktop solo evaluará los dispositivos para la certificación en los primeros 6 meses de disponibilidad. Esto garantiza que siempre nos centraremos en el esfuerzo de la última generación de hardware.
  
-Al final de esta fase, Microsoft Managed Desktop agrega el producto a la [lista aprobada](device-list.md), lo que libera eficazmente el producto por los clientes inscritos. Independientemente de la fecha en la que se certifica un dispositivo, la **fecha aprobada** se retrasó a la fecha de disponibilidad general de los productos. 
+Al final de esta fase, Microsoft Managed Desktop agrega el producto a la [lista aprobada](device-list.md), lo que libera eficazmente el producto por los clientes inscritos. Independientemente de la fecha en la que se certifica un dispositivo, la **fecha aprobada** es la fecha de la disponibilidad general del producto. 
 
 
 ## <a name="product-primary-availability-period"></a>Período de disponibilidad principal del producto
 
 Este período es la base de la disponibilidad del producto:
 
-![escala de tiempo de ciclo de vida que muestra la disponibilidad principal](../../media/non-dark4-edits.PNG)
+![escala de tiempo de ciclo de vida que muestra disponibilidad principal](../../media/non-dark4-edits.PNG)
 
 Cualquier dispositivo inscrito durante este período recibe los tres años de soporte técnico completos desde el escritorio administrado de Microsoft (como se muestra en la escala de tiempo azul). Este período dura hasta que se establezca una fecha de finalización de 24 meses a partir de la fecha de disponibilidad general.
 
@@ -88,7 +88,7 @@ Si ha comprado recientemente una cantidad de dispositivos aprobados antes de ins
 
 El ejemplo de equipo portátil de Fabrikam de la tabla anterior muestra esta situación: 
 
-|Producto  |Fecha de aprobación  |Fin de la disponibilidad principal  |Final de eligiblity  |
+|Producto  |Fecha de aprobación  |Fin de la disponibilidad principal  |Fin de la elegibilidad  |
 |---------|---------|---------|---------|
 |Portátil Fabrikam    | 6/1/2017 | 6/1/2019 | 6/1/2022 |
 
@@ -105,21 +105,10 @@ La jubilación del producto es la fase final del ciclo de vida. En esta fase, no
 
 Un dispositivo no cumple los requisitos cuando ha transcurrido su ventana permitida para la administración de escritorio administrada de Microsoft. Esto ocurre cuando el dispositivo ha alcanzado los tres años de administración o cuando el tipo de producto se ha quitado del catálogo de dispositivos, lo que ocurra primero. Siempre debe dirigirse a sus ciclos de adquisición de manera que los nuevos dispositivos se implementen antes de que los dispositivos actuales salgan del cumplimiento.
 
-El equipo de escritorio administrado de Microsoft sabe que los ciclos de adquisición son largos y planificados en torno a presupuestos de larga duración. Para asegurarse de que siempre tiene en cuenta el estado de su llenado de dispositivos, proporcionamos un [sitio web](https://aka.ms/mmdportal) que enumera todos los dispositivos que se encuentran en administración, su fecha de retirada futura y un estado que indica el cumplimiento. Esto significa que siempre tiene la información más reciente sobre la antigüedad del dispositivo y puede aprovechar el informe en cualquier ciclo de planeación de la compra. 
+El equipo de escritorio administrado de Microsoft sabe que los ciclos de adquisición son largos y planificados en torno a presupuestos de larga duración. Para asegurarse de que siempre tiene en cuenta el estado de su llenado de dispositivos, proporcionamos un [sitio web](https://aka.ms/mmdportal) con una lista de todos los dispositivos de administración, su antigüedad y un estado que indica el cumplimiento. Esto significa que siempre tiene la información más reciente sobre la antigüedad del dispositivo y puede usar el informe en cualquier ciclo de planeación de la compra. 
 
 
-Además, también llevaremos a cabo las siguientes acciones automatizadas para garantizar que los nuevos dispositivos se implementen a tiempo:
 
-
-|Escala de tiempo  |Action  |
-|---------|---------|
-|T-90     | Marcaremos este dispositivo como **expirará pronto**, con un marcador amarillo en el sitio web de inventario de dispositivos.  |
-|T-60     | Marcaremos este dispositivo como **expirando** con un marcador rojo en el sitio web de inventario de dispositivos.       |
-|T-30     | Publicaremos un mensaje en el portal de administración para indicar que los dispositivos están saliendo del cumplimiento de un error inminente.       |
-|comprendi     |  Ajustaremos el portal de administración para indicar que ahora los dispositivos han expirado los administradores de redireccionamiento para destinar primero a la lista de dispositivos.       |
-|T + 30     |  Se reducirá la funcionalidad del portal de administración hasta que se implementen nuevos dispositivos.       |
-|T + 60     |  Se reducirá la funcionalidad del portal de administración hasta que se implementen nuevos dispositivos.       |
-|T + 90     |  Quitamos el dispositivo de la administración. En este momento, el dispositivo es exclusivamente su propia responsabilidad y ya no debe considerarse seguro ni actualizado. Además, el dispositivo estará en un estado desconocido, ya que cada proveedor de servicios de configuración controla su propia configuración.|
 
 
 

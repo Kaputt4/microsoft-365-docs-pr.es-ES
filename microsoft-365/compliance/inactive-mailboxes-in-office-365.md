@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: Obtenga información sobre cómo conservar el contenido de los buzones de correo para los antiguos empleados al convertir el buzón en un buzón inactivo. Para ello, puede colocar el buzón en retención por juicio o aplicar una directiva de retención de Office 365 al buzón y, a continuación, quitar la cuenta de Office 365 correspondiente.
-ms.openlocfilehash: b5c6730a30ac0efba8f00abc01c0b2c26bf9e562
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 958572fc922f3bef140773369124b1c45147ad16
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072907"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583047"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Información general sobre los buzones inactivos en Office 365
 
@@ -70,13 +70,21 @@ Puede considerar la posibilidad de crear una directiva de retención de Office 3
 Si una retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento se coloca en un buzón y, a continuación, se elimina el buzón o la cuenta de Office 365 del usuario, el buzón se convierte en un buzón inactivo. Sin embargo, no se recomienda usar suspensiones de casos de exhibición de documentos electrónicos para convertir un buzón en inactivo. Esto se debe a que los casos de eDiscovery están pensados para casos específicos y de tiempo limitado relacionados con problemas legales. En algún momento, es probable que finalice un caso legal y se quitarán las suspensiones asociadas al caso y se cerrará el caso de exhibición de documentos electrónicos. De hecho, si una retención que se coloca en un buzón inactivo está asociada a un caso de exhibición de documentos electrónicos y, a continuación, se suelta la retención o el caso de exhibición de documentos electrónicos se cierra (o se elimina), el buzón inactivo se eliminará permanentemente. Además, no puede crear una suspensión de eDiscovery basada en tiempo. Esto significa que el contenido de un buzón inactivo se conserva para siempre o hasta que se quita la retención y se elimina el buzón inactivo. Por lo tanto, se recomienda usar una retención por juicio o una directiva de retención de Office 365 para los buzones inactivos.
   
 Para obtener más información sobre los casos y las suspensiones de eDiscovery, vea [casos de eDiscovery](ediscovery-cases.md).
-  
+
 ## <a name="inactive-mailboxes-and-office-365-labels"></a>Buzones de correo inactivos y etiquetas de Office 365
 
 Las etiquetas de Office 365 ayudan a clasificar los datos de correo electrónico de su organización para el gobierno y aplicar reglas de retención basadas en esa clasificación. Una etiqueta puede aplicarse a un elemento de correo electrónico manualmente por los usuarios o automáticamente por los administradores, y un elemento de correo electrónico solo puede tener asignada una etiqueta única. Si un único elemento de correo electrónico del buzón de un usuario tiene una etiqueta asignada (y está configurada para conservar o conservar y, a continuación, elimina el elemento) y se elimina el buzón o la cuenta de Office 365 del usuario, el buzón se convierte en un buzón inactivo. Al igual que ocurre con las suspensiones de casos de eDiscovery, no se recomienda usar etiquetas para convertir un buzón en inactivo. En su lugar, le recomendamos que use una retención por juicio o una directiva de retención de Office 365. En el caso de las etiquetas, es posible que no se dé cuenta de que se ha aplicado una etiqueta a un elemento de correo electrónico y, a continuación, se ha realizado un buzón inactivo al eliminar la cuenta del usuario. 
   
 Para obtener más información acerca de las etiquetas, vea [información general sobre las etiquetas en Office 365](labels.md).
   
+## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Buzones de correo inactivos y archivos de expansión automática
+
+Un buzón inactivo que está configurado con un archivo de expansión automática no puede recuperarse ni restaurarse. En situaciones en las que es necesario recuperar datos de un buzón inactivo con un archivo de expansión automática, se recomienda usar la herramienta de búsqueda de contenido para exportar los datos del buzón y, a continuación, importarlos a otro buzón. Para obtener instrucciones paso a paso para buscar un buzón inactivo y exportar los resultados de la búsqueda, consulte:
+
+- [Búsqueda de contenido de Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+
+- [Exportar resultados de búsqueda de contenido](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)
+
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>Buzones inactivos y directivas de retención de MRM de Exchange
 
 Si se aplicó una directiva de retención de Exchange (la característica de administración de registros de mensajería, o MRM, en Exchange Online) al buzón de correo cuando se inactivo, las directivas de eliminación (que son etiquetas de retención configuradas con una acción de retención de **eliminación** ) seguirán procesándose en el buzón inactivo. Esto significa que los elementos etiquetados con una directiva de eliminación se moverán a la carpeta Elementos recuperables cuando expire el período de retención. Esos elementos se purgan del buzón inactivo cuando expira la duración de retención. Si no se especifica una duración de retención para el buzón inactivo, los elementos de la carpeta elementos recuperados se conservarán indefinidamente. 

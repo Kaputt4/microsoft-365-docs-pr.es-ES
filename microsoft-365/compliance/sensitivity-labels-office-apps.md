@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, las aplicaciones de Office para dispositivos móviles y las aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: 759c944bc72c39d1fd118dcb1b3515b5ede79687
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, aplicaciones de Office para dispositivos móviles y aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
+ms.openlocfilehash: 41d4231b163d85b55ed0cd68ffb551f67d30827a
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42548181"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583157"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -118,6 +118,34 @@ Para obtener información sobre las características admitidas por los clientes 
 [Las plantillas de protección](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)definidas por el administrador, como las que se definen para el cifrado de mensajes de Office 365, no son visibles en las aplicaciones de Office cuando se usan etiquetas integradas. Esta experiencia simplificada refleja que no es necesario seleccionar una plantilla de protección, ya que se incluye la misma configuración con las etiquetas de confidencialidad que tienen habilitado el cifrado.
 
 Si necesita convertir plantillas de protección existentes en etiquetas, use Azure portal y las siguientes instrucciones: [para convertir plantillas en etiquetas](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels).
+
+## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>Opciones de Information Rights Management (IRM) y etiquetas de confidencialidad
+
+Las etiquetas de confidencialidad que configure para aplicar el cifrado eliminan la complejidad de los usuarios para especificar su propia configuración de cifrado. En muchas aplicaciones de Office, los usuarios pueden seguir configurando manualmente estas configuraciones de cifrado individuales mediante las opciones de Information Rights Management (IRM). Por ejemplo, para aplicaciones de Windows:
+
+- Para un documento: **** > **información** > sobre el archivo**proteger documento** > **restringir acceso**
+- para un correo electrónico: en la pestaña **opciones** > **cifrar** 
+  
+Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, siempre pueden invalidar las opciones de configuración de la etiqueta con su propia configuración de cifrado. Por ejemplo:
+
+- Un usuario aplica la etiqueta **confidencial \ todos los empleados** a un documento y esta etiqueta se configura para aplicar la configuración de cifrado para todos los usuarios de la organización. A continuación, este usuario configura manualmente la configuración de IRM para restringir el acceso a un usuario fuera de la organización. El resultado final es un documento que se denomina **confidencial \ todos los empleados** y cifrados, pero los usuarios de su organización no pueden abrirlo de la manera esperada.
+
+- Un usuario aplica la etiqueta **confidencial \ destinatarios solamente** a un correo electrónico y este correo está configurado para aplicar la configuración de cifrado de no **reenviar**. A continuación, este usuario configura manualmente la configuración de IRM para que el correo no esté restringido. El resultado final es que los destinatarios pueden reenviar el correo electrónico, a pesar de tener la etiqueta de **confidencialidad solo de destinatarios** .
+
+- Un usuario aplica la etiqueta **General** a un documento y esta etiqueta no está configurada para aplicar el cifrado. A continuación, este usuario configura manualmente las opciones de IRM para restringir el acceso al documento. El resultado final es un documento con la etiqueta **General** , pero que también aplica el cifrado para que algunos usuarios no puedan abrirlo de la manera esperada.
+
+Si el documento o correo electrónico ya tiene la etiqueta, un usuario puede realizar cualquiera de estas acciones si el contenido no está cifrado o si tiene el [derecho de uso](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) exportar o control total. 
+
+Para obtener una experiencia de etiqueta más coherente con informes significativos, proporcione las etiquetas y las instrucciones adecuadas para que los usuarios puedan aplicar etiquetas exclusivamente. Por ejemplo:
+
+- Para los casos de excepción en los que los usuarios deben asignar sus propios permisos, proporcione etiquetas que [permitan a los usuarios asignar sus propios permisos](encryption-sensitivity-labels.md#let-users-assign-permissions). 
+
+- En lugar de que los usuarios quiten manualmente el cifrado después de seleccionar una etiqueta que aplique cifrado, proporcione una subetiqueta alternativa cuando los usuarios necesiten una etiqueta con la misma clasificación, pero sin cifrado. Como:
+    - **Confidencial \ todos los empleados**
+    - **Confidencial \ cualquiera (sin cifrado)**
+
+> [!NOTE]
+> Si los usuarios quitan manualmente el cifrado de un documento con etiquetas que se almacena en SharePoint o OneDrive y se [habilitan las etiquetas de confidencialidad para los archivos de Office en SharePoint y onedrive](sensitivity-labels-sharepoint-onedrive-files.md), el cifrado de etiqueta se restaurará automáticamente la próxima vez que se acceda al documento o se descargue. 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Aplicar etiquetas de confidencialidad a archivos, mensajes de correo electrónico y datos adjuntos
 

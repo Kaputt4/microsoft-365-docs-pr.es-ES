@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: 0f7c2c59327874d279872d4fd9bb7d0b9d6eb863
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: ba65624d0c7a67eb4a5be55a7f3e08c217039e83
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410037"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583147"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)
 
 Antes de esta vista previa, al aplicar las etiquetas de confidencialidad que incluían cifrado a los archivos de Office almacenados en SharePoint y OneDrive, el servicio no podía procesar el contenido de estos archivos. La coautoría, la exhibición de documentos electrónicos, la prevención de pérdida de datos, la búsqueda, Delve y otras características de colaboración no funcionarán en estas circunstancias. Esta vista previa habilita estas características para los archivos nuevos y modificados que tienen una etiqueta de sensibilidad aplicada que incluye cifrado con una clave basada en la nube:
 
-- SharePoint reconoce las etiquetas de confidencialidad que se aplican a los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive: mientras el archivo está almacenado en SharePoint, se quita el cifrado de Azure Information Protection para que se pueda procesar el contenido del archivo y a continuación, la configuración de cifrado de la etiqueta se vuelve a aplicar cuando se descarga el archivo. Para obtener información sobre cómo se protegen los documentos antes de descargarlos, vea [cifrado de datos en OneDrive para la empresa y SharePoint Online](data-encryption-in-odb-and-spo.md).
- 
-- Para que SharePoint descifre el archivo al cargarlo, el usuario que carga el archivo identificado y cifrado debe tener derechos de uso para al menos ver el archivo. SharePoint no descifra los archivos que el usuario no puede abrir fuera de SharePoint.
+- SharePoint reconoce las etiquetas de confidencialidad que se aplican a los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive: mientras el archivo está almacenado en SharePoint, se quita el cifrado de Azure Information Protection para que se pueda procesar el contenido del archivo. Para obtener información sobre cómo se protegen los documentos mientras se almacenan en SharePoint, vea [cifrado de datos en OneDrive para la empresa y SharePoint Online](data-encryption-in-odb-and-spo.md).
 
-- Al descargar o tener acceso al archivo desde SharePoint o desde OneDrive, la etiqueta de confidencialidad y la configuración de cifrado se aplican de forma obligatoria al archivo, y esta configuración se sigue aplicando siempre que se guarde el archivo.
+- Al descargar o tener acceso a este archivo desde SharePoint o OneDrive, la etiqueta de confidencialidad y la configuración de cifrado de la etiqueta se vuelve a aplicar con el archivo, y esta configuración se mantiene obligatoria siempre que el archivo se guarde. Debido a este comportamiento, asegúrese de proporcionar instrucciones al usuario para usar etiquetas exclusivamente para proteger documentos. Para obtener más información, consulte [Opciones de Information Rights Management (RIM) y las etiquetas de confidencialidad](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+
+- Para que SharePoint Quite el cifrado del archivo al cargarlo, el usuario que cargue el archivo cifrado y etiquetado debe tener permisos de uso para al menos ver el archivo. SharePoint no quita el cifrado de los archivos si el usuario no puede abrirlos fuera de SharePoint.
 
 - Use Office en la web (Word, Excel y PowerPoint) para abrir y editar archivos de Office con etiquetas de distinción que aplican el cifrado. Se aplican los permisos asignados al cifrado. Con Word en la web, también puede usar la etiqueta automática al editar estos documentos.
 
@@ -89,6 +89,8 @@ Para esta vista previa, use la versión 19.002.0121.0008 o posterior de la aplic
 - Las aplicaciones de escritorio y las aplicaciones móviles de Office no admiten la coautoría. En su lugar, estas aplicaciones continúan a la vez que los archivos se abren en el modo de edición exclusivo.
 
 - Si se carga un documento con etiquetas en SharePoint y la etiqueta aplicó el cifrado mediante una cuenta desde un nombre principal de servicio, el documento no se puede abrir en Office en la Web. Los escenarios de ejemplo incluyen Microsoft Cloud App Security y un archivo enviado a Teams por correo electrónico.
+
+- Los usuarios pueden experimentar problemas de guardado después de pasarse sin conexión o a un modo de suspensión en lugar de usar Office para la web, usan las aplicaciones móviles y de escritorio de Word, Excel o PowerPoint. Para estos usuarios, cuando reanudan la sesión de la aplicación de Office y intentan guardar los cambios, ven un mensaje de error de carga con una opción para guardar una copia en lugar de guardar el archivo original. 
 
 - Los documentos que se han cifrado de las maneras siguientes no se pueden abrir en Office en la web:
     - Cifrado que usa una clave local ("conserve su propia clave" o HYOK)
