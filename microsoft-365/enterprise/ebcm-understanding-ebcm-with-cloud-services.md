@@ -15,16 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender cómo la planificación y la implementación de la continuidad empresarial son diferentes cuando los servicios en la nube forman parte de la oferta de TI.
-ms.openlocfilehash: ced840852aeef9949d005e431125ad2d659cba33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2236304647275f5e2b7ddde3af1804ba749254b0
+ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597007"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42588723"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Administración de continuidad empresarial de Enterprise (EBCM) con servicios en la nube
 
-Como parte de la transformación digital de la organización, tendrá que revisar y actualizar sus planes de recuperación ante desastres y continuidad empresarial para tener en cuenta el proceso empresarial que depende de los servicios en la nube de Microsoft 365. Los servicios en la nube de Microsoft 365, como Exchange Online, SharePoint Online y OneDrive para la Empresa, están diseñados y se pueden gestionar para ser altamente resilientes. Incluso con esta resiliencia, se pueden producir incidencias de servicio. Cuando se producen, su organización debe estar preparada y tener de una estrategia de continuidad empresarial bien definida.
+Como parte de la transformación digital de la organización, tendrá que revisar y actualizar sus planes de recuperación ante desastres y continuidad empresarial para tener en cuenta el proceso empresarial que depende de los servicios en la nube de Microsoft 365. Los servicios en la nube de Microsoft 365, como Exchange Online, SharePoint Online y OneDrive para la Empresa, están diseñados y se pueden gestionar para ser altamente resilientes.
+
+> [!NOTE]
+> Puede obtener más información sobre el plan de EBCM de Microsoft en el documento técnico [Enterprise Business Continuity Management Program](https://go.microsoft.com/fwlink/?linkid=2121521) (Programa de Administración de Continuidad de Empresa). Es necesario iniciar sesión.
+
+Incluso con esta resiliencia, se pueden producir incidencias de servicio. Cuando se producen, su organización debe estar preparada y tener de una estrategia de continuidad empresarial bien definida.
 
 Si aún no ha actualizado sus planes, estos temas le ayudará a planificar la estrategia para que sus servicios puedan fallar en un estado conocido. Estos temas destacan las principales consideraciones para mejorar la preparación de la continuidad.
 

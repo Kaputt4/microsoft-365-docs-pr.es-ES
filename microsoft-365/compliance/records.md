@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Para implementar una estrategia de administración de registros en un Office 365 o en la organización de Microsoft, use las etiquetas de retención que declaran el contenido como un registro. Después, publique o aplique automáticamente la etiqueta registro de retención.
-ms.openlocfilehash: 87bed90f4c9bf27eb960a2018b6a641ff3e06993
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081724"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42586732"
 ---
 # <a name="overview-of-records"></a>Información general de registros
 
@@ -70,7 +70,7 @@ Tenga en cuenta lo siguiente respecto a los registros:
 
 ## <a name="using-retention-labels-to-declare-records"></a>Usar etiquetas de retención para declarar registros
 
-Al crear una etiqueta de retención, puede usarla para clasificar el contenido como un registro. Para declarar el contenido como un registro, debe hacer lo siguiente:
+Al crear una etiqueta de retención, puede usarla para clasificar el contenido como un registro. Para declarar el contenido como un registro, siga estos pasos:
 
 1. Cree una etiqueta de retención. En el Centro de cumplimiento de Microsoft 365, vaya a **Administración de registros** \> **Plan de archivos**. En la página **Plan de archivos**, haga clic en **Crear una etiqueta**.
 
@@ -115,7 +115,7 @@ El control de versiones de registros está disponible automáticamente para todo
 
 ### <a name="locking-and-unlocking-a-record"></a>Bloquear y desbloquear un registro
 
-Cuando se asigna una etiqueta de registro a un documento, cualquier usuario del grupo predeterminado miembros (con nivel de permisos de contribución) puede desbloquear un registro o bloquear un registro desbloqueado.
+Cuando se asigna una etiqueta de registro a un documento, cualquier usuario con permisos de Colaboración o un nivel de permisos más limitado puede desbloquear un registro o bloquear un registro desbloqueado.
 <br/><br/>
 
 ![El estado del registro muestra que el documento de registro está desbloqueado](../media/recordversioning9.png)

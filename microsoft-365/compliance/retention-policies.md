@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: 9ecc74610c0d150dd511a8e24fb66037768587a4
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: f373accc35684c055af8d58907e39aa7a0f4b4f4
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280208"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42586733"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -94,7 +94,8 @@ Cuando se asigna una directiva de retención a una cuenta de OneDrive o un sitio
     > [!NOTE]
     > Recientemente, hemos cambiado la forma de eliminar contenido de la biblioteca de suspensión para conservación. Para ayudar a evitar la pérdida accidental de datos, ya no se elimina permanentemente el contenido de la biblioteca de conservación de documentos. Ahora solo eliminamos de forma permanentemente el contenido de la Papelera de reciclaje. Todo el contenido de la biblioteca de suspensión para conservación pasa por la Papelera de reciclaje de segundo nivel.
     
-2. **Si no se modifica ni elimina el contenido** durante el período de retención, se mueve a la papelera de reciclaje de primer nivel al final del período de retención. Si un usuario elimina el contenido desde allí o vacía esta papelera de reciclaje (lo que también se conoce como purgar), el documento se mueve a la Papelera de reciclaje de segundo nivel. Un período de retención de 93 días abarca las papeleras de reciclaje de primera y segunda etapa. Al final de 93 días, el documento se elimina de forma permanente de donde se encuentre, ya sea en la papelera de reciclaje de primer nivel o de segundo nivel. La papelera de reciclaje no está indizada y, por lo tanto, las búsquedas no encuentran contenido. Esto significa que una retención de eDiscovery no puede encontrar contenido en la papelera de reciclaje para mantenerla. 
+2. **Si no se modifica ni elimina el contenido** durante el período de retención, se mueve a la papelera de reciclaje de primer nivel al final del período de retención. Si un usuario elimina el contenido desde allí o vacía esta papelera de reciclaje (lo que también se conoce como purgar), el documento se mueve a la Papelera de reciclaje de segundo nivel. Un período de retención de 93 días abarca las papeleras de reciclaje de primera y segunda etapa. Al final de 93 días, el documento se elimina de forma permanente de donde se encuentre, ya sea en la papelera de reciclaje de primer nivel o de segundo nivel. La papelera de reciclaje no está 
+3. indexada y, por lo tanto, las búsquedas no encuentran contenido. Esto significa que una retención de eDiscovery no puede encontrar contenido en la papelera de reciclaje para mantenerla. 
     
 ### <a name="content-in-mailboxes-and-public-folders"></a>Contenido de buzones y carpetas públicas
 
@@ -106,8 +107,6 @@ Un proceso evalúa periódicamente los elementos de la carpeta Elementos recuper
   
 Cuando un usuario intenta cambiar determinadas propiedades de un elemento de buzón (como el asunto, el cuerpo, los datos adjuntos, los remitentes y los destinatarios, o la fecha de envío o recepción de un mensaje) se guarda una copia del elemento original en la carpeta Elementos recuperables antes de aplicar el cambio. Esto ocurre con cada cambio posterior. Al final del período de retención, se eliminan de forma permanente las copias de la carpeta Elementos recuperables.
   
-Si un usuario deja la organización y su buzón está incluido en una directiva de retención, el buzón pasa a estar inactivo cuando se elimina la cuenta de Office 365 de dicho usuario. El contenido de un buzón inactivo sigue estando sujeto a cualquier directiva de retención que se le hubiera aplicado antes de que pasara a estar inactivo, y el contenido está disponible para una búsqueda de eDiscovery. Para obtener más información, vea [Buzones inactivos en Exchange Online](inactive-mailboxes-in-office-365.md).
-  
 Cuando se asigna una directiva de retención a un buzón de correo o una carpeta pública, el contenido puede seguir una de estas dos rutas:
 
 ![Diagrama de flujo de retención en el correo electrónico y las carpetas públicas](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
@@ -115,7 +114,21 @@ Cuando se asigna una directiva de retención a un buzón de correo o una carpeta
 1. **Si el elemento se ha modificado o eliminado de forma permanente** por parte del usuario (con MAYÚS+SUPR o eliminándolo de Elementos eliminados) durante el período de retención, el elemento se mueve (o copia, en el caso de la edición) a la carpeta Elementos recuperables. Allí se ejecuta un proceso de forma periódica que identifica los elementos cuyo período de retención ha expirado y estos se eliminan permanentemente en un plazo de 14 días al finalizar el período de retención. Tenga en cuenta que 14 días es la configuración predeterminada, pero es posible configurar hasta 30 días.
     
 2. **Si no se modifica ni elimina el elemento** durante el periodo de retención, se ejecuta periódicamente el mismo proceso en todas las carpetas en el buzón y se identifican los elementos cuyo periodo de retención ha caducado. Estos elementos se eliminan permanentemente en el plazo de 14 días al finalizar el periodo de retención. Tenga en cuenta que 14 días es la opción predeterminada, pero puede configurar hasta 30 días. 
-    
+
+### <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización
+
+**Exchange** 
+
+Si un usuario deja la organización y su buzón está incluido en una directiva de retención, el buzón pasa a estar inactivo cuando se elimina la cuenta de Office 365 del usuario. El contenido de un buzón inactivo sigue estando sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estar inactivo, y está disponible para una búsqueda de eDiscovery. Para obtener más información, vea [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md).
+
+**OneDrive**
+
+Si un usuario deja la organización, todos los archivos que estén en una directiva de retención o que contengan etiquetas de retención permanecerán en su lugar durante la duración de la directiva o etiqueta. Durante ese período de tiempo, todo el acceso para compartir sigue funcionando. Cuando expire el período de retención, el contenido se mueve a la Papelera de reciclaje de la Colección de sitios y no es accesible para nadie excepto el administrador. Si un documento está marcado con una directiva de retención como registro, no se eliminará hasta que finalice el período de retención, tras lo cual el contenido se eliminará de forma permanente.
+
+**SharePoint**
+
+Cuando un usuario deja la organización, no se verá afectado el contenido creado por el usuario, ya que SharePoint se considera un entorno de colaboración, al contrario que el buzón de un usuario o la cuenta de OneDrive.
+
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>Funcionamiento de una directiva de retención con versiones de documentos de un sitio
 
 El control de versiones es una característica de todas las bibliotecas de documentos de SharePoint Online y OneDrive para la Empresa. De forma predeterminada, el control de versiones retiene un mínimo de 500 versiones principales, aunque puede aumentar este límite. Para obtener más información, vea [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
@@ -240,6 +253,16 @@ Cuando seleccione **Elegir usuarios**, puede incluir rápidamente todos los usua
   
 Tenga en cuenta que **Historial de conversaciones**, una carpeta de Outlook, es una característica que no tiene nada que ver con el archivado de Skype. El usuario final puede desactivar **Historial de conversaciones**, pero el archivado para Skype se realiza almacenando una copia de las conversaciones de Skype en una carpeta oculta que está disponible para eDiscovery, pero inaccesible para el usuario.
 
+### <a name="sharepoint-locations"></a>Ubicaciones de SharePoint
+
+Su directiva de retención puede retener contenido en los sitios de comunicación de SharePoint, en los sitios de grupo no conectados por grupos de Office 365 y en los sitios clásicos. Los sitios de grupo conectados por los grupos de Office 365 no son compatibles con esta opción. En su lugar, use las ubicaciones de **los grupos de Office 365**.
+
+Si especifica sitios que no son compatibles, la directiva de retención los pasará por alto.
+
+Cuando especifica sus ubicaciones para los sitios de SharePoint, no necesita permisos para tener acceso al sitio y no se lleva a cabo ninguna validación en el momento en que especifica la dirección URL en la página **Editar ubicaciones**. Sin embargo, estos sitios se deben indexar y al final del asistente se comprueba que existan los sitios que usted especifica.
+
+Si se produce un error en esta comprobación, verá un mensaje que indica que no se pudo realizar la validación de la dirección URL que ha indicado y el asistente no creará la directiva de retención hasta que se supere la comprobación de validación.  Si ve este mensaje, vuelva al Asistente para cambiar la dirección URL o quitar el sitio.
+
 ### <a name="teams-locations"></a>Ubicaciones de Teams
 
 Puede usar una directiva de retención para retener chats y mensajes de canales en Teams. Los chats de Teams se almacenan en una carpeta oculta en el buzón de cada usuario incluido en el chat y los mensajes de canales de Teams se almacenan en una carpeta similar, también oculta, en el buzón de grupo del equipo. Sin embargo, es importante comprender que Teams utiliza un servicio de chat de Azure que también almacena estos datos y, de forma predeterminada, este servicio almacena los datos para siempre. Por este motivo, recomendamos que use la ubicación de Teams para retener y eliminar datos de Teams. Con la ubicación de Teams podrá eliminar datos de forma permanente tanto de los buzones de Exchange como del servicio de chat de Azure subyacente. Para más información, consulte [Información general sobre la seguridad y cumplimiento en Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258).
@@ -293,7 +316,7 @@ Además, no es posible usar la ubicación de Exchange para incluir o excluir un 
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Excluir determinados tipos de elementos de Exchange de una directiva de retención
 Con PowerShell, puede excluir determinados tipos de elementos de Exchange de una directiva de retención. Por ejemplo, puede excluir mensajes de correo de voz, conversaciones de mensajería instantánea y otros contenidos de Skype Empresarial Online en los buzones. También puede excluir calendario, notas y elementos de la tarea. Esta función está disponible solo mediante PowerShell, no en la interfaz de usuario cuando se crea una directiva de retención.
   
-Para ello, utilice el parámetro `ExcludedItemClasses` de los cmdlets `New-RetentionComplianceRule` y `Set-RetentionComplianceRule`. Para obtener más información sobre PowerShell, vea la sección siguiente [Buscar los cmdlets de PowerShell para directivas de retención](#find-the-powershell-cmdlets-for-retention-policies).
+Para hacerlo, use el parámetro `ExcludedItemClasses` de los cmdlets `New-RetentionComplianceRule` y `Set-RetentionComplianceRule`.
 
 ## <a name="locking-a-retention-policy"></a>Bloquear una directiva de retención
 Algunas organizaciones podrían tener que cumplir con las reglas que definen los organismos reguladores, como la regla 17a-4 de la SEC (Comisión de intercambio y valores), lo que requiere que, después de activar una directiva de retención, esta no se pueda desactivar ni hacer menos restrictiva. Con el Bloqueo de retención, puede bloquear una directiva de modo que ninguna persona pueda desactivarla ni hacerla menos restrictiva, ni siquiera el administrador.
@@ -314,7 +337,7 @@ Después, para ver una lista de las directivas de retención y buscar el nombre 
 
 Por último, para colocar un bloqueo de preservación en la Directiva de retención, ejecute `Set-RetentionCompliancePolicy` con el parámetro `RestrictiveRetention` establecido en True. Por ejemplo:
 
-`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+`Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true`
 
 ![Parámetro RestrictiveRetention de PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
@@ -324,7 +347,7 @@ Después de ejecutar ese cmdlet, verá un mensaje de confirmación. Elija **Sí 
 
 Ahora, se coloca un bloqueo de preservación en la Directiva de retención. Si ejecuta `Get-RetentionCompliancePolicy`, el parámetro `RestrictiveRetention` se establece en True. Por ejemplo:
 
-`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+`Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl`
 
 ![Directiva bloqueada con todos los parámetros visibles en PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
@@ -405,15 +428,7 @@ Los miembros de su equipo de cumplimiento normativo que vayan a crear las direct
 Para más información, vea [Conceder acceso a los usuarios para el Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 Estos permisos son necesarios solo para crear y aplicar una directiva de retención. La aplicación de directivas no requiere acceso al contenido.
-  
-## <a name="find-the-powershell-cmdlets-for-retention-policies"></a>Buscar los cmdlets de PowerShell para directivas de retención
 
-Para usar los cmdlets de directiva de retención, debe:
-  
-1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
-    
-2. Usar estos [Cmdlets del Centro de seguridad y cumplimiento de Office 365](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
-    
 ## <a name="more-information"></a>Más información
 
 - [Introducción a las etiquetas](labels.md)
