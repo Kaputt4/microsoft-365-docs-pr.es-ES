@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: dafc745d985c93e4665db469442b0b6dc2eda070
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 33cd1e9956410c66c21c6b4279416df5358f4adf
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081077"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604087"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -51,7 +51,6 @@ Las organizaciones que usan directivas de supervisión en Office 365 y la planea
 - La solución de supervisión de Office 365 se reemplazará completamente por la solución de cumplimiento de comunicaciones en Microsoft 365. Para las organizaciones que van a pasar el cumplimiento de la comunicación desde las directivas de supervisión, recomendamos crear nuevas directivas en el cumplimiento de la comunicación que tengan las mismas *condiciones* que las directivas de supervisión existentes para habilitar nuevas investigaciones y mejoras en la corrección. Al realizar la transición al cumplimiento de la comunicación en Microsoft 365, debe planear la exportación de los datos de informes desde la supervisión en Office 365 si tiene requisitos internos de la Directiva de retención de cumplimiento.
 - Mientras tanto, las organizaciones pueden usar ambas soluciones en paralelo hasta que se migren completamente, pero las directivas que se usan en cada solución deben tener *nombres de directiva únicos*. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre las soluciones durante el período de transición.
 - Los mensajes guardados en la supervisión de las coincidencias de directivas de Office 365 no se pueden mover ni compartir con el cumplimiento de la comunicación en Microsoft 365.
-
 
 Para obtener información de jubilación para la supervisión en Office 365, consulte el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener más información.
 
@@ -82,7 +81,7 @@ Las directivas de supervisión se crean en el centro de cumplimiento. Estas dire
 Antes de empezar a usar la supervisión, debe determinar quién necesita que se revisen sus comunicaciones. En la Directiva, las direcciones de correo electrónico de usuario identifican a los individuos o grupos de personas que deben supervisarse. Algunos ejemplos de estos grupos son los grupos de Office 365, las listas de distribución basadas en Exchange y los canales de Microsoft Teams. También puede excluir determinados usuarios o grupos de la supervisión con un grupo supervisado o una lista de grupos.
 
 >[!IMPORTANT]
->Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5. Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o estar incluidas en una suscripción a Office 365 Enterprise E5 o estar incluidas en una suscripción a Microsoft 365 E5. Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -178,7 +177,7 @@ La siguiente tabla explica más sobre cada condición.
 | **El dato adjunto es mayor que** <br><br> **Los datos adjuntos no tienen un tamaño superior a** | Para revisar los mensajes en función del tamaño de los datos adjuntos, especifique el tamaño máximo o mínimo que pueden tener los datos adjuntos antes de que el mensaje y sus datos adjuntos estén sujetos a revisión. Por ejemplo, si especifica que el **dato adjunto es superior** \> a **2,0 MB**, todos los mensajes con datos adjuntos 2,01 MB y sobre estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Coincidencia de palabras y frases para mensajes de correo electrónico o datos adjuntos
-<a name="Matchwords"></a> Cada palabra que escriba y separe con una coma se aplica por separado (solo se debe aplicar una palabra para que la condición de la Directiva se aplique al correo electrónico o los datos adjuntos). Por ejemplo, vamos a usar la condición, el **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Banker" y "comercio de Insiders" separadas por una coma (Banker, transacciones de Insider). La Directiva se aplica a todos los mensajes que incluyan la palabra "Banker" o la frase "comercio Insider". Solo una de estas palabras o frases debe aparecer para que esta condición de directiva se aplique. Las palabras del mensaje o del archivo adjunto deben coincidir exactamente con lo que se especifique.
+<a name="Matchwords"> </a> Cada palabra que escriba y separe con una coma se aplica por separado (solo se debe aplicar una palabra para que la condición de la Directiva se aplique al correo electrónico o los datos adjuntos). Por ejemplo, vamos a usar la condición, el **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Banker" y "comercio de Insiders" separadas por una coma (Banker, transacciones de Insider). La Directiva se aplica a todos los mensajes que incluyan la palabra "Banker" o la frase "comercio Insider". Solo una de estas palabras o frases debe aparecer para que esta condición de directiva se aplique. Las palabras del mensaje o del archivo adjunto deben coincidir exactamente con lo que se especifique.
 
 Para analizar los mensajes de correo electrónico y los datos adjuntos de las mismas palabras clave, cree una [Directiva de prevención de pérdida de datos](create-test-tune-dlp-policy.md) con un diccionario de [palabras clave personalizado](create-a-keyword-dictionary.md) para los términos que desea supervisar. Esta configuración de directiva identifica las palabras clave definidas que aparecen en el mensaje de correo electrónico **o** en los datos adjuntos del correo electrónico. El uso de la configuración de directivas condicionales estándar (el*mensaje contiene cualquiera de estas palabras* y *Attachment contiene alguna de estas palabras*) para **identificar los términos** de los mensajes y en los datos adjuntos requiere que los términos estén presentes en el mensaje y los datos adjuntos.
   
@@ -245,7 +244,7 @@ Use los informes de supervisión para ver la actividad de revisión en el nivel 
 ### <a name="view-the-supervision-report"></a>Ver el informe de supervisión
 
 1. Inicie sesión en el [centro de cumplimiento](https://compliance.microsoft.com) con credenciales para una cuenta de administrador con permisos para ver informes de supervisión.
-2. Vaya a la **** \> **consola** de informes o a la **supervisión** para ver el widget supervisión de informes para ver un resumen de la actividad de la Directiva de supervisión actual.
+2. Vaya a la **Reports** \> **consola** de informes o a la **supervisión** para ver el widget supervisión de informes para ver un resumen de la actividad de la Directiva de supervisión actual.
 3. Seleccione el widget de **supervisión** para abrir la página informe detallado.
 
 >[!NOTE]

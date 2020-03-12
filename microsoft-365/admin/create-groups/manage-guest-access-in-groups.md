@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Obtenga información sobre cómo agregar invitados a un grupo de Office 365, ver usuarios invitados y usar PowerShell para controlar el acceso de invitado.
-ms.openlocfilehash: 02a951b1fbf43c22f12a89663a0aee279b191088
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e4d71919fa5ebfb97a6bab8013fc6bc54ac071a4
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352621"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604007"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>Administrar el acceso de invitado en los grupos de Office 365
 
@@ -43,8 +43,8 @@ Una vez aprobado, el usuario invitado se agrega al directorio y al grupo.
 
 El acceso de invitado en grupos suele usarse como parte de un escenario más amplio que incluye SharePoint o Teams. Estos servicios tienen su propia configuración de uso compartido de invitado. Para obtener instrucciones completas sobre cómo configurar el uso compartido de invitado en grupos, SharePoint y Teams, vea:
 
-- [Colaborar con invitados en un sitio](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [Colaborar con invitados en un equipo](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [Colaborar con invitados en un sitio](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
+- [Colaborar con invitados en un equipo](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
 
 ## <a name="manage-groups-guest-access"></a>Administrar grupos acceso de invitado
 
@@ -60,7 +60,7 @@ Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo
 
 Si el invitado ya existe en su directorio, puede agregarlo a los grupos desde el centro de administración de Microsoft 365.
   
-1. En el centro de administración, vaya a **la** > **** página grupos de grupos.
+1. En el centro de administración, vaya a **la** > **Groups** página grupos de grupos.
   
 2. Seleccione el grupo al que desea agregar el invitado y seleccione **Ver todos y administrar miembros** en la pestaña **miembros** . 
   

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes en Office 365? Compruebe si hay una respuesta aquí.
-ms.openlocfilehash: 032aa1dacc89aea63cf15080efb80de61e9a6f22
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8d0b65ad60365154f8a35c5afe0b71b5a50d29a8
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597817"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605328"
 ---
 # <a name="office-365-message-encryption-faq"></a>Preguntas más frecuentes sobre el cifrado de mensajes de Office 365
 
@@ -115,7 +115,8 @@ Afirma! Puede habilitar el cifrado para los datos adjuntos PDF de sus organizaci
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-El cifrado de PDF permite proteger documentos PDF confidenciales mediante comunicación segura o colaboración segura. Los mensajes heredan la protección de OME de la Directiva de prevención de pérdida de datos (DLP) o de la regla de flujo de correo en Exchange Online. Si un usuario de Outlook o Outlook en la web adjunta datos adjuntos PDF no protegidos a un mensaje protegido, el mensaje hereda la protección del mensaje. Los usuarios solo pueden abrir los datos adjuntos cifrados en aplicaciones que admiten archivos PDF protegidos (por ejemplo, el portal OME y el visor de Azure Information Protection Viewer).
+El cifrado de PDF permite proteger documentos PDF confidenciales mediante comunicación segura o colaboración segura. Para todos los clientes de Outlook, los mensajes y los datos adjuntos de PDF no protegidos heredan la protección de OME de la Directiva de prevención de pérdida de datos (DLP) o de la regla de flujo de correo en Exchange Online. Además, si un usuario de Outlook en la web adjunta un documento PDF no protegido y aplica protección a un mensaje, el mensaje hereda la protección del mensaje. Los usuarios solo pueden abrir los datos adjuntos cifrados en aplicaciones que admiten archivos PDF protegidos (por ejemplo, el portal OME y el visor de Azure Information Protection Viewer).
+
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>¿Los datos adjuntos de OneDrive para la empresa son compatibles?
 
@@ -161,7 +162,7 @@ No en este momento.
 
 Afirma! Los mensajes cifrados son compatibles con un buzón compartido.
 
-- Los usuarios pueden abrir los correos protegidos en un mMailbox compartido en el que el buzón compartido recibió un correo protegido como parte de un grupo de distribución.
+- Los usuarios pueden abrir los correos electrónicos protegidos en un buzón compartido donde el buzón compartido recibió un correo protegido como parte de un grupo de distribución.
 
 - Los usuarios pueden ver los datos adjuntos que heredan la protección del correo electrónico cuando usan Outlook para Windows, Outlook para Mac y Outlook en la Web.
 

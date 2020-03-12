@@ -21,20 +21,20 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Obtenga información sobre cómo compartir sitios y archivos con personas de fuera de la organización. '
-ms.openlocfilehash: cb6faf14806f950f4b9a355e9f0fcdb660ec1d82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 83b111153389bf75a92bcc32af9563bf7432bf8a
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254825"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603997"
 ---
 # <a name="share-sites-and-files-externally"></a>Compartir archivos y sitios de forma externa
 
 Para colaborar con personas ajenas a la organización, puede compartir de forma externa sitios o archivos específicos en todo el sitio. Si quiere ir directamente a la configuración del uso compartido, elija el escenario que quiera activar:
 
 - [Colaborar con invitados en un documento](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [Colaborar con invitados en un sitio](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [Colaborar con invitados en un equipo](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [Colaborar con invitados en un sitio](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
+- [Colaborar con invitados en un equipo](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
   
 ## <a name="deciding-how-to-share-your-content"></a>Decidir cómo compartir el contenido
 
@@ -68,7 +68,7 @@ El uso compartido externo está activado de forma predeterminada en el nivel de 
   
 2. En la página que se abre, elija si los usuarios pueden compartir sólo con los invitados existentes, los invitados nuevos y los existentes, o cualquier persona. 
     
-3. Seleccione **Guardar**.
+3. Haga clic en **Guardar**.
     
 Después de habilitar el uso compartido externo en el nivel de la organización, puede ajustar la configuración de uso compartido para deshabilitar el uso compartido externo de sitios específicos. Para obtener información, consulte [activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site).
   

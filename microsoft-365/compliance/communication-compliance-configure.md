@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e3f16339d25c8cc592e937e30a446ed7e7cd333
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 69b3bbbbca98c3ef9e16f1cca4d67122ae14af3f
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42542544"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604207"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurar el cumplimiento de la comunicación en Microsoft 365
 
@@ -34,7 +34,7 @@ Use las directivas de cumplimiento de comunicaciones para capturar las comunicac
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Antes de empezar con el cumplimiento de la comunicación, debe confirmar la suscripción a Microsoft 365. Los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Microsoft 365 E5.
+Antes de empezar con el cumplimiento de la comunicación, debe confirmar la suscripción a Microsoft 365. Los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o estar incluidas en una suscripción a Office 365 Enterprise E5 o estar incluidas en un Microsoft suscripción a 365 E5.
 
 Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de Insider, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a su suscripción existente de Office 365 o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
   
@@ -159,6 +159,6 @@ Siga estos pasos para probar la Directiva de cumplimiento de la comunicación:
     > [!NOTE]
     > Las comunicaciones en todos los canales de origen pueden tardar hasta 24 horas en procesarse completamente en una directiva.
 
-3. Inicie sesión en Microsoft 365 como revisor designado en la Directiva de cumplimiento de la comunicación. Navegue a **** > **alertas** de cumplimiento de comunicaciones para ver las alertas de las directivas.
+3. Inicie sesión en Microsoft 365 como revisor designado en la Directiva de cumplimiento de la comunicación. Navegue a **Communication compliance** > **alertas** de cumplimiento de comunicaciones para ver las alertas de las directivas.
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta se haya resuelto correctamente.

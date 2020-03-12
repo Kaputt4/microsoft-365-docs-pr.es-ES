@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 'Resumen: Descripción del cifrado para Skype, OneDrive, SharePoint y Exchange Online.'
-ms.openlocfilehash: cffaab87049f466794706ad6537e663e43d5de91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601847"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604167"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Office 365 cifrado para Skype empresarial, OneDrive para la empresa, SharePoint Online y Exchange Online
 
@@ -32,7 +32,7 @@ Office 365 es un entorno altamente seguro que ofrece protección amplia en varia
 
 Los datos de clientes de Skype empresarial pueden almacenarse en reposo en forma de archivos o presentaciones cargados por los participantes en la reunión. El servidor de conferencia web cifra los datos del cliente mediante AES con una clave de 256 bits. Los datos de cliente cifrados se almacenan en un recurso compartido de archivos. Cada parte de los datos de clientes se cifra con una clave de 256 bits generada de forma aleatoria. Cuando una parte de los datos de clientes se comparte en una conferencia, el servidor de conferencia web indica a los clientes de conferencia que descarguen los datos de clientes cifrados a través de HTTPS. Envía la clave correspondiente a los clientes para que los datos del cliente se puedan descifrar. El servidor de conferencia web también autentica a los clientes de conferencia antes de que los clientes tengan acceso a los datos de clientes de conferencia. Al unirse a una conferencia Web, cada cliente de conferencia establece primero un cuadro de diálogo SIP con el componente de foco de conferencia que se ejecuta dentro del servidor front-end a través de TLS. El enfoque de conferencia pasa al cliente de conferencia una cookie de autenticación generada por el servidor de conferencia Web. A continuación, el cliente de conferencia se conecta al servidor de conferencia web que presenta la cookie de autenticación que el servidor debe autenticar.
 
-## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online y OneDrive para la Empresa
+## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint en línea y OneDrive para Empresas
 
 Todos los archivos de clientes de SharePoint Online están protegidos por claves únicas por archivo que siempre son exclusivas para un único inquilino. Las claves las crea y administra el servicio de SharePoint Online, o cuando la clave de cliente la usan, crean y administran los clientes. Cuando se carga un archivo, SharePoint Online realiza el cifrado en el contexto de la solicitud de carga, antes de enviarlo a Azure Storage. Cuando se descarga un archivo, SharePoint Online recupera los datos cifrados del cliente desde Azure Storage en función del identificador de documento único y descifra los datos del cliente antes de enviarlos al usuario. Azure Storage no tiene la capacidad de descifrar, ni tampoco identificar o comprender los datos de los clientes. Todo el cifrado y el descifrado ocurren en los mismos sistemas que exigen el aislamiento de inquilinos, que son Azure Active Directory y SharePoint Online.
 
@@ -76,10 +76,10 @@ Los elementos de lista son fragmentos más pequeños de datos de clientes que se
 
 En OneDrive para la Empresa y SharePoint Online, hay dos escenarios en los que los datos entran y salen de los centros de datos.
 
-- **La comunicación del cliente con la comunicación del servidor** a OneDrive para la empresa en Internet usa conexiones SSL/TLS. Todas las conexiones SSL se establecen con claves de 2048 bits.
+- **La comunicación del cliente con la comunicación del servidor** a SharePoint Online y OneDrive para la empresa en Internet usa conexiones TLS.
 - **Movimiento de datos entre centros de datos** : la principal razón para mover datos entre centros de datos es la replicación geográfica para habilitar la recuperación ante desastres. Por ejemplo, los registros de transacciones y diferencias de almacenamiento de blobs de SQL Server recorren esta canalización. Mientras que estos datos ya se transmiten mediante una red privada, tendrán una mayor protección con el mejor cifrado de su clase.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 Exchange online usa BitLocker para todos los datos de buzones y la configuración de BitLocker se describe en [BitLocker para el cifrado](office-365-bitlocker-and-distributed-key-manager-for-encryption.md). El cifrado de nivel de servicio cifra todos los datos del buzón de correo en el nivel de buzón. 
 

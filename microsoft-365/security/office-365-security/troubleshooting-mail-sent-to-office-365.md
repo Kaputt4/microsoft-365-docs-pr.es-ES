@@ -16,12 +16,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información para solucionar problemas destinada a los remitentes que están teniendo problemas al intentar enviar correo electrónico a bandejas de entrada de Office 365 y prácticas recomendadas para el envío de correo masivo a clientes de Office 365.
-ms.openlocfilehash: 5a672eacacafdb1d9660c2218aa54ac1947acb32
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72dd0360038e58c2501728d9032fef95f81d90c2
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598167"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604067"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Correo de solución de problemas enviado a Office 365
 
@@ -170,7 +170,7 @@ Igual de importante que la forma en que se envían los mensajes de correo electr
 
   `unsubscribe.bulkmailer.com`
 
-  `profiles.excite.com`
+  `profile.excite.com`
 
   `options.yahoo.com`
 

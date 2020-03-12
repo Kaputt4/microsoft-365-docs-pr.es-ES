@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
-ms.openlocfilehash: 818a0db46d0c2a763c1c90b585a6d7a0fd403b94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077437"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604187"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -55,7 +55,7 @@ Una buena referencia para conservar el marcador es este [tema sobre los tipos de
 
 Cuando los riesgos de la filtración de datos no son totalmente obvios, es difícil averiguar dónde se debe empezar exactamente con la implementación de DLP. Afortunadamente, las directivas de DLP se pueden ejecutar en el "modo de prueba", lo que le permite evaluar su eficacia y precisión antes de activarlas.
 
-Las directivas de DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Sin embargo, puede configurar directivas de DLP para todas las cargas de trabajo a través del centro de seguridad & cumplimiento, que voy a usar para las demostraciones de este artículo. En el centro de seguridad & cumplimiento, encontrará directivas DLP en la **** > **Directiva**de prevención de pérdida de datos. Haga clic en **crear una directiva** para iniciar.
+Las directivas de DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Sin embargo, puede configurar directivas de DLP para todas las cargas de trabajo a través del centro de seguridad & cumplimiento, que voy a usar para las demostraciones de este artículo. En el centro de seguridad & cumplimiento, encontrará directivas DLP en la **Data loss prevention** > **Directiva**de prevención de pérdida de datos. Haga clic en **crear una directiva** para iniciar.
 
 Office 365 proporciona una amplia variedad de [plantillas de directivas de DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas de DLP. Supongamos que es un negocio australiano. Puede filtrar las plantillas de directiva para mostrar solo las que son relevantes para Australia, que entran en las categorías generales de finanzas, médicos y salud y privacidad.
 

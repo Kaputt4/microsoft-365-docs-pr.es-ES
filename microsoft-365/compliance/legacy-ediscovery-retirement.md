@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Office 365 Advanced eDiscovery v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 92b6648b603286871956db64631d334df2384112
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543217"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605308"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas de eDiscovery heredadas
 
@@ -278,6 +278,13 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 </td>
 </tr>
 <tr class="odd">
+<td>Eliminar el correo electrónico masivo de un buzón</td>
+<td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Configurar una directiva de archivo y eliminación para buzones de correo</span></a></p>
+<p></p></td>
+<td><p>Los administradores pueden crear una directiva de archivado y eliminación que mueva automáticamente los elementos al buzón de archivo de un usuario y elimine automáticamente los elementos del buzón.</p>
+</td>
+</tr>
+<tr class="even">
 <td>Copiar los resultados de la búsqueda en un buzón de detección</td>
 <td> </td>
 <td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las preguntas más frecuentes en la sección <strong>cmdlets *-MailboxSearch</strong> para obtener soluciones alternativas. </td>

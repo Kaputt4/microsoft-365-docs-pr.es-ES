@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, aplicaciones de Office para dispositivos móviles y aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: 41d4231b163d85b55ed0cd68ffb551f67d30827a
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 858d2be23dcb3c3f2b0794e735ed8ca61d67b74d
+ms.sourcegitcommit: 794f2f416a258157cb44d962b5be6a348ee20fea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583157"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42594013"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -123,7 +123,7 @@ Si necesita convertir plantillas de protección existentes en etiquetas, use Azu
 
 Las etiquetas de confidencialidad que configure para aplicar el cifrado eliminan la complejidad de los usuarios para especificar su propia configuración de cifrado. En muchas aplicaciones de Office, los usuarios pueden seguir configurando manualmente estas configuraciones de cifrado individuales mediante las opciones de Information Rights Management (IRM). Por ejemplo, para aplicaciones de Windows:
 
-- Para un documento: **** > **información** > sobre el archivo**proteger documento** > **restringir acceso**
+- Para un documento: **File** > **información** > sobre el archivo**proteger documento** > **restringir acceso**
 - para un correo electrónico: en la pestaña **opciones** > **cifrar** 
   
 Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, siempre pueden invalidar las opciones de configuración de la etiqueta con su propia configuración de cifrado. Por ejemplo:
@@ -136,7 +136,7 @@ Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, s
 
 Si el documento o correo electrónico ya tiene la etiqueta, un usuario puede realizar cualquiera de estas acciones si el contenido no está cifrado o si tiene el [derecho de uso](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) exportar o control total. 
 
-Para obtener una experiencia de etiqueta más coherente con informes significativos, proporcione las etiquetas y las instrucciones adecuadas para que los usuarios puedan aplicar etiquetas exclusivamente. Por ejemplo:
+Para obtener una experiencia de etiqueta más coherente con informes significativos, proporcione las etiquetas apropiadas y las instrucciones para que los usuarios apliquen sólo las etiquetas para proteger los documentos. Por ejemplo:
 
 - Para los casos de excepción en los que los usuarios deben asignar sus propios permisos, proporcione etiquetas que [permitan a los usuarios asignar sus propios permisos](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 

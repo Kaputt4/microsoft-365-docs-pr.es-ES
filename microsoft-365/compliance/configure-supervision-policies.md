@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 230d363c8150899fdc5fd5f46aa1cb2576382267
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e2880679c8520480aeffd640a26730defc298490
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078297"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604197"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurar directivas de supervisión en Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "42078297"
 Usar directivas de supervisión para capturar las comunicaciones de los empleados para que las examinen los revisores externos o internos. Para obtener más información sobre cómo las directivas de supervisión pueden ayudarle a supervisar las comunicaciones en su organización, consulte [directivas de supervisión en Office 365](supervision-policies.md).
 
 >[!NOTE]
->Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5.
+>Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o estar incluidas en una suscripción a Office 365 Enterprise E5 o estar incluidas en Microsoft 365 E5 scription.
 >Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Siga estos pasos para configurar y usar la supervisión en su organización de Office 365:
