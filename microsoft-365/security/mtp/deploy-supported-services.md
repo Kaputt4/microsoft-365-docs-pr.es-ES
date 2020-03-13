@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 1c06562cc0ff8cdc43efb3a8f62924c435883408
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569051"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610567"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -71,7 +71,7 @@ La implementación de cada servicio suele requerir un aprovisionamiento para el 
 
 | Servicio | Instrucciones de aprovisionamiento | Configuración inicial |
 | ------ | ------ | ------ |
-| ATP de Microsoft Defender | [Validar el aprovisionamiento de licencias y la configuración completa para Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/licensing) | *Consulte instrucciones de aprovisionamiento* |
+| ATP de Microsoft Defender | [Guía de implementación de ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *Consulte instrucciones de aprovisionamiento* |
 | ATP de Office 365 | *Ninguno, aprovisionado con Office 365* | [Configurar directivas ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [Inicio rápido: crear una instancia de ATP de Azure](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *Consulte instrucciones de aprovisionamiento* |
 | Microsoft Cloud App Security | *Ninguna* | [Inicio rápido: Introducción a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |

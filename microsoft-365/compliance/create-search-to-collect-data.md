@@ -16,29 +16,31 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 67b4eb399b422cac032bbfcfe49079e4d55b2d02
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 47d30cb2da91eff1260ffcf07838bd066917b4a1
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077117"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610647"
 ---
 # <a name="create-a-search"></a>Crear una búsqueda
 
 En la ficha **búsquedas** en su caso, puede crear una nueva búsqueda haciendo clic en **nueva búsqueda** y siguiendo el asistente.
 
-## <a name="name-your-search-and-give-it-a-description"></a>Asigne un nombre a la búsqueda y dele una descripción
+![El Asistente para búsqueda en un caso de exhibición avanzada de documentos electrónicos](../media/AeDSearch1.png)
+
+## <a name="name-the-search-and-give-it-a-description"></a>Asignar un nombre a la búsqueda y darle una descripción
 
 Cada búsqueda con un caso debe tener un nombre único. Opcionalmente, puede proporcionar una descripción para la búsqueda. 
 
-## <a name="define-your-search-query-and-conditions"></a>Definir la consulta y las condiciones de búsqueda
+## <a name="choose-the-custodians-and-custodial-locations-to-search"></a>Elija los custodios y las ubicaciones de los puntos de apoyo de la búsqueda
 
-Puede definir las palabras clave Query y las condiciones de la búsqueda con las tarjetas de condición predefinidas o con el lenguaje de consulta de palabras clave (KQL). Para obtener más información, vea [crear consultas de búsqueda](building-search-queries.md).
-
-## <a name="choose-the-custodians-to-search-from"></a>Elegir los custodios donde buscar
-
-Una vez que haya definido las condiciones, debe elegir qué ubicaciones desea buscar. Una forma de hacerlo es especificar los custodios que ya ha agregado al caso en el que desea realizar la búsqueda. Al seleccionar un custodio, se ejecutará la búsqueda en todos los orígenes de datos asignados al custodio. Consulte [work with custodios](managing-custodians.md) para obtener más información sobre cómo agregar custodios a su caso y administrar sus orígenes de datos.
+Elija ubicaciones de contenido de custodios para buscar especificando los custodios que ha agregado al caso. Al seleccionar un custodio, se ejecutará la búsqueda en todos los orígenes de datos asignados al custodio. También tiene la opción de restringir la búsqueda a los orígenes de datos seleccionados para cada custodio. Para obtener más información acerca de cómo agregar custodios y administrar sus orígenes de datos, consulte [work with custodios](managing-custodians.md).
 
 ## <a name="choose-non-custodial-locations"></a>Elegir ubicaciones que no sean de privación
 
-En algunos casos, es posible que quiera buscar orígenes de datos que no están asignados a un custodio. En este caso, puede especificar las ubicaciones en las que desea realizar búsquedas o elegir buscar en todas las ubicaciones de contenido de un servicio de Office 365 específico (por ejemplo, buscar en todos los buzones de Exchange o en todos los sitios de SharePoint y OneDrive para la empresa).
+En algunos casos, es posible que quiera buscar orígenes de datos que no estén asociados con un custodio. En este caso, puede especificar las ubicaciones en las que desea realizar la búsqueda o elegir buscar en todas las ubicaciones de contenido de un servicio de Office 365 específico (como la búsqueda de todos los buzones de Exchange o de todos los sitios de SharePoint y las cuentas de OneDrive).
+
+## <a name="define-the-search-query-and-conditions"></a>Definir la consulta y las condiciones de búsqueda
+
+Puede definir las palabras clave Query y las condiciones de la búsqueda con las tarjetas de condición predefinidas o con el lenguaje de consulta de palabras clave (KQL). Para obtener más información, vea [crear consultas de búsqueda](building-search-queries.md).

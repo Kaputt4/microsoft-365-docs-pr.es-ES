@@ -1,5 +1,5 @@
 ---
-title: Simulador de ataques en Office 365
+title: Simulador de ataque en Office 365 ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,154 +15,350 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: 93a2601322fd33024c1310e1df69ad1dea2f07b7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Use el simulador de ataque para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseña en su organización de Office 365 E5 o ATP planeada 2, lo que puede ayudarle a identificar a los usuarios vulnerables antes de que un ataque real haga su trabajo.
+ms.openlocfilehash: 5e924ebe43a6d7fd1af460b304e862207baffb61
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083707"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612640"
 ---
-# <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
+# <a name="attack-simulator-in-office-365-atp"></a>Simulador de ataque en Office 365 ATP
 
-**Resumen** Si es un administrador global de Office 365 o un administrador de seguridad y su organización tiene Office 365 el plan de protección contra amenazas avanzada 2, que incluye [capacidades de investigación y respuesta de amenazas](office-365-ti.md), puede usar el simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
+El simulador de ataque de Office 365 Advanced Threat Protection Plan 2 (ATP plan 2) le permite ejecutar campañas de suplantación de identidad (phishing) y ataques con contraseñas en su organización. Puede usar los resultados de las campañas para identificar y entrenar a los usuarios vulnerables.
 
-## <a name="the-attacks"></a>Los ataques
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-Actualmente hay disponibles tres tipos de simulaciones de ataque:
+- Para abrir el centro de cumplimiento de & de seguridad de Office <https://protection.office.com/>365, vaya a. El simulador de ataques está disponible en **simulador de ataques**de **Administración** \> de amenazas.
 
-- [Robo de credenciales de Spear-phishing](#credential-harvest-spear-phishing-attack)
+  ![Administración de amenazas: simulador de ataque](../../media/ThreatMgmt-AttackSimulator.png)
 
-- [Datos adjuntos ataques de suplantación de identidad](#attachment-spear-phishing-attack)
+- Para obtener más información acerca de la disponibilidad de un simulador de ataque en distintas suscripciones de Office 365, consulte [office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- [Ataque rociado de contraseñas](#password-spray-attack)
+- Debe ser miembro de los grupos de roles **Administración** de la organización o **Administrador de seguridad** . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the Office 365 security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- [Ataque de fuerza bruta con contraseña](#brute-force-password-attack)
+- La cuenta debe estar configurada para la autenticación multifactor (MFA) con el fin de crear y administrar campañas en el simulador de ataques. Para obtener instrucciones, vea [set up multi-factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-Para que un ataque se inicie correctamente, asegúrese de que la cuenta que usa para ejecutar ataques simulados esté usando la autenticación multifactor. Además, debe ser un administrador global de Office 365 o un administrador de seguridad. (Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)).
+- Solo puede ejecutar campañas de ataques de suplantación de identidad (phishing) o con contraseña en usuarios con buzones en Exchange Online.
 
-Para tener acceso al simulador de ataques &amp; , en el centro de seguridad y cumplimiento, elija **simulador de ataques**de **Administración** \> de amenazas.
+- Las campañas de suplantación de identidad recopilarán y procesarán eventos durante 30 días. Los datos históricos de la campaña estarán disponibles hasta 90 días después de iniciar la campaña.
 
-## <a name="before-you-begin"></a>Antes de empezar...
+- No hay cmdlets de PowerShell correspondientes para el simulador de ataques.
 
-Asegúrese de que usted y su organización cumplen con los siguientes requisitos para simuladores de ataques:
+## <a name="spear-phishing-campaigns"></a>Campañas de "Spear phishing"
 
-- El correo electrónico de la organización se hospeda en Exchange Online. (El simulador de ataque no está disponible para los servidores de correo electrónico locales).
+La *suplantación de identidad (phishing)* es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en los mensajes que parecen ser de remitentes legítimos o de confianza. La *suplantación de identidad (Spear phishing* ) es un ataque de suplantación de identidad (phishing) orientado a los destinatarios de destino (normalmente, después del reconocimiento de los destinatarios por parte del atacante).
 
-- Es administrador global de Office 365 o administrador de seguridad
+Para obtener más información acerca de la suplantación de identidad y Spear phishing, consulte [phishing](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
 
-- Las campañas de suplantación de identidad (phishing) recopilarán y procesarán eventos durante un período de 30 días, los datos de la campaña histórica estarán disponibles durante un máximo de 90 días después de que se inicie la campaña.
+En el simulador de ataque, hay disponibles dos tipos diferentes de campañas de "Spear phishing":
 
-- La [autenticación multifactor/acceso condicional](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) está activada, por lo menos la cuenta de administrador global de Office 365 y los administradores de seguridad que van a usar el simulador de ataques. (Idealmente, el acceso condicional/autenticación multifactor está activado para todos los usuarios de la organización).
+- **Spear phishing (cosecha de credenciales)**: el ataque intenta convencer a los destinatarios para que haga clic en una dirección URL del mensaje. Si hacen clic en el vínculo, se les pedirá a los usuarios que escriban sus credenciales. Si es así, se toman en una de las siguientes ubicaciones:
 
-- Su organización tiene [el plan 2 de la protección contra amenazas avanzada de Office 365](office-365-atp.md), con el &amp; simulador de ataque visible en el centro de seguridad y cumplimiento (vaya a **simulador de ataque**de administración \> de **amenazas** )
+  - Una página predeterminada en la que se explica que se trataba de una sola prueba y ofrece sugerencias para reconocer los mensajes de suplantación de identidad.
 
-    ![Administración de amenazas: simulador de ataque](../../media/ThreatMgmt-AttackSimulator.png)
+    ![Qué ven los usuarios si hacen clic en el vínculo phishing y escriben sus credenciales](../../media/attack-simulator-phishing-result.png)
 
-## <a name="credential-harvest-spear-phishing-attack"></a>Robo de credenciales de Spear-phishing
+  - Una página personalizada (URL) que especifique.
 
-La suplantación de identidad (phishing) es un término genérico para un conjunto amplio de ataques que se clasifican como un ataque de tipo de ingeniería social. Este ataque se centra en la suplantación de identidad (phishing), un ataque más objetivo destinado a un grupo específico de personas o una organización. Normalmente, se trata de un ataque personalizado con algún reconocimiento realizado y con un nombre para mostrar que generará confianza en el destinatario, como un mensaje de correo electrónico que parece que proviene de un ejecutivo de la organización.
+- **Spear phishing (datos adjuntos)**: el ataque intenta convencer a los destinatarios para que abran un archivo adjunto. docx o. pdf en el mensaje. Los datos adjuntos incluyen el mismo contenido del vínculo de suplantación de identidad (phishing\<) predeterminado\>, pero la primera frase comienza por "nombre para mostrar, se ve este mensaje como un mensaje de correo electrónico reciente abierto...".
 
-Este ataque se centra en permitirle manipular a la que parece que el mensaje se ha originado cambiando el nombre para mostrar y la dirección de origen. Cuando los ataques de "Spear phishing" son correctos, cyberattackers obtener acceso a las credenciales de los usuarios.
+> [!NOTE]
+> Actualmente, las campañas de suplantación de identidad de Spear en el simulador de ataque no expiran.
 
-### <a name="to-simulate-a-spear-phishing-attack"></a>Para simular un ataque de "Spear phishing"
+### <a name="create-a-spear-phishing-campaign"></a>Crear una campaña de "Spear phishing"
 
-![Crear cuerpo de correo electrónico](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+Una parte importante de cualquier campaña de "Spear phishing" es la apariencia del mensaje de correo electrónico que se envía a los destinatarios de destino. Para crear y configurar el mensaje de correo electrónico, tiene estas opciones:
 
-Puede crear el editor HTML enriquecido directamente en el propio campo **del cuerpo del correo electrónico** o trabajar con el código fuente HTML.
+- **Usar una plantilla de correo electrónico integrada**: hay disponibles dos plantillas integradas: **Premio regalo** y **actualización de nóminas**. Puede personalizar aún más algunas, todas o ninguna de las propiedades de correo electrónico de la plantilla al crear e iniciar la campaña.
 
-1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), elija **simulador de ataque**de administración \> de **amenazas** .
+- **Cree una plantilla de correo electrónico reutilizable**: una vez que haya creado y guardado la plantilla de correo electrónico, puede usarla de nuevo en las campañas de suplantación de identidad de Spear futuras. Puede personalizar aún más algunas, todas o ninguna de las propiedades de correo electrónico de la plantilla al crear e iniciar la campaña.
 
-2. Especifique un nombre de campaña significativo para el ataque o seleccione una plantilla.
+- **Crear el mensaje de correo electrónico en el asistente**: puede crear el mensaje de correo electrónico directamente en el asistente mientras crea e inicia la campaña de Spear phishing.
+
+#### <a name="step-1-optional-create-a-custom-email-template"></a>Paso 1 (opcional): crear una plantilla de correo electrónico personalizada
+
+Si va a utilizar una de las plantillas integradas o va a crear el mensaje de correo electrónico directamente en el asistente, puede omitir este paso.
+
+1. En el centro de seguridad & cumplimiento, vaya a **simulador de ataques**de **Administración** \> de amenazas.
+
+2. En la página **Simulate Attacks** , en las secciones de **Spear phishing (credenciales cosecha)** o **Spear phishing (datos adjuntos)** , haga clic en **detalles de ataque**.
+
+   No importa dónde cree la plantilla. Las opciones disponibles en la plantilla son las mismas para ambos tipos de ataques de suplantación de identidad.
+
+3. En la **página Detalles del ataque** que se abre, en la sección plantillas de **suplantación de identidad** , en el área **crear plantillas** , haga clic en **nueva plantilla**.
+
+4. El Asistente para **Configurar plantillas de suplantación de identidad** se inicia en un nuevo flotante. En el paso **iniciar** , escriba un nombre para mostrar único para la plantilla y, a continuación, haga clic en **siguiente**.
+
+5. En el paso **configurar detalles de correo electrónico** , configure las siguientes opciones:
+
+   - **From (nombre)**: el nombre para mostrar que se usa para el remitente del mensaje.
+
+   - **From (email)**: la dirección de correo electrónico del remitente.
+
+   - **Dirección URL del servidor de inicio de sesión de phishing**: haga clic en el menú desplegable y seleccione una de las direcciones URL disponibles de la lista. Esta es la dirección URL a la que se verá tentado a los usuarios en hacer clic. Las opciones son:
+
+     - <http://portal.docdeliveryapp.com>
+     - <http://portal.docdeliveryapp.net>
+     - <http://portal.docstoreinternal.com>
+     - <http://portal.docstoreinternal.net>
+     - <http://portal.hardwarecheck.net>
+     - <http://portal.hrsupportint.com>
+     - <http://portal.payrolltooling.com>
+     - <http://portal.payrolltooling.net>
+     - <http://portal.prizegiveaway.net>
+     - <http://portal.prizesforall.com>
+     - <http://portal.salarytoolint.com>
+     - <http://portal.salarytoolint.net>
+
+     > [!NOTE]
+     > <ul><li>Todas las direcciones URL son intencionadamente http, no HTTPS.</li><li>Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores Web admitidos antes de usar la dirección URL en una campaña de suplantación de identidad (phishing).</li></ul>
+
+   - **Dirección URL de la página de aterrizaje personalizada**: escriba una página de aterrizaje opcional en la que se tomen los usuarios si hacen clic en el vínculo phishing y escriben sus credenciales. Este vínculo reemplaza la página de aterrizaje predeterminada. Por ejemplo, si tiene un entrenamiento de conciencia interno, puede especificar esta dirección URL aquí.
+
+   - **Categoría**: Actualmente, no se usa esta configuración (se ignora cualquier cosa que haya escrito).
+
+   - **Subject**: el campo **Subject** del mensaje de correo electrónico.
+
+   Cuando termine, haga clic en **Siguiente**.
+
+6. En el paso de **redacción de correo electrónico** , cree el cuerpo del mensaje del mensaje de correo electrónico. Puede usar la pestaña **correo electrónico** (un editor HTML enriquecido) o la ficha **origen** (código HTML sin formato).
+
+   El formato HTML puede ser tan sencillo o complejo como sea necesario. Puede insertar imágenes y texto para mejorar la increíbleidad del mensaje en el cliente de correo electrónico del destinatario.
+
+   - `${username}`inserta el nombre del destinatario.
+
+   - `${loginserverurl}`inserta el valor de la **dirección URL del servidor de inicio de sesión de suplantación de identidad** del paso anterior.
+
+   Cuando termine, haga clic en **Siguiente**.
+
+7. En el paso **confirmar** , haga clic en **Finalizar**.
+
+#### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Paso 2: crear e iniciar la campaña de suplantación de identidad de Spear
+
+1. En el centro de seguridad & cumplimiento, vaya a **simulador de ataques**de **Administración** \> de amenazas.
+
+2. En la página **simular ataques** , realice una de las siguientes selecciones en función del tipo de campaña que desee crear:
+
+   - En la sección **Spear phishing (credenciales cosecha)** , haga clic en **iniciar ataque** o en **ataque de inicio**de detalles \> de **ataque** .
+
+   - En la sección **Spear phishing (datos adjuntos)** , haga clic en **iniciar ataque** o en **ataque de inicio**de detalles \> de **ataque** .
+
+3. El Asistente para **configurar un ataque de suplantación de identidad** se inicia en un nuevo flotante. En el paso **iniciar** , siga uno de estos pasos:
+
+   - En el cuadro **nombre** , escriba un nombre para mostrar único para la campaña. No haga clic en **Usar plantilla**, ya que creará el mensaje de correo electrónico más adelante en el asistente.
+
+   - Haga clic en **Usar plantilla** y seleccione una plantilla de correo electrónico integrada o personalizada. Una vez seleccionada la plantilla, el cuadro **nombre** se rellena automáticamente en función de la plantilla, pero puede cambiar el nombre.
 
    ![Página de inicio de phishing](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
-3. Especifique los destinatarios de destino. Puede tratarse de personas o grupos de la organización. Cada destinatario de destino debe tener un buzón de Exchange Online para que el ataque tenga éxito.
+   Cuando termine, haga clic en **Siguiente**.
 
-   ![Selección de destinatarios](../../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+4. En el paso **destinatarios de destino** , siga uno de estos pasos:
 
-4. Configure los detalles del correo de suplantación de identidad.
+   - Haga clic en **Libreta de direcciones** para seleccionar los destinatarios (usuarios o grupos) de la campaña. Cada destinatario de destino debe tener un buzón de correo de Exchange Online. Si hace clic en **filtrar** y **aplicar** sin especificar ningún criterio de búsqueda, todos los destinatarios se devuelven y se agregan a la campaña.
 
-   ![Configuración de detalles de correo electrónico](../../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
+   - Haga clic en **importar** y, a continuación, en importar **archivo** para importar un archivo de valores separados por comas (CSV) o archivos separados por líneas de direcciones de correo electrónico. Cada línea debe contener la dirección de correo electrónico del destinatario.
 
-   El formato HTML puede ser tan complejo o básico como las necesidades de la campaña. Como el formato de correo electrónico es HTML, puede insertar imágenes y texto para mejorar la increíble. Tiene control sobre la apariencia que tendrá el mensaje recibido en el cliente de correo electrónico de recepción.
+   Cuando termine, haga clic en **Siguiente**.
 
-5. Especifique el texto para el campo **de (nombre)** . Este es el campo que se muestra en el **nombre para mostrar** en el cliente de correo electrónico de recepción.
+5. En el paso **configurar detalles de correo electrónico** , configure las siguientes opciones:
 
-6. Especifique el texto o el campo **de** . Se trata del campo que muestra la dirección de correo electrónico del remitente en el cliente de correo electrónico de recepción.
+   Si seleccionó una plantilla en el paso **iniciar** , la mayoría de estos valores ya están configurados, pero puede cambiarlos.
 
-   Puede escribir un espacio de nombres de correo electrónico existente dentro de la organización (al hacerlo, la dirección de correo electrónico se resolverá realmente en el cliente receptor, lo que facilitará un modelo de confianza muy alto) o puede escribir una dirección de correo electrónico externa. La dirección de correo electrónico que especifique no tiene que existir realmente, pero tiene que seguir el formato de una dirección SMTP válida, como `user@domainname.extension`.
+   - **From (nombre)**: el nombre para mostrar que se usa para el remitente del mensaje.
 
-7. Mediante el selector de lista desplegable, seleccione una dirección URL del servidor de inicio de sesión de suplantación de identidad (phishing) que refleje el tipo de contenido que tendrá en el ataque. Se proporcionan varias URL con temas que puede elegir, como la entrega de documentos, técnicas, nóminas, etc. De hecho, se trata de la URL a la que se pide a los usuarios de destino que haga clic.
+   - **From (email)**: la dirección de correo electrónico del remitente. Puede escribir una dirección de correo electrónico real o falsa desde el dominio de correo electrónico de su organización o puede escribir una dirección de correo electrónico externa real o falsa. Una dirección de correo electrónico de remitente válida de la organización se resolverá realmente en el cliente de correo electrónico del destinatario.
 
-8. Especificar una dirección URL de la página de aterrizaje personalizada. Al usar esto, se redirigirá a los usuarios a una dirección URL que especifique al final de un ataque realizado correctamente. Si tiene un entrenamiento de conciencia interno, por ejemplo, puede especificarlo aquí.
+   - **Dirección URL del servidor de inicio de sesión de phishing**: haga clic en el menú desplegable y seleccione una de las direcciones URL disponibles de la lista. Esta es la dirección URL a la que se verá tentado a los usuarios en hacer clic. Las opciones son:
 
-9. Especifique el texto para el campo **Subject** . Este es el campo que muestra el **nombre del sujeto** en el cliente de correo electrónico de recepción.
+     - <http://portal.docdeliveryapp.com>
+     - <http://portal.docdeliveryapp.net>
+     - <http://portal.docstoreinternal.com>
+     - <http://portal.docstoreinternal.net>
+     - <http://portal.hardwarecheck.net>
+     - <http://portal.hrsupportint.com>
+     - <http://portal.payrolltooling.com>
+     - <http://portal.payrolltooling.net>
+     - <http://portal.prizegiveaway.net>
+     - <http://portal.prizesforall.com>
+     - <http://portal.salarytoolint.com>
+     - <http://portal.salarytoolint.net>
 
-10. Redacte el **cuerpo del correo electrónico** que recibirá el destino.
+     > [!NOTE]
+     > <ul><li>Todas las direcciones URL son intencionadamente http, no HTTPS.</li><li>Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores Web admitidos antes de usar la dirección URL en una campaña de suplantación de identidad (phishing).</li><li>Es necesario que seleccione una dirección URL. En el caso de las campañas de **"Spear phishing" (datos adjuntos)** , puede quitar el vínculo del cuerpo del mensaje en el paso siguiente (de lo contrario, el mensaje contendrá tanto un vínculo **como** datos adjuntos).</li></ul>
 
-    `${username}`inserta el nombre de los destinos en el cuerpo del correo electrónico.
+   - **Tipo de datos adjuntos**: esta configuración solo está disponible en las campañas de **"Spear phishing" (datos adjuntos)** . Haga clic en la lista desplegable y seleccione **. DOCX** o **. PDF** de la lista.
 
-    `${loginserverurl}`inserta la dirección URL en la que desea que los usuarios de destino haga clic
+   - **Nombre de datos adjuntos**: esta configuración solo está disponible en las campañas de **"Spear phishing" (datos adjuntos)** . Escriba un nombre de archivo para los datos adjuntos. docx o. pdf.
 
-11. Elija **siguiente y** luego **Finalizar** para iniciar el ataque. El mensaje de correo electrónico de "Spear phishing" se entrega a los buzones de los destinatarios de destino.
+   - **Dirección URL de la página de aterrizaje personalizada**: escriba una página de aterrizaje opcional en la que se tomen los usuarios si hacen clic en el vínculo phishing y escriben sus credenciales. Este vínculo reemplaza la página de aterrizaje predeterminada. Por ejemplo, si tiene un entrenamiento de conciencia interno, puede especificar esta dirección URL aquí.
 
-## <a name="attachment-spear-phishing-attack"></a>Datos adjuntos ataques de suplantación de identidad
+   - **Subject**: el campo **Subject** del mensaje de correo electrónico.
 
-La suplantación de identidad (phishing) es un término genérico para un conjunto amplio de ataques que se clasifican como un ataque de tipo de ingeniería social. Este ataque se centra en la suplantación de identidad de los datos adjuntos, un ataque más dirigido destinado a un grupo específico de personas o una organización. Normalmente, se trata de un ataque personalizado con algún reconocimiento realizado y con un nombre para mostrar que generará confianza en el destinatario, como un mensaje de correo electrónico que parece que proviene de un ejecutivo de la organización.
+   Cuando termine, haga clic en **Siguiente**.
 
-Este ataque se centra en permitirle manipular a la que parece que el mensaje se ha originado cambiando el nombre para mostrar y la dirección de origen, pero esta vez, en lugar de ofrecer una dirección URL para intentar atraer al usuario final para hacer clic en, ofrecemos datos adjuntos que estamos tratando de obtener t se abra el usuario final. 
+6. En el paso de **redacción de correo electrónico** , cree el cuerpo del mensaje del mensaje de correo electrónico. Si seleccionó una plantilla en el paso **iniciar** , el cuerpo del mensaje ya está configurado, pero puede personalizarlo. Puede usar la pestaña **correo electrónico** (un editor HTML enriquecido) o la ficha **origen** (código HTML sin formato).
 
-### <a name="to-simulate-a-attachment-spear-phishing-attack"></a>Para simular un ataque de suplantación de identidad de datos adjuntos
+   El formato HTML puede ser tan sencillo o complejo como sea necesario. Puede insertar imágenes y texto para mejorar la increíbleidad del mensaje en el cliente de correo electrónico del destinatario.
 
-1. Siga los pasos anteriores, teniendo en cuenta que este tiempo ha hecho clic en el **ataque de datos adjuntos** en la página de aterrizaje.
+   - `${username}`inserta el nombre del destinatario.
 
-2. A medida que avance en el asistente, verá dos opciones que puede configurar. El **tipo de datos adjuntos**son compatibles con dos tipos de datos adjuntos: **. docx** o **. pdf**. El **nombre de los datos adjuntos**, use este campo para crear un nombre de archivo adjunto significativo para la campaña.
+   - `${loginserverurl}`inserta el valor **URL del servidor de inicio de sesión de suplantación de identidad** .
 
-## <a name="password-spray-attack"></a>Ataque rociado de contraseñas
+   Para las campañas de **"Spear phishing" (datos adjuntos)** , debe quitar el vínculo del cuerpo del mensaje (de lo contrario, el mensaje contendrá tanto un vínculo **como** datos adjuntos y los clics de vínculo no se realizará el seguimiento en una campaña de datos adjuntos).
 
-Un ataque por pulverización de contraseña contra una organización suele usarse después de que un actor incorrecto haya adquirido correctamente una lista de usuarios válidos del espacio empresarial. El actor incorrecto conoce las contraseñas comunes que usan las personas. Se trata de un ataque de uso generalizado, ya que es un ataque barato de ejecutar y más difícil de detectar que los enfoques de fuerza bruta.
+   ![Crear cuerpo de correo electrónico](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
-Este ataque se centra en permitir que especifique una contraseña común en una base de usuarios de gran tamaño.
+   Cuando termine, haga clic en **Siguiente**.
 
-**Nota importante** la ejecución del ataque de pulverización de contraseñas contra cuentas de usuario final que ya tienen autenticación multifactor dará como resultado un intento incorrecto de las cuentas en el informe. Esto se debe a que la autenticación multifactor es una de las mechanims principales para ayudar a proteger contra ataques por pulverización de contraseñas, por lo que se espera.
+7. En el paso **confirmar** , haga clic en **Finalizar** para iniciar la campaña. El mensaje de suplantación de identidad se entrega a los destinatarios de destino.
 
-### <a name="to-simulate-a-password-spray-attack"></a>Para simular un ataque rociado de contraseñas
+## <a name="password-attack-campaigns"></a>Campañas de ataque con contraseña
 
-1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), elija **simulador de ataque**de administración \> de **amenazas** .
+Un *ataque de contraseña* intenta adivinar las contraseñas de las cuentas de usuario de una organización, normalmente después de que el atacante haya identificado una o varias cuentas de usuario válidas.
 
-2. Especifique un nombre de campaña significativo para el ataque.
+En el simulador de ataque, hay disponibles dos tipos diferentes de campañas para ataques con contraseña para que pueda probar la complejidad de las contraseñas de los usuarios:
 
-3. Especifique los destinatarios de destino. Puede tratarse de personas o grupos de la organización. Un destinatario de destino debe tener un buzón de Exchange Online para que el ataque tenga éxito.
+- **Contraseña de fuerza bruta (ataque de diccionario)**: un ataque de *Diccionario* o de *fuerza bruta*usa un archivo de Diccionario de gran tamaño de contraseñas en una cuenta de usuario con la esperanza de que uno de ellos trabaje (muchas contraseñas con una cuenta). Los bloqueos de contraseñas incorrectos ayudan a impedir ataques de contraseñas de fuerza bruta.
 
-4. Especifique la contraseña que se va a usar para el ataque. Por ejemplo, una contraseña común y relevante que podría probar es `Summer2019`. Otro podría ser `Fall2019`o `Password1`.
+  Para el ataque de diccionario, puede especificar una o varias contraseñas para probarlas (especificadas manualmente o en un archivo cargado) y puede especificar uno o varios usuarios.
 
-5. Elija **Finalizar** para iniciar el ataque.
+- **Ataque por pulverización de contraseñas**: un ataque *rociado de contraseñas* usa la misma contraseña cuidadosamente considerada con una lista de cuentas de usuario (una contraseña en muchas cuentas). Los ataques por pulverización de contraseña son más difíciles de detectar que los ataques de fuerza bruta de contraseña (la probabilidad de que aumente el éxito cuando un atacante prueba una contraseña entre docenas o cientos de cuentas sin el riesgo de que se bloquee el bloqueo de contraseña incorrecto del usuario).
 
-## <a name="brute-force-password-attack"></a>Ataque de fuerza bruta con contraseña
+  Para el ataque con aerosol de contraseña, solo puede especificar una contraseña para probar y puede especificar uno o varios usuarios.
 
-Un ataque de fuerza bruta contra una organización se suele usar después de que un actor incorrecto haya adquirido correctamente una lista de usuarios clave del espacio empresarial. Este ataque se centra en probar un conjunto de contraseñas en una sola cuenta de usuario.
+> [!NOTE]
+> Los ataques de contraseñas en el simulador de ataque pasan las solicitudes de nombre de usuario y contraseña básicas de autenticación a un extremo, por lo que también funcionan con otros métodos de autenticación (AD FS, sincronización de hash de contraseña, paso a través, PingFederate, etc.). Para los usuarios con la MFA habilitada, aunque el ataque de contraseña intente su contraseña real, el intento se registrará siempre como un error (es decir, los usuarios de MFA nunca aparecerán en el recuento **correcto de intentos** de la campaña). Este es el resultado esperado. MFA es un método principal para ayudar a proteger contra ataques de contraseñas.
 
-**Nota importante** la ejecución de los ataques de fuerza bruta contra contraseñas contra las cuentas de usuario final que ya tienen autenticación multifactor dará como resultado un intento no satisfactorio en las cuentas del informe. Esto se debe a que la autenticación multifactor es una de las mechanims principales para ayudar a proteger contra ataques de contraseñas de fuerza bruta, por lo que se espera.
+### <a name="create-and-launch-a-password-attack-campaign"></a>Crear e iniciar una campaña de ataque con contraseña
 
-### <a name="to-simulate-a-brute-force-password-attack"></a>Para simular un ataque de fuerza bruta de contraseña
+1. En el centro de seguridad & cumplimiento, vaya a **simulador de ataques**de **Administración** \> de amenazas.
 
-1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), elija **simulador de ataque**de administración \> de **amenazas** .
+2. En la página **simular ataques** , realice una de las siguientes selecciones en función del tipo de campaña que desee crear:
 
-2. Especifique un nombre de campaña significativo para el ataque.
+   - En la sección **contraseña de fuerza bruta (ataque de diccionario)** , haga clic en **iniciar ataque** o en **ataque de inicio**de detalles \> de **ataque** .
 
-3. Especifique el destinatario de destino. Un destinatario de destino debe tener un buzón de Exchange Online para que el ataque tenga éxito.
+   - en la **sección ataque por pulverización de contraseña** , haga clic en **iniciar ataque** o en **ataque de inicio**de detalles \> de **ataque** .
 
-4. Especifique un conjunto de contraseñas que se usarán para el ataque. Para ello, puede usar un archivo de texto (. txt) para la lista de contraseñas. El archivo de texto no puede superar los 10 MB en el tamaño del archivo. Use una contraseña por línea y asegúrese de incluir un retorno de la última contraseña en la lista.
+3. El Asistente para **configurar un ataque de contraseña** comienza en un nuevo control flotante. En el paso **iniciar** , escriba un nombre para mostrar único para la campaña y, a continuación, haga clic en **siguiente**.
 
-5. Elija **Finalizar** para iniciar el ataque.
+4. En el paso **usuarios de destino** , siga uno de estos pasos:
 
+   - Haga clic en **Libreta de direcciones** para seleccionar los destinatarios (usuarios o grupos) de la campaña. Cada destinatario de destino debe tener un buzón de correo de Exchange Online. Si hace clic en **filtrar** y **aplicar** sin especificar ningún criterio de búsqueda, todos los destinatarios se devuelven y se agregan a la campaña.
 
+   - Haga clic en **importar** y, a continuación, en importar **archivo** para importar un archivo de valores separados por comas (CSV) o archivos separados por líneas de direcciones de correo electrónico. Cada línea debe contener la dirección de correo electrónico del destinatario.
 
-Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que se está desarrollando, lo que está implementando y lo que ya se ha iniciado.
+   Cuando termine, haga clic en **Siguiente**.
 
-## <a name="see-also"></a>Vea también
+5. En el paso **elegir configuración de ataque** , elija qué hacer en función del tipo de campaña:
 
-[Descripción del servicio de Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+   - **Contraseña de fuerza bruta (ataque de diccionario)**: realice uno de los pasos siguientes:
 
-[Protección contra amenazas avanzada de Office 365](office-365-atp.md)
+     - **Escriba las contraseñas manualmente**: en el cuadro **presione Entrar para agregar una contraseña** , escriba una contraseña y, a continuación, presione Entrar. Repita este paso tantas veces como sea necesario.
+
+     - **Cargar contraseñas desde un archivo de diccionario**: haga clic en **cargar** para importar un archivo de texto existente que contenga una contraseña en cada línea y una última línea en blanco. El archivo de texto debe tener un tamaño de 10 MB o menos, y no puede contener más de 30000 contraseñas.
+
+   - **Ataque por pulverizador de contraseña**: en **las contraseñas que se van a usar en el cuadro ataque** , escriba una contraseña.
+
+   Cuando termine, haga clic en **Siguiente**.
+
+6. En el paso **confirmar** , haga clic en **Finalizar** para iniciar la campaña. Las contraseñas especificadas se prueban en los usuarios especificados.
+
+## <a name="view-campaign-results"></a>Ver los resultados de la campaña
+
+Después de iniciar una campaña, puede comprobar el progreso y los resultados en la Página principal de **ataques de simulación** .
+
+Las campañas activas mostrarán una barra de estado, un valor porcentual completado y el recuento de (usuarios completados) de (total de usuarios) ". Al hacer clic en el botón **Actualizar** se actualizará el progreso de las campañas activas. También puede hacer clic en **Finalizar** para detener una campaña activa.
+
+Una vez finalizada la campaña, el estado cambia a **ataque completado**. Puede ver los resultados de la campaña realizando una de las acciones siguientes:
+
+- En la página principales **ataques de simulación** , haga clic en **Ver informe** bajo el nombre de la campaña.
+
+- En la página principales **ataques de simulación** , haga clic en detalles de **ataque** en la sección para el tipo de ataque. En la página **detalles de ataque** que se abre, seleccione la campaña en la sección historial de **ataques** .
+
+Cualquiera de las acciones anteriores le llevará a una página denominada **detalles del ataque**. La información disponible en esta página para cada tipo de campaña se describe en las secciones siguientes.
+
+### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Resultados de la campaña de Spear phishing (recopilación de credenciales)
+
+La siguiente información está disponible en la página **detalles de ataque** para cada campaña:
+
+- La duración (fecha y hora de inicio y fecha de finalización) de la campaña.
+
+- **Total de usuarios a los que se destina**
+
+- **Intentos correctos**: el número de usuarios que hizo clic en el vínculo **y** escribió sus credenciales (*cualquier* valor de nombre de usuario y contraseña).
+
+- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts** / **número total de usuarios a los**que se ha dirigido correctamente.
+
+- **Clic más rápido**: Cuánto tiempo tardó el primer usuario en hacer clic en el vínculo después de iniciar la campaña.
+
+- **Promedio haga clic**en: cantidad de tiempo que tardó en hacer que todos los usuarios haga clic en el vínculo dividido por el número de usuarios que hizo clic en el vínculo.
+
+- **Tasa de éxito**: un porcentaje calculado por (número de usuarios que hizo clic en el vínculo)/ **total de usuarios dirigidos**.
+
+- **Credenciales más rápidas**: Cuánto tiempo tardó el primer usuario en escribir sus credenciales después de iniciar la campaña.
+
+- **Promedio de credenciales**: la suma de cuánto tiempo tardó en escribir sus credenciales dividida por el número de usuarios que escribieron sus credenciales.
+
+- **Tasa de éxito**de la credencial: porcentaje calculado por (número de usuarios que han especificado sus credenciales)/ **total de usuarios a los**que se destina.
+
+- Gráfico de barras que muestra el **vínculo en** el que se hizo clic y los números de **credenciales especificados** por día.
+
+- Un gráfico circular que muestra el **vínculo en**el que se hizo clic, las **credenciales suministradas**y **ninguno** de los porcentajes de la campaña.
+
+- La sección **usuarios comprometidos** muestra los detalles de los usuarios que hacer clic en el vínculo:
+
+  - La dirección de correo electrónico del usuario
+
+  - Fecha y hora en que hizo clic en el vínculo.
+
+  - La dirección IP del cliente.
+
+  - Detalles sobre la versión del usuario de Windows y el explorador Web.
+
+  Puede hacer clic en **exportar** para exportar los resultados a un archivo CSV.
+
+### <a name="spear-phishing-attachment-campaign-results"></a>Resultados de la campaña de Spear phishing (datos adjuntos)
+
+La siguiente información está disponible en la página **detalles de ataque** para cada campaña:
+
+- La duración (fecha y hora de inicio y fecha de finalización) de la campaña.
+
+- **Total de usuarios a los que se destina**
+
+- **Intentos correctos**: el número de usuarios que abrieron o descargaron y abrieron los datos adjuntos (la vista previa no cuenta).
+
+- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts** / **número total de usuarios a los**que se ha dirigido correctamente.
+
+- **Tiempo de apertura de datos adjuntos más rápido**: Cuánto tiempo tardó el primer usuario en abrir los datos adjuntos después de iniciar la campaña.
+
+- **Tiempo medio de apertura de datos adjuntos**: la suma de la duración de la apertura de los datos adjuntos por el número de usuarios que abrieron los datos adjuntos.
+
+- **Tasa de éxito de apertura de datos adjuntos**: porcentaje calculado por (número de usuarios que abrieron los datos adjuntos)/ **total de usuarios dirigidos**.
+
+### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Resultados de la campaña de contraseña de fuerza bruta (ataque de diccionario)
+
+La siguiente información está disponible en la página **detalles de ataque** para cada campaña:
+
+- La duración (fecha y hora de inicio y fecha de finalización) de la campaña.
+
+- **Total de usuarios a los que se destina**
+
+- **Intentos correctos**: el número de usuarios que se encontraron que utilizaban una de las contraseñas especificadas.
+
+- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts** / **número total de usuarios a los**que se ha dirigido correctamente.
+
+- La sección **usuarios comprometidos** muestra las direcciones de correo electrónico de los usuarios afectados. Puede hacer clic en **exportar** para exportar los resultados a un archivo CSV.
+
+### <a name="password-spray-attack-campaign-results"></a>Resultados de la campaña de ataque con aerosol de contraseña
+
+La siguiente información está disponible en la página **detalles de ataque** para cada campaña:
+
+- La duración (fecha y hora de inicio y fecha de finalización) de la campaña.
+
+- **Total de usuarios a los que se destina**
+
+- **Intentos correctos**: el número de usuarios que se encontraron que usaban la contraseña especificada.
+
+- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts** / **número total de usuarios a los**que se ha dirigido correctamente.

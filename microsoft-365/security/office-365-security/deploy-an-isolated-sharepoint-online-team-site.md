@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Resumen: implemente un nuevo sitio de grupo aislado de SharePoint Online con estas instrucciones paso a paso.'
-ms.openlocfilehash: 39cf33ce3314e2eb0cd313ff0382f50d7cb8487a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 07867b4646926468f808f8f34086cf9267d7ab7b
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088816"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612620"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implementar un sitio de grupo de SharePoint Online aislado
 
@@ -72,13 +72,13 @@ Debe crear los siguientes grupos de acceso en Azure AD:
     
 4. En la hoja **nuevo grupo** :
     
-  - Seleccione **Seguridad** en **Tipo de grupo**.
-    
-  - Escriba el nombre del grupo en **nombre**.
-    
-  - Escriba una descripción del grupo en **Descripción del grupo**.
-    
-  - Seleccione **Asignada** en **Tipo de pertenencia**.
+    - Seleccione **Seguridad** en **Tipo de grupo**.
+
+    - Escriba el nombre del grupo en **nombre**.
+
+    - Escriba una descripción del grupo en **Descripción del grupo**.
+
+    - Seleccione **Asignada** en **Tipo de pertenencia**.
     
 5. Haga clic en **Crear** y, después, cierre la hoja **Grupo**.
     
@@ -155,59 +155,63 @@ Esta es la configuración resultante con los tres grupos de acceso al sitio rell
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Fase 2: crear y configurar el sitio de grupo aislado
 
-En esta fase, se crea el sitio de SharePoint Online aislado y se configuran los permisos para los niveles de permisos predeterminados de SharePoint Online para usar los nuevos grupos de acceso basados en Azure AD.
+En esta fase, se crea el sitio de SharePoint Online aislado y se configuran los permisos para los niveles de permisos predeterminados de SharePoint Online para usar los nuevos grupos de acceso basados en Azure AD. De forma predeterminada, los nuevos sitios de grupo incluyen un grupo de Office 365 y otros recursos relacionados, pero, en este caso, crearemos un sitio de grupo sin un grupo de Office 365. Esto permite mantener los permisos por completo a través de SharePoint.
   
 En primer lugar, cree el sitio de grupo de SharePoint Online con estos pasos.
   
-1. Inicie sesión en el centro de administración con una cuenta que también se vaya a usar para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Inicie sesión en el centro de administración de Microsoft 365 con una cuenta que también se usará para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+
+2. En el centro de administración de Microsoft 365, en **centros de administración**, haga clic en **SharePoint**.
+
+3. En el centro de administración de SharePoint, expanda **sitios** y haga clic en **sitios activos**.
+
+4. Haga clic en **crear**y, a continuación, elija **otras opciones**.
+
+5. En la lista **Elija una plantilla** , elija **sitio de grupo**.
+   
+6. En **nombre del sitio**, escriba un nombre para el sitio de grupo. 
     
-2. En la lista de iconos, haga clic en **SharePoint**.
-    
-3. En la nueva pestaña **SharePoint** del explorador, haga clic en **+ Crear sitio**.
-    
-4. En la página **Crear un sitio**, haga clic en **Sitio de grupo**.
-    
-5. En **nombre del sitio**, escriba un nombre para el sitio de grupo. 
-    
-6. En **Descripción del sitio de grupo,** escriba una descripción opcional del propósito del sitio.
-    
-7. En **Configuración de privacidad**, seleccione **Private - only members can access this site** (Privado: solo los miembros tienen acceso a este sitio) y haga clic en **Siguiente**.
-    
-8. En el panel **Who do you want to add?** (Usuarios que quiere agregar), haga clic en **Finalizar**.
+7. En **Administrador principal**, escriba la cuenta con la que ha iniciado sesión.
+ 
+8. Haga clic en **Finalizar**.
     
 Después, desde el nuevo sitio de grupo de SharePoint Online, configure los permisos.
   
 1. En la barra de herramientas, haga clic en el icono de configuración y, luego, en **Permisos del sitio**.
+
+2. En **uso compartido del sitio**, haga clic en **cambiar el modo en que los miembros pueden compartir**.
+
+3. Elija los **únicos propietarios de sitios que pueden compartir archivos, carpetas y el sitio**.
+
+4. Establezca **permitir solicitudes de acceso** en **desactivado**.
+
+5. Haga clic en **Guardar**.
     
-2. En el panel **Permisos del sitio**, haga clic en **Advanced permissions settings** (Configuración de permisos avanzada).
+6. En el panel **permisos** , haga clic en **Configuración avanzada de permisos**.
     
-3. En la nueva pestaña **Permisos** del explorador, haga clic en **Configuración de solicitud de acceso**.
+7. En la pestaña **permisos** del explorador, haga clic ** \<en nombre del sitio> miembros** en la lista.
     
-4. En el cuadro de diálogo **Configuración de solicitud de acceso**, desactive **Permitir que los miembros compartan el sitio y archivos y carpetas individuales** y **Permitir solicitudes de acceso** (de modo que las tres casillas estén desactivadas) y después, haga clic en **Aceptar**.
+8. En **Personas y grupos**, haga clic en **Nuevo**.
     
-5. En la pestaña **permisos** del explorador, haga clic ** \<en nombre del sitio> miembros** en la lista.
+9. En el cuadro de diálogo **compartir** , escriba el nombre del grupo de acceso de los miembros del sitio, selecciónelo y, a continuación, haga clic en **compartir**.
     
-6. En **Personas y grupos**, haga clic en **Nuevo**.
+10. Haga clic en el botón Atrás del explorador.
     
-7. En el cuadro de diálogo **compartir** , escriba el nombre del grupo de acceso de los miembros del sitio, selecciónelo y, a continuación, haga clic en **compartir**.
+11. Haga clic ** \<en nombre del sitio> propietarios** en la lista.
     
-8. Haga clic en el botón Atrás del explorador.
+12. En **Personas y grupos**, haga clic en **Nuevo**.
     
-9. Haga clic ** \<en nombre del sitio> propietarios** en la lista.
+13. En el cuadro de diálogo **compartir** , escriba el nombre del grupo de acceso de administradores del sitio, selecciónelo y, a continuación, haga clic en **compartir**.
     
-10. En **Personas y grupos**, haga clic en **Nuevo**.
+14. Haga clic en el botón Atrás del explorador.
     
-11. En el cuadro de diálogo **compartir** , escriba el nombre del grupo de acceso de administradores del sitio, selecciónelo y, a continuación, haga clic en **compartir**.
+15. Haga clic ** \<en nombre del sitio> los visitantes** de la lista.
     
-12. Haga clic en el botón Atrás del explorador.
+16. En **Personas y grupos**, haga clic en **Nuevo**.
     
-13. Haga clic ** \<en nombre del sitio> los visitantes** de la lista.
+17. En el cuadro de diálogo **compartir** , escriba el nombre del grupo de acceso de visores del sitio, selecciónelo y, a continuación, haga clic en **compartir**.
     
-14. En **Personas y grupos**, haga clic en **Nuevo**.
-    
-15. En el cuadro de diálogo **compartir** , escriba el nombre del grupo de acceso de visores del sitio, selecciónelo y, a continuación, haga clic en **compartir**.
-    
-16. Cierre la pestaña **Permisos** del explorador.
+18. Cierre la pestaña **Permisos** del explorador.
     
 Los resultados de esta configuración de permisos son los siguientes:
   
@@ -229,7 +233,7 @@ Usted y los miembros del sitio, a través de la pertenencia a grupos en uno de l
 
 Cuando necesite cambiar la pertenencia al grupo de acceso al sitio o crear una carpeta de documentos con permisos personalizados, vea [administrar un sitio de grupo de SharePoint Online aislado](manage-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
   

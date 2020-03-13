@@ -15,13 +15,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
-description: Vea los detalles técnicos sobre encyption en Office 365.
-ms.openlocfilehash: a1eaa10f35a70688bc26967b7344cd90b2ad8343
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Vea los detalles técnicos sobre el cifrado en Office 365.
+ms.openlocfilehash: afd02ba6480e692bf16bf6dd94f192a5889590ee
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601397"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610587"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Información de referencia técnica sobre el cifrado en Office 365
 
@@ -53,6 +53,8 @@ TLS (Seguridad de la capa de transporte) y SSL (antecesor de TLS) son protocolos
 - TLS versión 1.0 (TLS 1.0)
     
  La compatibilidad con TLS 1,0 y TLS 1,1 estará en desuso el 31 de octubre de 2018. Vea [desuso de la compatibilidad con TLS 1,0 y 1,1 y qué significa para](technical-reference-details-about-encryption.md#TLS11and12deprecation) obtener más información. 
+ 
+ La versión 1,3 de TLS (TLS 1,3) no es compatible actualmente.
   
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>Desuso de la compatibilidad con TLS 1,0 y 1,1, y lo que esto significa para usted
 <a name="TLS11and12deprecation"> </a>
@@ -65,7 +67,10 @@ TLS 1,0 y TLS 1,1 quedarán obsoletos oficialmente en las fechas siguientes:
 - 1 de junio de 2020 para clientes en los entornos de todo el mundo y GCC.
 - 15 de enero de 2020 para los clientes en los entornos soberanos altos y DoD de GCC. 
 
+Debe asegurarse de que todas las combinaciones cliente-servidor y explorador-servidor usen TLS 1,2 y los trajes de cifrado modernos para mantener una conexión segura con los servicios de Office 365. Puede que tenga que actualizar ciertas combinaciones cliente-servidor y explorador-servidor. Para obtener más información acerca de cómo esto afecta, vea [preparación del uso obligatorio de TLS 1,2 en Office 365](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365).
+
 Debe asegurarse de que todas las combinaciones cliente-servidor y explorador-servidor usen TLS 1,2 (o una versión posterior) para mantener la conexión con los servicios de Office 365. Puede que tenga que actualizar ciertas combinaciones cliente-servidor y explorador-servidor. Para obtener más información acerca de cómo esto afecta, vea [preparación del uso obligatorio de TLS 1,2 en Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+
   
 ## <a name="deprecating-support-for-3des"></a>Desuso de la compatibilidad con 3DES
 <a name="TLS11and12deprecation"> </a>
@@ -83,7 +88,7 @@ A partir del 2016 de junio de Office 365 ya no acepta un certificado SHA-1 para 
 Un conjunto de cifrado es una colección de algoritmos de cifrado que TLS emplea para establecer conexiones seguras. Los conjuntos de cifrado compatibles con Office 365 se enumeran en la siguiente tabla, en orden de rigor con el conjunto de cifrado más seguro que aparece en primer lugar. Cuando Office 365 recibe una solicitud de conexión, primero intenta conectarse con el conjunto de cifrado de nivel superior y, si no lo consigue, prueba con el segundo conjunto de cifrado de la lista, y así sucesivamente. Cuando Office 365 envía una solicitud de conexión a otro servidor o a un cliente, el servidor o el cliente receptor elige el conjunto de cifrado o si se va a usar TLS.
 
 > [!IMPORTANT]
-> Tenga en cuenta que las versiones de TLS están en desuso y que *no deben usarse* versiones obsoletas cuando hay versiones más recientes disponibles. En otras palabras, en cualquier lugar en el que se muestre que se admiten TLS 1,0, 1,1 y 1,2, elija la versión *más reciente* (TLS 1,2).
+> Tenga en cuenta que las versiones de TLS están en desuso y que *no deben usarse* versiones obsoletas cuando hay versiones más recientes disponibles. En otras palabras, en cualquier lugar en el que se muestre que se admiten TLS 1,0, 1,1 y 1,2, elija la versión compatible *más reciente* (TLS 1,2). Actualmente, no se admite TLS. Si los servicios heredados no requieren TLS 1,0 o 1,1 debe considerar la posibilidad de deshabilitarlos. 
   
 |**Protocolos**|**Nombre del conjunto de cifrado**|**Algoritmo/fuerza de intercambio de claves**|**Compatibilidad con confidencialidad directa perfecta**|**Algoritmo de autenticación/seguridad**|**Cifrado o seguridad**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -99,7 +104,7 @@ Un conjunto de cifrado es una colección de algoritmos de cifrado que TLS emplea
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
    
 ## <a name="related-topics"></a>Temas relacionados
-[Conjuntos de cifrado TLS en Windows 10 v1607](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
+[Conjuntos de cifrado TLS en Windows 10 V1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Cifrado en Office 365](encryption.md)
   
@@ -109,4 +114,5 @@ Un conjunto de cifrado es una colección de algoritmos de cifrado que TLS emplea
   
 [Mejoras de cifrado de TLS/SSL (centro de TI de Windows)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
+ [Preparación para TLS 1,2 en Office 365 y Office 365 GCC](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: El cifrado de mensajes avanzado en Office 365 ayuda a las organizaciones a cumplir sus obligaciones de cumplimiento al permitir que los administradores hagan incluso más cosas con los mensajes protegidos.
-ms.openlocfilehash: 580803d7b15608ebb0852896cdbd9a43ee5a2ff4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 99dacc928c8549157ff0d9d1d9a7c07fc33c2600
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601807"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610608"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Cifrado avanzado de mensajes de Office 365
 
@@ -45,4 +45,4 @@ Con el cifrado de mensajes avanzado, no está limitado a una sola plantilla de p
 
 [Revocar correo electrónico cifrado por el cifrado de mensajes avanzado de Office 365](revoke-ome-encrypted-mail.md). Controle los correos electrónicos confidenciales compartidos fuera de la organización y mejore la protección al revocar el acceso a través de un portal web seguro a los correos electrónicos cifrados.  
 
-Con Office 365 Advanced Message Encryption, siempre que aplique una plantilla de personalización de marca personalizada, Office 365 aplica un contenedor al correo electrónico que se ajusta a la regla de flujo de correo a la que se aplica la plantilla. Solo puede revocar mensajes y aplicar fechas de caducidad a los mensajes que reciben los usuarios a través del portal. Es decir, se aplica un correo electrónico con una plantilla de personalización de marca personalizada. Para obtener más información y un ejemplo, consulte las instrucciones en [asegurarse de que todos los destinatarios externos usan el portal OME para leer correo cifrado: solo el cifrado de mensajes avanzado de Office 365](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only).
+Con Office 365 Advanced Message Encryption, siempre que aplique una plantilla de personalización de marca personalizada, Office 365 aplica un contenedor al correo electrónico que se ajusta a la regla de flujo de correo a la que se aplica la plantilla. Solo puede revocar mensajes y aplicar fechas de caducidad a los mensajes que reciben los usuarios a través del portal. Es decir, se aplica un correo electrónico con una plantilla de personalización de marca personalizada. Para obtener más información y un ejemplo, consulte la guía en [Asegúrese de que todos los destinatarios externos usan el portal OME para leer correo cifrado](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail).

@@ -16,11 +16,11 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601027"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544029"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades
 
@@ -72,7 +72,7 @@ Los siguientes clientes de correo electrónico son compatibles con la autenticac
 |**Windows**|Outlook|2016, 2013 [Habilitar autenticación moderna](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), [actualizaciones necesarias](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook para iOS|[Más reciente](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook para Android|[Más reciente](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
-|**Os**|Outlook|2016|
+|**macOS**|Outlook|2016|
 |**Linux**|No compatible||
 |||
 
@@ -82,13 +82,13 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 
 |Plataforma|Word/Excel/PowerPoint|OneNote|Aplicación OneDrive|Aplicación SharePoint|Cliente de sincronización de OneDrive|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|Compatible|Compatible|N/D|N/D|Versión preliminar<sup>*</sup>|
-|Windows 8.1|Compatible|Compatible|N/D|N/D|Versión preliminar<sup>*</sup>|
-|Windows 10|Compatible|Compatible|N/D|N/D|Versión preliminar<sup>*</sup>|
+|Windows 7|Compatible.|Compatible.|N/D|N/D|Versión preliminar<sup>*</sup>|
+|Windows 8.1|Compatible.|Compatible.|N/D|N/D|Versión preliminar<sup>*</sup>|
+|Windows 10|Compatible.|Compatible.|N/D|N/D|Versión preliminar<sup>*</sup>|
 |Windows Phone 10|No admitido|No admitido|No se admite|No se admite|No se admite|
-|Android|Compatible|Compatible|Compatible|Compatible|No aplicable|
-|iOS|Compatible|Compatible|Compatible|Compatible|No aplicable|
-|Os|Versión preliminar pública|Versión preliminar pública|N/D|N/D|No compatible|
+|Android|Compatible.|Compatible.|Compatible.|Compatible.|No aplicable|
+|iOS|Compatible.|Compatible.|Compatible.|Compatible.|No aplicable|
+|macOS|Versión preliminar pública|Versión preliminar pública|N/D|N/D|No compatible|
 |Linux|No admitido|No admitido|No admitido|No admitido|No admitido|
 
 <sup>*</sup>Obtenga más información sobre el uso de acceso condicional con el [cliente de sincronización de OneDrive](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
@@ -117,7 +117,7 @@ Entre las recomendaciones adicionales se incluyen las siguientes:
 - Use las cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para uso no administrativo normal y solo deben usar su cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de trabajo. [Los roles de administrador de office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) tienen muchos más privilegios que los servicios de Office 365.
 - Siga los procedimientos recomendados para proteger las cuentas con privilegios en Azure AD como se describe en este [artículo](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Configurar las directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md)
 
