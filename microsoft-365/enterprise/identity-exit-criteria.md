@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Asegúrese de que la configuración cumpla los criterios de Microsoft 365 Enterprise para la infraestructura y los servicios basados en identidades.
 ms.openlocfilehash: 3fd4d0a1df50d55cb7a21668b609341d0c01aa35
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067316"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544069"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Fase 2: Criterios de salida de infraestructura de identidades
 
