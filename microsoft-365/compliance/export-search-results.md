@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
 ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074047"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634938"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -212,7 +212,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
 - El tamaño máximo de un archivo PST que se puede exportar es de 10 GB de forma predeterminada. Esto significa que si los resultados de la búsqueda del buzón de un usuario son superiores a 10 GB, los resultados de la búsqueda para el buzón se exportarán en dos (o más) archivos PST independientes. Si elige exportar todos los resultados de búsqueda en un solo archivo PST, el archivo PST se Spilt en archivos PST adicionales si el tamaño total de los resultados de la búsqueda es superior a 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Consulte [cambiar el tamaño de los archivos PST al exportar los resultados de la búsqueda de eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     
-    Además, los resultados de la búsqueda de un buzón de correo específico no se dividirán entre varios archivos PST a menos que el contenido de un buzón de correo sea superior a 10 GB. Si opta por exportar los resultados de la búsqueda de un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda tienen un tamaño superior a 10 GB, los elementos siguen organizados en orden cronológico, por lo que se spiltrán en archivos PST adicionales basados en la d enviada izar.
+    Además, los resultados de la búsqueda de un buzón de correo específico no se dividirán entre varios archivos PST a menos que el contenido de un buzón de correo sea superior a 10 GB. Si opta por exportar los resultados de la búsqueda de un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda tienen un tamaño superior a 10 GB, los elementos siguen organizados en orden cronológico, por lo que se Spilt en archivos PST adicionales en función del remitente obsolet.
      
  ### <a name="export-reports"></a>Exportar informes
   

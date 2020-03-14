@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo relacionadas con los productos de Microsoft.
 ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083936"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634138"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -120,7 +120,7 @@ No se pueden crear grupos como entidades independientes. Un grupo siempre debe c
 2. En el panel desplegable **evaluación** , escriba un título para la evaluación y seleccione una plantilla en el menú desplegable.
 3. En **Seleccione un grupo o agregue un nuevo grupo**, seleccione **Agregar un nuevo grupo** y escriba el nombre del grupo en el campo siguiente.
 4. Para copiar la información de un grupo existente, active la opción **¿desea copiar los datos de un grupo existente?** a **activado.** Seleccione el grupo que desea copiar en el menú desplegable que hay debajo y active las casillas de verificación de los campos que desee aplicar a la nueva evaluación en el nuevo grupo.
-5. Seleccione **Guardar**. Cuando haya finalizado, el panel de control flotante se cerrará y el nuevo grupo se mostrará automáticamente en el panel.
+5. Haga clic en **Guardar**. Cuando haya finalizado, el panel de control flotante se cerrará y el nuevo grupo se mostrará automáticamente en el panel.
 
 Qué se debe saber al trabajar con grupos:
   
@@ -186,7 +186,7 @@ De un solo vistazo, puede ver el título, el propietario, la categoría, el cump
 
 1. Seleccione los puntos suspensivos (...) de la acción que desea modificar y seleccione **Editar**.
 2. Alterne el conmutador de la actualización continua de puntuación segura en activado o desactivado para habilitar o deshabilitar la supervisión continua mediante la puntuación segura.
-3. Seleccione **Guardar**.
+3. Haga clic en **Guardar**.
 
 Cuando las organizaciones implementan por primera vez Microsoft 365 u Office 365, la puntuación segura tarda aproximadamente siete días en completarse en recopilar datos y factorizar la puntuación. Durante este tiempo, la configuración de la opción de actualización continua de puntuación segura como **desactivada** y la configuración manual de una acción para **implementada** contará esa acción hacia su puntuación. Después de los siete días iniciales, al desactivar la actualización continua de la actualización segura, se habilitará la supervisión continua a partir de ese momento.
 
@@ -596,7 +596,7 @@ Puede exportar una evaluación a un archivo de Excel para las partes interesadas
 
 ![Informe de Excel de evaluación del administrador de cumplimiento](../media/compliance-manager-assessment-report.png)
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 En la tabla siguiente se describe cada permiso del administrador de cumplimiento y lo que permite al usuario. La tabla también indica el rol al que se asigna cada permiso.
 

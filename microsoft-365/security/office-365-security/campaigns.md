@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre las Vistas de la campaña en la Protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 350f4f9007bf6f09836080af65802a9757532dcc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083557"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637333"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Vistas de la campaña en ATP de Office 365
 
@@ -60,9 +60,9 @@ Las vistas de campaña están disponibles en el [centro de seguridad & cumplimie
 
 También puede obtener acceso a la vista campañas desde:
 
-- **** \> **** Explorador \> de administración de amenazas **Ver** \> **campañas**
+- **Threat management** \> **Explorer** Explorador \> de administración de amenazas **Ver** \> **campañas**
 
-- **** \> **** Explorador \> de administración de amenazas **Ver** \> **todas las** \> **campañas** de correo electrónico
+- **Threat management** \> **Explorer** Explorador \> de administración de amenazas **Ver** \> **todas las** \> **campañas** de correo electrónico
 
 > [!TIP]
 > Si no ve ningún dato de la campaña, pruebe a cambiar el intervalo de fechas.
@@ -125,24 +125,24 @@ El diagrama contiene la información siguiente:
 
 - **Dominios de remitente**
 
-- **Veredictos de filtro**: los valores que se muestran aquí están relacionados con los datos de protección contra suplantación de identidad y correo no deseado disponibles, tal y como se describe en [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md). En la tabla siguiente se describen los valores disponibles:
+- **Filtrar veredictos**: los valores aquí están relacionados con los veredictos de filtrado de suplantación de identidad (phishing) y correo no deseado disponibles como se describe en [encabezados de mensajes de correo no deseado](anti-spam-message-headers.md). En la tabla siguiente se describen los valores disponibles:
 
   |Valor|Veredicto de filtro de correo no deseado|Descripción|
   |:-----|:-----|:-----|
-  | **Permitido**|`SFV:SKN` <br/><br/> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtro de correo no deseado (por ejemplo, mediante una regla de flujo de correo, también denominada regla de transporte).<br/><br/>El mensaje omitió el filtrado de correo no deseado por otros motivos (por ejemplo, el remitente y el destinatario parecen estar en la misma organización).|
-  |**Blocked**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtro de correo no deseado (por ejemplo, mediante una regla de flujo de correo).|
-  |**Detectados**|`SFV:SPM`|El filtro de correo no deseado marcó el mensaje como correo no deseado.|
-  |**No detectado**|`SFV:NSPM`|El mensaje se marcó como no correo no deseado mediante el filtro de correo no deseado.|
+  | **Permitido**|`SFV:SKN` <br/><br/> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtrado de correo no deseado (por ejemplo, mediante una regla de flujo de correo, también denominada regla de transporte).<br/><br/>El mensaje omitió el filtrado de correo no deseado por otros motivos (por ejemplo, el remitente y el destinatario parecen estar en la misma organización).|
+  |**Blocked**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado (por ejemplo, mediante una regla de flujo de correo).|
+  |**Detectados**|`SFV:SPM`|El mensaje se marcó como correo no deseado por el filtrado de correo no deseado.|
+  |**No detectado**|`SFV:NSPM`|El mensaje se marcó como no correo no deseado por el filtrado de correo no deseado.|
   |**Exento**|`SFV:SKQ`|El mensaje omitió el filtrado de correo no deseado porque se liberó de la cuarentena.|
-  |**Permitir inquilino**<sup>\*</sup>|`SFV:SKA`|El mensaje omitió el filtrado de correo no deseado debido a la configuración de la Directiva de filtro de correo no deseado (por ejemplo, el remitente o el dominio estaba en la lista de **remitentes permitidos** ).|
-  |**Bloque tenant**<sup>\*\*</sup>|`SFV:SKA`|El mensaje fue bloqueado por el filtrado de correo no deseado debido a la configuración de la Directiva de filtro de correo no deseado (por ejemplo, el remitente o el dominio estaba en la lista de **remitentes bloqueados** ).|
+  |**Permitir inquilino**<sup>\*</sup>|`SFV:SKA`|El mensaje omitió el filtrado de correo no deseado debido a la configuración de la Directiva contra correo no deseado (por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos).|
+  |**Bloque tenant**<sup>\*\*</sup>|`SFV:SKA`|El mensaje fue bloqueado por el filtrado de correo no deseado debido a la configuración de la Directiva contra correo no deseado (por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos).|
   |**Permitir al usuario**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes seguros de un usuario en Outlook.|
   |**Bloque de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje fue bloqueado por el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados de un usuario en Outlook.|
-  |**ZAP**|N/D|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) llevó a cabo una acción en el mensaje entregado de acuerdo con la configuración de la Directiva de filtro de correo no deseado (se movió a la carpeta de correo no deseado o en cuarentena).|
+  |**ZAP**|n/a|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) llevó a cabo una acción en el mensaje entregado de acuerdo con la configuración de la Directiva contra correo no deseado (se movió a la carpeta de correo no deseado o en cuarentena).|
 
-  <sup>\*</sup>Revise las opciones de configuración de la Directiva de filtro de correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
+  <sup>\*</sup>Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
 
-  <sup>\*\*</sup>Revise las opciones de configuración de la Directiva de filtro de correo no deseado, ya que estos mensajes deberían estar en cuarentena, no entregados.
+  <sup>\*\*</sup>Revise las directivas contra correo no deseado, ya que estos mensajes deben estar en cuarentena, no entregados.
 
 - **Ubicaciones de entrega**: probablemente querrá investigar los mensajes que se entregaron a los destinatarios (ya sea en la bandeja de entrada o en la carpeta de correo no deseado), incluso aunque los usuarios no hayan hecho clic en la URL de carga del mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
 

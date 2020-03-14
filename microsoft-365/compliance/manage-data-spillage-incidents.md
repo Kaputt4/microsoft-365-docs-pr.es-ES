@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: En este artículo se describe el uso de la herramienta nueva investigación de datos (vista previa) en el centro de seguridad & cumplimiento para administrar un incidente de derrame de datos.
 ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543371"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634298"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de derrame de datos en Microsoft 365
 
@@ -108,7 +108,7 @@ Después de ejecutar la búsqueda, puede obtener una vista previa de los ejemplo
 
 En la investigación, vaya a la pestaña **evidencia** y haga clic en el conjunto de evidencias que creó en el paso anterior. Una vez completado el trabajo de procesamiento y agregados los resultados de la búsqueda a la evidencia, puede revisar los documentos individuales en su formato nativo, formato de texto o un formato casi nativo. Puede crear consultas adicionales para restringir la lista de documentos y etiquetar los documentos para indicar los resultados de la investigación. Para obtener más información, vea [Review Data in Evidence](review-data-in-evidence.md) .
 
-Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar evidencias**. En el mosaico **Analytics** , haga clic en **analizar**. Esto ejecuta análisis avanzados como detección de duplicados, subprocesamiento de correo electrónico y análisis de temas. Para obtener más información, vea:
+Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar evidencias**. En el mosaico **Analytics** , haga clic en **analizar**. Esto ejecuta análisis avanzados como detección de duplicados, subprocesamiento de correo electrónico y análisis de temas. Para más información, consulte lo siguiente:
 
 - [Ejecutar el análisis para investigar más rápido](run-analytics-to-investigate-faster.md)
 - [Detección de semiduplicados](near-duplicates.md)

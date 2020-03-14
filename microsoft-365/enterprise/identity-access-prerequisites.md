@@ -16,11 +16,11 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544029"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633608"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades
 
@@ -82,12 +82,12 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 
 |Plataforma|Word/Excel/PowerPoint|OneNote|Aplicación OneDrive|Aplicación SharePoint|Cliente de sincronización de OneDrive|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|Compatible.|Compatible.|N/D|N/D|Versión preliminar<sup>*</sup>|
-|Windows 8.1|Compatible.|Compatible.|N/D|N/D|Versión preliminar<sup>*</sup>|
-|Windows 10|Compatible.|Compatible.|N/D|N/D|Versión preliminar<sup>*</sup>|
+|Windows 7|Compatible|Compatible|N/D|N/D|Versión preliminar<sup>*</sup>|
+|Windows 8.1|Compatible|Compatible|N/D|N/D|Versión preliminar<sup>*</sup>|
+|Windows 10|Compatible|Compatible|N/D|N/D|Versión preliminar<sup>*</sup>|
 |Windows Phone 10|No admitido|No admitido|No se admite|No se admite|No se admite|
-|Android|Compatible.|Compatible.|Compatible.|Compatible.|No aplicable|
-|iOS|Compatible.|Compatible.|Compatible.|Compatible.|No aplicable|
+|Android|Compatible|Compatible|Compatible|Compatible|No aplicable|
+|iOS|Compatible|Compatible|Compatible|Compatible|No aplicable|
 |macOS|Versión preliminar pública|Versión preliminar pública|N/D|N/D|No compatible|
 |Linux|No admitido|No admitido|No admitido|No admitido|No admitido|
 
