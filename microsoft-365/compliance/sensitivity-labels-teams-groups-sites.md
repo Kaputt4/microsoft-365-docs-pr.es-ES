@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Office 365.
-ms.openlocfilehash: 934999f3c1b55c738ebc30eb9b87c65c5cc08376
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: b1bac1cbe094a1e56c05dd7fd1aa5377f0a85ce5
+ms.sourcegitcommit: 62eac95c27295ba285e28cec5acf815314fbfd00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550427"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42601357"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Office 365 y los sitios de SharePoint (versión preliminar pública)
 
@@ -329,4 +329,8 @@ Si sigue sin poder ver la nueva etiqueta de confidencialidad de SharePoint Onlin
 
 ### <a name="team-group-or-sharepoint-site-creation-errors"></a>Errores de creación de Teams, grupo o sitio de SharePoint
 Si experimenta errores de creación durante la versión preliminar pública, puede desactivar las etiquetas de confidencialidad para Microsoft Teams, grupos de Office 365 y sitios de SharePoint utilizando las mismas instrucciones de [Habilitar la compatibilidad de etiquetas de confidencialidad en PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Sin embargo, para deshabilitar la versión preliminar, en el paso 5, deshabilite la característica con `$setting["EnableMIPLabels"] = "False"`.
+
+## <a name="additional-resources"></a>Recursos adicionales
+
+Consulte la grabación y las preguntas contestadas sobre el [Uso de etiquetas de sensibilidad con Microsoft Teams, grupos de O365 y sitios de SharePoint Online](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 

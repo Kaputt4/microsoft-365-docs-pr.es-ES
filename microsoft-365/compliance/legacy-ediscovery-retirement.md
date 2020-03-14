@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Office 365 Advanced eDiscovery v 1.0 también se están retirando en el mismo período de tiempo.
 ms.openlocfilehash: 92b6648b603286871956db64631d334df2384112
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42605308"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634838"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas de eDiscovery heredadas
 
@@ -71,7 +71,7 @@ Debido a que todas estas capacidades (excepto la de copiar los resultados de la 
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; Esto incluye GCC, GCC High y DoD
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline-for-retirement"></a>Escala de tiempo para la jubilación
 
@@ -168,7 +168,7 @@ Como estas capacidades ahora están disponibles en el [<span class="underline">c
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; Esto incluye GCC, GCC High y DoD
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -242,7 +242,7 @@ El cmdlet **Search-Mailbox** en Exchange Online PowerShell se está retirando co
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; Esto incluye GCC, GCC High y DoD
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -304,7 +304,7 @@ Estas tres API de servicios web Exchange se usan en la característica exhibici�
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; Esto incluye GCC, GCC High y DoD
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -324,7 +324,7 @@ En este momento, le recomendamos que empiece a realizar la transición del flujo
 
 - Organizaciones de Educación de Office 365 y Microsoft 365
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
 

@@ -8,11 +8,11 @@ ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012265"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632988"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referencia de opciones configurables-escritorio administrado por Microsoft
 
@@ -142,6 +142,6 @@ Estos requisitos se deben cumplir con las excepciones de servidor proxy y de sit
 6. Repita los pasos 1-5 para cada sitio de confianza que desee agregar. 
 7. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
-## <a name="additional-resources"></a>Otros recursos
+## <a name="additional-resources"></a>Recursos adicionales
 - [Información general de configuración configurable](config-setting-overview.md) 
 - [Implementar parámetros configurables](config-setting-deploy.md)

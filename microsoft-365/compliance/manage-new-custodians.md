@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Administrar los custodios en un caso de eDiscovery avanzado.
 ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071627"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634708"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Administrar los custodios en un caso de eDiscovery avanzado
 
@@ -110,7 +110,7 @@ Para desencadenar el proceso de reindización para tratar los elementos parcialm
 
 La nueva indexación de los datos del custodio es un proceso de ejecución prolongada; el trabajo correspondiente que se crea se denomina **volver a indizar los datos del custodio**. Puede realizar un seguimiento del progreso en la ficha **trabajos** o en la ficha **custodios** mediante la supervisión del estado en la columna Estado de la **tarea de indización** .
 
-Para obtener más información, vea:
+Para más información, consulte lo siguiente:
 
 - [Trabajar con errores de proceso](processing-data-for-case.md)
 

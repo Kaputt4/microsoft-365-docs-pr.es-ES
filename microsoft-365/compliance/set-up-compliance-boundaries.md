@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
 ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557755"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634148"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -61,7 +61,7 @@ El primer paso es elegir un atributo de Azure Active Directory que se usará par
   
 Esta es una lista de atributos de usuario de Azure Active Directory que puede usar para los límites de cumplimiento:
   
-- Company
+- Empresa
     
 - CustomAttribute1: CustomAttribute15
     
@@ -160,7 +160,7 @@ El último paso consiste en crear un caso de exhibición de documentos electrón
 
 Para crear un caso y asignar miembros:
 
-1. Vaya a la **** página exhibición **avanzada** de documentos electrónicos o exhibición de documentos electrónicos en el centro de seguridad & cumplimiento y cree un caso. 
+1. Vaya a la **eDiscovery** página exhibición **avanzada** de documentos electrónicos o exhibición de documentos electrónicos en el centro de seguridad & cumplimiento y cree un caso. 
 
 2. En la lista de casos de eDiscovery, haga clic en el nombre del caso que ha creado.
 

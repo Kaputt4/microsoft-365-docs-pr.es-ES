@@ -1,5 +1,5 @@
 ---
-title: Información general sobre Microsoft 365 para empresas
+title: Información general de Microsoft 365 Enterprise
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,13 +14,13 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Proporciona una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
 ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066905"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633308"
 ---
-# <a name="microsoft-365-for-enterprise-overview"></a>Información general sobre Microsoft 365 para empresas
+# <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 Enterprise
 
 Microsoft 365 para empresas es una solución completa e inteligente que permite a todo el mundo ser creativo y trabajar conjuntamente de manera segura. 
 
@@ -76,7 +76,7 @@ Para descargar una copia del póster, haga clic [aquí](https://github.com/Micro
 
 Para obtener una imagen mejor sobre cómo mover toda la organización a los productos y servicios de Microsoft 365 para empresas, descargue el [póster de transición](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Imagen para la transición a un póster de Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) 
+[![Imagen del póster de transición a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Este póster de dos páginas es una forma rápida de realizar un inventario de su infraestructura existente y conseguir las instrucciones para moverse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, tales como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
 

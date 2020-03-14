@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: "Para los administradores: eliminar elementos en un \n\nla carpeta de elementos recuperables de ER para un buzón de correo de Exchange Online, incluso si el buzón de correo se encuentra en retención legal. Esta es una forma eficaz de eliminar datos que se han derramado accidentalmente en Office 365."
 ms.openlocfilehash: 5c8614c0faf8ea0f807b09cb24ccd3409dd7facb
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409655"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635068"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminar elementos de la carpeta elementos recuperables de buzones de correo basados en la nube en suspensión-ayuda de administración
 

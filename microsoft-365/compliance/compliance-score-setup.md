@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo iniciar sesión, configurar permisos y comprender el panel para la puntuación de cumplimiento de Microsoft, que ayuda a simplificar y automatizar las evaluaciones de riesgos.
 ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078617"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635128"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configuración de la puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -143,6 +143,6 @@ Para quitar filtros:
 - En el encabezado de **filtros aplicados** encima de la puntuación de cumplimiento, seleccione la **X** junto al filtro individual que quiera quitar; o
 - Seleccione **filtrar** en la parte superior derecha del panel y, a continuación, seleccione **Borrar filtros**.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Visite [trabajar con la puntuación de cumplimiento](working-with-compliance-score.md) para comprender el flujo de trabajo de cómo emprender acciones para mejorar su puntuación.

@@ -17,11 +17,11 @@ search.appverid:
 - MOE150
 description: Puede usar la herramienta de búsqueda de registros de auditoría de Office 365 para ayudarle a solucionar problemas comunes como la investigación de una cuenta en peligro, para averiguar quién ha configurado el reenvío de correo para un buzón o determinar por qué un usuario externo inició sesión correctamente en su organización.
 ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079197"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634488"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría de 365 de Office para investigar problemas de compatibilidad comunes
 

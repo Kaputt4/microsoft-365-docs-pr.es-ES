@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19c48161d5d0f43c2beb207dd0ee2db8bfb1470
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372028"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633998"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -38,7 +38,7 @@ Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y
 
 Además, puede obtener acceso a sus recomendaciones y puntuaciones a través de la [API de Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Obtenga información sobre el [tipo de recurso de puntuación segura](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o solucionar la acción de mejora con una aplicación o un software de terceros. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios.
 
@@ -89,11 +89,11 @@ Para obtener acceso a la API de Graph, debe tener uno de los siguientes ámbitos
 
 Para ayudarle a la información que necesita con mayor rapidez, las acciones de mejora de Microsoft se organizan en grupos:
 
-* Identity (cuentas de Azure AD & roles con Azure ATP disponible próximamente)
+* Identity (cuentas de Azure AD & roles)
 * Datos (Microsoft Information Protection)
-* Dispositivo (dispositivos ATP de Microsoft defender, próximamente)
+* Dispositivo (no hay acciones de mejora por ahora)
 * Aplicación (aplicaciones de correo electrónico y nube, incluidos Office 365 y Microsoft Cloud App Security)
-* Infraestructura (recursos de Azure)
+* Infraestructura (no hay acciones de mejora por ahora)
 
 En la página información general sobre la calificación segura de Microsoft, puede ver cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. La página de información general también es la ubicación para obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de los bancos de pruebas y las acciones de mejora ordenadas por prioridad que se pueden realizar para mejorar la puntuación.
 

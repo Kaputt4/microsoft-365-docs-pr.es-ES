@@ -21,11 +21,11 @@ ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
 ms.custom: okr_smb
 ms.openlocfilehash: b0aa799112fb2b714f369237958b583dfb8e8baa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245799"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632978"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 

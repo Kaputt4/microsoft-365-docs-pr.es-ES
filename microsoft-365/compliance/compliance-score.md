@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: La puntuación de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
 ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078535"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635118"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -118,7 +118,7 @@ Las plantillas preconfiguradas para la puntuación de cumplimiento son:
 4. [RGPD de la Unión Europea](https://go.microsoft.com/fwlink/?linkid=2108870)
 5. [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://go.microsoft.com/fwlink/?linkid=2109077)
 6. [Moderado FedRAMP](https://go.microsoft.com/fwlink/?linkid=2108869)
-7. [](https://go.microsoft.com/fwlink/?linkid=2109078) / [tecnología](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
+7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [tecnología](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
 8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / el[gobierno australiano ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (versión preliminar)
 9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
 10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)

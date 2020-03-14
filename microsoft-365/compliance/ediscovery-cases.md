@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más adelante en eDiscovery avanzado de Office 365.
 ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557754"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634958"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
@@ -227,7 +227,7 @@ Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
     
 - El número de elementos en espera también incluye los elementos sin indexar encontrados en las ubicaciones de contenido. Si crea una suspensión basada en consulta, todos los elementos sin indexar en las ubicaciones de contenido se colocan en retención. Esto incluye los elementos sin indexar que no coinciden con los criterios de búsqueda de una retención basada en consultas y los elementos sin indexar que podrían estar fuera de una condición de intervalo de fechas. Esto es diferente a lo que sucede cuando se ejecuta una búsqueda de contenido, en la que los elementos no indexados que no coinciden con la consulta de búsqueda o se excluyen por una condición de intervalo de fechas no se incluyen en los resultados de la búsqueda. Para obtener más información acerca de los elementos sin indexar, vea [elementos parcialmente indizados en la búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md).
     
-- Puede obtener las estadísticas de retención más recientes haciendo clic en **actualizar estadísticas** para volver a ejecutar una estimación de búsqueda que calcula el número actual de elementos en espera. Si es necesario, ****![haga clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización en la barra de herramientas para actualizar las estadísticas de retención en el panel de detalles. 
+- Puede obtener las estadísticas de retención más recientes haciendo clic en **actualizar estadísticas** para volver a ejecutar una estimación de búsqueda que calcula el número actual de elementos en espera. Si es necesario, **Refresh**![haga clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización en la barra de herramientas para actualizar las estadísticas de retención en el panel de detalles. 
     
 - Es normal que el número de elementos que se retengan se incremente con el transcurso del tiempo porque los usuarios cuyo buzón o sitio está en espera suelen enviar o recibir nuevos mensajes de correo electrónico y crear nuevos documentos de SharePoint y OneDrive para la empresa.
     
@@ -300,7 +300,7 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
     Se inicia la búsqueda. Después de un rato, se muestra una estimación de los resultados de la búsqueda en el panel de detalles. La estimación incluye el tamaño total y el número de elementos que coinciden con los criterios de búsqueda. La estimación de la búsqueda también incluye el número de elementos sin indexar en las ubicaciones de contenido en las que se realizó la búsqueda. El número de elementos no indexados que no cumplen los criterios de búsqueda se incluirán en las estadísticas de búsqueda que se muestran en el panel de detalles. Si un elemento sin indizar coincide con la consulta de búsqueda (porque otras propiedades de mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Si un elemento sin indexar se excluye por los criterios de búsqueda, tampoco se incluirá en la estimación de los elementos sin indexar.
     
-  Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, ****![haga clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización para actualizar la información en el panel de detalles. 
+  Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, **Refresh**![haga clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización para actualizar la información en el panel de detalles. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Paso 6: exportar los resultados de una búsqueda de contenido asociada a un caso
 
@@ -331,7 +331,7 @@ Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export
     
     ![Ficha exportar](../media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
   
-    Es posible que deba hacer ****![clic en actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) icono de actualización para actualizar la lista de trabajos de exportación de modo que muestre el trabajo de exportación que ha creado. Los trabajos de exportación tienen el mismo nombre que la búsqueda de contenido correspondiente con **_Export** anexado al final del nombre de búsqueda. 
+    Es posible que deba hacer **Refresh**![clic en actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) icono de actualización para actualizar la lista de trabajos de exportación de modo que muestre el trabajo de exportación que ha creado. Los trabajos de exportación tienen el mismo nombre que la búsqueda de contenido correspondiente con **_Export** anexado al final del nombre de búsqueda. 
     
 6. Haga clic en el trabajo de exportación que acaba de crear para mostrar la información de estado en el panel de detalles. Esta información incluye el porcentaje de elementos que se han transferido a un área de almacenamiento de Azure en la nube de Microsoft.
     
@@ -373,7 +373,7 @@ Como alternativa a la exportación de los resultados de una sola búsqueda de co
     
     ![Ficha exportar, varias búsquedas](../media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
   
-    Puede que tenga que hacer **** ![clic en actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) icono para actualizar la lista de trabajos de exportación para mostrar el trabajo de exportación que ha creado. Las búsquedas incluidas en el trabajo de exportación se enumeran en la columna **búsquedas** . 
+    Puede que tenga que hacer **Refresh** ![clic en actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) icono para actualizar la lista de trabajos de exportación para mostrar el trabajo de exportación que ha creado. Las búsquedas incluidas en el trabajo de exportación se enumeran en la columna **búsquedas** . 
     
 8. Haga clic en el trabajo de exportación que acaba de crear para mostrar la información de estado en el panel de detalles. Esta información incluye el porcentaje de elementos que se han transferido a un área de almacenamiento de Azure en la nube de Microsoft.
     

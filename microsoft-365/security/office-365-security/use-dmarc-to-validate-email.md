@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización de su Office 365.
 ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957355"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633438"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar el correo electrónico en Office 365
 
@@ -82,7 +82,7 @@ El registro TXT de DMARC de Microsoft es algo así:
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
-Microsoft envía sus informes DMARC a [Agari](https://agari.com), un tercero. Agari recoge y analiza los informes de la DMARC. Por favor, visite el[catálogo de MISA](https://www.microsoft.com/misapartnercatalog) para ver más proveedores que ofrecen informes DMARC para Office 365.
+Microsoft envía sus informes DMARC a [Agari](https://agari.com), un tercero. Agari recoge y analiza los informes de la DMARC. Por favor, visite el [catálogo de MISA](https://www.microsoft.com/misapartnercatalog) para ver más proveedores que ofrecen informes DMARC para Office 365.
   
 ## <a name="implement-dmarc-for-inbound-mail"></a>Implementar DMARC para el correo entrante
 <a name="implementDMARCinbound"> </a>

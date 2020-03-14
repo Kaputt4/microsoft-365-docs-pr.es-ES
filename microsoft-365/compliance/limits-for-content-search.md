@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Obtenga información sobre los límites en vigor para la característica de búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, como el número máximo de búsquedas simultáneas. '
 ms.openlocfilehash: a560e26b6a02e48ca50033acad554e3c7bb2ec6e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600557"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634738"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Límites de búsqueda de contenido en el centro de seguridad & cumplimiento
 
@@ -50,7 +50,7 @@ En la siguiente tabla se enumeran los límites de búsqueda en el centro de segu
 |El número máximo de buzones públicos en los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 500 buzones de carpetas públicas que contienen contenido que coincide con la consulta de búsqueda, solo los primeros 500 buzones de carpetas públicas con mayor cantidad de resultados de búsqueda estarán disponibles para la vista previa.  <br/> |500  <br/> |
 |El número máximo de caracteres de la consulta de búsqueda (incluidos los operadores y las condiciones) de una búsqueda de contenido.  <br/><br/> **Nota:** Este límite surte efecto después de que se expande la consulta, lo que significa que la consulta se expandirá en cada una de las palabras clave. Por ejemplo, si una consulta de búsqueda tiene 15 palabras clave y otros parámetros y condiciones, la consulta se expande 15 veces, cada una con los demás parámetros y condiciones de la consulta. Por lo tanto, aunque el número de caracteres en la consulta de búsqueda puede estar por debajo del límite, es la consulta ampliada que puede contribuir a exceder este límite.  <br/> |**Buzones de correo:** 10.000  <br/> **Sitios:** 4.000 al buscar en todos los sitios o en 2.000 al buscar hasta 20 sitios <sup>1</sup> <br/> |
 |Número máximo de variantes devueltas al usar un carácter comodín de prefijo para buscar una frase exacta en una consulta de búsqueda o cuando se usa un carácter comodín de prefijo y el operador booleano **Near** o **ONEAR** .  <br/> |10.000 <sup>2</sup> <br/> |
-|El número mínimo de caracteres alfabéticos para los caracteres comodín de prefijo; por ejemplo, `time*` `one*`, o `set*`.  <br/> |3   <br/> |
+|El número mínimo de caracteres alfabéticos para los caracteres comodín de prefijo; por ejemplo, `time*` `one*`, o `set*`.  <br/> |3  <br/> |
 |El número máximo de buzones en una búsqueda de contenido en la que se pueden eliminar elementos mediante una acción "buscar y purgar" (mediante el comando **New-ComplianceSearchAction-Purge** ). Si la búsqueda de contenido en la que está realizando una acción de purga tiene más buzones de origen que este límite, se producirá un error en la acción de purga. Para obtener más información acerca de las búsquedas y depuración, consulte [Buscar y eliminar mensajes de correo electrónico en su organización de Office 365](search-for-and-delete-messages-in-your-organization.md).  <br/> |50 000  <br/> |
    
 > [!NOTE]
@@ -76,7 +76,7 @@ En la tabla siguiente se describen los límites de indización que podrían dar 
 
 Existen límites adicionales relacionados con los distintos aspectos de la búsqueda de contenido, como la exportación de resultados de búsqueda y la indización de contenido. Para obtener una descripción de estos límites, vea los siguientes temas:
   
-- [Exportar resultados de la búsqueda de contenido](export-search-results.md#export-limits)
+- [Exportar resultados del Contenido de búsqueda](export-search-results.md#export-limits)
     
 - [Elementos parcialmente indizados en la búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md)
     

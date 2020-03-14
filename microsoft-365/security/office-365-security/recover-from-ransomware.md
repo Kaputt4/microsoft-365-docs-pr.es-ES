@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores de Office 365 pueden obtener información sobre cómo recuperarse de un ataque de ransomware.
-ms.openlocfilehash: 04cfd2f2417b0c2e084a88f9ee156521339b18c4
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
+ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932381"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42640022"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Recuperarse de un ataque de ransomware en Office 365
 
@@ -74,15 +74,11 @@ Una vez que haya completado el paso anterior para quitar la carga de ransomware 
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Paso 5: recuperar los archivos en su OneDrive para la empresa
 
-OneDrive para la empresa le permitirá recuperar los archivos que haya almacenado en él. Tiene dos opciones:
-
-- Use el [sitio web de OneDrive](https://support.office.com/article/159cad6d-d76e-4981-88ef-de6e96c93893).
-
-- Si se ha visto afectado un gran número de archivos, puede crear una solicitud de soporte técnico para una "restauración de la colección de sitios". Esta solicitud puede restaurar archivos de hasta 14 días en el pasado.
+Los archivos restaurar en OneDrive para la empresa permiten restaurar todo el OneDrive a un punto anterior en el tiempo de los últimos 30 días. Para obtener más información, vea [restaurar el OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>Paso 6: recuperar el correo electrónico eliminado
 
-En el caso poco probable de que ransomware elimine todo el correo electrónico, probablemente pueda recuperar los elementos eliminados. Para obtener más información, vea:
+En el caso poco probable de que ransomware elimine todo el correo electrónico, probablemente pueda recuperar los elementos eliminados. Para más información, consulte lo siguiente:
 
 - [Recuperar mensajes eliminados en el buzón de un usuario](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 

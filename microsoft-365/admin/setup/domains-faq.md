@@ -23,11 +23,11 @@ ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Obtenga más información acerca de los dominios en Office 365 buscando respuestas a sus preguntas en preguntas más frecuentes.
 ms.custom: okr_smb
 ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257020"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633188"
 ---
 # <a name="domains-faq"></a>Preguntas más frecuentes de dominios
 
@@ -107,7 +107,7 @@ Tenga en cuenta que una consulta *Whois* mostrará un registrador de dominios de
   
 Siga los pasos siguientes para obtener el código en Office 365 y, a continuación, vaya al sitio web del otro registrador de dominios para configurar la transferencia de su nombre de dominio a dicho registrador.
   
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
     Si está usando Office 365 Germany, vaya a esta página de <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">dominios</a> . 
     
@@ -137,7 +137,7 @@ Siga los pasos siguientes para obtener el código en Office 365 y, a continuaci�
     
 3. Siga un vínculo para ir al Asistente para la configuración de dominios:
     
-4. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+4. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
     Si está usando Office 365 Germany, vaya a esta página de <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">dominios</a> . 
     
@@ -154,7 +154,7 @@ Siga los pasos siguientes para obtener el código en Office 365 y, a continuaci�
 
 ### <a name="change-dns-management-to-office-365"></a>Cambiar la administración de DNS a Office 365
   
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
     Si está usando Office 365 Germany, vaya a esta página de <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">dominios</a> . 
     
@@ -222,7 +222,7 @@ Proveedores que admiten todos los registros DNS necesarios:
 
 Debe tener al menos un dominio personalizado que haya agregado a Office 365 para poder elegir un dominio predeterminado.
   
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
     Si está usando Office 365 Germany, vaya a esta página de <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">dominios</a> . 
     
@@ -350,7 +350,7 @@ Puede, pero hay limitaciones:
     
     1. Inicie sesión en Office 365 con su cuenta profesional o educativa.
         
-    2. Vaya a **** \> **dominios**de configuración. 
+    2. Vaya a **Settings** \> **dominios**de configuración. 
     
 2. Comprobar que es el propietario del dominio que desea usar
     
@@ -376,7 +376,7 @@ Puede, pero hay limitaciones:
         
     4. En la ventana que se abre, seleccione **retransmisión interna**. 
         
-    5. Seleccione **Guardar**. Esta configuración puede tardar unos minutos en surtir efecto. 
+    5. Haga clic en **Guardar**. Esta configuración puede tardar unos minutos en surtir efecto. 
     
 4. Opcionalmente, desbloquear el servidor de correo electrónico existente
     

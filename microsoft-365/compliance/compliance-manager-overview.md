@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
 ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078677"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635158"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -111,7 +111,7 @@ Los usuarios de su organización pueden usar el administrador de cumplimiento pa
 
 Los controles de certificación suelen ser implementados por una persona y comprobados por otro. Por ejemplo, después de que se completen los elementos de acción inicialmente asignados a una persona para su implementación, esos elementos de acción se asignan a la siguiente persona para probar y cargar las pruebas. Cualquier usuario con permisos suficientes para las asignaciones de control puede asignar y reasignar elementos de acción. Esto permite la administración central de las asignaciones de control y el enrutamiento descentralizado de elementos de acción entre implementadores y evaluadores.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 El administrador de cumplimiento utiliza un modelo de permisos de control de acceso basado en roles. Solo los usuarios a los que se les asigne un rol pueden acceder al administrador de cumplimiento, y las acciones permitidas por cada usuario están restringidas según el tipo de rol. [Ver una tabla](working-with-compliance-manager.md#permissions) que muestra las acciones permitidas para cada permiso.
 
@@ -142,7 +142,7 @@ Las plantillas preconfiguradas incluidas con el administrador de cumplimiento so
 6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
 7. [Matriz de controles de nube (CCM) de Cloud Security Alliance (CSA) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://go.microsoft.com/fwlink/?linkid=2109077) 
-9. [](https://go.microsoft.com/fwlink/?linkid=2109078) / [tecnología](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [tecnología](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
 10. [Moderado FedRAMP](https://go.microsoft.com/fwlink/?linkid=2108869)
 11. [RGPD de la Unión Europea](https://go.microsoft.com/fwlink/?linkid=2108870)
 12. [Ley de privacidad del consumidor de California (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (versión preliminar)

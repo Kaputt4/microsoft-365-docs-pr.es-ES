@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078754"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632861"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de comunicaciones
 
@@ -39,8 +39,8 @@ El primer paso para investigar los problemas detectados por las directivas es re
     - Elementos resueltos enumerados por nombre de directiva.
     - Escalaciones enumeradas por nombre de directiva.
     - Los usuarios con más coincidencias de directivas, enumeradas de mayor a menor número de coincidencias.
-- **Ficha Alertas**: Navegue a **** > **alertas** de cumplimiento de comunicaciones para mostrar las alertas agrupadas por la Directiva de cumplimiento de comunicaciones coincidentes. Esta vista permite ver rápidamente qué directivas de cumplimiento de comunicación están generando la mayoría de las alertas ordenadas por gravedad.  Para iniciar acciones de corrección, expanda una directiva para seleccionar una alerta específica y para iniciar la página Detalles de alerta.
-- **Pestaña Directivas**: Navegue a **** > **directivas** de cumplimiento de comunicaciones para mostrar las directivas de cumplimiento de comunicación configuradas para la organización de Microsoft 365. Cada directiva enumerada incluye el número de alertas que necesitan revisión. Al seleccionar una directiva, se muestran todas las alertas pendientes de las coincidencias con la Directiva, se selecciona una alerta específica para iniciar la página de detalles de la Directiva y se inician las acciones de corrección.
+- **Ficha Alertas**: Navegue a **Communication compliance** > **alertas** de cumplimiento de comunicaciones para mostrar las alertas agrupadas por la Directiva de cumplimiento de comunicaciones coincidentes. Esta vista permite ver rápidamente qué directivas de cumplimiento de comunicación están generando la mayoría de las alertas ordenadas por gravedad.  Para iniciar acciones de corrección, expanda una directiva para seleccionar una alerta específica y para iniciar la página Detalles de alerta.
+- **Pestaña Directivas**: Navegue a **Communication compliance** > **directivas** de cumplimiento de comunicaciones para mostrar las directivas de cumplimiento de comunicación configuradas para la organización de Microsoft 365. Cada directiva enumerada incluye el número de alertas que necesitan revisión. Al seleccionar una directiva, se muestran todas las alertas pendientes de las coincidencias con la Directiva, se selecciona una alerta específica para iniciar la página de detalles de la Directiva y se inician las acciones de corrección.
 
 ### <a name="using-filters"></a>Uso de filtros
 
@@ -115,7 +115,7 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
     - **Falso positivo**: siempre puede resolver un mensaje como falso positivo en cualquier momento durante el flujo de trabajo de revisión de mensajes. No se puede volver a abrir el mensaje y se muestran todos los mensajes falsos positivos en la ficha **resueltos** .
     - **Etiqueta como**: etiquete el mensaje como *compatible*, *no compatible*o tan *dudoso* como relacionado con las directivas y los estándares de su organización. Agregar etiquetas y comentarios de etiquetado puede ayudarle a microfiltrar las alertas de las directivas para las escalaciones o como parte de otros procesos internos de revisión. Una vez finalizado el etiquetado, también puede optar por resolver el mensaje para moverlo de la cola de revisión pendiente.
     - **Notify**: puede usar el control **Notify** para asignar una plantilla de notificación personalizada a la alerta y para enviar un aviso de advertencia al usuario. Elija la plantilla de aviso adecuada y seleccione **Enviar** a correo electrónico un recordatorio para el empleado que envió el mensaje y para resolver el problema.
-    - **Escalar**: con el control **remitir** a, puede elegir quién más de la organización debe revisar el mensaje. Elija de una lista de revisores configurados para enviar una notificación por correo electrónico solicitando una revisión adicional de la alerta de mensaje. El revisor seleccionado puede usar un vínculo en la notificación de correo electrónico para ir directamente a los elementos que se han remitido a ellos para que los revisen.
+    - **Escalar**: con el control **remitir** a, puede elegir quién más de la organización debe revisar el mensaje. Elija de una lista de revisores configurados en la Directiva de cumplimiento de comunicaciones para enviar una notificación de correo electrónico para solicitar una revisión adicional de la alerta de mensaje. El revisor seleccionado puede usar un vínculo en la notificación de correo electrónico para ir directamente a los elementos que se han remitido a ellos para que los revisen.
     - **Crear un caso**: con el control **crear un caso** , puede crear un nuevo [caso de exhibición](overview-ediscovery-20.md) de documentos electrónicos avanzado para uno o varios mensajes. Proporcionará un nombre y notas para el nuevo caso, y el usuario que envió el mensaje que coincida con la Directiva se asigna automáticamente como custodio de caso. No es necesario ningún permiso adicional para administrar el caso. La creación de un caso no resuelve ni crea una nueva etiqueta para el mensaje.
 
 4. **Determine si los detalles del mensaje deben archivarse fuera del cumplimiento de la comunicación**: los detalles del mensaje se pueden exportar o descargar si necesita archivar los mensajes en una solución de almacenamiento independiente. Al seleccionar el control de **descarga** , se agregan automáticamente los mensajes seleccionados a un. Archivo ZIP que puede guardarse en el almacenamiento fuera de Microsoft 365.

@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definición de usuarios de correo es una parte importante de la administración del servicio de Protección en línea de Exchange (EOP).
 ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088589"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633798"
 ---
 # <a name="manage-mail-users-in-eop"></a>Administrar usuarios de correo en EOP
 
@@ -108,7 +108,7 @@ En esta sección se proporciona información sobre cómo agregar y administrar u
 
 ### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a>Usar el EAC para editar o quitar un usuario de correo
 
-- En el EAC, vaya a **Destinatarios** \> **Contactos**. En la lista de usuarios, haga clic en el usuario que desea ver o modificar y, a continuación **** ![, seleccione Editar](../../media/ITPro-EAC-EditIcon.gif) icono Editar para actualizar la configuración del usuario según sea necesario. Puede cambiar el nombre, el alias o la información de contacto del usuario, y puede registrar información detallada sobre el rol del usuario en la organización. También puede seleccionar un usuario y, a continuación **** ![, elegir quitar](../../media/ITPro-EAC-RemoveIcon.gif) icono quitar para eliminarlo.
+- En el EAC, vaya a **Destinatarios** \> **Contactos**. En la lista de usuarios, haga clic en el usuario que desea ver o modificar y, a continuación **Edit** ![, seleccione Editar](../../media/ITPro-EAC-EditIcon.gif) icono Editar para actualizar la configuración del usuario según sea necesario. Puede cambiar el nombre, el alias o la información de contacto del usuario, y puede registrar información detallada sobre el rol del usuario en la organización. También puede seleccionar un usuario y, a continuación **Remove** ![, elegir quitar](../../media/ITPro-EAC-RemoveIcon.gif) icono quitar para eliminarlo.
 
 ## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a>Uso de PowerShell de Exchange Online Protection para administrar usuarios de correo
 

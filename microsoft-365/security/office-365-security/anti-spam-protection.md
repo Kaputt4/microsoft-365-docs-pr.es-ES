@@ -1,5 +1,5 @@
 ---
-title: Protección contra spam para el correo electrónico de Office 365
+title: Protección contra correo no deseado para el correo electrónico de Office 365
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -18,13 +18,13 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la configuración y los filtros contra correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Office 365. ¿Obtengo mucho correo no deseado en Office 365? Puede personalizar los filtros de correo no deseado y la configuración de la Directiva contra correo no deseado.
 ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599867"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633838"
 ---
-# <a name="office-365-email-anti-spam-protection"></a>Protección contra spam para el correo electrónico de Office 365
+# <a name="office-365-email-anti-spam-protection"></a>Protección contra correo no deseado para el correo electrónico de Office 365
 
 ¿Le preocupan recibir demasiado correo no deseado en Office 365? Hemos creado varios filtros de correo no deseado en el servicio de Office 365 o Exchange Online Protection (EOP), por lo que el correo electrónico está protegido desde el momento en que recibe el primer mensaje. Para ayudar a evitar el correo no deseado en Office 365, es posible que quiera cambiar una configuración de protección para tratar con un problema específico de su organización (por ejemplo, que reciba un gran número de mensajes de correo no deseado de un remitente en particular, por ejemplo) o que simplemente ajuste la configuración para que esté adaptado para satisfacer mejor las necesidades de su organización. Para ello, puede cambiar la configuración contra correo no deseado en el centro de seguridad &amp; y cumplimiento de Office 365.
 

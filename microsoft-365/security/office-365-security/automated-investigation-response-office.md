@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
 ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288508"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633828"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Investigación y respuesta automatizadas (AIR) en Office 365
 

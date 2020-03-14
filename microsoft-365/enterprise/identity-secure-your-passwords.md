@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Necesita que sus contraseñas sean seguras y que se puedan administrar en toda la organización.
 ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544059"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633098"
 ---
 # <a name="step-2-secure-your-passwords"></a>Paso 2: Proteja sus contraseñas
 

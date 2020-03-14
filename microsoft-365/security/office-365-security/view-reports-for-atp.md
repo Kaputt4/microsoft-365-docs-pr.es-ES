@@ -18,15 +18,15 @@ ms.collection:
 - M365-security-compliance
 description: Busque y use informes de la protección contra amenazas avanzada de Office 365 &amp; en el centro de seguridad y cumplimiento.
 ms.openlocfilehash: 1531a70439ae1c093ee472923696895eda0bc644
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081945"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634088"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
 
-Si la organización dispone de la [protección contra amenazas avanzada](office-365-atp.md) (ATP) de Office 365 y dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-the-atp-reports), puede usar varios informes de &amp; ATP en el centro de seguridad y cumplimiento. (Vaya a **** \> **Panel**de informes).
+Si la organización dispone de la [protección contra amenazas avanzada](office-365-atp.md) (ATP) de Office 365 y dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-the-atp-reports), puede usar varios informes de &amp; ATP en el centro de seguridad y cumplimiento. (Vaya a **Reports** \> **Panel**de informes).
   
 ![El panel &amp; del centro de seguridad y cumplimiento puede ayudarle a ver dónde está funcionando la protección contra amenazas avanzada](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -152,7 +152,7 @@ Para poder ver y usar los informes descritos en este artículo, **debe tener asi
     - Rol Destinatarios con permiso de vista
     - Administración de cumplimiento
 
-Para obtener más información, vea los siguientes recursos:
+Para obtener más información, consulte los siguientes recursos:
 
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 

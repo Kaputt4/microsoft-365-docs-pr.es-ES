@@ -16,11 +16,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Durante y después de una investigación automatizada en Office 365, puede ver los resultados y las conclusiones más importantes.
 ms.openlocfilehash: 638559efe5f7028a647b466c030a339c677601ce
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179261"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633848"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Detalles y resultados de una investigación automatizada en Office 365
 
@@ -32,9 +32,9 @@ Cuando se produce una [investigación automatizada](office-365-air.md) en la [pr
 
 2. Realice una de las acciones siguientes:
 
-    - Vaya al **** > **Panel**de administración de amenazas. Esto le llevará al [Panel de seguridad](security-dashboard.md). Los widgets de AIR aparecen en la parte superior del [Panel de seguridad](security-dashboard.md). Seleccione un widget, como un **Resumen de investigaciones**.
+    - Vaya al **Threat management** > **Panel**de administración de amenazas. Esto le llevará al [Panel de seguridad](security-dashboard.md). Los widgets de AIR aparecen en la parte superior del [Panel de seguridad](security-dashboard.md). Seleccione un widget, como un **Resumen de investigaciones**.
 
-    - Vaya a **** > **investigaciones**de administración de amenazas. 
+    - Vaya a **Threat management** > **investigaciones**de administración de amenazas. 
 
     Cualquiera de estos métodos le lleva a una lista de investigaciones.
 
@@ -52,7 +52,7 @@ Ciertos tipos de alertas desencadenan la investigación automática en Office 36
 
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
 
-2. Vaya a **** > **investigaciones**de administración de amenazas.
+2. Vaya a **Threat management** > **investigaciones**de administración de amenazas.
 
 3. En la lista de investigaciones, seleccione un elemento en la columna **ID** . 
 
@@ -96,7 +96,7 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |Corregido | La investigación ha finalizado y se ha corregido completamente (se han aprobado todas las acciones) |
 |Parcialmente remediado | La investigación ha finalizado y algunas de las acciones recomendadas se han aprobado |
 |Finalizada por el usuario | Un administrador terminó la investigación. |
-|Failed | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
+|Error | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
 |En cola por limitación | La investigación está esperando el análisis debido a las limitaciones del procesamiento del sistema (para proteger el rendimiento del servicio) |
 |Terminado con la limitación | La investigación no se pudo completar en el tiempo suficiente debido a las limitaciones de procesamiento del sistema y el volumen de investigación. Puede reactivar la investigación seleccionando el correo electrónico en el explorador y seleccionando la acción investigar. |
 

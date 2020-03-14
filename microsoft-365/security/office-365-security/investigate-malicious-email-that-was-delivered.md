@@ -1,5 +1,5 @@
 ---
-title: 'Busque y investigue el correo electrónico malintencionado que se entregó en Office 365, corrección, solución, corrección '
+title: Buscar e investigar correo electrónico malintencionado que se entregó en Office 365, corrección, solución, corrección, protección contra amenazas, explorador de amenazas, protección
 keywords: TIMailData-en línea, incidente de seguridad, incidente, ATP PowerShell, malware de correo electrónico, usuarios comprometidos, phishing de correo electrónico, malware de correo electrónico, leer encabezados de correo electrónico, leer encabezados, abrir encabezados de correo electrónico
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: 1cb7c418e9c4ae5f2223748d512e8718f81b010c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 178bdbfd97bea654959cf71da560a80e686a5fde
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409755"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632921"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Investigar y corregir el correo electrónico malintencionado que se entregó en Office 365
 
@@ -56,6 +56,9 @@ Para realizar determinadas acciones, como ver los encabezados de mensajes o desc
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Buscar y eliminar correo electrónico sospechoso que se entregó
 
 El explorador de amenazas es un informe eficaz que puede servir para varios propósitos, como buscar y eliminar mensajes, identificar la dirección IP de un remitente de correo electrónico malintencionado o iniciar un incidente para una mayor investigación. El siguiente procedimiento se centra en usar el explorador para buscar y eliminar correo electrónico malintencionado de los buzones de los destinatarios.
+
+> [!NOTE]
+> Las búsquedas predeterminadas en el explorador no incluyen elementos zapped en este momento.  Esto se aplica a todas las vistas, por ejemplo, las vistas de malware o phish. Para incluir elementos de zapped, debe agregar una "acción de entrega" establecida en incluir "eliminado por ZAP". Si incluye todas las opciones, verá todos los resultados de las acciones de entrega, incluidos los elementos zapped.
 
 1. **Vaya a Threat Explorer**: vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa para Office 365. Esto le llevará al centro de &amp; seguridad y cumplimiento.
 

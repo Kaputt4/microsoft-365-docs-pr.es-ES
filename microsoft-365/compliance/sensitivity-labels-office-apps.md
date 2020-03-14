@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, aplicaciones de Office para dispositivos móviles y aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
 ms.openlocfilehash: 858d2be23dcb3c3f2b0794e735ed8ca61d67b74d
-ms.sourcegitcommit: 794f2f416a258157cb44d962b5be6a348ee20fea
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42594013"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634218"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 

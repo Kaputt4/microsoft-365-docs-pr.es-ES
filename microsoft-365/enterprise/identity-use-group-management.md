@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Se pueden usar grupos para automatizar la administración de algunas tareas administrativas.
 ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544049"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633498"
 ---
 # <a name="step-5-use-groups-for-management"></a>Paso 5: Usar grupos para administración
 

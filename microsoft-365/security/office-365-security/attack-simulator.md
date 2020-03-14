@@ -16,18 +16,18 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Use el simulador de ataque para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseña en su organización de Office 365 E5 o ATP planeada 2, lo que puede ayudarle a identificar a los usuarios vulnerables antes de que un ataque real haga su trabajo.
-ms.openlocfilehash: 5e924ebe43a6d7fd1af460b304e862207baffb61
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612640"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637343"
 ---
 # <a name="attack-simulator-in-office-365-atp"></a>Simulador de ataque en Office 365 ATP
 
 El simulador de ataque de Office 365 Advanced Threat Protection Plan 2 (ATP plan 2) le permite ejecutar campañas de suplantación de identidad (phishing) y ataques con contraseñas en su organización. Puede usar los resultados de las campañas para identificar y entrenar a los usuarios vulnerables.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para abrir el centro de cumplimiento de & de seguridad de Office <https://protection.office.com/>365, vaya a. El simulador de ataques está disponible en **simulador de ataques**de **Administración** \> de amenazas.
 
@@ -186,7 +186,7 @@ Si va a utilizar una de las plantillas integradas o va a crear el mensaje de cor
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Todas las direcciones URL son intencionadamente http, no HTTPS.</li><li>Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores Web admitidos antes de usar la dirección URL en una campaña de suplantación de identidad (phishing).</li><li>Es necesario que seleccione una dirección URL. En el caso de las campañas de **"Spear phishing" (datos adjuntos)** , puede quitar el vínculo del cuerpo del mensaje en el paso siguiente (de lo contrario, el mensaje contendrá tanto un vínculo **como** datos adjuntos).</li></ul>
+     > <ul><li>Todas las direcciones URL son intencionadamente http, no HTTPS.</li><li>Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores Web admitidos antes de usar la dirección URL en una campaña de suplantación de identidad (phishing).</li><li>Es necesario que seleccione una dirección URL. En el caso de las campañas de <b>"Spear phishing" (datos adjuntos)</b> , puede quitar el vínculo del cuerpo del mensaje en el paso siguiente (de lo contrario, el mensaje contendrá tanto un vínculo <b>como</b> datos adjuntos).</li></ul>
 
    - **Tipo de datos adjuntos**: esta configuración solo está disponible en las campañas de **"Spear phishing" (datos adjuntos)** . Haga clic en la lista desplegable y seleccione **. DOCX** o **. PDF** de la lista.
 
@@ -220,7 +220,7 @@ Un *ataque de contraseña* intenta adivinar las contraseñas de las cuentas de u
 
 En el simulador de ataque, hay disponibles dos tipos diferentes de campañas para ataques con contraseña para que pueda probar la complejidad de las contraseñas de los usuarios:
 
-- **Contraseña de fuerza bruta (ataque de diccionario)**: un ataque de *Diccionario* o de *fuerza bruta*usa un archivo de Diccionario de gran tamaño de contraseñas en una cuenta de usuario con la esperanza de que uno de ellos trabaje (muchas contraseñas con una cuenta). Los bloqueos de contraseñas incorrectos ayudan a impedir ataques de contraseñas de fuerza bruta.
+- **Contraseña de fuerza bruta (ataque de diccionario)**: una *fuerza bruta* o un ataque de *Diccionario* usa un archivo de Diccionario de gran tamaño de contraseñas en una cuenta de usuario con la esperanza de que uno de ellos trabaje (muchas contraseñas con una cuenta). Los bloqueos de contraseñas incorrectos ayudan a impedir ataques de contraseñas de fuerza bruta.
 
   Para el ataque de diccionario, puede especificar una o varias contraseñas para probarlas (especificadas manualmente o en un archivo cargado) y puede especificar uno o varios usuarios.
 

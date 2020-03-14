@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Obtenga información sobre cómo obtener acceso a Azure Active Directory, que se incluye en la suscripción de pago de Office 365 de su organización.
-ms.openlocfilehash: b8487b245001ffc73b975ed8f756b83e7093b1e7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 40ed5808f6e921a3649af408ee078dba64167bb3
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069227"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610597"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Usar su suscripción gratuita de Azure Active Directory en Office 365
 
@@ -29,7 +29,11 @@ Si su organización tiene una suscripción de pago a Office 365, Microsoft Dynam
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Use una sesión de exploración privada (no una sesión normal) para obtener acceso a Azure Portal (en el paso 1 siguiente), ya que esto impedirá que la credencial con la que inició la sesión se pase a Azure. Para abrir una sesión de Exploración de InPrivate en Internet Explorer o una sesión de exploración privada en Mozilla Firefox, presione CTRL+MAYÚS+P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana de incógnito), presione CTRL+MAYÚS+N.
+Use una sesión de exploración privada (no una sesión normal) para obtener acceso a Azure Portal (en el paso 1 a continuación), ya que esto evitará que las credenciales con las que inició sesión se pasen a Azure. Para abrir una sesión de exploración privada:
+
+- En Microsoft Edge (versión heredada), Internet Explorer o Mozilla FireFox, presione `CTRL+SHIFT+P`.
+
+- En Microsoft Edge (versión más reciente) o Google Chrome, presione `CTRL+SHIFT+N`.
 
 ## <a name="access-azure-active-directory"></a>Obtener acceso a Azure Active Directory
 

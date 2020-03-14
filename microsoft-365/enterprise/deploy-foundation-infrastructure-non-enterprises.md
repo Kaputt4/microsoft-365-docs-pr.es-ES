@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Le mostramos las fases simplificadas de la infraestructura básica de Microsoft 365 para empresas para organizaciones que no sean empresas.
-ms.openlocfilehash: 2620b210c40d5c838cf1a4be4fcd67bf3de03d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068240"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612650"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Infraestructura básica de Microsoft 365 para empresas para organizaciones que no son empresas
 
@@ -294,7 +294,7 @@ El primer paso en una estrategia de protección de datos es determinar los disti
 
 - Extremadamente regulado
 
-  Algunos ejemplos son la información de identificación personal de los clientes y socios, y la propiedad intelectual o planes estratégicos de su organización.
+  Algunos ejemplos son la información de identificación personal de los clientes y socios, y la propiedad intelectual o los planes estratégicos de su organización.
 
 En función de estos niveles de seguridad de datos, el siguiente paso es identificar e implementar:
 
@@ -371,7 +371,7 @@ El empleado existente ya debe haber sido agregado a los grupos correspondientes 
 
 Puede agregar una cuenta de usuario a varios grupos de Azure AD en el Centro de administración de Microsoft 365. En las propiedades de la cuenta de usuario, haga clic en **Administrar grupos > Agregar miembros**.
 
-Si quiere usar PowerShell, vea este [libro de Excel descargable](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx), donde se generan los comandos de PowerShell basándose en una cuenta de usuario específica y en nombres de grupos seleccionados.
+Si quiere usar PowerShell, vea este [libro de Excel descargable](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx), donde se generan los comandos de PowerShell basándose en una cuenta de usuario específica y en nombres de grupos seleccionados.
 
 ### <a name="new-employee-with-a-cloud-only-user-account"></a>Nuevo empleado con una cuenta de usuario solo de nube
 

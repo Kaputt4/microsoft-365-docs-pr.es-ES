@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: ''
 description: Use el botón Reintentar para resolver búsquedas de contenido que tienen errores de ubicación de contenido.
 ms.openlocfilehash: 6eb08c006f206e3ad7850d67e541f6fc3f496441
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081587"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634178"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Volver a intentar una búsqueda de contenido para resolver un error de ubicación de contenido
 

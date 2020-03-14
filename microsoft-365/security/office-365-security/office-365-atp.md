@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: 712fdf6935fa69bfb2079858d6384eee270776e6
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: aac4cb43386577851d74e424d6435d0c15762bab
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261037"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612610"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -98,7 +98,7 @@ Office 365 ATP Plan 2 incluye las mejores [herramientas de investigación y resp
 
 - **[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)** (también conocido como Explorador) es un informe en tiempo real que le permite identificar y analizar amenazas recientes. Puede configurar el Explorador para mostrar datos de períodos personalizados.
 
-- **[Simulador de ataques](attack-simulator.md)** le permite ejecutar escenarios de ataque realistas en su organización para identificar vulnerabilidades. Hay disponibles simulaciones de los tipos actuales de ataques, que incluyen un [ataque de recolección de contraseñas de phishing de objetivo definido](attack-simulator.md#credential-harvest-spear-phishing-attack), un [ataque de difusión de contraseña](attack-simulator.md#password-spray-attack) y un [ataque de contraseña por fuerza bruta](attack-simulator.md#brute-force-password-attack) entre otros.
+- ** El [Simulador de ataques](attack-simulator.md)** le permite ejecutar escenarios de ataque realistas en su organización para identificar vulnerabilidades. Están disponibles las simulaciones de los tipos de ataques actuales, incluidos los de phishing de objetivo definido (robo de credenciales), ataques de difusión de contraseña y por fuerza bruta.
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Ahorre tiempo gracias a las investigaciones y respuestas automáticas
 

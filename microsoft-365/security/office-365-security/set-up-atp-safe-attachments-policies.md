@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: ad90ffb4e3503021923470238626d6025e9820fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: c5001823979c19ec68cd15a10bf7c2d7e54cae1d
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957185"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637323"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
 
@@ -45,11 +45,13 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
 
 - Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado el rol de administración de la organización de Exchange Online (el administrador global de Office 365 está asignado a este rol de forma predeterminada) o los roles de administrador de seguridad y administración de la protección en línea de Exchange Online. Para obtener más información, vea la tabla siguiente:
 
-  |Role|Dónde y cómo se asigna|
-  |---------|---------|
+  |||
+  |---|---|
+  |**Rol**|**Dónde y cómo se asigna**|
   |Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).|
   |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
   |Administración de la organización de Exchange Online, administración de la protección de Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |
 
   Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -87,15 +89,17 @@ Considere la posibilidad de configurar varias directivas de datos adjuntos segur
 
 A medida que configure las directivas de datos adjuntos seguros de ATP, podrá elegir entre varias opciones, como monitor, bloqueo, reemplazo, entrega dinámica, etc. En caso de que se haya preguntado sobre lo que hacen estas opciones, en la tabla siguiente se resumen cada uno de ellos y su efecto.
 
+||||
+|---|---|---|
 |**Opción**|**Effect**|**Se usa cuando se desea:**|
-|:-----|:-----|:-----|
-|**Desactivado**|No analiza los datos adjuntos en busca de malware  <br/> No retrasa la entrega de mensajes|Desactivar el análisis para remitentes internos, escáneres, faxes o hosts inteligentes que solo enviarán datos adjuntos conocidos y buenos  <br/> Evitar retrasos innecesarios en el correo interno de enrutamiento  <br/> **Esta opción no se recomienda para la mayoría de los usuarios. Permite activar el análisis de datos adjuntos seguros de ATP para un grupo pequeño de remitentes internos.**|
+|**Desactivado**|No analiza los datos adjuntos en busca de malware  <br/> No retrasa la entrega de mensajes|Desactivar el análisis de escáneres, faxes o hosts inteligentes que solo enviarán datos adjuntos conocidos y buenos  <br/> Evitar retrasos innecesarios en el correo interno de enrutamiento.  <br/> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos seguros de ATP para un grupo pequeño de remitentes de confianza.**|
 |**Monitor**|Entrega los mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que ocurre con malware detectado|Ver dónde se encuentra el malware detectado en su organización|
 |**Desbloquear**|Impide que se prosigan los mensajes con datos adjuntos de malware detectados  <br/> Envía mensajes con malware detectado a [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes  <br/> Bloquea los mensajes y datos adjuntos futuros de forma automática|Proteger a su organización de ataques repetidos con los mismos datos adjuntos de malware|
 |**Replace**|Quita los datos adjuntos de malware detectados  <br/> Notifica a los destinatarios que se han quitado datos adjuntos  <br/> Envía mensajes con malware detectado a [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes|Elevar la visibilidad a los destinatarios que los datos adjuntos se quitaron debido al malware detectado|
 |**Entrega dinámica**|Entrega los mensajes inmediatamente  <br/> Reemplaza datos adjuntos con un archivo de marcador de posición hasta que se completa la búsqueda y, a continuación, vuelve a adjuntar los datos adjuntos si no se detecta malware  <br/> Incluye funciones de vista previa de datos adjuntos para la mayoría de los PDF y archivos de Office durante el examen  <br/> Envía mensajes con malware detectado a cuarentena donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes  <br/> [Obtener información sobre la vista previa y la entrega dinámica con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md) <br/> |Evitar retrasos en los mensajes al proteger a los destinatarios de archivos malintencionados  <br/> Permitir a los destinatarios obtener una vista previa de los datos adjuntos en modo seguro mientras se lleva a cabo el análisis|
 |**Habilitar redireccionamiento**|Se aplica cuando se elige la opción supervisar, bloquear o reemplazar  <br/> Envía datos adjuntos a una dirección de correo electrónico especificada en la que los administradores o analistas de seguridad pueden investigar|Permitir que los administradores de seguridad y analistas investiguen datos adjuntos sospechosos|
 |**Aplicar la selección anterior si el análisis de malware para archivos adjuntos se agota el tiempo de espera o se produce un error**|Aplica la acción configurada para los datos adjuntos de unasfe a los datos adjuntos que no se pueden analizar (debido a tiempo de espera o error)|
+|
 
 ## <a name="next-steps"></a>Pasos siguientes
 

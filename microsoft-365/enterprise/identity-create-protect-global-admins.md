@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Las cuentas de administrador global necesitan un tratamiento especial para proteger la integridad de sus credenciales.
 ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544039"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633578"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Paso 1: crea y proteja sus cuentas de administrador global
 

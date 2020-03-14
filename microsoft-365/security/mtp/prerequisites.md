@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3e18759387525ec600c24f74c96d6cddf206fc82
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 2b653575e9e79ffe3448f622ca5be2cef37999dd
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569050"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633958"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Requisitos previos de la Protección contra amenazas de Microsoft
 
@@ -53,6 +53,9 @@ Vaya al centro de administración de 365 de Microsoft ([admin.Microsoft.com](htt
 
 ## <a name="browser-requirements"></a>Requisitos de los exploradores
 Acceda a Microsoft Threat Protection en el centro de seguridad de Microsoft 365 con Microsoft Edge, Internet Explorer 11 o cualquier explorador Web compatible con HTML 5.
+
+## <a name="microsoft-threat-protection-for-us-government-community-cloud-and-us-government-community-cloud-high-gcc-high-customers"></a>Microsoft Threat Protection para la comunidad de administración pública Cloud y la nube de la comunidad de administración de Estados Unidos de Microsoft Cloud High (GCC High) clientes
+Actualmente, la protección contra amenazas de Microsoft no está disponible para los clientes de GCC y GCC High. 
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Introducción a la Protección contra amenazas de Microsoft](microsoft-threat-protection.md)
