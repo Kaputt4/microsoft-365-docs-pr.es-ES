@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 5dcd97400067645c48f02a31061721644bae553c
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: 4052cf691e9123e3d840d5fa6759ff7f032b67c2
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277447"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634308"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -58,9 +58,6 @@ Con las etiquetas de retención, puede:
     
    - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
 
-  > [!NOTE]
-  > La función para aplicar etiquetas automáticamente requiere un mínimo de una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se ha etiquetado automáticamente en un sitio o cuyo buzón está seleccionado para etiquetado automático. Esta licencia no es necesaria para los usuarios que solo tengan acceso de solo lectura al contenido o que respondan a los mensajes de correo electrónico con etiquetas.
-      
 - **Implementar la administración de registros en todo Office 365**, tanto en correos electrónicos como en documentos. Puede usar una etiqueta de retención para clasificar contenido como un registro. Cuando ocurra esto, la etiqueta no se puede cambiar ni quitar, y el contenido no se puede editar ni eliminar. 
 
 - **Aplique una etiqueta de retención predeterminada a una biblioteca de documentos, carpeta o conjunto de documentos** en SharePoint, para que todos los documentos que llegan a esa ubicación hereden la etiqueta de retención predeterminada.  
@@ -268,8 +265,6 @@ Puede aplicar automáticamente etiquetas de retención en contenido cuando este 
     
 ![Página de selección de condición para una etiqueta de aplicación automática](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-La aplicación automática de las etiquetas de retención configuradas para las dos primeras opciones necesita una suscripción a Office 365 Enterprise E5. Si usa la opción para clasificadores que se pueden entrenar, esta funcionalidad tiene [requisitos de licencia adicionales](classifier-getting-started-with.md#licensing-requirements).
-
 Las etiquetas de retención aplicadas automáticamente puede tardar hasta siete días en aplicarse a todo el contenido que coincida con las condiciones que ha configurado.
   
 > [!TIP]
@@ -318,7 +313,9 @@ Consultas de ejemplos:
 
 ### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
 
-Si elige la opción para un clasificador que se puede entrenar, puede seleccionar uno de los clasificadores integrado o un clasificador personalizado. Los clasificadores integrados incluyen **lenguaje ofensivo**, **currículum vítae**, **código fuente**, **acoso**, **blasfemia** y **amenazas**.
+Si elige la opción para un clasificador que se puede entrenar, puede seleccionar uno de los clasificadores integrado o un clasificador personalizado. Los clasificadores integrados incluyen **lenguaje ofensivo**, **currículum vítae**, **código fuente**, **acoso selectivo**, **blasfemia** y **amenazas**:
+
+![Elegir clasificador que se puede entrenar](../media/retention-label-classifers.png)
 
 Para aplicar una etiqueta automáticamente usando esta opción, los buzones y sitios de SharePoint Online deben tener al menos 10 MB de datos.
 
@@ -328,7 +325,7 @@ Para obtener un ejemplo de configuración, consulte [cómo preparar y usar un cl
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint
 
-Además de permitir que los usuarios apliquen una etiqueta de retención a documentos individuales, también puede aplicar una etiqueta de retención predeterminada a una biblioteca de SharePoint, carpeta o conjunto de documentos, para que todos los documentos en esa ubicación obtengan la etiqueta de retención predeterminada (las etiquetas predeterminadas son característica E5).
+Además de permitir que los usuarios apliquen una etiqueta de retención a documentos individuales, también puede aplicar una etiqueta de retención predeterminada a una biblioteca, carpeta o conjunto de documentos de SharePoint para aplicar la etiqueta de retención predeterminada a todos los documentos de esa ubicación.
   
 Para una biblioteca de documentos, esto se realiza en la página **Configuración de biblioteca** de la biblioteca de documentos. Al seleccionar la etiqueta de retención predeterminada, también se puede elegir aplicarla a los elementos existentes en la biblioteca. 
   
