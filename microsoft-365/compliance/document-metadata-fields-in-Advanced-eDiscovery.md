@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos para los documentos en un conjunto de revisión en un caso en eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: ae268c1368933c729177d6083294e7e7a8735958
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
+ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074927"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "42651844"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos del documento en eDiscovery avanzado
 
 En la siguiente tabla se enumeran los campos de metadatos de los documentos en un conjunto de revisión en un caso en eDiscovery avanzado. La tabla proporciona la siguiente información:
 
-- Nombre del **campo** y **nombre del campo de presentación:** el nombre del campo de metadatos y el nombre del campo que se muestra al ver los metadatos de archivo de un documento seleccionado en un conjunto de revisión. Tenga en cuenta que algunos campos de metadatos no se incluyen al ver los metadatos de archivo de un documento. Estos campos se resaltan con un asterisco (*).
+- Nombre del **campo** y **nombre del campo de presentación:** el nombre del campo de metadatos y el nombre del campo que se muestra al ver los metadatos de archivo de un documento seleccionado en un conjunto de revisión. Algunos campos de metadatos no se incluyen al ver los metadatos de archivo de un documento. Estos campos se resaltan con un asterisco (*).
 
 - **Nombre de campo de búsqueda:** Nombre de la propiedad que se puede buscar al ejecutar una consulta de [conjunto de revisión](review-set-search.md). Una celda en blanco significa que no se puede buscar el campo en una consulta de conjunto de revisiones.
 
--  **Nombre del campo exportado:** Nombre del campo de metadatos que se incluye al exportar los documentos.  Una celda en blanco significa que el campo no está incluido en los metadatos exportados.
+- **Nombre del campo exportado:** Nombre del campo de metadatos que se incluye al exportar los documentos.  Una celda en blanco significa que el campo no está incluido en los metadatos exportados.
 
 - **Descripción:** Descripción del campo de metadatos.
 
@@ -77,7 +77,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 |Seguridad del correo electrónico|EmailSecurity|Email_security|Configuración de seguridad del mensaje: **0** -ninguno; **1** -firmado; **2** -cifrado; **3** : cifrado y firmado.|
 |Confidencialidad del correo electrónico|EmailSensitivity|email_sensitivity|Configuración de sensibilidad del mensaje: **0** -ninguno; **1** personal; **2** -privado; **3** -CompanyConfidential.|
 |Conjunto de correo electrónico|EmailSet|Email_set|IDENTIFICADOR de grupo para todos los mensajes en el mismo conjunto de correo electrónico.|
-|EmailThread*||Email_thread|Posición del mensaje dentro del conjunto de correo electrónico; consta de identificadores de nodo desde la raíz al mensaje actual; , separados por puntos.|
+|EmailThread*||Email_thread|Posición del mensaje dentro del conjunto de correo electrónico; consta de identificadores de nodo desde la raíz al mensaje actual y están separados por puntos (.).|
 |Tipo de contenido extraído||Extracted_content_type|Tipo de contenido extraído, en forma de tipo MIME; por ejemplo, **image/JPEG**|
 |ExtractedTextLength*||Extracted_text_length|Número de caracteres en el texto extraído.|
 |Número de caso de puntuación de la relevancia familiar, problema 1 *||Family_relevance_score_case_issue_1|Puntuación de relevancia de familia el problema 1 de la relevancia.|
@@ -93,7 +93,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 |Tiene datos adjuntos|HasAttachment|Email_has_attachment|Indica si el mensaje tiene o no datos adjuntos.|
 |Tiene abogado|HasAttorney||**True** cuando al menos uno de los participantes se encuentra en la lista de abogados; de lo contrario, el valor es **false**.|
 |HasText||Has_text|Indica si el elemento tiene texto; los valores posibles son **true** y **false**.|
-|Identificador inmutable|ImmutableId|Immutable_ID|Identificador inmutable tal y como se almacena en Office 365.|
+|Identificador inmutable||Immutable_ID|Este identificador se usa para identificar de forma única un documento dentro de un conjunto de revisión. Este campo no se puede usar en una búsqueda de conjunto de revisión y el identificador no puede usarse para obtener acceso a un documento en su ubicación nativa.|
 |Tipo inclusivo|InclusiveType|Inclusive_type|Tipo inclusivo calculado para análisis: **0** -no inclusivo; **1** -ambos inclusive; **2** -inclusive menos; **3** -copia inclusiva.|
 |En responder a ID.||In_reply_to_ID|En responder al identificador del mensaje.|
 |Es representativo|IsRepresentative|Is_representative|Un documento de cada conjunto de duplicados exactos se marca como representativo.|
@@ -111,8 +111,8 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 |Extensión nativa|NativeExtension|Native_extension|Extensión nativa del elemento.|
 |Nombre de archivo nativo|NativeFileName|Native_file_name|Nombre de archivo nativo del elemento.|
 |NativeMD5||Native_MD5|Hash MD5 de la secuencia de archivo.|
-|Ordenación de ND: excluir datos adjuntos|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenación de un conjunto de correo electrónico y un conjunto de ND para una ordenación eficaz en el momento de la revisión; **D** se agrega como prefijo a los conjuntos de ND y **e** se agrega a los conjuntos de correo electrónico.|
-|Ordenación de ND: incluidos datos adjuntos|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenación de un conjunto de correo electrónico y un conjunto de ND para una ordenación eficaz en el momento de la revisión; **D** se agrega como prefijo a los conjuntos de ND y **e** se agrega a los conjuntos de correo electrónico. Cada correo electrónico de un conjunto de correo electrónico va seguido de los datos adjuntos correspondientes.|
+|Ordenación de ND: excluir datos adjuntos|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenación del conjunto de subprocesos de correo electrónico (ET) y del conjunto Near-duplicado (ND). Este campo se usa para la ordenación eficaz en el momento de la revisión. Un **D** se ANTEPONE a ND sets y un **e** se antepone a et sets.|
+|Ordenación de ND: incluidos datos adjuntos|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenación de un conjunto de subprocesos de correo electrónico (ET) y un conjunto casi duplicado (ND). Este campo se usa para la ordenación eficaz en el momento de la revisión. Un **D** se ANTEPONE a ND sets y un **e** se antepone a et sets. Cada elemento de correo electrónico de un conjunto ET sigue sus datos adjuntos apropiados.|
 |Número de caso 1 de puntuación de relevancia normalizada||Normalized_relevance_score_case_issue_1|Problema de la puntuación del caso 1 de relevancia normalizada respecto a la relevancia.|
 |Autores de O365||O365_authors|Autor de SharePoint.|
 |O365 creado por||O365_created_by|Creado por desde SharePoint.|
@@ -149,7 +149,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 |Subject|Subject|Email_subject|Asunto del mensaje.|
 |Asunto/título|SubjectTitle||Campo calculado compuesto por el asunto o el título del elemento.|
 |Se etiquetan por el número de caso 1||Tagged_by_Case_issue_1|Usuario que etiquetó este documento por el problema de caso 1 en relevancia.|
-|Tags|Tags|Tags|Etiquetas aplicadas en un conjunto de revisión.|
+|Etiquetas|Etiquetas|Etiquetas|Etiquetas aplicadas en un conjunto de revisión.|
 |Lista de temas|ThemesList|Themes_list|Lista de temas tal y como se calcula para el análisis.|
 |Título|Título|Doc_title|Título de los metadatos del documento.|
 |To|To|Email_to|Campo para para los tipos de mensaje. El formato **es\<DisplayName SmtpAddress>**|
