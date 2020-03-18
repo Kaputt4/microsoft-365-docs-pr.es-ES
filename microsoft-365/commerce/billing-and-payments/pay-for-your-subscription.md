@@ -20,23 +20,23 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Obtenga información sobre las opciones de pago disponibles para pagar por su suscripción de Office 365 para empresas.
+description: Obtenga información acerca de qué opciones de pago están disponibles para pagar por su suscripción a Office 365 para empresas.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
 ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/13/2020
 ms.locfileid: "42633718"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>Pagar la suscripción a Office 365 para empresas
 
-Cuando configure la suscripción, puede optar por pagar mediante pagos con tarjeta de crédito o cuenta bancaria, o bien pagar con factura mediante cheque o transferencia electrónica de fondos (EFT). Independientemente del método que elija, ese será el método de pago que seguiremos usando para los períodos de facturación siguientes, salvo que [cambie el método de pago](change-payment-method.md).
+Al configurar su suscripción, puede elegir pagar con tarjeta de crédito, mediante transferencia bancaria o pagar mediante factura usando un cheque o transferencia electrónica de fondos (EFT). Independientemente del método que elija, ese será el método de pago que seguiremos usando para los períodos de facturación siguientes, salvo que [cambie el método de pago](change-payment-method.md).
 
 > [!NOTE]
-> Pagar por cuenta bancaria no está disponible en algunos países o regiones.
+> Pagar con la cuenta bancaria no está disponible en algunos países o regiones.
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>Pagar con tarjeta de crédito o cuenta bancaria
 
@@ -44,7 +44,7 @@ Al pagar con tarjeta de crédito o cuenta bancaria, se le hará automáticamente
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>¿Qué ocurre si se rechazó la tarjeta de crédito y el pago está vencido?
 
-Si paga con tarjeta de crédito y rechazan el pago, recibirá un correo electrónico para informarle de que no pudimos procesar el pago. Esto puede ocurrir por varios motivos (por ejemplo, si expiró la tarjeta de crédito). Intentaremos repetir la transacción cada varios días. Si esos intentos tampoco son válidos, seguirá recibiendo alertas por correo electrónico para informarle de los errores. Puede usar la característica de **saldo de liquidación** en cualquier momento para cambiar la información de la tarjeta de crédito y volver a enviar el pago inmediatamente.
+Si paga con tarjeta de crédito y rechazan el pago, recibirá un correo electrónico para informarle de que no pudimos procesar el pago. Esto puede ocurrir por varios motivos (por ejemplo, si expiró la tarjeta de crédito). Intentaremos repetir la transacción cada varios días. Si esos intentos tampoco son válidos, seguirá recibiendo alertas por correo electrónico para informarle de los errores. Puede usar la característica **Liquidar saldo** en cualquier momento para cambiar la información de la tarjeta de crédito y volver a enviar inmediatamente el pago.
 
 > [!NOTE]
 > Si cambia a una tarjeta de crédito distinta para pagar el saldo pendiente en la suscripción, se realizará un cargo en esa tarjeta para todos los pagos automáticos futuros de esa suscripción.
@@ -53,33 +53,33 @@ Si paga con tarjeta de crédito y rechazan el pago, recibirá un correo electró
 
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 
-2. Busque la suscripción con el saldo pendiente. En la sección **facturación** , junto a la **suscripción tiene un pago vencido**, seleccione **liquidar saldo**.
+2. Busque la suscripción con el saldo pendiente. En la sección **Facturación**, junto a la **suscripción tiene un pago vencido**, seleccione **Liquidar saldo**.
 
-3. Si es el propietario de la tarjeta de crédito, puede cambiar la fecha de expiración de la tarjeta, elegir una tarjeta diferente o [Agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
+3. Si es el propietario de la tarjeta de crédito, puede cambiar la fecha de expiración de la tarjeta, elegir una tarjeta distinta o [agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
 
     > [!NOTE]
-    > Cuando use la característica de **liquidación de saldo** , se le cobrará todo el saldo pendiente en su cuenta, que podría ser superior al importe pendiente de pago que se muestra en otra ubicación.
+    > Al usar la característica **Liquidar saldo**, se realizará un cargo en su cuenta de todo el saldo pendiente, que puede ser superior al importe pendiente de pago que se muestre en otro lugar.
 
-4. Si no es el propietario de la tarjeta de crédito, puede elegir una tarjeta de crédito distinta o [Agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
+4. Si no es el propietario de la tarjeta de crédito, puede seleccionar una tarjeta de crédito distinta o [agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
 
-5. Después de actualizar la información de la tarjeta de crédito o de cambiar la tarjeta de crédito que se usa para pagar la suscripción, seleccione **Guardar**.
+5. Después de actualizar la información de la tarjeta de crédito o de cambiar la tarjeta de crédito usada para pagar la suscripción, seleccione **Guardar**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
-2. Seleccione la suscripción que desea cambiar. En la sección **mi factura** , seleccione **pagar ahora**.
+2. Seleccione la suscripción que quiere cambiar. En la sección **Mi factura**, elija **Pagar ahora**.
 
-3. Si es el propietario de la tarjeta de crédito, puede cambiar la fecha de expiración de la tarjeta, elegir una tarjeta diferente o [Agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
+3. Si es el propietario de la tarjeta de crédito, puede cambiar la fecha de expiración de la tarjeta, elegir una tarjeta distinta o [agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
 
     > [!NOTE]
     > Al usar la característica **Pagar ahora**, se realizará un cargo en su cuenta de todo el saldo pendiente, que puede ser superior al importe pendiente de pago que se muestre en otro lugar.
 
-4. Si no es el propietario de la tarjeta de crédito, puede elegir una tarjeta de crédito distinta o [Agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
+4. Si no es el propietario de la tarjeta de crédito, puede seleccionar una tarjeta de crédito distinta o [agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
 
-5. Después de actualizar la información de la tarjeta de crédito o de cambiar la tarjeta de crédito que se usa para pagar la suscripción, seleccione **Enviar**. Verá el mensaje de confirmación "Se actualizó el método de pago y se saldaron todos los cargos pendientes. Gracias".
+5. Después de actualizar la información de la tarjeta de crédito o de cambiar la tarjeta de crédito usada para pagar la suscripción, elija **Enviar**. Verá el mensaje de confirmación "Se actualizó el método de pago y se saldaron todos los cargos pendientes. Gracias".
 
 ::: moniker-end
 
@@ -88,19 +88,19 @@ Si paga con tarjeta de crédito y rechazan el pago, recibirá un correo electró
 Si los costos de la suscripción superan un importe determinado (el importe varía según la ubicación del servicio), podrá pagar con factura (mediante transferencia bancaria o cheque). Puede que sea necesario hacer una comprobación de crédito para pagos de facturas más altas. Si se requiere una comprobación de crédito, se le notificará al comprar su suscripción. Además, si permite que nos pongamos en contacto con usted, recibirá un correo electrónico con más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
 
 > [!NOTE]
-> Los clientes que viven en Brasil pueden pagar una suscripción con un bancario de boleto. Si ha seleccionado esta opción, el billet para el pago se envía al correo electrónico proporcionado durante la compra de la suscripción en un plazo de 10 días laborables después de la fecha de pedido. La fecha de vencimiento es de 30 días después de la fecha de pedido. Si no recibe el boleto por correo electrónico, Compruebe la carpeta de correo no deseado o póngase en contacto con soporte técnico. <br><br>Si lo prefiere, puede pagar por transferencia electrónica entre cuentas. La Agencia y el número de cuenta se encuentran en la parte inferior de la factura. Debe especificar el número de factura en el campo identificación de transferencia.
+> Los clientes que viven en Brasil pueden pagar una suscripción con un Boleto Bancario. Si ha seleccionado esta opción, la factura para el pago se envía al correo electrónico proporcionado durante la compra de la suscripción en los 10 días laborables posteriores a la fecha del pedido. La fecha de vencimiento es 30 días posterior a la fecha del pedido. Si no recibe su Boleto por correo electrónico, compruebe la carpeta de correo no deseado o póngase en contacto con el soporte técnico. <br><br>Si lo prefiere, puede pagar mediante transferencia electrónica entre cuentas. El organismo y el número de cuenta aparecen en la parte inferior de la factura. Debe especificar el número de factura en el campo de identificación de transferencia.
 
 Si paga su suscripción mediante factura, recibirá un correo electrónico que indica que su extracto de facturación está listo. Este correo electrónico no contiene una copia del extracto de facturación. Pero, también tiene la posibilidad de [Recibir una copia del extracto de facturación por correo electrónico](#receive-a-copy-of-your-billing-statement-in-email). El extracto de facturación incluye información sobre las opciones de pago. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en su extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
 > [!NOTE]
-> De forma predeterminada, las notificaciones de facturación de la organización se envían a la dirección de correo electrónico de Office 365 y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de la organización. Para cambiar la dirección de correo electrónico alternativa, vea [cambiar las direcciones de facturación](change-your-billing-addresses.md).
+> De forma predeterminada, las notificaciones de facturación de la organización se envían a la dirección de correo electrónico de Office 365 y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de la organización. Para cambiar la dirección de correo electrónico alternativa, vea [Cambiar las direcciones de facturación](change-your-billing-addresses.md).
 
 ### <a name="can-i-pay-my-bill-online"></a>¿Puedo pagar mi factura en línea?
 
 Si su suscripción está configurada para pagarse mediante factura, no podemos aceptar los pagos en línea directamente. En cambio, puede [cambiar su método de pago a tarjeta de crédito o cuenta bancaria](change-payment-method.md) y el importe pendiente se cargará automáticamente a su tarjeta o cuenta después de cada período de servicio. Para Azure, vea [Cómo cambiar la tarjeta de crédito que se ha usado para pagar una suscripción de Azure](https://go.microsoft.com/fwlink/p/?LinkId=718057).
 
 > [!NOTE]
-> Si cambia a realizar pagos automáticos con tarjeta de crédito, asegúrese primero de pagar los saldos pendientes. Vea las instrucciones y las opciones de pago en el extracto de facturación. Para obtener más información, consulte [comprender la factura](understand-your-invoice2.md).
+> Si cambia a realizar pagos automáticos con tarjeta de crédito, asegúrese primero de pagar los saldos pendientes. Vea las instrucciones y las opciones de pago en el extracto de facturación. Para más información, vea [Información sobre la factura](understand-your-invoice2.md).
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 
@@ -109,10 +109,10 @@ Si su suscripción está configurada para pagarse mediante factura, no podemos a
 
 Si no está seguro de la cantidad que debe, puede [comprobar su factura y el historial de facturación en línea](view-your-bill-or-invoice.md). Para Azure, vea [Cómo descargar la factura de Azure y los datos de uso diario](https://go.microsoft.com/fwlink/p/?LinkId=718058).
 
- **Elija su país o región de facturación en el menú desplegable que aparece a continuación.**
+ **Elija su país o región de facturación del menú desplegable siguiente.**
 
 > [!div class="op_single_selector"]
-> - **Elige tu país o región**
+> - **Elija su país o región**
 > - [Afganistán](../pay/afghanistan.md)
 > - [Albania](../pay/albania.md)
 > - [Argelia](../pay/algeria.md)
@@ -271,21 +271,21 @@ Puede elegir recibir una copia del extracto de facturación como datos adjuntos 
 
 - Se enviará un correo electrónico tanto a la dirección de correo electrónico principal como a la alternativa de cada usuario que aparezca como destinatario de notificación.
 
-- Recibirá dos correos electrónicos separados: uno que le indica que su factura está lista, con instrucciones para iniciar sesión en el centro de administración y un segundo correo electrónico que contiene el extracto de facturación como datos adjuntos.
+- Recibirá dos mensajes de correo electrónico independientes: en el primero se le informará de que la factura está lista y se indicarán las instrucciones de inicio sesión en el centro de administración para poder verla. El segundo contendrá el extracto de facturación como datos adjuntos.
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>Cómo recibir el extracto de facturación por correo electrónico
 
-1. En el centro de administración, vaya a **la** \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notificaciones de facturación</a> de facturación.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
 
-    Si está usando Office 365 Germany, vaya a esta página de <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">notificaciones de facturación</a> .
+    Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notificaciones de facturación</a>.
 
-2. En **¿desea recibir el extracto de facturación como datos adjuntos de correo electrónico?**, cambie el botón de alternancia a **activado**.
+2. En **¿Recibir extracto de facturación como datos adjuntos de correo electrónico?**, cambie el botón de alternancia a **Activado**.
 
     Puede dejar de recibir los correos electrónicos con el extracto de facturación en cualquier momento. Para ello, deberá cambiar el botón de alternancia a **Desactivado**.
 
 ## <a name="need-to-switch-payment-methods"></a>¿Necesita cambiar los métodos de pago?
 
-Si sus motivos originales para elegir facturación, tarjeta de crédito o cuenta bancaria han cambiado, por ejemplo, si ajusta la suscripción para que el importe del pago sea inferior y ya no reúna las condiciones necesarias para los pagos por facturación, puede cambiar su método de pago. Para obtener más información, consulte [cambiar el método de pago](change-payment-method.md).
+Si sus motivos originales para elegir facturación, tarjeta de crédito o cuenta bancaria han cambiado, por ejemplo, si ajusta la suscripción para que el importe del pago sea inferior y ya no reúna las condiciones necesarias para los pagos por facturación, puede cambiar su método de pago. Para obtener más información, vea [Cambiar su método de pago](change-payment-method.md).
 
 ## <a name="related-articles"></a>Artículos relacionados
 
