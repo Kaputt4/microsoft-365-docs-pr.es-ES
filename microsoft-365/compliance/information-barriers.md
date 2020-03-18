@@ -1,5 +1,5 @@
 ---
-title: Introducción a las barreras de información
+title: Obtener información sobre las barreras de información
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
-ms.openlocfilehash: 95d3268830fe506000416e2281a49325fb95efec
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600667"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692657"
 ---
-# <a name="information-barriers"></a>Barreras de información
+# <a name="learn-about-information-barriers"></a>Obtener información sobre las barreras de información
 
 ## <a name="overview"></a>Información general
 
@@ -36,7 +36,7 @@ Las barreras de la información se están implementando ahora, a partir de Micro
 Para todos estos escenarios de ejemplo (y más), se pueden definir directivas de barrera de información para impedir o permitir las comunicaciones en Microsoft Teams. Estas directivas pueden impedir que los usuarios llamen o chatean con ellos que no deben, o bien permitir que los usuarios se comuniquen solo con grupos específicos en Microsoft Teams. Con las directivas de barrera de información en vigor, cada vez que los usuarios que están cubiertos por estas directivas intentan comunicarse con otros usuarios de Microsoft Teams, se realizan comprobaciones para evitar (o permitir) la comunicación (según las directivas de la barrera de información definida). Para obtener más información sobre la experiencia del usuario con barreras de información, consulte [barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!IMPORTANT]
-> Actualmente, las barreras de información no se aplican a las comunicaciones de correo electrónico ni al uso compartido de archivos a través de SharePoint Online o OneDrive. Además, las barreras de información son independientes de los [límites de cumplimiento](tagging-and-assessment-in-advanced-ediscovery.md).<p>Antes de definir y aplicar directivas de barrera de información, asegúrese de que la organización no tiene [directivas de libreta de direcciones de Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en vigor. (Las barreras de información se basan en las directivas de la libreta de direcciones). 
+> Actualmente, las barreras de información no se aplican a las comunicaciones de correo electrónico ni al uso compartido de archivos a través de SharePoint Online o OneDrive. Además, las barreras de información son independientes de los [límites de cumplimiento](set-up-compliance-boundaries.md).<p>Antes de definir y aplicar directivas de barrera de información, asegúrese de que la organización no tiene [directivas de libreta de direcciones de Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en vigor. (Las barreras de información se basan en las directivas de la libreta de direcciones). 
 
 ## <a name="what-happens-with-information-barriers"></a>Qué sucede con las barreras de la información
 
@@ -77,7 +77,7 @@ Para [definir o editar directivas de barrera de información](information-barrie
 
 Debe estar familiarizado con los cmdlets de PowerShell para poder definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en el [artículo de procedimientos](information-barriers-policies.md), necesitará conocer más detalles, como parámetros, para su organización.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga más información sobre las barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 

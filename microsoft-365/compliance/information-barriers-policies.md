@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
-ms.openlocfilehash: 15b17dba38a8e34bebf8d128c669fb7fa1f0ebd1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3dc59a78d25045f3816b48705b5427141a1caea7
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600607"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710509"
 ---
-# <a name="define-policies-for-information-barriers"></a>Definir políticas para las barreras de la información
+# <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
 ## <a name="overview"></a>Información general
 
@@ -35,15 +35,15 @@ En este artículo se describe cómo planear, definir, implementar y administrar 
 
 Al definir directivas para barreras de información, trabajará con los atributos de la cuenta de usuario, los segmentos, las directivas "bloquear" o "permitir" y la aplicación de directivas.
 
-- **Los atributos** de la cuenta de usuario se definen en Azure Active Directory (o Exchange Online). Estos atributos pueden incluir Departamento, puesto, ubicación, nombre del equipo y otros detalles del perfil del trabajo. 
+- Los atributos de la cuenta de usuario se definen en Azure Active Directory (o Exchange Online). Estos atributos pueden incluir Departamento, puesto, ubicación, nombre del equipo y otros detalles del perfil del trabajo. 
 
-- Los **segmentos** son conjuntos de usuarios que se definen en el centro de seguridad & cumplimiento de Office 365 con un **atributo de cuenta de usuario**seleccionado. (Consulte la [lista de atributos admitidos](information-barriers-attributes.md)). 
+- Los segmentos son conjuntos de usuarios que se definen en el centro de seguridad & cumplimiento de Office 365 con un **atributo de cuenta de usuario**seleccionado. (Consulte la [lista de atributos admitidos](information-barriers-attributes.md)). 
 
-- **Las directivas de barrera de información** determinan límites de comunicación o restricciones. Al definir directivas de barrera de información, puede elegir entre dos tipos de directivas:
+- Las directivas de barrera de información determinan límites de comunicación o restricciones. Al definir directivas de barrera de información, puede elegir entre dos tipos de directivas:
     - Las directivas "bloquear" impiden que un segmento se comunique con otro segmento.
     - Las directivas "permitir" permiten que un segmento se comunique con determinados otros segmentos.
 
-- La **aplicación de directivas** se realiza una vez que se han definido todas las directivas de barrera de información y está listo para aplicarlas a la organización.
+- La aplicación de directivas se realiza una vez que se han definido todas las directivas de barrera de información y está listo para aplicarlas a la organización.
 
 ## <a name="the-work-flow-at-a-glance"></a>El flujo de trabajo de un vistazo
 
@@ -60,22 +60,22 @@ Al definir directivas para barreras de información, trabajará con los atributo
 
 Además de las [licencias y permisos necesarios](information-barriers.md#required-licenses-and-permissions), asegúrese de que se cumplen los siguientes requisitos: 
      
-- **Datos del directorio**. Asegúrese de que la estructura de la organización se refleja en los datos del directorio. Para ello, asegúrese de que los atributos de la cuenta de usuario, como la pertenencia a grupos, el nombre del Departamento, etc., se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, vea los siguientes recursos:
+- Datos del directorio Asegúrese de que la estructura de la organización se refleja en los datos del directorio. Para ello, asegúrese de que los atributos de la cuenta de usuario, como la pertenencia a grupos, el nombre del Departamento, etc., se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, consulte los siguientes recursos:
   - [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
   - [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
-- **Búsqueda de directorio**en el ámbito. Antes de definir la Directiva de barrera de la primera información de su organización, debe [Habilitar la búsqueda de directorios de ámbito en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Espere al menos 24 horas después de habilitar la búsqueda de directorios de ámbito antes de configurar o definir directivas de barrera de información.
+- Búsqueda de directorio con ámbito: antes de definir la Directiva de barrera de información de la primera información de su organización, debe [Habilitar la búsqueda de directorios de ámbito en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Espere al menos 24 horas después de habilitar la búsqueda de directorios de ámbito antes de configurar o definir directivas de barrera de información.
 
-- **Registro de auditoría**. Para buscar el estado de una aplicación de Directiva, el registro de auditoría debe estar activado. Le recomendamos hacer esto antes de empezar a definir segmentos o directivas. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md).
+- Registro de auditoría: para buscar el estado de una aplicación de Directiva, el registro de auditoría debe estar activado. Le recomendamos hacer esto antes de empezar a definir segmentos o directivas. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md).
 
-- **No hay directivas de libreta de direcciones**. Antes de definir y aplicar directivas de barrera de información, asegúrese de que no hay directivas de libreta de direcciones de Exchange en su ubicación. (Las barreras de información se basan en las directivas de la libreta de direcciones, pero los dos tipos de directivas no son intercambiables). Si tiene estas directivas, asegúrese de [quitar las directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en primer lugar.
+- Ninguna directiva de libreta de direcciones: antes de definir y aplicar directivas de barrera de información, asegúrese de que no hay directivas de libreta de direcciones de Exchange en su ubicación. Las barreras de la información se basan en las directivas de la libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de [quitar las directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en primer lugar. Una vez que se habilitan las directivas de barrera de información y tiene habilitada la libreta jerárquica de direcciones, todos los usuarios ***que no estén incluidos*** en un segmento de barrera de información verán la [Libreta jerárquica de direcciones](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) en Exchange Online.
 
-- **PowerShell**. Actualmente, las directivas de barrera de información se definen y administran en el centro de cumplimiento de & de seguridad de Office 365 con cmdlets de PowerShell. Aunque se proporcionan varios ejemplos en este artículo, deberá estar familiarizado con los cmdlets y los parámetros de PowerShell. También necesitará el módulo AzureRM.
+- Actualmente, las directivas de barrera de información se definen y administran en el centro de cumplimiento de & de seguridad de Office 365 con cmdlets de PowerShell. Aunque se proporcionan varios ejemplos en este artículo, deberá estar familiarizado con los cmdlets y los parámetros de PowerShell. También necesitará el módulo AzureRM.
     - [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Instalar el módulo de Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- **Consentimiento del administrador para las barreras de la información en Microsoft Teams**. Cuando las directivas están en su lugar, las barreras de la información pueden quitar a las personas de las sesiones de chat en las que no se supone que se encuentren. Esto ayuda a garantizar que su organización siga cumpliendo con las directivas y las regulaciones. Use el siguiente procedimiento para habilitar las directivas de barrera de información para que funcionen según lo previsto en Microsoft Teams. 
+- Consentimiento del administrador para barreras de la información en Microsoft Teams: cuando se implementan las directivas, las barreras de la información pueden quitar a las personas de las sesiones de chat en las que no se supone que están. Esto ayuda a garantizar que su organización siga cumpliendo con las directivas y las regulaciones. Use el siguiente procedimiento para habilitar las directivas de barrera de información para que funcionen según lo previsto en Microsoft Teams. 
 
    1. Ejecute los siguientes cmdlets de PowerShell:
 
@@ -153,16 +153,21 @@ También puede definir segmentos con el parámetro "no es igual a", que se indic
 
 |Sintaxis  |Ejemplo  |
 |---------|---------|
-|`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`    |`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` <p>En este ejemplo, se ha definido un segmento denominado *NotSales* que incluye a todos los usuarios que no están en *ventas*. La parte **-ne** del cmdlet hace referencia a "no es igual a".  |
+|`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`   | <p>En este ejemplo, se ha definido un segmento denominado *NotSales* que incluye a todos los usuarios que no están en *ventas*. La parte **-ne** del cmdlet hace referencia a "no es igual a".  |
 
-Además de definir los segmentos con "igual" o "no es igual a", puede definir un segmento con los parámetros "igual" y "no es igual a".
+Además de definir los segmentos con "igual" o "no es igual a", puede definir un segmento con los parámetros "igual" y "no es igual a". También puede definir filtros de grupo complejos mediante operadores *and* y *or* lógicos.
 
-|Ejemplo  |
-|---------|
-|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"` <p>En este ejemplo, se ha definido un segmento denominado *LocalFTE* que incluye personas que se encuentran de forma local y cuyas posiciones no aparecen como *temporales*.    |
+
+|Sintaxis    |Ejemplo  |
+|---------|---------|
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>En este ejemplo, se ha definido un segmento denominado *LocalFTE* que incluye personas que se encuentran de forma local y cuyas posiciones no aparecen como *temporales*.    |
+ |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>En este ejemplo, se ha definido un segmento denominado *Segment1* que incluye personas que son miembros de Group1@contoso.com y no miembros de Group3@contoso.com.
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | En este ejemplo, se ha definido un segmento denominado *Segment2* que incluye personas que son miembros de group2@contoso.com y no miembros de Group3@contoso.com.
+|`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  En este ejemplo, se ha definido un segmento denominado *Segment1and2* que incluye miembros de contactos de group1@contoso.com y group2@contoso.com, y no miembros de Group3@contoso.com.
+
 
 > [!TIP]
-> Si es posible, use definiciones de segmento que incluyan "-EQ" o "-NE". Intente no definir definiciones de segmentos complejos. 
+> Si es posible, use definiciones de segmento que incluyan "-EQ" o "-NE". Intente no definir definiciones de segmentos complejos.
 
 ## <a name="part-2-define-information-barrier-policies"></a>Parte 2: definir las directivas de la barrera de información
 
@@ -256,6 +261,8 @@ Con PowerShell, puede ver el estado de las cuentas de usuario, los segmentos, la
 |La aplicación de directiva de barrera de información más reciente     | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Consta`Get-InformationBarrierPoliciesApplicationStatus`<p>    Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.       |
 |Todas las aplicaciones de directiva de barrera de información|Utilizados`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.|
 
+<!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
+
 ## <a name="what-if-i-need-to-remove-or-change-policies"></a>¿Qué ocurre si necesito quitar o cambiar directivas?
 
 Hay disponibles recursos para ayudarle a administrar las directivas de barrera de información.
@@ -309,7 +316,7 @@ Con los segmentos definidos, contoso continúa definiendo directivas.
 
 Contoso define tres directivas, como se describe en la tabla siguiente:
 
-|Policy  |Definición de directiva  |
+|Directiva  |Definición de directiva  |
 |---------|---------|
 |Directiva 1: impedir que las ventas se comuniquen con investigación     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> En este ejemplo, la Directiva de barrera de información se denomina *ventas-investigación*. Cuando esta directiva está activa y se aplica, ayuda a evitar que los usuarios que están en el segmento de ventas se comuniquen con los usuarios del segmento de investigación. Se trata de una directiva de un solo sentido; no impedirá que la investigación se comunique con ventas. Para ello, se necesita la Directiva 2.      |
 |Directiva 2: evitar que la investigación se comunique con las ventas     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> En este ejemplo, la Directiva de barrera de información se denomina *Research-sales*. Cuando esta directiva está activa y se aplica, ayuda a evitar que los usuarios que están en el segmento de investigación se comuniquen con los usuarios del segmento de ventas.       |

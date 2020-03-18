@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Aprenda a reconocer y corregir el consentimiento ilícito concede un ataque en Office 365.
-ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363056"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710529"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar y solucionar la concesión de consentimiento ilegal en Office 365
 
@@ -29,7 +29,12 @@ ms.locfileid: "42363056"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>¿Cuál es el ataque de concesión de consentimiento ilícito en Office 365?
 
-En un ataque de consentimiento ilícito, el atacante crea una aplicación registrada de Azure que solicita acceso a datos como la información de contacto, el correo electrónico o los documentos. A continuación, el atacante engaña a un usuario final para que conceda a esa aplicación el consentimiento para obtener acceso a sus datos mediante un ataque de suplantación de identidad o insertando código ilícito en un sitio web de confianza. Una vez que se ha concedido el consentimiento de la aplicación ilícita, tiene acceso de nivel de cuenta a los datos sin necesidad de una cuenta de la organización. Los pasos de corrección normales, como restablecer las contraseñas de las cuentas infringidas o requerir la autenticación multifactor (MFA) en las cuentas, no son eficaces contra este tipo de ataque, ya que son aplicaciones de terceros y son externas a la organización. Estos ataques aprovechan un modelo de interacción que presupone que la entidad que llama a la información es la automatización y no es una persona.
+En un ataque de consentimiento ilícito, el atacante crea una aplicación registrada de Azure que solicita acceso a datos como la información de contacto, el correo electrónico o los documentos. A continuación, el atacante engaña a un usuario final para que conceda a esa aplicación el consentimiento para obtener acceso a sus datos mediante un ataque de suplantación de identidad o insertando código ilícito en un sitio web de confianza. Una vez que se ha concedido el consentimiento de la aplicación ilícita, tiene acceso de nivel de cuenta a los datos sin necesidad de una cuenta de la organización. Los pasos de corrección normales, como restablecer las contraseñas de las cuentas infringidas o requerir la autenticación multifactor (MFA) en las cuentas, no son eficaces contra este tipo de ataque, ya que son aplicaciones de terceros y son externas a la organización. 
+
+Estos ataques aprovechan un modelo de interacción que presupone que la entidad que llama a la información es la automatización y no es una persona.
+
+> [!IMPORTANT]
+> ¿Sospecha que tiene problemas con el consentimiento ilícito: concesiones de una aplicación ahora? Microsoft Cloud App Security (MCAS) tiene herramientas para detectar, investigar y corregir las aplicaciones de OAuth. Este artículo de MCAS tiene un tutorial que describe cómo [investigar aplicaciones de OAuth de riesgo](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth). También puede establecer [directivas de aplicación de OAuth](https://docs.microsoft.com/cloud-app-security/app-permission-policy) para investigar los permisos solicitados por la aplicación, qué usuarios autorizan estas aplicaciones y aprobar o prohibir ampliamente estas solicitudes de permisos.
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>¿Qué aspecto tiene un ataque ilegal de concesión de consentimiento en Office 365?
 
@@ -48,7 +53,7 @@ Debe buscar en el **registro de auditoría** de Office 365 para encontrar signos
 5. Haga clic en el resultado para ver los detalles de la actividad. Haga clic en **más información** para obtener detalles de la actividad. Compruebe si IsAdminContent está establecido en true.
 
 > [!NOTE]
-> • Puede tardar hasta 30 minutos o hasta 24 horas después de que se produzca un evento para que la entrada del registro de auditoría correspondiente se muestre en los resultados de la búsqueda. <br/><br/> • El período de tiempo que se retiene un registro de auditoría y se pueden buscar en el registro de auditoría depende de la suscripción de Office 365 y, específicamente, del tipo de licencia asignado a un usuario específico. Para obtener más información, vea [registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * La entrada de registro de auditoría correspondiente puede tardar de 30 minutos de hasta 24 horas en aparecer en los resultados de la búsqueda después de que se produzca un evento. <br/><br/> La cantidad de tiempo que se retiene un registro de auditoría y se pueden buscar en el registro de auditoría depende de la suscripción de Office 365 y, específicamente, del tipo de licencia asignado a un usuario específico. Para obtener más información, vea [registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 Si este valor es true, indica que un usuario con acceso de administrador global puede haber concedido acceso general a los datos. Si esto es inesperado, siga los pasos para [confirmar un ataque](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Cómo confirmar un ataque
@@ -98,7 +103,7 @@ La forma más sencilla de comprobar el ataque de consentimiento ilícito es ejec
 - Administrador local en el equipo desde el que se ejecutarán los scripts.
 
 > [!IMPORTANT]
-> Se recomienda encarecidamente que requiera la autenticación multifactor en su cuenta administrativa. Este script admite la autenticación MFA.
+> Se ***recomienda encarecidamente*** que requiera la autenticación multifactor en su cuenta administrativa. Este script admite la autenticación MFA.
 
 1. Inicie sesión en el equipo en el que va a ejecutar el script con derechos de administrador local.
 

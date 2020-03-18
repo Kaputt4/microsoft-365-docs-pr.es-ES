@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Use este artículo como guía para solucionar problemas con las barreras de la información.
-ms.openlocfilehash: b4c9bb46bc1e3c13cdc8b46a95733558714a44df
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c601ddedf3acc816181f287c74f8f4df207a6b5
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600597"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692667"
 ---
 # <a name="troubleshooting-information-barriers"></a>Solución de problemas de barreras de información
 
@@ -146,7 +146,7 @@ Tenga en cuenta que, al ejecutar el cmdlet de aplicación de Directiva, se aplic
 
 2. Según los resultados del paso anterior, realice uno de los siguientes pasos:
   
-    |Estado  |Paso siguiente  |
+    |Estado  |Siguiente paso  |
     |---------|---------|
     |**No iniciado**     |Si ha transcurrido más de 45 minutos desde que se ejecutó el cmdlet **Start-InformationBarrierPoliciesApplication** , revise el registro de auditoría para ver si hay errores en las definiciones de directiva o alguna otra razón por la que la aplicación no se ha iniciado. |
     |**Failed**     |Si se ha producido un error en la aplicación, revise el registro de auditoría. Revise también sus segmentos y directivas. ¿Hay algún usuario asignado a más de un segmento? ¿Hay algún segmento asignado a más de un poliicy? Si es necesario, [modifique los segmentos](information-barriers-edit-segments-policies.md#edit-a-segment) o [edite las directivas](information-barriers-edit-segments-policies.md#edit-a-policy)y, a continuación, vuelva a ejecutar el cmdlet **Start-InformationBarrierPoliciesApplication** .  |
@@ -164,18 +164,53 @@ Asegúrese de que su organización no tiene [directivas de libreta de direccione
 
 2. Ejecute el cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) y revise los resultados.
 
-    |Resultados  |Paso siguiente  |
+    |Resultados  |Siguiente paso  |
     |---------|---------|
     |Las directivas de la libreta de direcciones de Exchange aparecen     |[Quitar directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
     |No existen directivas de libreta de direcciones |Revisar los registros de auditoría para averiguar por qué se produce un error en la aplicación de Directiva |
 
 3. [Ver el estado de las cuentas de usuario, los segmentos, las directivas o la aplicación de directivas](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
 
+## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>Problema: la Directiva de barrera de información no se aplica a todos los usuarios designados
+
+Una vez que haya definido los segmentos, las directivas de barrera de información definidas y haya intentado aplicar dichas directivas, es posible que la Directiva se aplique a algunos destinatarios, pero no a otros.
+Cuando ejecute el `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, busque texto como este en la salida.
+
+> Identifica`<application guid>`
+>
+> Total de destinatarios: 81527
+>
+> Destinatarios erróneos: 2
+>
+> Categoría de error: ninguna
+>
+> Estado: completo
+
+### <a name="what-to-do"></a>Qué hacer
+
+1. Busque en el registro de auditoría `<application guid>`de. Puede copiar este código de PowerShell y modificarlo para sus variables.
+
+```powershell
+$DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
+```
+
+2. Compruebe el resultado detallado del registro de auditoría para los valores de los `"UserId"` campos `"ErrorDetails"` y. Esto le dará el motivo del error. Puede copiar este código de PowerShell y modificarlo para sus variables.
+
+```powershell
+   $DetailedLogs[1] |fl
+```
+ Por ejemplo:
+
+> "UserId": usuario1
+> 
+>"ErrorDetails": "status: IBPolicyConflict. Error: el segmento de IB "segmento ID1" y el segmento IB "ID2" tienen conflicto y no se pueden asignar al destinatario. 
+
+3. Normalmente, observará que un usuario se ha incluido en más de un segmento. Para solucionarlo, actualice el `-UserGroupFilter` valor de. `OrganizationSegments`
+
+4. Volver a aplicar directivas de barrera de información mediante estos procedimientos [directivas de obstáculos](information-barriers-policies.md#part-3-apply-information-barrier-policies)para la información.
+
 ## <a name="related-topics"></a>Temas relacionados
 
 [Definir directivas para las barreras de información en Microsoft Teams](information-barriers-policies.md)
 
 [Barreras de información](information-barriers.md)
-
-
-

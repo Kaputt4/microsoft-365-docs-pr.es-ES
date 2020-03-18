@@ -11,36 +11,35 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: Tiene que habilitar la compatibilidad de ClickOnce para usar Microsoft Edge para exportar los resultados de búsqueda de la búsqueda de contenido y la exhibición de documentos electrónicos en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: db70b4cdbc57f519db3b6b962eb8aa43585ba335
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Debe habilitar la compatibilidad de ClickOnce para usar la versión más reciente de Microsoft Edge para descargar los resultados de búsqueda de la búsqueda de contenido y la exhibición de documentos electrónicos en el centro de seguridad y cumplimiento.
+ms.openlocfilehash: 80924b124521b24ffabf1e0273802265cd715500
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078605"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710349"
 ---
 # <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Usar la herramienta de exportación de exhibición de documentos electrónicos de Office 365 en Microsoft Edge
 
-Como resultado de los últimos cambios realizados en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada. Para seguir usando la herramienta de exportación de exhibición de documentos electrónicos 365 de Microsoft Office para descargar los resultados de búsqueda de contenido o de exhibición de documentos electrónicos, debe usar [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o habilitar la compatibilidad con ClickOnce en Microsoft Edge.
+Como resultado de los últimos cambios en la versión más reciente de Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada. Para seguir usando la herramienta de exportación de exhibición de documentos electrónicos 365 de Microsoft Office para descargar los resultados de búsqueda de contenido o de exhibición de documentos electrónicos, debe usar [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o habilitar la compatibilidad con ClickOnce en la versión más reciente de Microsoft Edge.
 
-## <a name="how-to-enable-clickonce-support-in-microsoft-edge"></a>Cómo habilitar la compatibilidad con ClickOnce en Microsoft Edge
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>Habilitar la compatibilidad con ClickOnce en Microsoft Edge
 
-1. En Microsoft Edge, navegue a **edge://flags/#edge clic una vez**.
+1. En Microsoft Edge, ve a **edge://flags/#edge clic una vez**.
 
 2. Si el valor existente se establece en **predeterminado** o está **deshabilitado** en la lista desplegable, cámbielo a **habilitado**.
-    
+
    ![](../media/ClickOnceimage1.png)
 
 3. Desplácese hacia abajo hasta la parte inferior de la ventana del explorador y haga clic en **reiniciar** para reiniciar el perímetro.
 
    ![](../media/ClickOnceimage2.png)
 
-**Nota:** Las organizaciones pueden usar la Directiva de grupo para deshabilitar la compatibilidad con ClickOnce. Para comprobar si existe una directiva de la organización para la compatibilidad con ClickOnce, vaya a **Edge://Policy**. En la siguiente captura de pantalla se muestra que ClickOnce está habilitado en toda la organización. Si el valor de esta Directiva se establece en **false**, deberá ponerse en contacto con un administrador de la organización.
+**Nota:** Las organizaciones pueden usar la Directiva de grupo para deshabilitar la compatibilidad con ClickOnce. Para comprobar si hay una directiva de la organización para la compatibilidad con ClickOnce, vaya a **Edge://Policy**. En la siguiente captura de pantalla se muestra que ClickOnce está habilitado en toda la organización. Si el valor de esta Directiva se establece en **false**, deberá ponerse en contacto con un administrador de la organización.
 
 ![](../media/ClickOnceimage3.png)
 
-## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a>Instalar y ejecutar la herramienta de exportación de Office 365 eDiscovery
+## <a name="install-and-run-the-ediscovery-export-tool"></a>Instalar y ejecutar la herramienta de exportación de exhibición de documentos electrónicos
 
 1. Haga clic en **Descargar resultados** en la página de flotante de una exportación en una búsqueda de contenido o un caso de exhibición de documentos electrónicos.
 

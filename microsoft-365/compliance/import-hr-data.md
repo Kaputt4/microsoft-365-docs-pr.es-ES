@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c1a44ad1e27d2d1002680faee56ae88e3e0921
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073054"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710549"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de recursos humanos
 
@@ -35,7 +35,7 @@ Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: crear una aplicación en Azure Active Directory
 
-El primer paso consiste en crear y registrar una nueva aplicación en Azure Active Directory (AAD). La aplicación se corresponderá con el conector de RRHH que cree en el paso 3.  La creación de esta aplicación permitirá que AAD autentique el conector de RRHH cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que ejecutó en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta aplicación de AAD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores en este proceso.
+El primer paso consiste en crear y registrar una nueva aplicación en Azure Active Directory (AAD). La aplicación se corresponderá con el conector de RRHH que cree en el paso 3. La creación de esta aplicación permitirá que AAD autentique el conector de RRHH cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que ejecutó en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta aplicación de AAD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
 - IDENTIFICADOR de la aplicación AAD (también denominado identificador de *aplicación* o identificador de *cliente*)
 
@@ -43,7 +43,7 @@ El primer paso consiste en crear y registrar una nueva aplicación en Azure Acti
 
 - Identificador de inquilino (también denominado *identificador de directorio*)
 
-Para obtener instrucciones paso a paso para crear una aplicación en AAD, vea [crear una aplicación de AAD](https://docs.microsoft.com/azure/kusto/management/access-control/how-to-provision-aad-app) .
+Para obtener instrucciones paso a paso para crear una aplicación en AAD, vea [registrar una aplicación con la plataforma de identidad de Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Paso 2: preparar un archivo CSV con los datos de recursos humanos
 
@@ -159,7 +159,7 @@ Después de crear el conector de recursos humanos y ejecutar el script para carg
 
    ![El archivo de registro del conector de recursos humanos muestra las filas de números del archivo CSV que se cargaron](../media/HRConnectorLogFile.png)
 
-   El campo **RecordsSaved** indica el número de filas del archivo CSV que se han cargado. Por ejemplo, si el archivo CSV contiene 4 filas, el valor de los campos **RecordsSaved** es 4 Si el script cargó correctamente todas las filas en el archivo CSV.
+   El campo **RecordsSaved** indica el número de filas del archivo CSV que se han cargado. Por ejemplo, si el archivo CSV contiene cuatro filas, el valor de los campos **RecordsSaved** es 4, si el script cargó correctamente todas las filas en el archivo CSV.
 
 Si no ha ejecutado el script en el paso 4, en la **última importación**se muestra un vínculo para descargar el script. Puede descargar el script y, a continuación, seguir los pasos del paso 4 para ejecutarlo.
 
