@@ -352,6 +352,8 @@
               href: export-search-results.md
             - name: Exportar un informe de búsqueda
               href: export-a-content-search-report.md
+            - name: Usar Microsoft Edge para descargar resultados de la búsqueda
+              href: configure-edge-to-export-search-results.md
             - name: Búsqueda y eliminación de mensajes de correo electrónico
               href: search-for-and-delete-messages-in-your-organization.md
             - name: Buscar buzones de correo basados en la nube de usuarios locales
@@ -428,6 +430,8 @@
               href: ediscovery-troubleshooting-common-issues.md
             - name: Reintentar una búsqueda fallida
               href: retry-failed-content-search.md
+            - name: Usar Microsoft Edge para descargar resultados de la búsqueda
+              href: configure-edge-to-export-search-results.md
     - name: eDiscovery avanzado
       items:
         - name: Introducción a la exhibición avanzada de documentos electrónicos
@@ -549,7 +553,7 @@
               href: advanced-ediscovery-reports.md
             - name: Solución de problemas de AzCopy
               href: troubleshooting-azcopy.md
-    - name: Exhibición avanzada de documentos electrónicos (Classic)
+    - name: Advanced eDiscovery (clásico)
       items:
         - name: Introducción a la exhibición avanzada de documentos electrónicos (Classic)
           href: office-365-advanced-ediscovery.md
