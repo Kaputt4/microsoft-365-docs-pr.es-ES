@@ -21,35 +21,35 @@ search.appverid:
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
 description: 'Obtenga información sobre cómo editar o agregar un registro DNS personalizado en Office 365. '
-ms.openlocfilehash: 97a038021c059db730322daca9ea0543959d34f0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4cdfe98a38dd870dcf5d745438e8d81afa1fc934
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246862"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857112"
 ---
-# <a name="add-or-edit-custom-dns-records-in-office-365"></a><span data-ttu-id="a021a-103">Agregar o editar registros DNS personalizados en Office 365</span><span class="sxs-lookup"><span data-stu-id="a021a-103">Add or edit custom DNS records in Office 365</span></span>
+# <a name="add-or-edit-custom-dns-records-in-office-365"></a><span data-ttu-id="0f70b-103">Agregar o editar registros DNS personalizados en Office 365</span><span class="sxs-lookup"><span data-stu-id="0f70b-103">Add or edit custom DNS records in Office 365</span></span>
 
- <span data-ttu-id="a021a-104">**[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca.</span><span class="sxs-lookup"><span data-stu-id="a021a-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="0f70b-104">**[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca.</span><span class="sxs-lookup"><span data-stu-id="0f70b-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
 
-1. <span data-ttu-id="a021a-105">Inicie sesión en el centro de administración <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>de.</span><span class="sxs-lookup"><span data-stu-id="a021a-105">Sign in to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>   
+1. <span data-ttu-id="0f70b-105">Inicie sesión en el centro de administración <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>de.</span><span class="sxs-lookup"><span data-stu-id="0f70b-105">Sign in to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>   
 
-2. <span data-ttu-id="a021a-106">Vaya a la página **configuración** \> de **dominios** .</span><span class="sxs-lookup"><span data-stu-id="a021a-106">Go to the **Settings** \> **Domains** page.</span></span>
+2. <span data-ttu-id="0f70b-106">Vaya a la página **configuración** \> de **dominios** .</span><span class="sxs-lookup"><span data-stu-id="0f70b-106">Go to the **Settings** \> **Domains** page.</span></span>
 
-3. <span data-ttu-id="a021a-107">En la página **Dominios**, seleccione un dominio.</span><span class="sxs-lookup"><span data-stu-id="a021a-107">On the **Domains** page, select a domain.</span></span> 
+3. <span data-ttu-id="0f70b-107">En la página **Dominios**, seleccione un dominio.</span><span class="sxs-lookup"><span data-stu-id="0f70b-107">On the **Domains** page, select a domain.</span></span> 
     
-4. <span data-ttu-id="a021a-108">En **configuración DNS**, seleccione **registros personalizados**; a continuación, seleccione **nuevo registro personalizado**.</span><span class="sxs-lookup"><span data-stu-id="a021a-108">Under **DNS settings**, select **Custom Records**; then select **New custom record**.</span></span>
+4. <span data-ttu-id="0f70b-108">En **configuración DNS**, seleccione **registros personalizados**; a continuación, seleccione **nuevo registro personalizado**.</span><span class="sxs-lookup"><span data-stu-id="0f70b-108">Under **DNS settings**, select **Custom Records**; then select **New custom record**.</span></span>
 
-5. <span data-ttu-id="a021a-109">Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.</span><span class="sxs-lookup"><span data-stu-id="a021a-109">Select the type of DNS record you want to add and type the information for the new record.</span></span>
+5. <span data-ttu-id="0f70b-109">Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.</span><span class="sxs-lookup"><span data-stu-id="0f70b-109">Select the type of DNS record you want to add and type the information for the new record.</span></span>
     
-6. <span data-ttu-id="a021a-110">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="a021a-110">Select **Save**.</span></span>
+6. <span data-ttu-id="0f70b-110">Haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="0f70b-110">Select **Save**.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="a021a-111">Artículos relacionados</span><span class="sxs-lookup"><span data-stu-id="a021a-111">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="0f70b-111">Artículos relacionados</span><span class="sxs-lookup"><span data-stu-id="0f70b-111">Related articles</span></span>
 
-[<span data-ttu-id="a021a-112">Recopilar la información necesaria para crear los registros de DNS de Office 365</span><span class="sxs-lookup"><span data-stu-id="a021a-112">Gather the information you need to create Office 365 DNS records</span></span>](../get-help-with-domains/information-for-dns-records.md)
+[<span data-ttu-id="0f70b-112">Recopilar la información necesaria para crear los registros de DNS de Office 365</span><span class="sxs-lookup"><span data-stu-id="0f70b-112">Gather the information you need to create Office 365 DNS records</span></span>](../get-help-with-domains/information-for-dns-records.md)
 
-[<span data-ttu-id="a021a-113">Conceptos básicos de DNS</span><span class="sxs-lookup"><span data-stu-id="a021a-113">DNS basics</span></span>](../get-help-with-domains/dns-basics.md)
+[<span data-ttu-id="0f70b-113">Conceptos básicos de DNS</span><span class="sxs-lookup"><span data-stu-id="0f70b-113">DNS basics</span></span>](../get-help-with-domains/dns-basics.md)
 
-[<span data-ttu-id="a021a-114">Obtener ayuda con Office 365 dominios</span><span class="sxs-lookup"><span data-stu-id="a021a-114">Get help with Office 365 domains</span></span>](../get-help-with-domains/get-help-with-domains.md)
+[<span data-ttu-id="0f70b-114">Obtener ayuda con Office 365 dominios</span><span class="sxs-lookup"><span data-stu-id="0f70b-114">Get help with Office 365 domains</span></span>](../get-help-with-domains/get-help-with-domains.yml)
 
 

@@ -1,11 +1,11 @@
 ---
-title: Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365
+title: Notificaciones de correo no deseado para el usuario final en Office 36
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,39 +17,33 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: Si el administrador habilita las notificaciones para los usuarios, recibirá un mensaje de notificación que enumera los mensajes enviados a su buzón que se identificaron como correo no deseado, en masa o de suplantación de identidad. Puede liberar o informar de los mensajes después de recibir la notificación.
-ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+description: Cuando un administrador habilita las notificaciones de correo no deseado para el usuario final en las directivas contra correo no deseado, los destinatarios del mensaje recibirán notificaciones periódicas sobre los mensajes en cuarentena.
+ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722041"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857155"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a><span data-ttu-id="472d9-104">Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365</span><span class="sxs-lookup"><span data-stu-id="472d9-104">Use user spam notifications to release and report quarantined messages in Office 365</span></span>
+# <a name="end-user-spam-notifications-in-office-365"></a><span data-ttu-id="d4cc2-103">Notificaciones de correo no deseado para el usuario final en Office 365</span><span class="sxs-lookup"><span data-stu-id="d4cc2-103">End-user spam notifications in Office 365</span></span>
 
-<span data-ttu-id="472d9-105">Si el administrador habilita las notificaciones de correo no deseado para los usuarios, recibirá un mensaje de notificación que enumera los mensajes dirigidos a su buzón que se identificaron como correo no deseado, en masa o de phish y se pusieron en cuarentena en su lugar.</span><span class="sxs-lookup"><span data-stu-id="472d9-105">If your admin enables spam notifications for users, you'll receive a notification message that lists messages addressed to your mailbox that were identified as spam, bulk, or phish and quarantined instead.</span></span>
+<span data-ttu-id="d4cc2-104">Quarantine contiene mensajes potencialmente peligrosos o no deseados en las organizaciones de Office 365 con buzones en Exchange online o organizaciones independientes de Exchange Online (EOP) sin buzones de Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-104">Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.</span></span> <span data-ttu-id="d4cc2-105">Para obtener más información, consulte [Quarantine in Office 365](quarantine-email-messages.md).</span><span class="sxs-lookup"><span data-stu-id="d4cc2-105">For more information, see [Quarantine in Office 365](quarantine-email-messages.md).</span></span>
 
-> [!TIP]
-> <span data-ttu-id="472d9-106">Si es administrador y desea habilitar esta característica, puede elegir la opción cuando [modifique una directiva contra correo no deseado predeterminada](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="472d9-106">If you're an administrator and want to enable this feature, you can choose the option when you [modify a default anti-spam policy](configure-your-spam-filter-policies.md).</span></span>
+<span data-ttu-id="d4cc2-106">De forma predeterminada, las notificaciones de correo no deseado para el usuario final están deshabilitadas en las directivas contra correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-106">By default, end-user spam notifications are disabled in anti-spam policies.</span></span> <span data-ttu-id="d4cc2-107">Cuando un administrador [habilita las notificaciones de correo no deseado para el usuario final](configure-your-spam-filter-policies.md), los destinatarios del mensaje recibirán notificaciones periódicas sobre sus mensajes que se pusieron en cuarentena como correo no deseado, correo electrónico masivo o (a partir de abril de 2020) phishing.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-107">When an admin [enables end-user spam notifications](configure-your-spam-filter-policies.md), message recipients will receive periodic notifications about their messages that were quarantined as spam, bulk email, or (as of April, 2020) phishing.</span></span>
 
-<span data-ttu-id="472d9-107">El mensaje que recibe incluye el número de mensajes de correo no deseado en cuarentena que tiene, y la fecha y la hora (en UTC universal coordinada o UTC) del último mensaje de la lista.</span><span class="sxs-lookup"><span data-stu-id="472d9-107">The message you receive includes the number of spam-quarantined messages you have, and the date and time (in Universal Coordinated Time or UTC) of the last message in the list.</span></span> <span data-ttu-id="472d9-108">En la lista se incluyen los siguientes elementos para cada mensaje:</span><span class="sxs-lookup"><span data-stu-id="472d9-108">The list includes the following for each message:</span></span>
+> [!NOTE]
+> <span data-ttu-id="d4cc2-108">En octubre de 2019, eliminamos la capacidad de liberar los mensajes en cuarentena directamente de las notificaciones de correo no deseado para el usuario final.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-108">In October 2019, we removed the ability to release quarantined messages directly from end-user spam notifications.</span></span> <span data-ttu-id="d4cc2-109">En su lugar, ahora los usuarios pueden ir al centro de cumplimiento de & de seguridad de Office 365 para liberar sus mensajes en cuarentena (ya sea directamente o haciendo clic en **revisar** en la notificación).</span><span class="sxs-lookup"><span data-stu-id="d4cc2-109">Instead, users can now go to the Office 365 Security & Compliance Center to release their quarantined messages (either directly, or by clicking **Review** in the notification).</span></span> <span data-ttu-id="d4cc2-110">Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como un usuario en Office 365](find-and-release-quarantined-messages-as-a-user.md).</span><span class="sxs-lookup"><span data-stu-id="d4cc2-110">For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).</span></span> <br/><br/> <span data-ttu-id="d4cc2-111">Los mensajes que se pusieron en cuarentena como suplantación de identidad de alta confianza, malware o reglas de flujo de correo (también conocidas como reglas de transporte) solo están disponibles para los administradores.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-111">Messages that were quarantined as high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins.</span></span> <span data-ttu-id="d4cc2-112">Para obtener más información, vea [Find and Release Quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).</span><span class="sxs-lookup"><span data-stu-id="d4cc2-112">For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).</span></span>
 
-- <span data-ttu-id="472d9-109">**Remitente** El nombre de envío y la dirección de correo electrónico del mensaje en cuarentena.</span><span class="sxs-lookup"><span data-stu-id="472d9-109">**Sender** The send name and email address of the quarantined message.</span></span>
+<span data-ttu-id="d4cc2-113">Una notificación de correo no deseado para el usuario final contiene la siguiente información para cada mensaje en cuarentena:</span><span class="sxs-lookup"><span data-stu-id="d4cc2-113">An end-user spam notification contains the following information for each quarantined message:</span></span>
 
-- <span data-ttu-id="472d9-110">**Asunto** El texto de la línea de asunto del mensaje en cuarentena.</span><span class="sxs-lookup"><span data-stu-id="472d9-110">**Subject** The subject line text of the quarantined message.</span></span>
+- <span data-ttu-id="d4cc2-114">**Sender**: el nombre de envío y la dirección de correo electrónico del mensaje en cuarentena.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-114">**Sender**: The send name and email address of the quarantined message.</span></span>
 
-- <span data-ttu-id="472d9-111">**Fecha** La fecha y hora (en UTC) en que el mensaje fue colocado en cuarentena.</span><span class="sxs-lookup"><span data-stu-id="472d9-111">**Date** The date and time (in UTC) that the message was quarantined.</span></span>
+- <span data-ttu-id="d4cc2-115">**Asunto**: el texto de la línea de asunto del mensaje en cuarentena.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-115">**Subject**: The subject line text of the quarantined message.</span></span>
 
-<span data-ttu-id="472d9-112">Estas son las acciones que puede llevar a cabo con un mensaje en cuarentena:</span><span class="sxs-lookup"><span data-stu-id="472d9-112">These are the actions that you can take with a quarantined message:</span></span>
+- <span data-ttu-id="d4cc2-116">**Fecha**: la fecha y hora (en UTC) en que el mensaje se ha puesto en cuarentena.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-116">**Date**: The date and time (in UTC) that the message was quarantined.</span></span>
 
-- <span data-ttu-id="472d9-113">**Bloquear remitente** si desea que Office 365 agregue el remitente a la lista de remitentes bloqueados.</span><span class="sxs-lookup"><span data-stu-id="472d9-113">**Block Sender** if you want Office 365 to add the sender to your blocked senders list.</span></span>
+- <span data-ttu-id="d4cc2-117">**Bloquear remitente**: haga clic en este vínculo para agregar el remitente a la lista de remitentes bloqueados.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-117">**Block Sender**: Click this link to add the sender to your Blocked Senders list.</span></span>
 
-- <span data-ttu-id="472d9-114">**Release** si el mensaje no es correo no deseado y desea que Office 365 envíe el mensaje al buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="472d9-114">**Release** if the message isn't spam and you want Office 365 to send the message to your mailbox.</span></span>
+- <span data-ttu-id="d4cc2-118">**Revisión**: haga clic en este vínculo para ir a la cuarentena en el centro de seguridad & cumplimiento, donde puede liberar, eliminar o informar de los mensajes en cuarentena.</span><span class="sxs-lookup"><span data-stu-id="d4cc2-118">**Review**: Click this link to go the the Quarantine in the Security & Compliance Center, where you can release, delete or report your quarantined messages.</span></span>
 
-- <span data-ttu-id="472d9-115">**Revise** para navegar al portal de cuarentena en el centro de seguridad y cumplimiento si desea realizar otras acciones, como la versión preliminar o la versión.</span><span class="sxs-lookup"><span data-stu-id="472d9-115">**Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.</span></span>
-
-<span data-ttu-id="472d9-116">Tenga en cuenta lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="472d9-116">Be aware of the following:</span></span>
-
-- <span data-ttu-id="472d9-117">Malware y mensajes de suplantación de identidad de alta confianza que se ponen en cuarentena porque coinciden con una regla de flujo de correo no se incluyen en las notificaciones de correo no deseado del usuario.</span><span class="sxs-lookup"><span data-stu-id="472d9-117">Malware and high confidence phishing messages and messages that are quarantined because they matched a mail flow rule are not included in user spam notifications.</span></span> 
-
-- <span data-ttu-id="472d9-118">Únicamente puede liberar un mensaje e identificarlo como un falso positivo (deseado) una vez.</span><span class="sxs-lookup"><span data-stu-id="472d9-118">You can only release a message and report it as a false positive (not junk) once.</span></span>
+![Ejemplo de notificación de correo no deseado para el usuario final](../../media/end-user-spam-notification.png)
