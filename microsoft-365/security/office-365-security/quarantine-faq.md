@@ -2,8 +2,8 @@
 title: Preguntas más frecuentes sobre la cuarentena
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -15,62 +15,62 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospedada.
-ms.openlocfilehash: b4112bf785a6ee2f4c833ab08d2c199388585093
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Respuestas a las preguntas más frecuentes acerca de la cuarentena en Office 365.
+ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598667"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856910"
 ---
-# <a name="quarantine-faq"></a>Preguntas más frecuentes sobre la cuarentena
+# <a name="quarantine-faq-in-office-365"></a>Preguntas más frecuentes sobre la cuarentena en Office 365
 
-Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospedada. Las respuestas son válidas para clientes de Microsoft Exchange Online y de Exchange Online Protection.
+En este tema se proporcionan preguntas frecuentes y respuestas sobre la cuarentena para los clientes de Office 365 con buzones en Exchange online o los clientes independientes de Exchange Online Protection (EOP) sin buzones de correo de Exchange Online.
 
- **P. ¿Cómo puedo administrar los mensajes de malware en cuarentena en cuarentena?**
+## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>P: ¿Cómo puedo administrar los mensajes que se pusieron en cuarentena para malware?
 
-Debe usar el centro de seguridad & cumplimiento para ver y trabajar con mensajes que se enviaron a cuarentena porque contienen malware. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
+Solo los administradores pueden administrar los mensajes que se pusieron en cuarentena para obtener malware. Para obtener más información, consulte [Manage Quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
- **P. ¿Cómo se configura el servicio para enviar mensajes de correo no deseado en cuarentena a la cuarentena?**
+## <a name="q-how-do-i-quarantine-spam"></a>P: ¿Cómo puedo poner en cuarentena el correo no deseado?
 
-R. De manera predeterminada los mensajes de contenido filtrado se envían a los destinatarios de la carpeta de correo electrónico no deseado. Sin embargo, los administradores pueden configurar las directivas de filtro de contenido para enviar mensajes de correo no deseado en cuarentena a la cuarentena. Para obtener más información acerca de las diferentes acciones que pueden realizarse en los mensajes con filtrado de contenido, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
+A. De forma predeterminada, los mensajes clasificados como correo no deseado o correo masivo por filtrado de correo no deseado se entregan al buzón del usuario y se mueven a la carpeta correo electrónico no deseado. Pero puede crear y configurar directivas contra correo no deseado para poner en cuarentena correo no deseado o mensajes de correo electrónico masivo en su lugar. Para obtener más información, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
 
- **P. ¿Cuenta el servicio con administración de usuario final y administrador de los mensajes de correo no deseado puestos en cuarentena?**
+## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>P: ¿cómo se concede a los usuarios acceso a la cuarentena?
 
-R. Como administrador, puede buscar y ver los detalles de todos los mensajes de correo electrónico en cuarentena en el centro de seguridad y cumplimiento (SCC). Tras encontrar el mensaje, puede publicarlo a usuarios específicos y, opcionalmente, identificarlo como falso positivo (deseado) al equipo de análisis de correo no deseado de Microsoft. Para obtener más información, consulte [Manage Quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+A. Un usuario debe tener una cuenta válida para tener acceso a sus propios mensajes en cuarentena. EOP independiente requiere que los usuarios se representen como usuarios de correo en EOP (creados o creados manualmente mediante la sincronización de directorios). Para obtener más información acerca de la administración de usuarios en entornos de EOP independientes, vea [Manage Mail Users in EOP](manage-mail-users-in-eop.md).
 
-Como usuario final, puede administrar sus propios mensajes de correo no deseado en cuarentena a través de:
+## <a name="q-what-messages-can-end-users-access-in-quarantine"></a>P: ¿qué mensajes pueden hacer que los usuarios finales tengan acceso en cuarentena?
 
-- La interfaz de usuario de cuarentena de correo no deseado. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como un usuario en Office 365](find-and-release-quarantined-messages-as-a-user.md).
+A. Los usuarios pueden tener acceso a correo no deseado, correo electrónico masivo y (a partir de abril de 2020) mensajes de suplantación de identidad (phishing) cuando son destinatarios. Los usuarios finales no pueden acceder a malware en cuarentena, phishing de alta confianza o mensajes que se pusieron en cuarentena debido **a la entrega del mensaje a la acción de cuarentena hospedada** en reglas de flujo de correo (también conocidas como reglas de transporte). Para obtener más información sobre los usuarios que tienen acceso a los mensajes en cuarentena, vea [Find and Release Quarantined messages as a User in Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
- **P. ¿Cómo puedo conceder acceso a cuarentena para mis usuarios finales?**
+## <a name="q-how-long-are-messages-kept-in-the-quarantine"></a>P: ¿Cuánto tiempo se conservan los mensajes en cuarentena?
 
-A. Para poder tener acceso a la cuarentena de correo no deseado del usuario final, los usuarios finales deben tener un identificador de usuario y una contraseña de Office 365 válidos. Los clientes de EOP que protegen los buzones locales deben ser usuarios de correo electrónico válidos creados mediante la sincronización de directorios o el EAC. Para obtener más información acerca de la administración de usuarios, los administradores de EOP pueden hacer referencia a [administrar usuarios de correo en EOP](manage-mail-users-in-eop.md). Para clientes independientes de EOP, se recomienda usar la sincronización de directorios y habilitar el bloqueo perimetral basado en directorios; para obtener más información, vea [usar bloqueo perimetral basado en directorios para rechazar mensajes enviados a destinatarios no válidos](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+A. Puede configurar el tiempo que se conservan los mensajes de correo electrónico masivo, de suplantación de identidad (phishing) y masivo en cuarentena mediante directivas contra correo no deseado. El valor predeterminado es 30 días, que es también el máximo. Para obtener más información, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md)
 
- **P. ¿qué mensajes pueden hacer que los usuarios finales tengan acceso en cuarentena?**
+Para los mensajes puestos en cuarentena por la acción de regla de flujo de correo **Enviar el mensaje a la cuarentena hospedada**, los mensajes se mantienen en cuarentena durante 30 días. No puede configurar esta duración.
 
-A. Los usuarios finales pueden tener acceso a su propio phish, correo no deseado y correo masivo. Los usuarios finales no pueden tener acceso a su propio malware, phish de confianza alta ni a los mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte); solo están disponibles en la cuarentena de administrador. 
+Una vez transcurrido el período de tiempo, los mensajes se eliminan y no se pueden recuperar.
 
- **P. ¿Durante cuánto tiempo se guardan los mensajes en cuarentena?**
+## <a name="q-can-i-release-or-report-more-than-one-quarantined-message-at-a-time"></a>P: ¿puedo liberar o informar de más de un mensaje en cuarentena a la vez?
 
-A. De forma predeterminada, los mensajes en cuarentena de correo no deseado se mantienen en cuarentena durante 30 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante un máximo de 30 días en función del período de retención establecido en la Directiva de filtro de contenido predeterminada. Finalizado este tiempo, los mensajes se eliminan y ya no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, es posible reducir el período de retención de los mensajes de correo no deseado en cuarentena mediante la configuración **Mantener el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
+A. En el centro de seguridad & cumplimiento, puede seleccionar y publicar hasta 100 mensajes a la vez.
 
- **Q. ¿Puedo liberar o informar de más de un mensaje en cuarentena a la vez?**
+Los administradores pueden usar los cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) y [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) en Exchange Online PowerShell o PowerShell independiente de Exchange Online Protection para buscar y liberar mensajes en cuarentena de forma masiva y para informar de falsos positivos en masa.
 
-A. Sí, se pueden liberar hasta 100 mensajes al mismo tiempo en el portal de cuarentena. Además, los administradores pueden crear un script de Windows PowerShell remoto para realizar esta tarea. Use el cmdlet [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) para buscar los mensajes y el cmdlet [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) para liberarlos.
+## <a name="q-are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>P: ¿se admiten caracteres comodín al buscar mensajes en cuarentena? ¿Puedo buscar mensajes en cuarentena para un dominio específico?
 
- **P. ¿Se admiten caracteres comodín al buscar mensajes en cuarentena? ¿Puedo buscar mensajes en cuarentena para un dominio específico?**
+A. No se admiten caracteres comodín en el centro de seguridad & cumplimiento. Por ejemplo, al buscar un remitente, debe especificar la dirección de correo electrónico completa. Pero, puede usar caracteres comodín en PowerShell de Exchange online o Exchange Online Protection.
 
-A. No se admiten caracteres comodín al especificar los criterios de búsqueda en el Centro de administración de Exchange. Por ejemplo, al buscar un remitente, debe especificar la dirección de correo electrónico completa.
-
-Con Windows PowerShell remoto, los administradores pueden especificar el cmdlet [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) para buscar los mensajes en cuarentena de un dominio específico (por ejemplo, contoso.com):
+Por ejemplo, ejecute el siguiente comando para buscar mensajes de correo no deseado en cuarentena de todos los remitentes en el dominio contoso.com:
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
 ```
 
-Los resultados se pueden transmitir al cmdlet [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage). Incluya el parámetro -ReleaseToAll para liberar el mensaje a todos los destinatarios. Una vez que se libera un mensaje, no puede volver a liberarse.
+A continuación, ejecute el siguiente comando para liberar los mensajes a todos los destinatarios originales:
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
 ```
+
+Después de liberar un mensaje, no podrá volver a publicarlo.

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Empiece a usar la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: 8871329d254057a0f9d6f10d3ae7acc10139832e
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 45a2bc0e581916493a0170a5f86c152d02403efe
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710539"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826354"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Investigación y respuesta automatizadas (AIR) en Office 365
 
@@ -47,7 +47,7 @@ En un nivel alto, se desencadena una alerta y se inicia una guía de seguridad y
 
     Si su organización usa una solución de informes personalizada o una solución de terceros, puede [usar la API de actividad de administración de Office 365](air-custom-reporting.md) para ver información sobre las amenazas y las investigaciones automatizadas.
 
-4. El equipo de operaciones de seguridad revisa los resultados de la [investigación y las recomendaciones](air-view-investigation-results.md)y [aprueba o rechaza acciones de corrección](air-remediation-actions.md#approve-or-reject-pending-actions). 
+4. El equipo de operaciones de seguridad revisa los resultados de la [investigación y las recomendaciones](air-view-investigation-results.md)y [aprueba o rechaza acciones de corrección](air-review-approve-pending-completed-actions.md). 
 
     Como las acciones de corrección pendientes son aprobadas (o rechazadas), se completa la investigación automatizada.
 
@@ -60,7 +60,7 @@ Durante y después de un proceso de investigación automatizado, su equipo de se
 
 - [Ver los detalles de los resultados de una investigación](air-view-investigation-results.md#view-details-of-an-investigation)
 
-- [Revisión y aprobación de acciones como resultado de una investigación](air-remediation-actions.md#approve-or-reject-pending-actions)
+- [Revisión y aprobación de acciones como resultado de una investigación](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
 > Para obtener más información, consulte [how Air Works](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
@@ -94,7 +94,7 @@ Los permisos se conceden a través de determinadas funciones, como las que se de
 |Para configurar las características de AIR |Una de las siguientes funciones: <br/>-Administrador global<br/>-Administrador de seguridad <br/>Estos roles se pueden asignar en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
 |Para aprobar o rechazar las acciones recomendadas|Una de las siguientes funciones, asignada en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>-Administrador global <br/>-Administrador de seguridad<br/>-Lector de seguridad <br/>--- y ---<br/>-Búsqueda y depuración (este rol solo se asigna en el [centro de cumplimiento de & de seguridad de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Es posible que tenga que crear un nuevo grupo de funciones y agregar el rol de búsqueda y depuración al nuevo grupo de roles.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver los detalles y los resultados de una investigación automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 

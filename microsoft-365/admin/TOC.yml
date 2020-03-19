@@ -1,5 +1,5 @@
 - name: Inicio de administrador
-  href: admin-home.md
+  href: admin-home.yml
   items:
     - name: Información general
       items:
@@ -8,7 +8,7 @@
         - name: Suscribirse a Office 365
           href: admin-overview/sign-up-for-office-365.md
         - name: Vídeo de aprendizaje
-          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)'
+          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
         - name: Acerca del centro de administración
           href: admin-overview/about-the-admin-center.md
         - name: ¿Qué suscripción tengo?
@@ -86,7 +86,7 @@
     - name: Correo electrónico
       items:
         - name: Correo electrónico en Office 365
-          href: email/email.md
+          href: email/email.yml
         - name: Configuración de correo electrónico de usuario de Office 365
           href: email/office-365-user-email-settings.md
         - name: Agregar otro alias de correo electrónico para un usuario
@@ -154,7 +154,7 @@
     - name: Administrar
       items:
         - name: Administrar Office 365
-          href: manage/manage.md
+          href: manage/manage.yml
         - name: Cambiar las preferencias de contacto
           href: manage/change-contact-preferences.md
         - name: 'Cambiar la dirección, contactos, etc.'
@@ -186,9 +186,9 @@
         - name: Cancelar la asignación de licencias a los usuarios
           href: manage/remove-licenses-from-users.md
         - name: Resolver conflictos de licencia
-          href: manage/resolve-license-conflicts.md)
+          href: manage/resolve-license-conflicts.md
         - name: Administrar mensajes en el centro de mensajes
-          href: manage/manage-messages.md)
+          href: manage/manage-messages.md
     - name: Suscripciones y facturación
       items:
         - name: Administrar suscripciones
@@ -202,7 +202,7 @@
     - name: Dominios
       items:
         - name: Dominios en Office 365
-          href: get-help-with-domains/get-help-with-domains.md
+          href: get-help-with-domains/get-help-with-domains.yml
         - name: ¿Qué es un dominio?
           href: get-help-with-domains/what-is-a-domain.md
         - name: Comprar un nombre de dominio

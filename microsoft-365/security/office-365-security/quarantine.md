@@ -16,12 +16,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la cuarentena hospedada para Exchange Online y Exchange Online Protection.
-ms.openlocfilehash: bcbd0db1c05834882c464fa28012b82a13929d7f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea803a4681a12647f57cf17839d26fb391222364
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598657"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856886"
 ---
 # <a name="quarantine"></a>Quarantine
 
@@ -29,7 +29,7 @@ En los siguientes temas se proporciona información sobre la cuarentena hospedad
 
 - [Preguntas más frecuentes sobre la cuarentena](quarantine-faq.md) : ofrece preguntas y respuestas comunes sobre la cuarentena tanto para administradores como para usuarios finales
 
-- [Buscar y liberar mensajes en cuarentena como administrador](find-and-release-quarantined-messages-as-an-administrator.md): describe cómo los administradores pueden buscar y liberar cualquier mensaje que resida en la cuarentena en el centro de administración de Exchange (EAC) y, opcionalmente, identificarlo como un mensaje falso positivo (no deseado) para Microsoft.
+- [Administrar archivos y mensajes en cuarentena como administrador en Office 365](manage-quarantined-messages-and-files.md): describe cómo los administradores pueden buscar y liberar cualquier mensaje que resida en la cuarentena en el centro de administración de Exchange (EAC) y, opcionalmente, identificarlo como un mensaje falso positivo (no deseado) para Microsoft.
 
 - [Buscar y liberar mensajes en cuarentena como un usuario en Office 365](find-and-release-quarantined-messages-as-a-user.md): describe cómo los usuarios finales pueden buscar y publicar sus propios mensajes de correo no deseado en cuarentena en la interfaz de usuario de cuarentena de correo no deseado e informar de ellos como correo deseado a Microsoft.
 

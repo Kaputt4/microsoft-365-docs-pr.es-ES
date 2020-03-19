@@ -3,10 +3,8 @@ title: Cómo obtener ayuda en el centro de administración de 365 de Microsoft
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-layout: LandingPage
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +18,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Obtenga información sobre todas las formas en las que puede obtener ayuda mediante el centro de administración de Microsoft 365.
-ms.openlocfilehash: 2d75add5b34a760358523de6e6f10553c1984abe
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5fa5a664b41f6e6e35a0443b5e909a5d930a146d
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352981"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857124"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -33,68 +31,6 @@ ms.locfileid: "42352981"
 
 Si es administrador, [admin.Microsoft.com](https://admin.microsoft.com) es su punto de partida para administrar y aprovechar al máximo su suscripción a Microsoft 365. A veces, es posible que no encuentre la tarea correcta, necesite más contexto antes de embarcarse en un flujo de tareas o, sencillamente, que no esté seguro del ámbito y el impacto de las acciones como administrador. Para cubrir esas situaciones, proporcionamos ayuda moderna y asistencia inteligente en el centro de administración de 365 de Microsoft de las siguientes maneras:
  
-
-
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#integrated-help">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Ayuda integrada</h3>
-                            <p>Ayuda en el centro de administración</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#modern-self-help-powered-by-ai">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Asistencia inteligente</h3>
-                            <p>Autoayuda de la tecnología AI</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#guides-and-articles">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Guías y artículos</h3>
-                            <p>Contenido exhaustivo en la web</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
-
 ## <a name="integrated-help"></a>Ayuda integrada
 La ayuda está integrada a través del centro de administración, por lo que está allí donde la necesite. En la parte superior de muchas páginas, encontrará el texto de ayuda en línea que proporciona información general informativa sobre la tarea en cuestión, así como vínculos a artículos que le permiten encontrar rápidamente documentación oficial para obtener un aprendizaje en profundidad.
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
-ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 505487e079ea198c6575fd76e2e59a60ead19940
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599377"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857350"
 ---
 # <a name="eop-features"></a>Características de EOP
 
@@ -48,9 +48,9 @@ La tabla siguiente proporciona una lista de las características que están disp
 |Envíos de correo no deseado y envíos no deseados a través de Outlook en la web informes de correo electrónico no deseado|Puede enviar mensajes de correo no deseado y mensajes no deseados a Microsoft a través de Outlook en la web, informes de correo no deseado. Para más información, vea [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).  <br/><br/> Esta característica está disponible actualmente para los clientes de Outlook en la web cuyos buzones de correo de Exchange Server 2013 SP1 o posterior se filtran mediante EOP. Exchange Online Outlook en la web los clientes también tendrán esta funcionalidad en un futuro próximo.|
 |Notificaciones de cuarentena de correo no deseado de usuario final|Los usuarios finales pueden lanzar sus propios mensajes de correo no deseado en cuarentena y, opcionalmente, identificarlos como seguros a través de los mensajes de notificación de correo no deseado para el usuario final. El administrador debe configurar y habilitar estos mensajes de correo electrónico de notificación, como se describe en [configurar las notificaciones de correo no deseado para el usuario final en Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md) o [configurar las notificaciones de correo no deseado para el usuario final en EOP](configure-end-user-spam-notifications-in-eop.md).|
 |Frecuencia de notificación de cuarentena de correo no deseado de usuario final|Esta frecuencia es de 3 días de forma predeterminada y se puede configurar de 1 a 15 días.|
-|Capacidad de los administradores para configurar el idioma de las notificaciones de cuarentena de correo no deseado de usuario final|Está disponible para usuarios finales y administradores. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como administrador](find-and-release-quarantined-messages-as-an-administrator.md) o [Buscar y liberar mensajes en cuarentena como un usuario](find-and-release-quarantined-messages-as-a-user.md).|
-|Acceso y administración de los mensajes en cuarentena mediante una página web|Está disponible para usuarios finales y administradores. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como administrador](find-and-release-quarantined-messages-as-an-administrator.md) o [Buscar y liberar mensajes en cuarentena como un usuario](find-and-release-quarantined-messages-as-a-user.md).|
-|Capacidad para buscar en la cuarentena|Los administradores y usuarios finales pueden buscar mensajes de correo no deseado específicos en la cuarentena. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como administrador](find-and-release-quarantined-messages-as-an-administrator.md) o [Buscar y liberar mensajes en cuarentena como un usuario](find-and-release-quarantined-messages-as-a-user.md).|
+|Capacidad de los administradores para configurar el idioma de las notificaciones de cuarentena de correo no deseado de usuario final|Está disponible para usuarios finales y administradores. Para obtener más información, consulte [Manage Quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md) o [Find and Release Quarantined messages as a User](find-and-release-quarantined-messages-as-a-user.md).|
+|Acceso y administración de los mensajes en cuarentena mediante una página web|Está disponible para usuarios finales y administradores. Para obtener más información, consulte [Manage Quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md) o [Find and Release Quarantined messages as a User](find-and-release-quarantined-messages-as-a-user.md).|
+|Capacidad para buscar en la cuarentena|Los administradores y usuarios finales pueden buscar mensajes de correo no deseado específicos en la cuarentena. Para obtener más información, consulte [Manage Quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md) o [Find and Release Quarantined messages as a User](find-and-release-quarantined-messages-as-a-user.md).|
 |Ver encabezados de mensajes en cuarentena por correo no deseado desde el Centro de administración de Exchange|Después de ver el encabezado de mensaje en la cuarentena, puede copiar el texto del encabezado de mensaje y pegarlo en el [Analizador de encabezados de mensaje](https://testconnectivity.microsoft.com/?tabid=mha), que proporciona información sobre lo que sucedió con el mensaje.|
 |**Protección antimalware**||
 |Varios motores para la protección antimalware|Varios motores antimalware ayudan a proteger automáticamente a nuestros clientes en todo momento.|

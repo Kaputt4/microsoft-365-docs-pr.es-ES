@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: 159f0935a2191c668c317fac17096a9427a0f889
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 6706fe25194191d57ffd91f07f13d22fe5ec6cfd
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409725"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826261"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introducción al entrenamiento de clasificadores (vista previa)
 
@@ -36,7 +36,7 @@ Esta categoría de mecanismos de clasificación incluye la búsqueda de contenid
 - Palabras clave o valores de metadatos (lenguaje de consulta de palabras clave)
 - uso de patrones identificados previamente de información confidencial, como seguridad social, números de tarjeta de crédito o cuenta bancaria [(tipos de información confidencial)](what-the-sensitive-information-types-look-for.md)
 - Reconocimiento de un elemento porque es una variante de una plantilla [(impresión](document-fingerprinting.md) de los dedos de los documentos)
-- uso de la presencia de cadenas exactas [(coincidencia exacta de datos)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- mediante la presencia de cadenas exactas [(coincidencia exacta de datos)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md). '
 
 Las etiquetas de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en la [prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md) y en [las directivas de retención](retention-policies.md).
 
@@ -67,7 +67,17 @@ Microsoft 365 incluye seis clasificadores integrados:
 
 - **Lenguaje ofensivo**: detecta los elementos de texto que contienen palabras soeces, Slurs, taunts y expresiones disfrazadas (que son expresiones que tienen el mismo significado que un término más ofensivo).
 - **Currículos**: detecta los elementos que son cuentas de texto de la cualificación personal, educativa, profesional, experiencia laboral y otra información de identificación personal del solicitante.
-- **SourceCode**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en lenguajes de programación de equipos ampliamente usados.
+- **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación usados en github.
+
+|nombre del idioma|||||
+|---------|---------|---------|---------|---------|
+|Código|C        |C#       |+     |Clojure  |
+|CoffeeScript|CSS     |Ir       |Haskell |HTML     |
+|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+|Perl     |PHP      |Python   |R        |Ruby     |
+|Scala    |Consola    |Rápido    |Tex      |Script de VIM|
+
+
 - **Acosar**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con la conducta ofensiva dirigida a uno o varios individuos en función de los siguientes rasgos: raza, étnico, religión, origen nacional, sexo, orientación sexual, edad, discapacidad.
 - **Blasfemias**: detecta una categoría específica de elementos de texto de lenguaje ofensivo que contiene expresiones que avergonzan a la mayoría de las personas.
 - **Threat**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionadas con amenazas para confirmar violencia o daños físicos o daños a una persona o propiedad.
@@ -98,7 +108,7 @@ La creación y publicación de un clasificador capacitable para su uso en las so
 
 ![clasificador de flujo de proceso capacitable](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Etiquetas de retención](labels.md)
 - [directivas de retención](retention-policies.md)

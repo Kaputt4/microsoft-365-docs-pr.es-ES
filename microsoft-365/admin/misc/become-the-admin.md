@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Obtenga información sobre cómo comprobar que el correo electrónico y la propiedad del dominio se tomen en un inquilino no administrado en Office 365
-ms.openlocfilehash: e3c89e122264808e2a8631c07269ea263c87fdaa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0f7932b9ba727db62f81ac15b99a5f5ca276f09f
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248100"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857408"
 ---
 # <a name="perform-an-internal-admin-takeover-in-office-365"></a>Realizar una adquisición de administrador interna en Office 365
 
@@ -71,7 +71,7 @@ YouTube: [3 pasos para realizar una adquisición de administrador de TI para Pow
 
 [Adquisición de administradores en Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Obtener ayuda con Office 365 dominios](../get-help-with-domains/get-help-with-domains.md)
+[Obtener ayuda con Office 365 dominios](../get-help-with-domains/get-help-with-domains.yml)
 
 [Uso del registro de autoservicio en su organización](self-service-sign-up.md)
   

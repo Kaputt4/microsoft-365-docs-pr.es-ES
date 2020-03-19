@@ -1,11 +1,11 @@
 ---
-title: Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365
+title: Notificaciones de correo no deseado para el usuario final en Office 36
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,39 +17,33 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: Si el administrador habilita las notificaciones para los usuarios, recibirá un mensaje de notificación que enumera los mensajes enviados a su buzón que se identificaron como correo no deseado, en masa o de suplantación de identidad. Puede liberar o informar de los mensajes después de recibir la notificación.
-ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+description: Cuando un administrador habilita las notificaciones de correo no deseado para el usuario final en las directivas contra correo no deseado, los destinatarios del mensaje recibirán notificaciones periódicas sobre los mensajes en cuarentena.
+ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722041"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857155"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365
+# <a name="end-user-spam-notifications-in-office-365"></a>Notificaciones de correo no deseado para el usuario final en Office 365
 
-Si el administrador habilita las notificaciones de correo no deseado para los usuarios, recibirá un mensaje de notificación que enumera los mensajes dirigidos a su buzón que se identificaron como correo no deseado, en masa o de phish y se pusieron en cuarentena en su lugar.
+Quarantine contiene mensajes potencialmente peligrosos o no deseados en las organizaciones de Office 365 con buzones en Exchange online o organizaciones independientes de Exchange Online (EOP) sin buzones de Exchange Online. Para obtener más información, consulte [Quarantine in Office 365](quarantine-email-messages.md).
 
-> [!TIP]
-> Si es administrador y desea habilitar esta característica, puede elegir la opción cuando [modifique una directiva contra correo no deseado predeterminada](configure-your-spam-filter-policies.md).
+De forma predeterminada, las notificaciones de correo no deseado para el usuario final están deshabilitadas en las directivas contra correo no deseado. Cuando un administrador [habilita las notificaciones de correo no deseado para el usuario final](configure-your-spam-filter-policies.md), los destinatarios del mensaje recibirán notificaciones periódicas sobre sus mensajes que se pusieron en cuarentena como correo no deseado, correo electrónico masivo o (a partir de abril de 2020) phishing.
 
-El mensaje que recibe incluye el número de mensajes de correo no deseado en cuarentena que tiene, y la fecha y la hora (en UTC universal coordinada o UTC) del último mensaje de la lista. En la lista se incluyen los siguientes elementos para cada mensaje:
+> [!NOTE]
+> En octubre de 2019, eliminamos la capacidad de liberar los mensajes en cuarentena directamente de las notificaciones de correo no deseado para el usuario final. En su lugar, ahora los usuarios pueden ir al centro de cumplimiento de & de seguridad de Office 365 para liberar sus mensajes en cuarentena (ya sea directamente o haciendo clic en **revisar** en la notificación). Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como un usuario en Office 365](find-and-release-quarantined-messages-as-a-user.md). <br/><br/> Los mensajes que se pusieron en cuarentena como suplantación de identidad de alta confianza, malware o reglas de flujo de correo (también conocidas como reglas de transporte) solo están disponibles para los administradores. Para obtener más información, vea [Find and Release Quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
 
-- **Remitente** El nombre de envío y la dirección de correo electrónico del mensaje en cuarentena.
+Una notificación de correo no deseado para el usuario final contiene la siguiente información para cada mensaje en cuarentena:
 
-- **Asunto** El texto de la línea de asunto del mensaje en cuarentena.
+- **Sender**: el nombre de envío y la dirección de correo electrónico del mensaje en cuarentena.
 
-- **Fecha** La fecha y hora (en UTC) en que el mensaje fue colocado en cuarentena.
+- **Asunto**: el texto de la línea de asunto del mensaje en cuarentena.
 
-Estas son las acciones que puede llevar a cabo con un mensaje en cuarentena:
+- **Fecha**: la fecha y hora (en UTC) en que el mensaje se ha puesto en cuarentena.
 
-- **Bloquear remitente** si desea que Office 365 agregue el remitente a la lista de remitentes bloqueados.
+- **Bloquear remitente**: haga clic en este vínculo para agregar el remitente a la lista de remitentes bloqueados.
 
-- **Release** si el mensaje no es correo no deseado y desea que Office 365 envíe el mensaje al buzón de correo.
+- **Revisión**: haga clic en este vínculo para ir a la cuarentena en el centro de seguridad & cumplimiento, donde puede liberar, eliminar o informar de los mensajes en cuarentena.
 
-- **Revise** para navegar al portal de cuarentena en el centro de seguridad y cumplimiento si desea realizar otras acciones, como la versión preliminar o la versión.
-
-Tenga en cuenta lo siguiente:
-
-- Malware y mensajes de suplantación de identidad de alta confianza que se ponen en cuarentena porque coinciden con una regla de flujo de correo no se incluyen en las notificaciones de correo no deseado del usuario. 
-
-- Únicamente puede liberar un mensaje e identificarlo como un falso positivo (deseado) una vez.
+![Ejemplo de notificación de correo no deseado para el usuario final](../../media/end-user-spam-notification.png)

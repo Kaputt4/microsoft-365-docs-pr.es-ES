@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Obtenga información sobre las cuentas de facturación y cómo administrarlas.
-ms.openlocfilehash: 1470549bf77a6f58fb2c023ef7b85bd41ac10ee9
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: ce7b9d2a2cc35261c7e6e3f5547574ea9c49e658
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280255"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826272"
 ---
 # <a name="manage-billing-accounts"></a>Administrar cuentas de facturación
 
@@ -42,14 +42,14 @@ En la siguiente tabla se enumeran los términos importantes que aparecen en la p
 
 | Nombre del campo | Descripción |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dirección de ventas | La entidad jurídica responsable del pago e identificada en la factura. La dirección que se proporciona aquí se usa para determinar la tasa de impuestos a menos que opte por proporcionar una dirección de envío alternativa durante la compra. Para obtener más información, consulte [información fiscal](#tax-information). |
+| Dirección de ventas | La entidad jurídica responsable del pago e identificada en la factura. La dirección que se proporciona aquí se usa para determinar la tasa de impuestos a menos que opte por proporcionar una dirección de envío alternativa durante la compra. Para obtener más información, consulte [información fiscal](billing-and-payments/tax-information.md). |
 | Sector | Un campo de solo lectura que identifica el segmento empresarial de la organización (comercial, educativa, gubernamental o sin ánimo de lucro). |
 | Estado de la cuenta | Un campo de solo lectura que especifica el estado de su cuenta comercial con Microsoft. |
-| IDENTIFICADOR de impuesto | Si está fuera de los Estados Unidos, debe proporcionar un IVA o un equivalente local. Para obtener más información, consulte [información fiscal](#tax-information). |
+| IDENTIFICADOR de impuesto | Si está fuera de los Estados Unidos, debe proporcionar un IVA o un equivalente local. Para obtener más información, consulte [información fiscal](billing-and-payments/tax-information.md). |
 | Agreement | Cuando se crea una cuenta de facturación, ya sea a través de una compra directa o un acuerdo de licencias por volumen, un signatario de la organización acepta, o firma, un acuerdo que describe los términos & condiciones de la cuenta. Si procede, esta vista muestra el historial de un contrato. Si se le pide que acepte los términos actualizados, se muestra un vínculo para el **acuerdo de aprobación** . |
 | Perfiles de facturación | Un perfil de facturación define las propiedades de la factura, como quién recibe la factura, cómo se entrega la factura, las condiciones de pago y un número de pedido de compra. Para distribuir la facturación en su organización, puede crear varios perfiles de facturación e identificar el perfil de facturación adecuado en el momento de la compra. Para obtener más información acerca de los perfiles de facturación y de cómo puede usarlos para crear opciones de facturación más flexibles para su organización, [administre los perfiles de facturación](billing-and-payments/manage-billing-profiles.md). |
 
-> [!NOTE] 
+> [!NOTE]
 > Si desea cambiar el nombre o la dirección del **usuario al** que se ha vendido, pero no ve ningún vínculo **Editar** , debe [ponerse en contacto con el soporte técnico](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) para cambiarlo. Las solicitudes de un cambio de nombre **vendido** requerirán una comprobación de crédito. Cuando se ponga en contacto con el soporte técnico, tenga preparado uno de los siguientes documentos:
 >
 > - Documento de anuncio externo que indica cualquier cambio en el nombre de la compañía o la estructura corporativa
@@ -73,88 +73,8 @@ Puede proporcionar a otros usuarios acceso a la cuenta de facturación en el cen
 > [!Note]
 > Los roles de la cuenta de facturación solo se aplican a las cuentas de facturación y no se aplican a otros escenarios del centro de administración de Microsoft 365.
 
-## <a name="tax-information"></a>Información fiscal
+## <a name="related-articles"></a>Artículos relacionados
 
-Los impuestos de las compras del centro de administración de Microsoft 365 que realiza a través de Microsoft vienen determinados por la dirección de la empresa o, si es diferente, por su dirección de envío. Si está en los Estados Unidos, debe proporcionar un número de identificación de empleador federal (FEIN).
+[Información fiscal](billing-and-payments/tax-information.md)
 
-Las empresas de estos países pueden proporcionar su número de IVA:
-
-:::row:::
-    :::column:::
-- Austria
-- Bélgica
-- Bulgaria
-- Croacia
-- Chipre
-- Chequia
-- Dinamarca
-- Estonia
-- Finlandia
-- Francia
-- Alemania
-- Grecia
-- Hungría
-- Irlanda
-- Italia
-- Letonia
-    :::column-end:::
-    :::column:::
-- Liechtenstein
-- Lituania
-- Luxemburgo
-- Malta
-- Mónaco
-- Países Bajos
-- Noruega
-- Polonia
-- Portugal
-- Rumania
-- Eslovaquia
-- Sudáfrica
-- España
-- Suecia
-- Suiza
-- Reino Unido
-    :::column-end:::
-:::row-end:::
-
-Estos países pueden proporcionar su número de IVA o equivalente local en su información de cuenta de facturación.
-
-|Márketing| Identificador de impuestos |
-|------|----------------|
-| Australia | ABN (opcional) |
-| Brasil | CNPJ (obligatorio) |
-| India | GSTIN (opcional), ID de PAN (obligatorio) |
-| Isla de Man | NIF (opcional) |
-| Nueva Zelanda | Número de registro de GST (opcional) |
-| Mónaco | NIF (opcional) |
-| Taiwán | NIF (opcional) |
-
-> [!Note]
-> Si necesita ponerse en contacto con el soporte técnico, tenga el FEIN, el número de IVA o el equivalente local listo para dar al agente de soporte.
-
-## <a name="tax-exempt-status"></a>Estado de exención de impuestos
-
-Si califica para el estado de exento de impuestos en su mercado, [inicie una solicitud de servicio](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) para establecer el estado de exención de impuestos para su organización.
-
-Prepare la siguiente documentación:
-
-|País o configuración regional | Documentación |
-|------------------|----------------|
-| Estados Unidos | Certificado de exención de impuestos de ventas |
-| Canadá | Certificado de exención (o letra de autorización equivalente) |
-| Irlanda | Certificado de exención de impuestos de 13B/56A|
-| Organizaciones internacionales que mantienen la exención de impuestos | Confirmación de certificación/carta de las autoridades fiscales locales |
-| Puerto Rico | Certificado de compra exentas |
-
-## <a name="calculate-taxes"></a>Calcular impuestos
-
-Los impuestos se calculan con relación al precio unitario y, a continuación, se agregan.
-
-Por ejemplo:
-
->*(precio unitario X tasa de impuestos) X cantidad = total de impuesto sobre las ventas*
-
-O bien,
-
->($1,29 X 0,095) X 100 = $12,25
+[Administrar perfiles de facturación](billing-and-payments/manage-billing-profiles.md)

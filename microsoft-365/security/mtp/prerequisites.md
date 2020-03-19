@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b653575e9e79ffe3448f622ca5be2cef37999dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c482e46cf51cbf11960c02663221df0c136b067c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633958"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857184"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Requisitos previos de la Protección contra amenazas de Microsoft
 
@@ -34,12 +34,20 @@ ms.locfileid: "42633958"
 Obtenga información sobre las licencias, los requisitos de hardware y software, y otras opciones de configuración para aprovisionar y usar la protección contra amenazas de Microsoft.
 
 ## <a name="licensing-requirements"></a>Requisitos de licencia
-Para usar la protección contra amenazas de Microsoft, necesita *una* de las siguientes licencias o combinación de licencias:
+Para usar la protección contra amenazas de Microsoft, necesita una sola licencia o una combinación de licencias.
 
-- Microsoft 365 E5
-- Seguridad de Microsoft 365 E5
-- Office 365 E5 y "Enterprise Mobility + Security E5 (EMS E5)" y Windows E5
-- Microsoft 365 A5
+### <a name="single-license"></a>Única licencia
+Puede usar *una* de las siguientes licencias:
+
+- Microsoft 365 E5 o A5
+- Seguridad de Microsoft 365 E5 o de la A5
+
+### <a name="combination-of-licenses"></a>Combinación de licencias
+También puede usar una combinación de licencias para suscripciones a E5 o A5 a Office 365, *Enterprise Mobility + Security (EMS)* y Windows. La combinación de licencia debe incluir *todas* estas licencias:
+
+- Office 365 E5 o A5
+- *Enterprise Mobility + Security (EMS)* E5 o A5
+- Windows E5 o A5
 
 Para obtener más información, [vea los planes de servicio de Microsoft 365 Enterprise](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 

@@ -17,31 +17,30 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: Puede configurar una cuarentena para los mensajes de correo electrónico entrantes en Office 365 donde los mensajes de correo electrónico entrantes que se filtraron como correo no deseado, masivo, correo de suplantación de identidad (phishing) y malware se pueden conservar para una revisión posterior.
-ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+description: Quarantine in Office 365 contiene mensajes potencialmente peligrosos o no deseados. Los administradores y los usuarios finales pueden acceder a la cuarentena.
+ms.openlocfilehash: 9c82ba9821c42fe6c3dd78dbcecf63327d176e93
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957435"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857314"
 ---
-# <a name="quarantine-email-messages-in-office-365"></a>Cuarentena de mensajes de correo electrónico en Office 365
+# <a name="quarantine-in-office-365"></a>Poner en cuarentena en Office 365
 
-Puede configurar la cuarentena para los mensajes de correo electrónico entrantes en Office 365 donde los mensajes que se han filtrado como correo no deseado, correo masivo, correo de suplantación de identidad, correo que contiene malware y el correo que coinciden con una regla de flujo de correo especificada (también denominada regla trasport) se pueden conservar para más tarde. comprueba.
-  
-De forma predeterminada, los mensajes que se filtraron por suplantación de identidad, malware y reglas de flujo de correo se envían a cuarentena, mientras que los mensajes filtrados como correo no deseado y correo masivo se envían a la carpeta de correo electrónico no deseado de los destinatarios. Como administrador, puede configurar directivas de filtro de correo no deseado (también conocidas como directivas de filtro de contenido) para enviar correo no deseado y mensajes de correo masivo a la cuarentena en su lugar. Para obtener más información, consulte [Configure sus políticas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
-  
-Tanto los usuarios como los administradores pueden trabajar con los mensajes en cuarentena. Los usuarios pueden trabajar en cuarentena solo con sus propios mensajes filtrados. Los administradores pueden buscar y administrar los mensajes en cuarentena para todos los usuarios.
+Si es un cliente de Office 365 con buzones en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, la cuarentena estará disponible para contener mensajes potencialmente peligrosos o no deseados.
 
-> [!NOTE]
-> Malware, mensajes de phish de alta confianza y mensajes puestos en cuarentena por acciones de regla de flujo de correo solo están disponibles en la cuarentena de administrador. Los usuarios pueden tener acceso a sus propios mensajes de Phish, correo no deseado y correo masivo. 
-  
-Obtenga más información sobre cómo trabajar con mensajes en cuarentena:
-  
-- [Administrar mensajes en cuarentena como administrador](manage-quarantined-messages-and-files.md)
+Las directivas antimalware ponen en cuarentena automáticamente un mensaje si se encuentra *algún* archivo adjunto que contenga malware. Para obtener más información, vea [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
-- [Buscar y liberar mensajes en cuarentena como usuario](find-and-release-quarantined-messages-as-a-user.md)
+De forma predeterminada, las directivas contra correo no deseado ponen en cuarentena los mensajes de suplantación de identidad y envían mensajes de correo no deseado y masivo a la carpeta de correo no deseado del usuario. Pero también puede crear y personalizar directivas contra correo no deseado para poner en cuarentena el correo no deseado y los mensajes de correo electrónico masivo. Para obtener más información, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
 
-- [Usar notificaciones de correo no deseado de usuario para liberar y notificar mensajes de correo no deseado en cuarentena](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+Los usuarios y los administradores pueden trabajar con los mensajes en cuarentena:
 
-- [Preguntas más frecuentes sobre la cuarentena](quarantine-faq.md)
+- Los administradores pueden trabajar con todos los tipos de mensajes en cuarentena para todos los usuarios. Solo los administradores pueden trabajar con mensajes que se pusieron en cuarentena como malware, la suplantación de identidad de confianza alta o como resultado de las reglas de flujo de correo (también conocidas como reglas de transporte). Para obtener más información, consulte [Manage Quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+
+- Los usuarios pueden trabajar con mensajes en cuarentena en los que son destinatarios si el mensaje se puso en cuarentena como correo no deseado, correo electrónico masivo o (a partir de abril de 2020) suplantación de identidad. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como un usuario en Office 365](find-and-release-quarantined-messages-as-a-user.md).
+
+  Para evitar que los usuarios administren sus propios mensajes de suplantación de identidad (phishing) en cuarentena, los administradores pueden configurar una acción diferente para el veredicto de filtrado de **correo** no deseado en las directivas contra correo no deseado. Para obtener más información, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
+
+- Los administradores y los usuarios pueden informar de falsos positivos a Microsoft en cuarentena.
+
+Para obtener más información acerca de, vea [preguntas más frecuentes sobre cuarentena](quarantine-faq.md).

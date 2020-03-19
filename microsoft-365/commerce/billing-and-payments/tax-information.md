@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Averigüe cuánto impuesto se le cobrará por su suscripción de Office 365 para empresas en diferentes regiones. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 88997eb69cbbee1b7ec4520773c167609434e0a4
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710567"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826318"
 ---
 # <a name="tax-information"></a>Información fiscal
 
@@ -90,7 +90,7 @@ Estos países pueden proporcionar su número de IVA o equivalente local en su in
 
 ## <a name="what-tax-will-i-be-charged"></a>¿Qué impuesto se me cobrará?
 
-Obtenga información sobre los impuestos que se cobran en las regiones siguientes. También puede [solicitar el estado de exención de impuestos](apply-for-tax-exempt-status.md) si proporciona la documentación adecuada para justificarlo.
+Obtenga información sobre los impuestos que se cobran en las regiones siguientes. También puede [solicitar el estado de exención de impuestos](tax-information.md#apply-for-tax-exempt-status) si proporciona la documentación adecuada para justificarlo.
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Oriente Medio y África (EMEA)
 
