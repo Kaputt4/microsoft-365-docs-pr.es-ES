@@ -68,9 +68,13 @@
                 - name: Priorizar incidentes
                   href: mtp/incident-queue.md
                 - name: Investigar incidentes
-                  href: mtp/investigate-incidents.md
-                - name: Administrar incidentes
-                  href: mtp/manage-incidents.md
+                  items:
+                    - name: Investigar incidentes
+                      href: mtp/investigate-incidents.md
+                    - name: Administrar incidentes
+                      href: mtp/manage-incidents.md
+                    - name: Página de perfil de equipo
+                      href: mtp/machine-profile.md
             - name: Investigación y respuesta automatizada
               items:
                 - name: Visión general de AIR
@@ -372,16 +376,16 @@
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Vistas de campañas
               href: ./office-365-security/campaigns.md
-            - name: Descripción de los ataques más recientes con análisis de amenazas
-              href: ./mtp/latest-attack-campaigns.md
             - name: Investigación y respuesta automatizada
               items:
                 - name: Visión general de AIR
                   href: ./office-365-security/office-365-air.md
-                - name: Ver los detalles y los resultados de una investigación automatizada
-                  href: ./office-365-security/air-view-investigation-results.md
-                - name: Aprobar o rechazar acciones pendientes
+                - name: Acciones de corrección
                   href: ./office-365-security/air-remediation-actions.md
+                - name: Ver detalles y resultados de una investigación automatizada
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: Revisar y aprobar (o rechazar) acciones pendientes
+                  href: ./office-365-security/air-review-approve-pending-completed-actions.md
                 - name: Integrar AIR con una solución personalizada o una solución de terceros
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detectar y dirigirse rápidamente a las cuentas de usuario en peligro
@@ -390,6 +394,8 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Ver y leer los informes de ATP
               href: ./office-365-security/view-reports-for-atp.md
+            - name: Descripción de los ataques más recientes con análisis de amenazas
+              href: ./mtp/latest-attack-campaigns.md
             - name: Qué significan las páginas de advertencia de vínculos seguros de ATP
               href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: Usar rastreadores de amenazas
@@ -550,11 +556,8 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Inteligencia de flujo de correo en Office 365
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Quarantine
+                - name: Cuarentena
                   href: ./office-365-security/quarantine.md
-                  items:
-                    - name: Buscar y liberar mensajes en cuarentena como un administrador
-                      href: ./office-365-security/find-and-release-quarantined-messages-as-an-administrator.md
                 - name: Solución de problemas e información de soporte técnico
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items:
