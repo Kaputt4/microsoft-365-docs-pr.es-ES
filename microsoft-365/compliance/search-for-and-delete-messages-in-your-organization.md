@@ -17,27 +17,27 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634168"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710519"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Buscar y eliminar mensajes de correo electrónico en la organización de Office 365
+# <a name="search-for-and-delete-email-messages"></a>Búsqueda y eliminación de mensajes de correo electrónico
 
 **Este artículo es para los administradores. ¿Está intentando buscar elementos que quiere eliminar en el buzón? Vea [Buscar un mensaje o elemento con la Búsqueda instantánea](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
 Puede usar la característica de búsqueda de contenido de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización. De esta forma puede buscar y eliminar correos electrónicos potencialmente dañinos o de alto riesgo, como:
   
 - Mensajes que contienen virus o datos adjuntos peligrosos
-    
+
 - Mensajes de suplantación de identidad
-    
+
 - Mensajes que contienen datos confidenciales
-    
+
 > [!CAUTION]
-> Búsqueda y depuración es una característica eficaz que permite eliminar mensajes de correo electrónico de los buzones de la organización a cualquier usuario que tenga asignados los permisos necesarios. 
+> Búsqueda y depuración es una característica eficaz que permite eliminar mensajes de correo electrónico de los buzones de la organización a cualquier usuario que tenga asignados los permisos necesarios.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 

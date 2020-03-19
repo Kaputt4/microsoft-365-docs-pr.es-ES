@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado.
-ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa597887a75ff71d768d4df0b1ac4f17fe9ef13
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086279"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857362"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar las directivas de filtro de correo no deseado
 La configuración del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado. La configuración de la directiva de filtro de correo no deseado se aplica solo a los mensajes entrantes. Hay dos tipos:
@@ -83,7 +83,7 @@ Para habilitar más opciones personalizadas o agregar directivas personalizadas,
    - **Colocar el mensaje en cuarentena** Envía el mensaje a la cuarentena en lugar de a los destinatarios. Esta acción es la predeterminada para la suplantación de identidad. Si selecciona esta opción, en el cuadro de entrada **Mantener el correo no deseado durante (días)**, especifique la cantidad de días durante los cuales se mantendrá el mensaje de correo no deseado en cuarentena. (Automáticamente se borrará después de que transcurra ese tiempo. El valor predeterminado es 30 días, que es el valor máximo. El valor mínimo es 1 día).
 
      > [!TIP]
-     > Para más información sobre cómo los administradores pueden administrar los mensajes de correo en cuarentena, consulte [Cuarentena](quarantine.md) y [Buscar y liberar mensajes en cuarentena como un administrador](find-and-release-quarantined-messages-as-an-administrator.md). <br/><br/> Para informarse sobre cómo configurar los mensajes de notificación de correo no deseado para los usuarios, consulte [Configurar las notificaciones de correo no deseado para el usuario final en EOP](configure-end-user-spam-notifications-in-eop.md) o [Configurar las notificaciones de correo no deseado para el usuario final en Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
+     > Para más información sobre cómo los administradores pueden administrar los mensajes de correo en cuarentena, consulte [Cuarentena](quarantine.md) y [Administrar archivos y mensajes en cuarentena como administrador en Office 365](manage-quarantined-messages-and-files.md).  <br/><br/> Para informarse sobre cómo configurar los mensajes de notificación de correo no deseado para los usuarios, consulte [Configurar las notificaciones de correo no deseado para el usuario final en EOP](configure-end-user-spam-notifications-in-eop.md) o [Configurar las notificaciones de correo no deseado para el usuario final en Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
 
    - En **Seleccionar el umbral** puede determinar niveles a partir de los cuales se considerará o no el correo masivo como correo no deseado, en función del Nivel de quejas masivas (BCL) del mensaje. Puede elegir un valor de umbral de 1 a 9, donde 1 marca la mayor parte del correo electrónico masivo como correo no deseado y 9 permite entregar la mayoría del correo electrónico masivo. A continuación, el servicio realiza la acción configurada, por ejemplo, enviar el mensaje a la carpeta Correo electrónico no deseado del destinatario. Consulte [Valores de nivel de quejas masivas](bulk-complaint-level-values.md) y [¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico en masa?](what-s-the-difference-between-junk-email-and-bulk-email.md) para obtener más información.
 
@@ -164,7 +164,7 @@ Ambas listas se configuran como parte de cualquier directiva de correo no desead
    - Agregue dominios no deseados a la lista de bloqueados del dominio. Haga clic en **Editar**![Icono agregar](../../media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Guardar** para volver a la página **Listas de bloqueados**.
    
      > [!NOTE]
-     > En la política del filtro de spam, puedes bloquear dominios enteros o remitentes específicos, pero no puedes usar comodines (\*). 
+     > En la directiva del filtro de spam, puede bloquear dominios enteros o remitentes específicos, pero no puedes usar comodines (\*). 
 
 > [!TIP]
 > Puede ocurrir que la organización no esté de acuerdo con la clasificación hecha por el servicio. En este caso, usted puede plantearse mantener la lista de permitidos o bloqueados de forma permanente. Sin embargo, si va a colocar un dominio en la lista de permitidos durante largos períodos de tiempo, debe solicitar al remitente que se asegure de que su dominio está autenticado y, si no lo está, establecer DMARC para rechazarlo.
