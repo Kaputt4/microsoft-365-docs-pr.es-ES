@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Obtenga información sobre cómo quitar un dominio anterior de Office 365 y mover usuarios y grupos a otro dominio.
-ms.openlocfilehash: c012d7a8484026d04bbe216ff28715e9df0de15c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: efbd49daa28b5d15989e1531929cb2d9355aeb8f
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362215"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857432"
 ---
 # <a name="remove-a-domain-from-office-365"></a>Quitar dominios de Office 365
 
@@ -100,7 +100,7 @@ Tendrá que realizar esta acción también para su propio usuario si se encuentr
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>.
 
-2. Vaya a **** \> usuarios **activos**y seleccione su cuenta de la lista.
+2. Vaya a **Users** \> usuarios **activos**y seleccione su cuenta de la lista.
 
 3. En la pestaña **cuenta** , seleccione **administrar nombre de usuario**y, a continuación, elija un dominio diferente.
   
@@ -114,7 +114,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-germany"
 
-1. Vaya a **** \> usuarios **activos**y seleccione su nombre en la lista.
+1. Vaya a **Users** \> usuarios **activos**y seleccione su nombre en la lista.
 
 2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar**y, a continuación, elija un dominio diferente.
 
@@ -130,7 +130,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-21vianet"
 
-1. Vaya a **** \> usuarios **activos**y seleccione su nombre en la lista.
+1. Vaya a **Users** \> usuarios **activos**y seleccione su nombre en la lista.
 
 2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar**y, a continuación, elija un dominio diferente.
 
@@ -148,7 +148,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
   
 2. Seleccione el nombre del grupo y, a continuación, en la pestaña **General** , en **dirección de correo electrónico,** haga clic en **Editar**.
 
@@ -160,7 +160,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** > **** página grupos de grupos.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** > **Groups** página grupos de grupos.
 
 2. Seleccione el nombre del grupo y, a continuación, seleccione **Editar** junto a **nombre**.
 
@@ -172,7 +172,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** > **** página grupos de grupos.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** > **Groups** página grupos de grupos.
 
 2. Seleccione el nombre del grupo y, a continuación, seleccione **Editar** junto a **nombre**.
 
@@ -229,7 +229,7 @@ Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los us
 
 [Preguntas más frecuentes de dominios](../setup/domains-faq.md)
 
-[Obtener ayuda con Office 365 dominios](get-help-with-domains.md)
+[Obtener ayuda con Office 365 dominios](get-help-with-domains.yml)
 
 [Cambiar a otro plan de Office 365 para empresas](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1c06562cc0ff8cdc43efb3a8f62924c435883408
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c2798238f0e3cb10edab7f98bf096474a80fa006
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610567"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857480"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -36,9 +36,9 @@ ms.locfileid: "42610567"
 [Microsoft Threat Protection](microsoft-threat-protection.md) integra varios servicios de seguridad de Microsoft para proporcionar capacidades de detección, prevención e investigación centralizadas frente a ataques sofisticados. En este artículo se describen los servicios compatibles, sus requisitos de licencia, las ventajas y las limitaciones asociadas con la implementación de uno o más servicios, y vínculos a cómo puede implementarlos por completo de forma individual.
 
 ## <a name="supported-services"></a>Servicios admitidos
-Una [licencia de microsoft 365 E5, E5 o a5 o una combinación válida de licencias](prerequisites.md#licensing-requirements) proporciona acceso a los siguientes servicios admitidos y le da derecho a usar la protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365.
+Una licencia de seguridad de Microsoft 365 E5, E5 Security, A5 o A5, o una combinación válida de licencias, proporciona acceso a los siguientes servicios admitidos y le da derecho a usar la protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365. [Ver requisitos de licencia](prerequisites.md#licensing-requirements)
 
-| Servicio compatible | Description |
+| Servicio compatible | Descripción |
 | ------ | ------ |
 | ATP de Microsoft Defender | Conjunto de aplicaciones de Endpoint Protection creado alrededor de sensores de comportamiento poderosos, análisis de nube e inteligencia de amenazas |
 | ATP de Office 365 | Protección avanzada de sus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
