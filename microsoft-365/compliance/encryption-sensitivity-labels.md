@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3f59a6038da8600923f5fcc0d18f1de5ab5dc06c
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634918"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826241"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -59,7 +59,7 @@ Cuando usa esta solución de cifrado, la característica de **superusuario** gar
 - **Quitar**: quita el cifrado si el documento o el correo electrónico está cifrado.
 
 > [!NOTE]
-> La opción **Quitar** solo es compatible con el cliente de etiquetado unificado de Azure Information Protection. Cuando se usa la etiqueta integrada, en las aplicaciones de Office se puede ver una etiqueta con esta opción y, si se selecciona, el comportamiento de cifrado es igual que **Ninguno**.
+> La opción **Quitar** solo es compatible con el cliente de etiquetado unificado de Azure Information Protection. Cuando se usa la etiqueta integrada, en las aplicaciones y servicios de Office se puede ver una etiqueta con esta opción y, si se selecciona, el comportamiento de cifrado es igual que **Ninguno**.
 
 Configuración de las opciones de cifrado:
 
