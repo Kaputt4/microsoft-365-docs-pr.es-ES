@@ -47,12 +47,14 @@
           href: get-ready/prerequisites.md
         - name: Preparar la red
           href: get-ready/network.md
-        - name: Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft
+        - name: Preparar el acceso a los recursos locales
           href: get-ready/authentication.md
-        - name: Preparar unidades asignadas para el Escritorio administrado de Microsoft
+        - name: Preparar unidades mapeadas
           href: get-ready/mapped-drives.md
-        - name: Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft
+        - name: Preparar certificados y perfiles de red
           href: get-ready/certs-wifi-lan.md
+        - name: Preparar recursos de impresión
+          href: get-ready/printing.md
         - name: Preparar aplicaciones
           href: get-ready/apps.md
           items:
