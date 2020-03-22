@@ -1,9 +1,9 @@
 ---
-title: Usar reglas de flujo de correo para configurar el filtrado masivo de correo electrónico en Exchange Online Protection
+title: Usar reglas de flujo de correo para filtrar el correo electrónico masivo en Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -15,132 +15,161 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar reglas de flujo de correo en Exchange Online Protection para el filtrado masivo de correo electrónico.
-ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081828"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895052"
 ---
-# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a><span data-ttu-id="4feee-103">Usar reglas de flujo de correo para configurar el filtrado masivo de correo electrónico en Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="4feee-103">Use mail flow rules to configure bulk email filtering in Exchange Online Protection</span></span>
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a><span data-ttu-id="1a59b-103">Usar reglas de flujo de correo para filtrar el correo electrónico masivo en Office 365</span><span class="sxs-lookup"><span data-stu-id="1a59b-103">Use mail flow rules to filter bulk email in Office 365</span></span>
 
-<span data-ttu-id="4feee-p101">Puede establecer filtros de contenido en toda la empresa para el correo electrónico masivo y correo no deseado usando las directivas de filtro de contenido de correo electrónico no deseado predeterminadas. Consulte [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) y [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) para obtener información sobre cómo configurar las directivas de filtro de contenido.</span><span class="sxs-lookup"><span data-stu-id="4feee-p101">You can set company-wide content filters for spam and bulk email using the default spam content-filter policies. Check out [Configure your spam filter policies](configure-your-spam-filter-policies.md) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) on how to set the content filter policies.</span></span>
+<span data-ttu-id="1a59b-104">Si es un cliente de Office 365 con buzones en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP usa directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) para analizar mensajes entrantes de correo no deseado y correo masivo (también conocido como correo gris).</span><span class="sxs-lookup"><span data-stu-id="1a59b-104">If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam and bulk mail (also known as gray mail).</span></span> <span data-ttu-id="1a59b-105">Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="1a59b-105">For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="4feee-106">Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para buscar patrones de texto o frases que se encuentran con frecuencia en los correos masivos.</span><span class="sxs-lookup"><span data-stu-id="4feee-106">If you want to more options to filter bulk messages, you can create mail flow rules (also known as transport rules) to search for text patterns or phrases frequently found in bulk emails.</span></span> <span data-ttu-id="4feee-107">Todos los mensajes que contienen estas características se marcarán como correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="4feee-107">Any message containing these characteristics will be marked as spam.</span></span> <span data-ttu-id="4feee-108">El uso de estas reglas puede ayudar a reducir la cantidad de correo electrónico masivo no deseado que una organización recibe.</span><span class="sxs-lookup"><span data-stu-id="4feee-108">Using these rules can help reduce the amount of unwanted bulk email your organization receives.</span></span>
+<span data-ttu-id="1a59b-106">Si desea más opciones para filtrar el correo masivo, puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para buscar patrones de texto o frases que se encuentren con frecuencia en el correo masivo y marcar dichos mensajes como correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="1a59b-106">If you want more options to filter bulk mail, you can create mail flow rules (also known as transport rules) to search for text patterns or phrases that are frequently found in bulk mail, and mark those messages as spam.</span></span> <span data-ttu-id="1a59b-107">Para obtener más información sobre el correo masivo, vea [¿cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo? y el](what-s-the-difference-between-junk-email-and-bulk-email.md) [nivel de quejas masivas (BCL) en Office 365](bulk-complaint-level-values.md).</span><span class="sxs-lookup"><span data-stu-id="1a59b-107">For more information about bulk mail, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) and [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="4feee-109">Antes de crear las reglas de flujo de correo documentadas en este tema, recomendamos que primero lea [cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico masivo](what-s-the-difference-between-junk-email-and-bulk-email.md) y [los valores de nivel de queja masiva](bulk-complaint-level-values.md).</span><span class="sxs-lookup"><span data-stu-id="4feee-109">Before creating the mail flow rules documented this topic, we recommend that you first read [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) and [Bulk Complaint Level values](bulk-complaint-level-values.md).</span></span><br><span data-ttu-id="4feee-p103">En los siguientes procedimientos se marca un mensaje como correo no deseado para toda la organización. Sin embargo, puede agregar otra condición para aplicar estas reglas solamente a destinatarios específicos en la organización. De este modo, la configuración agresiva de filtrado de correo masivo se puede aplicar a unos cuantos usuarios específicos, mientras que el resto de los usuarios (que en su mayor parte reciben el correo masivo por el que se suscribieron) no se verán afectados.</span><span class="sxs-lookup"><span data-stu-id="4feee-p103"> The following procedures mark a message as spam for your entire organization. However, you can add another condition to apply these rules only to specific recipients in your organization. This way, the aggressive bulk email filtering settings can apply to a few users who are highly targeted, while the rest of your users (who mostly get the bulk email they signed up for) aren't impacted.</span></span>
+<span data-ttu-id="1a59b-108">En este tema se explica cómo crear estas reglas de flujo de correo en el centro de administración de Exchange (EAC) y PowerShell (Exchange Online PowerShell para Office 365 clientes; Exchange Online Protection PowerShell para clientes independientes de EOP).</span><span class="sxs-lookup"><span data-stu-id="1a59b-108">This topic explains how create these mail flow rules in the Exchange admin center (EAC) and PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).</span></span>
 
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a><span data-ttu-id="4feee-113">Crear una regla de flujo de correo para filtrar mensajes de correo electrónico masivo en función de patrones de texto</span><span class="sxs-lookup"><span data-stu-id="4feee-113">Create a mail flow rule to filter bulk email messages based on text patterns</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="1a59b-109">¿Qué necesita saber antes de comenzar?</span><span class="sxs-lookup"><span data-stu-id="1a59b-109">What do you need to know before you begin?</span></span>
 
-1. <span data-ttu-id="4feee-114">En el Centro de administración de Exchange (EAC), vaya a **Flujo de correo**\>\*\* Reglas\*\*.</span><span class="sxs-lookup"><span data-stu-id="4feee-114">In the Exchange admin center (EAC), go to **Mail flow** \> **Rules**.</span></span>
+- <span data-ttu-id="1a59b-110">Debe tener asignados permisos en Exchange Online para poder realizar estos procedimientos.</span><span class="sxs-lookup"><span data-stu-id="1a59b-110">You need to be assigned permissions in Exchange Online before you can do these procedures.</span></span> <span data-ttu-id="1a59b-111">En concreto, debe tener asignado el rol **reglas de transporte** , que se asigna a las **funciones administración**de la organización, **Administración del cumplimiento**y administración de **registros** de forma predeterminada.</span><span class="sxs-lookup"><span data-stu-id="1a59b-111">Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default.</span></span> <span data-ttu-id="1a59b-112">Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).</span><span class="sxs-lookup"><span data-stu-id="1a59b-112">For more information, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).</span></span>
 
-2. <span data-ttu-id="4feee-115">Haga \*\*\*\* ![clic en agregar](../../media/ITPro-EAC-AddIcon.gif) icono Agregar y, a continuación, seleccione **crear una nueva regla**.</span><span class="sxs-lookup"><span data-stu-id="4feee-115">Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.</span></span>
+- <span data-ttu-id="1a59b-113">Para abrir el EAC en Exchange Online, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).</span><span class="sxs-lookup"><span data-stu-id="1a59b-113">To open the EAC in Exchange Online, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).</span></span>
 
-3. <span data-ttu-id="4feee-116">Especifique un nombre para la regla.</span><span class="sxs-lookup"><span data-stu-id="4feee-116">Specify a name for the rule.</span></span>
+- <span data-ttu-id="1a59b-114">Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="1a59b-114">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="1a59b-115">Para conectarse a PowerShell independiente de Exchange Online Protection, vea [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span><span class="sxs-lookup"><span data-stu-id="1a59b-115">To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
 
-4. <span data-ttu-id="4feee-117">Haga clic en **más opciones** ![icono](../../media/ITPro-EAC-MoreOptionsIcon.png)más opciones.</span><span class="sxs-lookup"><span data-stu-id="4feee-117">Click **More options** ![More options icon](../../media/ITPro-EAC-MoreOptionsIcon.png).</span></span> <span data-ttu-id="4feee-118">En **Aplicar esta regla si**, seleccione **El asunto o el cuerpo** \> **el asunto o el cuerpo coincide con estos patrones de texto**.</span><span class="sxs-lookup"><span data-stu-id="4feee-118">Under **Apply this rule if**, select **The subject or body** \> **subject or body matches these text patterns**.</span></span>
+- <span data-ttu-id="1a59b-116">Para obtener más información acerca de las reglas de flujo de correo en Exchange Online y EOP independiente, consulte los siguientes temas:</span><span class="sxs-lookup"><span data-stu-id="1a59b-116">For more information about mail flow rules in Exchange Online and standalone EOP, see the following topics:</span></span>
 
-5. <span data-ttu-id="4feee-119">En el cuadro de diálogo **especificar palabras o frases** , agregue las siguientes expresiones regulares que se encuentran generalmente en los correos masivos, de una en una, y haga clic en **Aceptar** cuando haya terminado:</span><span class="sxs-lookup"><span data-stu-id="4feee-119">In the **specify words or phrases** dialog box, add the following regular expressions commonly found in bulk emails, one at a time, and click **OK** when you're done:</span></span>
+  - [<span data-ttu-id="1a59b-117">Reglas de flujo de correo (reglas de transporte) en Exchange Online</span><span class="sxs-lookup"><span data-stu-id="1a59b-117">Mail flow rules (transport rules) in Exchange Online</span></span>](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-   - `If you are unable to view the content of this email\, please`
+  - [<span data-ttu-id="1a59b-118">Excepciones (predicados) y condiciones de reglas de flujo de correo en Exchange Online</span><span class="sxs-lookup"><span data-stu-id="1a59b-118">Mail flow rule conditions and exceptions (predicates) in Exchange Online</span></span>](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-   - `\>(safe )?unsubscribe( here)?\</a\>`
+  - [<span data-ttu-id="1a59b-119">Acciones de las reglas de flujo de correo en Exchange Online</span><span class="sxs-lookup"><span data-stu-id="1a59b-119">Mail flow rule actions in Exchange Online</span></span>](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-   - `If you do not wish to receive further communications like this\, please`
+- <span data-ttu-id="1a59b-120">La lista de palabras y patrones de texto que se usan para identificar el correo masivo en los ejemplos no es exhaustivo; puede Agregar y quitar las entradas que considere necesario.</span><span class="sxs-lookup"><span data-stu-id="1a59b-120">The list of words and text patterns that are used to identify bulk mail in the examples aren't exhaustive; you can add and remove entries as necessary.</span></span> <span data-ttu-id="1a59b-121">Sin embargo, son un buen punto de partida.</span><span class="sxs-lookup"><span data-stu-id="1a59b-121">However, they are a good starting point.</span></span>
 
-   - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
+- <span data-ttu-id="1a59b-p106">La búsqueda de palabras o patrones de texto en el asunto u otros campos del encabezado del mensaje ocurre *después* de que el mensaje se haya decodificado desde el método de codificación de transferencia de contenido MIME que se usó para transmitir el mensaje binario entre los servidores SMTP en texto ASCII. No puede usar condiciones ni excepciones para buscar los valores codificados sin formato (normalmente, Base64) del asunto o de otros campos del encabezado del mensaje.</span><span class="sxs-lookup"><span data-stu-id="1a59b-p106">The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.</span></span>
 
-   - `To stop receiving these+emails\:http\://`
+- <span data-ttu-id="1a59b-124">Los siguientes procedimientos marcan un mensaje masivo como correo no deseado para toda la organización.</span><span class="sxs-lookup"><span data-stu-id="1a59b-124">The following procedures mark a bulk message as spam for your entire organization.</span></span> <span data-ttu-id="1a59b-125">Sin embargo, puede agregar otra condición para aplicar estas reglas solo a destinatarios específicos, de modo que pueda usar un filtrado agresivo en algunos usuarios muy dirigidos, mientras que el resto de los usuarios (que obtienen el correo electrónico en masa en el que se suscribiron) no se ven afectados.</span><span class="sxs-lookup"><span data-stu-id="1a59b-125">However, you can add another condition to apply these rules only to specific recipients, so you can use aggressive filtering on a few, highly targeted users, while the rest of your users (who mostly get the bulk email they signed up for) aren't impacted.</span></span>
 
-   - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
+## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a><span data-ttu-id="1a59b-126">Usar el EAC para crear reglas de flujo de correo que filtren el correo electrónico masivo</span><span class="sxs-lookup"><span data-stu-id="1a59b-126">Use the EAC to create mail flow rules that filter bulk email</span></span>
 
-   - `no longer (wish )?(to )?(be sent|receive) w+ email`
+1. <span data-ttu-id="1a59b-127">En el EAC, vaya a **Flujo de correo** \> **Reglas**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-127">In the EAC, go to **Mail flow** \> **Rules**.</span></span>
 
-   - `If you are unable to view the content of this email\, please click here`
+2. <span data-ttu-id="1a59b-128">Haga **Add** ![clic en agregar](../../media/ITPro-EAC-AddIcon.png) icono Agregar y, a continuación, seleccione **crear una nueva regla**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-128">Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.</span></span>
 
-   - `To ensure you receive (your daily deals|our e-?mails)\, add`
+3. <span data-ttu-id="1a59b-129">En la ventana **Nueva regla** que se abre, configure las siguientes opciones:</span><span class="sxs-lookup"><span data-stu-id="1a59b-129">In the **New rule** page that opens, configure the following settings:</span></span>
 
-   - `If you no longer wish to receive these emails`
+   - <span data-ttu-id="1a59b-130">**Name**: escriba un nombre único y descriptivo para la regla.</span><span class="sxs-lookup"><span data-stu-id="1a59b-130">**Name**: Enter a unique, descriptive name for the rule.</span></span>
 
-   - `to change your (subscription preferences|preferences or unsubscribe)`
+   - <span data-ttu-id="1a59b-131">Haga clic en **Más opciones**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-131">Click **More Options**.</span></span>
 
-   - `click (here to|the) unsubscribe`
+   - <span data-ttu-id="1a59b-132">**Aplicar esta regla si**: configure una de las siguientes opciones para buscar contenido en los mensajes mediante expresiones regulares (regex) o palabras o frases:</span><span class="sxs-lookup"><span data-stu-id="1a59b-132">**Apply this rule if**: Configure one of the following settings to look for content in messages using regular expressions (RegEx) or words or phrases:</span></span>
 
-   <span data-ttu-id="4feee-120">La lista anterior no es un conjunto exhaustivo de expresiones regulares que se encuentran en los correos electrónicos masivos; se pueden agregar o quitar más según sea necesario.</span><span class="sxs-lookup"><span data-stu-id="4feee-120">The above list isn't an exhaustive set of regular expressions found in bulk emails; more can be added or removed as needed.</span></span> <span data-ttu-id="4feee-121">Pero es un buen punto de partida.</span><span class="sxs-lookup"><span data-stu-id="4feee-121">However, it's a good starting point.</span></span>
+     - <span data-ttu-id="1a59b-133">**El asunto o el** \> **cuerpo o el asunto del cuerpo coinciden con estos patrones de texto**: en el cuadro de diálogo **especificar palabras o frases** que aparece, escriba uno de](../../media/ITPro-EAC-AddIcon.png)los siguientes valores, haga clic en **Agregar** ![icono y repita el procedimiento tantas veces como sea necesario.</span><span class="sxs-lookup"><span data-stu-id="1a59b-133">**The subject or body** \> **subject or body matches these text patterns**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat as many times as necessary.</span></span>
 
-   <span data-ttu-id="4feee-p106">La búsqueda de palabras o patrones de texto en el asunto u otros campos del encabezado del mensaje ocurre *después* de que el mensaje se haya decodificado desde el método de codificación de transferencia de contenido MIME que se usó para transmitir el mensaje binario entre los servidores SMTP en texto ASCII. No puede usar condiciones ni excepciones para buscar los valores codificados sin formato (normalmente, Base64) del asunto o de otros campos del encabezado del mensaje.</span><span class="sxs-lookup"><span data-stu-id="4feee-p106">The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.</span></span>
+       - `If you are unable to view the content of this email\, please`
 
-6. <span data-ttu-id="4feee-124">En **Hacer lo siguiente**, seleccione **Modificar propiedades del mensaje** \> **establecer el nivel de confianza de correo no deseado (SCL)**.</span><span class="sxs-lookup"><span data-stu-id="4feee-124">Under **Do the following**, select **Modify the message properties** \> **set the spam confidence level (SCL)**.</span></span>
+       - `\>(safe )?unsubscribe( here)?\</a\>`
 
-7. <span data-ttu-id="4feee-125">En el cuadro de texto **Especificar SCL**, establezca el SCL en **5**, **6** o **9** y haga clic en **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="4feee-125">In the **specify SCL** dialog box, set the SCL to **5**, **6**, or **9**, and click **ok**.</span></span>
+       - `If you do not wish to receive further communications like this\, please`
 
-   <span data-ttu-id="4feee-p107">Si se establece el SCL en 5 o 6 se lleva a cabo la acción **Correo no deseado**, mientras que si se establece el SCL en 9 se lleva a cabo la acción **Correo no deseado de confidencia alta**, tal y como se configuró en la directiva de filtrado de contenido. El servicio llevará a cabo la acción establecida en la directiva de filtrado de contenido. La acción predeterminada es entregar el mensaje en la carpeta de correo electrónico no deseado de los destinatarios, pero se pueden configurar diferentes acciones como se describe en [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="4feee-p107">Setting the SCL to 5 or 6 takes the **Spam** action, while setting the SCL to 9 takes the **High confidence spam** action, as configured in the content filter policy. The service will perform the action set in the content filter policy. The default action is to deliver the message to the recipients' Junk Email folder, but different actions can be configured as described in [Configure your spam filter policies](configure-your-spam-filter-policies.md).</span></span>
+       - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
 
-   <span data-ttu-id="4feee-129">Si la acción configurada es poner en cuarentena el mensaje en lugar de enviarlo a la carpeta de correo electrónico no deseado de los destinatarios, el mensaje se enviará a la cuarentena de administrador como una coincidencia de regla de flujo de correo y no estará disponible en la cuarentena de correo no deseado del usuario final o mediante el usuario final. notificaciones de correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="4feee-129">If your configured action is to quarantine the message rather than send it to the recipients' Junk Email folder, the message will be sent to the administrator quarantine as a mail flow rule match, and it will not be available in the end user spam quarantine or via end-user spam notifications.</span></span>
+       - `To stop receiving these+emails\:http\://`
 
-   <span data-ttu-id="4feee-130">Para obtener más información acerca de los valores de SCL en el servicio, consulte [Niveles de confianza de correo no deseado](spam-confidence-levels.md).</span><span class="sxs-lookup"><span data-stu-id="4feee-130">For more information about SCL values in the service, see [Spam confidence levels](spam-confidence-levels.md).</span></span>
+       - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
 
-8. <span data-ttu-id="4feee-131">Guarde la regla.</span><span class="sxs-lookup"><span data-stu-id="4feee-131">Save the rule.</span></span>
+       - `no longer (wish )?(to )?(be sent|receive) w+ email`
 
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a><span data-ttu-id="4feee-132">Crear una regla de flujo de correo para filtrar mensajes de correo masivo según frases</span><span class="sxs-lookup"><span data-stu-id="4feee-132">Create a mail flow rule to filter bulk email messages based on phrases</span></span>
+       - `If you are unable to view the content of this email\, please click here`
 
-1. <span data-ttu-id="4feee-133">En el EAC, vaya a **Flujo de correo** \> **Reglas**.</span><span class="sxs-lookup"><span data-stu-id="4feee-133">In the EAC, go to **Mail flow** \> **Rules**.</span></span>
+       - `To ensure you receive (your daily deals|our e-?mails)\, add`
 
-2. <span data-ttu-id="4feee-134">Haga \*\*\*\* ![clic en agregar](../../media/ITPro-EAC-AddIcon.gif) icono Agregar y, a continuación, seleccione **crear una nueva regla**.</span><span class="sxs-lookup"><span data-stu-id="4feee-134">Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.</span></span>
+       - `If you no longer wish to receive these emails`
 
-3. <span data-ttu-id="4feee-135">Especifique un nombre para la regla.</span><span class="sxs-lookup"><span data-stu-id="4feee-135">Specify a name for the rule.</span></span>
+       - `to change your (subscription preferences|preferences or unsubscribe)`
 
-4. <span data-ttu-id="4feee-p108">Haga clic en **Más opciones**. En **Aplicar esta regla si**, seleccione **El asunto o el cuerpo** \> **el asunto o el cuerpo incluye cualquiera de estas palabras**.</span><span class="sxs-lookup"><span data-stu-id="4feee-p108">Click **More options**. Under **Apply this rule if**, select **The subject or body** \> **subject or body includes any of these words**.</span></span>
+       - `click (here to|the) unsubscribe`
 
-5. <span data-ttu-id="4feee-138">En el cuadro de diálogo **especificar palabras o frases**, agregue las siguientes frases que se encuentran generalmente en los correos masivos, de una en una, y haga clic en **aceptar** cuando termine:</span><span class="sxs-lookup"><span data-stu-id="4feee-138">In the **specify words or phrases** dialog box, add the following phrases commonly found in bulk emails, one at a time, and click **ok** when you're done:</span></span>
+      <span data-ttu-id="1a59b-134">Para editar una entrada, selecciónela y haga clic en **Editar** ![icono](../../media/ITPro-EAC-EditIcon.png)de edición.</span><span class="sxs-lookup"><span data-stu-id="1a59b-134">To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span> <span data-ttu-id="1a59b-135">Para quitar una entrada, selecciónela y haga clic en **quitar** ![icono](../../media/ITPro-EAC-DeleteIcon.png)quitar.</span><span class="sxs-lookup"><span data-stu-id="1a59b-135">To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).</span></span>
 
-   - `to change your preferences or unsubscribe`
+       <span data-ttu-id="1a59b-136">Cuando haya terminado, haga clic en **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-136">When you're finished, click **OK**.</span></span>
 
-   - `Modify email preferences or unsubscribe`
+     - <span data-ttu-id="1a59b-137">**El asunto o** \> el asunto o el cuerpo del mensaje **incluye alguna de estas palabras**: en el cuadro de diálogo **especificar palabras o frases** que aparece, escriba uno de los siguientes valores](../../media/ITPro-EAC-AddIcon.png), haga clic en **Agregar** ![icono y repita el procedimiento tantas veces como sea necesario.</span><span class="sxs-lookup"><span data-stu-id="1a59b-137">**The subject or body** \> **subject or body includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat as many times as necessary.</span></span>
 
-   - `This is a promotional email`
+       - `to change your preferences or unsubscribe`
 
-   - `You are receiving this email because you requested a subscription`
+       - `Modify email preferences or unsubscribe`
 
-   - `click here to unsubscribe`
+       - `This is a promotional email`
 
-   - `You have received this email because you are subscribed`
+       - `You are receiving this email because you requested a subscription`
 
-   - `If you no longer wish to receive our email newsletter`
+       - `click here to unsubscribe`
 
-   - `to unsubscribe from this newsletter`
+       - `You have received this email because you are subscribed`
 
-   - `If you have trouble viewing this email`
+       - `If you no longer wish to receive our email newsletter`
 
-   - `This is an advertisement`
+       - `to unsubscribe from this newsletter`
 
-   - `you would like to unsubscribe or change your`
+       - `If you have trouble viewing this email`
 
-   - `view this email as a webpage`
+       - `This is an advertisement`
 
-   - `You are receiving this email because you are subscribed`
+       - `you would like to unsubscribe or change your`
 
-   <span data-ttu-id="4feee-139">Esta lista no es un conjunto exhaustivo de frases que se encuentran en los correos electrónicos en masa; se pueden agregar o quitar más según sea necesario.</span><span class="sxs-lookup"><span data-stu-id="4feee-139">This list isn't an exhaustive set of phrases found in bulk emails; more can be added or removed as needed.</span></span> <span data-ttu-id="4feee-140">Pero es un buen punto de partida.</span><span class="sxs-lookup"><span data-stu-id="4feee-140">However, it's a good starting point.</span></span>
+       - `view this email as a webpage`
 
-6. <span data-ttu-id="4feee-141">En **Hacer lo siguiente**, seleccione **Modificar propiedades del mensaje** \> **establecer el nivel de confianza de correo no deseado (SCL)**.</span><span class="sxs-lookup"><span data-stu-id="4feee-141">Under **Do the following**, select **Modify the message properties** \> **set the spam confidence level (SCL)**.</span></span>
+       - `You are receiving this email because you are subscribed`
 
-7. <span data-ttu-id="4feee-142">En el cuadro de texto **Especificar SCL**, establezca el SCL en **5**, **6** o **9** y haga clic en **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="4feee-142">In the **specify SCL** dialog box, set the SCL to **5**, **6**, or **9**, and click **ok**.</span></span>
+      <span data-ttu-id="1a59b-138">Para editar una entrada, selecciónela y haga clic en **Editar** ![icono](../../media/ITPro-EAC-EditIcon.png)de edición.</span><span class="sxs-lookup"><span data-stu-id="1a59b-138">To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span> <span data-ttu-id="1a59b-139">Para quitar una entrada, selecciónela y haga clic en **quitar** ![icono](../../media/ITPro-EAC-DeleteIcon.png)quitar.</span><span class="sxs-lookup"><span data-stu-id="1a59b-139">To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).</span></span>
 
-   <span data-ttu-id="4feee-p110">Si se establece el SCL en 5 o 6 se lleva a cabo la acción **Correo no deseado**, mientras que si se establece el SCL en 9 se lleva a cabo la acción **Correo no deseado de confidencia alta**, tal y como se configuró en la directiva de filtrado de contenido. El servicio llevará a cabo la acción establecida en la directiva de filtrado de contenido. La acción predeterminada es entregar el mensaje en la carpeta de correo electrónico no deseado de los destinatarios, pero se pueden configurar diferentes acciones como se describe en [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="4feee-p110">Setting the SCL to 5 or 6 takes the **Spam** action, while setting the SCL to 9 takes the **High confidence spam** action, as configured in the content filter policy. The service will perform the action set in the content filter policy. The default action is to deliver the message to the recipients' Junk Email folder, but different actions can be configured as described in [Configure your spam filter policies](configure-your-spam-filter-policies.md).</span></span>
+       <span data-ttu-id="1a59b-140">Cuando haya terminado, haga clic en **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-140">When you're finished, click **OK**.</span></span>
 
-   <span data-ttu-id="4feee-146">Si la acción configurada es poner en cuarentena el mensaje en lugar de enviarlo a la carpeta de correo electrónico no deseado de los destinatarios, el mensaje se enviará a la cuarentena de administrador como una coincidencia de regla de flujo de correo y no estará disponible en la cuarentena de correo no deseado del usuario final o mediante el usuario final. notificaciones de correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="4feee-146">If your configured action is to quarantine the message rather than send it to the recipients' Junk Email folder, the message will be sent to the administrator quarantine as a mail flow rule match, and it will not be available in the end user spam quarantine or via end-user spam notifications.</span></span>
+   - <span data-ttu-id="1a59b-141">**Haga lo siguiente**: seleccione **modificar las propiedades** \> del mensaje **establecer el nivel de confianza contra correo no deseado (SCL)**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-141">**Do the following**: Select **Modify the message properties** \> **set the spam confidence level (SCL)**.</span></span> <span data-ttu-id="1a59b-142">En el cuadro de diálogo **especificar SCL** que aparece, configure una de las siguientes opciones:</span><span class="sxs-lookup"><span data-stu-id="1a59b-142">In the **Specify SCL** dialog that appears, configure one of the following settings:</span></span>
 
-   <span data-ttu-id="4feee-147">Para obtener más información acerca de los valores de SCL en el servicio, consulte [Niveles de confianza de correo no deseado](spam-confidence-levels.md).</span><span class="sxs-lookup"><span data-stu-id="4feee-147">For more information about SCL values in the service, see [Spam confidence levels](spam-confidence-levels.md).</span></span>
+     - <span data-ttu-id="1a59b-143">Para marcar los mensajes como **correo no deseado**, selecciona **6**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-143">To mark messages as **Spam**, select **6**.</span></span> <span data-ttu-id="1a59b-144">La acción que ha configurado para los veredictos de filtrado de **correo no deseado** en las directivas contra correo no deseado se aplica a los mensajes (el valor predeterminado es **mover mensaje a la carpeta de correo electrónico no deseado**).</span><span class="sxs-lookup"><span data-stu-id="1a59b-144">The action that you've configured for **Spam** filtering verdicts in your anti-spam policies is applied to the messages (the default value is **Move message to Junk Email folder**).</span></span>
 
-8. <span data-ttu-id="4feee-148">Guarde la regla.</span><span class="sxs-lookup"><span data-stu-id="4feee-148">Save the rule.</span></span>
+     - <span data-ttu-id="1a59b-145">Para marcar mensajes como **correo no deseado de alta confianza** , seleccione **9**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-145">To mark messages as **High confidence spam** select **9**.</span></span> <span data-ttu-id="1a59b-146">La acción que ha configurado para los veredictos de filtrado de **correo no deseado de confianza alta** en las directivas contra correo no deseado se aplica a los mensajes (el valor predeterminado es **mover mensaje a la carpeta correo electrónico no deseado**).</span><span class="sxs-lookup"><span data-stu-id="1a59b-146">The action that you've configured for **High confidence spam** filtering verdicts in your anti-spam policies is applied to the messages (the default value is **Move message to Junk Email folder**).</span></span>
 
-## <a name="for-more-information"></a><span data-ttu-id="4feee-149">Más información</span><span class="sxs-lookup"><span data-stu-id="4feee-149">For more information</span></span>
+    <span data-ttu-id="1a59b-147">Para obtener más información acerca de los valores de SCL, vea [nivel de confianza contra correo no deseado (SCL) en Office 365](spam-confidence-levels.md).</span><span class="sxs-lookup"><span data-stu-id="1a59b-147">For more information about SCL values, see [Spam confidence level (SCL) in Office 365](spam-confidence-levels.md).</span></span>
 
-[<span data-ttu-id="4feee-150">¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?</span><span class="sxs-lookup"><span data-stu-id="4feee-150">What's the difference between junk email and bulk email?</span></span>](what-s-the-difference-between-junk-email-and-bulk-email.md)
+   <span data-ttu-id="1a59b-148">Cuando haya terminado, haga clic en **Guardar** .</span><span class="sxs-lookup"><span data-stu-id="1a59b-148">When you're finished, click **Save**</span></span>
 
-[<span data-ttu-id="4feee-151">Valores de nivel de queja de correo masivo</span><span class="sxs-lookup"><span data-stu-id="4feee-151">Bulk Complaint Level values</span></span>](bulk-complaint-level-values.md)
+## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a><span data-ttu-id="1a59b-149">Usar PowerShell para crear reglas de flujo de correo que filtren el correo electrónico masivo</span><span class="sxs-lookup"><span data-stu-id="1a59b-149">Use PowerShell to create a mail flow rules that filter bulk email</span></span>
 
-[<span data-ttu-id="4feee-152">Configurar las directivas de filtro de correo no deseado</span><span class="sxs-lookup"><span data-stu-id="4feee-152">Configure your spam filter policies</span></span>](configure-your-spam-filter-policies.md)
+<span data-ttu-id="1a59b-150">Use la siguiente sintaxis para crear una o ambas reglas de flujo de correo (expresiones regulares frente a palabras):</span><span class="sxs-lookup"><span data-stu-id="1a59b-150">Use the following syntax to create one or both of the mail flow rules (regular expressions vs. words):</span></span>
 
-[<span data-ttu-id="4feee-153">Opciones avanzadas de filtrado de correo no deseado</span><span class="sxs-lookup"><span data-stu-id="4feee-153">Advanced spam filtering  options</span></span>](advanced-spam-filtering-asf-options.md)
+```powershell
+New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPrhase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
+```
+
+<span data-ttu-id="1a59b-151">En este ejemplo se crea una nueva regla denominada "Bulk Email Filtering-RegEx" que usa la misma lista de expresiones regulares de la sección anterior en el tema para establecer mensajes como **correo no deseado**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-151">This example creates a new rule named "Bulk email filtering - RegEx" that uses the same list of regular expressions from earlier in the topic to set messages as **Spam**.</span></span>
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? sr\c=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
+```
+
+<span data-ttu-id="1a59b-152">En este ejemplo se crea una nueva regla denominada "Bulk Email Filtering-Words" que usa la misma lista de palabras descritas anteriormente en el tema para establecer los mensajes como **correo no deseado de confianza alta**.</span><span class="sxs-lookup"><span data-stu-id="1a59b-152">This example creates a new rule named "Bulk email filtering - Words" that uses the same list of words from earlier in the topic to set messages as **High confidence spam**.</span></span>
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
+```
+
+<span data-ttu-id="1a59b-153">Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).</span><span class="sxs-lookup"><span data-stu-id="1a59b-153">For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).</span></span>
+
+## <a name="how-do-you-know-this-worked"></a><span data-ttu-id="1a59b-154">¿Cómo saber si el proceso se completó correctamente?</span><span class="sxs-lookup"><span data-stu-id="1a59b-154">How do you know this worked?</span></span>
+
+<span data-ttu-id="1a59b-155">Para comprobar que ha configurado reglas de flujo de correo para filtrar el correo masivo, siga estos pasos:</span><span class="sxs-lookup"><span data-stu-id="1a59b-155">To verify that you've configured mail flow rules to filter bulk email, do any of the following steps:</span></span>
+
+- <span data-ttu-id="1a59b-156">En el EAC, vaya a **Mail flow** \> **reglas** \> de flujo de correo Seleccione \> la regla haga clic](../../media/ITPro-EAC-EditIcon.png)en **Editar** ![icono de edición y Compruebe la configuración.</span><span class="sxs-lookup"><span data-stu-id="1a59b-156">In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and verify the settings.</span></span>
+
+- <span data-ttu-id="1a59b-157">En PowerShell, reemplace \<el nombre\> de la regla por el nombre de la regla y ejecute el siguiente comando para comprobar la configuración:</span><span class="sxs-lookup"><span data-stu-id="1a59b-157">In PowerShell, replace \<Rule Name\> with the name of the rule, and run the following command to verify the settings:</span></span>
+
+  ```powershell
+  Get-TransportRule -Identity "<Rule Name>" | Format-List
+  ```
+
+- <span data-ttu-id="1a59b-158">Desde una cuenta externa, envíe mensajes de prueba a un destinatario afectado que contenga una de las frases o patrones de texto y compruebe los resultados.</span><span class="sxs-lookup"><span data-stu-id="1a59b-158">From an external account, send a test messages to an affected recipient that contains one of the phrases or text patterns, and verify the results.</span></span>

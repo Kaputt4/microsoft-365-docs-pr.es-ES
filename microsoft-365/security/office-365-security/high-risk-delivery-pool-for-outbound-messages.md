@@ -2,10 +2,10 @@
 title: Grupo de entrega de alto riesgo para mensajes salientes
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/24/2016
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,42 +15,41 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Cuando se ha comprometido el sistema de correo electrónico de un cliente por un ataque de malware o de correo no deseado y dicho sistema envía correo no deseado saliente por el servicio de filtrado hospedado, las direcciones IP de los servidores del centro de datos de Office 365 podrían incluirse en listas de bloqueados de terceros.
-ms.openlocfilehash: 19987ae74b9c78a796ddb5f13cf8291a5ed269ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Obtenga información sobre cómo se usa el grupo de entrega de alto riesgo para proteger la reputación de los servidores de correo electrónico en los centros de información de Office 365.
+ms.openlocfilehash: 5d1bd2b14eb17ed74ee1cf1e44967f660f4595b8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599237"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895364"
 ---
-# <a name="high-risk-delivery-pool-for-outbound-messages"></a><span data-ttu-id="d6414-103">Grupo de entrega de alto riesgo para mensajes salientes</span><span class="sxs-lookup"><span data-stu-id="d6414-103">High-risk delivery pool for outbound messages</span></span>
+# <a name="high-risk-delivery-pool-for-outbound-messages-in-office-365"></a><span data-ttu-id="c01c6-103">Grupo de entrega de alto riesgo para mensajes salientes en Office 365</span><span class="sxs-lookup"><span data-stu-id="c01c6-103">High-risk delivery pool for outbound messages in Office 365</span></span>
 
-<span data-ttu-id="d6414-p101">Cuando se ha comprometido el sistema de correo electrónico de un cliente por un ataque de malware o de correo no deseado y dicho sistema envía correo no deseado saliente por el servicio de filtrado hospedado, las direcciones IP de los servidores del centro de datos de Office 365 podrían incluirse en listas de bloqueados de terceros. Los servidores de destino que no usan el servicio de filtrado hospedado, pero que usan esas listas de bloqueados, rechazan todo el correo electrónico enviado desde cualquiera de las direcciones IP de filtrado hospedado que se hayan agregado a esas listas. Para evitarlo, todos los mensajes salientes que superen el umbral de correo no deseado se envían mediante un grupo de entrega de alto riesgo. Este grupo secundario de correo electrónico saliente solo se usa para enviar mensajes que pueden ser de baja calidad. Esto ayuda a proteger el resto de la red del envío de mensajes que podrían causar el bloqueo de la dirección IP de envío.</span><span class="sxs-lookup"><span data-stu-id="d6414-p101">When a customer's email system has been compromised by malware or a malicious spam attack, and it's sending outbound spam through the hosted filtering service, this can result in the IP addresses of the Office 365 data center servers being listed on third-party block lists. Destination servers that do not use the hosted filtering service, but do use these block lists, reject all email sent from any of the hosted filtering IP addresses that have been added to those lists. To prevent this, all outbound messages that exceed the spam threshold are sent through a high-risk delivery pool. This secondary outbound email pool is only used to send messages that may be of low quality. This helps to protect the rest of the network from sending messages that are more likely to result in the sending IP address being blocked.</span></span>
-  
-<span data-ttu-id="d6414-p102">El uso de grupos de entrega de alto riesgo dedicados ayuda a garantizar que el grupo saliente normal solamente envíe mensajes que se sepa que son de alta calidad. El uso de este grupo secundario de direcciones IP ayuda a reducir la probabilidad de que el grupo normal de direcciones IP salientes se agregue a la lista de bloqueados. La posibilidad de que el grupo de entrega de alto riesgo se coloque en una lista de bloqueados aún sigue siendo un riesgo. Esto es así por diseño.</span><span class="sxs-lookup"><span data-stu-id="d6414-p102">The use of a dedicated high-risk delivery pool helps ensure that the normal outbound pool is only sending messages that are known to be of a high-quality. Using this secondary IP pool helps to reduce the probability of the normal outbound-IP pool being added to a blocked list. The possibility of the high-risk delivery pool being placed on a blocked list remains a risk. This is by design.</span></span>
-  
-<span data-ttu-id="d6414-113">Los mensajes en los que el dominio de envío no tiene un registro de direcciones (registro A), el cual proporciona la dirección IP del dominio, ni tampoco un registro MX, el cual ayuda a dirigir el correo a los servidores que deben recibirlo en un dominio particular de DNS, siempre se enrutan por el grupo de entrega de alto riesgo independientemente de la disposición del correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="d6414-113">Messages where the sending domain has no address record (A record), which gives you the IP address of the domain, and no MX record, which helps direct mail to the servers that should receive the mail for a particular domain in the DNS, are always routed through the high-risk delivery pool regardless of their spam disposition.</span></span>
-  
-## <a name="understanding-delivery-status-notification-dsn-messages"></a><span data-ttu-id="d6414-114">Descripción de los mensajes de notificación de estado de entrega (DSN)</span><span class="sxs-lookup"><span data-stu-id="d6414-114">Understanding Delivery Status Notification (DSN) messages</span></span>
+<span data-ttu-id="c01c6-104">Los servidores de correo electrónico de los centros de recursos de Office 365 pueden ser temporalmente culpables de enviar correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="c01c6-104">Email servers in the Office 365 datacenters might be temporarily guilty of sending spam.</span></span> <span data-ttu-id="c01c6-105">Por ejemplo, un ataque de malware o de correo no deseado en una organización de correo electrónico local que envía correo saliente a través de Office 365 o cuentas de Office 365 comprometidas.</span><span class="sxs-lookup"><span data-stu-id="c01c6-105">For example, a malware or malicious spam attack in an on-premises email organization that sends outbound mail through Office 365, or compromised Office 365 accounts.</span></span> <span data-ttu-id="c01c6-106">Estos escenarios pueden dar como resultado la dirección IP de los servidores de Office 365 Datacenter Server afectados que aparecen en las listas de bloqueados de terceros.</span><span class="sxs-lookup"><span data-stu-id="c01c6-106">These scenarios can result in the IP address of the affected Office 365 datacenter servers appearing on third-party block lists.</span></span> <span data-ttu-id="c01c6-107">Las organizaciones de correo electrónico de destino que usen estas listas de bloqueo rechazarán el correo electrónico de esos orígenes de mensajes.</span><span class="sxs-lookup"><span data-stu-id="c01c6-107">Destination email organizations that use these block lists will reject email from those messages sources.</span></span>
 
-<span data-ttu-id="d6414-115">El grupo de entrega de alto riesgo saliente administra la entrega de todos los mensajes de DSN "devueltos" o "con error".</span><span class="sxs-lookup"><span data-stu-id="d6414-115">The outbound high-risk delivery pool manages the delivery for all "bounced" or "failed" (DSN) messages.</span></span>
-  
-<span data-ttu-id="d6414-116">Las posibles causas de un aumento de mensajes de DSN son las siguientes:</span><span class="sxs-lookup"><span data-stu-id="d6414-116">Possible causes for a surge in DSN messages include the following:</span></span>
-  
-- <span data-ttu-id="d6414-117">Una campaña de suplantación de identidad está afectando a uno de los clientes que utiliza el servicio</span><span class="sxs-lookup"><span data-stu-id="d6414-117">A spoofing campaign affecting one of the customers using the service</span></span>
-    
-- <span data-ttu-id="d6414-118">Un ataque por recolección de directorios</span><span class="sxs-lookup"><span data-stu-id="d6414-118">A directory harvest attack</span></span>
-    
-- <span data-ttu-id="d6414-119">Un ataque de correo no deseado</span><span class="sxs-lookup"><span data-stu-id="d6414-119">A spam attack</span></span>
-    
-- <span data-ttu-id="d6414-120">Un servidor SMTP de acceso no autorizado</span><span class="sxs-lookup"><span data-stu-id="d6414-120">A rogue SMTP server</span></span>
-    
-<span data-ttu-id="d6414-p103">Todos estos factores pueden causar el aumento repentino de la cantidad de mensajes de DSN que el servicio procesa. Muchas veces, los mensajes de DSN se perciben como correo no deseado en otros servidores y servicios de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="d6414-p103">All of these issues can result in a sudden increase in the number of DSN messages being processed by the service. Many times, these DSN messages appear to be spam to other email servers and services.</span></span>
-  
-## <a name="for-more-information"></a><span data-ttu-id="d6414-123">Más información</span><span class="sxs-lookup"><span data-stu-id="d6414-123">For more information</span></span>
+<span data-ttu-id="c01c6-108">Para evitarlo, todos los mensajes salientes de los servidores de centro de [servicios](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) de Office 365 que se determine que son correo no deseado o que superen los límites de envío del servicio o [las directivas de correo no deseado salientes](configure-the-outbound-spam-policy.md) se envían a través del _grupo de entrega de alto riesgo_.</span><span class="sxs-lookup"><span data-stu-id="c01c6-108">To prevent this, all outbound messages from Office 365 datacenter servers that's determined to be spam or that exceeds the sending limits of [the service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or [outbound spam policies](configure-the-outbound-spam-policy.md) are sent through the _high-risk delivery pool_.</span></span>
 
-[<span data-ttu-id="d6414-124">Configurar la directiva de correo no deseado saliente</span><span class="sxs-lookup"><span data-stu-id="d6414-124">Configure the outbound spam policy</span></span>](configure-the-outbound-spam-policy.md)
-  
-[<span data-ttu-id="d6414-125">Preguntas más frecuentes sobre la protección contra correo electrónico no deseado</span><span class="sxs-lookup"><span data-stu-id="d6414-125">Anti-spam protection FAQ</span></span>](anti-spam-protection-faq.md)
-  
+<span data-ttu-id="c01c6-109">El grupo de entrega de alto riesgo es un grupo de direcciones IP secundarias para el correo electrónico saliente que solo se usa para enviar mensajes de "baja calidad" (por ejemplo, correo no deseado y [dispersión](backscatter-messages-and-eop.md)).</span><span class="sxs-lookup"><span data-stu-id="c01c6-109">The high risk delivery pool is a secondary IP address pool for outbound email that's only used to send "low quality" messages (for example, spam and [backscatter](backscatter-messages-and-eop.md)).</span></span> <span data-ttu-id="c01c6-110">El uso del grupo de entrega de alto riesgo ayuda a evitar que el grupo de direcciones IP normal para el correo electrónico saliente envíe correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="c01c6-110">Using the high risk delivery pool helps prevent the normal IP address pool for outbound email from sending spam.</span></span> <span data-ttu-id="c01c6-111">El grupo de direcciones IP normal para el correo electrónico saliente mantiene la reputación enviando mensajes de "alta calidad", lo que reduce la probabilidad de que esta dirección IP aparezca en las listas de direcciones IP bloqueadas.</span><span class="sxs-lookup"><span data-stu-id="c01c6-111">The normal IP address pool for outbound email maintains the reputation sending "high quality" messages, which reduces the likelihood that these IP address will appear on IP block lists.</span></span>
 
+<span data-ttu-id="c01c6-112">La posibilidad muy real de que las direcciones IP en el grupo de entrega de alto riesgo se coloquen en las listas de bloqueo de IP, pero esto es así por diseño.</span><span class="sxs-lookup"><span data-stu-id="c01c6-112">The very real possibility that IP addresses in the high-risk delivery pool will be placed on IP block lists remains, but this is by design.</span></span> <span data-ttu-id="c01c6-113">La entrega a los destinatarios deseados no está garantizada porque muchas organizaciones de correo electrónico no aceptan mensajes del grupo de entrega de alto riesgo.</span><span class="sxs-lookup"><span data-stu-id="c01c6-113">Delivery to the intended recipients isn't guaranteed, because many email organizations won't accept messages from the high risk delivery pool.</span></span>
+
+<span data-ttu-id="c01c6-114">Para obtener más información, consulte [controlar el correo no deseado saliente en Office 365](outbound-spam-controls.md).</span><span class="sxs-lookup"><span data-stu-id="c01c6-114">For more information, see [Control outbound spam in Office 365](outbound-spam-controls.md).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="c01c6-115">Los mensajes en los que el dominio de correo electrónico de origen no tiene ningún registro A y no MX definido en DNS público siempre se redirigen a través del grupo de entrega de alto riesgo, independientemente de su correo no deseado o la disposición del límite de envío.</span><span class="sxs-lookup"><span data-stu-id="c01c6-115">Messages where the source email domain has no A record and no MX record defined in public DNS are always routed through the high-risk delivery pool, regardless of their spam or sending limit disposition.</span></span>
+
+## <a name="bounce-messages"></a><span data-ttu-id="c01c6-116">Mensajes de devolución</span><span class="sxs-lookup"><span data-stu-id="c01c6-116">Bounce messages</span></span>
+
+<span data-ttu-id="c01c6-117">El grupo de entrega de alto riesgo saliente administra la entrega de todos los informes de no entrega (también conocidos como NDR, mensajes de devolución, notificaciones de estado de entrega o DSN).</span><span class="sxs-lookup"><span data-stu-id="c01c6-117">The outbound high-risk delivery pool manages the delivery for all non-delivery reports (also known as NDRs, bounce messages, delivery status notifications, or DSNs).</span></span>
+
+<span data-ttu-id="c01c6-118">Entre las posibles causas de un aumento de NDR se incluyen:</span><span class="sxs-lookup"><span data-stu-id="c01c6-118">Possible causes for a surge in NDRs include:</span></span>
+
+- <span data-ttu-id="c01c6-119">Una campaña de suplantación de identidad que afecta a uno de los clientes que usan el servicio.</span><span class="sxs-lookup"><span data-stu-id="c01c6-119">A spoofing campaign that affects one of the customers using the service.</span></span>
+
+- <span data-ttu-id="c01c6-120">Un ataque de recopilación de directorios.</span><span class="sxs-lookup"><span data-stu-id="c01c6-120">A directory harvest attack.</span></span>
+
+- <span data-ttu-id="c01c6-121">Un ataque de correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="c01c6-121">A spam attack.</span></span>
+
+- <span data-ttu-id="c01c6-122">Un servidor de correo electrónico malintencionado.</span><span class="sxs-lookup"><span data-stu-id="c01c6-122">A rogue email server.</span></span>
+
+<span data-ttu-id="c01c6-123">Todos estos problemas pueden dar como resultado un aumento repentino del número de NDR que procesa el servicio.</span><span class="sxs-lookup"><span data-stu-id="c01c6-123">All of these issues can result in a sudden increase in the number of NDRs being processed by the service.</span></span> <span data-ttu-id="c01c6-124">Muchas veces, estos NDR parecen ser correo no deseado para otros servidores y servicios de correo electrónico (también conocido como _[redispersión](backscatter-messages-and-eop.md)_).</span><span class="sxs-lookup"><span data-stu-id="c01c6-124">Many times, these NDRs appear to be spam to other email servers and services (also known as _[backscatter](backscatter-messages-and-eop.md)_).</span></span>

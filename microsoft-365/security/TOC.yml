@@ -199,70 +199,58 @@
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: Detección de virus en SharePoint Online
                       href: ./office-365-security/virus-detection-in-spo.md
-                - name: Opciones avanzadas de filtrado de correo no deseado
-                  href: ./office-365-security/advanced-spam-filtering-asf-options.md
-                - name: Grupo de entrega de alto riesgo para mensajes salientes
-                  href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                - name: Preguntas más frecuentes sobre protección contra correo electrónico no deseado
-                  href: ./office-365-security/anti-spam-protection-faq.md
-                - name: Evite usar caracteres no válidos en las reglas de filtro de correo no deseado y directiva de filtro de correo no deseado
-                  href: ./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md
-                - name: Listas de remitentes seguros y bloqueados en Exchange Online
-                  href: ./office-365-security/safe-sender-and-blocked-sender-lists-faq.md
-                - name: Sugerencias de seguridad en mensajes de correo en Office 365
-                  href: ./office-365-security/safety-tips-in-office-365.md
-                - name: Notificación de ejemplo cuando se bloquea a un remitente para enviar correo no deseado saliente
-                  href: ./office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md
-                - name: Usar notificaciones de correo no deseado para el usuario final para liberar y notificar mensajes de correo no deseado en cuarentena
-                  href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
-                - name: Lucha contra el correo no deseado enviado a Office 365
-                  href: ./office-365-security/fighting-junk-email.md
-                - name: Protección contra correo no deseado para el correo electrónico de Office 365
+                - name: Protección contra correo no deseado
                   href: ./office-365-security/anti-spam-protection.md
+                  items:
+                    - name: Preguntas más frecuentes sobre protección contra correo electrónico no deseado
+                      href: ./office-365-security/anti-spam-protection-faq.md
+                    - name: Configurar directivas contra correo electrónico no deseado
+                      href: ./office-365-security/configure-your-spam-filter-policies.md
+                    - name: Configurar la directiva de filtro de conexión
+                      href: ./office-365-security/configure-the-connection-filter-policy.md
+                    - name: Crear listas de remitentes bloqueados
+                      href: ./office-365-security/Create-block-sender-lists-in-office-365.md
+                    - name: Crear listas de remitentes seguros
+                      href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
+                    - name: Nivel de confianza del spam (SCL)
+                      href: ./office-365-security/spam-confidence-levels.md
+                    - name: Nivel de quejas en masa (SCL)
+                      href: ./office-365-security/bulk-complaint-level-values.md
+                    - name: Configurar la configuración del correo no deseado en buzones de Exchange Online
+                      href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
+                    - name: Notificaciones de spam para usuarios finales
+                      href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
+                    - name: Usar las reglas de flujo de correo para establecer el SCL en los mensajes
+                      href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+                    - name: Configuración del filtro de Spam avanzado (ASF)
+                      href: ./office-365-security/advanced-spam-filtering-asf-options.md
+                    - name: Configurar un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado
+                      href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: Protección contra el spam de salida
+                  href: ./office-365-security/outbound-spam-controls.md
+                  items:
+                    - name: Configurar el filtrado de spam de salida
+                      href: ./office-365-security/configure-the-outbound-spam-policy.md
+                    - name: Grupo de entrega de alto riesgo para mensajes salientes
+                      href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
+                    - name: Quitar usuarios bloqueados del portal de Usuarios Restringidos
+                      href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+                - name: Encabezados de mensajes de correo no deseado
+                  href: ./office-365-security/anti-spam-message-headers.md
                 - name: Cómo se combinan las directivas y las protecciones
                   href: ./office-365-security/how-policies-and-protections-are-combined.md
-                - name: Cómo reducir el correo no deseado en Office 365
-                  href: ./office-365-security/reduce-spam-email.md
-                - name: Controlar el correo no deseado saliente en Office 365
-                  href: ./office-365-security/outbound-spam-controls.md
-                - name: Bloquear el correo no deseado con el filtro contra correo no deseado de Office 365 para evitar problemas de falsos negativos
-                  href: ./office-365-security/reduce-spam-email.md
                 - name: 'Purga automática cero horas: protección contra correo no deseado y malware'
                   href: ./office-365-security/zero-hour-auto-purge.md
-                - name: Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario
-                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: Sugerencias de seguridad en mensajes de correo electrónico
+                  href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Informar a Microsoft sobre mensajes de correo electrónico no deseado
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
-                - name: Administrar listas de remitentes seguros para troyanos de envío masivo de correo electrónico
-                  href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
-                - name: Configurar las directivas contra correo electrónico no deseado
-                  href: ./office-365-security/configure-the-anti-spam-policies.md
-                - name: Crear-listas-de-remitentes-a-bloquear-en-Office-365
-                  href: ./office-365-security/Create-block-sender-lists-in-office-365.md
-                - name: Crear-listas-de-remitentes-seguros-en-Office-365
-                  href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
-                - name: Configurar las directivas de filtro de correo no deseado
-                  href: ./office-365-security/configure-your-spam-filter-policies.md
-                - name: Configurar la directiva de filtro de conexión
-                  href: ./office-365-security/configure-the-connection-filter-policy.md
-                - name: Configurar la directiva de correo no deseado saliente
-                  href: ./office-365-security/configure-the-outbound-spam-policy.md
-                - name: Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado
-                  href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
-                - name: Niveles de confianza de correo no deseado
-                  href: ./office-365-security/spam-confidence-levels.md
-                - name: Corrección de código de error 5.7.7 XX en Exchange Online
-                  href: ./office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md
-                - name: Usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
-                  href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
                 - name: 'Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis'
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                 - name: Envíos de administración en Office 365
                   href: ./office-365-security/admin-submission.md
                 - name: Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: Encabezados de mensajes de correo no deseado
-                  href: ./office-365-security/anti-spam-message-headers.md
             - name: Protección contra suplantación de identidad (phishing) en Office 365
               href: ./office-365-security/anti-phishing-protection.md
               items:
@@ -290,10 +278,6 @@
                   href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Bloquear correo no deseado en EOP independiente
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: Configurar notificaciones de correo no deseado para el usuario final en EOP
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
-                - name: Configurar notificaciones de correo no deseado para el usuario final en Exchange Online
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
                 - name: Informar de correo electrónico no deseado y estafas de suplantación de identidad (phishing) en Outlook en la Web
                   href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: Proteger buzones locales con Exchange Online Protection
@@ -304,17 +288,15 @@
                   href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
                 - name: ¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
                   href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
-            - name: Cuarentena de mensajes de correo electrónico en Office 365
+            - name: Cuarentena
               href: ./office-365-security/quarantine-email-messages.md
               items:
-                - name: Administrar archivos y mensajes en cuarentena como administrador
+                - name: Preguntas más frecuentes sobre la cuarentena
+                  href: ./office-365-security/quarantine-faq.md
+                - name: Administrar mensajes en cuarentena y archivos como administrador
                   href: ./office-365-security/manage-quarantined-messages-and-files.md
                 - name: Buscar y liberar mensajes en cuarentena como usuario
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
-                - name: Preguntas más frecuentes sobre cuarentena para Office 365
-                  href: ./office-365-security/quarantine-faq.md
-                - name: Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365
-                  href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: Autenticación y validación de correo electrónico
               items:
                 - name: Cómo Office 365 usa SPF para evitar la suplantación de identidad
@@ -347,8 +329,6 @@
                       href: ./office-365-security/set-up-and-download-a-custom-report.md
                     - name: Descargar informes existentes
                       href: ./office-365-security/download-existing-reports.md
-                - name: Habilitar o deshabilitar las sugerencias de seguridad en Office 365
-                  href: ./office-365-security/enable-or-disable-safety-tips.md
                 - name: Ver información sobre los archivos malintencionados
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Protección contra amenazas avanzada
@@ -394,7 +374,7 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Ver y leer los informes de ATP
               href: ./office-365-security/view-reports-for-atp.md
-            - name: Descripción de los ataques más recientes con análisis de amenazas
+            - name: Comprender los ataques más recientes con los análisis de amenazas
               href: ./mtp/latest-attack-campaigns.md
             - name: Qué significan las páginas de advertencia de vínculos seguros de ATP
               href: ./office-365-security/atp-safe-links-warning-pages.md
@@ -556,8 +536,6 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Inteligencia de flujo de correo en Office 365
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Cuarentena
-                  href: ./office-365-security/quarantine.md
                 - name: Solución de problemas e información de soporte técnico
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items:
