@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 368ccef9e5213a7494140d2c305ddafe1e0c3f79
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409515"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894310"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -1080,7 +1080,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Identidad
 - Registro
 - Determinación 
-- ID 
+- Id. 
 - Identiteitskaart
 - Registratie nummer 
 - Identificatie nummer 
@@ -1896,7 +1896,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - Número de identificación nacional 
 - tarjeta de identidad 
-- ID 
+- Id. 
 - Determinación 
 - Rol Único Nacional 
 - REALIZAR 
@@ -3326,7 +3326,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 #### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
 - tarjeta de identidad
-- ID
+- Id.
 - Determinación
 - Personalausweis
 - Identifizierungsnummer
@@ -4904,7 +4904,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- ID
+- Id.
 - Determinación 
    
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -5882,6 +5882,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - No se encuentra ninguna palabra clave de Keyword_us_drivers_license.
 
 ```xml
+<Entity id="dfeb356f-61cd-459e-bf0f-7c6d28b458c6 patternsProximity="300">
     <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
@@ -5895,6 +5896,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
           <Match idRef="Keyword_us_drivers_license" />
         </Any>
     </Pattern>
+</Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -5905,7 +5907,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - DISTRIBUCIÓN 
 - CDL 
 - CDLS 
-- ID 
+- Id. 
 - Falta 
 - LISTAS # 
 - DISTRIBUCIÓN # 

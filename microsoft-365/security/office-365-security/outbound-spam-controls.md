@@ -1,9 +1,9 @@
 ---
-title: Controlar el correo no deseado saliente en Office 365
+title: Protección contra correo no deseado saliente en Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
@@ -16,60 +16,46 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Si su organización envía una gran cantidad de correo masivo marcado como correo no deseado, puede bloquear el envío de correo electrónico con Office 365. Lea este artículo para obtener más información sobre por qué ocurre esto y lo que puede hacer al respecto.
-ms.openlocfilehash: e1b1e0f56398db774a9aabc56cdcde52ad17791a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Los administradores pueden obtener información sobre cómo Office 365 y Exchange Online Protection (EOP) protegen a los clientes contra el correo no deseado saliente y qué hacer si necesita enviar correos masivos.
+ms.openlocfilehash: 99e764944335be923ee1918851d4072ea98d3a32
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598737"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895328"
 ---
-# <a name="control-outbound-spam-in-office-365"></a>Controlar el correo no deseado saliente en Office 365
+# <a name="outbound-spam-protection-in-office-365"></a>Protección contra correo no deseado saliente en Office 365
 
-Tenemos que administrar el correo no deseado de salida en serio porque nuestro es un servicio compartido.  Hay muchos clientes detrás de un grupo compartido de recursos, donde si un cliente envía correo no deseado saliente, puede degradar la reputación IP saliente del servicio y afecta a la entrega correcta del correo electrónico para otros clientes.
+Tenemos que administrar el correo no deseado de salida en serio, porque Office 365 (Exchange online o Exchange Online Protection (EOP) sin buzones de correo de Exchange Online) es un servicio en línea en el que muchos clientes usan un grupo compartido de recursos. Un cliente de Office 365 el envío de correo no deseado intencional o accidentalmente a su organización puede degradar la reputación de todo el servicio y puede afectar la entrega de correo electrónico para otros clientes.
 
-> [!IMPORTANT]
-> La notificación para cuando un remitente está restringido ahora forma parte de la plataforma de alertas del centro de cumplimiento de & de seguridad (SCC). En lugar de usar los métodos descritos a continuación para enviar notificaciones, la lista de usuarios a los que se les avisa puede encontrarse en el **usuario restringido al envío de una alerta de correo electrónico** . Empiece a usar la [Página directivas de alerta](https://sip.protection.office.com/alertpolicies) en el centro de seguridad & cumplimiento para configurar la alerta, ya que el método anterior se quitará en el futuro. Obtenga información sobre el nuevo [quitar un usuario del portal de usuarios restringidos después de enviar correo no deseado](removing-user-from-restricted-users-portal-after-spam.md). "
+En este tema se describen los controles y las notificaciones diseñados para ayudar a evitar el correo no deseado saliente y qué se puede hacer si es necesario enviar correos masivos.
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Qué pueden hacer los administradores para controlar el correo no deseado saliente
 
-- **Habilitar las notificaciones cuando una cuenta envía correo no deseado o se cierra**: los administradores pueden obtener CCO siempre que un mensaje se marca como correo no deseado saliente y se envía a través del grupo de riesgo alto. Mediante la supervisión de este buzón, un administrador puede detectar si tiene una cuenta en peligro en su red o si el filtro de correo no deseado marca de forma errónea su correo electrónico como correo no deseado. [Aquí](configure-the-outbound-spam-policy.md)puede encontrar más información sobre cómo configurar la Directiva de correo no deseado saliente.
+- **Usar notificaciones integradas**: cuando un usuario supere [el](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) envío de límites de las directivas de servicio o [correo no deseado salientes](configure-the-outbound-spam-policy.md) y se restringe el envío de correo electrónico, la Directiva de alerta predeterminada denominada **usuario con restricción de envío de correo** electrónico enviará notificaciones de correo electrónico a los miembros del grupo **TenantAdmins** (**administradores globales**). Para configurar quién más recibe estas notificaciones, consulte [Verify The Alert Settings for Restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Además, las directivas de alerta predeterminadas denominadas **límite de envío de correo electrónico y superado** los **modelos de envío de correo electrónico sospechoso** envían notificaciones de correo electrónico a los miembros del grupo **TenantAdmins** (**global Admins**). Para obtener más información acerca de las directivas de alertas, consulte [Alert policies en el centro de seguridad y cumplimiento](../../compliance/alert-policies.md).
 
-- **Revise manualmente las reclamaciones de correo no deseado de proveedores de correo electrónico de**terceros: muchos servicios de correo electrónico de terceros como Outlook.com, Yahoo y AOL proporcionan un bucle de comentarios en el que si algún usuario del servicio marca un correo electrónico de nuestro servicio como correo no deseado, el mensaje se empaqueta y se envía a nosotros para que lo revisen. Para obtener más información acerca de la compatibilidad de remitentes para Outlook.com, haga clic [aquí](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
+- **Revise las reclamaciones de correo no deseado de proveedores de correo electrónico de terceros**: muchos servicios de correo electrónico como Outlook.com, Yahoo y AOL proporcionan un bucle de comentarios en el que si algún usuario del servicio marca un correo electrónico de Office 365 como correo no deseado, el mensaje se empaqueta y se envía a los usuarios para que los revisen. Para obtener más información acerca de la compatibilidad de remitentes para <https://sendersupport.olc.protection.outlook.com/pm/services.aspx>Outlook.com, vaya a.
 
-## <a name="what-eop-does-to-control-outbound-spam"></a>Qué hace EOP para controlar el correo no deseado saliente
+## <a name="how-eop-controls-outbound-spam"></a>Cómo EOP controla el correo no deseado saliente
 
-1. **Segregación de tráfico saliente en grupos de direcciones IP independientes**: todos los mensajes que los clientes envían a través del servicio se examinan en busca de correo no deseado. Si el mensaje es correo no deseado, se enruta a través del grupo de entrega de alto riesgo. Este grupo de direcciones IP contiene notificaciones de estado no entregadas y correo no deseado. No se garantiza la entrega al destinatario previsto, ya que muchas terceras partes no aceptarán correo electrónico porque la calidad del correo electrónico que emite.
+- **Segregación de tráfico de correo saliente**: todos los mensajes salientes que se envían a través del servicio se examinan en busca de correo no deseado. Si se determina que el mensaje es correo no deseado, se entrega desde un grupo de direcciones IP secundarias y menos prestigiosos denominado _grupo de entrega de alto riesgo_. Para obtener más información, consulte [grupo de entrega de alto riesgo para mensajes salientes en Office 365](high-risk-delivery-pool-for-outbound-messages.md).
 
-   Al dividir el tráfico de este modo, se garantiza que el correo electrónico de menor calidad (correo no deseado, NDR de reenvío masivo) no se arrastra hacia abajo la reputación de los grupos de correo electrónico salientes normales. El grupo de alto riesgo suele tener una reputación baja en muchos receptores por Internet, aunque no es universal.
+- **Supervisión de nuestra dirección IP de origen reputación**: Office 365 consulta varias listas de direcciones IP bloqueadas de terceros. Se genera una alerta si alguna de las direcciones IP que usamos para el correo electrónico saliente aparece en estas listas. Esto nos permite reaccionar rápidamente cuando el correo no deseado ha provocado una degradación de nuestra reputación. Cuando se genera una alerta, tenemos documentación interna que describe cómo obtener nuestras direcciones IP (en la lista) de las listas de bloqueados.
 
-2. **Supervisión de la reputación de IP**: Office 365 consulta varios blocklists IP de terceros y genera alertas si alguna de nuestras IP de salida se enumeran en ellas. Esto nos permite reaccionar rápidamente cuando el correo no deseado ha provocado una degradación de nuestra reputación. Cuando se genera una alerta, tenemos documentación interna que no depende de los pasos que se deben tomar para devolverse a la lista.
+- **Deshabilitar cuentas que envían demasiado correo no deseado**<sup>\*</sup>: aunque se segrega el correo no deseado saliente en el grupo de entrega de alto riesgo, no se puede permitir una cuenta (a menudo, una cuenta en peligro) para enviar correo electrónico no deseado de forma indefinida. Se supervisan las cuentas que envían correo no deseado y, cuando se supera un límite no divulgado, se bloquea la cuenta para enviar correo electrónico. Hay distintos umbrales para los usuarios individuales y para todo el espacio empresarial.
 
-3. La **deshabilitación de cuentas infractoras cuando envían demasiado correo electrónico como correo no deseado**: aunque se segrega el correo no deseado y no spam en dos grupos de servidores IP salientes independientes, las cuentas de correo electrónico no pueden enviar correo no deseado de manera indefinida. Supervisamos qué cuentas envían correo no deseado y, si supera un límite no divulgado, se bloquea la cuenta para enviar correo no deseado.
+- **Deshabilitar cuentas que envían demasiado correo electrónico demasiado rápido**<sup>\*</sup>: además de los límites que buscan los mensajes marcados como correo no deseado, también hay límites para bloquear las cuentas cuando alcanzan un límite de mensajes salientes generales, independientemente del filtro de correo no deseado en los mensajes salientes. Una cuenta en peligro podría enviar correo no deseado de día cero (no reconocido previamente) que perdió el filtro de correo no deseado. Debido a que puede ser difícil identificar una campaña de correo masivo legítima en comparación con una campaña de correo no deseado, estos límites ayudan a minimizar los posibles daños.
 
-   Un solo mensaje marcado como correo no deseado puede ser un error de clasificación por el motor de correo no deseado y también conocido como falso positivo. Lo enviamos a través del grupo de alto riesgo para darle la oportunidad de salir; sin embargo, un gran número de mensajes en un breve período de tiempo es indicativo de un problema y, cuando esto ocurre, se impide que la cuenta envíe más correo electrónico. Existen distintos umbrales para las cuentas de correo electrónico individuales y para todo el espacio empresarial.
+<sup>\*</sup>No anunciamos los límites exactos para que los remitentes de correo no deseado puedan jugar el sistema y, por lo tanto, podemos aumentar o disminuir los límites según sea necesario. Los límites son lo suficientemente altos como para evitar que un usuario de una empresa promedio los supere siempre y lo suficientemente bajo como para ayudar a contener el daño causado por un remitente de correo no deseado.
 
-4. La **deshabilitación de cuentas infractoras cuando envían demasiado correo electrónico en un período de tiempo demasiado corto**: además de los límites superiores que buscan una proporción de mensajes marcados como correo no deseado, también hay límites que bloquean las cuentas cuando alcanzan un límite general independientemente de si los mensajes se marcan como correo no deseado o no. El motivo por el que se encuentra este límite es que una cuenta en peligro podría enviar correo no deseado de día cero que no está presente por el filtro de correo no deseado. Debido a que es difícil, si no imposible, a veces distinguir la diferencia entre una campaña de correo masivo legítima y una campaña de correo no deseado masiva, estos límites se activan para limitar los posibles daños.
+## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Recomendaciones para los clientes que desean enviar correo masivo a través de EOP
 
-> [!NOTE]
-> Para los #3 y #4, no anunciamos los límites exactos para evitar que los remitentes de correo no deseado puedan jugar con el sistema y asegurarnos de que podemos cambiar los límites que necesitamos. Los límites son lo suficientemente altos como para que un usuario promedio de la empresa nunca los Presione y lo suficientemente bajo como para que contenga la mayoría de los daños que puede hacer un remitente de correo no deseado.
+Es difícil alcanzar un equilibrio entre los clientes que desean enviar un gran volumen de correo electrónico frente a proteger el servicio de cuentas comprometidas y remitentes de correo electrónico masivo con prácticas deficientes de adquisición de destinatarios. El costo de un aterrizaje de origen de correo electrónico de Office 365 en una lista de direcciones IP bloqueadas de terceros es mayor que el bloqueo de un usuario que está enviando demasiado correo electrónico.
 
-## <a name="recommended-workarounds-for-customers-who-want-to-send-outbound-a-lot-of-email-through-eop"></a>Soluciones recomendadas para los clientes que deseen enviar un gran número de mensajes de correo electrónico a través de EOP
+Como se describe en la [Descripción del servicio de Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits), el uso de EOP para enviar correo electrónico masivo no es un uso compatible del servicio y solo se permite en base a un "mejor esfuerzo". Para los clientes que quieren enviar correo electrónico masivo, se recomiendan las siguientes soluciones:
 
-Es difícil alcanzar un equilibrio entre los clientes que quieren enviar un gran volumen de correo electrónico frente a proteger el servicio de cuentas comprometidas y correo electrónico masivo con prácticas de adquisición de listas deficientes. Una vez más, el costo de un aterrizaje saliente de IP en una lista de bloqueo de terceros es superior al bloqueo de un cliente para que no envíe correo electrónico saliente. Como se describe en la [Descripción del servicio de Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits), el uso de EOP para enviar correo electrónico masivo no es un uso compatible del servicio y solo se permite en base a un "mejor esfuerzo". Para los clientes que quieren enviar correo masivo, recomendamos lo siguiente:
+- **Enviar correo electrónico masivo a través de servidores de correo electrónico locales**: Esto significa que los clientes deberán mantener su propia infraestructura de correo electrónico para el envío masivo de correo.
 
-1. **Enviar el correo electrónico masivo a través de sus propios servidores de correo locales**: Esto significa que el cliente tendrá que mantener su propia infraestructura de correo electrónico para este tipo de correo electrónico.
+- **Usar un proveedor de correo electrónico masivo**de terceros: hay varios proveedores de soluciones de correo masivo de terceros que puede usar para enviar correos masivos. Estas empresas tienen un interés irrevocable en trabajar con los clientes para garantizar buenas prácticas de envío de correo electrónico.
 
-2. **Usar un correo electrónico masivo de terceros para enviar la comunicación masiva**: hay varios correos electrónicos masivos de terceros cuyo único negocio es enviar correo electrónico masivo. Pueden trabajar con los clientes para asegurarse de que tienen buenas prácticas de correo electrónico y tienen recursos dedicados a su aplicación.
-
-El grupo de trabajo de mensajería, móviles y contra el abuso de malware (MAAWG) publica [aquí](https://www.maawg.org/about/roster)su lista de pertenencia. Hay varios proveedores de correo electrónico masivo en la lista que se conocen como ciudadanos de Internet responsables.
-
-## <a name="for-more-information"></a>Más información
-
-[Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
-
-[Protección contra correo no deseado de Office 365](anti-spam-protection.md)
-
-[Protección contra suplantación de identidad en Office 365](anti-spoofing-protection.md)
-
-[Niveles de confianza del correo no deseado](spam-confidence-levels.md)
+El grupo de trabajo anti-abuse de mensajería, móvil y malware (MAAWG) publica su lista de <https://www.maawg.org/about/roster>pertenencia en. Hay varios proveedores de correo electrónico masivo en la lista y se sabe que son ciudadanos de Internet responsables.

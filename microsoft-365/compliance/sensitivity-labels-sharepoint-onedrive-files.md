@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: 288f70ccfcd7852102dc5261e225e9e84182b365
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 840087be38c6e50244437fea63de655d8cd9363e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826219"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894309"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)
 
@@ -124,12 +124,15 @@ Antes de habilitar la vista previa, asegúrese de que está ejecutando la versi�
 Para habilitar la vista previa, use el cmdlet Set-SPOTenant:
 
 1. Con una cuenta profesional o educativa con privilegios de administrador global o de administrador de SharePoint en Office 365, conéctese a SharePoint. Para saber cómo hacerlo, consulte [Introducción al Shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+    
+    Nota: Si tiene Office 365 multigeográfico, use el parámetro-URL con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)y especifique la dirección URL del sitio del centro de administración de SharePoint Online para una de las ubicaciones geográficas.
 
-2. Ejecute el comando siguiente:
+2. Ejecute el siguiente comando:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
+3. Para Office 365 multi-geo: Repita los pasos 1 y 2 para cada una de las ubicaciones geográficas restantes.
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Programar la distribución después de crear o cambiar una etiqueta de confidencialidad
 

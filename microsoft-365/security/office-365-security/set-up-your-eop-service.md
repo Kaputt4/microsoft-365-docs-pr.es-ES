@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Este tema explica cómo configurar Microsoft Exchange Online Protection (EOP). Si ha llegado hasta aquí desde el asistente de dominios de Office 365, regrese al asistente para dominios de Office 365 si no desea usar Exchange Online Protection. Si está buscando más información sobre cómo configurar los conectores, consulte Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 135f3ce2d966c2c2918199f4680678031d9dc8d4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a28bc606b22b044515e737bf1ddf8250452f250
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598307"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895148"
 ---
 # <a name="set-up-your-eop-service"></a>Configurar un servicio de EOP
 
@@ -68,11 +68,11 @@ Después de configurar los conectores, espere 72 horas para que las actualizacio
 > [!TIP]
 > Establezca la configuración en el servidor SMTP con un tiempo de espera de conexión de 60 segundos. Esta configuración es aceptable en la mayoría de las situaciones, lo que permite un retraso en el caso de un mensaje enviado con datos adjuntos grandes, por ejemplo.
 
-## <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Paso 5: Usar el Shell para asegurarse de que el correo no deseado se enrute a la carpeta de correo electrónico no deseado de cada usuario
+## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Paso 5: asegurarse de que el correo no deseado se enruta a la carpeta de correo electrónico no deseado de cada usuario
 
-Para asegurarse de que el correo no deseado se enrute correctamente a la carpeta de correo no deseado de cada usuario, debe realizar varios pasos de configuración. Los pasos se proporcionan [para asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+Para asegurarse de que el correo no deseado se enrute correctamente a la carpeta de correo no deseado de cada usuario, debe realizar varios pasos de configuración. Los pasos se proporcionan en [Configure Standalone EOP para entregar el correo no deseado a la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-Si no desea mover mensajes a la carpeta de correo no deseado de cada usuario, puede elegir otra acción si modifica las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, consulte [Configure sus políticas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
+Si no desea mover mensajes a la carpeta de correo no deseado de cada usuario, puede elegir otra acción si modifica las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Paso 6: usar el centro de administración de Microsoft 365 para apuntar el registro MX a EOP
 

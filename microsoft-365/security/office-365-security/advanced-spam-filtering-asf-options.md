@@ -1,11 +1,11 @@
 ---
-title: Opciones avanzadas de filtrado de correo no deseado
+title: Configuración de ASF en Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,46 +15,83 @@ search.appverid:
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
-description: Las opciones avanzadas de filtrado de correo no deseado dan a los administradores la capacidad de inspeccionar distintos atributos de contenido de un mensaje. La presencia de dichos atributos en el mensaje ya sea aumenta la puntuación de correo no deseado del mensaje (lo cual aumenta la probabilidad de que se identifique como correo no deseado) o lo marca como correo no deseado. Las opciones de ASF se centran en propiedades de mensaje específicas, tales como las etiquetas HTML y el redireccionamiento de direcciones URL, las cuales se encuentran comúnmente en los mensajes de correo no deseado.
-ms.openlocfilehash: 07f2b32dac6ba4a04fbccac5f015be399f62e254
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: La configuración del filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) permite a los administradores identificar los mensajes que contienen propiedades de mensaje específicas que se suelen usar en el correo no deseado. En función de la propiedad, las detecciones ASF marcarán el mensaje como correo no deseado o correo no deseado de alta confianza.
+ms.openlocfilehash: e35279092e9d77b18eadd2af33909eda90bdd80b
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599967"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894257"
 ---
-# <a name="advanced-spam-filtering-options"></a>Opciones avanzadas de filtrado de correo no deseado
+# <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Configuración de filtro de correo no deseado (ASF) avanzada en Office 365
 
 > [!NOTE]
-> La configuración avanzada de filtro de correo no deseado de la Directiva contra correo no deseado actualmente está en desuso. Nuestra configuración recomendada para estas opciones es **desactivarlas.** Las funciones que estaban disponibles en el filtro de correo no deseado avanzado se están incorporando a otras partes de la pila de filtrado.
+> La configuración de ASF que está disponible actualmente en las directivas contra correo no deseado está en desuso. Le recomendamos que no use estas opciones en las directivas contra correo no deseado. La funcionalidad de esta configuración ASF se incorpora a otras partes de la pila de filtrado. Para obtener más información, vea [configuración de la Directiva contra correo no deseado de EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-Las opciones avanzadas de filtrado de correo no deseado dan a los administradores la capacidad de inspeccionar distintos atributos de contenido de un mensaje. La presencia de dichos atributos en el mensaje ya sea aumenta la puntuación de correo no deseado del mensaje (lo cual aumenta la probabilidad de que se identifique como correo no deseado) o lo marca como correo no deseado. Las opciones de ASF se centran en propiedades de mensaje específicas, tales como las etiquetas HTML y el redireccionamiento de direcciones URL, las cuales se encuentran comúnmente en los mensajes de correo no deseado.
-  
-La habilitación de las opciones ASF constituye un método agresivo de filtrado de correo no deseado y todos los mensajes que se filtran mediante estas opciones no pueden identificarse como falsos positivos. Estos mensajes pueden identificarse a través de notificaciones periódicas de correo no deseado de usuario final y recuperarse de la cuarentena de correo no deseado. También pueden identificarse a través del texto del encabezado X específico de cada opción ASF y que se muestra en el encabezado de Internet de los mensajes cuando se establece una coincidencia con una opción ASF. Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
-  
-Las opciones de ASF se pueden activar, desactivar o establecer en modo Prueba al modificar las directivas de filtro de contenido. Para obtener más información, consulte [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). El modo Prueba no está disponible para las opciones **Reenvío masivo de correo electrónico no deseado de NDR**, **Registro de SPF: error**, **Filtrado de id. del remitente condicional: error** y **Correo masivo**. 
-  
-La tabla siguiente describe cada una de las opciones avanzadas de filtrado de correo no deseado.
-  
+La configuración del filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) permite a los administradores marcar los mensajes como correo no deseado en función de las propiedades específicas del mensaje. ASF se destina específicamente a estas propiedades porque suelen encontrarse en el correo no deseado. En función de la propiedad, las detecciones ASF marcarán el mensaje como **correo no deseado** o **correo no deseado de alta confianza**.
+
+> [!NOTE]
+> La habilitación de una o varias opciones de ASF es un enfoque agresivo del filtrado de correo no deseado. No puede informar de mensajes filtrados por ASF como falsos positivos. Puede identificar mensajes filtrados por ASF: <ul><li>Notificaciones de cuarentena de correo no deseado para el usuario final periódico.</li><li>La presencia de mensajes filtrados en cuarentena.</li><li>Los campos `X-CustomSpam:` de encabezado X específicos que se agregan a los mensajes, tal y como se describe en este tema.</li></ul>
+
+En las siguientes secciones se describe la configuración y las opciones de ASF que están disponibles en las directivas contra correo no deseado en el centro de cumplimiento de & de seguridad de Office 365 y en Exchange Online PowerShell o PowerShell independiente de Exchange Online Protection ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) y [set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
+
+## <a name="enable-disable-or-test-asf-settings"></a>Habilitar, deshabilitar o probar la configuración de ASF
+
+Para cada configuración ASF, las siguientes opciones están disponibles en las directivas contra correo no deseado:
+
+- **On**: ASF agrega el campo de encabezado X correspondiente al mensaje y marca el mensaje como **correo no deseado** (SCL 5 o 6 para [aumentar la configuración de puntuación de correo no deseado](#increase-spam-score-settings)) o **correo no deseado de alta confianza** (SCL 9 para [marcarlo como correo no deseado](#mark-as-spam-settings)).
+
+- **Desactivado**: la configuración ASF está deshabilitada. Este es el valor predeterminado y le recomendamos que no lo cambie.
+
+- **Test**: ASF agrega el campo de encabezado X correspondiente al mensaje. El valor de **las opciones del modo de prueba** (*TestModeAction*) determina lo que ocurre con el mensaje:
+
+  - **Ninguno**: el enrutamiento y la entrega de mensajes no se ven afectados por la detección de ASF. El mensaje sigue sujeto a otros tipos de filtrado y reglas en EOP.
+
+  - **Agregar texto de encabezado X predeterminado (*AddXHeader*)**: el valor `X-CustomSpam: This message was filtered by the custom spam filter option` del encabezado x se agrega al mensaje. Puede usar este valor en reglas de la bandeja de entrada o en reglas de flujo de correo (también conocidas como reglas de transporte) para afectar a la distribución y la entrega del mensaje.
+
+  - **Enviar mensaje CCO (*BccMessage*)**: las direcciones de correo electrónico especificadas (el valor del parámetro *TestModeBccToRecipients* en PowerShell) se agregan al campo BCC del mensaje y el mensaje se entrega a los destinatarios CCO. En el centro de seguridad & cumplimiento de Office 365, separe varias direcciones de correo electrónico con punto y coma (;). En PowerShell, se separan varias direcciones de correo electrónico por comas.
+
+  **Notas**:
+
+  - El modo de prueba no está disponible para los siguientes valores de ASF:
+
+    - **Filtrado de identificador de remitente condicional: error grave** (*MarkAsSpamFromAddressAuthFail*)
+
+    - **Retrodispersión de NDR**(*MarkAsSpamNdrBackscatter*)
+
+    - **Registro de SPF: error grave** (*MarkAsSpamSpfRecordHardFail*)
+
+  - Se aplica la misma acción de modo de prueba a *todos los* valores de ASF establecidos para la **prueba**. No se pueden configurar distintas acciones del modo de prueba para la configuración de ASF diferente.
+
+## <a name="increase-spam-score-settings"></a>Aumentar la configuración de la puntuación de correo no deseado
+
+La siguiente configuración ASF establece el nivel de confianza contra correo no deseado (SCL) de los mensajes detectados en 5 o 6, que corresponde al veredicto del filtro de **correo no deseado** y a la acción correspondiente en las directivas contra correo no deseado.
+
 ||||
 |:-----|:-----|:-----|
-|**Opción avanzada de filtrado de correo no deseado** <br/> |**Descripción** <br/> |**texto de encabezado X** <br/> |
-|**Sección Incrementar puntuación de correo no deseado** <br/> |Estas opciones, si se habilitan, establecen en 5 o 6 el nivel de confianza contra correo no deseado (SCL) de los mensajes que coinciden, lo cual se considera sospechoso de correo no deseado. La acción realizada en el mensaje coincidirá con la configuración **Correo no deseado** de su directiva de filtrado de contenido.<br/> ||
-|Vínculos de imagen a sitios remotos  <br/> |Cuando se habilite esta opción, cualquier mensaje con contenido HTML que tenga una etiqueta IMG que se vincule de manera remota (por ejemplo, mediante http) recibirá una puntuación de correo no deseado elevada.  <br/> |X-CustomSpam: Vínculos de imagen a sitios remotos  <br/> |
-|Dirección IP numérica en URL  <br/> |Cuando está configuración está habilitada, los mensajes que tengan direcciones URL basadas en números (la mayoría en formato de dirección IP) recibirán una mayor puntuación de correo no deseado.  <br/> |X-CustomSpam: IP numérica en URL  <br/> |
-|Redireccionamiento de direcciones URL a otro puerto  <br/> |Cuando esta configuración está habilitada, los mensajes que contengan un hipervínculo que redirige al usuario a puertos que no sean el puerto 80 (puerto regular de protocolo HTTP), el puerto 8080 (puerto HTTP alternativo) o el puerto 443 (puerto HTTPS) recibirán una mayor puntuación de correo no deseado.  <br/> |X-CustomSpam: Redireccionamiento de direcciones URL a otro puerto  <br/> |
-|Dirección URL de sitios web .biz o .info  <br/> |Cuando esta configuración está habilitada, los mensajes que contengan una extensión .biz o .info en el cuerpo del mensaje recibirán una mayor puntuación de correo no deseado.  <br/> |X-CustomSpam: Dirección URL de sitios web .biz o .info  <br/> |
-|**Sección Marcar como correo no deseado** <br/> |Estas opciones, si se habilitan, establecen en 9 el nivel de confianza contra correo no deseado (SCL) de los mensajes que coinciden, lo cual se considera correo no deseado. La acción realizada en el mensaje coincidirá con la configuración **Correo no deseado de confianza alta** de su directiva de filtrado de contenido.<br/> ||
-|Mensajes vacíos  <br/> |Cuando esta configuración está habilitada, los mensajes en los que el cuerpo y la línea de asunto estén vacíos, y que tampoco tienen datos adjuntos, se marcarán como correo no deseado.  <br/> |X-CustomSpam: Mensaje vacío  <br/> |
-|JavaScript o VBScript en HTML  <br/> |Cuando esta configuración está habilitada, cualquier mensaje que utilice JavaScript o Visual Basic Script Edition en HTML se marcará como correo no deseado. Ambos lenguajes de scripting se utilizan en mensajes HTML para provocar que se realice una acción específica automáticamente. El explorador analiza y procesa el script junto con el resto del documento.  <br/> |X-CustomSpam: Etiquetas Javascript o VBscript en HTML  <br/> |
-|Etiquetas Frame o IFrame en HTML  <br/> |Cuando esta configuración está habilitada, cualquier mensaje que contenga la etiqueta HTML \<Frame\> o \<IFrame\> se marcará como correo no deseado. Esas etiquetas se utilizan en sitios web o en mensajes HTML para formatear la página a fin de mostrar texto o gráficos.  <br/> |X-CustomSpam: IFRAME o FRAME en HTML  <br/> |
-|Etiquetas Object en HTML  <br/> |Cuando esta configuración está habilitada, cualquier mensaje que contenga la etiqueta HTML \<Object\> se marcará como correo no deseado. Esa etiqueta HTML permite que los complementos o las aplicaciones se ejecuten en una ventana de HTML.  <br/> |X-CustomSpam: Etiqueta Object en HTML  <br/> |
-|Etiquetas Embed en HTML  <br/> |Cuando esta configuración está habilitada, cualquier mensaje que contenga la etiqueta HTML \<Embed\> se marcará como correo no deseado. Esa etiqueta HTML permite que se incluyan distintas clases de documentos de diversos tipos de datos en un documento HTML. Por ejemplo, sonidos, películas o imágenes.  <br/> |X-CustomSpam: Etiqueta Embed en HTML  <br/> |
-|Etiquetas Form en HTML  <br/> |Cuando esta configuración está habilitada, cualquier mensaje que contenga la etiqueta HTML \<Form\> se marcará como correo no deseado. Esa etiqueta HTML se utiliza para crear formularios en sitios web. Los anuncios en correo electrónico a menudo incluyen esa etiqueta con el fin de solicitar información del destinatario.  <br/> |X-CustomSpam: Etiqueta Form en HTML  <br/> |
-|Errores web en HTML  <br/> |Cuando esta configuración está habilitada, cualquier mensaje que contenga un error web se marcará como correo no deseado. El error web es un gráfico que se ha diseñado para determinar si se ha leído una página web o un mensaje de correo electrónico. A menudo, el destinatario no percibe los errores web debido a que por lo general se agregan al mensaje a modo de gráfico con una dimensión diminuta como de un píxel por un píxel. Los boletines electrónicos legítimos también pueden utilizar esa técnica, aunque para muchos constituye una invasión de la privacidad.  <br/> |X-CustomSpam: Error de Internet  <br/> |
-|Aplicar lista de palabras confidenciales  <br/> |Cuando esta configuración está habilitada, cualquier mensaje que contenga una palabra de la lista de palabras confidenciales se marcará como correo no deseado. El uso de la lista de palabras confidenciales permite el fácil bloqueo de palabras asociadas con mensajes posiblemente ofensivos. Algunas de esas palabras distinguen mayúsculas de minúsculas. Como administrador, no puede editar esa lista. El filtrado con la lista de palabras confidenciales se aplica tanto al tema como al cuerpo del mensaje.  <br/> |X-CustomSpam: Palabra confidencial en asunto/cuerpo  <br/> |
-|Registro de SPF: error|Si se habilita esta configuración, los mensajes que no superen una comprobación SPF (es decir, que se enviaron desde una dirección IP que no está especificada en el registro SPF) se marcarán como correo no deseado. Si a la organización le preocupa la suplantación de identidad (phishing), es recomendable que se active esta opción.  <br/> <br/> El modo de prueba no está disponible para esta opción.  <br/> |X-CustomSpam: Error de registro SPF  <br/> |
-|Filtrado de identificador del remitente condicional: error  <br/> |Cuando esta configuración está habilitada, cualquier mensaje que no pase una comprobación de identificador de remitente condicional se marcará como correo no deseado. Esta opción combina una verificación de SPF con una verificación del identificador del remitente con el fin de ayudar a proteger en contra de los encabezados de mensaje que contengan remitentes falsificados.  <br/> <br/> El modo de prueba no está disponible para esta opción.  <br/> |X-CustomSpam: Error SPF de registro  <br/> |
-|Reenvío masivo de correo electrónico no deseado de NDR  <br/> |Si está usando EOP para proteger buzones locales, al estar habilitada esta configuración, todos los mensajes legítimos de informe de no entrega (NDR) se entregan al remitente original, y todos los mensajes de reenvío masivo de correo electrónico no deseado (NDR ilegítimo) se marcarán como correo no deseado. Si no habilita esta configuración, todos los NDR aún pasan por el filtrado de correo no deseado. En este caso, la mayoría de mensajes legítimos se entregará al remitente original, mientras que otros, pero no todos, mensajes de reenvío masivo de correo electrónico no deseado se marcarán como correo no deseado. En cambio, los mensajes de reenvío masivo de correo electrónico no deseado que no se marquen como correo no deseado no irán al remitente original porque irán al remitente suplantado.  <br/> <br/> Si está usando el servicio para proteger buzones de Exchange Online hospedados en la nube, no necesitará realizar esta configuración.  <br/><br/> Para ambos escenarios (buzones de correo locales y hospedados en la nube), tampoco es necesario habilitar esta configuración para el correo saliente enviado a través del servicio, ya que los NDR que son mensajes de devolución de mensajes legítimos se detectarán automáticamente y se entregarán al remitente original. . >  El modo de prueba no está disponible para esta opción.           <br/><br/>Sugerencia: para obtener más información acerca de los mensajes de reenvío masivo y EOP, vea [mensajes de reenvío masivo y EOP](backscatter-messages-and-eop.md).           |X-CustomSpam: Reenvío masivo de correo no deseado de NDR  <br/> |
-|Correo masivo|Las opciones avanzadas de filtrado de correo no deseado en correo masivo se han retirado y se han reemplazado por opciones de umbral de correo electrónico masivo. Vea [¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md) y [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) para obtener más información y ver cómo configurar las opciones.  |X-CustomSpam: correo masivo | Correo masivo  <br/> |
+|**Configuración de la Directiva contra correo no deseado**|**Descripción**|**Encabezado X agregado**|
+|**Vínculos de imagen a sitios remotos** <br/><br/> *IncreaseScoreWithImageLinks*|Los mensajes que `<Img>` contienen vínculos de etiquetas HTML a sitios remotos (por ejemplo, mediante http) se marcan como correo no deseado.|`X-CustomSpam: Image links to remote sites`|
+|**Redireccionamiento de direcciones URL a otro puerto** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Los mensajes que contienen hipervínculos que se redirigen a puertos TCP distintos de 80 (HTTP), 8080 (HTTP alternativo) o 443 (HTTPS) se marcan como correo no deseado.|`X-CustomSpam: URL redirect to other port`|
+|**Dirección IP numérica en URL** <br/><br/> *IncreaseScoreWithNumericIps*|Los mensajes que contienen direcciones URL basadas en números (normalmente, direcciones IP) se marcan como correo no deseado.|`X-CustomSpam: Numeric IP in URL`|
+|**Dirección URL de sitios web .biz o .info** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|Los mensajes que contienen vínculos. BIZ o. info en el cuerpo del mensaje se marcan como correo no deseado.|`X-CustomSpam: URL to .biz or .info websites`|
+|
+
+## <a name="mark-as-spam-settings"></a>Marcar como configuración de correo no deseado
+
+La siguiente configuración ASF establece el SCL de los mensajes detectados en 9, que corresponde al filtro de **correo no deseado de confianza alta** y a la acción correspondiente en las directivas contra correo no deseado.
+
+||||
+|:-----|:-----|:-----|
+|**Configuración de la Directiva contra correo no deseado**|**Descripción**|**Encabezado X agregado**|
+|**Mensajes vacíos** <br/><br/> *MarkAsSpamEmptyMessages*|Los mensajes sin asunto, sin contenido en el cuerpo del mensaje y sin datos adjuntos, no se marcan como correo no deseado de confianza alta.|`X-CustomSpam: Empty Message`|
+|**JavaScript o VBScript en HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Los mensajes que utilizan JavaScript o Visual Basic Script Edition en HTML están marcados como correo no deseado de alta confianza. <br/><br/> Estos lenguajes de scripting se usan en los mensajes de correo electrónico para que se produzcan acciones específicas automáticamente.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
+|**Etiquetas Frame o IFrame en HTML** <br><br/> *MarkAsSpamFramesInHtml*|Los mensajes que `<frame>` contienen `<iframe>` o etiquetas HTML están marcados como correo no deseado de confianza alta. <br/><br/> Estas etiquetas se usan en los mensajes de correo electrónico para dar formato a la página para mostrar texto o gráficos.|`X-CustomSpam: IFRAME or FRAME in HTML`|
+|**Etiquetas Object en HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|Los mensajes que `<object>` contienen etiquetas HTML se marcan como correo no deseado de confianza alta. <br/><br/> Esta etiqueta permite ejecutar complementos o aplicaciones en una ventana HTML.|`X-CustomSpam: Object tag in html`|
+|**Etiquetas Embed en HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Los mensajes que `<embed>` contienen etiquetas HTML están marcados como correo no deseado de confianza alta. <br/><br/> Esta etiqueta permite la incrustación de distintos tipos de documentos de distintos tipos de datos en un documento HTML (por ejemplo, sonidos, películas o imágenes).|`X-CustomSpam: Embed tag in html`|
+|**Etiquetas Form en HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|Los mensajes que `<form>` contienen etiquetas HTML se marcan como correo no deseado de confianza alta. <br/><br/> Esta etiqueta se usa para crear formularios de sitios Web. Los anuncios en correo electrónico a menudo incluyen esa etiqueta con el fin de solicitar información del destinatario.|`X-CustomSpam: Form tag in html`|
+|**Errores web en HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Un *Web Bug* (también conocido como *baliza web*) es un elemento gráfico (a menudo con un tamaño de un píxel en un píxel) que se usa en los mensajes de correo electrónico para determinar si se leyó el mensaje. <br/><br/> Los mensajes que contienen Web bugs están marcados como correo no deseado de confianza alta. <br/><br/> Los boletines legítimos podrían usar bugs Web, aunque muchos consideran la invasión de la privacidad. |`X-CustomSpam: Web bug`|
+|**Aplicar lista de palabras confidenciales** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft mantiene una lista de palabras dinámicas pero no editables que están asociadas a mensajes potencialmente ofensivos. <br/><br/> Los mensajes que contienen palabras de la lista de palabras confidenciales en el asunto o el cuerpo del mensaje están marcados como correo no deseado de alta confianza.|`X-CustomSpam: Sensitive word in subject/body`|
+|**Registro de SPF: error** <br><br/> *MarkAsSpamSpfRecordHardFail*|Los mensajes enviados desde una dirección IP que no se especifica en el registro de marco de directivas de remitente (SPF) de SPF en DNS para el dominio de correo electrónico de origen se marcan como correo no deseado de confianza alta. <br/><br/> El modo de prueba no está disponible para esta opción.|`X-CustomSpam: SPF Record Fail`|
+|**Filtrado de identificador del remitente condicional: error** <br><br/> *MarkAsSpamFromAddressAuthFail*|Mensajes que un error grave se marca una comprobación de identificador de remitente condicional como correo no deseado. <br/><br/> Esta opción combina una comprobación SPF con una comprobación del identificador de remitente para ayudar a protegerse contra los encabezados de mensaje que contienen remitentes falsificados. <br/><br/> El modo de prueba no está disponible para esta opción.|`X-CustomSpam: SPF From Record Fail`|
+|**Reenvío masivo de correo electrónico no deseado de NDR** <br><br/> *MarkAsSpamNdrBackscatter*|La *indispersión* es inútil los informes de no entrega (también conocidos como NDR o mensajes de devolución) causados por los remitentes falsificados en mensajes de correo electrónico. Para obtener más información, vea [mensajes de reenvío masivo y EOP](backscatter-messages-and-eop.md). <br/><br/> No es necesario configurar esta opción en los siguientes entornos, ya que se entregan NDR legítimos y la dispersión se marca como correo no deseado: <ul><li>Office 365 organizaciones con buzones de correo de Exchange Online.</li><li>Organizaciones de correo electrónico locales donde enrutar el correo electrónico *saliente* a través de EOP.</li></ul><br/> En entornos de EOP independientes que protegen el correo electrónico entrante a los buzones locales, activar o desactivar esta configuración tiene el siguiente resultado: <ul><li> **On**: se entregan NDR legítimos y la dispersión se marca como correo no deseado.</li><li>**Desactivado**: los NDR legítimos y el indispersión pasan por el filtrado de correo no deseado normal. La mayoría de los NDR legítimos se entregarán al remitente del mensaje original. Algunas, pero no todas, la dispersión se marcan como correo no deseado de confianza alta. Por definición, la función de multidifusión solo se puede entregar al remitente suplantado, no al remitente original.</li></ul><br/> El modo de prueba no está disponible para esta opción.|`X-CustomSpam: Backscatter NDR`|
 |

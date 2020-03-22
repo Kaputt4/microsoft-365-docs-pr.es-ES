@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: El registro de auditoría de buzones de correo está activado de forma predeterminada en Office 365 (también denominado auditoría de buzones de correo predeterminada o auditoría de buzones de correo de forma predeterminada). Esto significa que determinadas acciones realizadas por los propietarios de buzones de correo, los delegados y los administradores se registran automáticamente en un registro de auditoría de buzones de correo, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: 6a1c435ca3be16ef2f4926cce56afe180c576f15
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2b69d63e63e049566c9827f08d2ead592b918684
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634968"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894925"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -107,7 +107,7 @@ En la tabla siguiente se describen las acciones de buzón de correo que están d
 |**AddFolderPermissions**|**Nota**: aunque este valor se acepta como una acción de buzón de correo, ya está incluido en la acción **UpdateFolderPermissions** y no se audita por separado. Es decir, no use este valor.||||
 |**ApplyRecord**|Un elemento se etiqueta como registro.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Copiar**|Un mensaje se copió en otra carpeta.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**Crear**|Se ha creado un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo (por ejemplo, se crea una nueva convocatoria de reunión). Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta del buzón.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Crear**|Se ha creado un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo (por ejemplo, se crea una nueva convocatoria de reunión). No se audita la creación, el envío ni la recepción de un mensaje. Además, no se audita la creación de una carpeta del buzón.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Default**||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|Se tuvo acceso a una carpeta de buzón de correo. Esta acción también se registra cuando el administrador o un delegado abren el buzón de correo.<br/><br/> **Nota**: los registros de auditoría para las acciones de enlace de carpeta realizadas por los delegados están consolidados. Se genera un registro de auditoría para el acceso a la carpeta individual en un período de 24 horas.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -141,7 +141,7 @@ Recuerde que un administrador con permiso de acceso total a un buzón de grupo d
 
 |**Acción del buzón**|**Descripción**|**Administrador**|**Delegado**|**Propietario**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**Crear**|Creación de un elemento de calendario. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**Crear**|Creación de un elemento de calendario. No se audita la creación, el envío ni la recepción de un mensaje.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MoveToDeletedItems**|Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|Un mensaje se ha enviado con el permiso Enviar como.|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
@@ -167,7 +167,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 El valor `Admin, Delegate, Owner` indica:
 
-- Las acciones predeterminadas de buzón para los tres tipos de inicio de sesión se están auditando. Tenga en cuenta que este es el único valor que verá en buzones de grupo de Office 365.
+- Las acciones predeterminadas de buzón para los tres tipos de inicio de sesión se están auditando. Este es el único valor que verá en los buzones de grupo de Office 365.
 
 - Un administrador *no ha* cambiado las acciones del buzón auditado para ningún tipo de inicio de sesión en un buzón de usuario o un buzón compartido. Nota: este es el estado predeterminado después de que la auditoría de buzones de correo está activada de forma predeterminada en la organización.
 
@@ -343,8 +343,11 @@ El valor **true** indica que el registro de auditoría de buzones de correo se o
 
   Para recuperar las entradas del registro de auditoría de buzones de correo de los usuarios sin licencias de E5, puede:
 
-  - Use las búsquedas del registro de auditoría en el centro de seguridad & cumplimiento o a través de la API de actividad de administración de Office 365 **después** de haber habilitado manualmente la auditoría de buzones en los buzones individuales.
-
+  - Habilite manualmente la auditoría de buzones de correo en buzones individuales ( `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`ejecute el comando). Después de hacerlo, puede usar las búsquedas del registro de auditoría en el centro de seguridad & cumplimiento o a través de la API de actividad de administración de Office 365.
+  
+    > [!NOTE]
+    > Si la auditoría de buzones de correo ya está habilitada en el buzón de correo, pero las búsquedas no devuelven resultados, cambie `$false` el valor del parámetro `$true` _AuditEnabled_ a y, a continuación, otra vez a.
+  
   - Use los cmdlets siguientes en Exchange Online PowerShell:
 
     - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) para buscar en el registro de auditoría de buzones de correo de determinados usuarios.
@@ -387,3 +390,5 @@ El valor **true** indica que el registro de auditoría de buzones de correo se o
     - No se puede tener acceso directamente a un registro de auditoría en la carpeta elementos recuperables; en su lugar, use el cmdlet **Search-MailboxAuditLog** o busque en el registro de auditoría de Office 365 para buscar y ver registros de auditoría de buzón de correo.
 
 - Si un buzón se coloca en suspensión o se asigna a una directiva de retención en el centro de cumplimiento, las entradas del registro de auditoría se conservan durante el tiempo definido por la propiedad *AuditLogAgeLimit* del buzón (90 días de forma predeterminada). Para conservar los registros de auditoría más largas para los buzones en retención, debe aumentar el valor de *AuditLogAgeLimit* del buzón.
+
+- En un entorno multigeográfico, no se admite la auditoría entre buzones de correo geográficas. Por ejemplo, si se asignan permisos a un usuario para obtener acceso a un buzón compartido en una ubicación geográfica distinta, las acciones de buzón realizadas por ese usuario no se registran en el registro de auditoría de buzón del buzón compartido.

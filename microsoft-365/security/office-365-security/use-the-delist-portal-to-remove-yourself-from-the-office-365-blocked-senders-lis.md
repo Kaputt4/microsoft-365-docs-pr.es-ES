@@ -16,12 +16,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Office 365? Si cree que no debería recibir este mensaje de error, use el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365.
-ms.openlocfilehash: 3e131addb391ecbf90d74ad4fdfa65b802c5e1ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081969"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895088"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
 
@@ -58,4 +58,4 @@ _IP address_ es la dirección IP del equipo en el que se ejecuta el servidor de 
     > [!NOTE]
     > Puede tardar hasta 24 horas o los resultados pueden variar ampliamente antes de que se eliminen las restricciones.
 
-Obtenga información sobre [Cómo evitar que el correo electrónico real se marque como correo no deseado en office 365 y cómo controlar el](prevent-email-from-being-marked-as-spam.md ) [correo no deseado saliente en Office 365](outbound-spam-controls.md) para evitar que IP quede en la lista negra.
+Consulte [crear listas de remitentes seguros en office 365](create-safe-sender-lists-in-office-365.md) y la [protección contra correo no deseado saliente en Office 365](outbound-spam-controls.md) para impedir que IP quede en la lista negra.

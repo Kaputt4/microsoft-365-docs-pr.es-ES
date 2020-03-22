@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7ab3f63008c65fca1a99128cc6f11f83bc86b2b4
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1dfb567c8e6b8573397d503ae27c0aceb447c916
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857699"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895468"
 ---
-# <a name="machine-profile-page"></a>Página de Perfil de equipo
+# <a name="machine-profile-page"></a>Página de perfil de equipo
 
 El portal de seguridad 365 de Microsoft proporciona páginas de Perfil de equipo, para que pueda evaluar el estado y el estado de los dispositivos de la red. Cada página de Perfil de la máquina contiene una gran cantidad de información sobre el dispositivo.
 
@@ -29,9 +29,7 @@ También puede usar el perfil del equipo para realizar tareas comunes relacionad
 
 ## <a name="navigating-the-machine-profile-page"></a>Navegación por la página de Perfil de la máquina
 
-Para obtener acceso a la página de Perfil de equipo, seleccione directamente un nombre de dispositivo en la lista de equipos o elija **abrir página de máquina** en el control flotante de la lista de equipos.
-
-Una vez que tenga abierta la página, descubrirá que está dividida en tres secciones.
+La página de perfil del equipo se divide en tres secciones.
 
 ![Imagen de la página Perfil de la máquina con (1) área de la ficha (2) sidebar y (3) acciones resaltadas en rojo](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 

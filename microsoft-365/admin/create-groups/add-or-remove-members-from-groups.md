@@ -1,8 +1,7 @@
 ---
 title: Agregar o quitar miembros de los grupos de Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -21,31 +20,25 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Obtenga información sobre cómo agregar un miembro a un grupo, quitar un miembro del grupo y administrar el estado del propietario del grupo en el centro de administración de Microsoft 365.
-ms.openlocfilehash: b2c6e33be368dc08893d27ef291bb801b784bb98
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245523"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894716"
 ---
 # <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a>Agregar o quitar miembros de los grupos de Office 365 mediante el centro de administración
 
-::: moniker range="o365-worldwide"
+En Office 365, los miembros del grupo normalmente crean sus propios grupos, se agregan a sí mismos a los grupos a los que quieren unirse o son invitados por los propietarios del grupo. Si cambia la propiedad de un grupo o si determina que se debe agregar o quitar un miembro, como administrador también puede realizar ese cambio. Solo un administrador global, un administrador de Exchange, un administrador de grupos o un administrador de usuarios pueden realizar estos cambios. [¿Qué es un grupo de Office 365?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio. 
-
-::: moniker-end
-
-En Office 365, los miembros del grupo suelen crear sus propios grupos, se agregan a sí mismos a grupos a los que desean unirse o son invitados por los propietarios del grupo. Si el grupo cambia de propietario o si usted determina que un miembro se debe agregar o quitar, como administrador también puede hacer ese cambio. Solo un administrador global, un administrador de Exchange, un administrador de grupos o un administrador de usuarios pueden realizar estos cambios. [¿Qué es un grupo de Office 365?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
-  
- **Sugerencia**: Si no es administrador, puede [Agregar o quitar miembros mediante Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx). 
+> [!TIP]
+> Si no es administrador, puede [Agregar o quitar miembros mediante Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx). 
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Agregar un miembro a un grupo en el centro de administración
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.  
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.  
     
 2. Seleccione un nombre de grupo.
     
@@ -53,13 +46,13 @@ En Office 365, los miembros del grupo suelen crear sus propios grupos, se agrega
       
 4. Busque o seleccione el nombre del miembro que desee agregar.
     
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
     
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.  
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.  
     
 2. Seleccione un nombre de grupo.
     
@@ -67,13 +60,13 @@ En Office 365, los miembros del grupo suelen crear sus propios grupos, se agrega
       
 4. Busque o seleccione el nombre del miembro que desee agregar.
     
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.  
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.  
     
 2. Seleccione un nombre de grupo.
     
@@ -81,7 +74,7 @@ En Office 365, los miembros del grupo suelen crear sus propios grupos, se agrega
       
 4. Busque o seleccione el nombre del miembro que desee agregar.
     
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
@@ -125,7 +118,7 @@ En Office 365, los miembros del grupo suelen crear sus propios grupos, se agrega
       
 4. Busque o seleccione el nombre del grupo que desea agregar.
     
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
@@ -138,7 +131,7 @@ En Office 365, los miembros del grupo suelen crear sus propios grupos, se agrega
  
 ::: moniker range="o365-worldwide"
  
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. Seleccione un nombre de grupo.
     
@@ -152,7 +145,7 @@ En Office 365, los miembros del grupo suelen crear sus propios grupos, se agrega
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. Seleccione un nombre de grupo.
     
@@ -166,7 +159,7 @@ En Office 365, los miembros del grupo suelen crear sus propios grupos, se agrega
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. Seleccione un nombre de grupo.
     
@@ -186,7 +179,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. Seleccione un nombre de grupo.
     
@@ -202,7 +195,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. Seleccione un nombre de grupo.
 
@@ -218,7 +211,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. Seleccione un nombre de grupo.
 
@@ -236,7 +229,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. Seleccione un nombre de grupo.
     
@@ -244,13 +237,13 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
     
 5. Seleccione la X junto al nombre del propietario. 
     
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. Seleccione un nombre de grupo.
     
@@ -258,13 +251,13 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
     
 5. Seleccione la X junto al nombre del propietario. 
     
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. Seleccione un nombre de grupo.
     
@@ -272,7 +265,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
     
 5. Seleccione la X junto al nombre del propietario. 
     
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
 ::: moniker-end
 

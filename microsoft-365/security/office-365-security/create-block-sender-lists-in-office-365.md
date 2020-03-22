@@ -2,66 +2,69 @@
 title: Crear listas de remitentes bloqueados en Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/6/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: Las opciones de la lista bloquear remitente incluyen los remitentes bloqueados de Outlook, los remitentes de correo no deseado y las listas de bloqueo de dominio, las listas de direcciones IP bloqueadas y las reglas de flujo de correo de Exchange (reglas de transporte).
-ms.openlocfilehash: fb5228bca7ac0c98a2aafd9d7b582e370698649a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Los administradores pueden obtener información sobre las opciones disponibles en Office 365 y EOP para bloquear los mensajes entrantes.
+ms.openlocfilehash: a588c9c869dae39ab60fc7ad68b6496f57ae015a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599547"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893867"
 ---
-# <a name="create-block-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados en Office 365
+# <a name="create-blocked-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados en Office 365
 
-A veces es necesario bloquear el correo no deseado de los remitentes. Hay varios métodos disponibles para elegir. Estas opciones incluyen los remitentes bloqueados de Outlook, los remitentes de correo no deseado y las listas de bloqueados de dominios, las listas de direcciones IP bloqueadas y las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte).
+Si es un cliente de Office 365 con buzones en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece varias formas de bloquear el correo electrónico de remitentes no deseados. Estas opciones incluyen a los remitentes bloqueados de Outlook, las listas de remitentes bloqueados o las listas de dominios bloqueados en directivas contra correo no deseado, reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y la lista de direcciones IP bloqueadas (filtrado de conexiones). De forma colectiva, puede considerar estas opciones como _listas de remitentes bloqueados_.
+
+El mejor método para bloquear a los remitentes varía en el ámbito del impacto. Para un solo usuario, la solución correcta podría ser remitentes bloqueados de Outlook. Para muchos usuarios, una de las otras opciones sería más adecuada. Las siguientes opciones están ordenadas por ámbito y amplitud de impacto. La lista va de estrecho a amplio, pero *Lea los detalles específicos* para obtener recomendaciones completas.
+
+1. Remitentes bloqueados de Outlook (la lista de remitentes bloqueados que se almacena en cada buzón de correo)
+
+2. Listas de remitentes bloqueados o listas de dominios bloqueados (directivas contra correo no deseado)
+
+3. Reglas de flujo de Mai
+
+4. La lista de direcciones IP bloqueadas (filtrado de la conexión)
 
 > [!NOTE]
-> Mientras que las listas de bloqueo de organización se pueden usar para solucionar falsos negativos (correo no deseado), estos candidatos también deben enviarse a Microsoft para su análisis. Administrar los falsos negativos mediante listas de bloqueo aumenta considerablemente la sobrecarga administrativa. Si va a usar una lista de bloqueados para este propósito, también tendrá que mantener el artículo para [enviar mensajes de correo no deseado, correo no deseado y estafas de suplantación de identidad a Microsoft para su análisis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), en la lista desplegable.
+> Aunque puede usar la configuración de bloqueo de toda la organización para dirigirse a falsos negativos (correo no deseado), también debe enviar esos mensajes a Microsoft para su análisis. Administrar los falsos negativos mediante listas de bloqueo aumenta considerablemente la sobrecarga administrativa. Si usa listas de bloqueo para desviar el correo no deseado, debe conservar el tema para [enviar mensajes de correo no deseado, correo no deseado y estafas de suplantación de identidad a Microsoft para su análisis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), en la lista desplegable.
 
-El método adecuado para configurar listas de remitentes bloqueados varía en función del ámbito del impacto. Para un solo impacto en el usuario, la solución correcta puede ser usar remitentes bloqueados de Outlook, pero si se ven afectados varios usuarios o todos los usuarios, una de las otras opciones sería más adecuada.
-
-## <a name="options-from-least-to-broadest-scope"></a>Opciones de menor a mayor ámbito
-
-Al crear una lista de bloqueados, es importante elegir el método adecuado en función del alcance del impacto (cuántas personas se verán afectadas), de modo que coincida con la amplitud del método de bloqueo. Las opciones que se enumeran a continuación están ordenadas por ámbito y amplitud. La lista va de estrecho a amplio, pero *Lea los detalles específicos* para obtener recomendaciones completas.
-
-- Remitentes bloqueados de Outlook
-- Directiva contra correo no deseado: listas de bloqueo de remitente/dominio
-- Reglas de flujo de correo de Exchange
-- Directiva contra correo no deseado: listas de direcciones IP bloqueadas
+Por el contrario, también tiene varias opciones para permitir siempre el correo electrónico de orígenes específicos mediante _listas de remitentes seguros_. Para obtener más información, vea [crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).
 
 ## <a name="use-outlook-blocked-senders"></a>Usar los remitentes bloqueados de Outlook
 
-Cuando solo se ven afectados un pequeño número de usuarios, es necesario usar los remitentes bloqueados de Outlook, ya que esto sólo afectará al correo que se les envíe.
+Cuando sólo un pequeño número de usuarios reciben correo electrónico no deseado, los usuarios o los administradores pueden agregar las direcciones de correo electrónico de los remitentes a la lista de remitentes bloqueados en el buzón. Para obtener instrucciones, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-> [!IMPORTANT]
-> Si los mensajes no deseados son boletines de un origen fiable y reconocible, la cancelación del correo electrónico es otra opción para impedir que el usuario obtenga los correos electrónicos en el futuro.
+Cuando los mensajes se bloquean correctamente debido a la lista de remitentes bloqueados de un usuario, el campo de encabezado **X-Forefront-antispam-Report** contendrá el valor `SFV:BLK`.
 
-Los pasos para configurar esto son diferentes entre [Outlook en la web](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) y el [cliente de Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Cuando los mensajes se bloquean correctamente debido a los remitentes bloqueados, verá SFV: BLK en el X-Forefront-antispam-Report** , que indica que el mensaje se está bloqueando.
+> [!NOTE]
+> Si los mensajes no deseados son boletines de un origen fiable y reconocible, la cancelación del correo electrónico es otra opción para impedir que el usuario reciba los mensajes.
 
-## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Usar la Directiva contra correo no deseado listas de bloqueo de remitente/dominio
+## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Usar listas de remitentes bloqueados o listas de dominios bloqueados
 
-Cuando se ven afectados varios usuarios, el ámbito es más amplio y es necesario usar una directiva de bloqueo de correo no deseado de lista de remitentes/dominios en toda la empresa. Los pasos detallados se pueden encontrar en [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). Cualquier mensaje bloqueado mediante este método seguirá la acción de correo no deseado, tal como se ha configurado en la Directiva.
+Cuando se ven afectados varios usuarios, el ámbito es más amplio, por lo que la siguiente mejor opción son las listas de remitentes bloqueados o las listas de dominios bloqueados en las directivas contra correo no deseado. Los mensajes de los remitentes de las listas se marcan como **correo no deseado**y se toma la acción que haya configurado para el filtro de **correo no deseado** en el mensaje. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
 El límite máximo de estas listas es de aproximadamente 1000 entradas; Aunque solo podrá especificar 30 entradas en el portal. Debe usar PowerShell para agregar más de 30 entradas.
 
-## <a name="use-exchange-mail-flow-rules-specific-senders"></a>Usar remitentes específicos de reglas de flujo de correo de Exchange
+## <a name="use-mail-flow-rules"></a>Usar reglas de flujo de correo
 
-Si necesita bloquear mensajes para que no se envíen a usuarios específicos o en toda la organización, puede usar reglas de flujo de correo. Las reglas de flujo de correo son más flexibles porque pueden desencadenar la dirección de correo electrónico o el dominio del remitente, así como palabras clave y otras propiedades del mensaje. Esta flexibilidad le permitirá crear bloques parciales para completar. Para obtener más información acerca de las reglas de flujo de correo, consulte [usar reglas de flujo de correo para establecer el SCL en los mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+Si necesita bloquear los mensajes que se envían a usuarios específicos o en toda la organización, puede usar reglas de flujo de correo. Las reglas de flujo de correo son más flexibles que las listas de remitentes bloqueados o las listas de dominios de remitentes bloqueados, ya que también pueden buscar palabras clave u otras propiedades en los mensajes no deseados.
+
+Independientemente de las condiciones o excepciones que use para identificar los mensajes, configure la acción para establecer el nivel de confianza contra correo no deseado (SCL) del mensaje en 9, que marca el mensaje como un **correo no deseado de alta confianza**. Para obtener más información, vea [usar reglas de flujo de correo para establecer el SCL en los mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
 > [!IMPORTANT]
-> Es fácil crear reglas *excesivamente* agresivas, por lo tanto, es importante que los criterios que se usen sean tan específicos como sea posible. Además, asegúrese de habilitar la auditoría de la regla que cree y realice pruebas para asegurarse de que todo funciona según lo esperado.
+> Es fácil crear reglas *excesivamente* agresivas, por lo que es importante que identifique solo los mensajes que desea bloquear usando el uso de criterios muy específicos. Además, asegúrese de habilitar la auditoría en la regla y pruebe los resultados de la regla para asegurarse de que todo funciona según lo esperado.
 
-## <a name="use-anti-spam-policy-ip-block-lists"></a>Usar listas de direcciones IP bloqueadas de la Directiva contra correo no deseado
+## <a name="use-the-ip-block-list"></a>Usar la lista de direcciones IP bloqueadas
 
-Cuando no es posible usar una de las otras opciones para *bloquear a un remitente, puede* usar la lista de IP bloqueadas de la Directiva contra correo no deseado. Para obtener más información, vea [Configurar la directiva de filtro de conexión](configure-the-connection-filter-policy.md). Es importante mantener el número de IP bloqueadas en un mínimo, por lo que *no* se recomienda bloquear intervalos de direcciones IP completos.
+Cuando no es posible usar una de las otras opciones para *bloquear a un remitente, debe usar* la lista de direcciones IP bloqueadas en la Directiva de filtro de conexión. Para obtener más información, vea [Configurar la directiva de filtro de conexión](configure-the-connection-filter-policy.md). Es importante mantener el número de IP bloqueadas en un mínimo, por lo que *no* se recomienda bloquear intervalos de direcciones IP completos.
 
-En *especial* , debe evitar agregar intervalos de direcciones IP que pertenezcan a servicios de consumidores o infraestructuras compartidas, y también asegurarse de que revisa la lista de direcciones IP permitidas como parte del mantenimiento regular. **Como permitir-entradas puede abrir rutas para un ataque, debe administrar atentamente esta lista y quitar con regularidad las entradas que permiten que ya no sean necesarias.** Además, si va a realizar la habilitación en una lista de remitentes seguros, asegúrese de leer y comprender los riesgos y las precauciones en *[crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md)*.
+En *especial* , debe evitar agregar intervalos de direcciones IP que pertenecen a los servicios de consumo (por ejemplo, Outlook.com) o infraestructuras compartidas, y también asegurarse de que revisa la lista de direcciones IP bloqueadas como parte del mantenimiento regular.

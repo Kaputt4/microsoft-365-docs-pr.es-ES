@@ -1,11 +1,11 @@
 ---
-title: Configurar la directiva de correo no deseado saliente
+title: Configurar el filtrado de spam de salida
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/02/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,97 +16,479 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: El filtrado de correo no deseado saliente siempre está habilitado si utiliza el servicio para enviar correo electrónico saliente, lo que protege a las organizaciones que utilizan el servicio y sus destinatarios.
-ms.openlocfilehash: 0fa5ec23eee6144864f16b52d452d02f38b554d7
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: e788310ae8fd3c0da7f1a39fbba2dc0d6e369d30
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957345"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893960"
 ---
-# <a name="configure-the-outbound-spam-policy"></a>Configurar la directiva de correo no deseado saliente
+# <a name="configure-outbound-spam-filtering-in-office-365"></a>Configurar el filtrado de correo no deseado saliente en Office 365
 
-El filtrado de correo no deseado saliente siempre está habilitado si utiliza el servicio para enviar correo electrónico saliente, lo que protege a las organizaciones que utilizan el servicio y sus destinatarios. De forma similar al filtrado de entrada, el filtrado de correo no deseado saliente se compone del filtrado de la conexión y el filtrado de contenido, y permite que algunos controles específicos controlen los mensajes salientes. Tipos de configuración de directiva de filtro de correo no deseado saliente:
+Si es un cliente de Office 365 con buzones en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, los mensajes de correo electrónico salientes que se envían a través de EOP se comprueban automáticamente en busca de correo no deseado y inusual actividad de envío.
 
-- Valor predeterminado: la Directiva de filtro de correo no deseado saliente predeterminada se usa para configurar las opciones de filtro de correo no deseado de toda la empresa. No se puede cambiar el nombre de esta directiva y siempre está activada.
+Normalmente, el correo no deseado saliente de un usuario de la organización indica una cuenta en peligro. Los mensajes sospechosos se marcan como correo no deseado (independientemente del nivel de confianza de correo no deseado o de SCL) y se enrutan a través del [grupo de entrega de alto riesgo](high-risk-delivery-pool-for-outbound-messages.md) para ayudar a proteger la reputación del servicio (es decir, mantener los servidores de correo electrónico de origen de Office 365 fuera de las listas de direcciones IP bloqueadas). Los administradores reciben automáticamente una notificación de la actividad de correo electrónico saliente y de los usuarios bloqueados mediante [directivas de alerta](../../compliance/alert-policies.md).
 
-- Personalizado: las directivas de filtro de correo no deseado saliente personalizadas pueden ser específicas y aplicarse a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre la predeterminada. Puede cambiar el orden en el que se ejecutan las directivas personalizadas cambiando la prioridad de cada directiva personalizada; sin embargo, solo se aplicará la Directiva de prioridad más alta (es decir, el número más cercano a 0) si el usuario coincide con varias directivas.
+EOP usa directivas de correo no deseado salientes como parte de la defensa general de la organización contra el correo no deseado. Para obtener más información, vea [protección contra correo no deseado en Office 365](anti-spam-protection.md).
+
+Los administradores pueden ver, editar y configurar (pero no eliminar) la Directiva de correo no deseado saliente predeterminada. Para una mayor granularidad, también puede crear directivas de correo no deseado saliente personalizadas que se aplican a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad frente a las predeterminadas, si bien esta prioridad (orden de ejecución) se puede cambiar.
+
+Puede configurar directivas de correo no deseado salientes en el centro de seguridad & cumplimiento de Office 365 o en PowerShell (Exchange Online PowerShell para Office 365 clientes; Exchange Online Protection PowerShell para clientes independientes de EOP).
+
+## <a name="outbound-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Directivas de correo no deseado salientes en el centro de seguridad & cumplimiento de Office 365 vs Exchange Online PowerShell o Exchange Online Protection PowerShell
+
+Los elementos básicos de una directiva de correo no deseado saliente en EOP son los siguientes:
+
+- **La Directiva de filtro de correo no deseado saliente**: especifica las acciones para los veredictos de filtrado de correo no deseado saliente y las opciones de notificación.
+
+- **La regla de filtro de correo no deseado saliente**: especifica la prioridad y los filtros de destinatarios (a los que se aplica la Directiva) para una directiva de filtro de correo no deseado saliente.
+
+La diferencia entre estos dos elementos no es obvia cuando se administran las directivas de correo no deseado saliente en el centro de seguridad & cumplimiento:
+
+- Cuando se crea una directiva de correo no deseado saliente en el centro de seguridad & cumplimiento, en realidad se crea una regla de filtro de correo no deseado saliente y la Directiva de filtro de correo no deseado saliente asociada al mismo tiempo con el mismo nombre para ambas.
+
+- Cuando se modifica una directiva de correo no deseado saliente en el centro de seguridad & cumplimiento, la configuración relacionada con los filtros nombre, prioridad, habilitado o deshabilitado y destinatarios modifica la regla de filtro de correo no deseado saliente. Todas las demás opciones modifican la Directiva de filtro de correo no deseado saliente asociada.
+
+- Cuando quita una directiva de correo no deseado saliente del centro de seguridad & cumplimiento, se quita la regla de filtro de correo no deseado saliente y la Directiva de filtro de correo no deseado saliente asociada.
+
+En Exchange Online PowerShell o PowerShell independiente de Exchange Online Protection, la diferencia entre las directivas de filtro de correo no deseado saliente y las reglas de filtro de correo no deseado saliente es evidente. Puede administrar las directivas ** \*de filtro de** correo no deseado saliente con los cmdlets-HostedContentFilterPolicy y administrar las reglas de filtro de correo no deseado saliente con los ** \*cmdlets-HostedContentFilterRule** .
+
+- En PowerShell, se crea la Directiva de filtro de correo no deseado saliente en primer lugar y, a continuación, se crea la regla de filtro de correo no deseado saliente que identifica la Directiva a la que se aplica la regla.
+
+- En PowerShell, se modifica la configuración de la Directiva de filtro de correo no deseado saliente y de la regla de filtro de correo no deseado saliente por separado.
+
+- Cuando quita una directiva de filtro de correo no deseado saliente de PowerShell, la regla de filtro de correo no deseado saliente correspondiente no se quita automáticamente y viceversa.
+
+### <a name="default-outbound-spam-policy"></a>Directiva de correo no deseado saliente predeterminada
+
+Cada organización tiene integrada una directiva de correo no deseado saliente denominada predeterminada que tiene estas propiedades:
+
+- La Directiva de filtro de correo no deseado saliente denominada predeterminada se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla de filtro de correo no deseado saliente (filtros de destinatario) asociada a la Directiva.
+
+- La Directiva denominada Default tiene el valor de prioridad personalizado **más bajo** que no se puede modificar (la Directiva siempre se aplica en último lugar). Cualquier directiva personalizada que cree siempre tendrá una prioridad mayor que la Directiva denominada Default.
+
+- La Directiva denominada Default es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True`) y no se puede eliminar la directiva predeterminada.
+
+Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crear directivas de correo no deseado saliente personalizadas con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
-<a name="sectionSection0"> </a>
 
-- Tiempo estimado para finalizar: 5 minutos
+- Abra el centro de seguridad & cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **configuración de contra el correo no deseado** , use <https://protection.office.com/antispam>.
 
-- Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Contra el correo electrónico no deseado" en el tema [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a PowerShell independiente de Exchange Online Protection, vea [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- También puede realizar los procedimientos de este tema en PowerShell remoto. Use el cmdlet [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) para revisar su configuración y [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) para editar su configuración de directiva de correo no deseado saliente.
+- Debe tener permisos asignados para poder realizar estos procedimientos. Para agregar, modificar y eliminar directivas de correo no deseado saliente, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para el acceso de solo lectura a las directivas de correo no deseado saliente, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the Office 365 security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a PowerShell de Exchange Online Protection, vea [conectarse a PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Para conocer la configuración recomendada para las directivas de correo no deseado saliente, consulte [EOP Outbound Spam Filter Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
-## <a name="use-the-security--compliance-center-scc-to-edit-the-default-outbound-spam-policy"></a>Usar el centro de seguridad & cumplimiento (SCC) para editar la Directiva de correo no deseado saliente predeterminada
+- Las [directivas de alerta](../../compliance/alert-policies.md) predeterminadas denominadas límite de envío de **correo electrónico superado**, los **patrones de envío de correo electrónico sospechoso detectados**y el **usuario restringido del envío de correo electrónico** ya envían notificaciones por correo electrónico a los miembros del grupo **TenantAdmins** (**global Admins**) sobre la actividad de correo electrónico saliente y los usuarios bloqueados debido a correo no deseado saliente. Para obtener más información, consulte [Verify The Alert Settings for Restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Se recomienda usar estas directivas de alerta en lugar de las opciones de notificación en las directivas de correo no deseado saliente.
 
-Utilice el siguiente procedimiento para editar la directiva predeterminada del correo no deseado saliente:
+## <a name="use-the-security--compliance-center-to-create-outbound-spam-policies"></a>Usar el centro de seguridad & cumplimiento para crear directivas de correo no deseado saliente
 
-### <a name="to-configure-the-default-outbound-spam-policy"></a>Para configurar la directiva de correo no deseado saliente predeterminada
+La creación de una directiva personalizada de correo no deseado saliente en el centro de seguridad & cumplimiento crea la regla de filtro de correo no deseado y la Directiva de filtro de correo no deseado asociada al mismo tiempo con el mismo nombre para ambas.
 
-1. En el SCC, desplácese hasta la **Directiva** \> de **Administración** \> de amenazas **contra correo no deseado**
+1. En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-spam**.
 
-2. Expanda la sección **Directiva de filtro de correo no deseado saliente (Always On)** y haga clic en **Editar Directiva**.
+2. En la página **configuración contra correo no deseado** , haga clic en **crear una directiva de salida**.
 
-3. Expanda la sección **notificaciones** y active las siguientes casillas de verificación relativas a los mensajes salientes y, después, seleccione **Agregar personas** para agregar una o varias direcciones de correo electrónico asociadas en el cuadro de diálogo correspondiente. (pueden ser listas de distribución si se resuelven como destinos SMTP válidos):
+3. En la **Directiva de filtro de correo no deseado saliente** , vaya hacia fuera que se abre, configure las siguientes opciones:
 
-   - **Envíe una copia de todos los mensajes de correo electrónico saliente sospechosos a las siguientes direcciones o direcciones de correo electrónico**: se trata de mensajes marcados como correo no deseado por el filtro (independientemente de la clasificación SCL). El filtro no los rechaza y son enviados al grupo de envío de mayor riesgo. Separar varias direcciones con un punto y coma. Tenga en cuenta que los destinatarios especificados recibirán los mensajes como una dirección con copia oculta (CCC) (los campos De y Para son el remitente y el destinatario originales).
+   - **Name**: escriba un nombre único y descriptivo para la Directiva.
 
-   - **Enviar una notificación a la siguiente dirección de correo electrónico cuando un remitente haya bloqueado el envío de correo no deseado saliente**: Separe varias direcciones con un punto y coma.
+   - **Descripción**: escriba una descripción opcional para la Directiva.
 
-   Cuando se detecta una cantidad importante de anomalías u otras anomalías de envío de un usuario en particular, el usuario tiene restringido el envío de mensajes de correo electrónico y se envía una notificación a las direcciones de correo electrónico especificadas.
+4. Opcional Expanda la sección **notificaciones** para configurar usuarios adicionales que deben recibir copias y notificaciones de mensajes de correo electrónico salientes sospechosos:
 
-   Al administrador del dominio, que se especifica con esta opción de configuración, se le informa de que se han bloqueado los mensajes salientes de este usuario.  Para ver el aspecto que tiene esta notificación, véase [Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md).
+   - **Enviar una copia de los mensajes de correo electrónico saliente sospechosos a personas específicas**: esta opción agrega los usuarios especificados como destinatarios en copia oculta a los mensajes sospechosos de salida. Para habilitar esta opción:
 
-   > [!NOTE]
-   > También se genera una alerta del sistema que indica que el usuario se ha restringido. Para obtener más información acerca de la alerta y de cómo recuperar al usuario, consulte [quitar un usuario del portal de usuarios restringidos después de enviar correo no deseado](removing-user-from-restricted-users-portal-after-spam.md).
+     a. Active la casilla para habilitar la configuración.
 
-4. Expanda la sección **límites de destinatarios** para especificar el número máximo de destinatarios a los que puede enviar un usuario, por hora, para los destinatarios internos y externos, junto con el número máximo por día.
+     b. Haga clic en **Agregar personas**. En el control flotante **Agregar o quitar destinatarios** que aparece:
 
-   > [!NOTE]
-   > El número máximo para cualquier entrada es 10000. Para obtener más información [, consulte límites de recepción y envío en Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) .
+     c. Escriba la dirección de correo electrónico del remitente. Puede especificar varias direcciones de correo electrónico separadas por punto y coma (;) o un destinatario por línea.
 
-7. Especifica la **acción** que se llevará a cabo cuando un usuario supere los límites especificados.  Las acciones posibles son las siguientes:
+     d. Haga clic en ![Icono Agregar](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) para agregar los destinatarios.
 
-   - **Restringir al usuario el envío de correo hasta el siguiente día**.  Una vez que se ha superado el límite de envío (interno, externo o diario), se generará una alerta para el administrador y el usuario no podrá enviar más mensajes de correo electrónico hasta el día siguiente, en función de la hora UTC. El administrador no tiene forma de anular este bloque.
+        Repita estos pasos tantas veces como sea necesario.
 
-   - **Restringir al usuario el envío de correo**.  Una vez que se ha superado el límite de envío (interno, externo o diario), se generará una alerta para el administrador y el usuario no podrá enviar más correo electrónico hasta que el administrador elimine la restricción.  En estos casos, el usuario aparece en la [Página usuarios restringidos](removing-user-from-restricted-users-portal-after-spam.md).  Una vez que se eliminó de la lista, el usuario no volverá a estar restringido para ese día.
+        Los destinatarios que ha agregado aparecen en la sección **lista de destinatarios** en el control flotante. Para eliminar un destinatario, haga ![clic en](../../media/scc-remove-icon.png)el botón Quitar.
 
-   - **No se realiza ninguna acción o alerta**. Una vez que se haya superado el límite de envío (interno, externo o diario), se generará una alerta para el administrador, pero no se llevará a cabo ninguna acción para restringir el usuario.
+     e. Cuando haya terminado, haga clic en **Guardar**.
 
-6. Expanda la sección **se aplica a** y, a continuación, cree una regla basada en condiciones para especificar los usuarios, los grupos y los dominios a los que se aplicará esta Directiva. Puede crear varias condiciones siempre que sean únicas.  Nota: los usuarios deben cumplir todas las condiciones cuando se especifican varias condiciones.  
+     Para deshabilitar esta opción, desactive la casilla de verificación.
 
-   - Para seleccionar usuarios, seleccione **el remitente**. En el cuadro de diálogo posterior, seleccione uno o más remitentes de la empresa en la lista del selector de usuarios y luego haga clic en Agregar. Para agregar remitentes que no están en la lista, escriba sus direcciones de correo electrónico y haga clic en Comprobar nombres. Cuando termine de seleccionar, haga clic en aceptar para volver a la pantalla principal.
+   - **Notificar a personas específicas si un remitente está bloqueado debido al envío de correo no deseado saliente**:
 
-   - Para seleccionar grupos, seleccione **el remitente es un miembro de**. Después, en el cuadro de diálogo posterior, seleccione o especifique los grupos. Haga clic en Aceptar para volver a la pantalla principal.
+     > [!NOTE]
+     > La [Directiva de alerta](../../compliance/alert-policies.md) predeterminada denominada **usuario restringido del envío de correo electrónico** ya envía notificaciones por correo electrónico a los miembros del grupo **TenantAdmins** (**administradores globales**) cuando los usuarios se bloquean debido a que superan los límites de la sección **límites de destinatarios** . Le recomendamos que use la Directiva de alertas en lugar de esta opción en la Directiva de correo no deseado saliente para notificar a los administradores y a otros usuarios. Para obtener instrucciones, consulte [Verify The Alert Settings for Restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
-   - Para seleccionar dominios, seleccione **el dominio del remitente**. Después agregue los dominios en el cuadro de diálogo posterior. Haga clic en Aceptar para volver a la pantalla principal.
+     Para habilitar esta opción:
 
-   Puede crear excepciones para la regla. Por ejemplo, puede filtrar mensajes de todos los dominios excepto de uno en concreto. Haga clic en agregar excepción y cree sus condiciones de excepción de forma parecida a como creó las otras condiciones.
+     a. Active la casilla para habilitar la configuración.
 
-   La aplicación de una directiva de correo no deseado saliente a un grupo solo se admite para los grupos de seguridad habilitados para correo.
+     b. Haga clic en **Agregar personas**. En el control flotante **Agregar o quitar destinatarios** que aparece:
 
-7. Haga clic en **Guardar**.
+     c. Escriba la dirección de correo electrónico del remitente. Puede especificar varias direcciones de correo electrónico separadas por punto y coma (;) o un destinatario por línea.
 
-## <a name="to-create-a-custom-policy-for-a-specific-set-of-users"></a>Para crear una directiva personalizada para un conjunto específico de usuarios
+     d. Haga clic en ![Icono Agregar](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) para agregar los destinatarios.
 
-1. En el SCC, desplácese hasta la **Directiva** \> de **Administración** \> de amenazas **contra correo no deseado**
+        Repita estos pasos tantas veces como sea necesario.
 
-2. Haga clic en el botón **crear una directiva de salida** .
+        Los destinatarios que ha agregado aparecen en la sección **lista de destinatarios** en el control flotante. Para eliminar un destinatario, haga ![clic en](../../media/scc-remove-icon.png)el botón Quitar.
 
-3. Expanda la sección **notificaciones** y active las siguientes casillas de verificación relativas a los mensajes salientes y, después, seleccione **Agregar personas** para agregar una o varias direcciones de correo electrónico asociadas en el cuadro de diálogo correspondiente.
+     e. Cuando haya terminado, haga clic en **Guardar**.
 
-4. Expanda la sección **límites de destinatarios** para especificar el número máximo de destinatarios que puede enviar un usuario, por hora, para destinatarios internos y externos, y el número máximo de días por día.
+     Para deshabilitar esta opción, desactive la casilla de verificación.
 
-7. Especifica la **acción** que se llevará a cabo cuando un usuario supere los límites especificados.
+5. Opcional Expanda la sección **límites de destinatarios** para configurar los límites y las acciones de los mensajes de correo electrónico saliente sospechosos:]
+   - **Número máximo de destinatarios por usuario**
 
-6. Expanda la sección **se aplica a** y cree una regla basada en condiciones para especificar los usuarios, grupos y dominios a los que se va a aplicar esta Directiva. Puede crear varias condiciones siempre que sean únicas.  
+     Un valor válido es de 0 a 10000. El valor predeterminado es 0, lo que significa que se usan los valores predeterminados del servicio. Para obtener más información, consulte [límites de envío en las opciones de Office 365](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
 
-8. Haga clic en **Guardar**
+     - **Límite horario externo**: el número máximo de destinatarios externos por hora.
+
+     - **Límite horario interno**: el número máximo de destinatarios internos por hora.
+
+     - **Límite diario**: número máximo total de destinatarios por día.
+
+   - **Acción cuando un usuario supera los límites anteriores**: configure la acción que se llevará a cabo cuando se supere alguno de los **límites de destinatarios** . Para todas las acciones, los destinatarios especificados en el **usuario restringió el envío de la Directiva de alerta de correo electrónico** (y en el ahora la Directiva de notificación de correo no deseado **se bloquea al enviar un remitente porque al enviar la configuración de correo no deseado saliente** en la Directiva de correo no deseado de salida recibe notificaciones de correo electrónico.
+
+     - **Restringir al usuario el envío de correo hasta el siguiente día**: este es el valor predeterminado. Se envían notificaciones por correo electrónico y el usuario no podrá enviar más mensajes hasta el día siguiente, en función de la hora UTC. El administrador no tiene forma de reemplazar este bloque.
+
+       - La alerta de actividad denominada **usuario restringido del envío de correo electrónico** notifica a los administradores (por correo electrónico y en la página **Ver alertas** ).
+
+       - También se notifica a los destinatarios especificados en la directiva **notificar a personas específicas si un remitente está bloqueado debido al envío de correo no deseado saliente** en la Directiva.
+
+       - El usuario no podrá enviar más mensajes hasta el día siguiente, en función de la hora UTC. El administrador no tiene forma de reemplazar este bloque.
+
+     - **Restringir al usuario el envío de correo**: se envían notificaciones por correo electrónico, el usuario se agrega al portal **[Restricted users]<https://sip.protection.office.com/restrictedusers> ** en el centro de seguridad & cumplimiento y el usuario no puede enviar correo electrónico hasta que un administrador lo elimine del portal de **usuarios restringidos** . Una vez que un administrador quita al usuario de la lista, el usuario no volverá a estar restringido para ese día. Para obtener instrucciones, consulte [quitar un usuario del portal de usuarios restringidos después de enviar correo no deseado](removing-user-from-restricted-users-portal-after-spam.md).
+
+     - **No se realiza ninguna acción, solo alerta**: se envían notificaciones por correo electrónico.
+
+6. Necesarios Expanda la sección **aplicado a** para identificar los remitentes internos a los que se aplica la Directiva.
+
+    Solo se puede usar una condición o excepción una vez, pero se pueden especificar varios valores para la condición o excepción. Varios valores de la misma condición o del uso o la lógica de la excepción (por ejemplo, _ \<sender1\> _ o _ \<sender2\>_). Las diferentes condiciones o excepciones usan la lógica (por ejemplo _ \<,\> sender1_ y _ \<el miembro del\>Grupo 1_).
+
+    Es más fácil hacer clic en **Agregar una condición** tres veces para ver todas las condiciones disponibles. Puede hacer clic ![en el](../../media/scc-remove-icon.png) botón quitar para quitar las condiciones que no desea configurar.
+
+    - **El dominio del remitente es**: especifica los remitentes en uno o varios de los dominios aceptados configurados en Office 365. Haga clic en el cuadro **Agregar una etiqueta** para ver y seleccionar un dominio. Vuelva a hacer clic en el cuadro **Agregar una etiqueta** para seleccionar dominios adicionales si hay más de un dominio disponible.
+
+    - **Sender es**: especifica uno o más usuarios en la organización. Haga clic en **Agregar una etiqueta** y comience a escribir para filtrar la lista. Vuelva a hacer clic en el cuadro **Agregar una etiqueta** para seleccionar remitentes adicionales.
+
+    - **Sender es un miembro de**: especifica uno o más grupos de la organización. Haga clic en **Agregar una etiqueta** y comience a escribir para filtrar la lista. Vuelva a hacer clic en el cuadro **Agregar una etiqueta** para seleccionar remitentes adicionales.
+
+    - **Excepto si**: para agregar excepciones para la regla, haga clic en **Agregar una condición** tres veces para ver todas las excepciones disponibles. La configuración y el comportamiento son exactamente iguales a las condiciones.
+
+7. Cuando haya terminado, haga clic en **Guardar**.
+
+## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>Usar el centro de seguridad & cumplimiento para ver las directivas de correo no deseado saliente
+
+1. En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-spam**.
+
+2. En la página **configuración contra correo no deseado** , ![haga clic](../../media/scc-expand-icon.png) en expandir icono para expandir una directiva de correo no deseado saliente:
+
+   - La directiva predeterminada denominada **Directiva de filtro de correo no deseado saliente**.
+
+   - Una directiva personalizada creada donde el valor de la columna **tipo** es Directiva de **correo no deseado saliente personalizada**.
+
+3. La configuración de la Directiva se muestra en los detalles de la Directiva ampliada que aparecen, o bien puede hacer clic en **Editar Directiva**.
+
+## <a name="use-the-security--compliance-center-to-modify-outbound-spam-policies"></a>Usar el centro de seguridad & cumplimiento para modificar las directivas de correo no deseado saliente
+
+1. En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-spam**.
+
+2. En la página **configuración contra correo no deseado** , ![haga clic](../../media/scc-expand-icon.png) en expandir icono para expandir una directiva de correo no deseado saliente:
+
+   - La directiva predeterminada denominada **Directiva de filtro de correo no deseado saliente**.
+
+   - Una directiva personalizada creada donde el valor de la columna **tipo** es Directiva de **correo no deseado saliente personalizada**.
+
+3. Haga clic en **Editar Directiva**.
+
+Para directivas de correo no deseado personalizadas personalizadas, la configuración disponible en el control flotante que aparece es idéntica a la descrita en el [centro de seguridad & cumplimiento para crear directivas de correo no deseado saliente](#use-the-security--compliance-center-to-create-outbound-spam-policies) .
+
+Para la Directiva de correo no deseado saliente predeterminada denominada **Directiva de filtro de correo no deseado saliente**, la sección **aplicado a** no está disponible (la Directiva se aplica a todos los usuarios) y no puede cambiar el nombre de la Directiva.
+
+Para habilitar o deshabilitar una directiva, establezca el orden de prioridad de la Directiva o configure las notificaciones en cuarentena para el usuario final, consulte las siguientes secciones.
+
+### <a name="enable-or-disable-outbound-spam-policies"></a>Habilitar o deshabilitar las directivas de correo no deseado saliente
+
+1. En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-spam**.
+
+2. En la **página Configuración contra correo no deseado** , ![haga clic](../../media/scc-expand-icon.png) en expandir icono para expandir una directiva personalizada que haya creado (el valor en la columna **tipo** es **Directiva de correo no deseado saliente personalizada**).
+
+3. En los detalles de la Directiva ampliada que aparecen, observe el valor de la columna **activado** .
+
+   Mueva el botón de alternancia a la izquierda para deshabilitar la Directiva: ![Desactivar](../../media/scc-toggle-off.png)
+
+   Mueva el botón de alternancia a la derecha para habilitar la Directiva: ![Alternar en](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+
+No se puede deshabilitar la Directiva de correo no deseado saliente predeterminada.
+
+### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>Establecer la prioridad de las directivas de correo no deseado saliente personalizadas
+
+De forma predeterminada, las directivas de correo no deseado saliente tienen una prioridad que se basa en el orden en que se crearon (las nuevas directivas tienen una prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad más alta para la Directiva (0 es el valor más alto) y las directivas se procesan en orden de prioridad (las directivas de prioridad más altas se procesan antes que las directivas de menor prioridad). Ninguna de las dos directivas puede tener la misma prioridad.
+
+Las directivas de correo no deseado de salida personalizadas se muestran en el orden en que se procesan (la primera Directiva tiene el valor de **prioridad** 0). La Directiva de correo no deseado saliente predeterminada denominada **Directiva de filtro de correo no deseado saliente** tiene el valor de prioridad **más bajo**y no se puede cambiar.
+
+Para cambiar la prioridad de una directiva, mueva la Directiva hacia arriba o hacia abajo en la lista (no puede modificar directamente el número de **prioridad** en el centro de seguridad & cumplimiento).
+
+1. En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-spam**.
+
+2. En la página **configuración contra correo no deseado** , busque las directivas en las que el valor de la columna **tipo** es **Directiva de correo no deseado saliente personalizada**. Observe los valores de la columna **Priority** :
+
+   - La directiva personalizada de correo no deseado saliente con la prioridad más alta ![tiene el icono](../../media/ITPro-EAC-DownArrowIcon.png) de flecha abajo de valor **0**.
+
+   - La directiva personalizada de correo no deseado saliente con la prioridad más baja ![tiene el icono](../../media/ITPro-EAC-UpArrowIcon.png) de flecha arriba de valor ![ **n** (por](../../media/ITPro-EAC-UpArrowIcon.png) ejemplo, icono de flecha arriba **3**).
+
+   - Si tiene tres o más directivas de correo no deseado saliente personalizadas, las directivas entre la prioridad más alta y la ![más baja tienen](../../media/ITPro-EAC-UpArrowIcon.png)![un icono](../../media/ITPro-EAC-DownArrowIcon.png) de flecha abajo hacia arriba ( ![por ejemplo,](../../media/ITPro-EAC-UpArrowIcon.png)![icono flecha arriba](../../media/ITPro-EAC-DownArrowIcon.png) en el icono de flecha arriba **2**). **n**
+
+3. Haga clic en ![Icono de flecha arriba](../../media/ITPro-EAC-UpArrowIcon.png) o ![Icono de flecha abajo](../../media/ITPro-EAC-DownArrowIcon.png) para mover la Directiva de correo no deseado saliente personalizada hacia arriba o hacia abajo en la lista de prioridades.
+
+## <a name="use-the-security--compliance-center-to-remove-outbound-spam-policies"></a>Usar el centro de seguridad & cumplimiento para eliminar directivas de correo no deseado saliente
+
+1. En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-spam**.
+
+2. En la **página Configuración contra correo no deseado** , ![haga clic](../../media/scc-expand-icon.png) en expandir icono para expandir la directiva personalizada que desea eliminar (la columna **tipo** es **Directiva de correo no deseado saliente personalizada**).
+
+3. En los detalles de la Directiva expandida que aparecen, haga clic en **eliminar Directiva**.
+
+4. Haga clic en **sí** en el cuadro de diálogo de advertencia que aparece.
+
+No se puede quitar la directiva predeterminada.
+
+## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-outbound-spam-policies"></a>Usar Exchange Online PowerShell o Exchange Online Protection PowerShell para configurar las directivas de correo no deseado saliente
+
+### <a name="use-powershell-to-create-outbound-spam-policies"></a>Usar PowerShell para crear directivas de correo no deseado saliente
+
+La creación de una directiva de correo no deseado saliente en PowerShell es un proceso de dos pasos:
+
+1. Crear la Directiva de filtro de correo no deseado saliente.
+
+2. Cree la regla de filtro de correo no deseado saliente que especifica la Directiva de filtro de correo no deseado saliente a la que se aplica la regla.
+
+ **Notas**:
+
+- Puede crear una nueva regla de filtro de correo no deseado saliente y asignar una directiva de filtro de correo no deseado saliente existente que no esté asociada. Una regla de filtro de correo no deseado saliente no se puede asociar con más de una directiva de filtro de correo no deseado saliente.
+
+- Puede configurar las siguientes opciones en nuevas directivas de filtro de correo no deseado saliente en PowerShell que no están disponibles en el centro de seguridad & cumplimiento hasta que se crea la Directiva:
+
+  - Cree la nueva directiva como deshabilitada (_habilitada_ `$false` en el cmdlet **New-HostedOutboundSpamFilterRule** ).
+
+  - Establezca la prioridad de la Directiva durante la creación ( _ \<número\>_ de_prioridad_ ) en el cmdlet **New-HostedOutboundSpamFilterRule** ).
+
+- Una nueva Directiva de filtro de correo no deseado saliente que se crea en PowerShell no es visible en el centro de seguridad & cumplimiento hasta que se asigna la Directiva a una regla de filtro de correo no deseado.
+
+#### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>Paso 1: usar PowerShell para crear una directiva de filtro de correo no deseado saliente
+
+Para crear una directiva de filtro de correo no deseado saliente, use esta sintaxis:
+
+```PowerShell
+New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Additional Settings>
+```
+
+En este ejemplo se crea una nueva Directiva de filtro de correo no deseado saliente denominada ejecutivos de Contoso con la siguiente configuración:
+
+- Los límites de frecuencia de destinatarios están restringidos a valores más bajos que los valores predeterminados. Para obtener más información, consulte [límites de envío en las opciones de Office 365](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+
+- Una vez que se alcanza uno de los límites, se impide el envío de mensajes al usuario.
+
+```PowerShell
+New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterpolicy).
+
+#### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>Paso 2: usar PowerShell para crear una regla de filtro de correo no deseado saliente
+
+Para crear una regla de filtro de correo no deseado saliente, use esta sintaxis:
+
+```PowerShell
+New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
+```
+
+En este ejemplo se crea una nueva regla de filtro de correo no deseado saliente denominada ejecutivos de Contoso con esta configuración:
+
+- La Directiva de filtro de correo no deseado saliente denominada ejecutivos de Contoso está asociada a la regla.
+
+- La regla se aplica a los miembros del grupo llamado contoso Executives Group.
+
+```PowerShell
+New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterrule).
+
+### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>Usar PowerShell para ver las directivas de filtro de correo no deseado saliente
+
+Para obtener una lista resumida de todas las directivas de filtro de correo no deseado salientes, ejecute este comando:
+
+```PowerShell
+Get-HostedOutboundSpamFilterPolicy
+```
+
+Para obtener información detallada sobre una directiva de filtro de correo no deseado específica, use esta sintaxis:
+
+```PowerShell
+Get-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" | Format-List [<Specific properties to view>]
+```
+
+En este ejemplo se devuelven todos los valores de propiedad de la Directiva de filtro de correo no deseado saliente denominada Executives.
+
+```PowerShell
+Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy).
+
+### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a>Usar PowerShell para ver las reglas de filtro de correo no deseado saliente
+
+Para ver las reglas de filtro de correo no deseado saliente existentes, use la siguiente sintaxis:
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+```
+
+Para obtener una lista resumida de todas las reglas de filtro de correo no deseado salientes, ejecute este comando:
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule
+```
+
+Para filtrar la lista por reglas habilitadas o deshabilitadas, ejecute los siguientes comandos:
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -State Disabled
+```
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -State Enabled
+```
+
+Para obtener información detallada sobre una regla de filtrado de correo no deseado específica, use esta sintaxis:
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -Identity "<RuleName>" | Format-List [<Specific properties to view>]
+```
+
+En este ejemplo se devuelven todos los valores de propiedad de la regla de filtro de correo no deseado saliente denominada ejecutivos de contoso.
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterrule).
+
+### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>Usar PowerShell para modificar las directivas de filtro de correo no deseado saliente
+
+La misma configuración está disponible cuando modifica una directiva de filtro de malware en PowerShell como cuando crea la Directiva tal como se describe en la sección [paso 1: usar PowerShell para crear una directiva de filtro de correo no deseado saliente](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) anteriormente en este tema.
+
+**Nota**: no puede cambiar el nombre de una directiva de filtro de correo no deseado saliente (el cmdlet **set-HostedOutboundSpamFilterPolicy** no tiene ningún parámetro _Name_ ). Al cambiar el nombre de una directiva de correo no deseado saliente en el centro de seguridad & cumplimiento, sólo cambia el nombre de la _regla_de filtro de correo no deseado saliente.
+
+Para modificar una directiva de filtro de correo no deseado saliente, use esta sintaxis:
+
+```PowerShell
+Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy).
+
+### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>Usar PowerShell para modificar las reglas de filtro de correo no deseado saliente
+
+El único valor que no está disponible cuando se modifica una regla de filtro de correo no deseado saliente en PowerShell es el parámetro _Enabled_ que permite crear una regla deshabilitada. Para habilitar o deshabilitar las reglas de filtro de correo no deseado saliente existentes, consulte la siguiente sección.
+
+De lo contrario, no hay opciones de configuración adicionales disponibles cuando se modifica una regla de filtro de correo no deseado saliente en PowerShell. La misma configuración está disponible cuando se crea una regla tal y como se describe en la sección [paso 2: usar PowerShell para crear una regla de filtro de correo no deseado saliente](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) anteriormente en este tema.
+
+Para modificar una regla de filtro de correo no deseado saliente, use esta sintaxis:
+
+```PowerShell
+Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterrule).
+
+### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>Usar PowerShell para habilitar o deshabilitar reglas de filtro de correo no deseado saliente
+
+La habilitación o deshabilitación de una regla de filtro de correo no deseado saliente en PowerShell habilita o deshabilita toda la Directiva de correo no deseado saliente (la regla de filtro de correo no deseado saliente y la Directiva de filtro de correo no deseado saliente asignada). No se puede habilitar o deshabilitar la Directiva de correo no deseado saliente predeterminada (siempre se aplica siempre a todos los destinatarios).
+
+Para habilitar o deshabilitar una regla de filtro de correo no deseado saliente en PowerShell, use esta sintaxis:
+
+```PowerShell
+<Enable-HostedOutboundSpamFilterRule | Disable-HostedOutboundSpamFilterRule> -Identity "<RuleName>"
+```
+
+En este ejemplo se deshabilita la regla de filtro de correo no deseado saliente denominada Marketing Department.
+
+```PowerShell
+Disable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
+```
+
+En este ejemplo se habilita la misma regla.
+
+```PowerShell
+Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedoutboundspamfilterrule) y [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedoutboundspamfilterrule).
+
+### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Usar PowerShell para establecer la prioridad de las reglas de filtro de correo no deseado saliente
+
+El valor de prioridad máximo que se puede establecer en una regla es 0. El valor mínimo que se puede establecer depende del número de reglas. Por ejemplo, si tiene cinco reglas, puede usar los valores de prioridad del 0 al 4. El cambio de prioridad de una regla existente puede tener un efecto cascada en otras reglas. Por ejemplo, si tiene cinco reglas personalizadas (prioridades de 0 a 4) y cambia la prioridad de una regla a 2, la regla existente con prioridad 2 cambiará a Priority 3 y la regla con prioridad 3 cambiará a Priority 4.
+
+Para establecer la prioridad de una regla de filtro de correo no deseado saliente en PowerShell, use la siguiente sintaxis:
+
+```PowerShell
+Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" -Priority <Number>
+```
+
+En este ejemplo se establece la prioridad de la regla denominada Marketing Department en 2. Todas las reglas existentes que tienen una prioridad menor o igual a 2 se reducen en 1 (sus números de prioridad aumentan en 1).
+
+```PowerShell
+Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
+```
+
+**Notas**:
+
+- Para establecer la prioridad de una nueva regla al crearla, use el parámetro _Priority_ en el cmdlet **New-HostedOutboundSpamFilterRule** en su lugar.
+
+- La Directiva de filtro de correo no deseado predeterminado saliente no tiene una regla de filtro de correo no deseado correspondiente y siempre tiene el valor de prioridad no modificable **más bajo**.
+
+### <a name="use-powershell-to-remove-outbound-spam-filter-policies"></a>Usar PowerShell para quitar las directivas de filtro de correo no deseado saliente
+
+Cuando se usa PowerShell para quitar una directiva de filtro de correo no deseado saliente, no se quita la regla de filtro de correo no deseado saliente correspondiente.
+
+Para quitar una directiva de filtro de correo no deseado saliente en PowerShell, use esta sintaxis:
+
+```PowerShell
+Remove-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>"
+```
+
+En este ejemplo se quita la Directiva de filtro de correo no deseado saliente denominada Marketing Department.
+
+```PowerShell
+Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterpolicy).
+
+### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a>Usar PowerShell para quitar reglas de filtro de correo no deseado saliente
+
+Cuando se usa PowerShell para quitar una regla de filtro de correo no deseado saliente, no se elimina la Directiva de filtro de correo no deseado saliente correspondiente.
+
+Para quitar una regla de filtro de correo no deseado saliente en PowerShell, use esta sintaxis:
+
+```PowerShell
+Remove-HostedOutboundSpamFilterRule -Identity "<PolicyName>"
+```
+
+En este ejemplo se quita la regla de filtro de correo no deseado saliente denominada Marketing Department.
+
+```PowerShell
+Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule).
+
 
 ## <a name="for-more-information"></a>Más información
 

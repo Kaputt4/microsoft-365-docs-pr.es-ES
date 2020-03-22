@@ -17,12 +17,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Use este artículo como guía para configurar las características de protección contra amenazas ahora.
-ms.openlocfilehash: 96d5c85a5511ec67991283fbc164bb07d2ab34e9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: da920083b521e905633473efbabc5930ad7a6770
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598687"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895316"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protección contra amenazas en Office 365
 
@@ -31,7 +31,7 @@ Office 365 incluye una variedad de características de protección contra amenaz
 > [!IMPORTANT]
 > **Se incluye la configuración recomendada inicial para cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades específicas de su organización**. Espere unos 30 minutos para que las directivas o los cambios funcionen a través del centro de proceso de trabajo.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>Suscripciones
 
@@ -39,7 +39,7 @@ Las características de protección contra amenazas se incluyen en todas las sus
 
 |Tipo de protección|Requisito de suscripción|
 |---------|---------|
-|Protección contra malware|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP)|
+|Protección antimalware|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP)|
 |Protección frente a direcciones URL y archivos malintencionados en correo electrónico y documentos de Office|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
 |Protección contra suplantación de identidad|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
 |Protección contra suplantación de identidad avanzada|[ATP de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
@@ -73,7 +73,7 @@ La [protección contra malware](anti-malware-protection.md) está disponible en 
 
     - En la sección **filtro de tipos de datos adjuntos comunes** , elija **activado**.
 
-4. Haga clic en **Guardar**.
+4. Haga clic en **Guardar **.
 
 Para obtener más información acerca de las opciones de directiva antimalware, vea [Configure anti-malware Policies](configure-anti-malware-policies.md).
 
@@ -101,7 +101,7 @@ Para configurar los [datos adjuntos seguros de ATP](atp-safe-attachments.md), de
 
    - En la sección **aplicado a** , elija **el dominio del destinatario es**. A continuación, seleccione el dominio, elija **Agregar**y, a continuación, haga clic en **Aceptar**.
 
-5. Haga clic en **Guardar**.
+5. Haga clic en **Guardar **.
 
 6. (**Paso adicional recomendado**) Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro **DisallowInfectedFileDownload** establecido en *true* para su entorno de Office 365. (Esto impide que los usuarios abran, muevan, copien o compartan archivos que se detectan como malintencionados.)
 
@@ -135,7 +135,7 @@ Para configurar [vínculos seguros ATP](atp-safe-links.md), revise y edite su di
 
    - En la sección **aplicado a** , elija **el dominio del destinatario es**. A continuación, seleccione el dominio, elija **Agregar**y, a continuación, haga clic en **Aceptar**.
 
-6. Haga clic en **Guardar**.
+6. Haga clic en **Guardar **.
 
 Para obtener más información, consulte [Configurar directivas de vínculos seguros de ATP de Office 365](set-up-atp-safe-links-policies.md).
 
@@ -187,9 +187,9 @@ Para obtener más información sobre las opciones de la Directiva antiphishing, 
 
    - En la sección **listas de permitidos** , revise (y, si es necesario, Edit) los remitentes y dominios permitidos.
 
-4. Haga clic en **Guardar**.
+4. Haga clic en **Guardar **.
 
-Para obtener más información sobre las opciones de la Directiva contra correo no deseado, consulte [configurar las directivas contra correo no deseado](configure-the-anti-spam-policies.md).
+Para obtener más información sobre las opciones de la Directiva contra correo no deseado, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="part-5---additional-settings-to-configure"></a>Parte 5: configuración adicional para configurar
 

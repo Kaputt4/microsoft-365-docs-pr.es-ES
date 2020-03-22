@@ -1,64 +1,71 @@
 ---
-title: Cómo se combinan las directivas y las protecciones cuando el correo está marcado con color rojo
-description: Describe las directivas y las protecciones que se aplican cuando el correo electrónico detecta varias protecciones y se examina mediante varias formas de detección. Qué directivas se aplican y qué acciones realizar, cuando el correo electrónico está marcado como malware, correo no deseado, correo no deseado de alta confianza, phishing y masivo por EOP o ATP.
+title: Orden y prioridad de la protección del correo electrónico en Office 365
 keywords: seguridad, malware, Microsoft 365, M365, Security Center, ATP, Microsoft defender ATP, Office 365 ATP, ATP de Azure
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/26/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: c6b3fcc931aa396187eb81d0db495f77877f667b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Describe el orden de aplicación de las protecciones de Office 365 y cómo el valor de prioridad en las directivas de protección determina la Directiva que se aplica.
+ms.openlocfilehash: 9f2033b1ec066c1f8501ce019b8f8c7f3748fd15
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599177"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895340"
 ---
-# <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Qué Directiva se aplica cuando se ejecutan varios métodos de protección y exámenes de detección en el correo electrónico
+# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Orden y prioridad de la protección del correo electrónico en Office 365
 
-Potencialmente, puede que el correo entrante esté marcado por varias formas de protección (por ejemplo, EOP *y* ATP) y varios exámenes de detección (como correo no deseado *y* suplantación de identidad). Esto es posible porque hay directivas antiphishing contra ATP para los clientes de ATP y las directivas antiphishing de EOP para los clientes de EOP. Esto también significa que el mensaje puede navegar por varios exámenes de detección de malware, suplantación de identidad (phishing) y usuario-suplantación, por ejemplo. Teniendo en cuentan toda esta actividad, puede que haya cierta confusión con respecto a qué directiva se aplica.
+Como usuario de Office 365, es posible que el correo electrónico entrante se marque con varias formas de protección. Por ejemplo, las directivas antiphishing de EOP integradas que están disponibles para todos los clientes de Office 365 y las directivas antiphishing de ATP más sólidas que también están disponibles para los clientes de la protección contra amenazas avanzada de Office 365. Los mensajes también pasan varios exámenes de detección de malware, correo no deseado, suplantación de identidad (phishing), etc. Teniendo en cuentan toda esta actividad, puede que haya cierta confusión con respecto a qué directiva se aplica.
 
-En general, una directiva aplicada a un mensaje se identifica en el encabezado **X-Forefront-antispam-Report** en la propiedad **CAT (categoría)** . Si tiene varias directivas antiphishing, se aplicará la que tenga la prioridad más alta.
+En general, una directiva que se aplica a un mensaje se identifica en el encabezado **X-Forefront-antispam-Report** en la propiedad **CAT (categoría)** . Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
 
-Las directivas siguientes se aplican a _todas las organizaciones_.
+Hay dos factores principales que determinan la Directiva que se aplica a un mensaje:
 
-|Priority |Policy  |Categoría  |Donde se administra |
-|---------|---------|---------|---------|
-|1      | Malware      | MALW      | Directiva de malware   |
-|2      | Phishing     | PHSH     | Configurar las directivas de filtro de correo no deseado     |
-|3      | Correo no deseado de alta confianza      | HSPM        | Configurar las directivas de filtro de correo no deseado        |
-|4      | Suplantación        | SPOOF        | Directiva contra la suplantación de identidad, inteligencia de suplantación        |
-|5      | Correo no deseado         | SPM         | Configurar las directivas de filtro de correo no deseado         |
-|6      | Masivo         | BULK        | Configurar las directivas de filtro de correo no deseado         |
+- **La prioridad del tipo de protección de correo electrónico**: este pedido no se puede configurar y se describe en la siguiente tabla:
 
-Además, estas directivas se aplican a _organizaciones con ATP_.
+  |||||
+  |---|---|---|---|
+  |**Prioridad**|**Protección de correo electrónico**|**Categoría**|**Dónde administrar**|
+  |1|Malware|CAT: MALW|[Configurar directivas antimalware en Office 365](configure-anti-malware-policies.md)|
+  |segundo|Phishing|CAT: PHSH|[Configurar directivas contra correo electrónico no deseado en Office 365](configure-your-spam-filter-policies.md)|
+  |3|Correo no deseado de alta confianza|CAT: HSPM|[Configurar directivas contra correo electrónico no deseado en Office 365](configure-your-spam-filter-policies.md)|
+  |4 |Suplantación|CAT: SUPLANTACIÓN DE IDENTIDAD|[Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365](set-up-anti-phishing-policies.md) <Br/><br/> [Obtener más información sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md)|
+  |5 |Correo no deseado|CAT: SPM|[Configurar directivas contra correo electrónico no deseado en Office 365](configure-your-spam-filter-policies.md)|
+  |6 |Masivo|CAT: BULK|[Configurar directivas contra correo electrónico no deseado en Office 365](configure-your-spam-filter-policies.md)|
+  |0,7<sup>\*</sup>|Suplantación de dominio|DIMP|[Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365](set-up-anti-phishing-policies.md)|
+  |8,5<sup>\*</sup>|Suplantación de usuario|UIMP|[Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365](set-up-anti-phishing-policies.md)|
+  |
 
-|Priority |Policy  |Categoría  |Donde se administra |
-|---------|---------|---------|---------|
-|7      | Suplantación de dominio         | DIMP         | Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365        |
-|8      | Suplantación de usuario        | UIMP         | Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365         |
+  <sup>\*</sup>Estas características solo están disponibles en ATP.
 
-Por ejemplo, si tiene dos directivas con sus prioridades respectivas:
+- **La prioridad de la Directiva**: para cada tipo de protección (contra correo electrónico no deseado, anti-malware, antiphishing, etc.), hay una directiva predeterminada que se aplica a todos los usuarios, pero puede crear directivas personalizadas que se apliquen a usuarios específicos. Cada directiva personalizada tiene un valor de prioridad que determina el orden en el que se aplican las directivas. La directiva predeterminada siempre se aplica en último lugar.
 
-|Policy  |Priority  |Suplantación de usuario/dominio  |Directiva contra la suplantación  |
-|---------|---------|---------|---------|
-|A     | 1         | Activada        |Desactivado         |
-|B     | 2         | Desactivada        | Activada        |
+  Si un usuario se define en varias directivas personalizadas, solo se les aplica la Directiva con la prioridad más alta. Las directivas restantes no se evalúan para el usuario (incluida la directiva predeterminada).
 
-Si un mensaje se identifica como suplantación de _usuario_ e _imitación_ (consulte anti-spoofing en la tabla anterior) y el mismo conjunto de usuarios en el ámbito de la Directiva a es el ámbito de la Directiva B, el mensaje se marca y se trata como _falso_. Sin embargo, no se aplica ninguna acción porque, aunque la suplantación de identidad se ejecuta con una prioridad superior (4) que la suplantación del usuario (8), la suplantación de identidad está desactivada.
+Por ejemplo, considere las siguientes directivas contra la suplantación de identidad (phishing) **que se aplican a los mismos usuarios**, y un mensaje que se identifica como suplantación del usuario e imitación:
 
-Tenga en cuenta que los administradores pueden crear una lista de directivas con prioridad (vea el campo prioridad más arriba), pero solo se ejecutará una directiva y se aplicarán sus acciones. Esto significa que un usuario en ambas directivas A y B tendrá la Directiva de prioridad más alta (se #1) que se ejecute y que el mensaje no filtrará ninguna otra directiva. Si la spoofiing está desactivada, no se ejecutará ninguna acción.
+  |||||
+  |---|---|---|---|
+  |**Directiva contra correo no deseado**|**Prioridad**|**Suplantación de usuario (ATP)**|**Contra la suplantación de identidad (EOP)**|
+  |Directiva A|1|Activada|Desactivado|
+  |Directiva B|segundo|Desactivada|Activada|
+  |
 
-Como es posible tener muchos grupos de usuarios en muchas directivas, es posible que los administradores tengan que considerar el uso de menos directivas con más capacidades. También es importante asegurarse de que todos los usuarios están cubiertos por una directiva exhaustiva.
+1. El mensaje se marca y se trata como falso, ya que la suplantación de identidad tiene una prioridad mayor (4) que la suplantación del usuario (8).
+2. La Directiva A se aplica a los usuarios porque tiene mayor prioridad que la prioridad B.
+3. En función de la configuración de la Directiva A, no se lleva a cabo ninguna acción en el mensaje, ya que la suplantación de identidad está desactivada en la Directiva.
+4. Se detiene el procesamiento de la Directiva contra correo no deseado, por lo que la Directiva B nunca se aplica a los usuarios.
 
-Para que se apliquen otros tipos de directivas de suplantación de identidad, tendrá que ajustar la configuración de la persona a la que se aplican las distintas directivas.
+Como existe la posibilidad de tener muchos usuarios en muchas directivas personalizadas del mismo tipo, tenga en cuenta las siguientes directrices de diseño para las directivas personalizadas:
 
-
-
+- Asigne una prioridad mayor a las directivas que se aplican a un pequeño número de usuarios y una prioridad más baja a las directivas que se aplican a un gran número de usuarios. Recuerde que la directiva predeterminada siempre se aplica en último lugar.
+- Configure las directivas de mayor prioridad para que tengan una configuración más estricta o más especializada que las directivas de menor prioridad.
+- Considere la posibilidad de usar menos directivas personalizadas (solo use directivas personalizadas para los usuarios que requieran una configuración más estricta o más especializada).

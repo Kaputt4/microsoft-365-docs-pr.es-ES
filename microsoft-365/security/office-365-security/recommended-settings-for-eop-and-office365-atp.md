@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632948"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895232"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "42632948"
 Aunque se permite a los administradores de seguridad personalizar la configuración de seguridad, hay dos niveles de seguridad en EOP y en ATP de Office 365 que le recomendamos: **estándar** y **estricto**. El entorno y las necesidades de cada cliente son diferentes, pero creemos que estos niveles de configuraciones de filtrado de correo ayudarán a evitar que el correo no deseado llegue a la bandeja de entrada de sus empleados en la mayoría de las situaciones.
 
 > [!IMPORTANT]
-> La configuración del correo electrónico no deseado tiene que estar habilitada en el buzón para que el filtrado funcione correctamente. Esta opción está habilitada de forma predeterminada, pero debe comprobarse si el filtrado parece no funcionar. Lea [set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) para obtener más información. 
+> La regla de correo no deseado debe estar habilitada en un buzón para que el filtrado funcione correctamente. Está habilitado de forma predeterminada, pero debe comprobarlo si el filtrado no parece funcionar. Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 En este tema se describe esta configuración recomendada por Microsoft para ayudar a proteger a los usuarios de Office 365.
 
@@ -43,64 +43,80 @@ Anti-spam, anti-malware y anti-phishing son características de EOP que los admi
 
 ### <a name="eop-anti-spam-policy-settings"></a>Configuración de la Directiva contra correo no deseado de EOP
 
-|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
-|---------|---------|---------|---------|
-|Acción de detección de correo no deseado|Mover mensaje a la carpeta Correo no deseado|Colocar el mensaje en cuarentena||
-|Acción de detección de correo no deseado de confianza alta|Colocar el mensaje en cuarentena|Colocar el mensaje en cuarentena||
-|Acción de detección de correo phishing|Colocar el mensaje en cuarentena|Colocar el mensaje en cuarentena||
-|Acción de detección de correo electrónico de phish de confianza alta|Colocar el mensaje en cuarentena|Colocar el mensaje en cuarentena||
-|Acción de detección de correo electrónico en masa|Mover mensaje a la carpeta Correo no deseado|Colocar el mensaje en cuarentena||
-|Establecer el umbral de correo electrónico masivo en|6 |4 |Actualmente, el valor predeterminado es 7, pero se recomienda cambiarlo a 6. Para obtener más información, vea [valores de nivel de queja masiva](bulk-complaint-level-values.md).|
-|Período de retención de cuarentena|30 días|30 días||
-|Sugerencias de seguridad|Activado|Activado||
-|Remitentes permitidos|Ninguno|Ninguno||
-|Dominios de remitentes permitidos|Ninguno|Ninguno|No es necesario agregar dominios de su propiedad (también conocidos como _dominios aceptados_) a la lista de remitentes permitidos. De hecho, se considera un riesgo alto, ya que crea oportunidades para que los actores incorrectos le envíen correo que, de lo contrario, se filtraría. Use [inteligencia de identidad](learn-about-spoof-intelligence.md) en el centro de seguridad & cumplimiento de la página **configuración contra correo no deseado** para revisar todos los remitentes que suplantan dominios que forman parte de la organización o suplantación de dominios externos.|
-|Remitentes bloqueados|Ninguno|Ninguno||
-|Dominios de remitentes bloqueados|Ninguno|Ninguno||
-|Frecuencia de notificación de correo no deseado del usuario final|Habilitado|Habilitado|3 días|
-|Purga automática de cero horas|Activado|Activado|Para ZAP de correo no deseado y phish|
-|MarkAsSpamBulkMail|Activado|Activado|Esta opción solo está disponible en PowerShell|
+Para crear y configurar directivas contra correo no deseado, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
 
-Hay varios otros parámetros en la Directiva contra correo no deseado denominado filtro de correo no deseado avanzado (ASF) que están en desuso. Se comunicará más información sobre las escalas de tiempo de la depreciación de estas características fuera de este tema.
+|||||
+|---|---|---|---|
+|**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
+|Acción de detección de **correo no deseado** <br/><br/> _SpamAction_|**Mover mensaje a la carpeta Correo no deseado** <br/><br/> `MoveToJmf`|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`||
+|Acción de detección de **correo no deseado de confianza alta** <br/><br/> _HighConfidenceSpamAction_|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`||
+|Acción de detección de **correo phishing** <br/><br/> _PhishSpamAction_|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`||
+|Acción de detección de **correo de phishing de alta confianza** <br/><br/> _HighConfidencePhishAction_|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`||
+|Acción de detección de **correo electrónico en masa** <br/><br/> _BulkSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <br/><br/> `MoveToJmf`|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`||
+|Umbral de correo electrónico masivo <br/><br/> _BulkThreshold_|6 |4 |Actualmente, el valor predeterminado es 7, pero se recomienda cambiarlo a 6. Para obtener más información, consulte [nivel de queja masiva (BCL) en Office 365](bulk-complaint-level-values.md).|
+|Período de retención de cuarentena <br/><br/> _QuarantineRetentionPeriod_|30 días|30 días||
+|**Sugerencias de seguridad** <br/><br/> _InlineSafetyTipsEnabled_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|Remitentes permitidos <br/><br/> _AllowedSenders_|Ninguno|Ninguno||
+|Dominios de remitentes permitidos <br/><br/> _AllowedSenderDomains_|Ninguno|Ninguno|No es necesario agregar dominios de su propiedad (también conocidos como _dominios aceptados_) a la lista de remitentes permitidos. De hecho, se considera un riesgo alto, ya que crea oportunidades para que los actores incorrectos le envíen correo que, de lo contrario, se filtraría. Use [inteligencia de identidad](learn-about-spoof-intelligence.md) en el centro de seguridad & cumplimiento de la página **configuración contra correo no deseado** para revisar todos los remitentes que suplantan dominios que forman parte de la organización o suplantación de dominios externos.|
+|Remitentes bloqueados <br/><br/> _BlockedSenders_|Ninguno|Ninguno||
+|Dominios de remitentes bloqueados <br/><br/> _BlockedSenderDomains_|Ninguno|Ninguno||
+|**Habilitar las notificaciones de correo no deseado para el usuario final** <br/><br/> _EnableEndUserSpamNotifications_|Habilitado <br/><br/> `$true`|Habilitado <br/><br/> `$true`||
+|**Enviar notificaciones de correo no deseado para el usuario final cada (días)** <br/><br/> _EndUserSpamNotificationFrequency_|3 días|3 días||
+|**ZAP de correo no deseado** <br/><br/> _SpamZapEnabled_|Habilitado <br/><br/> `$true`|Habilitado <br/><br/> `$true`||
+|**ZAP de phish** <br/><br/> _PhishZapEnabled_|Habilitado <br/><br/> `$true`|Habilitado <br/><br/> `$true`||
+|_MarkAsSpamBulkMail_|Activado|Activado|Esta opción solo está disponible en PowerShell.|
+|
 
-Le recomendamos que **desactive estos valores para** los niveles estándar y estricto:
+Hay otras configuraciones avanzadas de filtro de correo no deseado (ASF) en las directivas contra correo no deseado que están en desuso. Se comunicará más información sobre las escalas de tiempo de la depreciación de estas características fuera de este tema.
 
-|Nombre de la característica de seguridad|Comentarios|
-|---------|---------|
-|IncreaseScoreWithImageLinks||
-|IncreaseScoreWithNumericIps||
-|IncreaseScoreWithRedirectToOtherPort||
-|IncreaseScoreWithBizOrInfoUrls||
-|MarkAsSpamEmptyMessages||
-|MarkAsSpamJavaScriptInHtml||
-|MarkAsSpamFramesInHtml||
-|MarkAsSpamObjectTagsInHtml||
-|MarkAsSpamEmbedTagsInHtml||
-|MarkAsSpamFormTagsInHtml||
-|MarkAsSpamWebBugsInHtml||
-|MarkAsSpamSensitiveWordList||
-|MarkAsSpamFromAddressAuthFail||
-|MarkAsSpamNdrBackscatter||
-|MarkAsSpamSpfRecordHardFail||
+Le recomendamos que **desactive esta configuración ASF** para niveles **estándar** y **estrictos** . Para obtener más información acerca de la configuración de ASF, consulte [Configuración avanzada de filtro de correo no deseado (ASF) en Office 365](advanced-spam-filtering-asf-options.md).
 
-#### <a name="eop-outbound-spam-filter-policy-settings"></a>Configuración de directiva de filtro de correo no deseado de EOP
+|||
+|----|---|
+|**Nombre de la característica de seguridad**|**Comments**|
+|**Vínculos de imagen a sitios remotos** (_IncreaseScoreWithImageLinks_)||
+|**Dirección IP numérica en la dirección URL** (_IncreaseScoreWithNumericIps_)||
+|**Redireccionamiento UL a otro puerto** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**Dirección URL de los sitios Web. BIZ o. info** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Mensajes vacíos** (_MarkAsSpamEmptyMessages_)||
+|**JavaScript o VBScript en HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Etiquetas frame o iframe en HTML** (_MarkAsSpamFramesInHtml_)||
+|**Etiquetas de objeto en HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Etiquetas embed en HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Etiquetas de formulario en HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Web bugs en HTML** (_MarkAsSpamWebBugsInHtml_)||
+|**Aplicar lista de palabras confidenciales** (_MarkAsSpamSensitiveWordList_)||
+|**Registro de SPF: error grave** (_MarkAsSpamSpfRecordHardFail_)||
+|**Filtrado de identificador de remitente condicional: error grave** (_MarkAsSpamFromAddressAuthFail_)||
+|**Retrodispersión de NDR** (_MarkAsSpamNdrBackscatter_)||
+|
 
-|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
-|---------|---------|---------|---------|
-|Límites de destinatarios de la Directiva de correo no deseado saliente-límite externo por hora|500|400||
-|Límites de destinatarios de la Directiva de correo no deseado saliente: límite interno por hora|1000|800||
-|Límites de destinatarios de la Directiva de correo no deseado saliente: límite diario|1000|800||
-|Acción cuando un usuario supera los límites|Restringir al usuario el envío de correo|Restringir al usuario el envío de correo||
+#### <a name="eop-outbound-spam-policy-settings"></a>Configuración de la Directiva de correo no deseado de EOP
+
+Para crear y configurar directivas de correo no deseado saliente, consulte [configurar el filtrado de correo no deseado saliente en Office 365](configure-the-outbound-spam-policy.md).
+
+||||
+|---|---|---|---|
+|**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
+|**Número máximo de destinatarios por usuario: límite horario externo** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
+|**Número máximo de destinatarios por usuario: límite interno por hora** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
+|**Número máximo de destinatarios por usuario: límite diario** <br/><br/> _RecipientLimitPerDay_|1000|800||
+|**Acción cuando un usuario supera los límites** <br/><br/> _ActionWhenThresholdReached_|**Restringir al usuario el envío de correo** <br/><br/> `BlockUser`|**Restringir al usuario el envío de correo** <br/><br/> `BlockUser`||
+|
 
 ### <a name="eop-anti-malware-policy-settings"></a>Configuración de la Directiva de EOP contra malware
 
-|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
-|---------|---------|---------|---------|
-|Respuesta de detección de malware|No|No|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pondrá en cuarentena y solo un administrador podrá publicarlo.|
-|"Filtro de tipos de datos adjuntos comunes" para bloquear tipos de archivos sospechosos|Activado|Activado||
-|Purga automática de cero horas de malware|Activado|Activado||
-|Notificar a los remitentes internos del mensaje no entregado|Deshabilitado|Deshabilitado||
-|Notificar a remitentes externos del mensaje no entregado|Deshabilitado|Deshabilitado||
+Para crear y configurar directivas antimalware, vea [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
+
+|||||
+|---|---|---|---|
+|**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
+|**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <br/><br/> _Acción_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede ser lanzado por un administrador.|
+|**Filtro de tipos de datos adjuntos comunes** <br/><br/> _EnableFileFilter_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Esta opción pone en cuarentena los mensajes que contienen datos adjuntos ejecutables basados en el tipo de archivo, independientemente del contenido de datos adjuntos.|
+|**Purga automática de cero horas de malware** <br/><br/> _ZapEnabled_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|**Notificar a los remitentes internos** del mensaje no entregado <br/><br/> _EnableInternalSenderNotifications_|Deshabilitado <br/><br/> `$false`|Deshabilitado <br/><br/> `$false`||
+|**Notificar a remitentes externos** del mensaje no entregado <br/><br/> _EnableExternalSenderNotifications_|Deshabilitado <br/><br/> `$false`|Deshabilitado <br/><br/> `$false`||
+|
 
 ### <a name="eop-anti-phishing-policy-settings"></a>Configuración de la Directiva de protección contra suplantación de EOP
 

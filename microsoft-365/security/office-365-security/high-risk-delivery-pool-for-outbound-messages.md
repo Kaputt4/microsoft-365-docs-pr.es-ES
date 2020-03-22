@@ -2,10 +2,10 @@
 title: Grupo de entrega de alto riesgo para mensajes salientes
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/24/2016
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,42 +15,41 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Cuando se ha comprometido el sistema de correo electrónico de un cliente por un ataque de malware o de correo no deseado y dicho sistema envía correo no deseado saliente por el servicio de filtrado hospedado, las direcciones IP de los servidores del centro de datos de Office 365 podrían incluirse en listas de bloqueados de terceros.
-ms.openlocfilehash: 19987ae74b9c78a796ddb5f13cf8291a5ed269ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Obtenga información sobre cómo se usa el grupo de entrega de alto riesgo para proteger la reputación de los servidores de correo electrónico en los centros de información de Office 365.
+ms.openlocfilehash: 5d1bd2b14eb17ed74ee1cf1e44967f660f4595b8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599237"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895364"
 ---
-# <a name="high-risk-delivery-pool-for-outbound-messages"></a>Grupo de entrega de alto riesgo para mensajes salientes
+# <a name="high-risk-delivery-pool-for-outbound-messages-in-office-365"></a>Grupo de entrega de alto riesgo para mensajes salientes en Office 365
 
-Cuando se ha comprometido el sistema de correo electrónico de un cliente por un ataque de malware o de correo no deseado y dicho sistema envía correo no deseado saliente por el servicio de filtrado hospedado, las direcciones IP de los servidores del centro de datos de Office 365 podrían incluirse en listas de bloqueados de terceros. Los servidores de destino que no usan el servicio de filtrado hospedado, pero que usan esas listas de bloqueados, rechazan todo el correo electrónico enviado desde cualquiera de las direcciones IP de filtrado hospedado que se hayan agregado a esas listas. Para evitarlo, todos los mensajes salientes que superen el umbral de correo no deseado se envían mediante un grupo de entrega de alto riesgo. Este grupo secundario de correo electrónico saliente solo se usa para enviar mensajes que pueden ser de baja calidad. Esto ayuda a proteger el resto de la red del envío de mensajes que podrían causar el bloqueo de la dirección IP de envío.
-  
-El uso de grupos de entrega de alto riesgo dedicados ayuda a garantizar que el grupo saliente normal solamente envíe mensajes que se sepa que son de alta calidad. El uso de este grupo secundario de direcciones IP ayuda a reducir la probabilidad de que el grupo normal de direcciones IP salientes se agregue a la lista de bloqueados. La posibilidad de que el grupo de entrega de alto riesgo se coloque en una lista de bloqueados aún sigue siendo un riesgo. Esto es así por diseño.
-  
-Los mensajes en los que el dominio de envío no tiene un registro de direcciones (registro A), el cual proporciona la dirección IP del dominio, ni tampoco un registro MX, el cual ayuda a dirigir el correo a los servidores que deben recibirlo en un dominio particular de DNS, siempre se enrutan por el grupo de entrega de alto riesgo independientemente de la disposición del correo no deseado.
-  
-## <a name="understanding-delivery-status-notification-dsn-messages"></a>Descripción de los mensajes de notificación de estado de entrega (DSN)
+Los servidores de correo electrónico de los centros de recursos de Office 365 pueden ser temporalmente culpables de enviar correo no deseado. Por ejemplo, un ataque de malware o de correo no deseado en una organización de correo electrónico local que envía correo saliente a través de Office 365 o cuentas de Office 365 comprometidas. Estos escenarios pueden dar como resultado la dirección IP de los servidores de Office 365 Datacenter Server afectados que aparecen en las listas de bloqueados de terceros. Las organizaciones de correo electrónico de destino que usen estas listas de bloqueo rechazarán el correo electrónico de esos orígenes de mensajes.
 
-El grupo de entrega de alto riesgo saliente administra la entrega de todos los mensajes de DSN "devueltos" o "con error".
-  
-Las posibles causas de un aumento de mensajes de DSN son las siguientes:
-  
-- Una campaña de suplantación de identidad está afectando a uno de los clientes que utiliza el servicio
-    
-- Un ataque por recolección de directorios
-    
-- Un ataque de correo no deseado
-    
-- Un servidor SMTP de acceso no autorizado
-    
-Todos estos factores pueden causar el aumento repentino de la cantidad de mensajes de DSN que el servicio procesa. Muchas veces, los mensajes de DSN se perciben como correo no deseado en otros servidores y servicios de correo electrónico.
-  
-## <a name="for-more-information"></a>Más información
+Para evitarlo, todos los mensajes salientes de los servidores de centro de [servicios](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) de Office 365 que se determine que son correo no deseado o que superen los límites de envío del servicio o [las directivas de correo no deseado salientes](configure-the-outbound-spam-policy.md) se envían a través del _grupo de entrega de alto riesgo_.
 
-[Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md)
-  
-[Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](anti-spam-protection-faq.md)
-  
+El grupo de entrega de alto riesgo es un grupo de direcciones IP secundarias para el correo electrónico saliente que solo se usa para enviar mensajes de "baja calidad" (por ejemplo, correo no deseado y [dispersión](backscatter-messages-and-eop.md)). El uso del grupo de entrega de alto riesgo ayuda a evitar que el grupo de direcciones IP normal para el correo electrónico saliente envíe correo no deseado. El grupo de direcciones IP normal para el correo electrónico saliente mantiene la reputación enviando mensajes de "alta calidad", lo que reduce la probabilidad de que esta dirección IP aparezca en las listas de direcciones IP bloqueadas.
 
+La posibilidad muy real de que las direcciones IP en el grupo de entrega de alto riesgo se coloquen en las listas de bloqueo de IP, pero esto es así por diseño. La entrega a los destinatarios deseados no está garantizada porque muchas organizaciones de correo electrónico no aceptan mensajes del grupo de entrega de alto riesgo.
+
+Para obtener más información, consulte [controlar el correo no deseado saliente en Office 365](outbound-spam-controls.md).
+
+> [!NOTE]
+> Los mensajes en los que el dominio de correo electrónico de origen no tiene ningún registro A y no MX definido en DNS público siempre se redirigen a través del grupo de entrega de alto riesgo, independientemente de su correo no deseado o la disposición del límite de envío.
+
+## <a name="bounce-messages"></a>Mensajes de devolución
+
+El grupo de entrega de alto riesgo saliente administra la entrega de todos los informes de no entrega (también conocidos como NDR, mensajes de devolución, notificaciones de estado de entrega o DSN).
+
+Entre las posibles causas de un aumento de NDR se incluyen:
+
+- Una campaña de suplantación de identidad que afecta a uno de los clientes que usan el servicio.
+
+- Un ataque de recopilación de directorios.
+
+- Un ataque de correo no deseado.
+
+- Un servidor de correo electrónico malintencionado.
+
+Todos estos problemas pueden dar como resultado un aumento repentino del número de NDR que procesa el servicio. Muchas veces, estos NDR parecen ser correo no deseado para otros servidores y servicios de correo electrónico (también conocido como _[redispersión](backscatter-messages-and-eop.md)_).

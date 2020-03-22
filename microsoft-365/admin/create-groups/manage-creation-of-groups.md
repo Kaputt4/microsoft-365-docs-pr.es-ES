@@ -1,7 +1,6 @@
 ---
 title: Administrar quién puede crear grupos de Office 365
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
 author: MikePlumleyMSFT
@@ -22,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Obtenga información sobre cómo controlar qué usuarios pueden crear grupos de Office 365.
-ms.openlocfilehash: a6016f6406b211aae216702910a696be50e1b82c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 0da8aded4b7a55975a9327cc4f29ff8679b3ccf2
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352641"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894556"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Administrar quién puede crear grupos de Office 365
 
   
 Puesto que es extremadamente fácil para los usuarios crear grupos de Office 365, no va a recibir una infinidad de solicitudes para crearlos en nombre de otros usuarios. Sin embargo, dependiendo de su empresa, es posible que quiera controlar quién tiene la capacidad de crear grupos.
   
-Este artículo explica cómo deshabilitar la capacidad de crear grupos **en todos los servicios de Office 365 que usan grupos**: 
+En este artículo se explica cómo deshabilitar la capacidad de crear grupos en todos los servicios de Office 365 que usan grupos, entre los que se incluyen:
   
 - Outlook
     
@@ -92,9 +91,9 @@ Solo se puede usar un grupo de seguridad de la organización para controlar qui�
 Los administradores de los roles enumerados anteriormente no tienen que ser miembros de este grupo: conservan la capacidad de crear grupos.
 
 > [!IMPORTANT]
-> Asegúrese de usar un **grupo de seguridad** para restringir quién puede crear grupos. Si intenta usar un grupo de Office 365, los miembros no podrán crear un grupo desde SharePoint ya que comprueba si hay un grupo de seguridad. 
+> Asegúrese de usar un **grupo de seguridad** para restringir quién puede crear grupos. Si intenta usar un grupo de Office 365, los miembros no podrán crear un grupo desde SharePoint porque busca un grupo de seguridad. 
     
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
 
 2. Haga clic en **Agregar un grupo**.
 
@@ -103,59 +102,18 @@ Los administradores de los roles enumerados anteriormente no tienen que ser miem
 4. Termine de configurar el grupo de seguridad, agregando personas u otros grupos de seguridad que quiera que puedan crear grupos en su organización.
     
 Para obtener instrucciones detalladas, vea [crear, editar o eliminar un grupo de seguridad en el centro de administración de Microsoft 365](../email/create-edit-or-delete-a-security-group.md).
-  
-## <a name="step-2-install-the-preview-version-of-the-azure-active-directory-powershell-for-graph"></a>Paso 2: instalar la versión preliminar de Azure Active Directory PowerShell para Graph
+ 
+## <a name="step-2-run-powershell-commands"></a>Paso 2: Ejecutar los comandos de PowerShell
 
-Estos procedimientos requieren la versión preliminar de Azure Active Directory PowerShell para Graph. La versión GA no funcionará.
+Debe usar la versión preliminar de [Azure Active Directory PowerShell para Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (nombre de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado en el nivel de Grupo:
+
+- Si todavía no ha instalado ninguna de las versiones de los módulos de PowerShell de Azure AD, consulte [Instalar el módulo de Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) y siga las instrucciones para instalar la versión preliminar pública.
+
+- Si tiene instalada la versión 2.0 de disponibilidad general para el módulo de PowerShell de Azure AD (AzureAD), deberá desinstalarla ejecutando `Uninstall-Module AzureAD` en su sesión de PowerShell y, a continuación, instalar la versión preliminar ejecutando `Install-Module AzureADPreview`.
+
+- Si ya ha instalado la versión preliminar, ejecute `Install-Module AzureADPreview` para asegurarse de que es la última versión de este módulo.
 
 
-> [!IMPORTANT]
-> No puede instalar la versión preliminar y la versión GA en el mismo equipo al mismo tiempo. Puede instalar el módulo en Windows 10, Windows Server 2016.
-
-  
-Como práctica recomendada, recomendamos mantenerse  *siempre*  actualizado: desinstale la versión antigua de AzureADPreview o de AzureAD y obtenga la última. 
-  
-1. En la barra de búsqueda, escriba Windows PowerShell.
-    
-2. Haga clic con el botón derecho en **Windows PowerShell** y seleccione **Ejecutar como administrador**.
-    
-    ![Abrir PowerShell como "Ejecutar como administrador".](../../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
-    
-3. Establezca la Directiva en RemoteSigned mediante [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy).
-    
-    ```
-    Set-ExecutionPolicy RemoteSigned
-    ```
-  
-4. Compruebe el módulo instalado:
-    
-    ```
-    Get-InstalledModule -Name "AzureAD*"
-    ```
-
-5. Para desinstalar una versión anterior de AzureADPreview o AzureAD, ejecute este comando:
-  
-    ```
-    Uninstall-Module AzureADPreview
-    ```
-
-    o bien
-  
-    ```
-    Uninstall-Module AzureAD
-    ```
-
-6. To install the latest version of AzureADPreview, run this command:
-  
-    ```
-    Install-Module AzureADPreview
-    ```
-
-    At the message about an untrusted repository, type **Y**. It will take a minute or so for the new module to install. 
-
-Deje abierta la ventana de PowerShell para el paso 3, a continuación.
-  
-## <a name="step-3-run-powershell-commands"></a>Paso 3: ejecutar comandos de PowerShell
 
 Copie el script siguiente en un editor de texto, como el Bloc de notas o [Windows POWERSHELL ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 

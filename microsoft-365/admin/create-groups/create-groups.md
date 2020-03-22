@@ -1,8 +1,7 @@
 ---
 title: Crear un grupo de Office 365 en el centro de administración
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,46 +19,23 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a crear y eliminar grupos de Office 365, a agregar y quitar miembros de grupo y a personalizar la forma en que funciona el grupo.
-ms.openlocfilehash: 169eef8121471c4268c652c942ce5788feb08e52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 59a7cec5fb6822ecb622bf4abe4cebd859b6f206
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245493"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894616"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>Crear un grupo de Office 365 en el centro de administración de Microsoft 365
   
 Aunque los usuarios pueden crear un grupo de Office 365 desde Outlook u otras aplicaciones, como administrador, es posible que necesite crear o eliminar grupos, agregar o quitar miembros y personalizar su funcionamiento. El centro de administración de Microsoft 365 es el punto de partida. 
 
 > [!TIP]
-> Office 365 los grupos de Yammer conectados deben crearse en Yammer, pero se pueden administrar en el centro de administración de Microsoft 365 como otros grupos de Office 365. Para obtener más información, vea [Grupos de Office 365 y Yammer](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
-::: moniker-end
+> Office 365 los grupos de Yammer conectados deben crearse en Yammer, pero se pueden administrar en el centro de administración de Microsoft 365 como otros grupos de Office 365. Para obtener más información, consulte [Yammer y Office 365 Groups](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
 
 ## <a name="create-an-office-365-group"></a>Crear un grupo de Office 365
 
-::: moniker range="o365-worldwide"
-
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=848041), vaya a **la** > **** página grupos de grupos. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=850627), vaya a **la** > **** página grupos de grupos. 
-
-::: moniker-end
+1. En el centro de administración, expanda **grupos**y, a continuación, haga clic en **grupos**.
 
 2. Seleccione **Agregar un grupo**.
   
@@ -80,11 +56,10 @@ Aunque los usuarios pueden crear un grupo de Office 365 desde Outlook u otras ap
 Una vez que se haya creado el grupo, puede Agregar miembros y configurar opciones adicionales.
 
 ::: moniker range="o365-worldwide"
-  
+
 Los usuarios pueden [agregarse a sí mismos o solicitar la aprobación](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), o puede agregarlos ahora.
 
-
-1. En el centro de administración, actualice la página para que aparezca el nuevo grupo, <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Seleccione grupos de</a> **grupos** \> y, a continuación, seleccione el nombre del grupo al que desea agregar miembros.
+1. En el centro de administración, actualice la página para que aparezca el nuevo grupo y, a continuación, seleccione el nombre del grupo al que desea agregar miembros.
     
 2. En la pestaña **miembros** , seleccione **Ver todos y administrar miembros**.
 
@@ -101,11 +76,9 @@ El grupo aparecerá en Outlook con los miembros asignados.
 ::: moniker range="o365-germany"
 
 Los usuarios pueden [agregarse a sí mismos o solicitar la aprobación](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), o puede agregarlos ahora.
-
 1. En el centro de administración, actualice la página para que aparezca el nuevo grupo, <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Seleccione grupos de</a> **grupos** \> y, a continuación, seleccione el grupo al que desea agregar miembros.
     
 2. Junto a **miembros**, seleccione **Editar**.
-
 3. Seleccione **Agregar miembros**.
     
 4. Seleccione los usuarios que desea agregar y, a continuación, seleccione **Guardar**.
@@ -119,11 +92,9 @@ El grupo aparecerá en Outlook con los miembros asignados.
 ::: moniker range="o365-21vianet"
 
 Los usuarios pueden [agregarse a sí mismos o solicitar la aprobación](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), o puede agregarlos ahora.
-
 1. En el centro de administración, actualice la página para que aparezca el nuevo grupo, <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Seleccione grupos de</a> **grupos** \> y, a continuación, seleccione el grupo al que desea agregar miembros.
     
 2. Junto a **miembros**, seleccione **Editar**.
-
 3. Seleccione **Agregar miembros**.
     
 4. Seleccione los usuarios que desea agregar y, a continuación, seleccione **Guardar**.
@@ -134,9 +105,7 @@ El grupo aparecerá en Outlook con los miembros asignados.
   
 ::: moniker-end
 
-
-
-## <a name="who-can-delete-email-from-the-group-inbox"></a>¿Quién puede eliminar un correo electrónico de la bandeja de entrada del grupo?
+## <a name="who-can-delete-email-from-the-group-inbox"></a>¿Quién puede eliminar el correo electrónico de la bandeja de entrada del grupo?
 
 El propietario del grupo puede eliminar los correos electrónicos de la bandeja de entrada del grupo, independientemente de que sea el autor inicial.
   
@@ -146,15 +115,12 @@ Cuando se elimina un correo electrónico del buzón de grupo, no se elimina de n
 
 ## <a name="next-step-manage-your-group"></a>Siguiente paso: administrar el grupo
 
-Después de crear un nuevo grupo y agregar miembros, puede configurar su grupo, como editar el nombre o la descripción del grupo, cambiar propietarios o miembros, y especificar si los remitentes externos pueden enviar un correo electrónico al grupo y si deben enviar copias del grupo conversaciones a los miembros. Consulte [Manage an Office 365 Group](manage-groups.md).
+Después de crear un nuevo grupo y agregar miembros, puede configurar su grupo, como editar el nombre o la descripción del grupo, cambiar propietarios o miembros, y especificar si los remitentes externos pueden enviar un correo electrónico al grupo y si deben enviar copias del grupo conversaciones a los miembros. Consulte [administrar un grupo de Office 365](manage-groups.md) para obtener información.
 
 ## <a name="related-articles"></a>Artículos relacionados
-
-[Administrar un grupo de Office 365](manage-groups.md)
 
 [Administrar el acceso de invitado a los grupos de Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
 [Elegir el dominio que se va a usar al crear grupos de Office 365](choose-domain-to-create-groups.md)
 
 [Actualizar listas de distribución a grupos de Office 365](../manage/upgrade-distribution-lists.md)
-

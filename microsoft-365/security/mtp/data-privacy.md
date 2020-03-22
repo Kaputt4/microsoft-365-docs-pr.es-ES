@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b715cd2dcbc41e2aa5a4ae829677dfe250394346
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235139"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894269"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Seguridad y privacidad de los datos de la Protección contra amenazas de Microsoft
 
@@ -33,12 +33,9 @@ ms.locfileid: "42235139"
 
 
 
-Al utilizar la versión preliminar de la Protección contra amenazas de Microsoft, usted acepta los siguientes términos:
+Mediante el uso de la protección contra amenazas de Microsoft, usted da su consentimiento a los siguientes términos:
 
-Sus correspondientes datos de cliente (tal y como se definen en los Términos del servicio en línea ["OST"]) se transferirán de otros servicios de Microsoft y de la Protección contra amenazas de Microsoft a los servicios de Microsoft correspondientes. Durante la permanencia de esta versión preliminar, el uso de sus datos de cliente en la Protección contra amenazas de Microsoft respetará los estándares y compromisos de control de datos de la Protección contra amenazas avanzada de Microsoft Defender (Microsoft Defender ATP). Usted acepta que estos compromisos pueden diferir de los servicios desde los que se transfieren los datos de cliente. Además, los datos de cliente almacenados en la Protección contra amenazas de Microsoft se almacenarán en reposo en la geoárea que seleccionó para el almacenamiento de sus datos de cliente ATP de Microsoft Defender, que pueden diferir de la geoárea que seleccionó en relación con otros servicios. Microsoft no transferirá los Datos de cliente que se encuentren fuera de dicha Geo, salvo que se indique lo contrario en la sección "Ubicación de datos" del Centro de confianza de Microsoft ubicado en el [Centro de confianza de Microsoft](https://www.microsoft.com/trust-center).
-
-Además, mientras usted determina cuál de sus usuarios puede acceder a la Protección contra amenazas de Microsoft, la Protección contra amenazas de Microsoft no permite actualmente el control de acceso basado en roles ("RBAC"). Usted acepta que en la medida en que la Protección contra amenazas de Microsoft reciba datos de un servicio de Microsoft que soporte RBAC, los niveles de acceso en ese servicio no se aplicarán en la Protección contra amenazas de Microsoft.
-
+Al activar la protección contra amenazas de Microsoft (MTP), usted da su consentimiento a los siguientes términos. Los datos de cliente aplicables, tal y como se definen en las condiciones del servicio en línea (OST), se transferirán desde otros servicios de Microsoft a MTP. El uso de los datos de clientes en MTP seguirá las normas y compromisos de administración de datos para la protección contra amenazas avanzada de Microsoft defender (ATP de Microsoft defender). Usted acepta que estos compromisos pueden diferir de los servicios desde los que se transfieren los datos de cliente. Además, los datos de clientes almacenados en MTP se almacenarán en reposo en el área geográfica que seleccionó para el almacenamiento de los datos de cliente de MDATP, que pueden diferir de la geográfica que seleccionó en relación con otros servicios. Microsoft no transferirá los datos de cliente fuera de esta geografía excepto como se indica en la sección de ubicación de datos del [centro de confianza de Microsoft](https://www.microsoft.com/trust-center) .
 
 Para obtener más información sobre el almacenamiento de datos y la información de privacidad de los productos específicos, vea:
 - [Almacenamiento y privacidad de datos del ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

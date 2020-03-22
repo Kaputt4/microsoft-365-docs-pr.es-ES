@@ -1,11 +1,11 @@
 ---
-title: Usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
+title: Usar reglas de flujo de correo para el SCL en los mensajes
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,56 +16,55 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo establecer el SCL de los mensajes en Exchange Online Protection.
-ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b7ea9a0f046e5a48f0de8d4ac9ae6d53821f03c0
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081988"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895100"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
 
-Puede crear una regla de flujo de correo (también denominada regla de transporte) que establezca el nivel de confianza contra correo no deseado (SCL) de un mensaje de correo electrónico. El SCL es una medida de la probabilidad de que un mensaje sea correo no deseado. El correo no deseado son mensajes de correo electrónico no solicitados (y a menudo no deseados). El servicio realiza diferentes acciones en un mensaje según su clasificación SCL. Por ejemplo, tal vez desee evitar el filtrado de contenido de correo no deseado para los mensajes enviados por personas dentro de la organización porque confía en que un mensaje que envía internamente un colega no es correo no deseado. El uso de reglas de flujo de correo para establecer el valor de SCL de un mensaje le proporciona un mayor control para controlar el correo no deseado.
+Si es un cliente de Office 365 con buzones en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP usa directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) para analizar mensajes entrantes de correo no deseado. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
- **¿Qué necesita saber antes de comenzar?**
+Si desea marcar determinados mensajes como correo no deseado antes de que se analicen mediante el filtrado de correo no deseado o marcar mensajes para que omitan el filtrado de correo no deseado, puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para identificar los mensajes y establecer el nivel de confianza contra correo no deseado (SCL). Para obtener más información sobre el SCL, vea [nivel de confianza contra correo no deseado (SCL) en Office 365](spam-confidence-levels.md).
 
-- Tiempo estimado para finalizar este procedimiento: 10 minutos.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Deberá tener asignados permisos antes de poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "reglas de flujo de correo" en [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) o [Feature Permissions in EOP](feature-permissions-in-eop.md).
+- Debe tener asignados permisos en Exchange Online para poder realizar estos procedimientos. En concreto, debe tener asignado el rol **reglas de transporte** , que se asigna a las **funciones administración**de la organización, **Administración del cumplimiento**y administración de **registros** de forma predeterminada. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para abrir el EAC en Exchange Online, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Para crear una regla de flujo de correo que establezca el SCL de un mensaje
+- Para obtener más información acerca de las reglas de flujo de correo en Exchange Online, consulte [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) .
 
-1. En el Centro de administración de Exchange (EAC), elija **Flujo de correo** \> **Reglas**.
+## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Usar el EAC para crear una regla de flujo de correo que establezca el SCL de un mensaje
 
-2. Elija **Nuevo**![Agregar icono](../../media/ITPro-EAC-AddIcon.gif) y seleccione **Crea una nueva regla**.
+1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-3. Especifique un nombre para la regla.
+2. Haga **Add** ![clic en agregar](../../media/ITPro-EAC-AddIcon.png) icono Agregar y, a continuación, seleccione **crear una nueva regla**.
 
-4. Elija **Más opciones** y, en **Aplicar esta regla si**, especifique una condición que desencadenará la acción que establecerá para esta regla (que es establecer el valor SCL).
+3. En la ventana **Nueva regla** que se abre, configure las siguientes opciones:
 
-   Por ejemplo, puede establecer que **El remitente** \> **es interno/externo** y, a continuación, en el cuadro de diálogo **seleccionar ubicación de remitente**, seleccionar **Dentro de la organización** y elegir **aceptar**.<br/>
-   ![Seleccionar ubicación del remitente](../../media/EOP-ETR-SetSCL-1.jpg)
+   - **Name**: escriba un nombre único y descriptivo para la regla.
 
-5. En **Hacer lo siguiente**, seleccione **Modificar propiedades del mensaje** \> **establecer el nivel de confianza de correo no deseado (SCL)**.
+   - Haga clic en **Más opciones**.
 
-6. En el cuadro **especificar SCL** , seleccione uno de los siguientes valores y elija **Aceptar**:
+   - **Aplicar esta regla si**: Seleccione una o más condiciones para identificar los mensajes. Para obtener más información, consulte [mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-   - **Omitir el filtrado de correo no deseado**: establece el SCL en-1, lo que significa que no se realizará el filtrado de contenido.
+   - **Haga lo siguiente**: seleccione **modificar las propiedades** \> del mensaje **establecer el nivel de confianza contra correo no deseado (SCL)**. En el cuadro de diálogo **especificar SCL** que aparece, configure uno de los siguientes valores:
 
-   - **0-4**: el mensaje se pasará al filtro de contenido para su procesamiento adicional.
+   - **Omitir el filtrado de correo no deseado**: establece el SCL en-1, lo que significa que los mensajes omitirán el filtrado de correo no deseado.
 
-   - **5-6**: se aplicará la acción especificada para **correo no deseado** en las directivas de filtro de contenido aplicables. De forma predeterminada, la acción es enviar el mensaje a la carpeta de correo no deseado del destinatario.
+     > [!CAUTION]
+     > Tenga cuidado con la autorización de mensajes para omitir el filtrado de correo no deseado. Los atacantes pueden usar esta vulnerabilidad para enviar mensajes de suplantación de identidad (phishing) y otros mensajes malintencionados a la organización. Las reglas de flujo de correo requieren más que solo la dirección de correo electrónico o el dominio del remitente. Para obtener más información, vea [crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).
 
-   - **7-9**: se aplicará la acción especificada para el **correo no deseado de confianza alta** en las directivas de filtro de contenido aplicables. De forma predeterminada, la acción es enviar el mensaje a la carpeta de correo no deseado del destinatario.
+   - de **0 a 4**: el mensaje se envía a través del filtrado de correo no deseado para su procesamiento adicional.
 
-   Para obtener más información acerca de cómo configurar las directivas de filtrado de contenido, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). Para obtener más información acerca de los valores de SCL en el servicio, vea [Niveles de confianza de correo no deseado](spam-confidence-levels.md).
+   - **5 o 6**: el mensaje se marca como **correo no deseado**. La acción que ha configurado para los veredictos de filtrado de **correo no deseado** en las directivas contra correo no deseado se aplica al mensaje (el valor predeterminado es **mover mensaje a la carpeta de correo electrónico no deseado**).
 
-7. Especifique propiedades adicionales para la regla y elija **Guardar**.
+   - de **7 a 9**: el mensaje se marca como **correo no deseado de confianza alta**. La acción que ha configurado para los veredictos de filtrado de **correo no deseado de confianza alta** en las directivas contra correo no deseado se aplica al mensaje (el valor predeterminado es **mover mensaje a la carpeta correo electrónico no deseado**).
 
-   > [!TIP]
-   > Para obtener más información sobre las propiedades adicionales que puede seleccionar o especificar para esta regla, vea [usar el EAC para crear reglas de flujo de correo](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules).
+4. Especifique las propiedades adicionales que desee para la regla. Cuando haya terminado, haga clic en **Guardar**.
 
 ## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 

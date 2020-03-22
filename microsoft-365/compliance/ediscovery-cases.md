@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más adelante en eDiscovery avanzado de Office 365.
-ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634958"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894969"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
@@ -551,7 +551,14 @@ Si el caso que está intentando eliminar todavía contiene suspensiones, recibir
   |Número máximo de retenciones de casos para una organización  <br/> |10 000  <br/> |
   |Número máximo de buzones en una sola suspensión de casos  <br/> |1,000  <br/> |
   |Número máximo de sitios de SharePoint y OneDrive para la empresa en una sola suspensión de mayúsculas y minúsculas  <br/> |100  <br/> |
-   
+  |Número máximo de escenarios mostrados en la Página principal de eDiscovery y el número máximo de elementos que se muestran en las pestañas suspensiones, búsquedas y exportación en un caso. <sup>1</sup> |1,000|
+  |||
+
+   > [!NOTE]
+   > <sup>1</sup> para ver una lista de más de 1.000 casos, suspensiones, búsquedas o exportaciones, puede usar el cmdlet de PowerShell de cumplimiento de & de seguridad de Office 365:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+
+
+
 - **¿Qué ocurre con los casos creados en la página Administración de casos en eDiscovery avanzado?** Puede obtener acceso a una lista de casos de eDiscovery avanzados más antiguos si hace clic en el vínculo que se encuentra en la parte inferior de la página **eDiscovery** en el centro de seguridad & cumplimiento. Sin embargo, para realizar cualquier trabajo en un caso anterior, debe ponerse en contacto con el soporte técnico de Office 365 y solicitar que el caso se mueva a un nuevo caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. 
     
 - **¿Por qué debería crear un administrador de exhibición de documentos electrónicos? ** Tal como se explicó anteriormente, un administrador de exhibición de documentos electrónicos es miembro del Grupo de roles de administrador de exhibición de documentos electrónicos, que puede ver y tener acceso a todos los casos de exhibición de documentos electrónicos de la organización. Esta capacidad para tener acceso a todos los casos de exhibición de documentos electrónicos tiene dos fines importantes:

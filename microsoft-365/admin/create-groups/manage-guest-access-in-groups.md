@@ -1,12 +1,10 @@
 ---
 title: Administrar el acceso de invitado en los grupos de Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 12/18/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Obtenga información sobre cómo agregar invitados a un grupo de Office 365, ver usuarios invitados y usar PowerShell para controlar el acceso de invitado.
-ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610618"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894508"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>Administrar el acceso de invitado en los grupos de Office 365
 
@@ -50,11 +48,9 @@ El acceso de invitado en grupos suele usarse como parte de un escenario más amp
 
 Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo en el centro de administración de 365 de Microsoft.
 
-1. En el centro de administración, vaya a la página de los <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Complementos &</a> de los servicios de **configuración** \> .
-
-2. Seleccione **Office 365 grupos**.
+1. En el centro de administración, vaya a **Settings** \> **Settings** configuración y seleccione **Office 365 grupos**.
   
-3. En la página **Office 365 grupos** , elija si desea permitir que los usuarios ajenos a la organización obtengan acceso a los recursos del grupo o permitir que los propietarios del grupo agreguen personas fuera de la organización a los grupos.
+2. En la página **Office 365 grupos** , elija si desea permitir que los usuarios ajenos a la organización obtengan acceso a los recursos del grupo o permitir que los propietarios del grupo agreguen personas fuera de la organización a los grupos.
 
 ## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>Agregar invitados a un grupo de Office 365 desde el centro de administración
 
@@ -62,7 +58,7 @@ Si el invitado ya existe en su directorio, puede agregarlo a los grupos desde el
   
 1. En el centro de administración, vaya a **la** > **Groups** página grupos de grupos.
   
-2. Seleccione el grupo al que desea agregar el invitado y seleccione **Ver todos y administrar miembros** en la pestaña **miembros** . 
+2. Haga clic en el grupo al que desea agregar el invitado y seleccione **Ver todos y administrar miembros** en la pestaña **miembros** . 
   
 4. Seleccione **Agregar miembros**y, a continuación, elija el nombre del invitado que quiera agregar.
     
@@ -76,7 +72,7 @@ Si desea editar la información de algún invitado, puede [Agregar o actualizar 
 
 Si desea permitir el acceso de invitado a la mayoría de los grupos, pero tenga algunos en los que desea evitar el acceso de invitado, puede bloquear el acceso de invitado para grupos individuales mediante PowerShell de Microsoft.
 
-Debe usar la versión preliminar de [Azure Active Directory PowerShell para Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (nombre de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado en el nivel de Grupo:
+Debe usar la versión preliminar de [Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (nombre de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado en el nivel de Grupo:
 
 - Si todavía no ha instalado ninguna de las versiones de los módulos de PowerShell de Azure AD, consulte [Instalar el módulo de Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) y siga las instrucciones para instalar la versión preliminar pública.
 

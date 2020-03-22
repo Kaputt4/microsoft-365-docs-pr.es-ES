@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 'El complemento de notificación de correo no deseado de Microsoft para Microsoft Office Outlook permite notificar mensajes de correo no deseado de varias formas:'
-ms.openlocfilehash: 3f8d07a2499fa3c8690393aa444e018b83c632b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b1ed918e4b954cc7b2d79e52abd6f58a99eda0f0
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088269"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895184"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Informar a Microsoft sobre mensajes de correo electrónico no deseado
 
@@ -33,7 +33,7 @@ El complemento de notificación de correo no deseado de Microsoft para Microsoft
 
 - Desde un mensaje de correo electrónico abierto
 
-El complemento de notificación de correo no deseado permite enviar informes al servicio Microsoft Exchange Online Protection (EOP). Si su buzón no está protegido por el servicio, el envío de notificaciones de correo no deseado no afectará a los filtros de correo no deseado. Los administradores pueden obtener información sobre la configuración de correo no deseado que se aplica a toda la organización en [Cómo evitar que el correo no deseado se marque como correo no deseado en office 365](prevent-email-from-being-marked-as-spam.md) o [cómo reducir el correo no deseado en Office 365](reduce-spam-email.md). Estos son útiles si tiene control de nivel de administrador y desea evitar falsos positivos o negativos falsos.
+El complemento de notificación de correo no deseado permite enviar informes al servicio Microsoft Exchange Online Protection (EOP). Si su buzón no está protegido por el servicio, el envío de notificaciones de correo no deseado no afectará a los filtros de correo no deseado. Los administradores pueden obtener más información sobre la configuración de correo no deseado que se aplica a toda la organización en [crear listas de remitentes seguros en office 365](create-safe-sender-lists-in-office-365.md) y [crear listas de remitentes bloqueados en Office 365](create-block-sender-lists-in-office-365.md). Estos son útiles si tiene control de nivel de administrador y desea evitar falsos positivos o negativos falsos.
 
 > [!TIP]
 > También puede enviar mensajes de correo no deseado directamente a Microsoft con la dirección de correo electrónico de [Junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) y los mensajes falsos positivos (correo no no deseado) mediante la dirección de correo electrónico [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) . Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
@@ -68,13 +68,3 @@ Los mensajes seleccionados se envían a Microsoft para su análisis y se mueven 
     > Si no desea recibir un mensaje de confirmación al enviar mensajes de correo no deseado, active la casilla **No volver a mostrar este mensaje**.
 
 El mensaje seleccionado se envía a Microsoft para su análisis y se mueve a la carpeta de correo no deseado. Para confirmar que el mensaje se ha enviado, abra la carpeta **Mensajes enviados** para ver el mensaje enviado.
-
-## <a name="for-more-information"></a>Más información
-
-[Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md)
-
-[Solución de problemas e información de soporte técnico](troubleshooting-and-support-information.md)
-
-[Evitar que el correo electrónico deseado se marque como correo no deseado en Office 365](prevent-email-from-being-marked-as-spam.md)
-
-[Cómo reducir el correo no deseado en Office 365](reduce-spam-email.md)
