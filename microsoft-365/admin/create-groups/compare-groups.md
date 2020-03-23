@@ -1,8 +1,7 @@
 ---
 title: Comparar grupos en Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Obtenga más información sobre los tipos de grupos que puede usar en Office 365.
-ms.openlocfilehash: 5b8a3a7859a510a07b579f3b1da255e555d6ae1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7d0a18606918884381b0bf7863cfac6cafb29c29
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245500"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894604"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
@@ -33,15 +32,15 @@ En la sección **Grupos** del Centro de administración de Microsoft 365, puede 
 
 - **Los grupos de Office 365** se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía.
 - **Los grupos de distribución** se usan para enviar notificaciones a un grupo de personas.
-- **Los grupos de seguridad** se usan para conceder acceso a los recursos de SharePoint.
-- **Los grupos de seguridad habilitados para correo** se usan para conceder acceso a los recursos de SharePoint y enviar notificaciones por correo electrónico a estos usuarios.
+- **Los grupos de seguridad** se usan para conceder acceso a los recursos como SharePoint.
+- **Los grupos de seguridad habilitados para correo** se usan para conceder acceso a recursos como SharePoint y enviar notificaciones por correo electrónico a estos usuarios.
 - **Los buzones compartidos** se usan cuando varios usuarios necesitan tener acceso al mismo buzón, como la dirección de correo electrónico del soporte técnico e información de la empresa.
 
 ## <a name="office-365-groups"></a>Grupos de Office 365
 
 Los grupos de Office 365 se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Con cada grupo de Office 365, los miembros obtienen un correo electrónico de grupo y un área de trabajo compartida para conversaciones, archivos y eventos de calendario y un programador.
 
-Puede agregar usuarios externos a su empresa a un grupo siempre y cuando esta opción se haya [habilitado por parte del administrador](manage-guest-access-in-groups.md). También puede permitir que los remitentes externos puedan enviar correos electrónicos a la dirección de correo electrónico del grupo.
+Puede agregar personas externas a su empresa a un grupo siempre y cuando esta opción se haya [habilitado por parte del administrador](manage-guest-access-in-groups.md). También puede permitir que los remitentes externos puedan enviar correos electrónicos a la dirección de correo electrónico del grupo.
 
 Los grupos de Office 365 se pueden [configurar para la pertenencia dinámica en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), lo que permite que los miembros del grupo se agreguen o eliminen automáticamente en función de los atributos del usuario como el departamento, la ubicación, el puesto, etc.
 
@@ -77,7 +76,7 @@ Los buzones compartidos pueden recibir mensajes externos si el administrador ha 
 
 Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del buzón si el administrador le ha concedido permisos de usuario para hacerlo. Esto es especialmente útil para los buzones de ayuda y soporte técnico, ya que los usuarios pueden enviar mensajes de correo electrónico desde "Soporte técnico de Contoso" o "Escritorio de recepción del edificio A".
 
-Actualmente, no es posible migrar un buzón compartido a un grupo de Office 365. ¿Le gustaría que fuese posible? Infórmenos. **[Vote aquí](https://go.microsoft.com/fwlink/?linkid=871518)**
+Actualmente, no es posible migrar un buzón compartido a un grupo de Office 365. ¿Le gustaría que fuese posible? Infórmenos. **[Vote aquí](https://go.microsoft.com/fwlink/?linkid=871518)**.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -18,12 +18,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento para administradores de EOP independiente para evitar falsos negativos de correo no deseado
-ms.openlocfilehash: 6261c183d39b84435110616491f5bd0b2f3f891b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b3b4005016d8a4192241299cac50eddf59f332d5
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086599"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895422"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizar el filtro contra correo no deseado de Office 365 con estas opciones de configuración
 
@@ -41,13 +41,13 @@ Para personalizar el filtro contra correo no deseado de Office 365, agregue la d
 
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Bloquear el correo masivo con reglas de flujo de correo (reglas de transporte) o el filtro de correo no deseado
 
-¿Es el correo no deseado principalmente correo masivo (por ejemplo, boletines o promociones)? Puede personalizar el filtro de correo no deseado en Office 365 si [usa reglas de flujo de correo para configurar el filtro de mensajes de correo masivo](use-transport-rules-to-configure-bulk-email-filtering.md) o activar la opción **Correo masivo** en las [Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md) del filtro de correo no deseado. En el centro de administración de Exchange, primero haga clic en **Protección** \> **Filtro de contenido** y, después, haga doble clic en la directiva de filtro que quiera ajustar. Haga clic en **Acciones de correo no deseado y correo masivo** para ajustar la configuración, como se muestra aquí.
+¿Es el correo no deseado principalmente correo masivo (por ejemplo, boletines o promociones)? Puede personalizar el filtro de correo no deseado en Office 365 si [usa reglas de flujo de correo para configurar el filtro de mensajes de correo masivo](use-transport-rules-to-configure-bulk-email-filtering.md) o activar la opción **Correo masivo** en la [configuración de filtro de correo no deseado avanzado (ASF) en Office 365](advanced-spam-filtering-asf-options.md). En el centro de administración de Exchange, primero haga clic en **Protección** \> **Filtro de contenido** y, después, haga doble clic en la directiva de filtro que quiera ajustar. Haga clic en **Acciones de correo no deseado y correo masivo** para ajustar la configuración, como se muestra aquí.
 
 ![Establecer el filtro de correo masivo en Exchange Online](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Bloquear el correo no deseado con listas de bloqueados de filtro de correo no deseado
 
-[Configure las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) para agregar la dirección del remitente a la lista de bloqueados del remitente o agregue el dominio a la lista de bloqueados del dominio en el filtro de correo no deseado. Los correos electrónicos de un remitente o dominio que se encuentre en la lista de bloqueados de filtro de correo no deseado se marcarán como correo no deseado.
+[Configure las directivas de filtro de correo no deseado en Office 365](configure-your-spam-filter-policies.md) para agregar la dirección del remitente a la lista de remitentes bloqueados o el dominio a la lista de dominios bloqueados en el filtro de correo no deseado. Los correos electrónicos de un remitente o dominio que se encuentre en la lista de bloqueados del filtro de correo no deseado se marcarán como correo no deseado.
 
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Los usuarios de correo electrónico también pueden asegurarse de que los falsos negativos y el correo no deseado se bloqueen con un filtro contra correo no deseado de Office 365.
 
@@ -56,7 +56,7 @@ Facilitará los esfuerzos contra correo no deseado de Office 365 para impedir fa
 ![Bloquear un remitente en Outlook en la Web](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
 > [!NOTE]
-> Para obtener más información con mayor detalle sobre las listas de remitentes seguros, vea [Sender Safe y listas de remitentes bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
+> Para obtener más información sobre las listas de remitentes seguros, vea [Crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).
 
 ## <a name="eop-only-customers-set-up-directory-synchronization"></a>Solo clientes de EOP: configurar la sincronización de directorios
 
@@ -76,11 +76,11 @@ El servicio EOP se diseñó para respetar las listas de remitentes bloqueados y 
 
 2. Ejecute este comando para enrutar los mensajes de correo no deseado filtrados por contenido a la carpeta Correo no deseado para actualizar el valor de SCL en todos los mensajes marcados con SCL -1:
 
-  ```powershell
-  New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SCL:-1" -SetSCL 0
-  ```
+   ```powershell
+   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SCL:-1" -SetSCL 0
+   ```
 
-    Como el valor de SCL es 0 en el servidor Exchange local, el correo deseado se entregará en las bandejas de entrada de los usuarios, pero se permitirá que la lista de remitentes bloqueados local de los usuarios los envíe a la carpeta Correo no deseado. Si usa una cuarentena de correo no deseado en EOP, aún es posible que los remitentes que se encuentren en la lista segura del usuario se identifiquen como correo no deseado y se envíen a la cuarentena. Si usa la carpeta Correo no deseado en el buzón local, esto permitirá la entrega en la bandeja de entrada para los remitentes seguros.
+   Como el valor de SCL es 0 en el servidor Exchange local, el correo deseado se entregará en las bandejas de entrada de los usuarios, pero se permitirá que la lista de remitentes bloqueados local de los usuarios los envíe a la carpeta Correo no deseado. Si usa una cuarentena de correo no deseado en EOP, aún es posible que los remitentes que se encuentren en la lista segura del usuario se identifiquen como correo no deseado y se envíen a la cuarentena. Si usa la carpeta Correo no deseado en el buzón local, esto permitirá la entrega en la bandeja de entrada para los remitentes seguros.
 
 > [!WARNING]
 > Si usa una regla de flujo del correo para cambiar el valor de SCL a 0 (o a cualquier valor distinto de -1), se aplicarán en el mensaje todas las opciones de correo no deseado de Outlook. Esto quiere decir que se respetarán las listas seguras y de bloqueados, pero los mensajes que no tengan direcciones en las listas de remitentes seguros o bloqueados podrían marcarse como correo no deseado al procesar el filtro de correo no deseado del lado cliente. Si quiere que Outlook procese las listas seguras y de bloqueados, pero no usa el filtro de correo no deseado de lado cliente, necesita establecer la opción en “Sin filtrado automático” en Opciones de correo no deseado de Outlook. “Sin filtrado automático” es la opción predeterminada en las versiones más recientes de Outlook, pero necesita confirmar que se aplicó esta opción para asegurarse de que el filtro de correo no deseado de lado cliente no se aplique en los mensajes. Como administrador, puede exigir que se deshabilite el filtrado de correo no deseado de Outlook si sigue las instrucciones que se indican en [Outlook: Configuración de directiva para deshabilitar la interfaz de usuario de correo no deseado y el mecanismo de filtrado](https://support.microsoft.com/kb/2180568).
@@ -88,5 +88,3 @@ El servicio EOP se diseñó para respetar las listas de remitentes bloqueados y 
 ## <a name="see-also"></a>Vea también
 
 [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
-
-[Impedir falsos positivos de correo electrónico marcado como correo no deseado con una lista segura u otras técnicas](prevent-email-from-being-marked-as-spam.md)
