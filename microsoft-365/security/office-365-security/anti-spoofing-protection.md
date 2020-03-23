@@ -2,8 +2,8 @@
 title: Protección contra la suplantación de identidad en Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTtracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Este artículo describe cómo Office 365 reduce los ataques de phishing que usan dominios de remitentes falsificados, es decir, dominios suplantados. Para ello, analiza los mensajes y bloquea los que no pueden autenticarse mediante métodos de autenticación de correo electrónico estándar ni otras técnicas de reputación del remitente. Este cambio se implementó para reducir el número de ataques de phishing a los que se exponen las organizaciones de Office 365.
-ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9e1a4cf31c2565eeb6be53b5c43bda0154f9ea6f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087229"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894143"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra la suplantación de identidad en Office 365
 
@@ -89,10 +89,9 @@ Para ver el anuncio general de Microsoft, vea [Un mar de phishing, parte 2: Prot
 
 Aunque SPF, DKIM y DMARC son útiles por sí mismos, no comunican de forma suficiente el estado de autenticación en caso de que un mensaje no contenga ningún registro de autenticación explícito. Por lo tanto, Microsoft ha desarrollado un algoritmo que combina varias señales en un único valor denominado autenticación compuesta ("compauth" para abreviar). Los clientes de Office 365 tienen valores de autenticación compuesta marcados en el encabezado *Authentication-Results* en los encabezados de mensaje.
 
-```
+```text
 Authentication-Results:
   compauth=<fail|pass|softpass|none> reason=<yyy>
-
 ```
 
 |**Resultado CompAuth**|**Descripción**|
@@ -259,7 +258,7 @@ Hay varias maneras para suplantar un mensaje (vea [Diferenciar entre los distint
 
 ### <a name="changing-your-anti-spoofing-settings"></a>Cambiar la configuración contra la suplantación
 
-Para crear o actualizar la configuración de directiva de suplantación (entre dominios), vaya a Protección contra suplantación de identidad \> Configuración contra la suplantación en la pestaña Administración de amenazas \> Directiva en el Centro de seguridad &amp; cumplimiento. Si no ha creado ninguna configuración contra suplantación de identidad, debe crearla:
+Para crear o actualizar la configuración de directiva de suplantación (entre dominios), vaya a Protección contra suplantación de identidad \> Configuración contra la suplantación en la pestaña Administración de amenazas \> Directiva en el Centro de seguridad y cumplimiento. Si no ha creado ninguna configuración contra suplantación de identidad, debe crearla:
 
 ![Protección contra la suplantación de identidad: crear una nueva directiva](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
@@ -380,19 +379,19 @@ Aunque puede ser difícil empezar a enviar dominios para la autenticación, con 
 
 ### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>Ver los informes de cuántos mensajes se marcan como falsificados
 
-Cuando está habilitada la directiva contra la suplantación, puede usar las funciones de investigación y respuesta de amenazas para hacerse una idea de cuántos mensajes se marcan como phishing. Para ello, vaya al Centro de seguridad &amp; cumplimiento (SCC) en Administración de amenazas \> Explorador, establezca la vista phishing y ordene por dominio remitente o estado de protección:
+Cuando está habilitada la directiva contra la suplantación, puede usar las funciones de investigación y respuesta de amenazas para hacerse una idea de cuántos mensajes se marcan como phishing. Para ello, vaya al Centro de seguridad y cumplimiento (SCC) en Administración de amenazas \> Explorador, establezca la vista enn phishing y ordene por dominio remitente o estado de protección:
 
 ![Vista de cuántos mensajes se marcan como phishing](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
 Puede interactuar con los diversos informes para ver cuántos se han marcado como phishing, incluidos los mensajes marcados como SPOOF. Para obtener más información, vea [Introducción a la investigación de amenazas y respuestas de Office 365](office-365-ti.md).
 
-Todavía no puede dividir los mensajes que se marcaron debido a la suplantación de identidad y otros tipos de phishing (como phishing general, suplantación de dominio o de usuario). Pero, más adelante, podrá hacerlo a través del Centro de seguridad &amp; cumplimiento. Una vez hecho, puede usar este informe como punto de partida para identificar los dominios remitentes que pueden ser legítimos y que se han marcado como suplantación de identidad debido a errores de autenticación.
+Todavía no puede dividir los mensajes que se marcaron debido a la suplantación de identidad y otros tipos de phishing (como phishing general, suplantación de dominio o de usuario). Pero, más adelante, podrá hacerlo a través del Centro de seguridad y cumplimiento. Una vez hecho, puede usar este informe como punto de partida para identificar los dominios remitentes que pueden ser legítimos y que se han marcado como suplantación de identidad debido a errores de autenticación.
 
 La captura de pantalla siguiente es un ejemplo de cómo se mostrarán estos datos, pero puede que cambie a la hora de la publicación:
 
 ![Vista de los informes de suplantación de identidad por tipo de detección](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
-Para los clientes de ATP y E5, estos informes estarán disponibles más adelante en los informes de estado de protección contra amenazas (TPS), pero se retrasarán al menos 24 horas. Esta página se actualizará cuando se integren en el Centro de seguridad &amp; cumplimiento.
+Para los clientes de ATP y E5, estos informes estarán disponibles más adelante en los informes de estado de protección contra amenazas (TPS), pero se retrasarán al menos 24 horas. Esta página se actualizará cuando se integren en el Centro de seguridad y cumplimiento.
 
 ### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>Predecir cuántos mensajes se marcarán como suplantación de identidad
 
@@ -503,7 +502,7 @@ New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
 Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 ```
 
-Se puede deshabilitar la protección contra la suplantación solo mediante el cmdlet (más adelante estará disponible en el centro de seguridad &amp; cumplimiento). Si no tiene acceso a PowerShell, cree un vale de soporte.
+Se puede deshabilitar la protección contra la suplantación solo mediante el cmdlet (más adelante estará disponible en el centro de seguridad y cumplimiento). Si no tiene acceso a PowerShell, cree un vale de soporte.
 
 Recuerde que debe aplicarse a los dominios que se someten a un enrutamiento indirecto cuando se envían a Office 365. Resista la tentación de deshabilitar la protección contra la suplantación debido a algunos falsos positivos, será mejor trabajar con ellos a largo plazo.
 
@@ -650,9 +649,11 @@ Desafortunadamente no, porque los suplantadores se adaptarán para usar otras t�
 
 Casi todos los grandes receptores de correo implementan SPF, DKIM y DMARC tradicional. Algunos receptores tienen otras comprobaciones más estrictas además de estos estándares, pero pocos van tan lejos como Office 365 para bloquear el correo electrónico no autenticado y tratarlo como suplantación de identidad. Pero, la mayor parte del sector está pasando a ser más estricta respecto a este tipo concreto de correo electrónico, especialmente debido al problema de phishing.
 
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>¿Necesito todavía una opción avanzada de filtrado de correo no deseado habilitada para "SPF hard fail" (errores no recuperables) si habilito la protección contra la suplantación?
+### <a name="do-i-still-need-to-enable-the-advanced-spam-filter-asf-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>¿Necesito habilitar la configuración de filtro de correo no deseado avanzado (ASF) "Registro SPF: error grave" (_MarkAsSpamSpfRecordHardFail_) si habilito la protección contra suplantación de identidad (phishing)?.
 
-No, esta opción ya no es necesaria porque la función contra la suplantación considera un conjunto de criterios mucho más amplio, además de los errores no recuperables de SPF. Si habilita la protección contra la suplantación y la opción de errores no recuperables de SPF, es posible que reciba más falsos positivos. Se recomienda deshabilitar esta característica porque que no proporcionan casi ninguna mejora adicional para spam o phishing y genera principalmente falsos positivos.
+No, esta opción ya no es necesaria porque la función contra la suplantación considera un conjunto de criterios mucho más amplio, además de los errores no recuperables de SPF. Si habilita la protección contra la suplantación y la opción de **Registro de SPF: error grave** (_MarkAsSpamSpfRecordHardFail_), es probable que reciba más falsos positivos.
+
+Se recomienda deshabilitar esta característica porque que no proporcionan casi ninguna mejora adicional para spam o phishing y generaría principalmente falsos positivos. Para obtener más información, consulte [Configuración del filtro de correo no deseado avanzado (ASF) en Office 365](advanced-spam-filtering-asf-options.md).
 
 ### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>¿El Sender Rewriting Scheme (SRS) ayuda a solucionar el correo electrónico reenviado?
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 13a65f5a6a82eed748eaa79a3683ebdf2fe7ed9a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634758"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894401"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -311,7 +311,8 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
 |[Actividades de eDiscovery avanzado](#advanced-ediscovery-activities)|[Actividades de Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Actividades de Microsoft Teams](#microsoft-teams-activities)|[Actividades de Microsoft Teams para Sanidad](#microsoft-teams-healthcare-activities)|[Actividades de Yammer](#yammer-activities)|
 |[ Actividades en Microsoft Power Automate ](#microsoft-power-automate-activities)|[ Actividades en Microsoft Power Apps ](#microsoft-power-apps-activities)|[Actividades de Microsoft Stream](#microsoft-stream-activities)|
-|[Actividades de Microsoft Forms](#microsoft-forms-activities)|[Actividades de la etiqueta de confidencialidad](#sensitivity-label-activities)|[Actividades de administración de Exchange](#exchange-admin-audit-log)||
+|[Actividades del explorador de contenido](#content-explorer-activities)|[Actividades de Microsoft Forms](#microsoft-forms-activities)|[Actividades de la etiqueta de confidencialidad](#sensitivity-label-activities)|
+|[Actividades de administración de Exchange](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>Actividades de páginas y archivos
@@ -802,7 +803,16 @@ Puede buscar el registro de auditorías para actividades relacionadas con aplica
 
 ### <a name="microsoft-stream-activities"></a>Actividades de Microsoft Stream
 
-Puede buscar el registro de auditoría para actividades en Microsoft Stream. Entre estas actividades se incluyen las actividades de vídeo efectuadas por los usuarios, las actividades de canal de grupo y las actividades de administración, como la administración de usuarios, administración de la configuración de la organización y exportación de informes. Para obtener una descripción de estas actividades, consulte la sección "actividades iniciadas en Microsoft Stream " en[ registros de auditoría de Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+Puede buscar el registro de auditoría para actividades en Microsoft Stream. Entre estas actividades se incluyen las actividades de vídeo efectuadas por los usuarios, las actividades de canal de grupo y las actividades de administración, como la administración de usuarios, administración de la configuración de la organización y exportación de informes. Para obtener una descripción de estas actividades, consulte la sección "acciones registradas en Microsoft Stream " en [Registros de auditoría en Microsoft Stream](https://docs.microsoft.com/stream/audit-logs#actions-logged-in-stream).
+
+### <a name="content-explorer-activities"></a>Actividades del explorador de contenido
+
+En la tabla siguiente se enumeran las actividades del explorador de contenido que se registran en el registro de auditoría de Office 365. El explorador de contenido, al que se accede en la herramienta de clasificación de datos en el Centro de cumplimiento de Microsoft 365. Para obtener más información, consulte [Usar el explorador de contenido de clasificación de datos](data-classification-content-explorer.md).
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Archivo al que se ha accedido|AccessedItem|Un administrador (o un usuario que sea miembro del grupo de roles de Visor de contenido del explorador de contenido) usa el explorador de contenido para ver un mensaje de correo electrónico o un documento de OneDrive o SharePoint.|
+||||
 
 ### <a name="microsoft-forms-activities"></a>Actividades de Microsoft Forms
 
