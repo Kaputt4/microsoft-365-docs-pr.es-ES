@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 446af9ad49649487f4df1982613f8e84fdf39910
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 22693bbf8acdf8872b621ae214dd8d7a62b98b40
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857196"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929555"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
@@ -119,6 +119,7 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Administrador de Power BI    |   Posee acceso completo a las tareas de administración de Power BI, administra solicitudes de servicio y supervisa el estado del servicio.   |
 |Administrador de Power Platform     |    Posee acceso completo a Microsoft Dynamics 365, PowerApps, directivas de prevención de pérdida de datos y Microsoft Flow.     |
 |Administrador de roles con privilegios     |    Administra las asignaciones de roles y todas las características de control de acceso de Privileged Identity Management.     |
+|Administrador de autenticación con privilegios     |    Restablece contraseñas, actualiza credenciales que no son contraseñas, fuerza el uso del cierre de sesión, supervisa el estado del servicio y administra las solicitudes de servicio.     |
 |Lector de informes     |   Lee los datos de informes de uso del panel informes, el paquete de contenido para la adopción de PowerBI, los informes de inicio de sesión y la API de informes de Microsoft Graph.      |
 |Administrador de búsqueda     |    Tiene acceso completo a Microsoft Search, asigna los roles de administrador y editor de búsqueda, administra el contenido editorial, supervisa el estado del servicio y crea solicitudes de servicio.     |
 |Editor de búsqueda     |    Solo puede crear, editar y eliminar contenido para Microsoft Search, como marcadores, preguntas y respuestas, y ubicaciones.     |

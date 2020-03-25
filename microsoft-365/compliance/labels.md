@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 4052cf691e9123e3d840d5fa6759ff7f032b67c2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3bcaee41ab178ae79b1f2ef46871dadb107f3f5b
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634308"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929454"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -261,7 +261,7 @@ Puede aplicar automáticamente etiquetas de retención en contenido cuando este 
     
 - [Palabras clave específicas que coinciden con una consulta que haya creado](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [Una coincidencia para clasificadores que se pueden entrenar](#auto-apply-labels-to-content-by-using-trainable-classifers)
+- [Una coincidencia para clasificadores que se pueden entrenar](#auto-apply-labels-to-content-by-using-trainable-classifiers)
     
 ![Página de selección de condición para una etiqueta de aplicación automática](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
@@ -311,7 +311,7 @@ Consultas de ejemplos:
 ![Editor de consultas](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
 
 Si elige la opción para un clasificador que se puede entrenar, puede seleccionar uno de los clasificadores integrado o un clasificador personalizado. Los clasificadores integrados incluyen **lenguaje ofensivo**, **currículum vítae**, **código fuente**, **acoso selectivo**, **blasfemia** y **amenazas**:
 

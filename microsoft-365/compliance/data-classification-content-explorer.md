@@ -1,5 +1,5 @@
 ---
-title: Usar el explorador de contenido de clasificación de datos (vista previa)
+title: Introducción al explorador de contenido (versión preliminar)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 205ec6b4f2049e18ee95f25505d8a58d7eb7ac77
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 91246a701e1c5a030f4c9c53e25e56c137e7569b
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409695"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929412"
 ---
-# <a name="using-data-classification-content-explorer-preview"></a>Usar el explorador de contenido de clasificación de datos (vista previa)
+# <a name="get-started-with-content-explorer-preview"></a>Introducción al explorador de contenido (versión preliminar)
 
 El explorador de contenido de la clasificación de datos le permite ver de forma nativa los elementos que se resumiendo en la página información general.
 
