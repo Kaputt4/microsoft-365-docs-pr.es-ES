@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda las fases principales para implementar la infraestructura básica de Microsoft 365 para empresas en su organización, también conocida como la implementación principal.
-ms.openlocfilehash: 26f95b9e7fb951910b983defb8b80162f39c37a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 966fa8ad26d54328bf4d2e95c95b497e5d283e52
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633618"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951963"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infraestructura básica de Microsoft 365 para empresas
 
@@ -73,7 +73,7 @@ El [póster de infraestructura básica de Microsoft 365 para empresas](../media/
 
 [![Imagen para el póster de la infraestructura básica de Microsoft 365 para empresas](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
-Para descargar una copia del póster, haga clic [aquí](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
+Para descargar una copia del póster, haga clic [aquí](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>Configuración de la infraestructura frente a la inscripción de usuarios

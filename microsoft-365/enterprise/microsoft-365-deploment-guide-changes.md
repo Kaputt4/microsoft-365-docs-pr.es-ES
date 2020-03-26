@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vea el nuevo contenido y los cambios en el contenido en la guía de implementación de Microsoft 365.
-ms.openlocfilehash: fbb60155ff0ddb2d38614cf6df8aaf1e706d7743
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fb9768be38ef215b22c81bcf10b19b58e37fb124
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067035"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951815"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Cambios en Microsoft 365 para el contenido de implementación empresarial
 
@@ -52,13 +52,13 @@ ms.locfileid: "42067035"
 
   [![Póster Equipos para datos altamente regulados](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
-  También puede descargar este póster en formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
+  También puede descargar este póster en formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 
 - [Póster Sitios de SharePoint para datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md#poster)
 
   [![Póster Sitios de SharePoint para datos altamente regulados](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
-  También puede descargar este póster en formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
+  También puede descargar este póster en formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 
 - [El póster para la implementación de Windows 10 con piloto automático](windows10-deploy-autopilot.md) 
 
@@ -82,7 +82,7 @@ ms.locfileid: "42067035"
 
   [Póster para aumentar la productividad de los trabajadores remotos![](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
 
-  También puede descargar este póster en formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
+  También puede descargar este póster en formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 
 ### <a name="updates-and-enhancements"></a>Actualizaciones y mejoras
 
