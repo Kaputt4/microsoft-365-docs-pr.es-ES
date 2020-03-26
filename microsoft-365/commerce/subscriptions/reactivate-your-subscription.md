@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: Obtenga información acerca de cómo reactivar la suscripción de Office 365 cuando expire, o si Microsoft la deshabilita o la cancela en el medio.
-ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Obtenga información acerca de cómo reactivar la suscripción cuando expire, o si Microsoft la deshabilita o la cancela en medio.
+ms.openlocfilehash: 6126c9ccc05a1ee0927f928b045bd1c383479893
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354611"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952047"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
 
@@ -63,7 +63,7 @@ Si su suscripción expira o fue deshabilitada por Microsoft o si la canceló a m
 
 ::: moniker range="o365-germany"
   
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. Busque la suscripción que desea reactivar y, a continuación, seleccione **reactivar**.
 
@@ -84,7 +84,7 @@ Si su suscripción expira o fue deshabilitada por Microsoft o si la canceló a m
 
 ::: moniker range="o365-21vianet"
   
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. Busque la suscripción que desea reactivar y, a continuación, seleccione **reactivar**.
 

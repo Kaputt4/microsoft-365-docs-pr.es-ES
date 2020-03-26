@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 272e8a76cdb3a1555f561bd56e63422f14394904
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 772c4c5785115995593a4946bfbac49312ad15f3
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067437"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959233"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -47,7 +47,7 @@ Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las
 |        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-modern-authentication)|Los clientes que no usan la autenticación moderna pueden omitir las reglas de acceso condicional, por lo que es importante bloquear estos|
 |        |[Los usuarios de riesgo alto deben cambiar la contraseña](#high-risk-users-must-change-password)|Obliga a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta|
 |        |[Definir directivas de protección de aplicaciones](#define-app-protection-policies)|Una directiva por plataforma (iOS, Android, Windows).|
-|        |[Requerir aplicaciones aprobadas](#require-approved-apps)|Fuerza la protección de aplicaciones móviles para teléfonos y tabletas|
+|        |[Requerir aplicaciones compatibles con las directivas de protección de aplicaciones de Intune](#require-apps-that-support-intune-app-protection-policies)|Fuerza la protección de aplicaciones móviles para teléfonos y tabletas|
 |        |[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma|
 |        |[Exigir equipos PC compatibles](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Fuerza la administración de los equipos de Intune|
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
@@ -179,7 +179,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 | Tipo | Propiedades | Valores                  | Notas |
 |:-----|:-----------|:------------------------|:------|
 |      | Access     | Permitir acceso            | True  |
-|      | Access     | Exigir cambio de contraseña | True  |
+|      | Acceso     | Exigir cambio de contraseña | True  |
 
 **Revisión:** no aplicable
 
@@ -187,87 +187,41 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 > Asegúrese de habilitar esta directiva; para ello, seleccione **activado**. También considere la posibilidad de usar la herramienta [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) para probar la Directiva
 
 ## <a name="define-app-protection-policies"></a>Definir directivas de protección de aplicaciones
-Las directivas de protección de aplicaciones definen qué aplicaciones están permitidas y las acciones que pueden llevar a cabo con los datos de la organización. Cree directivas de protección de aplicaciones de Intune desde dentro de Azure portal. 
+Las directivas de protección de aplicaciones (aplicación) definen qué aplicaciones están permitidas y las acciones que pueden llevar a cabo con los datos de la organización. Las opciones disponibles en la aplicación permiten a las organizaciones adaptar la protección a sus necesidades específicas. Para algunos, puede que no sea obvio qué configuración de directiva es necesaria para implementar un escenario completo. Para ayudar a las organizaciones a priorizar la protección de extremos de extremos de cliente móvil, Microsoft ha lanzado una taxonomía para el marco de protección de datos de aplicaciones para iOS y la administración de aplicaciones móviles de Android. 
 
-Cree una directiva para cada plataforma:
-- iOS
-- Android
-- Windows 10
+El marco de protección de datos de la aplicación está organizado en tres niveles de configuración distintos, donde cada nivel se basa en el nivel anterior: 
 
-Para crear una nueva Directiva de protección de aplicaciones, inicie sesión en el portal de Microsoft Azure con sus credenciales de administrador y, a continuación, navegue a > **directivas de protección**de aplicaciones de **aplicaciones cliente**. Elija **crear Directiva**.
+- La protección de datos básicos de empresa garantiza que las aplicaciones estén protegidas con PIN y cifrados y realice operaciones selectivas de borrado. Para dispositivos Android, este nivel valida la atestación del dispositivo de Android. Se trata de una configuración de nivel de entrada que proporciona un control de protección de datos similar en las directivas de buzones de correo de Exchange Online y lo presenta y el llenado del usuario a la aplicación. 
+- La protección de datos mejorada de la empresa presenta los mecanismos de prevención de fugas de datos y los requisitos mínimos del sistema operativo. Esta es la configuración que se aplica a la mayoría de los usuarios móviles que tienen acceso a datos de trabajo o escuela. 
+- La protección de datos empresariales de alta calidad presenta mecanismos avanzados de protección de datos, configuración mejorada de PIN y defensa para amenazas de aplicaciones móviles. Esta configuración es preferible para los usuarios que tienen acceso a datos de alto riesgo. 
 
-Hay ligeras diferencias en las opciones de directiva de protección de aplicaciones entre iOS y Android. La siguiente directiva es específicamente para Android. Use esto como guía para sus otras directivas.
+Para ver las recomendaciones específicas para cada nivel de configuración y las aplicaciones mínimas que deben protegerse, revise el [marco de protección de datos con directivas de protección de aplicaciones](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
 
-La lista de aplicaciones recomendada incluye lo siguiente:
-- PowerPoint
-- Excel
-- Word
-- Microsoft Teams
-- Microsoft SharePoint
-- Microsoft Visio Viewer
-- OneDrive
-- OneNote
-- Outlook
+Mediante el uso de los principios descritos en [configuraciones de identidad y acceso a dispositivos](microsoft-365-policies-configurations.md), los niveles de protección base y confidencial se asignan estrechamente con la configuración de protección de datos mejorada de nivel 2. El nivel de protección altamente regulado se asigna estrechamente a la configuración de la protección de datos de nivel 3 Enterprise High.
 
-En las siguientes tablas se describe la configuración recomendada:
+|Nivel de protección |Directiva de protección de aplicaciones  |Más información  |
+|---------|---------|---------|
+|Línea base     | [Protección de datos mejorada de nivel 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | La configuración de la Directiva que se aplica en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la configuración de directivas siguiente para implementar más controles y una configuración más sofisticada que el nivel 1.         |
+|Confidencial     | [Protección de datos mejorada de nivel 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | La configuración de la Directiva que se aplica en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la configuración de directivas siguiente para implementar más controles y una configuración más sofisticada que el nivel 1.        |
+|Altamente regulado     | [Nivel 3 de protección empresarial alta para la información](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | La configuración de la Directiva que se aplica en el nivel 3 incluye todas las configuraciones de directiva recomendadas para los niveles 1 y 2 y solo agrega o actualiza la configuración de directivas siguiente para implementar más controles y una configuración más sofisticada que el nivel 2.        |
 
-|Tipo|Propiedades|Valores|Notas|
-|:---|:---------|:-----|:----|
-|Reubicación de datos|Impedir copias de seguridad de Android|Sí|En iOS esto específicamente llama a iTunes e iCloud|
-||Permitir que la aplicación transfiera datos a otras aplicaciones|Aplicaciones administradas por directivas||
-||Permitir a la aplicación recibir datos de otras aplicaciones|Aplicaciones administradas por directivas||
-||Impedir "Guardar como"|Sí||
-||Seleccione qué datos corporativos de servicios de almacenamiento se pueden guardar en|OneDrive para la empresa, SharePoint||
-||Restringir cortar, copiar y pegar con otras aplicaciones|Aplicaciones administradas por directiva con pegar||
-||Restringir contenido web para mostrar en Managed Browser|No||
-||Cifrar datos de aplicación|Sí|En iOS, seleccione la opción: Cuando el dispositivo está bloqueado|
-||Deshabilitar el cifrado de aplicaciones cuando el dispositivo está habilitado|Sí|Deshabilitar esta opción para evitar el cifrado doble|
-||Deshabilitar la sincronización de contactos|No||
-||Deshabilitar impresión|No||
-|Acceso|Requerir PIN para acceder|Sí||
-||Tipo de selección|Numérico||
-||Permitir PIN sencillo|No||
-||Longitud del PIN|6 ||
-||Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN|Sí||
-||Deshabilitar PIN de la aplicación cuando el PIN del dispositivo esté administrado|Sí||
-||Requerir credenciales corporativas para el acceso|No||
-||Volver a comprobar los requisitos de acceso después de (minutos)|semestre||
-||Bloquear captura de pantalla y asistente de Android|No|En iOS esta opción no está disponible|
-|Requisitos de seguridad de inicio de sesión|Número máximo de intentos de PIN|5 |Restablecer PIN|
-||Período de gracia sin conexión|720|Bloquear acceso|
-||Intervalo sin conexión (días) antes de que se borren los datos de la aplicación|90|Borrar datos|
-||Dispositivos con jailbreak o Rooting| |Borrar datos|
+Para crear una nueva Directiva de protección de aplicaciones para cada plataforma (iOS y Android) en Microsoft Endpoint Manager con la configuración del marco de protección de datos, los administradores pueden:
+1. Cree manualmente las directivas siguiendo los pasos de [Cómo crear e implementar directivas de protección de aplicaciones con Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies).
+2. Importe las [plantillas JSON del marco de configuración de la Directiva de protección de aplicaciones de Intune](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) de ejemplo con los [scripts de PowerShell de Intune](https://github.com/microsoftgraph/powershell-intune-samples).
 
-Cuando termine, recuerde seleccionar "crear". Repita los pasos anteriores y reemplace la plataforma seleccionada (desplegable) por iOS. Esto crea dos directivas de aplicación, por lo que una vez creada la directiva, asígnele grupos e impleméntela.
+## <a name="require-apps-that-support-intune-app-protection-policies"></a>Requerir aplicaciones compatibles con las directivas de protección de aplicaciones de Intune
+Con el acceso condicional, las organizaciones pueden restringir el acceso a las aplicaciones de cliente de iOS y de iOS aprobadas con las directivas de protección de aplicaciones de Intune que se les aplican. Se requieren varias directivas de acceso condicional, con cada directiva dirigida a todos los usuarios potenciales. Puede encontrar más información sobre la creación de estas directivas en [requerir Directiva de protección de aplicaciones para Cloud Access Access con acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-Para editar las directivas y asignar estas directivas a los usuarios, vea [Cómo crear y asignar directivas de protección de aplicaciones](https://docs.microsoft.com/intune/app-protection-policies). 
+1. Siga el procedimiento "paso 1: configurar una directiva de acceso condicional de Azure AD para Office 365" en el [escenario 1: las aplicaciones de office 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), lo que permite a Outlook para iOS y Android, pero impide que los clientes de Exchange ActiveSync con capacidad de OAuth se conecten a Exchange Online.
 
-## <a name="require-approved-apps"></a>Requerir aplicaciones aprobadas
-Para requerir aplicaciones aprobadas:
+   > [!NOTE]
+   > Esta Directiva garantiza que los usuarios móviles puedan acceder a todos los puntos de conexión de Office con las aplicaciones correspondientes.
 
-1. Vaya al [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales. Una vez que haya iniciado sesión correctamente, verá el panel de Azure.
+2. Si habilita el acceso móvil a Exchange Online, implemente [Block ActiveSync clients] (Secure-email-Recommended-Policies. MD # Block-ActiveSync-clients), que impide que los clientes de Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online.
 
-2. En el menú de la izquierda, seleccione **Azure Active Directory**.
+   Las directivas anteriores aprovechan los controles Grant [requieren la aplicación cliente aprobada](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) y [requieren la Directiva de protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-3. En la sección **Seguridad**, seleccione **Acceso condicional**.
-
-4. Pulse **Nueva directiva**.
-
-5. Escriba un nombre de directiva y seleccione los **Usuarios y grupos** a los que quiera que se aplique la directiva.
-
-6. Seleccione **Aplicaciones en la nube**.
-
-7. Elija **seleccionar aplicaciones**y seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Office 365 Exchange Online. Elija **seleccionar** y **listo**.
-
-8. Elija **condiciones**, seleccione **plataformas de dispositivos**y, a continuación, elija **configurar** .
-
-9. En **incluir**, elija **seleccionar plataformas de dispositivos**, seleccione **Android** e **iOS**. Haga clic en **listo** y vuelva a **realizar**
-
-10. Pulse **Conceder** en la sección **Controles de acceso**.
-
-11. Elija **conceder acceso**y seleccione **requerir aplicación cliente aprobada**. Para varios controles, seleccione **requerir los controles seleccionados**y, a continuación, elija **seleccionar**. 
-
-12. Seleccione **Crear**.
+3. Deshabilitar la autenticación heredada para otras aplicaciones cliente en dispositivos iOS y Android. Para obtener más información, consulte [bloquear clientes que no admiten la autenticación moderna](#block-clients-that-dont-support-modern-authentication).
 
 ## <a name="define-device-compliance-policies"></a>Definir directivas de cumplimiento de dispositivos
 
@@ -307,7 +261,7 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
+|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
 ||Contraseñas sencillas|Desbloquear||
 ||Tipo de contraseña|Valor predeterminado del dispositivo||
 ||Longitud mínima de la contraseña|6 ||
@@ -386,6 +340,6 @@ Para requerir el cumplimiento de todos los dispositivos:
 Al crear esta Directiva, no seleccione plataformas. Esto aplica los dispositivos compatibles.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Más información sobre recomendaciones de directivas para proteger el correo electrónico](secure-email-recommended-policies.md)

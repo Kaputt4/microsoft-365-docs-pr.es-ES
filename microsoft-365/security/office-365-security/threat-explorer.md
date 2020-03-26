@@ -2,8 +2,8 @@
 title: Explorador de amenazas y detecciones en tiempo real, novedades en el explorador de amenazas, cambios en el explorador de amenazas, novedad en Office 365, seguridad, seguridad en la nube, novedad en la seguridad en ATP y nuevas características de ATP
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador y las detecciones en tiempo real &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 47dd871a385613c08ad5b4c02a7be8701e4b93a8
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082186"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955608"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -100,7 +100,7 @@ Al hacer clic en una dirección URL de la lista, verá un nuevo botón exportar 
 
 Puede acceder a la misma ubicación en el informe de detecciones en tiempo real de la siguiente manera:
 
-**** > **Detecciones** >  >  >  > **************** **** en tiempo real de Explorer ver direcciones URL de phish direcciones URL principales o clics principales haga clic en cualquier registro para abrir el control flotante de dirección URL navegue hasta la pestaña clics. > 
+**Explorer** > **Detecciones** >  >  >  > **View Phish****URLs****Top URLs or Top Clicks****Navigate to the Clicks Tab.** **Click on any record to open URL flyout**en tiempo real de Explorer ver direcciones URL de phish direcciones URL principales o clics principales haga clic en cualquier registro para abrir el control flotante de dirección URL navegue hasta la pestaña clics. > 
 
 > [!TIP]
 > IDENTIFICADOR de mensaje de red asigna el clic de nuevo a correos específicos cuando se realiza la búsqueda en el explorador o en las herramientas de terceros asociadas mediante el identificador de mensaje de red. La búsqueda en el identificador de mensaje de red dará a los administradores el correo electrónico específico asociado con un resultado de clic. En la exportación, la identificación de la identificación del mensaje de red facilita un análisis más rápido y eficaz.
@@ -139,7 +139,7 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
    - Las **direcciones URL principales** son las que se encuentran en los mensajes que se han filtrado y la acción de entrega de correo electrónico se recuento para cada dirección URL. En la vista correo phish, esta lista normalmente contendrá direcciones URL legítimas. Los atacantes incluyen una mezcla de direcciones URL buenas y incorrectas en sus mensajes para intentar entregarlos, pero harán que los vínculos malintencionados sean más interesantes para el usuario hacer clic en. La tabla de direcciones URL se ordena por recuento de correo electrónico total (Nota: esta columna no se muestra para simplificar la vista).
 
-   - Los **clics principales** son las direcciones URL contenidas en vínculos seguros en las que se hizo clic, ordenadas por número total de clics (esta columna tampoco se muestra para simplificar la vista). Número total de recuentos por columna indique los vínculos seguros haga clic en recuento de veredictos para cada dirección URL con clic. En la vista de correo electrónico phish, estos son direcciones URL sospechosas o malintencionadas, pero pueden incluir direcciones URL limpias que estén en mensajes de suplantación. Los clics de dirección URL en vínculos desajustados no se mostrarán aquí.
+   - Los **clics principales** son las direcciones URL contenidas en vínculos seguros en las que se hizo clic, ordenadas por número total de clics (esta columna tampoco se muestra para simplificar la vista). Número total de recuentos por columna indique los vínculos seguros haga clic en recuento de veredictos para cada dirección URL con clic. En la vista de correo electrónico phish, estos son direcciones URL sospechosas o malintencionadas, pero pueden incluir direcciones URL que no son amenazas pero que se encuentran en mensajes de phish. Los clics de dirección URL en vínculos desajustados no se mostrarán aquí.
    
    Las dos tablas de direcciones URL muestran las direcciones URL principales en los mensajes de correo electrónico de suplantación por acción y ubicación de entrega, y muestran los clics de direcciones URL que se bloquearon (o visitaron a pesar de una advertencia) para que pueda comprender los posibles vínculos no válidos que han recibido los usuarios e interactuar con ellos por los usuarios. Desde aquí, puede realizar análisis adicionales. Por ejemplo, debajo del gráfico, puede ver las direcciones URL principales en mensajes de correo electrónico que estaban bloqueados en el entorno de su organización.
    

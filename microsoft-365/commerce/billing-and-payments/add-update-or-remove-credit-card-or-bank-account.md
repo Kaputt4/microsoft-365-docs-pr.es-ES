@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Obtenga información sobre cómo administrar los métodos de pago en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 49f1c0847ef53bea9a16a6aedb20f7d3a96d6e2c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409705"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952011"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Agregar, actualizar o quitar los métodos de pago
 
@@ -107,7 +107,7 @@ Si su método de pago está asociado a alguna suscripción y no tiene un método
 6. Seleccione el nuevo método de pago en la lista desplegable y, a continuación, seleccione **cambiar**.
     > [!WARNING]
     > De este modo, se moverán todas las suscripciones al nuevo método de pago.
-7. Seleccione **eliminar**.
+7. Seleccione **Eliminar**.
 
 ### <a name="change-the-payment-method-used-to-pay-for-subscriptions"></a>Cambiar el método de pago usado para pagar suscripciones
 
@@ -120,7 +120,7 @@ Si su método de pago está asociado a alguna suscripción y tiene al menos un m
 5. Seleccione un método de pago alternativo en la lista desplegable y, a continuación, seleccione **cambiar**.
     > [!WARNING]
     > De este modo, todas las suscripciones se moverán al método de pago alternativo.
-6. Seleccione **eliminar**.
+6. Seleccione **Eliminar**.
 
 ### <a name="change-the-payment-method-for-a-billing-profile"></a>Cambiar el método de pago de un perfil de facturación
 
@@ -158,9 +158,7 @@ Si el método de pago está asociado a un perfil de facturación y también se u
 Debe ser Administrador global o un Administrador de facturación para realizar las tareas descritas en este artículo.
   
  **¿No es un administrador?** Póngase en contacto con su administrador de TI para obtener ayuda. [¿Quién tiene permisos de administrador en mi empresa?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- **Para Office 365 hogar o personal**, consulte [cambiar el método de pago o la tarjeta de crédito vinculados a su cuenta de Microsoft](https://support.microsoft.com/help/4026594).
-  
+
 > [!NOTE]
 > La opción para pagar con una cuenta bancaria no está disponible en algunos países o regiones.
 >
@@ -168,7 +166,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 
 ## <a name="add-a-credit-card-or-bank-account"></a>Agregar una tarjeta de crédito o cuenta bancaria
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. Elige la suscripción por la que deseas pagar con la nueva tarjeta de crédito o cuenta bancaria y, a continuación, selecciona **actualizar detalles de pago**.
 
@@ -181,7 +179,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 4. Escriba la información de la nueva tarjeta de crédito o cuenta bancaria y, después, seleccione **Enviar**.
 
     > [!NOTE]
-    > La nueva tarjeta de crédito o cuenta bancaria solo se usará para la suscripción a Office 365 que eligió en el paso 2. Si tiene otras suscripciones con las que quiera usarla, siga los pasos de este artículo para cambiar la tarjeta de crédito o cuenta bancaria que usa para pagar por cada suscripción.
+    > La nueva tarjeta de crédito o cuenta bancaria solo se usará para la suscripción que seleccionó en el paso 2. Si tiene otras suscripciones con las que quiera usarla, siga los pasos de este artículo para cambiar la tarjeta de crédito o cuenta bancaria que usa para pagar por cada suscripción.
 
 ::: moniker-end
 
@@ -192,14 +190,12 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
   
  **¿No es un administrador?** Para obtener ayuda, póngase en contacto con su administrador de TI. [¿Quién dispone de permisos de administrador en mi empresa?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
   
- **Para Office 365 hogar o personal**, consulte [cambiar el método de pago o la tarjeta de crédito vinculados a su cuenta de Microsoft](https://support.microsoft.com/help/4026594).
-  
 > [!NOTE]
 > La opción para pagar con una cuenta bancaria no está disponible en algunos países o regiones.
 >
 > Debe usar una tarjeta de crédito emitida desde el mismo país que su inquilino.
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. Elige la suscripción por la que deseas pagar con la nueva tarjeta de crédito o cuenta bancaria y, a continuación, selecciona **actualizar detalles de pago**.
 
@@ -212,7 +208,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 4. Escriba la información de la nueva tarjeta de crédito o cuenta bancaria y, después, seleccione **Enviar**.
 
     > [!NOTE]
-    > La nueva tarjeta de crédito o cuenta bancaria solo se usará para la suscripción a Office 365 que eligió en el paso 2. Si tiene otras suscripciones con las que quiera usarla, siga los pasos de este artículo para cambiar la tarjeta de crédito o cuenta bancaria que usa para pagar por cada suscripción.
+    > La nueva tarjeta de crédito o cuenta bancaria solo se usará para la suscripción que seleccionó en el paso 2. Si tiene otras suscripciones con las que quiera usarla, siga los pasos de este artículo para cambiar la tarjeta de crédito o cuenta bancaria que usa para pagar por cada suscripción.
 
 ::: moniker-end
 
@@ -223,7 +219,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 > No puede cambiar el número de una tarjeta de crédito o cuenta bancaria existente. Si el número de tarjeta de crédito o cuenta bancaria ha cambiado, agréguelo como una tarjeta de crédito o cuenta bancaria nueva. A continuación, seleccione la opción de pago para su suscripción y, a continuación, quite la tarjeta de crédito o la cuenta bancaria existente.
 > Debe usar una tarjeta de crédito emitida desde el mismo país que su inquilino.
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. Seleccione la suscripción que compró con la cuenta bancaria de tarjeta de crédito que desee actualizar y, a continuación, seleccione **actualizar detalles de pago**.
 
@@ -251,7 +247,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 > No puede cambiar el número de una tarjeta de crédito o cuenta bancaria existente. Si el número de tarjeta de crédito o cuenta bancaria ha cambiado, agréguelo como una tarjeta de crédito o cuenta bancaria nueva. A continuación, seleccione la opción de pago para su suscripción y, a continuación, quite la tarjeta de crédito o la cuenta bancaria existente.
 > Debe usar una tarjeta de crédito emitida desde el mismo país que su inquilino.
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. Seleccione la suscripción que compró con la cuenta bancaria de tarjeta de crédito que desee actualizar y, a continuación, seleccione **actualizar detalles de pago**.
 
@@ -275,7 +271,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 ::: moniker range="o365-21vianet"
 ## <a name="remove-a-credit-card-or-bank-account"></a>Quitar una tarjeta de crédito o cuenta bancaria
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. Elija cualquier suscripción y, a continuación, seleccione **actualizar detalles de pago**.
 
@@ -300,7 +296,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 ::: moniker range="o365-germany"
 ## <a name="remove-a-credit-card-or-bank-account"></a>Quitar una tarjeta de crédito o cuenta bancaria
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. Elija cualquier suscripción y, a continuación, seleccione **actualizar detalles de pago**.
 
@@ -325,7 +321,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 ::: moniker range="o365-21vianet"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>Cambiar la tarjeta de crédito o la cuenta bancaria que se usa para pagar una suscripción
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. Elige la suscripción por la que deseas pagar con la nueva tarjeta de crédito o cuenta bancaria y, a continuación, selecciona **actualizar detalles de pago**.
 
@@ -342,7 +338,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
 ::: moniker range="o365-germany"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>Cambiar la tarjeta de crédito o la cuenta bancaria que se usa para pagar una suscripción
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. Elige la suscripción por la que deseas pagar con la nueva tarjeta de crédito o cuenta bancaria y, a continuación, selecciona **actualizar detalles de pago**.
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 76a4fe678ce0106c7345dd3bdf504673733b63b6
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266056"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955596"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Acciones de corrección tras investigaciones automatizadas en protección contra amenazas de Microsoft
 
@@ -43,23 +43,23 @@ En la tabla siguiente se resumen las acciones de corrección que son compatibles
 
 Las acciones de corrección, tanto si están pendientes de aprobación como si ya están completas, se pueden ver en el [centro de actividades](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 
-## <a name="verdicts-and-outcomes-following-automated-investigations"></a>Veredictos y resultados tras las investigaciones automatizadas
+## <a name="remediation-actions-follow-automated-investigations"></a>Las acciones de corrección siguen las investigaciones automatizadas
 
 Cuando una investigación automatizada se completa, se llega a un veredicto para cada evidencia involucrada, y se identifican las acciones correctivas. En algunos casos, las acciones correctivas se toman automáticamente, en otros casos, las acciones correctivas esperan aprobación. En la tabla siguiente se muestran los posibles resultados:
 
-|Veredicto    |Área   |Resultados|
+|Veredicto    |Área    |Resultados|
 |------|------|------|
-|Malintencionado  |Dispositivos (puntos de conexión)    |Las acciones de corrección se toman automáticamente|
-|Malintencionado  |Contenido de correo electrónico (URL y datos adjuntos) | Acciones de corrección recomendadas pendientes de aprobación|
-|Sospechoso |Dispositivos o contenido de correo electrónico |Acciones de corrección recomendadas pendientes de aprobación|
-|Limpiar  |Dispositivos o contenido de correo electrónico   |No es necesario realizar ninguna acción correctiva|
+|Malintencionado    |Dispositivos (puntos de conexión)    |Las acciones de corrección se toman automáticamente|
+|Malintencionado    |Contenido de correo electrónico (URL y datos adjuntos) | Acciones de corrección recomendadas pendientes de aprobación|
+|Sospechoso    |Dispositivos o contenido de correo electrónico |Acciones de corrección recomendadas pendientes de aprobación|
+|No se encontraron amenazas    |Dispositivos o contenido de correo electrónico    |No es necesario realizar ninguna acción correctiva|
 
 [Revisar una acción pendiente en el centro de actividades](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 
 > [!TIP]
 > Si cree que algo ha perdido o detectado erróneamente las características de respuesta e investigación automatizada en la protección contra amenazas de Microsoft, háganoslo saber. [Informar de falsos positivos/negativos](mtp-autoir-report-false-positives-negatives.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Aprobar o rechazar acciones](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
 

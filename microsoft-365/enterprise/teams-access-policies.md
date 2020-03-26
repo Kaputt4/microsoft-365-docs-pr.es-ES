@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4c72e340092bbd366277114a56aae7574d43dab5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 052edafa64f2704fb5a6df525b0ad5609ddc72b9
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085099"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959199"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directivas para proteger los chats, grupos y archivos de Microsoft Teams
 
@@ -50,8 +50,8 @@ El siguiente diagrama ilustra el conjunto de directivas recomendadas para proteg
 Estos son los servicios dependientes que se deben incluir en la asignación de aplicaciones en la nube para Teams:
 
 - Microsoft Teams
-- SharePoint en línea y OneDrive para Empresas
-- Exchange en línea
+- SharePoint Online y OneDrive para la Empresa
+- Exchange Online
 - Skype Empresarial Online
 - Microsoft Stream (grabaciones de reuniones)
 - Microsoft Planner (tareas de Planner y datos del plan)
@@ -64,7 +64,7 @@ En esta tabla se enumeran las directivas que deben revisitarse y vínculos a cad
 |        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir equipos y servicios dependientes en la asignación de aplicaciones en la nube.|
 |        |[Los usuarios de riesgo alto deben cambiar la contraseña](identity-access-policies.md#high-risk-users-must-change-password)|Obliga a los usuarios de Microsoft Teams a cambiar su contraseña al iniciar sesión si se detecta una actividad de alto riesgo para su cuenta. Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones.|
 |        |[Definir directivas de protección de aplicaciones](identity-access-policies.md#define-app-protection-policies)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Actualice la Directiva para cada plataforma (iOS, Android, Windows).|
-|        |[Requerir aplicaciones aprobadas](identity-access-policies.md#require-approved-apps)|Incluir equipos y servicios dependientes en esta Directiva.|
+|        |[Requerir aplicaciones compatibles con las directivas de protección de aplicaciones de Intune](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Incluir equipos y servicios dependientes en esta Directiva.|
 |        |[Definir directivas de cumplimiento de dispositivos](identity-access-policies.md#define-device-compliance-policies)|Incluir equipos y servicios dependientes en esta Directiva.|
 |        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir equipos y servicios dependientes en esta Directiva.|
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams tiene también acceso de invitado y reglas de acceso externo que se deben tener en cuenta, obtendrá más información sobre estos en este artículo. Incluir equipos y servicios dependientes en esta Directiva.|
@@ -118,7 +118,7 @@ Teams también le permite usar aplicaciones en varios lugares, como canales o ch
 
 Para obtener más información sobre las directivas de permisos de la aplicación, consulte [Manage App Permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Obtenga información sobre cómo habilitar el acceso condicional para Exchange Online](secure-email-recommended-policies.md)
 

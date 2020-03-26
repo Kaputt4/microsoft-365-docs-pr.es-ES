@@ -201,13 +201,13 @@
     - name: Entender la clasificación de datos (vista previa)
       href: data-classification-overview.md
       items:
-        - name: Ver contenido etiquetado (vista previa)
+        - name: Introducción al explorador de contenido (versión preliminar)
           href: data-classification-content-explorer.md
-        - name: Ver actividad de la etiqueta (vista previa)
+        - name: Introducción al explorador de actividad (versión preliminar)
           href: data-classification-activity-explorer.md
         - name: Notas de la versión preliminar pública de la clasificación de datos (vista previa)
           href: data-classification-pub-preview-relnotes.md
-        - name: Introducción al entrenamiento de clasificadores (vista previa)
+        - name: Introducción a los clasificadores capacitables (versión preliminar)
           href: classifier-getting-started-with.md
         - name: Uso de un clasificador integrado (versión preliminar)
           href: classifier-using-a-ready-to-use-classifier.md
@@ -243,6 +243,8 @@
           href: archive-linkedin-data.md
         - name: Configurar un conector para archivar datos instantáneos de Bloomberg
           href: archive-instant-bloomberg-data.md
+        - name: Configurar un conector para archivar datos de chat de ICE (versión preliminar)
+          href: archive-icechat-data.md
         - name: Configurar un conector para importar datos de recursos humanos
           href: import-hr-data.md
         - name: Trabajar con un socio para archivar datos de terceros
@@ -816,6 +818,10 @@
           href: gdpr-for-office-online-server.md
         - name: RGPD para uso compartido de archivos de Windows Server local.
           href: gdpr-for-on-premises-file-shares.md
+    - name: Instrucciones específicas del sector
+      items:
+        - name: Seguridad y cumplimiento de servicios financieros
+          href: ../solutions/financial-services-secure-collaboration.md
 - name: Planes de acción de cumplimiento de normativas
   items:
     - name: Administrador de cumplimiento (Clásico)

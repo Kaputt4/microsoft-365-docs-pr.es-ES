@@ -23,20 +23,20 @@ search.appverid:
 - BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: Obtenga información sobre cómo agregar licencias a su suscripción de Office 365.
-ms.openlocfilehash: 93c2929ae575282716cad7b6f64519f5974e3158
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Obtenga información sobre cómo agregar licencias a su suscripción.
+ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246369"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951951"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Agregar licencias o ampliar una suscripción pagada para usar una clave de producto
 
 Las licencias de prepago se emiten como un código alfanumérico de 25 caracteres. Una vez que haya comprado las licencias que necesita, puede agregarlas a su suscripción. También puede usar una clave de producto para extender la fecha de expiración de la suscripción.
 
 > [!NOTE]
-> Si no desea comprar una nueva clave de producto, puede elegir agregar una tarjeta de crédito o cuenta bancaria a su suscripción para pagar más licencias o para ampliar la fecha de expiración de la suscripción. Para obtener más información, consulte [renovar Office 365 for Business](../subscriptions/renew-your-subscription.md).
+> Si no desea comprar una nueva clave de producto, puede elegir agregar una tarjeta de crédito o cuenta bancaria a su suscripción para pagar más licencias o para ampliar la fecha de expiración de la suscripción. Para obtener más información, consulte [renovar la suscripción](../subscriptions/renew-your-subscription.md).
   
 ## <a name="add-licenses-to-your-subscription"></a>Agregar licencias a su suscripción
 

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Office 365 Advanced eDiscovery v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894857"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955549"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas de eDiscovery heredadas
 
@@ -135,7 +135,13 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <p>
 <p>Como alternativa, puede exportar los resultados de la búsqueda a archivos PST y, a continuación, usar el servicio de importación de Microsoft 365 para importar los archivos PST a un buzón de correo de detección. Para obtener instrucciones paso a paso, consulte <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">usar la carga de red para importar archivos PST a Office 365</a>.
 </tr>
-<tr class="even">
+<tr class=even>
+  <td>Copiar mensajes de un buzón a otro buzón</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Asignar permisos a un buzón</a></td>
+  <td>Para conceder a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado abandona la organización y necesita conceder acceso al correo del antiguo empleado a otra persona), se recomienda asignar los permisos de esa persona para acceder al antiguo empleado bandeja. Por lo tanto, en lugar de copiar los elementos del buzón a otro buzón de usuario o a un buzón compartido, solo tiene que asignar a un usuario permisos para obtener acceso al buzón de origen.</td>
+  
+  </tr>
+<tr class="odd">
 <td>Restaurar elementos de la carpeta elementos recuperables</td>
   <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>Puede restaurar elementos eliminados permanentemente (también conocidos como elementos <i>eliminados temporalmente</i> ) en buzones de correo, siempre que el período de retención de elementos eliminados para un elemento no haya expirado. Para obtener más información, vea <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">carpeta elementos recuperables en Exchange Online</a>.</td>
@@ -216,6 +222,13 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <td>Ninguno</td>
 <td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las preguntas más frecuentes siguientes para obtener soluciones alternativas.</td>
 </tr>
+  <tr class=even>
+  <td>Copiar mensajes de un buzón a otro buzón</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Asignar permisos a un buzón</a></td>
+  <td>Para conceder a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado abandona la organización y necesita conceder acceso al correo del antiguo empleado a otra persona), se recomienda asignar los permisos de esa persona para acceder al antiguo empleado bandeja. Por lo tanto, en lugar de copiar los elementos del buzón a otro buzón de usuario o a un buzón compartido, solo tiene que asignar a un usuario permisos para obtener acceso al buzón de origen.</td>
+  
+  </tr>
+
 </tbody>
 </table>
 

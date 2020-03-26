@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8370744d244ce424fa21e496e8dfd4f470de88e6
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084319"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959187"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -43,7 +43,7 @@ Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configu
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange online en la asignación de aplicaciones en la nube|
 |        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir Exchange online en la asignación de aplicaciones en la nube|
 |        |[Definir directivas de protección de aplicaciones](identity-access-policies.md#high-risk-users-must-change-password)|Asegúrese de que Outlook está incluido en la lista de aplicaciones. Asegúrese de actualizar la Directiva para cada plataforma (iOS, Android, Windows)|
-|        |[Requerir aplicaciones aprobadas](identity-access-policies.md#require-approved-apps)|Incluir Exchange online en la lista de aplicaciones en la nube|
+|        |[Requerir aplicaciones compatibles con las directivas de protección de aplicaciones de Intune](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Incluir Exchange online en la lista de aplicaciones en la nube|
 |        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir Exchange online en la lista de aplicaciones en la nube|
 |        |[Bloquear clientes de ActiveSync](#block-activesync-clients)|Agregar esta nueva Directiva| 
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Incluir Exchange online en la asignación de aplicaciones en la nube|
@@ -52,31 +52,9 @@ Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configu
 
 ## <a name="block-activesync-clients"></a>Bloquear clientes de ActiveSync
 
-Esta directiva impide que los clientes de ActiveSync omitan otras reglas de acceso condicional. La configuración de la regla solo se aplica a los clientes de ActiveSync. Al seleccionar **requerir aplicación cliente aprobada**, esta directiva bloquea a los clientes de ActiveSync. Para configurar esta directiva:
+Esta directiva impide que los clientes de ActiveSync omitan otras reglas de acceso condicional. La configuración de la regla solo se aplica a los clientes de ActiveSync. Al seleccionar **[requerir Directiva de protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, esta directiva bloquea a los clientes de ActiveSync. Puede encontrar más información sobre la creación de esta directiva en [requerir Directiva de protección de aplicaciones para Cloud Access Access con acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Vaya al [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales. Una vez que haya iniciado sesión correctamente, verá el panel de Azure.
-
-2. En el menú de la izquierda, seleccione **Azure Active Directory**.
-
-3. En la sección **Seguridad**, seleccione **Acceso condicional**.
-
-4. Pulse **Nueva directiva**.
-
-5. Escriba un nombre de directiva y seleccione los **Usuarios y grupos** a los que quiera que se aplique la directiva.
-
-6. Seleccione **Aplicaciones en la nube**.
-
-7. Elija **seleccionar aplicaciones**y seleccione **Office 365 Exchange Online**. Elija **seleccionar** y **listo**.
-
-8. Elija **condiciones**y, a continuación, elija **aplicaciones cliente**.
-
-9. Para **configurar**, seleccione **sí**. Compruebe solo lo siguiente: **aplicaciones móviles y clientes de escritorio** y **clientes de Exchange ActiveSync**. Seleccione **Listo**.
-
-10. Pulse **Conceder** en la sección **Controles de acceso**.
-
-11. Elija **conceder acceso**y seleccione **requerir aplicación cliente aprobada**.  Para varios controles, seleccione **requerir los controles seleccionados**y, a continuación, elija **seleccionar**.
-
-12. Seleccione **Crear**.
+1. Siga "paso 2: configurar una directiva de acceso condicional de Azure AD para Exchange Online con ActiveSync (EAS)" en el [escenario 1: las aplicaciones de Office 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), lo que impide que los clientes de Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online.
 
 ## <a name="setup-office-365-message-encryption"></a>Configurar el cifrado de mensajes de Office 365
 
@@ -84,6 +62,6 @@ Con las nuevas capacidades de cifrado de mensajes de Office 365 (OME), que aprov
 
 Para obtener más información, vea [set up New Office 365 Message Encryption Capabilities](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Más información sobre las recomendaciones de directiva para la protección de sitios y archivos de SharePoint](sharepoint-file-access-policies.md)

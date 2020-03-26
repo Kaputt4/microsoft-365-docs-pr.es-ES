@@ -2,8 +2,8 @@
 title: Vistas en el explorador de amenazas y detecciones en tiempo real
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 08/07/2019
 audience: ITPro
@@ -14,12 +14,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los distintos tipos de vistas disponibles en el explorador de amenazas y las detecciones en tiempo real.
-ms.openlocfilehash: 9e2d6ce0c51c6a43596885d9ccb529dc1464a052
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7b05ec1346df3bfa428c384a4236a8758e22da28
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084951"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955644"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
@@ -94,7 +94,7 @@ Seleccione un elemento de la lista para ver más detalles.
 
 ## <a name="email--all-email"></a>Correo electrónico > todo el correo electrónico
 
-Para ver este informe, en el explorador, elija **Ver** > **** > **todos los correos**electrónicos. En esta vista se muestra una vista general de la actividad de correo electrónico, incluido el correo electrónico identificado como malintencionado debido a suplantación de identidad (phishing) o malware, así como a todo el correo no malintencionado (correo electrónico normal, correo no deseado y correo masivo). 
+Para ver este informe, en el explorador, elija **Ver** > **Email** > **todos los correos**electrónicos. En esta vista se muestra una vista general de la actividad de correo electrónico, incluido el correo electrónico identificado como malintencionado debido a suplantación de identidad (phishing) o malware, así como a todo el correo no malintencionado (correo electrónico normal, correo no deseado y correo masivo). 
 
 > [!NOTE]
 > Si recibe un error que lee **demasiados datos para mostrar**, agregue un filtro y, si es necesario, restrinja el intervalo de fechas que está viendo. 
@@ -107,7 +107,7 @@ Debajo del gráfico, vea más detalles sobre los mensajes de correo electrónico
 
 ## <a name="content--malware"></a>Contenido > malware
 
-Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** > **** > **malware**de contenido. Esta vista muestra los archivos que se identificaron como malintencionados con la [protección contra amenazas avanzada de Office 365 en SharePoint Online, OneDrive para la empresa y Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** > **Content** > **malware**de contenido. Esta vista muestra los archivos que se identificaron como malintencionados con la [protección contra amenazas avanzada de Office 365 en SharePoint Online, OneDrive para la empresa y Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 Ver información por familia de malware, tecnología de detección (cómo se detectó el malware) y carga de trabajo (OneDrive, SharePoint o Teams). 
 

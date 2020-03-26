@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Obtenga información sobre cómo renovar la suscripción de Office 365 para empresas con una clave de producto y activar o desactivar la facturación recurrente. '
-ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633708"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959221"
 ---
 # <a name="renew-office-365-for-business"></a>Activar de nuevo o renovar suscripción a Office 365 Empresa
 
 Este artículo se aplica a la mayoría de las suscripciones a Office 365 para empresas de pago.
   
-Para renovar mediante una clave de producto que compró en una tienda minorista o un socio de Office 365, consulte [EFind y escriba la clave de producto](../enter-your-product-key.md).
+Para renovar mediante una clave de producto que compró en una tienda minorista o un socio de Office 365, vea [Buscar y escribir la clave de producto](../enter-your-product-key.md).
 
 > [!NOTE]
 > El pago por cuenta bancaria no está disponible en algunos países o regiones.
@@ -70,7 +70,7 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
 ::: moniker range="o365-germany"
   
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Suscripciones</a>.
 
     Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
@@ -93,7 +93,7 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
 ::: moniker range="o365-21vianet"
   
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Suscripciones</a>.
 
     Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
@@ -109,7 +109,7 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
     > [!NOTE]
     > - Solo puede cambiar la configuración de **facturación recurrente** para las suscripciones activas. Si su suscripción ya ha expirado o está deshabilitada, tendrá que [volver a activarla](reactivate-your-subscription.md) para poder activar o desactivar la **facturación periódica** .
-    > - Cuando la **facturación recurrente** está desactivada, la suscripción no se cancela inmediatamente. Permanece activa hasta que expira. Puede ver la fecha de expiración en la tarjeta de suscripción
+    > - Cuando la **facturación recurrente** está desactivada, la suscripción no se cancela inmediatamente. Permanece activa hasta que expira. Puede ver la fecha de expiración en la tarjeta de suscripción.
     > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [cancelar la suscripción](cancel-your-subscription.md).
 
 ::: moniker-end
@@ -120,7 +120,7 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
   
 [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
-[¿Qué pasa con mis datos y acceso cuando se termina la suscripción?](what-if-my-subscription-expires.md)
+[¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?](what-if-my-subscription-expires.md)
 
 [Agregar, actualizar o quitar los métodos de pago](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
