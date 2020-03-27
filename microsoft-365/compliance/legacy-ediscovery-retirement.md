@@ -11,14 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Office 365 Advanced eDiscovery v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955549"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978170"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas de eDiscovery heredadas
+
+> [!IMPORTANT]
+> Microsoft ha evaluado la situación de salud pública y comprendemos el impacto que esto tiene en nuestros clientes. Queremos ser socios seguros y ciudadanos globales responsables. Para facilitar una de las muchas sobrecargas que tiene enfrentadas, vamos a retrasar en tres meses la jubilación programada para las herramientas de eDiscovery heredado que se enumeran a continuación. **Las fechas de retirada actualizadas se reflejan a continuación.**
 
 A lo largo de los años, Microsoft ha ofrecido herramientas de eDiscovery que le permiten buscar, obtener una vista previa y exportar contenido de correo electrónico desde Exchange Online. Sin embargo, estas herramientas ya no ofrecen una forma efectiva de buscar contenido que no es de Exchange en otros servicios de Office 365, como SharePoint Online y Office 365 groups. Para solucionar esto, Microsoft ofrece otras herramientas de eDiscovery que le ayudarán a buscar una amplia variedad de contenido de Office 365. Y hemos trabajado duro para incorporar la funcionalidad de exhibición de documentos electrónicos más actual y eficaz en el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). Esto permite a las organizaciones responder a solicitudes de contenido legales, internas y de otro documento sobre muchos de los servicios de Office 365, incluido Exchange Online.
 
@@ -78,9 +81,9 @@ Debido a que todas estas capacidades (excepto la de copiar los resultados de la 
 
 ### <a name="timeline-for-retirement"></a>Escala de tiempo para la jubilación
 
-- 1 de abril de 2020: no podrá crear nuevas búsquedas y suspensiones, pero puede seguir ejecutando, editando y eliminando las búsquedas existentes bajo su propio riesgo. El soporte técnico de Microsoft ya no guardará la exhibición de documentos electrónicos & retenciones en el EAC.
+- 1 de julio de 2020: no podrá crear nuevas búsquedas y suspensiones, pero puede seguir ejecutando, editando y eliminando las búsquedas existentes bajo su propio riesgo. El soporte técnico de Microsoft ya no guardará la exhibición de documentos electrónicos & retenciones en el EAC.
 
-- 1 de julio de 2020: el & de la exhibición de documentos electrónicos local contiene funcionalidad en el EAC se colocará en modo de solo lectura. Esto significa que solo podrá quitar búsquedas y suspensiones existentes.
+- 1 de octubre de 2020: el & de la exhibición de documentos electrónicos local incluye funciones en el EAC se colocarán en modo de solo lectura. Esto significa que solo podrá quitar búsquedas y suspensiones existentes.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
 
@@ -181,9 +184,9 @@ Como estas capacidades ahora están disponibles en el [<span class="underline">c
 
 ### <a name="timeline"></a>Escala de tiempo
 
-- 1 de abril de 2020: no podrá usar **New-MailboxSearch** para crear nuevas búsquedas de exhibición de documentos electrónicos local y retenciones locales, pero todavía puede usar cmdlets para ejecutar, editar y eliminar las búsquedas y las suspensiones existentes bajo su responsabilidad. El soporte técnico de Microsoft ya no ofrece asistencia para estos tipos de búsquedas y suspensiones.
+- 1 de julio de 2020: no podrá usar **New-MailboxSearch** para crear nuevas búsquedas de exhibición de documentos electrónicos local y retenciones locales, pero todavía puede usar cmdlets para ejecutar, editar y eliminar las búsquedas y las suspensiones existentes bajo su responsabilidad. El soporte técnico de Microsoft ya no ofrece asistencia para estos tipos de búsquedas y suspensiones.
 
-- 1 de julio de 2020: como se indicó anteriormente, la funcionalidad de la exhibición de documentos electrónicos local & retiene la funcionalidad en el EAC se colocará en modo de solo lectura. Esto también significa que no podrá usar los cmdlets **New-mailboxsearch**, **Start-mailboxsearch**o **set-mailboxsearch** . Solo podrás obtener y quitar búsquedas y suspensiones existentes.
+- 1 de octubre de 2020: como se indicó anteriormente, la funcionalidad de la exhibición de documentos electrónicos local & retiene la funcionalidad en el EAC se colocará en modo de solo lectura. Esto también significa que no podrá usar los cmdlets **New-mailboxsearch**, **Start-mailboxsearch**o **set-mailboxsearch** . Solo podrás obtener y quitar búsquedas y suspensiones existentes.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
 
@@ -219,7 +222,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 </tr>
 <tr class="odd">
 <td>Copiar los resultados de la búsqueda en un buzón de detección</td>
-<td>Ninguno</td>
+<td>Ninguna</td>
 <td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las preguntas más frecuentes siguientes para obtener soluciones alternativas.</td>
 </tr>
   <tr class=even>
@@ -262,7 +265,7 @@ El cmdlet **Search-Mailbox** en Exchange Online PowerShell se está retirando co
 
 ### <a name="timeline"></a>Escala de tiempo
 
--  1 de abril de 2020: el cmdlet **Search-Mailbox** dejará de estar disponible y el soporte técnico de Microsoft ya no proporcionará asistencia.
+-  1 de julio de 2020: el cmdlet **Search-Mailbox** dejará de estar disponible y el soporte técnico de Microsoft ya no proporcionará asistencia.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
 
@@ -324,7 +327,7 @@ Estas operaciones en la API de los servicios web Exchange se usan en la caracter
 
 ### <a name="timeline"></a>Escala de tiempo
 
-- 1 de abril de 2020: las operaciones de GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes y GetHoldOnMailboxes ya no estarán disponibles y el soporte de Microsoft ya no proporcionará asistencia.
+- 1 de julio de 2020: las operaciones de GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes y GetHoldOnMailboxes ya no estarán disponibles y el soporte técnico de Microsoft ya no proporcionará asistencia.
 
 ## <a name="advanced-ediscovery-v10"></a>EDiscovery avanzado v 1.0
 
@@ -332,7 +335,7 @@ EDiscovery avanzado v 1.0, que es la versión de eDiscovery avanzado disponible 
 
 La nueva solución avanzada de exhibición de documentos electrónicos de Microsoft 365 (también denominada *EDiscovery avanzado v 2.0*) proporciona todas las capacidades de la solución original, pero ahora incluye un enfoque basado en custodios para identificar contenido en otros servicios de Microsoft 365, recopilar dicho contenido y, a continuación, agregarlo a un conjunto de revisión en el que los revisores pueden aprovechar las consultas de Fast Search, el etiquetado y las características de análisis para facilitar la selección de documentos relevantes. La exhibición avanzada de documentos electrónicos ahora incluye mejoras de procesamiento y visores nativos para tipos de archivo de Microsoft y que [no son de](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)Microsoft, aquí se muestra una lista completa de los tipos de [archivo y los](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) campos de metadatos admitidos. Además, la nueva solución Advanced eDiscovery proporciona una potente característica de administración de retenciones de custodios que le permite aplicar suspensiones a contenido en diferentes servicios, notificar a los usuarios de las suspensiones y realizar un seguimiento de las respuestas de custodios, todo dentro de un caso de eDiscovery avanzado.
 
-En este momento, le recomendamos que empiece a realizar la transición del flujo de trabajo de eDiscovery a la nueva funcionalidad de eDiscovery avanzado. Aunque aún podrá obtener acceso a la exhibición avanzada de documentos electrónicos v 1.0 en casos existentes, el soporte técnico de Microsoft no proporcionará soporte técnico después del 1 de julio de 2020. Para obtener más información, vea la siguiente escala de tiempo.
+En este momento, le recomendamos que empiece a realizar la transición del flujo de trabajo de eDiscovery a la nueva funcionalidad de eDiscovery avanzado. Aunque aún podrá obtener acceso a la exhibición avanzada de documentos electrónicos v 1.0 en casos existentes, el soporte técnico de Microsoft no proporcionará soporte técnico después del 1 de octubre de 2020. Para obtener más información, vea la siguiente escala de tiempo.
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
     
@@ -344,9 +347,9 @@ En este momento, le recomendamos que empiece a realizar la transición del flujo
 
 ### <a name="timeline"></a>Escala de tiempo
 
-- 1 de abril de 2020: no podrá crear nuevos casos de exhibición de documentos electrónicos v 1.0 avanzado.
+- 1 de julio de 2020: no podrá crear nuevos casos de exhibición de documentos electrónicos v 1.0 avanzado.
 
-- 1 de julio de 2020: no podrá agregar nuevos datos (preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos) en ningún caso. Podrá seguir trabajando con los datos en casos existentes bajo su propio riesgo. El soporte técnico de Microsoft ya no ofrece asistencia. 
+- 1 de octubre de 2020: no podrá agregar nuevos datos (preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos) en ningún caso. Podrá seguir trabajando con los datos en casos existentes bajo su propio riesgo. El soporte técnico de Microsoft ya no ofrece asistencia. 
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Office 365.
-ms.openlocfilehash: b1bac1cbe094a1e56c05dd7fd1aa5377f0a85ce5
-ms.sourcegitcommit: 62eac95c27295ba285e28cec5acf815314fbfd00
+ms.openlocfilehash: 67fe4892a980748699bb17c0a41299ed741cf417
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42601357"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952070"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Office 365 y los sitios de SharePoint (versión preliminar pública)
 
@@ -52,7 +52,7 @@ Después de habilitar y configurar esta versión preliminar, los usuarios tambi�
 
 1. Dado que esta característica usa la funcionalidad de Azure AD, siga las instrucciones de la documentación de Azure AD para habilitar la versión preliminar: [asignar etiquetas de confidencialidad a grupos de Office 365 en Azure Active Directory (versión preliminar)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. En una sesión de PowerShell, conéctese al Centro de seguridad y cumplimiento con una cuenta profesional o educativa con privilegios de administrador global. Por ejemplo:
+2. Abra una sesión de PowerShell con la opción de **Ejecutar como administrador** y conéctese al Centro de seguridad y cumplimiento con una cuenta profesional o educativa con privilegios de administrador global. Por ejemplo:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -183,7 +183,7 @@ Para ver las etiquetas de confidencialidad aplicadas, use la página **Sitios ac
 
 Siempre que haga un cambio en la configuración de sitio y de grupo de una etiqueta, debe ejecutar los comandos de PowerShell que se indican a continuación para que los equipos, sitios y grupos puedan usar la nueva configuración. Se recomienda no cambiar la configuración del sitio y el grupo de una etiqueta después de haber aplicado la etiqueta a varios equipos, grupos o sitios.
 
-1. Ejecute los siguientes comandos para conectarse al PowerShell del Centro de seguridad y cumplimiento de Office 365 y obtener la lista de etiquetas de confidencialidad y sus GUID.
+1. En una sesión de PowerShell que abra con la opción **Ejecutar como administrador**, ejecute los siguientes comandos para conectarse al PowerShell del Centro de seguridad y cumplimiento de Office 365 y obtener la lista de etiquetas de confidencialidad y sus GUID.
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -198,7 +198,6 @@ Siempre que haga un cambio en la configuración de sitio y de grupo de una etiqu
 3. Ahora, conéctese al PowerShell de Exchange Online y ejecute el cmdlet Get-UnifiedGroup, especificando el GUID de la etiqueta en vez del GUID de ejemplo de "e48058ea-98e8-4940-8db0-ba1310fd955e": 
     
     ```powershell
-    Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session

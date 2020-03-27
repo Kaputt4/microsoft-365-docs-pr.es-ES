@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Si un antiguo empleado vuelve a su organización, o si se contrata a un nuevo empleado para que realice las responsabilidades laborales de un empleado que ya no está en parte, puede recuperar el contenido del buzón inactivo en Office 365. Al recuperar un buzón inactivo, se convierte en un nuevo buzón que contiene el contenido del buzón inactivo. '
-ms.openlocfilehash: f7e7b36a1f1a3258cac18b84c3c8881355ecbb43
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5048df8c17f4f44c1bbed33753da51dac53c7789
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070097"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978150"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Recuperar un buzón inactivo en Office 365
 
@@ -32,9 +32,6 @@ Un buzón inactivo (que es un tipo de buzón eliminado temporalmente) se usa par
 - **Restaurar un buzón inactivo** Si otro empleado asume las responsabilidades laborales del antiguo empleado o si otro usuario necesita tener acceso al contenido del buzón inactivo, puede restaurar (o combinar) el contenido del buzón inactivo en un buzón existente. También puede restaurar el archivo desde un buzón inactivo. Para conocer los procedimientos de este método, vea [restaurar un buzón inactivo en Office 365](restore-an-inactive-mailbox.md).
     
 Consulte la sección [Más información](#more-information) para obtener más detalles sobre las diferencias entre la recuperación y restauración de un buzón inactivo, así como para obtener una descripción de lo que sucede cuando se recupera un buzón inactivo.
-  
-> [!NOTE]
-> Hemos pospuesto la fecha límite para crear retenciones locales nuevas para convertir un buzón en inactivo. Pero en algún momento en el futuro, no podrá crear nuevas retenciones locales en Exchange Online. En ese momento, solo se pueden usar las suspensiones por juicio y las directivas de retención de Office 365 para crear un buzón inactivo. No obstante, se seguirán admitiendo los buzones inactivos existentes que estén en conservación local y podrá seguir administrando las conservaciones locales de buzones inactivos. Esto incluye el cambio de la duración de las conservaciones locales y la eliminación de forma permanentemente de buzones inactivos al quitar la conservación local. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -87,7 +84,7 @@ Después de recuperar un buzón inactivo, también se crea una nueva cuenta de u
     
   - La suspensión de retención está habilitada y la duración de la suspensión de retención se establece en 30 días. Esto significa que la Directiva de retención de Exchange predeterminada y todas las directivas de retención de Office 365 de toda la organización o de Exchange que se asignan al nuevo buzón no se procesarán durante 30 días. Esto proporciona al empleado que vuelve o al nuevo propietario del buzón inactivo recuperado el tiempo suficiente para administrar los mensajes antiguos. De lo contrario, la Directiva de retención de Exchange u Office 365 puede eliminar elementos de buzón antiguos (o mover elementos al buzón de archivo, si está habilitado) que han expirado según la configuración establecida para las directivas de retención de Exchange u Office 365. Transcurrido el plazo de 30 días, la suspensión de **la retención** se establece en **false**y el Asistente para carpeta administrada comienza a procesar las directivas asignadas al buzón de correo. Si no necesita este tiempo adicional, solo puede quitar la suspensión de retención. Como alternativa, puede aumentar la duración de la suspensión de retención mediante el comando **Set-Mailbox -EndDateForRetentionHold**. Para obtener más información, consulte [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300).
     
-- **Si necesita conservar el estado original del buzón inactivo, coloque una retención en el buzón recuperado.** Para evitar que el nuevo propietario del buzón o la Directiva de retención eliminen permanentemente los mensajes del buzón inactivo recuperado, puede poner el buzón en retención por juicio para obtener más información, vea [poner un buzón de correo en](https://go.microsoft.com/fwlink/?linkid=856286)retención por juicio.
+- **Si necesita conservar el estado original del buzón inactivo, coloque una retención en el buzón recuperado.** Para evitar que el nuevo propietario del buzón o la Directiva de retención eliminen permanentemente los mensajes del buzón inactivo recuperado, puede poner el buzón en retención por juicio. Para obtener más información, vea [Poner un buzón en retención por juicio](https://go.microsoft.com/fwlink/?linkid=856286).
     
 - **¿Qué identificador de usuario se puede usar cuando se recupera un buzón inactivo?** Al recuperar un buzón inactivo, el valor que especifique para el parámetro *MicrosoftOnlineServicesID* puede ser diferente del original que estaba asociado con el buzón inactivo. También se puede usar el identificador de usuario original. Pero, como se mencionó anteriormente, asegúrese de que los valores usados para *nombre* y *MicrosoftOnlineServicesID* son únicos dentro de la organización al recuperar el buzón inactivo. 
     

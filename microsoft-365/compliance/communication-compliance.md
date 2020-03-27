@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179241"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982053"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 
@@ -53,7 +53,7 @@ Las directivas de cumplimiento de comunicaciones pueden ayudarle a revisar los m
 
 - **Cumplimiento normativo**
 
-    La mayoría de las organizaciones deben cumplir con algún tipo de estándares de cumplimiento normativo como parte de los procedimientos de funcionamiento normales. Estas normativas a menudo requieren que las organizaciones implementen algún tipo de supervisión o proceso de supervisión para la mensajería que sea adecuada para su sector. La regla 3110 de la autoridad reguladora del sector financiero (FINRA) es un buen ejemplo de un requisito para que las organizaciones dispongan de procedimientos de supervisión para analizar las comunicaciones de los empleados y los tipos de empresas en las que participa. Otro ejemplo podría ser la necesidad de revisar las comunicaciones de agentes en su organización para protegerse contra el blanqueo de dinero, la colusión o las actividades de soborno. Las directivas de cumplimiento de comunicaciones pueden ayudar a su organización a cumplir estos requisitos proporcionando un proceso para analizar e informar sobre comunicaciones corporativas.
+    La mayoría de las organizaciones deben cumplir con algún tipo de estándares de cumplimiento normativo como parte de los procedimientos de funcionamiento normales. Estas normativas a menudo requieren que las organizaciones implementen algún tipo de supervisión o proceso de supervisión para la mensajería que sea adecuada para su sector. La regla 3110 de la autoridad reguladora del sector financiero (FINRA) es un buen ejemplo de un requisito para que las organizaciones dispongan de procedimientos de supervisión para analizar las comunicaciones de los empleados y los tipos de empresas en las que participa. Otro ejemplo podría ser la necesidad de revisar las comunicaciones de agentes en su organización para protegerse contra el blanqueo de dinero, la colusión o las actividades de soborno. Las directivas de cumplimiento de comunicaciones pueden ayudar a su organización a cumplir estos requisitos proporcionando un proceso para analizar e informar sobre comunicaciones corporativas. Para obtener más información sobre la compatibilidad con organizaciones financieras, consulte [key Compliance and Security Considerations for US bancaria and Capital Markets](../solutions/financial-services-secure-collaboration.md).
 
 ## <a name="new-enhancements"></a>Nuevas mejoras
 
@@ -155,4 +155,4 @@ Mantener el seguimiento y administrar los problemas de cumplimiento identificado
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-Para configurar el cumplimiento de comunicaciones para la organización de Microsoft 365, vea [Configure Communication Compliance for Microsoft 365](communication-compliance-configure.md).
+Para configurar el cumplimiento de comunicaciones para su organización de Microsoft 365, vea [Configure Communication Compliance for Microsoft 365](communication-compliance-configure.md) o consulte el [caso práctico de Contoso](communication-compliance-case-study.md) y cómo configuró rápidamente una directiva de cumplimiento de comunicaciones para supervisar el idioma ofensivo en Microsoft Teams y las comunicaciones de Exchange Online.

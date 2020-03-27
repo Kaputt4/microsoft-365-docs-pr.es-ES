@@ -46,6 +46,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Referencia de características para el cumplimiento de la comunicación
           href: communication-compliance-feature-reference.md
+        - name: Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo
+          href: communication-compliance-case-study.md
         - name: Directivas de supervisión en Office 365
           href: supervision-policies.md
         - name: Configurar directivas de supervisión para Office 365
@@ -638,6 +640,8 @@
               href: use-advanced-ediscovery-utilities.md
             - name: Ejecutar informes
               href: run-reports-in-advanced-ediscovery.md
+    - name: Retirada de herramientas de eDiscovery heredadas
+      href: legacy-ediscovery-retirement.md
 - name: Administrar investigaciones de datos
   items:
     - name: Información general sobre investigaciones de datos

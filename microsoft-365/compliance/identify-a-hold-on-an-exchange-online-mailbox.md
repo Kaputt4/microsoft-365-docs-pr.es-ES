@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Obtenga información sobre cómo identificar los distintos tipos de retenciones que se pueden colocar en un buzón de correo de Office 365. Estos tipos de retenciones incluyen la retención por juicio, las suspensiones de eDiscovery y las directivas de retención de Office 365. También puede determinar si se ha excluido a un usuario de una directiva de retención para toda la organización
-ms.openlocfilehash: f45310547d41d8ec1092a3fecfaa0b50c4439559
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 29d212f0ba16c7ae414c3a47707cfcd0f95420c7
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634868"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978230"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -55,7 +55,7 @@ Puede ejecutar los dos cmdlets siguientes en Exchange Online PowerShell para obt
 
 - **Get-OrganizationConfig:** Use este cmdlet para obtener los GUID de las directivas de retención de toda la organización.
 
-Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -152,7 +152,7 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 Si el GUID de la retención local comienza con el `cld` prefijo, asegúrese de incluir el prefijo al ejecutar el comando anterior.
 
 > [!IMPORTANT]
-> A medida que seguimos invirtiendo en diferentes formas de conservar el contenido de los buzones, estamos anunciando la retirada de conservaciones locales en el centro de administración de Exchange (EAC). A partir del 1 de abril de 2020, no podrá crear nuevas retenciones locales en Exchange Online. Pero todavía podrá administrar suspensiones locales en el EAC o mediante el cmdlet **set-MailboxSearch** en Exchange Online PowerShell. Sin embargo, a partir del 1 de julio de 2020, no podrá administrar suspensiones locales. Solo se quitarán en el EAC o mediante el cmdlet **Remove-MailboxSearch** . Para obtener más información acerca de la retirada de suspensiones locales, consulte [jubilación de las herramientas de eDiscovery heredadas](legacy-ediscovery-retirement.md).
+> A medida que seguimos invirtiendo en diferentes formas de conservar el contenido de los buzones, estamos anunciando la retirada de conservaciones locales en el centro de administración de Exchange (EAC). A partir del 1 de julio de 2020, no podrá crear nuevas retenciones locales en Exchange Online. Pero todavía podrá administrar suspensiones locales en el EAC o mediante el cmdlet **set-MailboxSearch** en Exchange Online PowerShell. Sin embargo, a partir del 1 de octubre de 2020, no podrá administrar suspensiones locales. Solo se quitarán en el EAC o mediante el cmdlet **Remove-MailboxSearch** . Para obtener más información acerca de la retirada de suspensiones locales, consulte [jubilación de las herramientas de eDiscovery heredadas](legacy-ediscovery-retirement.md).
 
 ### <a name="office-365-retention-policies"></a>Directivas de retención de Office 365
 
@@ -231,7 +231,7 @@ Tenga en cuenta lo siguiente cuando administre un buzón de correo en espera de 
 
 - Como se indicó anteriormente, un buzón se considera en espera durante una duración de retención ilimitada si la propiedad DelayHoldApplied o DelayReleaseHoldApplied está establecida en **true**. Sin embargo, esto no significa que se conserve *todo* el contenido del buzón. Depende del valor que se establezca en cada propiedad. Por ejemplo, supongamos que ambas propiedades se establecen en **true** porque se quitan las suspensiones del buzón de correo. A continuación, quita solo la retención retrasada que se aplica a los datos que no son de la nube de Outlook (mediante el parámetro *RemoveDelayReleaseHoldApplied* ). La próxima vez que el Asistente para carpetas administradas procese el buzón, se purgarán los elementos que no sean de Outlook marcados para su eliminación. No se purgarán todos los elementos de Outlook marcados para su eliminación porque la propiedad DelayHoldApplied sigue establecida en **true**. Lo contrario también será true: si DelayHoldApplied se establece en **false** y DelayReleaseHoldApplied se establece en **true**, se purgarán sólo los elementos de Outlook marcados para su eliminación.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de identificar las suspensiones que se aplican a un buzón de correo, puede realizar tareas como cambiar la duración de la retención, quitar temporalmente o permanentemente la retención o excluir un buzón inactivo de una directiva de retención de Office 365. Para obtener más información acerca de cómo realizar tareas relacionadas con las suspensiones, consulte uno de los siguientes temas:
 
