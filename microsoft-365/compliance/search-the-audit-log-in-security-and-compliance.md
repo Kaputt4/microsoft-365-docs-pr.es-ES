@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 13a65f5a6a82eed748eaa79a3683ebdf2fe7ed9a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894401"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955689"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -311,8 +311,8 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
 |[Actividades de eDiscovery avanzado](#advanced-ediscovery-activities)|[Actividades de Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Actividades de Microsoft Teams](#microsoft-teams-activities)|[Actividades de Microsoft Teams para Sanidad](#microsoft-teams-healthcare-activities)|[Actividades de Yammer](#yammer-activities)|
 |[ Actividades en Microsoft Power Automate ](#microsoft-power-automate-activities)|[ Actividades en Microsoft Power Apps ](#microsoft-power-apps-activities)|[Actividades de Microsoft Stream](#microsoft-stream-activities)|
-|[Actividades del explorador de contenido](#content-explorer-activities)|[Actividades de Microsoft Forms](#microsoft-forms-activities)|[Actividades de la etiqueta de confidencialidad](#sensitivity-label-activities)|
-|[Actividades de administración de Exchange](#exchange-admin-audit-log)||
+|[Actividades del explorador de contenido](#content-explorer-activities)|[Actividades de cuarentena](#quarantine-activities)|[Actividades de Microsoft Forms](#microsoft-forms-activities)
+|[Actividades de la etiqueta de confidencialidad](#sensitivity-label-activities)|[Actividades de administración de Exchange](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Actividades de páginas y archivos
@@ -811,7 +811,20 @@ En la tabla siguiente se enumeran las actividades del explorador de contenido qu
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
-|Archivo al que se ha accedido|AccessedItem|Un administrador (o un usuario que sea miembro del grupo de roles de Visor de contenido del explorador de contenido) usa el explorador de contenido para ver un mensaje de correo electrónico o un documento de OneDrive o SharePoint.|
+|Archivo al que se ha accedido|LabelContentExplorerAccessedItem|Un administrador (o un usuario que sea miembro del grupo de roles de Visor de contenido del explorador de contenido) usa el explorador de contenido para ver un mensaje de correo electrónico o un documento de OneDrive o SharePoint.|
+||||
+
+### <a name="quarantine-activities"></a>Actividades de cuarentena
+
+En la tabla siguiente se enumeran las actividades de cuarentena que puede buscar en el registro de auditoría. Para obtener más información, consulte [Mensajes de correo electrónico en cuarentena en Office 365](../security/office-365-security/quarantine-email-messages.md).
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Mensaje de cuarentena eliminado|QuarantineDelete|Un usuario eliminó un mensaje de correo que se consideró peligroso.|
+|Mensaje de cuarentena exportado|QuarantineExport|Un usuario exportó un mensaje de correo que se consideró peligroso.|
+|Vista previa de mensaje de cuarentena|QuarantinePreview|Un usuario consultó una vista previa de un mensaje de correo que se consideró peligroso.|
+|Mensaje de cuarentena liberado|QuarantineRelease|Un usuario liberó de la cuarentena un mensaje de correo que se consideró peligroso.|
+|Vista de encabezado mensaje de cuarentena|QuarantineViewHeader|Un usuario vio el encabezado de un mensaje de correo que se consideró peligroso.|
 ||||
 
 ### <a name="microsoft-forms-activities"></a>Actividades de Microsoft Forms
