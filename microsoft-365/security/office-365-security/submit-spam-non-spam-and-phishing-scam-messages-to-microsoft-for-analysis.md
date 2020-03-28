@@ -1,5 +1,5 @@
 ---
-title: Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis
+title: Enviar mensajes a Microsoft de forma manual para su análisis
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,101 +16,138 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Usted y sus usuarios pueden enviar mensajes de correo no deseado falsos negativos y falsos positivos a Microsoft para su análisis. '
-ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 13b2e42f749b54e0c2b71fe095c077992560ea8c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893651"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032809"
 ---
-# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes a Microsoft de forma manual para su análisis
 
-Puede resultar frustrante cuando los usuarios de la organización reciben mensajes de correo no deseado o mensajes de suplantación de identidad (spam) en su bandeja de entrada, o si no reciben un mensaje de correo electrónico legítimo porque está marcado como correo no deseado. Estamos ajustando constantemente los filtros de correo no deseado para que sean más precisos. Usted y sus usuarios pueden ayudar a este proceso enviando mensajes de correo no deseado falsos negativos y falsos positivos a Microsoft para su análisis. Un "falso negativo" es un mensaje de correo no deseado que debería haberse identificado como correo no deseado. Un "falso positivo" es un mensaje de correo electrónico legítimo que se identificó incorrectamente como correo no deseado.
+> [!NOTE]
+> Si es administrador de una organización de Office 365 con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento de Office 365. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
+
+Puede resultar frustrante cuando los usuarios de la organización reciben mensajes de correo no deseado o mensajes de suplantación de identidad (phishing) en su bandeja de entrada, o si no reciben un mensaje de correo electrónico legítimo porque está marcado como correo no deseado. Estamos ajustando constantemente los filtros de correo no deseado para que sean más precisos.
+
+Usted y sus usuarios pueden ayudar a este proceso mediante el envío de falsos positivos (correo electrónico bueno marcado como no válido), los falsos negativos (correo erróneo permitido) y los mensajes de suplantación de identidad a Microsoft para su análisis.
 
 > [!NOTE]
 > Debido al elevado volumen de envíos que recibimos, es posible que no podamos contestar todas las solicitudes de análisis.
 
-Los administradores pueden enviar correo electrónico, URL y datos adjuntos a Microsoft para su revisión. Vea [envíos de administración en Office 365 ATP](admin-submission.md).
+## <a name="submit-false-negatives-to-microsoft"></a>Enviar falsos negativos a Microsoft
 
-## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>Enviar mensajes de correo no deseado o de suplantación de identidad (phishing) que pasaron por los filtros de correo no deseado
+> [!TIP]
+> En lugar de usar los siguientes procedimientos para informar sobre falsos negativos, los usuarios de Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) pueden usar el complemento de mensajes de informe para Microsoft Outlook. Para obtener información sobre cómo instalar y usar esta herramienta, consulte [Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md).
 
-Si recibe un mensaje que pasa por los filtros de correo no deseado y debe clasificarse como correo no deseado o como una estafa de suplantación de identidad, puede enviar el mensaje "falso negativo" al análisis de correo no deseado de Microsoft y a Microsoft phishing Analysis Teams, según corresponda. Los analistas revisarán el mensaje y lo agregarán a los filtros de todo el servicio si cumple con los criterios de clasificación.
+Si recibe un mensaje que pasa a través del filtrado de correo no deseado que debería haberse identificado como correo no deseado o suplantación de identidad, puede enviar el mensaje a Microsoft spam Analysis y Microsoft phishing Analysis Teams según corresponda. Los analistas revisarán el mensaje y lo agregarán a los filtros de todo el servicio si cumple con los criterios de clasificación.
 
-Para obtener más información sobre la configuración de correo no deseado que se aplica a toda la organización, vea [protección contra correo no deseado en Office 365](anti-spam-protection.md). Este artículo contiene sugerencias para ayudar a evitar falsos negativos.
+1. Cree un mensaje de correo electrónico nuevo en blanco con uno de los siguientes destinatarios:
 
-Puede enviar mensajes de correo no deseado de las maneras siguientes:
+   - **Correo no deseado**:`junk@office365.microsoft.com`
 
-- Para los usuarios de Outlook y Outlook en la web, use el complemento de mensajes de informe para Microsoft Outlook. Para obtener información sobre cómo instalar y usar esta herramienta, consulte [Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md).
+   - **Suplantación de identidad**:`phish@office365.microsoft.com`
 
-- También puede usar el correo electrónico para enviar mensajes a Microsoft que deben clasificarse como estafas de suplantación de identidad (spam) o suplantación de identidad (phishing), como se describe en el siguiente procedimiento.
-
-### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>Usar el correo electrónico para enviar mensajes de correo no deseado o de suplantación de identidad (phishing) a Microsoft 
-
-Para enviar un mensaje de correo no deseado o de suplantación de identidad (phishing) a Microsoft:
-
-1. Cree un mensaje de correo electrónico en blanco.
-
-2. Dirigir el mensaje al equipo de Microsoft que revisa los mensajes, de la siguiente manera:
-
-   - Para los mensajes de correo no deseado: junk@office365.microsoft.com
-
-   - Para los mensajes de suplantación de identidad: phish@office365.microsoft.com
-
-3. Copie y pegue el mensaje de correo no deseado o de suplantación de identidad (phishing) en el nuevo mensaje como datos adjuntos.
+2. Arrastre y coloque el mensaje no deseado o de suplantación de identidad en el nuevo mensaje. Se guardará el mensaje no deseado o de suplantación de identidad (phishing) como datos adjuntos en el nuevo mensaje. No copie y pegue el contenido del mensaje o lo reenvíe (necesitamos el mensaje original para que podamos inspeccionar los encabezados del mensaje).
 
    > [!NOTE]
-   > * Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes sean del mismo tipo: mensajes de suplantación de identidad (phishing) o mensajes de correo electrónico no deseado. <br/><br/>* Deje el cuerpo del nuevo mensaje en blanco. <br/><br/>* Use cualquiera de los formatos. msg (formato predeterminado de Outlook) o. eml (formato predeterminado de Outlook en la web) para los mensajes adjuntos.
+   > <ul><li>Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes sean del mismo tipo: mensajes de suplantación de identidad (phishing) o mensajes de correo electrónico no deseado.</li><li>Deje el cuerpo del nuevo mensaje en blanco.<li></li>Use cualquiera de los formatos. msg (formato predeterminado de Outlook) o. eml (formato predeterminado de Outlook en la web) para los mensajes adjuntos.</li></ul>
 
-4. Haga clic en **Enviar**.
+3. Cuando haya terminado, haga clic en **Enviar**.
 
-## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>Envío de mensajes falsos positivos 
+> [!TIP]
+> Los administradores tienen varias formas diferentes de bloquear mensajes específicos que se identifican como correo no deseado. Para obtener más información, vea [crear listas de remitentes bloqueados en Office 365](create-block-sender-lists-in-office-365.md).
 
-Si un mensaje se identificó incorrectamente como correo no deseado, puede enviar el mensaje "falso positivo" al equipo de análisis de correo no deseado de Microsoft. Los analistas evaluarán y analizarán el mensaje. Según los resultados del análisis, se podrían ajustar las reglas de filtro de contenido de correo no deseado de todo el sistema a fin de permitir que pase el mensaje.
+## <a name="submit-false-positives-to-microsoft"></a>Enviar falsos positivos a Microsoft
 
-Los administradores pueden revisar más información de configuración de correo no deseado que se aplica a toda la organización. Consulte [Create Safe Sender lists in Office 365](create-safe-sender-lists-in-office-365.md). Esta información es útil si tiene control de nivel de administrador y desea evitar falsos positivos.
+> [!TIP]
+> En lugar de usar los siguientes procedimientos para notificar falsos positivos, los usuarios de Outlook y Outlook en la web pueden usar el complemento de mensajes de informe para Microsoft Outlook. Para obtener información sobre cómo instalar y usar esta herramienta, consulte [Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md).
 
-Puede enviar mensajes seguros de las maneras siguientes:
+Si un mensaje se identificó incorrectamente como correo no deseado, puede enviar el mensaje al equipo de análisis de correo no deseado de Microsoft. Los analistas evaluarán el mensaje y (según los resultados del análisis) se pueden ajustar los filtros de todo el servicio para permitir el paso del mensaje.
 
-- Si usa la acción **mover mensaje a la carpeta correo no deseado** al configurar los filtros de contenido (esta es la acción predeterminada), los usuarios pueden liberar mensajes falsos positivos en la carpeta de correo electrónico no deseado de Outlook o Outlook en la web (anteriormente conocido como Outlook Web App).
+1. Cree un nuevo mensaje de correo electrónico en `not_junk@office365.microsoft.com` blanco con como destinatario:
 
-  - Los usuarios de Outlook pueden liberar mensajes falsos positivos mediante la opción de menú contextual de **correo no deseado** . Sin embargo, deben enviar el mensaje a Microsoft a través del correo electrónico, tal como se muestra en el procedimiento de este artículo.
+2. Arrastre y coloque el mensaje con identificación indebido en el nuevo mensaje. De este modo, se guardará el mensaje identificado indebido como datos adjuntos en el nuevo mensaje. No copie y pegue el contenido del mensaje o lo reenvíe (necesitamos el mensaje original para que podamos inspeccionar los encabezados del mensaje).
 
-  - Los usuarios de Outlook en la web pueden liberar mensajes falsos positivos y enviarlos a Microsoft para su análisis mediante la acción **marcar como correo deseado** . Para obtener más información acerca de cómo hacerlo, consulte [informar de estafas de correo no deseado y suplantación de identidad (phishing) en Outlook en la web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+   > [!NOTE]
+   > <ul><li>Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes sean del mismo tipo: mensajes de suplantación de identidad (phishing) o mensajes de correo electrónico no deseado.</li><li>Deje el cuerpo del nuevo mensaje en blanco.<li></li>Use cualquiera de los formatos. msg (formato predeterminado de Outlook) o. eml (formato predeterminado de Outlook en la web) para los mensajes adjuntos.</li></ul>
 
-- Si usa la acción **mensaje en cuarentena** en lugar de la acción **mover mensaje a la carpeta correo no deseado** al configurar los filtros de contenido:
+3. Cuando haya terminado, haga clic en **Enviar**.
 
-  - Los administradores pueden liberar mensajes de correo no deseado en cuarentena e informarlos como falsos positivos desde el Centro de administración de Exchange. Para obtener más información, consulte [Manage Quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+> [!TIP]
+> Los administradores tienen varias formas diferentes de permitir que mensajes específicos omitan el filtrado de correo no deseado. Para obtener más información, consulte [crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).
 
-  - Los usuarios pueden liberar sus propios mensajes de correo no deseado en cuarentena e identificarlos como falsos positivos a través de los siguientes canales:
+## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Crear una regla de flujo de correo para recibir copias de mensajes que se notifican a Microsoft
 
-  - la interfaz de usuario del centro de administración de Exchange (EAC). Para más información, vea [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
+Puede crear una regla de flujo de correo (también denominada regla de transporte) que busca mensajes de correo electrónico que se notifican a Microsoft mediante los métodos descritos en este tema y puede configurar destinatarios en copia oculta para recibir copias de estos mensajes notificados.
 
-  - Mensajes de notificación de correo no deseado para el usuario final (si están habilitados por el administrador).
+Puede crear la regla de flujo de correo en el centro de administración de Exchange (EAC) y PowerShell (Exchange Online PowerShell para Office 365 clientes; Exchange Online Protection PowerShell para clientes independientes de EOP).
 
-- También puede utilizar el correo electrónico para enviar mensajes a Microsoft que no deberían clasificarse como correo no deseado. Cuando lo haga, asegúrese de seguir los pasos descritos en el siguiente procedimiento.
+### <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-### <a name="use-email-to-submit-false-positive-messages"></a>Usar el correo electrónico para enviar mensajes falsos positivos
+- Debe tener asignados permisos en Exchange Online para poder realizar estos procedimientos. En concreto, debe tener asignado el rol **reglas de transporte** , que se asigna a las **funciones administración**de la organización, **Administración del cumplimiento**y administración de **registros** de forma predeterminada. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-Use el mismo procedimiento que se describe en la sección [usar correo electrónico para enviar mensajes de correo no deseado o de suplantación de identidad a Microsoft](#use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft) , pero envíe el mensaje a not_junk@office365.microsoft.com.
+- Para abrir el EAC en Exchange Online, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-## <a name="spam-evaluation-and-rules-deployment"></a>Evaluación de correo no deseado y implementación de reglas
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a Exchange Online Protection PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-El equipo de análisis de correo no deseado examina los mensajes que envía y ajusta los filtros de correo no deseado para evitar futuros correos no deseados. Como resultado, los filtros de correo no deseado de Office 365 areconstantly refinados. Los objetos enviados se evalúan en toda la red. Se examinan y se evalúan los envíos falsos positivos para un posible ajuste de regla para permitir mensajes futuros a través de los filtros de correo no deseado. Por lo tanto, notificar al servicio de falsos positivos y falsos negativos (correo no deseado sin filtrar) es ventajoso para usted y para todos los clientes que usan la red global. El equipo de correo no deseado examina los indicadores de cada mensaje enviado, como los siguientes:
+- Para obtener más información acerca de las reglas de flujo de correo en Exchange Online y EOP independiente, consulte los siguientes temas:
 
-- Dirección de origen
+  - [Reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-- Dirección IP remitente
+  - [Excepciones (predicados) y condiciones de reglas de flujo de correo en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-- Palabras clave
+  - [Acciones de las reglas de flujo de correo en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- Frases
+### <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Usar el EAC para crear una regla de flujo de correo para recibir copias de mensajes notificados
 
-- Frecuencia de transmisión
+1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-- Otras tendencias y patrones
+2. Haga **Add** ![clic en agregar](../../media/ITPro-EAC-AddIcon.png) icono Agregar y, a continuación, seleccione **crear una nueva regla**.
 
-Después de revisar esta información, es posible que el equipo de correo no deseado realice cambios en las capas de filtrado de correo no deseado del servicio. Para obtener más información acerca del equipo de correo no deseado, vea el siguiente vídeo sólo en Inglés:
+3. En la ventana **Nueva regla** que se abre, configure las siguientes opciones:
 
-[Vídeo del equipo de correo no deseado de Microsoft Exchange](https://youtu.be/-TpX_-GMC7o?hd=1)
+   - **Name**: escriba un nombre único y descriptivo para la regla. Por ejemplo, los mensajes CCO que se notifican a Microsoft.
 
-La evaluación del correo no deseado es un proceso continuo que se aplica independientemente del conjunto de caracteres o el idioma original. Dado que los mensajes de correo no deseado pueden ser imprecisos e incluso no tener texto en el asunto o en el cuerpo del mensaje, el equipo de correo no deseado suele basarse en otras características de los mensajes para efectuar el filtrado. Esto significa que, después de que el equipo de correo no deseado marca un mensaje determinado como correo no deseado y realiza los cambios necesarios en su base de reglas, ese mensaje estará bloqueado en el futuro hasta que sus características se modifiquen lo suficiente como para esquivar nuestros filtros. Continuamente se implementan nuevas reglas de correo no deseado. Los períodos de tiempo de las reglas de los envíos individuales varían según la cantidad y la calidad de los envíos. Como las nuevas reglas de correo no deseado se establecen para todos los clientes globalmente, no todos los envíos de correo no deseado individuales generarán una nueva regla de correo no deseado.
+   - Haga clic en **Más opciones**.
+
+   - **Aplicar esta regla si**: seleccione **la dirección del destinatario** \> **incluye cualquiera de estas palabras**: en el cuadro de diálogo **especificar palabras o frases** que aparece, escriba uno de los siguientes valores, haga](../../media/ITPro-EAC-AddIcon.png)clic en **Agregar** ![icono Agregar y repita el procedimiento hasta que haya introducido todos los valores.
+
+     - `junk@office365.microsoft.com`
+     - `abuse@messaging.microsoft.com`
+     - `phish@office365.microsoft.com`
+     - `false_positive@messaging.microsoft.com`
+
+     Para editar una entrada, selecciónela y haga clic en **Editar** ![icono](../../media/ITPro-EAC-EditIcon.png)de edición. Para quitar una entrada, selecciónela y haga clic en **quitar** ![icono](../../media/ITPro-EAC-DeleteIcon.png)quitar.
+
+     Cuando haya terminado, haga clic en **Aceptar**.
+
+   - **Haga lo siguiente**: seleccione **agregar destinatarios** \> **en el cuadro CCO**. En el cuadro de diálogo que aparece, busque y seleccione los destinatarios que desea agregar. Cuando haya terminado, haga clic en **Aceptar**.
+
+4. Puede realizar selecciones adicionales para auditar la regla, probarla, activar la regla durante un período de tiempo específico y otras opciones de configuración. Se recomienda probar la regla antes de aplicarla.
+
+5. Cuando haya terminado, haga clic en **Guardar**.
+
+### <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Usar PowerShell para crear una regla de flujo de correo para recibir copias de mensajes notificados
+
+En este ejemplo se crea una nueva regla de flujo de correo denominada BCC mensajes enviados a Microsoft que busca mensajes de correo electrónico que se notifican a Microsoft mediante los métodos descritos en este tema y agrega los usuarios laura@contoso.com y julia@contoso.com como destinatarios CCO.
+
+```powershell
+New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+
+Para comprobar que ha configurado una regla de flujo de correo para recibir copias de mensajes enviados, siga uno de estos pasos:
+
+- En el EAC, vaya a **Mail flow** \> **reglas** \> de flujo de correo Seleccione \> la regla haga clic](../../media/ITPro-EAC-EditIcon.png)en **Editar** ![icono de edición y Compruebe la configuración.
+
+- En PowerShell, ejecute el siguiente comando para comprobar la configuración:
+
+  ```powershell
+  Get-TransportRule -Identity "Bcc Messages Reported to Microsoft" | Format-List
+  ```
+
+- Envíe mensajes de prueba a una de las direcciones de correo electrónico de informes y compruebe los resultados.

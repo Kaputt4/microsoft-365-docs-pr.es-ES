@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
-ms.openlocfilehash: 3dc59a78d25045f3816b48705b5427141a1caea7
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710509"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029886"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -247,7 +247,7 @@ Las directivas de barrera de información no surten efecto hasta que las estable
 
     Consta`Start-InformationBarrierPoliciesApplication`
 
-    Después de media hora aproximadamente, se aplican directivas, usuario por usuario, para su organización. Si su organización es grande, puede tardar 24 horas (o más) en completarse este proceso. (Como regla general, tarda aproximadamente una hora en procesar las cuentas de usuario de 5.000).
+    Después de ejecutar `Start-InformationBarrierPoliciesApplication` permitir 30 minutos para que el sistema inicie la aplicación de las directivas. El sistema aplica las directivas de usuario por usuario. En general, el sistema procesa aproximadamente 5.000 cuentas de usuario por hora.
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>Ver el estado de las cuentas de usuario, los segmentos, las directivas o la aplicación de Directiva
 

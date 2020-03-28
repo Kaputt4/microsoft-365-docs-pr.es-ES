@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Presenta sugerencias de seguridad para los mensajes de correo filtrados por el filtro de correo no deseado de EOP y Office 365.
-ms.openlocfilehash: bd493fba7a41f9452f915ff456c9483f48e299f5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895196"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032821"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Sugerencias de seguridad en mensajes de correo en Office 365
 
@@ -60,4 +60,4 @@ La sugerencia de seguridad (un mensaje codificado por colores) le avisará de lo
 
 Las sugerencias de seguridad siempre están habilitadas para Outlook en la web, aunque no todos los mensajes recibirán ninguna. Los administradores de Office 365 pueden desactivar sugerencias de seguridad para otros clientes de correo electrónico como Outlook. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
-Si no está de acuerdo con el modo en que Office 365 y EOP clasificaron un mensaje (es decir, no es correo no deseado o no es legítimo), puede enviar los mensajes para su análisis para mejorar su experiencia. Para más información, vea [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). También puede hacer clic en el vínculo comentarios de la sugerencia de seguridad para enviar comentarios directamente a Microsoft para ayudarnos a mejorar.
+Si no está de acuerdo con el modo en que EOP ha clasificado un mensaje (es decir, si el mensaje no es correo no deseado o se debería haber marcado como correo no deseado), puede enviar los mensajes a Microsoft para su análisis a fin de mejorar su experiencia. Para obtener instrucciones, consulte [informes de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md). También puede hacer clic en el vínculo comentarios de la sugerencia de seguridad para enviar comentarios directamente a Microsoft para ayudarnos a mejorar.

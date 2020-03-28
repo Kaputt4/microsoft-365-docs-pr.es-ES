@@ -1,5 +1,5 @@
 ---
-title: Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo
+title: Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo para Microsoft Teams y Exchange Communications
 description: Un caso práctico para contoso y cómo configuran rápidamente una directiva de cumplimiento de la comunicación para supervisar un lenguaje ofensivo en Microsoft Teams y en las comunicaciones de Exchange Online
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6b5ce3b9ca738ddf94edbb035daeb730f5e3f96a
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 6f23bece83f0c0fc25ddb26b8ceddcb1c956bc5e
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982447"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024350"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy"></a>Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo para Microsoft Teams y Exchange Communications
 
 El cumplimiento de la comunicación en Microsoft 365 ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de su organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams o las comunicaciones de terceros de la organización, y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
 

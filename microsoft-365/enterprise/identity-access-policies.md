@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
+ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978271"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43022926"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -225,18 +225,22 @@ Con el acceso condicional, las organizaciones pueden restringir el acceso a las 
 
 ## <a name="define-device-compliance-policies"></a>Definir directivas de cumplimiento de dispositivos
 
-Las directivas de cumplimiento de dispositivos definen los requisitos que deben cumplir los dispositivos para que se marquen como compatibles. Cree directivas de cumplimiento de dispositivos de Intune desde dentro del portal de Azure. 
+Las directivas de cumplimiento de dispositivos definen los requisitos que deben cumplir los dispositivos para que se marquen como compatibles. Cree directivas de cumplimiento de dispositivos de Intune en el centro de administración de Microsoft Endpoint Manager.
 
 Cree una directiva para cada plataforma:
-- Android
+- Administrador de dispositivos Android
 - Android Enterprise
-- iOS
+- iOS/iPados
 - macOS
 - Esta opción está disponible en los siguientes tipos de dispositivos:
 - Windows 8,1 y versiones posteriores
 - Windows 10 y versiones posteriores
 
-Para crear directivas de cumplimiento de dispositivos, inicie sesión en el portal de Microsoft Azure con sus credenciales de administración y, a continuación, navegue hasta **Intune > el cumplimiento de dispositivos**. Seleccione **Crear directiva**.
+Para crear directivas de cumplimiento de dispositivos, inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con sus credenciales de administración y, a continuación, navegue a**directivas**de**directivas** > de cumplimiento de **dispositivos** > . Seleccione **crear Directiva**.
+
+Para que se implementen las directivas de cumplimiento de dispositivos, se deben asignar a grupos de usuarios. Una directiva se asigna después de crearla y guardarla. En el centro de administración, seleccione la Directiva y, a continuación, seleccione **asignaciones**. Después de seleccionar los grupos que desea que reciban la Directiva, seleccione **Guardar** para guardar esa asignación de grupo e implementar la Directiva.
+
+Para obtener instrucciones paso a paso sobre cómo crear directivas de cumplimiento en Intune, consulte [Create a Compliance Policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) en la documentación de Intune.
 
 Se recomiendan las siguientes opciones de configuración para Windows 10.
 
@@ -255,8 +259,6 @@ Se recomiendan las siguientes opciones de configuración para Windows 10.
 |:---|:---------|:-----|:----|
 |Versión del sistema operativo|Todos|No configurado||
 
-Para que todas las directivas anteriores se consideren implementadas, deben establecerse como destinos en los grupos de usuarios. Para ello, cree la Directiva (al guardar) o una versión posterior seleccionando **administrar la implementación** en la sección **Directiva** (mismo nivel que agregar).
-
 **Seguridad del sistema**
 
 |Tipo|Propiedades|Valores|Notas|
@@ -273,9 +275,9 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 |Seguridad del dispositivo|Éste|Obligatoria||
 ||Antivirus|Obligatoria||
 ||Actualizados|Obligatoria|Esta configuración requiere una solución anti-spyware registrada en el centro de seguridad de Windows|
-|Defender|Antimalware de Windows Defender|Obligatoria||
-||Versión mínima de antimalware de Windows Defender||Solo se admite en el escritorio de Windows 10. Microsoft recomienda versiones no más de cinco versiones anteriores a la más reciente|
-||Firma antimalware de Windows Defender actualizada hasta la fecha|Obligatoria||
+|Defender|Antimalware de Microsoft defender|Obligatoria||
+||Versión mínima de antimalware de Microsoft defender||Solo se admite en el escritorio de Windows 10. Microsoft recomienda versiones no más de cinco versiones anteriores a la más reciente|
+||La firma antimalware de Microsoft defender actualizada|Obligatoria||
 ||Protección en tiempo real|Obligatoria|Solo se admite en el escritorio de Windows 10|
 
 **ATP de Microsoft Defender**
@@ -283,6 +285,7 @@ Para que todas las directivas anteriores se consideren implementadas, deben esta
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
 |Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Medio||
+
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)
 Antes de agregar una directiva para requerir equipos compatibles, asegúrese de inscribir los dispositivos para la administración en Intune. Se recomienda usar la autenticación multifactor antes de inscribir los dispositivos en Intune para asegurarse de que el dispositivo está en la posesión del usuario deseado. 

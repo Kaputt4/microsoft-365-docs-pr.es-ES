@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtienen los mensajes de suplantación de identidad (phishing) y cómo hacerlo para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: 94c28bf63ad7ba87d06298576cf7989b6848f8e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082029"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033655"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ajuste de la protección contra la suplantación de identidad en Office 365
 
@@ -39,11 +39,7 @@ Compruebe que estas características de ATP están activadas.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Informar del mensaje de suplantación de identidad a Microsoft
 
-Informar de los mensajes de suplantación de identidad resulta útil para ajustar los filtros que se usan para proteger a todos los clientes de Office 365.
-
-Envíe el mensaje de suplantación de identidad _como datos adjuntos_ en un mensaje nuevo, si no, vacío a **phish@office365.microsoft.com**. No reenvíe el mensaje original; de lo contrario, no podemos examinar los encabezados de mensaje originales. O bien, puede usar el complemento de [mensajes de informe](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in) en Outlook o en Outlook en la web (anteriormente conocido como Outlook Web App).
-
-Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Informar de los mensajes de suplantación de identidad resulta útil para ajustar los filtros que se usan para proteger a todos los clientes de Office 365. Para obtener instrucciones, consulte [informes de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="inspect-the-message-headers"></a>Inspeccionar los encabezados del mensaje
 

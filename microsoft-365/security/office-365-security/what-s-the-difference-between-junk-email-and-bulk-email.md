@@ -2,10 +2,10 @@
 title: ¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 1/7/2015
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,35 +15,36 @@ search.appverid:
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
-description: A veces, los clientes askwhatn la diferencia entre los mensajes de correo electrónico no deseado y masivo. El objetivo de este tema es explicar la diferencia y proporcionar información sobre las diferentes opciones que están disponibles para Exchange Online y Exchange Online Protection (EOP).
-ms.openlocfilehash: 55924ac5e83ca109fd66d1723cdb7c5f43f20df6
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: En este tema se explica la diferencia entre correo electrónico no deseado y correo electrónico masivo, así como los controles relacionados en Office 365.
+ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895040"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033631"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
 
-En ocasiones los clientes preguntan "cuál es la diferencia entre los mensajes de correo electrónico no deseado y los de correo electrónico masivo"? El objetivo de este tema es explicar la diferencia y proporcionar información sobre las diferentes opciones que están disponibles para ambos en Exchange Online y Exchange Online Protection (EOP).
-  
- **¿Qué es el correo electrónico no deseado?**
-  
-Los mensajes de correo electrónico no deseado son mensajes de correo electrónico no solicitados (y normalmente no deseados) que el servicio filtra. De manera predeterminada, el servicio rechaza el mensaje de correo no deseado con base en la reputación de la dirección IP del remitente. Sin embargo, si pasa una inspección de IP pero los filtros de contenido lo clasifican como correo no deseado, el mensaje se envía a la carpeta Correo electrónico no deseado de los destinatarios especificados. 
-  
-> [!NOTE]
-> La acción realizada en los mensajes filtrados por contenido se puede configurar mediante directivas de filtro de contenido en el centro de administración de Exchange (EAC), tal como se describe en [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md). Además, si no está de acuerdo con la clasificación de correo no deseado, puede informar de los mensajes que considera que son correo no deseado o que no son correo no deseado de Microsoft de varias maneras, como se describe en [enviar mensajes de correo no deseado, no correo no deseado y estafas de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
-  
- **¿Qué es el correo electrónico masivo?**
-  
-El correo electrónico masivo, también conocido como correo gris, es un tipo de mensaje de correo electrónico que es más difícil de clasificar. Mientras que el correo no deseado es una amenaza constante, el correo masivo suele estar formado por un anuncio o mensaje de marketing que probablemente no se envíe repetidamente. El correo masivo es deseado para algunos usuarios y, de hecho, es posible que ellos se hayan suscrito deliberadamente para recibir dichos mensajes, mientras que otros usuarios pueden considerar estos tipos de mensajes como correo no deseado. Por ejemplo, algunos usuarios desean recibir mensajes de anuncios de Contoso Corporation o invitaciones para una próxima conferencia sobre seguridad cibernética, mientras que otros usuarios consideran dichos mensajes como correo no deseado.
-  
+Office 365 clientes con buzones en Exchange online o independiente Exchange Online Protection (EOP) los clientes sin buzones de Exchange Online preguntan a veces: "¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?" En este tema se explica la diferencia y se describen los controles que están disponibles en EOP.
+
+- El **correo no deseado** es correo no deseado, que son mensajes no solicitados y universales no deseados (cuando se identifica correctamente). De forma predeterminada, EOP rechaza el correo no deseado en función de la reputación del servidor de correo electrónico de origen. Si un mensaje pasa la inspección IP de origen, se envía al filtrado de correo no deseado. Si el mensaje se clasifica como correo no deseado por el filtrado de correo no deseado, el mensaje se entrega (de forma predeterminada) a los destinatarios correspondientes y se mueve a la carpeta de correo electrónico no deseado.
+
+  - Puede configurar las acciones que se deben realizar en los veredictos del filtrado de correo no deseado. Para obtener instrucciones, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
+
+  - Si no está de acuerdo con el veredicto de filtrado de correo no deseado, puede informar de los mensajes que considera que son correo no deseado o correo no deseado de Microsoft de varias maneras, como se describe en [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+
+- El **correo electrónico masivo** (también conocido como _correo gris_) es más difícil de clasificar. Mientras que el correo no deseado es una amenaza constante, el correo electrónico masivo suele ser un mensaje publicitario de solo una vez o de marketing. Algunos usuarios quieren mensajes de correo electrónico masivo (y, de hecho, se han registrado deliberadamente para recibirlos), mientras que otros usuarios consideran el correo electrónico masivo como correo no deseado. Por ejemplo, algunos usuarios quieren recibir mensajes publicitarios de Contoso Corporation o invitaciones a una próxima Conferencia en la seguridad del ciberespacio, mientras que otros usuarios consideran que estos mismos mensajes son correo no deseado.
+
+  Para obtener más información sobre cómo se identifica el correo masivo, consulte [nivel de queja masiva (BCL) en Office 365](bulk-complaint-level-values.md).
+
 ## <a name="how-to-manage-bulk-email"></a>Cómo administrar el correo masivo
 
-La administración del correo electrónico masivo no es una decisión clara, porque si todo el correo masivo se clasifica como correo no deseado, los usuarios que lo desean se pueden quejar y enviarlo como mensajes falsos positivos (correo deseado) que se marcaron incorrectamente como correo no deseado. Por otro lado, si se admite todo el correo masivo, los usuarios que no lo desean se pueden quejar y enviarlo como mensajes de correo no deseado no detectados (falsos negativos) que llegaron incorrectamente a su bandeja de entrada.
-  
-### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Habilitar el control de sensibilidad de correo masivo en la directiva de filtro de contenido
+Debido a la reacción mixta del correo electrónico masivo, no hay ninguna orientación universal que se aplique a todas las organizaciones.
 
-Según la directiva de su empresa sobre mensajes de correo electrónico masivo, los administradores pueden seleccionar el umbral que se asignará al correo electrónico masivo. La configuración se puede configurar mediante directivas de filtro de contenido en el EAC. Consulte [configurar las directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md) para conocer los pasos. Puede elegir un valor de umbral de 1-9, donde 1 marca la mayor parte del correo electrónico masivo como correo no deseado y 9 permite que se entregue la mayor parte del correo electrónico masivo. A continuación, el servicio realiza la acción configurada, por ejemplo, enviar el mensaje a la carpeta Correo electrónico no deseado del destinatario. 
-  
+Las directivas contra el correo no deseado tienen un umbral de BCL predeterminado que se usa para identificar correo masivo como correo no deseado. Los administradores pueden aumentar o disminuir el umbral. Para obtener más información, vea los siguientes temas:
 
+- [Configure directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
+
+- [Configuración de la Directiva contra correo no deseado de EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+
+Otra opción que es fácil de pasar por alto: Si un usuario se queja de recibir correo masivo en masa, pero los mensajes son de remitentes de confianza que superan el filtrado de correo no deseado en EOP, pida al usuario que compruebe si hay una opción para cancelar la suscripción en el mensaje de correo electrónico masivo.

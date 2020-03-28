@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
-ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: 5d3abe41680a8399600fdea51df6f3b85fbd6b94
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692657"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029844"
 ---
 # <a name="learn-about-information-barriers"></a>Obtener información sobre las barreras de información
 
@@ -28,10 +28,13 @@ Los servicios en la nube de Microsoft incluyen eficaces capacidades de comunicac
 
 Las barreras de la información se están implementando ahora, a partir de Microsoft Teams. Suponiendo que la [suscripción](#required-licenses-and-permissions) incluya barreras informativas, un administrador de cumplimiento o barreras de información puede definir directivas para permitir o impedir las comunicaciones entre grupos de usuarios en Microsoft Teams. Las directivas de barrera de información se pueden usar para situaciones como estas:
 
-- Un comerciante de día no puede llamar a alguien del equipo de marketing
-- El personal de finanzas que trabaja con información de la compañía confidencial no puede recibir llamadas de determinados grupos de la organización
-- Un equipo interno con material de secreto comercial no puede llamar o chatear en línea con personas de determinados grupos de la organización
-- Un equipo de investigación solo puede llamar o chatear en línea con un equipo de desarrollo del producto
+- El usuario del grupo comercial del día no debe comunicarse con el equipo de marketing
+- El personal de finanzas que trabaja en la información de la compañía confidencial no debe comunicarse con determinados grupos de la organización
+- Un equipo interno con material de secreto comercial no debe llamar ni chatear en línea con los usuarios de determinados grupos de la organización.
+- Un equipo de investigación solo debe llamar o chatear en línea con un equipo de desarrollo del producto
+
+> [!IMPORTANT]
+> Las barreras informativas ***solo admiten*** dos restricciones. Las restricciones en un solo sentido, como el Departamento de marketing, se pueden comunicar con los comerciantes de día, pero ***no se admite***la comunicación comercial del día con marketing.
 
 Para todos estos escenarios de ejemplo (y más), se pueden definir directivas de barrera de información para impedir o permitir las comunicaciones en Microsoft Teams. Estas directivas pueden impedir que los usuarios llamen o chatean con ellos que no deben, o bien permitir que los usuarios se comuniquen solo con grupos específicos en Microsoft Teams. Con las directivas de barrera de información en vigor, cada vez que los usuarios que están cubiertos por estas directivas intentan comunicarse con otros usuarios de Microsoft Teams, se realizan comprobaciones para evitar (o permitir) la comunicación (según las directivas de la barrera de información definida). Para obtener más información sobre la experiencia del usuario con barreras de información, consulte [barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
@@ -77,7 +80,7 @@ Para [definir o editar directivas de barrera de información](information-barrie
 
 Debe estar familiarizado con los cmdlets de PowerShell para poder definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en el [artículo de procedimientos](information-barriers-policies.md), necesitará conocer más detalles, como parámetros, para su organización.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga más información sobre las barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 

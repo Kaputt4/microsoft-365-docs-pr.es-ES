@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Con la clave de cliente, puede controlar las claves de cifrado de la organización y, después, configurar Office 365 para usarlas y cifrar los datos en reposo en los centros de datos de Microsoft.
-ms.openlocfilehash: 0910374051073cb67ee4d2a4fac0a88871a2fd73
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: df47f0df0f30de3529982099cb59efe2a741cd34
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333657"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029876"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Cifrado de servicios con clave de cliente en Office 365
 
@@ -49,7 +49,7 @@ La clave de cliente solo cifra datos en reposo en la nube. La clave de cliente n
 
 ## <a name="about-the-data-encryption-policy-dep"></a>Información sobre la Directiva de cifrado de datos (DEP)
 
-Una directiva de cifrado de datos define la jerarquía de cifrado para cifrar datos con cada una de las claves proporcionadas, así como la clave de disponibilidad protegida por Microsoft. Puede crear DEPs con cmdlets de PowerShell, que son diferentes para cada servicio, y asignarlos para cifrar los datos de la aplicación. Por ejemplo:
+Una directiva de cifrado de datos define la jerarquía de cifrado para cifrar datos con cada una de las claves proporcionadas, así como la clave de disponibilidad protegida por Microsoft. Puede crear DEPs con cmdlets de PowerShell, que son diferentes para cada servicio, y asignarlos a DEPs para cifrar los datos de la aplicación. Por ejemplo:
 
 **Exchange Online y Skype empresarial** Puede crear hasta 50 DEPs por inquilino. Asocie DEPs a las claves de cliente en Azure Key Vault y, a continuación, asigne DEPs a buzones individuales. Cuando se asigna un DEP a un buzón:
 

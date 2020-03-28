@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores de Office 365 pueden obtener información sobre cómo recuperarse de un ataque de ransomware.
-ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42640022"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032881"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Recuperarse de un ataque de ransomware en Office 365
 
@@ -78,7 +78,7 @@ Los archivos restaurar en OneDrive para la empresa permiten restaurar todo el On
 
 ## <a name="step-6-recover-deleted-email"></a>Paso 6: recuperar el correo electrónico eliminado
 
-En el caso poco probable de que ransomware elimine todo el correo electrónico, probablemente pueda recuperar los elementos eliminados. Para más información, consulte lo siguiente:
+En el caso poco probable de que ransomware elimine todo el correo electrónico, probablemente pueda recuperar los elementos eliminados. Para obtener más información, vea:
 
 - [Recuperar mensajes eliminados en el buzón de un usuario](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -122,9 +122,9 @@ Si su país no aparece en la lista, pregunte a las agencias de cumplimiento norm
 
 ### <a name="submit-email-messages-to-microsoft"></a>Enviar mensajes de correo electrónico a Microsoft
 
-Puede informar sobre mensajes de suplantación de identidad (phishing) que contengan ransomware siguiendo las instrucciones de [enviar mensajes de correo no deseado, mensajes seguros y suplantación de identidad a Microsoft para su análisis](https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
+Puede informar del mensaje de suplantación de identidad (phishing) que contiene ransomware mediante uno de varios métodos. Para obtener más información, vea [informar de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

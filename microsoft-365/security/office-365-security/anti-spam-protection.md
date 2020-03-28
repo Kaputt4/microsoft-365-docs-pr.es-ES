@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la configuración y los filtros contra correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Office 365. ¿Obtengo mucho correo no deseado en Office 365? Puede personalizar los filtros de correo no deseado y la configuración contra correo no deseado.
-ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: bb2b714273af5177d8c69c4b89b0daec87c31650
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894075"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033475"
 ---
 # <a name="anti-spam-protection-in-office-365"></a>Protección contra correo no deseado en Office 365
 
@@ -49,7 +49,7 @@ La configuración contra correo no deseado en EOP se realiza de las siguientes t
 - **Filtrado de correo no deseado (filtrado de contenido)**: EOP usa el correo no deseado los veredictos **spam,** correo **no deseado de alta confianza**, **correo masivo**, **correo de phishing** y **correo de suplantación de identidad de alta confianza** para clasificar mensajes. Puede configurar las acciones que se realizarán en función de estos veredictos y puede configurar las opciones de notificación para el usuario final para los mensajes que se pusieron en cuarentena en lugar de entregarse. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
-  > De forma predeterminada, el filtrado de correo no deseado está configurado para enviar mensajes que se marcaron como correo no deseado a la carpeta de correo no deseado del destinatario. Sin embargo, en entornos híbridos donde EOP protege los buzones de Exchange locales, debe configurar dos reglas de flujo de correo (también conocidas como reglas de transporte) en la organización de Exchange local para reconocer los encabezados de correo no deseado de EOP que se agregan a los mensajes. Para obtener más información, consulte [configurar un EOP independiente para entregar el correo no deseado en la carpeta correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+  > De forma predeterminada, el filtrado de correo no deseado está configurado para enviar mensajes que se marcaron como correo no deseado a la carpeta de correo no deseado del destinatario. Sin embargo, en entornos híbridos donde EOP protege los buzones de Exchange locales, debe configurar dos reglas de flujo de correo (también conocidas como reglas de transporte) en la organización de Exchange local para reconocer los encabezados de correo no deseado de EOP que se agregan a los mensajes. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 - **Filtrado de correo no deseado saliente**: EOP también se asegura de que los usuarios no envíen correo no deseado, ya sea en el contenido del mensaje saliente o superándose los límites de los mensajes salientes. Para obtener más información, consulte [configurar el filtrado de correo no deseado saliente en Office 365](configure-the-outbound-spam-policy.md).
 
@@ -61,7 +61,7 @@ Es posible que los mensajes buenos puedan identificarse como correo no deseado (
 
 Estos son algunos procedimientos recomendados que se aplican a cualquiera de los escenarios:
 
-- Envíe siempre mensajes no clasificados a Microsoft. Los administradores pueden usar el [Explorador de envíos](admin-submission.md)o los usuarios pueden informar de los mensajes mediante el [complemento usar el](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)complemento de mensajes de informe.
+- Envíe siempre mensajes no clasificados a Microsoft. Para obtener más información, vea [informar de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - **Examine los encabezados de mensajes contra correo no deseado**: estos valores le indicarán por qué un mensaje se marcó como correo no deseado o por qué omitió el filtrado de correo no deseado. Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
 
@@ -83,13 +83,13 @@ Estos son algunos procedimientos recomendados que se aplican a cualquiera de los
 
 - **Compruebe la configuración de la organización**: vea la configuración que permite a los mensajes omitir el filtrado de correo no deseado (por ejemplo, si agrega su propio dominio a la lista de dominios permitidos en directivas contra correo no deseado). Para obtener la configuración recomendada, consulte [configuración recomendada para EOP y office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) y [Create Safe Sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
-- **Compruebe que la regla de correo no deseado está habilitada en el buzón del usuario**: está habilitada de forma predeterminada, pero si no es los mensajes marcados como correo no deseado no se pueden mover a la carpeta correo electrónico no deseado. Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Compruebe que la regla de correo no deseado está habilitada en el buzón del usuario**: está habilitada de forma predeterminada, pero si no es los mensajes marcados como correo no deseado no se pueden mover a la carpeta correo electrónico no deseado. Para obtener más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Use las listas de remitentes bloqueados disponibles**: para obtener más información, vea [crear listas de remitentes bloqueados en Office 365](create-block-sender-lists-in-office-365.md).
 
 - **Cancelar la suscripción del correo electrónico masivo** Si el mensaje fue algo que el usuario registró (boletines, anuncios de productos, etc.) y contiene un vínculo de cancelación de suscripción de un origen de prestigio, considere la posibilidad de solicitarles que simplemente cancelen la suscripción.
 
-- **EOP independiente: crear reglas de flujo de correo en Exchange local para los veredictos de filtrado de correo no deseado de EOP**: en entornos de EOP independientes donde EOP protege los buzones de correo de Exchange local, debe configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtrado de correo no deseado de EOP de modo Para obtener más información, consulte [configurar un EOP independiente para entregar el correo no deseado en la carpeta correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- **EOP independiente: crear reglas de flujo de correo en Exchange local para los veredictos de filtrado de correo no deseado de EOP**: en entornos de EOP independientes donde EOP protege los buzones de correo de Exchange local, debe configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtrado de correo no deseado de EOP de modo Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>Evitar que se identifique un correo no deseado
 

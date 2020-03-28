@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
-ms.openlocfilehash: f6dc3cdb4ffb20fba1dbaa8d57d5041bf1cdbeae
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e7985aed7c0b5b5c14c64d49e70ec6c731cb8b9
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598397"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032797"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Servicios de envío de correo de no clientes a Office 365
 
@@ -60,4 +60,4 @@ Es un portal sin intervención del administrador que puede usar para quitarse de
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online
 
-A veces, algunos terceros usan Office 365 para enviar correo no deseado, lo que incumple nuestra política y condiciones de uso. Si recibe un correo electrónico no deseado de Office 365, puede informar de ello a través de [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com). Adjunte los mensajes ofensivos, incluido el encabezado del mensaje completo, en formato RFC 5322 o ARF. Los usuarios de Outlook en la web pueden usar herramientas integradas para informar sobre correo electrónico no deseado. Para obtener más información, vea [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+A veces, algunos terceros usan Office 365 para enviar correo no deseado, lo que incumple nuestra política y condiciones de uso. Si recibe correo electrónico no deseado de Office 365, puede informar de estos mensajes a Microsoft. Para obtener instrucciones, consulte [informes de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955582"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033451"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Investigación y respuesta automatizadas (AIR) en Office 365
 
@@ -92,7 +92,7 @@ Cada paso de alto nivel incluye una serie de subpasos que se ejecutan para propo
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Ejemplo: un mensaje de phish notificado por el usuario inicia una guía de investigación
 
-Supongamos que un usuario de su organización recibe un correo electrónico que piensa que es un intento de suplantación de identidad. El usuario, entrenado para informar de estos mensajes, usa el [complemento de mensajes de informe para Outlook o Outlook Web App](enable-the-report-message-add-in.md) para enviarlo a Microsoft para su análisis. El envío también se envía a su sistema y es visible en el explorador en la vista **envíos** (antes denominada **"vista notificada por el usuario"** ). Además, el mensaje notificado por el usuario ahora desencadena una alerta informativa basada en el sistema, que inicia automáticamente la guía de la investigación.
+Supongamos que un usuario de su organización recibe un correo electrónico que piensa que es un intento de suplantación de identidad. El usuario, entrenado para informar de estos mensajes, usa el [complemento de mensajes de informe](enable-the-report-message-add-in.md) para enviarlo a Microsoft para su análisis. El envío también se envía a su sistema y es visible en el explorador en la vista **envíos** (antes denominada **"vista notificada por el usuario"** ). Además, el mensaje notificado por el usuario ahora desencadena una alerta informativa basada en el sistema, que inicia automáticamente la guía de la investigación.
 
 Durante la fase de investigación raíz, se evalúan varios aspectos del correo electrónico. Entre ellos se incluyen:
 - Una determinación del tipo de amenaza que podría ser;

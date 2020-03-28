@@ -16,28 +16,28 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Los administradores pueden importar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a los buzones de la organización de Microsoft 365. Esto le permite archivar datos de Facebook, Twitter y otros orígenes de datos de terceros en Microsoft 365. A continuación, puede usar y aplicar las características de cumplimiento de Microsoft 365 (como la retención legal, la exhibición de documentos electrónicos, el archivado local y las directivas de retención) para los datos de terceros.
-ms.openlocfilehash: ac732110dac8d590ac30cfb062251d2e970bdd3d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72afb48f74a30bac2904e857a33487a83eba48cd
+ms.sourcegitcommit: f9b5eca20e025acc36635cbd1786ff3407295857
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596007"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43027660"
 ---
 # <a name="archive-third-party-data"></a>Archivar datos de terceros
 
 Microsoft 365 permite a los administradores importar y archivar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a los buzones de la organización 365 de Microsoft. Algunos ejemplos de orígenes de datos de terceros que puede importar a Microsoft 365 incluyen los siguientes servicios: 
   
-- **Social:** Facebook, LinkedIn, Twitter y Yammer 
+- **Social:** Facebook, LinkedIn, Twitter y Yammer
 
-- **Mensajería instantánea:** Yahoo Messenger, GoogleTalk y Cisco Jabber 
+- **Mensajería instantánea:** Yahoo Messenger y GoogleTalk
 
-- **Colaboración en documentos:** Box y DropBox 
+- **Colaboración en documentos:** Box y DropBox
 
-- **Sectores verticales:** Administración de relaciones con el cliente (como Salesforce chatter) y servicios financieros (como Bloomberg y Thomson Reuters) 
+- **Sectores verticales:** Administración de relaciones con el cliente (como Salesforce chatter) y servicios financieros (como Bloomberg y Thomson Reuters)
 
-- **SMS/mensajería de texto:** BlackBerry 
+- **SMS/mensajería de texto:** BlackBerry
 
-Una vez importados los datos de terceros, puede aplicar las características&mdash;de cumplimiento de Microsoft 365, como la retención por juicio, la exhibición de documentos electrónicos, el archivado local, la auditoría,&mdash;el cumplimiento de comunicaciones y las directivas de retención a estos datos. Por ejemplo, cuando un buzón de correo se coloca en retención por juicio, se conservan los datos de terceros. Puede buscar datos de terceros mediante las herramientas de exhibición de documentos electrónicos de Microsoft. O bien, puede aplicar directivas de archivado y retención a datos de terceros, como lo haría con los datos de Microsoft. En Resumen, el archivado de datos de terceros en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y regulatorias.
+Una vez importados los datos de terceros, puede aplicar las características de cumplimiento de Microsoft 365, como la retención por juicio, la exhibición de documentos electrónicos, el archivado local, la auditoría, el cumplimiento de comunicaciones y las directivas de retención a estos datos. Por ejemplo, cuando un buzón de correo se coloca en retención por juicio, se conservan los datos de terceros. Puede buscar datos de terceros mediante las herramientas de exhibición de documentos electrónicos de Microsoft. O bien, puede aplicar directivas de archivado y retención a datos de terceros, como lo haría con los datos de Microsoft. En Resumen, el archivado de datos de terceros en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y regulatorias.
 
 Hay dos formas de importar y archivar datos de terceros en Microsoft 365:
 

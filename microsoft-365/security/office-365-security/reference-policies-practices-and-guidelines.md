@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha desarrollado diversas directivas, procedimientos y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de un correo electrónico abusivo, no deseado o malintencionado.
-ms.openlocfilehash: e6e5565b032af656b2204ce448581014595013de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598617"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033751"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
 
@@ -89,7 +89,7 @@ Microsoft trabaja activamente con los organismos de la industria y los proveedor
 
 ## <a name="abuse-and-spam-reporting"></a>Informar sobre abusos y correo no deseado
 
-Para informar sobre correo electrónico ilegal, abusivo, no deseado o malintencionado, [Informe sobre correo no deseado y estafas de suplantación de identidad (phishing) en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Enviar estos tipos de comunicaciones incumple la política de Microsoft y se tomarán las acciones necesarias sobre informes confirmados.
+Para informar de un correo electrónico ilegal, abusivo, no deseado o malintencionado, vea [informar de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md). El envío de estos tipos de comunicaciones es una infracción de la Directiva de Microsoft y se realizarán las acciones adecuadas en los informes confirmados.
 
 ## <a name="law-enforcement"></a>Cumplimiento de la ley
 

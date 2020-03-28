@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Los administradores pueden obtener información sobre las opciones disponibles en Office 365 y EOP que permiten que los mensajes entrantes omitan el filtrado de correo no deseado.
-ms.openlocfilehash: 2b7463165bb376655fd7f63ac0bdd79a8eccb617
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f9178dae93f8eb33996d05034d27fceed66edd39
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893855"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033415"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Crear listas de remitentes seguros en Office 365
 
@@ -38,9 +38,9 @@ Las listas de remitentes seguros disponibles se describen en la siguiente lista,
 Las reglas de flujo de correo permiten la máxima flexibilidad para asegurarse de que solo se permiten los mensajes correctos. Los remitentes permitidos y las listas de dominios permitidos en las directivas contra correo no deseado no son tan seguros como la lista de direcciones IP permitidas, ya que el dominio de correo electrónico del remitente se falsifica fácilmente. Pero la lista de direcciones IP permitidas también presenta un riesgo, ya que el correo de _cualquier_ dominio que se envíe desde esa dirección IP omitirá el filtrado de correo no deseado.
 
 > [!IMPORTANT]
-> <ul><li>Tenga cuidado y supervise *las* excepciones que se produzcan en el filtrado de correo no deseado mediante listas de remitentes seguros.</li><li>Aunque puede usar listas de remitentes seguros para ayudar con falsos positivos (correo electrónico bueno marcado como correo no deseado), debe considerar el uso de listas de remitentes seguros como una solución temporal que debería evitarse si es posible. No se recomienda administrar los falsos positivos mediante listas de remitentes seguros, ya que las excepciones al filtrado de correo no deseado pueden abrir la organización a través de suplantación de identidad y otros ataques. Si insiste en usar listas de remitentes seguros para administrar falsos positivos, debe estar atento y mantener el tema de envío de correo no deseado [, correo no deseado y mensajes de suplantación de identidad (phishing) a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) en la lista.</li><li>Para permitir a un dominio enviar correo electrónico no autenticado (evitar la protección contra la suplantación de identidad) pero no omitir las comprobaciones contra correo no deseado y antimalware, puede agregarlo a la [lista de remitentes seguros de AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)</li><li>EOP y Outlook inspeccionar distintas propiedades del mensaje para determinar el remitente del mensaje. Para obtener más información, vea la sección [consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este tema.</li></ul>
+> <ul><li>Tenga cuidado y supervise *las* excepciones que se produzcan en el filtrado de correo no deseado mediante listas de remitentes seguros.</li><li>Aunque puede usar listas de remitentes seguros para ayudar con falsos positivos (correo electrónico bueno marcado como correo no deseado), debe considerar el uso de listas de remitentes seguros como una solución temporal que debería evitarse si es posible. No se recomienda administrar los falsos positivos mediante listas de remitentes seguros, ya que las excepciones al filtrado de correo no deseado pueden abrir la organización a través de suplantación de identidad y otros ataques. Si insiste en usar listas de remitentes seguros para administrar falsos positivos, debe estar atento y mantener los [mensajes y archivos del informe](report-junk-email-messages-to-microsoft.md) de temas de Microsoft en la lista.</li><li>Para permitir a un dominio enviar correo electrónico no autenticado (evitar la protección contra la suplantación de identidad) pero no omitir las comprobaciones contra correo no deseado y antimalware, puede agregarlo a la [lista de remitentes seguros de AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)</li><li>EOP y Outlook inspeccionar distintas propiedades del mensaje para determinar el remitente del mensaje. Para obtener más información, vea la sección [consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este tema.</li></ul>
 
-Por el contrario, también tiene varias opciones para bloquear el correo electrónico de fuentes específicas usando _listas de remitentes bloqueados_. Para obtener más información, vea [Create Block Sender lists in Office 365](create-block-sender-lists-in-office-365.md).
+Por el contrario, también tiene varias opciones para bloquear el correo electrónico de fuentes específicas usando _listas de remitentes bloqueados_. Para obtener más información, consulte [Crear listas de remitentes bloqueados en Office 365](create-block-sender-lists-in-office-365.md)
 
 ## <a name="recommended-use-mail-flow-rules"></a>Recomenda Usar reglas de flujo de correo
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Estas son algunas de las cosas que debe tener en cuenta antes de empezar a trabajar con EOP.
-ms.openlocfilehash: 9c027d6c1ded10becd7c73dc3468270ff50edb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599347"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032869"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
@@ -63,12 +63,8 @@ El contenido de la Ayuda para administradores de EOP consta de las siguientes ca
 
 El contenido de la Ayuda para asistir a los usuarios finales de EOP a administrar el correo no deseado incluye los siguientes temas:
 
-- [Buscar y liberar mensajes en cuarentena como un usuario](find-and-release-quarantined-messages-as-a-user.md): describe cómo los usuarios finales pueden buscar y publicar sus propios mensajes de correo no deseado en cuarentena en la interfaz de usuario de cuarentena de correo no deseado y, opcionalmente, informar de ellos como correo deseado a Microsoft.
+- [Mensajes de informes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md)
 
-- [Enviar mensajes de correo no deseado, mensajes de correo no deseado y suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): describe las distintas formas en que los usuarios finales pueden enviar mensajes de correo no deseado (correo no deseado) y mensajes que no son correo no deseado a Microsoft. En este tema se incluyen vínculos a las herramientas de informes disponibles en Microsoft Outlook y Outlook en la web (anteriormente conocido como Outlook Web App).
-
-- [Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): describe cómo los usuarios finales pueden enviar malware que ha superado los filtros o enviar un archivo que se identificó de forma incorrecta como malware.
-
-- Los usuarios finales pueden agregar determinados usuarios o dominios a una lista de remitentes seguros o a una lista de remitentes bloqueados configurando su configuración de correo no deseado en Outlook o en Outlook en la Web. Tenga en cuenta que los mensajes que se envían de remitentes bloqueados se marcan como correo no deseado, no rechazados, lo que significa que se pueden recuperar de la carpeta de correo electrónico no deseado o cuarentena (en función de dónde haya configurado el servicio para enviar correo no deseado). Para obtener más información, vea [usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Los usuarios finales pueden agregar remitentes a su propia lista de remitentes seguros o bloquear la lista de remitentes en Outlook o en Outlook en la Web. Los administradores también pueden modificar estas listas en los buzones de usuario. Para obtener más información, consulte Acerca de la [configuración del correo no deseado en Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook).
 
 - [Ayuda y soporte técnico para EOP](help-and-support-for-eop.md) Proporciona información sobre cómo obtener ayuda y soporte técnico.

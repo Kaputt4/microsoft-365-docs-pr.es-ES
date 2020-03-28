@@ -18,16 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c1279b0258047ed4653e0bb3d4d95333b28af643
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894825"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029854"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
 ## <a name="policies"></a>Directivas
+
+>[!Important]
+>No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas de la [solución Microsoft 365 Communication Compliance](https://compliance.microsoft.com/supervisoryreview).
 
 Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el centro de cumplimiento de Microsoft 365. Si tiene una organización de Office 365, [configurará directivas de supervisión](configure-supervision-policies.md) en el centro de seguridad & cumplimiento de Office 365. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en la organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios incluidos en el grupo de roles **Administrador de revisión de supervisión** pueden configurar directivas y cualquier persona con este rol asignado puede tener acceso a la página cumplimiento en la **comunicación** en el centro de cumplimiento de Microsoft 365. Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo. csv que también incluye el estado de las alertas revisión pendiente, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y eliminarse cuando ya no se necesiten.
 

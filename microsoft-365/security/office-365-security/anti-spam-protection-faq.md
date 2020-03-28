@@ -16,12 +16,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
-ms.openlocfilehash: daabb84115f1f993fd01891bcef74c23f0391bb4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894063"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033499"
 ---
 # <a name="anti-spam-protection-in-office-365-faq"></a>Protección contra correo no deseado en preguntas más frecuentes sobre Office 365
 
@@ -36,13 +36,15 @@ Para preguntas y respuestas sobre la protección antimalware, consulte [pregunta
 A. **Para los mensajes entrantes:** La mayoría del correo no deseado se elimina mediante el filtrado de la conexión, que se basa en la dirección IP del servidor de correo electrónico de origen. Las directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) inspeccionan y clasifican mensajes como correo no deseado, masivo o de suplantación de identidad. De forma predeterminada, los mensajes clasificados como correo no deseado o masivo se entregan en la carpeta de correo no deseado del destinatario, mientras que los mensajes clasificados como suplantación de identidad se ponen en cuarentena. Puede modificar la Directiva contra correo no deseado predeterminada (se aplica a todos los destinatarios) o puede crear directivas contra correo no deseado personalizadas con una configuración más estricta para grupos de usuarios específicos (por ejemplo, puede poner en cuarentena el correo no deseado que se envía a los ejecutivos). Para obtener más información, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md) y [configuración recomendada para la Directiva contra correo no deseado](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
-> En las implementaciones híbridas donde EOP protege los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en su organización de Exchange local para detectar los encabezados de filtrado de correo no deseado de EOP que se agregan a los mensajes. Para obtener más información, consulte [configurar un EOP independiente para entregar el correo no deseado en la carpeta correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+> En las implementaciones híbridas donde EOP protege los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en su organización de Exchange local para detectar los encabezados de filtrado de correo no deseado de EOP que se agregan a los mensajes. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
  **Para los mensajes salientes:** El mensaje se enruta a través del [grupo de entrega de alto riesgo](high-risk-delivery-pool-for-outbound-messages.md) o se devuelve al remitente en un informe de no entrega (también conocido como un mensaje NDR o de devolución). Para obtener más información acerca de la protección de correo no deseado saliente, vea [controles de correo no deseado salientes en Office 365](outbound-spam-controls.md).
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>T. ¿Qué es una variante de cero días de correo no deseado y cómo se encarga el servicio?
 
-A. Una variante de día cero de correo no deseado es una primera generación, una variante desconocida del correo no deseado que nunca se ha capturado o analizado, por lo que nuestros filtros contra correo electrónico no deseado todavía no tienen información disponible para su detección. Una vez que nuestros analistas de correo no deseado capturan y analizan un ejemplo de correo no deseado de día cero, si cumplen los criterios de clasificación de correo no deseado, se actualizan los filtros contra correo no deseado para detectarlo y ya no se considera "día cero". (**Nota:** si recibe un mensaje que puede ser una variante de 0 días de correo no deseado, para ayudarnos a mejorar el servicio, envíe el mensaje a Microsoft mediante uno de los métodos descritos en enviar mensajes de correo no deseado, [no spam y de estafas de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)).
+A. Una variante de día cero de correo no deseado es una primera generación, una variante desconocida del correo no deseado que nunca se ha capturado o analizado, por lo que nuestros filtros contra correo electrónico no deseado todavía no tienen información disponible para su detección. Una vez que nuestros analistas de correo no deseado capturan y analizan un ejemplo de correo no deseado de día cero, si cumplen los criterios de clasificación de correo no deseado, se actualizan los filtros contra correo no deseado para detectarlo y ya no se considera "día cero".
+
+**Nota:** Si recibe un mensaje que puede ser una variante de cero días de correo no deseado, para ayudarnos a mejorar el servicio, envíe el mensaje a Microsoft mediante uno de los métodos descritos en [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>T. ¿Es necesario configurar el servicio para proporcionar protección contra correo no deseado?
 
@@ -54,7 +56,7 @@ Para obtener más información, vea los siguientes temas:
 
 [Configurar la Directiva de protección](configure-the-connection-filter-policy.md)
 
-[Configurar directivas contra correo electrónico no deseado en Office 365](configure-your-spam-filter-policies.md)
+[Configuración de directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md)
 
 [Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md)
 
@@ -72,7 +74,7 @@ A. Sí, el servicio tiene un filtro de URL que comprueba si hay direcciones URL 
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>T. ¿Cómo pueden los clientes usar el servicio enviar mensajes falsos negativos (correo no deseado) y falsos positivos (correo seguro) a Microsoft?
 
-P. Los mensajes de correo no deseado y los mensajes seguros se pueden enviar a Microsoft para su análisis de varias maneras. Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+P. Los mensajes de correo no deseado y los mensajes seguros se pueden enviar a Microsoft para su análisis de varias maneras. Para obtener más información, vea [informar de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-can-i-get-spam-reports"></a>T. ¿Puedo obtener informes de correo no deseado?
 

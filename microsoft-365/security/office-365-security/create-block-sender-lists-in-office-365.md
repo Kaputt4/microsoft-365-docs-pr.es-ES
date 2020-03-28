@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Los administradores pueden obtener información sobre las opciones disponibles en Office 365 y EOP para bloquear los mensajes entrantes.
-ms.openlocfilehash: a588c9c869dae39ab60fc7ad68b6496f57ae015a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893867"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033427"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados en Office 365
 
@@ -30,12 +30,12 @@ El mejor método para bloquear a los remitentes varía en el ámbito del impacto
 
 2. Listas de remitentes bloqueados o listas de dominios bloqueados (directivas contra correo no deseado)
 
-3. Reglas de flujo de Mai
+3. Reglas de flujo de correo
 
 4. La lista de direcciones IP bloqueadas (filtrado de la conexión)
 
 > [!NOTE]
-> Aunque puede usar la configuración de bloqueo de toda la organización para dirigirse a falsos negativos (correo no deseado), también debe enviar esos mensajes a Microsoft para su análisis. Administrar los falsos negativos mediante listas de bloqueo aumenta considerablemente la sobrecarga administrativa. Si usa listas de bloqueo para desviar el correo no deseado, debe conservar el tema para [enviar mensajes de correo no deseado, correo no deseado y estafas de suplantación de identidad a Microsoft para su análisis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), en la lista desplegable.
+> Aunque puede usar la configuración de bloqueo de toda la organización para dirigirse a falsos negativos (correo no deseado), también debe enviar esos mensajes a Microsoft para su análisis. Administrar los falsos negativos mediante listas de bloqueo aumenta considerablemente la sobrecarga administrativa. Si usa listas de bloqueo para desviar el correo no deseado perdido, tiene que mantener los [mensajes y los archivos del informe de temas a Microsoft](report-junk-email-messages-to-microsoft.md) en su lista.
 
 Por el contrario, también tiene varias opciones para permitir siempre el correo electrónico de orígenes específicos mediante _listas de remitentes seguros_. Para obtener más información, vea [crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).
 

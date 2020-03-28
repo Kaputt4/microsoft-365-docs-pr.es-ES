@@ -17,12 +17,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: La característica datos adjuntos seguros proporciona comprobación del tiempo de los datos adjuntos de correo electrónico. Usar datos adjuntos seguros para proteger a su organización de archivos malintencionados envíe o reciba mensajes de correo electrónico.
-ms.openlocfilehash: c95287b3dd05cce28bad6761ca7e69ce9cc2f914
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60a5a95af846fe6dbe8c2c7aa6dced9deaae1a2d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599817"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033463"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Datos adjuntos seguros de ATP de Office 365
 
@@ -68,4 +68,4 @@ En la tabla siguiente se describen algunos escenarios de ejemplo. En todos estos
 
 - Si recibe un archivo que quiere pedir a Microsoft que analice, visita [Enviar un archivo para el análisis de malware](https://aka.ms/wdsi/submit).
 
-- Si recibe un mensaje de correo electrónico (con o sin datos adjuntos) que desea enviar a Microsoft para su análisis, use el [complemento de mensajes de informe](enable-the-report-message-add-in.md).
+- Si recibe un mensaje de correo electrónico (con o sin datos adjuntos) que desea enviar a Microsoft para su análisis, vea [Informe de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
