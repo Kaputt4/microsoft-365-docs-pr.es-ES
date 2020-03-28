@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 8370744d244ce424fa21e496e8dfd4f470de88e6
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: dd35bf0d7439a19d7b1562e7a0d0681679b34c36
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959187"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035116"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -42,8 +42,8 @@ Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configu
 |:---------------|:-------|:----------------|
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange online en la asignación de aplicaciones en la nube|
 |        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir Exchange online en la asignación de aplicaciones en la nube|
-|        |[Definir directivas de protección de aplicaciones](identity-access-policies.md#high-risk-users-must-change-password)|Asegúrese de que Outlook está incluido en la lista de aplicaciones. Asegúrese de actualizar la Directiva para cada plataforma (iOS, Android, Windows)|
-|        |[Requerir aplicaciones compatibles con las directivas de protección de aplicaciones de Intune](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Incluir Exchange online en la lista de aplicaciones en la nube|
+|        |[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Outlook está incluido en la lista de aplicaciones. Asegúrese de actualizar la Directiva para cada plataforma (iOS, Android, Windows)|
+|        |[Requerir aplicaciones aprobadas y protección de aplicaciones](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluir Exchange online en la lista de aplicaciones en la nube|
 |        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir Exchange online en la lista de aplicaciones en la nube|
 |        |[Bloquear clientes de ActiveSync](#block-activesync-clients)|Agregar esta nueva Directiva| 
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Incluir Exchange online en la asignación de aplicaciones en la nube|

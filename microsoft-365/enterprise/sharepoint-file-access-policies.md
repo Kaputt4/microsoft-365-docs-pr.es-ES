@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084218"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035128"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directivas para proteger los archivos y los sitios de SharePoint
 
@@ -47,7 +47,7 @@ En la siguiente tabla se enumeran las directivas que debe revisar y actualizar o
 |:---------------|:-------|:----------------|
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir SharePoint Online en la asignación de aplicaciones en la nube|
 |        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir SharePoint Online en la asignación de aplicaciones en la nube|
-|        |[Definir directivas de protección de aplicaciones](identity-access-policies.md#define-app-protection-policies)|Asegúrese de que todas las aplicaciones recomendadas se incluyen en la lista de aplicaciones. Asegúrese de actualizar la Directiva para cada plataforma (iOS, Android, Windows)|
+|        |[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que todas las aplicaciones recomendadas se incluyen en la lista de aplicaciones. Asegúrese de actualizar la Directiva para cada plataforma (iOS, Android, Windows)|
 |        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir SharePoint Online en la lista de aplicaciones en la nube|
 |        |[Usar restricciones de aplicación forzada en SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Agregar esta nueva Directiva. Esto indica a Azure AD que use la configuración especificada en SharePoint Online. Esta regla se aplica a todos los usuarios, pero solo afecta al acceso a los sitios incluidos en las directivas de acceso de SharePoint Online|
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir SharePoint Online en las asignaciones de aplicaciones en la nube|
@@ -86,6 +86,6 @@ En la ilustración:
 - Si James obtiene acceso a un sitio confidencial, es miembro del uso de su teléfono no administrado, lo que se permite a los usuarios de línea base, recibirá acceso solo del explorador al sitio confidencial debido a la Directiva de acceso de dispositivos configurada para este sitio.
 - Si James obtiene acceso a un sitio altamente regulado, es miembro del uso de su teléfono no administrado, se bloqueará debido a la Directiva de acceso configurada para este sitio. Solo puede acceder a este sitio mediante su equipo administrado y compatible.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Protección de archivos y sitios de SharePoint Online](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)

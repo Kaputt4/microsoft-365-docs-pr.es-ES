@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 052edafa64f2704fb5a6df525b0ad5609ddc72b9
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959199"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035104"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directivas para proteger los chats, grupos y archivos de Microsoft Teams
 
@@ -50,8 +50,8 @@ El siguiente diagrama ilustra el conjunto de directivas recomendadas para proteg
 Estos son los servicios dependientes que se deben incluir en la asignación de aplicaciones en la nube para Teams:
 
 - Microsoft Teams
-- SharePoint Online y OneDrive para la Empresa
-- Exchange Online
+- SharePoint en línea y OneDrive para Empresas
+- Exchange en línea
 - Skype Empresarial Online
 - Microsoft Stream (grabaciones de reuniones)
 - Microsoft Planner (tareas de Planner y datos del plan)
@@ -63,8 +63,8 @@ En esta tabla se enumeran las directivas que deben revisitarse y vínculos a cad
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Teams tiene también acceso de invitado y reglas de acceso externo que se deben tener en cuenta, obtendrá más información sobre estos en este artículo.|
 |        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir equipos y servicios dependientes en la asignación de aplicaciones en la nube.|
 |        |[Los usuarios de riesgo alto deben cambiar la contraseña](identity-access-policies.md#high-risk-users-must-change-password)|Obliga a los usuarios de Microsoft Teams a cambiar su contraseña al iniciar sesión si se detecta una actividad de alto riesgo para su cuenta. Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones.|
-|        |[Definir directivas de protección de aplicaciones](identity-access-policies.md#define-app-protection-policies)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Actualice la Directiva para cada plataforma (iOS, Android, Windows).|
-|        |[Requerir aplicaciones compatibles con las directivas de protección de aplicaciones de Intune](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Incluir equipos y servicios dependientes en esta Directiva.|
+|        |[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Actualice la Directiva para cada plataforma (iOS, Android, Windows).|
+|        |[Requerir aplicaciones aprobadas y protección de aplicaciones](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluir equipos y servicios dependientes en esta Directiva.|
 |        |[Definir directivas de cumplimiento de dispositivos](identity-access-policies.md#define-device-compliance-policies)|Incluir equipos y servicios dependientes en esta Directiva.|
 |        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir equipos y servicios dependientes en esta Directiva.|
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams tiene también acceso de invitado y reglas de acceso externo que se deben tener en cuenta, obtendrá más información sobre estos en este artículo. Incluir equipos y servicios dependientes en esta Directiva.|
