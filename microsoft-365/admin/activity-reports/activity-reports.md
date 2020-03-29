@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe detallado de cómo las personas de su organización están utilizando los servicios de Office 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353971"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029865"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Informes de actividad en el Centro de Administración de Microsoft 365
 
@@ -75,6 +75,10 @@ Usuarios que tengan los permisos siguientes:
 - Lector global
     
 - Lector de informes
+
+- Administrador de servicios de Teams
+
+- Administrador de comunicaciones de Teams
     
 Para obtener más información, vea[sobre los roles de administrador de](../add-users/about-admin-roles.md) y [asignar roles de administrador](../add-users/assign-admin-roles.md).
   
