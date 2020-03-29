@@ -3,6 +3,8 @@
   items:
     - name: Introducción
       items:
+        - name: Tareas principales para apoyar el trabajo desde casa
+          href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security para BDM
           href: Microsoft-365-security-for-bdm.md
         - name: 'Taller de aprendizaje de director de seguridad de la información (CISO) '
