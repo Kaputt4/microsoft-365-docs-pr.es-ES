@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: 73f2ae19a7424d392bb365d7a24a83532a1950bf
-ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
+ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
+ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/29/2020
-ms.locfileid: "43036393"
+ms.locfileid: "43037481"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 principales tareas para que los equipos de seguridad admitan el trabajo desde casa
 
@@ -116,7 +116,7 @@ Tendrá que trabajar con el administrador de Exchange Online y el administrador 
 Ahora que tiene Office 365 ATP y Azure ATP configurados, puede ver las señales combinadas de estas funcionalidades en un panel. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) reúne las alertas, los incidentes, la investigación automatizada y la respuesta, y la búsqueda avanzada de cargas de trabajo (ATP de Azure, Office 365 ATP, Microsoft defender ATP y Microsoft Cloud App Security) en un solo panel en [Security.Microsoft.com](https://security.microsoft.com). 
 <br>
 
-![Ilustración del panel MTP](../media/top-10-security-remote-work-mtp-dashboard.png)
+![Ilustración del panel MTP](../media/top-ten-security-remote-work-mtp-dashboard.png)
 <br><br>
 Una vez que haya configurado uno o varios de los servicios de protección contra amenazas avanzada, Active MTP. Las nuevas características se agregan de forma continua a MTP; considere la posibilidad de optar por recibir características de vista previa.
 
