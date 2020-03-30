@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Obtenga información sobre cómo obtener el informe de actividad de los usuarios de Microsoft Teams y obtenga información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: 53c3da2d563363c7c463abc62f7cdf4b478ccecc
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4a1b546efa7ba3bac887f60de54231389b8b5ca6
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353731"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047102"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el centro de administración: actividad de los usuarios de Microsoft Teams
 
 El panel de **informes** de Microsoft 365 muestra la información general de la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de actividad de los usuarios de Microsoft Teams puede obtener estadísticas sobre la actividad de Microsoft Teams en su organización.
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Cómo obtener el informe de actividad de los usuarios de Microsoft Teams
 

@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel informes de 365 de Microsoft en el centro de administración de Microsoft 365 y descubra el número de licencias de producto que se usan.
-ms.openlocfilehash: 6ac56f17e1d106eaa4d1c3a46ff603631532075f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e865fa1ed68e7e68c103bf6abc66816b844d7b2d
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353961"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046848"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Microsoft 365 Reports en el centro de administración: usuarios activos
 
@@ -32,7 +32,7 @@ El panel de **informes** de Microsoft 365 muestra la información general de la 
 Por ejemplo, puede usar el informe **Usuarios activos** para conocer cuántas licencias de productos están en uso por usuarios de la organización y explorar en profundidad la información sobre los productos que usa cada usuario. Este informe puede ayudar a los administradores a identificar productos no usados o usuarios que pueden necesitar aprendizaje o información adicional. 
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Obtener acceso al informe Usuarios activos
 

@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: Obtenga información sobre el informe de uso de actividades de SharePoint para conocer la actividad de todos los usuarios de SharePoint, el número de archivos compartidos y el uso del almacenamiento.
-ms.openlocfilehash: df025d41a2c570761fd59e228eebb277c922e06e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a3c8d73707ef09c3702450ebddab6e43c159638c
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353431"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047052"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Informes de Microsoft 365 en el centro de administración: actividad de SharePoint
 
@@ -39,14 +39,14 @@ Por ejemplo, podrá comprender la actividad de cada usuario con licencia para us
 Si quiere ver cuál es la actividad que tiene lugar en cada sitio de SharePoint, así como el uso de almacenamiento, vea el [informe de uso del sitio de SharePoint](sharepoint-site-usage.md).
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  
  
 ## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>¿Cómo puedo obtener acceso al informe de actividad de SharePoint?
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione **** \> **actividad**de SharePoint.
+2. En la lista desplegable **seleccionar un informe** , seleccione **SharePoint** \> **actividad**de SharePoint.
   
 ## <a name="interpreting-the-sharepoint-activity-report"></a>Interpretar el informe de actividad de SharePoint
 

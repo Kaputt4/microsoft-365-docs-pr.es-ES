@@ -2,8 +2,8 @@
 title: Crear, editar o eliminar una vista de usuario personalizada en Office 365
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Obtenga información sobre cómo usar filtros para crear, editar o eliminar la vista de usuario personalizada en Office 365.
-ms.openlocfilehash: ba03d3da3e8bfdc4f2a661d1dc59845a8a22609f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632958"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047064"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Crear, editar o eliminar una vista de usuario personalizada en Office 365
 
@@ -89,6 +89,13 @@ También puede filtrar por los detalles de Perfil de usuario adicionales que se 
 - **Usuarios sin licencia** Seleccione esta casilla para buscar todos los usuarios a los que no se ha asignado una licencia. Los resultados de esta vista también pueden incluir a los usuarios que tienen un buzón de Exchange pero que no tienen una licencia. Para realizar un seguimiento de esos usuarios específicamente, use el filtro **usuarios sin licencia con archivos o buzones de Exchange**. Los resultados de esta vista también pueden incluir usuarios que tienen un archivo de Exchange, pero que no tienen una licencia.
     
 - **Usuarios sin licencia con archivos o buzones de Exchange** Seleccione este cuadro para mostrar las cuentas de usuario que se crearon en Exchange Online y que tienen un buzón de Exchange, pero no se les asignó una licencia de Office 365. Los resultados de este filtro incluyen a los usuarios que tienen o están asignados a un archivo de Exchange. 
+
+> [!NOTE]
+> El filtro de **usuarios sin licencia con buzones de Exchange** funciona cuando:
+1. El buzón se ha convertido recientemente de **compartido** a **usuario** y no tiene licencia.
+2. El buzón de correo se migró recientemente a Office 365, pero no se ha asignado una licencia.
+3. El buzón de correo se ha creado con PowerShell y no se ha asignado una licencia.
+4. Se aprovisionará un nuevo buzón de correo que se haya creado de forma local con un cmdlet New-RemoteMailbox para el usuario.
     
 > [!TIP]
 > Si crea una vista personalizada que devuelve más de 2.000 usuarios, la lista de usuarios resultante no se ordenará. En este caso, use el cuadro de búsqueda para buscar usuarios o editar la vista personalizada para refinar la búsqueda. 
@@ -170,4 +177,3 @@ También puede filtrar por los detalles de Perfil de usuario adicionales que se 
 
 
      
-

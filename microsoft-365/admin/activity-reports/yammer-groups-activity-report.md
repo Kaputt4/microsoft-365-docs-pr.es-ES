@@ -19,26 +19,26 @@ search.appverid:
 - MOE150
 ms.assetid: 94dd92ec-ea73-43c6-b51f-2a11fd78aa31
 description: Obtenga el informe de actividad de grupos de Yammer para conocer el número de grupos de Yammer que se crean y usan en su organización, así como su actividad.
-ms.openlocfilehash: 69b9be1b6f632f0e6fa212e5be6209097ccb6669
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 117217f8dd275432342afd0381b39e93de23b92f
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353331"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047076"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Office 365 Reports en el centro de administración: informe de actividad de grupos de Yammer
 
 El panel **informes** de Office 365 muestra la información general de la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md). En el informe de actividad de grupos de Yammer puede obtener estadísticas sobre la actividad de grupos de Yammer en su organización y consultar cuántos grupos de Yammer se crean y utilizan.
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  
 
 ## <a name="how-to-get-to-the-yammer-groups-activity-report"></a>Obtener acceso al informe de actividad de grupos de Yammer
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione **** \> **actividad de grupos**de Yammer.
+2. En la lista desplegable **seleccionar un informe** , seleccione **Yammer** \> **actividad de grupos**de Yammer.
   
 ## <a name="interpret-the-yammer-groups-activity-report"></a>Interpretar el informe de actividad de grupos de Yammer
 

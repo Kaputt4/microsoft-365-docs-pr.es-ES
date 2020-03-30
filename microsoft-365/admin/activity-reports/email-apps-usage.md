@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Obtenga información sobre cómo obtener el informe de uso de aplicaciones de correo electrónico para conocer las aplicaciones de correo electrónico que se conectan a Exchange Online y la versión de Outlook que usan los usuarios.
-ms.openlocfilehash: bb75b28e41de37d4f21acedd4705db71f6c2c303
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5bdd62d150cf103cd3c3520cf5a0c593dceb8e66
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353791"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046860"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Informes de Microsoft 365 en el centro de administración: uso de aplicaciones de correo electrónico
 
 El panel de **informes** de Microsoft 365 muestra la información general de la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de correo electrónico, puede ver cuántas aplicaciones de correo electrónico se conectan a Exchange Online. También puede ver la información de la versión de las aplicaciones de Outlook que usan los usuarios, lo que le permitirá realizar un seguimiento con los usuarios que usan versiones no admitidas para instalar las versiones compatibles de Outlook.
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  
  
 ## <a name="how-to-get-to-the-email-apps-report"></a>Cómo obtener el informe de aplicaciones de correo electrónico
 

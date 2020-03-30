@@ -18,26 +18,26 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Obtenga información sobre cómo obtener el informe de uso del buzón de correo para conocer las actividades de los usuarios con un buzón de usuario.
-ms.openlocfilehash: d7d36359801fe72ac1c3ffc210c7795030f0b2e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245403"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046932"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Informes de Microsoft 365 en el centro de administración: uso de buzones
 
 El **Informe de uso del buzón** de correo proporciona información acerca de los usuarios con un buzón de usuario y el nivel de actividad en cada uno de ellos en función del correo electrónico Send, Read, crea una cita, envía una reunión, acepta la reunión, rechaza la reunión y cancela la actividad de la reunión. También proporciona información sobre cuánto almacenamiento ha consumido cada buzón de usuario y cuántos de ellos se acercan a las cuotas de almacenamiento. 
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes. 
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>Cómo obtener el informe de uso del buzón
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione **** \> **uso de buzones**de Exchange.
+2. En la lista desplegable **seleccionar un informe** , seleccione **Exchange** \> **uso de buzones**de Exchange.
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Interpretar el informe de uso del buzón
 

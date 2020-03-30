@@ -21,12 +21,12 @@ search.appverid:
 - ODB160
 ms.assetid: 0de3b312-c4e8-4e4b-a02d-32b2f726a680
 description: 'Obtenga el informe de uso de OneDrive para la empresa para conocer el número total de archivos y almacenamiento que se usan en la organización. '
-ms.openlocfilehash: 8bbf904faf1afe28f4a8a83209f681a44eaa932f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4c7cfaeed03627b6dfab6c694f3a5e858b125c40
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353561"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047112"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Informes de Microsoft 365 en el centro de administración: uso de OneDrive para la empresa
 
@@ -35,14 +35,14 @@ El panel de **informes** de Microsoft 365 muestra la información general de la 
 Por ejemplo, la tarjeta de OneDrive en el panel le ofrece una vista general del valor que obtiene de OneDrive para la Empresa en cuanto al número total de archivos y almacenamiento que se usa en su organización. Después, puede explorarlo en profundidad para comprender las tendencias de las cuentas activas de OneDrive, con cuántos archivos interactúan los usuarios, así como el almacenamiento usado. También le ofrece los detalles de cada usuario de OneDrive.
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  
  
 ## <a name="how-do-i-get-to-the-onedrive-usage-report"></a>¿Cómo puedo tener acceso al informe de uso de OneDrive?
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione **** \> **uso**de OneDrive. 
+2. En la lista desplegable **seleccionar un informe** , seleccione **OneDrive** \> **uso**de OneDrive. 
   
 ## <a name="interpret-the-onedrive-usage-report"></a>Interpretar el informe de uso de OneDrive
 

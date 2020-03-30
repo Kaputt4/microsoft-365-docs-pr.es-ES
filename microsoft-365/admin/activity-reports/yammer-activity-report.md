@@ -19,26 +19,26 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Obtenga el informe de actividad de Yammer y sepa más sobre el número de usuarios que usan Yammer para publicar, como, o leer un mensaje.
-ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353521"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047028"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Office 365 Reports en el centro de administración: informe de actividad de Yammer
 
 Como administrador de Microsoft 365, el panel **informes** muestra los datos de uso de los productos de la organización. Consulte [los informes de actividad en el centro de administración](activity-reports.md). Con el **informe de actividad de Yammer**, podrá comprender el nivel de participación de la organización con Yammer consultando el número de usuarios únicos que usan Yammer para publicar, leer o indicar que les gusta un mensaje, y la cantidad de actividad generada en toda la organización. 
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes. 
  
 ## <a name="how-to-get-to-the-yammer-activity-report"></a>Obtener acceso al informe de actividad de Yammer
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione **** \> **actividad**de Yammer.
+2. En la lista desplegable **seleccionar un informe** , seleccione **Yammer** \> **actividad**de Yammer.
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpretar el informe de actividad de Yammer
 

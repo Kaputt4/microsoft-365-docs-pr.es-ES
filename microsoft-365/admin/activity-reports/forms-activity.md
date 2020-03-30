@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Obtenga información sobre cómo obtener un informe de actividad de Microsoft Forms mediante el panel informes de Microsoft 365 en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 601e110719e4d69a647cfd55ecd4ae6db2568947
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42402326"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046944"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Informes de Microsoft 365 en el centro de administración: actividad de formularios
 
@@ -32,14 +32,14 @@ El panel de **informes** de Microsoft 365 muestra la información general de la 
 Por ejemplo, puede comprender la actividad de cada usuario con licencia para usar Microsoft Forms examinando su interacción con los formularios. También le ayuda a comprender el nivel de colaboración en el que se encuentra al mirar el número de formularios creados y los formularios a los que respondió el usuario.
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes. 
 
 ## <a name="how-to-get-to-the-forms-activity-report"></a>Obtener acceso al informe de actividad de formularios
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione **** \> **actividad**de formularios.
+2. En la lista desplegable **seleccionar un informe** , seleccione **Forms** \> **actividad**de formularios.
 
 ## <a name="interpret-the-email-activity-report"></a>Interpretar el informe de actividad de correo electrónico
 

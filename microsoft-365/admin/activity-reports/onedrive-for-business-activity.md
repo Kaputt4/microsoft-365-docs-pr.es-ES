@@ -21,12 +21,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: Obtenga el informe de uso de OneDrive para la organización y conozca la actividad de cada usuario de OneDrive, el número de archivos compartidos y el uso del almacenamiento.
-ms.openlocfilehash: b51071fe8c91b0064d6680b628b58df1f370c73d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b94e5e34f7599cc372b506c2c365503ea1334685
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353591"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047090"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365 Reports en el centro de administración: actividad de OneDrive para la empresa
 
@@ -40,14 +40,14 @@ Por ejemplo, podrá comprender la actividad de cada usuario con licencia para us
 Si quiere conocer la cantidad de actividad que tiene lugar en cada cuenta de OneDrive y el uso de almacenamiento, puede consultar el [informe de uso de OneDrive](onedrive-for-business-usage.md).
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  
  
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>¿Cómo puedo tener acceso al informe de actividades de OneDrive?
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione **** \> **actividad**de OneDrive.
+2. En la lista desplegable **seleccionar un informe** , seleccione **OneDrive** \> **actividad**de OneDrive.
   
 ## <a name="interpret-the-onedrive-for-business-activity-report"></a>Interpretar el informe de actividades de OneDrive para la Empresa
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
 description: 'Obtenga el informe de uso de dispositivos de Yammer para conocer los dispositivos en los que los usuarios usan Yammer. '
-ms.openlocfilehash: 42fc4b1f9a4d782c50eabd892f6a49d1c474be01
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1dfd72c8974aa10b3774d2cdb17ac1bf82b9501b
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353381"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047016"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Informes de Microsoft 365 en el centro de administración: informe de uso de dispositivos de Yammer
 
@@ -31,14 +31,14 @@ El panel de **informes** de Microsoft 365 muestra la información general de la 
 Los informes de uso de dispositivos de Yammer proporcionan información sobre los dispositivos en los que los usuarios utilizan Yammer. Puede ver el número de usuarios, tanto diarios como en general, por tipo de dispositivo. Además, puede consultar ambos valores un período de tiempo determinado. Asimismo, también puede ver los detalles de cada usuario.
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype empresarial para ver los informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes. 
   
 ## <a name="how-do-i-get-to-the-yammer-device-usage-report"></a>¿Cómo puedo tener acceso al informe de uso de dispositivos de Yammer?
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione **** \> **uso de dispositivos**de Yammer.
+2. En la lista desplegable **seleccionar un informe** , seleccione **Yammer** \> **uso de dispositivos**de Yammer.
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpretar el informe de actividad de Yammer
 
