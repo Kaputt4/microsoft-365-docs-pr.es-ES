@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del entorno de pruebas para habilitar la configuración adicional de seguridad de Microsoft 365 su entorno de prueba empresarial de Microsoft 365.
-ms.openlocfilehash: 465e9df40e8dfe9883a81d352eabff17151df8f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067267"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058886"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Aumentó la seguridad de Microsoft 365 para su entorno de prueba empresarial de Microsoft 365
 
@@ -27,7 +27,7 @@ ms.locfileid: "42067267"
 
 Con las instrucciones de este artículo, se configuran opciones adicionales de configuración de Microsoft 365 para aumentar la seguridad en el entorno de pruebas de Microsoft 365 Enterprise.
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
@@ -56,7 +56,7 @@ Las aplicaciones que no admiten la autenticación moderna no pueden tener aplica
   - Si usa el entorno de prueba de Enterprise de Microsoft 365 simulado, use [Azure portal](https://portal.azure.com) para conectarse a la máquina virtual CLIENT1 y, a continuación, inicie sesión desde cliente1.
  
 2. En la nueva pestaña **centro de administración de 365 de Microsoft** , en centros de **Administración** , en el panel de navegación izquierdo, haga clic en **SharePoint**.
-3. En la nueva pestaña **centro de administración de SharePoint** , haga clic en control de **acceso**.
+3. En la nueva pestaña **centro de administración de SharePoint** , haga clic en **directivas > control de acceso**.
 4. Haga clic en **aplicaciones que no admiten la autenticación moderna**, seleccione **Bloquear acceso**y, a continuación, haga clic en **Guardar**.
 
 
@@ -70,7 +70,7 @@ Office 365 Advanced Threat Protection (ATP) para SharePoint, OneDrive y Microsof
 
 3. En **proteger archivos en SharePoint, OneDrive y Microsoft Teams**. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
 
-4. Haga clic en **Guardar **.
+4. Haga clic en **Guardar**.
 
 
 ### <a name="enable-anti-malware"></a>Habilitar anti-malware

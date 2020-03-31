@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Obtenga información sobre el registro de autoservicio de Office 365 y los programas de autoservicio disponibles, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 para operaciones financieras.
 ms.custom: okr_SMB
-ms.openlocfilehash: 54509ff60eee4d52e39acf597eca48bc8a350c28
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 24a300540237dc1cb7810ca712ead5ef7d4bea83
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248052"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058898"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en su organización
 
@@ -37,13 +37,13 @@ Estamos escuchando sus comentarios y hemos facilitado a los usuarios de su organ
 En el siguiente ejemplo, se describe cómo se realiza la inscripción automática en un centro educativo. El mismo proceso funciona en todas las organizaciones que tienen programas de autoservicio habilitados en su espacio empresarial.
   
 1. Los alumnos y los miembros de la Facultad tienen direcciones de correo electrónico de la escuela que indican que están asociadas a su institución. Por ejemplo, la dirección de correo electrónico jakob@uw.edu puede indicar a un estudiante de la Universidad de Washington.
-    
+
 2. Los estudiantes y los profesores van a [nuestro sitio web](https://go.microsoft.com/fwlink/p/?LinkId=536628)y usan su dirección de correo electrónico para registrarse en los servicios que ofrece su organización, como Office 365 ProPlus. También pueden registrarse para obtener otros servicios gratuitos que ofrecemos.
-    
-3. Validamos su dirección de correo electrónico y, a continuación, pueden empezar a usar Office 365, Power BI u otros servicios de inmediato.
-    
-4. Como administrador de la empresa, verá quién se ha registrado para obtener una suscripción viendo la página **suscripciones** en el centro de administración. De esta forma puede ver cuándo hay licencias nuevas o no reconocidas para los servicios de su espacio empresarial. 
-    
+
+3. Validamos su dirección de correo electrónico y, a continuación, pueden empezar a usar Office 365, Power BI u otros servicios inmediatamente.
+
+4. Como administrador de la empresa, puede ver quién se ha registrado para obtener una suscripción viendo la página **productos & Services** en el centro de administración. De esta forma puede ver cuándo hay licencias nuevas o no reconocidas para los servicios de su espacio empresarial. Para controlar si los usuarios pueden suscribirse a las suscripciones de autoservicio, use el cmdlet [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) de PowerShell con el parámetro **AllowAdHocSubscriptions** . Para obtener más información, vea [¿cómo se controla la configuración de Self-Service?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+
 ## <a name="available-self-service-programs"></a>Programas de autoservicio disponibles
 
 A continuación se muestran los programas de autoservicio actualmente disponibles. Esta lista se actualizará a medida que se agreguen nuevos programas.
@@ -54,7 +54,7 @@ A continuación se muestran los programas de autoservicio actualmente disponible
 |Office 365 a1 * * * * <br/> |Cualquier estudiante o profesor puede usar una dirección de correo electrónico escolar para registrarse gratuitamente para Office 365 y obtener aplicaciones de Office para la web, 1 TB de almacenamiento en la nube de OneDrive y SharePoint Online para los sitios de clase, equipo y proyecto.  <br/> |[Preguntas técnicas más frecuentes sobre Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 a1 más** <br/> |Los estudiantes y profesores elegibles pueden registrarse para Office 365 a1 Plus, que incluye todo lo mencionado anteriormente, además de Office 365 ProPlus. Office 365 ProPlus es software de productividad, como Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access y Skype empresarial, que está instalado en su equipo de escritorio o portátil.  <br/> |[Preguntas técnicas más frecuentes sobre Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI permite a los usuarios visualizar datos, compartir descubrimientos y colaborar en nuevas formas intuitivas. <br/> Si su organización ya está suscrita a Office 365, también puede ver las licencias de la "prueba de usuario individual de Power BI Pro", que ofrece a los usuarios limitado el acceso gratuito a las capacidades avanzadas.  <br/> |[Power BI en su organización](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
-|**Servicios de administración de derechos (RMS)** <br/> |RMS para personas es una suscripción gratuita de autoservicio para los usuarios de una organización que han enviado archivos confidenciales que han sido protegidos por Azure Rights Management (Azure RMS), pero el Departamento de ti no ha implementado Azure Rights Management (Azure RMS). o Active Directory Rights Management Services (AD RMS).  <br/> |[RMS para usuarios individuales y Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Portal de Microsoft Rights Management](https://portal.azure.com/) para que pueda comprobar si puede abrir un documento protegido por derechos determinado.  <br/> |
+|**Servicios de administración de derechos (RMS)** <br/> |RMS para personas es una suscripción gratuita de autoservicio para los usuarios de una organización que han enviado archivos confidenciales que han sido protegidos por Azure Rights Management (Azure RMS), pero el Departamento de ti no ha implementado Azure Rights Management (Azure RMS) o Active Directory Rights Management Services (AD RMS).  <br/> |[RMS para usuarios individuales y Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Portal de Microsoft Rights Management](https://portal.azure.com/) para que pueda comprobar si puede abrir un documento protegido por derechos determinado.  <br/> |
 |**Microsoft Power apps** <br/> |En PowerApps, puede administrar los datos organizativos mediante la ejecución de una aplicación que haya creado o que haya creado otro usuario y que se haya compartido con usted. Las aplicaciones se ejecutan en dispositivos móviles como teléfonos, o bien puede ejecutarlas en un explorador al abrir Dynamics 365. Puede crear una variedad infinita de aplicaciones sin tener que aprender un lenguaje de programación como C#.  <br/> |[Registro de autoservicio para PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Microsoft Flow** <br/> |Microsoft Flow es un producto que le ayuda a configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos y mucho más.  <br/> |[Registrarse e iniciar sesión en Microsoft Flow](https://go.microsoft.com/fwlink/p/?linkid=841468) <br/> |[Microsoft Flow](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Dynamics 365 para operaciones financieras** <br/> |Obtenga una solución completa de administración empresarial y financiera para pequeñas y medianas empresas. Dynamics 365 for Financials facilita el pedido, la venta, la facturación y la creación de informes, comenzando el primer día.  <br/> |[Microsoft Dynamics 365 para operaciones financieras](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 para operaciones financieras](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
@@ -66,4 +66,3 @@ A continuación se muestran los programas de autoservicio actualmente disponible
 |**Minecraft Education Edition** <br/> |Mediante el uso de Minecraft como plataforma de aprendizaje, los educadores pueden motivar y inspirar a todos los alumnos para lograr más y inflaman pasión por aprender. Únase a una comunidad de educadores aprendiendo a usar Minecraft para desbloquear el potencial de los alumnos.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |Cargue y Comparta vídeos en su organización para mejorar la comunicación, la participación y el aprendizaje.  <br/> |[Experiencia del &amp; día 0 de suscripción](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Agentes de Power virtual** <br/> |Power virtual Agents permite a los equipos crear de forma sencilla bots potentes mediante una interfaz gráfica guiada sin código sin la necesidad de científicos o desarrolladores de datos. Power virtual Agents enfrenta muchos de los principales problemas con la creación de robots en la industria de hoy. Elimina el vacío entre los expertos en la materia y los equipos de desarrollo que crean los bots y la larga latencia entre los equipos para reconocer un problema y actualizar el bot para solucionarlo.  <br/> |[Detalles de licencias y acceso](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Registrarse para obtener agentes virtuales de potencia](https://aka.ms/TryPVA) <br/> |
-

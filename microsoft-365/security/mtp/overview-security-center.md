@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 3f60c40ecd1810d630a4607d6b0915d6f3089a99
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372048"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058910"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general sobre el centro de seguridad de Microsoft 365
 
@@ -45,7 +45,7 @@ El centro de seguridad 365 de Microsoft incluye:
 
 * **Inicio** : Obtenga una vista general del estado general de la seguridad de su organización.
 * **Incidentes** : vea el artículo más amplio de un ataque conectando los puntos que se muestran en las alertas individuales de las entidades. Sabrá exactamente dónde se ha iniciado un ataque, qué dispositivos se ven afectados y dónde ha desaparecido la amenaza.
-* **Alertas** : tenga una mayor visibilidad de todas las alertas en el entorno de Microsoft 356, incluso alertas de Microsoft Cloud App Security, Office 365 ATP, Azure ad, ATP de Azure y ATP de Microsoft. Disponible para clientes de E3 y E5.  
+* **Alertas** : tenga una mayor visibilidad de todas las alertas en el entorno de Microsoft 365, incluso alertas de Microsoft Cloud App Security, Office 365 ATP, Azure ad, ATP de Azure y ATP de Microsoft. Disponible para clientes de E3 y E5.  
 * **Centro de actividades** : reduzca el volumen de alertas que el equipo de seguridad debe dirigir manualmente, lo que permite al equipo de operaciones de seguridad centrarse en amenazas más complejas y en otras iniciativas de gran valor.
 * **Informes** : obtenga los detalles y la información que necesita para proteger mejor a sus usuarios, dispositivos, aplicaciones y mucho más.
 * **Puntuación segura** : mejore su postura de seguridad general con calificación segura de Microsoft. Esta página proporciona un resumen de todas las distintas características y capacidades de seguridad que ha habilitado, e incluye recomendaciones para las áreas que deben mejorarse.
