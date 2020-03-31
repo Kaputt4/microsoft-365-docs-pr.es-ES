@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Preguntas más frecuentes para los administradores sobre el uso del servicio de importación de Office 365 para importar los archivos PST de su organización a los buzones de Office 365. '
-ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 439a321c3890d85f7ca0f7da0074af80f6b7fed5
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634438"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058921"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>Preguntas más frecuentes sobre la importación de archivos PST a Office 365
 
@@ -46,7 +46,7 @@ Además, para crear trabajos de importación en el Centro de seguridad y cumplim
 - Debe ser administrador global en su organización de Office 365. 
     
 > [!TIP]
-> Puede crear un nuevo grupo de roles en Exchange Online que está pensado específicamente para la importación de archivos PST a Office 365. Para obtener el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles de importación y exportación de buzón y de destinatarios de correo al nuevo grupo de roles y, a continuación, agregue a los miembros. 
+> Puede crear un nuevo grupo de roles en Exchange Online que está pensado específicamente para la importación de archivos PST a Office 365. Para obtener el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles de importación o exportación de buzón y de destinatarios de correo al nuevo grupo de roles y, después, agregue a los miembros. 
   
  **¿Dónde está disponible la carga en la red?**
   
@@ -79,6 +79,10 @@ Depende de la capacidad de su red, pero normalmente se necesitan varias horas pa
   
 Si se importan distintos archivos PST a diferentes buzones de destino, el proceso de importación se producirá en paralelo; en otras palabras, cada par de PST y buzón se importará de forma simultánea. Si se importan varios archivos PST al mismo buzón, se hará de manera simultánea.
   
+ **¿Cómo controla el proceso de importación de PST los elementos de correo electrónico duplicados?**
+
+El proceso de importación de PST comprueba si hay elementos duplicados y no copia los elementos de un archivo PST en el buzón o archivo si existe un elemento que coincida en la carpeta de destino del buzón de destino o el archivo de destino. Si vuelve a importar el mismo archivo PST y especifica una carpeta de destino distinta (mediante la propiedad el targetrootfolder en el archivo de asignación de importaciones de PST) que la que especificó en un trabajo de importación anterior, se volverán a importar todos los elementos del archivo PST.
+
  **¿Existe un límite de tamaño del mensaje al importar archivos PST?**
   
 Sí. Si un archivo PST contiene un elemento de buzón de más de 150 MB, el elemento se ignorará durante el proceso de importación.
@@ -178,6 +182,10 @@ Además, los archivos PST de Outlook 2007 y versiones posteriores se pueden impo
   
 Sí. Si un archivo PST contiene un elemento de buzón de más de 150 MB, el elemento se ignorará durante el proceso de importación.
   
+  **¿Cómo controla el proceso de importación de PST los elementos de correo electrónico duplicados?**
+
+El proceso de importación de PST comprueba si hay elementos duplicados y no copia los elementos de un archivo PST en el buzón o archivo si existe un elemento que coincida en la carpeta de destino del buzón de destino o el archivo de destino. Si vuelve a importar el mismo archivo PST y especifica una carpeta de destino distinta (mediante la propiedad el targetrootfolder en el archivo de asignación de importaciones de PST) que la que especificó en un trabajo de importación anterior, se volverán a importar todos los elementos del archivo PST.
+ 
  **¿Las propiedades de los mensajes, como cuando el mensaje se envía o se recibe, la lista de destinatarios y otras propiedades, se conservan cuando se importan los archivos PST en un buzón de Office 365?**
   
 Sí. Los metadatos de los mensajes originales no se modifican durante el proceso de importación.
