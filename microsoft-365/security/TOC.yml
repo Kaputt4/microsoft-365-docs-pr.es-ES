@@ -345,8 +345,6 @@
             - name: ¿Qué es EOP?
               href: ./office-365-security/what-is-eop.md
               items:
-                - name: Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Bloquear correo no deseado en EOP independiente
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
                 - name: Proteger buzones locales con Exchange Online Protection
@@ -445,6 +443,8 @@
           items:
             - name: Seguimiento de mensajes en el Centro de seguridad y cumplimiento
               href: ./office-365-security/message-trace-scc.md
+            - name: Agregar la compatibilidad para el correo electrónico entrante anónimo a través de IPv6
+              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
               href: ./office-365-security/view-email-security-reports.md
             - name: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
