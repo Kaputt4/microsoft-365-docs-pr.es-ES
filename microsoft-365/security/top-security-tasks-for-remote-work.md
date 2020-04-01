@@ -11,13 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- remotework
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
-ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
+ms.openlocfilehash: 3bbd5951ac6005f20584d53e17ac55927acd4c89
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "43037481"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081309"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 principales tareas para que los equipos de seguridad admitan el trabajo desde casa
 
@@ -165,8 +166,8 @@ También puede aprovechar estos tutoriales:
 - [Usar las características de inscripción de dispositivos corporativos de Apple en Apple Business Manager (ABM) para inscribir dispositivos iOS/iPados en Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 Después de inscribir dispositivos, use las directrices de [las directivas comunes de identidad y acceso a dispositivos](../enterprise/identity-access-policies.md) para crear estas directivas:
-- [Definir directivas de cumplimiento de dispositivos](../enterprise/identity-access-policies.md#define-device-compliance-policies)
-- [Requerir equipos compatibles](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) (regla de acceso condicional)
+- [Definir directivas de cumplimiento de dispositivos](../enterprise/identity-access-policies.md#define-device-compliance-policies) : la configuración recomendada para Windows 10 incluye la necesidad de protección antivirus. Si tiene Microsoft 365 E5, use la protección contra amenazas avanzada de Microsoft defender para supervisar el estado de los dispositivos de los empleados. Asegúrese de que las directivas de cumplimiento para otros sistemas operativos incluyen el software de protección antivirus y de punto final. 
+- [Requerir equipos compatibles](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) : esta es la regla de acceso condicional en Azure ad que aplica las directivas de cumplimiento de dispositivos.
 
 Solo una organización puede administrar un dispositivo, por lo que debe asegurarse de excluir las cuentas de invitado de la regla de acceso condicional en Azure AD. Si no excluye a los usuarios externos y invitados de las directivas que requieran el cumplimiento de dispositivos, estas directivas bloquearán a estos usuarios. Para obtener más información, consulte [actualización de las directivas comunes para permitir y proteger el acceso de invitados y externos](../enterprise/identity-access-policies-guest-access.md).
 
@@ -174,14 +175,14 @@ Solo una organización puede administrar un dispositivo, por lo que debe asegura
 
 Si va a permitir que la mayoría de los empleados trabajen desde casa rápidamente, este cambio repentino de patrones de conectividad puede tener un impacto significativo en la infraestructura de la red corporativa. Muchas redes se escalaron y diseñaron antes de la adopción de los servicios en la nube. En muchos casos, las redes son tolerantes de los trabajadores remotos, pero no están diseñadas para que todos los usuarios los usen de forma remota.
 
-Los elementos de red como concentradores de VPN, el equipo de salida de red central (como los servidores proxy y los dispositivos de prevención de pérdida de datos), el ancho de banda central de Internet, los circuitos MPLS de backhaul, la funcionalidad NAT, etc., se colocan repentinamente con una gran presión debido a la carga de toda la empresa que los usa. El resultado final es un rendimiento deficiente y la productividad junto con una mala experiencia del usuario para los usuarios que se están adaptando al trabajo desde casa.
+Los elementos de red como concentradores de VPN, el equipo de salida de red central (como los servidores proxy y los dispositivos de prevención de pérdida de datos), el ancho de banda central de Internet, los circuitos MPLS de backhaul, la funcionalidad NAT, etc., se colocan repentinamente con una gran presión debido a la carga de toda la empresa con ellos. El resultado final es un rendimiento deficiente y la productividad junto con una mala experiencia del usuario para los usuarios que se están adaptando al trabajo desde casa.
 
 Algunas de las protecciones que tradicionalmente se han proporcionado mediante el enrutamiento de tráfico a través de una red corporativa las proporcionan las aplicaciones de nube a las que tienen acceso los usuarios. Si ha llegado a este paso en este artículo, ha implementado un conjunto de controles sofisticados de seguridad en la nube para los servicios y los datos de Microsoft 365. Con estos controles en su ubicación, puede que esté listo para enrutar el tráfico de los usuarios remotos directamente a Office 365. Si aún necesita un vínculo VPN para el acceso a otras aplicaciones, puede mejorar considerablemente el rendimiento y la experiencia del usuario mediante la implementación de túneles divididos. Una vez que haya logrado el acuerdo en su oganization, esto se puede lograr en un día mediante un equipo de red bien coordinado.
 
 
 Consulte estos recursos en docs para obtener más información:
 - [Información general: optimizar la conectividad de Office 365 para usuarios remotos mediante tunelización dividida de VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implementación de túneles divididos de VPN para Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Implementación de túnel dividido de VPN en Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Artículos de blog recientes en este tema:
 - [Cómo optimizar rápidamente el tráfico de Office 365 para el personal remoto & reducir la carga de la infraestructura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)

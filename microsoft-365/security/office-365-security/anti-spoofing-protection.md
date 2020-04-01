@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Este artículo describe cómo Office 365 reduce los ataques de phishing que usan dominios de remitentes falsificados, es decir, dominios suplantados. Para ello, analiza los mensajes y bloquea los que no pueden autenticarse mediante métodos de autenticación de correo electrónico estándar ni otras técnicas de reputación del remitente. Este cambio se implementó para reducir el número de ataques de phishing a los que se exponen las organizaciones de Office 365.
-ms.openlocfilehash: a81c22d83e0a476657aa89823e52d3eb6afc4514
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 5d4b9f0c94a68d457aa59b768444746627dffb9d
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033487"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081369"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra la suplantación de identidad en Office 365
 
@@ -61,7 +61,7 @@ En segundo lugar, los mensajes falsificados crean incertidumbre para los usuario
 
 El mensaje anterior proviene de Microsoft, pero al mismo tiempo, los usuarios están acostumbrados a recibir mensajes de suplantación de identidad que pueden engañar a un usuario para que haga clic en un vínculo y proporcione sus credenciales, descargue malware o responda a un mensaje con contenido confidencial. Como es difícil notar la diferencia entre un restablecimiento de contraseña verdadero y uno falso, muchos usuarios ignoran estos mensajes, los marcan como correo no deseado o informan innecesariamente sobre ellos a Microsoft como intentos de suplantaciones de identidad.
 
-Para detener la suplantación de identidad, el sector de filtrado de correo electrónico ha desarrollado protocolos de autenticación como [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) y [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impide que la suplantación de identidad examine el remitente de un mensaje. Es decir, el remitente que los usuarios ven en su cliente de correo electrónico (en los ejemplos anteriores es service.outlook.com, outlook.com y accountprotection.microsoft.com). Además, los usuarios también pueden ver que el dominio ha pasado SPF o DKIM, lo que significa que el dominio se ha autenticado y, por lo tanto, no está falsificado. Para obtener una explicación más completa, vea la sección "*Comprender por qué la autenticación de correo electrónico no siempre es suficiente para detener la suplantación de identidad"* más adelante en este artículo.
+Para detener la suplantación de identidad, el sector de filtrado de correo electrónico ha desarrollado protocolos de autenticación como [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) y [DMARC](use-dmarc-to-validate-email.md). DMARC impide que la suplantación de identidad examine el remitente de un mensaje. Es decir, el remitente que los usuarios ven en su cliente de correo electrónico (en los ejemplos anteriores es service.outlook.com, outlook.com y accountprotection.microsoft.com). Además, los usuarios también pueden ver que el dominio ha pasado SPF o DKIM, lo que significa que el dominio se ha autenticado y, por lo tanto, no está falsificado. Para obtener una explicación más completa, vea la sección "*Comprender por qué la autenticación de correo electrónico no siempre es suficiente para detener la suplantación de identidad"* más adelante en este artículo.
 
 Pero, el problema es que los registros de autenticación de correo electrónico son opcionales, no necesarios. Por lo tanto, aunque los dominios con directivas de autenticación seguras como microsoft.com y skype.com están protegidos frente a la suplantación de identidad, los que utilizan directivas de autenticación más débiles o no usan ninguna directiva son objetivos para la suplantación.  En marzo de 2018, sólo un 9% de los dominios de las empresas en la Fortune 500 publicaron directivas de autenticación de correo electrónico seguras. El 91% restante podía ser falsificado por un atacante y, a menos que el filtro de correo electrónico lo detectara con otra directiva, podía llegar a un usuario final y engañarlo:
 

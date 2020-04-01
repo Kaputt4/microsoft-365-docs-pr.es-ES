@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Use inteligencia de identidad en el &amp; centro de seguridad y cumplimiento en la página Configuración contra correo no deseado para revisar todos los remitentes que suplantan dominios que forman parte de la organización o suplantación de dominios externos. La inteligencia de identidad está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección contra amenazas avanzada y de Exchange Online Protection.
-ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a58f98852f321791615c5f0064b69e8510aadbe5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082986"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081465"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Obtener más información sobre la inteligencia de suplantación de identidad
 
@@ -101,7 +101,7 @@ Puede revisar los remitentes que están suplantando su dominio o dominios extern
 
 6. Elija **Guardar** para guardar los cambios.
 
-Si tiene una suscripción a Office 365 Enterprise E5 o ha comprado por separado la protección contra amenazas avanzada como complemento, también puede administrar a los remitentes que están suplantando su dominio a través de la [información de inteligencia de inteligencia de suplantación](https://docs.microsoft.com/office365/securitycompliance/walkthrough-spoof-intelligence-insight).
+Si tiene una suscripción a Office 365 Enterprise E5 o ha comprado por separado la protección contra amenazas avanzada como complemento, también puede administrar a los remitentes que están suplantando su dominio a través de la [información de inteligencia de inteligencia de suplantación](walkthrough-spoof-intelligence-insight.md).
 
 ## <a name="configuring-the-anti-spoofing-policy"></a>Configuración de la Directiva contra la suplantación de identidad
 <a name="Managespooflist"> </a>

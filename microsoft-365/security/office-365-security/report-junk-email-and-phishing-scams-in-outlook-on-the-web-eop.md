@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Office 365 los usuarios con buzones de Exchange online pueden usar Outlook en la web (Outlook Web App) para enviar mensajes de correo no deseado, mensajes de correo no deseado y suplantación de identidad a Microsoft para su análisis.
-ms.openlocfilehash: c6aba9a701b23be4bbbe508825a55c6438461928
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: b58e3ae5be9bf2a473b655287ad9bb1cb8ef2c78
+ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033709"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43075625"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-office-365"></a>Informar del correo electrónico no deseado y de suplantación de identidad en Outlook en la web en Office 365
 
@@ -73,13 +73,19 @@ Si es un cliente de Office 365 con buzones de correo de Exchange Online, puede u
 
 ## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Deshabilitar o habilitar la notificación de correo no deseado en Outlook en la web
 
-De forma predeterminada, los usuarios pueden notificar falsos positivos de correo no deseado, falsos negativos y mensajes de suplantación de identidad a Microsoft para su análisis en Outlook en la Web. Los administradores pueden usar directivas de buzones de correo de Outlook en la web en Exchange Online para deshabilitar o habilitar esta capacidad, pero solo en Exchange Online PowerShell.
+De forma predeterminada, los usuarios pueden notificar falsos positivos de correo no deseado, falsos negativos y mensajes de suplantación de identidad a Microsoft para su análisis en Outlook en la Web. Los administradores pueden configurar las directivas de buzones de correo de Outlook en la web en Exchange Online PowerShell para evitar que los usuarios informen falsos positivos de correo no deseado y correo no deseado falsos negativos para Microsoft. No se puede deshabilitar la capacidad de los usuarios para notificar mensajes de suplantación de identidad a Microsoft.
+
+### <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesitará los roles de **directivas de destinatarios** o **destinatarios de correo** en Exchange Online, que se asignan a los grupos de roles administración de la **organización** y **Administración de destinatarios** de forma predeterminada. Para obtener más información acerca de los grupos de roles de Exchange Online, vea [Modify role Groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
 
 - Cada organización tiene una directiva predeterminada denominada OwaMailboxPolicy-default, pero puede crear directivas personalizadas. Las directivas personalizadas se aplican a los usuarios en el ámbito antes de la directiva predeterminada. Para obtener más información acerca de las directivas de buzón de correo de Outlook en la web, vea [directivas de buzones de correo de Outlook en la web en Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).
+
+- La deshabilitación de la notificación de correo no deseado no elimina la capacidad de marcar un mensaje como correo no deseado en Outlook en la Web. Al seleccionar un mensaje en la carpeta correo electrónico no deseado y al hacer clic en **correo deseado** \> y **no deseado** , el mensaje se vuelve a mover a la bandeja de entrada. Al seleccionar un mensaje en cualquier otra carpeta de correo electrónico y **al hacer clic** \> en correo no deseado todavía se mueve el mensaje a la carpeta correo **electrónico no deseado** . Lo que ya no está disponible es la opción de informar al mensaje a Microsoft.
+
+### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Usar Exchange Online PowerShell para deshabilitar o habilitar la notificación de correo electrónico no deseado en Outlook en la web
 
 1. Para buscar las directivas de buzón de correo de Outlook en la Web existentes y el estado de la notificación de correo no deseado, ejecute el siguiente comando:
 
@@ -99,7 +105,7 @@ De forma predeterminada, los usuarios pueden notificar falsos positivos de corre
    Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
    ```
 
-   En este ejemplo se ha habilitado la notificación de correo no deseado en la directiva personalizada denominada administradores de contoso.
+   En este ejemplo se habilita la notificación de correo no deseado en la directiva personalizada denominada administradores de contoso.
 
    ```powershell
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
@@ -117,4 +123,13 @@ Para comprobar que ha habilitado o deshabilitado correctamente la notificación 
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Abra el buzón de un usuario afectado en Outlook en la web y compruebe que las opciones para informar de correo electrónico no deseado, correo deseado y mensajes de suplantación de identidad estén disponibles o no disponibles. Tenga en cuenta que el usuario todavía puede marcar los mensajes como correo no deseado, suplantación de identidad y correo electrónico no deseado, pero el usuario no puede informar de ellos a Microsoft.
+- Abrir el buzón de un usuario afectado en Outlook en la web, seleccione un mensaje en la bandeja de entrada **, haga clic** \> en correo **no deseado y compruebe** que la pregunta para informar del mensaje a Microsoft es o no se muestra.<sup>\*</sup>
+
+- Abrir el buzón de un usuario afectado en Outlook en la web, seleccione un mensaje en la carpeta de **correo no deseado** **, haga clic** \> en correo no deseado y compruebe que la pregunta para informar del mensaje a Microsoft es o no se muestra.<sup>\*</sup>
+
+<sup>\*</sup>Los usuarios pueden ocultar el mensaje para informar del mensaje mientras están notificando el mensaje. Para comprobar esta configuración en Outlook en la web:
+
+1. Haga clic en **configuración** ![Outlook en el icono](../../media/owa-settings-icon.png) \> de configuración del Web **ver todo** \> el **correo electrónico no deseado**de configuración de Outlook.
+2. En la sección **informes** , compruebe el valor: **preguntarme antes de enviar un informe**.
+
+   ![Configuración de informes de correo no deseado de Outlook en la web](../../media/owa-junk-email-reporting-options.png)

@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtienen los mensajes de suplantación de identidad (phishing) y cómo hacerlo para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 37d1e8bbf91bc6f0a1c8e9b5aa97fe460e8b5c82
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033655"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081213"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ajuste de la protección contra la suplantación de identidad en Office 365
 
@@ -45,7 +45,7 @@ Informar de los mensajes de suplantación de identidad resulta útil para ajusta
 
 Puede examinar los encabezados del mensaje de suplantación de identidad (phishing) para ver si hay algo que puede hacer usted mismo para evitar que lleguen más mensajes de suplantación de identidad. En otras palabras, el examen de los encabezados de los mensajes puede ayudarle a identificar cualquier configuración de su organización que sea responsable de permitir los mensajes de suplantación de identidad (phishing) en.
 
-En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report** en los encabezados de mensaje para ver si hay indicios de correo no deseado o de filtrado de phish en el valor de veredicto de filtrado de correo no deseado (SFV). Los mensajes que omiten el filtrado tendrán una `SCL:-1`entrada de, lo que significa que una de las configuraciones ha permitido este mensaje mediante la anulación del correo no deseado o los veredictos que el servicio ha determinado. Para obtener más información sobre cómo obtener encabezados de mensajes y la lista completa de todos los encabezados de mensajes contra correo no deseado y antiphishing disponibles, consulte [anti-spam Message headers](https://docs.microsoft.com/office365/SecurityCompliance/anti-spam-message-headers).
+En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report** en los encabezados de mensaje para ver si hay indicios de correo no deseado o de filtrado de phish en el valor de veredicto de filtrado de correo no deseado (SFV). Los mensajes que omiten el filtrado tendrán una `SCL:-1`entrada de, lo que significa que una de las configuraciones ha permitido este mensaje mediante la anulación del correo no deseado o los veredictos que el servicio ha determinado. Para obtener más información sobre cómo obtener encabezados de mensajes y la lista completa de todos los encabezados de mensajes contra correo no deseado y antiphishing disponibles, consulte [anti-spam Message headers in Office 365](anti-spam-message-headers.md).
 
 ## <a name="best-practices-to-stay-protected"></a>Procedimientos recomendados para mantener la protección
 
@@ -61,7 +61,7 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
   - Compruebe que el registro SPF identifica _todos los_ orígenes de correo electrónico de los remitentes de su dominio (no olvide los servicios de terceros).
 
-  - Use error (\-) para asegurarse de que los sistemas de correo electrónico que están configurados para ello rechacen a los remitentes no autorizados. Puede usar [inteligencia de suplantación de identidad](https://docs.microsoft.com/office365/securitycompliance/learn-about-spoof-intelligence) para identificar a los remitentes que usan su dominio para que pueda incluir remitentes de terceros autorizados en su registro de SPF.
+  - Use error (\-) para asegurarse de que los sistemas de correo electrónico que están configurados para ello rechacen a los remitentes no autorizados. Puede usar [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md) para identificar a los remitentes que usan su dominio para que pueda incluir remitentes de terceros autorizados en su registro de SPF.
 
   Para obtener instrucciones de configuración, consulte:
   
@@ -71,8 +71,8 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
   - [Usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md)
 
-- Siempre que sea posible, se recomienda entregar el correo electrónico del dominio directamente a Office 365. En otras palabras, apunte el registro MX del dominio de Office 365 a Office 365. Exchange Online Protection (EOP) puede proporcionar la mejor protección para los usuarios de la nube cuando el correo se entrega directamente a Office 365. Si debe usar un sistema de protección de correo electrónico de terceros delante de EOP, asegúrese de que ha seguido las instrucciones [aquí](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud).
+- Siempre que sea posible, se recomienda entregar el correo electrónico del dominio directamente a Office 365. En otras palabras, apunte el registro MX del dominio de Office 365 a Office 365. Exchange Online Protection (EOP) puede proporcionar la mejor protección para los usuarios de la nube cuando el correo se entrega directamente a Office 365. Si debe usar un sistema de protección de correo electrónico de terceros delante de EOP, use el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- La autenticación multifactor (MFA) es una forma realmente eficaz de evitar cuentas comprometidas. Debe considerar seriamente habilitar MFA para todos los usuarios. Para un enfoque por fases, empiece por habilitar la MFA para los usuarios más confidenciales (administradores, ejecutivos, etc.) antes de habilitar MFA para todos los usuarios. Para obtener instrucciones, vea [set up multi-factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- La autenticación multifactor (MFA) es una forma realmente eficaz de evitar cuentas comprometidas. Debe considerar seriamente habilitar MFA para todos los usuarios. Para un enfoque por fases, empiece por habilitar la MFA para los usuarios más confidenciales (administradores, ejecutivos, etc.) antes de habilitar MFA para todos los usuarios. Para obtener instrucciones, vea [set up multi-factor Authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 - Los intrusos suelen usar las reglas de reenvío a los destinatarios externos para extraer datos. Use la información de **reglas de reenvío de buzón de correo de revisión** de la [puntuación segura de Microsoft](../mtp/microsoft-secure-score.md) para buscar e incluso impedir el reenvío de reglas a destinatarios externos. Para obtener más información, consulte [Mitigating Client external Forwarding Rules with Secure score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).
