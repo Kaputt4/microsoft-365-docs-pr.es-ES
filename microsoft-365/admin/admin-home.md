@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Obtenga información sobre los recursos disponibles para administradores de Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: cafb63d53178a2cc21448643ba9fd78773265aa8
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: e38c15d0e68e908bada941443b019e9f243c7f11
+ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046920"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43075601"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Centro de ayuda de Microsoft 365 para administradores
 
@@ -39,13 +39,13 @@ Obtenga información sobre los recursos disponibles para administradores.
                     </div>
                     <div class="cardText">
                         <h3>Office 365 pasará a ser Microsoft 365</h3>
-                        <p>Estamos cambiando algunos de nuestros nombres de suscripción de Office 365 y Microsoft 365. No necesita hacer nada. Sus servicios, aplicaciones y características serán los mismos, al igual que el precio de su suscripción. El nombre de la suscripción se actualizará automáticamente en el Centro de administración de Microsoft 365 y los extractos de facturación se actualizarán a partir del 21 de abril de 2020</p>
+                        <p>Estamos cambiando algunos de nuestros nombres de suscripción de Office 365 y Microsoft 365. No necesita hacer nada. Sus servicios, aplicaciones y características serán los mismos, al igual que el precio de su suscripción. El nombre de la suscripción se actualizará automáticamente en el Centro de administración de Microsoft 365 y los extractos de facturación se actualizarán a partir del 21 de abril de 2020.</p>
                         <ul>
-                            <li><p>Office 365 Empresa Essentials es ahora Microsoft 365 Empresa Basic</p></li>
-                            <li><p>Office 365 Empresa Premium es ahora Microsoft 365 Empresa Standard</p></li>
-                            <li><p>Microsoft 365 Empresa es ahora Microsoft 365 Empresa Premium</p></li>
-                            <li><p>Office 365 Empresa es ahora Microsoft 365 Apps para negocios</p></li>
-                            <li><p>Office 365 ProPlus es ahora Microsoft 365 Apps para empresa</p></li>
+                            <li><p><b>Office 365 Empresa Essentials</b> es ahora <b>Microsoft 365 Empresa Basic</b>.</p></li>
+                            <li><p><b>Office 365 Empresa Premium</b> es ahora <b>Microsoft 365 Empresa Standard</b>.</p></li>
+                            <li><p><b>Microsoft 365 Empresa</b> es ahora <b>Microsoft 365 Empresa Premium</b>.</p></li>
+                            <li><p><b>Office 365 Empresa</b> es ahora <b>Microsoft 365 Apps para negocios</b>.</p></li>
+                            <li><p><b>Office 365 ProPlus</b> es ahora <b>Microsoft 365 Apps para empresa</b>.</p></li>
                         </ul>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">Más información</a></p>
                     </div>
