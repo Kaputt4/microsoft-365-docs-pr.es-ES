@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En Office 365, puede usar etiquetas de retención para implementar una programación de retención para su organización. Al utilizar el script y los archivos.csv proporcionados, podrá crear y publicar etiquetas de retención y directivas de etiquetas de retención de forma masiva utilizando PowerShell.
-ms.openlocfilehash: f14e08176a4d7f4531c79f4aa8aebadf2fe0b3b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e7b992b8464e5c505d048b5b945d154a770fd59c
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596287"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105982"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención de forma masiva con PowerShell
+
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 En Office 365, puede usar etiquetas de retención para implementar una programación de retención en su organización. Como administrador de registros o responsable de cumplimiento normativo, puede que tenga que crear y publicar cientos de etiquetas de retención. Puede hacerlo mediante la interfaz de usuario del Centro de seguridad y cumplimiento, pero crear etiquetas de retención de una en una es laborioso e ineficiente.
   
