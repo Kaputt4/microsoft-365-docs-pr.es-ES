@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 3bcaee41ab178ae79b1f2ef46871dadb107f3f5b
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: e41c71a1f8bc0175b179ecd760dac7098551bc91
+ms.sourcegitcommit: 6b7eecad7162c065af80721204fbabdd2e31e42b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929454"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43065646"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -74,7 +74,7 @@ Las etiquetas de retención son bloques de creación independientes y reutilizab
   
 ![Diagrama de etiquetas, directivas de etiquetas y ubicaciones](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Al publicar etiquetas de retención, estas se incluyen en una directiva de etiqueta de retención. Por favor, tenga en cuenta que los nombres de las etiquetas de retención son inmutables y no pueden editarse una vez que se han creado.
+1. Al publicar etiquetas de retención, estas se incluyen en una directiva de etiqueta de retención. Los nombres de las etiquetas de retención son inalterables, lo que significa que no se pueden modificar una vez creados.
 
 
 2. Se puede incluir una única etiqueta de retención en varias directivas de etiqueta de retención.
@@ -183,7 +183,7 @@ Si los usuarios finales asignarán la etiqueta de retención al contenido, puede
     
 - Grupos de Office 365 (tanto en el sitio de grupo como el buzón de grupo de Outlook en la Web)
     
-En las secciones siguientes, se explica cómo se mostrarán las etiquetas en diferentes aplicaciones para los usuarios de su organización.
+En las secciones siguientes, se explica cómo se mostrarán las etiquetas en diferentes aplicaciones para las personas de su organización.
   
 ### <a name="outlook-on-the-web"></a>Outlook en la Web
 
@@ -415,8 +415,20 @@ Para entender cómo se aplican a contenido distintas etiquetas con acciones de r
     
 Tenga en cuenta que los principios de retención funcionan como un flujo de desempate de arriba abajo: si las reglas aplicadas por todas las directivas o etiquetas son las mismas en un nivel, el flujo baja al siguiente nivel para determinar la precedencia de la regla que se aplica.
   
-Por último, una etiqueta o directiva de retención no puede eliminar de forma permanente ningún contenido si está en suspensión para eDiscovery. Cuando se levante la suspensión, el contenido volverá a estar disponible para el proceso de limpieza descrito anteriormente.
-  
+Por último, una etiqueta o directiva de retención no puede eliminar ningún contenido de forma permanente si está en suspensión para eDiscovery. Cuando se levante la suspensión, el contenido estará disponible para el período de limpieza descrito anteriormente.
+
+### <a name="precedence-for-auto-labeling-with-trainable-classifiers"></a>Precedencia para el etiquetado automático con los clasificadores que se pueden entrenar
+
+Todas las etiquetas de retención configuradas para los clasificadores que se pueden entrenar se evalúan de forma simultánea. Si un elemento es detectado por más de un clasificador que se puede entrenar, se usarán los siguientes criterios para determinar la etiqueta de retención que se aplicará:
+
+1. Las etiquetas de retención configuradas para solo retención o retención y, a continuación, eliminar; tienen mayor prioridad sobre las etiquetas de retención que están configuradas para solo eliminación.
+
+2. Para las etiquetas de retención configuradas para solo retención o retención y, a continuación, eliminar; tiene mayor prioridad la etiqueta de retención configurada para el período de retención más largo.
+
+3. Para las etiquetas de retención configuradas para solo eliminar, tiene mayor prioridad la etiqueta de retención configurada para el período más corto.
+
+4. Las etiquetas de retención con la misma acción y el mismo periodo provocan que se seleccione una etiqueta de retención no determinista.
+
 ## <a name="use-retention-labels-instead-of-these-features"></a>Usar etiquetas de retención en lugar de estas características
 
 Las etiquetas de retención se pueden publicar fácilmente para toda la organización, así como su contenido, en Office 365, incluidos Exchange, SharePoint, OneDrive y Grupos de Office 365. Si necesita clasificar contenido o administrar registros en cualquier lugar en Office 365, le recomendamos que use etiquetas de retención.
