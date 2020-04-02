@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.'
-ms.openlocfilehash: 26c34d40359d00b540b30e0f6e3ddf3878e80f9a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 23aa0e242464ebd450a0930bcda4274c026c7535
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634428"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105647"
 ---
 # <a name="overview-of-file-plan-manager"></a>Información general sobre el administrador del plan de archivos
+
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación. 
 
@@ -33,11 +35,7 @@ Para acceder al administrador del plan de archivos en el centro de seguridad y c
 
 ## <a name="accessing-file-plan-manager"></a>Acceder al administrador del plan de archivos
 
-Hay dos requisitos para obtener acceso al administrador del plan de archivos, son:
-
-- Una suscripción de Office 365 Enterprise E5
-
-- El usuario tiene asignado uno de los siguientes roles en el centro de seguridad y cumplimiento:
+Para acceder al administrador del plan de archivos, debe tener uno de los siguientes roles de administrador:
     
     - Administrador de retención
     
