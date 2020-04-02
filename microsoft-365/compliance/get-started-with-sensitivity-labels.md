@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de etiquetas de confidencialidad para ayudar a proteger los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 6707a61ae2fd9f7dddb7aa63927a53f1795b5127
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 4d3f2f84daf1415e7a5f48d66f1fb9d86c612d67
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634458"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105992"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
+
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Para obtener información sobre qué son las etiquetas de confidencialidad y cómo pueden ayudarle a proteger los datos de su organización, vea [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md).
 
@@ -45,6 +47,12 @@ Cuando esté listo para empezar a proteger los datos de la organización mediant
 Flujo básico para la implementación y aplicación de etiquetas de confidencialidad:
 
 ![Diagrama que muestra el flujo de trabajo de las etiquetas de confidencialidad](../media/Sensitivity-label-flow.png)
+
+## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Requisitos de suscripción y licencias para las etiquetas de confidencialidad
+
+Distintas suscripciones admiten diferentes etiquetas de confidencialidad y los requisitos de licencias para los usuarios dependen de las características que use.
+
+Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365 a partir del 1 de abril de 2020, vea la [Guía de licencias de Microsoft 365 para seguridad y cumplimiento normativo](https://aka.ms/ComplianceSD). Para las etiquetas de confidencialidad, vea la sección [Protección de la información](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) y la descarga de archivos PDF relacionada.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Permisos necesarios para crear y administrar etiquetas de confidencialidad
 
