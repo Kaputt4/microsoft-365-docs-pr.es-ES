@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Obtenga soporte técnico y de facturación llamando a los números de teléfono para su zona o región, enviando una solicitud de servicio en línea o visitando una tienda de Microsoft.
 feedback_system: None
-ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352951"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106065"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contactar con soporte técnico para productos empresariales: ayuda para administradores
 
@@ -95,7 +95,7 @@ El equipo de soporte de Office 365 de 21Vianet soluciona únicamente los problem
 
 ### <a name="community-and-self-service-support-options"></a>Comunidad y opciones de soporte de autoservicio
 
-El soporte de autoservicio está disponible para todos los planes de Office 365 ofrecidos por 21Vianet. Incluye vídeos y herramientas para la solución de problemas, vídeos y artículos de ayuda, además de foros y wikis de la [comunidad de Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Para ver más recursos de autoayuda, vea [Más información sobre Office 365 operado por 21Vianet](/services-in-china/services-in-china.md).
+El soporte de autoservicio está disponible para todos los planes de Office 365 ofrecidos por 21Vianet. Incluye vídeos y herramientas para la solución de problemas, vídeos y artículos de ayuda, además de foros y wikis de la [comunidad de Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Para ver más recursos de autoayuda, vea [Más información sobre Office 365 operado por 21Vianet](services-in-china/services-in-china.md).
 
 ### <a name="pre-sales-support"></a>Soporte para preventas
 

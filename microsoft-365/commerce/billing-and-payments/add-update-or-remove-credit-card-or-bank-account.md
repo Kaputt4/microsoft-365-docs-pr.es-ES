@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Obtenga información sobre cómo administrar los métodos de pago en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952011"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106053"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Agregar, actualizar o quitar los métodos de pago
 
@@ -234,7 +234,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
   
 4. Actualice la información de su tarjeta de crédito o cuenta bancaria (el nombre de la tarjeta de crédito o la cuenta bancaria, la dirección de facturación. número de teléfono o fecha de expiración) según sea necesario, seleccione **Enviar**.
 
-5. Aparece un mensaje de confirmación. Si no, consulte [Solución de problemas con las tarjetas de crédito y las cuentas bancarias](#troubleshooting-credit-cards-and-bank-accounts).
+5. Aparece un mensaje de confirmación. Si no es así, vea "solución de problemas de tarjetas de crédito y cuentas bancarias" más adelante en este artículo.
 
     ![El mensaje de confirmación: "el método de pago se actualizó correctamente".](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
@@ -262,7 +262,7 @@ Debe ser Administrador global o un Administrador de facturación para realizar l
   
 4. Actualice la información de su tarjeta de crédito o cuenta bancaria (el nombre de la tarjeta de crédito o la cuenta bancaria, la dirección de facturación. número de teléfono o fecha de expiración) según sea necesario, seleccione **Enviar**.
 
-5. Aparece un mensaje de confirmación. Si no, consulte [Solución de problemas con las tarjetas de crédito y las cuentas bancarias](#troubleshooting-credit-cards-and-bank-accounts).
+5. Aparece un mensaje de confirmación. Si no es así, vea "solución de problemas de tarjetas de crédito y cuentas bancarias" más adelante en este artículo.
 
     ![El mensaje de confirmación: "el método de pago se actualizó correctamente".](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 

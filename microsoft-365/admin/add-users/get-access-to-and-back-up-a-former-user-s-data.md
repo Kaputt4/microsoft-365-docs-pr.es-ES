@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Obtenga información sobre cómo preservar los archivos y los correos electrónicos de un empleado cuando la persona abandone la organización.
-ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2b608b51060e746d0b69fd887882b51735578496
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353201"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105764"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Obtener acceso y realizar una copia de seguridad de los datos de un antiguo usuario
 
@@ -102,11 +102,15 @@ Como administrador global, puede dar acceso al contenido en el OneDrive de un us
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración</a> como administrador global o administrador de SharePoint. 
 
+    Si recibe un mensaje que indica que no tiene permiso para obtener acceso al centro de administración, no tiene permisos de administrador en la organización.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a> como administrador global o administrador de SharePoint.
+
+    Si recibe un mensaje que indica que no tiene permiso para obtener acceso al centro de administración, no tiene permisos de administrador en la organización.
 
 ::: moniker-end
 
@@ -114,9 +118,9 @@ Como administrador global, puede dar acceso al contenido en el OneDrive de un us
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a> como administrador global o administrador de SharePoint.
 
-::: moniker-end
+    Si recibe un mensaje que indica que no tiene permiso para obtener acceso al centro de administración, no tiene permisos de administrador en la organización.
 
-   Si recibe un mensaje que indica que no tiene permiso para obtener acceso al centro de administración, no tiene permisos de administrador en la organización.
+::: moniker-end
 
 2. En el panel izquierdo, seleccione **centros** \> de administración **SharePoint**. (Es posible que deba seleccionar **Mostrar todo** para ver la lista de centros de administración).
 
@@ -181,6 +185,10 @@ Outlook comienza la exportación inmediatamente a menos que se cree un nuevo arc
     
 Vea cómo [exportar o hacer una copia de seguridad del correo electrónico, los contactos y el calendario en un archivo. pst de Outlook](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) en Outlook 2010. 
   
+  
+  > [!NOTE]
+  > De forma predeterminada, el correo electrónico está disponible sin conexión durante un período de 12 meses. Si es necesario, vea cómo [aumentar los datos disponibles sin conexión](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
+ 
 ## <a name="give-another-user-access-to-a-former-users-email"></a>Proporcionar a otro usuario acceso al correo electrónico de un usuario anterior 
 
 Para conceder acceso a los mensajes de correo electrónico, el calendario, las tareas y los contactos del antiguo empleado a otro empleado, importe la información a la bandeja de entrada de Outlook de otro empleado.
@@ -210,6 +218,9 @@ Para conceder acceso a los mensajes de correo electrónico, el calendario, las t
 8. Establezca las opciones para importar elementos. Por lo general, no es necesario cambiar la configuración predeterminada.
     
 9. Seleccione **Finalizar**.
+
+> [!NOTE]
+> Los pasos siguen siendo los mismos para obtener acceso a los datos de OneDrive y correo electrónico de un usuario existente.
     
 > [!TIP]
 > Si desea importar o restaurar sólo algunos elementos de un archivo de datos de Outlook (. pst), puede abrir el archivo de datos de Outlook. A continuación, en el panel de navegación, arrastre los elementos de las carpetas de archivos de datos de Outlook a las carpetas de Outlook existentes. 
@@ -224,4 +235,3 @@ Para conceder acceso a los mensajes de correo electrónico, el calendario, las t
   
 [Retención y eliminación de OneDrive](/onedrive/retention-and-deletion)
   
-
