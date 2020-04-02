@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 86a74051b4febbf469449a35cd14620f3e78932c
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 43c6f5db64c929fcdb8a9f64e9fc27d472d65ba8
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288615"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100904"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Características preliminares de Microsoft Threat Protection
 
@@ -43,12 +43,16 @@ Tendrá acceso a las próximas características en las que puede enviar comentar
 
 Active la configuración de la experiencia de vista previa para que sea una de las primeras y pruebe las características futuras.
 
-1. En el panel de navegación, seleccione **configuración** > de**las características de vista previa**.
+1. En el panel de navegación, seleccione **configuración**.
 
-2. Seleccione **activar las características de vista previa**. 
+2. Seleccione **Microsoft Threat Protection**.
 
-3. Seleccione **Guardar**.
+
+3. Opciones de **vista previa** > Active las**características de vista previa**. 
+
+3. Haga clic en **Guardar**.
 
 
 ## <a name="preview-features"></a>Versión preliminar de las características
 Esta sección se actualizará con una lista de las características que se encuentran en la versión preliminar a medida que estén disponibles para que las pruebe. 
+

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 32dc7e9a01211fcd0d1441c2434385ecd611d585
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556818"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097213"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -30,9 +30,9 @@ Si desea que los usuarios usen cualquiera de las herramientas relacionadas con l
   
 El grupo de roles principal relacionado con la exhibición de documentos electrónicos en el centro de seguridad & cumplimiento se llama **Administrador de exhibición**de documentos electrónicos. Hay dos subgrupos dentro de este grupo de roles. 
   
-- **administradores** de exhibición de documentos electrónicos: un administrador de exhibición de documentos electrónicos puede usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar ubicaciones de contenido en la organización y realizar diversas acciones relacionadas con la búsqueda, como los resultados de la búsqueda de la vista previa y la exportación. Los miembros también pueden crear y administrar casos de eDiscovery y casos avanzados de eDiscovery, agregar y quitar miembros de un caso, crear casos, ejecutar búsquedas asociadas a un caso y obtener acceso a datos de caso. los administradores de eDiscovery solo pueden acceder y administrar los casos que crean. No pueden acceder ni administrar los casos creados por otros administradores de exhibición de documentos electrónicos. 
+- **administradores** de exhibición de documentos electrónicos: un administrador de exhibición de documentos electrónicos puede usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar ubicaciones de contenido en la organización y realizar diversas acciones relacionadas con la búsqueda, como los resultados de la búsqueda de la vista previa y la exportación. Los miembros también pueden crear y administrar casos de eDiscovery y casos avanzados de eDiscovery, agregar y quitar miembros de un caso, crear casos, ejecutar búsquedas asociadas a un caso y obtener acceso a datos de caso. los administradores de eDiscovery solo pueden acceder y administrar los casos que crean. No pueden acceder ni administrar los casos creados por otros administradores de exhibición de documentos electrónicos.
     
-- **administradores de exhibición** de documentos electrónicos: un administrador de exhibición de documentos electrónicos es miembro del grupo de roles eDiscovery Manager y puede realizar las mismas tareas relacionadas con la búsqueda de contenido y la administración de casos que puede realizar un administrador de exhibición de documentos electrónicos. Además, un administrador de exhibición de documentos electrónicos puede: 
+- **administradores de exhibición** de documentos electrónicos: un administrador de exhibición de documentos electrónicos es miembro del grupo de roles eDiscovery Manager y puede realizar las mismas tareas relacionadas con la búsqueda de contenido y la administración de casos que puede realizar un administrador de exhibición de documentos electrónicos. Además, un administrador de exhibición de documentos electrónicos puede:
     
   - Obtenga acceso a todos los casos que se enumeran en las páginas **eDiscovery** y **eDiscovery avanzado** del centro de seguridad & cumplimiento. 
 
@@ -40,10 +40,10 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
     
   - Administrar cualquier caso de exhibición de documentos electrónicos después de que se agreguen como miembro del caso.
   
-  Consulte la sección [More Information](#more-information) para ver los motivos por los que puede desear que los administradores de eDiscovery de su organización. 
+  Consulte la sección [More Information](#more-information) para ver los motivos por los que puede desear que los administradores de eDiscovery de su organización.
 
 > [!NOTE]
-> Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 o Microsoft E5. Como alternativa, a los usuarios con una licencia de Office 365 E1 o E3 se les puede asignar una licencia de complemento de cumplimiento avanzado; los usuarios con una licencia de Microsoft 365 E1 o E3 pueden tener asignada una licencia de complemento de cumplimiento E5. Los administradores y los responsables de cumplimiento que se asignan a los casos y usan la exhibición avanzada de documentos electrónicos para analizar los datos no necesitan una licencia E5.  
+> Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5 o Microsoft E5. Como alternativa, a los usuarios con una licencia E1 o E3 se les puede asignar una licencia de complemento E5. Los administradores, los responsables de cumplimiento normativo o el personal jurídico asignado a los casos como miembros y usan la exhibición avanzada de documentos electrónicos para recopilar, ver y analizar datos no necesitan una licencia E5. Para obtener más información acerca de las licencias, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://aka.ms/complianceSD).
   
 ## <a name="before-you-begin"></a>Antes de empezar
 

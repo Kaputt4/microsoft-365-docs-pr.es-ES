@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de retención que conserva el contenido de Microsoft 365, puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634978"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105667"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
+
+>*[Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](https://aka.ms/ComplianceSD).*
 
 Cuando el contenido alcanza el final de su período de retención, existen varios motivos por los que puede que desee revisar el contenido para decidir si se puede eliminar de forma segura ("eliminado"). Por ejemplo, es posible que deba:
   
@@ -51,9 +53,6 @@ Cuando se crea una etiqueta de retención en el centro de cumplimiento de Micros
     
 - Los revisores pueden ver las disposiciones pendientes o completadas, y exportar dicha lista como un archivo. csv.
 
-> [!NOTE]
-> Las revisiones de disposición requieren una suscripción a Office 365 Enterprise E5.
-  
 Una revisión de disposición puede incluir contenido en buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Office 365. El contenido que espera una revisión de disposición en esas ubicaciones se elimina solo después de que un revisor elige eliminar el contenido de forma permanente.
   
 ![Página disposiciones del centro de seguridad y cumplimiento](../media/Retention-Dispositions-v2-page.png)

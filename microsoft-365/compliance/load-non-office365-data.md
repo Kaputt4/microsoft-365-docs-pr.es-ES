@@ -16,27 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4db0b40d485c4c1107bdcb0d49616cadb15b1915
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7d2f4fe685e17690b76124517468e0eceec8b414
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072193"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097223"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>Cargar datos que no son de Office 365 en pruebas
 
 No todos los documentos que puede que deba analizar en una investigación de datos se ubicarán en Office 365. Con la característica de importación de contenido no de Office 365, puede cargar documentos que no vivan en Office 365 en pruebas para que se puedan analizar en una investigación de datos.
 
->[!Note]
->La investigación de datos requiere un Office 365 E3 con el complemento Advanced Compliance o una suscripción a e5 para su organización. Si no tiene ese plan y desea probar la exhibición avanzada de documentos electrónicos, puede registrarse para obtener una versión de prueba de Office 365 Enterprise E5.
-
 ## <a name="before-you-begin"></a>Antes de empezar
 
 El uso de la característica cargar no de Office 365 tal y como se describe en este procedimiento requiere que tenga:
 
-- Una suscripción a Office 365 E3 con Advanced Compliance Add-on o E5.
+- Una suscripción A Microsoft 365 o A Office 365 E5.
 
-- Todos los custodios cuyo contenido que no pertenezca a Office 365 se cargarán deben tener E3 con las licencias del complemento de cumplimiento avanzado o E5.
+- Todas las personas de interés cuyo contenido no de Office 365 se cargará deben tener la licencia del complemento E5 o E5 adecuada.
 
 - Un caso de eDiscovery existente.
 
@@ -48,7 +45,7 @@ El uso de la característica cargar no de Office 365 tal y como se describe en e
 
 ## <a name="upload-non-office-365-content-in-to-a-data-investigation"></a>Cargar contenido no de Office 365 en una investigación de datos
 
-1. Open * * * * investigaciones de datos * *, a continuación, la investigación en la que se cargarán los datos que no son de Office 365.  Haga clic en la pestaña **evidencia** y, a continuación, seleccione el conjunto de evidencia en el que desea cargar los datos que no son de Office 365.  Si aún no ha creado un conjunto de evidencias, puede hacerlo ahora.  Por último, haga clic en **administrar pruebas** y, a continuación, en **cargas** en la sección de datos que no son de Office 365
+1. Abra **investigaciones de datos** y vaya a la investigación en la que se cargarán los datos que no son de Office 365.  Haga clic en la pestaña **evidencia** y, a continuación, seleccione el conjunto de evidencia en el que desea cargar los datos que no son de Office 365.  Si aún no ha creado un conjunto de evidencias, puede hacerlo ahora.  Por último, haga clic en **administrar pruebas** y, a continuación, en **cargas** en la sección de datos que no son de Office 365
 
 2. Haga clic en el botón **cargar archivos** para iniciar el Asistente para importación de datos no perteneciente a Office 365.
 

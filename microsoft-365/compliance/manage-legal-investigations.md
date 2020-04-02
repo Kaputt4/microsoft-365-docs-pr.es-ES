@@ -1,5 +1,5 @@
 ---
-title: Administración de investigaciones legales en Office 365
+title: Administración de investigaciones legales en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Use casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento en Office 365 para administrar la investigación legal de su organización. Si tiene una suscripción a E5, puede analizar más datos de caso con las capacidades de análisis de texto, aprendizaje de la máquina y Codificación predictiva de eDiscovery avanzado.
-ms.openlocfilehash: f3d51fbd0df6d4bf4c88f5efef53a3c7f11e190c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Use casos de eDiscovery en el centro de cumplimiento de Microsoft 365 para administrar la investigación legal de su organización. Si tiene una suscripción a E5, puede analizar más datos de caso con las capacidades de análisis de texto, aprendizaje de la máquina y Codificación predictiva de eDiscovery avanzado.
+ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600537"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097203"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>Administración de investigaciones legales en Office 365
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
 
 Las organizaciones tienen muchas razones para responder a un caso legal en el que participan determinados ejecutivos u otros empleados de la organización. Esto puede implicar una rápida búsqueda y retención de información específica de investigación en el correo electrónico, los documentos, las conversaciones de mensajería instantánea y otras ubicaciones de contenido que usan los usuarios en sus tareas de trabajo cotidianas. Puede realizar estas y muchas otras actividades similares usando las herramientas de caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento.
   
@@ -52,9 +52,9 @@ Al igual que en la sección anterior que enumeraba scripts para escenarios de b�
 
 La solución Advanced eDiscovery de Microsoft 365 se basa en las capacidades existentes de eDiscovery y de análisis en Office 365. Esta nueva solución, denominada *exhibición avanzada*de documentos electrónicos, proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. También permite a los equipos jurídicos administrar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores involucrados en un caso.
 
-EDiscovery avanzado requiere una suscripción a e5 para la organización de Office 365 o Microsoft 365. Como alternativa, los usuarios con una licencia E3 requieren la suscripción complementaria de cumplimiento avanzado para que pueda administrarlos como custodios en un caso de eDiscovery avanzado.
+EDiscovery avanzado requiere una suscripción a e5 para la organización de Microsoft 365 u Office 365. Para obtener más información sobre las licencias, vea Introducción [a la exhibición avanzada de](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)documentos electrónicos.
 
-A continuación, se presenta una introducción rápida al flujo de trabajo integrado en eDiscovery avanzado. Para más información, consulte[ información sobre la solución de eDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
+A continuación, se presenta una introducción rápida al flujo de trabajo integrado en eDiscovery avanzado. Para obtener más información, consulte [explorar el flujo de trabajo de EDiscovery avanzado](get-started-with-advanced-ediscovery.md#explore-the-advanced-ediscovery-workflow).
 
 - [Crear un caso](create-new-ediscovery-case.md) para empezar
 

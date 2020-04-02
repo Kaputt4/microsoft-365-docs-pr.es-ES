@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029896"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100883"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurar el cumplimiento de la comunicación en Microsoft 365
 
@@ -34,11 +34,23 @@ Use las directivas de cumplimiento de comunicaciones para capturar las comunicac
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Antes de empezar con el cumplimiento de la comunicación, debe confirmar la suscripción a Microsoft 365. Los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o estar incluidas en una suscripción a Office 365 Enterprise E5 o estar incluidas en un Microsoft suscripción a 365 E5.
+Antes de empezar con el cumplimiento de la comunicación, debe confirmar la [suscripción de Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) y los complementos. Para acceder y usar el cumplimiento de las comunicaciones, su organización debe tener una de las siguientes suscripciones o complementos:
+
+- Suscripción a Microsoft 365 E5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 E3 + complemento de cumplimiento de Microsoft 365 E5
+- Suscripción a Microsoft 365 E3 + complemento Microsoft 365 E5 del servicio de administración de riesgos de Insider
+- Suscripción a Microsoft 365 A5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 a3 + complemento de cumplimiento A5 de Microsoft 365
+- Suscripción a Microsoft 365 a3 + complemento de administración de riesgos de la A5 del Insider de Microsoft 365
+- Suscripción a Office 365 Enterprise E5 (versión de pago o de prueba)
+- Office 365 Enterprise E3 subscription + el complemento Office 365 avanzado cumplimiento
+
+Los usuarios incluidos en las directivas de cumplimiento de la comunicación deben tener asignada una de las licencias anteriores.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance ya no se vende como una suscripción independiente. Cuando expiren las suscripciones actuales, los clientes deben pasar a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o más.
 
 Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de Insider, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a su suscripción existente de Office 365 o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
-  
-Siga estos pasos para configurar y usar el cumplimiento de la comunicación en su organización de Microsoft 365:
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Paso 1 (obligatorio): habilitar permisos para el cumplimiento de la comunicación
 

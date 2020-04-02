@@ -12,30 +12,32 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4b8bd0f8d540434410d9ebc2365789a669f455e1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634778"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097199"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos de Insider
 
-Use directivas de administración de riesgos de Insider para identificar actividades arriesgadas y las herramientas de administración para emprender acciones en las alertas de riesgos de la organización. Complete los siguientes pasos para configurar los requisitos previos y configurar una directiva de administración de riesgos de Insider.
+Use las directivas de administración de riesgos internos para identificar las actividades de riesgo y las herramientas de administración para tomar medidas en las alertas de riesgos de su organización. Complete los siguientes pasos para configurar los requisitos previos y configurar una directiva de administración de riesgos de Insider.
 
 >[!IMPORTANT]
->La solución de administración de riesgos de Insider de Microsoft 365 proporciona una opción de nivel de inquilino para ayudar a los clientes a facilitar el control interno en el nivel de usuario. Los administradores de nivel de inquilino pueden configurar permisos para proporcionar acceso a esta solución a los miembros de la organización y configurar conectores de datos en el centro de cumplimiento de Microsoft 365 para importar los datos relevantes para admitir la identificación de nivel de usuario de posibles actividad arriesgada. Los clientes reconocen la información relacionada con el comportamiento, el personaje o el rendimiento de los usuarios individuales relacionados con el empleo que el administrador puede calcular y poner a disposición de otros usuarios de la organización.
+>La solución de administración de riesgos de Insider de Microsoft 365 proporciona una opción de nivel de inquilino para ayudar a los clientes a facilitar el control interno en el nivel de usuario. Los administradores de nivel de inquilino pueden configurar permisos para proporcionar acceso a esta solución a los miembros de la organización y configurar conectores de datos en el centro de cumplimiento de Microsoft 365 para importar los datos relevantes para admitir la identificación de nivel de usuario de actividad potencialmente arriesgada. Los clientes reconocen la información relacionada con el comportamiento, el personaje o el rendimiento de los usuarios individuales relacionados con el empleo que el administrador puede calcular y poner a disposición de otros usuarios de la organización.
 
 Para obtener más información sobre cómo las directivas de riesgos de Insider pueden ayudarle a administrar el riesgo en su organización, consulte [Administración de riesgos de Insider en Microsoft 365](insider-risk-management.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Antes de empezar con la administración de riesgos de Insider, debe confirmar la [suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans). Para acceder a la administración de riesgos de Insider y usarla, su organización debe tener una de las siguientes suscripciones:
+Antes de empezar con la administración de riesgos de Insider, debe confirmar la [suscripción de Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) y los complementos. Para acceder y usar la administración de riesgos de Insider, su organización debe tener una de las siguientes suscripciones o complementos:
 
 - Suscripción a Microsoft 365 E5 (versión de pago o de prueba)
-- Suscripción a Microsoft 365 Enterprise E3 con el [complemento de cumplimiento de Microsoft E5](https://signup.microsoft.com/signup/?offerid=57806d24-4357-4eff-b0a3-4054ebdf2abe&DL=INFORMATION_PROTECTION_COMPLIANCE&ali=1)
+- Suscripción a Microsoft 365 E3 + complemento de cumplimiento de Microsoft 365 E5
+- Suscripción a Microsoft 365 A5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 a3 + complemento de cumplimiento A5 de Microsoft 365
 
-Los usuarios incluidos en las directivas de administración de riesgos de internación deben tener una licencia de cumplimiento de Microsoft 365 E5 o estar incluidas en una suscripción a Microsoft 365 E5.
+Los usuarios incluidos en las directivas de administración de riesgos de internación deben tener asignada una de las licencias anteriores.
 
 Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de Insider, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a su suscripción existente de Office 365 o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
 
@@ -56,7 +58,7 @@ En función de la estructura del equipo de administración del cumplimiento, tie
 
 Complete los siguientes pasos para agregar usuarios a un grupo de roles de administración de riesgos de Insider:
 
-1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
+1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Microsoft 365. "" "" "" ""
 
 2. En el centro de seguridad y cumplimiento de Microsoft Office 365, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
 
@@ -87,17 +89,17 @@ La administración de riesgos de Insider admite la importación de datos de usua
 Consulte el tema sobre [Cómo configurar un conector para importar datos de recursos humanos](import-hr-data.md) para obtener una guía paso a paso sobre cómo configurar el conector de Microsoft 365 para la organización. Una vez que haya configurado el conector de recursos humanos, vuelva a estos pasos de configuración.
 
 >[!IMPORTANT]
->Si configura una Directiva mediante la plantilla de *robo de datos de empleados* , tendrá que configurar el conector de recursos humanos para que use las características de detección de señal completa de la plantilla de directiva. Si configura más de un conector de recursos humanos para su organización, la administración de riesgos de Insider extrae automáticamente los indicadores de todos los conectores de recursos humanos.
+>Si configura un p'licy mediante la plantilla de *robo de datos de emplo'ee* , tendrá que configurar el conector de recursos humanos para que use las características de detección de señal completa de la plantilla de directiva. Si configura más de un conector de recursos humanos para su organización, la administración de riesgos de Insider extrae automáticamente los indicadores de todos los conectores de recursos humanos.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurar directivas de prevención de pérdida de datos (DLP)
 
-La administración de riesgos de Insider admite el uso de directivas de DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a partes no deseadas. Al configurar una directiva de administración de riesgos de Insiders con la plantilla de *fugas de datos* , tiene que asignar una directiva de DLP específica a la Directiva. Esta directiva ayuda a impulsar los indicadores de alerta de información confidencial es una parte importante de la configuración de la cobertura de administración de riesgos completa en la organización.
+El riesgo para Insider man'gement admite el uso de directivas DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a partes no deseadas. Al configurar una directiva de administración de riesgos de Insiders con la plantilla de *fugas de datos* , tiene que asignar una directiva de DLP específica a la Directiva. Esta directiva ayuda a impulsar los indicadores de alerta de información confidencial es una parte importante de la configuración de la cobertura de administración de riesgos completa en la organización.
 
-Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización. Una vez que haya configurado una directiva de DLP, vuelva a estos pasos de configuración.
+Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización. Una vez que haya configurado una directiva de DLP, vuelva a esta configuración "pasos de la ración". "" "" "" "" "" ""
 
 >[!IMPORTANT]
 >Si configura una Directiva mediante la plantilla de *fugas de datos* , tendrá que configurar al menos una directiva DLP para usar las características de detección de señal completa de la plantilla de directiva. Si configura más de una directiva de DLP para su organización, deberá asignar una directiva de administración de riesgos de Insider por directiva de DLP.
-
+""""""""
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Paso 4 (obligatorio): configurar las opciones de riesgo de Insider
 
 La configuración de los [riesgos de Insider](insider-risk-management-policies.md#policy-settings) se aplica a todas las directivas de administración de riesgos de Insider, independientemente de la plantilla que elija al crear una directiva. La configuración se configura con el control de **configuración de riesgos de Insider** ubicado en la parte superior de todas las pestañas de administración de riesgos de Insider. Esta configuración controla la privacidad, los indicadores, las ventanas de supervisión y las detecciones inteligentes.

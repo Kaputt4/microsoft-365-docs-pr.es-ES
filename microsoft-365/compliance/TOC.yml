@@ -18,7 +18,7 @@
       href: plan-for-security-and-compliance.md
 - name: Administrar los riesgos de Insider
   items:
-    - name: Administración de riesgos de Insider
+    - name: Administración de riesgos internos
       items:
         - name: Obtener información sobre la administración de riesgos de Insider
           href: insider-risk-management.md
@@ -36,7 +36,7 @@
           href: insider-risk-management-users.md
         - name: Crear plantillas de aviso de riesgo de Insider
           href: insider-risk-management-notices.md
-    - name: Cumplimiento con la comunidad
+    - name: Cumplimiento de las comunicaciones
       items:
         - name: Obtener información sobre el cumplimiento de la comunicación
           href: communication-compliance.md
@@ -495,14 +495,14 @@
               href: manage-load-sets-in-advanced-ediscovery.md
         - name: Revisar los datos de casos
           items:
+            - name: Usar el panel de Review set (vista previa)
+              href: advanced-ediscovery-dashboard.md
             - name: Ver documentos de un conjunto de revisión
               href: view-documents-in-review-set.md
             - name: Consultar los datos de un conjunto de revisión
               href: review-set-search.md
             - name: Etiquetar documentos en un conjunto de revisión
               href: tagging-documents.md
-            - name: Usar el panel de Review set (vista previa)
-              href: advanced-ediscovery-dashboard.md
         - name: Analizar datos de casos
           href: analyzing-data-in-review-set.md
           items:

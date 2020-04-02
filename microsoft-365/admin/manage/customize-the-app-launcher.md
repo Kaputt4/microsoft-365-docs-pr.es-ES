@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Cree vínculos rápidos a su correo electrónico, documentos, aplicaciones, sitios de SharePoint, sitios externos y otros recursos agregando mosaicos personalizados al iniciador de aplicaciones. '
-ms.openlocfilehash: 65c8da7aa0cdb68f4bf32a52b21140413a38a69a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e52bad5cdd1809e8aa0d97c681b69daa5143d3fd
+ms.sourcegitcommit: 4b73f070747a66874c03fdf670ffdf16f736585a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361985"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43103080"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
@@ -69,13 +69,13 @@ El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. En el centro de administración, vaya a la página **configuración** > del perfil de la<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">organización</a> .
+1. En el centro de administración, vaya a **la** > **Settings** > ficha Configuración de configuración de<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">Perfil de organización</a> .
     
 2. En la página Perfil de la **organización** , junto a **Agregar iconos personalizados para la organización**, seleccione **Editar**.
 
 3. Actualice el valor de los campos **Nombre del icono**, **Dirección URL**, **Descripción** o **Dirección URL de la imagen** para el icono personalizado (consulte la [Agregar un icono personalizado en el iniciador de aplicaciones](#add-a-custom-tile-to-the-app-launcher)).
     
-4. Seleccione **** \> **cerrar**actualización. 
+4. Seleccione **Update** \> **cerrar**actualización. 
     
 Para eliminar un icono personalizado, en la ventana **mosaicos personalizados** , seleccione el icono, seleccione **quitar** > **eliminación**de mosaico. 
   

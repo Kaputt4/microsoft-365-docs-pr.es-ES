@@ -16,16 +16,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: El cifrado de mensajes avanzado en Office 365 ayuda a las organizaciones a cumplir sus obligaciones de cumplimiento al permitir que los administradores hagan incluso más cosas con los mensajes protegidos.
-ms.openlocfilehash: 99dacc928c8549157ff0d9d1d9a7c07fc33c2600
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: 3b7f4d595b8c3592530b107dd7f71aeb8d0dc57e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610608"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106178"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Cifrado avanzado de mensajes de Office 365
 
-Office 365 Advanced Message Encryption se incluye en [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precio de personal sin ánimo de lucro), Office 365 Enterprise E5 (precio de personal sin ánimo de lucro) y Office 365 Education A5. Si su organización tiene una suscripción que no incluye el cifrado avanzado de mensajes de Office 365, puede adquirirlo con el complemento de SKU de cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precio del personal sin ánimo de lucro) o el Office 365 Advanced Complemento de SKU de cumplimiento para Microsoft 365 E3, Microsoft 365 E3 (precio del personal sin ánimo de lucro) o SKU de Office 365.
+Office 365 Advanced Message Encryption se incluye en [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precio de personal sin ánimo de lucro), Office 365 Enterprise E5 (precio de personal sin ánimo de lucro) y Office 365 Education A5. Si su organización tiene una suscripción que no incluye el cifrado avanzado de mensajes de Office 365, puede comprarlo con el complemento de SKU de cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precio del personal sin ánimo de lucro), o el complemento de SKU de Office 365 Advanced Compliance para Microsoft 365 E3, Microsoft 365 E3 (precios para empleados sin ánimo de lucro), SKU de Office 365 o el complemento de protección de información y de administración de la información de Microsoft 365 E5/A5 para Microsoft 365 a3/E3.
 
 El cifrado de mensajes avanzado en Office 365 ayuda a los clientes a cumplir las obligaciones de cumplimiento que necesitan controles más flexibles sobre los destinatarios externos y su acceso a los correos electrónicos cifrados. Con el cifrado de mensajes avanzado en Office 365, puede controlar los mensajes de correo electrónico confidenciales que se comparten fuera de la organización con directivas automáticas. Estas directivas se configuran para identificar los tipos de información confidencial, como los identificadores de PII, financieros o de mantenimiento, o se pueden usar palabras clave para mejorar la protección. Una vez que haya configurado las directivas, empareja las directivas con plantillas de correo electrónico personalizadas y, a continuación, agrega una fecha de expiración para el control adicional de los correos electrónicos que se ajustan a la Directiva. Además, los administradores pueden controlar más los correos electrónicos cifrados a los que se accede externamente a través de un portal web seguro al revocar el acceso al correo en cualquier momento.
 

@@ -16,25 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importar datos que no son de Office 365 a un conjunto de revisión en un caso de exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 816519fcaa8dc5172dbb5c369a3ec191585d3647
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072217"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097233"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Cargar datos que no son de Office 365 a un conjunto de revisión
 
 No todos los documentos que debe analizar en la exhibición avanzada de documentos electrónicos se encuentran en Office 365. Con la característica de importación de datos no de Office 365 en eDiscovery avanzado, puede cargar documentos que no se encuentran en Office 365 a un conjunto de revisión. En este artículo se muestra cómo llevar los documentos que no son de Office 365 a eDiscovery avanzado para su análisis.
 
->[!Note]
->EDiscovery avanzado requiere una suscripción a Microsoft 365 o a Office 365 E5 para su organización o una suscripción a E3 con la suscripción de complemento de cumplimiento avanzado. Si no tiene ese plan y desea probar la exhibición avanzada de documentos electrónicos, puede registrarse para obtener una versión de prueba de Office 365 Enterprise E5.
-
 ## <a name="before-you-begin"></a>Antes de empezar
 
 El uso de la característica de carga que no es de Office 365 que se describe en este artículo requiere lo siguiente:
 
-- Todos los custodios que desee asociar a contenido que no pertenece a Office 365 deben tener asignada una licencia E5 o una licencia E3 con una licencia de complemento de cumplimiento avanzada.
+- Todos los custodios que desee asociar a contenido que no pertenece a Office 365 deben tener asignada la licencia correspondiente. Para obtener más información, vea Introducción [a la exhibición avanzada de](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)documentos electrónicos.
 
 - Un caso de exhibición avanzada de documentos electrónicos existente.
 
@@ -61,7 +58,7 @@ El uso de la característica de carga que no es de Office 365 que se describe en
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Cargar contenido no de Office 365 en eDiscovery avanzado
 
-1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, abra eDiscovery avanzado y, a continuación, el caso en el que se cargarán los datos que no son de Office 365.  
+1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, abra eDiscovery avanzado y vaya al caso de que se carguen los datos que no son de Office 365.  
 
 2. Haga clic en **revisar conjuntos**y, a continuación, seleccione el conjunto de revisiones para cargar los datos que no son de Office 365.  Si no tiene un conjunto de revisión, puede crear uno. 
  
