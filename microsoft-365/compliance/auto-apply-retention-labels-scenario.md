@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Este escenario de solución muestra cómo administrar el ciclo de vida de los documentos relacionados con el producto y almacenados en SharePoint Online mediante las etiquetas de retención de Office 365. Esto se lleva a cabo con el uso de metadatos del documento para clasificar el contenido y, en concreto, al aplicar automáticamente las etiquetas de retención de Office 365 y configurar la retención basada en eventos.
-ms.openlocfilehash: aa73feecbfaa830b2297a5c64f653c4da4d4b325
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079587"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106042"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Administración del ciclo de vida de documentos de SharePoint con etiquetas de retención
+
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 En este artículo se describe cómo administrar el ciclo de vida de los documentos relacionados con el producto que se almacenan en SharePoint Online mediante las etiquetas de retención de Office 365 y, específicamente, con la aplicación automática de etiquetas y la configuración de la retención basada en eventos. La función de aplicación automática aprovecha la clasificación de documentos por el uso de los metadatos de SharePoint. El escenario de este artículo se basa en documentos relacionados con el producto, pero los mismos conceptos pueden usarse en otros escenarios. Por ejemplo, en la industria del petróleo y gas, podría administrar el ciclo de vida de los documentos relacionados con los activos físicos, como plataformas petrolíferas, registros de pozos y licencias de producción. En la industria de servicios financieros, puede administrar documentos relacionados con cuentas bancarias, hipotecas y contratos de seguros. En el sector público, puede administrar documentos relacionados con permisos de construcción o formularios fiscales.
 

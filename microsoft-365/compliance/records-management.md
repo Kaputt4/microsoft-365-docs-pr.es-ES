@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la administración de registros de Microsoft 365, puede aplicar las programaciones de retención específicas de su organización en un plan de archivos para administrar la retención, la declaración de registros y la eliminación para dar soporte al ciclo de vida completo del contenido.
-ms.openlocfilehash: dcc3e5666bcd438a046d535cf9fce88910b85ad7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e74c7d9e5f01b49805fccdfac2c719835354b97a
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597657"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106086"
 ---
 # <a name="records-management-in-microsoft-365"></a>Administración de registros en Microsoft 365
+
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Las organizaciones de todo tipo requieren una solución de administración de registros para administrar los registros reglamentarios, legales y críticos para el negocio en sus datos corporativos. La administración de registros de Microsoft 365 ayuda a las organizaciones a administrar sus obligaciones legales, ofrece la posibilidad de demostrar el cumplimiento de las normativas y aumenta la eficiencia con la eliminación regular de elementos que ya no es necesario retener, que no son de gran valor o que ya no son necesarios para fines empresariales.
 

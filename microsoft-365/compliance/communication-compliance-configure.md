@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
-ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
+ms.openlocfilehash: 31444d677e7cd775f5364796c6821cb82b6dc654
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43100883"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113577"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurar el cumplimiento de la comunicación en Microsoft 365
 
@@ -42,8 +42,11 @@ Antes de empezar con el cumplimiento de la comunicación, debe confirmar la [sus
 - Suscripción a Microsoft 365 A5 (versión de pago o de prueba)
 - Suscripción a Microsoft 365 a3 + complemento de cumplimiento A5 de Microsoft 365
 - Suscripción a Microsoft 365 a3 + complemento de administración de riesgos de la A5 del Insider de Microsoft 365
+- Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 G5 + complemento de cumplimiento de Microsoft 365 G5
+- Suscripción a Microsoft 365 G5 + complemento de administración de riesgos de Insider de Microsoft 365 G5
 - Suscripción a Office 365 Enterprise E5 (versión de pago o de prueba)
-- Office 365 Enterprise E3 subscription + el complemento Office 365 avanzado cumplimiento
+- Office 365 Enterprise E3 subscription + el complemento Office 365 Advanced Compliance (ya no está disponible para las nuevas suscripciones, vea note)
 
 Los usuarios incluidos en las directivas de cumplimiento de la comunicación deben tener asignada una de las licencias anteriores.
 

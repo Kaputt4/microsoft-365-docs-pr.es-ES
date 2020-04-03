@@ -17,19 +17,36 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información acerca de la configuración de la administración del acceso con privilegios.
-ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322536"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115996"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Introducción a la administración de acceso privilegiada
 
->[!IMPORTANT]
->En este tema se tratan las instrucciones de implementación y configuración de las características disponibles actualmente en Office 365 E5 y las SKU de cumplimiento avanzado.
+Este tema le guiará a través de la habilitación y configuración de la administración del acceso con privilegios en su organización de Office 365. Puede usar tanto el centro de administración de Microsoft 365 como PowerShell de administración de Exchange para administrar y usar el acceso con privilegios.
 
-Este tema le guiará a través de la habilitación y configuración de la administración del acceso con privilegios en su organización de Office 365. Puede usar tanto el centro de administración de Microsoft 365 como PowerShell de administración de Exchange para administrar y usar el acceso con privilegios. 
+## <a name="before-you-begin"></a>Antes de empezar
+
+Antes de empezar con la administración de acceso con privilegios, debe confirmar la [suscripción de Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) y los complementos. Para acceder a la administración del acceso con privilegios y usarla, su organización debe tener una de las siguientes suscripciones o complementos:
+
+- Suscripción a Microsoft 365 E5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 E3 (o suscripción de Office 365 E3 + suscripción Enterprise Mobility y Security E3) + el complemento de cumplimiento de Microsoft 365 E5
+- Cualquier suscripción a Microsoft 365, Office 365, Exchange, SharePoint o OneDrive para la empresa + el complemento de administración de riesgos de Insider de Microsoft 365 E5  
+- Suscripción a Microsoft 365 A5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 a3 (o suscripción de Office 365 a3 + suscripción de seguridad y movilidad empresarial a3) + el complemento de cumplimiento de Microsoft A5
+- Cualquier suscripción a Microsoft 365, Office 365, Exchange, SharePoint o OneDrive para la educación + el complemento de administración de riesgos de Insider de Microsoft 365 A5
+- Suscripción a Office 365 Enterprise E5 (versión de pago o de prueba)
+- Office 365 Enterprise E3 subscription + el complemento Office 365 Advanced Compliance (ya no está disponible para las nuevas suscripciones, vea note)
+
+Los usuarios que envían y responden a solicitudes de administración de acceso privilegiadas deben tener asignada una de las licencias anteriores.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance ya no se vende como una suscripción independiente. Cuando expiren las suscripciones actuales, los clientes deben pasar a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o más.
+
+Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea intentar la administración de acceso privilegiada, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a su suscripción existente de Office 365 o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Habilitación y configuración de la administración del acceso con privilegios
 
@@ -103,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 ```
 
 >[!NOTE]
->La característica cuentas del sistema está disponible para garantizar que determinadas automatización de las organizaciones puedan funcionar sin dependencia en el acceso con privilegios, pero se recomienda que esas exclusiones sean excepcionales y que se puedan aprobar y auditar. periódicamente.
+>La característica cuentas del sistema está disponible para garantizar que determinadas automatización de las organizaciones puedan funcionar sin dependencia en el acceso con privilegios, pero se recomienda que dichas exclusiones sean excepcionales y que las permitidas se puedan aprobar y auditar con regularidad.
 
 <a name="step3"> </a>
 

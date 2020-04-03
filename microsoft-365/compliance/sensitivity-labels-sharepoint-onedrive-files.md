@@ -17,18 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: e6e13ef14ed9ed3e60f2918df0c25c0601d0225e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d0496a194cc734304f8ba6f09e6497c8d4f233bc
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106106"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126027"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)
 
->*[Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Antes de esta vista previa, al aplicar las etiquetas de confidencialidad que incluían cifrado a los archivos de Office almacenados en SharePoint y OneDrive, el servicio no podía procesar el contenido de estos archivos. La coautoría, la exhibición de documentos electrónicos, la prevención de pérdida de datos, la búsqueda, Delve y otras características de colaboración no funcionarán en estas circunstancias. Esta vista previa habilita estas características para los archivos nuevos y modificados que tienen una etiqueta de sensibilidad aplicada que incluye cifrado con una clave basada en la nube:
+Antes de esta vista previa, no se pueden aplicar las [etiquetas de confidencialidad](sensitivity-labels.md) en Office en la Web. No se ha podido ver la opción de **sensibilidad** en la cinta o el nombre de etiqueta aplicado en la barra de estado. Además, si usó aplicaciones de escritorio para etiquetar los archivos y guardarlos en SharePoint o en Onedrive, el servicio no podrá procesar el contenido de estos archivos si la etiqueta aplicó el cifrado. La coautoría, la exhibición de documentos electrónicos, la prevención de pérdida de datos, la búsqueda, Delve y otras características de colaboración no funcionarán en estas circunstancias. 
+
+Esta vista previa habilita todas estas funciones. Además de mostrar las etiquetas de confidencialidad a los usuarios, para los archivos nuevos y modificados que tengan una etiqueta de sensibilidad aplicada que incluya cifrado con una clave basada en la nube:
 
 - SharePoint reconoce las etiquetas de confidencialidad que se aplican a los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive: mientras el archivo está almacenado en SharePoint, se quita el cifrado de Azure Information Protection para que se pueda procesar el contenido del archivo. Para obtener información sobre cómo se protegen los documentos mientras se almacenan en SharePoint, vea [cifrado de datos en OneDrive para la empresa y SharePoint Online](data-encryption-in-odb-and-spo.md).
 
@@ -36,29 +38,27 @@ Antes de esta vista previa, al aplicar las etiquetas de confidencialidad que inc
 
 - Para que SharePoint Quite el cifrado del archivo al cargarlo, el usuario que cargue el archivo cifrado y etiquetado debe tener permisos de uso para al menos ver el archivo. SharePoint no quita el cifrado de los archivos si el usuario no puede abrirlos fuera de SharePoint.
 
-- Use Office en la web (Word, Excel y PowerPoint) para abrir y editar archivos de Office con etiquetas de distinción que aplican el cifrado. Se aplican los permisos asignados al cifrado. Con Word en la web, también puede usar la etiqueta automática al editar estos documentos.
+- Use Office en la web (Word, Excel y PowerPoint) para abrir y editar archivos de Office con etiquetas de distinción que aplican el cifrado. Se aplican los permisos asignados al cifrado. Con Word en la web, también puede usar la etiqueta automática cuando edita estos documentos.
 
 - Office 365 eDiscovery admite la búsqueda de texto completo para estos archivos. Las directivas de prevención de pérdida de datos (DLP) cubren el contenido de estos archivos.
 
-- Hay tres nuevos [eventos de auditoría](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) disponibles para supervisar las etiquetas de confidencialidad que se aplican con Office en la web:
-  - **Etiqueta de confidencialidad aplicada al archivo**
-  - **Se ha cambiado la etiqueta de confidencialidad aplicada al archivo**
-  - **Etiqueta de confidencialidad eliminada del sitio**
-
 > [!NOTE]
-> Si no se ha aplicado el cifrado con una clave basada en la nube, pero con una clave local, una topología de administración de claves a menudo denominada "retener su propia clave" (HYOK), el comportamiento de SharePoint no cambia con esta vista previa.
+> Si no se ha aplicado el cifrado con una clave basada en la nube, pero con una clave local, una topología de administración de claves a menudo denominada "mantener su propia clave" (HYOK), el comportamiento de SharePoint para procesar el contenido del archivo no cambia con esta vista previa.
 >
 > El comportamiento de SharePoint tampoco cambia para los archivos con etiquetas y cifrados existentes en SharePoint antes de habilitar la vista previa. Para que estos archivos se beneficien de las nuevas funciones, deben descargarse y cargarse, o bien editarse después de habilitar la vista previa. Por ejemplo, se devolverán en los resultados de búsqueda y exhibición de documentos electrónicos.
 
-Ahora también puede aplicar etiquetas de confidencialidad a Microsoft Teams, a los grupos de Office 365 y a los sitios de SharePoint. Para obtener más información sobre esta vista previa independiente, vea [usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (vista previa pública)](sensitivity-labels-teams-groups-sites.md).
-
-Siempre tiene la opción de optar por no participar en esta vista previa en cualquier momento.
+Cuando se habilita esta vista previa, hay disponibles tres nuevos [eventos de auditoría](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) para supervisar las etiquetas de confidencialidad que se aplican con Office en la web:
+- **Etiqueta de confidencialidad aplicada al archivo**
+- **Se ha cambiado la etiqueta de confidencialidad aplicada al archivo**
+- **Etiqueta de confidencialidad eliminada del sitio**
 
 Vea el siguiente vídeo (sin audio) para ver estas nuevas funciones en acción:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-## <a name="requirements"></a>Requirements
+Siempre tiene la opción de optar por no participar en esta vista previa en cualquier momento.
+
+## <a name="requirements"></a>Requisitos
 
 Estas características solo funcionan con las [etiquetas de confidencialidad](sensitivity-labels.md) . Si tiene etiquetas de Azure Information Protection, primero deberá migrarlas a las etiquetas de confidencialidad para que pueda habilitarlas para los nuevos archivos que cargue. Para obtener instrucciones, consulte [How to Migrate Azure Information Protection Labels to Unified Sensitivity Labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
@@ -66,7 +66,9 @@ Para esta vista previa, use la versión 19.002.0121.0008 o posterior de la aplic
 
 ## <a name="limitations"></a>Limitaciones
 
-- Cuando habilita esta vista previa, los usuarios que cambian una etiqueta en un archivo en una carpeta de sincronización de OneDrive podrían no ser capaces de guardar otros cambios realizados en el archivo.  Los usuarios ven un [círculo rojo con un error de icono en forma de cruz blanca](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)y se les pide que guarden los cambios nuevos como una copia independiente.  Además de los cambios de etiqueta que inician los usuarios, se puede producir el mismo comportamiento si un administrador cambia la configuración de una etiqueta publicada que ya se ha aplicado a los archivos descargados en el cliente de sincronización de los usuarios.
+- Cuando habilita esta vista previa, los usuarios que cambian una etiqueta en un archivo en una carpeta de sincronización de OneDrive podrían no ser capaces de guardar otros cambios realizados en el archivo. Este escenario se aplica a los archivos etiquetados con cifrado, y también cuando el cambio de la etiqueta es de una etiqueta que no ha aplicado el cifrado a una etiqueta que aplica el cifrado. Los usuarios ven un [círculo rojo con un error de icono en forma de cruz blanca](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)y se les pide que guarden los cambios nuevos como una copia independiente.  
+    
+    Además de los cambios de etiqueta que inician los usuarios, se puede producir el mismo comportamiento si un administrador cambia la configuración de una etiqueta publicada que ya se ha aplicado a los archivos descargados en el cliente de sincronización de los usuarios.
     
     Para evitar la pérdida de trabajo en estos escenarios, realice una de estas acciones:
     - Para aplicar etiquetas, use las versiones web de las aplicaciones de Office.
@@ -88,7 +90,7 @@ Para esta vista previa, use la versión 19.002.0121.0008 o posterior de la aplic
 
 - No se admite el sitio de seguimiento de documentos de Azure Information Protection.
 
-- Las aplicaciones de escritorio y las aplicaciones móviles de Office no admiten la coautoría. En su lugar, estas aplicaciones continúan a la vez que los archivos se abren en el modo de edición exclusivo.
+- Las aplicaciones de escritorio y las aplicaciones móviles de Office no admiten la coautoría para los archivos etiquetados con cifrado. Estas aplicaciones continúan a la vez que los archivos identificados y cifrados se abren en el modo de edición exclusivo.
 
 - Si se carga un documento con etiquetas en SharePoint y la etiqueta aplicó el cifrado mediante una cuenta desde un nombre principal de servicio, el documento no se puede abrir en Office en la Web. Los escenarios de ejemplo incluyen Microsoft Cloud App Security y un archivo enviado a Teams por correo electrónico.
 

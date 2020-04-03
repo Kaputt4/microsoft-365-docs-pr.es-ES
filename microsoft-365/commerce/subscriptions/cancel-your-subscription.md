@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Obtenga información sobre cómo cancelar la suscripción de prueba o de pago de Office 365 para empresas o Microsoft 365.
-ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
+ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42415655"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117949"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -58,7 +58,7 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione una suscripción.
 
@@ -74,7 +74,7 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione una suscripción.
 
@@ -94,13 +94,14 @@ Si cancela una suscripción antes del final del período, la suscripción se mue
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Qué pasará con usted y sus usuarios si cancela una suscripción
   
-- **Acceso de administrador** Los administradores todavía pueden iniciar sesión y acceder al centro de administración, y comprar otras suscripciones según sea necesario. Como administrador global o de facturación, tiene 90 días para [reactivar la suscripción](reactivate-your-subscription.md) con todos los datos intactos. 
-    
+- **Acceso de administrador** Los administradores todavía pueden iniciar sesión y acceder al centro de administración, y comprar otras suscripciones según sea necesario. Como administrador global o de facturación, tiene 90 días para [reactivar la suscripción](reactivate-your-subscription.md) con todos los datos intactos.
+
 - **Acceso de usuario** Los usuarios no podrán usar servicios como OneDrive para la empresa ni acceder a datos de clientes como correo electrónico o documentos en los sitios de grupo. Finalmente, las aplicaciones de Office, como Word y Excel, pasarán a un modo de solo lectura y de funcionalidad reducida y mostrarán [notificaciones de producto sin licencia](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
-    
- **Importante**: Si quiere que se eliminen los datos de su suscripción antes de que se termine el período típico de deshabilitación, puede solicitar que se anule el aprovisionamiento urgente. Cuando solicite la anulación de aprovisionamiento urgente, los datos de su suscripción se eliminan dentro de los 3 días posteriores. Para usar la anulación de aprovisionamiento urgente, [llame al soporte técnico](../../admin/contact-support-for-business-products.md).
-  
+
 Para obtener más información, vea [¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?](what-if-my-subscription-expires.md)
+
+> [!IMPORTANT]
+> Si desea que se eliminen los datos de la suscripción antes de que se termine el período típico de deshabilitación, puede [cerrar su cuenta](../close-your-account.md).
 
 ## <a name="other-steps-you-might-have-to-take"></a>Otros pasos que puede que tenga que realizar
 

@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates ha validado que, cuando Exchange Online y el Centro de seguridad y cumplimiento se configuran según las recomendaciones, cumplen con los requisitos de almacenamiento relevantes de las normas CFTC 1.31(c)-(d), FINRA 4511 y SEC 17a-4. Puede descargar la evaluación.
-ms.openlocfilehash: d2f92f97ba15bcce9466e8886198c7502c41732b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bf54bf5798d4bbb5b655cc367330bbb50de7f7b2
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069266"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106128"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
+
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Si su organización necesita cumplir con normas reglamentarias para la conservación de datos, el Centro de seguridad y cumplimiento de Office 365 proporciona características para administrar el ciclo de vida de sus datos en Exchange Online. Entre estas características, se incluye la capacidad de conservar, auditar, buscar y exportar sus datos. Estas funciones son suficientes para satisfacer las necesidades de la mayoría de las organizaciones.
 

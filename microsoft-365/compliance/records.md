@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Para implementar una estrategia de administración de registros en un Office 365 o en la organización de Microsoft, use las etiquetas de retención que declaran el contenido como un registro. Después, publique o aplique automáticamente la etiqueta registro de retención.
-ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42586732"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106148"
 ---
 # <a name="overview-of-records"></a>Información general de registros
+
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 La administración de registros de Microsoft 365 ayuda a las organizaciones a cumplir con sus obligaciones corporativas, jurídicas y reglamentarias, al tiempo que reduce el riesgo y la responsabilidad legal.
 
@@ -79,10 +81,6 @@ Al crear una etiqueta de retención, puede usarla para clasificar el contenido c
    ![Haga clic en usar etiqueta para clasificar contenido como una casilla de registro](../media/recordversioning6.png)
 
 3. [Publicar](labels.md#how-retention-labels-work-with-retention-label-policies) o [aplicar automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) la etiqueta de retención en los sitios de SharePoint y/o cuentas de OneDrive.
-
-> [!NOTE]
-> La declaración de un elemento como registro con [etiquetas de retención](labels.md) requiere una licencia de Office 365 Enterprise E5 o equivalente para cada usuario que tenga permisos para editar el contenido en esta ubicación. Los usuarios que tienen acceso de solo lectura no necesitan una licencia.
-
 
 ### <a name="applying-a-retention-label-to-content"></a>Aplicar una etiqueta de retención al contenido
 

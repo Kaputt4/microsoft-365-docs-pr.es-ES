@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: e41c71a1f8bc0175b179ecd760dac7098551bc91
-ms.sourcegitcommit: 6b7eecad7162c065af80721204fbabdd2e31e42b
+ms.openlocfilehash: 59adebd9b61761f05156247bbb6c4cb27b42c52b
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43065646"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106012"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
+
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Es posible que su organización disponga de distintos tipos de contenido que haya que usar de manera diferente para cumplir con las normativas del sector y las directivas internas. Por ejemplo:
   

@@ -17,17 +17,14 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información acerca de la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: 8d1b6bbda57cbe51167c87a29e140e6b5f871bca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 547f3f3179252c767d56b45d4ad64d67b3c82b7d
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070997"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116030"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Administración del acceso con privilegios en Office 365
-
-> [!IMPORTANT]
-> En este tema se tratan las instrucciones de implementación y configuración de las características disponibles actualmente en Office 365 E5 y las SKU de cumplimiento avanzado.
 
 La administración de acceso privilegiado permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger a su organización de las infracciones que usan cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o al acceso a las opciones de configuración críticas. La administración de acceso privilegiado requiere que los usuarios soliciten acceso puntual para completar las tareas elevadas y privilegiadas a través de un flujo de trabajo de aprobación limitado por el ámbito y de gran alcance. Esta configuración proporciona a los usuarios un acceso suficiente para realizar la tarea a mano, sin arriesgar la exposición de los datos confidenciales o las opciones de configuración críticas. La habilitación de la administración de acceso privilegiada en Office 365 permite que su organización opere con privilegios de cero de posición y proporciona un nivel de defensa contra las vulnerabilidades de acceso administrativo.
 
@@ -77,7 +74,7 @@ Para una solicitud aprobada, el espacio de ejecución de administración de Exch
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>¿Qué SKU puede usar el acceso con privilegios en Office 365?
 
-La administración del acceso con privilegios está disponible para los clientes con Office 365 E5 y las SKU de cumplimiento avanzado.
+La administración del acceso con privilegios está disponible para los clientes para una amplia selección de suscripciones y complementos de Microsoft 365 y Office 365. Consulte [Get Started with privileged Access Management](privileged-access-management-configuration.md) para obtener más información.
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>¿Cuándo será compatible el acceso a Office 365 cargas de trabajo de Office más allá de Exchange?
 

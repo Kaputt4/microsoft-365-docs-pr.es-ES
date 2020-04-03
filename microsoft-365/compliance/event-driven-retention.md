@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de retención puede hacer que un período de retención se base en el momento en que se produce un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento. La retención controlada por eventos suele usarse como parte de un proceso de administración de registros.
-ms.openlocfilehash: da5e10735e8980199a829ac50d096052abe93d14
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4389f3639de3e9e036491026455ce62a9e258432
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074565"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105627"
 ---
 # <a name="overview-of-event-driven-retention"></a>Información general sobre la retención controlada por eventos
+
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Al conservar contenido, el período de retención suele basarse en la antigüedad del contenido (por ejemplo, puede conservar documentos durante siete años después de su creación y eliminarlos cuando transcurra ese período). Pero, con las etiquetas de retención en Office 365, también puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento.
   

@@ -17,16 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de caja del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede tener acceso a los datos cuando se tiene un problema.
-ms.openlocfilehash: 8906fde608e6e6c26604450eed063915e4617d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076896"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113567"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de caja de cliente en Office 365
 
-En este artículo se proporcionan instrucciones de implementación y configuración para una característica que actualmente solo está disponible para las organizaciones que tienen una suscripción de Microsoft 365 E5, Office 365 E5, protección de la información y cumplimiento o complemento avanzado de cumplimiento. La caja de seguridad del cliente admite solicitudes para acceder a datos en Exchange Online, SharePoint Online y OneDrive para la empresa. Para recomendar el soporte para otros servicios de Office 365, envíe una solicitud a [UserVoice de office 365](https://office365.uservoice.com/).
+En este artículo se proporcionan instrucciones de implementación y configuración para caja de caja de clientes. La caja de seguridad del cliente admite solicitudes para acceder a datos en Exchange Online, SharePoint Online y OneDrive para la empresa. Para recomendar el soporte para otros servicios de Office 365, envíe una solicitud a [UserVoice de office 365](https://office365.uservoice.com/).
+
+Para ver las opciones de licencia de sus usuarios para beneficiarse de las ofertas de cumplimiento de Microsoft 365, incluida esta, a partir del 1 de abril de 2020, consulte [microsoft 365 Licensing Guidance for security & Compliance](https://aka.ms/ComplianceSD).
 
 La caja de caja del cliente garantiza que Microsoft no pueda obtener acceso al contenido para realizar una operación de servicio sin su aprobación explícita. Lockbox del cliente le ofrece el flujo de trabajo de aprobación para las solicitudes de acceso al contenido.
 
@@ -150,9 +152,9 @@ Cuando una persona de su organización aprueba o deniega una solicitud de caja d
 |:---------- |:----------|
 | Fecha       | La fecha y la hora en que se aprobó o denegó la solicitud de caja de caja del cliente.
 | Dirección IP | La dirección IP del equipo que el aprobador ha usado para aprobar o denegar una solicitud. |
-| Usuario       | La cuenta de servicio\[BOXServiceAccount@\]customerforest. Prod.Outlook.com.            |
+| User       | La cuenta de servicio\[BOXServiceAccount@\]customerforest. Prod.Outlook.com.            |
 | Actividad   | Set-AccessToCustomerDataRequest; se trata de la actividad de auditoría que se registra al aprobar o denegar una solicitud de caja de control del cliente.                                |
-| Elemento       | El GUID de la solicitud de caja de caja del cliente                             |
+| Item       | El GUID de la solicitud de caja de caja del cliente                             |
 
 En la siguiente captura de pantalla se muestra un ejemplo de un registro de auditoría que se corresponde con una solicitud de caja de control de cliente aprobada. Si se denegó una solicitud de caja de caja del cliente, el valor del parámetro **ApprovalDecision** sería **Deny**.
 
@@ -169,9 +171,9 @@ Las acciones realizadas por un ingeniero de Microsoft después de que se aprueba
 |:---------- |:----------|
 | Fecha       | Fecha y hora en que se realizó la acción. Tenga en cuenta que la hora en que se realizó esta acción será en un plazo de 4 horas desde el momento en que se aprobó la solicitud de caja de tiempo del cliente.              |
 | Dirección IP | La dirección IP del equipo que utilizó el ingeniero de Microsoft. |
-| Usuario       | Operador de Microsoft; Este valor indica que este registro está relacionado con una solicitud de caja de caja del cliente.                                  |
+| User       | Operador de Microsoft; Este valor indica que este registro está relacionado con una solicitud de caja de caja del cliente.                                  |
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
-| Elemento       | \<está\>                                             |
+| Item       | \<está\>                                             |
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
