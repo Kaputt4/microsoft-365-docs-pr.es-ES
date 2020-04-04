@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Obtenga información sobre cómo obtener una prueba gratuita o comprar una suscripción para Microsoft 365.
-ms.openlocfilehash: 1b494457b20a1e75ad002b2832fd69ad0a284b53
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257670"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141628"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Probar o comprar una suscripción a Microsoft 365
 
@@ -41,9 +41,6 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 ## <a name="try-or-buy-a-microsoft-365-subscription"></a>Probar o comprar una suscripción a Microsoft 365
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. Inicie sesión en el centro de administración [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)de en y, a continuación, vaya a **servicios de compra**de **facturación** \> .
 
@@ -70,16 +67,13 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 
 11. En la página **recibo del pedido** , seleccione **continuar**.
 
-#### <a name="not-using-the-new-admin-center-yet"></a>¿Todavía no usa el nuevo centro de administración?
-
-Si tiene el nuevo centro de administración desactivado, vea los vídeos de este artículo para obtener información sobre cómo suscribirse a una suscripción de prueba de Microsoft 365: [registrarse para obtener una suscripción](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 1. Inicie sesión en el centro de administración [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)de en y, a continuación, vaya a **servicios de compra**de **facturación** \> .
 
-2. En la página **servicios de compra** , se enumeran las suscripciones que están disponibles para su organización. 
+2. En la página **servicios de compra** , se enumeran las suscripciones que están disponibles para su organización.
 
 3. Seleccione los puntos suspensivos en el plan 365 de Microsoft que quiera probar o comprar y, a continuación, seleccione **iniciar prueba gratuita**, que le da 25 licencias de usuario por un período de un mes, o puede seleccionar **comprar ahora**.
 
@@ -105,6 +99,7 @@ Si tiene el nuevo centro de administración desactivado, vea los vídeos de este
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
+
 1. Inicie sesión en el centro de administración [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)de en y, a continuación, vaya a **servicios de compra**de **facturación** \> .
 
 2. En la página **servicios de compra** , se enumeran las suscripciones que están disponibles para su organización. 
@@ -132,10 +127,9 @@ Si tiene el nuevo centro de administración desactivado, vea los vídeos de este
 
 ::: moniker-end
 
+## <a name="next-steps"></a>Siguientes pasos
 
-## <a name="next-steps"></a>Pasos siguientes
-
-Después de obtener la nueva suscripción, tiene que asignar una licencia a los usuarios que usarán esa suscripción. Para obtener información sobre cómo hacerlo, vea [asignar licencias a usuarios](../admin/manage/assign-licenses-to-users.md) .
+Después de obtener la nueva suscripción, tiene que asignar una licencia a los usuarios que usarán esa suscripción. Para obtener información sobre cómo hacerlo, vea [asignar licencias a usuarios](../admin/manage/assign-licenses-to-users.md).
 
 ## <a name="related-articles"></a>Artículos relacionados
 
@@ -144,4 +138,3 @@ Después de obtener la nueva suscripción, tiene que asignar una licencia a los 
 [Comprar o editar un complemento para Office 365 para empresas](buy-or-edit-an-add-on.md)
 
 [Agregar espacio de almacenamiento para la suscripción](add-storage-space.md)
-

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Obtenga información sobre cómo renovar la suscripción de Office 365 para empresas con una clave de producto y activar o desactivar la facturación recurrente. '
-ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959221"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142120"
 ---
 # <a name="renew-office-365-for-business"></a>Activar de nuevo o renovar suscripción a Office 365 Empresa
 
@@ -47,9 +47,6 @@ Si paga con tarjeta de crédito o cuenta bancaria, la **facturación Recurrent**
 Si pagó por adelantado la suscripción con una clave de producto, expirará al final del período de suscripción. Puede activar la **facturación recurrente** y proporcionar la información de la tarjeta de crédito o de la cuenta bancaria para que la suscripción se siga facturando cada año el día en que se haya suscrito. También tiene la opción de pagar cada mes o pagar por todo el año por adelantado. No se le realizará ningún cargo en la tarjeta de crédito ni en la cuenta bancaria hasta que no expire el período de suscripción inicial.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 
@@ -117,12 +114,10 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Reactivar la suscripción](reactivate-your-subscription.md)
-  
-[Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-  
+
 [¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?](what-if-my-subscription-expires.md)
 
-[Agregar, actualizar o quitar los métodos de pago](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+[Agregar, actualizar o quitar sus métodos de pago](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
 [Cambiar el modo de pago](../billing-and-payments/change-payment-method.md)
   

@@ -1,5 +1,5 @@
 - name: Inicio de administrador
-  href: admin-home.yml
+  href: admin-home.md
   items:
     - name: Información general
       items:
@@ -86,7 +86,7 @@
     - name: Correo electrónico
       items:
         - name: Correo electrónico en Office 365
-          href: email/email.yml
+          href: email/email.md
         - name: Configuración de correo electrónico de usuario de Office 365
           href: email/office-365-user-email-settings.md
         - name: Agregar otro alias de correo electrónico para un usuario
@@ -154,7 +154,7 @@
     - name: Administrar
       items:
         - name: Administrar Office 365
-          href: manage/manage.yml
+          href: manage/manage.md
         - name: Cambiar las preferencias de contacto
           href: manage/change-contact-preferences.md
         - name: 'Cambiar la dirección, contactos, etc.'
@@ -187,8 +187,8 @@
           href: manage/remove-licenses-from-users.md
         - name: Resolver conflictos de licencia
           href: manage/resolve-license-conflicts.md
-        - name: Administrar mensajes en el centro de mensajes
-          href: manage/manage-messages.md
+        - name: Mostrar u ocultar nuevas características con la nueva administración
+          href: manage/show-hide-new-features.md
     - name: Suscripciones y facturación
       items:
         - name: Administrar suscripciones
@@ -202,7 +202,7 @@
     - name: Dominios
       items:
         - name: Dominios en Office 365
-          href: get-help-with-domains/get-help-with-domains.yml
+          href: get-help-with-domains/get-help-with-domains.md
         - name: ¿Qué es un dominio?
           href: get-help-with-domains/what-is-a-domain.md
         - name: Comprar un nombre de dominio
@@ -273,7 +273,7 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Paridad de Azure Information Protection
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: Obtener nuevas características
+    - name: Nuevas características
       items:
         - name: Sobre el nuevo centro de administración
           href: microsoft-365-admin-center-preview.md

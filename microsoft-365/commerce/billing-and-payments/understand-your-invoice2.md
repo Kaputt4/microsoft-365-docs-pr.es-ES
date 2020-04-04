@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Obtenga información sobre cómo interpretar los cargos, la facturación y la información de pago en la factura de Office 365 for Business y cómo cambiar el número de pedido de compra.
-ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354691"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142304"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>Entender la factura de Office 365 para empresas
 
@@ -64,7 +64,7 @@ Si tiene más de un pedido, recibirá una factura para cada uno de ellos.
 La tabla siguiente describe los campos que es posible que vea en su factura. Algunos de los campos que se muestran aquí puede que no aparezcan en su factura, según si paga mediante factura, tarjeta de crédito o cuenta bancaria.
   
 > [!NOTE]
-> Pagar por cuenta bancaria no está disponible en algunos países o regiones.
+> Pagar con la cuenta bancaria no está disponible en algunos países o regiones.
   
 |**Nombre**|**Descripción**|
 |:-----|:-----|
@@ -104,8 +104,6 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 ::: moniker range="o365-worldwide"
 
-### <a name="use-the-new-admin-center-to-change-your-purchase-order-number"></a>Usar el nuevo centro de administración para cambiar el número de pedido de compra
-
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 
 2. Si está en la vista de **tabla** , seleccione **tarjetas** para cambiar de vista.
@@ -116,21 +114,11 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 5. En la parte inferior del panel **editar detalles de pago** , escriba el número de pedido de compra y, a continuación, seleccione **Guardar**.
 
-### <a name="use-the-old-admin-center-to-change-your-purchase-order-number"></a>Usar el centro de administración anterior para cambiar el número de pedido de compra
-
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">suscripciones</a> de **facturación** > .
-
-2. Seleccione la suscripción que desea cambiar y, en la sección **método de pago** , seleccione **actualizar detalles de pago**.
-
-3. En el panel **actualizar detalles de pago** , seleccione **no gracias**.
-
-4. En la parte inferior del panel **actualizar detalles de pago** , escriba el número de pedido de compra, seleccione **Enviar**y, a continuación, **cerrar**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. Seleccione la suscripción que desea cambiar y, en la sección **método de pago** , seleccione **cambiar detalles de pago**.
 
@@ -140,7 +128,7 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. Seleccione la suscripción que desea cambiar y, en la sección **método de pago** , seleccione **cambiar detalles de pago**.
 

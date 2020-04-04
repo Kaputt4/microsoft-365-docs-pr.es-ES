@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están &amp; disponibles en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b6c4e737d0bcc9f7373a669e8dcd20661733b294
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634068"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142719"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento
 
@@ -31,7 +31,8 @@ Hay disponibles varios informes en el centro de [seguridad &amp; y cumplimiento]
 ![Panel en el que se ve cómo está funcionando la protección contra amenazas avanzada](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Los informes de seguridad de correo electrónico incluyen lo siguiente:
-- [Informe de usuarios comprometidos (**nuevo**)](#compromised-users-report-new)
+- [Informe de protección contra amenazas de dirección URL](#url-threat-protection-report-new) (**nuevo**)
+- [Informe de usuarios comprometidos](#compromised-users-report)
 - [Informe de cifrado](#encryption-report)
 - [Informe de estado de protección contra amenazas](#threat-protection-status-report) 
 - [Informe de detecciones de malware](#malware-detections-report) 
@@ -43,7 +44,28 @@ Los informes de seguridad de correo electrónico incluyen lo siguiente:
 - [Informe de mensajes notificados por el usuario](#user-reported-messages-report)
 
 
-## <a name="compromised-users-report-new"></a>Informe de usuarios comprometidos (**nuevo**) 
+## <a name="url-threat-protection-report-new"></a>Informe de protección contra amenazas de dirección URL (**nuevo**)
+
+El informe de protección contra amenazas de URL está disponible para cualquier persona con:
+
+- Un complemento de Exchange Online Protection *y* de la protección contra amenazas avanzada (plan 1 *o* plan 2) 
+- Una suscripción A Microsoft 365 E5
+
+Se trata de un informe ' centrado en clics ' que tiene dos vistas agregadas.
+ 
+1. La primera vista se basa en la *acción de protección clic de dirección URL*, que se centra en mostrar el número de clics de direcciones URL de los usuarios del espacio empresarial y el resultado de hacer clic. Un clic aquí indica que el usuario ha acpulsado a través de la página de bloque al sitio Web malintencionado (esto puede ser deshabilitado por el administrador dentro de una directiva de vínculos seguros).
+ 
+2. La segunda vista es la *dirección URL haga clic en por aplicaciones*, que muestra el número de direcciones URL haga clic en aplicaciones diferentes que admiten vínculos seguros hoy, como en un cliente de correo electrónico o en Microsoft Word. Los datos de las vistas agregadas se actualizan una vez cada 4 horas.
+
+La tabla de detalles del informe de protección contra amenazas de direcciones URL proporciona una vista casi en tiempo real de todos los clics que se producen dentro del espacio empresarial y incluye información de investigación, como el *nombre de usuario*, la *dirección URL*, el *identificador del mensaje de red* (si se ha hecho clic en la dirección URL desde un correo electrónico) y otros datos valiosos para investigaciones y análisis.  
+
+De forma predeterminada, el informe solo muestra datos en los clics de direcciones URL bloqueadas por vínculos seguros, pero también es posible ver la información de todas las direcciones URL haga clic para seleccionar *direcciones URL permitidas* en los filtros.  
+
+Este informe no tendrá datos de clics de usuarios en los que la Directiva de vínculos seguros aplicada tiene seleccionada la opción no hacer *un seguimiento de los clics del usuario* .
+
+![Gráfico del informe de protección contra amenazas de direcciones URL en acción.](../../media/tp-URLThreatProRpt1.PNG)
+
+## <a name="compromised-users-report"></a>Informe de usuarios comprometidos 
 
 Este informe, disponible para todos los usuarios con Exchange Online Protection, muestra el número de cuentas de usuario marcadas como usuarios sospechosos o restringidos, datos particularmente útiles como cuentas especifique cualquiera de los Estados que indican que la cuenta de usuario puede ser problemática o incluso en peligro. Con el uso frecuente, el informe de usuario comprometida puede detectar picos, e incluso tendencias, en cuentas marcadas en Estados sospechosos o restringidos, lo que demuestra que puede haber un problema con la seguridad y el bienestar del espacio empresarial.
 
@@ -205,7 +227,7 @@ Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://
 ![En el centro &amp; de seguridad y cumplimiento, elija \> mensajes \> de informe de usuario de revisión de administración de amenazas](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> Para que el informe de mensajes notificados por el usuario funcione correctamente, el **registro de auditoría debe estar activado** para su entorno de Office 365. Normalmente lo hace alguien que tiene el rol registros de auditoría asignado en Exchange Online. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
+> Para que el informe de mensajes notificados por el usuario funcione correctamente, el **registro de auditoría debe estar activado** para su entorno de Office 365. Normalmente lo hace alguien que tiene el rol registros de auditoría asignado en Exchange Online. Para obtener más información, consulte [ Activar o desactivar búsqueda de registros de auditoría de Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos se necesitan para ver estos informes?
 

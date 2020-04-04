@@ -24,19 +24,16 @@ search.appverid:
 - GEA150
 description: Obtenga información sobre cómo actualizar a una nueva suscripción.
 monikerRange: o365-worldwide
-ms.openlocfilehash: f12dcdd653c8b12bc4a254063c6eda01138325ee
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: dbeba16a23490ab756c8ed30ce4856217819e80a
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42415605"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142084"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente 
+# <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 
 Cuando cambie su empresa o necesite más características, puede actualizar los planes. La forma más sencilla de hacerlo es usar la pestaña **actualización** en el centro de administración. Sin embargo, no se admite el uso de la pestaña **actualización** en todas las situaciones. En algunos casos, es posible que pueda cambiar de plan manualmente.
-
-> [!NOTE]
-> Este artículo se aplica al nuevo centro de administración. Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio. Para ver el artículo sobre el centro de administración anterior, consulte [cambiar a otro plan de Office 365 para empresas](switch-to-a-different-plan.md).
 
 ## <a name="use-the-upgrade-tab"></a>Usar la pestaña actualización
 
@@ -81,7 +78,7 @@ Si desea pasar a un plan con menos servicios, puede [cambiar los planes manualme
 
 Si no ve ningún plan en la ficha **Actualizar** , significa que su plan no se puede actualizar automáticamente. En algunos casos, es posible que pueda resolver el problema para que pueda ver los planes disponibles para la actualización, o puede que pueda actualizar o cambiar los planes manualmente en su lugar.
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>¿Por qué no se muestran planes para la actualización?
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>¿Por qué no se muestran planes para la actualización?
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>No puede actualizar las suscripciones ahora porque tiene más usuarios que licencias.
 
@@ -141,13 +138,13 @@ Para resolver esto, busque la suscripción en la página <a href="https://go.mic
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>¿Qué hace la actualización de un plan a mi servicio y facturación?
 
-Al actualizar los planes automáticamente mediante el botón **cambiar de plan** (o la pestaña **actualización** del nuevo centro de administración), los servicios y la facturación se ven afectados.
+Al actualizar los planes automáticamente mediante la pestaña **actualización** en el centro de administración, los servicios y la facturación se ven afectados.
 
 ### <a name="access-to-services"></a>Acceso a servicios
 
- Los **administradores** no podrán usar el centro de administración mientras se esté actualizando el plan. Esto puede tardar hasta una hora.
-  
- Los **usuarios** no experimentarán ninguna interrupción del servicio. Seguirán teniendo el servicio existente hasta que la actualización se complete por completo.
+Los **administradores** no podrán usar el centro de administración mientras se esté actualizando el plan. Esto puede tardar hasta una hora.
+
+Los **usuarios** no experimentarán ninguna interrupción del servicio. Seguirán teniendo el servicio existente hasta que la actualización se complete por completo.
   
 ### <a name="users-and-licenses"></a>Usuarios y licencias
 
@@ -164,9 +161,9 @@ Todos los datos de usuario se conservarán durante la actualización, incluidos 
 El día en que la actualización del plan haya finalizado, la facturación en su suscripción antigua se desactivará y se activará la facturación de la nueva suscripción. Obtendrá un crédito prorrateado correspondiente a los servicios no usados en la suscripción anterior. Recibirá una factura nueva que incluye el crédito por su suscripción antigua en un plazo de 30 días a partir de la actualización a la nueva suscripción.
   
 > [!NOTE]
-> El tiempo que lleva a su cuenta acreditar su pago depende del método que se usó para pagar la suscripción. 
-  
- **¿Va a actualizar desde una suscripción de prepago antes de que expire?** Si el costo total de la nueva suscripción es superior o igual al valor restante de su suscripción de prepago, no perderá tiempo de prepago. En la página de finalización de la compra verá un crédito para el tiempo que no haya usado. Pero, si el coste total de su nueva suscripción es inferior al valor restante de la suscripción de prepago actual, perderá parte de su tiempo sin usar. Se le notificará antes de que lo proteja y puede esperar a que se actualice hasta más cerca de la fecha de expiración de la suscripción de prepago.
+> El tiempo que lleva a su cuenta acreditar su pago depende del método que se usó para pagar la suscripción.
+
+**¿Va a actualizar desde una suscripción de prepago antes de que expire?** Si el costo total de la nueva suscripción es superior o igual al valor restante de su suscripción de prepago, no perderá tiempo de prepago. En la página de finalización de la compra verá un crédito para el tiempo que no haya usado. Pero, si el coste total de su nueva suscripción es inferior al valor restante de la suscripción de prepago actual, perderá parte de su tiempo sin usar. Se le notificará antes de que lo proteja y puede esperar a que se actualice hasta más cerca de la fecha de expiración de la suscripción de prepago.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Llamar al soporte técnico para ayudarle a actualizar los planes
 

@@ -1,5 +1,5 @@
 ---
-title: Administración de compras de autoservicio (usuarios)
+title: Administrar compras de autoservicio (usuarios)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,19 +14,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus adquisiciones de autoservicio.
-ms.openlocfilehash: cdc50144179dd4c0f9b6355501167e9420ff0b50
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080327"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142144"
 ---
-# <a name="manage-self-service-purchases-users"></a>Administración de compras de autoservicio (usuarios)
+# <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
 Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a las personas de su equipo. Usted es responsable de pagar las compras de autoservicio que realice. Puede administrar las suscripciones en el centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.Microsoft.com</a>.
-
-> [!NOTE]
-> Debe activar la nueva experiencia del centro de administración.
 
 Su administrador tiene una vista de solo lectura en las suscripciones que compre. Pueden ver el producto, el nombre del comprador, las suscripciones adquiridas, la fecha de expiración, el precio de compra y los usuarios asignados para cada suscripción que compre.
 
@@ -55,7 +52,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 3. Elija **asignar licencias**.
 
-4. En el panel **asignar licencias a usuarios** , empiece a escribir un nombre y, a continuación, elija la opción de los resultados para agregarla a la lista. Puede Agregar hasta 20 usuarios a la vez.
+4. En el panel **asignar licencias a usuarios**, empiece a escribir un nombre y elíjalo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
 
     > [!NOTE]
     > Solo puede asignar licencias a personas de su organización.
@@ -86,7 +83,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 ## <a name="manage-your-payment-details"></a>Administrar los detalles de pago
 
-1. En el centro de administración, vaya a **la** > página**facturas & pagos** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank"></a> de facturación.
+1. En el centro de administración, vaya a **la** > página**facturas & pagos** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> de facturación.
 
 2. Seleccione un perfil de facturación de la lista.
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: Obtenga información sobre cómo enrutar el tráfico a un sitio web público existente hospedado fuera de Office 365, si ha configurado Office 365 para que administre los registros DNS para su dominio personalizado.
-ms.openlocfilehash: b92e778fb2fe0353a0d1d6bf83a4c617ab4541e2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3e71925f9b50e5520bd383aa5318db513202f6ec
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362415"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142544"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Actualizar registros DNS para conservar su sitio web con su proveedor de hospedaje actual
 
@@ -34,7 +34,7 @@ ms.locfileid: "42362415"
  **Si Office 365 administra sus registros DNS**, para redirigir el tráfico a un sitio web público existente hospedado fuera de Office 365, haga lo siguiente después de agregar el dominio a Office 365: 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Actualizar registros DNS en el centro de administración de 365 de Microsoft
-1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
+1. En el centro de administración, vaya a la página de **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
 
 2. En la página **Dominios**, en la lista de dominios, seleccione el que use para su sitio web y, después, **Configuración de DNS** en el panel de administración. 
     

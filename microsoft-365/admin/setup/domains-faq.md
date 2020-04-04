@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Obtenga más información acerca de los dominios en Office 365 buscando respuestas a sus preguntas en preguntas más frecuentes.
 ms.custom: okr_smb
-ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3e1d5dce6de41e28ad4c04104cf0212c2b657615
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633188"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142508"
 ---
 # <a name="domains-faq"></a>Preguntas más frecuentes de dominios
 
@@ -230,7 +230,7 @@ Debe tener al menos un dominio personalizado que haya agregado a Office 365 para
     
 2. En la página **dominios** , seleccione el dominio que desea establecer como predeterminado para las nuevas direcciones de correo electrónico. 
     
-3. Seleccione **establecer como predeterminado**.
+3. Seleccione **Establecer como predeterminado**.
     
 ::: moniker range="o365-worldwide"
 
@@ -285,9 +285,9 @@ Cuando se agregan varios dominios a Office 365, puede hospedar cualquiera de los
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>¿Por qué tengo un dominio "onmicrosoft.com"?
 
-Office 365 crea un dominio para usted, como *contoso.onmicrosoft.com*, cuando se registra en el servicio. El identificador de usuario que crea al registrarse incluye el dominio, como *Alan@contoso.onmicrosoft.com*. 
+Office 365 crea un dominio para usted, como _contoso.onmicrosoft.com_, cuando se registra en el servicio. El identificador de usuario que crea al registrarse incluye el dominio, como _alan\@contoso.onmicrosoft.com_. 
   
- **Si quiere que su correo sea similar a *Alan\@contoso.com*:** [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos que se indican en [Agregar usuarios y dominios a Office 365](add-domain.md) si es el propietario ya. 
+ __Si quiere que su correo sea similar a _Alan\@contoso.com_:__ [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos que se indican en [Agregar usuarios y dominios a Office 365](add-domain.md) si es el propietario ya. 
   
 - **No puede cambiar el nombre del dominio de mi Microsoft después de suscribirse.** Por ejemplo, si el dominio inicial elegido era fourthcoffee.onmicrosoft.com, no puede cambiarlo a fabrikam.onmicrosoft.com. Para usar un dominio onmicrosoft.com diferente, debe iniciar una nueva suscripción con Office 365. 
     
@@ -300,11 +300,12 @@ Puede seguir usando el dominio de onmicrosoft.com inicial incluso después de ag
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>¿Por qué tengo un dominio "onmicrosoft.de"?
 
-Office 365 crea un dominio para usted, como *contoso.onmicrosoft.de*, cuando se registra en el servicio. El identificador de usuario que crea al registrarse incluye el dominio, como *Alan@contoso.onmicrosoft.de*. 
+Office 365 crea un dominio para usted, como *contoso.onmicrosoft.de*, cuando se registra en el servicio. El identificador de usuario que crea al registrarse incluye el dominio, como "alan@contoso.onmicrosoft.de". 
   
- **Si quiere que su correo sea similar a *Alan@contoso.de*:** [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos indicados en [Agregar usuarios y dominios a Office 365](add-domain.md) si ya es el propietario. 
+Si desea que el correo electrónico tenga un aspecto similar a "alan@contoso.de": [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos descritos en [Agregar usuarios y dominios a Office 365](add-domain.md) si es el propietario ya 
   
 - **No puede cambiar el nombre del dominio de mi Microsoft después de suscribirse.** Por ejemplo, si el dominio inicial elegido era fourthcoffee.onmicrosoft.de, no puede cambiarlo a fabrikam.onmicrosoft.de. Para usar un dominio onmicrosoft.de diferente, debe iniciar una nueva suscripción con Office 365. 
     
@@ -444,7 +445,7 @@ Puede, pero hay limitaciones:
         
     4. Pruebe el correo electrónico para alguien que se encuentra en el otro sistema de correo electrónico. Por ejemplo, envíe un correo electrónico al usuario C. Este correo electrónico debe entregarse al buzón del usuario C en su servidor de correo original.
         
-    5. Desde una cuenta externa o de la cuenta de correo electrónico de un empleado en el otro sistema de correo electrónico, compruebe que el reenvío está configurado correctamente en el otro sistema de correo electrónico. Por ejemplo, de la cuenta de origninal Server del usuario C o de una cuenta de hotmail, envíe un correo electrónico al usuario y compruebe que llegue al buzón de Office 365 del usuario A.
+    5. Desde una cuenta externa o de la cuenta de correo electrónico de un empleado en el otro sistema de correo electrónico, compruebe que el reenvío está configurado correctamente en el otro sistema de correo electrónico. Por ejemplo, en la cuenta de servidor original del usuario C o en una cuenta de hotmail, envíe al usuario un correo electrónico y compruebe que llegue al buzón de Office 365 del usuario A.
         
 9. Mover el contenido del buzón
     

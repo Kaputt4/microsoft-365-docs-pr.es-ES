@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: 68e5061b7238d456ee0397a50eff37f07214d13f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 938a6d58c8781fcc04f6b86e15db88b5de523cdf
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361121"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142520"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>Las 10 mejores formas de proteger los planes de Office 365 y Microsoft 365 Empresa
 
@@ -155,12 +155,13 @@ Para crear una regla de transporte de correo, vea un [vídeo de aprendizaje cort
 |Aplicar esta regla si. . .  <br/> |Los datos adjuntos. . . coincidencias de extensión de archivo. . .  <br/> |Los datos adjuntos. . . coincidencias de extensión de archivo. . .  <br/> |
 |Especificar palabras o frases  <br/> |Agregue estos tipos de archivo:  <br/> dotm, docm, xlsm, sltm, XLA, XLAM, xll, pptm, potm, PPAM, ppsm sldm  <br/> |Agregue estos tipos de archivo:  <br/> ADE, ADP, Ani, Bas, Bat, CHM, CMD, com, cpl, CRT, HLP, HT, HTA, INF, ins, ISP, Job, JS, JSE, lnk, MDA, MdB, MDE, MDZ, MSC, MSI, MSP, MST, PCD, reg, SCR, SCT, SHS, URL, VB, VBE, vbs, WSC, wsf, WSH, exe, PIF  <br/> |
 |Haga lo siguiente. . .  <br/> |Notificar al destinatario con un mensaje  <br/> |Bloquear el mensaje. . . rechazar el mensaje e incluir una explicación  <br/> |
-|Proporcionar el texto del mensaje  <br/> |No abra estos tipos de archivos, a menos que los haya esperado, porque los archivos pueden contener código malintencionado y saber que el remitente no es una garantía de seguridad.  <br/> ||
+|Proporcionar el texto del mensaje  <br/> |No abra estos tipos de archivos, a menos que los haya esperado, porque los archivos pueden contener código malintencionado y saber que el remitente no es una garantía de seguridad.  <br/>|
+|
    
 > [!TIP]
 > También puede Agregar los archivos que desee bloquear a la lista antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para obtener más información, vea:
+Para más información, consulte lo siguiente:
   
 - [Cómo tratar con ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -247,8 +248,16 @@ Para crear una directiva contra la suplantación de identidad ATP, vea un [víde
     
 6. Una vez que haya revisado la configuración, seleccione **crear esta directiva** o **Guardar**, según corresponda.
     
-| | | Configuración **u opción**|**recomendada** <br/>
-| Denomina  <br/> | Dominio y personal de la campaña más valioso  <br/> | | Descriptiva  <br/> | Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> | | Agregar usuarios para protegerlos  <br/> | Seleccionar **+ Agregar condición, el destinatario es**. Escriba los nombres de usuario o escriba la dirección de correo electrónico del candidato, el administrador de campañas y otros miembros importantes del personal. Puede Agregar hasta 20 direcciones internas y externas que desee proteger de la suplantación.  <br/> | | Agregar dominios para proteger  <br/> | Seleccionar **+ Agregar una condición, el dominio del destinatario es**. Escriba el dominio personalizado asociado con la suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.  <br/> | | Elegir acciones  <br/> | Si un usuario suplantado envía un correo electrónico: seleccione **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, securityadmin@contoso.com.          Si un dominio suplantado envía un correo electrónico: seleccione **mensaje en cuarentena**.  <br/> | | Inteligencia de buzones  <br/> | De forma predeterminada, la inteligencia de buzones se selecciona cuando se crea una nueva Directiva antiphishing. Deje esta configuración **activada** para obtener los mejores resultados.  <br/> | | Agregar dominios y remitentes de confianza  <br/> | Para este ejemplo, no defina ningún reemplazo.  <br/> | | Aplicado a  <br/> | Seleccione **el dominio del destinatario es**. En **cualquiera de estos**, seleccione **elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, contoso.com, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.  <br/> |
+|**Configuración u opción**|**Valor recomendado** <br/>|
+| :-------| :-----|
+|Nombre  <br/> |Dominio y personal de la campaña más valioso  <br/> |
+|Descripción  <br/> |Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> |
+|Agregar usuarios que proteger  <br/> |Seleccionar **+ Agregar condición, el destinatario es**. Escriba los nombres de usuario o escriba la dirección de correo electrónico del candidato, el administrador de campañas y otros miembros importantes del personal. Puede Agregar hasta 20 direcciones internas y externas que desee proteger de la suplantación.  <br/> |
+|Agregar dominios que proteger  <br/> |Seleccionar **+ Agregar una condición, el dominio del destinatario es**. Escriba el dominio personalizado asociado con la suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.  <br/> |
+|Elegir acciones  <br/> |Si un usuario suplantado envía un correo electrónico: seleccione **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, securityadmin@contoso.com.          Si un dominio suplantado envía un correo electrónico: seleccione **mensaje en cuarentena**.  <br/> |
+|Inteligencia de buzones  <br/> |De forma predeterminada, la inteligencia de buzones se selecciona cuando se crea una nueva Directiva antiphishing. Deje esta configuración **activada** para obtener los mejores resultados.  <br/> |
+|Agregar dominios y remitentes de confianza  <br/> |Para este ejemplo, no defina ningún reemplazo.  <br/> |
+|Aplicado a  <br/> |Seleccione **el dominio del destinatario es**. En **cualquiera de estos**, seleccione **elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, contoso.com, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.  <br/> |
    
 Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -272,8 +281,15 @@ Para crear una directiva de datos adjuntos seguros para ATP, vea un [vídeo de a
 6. Aplique la configuración de la tabla siguiente. 
     
 7. Una vez que haya revisado la configuración, seleccione **crear esta directiva** o **Guardar**, según corresponda.
-    
-| | | Configuración **u opción**|**recomendada** <br/>| | Denomina  <br/> | Bloquear los correos electrónicos actuales y futuros con malware detectado.  <br/> | | Descriptiva  <br/> | Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> | | Guardar datos adjuntos respuesta de malware desconocida  <br/> | Seleccione **bloquear: bloquear los correos electrónicos y datos adjuntos actuales y futuros con malware detectado**.  <br/> | | Redirigir datos adjuntos en detección  <br/> | Habilitar redirección (Seleccione esta casilla) escriba la cuenta de administrador o una configuración de buzón para la cuarentena.          Aplique la selección anterior si se produce un error de análisis de malware para datos adjuntos de tiempo de espera o error (Active esta casilla).  <br/> | | Aplicado a  <br/> | El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
+
+|**Configuración u opción**|**Valor recomendado** <br/>|
+| :-------| :-----|
+|Nombre  <br/> |Bloquear los correos electrónicos actuales y futuros con malware detectado.  <br/> |
+|Descripción  <br/> |Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> |
+|Guardar datos adjuntos respuesta de malware desconocida  <br/> |Seleccione **bloquear: bloquear los correos electrónicos y datos adjuntos actuales y futuros con malware detectado**.  <br/> |
+|Redirigir datos adjuntos en detección  <br/> |Habilitar redirección (Seleccione esta casilla) escriba la cuenta de administrador o una configuración de buzón para la cuarentena.          Aplique la selección anterior si se produce un error de análisis de malware para datos adjuntos de tiempo de espera o error (Active esta casilla).  <br/> |
+|Aplicado a  <br/> |El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
+|
    
 Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -312,6 +328,12 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 3. Haga clic en **Guardar**. 
     
-| | | Configuración **u opción**|**recomendada** <br/>| | Denomina  <br/> | Directiva de vínculos seguros para todos los destinatarios del dominio  <br/> | | Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes  <br/> | Seleccione **activado: las direcciones URL se rescribirán y comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo**.  <br/> | | Usar datos adjuntos seguros para analizar contenido descargable  <br/> | Seleccione esta casilla.  <br/> | | Aplicado a  <br/> | El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
+**Configuración u opción**|**Valor recomendado** <br/>|
+| :-------| :-----|
+|Nombre  <br/> |Directiva de vínculos seguros para todos los destinatarios del dominio  <br/> |
+|Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes  <br/> |Seleccione **activado: las direcciones URL se rescribirán y comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo**.  <br/> |
+|Usar datos adjuntos seguros para analizar contenido descargable  <br/> |Seleccione esta casilla.  <br/> |
+|Aplicado a  <br/> |El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
+|
    
 Para obtener más información, consulte [vínculos seguros de Office 365 ATP](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).

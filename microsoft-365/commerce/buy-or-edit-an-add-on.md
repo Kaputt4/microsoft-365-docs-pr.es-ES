@@ -22,24 +22,16 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Obtenga información sobre cómo comprar un complemento para agregar funciones adicionales a la suscripción de Office 365 para empresas. También puede actualizar y quitar un complemento.
 ms.custom: okr_SMB
-ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3bd7648d2db9af262df6540c8133871d3736790e
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354811"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142280"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Comprar o editar un complemento para Office 365 para empresas
 
 Muchos de los planes de Office 365 para empresas tienen complementos que puede comprar para la suscripción. Un complemento proporciona funciones adicionales a la suscripción para la que se compra.
-
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
-::: moniker-end 
 
 ## <a name="buy-an-add-on"></a>Comprar un complemento
 
@@ -63,7 +55,7 @@ Muchos de los planes de Office 365 para empresas tienen complementos que puede c
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione la suscripción para la que desea comprar un complemento.
 
@@ -85,7 +77,7 @@ Muchos de los planes de Office 365 para empresas tienen complementos que puede c
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione la suscripción para la que desea comprar un complemento.
 
@@ -105,14 +97,13 @@ Muchos de los planes de Office 365 para empresas tienen complementos que puede c
 
 ::: moniker-end
 
-
 ## <a name="update-an-add-on"></a>Actualizar un complemento
 
-Los pasos que se usan para actualizar un complemento dependen de si el complemento es un complemento tradicional o un complemento independiente o independiente de. 
+Los pasos que se usan para actualizar un complemento dependen de si el complemento es un complemento tradicional o un complemento independiente o independiente de.
 
 Los *Complementos tradicionales* están vinculados a una suscripción específica. Si cancela la suscripción, también se cancelará el complemento asociado.
   
-Los *complementos independientes* no están vinculados a una suscripción específica. Los complementos independientes aparecen como una suscripción independiente en la página **suscripciones** (o en la página **productos & Services** en el nuevo centro de administración) y tienen su propia fecha de expiración. Los complementos independientes se administran de la misma manera que se administra cualquier otra suscripción.
+Los *complementos independientes* no están vinculados a una suscripción específica. Los complementos independientes aparecen como una suscripción independiente en la página **productos & Services** y tienen su propia fecha de expiración. Los complementos independientes se administran de la misma manera que se administra cualquier otra suscripción.
   
 ### <a name="update-a-traditional-add-on"></a>Actualizar un complemento tradicional
 
@@ -130,10 +121,9 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker-end
 
-
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione la suscripción para la que desea actualizar un complemento.
 
@@ -156,7 +146,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione la suscripción para la que desea actualizar un complemento.
 
@@ -174,7 +164,6 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
     > También puede usar las flechas arriba y abajo para cambiar la cantidad de licencias de usuario o simplemente escriba el número que quiera en el cuadro.
   
     ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
-
 
 ::: moniker-end
 
@@ -192,7 +181,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione la suscripción de complemento que desea actualizar y, a continuación, seleccione **Agregar o quitar licencias**.
 
@@ -207,7 +196,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione la suscripción de complemento que desea actualizar y, a continuación, seleccione **Agregar o quitar licencias**.
 
@@ -220,7 +209,6 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker-end
 
-
 ## <a name="remove-an-add-on"></a>Quitar un complemento
 
 Puede cancelar un complemento independiente de la misma manera que [cancela una suscripción](subscriptions/cancel-your-subscription.md). O bien, puede establecer la **facturación recurrente** en desactivada para un complemento independiente mediante los pasos anteriores. Sin embargo, no se puede quitar un complemento tradicional una vez que se ha comprado. Si necesita quitar un complemento tradicional, [póngase en contacto con el soporte técnico para obtener ayuda](../admin/contact-support-for-business-products.md).
@@ -231,8 +219,6 @@ En la tabla siguiente se enumeran los complementos que están disponibles para l
   
 Para obtener información sobre los complementos de Skype Empresarial, vea [Licencias complementarias de Skype Empresarial y Microsoft Teams](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
   
-****
-
 |**Complemento**|**Disponible en estas suscripciones**|
 |:-----|:-----|
 |Caja de seguridad del cliente  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Obtenga información sobre cómo comprar otra suscripción de Office 365 para empresas para su organización cuando ya tiene una suscripción. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354651"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142268"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>Comprar otra suscripción a Office 365 para empresas
 
@@ -40,9 +40,6 @@ Después de comprar una nueva suscripción, deberá asignar a los usuarios que d
 ## <a name="buy-another-subscription"></a>Comprar otra suscripción
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de **facturación** \> .
 
@@ -60,7 +57,7 @@ Después de comprar una nueva suscripción, deberá asignar a los usuarios que d
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. En la página de **suscripción** , seleccione **Agregar suscripciones**.
 
@@ -86,7 +83,7 @@ Después de comprar una nueva suscripción, deberá asignar a los usuarios que d
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. En la página de **suscripción** , seleccione **Agregar suscripciones**.
 
@@ -109,7 +106,6 @@ Después de comprar una nueva suscripción, deberá asignar a los usuarios que d
 8. En la página Confirmación, seleccione **ir a**la Página principal de administración.
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>Artículos relacionados
 

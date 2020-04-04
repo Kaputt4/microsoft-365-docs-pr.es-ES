@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo agregar licencias a su suscripción.
-ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: aa924c3c485f33fa831d140413ebfd2d872f30ff
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951951"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142244"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Agregar licencias o ampliar una suscripción pagada para usar una clave de producto
 
@@ -41,9 +41,6 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 ## <a name="add-licenses-to-your-subscription"></a>Agregar licencias a su suscripción
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 
@@ -101,9 +98,6 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 ## <a name="extend-the-expiration-date-of-your-subscription"></a>Ampliación de la fecha de expiración de la suscripción
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 

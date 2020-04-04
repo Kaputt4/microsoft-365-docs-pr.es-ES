@@ -24,34 +24,37 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Obtenga información sobre cómo cambiar a una nueva suscripción de Office 365 para empresas.
-ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e851ebaa89719f7dae62ed99bf72e2e2a4f361a2
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633408"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142096"
 ---
-# <a name="switch-to-a-different-office-365-for-business-plan"></a>Cambiar a otro plan de Office 365 para empresas
+# <a name="switch-to-a-different-office-365-for-business-plan"></a>Cambiar un plan distinto de Office 365 para empresas
 
 Cuando cambie su empresa o necesite más características, puede cambiar de plan.  
 
-La forma más sencilla de cambiar de plan es usar el botón **cambiar de plan** en el centro de administración. Sin embargo, el uso del botón **Cambiar de plan** no es compatible en todas las situaciones. En algunos casos, es posible que pueda cambiar de plan manualmente.
+La manera más sencilla de cambiar de plan es usar el botón **Cambiar de planes** del Centro de administración. Sin embargo, el uso del botón **Cambiar de plan** no es compatible en todas las situaciones. En algunos casos, es posible que pueda cambiar de plan manualmente.
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> Este artículo se aplica al centro de administración antiguo. Para ver el artículo sobre el nuevo centro de administración, consulte [actualizar a un plan diferente](upgrade-to-different-plan.md). El nuevo centro de administración está disponible para todos los administradores de Microsoft 365 y puede participar si selecciona la opción **probar el nuevo centro de administración** que se encuentra en la parte superior de la Página principal. Para obtener más información, consulte[acerca del nuevo centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md) 
+> Este artículo se aplica al centro de administración antiguo. Para ver el artículo sobre el nuevo centro de administración, consulte [actualizar a un plan diferente](upgrade-to-different-plan.md). El nuevo centro de administración está disponible para todos los administradores de Microsoft 365. Para obtener más información, consulte[acerca del nuevo centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+
 ::: moniker-end
 
 **¿Necesita algo más?**
+
 - [Cancelar la suscripción](cancel-your-subscription.md)
 - [Actualizar Office 365 para el hogar a una suscripción para empresas](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Llamar al soporte técnico de Microsoft](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>Usar el botón cambiar de plan
 
-Cuando use el botón **Cambiar de plan**, se le guiará por el proceso de comprar un plan al cual podrá cambiar su plan actual. Se asignarán licencias del nuevo plan a todos los usuarios y se cancelará su antiguo plan de forma automática. 
+Cuando use el botón **Cambiar de plan**, se le guiará por el proceso de comprar un plan al cual podrá cambiar su plan actual. Se asignarán licencias del nuevo plan a todos los usuarios y se cancelará su antiguo plan de forma automática.
   
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Suscripciones</a>.
 
     Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
@@ -95,4 +98,4 @@ Si desea cambiar a un plan con menos servicios, puede cambiar de plan [manualmen
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Llame al soporte técnico para ayudarle a cambiar de plan
 
-![](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Soporte técnico de llamadas](../../admin/contact-support-for-business-products.md) de teléfono
+[Llame al servicio de soporte técnico](../../admin/contact-support-for-business-products.md)

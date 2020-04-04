@@ -1,5 +1,5 @@
 ---
-title: Administrar licencias de suscripción
+title: Administrar las licencias de suscripción
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -25,23 +25,20 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Obtenga información sobre cómo agregar y quitar licencias de la suscripción de Office 365 para empresas.
-ms.openlocfilehash: 2f9c6b58a478b18fa1844c33689a8a4974a5917a
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410047"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142180"
 ---
-# <a name="manage-subscription-licenses"></a>Administrar licencias de suscripción
+# <a name="manage-subscription-licenses"></a>Administrar las licencias de suscripción
 
 Puede Agregar o quitar licencias de sus suscripciones mediante estos pasos.
 
 No puede quitar una licencia de una suscripción si está asignada a un usuario. Si desea quitar una licencia que está actualmente asignada a alguien, tendrá que [quitar las licencias de los usuarios](../../admin/manage/remove-licenses-from-users.md) antes de que pueda quitar la licencia de la suscripción.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Lo que debe saber sobre la compra de licencias para su suscripción de empresa
 
@@ -59,7 +56,7 @@ Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione la suscripción a la que desea agregar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**.
 
@@ -73,7 +70,7 @@ Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. En la página **suscripciones** , seleccione la suscripción a la que desea agregar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**.
 
@@ -87,9 +84,9 @@ Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>¿No ve el vínculo Agregar o quitar licencias?
 
-En esta tabla se describen los motivos por los que el vínculo **Agregar o quitar licencias** podría no estar disponible y qué se puede hacer al respecto. 
+En esta tabla se describen los motivos por los que el vínculo **Agregar o quitar licencias** podría no estar disponible y qué se puede hacer al respecto.
 
-|Reason  |Description  |Solución  |
+|Reason  |Descripción  |Solución  |
 |---------|---------|---------|
 |Hay pendiente una comprobación de crédito. |Si hay pendiente una comprobación de crédito, verá un mensaje "Pendiente de comprobación de crédito" y no podrá comprar licencias hasta que la comprobación se haya completado.  | Vuelva a comprobar más adelante para ver si la comprobación de crédito se ha completado. Las comprobaciones de crédito suelen tardar unos dos días laborables.<br>Una vez completada la comprobación de crédito, debería ver el vínculo **Agregar o quitar licencias** en la sección **Usuarios**. Si es así, vaya a [Manage subscription licenses](#manage-subscription-licenses). |
 |Ha activado la suscripción con una clave de producto.| Si la suscripción se compró y se activó con una clave de producto de 25 caracteres, verá el texto "Pagado por adelantado".  |Consulte [Agregar licencias a una suscripción pagada para usar una clave de producto](add-licenses-using-product-key.md). |
@@ -109,7 +106,7 @@ En esta tabla se describen los motivos por los que el vínculo **Agregar o quita
 - Si paga la suscripción mediante tarjeta de crédito o cuenta bancaria, todas las licencias nuevas que compre estarán disponibles inmediatamente después de recibir la confirmación del pedido. Si paga mediante factura, es posible que tenga que esperar una comprobación de crédito para que las nuevas licencias estén disponibles para su uso.
 
   > [!NOTE]
-  > Pagar por cuenta bancaria no está disponible en algunos países o regiones.
+  > Pagar con la cuenta bancaria no está disponible en algunos países o regiones.
 
 - Si ha pagado por adelantado la suscripción con una clave de producto, puede agregar más licencias agregando una tarjeta de crédito o una cuenta bancaria para cubrir el coste adicional de las nuevas licencias. Una vez que haya comprado las licencias nuevas, se agregará una segunda suscripción con el número de licencias nuevas que acaba de agregar. Por ejemplo, si tiene una suscripción de prepago con 5 licencias y, a continuación, ha comprado 10 licencias más, verá dos suscripciones: una con las cinco licencias de prepago y otra con las 10 licencias nuevas.
 

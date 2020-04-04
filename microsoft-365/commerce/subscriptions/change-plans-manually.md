@@ -21,17 +21,14 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Para cambiar las suscripciones manualmente, compre una nueva suscripción y asegúrese de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: 0042e0fd2fa5ac10be512246c252bc1d0f679709
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245986"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142156"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
-
-> [!NOTE]
-> Este artículo se aplica al nuevo centro de administración. El nuevo centro de administración está disponible para todos los administradores de Microsoft 365 y puede optar por seleccionar **probar el nuevo centro de administración** de alternancia ubicado en la parte superior de la Página principal. Para obtener más información, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md). Para ver el artículo sobre el centro de administración anterior, consulte [cambiar manualmente Office 365 para planes de empresa](switch-plans-manually.md).
 
 ## <a name="step-1-decide-how-to-change-plans"></a>Paso 1: decidir cómo cambiar los planes
 
@@ -52,7 +49,7 @@ Para continuar con un cambio manual, lea el [paso 2: comprar una nueva suscripci
 
 **¿Ya ha comprado?** Si ya tiene una suscripción a la que desea mover usuarios, omita este paso y vaya al [paso 3: Compruebe la nueva suscripción y las licencias](#step-3-check-your-new-subscription-and-licenses) en este tema.
 
-O BIEN
+O
 
 **Compre una suscripción y licencias nuevas:** Siga los pasos de [comprar otra suscripción de Office 365 para empresas](../buy-another-subscription.md) para comprar una nueva suscripción.
 
@@ -117,4 +114,5 @@ If you moved all users from one subscription to another, and you no longer need 
 Si movió solo algunos usuarios a una suscripción diferente, [elimine las licencias](../licenses/remove-licenses-from-subscription.md) que ya no necesite.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Llamar al soporte técnico para ayudarle a cambiar de plan
+
 [Llamar al soporte técnico de Microsoft](../../admin/contact-support-for-business-products.md)

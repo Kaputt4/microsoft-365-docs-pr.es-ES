@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Compre una suscripción de Office 365 para empresas. Puede comprar el mismo tipo de suscripción que ha probado o un plan diferente.
-ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549807"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142292"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>Proceso para comprar Office 365 de prueba
 
@@ -66,7 +66,7 @@ Es fácil y, además, si compra el mismo tipo de suscripción que el de la versi
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. En la página **Suscripciones**, seleccione el botón **Comprar ahora** para la suscripción de prueba que quiere comprar.
 
@@ -80,7 +80,7 @@ Es fácil y, además, si compra el mismo tipo de suscripción que el de la versi
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. En la página **Suscripciones**, seleccione el botón **Comprar ahora** para la suscripción de prueba que quiere comprar.
 
@@ -98,9 +98,6 @@ Si adquiere un tipo de suscripción diferente al de la versión de prueba, tendr
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
 1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de **facturación** \> .
 
 2. En la página **servicios de compra** , seleccione la suscripción que desea comprar y, a continuación, seleccione **comprar**.
@@ -117,7 +114,7 @@ Si adquiere un tipo de suscripción diferente al de la versión de prueba, tendr
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. En la página de **suscripción** , seleccione **Agregar suscripciones**.
 
@@ -139,8 +136,7 @@ Si adquiere un tipo de suscripción diferente al de la versión de prueba, tendr
 
 ::: moniker range="o365-21vianet"
 
-
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. En la página de **suscripción** , seleccione **Agregar suscripciones**.
 
@@ -159,7 +155,6 @@ Si adquiere un tipo de suscripción diferente al de la versión de prueba, tendr
 8. En la página Confirmación, seleccione **ir a**la Página principal de administración.
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>Artículos relacionados
 
