@@ -149,6 +149,8 @@
           href: document-fingerprinting.md
         - name: Funciones de DLP para información confidencial
           href: what-the-dlp-functions-look-for.md
+    - name: Cifrado en M365
+      href: encryption.md
     - name: Clave del cliente
       items:
         - name: Cifrado de servicios con clave de cliente en Office 365
@@ -200,6 +202,8 @@
               href: legacy-information-for-message-encryption.md
             - name: Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: Configurar IRM en el centro de administración de SharePoint
+      href: set-up-irm-in-sp-admin-center.md
     - name: Entender la clasificación de datos (vista previa)
       href: data-classification-overview.md
       items:
@@ -767,22 +771,22 @@
       items:
         - name: Puntuación de cumplimiento (versión preliminar)
           href: compliance-score.md
-        - name: Configurar la Puntuación de cumplimiento (versión preliminar)
+        - name: Configurar la puntuación de cumplimiento (versión preliminar)
           href: compliance-score-setup.md
-        - name: Trabajar con la Puntuación de cumplimiento (versión preliminar)
+        - name: Trabajar con la puntuación de cumplimiento (versión preliminar)
           href: working-with-compliance-score.md
-        - name: Cálculo de la Puntuación de cumplimiento (versión preliminar)
+        - name: Cálculo de puntuación de cumplimiento (versión preliminar)
           href: compliance-score-methodology.md
-        - name: Notas de la versión de la Puntuación de cumplimiento (versión preliminar)
+        - name: Notas de la versión de puntuación de cumplimiento (vista previa)
           href: compliance-score-release-notes.md
         - name: Preguntas más frecuentes sobre la puntuación de cumplimiento (vista previa)
           href: compliance-score-faq.md
-        - name: Administrador de cumplimiento (Versión preliminar)
+        - name: Administrador de cumplimiento (versión preliminar)
           href: compliance-manager-overview.md
           items:
-            - name: Novedades del Administrador de cumplimiento (Versión preliminar)
+            - name: Notas de la versión del administrador de cumplimiento (versión preliminar)
               href: compliance-manager-release-notes.md
-            - name: Trabajar con el Administrador de cumplimiento (Versión preliminar)
+            - name: Trabajar con el administrador de cumplimiento (versión preliminar)
               href: working-with-compliance-manager.md
             - name: Administrador de cumplimiento (clásico)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
