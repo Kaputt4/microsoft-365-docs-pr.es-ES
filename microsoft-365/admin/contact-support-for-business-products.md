@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Obtenga soporte técnico y de facturación llamando a los números de teléfono para su zona o región, enviando una solicitud de servicio en línea o visitando una tienda de Microsoft.
 feedback_system: None
-ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4bb35f6d8c2895ec7adf37c6b4e149962fb616bc
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106065"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142556"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contactar con soporte técnico para productos empresariales: ayuda para administradores
 
@@ -40,10 +40,7 @@ ms.locfileid: "43106065"
 
 Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a encontrar una solución o le pondremos en contacto con un experto, que se comunicará con usted por correo electrónico o teléfono. [Más información sobre los tiempos de respuesta iniciales del soporte](https://go.microsoft.com/fwlink/p/?LinkId=518251).
 
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje en el que se indica que no tiene permiso para acceder a esta página o llevar a cabo esta acción, no es administrador. [¿Quién tiene permisos de administrador en mi empresa?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje en el que se indica que no tiene permiso para acceder a esta página o llevar a cabo esta acción, no es administrador. [¿Quién tiene permisos de administrador en mi empresa?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
 2. Seleccione el botón **¿Necesita ayuda?**.
 
@@ -80,8 +77,6 @@ Ahora puede solicitar una cita en la tienda Microsoft Store local con un experto
 2. Escriba la ubicación y elija buscar para encontrar una tienda Microsoft Store cerca de usted.
 
 3. Elija su tienda y luego seleccione **Programar cita de servicio**.
-
----
 
 ::: moniker-end
 

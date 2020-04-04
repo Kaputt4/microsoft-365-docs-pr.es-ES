@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo migrar los archivos y la configuración de los usuarios.
-ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085298"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113546"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Paso 4: Migración de los archivos y la configuración del usuario
 
@@ -49,7 +49,7 @@ A la hora de decidir qué se va a mantener al migrar a un equipo nuevo o una ver
 
 Disponer de esta opción en la organización dependerá de la escala de la migración que se esté planeando. Evidentemente, existe una limitación temporal y física relacionada con trabajar directamente con los usuarios, entender sus necesidades y copiar los archivos a un equipo nuevo o recién actualizado.
 
-Si opta por una migración manual, deberá evaluar si podrá completar la tarea antes de enero de 2020, fecha de finalización de la compatibilidad con Windows 7. Si tiene dudas, considere la posibilidad de usar una de las opciones automáticas siguientes, o bien de solicitar más personas para ayudarle.
+Si opta por una migración manual, considere la posibilidad de usar una de las opciones automatizadas siguientes o de solicitar más personas para ayudarle.
 
 ## <a name="automated-migration-using-usmt"></a>Migración automatizada con USMT 
 
@@ -89,8 +89,8 @@ En Windows 10 se incluyen muchas aplicaciones integradas útiles como parte de l
 
 ## <a name="next-step"></a>Siguiente paso
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[Paso 5: Consideraciones de seguridad y cumplimiento](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[Paso 5: Consideraciones de seguridad y cumplimiento](https://aka.ms/mdd5)
 
 ## <a name="previous-step"></a>Paso anterior
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[Paso 3: Entrega de aplicaciones de Office y de LOB](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[Paso 3: Entrega de aplicaciones de Office y de LOB](https://aka.ms/mdd3)

@@ -22,18 +22,20 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Cambie Office 365 para las suscripciones empresariales manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354716"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142108"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Cambiar manualmente Office 365 para planes de empresas
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> Este artículo se aplica al centro de administración antiguo. Para ver el artículo sobre el nuevo centro de administración, vea el tema sobre los [planes de cambio de forma manual](change-plans-manually.md). El nuevo centro de administración está disponible para todos los administradores de Microsoft 365 y puede participar si selecciona la opción **probar el nuevo centro de administración** que se encuentra en la parte superior de la Página principal. Para obtener más información, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Este artículo se aplica al centro de administración antiguo. Para ver el artículo sobre el nuevo centro de administración, vea el tema sobre los [planes de cambio de forma manual](change-plans-manually.md). El nuevo centro de administración está disponible para todos los administradores de Microsoft 365. Para obtener más información, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Paso 1: decidir cómo cambiar de plan
@@ -62,7 +64,7 @@ Asegúrese de comprar una suscripción para la misma organización en la que se 
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Paso 3: comprobar la nueva suscripción y las licencias
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Suscripciones</a>.
 
     Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 

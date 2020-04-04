@@ -5,14 +5,14 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204239"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142688"
 ---
-# <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el escritorio administrado por Microsoft?
+# <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
 
 El escritorio administrado de Microsoft es un servicio basado en la nube que reúne [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (incluidos [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise y [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) y agregando estas características:
@@ -67,13 +67,14 @@ También supervisamos el estado del dispositivo y le proporcionamos información
 ## <a name="need-more-details"></a>¿Necesita más información?
 Para obtener más información sobre el valor de escritorio administrado por Microsoft, incluidas las historias de clientes, vea [escritorio administrado de Microsoft](https://aka.ms/mmd). Los excelentes lugares para empezar con más información son el [plan de desarrollo](https://aka.ms/AA6jiam) y un resumen de [una página](https://aka.ms/AA6ob3h)que se pueden descargar. Puede encontrar las últimas noticias en el [blog](https://aka.ms/AA6l2dd)de Microsoft Managed Desktop.
 
-Si el escritorio administrado de Microsoft parece adecuado para su organización, puede profundizar en documentación adicional que explica más sobre el servicio, cómo preparar la organización para inscribirse, cómo empezar a trabajar con el servicio y las operaciones en curso a partir de ese momento, incluir cómo usted y los usuarios finales pueden obtener fácilmente ayuda si es necesario. Si ya está listo para incorporarse, empiece con ponerse en contacto con el [equipo de cuenta local](https://pages.email.office.com/contactmmd/).
+Si el escritorio administrado de Microsoft parece adecuado para su organización, puede profundizar en documentación adicional que explica mejor el servicio, cómo preparar la organización para inscribirse, cómo empezar a trabajar con el servicio y las operaciones en curso a partir de entonces, incluido cómo usted y sus usuarios finales pueden obtener fácilmente ayuda si es necesario. Si ya está listo para incorporarse, empiece con ponerse en contacto con el [equipo de cuenta local](https://pages.email.office.com/contactmmd/).
 
 **Información general y antecedentes** Principalmente para los responsables de decisiones técnicas y empresariales, estos temas detallan la división de roles y responsabilidades entre su organización y Microsoft, más sobre las tecnologías usadas en el escritorio administrado por Microsoft y cómo el servicio encaja en una estrategia más amplia como parte del marco de ITIL.
 
 - [Roles y responsabilidades del escritorio administrado por Microsoft](roles-and-responsibilities.md)
 - [Tecnologías de escritorio administradas de Microsoft](technologies.md)
 - [Escritorio administrado de Microsoft y ITIL](../MMD-and-ITSM.md)
+- [Cumplimiento](compliance.md)
 - [Descripción del servicio Escritorio administrado de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 Prepárese **para la inscripción** En estos temas se describen los pasos que debe seguir en su organización para prepararse para la inscripción, incluida la comprobación de que el entorno cumple los requisitos previos clave, la configuración de redes, la configuración de certificados y la preparación de las aplicaciones.

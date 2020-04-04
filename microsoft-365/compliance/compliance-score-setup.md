@@ -13,24 +13,26 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo iniciar sesión, configurar permisos y comprender el panel para la puntuación de cumplimiento de Microsoft, que ayuda a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Obtenga información sobre cómo configurar y empezar a usar la puntuación de cumplimiento de Microsoft, que ayuda a simplificar y automatizar las evaluaciones de riesgos.
+ms.openlocfilehash: 334eb47ebf5057bfa1c426715e8f404979ceaf5b
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635128"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141525"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configuración de la puntuación de cumplimiento de Microsoft (versión preliminar)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-El administrador global de Microsoft 365 para su organización probablemente será el primer usuario para obtener acceso a la puntuación de cumplimiento. Se recomienda el inicio de sesión de administrador global y la configuración de los permisos de usuario, como se describe a continuación, al visitar la puntuación de cumplimiento por primera vez.
+El administrador global de Microsoft 365 para su organización probablemente será el primer usuario para obtener acceso a la puntuación de cumplimiento. Le recomendamos que inicie sesión en el administrador global y establezca los permisos de usuario como se describe a continuación cuando visite la puntuación de cumplimiento por primera vez.
 
 ## <a name="sign-in"></a>Iniciar sesión
 
 1. Vaya al [centro de cumplimiento de microsoft 365](https://compliance.microsoft.com/) e **inicie sesión** con su cuenta de administrador global de Microsoft 365.
 2. Seleccione **puntuación de cumplimiento** en el panel de navegación izquierdo. A continuación, debería ver el [Panel de puntuación de cumplimiento con su puntuación](#understand-the-compliance-score-dashboard).
+
+El vínculo directo para obtener la puntuación de cumplimiento [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore)es:.
 
 ## <a name="set-user-permissions-and-assign-roles"></a>Establecimiento de permisos de usuario y asignación de roles
 
@@ -38,9 +40,9 @@ La puntuación de cumplimiento usa un modelo de permisos de control de acceso ba
 
 ### <a name="where-to-set-permissions"></a>Dónde establecer permisos
 
-El administrador global de su organización puede establecer permisos de usuario en el centro de cumplimiento de Microsoft 365 o en Azure Active Directory (Azure AD). Una vez que las funciones se establecen en cualquiera de estas ubicaciones, los usuarios podrán acceder a la puntuación de cumplimiento (así como al administrador de cumplimiento).
+El administrador global de su organización puede establecer permisos de usuario en el centro de cumplimiento de Microsoft 365 o en Azure Active Directory (Azure AD). Una vez que las funciones se establecen en cualquiera de estas ubicaciones, los usuarios pueden acceder a la puntuación de cumplimiento y al administrador de cumplimiento.
 
-Tenga en cuenta que los roles del administrador de cumplimiento **existentes no se** transfieren a la puntuación de cumplimiento.  Esto significa que si anteriormente se le asignó un rol en el administrador de cumplimiento, ese rol no le concederá acceso a la puntuación de cumplimiento. El administrador global tendrá que establecer permisos y un rol para usted en el centro de cumplimiento de Microsoft 365 o en Azure AD para que pueda obtener acceso a la puntuación de cumplimiento.
+Tenga en cuenta que los roles del administrador de cumplimiento **existentes no se** transfieren a la puntuación de cumplimiento. Si tiene un rol en el administrador de cumplimiento y es nuevo en la puntuación de cumplimiento, el rol de administrador de cumplimiento no le concederá acceso a la puntuación de cumplimiento. El administrador global tendrá que establecer permisos y un rol para usted en el centro de cumplimiento de Microsoft 365 o en Azure AD para que pueda obtener acceso a la puntuación de cumplimiento.
 
 ### <a name="role-types"></a>Tipos de funciones
 
@@ -68,7 +70,7 @@ Para establecer permisos en el centro de cumplimiento de Microsoft 365:
 
 ## <a name="configure-automatic-secure-score-updates"></a>Configurar actualizaciones de calificación segura automáticas
 
-De forma predeterminada, todos los nuevos inquilinos tienen activada la opción actualizaciones automáticas de [puntuación segura](../security/mtp/microsoft-secure-score.md) . Esto significa que todas las acciones supervisadas por la calificación segura actualizarán automáticamente el estado de la misma acción en la puntuación de cumplimiento.
+De forma predeterminada, todos los nuevos inquilinos tienen activada la opción actualizaciones automáticas de [puntuación segura](../security/mtp/microsoft-secure-score.md) . Todas las acciones que se supervisan con calificación segura actualizarán automáticamente el estado de la misma acción en la puntuación de cumplimiento.
 
 El administrador global puede administrar esta configuración para desactivar las actualizaciones automáticas para todas las acciones, o bien establecer actualizaciones para las acciones de forma individual.
 
@@ -84,7 +86,7 @@ Para administrar las actualizaciones de calificaciones seguras automáticas, sig
 
 Si elige **establecer por acción,** siga estos pasos adicionales para activar las actualizaciones de puntuación segura para acciones individuales:
 
-4. Seleccione **Administrador de cumplimiento** en el menú superior (Nota: no seleccione "Administrador de cumplimiento (clásico)").
+4. Seleccione **Administrador de cumplimiento** en el menú superior (no seleccione "Administrador de cumplimiento (clásico)", que es un producto heredado).
 
 5. Seleccione **Administración de inquilinos** en la esquina superior derecha de la pantalla.
 
@@ -106,7 +108,7 @@ El panel de calificaciones de cumplimiento está diseñado para proporcionar una
 
 ### <a name="overall-compliance-score"></a>Puntuación de cumplimiento general
 
-La puntuación de cumplimiento, destacada en la parte superior, muestra un porcentaje basado en puntos alcanzables para completar acciones de mejora que se redirigen a normas y regulaciones clave de protección de datos.
+La puntuación de cumplimiento se presenta destacadamente en la parte superior. Muestra un porcentaje basado en puntos que se alcanzan para completar acciones de mejora que abordan los estándares y regulaciones clave de protección de datos.
 
 Cuando llega a la puntuación de cumplimiento por primera vez, su puntuación inicial se basa en la línea de base de protección de datos de Microsoft 365 integrada: un conjunto de controles que incluye normas y estándares comunes de la industria. Como la puntuación de cumplimiento examina el sistema de soluciones de Microsoft 365 existentes, ofrece una evaluación inicial de su postura de cumplimiento según la configuración de privacidad y seguridad que la organización habilita actualmente.
 
@@ -114,11 +116,11 @@ A medida que agregue evaluaciones relevantes para su organización, su puntuaci�
 
 ### <a name="key-improvement-actions"></a>Acciones para la mejora de claves
 
-En esta sección se enumeran las acciones de mejora más importantes que puede realizar ahora para hacer el mayor impacto positivo en la puntuación de cumplimiento general. Enumera las acciones que no se han completado o que han fallado con la evaluación con riesgos elevados.
+En esta sección se enumeran las acciones de mejora más importantes que puede realizar ahora para hacer el mayor impacto positivo en la puntuación de cumplimiento general.
 
 ### <a name="solutions-that-affect-your-score"></a>Soluciones que afectan a su calificación
 
-En esta sección se muestra qué soluciones contienen acciones con la mayor oportunidad de influir positivamente en su puntuación y cuántas acciones de mejora pendientes tiene en cada solución.
+En esta sección se muestran soluciones que contienen acciones con la mayor oportunidad de afectar positivamente su puntuación y el número de acciones de mejora pendientes en cada solución.
 
 ### <a name="compliance-score-breakdown"></a>Desglose de puntuación de cumplimiento
 
@@ -134,9 +136,9 @@ Puede filtrar la vista del panel para ver solo los elementos relacionados con la
 Para aplicar filtros:
 
 1. Seleccione **filtrar** en la parte superior derecha del panel.
-2. Seleccione los criterios de filtro en el panel de **filtros** de FLYOUT y seleccione **aplicar**.
+2. Seleccione los criterios de filtro en el panel desplegable **filtros** y, después, seleccione **aplicar**.
 
-Una vez aplicado un filtro, verá ajustado su puntuación en tiempo real. El porcentaje de puntuación de cumplimiento e información desglosada, y las acciones y soluciones de mejora, ahora solo pertenecen a los datos cubiertos por los criterios de filtro. Si sale de la puntuación de cumplimiento, la vista filtrada permanecerá cuando vuelva a iniciar sesión.
+Después de aplicar un filtro, verá su puntuación ajustada en tiempo real. El porcentaje de puntuación de cumplimiento e información desglosada, y las acciones y soluciones de mejora, ahora solo pertenecen a los datos cubiertos por los criterios de filtro. Si sale de la puntuación de cumplimiento, la vista filtrada permanecerá cuando vuelva a iniciar sesión.
 
 Para quitar filtros:
 

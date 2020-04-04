@@ -14,26 +14,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar las herramientas de flujo de trabajo en la puntuación de cumplimiento de Microsoft para administrar el cumplimiento de la organización.
-ms.openlocfilehash: 046a370fe1294220ee4ee6150311df5f51905674
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fe36f0cdf5e204e0fa6150141cc348b0d0e325f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601197"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142591"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Trabajar con la puntuación de cumplimiento de Microsoft (versión preliminar)
 
-## <a name="managing-your-workflow-with-improvement-actions"></a>Administración del flujo de trabajo con acciones de mejora
+En este artículo se explica cómo trabajar con los elementos clave de la puntuación de cumplimiento. Aprenderá a usar acciones de **mejora** para administrar el flujo de trabajo de cumplimiento. También aprenderá a usar la información de las páginas de **soluciones** y de **evaluaciones** , y a generar informes.
 
-El uso de acciones de mejora en la puntuación de cumplimiento centraliza los flujos de trabajo de cumplimiento. Las acciones de mejora sugieren acciones recomendadas para alinearse con los estándares y las normas de protección de datos y proporcionar una guía de implementación detallada. Puede asignarlos a los usuarios para que realicen las tareas de implementación y pruebas necesarias. También puede almacenar documentación y notas, y registrar actualizaciones de estado directamente en la acción de mejora en sí.
+## <a name="manage-your-workflow-with-improvement-actions"></a>Administrar el flujo de trabajo con acciones de mejora
+
+**Las acciones de mejora** centralizan las actividades de cumplimiento. Cada acción de mejora proporciona una guía de implementación detallada para ayudarle a alinearse con las normas y estándares de protección de datos. Se pueden asignar acciones a los usuarios de su organización para realizar tareas de implementación y pruebas. También puede almacenar la documentación, las notas y las actualizaciones de estado de registro dentro de la acción de mejora.
 
 ## <a name="view-your-improvement-actions"></a>Ver las acciones de mejora
 
-El panel de calificaciones de cumplimiento muestra las **acciones de mejora de clave**, es decir, las que tienen los puntos más disponibles que abordan los problemas más importantes.
+El panel de calificaciones de cumplimiento muestra las **acciones de mejora de clave**, es decir, las que tienen los puntos más disponibles para solucionar los problemas más importantes.
 
-Para ver todas las acciones de mejora, seleccione la pestaña **acciones de mejora** del panel o seleccione **ver todas las acciones de mejora** debajo de la lista de acciones de mejora de clave en el panel. Esto le lleva a la página **acciones de mejora** , donde puede ver todas las acciones de mejora de su organización.
+Para ver todas las acciones de mejora en la página **acciones** de mejora, seleccione la pestaña **acciones de mejora** del panel. O bien, seleccione **ver todas las acciones de mejora** , debajo de la lista de acciones de mejora de clave en el panel.
 
-Si tiene una larga lista de acciones, puede resultar útil filtrar la vista. Para ello, seleccione **filtro** en la esquina superior derecha de la lista acciones. Cuando aparezca el panel desplegable **filtros** , seleccione los criterios que desee en función de las regulaciones y los estándares, la solución y el grupo. También puede personalizar la vista seleccionando **Grupo** en la esquina superior derecha y, en el menú desplegable, seleccionar para ver por grupo, solución, categoría, tipo de acción o estado.
+Si tiene una larga lista de acciones, puede resultar útil filtrar la vista. Seleccione **filtro** en la esquina superior derecha de la lista acciones. Cuando aparezca el panel desplegable **filtros** , seleccione los criterios en función de las regulaciones y los estándares, la solución y el grupo. También puede personalizar la vista seleccionando **Grupo** en la esquina superior derecha. En el menú desplegable, seleccione Ver por grupo, solución, categoría, tipo de acción o estado.
 
 La vista predeterminada de esta página no muestra acciones de mejora con el estado de prueba **aprobado**. Para ver las acciones que han superado la prueba, active la casilla **aprobado** en el panel flotante de **filtros** . Solo acciones con un estado de prueba de recuento **aprobado** hacia su calificación.
 
@@ -44,7 +46,7 @@ La página acciones de mejora muestra los siguientes puntos de datos para cada a
 - **Grupo**: el grupo al que asignó la acción
 - **Soluciones**: la solución en la que puede realizar la acción.
 - **Evaluaciones**: la evaluación (que organiza los controles para cumplir un determinado objetivo de cumplimiento) en el que reside la acción.
-- **Categorías**: categoría de protección de datos relacionada (es decir, proteger la información, administrar dispositivos, etc.)
+- **Categorías**: categoría de protección de datos relacionada (por ejemplo, proteger la información, administrar dispositivos, etc.)
 - **Estado**de la prueba:
     - **Ninguna** : no hay ninguna actualización de estado registrada
     - **No evaluado** : no se han iniciado las pruebas
@@ -56,9 +58,9 @@ La página acciones de mejora muestra los siguientes puntos de datos para cada a
 
 ### <a name="improvement-actions-details"></a>Detalles de acciones de mejora
 
-Cada acción de mejora tiene una página de detalles. Esta página contiene instrucciones de implementación detalladas, que explican cómo realizar las acciones recomendadas para abordar los estándares relacionados y los requisitos normativos que aparecen en el encabezado **de un vistazo** .
+Cada acción de mejora tiene una página de detalles. Esta página incluye instrucciones detalladas de implementación para completar las acciones recomendadas para satisfacer los estándares relacionados y los requisitos normativos que aparecen en el encabezado **de un vistazo** .
 
-La página Detalles es donde puede iniciar la acción recomendada o asignar el trabajo a otro usuario, actualizar el estado y adjuntar notas y documentación.
+La página Detalles es donde puede iniciar la acción recomendada. También puede asignar el trabajo a otro usuario, actualizar el estado y adjuntar notas y documentación.
 
 Para ver la página de detalles de una acción de mejora:
 
@@ -73,7 +75,7 @@ Para comenzar el trabajo de implementación en una acción de mejora, puede real
 
 - Un propietario de la directiva de la empresa
 - Un implementador de TI
-- Otro empleado con responsabilidad de realizar la tarea 
+- Otro empleado con responsabilidad de realizar la tarea
 
 Una vez identificada la persona adecuada, asegúrese de que desempeña un [papel](compliance-score-setup.md#set-user-permissions-and-assign-roles) suficiente en la puntuación de cumplimiento (Administrador de cumplimiento, administrador de datos de cumplimiento, administrador de seguridad o administrador global) para realizar el trabajo y, a continuación, siga estos pasos: 
 
@@ -87,7 +89,7 @@ A continuación, el usuario asignado puede llevar a cabo las acciones recomendad
 
 ## <a name="perform-work-and-store-documentation"></a>Realizar la documentación del trabajo y la tienda
 
-Al realizar el trabajo de implementación, puede cargar archivos y notas directamente en la acción de mejora en la sección de **notas y documentación** . Esto proporciona un repositorio centralizado y seguro para ayudarle a demostrar la satisfacción de los controles para cumplir con las normas y regulaciones de cumplimiento. Cualquier usuario con acceso de solo lectura puede leer el contenido de esta sección. La capacidad para cargar, descargar o eliminar campos, o para escribir o editar notas, está restringida a roles con derechos de edición.
+Al realizar el trabajo de implementación, puede cargar archivos y notas directamente en la acción de mejora en la sección de **notas y documentación** .  Este entorno es un repositorio centralizado y seguro que le ayuda a demostrar la satisfacción de los controles para cumplir con las normas y regulaciones de cumplimiento. Cualquier usuario con acceso de solo lectura puede leer el contenido de esta sección. Solo los usuarios con derechos de edición pueden cargar y descargar archivos y escribir o editar notas.
 
 Entre los campos de la sección **notas y documentación** se incluyen:
 
@@ -104,7 +106,7 @@ Entre los campos de la sección **notas y documentación** se incluyen:
 
 **Implementación, prueba y notas adicionales**
 
-- Para agregar notas en cualquiera de estos tres campos, seleccione **Editar notas de implementación** debajo de cualquiera de thse campos.
+- Para agregar notas en cualquiera de estos tres campos, seleccione **Editar notas de implementación** debajo de cualquiera de estos campos.
 - Cuando se abra el panel flotante, escriba notas en el campo de texto y, a continuación, seleccione **Guardar y cerrar**.
 - Para editar notas, seleccione **Editar notas de implementación**, realice las modificaciones y, a continuación, seleccione **Guardar y cerrar**.
 
@@ -157,7 +159,7 @@ La página soluciones muestra el recurso compartido de puntos potenciales y gana
 
 ### <a name="filtering-your-solutions-view"></a>Filtrar la vista de soluciones
 
-Para filtrar la vista de las soluciones: 
+Para filtrar la vista de las soluciones:
 
 1. Seleccione **filtrar** en la esquina superior izquierda de la lista de evaluaciones.
 2. En el panel de **filtros** de control flotante, realice una comprobación junto a los criterios que desee (normas y regulaciones, solución, tipo de acción, grupo de administradores de cumplimiento, categoría).
@@ -167,13 +169,13 @@ También puede modificar la vista para ver las evaluaciones por grupo, producto 
 
 ### <a name="taking-actions-from-the-solutions-page"></a>Emprender acciones desde la página soluciones
 
-La página soluciones muestra las soluciones de su organización que están conectadas a acciones de mejora. En la tabla se muestra la contribución de cada solución a la puntuación general, los puntos de mejora de la puntuación alcanzados y posibles dentro de esa solución y el número restante de acciones de mejora agrupadas en esa solución que pueden aumentar la puntuación. 
+La página soluciones muestra las soluciones de su organización que están conectadas a acciones de mejora. En la tabla se muestra la contribución de cada solución a la puntuación general, los puntos de mejora de la puntuación alcanzados y posibles dentro de esa solución y el número restante de acciones de mejora agrupadas en esa solución que pueden aumentar la puntuación.
 
 Hay dos formas de realizar acciones en esta pantalla:
 
-1. En la fila de la solución deseada, en la columna **acciones restantes** , haga clic o pulse en el número de hipervínculo. Esto le llevará a una vista filtrada de la pantalla acciones de mejora que muestra acciones de mejora no probadas para dicha solución.
+1. En la fila de la solución deseada, en la columna **acciones restantes** , seleccione el número de hipervínculo. Verá una vista filtrada de la pantalla acciones de mejora que muestra acciones de mejora no probadas para dicha solución.
 
-2. En la fila de la solución deseada, en la columna **Abrir solución** , seleccione **abrir**. Esto le llevará a la solución o ubicación en los centros de seguridad y cumplimiento de Microsoft 365 y Office 365 donde puede llevar a cabo la acción recomendada.
+2. En la fila de la solución deseada, en la columna **Abrir solución** , seleccione **abrir**. Verá la solución o la ubicación en los centros de seguridad y cumplimiento de Microsoft 365 y Office 365 donde puede llevar a cabo la acción recomendada.
 
 ## <a name="assessments-page"></a>Página evaluaciones
 
@@ -185,25 +187,25 @@ En esta página, puede ver rápidamente información importante sobre cada evalu
 
 - **Status**: el estado hacia la finalización de todas las acciones de mejora en la evaluación se mostrará como:
     - **No conforme**: las acciones de mejora en la evaluación no se han implementado y se han probado correctamente; el trabajo todavía no ha empezado
-    - **En curso**: el trabajo se está llevando a cabo para implementar o probar las acciones de mejora; Esto puede significar, por ejemplo, que una acción de mejora en la evaluación ha sido asignada para el trabajo, está en proceso de implementación y prueba.
+    - **En curso**: el trabajo se está llevando a cabo para implementar o probar las acciones de mejora; por ejemplo, una acción de mejora en la evaluación ha sido asignada para el trabajo, está en proceso de implementarse y probarse
 - **Progreso**de la evaluación: porcentaje de trabajo realizado hacia la finalización final de la evaluación, medido por el número de controles que se han probado correctamente.
 - **Acciones administradas por el cliente**: el número de acciones completadas para satisfacer la implementación de los controles administrados por el cliente.
 - **Acciones administradas por Microsoft**: el número de acciones completadas para satisfacer la implementación de controles administrados por Microsoft
 - **Grupo de evaluación**: nombre del grupo que ha creado, en el que reside la evaluación.
 - **Servicios relacionados**: servicio Microsoft 365 asociado
-- **Regulaciones relacionadas**: el estándar normativo, la política o la legislación que la evaluación busca cumplir.
+- **Regulaciones relacionadas**: el estándar normativo, la política o la legislación que la evaluación busca cumplir
 
 ### <a name="default-assessments"></a>Evaluaciones predeterminadas
 
-De forma predeterminada, verá la evaluación de línea base de protección de datos 365 de Microsoft en la página evaluaciones. La puntuación de cumplimiento también proporciona varias evaluaciones no actualizadas ([vea la lista completa](compliance-score.md#templates)). Si desea agregar más evaluaciones para cubrir otras normativas y estándares, puede hacerlo en el administrador de cumplimiento.
+De forma predeterminada, verá la evaluación de línea base de protección de datos 365 de Microsoft en la página evaluaciones. La puntuación de cumplimiento también proporciona varias evaluaciones preconfiguradas ([ver la lista completa](compliance-score.md#templates)). Puede agregar más evaluaciones para cubrir otros reglamentos y normas en el administrador de cumplimiento.
 
 ### <a name="managing-assessments"></a>Administración de evaluaciones
 
-Durante la vista previa pública, la funcionalidad para ver, crear, exportar y archivar evaluaciones se mantiene en la herramienta Administrador de cumplimiento. 
+Durante la versión preliminar pública, irá a la herramienta Administrador de cumplimiento para mostrar, personalizar y administrar sus evaluaciones.
 
-Para administrar sus evaluaciones, seleccione **administrar evaluaciones en el administrador de cumplimiento** en la parte superior de la lista de evaluaciones.
+En la página **evaluaciones** de la puntuación de cumplimiento, seleccione **administrar evaluaciones en Administrador de cumplimiento** en la parte superior de la lista de evaluaciones. Este vínculo le lleva a su panel de **evaluaciones** en el administrador de cumplimiento.
 
-El otro vínculo en la parte superior de la lista de evaluaciones, **acciones de Microsoft en el administrador de cumplimiento**, le lleva a la página del administrador de cumplimiento que muestra los controles de Microsoft que contribuyen a la puntuación de cumplimiento.
+El otro vínculo en la parte superior de la lista de evaluaciones, **acciones de Microsoft en el administrador de cumplimiento**, le lleva a su panel de **información de controles** en el administrador de cumplimiento que muestra los controles de Microsoft que contribuyen a la puntuación de cumplimiento.
 
 ### <a name="filtering-your-assessments-view"></a>Filtrar la vista de evaluaciones
 
@@ -221,6 +223,11 @@ En la lista de evaluaciones, en la columna **acciones administradas por el clien
 
 ## <a name="reporting"></a>Reporting
 
-Puede exportar un informe de todas las acciones de mejora en la puntuación de cumplimiento. En la página **acciones de mejora** , seleccione **exportar** en la esquina superior izquierda de la pantalla, encima de la lista de acciones. Esto generará una hoja de cálculo de Excel con todas las acciones de mejora y las categorías de filtro que se muestran en la página **acciones de mejora** , que puede ver y guardar en el equipo local.
+Puede exportar un informe de todas las acciones de mejora en la puntuación de cumplimiento. En la página **acciones de mejora** , seleccione **exportar** en la esquina superior izquierda de la pantalla, encima de la lista de acciones. Esto generará una hoja de cálculo de Excel con todas las acciones de mejora y las categorías de filtro que se muestran en la página **acciones de mejora** .
 
-También puede exportar un informe desde el administrador de cumplimiento. En el administrador de cumplimiento, vaya a la pestaña **información de controles** y seleccione **exportar** en la sección superior derecha de la pantalla. Esto genera una hoja de cálculo de Excel que puede ver y guardar.
+También puede exportar un informe del administrador de cumplimiento siguiendo estos pasos:
+
+1. En el administrador de cumplimiento, vaya al panel de **información de controles** .
+2. Verá una pestaña **evaluación** y una pestaña **plantilla** .  
+3. Para exportar una evaluación: seleccione la pestaña **evaluación** . Use los menús desplegables **Grupo** y **evaluación** para seleccionar la evaluación que desea exportar. Seleccione **exportar** cerca de la parte superior derecha de la pantalla. Se descargará un archivo de Excel. Incluye una lista de acciones, agrupadas por control, con los detalles de la implementación y la prueba.
+4. Para exportar una plantilla: seleccione la pestaña **plantilla** y elija la plantilla que desea exportar en el menú desplegable de **plantillas** . Seleccione **exportar** cerca de la parte superior derecha de la pantalla. Se descargará un archivo de Excel. Incluye una lista de acciones, agrupadas por control, con los detalles de la implementación y la prueba.

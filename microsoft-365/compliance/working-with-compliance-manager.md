@@ -13,36 +13,33 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo relacionadas con los productos de Microsoft.
-ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo. Úsela para realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo relacionadas con los productos de Microsoft.
+ms.openlocfilehash: aaae5f1123872367ad98466833f9e06210bfb652
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634138"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142665"
 ---
-# <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
+# <a name="working-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
 > [!IMPORTANT]
-> El administrador de cumplimiento de Microsoft es un panel y una herramienta de administración que proporciona un resumen de la protección de datos y las recomendaciones de Stature y recomendaciones para mejorar el cumplimiento y la protección de datos. Las acciones del cliente que se proporcionan en el administrador de cumplimiento son recomendaciones; para evaluar la efectividad de estas recomendaciones en su entorno de reglamentación respectivo antes de la implementación, depende de su organización. Las recomendaciones que se encuentran en el administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento.
+> El administrador de cumplimiento de Microsoft es un panel y una herramienta de administración que proporciona un resumen de la protección de datos y las recomendaciones de Stature y recomendaciones para mejorar el cumplimiento y la protección de datos. Las acciones del cliente que se proporcionan en el administrador de cumplimiento son recomendaciones. Para evaluar la efectividad de estas recomendaciones en su entorno de reglamentación respectivo antes de la implementación, depende de su organización. Las recomendaciones que se encuentran en el administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento.
 
 ## <a name="access-compliance-manager"></a>Acceso al administrador de cumplimiento
 
-Para obtener acceso al Administrador de cumplimiento, vaya al Portal de confianza de servicios. Cualquier usuario con una cuenta Microsoft o una cuenta de organización de Azure Active Directory puede obtener acceso al Administrador de cumplimiento.
-  
-1. Vaya a [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
+Se puede tener acceso al administrador de cumplimiento desde el portal de confianza de servicios de Microsoft. Cualquier usuario con una cuenta de Microsoft o una cuenta profesional de Azure Active Directory puede obtener acceso al administrador de cumplimiento.
+
+1. Vaya a [https://servicetrust.microsoft.com/ComplianceManager/V3](https://servicetrust.microsoft.com/ComplianceManager/V3).
 
 2. Inicie sesión con su cuenta de servicio de Microsoft, que es la cuenta de usuario de Office 365, Microsoft 365 o Azure Active Directory (Azure AD).
 
-3. En el portal de confianza de servicios, se recomienda seleccionar el **Administrador de cumplimiento**, que es la versión preliminar con las características más recientes. El **Administrador de cumplimiento (clásico)** le lleva a la versión anterior del administrador de cumplimiento.
-
-4. Cuando se muestre el acuerdo de no divulgación, léalo y seleccione **Aceptar**, que muestra el panel del administrador de cumplimiento.
-
-Para comenzar, aparece una evaluación ISO/IEC 27001:2103 para Office 365 de forma predeterminada para su organización.
+> [!NOTE]
+> En el portal de confianza de servicios, seleccione **Administrador de cumplimiento**, que es la versión preliminar con las características más recientes. No seleccione **Administrador de cumplimiento (Classic)**, que contiene las características heredadas que no se incluyen en esta documentación.
 
 ## <a name="administration"></a>Administración
 
-Hay funciones administrativas específicas que solo están disponibles para el administrador global y solo están visibles cuando inicia sesión con una cuenta de administrador global. El administrador global puede asignar permisos de usuario y puede activar actualizaciones automáticas de puntuación segura para todas las acciones.
+Hay funciones administrativas específicas que solo están disponibles para el administrador global y solo están visibles cuando inicia sesión con una cuenta de administrador global. El administrador global puede asignar permisos de usuario y activar actualizaciones automáticas de puntuaciones seguras.
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Asignar roles del Administrador de cumplimiento a usuarios
 
@@ -110,17 +107,21 @@ Puede agrupar las evaluaciones de forma lógica para usted, como por año, está
   - Office 365 + ISO 27018:2014
 
 > [!NOTE]
-> Le recomendamos que determine una estrategia de agrupación para su organización *antes* de agregar nuevas evaluaciones. De forma predeterminada, hay disponible un grupo denominado "grupo predeterminado" para las evaluaciones iniciales.
+> Le recomendamos que determine una estrategia de agrupación para su organización *antes* de agregar nuevas evaluaciones.
+
+Para empezar, se configura un grupo **predeterminado** que contiene la línea base de protección de datos. Esta línea base es un conjunto de controles que incluye normas y estándares comunes de la industria (más[información](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
 ### <a name="how-to-create-a-group"></a>Cómo crear un grupo
 
-No se pueden crear grupos como entidades independientes. Un grupo siempre debe contener al menos una evaluación, por lo que, para poder crear un grupo, primero debe crear una evaluación para colocarla en el grupo. Siga los pasos siguientes para crear un grupo:
+No se pueden crear grupos como entidades independientes. Un grupo siempre debe contener al menos una evaluación, por lo que, para poder crear un grupo, primero debe crear una evaluación para colocarla en el grupo.
+
+Siga los pasos siguientes para crear un grupo:
 
 1. Cree una nueva evaluación seleccionando **+ Agregar evaluación** cerca de la parte superior del panel.
 2. En el panel desplegable **evaluación** , escriba un título para la evaluación y seleccione una plantilla en el menú desplegable.
 3. En **Seleccione un grupo o agregue un nuevo grupo**, seleccione **Agregar un nuevo grupo** y escriba el nombre del grupo en el campo siguiente.
 4. Para copiar la información de un grupo existente, active la opción **¿desea copiar los datos de un grupo existente?** a **activado.** Seleccione el grupo que desea copiar en el menú desplegable que hay debajo y active las casillas de verificación de los campos que desee aplicar a la nueva evaluación en el nuevo grupo.
-5. Haga clic en **Guardar**. Cuando haya finalizado, el panel de control flotante se cerrará y el nuevo grupo se mostrará automáticamente en el panel.
+5. Haga clic en **Guardar**. Cuando haya finalizado, el panel de control flotante se cerrará y verá el nuevo grupo en el panel.
 
 Qué se debe saber al trabajar con grupos:
   
@@ -132,27 +133,25 @@ Qué se debe saber al trabajar con grupos:
 - Los grupos pueden contener evaluaciones para la misma certificación o reglamentación, pero cada grupo solo puede contener una evaluación para un par de certificación de producto específico. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 y NIST CSF. Un grupo puede contener varias evaluaciones para el mismo producto solo si la certificación o el Reglamento correspondiente para cada uno es diferente.
 - La ocultación de una evaluación rompe la relación entre esa evaluación y el grupo. Las actualizaciones adicionales a otras evaluaciones relacionadas ya no se reflejan en la evaluación oculta. ([Obtenga información sobre cómo ocultar evaluaciones).](#hide-a-template-or-an-assessment)
 - No se pueden eliminar los grupos.
+- Cuando se realiza un cambio en un elemento de acción que aparece en varios grupos, el cambio se refleja en todas las instancias de ese elemento de acción.
 
-## <a name="tenant-management"></a>Administración de inquilinos
+## <a name="tenant-management-of-dimensions-owners--customer-actions"></a>Administración de inquilinos de dimensiones, propietarios & acciones de los clientes
 
-El administrador de cumplimiento (versión preliminar) incluye una nueva interfaz para administrar los nuevos elementos de datos denominados **Administración de inquilinos**. Esta interfaz permite administrar la configuración de todos los inquilinos:
+La interfaz de **Administración de inquilinos** le permite administrar la configuración de toda la organización:
 
 - **Dimensiones:** Permite ver los metadatos de plantillas, evaluaciones y elementos de acción que permiten crear tablas dinámicas personalizadas para los filtros.
-- **Propietarios:** Especifique un propietario para cada elemento de acción.
+- **Propietarios:** Rellenar una lista de partes responsables que se pueden asociar con acciones.
 - **Acciones del cliente:** Administrar la lista completa de elementos de acciones incluidos en el administrador de cumplimiento (versión preliminar) y habilitar o deshabilitar el control de puntuación segura para acciones integradas con puntuación segura.
 
-Seleccione **Administración de inquilinos** para abrir la interfaz de administración y use los siguientes pasos para administrar las **dimensiones**, los **propietarios**y **las acciones del cliente**.
+Seleccione **Administración de inquilinos** en la esquina superior derecha de la pantalla para abrir la interfaz de administración y siga los pasos a continuación para administrar **dimensiones**, **propietarios**y **acciones del cliente**.
 
 ### <a name="dimensions"></a>Dimensions
 
-Las dimensiones son conjuntos de metadatos que proporcionan información sobre una plantilla, una evaluación o un elemento de acción. Las dimensiones usan el concepto de claves y valores, donde la clave de dimensión representa una propiedad y el valor de dimensión representa valores válidos para la propiedad. Por ejemplo, en el administrador de cumplimiento hay tres tipos de acciones. Se definen mediante una clave de dimensión de **tipo de acción** y los valores de dimensión de la **documentación**, **operación**y **técnico**. Puede editar o eliminar las dimensiones existentes.
-
-> [!IMPORTANT]
-> Puede agregar nuevas dimensiones y se pueden asignar a plantillas que ya haya importado. También puede agregar nuevas dimensiones a todas las plantillas nuevas que cree.
+Las dimensiones son conjuntos de metadatos que proporcionan información sobre una plantilla, una evaluación o un elemento de acción. Las dimensiones usan el concepto de claves y valores, donde la clave de dimensión representa una propiedad y el valor de dimensión representa valores válidos para la propiedad. Por ejemplo, en el administrador de cumplimiento hay tres tipos de acciones. Están definidas por una clave de dimensión de **propósito de acción** y valores de dimensión de **preventivo**, **detective**y **corrector**.
 
 ### <a name="owners"></a>Propietarios
 
-Los propietarios se usan para identificar a la parte responsable de cada control. Todos los controles integrados son propiedad de Microsoft, clientes o ambos. Puede crear valores personalizados para los propietarios que se pueden usar para especificar más responsabilidades granulares en la organización. Por ejemplo, puede crear propietarios que representen grupos específicos, equipos o unidades de negocio dentro de su organización.
+Los propietarios se usan para identificar a la persona responsable de cada control. Todos los controles integrados son propiedad de Microsoft, clientes o ambos. Puede crear valores personalizados para los propietarios que se pueden usar para especificar más responsabilidades granulares en la organización. Por ejemplo, puede crear propietarios que representen grupos específicos, equipos o unidades de negocio dentro de su organización.
 
 #### <a name="add-an-owner"></a>Agregar un propietario
 
@@ -192,24 +191,57 @@ Cuando las organizaciones implementan por primera vez Microsoft 365 u Office 365
 
 Las acciones que no son compatibles con la integración de la puntuación segura se pueden implementar de forma manual. Una implementación manual se aplicará a la puntuación del grupo de la acción.
 
-#### <a name="add-a-customer-action"></a>Adición de una acción de cliente
-
-1. Seleccione **+ Agregar acción de cliente**.
-2. Proporcione un título único para la acción en el campo **título** .
-3. Proporcionar una puntuación de cumplimiento para la acción en el campo de **puntuación de cumplimiento máximo** (puede ser cualquier número entre 1-99).
-4. Use la lista desplegable **tipo de acción** para especificar el tipo de acción que va a agregar. Si el tipo de acción no existe, puede agregarlo agregando el valor a la clave de dimensión tipo de acción.
-5. Use la lista desplegable **dimensiones** para especificar o agregar claves de dimensión y valores para la acción.
-6. Use la lista desplegable de **propietario** para especificar el propietario de la acción.
-7. Seleccione **+** esta acción para agregar una descripción y un título de descripción para la acción.
-8. Seleccione la **X** para cerrar la hoja Descripción.
-9. Seleccione **Guardar** para guardar la acción del cliente.
-
-#### <a name="delete-a-customer-action"></a>Eliminación de una acción de cliente
-
-1. Seleccione los puntos suspensivos (...) de la acción que desea modificar y seleccione **eliminar**.
-2. Cuando aparezca el mensaje de confirmación, seleccione **eliminar**.
-
 ## <a name="assessments"></a>Evaluaciones
+
+En esta sección se explica cómo ver y trabajar con las evaluaciones, lo que incluye cómo agregar nuevas, exportarlas, copiar información de evaluaciones existentes y mantenerlas actualizadas mediante el control de versiones.
+
+### <a name="view-an-assessment-and-action-details"></a>Ver los detalles de la evaluación y de la acción
+  
+En el panel de **evaluaciones** , seleccione el nombre de la evaluación para abrirlo y ver la información de controles y elementos de acción.
+
+A continuación, se muestra un ejemplo de la evaluación de Office 365 e ISO 27001. La primera vista ilustra la nueva vista de elementos de acción en el administrador de cumplimiento (versión preliminar).
+
+![Vista de elementos de acción del administrador de cumplimiento](../media/compliance-manager-action-items.png)
+
+Las acciones se muestran en orden alfabético, y a cada acción se le asigna una puntuación y un propietario. Seleccione el vínculo **leer más** para leer los detalles de cada acción.
+
+![Vista de elementos de acción del administrador de cumplimiento](../media/compliance-manager-actions-read-more.png)
+
+Seleccione el vínculo **revisión** para administrar, asignar, implementar y probar la acción. A continuación se muestra un ejemplo de acción.
+
+![Vista de acción del administrador de cumplimiento](../media/compliance-manager-action.png)
+
+Use los siguientes campos para administrar el flujo de trabajo de la acción:
+
+- **Asignar usuario:** Seleccione este campo para elegir o especificar el usuario a quien se debe asignar esta acción. Puede desplazarse por la lista o escribir un nombre para encontrarla y, a continuación, seleccionarla.
+- **Administrar documentos:** Puede cargar pruebas de implementación en forma de documentos de Office, archivos de imagen y capturas de pantallas, resultados de PowerShell en CSV o TXT y PDF.
+- **Estado de la implementación:** Se usa para indicar el estado de implementación actual de la acción. Los valores posibles no se implementan, implementan, implementaciones alternativas, están planeadas y no se encuentran en el ámbito.
+- **Fecha de implementación:** Fecha en que se realizó la acción.
+- **Resultado de la prueba:** Se usa para indicar los resultados de la validación de la implementación. Los valores posibles no son evaluados, Passed, failed-low risk, failed-Medium Risk, Failed (riesgo elevado) y no en Scope.
+- **Fecha de la prueba:** La fecha en la que se produjo la validación.
+- **Notas de implementación:** Escriba los detalles de implementación de la organización, junto con las notas que desee incluir.
+- **Plan de pruebas:** Escriba los detalles del plan de pruebas para esta acción, junto con las notas que desee incluir.
+- **Información adicional:** Especifique la información adicional sobre esta acción o cómo se implementó en la organización, junto con las notas que desee incluir.
+
+En el panel **información de controles** , puede ver información de los controles en el nivel de evaluación y de plantilla. A continuación se muestra un ejemplo del panel de información de controles para evaluaciones.
+
+![Vista de información de controles del administrador de cumplimiento](../media/compliance-manager-controls-info.png)
+
+Para las evaluaciones, el panel información de controles muestra la siguiente información:
+
+- Una lista desplegable de **Grupo** para seleccionar el grupo que se va a ver (cuando se usan varios grupos).
+- Un cuadro desplegable de **evaluación** para seleccionar qué evaluación desea ver.
+- Metadatos sobre la evaluación seleccionada, que incluye:
+    - Un indicador de progreso para **los controles evaluados** que muestra el número de controles calculados sobre el número total de controles.
+    - La **puntuación de cumplimiento** actual para la evaluación, que se muestra como un porcentaje.
+    - Detalles sobre la **certificación** y el **producto** usados en la evaluación.
+    - **Estado** actual de la evaluación y fecha de la última **modificación** .
+- Una lista de los **servicios de ámbito** de la evaluación.
+- Detalles de los controles, agrupados por familia de controles, con vínculos a acciones del cliente y detalles de implementación de Microsoft:
+    - **Sus acciones** muestran las acciones del cliente que puede realizar para satisfacer algunos o todos los requisitos del control. Muchos controles tienen varias acciones asociadas a ellos, y todas las acciones asociadas a un control se muestran aquí. Las acciones tienen la misma interfaz de usuario que las que aparecen en el panel acciones.
+    - **Acciones de Microsoft** muestra la lista de controles del marco interno de Microsoft que se aplican al control de certificación seleccionado. Para cada control interno, seleccione **implementado** para ver los detalles de implementación y pruebas de Microsoft, junto con el resultado de la prueba y la fecha de prueba, como se muestra a continuación.
+
+![Vista de acción de Microsoft del administrador de cumplimiento](../media/compliance-manager-microsoft-action.png)
 
 ### <a name="add-an-assessment"></a>Adición de una evaluación
   
@@ -234,15 +266,15 @@ Las acciones que no son compatibles con la integración de la puntuación segura
 - Las dimensiones de la evaluación, incluida la certificación, el entorno y el producto aplicados a la evaluación.
 - La fecha en que se creó y la fecha en que se modificó por última vez.
 - La puntuación de la evaluación que se muestra como un porcentaje. Esta puntuación incluye automáticamente las puntuaciones de los controles administrados por Microsoft y de la puntuación segura.
-- Indicadores de progreso que muestran el número de controles evaluados administrados por Microsoft y por el cliente.
+- Indicadores de progreso que muestran el número de controles evaluados administrados por Microsoft y administrados por el cliente.
 
 ### <a name="copying-information-from-existing-assessments"></a>Copiar información de evaluaciones existentes
 
-Al crear una evaluación, tiene la opción de copiar la información de un grupo existente. Esto le permite aplicar la información especificada en la evaluación copiada a los mismos controles en la nueva evaluación. Por ejemplo, si tiene un grupo para todas las evaluaciones relacionadas con FFIEC en su organización, puede copiar la siguiente información de las evaluaciones existentes:
+Al crear una evaluación, tiene la opción de copiar la información de un grupo existente. La copia permite aplicar la información especificada en la evaluación copiada a los mismos controles en la nueva evaluación. Por ejemplo, si tiene un grupo para todas las evaluaciones relacionadas con FFIEC en su organización, puede copiar la siguiente información de las evaluaciones existentes:
 
 - Detalles de la implementación
 - Plan de pruebas & información adicional
-- Documentos
+- Documents
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>Copiar información de una evaluación existente a una nueva evaluación
   
@@ -260,62 +292,21 @@ Al crear una evaluación, tiene la opción de copiar la información de un grupo
 
 3. Seleccione **Guardar** para crear la evaluación.
 
-### <a name="view-an-assessment"></a>Ver una evaluación
-  
-1. En el panel de evaluaciones, seleccione el nombre de la evaluación para abrirlo y ver la información de controles y elementos de acción.
+### <a name="versioning-alerts-for-assessment-updates"></a>Control de versiones de alertas para actualizaciones de evaluación
 
-A continuación, se muestra un ejemplo de la evaluación de Office 365 e ISO 27001. La primera vista ilustra la nueva vista de elementos de acción en el administrador de cumplimiento (versión preliminar).
+Cuando hay una actualización disponible para una evaluación, un icono de alerta le indica que hay una actualización lista. Al hacer clic en este icono, una ventana emergente explica la actualización y se le pide que acepte. A continuación se muestra un ejemplo de la alerta de control de versiones para una evaluación:
 
-![Vista de elementos de acción del administrador de cumplimiento](../media/compliance-manager-action-items.png)
+![Puntuación de cumplimiento: alerta de control de versiones](../media/compliance-score-assessment-version.png "Alerta de actualización de la versión de evaluación")
 
-Las acciones se muestran en orden alfabético, y a cada acción se le asigna una puntuación y un propietario. Seleccione el vínculo **leer más** para leer los detalles de cada acción. 
+Al seleccionar el icono de alerta, se revela un panel de control flotante en el que se explica la actualización y se le pide que acepte:
 
-![Vista de elementos de acción del administrador de cumplimiento](../media/compliance-manager-actions-read-more.png)
+![Puntuación de cumplimiento: control flotante de control de versiones](../media/compliance-score-assessment-version-accept.png "Panel de confirmación de actualización de evaluación")
 
-Seleccione el vínculo **revisión** para administrar, asignar, implementar y probar la acción. A continuación se muestra un ejemplo de acción.
-
-![Vista de acción del administrador de cumplimiento](../media/compliance-manager-action.png)
-
-En versiones anteriores del administrador de cumplimiento, el flujo de trabajo para implementar los requisitos se realizó en el nivel de control. Un responsable de cumplimiento asignaría un control a alguien para implementar el control. Hubo dos inconvenientes:
-
-- A menudo, los controles tenían varias acciones asociadas a ellos, y el usuario al que se asignó un control puede no ser la persona adecuada para completar todas las acciones necesarias para implementar el control
-- La combinación de tareas independientes en una sola acción impidió la recopilación de las señales y la telemetría que se usa para registrar automáticamente los cambios en la configuración del espacio empresarial en el administrador de cumplimiento (versión preliminar).
-
-En el administrador de cumplimiento (versión preliminar), el proceso de flujo de trabajo se ha movido del nivel de control al nivel de acción. Al revisar una acción, se pueden usar los siguientes campos para administrar el flujo de trabajo de la acción:
-
-- **Asignar usuario:** Seleccione este campo para elegir o especificar el usuario a quien se debe asignar esta acción. Puede desplazarse por la lista o escribir un nombre para encontrarla y, a continuación, seleccionarla.
-- **Administrar documentos:** Puede cargar pruebas de implementación en forma de documentos de Office, archivos de imagen y capturas de pantallas, resultados de PowerShell en CSV o TXT y PDF.
-- **Estado de la implementación:** Se usa para indicar el estado de implementación actual de la acción. Los valores posibles no se implementan, implementan, implementaciones alternativas, están planeadas y no se encuentran en el ámbito.
-- **Fecha de implementación:** Fecha en que se realizó la acción.
-- **Resultado de la prueba:** Se usa para indicar los resultados de la validación de la implementación. Los valores posibles no son evaluados, Passed, failed-low risk, failed-Medium Risk, Failed (riesgo elevado) y no en Scope.
-- **Fecha de la prueba:** La fecha en la que se produjo la validación.
-- **Notas de implementación:** Escriba los detalles de implementación de la organización, junto con las notas que desee incluir.
-- **Plan de pruebas:** Escriba los detalles del plan de pruebas para esta acción, junto con las notas que desee incluir.
-- **Información adicional:** Especifique la información adicional sobre esta acción o cómo se implementó en la organización, junto con las notas que desee incluir.
-
-El administrador de cumplimiento (versión preliminar) también incluye la tabla dinámica basada en el control que se encuentra en las versiones anteriores. Seleccione el panel de **información de controles** para verlo. Puede ver la información de los controles en el nivel de evaluación y de plantilla. A continuación se muestra un ejemplo del panel de información de controles para evaluaciones.
-
-![Vista de información de controles del administrador de cumplimiento](../media/compliance-manager-controls-info.png)
-
-Para las evaluaciones, se muestra el panel de información de controles:
-
-- Una lista desplegable de **Grupo** para seleccionar el grupo que se va a ver (cuando se usan varios grupos).
-- Un cuadro desplegable de **evaluación** para seleccionar qué evaluación desea ver.
-- Metadatos sobre la evaluación seleccionada, que incluye:
-    - Un indicador de progreso para **los controles evaluados** que muestra el número de controles calculados sobre el número total de controles.
-    - La **puntuación de cumplimiento** actual para la evaluación, que se muestra como un porcentaje.
-    - Detalles sobre la **certificación** y el **producto** usados en la evaluación.
-    - **Estado** actual de la evaluación y fecha de la última **modificación** .
-- Una lista de los **servicios de ámbito** de la evaluación.
-- Detalles de los controles, agrupados por familia de controles, con vínculos a acciones del cliente y detalles de implementación de Microsoft:
-    - **Sus acciones** muestran las acciones del cliente que puede realizar para satisfacer algunos o todos los requisitos del control. Muchos controles tienen varias acciones asociadas a ellos, y todas las acciones asociadas a un control se muestran aquí. Las acciones tienen la misma interfaz de usuario que las que aparecen en el panel acciones.
-    - **Acciones de Microsoft** muestra la lista de controles del marco interno de Microsoft que se aplican al control de certificación seleccionado. Para cada control interno, seleccione **implementado** para ver los detalles de implementación y pruebas de Microsoft, junto con el resultado de la prueba y la fecha de prueba, como se muestra a continuación.
-
-![Vista de acción de Microsoft del administrador de cumplimiento](../media/compliance-manager-microsoft-action.png)
+Se recomienda aceptar todas las actualizaciones cuando recibe notificaciones de actualización.
 
 ### <a name="export-an-assessment"></a>Exportación de una evaluación
 
-Puede exportar una evaluación a un archivo de Excel para las partes interesadas de cumplimiento de su organización o para los auditores externos y los reguladores. El informe es una instantánea de la evaluación a partir de la fecha y la hora en que se creó el informe. El informe contiene los detalles de todos los controles administrados por Microsoft y los clientes para la evaluación, el estado de la implementación de controles, la fecha de prueba de control, los resultados de pruebas y proporciona vínculos a los documentos de evidencia cargados. Debe exportar el informe de evaluación antes de archivar una evaluación porque las evaluaciones archivadas no conservan los vínculos a los documentos cargados.
+Puede exportar una evaluación a un archivo de Excel para las partes interesadas de cumplimiento de su organización o para los auditores externos y los reguladores. El informe es una instantánea de la evaluación a partir de la fecha y la hora en que se creó el informe. El informe contiene los detalles de todos los controles administrados por Microsoft y los clientes para la evaluación, el estado de la implementación de controles, la fecha de prueba de control, los resultados de pruebas y proporciona vínculos a los documentos de evidencia cargados.
   
 ### <a name="export-an-assessment-report"></a>Exportación de un informe de evaluación
   
@@ -332,7 +323,7 @@ Cuando haya terminado con una plantilla o una evaluación y ya no la necesite pa
 ![Vista de plantilla oculta del administrador de cumplimiento](../media/compliance-manager-hidden-template.png "Plantilla oculta del administrador de cumplimiento")
 
 > [!IMPORTANT]
-> Las evaluaciones ocultas no conservan sus vínculos a los documentos de evidencia cargados. Se recomienda encarecidamente que exporte la evaluación antes de ocultarla para conservar los vínculos a los documentos de evidencia del informe.
+> Las evaluaciones ocultas no conservan sus vínculos a los documentos de evidencia cargados. Se recomienda encarecidamente que exporte una evaluación antes de ocultarla para conservar los vínculos a documentos de evidencia en el informe.
   
 #### <a name="hiding-a-template"></a>Ocultar una plantilla
 
@@ -383,7 +374,7 @@ Los elementos de acciones son las tareas recomendadas para implementar los requi
   
 1. En el panel de **elementos de acción** , seleccione el **Grupo** que contiene las evaluaciones cuya acción desea asignar.
 2. En la lista desplegable **evaluación** , seleccione la evaluación cuya acción desea asignar o seleccione **todo** en la lista desplegable para ver todas las acciones disponibles.
-3. Busque la acción que desee asignar y, en la columna **propietario** , seleccione el vínculo para **revisión**, **implementado** o **prueba**.
+3. Busque la acción que desee asignar y, en la columna **propietario** , seleccione el vínculo para **revisión**, * * implementado o **prueba**.
 4. Seleccione el campo **asignar usuario** y aparecerá una lista de los usuarios de su organización. Desplácese por la lista y seleccione usuario o filtro de la lista para seleccionar un usuario; para ello, escriba en el nombre del usuario.
 5. En el campo notas de implementación, escriba las notas que desee transmitir al usuario asignado.
 6. Seleccione **Guardar** para asignar la acción.
@@ -399,194 +390,190 @@ Esta función permite a una organización quitar las dependencias activas o pend
 5. En el campo notas de implementación, escriba las notas que desee transmitir al usuario.
 6. Seleccione **Guardar** para reasignar la acción.
 
+#### <a name="common-action-items-synch-status-across-groups"></a>El estado de sincronización de los elementos de acción comunes en grupos
+
+Si su organización tiene varios grupos de evaluaciones, hay un comportamiento de las acciones técnicas (es decir, acciones que afectan a toda la organización). Todas las acciones duplicadas en grupos se combinan ahora en una sola acción. Esa acción única contiene todas las notas cargadas y la evidencia de versiones duplicadas previamente. Los cambios realizados en la acción en un grupo o evaluación se reflejarán en todas las instancias de esa acción. Los campos **Estado de implementación**, fecha de **implementación**, estado de **prueba**y fecha de **prueba** reflejan las actualizaciones más recientes.
+
 ## <a name="templates"></a>Plantillas
 
-Una plantilla es el objeto base del administrador de cumplimiento (versión preliminar) que está asociado a un producto y una certificación (por ejemplo, estándar, regla, marco de control, etc.). Las plantillas se pueden ver y agregar desde el panel Plantillas.
+Una plantilla es el objeto base del administrador de cumplimiento (versión preliminar) que está asociado a un producto y una certificación (por ejemplo, estándar, regla, marco de control, etc.). Las plantillas se pueden ver y agregar desde el panel **plantillas** .
 
 ![Panel de plantillas de Microsoft del administrador de cumplimiento](../media/compliance-manager-template-dashboard.png)
  
-El panel muestra cada plantilla, junto con la certificación y el producto asociado a la plantilla, las fechas en que se creó y modificó por última vez el libro, el número de controles administrados por el cliente y por Microsoft, la puntuación máxima de cumplimiento para el Plantilla y el estado de la plantilla (por ejemplo, aprobado, pendiente de aprobación, importado).
-
-Las plantillas integradas tienen asociada una evaluación integrada, pero puede crear evaluaciones adicionales basadas en las plantillas integradas, y puede importar sus propias plantillas y crear evaluaciones personalizadas basadas en las que lo componen.
+El panel muestra cada plantilla, junto con la certificación y el producto asociado a la plantilla, las fechas en que se creó y modificó por última vez el libro, el número de controles administrados por el cliente y por Microsoft, la puntuación de cumplimiento máxima para la plantilla y el estado de la plantilla (por ejemplo, aprobado, pendiente de aprobación, importado).
 
 ### <a name="create-a-template"></a>Crear una plantilla
 
-Puede crear una plantilla copiando una plantilla existente o importando una plantilla personalizada. Hay un formato y un esquema específicos que deben usarse para los datos de plantilla o no se importarán en el administrador de cumplimiento. Desde aquí se puede descargar un archivo con el esquema y los datos de ejemplo correctos.
-Cada plantilla personalizada debe estar en un libro de Excel independiente (en formato. xls o. xlsx) que contenga cinco pestañas:
+Hay tres formas de trabajar con plantillas para crear evaluaciones:
 
-1. Evaluación de plantillas
-2. ControlFamily
-3. Acciones
-4. Ownership
-5. Dimensions
+1. Usar una de las plantillas preconfiguradas proporcionadas por Microsoft.
+2. Personalizar una plantilla preconfigurada con sus propias acciones y controles a través del proceso de extensión.
+3. Cree su propia plantilla e impórtela en el administrador de cumplimiento.
 
-El esquema usado en cada pestaña se detalla a continuación.
+#### <a name="use-a-microsoft-pre-configured-template"></a>Usar una plantilla preconfigurada de Microsoft
 
-#### <a name="template-assessment-tab"></a>Pestaña de evaluación de plantillas
+Las plantillas preconfiguradas están disponibles en el panel **plantillas** . Ver la [lista actual de plantillas](compliance-manager-overview.md#templates), que se actualiza cada vez que hay disponible una nueva plantilla.
 
-Esta pestaña tiene una sola columna:
-
-- **inScopeServices**: lista delimitada por comas de los productos o servicios que están en el ámbito de la plantilla.
-
-#### <a name="controlfamily-tab"></a>Pestaña ControlFamily
-
-Esta pestaña incluye columnas que definen los controles que se asignan a las acciones enumeradas en la ficha acciones e incluye detalles como el nombre del control, la familia, el título y la descripción.  Las columnas de esta pestaña, que deben ordenarse dentro de Excel en el orden que se indica a continuación, son: 
-
-- **nombrecontrol:** Nombre del control desde el certificado, el estándar y la regla, etc.
-- **controlFamily:** Control de la familia desde el certificado, el estándar, la regla, etc.
-- **controlTitle:** Título del control de certificación/estándar/regla, etc.
-- **controlDescription:** Descripción del control de certificación, estándar/regla, etc.
-- **controlVersion:** Información de versión de control opcional.  Ejemplo: para NIST 800-53, el valor actual es Rev 4, por lo que controlVersion es 4.  Para la MCC de CSA, es 3.0.1.
-- **isDisabled:** Use TRUE o FALSE para indicar si el control se ha deshabilitado.
-- **ControlType:** Use CC para indicar que son controles administrados por el cliente.
-- **controlComplianceScore:** Suma de la puntuación de todas las acciones asignadas al control.
-- **controlActionTitle:** Doble lista delimitada por punto y coma de todos los actionTitles de este control como se muestra en la ficha acciones. 
-
-#### <a name="actions-tab"></a>Ficha acciones
-
-Esta pestaña incluye columnas que definen acciones individuales e incluye detalles como el título, la propiedad y las dimensiones de la acción. Las columnas de esta pestaña, que deben ordenarse dentro de Excel en el orden que se indica a continuación, son: 
-
-- **actionTitle:** Título de la acción. Cada título debe ser único y se recomienda usar mayúsculas y minúsculas Pascal.
-- **actionRelatedODVs:** Lista separada por dos puntos y comas de actionTitles que son principales del elemento secundario enumerados en la columna actionTitle. En una relación primario-secundario, el elemento primario representa el límite máximo. Por lo tanto, si completa una acción primaria, también completa todas las acciones secundarias. Por ejemplo, cuando tiene requisitos similares pero distintos valores definidos por el estándar, como la longitud de la contraseña, donde un estándar/regla requiere un mínimo de 15 caracteres y otro requiere un mínimo de 12 o 10. 15 sería el elemento principal en este ejemplo y, si configura un mínimo de 15 caracteres, también debe cumplir con las acciones que recomienden 12 o 10 caracteres en otras evaluaciones.
-
-    > [!NOTE]
-    > La columna actionRelatedODVs es una columna necesaria para el esquema; sin embargo, la característica (acciones relacionadas) no está disponible en el administrador de cumplimiento (versión preliminar).  Está programada para agregarse en una versión posterior.
-
-- **actionDimensionValues:** Lista delimitada por dos puntos y comas de dos dimensiones aplicables en la ficha dimensiones, con el siguiente formato:
-
-    ```Markdown
-    Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
-    ```
-    
-    Por ejemplo:
-
-    ```Markdown
-    Product::Office 365;;Certification::NIST CSF
-    ```
-
-    Todas las dimensiones que se usan en una plantilla personalizada deben aparecer en la ficha dimensiones del archivo de importación, incluso si ya aparecen en el panel dimensiones.
-- **actionScore:** Valor numérico para cada acción, que representa la puntuación de esa acción. Se recomienda seguir el modelo de resultados usado por las evaluaciones integradas, que se basa en el propósito y el cumplimiento de cada acción.
-- **actionOwnership:** Lista de propietarios doble delimitada por punto y coma. Todos los propietarios de la lista deben incluirse en la pestaña de propiedad.
-- **actionDescription:** Texto de cada acción, que debe ser único. Este campo es compatible con el lenguaje Markdown, como se describe a continuación.
-
-#### <a name="ownership-tab"></a>Pestaña de propiedad
-
-Esta pestaña incluye columnas que definen propietarios para cada acción.  Las columnas de esta pestaña, que deben ordenarse dentro de Excel en el orden que se indica a continuación, son:
-
-- **ownershipName:** Nombre único del propietario o parte responsable.
-- **ownershipDescription:** Descripción del propietario o parte responsable.
-
-#### <a name="dimensions-tab"></a>Pestaña dimensiones
-
-Esta pestaña incluye columnas que definen las dimensiones que se pueden asociar a una acción.  Las columnas de esta pestaña, que deben ordenarse dentro de Excel en el orden que se indica a continuación, son:
-
-- **dimensionKey:** Lista de claves usadas para las dimensiones. Por ejemplo, producto, certificación, etc.
-- **dimensionValue:** Valor único para cada clave de dimensión. Por ejemplo, Office 365, Intune, Azure, producto personalizado, etc.
-- **allowMultiSelect:** Use TRUE o FALSE para indicar que se pueden seleccionar varios valores de dimensión para una sola clave de dimensión.
-
-#### <a name="using-markdown-language-in-description-fields"></a>Uso del lenguaje Markdown en campos de Descripción
-
-Las plantillas y las evaluaciones admiten el uso de idioma de Markdown para algunos elementos de texto y formato.  Hay tres elementos de formato del lenguaje Markdown que se usan en el administrador de cumplimiento:
-
-- Listas numeradas y de viñetas
-- Hyperlinks
-- Negrita
-
-Las viñetas se representan como asteriscos en lugar de las viñetas de Word o Excel. Por ejemplo:
-
-```Markdown
-* Item A
-* Item B
-* Item C
-```
-
-Los números se representan como números, pero con espacios para la sangría (tres espacios por nivel) y solo los números que se usan para todos los subniveles (por ejemplo, sin letras).  Por ejemplo:
-   1. Elemento A
-   2. Elemento B
-      1. Elemento secundario A
-      2. Sub-elemento B
-   3. Elemento C
-   4. Elemento D
-      1. Elemento secundario A
-      2. Sub-elemento B
-   5. Elemento E
-
-Los hipervínculos se construyen colocando corchetes alrededor del texto del hipervínculo y el hipervínculo entre paréntesis inmediatamente junto al corchete de cierre.  Por ejemplo:
-
-```Markdown
-Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
-```
-Este texto se representa de la siguiente manera: haga clic [aquí](https://www.microsoft.com) para ir a la Página principal de Microsoft.
-
-Como se muestra en el ejemplo anterior, el administrador de cumplimiento no representa las direcciones URL con subrayado.
-
-El texto en negrita tiene dos asteriscos a cada lado del texto que se mostrará en negrita.  Por ejemplo:
-
-```Markdown
-**This text will render in bold**
-```
-**Este texto se representa en negrita.**
-
-### <a name="create-a-template"></a>Crear una plantilla
-
-Puede crear una plantilla copiando una plantilla existente o importando datos de plantilla de Excel. Al importar datos de Excel, la plantilla requiere dos administradores del administrador de cumplimiento diferentes para publicar los datos (uno para publicar y otro para aprobarlo).
-
-#### <a name="create-a-template-by-copying-an-existing-template"></a>Crear una plantilla copiando una plantilla existente
+#### <a name="customize-a-template-through-the-extension-process"></a>Personalización de una plantilla a través del proceso de extensión
 
 1. Abra el panel **plantillas** y seleccione **+ Agregar plantilla**.
-2. En el campo **escribir nombre de plantilla** , especifique un nombre único para la plantilla.
-3. Active la casilla **copiar de una plantilla existente** y seleccione la plantilla que desea copiar en la lista desplegable.
-4. De manera opcional, agregue cotas adicionales.
-5. Seleccione **Agregar al panel**.
+2. En el panel flotante de plantilla, seleccione la casilla **crear extensión a partir de plantilla global** .
+3. Seleccione la plantilla que desea extender en el menú desplegable.
+4. Si todavía no ha dado formato a los datos de la plantilla en Excel, seleccione el vínculo en el panel desplegable para descargar un archivo de Excel. Rellene la hoja de cálculo de acuerdo con las siguientes instrucciones de [importación de datos de plantilla con Excel](#import-template-data-with-excel) y guárdela en su unidad local.
+5. Para importar los datos de la plantilla personalizada, seleccione **examinar** para cargar el archivo de Excel.
+6. Seleccione **Agregar al panel**. A continuación, verá la nueva plantilla agregada a su panel **plantillas** .
 
-#### <a name="create-a-template-by-importing-data"></a>Creación de una plantilla mediante la importación de datos
+#### <a name="create-your-own-template-and-import-it-into-compliance-manager"></a>Crear su propia plantilla e importarla en el administrador de cumplimiento
 
 1. Abra el panel **plantillas** y seleccione **+ Agregar plantilla**.
-2. En el campo **escribir nombre de plantilla** , especifique un nombre único para la plantilla.
-3. Seleccione al menos una dimensión de la lista disponible.
-4. Seleccione **examinar** para ir a la ubicación del archivo de importación, selecciónelo y seleccione **abrir**.
-5. El archivo de importación se valida e indica el número de controles y familias de control que se han detectado. Si hay errores, se proporcionará un vínculo a una versión modificada del archivo de importación que incluye detalles del error. Todos los errores deben resolverse antes de que se importen los datos.
-6. Una vez que los datos pasen la validación, seleccione **Agregar al panel**.
-7. La plantilla importada aparece en el panel **plantillas** y tiene el estado **importada**. Seleccione los puntos suspensivos (...) y seleccione **publicar** para publicar la plantilla. Cuando aparezca el mensaje de confirmación, seleccione **publicar**. El estado de la plantilla cambia a **aprobación pendiente**.
-8. Otro usuario con el rol de administrador del administrador de cumplimiento debe aprobar la plantilla en el panel Plantillas. Deben seleccionar los puntos suspensivos (...) y seleccionar **aprobar**. Cuando aparezca el mensaje de confirmación, seleccione **aprobar**. La plantilla ya está lista para su uso.
+2. En el panel flotante de plantilla, seleccione **crear una nueva plantilla**.
+3. Para importar los datos de la plantilla, seleccione **examinar** para cargar el archivo de Excel que contiene los datos (vea [importar datos de plantilla con Excel](#import-template-data-with-excel) , más adelante).
+4. Seleccione **Agregar al panel**. A continuación, verá la nueva plantilla agregada a su panel **plantillas** .
+
+#### <a name="import-template-data-with-excel"></a>Importar datos de plantilla con Excel
+
+Para modificar una plantilla o crear su propia plantilla, deberá usar una [hoja de cálculo de Excel](https://go.microsoft.com/fwlink/?linkid=2124865) para capturar los datos necesarios y cargarlos en el administrador de cumplimiento. Esta plantilla de hoja de cálculo tiene un formato y un esquema específicos que se deben usar o que no se importarán en el administrador de cumplimiento.
 
 > [!IMPORTANT]
-> Al crear una plantilla, debe incluir las dimensiones del **producto** y la **certificación** para asegurarse de que la plantilla se muestra en la puntuación de cumplimiento.
+> Si ha creado o personalizado plantillas en el administrador de cumplimiento, **este proceso se ha actualizado** como parte de la versión de abril de 2020 del administrador de cumplimiento (versión preliminar). **Consulte esta sección detenidamente.**
 
-### <a name="customize-a-template"></a>Personalización de una plantilla
+La hoja de cálculo contiene cuatro pestañas, tres de las cuales son necesarias:
 
-Las plantillas se pueden personalizar a través de los controles personalizados adicionales. Todos los controles personalizados se consideran controles administrados por el cliente.
+1. Plantilla (obligatorio)
+2. ControlFamily (obligatorio)
+3. Acciones (obligatorio)
+4. Dimensiones (opcional)
 
-#### <a name="add-a-custom-control-to-a-template"></a>Adición de un control personalizado a una plantilla
+La hoja **de cálculo debe incluir las pestañas en este orden**; de lo contrario, los datos no se importarán correctamente a una plantilla.
 
-1. Abra la **plantilla** que desee modificar.
-2. Seleccione **+ Agregar** control personalizado.
-3. Seleccione una **familia de controles** en la lista desplegable o escriba una nueva familia de controles si no existe.
-4. Proporcione un identificador o nombre único para el control en el campo de **identificador de control** .
-5. Especifique el título del control en el campo **título** .
-6. Proporcione los requisitos y otra información para el control en el campo **Description** .
-7. Seleccione **asignar** acción de cliente.
-8. Busque las acciones que desee asignar al control:
-    - Use **filtrar por dimensión** para usar las dimensiones asignadas a las acciones para localizarlas y enumerarlas.
-    - Use **filtrar por propietario** para usar el propietario o propietarios asignados a las acciones para localizarlas y enumerarlas.
-    - Seleccione un **tipo de acción** en la lista desplegable para enumerar acciones por tipo.
-    - Escriba el título de la acción para localizarla y mostrarla.
-9. Con los criterios del paso 8, aparecerá una lista de **acciones coincidentes** . Seleccione la primera acción que desee asignar al control.
-10. Aparecen los detalles de la acción. Seleccione la **Descripción** que quiera usar y seleccione **listo**.
-11. Repita los pasos 9 y 10 para cada acción adicional que desee asignar.
-12. Cuando se hayan seleccionado todas las acciones aplicables, seleccione **asignar**.
-13. Seleccione **Guardar** para guardar el nuevo control.
+##### <a name="template-tab"></a>Ficha plantilla
+
+La ficha **plantilla** es obligatoria. La información de esta ficha proporciona metadatos sobre la plantilla. Hay cuatro columnas obligatorias. Las columnas deben conservar el orden en la hoja de cálculo de Excel como se indica a continuación. Puede agregar su propia columna **después** de las cuatro columnas para proporcionar sus propias dimensiones. Si hace esto, asegúrese de agregarlos a la pestaña **dimensiones** siguiendo las instrucciones que se [indican a continuación](#dimensions-tab).
+
+- **title**: el título de la plantilla, que debe ser único. No puede compartir un nombre con otra plantilla que tenga en el administrador de cumplimiento, ya sea una plantilla que ya haya creado o una plantilla preconfigurada proporcionada por Microsoft.
+
+- **producto**: es una dimensión requerida. Enumerar el producto asociado a la plantilla.
+
+- **certificación**: esta es la regla que está usando para la plantilla.
+
+- **inScopeServices**: Estos son los servicios del producto que trata esta evaluación (por ejemplo, si ha incluido Office 365 como producto, Microsoft Teams podría ser un servicio dentro del ámbito). Puede enumerar varios servicios separados por dos puntos y comas.
 
 > [!NOTE]
-> Los cambios realizados en una plantilla no se reflejarán en las evaluaciones existentes. Las actualizaciones de plantillas deben realizarse primero y, a continuación, aplicarse a una nueva evaluación para que se vean los cambios.
+> Sobre producto y certificación: los datos que se insertan en las celdas de **producto** y **certificación** no se pueden editar después de importar la hoja de cálculo para crear o personalizar una plantilla. Además, un grupo no puede contener dos evaluaciones que tengan la misma combinación **producto/certificación** . Puede tener varias plantillas que tienen la misma combinación producto/certificación.
+
+##### <a name="controlfamily-tab"></a>Pestaña ControlFamily
+
+La ficha **ControlFamily** es obligatoria.  Las columnas necesarias en esta ficha, que deben seguir el orden proporcionado en la hoja de cálculo de muestra, son:
+
+- **nombrecontrol**: es el nombre del control de la certificación, el estándar o la regla, que suele ser algún tipo de identificador. Los nombres de los controles deben ser únicos dentro de una plantilla. No puede tener varios controles con el mismo nombre en la hoja de cálculo.
+
+- **controlFamily**: proporcione una palabra o frase para controlFamily, que identifica una amplia agrupación de controles. Un controlFamily no tiene que ser único; puede aparecer más de una vez en una hoja de cálculo. El mismo controlFamily también puede aparecer en varias plantillas, aunque no tienen relación entre sí. Cada controlFamily debe asignarse a al menos un control.
+
+- **controlTitle**: proporcione un título para el control. Mientras que nombrecontrol es un código de referencia, el título es un formato de texto enriquecido que normalmente aparece en las regulaciones.
+
+- **controlDescription**: proporcione una descripción del control.
+
+- **controlActionTitle**: es el título de una acción que desea relacionar con este control. Puede agregar varias acciones separando dos puntos y coma sin espacio entre ellas. Cada control que lista debe incluir al menos una acción y la acción debe existir (lo que significa que puede enumerar una acción que se enumera en la ficha **acciones** de la misma hoja de cálculo, una acción que existe en otra plantilla o una acción creada por Microsoft). Los diferentes controles pueden hacer referencia a la misma acción.
+
+##### <a name="actions-tab"></a>Ficha acciones
+
+La ficha **acciones** es obligatoria.  Designa las acciones de la organización y no las acciones de Microsoft, que ya existen en el administrador de cumplimiento. Las columnas necesarias para esta ficha, que deben seguir el orden proporcionado en la hoja de cálculo de muestra, son:
+
+- **actionTitle**: se trata del título de la acción y es un campo obligatorio. El título que proporcione debe ser único. **Importante**: Si hace referencia a una acción que ya existe (como en otra plantilla) y modifica cualquiera de sus elementos en las columnas siguientes, dichos cambios se propagarán a la misma acción en otras plantillas.
+
+- **implementationType**: en este campo obligatorio, enumere uno de los tres tipos de implementación siguientes:
+    - Acciones **operativas** implementadas por personas y procesos para proteger la confidencialidad, la integridad y la disponibilidad de los sistemas, los datos y el personal de la organización (ejemplo: reconocimiento y formación de seguridad)
+    - Acciones **técnicas** realizadas mediante el uso de tecnología y mecanismos contenidos en los componentes de hardware, software o firmware del sistema de información para proteger la confidencialidad, la integridad y la disponibilidad de los datos y sistemas de la organización (ejemplo: multi-factor Authentication)
+    - **Documentación** : acciones que se implementan mediante directivas y procedimientos documentados que establecen y definen los controles necesarios para proteger la confidencialidad, integridad y disponibilidad de los sistemas, datos y personal de la organización (ejemplo: una directiva de seguridad de la información)
+
+- **actionScore**: en este campo obligatorio, especifique un valor de puntuación numérica para la acción. Debe ser un número entero comprendido entre 1 y 99; no puede ser 0, nulo o en blanco. Cuanto mayor sea el número, mayor será su valor hacia la mejora de la postura de cumplimiento. Para obtener instrucciones, mira cómo Microsoft puntúa los controles:
+
+![Valores de punto de controles del administrador de cumplimiento](../media/compliance-score-controls-scoring.png "Valores de punto de controles del administrador de cumplimiento")
+
+- **actionDescriptionTitle**: es el título de la descripción y es obligatorio. Este título de Descripción le permite tener la misma acción en varias plantillas y exponer una descripción diferente en cada plantilla.  Este campo ayuda a clarificar a qué plantilla hace referencia la descripción. En la mayoría de los casos, puede poner el nombre de la plantilla que está creando en este campo.
+
+- **actionDescription**: proporcione una descripción de la acción. Puede aplicar formato como texto en negrita e hipervínculos. Este campo es obligatorio.
+
+- **dimensión-acción propósito**: este es un campo opcional. Si lo incluye, el encabezado debe incluir el prefijo "Dimension-". Las dimensiones que incluya aquí se utilizarán como [filtros en la puntuación de cumplimiento](compliance-score-setup.md#filtering-your-dashboard-view) y aparecerán en la [Página de detalles de acciones de mejora en la puntuación de cumplimiento](working-with-compliance-score.md#view-your-improvement-actions).
+
+##### <a name="dimensions-tab"></a>Pestaña dimensiones
+
+La pestaña **dimensiones** es opcional. Sin embargo, si hace referencia a una dimensión en otro lugar, debe especificarla aquí si no existe en una plantilla que ya ha creado o en una plantilla de Microsoft. A continuación se enumeran las columnas de esta pestaña:
+
+- **dimensionKey**: List como "producto", "certificaciones", "propósito de la acción"
+- **dimensionValue**: ejemplos: Office 365, HIPPA, preventivo, detective
+
+Puede ver las dimensiones existentes yendo a administración de **inquilinos** y seleccionando la pestaña **dimensiones** . Además, cada vez que exporte una plantilla existente, la hoja de cálculo exportada tendrá la ficha **dimensiones** , que enumera todas las dimensiones utilizadas en la plantilla.
+
+### <a name="modify-an-existing-template"></a>Modificación de una plantilla existente
+
+Para realizar cambios en una plantilla que ha creado o personalizado mediante el proceso de importación descrito anteriormente, use el mismo proceso para importar los cambios a la plantilla.
+
+> [!NOTE]
+> Hay varios factores importantes que deben tenerse en cuenta al editar los componentes de plantilla, por lo que debe revisar esta sección detenidamente.
+
+#### <a name="general-process-for-modifying-a-template"></a>Proceso general para modificar una plantilla
+
+Para realizar cambios en una de las plantillas existentes de la organización, el proceso general es:
+
+1. En el panel **plantillas** , seleccione la plantilla que desea modificar, que muestra el panel de **información de controles** en la ficha **plantilla** .
+2. Desde aquí, seleccione **exportar**. Se descargará una hoja de Excel con todos los datos de la plantilla.
+3. Para editar, agregar o quitar una acción, consulte las secciones siguientes.
+4. Cuando haya terminado de realizar cambios en el archivo de Excel, vuelva a importar el archivo a la plantilla seleccionando la plantilla en el panel y seleccionando **importar**. La plantilla incluirá ahora los cambios realizados.
+
+#### <a name="to-edit-template-attributes"></a>Para editar los atributos de la plantilla
+
+En la ficha **plantillas** , puede modificar cualquier cosa en la columna **título** , la columna **inScopeServices** y en cualquier otra columna que haya agregado. Sin embargo, no puede editar nada en las columnas **producto** o **certificación** .
+
+#### <a name="to-add-an-action-to-a-template"></a>Para agregar una acción a una plantilla
+
+1. Vaya a la ficha **acciones** y agregue la información en los campos obligatorios de la primera fila vacía debajo de las acciones existentes.
+2. Vaya a la pestaña **ControlFamily** . Busque la fila que contiene el control al que se asigna la acción. Agregue la nueva acción a la columna **controlActionTitle** de esa fila (Recuerde que debe separar varias acciones en este campo con dos puntos y comas, sin espacio entre ellas).
+3. Guarde la hoja de cálculo en el equipo local.
+
+#### <a name="to-edit-an-actions-information"></a>Para editar la información de una acción
+
+Puede cambiar la información de la acción *excepto el título*. Puede editar cualquier celda de las columnas B o superior y, cuando vuelva a importar el archivo a la plantilla, las acciones de esa plantilla contendrán los datos actualizados.
+
+No se puede editar la **actionTitle** (columna A) porque, si lo hace, el administrador de cumplimiento considera que esto es una acción nueva. Si desea cambiar el nombre de una acción, vea las instrucciones inmediatamente más adelante.
+
+#### <a name="to-change-the-name-of-an-action"></a>Para cambiar el nombre de una acción
+
+Si desea cambiar el nombre de una acción, debe designar explícitamente en la hoja de cálculo que va a reemplazar un nombre existente por un nombre nuevo. Para cambiar el nombre de una acción, siga estos pasos:
+
+1. En la ficha **acciones** de la hoja de cálculo, agregue una nueva columna a la hoja de cálculo después de la columna a.
+2. En esta nueva columna, que ahora es la columna B, Put como encabezado en la fila 1: **oldActionTitle**.
+3. Copie el contenido de la columna A y péguelos en la columna B. Esto coloca los títulos de acción existentes, que son lo que desea cambiar, en la columna B.
+4. En la columna A, **actionTitle**, elimine el nombre antiguo y reemplácelo con el nuevo nombre de la acción.
+
+#### <a name="to-remove-an-action-from-a-template"></a>Para quitar una acción de una plantilla
+
+Al eliminar una acción de una fila de una hoja de cálculo, **no** se quita la acción de la plantilla que se está editando. En su lugar, siga el proceso siguiente para quitar una acción:
+
+1. En la ficha **acciones** , inserte una nueva columna como la columna a y la **operación** put en la fila de encabezado, que es la fila número uno.
+2. En la fila de la acción que desea quitar, coloque **eliminar** en la columna a para esa fila.
+3. Asegúrese de que un control ya no haga referencia a esta acción. Vaya a la pestaña **ControlFamily** y busque el título de la acción en la columna F, que es **controlActionTitle**.
+4. Cuando encuentre la acción enumerada en la columna **controlActionTitle** , elimínela.
+5. Guarde la hoja de cálculo en el equipo local.
+
+Cuando vuelva a importar la hoja de cálculo a la plantilla, la acción se quitará de la plantilla. Quitar una acción de una plantilla no quita completamente la acción. Todavía puede hacer referencia a esa acción en otra plantilla.
+
+Si va a quitar la última acción a la que hace referencia un control, debe quitar el control.
+
+> [!NOTE]
+> Para quitar un control: siga el mismo proceso para quitar una acción como se ha descrito anteriormente. En la pestaña **ControlFamily** , agregue una columna **Operation** y coloque **eliminar** junto al control que desea quitar.
+
+### <a name="updates-to-templates"></a>Actualizaciones de plantillas
+
+Cada vez que se actualiza una evaluación mediante el proceso de control de versiones, la evaluación personalizada heredará esas actualizaciones y conservará los controles personalizados. Consulte [control de versiones de alertas para las actualizaciones de evaluación](#versioning-alerts-for-assessment-updates).
 
 ### <a name="export-a-template-to-json"></a>Exportar una plantilla a JSON
 
-El administrador de cumplimiento (versión preliminar) también admite la exportación de plantillas al formato de notación de objetos JavaScript (JSON). Esto le permite intercambiar datos del administrador de cumplimiento con otros sistemas que admiten JSON.
+El administrador de cumplimiento (versión preliminar) admite la exportación de plantillas al formato de notación de objetos JavaScript (JSON). Esto le permite intercambiar datos del administrador de cumplimiento con otros sistemas que admiten JSON.
 
 ## <a name="reports"></a>Informes
 
-Puede exportar una evaluación a un archivo de Excel para las partes interesadas de cumplimiento de su organización o para los auditores externos y los reguladores. El informe es una instantánea de la evaluación a partir de la fecha y la hora de la exportación. El informe contiene los detalles de Microsoft y los controles administrados por el cliente para la evaluación, el estado de la implementación de controles, la fecha de prueba de control, los resultados de pruebas y los vínculos a documentos de evidencia cargados. Debe exportar las evaluaciones antes de archivarlas porque las evaluaciones archivadas no conservan los vínculos a los documentos cargados.
+Puede exportar una evaluación a un archivo de Excel para las partes interesadas de cumplimiento de su organización o para los auditores externos y los reguladores. El informe es una instantánea de la evaluación a partir de la fecha y la hora de la exportación. El informe contiene los detalles de Microsoft y los controles administrados por el cliente para la evaluación, el estado de la implementación de controles, la fecha de prueba de control, los resultados de pruebas y los vínculos a documentos de evidencia cargados. Debido a que las evaluaciones ocultas no conservan los vínculos a los documentos cargados, debe exportar la evaluación antes de ocultarla.
 
 ### <a name="export-an-assessment"></a>Exportación de una evaluación
 
@@ -594,9 +581,9 @@ Puede exportar una evaluación a un archivo de Excel para las partes interesadas
 2. Seleccione el grupo y la evaluación en los menús desplegables para la evaluación que desea exportar.
 3. Seleccione exportar. La exportación de la evaluación se descarga como un archivo de Excel.
 
-![Informe de Excel de evaluación del administrador de cumplimiento](../media/compliance-manager-assessment-report.png)
+![Informe de Excel de evaluación del administrador de cumplimiento](../media/compliance-manager-assessment-report.png "Informe de Excel de evaluación del administrador de cumplimiento")
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 En la tabla siguiente se describe cada permiso del administrador de cumplimiento y lo que permite al usuario. La tabla también indica el rol al que se asigna cada permiso.
 

@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: La puntuación de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635118"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141575"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Puntuación de cumplimiento de Microsoft (versión preliminar)
 
-La puntuación de cumplimiento de Microsoft ayuda a simplificar la forma en que administra el cumplimiento y reduce los riesgos de cumplimiento mediante una experiencia fácil de uso. La puntuación de cumplimiento ahora está disponible para la versión preliminar pública en el [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md).
+La [puntuación de cumplimiento de Microsoft](https://compliance.microsoft.com/compliancescore) ayuda a simplificar la forma en que administra el cumplimiento y reduce los riesgos de cumplimiento mediante una experiencia fácil de uso. La puntuación de cumplimiento está disponible para la versión preliminar pública en el [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md).
 
 **En este artículo:** Lea este artículo para comprender qué puntuación de cumplimiento es y cómo configurarlo para su organización.
 
-**Obtenga información sobre las actualizaciones:** Vaya a las [notas](compliance-score-release-notes.md) de la versión de calificación de cumplimiento para ver las novedades y los problemas conocidos con la versión preliminar de la puntuación de cumplimiento.
+**Obtenga información sobre las actualizaciones:** Publicamos varias actualizaciones en la versión de abril de 2020. Visite las [notas](compliance-score-release-notes.md) de la versión de calificación de cumplimiento para ver las novedades y los problemas conocidos con la versión preliminar de la puntuación de cumplimiento.
 
 ## <a name="what-is-compliance-score"></a>¿Qué es la puntuación de cumplimiento?
 
@@ -58,7 +58,7 @@ Piense en la puntuación de cumplimiento como una versión simplificada del admi
 
 La puntuación de cumplimiento comparte el mismo servidor con el administrador de cumplimiento, de modo que todos los datos que puedan existir en el administrador de cumplimiento se mostrarán en la puntuación de cumplimiento.
 
-Durante la versión preliminar pública, algunas funciones permanecen únicamente en el administrador de cumplimiento, como la administración de evaluaciones y la creación de plantillas. Se recomienda comenzar todas las actividades de administración de cumplimiento en puntuación de cumplimiento. Cuando llegue a funciones administradas por el administrador de cumplimiento, se le guiará a esa herramienta. Por ese motivo, parte de esta documentación le dirige a los temas del administrador de cumplimiento.
+Algunas funcionalidades se conservan únicamente en el administrador de cumplimiento durante la versión preliminar pública, como la administración de evaluaciones y la creación de plantillas. Se recomienda comenzar todas las actividades de administración de cumplimiento en puntuación de cumplimiento. Cuando llegue a funciones administradas por el administrador de cumplimiento, se le guiará a esa herramienta. Por ese motivo, parte de esta documentación le dirige a los temas del administrador de cumplimiento.
 
 Obtenga más información sobre la relación entre la puntuación de cumplimiento y el administrador de cumplimiento en las notas de la [versión de puntuación de cumplimiento](compliance-score-release-notes.md).
 
@@ -73,13 +73,11 @@ Obtenga más información sobre [cómo se calcula y se supervisa continuamente l
 
 ## <a name="key-components-controls-assessments-templates-groups"></a>Componentes clave: controles, evaluaciones, plantillas, grupos
 
-La puntuación de cumplimiento usa varios componentes para ayudarle a administrar las actividades de cumplimiento. A medida que se usa la puntuación de cumplimiento para asignar, probar y supervisar las actividades de cumplimiento, resulta útil tener un conocimiento básico de estos componentes clave. Este diagrama muestra las relaciones entre ellos:
-
-![Relaciones en el administrador de cumplimiento versión 3](../media/compliance-manager-relationships.png "Componentes de puntuación de cumplimiento")
+La puntuación de cumplimiento usa varios componentes para ayudarle a administrar las actividades de cumplimiento. A medida que se usa la puntuación de cumplimiento para asignar, probar y supervisar las actividades de cumplimiento, resulta útil tener un conocimiento básico de los componentes clave: controles, evaluaciones, plantillas y grupos.
 
 ### <a name="controls"></a>Controles
 
-Un control define cómo se evalúa y administra la configuración del sistema, el proceso de organización y la responsabilidad de las personas para cumplir un requisito específico de una regla, un estándar o una directiva interna.
+Un control define cómo se evalúa y administra la configuración del sistema, el proceso de organización y las personas responsables de cumplir un requisito específico de una regla, un estándar o una directiva interna.
 
 La puntuación de cumplimiento hace un seguimiento de dos tipos de controles:
 
@@ -90,9 +88,9 @@ La puntuación de cumplimiento hace un seguimiento de dos tipos de controles:
 
 Una evaluación es una evaluación de una plantilla que inicia el proceso de calificación de la organización. Las evaluaciones agrupan las acciones necesarias para cumplir los requisitos de normas, reglamentaciones o legales. Por ejemplo, puede tener una evaluación que, al completar todas las acciones de la misma, la configuración de Office 365 en línea con los requisitos de la norma ISO 27001.
 
-De forma predeterminada, la puntuación de cumplimiento proporciona a su organización una evaluación basada en la línea base de protección de datos 365 de Microsoft, una recomendación para reducir los riesgos de protección y cumplimiento de datos (más[información](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
+Puntuación de cumplimiento proporciona a su organización una evaluación inicial basada en la línea base de protección de datos 365 de Microsoft. Esta evaluación es una recomendación para reducir los riesgos de protección y cumplimiento de datos (más[información](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
-Las evaluaciones incluyen varios componentes:
+Las evaluaciones tienen varios componentes:
 
 - **Servicios en el ámbito**: el conjunto específico de servicios de Microsoft que se aplican a la evaluación
 - **Controles administrados por Microsoft**: controles que Microsoft implementó y probó
@@ -102,13 +100,11 @@ Las evaluaciones incluyen varios componentes:
 > [!NOTE]
 > Puntuación de cumplimiento muestra las evaluaciones y la forma en que se factorizan en la puntuación general. Sin embargo, en la versión preliminar pública se le dirigirá al administrador de cumplimiento para que administre sus evaluaciones.
 
-Vea las instrucciones detalladas para [trabajar con evaluaciones en el administrador de cumplimiento](working-with-compliance-manager.md#assessments).
+Vea las instrucciones detalladas para [administrar las evaluaciones en el administrador de cumplimiento](working-with-compliance-manager.md#assessments).
 
 ### <a name="templates"></a>Plantillas
 
-La puntuación de cumplimiento proporciona plantillas preconfiguradas para las evaluaciones. La puntuación de cumplimiento también le permite crear plantillas para sus propias evaluaciones según sus necesidades. Por ejemplo, puede crear una plantilla para el control del proceso de negocio o una plantilla para un estándar de protección o cumplimiento de datos regional que no esté cubierta por una de las plantillas preconfiguradas.  Mediante la creación de sus propias plantillas, puede crear evaluaciones personalizadas para asegurarse de que los seguimientos de la puntuación de cumplimiento no solo son evaluaciones de la nube de Microsoft, sino también de otras evaluaciones de riesgos en el ámbito de su organización.
-
-Puede crear nuevas plantillas copiando una plantilla existente o importando la información de controles de un archivo de Excel. Vea las instrucciones detalladas para [crear plantillas en el administrador de cumplimiento](working-with-compliance-manager.md#templates).
+La puntuación de cumplimiento proporciona plantillas preconfiguradas para las evaluaciones. También puede personalizar una plantilla preconfigurada agregando sus propios controles y acciones. Por ejemplo, puede crear una plantilla para el control del proceso de negocio o una plantilla para un estándar de protección o cumplimiento de datos regional que no esté cubierta por una de las plantillas preconfiguradas. Al incluir sus propias plantillas en la puntuación de cumplimiento, puede realizar un seguimiento no solo de las evaluaciones de la nube de Microsoft, sino también de otras evaluaciones de riesgos en el ámbito de su organización.
 
 Las plantillas preconfiguradas para la puntuación de cumplimiento son:
 
@@ -130,14 +126,13 @@ Las plantillas preconfiguradas para la puntuación de cumplimiento son:
 16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
 17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
-> [!NOTE]
-> En la versión preliminar pública, vaya a administrador de cumplimiento para crear y administrar las plantillas.
+Vea [las instrucciones detalladas para crear plantillas](working-with-compliance-manager.md#templates), que se produce en el administrador de cumplimiento.
 
 ### <a name="groups"></a>Grupos
 
 Los grupos le permiten organizar las evaluaciones de forma lógica para usted. Por ejemplo, puede optar por agrupar las evaluaciones por año, el estándar de cumplimiento, el servicio, los equipos de la organización o algún otro modo.
 
-Cuando dos evaluaciones distintas en el mismo grupo comparten acciones administradas por el cliente, la finalización de los detalles de implementación, las pruebas y el estado de la acción en una evaluación se sincroniza automáticamente con la misma acción en cualquier otra evaluación del grupo. Esto unifica las acciones de mejora asignadas en el grupo y reduce el trabajo de duplicación.
+Cuando dos evaluaciones distintas en el mismo grupo comparten acciones administradas por el cliente, las actualizaciones que se realizan en los detalles de implementación, las pruebas y el estado de la acción en una evaluación se sincronizarán automáticamente con la misma acción en cualquier otra evaluación del grupo. La sincronización de acciones de esta manera unifica las acciones de mejora asignadas en el grupo y reduce el trabajo de duplicación.
 
 Obtenga información sobre cómo [crear grupos en el administrador de cumplimiento](working-with-compliance-manager.md#groups). Una vez que haya creado los grupos, puede [filtrar el panel de puntuaciones de cumplimiento](compliance-score-setup.md#filtering-your-dashboard-view) para ver la puntuación de uno o varios grupos.
 

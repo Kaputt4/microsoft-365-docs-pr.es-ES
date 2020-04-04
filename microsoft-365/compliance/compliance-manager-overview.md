@@ -14,23 +14,29 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635158"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141617"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
 > [!IMPORTANT]
 > El Administrador de cumplimiento no está disponible en Office 365 ofrecido por 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) u Office 365 Department of Defense.
 
-El [Administrador de cumplimiento de Microsoft (versión preliminar)](https://servicetrust.microsoft.com/ComplianceManager) es una herramienta gratuita de evaluación de riesgos basada en el flujo de trabajo que le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de su suscripción a Microsoft 365, Office 365 o Azure Active Directory, el administrador de cumplimiento le ayuda a administrar el cumplimiento de normativas dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft. El administrador de cumplimiento ofrece un panel centralizado para ver los estándares, las regulaciones y los detalles de implementación de los controles y los resultados de pruebas de las evaluaciones de servicios de Microsoft. También incluye herramientas que le permiten administrar las implementaciones de controles personalizados y el seguimiento de cumplimiento específico de su organización.
+**En este artículo**: Lea este artículo para saber qué es el administrador de cumplimiento y comprender sus componentes principales.
+
+**Obtenga información sobre las actualizaciones**: hemos publicado varias actualizaciones en la versión preliminar pública de abril de 2020. Visite las [notas de la versión de Compliance Manager](compliance-manager-release-notes.md) para ver las novedades y los problemas conocidos.
+
+## <a name="what-is-compliance-manager"></a>Qué es el administrador de cumplimiento
+
+El [Administrador de cumplimiento de Microsoft (versión preliminar)](https://servicetrust.microsoft.com/ComplianceManager) es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft para administrar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de su suscripción a Microsoft 365, Office 365 o Azure Active Directory, el administrador de cumplimiento le ayuda a administrar el cumplimiento de normativas dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft.
 
 Con el administrador de cumplimiento, su organización puede:
   
-- Combinar información de cumplimiento detallada que Microsoft ha proporcionado a los auditores y los responsables de sus servicios en la nube con su autoevaluación de cumplimiento para los estándares y regulaciones aplicables a su organización. Entre ellas se incluyen normas y regulaciones descritas por la organización internacional de normalización (ISO), el Instituto Nacional de normas y tecnología (NIST), la ley de transferencia y responsabilidad de seguros de salud (HIPAA), los datos generales Reglamento de protección (RGPD) y muchas otras.
+- Combinar información de cumplimiento detallada que Microsoft ha proporcionado a los auditores y los responsables de sus servicios en la nube con su autoevaluación de cumplimiento para los estándares y regulaciones aplicables a su organización. Entre ellas se incluyen normas y regulaciones descritas por la organización internacional de normalización (ISO), el Instituto Nacional de normas y tecnología (NIST), la ley de transferencia y responsabilidad de seguros de salud (HIPAA), el Reglamento General de protección de datos (RGPD) y muchas otras.
 - Permiten asignar, realizar un seguimiento y registrar actividades relacionadas con las evaluaciones y el cumplimiento, lo que puede ayudar a su organización a cruzar las barreras de los equipos para alcanzar los objetivos de cumplimiento.
 - Proporcionar una puntuación de cumplimiento para ayudarle a realizar un seguimiento del progreso y priorizar los controles de auditoría que ayudan a reducir la exposición de la organización al riesgo.
 - Proporcionar un repositorio seguro para que cargue y administre las pruebas y otros artefactos relacionados con sus actividades de cumplimiento.
@@ -39,7 +45,16 @@ Con el administrador de cumplimiento, su organización puede:
 > [!NOTE]
 > Las acciones del cliente que se proporcionan en el administrador de cumplimiento son recomendaciones; para evaluar la efectividad de estas recomendaciones en su entorno de reglamentación respectivo antes de la implementación, depende de su organización. Las recomendaciones que se encuentran en el administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento.
 
-## <a name="compliance-manager-relationships"></a>Relaciones del administrador de cumplimiento
+## <a name="relationship-to-compliance-score"></a>Relación con la puntuación de cumplimiento
+
+La [puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md) es una característica del centro de cumplimiento de Microsoft 365 que proporciona una vista de nivel superior de la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. Conocer la puntuación de cumplimiento general ayuda a su organización a comprender y administrar el cumplimiento. Comprenda [cómo se calcula la puntuación de cumplimiento](compliance-score-methodology.md).
+
+El administrador de cumplimiento comparte el mismo back-end con puntuación de cumplimiento. Durante la fase de versión preliminar pública para ambas herramientas, el administrador de cumplimiento es donde administrará las evaluaciones y las implementaciones de controles personalizados. Obtenga más información sobre la [relación entre la puntuación de cumplimiento y el administrador de cumplimiento](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
+  
+> [!IMPORTANT]
+> La puntuación de cumplimiento no expresa una medida absoluta de cumplimiento organizacional con cualquier norma o reglamentación en particular. Expresa hasta qué punto ha adoptado los controles que pueden reducir los riesgos para los datos personales y la privacidad individual. Ningún servicio puede garantizar que cumple un estándar o una regla, y la puntuación de cumplimiento no debe interpretarse como una garantía de ninguna manera.
+
+## <a name="compliance-manager-components"></a>Componentes del administrador de cumplimiento
 
 El administrador de cumplimiento usa varios componentes para ayudarle con las actividades de administración de cumplimiento. Estos componentes funcionan de forma conjunta para proporcionar un flujo de trabajo de administración completo y informes de cumplimiento sin complicaciones para los auditores.
 
@@ -61,11 +76,11 @@ De forma predeterminada, el administrador de cumplimiento crea las siguientes ev
 - Office 365 NIST 800-53
 - Office 365 RGPD
 
-Las evaluaciones incluyen varios componentes:
+Las evaluaciones tienen varios componentes:
   
 - **Servicios en el ámbito**: cada evaluación se aplica a un conjunto específico de servicios de Microsoft.
 - **Controles administrados por Microsoft**: para cada servicio en la nube, Microsoft implementa y administra un conjunto de controles de cumplimiento para los estándares y regulaciones aplicables.
-- **Controles administrados**por el cliente: esta es la colección de controles implementada por la organización cuando se toman acciones para cada control.
+- **Controles administrados**por el cliente: su organización implementa estos controles cuando realiza acciones para cada control.
 - **Puntuación**de la evaluación: porcentaje de la puntuación total posible para los controles administrados por el cliente en la evaluación. Esto le ayudará a realizar un seguimiento de la implementación de las acciones asignadas a cada control.
 
 ## <a name="controls"></a>Controles
@@ -79,7 +94,7 @@ Las evaluaciones incluyen varios componentes:
 
 ![Controles de la versión 3 del administrador de cumplimiento](../media/compliance-manager-controls.png)
 
-Hay tres tipos de controles en el administrador de cumplimiento, **controles administrados por el**cliente, controles **administrados por el cliente**y **controles de administración compartidos**
+Hay tres tipos de controles en el administrador de cumplimiento, **controles administrados por el**cliente, controles **administrados por el cliente**y **controles de administración compartidos**.
 
 ### <a name="microsoft-managed-controls"></a>Controles administrados por Microsoft
 
@@ -87,7 +102,7 @@ Para cada servicio en la nube, Microsoft implementa y administra un conjunto de 
 
 ### <a name="customer-managed-controls"></a>Controles administrados por el cliente
 
-Esta es la colección de controles que administra la organización. Su organización es responsable de la implementación de controles administrados por el cliente como parte del proceso de cumplimiento de un estándar o una reglamentación determinada. Los controles administrados por el cliente están organizados en familias de control para la certificación o el Reglamento correspondiente. Use los controles administrados por el cliente para implementar las acciones recomendadas sugeridas por Microsoft como parte de las actividades de cumplimiento. Su organización puede usar las instrucciones preceptivas y las acciones recomendadas para el cliente en cada control administrado por el cliente para administrar el proceso de implementación y evaluación de dicho control.
+La organización administra los controles administrados por el cliente. Su organización es responsable de la implementación de controles administrados por el cliente como parte del proceso de cumplimiento de un estándar o una reglamentación determinada. Los controles administrados por el cliente están organizados en familias de control para la certificación o el Reglamento correspondiente. Use los controles administrados por el cliente para implementar las acciones recomendadas sugeridas por Microsoft como parte de las actividades de cumplimiento. Su organización puede usar las instrucciones preceptivas y las acciones recomendadas para el cliente en cada control administrado por el cliente para administrar el proceso de implementación y evaluación de dicho control.
 
 Los controles administrados por el cliente en evaluaciones también tienen funciones integradas de administración de flujo de trabajo que puede usar para administrar y realizar un seguimiento de su progreso hacia la finalización de la evaluación. Con esta funcionalidad de flujo de trabajo, puede:
 
@@ -111,7 +126,9 @@ Los usuarios de su organización pueden usar el administrador de cumplimiento pa
 
 Los controles de certificación suelen ser implementados por una persona y comprobados por otro. Por ejemplo, después de que se completen los elementos de acción inicialmente asignados a una persona para su implementación, esos elementos de acción se asignan a la siguiente persona para probar y cargar las pruebas. Cualquier usuario con permisos suficientes para las asignaciones de control puede asignar y reasignar elementos de acción. Esto permite la administración central de las asignaciones de control y el enrutamiento descentralizado de elementos de acción entre implementadores y evaluadores.
 
-## <a name="permissions"></a>Permissions
+Tenga en cuenta que **las acciones de mejora** en la puntuación de cumplimiento son el equivalente de **los elementos de acción** en el administrador de cumplimiento.
+
+## <a name="permissions"></a>Permisos
 
 El administrador de cumplimiento utiliza un modelo de permisos de control de acceso basado en roles. Solo los usuarios a los que se les asigne un rol pueden acceder al administrador de cumplimiento, y las acciones permitidas por cada usuario están restringidas según el tipo de rol. [Ver una tabla](working-with-compliance-manager.md#permissions) que muestra las acciones permitidas para cada permiso.
 
@@ -120,7 +137,7 @@ El administrador del portal del administrador de cumplimiento puede establecer p
 1. En el menú desplegable **más** arriba, seleccione **Administrador**y, a continuación, **configuración**.
 2. Desde aquí, seleccione el rol que desea asignar y, a continuación, agregue el empleado que desee asignar a ese rol. A continuación, los usuarios podrán realizar determinadas acciones.
 
-Además, los usuarios a los que se ha asignado el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) tienen permiso de solo lectura para obtener acceso al administrador de cumplimiento. Sin embargo, no pueden modificar datos ni realizar ninguna acción dentro del administrador de cumplimiento.
+Los usuarios a los que se ha asignado el [rol lector global en Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) tienen permiso de solo lectura para obtener acceso al administrador de cumplimiento. Sin embargo, no pueden modificar datos ni realizar ninguna acción dentro del administrador de cumplimiento.
 
 Ya no existe un rol de **acceso de invitado** predeterminado. Se debe asignar un rol a cada usuario para que tenga acceso y trabaje en administrador de cumplimiento
   
@@ -148,13 +165,6 @@ Las plantillas preconfiguradas incluidas con el administrador de cumplimiento so
 12. [Ley de privacidad del consumidor de California (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (versión preliminar)
 13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / el[gobierno australiano ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (versión preliminar)
 14. [Línea base de protección de datos 365 de Microsoft](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-
-## <a name="compliance-score"></a>Puntuación de conformidad
-
-La [puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md) es una característica del centro de cumplimiento de Microsoft 365 que le ayuda a comprender la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. Conocer la puntuación de cumplimiento general ayuda a su organización a comprender y administrar el cumplimiento. Comprenda [cómo se calcula la puntuación de cumplimiento](compliance-score-methodology.md).
-  
-> [!IMPORTANT]
-> La puntuación de cumplimiento no expresa una medida absoluta de cumplimiento organizacional con cualquier norma o reglamentación en particular. Expresa hasta qué punto ha adoptado los controles que pueden reducir los riesgos para los datos personales y la privacidad individual. Ningún servicio puede garantizar que cumple un estándar o una regla, y la puntuación de cumplimiento no debe interpretarse como una garantía de ninguna manera.
 
 ## <a name="secure-score-integration"></a>Integración de la puntuación segura
 

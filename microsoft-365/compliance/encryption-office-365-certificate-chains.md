@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/19/2019
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,18 +17,19 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Ver una lista completa de certificados raíz y entidades de certificación (CA) en Office 365.
-ms.openlocfilehash: 7b3aeb4012f510b8ccd3d7e608a9aa9be04b01ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593201"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131513"
 ---
 # <a name="office-365-encryption-chains"></a>Cadenas de cifrado de Office 365
 
 Office 365 aprovecha una serie de proveedores de certificados diferentes. A continuación, se describe la lista completa de certificados raíz de Office 365 conocidos que los clientes pueden encontrar al obtener acceso a Office 365. Para obtener información sobre los certificados que puede necesitar instalar en su propia infraestructura, vea [Plan for de certificados SSL de terceros para Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). La siguiente información de certificado se aplica a todas las instancias de nube nacionales e internacionales de Office 365.
 
-**Clientes de ITAR (Defense & GCC High):** póngase en contacto con el TAM o el SDM en la nube para obtener el paquete de P7b correcto.
+>[!NOTE]
+>Para obtener información del certificado que se aplica a los clientes de **DoD y GCC High** , consulte [Office 365 Encryption Chains-DoD y GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Tipo de certificado** | **Descarga de P7b** | **Extremos de CRL** | **Extremos de OCSP** | **Extremos de AIA** |
 | --- | --- | --- | --- | --- |
@@ -41,7 +42,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **Subject** | CN = raíz de Baltimore CyberTrust<br>OU = CyberTrust<br>O = Baltimore<br>C = IE |
+| **Asunto** | CN = raíz de Baltimore CyberTrust<br>OU = CyberTrust<br>O = Baltimore<br>C = IE |
 | --- | --- |
 | **Número de serie** | 02:00:00: B9 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -55,7 +56,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="cnnic-root"></a>**RAÍZ CNNIC**
 
-| **Subject** | CN = RAÍZ CNNIC<br>O = CNNIC<br>C = CN |
+| **Asunto** | CN = RAÍZ CNNIC<br>O = CNNIC<br>C = CN |
 | --- | --- |
 | **Número de serie** | 49:33:00:01 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -70,7 +71,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="digicert-global-root-ca"></a>**Entidad de certificación raíz global de DigiCert**
 
-| **Subject** | CN = DigiCert de la entidad de certificación raíz global<br>OU = www. DigiCert. com<br>O = DigiCert Inc<br>C = US |
+| **Asunto** | CN = DigiCert de la entidad de certificación raíz global<br>OU = www. DigiCert. com<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **Número de serie** | 08:3B: E0:56:90:42:46: B1: A1:75:6A: C9:59:91: C7:4A |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -85,7 +86,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**CA raíz de validación extendida de alta DigiCert de seguridad**
 
-| **Subject** | CN = DigiCert de certificados raíz de validación extendida de alta seguridad<br>OU = www. DigiCert. com<br>O = DigiCert Inc<br>C = US |
+| **Asunto** | CN = DigiCert de certificados raíz de validación extendida de alta seguridad<br>OU = www. DigiCert. com<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **Número de serie** | 02: AC: 5C: 26:6A: 0B: 40:9 TER: 8F: 0B: 79: F2: AE: 46:25:77 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -100,7 +101,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="d-trust-root-class-3-ca-2-2009"></a>**D-TRUST raíz clase 3 CA 2 2009**
 
-| **Subject** | CN = D-TRUST raíz clase 3 CA 2 2009<br>O = D-Trust GmbH<br>C = DE |
+| **Asunto** | CN = D-TRUST raíz clase 3 CA 2 2009<br>O = D-Trust GmbH<br>C = DE |
 | --- | --- |
 | **Número de serie** | 09:83: F3 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -115,7 +116,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="d-trust-root-class-3-ca-2-ev-2009"></a>**D-TRUST raíz clase 3 CA 2 EV 2009**
 
-| **Subject** | CN = D-TRUST raíz clase 3 CA 2 EV 2009<br>O = D-Trust GmbH<br>C = DE |
+| **Asunto** | CN = D-TRUST raíz clase 3 CA 2 EV 2009<br>O = D-Trust GmbH<br>C = DE |
 | --- | --- |
 | **Número de serie** | 09:83: F4 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -130,7 +131,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="dst-root-ca-x3"></a>**CA raíz de DST X3**
 
-| **Subject** | CN = DST raíz CA X3<br>O = confianza de la firma digital Co. |
+| **Asunto** | CN = DST raíz CA X3<br>O = confianza de la firma digital Co. |
 | --- | --- |
 | **Número de serie** | 44: AF: B0:80: D6: A3:27: BA: 89:30:39:86:2E: F8:40:6B |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -144,7 +145,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Entidad de certificación raíz de Entrust-G2**
 
-| **Subject** | CN = Entrust entidad de certificación raíz-G2<br>OU =&quot;(c) 2009 Entrust, Inc.-solo para uso autorizado&quot;<br>OU = ver www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = US |
+| **Asunto** | CN = Entrust entidad de certificación raíz-G2<br>OU =&quot;(c) 2009 Entrust, Inc.-solo para uso autorizado&quot;<br>OU = ver www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = US |
 | --- | --- |
 | **Número de serie** | 4A: 53:8C: 28 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -158,7 +159,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **Subject** | CN = Entrust. entidad de certificación de net (2048)<br>OU = (c) 1999 Entrust.net limitado<br>OU = www. Entrust. net/\_CPS 2048 Incorp. by Ref. (límite s liab)<br>O = Entrust. net |
+| **Asunto** | CN = Entrust. entidad de certificación de net (2048)<br>OU = (c) 1999 Entrust.net limitado<br>OU = www. Entrust. net/\_CPS 2048 Incorp. by Ref. (límite s liab)<br>O = Entrust. net |
 | --- | --- |
 | **Número de serie** | 38:63: DE: F8 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -172,7 +173,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="globalsign"></a>**GlobalSign**
 
-| **Subject** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign raíz CA-R2 |
+| **Asunto** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign raíz CA-R2 |
 | --- | --- |
 | **Número de serie** | 04:00:00:00:00:01:0F: 86:26: E6:0D |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -188,7 +189,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="globalsign-root-ca"></a>**GlobalSign Root CA**
 
-| **Subject** | CN = entidad de certificación raíz GlobalSign<br>OU = CA raíz<br>O = GlobalSign NV-SA<br>C = BE |
+| **Asunto** | CN = entidad de certificación raíz GlobalSign<br>OU = CA raíz<br>O = GlobalSign NV-SA<br>C = BE |
 | --- | --- |
 | **Número de serie** | 04:00:00:00:00:01:15:4B: 5A: C3:94 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -202,7 +203,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="thawte-primary-root-ca---g3"></a>**entidad de certificación raíz de Thawte primario-G3**
 
-| **Subject** | CN = Thawte raíz primario CA-G3<br>OU =&quot;(c) 2008 Thawte, Inc.-solo para uso autorizado&quot;<br>OU = División de servicios de certificación<br>O =&quot;Thawte, Inc.&quot;<br>C = US |
+| **Asunto** | CN = Thawte raíz primario CA-G3<br>OU =&quot;(c) 2008 Thawte, Inc.-solo para uso autorizado&quot;<br>OU = División de servicios de certificación<br>O =&quot;Thawte, Inc.&quot;<br>C = US |
 | --- | --- |
 | **Número de serie** | 60:01:97: B7:46: A7: EA: B4: B4:9 BIS: D6:4B: 2F: F7:90: FB |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -216,7 +217,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**Entidad de certificación principal pública de clase 3 de VeriSign-G5**
 
-| **Subject** | CN = VeriSign clase 3: entidad de certificación principal pública-G5<br>OU =&quot;(c) 2006 VeriSign, Inc.-solo para uso autorizado&quot;<br>OU = VeriSign Trust Network<br>O =&quot;VeriSign, Inc.&quot;<br>C = US |
+| **Asunto** | CN = VeriSign clase 3: entidad de certificación principal pública-G5<br>OU =&quot;(c) 2006 VeriSign, Inc.-solo para uso autorizado&quot;<br>OU = VeriSign Trust Network<br>O =&quot;VeriSign, Inc.&quot;<br>C = US |
 | --- | --- |
 | **Número de serie** | 18: DA: D1:9E: 26:7D: E8: BB: 4A: 21:58: CD: CC: 6B: 3B: 4A |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -232,7 +233,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="cnnic-sha256-ssl"></a>**SSL DE CNNIC SHA256**
 
-| **Subject** | CN = CNNIC SHA256 SSL <br>O = SSL DE CNNIC SHA256 <br>C = CN |
+| **Asunto** | CN = CNNIC SHA256 SSL <br>O = SSL DE CNNIC SHA256 <br>C = CN |
 | --- | --- |
 | **Emisor** | CN = RAÍZ CNNIC <br>O = CNNIC <br>C = CN |
 | **Número de serie** | 49:33:00:7C |
@@ -251,7 +252,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-TRUST SSL clase 3 CA 1 2009**
 
-| **Subject** | CN = D-TRUST SSL clase 3 CA 1 2009<br>O = D-Trust GmbH<br>C = DE |
+| **Asunto** | CN = D-TRUST SSL clase 3 CA 1 2009<br>O = D-Trust GmbH<br>C = DE |
 | --- | --- |
 | **Emisor** | CN = D-TRUST raíz clase 3 CA 2 2009<br>O = D-Trust GmbH<br>C = DE |
 | **Nombre alternativo del sujeto** | RFC822 Name=info@d-trust.net<br>Dirección URL =http://www.d-trust.net |
@@ -270,7 +271,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-TRUST SSL clase 3 CA 1 EV 2009**
 
-| **Subject** | CN = D-TRUST SSL clase 3 CA 1 EV 2009<br>O = D-Trust GmbH<br>C = DE |
+| **Asunto** | CN = D-TRUST SSL clase 3 CA 1 EV 2009<br>O = D-Trust GmbH<br>C = DE |
 | --- | --- |
 | **Emisor** | CN = D-TRUST raíz clase 3 CA 2 EV 2009<br>O = D-Trust GmbH<br>C = DE |
 | **Nombre alternativo del sujeto** | RFC822 Name=info@d-trust.net<br>Dirección URL =http://www.d-trust.net |
@@ -289,7 +290,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
 
-| **Subject** | CN = DigiCert Cloud Services CA-1<br>O = DigiCert Inc<br>C = US |
+| **Asunto** | CN = DigiCert Cloud Services CA-1<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **Emisor** | CN = DigiCert de la entidad de certificación raíz global<br>OU = www. DigiCert. com<br>O = DigiCert Inc<br>C = US |
 | **Número de serie** | 01:9E: C1: C6: BD: 3F: 59:7B: B2:0C: 33:38: E5:51: D8:77 |
@@ -307,7 +308,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="digicert-sha2-high-assurance-server-ca"></a>**CA del servidor de seguridad alta de DigiCert SHA2**
 
-| **Subject** | CN = DigiCert SHA2 del servidor de seguridad alto (CA)<br>OU = www. DigiCert. com<br>O = DigiCert Inc<br>C = US |
+| **Asunto** | CN = DigiCert SHA2 del servidor de seguridad alto (CA)<br>OU = www. DigiCert. com<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **Emisor** | CN = DigiCert de certificados raíz de validación extendida de alta seguridad<br>OU = www. DigiCert. com<br>O = DigiCert Inc<br>C = US |
 | **Número de serie** | 04: E1: E7: A4: DC: 5C: F2: F3:6D: C0:2B: 42: B8:5D: 15:9F |
@@ -325,7 +326,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**CA de DigiCert SHA2 Secure Server**
 
-| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc<br>C = US |
+| **Asunto** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **Emisor** | CN = DigiCert de la entidad de certificación raíz global<br>OU = www. DigiCert. com<br>O = DigiCert Inc<br>C = US |
 | **Número de serie** | 01: FD: A3: EB: 6E: CA: 75: C8:88:43:8B: 72:4B: CF: BC: 91 |
@@ -343,7 +344,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="entrust-certification-authority---l1c"></a>**Confiar en entidad de certificación: L1C**
 
-| **Subject** | CN = confiar en la entidad de certificación-L1C<br>OU =&quot;(c) 2009 Entrust, Inc.&quot;<br>OU = www. Entrust. net/RPA se incorpora por referencia<br>O =&quot;Entrust, Inc.&quot;<br>C = US |
+| **Asunto** | CN = confiar en la entidad de certificación-L1C<br>OU =&quot;(c) 2009 Entrust, Inc.&quot;<br>OU = www. Entrust. net/RPA se incorpora por referencia<br>O =&quot;Entrust, Inc.&quot;<br>C = US |
 | --- | --- |
 | **Emisor** | CN = Entrust. entidad de certificación de net (2048)<br>OU = (c) 1999 Entrust.net limitado<br>OU = www. Entrust. net/\_CPS 2048 Incorp. by Ref. (limita liab)<br>O = Entrust. net |
 | **Número de serie** | 4C: 0E: 8C: 39 |
@@ -361,7 +362,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="entrust-certification-authority---l1k"></a>**Confiar en entidad de certificación: L1K**
 
-| **Subject** | CN = confiar en la entidad de certificación-L1K<br>OU =&quot;(c) 2012 Entrust, Inc.-solo para uso autorizado&quot;<br>OU = ver www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = US |
+| **Asunto** | CN = confiar en la entidad de certificación-L1K<br>OU =&quot;(c) 2012 Entrust, Inc.-solo para uso autorizado&quot;<br>OU = ver www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = US |
 | --- | --- |
 | **Emisor** | CN = Entrust entidad de certificación raíz-G2<br>OU =&quot;(c) 2009 Entrust, Inc.-solo para uso autorizado&quot;<br>OU = ver www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = US |
 | **Número de serie** | 0E: E9:4C: C3:00:00:00:00:51: D3:77:85 |
@@ -379,7 +380,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="globalsign"></a>**GlobalSign**
 
-| **Subject** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign raíz CA-R3 |
+| **Asunto** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign raíz CA-R3 |
 | --- | --- |
 | **Emisor** | CN = entidad de certificación raíz GlobalSign<br>OU = raíz CAO = GlobalSign NV-SA<br>C = BE |
 | **Número de serie** | 04:00:00:00:00:01:25:07:1D: F9: AF |
@@ -397,7 +398,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**GlobalSign validación extendida CA-SHA256-G2**
 
-| **Subject** | CN = GlobalSign validación extendida CA-SHA256-G2<br>O = GlobalSign NV-SA<br>C = BE |
+| **Asunto** | CN = GlobalSign validación extendida CA-SHA256-G2<br>O = GlobalSign NV-SA<br>C = BE |
 | --- | --- |
 | **Emisor** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign raíz CA-R2 |
 | **Número de serie** | 04:00:00:00:00:01:44:4E: F0:4A: 55 |
@@ -415,7 +416,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="globalsign-extended-validation-ca---sha256---g3"></a>**GlobalSign validación extendida CA-SHA256-G3**
 
-| **Subject** | CN = GlobalSign validación extendida CA-SHA256-G3<br>O = GlobalSign NV-SA<br>C = BE |
+| **Asunto** | CN = GlobalSign validación extendida CA-SHA256-G3<br>O = GlobalSign NV-SA<br>C = BE |
 | --- | --- |
 | **Emisor** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign raíz CA-R3 |
 | **Número de serie** | 48: A4:02: DD: 27:92:0D: A2:08:34:9D: D1:99:7B |
@@ -433,7 +434,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign de validación de organización CA-SHA256-G2**
 
-| **Subject** | CN = GlobalSign de validación de organización CA-SHA256-G2<br>O = GlobalSign NV-SA<br>C = BE |
+| **Asunto** | CN = GlobalSign de validación de organización CA-SHA256-G2<br>O = GlobalSign NV-SA<br>C = BE |
 | --- | --- |
 | **Emisor** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign raíz CA-R3 |
 | **Número de serie** | 04:00:00:00:00:01:31:89: C6:44: C9 |
@@ -451,7 +452,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign de validación de organización CA-SHA256-G2**
 
-| **Subject** | CN = GlobalSign de validación de organización CA-SHA256-G2<br>O = GlobalSign NV-SA<br>C = BE |
+| **Asunto** | CN = GlobalSign de validación de organización CA-SHA256-G2<br>O = GlobalSign NV-SA<br>C = BE |
 | --- | --- |
 | **Emisor** | CN = entidad de certificación raíz GlobalSign<br>OU = CA raíz<br>O = GlobalSign NV-SA<br>C = BE |
 | **Número de serie** | 04:00:00:00:00:01:44:4E: F0:42:47 |
@@ -469,7 +470,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign de validación de organización CA-SHA256-G2**
 
-| **Subject** | CN = GlobalSign de validación de organización CA-SHA256-G2<br>O = GlobalSign NV-SA<br>C = BE |
+| **Asunto** | CN = GlobalSign de validación de organización CA-SHA256-G2<br>O = GlobalSign NV-SA<br>C = BE |
 | --- | --- |
 | **Emisor** | CN = entidad de certificación raíz GlobalSign<br>OU = CA raíz<br>O = GlobalSign NV-SA<br>C = BE |
 | **Número de serie** | 04:00:00:00:00:01:44:4E: F0:42:47 |
@@ -487,7 +488,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="lets-encrypt-authority-x3"></a>**Vamos a cifrar la autoridad X3**
 
-| **Subject** | CN = permitir cifrar la autoridad X3<br>O = vamos a cifrar<br>C = US |
+| **Asunto** | CN = permitir cifrar la autoridad X3<br>O = vamos a cifrar<br>C = US |
 | --- | --- |
 | **Emisor** | CN = DST raíz CA X3<br>O = confianza de la firma digital Co. |
 | **Número de serie** | 0A: 01:41:42:00:00:01:53:85:73:6A: 0B: 85: EC: A7:08 |
@@ -506,7 +507,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="microsoft-it-ssl-sha2"></a>**Microsoft IT SSL SHA2**
 
-| **Subject** | CN = Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Asunto** | CN = Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
 | --- | --- |
 | **Emisor** | CN = raíz de Baltimore CyberTrust<br>OU = CyberTrust<br>O = Baltimore<br>C = IE |
 | **Número de serie** | 07:27:9 BIS: A9 |
@@ -523,7 +524,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="microsoft-it-ssl-sha2"></a>**Microsoft IT SSL SHA2**
 
-| **Subject** | CN = Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Asunto** | CN = Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
 | --- | --- |
 | **Emisor** | CN = raíz de Baltimore CyberTrust<br>OU = CyberTrust<br>O = Baltimore<br>C = IE |
 | **Número de serie** | 07:27: AA: 47 |
@@ -541,7 +542,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="microsoft-it-tls-ca-1"></a>**CA TLS 1 de Microsoft IT**
 
-| **Subject** | CN = CA TLS CA 1 de Microsoft<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Asunto** | CN = CA TLS CA 1 de Microsoft<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
 | --- | --- |
 | **Emisor** | CN = raíz de Baltimore CyberTrust<br>OU = CyberTrust<br>O = Baltimore<br>C = IE |
 | **Número de serie** | 08: B8:7A: 50:1B: BE: 9C: DA: 2D: 16:4D: 3E: 39:51: BF: 55 |
@@ -559,7 +560,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="microsoft-it-tls-ca-2"></a>**CA TLS 2 de Microsoft IT**
 
-| **Subject** | CN = CA de Microsoft IT TLS 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Asunto** | CN = CA de Microsoft IT TLS 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
 | --- | --- |
 | **Emisor** | CN = raíz de Baltimore CyberTrust<br>OU = CyberTrust<br>O = Baltimore<br>C = IE |
 | **Número de serie** | 0F: 2C: 10: C9:5B: 06: C0:93:7F: B8: D4:49: F8:3E: 85:69 |
@@ -577,7 +578,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="microsoft-it-tls-ca-4"></a>**CA Microsoft IT TLS 4**
 
-| **Subject** | CN = CA de Microsoft IT TLS 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Asunto** | CN = CA de Microsoft IT TLS 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
 | --- | --- |
 | **Emisor** | CN = raíz de Baltimore CyberTrust<br>OU = CyberTrust<br>O = Baltimore<br>C = IE |
 | **Número de serie** | 0B: 6A: B3: B0:3E: B1: A9: F6: C4:60:92:6A: A8: CD: FE: B3 |
@@ -595,7 +596,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="microsoft-it-tls-ca-5"></a>**CA Microsoft IT TLS 5**
 
-| **Subject** | CN = CA de Microsoft IT TLS 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Asunto** | CN = CA de Microsoft IT TLS 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
 | --- | --- |
 | **Emisor** | CN = raíz de Baltimore CyberTrust<br>OU = CyberTrust<br>O = Baltimore<br>C = IE |
 | **Número de serie** | 08:88: CD: 52:5F: 19:24:44:4D: 14: A5:82:91: DE: B9:52 |
@@ -613,7 +614,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="symantec-class-3-ev-ssl-ca---g3"></a>**Symantec clase 3 EV SSL CA-G3**
 
-| **Subject** | CN = Symantec clase 3 EV SSL CA-G3<br>OU = Symantec Trust Network<br>O = Symantec Corporation<br>C = US |
+| **Asunto** | CN = Symantec clase 3 EV SSL CA-G3<br>OU = Symantec Trust Network<br>O = Symantec Corporation<br>C = US |
 | --- | --- |
 | **Emisor** | CN = VeriSign clase 3: entidad de certificación principal pública-G5<br>OU =&quot;(c) 2006 VeriSign, Inc.-solo para uso autorizado&quot;<br>OU = VeriSign Trust Network<br>O =&quot;VeriSign, Inc.&quot;<br>C = US |
 | **Nombre alternativo del sujeto** | Dirección de directorio: CN = SymantecPKI-1-533 |
@@ -632,7 +633,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="symantec-class-3-secure-server-ca---g4"></a>**Symantec clase 3 Secure Server CA-G4**
 
-| **Subject** | CN = Symantec clase 3 Secure Server CA-G4<br>OU = Symantec Trust Network<br>O = Symantec Corporation<br>C = US |
+| **Asunto** | CN = Symantec clase 3 Secure Server CA-G4<br>OU = Symantec Trust Network<br>O = Symantec Corporation<br>C = US |
 | --- | --- |
 | **Emisor** | CN = VeriSign clase 3: entidad de certificación principal pública-G5<br>OU =&quot;(c) 2006 VeriSign, Inc.-solo para uso autorizado&quot;<br>OU = VeriSign Trust Network<br>O =&quot;VeriSign, Inc.&quot;<br>C = US |
 | **Nombre alternativo del sujeto** | Dirección de directorio: CN = SymantecPKI-1-534 |
@@ -651,7 +652,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="thawte-sha256-ssl-ca"></a>**entidad de certificación SSL de Thawte SHA256**
 
-| **Subject** | CN = Thawte SHA256 SSL CA<br>O =&quot;Thawte, Inc.&quot;<br>C = US |
+| **Asunto** | CN = Thawte SHA256 SSL CA<br>O =&quot;Thawte, Inc.&quot;<br>C = US |
 | --- | --- |
 | **Emisor** | CN = Thawte raíz primario CA-G3<br>OU =&quot;(c) 2008 Thawte, Inc.-solo para uso autorizado&quot;<br>OU = División de servicios de certificación<br>O =&quot;Thawte, Inc.&quot;<br>C = US |
 | **Nombre alternativo del sujeto** | Dirección de directorio: CN = VeriSignMPKI-2-415 |
@@ -670,7 +671,7 @@ Expanda las secciones raíz y intermedia a continuación para ver más detalles 
 
 ### <a name="verizon-akamai-sureserver-ca-g14-sha2"></a>**Verizon Akamai SureServer CA G14-SHA2**
 
-| **Subject** | CN = Verizon Akamai SureServer CA G14-SHA2<br>OU = Cybertrust<br>O = soluciones de Verizon Enterprise<br>L = Amsterdam<br>C = NL |
+| **Asunto** | CN = Verizon Akamai SureServer CA G14-SHA2<br>OU = Cybertrust<br>O = soluciones de Verizon Enterprise<br>L = Amsterdam<br>C = NL |
 | --- | --- |
 | **Emisor** | CN = raíz de Baltimore CyberTrust<br>OU = CyberTrust<br>O = Baltimore<br>C = IE |
 | **Número de serie** | 07:27: A4:6B |

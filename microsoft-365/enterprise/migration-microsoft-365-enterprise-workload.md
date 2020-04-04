@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se detalla el proceso de migración de versiones de Microsoft Office, servidores de Office y Windows a Microsoft 365 Enterprise en toda la organización.
-ms.openlocfilehash: 7506d374391e05202be685d8ebfe8a04e8d62761
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053088"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113508"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migración a Microsoft 365 Enterprise
 
@@ -171,7 +171,7 @@ Vea cómo los expertos de TI de Microsoft migran la empresa a Microsoft 365 Ente
 
 ## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 
-Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, descargue el [póster de transición](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 Enterprise, vea el [póster de transición](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Imagen del póster de transición a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 

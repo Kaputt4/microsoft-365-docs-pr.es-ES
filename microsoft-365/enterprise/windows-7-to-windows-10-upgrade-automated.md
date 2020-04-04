@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Actualizaciones automatizadas de Windows 7 a Windows 10 para grandes empresas
-ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085637"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113486"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Actualizaciones locales automatizadas de Windows 7 a Windows 10 para grandes empresas
 
-A partir del 14 de enero de 2020, ya no se proporcionarán actualizaciones de seguridad ni soporte técnico para equipos PC que ejecutan Windows 7. A pocos meses de distancia para pasar de Windows 7 a Windows 10 y varias opciones para implementar, una de las preguntas más frecuentes en la comunidad de TI es la manera más rápida de pasar de Windows 7 a Windows 10. La respuesta es llevar a cabo actualizaciones locales para equipos existentes para puede reducir el enfoque en varios aspectos del proceso de implementación de escritorio.
+Desde el 14 de enero de 2020, ya no se proporcionan actualizaciones de seguridad ni soporte técnico para equipos PC que ejecutan Windows 7. Para pasar de Windows 7 a Windows 10 con varias opciones para implementar, una de las preguntas más frecuentes en la comunidad de TI es la manera más rápida de pasar de Windows 7 a Windows 10. La respuesta es llevar a cabo actualizaciones locales para equipos existentes para puede reducir el enfoque en varios aspectos del proceso de implementación de escritorio.
 
 <center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
@@ -38,7 +38,7 @@ Las tareas atenuadas en el gráfico de la rueda del proceso de implementación a
 
 ## <a name="in-place-upgrade-reliability-safeguards-and-scale"></a>Confiabilidad, elementos de protección y escala de la actualización local
 
-Las actualizaciones locales a Windows 10 son un método confiable para mover un dispositivo existente que ejecuta Windows 7 o posterior a Windows 10, sin requerir la migración de archivos o la reinstalación de aplicaciones. Después de una actualización local, los archivos, las opciones de configuración y las aplicaciones disponibles del usuario son coherentes con la instalación de Windows 7 anterior. Aunque es posible que quiera aprovechar esta oportunidad para limpiar aplicaciones o configuraciones existentes, en realidad a medida que nos acercamos a la fecha de fin de soporte de Windows 7 en enero de 2020, no queda mucho tiempo para buscar otras opciones. Las actualizaciones también funcionan desde arquitecturas similares (de 32 bits a 32 bits o de 64 bits a 64 bits) y versiones similares de Windows (de Professional a Pro o de Enterprise a Enterprise).
+Las actualizaciones locales a Windows 10 son un método confiable para mover un dispositivo existente que ejecuta Windows 7 o posterior a Windows 10, sin requerir la migración de archivos o la reinstalación de aplicaciones. Después de una actualización local, los archivos, las opciones de configuración y las aplicaciones disponibles del usuario son coherentes con la instalación de Windows 7 anterior. Las actualizaciones también funcionan desde arquitecturas similares (de 32 bits a 32 bits o de 64 bits a 64 bits) y versiones similares de Windows (de Professional a Pro o de Enterprise a Enterprise).
 
 De forma predeterminada, el proceso de actualización realiza una copia de seguridad de la instalación anterior de Windows como parte de la actualización, por lo que en caso de que se produzca un error de actualización o en caso de que una aplicación o un dispositivo no funcione correctamente después de la actualización, el equipo puede revertir a Windows 7. De forma predeterminada, los equipos actualizados tienen 10 días para que pueda revertir manualmente a Windows 7, si es necesario.
 
@@ -106,4 +106,4 @@ Los resultados de los registros en sí serán:
 
 Una vez que haya implementado las secuencias almacenadas en caché previamente con los exámenes de compatibilidad en un gran número de equipos de una colección, puede empezar a analizar los archivos de registro para la preparación del dispositivo. Al usar las salidas enumeradas anteriormente, \#1 (0xC1900210) puede accionarse como "listo para implementar" y \#4 (0xC190020E) puede accionarse liberando espacio en el disco. Aquí, deberá tener cuidado con el contenido que quiere eliminar, pero puede empezar con la Limpieza de actualizaciones de Windows, la Papelera de reciclaje y los Archivos temporales que, en muchos casos, le proporcionarán suficiente espacio para una correcta actualización. Puede ejecutar el examen de compatibilidad tan a menudo como sea necesario hasta que el equipo esté listo para la actualización local. Puede encontrar más información sobre las opciones de línea de comandos del programa de instalación de Windows en <https://aka.ms/setupswitches>
 
-## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[Centro de implementación de escritorio](https://aka.ms/howtoshift)
+## <a name="desktop-deployment-center"></a>[Centro de implementación de escritorio](https://aka.ms/howtoshift)
