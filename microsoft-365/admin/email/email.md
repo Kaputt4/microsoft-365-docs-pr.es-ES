@@ -15,12 +15,12 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
 description: Aprenda a administrar el correo electrónico de sus buzones de Office 365.
-ms.openlocfilehash: 11d3a34b20cf8dc910931e2a52168945e4d0e969
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: ca1fba8c89f7c647a0bb6d4f846ebb12f82a7abd
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106208"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126016"
 ---
 # <a name="email"></a>Correo electrónico
 
@@ -114,11 +114,11 @@ Aprenda a administrar el correo electrónico de sus buzones de Office 365.
                     <div class="cardText">
                         <h3>Configurar el correo</h3>
                         <p><a href="https://support.office.com/article/d0cf6608-4862-4a7b-82fc-f5fef235c966">Video: Importar correo electrónico </a></p>
-                        <p><a href="https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e">Exportar el correo electrónico y los contactos</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin">Exportar el correo electrónico y los contactos</a></p>
                         <p><a href="create-a-shared-mailbox.md">Crear buzones compartidos</a></p>
                         <p><a href="add-another-email-alias-for-a-user.md">Agregar direcciones de correo electrónico adicionales a un usuario</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync">Permita a los usuarios sincronizar los contactos de correo electrónico con su iPhone o iPad</a></p>
-                        <p><a href="https://support.office.com/article/69f58e99-c550-4274-ad18-c805d654b4c4">Configurar un dispositivo multifuncional para enviar correo electrónico </a></p>
+                        <p><a href="https://docs.microsoft.com/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3">Configurar un dispositivo multifuncional para enviar correo electrónico </a></p>
                     </div>
                 </div>
             </div>
@@ -131,10 +131,10 @@ Aprenda a administrar el correo electrónico de sus buzones de Office 365.
                     <div class="cardText">
                         <h3>Proteja su correo electrónico</h3>
                         <p><a href="create-edit-or-delete-a-security-group.md">Crear, editar o eliminar un grupo de seguridad</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection">Protección antispam para el correo electrónico</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/block-email-spam-to-prevent-false-negatives">Cómo configurar la configuración del filtro de spam para ayudar a bloquear el spam</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection">Protección contra correo no deseado y malware</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/prevent-email-from-being-marked-as-spam">Evitar que el correo electrónico sea marcado como spam</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection">Protección antispam para el correo electrónico</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365">Crear listas de remitentes bloqueados</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection">Protección contra correo no deseado y malware</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection#manage-errors-in-spam-filtering">Evitar que el correo electrónico sea marcado como spam</a></p>
                     </div>
                 </div>
             </div>
@@ -148,10 +148,9 @@ Aprenda a administrar el correo electrónico de sus buzones de Office 365.
                         <h3>Resolver los problemas de conexión y entrega del correo electrónico</a></h3>
                         <p><a href="https://diagnostics.outlook.com/#/">Solucionar problemas de conexión de Outlook en Office 365 y Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox"> Recuperar los elementos eliminados del buzón de usuario </a></p>
-                        <p><a href="https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6">Encontrar y solucionar los problemas de entrega de correo electrónico</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues">Encontrar y solucionar los problemas de entrega de correo electrónico</a></p>
                         <p><a href="../get-help-with-domains/find-and-fix-issues.md">Encontrar y solucionar problemas (incluyendo problemas con el correo electrónico) después de añadir tu dominio o registros DNS</a></p>
-                        <p><a href="https://support.office.com/article/51daa6b9-2e35-49c4-a0c9-df85bf8533c3">Busque los códigos de error del NDR en los informes de no entrega del correo electrónico.</a></p>
-                        <p><a href="https://go.microsoft.com/fwlink/?LinkID=618675"> Solucionar los problemas de Outlook</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online">Busque los códigos de error del NDR en los informes de no entrega del correo electrónico.</a></p>
                     </div>
                 </div>
             </div>
@@ -167,7 +166,7 @@ Aprenda a administrar el correo electrónico de sus buzones de Office 365.
                         <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Formas de migrar varias cuentas de correo electrónico a Office 365</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-hybrid">Implementación híbrida de Exchange</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview">Exchange Online Protection</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</a></p>
                     </div>
                 </div>
             </div>
