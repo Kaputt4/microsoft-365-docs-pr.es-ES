@@ -10,6 +10,8 @@
           href: intro/technologies.md
         - name: Escritorio administrado de Microsoft e ITIL
           href: MMD-and-ITSM.md
+        - name: Cumplimiento
+          href: intro/compliance.md
     - name: Descripción del servicio Escritorio administrado de Microsoft
       href: service-description/index.md
       items:
