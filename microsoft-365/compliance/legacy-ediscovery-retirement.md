@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Office 365 Advanced eDiscovery v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
-ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
+ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
+ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43024360"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43158441"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas de eDiscovery heredadas
 
@@ -53,10 +53,8 @@ Como resultado de esta nueva y mejorada funcionalidad de eDiscovery en el centro
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
-   
 
-
-- [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), que es la primera versión de eDiscovery avanzado al que se tiene acceso a través de un caso de eDiscovery en el centro de seguridad & cumplimiento de Office 365.
+- [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), que es la primera versión de Advanced eDiscovery a la que se tiene acceso a través de un caso básico de eDiscovery en el centro de seguridad & cumplimiento de Office 365. La retirada de eDiscovery avanzado v 1.0 no afecta a la capacidad de crear y administrar casos básicos de eDiscovery.
 
 > [!NOTE]
 > La funcionalidad de exhibición de documentos electrónicos que se está retirando solo se aplica a las versiones basadas en nube de Microsoft 365 y Office 365. la funcionalidad de exhibición de documentos electrónicos de las versiones locales de Exchange y SharePoint seguirá siendo compatible hasta que se produzca una nueva notificación.
@@ -141,7 +139,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class=even>
   <td>Copiar mensajes de un buzón a otro buzón</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Asignar permisos a un buzón</a></td>
-  <td>Para conceder a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado abandona la organización y necesita conceder acceso al correo del antiguo empleado a otra persona), se recomienda asignar los permisos de esa persona para acceder al antiguo empleado bandeja. Por lo tanto, en lugar de copiar los elementos del buzón a otro buzón de usuario o a un buzón compartido, solo tiene que asignar a un usuario permisos para obtener acceso al buzón de origen.</td>
+  <td>Para conceder a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado abandona la organización y necesita conceder acceso al correo del antiguo empleado a otra persona), se recomienda asignar los permisos de esa persona para obtener acceso al buzón del antiguo empleado. Por lo tanto, en lugar de copiar los elementos del buzón a otro buzón de usuario o a un buzón compartido, solo tiene que asignar a un usuario permisos para obtener acceso al buzón de origen.</td>
   
   </tr>
 <tr class="odd">
@@ -228,7 +226,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
   <tr class=even>
   <td>Copiar mensajes de un buzón a otro buzón</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Asignar permisos a un buzón</a></td>
-  <td>Para conceder a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado abandona la organización y necesita conceder acceso al correo del antiguo empleado a otra persona), se recomienda asignar los permisos de esa persona para acceder al antiguo empleado bandeja. Por lo tanto, en lugar de copiar los elementos del buzón a otro buzón de usuario o a un buzón compartido, solo tiene que asignar a un usuario permisos para obtener acceso al buzón de origen.</td>
+  <td>Para conceder a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado abandona la organización y necesita conceder acceso al correo del antiguo empleado a otra persona), se recomienda asignar los permisos de esa persona para obtener acceso al buzón del antiguo empleado. Por lo tanto, en lugar de copiar los elementos del buzón a otro buzón de usuario o a un buzón compartido, solo tiene que asignar a un usuario permisos para obtener acceso al buzón de origen.</td>
   
   </tr>
 
@@ -331,14 +329,28 @@ Estas operaciones en la API de los servicios web Exchange se usan en la caracter
 
 ## <a name="advanced-ediscovery-v10"></a>EDiscovery avanzado v 1.0
 
-EDiscovery avanzado v 1.0, que es la versión de eDiscovery avanzado disponible en un caso de exhibición de documentos electrónicos haciendo clic en **cambiar a exhibición avanzada** de documentos electrónicos se está retirando. Su funcionalidad se ha reemplazado por la nueva [solución Advanced eDiscovery](https://aka.ms/edisco) en el centro de cumplimiento de Microsoft 365.
+EDiscovery avanzado v 1.0, que es la versión de eDiscovery avanzado disponible en un caso de exhibición de documentos electrónicos principal al hacer clic en **cambiar a exhibición avanzada**de documentos electrónicos, se está retirando. Su funcionalidad se ha reemplazado por la nueva [solución Advanced eDiscovery](https://aka.ms/edisco) en el centro de cumplimiento de Microsoft 365.
+
+Para determinar si su organización está usando eDiscovery avanzado v 1.0:
+
+1. Vaya al [centro de cumplimiento de & de seguridad de Office 365](https://protection.office.com).
+
+2. En el panel de navegación izquierdo del centro de seguridad & cumplimiento, haga clic en **ediscovery > eDiscovery**y abra un caso principal de eDiscovery.
+
+3. Si ve el botón **cambiar a eDiscovery avanzado** , al hacer clic en él le llevará a la versión 1,0 de eDiscovery avanzado, que se está retirando. La capacidad de crear y administrar casos en la exhibición de documentos electrónicos principal no se verá afectada. Solo se retirará la capacidad de agregar y analizar datos de casos en eDiscovery avanzado v 1.0 (haciendo clic en **cambiar a EDiscovery avanzado**).
 
 La nueva solución avanzada de exhibición de documentos electrónicos de Microsoft 365 (también denominada *EDiscovery avanzado v 2.0*) proporciona todas las capacidades de la solución original, pero ahora incluye un enfoque basado en custodios para identificar contenido en otros servicios de Microsoft 365, recopilar dicho contenido y, a continuación, agregarlo a un conjunto de revisión en el que los revisores pueden aprovechar las consultas de Fast Search, el etiquetado y las características de análisis para facilitar la selección de documentos relevantes. La exhibición avanzada de documentos electrónicos ahora incluye mejoras de procesamiento y visores nativos para tipos de archivo de Microsoft y que [no son de](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)Microsoft, aquí se muestra una lista completa de los tipos de [archivo y los](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) campos de metadatos admitidos. Además, la nueva solución Advanced eDiscovery proporciona una potente característica de administración de retenciones de custodios que le permite aplicar suspensiones a contenido en diferentes servicios, notificar a los usuarios de las suspensiones y realizar un seguimiento de las respuestas de custodios, todo dentro de un caso de eDiscovery avanzado.
+
+Para acceder a la exhibición avanzada de documentos electrónicos v 2.0:
+
+1. Vaya al [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
+
+2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo**y, a continuación, en **eDiscovery > avanzadas**.
 
 En este momento, le recomendamos que empiece a realizar la transición del flujo de trabajo de eDiscovery a la nueva funcionalidad de eDiscovery avanzado. Aunque aún podrá obtener acceso a la exhibición avanzada de documentos electrónicos v 1.0 en casos existentes, el soporte técnico de Microsoft no proporcionará soporte técnico después del 1 de octubre de 2020. Para obtener más información, vea la siguiente escala de tiempo.
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
-    
+
 - Office 365 y Microsoft 365 organizaciones empresariales
 
 - Organizaciones de Educación de Office 365 y Microsoft 365

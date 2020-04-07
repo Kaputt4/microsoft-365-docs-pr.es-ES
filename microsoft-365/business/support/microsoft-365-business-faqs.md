@@ -12,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, preguntas frecuentes, preguntas más frecuentes, respuestas, empresa
 ms.date: 06/08/2018
-ms.openlocfilehash: 706646eae722b0040db2a5bd7bcf187f5e1295bf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: edb6476b7711bd17a1dd926d93bdf27d734ea9a9
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594236"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153626"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Preguntas más frecuentes sobre Microsoft 365 empresa
 
@@ -37,7 +37,7 @@ Microsoft 365 es una solución integrada que combina las mejores herramientas de
 -  Ayuda a proteger, preservar y realizar una copia de seguridad de los datos con el archivado de Exchange Online.  
 -   Protección de aplicaciones para Office y otras aplicaciones móviles con Intune App Protection. 
 -  Administración de dispositivos para equipos PC con Windows 10, MacOS y dispositivos móviles con administración de dispositivos de Intune. 
--  Protección de identidad con multi-factor Authentication, restablecimiento de contraseñas de autoservicio y acceso condicional.
+-  La protección de identidad con multi-factor Authentication (MFA), el restablecimiento de contraseñas de autoservicio y el acceso condicional.
 -  Configuración de seguridad coherente en&mdash;todos los dispositivos protección de datos de la empresa en todos los dispositivos; Windows Defender, que siempre está activado y actualizado. 
  
  
@@ -67,7 +67,7 @@ Microsoft 365 Empresa se ofrece por 20,00 USD/mes/usuario, en forma de _contrato
 ### <a name="is-there-a-cap-to-how-many-microsoft-365-business-seats-a-customer-can-have"></a>¿Existe un límite a cuántos puestos de Microsoft 365 Empresa un cliente puede tener? 
 Microsoft 365 Business fue diseñada para pequeñas y medianas empresas con requisitos de complejidad de TI de baja a mediana. Los clientes pueden comprar hasta 300 licencias de negocio de Microsoft 365 para su organización. Los clientes pueden combinar suscripciones en la nube. Como resultado, en función de sus requisitos de ti, los clientes pueden agregar licencias de Microsoft 365 Enterprise a la misma cuenta. 
  
-Cuando los clientes consideren un entorno que consta de varios tipos de subscripciones, deben trabajar con sus asesores de TI de confianza para determinar cuál es la mejor manera de administrar y proteger las distintas suscripciones como Microsoft 365 Business y Microsoft 365 Enterprise use diferentes funcionalidades para proteger y administrar aplicaciones y datos.
+Cuando los clientes consideren un entorno que consta de varios tipos de subscripciones, deben trabajar con sus asesores de TI de confianza para determinar la mejor manera de administrar y proteger las distintas suscripciones, ya que Microsoft 365 Business y Microsoft 365 Enterprise usan diferentes capacidades para proteger y administrar las aplicaciones y los datos.
 
 ### <a name="can-i-combine-microsoft-365-business-with-other-microsoft-subscription-offerings"></a>¿Puedo combinar Microsoft 365 Empresa con otras ofertas de suscripción de Microsoft? 
 Sí, los clientes pueden combinar sus suscripciones de Microsoft 365 Empresa con planes y complementos de Azure, Dynamics 365, Enterprise Mobility + Security, y Office 365.
@@ -136,8 +136,8 @@ El camino más directo a una implementación de Microsoft 365 Empresa correcta e
 Sí, los suscriptores de Microsoft 365 Business tienen licencia para usar capacidades completas de Intune para iOS, Android, MacOS y otra administración de dispositivos entre plataformas. Las características que no están disponibles en la consola de administración simplificada de Microsoft 365 empresa, como la administración de aplicaciones de terceros y la configuración de los perfiles de WiFi, los certificados de VPN, se pueden administrar en la consola de Intune completa. 
   
 
-### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>¿Azure Active Directory Premium P1 incluye Microsoft 365 Business? 
-Microsoft 365 Business incluye características Select de Azure AD Premium P1 (AADP P1), como restablecimiento de contraseña de autoservicio con reescritura de AD, Azure MFA y acceso condicional. No incluye la totalidad de AADP P1. Para obtener más información, vea la [Descripción del servicio de negocio de Microsoft 365](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148).
+### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business"></a>¿Azure Active Directory (Azure AD) Premium P1 viene con Microsoft 365 Business? 
+Microsoft 365 Business incluye características de Azure AD Premium P1 como el restablecimiento de contraseñas de autoservicio con la reescritura de Azure AD, la autenticación multifactor de Azure y el acceso condicional. No incluye la totalidad de Azure AD Premium P1. Para obtener más información, vea la [Descripción del servicio de negocio de Microsoft 365](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148).
  
  
 ### <a name="does-microsoft-365-business-allow-customers-to-manage-macs"></a>¿Microsoft 365 Empresa permite a los clientes administrar equipos Mac? 
@@ -146,7 +146,7 @@ Intune le ayudará a administrar de manera segura los dispositivos iOS, Android,
 ### <a name="what-is-windows-autopilot"></a>¿Qué es Windows AutoPilot? 
 Windows AutoPilot es un servicio que agiliza la implementación de nuevos equipos Windows 10. Este proceso puede realizarse cuando el usuario final inicia sesión en Microsoft 365 Business por primera vez&mdash;sin que haya tocado nunca el&mdash;dispositivo al aprovechar los controles de administración centralizada de Microsoft 365 Business. También puedes usar Windows AutoPilot para equipos existentes que ejecutan Windows 10 Professional Creators Update (o posterior) y que se han restablecido a la configuración de fábrica. Puede encontrar información detallada sobre Windows AutoPilot en <a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">esta publicación de blog de junio de 2017</a>.
 
-## <a name="compatibility"></a>Compatibility
+## <a name="compatibility"></a>Compatibilidad
 
 ### <a name="can-i-add-office-365-add-ons-to-microsoft-365-business"></a>¿Puedo agregar complementos de Office 365 a Microsoft 365 Empresa? 
 Todos los complementos que pueden agregarse a Office 365 Empresa Premium se pueden agregar a Microsoft 365 Empresa. Esto significa que puede comprar Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, myanalytics, PowerBI Pro y audio audioconferencia. 
@@ -163,7 +163,7 @@ No, los clientes que requieren la Protección contra amenazas avanzada de Window
 Los proveedores de servicios de TI que todavía no son partners de Microsoft pueden obtener más información sobre el programa Proveedor de soluciones en la nube de Microsoft en [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business).
 
 ### <a name="where-can-i-learn-how-to-sell-microsoft-365-business"></a>¿Dónde puedo obtener información sobre cómo vender Microsoft 365 Empresa? 
-Los partners que ahora venden Office 365 pueden usar los mismos métodos de ventas por asesoramiento para vender Microsoft 365 Empresa. Además, se presentan más recursos y formación para que el equipo de ventas comprenda el entorno de escritorio existente de los clientes, la dependencia de Active Directory, la movilidad y las necesidades de seguridad para comunicar de forma eficaz el valor completo de Microsoft 365 Negocio de manera que sea relevante para el cliente. Encontrarás estos recursos en el portal de partner de Office en [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business). 
+Los partners que ahora venden Office 365 pueden usar los mismos métodos de ventas por asesoramiento para vender Microsoft 365 Empresa. Además, se presentan más recursos y formación para que el equipo de ventas comprenda el entorno de escritorio existente de los clientes, la confianza de Active Directory, la movilidad y las necesidades de seguridad para comunicar de forma eficaz todo el valor de Microsoft 365 Business de manera relevante para el cliente. Encontrarás estos recursos en el portal de partner de Office en [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business). 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>¿Cómo puede Microsoft 365 Empresa ayudar a los partners a aumentar la rentabilidad? 
 Microsoft 365 Empresa ayudará a los partners a reducir los costos a través de una mayor eficacia operativa y a mejorar los ingresos a través de la venta de servicios adicionales. La investigación de Forrester Research, Microsoft 365 Empresa Total Economic Impact (TEI) de junio de 2017 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI), muestra que Microsoft 365 Empresa tendrá incidencia positiva en la rentabilidad de los partners. 
@@ -183,13 +183,13 @@ Microsoft 365 Business permite a los partners mantener su posición de asesor de
 Con la nueva característica de Windows AutoPilot incluida en Microsoft 365 Business, los socios que se han resisten para vender nuevos dispositivos Windows debido a la logística de la implementación y costos encontrarán esta oportunidad mucho más atractiva. Los clientes que están seguros en la seguridad de sus dispositivos locales y móviles también son más propensos a invertir en más servicios, como Dynamics 365. 
  
 ### <a name="should-partners-sell-microsoft-365-business-over-other-plans-from-microsoft"></a>¿Los partners deben vender Microsoft 365 Empresa antes que otros planes de Microsoft? 
-Un Proveedor de soluciones en la nube de Microsoft siempre debe vender el plan que mejor se adapte a las necesidades empresariales y presupuesto de su cliente. Por ejemplo, si un cliente debe cumplir con las normas de privacidad y seguridad, un CSP puede vender Microsoft 365 Business más complementos que ayudan al cliente a cumplir sus requisitos o pueden sugerir la seguridad avanzada y la administración que proporciona Microsoft 365 Business. SKU de Enterprise. 
+Un Proveedor de soluciones en la nube de Microsoft siempre debe vender el plan que mejor se adapte a las necesidades empresariales y presupuesto de su cliente. Por ejemplo, si un cliente debe cumplir con las normas de privacidad y seguridad, un CSP puede vender Microsoft 365 Business más complementos que ayudan al cliente a cumplir sus requisitos o pueden sugerir la seguridad y la administración avanzadas que proporcionan los SKU de Microsoft para empresas empresariales 365. 
  
 ### <a name="some-of-my-customers-have-devices-that-arent-genuine-will-microsoft-365-business-make-these-devices-genuine"></a>Algunos de mis clientes tienen dispositivos que no son genuinos; ¿Microsoft 365 empresa hará que estos dispositivos sean genuinos? 
 Microsoft 365 Business no hace una versión de Windows que, en caso contrario, no es original. Microsoft 365 Business ofrece un beneficio de actualización que permite a aquellos clientes que ejecutan Windows 7, 8 o 8,1 Pro auténtico actualizar a la versión original más reciente de Windows 10 Pro. 
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-help-customers-with-their-compliance-obligations"></a>¿Qué es GDPR y cómo ayuda Microsoft 365 Empresa a los clientes con sus obligaciones de cumplimiento?
-GDPR (normativa general de protección de datos) es una nueva ley completa sobre privacidad que da a los residentes de la Unión Europea (UE) mayor control sobre sus "datos personales" y exige que las organizaciones mantengan la integridad de los datos personales. El RGPD requiere organizaciones que controlan o procesan datos personales ligados a los residentes de la UE para usar solo procesadores de datos de terceros que cumplan con los requisitos de RGPD para el procesamiento de datos personales. En marzo de 2017, Microsoft estableció garantías contractuales al respecto. Los clientes que tienen preguntas sobre cómo Microsoft puede ayudarles a cumplir sus obligaciones RGPD adicionales deben conocer las capacidades avanzadas de cumplimiento y seguridad disponibles en Microsoft 365 Business (por ejemplo, Azure Information Protection, datos prevención de pérdida, protección contra amenazas avanzada, etc.) y en otros conjuntos (por ejemplo, Microsoft 365 Enterprise E5). Para obtener más información, visita [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
+GDPR (normativa general de protección de datos) es una nueva ley completa sobre privacidad que da a los residentes de la Unión Europea (UE) mayor control sobre sus "datos personales" y exige que las organizaciones mantengan la integridad de los datos personales. El RGPD requiere organizaciones que controlan o procesan datos personales ligados a los residentes de la UE para usar solo procesadores de datos de terceros que cumplan con los requisitos de RGPD para el procesamiento de datos personales. En marzo de 2017, Microsoft estableció garantías contractuales al respecto. Los clientes que tienen preguntas sobre cómo Microsoft puede ayudarles a cumplir sus obligaciones RGPD adicionales deben conocer las capacidades avanzadas de cumplimiento y seguridad disponibles en Microsoft 365 Business (por ejemplo, Azure Information Protection, prevención de pérdida de datos, protección contra amenazas avanzada, etc.) y en otros conjuntos (por ejemplo, Microsoft 365 Enterprise E5). Para obtener más información, visita [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
 
 
 ## <a name="footnotes"></a>Notas al pie

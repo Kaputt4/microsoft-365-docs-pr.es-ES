@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga más información acerca de Microsoft 365 Business, un servicio de suscripción que incluye Office 365 más protección avanzada para su empresa contra amenazas de la cyber.
-ms.openlocfilehash: 7b939a9037edbe074a5ef9aa24451fe462016ccb
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: fccd0403131d8afe41608c4a195b53db959e7e91
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561488"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153826"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Información general de Microsoft 365 Business
 
@@ -76,7 +76,7 @@ Microsoft 365 Business le ayuda a **defenderse frente a las amenazas** :
 
 - Habilitación de las directivas antiphishing que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (inteligencia contra suplantación de identidad ATP). 
 
-- Configuración de directivas avanzadas que deshabilitan el acceso desde ubicaciones que no son de confianza o eluden la autenticación multifactor de sitios de confianza, como la red de la oficina (Azure MFA, incluidas las IP de confianza y el acceso condicional). 
+- Configuración de directivas avanzadas que deshabilitan el acceso desde ubicaciones que no son de confianza o eluden la autenticación multifactor de sitios de confianza, como la red de la oficina (Azure multi-factor Authentication incluyendo IP de confianza y el acceso condicional). 
 
 - Exigir la protección contra malware en todos los dispositivos Windows 10 de la organización y proteger los archivos en carpetas del sistema clave de los cambios realizados por ransomware (Windows Defender)
 

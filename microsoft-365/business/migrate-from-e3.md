@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Business desde Office 365 E3.
-ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: cff6166529df2e56ba948a9bd3ea4594fb295b08
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409685"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153537"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migración de Office 365 E3 a Microsoft 365 Business 
 
@@ -52,7 +52,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business y Office 
 | **Protección contra amenazas**        | | | 
 | Plan 1 de protección avanzada contra amenazas (ATP) de Office 365 | ![Incluido en Microsoft 365 Business](../media/check-mark.png)    | No se incluye, pero puede agregarse en | 
 | **Administración de identidades**        | | | 
-| Restablecimiento de contraseña de autoservicio para cuentas híbridas de Azure Active Directory (Azure AD), Azure multi-factor Authentication (MFA), acceso condicional, escritura diferida de contraseñas para identidades locales|     ![Incluido en Microsoft 365 Business](../media/check-mark.png)    |  | 
+| Restablecimiento de contraseñas de autoservicio para las cuentas híbridas de Azure Active Directory (Azure AD), la autenticación multifactor de Azure, el acceso condicional y la escritura diferida de contraseñas para identidades locales|     ![Incluido en Microsoft 365 Business](../media/check-mark.png)    |  | 
 | **Administración de dispositivos y aplicaciones**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Incluido en Microsoft 365 Business](../media/check-mark.png)    |  |
 | Activación en equipos compartidos|     ![Incluido en Microsoft 365 Business](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png)| 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad que se incluyen en Microsoft 365 Business para ayudarle a proteger sus datos en equipos, teléfonos y tabletas.
-ms.openlocfilehash: 85f9b50225c3dbdb0c1b76c33d516aaa03bec773
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 3f638a3287c06ded7bf4c29c647e62cbf3fca969
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561268"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153806"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business
 
@@ -74,11 +74,11 @@ Hay disponibles características avanzadas de Microsoft 365 Business para ayudar
 
 - **[Todas las capacidades de Intune en Azure portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    El acceso al centro de administración de Intune en Azure portal le permite configurar características de seguridad adicionales, como la administración de dispositivos de MacOS, dispositivos iPhone y Android, junto con la administración avanzada de dispositivos para Windows, que no están disponibles a través de Microsoft 365 centro de administración empresarial.
-- **Mismo [acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) que el plan de Azure ad P1**
+    El acceso al centro de administración de Intune en Azure portal le permite configurar características de seguridad adicionales, como la administración de dispositivos de MacOS, dispositivos iPhone y Android, junto con la administración avanzada de dispositivos para Windows, que no están disponibles a través del centro de administración de negocios de Microsoft 365.
+- **El mismo [acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) que el plan de Azure ad Premium P1**
 
 
-    El acceso condicional puede ayudar a proteger su organización del riesgo de inicio de sesión, a los intentos de acceso desde una red o configuración regional inesperada, a intentos de acceso desde tipos de dispositivos peligrosos, etc. Las directivas de acceso condicional se aplican una vez completada la primera autenticación y se usan señales del primer evento de autenticación para determinar si el intento de acceso debe ser aprobado, denegado o más pruebas (por ejemplo, una segunda forma de identificación) es obligatorio.
+    El acceso condicional puede ayudar a proteger su organización del riesgo de inicio de sesión, a los intentos de acceso desde una red o configuración regional inesperada, a intentos de acceso desde tipos de dispositivos peligrosos, etc. Las directivas de acceso condicional se aplican una vez completada la primera autenticación y se usan señales del primer evento de autenticación para determinar si se debe aprobar o denegar el acceso al intento, o si se requiere más pruebas (por ejemplo, una segunda forma de identificación).
 
     Las características de acceso condicional incluidas son:
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Para implementar una estrategia de administración de registros en un Office 365 o en la organización de Microsoft, use las etiquetas de retención que declaran el contenido como un registro. Después, publique o aplique automáticamente la etiqueta registro de retención.
-ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106148"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153838"
 ---
 # <a name="overview-of-records"></a>Información general de registros
 
@@ -107,9 +107,6 @@ El control de versiones de registros está disponible automáticamente para todo
 <br/><br/>
 
 ![Propiedad de estado de registro en un documento etiquetado como registro](../media/recordversioning8.png)
-
-> [!NOTE]
-> El control de versiones de registros requiere una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se ha declarado como un registro en un sitio de SharePoint o en una cuenta de OneDrive. Los usuarios que tienen acceso de solo lectura no necesitan esta licencia.
 
 ### <a name="locking-and-unlocking-a-record"></a>Bloquear y desbloquear un registro
 

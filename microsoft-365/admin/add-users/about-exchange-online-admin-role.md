@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Los administradores de Exchange Online administran el correo electrónico y los buzones de la organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario. '
-ms.openlocfilehash: 1496518dac518b98fb2fc3186610f83df70fca3c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ac11a05dd9ea7a0c569e131e7939a0e4e9293dea
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245794"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151382"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del rol de administrador de Exchange Online
 
@@ -41,7 +41,7 @@ Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se
     
 - Configurar características de buzón de correo, como la Directiva de uso compartido de buzones: cómo los usuarios pueden compartir información de calendario y contactos con otras personas fuera de la organización. 
     
-- Configure delegados "[Enviar como](https://support.office.com/article/2B828C5F-41AB-4904-97B9-3B63D8129C4E.aspx)" y "[enviar en nombre](https://support.office.com/article/C5E7749D-244E-477F-998E-55D3876C22EC.aspx)de" para el buzón de un usuario. Por ejemplo, es posible que un ejecutivo desee que su asistente tenga la capacidad de enviar correo en su nombre. 
+- Configure delegados "[Enviar como](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" y "[enviar en nombre](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)de" para el buzón de un usuario. Por ejemplo, es posible que un ejecutivo desee que su asistente tenga la capacidad de enviar correo en su nombre. 
     
 - [Crear un buzón compartido](../email/create-a-shared-mailbox.md) para que un grupo de personas pueda supervisar y enviar correo electrónico desde una dirección de correo electrónico común. 
     

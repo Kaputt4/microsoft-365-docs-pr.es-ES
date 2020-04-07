@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa de Microsoft 365 Business a Microsoft 365 E3.
-ms.openlocfilehash: 9e9cfcf2212faa69f600267e4f9bfd2391e3f4e5
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 0d636c0572850a53612bf756508c4b57f1b3e4eb
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409675"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153525"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrar de Microsoft 365 Empresa a Microsoft 365 E3
 
@@ -61,10 +61,10 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business y Microso
 | Capacidades de reducción de superficie de ataques    | [Vea esta lista](#threat-protection) | Administración empresarial del aislamiento basado en hardware para Microsoft Edge | 
 | Plan 1 de protección avanzada contra amenazas (ATP) de Office 365 | ![Incluido en Microsoft 365 Business](../media/check-mark.png)    | No se incluye, pero puede agregarse en | 
 | **Administración de identidades**        | | | 
-| Restablecimiento de contraseña de autoservicio para cuentas híbridas de Azure Active Directory (Azure AD), Azure multi-factor Authentication (MFA), acceso condicional, escritura diferida de contraseñas para identidades locales|     ![Incluido en Microsoft 365 Business](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
+| Restablecimiento de contraseñas de autoservicio para las cuentas híbridas de Azure Active Directory (Azure AD), la autenticación multifactor de Azure, el acceso condicional y la escritura diferida de contraseñas para identidades locales|     ![Incluido en Microsoft 365 Business](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | Detección de aplicaciones en la nube, Azure AD Connect Health    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | El inicio de sesión único (SSO) de las aplicaciones Office 365 de Azure AD: 10 aplicaciones por usuario (Galería de aplicaciones SaaS como Salesforce) * | ![Incluido en Microsoft 365 Business](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO: sin límite (aplicaciones locales a través de proxy de aplicación de Azure AD y aplicaciones que no son de galería con plantillas de integración de aplicaciones de autoservicio)    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Premium P1 SSO: sin límite (aplicaciones locales a través de proxy de aplicación de Azure AD y aplicaciones que no son de galería con plantillas de integración de aplicaciones de autoservicio)    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | **Administración de dispositivos y aplicaciones**        | | | 
 | Microsoft Intune, Windows AutoPilot|     ![Incluido en Microsoft 365 Business](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 |Acceso de escritorio virtual (VDA)    |  |     ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
