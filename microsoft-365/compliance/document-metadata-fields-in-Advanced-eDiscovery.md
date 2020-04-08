@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos para los documentos en un conjunto de revisión en un caso en eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
-ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
+ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "42651844"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941242"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos del documento en eDiscovery avanzado
 
@@ -34,6 +34,9 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 - **Nombre del campo exportado:** Nombre del campo de metadatos que se incluye al exportar los documentos.  Una celda en blanco significa que el campo no está incluido en los metadatos exportados.
 
 - **Descripción:** Descripción del campo de metadatos.
+
+> [!NOTE]
+> El campo **palabras clave** en [revisar configurar búsqueda](https://docs.microsoft.com/microsoft-365/compliance/review-set-search) usa la palabra clave Query Language (KQL). Los campos enumerados en la columna **nombre de campo de búsqueda** pueden usarse en el campo **palabras clave** en una revisión de la configuración de revisión para crear consultas complejas sin tener que usar el generador de consultas. Para obtener más información sobre KQL, vea [referencia de sintaxis de lenguaje de consulta de palabras clave](https://go.microsoft.com/fwlink/?LinkId=269603).
 
 |Nombre del **campo** y **nombre del campo de visualización**|**Nombre de campo de búsqueda**|**Nombre del campo exportado**|**Descripción**|
 |:-----|:-----|:-----|:-----|

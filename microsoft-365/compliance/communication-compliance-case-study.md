@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4a119e0ec082893d393d1b43af76b41dc93c76a1
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053077"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165939"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo para Microsoft Teams y Exchange Communications
 
@@ -41,7 +41,7 @@ Este caso práctico cubrirá los conceptos básicos para configurar rápidamente
 
 ## <a name="step-1---planning-for-communication-compliance"></a>Paso 1: Planeación del cumplimiento de la comunicación
 
-Los administradores de TI de Contoso y los especialistas en línea han asistido por webinar en línea sobre soluciones de cumplimiento en Microsoft 365 y decidido que las directivas de cumplimiento de comunicaciones les ayudarán a cumplir los requisitos de la Directiva corporativa actualizada para reducir el área de trabajo. ACOS. Al trabajar juntos, han desarrollado un plan para crear y habilitar una directiva de cumplimiento de comunicaciones que supervisará el lenguaje ofensivo para los chats enviados en Microsoft Teams en mensajes de correo electrónico enviados en Exchange Online. Su plan incluye identificación:
+Los administradores de TI de Contoso y los especialistas en línea se han asistido por webinar en línea sobre soluciones de cumplimiento en Microsoft 365 y decidido que las directivas de cumplimiento de comunicaciones les ayudarán a cumplir los requisitos de la Directiva corporativa actualizada para reducir el acoso del lugar de trabajo. Al trabajar juntos, han desarrollado un plan para crear y habilitar una directiva de cumplimiento de comunicaciones que supervisará el lenguaje ofensivo para los chats enviados en Microsoft Teams en mensajes de correo electrónico enviados en Exchange Online. Su plan incluye identificación:
 
 - Los administradores de ti que necesitan tener acceso a las características de cumplimiento de comunicaciones.
 - Los especialistas en cumplimiento que necesitan crear y administrar directivas de comunicación.
@@ -53,10 +53,21 @@ Los administradores de TI de Contoso y los especialistas en línea han asistido 
 El primer paso es confirmar que la licencia de Microsoft 365 de Contoso incluye soporte para la solución de cumplimiento de comunicaciones. Para acceder y usar el cumplimiento de la comunicación, los administradores de TI de Contoso necesitan comprobar que Contoso tiene uno de los siguientes elementos:
 
 - Suscripción a Microsoft 365 E5 (versión de pago o de prueba)
-- Licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado
+- Suscripción a Microsoft 365 E3 + complemento de cumplimiento de Microsoft 365 E5
+- Suscripción a Microsoft 365 E3 + complemento Microsoft 365 E5 del servicio de administración de riesgos de Insider
+- Suscripción a Microsoft 365 A5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 a3 + complemento de cumplimiento A5 de Microsoft 365
+- Suscripción a Microsoft 365 a3 + complemento de administración de riesgos de la A5 del Insider de Microsoft 365
+- Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 G5 + complemento de cumplimiento de Microsoft 365 G5
+- Suscripción a Microsoft 365 G5 + complemento de administración de riesgos de Insider de Microsoft 365 G5
 - Suscripción a Office 365 Enterprise E5 (versión de pago o de prueba)
+- Office 365 Enterprise E3 subscription + el complemento Office 365 Advanced Compliance (ya no está disponible para las nuevas suscripciones, vea note)
 
-También deben confirmar que los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben asignarse a una de las licencias enumeradas anteriormente.
+También deben confirmar que los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener asignada una de las licencias anteriores.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance ya no se vende como una suscripción independiente. Cuando expiren las suscripciones actuales, los clientes deben pasar a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o más.
 
 Los administradores de TI de Contoso deben seguir estos pasos para comprobar la compatibilidad con licencias de Contoso:
 

@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Obtenga información sobre cómo agregar palabras clave definidas por el usuario a relevancia para ayudarle a identificar los archivos relevantes mientras se etiquetan en Office 365 Advanced eDiscovery y para especificar los parámetros de costo.  '
-ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bec34867e7dfdb86848fd1fd2126d5cf96129802
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075946"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42556768"
 ---
-# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definir palabras clave resaltadas y opciones avanzadas en la exhibición avanzada de documentos electrónicos de Office 365
+# <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>Definir palabras clave resaltadas y opciones avanzadas en eDiscovery avanzado (Classic)
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -70,11 +70,11 @@ Esta configuración afecta a los gráficos Track y decida en importancia.
     
     ![Parámetros de costo de configuración de relevancia](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. Haga clic en **Guardar **. Se guarda la configuración seleccionada.
+3. Haga clic en **Guardar**. Se guarda la configuración seleccionada.
     
 ## <a name="see-also"></a>Vea también
 
-[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Definir asuntos y asignar usuarios](define-issues-and-assign-users.md)
   

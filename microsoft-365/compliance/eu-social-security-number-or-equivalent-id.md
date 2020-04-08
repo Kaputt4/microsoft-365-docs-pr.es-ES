@@ -1,5 +1,7 @@
 ---
 title: Número de la seguridad social de la UE o identificador equivalente
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 0666818dc892070f5c2f0c34abd8ca33d1253e33
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1f2d1d9c61f27fb47b0c7ac0ce544b17175d4254
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805933"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41591231"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Número de la seguridad social de la UE o identificador equivalente
 
@@ -673,5 +675,5 @@ identifikationsnumret #
   
 ## <a name="see-also"></a>Vea también
 
-[Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+[Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

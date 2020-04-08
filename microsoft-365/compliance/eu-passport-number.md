@@ -1,5 +1,7 @@
 ---
 title: Número de pasaporte de la UE
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de pasaporte de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 4afcf7b764eb8976e0588464515256f7cb1bdb8d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0032d3e50d7dab0b696d9000242e70956469052e
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805953"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41592121"
 ---
 # <a name="eu-passport-number"></a>Número de pasaporte de la UE
 
@@ -939,5 +941,5 @@ Para obtener más información, consulte la sección "Estados Unidos/Reino Unido
   
 ## <a name="see-also"></a>Vea también
 
-[Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+[Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

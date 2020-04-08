@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8794a51c60b778814d05a84d2332dc018b54a80a
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222012"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170912"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Instituto Nacional de normas y tecnología (NIST) Cybersecurity Framework (CSF)
 
@@ -37,10 +37,10 @@ NIST Cybersecurity Framework (CSF) es un marco voluntario que consta de estánda
 
 Aprenda a acelerar la implementación del marco de Cybersecurity de NIST con puntuación de cumplimiento y nuestro proyecto de Azure Security y Compliance:
 
-- [Descargar la lista de comprobación de riesgos de Azure Security and Compliance Blueprint-NIST CSF](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [Descargar la lista de comprobación de riesgos de Azure Security and Compliance Blueprint-NIST CSF](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
 - [Obtenga más información acerca de la evaluación del CSF de NIST para Office 365 en puntuación de cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para administración pública](https://aka.ms/d365-compliance-list)
@@ -68,7 +68,7 @@ Cybersecurity sigue siendo un problema de administración crítico en la era de 
 
 **¿Se ha validado un evaluador independiente de que Azure Government, Dynamics 365 y Office 365 admitan los requisitos del NIST CSF?**
 
-Sí, una organización de evaluación de terceros ha atestiguado que la oferta del servicio de nube de Azure Government cumple con los procedimientos de administración de riesgos de NIST Cybersecurity Framework (CSF), tal como se define en el marco para mejorar la infraestructura crítica Cybersecurity, versión 1,0, con fecha de 12 de febrero de 2014. El NIST CSF se asigna al marco de control de FedRAMP moderado y un evaluador independiente ha evaluado Dynamics 365 con la línea base moderada FedRAMP. Además, Office 365 ha obtenido [la carta CSF del NIST de certificación](https://aka.ms/O365NISTCSFcertification) de HITRUST en junio de 2018.
+Sí, una organización de evaluación de terceros ha atestado que la oferta del servicio de nube de Azure Government cumple con los procedimientos de administración de riesgos de NIST Cybersecurity Framework (CSF), tal como se define en el marco para mejorar la infraestructura crítica Cybersecurity, versión 1,0, con fecha 12 de febrero de 2014. El NIST CSF se asigna al marco de control de FedRAMP moderado y un evaluador independiente ha evaluado Dynamics 365 con la línea base moderada FedRAMP. Además, Office 365 ha obtenido [la carta CSF del NIST de certificación](https://aka.ms/O365NISTCSFcertification) de HITRUST en junio de 2018.
 
 **¿Cómo demuestran los servicios en la nube de Microsoft el cumplimiento del marco?**
 
@@ -88,7 +88,7 @@ De acuerdo con el [Departamento de Homeland Security](https://www.dhs.gov/critic
 
 **¿Cuáles son los servicios de ámbito de Office 365?**
 
-La certificación in-Scope Services of NIST CSF es archivado de Exchange Online, Exchange Online Protection, Exchange Online, Skype empresarial, centro de administración, SharePoint Online, Project online, OneDrive para la empresa, Office Online, myanalytics, Microsoft Teams, Office ProPlus en Office 365 multi-tenant Cloud y Office 365 GCC.
+La certificación in-Scope de NIST CSF es archivado de Exchange Online, Exchange Online Protection, Exchange Online, Skype empresarial, centro de administración, SharePoint Online, Project online, OneDrive para la empresa, Office Online, myanalytics, Microsoft Teams, Office ProPlus en la nube multiinquilino de Office 365 y Office 365 GCC.
 
 > [!NOTE]
 > Office 365 ProPlus permite el acceso a varios servicios en la nube, como la configuración de itinerancia, la concesión de licencias y el almacenamiento en la nube de clientes de OneDrive, y puede habilitar el acceso a servicios en la nube adicionales en el futuro. La configuración y las licencias de itinerancia admiten los estándares para HITRUST. El almacenamiento en la nube de clientes de OneDrive no, y otros servicios en la nube a los que se puede tener acceso a través de Office 365 ProPlus y que Microsoft pueda ofrecer en el futuro, también pueden no ser compatibles con estos estándares. *
@@ -109,7 +109,7 @@ Microsoft proporciona las ofertas más completas en comparación con otros prove
 - [Solicitud Ejecutiva Presidencia sobre el fortalecimiento del Cybersecurity de las redes federales y la infraestructura crítica](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

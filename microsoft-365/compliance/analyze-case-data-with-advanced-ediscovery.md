@@ -16,10 +16,10 @@ search.appverid:
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: 'Obtenga información general sobre el proceso de análisis, que le permite establecer parámetros, opciones de ejecución y ver resultados, en la exhibición avanzada de documentos electrónicos de Office 365. '
 ms.openlocfilehash: 31745651ddbebbfc5e9670a5a906d82cf493aea4
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "42556808"
 ---
 # <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>Analizar datos de casos con eDiscovery avanzado (Classic)
@@ -45,7 +45,7 @@ Antes de ejecutar Analyze, defina los criterios para seleccionar y procesar arch
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Descripción de la similitud de documentos](understand-document-similarity-in-advanced-ediscovery.md)
   

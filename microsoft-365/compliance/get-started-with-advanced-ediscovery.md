@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo empezar a usar la exhibición avanzada de documentos electrónicos en Microsoft 365. Una vez que haya completado algunos pasos rápidos, la herramienta eDiscovery avanzado estará lista para usarse. El primer paso consiste en crear un caso y, a continuación, empezar a usar las funciones y características de eDiscovery avanzadas.
-ms.openlocfilehash: 2819fdd2f3b98ca82535aa0f08830bb37744c3f7
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 1f3eb78ab9f9e96eaa95dbfbc7e087fa1514b836
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561670"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43100873"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introducción a la exhibición avanzada de documentos electrónicos
 
@@ -35,19 +35,19 @@ La concesión de licencias para eDiscovery avanzado requiere la suscripción a l
 
 - **Suscripción de la organización:** Para obtener acceso a la exhibición avanzada de documentos electrónicos en el centro de cumplimiento de Microsoft 365 o el centro de cumplimiento de & de seguridad de Office 365, su organización debe tener una de las siguientes opciones:
 
-  - Suscripción a Microsoft 365 E5 o a Office 365 E5
+  - Suscripciones a Microsoft 365 E5 u Office 365 E5.
   
-  - Suscripción a Microsoft 365 E3 con el complemento de cumplimiento de E5
-  
-  - Suscripción a Office 365 E3 con el complemento de cumplimiento avanzado
+  - Suscripción a Microsoft 365 E3 con complemento de cumplimiento E5
+
+  - Suscripción a Microsoft 365 E3 con el complemento de eDiscovery y auditoría de E5
 
   Si no tiene un plan de Microsoft 365 E5 existente y desea probar la exhibición avanzada de documentos electrónicos, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a su suscripción existente de Office 365 o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 E5.
 
 - **Licencias por usuario:** Para agregar un usuario como custodio en un caso de exhibición de documentos electrónicos, el usuario debe tener asignada una de las siguientes licencias, según la suscripción de la organización:
 
-  - Microsoft 365: los usuarios deben tener asignada una licencia de Microsoft 365 E5 o una licencia de complemento de cumplimiento E5.
+  - Microsoft 365: los usuarios deben tener asignada una licencia de Microsoft 365 E5, una licencia de complemento de cumplimiento E5 o una licencia de eDiscovery y de auditoría de la exhibición de documentos electrónicos E5.
 
-  - Office 365: los usuarios deben tener asignada una licencia de Office 365 E5 o una licencia de complemento de cumplimiento avanzado.
+  - Office 365: los usuarios deben tener asignada una licencia de Office 365 E5.
 
    Para obtener información acerca de cómo asignar licencias, consulte [asignar licencias a los usuarios](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
@@ -56,7 +56,7 @@ La concesión de licencias para eDiscovery avanzado requiere la suscripción a l
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Paso 2: asignar permisos de exhibición de documentos electrónicos
 
-Para obtener acceso a la exhibición de documentos electrónicos avanzada o agregar como miembro de un caso de exhibición de documentos electrónicos avanzado, un usuario debe tener asignados los permisos adecuados. En concreto, debe agregarse un usuario como miembro del grupo de roles eDiscovery Manager en el centro de seguridad & cumplimiento de Office 365. Los miembros de este grupo de roles pueden crear y administrar casos de eDiscovery avanzados. Pueden agregar y quitar miembros, ubicar custodios y ubicaciones de contenido en retención, administrar notificaciones de retención legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos en un conjunto de revisión, y exportar y descargar desde una configuración avanzada. caso de exhibición de documentos electrónicos.
+Para obtener acceso a la exhibición de documentos electrónicos avanzada o agregar como miembro de un caso de exhibición de documentos electrónicos avanzado, un usuario debe tener asignados los permisos adecuados. En concreto, debe agregarse un usuario como miembro del grupo de roles eDiscovery Manager en el centro de seguridad & cumplimiento de Office 365. Los miembros de este grupo de roles pueden crear y administrar casos de eDiscovery avanzados. Pueden agregar y quitar miembros, ubicar custodios y ubicaciones de contenido en retención, administrar notificaciones de retención legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos en un conjunto de revisión, y exportar y descargar desde un caso de exhibición de documentos electrónicos avanzado.
 
 Complete los siguientes pasos para agregar usuarios al grupo de roles eDiscovery Manager:
 
