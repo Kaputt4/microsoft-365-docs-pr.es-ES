@@ -169,6 +169,8 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: Usar la implementación centralizada para desplegar complementos
           href: manage/manage-deployment-of-add-ins.md
+        - name: Preguntas más frecuentes sobre la implementación centralizada
+          href: manage/centralized-deployment-FAQ.md
         - name: Buscar un asociado o distribuidor
           href: manage/find-your-partner-or-reseller.md
         - name: Buzones de sala y equipamiento
