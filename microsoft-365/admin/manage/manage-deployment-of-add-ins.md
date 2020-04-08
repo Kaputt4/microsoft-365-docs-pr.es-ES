@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361955"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165928"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos de Office 365 en el Centro de administración de Microsoft 365
 
@@ -60,7 +60,7 @@ Dependiendo del tamaño del público objetivo, puede que quiera agregar o elimin
 Antes de comenzar, vea [Determinar si la implementación centralizada de complementos funciona para su organización de Office 365](centralized-deployment-of-add-ins.md).
 
   
-1. En el centro de administración, vaya a la página **configuración** \> **de complementos** .
+1. En el centro de administración de Microsoft 365, vaya a la página **configuración** > **de complementos** .
     
 2. Seleccione **implementar complemento** en la parte superior de la página. En la página información general, seleccione **siguiente**.
     
@@ -101,12 +101,19 @@ La opción adecuada para su organización depende de su configuración. Sin emba
   
 ### <a name="add-in-states"></a>Estados del complemento
 
-Un complemento puede estar en el estado **activado** o **desactivado** .
-  
+Los administradores pueden activar o desactivar los complementos que implementan para todos los usuarios del centro de administración de Microsoft 365.
+
+1.    En el centro de administración, vaya a la página **configuración** > **de complementos** . 
+2.    Seleccione el complemento implementado. 
+3.    Haga **clic en el** botón cambiar el **Estado** para activar o desactivar el **complemento.** 
+4.    Guarde los cambios.  
+
+También está disponible uno de los tres Estados de complementos.
+ 
 |**Estado**|**Cómo se produce el estado**|**Impacto**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |El administrador ha cargado el complemento y lo ha asignado a usuarios o grupos.  <br/> |Los usuarios y grupos asignados al complemento lo ven en los clientes relevantes.  <br/> |
-|**Desactivado**  <br/> |El administrador ha desactivado el complemento.  <br/> |Los usuarios y los grupos asignados al complemento ya no tienen acceso al mismo.  <br/> Si se cambia el estado del complemento a "activado", los usuarios y grupos tendrán acceso de nuevo.  <br/> |
+|**Desactivado**  <br/> |El administrador ha desactivado el complemento.  <br/> |Los usuarios y los grupos asignados al complemento ya no tienen acceso al mismo.  <br/> Si el estado del complemento cambia a **activo**, los usuarios y grupos tendrán acceso de nuevo a él.  <br/> |
 |**Eliminado**  <br/> |El administrador ha eliminado el complemento.  <br/> |Los usuarios y grupos asignados al complemento ya no tienen acceso al mismo.  <br/> |
    
 Considere la posibilidad de eliminar un complemento si nadie lo está usando. Desactivar un complemento puede ser útil si solo se usa en determinados momentos del año.
@@ -172,7 +179,6 @@ Esto impedirá que todos los usuarios adquieran los siguientes complementos de l
     
   - Office
     
-  - iOS (solo iPad)
     
 - Adquisiciones que comienzan dentro de **AppSource**
     
@@ -217,7 +223,6 @@ Para que RGPD cumpla con los menores, debe asegurarse de que una de las siguient
 |Office 2016 para Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 para Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 para Mac  <br/> |16.11.18020200  <br/> |
-|Office 2016 para iOS (solo para iPad)  <br/> |2.12.18032600  <br/> |
 |Office para la Web  <br/> |N/D  <br/> |
    
  **Para Outlook**: 
