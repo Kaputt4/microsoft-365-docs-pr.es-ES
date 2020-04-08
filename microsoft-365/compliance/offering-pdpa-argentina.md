@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7419bc37b40bb7e2b9b2726c4672d7d8d481ab8b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80e9ab25fda70ae723b844691dc129d0b604921
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597917"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313785"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>Ley de Protección de Datos Personales (PDPA) de Argentina
 
 ## <a name="about-the-pdpa"></a>Acerca de la PDPA
 
-De acuerdo con la Constitución Argentina, la [Ley de Protección de Datos Personales 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) se sancionó en 2000 para proteger la privacidad de los datos personales y ofrecer acceso a los usuarios a cualquier información sobre ellos almacenada en los registros y en las bases de datos públicas y privadas. La [Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip) (AAIP), perteneciente a la Jefatura del Gabinete de Ministros, es responsable de aplicar esta legislación.
+De acuerdo con la Constitución Argentina, la [Ley de Protección de Datos Personales 25.326](http://www.jus.gob.ar/media/3201023/personal_data_protection_act25326.pdf) (PDPA) se sancionó en 2000 para proteger la privacidad de los datos personales y ofrecer acceso a los usuarios a cualquier información sobre ellos almacenada en los registros y en las bases de datos públicas y privadas. La [Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip) (AAIP), perteneciente a la Jefatura del Gabinete de Ministros, es responsable de aplicar esta legislación.
 
 La PDPA se alinea con el modelo de información legislativa europeo para la protección de la privacidad de datos, y Argentina fue el primer país en Latinoamérica en lograr una calificación de "idoneidad" para las transferencias de datos de la UE.
 

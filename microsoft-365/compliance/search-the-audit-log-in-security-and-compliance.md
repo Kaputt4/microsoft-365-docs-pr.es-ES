@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955689"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151445"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -588,9 +588,9 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
 |:-----|:-----|:-----|
 |Usuario agregado|Agregar usuario|Se ha creado una cuenta de usuario de Office 365.|
 |Licencia de usuario cambiada|Cambiar licencia de usuario|La licencia que se ha asignado a un usuario ha cambiado. Para ver qué licencias han cambiado, vea la actividad correspondiente **Usuario actualizado**.|
-|Contraseña de usuario cambiada|Cambiar contraseña de usuario|Un administrador cambió la contraseña para un usuario.|
+|Contraseña de usuario cambiada|Cambiar contraseña de usuario|El usuario cambia su contraseña. El restablecimiento de contraseña de autoservicio tiene que estar habilitado (para todos los usuarios o los seleccionados) en la organización para que los usuarios puedan restablecer la contraseña. También puede realizar un seguimiento de la actividad de restablecimiento de contraseña de autoservicio de Azure Active Directory. Para obtener más información, consulte [Opciones de informes para la administración de contraseñas de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Usuario eliminado|Eliminar usuario|Una cuenta de usuario de Office 365 ha sido eliminada.|
-|Restablecer contraseña de usuario|Restablecer contraseña de usuario|Un administrador restableció la contraseña de un usuario.|
+|Restablecer contraseña de usuario|Restablecer contraseña de usuario|El administrador restablece la contraseña de un usuario.|
 |Establecer una propiedad que fuerce al usuario a cambiar la contraseña|Forzar el cambio de la contraseña de usuario|Un administrador estableció la propiedad que obliga a un usuario a cambiar su contraseña la próxima vez que inicie sesión en Office 365.|
 |Establecer propiedades de licencia|Establecer propiedades de licencia|Un administrador modificó las propiedades de una licencia asignada a un usuario.|
 |Usuario actualizado|Actualizar usuario|Un administrador cambia una o más propiedades de una cuenta de usuario. Para obtener una lista de las propiedades de usuario que pueden actualizarse, consulte la sección "Actualizar atributos de usuario" en [Eventos del informe de auditoría de Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).|

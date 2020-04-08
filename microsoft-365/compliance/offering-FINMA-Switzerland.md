@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99d4b1b07c86989bce0da08324014bda7a8a7d5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 728208960932ea8d642ad1604d45ba321f021735
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602417"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313765"
 ---
 # <a name="financial-market-supervisory-authority-finma-switzerland"></a>Autoridad de Supervisión del Mercado Financiero (FINMA) de Suiza
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602417"
 
 La [Autoridad de Supervisión del Mercado Financiero](https://www.finma.ch/en) ([Eidgenössische Finanzmarktaufsicht](https://www.finma.ch/de/), FINMA) es el regulador de los mercados financieros independientes de Suiza y es responsable de garantizar que los mercados financieros suizos funcionen de forma eficaz. Lleva a cabo la supervisión prudencial en bancos, compañías de seguros, bolsas, agentes de valores y otras instituciones financieras.
 
-Las FINMA publicó la [Circular 2018/3 Subcontratación: bancos y aseguradoras](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2018-03.pdf?la=en) para definir los requisitos que los bancos, agentes de valores y compañías de seguros deben respetar al subcontratar a un proveedor de servicios para cualquiera de las funciones que sean importantes para las actividades empresariales de la compañía. Cualquier empresa que subcontrate sus actividades empresariales es responsable ante la FINMA tal como lo sería si llevara a cabo las funciones subcontratadas por sí misma.
+Las FINMA publicó la [Circular 2018/3 Subcontratación: bancos y aseguradoras](https://www.finma.ch/en/~/media/finma/dokumente/rundschreiben-archiv/2018/rs-18-03/finma-rs-2018-03---20170921.pdf?la=en) para definir los requisitos que los bancos, agentes de valores y compañías de seguros deben respetar al subcontratar a un proveedor de servicios para cualquiera de las funciones que sean importantes para las actividades empresariales de la compañía. Cualquier empresa que subcontrate sus actividades empresariales es responsable ante la FINMA tal como lo sería si llevara a cabo las funciones subcontratadas por sí misma.
 
 ## <a name="microsoft-and-finma"></a>Microsoft y la FINMA
 

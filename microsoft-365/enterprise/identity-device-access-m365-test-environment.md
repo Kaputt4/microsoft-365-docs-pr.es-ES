@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Crear un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades.
-ms.openlocfilehash: e43483afc9e17de9582b2998867b53cfff7d8492
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 45749140698553a75df50ed1111cdbfc8eb15684
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601007"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153743"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Acceso de dispositivos e identidades en el entorno de prueba de Microsoft 365
 

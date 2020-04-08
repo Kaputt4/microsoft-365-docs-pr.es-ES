@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.'
-ms.openlocfilehash: 23aa0e242464ebd450a0930bcda4274c026c7535
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105647"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151465"
 ---
 # <a name="overview-of-file-plan-manager"></a>Información general sobre el administrador del plan de archivos
 
@@ -37,9 +37,9 @@ Para acceder al administrador del plan de archivos en el centro de seguridad y c
 
 Para acceder al administrador del plan de archivos, debe tener uno de los siguientes roles de administrador:
     
-    - Administrador de retención
-    
-    - Administrador de retención con permiso de vista
+- Administrador de retención
+
+- Administrador de retención con permiso de vista
 
 ## <a name="default-retention-labels-and-label-policy"></a>Etiquetas de retención predeterminadas y directiva de etiquetas
 

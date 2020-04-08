@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilice estas guías de laboratorio de pruebas para configurar una demostración, prueba de concepto o entornos de desarrollo/prueba en Microsoft 365 para empresas.
-ms.openlocfilehash: 4190eb4619f4732310786b5a7dde6bb590a969c1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1ea41cd3553c70b2a8bb99e08da43fd45b1aa558
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067066"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153921"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guías de laboratorio para pruebas de Microsoft 365 para empresas
 
@@ -76,7 +76,7 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Proteger las cuentas de administrador global](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   Bloquear sus cuentas de administrador global con directivas de acceso condicional.
+   Bloquee sus cuentas de administrador global con directivas de acceso condicional.
 
 - [Reescritura de contraseña](password-writeback-m365-ent-test-environment.md)
 
@@ -96,7 +96,7 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Acceso de dispositivos e identidades](identity-device-access-m365-test-environment.md)
 
-   Crear un entorno para probar la identidad recomendada y configuraciones de acceso de dispositivo y directivas de acceso condicional.
+   Cree un entorno para probar la identidad recomendada y las configuraciones de acceso a dispositivos y las directivas de acceso condicional.
 
 
 ## <a name="mobile-device-management"></a>Administración de dispositivos móviles
