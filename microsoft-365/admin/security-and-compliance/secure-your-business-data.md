@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: 938a6d58c8781fcc04f6b86e15db88b5de523cdf
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: d271e0351f784e1616e81e0f0124e65c3526ab91
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142520"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170969"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>Las 10 mejores formas de proteger los planes de Office 365 y Microsoft 365 Empresa
 
@@ -147,7 +147,7 @@ Para crear una regla de transporte de correo, vea un [vídeo de aprendizaje cort
     
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|**Bloquear tipos de archivo que puedan contener ransomware o cualquier otro código malintencionado**|
 |:-----|:-----|:-----|
@@ -161,7 +161,7 @@ Para crear una regla de transporte de correo, vea un [vídeo de aprendizaje cort
 > [!TIP]
 > También puede Agregar los archivos que desee bloquear a la lista antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para más información, consulte lo siguiente:
+Para obtener más información, vea:
   
 - [Cómo tratar con ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -184,12 +184,13 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
 |Nombre  <br/> |Impedir el reenvío automático de correo electrónico a dominios externos  <br/> |
 |Aplicar esta regla si...  <br/> |El remitente. . . es externo/interno. . . Dentro de la organización  <br/> |
+|Agregar condición  <br/> |El destinatario. . . es externo/interno. . . Fuera de la organización  <br/> |
 |Agregar condición  <br/> |Las propiedades del mensaje. . . incluir el tipo de mensaje. . . Reenvío automático  <br/> |
 |Haga lo siguiente...  <br/> |Bloquear el mensaje. . . rechazar el mensaje e incluir una explicación.  <br/> |
 |Proporcionar el texto del mensaje  <br/> |El reenvío automático de correo electrónico fuera de esta organización se impide por motivos de seguridad.  <br/> |
@@ -255,9 +256,9 @@ Para crear una directiva contra la suplantación de identidad ATP, vea un [víde
 |Agregar usuarios que proteger  <br/> |Seleccionar **+ Agregar condición, el destinatario es**. Escriba los nombres de usuario o escriba la dirección de correo electrónico del candidato, el administrador de campañas y otros miembros importantes del personal. Puede Agregar hasta 20 direcciones internas y externas que desee proteger de la suplantación.  <br/> |
 |Agregar dominios que proteger  <br/> |Seleccionar **+ Agregar una condición, el dominio del destinatario es**. Escriba el dominio personalizado asociado con la suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.  <br/> |
 |Elegir acciones  <br/> |Si un usuario suplantado envía un correo electrónico: seleccione **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, securityadmin@contoso.com.          Si un dominio suplantado envía un correo electrónico: seleccione **mensaje en cuarentena**.  <br/> |
-|Inteligencia de buzones  <br/> |De forma predeterminada, la inteligencia de buzones se selecciona cuando se crea una nueva Directiva antiphishing. Deje esta configuración **activada** para obtener los mejores resultados.  <br/> |
-|Agregar dominios y remitentes de confianza  <br/> |Para este ejemplo, no defina ningún reemplazo.  <br/> |
-|Aplicado a  <br/> |Seleccione **el dominio del destinatario es**. En **cualquiera de estos**, seleccione **elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, contoso.com, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.  <br/> |
+|Inteligencia de buzones  <br/> |De forma predeterminada, se selecciona inteligencia de buzones al crear una directiva contra suplantación de identidad (anti-phishing). Deje esta configuración **activada** para obtener mejores resultados.  <br/> |
+|Agregar dominios y remitentes de confianza  <br/> |En este ejemplo, no defina ninguna invalidación.  <br/> |
+|Aplicado a  <br/> |Seleccione**El dominio del destinatario es**. En **Cualquiera de estos**, seleccione **Elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, contoso.com, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.  <br/> |
    
 Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -318,7 +319,7 @@ Para modificar la directiva predeterminada:
     
 2. En **configuración que se aplica al contenido excepto el correo electrónico**, seleccione **Office 365 ProPlus, Office para iOS y Android**.
     
-3. Haga clic en **Guardar**. 
+3. Seleccione **Guardar**. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -326,7 +327,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Haga clic en **Guardar**. 
+3. Seleccione **Guardar**. 
     
 **Configuración u opción**|**Valor recomendado** <br/>|
 | :-------| :-----|

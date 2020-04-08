@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda las fases principales para implementar la infraestructura básica de Microsoft 365 para empresas en su organización, también conocida como la implementación principal.
-ms.openlocfilehash: 966fa8ad26d54328bf4d2e95c95b497e5d283e52
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951963"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153849"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infraestructura básica de Microsoft 365 para empresas
 
@@ -88,17 +88,17 @@ Por ejemplo, puede crear la configuración de:
 
 | Fase | Resultados |
 |:-------|:-----|
-| Identidad | Sincronización de cuentas y grupos para las directivas de acceso condicional basado en la identidad. |
+| Identidad | Sincronización de cuentas y grupos para las directivas de acceso condicional basado en identidades. |
 | Windows 10 Enterprise | Grupos para actualizar automáticamente los equipos con Windows 7 o Windows 8.1 a Windows 10 Enterprise. |
 | Office 365 ProPlus | Grupos para implementar automáticamente Office 365 ProPlus para usuarios con Office 2010, Office 2013 u Office 2016. |
-| Administración de dispositivos móviles | Grupos para la inscripción de dispositivos y directivas de acceso condicional basado en el dispositivo. |
+| Administración de dispositivos móviles | Grupos para la inscripción de dispositivos y directivas de acceso condicional basado en dispositivos. |
 | Protección de la información | Grupos de etiquetas de confidencialidad de Office 365. |
 
 Cuando se haya preparado para implementar elementos de esta infraestructura para los usuarios, usted:
 
 | Fase | Acción de implementación |
 |:-------|:-----|
-| Identidad | Agregará cuentas de usuario a los grupos para las directivas de acceso condicional basado en la identidad. |
+| Identidad | Agregará cuentas de usuario a los grupos para las directivas de acceso condicional basado en identidades. |
 | Windows 10 Enterprise | Agregará cuentas a los grupos para implementar automáticamente Windows 10 Enterprise para los usuarios con Windows 7 o Windows 8.1. |
 | Office 365 ProPlus | Agregará cuentas de usuario a los grupos para implementar automáticamente Office 365 ProPlus para usuarios con Office 2010, Office 2013 u Office 2016. |
 | Administración de dispositivos móviles | Agregará cuentas a los grupos para la inscripción de dispositivos y directivas de acceso condicional basado en el dispositivo. |
