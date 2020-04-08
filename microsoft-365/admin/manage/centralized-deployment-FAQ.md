@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Revise las respuestas a preguntas frecuentes sobre la implementación centralizada en el centro de administración de Microsoft 365.
-ms.openlocfilehash: d63158f70e3f905b0ee1acf994cbef207f1ab4f1
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 313e1dd7481ccdd8bbf7531d5b7433f8bbd54e38
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166498"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188969"
 ---
 # <a name="centralized-deployment-faq"></a>Preguntas más frecuentes sobre la implementación centralizada
 
@@ -33,7 +33,7 @@ La implementación centralizada es la forma recomendada para que un administrado
 
 La implementación centralizada de complementos requiere que los usuarios usen Office 365 ProPlus (y que hayan iniciado sesión en Office con sus credenciales de inicio de sesión en la organización) y tengan buzones de Exchange Online. El directorio de suscripción debe estar o estar federado a Azure Active Directory.  
  
-La implementación centralizada solo se admite para los buzones de Outlook online. No admite la implementación en buzones de Exchange locales.
+La implementación centralizada solo se admite para los buzones de correo en línea. No admite la implementación en buzones de Exchange locales.
  
 Puede usar el  [Comprobador de compatibilidad de implementación centralizada de Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)para determinar si la suscripción es apta. 
   
@@ -47,7 +47,7 @@ Para obtener más información, vea [asignaciones de usuarios y grupos](https://
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>¿Cuánto tiempo se tarda en mostrar los complementos para todos los usuarios?  
 
-Un complemento puede tardar hasta 12 horas en mostrarse para todos los usuarios. Puede tardar la misma cantidad de tiempo en las actualizaciones de los complementos, los cambios de desactivación o desactivación, o la eliminación de complementos. 
+Un complemento puede tardar hasta 24 horas en mostrarse para todos los usuarios. Puede tardar la misma cantidad de tiempo en las actualizaciones de los complementos, los cambios de desactivación o desactivación, o la eliminación de complementos. 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>Como administrador, ¿cómo se administra el acceso del usuario a los complementos de mi organización?
 

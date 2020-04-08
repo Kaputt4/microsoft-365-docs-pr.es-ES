@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 74c1ceb8e9d2193e7ad7afd2b339d29d54780517
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165928"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189010"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos de Office 365 en el Centro de administración de Microsoft 365
 
@@ -75,7 +75,7 @@ Antes de comenzar, vea [Determinar si la implementación centralizada de complem
 7. Una marca de graduación verde aparecerá cuando se haya implementado el complemento. Puede seguir las instrucciones que se indican en la página para comprobar que el complemento se ha implementado correctamente.
 
 > [!NOTE]
-> Es posible que los usuarios necesiten volver a iniciar Office para ver que el icono del complemento aparece en la cinta de la aplicación. Los complementos de Outlook pueden tardar hasta 12 horas en aparecer en las cintas de los usuarios.
+> Es posible que los usuarios necesiten volver a iniciar Office para ver que el icono del complemento aparece en la cinta de la aplicación. Los complementos de Outlook pueden tardar hasta 24 horas en aparecer en las cintas de los usuarios.
     
 8. Cuando termine, seleccione **siguiente**. Si ha implementado solo en usted, puede seleccionar **cambiar quién tiene acceso al complemento** para implementarlo en más usuarios.
 

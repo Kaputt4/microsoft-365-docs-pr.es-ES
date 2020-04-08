@@ -19,20 +19,20 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino de Office 365 y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d6b81a5ac5ef3b5287810110e5d0582bf34bff93
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362135"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189026"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
 Implementación centralizada es la forma recomendada y con más funciones para que los clientes implementen complementos de Office para los usuarios y grupos de su organización de Office 365. Si es administrador, use esta guía para determinar si el inquilino y los usuarios cumplen los requisitos para que pueda usar la implementación centralizada.
 La implementación centralizada es compatible con Windows, Mac, iOS, Android y aplicaciones de Office en línea.
-Un complemento puede tardar hasta 12 horas en mostrarse para el cliente para todos los usuarios.
+Un complemento puede tardar hasta 24 horas en mostrarse para el cliente para todos los usuarios.
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 La implementación centralizada de complementos requiere que los usuarios usen Office 365 ProPlus (y que hayan iniciado sesión en Office con su identificador de organización), y que tengan buzones de correo de Exchange Online y activos de Exchange Online. El directorio de la suscripción debe estar en el o en un federado de Azure Active Directory.
 Puede ver los requisitos específicos para Office y Exchange, o usar el [Comprobador de compatibilidad de implementación centralizada de office 365](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
@@ -56,7 +56,7 @@ La implementación centralizada no es compatible con lo siguiente:
 - Para los complementos de Word, Excel y PowerPoint, los usuarios deben usar una de las siguientes opciones:
   - En un dispositivo Windows, versión 1704 o posterior de Office 365 ProPlus.
   - En un equipo Mac, versión 15,34 o posterior.
-      - En iOS (solo iPad), versión 2.9.18010804 o posterior.
+
 - Para Outlook, los usuarios deben usar una de las siguientes opciones: 
   - Versión 1701 o posterior de Office 365 ProPlus.
   - La versión 1808 o posterior de Office Professional Plus 2019 u Office Standard 2019.
