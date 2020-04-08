@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre la autenticación multifactor en Office 365 y los pasos que debe seguir para configurarla.
-ms.openlocfilehash: e3886387740fe904b9c9458f7b1abf736c3ef83f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: be3b355f4487e2df5c2e20c9911c3bb421d5f7e1
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153573"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170945"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Plan de Multi-Factor Authentication para implementaciones de Office 365
 
@@ -65,7 +65,7 @@ Obtendrá un subconjunto diferente de funciones dependiendo de si tiene una impl
 |Configuración híbrida, administrada localmente  <br/> | Si administra identidades de usuario locales, tiene las siguientes opciones:  <br/>  Tarjeta inteligente física o virtual (al usar AD FS)  <br/> [Azure multi-factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=526677) (módulo para AD FS)  <br/>  Autenticación multifactor de Azure Active Directory (Azure AD)  <br/> |
    
   
-En la siguiente figura se muestra cómo las aplicaciones de dispositivo de Office 2013 actualizadas (en Windows) permiten a los usuarios iniciar sesión con MFA. Las aplicaciones del dispositivo de Office 2013 admiten autenticación multifactor mediante el uso de la [Biblioteca de autenticación de Active Directory (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD hospeda una página web donde los usuarios pueden iniciar sesión. El proveedor de identidades puede ser Azure AD o un proveedor de identidades federadas como AD FS. La autenticación con usuarios federados sigue estos pasos:
+En la siguiente figura se muestra cómo las aplicaciones de dispositivo de Office 2013 actualizadas (en Windows) permiten a los usuarios iniciar sesión con MFA. Las aplicaciones de dispositivo de Office 2013 admiten la autenticación multifactor mediante el uso de la [biblioteca de autenticación de Active Directory (Adal)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD hospeda una página web donde los usuarios pueden iniciar sesión. El proveedor de identidades puede ser Azure AD o un proveedor de identidades federadas como AD FS. La autenticación con usuarios federados sigue estos pasos:
   
 1. Azure AD redirige al usuario a la página web de inicio de sesión hospedada por el proveedor de identidades de registro para el inquilino de Office 365. El proveedor de identidades se determina mediante el dominio especificado en el nombre de inicio de sesión del usuario.
     

@@ -1,18 +1,18 @@
 ---
-title: Descripción del servicio de escritorio administrado de Microsoft
+title: Descripción del servicio Escritorio administrado de Microsoft
 description: Describe lo que se incluye en Microsoft Managed Desktop como servicio
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "35830498"
 ---
-# <a name="microsoft-managed-desktop-service-description"></a>Descripción del servicio de escritorio administrado de Microsoft
+# <a name="microsoft-managed-desktop-service-description"></a>Descripción del servicio Escritorio administrado de Microsoft
 
 El escritorio administrado de Microsoft es un servicio que proporciona a los usuarios una experiencia moderna segura y que mantiene los dispositivos actualizados con las versiones más recientes de Windows 10 Enterprise Edition, Office 365 ProPlus y los servicios de seguridad de Microsoft, entre los que se incluyen:
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Durante y después de una investigación automatizada en Office 365, puede ver los resultados y las conclusiones más importantes.
-ms.openlocfilehash: 104be669dcb6d22cba00974075418e2d14ed629c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894233"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163915"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Detalles y resultados de una investigación automatizada en Office 365
 
@@ -87,18 +87,16 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 
 |Estado  |Qué significa  |
 |---------|---------|
-|Iniciando | La investigación se pone en cola para comenzar pronto |
-|En funcionamiento | La investigación se ha iniciado y está llevando a cabo el análisis. |
-|No se encontraron amenazas | La investigación ha completado el análisis y no se han encontrado amenazas |
-|Finalizado por el sistema | La investigación no se cerró y caducó después de 7 días |
-|Acción pendiente | La investigación detectó amenazas con acciones recomendadas.  La investigación continúa ejecutándose después de haber encontrado las amenazas iniciales y las acciones recomendadas, por lo que debe comprobar el registro antes de aprobar las acciones para ver si los analizadores todavía están en curso. |
-|Amenazas encontradas | La investigación detectó amenazas, pero las amenazas no tienen acciones disponibles en el aire.  Estas son las acciones del usuario en las que aún no hay ninguna acción de la dirección del aire. |
-|Corregido | La investigación ha finalizado y se ha corregido completamente (se han aprobado todas las acciones) |
-|Parcialmente remediado | La investigación ha finalizado y algunas de las acciones recomendadas se han aprobado |
-|Finalizada por el usuario | Un administrador terminó la investigación. |
-|Error | Se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en las amenazas |
-|En cola por limitación | La investigación está esperando el análisis debido a las limitaciones del procesamiento del sistema (para proteger el rendimiento del servicio) |
-|Terminado con la limitación | La investigación no se pudo completar en el tiempo suficiente debido a las limitaciones de procesamiento del sistema y el volumen de investigación. Puede reactivar la investigación seleccionando el correo electrónico en el explorador y seleccionando la acción investigar. |
+|Iniciando | La investigación se ha desencadenado y está en espera de comenzar a ejecutarse. Éste es el primer paso.  |
+|En funcionamiento | El proceso de investigación se ha iniciado y está en curso. Este estado también se produce cuando se aprueban [las acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) . |
+|No se encontraron amenazas | La investigación ha finalizado y no se han identificado amenazas (cuenta de usuario, mensaje de correo electrónico, URL o archivo). <br/><br/>**Sugerencia**: Si sospecha que se ha perdido algo (como un falso negativo), puede emprender acciones con el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Finalizado por el sistema | Se detuvo la investigación. Esto puede ocurrir por varios motivos. Estas son las dos razones más comunes:<br/>-Las acciones pendientes de la investigación han expirado. Se agota el tiempo de espera de las acciones pendientes después de esperar la aprobación durante una semana. <br/>-Hay demasiadas acciones. Por ejemplo, si hay demasiados usuarios haciendo clic en direcciones URL malintencionadas, puede superar la capacidad de la investigación para ejecutar todos los analizadores, de modo que la investigación se detenga. <br/><br/>**Sugerencia**: Si una investigación se detiene antes de que se tomaron las acciones, pruebe a usar el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) para encontrar y solucionar amenazas.  |
+|Acción pendiente | La investigación ha encontrado una amenaza, como un correo electrónico malintencionado, una dirección URL malintencionada o una configuración de buzón de correo arriesgado, y una acción para corregir dicha amenaza está en espera de [aprobación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>El estado de acción pendiente se desencadena cuando se encuentra una amenaza con una acción correspondiente; sin embargo, tenga en cuenta que es posible que la investigación todavía no se haya completado completamente.  Compruebe el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) para ver si hay otros elementos aún pendientes de finalización. |
+|Corregido | La investigación ha finalizado y todas las acciones se han aprobado (se ha corregido completamente).<br/><br/>**Nota**: las acciones de corrección aprobadas pueden tener errores que impiden que se tomen las acciones. Esto no cambia el estado de la investigación. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados. |
+|Parcialmente remediado | La investigación dio como resultado acciones correctivas y algunas fueron aprobadas y completadas. Aún hay otras acciones [pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Erróneo | Al menos un analizador de investigación tuvo un problema en el que no se pudo completar correctamente. <br/><br/>**Nota**: si se produce un error en una investigación tras la aprobación de acciones de corrección, es posible que las acciones de corrección sigan teniendo éxito. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados. |
+|En cola por limitación | Una investigación se mantiene en una cola. Cuando se completan otras investigaciones, comienzan las investigaciones en cola. Esto ayuda a evitar un rendimiento deficiente del servicio. <br/><br/>**Sugerencia**: las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de [aprobar (o rechazar) acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
+|Terminado con la limitación | Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <br/><br/>**Sugerencia**: puede [iniciar una investigación desde el explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ### <a name="investigation-graph"></a>Gráfico de investigación
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 04/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Proporciona una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113522"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175195"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 Enterprise
 
@@ -45,7 +45,7 @@ Microsoft 365 para empresas está disponible en tres planes.
 |:-------|:-----|
 | E3 | Obtenga acceso a los productos principales y características de Microsoft 365 para mejorar la productividad del lugar de trabajo y impulsar la innovación de manera segura. |
 | E5 | Obtenga acceso a los productos y características más recientes de Microsoft 365, incluidas la protección contra amenazas avanzada, las herramientas de colaboración y seguridad.. Incluye todas las capacidades de E3's además de seguridad avanzada, voz y herramientas de análisis de datos. |
-| F1 | Conéctese con sus trabajadores de Firstline a través de herramientas y recursos creados con un objetivo que les permitan hacer su mejor trabajo. |
+| F3 | Conéctese con sus trabajadores de Firstline a través de herramientas y recursos creados con un objetivo que les permitan hacer su mejor trabajo. |
 |||
 
 Si tiene Microsoft 365 E3, también puede obtener estas [ofertas](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -55,7 +55,7 @@ Si tiene Microsoft 365 E3, también puede obtener estas [ofertas](https://www.mi
 
 Estas ofertas contienen características adicionales que se incluyen con Microsoft 365 E5.
 
-Para obtener más información, consulte [features and Capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Para obtener más información acerca de lo que se incluye en cada plan, consulte [transformar su empresa con Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 
 ## <a name="get-the-big-picture"></a>Obtener una visión general
 
@@ -102,7 +102,7 @@ Este póster de una página es una forma rápida de comprender las diversas ruta
 
 Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
 
-## <a name="deploy"></a>Implementación
+## <a name="deploy"></a>Implementar
 
 Hay tres formas de implementar los productos, las características y los componentes de Microsoft 365 para empresas:
 
@@ -126,11 +126,11 @@ Para obtener más información sobre la implementación, consulte How:
 
 ## <a name="additional-microsoft-365-solutions"></a>Soluciones adicionales de Microsoft 365
 
-- [Microsoft 365 Empresa](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Empresa](https://docs.microsoft.com/microsoft-365/business/)
  
   Reúna las mejores capacidades de productividad y colaboración de Office 365 con soluciones de seguridad y administración de dispositivos para proteger los datos empresariales para pequeñas y medianas empresas (PYMES).
 
-- [Microsoft 365 Educación](https://docs.microsoft.com/education)
+- [Microsoft 365 Educación](https://docs.microsoft.com/education)
  
   Permita a los educadores desbloquear la creatividad, fomentar el trabajo en equipo y proporcionar una experiencia sencilla y segura en una sola solución asequible diseñada para el ámbito educativo.
 
@@ -150,6 +150,6 @@ Para obtener más información sobre la implementación, consulte How:
 
 Si va a realizar la implementación usted mismo, inicie el [viaje de la implementación de Microsoft 365 para empresas](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Página de producto de Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise)
