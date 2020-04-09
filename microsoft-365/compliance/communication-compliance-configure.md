@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d4a98383e88634f1e87606df5bcd1d066254081f
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170934"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193518"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurar el cumplimiento de la comunicación en Microsoft 365
 
@@ -119,7 +119,7 @@ Para obtener más información acerca de la configuración de grupos, vea:
 
 4. Seleccione **crear Directiva** para crear y configurar una nueva Directiva a partir de una plantilla o para crear y configurar una directiva personalizada.
 
-    Si elige una plantilla de directiva para crear una directiva, deberá:
+    Si elige una plantilla de directiva integrada para crear una directiva, deberá:
 
     - Confirme o actualice el nombre de la Directiva. Los nombres de las directivas no se pueden cambiar una vez creada la Directiva.
     - Elija los usuarios o grupos que desea supervisar, incluida la elección de los usuarios o grupos que quiera excluir.
@@ -135,7 +135,11 @@ Para obtener más información acerca de la configuración de grupos, vea:
     - Elija la dirección de comunicación que se va a supervisar, incluidas las comunicaciones entrantes, salientes o internas.
     - Definir las [condiciones](communication-compliance-feature-reference.md#ConditionalSettings)de la Directiva de cumplimiento de comunicaciones. Puede elegir entre la dirección del mensaje, la palabra clave, los tipos de archivo y las condiciones de coincidencia de tamaño.
     - Elija si le gustaría incluir tipos de información confidencial. En este paso puede seleccionar los tipos de información confidencial predeterminada y personalizado. Elija entre los tipos de información confidencial existentes o los diccionarios de palabras clave personalizados en el Asistente para la Directiva de cumplimiento de comunicaciones. Puede crear estos elementos antes de ejecutar el asistente si es necesario. También puede crear nuevos tipos de información confidencial desde el Asistente para directivas de cumplimiento de comunicaciones.
-    - Elija si quiere habilitar el clasificador de idioma ofensivo. Este clasificador detecta un lenguaje no apropiado enviado o recibido en el cuerpo de los mensajes de correo electrónico.
+    - Elija si le gustaría habilitar los clasificadores. Los clasificadores pueden detectar idiomas inapropiados enviados o recibidos en el cuerpo de los mensajes de correo electrónico u otros tipos de texto.
+
+    >[!CAUTION]
+    >Estamos descartando el clasificador integrado de **lenguaje ofensivo** porque ha generado un gran número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar los clasificadores de **amenaza**, **blasfemia**y **acoso** integrados.
+
     - Definir el porcentaje de comunicaciones que se van a revisar.
     - Revise las selecciones de la Directiva y cree la Directiva.
 

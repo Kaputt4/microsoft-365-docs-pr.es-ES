@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Muchas organizaciones disponen de un proceso para identificar y clasificar información confidencial mediante las propiedades de clasificación en la infraestructura de clasificación de archivos (FCI) de Windows Server, las propiedades del documento en SharePoint o las propiedades del documento aplicadas por un sistema de terceros. Si esto describe su organización, puede crear una directiva DLP en Office 365 que reconozca las propiedades que la FCI de Windows Server u otro sistema ha aplicado a documentos, de modo que se pueda aplicar la directiva DLP en documentos de Office con una FCI específica u otros valores de propiedad.
-ms.openlocfilehash: bfcbc30af3a3dac304dc57551e6246ec9e6554c0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32d40c110ca67e15c1be3443999c75c0e36d323e
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070647"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193498"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Crear una directiva DLP para proteger documentos con FCI u otras propiedades
 
@@ -34,7 +34,7 @@ Por ejemplo, su organización puede usar la FCI de Windows Server para identific
   
 Una directiva DLP simplemente busca un par nombre-valor para una propiedad específica. Se puede usar cualquier propiedad de documento, siempre y cuando la propiedad tenga una propiedad administrada correspondiente para la búsqueda de SharePoint. Por ejemplo, una colección de sitios de SharePoint puede usar un tipo de contenido denominado **Informe de viaje** con un campo obligatorio denominado **Cliente**. Cuando una persona crea un informe de viaje, debe escribir el nombre del cliente. El par nombre-valor de esta propiedad también se puede usar en una directiva DLP. Por ejemplo, si desea que una regla bloquee el acceso al documento para los usuarios externos cuando el campo **Cliente** contiene **Contoso**.
   
-Tenga en cuenta que si desea aplicar la Directiva de DLP a contenido con etiquetas de Office 365 específicas, no debe seguir los pasos que se indican aquí. En su lugar, obtenga información sobre cómo [usar una etiqueta como condición en una directiva DLP](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
+Tenga en cuenta que si desea aplicar la Directiva de DLP a contenido con etiquetas de Office 365 específicas, no debe seguir los pasos que se indican aquí. En su lugar, obtenga información sobre cómo [usar una etiqueta de retención como condición en una directiva DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
 ## <a name="before-you-create-the-dlp-policy"></a>Antes de crear la directiva DLP
 
@@ -52,7 +52,7 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
   
 ### <a name="step-2-create-a-managed-property"></a>Paso 2: Crear una propiedad administrada
 
-1. Inicie sesión en el centro de administración de Microsoft 365.
+1. Inicie sesión en el Centro de administración de Microsoft 365.
     
 2. En el panel de navegación izquierdo, elija **centros** \> de administración **SharePoint**. Ahora está en el Centro de administración de SharePoint.
     
@@ -124,7 +124,7 @@ Una regla bloquea el acceso al contenido donde la propiedad **Información de id
   
 ## <a name="after-you-create-the-dlp-policy"></a>Después de crear la directiva DLP
 
-Si realiza los pasos descritos en las secciones anteriores, se creará una directiva de DLP que detectará rápidamente el contenido con esa propiedad, pero solo si el contenido se ha cargado recientemente (para que el contenido indizado), o si el contenido es antiguo, pero solo se ha editado (para que el contenido se vuelva a indizar) .
+Si realiza los pasos descritos en las secciones anteriores, se creará una directiva de DLP que detectará rápidamente el contenido con esa propiedad, pero solo si el contenido se ha cargado recientemente (para que el contenido indizado), o si el contenido es antiguo, pero solo se ha editado (para que el contenido se vuelva a indexar).
   
 Para detectar contenido con esa propiedad en todas partes, tal vez le convenga solicitar de forma manual que la biblioteca, sitio o colección de sitios se vuelva a indexar para que la directiva DLP tenga conocimiento de todo el contenido que incluye esa propiedad. En SharePoint Online, el contenido se rastrea automáticamente según una programación de rastreo definida. El rastreador toma el contenido que ha cambiado desde el último rastreo y actualiza el índice. Si necesita que la directiva DLP proteja contenido antes del siguiente rastreo programado, puede llevar a cabo estos pasos.
   

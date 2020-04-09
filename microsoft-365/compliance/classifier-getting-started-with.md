@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: 6706fe25194191d57ffd91f07f13d22fe5ec6cfd
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 4d11fcf4e1437641cb73510d341d299ce3695938
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826261"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193528"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introducción al entrenamiento de clasificadores (vista previa)
 
@@ -63,15 +63,17 @@ Hay clasificadores integrados y clasificadores que se pueden entrenar. La obtenc
 
 ### <a name="understanding-built-in-classifiers"></a>Descripción de los clasificadores integrados
 
-Microsoft 365 incluye seis clasificadores integrados:
+Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
-- **Lenguaje ofensivo**: detecta los elementos de texto que contienen palabras soeces, Slurs, taunts y expresiones disfrazadas (que son expresiones que tienen el mismo significado que un término más ofensivo).
+> [!CAUTION]
+> Estamos descartando el clasificador integrado de **lenguaje ofensivo** porque ha generado un gran número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar los clasificadores de **amenaza**, **blasfemia**y **acoso** integrados.
+
 - **Currículos**: detecta los elementos que son cuentas de texto de la cualificación personal, educativa, profesional, experiencia laboral y otra información de identificación personal del solicitante.
 - **Código fuente**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación usados en github.
 
 |nombre del idioma|||||
 |---------|---------|---------|---------|---------|
-|Código|C        |C#       |+     |Clojure  |
+|Código|C        |CA #       |+     |Clojure  |
 |CoffeeScript|CSS     |Ir       |Haskell |HTML     |
 |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
 |Perl     |PHP      |Python   |R        |Ruby     |
@@ -87,7 +89,7 @@ Estos aparecen en la vista clasificación de datos del **Centro** > de cumplimie
 ![Clasificadores: listos para usar: clasificadores](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> Tenga en cuenta que el idioma ofensivo, el acoso, los términos blasfemos y los clasificadores de amenazas solo funcionan con texto que admite búsquedas no es exhaustivo o completo.  Además, los estándares de idioma y culturales cambian continuamente y, teniendo en cuenta estas realidades, Microsoft se reserva el derecho de actualizar estos clasificadores según su criterio. Aunque los clasificadores pueden ayudar a su organización a supervisar el uso ofensivo y otros idiomas, los clasificadores no abordan las consecuencias de dicho lenguaje y no pretenden proporcionar a los únicos medios de supervisión de la organización o responder al uso de ese idioma. Su organización, y no Microsoft o sus subsidiarias, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, la aplicación, el bloqueo, la eliminación y la retención de cualquier contenido identificado por un clasificador previamente entrenado.
+> Tenga en cuenta que el idioma ofensivo, el acoso, los términos blasfemos y los clasificadores de amenazas solo funcionan con texto que admite búsquedas no es exhaustivo o completo.  Además, los estándares de idioma y culturales cambian continuamente y, teniendo en cuenta estas realidades, Microsoft se reserva el derecho de actualizar estos clasificadores según su criterio. Aunque los clasificadores pueden ayudar a su organización a supervisar el uso ofensivo y otros idiomas, los clasificadores no abordan las consecuencias de ese lenguaje y no pretenden proporcionar a los únicos medios de supervisar o responder al uso de ese lenguaje en su organización. Su organización, y no Microsoft o sus subsidiarias, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, la aplicación, el bloqueo, la eliminación y la retención de cualquier contenido identificado por un clasificador previamente entrenado.
 
 #### <a name="process-flow-for-using-built-in-classifiers"></a>Flujo de proceso para usar clasificadores integrados
 
@@ -108,7 +110,7 @@ La creación y publicación de un clasificador capacitable para su uso en las so
 
 ![clasificador de flujo de proceso capacitable](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Etiquetas de retención](labels.md)
 - [directivas de retención](retention-policies.md)

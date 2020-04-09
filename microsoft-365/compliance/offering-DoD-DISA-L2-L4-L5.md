@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfcad9829c32a7a4f91e4d7dee7dec922059cd18
-ms.sourcegitcommit: 397b22cea138cadef026128d878650f8f609a329
+ms.openlocfilehash: c68e51fd0efe415458942736a8d19ae1c12adc3c
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068578"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189081"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorización provisional del Departamento de defensa (DoD) de Estados Unidos en los niveles 2, 4 y 5 de impacto
 
@@ -36,7 +36,7 @@ La compatibilidad con el servicio de nube de DoD define las directivas, los cont
 Los servicios en la nube de Microsoft Government satisfacen los exigentes requisitos del Departamento de defensa de Estados Unidos, desde los niveles de impacto del 2 al 5, lo que permite a las agencias de defensa estadounidense beneficiarse del ahorro de costos y la seguridad rigurosa de la nube de Microsoft. Mediante la implementación de los servicios protegidos, incluidos el gobierno de Azure, Office 365 U.S. Government y Dynamics 365 Government, las agencias de defensa pueden usar una amplia variedad de servicios compatibles.
 
 - Obtenga información sobre las ventajas de DoD DISA L2, L4 en la nube de Microsoft: [descargar el fondo de DISA del Departamento de defensa](https://aka.ms/disa-backgrounder)
-- Obtenga información sobre cómo acelerar la implementación de la implementación L4 en L2 de DoD con nuestro [Blueprint de Azure DoD](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)
+- Obtenga información sobre cómo acelerar la implementación de la implementación L4 en L2 de DoD con nuestros [Blueprints DoD de Azure](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy)
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>Autorización provisional de nivel 5 de impacto de DoD
 
@@ -58,7 +58,7 @@ En función de las autorizaciones de FedRAMP, la compatibilidad con el servicio 
 
 El nivel de impacto 2 cubre información no clasificada no controlada: datos que están autorizados para la publicación pública. También se incluye otra información sin clasificar que, si bien no se considera "esencial", sigue necesitando un nivel de control de acceso mínimo. Esta autorización permite a los clientes de administración federal de Estados Unidos implementar información no confidencial y aplicaciones de defensa básica y sitios web en servicios en la nube de Microsoft en el ámbito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Servicios cubiertos para el nivel 5 de impacto DoD
 
@@ -83,7 +83,7 @@ Una vez que se ha concedido un PA PA, los servicios en la nube de Microsoft se s
 
 ## <a name="fast-track-your-deployment-of-dod-solutions-on-azure"></a>Realizar un seguimiento rápido de la implementación de soluciones DoD en Azure
 
-Empiece a aprovechar las ventajas de la nube en el gobierno con el Blueprint del Departamento de defensa de Azure Security and Compliance. Este proyecto le proporciona herramientas y orientación para empezar a crear soluciones compatibles con DoD en la actualidad. [Empiece a usar el Blueprint de Azure DoD](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
+Empiece a aprovechar las ventajas de la nube en administración pública con el ejemplo de Blueprint para el Departamento de defensa L4. Este proyecto le proporciona herramientas y orientación para empezar a crear soluciones compatibles con DoD en la actualidad. [Empiece a usar el Blueprint de Azure para DoD L4](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

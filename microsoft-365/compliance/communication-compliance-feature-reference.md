@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 40e8be29c585c0490b93e81c27728085d59c5146
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029854"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193456"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -43,7 +43,7 @@ Las plantillas de Directiva son opciones de directiva predefinidas que puede usa
 
 |**Área**|**Plantilla de Directiva**|**Detalles**|
 |:-----|:-----|:-----|
-| **Idioma ofensivo y Antiacoso** | Supervisar las comunicaciones para un lenguaje ofensivo | -Ubicaciones: Exchange, Teams, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 100% <br> -Condiciones: clasificador de idioma ofensivo |
+| **Idioma ofensivo y Antiacoso** | Supervisar las comunicaciones para un lenguaje ofensivo | -Ubicaciones: Exchange, Teams, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 100% <br> -Condiciones: la amenaza, los términos blasfemos y los clasificadores de idiomas de acoso |
 | **Información confidencial** | Supervisión de las comunicaciones para información confidencial | -Ubicaciones: Exchange, Teams, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 10% <br> -Condiciones: información confidencial, tipos y patrones de contenido preparados, opción de diccionario personalizado, datos adjuntos mayores de 1 MB |
 | **Cumplimiento normativo** | Supervisión de las comunicaciones para obtener información relacionada con el cumplimiento de normativas financieras | -Ubicaciones: Exchange, Teams, Skype empresarial <br> -Direction: entrante, saliente <br> -Porcentaje de revisión: 10% <br> -Condiciones: opción de diccionario personalizado, datos adjuntos mayores de 1 MB |
 
@@ -133,7 +133,7 @@ Configure diccionarios de palabras clave personalizados (o léxicos) para propor
 
 Los clasificadores integrados examinan los mensajes enviados o recibidos en todos los canales de comunicación de la organización para diferentes tipos de problemas de cumplimiento. Los clasificadores usan una combinación de inteligencia artificial y palabras clave para identificar el idioma de los mensajes que puedan infringir las directivas Antiacoso. Actualmente, los clasificadores integrados solo admiten palabras clave en inglés en los mensajes.
 
-Cumplimiento en comunicación los clasificadores integrados examinan las comunicaciones de términos y sentimientos para los siguientes tipos de idiomas:
+El cumplimiento de la comunicación usa clasificadores integrados para examinar las comunicaciones de términos y sentimientos para los siguientes tipos de lenguaje:
 
 - **Amenaza**: busca amenazas para confirmar violencia o daño físico a una persona o propiedad.
 - **Acosar**: explora una conducta ofensiva dirigida a personas relacionadas con la raza, el color, la religión y el origen nacional.

@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c781d86c13165ac51dfee57b1c2cf3e9e536d3d5
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: b851f3f698abd34d4964c79a68be050ad9f0a4db
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284361"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198366"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrados por Microsoft 
 
@@ -46,10 +46,11 @@ Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ord
 | [EQUIPO portátil HP EliteBook x360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
 | **\*[Tableta HP Elite x2 G4](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS03AV | 31 de julio de 2021 | 31 de julio de 2024 |
 | **\*[EQUIPO portátil HP EliteBook x360 1030 G4](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc)** | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV | 28 de febrero de 2021 | 28 de febrero de 2024 |
-| **\*[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040)** | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
+|[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV| 30 de noviembre de 2020 | 30 de noviembre de 2023 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel i3/8 GB de RAM | SKU con 5VS04AV | 18 de julio de 2020 | 18 de julio de 2023 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel i3/8 GB de RAM | SKU con 5VS04AV | 18 de julio de 2020 | 18 de julio de 2023 |
 | [HP EliteOne 800 G4 23.8 en AIO](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB/Intel i3/8 GB de RAM | SKU con 5VS04AV | 18 de julio de 2020 | 18 de julio de 2023 |
+| **\*[HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html--1#!&tab=features)** | 256 GB/Intel i5/8 GB de RAM | SKU con 9MZ21AV | 31 de diciembre de 2020 | 31 de diciembre de 2023 |
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB de RAM | SKU con 5VS04AV, cámara de INFRARROJOs o lector de huellas digitales obligatorios | 6 de junio de 2020 | 6 de junio de 2023 |
 | [Estación de trabajo HP Z2 mini G4](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB de RAM | SKU con 8QR48AV| 31 de enero de 2021 | 31 de enero de 2024 |
 |[Estación de trabajo móvil HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS02AV, se requiere cámara IR | 30 de noviembre de 2020 | 30 de noviembre de 2023 |

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 59adebd9b61761f05156247bbb6c4cb27b42c52b
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 720a5b0b2fca16701dd4c2a752ac31b81e2233ab
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106012"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189065"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -373,7 +373,7 @@ Puede usar las etiquetas de retención para declarar el contenido como un regist
 
 Una etiqueta de retención puede exigir acciones de retención en el contenido. Además, puede usar una etiqueta de retención como una condición en una directiva de prevención de pérdida de datos (DLP) y la directiva DLP puede exigir otras acciones (como restringir el acceso) en contenido que coincida con una etiqueta específica. 
   
-Para obtener más información, vea [Usar una etiqueta como una condición en una directiva DLP](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
+Para obtener más información, vea [Usar una etiqueta como una condición en una directiva DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
 ## <a name="monitor-retention-labels"></a>Supervisar etiquetas de retención.
 
