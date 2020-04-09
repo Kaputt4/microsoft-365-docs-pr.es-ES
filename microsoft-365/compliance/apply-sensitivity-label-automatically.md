@@ -16,36 +16,93 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: a087d142843ce74de3a930aea9286034b8617db6
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 7bbfb85746c114fa277f28a87c04194bd290c1fd
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106076"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163880"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Al crear una etiqueta de confidencialidad, puede asignar automáticamente esa etiqueta a contenido con información confidencial, o bien puede solicitar a los usuarios que apliquen la etiqueta recomendada.
+Cuando crea una etiqueta de confidencialidad, puede asignar automáticamente dicha etiqueta al contenido cuando se cumplan las condiciones especificadas.
 
 La capacidad de aplicar automáticamente etiquetas de confidencialidad al contenido es importante por estos motivos:
 
-- No es necesario proporcionar aprendizaje a los usuarios para que conozcan todas las clasificaciones.
+- No es necesario enseñar a los usuarios cuándo usar cada una de las clasificaciones.
 
 - No es necesario depender de los usuarios para clasificar todo el contenido correctamente.
 
 - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
+
+Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confidencialidad:
+
+- **Etiquetado del lado del cliente cuando los usuarios editan documentos o redactan mensajes de correo electrónico (y responden a ellos o los reenvían)**: use una etiqueta configurada para el etiquetado automático para las aplicaciones de Office (Word, Excel, PowerPoint y Outlook). 
+    
+    Este método permite recomendar una etiqueta a los usuarios, así como aplicar una etiqueta automáticamente. Pero en ambos casos, el usuario decide si acepta o rechaza la etiqueta, para ayudar a garantizar el etiquetado correcto del contenido. Este etiquetado del lado del cliente tiene un retraso mínimo para los documentos porque la etiqueta se puede aplicar incluso antes de que se guarde el documento. Sin embargo, no todas las aplicaciones cliente son compatibles con el etiquetado automático. Esta funcionalidad es compatible con el cliente de etiquetado unificado de Azure Information Protection y [algunas versiones de Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
+    
+    Para obtener instrucciones de configuración, consulte [Cómo configurar el etiquetado automático en aplicaciones de Office](#how-to-configure-auto-labeling-for-office-apps) en esta página.
+
+- **Etiquetas del lado de servicio cuando el contenido ya está guardado (en SharePoint Online o en OneDrive para la Empresa) o enviado por correo electrónico (procesado por Exchange Online)**: use una directiva de etiquetado automático (actualmente en versión preliminar). 
+    
+    > [!NOTE]
+    > Vea el anuncio de la versión preliminar, [Anuncio de una versión preliminar pública de la clasificación automática con etiquetas de confidencialidad en los servicios Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
+    
+    Este método se conoce como clasificación automática con etiquetas de confidencialidad. También se conoce como etiquetado automático para datos en reposo (documentos en SharePoint y OneDrive) y datos en tránsito (correo electrónico enviado o recibido por Exchange). En el caso de Exchange, no incluye correos electrónicos en reposo (buzones). 
+    
+    Ya que este etiquetado lo aplican los servicios en lugar de las aplicaciones, no tiene que preocuparse por qué aplicaciones tienen los usuarios y qué versión. Por lo tanto, esta funcionalidad está disponible inmediatamente en toda la organización y es adecuada para aplicar las etiquetas a cualquier escala. Las directivas de etiquetado automático no admiten el etiquetado recomendado, ya que el usuario no interactúa con el proceso de etiquetado. En su lugar, el administrador ejecuta las directivas en el modo de simulación para ayudarle a garantizar el etiquetado correcto del contenido antes de aplicar la etiqueta.
+    
+    Vea las instrucciones de configuración en [Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) en esta página.
+    
+    Específico para el etiquetado automático para SharePoint y OneDrive:
+    - Número máximo de 25 000 archivos (Word, PowerPoint o Excel) en su espacio empresarial por día
+    - Número máximo de 10 colecciones de sitios entre todas las directivas
+    - Número máximo de 10 directivas en su espacio empresarial
+
+    Específico para el etiquetado automático para Exchange:
+    - A diferencia de las etiquetas manuales o el etiquetado automático con las aplicaciones de Office, los datos adjuntos de Office también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
+    - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
+    - El correo electrónico con cifrado IRM sin etiqueta se reemplazará por una etiqueta con una configuración de cifrado cuando haya una coincidencia al usar etiquetado automático.
+    - El correo electrónico entrante se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático. Sin embargo, si la etiqueta está configurada para el cifrado, no se aplica el cifrado.
+    
+
+## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparar el etiquetado automático de las aplicaciones de Office con las directivas de etiquetado automático
+
+Use la siguiente tabla para ayudarle a identificar las diferencias en el comportamiento de los dos métodos de etiquetado automático complementarios:
+
+|Característica o comportamiento|Configuración de etiqueta: etiquetado automático para aplicaciones de Office |Directiva: etiquetado automático|
+|:-----|:-----|:-----|:-----|
+|Dependencia de la aplicación|[Sí](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
+|Restringir por ubicación|No |Sí |
+|Condiciones: clasificadores que se pueden entrenar|Sí (versión preliminar limitada) |No |
+|Condiciones: opciones de uso compartido y opciones adicionales para el correo electrónico|No |Sí |
+|Recomendaciones, información sobre herramientas de directiva y sustituciones de usuarios|Sí |No |
+|Modo de simulación|No |Sí |
+|Datos adjuntos de Exchange verificados por condiciones|No | Sí|
+|Aplicar marcas visuales |Sí |Sí (solo correo electrónico) |
+|Reemplazar el cifrado IRM aplicado sin una etiqueta|Sí, si el usuario tiene el uso mínimo adecuado de exportar |Sí (solo correo electrónico) |
+|Etiquetar correo electrónico entrante|No |Sí (no se aplicó cifrado) |
+
+> [!NOTE]
+> Si el contenido se ha etiquetado manualmente, dicha etiqueta nunca se reemplazará por el etiquetado automático. Sin embargo, las directivas de etiquetado automático pueden reemplazar una [etiqueta de prioridad más baja](sensitivity-labels.md#label-priority-order-matters) que se aplicó con el etiquetado automático para las aplicaciones de Office.
+
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Forma en que se evalúan varias condiciones cuando se aplican en más de una etiqueta
+
+Las etiquetas se ordenan para su evaluación según la posición que especifique en la directiva: la primera etiqueta colocada tiene la posición inferior (menor confidencialidad) y la última etiqueta colocada tiene la posición superior (mayor confidencialidad). Para obtener más información sobre la prioridad, vea [Prioridad de etiqueta (el orden importa)](sensitivity-labels.md#label-priority-order-matters).
+
+## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>No configure una etiqueta principal para que se aplique o recomiende automáticamente
+
+Recuerde, no se puede aplicar una etiqueta principal (una etiqueta con subetiquetas) al contenido. Asegúrese de no configurar una etiqueta principal para que se aplique o recomiende automáticamente, ya que la etiqueta principal no se aplicará al contenido en las aplicaciones de Office que usan el cliente de etiquetado unificado de Azure Information Protection. Para obtener más información sobre las etiquetas principales y las subetiquetas, consulte [Subetiquetas (agrupación de etiquetas)](sensitivity-labels.md#sublabels-grouping-labels).
+
+## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Cómo configurar el etiquetado automático para las aplicaciones de Office
 
 El etiquetado automático en las aplicaciones de Office para Windows es compatible con el cliente de etiquetado unificado de Azure Information Protection. Para las etiquetas integradas en las aplicaciones de Office, esta funcionalidad está [en versión preliminar para algunas aplicaciones](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 La configuración de autoetiquetado para las aplicaciones de Office está disponible cuando [crea o edita una etiqueta de confidencial](create-sensitivity-labels.md):
 
 ![Opciones de etiquetado automático para etiquetas de confidencialidad](../media/sensitivity-labels-auto-labeling-options.png)
-
-## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Cómo configurar el etiquetado automático para las aplicaciones de Office
-
-Una de las características más eficaces de las etiquetas de confidencialidad es la capacidad de aplicarlas automáticamente al contenido que coincide con condiciones específicas. En este caso, no es necesario que las personas de la organización apliquen las etiquetas de confidencialidad: Office 365 realiza el trabajo por ellos.
 
 Puede optar por aplicar las etiquetas de confidencial al contenido automáticamente cuando el contenido contenga determinados tipos de información confidencial. Elija una opción de la lista de tipos de información confidencial o clasificadores:
 
@@ -91,7 +148,7 @@ Durante el período de versión preliminar, las siguientes aplicaciones son comp
     - PowerPoint
     - Outlook
 
-## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Recomendación para que el usuario aplique una etiqueta de confidencialidad
+### <a name="recommend-that-the-user-applies-a-sensitivity-label-in-office-apps"></a>Recomendar que el usuario aplique una etiqueta de confidencialidad en las aplicaciones de Office
 
 Si lo prefiere, puede recomendar a los usuarios que apliquen la etiqueta. Con esta opción, los usuarios pueden aceptar la clasificación y cualquier protección asociada, o descartar la recomendación si la etiqueta no es adecuada para su contenido.
 
@@ -101,7 +158,7 @@ Este es un ejemplo de un mensaje de un cliente de etiquetado unificado de Azure 
 
 ![Mensaje para aplicar una etiqueta recomendada](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-## <a name="how-automatic-or-recommended-labels-are-applied"></a>Forma de aplicar etiquetas recomendadas o automáticas
+### <a name="when-automatic-or-recommended-labels-are-applied-in-office-apps"></a>Cuándo se aplican etiquetas automáticas o recomendadas en las aplicaciones de Office
 
 La implementación de etiquetado automático y recomendado en las aplicaciones de Office depende de si está usando el etiquetado que está integrado en Office o el cliente de etiquetado unificado de Azure Information Protection. Sin embargo, en ambos casos:
 
@@ -125,10 +182,111 @@ Específico del cliente de etiquetado unificado de Azure Information Protection:
 
 - La información confidencial se detecta en el texto del cuerpo de los documentos y correos electrónicos, y en los encabezados y pies de página, pero no en la línea de asunto o en los datos adjuntos de correo electrónico.
 
-## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Forma en que se evalúan varias condiciones cuando se aplican en más de una etiqueta
+## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange
+> [!NOTE]
+> Las directivas de etiquetado automático se publican gradualmente para los espacios empresariales en versión preliminar pública y están sujetas a cambios.
 
-Las etiquetas se ordenan para su evaluación según la posición que especifique en la directiva: la primera etiqueta colocada tiene la posición inferior (menor confidencialidad) y la última etiqueta colocada tiene la posición superior (mayor confidencialidad). Para obtener más información sobre la prioridad, vea [Prioridad de etiqueta (el orden importa)](sensitivity-labels.md#label-priority-order-matters).
+### <a name="prerequisites-for-auto-labeling-policies"></a>Requisitos previos para las directivas de etiquetado automático
 
-## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>No configure una etiqueta principal para que se aplique o recomiende automáticamente
+- Se debe activar la auditoría de Office 365 en el modo de simulación. Si necesita activar la auditoría o no está seguro de si la auditoría ya está activada, consulte [Activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md).
 
-Recuerde, no se puede aplicar una etiqueta principal (una etiqueta con subetiquetas) al contenido. Asegúrese de no configurar una etiqueta principal para que se aplique o recomiende automáticamente, ya que la etiqueta principal no se aplicará al contenido en las aplicaciones de Office que usan el cliente de etiquetado unificado de Azure Information Protection. Para obtener más información sobre las etiquetas principales y las subetiquetas, consulte [Subetiquetas (agrupación de etiquetas)](sensitivity-labels.md#sublabels-grouping-labels).
+- Para etiquetar automáticamente archivos en SharePoint y OneDrive:
+    - [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (versión preliminar)](sensitivity-labels-sharepoint-onedrive-files.md)
+    - En el momento en el que se ejecuta la directiva de etiquetado automático, el archivo no debe estar abierto por otro proceso o usuario.
+
+- Si tiene previsto usar [tipos de información confidencial personalizados](custom-sensitive-info-types.md) en lugar de los tipos de confidencialidad integrados: 
+    - Se evalúan los tipos de información de confidencialidad personalizados para el contenido que se crea después de guardar los tipos de información de confidencialidad personalizados. 
+    - Para probar los nuevos tipos de información confidencial, créelos antes de crear su directiva de etiquetado automático y, después, cree nuevos documentos con datos de ejemplo para probarlos.
+
+- [Crear y publicar](create-sensitivity-labels.md) una o más etiquetas de confidencialidad (para al menos un usuario) que pueda seleccionar para la directiva de etiquetado automático. Para estas etiquetas:
+    - No importa que la opción de etiquetado automático en aplicaciones de Office esté activada o desactivada, ya que la configuración de la etiqueta es complementaria a las directivas de etiquetado automático, como se explica en la introducción. 
+    - Si las etiquetas que quiere usar para el etiquetado automático están configuradas para usar marcas visuales (encabezados, pies de página, marcas de agua), tenga en cuenta que no se aplican a los documentos.
+
+### <a name="learn-about-simulation-mode"></a>Más información sobre el modo de simulación
+
+El modo de simulación es único en las directivas de etiquetado automático y se integra en el flujo de trabajo. No puede etiquetar automáticamente documentos y mensajes de correo electrónico hasta que la directiva haya ejecutado al menos una simulación.
+
+Flujo de trabajo para una directiva de etiquetado automático:
+
+1. Crear y configurar una directiva de etiquetado automático
+
+2. Ejecutar la directiva en modo de simulación y esperar al menos 24 horas
+
+3. Revisar los resultados y, si es necesario, afinar la directiva, volver a ejecutar el modo de simulación y esperar al menos 24 horas
+
+4. Si es necesario, repetir el paso 3.
+
+5. Implementar en producción
+
+La implementación simulada se ejecuta como el parámetro WhatIf para PowerShell. Puede ver los resultados indicados como si la directiva de etiquetado automático aplicara la etiqueta seleccionada utilizando las reglas definidas. Si es necesario, puede refinar las reglas mayor precisión y volver a ejecutar la simulación. Sin embargo, como el etiquetado automático para Exchange se aplica a los correos electrónicos enviados y recibidos, en lugar de a los mensajes de correo electrónico almacenados en los buzones, no espere que los resultados de la simulación sean coherentes, salvo que pueda enviar y recibir exactamente los mismos mensajes de correo electrónico.
+
+El modo de simulación también le permite aumentar gradualmente el ámbito de la directiva de etiquetado automático antes de la implementación. Por ejemplo, puede empezar con una única ubicación, como un sitio de SharePoint, con una única biblioteca de documentos. Después, con cambios iterativos, aumente el ámbito a varios sitios y a otra ubicación, como OneDrive.
+
+Por último, puede usar el modo de simulación para ofrecer una aproximación del tiempo necesario para ejecutar la directiva de etiquetado automático, para ayudarle a planear y programar cuándo ejecutarla sin el modo de simulación.
+
+### <a name="creating-an-auto-labeling-policy"></a>Creación de una directiva de etiquetado automático
+
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta las etiquetas de confidencialidad:
+    
+    - **Soluciones** > **Protección de la información**
+    
+    Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**.
+
+2. Seleccione la pestaña **Etiquetado automático (versión preliminar)**:
+    
+    ![Pestaña etiquetado automático (versión preliminar)](../media/auto-labeling-tab.png)
+
+3. Seleccione **+ Crear directiva**.
+
+4. En la página **Elegir la información a la que quiere aplicar esta etiqueta**: seleccione una de las plantillas, como **Finanzas** o **Privacidad**. Puede refinar la búsqueda con la lista desplegable **Mostrar opciones para**. O bien, seleccione **directiva personalizada** si las plantillas no satisfacen sus necesidades. Seleccione **Siguiente**.
+
+5. En la página **Cambiar el nombre de la directiva de etiquetado automático**: proporcione un nombre único y, opcionalmente, una descripción que ayude a identificar la etiqueta aplicada automáticamente, las ubicaciones y las condiciones que identifican el contenido que se va a etiquetar.
+
+6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, sitios de SharePoint y OneDrive. Luego seleccione **Siguiente**.
+
+7. Para la página **Definir la configuración de la directiva**: conserve el valor predeterminado de **Buscar contenido que contenga** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Configuración avanzada**. Luego seleccione **Siguiente**.
+    
+    Las reglas usan condiciones que incluyen tipos de información confidencial y opciones de uso compartido:
+    - En el caso de los tipos de información confidencial, puede seleccionar tipos de información integrados y personalizados.
+    - En las opciones de uso compartido, puede elegir **solo con las personas de mi organización** o **con personas ajenas a mi organización**.
+    
+    Si la única ubicación es **Exchange** o si selecciona **Configuración avanzada**, hay otras condiciones que puede seleccionar:
+    - La dirección IP del remitente es
+    - El dominio del destinatario es
+    - El destinatario es
+    - La extensión del archivo adjunto es
+    - Los datos adjuntos están protegidos con contraseña
+    - La propiedad del documento es
+    - No se pudo digitalizar algún contenido de los datos adjuntos del correo
+    - No se pudo completar el análisis de algún contenido de los datos adjuntos del correo
+
+8. Para la página **Configurar las reglas para definir qué contenido se etiqueta**: seleccione **+ Crear regla** y seleccione **Siguiente**.
+
+9. En la página **Crear regla**, asigne un nombre y una definición a la regla, con los tipos de información confidencial o la opción de uso compartido y seleccione **Guardar**.
+    
+    Las opciones de configuración para los tipos de información confidencial son las mismas que las seleccionadas para el etiquetado automático para las aplicaciones de Office. Si necesita más información, consulte [Configuración de tipos de información confidencial para una etiqueta](#configuring-sensitive-info-types-for-a-label).
+
+10. De nuevo en la página **Configurar reglas para definir qué contenido se etiqueta**: vuelva a seleccionar **+ Crear regla** si necesita otra regla para identificar el contenido que se va a etiquetar y repita el paso anterior. Cuando haya definido todas las reglas que necesita y confirmado que su estado es activado, seleccione **Siguiente**.
+
+11. En la página **Elegir una etiqueta para aplicarla automáticamente**: seleccione **+ Elegir una etiqueta**, seleccione una etiqueta del panel **Elegir una etiqueta de confidencialidad** y seleccione **Siguiente**.
+
+12. Para la página **Elegir un modo para la directiva**: seleccione **Probarla** si está listo para ejecutar la directiva de etiquetado automático ahora, en el modo de simulación. En caso contrario, seleccione **Dejarla desactivada**. Seleccione **Siguiente**. 
+
+13. En la página **Resumen**: revise la configuración de la directiva de etiquetado automático, realice los cambios que sean necesarios y finalice el asistente.
+    
+    A diferencia del etiquetado automático para las aplicaciones de Office, no hay ninguna opción de publicación independiente. Sin embargo, al igual que con las etiquetas de publicación, espere hasta 24 horas para que la directiva de etiquetado automático se replique en toda la organización.
+
+En la página **Protección de la información**, pestaña **Etiquetado automático (versión preliminar)**, verá la directiva de etiquetado automático en la sección **Pruebas**. Seleccione su directiva para ver los detalles de la configuración y el estado (por ejemplo, pruebas en curso o pruebas completadas). Seleccione la pestaña **Elementos coincidentes** para ver los correos electrónicos o documentos que coinciden con las reglas especificadas.
+
+Si selecciona la opción **Editar** en la parte superior de la página, puede modificar la directiva directamente desde esta interfaz.
+
+Cuando esté listo para ejecutar la directiva sin simulación, seleccione la opción **Activar**.
+
+También puede ver los resultados de la directiva de etiquetado automático con el [explorador de contenido](data-classification-content-explorer.md) cuando tenga los [permisos](data-classification-content-explorer.md#permissions) correspondientes:
+- **El visor de listas del explorador de contenido** le permite ver la etiqueta de un archivo, pero no el contenido del archivo.
+- **El visor de contenido del explorador de contenido** le permite ver el contenido del archivo.
+
+> [!TIP]
+> También puede usar el explorador de contenido para identificar ubicaciones que tienen documentos sin etiquetar y contienen información confidencial. Con esta información, considere la posibilidad de agregar estas ubicaciones a la directiva de etiquetado automático e incluir los tipos de información confidencial identificados como reglas.
+
+
