@@ -151,6 +151,8 @@
           href: what-the-dlp-functions-look-for.md
     - name: Cifrado en M365
       href: encryption.md
+    - name: Cifrado de servicio de Office 365
+      href: office-365-service-encryption.md
     - name: Clave del cliente
       items:
         - name: Cifrado de servicios con clave de cliente en Office 365
@@ -855,9 +857,9 @@
               href: gdpr-arc-office365.md
         - name: Protección de la información
           href: gdpr-information-protection.md
-        - name: Solicitudes de interesados
+        - name: Solicitudes de los interesados
           items:
-            - name: Solicitudes de interesados
+            - name: Solicitudes de los interesados
               href: gdpr-data-subject-requests.md
             - name: Azure
               href: gdpr-dsr-azure.md
@@ -1198,7 +1200,7 @@
           items:
             - name: Ley de protección de datos personales (Argentina)
               href: offering-pdpa-argentina.md
-- name: Office 365 Enterprise
+- name: "Office\_365 Enterprise"
   href: 'https://docs.microsoft.com/Office365/Enterprise'
 - name: "Office\_365 Empresa"
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
