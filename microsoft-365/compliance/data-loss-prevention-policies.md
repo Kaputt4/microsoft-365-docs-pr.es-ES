@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) del Centro de seguridad y cumplimiento, puede identificar, supervisar y proteger automáticamente información confidencial en todo Office 365.
-ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894891"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189073"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Información general sobre la prevención de pérdida de datos
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -112,7 +112,7 @@ Las condiciones disponibles ahora pueden determinar si:
   
 - El contenido incluye un tipo de información confidencial.
     
-- El contenido incluye una etiqueta. Para obtener más información, consulte la sección [Usar una etiqueta como una condición en una directiva DLP](#using-a-label-as-a-condition-in-a-dlp-policy), que encontrará a continuación.
+- El contenido incluye una etiqueta. Para obtener más información, consulte la sección [Usar una etiqueta de retención como condición en una directiva DLP](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
     
 - El contenido se comparte con personas de fuera o dentro de la organización.
 
@@ -327,35 +327,23 @@ Por estas razones, las instrucciones para crear reglas con diferentes precisione
     
 - Por lo general, los niveles de confianza intermedios oscilan entre justo después del nivel de confianza inferior y justo antes del nivel de confianza superior.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta como condición en una directiva DLP
+## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de retención como condición en una directiva DLP
 
-Puede crear una etiqueta y después:
-<!-- what kind of label? -->
-  
-- **Publicarla** , para que los usuarios finales puedan ver y aplicar manualmente la etiqueta al contenido. 
-    
-- **Aplicarla automáticamente** al contenido que coincida con las condiciones que elija. 
-    
-Para obtener más información sobre las etiquetas, vea [Información general sobre etiquetas de retención](labels.md).
-  
-Después de crear una etiqueta, podrá usarla como una condición en sus directivas DLP. 
+Al usar una [etiqueta de retención](labels.md) que haya creado y publicado con anterioridad como condición en una directiva DLP, debe tener en cuenta lo siguiente:
+
+- Antes de intentar usarla como una condición en una directiva DLP, debe haber creado, publicado y aplicado previamente la etiqueta de retención.
+- Las etiquetas de retención pueden tardar hasta un día en sincronizarse y hasta siete días para aplicar automáticamente después de que se hayan creado y publicado. Obtenga más información consultando, [Cuánto tardan las etiquetas de retención en aplicarse](labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
+- El uso de una etiqueta de retención en una directiva *** solo es compatible con los elementos de SharePoint Online y OneDrive para la Empresa***.
+
 
 ![Etiquetas como una condición](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-Por ejemplo, es posible que desee hacer esto porque:
-  
-- Publicó una etiqueta denominada **Confidencial**, de modo que los usuarios de su organización pueden aplicar manualmente la etiqueta a documentos y correo electrónico confidencial. Si usa esta etiqueta como una condición en la directiva DLP, puede restringir el uso compartido del contenido con la etiqueta **Confidencial** con personas fuera de su organización. 
-    
-- Ha creado una etiqueta denominada **Casa alpina** para un proyecto de ese nombre y luego aplica ese etiqueta automáticamente al contenido que contiene las palabras clave "Casa alpina". Al usar esta etiqueta como una condición en la directiva DLP, puede mostrar una sugerencia de directiva a los usuarios finales cuando estén a punto de compartir este contenido con personas ajenas a su organización. 
-    
-- Ha publicado una etiqueta denominada **Registro de impuestos**, de modo que el administrador de registros puede aplicar manualmente la etiqueta al contenido que deba clasificarse como un registro. Al usar esta etiqueta como una condición en la directiva DLP, puede buscar contenido con esta etiqueta junto con otros tipos de información confidencial, como Números de Identificación del contribuyente individual o números de la seguridad social, aplicar acciones de protección al contenido con la etiqueta **Registro de impuestos**, y obtener informes de actividades detallados sobre la directiva DLP a partir de los informes DLP y los datos de registro de auditoría. 
-    
-- Ha publicado una etiqueta denominada **Equipo ejecutivo de liderazgo: confidencial** a las cuentas de OneDrive y los buzones de Exchange de un grupo de ejecutivos. Al usar esta etiqueta como una condición en la directiva DLP, puede aplicar acciones de retención y protección en el mismo subconjunto de contenido y usuarios. 
-    
-Al usar etiquetas como condiciones en las reglas DLP, puede también aplicar acciones de protección de forma selectiva en un conjunto específico de contenido, ubicaciones o usuarios. 
+Es posible que quiera usar una etiqueta de retención en una directiva DLP si tiene elementos en retención y eliminación, y también desea aplicarles otros controles, por ejemplo:
 
-> [!NOTE]
-> Si especifica una etiqueta de retención como una condición en una directiva DLP e incluye también Exchange y/o Teams como una ubicación, recibirá el siguiente mensaje de error: "No se admite la protección del contenido etiquetado en el correo electrónico y los mensajes de Teams. Elimine la etiqueta debajo o desactive Exchange y Teams como ubicación." Esto se debe a que el transporte de Exchange no evalúa los metadatos de la etiqueta durante el envío y entrega de mensajes. 
+- Publicó una etiqueta de retención denominada **año fiscal 2018**, que, cuando se aplica a los documentos de impuestos de 2018 que se almacenan en SharePoint, los retiene durante 10 años, para después eliminarlos. Tampoco quiere que los elementos se compartan fuera de la organización, lo que puede hacer con una directiva DLP.
+
+> [!IMPORTANT]
+> Si especifica una etiqueta de retención como una condición en una directiva DLP e incluye también Exchange y/o Teams como una ubicación, recibirá el siguiente mensaje de error: **"No se admite la protección del contenido etiquetado en mensajes de correo electrónico y de Teams. Quite la etiqueta siguiente o desactive Exchange y Teams como una ubicación".** Esto se debe a que el transporte de Exchange no evalúa los metadatos de la etiqueta durante el envío y entrega de mensajes. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>La compatibilidad con las etiquetas de confidencialidad estará disponible próximamente
 
