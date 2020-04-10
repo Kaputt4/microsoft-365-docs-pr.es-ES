@@ -64,6 +64,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Directiva de servicios de pago 2 y autenticación de cliente robusta
       href: billing-and-payments/psd2.md
+    - name: Información de impuestos
+      href: billing-and-payments/tax-information.md
 - name: Cuentas de facturación
   items:
     - name: Administrar cuentas de facturación
