@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino de Office 365 y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: d6b81a5ac5ef3b5287810110e5d0582bf34bff93
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: a3005d02522d0a2b22b1ca337d8f49ce7fa20fb3
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189026"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209753"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -32,7 +32,7 @@ Implementación centralizada es la forma recomendada y con más funciones para q
 La implementación centralizada es compatible con Windows, Mac, iOS, Android y aplicaciones de Office en línea.
 Un complemento puede tardar hasta 24 horas en mostrarse para el cliente para todos los usuarios.
   
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 La implementación centralizada de complementos requiere que los usuarios usen Office 365 ProPlus (y que hayan iniciado sesión en Office con su identificador de organización), y que tengan buzones de correo de Exchange Online y activos de Exchange Online. El directorio de la suscripción debe estar en el o en un federado de Azure Active Directory.
 Puede ver los requisitos específicos para Office y Exchange, o usar el [Comprobador de compatibilidad de implementación centralizada de office 365](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).

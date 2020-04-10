@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo empezar a usar la exhibición avanzada de documentos electrónicos en Microsoft 365. Una vez que haya completado algunos pasos rápidos, la herramienta eDiscovery avanzado estará lista para usarse. El primer paso consiste en crear un caso y, a continuación, empezar a usar las funciones y características de eDiscovery avanzadas.
-ms.openlocfilehash: 1f3eb78ab9f9e96eaa95dbfbc7e087fa1514b836
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: a43bfd94fcf0a2563a184a3a87d96c64bd8eb619
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43100873"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204050"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introducción a la exhibición avanzada de documentos electrónicos
 
@@ -173,4 +173,4 @@ Para empezar a usar la exhibición avanzada de documentos electrónicos, este es
 
    - [Analizar datos de casos](analyzing-data-in-review-set.md). La funcionalidad de análisis en eDiscovery avanzado es eficaz. Después de ejecutar análisis en los datos del conjunto de revisiones, realizaremos análisis como la detección de duplicados, el procesamiento de mensajes de correo electrónico y los temas que pueden ayudarle a reducir el volumen de documentos que tiene que revisar. También se genera un informe de análisis que resume el resultado de la ejecución de análisis. Como se explicó anteriormente, la ejecución de análisis también ejecuta [el modelo de detección de privilegios de clientes de abogados](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
-5. **Exportar y descargar datos de casos**. Un paso final después de recopilar, revisar y analizar los datos de casos es exportarlos de la exhibición de documentos electrónicos avanzada para su revisión externa o su revisión por parte de personas ajenas al equipo de investigación. La exportación de datos es un proceso de dos pasos. El primer paso consiste en [exportar](export-documents-from-review-set.md) el conjunto de revisión y en una ubicación de almacenamiento de Azure diferente (una proporcionada por Microsoft o una administrada por la organización). A continuación, se usa el explorador de Azure Storage para [Descargar](download-export-jobs.md) los datos en un equipo local. Además de los archivos de datos exportados, los Contains del paquete de exportación también contienen un informe de exportación, un informe de Resumen y un informe de errores.
+5. **Exportar y descargar datos de casos**. Un paso final después de recopilar, revisar y analizar los datos de casos es exportarlos de la exhibición de documentos electrónicos avanzada para su revisión externa o su revisión por parte de personas ajenas al equipo de investigación. La exportación de datos es un proceso de dos pasos. El primer paso consiste en [exportar](export-documents-from-review-set.md) los datos del conjunto de revisión y copiarlo en una ubicación de almacenamiento de Azure diferente (una proporcionada por Microsoft o una administrada por la organización). A continuación, se usa el explorador de Azure Storage para [Descargar](download-export-jobs.md) los datos en un equipo local. Además de los archivos de datos exportados, los Contains del paquete de exportación también contienen un informe de exportación, un informe de Resumen y un informe de errores.

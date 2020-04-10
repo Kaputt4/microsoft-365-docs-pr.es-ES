@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en DNS basado en Windows para Office 365.
-ms.openlocfilehash: ddea5cb95a7f2abef8b68b37de473f936ee08eb5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d33a2f79111f8951c3ec31ca5680877ad2e7d570
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42249313"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210569"
 ---
 # <a name="create-dns-records-for-office-365-using-windows-based-dns"></a>Crear registros DNS para Office 365 con DNS basado en Windows
 
@@ -38,7 +38,7 @@ Para empezar, necesita [encontrar los registros DNS en DNS basado en Windows](#f
 Problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [solucionar problemas después de cambiar el nombre de dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Buscar los registros DNS en DNS basado en Windows
-<a name="BKMK_find_your_dns_1"></a> Vaya a la página que contiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Inicio** > de la**ejecución**. Si está trabajando en Windows Server 2012, presione las teclas Windows y **r**. Escriba **dnsmgmnt. msc**y, a continuación, seleccione **Aceptar**. En el administrador de DNS, expanda ** \<nombres\> \> de servidor DNS zonas de búsqueda directa  **. Seleccione su dominio. Ya está listo para crear los registros DNS.
+<a name="BKMK_find_your_dns_1"> </a> Vaya a la página que contiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Inicio** > de la**ejecución**. Si está trabajando en Windows Server 2012, presione las teclas Windows y **r**. Escriba **dnsmgmnt. msc**y, a continuación, seleccione **Aceptar**. En el administrador de DNS, expanda ** \<nombres\> \> de servidor DNS zonas de búsqueda directa  **. Seleccione su dominio. Ya está listo para crear los registros DNS.
    
 ## <a name="add-mx-record"></a>Agregar registro MX
 <a name="BKMK_add_MX"> </a>
@@ -60,7 +60,7 @@ Agregue un registro MX para que el correo electrónico del dominio vaya a Office
 Agregue los registros CNAME necesarios para Office 365. Si se muestran más registros CNAME en Office 365, agréguelos siguiendo los mismos pasos generales que se muestran aquí.
   
 > [!IMPORTANT]
-> Si tiene la administración de dispositivos móviles (MDM) para Office 365, debe crear dos registros CNAME adicionales. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. (Si no tiene MDM, puede omitir este paso). 
+> Si tiene Mobile Device Management (MDM) para Office 365, entonces debe crear dos registros CNAME adicionales. Siga el procedimiento que utilizó para los otros cuatro registros CNAME, pero suministre los valores de la siguiente tabla. (Si no tiene MDM, puede omitir este paso). 
 
 - En la página del administrador de DNS del dominio, vaya a **acción** > **CNAME (CNAME)**.
 - En el cuadro de diálogo **nuevo registro de recursos** , asegúrese de que los campos se configuran exactamente con los valores siguientes:  
@@ -75,19 +75,19 @@ Agregue registro CNAME SIP.
     - Nombre de host: SIP
     - Tipo: CNAME
     - Dirección: sipdir.online.lync.com
-- Seleccione **Aceptar**.
+- Seleccione **ACEPTAR**.
 
 Agregue el registro CNAME de detección automática de Skype Empresarial Online.  
 - En la página del administrador de DNS del dominio, vaya a **acción** \> **CNAME (CNAME)**. En el cuadro de diálogo **nuevo registro de recursos** , asegúrese de que los campos se configuran exactamente con los valores siguientes:  
     - Nombre de host: lyncdiscover
     - Tipo: CNAME
     - Dirección: webdir.online.lync.com
-- Seleccione **Aceptar**.
+- Seleccione **ACEPTAR**.
    
-### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Agregar dos registros CNAME para la administración de dispositivos móviles (MDM) para Office 365
+### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Añadir dos registros CNAME para la Gestión de Dispositivos Móviles (MDM) para Office 365
 
 > [!IMPORTANT]
-> Si tiene la administración de dispositivos móviles (MDM) para Office 365, debe crear dos registros CNAME adicionales. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. > (si no tiene MDM, puede omitir este paso). 
+> Si tiene Mobile Device Management (MDM) para Office 365, entonces debe crear dos registros CNAME adicionales. Siga el procedimiento que utilizó para los otros cuatro registros CNAME, pero suministre los valores de la siguiente tabla. > (si no tiene MDM, puede omitir este paso). 
   
 
 Agregue el registro CNAME de MDM Enterpriseregistration.  
@@ -96,7 +96,7 @@ Agregue el registro CNAME de MDM Enterpriseregistration.
 - Nombre de host: enterpriseregistration
 - Tipo: CNAME
 - Dirección: enterpriseregistration.windows.net
-- Seleccione **Aceptar**. 
+- Seleccione **ACEPTAR**. 
 
 Agregue el registro CNAME de MDM Enterpriseenrollment. 
 -  En la página del administrador de DNS del dominio, vaya a **acción** \> **CNAME (CNAME)**. 
@@ -104,13 +104,13 @@ Agregue el registro CNAME de MDM Enterpriseenrollment.
     - Nombre de host: enterpriseenrollment
     - Tipo: CNAME
     - Dirección: enterpriseenrollment-s.manage.microsoft.com
-- Seleccione **Aceptar**.
+- Seleccione **ACEPTAR**.
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
   
 Agregue el registro TXT de SPF para su dominio para prevenir el correo basura.
   
@@ -124,7 +124,7 @@ Agregue el registro TXT de SPF para su dominio para prevenir el correo basura.
 -  Tipo de registro: TXT
 -  Dirección: v = spf1 include include SPF. Protection. Outlook. com-All 
          
--  Seleccione **Aceptar**.
+-  Seleccione **ACEPTAR**.
    
 ## <a name="add-srv-records"></a>Agregar registros SRV
 <a name="BKMK_add_SRV"> </a>
@@ -141,7 +141,7 @@ Agregue el registro SRV SIP para conferencias web de Skype Empresarial Online.  
     -  Peso: 1
     -  Puerto: 443
     -  Destino (nombre de host): sipdir.online.lync.com
--  Seleccione **Aceptar**. 
+-  Seleccione **ACEPTAR**. 
 
 
 Agregue el registro SRV SIP para la federación de Skype Empresarial Online.  
@@ -154,7 +154,7 @@ Agregue el registro SRV SIP para la federación de Skype Empresarial Online.
     -  Peso: 1
     -  Puerto: 5061
     -  Destino (nombre de host): sipfed.online.lync.com
--  Seleccione **Aceptar**. 
+-  Seleccione **ACEPTAR**. 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Agregar un registro para verificar que posee el dominio si todavía no lo ha hecho
 <a name="BKMK_verify"> </a>
@@ -166,7 +166,7 @@ Antes de agregar los registros DNS para configurar los servicios Office 365, Off
   
 
 1. Recopile información de Office 365.  <br/> 
-2. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> . 
+2. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>. 
 3. En la página **dominios** , en la columna **acciones** del dominio que está comprobando, seleccione **Iniciar configuración**. 
 4. En la página **Agregar un dominio a Office 365** , seleccione **iniciar paso 1**. 
 5. En la página **confirme que es el propietario de su dominio** , en la lista desplegable **vea las instrucciones para realizar este paso con** , seleccione **instrucciones generales**. 

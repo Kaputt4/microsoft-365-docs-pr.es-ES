@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento y el uso compartido de archivos.
-ms.openlocfilehash: be3c845710fdf5531b1a3d91b9579c55cdc4d203
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6494207518f919a3d984be7e7932740d82e9ea11
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360501"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209741"
 ---
 # <a name="set-up-office-365-file-storage-and-sharing"></a>Configurar el almacenamiento y el uso compartido de archivos de Office 365
 
@@ -191,7 +191,7 @@ Puede habilitar el almacenamiento de terceros para los usuarios en Office 365 pa
 
 4. Active o desactive la casilla para activar o desactivar el almacenamiento de terceros y, a continuación, seleccione **Guardar cambios**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos](customize-team-site.md). En este tutorial paso a paso se explica cómo puede aprovechar una mayor capacidad de almacenamiento y las características de colaboración. 
 

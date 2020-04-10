@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar su dominio en Office 365 para que sus servicios como correo electrónico y Skype empresarial online usen su propio nombre de dominio.
 ms.custom: okr_smb
-ms.openlocfilehash: 3030fc33a6d528fd6cb4e97c27cdbb7c251e9a97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 838025002443ec35787ea91775c60d3829545af4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255153"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210497"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-any-domain-registrar"></a>Cambiar los servidores de nombre para configurar Office 365 con cualquier registrador de dominio
 
@@ -59,7 +59,7 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
     
 2. Elija su dominio.
     
-3. Busque la página donde puede modificar los registros DNS del dominio.
+3. Busque la página donde puede modificar los registros DNS para su dominio.
     
 ### <a name="create-the-record"></a>Crear el registro
 
@@ -71,32 +71,32 @@ En función de si se está creando un registro TXT o un registro MX, siga uno de
 |:-----|:-----|:-----|:-----|
 |**Tipo de registro** <br/> |**Alias** o **Nombre de host** <br/> |**Valor** <br/> |**TTL** <br/> |
 |TXT  <br/> |Realice una de las siguientes acciones: escriba **@**, deje el campo vacío o escriba el nombre de dominio.    <br/> > [!NOTE]> Los distintos hosts DNS tienen requisitos distintos para este campo.           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Esto es un ejemplo. Utilice aquí su valor de **Dirección o puntos de destino**, de la tabla de Office 365.          [¿Cómo puedo encontrarlo?](../get-help-with-domains/information-for-dns-records.md)          |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3.600** ), etc.      <br/> |
+|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Esto es un ejemplo. Utilice aquí su valor de **Dirección o puntos de destino**, de la tabla de Office 365.          [¿Cómo puedo encontrarlo?](../get-help-with-domains/information-for-dns-records.md)          |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc.  <br/> |
    
 **Si crea un registro MX, utilice estos valores:**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Tipo de registro**|**Alias** o **Nombre de host**|**Valor**|**Prioridad**|**TTL**|
-|MX|Escriba **@** o el nombre del dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Esto es un ejemplo. Utilice aquí su valor de **Dirección o puntos de destino**, de la tabla de Office 365.          [¿Cómo puedo encontrarlo?](../get-help-with-domains/information-for-dns-records.md)          |Por **prioridad**, para evitar conflictos con el registro MX usado para el flujo de correo, use una prioridad más baja que la prioridad de los registros MX existentes. Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.md#what-is-mx-priority) |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc. |
+|MX|Escriba **@** o el nombre del dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Esto es un ejemplo. Utilice aquí su valor de **Dirección o puntos de destino**, de la tabla de Office 365.          [¿Cómo puedo encontrarlo?](../get-help-with-domains/information-for-dns-records.md)          |Para**Prioridad**, para evitar conflictos con el registro MX usado para el flujo de correo, use una prioridad más baja que la prioridad de cualquier registro MX existente. Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.md#what-is-mx-priority) |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc. |
    
 ### <a name="save-the-record"></a>Guardar el registro
 
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
 
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
-2. En la página **dominios** , seleccione el dominio que desea comprobar. 
+2. En la página **Dominios**, elija el dominio que está verificando. 
     
   
-3. En la página **configuración** , seleccione **Iniciar configuración**.
+3. En la página de **Configuración**, elija ** Iniciar configuración**.
  
     
   
-4. En la página **comprobar dominio** , seleccione **comprobar**.
+4. En la página**verificar dominio**, seleccione **verificar**.
     
     
   
@@ -158,7 +158,7 @@ Por ejemplo, aquí se indican algunos pasos adicionales que podrían ser necesar
     
 - ¿Quiere agregar un dominio que se utiliza actualmente con una dirección de página web, como www.fourthcoffee.com? Puede seguir los pasos que se indican a continuación mientras agrega el dominio para mantener su sitio web hospedado donde se hospeda el sitio ahora, de modo que los usuarios puedan seguir teniendo acceso al sitio web después de cambiar los registros NS del dominio para que apunten a Office 365.
 
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
 3. En la página Dominios, seleccione un dominio.
 

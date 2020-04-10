@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en easyDNS para Office 365.
-ms.openlocfilehash: f55f39f36b8abaee2d500c87ccf1e0089caecc9d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9d48896de8f841863e25929a46b2f1d2e1b3ced2
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255369"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210557"
 ---
 # <a name="create-dns-records-at-easydns-for-office-365"></a>Crear registros DNS en easyDNS para Office 365
 
@@ -54,15 +54,15 @@ Nota: Actualmente, los registros SRV no están disponibles en todos los paquetes
     
 7. Espere unos minutos antes de continuar, para que el registro que acaba de crear pueda propagarse a través de Internet y ser detectado por Office 365.
     
-8. Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+8. Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
     
-9. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+9. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
-10. En la página **dominios** , seleccione el dominio que desea comprobar. 
+10. En la página **Dominios**, elija el dominio que está verificando. 
     
 11. En la página **configuración** , seleccione **Iniciar configuración.**
     
-12. En la página **comprobar dominio** , seleccione **comprobar**. 
+12. En la página**Verificar dominio**, elija **Verificar**. 
     
 ## <a name="add-an-mx-record-to-route-email-to-office-365"></a>Agregar un registro MX para enrutar correo electrónico a Office 365
 

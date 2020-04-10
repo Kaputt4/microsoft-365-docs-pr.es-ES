@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Obtenga información sobre cómo quitar un dominio anterior de Office 365 y mover usuarios y grupos a otro dominio.
-ms.openlocfilehash: efbd49daa28b5d15989e1531929cb2d9355aeb8f
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857432"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210373"
 ---
 # <a name="remove-a-domain-from-office-365"></a>Quitar dominios de Office 365
 
@@ -229,7 +229,7 @@ Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los us
 
 [Preguntas más frecuentes de dominios](../setup/domains-faq.md)
 
-[Obtener ayuda con Office 365 dominios](get-help-with-domains.yml)
+[Obtener ayuda con Office 365 dominios](get-help-with-domains.md)
 
 [Cambiar a otro plan de Office 365 para empresas](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

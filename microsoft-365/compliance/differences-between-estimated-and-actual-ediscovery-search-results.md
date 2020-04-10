@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/13/2017
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,18 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprenda por qué los resultados de búsqueda reales y estimados pueden variar en las búsquedas ejecutadas con herramientas de eDiscovery en Office 365. '
-ms.openlocfilehash: 1024a99ffa358e56783d562062f158e71f5e7ddc
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 9ee24cc0e7b85d39480149d65897b303e23c0adb
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198377"
+ms.locfileid: "43204072"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos Estimado y real en Office 365
 
 Este tema se aplica a las búsquedas que se pueden ejecutar con una de las siguientes herramientas de eDiscovery de Microsoft: 
 
 - Búsqueda de contenido en el centro de seguridad & cumplimiento  <br/>  
+- Búsquedas asociadas a casos de eDiscovery principales
 - Exhibición de documentos electrónicos local en el centro de administración de Exchange (EAC)  <br/>  
 - Centro de exhibición de documentos electrónicos en SharePoint Online  <br/> 
    
@@ -83,5 +84,3 @@ En el centro de eDiscovery de SharePoint Online, tiene la opción de incluir con
   
 > [!NOTE]
 > Si no selecciona la opción **incluir elementos cifrados o con formato no reconocido** al exportar los resultados de la búsqueda o simplemente descargar los informes, se descargan los informes de errores de índice pero no tienen ninguna entrada. Esto no significa que no haya errores de indización. Solo significa que los elementos sin indexar no se incluyeron en la exportación. 
-  
-

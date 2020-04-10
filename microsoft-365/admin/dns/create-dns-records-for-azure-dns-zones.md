@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en zonas DNS de Azure para Office 365.
-ms.openlocfilehash: 30e54da8ffd51165b1cc0d2eb82d9d02eefdaf4d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1c9ac04f74b205fa4a099fca634a41207e8083ba
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362745"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211055"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Crear registros DNS para zonas DNS de Azure
 
@@ -113,7 +113,7 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
    
     ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
-5. Elija **Aceptar**.
+5. Seleccione **ACEPTAR**.
   
 6. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
@@ -163,7 +163,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![Azure-BP-configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
-5. Elija **Aceptar**.
+5. Seleccione **ACEPTAR**.
     
     ![Azure-BP-configure-2-2](../../media/2f24225f-69ac-41dc-91c5-93d327360f74.png)
   
@@ -181,7 +181,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![Azure-BP-configure-2-5](../../media/25219e25-bc14-4bc7-84ed-ee65eb28a8ed.png)
   
-8. Haga clic en **Guardar**.
+8. Seleccione **Guardar**.
     
     ![Azure-BP-configure-2-6](../../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
   
@@ -215,7 +215,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![Azure-BP-configure-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
   
-5. Elija **Aceptar**.
+5. Seleccione **ACEPTAR**.
     
     ![Azure-BP-configure-3-2](../../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
   
@@ -263,7 +263,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
 
     ![Azure-BP-configure-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
     
     ![Azure-BP-configure-4-3](../../media/d7421c7f-ea63-4e11-8595-a482b8c165e0.png)
   
@@ -295,7 +295,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
 
     ![Azure-BP-configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   
-5. Elija **Aceptar**.
+5. Seleccione **ACEPTAR**.
     
     ![Azure-BP-configure-5-2](../../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
   

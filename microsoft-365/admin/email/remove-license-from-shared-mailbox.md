@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Quitar la licencia de un buzón compartido para asignarlo a otro usuario. '
-ms.openlocfilehash: 90ec29681aa5b15dd04895df2b48b2b1619b521d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 02c98570a1742d710373c6711d2621a0a9ebe818
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362225"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210533"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 
@@ -67,7 +67,7 @@ Los buzones compartidos no necesitan una licencia a menos que el buzón tenga m�
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 
@@ -86,7 +86,7 @@ Los buzones compartidos no necesitan una licencia a menos que el buzón tenga m�
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 

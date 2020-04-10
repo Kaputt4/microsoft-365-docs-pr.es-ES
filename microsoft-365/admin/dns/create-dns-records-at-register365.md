@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Register365 para Office 365.
-ms.openlocfilehash: 7f9398e14ea5280948829b263d4cd66d61fab682
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 66c5c29d533b6897280ff99c449988c160022cf8
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362855"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211091"
 ---
 # <a name="create-dns-records-at-register365-for-office-365"></a>Crear registros DNS en Register365 para Office 365
 
@@ -84,7 +84,7 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
    
     ![Especificar valores en la página Agregar o modificar zona DNS](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     (You may have to scroll down.)
     
@@ -136,7 +136,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![Especificar valores en la página Agregar o modificar zona DNS](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     (You may have to scroll down.)
     
@@ -146,7 +146,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![Deleting records in the Mail exchange records section](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     (You may have to scroll down.)
     
@@ -183,7 +183,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![Especificar valores en la página Agregar o modificar zona DNS](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
@@ -217,7 +217,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![Especificar valores en la página Agregar o modificar zona DNS](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     (You may have to scroll down.)
     
@@ -247,7 +247,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![Introducción de valores en la sección de registros de servicio](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     (You may have to scroll down.)
     
