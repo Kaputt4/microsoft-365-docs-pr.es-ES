@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Obtenga información sobre cómo actualizar una o varias listas de distribución a Office 365 grupos en Outlook y cómo usar PowerShell para actualizar simultáneamente varias listas de distribución.
-ms.openlocfilehash: 7337d450cf1e9b249b2b9dc2ab66f32f5b1577e0
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: c3acf1d47a37d79d666b1b951bea704c273ccf09
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361715"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212286"
 ---
 # <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>Actualizar listas de distribución a grupos de Office 365 en Outlook
 

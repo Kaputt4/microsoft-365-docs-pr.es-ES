@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en CloudFlare para Office 365.
-ms.openlocfilehash: efd7a4a41a0cc27c2a50da732d648c87c79c6ff7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8d64824f880bab9e6691ebf47c9508c555562fe4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248145"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211816"
 ---
 # <a name="create-dns-records-at-cloudflare-for-office-365"></a>Crear registros DNS en CloudFlare para Office 365
 
@@ -77,7 +77,7 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
   
-1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
   
 2. En la página **principal** , seleccione el dominio que desea actualizar. 
   
@@ -88,7 +88,7 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
     
     |**Tipo**|**Nombre**|**TTL automático**|**Contenido**|
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 minutos  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** Este es un ejemplo. Utilice aquí su valor de **Dirección o puntos de destino**, de la tabla de Office 365.           [¿Cómo puedo encontrarlo?](../get-help-with-domains/information-for-dns-records.md)    |
+    |TXT  <br/> |@  <br/> |30 minutos  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
 5. Seleccione **Guardar**.
@@ -96,22 +96,22 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
   
 9. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
     
-2. En la página **dominios** , seleccione el dominio que desea comprobar. 
+2. En la página **Dominios**, elija el dominio que está verificando. 
     
     
   
-3. En la página **configuración** , seleccione **Iniciar configuración**.
+3. En la página de **Configuración**, elija ** Iniciar configuración**.
     
     
   
-4. En la página **comprobar dominio** , seleccione **comprobar**.
+4. En la página**verificar dominio**, seleccione **verificar**.
     
     
   
@@ -121,7 +121,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Office 365
 <a name="BKMK_add_MX"> </a>
 
-1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
   
 2. En la página **principal** , seleccione el dominio que desea actualizar. 
   
@@ -146,7 +146,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Agregue los seis registros CNAME necesarios para Office 365
 <a name="BKMK_add_CNAME"> </a>
 
-1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
     
   
 2. En la página **principal** , seleccione el dominio que desea actualizar. 
@@ -161,7 +161,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Tipo**|**Nombre**|**Destino**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minutos  <br/> |
+    |CNAME  <br/> |autodescubrir  <br/> |autodiscover.outlook.com  <br/> |30 minutos  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minutos  <br/> |
     |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |30 minutos  <br/> |
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |30 minutos  <br/> |
@@ -180,9 +180,9 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
   
-1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
     
   
 2. En la página **principal** , seleccione el dominio que desea actualizar. 
@@ -194,7 +194,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Tipo**|**Nombre**|**TTL**|**Contenido**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |30 minutos  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** Se recomienda copiar y pegar esta entrada para que todo el espaciado sea correcto.   |
+    |TXT  <br/> |@  <br/> |30 minutos  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.   |
 
  
 5. Seleccione **Guardar**.
@@ -207,7 +207,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 > [!IMPORTANT]
 > Tenga en cuenta que CloudFlare es responsable de hacer que esta funcionalidad esté disponible. En caso de que vea discrepancias entre los pasos siguientes y la interfaz gráfica de usuario (GUI) CloudFlare actual, aproveche la [comunidad de CloudFlare](https://community.cloudflare.com/). 
 
-1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
       
 2. En la página **principal** , seleccione el dominio que desea actualizar. 
   
@@ -217,7 +217,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
     En la página **Administración de DNS** , haga clic en **Agregar registro**y, a continuación, seleccione los valores de la primera fila de la tabla siguiente.
         
-    |**Tipo**|**Servicio**|**Protocolo**|**Nombre**|**TTL**|**Prioridad**|**Peso**|**Puerto**|**Destino**|
+    |**Tipo**|**Servicio**|**Protocolo**|**Nombre**|**TTL**|**Prioridad**|**Grosor**|**Puerto**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |Use su *domain_name*; por ejemplo, contoso.com  |30 minutos | 100|1 |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|Use su *domain_name*; por ejemplo, contoso.com   |30 minutos |100 |1 |5061 | sipfed.online.lync.com |

@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a administrar grupos de Office 365, incluido agregar miembros de grupo de eliminación, editar la dirección de correo electrónico, el nombre de grupo o la descripción, y personalizar la forma en que funciona el grupo.
-ms.openlocfilehash: 189a41c5049110100b548ca6f906b1324aeb1431
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 34682d3d06babca04a9b2541e3f33ec79d934f50
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894532"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212074"
 ---
 # <a name="manage-an-office-365-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo de Office 365 en el centro de administración de Microsoft 365
 
@@ -122,7 +122,7 @@ Los miembros del grupo pueden optar por no recibir estos mensajes de correo elec
 
 3. En la pestaña **configuración** , seleccione **enviar copias de conversaciones de grupo y eventos a miembros del grupo** si desea que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ Los miembros del grupo pueden optar por no recibir estos mensajes de correo elec
 
 3. Active **enviar copias de conversaciones de grupo y eventos a** las bandejas de entrada de los miembros del grupo **si desea** que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ Los miembros del grupo pueden optar por no recibir estos mensajes de correo elec
 
 3. Active **enviar copias de conversaciones de grupo y eventos a** las bandejas de entrada de los miembros del grupo **si desea** que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
 
 3. En la lista grupos del centro de administración, seleccione el nombre del grupo que desea cambiar y, a continuación, en la pestaña **configuración** , seleccione **permitir a los remitentes externos que envíen correo electrónico a este grupo**.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
     
 3. Establezca que **Permitir que personas que no pertenezcan a la organización envíen correos electrónicos al grupo** cambie a **Activado**.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
     
 3. Establezca que **Permitir que personas que no pertenezcan a la organización envíen correos electrónicos al grupo** cambie a **Activado**.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 

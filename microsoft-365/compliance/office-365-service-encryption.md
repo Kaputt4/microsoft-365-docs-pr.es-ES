@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprenda el cifrado de datos en la capa de servicio en Microsoft Office 365.'
-ms.openlocfilehash: a8faded033ade013924eeeab269aa213840430b4
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: fb6bf87fbd51bcb4383e9eb595ef11f081989d86
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193466"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211947"
 ---
 # <a name="office-365-service-encryption"></a>Cifrado de servicio de Office 365
 
 Además de usar BitLocker para el cifrado de nivel de volumen, Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y Teams también usan el cifrado de servicio para cifrar los datos de clientes. El cifrado del servicio permite dos opciones de administración de claves:
 
-- Microsoft administra todas las claves de cifrado. Esta opción está disponible actualmente en chats de SharePoint Online, OneDrive para la empresa, Skype empresarial y Microsoft Teams. Los datos se cifran de forma predeterminada con las claves administradas de Microsoft.
+- Microsoft administra todas las claves de cifrado. Esta opción está disponible actualmente en chats de SharePoint Online, OneDrive para la empresa, Skype empresarial y Microsoft Teams. Los datos se cifran de forma predeterminada con las claves administradas por Microsoft.
 
-- La organización proporciona las claves raíz. Estas claves se administran con Azure Key Vault. Esta opción se denomina clave de cliente. La clave de cliente está disponible actualmente para los archivos de Exchange Online, SharePoint Online, OneDrive para la empresa, Skype empresarial y Microsoft Teams. Si usa la clave de cliente, estas claves reemplazan las claves administradas de Microsoft para cifrar los datos.
+- La organización proporciona las claves raíz. Estas claves se administran con Azure Key Vault. Esta opción se denomina clave de cliente. La clave de cliente está disponible actualmente para los archivos de Exchange Online, SharePoint Online, OneDrive para la empresa, Skype empresarial y Microsoft Teams. Si usa la clave de cliente, estas claves reemplazan las claves administradas por Microsoft para cifrar los datos.
 
 Independientemente de la opción que elija, el cifrado de servicio ofrece varias ventajas:
 

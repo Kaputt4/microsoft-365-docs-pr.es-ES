@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Obtenga información acerca de cómo puede configurar Office 365 para administrar los registros DNS de su dominio personalizado en Google Domains.
-ms.openlocfilehash: f6faaa4a7b6540086752e88da2051a73450f4455
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 86dd1745fdc85c9837e5c20844427768d4c74a81
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351971"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211936"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-google-domains"></a>Cambiar los servidores de nombres para configurar Office 365 con Google Domains
 
@@ -133,7 +133,7 @@ Para completar la configuración del dominio con Office 365, debe cambiar los re
     
     Repita este proceso hasta que haya creado los cuatro registros de servidor de nombres.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
@@ -174,7 +174,7 @@ Para completar la configuración del dominio con Office 365, debe cambiar los re
     
     Repita este proceso hasta que haya creado los cuatro registros de servidor de nombres.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   

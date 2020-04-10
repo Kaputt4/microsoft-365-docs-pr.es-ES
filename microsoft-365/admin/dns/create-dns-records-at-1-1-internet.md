@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en 1&1 IONOS para Office 365.
-ms.openlocfilehash: d4ff6bea0d96402c34b1d1ae302510a6e718c38d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e31c9d9d08e29156ff6197c030de6b0f4169b5f4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352061"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211876"
 ---
 # <a name="create-dns-records-at-11-ionos-for-office-365"></a>Crear registros DNS en 1&1 IONOS para Office 365
 
@@ -69,7 +69,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://support.of
     |**Tipo** <br/> |**Prefijo** <br/> |**Valor de nombre** <br/> |
     |TXT  <br/> |(Deje este campo en blanco)  <br/> |MS=ms *XXXXXXXX*  <br/> Nota: este es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. Haga clic en **Guardar**.
+7. Seleccione **Guardar**.
     
 8. Vuelva a seleccionar **Guardar** . 
     
@@ -121,7 +121,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:22)](https://support.of
     
     ![1 y 1-configurar 2 y 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. Haga clic en **Guardar**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. Seleccione **Guardar**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
 9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**.<br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -176,7 +176,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:57)](https://support.of
   
 11. Active la casilla del aviso de declinación de responsabilidades **Soy consciente**.<br/>![1&amp;1-BP-configure-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
-12. Haga clic en **Guardar**.<br/>![1&amp;1-BP-configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
+12. Seleccione **Guardar**.<br/>![1&amp;1-BP-configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
   
   
 ### <a name="additional-cname-records"></a>Registros CNAME adicionales
@@ -273,9 +273,9 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:09)](https://support.of
     
     ![Registro TXT](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
   
-7. Haga clic en **Guardar**.<br/>![Agregar registro](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
+7. Seleccione **Guardar**.<br/>![Agregar registro](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
   
-8. Haga clic en **Guardar**.<br/>![Guardar registro](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
+8. Seleccione **Guardar**.<br/>![Guardar registro](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
 9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**.<br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -305,9 +305,9 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:51)](https://support.of
     
     ![1&amp;1-BP-configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
-7. Haga clic en **Guardar**. <br/>![1&amp;1-BP-configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
+7. Seleccione **Guardar**. <br/>![1&amp;1-BP-configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
   
-8. Haga clic en **Guardar**. <br/>![1&amp;1-BP-configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
+8. Seleccione **Guardar**. <br/>![1&amp;1-BP-configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
 9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**. <br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   

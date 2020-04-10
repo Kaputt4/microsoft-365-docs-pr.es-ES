@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en GoDaddy para Office 365.
 ms.custom: okr_smb
-ms.openlocfilehash: e037e989a51a95b16077d1edfcdff4b341ee3b80
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: eceab4659dfc01d6a731c4ed07f27bb29214e5fb
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349241"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211744"
 ---
 # <a name="create-dns-records-at-godaddy-for-office-365"></a>Crear registros DNS en GoDaddy para Office 365
 
@@ -59,7 +59,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. Elija **Agregar**.
+3. Seleccione **Agregar**.
 
     ![GoDaddy-BP-configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -71,7 +71,7 @@ Siga estos pasos.
 
       ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 6. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
 
@@ -110,7 +110,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. Elija **Agregar**.
+3. Seleccione **Agregar**.
 
     ![GoDaddy-BP-configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -126,7 +126,7 @@ Siga estos pasos.
     |:-----|:-----|:-----|:-----|:-----|
     |MX (intercambiador de correo)  <br/> |@  <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/> **Nota:** Obtenga la * \<clave\> de dominio* de su cuenta de Office 365.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |1 hora  <br/> |
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Agregar los registros CNAME necesarios para Office 365
 <a name="BKMK_add_CNAME"> </a>
@@ -141,7 +141,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. Elija **Agregar**.
+3. Seleccione **Agregar**.
 
     ![GoDaddy-BP-configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -184,7 +184,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. Elija **Agregar**.
+3. Seleccione **Agregar**.
 
     ![GoDaddy-BP-configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -202,7 +202,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-configure-4-1](../../media/7c724f02-c9b3-42ab-b9c0-78959fa6ffad.png)
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Agregar los dos registros SRV necesarios para Office 365
@@ -218,7 +218,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. Elija **Agregar**.
+3. Seleccione **Agregar**.
 
     ![GoDaddy-BP-configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -242,7 +242,7 @@ Siga estos pasos.
 
 6. Repita el **paso 5** para crear el otro registro SRV.
 
-7. Haga clic en **Guardar**.
+7. Seleccione **Guardar**.
 
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).

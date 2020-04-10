@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: Aprenda a comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios al pasar el mouse para Office 365.
-ms.openlocfilehash: 72df2d98f3446087a1e9796cd616293a91003ad9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7884038dcd1ebc7b13bbed44d98f0d5172015cc1
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42350111"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211708"
 ---
 # <a name="create-dns-records-at-hover-for-office-365"></a>Crear registros DNS en Hover para Office 365
 
@@ -75,7 +75,7 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
   
@@ -131,7 +131,7 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/266c30a4-6703-48fb-a919-b510ed966193.png)
   
@@ -182,7 +182,7 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
   
@@ -220,7 +220,7 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
   
@@ -256,7 +256,7 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
   

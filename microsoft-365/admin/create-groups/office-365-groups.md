@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los grupos de Office 365.
-ms.openlocfilehash: 2257af16106e47b490beebd6d48e566bb3c07ca6
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f5a0b72737a360a4bfe4cdd8fee4a08b7a7ff236
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894496"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212538"
 ---
 # <a name="overview-of-office-365-groups-for-administrators"></a>Información general sobre los grupos de Office 365 para administradores
 
@@ -74,7 +74,7 @@ Los siguientes límites se aplican a los grupos de Office 365:
 |Groups a user can create|250|
 |Grupos que puede crear un administrador|Hasta el límite de inquilino predeterminado de 500 k|
 |Número de miembros|Más de 1.000, aunque solo 1.000 puede tener acceso a las conversaciones de grupo a la vez. <br>Es posible que los usuarios perciban retrasos al obtener acceso al calendario y a las conversaciones en grupos muy grandes en Outlook.|
-|Número de grupos a los que puede pertenecer un usuario|1,000|
+|Número de grupos a los que puede pertenecer un usuario|1.000|
 |Almacenamiento de archivos.|1 terabyte + 10 GB por usuario suscrito + almacenamiento adicional adquirido. Puede adquirir una cantidad ilimitada de almacenamiento adicional.|
 |Tamaño del buzón de grupo|50 GB|
 

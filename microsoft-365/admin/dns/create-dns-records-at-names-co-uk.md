@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Names.co.uk para Office 365.
-ms.openlocfilehash: d27cd22b0047cf58def01533a486c7641f50148e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8f8d76c1aebaa7fec80b264e0a9d2c8fffec9f41
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42348141"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211672"
 ---
 # <a name="create-dns-records-at-namescouk-for-office-365"></a>Crear registros DNS en Names.co.uk para Office 365
 
@@ -72,7 +72,7 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
        
     ![NamesUK-BP-Verify-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     (You may have to scroll down.)
     
@@ -124,7 +124,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
        
     ![NamesUK-BP-configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     (You may have to scroll down.)
     
@@ -134,7 +134,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![NamesUK-BP-configure-2-3](../../media/f8e43926-b724-4690-94e7-ec4b8d7a8da5.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     (You may have to scroll down.)
     
@@ -171,7 +171,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
        
     ![NamesUK-BP-configure-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     ![NamesUK-BP-configure-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
@@ -209,7 +209,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
        
     ![NamesUK-BP-configure-4-1](../../media/cfc61387-630e-4aa0-8762-ef36eaeda44a.png)
   
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
     
     (You may have to scroll down.)
     
@@ -239,7 +239,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
        
     ![NamesUK-BP-configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     (Es posible que tenga que desplazarse hacia abajo).
     

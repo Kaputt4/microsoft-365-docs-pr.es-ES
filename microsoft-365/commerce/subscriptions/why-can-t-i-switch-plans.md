@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprenda los motivos por los que algunas veces el cambio de plan debe realizarse manualmente o al llamar a soporte técnico.
-ms.openlocfilehash: a78ce8614dcc7382543bfda5bdfdfb025b6e5077
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 5aa0885c9f7d68dc46618522de00efe26701551f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409625"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211978"
 ---
 # <a name="why-cant-i-switch-office-365-for-business-plans"></a>¿Por qué no puedo cambiar de planes de Office 365 para empresas?
 

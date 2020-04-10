@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
 description: Obtenga información acerca de cómo puede configurar Office 365 para administrar los registros DNS de su dominio personalizado en midominio.
-ms.openlocfilehash: 90f1469bdf2f281be14e2a9e15a9fe7ac4a8cbee
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f88f0528caf2229441fd3e5364b53864b923099f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351621"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212050"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-mydomain"></a>Cambiar los servidores de nombres para configurar Office 365 con MyDomain
 
@@ -133,7 +133,7 @@ Para completar la configuración del dominio con Office 365, debe cambiar los re
    
    ![Midominio-BP-redelegate-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     ![Midominio-BP-redelegate-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   

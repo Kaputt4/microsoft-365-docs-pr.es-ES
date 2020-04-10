@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Aprenda a configurar su dominio personalizado de Office 365 con soluciones de red si desea que Office 365 administre sus registros DNS. '
-ms.openlocfilehash: 5eae7561baa6e0efb4436e6758d3fd972a2700cc
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: df80cc925fab965b73873916dff7fc4dea74a661
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351761"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211888"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-network-solutions"></a>Cambiar los servidores DNS para configurar Office 365 con Network Solutions
 

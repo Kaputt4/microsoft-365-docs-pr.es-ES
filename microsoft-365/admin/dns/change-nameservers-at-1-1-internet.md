@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Obtenga información sobre cómo configurar Office 365 operado por 21Vianet para administrar los registros DNS, cuando 1&1 Internet es el proveedor de host DNS.
-ms.openlocfilehash: 3678d5372b9edd8e9333ad78862694b450abe53a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bda6a19ba7bfca20bc1764187f429e13900d8460
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352571"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212370"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Cambiar los servidores DNS para configurar Office 365 con 1&1 IONOS
 
@@ -140,7 +140,7 @@ Para completar la configuración del dominio con Office 365, debe cambiar los re
    
     ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     ![Seleccione Guardar en la página Configuración del servidor de nombres](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -171,7 +171,7 @@ Para completar la configuración del dominio con Office 365, debe cambiar los re
    
    ![Introducción de los valores del servidor de nombres](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
     
     ![Seleccione Guardar en la página Configuración del servidor de nombres](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   

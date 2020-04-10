@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los equipos ahora tendrán acceso a vínculos seguros en el momento de hacer clic. Si usa chats 1-en-1 chats, entre grupos o en canales y pestañas, si tiene una suscripción a Office 365 ATP, tendrá la posibilidad de habilitar y usar esta característica de seguridad.
-ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 49a49bd41e71daf0afc9e7a24e79898ff98ad798
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030148"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212550"
 ---
 <!--06/21/2019-->
 
@@ -35,6 +35,9 @@ Aquí se muestra cómo funciona:
 1. Al iniciar la aplicación Teams, Office 365 se asegurará de que el usuario pertenece a una organización que tiene Office 365 ATP y que el usuario forma parte de una directiva de vínculos seguros activa con la protección habilitada para Microsoft Teams.
 
 2. Si las opciones anteriores son verdaderas, las direcciones URL se validarán en el momento de hacer clic en chats, chats de grupo, canales y en las pestañas para ese usuario.
+
+> [!NOTE]
+> Vínculos seguros protege a los usuarios de los vínculos enviados por los usuarios invitados, los usuarios federados y los usuarios del inquilino. Si el usuario que ha iniciado sesión tiene vínculos seguros habilitados para Microsoft Teams, se aplicarán protecciones de vínculos seguros.
  
 ## <a name="what-will-users-experience"></a>¿Qué van a experimentar los usuarios? 
 

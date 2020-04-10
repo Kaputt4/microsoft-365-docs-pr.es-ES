@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Lync y otros servicios en Google Domains para Office 365.
-ms.openlocfilehash: 5b72753dfdf44fa15cd0dffaa4baf61e843cf532
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f0a9a42127fc5b722679013b899255f77840d670
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349701"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211732"
 ---
 # <a name="create-dns-records-at-google-domains-for-office-365"></a>Crear registros DNS en Google Domains para Office 365
 
@@ -107,7 +107,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![Seleccione eliminar en la sección registros sintéticos](../../media/bd276b5d-5667-4bb1-a233-2dc5194e7ace.png)
   
-6. Seleccione **eliminar**.
+6. Seleccione **Eliminar**.
     
     ![Seleccione eliminar.](../../media/4413a45a-5b82-4ec6-82c6-0091f5be9696.png)
   
@@ -123,7 +123,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![Escribir o pegar valores en la sección registros de recursos personalizados](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
-5. Elija **Agregar**.
+5. Seleccione **Agregar**.
     
     ![Seleccione Agregar](../../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
   
@@ -167,7 +167,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![Escribir o pegar valores en la sección registros de recursos personalizados](../../media/cff9832a-6d57-421f-a183-55320974ed87.png)
   
-4. Elija **Agregar**.
+4. Seleccione **Agregar**.
     
     ![Seleccione Agregar](../../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
   
@@ -214,7 +214,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
    ![Escribir o pegar valores en la sección registros de recursos personalizados](../../media/4645cc4f-9fcc-4626-9674-072ed6fa34c2.png)
   
-7. Haga clic en **Guardar**.
+7. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/20c4c926-f062-4048-9265-bf752be54e0c.png)
   
@@ -246,7 +246,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![Escribir o pegar valores en la sección registros de recursos personalizados](../../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
   
-6. Elija **Agregar**.
+6. Seleccione **Agregar**.
     
     ![Seleccione Agregar](../../media/89df6efd-e641-4441-baa2-d9a890424569.png)
   

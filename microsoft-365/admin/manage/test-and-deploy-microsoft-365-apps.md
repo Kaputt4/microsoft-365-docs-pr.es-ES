@@ -6,23 +6,23 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones de asociados de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal de aplicaciones integradas en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 4cd8c71b521c80f8a3043cf13427132b3ec3e750
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5189eef7524242a87f1797f8856bbd33b9a32a31
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363074"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212274"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Pruebe e implemente las aplicaciones de Microsoft 365 en el centro de administración de Microsoft 365
 
-El centro de administración de 365 de Microsoft proporciona la flexibilidad necesaria para implementar las aplicaciones de Microsoft y Microsoft Partner desde una sola ubicación. La capacidad de buscar, probar e implementar completamente aplicaciones adquiridas y con licencia por parte de Microsoft y los socios de Microsoft desde el portal de aplicaciones integradas proporciona la comodidad y las ventajas que su organización necesita para mantener actualizados los servicios empresariales con regularidad y en ejecución administr.  
+El centro de administración de 365 de Microsoft proporciona la flexibilidad necesaria para implementar las aplicaciones de Microsoft y Microsoft Partner desde una sola ubicación. La capacidad de buscar, probar e implementar completamente aplicaciones adquiridas y con licencia por parte de Microsoft y los socios de Microsoft desde el portal de aplicaciones integradas proporciona la comodidad y las ventajas que su organización necesita para mantener actualizados los servicios empresariales con regularidad y que se ejecutan de manera eficaz.  
 
 Para obtener más información acerca de la compra y concesión de licencias de aplicaciones de Microsoft 365 para su organización, consulte la publicación de blog denominada [Manage and Deploy microsoft 365 Apps en el centro de administración de microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
   

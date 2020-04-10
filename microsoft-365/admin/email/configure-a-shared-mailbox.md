@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Una vez que haya creado un buzón compartido, querrá configurar algunas opciones para sus usuarios, como reenvío de correo electrónico y respuestas automáticas. Más adelante, es posible que desee cambiar otras opciones, como el nombre o los miembros del buzón.
-ms.openlocfilehash: edea829a8578387459afe3ce4889dfa620f95956
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255304"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212026"
 ---
 # <a name="configure-a-shared-mailbox"></a>Configurar un buzón compartido
 
@@ -35,19 +35,19 @@ Una vez que haya [creado un buzón compartido](create-a-shared-mailbox.md), quer
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">buzones compartidos</a> de **grupos** \> .
+1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
@@ -63,19 +63,19 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">buzones compartidos</a> de **grupos** \> .
+1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
@@ -89,19 +89,19 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">buzones compartidos</a> de **grupos** \> .
+1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
@@ -126,19 +126,19 @@ Si desea permitir que todos vean el correo electrónico enviado, en el centro de
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">buzones compartidos</a> de **grupos** \> .
+1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
@@ -155,19 +155,19 @@ Para obtener más información sobre la retención por juicio, consulte [Create 
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">buzones compartidos</a> de **grupos** \> .
+1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
@@ -184,19 +184,19 @@ Para obtener más información sobre la retención por juicio, consulte [Create 
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">buzones compartidos</a> de **grupos** \> .
+1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
@@ -212,19 +212,19 @@ Para obtener más información sobre la retención por juicio, consulte [Create 
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">buzones compartidos</a> de **grupos** \> .
+1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
@@ -244,19 +244,19 @@ Si elige no mostrar el buzón compartido en la lista global de direcciones, el b
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">buzones compartidos</a> de **grupos** \> .
+1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **buzones compartidos** de **grupos** > . 
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
 
 ::: moniker-end
 
@@ -277,6 +277,6 @@ Si elige no mostrar el buzón compartido en la lista global de direcciones, el b
 
 [Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md)
 
-[Quitar una licencia de un buzón compartido](remove-license-from-shared-mailbox.md)
+[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md)
 
 [Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md)

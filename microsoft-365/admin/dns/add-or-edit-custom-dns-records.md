@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
 description: 'Obtenga información sobre cómo editar o agregar un registro DNS personalizado en Office 365. '
-ms.openlocfilehash: 4cdfe98a38dd870dcf5d745438e8d81afa1fc934
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857112"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212526"
 ---
 # <a name="add-or-edit-custom-dns-records-in-office-365"></a>Agregar o editar registros DNS personalizados en Office 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "42857112"
 
 5. Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
@@ -50,6 +50,6 @@ ms.locfileid: "42857112"
 
 [Conceptos básicos de DNS](../get-help-with-domains/dns-basics.md)
 
-[Obtener ayuda con Office 365 dominios](../get-help-with-domains/get-help-with-domains.yml)
+[Obtener ayuda con Office 365 dominios](../get-help-with-domains/get-help-with-domains.md)
 
 

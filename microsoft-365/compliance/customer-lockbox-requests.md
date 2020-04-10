@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de caja del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede tener acceso a los datos cuando se tiene un problema.
-ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: f909d67383c248ab42c469f850de0e42cc41eede
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113567"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211957"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de caja de cliente en Office 365
 
@@ -152,7 +152,7 @@ Cuando una persona de su organización aprueba o deniega una solicitud de caja d
 |:---------- |:----------|
 | Fecha       | La fecha y la hora en que se aprobó o denegó la solicitud de caja de caja del cliente.
 | Dirección IP | La dirección IP del equipo que el aprobador ha usado para aprobar o denegar una solicitud. |
-| User       | La cuenta de servicio\[BOXServiceAccount@\]customerforest. Prod.Outlook.com.            |
+| Usuario       | La cuenta de servicio\[BOXServiceAccount@\]customerforest. Prod.Outlook.com.            |
 | Actividad   | Set-AccessToCustomerDataRequest; se trata de la actividad de auditoría que se registra al aprobar o denegar una solicitud de caja de control del cliente.                                |
 | Item       | El GUID de la solicitud de caja de caja del cliente                             |
 
@@ -171,7 +171,7 @@ Las acciones realizadas por un ingeniero de Microsoft después de que se aprueba
 |:---------- |:----------|
 | Fecha       | Fecha y hora en que se realizó la acción. Tenga en cuenta que la hora en que se realizó esta acción será en un plazo de 4 horas desde el momento en que se aprobó la solicitud de caja de tiempo del cliente.              |
 | Dirección IP | La dirección IP del equipo que utilizó el ingeniero de Microsoft. |
-| User       | Operador de Microsoft; Este valor indica que este registro está relacionado con una solicitud de caja de caja del cliente.                                  |
+| Usuario       | Operador de Microsoft; Este valor indica que este registro está relacionado con una solicitud de caja de caja del cliente.                                  |
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
 | Item       | \<está\>                                             |
 
