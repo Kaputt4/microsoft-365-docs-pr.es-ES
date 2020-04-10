@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 7bbfb85746c114fa277f28a87c04194bd290c1fd
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: a37e1ec6b342e8003427c0e90c2493ffa2952fe4
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163880"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189095"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -57,9 +57,10 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     Vea las instrucciones de configuración en [Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) en esta página.
     
     Específico para el etiquetado automático para SharePoint y OneDrive:
-    - Número máximo de 25 000 archivos (Word, PowerPoint o Excel) en su espacio empresarial por día
-    - Número máximo de 10 colecciones de sitios entre todas las directivas
-    - Número máximo de 10 directivas en su espacio empresarial
+    - Máximo de 25 000 archivos (Word, PowerPoint o Excel) en su espacio empresarial por día
+        - Máximo de 5 archivos por usuario con licencia al día
+    - Máximo de 10 colecciones de sitios entre todas las directivas
+    - Máximo de 10 directivas en su espacio empresarial
 
     Específico para el etiquetado automático para Exchange:
     - A diferencia de las etiquetas manuales o el etiquetado automático con las aplicaciones de Office, los datos adjuntos de Office también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
@@ -242,9 +243,9 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 5. En la página **Cambiar el nombre de la directiva de etiquetado automático**: proporcione un nombre único y, opcionalmente, una descripción que ayude a identificar la etiqueta aplicada automáticamente, las ubicaciones y las condiciones que identifican el contenido que se va a etiquetar.
 
-6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, sitios de SharePoint y OneDrive. Luego seleccione **Siguiente**.
+6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, sitios de SharePoint y OneDrive. Después, seleccione **Siguiente**.
 
-7. Para la página **Definir la configuración de la directiva**: conserve el valor predeterminado de **Buscar contenido que contenga** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Configuración avanzada**. Luego seleccione **Siguiente**.
+7. Para la página **Definir la configuración de la directiva**: conserve el valor predeterminado de **Buscar contenido que contenga** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Configuración avanzada**. Después, seleccione **Siguiente**.
     
     Las reglas usan condiciones que incluyen tipos de información confidencial y opciones de uso compartido:
     - En el caso de los tipos de información confidencial, puede seleccionar tipos de información integrados y personalizados.
