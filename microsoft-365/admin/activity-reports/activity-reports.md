@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe detallado de cómo las personas de su organización están utilizando los servicios de Office 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151434"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204061"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Informes de actividad en el Centro de Administración de Microsoft 365
 
@@ -87,6 +87,7 @@ Para obtener más información, vea[sobre los roles de administrador de](../add-
 Según la suscripción, estos son los informes disponibles.
   
 - [Actividad de correo electrónico](email-activity.md)
+- [Actividad de formularios](forms-activity.md)
     
 - [Uso del buzón](mailbox-usage.md)
     
@@ -101,6 +102,7 @@ Según la suscripción, estos son los informes disponibles.
 - [Actividad de los usuarios de OneDrive para la Empresa](onedrive-for-business-activity.md)
   
 - [Uso de OneDrive para la Empresa](onedrive-for-business-usage.md)
+- [Uso de ProPlus](microsoft365-apps-usage.md)
   
 - [Uso del sitio de SharePoint](sharepoint-site-usage.md)
   
