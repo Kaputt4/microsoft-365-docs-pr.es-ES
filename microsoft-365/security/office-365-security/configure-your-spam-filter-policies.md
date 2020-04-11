@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado.
-ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204105"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216928"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Configuración de directivas contra correo no deseado en Office 365
 
@@ -280,7 +280,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
 3. Haga clic en **Editar directiva**.
 
-Para las directivas de correo no deseado personalizadas, las opciones de configuración disponibles en el control flotante que aparecen son las mismas que las descritas en la sección [Uso del Centro de seguridad y cumplimiento para crear directivas contra correo no deseado](#use-the-security--compliance-center-to-create-anti-spam-policies).
+Las opciones de configuración en el control flotante que aparece son las mismas que las disponibles en la sección [Uso del Centro de seguridad y cumplimiento para crear directivas contra correo no deseado](#use-the-security--compliance-center-to-create-anti-spam-policies).
 
 Para la directiva contra correo no deseado predeterminada denominada **Directiva de filtro de correo no deseado predeterminada**, la sección **Se aplica a** no está disponible (la directiva se aplica a todos los usuarios) y no se puede cambiar el nombre de la directiva.
 
@@ -460,7 +460,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 Para ver reglas de filtro de correo no deseado existentes, use la siguiente sintaxis:
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
 ```
 
 Para obtener una lista de resumen de todas las reglas de filtro de correo no deseado, ejecute este comando:

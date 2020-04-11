@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: Como usuario de Office 365, puede ver, liberar y eliminar los mensajes puestos en cuarentena (mensajes de los que es destinatario y que el filtrado de correo no deseado puso en cuarentena como correo no deseado o correo electrónico masivo). Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y cumplimiento.
-ms.openlocfilehash: 03c7ce474119ae5ff130b987b58d5130d53c33d6
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941410"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216909"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Buscar y liberar mensajes en cuarentena como usuario de Office 365
 
@@ -66,7 +66,7 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
 
    - **Id. de mensaje**
 
-   - **Nombre de la directiva**
+   - **Nombre de directiva**: esta propiedad muestra la directiva que hizo que el mensaje entre en cuarentena. Puede proporcionar esta información a su administrador.
 
    - **Tamaño**
 

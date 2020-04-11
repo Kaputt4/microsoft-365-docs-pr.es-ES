@@ -18,7 +18,7 @@ ms.collection:
 description: ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Office 365? Si cree que no debería recibir este mensaje de error, use el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365.
 ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
 ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/21/2020
 ms.locfileid: "42895088"
@@ -33,11 +33,11 @@ Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes con
 
 Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje de correo que incluya un error similar al siguiente:
 
-> 550 5.7.606-649 acceso denegado, IP de envío prohibido [_dirección IP_]; Para solicitar la eliminación de esta lista, https://sender.office.com/ visite y siga las instrucciones. Para obtener más información, vea [informes de no entrega de correo electrónico en Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 Acceso denegado, prohibido enviar IP [_IP address_]; para solicitar la eliminación de esta lista, visite https://sender.office.com/ y siga las instrucciones. Para más información, consulte [Informes de no entrega de correo electrónico en Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
-_IP address_ es la dirección IP del equipo en el que se ejecuta el servidor de correo.
+donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el servidor de correo.
 
-### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Para usar el portal de eliminación de la lista de Office 365 para quitarse de la lista de remitentes bloqueados
+### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Para usar el portal de eliminación de la lista de Office 365 para quitarse de la lista de remitentes bloqueados 
 
 1. En un explorador web, vaya a [https://sender.office.com](https://sender.office.com).
 
@@ -45,7 +45,7 @@ _IP address_ es la dirección IP del equipo en el que se ejecuta el servidor de 
 
 3. Haga clic en **Enviar**.
 
-    El portal enviará un correo electrónico a la dirección que indique. El correo electrónico tendrá un aspecto similar al siguiente ![: captura de pantalla de correo electrónico recibido cuando envía una solicitud a través del portal de eliminación de la lista](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    El portal enviará un correo electrónico a la dirección que indique. El correo electrónico tendrá un aspecto similar al siguiente: ![Captura de pantalla del correo electrónico que se recibe al enviar una solicitud mediante el portal de eliminación de la lista](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)  
 
 4. Haga clic en el vínculo de confirmación que aparece en el correo electrónico que le ha enviado el portal de eliminación de la lista.
 
@@ -56,6 +56,6 @@ _IP address_ es la dirección IP del equipo en el que se ejecuta el servidor de 
     Después de quitar la dirección IP de la lista de remitentes bloqueados, los mensajes de correo electrónico que procedan de esa dirección IP se entregarán a los destinatarios que usen Office 365. Por lo tanto, asegúrese de que el correo electrónico enviado desde esa dirección IP no es ofensivo ni malintencionado; de lo contrario, es posible que se vuelva a bloquear la dirección IP.
 
     > [!NOTE]
-    > Puede tardar hasta 24 horas o los resultados pueden variar ampliamente antes de que se eliminen las restricciones.
+    > Pueden pasar hasta 24 horas o los resultados pueden variar ampliamente antes de eliminar las restricciones.
 
-Consulte [crear listas de remitentes seguros en office 365](create-safe-sender-lists-in-office-365.md) y la [protección contra correo no deseado saliente en Office 365](outbound-spam-controls.md) para impedir que IP quede en la lista negra.
+Vea [Crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md) y [Protección de correo no deseado saliente en Office 365](outbound-spam-controls.md) para evitar que la IP sea incluida en la lista negra.

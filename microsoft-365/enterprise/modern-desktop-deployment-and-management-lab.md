@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: e0942f88605e1b11cdbc83155ebc43b5fdb1bea1
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081285"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225936"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
@@ -113,7 +113,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y permitir entre 30 y 45 minutos de aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 18 de abril de 2020. Antes de que caduque, se publicará una nueva versión.*
+*Use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y permita entre 30 y 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 5 de julio de 2020. Antes de que caduque, se publicará una nueva versión.*
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 
