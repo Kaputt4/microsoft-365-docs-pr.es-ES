@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática en Office 365, que proporciona almacenamiento ilimitado de archivos para buzones de Exchange Online.
-ms.openlocfilehash: 42318bf2ff102e6197800b2d6cba8b5c9132bcf9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eb7d75e87ac26dcf4f920b4858bc2f23862b0366
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069467"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225969"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Información general sobre el archivado ilimitado en Office 365
 
@@ -43,17 +43,17 @@ A continuación se muestra una introducción rápida del proceso.
 
 ![Información general sobre el proceso de archivado de expansión automática](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
-1. El archivado está habilitado para un buzón de usuario o un buzón compartido. Se crea un buzón de archivo con 100 GB de espacio de almacenamiento y la cuota de advertencia para el buzón de archivo se establece en 90 GB.
+1. El archivado está habilitado para un buzón de usuario o un buzón compartido. Se crea un buzón de archivo con 100 GB de espacio de almacenamiento (también denominado *archivo principal*) y la cuota de advertencia para el buzón de archivo se establece en 90 GB.
 
-2. Un administrador habilita el archivado de expansión automática para el buzón de correo. Cuando el buzón de archivo (incluida la carpeta elementos recuperables) alcanza los 90 GB, se convierte en un archivo de expansión automática y Office 365 agrega espacio de almacenamiento al archivo. El espacio de almacenamiento adicional puede tardar hasta 30 días en aprovisionarse.
+2. Un administrador habilita el archivado de expansión automática para el buzón de correo. Cuando el buzón de archivo (incluida la carpeta elementos recuperables) alcanza los 90 GB, se convierte en un archivo de expansión automática y Office 365 agrega espacio de almacenamiento al archivo. Este almacenamiento de archivo adicional también se conoce como *archivo auxiliar*. El espacio de almacenamiento adicional puede tardar hasta 30 días en aprovisionarse.
 
    > [!NOTE]
    > Si un buzón se coloca en retención o se asigna a una directiva de retención de Office 365, la cuota de almacenamiento para el buzón de archivo aumenta a 110 GB cuando está habilitado el archivado de expansión automática. De forma similar, la cuota de advertencia de archivo aumenta a 100 GB.
 
-3. Office 365 agrega automáticamente más espacio de almacenamiento cuando es necesario.
+3. Office 365 agrega automáticamente más espacio de almacenamiento al archivo auxiliar cuando es necesario.
 
 > [!IMPORTANT]
-> El archivo de expansión automática solo se admite para los buzones de correo que se usan para usuarios individuales (o buzones compartidos) con una tasa de crecimiento que no supera 1 GB por día. El buzón de archivo de un usuario está diseñado exclusivamente para dicho usuario. El uso del registro en diario, las reglas de transporte o las reglas de reenvío automático para copiar mensajes en un buzón de archivo no está permitido. Microsoft se reserva el derecho a denegar el archivado ilimitado en los casos en que el buzón de archivo de un usuario se usa para almacenar datos de archivo para otros usuarios o en otros casos del uso inadecuado.
+> El archivado de expansión automática solo se admite para los buzones de correo que se usan para usuarios individuales (o buzones compartidos) con una tasa de crecimiento que no supera 1 GB por día. El buzón de archivo de un usuario está diseñado exclusivamente para dicho usuario. El uso del registro en diario, las reglas de transporte o las reglas de reenvío automático para copiar mensajes en un buzón de archivo no está permitido. Microsoft se reserva el derecho a denegar el archivado ilimitado en los casos en que el buzón de archivo de un usuario se usa para almacenar datos de archivo para otros usuarios o en otros casos de uso inadecuado.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>¿Qué se mueve al espacio de almacenamiento adicional del archivo?
 
@@ -86,15 +86,15 @@ Para obtener acceso a los mensajes que se almacenan en un archivo de expansión 
 
 - Outlook 2016 o Outlook 2019 para Mac
 
-Estos son algunos aspectos que se deben tener en cuenta al usar Outlook o Outlook en la web para tener acceso a los mensajes almacenados en un archivo de expansión automática.
+Tenga en cuenta lo siguiente al usar Outlook o Outlook en la web para tener acceso a los mensajes almacenados en un archivo de expansión automática.
 
 - Puede tener acceso a cualquier carpeta del buzón de archivo, incluidas las que se han movido al área de almacenamiento expandido automáticamente.
 
 - Puede buscar elementos que se movieron a un área de almacenamiento adicional solo si busca en la propia carpeta. Esto significa que debe seleccionar la carpeta de archivo en la lista de carpetas para seleccionar la opción **carpeta actual** como ámbito de búsqueda. De forma similar, si una carpeta de un área de almacenamiento con expansión automática contiene subcarpetas, deberá buscar cada subcarpeta por separado.
 
-- Los recuentos de elementos en Outlook y los recuentos de leídos o no leídos (en Outlook y Outlook en la web) en un archivo de expansión automática podrían no ser precisos.
+- Puede eliminar los elementos de una subcarpeta que señale a un área de almacenamiento expandida automáticamente, pero no se puede eliminar la carpeta en sí. De hecho, cuando el archivado de expansión automática está habilitado para un buzón de correo, no puede eliminar las carpetas en el archivo principal o en un área de almacenamiento de expansión automática.
 
-- Puede eliminar los elementos de una subcarpeta que señale a un área de almacenamiento expandida automáticamente, pero no se puede eliminar la carpeta en sí.
+- Los recuentos de elementos en Outlook y los recuentos de leídos o no leídos (en Outlook y Outlook en la web) en un archivo de expansión automática podrían no ser precisos.
 
 - No puede usar la característica recuperar elementos eliminados para recuperar un elemento que se eliminó de un área de almacenamiento expandida automáticamente.
 
@@ -102,9 +102,9 @@ Estos son algunos aspectos que se deben tener en cuenta al usar Outlook o Outloo
 
 En esta sección se explica la funcionalidad entre el archivado de expansión automática y otras características del gobierno de datos y cumplimiento de Office 365.
 
-- **eDiscovery:** Cuando usa una herramienta de exhibición de documentos electrónicos de Office 365, como búsqueda de contenido o exhibición de documentos electrónicos local, también se busca en las áreas de almacenamiento adicionales de un archivo de expansión automática.
+- **eDiscovery:** Cuando se usa una herramienta de exhibición de documentos electrónicos de Office 365, como la búsqueda de contenido, la exhibición de documentos electrónicos principal o la exhibición avanzada de documentos electrónicos, también se busca en las áreas de almacenamiento adicionales de un archivo de expansión automática.
 
-- **Retención:** Cuando coloca un buzón de correo en retención mediante el uso de herramientas como retención por juicio en Exchange online o eDiscovery Case retenciones y directivas de retención en el centro de seguridad y cumplimiento, el contenido ubicado en un archivo de expansión automática también se coloca en retención.
+- **Retención:** Cuando coloca un buzón de correo en retención mediante el uso de herramientas como la retención por juicio en Exchange online o eDiscovery y las directivas de retención en el centro de seguridad y cumplimiento, el contenido de un archivo de expansión automática también se coloca en retención.
 
 - **Administración de registros de mensajes (MRM):** Si usa directivas de eliminación de MRM en Exchange Online para eliminar de forma permanente los elementos de buzón de correo expirados, los elementos expirados que se encuentran en el archivo de expansión automática también se eliminarán.
 

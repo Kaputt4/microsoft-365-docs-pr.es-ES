@@ -15,20 +15,38 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Durante y después de una investigación automatizada en Office 365, puede ver los resultados y las conclusiones más importantes.
-ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163915"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225980"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Detalles y resultados de una investigación automatizada en Office 365
 
 Cuando se produce una [investigación automatizada](office-365-air.md) en la [protección contra amenazas avanzada de Office 365](office-365-atp.md), los detalles sobre la investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes. 
 
+## <a name="investigation-status"></a>Estado de la investigación
+
+El estado de la investigación indica el progreso del análisis y las acciones. A medida que se ejecuta la investigación, el estado cambia para indicar si se han encontrado amenazas y si se han aprobado las acciones. 
+
+|Estado  |Qué significa  |
+|---------|---------|
+|Iniciando | La investigación se ha desencadenado y está en espera de comenzar a ejecutarse.  |
+|En funcionamiento | El proceso de investigación se ha iniciado y está en curso. Este estado también se produce cuando se aprueban [las acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) . |
+|No se encontraron amenazas | La investigación ha finalizado y no se han identificado amenazas (cuenta de usuario, mensaje de correo electrónico, URL o archivo). <br/><br/>**Sugerencia**: Si sospecha que se ha perdido algo (como un falso negativo), puede emprender acciones con el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Amenazas encontradas |La investigación automatizada encontró problemas, pero no hay acciones de corrección específicas para resolver estos problemas.<br/><br/> El estado de amenazas encontradas puede producirse cuando se identificó algún tipo de actividad de usuario, pero no hay ninguna acción de limpieza disponible. Algunos ejemplos son las siguientes actividades de usuario: <br/>-Un evento de [prevención de pérdida de datos](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>-Una anomalía del envío de correo electrónico <br/>-Malware enviado <br/>-Se ha enviado phish<br/>La investigación no encontró direcciones URL malintencionadas, archivos ni mensajes de correo electrónico que corregir, y no se ha corregido ninguna actividad de buzón, como desactivar las reglas de reenvío o la delegación. <br/><br/>**Sugerencia**: Si sospecha que se ha perdido algo (como un falso negativo), puede investigar y realizar acciones con el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Finalizado por el sistema | Se detuvo la investigación. Una investigación puede detenerse por varias razones:<br/>-Las acciones pendientes de la investigación han expirado. Se agota el tiempo de espera de las acciones pendientes después de esperar la aprobación durante una semana. <br/>-Hay demasiadas acciones. Por ejemplo, si hay demasiados usuarios haciendo clic en direcciones URL malintencionadas, puede superar la capacidad de la investigación para ejecutar todos los analizadores, de modo que la investigación se detenga. <br/><br/>**Sugerencia**: Si una investigación se detiene antes de que se tomaron las acciones, pruebe a usar el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) para encontrar y solucionar amenazas.  |
+|Acción pendiente | La investigación ha encontrado una amenaza, como un correo electrónico malintencionado, una dirección URL malintencionada o una configuración de buzón de correo arriesgado, y una acción para corregir dicha amenaza está en espera de [aprobación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>El estado de acción pendiente se desencadena cuando se encuentra cualquier amenaza con una acción correspondiente. Sin embargo, la lista de acciones pendientes puede aumentar a medida que se ejecute una investigación. Compruebe el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) para ver si hay otros elementos aún pendientes de finalización. |
+|Corregido | La investigación ha finalizado y todas las acciones se han aprobado (se ha corregido completamente).<br/><br/>**Nota**: las acciones de corrección aprobadas pueden tener errores que impiden que se tomen las acciones. Independientemente de si las acciones de corrección se completan correctamente, el estado de la investigación no cambia. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados. |
+|Parcialmente remediado | La investigación dio como resultado acciones correctivas y algunas fueron aprobadas y completadas. Aún hay otras acciones [pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Failed | Al menos un analizador de investigación tuvo un problema en el que no se pudo completar correctamente. <br/><br/>**Nota**: si se produce un error en una investigación tras la aprobación de acciones de corrección, es posible que las acciones de corrección sigan teniendo éxito. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados. |
+|En cola por limitación | Una investigación se mantiene en una cola. Cuando se completan otras investigaciones, comienzan las investigaciones en cola. La limitación ayuda a evitar un rendimiento deficiente del servicio. <br/><br/>**Sugerencia**: las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de [aprobar (o rechazar) acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
+|Terminado con la limitación | Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <br/><br/>**Sugerencia**: puede [iniciar una investigación desde el explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
+
 ## <a name="view-details-of-an-investigation"></a>Ver los detalles de una investigación
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
+1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
 
 2. Realice una de las acciones siguientes:
 
@@ -50,7 +68,7 @@ Cuando se produce una [investigación automatizada](office-365-air.md) en la [pr
 
 Ciertos tipos de alertas desencadenan la investigación automática en Office 365. Para obtener más información, vea [alertas](automated-investigation-response-office.md#alerts). Use el siguiente procedimiento para ver los detalles de una alerta asociada a una investigación automatizada.
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
+1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión. 
 
 2. Vaya a **Threat management** > **investigaciones**de administración de amenazas.
 
@@ -83,20 +101,6 @@ Puede:
 - Aplicar filtros. Elija entre el **tipo de investigación**, **el intervalo de tiempo**, el **Estado**o una combinación de estos.
 - Exporte los datos a un archivo. csv.
 
-El estado de la investigación indica el progreso del análisis y las acciones. A medida que se ejecuta la investigación, el estado cambia para indicar si se han encontrado amenazas y si se han aprobado las acciones. 
-
-|Estado  |Qué significa  |
-|---------|---------|
-|Iniciando | La investigación se ha desencadenado y está en espera de comenzar a ejecutarse. Éste es el primer paso.  |
-|En funcionamiento | El proceso de investigación se ha iniciado y está en curso. Este estado también se produce cuando se aprueban [las acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) . |
-|No se encontraron amenazas | La investigación ha finalizado y no se han identificado amenazas (cuenta de usuario, mensaje de correo electrónico, URL o archivo). <br/><br/>**Sugerencia**: Si sospecha que se ha perdido algo (como un falso negativo), puede emprender acciones con el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
-|Finalizado por el sistema | Se detuvo la investigación. Esto puede ocurrir por varios motivos. Estas son las dos razones más comunes:<br/>-Las acciones pendientes de la investigación han expirado. Se agota el tiempo de espera de las acciones pendientes después de esperar la aprobación durante una semana. <br/>-Hay demasiadas acciones. Por ejemplo, si hay demasiados usuarios haciendo clic en direcciones URL malintencionadas, puede superar la capacidad de la investigación para ejecutar todos los analizadores, de modo que la investigación se detenga. <br/><br/>**Sugerencia**: Si una investigación se detiene antes de que se tomaron las acciones, pruebe a usar el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) para encontrar y solucionar amenazas.  |
-|Acción pendiente | La investigación ha encontrado una amenaza, como un correo electrónico malintencionado, una dirección URL malintencionada o una configuración de buzón de correo arriesgado, y una acción para corregir dicha amenaza está en espera de [aprobación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>El estado de acción pendiente se desencadena cuando se encuentra una amenaza con una acción correspondiente; sin embargo, tenga en cuenta que es posible que la investigación todavía no se haya completado completamente.  Compruebe el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) para ver si hay otros elementos aún pendientes de finalización. |
-|Corregido | La investigación ha finalizado y todas las acciones se han aprobado (se ha corregido completamente).<br/><br/>**Nota**: las acciones de corrección aprobadas pueden tener errores que impiden que se tomen las acciones. Esto no cambia el estado de la investigación. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados. |
-|Parcialmente remediado | La investigación dio como resultado acciones correctivas y algunas fueron aprobadas y completadas. Aún hay otras acciones [pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
-|Erróneo | Al menos un analizador de investigación tuvo un problema en el que no se pudo completar correctamente. <br/><br/>**Nota**: si se produce un error en una investigación tras la aprobación de acciones de corrección, es posible que las acciones de corrección sigan teniendo éxito. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados. |
-|En cola por limitación | Una investigación se mantiene en una cola. Cuando se completan otras investigaciones, comienzan las investigaciones en cola. Esto ayuda a evitar un rendimiento deficiente del servicio. <br/><br/>**Sugerencia**: las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de [aprobar (o rechazar) acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
-|Terminado con la limitación | Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <br/><br/>**Sugerencia**: puede [iniciar una investigación desde el explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ### <a name="investigation-graph"></a>Gráfico de investigación
 
@@ -112,7 +116,7 @@ Puede:
 
 ### <a name="alert-investigation"></a>Investigación de alertas
 
-En la pestaña **alertas** de una investigación, puede ver las alertas relevantes para la investigación. Los detalles incluyen la alerta que desencadenó la investigación y otras alertas correlacionadas, como el inicio de sesión peligroso, las infracciones de directivas de DLP, etc., que están relacionadas con la investigación. En esta página, un analista de seguridad también puede ver detalles adicionales de alertas individuales.
+En la pestaña **alertas** de una investigación, puede ver las alertas relevantes para la investigación. Los detalles incluyen la alerta que desencadenó la investigación y otras alertas correlacionadas, como el inicio de sesión peligroso, las infracciones de [directivas de DLP](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) , etc., que están relacionadas con la investigación. En esta página, un analista de seguridad también puede ver detalles adicionales de alertas individuales.
 
 ![Página de alertas de AIR](../../media/air-investigationalertspage.png)
 

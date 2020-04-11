@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5aee7c835643fab94cc7e233ea005c3f3a1b921c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1cd620206f559e6870c6706fc0e40f4b7e45bc84
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602807"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225902"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Supervisión y operaciones de escritorio administradas de Microsoft
 
@@ -67,7 +67,7 @@ No todos los cambios afectan igual a los usuarios o requieren acciones. Algunas 
 **Tipo de cambio** | -Actualizaciones de características<br>-Nuevas características o aplicaciones<br>-Características en desuso | Revisiones de cliente para problemas | Revisiones de seguridad
 **Comunicación con la antelación suficiente** | 5 días de antelación para los cambios que requieren acción |    No, estos se incluyen en la versión mensual   | No, estos se incluyen en la versión mensual 
 **Canal de comunicación** | -Centro de mensajes<br>-Alerta de correo electrónico | -Centro de mensajes<br>-Alerta de correo electrónico | -Centro de mensajes<br>-Alerta de correo electrónico
-**Requiere la acción de administrador de inquilinos** | A veces |  Rara vez |    Rara vez 
+**Requiere una acción de administrador global** | A veces |  Rara vez |    Rara vez 
 **Tipo de acción** | Cambiar configuración | Comunicar los cambios a los usuarios | Cambiar la configuración de administración     
 **Requiere pruebas** | Comprobar las aplicaciones empresariales, incluidos los servicios de acceso remoto |  A veces: probar la corrección en relación con los procesos o las personalizaciones. |   De forma muy ocasional 
 **Ejemplos de cambio** | -Actualizaciones de características: portal de administración de ti el envío y revisión de incidencias de soporte simplificado<br>-Nuevas características o aplicaciones: lanzamiento semi-anual de una actualización de características de Windows 10 | Revisiones basadas en errores notificados por los clientes |  
@@ -82,10 +82,10 @@ En el caso de los productos locales, la organización asume toda la responsabili
 Categorías |    Microsoft le | Cliente se
 --- | --- | ---
 Red (proxy, inspección de paquetes, VPN)  | Aconseje y planifique con los clientes para minimizar el riesgo para los usuarios profesionales. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.
-Cuentas de servicio |-Implemente, almacene y administre las credenciales de forma segura.<br> -Comunique el acceso no autorizado o el uso de estas credenciales al equipo de operaciones de seguridad. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-No asignar la Directiva, la autenticación multifactor, el acceso condicional o la implementación de aplicaciones a las cuentas de servicio de escritorio administradas de Microsoft.<br>-No restablecer la contraseña ni usar las credenciales.<br>-Abra una solicitud de soporte de gravedad C a operaciones de escritorio administradas de Microsoft si se observa actividad sospechosa en los registros de auditoría de Intune o Azure, relacionados con estas cuentas de servicio.
+Cuentas de servicio  |-Implemente, almacene y administre las credenciales de forma segura.<br> -Comunique el acceso no autorizado o el uso de estas credenciales al equipo de operaciones de seguridad. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-No asignar la Directiva, la autenticación multifactor, el acceso condicional o la implementación de aplicaciones a las cuentas de servicio de escritorio administradas de Microsoft.<br>-No restablecer la contraseña ni usar las credenciales.<br>-Abra una solicitud de soporte de gravedad C a operaciones de escritorio administradas de Microsoft si se observa actividad sospechosa en los registros de auditoría de Intune o Azure, relacionados con estas cuentas de servicio.
 Grupos de dispositivos | : Implemente y administre la pertenencia de dispositivos en grupos de escritorio administrado por Microsoft.<br>-Use los grupos de Microsoft Managed Desktop para administrar la asignación y la publicación de la configuración y las actualizaciones de los dispositivos. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-No modifique la pertenencia de ningún grupo de escritorio administrado por Microsoft.<br>-Use solo los grupos para asignar certificados corporativos para servicios como VPN, Windows Hello para empresas o cifrado de correo electrónico, o configuración de Perfil de Wi-Fi corporativo.<br>-Donde hay coadministración, excluya explícitamente todos los grupos de escritorio administrados por Microsoft al implementar el cliente de Configuration Manager.
 Directivas |  : Implemente y administre las directivas de escritorio administradas por Microsoft que rigen el estado de configuración de los dispositivos dentro del servicio.<br>-Implementar actualizaciones, en la Directiva o en las ventanas, con grupos de dispositivos de forma incremental.<br> -Excluya explícitamente los grupos de escritorio administrados que no son de Microsoft. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-No edite ni asigne directivas de escritorio administradas por Microsoft a dispositivos o usuarios que no estén administrados por el servicio de escritorio administrado de Microsoft.
-Protección contra amenazas avanzada de Microsoft Defender   | Supervisar e investigar los dispositivos que se encuentran dentro del ámbito del servicio de escritorio administrado por Microsoft. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft hayan evaluado y aconsejado
+Protección contra amenazas avanzada de Microsoft Defender   | Supervisar e investigar los dispositivos que se encuentran dentro del ámbito del servicio de escritorio administrado por Microsoft. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft hayan evaluado y aconsejado
 Microsoft Store para Empresas |  Configurar y mantener el perfil de Windows AutoPilot para el servicio de escritorio administrado por Microsoft. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-No modifique la configuración del perfil Microsoft Managed Desktop Windows AutoPilot o agregue o quite dispositivos asignados.
 Certificados | | -Cree una solicitud de soporte 60 días antes de que expire el certificado, solicitando información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles relevantes que Microsoft debe revisar.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-Actualizar todos los certificados necesarios para configurar los perfiles de certificados, los perfiles de VPN y los perfiles de Wi-Fi.
 
@@ -98,22 +98,22 @@ El equipo de operaciones de escritorio administrado de Microsoft puede realizar 
 
 Hay algunos requisitos:
 
-- El administrador de inquilinos del cliente debe enviar una solicitud de servicio
-- Necesitamos el nombre del equipo para el dispositivo
-- La cuenta de usuario debe estar en Azure AD antes de restablecer
+- El administrador global debe enviar una solicitud de servicio.
+- Incluya el nombre del equipo del dispositivo en la solicitud.
+- La cuenta de usuario debe estar en Azure AD antes de que se reinicie el dispositivo.
 
-El equipo de operaciones de escritorio administrado hará lo siguiente:
+El equipo de operaciones de escritorio administradas hará lo siguiente:
 
 - Buscar el nombre del dispositivo en Intune
 - Enviar el comando de restablecimiento de fábrica al dispositivo
 
 >[!NOTE]
->No quite la cuenta de usuario de Azure AD antes del restablecimiento de fábrica. Si el usuario no está en Azure AD, Intune no puede enviar el comando de restablecimiento de fábrica al dispositivo. 
+>No quite la cuenta de usuario de Azure AD antes de restablecer el dispositivo. Si el usuario no está en Azure AD, Intune no puede enviar el comando de restablecimiento de fábrica al dispositivo. 
 
-El dispositivo se iniciará en OOBE y se volverán a aplicar todas las aplicaciones y configuraciones preinstaladas. El usuario del dispositivo debe proporcionar otra vez la información de configuración inicial. 
+El dispositivo se iniciará en la "experiencia rápida" y se volverán a aplicar todas las aplicaciones y configuraciones preinstaladas. El usuario del dispositivo necesita proporcionar de nuevo la información de configuración inicial. 
 
 Una vez restablecido el dispositivo, puede asignarlo a una persona distinta de la organización. Ninguno de los datos de la empresa o del usuario anterior estarán en el dispositivo. El siguiente usuario pasará por el mismo proceso que la persona anterior hacía con un nuevo dispositivo de escritorio administrado por Microsoft.
 
-BitLocker es un componente clave de la seguridad de datos en este proceso. Con el cifrado de BitLocker en dispositivos de escritorio administrados por Microsoft, los datos de la unidad permanecen seguros incluso después de que se haya aplicado el restablecimiento de fábrica al dispositivo. Los datos que estuvieran en la unidad no estarán disponibles para el siguiente usuario del dispositivo. Para obtener más información, vea información [General de BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
+BitLocker es un componente clave de la seguridad de datos en este proceso. Con el cifrado de BitLocker en dispositivos de escritorio administrados por Microsoft, los datos de la unidad permanecen protegidos incluso después de que el dispositivo como restablecimiento de fábrica. Los datos que estuvieran en la unidad no estarán disponibles para el siguiente usuario del dispositivo. Para obtener más información, vea información [General de BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
 Para obtener más información, consulte [restablecimiento de fábrica de un dispositivo](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 
