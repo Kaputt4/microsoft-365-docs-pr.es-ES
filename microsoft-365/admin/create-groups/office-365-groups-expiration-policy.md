@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las directivas de expiración de grupos de 365 de Office.
-ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212062"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225924"
 ---
 # <a name="office-365-group-expiration-policy"></a>Directiva de expiración de grupo de Office 365
 
@@ -38,7 +38,7 @@ Los administradores pueden especificar un período de expiración y los grupos i
 Los grupos que se están usando activamente se renuevan automáticamente. Cualquiera de las acciones siguientes renovará automáticamente un grupo:
 - SharePoint: ver, editar, descargar, mover, compartir o cargar archivos.
 - Outlook: unirse a un grupo, leer o escribir un mensaje de grupo del grupo y como un mensaje (Outlook en la web).
-- Teams: visitar una channe de teams '.
+- Microsoft Teams: visitar un canal de Teams.
 
 > [!IMPORTANT]
 > Al cambiar la Directiva de expiración, el servicio vuelve a calcular la fecha de caducidad para cada grupo. Siempre comienza a contar desde la fecha en que se creó el grupo y, a continuación, aplica la nueva Directiva de expiración.
