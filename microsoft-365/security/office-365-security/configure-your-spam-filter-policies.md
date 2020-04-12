@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado.
-ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: Los administradores pueden aprender cómo crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online y Exchange Online Protection (EOP).
+ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216928"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43231021"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Configuración de directivas contra correo no deseado en Office 365
 
@@ -495,7 +495,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Uso de PowerShell para modificar directivas de filtro de correo no deseado
 
-Además de los siguientes elementos, las mismas opciones están disponibles al modificar una directiva de filtro de malware en PowerShell como cuando se crea la directiva, como se describe en la sección [Paso 1: Usar PowerShell para crear una directiva de filtro de correo no deseado](#step-1-use-powershell-to-create-a-spam-filter-policy) anteriormente en este tema.
+Además de los siguientes elementos, las mismas opciones están disponibles al modificar una directiva de filtro de correo no deseado en PowerShell como cuando rea la directiva, como se describe en la sección [Paso 1: Usar PowerShell para crear una directiva de filtro de correo no deseado](#step-1-use-powershell-to-create-a-spam-filter-policy) anteriormente en este tema.
 
 - El conmutador _MakeDefault_ que convierte la directiva especificada en la predeterminada (se aplica a todos los usuarios, siempre tiene la prioridad **Mínima** y no se puede eliminar) solo está disponible cuando se modifica una directiva de filtro de correo no deseado en PowerShell.
 
