@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Quarantine in Office 365 contiene mensajes potencialmente peligrosos o no deseados. Los administradores y los usuarios finales pueden acceder a la cuarentena.
-ms.openlocfilehash: a11b4a0d86cfc5f74636d3a9f89cf598320d1ebf
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: d3db036210886f7a4607f477bba2cf9f450ed90c
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42940962"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230947"
 ---
 # <a name="quarantine-in-office-365"></a>Cuarentena en Office 365
 
@@ -31,7 +31,7 @@ Si es un cliente de Office 365 con buzones en Exchange online o un cliente indep
 
 Las directivas antimalware ponen en cuarentena automáticamente un mensaje si se encuentra *algún* archivo adjunto que contenga malware. Para obtener más información, vea [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
-De forma predeterminada, las directivas contra correo no deseado ponen en cuarentena los mensajes de suplantación de identidad y envían mensajes de correo no deseado y masivo a la carpeta de correo no deseado del usuario. Pero también puede crear y personalizar directivas contra correo no deseado para poner en cuarentena el correo no deseado y los mensajes de correo electrónico masivo. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
+De forma predeterminada, las directivas contra correo no deseado ponen en cuarentena los mensajes de phishing y entregan correo no deseado y mensajes de correo masivo en la carpeta de correo no deseado del usuario. Pero también puede crear y personalizar directivas contra correo no deseado para poner en cuarentena el correo no deseado y los mensajes de correo electrónico masivo. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
 Los usuarios y los administradores pueden trabajar con los mensajes en cuarentena:
 

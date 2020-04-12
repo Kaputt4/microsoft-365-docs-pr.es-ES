@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 86aa69b813641654a0f4b5e2b4049358aeace4df
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: a1a78afe7480ed9f68f8cd893c00876872317785
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193487"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230985"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
@@ -116,7 +116,7 @@ Una vez que haya revisado (o editado) la directiva predeterminada de vínculos s
 6. Elija **Guardar**.
 
 > [!NOTE]
-> Las directivas de vínculos seguros de ATP con prioridad más alta tendrán prioridad. Si un usuario está sujeto a dos o más directivas, sólo tendrá efecto la Directiva de mayor prioridad.
+> Las directivas de vínculos seguros de ATP con prioridad más alta tendrán prioridad. Si un usuario está sujeto a dos o más directivas, sólo se aplicará la Directiva de mayor prioridad.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Paso 4: información sobre las opciones de directiva de vínculos seguros de ATP
 

@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: c5001823979c19ec68cd15a10bf7c2d7e54cae1d
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 860e733bda8f16eff8e36e42055c7ea7fa88e343
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637323"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230973"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
 
@@ -83,7 +83,7 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
 
 6. Elija **Guardar**.
 
-Considere la posibilidad de configurar varias directivas de datos adjuntos seguros de ATP para su organización. Estas directivas se aplicarán en el orden en que aparezcan en la página de **datos adjuntos seguros de ATP** . Una vez definida o modificada una directiva, permita al menos 30 minutos para que las directivas entren en vigor en los centros de recursos de Microsoft.
+Considere la posibilidad de configurar varias directivas de datos adjuntos seguros de ATP para su organización. Estas directivas se aplicarán en el orden en que aparezcan en la página de **datos adjuntos seguros de ATP** . Una vez que se ha definido o editado una directiva, permita al menos 30 minutos para que las directivas surtan efecto en los centros de recursos de Microsoft.
 
 ## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Paso 3: información sobre las opciones de directiva de datos adjuntos seguros de ATP
 

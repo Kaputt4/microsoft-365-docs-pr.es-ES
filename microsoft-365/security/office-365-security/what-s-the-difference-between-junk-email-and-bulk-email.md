@@ -16,12 +16,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: En este tema se explica la diferencia entre correo electrónico no deseado y correo electrónico masivo, así como los controles relacionados en Office 365.
-ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033631"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230961"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
 
@@ -41,7 +41,7 @@ Office 365 clientes con buzones en Exchange online o independiente Exchange Onli
 
 Debido a la reacción mixta del correo electrónico masivo, no hay ninguna orientación universal que se aplique a todas las organizaciones.
 
-Las directivas contra el correo no deseado tienen un umbral de BCL predeterminado que se usa para identificar correo masivo como correo no deseado. Los administradores pueden aumentar o disminuir el umbral. Para obtener más información, vea los siguientes temas:
+Las directivas contra correo no deseado tienen un umbral de BCL predeterminado que se usa para identificar el correo electrónico masivo como correo no deseado. Los administradores pueden aumentar o disminuir el umbral. Para obtener más información, vea los siguientes temas:
 
 - [Configure directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
 
