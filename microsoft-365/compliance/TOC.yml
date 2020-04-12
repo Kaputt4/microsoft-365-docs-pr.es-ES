@@ -830,6 +830,8 @@
       items:
         - name: Seguridad y cumplimiento de servicios financieros
           href: ../solutions/financial-services-secure-collaboration.md
+        - name: Seguridad y cumplimiento de los servicios de energía
+          href: ../solutions/energy-secure-collaboration.md
 - name: Planes de acción de cumplimiento de normativas
   items:
     - name: Administrador de cumplimiento (Clásico)
