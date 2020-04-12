@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222052"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225913"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -27,7 +27,7 @@ ms.locfileid: "42222052"
 
 Cada vez más, las empresas subcontratan funciones básicas como el almacenamiento de datos y el acceso a las aplicaciones de proveedores de servicios en la nube (CSP) y otras organizaciones de servicio. Como respuesta, el American Institute of Certified Public Accountants (AICPA) ha desarrollado el marco de Controles para la Organización de Servicios (SOC), un estándar para controles que protege la confidencialidad y la privacidad de la información almacenada y procesada en la nube. Este marco está en sintonía con el Estándar Internacional sobre Contrataciones de Seguros (ISAE), el estándar de informes para organizaciones de servicios internacionales.
 
-Las auditorías de servicio basadas en el marco SOC se dividen en dos categorías: SOC 1 y SOC 2, que se aplican a servicios en ámbito en la nube de Microsoft.
+Las auditorías de servicio basadas en el marco SOC se dividen en las categorías SOC 1 y SOC 2, que se aplican en el ámbito de servicios en la nube de Microsoft.
 
 Las auditorías de los SOC 1, concebidas para empresas CPA que auditan declaraciones financieras, evalúan la efectividad de los controles internos del CSP que afectan a los informes financieros de un cliente mediante los servicios en la nube del proveedor. La Declaración de Estándares para Compromisos de Atestación (SSAE 18) y los Estándares Internacionales para Compromisos de Seguridad n.º 3402 (ISAE 3402) son las normas con las que se lleva a cabo la auditoria y la base del informe de los SOC 1.
 
@@ -115,7 +115,7 @@ Con los informes, sus auditores pueden comparar los resultados de los servicios 
 
 **¿Con qué frecuencia se publican los informes de los SOC para Azure?**
 
-Los informes de SOC para Azure, la seguridad de aplicaciones en la nube, el flujo, Graph, Intune, Power BI, PowerApps, Stream y centros de datos de Microsoft se basan en una ventana de ejecución en 12 meses (período de auditoría) con nuevos informes emitidos por semestre (los finales de periodo son 31 de marzo y 30 de septiembre). Las cartas de puente se emiten en enero para cubrir el período de 10/1 – 12/31 y de julio para cubrir el período de 4/1 – 6/30. Los clientes pueden [descargar](https://aka.ms/stp) los informes más recientes del Portal de Confianza del Servicio.
+Los informes de SOC para Azure, la seguridad de aplicaciones en la nube, el flujo, Graph, Intune, Power BI, PowerApps, Stream y centros de datos de Microsoft se basan en una ventana de ejecución en 12 meses (período de auditoría) con nuevos informes emitidos por semestre (los finales de periodo son 31 de marzo y 30 de septiembre). Las cartas puente se emiten cada trimestre, normalmente en la primera semana de cada mes posterior al final del trimestre. Los clientes pueden [descargar](https://aka.ms/stp) los informes más recientes del Portal de Confianza del Servicio.
 
 **¿Necesito llevar a cabo mi propia auditoria de centros de datos de Microsoft?**
 
@@ -127,11 +127,11 @@ Sí. Al migrar las aplicaciones y los datos a los servicios en la nube de Micros
 
 **¿Cómo puedo empezar con los esfuerzos de cumplimiento normativo de mi organización?**
 
-El [kit de herramientas de SOC para empresas de servicio](https://aka.ms/soc-toolkit) es un recurso útil para comprender los procesos de informes de los SOC y fomentar el uso de los mismos por parte de su organización.
+El [kit de herramientas de SOC para empresas de servicio](https://aka.ms/soc-toolkit) es un recurso útil para comprender los procesos de informes de SOC y fomentar el uso de los mismos por parte de su organización.
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
 
-[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), seleccione la [plantilla preconfigurada SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) y la [plantilla SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) en el menú desplegable **plantilla** para ayudar a su organización a cumplir los requisitos de esta regla.
+La [Puntuación de cumplimiento de Microsoft](compliance-score.md) es una característica en versión preliminar en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), seleccione la [plantilla preconfigurada SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) y la [plantilla SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) en el menú desplegable **plantilla** para ayudar a su organización a cumplir los requisitos de esta regla.
 
 ## <a name="resources"></a>Recursos
 
