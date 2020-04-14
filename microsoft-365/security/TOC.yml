@@ -199,8 +199,10 @@
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: Nuevo Centro de seguridad de Microsoft 365
               href: ./mtp/overview-security-center.md
-            - name: Permisos en el Centro de seguridad y cumplimiento
+            - name: Permisos en el Centro de seguridad y cumplimiento de Office 365
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
+            - name: Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365
+              href: ./office-365-security/permissions-microsoft-365-compliance-security.md
             - name: Dar a los usuarios acceso al centro de seguridad
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
         - name: Protección contra amenazas
