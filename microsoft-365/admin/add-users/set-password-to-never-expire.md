@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Obtenga información sobre cómo establecer contraseñas de usuario individuales para que no expiren nunca, mediante Windows PowerShell.
-ms.openlocfilehash: 275fedf7bf4e52320b769689516ad39a31c63ea1
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 04fb2b0c17f695c41df2f8b1277c7918054ae9fe
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105740"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240240"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual que nunca caduque
 
@@ -38,14 +38,19 @@ ms.locfileid: "43105740"
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>Establecer la Directiva de expiración de contraseña para usuarios individuales
 
-Un administrador global de un servicio de nube de Microsoft puede usar el módulo Microsoft Azure AD para Windows PowerShell para establecer contraseñas que no expirarán para determinados usuarios. También puede usar los cmdlets de Windows PowerShell para quitar la configuración Never-Expires o para ver las contraseñas de usuario que están configuradas para que no expiren nunca.
+Un administrador global de un servicio de nube de Microsoft puede usar Azure Active Directory PowerShell para Graph para establecer que las contraseñas no expiren para determinados usuarios. También puede usar cmdlets de AzureAD para quitar la configuración nunca expirada o para ver las contraseñas de usuario que están configuradas para que no expiren nunca.
 
 Esta guía se aplica a otros proveedores, como Intune y Office 365, que también dependen de Azure AD para los servicios de identidad y directorio. La expiración de la contraseña es la única parte de la Directiva que se puede cambiar.
+
+Para obtener más información acerca de Azure AD PowerShell para Graph, consulte [Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
 > [!NOTE]
 > Solo se pueden configurar para que no expiren las contraseñas de las cuentas de usuario que no se sincronizan mediante la sincronización de directorios. Para obtener más información acerca de la sincronización de directorios, consulte [conectar ad con Azure ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
 ### <a name="how-to-check-the-expiration-policy-for-a-password"></a>Cómo comprobar la Directiva de expiración de una contraseña
+
+Para obtener más información sobre el comando Get-AzureADUser en el módulo AzureAD, vea el artículo de referencia [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
+
 Ejecute uno de los siguientes comandos:
 
 - Para ver si la contraseña de un solo usuario está configurada para que no expire nunca, ejecute el siguiente cmdlet mediante el UPN (por ejemplo, *user@contoso.onmicrosoft.com*) o el identificador de usuario del usuario que desea comprobar:

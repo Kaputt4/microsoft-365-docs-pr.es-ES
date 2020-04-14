@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: aa3a08961ccad92c9986db16c1d8180d9b0cd17e
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894310"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240294"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -213,12 +213,12 @@ Nueve letras y dígitos:
 - Dos dígitos 
 - Cinco dígitos o letras (no distinguen entre mayúsculas y minúsculas)
 
-O BIEN
+O
 
 - 1 o 2 letras opcionales (no distingue entre mayúsculas y minúsculas)  
 - 4-9 dígitos
 
-O BIEN
+O
 
 - Nueve dígitos o letras (no distingue entre mayúsculas y minúsculas)
 
@@ -1087,7 +1087,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Identiteit
 - Registratie
 - Identificatie 
-- Carte d’identité 
+- Carta d'identité 
 - numéro d'immatriculation
 - numéro d'identification
 - identité 
@@ -2104,7 +2104,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - expiration date
 - exp date
 - expiry date
-- date d’expiration
+- fecha d'expiration
 - date d'exp
 - date expiration
 - bank card
@@ -2306,7 +2306,7 @@ Nueve dígitos con barra diagonal (formato antiguo) 10 dígitos con barra diagon
 Nueve dígitos (formato antiguo):
 - Nueve dígitos
 
-O BIEN
+O
 
 - Seis dígitos que representan la fecha de nacimiento
 - Una barra diagonal 
@@ -2315,7 +2315,7 @@ O BIEN
 10 dígitos (nuevo formato):
 - 10 dígitos
 
-O BIEN
+O
 
 - Seis dígitos que representan la fecha de nacimiento
 - Una barra diagonal  
@@ -2421,7 +2421,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-Ninguno
+None
 
    
 ## <a name="eu-debit-card-number"></a>Tarjeta de débito de la UE
@@ -2838,12 +2838,32 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="finland-passport-number"></a>Número de pasaporte de Finlandia
 
-Combinación de formato de nueve letras y dígitos de la combinación de los patrones de nueve letras y dígitos: dos letras (no distingue entre mayúsculas y minúsculas) siete dígitos de suma de comprobación no Definition una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en un proximidad de 300 caracteres: la expresión regular Regex_finland_passport_number encuentra contenido que coincide con el patrón.
-Se encuentra una palabra clave de Keyword_finland_passport_number.
+### <a name="format"></a>Formato
+Combinación de nueve letras y dígitos
+
+### <a name="pattern"></a>Pattern
+Combinación de nueve letras y dígitos: dos letras (no distingue entre mayúsculas y minúsculas), siete dígitos
+
+### <a name="checksum"></a>Suma de comprobación
+No
+
+### <a name="definition"></a>Definición
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular Regex_finland_passport_number encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de Keyword_finland_passport_number.
 <!-- Finland Passport Number -->
-<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+```xml
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_finland_passport_number"/>
+     <Match idRef="Keyword_finland_passport_number"/>
+  </Pattern>
 </Entity>
-Palabras clave Keyword_finland_passport_number Passi de Passport
+```
+### <a name="keywords"></a>Palabras clave
+- Keyword_finland_passport_number
+- Usuarios
+- Passi
    
 ## <a name="france-drivers-license-number"></a>Número de licencia de conductor de Francia
 
@@ -2924,7 +2944,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-Ninguno
+None
    
 ## <a name="france-passport-number"></a>Número de pasaporte de Francia
 
@@ -3641,7 +3661,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-Ninguno
+None
 
    
 ## <a name="ip-address"></a>dirección IP
@@ -4997,7 +5017,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-Ninguno
+None
 
 ## <a name="sql-server-connection-string"></a>Cadena de conexión de SQL Server
 
@@ -5677,7 +5697,7 @@ Dos patrones posibles:
 - Seis dígitos
 - ' A ', ' B ', ' C ' o ' t ' (como el prefijo, solo se permiten determinados caracteres en el sufijo; no distingue entre mayúsculas y minúsculas)
 
-O BIEN
+O
 
 - Dos letras
 - Un espacio o un guion

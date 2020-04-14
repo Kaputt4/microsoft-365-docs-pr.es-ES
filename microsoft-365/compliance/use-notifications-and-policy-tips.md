@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 7d54c035d9bb7c9ecc5a543fb8f37749bf9437e7
+ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409585"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43284275"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -32,7 +32,7 @@ Puede usar una directiva de prevención de pérdida de datos (DLP) para identifi
   
 ![La barra de mensajes muestra sugerencia de directiva en Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
-Una sugerencia de directiva es una notificación o advertencia que aparece cuando un usuario trabaja con contenido que entra en conflicto con una directiva DLP, por ejemplo, contenido como un libro de Excel en un sitio de OneDrive para la empresa que contiene información de identificación personal (PII) y es compartido con un usuario externo.
+Una sugerencia de directiva es una notificación o advertencia que aparece cuando un usuario trabaja con contenido que entra en conflicto con una directiva DLP, por ejemplo, contenido como un libro de Excel en un sitio de OneDrive para la empresa que contiene información de identificación personal (PII) y se comparte con un usuario externo.
   
 Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo.
   
@@ -44,19 +44,19 @@ En el centro de seguridad &amp; y cumplimiento de Office 365, al crear una direc
     
   - Para el correo electrónico en Outlook en la web y Outlook 2013 y versiones posteriores, la sugerencia de directiva aparece en la parte superior de un mensaje encima de los destinatarios mientras se redacta el mensaje.
     
-  - Para los documentos de una cuenta de OneDrive para la empresa o un sitio de SharePoint Online, la sugerencia de Directiva se indica mediante un icono de advertencia que aparece en el elemento. Para ver más información, puede seleccionar un elemento y, a continuación **** ![, elegir el icono](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del panel de información de información en la esquina superior derecha de la página para abrir el panel de detalles. 
+  - Para los documentos de una cuenta de OneDrive para la empresa o un sitio de SharePoint Online, la sugerencia de Directiva se indica mediante un icono de advertencia que aparece en el elemento. Para ver más información, puede seleccionar un elemento y, a continuación **Information** ![, elegir el icono](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del panel de información de información en la esquina superior derecha de la página para abrir el panel de detalles. 
     
-  - Para los documentos de Excel, PowerPoint y Word que se almacenan en un sitio de OneDrive para la empresa o un sitio de SharePoint Online que se incluye en la Directiva DLP, la sugerencia de directiva aparece en la barra **** de mensajes \> y en la vista Backstage ( **información**del menú Archivo).
+  - Para los documentos de Excel, PowerPoint y Word que se almacenan en un sitio de OneDrive para la empresa o un sitio de SharePoint Online que se incluye en la Directiva DLP, la sugerencia de directiva aparece en la barra **File** de mensajes \> y en la vista Backstage ( **información**del menú Archivo).
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Agregar notificaciones de usuario a una directiva DLP
 
-Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. Cuando se habilita, Microsoft 365 envía notificaciones de correo electrónico y sugerencias de directiva. Puede personalizar quién se envían los correos electrónicos de notificación, el texto de correo electrónico y el texto de la sugerencia de directiva.
+Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. Cuando se habilitan las notificaciones de usuario, Microsoft 365 envía notificaciones de correo electrónico y sugerencias de directivas. Puede personalizar quién se envían los correos electrónicos de notificación, el texto de correo electrónico y el texto de la sugerencia de directiva.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa. Ahora está en el centro de seguridad &amp; y cumplimiento de Office 365.
     
-3. En la directiva &amp; \> \> **** \> **** **** de prevención de pérdida de datos de navegación del centro de cumplimiento de seguridad izquierdo + crear una directiva. \>
+3. En la directiva &amp; \> \> **Data loss prevention** \> **Policy** **+ Create a policy**de prevención de pérdida de datos de navegación del centro de cumplimiento de seguridad izquierdo + crear una directiva. \>
     
     ![Botón crear una directiva](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
@@ -68,13 +68,13 @@ Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. C
     
 6. Para elegir las ubicaciones que desea que proteja la Directiva DLP, realice una de las siguientes acciones:
     
-  - Elija **todas las ubicaciones en Office 365** \> **siguiente**.
+   - Elija **todas las ubicaciones en Office 365** \> **siguiente**.
     
-  - Elija **permitirme elegir ubicaciones** \> específicas a **continuación**.
+   - Elija **permitirme elegir ubicaciones** \> específicas a **continuación**.
     
-    Para incluir o excluir una ubicación completa, como todos los correos electrónicos de Exchange o todas las cuentas de OneDrive, cambie el **Estado** de dicha ubicación a activado o desactivado. 
+   Para incluir o excluir una ubicación completa, como todos los correos electrónicos de Exchange o todas las cuentas de OneDrive, cambie el **Estado** de dicha ubicación a activado o desactivado. 
     
-    Para incluir solo sitios de SharePoint específicos o cuentas de OneDrive, cambie el **Estado** a activado y, a continuación, haga clic en los vínculos de **incluir** para elegir sitios o cuentas específicos. 
+   Para incluir solo sitios de SharePoint específicos o cuentas de OneDrive, cambie el **Estado** a activado y, a continuación, haga clic en los vínculos de **incluir** para elegir sitios o cuentas específicos. 
     
 7. Elija **Usar configuración** \> avanzada a **continuación**.
     
@@ -166,7 +166,7 @@ Cuando un documento de un sitio de OneDrive para la empresa o un sitio de ShareP
     
 2. Si la regla bloquea el acceso al documento, aparece el icono de bloqueado.
     
-![Iconos de sugerencia de directiva en los documentos de una cuenta de OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+   ![Iconos de sugerencia de directiva en los documentos de una cuenta de OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
 Para realizar una acción en un documento, puede seleccionar un elemento \> elegir el icono](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del panel de información de **información** ![en la esquina superior derecha de la página para abrir \> el panel de detalles **ver la sugerencia de directiva**.
   

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Obtenga información sobre cómo agregar y quitar licencias de la suscripción de Office 365 para empresas.
-ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142180"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240293"
 ---
 # <a name="manage-subscription-licenses"></a>Administrar las licencias de suscripción
 
@@ -38,9 +38,9 @@ Puede Agregar o quitar licencias de sus suscripciones mediante estos pasos.
 
 No puede quitar una licencia de una suscripción si está asignada a un usuario. Si desea quitar una licencia que está actualmente asignada a alguien, tendrá que [quitar las licencias de los usuarios](../../admin/manage/remove-licenses-from-users.md) antes de que pueda quitar la licencia de la suscripción.
 
-::: moniker range="o365-worldwide"
+## <a name="add-or-remove-licenses-for-your-business-subscription"></a>Agregar o quitar licencias de la suscripción empresarial
 
-## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Lo que debe saber sobre la compra de licencias para su suscripción de empresa
+::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 
