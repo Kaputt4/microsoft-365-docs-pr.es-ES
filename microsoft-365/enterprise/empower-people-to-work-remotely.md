@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Configure la infraestructura y la seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: 3932c293ca6be8ba4397b27591acfc3f7d024e1a
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053112"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504128"
 ---
 # <a name="empower-remote-workers"></a>Aumente la productividad de sus trabajadores remotos
 
@@ -99,10 +99,10 @@ Esta es la configuración resultante con los elementos de identidad resaltados.
 
 ![Elementos de identidad para trabajadores remotos](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-Para la [Fase 3: Windows 10 Enterprise](windows10-infrastructure.md) implemente lo siguiente:
+Para la [Fase 3: Windows 10 Enterprise](windows10-infrastructure.md):
 
-- La infraestructura necesaria para implementar Windows 10 Enterprise en nuevos dispositivos y actualizar sus dispositivos con Windows 7 y Windows 8,1 Enterprise a Windows 10
-- Habilitar características de seguridad integrales para la protección contra amenazas y de identidades e información
+- Implementar la infraestructura necesaria para implementar Windows 10 Enterprise en nuevos dispositivos y actualizar sus dispositivos con Windows 7 y Windows 8,1 a Windows 10 Enterprise
+- Habilitar características de seguridad integrales para la protección de identidad, contra amenazas y de información
 
 Esta es la configuración resultante en los dispositivos con Windows 10 Enterprise.
 
@@ -207,7 +207,13 @@ Volver a dar formación a los usuarios que lo necesiten.
 
 Los trabajadores remotos pueden usar sus  dispositivos con Windows 10 Enterprise u otros y Office 365 ProPlus para acceder a (y trabajar en) los recursos compartidos en la nube de Microsoft 365 Enterprise en un entorno seguro, y reunirse, crear y colaborar en tiempo real.
 
-## <a name="see-also"></a>Vea también
+## <a name="additional-microsoft-features-to-support-remote-workers"></a>Características adicionales de Microsoft para proporcionar soporte técnico a trabajadores remotos
+
+Puede usar [conexiones VPN de punto a sitio de Azure](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about) para conectar trabajadores remotos a servidores que se ejecuten en una red virtual de Azure.
+
+Puede usar el [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) para la virtualización del escritorio y de aplicaciones hospedadas en Azure.
+
+## <a name="see-also"></a>Consulta también
 
 [Cargas de trabajo y escenarios](deploy-workloads.md)
 
