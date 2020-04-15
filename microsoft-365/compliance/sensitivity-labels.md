@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de confidencial del marco de Microsoft Information Protection para clasificar y proteger los datos de la organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se vean obstaculizadas. Estas etiquetas pueden aplicar la configuración de protección, que incluye marcadores visuales de cifrado como pies de página y marcas de agua.
-ms.openlocfilehash: a67d71c16f93cf8872646c5bbeb072f8b5f07935
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 27accc57bce0b5597836e7683cf5b28d0fa9b942
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106158"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240315"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -48,8 +48,6 @@ Puede usar etiquetas de confidencialidad para:
 - **Aplicar opciones de protección como encriptación o marcas de agua en el contenido etiquetado.** Por ejemplo, los usuarios pueden aplicar una etiqueta Confidencial a un documento o correo electrónico, y esa etiqueta puede encriptar el contenido y aplicar una marca de agua Confidencial.
 
 - **Proteger el contenido de las aplicaciones de Office en distintos dispositivos y plataformas.** Para obtener una lista de aplicaciones compatibles, vea [Uso de etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md).
-
-- **Evitar que el contenido confidencial salga de su organización en dispositivos con Windows ** utilizando Endpoint Protection de Microsoft Intune. Después de aplicar una etiqueta de confidencialidad a un contenido que se encuentra en un dispositivo Windows, Endpoint Protection puede impedir que el contenido se copie en una aplicación de terceros, como Twitter o Gmail, o en un almacenamiento extraíble, como una unidad USB.
 
 - ** Proteger el contenido en los servicios y aplicaciones de terceros ** con Microsoft Cloud App Security Con Cloud App Security, puede detectar, clasificar, etiquetar y proteger el contenido en los servicios y aplicaciones de terceros, como SalesForce, Box o Dropbox, incluso si la aplicación o servicio de terceros no puede leer o no tiene compatibilidad con etiquetas de confidencialidad.
 
@@ -98,9 +96,6 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     Longitudes de cadena: las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
-- **Evitar la pérdida de datos** activando la opción Endpoint Protection de Intune. Si se descarga contenido confidencial, puede ayudar a evitar la pérdida de datos en los dispositivos Windows. Por ejemplo, no se puede copiar contenido etiquetado en Dropbox, Gmail o en una unidad USB. Antes de que las etiquetas de confidencialidad puedan usar Windows Information Protection (WIP), primero necesita crear una directiva de protección de aplicaciones en el portal de Azure. 
-    
-    Para obtener más información sobre la configuración de **prevención de pérdida de datos del extremo** al crear o editar una etiqueta de confidencialidad, incluidos los requisitos previos importantes, vea [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
 - **Proteja el contenido de los contenedores como sitios y grupos** cuando opta por la versión preliminar para [usar etiquetas de confidencial con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md).
     
@@ -128,7 +123,7 @@ Con las subetiquetas, puede agrupar una o varias etiquetas bajo una etiqueta pri
 
 Las subetiquetas son simplemente una forma de presentar etiquetas a los usuarios en grupos lógicos. Las subetiquetas no heredan ninguna configuración de su etiqueta principal. Cuando publique una subetiqueta para un usuario, éste podrá aplicar dicha subetiqueta al contenido, pero no podrá aplicar solo la etiqueta principal.
 
-No elija una etiqueta principal como etiqueta predeterminada ni configure una etiqueta principal para que se aplique automáticamente o se recomiende, ya que la etiqueta principal no se aplicará al contenido de las aplicaciones de Office que usan el cliente de etiquetado unificado de Azure Information Protection.
+No elija una etiqueta principal como predeterminada o configure una etiqueta principal para que se aplique automáticamente (o se recomiende). Si lo hace, la etiqueta principal no se aplicará al contenido.
 
 Ejemplo de cómo se muestran las subetiquetas para los usuarios:
 

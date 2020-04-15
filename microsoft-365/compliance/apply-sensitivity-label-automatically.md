@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 0558709c729a0ca941124ac3e72762f4b973432d
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+ms.openlocfilehash: 4ce9e06bb98fb391bb9eb5ffa01491e0c85eba1f
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216891"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240305"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -95,7 +95,11 @@ Las etiquetas se ordenan para su evaluación según la posición que especifique
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>No configure una etiqueta principal para que se aplique o recomiende automáticamente
 
-Recuerde, no se puede aplicar una etiqueta principal (una etiqueta con subetiquetas) al contenido. Asegúrese de no configurar una etiqueta principal para que se aplique o recomiende automáticamente, ya que la etiqueta principal no se aplicará al contenido en las aplicaciones de Office que usan el cliente de etiquetado unificado de Azure Information Protection. Para obtener más información sobre las etiquetas principales y las subetiquetas, consulte [Subetiquetas (agrupación de etiquetas)](sensitivity-labels.md#sublabels-grouping-labels).
+Recuerde, no se puede aplicar una etiqueta principal (una etiqueta con subetiquetas) al contenido. Asegúrese de que no configura una etiqueta principal para que se aplique automáticamente o se recomiende en las aplicaciones de Office y no seleccione una etiqueta principal para una directiva de etiquetado automático. Si lo hace, la etiqueta principal no se aplicará al contenido.
+
+Para usar el etiquetado automático con subetiquetas, asegúrese de que publica la etiqueta principal y la subetiqueta.
+
+Para obtener más información sobre las etiquetas principales y las subetiquetas, consulte [Subetiquetas (agrupación de etiquetas)](sensitivity-labels.md#sublabels-grouping-labels).
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Cómo configurar el etiquetado automático para las aplicaciones de Office
 
@@ -243,9 +247,9 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 5. En la página **Cambiar el nombre de la directiva de etiquetado automático**: proporcione un nombre único y, opcionalmente, una descripción que ayude a identificar la etiqueta aplicada automáticamente, las ubicaciones y las condiciones que identifican el contenido que se va a etiquetar.
 
-6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, sitios de SharePoint y OneDrive. Luego seleccione **Siguiente**.
+6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, sitios de SharePoint y OneDrive. Después, seleccione **Siguiente**.
 
-7. Para la página **Definir la configuración de la directiva**: conserve el valor predeterminado de **Buscar contenido que contenga** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Configuración avanzada**. Luego seleccione **Siguiente**.
+7. Para la página **Definir la configuración de la directiva**: conserve el valor predeterminado de **Buscar contenido que contenga** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Configuración avanzada**. Después, seleccione **Siguiente**.
     
     Las reglas usan condiciones que incluyen tipos de información confidencial y opciones de uso compartido:
     - En el caso de los tipos de información confidencial, puede seleccionar tipos de información integrados y personalizados.

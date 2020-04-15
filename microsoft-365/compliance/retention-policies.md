@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: ffbc8026b8a0b1f85916c7697625bfa0935e275f
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
+ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189052"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237647"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -301,7 +301,7 @@ Puede usar una directiva de retención para retener chats y mensajes de canales 
 Las directivas de retención que se aplican a los buzones de usuario o grupo de las ubicaciones de grupos de Exchange u Office 365 no afectan a los mensajes de canal y canales de Teams. A pesar de que los chat de Teams y los mensajes de canal se almacenan en Exchange, solo se verán afectados por una directiva de retención que se aplique a la ubicación de Teams.
 
 > [!NOTE]
-> Si un usuario está incluido en una directiva de retención activa que conserva los datos de Teams, no se permite eliminar un buzón de este usuario, ya que es necesario mantener el almacenamiento de los datos. Para eliminar un buzón de este tipo de usuario, el administrador debe, primero, excluir al usuario de la directiva de retención.
+> Si un usuario está incluido en una directiva de retención activa que conserva los datos de Teams y elimina un buzón de un usuario incluido en esta directiva, para conservar los datos, el buzón se convierte en un [buzón inactivo](inactive-mailboxes-in-office-365.md). Si no necesita conservar estos datos para el usuario, excluya al usuario de la directiva de retención antes de eliminar el buzón.
   
 Cuando se asigna una directiva de retención a un equipo, los mensajes de chat y canales pueden seguir una de estas dos rutas:
 
