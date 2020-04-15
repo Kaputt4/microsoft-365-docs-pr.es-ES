@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Proporciona una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175195"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504096"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 Enterprise
 
@@ -84,15 +84,14 @@ Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Evite el fin de soporte para clientes y servidores de Windows 7 y Office 2010
 
-Los siguientes productos han llegado al final del soporte técnico el **14 de enero de 2020**:
-
-- [Windows 7](https://aka.ms/win7upgrade)
+[Windows 7](https://aka.ms/win7upgrade) ha llegado al final del soporte técnico el **14 de enero de 2020**.
 
 Los siguientes productos alcanzarán el final del soporte técnico el **13 de octubre de 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) llegará al final del soporte técnico el **13 de abril de 2021**.
 
 Para obtener un resumen visual de las opciones de actualización, migración y desplazamiento a la nube de estos productos, vea el [póster de fin de soporte técnico.](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
@@ -146,10 +145,10 @@ Para obtener más información sobre la implementación, consulte How:
 |||
 
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Si va a realizar la implementación usted mismo, inicie el [viaje de la implementación de Microsoft 365 para empresas](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Página de producto de Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise)

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f04d2e587a55a680a65425b34a88896466e09be3
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113464"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503988"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Características preliminares de Microsoft Threat Protection
 
@@ -50,12 +50,13 @@ Active la configuración de la experiencia de vista previa para que sea una de l
 
 3. Opciones de **vista previa** > Active las**características de vista previa**. 
 
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
 Sabrá que tiene características de vista previa activadas cuando vea que está activada la casilla **de verificación Activar las características de vista previa** . 
 
-
-
 ## <a name="preview-features"></a>Versión preliminar de las características
-Esta sección se actualizará con una lista de las características que se encuentran en la versión preliminar a medida que estén disponibles para que las pruebe. 
+Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
 
+- **[Detecciones personalizadas](custom-detections-overview.md)** : Use consultas de búsqueda avanzada para crear reglas que busquen automáticamente la actividad de violaciones y otros elementos de interés a intervalos regulares. Coincidencias con las alertas del desencadenador de consultas y las acciones de respuesta especificadas.
+
+- **[Tablas de identidad y aplicación](advanced-hunting-schema-tables.md)** : obtenga visibilidad de los eventos de autenticación, las consultas de Active Directory y la actividad relacionada con la aplicación con las tablas [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)y [AppFileEvents](advanced-hunting-appfileevents-table.md) en el esquema de búsqueda avanzada.

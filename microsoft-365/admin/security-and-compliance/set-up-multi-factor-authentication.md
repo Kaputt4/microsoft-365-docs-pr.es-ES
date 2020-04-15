@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Aprenda a usar valores predeterminados para configurar la autenticación multifactor para los usuarios de Office 365.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 7e48f72f2fd8cfc5042bd15f994cc98bfa5fca8c
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204027"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503976"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurar la autenticación multifactor
   
@@ -37,6 +37,7 @@ ms.locfileid: "43204027"
 Todas las nuevas suscripciones de Office 365 Empresa o Microsoft 365 Empresa tendrán activados automáticamente los valores predeterminados de seguridad. Esto significa que todos los usuarios tendrán que configurar MFA e instalar la aplicación Microsoft Authenticator en su dispositivo móvil. Para obtener más información, vea [Configurar la verificación en dos pasos de Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 Los nueve roles de administrador que se indican a continuación serán necesarios para realizar una autenticación adicional cada vez que inicien sesión:
+
 - Administrador global
 - Administrador de SharePoint
 - Administrador de Exchange
@@ -47,7 +48,7 @@ Los nueve roles de administrador que se indican a continuación serán necesario
 - Administrador de usuarios
 - Administrador de autenticación
 
-Se pedirá a todos los demás usuarios una autenticación adicional cuando sea necesario. Para obtener más información, vea [¿Qué son los valores predeterminados de seguridad?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Se pedirá a todos los demás usuarios una autenticación adicional cuando sea necesario. Para obtener más información, vea [¿Qué son los valores predeterminados de seguridad?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 > [!NOTE]
 > Debe ser un administrador global de Office 365 para configurar o modificar la MFA. <br><br>
@@ -61,8 +62,7 @@ Si ha configurado previamente MFA con directivas de línea base, [debe desactiva
 ## <a name="manage-security-defaults"></a>Administrar los valores predeterminados de seguridad
 
 1. Inicie sesión en el [Centro de administración](https://go.microsoft.com/fwlink/p/?linkid=834822) con sus credenciales de administrador global.
-2. Vaya a [Propiedades en Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-
+2. Vaya a [Propiedades de Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 3. En la parte inferior de la página, elija **Administrar los valores predeterminados de seguridad**.
 4. Elija **sí** para habilitar los valores predeterminados de seguridad o **no** para deshabilitar los valores predeterminados de seguridad y, después, elija **Guardar**.
 
@@ -74,9 +74,9 @@ Si ha configurado previamente MFA con directivas de línea base, [debe desactiva
 
 3. En la **seguridad | **Página de introducción, elija **acceso condicional**. 
 
-4. En la página **Directivas de acceso condicional de Azure Portal:**, elija cada directiva de línea base que esté **Activada** y establézcala como **Desactivada**.
+4. En la página **acceso condicional-directivas** , elija cada directiva de línea base que esté **activada**y, a continuación, establezca el valor en **desactivado**.
 5. Vaya a la página [Propiedades en Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-6. En la parte inferior de la página, elija **Administrar los valores predeterminados de seguridad** y en el panel **Habilitar valores predeterminados de seguridad**, establezca **Habilitar valores predeterminados de seguridad** como **Sí**. 
+6. En la parte inferior de la página, **Elija administrar los valores predeterminados de seguridad**y, en el panel **Habilitar valores** predeterminados de seguridad, establezca la alternancia **Habilitar valores predeterminados de seguridad** en **sí**y, después, elija **Guardar**. 
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>Habilitar la autenticación moderna para la organización
 
@@ -84,12 +84,13 @@ Todas las aplicaciones de cliente de Office 2016 admiten la MFA mediante el uso 
 
 1. Para habilitar la autenticación moderna, en el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=834822), seleccione **Configuración** \>**Configuración **y después, en la pestaña **Servicios** elija **Autenticación moderna** en la lista.
 
-2. Marque la casilla **habilitar autenticación moderna** en el panel de **autenticación moderna**. 
+2. Active la casilla **Habilitar autenticación moderna (recomendada)** en el panel de **autenticación moderna** y, a continuación, elija **Guardar cambios**. 
 
     ![En el Panel de autenticación moderna la casilla de verificación está marcada en habilitar](../../media/enablemodernauth.png)
     
 > [!IMPORTANT]
 > A partir de agosto de 2017, todos los nuevos inquilinos de Office 365 que incluyen Skype Empresarial online y Exchange online tienen la autenticación moderna habilitada de manera predeterminada. Para comprobar el estado de su autenticación moderna para Skype Empresarial online, puede utilizar el PowerShell de Skype Empresarial online con credenciales de Administrador Global. Ejecute Get-CsOAuthConfiguration para comprobar la salida de -ClientADALAuthOverride. Si -ClientADALAuthOverride está en la opción "Permitir", significa que la autenticación moderna está activada.
+
 Para comprobar el estado de su MA para Exchange Online, visite [habilite la autenticación moderna en Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
 
 ## <a name="related-articles"></a>Artículos relacionados
