@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentación de cumplimiento de Microsoft 365
-summary: Si su organización necesita cumplir con estándares legales o normativos, empiece aquí para obtener información sobre el cumplimiento en Microsoft 365.
+summary: Si su organización necesita cumplir con estándares jurídicos o regulatorios, empiece aquí para obtener información sobre el cumplimiento normativo de Microsoft 365.
 metadata:
   title: Documentación de cumplimiento de Microsoft 365
   description: Documentación para las características de cumplimiento de Microsoft 365
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: d6f24a93754c60227e668bb8d0ec42776a519dbc
   ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 02/27/2020
   ms.locfileid: "42322539"
@@ -46,7 +46,7 @@ landingContent:
       url: records-management.md
     - text: Administrador del plan de archivos
       url: file-plan-manager.md
-    - text: Acerca de la retención basada en eventos
+    - text: Retención basada en eventos
       url: event-driven-retention.md
     - text: Importación de PST
       url: importing-pst-files-to-office-365.md
@@ -54,17 +54,17 @@ landingContent:
       url: archiving-third-party-data.md
     - text: Informes de gobierno de datos
       url: view-the-data-governance-reports.md
-- title: Administrar los riesgos de Insider
+- title: Administrar riesgos internos
   linkLists:
   - linkListType: overview
     links:
-    - text: Administración de riesgos de Insider
+    - text: Administración de riesgos internos
       url: insider-risk-management.md
-    - text: Cumplimiento con la comunidad
+    - text: Cumplimiento de las comunicaciones
       url: communication-compliance.md
-    - text: Barreras de información
+    - text: Barreras de la información
       url: information-barriers.md
-    - text: Privileged Access Management
+    - text: Administración del acceso con privilegios
       url: privileged-access-management-overview.md
     - text: Caja de seguridad del cliente
       url: customer-lockbox-requests.md
@@ -74,25 +74,25 @@ landingContent:
     links:
     - text: eDiscovery avanzado
       url: overview-ediscovery-20.md
-    - text: Exhibición de documentos electrónicos principal
+    - text: eDiscovery principal
       url: ediscovery-cases.md
     - text: Búsqueda de contenido
       url: search-for-content.md
-    - text: Investigaciones de datos (versión preliminar)
+    - text: Investigaciones de datos (vista previa)
       url: overview-data-investigations.md
     - text: Auditoría
       url: search-the-audit-log-in-security-and-compliance.md
-- title: Introducción al cumplimiento de normativas
+- title: Introducción al cumplimiento normativo
   linkLists:
   - linkListType: get-started
     links:
-    - text: Puntuación de conformidad
+    - text: 'Puntuación de cumplimiento '
       url: compliance-score.md
     - text: Plan de acción de cumplimiento de RGPD
       url: gdpr-action-plan.md
     - text: Protección de la información para RGPD
       url: office-365-info-protection-for-gdpr-overview.md
-    - text: Plan de acción de cumplimiento ISO
+    - text: Plan de acción de cumplimiento de ISO
       url: iso-action-plan.md
     - text: Plan de acción de cumplimiento de NIST
       url: nist-action-plan.md
