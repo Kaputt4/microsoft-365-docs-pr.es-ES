@@ -1,5 +1,5 @@
 ---
-title: Información general sobre el centro de seguridad de Microsoft 365
+title: Información general del centro de seguridad de Microsoft 365
 description: Describe la nueva casa para supervisar y administrar la seguridad en las identidades, los datos, los dispositivos y las aplicaciones de Microsoft.
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, identidades, datos, dispositivos, aplicaciones
 ms.prod: microsoft-365-enterprise
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058910"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516916"
 ---
-# <a name="overview-of-the-microsoft-365-security-center"></a>Información general sobre el centro de seguridad de Microsoft 365
+# <a name="overview-of-the-microsoft-365-security-center"></a>Información general del centro de seguridad de Microsoft 365
 
 La administración de la seguridad de su empresa para proteger contra un panorama de amenazas en constante evolución plantea muchos retos. Es posible que tenga demasiadas soluciones de seguridad con varios lugares para configurar un gran número de controles y no sepa qué controles son los más eficaces y que presentarán nuevos retos para su personal. Los equipos de seguridad pueden tener dificultades para encontrar el equilibrio adecuado de seguridad y productividad.
 
@@ -41,18 +41,18 @@ La página **principal** muestra muchas de las tarjetas comunes que necesitan lo
 
 Esta información general le ayuda a mantenerse al día con las últimas actividades de su organización. El centro de seguridad 365 de Microsoft reúne señales de diversos orígenes para presentar una visión holística del entorno de Microsoft 365.
 
-El centro de seguridad 365 de Microsoft incluye:
+Apartados del Centro de seguridad de Microsoft 365:
 
 * **Inicio** : Obtenga una vista general del estado general de la seguridad de su organización.
 * **Incidentes** : vea el artículo más amplio de un ataque conectando los puntos que se muestran en las alertas individuales de las entidades. Sabrá exactamente dónde se ha iniciado un ataque, qué dispositivos se ven afectados y dónde ha desaparecido la amenaza.
 * **Alertas** : tenga una mayor visibilidad de todas las alertas en el entorno de Microsoft 365, incluso alertas de Microsoft Cloud App Security, Office 365 ATP, Azure ad, ATP de Azure y ATP de Microsoft. Disponible para clientes de E3 y E5.  
 * **Centro de actividades** : reduzca el volumen de alertas que el equipo de seguridad debe dirigir manualmente, lo que permite al equipo de operaciones de seguridad centrarse en amenazas más complejas y en otras iniciativas de gran valor.
 * **Informes** : obtenga los detalles y la información que necesita para proteger mejor a sus usuarios, dispositivos, aplicaciones y mucho más.
-* **Puntuación segura** : mejore su postura de seguridad general con calificación segura de Microsoft. Esta página proporciona un resumen de todas las distintas características y capacidades de seguridad que ha habilitado, e incluye recomendaciones para las áreas que deben mejorarse.
+* **Puntuación de seguridad:** mejore su posición de seguridad global con Puntuación de seguridad de Microsoft. Esta página proporciona un resumen de todas las distintas características y capacidades de seguridad que ha habilitado, e incluye recomendaciones para las áreas que deben mejorarse.
 * **Características avanzadas** : busque de forma proactiva de malware, archivos sospechosos y actividades en su organización de 365 de Microsoft.
-* **Clasificación** : Ayude a proteger la pérdida de datos agregando etiquetas para clasificar documentos, mensajes de correo electrónico, documentos, sitios y mucho más. Cuando se aplica una etiqueta (automáticamente o por el usuario), el contenido o el sitio está protegido en función de la configuración que elija. Por ejemplo, puede crear etiquetas que cifren archivos, agreguen marcado de contenido y controlen el acceso de los usuarios a sitios específicos.
-* **Directivas** : Configure las directivas para administrar dispositivos, Protéjase contra amenazas y reciba alertas sobre diversas actividades de su organización.
-* **Permisos** : administre quién en su organización tiene acceso al centro de seguridad 365 de Microsoft para ver contenido y realizar tareas. También puede asignar permisos de Microsoft 365 en el portal de Azure AD.
+* **Clasificación:** ayude a prevenir la pérdida de datos agregando etiquetas para clasificar documentos, mensajes de correo electrónico, documentos, sitios y mucho más. Cuando se aplica una etiqueta (automáticamente o por el usuario), el contenido o el sitio está protegido en función de la configuración que elija. Por ejemplo, puede crear etiquetas que cifren archivos, agreguen marcado de contenido y controlen el acceso de los usuarios a sitios específicos.
+* **Directivas:** configure directivas para administrar dispositivos, protegerse de amenazas y recibir alertas sobre las distintas actividades de su organización.
+* **Permisos:** administre las personas de su organización que tienen acceso al Centro de seguridad de Microsoft 365 para ver el contenido y realizar tareas. También puede asignar permisos de Microsoft 365 en el portal de Azure AD.
 
 ## <a name="learn-more"></a>Más información 
 
@@ -60,6 +60,7 @@ Explore estos temas sobre cómo supervisar, revisar y responder a sus necesidade
 - Conectar los puntos de las alertas a través de [incidentes](incident-queue.md)
 - Corrección automática de amenazas mediante [investigación y corrección automáticas](mtp-autoir.md)
 - Revisión y mejora de la postura de seguridad de forma holística con [calificación segura de Microsoft](microsoft-secure-score.md)
+- Ver [dispositivos](device-profile.md) en la red
 - [Informar](monitoring-and-reporting.md) del estado de las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura
 - [Buscar de forma proactiva amenazas](advanced-hunting-overview.md) de intentos de intrusión y actividad de infracciones que afectan el correo electrónico, los datos, los dispositivos y las cuentas
 - [Comprenda las campañas y técnicas de ataque más recientes con el](latest-attack-campaigns.md) análisis de amenazas

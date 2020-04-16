@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más adelante en eDiscovery avanzado de Office 365.
-ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f6484fb43b1d117856ba78bb918289b28776b021
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894969"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521526"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
@@ -194,7 +194,7 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
     Consulte la sección [más información](#more-information) para obtener sugerencias sobre cómo poner Microsoft Teams, grupos de Yammer y grupos de Office 365 en suspensión. 
     
     > [!NOTE]
-    > En el caso poco probable de que se cambie el nombre principal de usuario (UPN) de una persona, también se cambiará la dirección URL de su cuenta de OneDrive para incorporar el nuevo UPN. Si esto ocurre, tendrá que modificar la retención agregando la nueva dirección URL de OneDrive del usuario y quitando la antigua. 
+    > En el caso poco probable de que se cambie el nombre principal de usuario (UPN) de una persona, también se cambiará la dirección URL de su cuenta de OneDrive para incorporar el nuevo UPN. Si esto ocurre, tendrá que modificar la retención agregando la nueva dirección URL de OneDrive del usuario y quitando la antigua. Para obtener más información, vea [cómo los cambios UPN afectan a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
   
    c. **Carpetas públicas de Exchange.** Mueva el control](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) de alternancia ![de alternancia a la posición **All** para poner todas las carpetas públicas en la organización de Exchange online en retención. No puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
     
@@ -270,7 +270,7 @@ Después de haber creado un caso de exhibición de documentos electrónicos y qu
     
     ![Ubicaciones, ubicaciones en suspensión](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **Todas las ubicaciones** : Seleccione esta opción para buscar en todas las ubicaciones de contenido de la organización. Si selecciona esta opción, puede elegir buscar todos los buzones de Exchange (que incluye los buzones de todos los grupos de Microsoft Teams, Yammer y Office 365), todos los sitios de SharePoint y OneDrive para la empresa (que incluye los sitios para todos los equipos de Microsoft Teams, grupos de Yammer y grupos de Office 365) y todas las carpetas públicas.
+    - **Todas las ubicaciones** : Seleccione esta opción para buscar en todas las ubicaciones de contenido de la organización. Si selecciona esta opción, puede elegir buscar todos los buzones de Exchange (que incluye los buzones de todos los grupos de Microsoft Teams, Yammer y Office 365), todos los sitios de SharePoint y OneDrive para la empresa (que incluye los sitios de todos los grupos de Microsoft Teams, Yammer y Office 365) y todas las carpetas públicas.
     
     - **Todas las ubicaciones en espera.** Seleccione esta opción para buscar en todas las ubicaciones de contenido que se encuentran en espera en el caso. Si el caso contiene varias suspensiones, las ubicaciones de contenido de todas las suspensiones se buscarán cuando seleccione esta opción. Además, si se colocó una ubicación de contenido en una suspensión basada en consulta, solo se buscará en los elementos que están en espera cuando ejecute la búsqueda de contenido que está creando en este paso. Por ejemplo, si un usuario se colocó en la suspensión de casos basada en consultas y conserva los elementos que se enviaron o crearon antes de una fecha específica, solo se buscarían en esos elementos usando los criterios de búsqueda de la búsqueda de contenido. Esto se logra conectando la consulta de suspensión de casos y la consulta de búsqueda de contenido por un operador **and** . Consulte la sección [más información](#more-information) al final de este artículo para obtener más información sobre cómo buscar contenido de casos. 
     
@@ -367,7 +367,7 @@ Como alternativa a la exportación de los resultados de una sola búsqueda de co
     El flujo de trabajo para exportar los resultados de varias búsquedas de contenido asociadas a un caso es el mismo que exportar los resultados de la búsqueda para una sola búsqueda. Para obtener instrucciones paso a paso, consulte [exportar resultados](export-search-results.md)de la búsqueda de contenido.
     
     > [!NOTE]
-    > Al exportar los resultados de búsqueda de varias búsquedas asociadas a un caso, también tiene la opción de habilitar la desduplicación para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en el buzones de correo que se han buscado en una o varias de las búsquedas. Para obtener más información acerca de la desduplicación y cómo se identifican los elementos duplicados, vea [desduplicación en resultados de la búsqueda de exhibición](de-duplication-in-ediscovery-search-results.md)de documentos electrónicos. 
+    > Al exportar los resultados de búsqueda de varias búsquedas asociadas a un caso, también tiene la opción de habilitar la desduplicación para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en los buzones en los que se buscó en una o varias de las búsquedas. Para obtener más información acerca de la desduplicación y cómo se identifican los elementos duplicados, vea [desduplicación en resultados de la búsqueda de exhibición](de-duplication-in-ediscovery-search-results.md)de documentos electrónicos. 
   
 8. Después de iniciar la exportación, haga clic en la pestaña **exportar** para mostrar la lista de trabajos de exportación para ese caso. 
     
@@ -549,9 +549,9 @@ Si el caso que está intentando eliminar todavía contiene suspensiones, recibir
   |:-----|:-----|
   |Número máximo de casos para una organización  <br/> |Sin límite  <br/> |
   |Número máximo de retenciones de casos para una organización  <br/> |10 000  <br/> |
-  |Número máximo de buzones en una sola suspensión de casos  <br/> |1,000  <br/> |
+  |Número máximo de buzones en una sola suspensión de casos  <br/> |1.000  <br/> |
   |Número máximo de sitios de SharePoint y OneDrive para la empresa en una sola suspensión de mayúsculas y minúsculas  <br/> |100  <br/> |
-  |Número máximo de escenarios mostrados en la Página principal de eDiscovery y el número máximo de elementos que se muestran en las pestañas suspensiones, búsquedas y exportación en un caso. <sup>1</sup> |1,000|
+  |Número máximo de escenarios mostrados en la Página principal de eDiscovery y el número máximo de elementos que se muestran en las pestañas suspensiones, búsquedas y exportación en un caso. <sup>1</sup> |1.000|
   |||
 
    > [!NOTE]

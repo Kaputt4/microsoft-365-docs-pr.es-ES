@@ -19,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La purga automática de cero horas (ZAP) es una característica de protección de correo electrónico de Office 365 que detecta mensajes de correo no deseado, malware o de suplantación de identidad (phishing) que ya se han entregado a Exchange Online. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: 7cce0c15d861ee43d5704f3fc4da5a6dccb9d5d4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 44bdab5d37863bc543d953a89ac3129b3530437d
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895016"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516778"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>Depuración automática de cero horas (ZAP): protección contra correo no deseado y malware en Office 365
 
@@ -54,7 +54,7 @@ En el caso de **los mensajes leídos o no leídos** que se identifican como phis
 
 - **Agregar encabezado X**, **anteponer la línea de asunto con el texto**: Zap no realiza ninguna acción en el mensaje.
 
-- **Mover mensaje a correo no deseado**: Zap mueve el mensaje a la carpeta de correo no deseado, siempre y cuando la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Mover mensaje a correo no deseado**: Zap mueve el mensaje a la carpeta de correo no deseado, siempre y cuando la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Redirigir el mensaje a la dirección de correo electrónico**, **eliminar mensaje**, **poner en cuarentena**el mensaje: Zap pone en cuarentena el mensaje. Solo los administradores pueden ver y administrar los mensajes de phish en cuarentena.
 
@@ -68,7 +68,7 @@ Para **los mensajes no leídos** que se identifican como correo no deseado despu
 
 - **Agregar encabezado X**, **anteponer la línea de asunto con el texto**: Zap no realiza ninguna acción en el mensaje.
 
-- **Mover mensaje a correo no deseado**: Zap mueve el mensaje a la carpeta de correo no deseado, siempre y cuando la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Mover mensaje a correo no deseado**: Zap mueve el mensaje a la carpeta de correo no deseado, siempre y cuando la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Redirigir el mensaje a la dirección de correo electrónico**, **eliminar mensaje**, **poner en cuarentena**el mensaje: Zap pone en cuarentena el mensaje. Los usuarios finales pueden ver y administrar sus propios mensajes de correo electrónico no deseado en cuarentena.
 
@@ -100,7 +100,7 @@ A: las reglas de flujo de correo o bloquear y permitir la configuración de la o
 
 ### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>P: ¿Qué sucede si un mensaje se mueve a otra carpeta (por ejemplo, reglas de la bandeja de entrada)?
 
-A: ZAP sigue funcionando siempre que el mensaje no se haya eliminado o movido a la carpeta de correo electrónico no deseado.
+A: ZAP sigue funcionando siempre que no se haya eliminado el mensaje, o siempre y cuando no se haya aplicado todavía la misma acción o más segura. Por ejemplo, si la Directiva de phish se establece en cuarentena y el usuario o el administrador ya ha no deseado el correo electrónico, la cuarentena tendrá que hacer una acción para poner en cuarentena el archivo.
 
 ### <a name="q-does-zap-change-the-message-header"></a>P: ¿el ZAP cambia el encabezado del mensaje?
 

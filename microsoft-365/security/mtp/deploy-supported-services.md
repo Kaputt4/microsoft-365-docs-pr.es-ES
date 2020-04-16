@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c2798238f0e3cb10edab7f98bf096474a80fa006
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857480"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521485"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -43,7 +43,7 @@ Una licencia de seguridad de Microsoft 365 E5, E5 Security, A5 o A5, o una combi
 | ATP de Microsoft Defender | Conjunto de aplicaciones de Endpoint Protection creado alrededor de sensores de comportamiento poderosos, análisis de nube e inteligencia de amenazas |
 | ATP de Office 365 | Protección avanzada de sus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
 | Azure ATP | Protección contra amenazas avanzadas, identidades en peligro e Insiders malintencionados mediante señales de Active Directory correlacionadas |
-| Microsoft Cloud App Security | Identifica y combate ciberamenazas en los servicios en la nube de Microsoft y de terceros |
+| Microsoft Cloud App Security | Identificar y combatir ciberamenazas en los servicios en la nube de Microsoft y de terceros |
 
 ## <a name="deployed-services-and-functionality"></a>Servicios y funciones implementados
 La protección contra amenazas de Microsoft proporciona mejor visibilidad, correlación y corrección a medida que se implementan más servicios admitidos.
@@ -61,10 +61,10 @@ En la tabla siguiente se muestra cómo cada servicio compatible proporciona dato
 
 | Servicio | Datos (señales & información relacionada) | Ámbito de respuesta & de corrección |
 | ------ | ------ | ------ |
-| ATP de Microsoft Defender | -Estados de punto de conexión y eventos sin procesar<br />-Detección de puntos de conexión y alertas, incluidos antivirus, EDR y reducción de superficie de ataques<br />-Información sobre los archivos y otras entidades observadas en los puntos de conexión | Extremos |
+| ATP de Microsoft Defender | -Estados de punto de conexión y eventos sin procesar<br />-Detección de puntos de conexión y alertas, incluidos antivirus, EDR y reducción de superficie de ataques<br />-Información sobre los archivos y otras entidades observadas en los puntos de conexión | Puntos de conexión |
 | ATP de Office 365 | -Estados de correo y de buzón y eventos sin procesar<br />-Detecciones de correo electrónico, datos adjuntos y vínculos | -Buzones de correo<br />-Office 365 cuentas |
 | Azure ATP | -Señales de Active Directory, incluidos los eventos de autenticación<br />-Detecciones de comportamiento relacionadas con la identidad | Identidades |
-| Microsoft Cloud App Security | -Detección de servicios & de aplicaciones en la nube no autorizados (Sombrear)<br />-Exposición de datos a aplicaciones en la nube<br />-Actividad de amenazas relacionadas con aplicaciones en la nube | Aplicaciones en la nube |
+| Microsoft Cloud App Security | -Detección de servicios y aplicaciones en la nube no autorizados (Sombrear)<br />-Exposición de datos a aplicaciones en la nube<br />-Actividad de amenaza asociada con las aplicaciones en la nube | Aplicaciones en la nube |
 
 ## <a name="deploy-the-services"></a>Implementación de los servicios
 La implementación de cada servicio suele requerir un aprovisionamiento para el inquilino y una configuración inicial. Vea la siguiente tabla para comprender cómo se implementa cada uno de estos servicios.

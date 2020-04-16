@@ -2,11 +2,10 @@
 title: Actualizar los usuarios de Office 365 para empresas al último cliente de Office
 f1.keywords:
 - NOCSH
-ms.author: janellem
-author: janellem
-manager: eliree
+ms.author: kwekuako
+author: kwekuako
+manager: scotv
 audience: Admin
-ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Obtenga información sobre cómo actualizar a los usuarios al último cliente de Office.
-ms.openlocfilehash: 3d9c92a5362889db69926552848ba4c71d7c4c42
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 18200184ed8d7eb15ee4eef3903ac9d8e08b9854
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360411"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521469"
 ---
 # <a name="upgrade-your-office-365-for-business-users-to-the-latest-office-client"></a>Actualizar los usuarios de Office 365 para empresas al último cliente de Office
 
@@ -47,7 +46,7 @@ Para obtener más información, consulte [Office 2010 End of Support Roadmap](ht
 
  Si no es administrador y tiene un producto [de Office para el hogar](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans) , vea [¿Cómo puedo actualizar Office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx) para obtener información sobre cómo actualizar la versión de Office más antigua y de uso doméstico).
 
-## <a name="getting-ready-to-upgrade"></a>Preparándose para la actualización
+## <a name="get-ready-to-upgrade"></a>Prepararse para la actualización
 
 Como administrador, puede controlar qué versión de los usuarios de Office de su organización puede instalar. Se recomienda encarecidamente que los usuarios de la organización que ejecutan versiones anteriores de Office como Office 2010, Office 2013 o Office 2016 se actualicen a la versión más reciente para aprovechar sus mejoras de seguridad y productividad.
 
@@ -90,7 +89,7 @@ Cambie a una suscripción que incluya Office. Consulte [cambiar a otro plan de O
 
  - Compre una compra individual y de pago único de Office. Consulte [Office hogar &amp; Business](https://products.office.com/home-and-business) o [Office profesional](https://products.office.com/professional)
 
-     O BIEN
+     O
 
  - Compre varias copias de Office a través de una licencia por volumen. Consulte [comparar conjuntos disponibles a través de licencias por volumen](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison).
 

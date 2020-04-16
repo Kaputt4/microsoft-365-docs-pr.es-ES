@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43142688"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516814"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
@@ -65,7 +65,7 @@ También supervisamos el estado del dispositivo y le proporcionamos información
 
 
 ## <a name="need-more-details"></a>¿Necesita más información?
-Para obtener más información sobre el valor de escritorio administrado por Microsoft, incluidas las historias de clientes, vea [escritorio administrado de Microsoft](https://aka.ms/mmd). Los excelentes lugares para empezar con más información son el [plan de desarrollo](https://aka.ms/AA6jiam) y un resumen de [una página](https://aka.ms/AA6ob3h)que se pueden descargar. Puede encontrar las últimas noticias en el [blog](https://aka.ms/AA6l2dd)de Microsoft Managed Desktop.
+Para obtener más información sobre el valor de escritorio administrado por Microsoft, incluidas las historias de clientes, vea [escritorio administrado de Microsoft](https://aka.ms/mmd). Los excelentes lugares para empezar con más información son el [plan](https://aka.ms/AA6jiam), un [caso práctico de estudio de impacto económico de Forrester](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)y un resumen de [una página](https://aka.ms/AA6ob3h)que se pueden descargar. Puede encontrar las últimas noticias en el [blog](https://aka.ms/AA6l2dd)de Microsoft Managed Desktop.
 
 Si el escritorio administrado de Microsoft parece adecuado para su organización, puede profundizar en documentación adicional que explica mejor el servicio, cómo preparar la organización para inscribirse, cómo empezar a trabajar con el servicio y las operaciones en curso a partir de entonces, incluido cómo usted y sus usuarios finales pueden obtener fácilmente ayuda si es necesario. Si ya está listo para incorporarse, empiece con ponerse en contacto con el [equipo de cuenta local](https://pages.email.office.com/contactmmd/).
 
