@@ -185,6 +185,8 @@
                   href: mtp/mtp-permissions.md
                 - name: Establecer la zona horaria
                   href: mtp/mtp-time-zone.md
+            - name: Ver perfiles de dispositivo
+              href: 'mtp:/device-profile.md'
             - name: Enviar comentarios
               href: mtp/feedback.md
             - name: Administrar tickets a través de ServiceNow
